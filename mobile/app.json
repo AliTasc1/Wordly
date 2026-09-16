@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "WORDLY",
+    "slug": "wordly",
+    "version": "2.4.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#070A14",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.wordly.app"
+    },
+    "android": {
+      "package": "com.wordly.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#070A14",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

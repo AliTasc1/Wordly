@@ -1,0 +1,78 @@
+import React, { useEffect, useRef } from 'react';
+import { Animated, Easing, StyleSheet, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Gradient } from './Gradient';
+import { Txt } from './Txt';
+import { colors, gradients, radii, shadows } from '../theme/tokens';
+import { useApp } from '../state/AppContext';
+
+/**
+ * Global toast, positioned and animated like the design's `wup` keyframe
+ * (10px rise + fade over 300ms).
+ */
+export function ToastHost() {
+  const { toast } = useApp();
+  const insets = useSafeAreaInsets();
+  const anim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    Animated.timing(anim, {
+      toValue: toast ? 1 : 0,
+      duration: toast ? 300 : 180,
+      easing: Easing.out(Easing.ease),
+      useNativeDriver: true,
+    }).start();
+  }, [toast, anim]);
+
+  if (!toast) return null;
+
+  return (
+    <Animated.View
+      pointerEvents="none"
+      accessibilityLiveRegion="polite"
+      style={[
+        styles.wrap,
+        {
+          top: Math.max(64, insets.top + 10),
+          opacity: anim,
+          transform: [
+            { translateY: anim.interpolate({ inputRange: [0, 1], outputRange: [10, 0] }) },
+          ],
+        },
+      ]}>
+      <View style={styles.card}>
+        <Gradient colors={gradients.cyan} deg={135} style={styles.icon}>
+          <Txt f="m" s={14} w={800}>
+            ✓
+          </Txt>
+        </Gradient>
+        <View style={styles.body}>
+          <Txt f="m" s={13.5} w={800}>
+            {toast.title}
+          </Txt>
+          <Txt s={11.5} c={colors.textMuted}>
+            {toast.note}
+          </Txt>
+        </View>
+      </View>
+    </Animated.View>
+  );
+}
+
+const styles = StyleSheet.create({
+  wrap: { position: 'absolute', left: 18, right: 18, zIndex: 90 },
+  card: {
+    backgroundColor: 'rgba(11,17,34,.94)',
+    borderWidth: 1,
+    borderColor: 'rgba(34,211,238,.4)',
+    borderRadius: radii.input,
+    paddingVertical: 13,
+    paddingHorizontal: 15,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 11,
+    boxShadow: shadows.toast,
+  },
+  icon: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
+  body: { flex: 1 },
+});
