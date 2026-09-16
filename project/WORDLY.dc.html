@@ -1,0 +1,1523 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics><meta name="design_doc_mode" content="canvas"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"><style>
+html,body{margin:0;background:#05070F;color:#fff;font-family:'Plus Jakarta Sans',system-ui,sans-serif}
+a{color:#6E9BFF;text-decoration:none}a:hover{color:#9FBEFF}
+*{box-sizing:border-box}
+::-webkit-scrollbar{width:6px;height:6px}::-webkit-scrollbar-thumb{background:rgba(255,255,255,.14);border-radius:9px}::-webkit-scrollbar-track{background:transparent}
+@keyframes wpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08)}100%{transform:scale(1);opacity:1}}
+@keyframes wup{0%{transform:translateY(10px);opacity:0}100%{transform:translateY(0);opacity:1}}
+@keyframes wpulse{0%,100%{opacity:.35;transform:scale(1)}50%{opacity:.8;transform:scale(1.06)}}
+@keyframes wspin{to{transform:rotate(360deg)}}
+@keyframes wbar{0%{width:0}100%{width:var(--w,50%)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style></helmet>
+<div style="min-width:1160px;padding:34px 38px 60px;display:flex;gap:26px;align-items:flex-start;background:radial-gradient(1100px 600px at 18% -10%,rgba(46,107,255,.18),transparent 60%),radial-gradient(900px 500px at 92% 10%,rgba(124,92,255,.14),transparent 62%),#05070F">
+
+  <sc-if value="{{ showRail }}" hint-placeholder-val="{{ true }}">
+  <aside style="width:236px;flex:none;position:sticky;top:34px;display:flex;flex-direction:column;gap:16px">
+    <div style="display:flex;align-items:center;gap:11px">
+      <div style="width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);display:flex;align-items:center;justify-content:center;font:800 19px Manrope,sans-serif;box-shadow:0 8px 22px rgba(46,107,255,.4)">W</div>
+      <div><div style="font:800 17px Manrope,sans-serif;letter-spacing:.14em">WORDLY</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC;letter-spacing:.04em">İngilizce öğren. Oyna. Konuş.</div></div>
+    </div>
+    <div style="font:600 10.5px ui-monospace,Menlo,monospace;color:#5E6B8A;letter-spacing:.12em">31 EKRAN · iOS / ANDROID · TR</div>
+    <sc-for list="{{ groups }}" as="g" hint-placeholder-count="3">
+      <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:11px">
+        <div style="font:700 10px ui-monospace,Menlo,monospace;color:#4E5A78;letter-spacing:.16em;padding:0 4px 3px">{{ g.name }}</div>
+        <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="4">
+          <button onClick="{{ it.onClick }}" style="{{ it.st }}" style-hover="background:rgba(255,255,255,.07);color:#fff">{{ it.n }}</button>
+        </sc-for>
+      </div>
+    </sc-for>
+  </aside>
+  </sc-if>
+
+  <div style="flex:none;display:flex;flex-direction:column;gap:14px;align-items:center">
+    <div style="position:relative;width:414px;height:868px;border-radius:56px;padding:12px;background:linear-gradient(160deg,#2A3350,#0C1020 40%,#1B2340);box-shadow:0 40px 90px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.08)">
+      <div style="position:relative;width:390px;height:844px;border-radius:46px;overflow:hidden;background:#070A14;display:flex;flex-direction:column">
+
+        <sc-if value="{{ showStatus }}">
+          <div style="position:absolute;top:0;left:0;right:0;height:52px;display:flex;align-items:center;justify-content:space-between;padding:14px 26px 0;z-index:40;pointer-events:none">
+            <div style="font:700 14px Manrope,sans-serif">9:41</div>
+            <div style="display:flex;gap:6px;align-items:center;opacity:.85">
+              <div style="display:flex;gap:2px;align-items:flex-end"><div style="width:3px;height:5px;background:#fff;border-radius:1px"></div><div style="width:3px;height:8px;background:#fff;border-radius:1px"></div><div style="width:3px;height:11px;background:#fff;border-radius:1px"></div></div>
+              <div style="width:22px;height:11px;border:1.4px solid rgba(255,255,255,.7);border-radius:3px;padding:1.4px"><div style="width:72%;height:100%;background:#fff;border-radius:1px"></div></div>
+            </div>
+          </div>
+          <div style="position:absolute;top:11px;left:50%;transform:translateX(-50%);width:112px;height:30px;border-radius:18px;background:#000;z-index:45"></div>
+        </sc-if>
+
+        <div style="flex:1;overflow:auto;position:relative">
+
+          <sc-if value="{{ s.splash }}" hint-placeholder-val="{{ true }}">
+            <div style="height:844px;display:flex;flex-direction:column;justify-content:space-between;padding:0 28px 46px;background:radial-gradient(520px 400px at 50% 30%,rgba(46,107,255,.34),transparent 65%),radial-gradient(420px 360px at 78% 74%,rgba(124,92,255,.26),transparent 68%),#070A14">
+              <div></div>
+              <div style="display:flex;flex-direction:column;align-items:center;gap:22px;animation:wpop .6s ease both">
+                <div style="position:relative;width:132px;height:132px">
+                  <div style="position:absolute;inset:-14px;border-radius:44px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);filter:blur(28px);opacity:.55;animation:wpulse 3.2s ease-in-out infinite"></div>
+                  <div style="position:relative;width:132px;height:132px;border-radius:38px;background:linear-gradient(140deg,#2E6BFF,#7C5CFF 55%,#22D3EE);display:flex;align-items:center;justify-content:center;font:800 62px Manrope,sans-serif;box-shadow:inset 0 2px 0 rgba(255,255,255,.35)">W</div>
+                </div>
+                <div style="text-align:center">
+                  <div style="font:800 42px Manrope,sans-serif;letter-spacing:.22em;margin-left:.22em">WORDLY</div>
+                  <div style="font:600 14px 'Plus Jakarta Sans';color:#9FB0D4;margin-top:8px">İngilizce öğren. Oyna. Konuş.</div>
+                </div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:center;gap:8px;justify-content:center;color:#6E7B9C;font:600 11.5px 'Plus Jakarta Sans';margin-bottom:6px">
+                  <div style="width:14px;height:14px;border-radius:50%;border:2px solid rgba(255,255,255,.18);border-top-color:#2E6BFF;animation:wspin .9s linear infinite"></div>Hesabın hazırlanıyor
+                </div>
+                <button onClick="{{ toOnb }}" style="height:56px;border:none;border-radius:18px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 16.5px Manrope,sans-serif;box-shadow:0 14px 34px rgba(46,107,255,.42);cursor:pointer" style-active="transform:scale(.97)">Ücretsiz Başla</button>
+                <button onClick="{{ toHome }}" style="height:52px;border:1px solid rgba(255,255,255,.14);border-radius:18px;background:rgba(255,255,255,.04);color:#C7D2EC;font:700 15px Manrope,sans-serif;cursor:pointer" style-hover="background:rgba(255,255,255,.08)">Hesabım var · Giriş yap</button>
+                <div style="text-align:center;font:500 10.5px 'Plus Jakarta Sans';color:#5E6B8A;margin-top:4px">Devam ederek Kullanım Koşulları'nı kabul edersin.</div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.onb }}">
+            <div style="min-height:844px;padding:76px 24px 32px;display:flex;flex-direction:column;gap:24px;background:radial-gradient(420px 320px at 80% 8%,rgba(34,211,238,.14),transparent 62%),#070A14">
+              <div style="display:flex;justify-content:space-between;align-items:center">
+                <div style="display:flex;gap:6px"><div style="width:26px;height:5px;border-radius:9px;background:#2E6BFF"></div><div style="width:10px;height:5px;border-radius:9px;background:rgba(255,255,255,.16)"></div><div style="width:10px;height:5px;border-radius:9px;background:rgba(255,255,255,.16)"></div></div>
+                <button onClick="{{ toGoal }}" style="border:none;background:none;color:#94A0BC;font:600 13px 'Plus Jakarta Sans';cursor:pointer" style-hover="color:#fff">Atla</button>
+              </div>
+              <div style="height:300px;border-radius:26px;border:1px solid rgba(255,255,255,.08);background:repeating-linear-gradient(135deg,rgba(46,107,255,.16) 0 10px,rgba(124,92,255,.08) 10px 20px);display:flex;align-items:flex-end;justify-content:center;padding:14px;position:relative;overflow:hidden">
+                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center"><div style="width:150px;height:150px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.28)"></div></div>
+                <div style="font:500 10.5px ui-monospace,Menlo,monospace;color:rgba(255,255,255,.62);background:rgba(7,10,20,.7);padding:5px 10px;border-radius:8px">görsel: harf arenası sahnesi</div>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <h1 style="font:800 30px/1.18 Manrope,sans-serif;letter-spacing:-.02em;margin:0;text-wrap:pretty">Ders çalışıyormuş gibi olmadan İngilizce öğren.</h1>
+                <p style="font:500 14.5px/1.55 'Plus Jakarta Sans';color:#94A0BC;margin:0;text-wrap:pretty">Günde 10 dakika oyna, gerçek insanlarla yarış, AI koçunla konuşarak pratik yap. Seviyeni CEFR standardına göre takip ederiz.</p>
+              </div>
+              <div style="display:flex;gap:10px">
+                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px"><div style="font:800 19px Manrope,sans-serif;color:#22D3EE">4.9M</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">öğrenci</div></div>
+                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px"><div style="font:800 19px Manrope,sans-serif;color:#7C5CFF">18 dk</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">ortalama süre</div></div>
+                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px"><div style="font:800 19px Manrope,sans-serif;color:#22C55E">+2 kur</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">3 ayda</div></div>
+              </div>
+              <div style="flex:1"></div>
+              <button onClick="{{ toGoal }}" style="height:56px;border:none;border-radius:18px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 16.5px Manrope,sans-serif;box-shadow:0 14px 34px rgba(46,107,255,.42);cursor:pointer" style-active="transform:scale(.97)">Devam et</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.goal }}">
+            <div style="min-height:844px;padding:72px 22px 30px;display:flex;flex-direction:column;gap:20px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toOnb }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1;height:6px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="width:42%;height:100%;border-radius:9px;background:linear-gradient(90deg,#2E6BFF,#7C5CFF)"></div></div>
+                <div style="font:700 12px ui-monospace,Menlo,monospace;color:#94A0BC">2/5</div>
+              </div>
+              <div><h1 style="font:800 27px/1.2 Manrope,sans-serif;letter-spacing:-.02em;margin:0">Hedefin ne?</h1><p style="font:500 13.5px 'Plus Jakarta Sans';color:#94A0BC;margin:7px 0 0">Birden fazla seçebilirsin. Müfredatını buna göre kuruyoruz.</p></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <sc-for list="{{ goalOpts }}" as="o" hint-placeholder-count="7">
+                  <button onClick="{{ o.onClick }}" style="{{ o.st }}">
+                    <span style="font:700 14px Manrope,sans-serif">{{ o.label }}</span>
+                    <span style="font:500 11px 'Plus Jakarta Sans';color:#8E9BBA">{{ o.sub }}</span>
+                  </button>
+                </sc-for>
+              </div>
+              <div style="height:1px;background:rgba(255,255,255,.07)"></div>
+              <div><div style="font:700 15px Manrope,sans-serif;margin-bottom:10px">Günde ne kadar pratik yapabilirsin?</div>
+                <div style="display:flex;gap:8px">
+                  <sc-for list="{{ timeOpts }}" as="o" hint-placeholder-count="4"><button onClick="{{ o.onClick }}" style="{{ o.st }}">{{ o.label }}</button></sc-for>
+                </div>
+              </div>
+              <div><div style="font:700 15px Manrope,sans-serif;margin-bottom:10px">Neyi geliştirmek istersin?</div>
+                <div style="display:flex;flex-wrap:wrap;gap:8px">
+                  <sc-for list="{{ skillOpts }}" as="o" hint-placeholder-count="6"><button onClick="{{ o.onClick }}" style="{{ o.st }}">{{ o.label }}</button></sc-for>
+                </div>
+              </div>
+              <div style="flex:1"></div>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC;text-align:center">{{ goalSummary }}</div>
+                <button onClick="{{ toTest }}" style="height:56px;border:none;border-radius:18px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 16.5px Manrope,sans-serif;box-shadow:0 14px 34px rgba(46,107,255,.42);cursor:pointer" style-active="transform:scale(.97)">Seviyemi Bul</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.test }}">
+            <div style="min-height:844px;padding:70px 22px 26px;display:flex;flex-direction:column;gap:18px">
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                <div style="font:700 12.5px ui-monospace,Menlo,monospace;color:#94A0BC">SORU {{ qNo }} / 20</div>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <div style="padding:5px 10px;border-radius:9px;background:rgba(124,92,255,.16);border:1px solid rgba(124,92,255,.32);font:700 11px Manrope;color:#B9A8FF">{{ qType }}</div>
+                  <div style="padding:5px 10px;border-radius:9px;background:rgba(245,165,36,.14);border:1px solid rgba(245,165,36,.3);font:700 11px ui-monospace;color:#FFC768">00:{{ qTimer }}</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:4px">
+                <sc-for list="{{ qDots }}" as="d" hint-placeholder-count="20"><div style="{{ d.st }}"></div></sc-for>
+              </div>
+              <div style="display:flex;align-items:center;gap:7px;font:600 11.5px 'Plus Jakarta Sans';color:#94A0BC">Zorluk
+                <sc-for list="{{ qDiff }}" as="d" hint-placeholder-count="5"><div style="{{ d.st }}"></div></sc-for>
+                <span style="color:#fff;font-weight:700">{{ qLevel }}</span>
+              </div>
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:14px">
+                <div style="font:600 12px 'Plus Jakarta Sans';color:#8E9BBA">{{ qPrompt }}</div>
+                <div style="font:700 23px/1.35 Manrope,sans-serif;text-wrap:pretty">{{ qText }}</div>
+                <sc-if value="{{ qAudio }}">
+                  <div style="display:flex;align-items:center;gap:12px;background:rgba(46,107,255,.1);border:1px solid rgba(46,107,255,.26);border-radius:16px;padding:12px">
+                    <div style="width:42px;height:42px;flex:none;border-radius:50%;background:linear-gradient(135deg,#2E6BFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:700 15px Manrope">▶</div>
+                    <div style="flex:1;display:flex;align-items:center;gap:2px;height:30px">
+                      <sc-for list="{{ wave }}" as="w" hint-placeholder-count="26"><div style="{{ w.st }}"></div></sc-for>
+                    </div>
+                    <div style="font:700 11px ui-monospace;color:#94A0BC">0:06</div>
+                  </div>
+                </sc-if>
+              </div>
+              <div style="display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ qOpts }}" as="o" hint-placeholder-count="4">
+                  <button onClick="{{ o.onClick }}" style="{{ o.st }}"><span style="{{ o.badge }}">{{ o.key }}</span><span style="flex:1;text-align:left">{{ o.label }}</span><span style="font:700 14px Manrope">{{ o.mark }}</span></button>
+                </sc-for>
+              </div>
+              <sc-if value="{{ qFeedback }}">
+                <div style="{{ qFbSt }}"><div style="font:800 14px Manrope,sans-serif">{{ qFbTitle }}</div><div style="font:500 12.5px/1.5 'Plus Jakarta Sans';opacity:.85">{{ qFbNote }}</div></div>
+              </sc-if>
+              <div style="flex:1"></div>
+              <button onClick="{{ qNext }}" style="{{ qNextSt }}">{{ qNextLabel }}</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.result }}">
+            <div style="min-height:844px;padding:70px 22px 26px;display:flex;flex-direction:column;gap:18px;background:radial-gradient(460px 340px at 50% 12%,rgba(46,107,255,.26),transparent 64%),#070A14">
+              <div style="text-align:center;animation:wup .5s ease both">
+                <div style="font:700 11.5px ui-monospace,Menlo,monospace;color:#94A0BC;letter-spacing:.16em">SEVİYE TESTİ TAMAMLANDI</div>
+                <div style="position:relative;display:inline-flex;align-items:center;justify-content:center;margin-top:14px">
+                  <div style="position:absolute;inset:-18px;border-radius:50%;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);filter:blur(26px);opacity:.5"></div>
+                  <div style="position:relative;width:148px;height:148px;border-radius:50%;background:conic-gradient(#22D3EE 0 62%,rgba(255,255,255,.08) 62% 100%);display:flex;align-items:center;justify-content:center">
+                    <div style="width:124px;height:124px;border-radius:50%;background:#0B1122;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.08)">
+                      <div style="font:800 40px Manrope,sans-serif;letter-spacing:-.02em">B1+</div>
+                      <div style="font:600 10.5px ui-monospace;color:#94A0BC;letter-spacing:.1em">GENEL SEVİYE</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="font:500 13px/1.5 'Plus Jakarta Sans';color:#A9B6D4;margin-top:12px;padding:0 10px">Günlük konuşmaları rahat anlıyorsun. Konuşma akıcılığın diğer becerilerinin gerisinde.</div>
+              </div>
+              <div style="display:flex;gap:14px;background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:24px;padding:18px">
+                <svg viewBox="0 0 200 200" style="width:148px;height:148px;flex:none">
+                  <polygon points="100,12 176,56 176,144 100,188 24,144 24,56" fill="none" stroke="rgba(255,255,255,.1)"></polygon>
+                  <polygon points="100,56 138,78 138,122 100,144 62,122 62,78" fill="none" stroke="rgba(255,255,255,.08)"></polygon>
+                  <polygon points="100,34 157,67 157,133 100,166 43,133 43,67" fill="none" stroke="rgba(255,255,255,.06)"></polygon>
+                  <polygon points="100,24 170,62 162,136 100,160 38,130 43,70" fill="rgba(46,107,255,.28)" stroke="#4D8BFF" stroke-width="2"></polygon>
+                  <circle cx="100" cy="24" r="3.5" fill="#22D3EE"></circle><circle cx="170" cy="62" r="3.5" fill="#22D3EE"></circle><circle cx="162" cy="136" r="3.5" fill="#22D3EE"></circle><circle cx="100" cy="160" r="3.5" fill="#22D3EE"></circle><circle cx="38" cy="130" r="3.5" fill="#22D3EE"></circle><circle cx="43" cy="70" r="3.5" fill="#22D3EE"></circle>
+                </svg>
+                <div style="flex:1;display:flex;flex-direction:column;gap:9px;justify-content:center">
+                  <sc-for list="{{ skillLevels }}" as="k" hint-placeholder-count="6">
+                    <div style="display:flex;flex-direction:column;gap:4px">
+                      <div style="display:flex;justify-content:space-between;font:600 11.5px 'Plus Jakarta Sans'"><span style="color:#C7D2EC">{{ k.name }}</span><span style="font:700 11.5px Manrope;color:#fff">{{ k.lvl }}</span></div>
+                      <div style="height:5px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="{{ k.bar }}"></div></div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="display:flex;gap:10px">
+                <div style="flex:1;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.28);border-radius:16px;padding:13px"><div style="font:700 11px 'Plus Jakarta Sans';color:#7EE2A8">GÜÇLÜ YANIN</div><div style="font:800 15px Manrope;margin-top:3px">Kelime · B2</div></div>
+                <div style="flex:1;background:rgba(255,77,94,.1);border:1px solid rgba(255,77,94,.28);border-radius:16px;padding:13px"><div style="font:700 11px 'Plus Jakarta Sans';color:#FF9AA5">ODAK ALANIN</div><div style="font:800 15px Manrope;margin-top:3px">Konuşma · A2+</div></div>
+              </div>
+              <div style="flex:1"></div>
+              <button onClick="{{ toHome }}" style="height:56px;border:none;border-radius:18px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 16.5px Manrope,sans-serif;box-shadow:0 14px 34px rgba(46,107,255,.42);cursor:pointer" style-active="transform:scale(.97)">B1 müfredatımı başlat</button>
+              <button onClick="{{ toTest }}" style="height:48px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:none;color:#C7D2EC;font:700 14px Manrope;cursor:pointer" style-hover="background:rgba(255,255,255,.06)">Testi tekrar çöz</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.home }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                <div style="display:flex;align-items:center;gap:11px">
+                  <div style="width:44px;height:44px;border-radius:15px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:800 16px Manrope;position:relative">A<div style="position:absolute;bottom:-2px;right:-2px;width:13px;height:13px;border-radius:50%;background:#22C55E;border:2.5px solid #070A14"></div></div>
+                  <div><div style="font:800 17px Manrope,sans-serif">İyi akşamlar, Ali 👋</div><div style="font:600 11.5px 'Plus Jakarta Sans';color:#94A0BC">Bugün 3 görevin var</div></div>
+                </div>
+                <div style="display:flex;gap:8px">
+                  <button onClick="{{ toNotif }}" style="width:40px;height:40px;border-radius:13px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:15px;cursor:pointer;position:relative" style-hover="background:rgba(255,255,255,.08)">🔔<span style="position:absolute;top:7px;right:8px;width:7px;height:7px;border-radius:50%;background:#FF4D5E"></span></button>
+                </div>
+              </div>
+
+              <div style="display:flex;gap:9px">
+                <div style="flex:1;background:linear-gradient(140deg,rgba(46,107,255,.2),rgba(14,20,38,.9));border:1px solid rgba(46,107,255,.3);border-radius:18px;padding:12px"><div style="font:700 10px ui-monospace;color:#9FB0D4;letter-spacing:.1em">SEVİYE</div><div style="font:800 21px Manrope;margin-top:2px">B1+</div></div>
+                <div style="flex:1;background:linear-gradient(140deg,rgba(245,165,36,.18),rgba(14,20,38,.9));border:1px solid rgba(245,165,36,.3);border-radius:18px;padding:12px"><div style="font:700 10px ui-monospace;color:#FFCE8A;letter-spacing:.1em">SERİ</div><div style="font:800 21px Manrope;margin-top:2px">🔥 42</div></div>
+                <div style="flex:1;background:linear-gradient(140deg,rgba(124,92,255,.2),rgba(14,20,38,.9));border:1px solid rgba(124,92,255,.32);border-radius:18px;padding:12px"><div style="font:700 10px ui-monospace;color:#C4B5FF;letter-spacing:.1em">HAFTALIK</div><div style="font:800 21px Manrope;margin-top:2px">#7</div></div>
+              </div>
+
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;justify-content:space-between;align-items:baseline">
+                  <div style="font:700 14.5px Manrope,sans-serif">Günlük hedef</div>
+                  <div style="font:700 12px ui-monospace;color:#94A0BC"><span style="color:#22D3EE">380</span> / 500 XP</div>
+                </div>
+                <div style="height:10px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="width:76%;height:100%;border-radius:9px;background:linear-gradient(90deg,#2E6BFF,#22D3EE);box-shadow:0 0 16px rgba(34,211,238,.5)"></div></div>
+                <div style="display:flex;justify-content:space-between;gap:6px">
+                  <sc-for list="{{ dailyRings }}" as="r" hint-placeholder-count="4">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px">
+                      <div style="{{ r.ring }}"><div style="width:38px;height:38px;border-radius:50%;background:#0C1223;display:flex;align-items:center;justify-content:center;font:700 11px ui-monospace;color:#fff">{{ r.pct }}</div></div>
+                      <div style="font:600 10.5px 'Plus Jakarta Sans';color:#94A0BC">{{ r.name }}</div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+
+              <button onClick="{{ toLesson }}" style="text-align:left;border:1px solid rgba(46,107,255,.34);border-radius:22px;padding:16px;background:linear-gradient(135deg,rgba(46,107,255,.26),rgba(124,92,255,.16));cursor:pointer;color:#fff;display:flex;gap:14px;align-items:center" style-hover="border-color:rgba(46,107,255,.6)">
+                <div style="width:52px;height:52px;flex:none;border-radius:17px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);display:flex;align-items:center;justify-content:center;font:800 15px Manrope;box-shadow:0 10px 24px rgba(46,107,255,.4)">12</div>
+                <div style="flex:1"><div style="font:700 10px ui-monospace;color:#9FB0D4;letter-spacing:.1em">KALDIĞIN YER</div><div style="font:800 17px Manrope;margin-top:2px">B1 · Ünite 12</div><div style="font:500 12px 'Plus Jakarta Sans';color:#A9B6D4;margin-top:3px">Present Perfect · 4 bölüm kaldı</div></div>
+                <div style="font:800 22px Manrope;color:#fff">›</div>
+              </button>
+
+              <button onClick="{{ toCoach }}" style="text-align:left;border:1px solid rgba(124,92,255,.32);border-radius:22px;padding:16px;background:rgba(124,92,255,.1);cursor:pointer;color:#fff;display:flex;flex-direction:column;gap:10px" style-hover="background:rgba(124,92,255,.16)">
+                <div style="display:flex;align-items:center;gap:10px">
+                  <div style="width:34px;height:34px;border-radius:11px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:700 13px Manrope">AI</div>
+                  <div style="font:800 14.5px Manrope">AI Koçun</div>
+                  <div style="margin-left:auto;padding:4px 9px;border-radius:8px;background:rgba(34,211,238,.16);font:700 10px ui-monospace;color:#7FE6F5">HAZIR</div>
+                </div>
+                <div style="font:500 13px/1.5 'Plus Jakarta Sans';color:#D3DCF0">"Ali, dün Past Perfect'te zorlandın. 3 dakika birlikte pratik yapalım."</div>
+                <div style="align-self:flex-start;padding:9px 16px;border-radius:12px;background:#7C5CFF;font:700 12.5px Manrope">Şimdi pratik yap</div>
+              </button>
+
+              <div style="display:flex;gap:10px">
+                <button onClick="{{ toDuel }}" style="flex:1;text-align:left;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:14px;background:#0E1426;color:#fff;cursor:pointer;display:flex;flex-direction:column;gap:8px" style-hover="border-color:rgba(255,255,255,.2)">
+                  <div style="display:flex;gap:-8px"><div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#FF7A59,#FF4D5E);display:flex;align-items:center;justify-content:center;font:700 12px Manrope">G</div></div>
+                  <div style="font:700 13px Manrope">Gözde seni düelloya çağırdı</div>
+                  <div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">"Skorumu geç." · 2 dk önce</div>
+                  <div style="align-self:flex-start;padding:7px 13px;border-radius:10px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);font:800 11px Manrope;letter-spacing:.06em">DÜELLOYU KABUL ET</div>
+                </button>
+                <button onClick="{{ toArena }}" style="width:126px;flex:none;border:1px solid rgba(34,211,238,.28);border-radius:20px;padding:14px;background:rgba(34,211,238,.09);color:#fff;cursor:pointer;display:flex;flex-direction:column;justify-content:space-between" style-hover="background:rgba(34,211,238,.15)">
+                  <div style="font:700 10px ui-monospace;color:#7FE6F5;letter-spacing:.1em">GÜNÜN OYUNU</div>
+                  <div style="width:46px;height:46px;border-radius:50%;border:2px dashed rgba(34,211,238,.5);display:flex;align-items:center;justify-content:center;font:800 15px Manrope;margin:8px 0">W</div>
+                  <div style="font:800 14px Manrope;text-align:left">Harf Arenası</div>
+                  <div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC;text-align:left">2× XP · 18:00'a kadar</div>
+                </button>
+              </div>
+
+              <button onClick="{{ toBoard }}" style="border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:14px 16px;background:#0E1426;color:#fff;cursor:pointer;display:flex;flex-direction:column;gap:10px" style-hover="border-color:rgba(255,255,255,.2)">
+                <div style="display:flex;justify-content:space-between;align-items:center"><div style="font:700 14.5px Manrope">Altın Lig · 3 gün kaldı</div><div style="font:700 12px 'Plus Jakarta Sans';color:#94A0BC">Tümü ›</div></div>
+                <sc-for list="{{ boardPreview }}" as="r" hint-placeholder-count="3">
+                  <div style="display:flex;align-items:center;gap:10px;{{ r.row }}">
+                    <div style="width:22px;font:700 12px ui-monospace;color:#94A0BC">{{ r.rank }}</div>
+                    <div style="{{ r.av }}">{{ r.ini }}</div>
+                    <div style="flex:1;text-align:left;font:700 13px Manrope">{{ r.name }}</div>
+                    <div style="font:700 12px ui-monospace;color:#22D3EE">{{ r.xp }}</div>
+                    <div style="width:16px;font:700 11px Manrope;{{ r.mvSt }}">{{ r.mv }}</div>
+                  </div>
+                </sc-for>
+              </button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.learn }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:14px">
+              <div><div style="font:700 11px ui-monospace;color:#94A0BC;letter-spacing:.14em">ÖĞREN</div><h1 style="font:800 26px Manrope;margin:4px 0 0;letter-spacing:-.02em">CEFR Yol Haritan</h1></div>
+              <div style="display:flex;gap:7px;overflow:auto;padding-bottom:4px">
+                <sc-for list="{{ cefrTabs }}" as="t" hint-placeholder-count="6"><button onClick="{{ t.onClick }}" style="{{ t.st }}">{{ t.label }}</button></sc-for>
+              </div>
+              <div style="background:linear-gradient(135deg,rgba(46,107,255,.22),rgba(14,20,38,.9));border:1px solid rgba(46,107,255,.3);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:11px">
+                <div style="display:flex;justify-content:space-between;align-items:center"><div style="font:800 18px Manrope">{{ cefrTitle }}</div><div style="padding:5px 10px;border-radius:9px;background:rgba(255,255,255,.1);font:700 11px ui-monospace">{{ cefrPct }}</div></div>
+                <div style="font:500 12.5px/1.5 'Plus Jakarta Sans';color:#C7D2EC">{{ cefrDesc }}</div>
+                <div style="height:8px;border-radius:9px;background:rgba(0,0,0,.35);overflow:hidden"><div style="{{ cefrBar }}"></div></div>
+                <div style="display:flex;gap:16px;font:600 11.5px 'Plus Jakarta Sans';color:#A9B6D4"><span>📘 {{ cefrUnits }} ünite</span><span>🔤 {{ cefrWords }} kelime</span><span>⏱ {{ cefrTime }}</span></div>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center"><div style="font:700 14.5px Manrope">Üniteler</div><button onClick="{{ toMap }}" style="border:none;background:none;color:#6E9BFF;font:700 12.5px 'Plus Jakarta Sans';cursor:pointer">Harita görünümü ›</button></div>
+              <sc-for list="{{ units }}" as="u" hint-placeholder-count="5">
+                <button onClick="{{ u.onClick }}" style="{{ u.st }}">
+                  <div style="{{ u.badge }}">{{ u.no }}</div>
+                  <div style="flex:1;text-align:left">
+                    <div style="font:700 14.5px Manrope">{{ u.name }}</div>
+                    <div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ u.sub }}</div>
+                    <div style="height:4px;border-radius:9px;background:rgba(255,255,255,.08);margin-top:8px;overflow:hidden"><div style="{{ u.bar }}"></div></div>
+                  </div>
+                  <div style="font:700 11px ui-monospace;color:#94A0BC">{{ u.state }}</div>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.map }}">
+            <div style="min-height:844px;padding:62px 0 112px;display:flex;flex-direction:column;gap:14px">
+              <div style="padding:0 18px;display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toLearn }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div><div style="font:800 19px Manrope">B1 · Orta Seviye</div><div style="font:600 11.5px 'Plus Jakarta Sans';color:#94A0BC">12/20 ünite · 4.860 XP</div></div>
+                <div style="margin-left:auto;padding:6px 11px;border-radius:10px;background:rgba(34,211,238,.14);border:1px solid rgba(34,211,238,.3);font:700 11px ui-monospace;color:#7FE6F5">%60</div>
+              </div>
+              <div style="position:relative;padding:18px 18px 0">
+                <div style="position:absolute;left:50%;top:0;bottom:0;width:2px;background:repeating-linear-gradient(180deg,rgba(255,255,255,.14) 0 8px,transparent 8px 16px)"></div>
+                <div style="position:relative;display:flex;flex-direction:column;gap:14px">
+                  <sc-for list="{{ mapNodes }}" as="n" hint-placeholder-count="7">
+                    <div style="{{ n.wrap }}">
+                      <button onClick="{{ n.onClick }}" style="{{ n.st }}">
+                        <div style="font:800 15px Manrope">{{ n.icon }}</div>
+                        <div style="font:700 10px ui-monospace;letter-spacing:.06em">{{ n.no }}</div>
+                      </button>
+                      <div style="{{ n.labelSt }}"><div style="font:700 13px Manrope">{{ n.name }}</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">{{ n.sub }}</div></div>
+                    </div>
+                  </sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.lesson }}">
+            <div style="min-height:844px;display:flex;flex-direction:column">
+              <div style="padding:62px 20px 22px;background:linear-gradient(160deg,rgba(46,107,255,.3),rgba(124,92,255,.14),transparent);display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:center;gap:12px">
+                  <button onClick="{{ toMap }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                  <div style="margin-left:auto;padding:6px 11px;border-radius:10px;background:rgba(0,0,0,.35);font:700 11px ui-monospace;color:#C7D2EC">ÜNİTE 12</div>
+                </div>
+                <h1 style="font:800 28px/1.2 Manrope;margin:0;letter-spacing:-.02em">Present Perfect ile deneyimlerini anlat</h1>
+                <p style="font:500 13px/1.5 'Plus Jakarta Sans';color:#C7D2EC;margin:0">6 bölüm · ~14 dakika · 240 XP</p>
+                <div style="height:8px;border-radius:9px;background:rgba(0,0,0,.4);overflow:hidden"><div style="width:33%;height:100%;border-radius:9px;background:linear-gradient(90deg,#22D3EE,#2E6BFF)"></div></div>
+              </div>
+              <div style="padding:6px 18px 112px;display:flex;flex-direction:column;gap:10px">
+                <sc-for list="{{ lessonSteps }}" as="st" hint-placeholder-count="6">
+                  <button onClick="{{ st.onClick }}" style="{{ st.st }}">
+                    <div style="{{ st.icon }}">{{ st.glyph }}</div>
+                    <div style="flex:1;text-align:left"><div style="font:700 14.5px Manrope">{{ st.name }}</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ st.sub }}</div></div>
+                    <div style="{{ st.tagSt }}">{{ st.tag }}</div>
+                  </button>
+                </sc-for>
+                <div style="margin-top:6px;border:1px dashed rgba(255,255,255,.14);border-radius:20px;padding:16px;display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.02)">
+                  <div style="width:44px;height:44px;flex:none;border-radius:14px;background:rgba(245,165,36,.16);border:1px solid rgba(245,165,36,.3);display:flex;align-items:center;justify-content:center;font-size:18px">🏆</div>
+                  <div style="flex:1"><div style="font:700 13.5px Manrope">Ünite Sınavı</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">4 bölümü bitirince açılır</div></div>
+                  <div style="font:700 11px ui-monospace;color:#6E7B9C">KİLİTLİ</div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.vocab }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toLesson }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1;height:6px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="width:35%;height:100%;background:linear-gradient(90deg,#7C5CFF,#22D3EE)"></div></div>
+                <div style="font:700 12px ui-monospace;color:#94A0BC">7/20</div>
+              </div>
+              <div style="position:relative;background:linear-gradient(165deg,#1A2342,#0E1426);border:1px solid rgba(255,255,255,.1);border-radius:26px;padding:20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 24px 60px rgba(0,0,0,.45)">
+                <div style="position:absolute;top:14px;right:16px;display:flex;gap:8px">
+                  <button onClick="{{ saveWord }}" style="{{ saveSt }}">{{ saveGlyph }}</button>
+                  <button onClick="{{ playAudio }}" style="width:38px;height:38px;border-radius:12px;border:1px solid rgba(46,107,255,.35);background:rgba(46,107,255,.16);color:#fff;font-size:15px;cursor:pointer" style-hover="background:rgba(46,107,255,.3)">🔊</button>
+                </div>
+                <div style="padding:5px 10px;border-radius:9px;background:rgba(124,92,255,.18);border:1px solid rgba(124,92,255,.32);font:700 10px ui-monospace;color:#C4B5FF;align-self:flex-start;letter-spacing:.1em">İSİM · B1</div>
+                <div>
+                  <div style="font:800 40px Manrope;letter-spacing:-.02em">journey</div>
+                  <div style="display:flex;align-items:center;gap:10px;margin-top:5px">
+                    <span style="font:600 14px ui-monospace;color:#7FE6F5">/ˈdʒɜːni/</span>
+                    <span style="font:600 13px 'Plus Jakarta Sans';color:#94A0BC">· yolculuk</span>
+                  </div>
+                </div>
+                <div style="display:flex;align-items:center;gap:2px;height:34px">
+                  <sc-for list="{{ wave }}" as="w" hint-placeholder-count="26"><div style="{{ w.st }}"></div></sc-for>
+                </div>
+                <div style="background:rgba(255,255,255,.04);border-radius:16px;padding:13px"><div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.1em;margin-bottom:5px">TANIM</div><div style="font:500 13.5px/1.5 'Plus Jakarta Sans';color:#E4EAF8">An act of travelling from one place to another, especially over a long distance.</div></div>
+                <div style="background:rgba(46,107,255,.1);border-left:0;border-radius:16px;padding:13px"><div style="font:700 10px ui-monospace;color:#9FB0D4;letter-spacing:.1em;margin-bottom:5px">ÖRNEK</div><div style="font:600 14px/1.5 'Plus Jakarta Sans';color:#fff">"The <span style="color:#22D3EE">journey</span> from İstanbul to Tokyo takes 11 hours."</div><div style="font:500 12px 'Plus Jakarta Sans';color:#94A0BC;margin-top:4px">İstanbul'dan Tokyo'ya yolculuk 11 saat sürer.</div></div>
+                <div style="display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;gap:7px;align-items:flex-start"><div style="width:74px;flex:none;font:700 10px ui-monospace;color:#8E9BBA;padding-top:5px">EŞ ANLAM</div><div style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:5px 10px;border-radius:9px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.26);font:600 11.5px 'Plus Jakarta Sans';color:#9DEFC0">trip</span><span style="padding:5px 10px;border-radius:9px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.26);font:600 11.5px 'Plus Jakarta Sans';color:#9DEFC0">voyage</span><span style="padding:5px 10px;border-radius:9px;background:rgba(34,197,94,.12);border:1px solid rgba(34,197,94,.26);font:600 11.5px 'Plus Jakarta Sans';color:#9DEFC0">expedition</span></div></div>
+                  <div style="display:flex;gap:7px;align-items:flex-start"><div style="width:74px;flex:none;font:700 10px ui-monospace;color:#8E9BBA;padding-top:5px">ZIT ANLAM</div><div style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:5px 10px;border-radius:9px;background:rgba(255,77,94,.12);border:1px solid rgba(255,77,94,.26);font:600 11.5px 'Plus Jakarta Sans';color:#FFAEB6">stay</span></div></div>
+                  <div style="display:flex;gap:7px;align-items:flex-start"><div style="width:74px;flex:none;font:700 10px ui-monospace;color:#8E9BBA;padding-top:5px">BİRLİKTE</div><div style="display:flex;gap:6px;flex-wrap:wrap"><span style="padding:5px 10px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);font:600 11.5px 'Plus Jakarta Sans';color:#C7D2EC">long journey</span><span style="padding:5px 10px;border-radius:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);font:600 11.5px 'Plus Jakarta Sans';color:#C7D2EC">safe journey</span></div></div>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border-radius:14px;padding:11px 13px">
+                  <div style="font:700 11px 'Plus Jakarta Sans';color:#94A0BC">Ustalık</div>
+                  <div style="flex:1;height:7px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="width:68%;height:100%;border-radius:9px;background:linear-gradient(90deg,#22C55E,#22D3EE)"></div></div>
+                  <div style="font:800 13px Manrope;color:#7EE2A8">%68</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:10px">
+                <button onClick="{{ wordAgain }}" style="flex:1;height:52px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font:700 14px Manrope;cursor:pointer" style-hover="background:rgba(255,255,255,.09)">Tekrar göster</button>
+                <button onClick="{{ wordKnown }}" style="flex:1.4;height:52px;border-radius:16px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 14.5px Manrope;box-shadow:0 12px 28px rgba(46,107,255,.38);cursor:pointer" style-active="transform:scale(.97)">Biliyorum · +10 XP</button>
+              </div>
+              <div style="display:flex;gap:9px">
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#22D3EE">1.284</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">toplanan kelime</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#7C5CFF">42</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">bugün öğrenilen</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#F5A524">18</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">tekrar sırası</div></div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.grammar }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toLesson }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1"><div style="font:800 16px Manrope">Gramer · Present Perfect</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">Kavram → Örnek → Alıştırma → Meydan okuma</div></div>
+                <div style="padding:5px 10px;border-radius:9px;background:rgba(124,92,255,.18);border:1px solid rgba(124,92,255,.32);font:700 11px ui-monospace;color:#C4B5FF">B1</div>
+              </div>
+              <div style="display:flex;gap:5px">
+                <div style="flex:1;height:4px;border-radius:9px;background:#22D3EE"></div><div style="flex:1;height:4px;border-radius:9px;background:#22D3EE"></div><div style="flex:1;height:4px;border-radius:9px;background:#2E6BFF"></div><div style="flex:1;height:4px;border-radius:9px;background:rgba(255,255,255,.1)"></div>
+              </div>
+              <div style="background:linear-gradient(140deg,rgba(124,92,255,.22),rgba(14,20,38,.92));border:1px solid rgba(124,92,255,.3);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:10px">
+                <div style="font:700 10px ui-monospace;color:#C4B5FF;letter-spacing:.14em">KAVRAM</div>
+                <div style="font:800 21px/1.3 Manrope">Bitmiş bir eylemin <span style="color:#22D3EE">şimdiye etkisi</span> varsa Present Perfect kullanılır.</div>
+                <div style="display:flex;gap:8px;align-items:center;background:rgba(0,0,0,.28);border-radius:14px;padding:12px">
+                  <div style="font:700 12px ui-monospace;color:#7FE6F5">have / has</div><div style="color:#6E7B9C">+</div><div style="font:700 12px ui-monospace;color:#C4B5FF">V3</div>
+                </div>
+                <div style="font:600 15px 'Plus Jakarta Sans';color:#fff">"I <span style="color:#22D3EE">have visited</span> London twice."</div>
+                <div style="font:500 12.5px 'Plus Jakarta Sans';color:#A9B6D4">Londra'ya iki kez gittim. (ne zaman değil, deneyim önemli)</div>
+              </div>
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:12px">
+                <div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.14em">ALIŞTIRMA 3/4</div>
+                <div style="font:700 19px/1.4 Manrope">Doğru cümleyi seç.</div>
+                <sc-for list="{{ grOpts }}" as="o" hint-placeholder-count="3">
+                  <button onClick="{{ o.onClick }}" style="{{ o.st }}"><span style="flex:1;text-align:left">{{ o.label }}</span><span style="font:700 14px Manrope">{{ o.mark }}</span></button>
+                </sc-for>
+                <sc-if value="{{ grDone }}">
+                  <div style="{{ grFbSt }}"><div style="font:800 13.5px Manrope">{{ grFbTitle }}</div><div style="font:500 12px/1.5 'Plus Jakarta Sans';opacity:.9">{{ grFbNote }}</div></div>
+                </sc-if>
+              </div>
+              <div style="display:flex;gap:10px;align-items:center;background:rgba(245,165,36,.1);border:1px solid rgba(245,165,36,.28);border-radius:20px;padding:14px">
+                <div style="width:42px;height:42px;flex:none;border-radius:14px;background:rgba(245,165,36,.2);display:flex;align-items:center;justify-content:center;font-size:18px">⚡</div>
+                <div style="flex:1"><div style="font:700 13.5px Manrope">Mini meydan okuma</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">60 saniyede 8 cümle · 2× XP</div></div>
+                <button onClick="{{ toArena }}" style="padding:10px 14px;border-radius:12px;border:none;background:#F5A524;color:#12161F;font:800 12px Manrope;cursor:pointer">Başla</button>
+              </div>
+              <button onClick="{{ toListen }}" style="height:54px;border-radius:18px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 15.5px Manrope;box-shadow:0 14px 32px rgba(46,107,255,.4);cursor:pointer" style-active="transform:scale(.97)">Sonraki bölüm · Dinleme</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.listen }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toLesson }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1"><div style="font:800 16px Manrope">Dinleme · Havaalanında</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">B1 · 0:48 · İngiliz aksanı</div></div>
+              </div>
+              <div style="background:linear-gradient(150deg,rgba(34,211,238,.18),rgba(14,20,38,.94));border:1px solid rgba(34,211,238,.28);border-radius:24px;padding:20px;display:flex;flex-direction:column;gap:16px">
+                <div style="display:flex;align-items:center;gap:2px;height:72px">
+                  <sc-for list="{{ wave }}" as="w" hint-placeholder-count="26"><div style="{{ w.tall }}"></div></sc-for>
+                </div>
+                <div style="display:flex;align-items:center;gap:14px;justify-content:center">
+                  <button onClick="{{ audioBack }}" style="width:44px;height:44px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#fff;font:700 12px ui-monospace;cursor:pointer">-5s</button>
+                  <button onClick="{{ audioToggle }}" style="{{ playSt }}">{{ playGlyph }}</button>
+                  <button onClick="{{ audioSpeed }}" style="width:44px;height:44px;border-radius:14px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#fff;font:700 11px ui-monospace;cursor:pointer">{{ speed }}</button>
+                </div>
+                <div style="display:flex;align-items:center;gap:10px"><span style="font:700 11px ui-monospace;color:#94A0BC">0:18</span><div style="flex:1;height:5px;border-radius:9px;background:rgba(255,255,255,.12);overflow:hidden"><div style="width:38%;height:100%;background:linear-gradient(90deg,#22D3EE,#2E6BFF)"></div></div><span style="font:700 11px ui-monospace;color:#94A0BC">0:48</span></div>
+              </div>
+              <button onClick="{{ transcriptToggle }}" style="display:flex;align-items:center;gap:10px;background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:13px;color:#fff;cursor:pointer" style-hover="border-color:rgba(255,255,255,.2)">
+                <span style="font-size:15px">📝</span><span style="flex:1;text-align:left;font:700 13px Manrope">Transkript</span><span style="font:700 11px ui-monospace;color:#94A0BC">{{ transcriptLabel }}</span>
+              </button>
+              <sc-if value="{{ transcriptOn }}">
+                <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:15px;display:flex;flex-direction:column;gap:10px">
+                  <div style="font:500 13.5px/1.6 'Plus Jakarta Sans';color:#E4EAF8">"Good afternoon. I'm afraid the flight to Berlin <span style="background:rgba(46,107,255,.28);border-radius:5px;padding:1px 5px">has been delayed</span> by two hours. We'll issue meal vouchers at the desk."</div>
+                  <div style="font:500 12px/1.6 'Plus Jakarta Sans';color:#94A0BC">İyi günler. Berlin uçuşu iki saat gecikti. Yemek fişlerini bankoda vereceğiz.</div>
+                </div>
+              </sc-if>
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:12px">
+                <div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.14em">BOŞLUĞU DOLDUR</div>
+                <div style="font:600 16.5px/1.6 'Plus Jakarta Sans'">The flight <span style="{{ blankSt }}">{{ blankText }}</span> by two hours.</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <sc-for list="{{ blankOpts }}" as="o" hint-placeholder-count="3"><button onClick="{{ o.onClick }}" style="{{ o.st }}">{{ o.label }}</button></sc-for>
+                </div>
+              </div>
+              <div style="flex:1"></div>
+              <button onClick="{{ toRead }}" style="height:54px;border-radius:18px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 15.5px Manrope;box-shadow:0 14px 32px rgba(46,107,255,.4);cursor:pointer">Sonraki bölüm · Okuma</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.read }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toLesson }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1"><div style="font:800 16px Manrope">Okuma · A Long Journey</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">182 kelime · ~2 dk · B1</div></div>
+                <div style="padding:5px 9px;border-radius:9px;background:rgba(255,255,255,.06);font:700 11px ui-monospace;color:#94A0BC">Aa</div>
+              </div>
+              <div style="background:#0B1020;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:18px;display:flex;flex-direction:column;gap:12px">
+                <div style="height:132px;border-radius:16px;border:1px solid rgba(255,255,255,.08);background:repeating-linear-gradient(115deg,rgba(124,92,255,.14) 0 9px,rgba(46,107,255,.08) 9px 18px);display:flex;align-items:center;justify-content:center"><div style="font:500 10.5px ui-monospace;color:rgba(255,255,255,.6);background:rgba(7,10,20,.72);padding:5px 10px;border-radius:8px">görsel: tren penceresi fotoğrafı</div></div>
+                <div style="font:500 15px/1.75 'Plus Jakarta Sans';color:#E4EAF8;text-wrap:pretty">Last summer I took the train from İstanbul to Sofia. The <button onClick="{{ tapWord }}" style="background:rgba(46,107,255,.22);border:none;border-bottom:1.5px dashed #6E9BFF;color:#fff;font:600 15px 'Plus Jakarta Sans';padding:0 3px;border-radius:4px;cursor:pointer">journey</button> lasted eleven hours, and I <button onClick="{{ tapWord2 }}" style="background:rgba(124,92,255,.2);border:none;border-bottom:1.5px dashed #B9A8FF;color:#fff;font:600 15px 'Plus Jakarta Sans';padding:0 3px;border-radius:4px;cursor:pointer">barely</button> slept. Still, watching the countryside change slowly was worth every minute.</div>
+                <div style="font:500 13px/1.7 'Plus Jakarta Sans';color:#8E9BBA">Bilmediğin kelimeye dokun: anlamı, telaffuzu ve çeviri anında açılır, kelime defterine eklenir.</div>
+              </div>
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:12px">
+                <div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.14em">ANLAMA SORUSU</div>
+                <div style="font:700 17px/1.4 Manrope">Yazar yolculuk hakkında ne düşünüyor?</div>
+                <sc-for list="{{ readOpts }}" as="o" hint-placeholder-count="3"><button onClick="{{ o.onClick }}" style="{{ o.st }}"><span style="flex:1;text-align:left">{{ o.label }}</span><span style="font:700 14px Manrope">{{ o.mark }}</span></button></sc-for>
+              </div>
+              <div style="display:flex;gap:9px">
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#22D3EE">148</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">kelime/dk</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#7EE2A8">%92</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">anlama</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#F5A524">3</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">yeni kelime</div></div>
+              </div>
+              <div style="flex:1"></div>
+              <button onClick="{{ toSpeak }}" style="height:54px;border-radius:18px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 15.5px Manrope;box-shadow:0 14px 32px rgba(46,107,255,.4);cursor:pointer">Sonraki bölüm · Konuşma</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.speak }}">
+            <div style="min-height:844px;display:flex;flex-direction:column;background:radial-gradient(420px 320px at 50% 8%,rgba(124,92,255,.24),transparent 62%),#070A14">
+              <div style="padding:62px 18px 14px;display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toLesson }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="display:flex;align-items:center;gap:10px">
+                  <div style="width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:800 13px Manrope">AI</div>
+                  <div><div style="font:800 15px Manrope">Emma · AI Öğretmen</div><div style="font:600 11px 'Plus Jakarta Sans';color:#7EE2A8">● konuşmaya hazır</div></div>
+                </div>
+                <button onClick="{{ speakFinish }}" style="margin-left:auto;padding:8px 12px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);color:#C7D2EC;font:700 11.5px Manrope;cursor:pointer">Bitir</button>
+              </div>
+              <div style="padding:0 18px;display:flex;flex-direction:column;gap:10px">
+                <div style="align-self:center;padding:6px 12px;border-radius:10px;background:rgba(255,255,255,.05);font:600 11px 'Plus Jakarta Sans';color:#94A0BC">Senaryo: Otelde check-in</div>
+                <sc-for list="{{ chat }}" as="m" hint-placeholder-count="4">
+                  <div style="{{ m.wrap }}"><div style="{{ m.bubble }}">{{ m.text }}<div style="{{ m.trSt }}">{{ m.tr }}</div></div></div>
+                </sc-for>
+              </div>
+              <sc-if value="{{ speakScore }}">
+                <div style="margin:14px 18px 0;background:linear-gradient(180deg,#141C33,#0E1426);border:1px solid rgba(255,255,255,.1);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:11px;animation:wup .3s ease both">
+                  <div style="display:flex;align-items:center;justify-content:space-between"><div style="font:800 15px Manrope">Konuşma puanın</div><div style="font:800 24px Manrope;color:#22D3EE">78</div></div>
+                  <sc-for list="{{ speakAxes }}" as="a" hint-placeholder-count="5">
+                    <div style="display:flex;align-items:center;gap:10px"><div style="width:86px;font:600 11.5px 'Plus Jakarta Sans';color:#C7D2EC">{{ a.name }}</div><div style="flex:1;height:6px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="{{ a.bar }}"></div></div><div style="width:30px;font:700 11px ui-monospace;color:#94A0BC">{{ a.val }}</div></div>
+                  </sc-for>
+                  <div style="background:rgba(245,165,36,.1);border:1px solid rgba(245,165,36,.26);border-radius:14px;padding:12px"><div style="font:700 11.5px Manrope;color:#FFCE8A">Öneri</div><div style="font:500 12.5px/1.55 'Plus Jakarta Sans';color:#E4EAF8;margin-top:3px">"th" sesini /d/ yerine dil ucuyla dene: <b>three</b>, <b>through</b>. 2 dakikalık telaffuz drili hazır.</div></div>
+                </div>
+              </sc-if>
+              <div style="flex:1"></div>
+              <div style="padding:16px 18px 34px;display:flex;flex-direction:column;align-items:center;gap:12px">
+                <div style="font:600 12px 'Plus Jakarta Sans';color:#94A0BC">{{ recLabel }}</div>
+                <div style="display:flex;align-items:center;gap:2px;height:36px;width:100%">
+                  <sc-for list="{{ recWave }}" as="w" hint-placeholder-count="26"><div style="{{ w.st }}"></div></sc-for>
+                </div>
+                <button onClick="{{ recToggle }}" style="{{ micSt }}">{{ micGlyph }}</button>
+                <div style="display:flex;gap:8px"><button onClick="{{ speakHint }}" style="padding:9px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font:700 12px Manrope;cursor:pointer">İpucu</button><button onClick="{{ speakSlow }}" style="padding:9px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font:700 12px Manrope;cursor:pointer">Yavaş tekrar et</button></div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.coach }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toHome }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1"><div style="font:800 17px Manrope">AI Koç</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">Seni 42 gündür takip ediyor</div></div>
+              </div>
+              <div style="background:linear-gradient(145deg,rgba(124,92,255,.28),rgba(34,211,238,.1),rgba(14,20,38,.95));border:1px solid rgba(124,92,255,.32);border-radius:24px;padding:18px;display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:center;gap:11px">
+                  <div style="width:46px;height:46px;border-radius:16px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:800 16px Manrope">AI</div>
+                  <div><div style="font:800 16px Manrope">Bugünün planı</div><div style="font:600 11.5px 'Plus Jakarta Sans';color:#C4B5FF">3 dakika · zayıf noktalarına göre</div></div>
+                </div>
+                <div style="font:600 15px/1.6 'Plus Jakarta Sans';color:#fff">"Ali, dün Past Perfect'te 4 hatadan 3'ünü yaptın ve konuşmada 'th' sesi puanını düşürdü. Önce 8 soruluk hızlı bir drill, sonra 90 saniyelik telaffuz çalışması yapalım."</div>
+                <button onClick="{{ coachStart }}" style="height:50px;border-radius:16px;border:none;background:#7C5CFF;color:#fff;font:800 15px Manrope;cursor:pointer;box-shadow:0 12px 28px rgba(124,92,255,.4)" style-active="transform:scale(.97)">Şimdi pratik yap</button>
+              </div>
+              <div style="font:700 13.5px Manrope;margin-top:2px">Koçun hatırladıkları</div>
+              <sc-for list="{{ memory }}" as="m" hint-placeholder-count="4">
+                <div style="display:flex;gap:12px;align-items:center;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:13px">
+                  <div style="{{ m.icon }}">{{ m.glyph }}</div>
+                  <div style="flex:1"><div style="font:700 13.5px Manrope">{{ m.title }}</div><div style="font:500 11.5px/1.45 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ m.sub }}</div></div>
+                  <div style="{{ m.tagSt }}">{{ m.tag }}</div>
+                </div>
+              </sc-for>
+              <div style="background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:20px;padding:15px;display:flex;flex-direction:column;gap:10px">
+                <div style="font:700 13.5px Manrope">Koça sor</div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap">
+                  <sc-for list="{{ coachChips }}" as="c" hint-placeholder-count="4"><button onClick="{{ c.onClick }}" style="{{ c.st }}">{{ c.label }}</button></sc-for>
+                </div>
+                <div style="display:flex;gap:9px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:11px 13px">
+                  <div style="flex:1;font:500 13px 'Plus Jakarta Sans';color:#6E7B9C">Bir şey yaz…</div>
+                  <div style="width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);display:flex;align-items:center;justify-content:center;font:700 13px Manrope">↑</div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.play }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:14px">
+              <div><div style="font:700 11px ui-monospace;color:#94A0BC;letter-spacing:.14em">OYNA</div><h1 style="font:800 26px Manrope;margin:4px 0 0;letter-spacing:-.02em">Oyna, kelime kazan</h1></div>
+              <button onClick="{{ toArena }}" style="position:relative;overflow:hidden;text-align:left;border:1px solid rgba(34,211,238,.34);border-radius:26px;padding:18px;background:linear-gradient(140deg,rgba(34,211,238,.24),rgba(124,92,255,.2),rgba(14,20,38,.95));color:#fff;cursor:pointer" style-hover="border-color:rgba(34,211,238,.6)">
+                <div style="position:absolute;right:-30px;top:-30px;width:170px;height:170px;border-radius:50%;border:1.5px dashed rgba(255,255,255,.22)"></div>
+                <div style="position:absolute;right:6px;top:34px;width:98px;height:98px;border-radius:50%;border:1.5px solid rgba(255,255,255,.12)"></div>
+                <div style="position:relative"><div style="display:inline-flex;padding:5px 10px;border-radius:9px;background:rgba(0,0,0,.34);font:700 10px ui-monospace;color:#7FE6F5;letter-spacing:.12em">İMZA OYUN · 2× XP</div>
+                  <div style="font:800 26px Manrope;margin-top:10px">Harf Arenası</div>
+                  <div style="font:500 12.5px/1.5 'Plus Jakarta Sans';color:#D3DCF0;max-width:200px;margin-top:4px">Dairedeki harflerden kelime kur. Kombo yap, süreyi yönet.</div>
+                  <div style="display:flex;gap:8px;margin-top:12px"><div style="padding:9px 16px;border-radius:13px;background:#fff;color:#0B1122;font:800 13px Manrope">Oyna</div><div style="padding:9px 14px;border-radius:13px;background:rgba(0,0,0,.3);font:700 12px Manrope;color:#C7D2EC">Nasıl oynanır?</div></div>
+                </div>
+              </button>
+              <div style="font:700 13.5px Manrope">Modlar</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <sc-for list="{{ modes }}" as="m" hint-placeholder-count="6">
+                  <button onClick="{{ m.onClick }}" style="{{ m.st }}">
+                    <div style="display:flex;align-items:center;justify-content:space-between"><div style="{{ m.icon }}">{{ m.glyph }}</div><div style="{{ m.tagSt }}">{{ m.tag }}</div></div>
+                    <div style="font:800 14.5px Manrope;margin-top:10px">{{ m.name }}</div>
+                    <div style="font:500 11px/1.4 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ m.sub }}</div>
+                  </button>
+                </sc-for>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(245,165,36,.16),rgba(14,20,38,.92));border:1px solid rgba(245,165,36,.3);border-radius:20px;padding:15px">
+                <div style="width:44px;height:44px;flex:none;border-radius:15px;background:rgba(245,165,36,.2);display:flex;align-items:center;justify-content:center;font-size:19px">🏁</div>
+                <div style="flex:1"><div style="font:700 14px Manrope">Haftalık Turnuva</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">2.480 katılımcı · 1 gün 6 saat kaldı</div></div>
+                <button onClick="{{ toBoard }}" style="padding:10px 14px;border-radius:12px;border:none;background:#F5A524;color:#12161F;font:800 12px Manrope;cursor:pointer">Katıl</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.arena }}">
+            <div style="min-height:844px;padding:58px 18px 26px;display:flex;flex-direction:column;gap:12px;background:radial-gradient(460px 460px at 50% 58%,rgba(46,107,255,.26),transparent 66%),radial-gradient(300px 260px at 82% 14%,rgba(124,92,255,.22),transparent 64%),#070A14">
+              <div style="display:flex;align-items:center;gap:10px">
+                <button onClick="{{ toPlay }}" style="width:36px;height:36px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);color:#fff;font:700 15px Manrope;cursor:pointer">‹</button>
+                <div style="flex:1;display:flex;flex-direction:column;gap:5px">
+                  <div style="display:flex;justify-content:space-between;font:700 11px ui-monospace;color:#94A0BC"><span>SÜRE ATAĞI</span><span style="color:#FFC768">00:{{ arenaTime }}</span></div>
+                  <div style="height:6px;border-radius:9px;background:rgba(255,255,255,.1);overflow:hidden"><div style="{{ arenaTimeBar }}"></div></div>
+                </div>
+                <div style="text-align:right"><div style="font:800 20px Manrope;color:#22D3EE">{{ arenaXp }}</div><div style="font:600 9.5px ui-monospace;color:#6E7B9C">XP</div></div>
+              </div>
+              <div style="display:flex;gap:9px;align-items:center">
+                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:9px 12px"><div style="font:600 9.5px ui-monospace;color:#8E9BBA;letter-spacing:.1em">KOMBO</div><div style="font:800 16px Manrope;color:#C4B5FF">×{{ combo }}</div></div>
+                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:9px 12px"><div style="font:600 9.5px ui-monospace;color:#8E9BBA;letter-spacing:.1em">SERİ</div><div style="font:800 16px Manrope;color:#FFCE8A">{{ arenaStreak }}</div></div>
+                <div style="flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:14px;padding:9px 12px"><div style="font:600 9.5px ui-monospace;color:#8E9BBA;letter-spacing:.1em">KELİME</div><div style="font:800 16px Manrope;color:#7EE2A8">{{ arenaFound }}/8</div></div>
+              </div>
+              <div style="background:linear-gradient(180deg,rgba(18,26,49,.9),rgba(14,20,38,.9));border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:14px;text-align:center">
+                <div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.12em">GÖREV</div>
+                <div style="font:700 16.5px/1.4 Manrope;margin-top:5px">Seyahatle ilgili <span style="color:#22D3EE">6 harfli</span> bir kelime bul</div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:center;gap:7px;min-height:56px">
+                <sc-for list="{{ slots }}" as="sl" hint-placeholder-count="6"><div style="{{ sl.st }}">{{ sl.ch }}</div></sc-for>
+              </div>
+              <div style="position:relative;width:280px;height:280px;margin:0 auto;flex:none">
+                <div style="position:absolute;inset:0;border-radius:50%;border:1.5px solid rgba(255,255,255,.1)"></div>
+                <div style="position:absolute;inset:34px;border-radius:50%;border:1px dashed rgba(255,255,255,.12)"></div>
+                <div style="position:absolute;inset:88px;border-radius:50%;background:radial-gradient(circle,rgba(46,107,255,.34),rgba(46,107,255,0) 70%);display:flex;flex-direction:column;align-items:center;justify-content:center">
+                  <div style="font:800 15px Manrope;color:#fff">{{ arenaWord }}</div>
+                  <div style="font:600 10px ui-monospace;color:#9FB0D4;margin-top:2px">{{ arenaHint }}</div>
+                </div>
+                <sc-for list="{{ arenaLetters }}" as="l" hint-placeholder-count="10">
+                  <button onClick="{{ l.onClick }}" style="{{ l.st }}">{{ l.ch }}</button>
+                </sc-for>
+              </div>
+              <div style="display:flex;gap:9px">
+                <button onClick="{{ arenaClear }}" style="flex:1;height:50px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font:700 13.5px Manrope;cursor:pointer" style-hover="background:rgba(255,255,255,.09)">Temizle</button>
+                <button onClick="{{ arenaShuffle }}" style="width:56px;height:50px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font-size:16px;cursor:pointer" style-hover="background:rgba(255,255,255,.09)">🔀</button>
+                <button onClick="{{ arenaSubmit }}" style="{{ arenaSubmitSt }}">{{ arenaSubmitLabel }}</button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.duel }}">
+            <div style="min-height:844px;display:flex;flex-direction:column;background:radial-gradient(420px 300px at 15% 6%,rgba(46,107,255,.3),transparent 62%),radial-gradient(420px 300px at 88% 6%,rgba(255,77,94,.24),transparent 62%),#070A14">
+              <div style="padding:58px 18px 16px;display:flex;align-items:center;gap:10px">
+                <div style="flex:1;display:flex;align-items:center;gap:9px">
+                  <div style="width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);display:flex;align-items:center;justify-content:center;font:800 15px Manrope">A</div>
+                  <div><div style="font:800 13.5px Manrope">Ali</div><div style="font:600 10px ui-monospace;color:#9FB0D4">B1+ · Lv 24</div></div>
+                </div>
+                <div style="text-align:center"><div style="font:800 26px Manrope">{{ duelMe }} <span style="color:#6E7B9C">:</span> {{ duelOp }}</div><div style="font:700 10px ui-monospace;color:#FFC768">00:{{ duelTime }}</div></div>
+                <div style="flex:1;display:flex;align-items:center;gap:9px;justify-content:flex-end;text-align:right">
+                  <div><div style="font:800 13.5px Manrope">Gözde</div><div style="font:600 10px ui-monospace;color:#FFAEB6">B2 · Lv 31</div></div>
+                  <div style="width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#FF7A59,#FF4D5E);display:flex;align-items:center;justify-content:center;font:800 15px Manrope">G</div>
+                </div>
+              </div>
+              <div style="padding:0 18px;display:flex;gap:6px;align-items:center">
+                <div style="flex:1;height:8px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden;display:flex;justify-content:flex-end"><div style="{{ duelBarMe }}"></div></div>
+                <div style="font:700 10px ui-monospace;color:#6E7B9C">SORU 8/12</div>
+                <div style="flex:1;height:8px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="{{ duelBarOp }}"></div></div>
+              </div>
+              <div style="padding:18px;display:flex;flex-direction:column;gap:14px;flex:1">
+                <div style="display:flex;justify-content:center"><div style="padding:6px 12px;border-radius:10px;background:rgba(124,92,255,.18);border:1px solid rgba(124,92,255,.34);font:700 11px ui-monospace;color:#C4B5FF">KOMBO ×{{ duelCombo }} · +{{ duelReward }} XP</div></div>
+                <div style="background:linear-gradient(180deg,#141C33,#0E1426);border:1px solid rgba(255,255,255,.1);border-radius:24px;padding:22px;display:flex;flex-direction:column;gap:10px;box-shadow:0 22px 50px rgba(0,0,0,.4)">
+                  <div style="font:600 11.5px 'Plus Jakarta Sans';color:#8E9BBA">Boşluğu doldur</div>
+                  <div style="font:700 23px/1.4 Manrope">If I ___ more time, I would travel the world.</div>
+                </div>
+                <sc-for list="{{ duelOpts }}" as="o" hint-placeholder-count="4">
+                  <button onClick="{{ o.onClick }}" style="{{ o.st }}"><span style="flex:1;text-align:left">{{ o.label }}</span><span style="font:700 14px Manrope">{{ o.mark }}</span></button>
+                </sc-for>
+                <div style="flex:1"></div>
+                <div style="display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:12px">
+                  <div style="width:30px;height:30px;border-radius:50%;background:linear-gradient(135deg,#FF7A59,#FF4D5E);display:flex;align-items:center;justify-content:center;font:700 12px Manrope">G</div>
+                  <div style="flex:1;font:600 12px 'Plus Jakarta Sans';color:#C7D2EC">{{ duelOpStatus }}</div>
+                  <div style="display:flex;gap:3px"><div style="width:6px;height:6px;border-radius:50%;background:#FF4D5E;animation:wpulse 1.2s ease-in-out infinite"></div><div style="width:6px;height:6px;border-radius:50%;background:#FF4D5E;opacity:.5"></div><div style="width:6px;height:6px;border-radius:50%;background:#FF4D5E;opacity:.25"></div></div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.board }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div><div style="font:700 11px ui-monospace;color:#94A0BC;letter-spacing:.14em">HAFTALIK LİG</div><h1 style="font:800 26px Manrope;margin:4px 0 0;letter-spacing:-.02em">Altın Lig</h1></div>
+              <div style="display:flex;gap:7px;overflow:auto;padding-bottom:4px">
+                <sc-for list="{{ leagues }}" as="l" hint-placeholder-count="6"><div style="{{ l.st }}"><span style="font-size:13px">{{ l.glyph }}</span>{{ l.name }}</div></sc-for>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(245,165,36,.2),rgba(14,20,38,.92));border:1px solid rgba(245,165,36,.32);border-radius:20px;padding:14px">
+                <div style="width:46px;height:46px;flex:none;border-radius:15px;background:rgba(245,165,36,.22);display:flex;align-items:center;justify-content:center;font-size:20px">🥇</div>
+                <div style="flex:1"><div style="font:700 13.5px Manrope">İlk 5'e girenler Elmas Lig'e çıkar</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">3 gün 4 saat kaldı · sen 7. sıradasın</div></div>
+              </div>
+              <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:8px;display:flex;flex-direction:column">
+                <sc-for list="{{ boardRows }}" as="r" hint-placeholder-count="10">
+                  <div style="{{ r.row }}">
+                    <div style="width:24px;font:700 12.5px ui-monospace;color:#94A0BC">{{ r.rank }}</div>
+                    <div style="{{ r.av }}">{{ r.ini }}</div>
+                    <div style="flex:1"><div style="font:700 13.5px Manrope">{{ r.name }}</div><div style="font:600 10.5px 'Plus Jakarta Sans';color:#8E9BBA">{{ r.meta }}</div></div>
+                    <div style="text-align:right"><div style="font:700 12.5px ui-monospace;color:#22D3EE">{{ r.xp }}</div><div style="font:700 10px Manrope;{{ r.mvSt }}">{{ r.mv }}</div></div>
+                  </div>
+                  <sc-if value="{{ r.divider }}"><div style="display:flex;align-items:center;gap:8px;padding:6px 4px"><div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(34,197,94,.5),transparent)"></div><div style="font:700 9.5px ui-monospace;color:#7EE2A8;letter-spacing:.1em">YÜKSELME SINIRI</div><div style="flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(34,197,94,.5),transparent)"></div></div></sc-if>
+                </sc-for>
+              </div>
+              <div style="display:flex;gap:9px">
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#22D3EE">4.480</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">haftalık XP</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#7C5CFF">%68</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">düello kazanma</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 17px Manrope;color:#F5A524">340</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">5.'ye fark</div></div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.social }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;justify-content:space-between">
+                <h1 style="font:800 24px Manrope;margin:0;letter-spacing:-.02em">Topluluk</h1>
+                <div style="display:flex;gap:8px"><button onClick="{{ toFriends }}" style="width:38px;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:15px;cursor:pointer">👥</button><button onClick="{{ toClubs }}" style="width:38px;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font-size:15px;cursor:pointer">🏛</button></div>
+              </div>
+              <div style="display:flex;gap:7px">
+                <sc-for list="{{ socialTabs }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" style="{{ t.st }}">{{ t.label }}</button></sc-for>
+              </div>
+              <div style="display:flex;align-items:center;gap:10px;background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:12px">
+                <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);display:flex;align-items:center;justify-content:center;font:700 13px Manrope">A</div>
+                <div style="flex:1;font:500 12.5px 'Plus Jakarta Sans';color:#6E7B9C">Bugün ne öğrendin?</div>
+                <button onClick="{{ fxXp }}" style="padding:8px 12px;border-radius:11px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 11.5px Manrope;cursor:pointer">Paylaş</button>
+              </div>
+              <sc-for list="{{ feed }}" as="p" hint-placeholder-count="3">
+                <button onClick="{{ p.onClick }}" style="text-align:left;background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:15px;color:#fff;cursor:pointer;display:flex;flex-direction:column;gap:11px" style-hover="border-color:rgba(255,255,255,.18)">
+                  <div style="display:flex;align-items:center;gap:10px">
+                    <div style="{{ p.av }}">{{ p.ini }}</div>
+                    <div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font:700 13.5px Manrope">{{ p.name }}</span><span style="{{ p.lvlSt }}">{{ p.lvl }}</span></div><div style="font:600 10.5px 'Plus Jakarta Sans';color:#8E9BBA">{{ p.meta }}</div></div>
+                    <div style="font:700 11px ui-monospace;color:#6E7B9C">{{ p.time }}</div>
+                  </div>
+                  <div style="font:500 14px/1.6 'Plus Jakarta Sans';color:#E4EAF8">{{ p.text }}</div>
+                  <sc-if value="{{ p.hasCard }}">
+                    <div style="{{ p.cardSt }}"><div style="font:700 10px ui-monospace;letter-spacing:.12em;opacity:.8">{{ p.cardKicker }}</div><div style="font:800 17px Manrope;margin-top:4px">{{ p.cardTitle }}</div><div style="font:500 11.5px 'Plus Jakarta Sans';opacity:.8;margin-top:2px">{{ p.cardSub }}</div></div>
+                  </sc-if>
+                  <div style="display:flex;gap:16px;align-items:center;padding-top:2px">
+                    <div style="display:flex;align-items:center;gap:5px;font:700 11.5px 'Plus Jakarta Sans';color:#94A0BC">♥ {{ p.likes }}</div>
+                    <div style="display:flex;align-items:center;gap:5px;font:700 11.5px 'Plus Jakarta Sans';color:#94A0BC">💬 {{ p.comments }}</div>
+                    <div style="margin-left:auto;font:800 11px Manrope;color:#6E9BFF">{{ p.cta }}</div>
+                  </div>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.post }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:14px">
+              <div style="display:flex;align-items:center;gap:12px">
+                <button onClick="{{ toSocial }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button>
+                <div style="font:800 16px Manrope">Gönderi</div>
+              </div>
+              <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:13px">
+                <div style="display:flex;align-items:center;gap:11px">
+                  <div style="width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:700 15px Manrope">GÖ</div>
+                  <div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font:700 14.5px Manrope">Gözde</span><span style="padding:3px 7px;border-radius:7px;background:rgba(34,211,238,.16);border:1px solid rgba(34,211,238,.32);font:700 9.5px ui-monospace;color:#7FE6F5">B2</span></div><div style="font:600 11px 'Plus Jakarta Sans';color:#8E9BBA">Lv 31 · 🔥 58 gün · Altın Lig</div></div>
+                  <button onClick="{{ followTog }}" style="{{ followSt }}">{{ followLabel }}</button>
+                </div>
+                <div style="font:500 15px/1.65 'Plus Jakarta Sans';color:#E4EAF8">Bugün 50 yeni kelime öğrendim. Seyahat modülünü bitirdim, sırada iş İngilizcesi var 🎯</div>
+                <div style="border-radius:18px;padding:16px;border:1px solid rgba(255,255,255,.14);background:linear-gradient(135deg,rgba(124,92,255,.3),rgba(34,211,238,.16));display:flex;align-items:center;gap:14px">
+                  <div style="width:56px;height:56px;flex:none;border-radius:50%;background:rgba(0,0,0,.28);border:1.5px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:24px">🏅</div>
+                  <div><div style="font:700 10px ui-monospace;letter-spacing:.12em;opacity:.85">BAŞARIM</div><div style="font:800 18px Manrope;margin-top:3px">1.000 Kelime</div><div style="font:500 11.5px 'Plus Jakarta Sans';opacity:.82">Öğrenenlerin %8'i bu rozete sahip</div></div>
+                </div>
+                <div style="display:flex;gap:9px">
+                  <button onClick="{{ likeTog }}" style="{{ likeSt }}">{{ likeLabel }}</button>
+                  <button onClick="{{ commentFx }}" style="flex:1;height:44px;border-radius:14px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font:700 13px Manrope;cursor:pointer">💬 Yorum</button>
+                  <button onClick="{{ toDuel }}" style="flex:1;height:44px;border-radius:14px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 13px Manrope;cursor:pointer">⚔ Çağır</button>
+                </div>
+              </div>
+              <div style="font:700 13.5px Manrope">Yorumlar · 12</div>
+              <sc-for list="{{ comments }}" as="c" hint-placeholder-count="3">
+                <div style="display:flex;gap:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:13px">
+                  <div style="{{ c.av }}">{{ c.ini }}</div>
+                  <div style="flex:1"><div style="display:flex;gap:7px;align-items:baseline"><span style="font:700 12.5px Manrope">{{ c.name }}</span><span style="font:600 10px ui-monospace;color:#6E7B9C">{{ c.time }}</span></div><div style="font:500 13px/1.55 'Plus Jakarta Sans';color:#D3DCF0;margin-top:3px">{{ c.text }}</div></div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.friends }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toSocial }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div style="font:800 17px Manrope">Arkadaşlar</div><button onClick="{{ fxAchv }}" style="margin-left:auto;padding:9px 13px;border-radius:12px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 12px Manrope;cursor:pointer">+ Davet et</button></div>
+              <div style="display:flex;gap:7px">
+                <sc-for list="{{ friendTabs }}" as="t" hint-placeholder-count="3"><button onClick="{{ t.onClick }}" style="{{ t.st }}">{{ t.label }}</button></sc-for>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(255,77,94,.16),rgba(14,20,38,.92));border:1px solid rgba(255,77,94,.3);border-radius:20px;padding:14px">
+                <div style="width:44px;height:44px;flex:none;border-radius:50%;background:linear-gradient(135deg,#FF7A59,#FF4D5E);display:flex;align-items:center;justify-content:center;font:700 15px Manrope">GÖ</div>
+                <div style="flex:1"><div style="font:700 13.5px Manrope">Gözde seni düelloya çağırdı</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">"Skorumu geç." · 2 dk önce</div></div>
+                <button onClick="{{ toDuel }}" style="padding:10px 13px;border-radius:12px;border:none;background:#FF4D5E;color:#fff;font:800 11px Manrope;letter-spacing:.06em;cursor:pointer">KABUL ET</button>
+              </div>
+              <sc-for list="{{ friendList }}" as="f" hint-placeholder-count="6">
+                <div style="display:flex;align-items:center;gap:12px;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:12px">
+                  <div style="position:relative;flex:none"><div style="{{ f.av }}">{{ f.ini }}</div><div style="{{ f.dot }}"></div></div>
+                  <div style="flex:1"><div style="display:flex;align-items:center;gap:6px"><span style="font:700 13.5px Manrope">{{ f.name }}</span><span style="{{ f.lvlSt }}">{{ f.lvl }}</span></div><div style="font:500 11px 'Plus Jakarta Sans';color:#8E9BBA;margin-top:2px">{{ f.activity }}</div></div>
+                  <button onClick="{{ f.onClick }}" style="{{ f.btn }}">{{ f.btnLabel }}</button>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.clubs }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toSocial }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div><div style="font:800 17px Manrope">Kulüpler</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">İlgi alanına göre öğren</div></div></div>
+              <sc-for list="{{ clubList }}" as="c" hint-placeholder-count="6">
+                <button onClick="{{ c.onClick }}" style="{{ c.st }}">
+                  <div style="{{ c.icon }}">{{ c.glyph }}</div>
+                  <div style="flex:1;text-align:left"><div style="display:flex;align-items:center;gap:7px"><span style="font:700 14px Manrope">{{ c.name }}</span><span style="{{ c.tagSt }}">{{ c.tag }}</span></div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ c.meta }}</div></div>
+                  <div style="font:700 11px ui-monospace;color:#6E9BFF">{{ c.cta }}</div>
+                </button>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.club }}">
+            <div style="min-height:844px;display:flex;flex-direction:column">
+              <div style="padding:58px 18px 20px;background:linear-gradient(155deg,rgba(34,197,94,.26),rgba(46,107,255,.16),transparent);display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toClubs }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><button onClick="{{ joinTog }}" style="{{ joinSt }}">{{ joinLabel }}</button></div>
+                <div style="display:flex;align-items:center;gap:13px">
+                  <div style="width:62px;height:62px;flex:none;border-radius:20px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;font-size:26px">💻</div>
+                  <div><div style="font:800 21px Manrope">Developers English</div><div style="font:600 11.5px 'Plus Jakarta Sans';color:#C7D2EC;margin-top:2px">12.480 üye · 248.600 haftalık XP</div></div>
+                </div>
+                <div style="font:500 12.5px/1.55 'Plus Jakarta Sans';color:#C7D2EC">Kod review, stand-up ve teknik mülakat İngilizcesi. Günlük görev + haftalık turnuva.</div>
+              </div>
+              <div style="padding:4px 18px 40px;display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(46,107,255,.2),rgba(14,20,38,.92));border:1px solid rgba(46,107,255,.32);border-radius:20px;padding:15px">
+                  <div style="width:44px;height:44px;flex:none;border-radius:15px;background:rgba(46,107,255,.26);display:flex;align-items:center;justify-content:center;font-size:19px">🎯</div>
+                  <div style="flex:1"><div style="font:700 13.5px Manrope">Günün görevi</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#C7D2EC">Stand-up'ta dünkü işini 3 cümleyle anlat</div></div>
+                  <button onClick="{{ toSpeak }}" style="padding:10px 13px;border-radius:12px;border:none;background:#2E6BFF;color:#fff;font:800 11.5px Manrope;cursor:pointer">Yap</button>
+                </div>
+                <div style="display:flex;gap:9px">
+                  <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 16px Manrope;color:#22D3EE">#3</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">kulüp sırası</div></div>
+                  <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 16px Manrope;color:#7C5CFF">842</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">senin katkın</div></div>
+                  <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:12px;text-align:center"><div style="font:800 16px Manrope;color:#F5A524">2 gün</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">turnuvaya</div></div>
+                </div>
+                <div style="font:700 13.5px Manrope;margin-top:2px">Kulüp lider tablosu</div>
+                <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:8px">
+                  <sc-for list="{{ clubBoard }}" as="r" hint-placeholder-count="4">
+                    <div style="{{ r.row }}"><div style="width:22px;font:700 12px ui-monospace;color:#94A0BC">{{ r.rank }}</div><div style="{{ r.av }}">{{ r.ini }}</div><div style="flex:1;font:700 13px Manrope">{{ r.name }}</div><div style="font:700 12px ui-monospace;color:#22D3EE">{{ r.xp }}</div></div>
+                  </sc-for>
+                </div>
+                <div style="font:700 13.5px Manrope;margin-top:2px">Sohbet</div>
+                <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:14px;display:flex;flex-direction:column;gap:10px">
+                  <sc-for list="{{ clubChat }}" as="m" hint-placeholder-count="3">
+                    <div style="display:flex;gap:9px"><div style="{{ m.av }}">{{ m.ini }}</div><div style="flex:1"><div style="font:700 11.5px Manrope">{{ m.name }}</div><div style="font:500 12.5px/1.5 'Plus Jakarta Sans';color:#D3DCF0">{{ m.text }}</div></div></div>
+                  </sc-for>
+                  <div style="display:flex;gap:9px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:10px 12px"><div style="flex:1;font:500 12.5px 'Plus Jakarta Sans';color:#6E7B9C">Mesaj yaz…</div><div style="width:30px;height:30px;border-radius:10px;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);display:flex;align-items:center;justify-content:center;font:700 12px Manrope">↑</div></div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.notif }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:12px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toHome }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div style="font:800 17px Manrope">Bildirimler</div><button onClick="{{ fxXp }}" style="margin-left:auto;font:700 12px 'Plus Jakarta Sans';color:#6E9BFF;background:none;border:none;cursor:pointer">Tümünü okundu işaretle</button></div>
+              <sc-for list="{{ notifs }}" as="n" hint-placeholder-count="6">
+                <div style="{{ n.row }}">
+                  <div style="{{ n.icon }}">{{ n.glyph }}</div>
+                  <div style="flex:1"><div style="display:flex;gap:7px;align-items:baseline"><span style="font:700 13px Manrope">{{ n.title }}</span><span style="{{ n.kindSt }}">{{ n.kind }}</span></div><div style="font:500 11.5px/1.45 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ n.text }}</div></div>
+                  <div style="font:600 10px ui-monospace;color:#6E7B9C">{{ n.time }}</div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.profile }}">
+            <div style="min-height:844px;padding:0 0 112px;display:flex;flex-direction:column">
+              <div style="padding:58px 18px 22px;background:linear-gradient(160deg,rgba(124,92,255,.3),rgba(46,107,255,.16),transparent);display:flex;flex-direction:column;gap:14px">
+                <div style="display:flex;justify-content:flex-end"><button onClick="{{ toSettings }}" style="width:38px;height:38px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.07);color:#fff;font-size:15px;cursor:pointer">⚙</button></div>
+                <div style="display:flex;align-items:center;gap:15px">
+                  <div style="position:relative;flex:none">
+                    <div style="width:84px;height:84px;border-radius:28px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font:800 32px Manrope;box-shadow:0 14px 34px rgba(124,92,255,.4)">A</div>
+                    <div style="position:absolute;-webkit-box-pack:center;bottom:-8px;left:50%;transform:translateX(-50%);padding:4px 10px;border-radius:9px;background:#0B1122;border:1px solid rgba(255,255,255,.18);font:800 10px ui-monospace;color:#22D3EE">LV 24</div>
+                  </div>
+                  <div style="flex:1">
+                    <div style="font:800 23px Manrope">Ali Yılmaz</div>
+                    <div style="font:600 12px 'Plus Jakarta Sans';color:#C7D2EC;margin-top:2px">@aliyilmaz · 42 gündür üye</div>
+                    <div style="display:flex;gap:7px;margin-top:9px">
+                      <div style="padding:5px 9px;border-radius:9px;background:rgba(34,211,238,.16);border:1px solid rgba(34,211,238,.34);font:800 10.5px ui-monospace;color:#7FE6F5">B1+</div>
+                      <div style="padding:5px 9px;border-radius:9px;background:rgba(245,165,36,.16);border:1px solid rgba(245,165,36,.34);font:800 10.5px ui-monospace;color:#FFCE8A">🔥 42</div>
+                      <div style="padding:5px 9px;border-radius:9px;background:rgba(124,92,255,.16);border:1px solid rgba(124,92,255,.34);font:800 10.5px ui-monospace;color:#C4B5FF">ALTIN</div>
+                    </div>
+                  </div>
+                </div>
+                <div style="background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:13px;display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;justify-content:space-between;font:700 11.5px ui-monospace"><span style="color:#C7D2EC">SEVİYE 24 → 25</span><span style="color:#22D3EE">18.240 / 20.000 XP</span></div>
+                  <div style="height:9px;border-radius:9px;background:rgba(255,255,255,.1);overflow:hidden"><div style="width:91%;height:100%;border-radius:9px;background:linear-gradient(90deg,#7C5CFF,#22D3EE);box-shadow:0 0 14px rgba(34,211,238,.5)"></div></div>
+                  <div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">1.760 XP sonra yeni avatar çerçevesi açılıyor</div>
+                </div>
+              </div>
+              <div style="padding:4px 18px;display:flex;flex-direction:column;gap:13px">
+                <div style="display:flex;gap:9px">
+                  <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:13px;text-align:center"><div style="font:800 19px Manrope;color:#22D3EE">1.284</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">kelime</div></div>
+                  <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:13px;text-align:center"><div style="font:800 19px Manrope;color:#7C5CFF">%68</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">düello kazanma</div></div>
+                  <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:13px;text-align:center"><div style="font:800 19px Manrope;color:#F5A524">96</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#94A0BC">ders</div></div>
+                </div>
+                <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:11px">
+                  <div style="font:700 14px Manrope">Beceri dağılımı</div>
+                  <sc-for list="{{ profileSkills }}" as="k" hint-placeholder-count="7">
+                    <div style="display:flex;align-items:center;gap:10px"><div style="width:74px;font:600 11.5px 'Plus Jakarta Sans';color:#C7D2EC">{{ k.name }}</div><div style="flex:1;height:7px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="{{ k.bar }}"></div></div><div style="width:34px;font:700 11px ui-monospace;color:#94A0BC">{{ k.lvl }}</div></div>
+                  </sc-for>
+                </div>
+                <div style="background:linear-gradient(135deg,rgba(255,77,94,.14),rgba(14,20,38,.92));border:1px solid rgba(255,77,94,.26);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:10px">
+                  <div style="display:flex;justify-content:space-between;align-items:center"><div style="font:700 14px Manrope">Düello istatistikleri</div><div style="font:700 11px ui-monospace;color:#FFAEB6">38 maç</div></div>
+                  <div style="display:flex;height:12px;border-radius:9px;overflow:hidden"><div style="width:68%;background:linear-gradient(90deg,#22C55E,#22D3EE)"></div><div style="width:8%;background:#F5A524"></div><div style="width:24%;background:#FF4D5E"></div></div>
+                  <div style="display:flex;gap:14px;font:600 11px 'Plus Jakarta Sans';color:#C7D2EC"><span>● 26 galibiyet</span><span>● 3 berabere</span><span>● 9 yenilgi</span></div>
+                </div>
+                <button onClick="{{ toAchv }}" style="display:flex;align-items:center;gap:12px;background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:15px;color:#fff;cursor:pointer" style-hover="border-color:rgba(255,255,255,.2)">
+                  <div style="display:flex;gap:-6px"><div style="width:36px;height:36px;border-radius:12px;background:rgba(245,165,36,.2);border:1px solid rgba(245,165,36,.4);display:flex;align-items:center;justify-content:center;font-size:16px">🔥</div><div style="width:36px;height:36px;border-radius:12px;background:rgba(124,92,255,.2);border:1px solid rgba(124,92,255,.4);display:flex;align-items:center;justify-content:center;font-size:16px;margin-left:-8px">🏅</div><div style="width:36px;height:36px;border-radius:12px;background:rgba(34,211,238,.2);border:1px solid rgba(34,211,238,.4);display:flex;align-items:center;justify-content:center;font-size:16px;margin-left:-8px">⚔</div></div>
+                  <div style="flex:1;text-align:left"><div style="font:700 13.5px Manrope">Başarımlar</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">14 / 48 açıldı</div></div>
+                  <div style="font:800 20px Manrope">›</div>
+                </button>
+                <button onClick="{{ toStats }}" style="display:flex;align-items:center;gap:12px;background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:15px;color:#fff;cursor:pointer" style-hover="border-color:rgba(255,255,255,.2)"><div style="width:36px;height:36px;border-radius:12px;background:rgba(46,107,255,.2);border:1px solid rgba(46,107,255,.4);display:flex;align-items:center;justify-content:center;font-size:16px">📈</div><div style="flex:1;text-align:left"><div style="font:700 13.5px Manrope">Gelişim analizi</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">Haftalık rapor hazır</div></div><div style="font:800 20px Manrope">›</div></button>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.achv }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toProfile }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div><div style="font:800 17px Manrope">Başarımlar</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">14 / 48 açıldı · 2.400 bonus XP</div></div></div>
+              <div style="height:8px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="width:29%;height:100%;background:linear-gradient(90deg,#F5A524,#FF7A59)"></div></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <sc-for list="{{ achievements }}" as="a" hint-placeholder-count="8">
+                  <div style="{{ a.st }}">
+                    <div style="{{ a.badge }}">{{ a.glyph }}</div>
+                    <div style="font:800 13px Manrope;margin-top:10px">{{ a.name }}</div>
+                    <div style="font:500 10.5px/1.4 'Plus Jakarta Sans';color:#94A0BC;margin-top:2px">{{ a.sub }}</div>
+                    <div style="height:4px;border-radius:9px;background:rgba(255,255,255,.08);margin-top:9px;overflow:hidden"><div style="{{ a.bar }}"></div></div>
+                    <div style="font:700 9.5px ui-monospace;color:#8E9BBA;margin-top:5px">{{ a.progress }}</div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.stats }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toProfile }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div><div style="font:800 17px Manrope">Gelişim analizi</div><div style="font:600 11px 'Plus Jakarta Sans';color:#94A0BC">Son 7 gün</div></div></div>
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:12px">
+                <div style="display:flex;justify-content:space-between;align-items:baseline"><div style="font:700 14px Manrope">Haftalık XP</div><div><span style="font:800 20px Manrope;color:#22D3EE">4.480</span> <span style="font:700 11px ui-monospace;color:#7EE2A8">+%18</span></div></div>
+                <div style="display:flex;align-items:flex-end;gap:7px;height:130px">
+                  <sc-for list="{{ weekBars }}" as="b" hint-placeholder-count="7">
+                    <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end"><div style="{{ b.bar }}"></div><div style="font:600 10px ui-monospace;color:#8E9BBA">{{ b.day }}</div></div>
+                  </sc-for>
+                </div>
+              </div>
+              <div style="display:flex;gap:10px">
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:14px"><div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.1em">EN İYİ GÜN</div><div style="font:800 17px Manrope;margin-top:4px">Cumartesi</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">1.120 XP · 3 düello</div></div>
+                <div style="flex:1;background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:14px"><div style="font:700 10px ui-monospace;color:#8E9BBA;letter-spacing:.1em">ORTALAMA</div><div style="font:800 17px Manrope;margin-top:4px">24 dk/gün</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">hedefin 10 dk</div></div>
+              </div>
+              <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:11px">
+                <div style="font:700 14px Manrope">Beceri trendi</div>
+                <sc-for list="{{ trends }}" as="t" hint-placeholder-count="6">
+                  <div style="display:flex;align-items:center;gap:10px"><div style="width:70px;font:600 11.5px 'Plus Jakarta Sans';color:#C7D2EC">{{ t.name }}</div><div style="flex:1;height:7px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="{{ t.bar }}"></div></div><div style="width:44px;text-align:right;font:700 11px ui-monospace;{{ t.deltaSt }}">{{ t.delta }}</div></div>
+                </sc-for>
+              </div>
+              <button onClick="{{ toCoach }}" style="display:flex;align-items:center;gap:12px;background:rgba(255,77,94,.1);border:1px solid rgba(255,77,94,.28);border-radius:20px;padding:15px;color:#fff;cursor:pointer" style-hover="background:rgba(255,77,94,.16)">
+                <div style="width:40px;height:40px;flex:none;border-radius:14px;background:rgba(255,77,94,.2);display:flex;align-items:center;justify-content:center;font-size:17px">📕</div>
+                <div style="flex:1;text-align:left"><div style="font:700 13.5px Manrope">Hata defteri</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC">32 kayıt · 9'u Past Perfect</div></div>
+                <div style="font:800 11px Manrope;color:#FF9AA5">TEKRAR ET</div>
+              </button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.sub }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toSettings }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div style="font:800 17px Manrope">Aboneliğin</div></div>
+              <div style="background:linear-gradient(140deg,rgba(255,255,255,.1),rgba(14,20,38,.95));border:1px solid rgba(255,255,255,.14);border-radius:22px;padding:16px;display:flex;flex-direction:column;gap:11px">
+                <div style="display:flex;justify-content:space-between;align-items:center"><div><div style="font:700 10px ui-monospace;color:#94A0BC;letter-spacing:.12em">MEVCUT PLAN</div><div style="font:800 20px Manrope;margin-top:3px">Ücretsiz</div></div><div style="padding:6px 11px;border-radius:10px;background:rgba(255,255,255,.08);font:700 11px ui-monospace;color:#C7D2EC">AKTİF</div></div>
+                <div style="font:500 12.5px/1.55 'Plus Jakarta Sans';color:#94A0BC">Günlük limitlerle öğrenmeye devam edebilirsin. Limitler her gün 00:00'da sıfırlanır.</div>
+              </div>
+              <div style="font:700 13.5px Manrope">Bugünkü kullanımın</div>
+              <sc-for list="{{ usage }}" as="u" hint-placeholder-count="4">
+                <div style="background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:14px;display:flex;flex-direction:column;gap:8px">
+                  <div style="display:flex;justify-content:space-between"><div style="font:700 13px Manrope">{{ u.name }}</div><div style="font:700 11.5px ui-monospace;{{ u.valSt }}">{{ u.val }}</div></div>
+                  <div style="height:6px;border-radius:9px;background:rgba(255,255,255,.08);overflow:hidden"><div style="{{ u.bar }}"></div></div>
+                  <div style="font:500 11px 'Plus Jakarta Sans';color:#8E9BBA">{{ u.note }}</div>
+                </div>
+              </sc-for>
+              <button onClick="{{ toPaywall }}" style="height:56px;border-radius:18px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 16px Manrope;box-shadow:0 14px 34px rgba(46,107,255,.42);cursor:pointer">Premium'a geç · 7 gün ücretsiz</button>
+              <button onClick="{{ fxXp }}" style="height:48px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:none;color:#94A0BC;font:700 13.5px Manrope;cursor:pointer">Satın alımları geri yükle</button>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.paywall }}">
+            <div style="min-height:844px;display:flex;flex-direction:column;background:radial-gradient(480px 380px at 50% 6%,rgba(124,92,255,.32),transparent 62%),#070A14">
+              <div style="padding:58px 20px 0;display:flex;justify-content:flex-end"><button onClick="{{ toHome }}" style="width:34px;height:34px;border-radius:11px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);color:#C7D2EC;font:700 14px Manrope;cursor:pointer">✕</button></div>
+              <div style="padding:8px 20px 30px;display:flex;flex-direction:column;gap:16px">
+                <div style="display:flex;flex-direction:column;gap:9px;align-items:flex-start">
+                  <div style="padding:6px 11px;border-radius:10px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);font:800 10px ui-monospace;letter-spacing:.14em">WORDLY PREMIUM</div>
+                  <h1 style="font:800 31px/1.18 Manrope;margin:0;letter-spacing:-.02em">İngilizce potansiyelini aç.</h1>
+                  <p style="font:500 14px/1.55 'Plus Jakarta Sans';color:#A9B6D4;margin:0">Kişisel AI destekli İngilizce koçun.</p>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:9px">
+                  <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="6">
+                    <div style="display:flex;align-items:center;gap:11px"><div style="{{ b.icon }}">{{ b.glyph }}</div><div style="flex:1"><div style="font:700 13px Manrope">{{ b.name }}</div><div style="font:500 11px 'Plus Jakarta Sans';color:#94A0BC">{{ b.sub }}</div></div><div style="font:700 11px ui-monospace;color:#6E7B9C">{{ b.free }}</div></div>
+                  </sc-for>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:10px">
+                  <sc-for list="{{ plans }}" as="p" hint-placeholder-count="2">
+                    <button onClick="{{ p.onClick }}" style="{{ p.st }}">
+                      <div style="flex:1;text-align:left"><div style="display:flex;align-items:center;gap:8px"><span style="font:800 15px Manrope">{{ p.name }}</span><span style="{{ p.tagSt }}">{{ p.tag }}</span></div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#94A0BC;margin-top:3px">{{ p.sub }}</div></div>
+                      <div style="text-align:right"><div style="font:800 18px Manrope">{{ p.price }}</div><div style="font:600 10.5px ui-monospace;color:#8E9BBA">{{ p.unit }}</div></div>
+                      <div style="{{ p.radio }}">{{ p.check }}</div>
+                    </button>
+                  </sc-for>
+                </div>
+                <button onClick="{{ startTrial }}" style="height:58px;border-radius:18px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 16.5px Manrope;box-shadow:0 16px 38px rgba(46,107,255,.45);cursor:pointer" style-active="transform:scale(.98)">7 gün ücretsiz dene</button>
+                <div style="text-align:center;font:500 11.5px/1.6 'Plus Jakarta Sans';color:#8E9BBA">{{ trialNote }}<br>İstediğin an iptal edebilirsin · Otomatik yenilenir</div>
+                <div style="display:flex;justify-content:center;gap:16px;font:600 11px 'Plus Jakarta Sans';color:#6E7B9C"><span>Koşullar</span><span>Gizlilik</span><span>Geri yükle</span></div>
+              </div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.settings }}">
+            <div style="min-height:844px;padding:62px 18px 112px;display:flex;flex-direction:column;gap:13px">
+              <div style="display:flex;align-items:center;gap:12px"><button onClick="{{ toProfile }}" style="width:38px;height:38px;flex:none;border-radius:12px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#fff;font:700 16px Manrope;cursor:pointer">‹</button><div style="font:800 17px Manrope">Ayarlar</div></div>
+              <button onClick="{{ toSub }}" style="display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,rgba(124,92,255,.22),rgba(14,20,38,.92));border:1px solid rgba(124,92,255,.32);border-radius:20px;padding:15px;color:#fff;cursor:pointer">
+                <div style="width:42px;height:42px;flex:none;border-radius:14px;background:linear-gradient(135deg,#7C5CFF,#22D3EE);display:flex;align-items:center;justify-content:center;font-size:18px">✦</div>
+                <div style="flex:1;text-align:left"><div style="font:700 13.5px Manrope">Premium'a geç</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#C4B5FF">7 gün ücretsiz · sınırsız her şey</div></div>
+                <div style="font:800 20px Manrope">›</div>
+              </button>
+              <sc-for list="{{ settingGroups }}" as="g" hint-placeholder-count="4">
+                <div style="display:flex;flex-direction:column;gap:7px">
+                  <div style="font:700 10px ui-monospace;color:#5E6B8A;letter-spacing:.14em;padding:0 4px">{{ g.name }}</div>
+                  <div style="background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:18px;overflow:hidden">
+                    <sc-for list="{{ g.items }}" as="i" hint-placeholder-count="3">
+                      <button onClick="{{ i.onClick }}" style="{{ i.st }}">
+                        <div style="{{ i.icon }}">{{ i.glyph }}</div>
+                        <div style="flex:1;text-align:left"><div style="font:700 13px Manrope">{{ i.name }}</div><div style="font:500 10.5px 'Plus Jakarta Sans';color:#8E9BBA;margin-top:1px">{{ i.sub }}</div></div>
+                        <div style="{{ i.valSt }}">{{ i.val }}</div>
+                      </button>
+                    </sc-for>
+                  </div>
+                </div>
+              </sc-for>
+              <button onClick="{{ toSplash }}" style="height:50px;border-radius:16px;border:1px solid rgba(255,77,94,.3);background:rgba(255,77,94,.1);color:#FF9AA5;font:700 14px Manrope;cursor:pointer">Çıkış yap</button>
+              <div style="text-align:center;font:500 10.5px ui-monospace;color:#5E6B8A">WORDLY 2.4.0 · iOS 17+ / Android 11+</div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.tokens }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:16px">
+              <div><div style="font:700 11px ui-monospace;color:#94A0BC;letter-spacing:.14em">TASARIM SİSTEMİ</div><h1 style="font:800 24px Manrope;margin:4px 0 0;letter-spacing:-.02em">Jetonlar ve bileşenler</h1></div>
+              <sc-for list="{{ scales }}" as="sc" hint-placeholder-count="4">
+                <div style="display:flex;flex-direction:column;gap:6px">
+                  <div style="display:flex;justify-content:space-between;font:700 11px ui-monospace;color:#8E9BBA"><span>{{ sc.name }}</span><span>{{ sc.base }}</span></div>
+                  <div style="display:flex;gap:3px;height:38px;border-radius:12px;overflow:hidden">
+                    <sc-for list="{{ sc.steps }}" as="p" hint-placeholder-count="10"><div style="{{ p.st }}">{{ p.label }}</div></sc-for>
+                  </div>
+                </div>
+              </sc-for>
+              <div style="height:1px;background:rgba(255,255,255,.08)"></div>
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <div style="font:700 13px Manrope">Tipografi · Manrope + Plus Jakarta Sans</div>
+                <div style="font:800 30px Manrope;letter-spacing:-.02em">Display 30 / 800</div>
+                <div style="font:800 21px Manrope">Başlık 21 / 800</div>
+                <div style="font:700 15px Manrope">Alt başlık 15 / 700</div>
+                <div style="font:500 14px/1.6 'Plus Jakarta Sans';color:#D3DCF0">Gövde 14/1.6 — Türkçe, İngilizce, Almanca, İspanyolca ve Fransızca diakritikleri destekler: şğıöçü äöüß ñáé àèç.</div>
+                <div style="font:700 11px ui-monospace;color:#8E9BBA">Mono 11 · XP, süre, sıralama</div>
+              </div>
+              <div style="height:1px;background:rgba(255,255,255,.08)"></div>
+              <div style="font:700 13px Manrope">Buton durumları</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px">
+                <sc-for list="{{ btnStates }}" as="b" hint-placeholder-count="6">
+                  <div style="display:flex;flex-direction:column;gap:5px"><div style="{{ b.st }}">{{ b.label }}</div><div style="font:600 9.5px ui-monospace;color:#6E7B9C;text-align:center">{{ b.name }}</div></div>
+                </sc-for>
+              </div>
+              <div style="font:700 13px Manrope">Rozetler ve pilller</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <sc-for list="{{ pills }}" as="p" hint-placeholder-count="8"><div style="{{ p.st }}">{{ p.label }}</div></sc-for>
+              </div>
+              <div style="font:700 13px Manrope">Yükseklik ve yüzeyler</div>
+              <div style="display:flex;gap:9px">
+                <div style="flex:1;height:70px;border-radius:16px;background:#070A14;border:1px solid rgba(255,255,255,.06);display:flex;align-items:flex-end;padding:9px;font:600 9.5px ui-monospace;color:#6E7B9C">bg</div>
+                <div style="flex:1;height:70px;border-radius:16px;background:#0E1426;border:1px solid rgba(255,255,255,.07);display:flex;align-items:flex-end;padding:9px;font:600 9.5px ui-monospace;color:#8E9BBA">surface</div>
+                <div style="flex:1;height:70px;border-radius:16px;background:#161E36;border:1px solid rgba(255,255,255,.1);display:flex;align-items:flex-end;padding:9px;font:600 9.5px ui-monospace;color:#A9B6D4">elevated</div>
+                <div style="flex:1;height:70px;border-radius:16px;background:rgba(255,255,255,.06);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14);display:flex;align-items:flex-end;padding:9px;font:600 9.5px ui-monospace;color:#C7D2EC">glass</div>
+              </div>
+              <div style="font:500 11.5px/1.6 'Plus Jakarta Sans';color:#8E9BBA">Erişilebilirlik: gövde metni ≥ 4.5:1 kontrast, dokunma hedefleri ≥ 44px, durum bilgisi asla yalnızca renkle verilmez (ikon + etiket eşlik eder), azaltılmış hareket tercihi tüm animasyonları kapatır.</div>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.empty }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:14px">
+              <div><div style="font:700 11px ui-monospace;color:#94A0BC;letter-spacing:.14em">BOŞ DURUMLAR</div><h1 style="font:800 22px Manrope;margin:4px 0 0">Görsel + açıklama + tek aksiyon</h1></div>
+              <sc-for list="{{ emptyStates }}" as="e" hint-placeholder-count="6">
+                <div style="background:#0E1426;border:1px solid rgba(255,255,255,.07);border-radius:22px;padding:18px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center">
+                  <div style="{{ e.art }}"><div style="font:500 9.5px ui-monospace;color:rgba(255,255,255,.6)">{{ e.artLabel }}</div></div>
+                  <div style="font:800 15px Manrope">{{ e.title }}</div>
+                  <div style="font:500 12px/1.55 'Plus Jakarta Sans';color:#94A0BC;max-width:250px">{{ e.text }}</div>
+                  <button onClick="{{ e.onClick }}" style="padding:11px 18px;border-radius:14px;border:none;background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;font:800 12.5px Manrope;cursor:pointer">{{ e.cta }}</button>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <sc-if value="{{ s.errors }}">
+            <div style="min-height:844px;padding:62px 18px 40px;display:flex;flex-direction:column;gap:14px">
+              <div><div style="font:700 11px ui-monospace;color:#94A0BC;letter-spacing:.14em">HATA DURUMLARI</div><h1 style="font:800 22px Manrope;margin:4px 0 0">Dostane ve aksiyon alınabilir</h1></div>
+              <sc-for list="{{ errorStates }}" as="e" hint-placeholder-count="5">
+                <div style="{{ e.wrap }}">
+                  <div style="display:flex;gap:12px;align-items:flex-start">
+                    <div style="{{ e.icon }}">{{ e.glyph }}</div>
+                    <div style="flex:1"><div style="font:800 14.5px Manrope">{{ e.title }}</div><div style="font:500 12px/1.55 'Plus Jakarta Sans';color:#C7D2EC;margin-top:4px">{{ e.text }}</div><div style="font:600 10px ui-monospace;color:#8E9BBA;margin-top:6px">{{ e.code }}</div></div>
+                  </div>
+                  <div style="display:flex;gap:9px;margin-top:13px">
+                    <button onClick="{{ e.onClick }}" style="{{ e.primarySt }}">{{ e.primary }}</button>
+                    <button onClick="{{ e.onClick }}" style="flex:1;height:42px;border-radius:13px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:#C7D2EC;font:700 12.5px Manrope;cursor:pointer">{{ e.secondary }}</button>
+                  </div>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+
+          <div data-end-marker="1"></div>
+        </div>
+
+        <sc-if value="{{ showNav }}">
+          <div style="position:absolute;left:0;right:0;bottom:0;z-index:50">
+            <button onClick="{{ toCoach }}" style="position:absolute;right:16px;bottom:96px;width:58px;height:58px;border-radius:20px;border:1px solid rgba(255,255,255,.18);background:linear-gradient(135deg,#7C5CFF,#22D3EE);color:#fff;font:800 15px Manrope;cursor:pointer;box-shadow:0 16px 36px rgba(124,92,255,.5)" style-active="transform:scale(.94)">AI</button>
+            <div style="height:88px;padding:8px 10px 22px;background:linear-gradient(180deg,rgba(7,10,20,.4),rgba(7,10,20,.96) 40%);backdrop-filter:blur(18px);border-top:1px solid rgba(255,255,255,.08);display:flex">
+              <sc-for list="{{ navItems }}" as="n" hint-placeholder-count="5">
+                <button onClick="{{ n.onClick }}" style="{{ n.st }}"><span style="font-size:19px;line-height:1">{{ n.icon }}</span><span style="font:700 10.5px 'Plus Jakarta Sans'">{{ n.label }}</span><span style="{{ n.dot }}"></span></button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ toastOn }}">
+          <div style="position:absolute;left:18px;right:18px;top:64px;z-index:90;animation:wup .3s ease both">
+            <div style="background:rgba(11,17,34,.94);border:1px solid rgba(34,211,238,.4);border-radius:16px;padding:13px 15px;display:flex;align-items:center;gap:11px;box-shadow:0 18px 40px rgba(0,0,0,.5)">
+              <div style="width:34px;height:34px;flex:none;border-radius:11px;background:linear-gradient(135deg,#22D3EE,#2E6BFF);display:flex;align-items:center;justify-content:center;font:800 14px Manrope">✓</div>
+              <div style="flex:1"><div style="font:800 13.5px Manrope">{{ toastTitle }}</div><div style="font:500 11.5px 'Plus Jakarta Sans';color:#A9B6D4">{{ toastNote }}</div></div>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+    </div>
+    <div style="font:500 11px ui-monospace,Menlo,monospace;color:#5E6B8A">390 × 844 · iPhone 15 · 375/430 genişliklerine akışkan</div>
+  </div>
+
+  <sc-if value="{{ showNotes }}" hint-placeholder-val="{{ true }}">
+  <aside style="width:300px;flex:none;position:sticky;top:34px;display:flex;flex-direction:column;gap:14px">
+    <div style="background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:16px">
+      <div style="font:700 10px ui-monospace;color:#5E6B8A;letter-spacing:.14em">AKTİF EKRAN</div>
+      <div style="font:800 19px Manrope;margin:6px 0 8px">{{ screenTitle }}</div>
+      <div style="font:500 12.5px/1.6 'Plus Jakarta Sans';color:#94A0BC">{{ screenNote }}</div>
+    </div>
+    <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:11px">
+      <div style="font:700 10px ui-monospace;color:#5E6B8A;letter-spacing:.14em">RENK JETONLARI</div>
+      <sc-for list="{{ tokenRows }}" as="t" hint-placeholder-count="6">
+        <div style="display:flex;align-items:center;gap:10px">
+          <div style="{{ t.sw }}"></div>
+          <div style="flex:1"><div style="font:700 11.5px Manrope">{{ t.name }}</div><div style="font:500 10px ui-monospace;color:#6E7B9C">{{ t.hex }}</div></div>
+        </div>
+      </sc-for>
+    </div>
+    <div style="background:#0E1426;border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:16px;display:flex;flex-direction:column;gap:9px">
+      <div style="font:700 10px ui-monospace;color:#5E6B8A;letter-spacing:.14em">MİKRO ETKİLEŞİM DENE</div>
+      <button onClick="{{ fxXp }}" style="height:40px;border-radius:12px;border:1px solid rgba(34,211,238,.3);background:rgba(34,211,238,.1);color:#fff;font:700 12.5px Manrope;cursor:pointer" style-hover="background:rgba(34,211,238,.2)">+50 XP kazanıldı</button>
+      <button onClick="{{ fxLevel }}" style="height:40px;border-radius:12px;border:1px solid rgba(124,92,255,.3);background:rgba(124,92,255,.1);color:#fff;font:700 12.5px Manrope;cursor:pointer" style-hover="background:rgba(124,92,255,.2)">Seviye atlandı</button>
+      <button onClick="{{ fxStreak }}" style="height:40px;border-radius:12px;border:1px solid rgba(245,165,36,.3);background:rgba(245,165,36,.1);color:#fff;font:700 12.5px Manrope;cursor:pointer" style-hover="background:rgba(245,165,36,.2)">Seri uzadı</button>
+      <button onClick="{{ fxAchv }}" style="height:40px;border-radius:12px;border:1px solid rgba(34,197,94,.3);background:rgba(34,197,94,.1);color:#fff;font:700 12.5px Manrope;cursor:pointer" style-hover="background:rgba(34,197,94,.2)">Başarım açıldı</button>
+    </div>
+  </aside>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1160,&quot;height&quot;:980},&quot;startScreen&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;splash&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;splash&quot;,&quot;onb&quot;,&quot;goal&quot;,&quot;test&quot;,&quot;result&quot;,&quot;home&quot;,&quot;learn&quot;,&quot;map&quot;,&quot;lesson&quot;,&quot;vocab&quot;,&quot;grammar&quot;,&quot;listen&quot;,&quot;read&quot;,&quot;speak&quot;,&quot;coach&quot;,&quot;play&quot;,&quot;arena&quot;,&quot;duel&quot;,&quot;board&quot;,&quot;social&quot;,&quot;post&quot;,&quot;friends&quot;,&quot;clubs&quot;,&quot;club&quot;,&quot;notif&quot;,&quot;profile&quot;,&quot;achv&quot;,&quot;stats&quot;,&quot;sub&quot;,&quot;paywall&quot;,&quot;settings&quot;,&quot;tokens&quot;,&quot;empty&quot;,&quot;errors&quot;],&quot;section&quot;:&quot;Sunum&quot;},&quot;showRail&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sunum&quot;},&quot;showNotes&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Sunum&quot;}}">
+const NAV = [
+  ['GİRİŞ', [['splash','01 Açılış'],['onb','02 Tanıtım'],['goal','03 Hedef Seçimi'],['test','04 Seviye Testi'],['result','05 Test Sonucu']]],
+  ['ANA AKIŞ', [['home','06 Ana Sayfa'],['learn','07 Öğren'],['map','08 Kurs Haritası'],['lesson','09 Ders']]],
+  ['BECERİLER', [['vocab','10 Kelime'],['grammar','11 Gramer'],['listen','12 Dinleme'],['read','13 Okuma'],['speak','14 Konuşma'],['coach','15 AI Koç']]],
+  ['OYUN', [['play','16 Oyna'],['arena','17 Harf Arenası'],['duel','18 Düello'],['board','19 Liderlik']]],
+  ['SOSYAL', [['social','20 Sosyal Akış'],['post','21 Gönderi'],['friends','22 Arkadaşlar'],['clubs','23 Kulüpler'],['club','24 Kulüp Detayı'],['notif','25 Bildirimler']]],
+  ['KİMLİK', [['profile','26 Profil'],['achv','27 Başarımlar'],['stats','28 Gelişim Analizi'],['sub','29 Abonelik'],['paywall','30 Paywall'],['settings','31 Ayarlar']]],
+  ['SİSTEM', [['tokens','Tasarım Sistemi'],['empty','Boş Durumlar'],['errors','Hata Durumları']]]
+];
+const NOTES = {
+  splash:['Açılış','Marka anı + oturum yükleme. Tek baskın CTA, ikincil giriş yolu altta. Yükleme göstergesi metinle de anlatılır (renge bağlı değil).'],
+  onb:['Tanıtım','Değer önerisi tek cümlede. Sosyal kanıt üç rakamla. Atla her zaman erişilebilir.'],
+  goal:['Hedef Seçimi','Çoktan seçmeli hedef + süre + beceri. Seçimler müfredatı kurar; özet satırı kullanıcıya ne kurduğumuzu söyler.'],
+  test:['Seviye Testi','Uyarlanabilir 20 soru. Soru no, ilerleme noktaları, zorluk ölçeri ve süre aynı anda görünür. Cevap sonrası anında geri bildirim.'],
+  result:['Test Sonucu','Ödül anı: genel CEFR + 6 beceri kırılımı + radar. Güçlü yan/odak alanı ikili kartla netleşir.'],
+  home:['Ana Sayfa','"Şimdi ne yapmalıyım?" 2 saniyede: kaldığın yer, günlük hedef halkaları, AI koç, düello daveti, lig önizlemesi.'],
+  learn:['Öğren','CEFR sekmeleri + seçili seviyenin özeti + ünite listesi. Harita görünümüne geçiş var.'],
+  map:['Kurs Haritası','Zikzak patika; düğüm tipleri ikon + etiketle ayrışır. LMS tablosu değil, ilerleme hattı.'],
+  lesson:['Ders','Ünite 6 bölüme ayrılır. Ünite sınavı kilitli durumu ve açılma koşuluyla gösterilir.'],
+  vocab:['Kelime','Kelime toplanabilir bir nesne gibi: kart, telaffuz dalgası, ustalık yüzdesi, kaydet/dinle mikro etkileşimleri.'],
+  grammar:['Gramer','Kavram → örnek → etkileşimli soru → anında geri bildirim → mini meydan okuma.'],
+  listen:['Dinleme','Ses oynatıcı + hız kontrolü + transkript aç/kapa + boşluk doldurma.'],
+  read:['Okuma','Uzun metin, dokunulabilir kelimeler, okuma hızı ve anlama sorusu.'],
+  speak:['Konuşma','AI konuşma arayüzü: transkript, mikrofon durumları, dalga formu, 5 eksenli puan.'],
+  coach:['AI Koç','Hafızalı koç: hataları, zayıf konuları, hedefleri hatırlar ve 3 dakikalık plan önerir.'],
+  play:['Oyna','Oyun modları vitrini: solo, süre, hayatta kalma, düello, battle royale, takım.'],
+  arena:['Harf Arenası','İmza deneyim: dairesel harf alanı, kombo ölçeri, süre, seri çarpanı. Harflere dokunarak kelime kur.'],
+  duel:['Düello','Gerçek zamanlı 1v1. Canlı skor, kombo çarpanı, rakip ilerlemesi.'],
+  board:['Liderlik','Haftalık ligler: Bronz→Elit. Yükselme/düşme bölgeleri çizgiyle ve etiketle belirtilir.'],
+  social:['Sosyal Akış','Öğrenme topluluğu akışı. Instagram değil: her gönderi bir ilerleme veya soru.'],
+  post:['Gönderi','Tek gönderi detayı, yorumlar ve meydan okuma aksiyonu.'],
+  friends:['Arkadaşlar','Arkadaş/takipçi/takip sekmeleri, çevrimiçi durumu, son etkinlik.'],
+  clubs:['Kulüpler','Konu bazlı topluluklar, üye sayısı ve haftalık XP.'],
+  club:['Kulüp Detayı','Günlük görev, sohbet, lider tablosu, turnuva.'],
+  notif:['Bildirimler','Gruplanmış bildirimler; tür ikonu + metin etiketi.'],
+  profile:['Profil','Oyun karakteri profili: seviye, XP, seri, beceri dağılımı, düello istatistikleri.'],
+  achv:['Başarımlar','Rozet koleksiyonu; açık/kilitli durumlar ve ilerleme.'],
+  stats:['Gelişim Analizi','Haftalık XP grafiği, beceri trendleri, hata defteri.'],
+  sub:['Abonelik','Mevcut plan, kullanım limitleri, yönetim.'],
+  paywall:['Paywall','Premium değer önerisi; yıllık öne çıkar, 7 gün ücretsiz. Karanlık desen yok.'],
+  settings:['Ayarlar','Hesap, bildirim, ses, erişilebilirlik, dil.'],
+  tokens:['Tasarım Sistemi','Renk skalaları, tipografi, bileşen durumları (varsayılan/basılı/devre dışı/yükleniyor/başarı/hata).'],
+  empty:['Boş Durumlar','Görsel + kısa açıklama + tek birincil aksiyon.'],
+  errors:['Hata Durumları','Ağ, mikrofon izni, ses, ödeme, oturum. Dostane ve aksiyon alınabilir.']
+};
+const TABS = ['home','learn','map','lesson','coach','play','social','friends','clubs','profile','achv','stats','sub','settings'];
+const QUESTIONS = [
+  {type:'GRAMER',prompt:'Doğru seçeneği işaretle',text:'She ___ in London since 2019.',opts:['has lived','lived','is living','live'],a:0,lvl:'B1',t:'18',audio:false,note:'“Since + geçmiş bir tarih” Present Perfect ister.'},
+  {type:'KELİME',prompt:'Anlamı en yakın kelime',text:'The instructions were rather <b>vague</b>.',opts:['unclear','strict','loud','simple'],a:0,lvl:'B2',t:'22',audio:false,note:'vague = belirsiz, muğlak.'},
+  {type:'DİNLEME',prompt:'Kaydı dinle ve cevapla',text:'Konuşmacı toplantıyı neden erteliyor?',opts:['Uçuşu gecikti','Hasta','Rapor bitmedi','Müşteri iptal etti'],a:2,lvl:'B1',t:'30',audio:true,note:'“I still need to finish the report” ipucuydu.'}
+];
+class Component extends DCLogic {
+  state = {screen:this.props.startScreen||'splash',goals:['Kariyer'],time:'10 dk',skills:['Konuşma','Kelime'],q:0,picked:null,saved:false,cefr:'B1',toast:null,letters:[],combo:1,arenaXp:0,duelMe:7,duelOp:6,rec:false,paywallPlan:'yearly',socialTab:'Akış',friendTab:'Arkadaşlar',speakScore:false,grPick:null,playing:false,speedIdx:0,transcript:false,blank:null,readPick:null,duelPick:null,arenaFound:3,arenaStreak:4,letterOrder:0,following:false,liked:false,joined:true};
+  fire(title,note){clearTimeout(this._t);this.setState({toast:{title,note}});this._t=setTimeout(()=>this.setState({toast:null}),2200);}
+  go(id){clearTimeout(this._t);this.setState({screen:id,picked:null,toast:null});}
+  tog(key,val){const cur=this.state[key]||[];const has=cur.indexOf(val)>=0;this.setState({[key]:has?cur.filter(v=>v!==val):cur.concat([val])});}
+  componentWillUnmount(){clearTimeout(this._t);}
+  chip(active,pad){return 'padding:'+(pad||'10px 14px')+';border-radius:13px;cursor:pointer;font:700 12.5px Manrope,sans-serif;transition:all .16s ease;'+(active?'background:rgba(46,107,255,.2);border:1px solid #2E6BFF;color:#fff;box-shadow:0 0 0 3px rgba(46,107,255,.12)':'background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:#A9B6D4');}
+  card(){return 'background:linear-gradient(180deg,#121A31,#0E1426);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:16px';}
+  row(active){return 'display:flex;align-items:center;gap:12px;padding:13px;border-radius:18px;cursor:pointer;color:#fff;text-align:left;transition:all .16s ease;'+(active?'background:rgba(46,107,255,.14);border:1px solid rgba(46,107,255,.34)':'background:#0E1426;border:1px solid rgba(255,255,255,.07)');}
+  av(c1,c2,sz){return 'width:'+(sz||30)+'px;height:'+(sz||30)+'px;flex:none;border-radius:50%;background:linear-gradient(135deg,'+c1+','+c2+');display:flex;align-items:center;justify-content:center;font:700 '+((sz||30)/2.4)+'px Manrope,sans-serif;color:#fff';}
+  bar(pct,c1,c2){return 'width:'+pct+'%;height:100%;border-radius:9px;background:linear-gradient(90deg,'+c1+','+c2+')';}
+  opt(state){const map={idle:'background:#0E1426;border:1px solid rgba(255,255,255,.09)',ok:'background:rgba(34,197,94,.14);border:1px solid #22C55E',bad:'background:rgba(255,77,94,.14);border:1px solid #FF4D5E',off:'background:#0E1426;border:1px solid rgba(255,255,255,.06);opacity:.5'};
+    return 'display:flex;align-items:center;gap:12px;padding:15px;border-radius:16px;cursor:pointer;color:#fff;font:600 14.5px "Plus Jakarta Sans",sans-serif;transition:all .18s ease;'+map[state];}
+  quiz(opts,ans,pickKey,onRight){const st=this.state,p=st[pickKey];
+    return opts.map((o,i)=>({label:o,mark:p===null?'':(i===ans?'✓':(i===p?'✕':'')),
+      st:this.opt(p===null?'idle':(i===ans?'ok':(i===p?'bad':'off'))),
+      onClick:()=>{if(p!==null)return;this.setState({[pickKey]:i});if(i===ans&&onRight)onRight();}}));}
+  more(){
+    const st=this.state;
+    const LETTERS='TICKETARNO'.split('');
+    const order=LETTERS.slice(st.letterOrder%10).concat(LETTERS.slice(0,st.letterOrder%10));
+    const arenaLetters=order.map((ch,i)=>{const a=(-90+i*36)*Math.PI/180,x=140+112*Math.cos(a),y=140+112*Math.sin(a),sel=st.letters.indexOf(i)>=0;
+      return {ch:ch,onClick:()=>{if(sel)return;this.setState({letters:st.letters.concat([i])});},
+        st:'position:absolute;left:'+(x-25)+'px;top:'+(y-25)+'px;width:50px;height:50px;border-radius:17px;cursor:pointer;font:800 19px Manrope,sans-serif;transition:all .15s ease;'+(sel?'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);border:1px solid rgba(255,255,255,.3);color:#fff;transform:scale(1.06);box-shadow:0 10px 24px rgba(46,107,255,.5)':'background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#fff;backdrop-filter:blur(8px)')};});
+    const word=st.letters.map(i=>order[i]).join('');
+    const slots=[0,1,2,3,4,5].map(i=>({ch:word[i]||'',st:'width:40px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;font:800 20px Manrope,sans-serif;'+(word[i]?'background:rgba(34,211,238,.16);border:1px solid rgba(34,211,238,.45);color:#fff':'background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.16);color:#6E7B9C')}));
+    const ready=word.length===6;
+    const chatData=[['ai','Good evening! Welcome to the Wordly Hotel. Do you have a reservation?','İyi akşamlar! Rezervasyonunuz var mı?'],['me','Yes, I have a reservation for three nights.','Evet, üç gecelik rezervasyonum var.'],['ai','Perfect. Could you tell me your name and show me your ID, please?','Harika. Adınızı söyleyip kimliğinizi gösterir misiniz?'],['me','Sure — Ali Yılmaz. Here you are.','Elbette — Ali Yılmaz. Buyurun.']];
+    const chat=chatData.map(m=>({text:m[1],tr:m[2],
+      wrap:'display:flex;'+(m[0]==='ai'?'justify-content:flex-start':'justify-content:flex-end'),
+      bubble:'max-width:78%;padding:12px 14px;font:500 13.5px/1.55 "Plus Jakarta Sans",sans-serif;color:#fff;'+(m[0]==='ai'?'background:#151D35;border:1px solid rgba(255,255,255,.1);border-radius:18px 18px 18px 6px':'background:linear-gradient(135deg,rgba(46,107,255,.85),rgba(124,92,255,.85));border-radius:18px 18px 6px 18px'),
+      trSt:'font:500 11.5px/1.45 "Plus Jakarta Sans",sans-serif;margin-top:5px;'+(m[0]==='ai'?'color:#8E9BBA':'color:rgba(255,255,255,.72)')}));
+    const speakAxes=[['Gramer',82],['Kelime',76],['Telaffuz',64],['Akıcılık',71],['Doğallık',80]].map(a=>({name:a[0],val:a[1],bar:this.bar(a[1],a[1]<70?'#F5A524':'#22C55E',a[1]<70?'#FFC768':'#22D3EE')}));
+    const memData=[['📐','Past Perfect','Son 7 günde 9 hata · en zayıf konun','ODAK','#FF4D5E'],['🔤','“th” sesi','Telaffuz puanı 64/100','GELİŞİYOR','#F5A524'],['🎯','Hedefin: Kariyer','İş görüşmesi modülü önerildi','HEDEF','#2E6BFF'],['📈','42 günlük geçmiş','1.284 kelime · 96 ders · 38 düello','ARŞİV','#22C55E']];
+    const memory=memData.map(m=>({glyph:m[0],title:m[1],sub:m[2],tag:m[3],
+      icon:'width:42px;height:42px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:18px;background:'+m[4]+'22;border:1px solid '+m[4]+'55',
+      tagSt:'font:700 9.5px ui-monospace;letter-spacing:.08em;padding:5px 8px;border-radius:8px;background:'+m[4]+'1f;color:'+m[4]}));
+    const coachChips=['Past Perfect anlat','Hatalarımı göster','Görüşme pratiği','Kelime testi'].map(c=>({label:c,onClick:()=>this.fire('Koç hazırlıyor…','“'+c+'” için 3 dakikalık oturum'),st:this.chip(false,'9px 13px')}));
+    const modeData=[['⚡','Süre Atağı','60 saniye, sınırsız kelime','2× XP','#22D3EE','arena'],['🛡','Hayatta Kalma','3 hata hakkın var','SIRALI','#7C5CFF','arena'],['⚔','Düello','1v1 gerçek zamanlı','CANLI','#FF4D5E','duel'],['👑','Battle Royale','100 oyuncu, tek kazanan','YENİ','#F5A524','duel'],['🤝','Takım Savaşı','5v5 kulüp maçı','KULÜP','#22C55E','club'],['🎯','Solo','Baskı yok, sadece pratik','SERBEST','#94A0BC','arena']];
+    const modes=modeData.map(m=>({glyph:m[0],name:m[1],sub:m[2],tag:m[3],onClick:()=>this.go(m[5]),
+      st:'display:flex;flex-direction:column;align-items:stretch;padding:14px;border-radius:20px;cursor:pointer;color:#fff;text-align:left;background:#0E1426;border:1px solid rgba(255,255,255,.08);transition:all .16s ease',
+      icon:'width:38px;height:38px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:17px;background:'+m[4]+'22;border:1px solid '+m[4]+'4d',
+      tagSt:'font:700 9px ui-monospace;letter-spacing:.08em;padding:4px 7px;border-radius:7px;background:'+m[4]+'1f;color:'+m[4]}));
+    const leagueData=[['Bronz','🥉'],['Gümüş','🥈'],['Altın','🥇'],['Elmas','💎'],['Master','👑'],['Elit','⚡']];
+    const leagues=leagueData.map(l=>({name:l[0],glyph:l[1],
+      st:'flex:none;display:flex;align-items:center;gap:6px;padding:9px 14px;border-radius:13px;font:700 12px Manrope,sans-serif;'+(l[0]==='Altın'?'background:rgba(245,165,36,.2);border:1px solid #F5A524;color:#fff':'background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);color:#8E9BBA')}));
+    const rowsData=[['1','Elif','EL','6.240','▲','#7C5CFF','#22D3EE','Lv 38 · B2'],['2','Kaan','KA','5.980','—','#2E6BFF','#22D3EE','Lv 35 · B2'],['3','Zeynep','ZE','5.410','▲','#F5A524','#FF7A59','Lv 33 · B1+'],['4','Mert','ME','4.610','▼','#FF7A59','#FF4D5E','Lv 31 · B1+'],['5','Gözde','GÖ','4.820','▲','#7C5CFF','#22D3EE','Lv 31 · B2'],['6','Burak','BU','4.560','▼','#2E6BFF','#7C5CFF','Lv 28 · B1'],['7','Sen','A','4.480','▲','#2E6BFF','#7C5CFF','Lv 24 · B1+'],['8','Deniz','DE','4.120','—','#22C55E','#22D3EE','Lv 26 · B1'],['9','Ayşe','AY','3.980','▼','#F5A524','#FF4D5E','Lv 22 · B1'],['10','Can','CA','3.640','▲','#7C5CFF','#2E6BFF','Lv 21 · A2+']];
+    const boardRows=rowsData.map(r=>({rank:r[0],name:r[1],ini:r[2],xp:r[3],mv:r[4],meta:r[7],divider:r[0]==='5',
+      mvSt:r[4]==='▲'?'color:#22C55E':(r[4]==='▼'?'color:#FF4D5E':'color:#6E7B9C'),
+      av:this.av(r[5],r[6],34),
+      row:'display:flex;align-items:center;gap:11px;padding:10px;border-radius:14px;'+(r[1]==='Sen'?'background:rgba(46,107,255,.14);border:1px solid rgba(46,107,255,.34)':'')}));
+    const socialTabs=['Akış','Arkadaşlar','Kulüpler'].map(t=>({label:t,onClick:()=>this.setState({socialTab:t}),st:'flex:1;'+this.chip(st.socialTab===t,'10px 0')}));
+    const feedData=[
+      ['Gözde','GÖ','B2','Lv 31 · Altın Lig','12 dk','Bugün 50 yeni kelime öğrendim. Seyahat modülünü bitirdim, sırada iş İngilizcesi var 🎯',true,'BAŞARIM','1.000 Kelime','Koleksiyon rozeti açıldı','48','12','Düelloya çağır','#7C5CFF','#22D3EE','linear-gradient(135deg,rgba(124,92,255,.3),rgba(34,211,238,.16))'],
+      ['Mert','ME','B1+','Lv 31 · Altın Lig','1 sa','"I have been working here since 2020" ile "I worked here since 2020" arasındaki farkı nihayet anladım. Kimse bana bunu bu kadar net anlatmamıştı.',false,'','','','31','9','Yorum yap','#FF7A59','#FF4D5E',''],
+      ['Elif','EL','B2','Lv 38 · Elmas Lig','3 sa','Harf Arenası hayatta kalma modunda 28 kelime! Rekor kırdım 🔥',true,'SKOR','28 kelime · 1.420 XP','Hayatta Kalma · kişisel rekor','126','34','Skoru geç','#7C5CFF','#2E6BFF','linear-gradient(135deg,rgba(46,107,255,.28),rgba(124,92,255,.18))']];
+    const feed=feedData.map(p=>({name:p[0],ini:p[1],lvl:p[2],meta:p[3],time:p[4],text:p[5],hasCard:p[6],cardKicker:p[7],cardTitle:p[8],cardSub:p[9],likes:p[10],comments:p[11],cta:p[12],
+      av:this.av(p[13],p[14],38),onClick:()=>this.go('post'),
+      lvlSt:'padding:3px 7px;border-radius:7px;background:rgba(34,211,238,.16);border:1px solid rgba(34,211,238,.32);font:700 9.5px ui-monospace;color:#7FE6F5',
+      cardSt:'border-radius:16px;padding:14px;color:#fff;border:1px solid rgba(255,255,255,.14);background:'+(p[15]||'transparent')}));
+    const speeds=['1.0×','0.75×','1.25×'];
+    return {
+      toListen:()=>this.go('listen'),toRead:()=>this.go('read'),toSpeak:()=>this.go('speak'),toPlay:()=>this.go('play'),
+      toFriends:()=>this.go('friends'),toClubs:()=>this.go('clubs'),
+      grOpts:this.quiz(['I have finish my homework.','I have finished my homework.','I has finished my homework.'],1,'grPick',()=>this.fire('+25 XP · Doğru','3/4 alıştırma tamam')),
+      grDone:st.grPick!==null,grFbTitle:st.grPick===1?'Doğru! +25 XP':'Yanlış — “have + V3” gerekiyor',
+      grFbNote:'Yardımcı fiil “have/has” + fiilin 3. hali (finished). “finish” yalın haliyle kullanılmaz.',
+      grFbSt:'border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:3px;animation:wup .25s ease both;'+(st.grPick===1?'background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.36);color:#C9F7DC':'background:rgba(255,77,94,.13);border:1px solid rgba(255,77,94,.34);color:#FFD5D9'),
+      playing:st.playing,playGlyph:st.playing?'❚❚':'▶',speed:speeds[st.speedIdx],
+      playSt:'width:64px;height:64px;border-radius:50%;border:none;cursor:pointer;font:700 18px Manrope,sans-serif;color:#fff;background:linear-gradient(135deg,#2E6BFF,#22D3EE);box-shadow:0 14px 34px rgba(34,211,238,.4)',
+      audioToggle:()=>this.setState({playing:!st.playing}),
+      audioBack:()=>this.fire('5 saniye geri','Tekrar dinliyorsun'),
+      audioSpeed:()=>this.setState({speedIdx:(st.speedIdx+1)%3}),
+      transcriptOn:st.transcript,transcriptLabel:st.transcript?'GİZLE':'GÖSTER',transcriptToggle:()=>this.setState({transcript:!st.transcript}),
+      blankText:st.blank===null?'________':['has been delayed','delayed','was delay'][st.blank],
+      blankSt:'padding:2px 8px;border-radius:7px;font-weight:700;'+(st.blank===null?'background:rgba(255,255,255,.08);color:#6E7B9C':(st.blank===0?'background:rgba(34,197,94,.22);color:#9DEFC0':'background:rgba(255,77,94,.22);color:#FFAEB6')),
+      blankOpts:['has been delayed','delayed','was delay'].map((o,i)=>({label:o,onClick:()=>{this.setState({blank:i});this.fire(i===0?'+15 XP · Doğru':'Tekrar dene',i===0?'Edilgen + present perfect':'“delay” burada edilgen olmalı');},
+        st:this.chip(st.blank===i,'10px 13px')})),
+      tapWord:()=>this.fire('journey · /ˈdʒɜːni/','yolculuk — kelime defterine eklendi'),
+      tapWord2:()=>this.fire('barely · /ˈbeəli/','neredeyse hiç — kelime defterine eklendi'),
+      readOpts:this.quiz(['Yorucuydu ama değdi','Tamamen zaman kaybıydı','Beklediğinden kısa sürdü'],0,'readPick',()=>this.fire('+20 XP · Doğru','“Still, it was worth every minute”')),
+      speakScore:st.speakScore,speakAxes,chat,
+      recLabel:st.rec?'Dinliyorum… “Here you are.” demeyi dene':'Konuşmak için mikrofona bas',
+      recWave:[6,12,20,9,24,15,28,11,7,18,26,13,22,8,16,24,10,19,28,14,7,21,11,25,9,6].map((h,i)=>({st:'flex:1;height:'+(st.rec?h:4)+'px;border-radius:2px;transition:height .2s ease;background:'+(st.rec?'linear-gradient(180deg,#22D3EE,#2E6BFF)':'rgba(255,255,255,.14)')})),
+      micGlyph:st.rec?'■':'🎙',
+      micSt:'width:84px;height:84px;border-radius:50%;border:none;cursor:pointer;font-size:28px;color:#fff;transition:all .2s ease;'+(st.rec?'background:linear-gradient(135deg,#FF4D5E,#FF7A59);box-shadow:0 0 0 12px rgba(255,77,94,.16),0 18px 40px rgba(255,77,94,.4)':'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);box-shadow:0 0 0 10px rgba(46,107,255,.12),0 18px 40px rgba(46,107,255,.42)'),
+      recToggle:()=>{this.setState({rec:!st.rec});if(st.rec)this.fire('Kayıt değerlendirildi','Telaffuz 64 → 71 · +15 XP');},
+      speakHint:()=>this.fire('İpucu','“Here you are.” = Buyurun'),
+      speakSlow:()=>this.fire('0.6× hızda tekrar','Emma yavaş tekrar ediyor'),
+      speakFinish:()=>this.setState({speakScore:true,rec:false}),
+      memory,coachChips,coachStart:()=>this.go('grammar'),modes,leagues,boardRows,socialTabs,feed,
+      arenaTime:'24',arenaTimeBar:this.bar(40,'#F5A524','#FF4D5E'),arenaXp:st.arenaXp,combo:st.combo,
+      arenaStreak:st.arenaStreak,arenaFound:st.arenaFound,slots,arenaLetters,
+      arenaWord:word||'6 HARF',arenaHint:word?(ready?'kontrol et':word.length+'/6 harf'):'kategori: seyahat',
+      arenaClear:()=>this.setState({letters:[]}),
+      arenaShuffle:()=>this.setState({letterOrder:st.letterOrder+3,letters:[]}),
+      arenaSubmitLabel:ready?'Gönder':'Harf seç',
+      arenaSubmitSt:'flex:1.4;height:50px;border-radius:16px;border:none;font:800 14.5px Manrope,sans-serif;transition:all .16s ease;'+(ready?'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;cursor:pointer;box-shadow:0 12px 28px rgba(46,107,255,.4)':'background:rgba(255,255,255,.06);color:#5E6B8A;cursor:not-allowed'),
+      arenaSubmit:()=>{if(!ready)return;
+        if(word==='TICKET'){this.setState({letters:[],arenaXp:st.arenaXp+50*st.combo,combo:Math.min(st.combo+1,5),arenaFound:st.arenaFound+1,arenaStreak:st.arenaStreak+1});this.fire('TICKET · +'+(50*st.combo)+' XP','Kombo ×'+Math.min(st.combo+1,5)+' · seri sürüyor');}
+        else{this.setState({letters:[],combo:1});this.fire('“'+word+'” listede yok','Kombo sıfırlandı · ipucu: bilet');}},
+      duelMe:st.duelMe,duelOp:st.duelOp,duelTime:'07',duelCombo:st.combo,duelReward:30*st.combo,
+      duelBarMe:this.bar(Math.min(st.duelMe*12,100),'#7C5CFF','#2E6BFF'),
+      duelBarOp:this.bar(Math.min(st.duelOp*12,100),'#FF7A59','#FF4D5E'),
+      duelOpStatus:st.duelPick===null?'Gözde cevaplıyor…':'Gözde: doğru cevap · +1',
+      duelOpts:this.quiz(['had','have','would have','having'],0,'duelPick',()=>{this.setState({duelMe:st.duelMe+1,combo:Math.min(st.combo+1,5)});this.fire('+'+30*st.combo+' XP · Doğru','Öndesin! Kombo ×'+Math.min(st.combo+1,5));})
+    };
+  }
+  more2(){
+    const st=this.state;
+    const comments=[['Mert','ME','#FF7A59','#FF4D5E','8 dk','Tebrikler! İş İngilizcesi ünitesinde görüşürüz 💪'],['Elif','EL','#7C5CFF','#22D3EE','21 dk','Hangi modülle başladın? Ben de seyahat bitirdim.'],['Deniz','DE','#22C55E','#22D3EE','34 dk','50 kelime çok iyi, benim rekorum 32 😄']].map(c=>({name:c[0],ini:c[1],time:c[4],text:c[5],av:this.av(c[2],c[3],32)}));
+    const friendTabs=['Arkadaşlar · 48','Takipçi · 126','Takip · 92'].map((t,i)=>({label:t,onClick:()=>this.setState({friendTab:t}),st:'flex:1;'+this.chip(st.friendTab===t||(i===0&&['Arkadaşlar · 48','Takipçi · 126','Takip · 92'].indexOf(st.friendTab)<0),'10px 0')}));
+    const fData=[['Gözde','GÖ','B2','Az önce 320 XP kazandı',true,'#7C5CFF','#22D3EE','Düello'],['Mert','ME','B1+','Ünite 9 · Modals çalışıyor',true,'#FF7A59','#FF4D5E','Düello'],['Elif','EL','B2','2 saat önce · 28 kelime rekoru',false,'#7C5CFF','#2E6BFF','Düello'],['Deniz','DE','B1','Dün · Hayatta Kalma oynadı',false,'#22C55E','#22D3EE','Düello'],['Kaan','KA','B2','3 gündür çevrimdışı',false,'#2E6BFF','#22D3EE','Dürt'],['Ayşe','AY','A2+','Yeni katıldı · selam ver',true,'#F5A524','#FF4D5E','Takip et']];
+    const friendList=fData.map(f=>({name:f[0],ini:f[1],lvl:f[2],activity:f[3],av:this.av(f[5],f[6],40),onClick:()=>this.go(f[7]==='Düello'?'duel':'friends'),btnLabel:f[7],
+      dot:'position:absolute;bottom:-1px;right:-1px;width:12px;height:12px;border-radius:50%;border:2.5px solid #0E1426;background:'+(f[4]?'#22C55E':'#5E6B8A'),
+      lvlSt:'padding:3px 6px;border-radius:6px;background:rgba(34,211,238,.14);border:1px solid rgba(34,211,238,.28);font:700 9px ui-monospace;color:#7FE6F5',
+      btn:'padding:9px 12px;border-radius:12px;border:1px solid rgba(46,107,255,.34);background:rgba(46,107,255,.16);color:#fff;font:800 11px Manrope,sans-serif;cursor:pointer'}));
+    const cData=[['💻','Developers English','12.480 üye · 248K XP','SENİN','#2E6BFF','Aç'],['✈','Travel English','8.240 üye · 186K XP','POPÜLER','#22D3EE','Katıl'],['💼','Business English','6.910 üye · 162K XP','','#7C5CFF','Katıl'],['🎮','Gamers','15.320 üye · 301K XP','AKTİF','#22C55E','Katıl'],['🎬','Movie English','4.180 üye · 88K XP','','#F5A524','Katıl'],['🌱','English Beginners','21.640 üye · 402K XP','A1-A2','#FF7A59','Katıl']];
+    const clubList=cData.map(c=>({glyph:c[0],name:c[1],meta:c[2],tag:c[3],cta:c[5],onClick:()=>this.go('club'),
+      st:'display:flex;align-items:center;gap:12px;padding:14px;border-radius:20px;cursor:pointer;color:#fff;background:#0E1426;border:1px solid rgba(255,255,255,.07)',
+      icon:'width:46px;height:46px;flex:none;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:20px;background:'+c[4]+'22;border:1px solid '+c[4]+'4d',
+      tagSt:c[3]?'font:700 9px ui-monospace;letter-spacing:.08em;padding:3px 6px;border-radius:6px;background:'+c[4]+'1f;color:'+c[4]:'display:none'}));
+    const clubBoard=[['1','Jonas','JO','12.480','#7C5CFF','#22D3EE'],['2','Priya','PR','11.240','#2E6BFF','#22D3EE'],['3','Sen','A','842','#2E6BFF','#7C5CFF'],['4','Tomás','TO','780','#F5A524','#FF4D5E']].map(r=>({rank:r[0],name:r[1],ini:r[2],xp:r[3],av:this.av(r[4],r[5],30),
+      row:'display:flex;align-items:center;gap:10px;padding:9px;border-radius:13px;'+(r[1]==='Sen'?'background:rgba(46,107,255,.14);border:1px solid rgba(46,107,255,.3)':'')}));
+    const clubChat=[['Priya','PR','Anyone up for a mock stand-up at 8pm?','#2E6BFF','#22D3EE'],['Jonas','JO','I can join. Let me prepare 3 sentences.','#7C5CFF','#22D3EE'],['Sen','A','Count me in — I need speaking practice.','#2E6BFF','#7C5CFF']].map(m=>({name:m[0],ini:m[1],text:m[2],av:this.av(m[3],m[4],28)}));
+    const nData=[['⚔','Gözde seni düelloya çağırdı','"Skorumu geç." · Altın Lig','DÜELLO','#FF4D5E','2 dk',true,'duel'],['🏅','Başarım açıldı','“1.000 Kelime” rozeti koleksiyonunda','BAŞARIM','#F5A524','1 sa',true,'achv'],['🔥','Serini koru','Bugün 120 XP daha gerek','SERİ','#F5A524','3 sa',false,'home'],['🤖','AI Koç yeni plan hazırladı','Past Perfect · 3 dakika','KOÇ','#7C5CFF','5 sa',false,'coach'],['🏛','Developers English','Haftalık turnuva 2 gün sonra','KULÜP','#22C55E','Dün',false,'club'],['📈','Haftalık raporun hazır','+%18 XP · konuşma gelişti','RAPOR','#2E6BFF','2 gün',false,'stats']];
+    const notifs=nData.map(n=>({glyph:n[0],title:n[1],text:n[2],kind:n[3],time:n[5],
+      row:'display:flex;align-items:flex-start;gap:12px;padding:14px;border-radius:18px;cursor:pointer;'+(n[6]?'background:rgba(46,107,255,.1);border:1px solid rgba(46,107,255,.26)':'background:#0E1426;border:1px solid rgba(255,255,255,.07)'),
+      icon:'width:40px;height:40px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:17px;background:'+n[4]+'22;border:1px solid '+n[4]+'4d',
+      kindSt:'font:700 8.5px ui-monospace;letter-spacing:.08em;padding:3px 6px;border-radius:6px;background:'+n[4]+'1f;color:'+n[4]}));
+    const profileSkills=[['Kelime','B2',82],['Gramer','B1',64],['Okuma','B1+',72],['Dinleme','B1',62],['Konuşma','A2+',44],['Yazma','B1',60],['Telaffuz','B1',58]].map(k=>({name:k[0],lvl:k[1],bar:this.bar(k[2],k[2]<55?'#F5A524':'#7C5CFF',k[2]<55?'#FF7A59':'#22D3EE')}));
+    const aData=[['🔥','7 Günlük Seri','Kesintisiz 7 gün',100,'AÇILDI','#F5A524'],['🔥','30 Günlük Seri','Kesintisiz 30 gün',100,'AÇILDI','#F5A524'],['🔥','100 Günlük Seri','42/100 gün',42,'42/100','#FF7A59'],['⚔','İlk Düello','Bir düello tamamla',100,'AÇILDI','#FF4D5E'],['🏆','10 Düello Galibiyeti','26/10 galibiyet',100,'AÇILDI','#FF4D5E'],['🏅','1.000 Kelime','1.284/1.000 kelime',100,'AÇILDI','#7C5CFF'],['💎','10.000 XP','18.240/10.000 XP',100,'AÇILDI','#22D3EE'],['🎙','İlk Konuşma','Bir AI oturumu tamamla',100,'AÇILDI','#22C55E'],['🚀','B2 Seviyesi','B1+ · %68 tamam',68,'%68','#2E6BFF'],['📚','500 Kelime Ustalığı','318/500 kelime',64,'318/500','#7C5CFF']];
+    const achievements=aData.map(a=>{const open=a[3]===100;
+      return {glyph:a[0],name:a[1],sub:a[2],progress:a[4],bar:this.bar(a[3],a[5],a[5]),
+        st:'padding:14px;border-radius:20px;'+(open?'background:linear-gradient(160deg,'+a[5]+'26,rgba(14,20,38,.95));border:1px solid '+a[5]+'59':'background:#0E1426;border:1px solid rgba(255,255,255,.07)'),
+        badge:'width:46px;height:46px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:21px;'+(open?'background:'+a[5]+'33;border:1px solid '+a[5]+'80;box-shadow:0 8px 22px '+a[5]+'40':'background:rgba(255,255,255,.04);border:1px dashed rgba(255,255,255,.16);filter:grayscale(1);opacity:.6')};});
+    const weekBars=[['Pzt',420],['Sal',560],['Çar',300],['Per',680],['Cum',520],['Cmt',1120],['Paz',880]].map(b=>({day:b[0],
+      bar:'width:100%;height:'+Math.round(b[1]/1120*104)+'px;border-radius:8px 8px 3px 3px;background:'+(b[1]>=1000?'linear-gradient(180deg,#22D3EE,#2E6BFF)':'linear-gradient(180deg,rgba(46,107,255,.75),rgba(124,92,255,.5))')}));
+    const trends=[['Kelime',82,'+6'],['Gramer',64,'+3'],['Dinleme',62,'+8'],['Okuma',72,'+2'],['Konuşma',44,'+11'],['Yazma',60,'-1']].map(t=>({name:t[0],delta:t[2],bar:this.bar(t[1],'#2E6BFF','#22D3EE'),deltaSt:t[2][0]==='-'?'color:#FF9AA5':'color:#7EE2A8'}));
+    const usage=[['Günlük ders','3 / 5',60,'2 ders kaldı'],['AI konuşma','1 / 1',100,'Limit doldu · yarın 00:00'],['Oyun turu','6 / 10',60,'4 tur kaldı'],['Analiz','Temel',30,'Gelişmiş analiz Premium']].map(u=>({name:u[0],val:u[1],note:u[3],bar:this.bar(u[2],u[2]===100?'#FF4D5E':'#2E6BFF',u[2]===100?'#FF7A59':'#22D3EE'),valSt:u[2]===100?'color:#FF9AA5':'color:#94A0BC'}));
+    const bData=[['∞','Sınırsız ders','Günlük limit yok','Free: 5','#2E6BFF'],['🤖','AI İngilizce Koçu','Hafızalı kişisel öğretmen','Free: 1','#7C5CFF'],['🎙','Sınırsız konuşma','Telaffuz analizi dahil','Free: 1','#22D3EE'],['📈','Gelişmiş analiz','Beceri trendleri, hata defteri','Free: —','#22C55E'],['🗂','Kişisel müfredat','Hedefine göre yeniden kurulur','Free: —','#F5A524'],['📥','Çevrimdışı öğrenme','Uçakta bile devam et','Free: —','#FF7A59']];
+    const benefits=bData.map(b=>({glyph:b[0],name:b[1],sub:b[2],free:b[3],
+      icon:'width:38px;height:38px;flex:none;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:16px;background:'+b[4]+'22;border:1px solid '+b[4]+'4d'}));
+    const planData=[['yearly','Yıllık','1.099 TL/yıl','₺91','aylık','2 AY BEDAVA'],['monthly','Aylık','Her ay yenilenir','₺149','aylık','']];
+    const plans=planData.map(p=>{const on=st.paywallPlan===p[0];
+      return {name:p[1],sub:p[2],price:p[3],unit:p[4],tag:p[5],check:on?'✓':'',onClick:()=>this.setState({paywallPlan:p[0]}),
+        st:'display:flex;align-items:center;gap:12px;padding:16px;border-radius:20px;cursor:pointer;color:#fff;transition:all .16s ease;'+(on?'background:linear-gradient(135deg,rgba(46,107,255,.26),rgba(124,92,255,.18));border:1.5px solid #4D8BFF;box-shadow:0 0 0 4px rgba(46,107,255,.12)':'background:#0E1426;border:1.5px solid rgba(255,255,255,.08)'),
+        tagSt:p[5]?'padding:3px 7px;border-radius:7px;background:#22C55E;color:#06210F;font:800 9px ui-monospace;letter-spacing:.06em':'display:none',
+        radio:'width:24px;height:24px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;font:800 12px Manrope,sans-serif;'+(on?'background:#2E6BFF;color:#fff':'border:1.5px solid rgba(255,255,255,.22);color:transparent')};});
+    const setData=[['HESAP',[['👤','Profil bilgileri','Ad, kullanıcı adı, avatar','Düzenle','#2E6BFF'],['🎯','Hedefler','Kariyer · 10 dk/gün','Değiştir','#7C5CFF'],['📊','Seviye','B1+ · yeniden test','B1+','#22D3EE']]],
+      ['BİLDİRİMLER',[['🔔','Günlük hatırlatma','20:00','Açık','#F5A524'],['⚔','Düello daveti','Anında bildirim','Açık','#FF4D5E'],['🏛','Kulüp etkinliği','Haftalık özet','Kapalı','#22C55E']]],
+      ['SES VE ERİŞİLEBİLİRLİK',[['🔊','Ses efektleri','Doğru/yanlış tonları','Açık','#22D3EE'],['📳','Titreşim','Harf seçimi ve kombo','Açık','#7C5CFF'],['🐢','Azaltılmış hareket','Animasyonları kapat','Kapalı','#94A0BC'],['🔠','Büyük metin','Sistem ayarını kullan','Açık','#2E6BFF']]],
+      ['UYGULAMA',[['🌍','Arayüz dili','Türkçe','TR','#2E6BFF'],['🎧','Aksan','İngiliz İngilizcesi','UK','#22D3EE'],['📥','İndirilenler','Çevrimdışı 3 ünite','Premium','#F5A524']]]];
+    const settingGroups=setData.map(g=>({name:g[0],items:g[1].map((i,idx)=>({glyph:i[0],name:i[1],sub:i[2],val:i[3],onClick:()=>this.fire(i[1],'Ayar ekranı açılır · demo'),
+      st:'width:100%;display:flex;align-items:center;gap:12px;padding:13px 14px;background:none;cursor:pointer;color:#fff;'+(idx<g[1].length-1?'border:none;border-bottom:1px solid rgba(255,255,255,.06)':'border:none'),
+      icon:'width:36px;height:36px;flex:none;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:15px;background:'+i[4]+'22;border:1px solid '+i[4]+'40',
+      valSt:'font:700 11px ui-monospace;color:'+(i[3]==='Kapalı'?'#6E7B9C':'#94A0BC')}))}));
+    const scaleData=[['Primary · Electric Blue','#2E6BFF',['#EAF1FF','#C9DCFF','#9FC0FF','#74A3FF','#4D8BFF','#2E6BFF','#2455CC','#1B4099','#122B66','#091633']],
+      ['Secondary · Violet','#7C5CFF',['#F1EDFF','#DCD3FF','#C4B5FF','#AB95FF','#9378FF','#7C5CFF','#6349CC','#4A3799','#312566','#191233']],
+      ['Neutral · Navy','#0E1426',['#F4F6FB','#D8DEEC','#B4BFD6','#94A0BC','#6E7B9C','#4E5A78','#2C3654','#161E36','#0E1426','#070A14']],
+      ['Semantic','#22C55E',['#22C55E','#7EE2A8','#F5A524','#FFCE8A','#FF4D5E','#FF9AA5','#22D3EE','#7FE6F5','#0E1426','#070A14']]];
+    const scales=scaleData.map(s=>({name:s[0],base:s[1],steps:s[2].map((c,i)=>({label:'',st:'flex:1;background:'+c+';display:flex;align-items:flex-end;justify-content:center;font:600 8px ui-monospace;color:'+(i<4?'#0B1122':'#C7D2EC')+';padding-bottom:3px'}))}));
+    const btnData=[['Varsayılan','background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;border:none'],['Basılı','background:linear-gradient(135deg,#2455CC,#6349CC);color:#fff;border:none;transform:scale(.97)'],['Devre dışı','background:rgba(255,255,255,.06);color:#5E6B8A;border:none'],['Yükleniyor','background:rgba(46,107,255,.4);color:#D3DCF0;border:none'],['Başarı','background:rgba(34,197,94,.2);color:#9DEFC0;border:1px solid #22C55E'],['Hata','background:rgba(255,77,94,.18);color:#FFAEB6;border:1px solid #FF4D5E']];
+    const btnStates=btnData.map(b=>({name:b[0],label:b[0]==='Yükleniyor'?'••• Bekle':(b[0]==='Başarı'?'✓ Tamam':(b[0]==='Hata'?'✕ Tekrar dene':'Devam et')),
+      st:'height:46px;border-radius:15px;display:flex;align-items:center;justify-content:center;font:800 13px Manrope,sans-serif;'+b[1]}));
+    const pillData=[['B1+','#22D3EE'],['🔥 42 gün','#F5A524'],['LV 24','#7C5CFF'],['+50 XP','#2E6BFF'],['ALTIN LİG','#F5A524'],['DOĞRU','#22C55E'],['YANLIŞ','#FF4D5E'],['PREMIUM','#7C5CFF'],['KİLİTLİ','#6E7B9C']];
+    const pills=pillData.map(p=>({label:p[0],st:'padding:6px 11px;border-radius:10px;font:800 10.5px ui-monospace;background:'+p[1]+'1f;border:1px solid '+p[1]+'59;color:'+p[1]}));
+    const eData=[['Henüz arkadaşın yok','Arkadaş ekleyince düello yapabilir, serilerinizi karşılaştırabilirsin.','Arkadaş davet et','friends','arkadaş listesi görseli'],['Mesaj yok','Kulüp sohbetlerinde bir soru sorarak başla. Topluluk yanıtlamayı sever.','Kulüplere göz at','clubs','sohbet baloncukları'],['Hiç kulübe katılmadın','İlgi alanına uygun kulüpte haftalık turnuvalara katıl.','Kulüp bul','clubs','kulüp amblemleri'],['Başarım yok','İlk dersini bitir, ilk rozetin hemen açılır.','Derse başla','lesson','rozet çerçevesi'],['Kayıtlı kelime yok','Kelime kartındaki yıldıza dokunarak defterine ekle.','Kelime çalış','vocab','kelime kartı'],['Bildirim yok','Her şey güncel. Yeni bir düello geldiğinde haber vereceğiz.','Ana sayfaya dön','home','boş zil']];
+    const emptyStates=eData.map(e=>({title:e[0],text:e[1],cta:e[2],onClick:()=>this.go(e[3]),artLabel:'görsel: '+e[4],
+      art:'width:104px;height:104px;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;padding:12px;border:1px dashed rgba(255,255,255,.18);background:repeating-linear-gradient(135deg,rgba(46,107,255,.14) 0 8px,rgba(124,92,255,.07) 8px 16px)'}));
+    const errData=[['📡','Bağlantı yok','İnterneti kontrol et. Çevrimdışı indirilen üniteler çalışmaya devam eder.','ERR_NETWORK','Tekrar dene','Çevrimdışı derslerim','#F5A524'],['🎙','Mikrofon izni kapalı','Konuşma pratiği için mikrofon erişimine ihtiyacımız var. Ayarlar → Wordly → Mikrofon.','ERR_MIC_PERMISSION','Ayarları aç','Yazarak devam et','#FF4D5E'],['🔇','Ses yüklenemedi','Telaffuz kaydına şu an ulaşamıyoruz. Metinle devam edebilirsin.','ERR_AUDIO_404','Tekrar yükle','Metinle devam','#F5A524'],['💳','Ödeme alınamadı','Bankan işlemi onaylamadı. Kart bilgilerini kontrol et veya başka yöntem dene.','ERR_PAYMENT_DECLINED','Kartı güncelle','Başka yöntem','#FF4D5E'],['⏳','Oturum süresi doldu','Güvenliğin için çıkış yaptık. Seri ve XP'+"'"+'lerin korunuyor.','ERR_SESSION_EXPIRED','Yeniden giriş yap','Yardım','#7C5CFF']];
+    const errorStates=errData.map(e=>({glyph:e[0],title:e[1],text:e[2],code:e[3],primary:e[4],secondary:e[5],onClick:()=>this.fire(e[4],'Demo: '+e[1]),
+      wrap:'border-radius:22px;padding:16px;background:'+e[6]+'14;border:1px solid '+e[6]+'3d',
+      icon:'width:44px;height:44px;flex:none;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:19px;background:'+e[6]+'26;border:1px solid '+e[6]+'59',
+      primarySt:'flex:1.3;height:42px;border-radius:13px;border:none;background:'+e[6]+';color:#0B1122;font:800 12.5px Manrope,sans-serif;cursor:pointer'}));
+    return {comments,friendTabs,friendList,clubList,clubBoard,clubChat,notifs,profileSkills,achievements,weekBars,trends,usage,benefits,plans,settingGroups,scales,btnStates,pills,emptyStates,errorStates,
+      toSocial:()=>this.go('social'),toProfile:()=>this.go('profile'),toAchv:()=>this.go('achv'),toStats:()=>this.go('stats'),
+      toSettings:()=>this.go('settings'),toSub:()=>this.go('sub'),toPaywall:()=>this.go('paywall'),toSplash:()=>this.go('splash'),
+      followLabel:st.following?'Takiptesin':'Takip et',
+      followSt:'padding:9px 13px;border-radius:12px;font:800 11.5px Manrope,sans-serif;cursor:pointer;'+(st.following?'background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);color:#C7D2EC':'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);border:none;color:#fff'),
+      followTog:()=>{this.setState({following:!st.following});this.fire(st.following?'Takipten çıkıldı':'Gözde takip ediliyor','Etkinlikleri akışında görünecek');},
+      likeLabel:st.liked?'♥ 49':'♡ 48',
+      likeSt:'flex:1;height:44px;border-radius:14px;cursor:pointer;font:700 13px Manrope,sans-serif;'+(st.liked?'background:rgba(255,77,94,.18);border:1px solid #FF4D5E;color:#FFAEB6':'background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);color:#C7D2EC'),
+      likeTog:()=>this.setState({liked:!st.liked}),
+      commentFx:()=>this.fire('Yorum alanı açıldı','Klavye ile yanıt yaz'),
+      joinLabel:st.joined===false?'Katıl':'Üyesin ✓',
+      joinSt:'margin-left:auto;padding:10px 15px;border-radius:13px;font:800 12px Manrope,sans-serif;cursor:pointer;'+(st.joined===false?'background:#fff;color:#0B1122;border:none':'background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);color:#fff'),
+      joinTog:()=>{const j=st.joined===false;this.setState({joined:j});this.fire(j?'Kulübe katıldın':'Kulüpten ayrıldın','Developers English');},
+      trialNote:st.paywallPlan==='yearly'?'7 gün sonra ₺1.099/yıl (₺91/ay)':'7 gün sonra ₺149/ay',
+      startTrial:()=>this.fire('7 günlük deneme başladı',st.paywallPlan==='yearly'?'Yıllık plan · 6 Ekim'+"'"+'a kadar ücretsiz':'Aylık plan · 6 Ekim'+"'"+'a kadar ücretsiz')};
+  }
+  renderVals(){
+    const st=this.state, S={};
+    NAV.forEach(g=>g[1].forEach(i=>{S[i[0]]=st.screen===i[0];}));
+    const groups=NAV.map(g=>({name:g[0],items:g[1].map(i=>({id:i[0],n:i[1],onClick:()=>this.go(i[0]),
+      st:'text-align:left;padding:8px 11px;border-radius:11px;border:none;cursor:pointer;font:600 12.5px "Plus Jakarta Sans",sans-serif;transition:all .14s ease;'+(st.screen===i[0]?'background:linear-gradient(90deg,rgba(46,107,255,.28),rgba(124,92,255,.12));color:#fff;box-shadow:inset 0 0 0 1px rgba(46,107,255,.4)':'background:transparent;color:#8E9BBA')}))}));
+    const note=NOTES[st.screen]||['',''];
+    const navIcons=[['home','🏠','Ana'],['learn','📚','Öğren'],['play','🎮','Oyna'],['social','👥','Sosyal'],['profile','👤','Profil']];
+    const navItems=navIcons.map(n=>({onClick:()=>this.go(n[0]),icon:n[1],label:n[2],
+      st:'flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:8px 0;border:none;background:none;cursor:pointer;position:relative;transition:all .16s ease;'+(st.screen===n[0]?'color:#fff':'color:#6E7B9C'),
+      dot:st.screen===n[0]?'position:absolute;top:2px;width:22px;height:3px;border-radius:9px;background:linear-gradient(90deg,#2E6BFF,#22D3EE)':'display:none'}));
+    const goalData=[['Seyahat','uçuş, otel, yol'],['Kariyer','toplantı, e-posta'],['Okul','sınav, ödev'],['Konuşma','akıcılık'],['Sınavlar','IELTS, TOEFL'],['Eğlence','dizi, oyun'],['Kişisel gelişim','günlük pratik']];
+    const goalOpts=goalData.map(g=>({label:g[0],sub:g[1],onClick:()=>this.tog('goals',g[0]),
+      st:'display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:13px;border-radius:16px;cursor:pointer;color:#fff;text-align:left;transition:all .16s ease;'+(st.goals.indexOf(g[0])>=0?'background:rgba(46,107,255,.18);border:1px solid #2E6BFF;box-shadow:0 0 0 3px rgba(46,107,255,.1)':'background:#0E1426;border:1px solid rgba(255,255,255,.08)')}));
+    const timeOpts=['5 dk','10 dk','20 dk','30+ dk'].map(t=>({label:t,onClick:()=>this.setState({time:t}),st:'flex:1;'+this.chip(st.time===t,'12px 0')}));
+    const skillOpts=['Kelime','Gramer','Konuşma','Dinleme','Okuma','Yazma'].map(k=>({label:k,onClick:()=>this.tog('skills',k),st:this.chip(st.skills.indexOf(k)>=0,'9px 13px')}));
+    const q=QUESTIONS[st.q%QUESTIONS.length];
+    const qOpts=q.opts.map((o,i)=>{let bg='background:#0E1426;border:1px solid rgba(255,255,255,.09)',mark='',bc='rgba(255,255,255,.1)';
+      if(st.picked!==null){if(i===q.a){bg='background:rgba(34,197,94,.14);border:1px solid #22C55E';mark='✓';bc='rgba(34,197,94,.3)';}
+        else if(i===st.picked){bg='background:rgba(255,77,94,.14);border:1px solid #FF4D5E';mark='✕';bc='rgba(255,77,94,.3)';}else{bg='background:#0E1426;border:1px solid rgba(255,255,255,.06);opacity:.5';}}
+      return {key:['A','B','C','D'][i],label:o,mark:mark,onClick:()=>{if(st.picked===null)this.setState({picked:i});},
+        st:'display:flex;align-items:center;gap:12px;padding:15px;border-radius:16px;cursor:pointer;color:#fff;font:600 14.5px "Plus Jakarta Sans",sans-serif;transition:all .18s ease;'+bg,
+        badge:'width:26px;height:26px;flex:none;border-radius:8px;background:rgba(255,255,255,.07);border:1px solid '+bc+';display:flex;align-items:center;justify-content:center;font:700 11px ui-monospace'};});
+    const correct=st.picked===q.a;
+    const qDots=QUESTIONS.map((x,i)=>i).concat([3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]).slice(0,20).map((x,i)=>({st:'flex:1;height:4px;border-radius:9px;background:'+(i<st.q?'#22D3EE':i===st.q?'#2E6BFF':'rgba(255,255,255,.1)')}));
+    const qDiff=[0,1,2,3,4].map(i=>({st:'width:14px;height:6px;border-radius:2px;background:'+(i<3?'#F5A524':'rgba(255,255,255,.12)')}));
+    const wave=[8,14,22,11,26,17,30,13,9,20,28,15,24,10,18,26,12,21,30,16,9,23,13,27,11,7].map((h,i)=>({st:'flex:1;height:'+h+'px;border-radius:2px;background:linear-gradient(180deg,#22D3EE,#2E6BFF);opacity:.8',tall:'flex:1;height:'+Math.round(h*2.3)+'px;border-radius:3px;background:linear-gradient(180deg,#22D3EE,#2E6BFF);opacity:'+(i<10?'.95':'.4')}));
+    const skillLevels=[['Kelime','B2',82],['Gramer','B1',64],['Okuma','B1+',72],['Dinleme','B1',62],['Konuşma','A2+',44],['Yazma','B1',60]].map(k=>({name:k[0],lvl:k[1],bar:this.bar(k[2],'#2E6BFF','#22D3EE')}));
+    const dailyRings=[['Kelime',85,'#2E6BFF'],['Gramer',60,'#7C5CFF'],['Dinleme',40,'#22D3EE'],['Konuşma',15,'#F5A524']].map(r=>({name:r[0],pct:'%'+r[1],
+      ring:'width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:conic-gradient('+r[2]+' 0 '+r[1]+'%,rgba(255,255,255,.09) '+r[1]+'% 100%)'}));
+    const boardPreview=[['5','Gözde','Gİ','4.820','▲','color:#22C55E','#7C5CFF','#22D3EE'],['6','Mert','ME','4.610','▼','color:#FF4D5E','#F5A524','#FF7A59'],['7','Sen','A','4.480','▲','color:#22C55E','#2E6BFF','#7C5CFF']].map(r=>({rank:r[0],name:r[1],ini:r[2],xp:r[3],mv:r[4],mvSt:r[5],av:this.av(r[6],r[7],28),row:r[1]==='Sen'?'background:rgba(46,107,255,.12);border:1px solid rgba(46,107,255,.3);border-radius:12px;padding:7px 9px;margin:0 -9px':'padding:7px 0'}));
+    const cefrMap={A1:['A1 · Başlangıç','Temel selamlaşma, sayılar, günlük kalıplar.','%100',12,600,'6 sa',100],A2:['A2 · Temel','Kısa diyaloglar, geçmiş zaman, yön sorma.','%100',16,1100,'9 sa',100],B1:['B1 · Orta','Fikir belirtme, deneyim anlatma, iş yazışması.','%60',20,1800,'14 sa',60],B2:['B2 · İyi','Tartışma, soyut konular, akademik metin.','%12',22,2600,'18 sa',12],C1:['C1 · İleri','Nüans, deyim, resmi sunum.','Kilitli',24,3400,'24 sa',0],C2:['C2 · Ustalık','Anadile yakın akıcılık.','Kilitli',20,4000,'20 sa',0]};
+    const c=cefrMap[st.cefr];
+    const cefrTabs=['A1','A2','B1','B2','C1','C2'].map(l=>({label:l,onClick:()=>this.setState({cefr:l}),st:'flex:none;'+this.chip(st.cefr===l,'9px 18px')}));
+    const unitData={B1:[['01','Günlük rutinler','Present Simple · 24 kelime',100,'BİTTİ'],['10','Seyahat planları','Future forms · 30 kelime',100,'BİTTİ'],['12','Deneyimler','Present Perfect · 28 kelime',33,'DEVAM'],['13','Koşullar','If clauses · 26 kelime',0,'YENİ'],['14','İş görüşmesi','Modals · 32 kelime',0,'KİLİTLİ']]};
+    const units=(unitData[st.cefr]||unitData.B1).map(u=>({no:u[0],name:u[1],sub:u[2],state:u[4],onClick:()=>this.go('lesson'),
+      st:this.row(u[4]==='DEVAM'),bar:this.bar(u[3],'#2E6BFF','#22D3EE'),
+      badge:'width:42px;height:42px;flex:none;border-radius:14px;display:flex;align-items:center;justify-content:center;font:800 13px Manrope,sans-serif;'+(u[3]===100?'background:rgba(34,197,94,.16);border:1px solid rgba(34,197,94,.34);color:#7EE2A8':u[4]==='DEVAM'?'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff':'background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#8E9BBA')}));
+    const mapData=[['01','Günlük rutinler','6/6 bölüm','done','✓'],['10','Seyahat planları','6/6 bölüm','done','✓'],['11','Alışkanlıklar','6/6 bölüm','done','✓'],['12','Deneyimler','2/6 bölüm · şimdi','now','▶'],['13','Koşullar','Yeni','next','13'],['14','İş görüşmesi','Kilitli','lock','🔒'],['15','Ünite sınavı','Kilitli','lock','🏆']];
+    const mapNodes=mapData.map((n,i)=>{const left=i%2===0;const kind=n[3];
+      return {no:n[0],name:n[1],sub:n[2],icon:n[4],onClick:()=>this.go(kind==='lock'?'map':'lesson'),
+        wrap:'display:flex;align-items:center;gap:14px;'+(left?'flex-direction:row;padding-right:40px':'flex-direction:row-reverse;padding-left:40px'),
+        labelSt:'flex:1;'+(left?'text-align:left':'text-align:right'),
+        st:'width:74px;height:74px;flex:none;border-radius:26px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;cursor:pointer;color:#fff;transition:transform .16s ease;'+(kind==='done'?'background:rgba(34,197,94,.16);border:1px solid rgba(34,197,94,.36);color:#7EE2A8':kind==='now'?'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);border:1px solid rgba(255,255,255,.2);box-shadow:0 14px 34px rgba(46,107,255,.45)':kind==='next'?'background:#141C33;border:1px solid rgba(255,255,255,.14)':'background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.14);color:#6E7B9C')};});
+    const lessonData=[['Kelime','28 yeni kelime','vocab','🔤','BİTTİ'],['Gramer','Present Perfect','grammar','📐','DEVAM'],['Dinleme','Havaalanı diyaloğu','listen','🎧','2 dk'],['Okuma','Bir gezi günlüğü','read','📖','3 dk'],['Konuşma','AI ile pratik','speak','🎙','4 dk'],['Tekrar','Aralıklı tekrar','vocab','🔁','12 kart']];
+    const lessonSteps=lessonData.map(l=>({name:l[0],sub:l[1],glyph:l[3],tag:l[4],onClick:()=>this.go(l[2]),
+      st:this.row(l[4]==='DEVAM'),
+      icon:'width:44px;height:44px;flex:none;border-radius:15px;display:flex;align-items:center;justify-content:center;font-size:18px;'+(l[4]==='BİTTİ'?'background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.3)':l[4]==='DEVAM'?'background:linear-gradient(135deg,#2E6BFF,#7C5CFF)':'background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1)'),
+      tagSt:'font:700 10px ui-monospace;letter-spacing:.06em;padding:5px 9px;border-radius:8px;'+(l[4]==='BİTTİ'?'background:rgba(34,197,94,.14);color:#7EE2A8':l[4]==='DEVAM'?'background:rgba(46,107,255,.2);color:#9FBEFF':'background:rgba(255,255,255,.05);color:#8E9BBA')}));
+    const tokenRows=[['Primary 500','#2E6BFF','linear-gradient(135deg,#2E6BFF,#4D8BFF)'],['Secondary 500','#7C5CFF','linear-gradient(135deg,#7C5CFF,#9B82FF)'],['Accent Cyan','#22D3EE','linear-gradient(135deg,#22D3EE,#67E8F9)'],['Success','#22C55E','#22C55E'],['Warning','#F5A524','#F5A524'],['Error','#FF4D5E','#FF4D5E'],['Background','#070A14','#070A14'],['Surface','#0E1426','#0E1426'],['Text muted','#94A0BC','#94A0BC']].map(t=>({name:t[0],hex:t[1],sw:'width:30px;height:30px;flex:none;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:'+t[2]}));
+    return Object.assign(this.more(),this.more2(),{
+      showRail:this.props.showRail!==false,showNotes:this.props.showNotes!==false,
+      groups,s:S,showStatus:st.screen!=='splash',showNav:TABS.indexOf(st.screen)>=0,navItems,
+      screenTitle:note[0],screenNote:note[1],tokenRows,
+      toastOn:!!st.toast,toastTitle:st.toast?st.toast.title:'',toastNote:st.toast?st.toast.note:'',
+      toOnb:()=>this.go('onb'),toGoal:()=>this.go('goal'),toTest:()=>this.setState({screen:'test',q:0,picked:null}),toHome:()=>this.go('home'),
+      toLearn:()=>this.go('learn'),toMap:()=>this.go('map'),toLesson:()=>this.go('lesson'),toCoach:()=>this.go('coach'),
+      toArena:()=>this.go('arena'),toDuel:()=>this.go('duel'),toBoard:()=>this.go('board'),toNotif:()=>this.go('notif'),
+      fxXp:()=>this.fire('+50 XP kazanıldı','Günlük hedefe 120 XP kaldı'),fxLevel:()=>this.fire('Seviye 24 → 25','Yeni ünite kilidi açıldı'),
+      fxStreak:()=>this.fire('🔥 Seri 43 güne çıktı','En uzun serine 5 gün kaldı'),fxAchv:()=>this.fire('Başarım açıldı','“1.000 Kelime” rozeti koleksiyonunda'),
+      goalOpts,timeOpts,skillOpts,goalSummary:st.goals.length?st.goals.join(' · ')+' · '+st.time+' · '+st.skills.length+' beceri':'En az bir hedef seç',
+      qNo:st.q+1,qType:q.type,qTimer:q.t,qLevel:q.lvl,qPrompt:q.prompt,qText:q.text,qAudio:q.audio,qOpts,qDots,qDiff,wave,
+      qFeedback:st.picked!==null,qFbTitle:correct?'Doğru! +25 XP':'Yanlış — doğrusu: '+q.opts[q.a],qFbNote:q.note,
+      qFbSt:'border-radius:16px;padding:13px 15px;display:flex;flex-direction:column;gap:3px;animation:wup .25s ease both;'+(correct?'background:rgba(34,197,94,.14);border:1px solid rgba(34,197,94,.36);color:#C9F7DC':'background:rgba(255,77,94,.13);border:1px solid rgba(255,77,94,.34);color:#FFD5D9'),
+      qNextLabel:st.picked===null?'Bir seçenek seç':(st.q>=QUESTIONS.length-1?'Testi bitir ve seviyemi gör':'Sonraki soru'),
+      qNextSt:'height:56px;border-radius:18px;border:none;font:800 16px Manrope,sans-serif;cursor:'+(st.picked===null?'not-allowed':'pointer')+';transition:all .16s ease;'+(st.picked===null?'background:rgba(255,255,255,.06);color:#5E6B8A':'background:linear-gradient(135deg,#2E6BFF,#7C5CFF);color:#fff;box-shadow:0 14px 34px rgba(46,107,255,.42)'),
+      qNext:()=>{if(st.picked===null)return;if(st.q>=QUESTIONS.length-1)this.go('result');else this.setState({q:st.q+1,picked:null});},
+      cefrTabs,cefrTitle:c[0],cefrDesc:c[1],cefrPct:c[2],cefrUnits:c[3],cefrWords:c[4],cefrTime:c[5],cefrBar:this.bar(c[6],'#22D3EE','#2E6BFF'),
+      units,mapNodes,lessonSteps,boardPreview,dailyRings,skillLevels,
+      saveWord:()=>{this.setState({saved:!st.saved});this.fire(st.saved?'Kelime listeden çıktı':'“journey” kaydedildi',st.saved?'Tekrar sırasından kaldırıldı':'Aralıklı tekrara eklendi');},
+      saveSt:'width:38px;height:38px;border-radius:12px;cursor:pointer;font-size:15px;color:#fff;'+(st.saved?'background:rgba(245,165,36,.24);border:1px solid #F5A524':'background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12)'),
+      saveGlyph:st.saved?'★':'☆',
+      playAudio:()=>this.fire('🔊 /ˈdʒɜːni/','Telaffuz oynatılıyor · 0.75× dene'),
+      wordAgain:()=>this.fire('Tekrar sırasına alındı','10 dakika içinde yeniden sorulacak'),
+      wordKnown:()=>this.fire('+10 XP · Ustalık %68 → %74','“journey” koleksiyonuna eklendi')});
+  }
+}
+</script>
+</body>
+</html>
