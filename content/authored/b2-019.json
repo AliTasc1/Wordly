@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b2-019",
+    "level": "B2",
+    "range": "1439-1518"
+  },
+  "last-minute--adj": {
+    "tr": "son dakika",
+    "def": "Done at the latest possible time.",
+    "ex": "It was a last minute change.",
+    "exTr": "Son dakika bir değişiklikti."
+  },
+  "circumstance--noun": {
+    "tr": "durum, koşul",
+    "def": "A fact or condition that affects a situation.",
+    "ex": "Under these circumstances we agree.",
+    "exTr": "Bu koşullar altında kabul ediyoruz."
+  },
+  "interpret--verb": {
+    "tr": "yorumlamak, tercüme etmek",
+    "def": "To explain the meaning of something, or to translate speech.",
+    "ex": "How do you interpret this rule?",
+    "exTr": "Bu kuralı nasıl yorumluyorsun?"
+  },
+  "salsa--noun": {
+    "tr": "salsa",
+    "def": "A spicy sauce, or a Latin American dance.",
+    "ex": "They take salsa lessons.",
+    "exTr": "Salsa dersi alıyorlar."
+  },
+  "dread--verb": {
+    "tr": "korkuyla beklemek",
+    "def": "To feel very worried about something that will happen.",
+    "ex": "She dreads the interview.",
+    "exTr": "Görüşmeyi korkuyla bekliyor."
+  },
+  "irrational--adj": {
+    "tr": "akıl dışı, mantıksız",
+    "def": "Not based on clear thinking or reason.",
+    "ex": "He has an irrational fear of cats.",
+    "exTr": "Kedilere karşı mantıksız bir korkusu var."
+  },
+  "mathematical--adj": {
+    "tr": "matematiksel",
+    "def": "Relating to numbers and mathematics.",
+    "ex": "The proof is purely mathematical.",
+    "exTr": "Kanıt tamamen matematiksel."
+  },
+  "upgrade--noun": {
+    "tr": "yükseltme",
+    "def": "An improvement to a better version or class.",
+    "ex": "We got a free upgrade.",
+    "exTr": "Ücretsiz bir yükseltme aldık."
+  },
+  "upgrade--verb": {
+    "tr": "yükseltmek",
+    "def": "To change something for a better version.",
+    "ex": "They upgraded the old system.",
+    "exTr": "Eski sistemi yükselttiler."
+  },
+  "rim--noun": {
+    "tr": "kenar, jant",
+    "def": "The outer edge of a round object.",
+    "ex": "The rim of the cup is chipped.",
+    "exTr": "Fincanın kenarı çatlamış."
+  },
+  "decisive--adj": {
+    "tr": "belirleyici, kararlı",
+    "def": "Settling a question, or able to decide quickly.",
+    "ex": "It was the decisive goal.",
+    "exTr": "Belirleyici gol buydu."
+  },
+  "symbolic--adj": {
+    "tr": "simgesel",
+    "def": "Representing an idea rather than being practical.",
+    "ex": "The gift was symbolic.",
+    "exTr": "Hediye simgeseldi."
+  },
+  "bankruptcy--noun": {
+    "tr": "iflas",
+    "def": "The state of being unable to pay your debts.",
+    "ex": "The firm faced bankruptcy.",
+    "exTr": "Firma iflasla karşı karşıya kaldı."
+  },
+  "catering--noun": {
+    "tr": "yemek hizmeti",
+    "def": "The business of providing food for events.",
+    "ex": "A local firm does the catering.",
+    "exTr": "Yemek hizmetini yerel bir firma veriyor."
+  },
+  "shaky--adj": {
+    "tr": "titrek, sallantılı",
+    "def": "Shaking slightly, or not firm and reliable.",
+    "ex": "His voice was shaky.",
+    "exTr": "Sesi titrekti."
+  },
+  "barren--adj": {
+    "tr": "çorak, kısır",
+    "def": "Land where plants cannot grow.",
+    "ex": "The hills are dry and barren.",
+    "exTr": "Tepeler kuru ve çorak."
+  },
+  "index--noun": {
+    "tr": "dizin, endeks",
+    "def": "An alphabetical list at the back of a book, or a measure of change.",
+    "ex": "Look it up in the index.",
+    "exTr": "Dizinden bak."
+  },
+  "blush--verb": {
+    "tr": "kızarmak (yüz)",
+    "def": "To become red in the face from embarrassment.",
+    "ex": "She blushed at the compliment.",
+    "exTr": "İltifat karşısında kızardı."
+  },
+  "twinkle--noun": {
+    "tr": "parıltı, pırıltı",
+    "def": "A light that shines on and off, or a look of amusement.",
+    "ex": "There was a twinkle in his eye.",
+    "exTr": "Gözünde bir pırıltı vardı."
+  },
+  "motorbike--noun": {
+    "tr": "motosiklet",
+    "def": "A two-wheeled vehicle with an engine.",
+    "ex": "He rides a small motorbike.",
+    "exTr": "Küçük bir motosiklet sürüyor."
+  },
+  "evolve--verb": {
+    "tr": "evrilmek, gelişmek",
+    "def": "To develop gradually over a long time.",
+    "ex": "The language evolved slowly.",
+    "exTr": "Dil yavaşça evrildi."
+  },
+  "tenderness--noun": {
+    "tr": "şefkat, hassasiyet",
+    "def": "Gentle kindness, or soreness when touched.",
+    "ex": "He spoke with real tenderness.",
+    "exTr": "Gerçek bir şefkatle konuştu."
+  },
+  "attendance--noun": {
+    "tr": "katılım, devam",
+    "def": "The number of people present, or the act of going regularly.",
+    "ex": "Attendance fell this term.",
+    "exTr": "Bu dönem devam düştü."
+  },
+  "linen--noun": {
+    "tr": "keten",
+    "def": "A strong cloth made from flax.",
+    "ex": "The shirt is pure linen.",
+    "exTr": "Gömlek saf keten."
+  },
+  "patriotic--adj": {
+    "tr": "vatanseverce",
+    "def": "Showing strong love for your country.",
+    "ex": "He sang a patriotic song.",
+    "exTr": "Vatansever bir şarkı söyledi."
+  },
+  "decorate--verb": {
+    "tr": "süslemek, dekore etmek",
+    "def": "To make something look more attractive.",
+    "ex": "They decorated the hall with flowers.",
+    "exTr": "Salonu çiçeklerle süslediler."
+  },
+  "reluctant--adj": {
+    "tr": "isteksiz, gönülsüz",
+    "def": "Not wanting to do something.",
+    "ex": "She was reluctant to speak.",
+    "exTr": "Konuşmaya isteksizdi."
+  },
+  "drought--noun": {
+    "tr": "kuraklık",
+    "def": "A long period with no rain.",
+    "ex": "The drought ruined the harvest.",
+    "exTr": "Kuraklık hasadı mahvetti."
+  },
+  "tug--noun": {
+    "tr": "çekiş, asılma",
+    "def": "A sudden hard pull.",
+    "ex": "He felt a tug on the line.",
+    "exTr": "Oltada bir çekiş hissetti."
+  },
+  "balanced--adj": {
+    "tr": "dengeli",
+    "def": "Having the right amounts of different parts.",
+    "ex": "Eat a balanced diet.",
+    "exTr": "Dengeli beslen."
+  },
+  "clause--noun": {
+    "tr": "madde, yan cümle",
+    "def": "A part of a legal document, or a part of a sentence.",
+    "ex": "Read clause four carefully.",
+    "exTr": "Dördüncü maddeyi dikkatle oku."
+  },
+  "neglect--noun": {
+    "tr": "ihmal",
+    "def": "A failure to care for someone or something.",
+    "ex": "The building shows years of neglect.",
+    "exTr": "Bina yılların ihmalini gösteriyor."
+  },
+  "mango--noun": {
+    "tr": "mango",
+    "def": "A sweet tropical fruit with orange flesh.",
+    "ex": "She sliced a ripe mango.",
+    "exTr": "Olgun bir mango dilimledi."
+  },
+  "decay--verb": {
+    "tr": "çürümek",
+    "def": "To be slowly destroyed by natural processes.",
+    "ex": "The wood decayed in the damp.",
+    "exTr": "Tahta nemde çürüdü."
+  },
+  "miniature--adj": {
+    "tr": "minyatür",
+    "def": "Much smaller than the normal size.",
+    "ex": "He collects miniature trains.",
+    "exTr": "Minyatür tren topluyor."
+  },
+  "span--verb": {
+    "tr": "kapsamak, uzanmak",
+    "def": "To reach across a space or a period of time.",
+    "ex": "The bridge spans the whole river.",
+    "exTr": "Köprü bütün nehri aşıyor."
+  },
+  "windshield--noun": {
+    "tr": "ön cam",
+    "def": "The glass at the front of a car, in American English.",
+    "ex": "The windshield needs cleaning.",
+    "exTr": "Ön camın temizlenmesi gerekiyor."
+  },
+  "edit--noun": {
+    "tr": "düzenleme",
+    "def": "A change made to improve a text or a film.",
+    "ex": "The final edit took a week.",
+    "exTr": "Son düzenleme bir hafta sürdü."
+  },
+  "edit--verb": {
+    "tr": "düzenlemek, kurgulamak",
+    "def": "To correct and improve a text or a film.",
+    "ex": "She edits the school magazine.",
+    "exTr": "Okul dergisini o düzenliyor."
+  },
+  "supervision--noun": {
+    "tr": "gözetim, denetim",
+    "def": "The act of watching over work or people.",
+    "ex": "Children need supervision here.",
+    "exTr": "Çocuklar burada gözetim gerektiriyor."
+  },
+  "winding--adj": {
+    "tr": "dolambaçlı",
+    "def": "Bending and turning many times.",
+    "ex": "A winding road climbs the hill.",
+    "exTr": "Dolambaçlı bir yol tepeye çıkıyor."
+  },
+  "amuse--verb": {
+    "tr": "eğlendirmek",
+    "def": "To make someone laugh or enjoy themselves.",
+    "ex": "The story amused the children.",
+    "exTr": "Hikâye çocukları eğlendirdi."
+  },
+  "dominate--verb": {
+    "tr": "hâkim olmak, egemen olmak",
+    "def": "To have control over something, or to be the main feature.",
+    "ex": "One team dominated the match.",
+    "exTr": "Bir takım maça hâkim oldu."
+  },
+  "violate--verb": {
+    "tr": "ihlal etmek",
+    "def": "To break a rule, a law or an agreement.",
+    "ex": "They violated the ceasefire.",
+    "exTr": "Ateşkesi ihlal ettiler."
+  },
+  "transmit--verb": {
+    "tr": "iletmek, bulaştırmak",
+    "def": "To send out a signal, or to pass on a disease.",
+    "ex": "The station transmits at night.",
+    "exTr": "İstasyon gece yayın yapıyor."
+  },
+  "soaking--adj": {
+    "tr": "sırılsıklam olmuş",
+    "def": "Extremely wet.",
+    "ex": "His coat was soaking after the walk.",
+    "exTr": "Yürüyüşten sonra paltosu sırılsıklamdı."
+  },
+  "navigation--noun": {
+    "tr": "seyrüsefer, navigasyon",
+    "def": "The skill of finding the way for a ship or a plane.",
+    "ex": "Navigation was hard in the fog.",
+    "exTr": "Siste seyrüsefer zordu."
+  },
+  "margin--noun": {
+    "tr": "kenar boşluğu, fark",
+    "def": "The blank edge of a page, or the amount by which you win.",
+    "ex": "Write notes in the margin.",
+    "exTr": "Notları kenar boşluğuna yaz."
+  },
+  "amazingly--adv": {
+    "tr": "şaşırtıcı biçimde",
+    "def": "In a way that is very surprising.",
+    "ex": "Amazingly, nobody was hurt.",
+    "exTr": "Şaşırtıcı biçimde kimse yaralanmadı."
+  },
+  "sincerity--noun": {
+    "tr": "içtenlik, samimiyet",
+    "def": "The quality of really meaning what you say.",
+    "ex": "Nobody doubted her sincerity.",
+    "exTr": "Kimse onun içtenliğinden şüphe etmedi."
+  },
+  "digest--noun": {
+    "tr": "özet, derleme",
+    "def": "A short collection of the main news or facts.",
+    "ex": "The weekly digest arrives on Friday.",
+    "exTr": "Haftalık özet cuma geliyor."
+  },
+  "weave--noun": {
+    "tr": "dokuma",
+    "def": "The pattern in which threads are crossed in cloth.",
+    "ex": "The weave is tight and even.",
+    "exTr": "Dokuma sıkı ve düzgün."
+  },
+  "landlady--noun": {
+    "tr": "ev sahibi (kadın)",
+    "def": "A woman who rents out a house or a room.",
+    "ex": "Our landlady lives upstairs.",
+    "exTr": "Ev sahibimiz üst katta oturuyor."
+  },
+  "eligible--adj": {
+    "tr": "hak sahibi, uygun",
+    "def": "Allowed to do or receive something.",
+    "ex": "Students are eligible for a discount.",
+    "exTr": "Öğrenciler indirime hak kazanıyor."
+  },
+  "transparent--adj": {
+    "tr": "şeffaf",
+    "def": "Clear enough to see through, or open and honest.",
+    "ex": "The process must be transparent.",
+    "exTr": "Süreç şeffaf olmalı."
+  },
+  "sneeze--verb": {
+    "tr": "hapşırmak",
+    "def": "To push air suddenly out of your nose and mouth.",
+    "ex": "Dust makes me sneeze.",
+    "exTr": "Toz beni hapşırtıyor."
+  },
+  "preferably--adv": {
+    "tr": "tercihen",
+    "def": "Used to say which choice would be better.",
+    "ex": "Come early, preferably before nine.",
+    "exTr": "Erken gel, tercihen dokuzdan önce."
+  },
+  "exhaust--noun": {
+    "tr": "egzoz",
+    "def": "The gases from an engine, or the pipe they leave by.",
+    "ex": "Black smoke came from the exhaust.",
+    "exTr": "Egzozdan siyah duman çıktı."
+  },
+  "catastrophic--adj": {
+    "tr": "felaket boyutunda",
+    "def": "Causing terrible damage or failure.",
+    "ex": "The flood had catastrophic effects.",
+    "exTr": "Selin felaket boyutunda etkileri oldu."
+  },
+  "relic--noun": {
+    "tr": "kalıntı, yadigâr",
+    "def": "An object that survives from the past.",
+    "ex": "The museum holds a rare relic.",
+    "exTr": "Müzede nadir bir kalıntı var."
+  },
+  "merger--noun": {
+    "tr": "birleşme (şirket)",
+    "def": "The joining of two companies into one.",
+    "ex": "The merger created a large firm.",
+    "exTr": "Birleşme büyük bir firma yarattı."
+  },
+  "troublesome--adj": {
+    "tr": "baş ağrıtan, sorunlu",
+    "def": "Causing difficulty or annoyance.",
+    "ex": "That knee is troublesome again.",
+    "exTr": "O diz yine sorun çıkarıyor."
+  },
+  "rubble--noun": {
+    "tr": "moloz, enkaz",
+    "def": "Broken stones and bricks from a fallen building.",
+    "ex": "Rubble filled the street.",
+    "exTr": "Moloz sokağı doldurdu."
+  },
+  "flap--verb": {
+    "tr": "çırpmak, sallanmak",
+    "def": "To move wings or cloth quickly up and down.",
+    "ex": "The bird flapped its wings.",
+    "exTr": "Kuş kanatlarını çırptı."
+  },
+  "prevail--verb": {
+    "tr": "galip gelmek, hüküm sürmek",
+    "def": "To win in the end, or to be common in a place.",
+    "ex": "Common sense finally prevailed.",
+    "exTr": "Sonunda sağduyu galip geldi."
+  },
+  "anguish--noun": {
+    "tr": "ıstırap, elem",
+    "def": "Very great mental pain.",
+    "ex": "Her letter is full of anguish.",
+    "exTr": "Mektubu ıstırap dolu."
+  },
+  "colonial--adj": {
+    "tr": "sömürge, kolonyal",
+    "def": "Relating to a country ruled by a distant power.",
+    "ex": "The building is colonial in style.",
+    "exTr": "Bina kolonyal tarzda."
+  },
+  "diarrhea--noun": {
+    "tr": "ishal",
+    "def": "An illness in which waste leaves the body as liquid.",
+    "ex": "Dirty water can cause diarrhea.",
+    "exTr": "Kirli su ishale yol açabilir."
+  },
+  "disregard--noun": {
+    "tr": "aldırmazlık, saygısızlık",
+    "def": "A lack of attention or respect for something.",
+    "ex": "He showed total disregard for safety.",
+    "exTr": "Güvenliğe tam bir aldırmazlık gösterdi."
+  },
+  "exclusively--adv": {
+    "tr": "yalnızca, münhasıran",
+    "def": "Only, and for nobody or nothing else.",
+    "ex": "The club is exclusively for members.",
+    "exTr": "Kulüp yalnızca üyelere ait."
+  },
+  "disciple--noun": {
+    "tr": "öğrenci, havari",
+    "def": "A follower of a teacher or a religious leader.",
+    "ex": "The painting shows twelve disciples.",
+    "exTr": "Tablo on iki havariyi gösteriyor."
+  },
+  "hedge--noun": {
+    "tr": "çit (bitki)",
+    "def": "A line of bushes planted as a boundary.",
+    "ex": "A thick hedge marks the field.",
+    "exTr": "Kalın bir çit tarlayı sınırlıyor."
+  },
+  "suppress--verb": {
+    "tr": "bastırmak",
+    "def": "To stop something by force, or to hold back a feeling.",
+    "ex": "She suppressed a smile.",
+    "exTr": "Bir gülümsemeyi bastırdı."
+  },
+  "witty--adj": {
+    "tr": "nüktedan, esprili",
+    "def": "Clever and amusing in what you say.",
+    "ex": "He gave a witty reply.",
+    "exTr": "Esprili bir cevap verdi."
+  },
+  "unstoppable--adj": {
+    "tr": "durdurulamaz",
+    "def": "Impossible to stop.",
+    "ex": "The team looked unstoppable.",
+    "exTr": "Takım durdurulamaz görünüyordu."
+  },
+  "intersection--noun": {
+    "tr": "kavşak",
+    "def": "A place where two roads cross.",
+    "ex": "Turn right at the intersection.",
+    "exTr": "Kavşaktan sağa dön."
+  },
+  "supplier--noun": {
+    "tr": "tedarikçi",
+    "def": "A company that provides goods to another.",
+    "ex": "We changed our supplier.",
+    "exTr": "Tedarikçimizi değiştirdik."
+  },
+  "suspend--verb": {
+    "tr": "askıya almak",
+    "def": "To stop something for a period, or to hang it.",
+    "ex": "They suspended the service.",
+    "exTr": "Hizmeti askıya aldılar."
+  },
+  "gateway--noun": {
+    "tr": "giriş kapısı, geçit",
+    "def": "An entrance, or a place giving access to a region.",
+    "ex": "The port is a gateway to Asia.",
+    "exTr": "Liman Asya'ya açılan bir kapı."
+  },
+  "pavement--noun": {
+    "tr": "kaldırım",
+    "def": "The path beside a road, in British English.",
+    "ex": "Walk on the pavement.",
+    "exTr": "Kaldırımdan yürü."
+  }
+}
