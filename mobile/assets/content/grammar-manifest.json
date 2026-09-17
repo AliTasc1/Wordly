@@ -14,6 +14,11 @@
    "level": "B1",
    "lessons": 14,
    "file": "grammar-b1.json"
+  },
+  {
+   "level": "B2",
+   "lessons": 11,
+   "file": "grammar-b2.json"
   }
  ]
 }

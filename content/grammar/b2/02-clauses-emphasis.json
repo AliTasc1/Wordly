@@ -1,0 +1,195 @@
+{
+  "_meta": { "batch": "b2-02", "level": "B2", "range": "Ders 7-11 — enough/such, ilgi zamirleri, whether/so that, -ever, vurgu" },
+  "lessons": [
+    {
+      "id": "b2-07-enough-such-so",
+      "level": "B2",
+      "order": 7,
+      "title": "enough, so, such",
+      "topic": "Degree modifiers: enough, so, such",
+      "canDo": "Derece ve sonuç bildirerek daha etkili cümleler kurabilirim.",
+      "covers": ["RBDEG.enough", "RBDEG.such_JJ"],
+      "concept": {
+        "summary": "enough sıfat ve zarftan sonra, isimden önce gelir — Türkçedeki \"yeterince\" her iki yerde de aynı durduğu için sık karışır. so sıfat ya da zarfı, such ise isim öbeğini güçlendirir; sonuç bildirirken that'li cümlecik alırlar.",
+        "formula": { "left": "sıfat + enough / enough + isim", "right": "so + sıfat / such a + sıfat + isim" },
+        "table": [
+          { "form": "sıfattan sonra", "be": "old enough", "example": "He isn't old enough to drive." },
+          { "form": "isimden önce", "be": "enough time", "example": "We don't have enough time." },
+          { "form": "so", "be": "+ sıfat / zarf", "example": "It was so cold that we left." },
+          { "form": "such", "be": "+ (a) sıfat + isim", "example": "It was such a cold day." }
+        ]
+      },
+      "examples": [
+        { "en": "The soup isn't hot enough.", "tr": "Çorba yeterince sıcak değil.", "note": "Sıfattan sonra." },
+        { "en": "There isn't enough space for everyone.", "tr": "Herkese yetecek yer yok.", "note": "İsimden önce." },
+        { "en": "He drove so fast that I felt sick.", "tr": "O kadar hızlı sürdü ki midem bulandı.", "note": "so + zarf + that." },
+        { "en": "It was such a long meeting that everyone got tired.", "tr": "Öyle uzun bir toplantıydı ki herkes yoruldu.", "note": "such a + sıfat + isim." },
+        { "en": "She was old enough to decide for herself.", "tr": "Kendi kararını verecek yaştaydı.", "note": "enough + to + fiil." }
+      ],
+      "mistakes": [
+        { "wrong": "The soup isn't enough hot.", "right": "The soup isn't hot enough.", "why": "enough sıfattan sonra gelir." },
+        { "wrong": "It was so a long meeting.", "right": "It was such a long meeting.", "why": "İsim varsa such kullanılır." },
+        { "wrong": "It was such cold that we left.", "right": "It was so cold that we left.", "why": "İsim yoksa so kullanılır." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "This box isn't ___ to carry alone.", "options": ["light enough", "enough light", "so light", "such light"], "answer": 0, "note": "Sıfat + enough." },
+        { "type": "choice", "text": "We don't have ___ for a taxi.", "options": ["enough money", "money enough of", "so money", "such money"], "answer": 0, "note": "enough + isim." },
+        { "type": "choice", "text": "It was ___ noisy that nobody could sleep.", "options": ["so", "such", "such a", "enough"], "answer": 0, "note": "Sıfat tek başına → so." },
+        { "type": "choice", "text": "She is ___ kind person.", "options": ["such a", "so a", "so", "enough"], "answer": 0, "note": "Tekil isim öbeği → such a." },
+        { "type": "gap", "text": "He spoke ___ quietly that we couldn't hear him.", "options": ["so", "such", "such a"], "answer": 0, "note": "Zarf → so." }
+      ]
+    },
+    {
+      "id": "b2-08-relative-object",
+      "level": "B2",
+      "order": 8,
+      "title": "whom, which, edat + ilgi zamiri",
+      "topic": "Relative pronouns in object position; preposition + relative",
+      "canDo": "Resmî yazıda doğru ilgi zamirini seçebilirim.",
+      "covers": ["PRELO.who", "PRELO.whom", "PRELO.which", "PRELO.that", "PREL.which", "PREL.PREP_PREL"],
+      "concept": {
+        "summary": "İlgi zamiri kendi cümleciğinde özne değil nesne olabilir: the man whom I met. Bu durumda günlük dilde who kullanılır ya da zamir düşürülür; whom ise resmî dilde ve özellikle edattan hemen sonra tercih edilir: the person to whom I spoke.",
+        "formula": { "left": "nesne konumunda: who / whom / that / ∅", "right": "edat + whom / which" },
+        "table": [
+          { "form": "günlük", "be": "who / that / ∅", "example": "the man (who) I met" },
+          { "form": "resmî", "be": "whom", "example": "the man whom I met" },
+          { "form": "cansız", "be": "which / that / ∅", "example": "the report (which) I read" },
+          { "form": "edatlı", "be": "to whom / in which", "example": "the room in which we met" }
+        ]
+      },
+      "examples": [
+        { "en": "The colleague whom I mentioned has resigned.", "tr": "Sözünü ettiğim meslektaş istifa etti.", "note": "Resmî; nesne konumunda whom." },
+        { "en": "The report which you sent was very useful.", "tr": "Gönderdiğin rapor çok işime yaradı.", "note": "Cansız nesne → which." },
+        { "en": "This is the house in which he was born.", "tr": "Burası doğduğu ev.", "note": "Edat + which, resmî." },
+        { "en": "The candidate to whom we offered the job declined.", "tr": "İşi teklif ettiğimiz aday reddetti.", "note": "Edattan sonra zorunlu olarak whom." },
+        { "en": "She is the person I trust most.", "tr": "En çok güvendiğim kişi o.", "note": "Zamir düşürüldü." }
+      ],
+      "mistakes": [
+        { "wrong": "The candidate to who we offered the job declined.", "right": "The candidate to whom we offered the job declined.", "why": "Edattan hemen sonra whom gelir, who değil." },
+        { "wrong": "This is the house in that he was born.", "right": "This is the house in which he was born.", "why": "that edattan sonra kullanılamaz." },
+        { "wrong": "The report which you sent it was useful.", "right": "The report which you sent was useful.", "why": "İlgi zamiri zaten nesnedir, ikinci nesne konmaz." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "The manager ___ I spoke to was helpful.", "options": ["whom", "which", "what", "whose"], "answer": 0, "note": "Kişi, nesne konumunda." },
+        { "type": "choice", "text": "The meeting ___ was cancelled has been rescheduled.", "options": ["which", "who", "whom", "what"], "answer": 0, "note": "Cansız → which." },
+        { "type": "choice", "text": "That is the fund from ___ the money came.", "options": ["which", "that", "who", "what"], "answer": 0, "note": "Edattan sonra which." },
+        { "type": "choice", "text": "The lawyer with ___ she works is my cousin.", "options": ["whom", "who", "which", "that"], "answer": 0, "note": "Edat + whom." },
+        { "type": "gap", "text": "The book ___ I borrowed is overdue.", "options": ["that", "who", "whom"], "answer": 0, "note": "Cansız nesne → that (düşürülebilir de)." }
+      ]
+    },
+    {
+      "id": "b2-09-whether-so-that",
+      "level": "B2",
+      "order": 9,
+      "title": "whether, so that, in order to",
+      "topic": "Whether-clauses and purpose clauses",
+      "canDo": "Seçenekleri ve amacı açık biçimde ifade edebilirim.",
+      "covers": ["CL.WH.whether", "CL.so_that", "TO.in_order_to_do"],
+      "concept": {
+        "summary": "whether if ile aynı işi görür ama iki seçenek varken ve edattan sonra yalnızca whether kullanılabilir. Amaç bildirirken in order to yalın fiil alır; özne değişiyorsa so that + kip fiil gerekir.",
+        "formula": { "left": "whether … or not", "right": "so that + özne + can / would" },
+        "table": [
+          { "form": "whether", "be": "iki seçenek", "example": "whether to stay or go" },
+          { "form": "edattan sonra", "be": "yalnız whether", "example": "It depends on whether he agrees." },
+          { "form": "amaç, aynı özne", "be": "in order to / to", "example": "I left early in order to catch the train." },
+          { "form": "amaç, farklı özne", "be": "so that", "example": "I left early so that she could rest." }
+        ]
+      },
+      "examples": [
+        { "en": "I can't decide whether to accept the offer.", "tr": "Teklifi kabul edip etmemeye karar veremiyorum.", "note": "whether + to." },
+        { "en": "It depends on whether the flight is on time.", "tr": "Uçuşun zamanında olup olmamasına bağlı.", "note": "Edattan sonra if kullanılamaz." },
+        { "en": "She wrote it down in order to remember it.", "tr": "Hatırlamak için yazdı.", "note": "Aynı özne → in order to." },
+        { "en": "I turned the light off so that he could sleep.", "tr": "Uyuyabilsin diye ışığı kapattım.", "note": "Farklı özne → so that." },
+        { "en": "Let me know whether or not you are coming.", "tr": "Gelip gelmeyeceğini bana bildir.", "note": "whether or not kalıbı." }
+      ],
+      "mistakes": [
+        { "wrong": "It depends on if he agrees.", "right": "It depends on whether he agrees.", "why": "Edattan sonra if kullanılmaz." },
+        { "wrong": "I left early so that to catch the train.", "right": "I left early in order to catch the train.", "why": "so that'ten sonra özneli cümlecik gelir." },
+        { "wrong": "I turned the light off for he could sleep.", "right": "I turned the light off so that he could sleep.", "why": "Amaç cümleciği so that ile kurulur." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "I'm not sure ___ to call him now.", "options": ["whether", "if", "that", "so"], "answer": 0, "note": "to'dan önce whether." },
+        { "type": "choice", "text": "Everything depends on ___ they agree.", "options": ["whether", "if", "that", "which"], "answer": 0, "note": "Edattan sonra whether." },
+        { "type": "choice", "text": "He spoke slowly ___ everyone could follow.", "options": ["so that", "in order to", "for to", "so as"], "answer": 0, "note": "Farklı özne → so that." },
+        { "type": "choice", "text": "She studied hard ___ pass the exam.", "options": ["in order to", "so that", "for to", "in order that to"], "answer": 0, "note": "Aynı özne → in order to." },
+        { "type": "gap", "text": "Tell me ___ or not you need help.", "options": ["whether", "if", "that"], "answer": 0, "note": "whether or not kalıbı." }
+      ]
+    },
+    {
+      "id": "b2-10-whatever-none",
+      "level": "B2",
+      "order": 10,
+      "title": "whatever, whoever, none",
+      "topic": "-ever words and the pronoun none",
+      "canDo": "Koşul ne olursa olsun geçerli olan şeyleri anlatabilirim.",
+      "covers": ["WH.-ever", "PIND.none"],
+      "concept": {
+        "summary": "Soru kelimesine -ever eklenince \"her ne olursa olsun\" anlamı doğar. none ise \"hiçbiri\" demektir ve of ile kullanılır; no'dan farkı isimsiz kullanılabilmesidir.",
+        "formula": { "left": "whatever / whoever / whenever", "right": "none of + belirli grup" },
+        "table": [
+          { "form": "whatever", "be": "ne olursa", "example": "Take whatever you need." },
+          { "form": "whoever", "be": "kim olursa", "example": "Whoever comes is welcome." },
+          { "form": "whenever", "be": "ne zaman olursa", "example": "Call me whenever you like." },
+          { "form": "none of", "be": "hiçbiri", "example": "None of them replied." }
+        ]
+      },
+      "examples": [
+        { "en": "Whatever you decide, I will support you.", "tr": "Ne karar verirsen ver, seni desteklerim.", "note": "Koşul ne olursa olsun." },
+        { "en": "Whoever wrote this made a mistake.", "tr": "Bunu kim yazdıysa bir hata yapmış.", "note": "whoever cümleciğin öznesi." },
+        { "en": "You can call me whenever you want.", "tr": "İstediğin zaman arayabilirsin.", "note": "Zaman." },
+        { "en": "None of the shops were open.", "tr": "Dükkânların hiçbiri açık değildi.", "note": "none of + belirli grup." },
+        { "en": "However hard I try, it never works.", "tr": "Ne kadar uğraşsam da hiç işe yaramıyor.", "note": "however + sıfat/zarf." }
+      ],
+      "mistakes": [
+        { "wrong": "Whatever will you decide, I will support you.", "right": "Whatever you decide, I will support you.", "why": "-ever cümleciğinde soru düzeni kullanılmaz." },
+        { "wrong": "No of them replied.", "right": "None of them replied.", "why": "of ile kullanılan biçim none'dır." },
+        { "wrong": "None the shops were open.", "right": "None of the shops were open.", "why": "none belirli bir grupla of ister." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "___ you need, just ask.", "options": ["Whatever", "What ever does", "Whatever does", "However"], "answer": 0, "note": "Nesne, düz sıra." },
+        { "type": "choice", "text": "___ left the door open should close it.", "options": ["Whoever", "Whomever did", "Whatever", "However"], "answer": 0, "note": "Kişi + özne konumu." },
+        { "type": "choice", "text": "___ of my friends came to the party.", "options": ["None", "No", "Not", "Any"], "answer": 0, "note": "of ile none." },
+        { "type": "choice", "text": "Visit us ___ you are in town.", "options": ["whenever", "whatever", "whoever", "however"], "answer": 0, "note": "Zaman → whenever." },
+        { "type": "gap", "text": "___ hard it looks, keep trying.", "options": ["However", "Whatever", "Whenever"], "answer": 0, "note": "however + sıfat." }
+      ]
+    },
+    {
+      "id": "b2-11-emphasis-negatives",
+      "level": "B2",
+      "order": 11,
+      "title": "Vurgu için do, kim soruları, olumsuz kipler",
+      "topic": "Emphatic do; who-questions; negative modals",
+      "canDo": "Söylediğimi vurgulayabilir, özneyi sorabilir, kipleri olumsuz kurabilirim.",
+      "covers": ["V.INT.do_does", "INT.who", "PP.it_is_not", "MD.have_to.NEG", "MD.might.NEG", "MD.would.NEG"],
+      "concept": {
+        "summary": "Olumlu bir cümleye do eklenince vurgu doğar: I do like it. Who özneyi sorduğunda cümle düzeni bozulmaz ve do kullanılmaz — İngilizcenin tek soru istisnası budur. Kiplerin olumsuzunda not kipin hemen arkasına gelir.",
+        "formula": { "left": "do / does / did + yalın fiil", "right": "Who + fiil? (do yok)" },
+        "table": [
+          { "form": "vurgu", "be": "do + fiil", "example": "I do understand." },
+          { "form": "özne sorusu", "be": "Who + fiil", "example": "Who called you?" },
+          { "form": "nesne sorusu", "be": "Who + do + özne", "example": "Who did you call?" },
+          { "form": "olumsuz kip", "be": "kip + not", "example": "wouldn't, mightn't, don't have to" }
+        ]
+      },
+      "examples": [
+        { "en": "I do believe you, but the evidence is weak.", "tr": "Sana inanıyorum gerçekten ama kanıt zayıf.", "note": "Vurgu için do." },
+        { "en": "She did tell me, I just forgot.", "tr": "Bana söyledi aslında, ben unuttum.", "note": "Geçmişte vurgu → did + yalın fiil." },
+        { "en": "Who broke the window?", "tr": "Camı kim kırdı?", "note": "Özne sorusu; did kullanılmaz." },
+        { "en": "Who did you invite?", "tr": "Kimi davet ettin?", "note": "Nesne sorusu; did gerekir." },
+        { "en": "You don't have to explain; it isn't my business.", "tr": "Açıklamak zorunda değilsin, beni ilgilendirmez.", "note": "Olumsuz zorunluluk ve it is not." }
+      ],
+      "mistakes": [
+        { "wrong": "Who did break the window?", "right": "Who broke the window?", "why": "Özne sorulduğunda do kullanılmaz." },
+        { "wrong": "I do believed you.", "right": "I do believe you.", "why": "do vurgusundan sonra fiil yalın kalır." },
+        { "wrong": "He wouldn't to agree.", "right": "He wouldn't agree.", "why": "Kip fiilden sonra to gelmez." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "___ wants more coffee?", "options": ["Who", "Who does", "Whom does", "Who do"], "answer": 0, "note": "Özne sorusu, do yok." },
+        { "type": "choice", "text": "___ did they choose in the end?", "options": ["Who", "Who did they", "Whoever", "Whose"], "answer": 0, "note": "Nesne sorusu, did var." },
+        { "type": "choice", "text": "I ___ want to help, but I'm busy.", "options": ["do", "am", "does", "did do"], "answer": 0, "note": "Vurgu → do + yalın fiil." },
+        { "type": "choice", "text": "She ___ agree to those terms.", "options": ["wouldn't", "wouldn't to", "not would", "doesn't would"], "answer": 0, "note": "Kip + not." },
+        { "type": "gap", "text": "It ___ my fault; the system failed.", "options": ["isn't", "not is", "doesn't"], "answer": 0, "note": "be fiilinin olumsuzu." }
+      ]
+    }
+  ]
+}
