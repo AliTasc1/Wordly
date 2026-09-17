@@ -71,6 +71,11 @@ IRREGULAR = {
     "swell": ["swollen"], "undergo": ["underwent", "undergone"],
     "undertake": ["undertook", "undertaken"], "uphold": ["upheld"],
     "withhold": ["withheld"],
+    # Prefixed compounds inherit the irregular stem but not its prefix match.
+    "rewrite": ["rewrote", "rewritten"], "overwrite": ["overwrote"],
+    "overtake": ["overtook", "overtaken"], "oversee": ["oversaw"],
+    "outgrow": ["outgrew", "outgrown"], "retake": ["retook"],
+    "rethink": ["rethought"], "overhear": ["overheard"],
     "bend": ["bent"], "bind": ["bound"], "bite": ["bit", "bitten"],
     "bleed": ["bled"], "breed": ["bred"], "burn": ["burnt"],
     "cling": ["clung"], "creep": ["crept"], "deal": ["dealt"],
