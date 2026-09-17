@@ -63,6 +63,12 @@ POS_MAP = {
 # this is the only one.
 WORD_POS_FIX = {"exaggerate": "verb"}
 
+# Slurs have no place on a flashcard, whatever their frequency in the source
+# corpus. Checked against the whole lexicon: `gook` is the only entry that is a
+# slur and nothing else. `retard` also appears, but as the ordinary verb "to
+# slow down", which is what we teach, so it stays.
+BLOCKED_WORDS = {"gook"}
+
 
 # Function words are taught inside grammar lessons, not as vocabulary cards —
 # nobody needs a flashcard for "the" or "'s".
@@ -150,7 +156,7 @@ def build() -> None:
     for path, source in [(SRC / "cefrj.csv", "CEFR-J"), (SRC / "octanove.csv", "Octanove")]:
         for row in read_wordlist(path, source):
             word = primary_form(row["headword"])
-            if not is_teachable(word):
+            if not is_teachable(word) or word.lower() in BLOCKED_WORDS:
                 continue
             pos_raw = WORD_POS_FIX.get(word.lower(), row["pos_raw"])
             pos_short, pos_tr = POS_MAP.get(pos_raw, ("other", "DİĞER"))
