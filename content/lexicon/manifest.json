@@ -1,0 +1,59 @@
+{
+  "total": 9772,
+  "vocabTotal": 9466,
+  "levels": {
+    "A1": {
+      "count": 1161,
+      "vocab": 993,
+      "withIpa": 1146
+    },
+    "A2": {
+      "count": 1410,
+      "vocab": 1342,
+      "withIpa": 1362
+    },
+    "B1": {
+      "count": 2445,
+      "vocab": 2402,
+      "withIpa": 2369
+    },
+    "B2": {
+      "count": 2778,
+      "vocab": 2756,
+      "withIpa": 2677
+    },
+    "C1": {
+      "count": 1045,
+      "vocab": 1041,
+      "withIpa": 958
+    },
+    "C2": {
+      "count": 933,
+      "vocab": 932,
+      "withIpa": 771
+    }
+  },
+  "posBreakdown": {
+    "noun": 4850,
+    "adj": 2020,
+    "verb": 1767,
+    "adv": 820,
+    "pron": 83,
+    "prep": 80,
+    "det": 46,
+    "conj": 38,
+    "num": 30,
+    "aux": 15,
+    "modal": 13,
+    "interj": 9,
+    "part": 1
+  },
+  "sources": {
+    "vocabulary": [
+      "CEFR-J Wordlist 1.5 (Tono Laboratory, TUFS) — free for commercial use with citation",
+      "Octanove Vocabulary Profile C1/C2 1.0 — CC BY-SA 4.0"
+    ],
+    "pronunciation": "open-dict-data/ipa-dict — MIT",
+    "ordering": "OpenSubtitles frequency list (ordering only)"
+  }
+}
