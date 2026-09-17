@@ -44,6 +44,16 @@ Envanterin bir yapıyı bir seviyeye koyması, o yapının orada *üretileceği*
 anlamına gelmez: A1 öğrencisi "made in China" etiketini okur ama edilgen çatıyı
 kuramaz. Bu ayrım `deferred.json`'daki gerekçelerin çoğunu açıklar.
 
-Envanter B2'de biter. C1 ve C2 gramerinin dayanağı ayrıca kararlaştırılacak;
-bu iki seviyede tablo sıfır envanter gösterir, bu bir eksiklik değil kaynağın
-sınırıdır.
+Erteleme bir söz olduğu için takip de ediliyor: bir madde A1'de ertelenip A2'ye
+yazıldıysa, A2'nin envanterine dahil olur ("Devralınan" sütunu). Orada da
+öğretilmezse doğrulama kırılır — ya derse girer ya yeni bir gerekçeyle daha
+ileriye taşınır.
+
+**C1 ve C2 nereden geliyor.** CEFR-J'nin gramer seviyeleri B2'de biter, ama aynı
+dosyanın EGP sütunu English Grammar Profile seviyelerini C2'ye kadar taşır. Bir
+satır şu iki koşulu birden sağlıyorsa C1/C2 envanterine giriyor: CEFR-J seviyesi
+boş (yani yapı A1-B2 derslerinde zaten yok) ve EGP aralığının en üstü C1/C2,
+en altı B2 veya yukarısı. İkinci koşul "A1, C2" gibi satırları dışarıda tutar;
+bunlar A1'de öğretilen bir yapının ileri bir kullanımını gösterir, yapının
+kendisi C2 konusu değildir — böyle bir satırı C2 dersine koymak öğrenciye
+A1'de öğrendiğini yeniden anlatmak olurdu.

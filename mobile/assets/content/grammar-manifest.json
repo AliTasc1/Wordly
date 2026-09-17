@@ -19,6 +19,16 @@
    "level": "B2",
    "lessons": 11,
    "file": "grammar-b2.json"
+  },
+  {
+   "level": "C1",
+   "lessons": 5,
+   "file": "grammar-c1.json"
+  },
+  {
+   "level": "C2",
+   "lessons": 7,
+   "file": "grammar-c2.json"
   }
  ]
 }

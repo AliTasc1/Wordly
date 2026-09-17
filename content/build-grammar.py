@@ -23,6 +23,7 @@ Sorun bulursa çıkış kodu 1 döner.
 
 import csv
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -40,26 +41,58 @@ MIN_EXERCISES = 4
 EXERCISE_TYPES = {"choice", "gap", "order"}
 
 
-def inventory() -> dict[str, list[dict]]:
-    """CEFR-J envanterini seviyeye göre gruplar.
+ORDER = ["A1", "A2", "B1", "B2", "C1", "C2"]
+LEVEL_RE = re.compile(r"\b(A1|A2|B1|B2|C1|C2)\b")
 
-    CEFR-J alt seviye verir (A1.1, A1.2, A1.3); ders planı için A1 yeter,
-    o yüzden ilk iki karaktere indiriyoruz. Yıldız (B2.2*) kaynakta
-    "sınırda" demek, seviyeyi değiştirmiyor.
+
+def egp_range(cell: str) -> list[str]:
+    """EGP hücresindeki seviyeleri sıralı döndürür.
+
+    Hücre "C1", "B2-C1", "B2, C2" ya da ideografik virgüllü "B2、C2" olabilir;
+    hepsinde aradığımız aynı şey, geçen seviye etiketleri.
+    """
+    found = set(LEVEL_RE.findall(cell or ""))
+    return sorted(found, key=ORDER.index)
+
+
+def inventory() -> dict[str, list[dict]]:
+    """Gramer envanterini seviyeye göre gruplar.
+
+    A1-B2 için CEFR-J sütunu kullanılıyor. CEFR-J alt seviye verir (A1.1,
+    A1.2, A1.3); ders planı için A1 yeter, o yüzden ilk iki karaktere
+    indiriyoruz. Yıldız (B2.2*) kaynakta "sınırda" demek, seviyeyi
+    değiştirmiyor.
+
+    CEFR-J B2'de bitiyor. C1 ve C2 için aynı dosyanın EGP (English Grammar
+    Profile) sütunu kullanılıyor; bir satır şu iki koşulu birden sağlıyorsa
+    o seviyenin envanterine giriyor:
+
+    - CEFR-J seviyesi boş, yani yapı A1-B2 derslerinde zaten yok;
+    - EGP aralığının en üstü C1 ya da C2 ve en altı B2 veya daha yukarısı.
+
+    İkinci koşul "A1, C2" gibi satırları dışarıda tutuyor: bunlar başlangıç
+    seviyesinde öğretilen bir yapının ileri bir kullanımını işaret eder,
+    yapının kendisi C2 konusu değildir. Böyle bir satırı C2 dersine koymak
+    öğrenciye A1'de öğrendiği şeyi yeniden anlatmak olurdu.
     """
     groups: dict[str, list[dict]] = {}
     for row in csv.DictReader(SOURCE.open(encoding="utf-8-sig")):
+        entry = {
+            "code": row["Shorthand Code"].strip(),
+            "item": row["Grammatical Item"].strip(),
+            "type": row["Sentence Type"].strip(),
+        }
         raw = row["CEFR-J Level"].strip().rstrip("*")
-        if not raw:
+        if raw:
+            groups.setdefault(raw[:2].lower(), []).append(entry)
             continue
-        level = raw[:2].lower()
-        groups.setdefault(level, []).append(
-            {
-                "code": row["Shorthand Code"].strip(),
-                "item": row["Grammatical Item"].strip(),
-                "type": row["Sentence Type"].strip(),
-            }
-        )
+
+        egp = egp_range(row["EGP"])
+        if not egp or egp[-1] not in ("C1", "C2"):
+            continue
+        if ORDER.index(egp[0]) < ORDER.index("B2"):
+            continue
+        groups.setdefault(egp[-1].lower(), []).append(entry)
     return groups
 
 

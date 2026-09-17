@@ -21,6 +21,12 @@ esas alınarak seçildi.**
 
 ### CEFR-J Grammar Profile 20180315 — gramer envanteri
 - CEFR-J ile aynı şartlar; atıf zorunlu
+- Aynı dosyanın EGP sütunu **English Grammar Profile** (Cambridge University
+  Press & Cambridge Assessment English) seviyelerini taşır ve C1-C2 ders
+  planında bu sütun kullanıldı. Dağıttığımız şey EGP'nin kendisi değil,
+  hangi yapının hangi seviyeye ait olduğu bilgisidir; ders metinleri,
+  örnekler ve alıştırmalar bize aittir. Yine de kaynaklar satırında EGP de
+  anılmalı.
 
 ### open-dict-data/ipa-dict — IPA telaffuz
 - Lisans: **MIT** — her türlü kullanım serbest, telif bildirimi yeterli
@@ -66,6 +72,8 @@ Ayarlar ekranına bir "Kaynaklar" satırı eklenmeli ve şu metni göstermeli:
 > Kelime listesi ve CEFR seviyeleri: CEFR-J Wordlist Version 1.5, derleyen
 > Yukio Tono, Tokyo University of Foreign Studies.
 > C1/C2 kelimeleri: Octanove Vocabulary Profile 1.0 (CC BY-SA 4.0).
+> Gramer envanteri: CEFR-J Grammar Profile ve English Grammar Profile
+> (Cambridge University Press & Cambridge Assessment English).
 > Telaffuz verisi: open-dict-data/ipa-dict (MIT lisansı).
 
 Bu satır **eklenmeden uygulama yayımlanmamalı** — CEFR-J'nin ve Octanove'un
