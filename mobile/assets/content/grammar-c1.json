@@ -88,24 +88,24 @@
     "type": "choice",
     "text": "If she ___ earlier, she would have caught the train.",
     "options": [
-     "had left",
-     "would leave",
      "left",
-     "has left"
+     "had left",
+     "has left",
+     "would leave"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Koşul → had + V3."
    },
    {
     "type": "choice",
     "text": "We ___ if we had had more time.",
     "options": [
-     "would have stayed",
-     "would stayed",
+     "will have stayed",
      "had stayed",
-     "will have stayed"
+     "would stayed",
+     "would have stayed"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Sonuç → would have + V3."
    },
    {
@@ -113,8 +113,8 @@
     "text": "He ___ the job if he had applied.",
     "options": [
      "might have got",
-     "might got",
      "might have get",
+     "might got",
      "might getting"
     ],
     "answer": 0,
@@ -124,12 +124,12 @@
     "type": "choice",
     "text": "By the time I got home, everyone ___ .",
     "options": [
+     "ate",
      "had eaten",
      "has eaten",
-     "ate",
      "was eating"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "by the time + past perfect."
    },
    {
@@ -234,24 +234,24 @@
     "type": "choice",
     "text": "___ you have any questions, please ask.",
     "options": [
+     "Do",
      "Should",
      "If should",
-     "Would",
-     "Do"
+     "Would"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Devrik koşul → Should başta."
    },
    {
     "type": "choice",
     "text": "Should the flight ___ delayed, we will inform you.",
     "options": [
-     "be",
      "is",
+     "being",
      "to be",
-     "being"
+     "be"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Kipten sonra yalın fiil."
    },
    {
@@ -259,9 +259,9 @@
     "text": "If anything ___ go wrong, call the office.",
     "options": [
      "should",
+     "shall to",
      "would",
-     "will",
-     "shall to"
+     "will"
     ],
     "answer": 0,
     "note": "if + should kalıbı."
@@ -270,12 +270,12 @@
     "type": "choice",
     "text": "___ the price change, we will let you know.",
     "options": [
-     "Should",
-     "Will",
      "Does",
-     "If should"
+     "Should",
+     "If should",
+     "Will"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Resmî devrik biçim."
    },
    {
@@ -388,24 +388,24 @@
     "type": "choice",
     "text": "That ___ be the best solution.",
     "options": [
-     "may well",
+     "may good",
      "may well to",
      "well may to",
-     "may good"
+     "may well"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Güçlü ihtimal → may well."
    },
    {
     "type": "choice",
     "text": "How ___ you accuse me of lying?",
     "options": [
-     "dare",
      "dares",
      "daring",
+     "dare",
      "do dare"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "How dare + özne + yalın fiil."
    },
    {
@@ -414,8 +414,8 @@
     "options": [
      "Shall",
      "Will to",
-     "Do",
-     "Should to"
+     "Should to",
+     "Do"
     ],
     "answer": 0,
     "note": "Teklif sorusu → Shall we."
@@ -535,48 +535,48 @@
     "type": "choice",
     "text": "By 2030, most cars ___ electric.",
     "options": [
-     "will have become",
-     "will became",
      "will have become to",
-     "have become will"
+     "have become will",
+     "will became",
+     "will have become"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "will have + V3."
    },
    {
     "type": "choice",
     "text": "She ___ the report by Friday.",
     "options": [
-     "will have submitted",
-     "will submitted",
      "will have submit",
-     "has submitted will"
+     "will have submitted",
+     "has submitted will",
+     "will submitted"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "by + gelecek nokta."
    },
    {
     "type": "choice",
     "text": "By the time you read this, I ___ .",
     "options": [
-     "will have left",
      "will leave",
      "have left",
+     "will have left",
      "would have leave"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Gelecekte tamamlanmış."
    },
    {
     "type": "choice",
     "text": "The mechanic got the car ___ again.",
     "options": [
+     "ran",
      "running",
-     "run",
      "to run",
-     "ran"
+     "run"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "get + nesne + -ing."
    },
    {
@@ -682,36 +682,36 @@
     "type": "choice",
     "text": "___ that the results are unreliable.",
     "options": [
-     "It is obvious",
-     "There is obvious",
      "Is obvious",
+     "There is obvious",
+     "It is obvious",
      "That is obvious it"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Kişisiz kalıp → It is + sıfat + that."
    },
    {
     "type": "choice",
     "text": "It is often ___ that the system needs reform.",
     "options": [
-     "argued",
+     "to argue",
      "arguing",
-     "argue",
-     "to argue"
+     "argued",
+     "argue"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Edilgen üçüncü hâl."
    },
    {
     "type": "choice",
     "text": "I ___ tell you about the deadline.",
     "options": [
-     "did",
-     "do did",
      "was",
-     "have did"
+     "have did",
+     "did",
+     "do did"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Geçmişte vurgu → did + yalın fiil."
    },
    {
@@ -719,8 +719,8 @@
     "text": "___ there anything we can do?",
     "options": [
      "Isn't",
-     "Not is",
      "Doesn't",
+     "Not is",
      "Aren't"
     ],
     "answer": 0,
@@ -730,11 +730,11 @@
     "type": "gap",
     "text": "___ appears that the file was deleted.",
     "options": [
+     "That",
      "It",
-     "There",
-     "That"
+     "There"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Sahte özne it."
    }
   ]

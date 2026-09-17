@@ -23,7 +23,7 @@
         { "en": "He said that he was busy.", "tr": "Meşgul olduğunu söyledi.", "note": "am → was." },
         { "en": "She told me she would be late.", "tr": "Geç kalacağını söyledi bana.", "note": "tell kişi alır; will → would." },
         { "en": "They explained that the shop was closed.", "tr": "Dükkânın kapalı olduğunu açıkladılar.", "note": "explain de that alır." },
-        { "en": "I think you are right.", "tr": "Bence haklısın.", "note": "think'ten sonra that düşürülmüş." },
+        { "en": "I think we should wait.", "tr": "Bence beklemeliyiz.", "note": "think'ten sonra that düşürülmüş." },
         { "en": "The teacher said we could leave.", "tr": "Öğretmen çıkabileceğimizi söyledi.", "note": "can → could." }
       ],
       "mistakes": [

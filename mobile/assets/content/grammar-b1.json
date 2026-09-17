@@ -96,59 +96,59 @@
     "type": "choice",
     "text": "Visitors ___ sign in at reception.",
     "options": [
+     "are must",
      "must",
      "musts",
-     "must to",
-     "are must"
+     "must to"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Kural → must + yalın fiil."
    },
    {
     "type": "choice",
     "text": "You ___ touch the wires — it's dangerous.",
     "options": [
-     "mustn't",
      "don't have to",
      "needn't",
+     "mustn't",
      "may not to"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Yasak → mustn't."
    },
    {
     "type": "choice",
     "text": "It's Saturday, so you ___ get up early.",
     "options": [
+     "can't",
      "don't have to",
      "mustn't",
-     "can't",
      "shouldn't to"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Gerek yok → don't have to."
    },
    {
     "type": "choice",
     "text": "Take an umbrella; it ___ rain.",
     "options": [
-     "might",
-     "mights",
      "might to",
-     "is might"
+     "mights",
+     "is might",
+     "might"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "İhtimal → might."
    },
    {
     "type": "gap",
     "text": "You ___ worry, everything is ready.",
     "options": [
-     "needn't",
+     "don't need",
      "mustn't to",
-     "don't need"
+     "needn't"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "needn't + yalın fiil."
    }
   ]
@@ -244,59 +244,59 @@
     "type": "choice",
     "text": "When I was a child, I ___ play the piano.",
     "options": [
-     "could",
      "can",
-     "was can",
-     "could to"
+     "could",
+     "could to",
+     "was can"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Geçmiş genel yetenek."
    },
    {
     "type": "choice",
     "text": "The room was locked, but we ___ get in through the window.",
     "options": [
-     "were able to",
-     "could",
      "can",
+     "could",
+     "were able to",
      "are able"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Tek seferlik başarı."
    },
    {
     "type": "choice",
     "text": "She ___ have long hair.",
     "options": [
-     "used to",
-     "use to",
      "used",
-     "is used to"
+     "is used to",
+     "use to",
+     "used to"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Eski durum → used to."
    },
    {
     "type": "choice",
     "text": "I ___ understand a word he said.",
     "options": [
-     "couldn't",
      "could not to",
-     "can't",
-     "wasn't could"
+     "couldn't",
+     "wasn't could",
+     "can't"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Geçmişte yeteneğin yokluğu."
    },
    {
     "type": "gap",
     "text": "There ___ be a market on this street.",
     "options": [
+     "uses to",
      "used to",
-     "use to",
-     "uses to"
+     "use to"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "used to + yalın fiil."
    }
   ]
@@ -399,36 +399,36 @@
     "type": "choice",
     "text": "She ___ like spicy food.",
     "options": [
-     "doesn't",
      "don't",
+     "hasn't",
      "isn't",
-     "hasn't"
+     "doesn't"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Geniş zaman, üçüncü tekil."
    },
    {
     "type": "choice",
     "text": "We ___ watching the match right now.",
     "options": [
-     "aren't",
-     "don't",
      "haven't",
-     "won't"
+     "won't",
+     "don't",
+     "aren't"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Şimdiki zaman → be + not."
    },
    {
     "type": "choice",
     "text": "I ___ heard from him since May.",
     "options": [
-     "haven't",
+     "am not",
      "didn't",
      "don't",
-     "am not"
+     "haven't"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Present perfect → haven't + V3."
    },
    {
@@ -436,8 +436,8 @@
     "text": "They ___ arrive before eight.",
     "options": [
      "won't",
-     "don't will",
      "aren't will",
+     "don't will",
      "not will"
     ],
     "answer": 0,
@@ -544,12 +544,12 @@
     "type": "choice",
     "text": "By the time I got there, everyone ___ .",
     "options": [
-     "had left",
-     "has left",
      "left had",
-     "was left"
+     "was left",
+     "had left",
+     "has left"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Önce olan → had + V3."
    },
    {
@@ -557,8 +557,8 @@
     "text": "She ___ the book before she saw the film.",
     "options": [
      "had read",
-     "has read",
      "reads",
+     "has read",
      "was read"
     ],
     "answer": 0,
@@ -568,35 +568,35 @@
     "type": "choice",
     "text": "We ___ never been to Greece before last summer.",
     "options": [
-     "had",
+     "were",
      "have",
      "did",
-     "were"
+     "had"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Geçmiş bir noktadan öncesi."
    },
    {
     "type": "choice",
     "text": "He was tired because he ___ all night.",
     "options": [
-     "had worked",
      "has worked",
-     "works",
-     "had work"
+     "had worked",
+     "had work",
+     "works"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Sebep daha önce gerçekleşti."
    },
    {
     "type": "gap",
     "text": "The shop was closed; it ___ at six.",
     "options": [
+     "closes",
      "had closed",
-     "has closed",
-     "closes"
+     "has closed"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Kapanma daha önce olmuş."
    }
   ]
@@ -689,59 +689,59 @@
     "type": "choice",
     "text": "If I ___ rich, I would help more people.",
     "options": [
+     "would be",
      "were",
-     "am",
      "will be",
-     "would be"
+     "am"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Hayali durum → were."
    },
    {
     "type": "choice",
     "text": "If he studied harder, he ___ better marks.",
     "options": [
-     "would get",
-     "will get",
      "gets",
-     "would got"
+     "would got",
+     "will get",
+     "would get"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Sonuç → would + yalın fiil."
    },
    {
     "type": "choice",
     "text": "What ___ you say if she asked you?",
     "options": [
-     "would",
      "will",
      "do",
+     "would",
      "did"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Varsayımsal soru → would."
    },
    {
     "type": "choice",
     "text": "If we ___ a car, we could visit them.",
     "options": [
-     "had",
-     "have",
+     "will have",
      "would have",
-     "will have"
+     "have",
+     "had"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "if'li cümlecikte geçmiş biçim."
    },
    {
     "type": "gap",
     "text": "I would call her if I ___ her number.",
     "options": [
+     "would know",
      "knew",
-     "know",
-     "would know"
+     "know"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "İkinci tip koşul."
    }
   ]
@@ -836,24 +836,24 @@
     "type": "choice",
     "text": "The road ___ repaired next month.",
     "options": [
-     "will be",
      "will",
      "is will",
+     "will be",
      "will been"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "will + be + V3."
    },
    {
     "type": "choice",
     "text": "Tickets ___ bought online.",
     "options": [
-     "can be",
      "can",
+     "are can",
      "can being",
-     "are can"
+     "can be"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Kip + be + V3."
    },
    {
@@ -861,9 +861,9 @@
     "text": "My wallet ___ on the bus.",
     "options": [
      "got stolen",
-     "got steal",
+     "was steal",
      "get stolen",
-     "was steal"
+     "got steal"
     ],
     "answer": 0,
     "note": "get + V3, geçmişte got."
@@ -873,9 +873,9 @@
     "text": "This is a photo ___ in 1975.",
     "options": [
      "taken",
+     "takes",
      "took",
-     "taking",
-     "takes"
+     "taking"
     ],
     "answer": 0,
     "note": "Arkadan niteleyen üçüncü hâl."
@@ -885,8 +885,8 @@
     "text": "The report ___ be finished by Friday.",
     "options": [
      "must",
-     "must to",
-     "musts"
+     "musts",
+     "must to"
     ],
     "answer": 0,
     "note": "must + be + V3."
@@ -987,8 +987,8 @@
     "text": "Is this pen ___ ?",
     "options": [
      "yours",
-     "your",
      "you",
+     "your",
      "yourself"
     ],
     "answer": 0,
@@ -998,12 +998,12 @@
     "type": "choice",
     "text": "He cut ___ while cooking.",
     "options": [
+     "he",
      "himself",
-     "him",
      "his",
-     "he"
+     "him"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Özne = nesne → himself."
    },
    {
@@ -1011,9 +1011,9 @@
     "text": "The two brothers look after ___ .",
     "options": [
      "each other",
+     "theirs",
      "themselves each",
-     "them",
-     "theirs"
+     "them"
     ],
     "answer": 0,
     "note": "Karşılıklı → each other."
@@ -1022,23 +1022,23 @@
     "type": "choice",
     "text": "Some like tea, ___ prefer coffee.",
     "options": [
-     "others",
+     "the other one",
      "other",
      "another",
-     "the other one"
+     "others"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Belirsiz çoğul → others."
    },
    {
     "type": "gap",
     "text": "Our car is faster than ___ .",
     "options": [
+     "them",
      "theirs",
-     "their",
-     "them"
+     "their"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "İsim yok → theirs."
    }
   ]
@@ -1132,48 +1132,48 @@
     "type": "choice",
     "text": "Did you buy ___ ?",
     "options": [
-     "anything nice",
-     "nice anything",
      "any nice thing not",
-     "nice something"
+     "nice anything",
+     "nice something",
+     "anything nice"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Zamir önce, sıfat sonra."
    },
    {
     "type": "choice",
     "text": "There was ___ in the fridge.",
     "options": [
-     "nothing fresh",
+     "not fresh anything",
      "fresh nothing",
      "no fresh nothing",
-     "not fresh anything"
+     "nothing fresh"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "nothing + sıfat."
    },
    {
     "type": "choice",
     "text": "I met ___ at the conference.",
     "options": [
-     "someone famous",
-     "famous someone",
+     "someone of famous",
      "a famous someone",
-     "someone of famous"
+     "someone famous",
+     "famous someone"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "someone + sıfat."
    },
    {
     "type": "choice",
     "text": "___ your coffee.",
     "options": [
-     "Here is",
-     "Here are",
      "Here it is the",
-     "Here have"
+     "Here have",
+     "Here is",
+     "Here are"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Tekil → Here is."
    },
    {
@@ -1181,8 +1181,8 @@
     "text": "___ the keys you lost.",
     "options": [
      "Here are",
-     "Here is",
-     "Here have"
+     "Here have",
+     "Here is"
     ],
     "answer": 0,
     "note": "keys çoğul → Here are."
@@ -1278,12 +1278,12 @@
     "type": "choice",
     "text": "___ , we found the keys.",
     "options": [
-     "Luckily",
+     "With luck of",
      "Lucky",
      "Luck",
-     "With luck of"
+     "Luckily"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Tavır zarfı cümle başında."
    },
    {
@@ -1291,9 +1291,9 @@
     "text": "This laptop is ___ lighter than mine.",
     "options": [
      "much",
-     "very",
+     "so much of",
      "too",
-     "so much of"
+     "very"
     ],
     "answer": 0,
     "note": "Karşılaştırmayı much güçlendirir."
@@ -1303,9 +1303,9 @@
     "text": "The film was ___ worse than the book.",
     "options": [
      "far",
+     "quite a",
      "very",
-     "too",
-     "quite a"
+     "too"
     ],
     "answer": 0,
     "note": "far + karşılaştırma."
@@ -1314,23 +1314,23 @@
     "type": "choice",
     "text": "___ , he never got the letter.",
     "options": [
+     "In apparently",
      "Apparently",
-     "Apparent",
      "Appear",
-     "In apparently"
+     "Apparent"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Aktarım → Apparently."
    },
    {
     "type": "gap",
     "text": "Today is ___ colder than yesterday.",
     "options": [
-     "even",
      "very",
-     "so"
+     "so",
+     "even"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "even + karşılaştırma."
    }
   ]
@@ -1425,24 +1425,24 @@
     "type": "choice",
     "text": "I promised ___ late again.",
     "options": [
-     "not to be",
-     "to not be",
      "to be not",
-     "not being"
+     "to not be",
+     "not being",
+     "not to be"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "not + to + fiil."
    },
    {
     "type": "choice",
     "text": "It is important ___ the children to sleep early.",
     "options": [
-     "for",
-     "to",
      "of",
-     "that"
+     "for",
+     "that",
+     "to"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Farklı özne → for."
    },
    {
@@ -1451,8 +1451,8 @@
     "options": [
      "is to",
      "is for",
-     "is going",
-     "will to"
+     "will to",
+     "is going"
     ],
     "answer": 0,
     "note": "Resmî plan → be to."
@@ -1461,23 +1461,23 @@
     "type": "choice",
     "text": "He told us ___ the door open.",
     "options": [
+     "don't leave",
      "not to leave",
-     "to not leave",
      "not leaving",
-     "don't leave"
+     "to not leave"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Dolaylı olumsuz emir."
    },
    {
     "type": "gap",
     "text": "We are waiting ___ the bus to arrive.",
     "options": [
+     "that",
      "for",
-     "to",
-     "that"
+     "to"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "for + özne + to."
    }
   ]
@@ -1584,36 +1584,36 @@
     "type": "choice",
     "text": "Do you know ___ the meeting starts?",
     "options": [
-     "when",
-     "when to",
      "when does",
-     "that when"
+     "when to",
+     "that when",
+     "when"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Farklı özne → tam cümlecik."
    },
    {
     "type": "choice",
     "text": "She showed me ___ the machine.",
     "options": [
-     "how to use",
      "how using",
      "how I use to",
+     "how to use",
      "how do I use"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "how to + yalın fiil."
    },
    {
     "type": "choice",
     "text": "I wonder ___ he didn't call.",
     "options": [
-     "why",
      "why to",
+     "that why",
      "why does",
-     "that why"
+     "why"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Sebep + tam cümlecik."
    },
    {
@@ -1621,8 +1621,8 @@
     "text": "That café is ___ we first met.",
     "options": [
      "where",
-     "which",
-     "what"
+     "what",
+     "which"
     ],
     "answer": 0,
     "note": "Yer bildiren öncülsüz where."
@@ -1720,8 +1720,8 @@
     "text": "My boss ___ me to finish the report.",
     "options": [
      "asked",
-     "said",
      "spoke",
+     "said",
      "told to"
     ],
     "answer": 0,
@@ -1731,36 +1731,36 @@
     "type": "choice",
     "text": "They told us ___ in the corridor.",
     "options": [
-     "not to wait",
-     "to not wait",
+     "not waiting",
      "don't wait",
-     "not waiting"
+     "to not wait",
+     "not to wait"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "not + to."
    },
    {
     "type": "choice",
     "text": "She asked me what time ___ .",
     "options": [
+     "do I finish",
      "I finished",
      "did I finish",
-     "do I finish",
      "finished I"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Aktarılan soruda düz sıra."
    },
    {
     "type": "choice",
     "text": "He asked ___ I wanted a lift.",
     "options": [
+     "to",
      "if",
      "that",
-     "what",
-     "to"
+     "what"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Evet-hayır sorusu → if."
    },
    {
@@ -1866,59 +1866,59 @@
     "type": "choice",
     "text": "My father, ___ is 70, still works.",
     "options": [
-     "who",
-     "that",
      "which",
-     "what"
+     "who",
+     "what",
+     "that"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Virgüllü yapıda who."
    },
    {
     "type": "choice",
     "text": "The film ___ we watched was boring.",
     "options": [
-     "that",
      "what",
      "who",
+     "that",
      "whose"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Nesne konumunda that (düşürülebilir de)."
    },
    {
     "type": "choice",
     "text": "That is the man I told you ___ .",
     "options": [
+     "of that",
      "about",
      "about him",
-     "of that",
      "for about"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Edat sonda kalır."
    },
    {
     "type": "choice",
     "text": "Our office, ___ moved last year, is near the station.",
     "options": [
-     "which",
-     "that",
      "who",
-     "where"
+     "that",
+     "where",
+     "which"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Cansız + virgüllü → which."
    },
    {
     "type": "gap",
     "text": "Who did you go to the concert ___ ?",
     "options": [
-     "with",
      "with them",
+     "with",
      "together"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Edat cümle sonunda."
    }
   ]
@@ -2014,9 +2014,9 @@
     "text": "The people ___ outside are waiting for tickets.",
     "options": [
      "standing",
-     "stand",
+     "are standing",
      "stood",
-     "are standing"
+     "stand"
     ],
     "answer": 0,
     "note": "İsmi niteleyen -ing."
@@ -2025,24 +2025,24 @@
     "type": "choice",
     "text": "___ the news, she called her family.",
     "options": [
-     "Hearing",
-     "Heard",
+     "She heard",
      "To hear",
-     "She heard"
+     "Heard",
+     "Hearing"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Cümle başında -ing."
    },
    {
     "type": "choice",
     "text": "Who is the woman ___ the piano?",
     "options": [
-     "playing",
      "plays",
+     "played",
      "is playing",
-     "played"
+     "playing"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "who is playing'in kısası."
    },
    {
@@ -2050,9 +2050,9 @@
     "text": "___ for hours, they finally reached the village.",
     "options": [
      "Having walked",
-     "Walked",
      "To walk",
-     "They walked"
+     "They walked",
+     "Walked"
     ],
     "answer": 0,
     "note": "Önce biten iş → having + V3."

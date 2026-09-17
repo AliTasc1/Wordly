@@ -23,6 +23,7 @@ Sorun bulursa çıkış kodu 1 döner.
 
 import csv
 import json
+import random
 import re
 import sys
 from pathlib import Path
@@ -207,6 +208,34 @@ def check_lesson(lesson: dict, codes: set[str], seen: dict) -> list[str]:
     return problems
 
 
+def shuffled(lessons: list[dict]) -> list[dict]:
+    """Seçenekleri karıştırarak dersleri kopyalar.
+
+    Kaynak dosyalarda doğru cevap her zaman ilk sırada duruyor: yazarken ve
+    gözden geçirirken cevabı aramak zorunda kalmamak için. Ama bu hâliyle
+    dağıtılırsa öğrenci kalıbı iki soruda çözer ve seçenekleri okumayı bırakır,
+    yani alıştırma hiçbir şey ölçmez olur.
+
+    Karıştırma derste değil çıktıda yapılıyor. Tohum ders kimliği ile sorunun
+    sırasından üretiliyor; böylece her derleme aynı sonucu veriyor ve çıktı
+    dosyası durduk yere değişmiyor. Uygulama isterse çalışma anında yeniden
+    karıştırabilir — bu katman yalnızca dağıtılan verinin tek başına da sağlam
+    olmasını güvenceye alıyor.
+    """
+    out = []
+    for lesson in lessons:
+        copy = dict(lesson)
+        tasks = []
+        for index, task in enumerate(lesson.get("exercises", [])):
+            options = list(task["options"])
+            answer = options[task["answer"]]
+            random.Random(f"{lesson['id']}#{index}").shuffle(options)
+            tasks.append({**task, "options": options, "answer": options.index(answer)})
+        copy["exercises"] = tasks
+        out.append(copy)
+    return out
+
+
 def build(level: str, groups: dict) -> tuple[int, list[str]]:
     items = groups.get(level, [])
     inherited = load_inherited(level)
@@ -256,10 +285,42 @@ def build(level: str, groups: dict) -> tuple[int, list[str]]:
     if lessons and not problems:
         OUT.mkdir(parents=True, exist_ok=True)
         (OUT / f"grammar-{level}.json").write_text(
-            json.dumps(lessons, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
+            json.dumps(shuffled(lessons), ensure_ascii=False, indent=1) + "\n",
+            encoding="utf-8"
         )
 
     return len(lessons), problems
+
+
+def check_across_levels() -> list[str]:
+    """Seviyeler arası tekrarlar.
+
+    Aynı cümle iki derste geçerse öğrenci ikincisinde düşünmeden geçer. Asıl
+    tehlikeli olan alıştırma tekrarı: aynı soru metni iki derste farklı doğru
+    cevapla durabilir ("Would you like ___ coffee?" A1'de some, A2'de another)
+    ve öğrenci hangisini hatırlarsa onu yazar. Seviye içi denetim bunu göremez.
+    """
+    examples: dict[str, list[str]] = {}
+    prompts: dict[str, list[str]] = {}
+    for level in LEVELS:
+        for lesson in load_lessons(level):
+            for example in lesson.get("examples", []):
+                examples.setdefault(example["en"].strip().lower(), []).append(
+                    lesson["id"]
+                )
+            for task in lesson.get("exercises", []):
+                prompts.setdefault(task["text"].strip().lower(), []).append(
+                    lesson["id"]
+                )
+
+    problems = []
+    for label, table in (("örnek cümle", examples), ("alıştırma metni", prompts)):
+        for text, where in table.items():
+            if len(where) > 1:
+                problems.append(
+                    f"iki derste aynı {label}: {text!r} → {', '.join(where)}"
+                )
+    return problems
 
 
 def main() -> int:
@@ -284,6 +345,8 @@ def main() -> int:
             f"{level.upper():7s} {len(items):9d} {len(inherited):12d} {count:6d} "
             f"{len(covered & owed):12d} {len(deferred):11d}"
         )
+    if not sys.argv[1:]:
+        all_problems.extend(check_across_levels())
     total_problems = len(all_problems)
     if all_problems:
         print()

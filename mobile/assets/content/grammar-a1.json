@@ -87,12 +87,12 @@
     "type": "choice",
     "text": "I ___ a student.",
     "options": [
-     "am",
-     "is",
      "are",
-     "be"
+     "am",
+     "be",
+     "is"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "I ile her zaman am kullanılır."
    },
    {
@@ -100,9 +100,9 @@
     "text": "My brother ___ ten years old.",
     "options": [
      "is",
-     "am",
      "are",
-     "be"
+     "be",
+     "am"
     ],
     "answer": 0,
     "note": "Tekil bir kişi (he) → is."
@@ -112,9 +112,9 @@
     "text": "You ___ very kind.",
     "options": [
      "are",
-     "is",
      "am",
-     "be"
+     "be",
+     "is"
     ],
     "answer": 0,
     "note": "you tekil de olsa are alır."
@@ -123,24 +123,24 @@
     "type": "choice",
     "text": "The books ___ on the table.",
     "options": [
-     "are",
      "is",
+     "be",
      "am",
-     "be"
+     "are"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "books çoğul → are."
    },
    {
     "type": "choice",
     "text": "It ___ cold today.",
     "options": [
-     "is",
-     "are",
      "am",
-     "be"
+     "be",
+     "are",
+     "is"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Hava durumunda özne it'tir."
    },
    {
@@ -148,8 +148,8 @@
     "text": "Ayse and I ___ friends.",
     "options": [
      "are",
-     "is",
-     "am"
+     "am",
+     "is"
     ],
     "answer": 0,
     "note": "\"X and I\" = we, yani are."
@@ -242,59 +242,59 @@
     "type": "choice",
     "text": "She ___ my teacher. (olumsuz)",
     "options": [
-     "isn't",
      "aren't",
      "not is",
+     "isn't",
      "doesn't"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "she → is not → isn't."
    },
    {
     "type": "choice",
     "text": "___ they at school?",
     "options": [
-     "Are",
+     "Do",
      "Is",
      "Am",
-     "Do"
+     "Are"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "they → are, soruda başa geçer."
    },
    {
     "type": "choice",
     "text": "I ___ hungry.",
     "options": [
-     "am not",
+     "don't",
      "not am",
      "isn't",
-     "don't"
+     "am not"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "I am not; \"amn't\" diye bir biçim yok."
    },
    {
     "type": "choice",
     "text": "___ this your bag?",
     "options": [
-     "Is",
-     "Are",
      "Am",
+     "Are",
+     "Is",
      "Does"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "this tekil → is."
    },
    {
     "type": "gap",
     "text": "We ___ from the same city. (olumsuz)",
     "options": [
-     "aren't",
      "isn't",
+     "aren't",
      "am not"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "we → are not → aren't."
    }
   ]
@@ -383,36 +383,36 @@
     "type": "choice",
     "text": "She has ___ umbrella.",
     "options": [
-     "an",
-     "a",
      "the",
-     "-"
+     "-",
+     "an",
+     "a"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "umbrella ünlü sesiyle başlar."
    },
    {
     "type": "choice",
     "text": "I bought a shirt. ___ shirt was cheap.",
     "options": [
-     "The",
      "A",
      "An",
+     "The",
      "-"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "İkinci anışta artık belli → the."
    },
    {
     "type": "choice",
     "text": "He is ___ honest man.",
     "options": [
-     "an",
-     "a",
      "the",
-     "-"
+     "a",
+     "-",
+     "an"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "honest'ın h'si okunmaz."
    },
    {
@@ -420,8 +420,8 @@
     "text": "Can you close ___ window?",
     "options": [
      "the",
-     "a",
      "an",
+     "a",
      "-"
     ],
     "answer": 0,
@@ -431,11 +431,11 @@
     "type": "gap",
     "text": "My father is ___ doctor.",
     "options": [
-     "a",
      "an",
-     "the"
+     "the",
+     "a"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "doctor ünsüz sesiyle başlar."
    }
   ]
@@ -528,24 +528,24 @@
     "type": "choice",
     "text": "___ is my seat.",
     "options": [
-     "This",
      "These",
-     "Those",
-     "They"
+     "They",
+     "This",
+     "Those"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Tekil ve yakın → This."
    },
    {
     "type": "choice",
     "text": "___ are my parents.",
     "options": [
-     "These",
-     "This",
      "That",
+     "This",
+     "These",
      "It"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Çoğul → These."
    },
    {
@@ -553,9 +553,9 @@
     "text": "Look at ___ birds in the sky.",
     "options": [
      "those",
-     "that",
+     "it",
      "this",
-     "it"
+     "that"
     ],
     "answer": 0,
     "note": "Uzak ve çoğul → those."
@@ -566,8 +566,8 @@
     "options": [
      "Is",
      "Are",
-     "Am",
-     "Do"
+     "Do",
+     "Am"
     ],
     "answer": 0,
     "note": "this tekil → is."
@@ -576,11 +576,11 @@
     "type": "gap",
     "text": "___ apples are fresh. (yakındaki)",
     "options": [
+     "Those",
      "These",
-     "This",
-     "Those"
+     "This"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "apples çoğul, yakın → These."
    }
   ]
@@ -674,12 +674,12 @@
     "type": "choice",
     "text": "This is ___ house. (biz)",
     "options": [
-     "our",
      "us",
+     "our",
      "we",
      "ours"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "İsmin önünde our."
    },
    {
@@ -698,24 +698,24 @@
     "type": "choice",
     "text": "I like ___ new haircut. (o, kadın)",
     "options": [
-     "her",
+     "him",
      "she",
-     "hers",
-     "him"
+     "her",
+     "hers"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "İsmin önünde her."
    },
    {
     "type": "choice",
     "text": "We invited ___ to dinner. (onlar)",
     "options": [
+     "theirs",
      "them",
-     "their",
      "they",
-     "theirs"
+     "their"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Fiilin nesnesi them."
    },
    {
@@ -723,8 +723,8 @@
     "text": "___ brother works with me. (o, erkek)",
     "options": [
      "His",
-     "Him",
-     "He"
+     "He",
+     "Him"
     ],
     "answer": 0,
     "note": "İsmin önünde his."
@@ -819,59 +819,59 @@
     "type": "choice",
     "text": "___ a cat under the table.",
     "options": [
-     "There is",
-     "There are",
      "It is",
-     "Have"
+     "There is",
+     "Have",
+     "There are"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "a cat tekil → There is."
    },
    {
     "type": "choice",
     "text": "___ many people in the street.",
     "options": [
-     "There are",
      "There is",
      "It is",
+     "There are",
      "Has"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "people çoğuldur."
    },
    {
     "type": "choice",
     "text": "___ there any bread?",
     "options": [
-     "Is",
+     "Has",
      "Are",
-     "Do",
-     "Has"
+     "Is",
+     "Do"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "bread sayılamaz → tekil."
    },
    {
     "type": "choice",
     "text": "There ___ any buses after midnight.",
     "options": [
-     "aren't",
      "isn't",
+     "aren't",
      "don't",
      "haven't"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "buses çoğul → aren't."
    },
    {
     "type": "gap",
     "text": "___ a good restaurant near the hotel.",
     "options": [
-     "There is",
      "There are",
+     "There is",
      "It is"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "restaurant tekil."
    }
   ]
@@ -965,36 +965,36 @@
     "type": "choice",
     "text": "We need ___ help.",
     "options": [
-     "some",
+     "a",
      "any",
-     "no any",
-     "a"
+     "some",
+     "no any"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Olumlu cümle → some."
    },
    {
     "type": "choice",
     "text": "She doesn't have ___ friends here.",
     "options": [
-     "any",
-     "some",
+     "a",
      "no",
-     "a"
+     "some",
+     "any"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Olumsuz cümle → any."
    },
    {
     "type": "choice",
     "text": "Is there ___ water in the bottle?",
     "options": [
-     "any",
      "some",
      "a",
-     "no any"
+     "no any",
+     "any"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Soruda any."
    },
    {
@@ -1002,9 +1002,9 @@
     "text": "There are ___ buses on Sunday.",
     "options": [
      "no",
-     "any",
+     "some not",
      "not",
-     "some not"
+     "any"
     ],
     "answer": 0,
     "note": "no tek başına olumsuzluk taşır."
@@ -1013,11 +1013,11 @@
     "type": "gap",
     "text": "Would you like ___ coffee?",
     "options": [
-     "some",
      "any",
-     "no"
+     "no",
+     "some"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "İkram sorusunda some kalır."
    }
   ]
@@ -1112,36 +1112,36 @@
     "type": "choice",
     "text": "My sister ___ in a hospital.",
     "options": [
-     "works",
      "work",
-     "working",
-     "is work"
+     "works",
+     "is work",
+     "working"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "she → works."
    },
    {
     "type": "choice",
     "text": "We ___ dinner at seven.",
     "options": [
-     "have",
-     "has",
      "haves",
-     "having"
+     "having",
+     "have",
+     "has"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "we → yalın fiil."
    },
    {
     "type": "choice",
     "text": "He ___ to the gym twice a week.",
     "options": [
-     "goes",
      "go",
+     "going",
      "gos",
-     "going"
+     "goes"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "go → goes."
    },
    {
@@ -1149,8 +1149,8 @@
     "text": "The shop ___ at nine every day.",
     "options": [
      "opens",
-     "open",
      "opening",
+     "open",
      "is open"
     ],
     "answer": 0,
@@ -1254,48 +1254,48 @@
     "type": "choice",
     "text": "She ___ watch television.",
     "options": [
+     "not",
      "doesn't",
-     "don't",
      "isn't",
-     "not"
+     "don't"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "she → doesn't."
    },
    {
     "type": "choice",
     "text": "___ they live in Izmir?",
     "options": [
-     "Do",
-     "Does",
      "Are",
-     "Is"
+     "Do",
+     "Is",
+     "Does"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "they → Do."
    },
    {
     "type": "choice",
     "text": "My phone ___ work.",
     "options": [
-     "doesn't",
      "don't",
      "isn't",
-     "aren't"
+     "aren't",
+     "doesn't"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "phone = it → doesn't."
    },
    {
     "type": "choice",
     "text": "Does he ___ early?",
     "options": [
-     "get up",
-     "gets up",
      "got up",
-     "getting up"
+     "gets up",
+     "getting up",
+     "get up"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "does'tan sonra fiil yalın."
    },
    {
@@ -1401,59 +1401,59 @@
     "type": "choice",
     "text": "He ___ goes to bed before midnight.",
     "options": [
-     "usually",
-     "is usually",
      "usually is",
-     "does usually"
+     "is usually",
+     "does usually",
+     "usually"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Asıl fiilden önce."
    },
    {
     "type": "choice",
     "text": "My sister is ___ tired after work.",
     "options": [
-     "always",
      "always is",
      "does always",
-     "never not"
+     "never not",
+     "always"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "be'den sonra."
    },
    {
     "type": "choice",
     "text": "I ___ eat fast food.",
     "options": [
+     "never don't",
      "never",
-     "don't never",
      "not never",
-     "never don't"
+     "don't never"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "never olumsuzluğu kendi taşır."
    },
    {
     "type": "choice",
     "text": "The exam was ___ difficult.",
     "options": [
-     "really",
-     "real",
+     "very much",
      "reallly",
-     "very much"
+     "really",
+     "real"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Sıfatı güçlendiren zarf really."
    },
    {
     "type": "gap",
     "text": "They ___ visit us on Sundays.",
     "options": [
+     "do often be",
      "often",
-     "is often",
-     "do often be"
+     "is often"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Asıl fiilden önce."
    }
   ]
@@ -1547,9 +1547,9 @@
     "text": "Look! The bus ___ .",
     "options": [
      "is coming",
+     "is come",
      "comes",
-     "come",
-     "is come"
+     "come"
     ],
     "answer": 0,
     "note": "Şu an olan iş → is + -ing."
@@ -1560,8 +1560,8 @@
     "options": [
      "am waiting",
      "waiting",
-     "wait am",
-     "is waiting"
+     "is waiting",
+     "wait am"
     ],
     "answer": 0,
     "note": "I → am."
@@ -1571,8 +1571,8 @@
     "text": "They ___ football in the garden.",
     "options": [
      "are playing",
-     "is playing",
      "play are",
+     "is playing",
      "playing"
     ],
     "answer": 0,
@@ -1582,23 +1582,23 @@
     "type": "choice",
     "text": "She ___ a letter at the moment.",
     "options": [
-     "is writing",
-     "is writeing",
      "writes",
+     "is writeing",
+     "is writing",
      "write"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "write'ın sessiz e'si düşer."
    },
    {
     "type": "gap",
     "text": "We ___ television now.",
     "options": [
-     "are watching",
      "watch",
+     "are watching",
      "is watching"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "we → are + -ing."
    }
   ]
@@ -1692,48 +1692,48 @@
     "type": "choice",
     "text": "___ you speak Spanish?",
     "options": [
-     "Can",
-     "Do can",
+     "Does",
      "Are",
-     "Does"
+     "Can",
+     "Do can"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Kip fiil soruda başa geçer."
    },
    {
     "type": "choice",
     "text": "He ___ come to the party.",
     "options": [
-     "can't",
      "doesn't can",
+     "can't",
      "can not to",
      "isn't can"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Olumsuzu can't."
    },
    {
     "type": "choice",
     "text": "I can ___ very fast.",
     "options": [
-     "run",
-     "to run",
      "running",
-     "runs"
+     "runs",
+     "run",
+     "to run"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "can'dan sonra yalın fiil."
    },
    {
     "type": "choice",
     "text": "My little brother ___ read yet.",
     "options": [
+     "not can",
      "can't",
-     "cans not",
      "don't can",
-     "not can"
+     "cans not"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Tek olumsuzluk, can't."
    },
    {
@@ -1838,12 +1838,12 @@
     "type": "choice",
     "text": "___ the salt, please.",
     "options": [
-     "Pass",
+     "Passing",
      "You pass",
-     "To pass",
-     "Passing"
+     "Pass",
+     "To pass"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Emir kipi yalın fiille başlar."
    },
    {
@@ -1851,9 +1851,9 @@
     "text": "___ be late again.",
     "options": [
      "Don't",
+     "Doesn't",
      "Not",
-     "No",
-     "Doesn't"
+     "No"
     ],
     "answer": 0,
     "note": "Olumsuz emir → Don't."
@@ -1862,35 +1862,35 @@
     "type": "choice",
     "text": "___ meet at seven.",
     "options": [
-     "Let's",
-     "Let us to",
      "Lets to",
+     "Let us to",
+     "Let's",
      "Let"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Ortak öneri → Let's + yalın fiil."
    },
    {
     "type": "choice",
     "text": "___ your seatbelt.",
     "options": [
-     "Fasten",
-     "Fastens",
      "To fasten",
+     "Fastens",
+     "Fasten",
      "Fastening"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Yalın fiil."
    },
    {
     "type": "gap",
     "text": "___ forget your keys.",
     "options": [
-     "Don't",
+     "No",
      "Not",
-     "No"
+     "Don't"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Olumsuz emir."
    }
   ]
@@ -1992,12 +1992,12 @@
     "type": "choice",
     "text": "___ do you work?",
     "options": [
-     "Where",
      "What",
+     "How much",
      "Who",
-     "How much"
+     "Where"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Yer soruluyor → Where."
    },
    {
@@ -2005,9 +2005,9 @@
     "text": "Why ___ you angry?",
     "options": [
      "are",
-     "do",
      "does",
-     "is"
+     "is",
+     "do"
     ],
     "answer": 0,
     "note": "you → are."
@@ -2016,12 +2016,12 @@
     "type": "choice",
     "text": "___ does this bag cost?",
     "options": [
-     "How much",
      "How many",
      "What many",
+     "How much",
      "How old"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Fiyat → How much."
    },
    {
@@ -2030,8 +2030,8 @@
     "options": [
      "does",
      "do",
-     "is",
-     "are"
+     "are",
+     "is"
     ],
     "answer": 0,
     "note": "she → does."
@@ -2138,12 +2138,12 @@
     "type": "choice",
     "text": "We ___ at the cinema last night.",
     "options": [
-     "were",
-     "was",
      "are",
-     "did"
+     "did",
+     "were",
+     "was"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "we → were."
    },
    {
@@ -2151,9 +2151,9 @@
     "text": "He ___ his homework yesterday.",
     "options": [
      "finished",
+     "was finish",
      "finish",
-     "finishes",
-     "was finish"
+     "finishes"
     ],
     "answer": 0,
     "note": "Düzenli fiil → -ed."
@@ -2162,35 +2162,35 @@
     "type": "choice",
     "text": "I ___ my keys this morning.",
     "options": [
-     "lost",
      "losed",
-     "lose",
-     "was lose"
+     "lost",
+     "was lose",
+     "lose"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "lose → lost."
    },
    {
     "type": "choice",
     "text": "The weather ___ terrible on Sunday.",
     "options": [
+     "did",
      "was",
-     "were",
      "is",
-     "did"
+     "were"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "weather = it → was."
    },
    {
     "type": "gap",
     "text": "They ___ to Antalya last summer.",
     "options": [
-     "went",
+     "go",
      "goed",
-     "go"
+     "went"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "go → went."
    }
   ]
@@ -2285,9 +2285,9 @@
     "text": "Winter is ___ than autumn.",
     "options": [
      "colder",
-     "more cold",
      "coldest",
-     "the colder"
+     "the colder",
+     "more cold"
     ],
     "answer": 0,
     "note": "Tek heceli sıfat → -er."
@@ -2296,47 +2296,47 @@
     "type": "choice",
     "text": "This is ___ day of the year.",
     "options": [
+     "more long",
      "the longest",
      "longest",
-     "longer",
-     "more long"
+     "longer"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "En üstünlük → the + -est."
    },
    {
     "type": "choice",
     "text": "My new phone is ___ than the old one.",
     "options": [
-     "faster",
-     "more fast",
      "fastest",
+     "more fast",
+     "faster",
      "fast"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Karşılaştırma → -er + than."
    },
    {
     "type": "choice",
     "text": "That was ___ film of the year.",
     "options": [
-     "the worst",
+     "the worse",
      "the baddest",
-     "worse",
-     "the worse"
+     "the worst",
+     "worse"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "bad → the worst; A1'de henüz görülmemiş bir zaman kullanmamak için cümle yalın tutuldu."
    },
    {
     "type": "gap",
     "text": "This exercise is ___ than the first one.",
     "options": [
-     "easier",
+     "more easy",
      "easyer",
-     "more easy"
+     "easier"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "y → ier."
    }
   ]
@@ -2430,9 +2430,9 @@
     "text": "The cat is ___ the box.",
     "options": [
      "in",
-     "on",
      "at",
-     "to"
+     "to",
+     "on"
     ],
     "answer": 0,
     "note": "Kutunun içi → in."
@@ -2441,12 +2441,12 @@
     "type": "choice",
     "text": "We have a meeting ___ Friday.",
     "options": [
+     "to",
      "on",
      "in",
-     "at",
-     "to"
+     "at"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Gün → on."
    },
    {
@@ -2454,8 +2454,8 @@
     "text": "I wake up ___ six o'clock.",
     "options": [
      "at",
-     "in",
      "on",
+     "in",
      "by"
     ],
     "answer": 0,
@@ -2465,23 +2465,23 @@
     "type": "choice",
     "text": "She was born ___ 1998.",
     "options": [
-     "in",
-     "on",
      "at",
-     "from"
+     "in",
+     "from",
+     "on"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Yıl → in."
    },
    {
     "type": "gap",
     "text": "Your book is ___ the shelf.",
     "options": [
-     "on",
      "in",
+     "on",
      "at"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Raf bir yüzeydir → on."
    }
   ]
@@ -2582,59 +2582,59 @@
     "type": "choice",
     "text": "I was tired, ___ I finished the work.",
     "options": [
-     "but",
-     "and so",
+     "or",
      "because",
-     "or"
+     "and so",
+     "but"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Beklenmedik karşıtlık → but."
    },
    {
     "type": "choice",
     "text": "She stayed home ___ she was ill.",
     "options": [
-     "because",
-     "but",
      "or",
-     "when to"
+     "but",
+     "when to",
+     "because"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Sebep → because."
    },
    {
     "type": "choice",
     "text": "Would you like tea ___ coffee?",
     "options": [
-     "or",
+     "because",
      "and",
-     "but",
-     "because"
+     "or",
+     "but"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Seçenek → or."
    },
    {
     "type": "choice",
     "text": "Text me ___ you get home.",
     "options": [
-     "when",
      "but",
      "or",
-     "because of"
+     "because of",
+     "when"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Zaman → when."
    },
    {
     "type": "gap",
     "text": "I know ___ you are busy today.",
     "options": [
-     "that",
      "what",
-     "which"
+     "which",
+     "that"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "know, think ve hope'tan sonra that gelir; günlük dilde düşürülebilir."
    }
   ]
@@ -2729,48 +2729,48 @@
     "type": "choice",
     "text": "I want ___ a new laptop.",
     "options": [
-     "to buy",
-     "buy",
      "buying",
-     "to buying"
+     "to buy",
+     "to buying",
+     "buy"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "want + to + yalın fiil."
    },
    {
     "type": "choice",
     "text": "You need ___ more water.",
     "options": [
-     "to drink",
-     "drink",
      "drinking",
-     "drinks"
+     "drinks",
+     "drink",
+     "to drink"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "need + to."
    },
    {
     "type": "choice",
     "text": "She wants ___ to help her.",
     "options": [
-     "us",
      "we",
+     "us",
      "our",
      "ours"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Araya giren kişi nesne biçiminde olur."
    },
    {
     "type": "choice",
     "text": "Would you like ___ something?",
     "options": [
-     "to eat",
      "eat",
      "eating",
+     "to eat",
      "ate"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "would like + to."
    },
    {
@@ -2876,24 +2876,24 @@
     "type": "choice",
     "text": "I enjoy ___ to music.",
     "options": [
-     "listening",
      "listen",
      "to listen",
-     "listens"
+     "listens",
+     "listening"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "enjoy + -ing."
    },
    {
     "type": "choice",
     "text": "She is interested in ___ photography.",
     "options": [
+     "learns",
      "learning",
      "learn",
-     "to learn",
-     "learns"
+     "to learn"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "in edatından sonra -ing."
    },
    {
@@ -2902,8 +2902,8 @@
     "options": [
      "sitting",
      "sit",
-     "to sitting",
-     "sits"
+     "sits",
+     "to sitting"
     ],
     "answer": 0,
     "note": "hate + -ing."
@@ -2912,23 +2912,23 @@
     "type": "choice",
     "text": "Thanks for ___ me.",
     "options": [
-     "helping",
      "help",
+     "helping",
      "to help",
      "helped"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "for edatı → -ing."
    },
    {
     "type": "gap",
     "text": "He loves ___ football at weekends.",
     "options": [
+     "to playing",
      "playing",
-     "play",
-     "to playing"
+     "play"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "love + -ing."
    }
   ]
@@ -3021,36 +3021,36 @@
     "type": "choice",
     "text": "___ is waiting for you outside.",
     "options": [
-     "Somebody",
-     "Anybody",
+     "Everybody are",
      "Nobody not",
-     "Everybody are"
+     "Anybody",
+     "Somebody"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Olumlu cümle → Somebody."
    },
    {
     "type": "choice",
     "text": "I don't need ___ .",
     "options": [
+     "everything not",
      "anything",
-     "nothing",
      "something not",
-     "everything not"
+     "nothing"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Olumsuz cümle → anything."
    },
    {
     "type": "choice",
     "text": "___ answered the phone.",
     "options": [
+     "Nothing",
      "Nobody",
-     "Not anybody",
      "Anybody not",
-     "Nothing"
+     "Not anybody"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Kimse yanıtlamadı → Nobody."
    },
    {
@@ -3058,9 +3058,9 @@
     "text": "Everybody ___ here now.",
     "options": [
      "is",
+     "have",
      "are",
-     "were",
-     "have"
+     "were"
     ],
     "answer": 0,
     "note": "Belgisiz zamirler tekildir."
@@ -3069,11 +3069,11 @@
     "type": "gap",
     "text": "Did you go ___ last weekend?",
     "options": [
-     "anywhere",
      "somewhere not",
+     "anywhere",
      "nowhere not"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Soruda any-."
    }
   ]
@@ -3167,59 +3167,59 @@
     "type": "choice",
     "text": "What time do you ___ in the morning?",
     "options": [
-     "get up",
      "get on",
+     "get up",
      "get off",
      "get in"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Yataktan kalkmak → get up."
    },
    {
     "type": "choice",
     "text": "I am looking ___ my glasses.",
     "options": [
+     "on",
      "for",
-     "at",
      "to",
-     "on"
+     "at"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "look for = aramak."
    },
    {
     "type": "choice",
     "text": "It is cold. ___ your jacket.",
     "options": [
-     "Put on",
      "Put in",
-     "Put off",
-     "Put up"
+     "Put up",
+     "Put on",
+     "Put off"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "put on = giymek."
    },
    {
     "type": "choice",
     "text": "The TV is loud. Turn ___ down.",
     "options": [
-     "it",
-     "on it",
      "down it",
-     "the it"
+     "it",
+     "the it",
+     "on it"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Zamir araya girer: turn it down."
    },
    {
     "type": "gap",
     "text": "We ___ the train at Ankara.",
     "options": [
-     "got off",
      "got up",
+     "got off",
      "got in off"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "get off = inmek."
    }
   ]

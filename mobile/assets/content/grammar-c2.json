@@ -89,48 +89,48 @@
     "type": "choice",
     "text": "Rarely ___ such a talented group.",
     "options": [
-     "do we see",
+     "see we",
      "we see",
      "we do see",
-     "see we"
+     "do we see"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Devrik düzen → yardımcı + özne."
    },
    {
     "type": "choice",
     "text": "Not until later ___ what had happened.",
     "options": [
-     "did we learn",
-     "we learned",
+     "learned we",
      "we did learn",
-     "learned we"
+     "did we learn",
+     "we learned"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Not until + devrik."
    },
    {
     "type": "choice",
     "text": "No sooner had they arrived ___ the meeting started.",
     "options": [
-     "than",
-     "when",
      "then",
-     "that"
+     "that",
+     "than",
+     "when"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "No sooner … than."
    },
    {
     "type": "choice",
     "text": "She has never been late. — ___ .",
     "options": [
-     "Neither have I",
-     "Neither I have",
      "So have I not",
-     "Either have I"
+     "Neither have I",
+     "Either have I",
+     "Neither I have"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Olumsuz onay → Neither + yardımcı + özne."
    },
    {
@@ -138,8 +138,8 @@
     "text": "Little ___ that the deal had collapsed.",
     "options": [
      "did he know",
-     "he knew",
-     "knew he"
+     "knew he",
+     "he knew"
     ],
     "answer": 0,
     "note": "Little başta → devrik düzen."
@@ -243,59 +243,59 @@
     "type": "choice",
     "text": "___ it not for her help, we would have failed.",
     "options": [
+     "If were",
      "Were",
      "Was",
-     "If were",
      "Had were"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Şimdiki koşulda were."
    },
    {
     "type": "choice",
     "text": "___ it not been for the traffic, we would have arrived earlier.",
     "options": [
-     "Had",
      "Were",
+     "Would have",
      "If had",
-     "Would have"
+     "Had"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Geçmişte had."
    },
    {
     "type": "choice",
     "text": "If only I ___ the warning signs.",
     "options": [
-     "had noticed",
+     "have noticed",
      "noticed",
      "would notice",
-     "have noticed"
+     "had noticed"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "if only + had + V3."
    },
    {
     "type": "choice",
     "text": "If it ___ not for the rain, the match would continue.",
     "options": [
-     "were",
-     "was",
+     "had been",
      "is",
-     "had been"
+     "was",
+     "were"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Şimdiki hayali koşul → were."
    },
    {
     "type": "gap",
     "text": "Had it not been for you, I ___ have managed.",
     "options": [
-     "wouldn't",
+     "didn't",
      "won't",
-     "didn't"
+     "wouldn't"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Geçmiş sonuç → would have."
    }
   ]
@@ -390,12 +390,12 @@
     "type": "choice",
     "text": "By December she ___ for the company for a decade.",
     "options": [
+     "has been working",
      "will have been working",
-     "will be working",
      "will have worked been",
-     "has been working"
+     "will be working"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Gelecekte süre."
    },
    {
@@ -403,9 +403,9 @@
     "text": "___ they have completed the audit by then?",
     "options": [
      "Will",
-     "Do",
+     "Are",
      "Have",
-     "Are"
+     "Do"
     ],
     "answer": 0,
     "note": "Future perfect sorusu."
@@ -416,8 +416,8 @@
     "options": [
      "Had",
      "Did",
-     "Were have",
-     "Have been"
+     "Have been",
+     "Were have"
     ],
     "answer": 0,
     "note": "Past perfect progressive sorusu."
@@ -426,23 +426,23 @@
     "type": "choice",
     "text": "By 2035 the plant ___ operating for fifty years.",
     "options": [
+     "would have",
      "will have been",
-     "will be",
      "has been",
-     "would have"
+     "will be"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "will have been + -ing."
    },
    {
     "type": "gap",
     "text": "Had he ___ working there before the merger?",
     "options": [
-     "been",
      "be",
+     "been",
      "being"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "had + been + -ing."
    }
   ]
@@ -537,12 +537,12 @@
     "type": "choice",
     "text": "He is believed ___ the country last week.",
     "options": [
-     "to have left",
-     "to leave",
+     "to had left",
      "leaving",
-     "to had left"
+     "to leave",
+     "to have left"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Geçmişe bakan to'lu biçim."
    },
    {
@@ -551,8 +551,8 @@
     "options": [
      "Having checked",
      "Having been checked",
-     "Being checked",
-     "Checked having"
+     "Checked having",
+     "Being checked"
     ],
     "answer": 0,
     "note": "Etken ve önce olmuş."
@@ -561,12 +561,12 @@
     "type": "choice",
     "text": "___ informed of the risks, they proceeded anyway.",
     "options": [
-     "Having been",
-     "Having",
      "Being been",
-     "Been having"
+     "Been having",
+     "Having",
+     "Having been"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Edilgen → having been + V3."
    },
    {
@@ -574,8 +574,8 @@
     "text": "She sat at the back ___ not to be noticed.",
     "options": [
      "so as",
-     "so that",
      "in order that",
+     "so that",
      "for"
     ],
     "answer": 0,
@@ -585,11 +585,11 @@
     "type": "gap",
     "text": "They seem ___ forgotten our agreement.",
     "options": [
-     "to have",
+     "to had",
      "to has",
-     "to had"
+     "to have"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "to have + V3."
    }
   ]
@@ -693,8 +693,8 @@
     "text": "Nobody else is coming, so we ___ begin.",
     "options": [
      "may as well",
-     "may as well to",
      "as well may",
+     "may as well to",
      "may so well"
     ],
     "answer": 0,
@@ -704,47 +704,47 @@
     "type": "choice",
     "text": "You ___ to leave the door unlocked.",
     "options": [
-     "ought not",
      "oughtn't not",
+     "don't ought",
      "ought no",
-     "don't ought"
+     "ought not"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "ought not to."
    },
    {
     "type": "choice",
     "text": "They ___ have warned us about the change.",
     "options": [
-     "ought to",
-     "ought",
      "ought not to not",
-     "did ought"
+     "did ought",
+     "ought",
+     "ought to"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "ought to have + V3."
    },
    {
     "type": "choice",
     "text": "___ you have mentioned this sooner?",
     "options": [
-     "Couldn't",
      "Can't",
      "Didn't could",
+     "Couldn't",
      "Not could"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Sitem → Couldn't you have."
    },
    {
     "type": "gap",
     "text": "She ___ to question the decision.",
     "options": [
-     "didn't dare",
      "not dared",
+     "didn't dare",
      "doesn't dared"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "dare gerçek fiil olarak çekildi."
    }
   ]
@@ -837,59 +837,59 @@
     "type": "choice",
     "text": "I have two keys: this one and ___ .",
     "options": [
-     "the other",
      "another",
+     "others",
      "other",
-     "others"
+     "the other"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Kalan tek → the other."
    },
    {
     "type": "choice",
     "text": "Some students passed; ___ had to resit.",
     "options": [
-     "others",
-     "the other",
      "another",
-     "other"
+     "others",
+     "other",
+     "the other"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Belirsiz grup → others."
    },
    {
     "type": "choice",
     "text": "Five of us went ahead; ___ waited at the car.",
     "options": [
-     "the others",
+     "the other",
      "others",
-     "another",
-     "the other"
+     "the others",
+     "another"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Belirli kalan grup."
    },
    {
     "type": "choice",
     "text": "This pen doesn't work. Can I have ___ ?",
     "options": [
+     "the others",
      "another",
      "the other",
-     "others",
-     "the others"
+     "others"
     ],
-    "answer": 0,
+    "answer": 1,
     "note": "Bir tane daha → another."
    },
    {
     "type": "gap",
     "text": "Be considerate of ___ .",
     "options": [
-     "others",
+     "another",
      "the other",
-     "another"
+     "others"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "Genel anlamda başkaları."
    }
   ]
@@ -982,12 +982,12 @@
     "type": "choice",
     "text": "There was ___ any time to prepare.",
     "options": [
-     "hardly",
+     "no hardly",
      "not hardly",
      "hardly not",
-     "no hardly"
+     "hardly"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "Tek olumsuzluk."
    },
    {
@@ -995,9 +995,9 @@
     "text": "He ___ ever takes a day off.",
     "options": [
      "hardly",
-     "doesn't hardly",
      "hardly not",
-     "not hardly"
+     "not hardly",
+     "doesn't hardly"
     ],
     "answer": 0,
     "note": "hardly ever kalıbı."
@@ -1006,35 +1006,35 @@
     "type": "choice",
     "text": "I could ___ hear the announcement.",
     "options": [
-     "barely",
      "not barely",
      "barely not",
+     "barely",
      "hardly not"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "barely = güç bela."
    },
    {
     "type": "choice",
     "text": "She ___ complains about anything.",
     "options": [
-     "seldom",
-     "doesn't seldom",
      "seldom not",
-     "not seldom to"
+     "not seldom to",
+     "doesn't seldom",
+     "seldom"
     ],
-    "answer": 0,
+    "answer": 3,
     "note": "seldom tek başına olumsuz."
    },
    {
     "type": "gap",
     "text": "___ anyone attended the first session.",
     "options": [
-     "Scarcely",
      "Not scarcely",
-     "Scarcely not"
+     "Scarcely not",
+     "Scarcely"
     ],
-    "answer": 0,
+    "answer": 2,
     "note": "scarcely anyone."
    }
   ]

@@ -186,7 +186,7 @@
       "exercises": [
         { "type": "choice", "text": "How ___ money do you need?", "options": ["much", "many", "some", "another"], "answer": 0, "note": "money sayılamaz." },
         { "type": "choice", "text": "How ___ students are in the class?", "options": ["many", "much", "another", "one"], "answer": 0, "note": "students sayılabilir." },
-        { "type": "choice", "text": "Would you like ___ coffee?", "options": ["another", "another the", "other a", "much"], "answer": 0, "note": "Bir tane daha → another." },
+        { "type": "choice", "text": "He asked for ___ glass of water.", "options": ["another", "another the", "other a", "the another"], "answer": 0, "note": "Bir tane daha → another." },
         { "type": "choice", "text": "I don't like this bag; show me ___ .", "options": ["another one", "another ones", "other one", "an another"], "answer": 0, "note": "Tekil → another one." },
         { "type": "gap", "text": "These apples are fresh, but ___ are not.", "options": ["those ones", "that ones", "those one"], "answer": 0, "note": "Uzak ve çoğul → those ones." }
       ]
