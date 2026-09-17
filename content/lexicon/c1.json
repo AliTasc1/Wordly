@@ -996,18 +996,6 @@
   "order": 83
  },
  {
-  "id": "automatic--verb",
-  "word": "automatic",
-  "pos": "verb",
-  "posLabel": "FİİL",
-  "cefr": "C1",
-  "ipa": "/ˌɔtəˈmætɪk/",
-  "rank": 6407,
-  "source": "Octanove",
-  "track": "vocab",
-  "order": 84
- },
- {
   "id": "salvation--noun",
   "word": "salvation",
   "pos": "noun",
@@ -1017,7 +1005,7 @@
   "rank": 6428,
   "source": "Octanove",
   "track": "vocab",
-  "order": 85
+  "order": 84
  },
  {
   "id": "hence--adv",
@@ -1029,7 +1017,7 @@
   "rank": 6501,
   "source": "Octanove",
   "track": "vocab",
-  "order": 86
+  "order": 85
  },
  {
   "id": "craft--verb",
@@ -1041,7 +1029,7 @@
   "rank": 6517,
   "source": "Octanove",
   "track": "vocab",
-  "order": 87
+  "order": 86
  },
  {
   "id": "chart--verb",
@@ -1053,7 +1041,7 @@
   "rank": 6524,
   "source": "Octanove",
   "track": "vocab",
-  "order": 88
+  "order": 87
  },
  {
   "id": "magnetic--adj",
@@ -1065,7 +1053,7 @@
   "rank": 6621,
   "source": "Octanove",
   "track": "vocab",
-  "order": 89
+  "order": 88
  },
  {
   "id": "anchor--verb",
@@ -1077,7 +1065,7 @@
   "rank": 6643,
   "source": "Octanove",
   "track": "vocab",
-  "order": 90
+  "order": 89
  },
  {
   "id": "gypsy--noun",
@@ -1089,7 +1077,7 @@
   "rank": 6651,
   "source": "Octanove",
   "track": "vocab",
-  "order": 91
+  "order": 90
  },
  {
   "id": "pigeon--noun",
@@ -1101,7 +1089,7 @@
   "rank": 6699,
   "source": "Octanove",
   "track": "vocab",
-  "order": 92
+  "order": 91
  },
  {
   "id": "conviction--noun",
@@ -1113,7 +1101,7 @@
   "rank": 6727,
   "source": "Octanove",
   "track": "vocab",
-  "order": 93
+  "order": 92
  },
  {
   "id": "frost--verb",
@@ -1125,7 +1113,7 @@
   "rank": 6851,
   "source": "Octanove",
   "track": "vocab",
-  "order": 94
+  "order": 93
  },
  {
   "id": "prophet--noun",
@@ -1137,7 +1125,7 @@
   "rank": 6853,
   "source": "Octanove",
   "track": "vocab",
-  "order": 95
+  "order": 94
  },
  {
   "id": "compromised--adj",
@@ -1149,7 +1137,7 @@
   "rank": 6940,
   "source": "Octanove",
   "track": "vocab",
-  "order": 96
+  "order": 95
  },
  {
   "id": "forensic--adj",
@@ -1161,7 +1149,7 @@
   "rank": 6949,
   "source": "Octanove",
   "track": "vocab",
-  "order": 97
+  "order": 96
  },
  {
   "id": "facial--adj",
@@ -1173,7 +1161,7 @@
   "rank": 7066,
   "source": "Octanove",
   "track": "vocab",
-  "order": 98
+  "order": 97
  },
  {
   "id": "facial--noun",
@@ -1185,7 +1173,7 @@
   "rank": 7066,
   "source": "Octanove",
   "track": "vocab",
-  "order": 99
+  "order": 98
  },
  {
   "id": "meaningless--adj",
@@ -1197,7 +1185,7 @@
   "rank": 7125,
   "source": "Octanove",
   "track": "vocab",
-  "order": 100
+  "order": 99
  },
  {
   "id": "fuse--verb",
@@ -1209,7 +1197,7 @@
   "rank": 7314,
   "source": "Octanove",
   "track": "vocab",
-  "order": 101
+  "order": 100
  },
  {
   "id": "inheritance--noun",
@@ -1221,7 +1209,7 @@
   "rank": 7318,
   "source": "Octanove",
   "track": "vocab",
-  "order": 102
+  "order": 101
  },
  {
   "id": "classy--adj",
@@ -1233,7 +1221,7 @@
   "rank": 7375,
   "source": "Octanove",
   "track": "vocab",
-  "order": 103
+  "order": 102
  },
  {
   "id": "ruthless--adj",
@@ -1245,7 +1233,7 @@
   "rank": 7432,
   "source": "Octanove",
   "track": "vocab",
-  "order": 104
+  "order": 103
  },
  {
   "id": "preacher--noun",
@@ -1257,7 +1245,7 @@
   "rank": 7450,
   "source": "Octanove",
   "track": "vocab",
-  "order": 105
+  "order": 104
  },
  {
   "id": "swap--verb",
@@ -1269,7 +1257,7 @@
   "rank": 7481,
   "source": "Octanove",
   "track": "vocab",
-  "order": 106
+  "order": 105
  },
  {
   "id": "swap--noun",
@@ -1281,7 +1269,7 @@
   "rank": 7481,
   "source": "Octanove",
   "track": "vocab",
-  "order": 107
+  "order": 106
  },
  {
   "id": "premises--noun",
@@ -1293,7 +1281,7 @@
   "rank": 7544,
   "source": "Octanove",
   "track": "vocab",
-  "order": 108
+  "order": 107
  },
  {
   "id": "convict--verb",
@@ -1305,7 +1293,7 @@
   "rank": 7551,
   "source": "Octanove",
   "track": "vocab",
-  "order": 109
+  "order": 108
  },
  {
   "id": "convict--noun",
@@ -1317,7 +1305,7 @@
   "rank": 7551,
   "source": "Octanove",
   "track": "vocab",
-  "order": 110
+  "order": 109
  },
  {
   "id": "stray--verb",
@@ -1329,7 +1317,7 @@
   "rank": 7594,
   "source": "Octanove",
   "track": "vocab",
-  "order": 111
+  "order": 110
  },
  {
   "id": "stray--adj",
@@ -1341,7 +1329,7 @@
   "rank": 7594,
   "source": "Octanove",
   "track": "vocab",
-  "order": 112
+  "order": 111
  },
  {
   "id": "stray--noun",
@@ -1353,7 +1341,7 @@
   "rank": 7594,
   "source": "Octanove",
   "track": "vocab",
-  "order": 113
+  "order": 112
  },
  {
   "id": "profound--adj",
@@ -1365,7 +1353,7 @@
   "rank": 7698,
   "source": "Octanove",
   "track": "vocab",
-  "order": 114
+  "order": 113
  },
  {
   "id": "peasant--noun",
@@ -1377,7 +1365,7 @@
   "rank": 7720,
   "source": "Octanove",
   "track": "vocab",
-  "order": 115
+  "order": 114
  },
  {
   "id": "carrier--noun",
@@ -1389,7 +1377,7 @@
   "rank": 7731,
   "source": "Octanove",
   "track": "vocab",
-  "order": 116
+  "order": 115
  },
  {
   "id": "injustice--noun",
@@ -1401,7 +1389,7 @@
   "rank": 7828,
   "source": "Octanove",
   "track": "vocab",
-  "order": 117
+  "order": 116
  },
  {
   "id": "whilst--conj",
@@ -1413,7 +1401,7 @@
   "rank": 7974,
   "source": "Octanove",
   "track": "grammar",
-  "order": 118
+  "order": 117
  },
  {
   "id": "elaborate--adj",
@@ -1425,7 +1413,7 @@
   "rank": 7976,
   "source": "Octanove",
   "track": "vocab",
-  "order": 119
+  "order": 118
  },
  {
   "id": "elaborate--verb",
@@ -1437,7 +1425,7 @@
   "rank": 7976,
   "source": "Octanove",
   "track": "vocab",
-  "order": 120
+  "order": 119
  },
  {
   "id": "mechanism--noun",
@@ -1449,7 +1437,7 @@
   "rank": 7994,
   "source": "Octanove",
   "track": "vocab",
-  "order": 121
+  "order": 120
  },
  {
   "id": "slack--verb",
@@ -1461,7 +1449,7 @@
   "rank": 8004,
   "source": "Octanove",
   "track": "vocab",
-  "order": 122
+  "order": 121
  },
  {
   "id": "slack--noun",
@@ -1473,7 +1461,7 @@
   "rank": 8004,
   "source": "Octanove",
   "track": "vocab",
-  "order": 123
+  "order": 122
  },
  {
   "id": "slack--adj",
@@ -1485,7 +1473,7 @@
   "rank": 8004,
   "source": "Octanove",
   "track": "vocab",
-  "order": 124
+  "order": 123
  },
  {
   "id": "psychiatric--adj",
@@ -1497,7 +1485,7 @@
   "rank": 8042,
   "source": "Octanove",
   "track": "vocab",
-  "order": 125
+  "order": 124
  },
  {
   "id": "coverage--noun",
@@ -1509,7 +1497,7 @@
   "rank": 8141,
   "source": "Octanove",
   "track": "vocab",
-  "order": 126
+  "order": 125
  },
  {
   "id": "harassment--noun",
@@ -1521,7 +1509,7 @@
   "rank": 8176,
   "source": "Octanove",
   "track": "vocab",
-  "order": 127
+  "order": 126
  },
  {
   "id": "irony--noun",
@@ -1533,7 +1521,7 @@
   "rank": 8193,
   "source": "Octanove",
   "track": "vocab",
-  "order": 128
+  "order": 127
  },
  {
   "id": "bliss--noun",
@@ -1545,7 +1533,7 @@
   "rank": 8226,
   "source": "Octanove",
   "track": "vocab",
-  "order": 129
+  "order": 128
  },
  {
   "id": "jurisdiction--noun",
@@ -1557,7 +1545,7 @@
   "rank": 8246,
   "source": "Octanove",
   "track": "vocab",
-  "order": 130
+  "order": 129
  },
  {
   "id": "carpenter--noun",
@@ -1569,7 +1557,7 @@
   "rank": 8403,
   "source": "Octanove",
   "track": "vocab",
-  "order": 131
+  "order": 130
  },
  {
   "id": "juvenile--noun",
@@ -1581,7 +1569,7 @@
   "rank": 8443,
   "source": "Octanove",
   "track": "vocab",
-  "order": 132
+  "order": 131
  },
  {
   "id": "juvenile--adj",
@@ -1593,7 +1581,7 @@
   "rank": 8443,
   "source": "Octanove",
   "track": "vocab",
-  "order": 133
+  "order": 132
  },
  {
   "id": "strap--noun",
@@ -1605,7 +1593,7 @@
   "rank": 8579,
   "source": "Octanove",
   "track": "vocab",
-  "order": 134
+  "order": 133
  },
  {
   "id": "strap--verb",
@@ -1617,7 +1605,7 @@
   "rank": 8579,
   "source": "Octanove",
   "track": "vocab",
-  "order": 135
+  "order": 134
  },
  {
   "id": "suspension--noun",
@@ -1629,7 +1617,7 @@
   "rank": 8630,
   "source": "Octanove",
   "track": "vocab",
-  "order": 136
+  "order": 135
  },
  {
   "id": "numb--adj",
@@ -1641,7 +1629,7 @@
   "rank": 8731,
   "source": "Octanove",
   "track": "vocab",
-  "order": 137
+  "order": 136
  },
  {
   "id": "numb--verb",
@@ -1653,7 +1641,7 @@
   "rank": 8731,
   "source": "Octanove",
   "track": "vocab",
-  "order": 138
+  "order": 137
  },
  {
   "id": "screenplay--noun",
@@ -1665,7 +1653,7 @@
   "rank": 8763,
   "source": "Octanove",
   "track": "vocab",
-  "order": 139
+  "order": 138
  },
  {
   "id": "chilly--adj",
@@ -1677,7 +1665,7 @@
   "rank": 8801,
   "source": "Octanove",
   "track": "vocab",
-  "order": 140
+  "order": 139
  },
  {
   "id": "torment--verb",
@@ -1689,7 +1677,7 @@
   "rank": 8930,
   "source": "Octanove",
   "track": "vocab",
-  "order": 141
+  "order": 140
  },
  {
   "id": "torment--noun",
@@ -1701,7 +1689,7 @@
   "rank": 8930,
   "source": "Octanove",
   "track": "vocab",
-  "order": 142
+  "order": 141
  },
  {
   "id": "resent--verb",
@@ -1713,7 +1701,7 @@
   "rank": 8979,
   "source": "Octanove",
   "track": "vocab",
-  "order": 143
+  "order": 142
  },
  {
   "id": "flick--verb",
@@ -1725,7 +1713,7 @@
   "rank": 9115,
   "source": "Octanove",
   "track": "vocab",
-  "order": 144
+  "order": 143
  },
  {
   "id": "tailor--noun",
@@ -1737,7 +1725,7 @@
   "rank": 9119,
   "source": "Octanove",
   "track": "vocab",
-  "order": 145
+  "order": 144
  },
  {
   "id": "tailor--verb",
@@ -1749,7 +1737,7 @@
   "rank": 9119,
   "source": "Octanove",
   "track": "vocab",
-  "order": 146
+  "order": 145
  },
  {
   "id": "remorse--noun",
@@ -1761,7 +1749,7 @@
   "rank": 9142,
   "source": "Octanove",
   "track": "vocab",
-  "order": 147
+  "order": 146
  },
  {
   "id": "gem--noun",
@@ -1773,7 +1761,7 @@
   "rank": 9148,
   "source": "Octanove",
   "track": "vocab",
-  "order": 148
+  "order": 147
  },
  {
   "id": "testament--noun",
@@ -1785,7 +1773,7 @@
   "rank": 9159,
   "source": "Octanove",
   "track": "vocab",
-  "order": 149
+  "order": 148
  },
  {
   "id": "immense--adj",
@@ -1797,7 +1785,7 @@
   "rank": 9332,
   "source": "Octanove",
   "track": "vocab",
-  "order": 150
+  "order": 149
  },
  {
   "id": "provoke--verb",
@@ -1809,7 +1797,7 @@
   "rank": 9375,
   "source": "Octanove",
   "track": "vocab",
-  "order": 151
+  "order": 150
  },
  {
   "id": "hostess--noun",
@@ -1821,7 +1809,7 @@
   "rank": 9401,
   "source": "Octanove",
   "track": "vocab",
-  "order": 152
+  "order": 151
  },
  {
   "id": "adrenaline--noun",
@@ -1833,7 +1821,7 @@
   "rank": 9442,
   "source": "Octanove",
   "track": "vocab",
-  "order": 153
+  "order": 152
  },
  {
   "id": "contractor--noun",
@@ -1845,7 +1833,7 @@
   "rank": 9464,
   "source": "Octanove",
   "track": "vocab",
-  "order": 154
+  "order": 153
  },
  {
   "id": "refreshing--adj",
@@ -1857,7 +1845,7 @@
   "rank": 9572,
   "source": "Octanove",
   "track": "vocab",
-  "order": 155
+  "order": 154
  },
  {
   "id": "bouquet--noun",
@@ -1869,7 +1857,7 @@
   "rank": 9607,
   "source": "Octanove",
   "track": "vocab",
-  "order": 156
+  "order": 155
  },
  {
   "id": "flatter--verb",
@@ -1881,7 +1869,7 @@
   "rank": 9649,
   "source": "Octanove",
   "track": "vocab",
-  "order": 157
+  "order": 156
  },
  {
   "id": "descent--noun",
@@ -1893,7 +1881,7 @@
   "rank": 9716,
   "source": "Octanove",
   "track": "vocab",
-  "order": 158
+  "order": 157
  },
  {
   "id": "preach--verb",
@@ -1905,7 +1893,7 @@
   "rank": 9756,
   "source": "Octanove",
   "track": "vocab",
-  "order": 159
+  "order": 158
  },
  {
   "id": "specimen--noun",
@@ -1917,7 +1905,7 @@
   "rank": 9765,
   "source": "Octanove",
   "track": "vocab",
-  "order": 160
+  "order": 159
  },
  {
   "id": "hypocrite--noun",
@@ -1929,7 +1917,7 @@
   "rank": 9771,
   "source": "Octanove",
   "track": "vocab",
-  "order": 161
+  "order": 160
  },
  {
   "id": "apprentice--noun",
@@ -1941,7 +1929,7 @@
   "rank": 9780,
   "source": "Octanove",
   "track": "vocab",
-  "order": 162
+  "order": 161
  },
  {
   "id": "apprentice--verb",
@@ -1953,7 +1941,7 @@
   "rank": 9780,
   "source": "Octanove",
   "track": "vocab",
-  "order": 163
+  "order": 162
  },
  {
   "id": "intuition--noun",
@@ -1965,7 +1953,7 @@
   "rank": 9796,
   "source": "Octanove",
   "track": "vocab",
-  "order": 164
+  "order": 163
  },
  {
   "id": "bypass--verb",
@@ -1977,7 +1965,7 @@
   "rank": 9803,
   "source": "Octanove",
   "track": "vocab",
-  "order": 165
+  "order": 164
  },
  {
   "id": "spontaneous--adj",
@@ -1989,7 +1977,7 @@
   "rank": 9825,
   "source": "Octanove",
   "track": "vocab",
-  "order": 166
+  "order": 165
  },
  {
   "id": "insecure--adj",
@@ -2001,7 +1989,7 @@
   "rank": 9837,
   "source": "Octanove",
   "track": "vocab",
-  "order": 167
+  "order": 166
  },
  {
   "id": "heroine--noun",
@@ -2013,7 +2001,7 @@
   "rank": 9841,
   "source": "Octanove",
   "track": "vocab",
-  "order": 168
+  "order": 167
  },
  {
   "id": "plumbing--noun",
@@ -2025,7 +2013,7 @@
   "rank": 9844,
   "source": "Octanove",
   "track": "vocab",
-  "order": 169
+  "order": 168
  },
  {
   "id": "crude--adj",
@@ -2037,7 +2025,7 @@
   "rank": 9847,
   "source": "Octanove",
   "track": "vocab",
-  "order": 170
+  "order": 169
  },
  {
   "id": "demo--noun",
@@ -2049,7 +2037,7 @@
   "rank": 9851,
   "source": "Octanove",
   "track": "vocab",
-  "order": 171
+  "order": 170
  },
  {
   "id": "revealing--adj",
@@ -2061,7 +2049,7 @@
   "rank": 9889,
   "source": "Octanove",
   "track": "vocab",
-  "order": 172
+  "order": 171
  },
  {
   "id": "gadget--noun",
@@ -2073,7 +2061,7 @@
   "rank": 9893,
   "source": "Octanove",
   "track": "vocab",
-  "order": 173
+  "order": 172
  },
  {
   "id": "recess--noun",
@@ -2085,7 +2073,7 @@
   "rank": 9912,
   "source": "Octanove",
   "track": "vocab",
-  "order": 174
+  "order": 173
  },
  {
   "id": "speculation--noun",
@@ -2097,7 +2085,7 @@
   "rank": 9923,
   "source": "Octanove",
   "track": "vocab",
-  "order": 175
+  "order": 174
  },
  {
   "id": "saloon--noun",
@@ -2109,7 +2097,7 @@
   "rank": 9948,
   "source": "Octanove",
   "track": "vocab",
-  "order": 176
+  "order": 175
  },
  {
   "id": "clinical--adj",
@@ -2121,7 +2109,7 @@
   "rank": 9953,
   "source": "Octanove",
   "track": "vocab",
-  "order": 177
+  "order": 176
  },
  {
   "id": "prop--verb",
@@ -2133,7 +2121,7 @@
   "rank": 9959,
   "source": "Octanove",
   "track": "vocab",
-  "order": 178
+  "order": 177
  },
  {
   "id": "prop--noun",
@@ -2145,7 +2133,7 @@
   "rank": 9959,
   "source": "Octanove",
   "track": "vocab",
-  "order": 179
+  "order": 178
  },
  {
   "id": "tread--noun",
@@ -2157,7 +2145,7 @@
   "rank": 9972,
   "source": "Octanove",
   "track": "vocab",
-  "order": 180
+  "order": 179
  },
  {
   "id": "precision--noun",
@@ -2169,7 +2157,7 @@
   "rank": 10009,
   "source": "Octanove",
   "track": "vocab",
-  "order": 181
+  "order": 180
  },
  {
   "id": "batter--verb",
@@ -2181,7 +2169,7 @@
   "rank": 10038,
   "source": "Octanove",
   "track": "vocab",
-  "order": 182
+  "order": 181
  },
  {
   "id": "batter--noun",
@@ -2193,7 +2181,7 @@
   "rank": 10038,
   "source": "Octanove",
   "track": "vocab",
-  "order": 183
+  "order": 182
  },
  {
   "id": "cloak--noun",
@@ -2205,7 +2193,7 @@
   "rank": 10100,
   "source": "Octanove",
   "track": "vocab",
-  "order": 184
+  "order": 183
  },
  {
   "id": "quarry--noun",
@@ -2217,7 +2205,7 @@
   "rank": 10191,
   "source": "Octanove",
   "track": "vocab",
-  "order": 185
+  "order": 184
  },
  {
   "id": "circulation--noun",
@@ -2229,7 +2217,7 @@
   "rank": 10199,
   "source": "Octanove",
   "track": "vocab",
-  "order": 186
+  "order": 185
  },
  {
   "id": "remotely--adv",
@@ -2241,7 +2229,7 @@
   "rank": 10244,
   "source": "Octanove",
   "track": "vocab",
-  "order": 187
+  "order": 186
  },
  {
   "id": "privileged--adj",
@@ -2253,7 +2241,7 @@
   "rank": 10315,
   "source": "Octanove",
   "track": "vocab",
-  "order": 188
+  "order": 187
  },
  {
   "id": "dependent--noun",
@@ -2265,7 +2253,7 @@
   "rank": 10330,
   "source": "Octanove",
   "track": "vocab",
-  "order": 189
+  "order": 188
  },
  {
   "id": "charter--verb",
@@ -2277,7 +2265,7 @@
   "rank": 10343,
   "source": "Octanove",
   "track": "vocab",
-  "order": 190
+  "order": 189
  },
  {
   "id": "charter--noun",
@@ -2289,7 +2277,7 @@
   "rank": 10343,
   "source": "Octanove",
   "track": "vocab",
-  "order": 191
+  "order": 190
  },
  {
   "id": "cynical--adj",
@@ -2301,7 +2289,7 @@
   "rank": 10406,
   "source": "Octanove",
   "track": "vocab",
-  "order": 192
+  "order": 191
  },
  {
   "id": "purity--noun",
@@ -2313,7 +2301,7 @@
   "rank": 10452,
   "source": "Octanove",
   "track": "vocab",
-  "order": 193
+  "order": 192
  },
  {
   "id": "debut--noun",
@@ -2325,7 +2313,7 @@
   "rank": 10481,
   "source": "Octanove",
   "track": "vocab",
-  "order": 194
+  "order": 193
  },
  {
   "id": "debut--verb",
@@ -2337,7 +2325,7 @@
   "rank": 10481,
   "source": "Octanove",
   "track": "vocab",
-  "order": 195
+  "order": 194
  },
  {
   "id": "fossil--noun",
@@ -2349,7 +2337,7 @@
   "rank": 10539,
   "source": "Octanove",
   "track": "vocab",
-  "order": 196
+  "order": 195
  },
  {
   "id": "stretching--noun",
@@ -2361,7 +2349,7 @@
   "rank": 10544,
   "source": "Octanove",
   "track": "vocab",
-  "order": 197
+  "order": 196
  },
  {
   "id": "clutch--verb",
@@ -2373,7 +2361,7 @@
   "rank": 10561,
   "source": "Octanove",
   "track": "vocab",
-  "order": 198
+  "order": 197
  },
  {
   "id": "clutch--noun",
@@ -2385,7 +2373,7 @@
   "rank": 10561,
   "source": "Octanove",
   "track": "vocab",
-  "order": 199
+  "order": 198
  },
  {
   "id": "fusion--noun",
@@ -2397,7 +2385,7 @@
   "rank": 10562,
   "source": "Octanove",
   "track": "vocab",
-  "order": 200
+  "order": 199
  },
  {
   "id": "paddle--verb",
@@ -2409,7 +2397,7 @@
   "rank": 10591,
   "source": "Octanove",
   "track": "vocab",
-  "order": 201
+  "order": 200
  },
  {
   "id": "traumatic--adj",
@@ -2421,7 +2409,7 @@
   "rank": 10687,
   "source": "Octanove",
   "track": "vocab",
-  "order": 202
+  "order": 201
  },
  {
   "id": "fiddle--verb",
@@ -2433,7 +2421,7 @@
   "rank": 10700,
   "source": "Octanove",
   "track": "vocab",
-  "order": 203
+  "order": 202
  },
  {
   "id": "fiddle--noun",
@@ -2445,7 +2433,7 @@
   "rank": 10700,
   "source": "Octanove",
   "track": "vocab",
-  "order": 204
+  "order": 203
  },
  {
   "id": "credibility--noun",
@@ -2457,7 +2445,7 @@
   "rank": 10748,
   "source": "Octanove",
   "track": "vocab",
-  "order": 205
+  "order": 204
  },
  {
   "id": "insensitive--adj",
@@ -2469,7 +2457,7 @@
   "rank": 10779,
   "source": "Octanove",
   "track": "vocab",
-  "order": 206
+  "order": 205
  },
  {
   "id": "wrench--verb",
@@ -2481,7 +2469,7 @@
   "rank": 10788,
   "source": "Octanove",
   "track": "vocab",
-  "order": 207
+  "order": 206
  },
  {
   "id": "accustomed--adj",
@@ -2493,7 +2481,7 @@
   "rank": 10792,
   "source": "Octanove",
   "track": "vocab",
-  "order": 208
+  "order": 207
  },
  {
   "id": "bulk--noun",
@@ -2505,7 +2493,7 @@
   "rank": 10873,
   "source": "Octanove",
   "track": "vocab",
-  "order": 209
+  "order": 208
  },
  {
   "id": "plaster--noun",
@@ -2517,7 +2505,7 @@
   "rank": 10888,
   "source": "Octanove",
   "track": "vocab",
-  "order": 210
+  "order": 209
  },
  {
   "id": "plaster--verb",
@@ -2529,7 +2517,7 @@
   "rank": 10888,
   "source": "Octanove",
   "track": "vocab",
-  "order": 211
+  "order": 210
  },
  {
   "id": "sentiment--noun",
@@ -2541,7 +2529,7 @@
   "rank": 10939,
   "source": "Octanove",
   "track": "vocab",
-  "order": 212
+  "order": 211
  },
  {
   "id": "withdrawn--adj",
@@ -2553,7 +2541,7 @@
   "rank": 10946,
   "source": "Octanove",
   "track": "vocab",
-  "order": 213
+  "order": 212
  },
  {
   "id": "isolate--verb",
@@ -2565,7 +2553,7 @@
   "rank": 10979,
   "source": "Octanove",
   "track": "vocab",
-  "order": 214
+  "order": 213
  },
  {
   "id": "marvel--verb",
@@ -2577,7 +2565,7 @@
   "rank": 10992,
   "source": "Octanove",
   "track": "vocab",
-  "order": 215
+  "order": 214
  },
  {
   "id": "offspring--noun",
@@ -2589,7 +2577,7 @@
   "rank": 11005,
   "source": "Octanove",
   "track": "vocab",
-  "order": 216
+  "order": 215
  },
  {
   "id": "vertical--adj",
@@ -2601,7 +2589,7 @@
   "rank": 11044,
   "source": "Octanove",
   "track": "vocab",
-  "order": 217
+  "order": 216
  },
  {
   "id": "eccentric--adj",
@@ -2613,7 +2601,7 @@
   "rank": 11094,
   "source": "Octanove",
   "track": "vocab",
-  "order": 218
+  "order": 217
  },
  {
   "id": "eccentric--noun",
@@ -2625,7 +2613,7 @@
   "rank": 11094,
   "source": "Octanove",
   "track": "vocab",
-  "order": 219
+  "order": 218
  },
  {
   "id": "liaison--noun",
@@ -2637,7 +2625,7 @@
   "rank": 11126,
   "source": "Octanove",
   "track": "vocab",
-  "order": 220
+  "order": 219
  },
  {
   "id": "peacock--noun",
@@ -2649,7 +2637,7 @@
   "rank": 11156,
   "source": "Octanove",
   "track": "vocab",
-  "order": 221
+  "order": 220
  },
  {
   "id": "sauna--noun",
@@ -2661,7 +2649,7 @@
   "rank": 11186,
   "source": "Octanove",
   "track": "vocab",
-  "order": 222
+  "order": 221
  },
  {
   "id": "terrain--noun",
@@ -2673,7 +2661,7 @@
   "rank": 11204,
   "source": "Octanove",
   "track": "vocab",
-  "order": 223
+  "order": 222
  },
  {
   "id": "ingenious--adj",
@@ -2685,7 +2673,7 @@
   "rank": 11231,
   "source": "Octanove",
   "track": "vocab",
-  "order": 224
+  "order": 223
  },
  {
   "id": "salvage--verb",
@@ -2697,7 +2685,7 @@
   "rank": 11263,
   "source": "Octanove",
   "track": "vocab",
-  "order": 225
+  "order": 224
  },
  {
   "id": "premier--adj",
@@ -2709,7 +2697,7 @@
   "rank": 11333,
   "source": "Octanove",
   "track": "vocab",
-  "order": 226
+  "order": 225
  },
  {
   "id": "premier--noun",
@@ -2721,7 +2709,7 @@
   "rank": 11333,
   "source": "Octanove",
   "track": "vocab",
-  "order": 227
+  "order": 226
  },
  {
   "id": "parasite--noun",
@@ -2733,7 +2721,7 @@
   "rank": 11338,
   "source": "Octanove",
   "track": "vocab",
-  "order": 228
+  "order": 227
  },
  {
   "id": "phenomenal--adj",
@@ -2745,7 +2733,7 @@
   "rank": 11402,
   "source": "Octanove",
   "track": "vocab",
-  "order": 229
+  "order": 228
  },
  {
   "id": "maneuver--verb",
@@ -2757,7 +2745,7 @@
   "rank": 11404,
   "source": "Octanove",
   "track": "vocab",
-  "order": 230
+  "order": 229
  },
  {
   "id": "maneuver--noun",
@@ -2769,7 +2757,7 @@
   "rank": 11404,
   "source": "Octanove",
   "track": "vocab",
-  "order": 231
+  "order": 230
  },
  {
   "id": "portable--adj",
@@ -2781,7 +2769,7 @@
   "rank": 11485,
   "source": "Octanove",
   "track": "vocab",
-  "order": 232
+  "order": 231
  },
  {
   "id": "portable--noun",
@@ -2793,7 +2781,7 @@
   "rank": 11485,
   "source": "Octanove",
   "track": "vocab",
-  "order": 233
+  "order": 232
  },
  {
   "id": "honk--verb",
@@ -2805,7 +2793,7 @@
   "rank": 11516,
   "source": "Octanove",
   "track": "vocab",
-  "order": 234
+  "order": 233
  },
  {
   "id": "honk--noun",
@@ -2817,7 +2805,7 @@
   "rank": 11516,
   "source": "Octanove",
   "track": "vocab",
-  "order": 235
+  "order": 234
  },
  {
   "id": "sarcastic--adj",
@@ -2829,7 +2817,7 @@
   "rank": 11533,
   "source": "Octanove",
   "track": "vocab",
-  "order": 236
+  "order": 235
  },
  {
   "id": "awe--verb",
@@ -2841,7 +2829,7 @@
   "rank": 11553,
   "source": "Octanove",
   "track": "vocab",
-  "order": 237
+  "order": 236
  },
  {
   "id": "extortion--noun",
@@ -2853,7 +2841,7 @@
   "rank": 11560,
   "source": "Octanove",
   "track": "vocab",
-  "order": 238
+  "order": 237
  },
  {
   "id": "usher--noun",
@@ -2865,7 +2853,7 @@
   "rank": 11626,
   "source": "Octanove",
   "track": "vocab",
-  "order": 239
+  "order": 238
  },
  {
   "id": "victorious--adj",
@@ -2877,7 +2865,7 @@
   "rank": 11656,
   "source": "Octanove",
   "track": "vocab",
-  "order": 240
+  "order": 239
  },
  {
   "id": "duration--noun",
@@ -2889,7 +2877,7 @@
   "rank": 11702,
   "source": "Octanove",
   "track": "vocab",
-  "order": 241
+  "order": 240
  },
  {
   "id": "formality--noun",
@@ -2901,7 +2889,7 @@
   "rank": 11707,
   "source": "Octanove",
   "track": "vocab",
-  "order": 242
+  "order": 241
  },
  {
   "id": "smug--adj",
@@ -2913,7 +2901,7 @@
   "rank": 11710,
   "source": "Octanove",
   "track": "vocab",
-  "order": 243
+  "order": 242
  },
  {
   "id": "dominant--adj",
@@ -2925,7 +2913,7 @@
   "rank": 11730,
   "source": "Octanove",
   "track": "vocab",
-  "order": 244
+  "order": 243
  },
  {
   "id": "transit--noun",
@@ -2937,7 +2925,7 @@
   "rank": 11756,
   "source": "Octanove",
   "track": "vocab",
-  "order": 245
+  "order": 244
  },
  {
   "id": "voluntarily--adv",
@@ -2949,7 +2937,7 @@
   "rank": 11782,
   "source": "Octanove",
   "track": "vocab",
-  "order": 246
+  "order": 245
  },
  {
   "id": "malfunction--verb",
@@ -2961,7 +2949,7 @@
   "rank": 11863,
   "source": "Octanove",
   "track": "vocab",
-  "order": 247
+  "order": 246
  },
  {
   "id": "beforehand--adv",
@@ -2973,7 +2961,7 @@
   "rank": 11885,
   "source": "Octanove",
   "track": "vocab",
-  "order": 248
+  "order": 247
  },
  {
   "id": "synthetic--adj",
@@ -2985,7 +2973,7 @@
   "rank": 11891,
   "source": "Octanove",
   "track": "vocab",
-  "order": 249
+  "order": 248
  },
  {
   "id": "ethical--adj",
@@ -2997,7 +2985,7 @@
   "rank": 11911,
   "source": "Octanove",
   "track": "vocab",
-  "order": 250
+  "order": 249
  },
  {
   "id": "comply--verb",
@@ -3009,7 +2997,7 @@
   "rank": 12010,
   "source": "Octanove",
   "track": "vocab",
-  "order": 251
+  "order": 250
  },
  {
   "id": "superficial--adj",
@@ -3021,7 +3009,7 @@
   "rank": 12095,
   "source": "Octanove",
   "track": "vocab",
-  "order": 252
+  "order": 251
  },
  {
   "id": "fraction--noun",
@@ -3033,7 +3021,7 @@
   "rank": 12246,
   "source": "Octanove",
   "track": "vocab",
-  "order": 253
+  "order": 252
  },
  {
   "id": "sap--noun",
@@ -3045,7 +3033,7 @@
   "rank": 12302,
   "source": "Octanove",
   "track": "vocab",
-  "order": 254
+  "order": 253
  },
  {
   "id": "provisions--noun",
@@ -3057,7 +3045,7 @@
   "rank": 12310,
   "source": "Octanove",
   "track": "vocab",
-  "order": 255
+  "order": 254
  },
  {
   "id": "exhaust--verb",
@@ -3069,7 +3057,7 @@
   "rank": 12317,
   "source": "Octanove",
   "track": "vocab",
-  "order": 256
+  "order": 255
  },
  {
   "id": "climax--noun",
@@ -3081,7 +3069,7 @@
   "rank": 12339,
   "source": "Octanove",
   "track": "vocab",
-  "order": 257
+  "order": 256
  },
  {
   "id": "craving--noun",
@@ -3093,7 +3081,7 @@
   "rank": 12348,
   "source": "Octanove",
   "track": "vocab",
-  "order": 258
+  "order": 257
  },
  {
   "id": "obscure--verb",
@@ -3105,7 +3093,7 @@
   "rank": 12354,
   "source": "Octanove",
   "track": "vocab",
-  "order": 259
+  "order": 258
  },
  {
   "id": "obscure--adj",
@@ -3117,7 +3105,7 @@
   "rank": 12354,
   "source": "Octanove",
   "track": "vocab",
-  "order": 260
+  "order": 259
  },
  {
   "id": "sarcasm--noun",
@@ -3129,7 +3117,7 @@
   "rank": 12452,
   "source": "Octanove",
   "track": "vocab",
-  "order": 261
+  "order": 260
  },
  {
   "id": "suffice--verb",
@@ -3141,7 +3129,7 @@
   "rank": 12550,
   "source": "Octanove",
   "track": "vocab",
-  "order": 262
+  "order": 261
  },
  {
   "id": "credible--adj",
@@ -3153,7 +3141,7 @@
   "rank": 12560,
   "source": "Octanove",
   "track": "vocab",
-  "order": 263
+  "order": 262
  },
  {
   "id": "tinker--verb",
@@ -3165,7 +3153,7 @@
   "rank": 12579,
   "source": "Octanove",
   "track": "vocab",
-  "order": 264
+  "order": 263
  },
  {
   "id": "tinker--noun",
@@ -3177,7 +3165,7 @@
   "rank": 12579,
   "source": "Octanove",
   "track": "vocab",
-  "order": 265
+  "order": 264
  },
  {
   "id": "tangled--adj",
@@ -3189,7 +3177,7 @@
   "rank": 12583,
   "source": "Octanove",
   "track": "vocab",
-  "order": 266
+  "order": 265
  },
  {
   "id": "plunge--verb",
@@ -3201,7 +3189,7 @@
   "rank": 12585,
   "source": "Octanove",
   "track": "vocab",
-  "order": 267
+  "order": 266
  },
  {
   "id": "plunge--noun",
@@ -3213,7 +3201,7 @@
   "rank": 12585,
   "source": "Octanove",
   "track": "vocab",
-  "order": 268
+  "order": 267
  },
  {
   "id": "appalling--adj",
@@ -3225,7 +3213,7 @@
   "rank": 12595,
   "source": "Octanove",
   "track": "vocab",
-  "order": 269
+  "order": 268
  },
  {
   "id": "pioneer--verb",
@@ -3237,7 +3225,7 @@
   "rank": 12647,
   "source": "Octanove",
   "track": "vocab",
-  "order": 270
+  "order": 269
  },
  {
   "id": "pioneer--noun",
@@ -3249,7 +3237,7 @@
   "rank": 12647,
   "source": "Octanove",
   "track": "vocab",
-  "order": 271
+  "order": 270
  },
  {
   "id": "stuffy--adj",
@@ -3261,7 +3249,7 @@
   "rank": 12689,
   "source": "Octanove",
   "track": "vocab",
-  "order": 272
+  "order": 271
  },
  {
   "id": "munch--verb",
@@ -3273,7 +3261,7 @@
   "rank": 12737,
   "source": "Octanove",
   "track": "vocab",
-  "order": 273
+  "order": 272
  },
  {
   "id": "demise--noun",
@@ -3285,7 +3273,7 @@
   "rank": 12769,
   "source": "Octanove",
   "track": "vocab",
-  "order": 274
+  "order": 273
  },
  {
   "id": "canoe--noun",
@@ -3297,7 +3285,7 @@
   "rank": 12812,
   "source": "Octanove",
   "track": "vocab",
-  "order": 275
+  "order": 274
  },
  {
   "id": "imperative--adj",
@@ -3309,7 +3297,7 @@
   "rank": 12923,
   "source": "Octanove",
   "track": "vocab",
-  "order": 276
+  "order": 275
  },
  {
   "id": "cavity--noun",
@@ -3321,7 +3309,7 @@
   "rank": 12952,
   "source": "Octanove",
   "track": "vocab",
-  "order": 277
+  "order": 276
  },
  {
   "id": "mythology--noun",
@@ -3333,7 +3321,7 @@
   "rank": 13070,
   "source": "Octanove",
   "track": "vocab",
-  "order": 278
+  "order": 277
  },
  {
   "id": "render--verb",
@@ -3345,7 +3333,7 @@
   "rank": 13074,
   "source": "Octanove",
   "track": "vocab",
-  "order": 279
+  "order": 278
  },
  {
   "id": "fatigue--noun",
@@ -3357,7 +3345,7 @@
   "rank": 13122,
   "source": "Octanove",
   "track": "vocab",
-  "order": 280
+  "order": 279
  },
  {
   "id": "hedgehog--noun",
@@ -3369,7 +3357,7 @@
   "rank": 13165,
   "source": "Octanove",
   "track": "vocab",
-  "order": 281
+  "order": 280
  },
  {
   "id": "forfeit--verb",
@@ -3381,7 +3369,7 @@
   "rank": 13176,
   "source": "Octanove",
   "track": "vocab",
-  "order": 282
+  "order": 281
  },
  {
   "id": "astray--adv",
@@ -3393,7 +3381,7 @@
   "rank": 13214,
   "source": "Octanove",
   "track": "vocab",
-  "order": 283
+  "order": 282
  },
  {
   "id": "farce--noun",
@@ -3405,7 +3393,7 @@
   "rank": 13251,
   "source": "Octanove",
   "track": "vocab",
-  "order": 284
+  "order": 283
  },
  {
   "id": "scramble--noun",
@@ -3417,7 +3405,7 @@
   "rank": 13305,
   "source": "Octanove",
   "track": "vocab",
-  "order": 285
+  "order": 284
  },
  {
   "id": "aquarium--noun",
@@ -3429,7 +3417,7 @@
   "rank": 13311,
   "source": "Octanove",
   "track": "vocab",
-  "order": 286
+  "order": 285
  },
  {
   "id": "gruesome--adj",
@@ -3441,7 +3429,7 @@
   "rank": 13362,
   "source": "Octanove",
   "track": "vocab",
-  "order": 287
+  "order": 286
  },
  {
   "id": "intellect--noun",
@@ -3453,7 +3441,7 @@
   "rank": 13460,
   "source": "Octanove",
   "track": "vocab",
-  "order": 288
+  "order": 287
  },
  {
   "id": "posture--noun",
@@ -3465,7 +3453,7 @@
   "rank": 13462,
   "source": "Octanove",
   "track": "vocab",
-  "order": 289
+  "order": 288
  },
  {
   "id": "flourish--noun",
@@ -3477,7 +3465,7 @@
   "rank": 13515,
   "source": "Octanove",
   "track": "vocab",
-  "order": 290
+  "order": 289
  },
  {
   "id": "flourish--verb",
@@ -3489,7 +3477,7 @@
   "rank": 13515,
   "source": "Octanove",
   "track": "vocab",
-  "order": 291
+  "order": 290
  },
  {
   "id": "rumble--verb",
@@ -3501,7 +3489,7 @@
   "rank": 13530,
   "source": "Octanove",
   "track": "vocab",
-  "order": 292
+  "order": 291
  },
  {
   "id": "rumble--noun",
@@ -3513,7 +3501,7 @@
   "rank": 13530,
   "source": "Octanove",
   "track": "vocab",
-  "order": 293
+  "order": 292
  },
  {
   "id": "mingle--verb",
@@ -3525,7 +3513,7 @@
   "rank": 13535,
   "source": "Octanove",
   "track": "vocab",
-  "order": 294
+  "order": 293
  },
  {
   "id": "confinement--noun",
@@ -3537,7 +3525,7 @@
   "rank": 13544,
   "source": "Octanove",
   "track": "vocab",
-  "order": 295
+  "order": 294
  },
  {
   "id": "elusive--adj",
@@ -3549,7 +3537,7 @@
   "rank": 13589,
   "source": "Octanove",
   "track": "vocab",
-  "order": 296
+  "order": 295
  },
  {
   "id": "exterior--noun",
@@ -3561,7 +3549,7 @@
   "rank": 13611,
   "source": "Octanove",
   "track": "vocab",
-  "order": 297
+  "order": 296
  },
  {
   "id": "crave--verb",
@@ -3573,7 +3561,7 @@
   "rank": 13662,
   "source": "Octanove",
   "track": "vocab",
-  "order": 298
+  "order": 297
  },
  {
   "id": "turmoil--noun",
@@ -3585,7 +3573,7 @@
   "rank": 13666,
   "source": "Octanove",
   "track": "vocab",
-  "order": 299
+  "order": 298
  },
  {
   "id": "oblige--verb",
@@ -3597,7 +3585,7 @@
   "rank": 13691,
   "source": "Octanove",
   "track": "vocab",
-  "order": 300
+  "order": 299
  },
  {
   "id": "ferocious--adj",
@@ -3609,7 +3597,7 @@
   "rank": 13698,
   "source": "Octanove",
   "track": "vocab",
-  "order": 301
+  "order": 300
  },
  {
   "id": "plaque--noun",
@@ -3621,7 +3609,7 @@
   "rank": 13710,
   "source": "Octanove",
   "track": "vocab",
-  "order": 302
+  "order": 301
  },
  {
   "id": "snail--noun",
@@ -3633,7 +3621,7 @@
   "rank": 13754,
   "source": "Octanove",
   "track": "vocab",
-  "order": 303
+  "order": 302
  },
  {
   "id": "fiend--noun",
@@ -3645,7 +3633,7 @@
   "rank": 13760,
   "source": "Octanove",
   "track": "vocab",
-  "order": 304
+  "order": 303
  },
  {
   "id": "voluntary--adj",
@@ -3657,7 +3645,7 @@
   "rank": 13764,
   "source": "Octanove",
   "track": "vocab",
-  "order": 305
+  "order": 304
  },
  {
   "id": "hostility--noun",
@@ -3669,7 +3657,7 @@
   "rank": 13840,
   "source": "Octanove",
   "track": "vocab",
-  "order": 306
+  "order": 305
  },
  {
   "id": "diversity--noun",
@@ -3681,7 +3669,7 @@
   "rank": 13894,
   "source": "Octanove",
   "track": "vocab",
-  "order": 307
+  "order": 306
  },
  {
   "id": "orchard--noun",
@@ -3693,7 +3681,7 @@
   "rank": 13917,
   "source": "Octanove",
   "track": "vocab",
-  "order": 308
+  "order": 307
  },
  {
   "id": "refresh--verb",
@@ -3705,7 +3693,7 @@
   "rank": 13955,
   "source": "Octanove",
   "track": "vocab",
-  "order": 309
+  "order": 308
  },
  {
   "id": "collaboration--noun",
@@ -3717,7 +3705,7 @@
   "rank": 13970,
   "source": "Octanove",
   "track": "vocab",
-  "order": 310
+  "order": 309
  },
  {
   "id": "reassure--verb",
@@ -3729,7 +3717,7 @@
   "rank": 13999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 311
+  "order": 310
  },
  {
   "id": "crumble--verb",
@@ -3741,7 +3729,7 @@
   "rank": 14044,
   "source": "Octanove",
   "track": "vocab",
-  "order": 312
+  "order": 311
  },
  {
   "id": "demolition--noun",
@@ -3753,7 +3741,7 @@
   "rank": 14060,
   "source": "Octanove",
   "track": "vocab",
-  "order": 313
+  "order": 312
  },
  {
   "id": "staggering--adj",
@@ -3765,7 +3753,7 @@
   "rank": 14105,
   "source": "Octanove",
   "track": "vocab",
-  "order": 314
+  "order": 313
  },
  {
   "id": "tedious--adj",
@@ -3777,7 +3765,7 @@
   "rank": 14131,
   "source": "Octanove",
   "track": "vocab",
-  "order": 315
+  "order": 314
  },
  {
   "id": "maternal--adj",
@@ -3789,7 +3777,7 @@
   "rank": 14244,
   "source": "Octanove",
   "track": "vocab",
-  "order": 316
+  "order": 315
  },
  {
   "id": "harass--verb",
@@ -3801,7 +3789,7 @@
   "rank": 14245,
   "source": "Octanove",
   "track": "vocab",
-  "order": 317
+  "order": 316
  },
  {
   "id": "plausible--adj",
@@ -3813,7 +3801,7 @@
   "rank": 14273,
   "source": "Octanove",
   "track": "vocab",
-  "order": 318
+  "order": 317
  },
  {
   "id": "restoration--noun",
@@ -3825,7 +3813,7 @@
   "rank": 14363,
   "source": "Octanove",
   "track": "vocab",
-  "order": 319
+  "order": 318
  },
  {
   "id": "midwife--noun",
@@ -3837,7 +3825,7 @@
   "rank": 14389,
   "source": "Octanove",
   "track": "vocab",
-  "order": 320
+  "order": 319
  },
  {
   "id": "reap--verb",
@@ -3849,7 +3837,7 @@
   "rank": 14399,
   "source": "Octanove",
   "track": "vocab",
-  "order": 321
+  "order": 320
  },
  {
   "id": "deceit--noun",
@@ -3861,7 +3849,7 @@
   "rank": 14402,
   "source": "Octanove",
   "track": "vocab",
-  "order": 322
+  "order": 321
  },
  {
   "id": "battered--adj",
@@ -3873,7 +3861,7 @@
   "rank": 14410,
   "source": "Octanove",
   "track": "vocab",
-  "order": 323
+  "order": 322
  },
  {
   "id": "peninsula--noun",
@@ -3885,7 +3873,7 @@
   "rank": 14427,
   "source": "Octanove",
   "track": "vocab",
-  "order": 324
+  "order": 323
  },
  {
   "id": "radiator--noun",
@@ -3897,7 +3885,7 @@
   "rank": 14429,
   "source": "Octanove",
   "track": "vocab",
-  "order": 325
+  "order": 324
  },
  {
   "id": "somber--adj",
@@ -3909,7 +3897,7 @@
   "rank": 14437,
   "source": "Octanove",
   "track": "vocab",
-  "order": 326
+  "order": 325
  },
  {
   "id": "indefinitely--adv",
@@ -3921,7 +3909,7 @@
   "rank": 14455,
   "source": "Octanove",
   "track": "vocab",
-  "order": 327
+  "order": 326
  },
  {
   "id": "manipulation--noun",
@@ -3933,7 +3921,7 @@
   "rank": 14474,
   "source": "Octanove",
   "track": "vocab",
-  "order": 328
+  "order": 327
  },
  {
   "id": "ploy--noun",
@@ -3945,7 +3933,7 @@
   "rank": 14528,
   "source": "Octanove",
   "track": "vocab",
-  "order": 329
+  "order": 328
  },
  {
   "id": "suburban--adj",
@@ -3957,7 +3945,7 @@
   "rank": 14529,
   "source": "Octanove",
   "track": "vocab",
-  "order": 330
+  "order": 329
  },
  {
   "id": "muscular--adj",
@@ -3969,7 +3957,7 @@
   "rank": 14604,
   "source": "Octanove",
   "track": "vocab",
-  "order": 331
+  "order": 330
  },
  {
   "id": "incision--noun",
@@ -3981,7 +3969,7 @@
   "rank": 14627,
   "source": "Octanove",
   "track": "vocab",
-  "order": 332
+  "order": 331
  },
  {
   "id": "slob--noun",
@@ -3993,7 +3981,7 @@
   "rank": 14656,
   "source": "Octanove",
   "track": "vocab",
-  "order": 333
+  "order": 332
  },
  {
   "id": "rotate--verb",
@@ -4005,7 +3993,7 @@
   "rank": 14704,
   "source": "Octanove",
   "track": "vocab",
-  "order": 334
+  "order": 333
  },
  {
   "id": "timid--adj",
@@ -4017,7 +4005,7 @@
   "rank": 14897,
   "source": "Octanove",
   "track": "vocab",
-  "order": 335
+  "order": 334
  },
  {
   "id": "confide--verb",
@@ -4029,7 +4017,7 @@
   "rank": 14908,
   "source": "Octanove",
   "track": "vocab",
-  "order": 336
+  "order": 335
  },
  {
   "id": "customary--adj",
@@ -4041,7 +4029,7 @@
   "rank": 14933,
   "source": "Octanove",
   "track": "vocab",
-  "order": 337
+  "order": 336
  },
  {
   "id": "simplicity--noun",
@@ -4053,7 +4041,7 @@
   "rank": 14938,
   "source": "Octanove",
   "track": "vocab",
-  "order": 338
+  "order": 337
  },
  {
   "id": "ventilation--noun",
@@ -4065,7 +4053,7 @@
   "rank": 14952,
   "source": "Octanove",
   "track": "vocab",
-  "order": 339
+  "order": 338
  },
  {
   "id": "buffer--verb",
@@ -4077,7 +4065,7 @@
   "rank": 14974,
   "source": "Octanove",
   "track": "vocab",
-  "order": 340
+  "order": 339
  },
  {
   "id": "buffer--noun",
@@ -4089,7 +4077,7 @@
   "rank": 14974,
   "source": "Octanove",
   "track": "vocab",
-  "order": 341
+  "order": 340
  },
  {
   "id": "boast--noun",
@@ -4101,7 +4089,7 @@
   "rank": 15065,
   "source": "Octanove",
   "track": "vocab",
-  "order": 342
+  "order": 341
  },
  {
   "id": "gourmet--adj",
@@ -4113,7 +4101,7 @@
   "rank": 15074,
   "source": "Octanove",
   "track": "vocab",
-  "order": 343
+  "order": 342
  },
  {
   "id": "gourmet--noun",
@@ -4125,7 +4113,7 @@
   "rank": 15074,
   "source": "Octanove",
   "track": "vocab",
-  "order": 344
+  "order": 343
  },
  {
   "id": "frosty--adj",
@@ -4137,7 +4125,7 @@
   "rank": 15119,
   "source": "Octanove",
   "track": "vocab",
-  "order": 345
+  "order": 344
  },
  {
   "id": "criteria--noun",
@@ -4149,7 +4137,7 @@
   "rank": 15208,
   "source": "Octanove",
   "track": "vocab",
-  "order": 346
+  "order": 345
  },
  {
   "id": "hypocrisy--noun",
@@ -4161,7 +4149,7 @@
   "rank": 15255,
   "source": "Octanove",
   "track": "vocab",
-  "order": 347
+  "order": 346
  },
  {
   "id": "psyche--noun",
@@ -4173,7 +4161,7 @@
   "rank": 15300,
   "source": "Octanove",
   "track": "vocab",
-  "order": 348
+  "order": 347
  },
  {
   "id": "succession--noun",
@@ -4185,7 +4173,7 @@
   "rank": 15341,
   "source": "Octanove",
   "track": "vocab",
-  "order": 349
+  "order": 348
  },
  {
   "id": "structural--adj",
@@ -4197,7 +4185,7 @@
   "rank": 15344,
   "source": "Octanove",
   "track": "vocab",
-  "order": 350
+  "order": 349
  },
  {
   "id": "atmospheric--adj",
@@ -4209,7 +4197,7 @@
   "rank": 15346,
   "source": "Octanove",
   "track": "vocab",
-  "order": 351
+  "order": 350
  },
  {
   "id": "flask--noun",
@@ -4221,7 +4209,7 @@
   "rank": 15359,
   "source": "Octanove",
   "track": "vocab",
-  "order": 352
+  "order": 351
  },
  {
   "id": "bearded--adj",
@@ -4233,7 +4221,7 @@
   "rank": 15370,
   "source": "Octanove",
   "track": "vocab",
-  "order": 353
+  "order": 352
  },
  {
   "id": "domination--noun",
@@ -4245,7 +4233,7 @@
   "rank": 15383,
   "source": "Octanove",
   "track": "vocab",
-  "order": 354
+  "order": 353
  },
  {
   "id": "persecution--noun",
@@ -4257,7 +4245,7 @@
   "rank": 15416,
   "source": "Octanove",
   "track": "vocab",
-  "order": 355
+  "order": 354
  },
  {
   "id": "consultation--noun",
@@ -4269,7 +4257,7 @@
   "rank": 15521,
   "source": "Octanove",
   "track": "vocab",
-  "order": 356
+  "order": 355
  },
  {
   "id": "agreeable--adj",
@@ -4281,7 +4269,7 @@
   "rank": 15522,
   "source": "Octanove",
   "track": "vocab",
-  "order": 357
+  "order": 356
  },
  {
   "id": "speculate--verb",
@@ -4293,7 +4281,7 @@
   "rank": 15553,
   "source": "Octanove",
   "track": "vocab",
-  "order": 358
+  "order": 357
  },
  {
   "id": "bribery--noun",
@@ -4305,7 +4293,7 @@
   "rank": 15648,
   "source": "Octanove",
   "track": "vocab",
-  "order": 359
+  "order": 358
  },
  {
   "id": "geological--adj",
@@ -4317,7 +4305,7 @@
   "rank": 15653,
   "source": "Octanove",
   "track": "vocab",
-  "order": 360
+  "order": 359
  },
  {
   "id": "wary--adj",
@@ -4329,7 +4317,7 @@
   "rank": 15696,
   "source": "Octanove",
   "track": "vocab",
-  "order": 361
+  "order": 360
  },
  {
   "id": "stamina--noun",
@@ -4341,7 +4329,7 @@
   "rank": 15708,
   "source": "Octanove",
   "track": "vocab",
-  "order": 362
+  "order": 361
  },
  {
   "id": "graft--verb",
@@ -4353,7 +4341,7 @@
   "rank": 15943,
   "source": "Octanove",
   "track": "vocab",
-  "order": 363
+  "order": 362
  },
  {
   "id": "sequel--noun",
@@ -4365,7 +4353,7 @@
   "rank": 15973,
   "source": "Octanove",
   "track": "vocab",
-  "order": 364
+  "order": 363
  },
  {
   "id": "exploitation--noun",
@@ -4377,7 +4365,7 @@
   "rank": 16037,
   "source": "Octanove",
   "track": "vocab",
-  "order": 365
+  "order": 364
  },
  {
   "id": "vegetation--noun",
@@ -4389,7 +4377,7 @@
   "rank": 16060,
   "source": "Octanove",
   "track": "vocab",
-  "order": 366
+  "order": 365
  },
  {
   "id": "spartan--adj",
@@ -4401,7 +4389,7 @@
   "rank": 16136,
   "source": "Octanove",
   "track": "vocab",
-  "order": 367
+  "order": 366
  },
  {
   "id": "flattery--noun",
@@ -4413,7 +4401,7 @@
   "rank": 16366,
   "source": "Octanove",
   "track": "vocab",
-  "order": 368
+  "order": 367
  },
  {
   "id": "commend--verb",
@@ -4425,7 +4413,7 @@
   "rank": 16397,
   "source": "Octanove",
   "track": "vocab",
-  "order": 369
+  "order": 368
  },
  {
   "id": "thereby--adv",
@@ -4437,7 +4425,7 @@
   "rank": 16417,
   "source": "Octanove",
   "track": "vocab",
-  "order": 370
+  "order": 369
  },
  {
   "id": "acre--noun",
@@ -4449,7 +4437,7 @@
   "rank": 16448,
   "source": "Octanove",
   "track": "vocab",
-  "order": 371
+  "order": 370
  },
  {
   "id": "itinerary--noun",
@@ -4461,7 +4449,7 @@
   "rank": 16548,
   "source": "Octanove",
   "track": "vocab",
-  "order": 372
+  "order": 371
  },
  {
   "id": "apt--adj",
@@ -4473,7 +4461,7 @@
   "rank": 16592,
   "source": "Octanove",
   "track": "vocab",
-  "order": 373
+  "order": 372
  },
  {
   "id": "oversee--verb",
@@ -4485,7 +4473,7 @@
   "rank": 16651,
   "source": "Octanove",
   "track": "vocab",
-  "order": 374
+  "order": 373
  },
  {
   "id": "fanatic--noun",
@@ -4497,7 +4485,7 @@
   "rank": 16663,
   "source": "Octanove",
   "track": "vocab",
-  "order": 375
+  "order": 374
  },
  {
   "id": "fanatic--adj",
@@ -4509,7 +4497,7 @@
   "rank": 16663,
   "source": "Octanove",
   "track": "vocab",
-  "order": 376
+  "order": 375
  },
  {
   "id": "acoustic--adj",
@@ -4521,7 +4509,7 @@
   "rank": 16667,
   "source": "Octanove",
   "track": "vocab",
-  "order": 377
+  "order": 376
  },
  {
   "id": "enormously--adv",
@@ -4533,7 +4521,7 @@
   "rank": 16676,
   "source": "Octanove",
   "track": "vocab",
-  "order": 378
+  "order": 377
  },
  {
   "id": "twitch--verb",
@@ -4545,7 +4533,7 @@
   "rank": 16721,
   "source": "Octanove",
   "track": "vocab",
-  "order": 379
+  "order": 378
  },
  {
   "id": "twitch--noun",
@@ -4557,7 +4545,7 @@
   "rank": 16721,
   "source": "Octanove",
   "track": "vocab",
-  "order": 380
+  "order": 379
  },
  {
   "id": "ludicrous--adj",
@@ -4569,7 +4557,7 @@
   "rank": 16733,
   "source": "Octanove",
   "track": "vocab",
-  "order": 381
+  "order": 380
  },
  {
   "id": "predecessor--noun",
@@ -4581,7 +4569,7 @@
   "rank": 16746,
   "source": "Octanove",
   "track": "vocab",
-  "order": 382
+  "order": 381
  },
  {
   "id": "provocative--adj",
@@ -4593,7 +4581,7 @@
   "rank": 16881,
   "source": "Octanove",
   "track": "vocab",
-  "order": 383
+  "order": 382
  },
  {
   "id": "complimentary--adj",
@@ -4605,7 +4593,7 @@
   "rank": 16884,
   "source": "Octanove",
   "track": "vocab",
-  "order": 384
+  "order": 383
  },
  {
   "id": "neutralize--verb",
@@ -4617,7 +4605,7 @@
   "rank": 16961,
   "source": "Octanove",
   "track": "vocab",
-  "order": 385
+  "order": 384
  },
  {
   "id": "manicure--noun",
@@ -4629,7 +4617,7 @@
   "rank": 16964,
   "source": "Octanove",
   "track": "vocab",
-  "order": 386
+  "order": 385
  },
  {
   "id": "manicure--verb",
@@ -4641,7 +4629,7 @@
   "rank": 16964,
   "source": "Octanove",
   "track": "vocab",
-  "order": 387
+  "order": 386
  },
  {
   "id": "endorsement--noun",
@@ -4653,7 +4641,7 @@
   "rank": 17080,
   "source": "Octanove",
   "track": "vocab",
-  "order": 388
+  "order": 387
  },
  {
   "id": "immensely--adv",
@@ -4665,7 +4653,7 @@
   "rank": 17157,
   "source": "Octanove",
   "track": "vocab",
-  "order": 389
+  "order": 388
  },
  {
   "id": "adversary--noun",
@@ -4677,7 +4665,7 @@
   "rank": 17219,
   "source": "Octanove",
   "track": "vocab",
-  "order": 390
+  "order": 389
  },
  {
   "id": "unison--noun",
@@ -4689,7 +4677,7 @@
   "rank": 17237,
   "source": "Octanove",
   "track": "vocab",
-  "order": 391
+  "order": 390
  },
  {
   "id": "profoundly--adv",
@@ -4701,7 +4689,7 @@
   "rank": 17281,
   "source": "Octanove",
   "track": "vocab",
-  "order": 392
+  "order": 391
  },
  {
   "id": "startling--adj",
@@ -4713,7 +4701,7 @@
   "rank": 17366,
   "source": "Octanove",
   "track": "vocab",
-  "order": 393
+  "order": 392
  },
  {
   "id": "grapefruit--noun",
@@ -4725,7 +4713,7 @@
   "rank": 17472,
   "source": "Octanove",
   "track": "vocab",
-  "order": 394
+  "order": 393
  },
  {
   "id": "ingenuity--noun",
@@ -4737,7 +4725,7 @@
   "rank": 17567,
   "source": "Octanove",
   "track": "vocab",
-  "order": 395
+  "order": 394
  },
  {
   "id": "ghostly--adj",
@@ -4749,7 +4737,7 @@
   "rank": 17622,
   "source": "Octanove",
   "track": "vocab",
-  "order": 396
+  "order": 395
  },
  {
   "id": "bubbly--adj",
@@ -4761,7 +4749,7 @@
   "rank": 17628,
   "source": "Octanove",
   "track": "vocab",
-  "order": 397
+  "order": 396
  },
  {
   "id": "embark--verb",
@@ -4773,7 +4761,7 @@
   "rank": 17697,
   "source": "Octanove",
   "track": "vocab",
-  "order": 398
+  "order": 397
  },
  {
   "id": "benign--adj",
@@ -4785,7 +4773,7 @@
   "rank": 17723,
   "source": "Octanove",
   "track": "vocab",
-  "order": 399
+  "order": 398
  },
  {
   "id": "mutually--adv",
@@ -4797,7 +4785,7 @@
   "rank": 17809,
   "source": "Octanove",
   "track": "vocab",
-  "order": 400
+  "order": 399
  },
  {
   "id": "faction--noun",
@@ -4809,7 +4797,7 @@
   "rank": 17886,
   "source": "Octanove",
   "track": "vocab",
-  "order": 401
+  "order": 400
  },
  {
   "id": "aesthetic--adj",
@@ -4821,7 +4809,7 @@
   "rank": 17911,
   "source": "Octanove",
   "track": "vocab",
-  "order": 402
+  "order": 401
  },
  {
   "id": "compel--verb",
@@ -4833,7 +4821,7 @@
   "rank": 17949,
   "source": "Octanove",
   "track": "vocab",
-  "order": 403
+  "order": 402
  },
  {
   "id": "conservatory--noun",
@@ -4845,7 +4833,7 @@
   "rank": 18040,
   "source": "Octanove",
   "track": "vocab",
-  "order": 404
+  "order": 403
  },
  {
   "id": "ordinarily--adv",
@@ -4857,7 +4845,7 @@
   "rank": 18083,
   "source": "Octanove",
   "track": "vocab",
-  "order": 405
+  "order": 404
  },
  {
   "id": "perceptive--adj",
@@ -4869,7 +4857,7 @@
   "rank": 18093,
   "source": "Octanove",
   "track": "vocab",
-  "order": 406
+  "order": 405
  },
  {
   "id": "degrading--adj",
@@ -4881,7 +4869,7 @@
   "rank": 18164,
   "source": "Octanove",
   "track": "vocab",
-  "order": 407
+  "order": 406
  },
  {
   "id": "likelihood--noun",
@@ -4893,7 +4881,7 @@
   "rank": 18270,
   "source": "Octanove",
   "track": "vocab",
-  "order": 408
+  "order": 407
  },
  {
   "id": "scrutiny--noun",
@@ -4905,7 +4893,7 @@
   "rank": 18301,
   "source": "Octanove",
   "track": "vocab",
-  "order": 409
+  "order": 408
  },
  {
   "id": "invoice--noun",
@@ -4917,7 +4905,7 @@
   "rank": 18302,
   "source": "Octanove",
   "track": "vocab",
-  "order": 410
+  "order": 409
  },
  {
   "id": "sprout--verb",
@@ -4929,7 +4917,7 @@
   "rank": 18305,
   "source": "Octanove",
   "track": "vocab",
-  "order": 411
+  "order": 410
  },
  {
   "id": "sprout--noun",
@@ -4941,7 +4929,7 @@
   "rank": 18305,
   "source": "Octanove",
   "track": "vocab",
-  "order": 412
+  "order": 411
  },
  {
   "id": "temperament--noun",
@@ -4953,7 +4941,7 @@
   "rank": 18327,
   "source": "Octanove",
   "track": "vocab",
-  "order": 413
+  "order": 412
  },
  {
   "id": "suitor--noun",
@@ -4965,7 +4953,7 @@
   "rank": 18335,
   "source": "Octanove",
   "track": "vocab",
-  "order": 414
+  "order": 413
  },
  {
   "id": "waterfront--noun",
@@ -4977,7 +4965,7 @@
   "rank": 18370,
   "source": "Octanove",
   "track": "vocab",
-  "order": 415
+  "order": 414
  },
  {
   "id": "candid--adj",
@@ -4989,7 +4977,7 @@
   "rank": 18510,
   "source": "Octanove",
   "track": "vocab",
-  "order": 416
+  "order": 415
  },
  {
   "id": "detest--verb",
@@ -5001,7 +4989,7 @@
   "rank": 18556,
   "source": "Octanove",
   "track": "vocab",
-  "order": 417
+  "order": 416
  },
  {
   "id": "robust--adj",
@@ -5013,7 +5001,7 @@
   "rank": 18606,
   "source": "Octanove",
   "track": "vocab",
-  "order": 418
+  "order": 417
  },
  {
   "id": "relapse--verb",
@@ -5025,7 +5013,7 @@
   "rank": 18629,
   "source": "Octanove",
   "track": "vocab",
-  "order": 419
+  "order": 418
  },
  {
   "id": "relapse--noun",
@@ -5037,7 +5025,7 @@
   "rank": 18629,
   "source": "Octanove",
   "track": "vocab",
-  "order": 420
+  "order": 419
  },
  {
   "id": "claustrophobic--adj",
@@ -5049,7 +5037,7 @@
   "rank": 18639,
   "source": "Octanove",
   "track": "vocab",
-  "order": 421
+  "order": 420
  },
  {
   "id": "rustle--verb",
@@ -5061,7 +5049,7 @@
   "rank": 18670,
   "source": "Octanove",
   "track": "vocab",
-  "order": 422
+  "order": 421
  },
  {
   "id": "rustle--noun",
@@ -5073,7 +5061,7 @@
   "rank": 18670,
   "source": "Octanove",
   "track": "vocab",
-  "order": 423
+  "order": 422
  },
  {
   "id": "recharge--verb",
@@ -5085,7 +5073,7 @@
   "rank": 18693,
   "source": "Octanove",
   "track": "vocab",
-  "order": 424
+  "order": 423
  },
  {
   "id": "unsettling--adj",
@@ -5097,7 +5085,7 @@
   "rank": 18730,
   "source": "Octanove",
   "track": "vocab",
-  "order": 425
+  "order": 424
  },
  {
   "id": "lapse--noun",
@@ -5109,7 +5097,7 @@
   "rank": 18745,
   "source": "Octanove",
   "track": "vocab",
-  "order": 426
+  "order": 425
  },
  {
   "id": "lapse--verb",
@@ -5121,7 +5109,7 @@
   "rank": 18745,
   "source": "Octanove",
   "track": "vocab",
-  "order": 427
+  "order": 426
  },
  {
   "id": "rarity--noun",
@@ -5133,7 +5121,7 @@
   "rank": 18790,
   "source": "Octanove",
   "track": "vocab",
-  "order": 428
+  "order": 427
  },
  {
   "id": "creamy--adj",
@@ -5145,7 +5133,7 @@
   "rank": 18794,
   "source": "Octanove",
   "track": "vocab",
-  "order": 429
+  "order": 428
  },
  {
   "id": "lavatory--noun",
@@ -5157,7 +5145,7 @@
   "rank": 18811,
   "source": "Octanove",
   "track": "vocab",
-  "order": 430
+  "order": 429
  },
  {
   "id": "aqua--adj",
@@ -5169,7 +5157,7 @@
   "rank": 18836,
   "source": "Octanove",
   "track": "vocab",
-  "order": 431
+  "order": 430
  },
  {
   "id": "continuity--noun",
@@ -5181,7 +5169,7 @@
   "rank": 18870,
   "source": "Octanove",
   "track": "vocab",
-  "order": 432
+  "order": 431
  },
  {
   "id": "scorn--noun",
@@ -5193,7 +5181,7 @@
   "rank": 18877,
   "source": "Octanove",
   "track": "vocab",
-  "order": 433
+  "order": 432
  },
  {
   "id": "staple--noun",
@@ -5205,7 +5193,7 @@
   "rank": 18878,
   "source": "Octanove",
   "track": "vocab",
-  "order": 434
+  "order": 433
  },
  {
   "id": "prospective--adj",
@@ -5217,7 +5205,7 @@
   "rank": 18923,
   "source": "Octanove",
   "track": "vocab",
-  "order": 435
+  "order": 434
  },
  {
   "id": "crumb--noun",
@@ -5229,7 +5217,7 @@
   "rank": 18947,
   "source": "Octanove",
   "track": "vocab",
-  "order": 436
+  "order": 435
  },
  {
   "id": "limitless--adj",
@@ -5241,7 +5229,7 @@
   "rank": 18948,
   "source": "Octanove",
   "track": "vocab",
-  "order": 437
+  "order": 436
  },
  {
   "id": "otter--noun",
@@ -5253,7 +5241,7 @@
   "rank": 18979,
   "source": "Octanove",
   "track": "vocab",
-  "order": 438
+  "order": 437
  },
  {
   "id": "elastic--noun",
@@ -5265,7 +5253,7 @@
   "rank": 18995,
   "source": "Octanove",
   "track": "vocab",
-  "order": 439
+  "order": 438
  },
  {
   "id": "elastic--adj",
@@ -5277,7 +5265,7 @@
   "rank": 18995,
   "source": "Octanove",
   "track": "vocab",
-  "order": 440
+  "order": 439
  },
  {
   "id": "flashback--noun",
@@ -5289,7 +5277,7 @@
   "rank": 19044,
   "source": "Octanove",
   "track": "vocab",
-  "order": 441
+  "order": 440
  },
  {
   "id": "linear--adj",
@@ -5301,7 +5289,7 @@
   "rank": 19109,
   "source": "Octanove",
   "track": "vocab",
-  "order": 442
+  "order": 441
  },
  {
   "id": "hypocritical--adj",
@@ -5313,7 +5301,7 @@
   "rank": 19208,
   "source": "Octanove",
   "track": "vocab",
-  "order": 443
+  "order": 442
  },
  {
   "id": "unconventional--adj",
@@ -5325,7 +5313,7 @@
   "rank": 19317,
   "source": "Octanove",
   "track": "vocab",
-  "order": 444
+  "order": 443
  },
  {
   "id": "discard--verb",
@@ -5337,7 +5325,7 @@
   "rank": 19332,
   "source": "Octanove",
   "track": "vocab",
-  "order": 445
+  "order": 444
  },
  {
   "id": "alignment--noun",
@@ -5349,7 +5337,7 @@
   "rank": 19356,
   "source": "Octanove",
   "track": "vocab",
-  "order": 446
+  "order": 445
  },
  {
   "id": "silhouette--noun",
@@ -5361,7 +5349,7 @@
   "rank": 19389,
   "source": "Octanove",
   "track": "vocab",
-  "order": 447
+  "order": 446
  },
  {
   "id": "collaborate--verb",
@@ -5373,7 +5361,7 @@
   "rank": 19457,
   "source": "Octanove",
   "track": "vocab",
-  "order": 448
+  "order": 447
  },
  {
   "id": "tantrum--noun",
@@ -5385,7 +5373,7 @@
   "rank": 19525,
   "source": "Octanove",
   "track": "vocab",
-  "order": 449
+  "order": 448
  },
  {
   "id": "genome--noun",
@@ -5397,7 +5385,7 @@
   "rank": 19543,
   "source": "Octanove",
   "track": "vocab",
-  "order": 450
+  "order": 449
  },
  {
   "id": "compulsion--noun",
@@ -5409,7 +5397,7 @@
   "rank": 19563,
   "source": "Octanove",
   "track": "vocab",
-  "order": 451
+  "order": 450
  },
  {
   "id": "amid--prep",
@@ -5421,7 +5409,7 @@
   "rank": 19593,
   "source": "Octanove",
   "track": "grammar",
-  "order": 452
+  "order": 451
  },
  {
   "id": "dispense--verb",
@@ -5433,7 +5421,7 @@
   "rank": 19595,
   "source": "Octanove",
   "track": "vocab",
-  "order": 453
+  "order": 452
  },
  {
   "id": "occupational--adj",
@@ -5445,7 +5433,7 @@
   "rank": 19598,
   "source": "Octanove",
   "track": "vocab",
-  "order": 454
+  "order": 453
  },
  {
   "id": "firewall--noun",
@@ -5457,7 +5445,7 @@
   "rank": 19694,
   "source": "Octanove",
   "track": "vocab",
-  "order": 455
+  "order": 454
  },
  {
   "id": "conserve--verb",
@@ -5469,7 +5457,7 @@
   "rank": 19698,
   "source": "Octanove",
   "track": "vocab",
-  "order": 456
+  "order": 455
  },
  {
   "id": "tract--noun",
@@ -5481,7 +5469,7 @@
   "rank": 19743,
   "source": "Octanove",
   "track": "vocab",
-  "order": 457
+  "order": 456
  },
  {
   "id": "spacious--adj",
@@ -5493,7 +5481,7 @@
   "rank": 19866,
   "source": "Octanove",
   "track": "vocab",
-  "order": 458
+  "order": 457
  },
  {
   "id": "conjure--verb",
@@ -5505,7 +5493,7 @@
   "rank": 19926,
   "source": "Octanove",
   "track": "vocab",
-  "order": 459
+  "order": 458
  },
  {
   "id": "spontaneously--adv",
@@ -5517,7 +5505,7 @@
   "rank": 19964,
   "source": "Octanove",
   "track": "vocab",
-  "order": 460
+  "order": 459
  },
  {
   "id": "premise--noun",
@@ -5529,7 +5517,7 @@
   "rank": 19976,
   "source": "Octanove",
   "track": "vocab",
-  "order": 461
+  "order": 460
  },
  {
   "id": "self-conscious--adj",
@@ -5541,7 +5529,7 @@
   "rank": 20005,
   "source": "Octanove",
   "track": "vocab",
-  "order": 462
+  "order": 461
  },
  {
   "id": "sustainable--adj",
@@ -5553,7 +5541,7 @@
   "rank": 20060,
   "source": "Octanove",
   "track": "vocab",
-  "order": 463
+  "order": 462
  },
  {
   "id": "deprivation--noun",
@@ -5565,7 +5553,7 @@
   "rank": 20090,
   "source": "Octanove",
   "track": "vocab",
-  "order": 464
+  "order": 463
  },
  {
   "id": "tycoon--noun",
@@ -5577,7 +5565,7 @@
   "rank": 20128,
   "source": "Octanove",
   "track": "vocab",
-  "order": 465
+  "order": 464
  },
  {
   "id": "quirky--adj",
@@ -5589,7 +5577,7 @@
   "rank": 20155,
   "source": "Octanove",
   "track": "vocab",
-  "order": 466
+  "order": 465
  },
  {
   "id": "quirky--noun",
@@ -5601,7 +5589,7 @@
   "rank": 20155,
   "source": "Octanove",
   "track": "vocab",
-  "order": 467
+  "order": 466
  },
  {
   "id": "fiercely--adv",
@@ -5613,7 +5601,7 @@
   "rank": 20166,
   "source": "Octanove",
   "track": "vocab",
-  "order": 468
+  "order": 467
  },
  {
   "id": "implicate--verb",
@@ -5625,7 +5613,7 @@
   "rank": 20298,
   "source": "Octanove",
   "track": "vocab",
-  "order": 469
+  "order": 468
  },
  {
   "id": "exodus--noun",
@@ -5637,7 +5625,7 @@
   "rank": 20388,
   "source": "Octanove",
   "track": "vocab",
-  "order": 470
+  "order": 469
  },
  {
   "id": "revere--verb",
@@ -5649,7 +5637,7 @@
   "rank": 20455,
   "source": "Octanove",
   "track": "vocab",
-  "order": 471
+  "order": 470
  },
  {
   "id": "conscientious--adj",
@@ -5661,7 +5649,7 @@
   "rank": 20480,
   "source": "Octanove",
   "track": "vocab",
-  "order": 472
+  "order": 471
  },
  {
   "id": "overalls--noun",
@@ -5673,7 +5661,7 @@
   "rank": 20532,
   "source": "Octanove",
   "track": "vocab",
-  "order": 473
+  "order": 472
  },
  {
   "id": "insubordination--noun",
@@ -5685,7 +5673,7 @@
   "rank": 20536,
   "source": "Octanove",
   "track": "vocab",
-  "order": 474
+  "order": 473
  },
  {
   "id": "nocturnal--adj",
@@ -5697,7 +5685,7 @@
   "rank": 20568,
   "source": "Octanove",
   "track": "vocab",
-  "order": 475
+  "order": 474
  },
  {
   "id": "tranquility--noun",
@@ -5709,7 +5697,7 @@
   "rank": 20682,
   "source": "Octanove",
   "track": "vocab",
-  "order": 476
+  "order": 475
  },
  {
   "id": "exert--verb",
@@ -5721,7 +5709,7 @@
   "rank": 20712,
   "source": "Octanove",
   "track": "vocab",
-  "order": 477
+  "order": 476
  },
  {
   "id": "chisel--verb",
@@ -5733,7 +5721,7 @@
   "rank": 20777,
   "source": "Octanove",
   "track": "vocab",
-  "order": 478
+  "order": 477
  },
  {
   "id": "concerto--noun",
@@ -5745,7 +5733,7 @@
   "rank": 20822,
   "source": "Octanove",
   "track": "vocab",
-  "order": 479
+  "order": 478
  },
  {
   "id": "align--verb",
@@ -5757,7 +5745,7 @@
   "rank": 20834,
   "source": "Octanove",
   "track": "vocab",
-  "order": 480
+  "order": 479
  },
  {
   "id": "sanctity--noun",
@@ -5769,7 +5757,7 @@
   "rank": 20835,
   "source": "Octanove",
   "track": "vocab",
-  "order": 481
+  "order": 480
  },
  {
   "id": "unplug--verb",
@@ -5781,7 +5769,7 @@
   "rank": 20855,
   "source": "Octanove",
   "track": "vocab",
-  "order": 482
+  "order": 481
  },
  {
   "id": "subordinate--noun",
@@ -5793,7 +5781,7 @@
   "rank": 20859,
   "source": "Octanove",
   "track": "vocab",
-  "order": 483
+  "order": 482
  },
  {
   "id": "resilient--adj",
@@ -5805,7 +5793,7 @@
   "rank": 20955,
   "source": "Octanove",
   "track": "vocab",
-  "order": 484
+  "order": 483
  },
  {
   "id": "buffoon--noun",
@@ -5817,7 +5805,7 @@
   "rank": 21042,
   "source": "Octanove",
   "track": "vocab",
-  "order": 485
+  "order": 484
  },
  {
   "id": "pounce--verb",
@@ -5829,7 +5817,7 @@
   "rank": 21103,
   "source": "Octanove",
   "track": "vocab",
-  "order": 486
+  "order": 485
  },
  {
   "id": "antics--noun",
@@ -5841,7 +5829,7 @@
   "rank": 21132,
   "source": "Octanove",
   "track": "vocab",
-  "order": 487
+  "order": 486
  },
  {
   "id": "trampoline--noun",
@@ -5853,7 +5841,7 @@
   "rank": 21136,
   "source": "Octanove",
   "track": "vocab",
-  "order": 488
+  "order": 487
  },
  {
   "id": "niche--noun",
@@ -5865,7 +5853,7 @@
   "rank": 21183,
   "source": "Octanove",
   "track": "vocab",
-  "order": 489
+  "order": 488
  },
  {
   "id": "realism--noun",
@@ -5877,7 +5865,7 @@
   "rank": 21301,
   "source": "Octanove",
   "track": "vocab",
-  "order": 490
+  "order": 489
  },
  {
   "id": "circulate--verb",
@@ -5889,7 +5877,7 @@
   "rank": 21303,
   "source": "Octanove",
   "track": "vocab",
-  "order": 491
+  "order": 490
  },
  {
   "id": "prowl--verb",
@@ -5901,7 +5889,7 @@
   "rank": 21314,
   "source": "Octanove",
   "track": "vocab",
-  "order": 492
+  "order": 491
  },
  {
   "id": "glum--adj",
@@ -5913,7 +5901,7 @@
   "rank": 21389,
   "source": "Octanove",
   "track": "vocab",
-  "order": 493
+  "order": 492
  },
  {
   "id": "snooze--verb",
@@ -5925,7 +5913,7 @@
   "rank": 21395,
   "source": "Octanove",
   "track": "vocab",
-  "order": 494
+  "order": 493
  },
  {
   "id": "instinctively--adv",
@@ -5937,7 +5925,7 @@
   "rank": 21408,
   "source": "Octanove",
   "track": "vocab",
-  "order": 495
+  "order": 494
  },
  {
   "id": "fiddler--noun",
@@ -5949,7 +5937,7 @@
   "rank": 21499,
   "source": "Octanove",
   "track": "vocab",
-  "order": 496
+  "order": 495
  },
  {
   "id": "repel--verb",
@@ -5961,7 +5949,7 @@
   "rank": 21530,
   "source": "Octanove",
   "track": "vocab",
-  "order": 497
+  "order": 496
  },
  {
   "id": "exhilarating--adj",
@@ -5973,7 +5961,7 @@
   "rank": 21581,
   "source": "Octanove",
   "track": "vocab",
-  "order": 498
+  "order": 497
  },
  {
   "id": "tact--noun",
@@ -5985,7 +5973,7 @@
   "rank": 21586,
   "source": "Octanove",
   "track": "vocab",
-  "order": 499
+  "order": 498
  },
  {
   "id": "magnetism--noun",
@@ -5997,7 +5985,7 @@
   "rank": 21631,
   "source": "Octanove",
   "track": "vocab",
-  "order": 500
+  "order": 499
  },
  {
   "id": "tangle--verb",
@@ -6009,7 +5997,7 @@
   "rank": 21656,
   "source": "Octanove",
   "track": "vocab",
-  "order": 501
+  "order": 500
  },
  {
   "id": "tangle--noun",
@@ -6021,7 +6009,7 @@
   "rank": 21656,
   "source": "Octanove",
   "track": "vocab",
-  "order": 502
+  "order": 501
  },
  {
   "id": "elevation--noun",
@@ -6033,7 +6021,7 @@
   "rank": 21733,
   "source": "Octanove",
   "track": "vocab",
-  "order": 503
+  "order": 502
  },
  {
   "id": "rendering--noun",
@@ -6045,7 +6033,7 @@
   "rank": 21951,
   "source": "Octanove",
   "track": "vocab",
-  "order": 504
+  "order": 503
  },
  {
   "id": "pertinent--adj",
@@ -6057,7 +6045,7 @@
   "rank": 21973,
   "source": "Octanove",
   "track": "vocab",
-  "order": 505
+  "order": 504
  },
  {
   "id": "integral--adj",
@@ -6069,7 +6057,7 @@
   "rank": 21981,
   "source": "Octanove",
   "track": "vocab",
-  "order": 506
+  "order": 505
  },
  {
   "id": "inexplicable--adj",
@@ -6081,7 +6069,7 @@
   "rank": 21994,
   "source": "Octanove",
   "track": "vocab",
-  "order": 507
+  "order": 506
  },
  {
   "id": "intuitive--adj",
@@ -6093,7 +6081,7 @@
   "rank": 22039,
   "source": "Octanove",
   "track": "vocab",
-  "order": 508
+  "order": 507
  },
  {
   "id": "bureaucratic--adj",
@@ -6105,7 +6093,7 @@
   "rank": 22153,
   "source": "Octanove",
   "track": "vocab",
-  "order": 509
+  "order": 508
  },
  {
   "id": "dismal--adj",
@@ -6117,7 +6105,7 @@
   "rank": 22228,
   "source": "Octanove",
   "track": "vocab",
-  "order": 510
+  "order": 509
  },
  {
   "id": "shambles--noun",
@@ -6129,7 +6117,7 @@
   "rank": 22256,
   "source": "Octanove",
   "track": "vocab",
-  "order": 511
+  "order": 510
  },
  {
   "id": "inherent--adj",
@@ -6141,7 +6129,7 @@
   "rank": 22276,
   "source": "Octanove",
   "track": "vocab",
-  "order": 512
+  "order": 511
  },
  {
   "id": "reluctantly--adv",
@@ -6153,7 +6141,7 @@
   "rank": 22280,
   "source": "Octanove",
   "track": "vocab",
-  "order": 513
+  "order": 512
  },
  {
   "id": "concur--verb",
@@ -6165,7 +6153,7 @@
   "rank": 22323,
   "source": "Octanove",
   "track": "vocab",
-  "order": 514
+  "order": 513
  },
  {
   "id": "negligent--adj",
@@ -6177,7 +6165,7 @@
   "rank": 22333,
   "source": "Octanove",
   "track": "vocab",
-  "order": 515
+  "order": 514
  },
  {
   "id": "sedate--verb",
@@ -6189,7 +6177,7 @@
   "rank": 22399,
   "source": "Octanove",
   "track": "vocab",
-  "order": 516
+  "order": 515
  },
  {
   "id": "sedate--adj",
@@ -6201,7 +6189,7 @@
   "rank": 22399,
   "source": "Octanove",
   "track": "vocab",
-  "order": 517
+  "order": 516
  },
  {
   "id": "expire--verb",
@@ -6213,7 +6201,7 @@
   "rank": 22490,
   "source": "Octanove",
   "track": "vocab",
-  "order": 518
+  "order": 517
  },
  {
   "id": "compliance--noun",
@@ -6225,7 +6213,7 @@
   "rank": 22562,
   "source": "Octanove",
   "track": "vocab",
-  "order": 519
+  "order": 518
  },
  {
   "id": "latent--adj",
@@ -6237,7 +6225,7 @@
   "rank": 22617,
   "source": "Octanove",
   "track": "vocab",
-  "order": 520
+  "order": 519
  },
  {
   "id": "elevate--verb",
@@ -6249,7 +6237,7 @@
   "rank": 22705,
   "source": "Octanove",
   "track": "vocab",
-  "order": 521
+  "order": 520
  },
  {
   "id": "coupled--adj",
@@ -6261,7 +6249,7 @@
   "rank": 22765,
   "source": "Octanove",
   "track": "vocab",
-  "order": 522
+  "order": 521
  },
  {
   "id": "pinnacle--noun",
@@ -6273,7 +6261,7 @@
   "rank": 22781,
   "source": "Octanove",
   "track": "vocab",
-  "order": 523
+  "order": 522
  },
  {
   "id": "knowledgeable--adj",
@@ -6285,7 +6273,7 @@
   "rank": 22838,
   "source": "Octanove",
   "track": "vocab",
-  "order": 524
+  "order": 523
  },
  {
   "id": "versatile--adj",
@@ -6297,7 +6285,7 @@
   "rank": 22936,
   "source": "Octanove",
   "track": "vocab",
-  "order": 525
+  "order": 524
  },
  {
   "id": "gusto--noun",
@@ -6309,7 +6297,7 @@
   "rank": 22943,
   "source": "Octanove",
   "track": "vocab",
-  "order": 526
+  "order": 525
  },
  {
   "id": "vitality--noun",
@@ -6321,7 +6309,7 @@
   "rank": 22957,
   "source": "Octanove",
   "track": "vocab",
-  "order": 527
+  "order": 526
  },
  {
   "id": "pendulum--noun",
@@ -6333,7 +6321,7 @@
   "rank": 22971,
   "source": "Octanove",
   "track": "vocab",
-  "order": 528
+  "order": 527
  },
  {
   "id": "rapport--noun",
@@ -6345,7 +6333,7 @@
   "rank": 22992,
   "source": "Octanove",
   "track": "vocab",
-  "order": 529
+  "order": 528
  },
  {
   "id": "portray--verb",
@@ -6357,7 +6345,7 @@
   "rank": 22999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 530
+  "order": 529
  },
  {
   "id": "collaborator--noun",
@@ -6369,7 +6357,7 @@
   "rank": 23009,
   "source": "Octanove",
   "track": "vocab",
-  "order": 531
+  "order": 530
  },
  {
   "id": "anchored--adj",
@@ -6381,7 +6369,7 @@
   "rank": 23011,
   "source": "Octanove",
   "track": "vocab",
-  "order": 532
+  "order": 531
  },
  {
   "id": "blockbuster--noun",
@@ -6393,7 +6381,7 @@
   "rank": 23038,
   "source": "Octanove",
   "track": "vocab",
-  "order": 533
+  "order": 532
  },
  {
   "id": "tranquil--adj",
@@ -6405,7 +6393,7 @@
   "rank": 23100,
   "source": "Octanove",
   "track": "vocab",
-  "order": 534
+  "order": 533
  },
  {
   "id": "anthropology--noun",
@@ -6417,7 +6405,7 @@
   "rank": 23145,
   "source": "Octanove",
   "track": "vocab",
-  "order": 535
+  "order": 534
  },
  {
   "id": "connoisseur--noun",
@@ -6429,7 +6417,7 @@
   "rank": 23222,
   "source": "Octanove",
   "track": "vocab",
-  "order": 536
+  "order": 535
  },
  {
   "id": "conform--verb",
@@ -6441,7 +6429,7 @@
   "rank": 23250,
   "source": "Octanove",
   "track": "vocab",
-  "order": 537
+  "order": 536
  },
  {
   "id": "appliance--noun",
@@ -6453,7 +6441,7 @@
   "rank": 23368,
   "source": "Octanove",
   "track": "vocab",
-  "order": 538
+  "order": 537
  },
  {
   "id": "dissect--verb",
@@ -6465,7 +6453,7 @@
   "rank": 23495,
   "source": "Octanove",
   "track": "vocab",
-  "order": 539
+  "order": 538
  },
  {
   "id": "physique--noun",
@@ -6477,7 +6465,7 @@
   "rank": 23496,
   "source": "Octanove",
   "track": "vocab",
-  "order": 540
+  "order": 539
  },
  {
   "id": "gushing--adj",
@@ -6489,7 +6477,7 @@
   "rank": 23554,
   "source": "Octanove",
   "track": "vocab",
-  "order": 541
+  "order": 540
  },
  {
   "id": "citation--noun",
@@ -6501,7 +6489,7 @@
   "rank": 23600,
   "source": "Octanove",
   "track": "vocab",
-  "order": 542
+  "order": 541
  },
  {
   "id": "professionalism--noun",
@@ -6513,7 +6501,7 @@
   "rank": 23782,
   "source": "Octanove",
   "track": "vocab",
-  "order": 543
+  "order": 542
  },
  {
   "id": "stoke--verb",
@@ -6525,7 +6513,7 @@
   "rank": 23918,
   "source": "Octanove",
   "track": "vocab",
-  "order": 544
+  "order": 543
  },
  {
   "id": "relinquish--verb",
@@ -6537,7 +6525,7 @@
   "rank": 23960,
   "source": "Octanove",
   "track": "vocab",
-  "order": 545
+  "order": 544
  },
  {
   "id": "daydream--noun",
@@ -6549,7 +6537,7 @@
   "rank": 23993,
   "source": "Octanove",
   "track": "vocab",
-  "order": 546
+  "order": 545
  },
  {
   "id": "daydream--verb",
@@ -6561,7 +6549,7 @@
   "rank": 23993,
   "source": "Octanove",
   "track": "vocab",
-  "order": 547
+  "order": 546
  },
  {
   "id": "induction--noun",
@@ -6573,7 +6561,7 @@
   "rank": 24012,
   "source": "Octanove",
   "track": "vocab",
-  "order": 548
+  "order": 547
  },
  {
   "id": "paternal--adj",
@@ -6585,7 +6573,7 @@
   "rank": 24110,
   "source": "Octanove",
   "track": "vocab",
-  "order": 549
+  "order": 548
  },
  {
   "id": "retrace--verb",
@@ -6597,7 +6585,7 @@
   "rank": 24115,
   "source": "Octanove",
   "track": "vocab",
-  "order": 550
+  "order": 549
  },
  {
   "id": "degradation--noun",
@@ -6609,7 +6597,7 @@
   "rank": 24240,
   "source": "Octanove",
   "track": "vocab",
-  "order": 551
+  "order": 550
  },
  {
   "id": "expedite--verb",
@@ -6621,7 +6609,7 @@
   "rank": 24273,
   "source": "Octanove",
   "track": "vocab",
-  "order": 552
+  "order": 551
  },
  {
   "id": "docile--adj",
@@ -6633,7 +6621,7 @@
   "rank": 24298,
   "source": "Octanove",
   "track": "vocab",
-  "order": 553
+  "order": 552
  },
  {
   "id": "advisory--adj",
@@ -6645,7 +6633,7 @@
   "rank": 24368,
   "source": "Octanove",
   "track": "vocab",
-  "order": 554
+  "order": 553
  },
  {
   "id": "headstrong--adj",
@@ -6657,7 +6645,7 @@
   "rank": 24372,
   "source": "Octanove",
   "track": "vocab",
-  "order": 555
+  "order": 554
  },
  {
   "id": "anthropologist--noun",
@@ -6669,7 +6657,7 @@
   "rank": 24421,
   "source": "Octanove",
   "track": "vocab",
-  "order": 556
+  "order": 555
  },
  {
   "id": "daunting--adj",
@@ -6681,7 +6669,7 @@
   "rank": 24432,
   "source": "Octanove",
   "track": "vocab",
-  "order": 557
+  "order": 556
  },
  {
   "id": "resin--noun",
@@ -6693,7 +6681,7 @@
   "rank": 24518,
   "source": "Octanove",
   "track": "vocab",
-  "order": 558
+  "order": 557
  },
  {
   "id": "brainwashing--noun",
@@ -6705,7 +6693,7 @@
   "rank": 24568,
   "source": "Octanove",
   "track": "vocab",
-  "order": 559
+  "order": 558
  },
  {
   "id": "disdain--noun",
@@ -6717,7 +6705,7 @@
   "rank": 24618,
   "source": "Octanove",
   "track": "vocab",
-  "order": 560
+  "order": 559
  },
  {
   "id": "blister--noun",
@@ -6729,7 +6717,7 @@
   "rank": 24680,
   "source": "Octanove",
   "track": "vocab",
-  "order": 561
+  "order": 560
  },
  {
   "id": "blister--verb",
@@ -6741,7 +6729,7 @@
   "rank": 24680,
   "source": "Octanove",
   "track": "vocab",
-  "order": 562
+  "order": 561
  },
  {
   "id": "protagonist--noun",
@@ -6753,7 +6741,7 @@
   "rank": 24762,
   "source": "Octanove",
   "track": "vocab",
-  "order": 563
+  "order": 562
  },
  {
   "id": "flicker--noun",
@@ -6765,7 +6753,7 @@
   "rank": 24871,
   "source": "Octanove",
   "track": "vocab",
-  "order": 564
+  "order": 563
  },
  {
   "id": "billiards--noun",
@@ -6777,7 +6765,7 @@
   "rank": 24911,
   "source": "Octanove",
   "track": "vocab",
-  "order": 565
+  "order": 564
  },
  {
   "id": "inexcusable--adj",
@@ -6789,7 +6777,7 @@
   "rank": 24930,
   "source": "Octanove",
   "track": "vocab",
-  "order": 566
+  "order": 565
  },
  {
   "id": "alleviate--verb",
@@ -6801,7 +6789,7 @@
   "rank": 24998,
   "source": "Octanove",
   "track": "vocab",
-  "order": 567
+  "order": 566
  },
  {
   "id": "clutter--noun",
@@ -6813,7 +6801,7 @@
   "rank": 25019,
   "source": "Octanove",
   "track": "vocab",
-  "order": 568
+  "order": 567
  },
  {
   "id": "clutter--verb",
@@ -6825,7 +6813,7 @@
   "rank": 25019,
   "source": "Octanove",
   "track": "vocab",
-  "order": 569
+  "order": 568
  },
  {
   "id": "strapping--adj",
@@ -6837,7 +6825,7 @@
   "rank": 25040,
   "source": "Octanove",
   "track": "vocab",
-  "order": 570
+  "order": 569
  },
  {
   "id": "cynicism--noun",
@@ -6849,7 +6837,7 @@
   "rank": 25097,
   "source": "Octanove",
   "track": "vocab",
-  "order": 571
+  "order": 570
  },
  {
   "id": "antiquity--noun",
@@ -6861,7 +6849,7 @@
   "rank": 25117,
   "source": "Octanove",
   "track": "vocab",
-  "order": 572
+  "order": 571
  },
  {
   "id": "cynic--noun",
@@ -6873,7 +6861,7 @@
   "rank": 25124,
   "source": "Octanove",
   "track": "vocab",
-  "order": 573
+  "order": 572
  },
  {
   "id": "demographic--adj",
@@ -6885,7 +6873,7 @@
   "rank": 25170,
   "source": "Octanove",
   "track": "vocab",
-  "order": 574
+  "order": 573
  },
  {
   "id": "demographic--noun",
@@ -6897,7 +6885,7 @@
   "rank": 25170,
   "source": "Octanove",
   "track": "vocab",
-  "order": 575
+  "order": 574
  },
  {
   "id": "cite--verb",
@@ -6909,7 +6897,7 @@
   "rank": 25191,
   "source": "Octanove",
   "track": "vocab",
-  "order": 576
+  "order": 575
  },
  {
   "id": "adjoining--adj",
@@ -6921,7 +6909,7 @@
   "rank": 25201,
   "source": "Octanove",
   "track": "vocab",
-  "order": 577
+  "order": 576
  },
  {
   "id": "sarcastically--adv",
@@ -6933,7 +6921,7 @@
   "rank": 25252,
   "source": "Octanove",
   "track": "vocab",
-  "order": 578
+  "order": 577
  },
  {
   "id": "splatter--verb",
@@ -6945,7 +6933,7 @@
   "rank": 25314,
   "source": "Octanove",
   "track": "vocab",
-  "order": 579
+  "order": 578
  },
  {
   "id": "desertion--noun",
@@ -6957,7 +6945,7 @@
   "rank": 25401,
   "source": "Octanove",
   "track": "vocab",
-  "order": 580
+  "order": 579
  },
  {
   "id": "temperamental--adj",
@@ -6969,7 +6957,7 @@
   "rank": 25406,
   "source": "Octanove",
   "track": "vocab",
-  "order": 581
+  "order": 580
  },
  {
   "id": "notable--adj",
@@ -6981,7 +6969,7 @@
   "rank": 25412,
   "source": "Octanove",
   "track": "vocab",
-  "order": 582
+  "order": 581
  },
  {
   "id": "bulky--adj",
@@ -6993,7 +6981,7 @@
   "rank": 25424,
   "source": "Octanove",
   "track": "vocab",
-  "order": 583
+  "order": 582
  },
  {
   "id": "discourse--noun",
@@ -7005,7 +6993,7 @@
   "rank": 25482,
   "source": "Octanove",
   "track": "vocab",
-  "order": 584
+  "order": 583
  },
  {
   "id": "commendation--noun",
@@ -7017,7 +7005,7 @@
   "rank": 25561,
   "source": "Octanove",
   "track": "vocab",
-  "order": 585
+  "order": 584
  },
  {
   "id": "unmanned--adj",
@@ -7029,7 +7017,7 @@
   "rank": 25588,
   "source": "Octanove",
   "track": "vocab",
-  "order": 586
+  "order": 585
  },
  {
   "id": "insightful--adj",
@@ -7041,7 +7029,7 @@
   "rank": 25695,
   "source": "Octanove",
   "track": "vocab",
-  "order": 587
+  "order": 586
  },
  {
   "id": "squander--verb",
@@ -7053,7 +7041,7 @@
   "rank": 25807,
   "source": "Octanove",
   "track": "vocab",
-  "order": 588
+  "order": 587
  },
  {
   "id": "methodical--adj",
@@ -7065,7 +7053,7 @@
   "rank": 25933,
   "source": "Octanove",
   "track": "vocab",
-  "order": 589
+  "order": 588
  },
  {
   "id": "pleasurable--adj",
@@ -7077,7 +7065,7 @@
   "rank": 26010,
   "source": "Octanove",
   "track": "vocab",
-  "order": 590
+  "order": 589
  },
  {
   "id": "screenwriter--noun",
@@ -7089,7 +7077,7 @@
   "rank": 26035,
   "source": "Octanove",
   "track": "vocab",
-  "order": 591
+  "order": 590
  },
  {
   "id": "individuality--noun",
@@ -7101,7 +7089,7 @@
   "rank": 26069,
   "source": "Octanove",
   "track": "vocab",
-  "order": 592
+  "order": 591
  },
  {
   "id": "macabre--adj",
@@ -7113,7 +7101,7 @@
   "rank": 26078,
   "source": "Octanove",
   "track": "vocab",
-  "order": 593
+  "order": 592
  },
  {
   "id": "hibernation--noun",
@@ -7125,7 +7113,7 @@
   "rank": 26118,
   "source": "Octanove",
   "track": "vocab",
-  "order": 594
+  "order": 593
  },
  {
   "id": "impersonate--verb",
@@ -7137,7 +7125,7 @@
   "rank": 26195,
   "source": "Octanove",
   "track": "vocab",
-  "order": 595
+  "order": 594
  },
  {
   "id": "fatality--noun",
@@ -7149,7 +7137,7 @@
   "rank": 26258,
   "source": "Octanove",
   "track": "vocab",
-  "order": 596
+  "order": 595
  },
  {
   "id": "aimlessly--adv",
@@ -7161,7 +7149,7 @@
   "rank": 26304,
   "source": "Octanove",
   "track": "vocab",
-  "order": 597
+  "order": 596
  },
  {
   "id": "dissection--noun",
@@ -7173,7 +7161,7 @@
   "rank": 26318,
   "source": "Octanove",
   "track": "vocab",
-  "order": 598
+  "order": 597
  },
  {
   "id": "sentient--adj",
@@ -7185,7 +7173,7 @@
   "rank": 26322,
   "source": "Octanove",
   "track": "vocab",
-  "order": 599
+  "order": 598
  },
  {
   "id": "darkroom--noun",
@@ -7197,7 +7185,7 @@
   "rank": 26454,
   "source": "Octanove",
   "track": "vocab",
-  "order": 600
+  "order": 599
  },
  {
   "id": "depict--verb",
@@ -7209,7 +7197,7 @@
   "rank": 26460,
   "source": "Octanove",
   "track": "vocab",
-  "order": 601
+  "order": 600
  },
  {
   "id": "salve--noun",
@@ -7221,7 +7209,7 @@
   "rank": 26486,
   "source": "Octanove",
   "track": "vocab",
-  "order": 602
+  "order": 601
  },
  {
   "id": "dispensary--noun",
@@ -7233,7 +7221,7 @@
   "rank": 26576,
   "source": "Octanove",
   "track": "vocab",
-  "order": 603
+  "order": 602
  },
  {
   "id": "sponsorship--noun",
@@ -7245,7 +7233,7 @@
   "rank": 26613,
   "source": "Octanove",
   "track": "vocab",
-  "order": 604
+  "order": 603
  },
  {
   "id": "pedicure--noun",
@@ -7257,7 +7245,7 @@
   "rank": 26645,
   "source": "Octanove",
   "track": "vocab",
-  "order": 605
+  "order": 604
  },
  {
   "id": "loom--verb",
@@ -7269,7 +7257,7 @@
   "rank": 26670,
   "source": "Octanove",
   "track": "vocab",
-  "order": 606
+  "order": 605
  },
  {
   "id": "monotonous--adj",
@@ -7281,7 +7269,7 @@
   "rank": 26721,
   "source": "Octanove",
   "track": "vocab",
-  "order": 607
+  "order": 606
  },
  {
   "id": "homely--adj",
@@ -7293,7 +7281,7 @@
   "rank": 26755,
   "source": "Octanove",
   "track": "vocab",
-  "order": 608
+  "order": 607
  },
  {
   "id": "recognizable--adj",
@@ -7305,7 +7293,7 @@
   "rank": 26821,
   "source": "Octanove",
   "track": "vocab",
-  "order": 609
+  "order": 608
  },
  {
   "id": "supple--adj",
@@ -7317,7 +7305,7 @@
   "rank": 26849,
   "source": "Octanove",
   "track": "vocab",
-  "order": 610
+  "order": 609
  },
  {
   "id": "devotee--noun",
@@ -7329,7 +7317,7 @@
   "rank": 26872,
   "source": "Octanove",
   "track": "vocab",
-  "order": 611
+  "order": 610
  },
  {
   "id": "reassurance--noun",
@@ -7341,7 +7329,7 @@
   "rank": 26891,
   "source": "Octanove",
   "track": "vocab",
-  "order": 612
+  "order": 611
  },
  {
   "id": "bequeath--verb",
@@ -7353,7 +7341,7 @@
   "rank": 27006,
   "source": "Octanove",
   "track": "vocab",
-  "order": 613
+  "order": 612
  },
  {
   "id": "realist--noun",
@@ -7365,7 +7353,7 @@
   "rank": 27148,
   "source": "Octanove",
   "track": "vocab",
-  "order": 614
+  "order": 613
  },
  {
   "id": "impediment--noun",
@@ -7377,7 +7365,7 @@
   "rank": 27172,
   "source": "Octanove",
   "track": "vocab",
-  "order": 615
+  "order": 614
  },
  {
   "id": "reminisce--verb",
@@ -7389,7 +7377,7 @@
   "rank": 27187,
   "source": "Octanove",
   "track": "vocab",
-  "order": 616
+  "order": 615
  },
  {
   "id": "apprehensive--adj",
@@ -7401,7 +7389,7 @@
   "rank": 27225,
   "source": "Octanove",
   "track": "vocab",
-  "order": 617
+  "order": 616
  },
  {
   "id": "inherently--adv",
@@ -7413,7 +7401,7 @@
   "rank": 27237,
   "source": "Octanove",
   "track": "vocab",
-  "order": 618
+  "order": 617
  },
  {
   "id": "closeness--noun",
@@ -7425,7 +7413,7 @@
   "rank": 27277,
   "source": "Octanove",
   "track": "vocab",
-  "order": 619
+  "order": 618
  },
  {
   "id": "grumble--verb",
@@ -7437,7 +7425,7 @@
   "rank": 27371,
   "source": "Octanove",
   "track": "vocab",
-  "order": 620
+  "order": 619
  },
  {
   "id": "gutsy--adj",
@@ -7449,7 +7437,7 @@
   "rank": 27391,
   "source": "Octanove",
   "track": "vocab",
-  "order": 621
+  "order": 620
  },
  {
   "id": "instinctive--adj",
@@ -7461,7 +7449,7 @@
   "rank": 27394,
   "source": "Octanove",
   "track": "vocab",
-  "order": 622
+  "order": 621
  },
  {
   "id": "impersonal--adj",
@@ -7473,7 +7461,7 @@
   "rank": 27409,
   "source": "Octanove",
   "track": "vocab",
-  "order": 623
+  "order": 622
  },
  {
   "id": "impoverished--adj",
@@ -7485,7 +7473,7 @@
   "rank": 27544,
   "source": "Octanove",
   "track": "vocab",
-  "order": 624
+  "order": 623
  },
  {
   "id": "estimation--noun",
@@ -7497,7 +7485,7 @@
   "rank": 27562,
   "source": "Octanove",
   "track": "vocab",
-  "order": 625
+  "order": 624
  },
  {
   "id": "query--verb",
@@ -7509,7 +7497,7 @@
   "rank": 27622,
   "source": "Octanove",
   "track": "vocab",
-  "order": 626
+  "order": 625
  },
  {
   "id": "riveting--adj",
@@ -7521,7 +7509,7 @@
   "rank": 27634,
   "source": "Octanove",
   "track": "vocab",
-  "order": 627
+  "order": 626
  },
  {
   "id": "durable--adj",
@@ -7533,7 +7521,7 @@
   "rank": 27673,
   "source": "Octanove",
   "track": "vocab",
-  "order": 628
+  "order": 627
  },
  {
   "id": "durable--noun",
@@ -7545,7 +7533,7 @@
   "rank": 27673,
   "source": "Octanove",
   "track": "vocab",
-  "order": 629
+  "order": 628
  },
  {
   "id": "roundup--noun",
@@ -7557,7 +7545,7 @@
   "rank": 27721,
   "source": "Octanove",
   "track": "vocab",
-  "order": 630
+  "order": 629
  },
  {
   "id": "apprenticeship--noun",
@@ -7569,7 +7557,7 @@
   "rank": 27725,
   "source": "Octanove",
   "track": "vocab",
-  "order": 631
+  "order": 630
  },
  {
   "id": "poise--noun",
@@ -7581,7 +7569,7 @@
   "rank": 27766,
   "source": "Octanove",
   "track": "vocab",
-  "order": 632
+  "order": 631
  },
  {
   "id": "rudimentary--adj",
@@ -7593,7 +7581,7 @@
   "rank": 27884,
   "source": "Octanove",
   "track": "vocab",
-  "order": 633
+  "order": 632
  },
  {
   "id": "avid--adj",
@@ -7605,7 +7593,7 @@
   "rank": 28005,
   "source": "Octanove",
   "track": "vocab",
-  "order": 634
+  "order": 633
  },
  {
   "id": "respite--noun",
@@ -7617,7 +7605,7 @@
   "rank": 28051,
   "source": "Octanove",
   "track": "vocab",
-  "order": 635
+  "order": 634
  },
  {
   "id": "heifer--noun",
@@ -7629,7 +7617,7 @@
   "rank": 28067,
   "source": "Octanove",
   "track": "vocab",
-  "order": 636
+  "order": 635
  },
  {
   "id": "scoff--verb",
@@ -7641,7 +7629,7 @@
   "rank": 28152,
   "source": "Octanove",
   "track": "vocab",
-  "order": 637
+  "order": 636
  },
  {
   "id": "churn--verb",
@@ -7653,7 +7641,7 @@
   "rank": 28241,
   "source": "Octanove",
   "track": "vocab",
-  "order": 638
+  "order": 637
  },
  {
   "id": "persecute--verb",
@@ -7665,7 +7653,7 @@
   "rank": 28298,
   "source": "Octanove",
   "track": "vocab",
-  "order": 639
+  "order": 638
  },
  {
   "id": "degrade--verb",
@@ -7677,7 +7665,7 @@
   "rank": 28639,
   "source": "Octanove",
   "track": "vocab",
-  "order": 640
+  "order": 639
  },
  {
   "id": "mythological--adj",
@@ -7689,7 +7677,7 @@
   "rank": 28741,
   "source": "Octanove",
   "track": "vocab",
-  "order": 641
+  "order": 640
  },
  {
   "id": "stimuli--noun",
@@ -7701,7 +7689,7 @@
   "rank": 28795,
   "source": "Octanove",
   "track": "vocab",
-  "order": 642
+  "order": 641
  },
  {
   "id": "profess--verb",
@@ -7713,7 +7701,7 @@
   "rank": 28796,
   "source": "Octanove",
   "track": "vocab",
-  "order": 643
+  "order": 642
  },
  {
   "id": "upheaval--noun",
@@ -7725,7 +7713,7 @@
   "rank": 28838,
   "source": "Octanove",
   "track": "vocab",
-  "order": 644
+  "order": 643
  },
  {
   "id": "haggle--verb",
@@ -7737,7 +7725,7 @@
   "rank": 29027,
   "source": "Octanove",
   "track": "vocab",
-  "order": 645
+  "order": 644
  },
  {
   "id": "stately--adj",
@@ -7749,7 +7737,7 @@
   "rank": 29092,
   "source": "Octanove",
   "track": "vocab",
-  "order": 646
+  "order": 645
  },
  {
   "id": "impersonation--noun",
@@ -7761,7 +7749,7 @@
   "rank": 29189,
   "source": "Octanove",
   "track": "vocab",
-  "order": 647
+  "order": 646
  },
  {
   "id": "uneventful--adj",
@@ -7773,7 +7761,7 @@
   "rank": 29197,
   "source": "Octanove",
   "track": "vocab",
-  "order": 648
+  "order": 647
  },
  {
   "id": "stagger--verb",
@@ -7785,7 +7773,7 @@
   "rank": 29235,
   "source": "Octanove",
   "track": "vocab",
-  "order": 649
+  "order": 648
  },
  {
   "id": "substantially--adv",
@@ -7797,7 +7785,7 @@
   "rank": 29254,
   "source": "Octanove",
   "track": "vocab",
-  "order": 650
+  "order": 649
  },
  {
   "id": "panorama--noun",
@@ -7809,7 +7797,7 @@
   "rank": 29341,
   "source": "Octanove",
   "track": "vocab",
-  "order": 651
+  "order": 650
  },
  {
   "id": "cleanly--adv",
@@ -7821,7 +7809,7 @@
   "rank": 29371,
   "source": "Octanove",
   "track": "vocab",
-  "order": 652
+  "order": 651
  },
  {
   "id": "norms--noun",
@@ -7833,7 +7821,7 @@
   "rank": 29445,
   "source": "Octanove",
   "track": "vocab",
-  "order": 653
+  "order": 652
  },
  {
   "id": "outset--noun",
@@ -7845,7 +7833,7 @@
   "rank": 29559,
   "source": "Octanove",
   "track": "vocab",
-  "order": 654
+  "order": 653
  },
  {
   "id": "subtly--adv",
@@ -7857,7 +7845,7 @@
   "rank": 29564,
   "source": "Octanove",
   "track": "vocab",
-  "order": 655
+  "order": 654
  },
  {
   "id": "overseer--noun",
@@ -7869,7 +7857,7 @@
   "rank": 29582,
   "source": "Octanove",
   "track": "vocab",
-  "order": 656
+  "order": 655
  },
  {
   "id": "carpentry--noun",
@@ -7881,7 +7869,7 @@
   "rank": 29747,
   "source": "Octanove",
   "track": "vocab",
-  "order": 657
+  "order": 656
  },
  {
   "id": "imp--noun",
@@ -7893,7 +7881,7 @@
   "rank": 29765,
   "source": "Octanove",
   "track": "vocab",
-  "order": 658
+  "order": 657
  },
  {
   "id": "clammy--adj",
@@ -7905,7 +7893,7 @@
   "rank": 29869,
   "source": "Octanove",
   "track": "vocab",
-  "order": 659
+  "order": 658
  },
  {
   "id": "dismay--verb",
@@ -7917,7 +7905,7 @@
   "rank": 29871,
   "source": "Octanove",
   "track": "vocab",
-  "order": 660
+  "order": 659
  },
  {
   "id": "dismay--noun",
@@ -7929,7 +7917,7 @@
   "rank": 29871,
   "source": "Octanove",
   "track": "vocab",
-  "order": 661
+  "order": 660
  },
  {
   "id": "succulent--noun",
@@ -7941,7 +7929,7 @@
   "rank": 29987,
   "source": "Octanove",
   "track": "vocab",
-  "order": 662
+  "order": 661
  },
  {
   "id": "succulent--adj",
@@ -7953,7 +7941,7 @@
   "rank": 29987,
   "source": "Octanove",
   "track": "vocab",
-  "order": 663
+  "order": 662
  },
  {
   "id": "clench--verb",
@@ -7965,7 +7953,7 @@
   "rank": 30001,
   "source": "Octanove",
   "track": "vocab",
-  "order": 664
+  "order": 663
  },
  {
   "id": "antiquated--adj",
@@ -7977,7 +7965,7 @@
   "rank": 30028,
   "source": "Octanove",
   "track": "vocab",
-  "order": 665
+  "order": 664
  },
  {
   "id": "marginal--adj",
@@ -7989,7 +7977,7 @@
   "rank": 30104,
   "source": "Octanove",
   "track": "vocab",
-  "order": 666
+  "order": 665
  },
  {
   "id": "dutiful--adj",
@@ -8001,7 +7989,7 @@
   "rank": 30263,
   "source": "Octanove",
   "track": "vocab",
-  "order": 667
+  "order": 666
  },
  {
   "id": "fixture--noun",
@@ -8013,7 +8001,7 @@
   "rank": 30313,
   "source": "Octanove",
   "track": "vocab",
-  "order": 668
+  "order": 667
  },
  {
   "id": "elude--verb",
@@ -8025,7 +8013,7 @@
   "rank": 30394,
   "source": "Octanove",
   "track": "vocab",
-  "order": 669
+  "order": 668
  },
  {
   "id": "tactful--adj",
@@ -8037,7 +8025,7 @@
   "rank": 30417,
   "source": "Octanove",
   "track": "vocab",
-  "order": 670
+  "order": 669
  },
  {
   "id": "evoke--verb",
@@ -8049,7 +8037,7 @@
   "rank": 30525,
   "source": "Octanove",
   "track": "vocab",
-  "order": 671
+  "order": 670
  },
  {
   "id": "wares--noun",
@@ -8061,7 +8049,7 @@
   "rank": 30734,
   "source": "Octanove",
   "track": "vocab",
-  "order": 672
+  "order": 671
  },
  {
   "id": "impersonator--noun",
@@ -8073,7 +8061,7 @@
   "rank": 30765,
   "source": "Octanove",
   "track": "vocab",
-  "order": 673
+  "order": 672
  },
  {
   "id": "prolific--adj",
@@ -8085,7 +8073,7 @@
   "rank": 30789,
   "source": "Octanove",
   "track": "vocab",
-  "order": 674
+  "order": 673
  },
  {
   "id": "occupant--noun",
@@ -8097,7 +8085,7 @@
   "rank": 30864,
   "source": "Octanove",
   "track": "vocab",
-  "order": 675
+  "order": 674
  },
  {
   "id": "brainwash--verb",
@@ -8109,7 +8097,7 @@
   "rank": 30915,
   "source": "Octanove",
   "track": "vocab",
-  "order": 676
+  "order": 675
  },
  {
   "id": "impervious--adj",
@@ -8121,7 +8109,7 @@
   "rank": 30990,
   "source": "Octanove",
   "track": "vocab",
-  "order": 677
+  "order": 676
  },
  {
   "id": "claustrophobia--noun",
@@ -8133,7 +8121,7 @@
   "rank": 31028,
   "source": "Octanove",
   "track": "vocab",
-  "order": 678
+  "order": 677
  },
  {
   "id": "voracious--adj",
@@ -8145,7 +8133,7 @@
   "rank": 31093,
   "source": "Octanove",
   "track": "vocab",
-  "order": 679
+  "order": 678
  },
  {
   "id": "acoustics--noun",
@@ -8157,7 +8145,7 @@
   "rank": 31149,
   "source": "Octanove",
   "track": "vocab",
-  "order": 680
+  "order": 679
  },
  {
   "id": "indefinite--adj",
@@ -8169,7 +8157,7 @@
   "rank": 31198,
   "source": "Octanove",
   "track": "vocab",
-  "order": 681
+  "order": 680
  },
  {
   "id": "plummet--verb",
@@ -8181,7 +8169,7 @@
   "rank": 31215,
   "source": "Octanove",
   "track": "vocab",
-  "order": 682
+  "order": 681
  },
  {
   "id": "viciously--adv",
@@ -8193,7 +8181,7 @@
   "rank": 31252,
   "source": "Octanove",
   "track": "vocab",
-  "order": 683
+  "order": 682
  },
  {
   "id": "enterprising--adj",
@@ -8205,7 +8193,7 @@
   "rank": 31334,
   "source": "Octanove",
   "track": "vocab",
-  "order": 684
+  "order": 683
  },
  {
   "id": "wry--adj",
@@ -8217,7 +8205,7 @@
   "rank": 31338,
   "source": "Octanove",
   "track": "vocab",
-  "order": 685
+  "order": 684
  },
  {
   "id": "justly--adv",
@@ -8229,7 +8217,7 @@
   "rank": 31462,
   "source": "Octanove",
   "track": "vocab",
-  "order": 686
+  "order": 685
  },
  {
   "id": "somersault--noun",
@@ -8241,7 +8229,7 @@
   "rank": 31478,
   "source": "Octanove",
   "track": "vocab",
-  "order": 687
+  "order": 686
  },
  {
   "id": "somersault--verb",
@@ -8253,7 +8241,7 @@
   "rank": 31478,
   "source": "Octanove",
   "track": "vocab",
-  "order": 688
+  "order": 687
  },
  {
   "id": "reminiscent--adj",
@@ -8265,7 +8253,7 @@
   "rank": 31551,
   "source": "Octanove",
   "track": "vocab",
-  "order": 689
+  "order": 688
  },
  {
   "id": "fissure--noun",
@@ -8277,7 +8265,7 @@
   "rank": 31644,
   "source": "Octanove",
   "track": "vocab",
-  "order": 690
+  "order": 689
  },
  {
   "id": "formulate--verb",
@@ -8289,7 +8277,7 @@
   "rank": 31713,
   "source": "Octanove",
   "track": "vocab",
-  "order": 691
+  "order": 690
  },
  {
   "id": "fiendish--adj",
@@ -8301,7 +8289,7 @@
   "rank": 31807,
   "source": "Octanove",
   "track": "vocab",
-  "order": 692
+  "order": 691
  },
  {
   "id": "notwithstanding--prep",
@@ -8313,7 +8301,7 @@
   "rank": 31809,
   "source": "Octanove",
   "track": "grammar",
-  "order": 693
+  "order": 692
  },
  {
   "id": "gnaw--verb",
@@ -8325,7 +8313,7 @@
   "rank": 31862,
   "source": "Octanove",
   "track": "vocab",
-  "order": 694
+  "order": 693
  },
  {
   "id": "conditional--adj",
@@ -8337,7 +8325,7 @@
   "rank": 31881,
   "source": "Octanove",
   "track": "vocab",
-  "order": 695
+  "order": 694
  },
  {
   "id": "extravagance--noun",
@@ -8349,7 +8337,7 @@
   "rank": 31898,
   "source": "Octanove",
   "track": "vocab",
-  "order": 696
+  "order": 695
  },
  {
   "id": "advantageous--adj",
@@ -8361,7 +8349,7 @@
   "rank": 31937,
   "source": "Octanove",
   "track": "vocab",
-  "order": 697
+  "order": 696
  },
  {
   "id": "telltale--adj",
@@ -8373,7 +8361,7 @@
   "rank": 31998,
   "source": "Octanove",
   "track": "vocab",
-  "order": 698
+  "order": 697
  },
  {
   "id": "detrimental--adj",
@@ -8385,7 +8373,7 @@
   "rank": 32004,
   "source": "Octanove",
   "track": "vocab",
-  "order": 699
+  "order": 698
  },
  {
   "id": "ethically--adv",
@@ -8397,7 +8385,7 @@
   "rank": 32082,
   "source": "Octanove",
   "track": "vocab",
-  "order": 700
+  "order": 699
  },
  {
   "id": "placid--adj",
@@ -8409,7 +8397,7 @@
   "rank": 32117,
   "source": "Octanove",
   "track": "vocab",
-  "order": 701
+  "order": 700
  },
  {
   "id": "depiction--noun",
@@ -8421,7 +8409,7 @@
   "rank": 32153,
   "source": "Octanove",
   "track": "vocab",
-  "order": 702
+  "order": 701
  },
  {
   "id": "prophetic--adj",
@@ -8433,7 +8421,7 @@
   "rank": 32198,
   "source": "Octanove",
   "track": "vocab",
-  "order": 703
+  "order": 702
  },
  {
   "id": "effortless--adj",
@@ -8445,7 +8433,7 @@
   "rank": 32272,
   "source": "Octanove",
   "track": "vocab",
-  "order": 704
+  "order": 703
  },
  {
   "id": "alienate--verb",
@@ -8457,7 +8445,7 @@
   "rank": 32321,
   "source": "Octanove",
   "track": "vocab",
-  "order": 705
+  "order": 704
  },
  {
   "id": "calorie--noun",
@@ -8469,7 +8457,7 @@
   "rank": 32484,
   "source": "Octanove",
   "track": "vocab",
-  "order": 706
+  "order": 705
  },
  {
   "id": "elitist--noun",
@@ -8481,7 +8469,7 @@
   "rank": 32540,
   "source": "Octanove",
   "track": "vocab",
-  "order": 707
+  "order": 706
  },
  {
   "id": "taut--adj",
@@ -8493,7 +8481,7 @@
   "rank": 32607,
   "source": "Octanove",
   "track": "vocab",
-  "order": 708
+  "order": 707
  },
  {
   "id": "veneration--noun",
@@ -8505,7 +8493,7 @@
   "rank": 32623,
   "source": "Octanove",
   "track": "vocab",
-  "order": 709
+  "order": 708
  },
  {
   "id": "drawback--noun",
@@ -8517,7 +8505,7 @@
   "rank": 32771,
   "source": "Octanove",
   "track": "vocab",
-  "order": 710
+  "order": 709
  },
  {
   "id": "inclusive--adj",
@@ -8529,7 +8517,7 @@
   "rank": 32833,
   "source": "Octanove",
   "track": "vocab",
-  "order": 711
+  "order": 710
  },
  {
   "id": "portrayal--noun",
@@ -8541,7 +8529,7 @@
   "rank": 33012,
   "source": "Octanove",
   "track": "vocab",
-  "order": 712
+  "order": 711
  },
  {
   "id": "showy--adj",
@@ -8553,7 +8541,7 @@
   "rank": 33319,
   "source": "Octanove",
   "track": "vocab",
-  "order": 713
+  "order": 712
  },
  {
   "id": "abound--verb",
@@ -8565,7 +8553,7 @@
   "rank": 33504,
   "source": "Octanove",
   "track": "vocab",
-  "order": 714
+  "order": 713
  },
  {
   "id": "wrangle--verb",
@@ -8577,7 +8565,7 @@
   "rank": 33515,
   "source": "Octanove",
   "track": "vocab",
-  "order": 715
+  "order": 714
  },
  {
   "id": "perpetuate--verb",
@@ -8589,7 +8577,7 @@
   "rank": 33631,
   "source": "Octanove",
   "track": "vocab",
-  "order": 716
+  "order": 715
  },
  {
   "id": "speculative--adj",
@@ -8601,7 +8589,7 @@
   "rank": 33963,
   "source": "Octanove",
   "track": "vocab",
-  "order": 717
+  "order": 716
  },
  {
   "id": "impede--verb",
@@ -8613,7 +8601,7 @@
   "rank": 33993,
   "source": "Octanove",
   "track": "vocab",
-  "order": 718
+  "order": 717
  },
  {
   "id": "quirk--noun",
@@ -8625,7 +8613,7 @@
   "rank": 34020,
   "source": "Octanove",
   "track": "vocab",
-  "order": 719
+  "order": 718
  },
  {
   "id": "acidic--adj",
@@ -8637,7 +8625,7 @@
   "rank": 34056,
   "source": "Octanove",
   "track": "vocab",
-  "order": 720
+  "order": 719
  },
  {
   "id": "eclectic--adj",
@@ -8649,7 +8637,7 @@
   "rank": 34100,
   "source": "Octanove",
   "track": "vocab",
-  "order": 721
+  "order": 720
  },
  {
   "id": "eclectic--noun",
@@ -8661,7 +8649,7 @@
   "rank": 34100,
   "source": "Octanove",
   "track": "vocab",
-  "order": 722
+  "order": 721
  },
  {
   "id": "inexplicably--adv",
@@ -8673,7 +8661,7 @@
   "rank": 34209,
   "source": "Octanove",
   "track": "vocab",
-  "order": 723
+  "order": 722
  },
  {
   "id": "cleverness--noun",
@@ -8685,7 +8673,7 @@
   "rank": 34417,
   "source": "Octanove",
   "track": "vocab",
-  "order": 724
+  "order": 723
  },
  {
   "id": "fanciful--adj",
@@ -8697,7 +8685,7 @@
   "rank": 34429,
   "source": "Octanove",
   "track": "vocab",
-  "order": 725
+  "order": 724
  },
  {
   "id": "unwavering--adj",
@@ -8709,7 +8697,7 @@
   "rank": 34532,
   "source": "Octanove",
   "track": "vocab",
-  "order": 726
+  "order": 725
  },
  {
   "id": "monotony--noun",
@@ -8721,7 +8709,7 @@
   "rank": 34629,
   "source": "Octanove",
   "track": "vocab",
-  "order": 727
+  "order": 726
  },
  {
   "id": "resonate--verb",
@@ -8733,7 +8721,7 @@
   "rank": 34725,
   "source": "Octanove",
   "track": "vocab",
-  "order": 728
+  "order": 727
  },
  {
   "id": "rediscover--verb",
@@ -8745,7 +8733,7 @@
   "rank": 35009,
   "source": "Octanove",
   "track": "vocab",
-  "order": 729
+  "order": 728
  },
  {
   "id": "retention--noun",
@@ -8757,7 +8745,7 @@
   "rank": 35134,
   "source": "Octanove",
   "track": "vocab",
-  "order": 730
+  "order": 729
  },
  {
   "id": "renown--noun",
@@ -8769,7 +8757,7 @@
   "rank": 35195,
   "source": "Octanove",
   "track": "vocab",
-  "order": 731
+  "order": 730
  },
  {
   "id": "gush--verb",
@@ -8781,7 +8769,7 @@
   "rank": 35349,
   "source": "Octanove",
   "track": "vocab",
-  "order": 732
+  "order": 731
  },
  {
   "id": "gush--noun",
@@ -8793,7 +8781,7 @@
   "rank": 35349,
   "source": "Octanove",
   "track": "vocab",
-  "order": 733
+  "order": 732
  },
  {
   "id": "unoccupied--adj",
@@ -8805,7 +8793,7 @@
   "rank": 36248,
   "source": "Octanove",
   "track": "vocab",
-  "order": 734
+  "order": 733
  },
  {
   "id": "motley--adj",
@@ -8817,7 +8805,7 @@
   "rank": 36292,
   "source": "Octanove",
   "track": "vocab",
-  "order": 735
+  "order": 734
  },
  {
   "id": "wooded--adj",
@@ -8829,7 +8817,7 @@
   "rank": 36348,
   "source": "Octanove",
   "track": "vocab",
-  "order": 736
+  "order": 735
  },
  {
   "id": "ewe--noun",
@@ -8841,7 +8829,7 @@
   "rank": 36449,
   "source": "Octanove",
   "track": "vocab",
-  "order": 737
+  "order": 736
  },
  {
   "id": "repute--verb",
@@ -8853,7 +8841,7 @@
   "rank": 36480,
   "source": "Octanove",
   "track": "vocab",
-  "order": 738
+  "order": 737
  },
  {
   "id": "remedial--adj",
@@ -8865,7 +8853,7 @@
   "rank": 36526,
   "source": "Octanove",
   "track": "vocab",
-  "order": 739
+  "order": 738
  },
  {
   "id": "transatlantic--adj",
@@ -8877,7 +8865,7 @@
   "rank": 36791,
   "source": "Octanove",
   "track": "vocab",
-  "order": 740
+  "order": 739
  },
  {
   "id": "insubordinate--adj",
@@ -8889,7 +8877,7 @@
   "rank": 36853,
   "source": "Octanove",
   "track": "vocab",
-  "order": 741
+  "order": 740
  },
  {
   "id": "compliant--adj",
@@ -8901,7 +8889,7 @@
   "rank": 37113,
   "source": "Octanove",
   "track": "vocab",
-  "order": 742
+  "order": 741
  },
  {
   "id": "resilience--noun",
@@ -8913,7 +8901,7 @@
   "rank": 37115,
   "source": "Octanove",
   "track": "vocab",
-  "order": 743
+  "order": 742
  },
  {
   "id": "assertion--noun",
@@ -8925,7 +8913,7 @@
   "rank": 37171,
   "source": "Octanove",
   "track": "vocab",
-  "order": 744
+  "order": 743
  },
  {
   "id": "inclusion--noun",
@@ -8937,7 +8925,7 @@
   "rank": 37190,
   "source": "Octanove",
   "track": "vocab",
-  "order": 745
+  "order": 744
  },
  {
   "id": "commercially--adv",
@@ -8949,7 +8937,7 @@
   "rank": 37200,
   "source": "Octanove",
   "track": "vocab",
-  "order": 746
+  "order": 745
  },
  {
   "id": "suburbia--noun",
@@ -8961,7 +8949,7 @@
   "rank": 37271,
   "source": "Octanove",
   "track": "vocab",
-  "order": 747
+  "order": 746
  },
  {
   "id": "contested--adj",
@@ -8973,7 +8961,7 @@
   "rank": 37467,
   "source": "Octanove",
   "track": "vocab",
-  "order": 748
+  "order": 747
  },
  {
   "id": "negligible--adj",
@@ -8985,7 +8973,7 @@
   "rank": 37541,
   "source": "Octanove",
   "track": "vocab",
-  "order": 749
+  "order": 748
  },
  {
   "id": "suds--noun",
@@ -8997,7 +8985,7 @@
   "rank": 37577,
   "source": "Octanove",
   "track": "vocab",
-  "order": 750
+  "order": 749
  },
  {
   "id": "adjustable--adj",
@@ -9009,7 +8997,7 @@
   "rank": 37636,
   "source": "Octanove",
   "track": "vocab",
-  "order": 751
+  "order": 750
  },
  {
   "id": "aimless--adj",
@@ -9021,7 +9009,7 @@
   "rank": 37855,
   "source": "Octanove",
   "track": "vocab",
-  "order": 752
+  "order": 751
  },
  {
   "id": "altruistic--adj",
@@ -9033,7 +9021,7 @@
   "rank": 38072,
   "source": "Octanove",
   "track": "vocab",
-  "order": 753
+  "order": 752
  },
  {
   "id": "untangle--verb",
@@ -9045,7 +9033,7 @@
   "rank": 38284,
   "source": "Octanove",
   "track": "vocab",
-  "order": 754
+  "order": 753
  },
  {
   "id": "overdraft--verb",
@@ -9057,7 +9045,7 @@
   "rank": 38388,
   "source": "Octanove",
   "track": "vocab",
-  "order": 755
+  "order": 754
  },
  {
   "id": "overdraft--noun",
@@ -9069,7 +9057,7 @@
   "rank": 38388,
   "source": "Octanove",
   "track": "vocab",
-  "order": 756
+  "order": 755
  },
  {
   "id": "wayside--noun",
@@ -9081,7 +9069,7 @@
   "rank": 38605,
   "source": "Octanove",
   "track": "vocab",
-  "order": 757
+  "order": 756
  },
  {
   "id": "conformity--noun",
@@ -9093,7 +9081,7 @@
   "rank": 38991,
   "source": "Octanove",
   "track": "vocab",
-  "order": 758
+  "order": 757
  },
  {
   "id": "organizational--adj",
@@ -9105,7 +9093,7 @@
   "rank": 39398,
   "source": "Octanove",
   "track": "vocab",
-  "order": 759
+  "order": 758
  },
  {
   "id": "altruism--noun",
@@ -9117,7 +9105,7 @@
   "rank": 39431,
   "source": "Octanove",
   "track": "vocab",
-  "order": 760
+  "order": 759
  },
  {
   "id": "exuberant--adj",
@@ -9129,7 +9117,7 @@
   "rank": 39437,
   "source": "Octanove",
   "track": "vocab",
-  "order": 761
+  "order": 760
  },
  {
   "id": "congregate--verb",
@@ -9141,7 +9129,7 @@
   "rank": 39528,
   "source": "Octanove",
   "track": "vocab",
-  "order": 762
+  "order": 761
  },
  {
   "id": "symptomatic--adj",
@@ -9153,7 +9141,7 @@
   "rank": 39537,
   "source": "Octanove",
   "track": "vocab",
-  "order": 763
+  "order": 762
  },
  {
   "id": "toughness--noun",
@@ -9165,7 +9153,7 @@
   "rank": 39597,
   "source": "Octanove",
   "track": "vocab",
-  "order": 764
+  "order": 763
  },
  {
   "id": "artistically--adv",
@@ -9177,7 +9165,7 @@
   "rank": 39655,
   "source": "Octanove",
   "track": "vocab",
-  "order": 765
+  "order": 764
  },
  {
   "id": "acutely--adv",
@@ -9189,7 +9177,7 @@
   "rank": 39669,
   "source": "Octanove",
   "track": "vocab",
-  "order": 766
+  "order": 765
  },
  {
   "id": "inexhaustible--adj",
@@ -9201,7 +9189,7 @@
   "rank": 39721,
   "source": "Octanove",
   "track": "vocab",
-  "order": 767
+  "order": 766
  },
  {
   "id": "irate--adj",
@@ -9213,7 +9201,7 @@
   "rank": 39801,
   "source": "Octanove",
   "track": "vocab",
-  "order": 768
+  "order": 767
  },
  {
   "id": "exuberance--noun",
@@ -9225,7 +9213,7 @@
   "rank": 39870,
   "source": "Octanove",
   "track": "vocab",
-  "order": 769
+  "order": 768
  },
  {
   "id": "pathos--noun",
@@ -9237,7 +9225,7 @@
   "rank": 40113,
   "source": "Octanove",
   "track": "vocab",
-  "order": 770
+  "order": 769
  },
  {
   "id": "lethargic--adj",
@@ -9249,7 +9237,7 @@
   "rank": 40241,
   "source": "Octanove",
   "track": "vocab",
-  "order": 771
+  "order": 770
  },
  {
   "id": "raunchy--adj",
@@ -9261,7 +9249,7 @@
   "rank": 40382,
   "source": "Octanove",
   "track": "vocab",
-  "order": 772
+  "order": 771
  },
  {
   "id": "tantamount--adj",
@@ -9273,7 +9261,7 @@
   "rank": 40416,
   "source": "Octanove",
   "track": "vocab",
-  "order": 773
+  "order": 772
  },
  {
   "id": "fabulously--adv",
@@ -9285,7 +9273,7 @@
   "rank": 40458,
   "source": "Octanove",
   "track": "vocab",
-  "order": 774
+  "order": 773
  },
  {
   "id": "collaborative--adj",
@@ -9297,7 +9285,7 @@
   "rank": 40485,
   "source": "Octanove",
   "track": "vocab",
-  "order": 775
+  "order": 774
  },
  {
   "id": "hibernate--verb",
@@ -9309,7 +9297,7 @@
   "rank": 40722,
   "source": "Octanove",
   "track": "vocab",
-  "order": 776
+  "order": 775
  },
  {
   "id": "favorably--adv",
@@ -9321,7 +9309,7 @@
   "rank": 40962,
   "source": "Octanove",
   "track": "vocab",
-  "order": 777
+  "order": 776
  },
  {
   "id": "detestable--adj",
@@ -9333,7 +9321,7 @@
   "rank": 41157,
   "source": "Octanove",
   "track": "vocab",
-  "order": 778
+  "order": 777
  },
  {
   "id": "convoluted--adj",
@@ -9345,7 +9333,7 @@
   "rank": 41197,
   "source": "Octanove",
   "track": "vocab",
-  "order": 779
+  "order": 778
  },
  {
   "id": "interject--verb",
@@ -9357,7 +9345,7 @@
   "rank": 41198,
   "source": "Octanove",
   "track": "vocab",
-  "order": 780
+  "order": 779
  },
  {
   "id": "detriment--noun",
@@ -9369,7 +9357,7 @@
   "rank": 41467,
   "source": "Octanove",
   "track": "vocab",
-  "order": 781
+  "order": 780
  },
  {
   "id": "utensil--noun",
@@ -9381,7 +9369,7 @@
   "rank": 41556,
   "source": "Octanove",
   "track": "vocab",
-  "order": 782
+  "order": 781
  },
  {
   "id": "ornamental--adj",
@@ -9393,7 +9381,7 @@
   "rank": 41582,
   "source": "Octanove",
   "track": "vocab",
-  "order": 783
+  "order": 782
  },
  {
   "id": "misplace--verb",
@@ -9405,7 +9393,7 @@
   "rank": 41725,
   "source": "Octanove",
   "track": "vocab",
-  "order": 784
+  "order": 783
  },
  {
   "id": "dislodge--verb",
@@ -9417,7 +9405,7 @@
   "rank": 42050,
   "source": "Octanove",
   "track": "vocab",
-  "order": 785
+  "order": 784
  },
  {
   "id": "marginally--adv",
@@ -9429,7 +9417,7 @@
   "rank": 42225,
   "source": "Octanove",
   "track": "vocab",
-  "order": 786
+  "order": 785
  },
  {
   "id": "complementary--adj",
@@ -9441,7 +9429,7 @@
   "rank": 42404,
   "source": "Octanove",
   "track": "vocab",
-  "order": 787
+  "order": 786
  },
  {
   "id": "self-worth--noun",
@@ -9453,7 +9441,7 @@
   "rank": 42406,
   "source": "Octanove",
   "track": "vocab",
-  "order": 788
+  "order": 787
  },
  {
   "id": "sprawl--noun",
@@ -9465,7 +9453,7 @@
   "rank": 42442,
   "source": "Octanove",
   "track": "vocab",
-  "order": 789
+  "order": 788
  },
  {
   "id": "sprawl--verb",
@@ -9477,7 +9465,7 @@
   "rank": 42442,
   "source": "Octanove",
   "track": "vocab",
-  "order": 790
+  "order": 789
  },
  {
   "id": "torturous--adj",
@@ -9489,7 +9477,7 @@
   "rank": 42897,
   "source": "Octanove",
   "track": "vocab",
-  "order": 791
+  "order": 790
  },
  {
   "id": "structurally--adv",
@@ -9501,7 +9489,7 @@
   "rank": 43071,
   "source": "Octanove",
   "track": "vocab",
-  "order": 792
+  "order": 791
  },
  {
   "id": "enviable--adv",
@@ -9513,7 +9501,7 @@
   "rank": 43115,
   "source": "Octanove",
   "track": "vocab",
-  "order": 793
+  "order": 792
  },
  {
   "id": "heighten--verb",
@@ -9525,7 +9513,7 @@
   "rank": 43228,
   "source": "Octanove",
   "track": "vocab",
-  "order": 794
+  "order": 793
  },
  {
   "id": "aesthetically--adv",
@@ -9537,7 +9525,7 @@
   "rank": 43243,
   "source": "Octanove",
   "track": "vocab",
-  "order": 795
+  "order": 794
  },
  {
   "id": "ventilate--verb",
@@ -9549,7 +9537,7 @@
   "rank": 43941,
   "source": "Octanove",
   "track": "vocab",
-  "order": 796
+  "order": 795
  },
  {
   "id": "mountaineer--noun",
@@ -9561,7 +9549,7 @@
   "rank": 44046,
   "source": "Octanove",
   "track": "vocab",
-  "order": 797
+  "order": 796
  },
  {
   "id": "panoramic--adj",
@@ -9573,7 +9561,7 @@
   "rank": 44286,
   "source": "Octanove",
   "track": "vocab",
-  "order": 798
+  "order": 797
  },
  {
   "id": "glean--verb",
@@ -9585,7 +9573,7 @@
   "rank": 44651,
   "source": "Octanove",
   "track": "vocab",
-  "order": 799
+  "order": 798
  },
  {
   "id": "crudely--adv",
@@ -9597,7 +9585,7 @@
   "rank": 45077,
   "source": "Octanove",
   "track": "vocab",
-  "order": 800
+  "order": 799
  },
  {
   "id": "settee--noun",
@@ -9609,7 +9597,7 @@
   "rank": 45289,
   "source": "Octanove",
   "track": "vocab",
-  "order": 801
+  "order": 800
  },
  {
   "id": "reenact--verb",
@@ -9621,7 +9609,7 @@
   "rank": 45313,
   "source": "Octanove",
   "track": "vocab",
-  "order": 802
+  "order": 801
  },
  {
   "id": "beguiling--adj",
@@ -9633,7 +9621,7 @@
   "rank": 45589,
   "source": "Octanove",
   "track": "vocab",
-  "order": 803
+  "order": 802
  },
  {
   "id": "sketchbook--noun",
@@ -9645,7 +9633,7 @@
   "rank": 46224,
   "source": "Octanove",
   "track": "vocab",
-  "order": 804
+  "order": 803
  },
  {
   "id": "unsustainable--adj",
@@ -9657,7 +9645,7 @@
   "rank": 46428,
   "source": "Octanove",
   "track": "vocab",
-  "order": 805
+  "order": 804
  },
  {
   "id": "exhibitionist--noun",
@@ -9669,7 +9657,7 @@
   "rank": 46542,
   "source": "Octanove",
   "track": "vocab",
-  "order": 806
+  "order": 805
  },
  {
   "id": "ruthlessness--noun",
@@ -9681,7 +9669,7 @@
   "rank": 46563,
   "source": "Octanove",
   "track": "vocab",
-  "order": 807
+  "order": 806
  },
  {
   "id": "candidly--adv",
@@ -9693,7 +9681,7 @@
   "rank": 46653,
   "source": "Octanove",
   "track": "vocab",
-  "order": 808
+  "order": 807
  },
  {
   "id": "nondescript--adj",
@@ -9705,7 +9693,7 @@
   "rank": 46942,
   "source": "Octanove",
   "track": "vocab",
-  "order": 809
+  "order": 808
  },
  {
   "id": "gruelling--adj",
@@ -9717,7 +9705,7 @@
   "rank": 47035,
   "source": "Octanove",
   "track": "vocab",
-  "order": 810
+  "order": 809
  },
  {
   "id": "principally--adv",
@@ -9729,7 +9717,7 @@
   "rank": 47088,
   "source": "Octanove",
   "track": "vocab",
-  "order": 811
+  "order": 810
  },
  {
   "id": "versatility--noun",
@@ -9741,7 +9729,7 @@
   "rank": 47225,
   "source": "Octanove",
   "track": "vocab",
-  "order": 812
+  "order": 811
  },
  {
   "id": "stiffen--verb",
@@ -9753,7 +9741,7 @@
   "rank": 47238,
   "source": "Octanove",
   "track": "vocab",
-  "order": 813
+  "order": 812
  },
  {
   "id": "naivety--noun",
@@ -9765,7 +9753,7 @@
   "rank": 47351,
   "source": "Octanove",
   "track": "vocab",
-  "order": 814
+  "order": 813
  },
  {
   "id": "constraint--noun",
@@ -9777,7 +9765,7 @@
   "rank": 47371,
   "source": "Octanove",
   "track": "vocab",
-  "order": 815
+  "order": 814
  },
  {
   "id": "scathing--adj",
@@ -9789,7 +9777,7 @@
   "rank": 47396,
   "source": "Octanove",
   "track": "vocab",
-  "order": 816
+  "order": 815
  },
  {
   "id": "wickedly--adv",
@@ -9801,7 +9789,7 @@
   "rank": 47433,
   "source": "Octanove",
   "track": "vocab",
-  "order": 817
+  "order": 816
  },
  {
   "id": "exhilaration--noun",
@@ -9813,7 +9801,7 @@
   "rank": 47624,
   "source": "Octanove",
   "track": "vocab",
-  "order": 818
+  "order": 817
  },
  {
   "id": "oddity--noun",
@@ -9825,7 +9813,7 @@
   "rank": 47639,
   "source": "Octanove",
   "track": "vocab",
-  "order": 819
+  "order": 818
  },
  {
   "id": "synopsis--noun",
@@ -9837,7 +9825,7 @@
   "rank": 47659,
   "source": "Octanove",
   "track": "vocab",
-  "order": 820
+  "order": 819
  },
  {
   "id": "zany--adj",
@@ -9849,7 +9837,7 @@
   "rank": 47712,
   "source": "Octanove",
   "track": "vocab",
-  "order": 821
+  "order": 820
  },
  {
   "id": "undaunted--adj",
@@ -9861,7 +9849,7 @@
   "rank": 47983,
   "source": "Octanove",
   "track": "vocab",
-  "order": 822
+  "order": 821
  },
  {
   "id": "seedling--noun",
@@ -9873,7 +9861,7 @@
   "rank": 47998,
   "source": "Octanove",
   "track": "vocab",
-  "order": 823
+  "order": 822
  },
  {
   "id": "comprise--verb",
@@ -9885,7 +9873,7 @@
   "rank": 48007,
   "source": "Octanove",
   "track": "vocab",
-  "order": 824
+  "order": 823
  },
  {
   "id": "amply--adv",
@@ -9897,7 +9885,7 @@
   "rank": 48424,
   "source": "Octanove",
   "track": "vocab",
-  "order": 825
+  "order": 824
  },
  {
   "id": "cessation--noun",
@@ -9909,7 +9897,7 @@
   "rank": 48745,
   "source": "Octanove",
   "track": "vocab",
-  "order": 826
+  "order": 825
  },
  {
   "id": "ceaseless--adj",
@@ -9921,7 +9909,7 @@
   "rank": 48750,
   "source": "Octanove",
   "track": "vocab",
-  "order": 827
+  "order": 826
  },
  {
   "id": "abstraction--noun",
@@ -9933,7 +9921,7 @@
   "rank": 48877,
   "source": "Octanove",
   "track": "vocab",
-  "order": 828
+  "order": 827
  },
  {
   "id": "gape--verb",
@@ -9945,7 +9933,7 @@
   "rank": 49146,
   "source": "Octanove",
   "track": "vocab",
-  "order": 829
+  "order": 828
  },
  {
   "id": "ferociously--adv",
@@ -9957,7 +9945,7 @@
   "rank": 49429,
   "source": "Octanove",
   "track": "vocab",
-  "order": 830
+  "order": 829
  },
  {
   "id": "lethargy--noun",
@@ -9969,7 +9957,7 @@
   "rank": 49466,
   "source": "Octanove",
   "track": "vocab",
-  "order": 831
+  "order": 830
  },
  {
   "id": "restorative--adj",
@@ -9981,7 +9969,7 @@
   "rank": 49649,
   "source": "Octanove",
   "track": "vocab",
-  "order": 832
+  "order": 831
  },
  {
   "id": "innovate--verb",
@@ -9993,7 +9981,7 @@
   "rank": 49661,
   "source": "Octanove",
   "track": "vocab",
-  "order": 833
+  "order": 832
  },
  {
   "id": "physicality--noun",
@@ -10005,7 +9993,7 @@
   "rank": 49975,
   "source": "Octanove",
   "track": "vocab",
-  "order": 834
+  "order": 833
  },
  {
   "id": "acoustically--adv",
@@ -10017,7 +10005,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 835
+  "order": 834
  },
  {
   "id": "adjoin--verb",
@@ -10029,7 +10017,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 836
+  "order": 835
  },
  {
   "id": "allege--verb",
@@ -10041,7 +10029,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 837
+  "order": 836
  },
  {
   "id": "amplification--noun",
@@ -10053,7 +10041,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 838
+  "order": 837
  },
  {
   "id": "animatedly--adv",
@@ -10065,7 +10053,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 839
+  "order": 838
  },
  {
   "id": "anticlimactic--adj",
@@ -10077,7 +10065,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 840
+  "order": 839
  },
  {
   "id": "appall--verb",
@@ -10089,7 +10077,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 841
+  "order": 840
  },
  {
   "id": "appallingly--adv",
@@ -10101,7 +10089,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 842
+  "order": 841
  },
  {
   "id": "apt-to--verb",
@@ -10113,7 +10101,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 843
+  "order": 842
  },
  {
   "id": "baldly--adv",
@@ -10125,7 +10113,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 844
+  "order": 843
  },
  {
   "id": "beguilingly--adv",
@@ -10137,7 +10125,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 845
+  "order": 844
  },
  {
   "id": "believably--adv",
@@ -10149,7 +10137,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 846
+  "order": 845
  },
  {
   "id": "benignly--adv",
@@ -10161,7 +10149,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 847
+  "order": 846
  },
  {
   "id": "blankness--noun",
@@ -10173,7 +10161,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 848
+  "order": 847
  },
  {
   "id": "blithely--adv",
@@ -10185,7 +10173,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 849
+  "order": 848
  },
  {
   "id": "bulk-up--verb",
@@ -10197,7 +10185,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 850
+  "order": 849
  },
  {
   "id": "bureaucratically--adv",
@@ -10209,7 +10197,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 851
+  "order": 850
  },
  {
   "id": "ceaselessly--adv",
@@ -10221,7 +10209,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 852
+  "order": 851
  },
  {
   "id": "chaotically--adv",
@@ -10233,7 +10221,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 853
+  "order": 852
  },
  {
   "id": "characterization--noun",
@@ -10245,7 +10233,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 854
+  "order": 853
  },
  {
   "id": "chauffer--noun",
@@ -10257,7 +10245,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 855
+  "order": 854
  },
  {
   "id": "chauffer--verb",
@@ -10269,7 +10257,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 856
+  "order": 855
  },
  {
   "id": "chiselled--adj",
@@ -10281,7 +10269,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 857
+  "order": 856
  },
  {
   "id": "climactic--adj",
@@ -10293,7 +10281,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 858
+  "order": 857
  },
  {
   "id": "compliantly--adv",
@@ -10305,7 +10293,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 859
+  "order": 858
  },
  {
   "id": "conditionally--adv",
@@ -10317,7 +10305,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 860
+  "order": 859
  },
  {
   "id": "conscientiously--adv",
@@ -10329,7 +10317,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 861
+  "order": 860
  },
  {
   "id": "consultancy--noun",
@@ -10341,7 +10329,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 862
+  "order": 861
  },
  {
   "id": "contextual--adj",
@@ -10353,7 +10341,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 863
+  "order": 862
  },
  {
   "id": "contextually--adv",
@@ -10365,7 +10353,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 864
+  "order": 863
  },
  {
   "id": "cost-effective--adj",
@@ -10377,7 +10365,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 865
+  "order": 864
  },
  {
   "id": "credential--noun",
@@ -10389,7 +10377,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 866
+  "order": 865
  },
  {
   "id": "credibly--adv",
@@ -10401,7 +10389,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 867
+  "order": 866
  },
  {
   "id": "cynically--adv",
@@ -10413,7 +10401,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 868
+  "order": 867
  },
  {
   "id": "damply--adv",
@@ -10425,7 +10413,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 869
+  "order": 868
  },
  {
   "id": "daunt--verb",
@@ -10437,7 +10425,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 870
+  "order": 869
  },
  {
   "id": "demographically--adv",
@@ -10449,7 +10437,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 871
+  "order": 870
  },
  {
   "id": "demography--noun",
@@ -10461,7 +10449,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 872
+  "order": 871
  },
  {
   "id": "detrimentally--adv",
@@ -10473,7 +10461,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 873
+  "order": 872
  },
  {
   "id": "detritus--noun",
@@ -10485,7 +10473,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 874
+  "order": 873
  },
  {
   "id": "digitalization--noun",
@@ -10497,7 +10485,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 875
+  "order": 874
  },
  {
   "id": "digitalize--verb",
@@ -10509,7 +10497,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 876
+  "order": 875
  },
  {
   "id": "disillusionment--noun",
@@ -10521,7 +10509,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 877
+  "order": 876
  },
  {
   "id": "dismally--adv",
@@ -10533,7 +10521,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 878
+  "order": 877
  },
  {
   "id": "disquieting--adj",
@@ -10545,7 +10533,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 879
+  "order": 878
  },
  {
   "id": "dither--verb",
@@ -10557,7 +10545,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 880
+  "order": 879
  },
  {
   "id": "diverge--verb",
@@ -10569,7 +10557,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 881
+  "order": 880
  },
  {
   "id": "divergence--noun",
@@ -10581,7 +10569,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 882
+  "order": 881
  },
  {
   "id": "divergent--adj",
@@ -10593,7 +10581,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 883
+  "order": 882
  },
  {
   "id": "docilely--adv",
@@ -10605,7 +10593,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 884
+  "order": 883
  },
  {
   "id": "domestically--adv",
@@ -10617,7 +10605,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 885
+  "order": 884
  },
  {
   "id": "domesticate--verb",
@@ -10629,7 +10617,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 886
+  "order": 885
  },
  {
   "id": "domestication--noun",
@@ -10641,7 +10629,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 887
+  "order": 886
  },
  {
   "id": "dominantly--adv",
@@ -10653,7 +10641,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 888
+  "order": 887
  },
  {
   "id": "dramatist--noun",
@@ -10665,7 +10653,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 889
+  "order": 888
  },
  {
   "id": "dutifully--adv",
@@ -10677,7 +10665,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 890
+  "order": 889
  },
  {
   "id": "dynamically--adv",
@@ -10689,7 +10677,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 891
+  "order": 890
  },
  {
   "id": "eccentrically--adv",
@@ -10701,7 +10689,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 892
+  "order": 891
  },
  {
   "id": "eclectically--adv",
@@ -10713,7 +10701,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 893
+  "order": 892
  },
  {
   "id": "ecstatically--adv",
@@ -10725,7 +10713,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 894
+  "order": 893
  },
  {
   "id": "elaboration--noun",
@@ -10737,7 +10725,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 895
+  "order": 894
  },
  {
   "id": "elongate--verb",
@@ -10749,7 +10737,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 896
+  "order": 895
  },
  {
   "id": "engross--verb",
@@ -10761,7 +10749,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 897
+  "order": 896
  },
  {
   "id": "engrossing--adj",
@@ -10773,7 +10761,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 898
+  "order": 897
  },
  {
   "id": "envisage--verb",
@@ -10785,7 +10773,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 899
+  "order": 898
  },
  {
   "id": "exhilarate--verb",
@@ -10797,7 +10785,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 900
+  "order": 899
  },
  {
   "id": "exotically--adv",
@@ -10809,7 +10797,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 901
+  "order": 900
  },
  {
   "id": "explanatory--adj",
@@ -10821,7 +10809,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 902
+  "order": 901
  },
  {
   "id": "explosively--adv",
@@ -10833,7 +10821,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 903
+  "order": 902
  },
  {
   "id": "exuberantly--adv",
@@ -10845,7 +10833,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 904
+  "order": 903
  },
  {
   "id": "facilitation--noun",
@@ -10857,7 +10845,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 905
+  "order": 904
  },
  {
   "id": "fanatically--adv",
@@ -10869,7 +10857,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 906
+  "order": 905
  },
  {
   "id": "fiddly--adj",
@@ -10881,7 +10869,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 907
+  "order": 906
  },
  {
   "id": "fiendishly--adv",
@@ -10893,7 +10881,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 908
+  "order": 907
  },
  {
   "id": "folktale--noun",
@@ -10905,7 +10893,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 909
+  "order": 908
  },
  {
   "id": "fragmentation--noun",
@@ -10917,7 +10905,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 910
+  "order": 909
  },
  {
   "id": "frostily--adv",
@@ -10929,7 +10917,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 911
+  "order": 910
  },
  {
   "id": "gamely--adv",
@@ -10941,7 +10929,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 912
+  "order": 911
  },
  {
   "id": "geologically--adv",
@@ -10953,7 +10941,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 913
+  "order": 912
  },
  {
   "id": "glumly--adv",
@@ -10965,7 +10953,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 914
+  "order": 913
  },
  {
   "id": "gruesomely--adv",
@@ -10977,7 +10965,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 915
+  "order": 914
  },
  {
   "id": "gushingly--adv",
@@ -10989,7 +10977,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 916
+  "order": 915
  },
  {
   "id": "hypocritically--adv",
@@ -11001,7 +10989,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 917
+  "order": 916
  },
  {
   "id": "immortalize--verb",
@@ -11013,7 +11001,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 918
+  "order": 917
  },
  {
   "id": "impersonally--adv",
@@ -11025,7 +11013,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 919
+  "order": 918
  },
  {
   "id": "impish--adj",
@@ -11037,7 +11025,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 920
+  "order": 919
  },
  {
   "id": "impishly--adv",
@@ -11049,7 +11037,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 921
+  "order": 920
  },
  {
   "id": "incisor--noun",
@@ -11061,7 +11049,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 922
+  "order": 921
  },
  {
   "id": "inclusively--adv",
@@ -11073,7 +11061,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 923
+  "order": 922
  },
  {
   "id": "induct--verb",
@@ -11085,7 +11073,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 924
+  "order": 923
  },
  {
   "id": "inexcusably--adv",
@@ -11097,7 +11085,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 925
+  "order": 924
  },
  {
   "id": "insecurely--adv",
@@ -11109,7 +11097,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 926
+  "order": 925
  },
  {
   "id": "insensitively--adv",
@@ -11121,7 +11109,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 927
+  "order": 926
  },
  {
   "id": "insightfully--adv",
@@ -11133,7 +11121,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 928
+  "order": 927
  },
  {
   "id": "insubordinately--adv",
@@ -11145,7 +11133,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 929
+  "order": 928
  },
  {
   "id": "interjection--noun",
@@ -11157,7 +11145,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 930
+  "order": 929
  },
  {
   "id": "intuit--verb",
@@ -11169,7 +11157,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 931
+  "order": 930
  },
  {
   "id": "intuitively--adv",
@@ -11181,7 +11169,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 932
+  "order": 931
  },
  {
   "id": "irately--adv",
@@ -11193,7 +11181,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 933
+  "order": 932
  },
  {
   "id": "lackluster--adj",
@@ -11205,7 +11193,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 934
+  "order": 933
  },
  {
   "id": "lethargically--adv",
@@ -11217,7 +11205,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 935
+  "order": 934
  },
  {
   "id": "linearly--adv",
@@ -11229,7 +11217,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 936
+  "order": 935
  },
  {
   "id": "ludicrously--adv",
@@ -11241,7 +11229,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 937
+  "order": 936
  },
  {
   "id": "magnetically--adv",
@@ -11253,7 +11241,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 938
+  "order": 937
  },
  {
   "id": "mark-up--noun",
@@ -11265,7 +11253,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 939
+  "order": 938
  },
  {
   "id": "maternalistic--adj",
@@ -11277,7 +11265,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 940
+  "order": 939
  },
  {
   "id": "meaninglessly--adv",
@@ -11289,7 +11277,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 941
+  "order": 940
  },
  {
   "id": "minutiae--noun",
@@ -11301,7 +11289,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 942
+  "order": 941
  },
  {
   "id": "monotonously--adv",
@@ -11313,7 +11301,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 943
+  "order": 942
  },
  {
   "id": "naively--adv",
@@ -11325,7 +11313,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 944
+  "order": 943
  },
  {
   "id": "naturalness--noun",
@@ -11337,7 +11325,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 945
+  "order": 944
  },
  {
   "id": "neglectful--adj",
@@ -11349,7 +11337,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 946
+  "order": 945
  },
  {
   "id": "negligently--adv",
@@ -11361,7 +11349,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 947
+  "order": 946
  },
  {
   "id": "neutralization--noun",
@@ -11373,7 +11361,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 948
+  "order": 947
  },
  {
   "id": "obscurely--adv",
@@ -11385,7 +11373,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 949
+  "order": 948
  },
  {
   "id": "paternalistic--adj",
@@ -11397,7 +11385,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 950
+  "order": 949
  },
  {
   "id": "paywall--noun",
@@ -11409,7 +11397,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 951
+  "order": 950
  },
  {
   "id": "pendulous--adj",
@@ -11421,7 +11409,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 952
+  "order": 951
  },
  {
   "id": "perceptively--adv",
@@ -11433,7 +11421,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 953
+  "order": 952
  },
  {
   "id": "personalization--noun",
@@ -11445,7 +11433,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 954
+  "order": 953
  },
  {
   "id": "personalize--verb",
@@ -11457,7 +11445,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 955
+  "order": 954
  },
  {
   "id": "persuasively--adv",
@@ -11469,7 +11457,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 956
+  "order": 955
  },
  {
   "id": "pertain-to--verb",
@@ -11481,7 +11469,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 957
+  "order": 956
  },
  {
   "id": "phenomenally--adv",
@@ -11493,7 +11481,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 958
+  "order": 957
  },
  {
   "id": "placidly--adv",
@@ -11505,7 +11493,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 959
+  "order": 958
  },
  {
   "id": "plausibility--noun",
@@ -11517,7 +11505,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 960
+  "order": 959
  },
  {
   "id": "plausibly--adv",
@@ -11529,7 +11517,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 961
+  "order": 960
  },
  {
   "id": "poetess--noun",
@@ -11541,7 +11529,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 962
+  "order": 961
  },
  {
   "id": "popularization--noun",
@@ -11553,7 +11541,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 963
+  "order": 962
  },
  {
   "id": "possessor--noun",
@@ -11565,7 +11553,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 964
+  "order": 963
  },
  {
   "id": "primitively--adv",
@@ -11577,7 +11565,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 965
+  "order": 964
  },
  {
   "id": "prohibitive--adj",
@@ -11589,7 +11577,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 966
+  "order": 965
  },
  {
   "id": "prohibitively--adv",
@@ -11601,7 +11589,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 967
+  "order": 966
  },
  {
   "id": "proliferate--verb",
@@ -11613,7 +11601,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 968
+  "order": 967
  },
  {
   "id": "prolifically--adv",
@@ -11625,7 +11613,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 969
+  "order": 968
  },
  {
   "id": "provocatively--adv",
@@ -11637,7 +11625,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 970
+  "order": 969
  },
  {
   "id": "quip--noun",
@@ -11649,7 +11637,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 971
+  "order": 970
  },
  {
   "id": "quip--verb",
@@ -11661,7 +11649,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 972
+  "order": 971
  },
  {
   "id": "raunchily--adv",
@@ -11673,7 +11661,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 973
+  "order": 972
  },
  {
   "id": "readable--adj",
@@ -11685,7 +11673,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 974
+  "order": 973
  },
  {
   "id": "recessive--adj",
@@ -11697,7 +11685,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 975
+  "order": 974
  },
  {
   "id": "recognizably--adv",
@@ -11709,7 +11697,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 976
+  "order": 975
  },
  {
   "id": "refreshingly--adv",
@@ -11721,7 +11709,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 977
+  "order": 976
  },
  {
   "id": "refurbish--verb",
@@ -11733,7 +11721,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 978
+  "order": 977
  },
  {
   "id": "refurbishment--noun",
@@ -11745,7 +11733,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 979
+  "order": 978
  },
  {
   "id": "remorsefully--adv",
@@ -11757,7 +11745,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 980
+  "order": 979
  },
  {
   "id": "remorseless--adj",
@@ -11769,7 +11757,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 981
+  "order": 980
  },
  {
   "id": "remorselessly--adv",
@@ -11781,7 +11769,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 982
+  "order": 981
  },
  {
   "id": "repellant--noun",
@@ -11793,7 +11781,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 983
+  "order": 982
  },
  {
   "id": "repellant--adj",
@@ -11805,7 +11793,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 984
+  "order": 983
  },
  {
   "id": "repertory--noun",
@@ -11817,7 +11805,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 985
+  "order": 984
  },
  {
   "id": "robustly--adv",
@@ -11829,7 +11817,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 986
+  "order": 985
  },
  {
   "id": "rudiments--noun",
@@ -11841,7 +11829,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 987
+  "order": 986
  },
  {
   "id": "salivate--verb",
@@ -11853,7 +11841,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 988
+  "order": 987
  },
  {
   "id": "scornful--adj",
@@ -11865,7 +11853,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 989
+  "order": 988
  },
  {
   "id": "scornfully--adv",
@@ -11877,7 +11865,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 990
+  "order": 989
  },
  {
   "id": "scrutinize--verb",
@@ -11889,7 +11877,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 991
+  "order": 990
  },
  {
   "id": "sedately--adv",
@@ -11901,7 +11889,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 992
+  "order": 991
  },
  {
   "id": "sedentary--adj",
@@ -11913,7 +11901,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 993
+  "order": 992
  },
  {
   "id": "sentimentally--adv",
@@ -11925,7 +11913,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 994
+  "order": 993
  },
  {
   "id": "shortlist--verb",
@@ -11937,7 +11925,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 995
+  "order": 994
  },
  {
   "id": "shortlist--noun",
@@ -11949,7 +11937,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 996
+  "order": 995
  },
  {
   "id": "slackly--adv",
@@ -11961,7 +11949,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 997
+  "order": 996
  },
  {
   "id": "smugly--adv",
@@ -11973,7 +11961,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 998
+  "order": 997
  },
  {
   "id": "socialization--noun",
@@ -11985,7 +11973,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 999
+  "order": 998
  },
  {
   "id": "somberly--adv",
@@ -11997,7 +11985,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1000
+  "order": 999
  },
  {
   "id": "specification--noun",
@@ -12009,7 +11997,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1001
+  "order": 1000
  },
  {
   "id": "staccato--adj",
@@ -12021,7 +12009,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1002
+  "order": 1001
  },
  {
   "id": "staccato--adv",
@@ -12033,7 +12021,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1003
+  "order": 1002
  },
  {
   "id": "startlingly--adv",
@@ -12045,7 +12033,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1004
+  "order": 1003
  },
  {
   "id": "stressfully--adv",
@@ -12057,7 +12045,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1005
+  "order": 1004
  },
  {
   "id": "stuffily--adv",
@@ -12069,7 +12057,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1006
+  "order": 1005
  },
  {
   "id": "stuffiness--noun",
@@ -12081,7 +12069,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1007
+  "order": 1006
  },
  {
   "id": "stylistic--adj",
@@ -12093,7 +12081,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1008
+  "order": 1007
  },
  {
   "id": "stylistically--adv",
@@ -12105,7 +12093,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1009
+  "order": 1008
  },
  {
   "id": "succulently--adv",
@@ -12117,7 +12105,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1010
+  "order": 1009
  },
  {
   "id": "superficially--adv",
@@ -12129,7 +12117,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1011
+  "order": 1010
  },
  {
   "id": "sustainably--adv",
@@ -12141,7 +12129,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1012
+  "order": 1011
  },
  {
   "id": "synthetically--adv",
@@ -12153,7 +12141,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1013
+  "order": 1012
  },
  {
   "id": "tactfully--adv",
@@ -12165,7 +12153,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1014
+  "order": 1013
  },
  {
   "id": "tastebud--noun",
@@ -12177,7 +12165,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1015
+  "order": 1014
  },
  {
   "id": "tautly--adv",
@@ -12189,7 +12177,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1016
+  "order": 1015
  },
  {
   "id": "tediously--adv",
@@ -12201,7 +12189,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1017
+  "order": 1016
  },
  {
   "id": "tedium--noun",
@@ -12213,7 +12201,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1018
+  "order": 1017
  },
  {
   "id": "temperamentally--adv",
@@ -12225,7 +12213,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1019
+  "order": 1018
  },
  {
   "id": "transfix--verb",
@@ -12237,7 +12225,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1020
+  "order": 1019
  },
  {
   "id": "turn-to--verb",
@@ -12249,7 +12237,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1021
+  "order": 1020
  },
  {
   "id": "unassisted--adj",
@@ -12261,7 +12249,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1022
+  "order": 1021
  },
  {
   "id": "unconvincing--adj",
@@ -12273,7 +12261,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1023
+  "order": 1022
  },
  {
   "id": "unconvincingly--adv",
@@ -12285,7 +12273,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1024
+  "order": 1023
  },
  {
   "id": "unenviable--adj",
@@ -12297,7 +12285,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1025
+  "order": 1024
  },
  {
   "id": "unenviably--adv",
@@ -12309,7 +12297,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1026
+  "order": 1025
  },
  {
   "id": "uniformity--noun",
@@ -12321,7 +12309,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1027
+  "order": 1026
  },
  {
   "id": "uninspiring--adj",
@@ -12333,7 +12321,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1028
+  "order": 1027
  },
  {
   "id": "unmanageable--adj",
@@ -12345,7 +12333,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1029
+  "order": 1028
  },
  {
   "id": "unmusical--adj",
@@ -12357,7 +12345,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1030
+  "order": 1029
  },
  {
   "id": "unmusically--adv",
@@ -12369,7 +12357,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1031
+  "order": 1030
  },
  {
   "id": "unreliably--adv",
@@ -12381,7 +12369,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1032
+  "order": 1031
  },
  {
   "id": "unscathing--adj",
@@ -12393,7 +12381,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1033
+  "order": 1032
  },
  {
   "id": "unsettle--verb",
@@ -12405,7 +12393,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1034
+  "order": 1033
  },
  {
   "id": "unsustainably--adv",
@@ -12417,7 +12405,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1035
+  "order": 1034
  },
  {
   "id": "untangled--adj",
@@ -12429,7 +12417,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1036
+  "order": 1035
  },
  {
   "id": "unwaveringly--adv",
@@ -12441,7 +12429,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1037
+  "order": 1036
  },
  {
   "id": "venerate--verb",
@@ -12453,7 +12441,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1038
+  "order": 1037
  },
  {
   "id": "verandah--noun",
@@ -12465,7 +12453,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1039
+  "order": 1038
  },
  {
   "id": "verve--noun",
@@ -12477,7 +12465,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1040
+  "order": 1039
  },
  {
   "id": "victoriously--adv",
@@ -12489,7 +12477,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1041
+  "order": 1040
  },
  {
   "id": "voraciously--adv",
@@ -12501,7 +12489,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1042
+  "order": 1041
  },
  {
   "id": "washtub--noun",
@@ -12513,7 +12501,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1043
+  "order": 1042
  },
  {
   "id": "wizened--adj",
@@ -12525,7 +12513,7 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1044
+  "order": 1043
  },
  {
   "id": "wryly--adv",
@@ -12537,6 +12525,6 @@
   "rank": 999999,
   "source": "Octanove",
   "track": "vocab",
-  "order": 1045
+  "order": 1044
  }
 ]

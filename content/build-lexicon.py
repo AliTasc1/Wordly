@@ -61,7 +61,13 @@ POS_MAP = {
 # every -ate/-ise/-ize/-ify word the CSV tags as a noun; the rest of those
 # (bruise, cruise, promise, rise, surprise …) really do have noun senses, so
 # this is the only one.
-WORD_POS_FIX = {"exaggerate": "verb"}
+WORD_POS_FIX = {
+    "exaggerate": "verb",
+    # Octanove tags `automatic` as a verb at C1. There is no such verb, and
+    # CEFR-J already has the adjective at A2, so the correction also removes a
+    # duplicate: the C1 entry collapses into the A2 one and nothing is lost.
+    "automatic": "adjective",
+}
 
 # Slurs have no place on a flashcard, whatever their frequency in the source
 # corpus. Checked against the whole lexicon: `gook` is the only entry that is a

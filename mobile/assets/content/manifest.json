@@ -1,6 +1,6 @@
 {
-  "vocabTotal": 9465,
-  "authored": 7492,
+  "vocabTotal": 9464,
+  "authored": 7648,
   "levels": {
     "A1": {
       "total": 993,
@@ -19,8 +19,8 @@
       "authored": 2755
     },
     "C1": {
-      "total": 1041,
-      "authored": 0
+      "total": 1040,
+      "authored": 156
     },
     "C2": {
       "total": 932,

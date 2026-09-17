@@ -1,0 +1,469 @@
+{
+  "_meta": {
+    "batch": "c1-002",
+    "level": "C1",
+    "range": "79-158"
+  },
+  "sketch--noun": {
+    "tr": "eskiz, kısa skeç",
+    "def": "A quick rough drawing, or a short funny scene.",
+    "ex": "He made a sketch of the harbour in pencil.",
+    "exTr": "Limanın kurşun kalemle bir eskizini yaptı."
+  },
+  "buzzer--noun": {
+    "tr": "zil, buzzer",
+    "def": "A device that makes a buzzing sound as a signal.",
+    "ex": "Press the buzzer to enter.",
+    "exTr": "Girmek için zile bas."
+  },
+  "sentimental--adj": {
+    "tr": "duygusal, hisli",
+    "def": "Based on feelings rather than reason, sometimes too much so.",
+    "ex": "The watch has sentimental value only.",
+    "exTr": "Saatin yalnızca duygusal bir değeri var."
+  },
+  "salvation--noun": {
+    "tr": "kurtuluş",
+    "def": "Being saved from danger or from sin.",
+    "ex": "The loan was the salvation of the company.",
+    "exTr": "Kredi şirketin kurtuluşu oldu."
+  },
+  "hence--adv": {
+    "tr": "bu nedenle, bundan böyle",
+    "def": "For this reason, in formal English.",
+    "ex": "The bridge is unsafe; hence the closure.",
+    "exTr": "Köprü güvenli değil; bu nedenle kapatıldı."
+  },
+  "craft--verb": {
+    "tr": "özenle yapmak",
+    "def": "To make something skilfully by hand.",
+    "ex": "He crafted the chair from a single log.",
+    "exTr": "Sandalyeyi tek bir kütükten özenle yaptı."
+  },
+  "chart--verb": {
+    "tr": "grafikle göstermek, izlemek",
+    "def": "To record changes over time, often on a graph.",
+    "ex": "The study charts the fall in rainfall.",
+    "exTr": "Çalışma yağıştaki düşüşü grafikle gösteriyor."
+  },
+  "magnetic--adj": {
+    "tr": "manyetik, çekici",
+    "def": "Able to attract metal, or attracting people strongly.",
+    "ex": "She has a magnetic presence on stage.",
+    "exTr": "Sahnede çekici bir varlığı var."
+  },
+  "anchor--verb": {
+    "tr": "demirlemek, sabitlemek",
+    "def": "To hold a ship with an anchor, or to fix something firmly.",
+    "ex": "They anchored the boat in the bay.",
+    "exTr": "Tekneyi koya demirlediler."
+  },
+  "gypsy--noun": {
+    "tr": "çingene, Roman",
+    "def": "A member of a travelling people, an older and now often offensive word.",
+    "ex": "The song comes from a gypsy tradition.",
+    "exTr": "Şarkı bir Roman geleneğinden geliyor."
+  },
+  "pigeon--noun": {
+    "tr": "güvercin",
+    "def": "A common grey bird found in towns.",
+    "ex": "A pigeon landed on the statue.",
+    "exTr": "Heykele bir güvercin kondu."
+  },
+  "conviction--noun": {
+    "tr": "mahkûmiyet, inanç",
+    "def": "A court's decision that someone is guilty, or a strong belief.",
+    "ex": "He spoke with real conviction.",
+    "exTr": "Gerçek bir inançla konuştu."
+  },
+  "frost--verb": {
+    "tr": "buzlandırmak, kırağı tutmak",
+    "def": "To cover with frost, or to make glass cloudy.",
+    "ex": "The cold frosted every window.",
+    "exTr": "Soğuk bütün camları buzlandırdı."
+  },
+  "prophet--noun": {
+    "tr": "peygamber",
+    "def": "A person believed to bring messages from God.",
+    "ex": "The story concerns an ancient prophet.",
+    "exTr": "Hikâye eski bir peygamberi anlatıyor."
+  },
+  "compromised--adj": {
+    "tr": "zayıflamış, güvenliği ihlal edilmiş",
+    "def": "Weakened, or no longer safe or private.",
+    "ex": "The system was compromised overnight.",
+    "exTr": "Sistemin güvenliği bir gecede ihlal edildi."
+  },
+  "forensic--adj": {
+    "tr": "adli",
+    "def": "Using science to investigate crime.",
+    "ex": "Forensic tests identified the material.",
+    "exTr": "Adli testler malzemeyi tespit etti."
+  },
+  "facial--adj": {
+    "tr": "yüz ile ilgili",
+    "def": "Relating to the face.",
+    "ex": "The injury left no facial scar.",
+    "exTr": "Yaralanma yüzde iz bırakmadı."
+  },
+  "facial--noun": {
+    "tr": "yüz bakımı",
+    "def": "A beauty treatment for the skin of the face.",
+    "ex": "She booked a facial for Friday.",
+    "exTr": "Cuma için yüz bakımı randevusu aldı."
+  },
+  "meaningless--adj": {
+    "tr": "anlamsız",
+    "def": "Having no purpose or no importance.",
+    "ex": "Without context the figure is meaningless.",
+    "exTr": "Bağlam olmadan rakam anlamsız."
+  },
+  "fuse--verb": {
+    "tr": "kaynaşmak, birleştirmek",
+    "def": "To join two things into one, often by heating.",
+    "ex": "Heat fused the two metals.",
+    "exTr": "Isı iki metali kaynaştırdı."
+  },
+  "inheritance--noun": {
+    "tr": "miras",
+    "def": "Money or property received from someone who has died.",
+    "ex": "She used the inheritance to open a shop.",
+    "exTr": "Mirası bir dükkân açmak için kullandı."
+  },
+  "classy--adj": {
+    "tr": "sınıflı, şık",
+    "def": "Stylish and of high quality.",
+    "ex": "It is a classy little restaurant.",
+    "exTr": "Şık, küçük bir restoran."
+  },
+  "ruthless--adj": {
+    "tr": "acımasız",
+    "def": "Determined to succeed without caring who is hurt.",
+    "ex": "He was ruthless in business.",
+    "exTr": "İş hayatında acımasızdı."
+  },
+  "preacher--noun": {
+    "tr": "vaiz",
+    "def": "A person who gives religious talks.",
+    "ex": "The preacher spoke for an hour.",
+    "exTr": "Vaiz bir saat konuştu."
+  },
+  "swap--verb": {
+    "tr": "takas etmek, değiş tokuş etmek",
+    "def": "To exchange one thing for another.",
+    "ex": "They swapped seats at the interval.",
+    "exTr": "Arada yerlerini değiştirdiler."
+  },
+  "swap--noun": {
+    "tr": "takas",
+    "def": "An exchange of one thing for another.",
+    "ex": "We did a straight swap.",
+    "exTr": "Doğrudan bir takas yaptık."
+  },
+  "premises--noun": {
+    "tr": "bina, işletme alanı",
+    "def": "The building and land used by a business.",
+    "ex": "Smoking is banned on these premises.",
+    "exTr": "Bu binada sigara içmek yasak."
+  },
+  "convict--verb": {
+    "tr": "mahkûm etmek",
+    "def": "To decide officially in court that someone is guilty.",
+    "ex": "The court convicted him of fraud.",
+    "exTr": "Mahkeme onu dolandırıcılıktan mahkûm etti."
+  },
+  "convict--noun": {
+    "tr": "hükümlü",
+    "def": "A person found guilty and sent to prison.",
+    "ex": "The convict was released early.",
+    "exTr": "Hükümlü erken tahliye edildi."
+  },
+  "stray--verb": {
+    "tr": "yoldan sapmak, uzaklaşmak",
+    "def": "To move away from the right place or subject.",
+    "ex": "The sheep strayed onto the road.",
+    "exTr": "Koyunlar yola çıktı."
+  },
+  "stray--adj": {
+    "tr": "başıboş, sokak (hayvan)",
+    "def": "Lost or with no home, said of an animal.",
+    "ex": "A stray cat sleeps by the door.",
+    "exTr": "Kapının yanında bir sokak kedisi uyuyor."
+  },
+  "stray--noun": {
+    "tr": "sokak hayvanı",
+    "def": "An animal that has no home.",
+    "ex": "The shelter takes in strays.",
+    "exTr": "Barınak sokak hayvanlarını alıyor."
+  },
+  "profound--adj": {
+    "tr": "derin",
+    "def": "Very great, or showing deep understanding.",
+    "ex": "The book had a profound effect on her.",
+    "exTr": "Kitabın onun üzerinde derin bir etkisi oldu."
+  },
+  "peasant--noun": {
+    "tr": "köylü",
+    "def": "A poor farmer who works a small piece of land.",
+    "ex": "The painting shows a peasant at work.",
+    "exTr": "Tablo çalışan bir köylüyü gösteriyor."
+  },
+  "carrier--noun": {
+    "tr": "taşıyıcı",
+    "def": "A company that transports goods, or a person carrying a disease.",
+    "ex": "The carrier lost two parcels.",
+    "exTr": "Taşıyıcı iki koliyi kaybetti."
+  },
+  "injustice--noun": {
+    "tr": "adaletsizlik",
+    "def": "A situation in which people are treated unfairly.",
+    "ex": "The film exposes a great injustice.",
+    "exTr": "Film büyük bir adaletsizliği ortaya koyuyor."
+  },
+  "elaborate--adj": {
+    "tr": "ayrıntılı, özenli",
+    "def": "Having many carefully arranged parts.",
+    "ex": "The ceiling has an elaborate pattern.",
+    "exTr": "Tavanda ayrıntılı bir desen var."
+  },
+  "elaborate--verb": {
+    "tr": "ayrıntılandırmak",
+    "def": "To explain something in more detail.",
+    "ex": "Could you elaborate on that point?",
+    "exTr": "Bu noktayı ayrıntılandırabilir misin?"
+  },
+  "mechanism--noun": {
+    "tr": "mekanizma, düzenek",
+    "def": "The parts that make a machine work, or a way something happens.",
+    "ex": "The locking mechanism has jammed.",
+    "exTr": "Kilit mekanizması sıkışmış."
+  },
+  "slack--verb": {
+    "tr": "işi savsaklamak",
+    "def": "To work less hard than you should.",
+    "ex": "Nobody slacked during the harvest.",
+    "exTr": "Hasat sırasında kimse işi savsaklamadı."
+  },
+  "slack--noun": {
+    "tr": "boşluk (ip)",
+    "def": "The loose part of a rope that is not pulled tight.",
+    "ex": "Take up the slack in the line.",
+    "exTr": "İpteki boşluğu topla."
+  },
+  "slack--adj": {
+    "tr": "gevşek, durgun",
+    "def": "Loose, or with little business activity.",
+    "ex": "Trade is slack in January.",
+    "exTr": "Ocakta ticaret durgun."
+  },
+  "psychiatric--adj": {
+    "tr": "psikiyatrik",
+    "def": "Relating to the treatment of mental illness.",
+    "ex": "He works in a psychiatric hospital.",
+    "exTr": "Bir psikiyatri hastanesinde çalışıyor."
+  },
+  "coverage--noun": {
+    "tr": "haber kapsamı, kapsam",
+    "def": "The reporting of an event, or what an insurance policy includes.",
+    "ex": "The coverage of the election was thorough.",
+    "exTr": "Seçim haberciliği kapsamlıydı."
+  },
+  "harassment--noun": {
+    "tr": "taciz",
+    "def": "Repeated behaviour that annoys or threatens someone.",
+    "ex": "The company has a harassment policy.",
+    "exTr": "Şirketin bir taciz politikası var."
+  },
+  "irony--noun": {
+    "tr": "ironi, alaysılama",
+    "def": "The use of words to mean the opposite, or a strange contrast.",
+    "ex": "The irony was lost on him.",
+    "exTr": "İroniyi anlamadı."
+  },
+  "bliss--noun": {
+    "tr": "mutluluk, saadet",
+    "def": "Perfect happiness.",
+    "ex": "A quiet evening at home is bliss.",
+    "exTr": "Evde sakin bir akşam tam bir mutluluk."
+  },
+  "jurisdiction--noun": {
+    "tr": "yargı yetkisi",
+    "def": "The official power to make legal decisions in an area.",
+    "ex": "The case falls outside their jurisdiction.",
+    "exTr": "Dava onların yargı yetkisi dışında."
+  },
+  "carpenter--noun": {
+    "tr": "marangoz",
+    "def": "A person who makes and repairs wooden things.",
+    "ex": "The carpenter fitted new shelves.",
+    "exTr": "Marangoz yeni raflar taktı."
+  },
+  "juvenile--noun": {
+    "tr": "reşit olmayan, genç",
+    "def": "A young person who is not yet an adult in law.",
+    "ex": "The court treats juveniles differently.",
+    "exTr": "Mahkeme reşit olmayanlara farklı davranıyor."
+  },
+  "juvenile--adj": {
+    "tr": "çocuksu, gençlere ait",
+    "def": "Relating to young people, or childish in behaviour.",
+    "ex": "His juvenile jokes annoyed everyone.",
+    "exTr": "Çocuksu şakaları herkesi sinirlendirdi."
+  },
+  "strap--noun": {
+    "tr": "kayış, askı",
+    "def": "A narrow band of leather or cloth used to fasten or carry.",
+    "ex": "The bag strap broke on the bus.",
+    "exTr": "Çantanın askısı otobüste koptu."
+  },
+  "strap--verb": {
+    "tr": "kayışla bağlamak",
+    "def": "To fasten something with a strap.",
+    "ex": "They strapped the load onto the roof.",
+    "exTr": "Yükü tavana kayışla bağladılar."
+  },
+  "suspension--noun": {
+    "tr": "askıya alma, süspansiyon",
+    "def": "A temporary stop, or the springs supporting a vehicle.",
+    "ex": "He faces a two-match suspension.",
+    "exTr": "İki maçlık bir cezayla karşı karşıya."
+  },
+  "numb--adj": {
+    "tr": "uyuşmuş, hissiz",
+    "def": "Unable to feel anything, in body or in emotion.",
+    "ex": "My fingers were numb with cold.",
+    "exTr": "Parmaklarım soğuktan uyuşmuştu."
+  },
+  "numb--verb": {
+    "tr": "uyuşturmak",
+    "def": "To make a part of the body unable to feel.",
+    "ex": "The dentist numbed her gum.",
+    "exTr": "Diş hekimi diş etini uyuşturdu."
+  },
+  "screenplay--noun": {
+    "tr": "senaryo",
+    "def": "The written script of a film.",
+    "ex": "She wrote the screenplay in six weeks.",
+    "exTr": "Senaryoyu altı haftada yazdı."
+  },
+  "chilly--adj": {
+    "tr": "serin, soğuk",
+    "def": "Cold enough to be uncomfortable, or unfriendly.",
+    "ex": "The mornings are chilly now.",
+    "exTr": "Sabahlar artık serin."
+  },
+  "torment--verb": {
+    "tr": "eziyet etmek",
+    "def": "To make someone suffer, in body or in mind.",
+    "ex": "Guilt tormented him for years.",
+    "exTr": "Suçluluk duygusu ona yıllarca eziyet etti."
+  },
+  "torment--noun": {
+    "tr": "eziyet, azap",
+    "def": "Great suffering of the body or the mind.",
+    "ex": "The wait was pure torment.",
+    "exTr": "Bekleyiş tam bir azaptı."
+  },
+  "resent--verb": {
+    "tr": "içerlemek, gücenmek",
+    "def": "To feel angry because you think you were treated unfairly.",
+    "ex": "She resented being left out.",
+    "exTr": "Dışlanmasına içerledi."
+  },
+  "flick--verb": {
+    "tr": "fiske atmak, hızlıca çevirmek",
+    "def": "To move something quickly with a small sharp movement.",
+    "ex": "He flicked the switch and the lights came on.",
+    "exTr": "Düğmeye dokundu ve ışıklar yandı."
+  },
+  "tailor--noun": {
+    "tr": "terzi",
+    "def": "A person who makes clothes to fit one customer.",
+    "ex": "The tailor took his measurements.",
+    "exTr": "Terzi ölçülerini aldı."
+  },
+  "tailor--verb": {
+    "tr": "uyarlamak, dikmek",
+    "def": "To make or change something to suit a particular need.",
+    "ex": "The course is tailored to beginners.",
+    "exTr": "Kurs yeni başlayanlara uyarlanmış."
+  },
+  "remorse--noun": {
+    "tr": "pişmanlık, vicdan azabı",
+    "def": "Deep regret for something wrong you have done.",
+    "ex": "He showed no remorse in court.",
+    "exTr": "Mahkemede hiç pişmanlık göstermedi."
+  },
+  "gem--noun": {
+    "tr": "değerli taş, cevher",
+    "def": "A precious stone, or something of great value.",
+    "ex": "The little museum is a real gem.",
+    "exTr": "Küçük müze gerçek bir cevher."
+  },
+  "testament--noun": {
+    "tr": "kanıt, vasiyet",
+    "def": "Clear proof of something, or a will.",
+    "ex": "The bridge is a testament to their skill.",
+    "exTr": "Köprü onların ustalığının bir kanıtı."
+  },
+  "immense--adj": {
+    "tr": "muazzam, uçsuz bucaksız",
+    "def": "Extremely large in size or degree.",
+    "ex": "The task required immense patience.",
+    "exTr": "Görev muazzam bir sabır gerektirdi."
+  },
+  "provoke--verb": {
+    "tr": "kışkırtmak, yol açmak",
+    "def": "To make someone angry, or to cause a reaction.",
+    "ex": "The remark provoked a long argument.",
+    "exTr": "Bu söz uzun bir tartışmaya yol açtı."
+  },
+  "hostess--noun": {
+    "tr": "ev sahibesi, hostes",
+    "def": "A woman who receives guests, or who serves on a plane.",
+    "ex": "Our hostess welcomed every guest by name.",
+    "exTr": "Ev sahibemiz her konuğu adıyla karşıladı."
+  },
+  "adrenaline--noun": {
+    "tr": "adrenalin",
+    "def": "A substance the body makes when you are excited or afraid.",
+    "ex": "Adrenaline kept him going.",
+    "exTr": "Adrenalin onu ayakta tuttu."
+  },
+  "contractor--noun": {
+    "tr": "müteahhit, yüklenici",
+    "def": "A person or company paid to do work for another.",
+    "ex": "The contractor finished ahead of time.",
+    "exTr": "Yüklenici işi zamanından önce bitirdi."
+  },
+  "refreshing--adj": {
+    "tr": "ferahlatıcı",
+    "def": "Making you feel less tired, or pleasantly different.",
+    "ex": "It is refreshing to hear an honest answer.",
+    "exTr": "Dürüst bir cevap duymak ferahlatıcı."
+  },
+  "bouquet--noun": {
+    "tr": "buket",
+    "def": "A bunch of flowers arranged and tied together.",
+    "ex": "She carried a small bouquet.",
+    "exTr": "Küçük bir buket taşıyordu."
+  },
+  "flatter--verb": {
+    "tr": "pohpohlamak, yakışmak",
+    "def": "To praise someone insincerely, or to make them look good.",
+    "ex": "That colour flatters her.",
+    "exTr": "Bu renk ona yakışıyor."
+  },
+  "descent--noun": {
+    "tr": "iniş, soy",
+    "def": "A move downwards, or a person's family origin.",
+    "ex": "The descent took longer than the climb.",
+    "exTr": "İniş tırmanıştan uzun sürdü."
+  },
+  "preach--verb": {
+    "tr": "vaaz vermek, nutuk çekmek",
+    "def": "To give a religious talk, or to tell others how to behave.",
+    "ex": "He preached to a full church.",
+    "exTr": "Dolu bir kilisede vaaz verdi."
+  }
+}

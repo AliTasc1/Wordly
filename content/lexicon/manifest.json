@@ -1,6 +1,6 @@
 {
-  "total": 9771,
-  "vocabTotal": 9465,
+  "total": 9770,
+  "vocabTotal": 9464,
   "levels": {
     "A1": {
       "count": 1161,
@@ -23,9 +23,9 @@
       "withIpa": 2710
     },
     "C1": {
-      "count": 1045,
-      "vocab": 1041,
-      "withIpa": 962
+      "count": 1044,
+      "vocab": 1040,
+      "withIpa": 961
     },
     "C2": {
       "count": 933,
@@ -36,7 +36,7 @@
   "posBreakdown": {
     "noun": 4848,
     "adj": 2020,
-    "verb": 1768,
+    "verb": 1767,
     "adv": 820,
     "pron": 83,
     "prep": 80,
