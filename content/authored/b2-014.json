@@ -355,8 +355,8 @@
   "ban--noun": {
     "tr": "yasak",
     "def": "An official order that something must not be done.",
-    "ex": "There is a ban on fishing here.",
-    "exTr": "Burada balık tutma yasağı var."
+    "ex": "The ban on smoking starts today.",
+    "exTr": "Sigara yasağı bugün başlıyor."
   },
   "ban--verb": {
     "tr": "yasaklamak",

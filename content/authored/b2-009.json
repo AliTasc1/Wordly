@@ -169,8 +169,8 @@
   "dime--noun": {
     "tr": "on sent",
     "def": "An American coin worth ten cents.",
-    "ex": "It did not cost a dime.",
-    "exTr": "Tek kuruş etmedi."
+    "ex": "The machine takes dimes only.",
+    "exTr": "Makine yalnızca on sentlik alıyor."
   },
   "domestic--adj": {
     "tr": "yurt içi, evle ilgili",
@@ -223,8 +223,8 @@
   "dreadful--adj": {
     "tr": "berbat, korkunç",
     "def": "Very bad or very unpleasant.",
-    "ex": "The weather was dreadful.",
-    "exTr": "Hava berbattı."
+    "ex": "We had a dreadful journey home.",
+    "exTr": "Eve dönüş yolculuğumuz berbattı."
   },
   "shrink--noun": {
     "tr": "çekilme, büzülme",
@@ -469,8 +469,8 @@
   "memorial--noun": {
     "tr": "anıt",
     "def": "A structure built to remember a person or an event.",
-    "ex": "A memorial stands in the square.",
-    "exTr": "Meydanda bir anıt duruyor."
+    "ex": "They laid flowers at the memorial.",
+    "exTr": "Anıta çiçek bıraktılar."
   },
   "bearing--noun": {
     "tr": "ilgi, yön",

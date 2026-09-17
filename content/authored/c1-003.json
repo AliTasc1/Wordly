@@ -42,7 +42,7 @@
   "clutch--verb": { "tr": "sıkı sıkı tutmak", "def": "To hold something tightly, often from fear.", "ex": "She clutched the rail as the boat rolled.", "exTr": "Tekne sallanırken korkuluğu sıkı sıkı tuttu." },
   "clutch--noun": { "tr": "debriyaj", "def": "The pedal that connects the engine to the wheels.", "ex": "The clutch needs replacing.", "exTr": "Debriyajın değişmesi gerekiyor." },
   "fusion--noun": { "tr": "kaynaşma, füzyon", "def": "The joining of two things into one.", "ex": "The music is a fusion of two traditions.", "exTr": "Müzik iki geleneğin kaynaşması." },
-  "paddle--verb": { "tr": "kürek çekmek, suda yürümek", "def": "To move a small boat with a paddle, or to walk in shallow water.", "ex": "They paddled across the lake.", "exTr": "Gölü kürek çekerek geçtiler." },
+  "paddle--verb": { "tr": "kürek çekmek, suda yürümek", "def": "To move a small boat with a paddle, or to walk in shallow water.", "ex": "We paddled up the river at dawn.", "exTr": "Şafakta nehirde yukarı kürek çektik." },
   "traumatic--adj": { "tr": "travmatik, sarsıcı", "def": "Causing a lasting shock to the mind.", "ex": "It was a traumatic experience.", "exTr": "Sarsıcı bir deneyimdi." },
   "fiddle--verb": { "tr": "kurcalamak, oynamak", "def": "To touch or move something restlessly with your fingers.", "ex": "Stop fiddling with the remote.", "exTr": "Kumandayı kurcalamayı bırak." },
   "fiddle--noun": { "tr": "keman (halk müziği)", "def": "A violin, especially in folk music.", "ex": "He played the fiddle at weddings.", "exTr": "Düğünlerde keman çalardı." },

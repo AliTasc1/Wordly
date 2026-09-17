@@ -164,9 +164,22 @@ def validate(entry: dict, authored: dict, problems: list[str]) -> bool:
     # hyphen before escaping keeps the inserted class out of re.escape's way.
     # Split on the hyphen *and* the space: the key joins with a hyphen
     # (`bank-account`, `bulk-up`) while the word field may hold either, and the
-    # example may write it a third way or inflect across the join (`bulked up`).
-    raw_stem = lower_word[: max(3, len(lower_word) - 2)]
-    stem = r"[-\s]?".join(re.escape(p) for p in re.split(r"[-\s]", raw_stem))
+    # example may write it a third way.
+    parts = re.split(r"[-\s]", lower_word)
+    if len(parts) > 1:
+        # In a phrasal verb the ending lands on the first part and the particle
+        # stays fixed (`dole out` → `doled out`), so only the first part is
+        # shortened and `\w*` absorbs whatever the inflection adds before the
+        # join. Shortening the whole string instead cuts into the particle and
+        # then no inflected form can match.
+        head = parts[0][: max(3, len(parts[0]) - 2)]
+        # The class keeps the apostrophe so a possessive first part survives
+        # the shortening too (`driver's license`).
+        stem = re.escape(head) + r"[\w']*" + r"[-\s]?".join(
+            [""] + [re.escape(p) for p in parts[1:]]
+        )
+    else:
+        stem = re.escape(lower_word[: max(3, len(lower_word) - 2)])
     forms = [rf"\b{stem}"] + [
         rf"\b{re.escape(f)}\b" for f in IRREGULAR.get(lower_word, [])
     ]

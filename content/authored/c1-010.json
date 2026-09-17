@@ -39,7 +39,7 @@
   "conformity--noun": { "tr": "uyma, uygunluk", "def": "Behaviour that follows accepted rules or customs.", "ex": "The school demands conformity.", "exTr": "Okul kurallara uymayı talep ediyor." },
   "organizational--adj": { "tr": "örgütsel, kurumsal", "def": "Relating to how a group is arranged and run.", "ex": "The problem is organizational.", "exTr": "Sorun örgütsel." },
   "altruism--noun": { "tr": "özgecilik", "def": "The practice of caring for others before yourself.", "ex": "The essay defends altruism.", "exTr": "Deneme özgeciliği savunuyor." },
-  "exuberant--adj": { "tr": "taşkın, coşkulu", "def": "Full of lively energy and happiness.", "ex": "The crowd was exuberant.", "exTr": "Kalabalık coşkuluydu." },
+  "exuberant--adj": { "tr": "taşkın, coşkulu", "def": "Full of lively energy and happiness.", "ex": "She gave an exuberant welcome.", "exTr": "Coşkun bir karşılama yaptı." },
   "congregate--verb": { "tr": "toplanmak", "def": "To come together in a group.", "ex": "Birds congregate on the roof.", "exTr": "Kuşlar çatıda toplanıyor." },
   "symptomatic--adj": { "tr": "belirtisel, göstergesi olan", "def": "Being a sign of a larger problem.", "ex": "The delay is symptomatic of poor planning.", "exTr": "Gecikme kötü planlamanın bir göstergesi." },
   "toughness--noun": { "tr": "sertlik, dayanıklılık", "def": "The quality of being strong and hard to damage.", "ex": "The toughness of the glass surprised us.", "exTr": "Camın dayanıklılığı bizi şaşırttı." },
@@ -78,7 +78,7 @@
   "panoramic--adj": { "tr": "panoramik", "def": "Giving a wide view of a large area.", "ex": "The room has a panoramic view.", "exTr": "Odanın panoramik bir manzarası var." },
   "glean--verb": { "tr": "derlemek, toplamak", "def": "To collect information slowly and with difficulty.", "ex": "We gleaned the facts from old letters.", "exTr": "Gerçekleri eski mektuplardan derledik." },
   "crudely--adv": { "tr": "kabaca", "def": "In a rough or unskilled way.", "ex": "The shelter was crudely built.", "exTr": "Barınak kabaca yapılmıştı." },
-  "settee--noun": { "tr": "kanepe", "def": "A long soft seat for two or more people.", "ex": "The cat sleeps on the settee.", "exTr": "Kedi kanepede uyuyor." },
+  "settee--noun": { "tr": "kanepe", "def": "A long soft seat for two or more people.", "ex": "Three of us squeezed onto the settee.", "exTr": "Üçümüz kanepeye sığıştık." },
   "reenact--verb": { "tr": "yeniden canlandırmak", "def": "To perform the events of the past again.", "ex": "Volunteers reenact the battle each year.", "exTr": "Gönüllüler savaşı her yıl yeniden canlandırıyor." },
   "beguiling--adj": { "tr": "büyüleyici, cezbedici", "def": "Attractive in a way that may be deceptive.", "ex": "The offer is beguiling but risky.", "exTr": "Teklif cezbedici ama riskli." }
 }

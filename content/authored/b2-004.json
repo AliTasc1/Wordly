@@ -319,8 +319,8 @@
   "blast--noun": {
     "tr": "patlama, şiddetli esinti",
     "def": "An explosion, or a strong rush of air.",
-    "ex": "The blast broke every window.",
-    "exTr": "Patlama bütün camları kırdı."
+    "ex": "The blast was heard across the city.",
+    "exTr": "Patlama kentin her yerinden duyuldu."
   },
   "blast--verb": {
     "tr": "patlatmak",
@@ -361,8 +361,8 @@
   "stress--verb": {
     "tr": "vurgulamak",
     "def": "To say strongly that something matters.",
-    "ex": "She stressed the need for care.",
-    "exTr": "Dikkat gereğini vurguladı."
+    "ex": "He stressed that time was short.",
+    "exTr": "Zamanın kısa olduğunu vurguladı."
   },
   "noble--adj": {
     "tr": "asil, soylu",

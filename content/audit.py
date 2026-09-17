@@ -85,7 +85,47 @@ def audit(level: str) -> int:
     return errors
 
 
+def audit_across_levels() -> int:
+    """Aynı cümlenin iki ayrı seviyede kullanılması.
+
+    Seviye içi denetim bunu göremez, ama öğrenci için fark yok: terrible A1'de,
+    dreadful B2'de, ikisinin de Türkçesi "Hava berbattı." ise Türkçeden
+    İngilizceye çalışırken iki kartın sorusu birebir aynı olur ve hangi
+    kelimenin beklendiği bilinemez. O yüzden bu bir hata.
+    """
+    examples, turkish, entries = defaultdict(list), defaultdict(list), {}
+    for level in LEVELS:
+        path = CONTENT / f"{level}.json"
+        if not path.exists():
+            continue
+        for entry in json.loads(path.read_text(encoding="utf-8")):
+            if "example" not in entry:
+                continue
+            entries[entry["id"]] = entry
+            examples[entry["example"].strip().lower()].append(entry["id"])
+            turkish[entry["exampleTr"].strip().lower()].append(entry["id"])
+
+    errors = 0
+    print("\n====================================================")
+    print("Seviyeler arası")
+    print("====================================================")
+    for label, table in (("İngilizce", examples), ("Türkçe", turkish)):
+        shared = {k: v for k, v in table.items() if len(v) > 1}
+        if not shared:
+            continue
+        errors += len(shared)
+        print(f"\nHATA — iki kelimede aynı {label} cümle ({len(shared)}):")
+        for sentence, ids in shared.items():
+            where = ", ".join(f"{i} ({entries[i]['cefr']})" for i in ids)
+            print(f"  {sentence}  → {where}")
+
+    print("\nTemiz." if errors == 0 else f"\n{errors} sorun.")
+    return errors
+
+
 if __name__ == "__main__":
     targets = sys.argv[1:] or LEVELS
     total = sum(audit(level) for level in targets if (CONTENT / f"{level}.json").exists())
+    if not sys.argv[1:]:
+        total += audit_across_levels()
     sys.exit(1 if total else 0)

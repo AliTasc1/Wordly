@@ -780,8 +780,8 @@
   "tr": "sevgili, canım",
   "definition": "A person you love very much.",
   "definitionLang": "en",
-  "example": "Good night, darling.",
-  "exampleTr": "İyi geceler canım."
+  "example": "Come here, my darling.",
+  "exampleTr": "Buraya gel, canım."
  },
  {
   "id": "moving--adj",
@@ -4112,8 +4112,8 @@
   "tr": "patlama, şiddetli esinti",
   "definition": "An explosion, or a strong rush of air.",
   "definitionLang": "en",
-  "example": "The blast broke every window.",
-  "exampleTr": "Patlama bütün camları kırdı."
+  "example": "The blast was heard across the city.",
+  "exampleTr": "Patlama kentin her yerinden duyuldu."
  },
  {
   "id": "blast--verb",
@@ -4210,8 +4210,8 @@
   "tr": "vurgulamak",
   "definition": "To say strongly that something matters.",
   "definitionLang": "en",
-  "example": "She stressed the need for care.",
-  "exampleTr": "Dikkat gereğini vurguladı."
+  "example": "He stressed that time was short.",
+  "exampleTr": "Zamanın kısa olduğunu vurguladı."
  },
  {
   "id": "noble--adj",
@@ -5960,8 +5960,8 @@
   "tr": "viraj, kıvrım",
   "definition": "A curve in a road or a river.",
   "definitionLang": "en",
-  "example": "Slow down before the bend.",
-  "exampleTr": "Virajdan önce yavaşla."
+  "example": "The house sits beyond the next bend.",
+  "exampleTr": "Ev bir sonraki virajın ötesinde."
  },
  {
   "id": "review--verb",
@@ -9334,8 +9334,8 @@
   "tr": "on sent",
   "definition": "An American coin worth ten cents.",
   "definitionLang": "en",
-  "example": "It did not cost a dime.",
-  "exampleTr": "Tek kuruş etmedi."
+  "example": "The machine takes dimes only.",
+  "exampleTr": "Makine yalnızca on sentlik alıyor."
  },
  {
   "id": "domestic--adj",
@@ -9460,8 +9460,8 @@
   "tr": "berbat, korkunç",
   "definition": "Very bad or very unpleasant.",
   "definitionLang": "en",
-  "example": "The weather was dreadful.",
-  "exampleTr": "Hava berbattı."
+  "example": "We had a dreadful journey home.",
+  "exampleTr": "Eve dönüş yolculuğumuz berbattı."
  },
  {
   "id": "shrink--noun",
@@ -10034,8 +10034,8 @@
   "tr": "anıt",
   "definition": "A structure built to remember a person or an event.",
   "definitionLang": "en",
-  "example": "A memorial stands in the square.",
-  "exampleTr": "Meydanda bir anıt duruyor."
+  "example": "They laid flowers at the memorial.",
+  "exampleTr": "Anıta çiçek bıraktılar."
  },
  {
   "id": "bearing--noun",
@@ -15368,8 +15368,8 @@
   "tr": "yasak",
   "definition": "An official order that something must not be done.",
   "definitionLang": "en",
-  "example": "There is a ban on fishing here.",
-  "exampleTr": "Burada balık tutma yasağı var."
+  "example": "The ban on smoking starts today.",
+  "exampleTr": "Sigara yasağı bugün başlıyor."
  },
  {
   "id": "ban--verb",
@@ -16894,8 +16894,8 @@
   "tr": "tuzlu",
   "definition": "Containing a lot of salt.",
   "definitionLang": "en",
-  "example": "The soup is too salty.",
-  "exampleTr": "Çorba fazla tuzlu."
+  "example": "These crisps are very salty.",
+  "exampleTr": "Bu cipsler çok tuzlu."
  },
  {
   "id": "arch--noun",
@@ -21178,8 +21178,8 @@
   "tr": "kavşak",
   "definition": "A place where two roads cross.",
   "definitionLang": "en",
-  "example": "Turn right at the intersection.",
-  "exampleTr": "Kavşaktan sağa dön."
+  "example": "The accident happened at the intersection.",
+  "exampleTr": "Kaza kavşakta oldu."
  },
  {
   "id": "supplier--noun",
@@ -24846,8 +24846,8 @@
   "tr": "yemyeşil, gür",
   "definition": "Growing thickly and looking green and healthy.",
   "definitionLang": "en",
-  "example": "The valley is lush in spring.",
-  "exampleTr": "Vadi ilkbaharda yemyeşil."
+  "example": "Lush grass covered the hillside.",
+  "exampleTr": "Yamacı gür bir çimen kaplıyordu."
  },
  {
   "id": "soar--verb",
@@ -24888,8 +24888,8 @@
   "tr": "eczacı",
   "definition": "A person trained to prepare and sell medicines.",
   "definitionLang": "en",
-  "example": "Ask the pharmacist about the dose.",
-  "exampleTr": "Doz için eczacıya sor."
+  "example": "The pharmacist checked the prescription.",
+  "exampleTr": "Eczacı reçeteyi kontrol etti."
  },
  {
   "id": "high-tech--adj",
@@ -26988,8 +26988,8 @@
   "tr": "güvenilir",
   "definition": "Able to be trusted to do what is needed.",
   "definitionLang": "en",
-  "example": "He is a dependable colleague.",
-  "exampleTr": "Güvenilir bir meslektaş."
+  "example": "The old van proved surprisingly dependable.",
+  "exampleTr": "Eski minibüs şaşırtıcı biçimde güvenilir çıktı."
  },
  {
   "id": "pebble--noun",
@@ -29452,8 +29452,8 @@
   "tr": "karides (iri)",
   "definition": "A sea animal like a large shrimp that is eaten.",
   "definitionLang": "en",
-  "example": "The soup contains prawn.",
-  "exampleTr": "Çorbada karides var."
+  "example": "We ordered grilled prawns.",
+  "exampleTr": "Izgara karides söyledik."
  },
  {
   "id": "loosely--adv",
@@ -37516,8 +37516,8 @@
   "tr": "bakış açısı",
   "definition": "The way a person thinks about a subject.",
   "definitionLang": "en",
-  "example": "Explain it from his point of view.",
-  "exampleTr": "Onun bakış açısından açıkla."
+  "example": "Try to see my point of view.",
+  "exampleTr": "Benim bakış açımı anlamaya çalış."
  },
  {
   "id": "polar-bear--noun",

@@ -355,8 +355,8 @@
   "acknowledge--verb": {
     "tr": "kabul etmek, teyit etmek",
     "def": "To admit that something is true, or to say you received it.",
-    "ex": "He acknowledged his mistake.",
-    "exTr": "Hatasını kabul etti."
+    "ex": "She acknowledged my letter at once.",
+    "exTr": "Mektubumu aldığını hemen bildirdi."
   },
   "terminal--noun": {
     "tr": "terminal",

@@ -35,7 +35,7 @@
   "negligent--adj": { "tr": "ihmalkâr", "def": "Failing to take proper care of something.", "ex": "The court found the owner negligent.", "exTr": "Mahkeme sahibini ihmalkâr buldu." },
   "sedate--verb": { "tr": "sakinleştirici vermek", "def": "To give someone a drug that makes them calm or sleepy.", "ex": "They sedated the frightened horse.", "exTr": "Korkmuş ata sakinleştirici verdiler." },
   "sedate--adj": { "tr": "ağırbaşlı, sakin", "def": "Calm, slow and rather serious.", "ex": "They live at a sedate pace.", "exTr": "Sakin bir tempoda yaşıyorlar." },
-  "expire--verb": { "tr": "süresi dolmak", "def": "To come to an end, said of a document or a period.", "ex": "My passport expires in June.", "exTr": "Pasaportumun süresi haziranda doluyor." },
+  "expire--verb": { "tr": "süresi dolmak", "def": "To come to an end, said of a document or a period.", "ex": "The offer expires at midnight.", "exTr": "Teklifin süresi gece yarısı doluyor." },
   "compliance--noun": { "tr": "uyum, riayet", "def": "The act of obeying a rule or a law.", "ex": "The inspection checks compliance.", "exTr": "Denetim uyumu kontrol ediyor." },
   "latent--adj": { "tr": "gizli, uyuyan", "def": "Present but not yet active or visible.", "ex": "The talent was latent for years.", "exTr": "Yetenek yıllarca gizli kaldı." },
   "elevate--verb": { "tr": "yükseltmek", "def": "To raise something to a higher level or position.", "ex": "Elevate the leg to reduce swelling.", "exTr": "Şişliği azaltmak için bacağı yukarı kaldır." },

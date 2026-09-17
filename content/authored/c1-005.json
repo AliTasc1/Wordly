@@ -23,7 +23,7 @@
   "ventilation--noun": { "tr": "havalandırma", "def": "The movement of fresh air into a building.", "ex": "The cellar needs better ventilation.", "exTr": "Bodrumun daha iyi havalandırmaya ihtiyacı var." },
   "buffer--verb": { "tr": "tamponlamak, yumuşatmak", "def": "To protect something from a shock or a bad effect.", "ex": "Savings buffered the family against the loss.", "exTr": "Birikimler aileyi kayba karşı korudu." },
   "buffer--noun": { "tr": "tampon", "def": "Something that protects one thing from another.", "ex": "The trees act as a buffer against wind.", "exTr": "Ağaçlar rüzgâra karşı tampon görevi görüyor." },
-  "boast--noun": { "tr": "övünme", "def": "A statement praising yourself too much.", "ex": "It was an empty boast.", "exTr": "Boş bir övünmeydi." },
+  "boast--noun": { "tr": "övünme", "def": "A statement praising yourself too much.", "ex": "His boast about the deal proved false.", "exTr": "Anlaşmaya dair övünmesi yalan çıktı." },
   "gourmet--adj": { "tr": "gurme, lezzet ustası", "def": "Of very high quality, said of food.", "ex": "The shop sells gourmet cheese.", "exTr": "Dükkân gurme peynir satıyor." },
   "gourmet--noun": { "tr": "gurme", "def": "A person who knows a lot about good food.", "ex": "Her uncle is a real gourmet.", "exTr": "Amcası gerçek bir gurme." },
   "frosty--adj": { "tr": "ayazlı, buz gibi", "def": "Very cold with frost, or unfriendly in manner.", "ex": "It was a clear frosty morning.", "exTr": "Açık, ayazlı bir sabahtı." },
