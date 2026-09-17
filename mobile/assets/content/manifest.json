@@ -1,0 +1,36 @@
+{
+  "vocabTotal": 9466,
+  "authored": 460,
+  "levels": {
+    "A1": {
+      "total": 993,
+      "authored": 460
+    },
+    "A2": {
+      "total": 1342,
+      "authored": 0
+    },
+    "B1": {
+      "total": 2402,
+      "authored": 0
+    },
+    "B2": {
+      "total": 2756,
+      "authored": 0
+    },
+    "C1": {
+      "total": 1041,
+      "authored": 0
+    },
+    "C2": {
+      "total": 932,
+      "authored": 0
+    }
+  },
+  "attribution": [
+    "Kelime listesi ve CEFR seviyeleri: CEFR-J Wordlist 1.5, Tono Laboratory, Tokyo University of Foreign Studies.",
+    "C1/C2 kelimeleri: Octanove Vocabulary Profile 1.0 (CC BY-SA 4.0).",
+    "Telaffuz: open-dict-data/ipa-dict (MIT).",
+    "Tanımlar, Türkçe karşılıklar ve örnek cümleler WORDLY'e aittir."
+  ]
+}

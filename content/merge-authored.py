@@ -27,6 +27,23 @@ REQUIRED = ["tr", "def", "ex", "exTr"]
 # cannot parse a 20-word sentence, however correct it is.
 MAX_EXAMPLE_WORDS = {"A1": 8, "A2": 11, "B1": 15, "B2": 20, "C1": 26, "C2": 30}
 
+# An A1 learner cannot read an English dictionary definition, so the definition
+# is written in Turkish up to A2 and switches to English from B1 — by then
+# reading a simple English gloss is itself useful practice.
+DEFINITION_LANG = {"A1": "tr", "A2": "tr", "B1": "en", "B2": "en", "C1": "en", "C2": "en"}
+
+# Detecting "is this Turkish?" by looking for Turkish letters misses plenty of
+# valid sentences ("Birini telefonla aramak."), so we look for English instead:
+# a definition left in English will be dense with these, and a Turkish one will
+# contain none. Words that also exist in Turkish — "on" (ten), "an" (moment),
+# "o", "bu" — are deliberately left out.
+ENGLISH_MARKERS = re.compile(
+    r"\b(the|of|to|with|that|this|these|someone|something|which|used|when|"
+    r"are|is|was|were|and|or|from|your|you|it|not|but|have|has|who|where|"
+    r"very|more|than|about|into|other|people|way)\b",
+    re.IGNORECASE,
+)
+
 
 def load_authored() -> dict[str, dict]:
     authored: dict[str, dict] = {}
@@ -70,6 +87,14 @@ def validate(entry: dict, authored: dict, problems: list[str]) -> bool:
     if not authored["exTr"].strip():
         problems.append(f"{key}: örnek çevirisi yok")
 
+    # Catches an English definition left in an A1/A2 batch. One stray match can
+    # be a loanword or a quoted term, so two distinct markers are required.
+    if DEFINITION_LANG[level] == "tr":
+        definition = authored["def"]
+        markers = {m.group(0).lower() for m in ENGLISH_MARKERS.finditer(definition)}
+        if len(markers) >= 2:
+            problems.append(f"{key}: {level} tanımı Türkçe olmalı → {definition!r}")
+
     return True
 
 
@@ -104,6 +129,7 @@ def build() -> int:
                     "order": entry["order"],
                     "tr": content["tr"],
                     "definition": content["def"],
+                    "definitionLang": DEFINITION_LANG[entry["cefr"]],
                     "example": content["ex"],
                     "exampleTr": content["exTr"],
                 }
