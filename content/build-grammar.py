@@ -80,11 +80,33 @@ def load_lessons(level: str) -> list[dict]:
 
 
 def load_deferred(level: str) -> dict[str, dict]:
+    """Bu seviyede öğretilmeyip ileriye bırakılan maddeler."""
     path = LESSONS / "deferred.json"
     if not path.exists():
         return {}
     data = json.loads(path.read_text(encoding="utf-8"))
     return {d["code"]: d for d in data.get(level.upper(), [])}
+
+
+def load_inherited(level: str) -> dict[str, dict]:
+    """Alt seviyelerden bu seviyeye ertelenmiş maddeler.
+
+    Erteleme bir söz: "bunu A1'de değil A2'de öğreteceğiz". Sözün tutulup
+    tutulmadığına bakan yer burasıdır — madde artık bu seviyenin envanterinde
+    sayılır, ders yazılmışsa karşılığı aranır.
+    """
+    path = LESSONS / "deferred.json"
+    if not path.exists():
+        return {}
+    data = json.loads(path.read_text(encoding="utf-8"))
+    inherited = {}
+    for source, items in data.items():
+        if source.startswith("_") or source.lower() == level:
+            continue
+        for item in items:
+            if item.get("moveTo", "").lower() == level:
+                inherited[item["code"]] = {**item, "from": source}
+    return inherited
 
 
 def check_lesson(lesson: dict, codes: set[str], seen: dict) -> list[str]:
@@ -152,9 +174,12 @@ def check_lesson(lesson: dict, codes: set[str], seen: dict) -> list[str]:
     return problems
 
 
-def build(level: str, groups: dict) -> tuple[int, int]:
+def build(level: str, groups: dict) -> tuple[int, list[str]]:
     items = groups.get(level, [])
-    codes = {i["code"] for i in items}
+    inherited = load_inherited(level)
+    # Alt seviyeden devredilen madde bu seviyenin işidir; envanterin bir
+    # parçası gibi davranır.
+    codes = {i["code"] for i in items} | set(inherited)
     lessons = load_lessons(level)
     deferred = load_deferred(level)
 
@@ -186,6 +211,15 @@ def build(level: str, groups: dict) -> tuple[int, int]:
             + ", ".join(stray)
         )
 
+    broken = sorted(c for c in inherited if c not in covered and c not in deferred)
+    if broken and lessons:
+        # Erteleme bir sözdü; burada da öğretilmiyorsa ya derse eklenmeli ya da
+        # yeni bir gerekçeyle daha ileriye taşınmalı. Sessizce kaybolamaz.
+        detail = ", ".join(f"{c} ({inherited[c]['from']}'den)" for c in broken)
+        problems.append(
+            f"{level.upper()}: alt seviyeden ertelenen madde burada da yok: {detail}"
+        )
+
     if lessons and not problems:
         OUT.mkdir(parents=True, exist_ok=True)
         (OUT / f"grammar-{level}.json").write_text(
@@ -199,21 +233,23 @@ def main() -> int:
     groups = inventory()
     targets = [t.lower() for t in sys.argv[1:]] or LEVELS
 
-    print("Seviye   Envanter   Ders   Karşılanan   Ertelenen")
-    print("-------------------------------------------------")
+    print("Seviye   Envanter   Devralınan   Ders   Karşılanan   Ertelenen")
+    print("--------------------------------------------------------------")
     all_problems: list[str] = []
     written = {}
     for level in targets:
         items = groups.get(level, [])
+        inherited = load_inherited(level)
         lessons = load_lessons(level)
         deferred = load_deferred(level)
+        owed = {i["code"] for i in items} | set(inherited)
         covered = {c for lesson in lessons for c in lesson.get("covers", [])}
         count, problems = build(level, groups)
         all_problems.extend(problems)
         written[level] = count
         print(
-            f"{level.upper():7s} {len(items):9d} {count:6d} "
-            f"{len(covered & {i['code'] for i in items}):12d} {len(deferred):11d}"
+            f"{level.upper():7s} {len(items):9d} {len(inherited):12d} {count:6d} "
+            f"{len(covered & owed):12d} {len(deferred):11d}"
         )
     total_problems = len(all_problems)
     if all_problems:

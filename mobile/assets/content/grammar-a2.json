@@ -1,0 +1,2342 @@
+[
+ {
+  "id": "a2-01-past-negative-question",
+  "level": "A2",
+  "order": 1,
+  "title": "Geçmiş zaman — olumsuz ve soru",
+  "topic": "Past simple: didn't / did",
+  "canDo": "Dün yapmadığım şeyleri söyleyebilir, olanı biteni sorabilirim.",
+  "covers": [
+   "TA.PAST.be.NEG",
+   "TA.PAST.do.NEG",
+   "TA.PAST.do.INT.AFF",
+   "VP.SVO.NEG"
+  ],
+  "concept": {
+   "summary": "Geçmişte olumsuzluk ve soru için did kullanılır. Geçmişlik did'e geçtiği için asıl fiil yalın hâle döner — ikinci kez geçmiş yapılmaz. be fiili ise kendi başına çalışır: wasn't, weren't.",
+   "formula": {
+    "left": "Özne + didn't + yalın fiil",
+    "right": "Did + özne + yalın fiil?"
+   },
+   "table": [
+    {
+     "form": "olumsuz",
+     "be": "didn't + yalın fiil",
+     "example": "I didn't see him."
+    },
+    {
+     "form": "soru",
+     "be": "Did + özne + yalın fiil",
+     "example": "Did you see him?"
+    },
+    {
+     "form": "be olumsuz",
+     "be": "wasn't / weren't",
+     "example": "She wasn't at home."
+    },
+    {
+     "form": "be soru",
+     "be": "Was / Were + özne",
+     "example": "Were they late?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I didn't go to work yesterday.",
+    "tr": "Dün işe gitmedim.",
+    "note": "went değil go — geçmişlik didn't'te."
+   },
+   {
+    "en": "Did you call her?",
+    "tr": "Onu aradın mı?",
+    "note": "Soruda Did başa gelir."
+   },
+   {
+    "en": "He wasn't ready.",
+    "tr": "Hazır değildi.",
+    "note": "be fiili did almaz."
+   },
+   {
+    "en": "We didn't know the address.",
+    "tr": "Adresi bilmiyorduk.",
+    "note": "know yalın kaldı."
+   },
+   {
+    "en": "Were you at the meeting?",
+    "tr": "Toplantıda mıydın?",
+    "note": "you → Were."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I didn't went there.",
+    "right": "I didn't go there.",
+    "why": "Geçmişlik bir cümlede iki kez gösterilmez."
+   },
+   {
+    "wrong": "Did you saw the film?",
+    "right": "Did you see the film?",
+    "why": "Did'den sonra fiil yalın gelir."
+   },
+   {
+    "wrong": "She didn't was at home.",
+    "right": "She wasn't at home.",
+    "why": "be fiiliyle did kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "They ___ the bus this morning.",
+    "options": [
+     "didn't catch",
+     "didn't caught",
+     "not caught",
+     "weren't catch"
+    ],
+    "answer": 0,
+    "note": "didn't + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "___ she finish the report?",
+    "options": [
+     "Did",
+     "Does",
+     "Was",
+     "Has"
+    ],
+    "answer": 0,
+    "note": "Geçmiş soru → Did."
+   },
+   {
+    "type": "choice",
+    "text": "The shops ___ open on Sunday.",
+    "options": [
+     "weren't",
+     "wasn't",
+     "didn't",
+     "don't"
+    ],
+    "answer": 0,
+    "note": "shops çoğul be → weren't."
+   },
+   {
+    "type": "choice",
+    "text": "Did you ___ my message?",
+    "options": [
+     "get",
+     "got",
+     "getting",
+     "gets"
+    ],
+    "answer": 0,
+    "note": "Did'den sonra yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "I ___ anything about it.",
+    "options": [
+     "didn't know",
+     "didn't knew",
+     "not knew"
+    ],
+    "answer": 0,
+    "note": "didn't + yalın fiil."
+   }
+  ]
+ },
+ {
+  "id": "a2-02-past-progressive",
+  "level": "A2",
+  "order": 2,
+  "title": "Sürekli geçmiş — was doing",
+  "topic": "Past progressive",
+  "canDo": "Geçmişte bir anda ne yapmakta olduğumu anlatabilirim.",
+  "covers": [
+   "TA.PASTPRG.AFF"
+  ],
+  "concept": {
+   "summary": "Geçmişte bir noktada sürmekte olan iş için kullanılır. Genellikle araya giren kısa bir olayla birlikte gelir: uzun iş was/were + -ing, kısa olay past simple olur.",
+   "formula": {
+    "left": "was / were",
+    "right": "+ fiil-ing"
+   },
+   "table": [
+    {
+     "form": "I / he / she / it",
+     "be": "was + -ing",
+     "example": "I was sleeping."
+    },
+    {
+     "form": "you / we / they",
+     "be": "were + -ing",
+     "example": "They were working."
+    },
+    {
+     "form": "araya girme",
+     "be": "when + past simple",
+     "example": "I was reading when he called."
+    },
+    {
+     "form": "aynı anda",
+     "be": "while",
+     "example": "While she was cooking, I set the table."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I was watching TV at nine.",
+    "tr": "Dokuzda televizyon izliyordum.",
+    "note": "Belirli bir anda süren iş."
+   },
+   {
+    "en": "They were waiting for the bus.",
+    "tr": "Otobüsü bekliyorlardı.",
+    "note": "they → were."
+   },
+   {
+    "en": "She was cooking when I arrived.",
+    "tr": "Ben vardığımda yemek yapıyordu.",
+    "note": "Uzun iş -ing, kısa olay past simple."
+   },
+   {
+    "en": "It was raining all morning.",
+    "tr": "Bütün sabah yağmur yağıyordu.",
+    "note": "Süreklilik vurgulanıyor."
+   },
+   {
+    "en": "While we were talking, the lights went out.",
+    "tr": "Biz konuşurken ışıklar gitti.",
+    "note": "while sürekli olanla kullanılır."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I was watch TV.",
+    "right": "I was watching TV.",
+    "why": "-ing eki düşmez."
+   },
+   {
+    "wrong": "They was waiting.",
+    "right": "They were waiting.",
+    "why": "Çoğul özne were alır."
+   },
+   {
+    "wrong": "When he called, I was read.",
+    "right": "When he called, I was reading.",
+    "why": "was/were her zaman -ing ile gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "At eight o'clock I ___ dinner.",
+    "options": [
+     "was having",
+     "had having",
+     "were having",
+     "am having"
+    ],
+    "answer": 0,
+    "note": "I → was + -ing."
+   },
+   {
+    "type": "choice",
+    "text": "The children ___ in the garden.",
+    "options": [
+     "were playing",
+     "was playing",
+     "are played",
+     "played were"
+    ],
+    "answer": 0,
+    "note": "Çoğul → were."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ when the phone rang.",
+    "options": [
+     "was sleeping",
+     "slept was",
+     "is sleeping",
+     "were sleeping"
+    ],
+    "answer": 0,
+    "note": "Uzun iş sürekli geçmişte."
+   },
+   {
+    "type": "choice",
+    "text": "While I ___ , it started to snow.",
+    "options": [
+     "was driving",
+     "drove",
+     "am driving",
+     "were drove"
+    ],
+    "answer": 0,
+    "note": "while + sürekli geçmiş."
+   },
+   {
+    "type": "gap",
+    "text": "We ___ for you at the station.",
+    "options": [
+     "were waiting",
+     "was waiting",
+     "are waited"
+    ],
+    "answer": 0,
+    "note": "we → were + -ing."
+   }
+  ]
+ },
+ {
+  "id": "a2-03-will",
+  "level": "A2",
+  "order": 3,
+  "title": "will — gelecek",
+  "topic": "Future: will",
+  "canDo": "Gelecekle ilgili tahmin yapabilir, o anda karar verebilirim.",
+  "covers": [
+   "TA.FUT.AFF",
+   "MD.will.AFF"
+  ],
+  "concept": {
+   "summary": "will tahmin, söz verme ve o anda alınan karar için kullanılır. Kip fiil olduğu için özneye göre değişmez ve ardından yalın fiil gelir.",
+   "formula": {
+    "left": "Özne + will",
+    "right": "+ yalın fiil"
+   },
+   "table": [
+    {
+     "form": "olumlu",
+     "be": "will / 'll",
+     "example": "I will help you."
+    },
+    {
+     "form": "olumsuz",
+     "be": "won't",
+     "example": "He won't come."
+    },
+    {
+     "form": "soru",
+     "be": "Will + özne",
+     "example": "Will you be there?"
+    },
+    {
+     "form": "tahmin",
+     "be": "I think ... will",
+     "example": "I think it will rain."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I think she will like it.",
+    "tr": "Bence bunu beğenecek.",
+    "note": "Tahmin."
+   },
+   {
+    "en": "I'll call you tonight.",
+    "tr": "Bu akşam seni ararım.",
+    "note": "Söz verme; will → 'll."
+   },
+   {
+    "en": "He won't be late.",
+    "tr": "Geç kalmayacak.",
+    "note": "will not → won't."
+   },
+   {
+    "en": "Will you help me with this?",
+    "tr": "Bunda bana yardım eder misin?",
+    "note": "Rica."
+   },
+   {
+    "en": "The meeting will start at ten.",
+    "tr": "Toplantı onda başlayacak.",
+    "note": "Gelecekteki olay."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "She wills come.",
+    "right": "She will come.",
+    "why": "Kip fiiller -s almaz."
+   },
+   {
+    "wrong": "I will to help you.",
+    "right": "I will help you.",
+    "why": "will'den sonra to gelmez."
+   },
+   {
+    "wrong": "He will not to be late.",
+    "right": "He won't be late.",
+    "why": "Olumsuzda will not / won't yeterlidir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "Don't worry, I ___ you.",
+    "options": [
+     "will help",
+     "will helps",
+     "will to help",
+     "am help"
+    ],
+    "answer": 0,
+    "note": "will + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "I think it ___ tomorrow.",
+    "options": [
+     "will snow",
+     "snows will",
+     "will snows",
+     "is snow"
+    ],
+    "answer": 0,
+    "note": "Tahminde will."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ be at the office today.",
+    "options": [
+     "won't",
+     "willn't",
+     "doesn't will",
+     "not will"
+    ],
+    "answer": 0,
+    "note": "will not → won't."
+   },
+   {
+    "type": "choice",
+    "text": "___ you wait for me?",
+    "options": [
+     "Will",
+     "Do will",
+     "Are will",
+     "Does"
+    ],
+    "answer": 0,
+    "note": "Kip fiil soruda başa geçer."
+   },
+   {
+    "type": "gap",
+    "text": "They ___ the results on Friday.",
+    "options": [
+     "will announce",
+     "will announces",
+     "announce will"
+    ],
+    "answer": 0,
+    "note": "will + yalın fiil."
+   }
+  ]
+ },
+ {
+  "id": "a2-04-be-going-to",
+  "level": "A2",
+  "order": 4,
+  "title": "be going to — plan",
+  "topic": "Future: be going to",
+  "canDo": "Önceden yaptığım planları anlatabilirim.",
+  "covers": [
+   "MD.be_going_to.AFF"
+  ],
+  "concept": {
+   "summary": "Önceden verilmiş karar ve plan için kullanılır; will ise o anda verilen karar içindir. Ayrıca gözle görülür bir belirti varsa gelecek be going to ile kurulur: kara bulutlar varsa yağmur yağacaktır.",
+   "formula": {
+    "left": "am / is / are going to",
+    "right": "+ yalın fiil"
+   },
+   "table": [
+    {
+     "form": "plan",
+     "be": "be going to",
+     "example": "We are going to move house."
+    },
+    {
+     "form": "belirti",
+     "be": "be going to",
+     "example": "Look! It is going to rain."
+    },
+    {
+     "form": "olumsuz",
+     "be": "am / is / are not",
+     "example": "I am not going to wait."
+    },
+    {
+     "form": "karşılaştır",
+     "be": "will = o anki karar",
+     "example": "The phone is ringing. I'll get it."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I am going to study medicine.",
+    "tr": "Tıp okuyacağım.",
+    "note": "Önceden verilmiş karar."
+   },
+   {
+    "en": "They are going to sell their car.",
+    "tr": "Arabalarını satacaklar.",
+    "note": "Plan."
+   },
+   {
+    "en": "Look at those clouds! It is going to rain.",
+    "tr": "Şu bulutlara bak! Yağmur yağacak.",
+    "note": "Gözle görülen belirti."
+   },
+   {
+    "en": "She isn't going to come tonight.",
+    "tr": "Bu akşam gelmeyecek.",
+    "note": "Olumsuzda be fiili çekilir."
+   },
+   {
+    "en": "Are you going to watch the match?",
+    "tr": "Maçı izleyecek misin?",
+    "note": "Soruda be başa geçer."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I going to study medicine.",
+    "right": "I am going to study medicine.",
+    "why": "be parçası düşmez."
+   },
+   {
+    "wrong": "We are going to moving house.",
+    "right": "We are going to move house.",
+    "why": "to'dan sonra fiil yalın kalır."
+   },
+   {
+    "wrong": "It will rain, look at the clouds.",
+    "right": "It is going to rain, look at the clouds.",
+    "why": "Ortada belirti varsa be going to yeğlenir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "We ___ visit my aunt on Sunday.",
+    "options": [
+     "are going to",
+     "going to",
+     "are go to",
+     "will to"
+    ],
+    "answer": 0,
+    "note": "be + going to."
+   },
+   {
+    "type": "choice",
+    "text": "He is going to ___ a new job.",
+    "options": [
+     "look for",
+     "looking for",
+     "looks for",
+     "looked for"
+    ],
+    "answer": 0,
+    "note": "to'dan sonra yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "___ you going to tell her?",
+    "options": [
+     "Are",
+     "Do",
+     "Will",
+     "Is"
+    ],
+    "answer": 0,
+    "note": "you → Are."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ going to take the exam.",
+    "options": [
+     "isn't",
+     "doesn't",
+     "won't",
+     "not is"
+    ],
+    "answer": 0,
+    "note": "Olumsuzda be çekilir."
+   },
+   {
+    "type": "gap",
+    "text": "I ___ going to be late again.",
+    "options": [
+     "am not",
+     "not am",
+     "don't"
+    ],
+    "answer": 0,
+    "note": "I am not going to."
+   }
+  ]
+ },
+ {
+  "id": "a2-05-have-to-should",
+  "level": "A2",
+  "order": 5,
+  "title": "have to, should, need to",
+  "topic": "Modals of obligation and advice",
+  "canDo": "Bir şeyin zorunlu mu yoksa tavsiye mi olduğunu ayırt ederek söyleyebilirim.",
+  "covers": [
+   "MD.have_to.AFF",
+   "MD.should.AFF",
+   "MD.need.AFF"
+  ],
+  "concept": {
+   "summary": "have to dışarıdan gelen zorunluluğu (kural, yasa), should tavsiyeyi anlatır. have to gerçek bir fiildir, o yüzden çekilir ve sorusunu do ile kurar; should ise kip fiildir, değişmez.",
+   "formula": {
+    "left": "have to / has to + yalın fiil",
+    "right": "should + yalın fiil"
+   },
+   "table": [
+    {
+     "form": "zorunluluk",
+     "be": "have to / has to",
+     "example": "I have to work on Saturday."
+    },
+    {
+     "form": "tavsiye",
+     "be": "should",
+     "example": "You should see a doctor."
+    },
+    {
+     "form": "gereksizlik",
+     "be": "don't have to",
+     "example": "You don't have to pay."
+    },
+    {
+     "form": "gereklilik",
+     "be": "need to",
+     "example": "We need to leave now."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "She has to wear a uniform.",
+    "tr": "Üniforma giymek zorunda.",
+    "note": "she → has to."
+   },
+   {
+    "en": "You should rest today.",
+    "tr": "Bugün dinlenmelisin.",
+    "note": "Tavsiye."
+   },
+   {
+    "en": "We don't have to hurry.",
+    "tr": "Acele etmemize gerek yok.",
+    "note": "Zorunlu değil; yasak değil."
+   },
+   {
+    "en": "Do I have to book a table?",
+    "tr": "Masa ayırtmam gerekir mi?",
+    "note": "have to sorusu do ile kurulur."
+   },
+   {
+    "en": "You shouldn't eat so late.",
+    "tr": "Bu kadar geç yememelisin.",
+    "note": "should not → shouldn't."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "She have to wear a uniform.",
+    "right": "She has to wear a uniform.",
+    "why": "have gerçek fiildir, üçüncü tekilde has olur."
+   },
+   {
+    "wrong": "You should to rest.",
+    "right": "You should rest.",
+    "why": "Kip fiilden sonra to gelmez."
+   },
+   {
+    "wrong": "Have I to book a table?",
+    "right": "Do I have to book a table?",
+    "why": "Günlük İngilizcede have to sorusu do ile kurulur."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "He ___ get up early every day.",
+    "options": [
+     "has to",
+     "have to",
+     "has",
+     "is have to"
+    ],
+    "answer": 0,
+    "note": "he → has to."
+   },
+   {
+    "type": "choice",
+    "text": "You ___ drink more water.",
+    "options": [
+     "should",
+     "should to",
+     "shoulds",
+     "are should"
+    ],
+    "answer": 0,
+    "note": "Tavsiye → should + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "We ___ pay; it is free.",
+    "options": [
+     "don't have to",
+     "haven't to",
+     "shouldn't to",
+     "not have to"
+    ],
+    "answer": 0,
+    "note": "Gerek yok → don't have to."
+   },
+   {
+    "type": "choice",
+    "text": "___ she have to work tonight?",
+    "options": [
+     "Does",
+     "Has",
+     "Is",
+     "Do"
+    ],
+    "answer": 0,
+    "note": "she → Does ... have to."
+   },
+   {
+    "type": "gap",
+    "text": "I ___ finish this before noon.",
+    "options": [
+     "need to",
+     "need",
+     "needs to be"
+    ],
+    "answer": 0,
+    "note": "need to + yalın fiil."
+   }
+  ]
+ },
+ {
+  "id": "a2-06-would-can-you",
+  "level": "A2",
+  "order": 6,
+  "title": "would like, Can you …?",
+  "topic": "would and functional requests",
+  "canDo": "Kibarca istekte bulunabilir, sipariş verebilir, yardım isteyebilirim.",
+  "covers": [
+   "MD.would.AFF",
+   "INTF.can_you"
+  ],
+  "concept": {
+   "summary": "would want'ın kibar biçimidir: would like. Rica ederken Can you …? günlük, Could you …? ve Would you …? daha kibardır. Kip fiil oldukları için hepsinden sonra yalın fiil gelir.",
+   "formula": {
+    "left": "would like + to + fiil / isim",
+    "right": "Can / Could / Would you + yalın fiil?"
+   },
+   "table": [
+    {
+     "form": "istek",
+     "be": "would like",
+     "example": "I would like a coffee."
+    },
+    {
+     "form": "kısaltma",
+     "be": "'d like",
+     "example": "I'd like to book a room."
+    },
+    {
+     "form": "rica",
+     "be": "Can you …?",
+     "example": "Can you help me?"
+    },
+    {
+     "form": "daha kibar",
+     "be": "Could / Would you …?",
+     "example": "Could you repeat that?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I would like a table for two.",
+    "tr": "İki kişilik bir masa istiyorum.",
+    "note": "Restoranda kibar istek."
+   },
+   {
+    "en": "Would you like some dessert?",
+    "tr": "Tatlı ister misiniz?",
+    "note": "İkram sorusu."
+   },
+   {
+    "en": "Can you pass me the salt?",
+    "tr": "Tuzu uzatır mısın?",
+    "note": "Günlük rica."
+   },
+   {
+    "en": "Could you speak more slowly, please?",
+    "tr": "Biraz daha yavaş konuşur musunuz?",
+    "note": "Could daha kibardır."
+   },
+   {
+    "en": "I'd like to change my ticket.",
+    "tr": "Biletimi değiştirmek istiyorum.",
+    "note": "would → 'd."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I would like a coffee, please?",
+    "right": "I would like a coffee, please.",
+    "why": "Bu bir istek cümlesi, soru değil."
+   },
+   {
+    "wrong": "Can you to help me?",
+    "right": "Can you help me?",
+    "why": "Kip fiilden sonra to gelmez."
+   },
+   {
+    "wrong": "I would like go home.",
+    "right": "I would like to go home.",
+    "why": "would like fiil alacaksa to ister."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I ___ like to see the menu.",
+    "options": [
+     "would",
+     "will",
+     "am",
+     "do"
+    ],
+    "answer": 0,
+    "note": "Kibar istek → would like."
+   },
+   {
+    "type": "choice",
+    "text": "___ you close the door, please?",
+    "options": [
+     "Could",
+     "Do",
+     "Are",
+     "Should to"
+    ],
+    "answer": 0,
+    "note": "Kibar rica → Could you."
+   },
+   {
+    "type": "choice",
+    "text": "Would you like ___ with us?",
+    "options": [
+     "to come",
+     "come",
+     "coming",
+     "came"
+    ],
+    "answer": 0,
+    "note": "would like + to + fiil."
+   },
+   {
+    "type": "choice",
+    "text": "___ you help me carry this?",
+    "options": [
+     "Can",
+     "Do can",
+     "Are",
+     "Does"
+    ],
+    "answer": 0,
+    "note": "Rica → Can you."
+   },
+   {
+    "type": "gap",
+    "text": "We ___ like two tickets, please.",
+    "options": [
+     "would",
+     "will",
+     "are"
+    ],
+    "answer": 0,
+    "note": "would like kalıbı."
+   }
+  ]
+ },
+ {
+  "id": "a2-07-present-perfect",
+  "level": "A2",
+  "order": 7,
+  "title": "Present perfect — have done",
+  "topic": "Present perfect (affirmative)",
+  "canDo": "Hayatımda neler yaptığımı, ne zaman olduğunu söylemeden anlatabilirim.",
+  "covers": [
+   "TA.PRPF.AFF"
+  ],
+  "concept": {
+   "summary": "Geçmişte olmuş ama ne zaman olduğu önemli olmayan işler için kullanılır: deneyim, yeni haber, hâlâ süren durum. Zaman söylenirse (yesterday, in 2019) artık present perfect değil past simple gerekir.",
+   "formula": {
+    "left": "have / has",
+    "right": "+ fiilin üçüncü hâli"
+   },
+   "table": [
+    {
+     "form": "I / you / we / they",
+     "be": "have + V3",
+     "example": "I have finished."
+    },
+    {
+     "form": "he / she / it",
+     "be": "has + V3",
+     "example": "She has finished."
+    },
+    {
+     "form": "deneyim",
+     "be": "ever / never",
+     "example": "Have you ever been to Rome?"
+    },
+    {
+     "form": "süregelen",
+     "be": "for / since",
+     "example": "We have lived here for ten years."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I have lost my keys.",
+    "tr": "Anahtarlarımı kaybettim.",
+    "note": "Sonucu şu anda geçerli: hâlâ bulunamadı."
+   },
+   {
+    "en": "She has visited Japan twice.",
+    "tr": "Japonya'yı iki kez ziyaret etti.",
+    "note": "Deneyim; ne zaman olduğu önemsiz."
+   },
+   {
+    "en": "They have just arrived.",
+    "tr": "Az önce vardılar.",
+    "note": "just yeni biten iş için."
+   },
+   {
+    "en": "We have known each other since 2015.",
+    "tr": "2015'ten beri tanışıyoruz.",
+    "note": "since + başlangıç noktası."
+   },
+   {
+    "en": "He has worked here for five years.",
+    "tr": "Beş yıldır burada çalışıyor.",
+    "note": "for + süre."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I have lost my keys yesterday.",
+    "right": "I lost my keys yesterday.",
+    "why": "Belirli geçmiş zaman söylenince past simple gerekir."
+   },
+   {
+    "wrong": "She has went to Japan.",
+    "right": "She has gone to Japan.",
+    "why": "Üçüncü hâl gerekir, ikinci hâl değil."
+   },
+   {
+    "wrong": "We have known each other for 2015.",
+    "right": "We have known each other since 2015.",
+    "why": "Başlangıç noktasında since, sürede for kullanılır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I ___ my homework.",
+    "options": [
+     "have finished",
+     "have finish",
+     "has finished",
+     "am finished"
+    ],
+    "answer": 0,
+    "note": "I → have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ to London three times.",
+    "options": [
+     "has been",
+     "have been",
+     "has went",
+     "is been"
+    ],
+    "answer": 0,
+    "note": "she → has; go'nun V3'ü been/gone."
+   },
+   {
+    "type": "choice",
+    "text": "We have lived here ___ 2018.",
+    "options": [
+     "since",
+     "for",
+     "from",
+     "during"
+    ],
+    "answer": 0,
+    "note": "Başlangıç noktası → since."
+   },
+   {
+    "type": "choice",
+    "text": "They have waited ___ two hours.",
+    "options": [
+     "for",
+     "since",
+     "from",
+     "during"
+    ],
+    "answer": 0,
+    "note": "Süre → for."
+   },
+   {
+    "type": "gap",
+    "text": "He ___ just left the office.",
+    "options": [
+     "has",
+     "have",
+     "is"
+    ],
+    "answer": 0,
+    "note": "he → has."
+   }
+  ]
+ },
+ {
+  "id": "a2-08-passive",
+  "level": "A2",
+  "order": 8,
+  "title": "Edilgen çatı — is made, was built",
+  "topic": "Passive: present and past",
+  "canDo": "İşi kimin yaptığı önemli değilken olayın kendisini anlatabilirim.",
+  "covers": [
+   "PASS.PRESENT",
+   "PASS.PAST.AFF",
+   "VN.VN_N"
+  ],
+  "concept": {
+   "summary": "Eylemi yapan belli değilse ya da önemli değilse nesne öne alınır. Yapı iki parçalıdır: be fiili zamanı taşır, asıl fiil üçüncü hâlde kalır. Yapan kişi söylenecekse by ile eklenir. Üçüncü hâl ayrıca sıfat gibi de kullanılır: a broken window.",
+   "formula": {
+    "left": "am / is / are / was / were",
+    "right": "+ fiilin üçüncü hâli"
+   },
+   "table": [
+    {
+     "form": "geniş zaman",
+     "be": "is / are + V3",
+     "example": "Coffee is grown in Brazil."
+    },
+    {
+     "form": "geçmiş",
+     "be": "was / were + V3",
+     "example": "The bridge was built in 1973."
+    },
+    {
+     "form": "yapan",
+     "be": "by + kişi",
+     "example": "It was written by a student."
+    },
+    {
+     "form": "sıfat gibi",
+     "be": "V3 + isim",
+     "example": "a broken window"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "English is spoken in many countries.",
+    "tr": "İngilizce birçok ülkede konuşulur.",
+    "note": "Kimin konuştuğu önemsiz."
+   },
+   {
+    "en": "The letter was sent yesterday.",
+    "tr": "Mektup dün gönderildi.",
+    "note": "Geçmiş edilgen."
+   },
+   {
+    "en": "These shoes are made in Turkey.",
+    "tr": "Bu ayakkabılar Türkiye'de üretiliyor.",
+    "note": "Etiketlerde sık görülen kalıp."
+   },
+   {
+    "en": "The house was designed by my uncle.",
+    "tr": "Evi amcam tasarladı.",
+    "note": "Yapan by ile eklendi."
+   },
+   {
+    "en": "We couldn't use the broken lift.",
+    "tr": "Bozuk asansörü kullanamadık.",
+    "note": "Üçüncü hâl ismi niteliyor."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "The bridge was build in 1973.",
+    "right": "The bridge was built in 1973.",
+    "why": "Edilgende üçüncü hâl gerekir."
+   },
+   {
+    "wrong": "English speaks in many countries.",
+    "right": "English is spoken in many countries.",
+    "why": "Özne işi yapmıyorsa etken çatı kullanılamaz."
+   },
+   {
+    "wrong": "The letter sent yesterday.",
+    "right": "The letter was sent yesterday.",
+    "why": "be parçası düşmez."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "The room ___ every morning.",
+    "options": [
+     "is cleaned",
+     "cleans",
+     "is cleaning",
+     "cleaned"
+    ],
+    "answer": 0,
+    "note": "Geniş zaman edilgen → is + V3."
+   },
+   {
+    "type": "choice",
+    "text": "These cars ___ in Germany.",
+    "options": [
+     "are made",
+     "are make",
+     "make",
+     "is made"
+    ],
+    "answer": 0,
+    "note": "Çoğul özne → are + V3."
+   },
+   {
+    "type": "choice",
+    "text": "The museum ___ in 1890.",
+    "options": [
+     "was opened",
+     "was open",
+     "opened was",
+     "is opened"
+    ],
+    "answer": 0,
+    "note": "Geçmiş edilgen → was + V3."
+   },
+   {
+    "type": "choice",
+    "text": "The photos ___ by a professional.",
+    "options": [
+     "were taken",
+     "were took",
+     "took",
+     "are take"
+    ],
+    "answer": 0,
+    "note": "take → taken."
+   },
+   {
+    "type": "gap",
+    "text": "Be careful with that ___ glass.",
+    "options": [
+     "broken",
+     "break",
+     "breaking"
+    ],
+    "answer": 0,
+    "note": "Üçüncü hâl ismi niteler."
+   }
+  ]
+ },
+ {
+  "id": "a2-09-relative-who-that",
+  "level": "A2",
+  "order": 9,
+  "title": "who ve that — kim, hangi",
+  "topic": "Relative pronouns: who, that, which",
+  "canDo": "Bir kişiyi ya da şeyi ayrıntısıyla tarif edebilirim.",
+  "covers": [
+   "PREL.who",
+   "PREL.that"
+  ],
+  "concept": {
+   "summary": "İki cümleyi tek cümlede birleştirmenin yolu. İnsanlar için who, şeyler için which, ikisi için de that kullanılabilir. İlgi zamiri kendi cümleciğinde özne yerine geçtiği için ayrıca bir özne konmaz.",
+   "formula": {
+    "left": "kişi + who / that",
+    "right": "şey + which / that"
+   },
+   "table": [
+    {
+     "form": "kişi",
+     "be": "who",
+     "example": "the man who lives here"
+    },
+    {
+     "form": "şey",
+     "be": "which",
+     "example": "the book which won the prize"
+    },
+    {
+     "form": "ikisi de",
+     "be": "that",
+     "example": "the film that scared me"
+    },
+    {
+     "form": "dikkat",
+     "be": "ikinci özne konmaz",
+     "example": "the man who lives (he lives değil)"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I know a woman who speaks five languages.",
+    "tr": "Beş dil konuşan bir kadın tanıyorum.",
+    "note": "Kişi → who."
+   },
+   {
+    "en": "This is the bus that goes to the airport.",
+    "tr": "Havaalanına giden otobüs bu.",
+    "note": "Şey → that."
+   },
+   {
+    "en": "The house which burned down was very old.",
+    "tr": "Yanan ev çok eskiydi.",
+    "note": "Şey → which."
+   },
+   {
+    "en": "She is the teacher who helped me.",
+    "tr": "Bana yardım eden öğretmen o.",
+    "note": "who cümleciğin öznesi."
+   },
+   {
+    "en": "I like films that make me think.",
+    "tr": "Beni düşündüren filmleri severim.",
+    "note": "Çoğul da olsa that değişmez."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I know a woman who she speaks five languages.",
+    "right": "I know a woman who speaks five languages.",
+    "why": "who zaten öznedir, ikinci özne konmaz."
+   },
+   {
+    "wrong": "The man which lives here is a doctor.",
+    "right": "The man who lives here is a doctor.",
+    "why": "İnsanlar için which kullanılmaz."
+   },
+   {
+    "wrong": "This is the bus who goes to the airport.",
+    "right": "This is the bus that goes to the airport.",
+    "why": "Cansız varlık için who kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "The girl ___ won the race is my cousin.",
+    "options": [
+     "who",
+     "which",
+     "what",
+     "whose is"
+    ],
+    "answer": 0,
+    "note": "Kişi → who."
+   },
+   {
+    "type": "choice",
+    "text": "I bought a phone ___ has a good camera.",
+    "options": [
+     "that",
+     "who",
+     "what",
+     "whom"
+    ],
+    "answer": 0,
+    "note": "Şey → that/which."
+   },
+   {
+    "type": "choice",
+    "text": "The email ___ arrived this morning was urgent.",
+    "options": [
+     "which",
+     "who",
+     "what",
+     "whose"
+    ],
+    "answer": 0,
+    "note": "Cansız → which."
+   },
+   {
+    "type": "choice",
+    "text": "He is the doctor ___ treated my father.",
+    "options": [
+     "who",
+     "which",
+     "what",
+     "where"
+    ],
+    "answer": 0,
+    "note": "Kişi → who."
+   },
+   {
+    "type": "gap",
+    "text": "I prefer books ___ have happy endings.",
+    "options": [
+     "that",
+     "who",
+     "what"
+    ],
+    "answer": 0,
+    "note": "Cansız çoğul → that."
+   }
+  ]
+ },
+ {
+  "id": "a2-10-comparatives-more",
+  "level": "A2",
+  "order": 10,
+  "title": "more ve the most",
+  "topic": "Comparatives and superlatives with more / most",
+  "canDo": "Uzun sıfatlarla karşılaştırma yapabilirim.",
+  "covers": [
+   "COMP.JJR.RBR.more",
+   "COMP.JJS.RBS.most"
+  ],
+  "concept": {
+   "summary": "A1'de kısa sıfatlara -er ve -est eklemiştik. İki heceden uzun sıfatlarda ek kullanılmaz, önüne more ya da the most gelir. İkisi bir arada kullanılmaz.",
+   "formula": {
+    "left": "more + uzun sıfat + than",
+    "right": "the most + uzun sıfat"
+   },
+   "table": [
+    {
+     "form": "tek heceli",
+     "be": "-er / -est",
+     "example": "cheap → cheaper"
+    },
+    {
+     "form": "iki+ heceli",
+     "be": "more / most",
+     "example": "expensive → more expensive"
+    },
+    {
+     "form": "zarflar",
+     "be": "more / most",
+     "example": "carefully → more carefully"
+    },
+    {
+     "form": "düzensiz",
+     "be": "good / bad",
+     "example": "good → better → the best"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "This hotel is more expensive than the other one.",
+    "tr": "Bu otel diğerinden daha pahalı.",
+    "note": "expensive uzun sıfat → more."
+   },
+   {
+    "en": "She is the most talented singer here.",
+    "tr": "Buradaki en yetenekli şarkıcı o.",
+    "note": "the most + sıfat."
+   },
+   {
+    "en": "Please drive more carefully.",
+    "tr": "Lütfen daha dikkatli sür.",
+    "note": "Zarflarda da more."
+   },
+   {
+    "en": "It was the most difficult exam of the year.",
+    "tr": "Yılın en zor sınavıydı.",
+    "note": "En üstünlük the ister."
+   },
+   {
+    "en": "Trains are more comfortable than buses.",
+    "tr": "Trenler otobüslerden daha rahattır.",
+    "note": "than karşılaştırmayı tamamlar."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "This hotel is more cheaper.",
+    "right": "This hotel is cheaper.",
+    "why": "Ek ile more birlikte kullanılmaz."
+   },
+   {
+    "wrong": "She is most talented singer.",
+    "right": "She is the most talented singer.",
+    "why": "En üstünlük derecesi the ister."
+   },
+   {
+    "wrong": "It is more good than the old one.",
+    "right": "It is better than the old one.",
+    "why": "good düzensizdir: better."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "This book is ___ than that one.",
+    "options": [
+     "more interesting",
+     "interestinger",
+     "most interesting",
+     "more interestinger"
+    ],
+    "answer": 0,
+    "note": "Uzun sıfat → more."
+   },
+   {
+    "type": "choice",
+    "text": "That was ___ meal of my life.",
+    "options": [
+     "the most delicious",
+     "most delicious",
+     "more delicious",
+     "the more delicious"
+    ],
+    "answer": 0,
+    "note": "En üstünlük → the most."
+   },
+   {
+    "type": "choice",
+    "text": "Can you explain it ___ ?",
+    "options": [
+     "more clearly",
+     "clearlier",
+     "most clearly",
+     "more clearer"
+    ],
+    "answer": 0,
+    "note": "Zarfta more."
+   },
+   {
+    "type": "choice",
+    "text": "My new job is ___ than the old one.",
+    "options": [
+     "better",
+     "gooder",
+     "more good",
+     "the best"
+    ],
+    "answer": 0,
+    "note": "good → better."
+   },
+   {
+    "type": "gap",
+    "text": "Istanbul is ___ crowded than Ankara.",
+    "options": [
+     "more",
+     "most",
+     "the more"
+    ],
+    "answer": 0,
+    "note": "Karşılaştırmada more + than."
+   }
+  ]
+ },
+ {
+  "id": "a2-11-determiners-quantifiers",
+  "level": "A2",
+  "order": 11,
+  "title": "much, another, this book",
+  "topic": "Determiners and quantifiers",
+  "canDo": "Miktar belirtebilir, hangi şeyden söz ettiğimi netleştirebilirim.",
+  "covers": [
+   "QUANT.much",
+   "DT.another",
+   "DT.this.that_N",
+   "PIND.ones"
+  ],
+  "concept": {
+   "summary": "much sayılamayan isimlerle, many sayılabilirlerle kullanılır ve ikisi de daha çok olumsuz ve soruda geçer. another \"bir tane daha\" demektir ve tekil isim ister. this/that ismin önüne de gelebilir; tekrardan kaçınmak için isim yerine one ya da ones konur.",
+   "formula": {
+    "left": "much + sayılamayan / many + sayılabilir",
+    "right": "another + tekil isim"
+   },
+   "table": [
+    {
+     "form": "much",
+     "be": "sayılamayan",
+     "example": "How much time do we have?"
+    },
+    {
+     "form": "many",
+     "be": "sayılabilir",
+     "example": "How many people came?"
+    },
+    {
+     "form": "another",
+     "be": "bir tane daha",
+     "example": "Would you like another cup?"
+    },
+    {
+     "form": "one / ones",
+     "be": "isim yerine",
+     "example": "I'll take the red ones."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "We don't have much time.",
+    "tr": "Fazla vaktimiz yok.",
+    "note": "time sayılamaz → much."
+   },
+   {
+    "en": "How much sugar do you want?",
+    "tr": "Ne kadar şeker istersin?",
+    "note": "Soruda much."
+   },
+   {
+    "en": "Can I have another slice?",
+    "tr": "Bir dilim daha alabilir miyim?",
+    "note": "another + tekil isim."
+   },
+   {
+    "en": "This film is better than that one.",
+    "tr": "Bu film şundan daha iyi.",
+    "note": "one, film'in yerini tuttu."
+   },
+   {
+    "en": "I like these shoes, not those ones.",
+    "tr": "Bu ayakkabıları beğendim, şunları değil.",
+    "note": "Çoğulda ones."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "How much people came?",
+    "right": "How many people came?",
+    "why": "people sayılabilir → many."
+   },
+   {
+    "wrong": "Can I have another slices?",
+    "right": "Can I have another slice?",
+    "why": "another her zaman tekil isim alır."
+   },
+   {
+    "wrong": "I like these shoes, not those one.",
+    "right": "I like these shoes, not those ones.",
+    "why": "Çoğul karşılığı ones'tır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "How ___ money do you need?",
+    "options": [
+     "much",
+     "many",
+     "some",
+     "another"
+    ],
+    "answer": 0,
+    "note": "money sayılamaz."
+   },
+   {
+    "type": "choice",
+    "text": "How ___ students are in the class?",
+    "options": [
+     "many",
+     "much",
+     "another",
+     "one"
+    ],
+    "answer": 0,
+    "note": "students sayılabilir."
+   },
+   {
+    "type": "choice",
+    "text": "Would you like ___ coffee?",
+    "options": [
+     "another",
+     "another the",
+     "other a",
+     "much"
+    ],
+    "answer": 0,
+    "note": "Bir tane daha → another."
+   },
+   {
+    "type": "choice",
+    "text": "I don't like this bag; show me ___ .",
+    "options": [
+     "another one",
+     "another ones",
+     "other one",
+     "an another"
+    ],
+    "answer": 0,
+    "note": "Tekil → another one."
+   },
+   {
+    "type": "gap",
+    "text": "These apples are fresh, but ___ are not.",
+    "options": [
+     "those ones",
+     "that ones",
+     "those one"
+    ],
+    "answer": 0,
+    "note": "Uzak ve çoğul → those ones."
+   }
+  ]
+ },
+ {
+  "id": "a2-12-if-as",
+  "level": "A2",
+  "order": 12,
+  "title": "if ve as",
+  "topic": "Adverbial clauses: if, as",
+  "canDo": "Koşul kurabilir, sebep ve zaman bildirebilirim.",
+  "covers": [
+   "CL.if",
+   "CL.as"
+  ],
+  "concept": {
+   "summary": "if koşul kurar: gerçekleşmesi mümkün bir durumda if'li cümlecik geniş zamanda, ana cümle will ile gelir. as ise \"-dığı için\" ve \"-ken\" anlamlarını taşır; hangisi olduğu cümleden anlaşılır.",
+   "formula": {
+    "left": "If + geniş zaman",
+    "right": ", will + yalın fiil"
+   },
+   "table": [
+    {
+     "form": "koşul",
+     "be": "If ... , will ...",
+     "example": "If it rains, we will stay home."
+    },
+    {
+     "form": "sıra",
+     "be": "ana cümle önce",
+     "example": "We will stay home if it rains."
+    },
+    {
+     "form": "as = sebep",
+     "be": "-dığı için",
+     "example": "As it was late, we left."
+    },
+    {
+     "form": "as = zaman",
+     "be": "-ken",
+     "example": "As I opened the door, the phone rang."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "If you study, you will pass.",
+    "tr": "Çalışırsan geçersin.",
+    "note": "if + geniş zaman, ana cümlede will."
+   },
+   {
+    "en": "We will go out if the weather is good.",
+    "tr": "Hava iyi olursa dışarı çıkarız.",
+    "note": "if sonra gelince virgül kullanılmaz."
+   },
+   {
+    "en": "If I have time, I will call you.",
+    "tr": "Vaktim olursa seni ararım.",
+    "note": "if'li cümlecikte will yok."
+   },
+   {
+    "en": "As she was ill, she stayed in bed.",
+    "tr": "Hasta olduğu için yatakta kaldı.",
+    "note": "as = sebep."
+   },
+   {
+    "en": "As I was leaving, it started to rain.",
+    "tr": "Ben çıkarken yağmur başladı.",
+    "note": "as = zaman."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "If it will rain, we will stay home.",
+    "right": "If it rains, we will stay home.",
+    "why": "if'li cümlecikte gelecek zaman kullanılmaz."
+   },
+   {
+    "wrong": "If you will study, you pass.",
+    "right": "If you study, you will pass.",
+    "why": "will ana cümlede yer alır."
+   },
+   {
+    "wrong": "We will go out, if the weather is good.",
+    "right": "We will go out if the weather is good.",
+    "why": "if sonda geldiğinde virgül konmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "If it ___ tomorrow, we will cancel the trip.",
+    "options": [
+     "snows",
+     "will snow",
+     "snowing",
+     "snowed"
+    ],
+    "answer": 0,
+    "note": "if'li cümlecik geniş zamanda."
+   },
+   {
+    "type": "choice",
+    "text": "If you ask him, he ___ help you.",
+    "options": [
+     "will",
+     "wills",
+     "is",
+     "does"
+    ],
+    "answer": 0,
+    "note": "Ana cümlede will."
+   },
+   {
+    "type": "choice",
+    "text": "___ it was raining, we took a taxi.",
+    "options": [
+     "As",
+     "If",
+     "Will",
+     "So as"
+    ],
+    "answer": 0,
+    "note": "Sebep → As."
+   },
+   {
+    "type": "choice",
+    "text": "I will wait ___ you are late.",
+    "options": [
+     "if",
+     "as if to",
+     "will",
+     "that"
+    ],
+    "answer": 0,
+    "note": "Koşul → if."
+   },
+   {
+    "type": "gap",
+    "text": "If I ___ the answer, I will tell you.",
+    "options": [
+     "find",
+     "will find",
+     "found"
+    ],
+    "answer": 0,
+    "note": "if + geniş zaman."
+   }
+  ]
+ },
+ {
+  "id": "a2-13-that-clauses",
+  "level": "A2",
+  "order": 13,
+  "title": "say, tell, think + that",
+  "topic": "Reported speech with that-clauses",
+  "canDo": "Başkasının söylediğini kendi cümlemle aktarabilirim.",
+  "covers": [
+   "CL.that.OBJ",
+   "INDSP.explain.report.say"
+  ],
+  "concept": {
+   "summary": "Birinin sözünü aktarırken that'li bir cümlecik kurulur. say kime söylendiğini almaz, tell alır: he said that… ama he told me that… Aktarılan cümle geçmişe kayar: is → was, will → would.",
+   "formula": {
+    "left": "said / told + (kişi) + that",
+    "right": "+ cümle"
+   },
+   "table": [
+    {
+     "form": "say",
+     "be": "kişi almaz",
+     "example": "He said that he was tired."
+    },
+    {
+     "form": "tell",
+     "be": "kişi alır",
+     "example": "He told me that he was tired."
+    },
+    {
+     "form": "zaman kayması",
+     "be": "is → was",
+     "example": "\"I am busy\" → He said he was busy."
+    },
+    {
+     "form": "that düşebilir",
+     "be": "günlük dilde",
+     "example": "She said she would come."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "He said that he was busy.",
+    "tr": "Meşgul olduğunu söyledi.",
+    "note": "am → was."
+   },
+   {
+    "en": "She told me she would be late.",
+    "tr": "Geç kalacağını söyledi bana.",
+    "note": "tell kişi alır; will → would."
+   },
+   {
+    "en": "They explained that the shop was closed.",
+    "tr": "Dükkânın kapalı olduğunu açıkladılar.",
+    "note": "explain de that alır."
+   },
+   {
+    "en": "I think you are right.",
+    "tr": "Bence haklısın.",
+    "note": "think'ten sonra that düşürülmüş."
+   },
+   {
+    "en": "The teacher said we could leave.",
+    "tr": "Öğretmen çıkabileceğimizi söyledi.",
+    "note": "can → could."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "He said me that he was tired.",
+    "right": "He told me that he was tired.",
+    "why": "say kişi almaz, tell alır."
+   },
+   {
+    "wrong": "She told that she was busy.",
+    "right": "She said that she was busy.",
+    "why": "tell kullanılacaksa kime söylendiği yazılmalı."
+   },
+   {
+    "wrong": "He said that he is tired yesterday.",
+    "right": "He said that he was tired.",
+    "why": "Aktarımda zaman bir adım geriye kayar."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "She ___ me that the meeting was cancelled.",
+    "options": [
+     "told",
+     "said",
+     "spoke",
+     "talked"
+    ],
+    "answer": 0,
+    "note": "Kişi varsa tell."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ that he would call later.",
+    "options": [
+     "said",
+     "told",
+     "said to",
+     "spoke"
+    ],
+    "answer": 0,
+    "note": "Kişi yoksa say."
+   },
+   {
+    "type": "choice",
+    "text": "\"I am tired.\" → He said he ___ tired.",
+    "options": [
+     "was",
+     "is",
+     "will be",
+     "has been"
+    ],
+    "answer": 0,
+    "note": "am → was."
+   },
+   {
+    "type": "choice",
+    "text": "\"I will help.\" → She said she ___ help.",
+    "options": [
+     "would",
+     "will",
+     "was",
+     "does"
+    ],
+    "answer": 0,
+    "note": "will → would."
+   },
+   {
+    "type": "gap",
+    "text": "They explained ___ the train was late.",
+    "options": [
+     "that",
+     "what",
+     "which"
+    ],
+    "answer": 0,
+    "note": "explain + that + cümle."
+   }
+  ]
+ },
+ {
+  "id": "a2-14-indirect-questions",
+  "level": "A2",
+  "order": 14,
+  "title": "Dolaylı sorular",
+  "topic": "Indirect questions and what-clauses",
+  "canDo": "Kibarca bilgi isteyebilir, bir şeyi bilip bilmediğimi söyleyebilirim.",
+  "covers": [
+   "INDQ.know.etc",
+   "PREL.what"
+  ],
+  "concept": {
+   "summary": "Soru bir cümlenin içine girince soru düzeni bozulur: özne ile fiil yer değiştirmez, do da kullanılmaz. Evet-hayır sorusu aktarılırken if ya da whether gerekir. what burada hem soru hem \"şey\" anlamı taşır.",
+   "formula": {
+    "left": "I don't know / Could you tell me",
+    "right": "+ soru kelimesi + özne + fiil"
+   },
+   "table": [
+    {
+     "form": "doğrudan",
+     "be": "Where is he?",
+     "example": "Where is he?"
+    },
+    {
+     "form": "dolaylı",
+     "be": "where he is",
+     "example": "I don't know where he is."
+    },
+    {
+     "form": "evet-hayır",
+     "be": "if / whether",
+     "example": "I wonder if she is coming."
+    },
+    {
+     "form": "what = şey",
+     "be": "isim gibi",
+     "example": "I didn't hear what you said."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I don't know where she lives.",
+    "tr": "Nerede yaşadığını bilmiyorum.",
+    "note": "does yok, özne fiilden önce."
+   },
+   {
+    "en": "Could you tell me when the bank opens?",
+    "tr": "Bankanın ne zaman açıldığını söyler misiniz?",
+    "note": "Kibar bilgi isteme."
+   },
+   {
+    "en": "I wonder if he got my message.",
+    "tr": "Mesajımı aldı mı acaba.",
+    "note": "Evet-hayır sorusu → if."
+   },
+   {
+    "en": "She didn't understand what I meant.",
+    "tr": "Ne demek istediğimi anlamadı.",
+    "note": "what burada \"şey\" demek."
+   },
+   {
+    "en": "Do you know how much it costs?",
+    "tr": "Ne kadar tuttuğunu biliyor musun?",
+    "note": "İç cümlede düz sıra."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I don't know where does she live.",
+    "right": "I don't know where she lives.",
+    "why": "Dolaylı soruda do/does kullanılmaz."
+   },
+   {
+    "wrong": "Could you tell me when is the meeting?",
+    "right": "Could you tell me when the meeting is?",
+    "why": "Özne ile fiil yer değiştirmez."
+   },
+   {
+    "wrong": "I wonder that he is coming.",
+    "right": "I wonder if he is coming.",
+    "why": "Evet-hayır sorusunda if kullanılır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I don't know what time ___ .",
+    "options": [
+     "it starts",
+     "does it start",
+     "start it",
+     "is it start"
+    ],
+    "answer": 0,
+    "note": "Dolaylı soruda düz sıra."
+   },
+   {
+    "type": "choice",
+    "text": "Can you tell me where ___ ?",
+    "options": [
+     "the station is",
+     "is the station",
+     "does the station",
+     "the station does"
+    ],
+    "answer": 0,
+    "note": "Özne önce, fiil sonra."
+   },
+   {
+    "type": "choice",
+    "text": "I wonder ___ she will come.",
+    "options": [
+     "if",
+     "that",
+     "what",
+     "is"
+    ],
+    "answer": 0,
+    "note": "Evet-hayır → if."
+   },
+   {
+    "type": "choice",
+    "text": "He didn't hear ___ I said.",
+    "options": [
+     "what",
+     "that",
+     "which",
+     "who"
+    ],
+    "answer": 0,
+    "note": "\"Söylediğim şey\" → what."
+   },
+   {
+    "type": "gap",
+    "text": "Do you know how much this ___ ?",
+    "options": [
+     "costs",
+     "does cost",
+     "cost does"
+    ],
+    "answer": 0,
+    "note": "İç cümlede do kullanılmaz."
+   }
+  ]
+ },
+ {
+  "id": "a2-15-have-let-make",
+  "level": "A2",
+  "order": 15,
+  "title": "make, let, have — birine yaptırmak",
+  "topic": "Causative verbs: have / let / make",
+  "canDo": "Birinin bir şeyi yapmasını sağladığımı ya da ona izin verdiğimi anlatabilirim.",
+  "covers": [
+   "CAUS.have.let.make",
+   "VG.VV_NP_VG",
+   "VG.VG_N"
+  ],
+  "concept": {
+   "summary": "Bu üç fiilden sonra kişi gelir, sonra fiil to almadan yalın kalır: make him wait. make zorlar, let izin verir, have görevlendirir. Süren bir işi göstermek istersek -ing kullanılır: I saw him waiting.",
+   "formula": {
+    "left": "make / let / have + kişi",
+    "right": "+ yalın fiil (to yok)"
+   },
+   "table": [
+    {
+     "form": "make",
+     "be": "zorlamak",
+     "example": "She made me wait."
+    },
+    {
+     "form": "let",
+     "be": "izin vermek",
+     "example": "They let us go early."
+    },
+    {
+     "form": "have",
+     "be": "yaptırmak",
+     "example": "I had the mechanic check the car."
+    },
+    {
+     "form": "-ing",
+     "be": "süren iş",
+     "example": "I saw him waiting outside."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "My parents let me stay out late.",
+    "tr": "Ailem geç saate kadar dışarıda kalmama izin veriyor.",
+    "note": "let + kişi + yalın fiil."
+   },
+   {
+    "en": "The film made me cry.",
+    "tr": "Film beni ağlattı.",
+    "note": "make + kişi + yalın fiil."
+   },
+   {
+    "en": "I had the plumber fix the tap.",
+    "tr": "Musluğu tesisatçıya tamir ettirdim.",
+    "note": "have + kişi + yalın fiil."
+   },
+   {
+    "en": "I saw her crossing the street.",
+    "tr": "Onu caddeyi geçerken gördüm.",
+    "note": "Süren iş → -ing."
+   },
+   {
+    "en": "Don't keep me waiting.",
+    "tr": "Beni bekletme.",
+    "note": "keep + kişi + -ing."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "She made me to wait.",
+    "right": "She made me wait.",
+    "why": "make'ten sonra to gelmez."
+   },
+   {
+    "wrong": "They let us to go early.",
+    "right": "They let us go early.",
+    "why": "let de yalın fiil ister."
+   },
+   {
+    "wrong": "I saw her to cross the street.",
+    "right": "I saw her crossing the street.",
+    "why": "Süren işte -ing kullanılır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "My boss made me ___ overtime.",
+    "options": [
+     "work",
+     "to work",
+     "working",
+     "worked"
+    ],
+    "answer": 0,
+    "note": "make + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "Please let me ___ .",
+    "options": [
+     "explain",
+     "to explain",
+     "explaining",
+     "explains"
+    ],
+    "answer": 0,
+    "note": "let + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "I had a friend ___ my computer.",
+    "options": [
+     "repair",
+     "to repair",
+     "repairing",
+     "repaired to"
+    ],
+    "answer": 0,
+    "note": "have + kişi + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "We heard them ___ in the kitchen.",
+    "options": [
+     "arguing",
+     "to argue",
+     "argued",
+     "argues"
+    ],
+    "answer": 0,
+    "note": "Süren iş → -ing."
+   },
+   {
+    "type": "gap",
+    "text": "Sorry to keep you ___ .",
+    "options": [
+     "waiting",
+     "to wait",
+     "wait"
+    ],
+    "answer": 0,
+    "note": "keep + kişi + -ing."
+   }
+  ]
+ },
+ {
+  "id": "a2-16-phrasal-verb-objects",
+  "level": "A2",
+  "order": 16,
+  "title": "Öbek fiillerde nesnenin yeri",
+  "topic": "Separable phrasal verbs, relative adverbs",
+  "canDo": "Öbek fiilleri nesneyle birlikte doğru sırada kullanabilirim.",
+  "covers": [
+   "PHV.V_NP_PART",
+   "RBREL"
+  ],
+  "concept": {
+   "summary": "Ayrılabilen öbek fiillerde nesne iki yere de gelebilir: turn the light off ya da turn off the light. Ama nesne zamirse (it, them) araya girmek zorundadır. Yer, zaman ve sebep tarif ederken where, when ve why ilgi zarfı olarak kullanılır.",
+   "formula": {
+    "left": "fiil + nesne + parçacık",
+    "right": "fiil + parçacık + nesne"
+   },
+   "table": [
+    {
+     "form": "isim nesne",
+     "be": "iki sıra da olur",
+     "example": "turn off the radio / turn the radio off"
+    },
+    {
+     "form": "zamir nesne",
+     "be": "yalnız araya",
+     "example": "turn it off"
+    },
+    {
+     "form": "where",
+     "be": "yer",
+     "example": "the town where I grew up"
+    },
+    {
+     "form": "when",
+     "be": "zaman",
+     "example": "the day when we met"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Please turn off the television.",
+    "tr": "Lütfen televizyonu kapat.",
+    "note": "İsim nesne sonda."
+   },
+   {
+    "en": "Please turn the television off.",
+    "tr": "Lütfen televizyonu kapat.",
+    "note": "Aynı anlam, nesne arada."
+   },
+   {
+    "en": "It's too loud — turn it off.",
+    "tr": "Çok gürültülü, kapat şunu.",
+    "note": "Zamir zorunlu olarak arada."
+   },
+   {
+    "en": "This is the house where I was born.",
+    "tr": "Burası doğduğum ev.",
+    "note": "Yer → where."
+   },
+   {
+    "en": "I remember the day when we met.",
+    "tr": "Tanıştığımız günü hatırlıyorum.",
+    "note": "Zaman → when."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Turn off it.",
+    "right": "Turn it off.",
+    "why": "Zamir nesne fiille parçacığın arasına girer."
+   },
+   {
+    "wrong": "I threw away it.",
+    "right": "I threw it away.",
+    "why": "Aynı kural: zamir araya."
+   },
+   {
+    "wrong": "This is the house which I was born.",
+    "right": "This is the house where I was born.",
+    "why": "Yer bildiren cümlecikte where kullanılır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "The bag is old. Throw ___ .",
+    "options": [
+     "it away",
+     "away it",
+     "it the away",
+     "away"
+    ],
+    "answer": 0,
+    "note": "Zamir araya girer."
+   },
+   {
+    "type": "choice",
+    "text": "Can you pick ___ at six?",
+    "options": [
+     "me up",
+     "up me",
+     "up to me",
+     "me to up"
+    ],
+    "answer": 0,
+    "note": "pick me up."
+   },
+   {
+    "type": "choice",
+    "text": "Please fill ___ this form.",
+    "options": [
+     "in",
+     "in to",
+     "at",
+     "up on"
+    ],
+    "answer": 0,
+    "note": "fill in = doldurmak."
+   },
+   {
+    "type": "choice",
+    "text": "That is the café ___ we first met.",
+    "options": [
+     "where",
+     "which",
+     "that",
+     "when"
+    ],
+    "answer": 0,
+    "note": "Yer → where."
+   },
+   {
+    "type": "gap",
+    "text": "I will never forget the summer ___ we travelled together.",
+    "options": [
+     "when",
+     "where",
+     "which"
+    ],
+    "answer": 0,
+    "note": "Zaman → when."
+   }
+  ]
+ }
+]
