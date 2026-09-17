@@ -1,0 +1,481 @@
+{
+  "_meta": {
+    "batch": "b2-004",
+    "level": "B2",
+    "range": "240-319"
+  },
+  "previously--adv": {
+    "tr": "daha önce",
+    "def": "At an earlier time than now.",
+    "ex": "She previously worked in Ankara.",
+    "exTr": "Daha önce Ankara'da çalışmıştı."
+  },
+  "wire--verb": {
+    "tr": "kablo döşemek",
+    "def": "To connect something with electrical wires.",
+    "ex": "An electrician wired the new kitchen.",
+    "exTr": "Bir elektrikçi yeni mutfağın kablolarını döşedi."
+  },
+  "approach--verb": {
+    "tr": "yaklaşmak",
+    "def": "To come nearer, or to start dealing with something.",
+    "ex": "Winter is approaching fast.",
+    "exTr": "Kış hızla yaklaşıyor."
+  },
+  "stock--noun": {
+    "tr": "stok, hisse",
+    "def": "Goods kept for sale, or a share in a company.",
+    "ex": "The shoes are out of stock.",
+    "exTr": "Ayakkabılar stokta yok."
+  },
+  "tail--noun": {
+    "tr": "kuyruk",
+    "def": "The part that sticks out at the back of an animal.",
+    "ex": "The dog wagged its tail.",
+    "exTr": "Köpek kuyruğunu salladı."
+  },
+  "rape--noun": {
+    "tr": "tecavüz",
+    "def": "The serious crime of forcing someone into sex.",
+    "ex": "Rape carries a long prison sentence.",
+    "exTr": "Tecavüz uzun bir hapis cezası gerektirir."
+  },
+  "rape--verb": {
+    "tr": "tecavüz etmek",
+    "def": "To commit the crime of forcing someone into sex.",
+    "ex": "The court found that he had raped her.",
+    "exTr": "Mahkeme ona tecavüz ettiğine hükmetti."
+  },
+  "nightmare--noun": {
+    "tr": "kâbus",
+    "def": "A frightening dream, or a very bad experience.",
+    "ex": "The journey was a nightmare.",
+    "exTr": "Yolculuk bir kâbustu."
+  },
+  "lack--verb": {
+    "tr": "yoksun olmak",
+    "def": "To not have something you need.",
+    "ex": "The village lacks clean water.",
+    "exTr": "Köy temiz sudan yoksun."
+  },
+  "actual--adj": {
+    "tr": "gerçek, fiili",
+    "def": "Real, rather than what was expected or claimed.",
+    "ex": "The actual cost was much higher.",
+    "exTr": "Gerçek maliyet çok daha yüksekti."
+  },
+  "flesh--noun": {
+    "tr": "et (canlı doku)",
+    "def": "The soft part of a body between the skin and the bones.",
+    "ex": "The cut went deep into the flesh.",
+    "exTr": "Kesik ete kadar derinleşti."
+  },
+  "federal--adj": {
+    "tr": "federal",
+    "def": "Relating to the central government of a country of states.",
+    "ex": "This is a federal law.",
+    "exTr": "Bu federal bir yasa."
+  },
+  "senator--noun": {
+    "tr": "senatör",
+    "def": "A member of a senate, a part of some parliaments.",
+    "ex": "The senator voted against the bill.",
+    "exTr": "Senatör yasa tasarısına karşı oy verdi."
+  },
+  "reward--verb": {
+    "tr": "ödüllendirmek",
+    "def": "To give someone something for good work or help.",
+    "ex": "The company rewarded loyal staff.",
+    "exTr": "Şirket sadık personeli ödüllendirdi."
+  },
+  "alert--verb": {
+    "tr": "uyarmak, haberdar etmek",
+    "def": "To warn someone about a danger.",
+    "ex": "A neighbour alerted the fire service.",
+    "exTr": "Bir komşu itfaiyeyi haberdar etti."
+  },
+  "panic--verb": {
+    "tr": "paniğe kapılmak",
+    "def": "To suddenly feel such fear that you cannot think.",
+    "ex": "Do not panic if the lights go out.",
+    "exTr": "Işıklar sönerse paniğe kapılma."
+  },
+  "pa--noun": {
+    "tr": "baba",
+    "def": "An informal old word for father.",
+    "ex": "His pa worked on the railway.",
+    "exTr": "Babası demiryolunda çalışırdı."
+  },
+  "abandoned--adj": {
+    "tr": "terk edilmiş",
+    "def": "Left empty and no longer used or cared for.",
+    "ex": "They sheltered in an abandoned barn.",
+    "exTr": "Terk edilmiş bir ahırda barındılar."
+  },
+  "guarantee--verb": {
+    "tr": "garanti etmek",
+    "def": "To promise firmly that something will happen.",
+    "ex": "We guarantee delivery within a week.",
+    "exTr": "Bir hafta içinde teslimatı garanti ediyoruz."
+  },
+  "bow--verb": {
+    "tr": "eğilmek, selam vermek",
+    "def": "To bend your head or body forward to show respect.",
+    "ex": "The actors bowed to the audience.",
+    "exTr": "Oyuncular seyirciyi selamladı."
+  },
+  "revolution--noun": {
+    "tr": "devrim",
+    "def": "A complete change of government, or a great change in ideas.",
+    "ex": "The revolution changed the country.",
+    "exTr": "Devrim ülkeyi değiştirdi."
+  },
+  "coincidence--noun": {
+    "tr": "tesadüf",
+    "def": "Two things happening together by chance.",
+    "ex": "Meeting here was pure coincidence.",
+    "exTr": "Burada karşılaşmamız tam bir tesadüftü."
+  },
+  "potential--adj": {
+    "tr": "olası, potansiyel",
+    "def": "Possible in the future, though not yet real.",
+    "ex": "We found a potential buyer.",
+    "exTr": "Olası bir alıcı bulduk."
+  },
+  "advance--noun": {
+    "tr": "ilerleme, avans",
+    "def": "Forward movement or progress, or money paid early.",
+    "ex": "Medicine has made great advances.",
+    "exTr": "Tıp büyük ilerlemeler kaydetti."
+  },
+  "swing--noun": {
+    "tr": "salıncak, salınım",
+    "def": "A seat hanging on ropes, or a swinging movement.",
+    "ex": "The children queued for the swing.",
+    "exTr": "Çocuklar salıncak için sıraya girdi."
+  },
+  "swing--verb": {
+    "tr": "sallanmak, savurmak",
+    "def": "To move back and forth from a fixed point.",
+    "ex": "The gate swung in the wind.",
+    "exTr": "Kapı rüzgârda sallandı."
+  },
+  "whistle--verb": {
+    "tr": "ıslık çalmak",
+    "def": "To make a high sound by blowing air through your lips.",
+    "ex": "He whistled as he worked.",
+    "exTr": "Çalışırken ıslık çaldı."
+  },
+  "assure--verb": {
+    "tr": "temin etmek",
+    "def": "To tell someone firmly that something is true.",
+    "ex": "I assure you the room is clean.",
+    "exTr": "Odanın temiz olduğuna sizi temin ederim."
+  },
+  "billion--noun": {
+    "tr": "milyar",
+    "def": "The number one thousand million.",
+    "ex": "The project cost a billion lira.",
+    "exTr": "Proje bir milyar liraya mal oldu."
+  },
+  "mask--noun": {
+    "tr": "maske",
+    "def": "A covering worn over the face.",
+    "ex": "Everyone wore a mask indoors.",
+    "exTr": "Herkes içeride maske taktı."
+  },
+  "species--noun": {
+    "tr": "tür",
+    "def": "A group of animals or plants that can breed together.",
+    "ex": "This species lives only here.",
+    "exTr": "Bu tür sadece burada yaşıyor."
+  },
+  "loan--noun": {
+    "tr": "kredi, borç",
+    "def": "Money lent that must be paid back.",
+    "ex": "They took a loan for the shop.",
+    "exTr": "Dükkân için kredi çektiler."
+  },
+  "struggle--verb": {
+    "tr": "uğraşmak, mücadele etmek",
+    "def": "To try hard against difficulty.",
+    "ex": "He struggled to lift the crate.",
+    "exTr": "Sandığı kaldırmak için uğraştı."
+  },
+  "navy--noun": {
+    "tr": "donanma",
+    "def": "The part of a country's forces that fights at sea.",
+    "ex": "Her brother joined the navy.",
+    "exTr": "Kardeşi donanmaya katıldı."
+  },
+  "guts--noun": {
+    "tr": "cesaret, yürek",
+    "def": "Courage and determination, in informal speech.",
+    "ex": "It took guts to say that.",
+    "exTr": "Bunu söylemek cesaret istiyordu."
+  },
+  "coward--noun": {
+    "tr": "korkak",
+    "def": "A person who is too afraid to face danger.",
+    "ex": "Nobody wants to be called a coward.",
+    "exTr": "Kimse korkak denmesini istemez."
+  },
+  "flash--noun": {
+    "tr": "parlama, flaş",
+    "def": "A sudden bright light that lasts a moment.",
+    "ex": "A flash of lightning lit the road.",
+    "exTr": "Bir şimşek parıltısı yolu aydınlattı."
+  },
+  "flash--verb": {
+    "tr": "parlamak, yakıp söndürmek",
+    "def": "To shine suddenly and briefly.",
+    "ex": "The lighthouse flashes every ten seconds.",
+    "exTr": "Deniz feneri her on saniyede bir yanıp sönüyor."
+  },
+  "impressed--adj": {
+    "tr": "etkilenmiş",
+    "def": "Feeling admiration for something good.",
+    "ex": "We were impressed by her calm.",
+    "exTr": "Sakinliğinden etkilendik."
+  },
+  "supply--verb": {
+    "tr": "tedarik etmek",
+    "def": "To provide people with what they need.",
+    "ex": "The farm supplies milk to the town.",
+    "exTr": "Çiftlik kasabaya süt tedarik ediyor."
+  },
+  "sensitive--adj": {
+    "tr": "hassas, duyarlı",
+    "def": "Easily affected or hurt, or needing careful treatment.",
+    "ex": "This is a sensitive subject.",
+    "exTr": "Bu hassas bir konu."
+  },
+  "confess--verb": {
+    "tr": "itiraf etmek",
+    "def": "To admit that you did something wrong.",
+    "ex": "He confessed to taking the money.",
+    "exTr": "Parayı aldığını itiraf etti."
+  },
+  "suspicious--adj": {
+    "tr": "şüpheli, kuşkucu",
+    "def": "Making you think something is wrong, or not trusting.",
+    "ex": "The neighbours heard a suspicious noise.",
+    "exTr": "Komşular şüpheli bir ses duydu."
+  },
+  "joint--noun": {
+    "tr": "eklem",
+    "def": "A place where two bones or two parts meet.",
+    "ex": "Cold weather hurts his joints.",
+    "exTr": "Soğuk hava eklemlerini ağrıtıyor."
+  },
+  "assault--noun": {
+    "tr": "saldırı",
+    "def": "A violent physical attack on someone.",
+    "ex": "He was charged with assault.",
+    "exTr": "Saldırıyla suçlandı."
+  },
+  "trail--verb": {
+    "tr": "peşinden sürüklemek, geride kalmak",
+    "def": "To follow behind, or to be losing in a contest.",
+    "ex": "Our team trailed by two goals.",
+    "exTr": "Takımımız iki golle geride kaldı."
+  },
+  "mighty--adj": {
+    "tr": "güçlü, muazzam",
+    "def": "Very strong and powerful.",
+    "ex": "A mighty river crosses the plain.",
+    "exTr": "Güçlü bir nehir ovayı geçiyor."
+  },
+  "balance--verb": {
+    "tr": "dengelemek",
+    "def": "To keep something steady, or to make two sides equal.",
+    "ex": "She balanced the tray on one hand.",
+    "exTr": "Tepsiyi tek eliyle dengeledi."
+  },
+  "reaction--noun": {
+    "tr": "tepki",
+    "def": "What you feel or do because of something that happened.",
+    "ex": "His reaction surprised us all.",
+    "exTr": "Tepkisi hepimizi şaşırttı."
+  },
+  "version--noun": {
+    "tr": "sürüm, versiyon",
+    "def": "One form of something that exists in several forms.",
+    "ex": "Install the latest version.",
+    "exTr": "En son sürümü yükle."
+  },
+  "gear--noun": {
+    "tr": "vites, teçhizat",
+    "def": "A part that controls speed in a vehicle, or equipment.",
+    "ex": "Change into a lower gear.",
+    "exTr": "Daha düşük vitese geç."
+  },
+  "defeat--noun": {
+    "tr": "yenilgi",
+    "def": "The state of losing a game or a war.",
+    "ex": "It was their first defeat.",
+    "exTr": "Bu ilk yenilgileriydi."
+  },
+  "blast--noun": {
+    "tr": "patlama, şiddetli esinti",
+    "def": "An explosion, or a strong rush of air.",
+    "ex": "The blast broke every window.",
+    "exTr": "Patlama bütün camları kırdı."
+  },
+  "blast--verb": {
+    "tr": "patlatmak",
+    "def": "To break something apart with explosives.",
+    "ex": "Workers blasted a tunnel through the rock.",
+    "exTr": "İşçiler kayada patlatarak tünel açtı."
+  },
+  "bud--noun": {
+    "tr": "tomurcuk",
+    "def": "A small growth on a plant that opens into a flower.",
+    "ex": "The roses are in bud.",
+    "exTr": "Güller tomurcuklandı."
+  },
+  "rip--verb": {
+    "tr": "yırtmak",
+    "def": "To tear something quickly and roughly.",
+    "ex": "He ripped the envelope open.",
+    "exTr": "Zarfı yırtarak açtı."
+  },
+  "tunnel--noun": {
+    "tr": "tünel",
+    "def": "A passage dug under the ground or through a hill.",
+    "ex": "The tunnel is two kilometres long.",
+    "exTr": "Tünel iki kilometre uzunluğunda."
+  },
+  "surrender--verb": {
+    "tr": "teslim olmak",
+    "def": "To stop fighting and accept that you have lost.",
+    "ex": "The town surrendered after a week.",
+    "exTr": "Kasaba bir hafta sonra teslim oldu."
+  },
+  "pee--verb": {
+    "tr": "çiş yapmak",
+    "def": "An informal word meaning to pass water from the body.",
+    "ex": "The child needed to pee.",
+    "exTr": "Çocuğun çişi gelmişti."
+  },
+  "stress--verb": {
+    "tr": "vurgulamak",
+    "def": "To say strongly that something matters.",
+    "ex": "She stressed the need for care.",
+    "exTr": "Dikkat gereğini vurguladı."
+  },
+  "noble--adj": {
+    "tr": "asil, soylu",
+    "def": "Morally good and generous, or of high birth.",
+    "ex": "It was a noble effort.",
+    "exTr": "Asil bir çabaydı."
+  },
+  "legend--noun": {
+    "tr": "efsane",
+    "def": "An old story about the past, or a very famous person.",
+    "ex": "A local legend explains the name.",
+    "exTr": "Yerel bir efsane adı açıklıyor."
+  },
+  "mix--noun": {
+    "tr": "karışım",
+    "def": "A combination of different things.",
+    "ex": "Use a mix of flour and salt.",
+    "exTr": "Un ve tuz karışımı kullan."
+  },
+  "fox--noun": {
+    "tr": "tilki",
+    "def": "A wild animal with red fur and a bushy tail.",
+    "ex": "A fox crossed the field at dusk.",
+    "exTr": "Alacakaranlıkta bir tilki tarlayı geçti."
+  },
+  "gross--adj": {
+    "tr": "brüt, iğrenç",
+    "def": "Total before anything is taken off, or very unpleasant.",
+    "ex": "His gross salary is higher.",
+    "exTr": "Brüt maaşı daha yüksek."
+  },
+  "classic--noun": {
+    "tr": "klasik eser",
+    "def": "A book, a film or a car of lasting quality.",
+    "ex": "That novel is a classic.",
+    "exTr": "O roman bir klasik."
+  },
+  "therapy--noun": {
+    "tr": "terapi",
+    "def": "Treatment for an illness, especially without drugs.",
+    "ex": "She began speech therapy.",
+    "exTr": "Konuşma terapisine başladı."
+  },
+  "lifetime--noun": {
+    "tr": "ömür",
+    "def": "The period during which someone is alive.",
+    "ex": "He saw great change in his lifetime.",
+    "exTr": "Ömrü boyunca büyük değişim gördü."
+  },
+  "experiment--verb": {
+    "tr": "deney yapmak, denemek",
+    "def": "To try a new method to see what happens.",
+    "ex": "They experimented with cheaper materials.",
+    "exTr": "Daha ucuz malzemelerle denemeler yaptılar."
+  },
+  "cheat--verb": {
+    "tr": "kopya çekmek, hile yapmak",
+    "def": "To act dishonestly in a test or a game.",
+    "ex": "He was caught cheating in the exam.",
+    "exTr": "Sınavda kopya çekerken yakalandı."
+  },
+  "servant--noun": {
+    "tr": "hizmetçi, hizmetli",
+    "def": "A person employed to work in someone's house.",
+    "ex": "The house once had four servants.",
+    "exTr": "Evde bir zamanlar dört hizmetli vardı."
+  },
+  "practically--adv": {
+    "tr": "neredeyse, pratikte",
+    "def": "Almost, or in a way that is useful in real life.",
+    "ex": "The work is practically finished.",
+    "exTr": "İş neredeyse bitti."
+  },
+  "wipe--verb": {
+    "tr": "silmek",
+    "def": "To clean a surface by rubbing it.",
+    "ex": "Wipe the table with a damp cloth.",
+    "exTr": "Masayı nemli bir bezle sil."
+  },
+  "deck--noun": {
+    "tr": "güverte",
+    "def": "A floor of a ship, or a flat wooden area outside a house.",
+    "ex": "We sat on the upper deck.",
+    "exTr": "Üst güvertede oturduk."
+  },
+  "influence--verb": {
+    "tr": "etkilemek",
+    "def": "To have an effect on how someone thinks or acts.",
+    "ex": "His teacher influenced his choice.",
+    "exTr": "Öğretmeni onun seçimini etkiledi."
+  },
+  "torture--verb": {
+    "tr": "işkence etmek",
+    "def": "To cause someone severe pain on purpose.",
+    "ex": "The report says prisoners were tortured.",
+    "exTr": "Rapor mahkûmlara işkence edildiğini söylüyor."
+  },
+  "division--noun": {
+    "tr": "bölüm, bölme",
+    "def": "The act of separating into parts, or a section of a company.",
+    "ex": "She heads the sales division.",
+    "exTr": "Satış bölümünün başında."
+  },
+  "scratch--verb": {
+    "tr": "kaşımak, çizmek",
+    "def": "To rub your skin with your nails, or to mark a surface.",
+    "ex": "Do not scratch the bite.",
+    "exTr": "Isırığı kaşıma."
+  },
+  "motion--noun": {
+    "tr": "hareket, önerge",
+    "def": "Movement, or a formal proposal at a meeting.",
+    "ex": "The motion of the boat made him ill.",
+    "exTr": "Teknenin hareketi onu hasta etti."
+  }
+}
