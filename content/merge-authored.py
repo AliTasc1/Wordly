@@ -74,7 +74,8 @@ IRREGULAR = {
     # Prefixed compounds inherit the irregular stem but not its prefix match.
     "rewrite": ["rewrote", "rewritten"], "overwrite": ["overwrote"],
     "overtake": ["overtook", "overtaken"], "oversee": ["oversaw"],
-    "outgrow": ["outgrew", "outgrown"], "retake": ["retook"],
+    "outgrow": ["outgrew", "outgrown"], "outshine": ["outshone"],
+    "outdo": ["outdid", "outdone"], "retake": ["retook"],
     "rethink": ["rethought"], "overhear": ["overheard"],
     "bend": ["bent"], "bind": ["bound"], "bite": ["bit", "bitten"],
     "bleed": ["bled"], "breed": ["bred"], "burn": ["burnt"],
