@@ -5,32 +5,32 @@
     "A1": {
       "count": 1161,
       "vocab": 993,
-      "withIpa": 1146
+      "withIpa": 1161
     },
     "A2": {
       "count": 1410,
       "vocab": 1342,
-      "withIpa": 1362
+      "withIpa": 1400
     },
     "B1": {
       "count": 2445,
       "vocab": 2402,
-      "withIpa": 2369
+      "withIpa": 2417
     },
     "B2": {
       "count": 2778,
       "vocab": 2756,
-      "withIpa": 2677
+      "withIpa": 2711
     },
     "C1": {
       "count": 1045,
       "vocab": 1041,
-      "withIpa": 958
+      "withIpa": 962
     },
     "C2": {
       "count": 933,
       "vocab": 932,
-      "withIpa": 771
+      "withIpa": 777
     }
   },
   "posBreakdown": {

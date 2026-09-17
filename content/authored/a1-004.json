@@ -68,7 +68,7 @@
  "buy--verb": { "tr": "satın almak", "def": "Para vererek bir şey almak.", "ex": "I buy bread every day.", "exTr": "Her gün ekmek alırım." },
  "front--adj": { "tr": "ön", "def": "Bir şeyin ön tarafında olan.", "ex": "Sit in the front seat.", "exTr": "Ön koltuğa otur." },
  "team--noun": { "tr": "takım", "def": "Birlikte çalışan ya da oynayan grup.", "ex": "Our team won the game.", "exTr": "Takımımız maçı kazandı." },
- "answer--noun": { "tr": "cevap", "def": "Bir soruya verilen karşılık.", "ex": "Your answer is correct.", "exTr": "Cevabın doğru." },
+ "answer--noun": { "tr": "cevap", "def": "Bir soruya verilen karşılık.", "ex": "Your answer is correct.", "exTr": "Verdiğin cevap doğru." },
  "answer--verb": { "tr": "cevap vermek", "def": "Bir soruya karşılık vermek.", "ex": "Please answer the question.", "exTr": "Lütfen soruyu cevapla." },
  "line--noun": { "tr": "çizgi, sıra", "def": "Uzun ince iz ya da bekleyen insanlar dizisi.", "ex": "Draw a straight line.", "exTr": "Düz bir çizgi çiz." },
  "news--noun": { "tr": "haber", "def": "Yeni olaylarla ilgili bilgi.", "ex": "I watch the news at nine.", "exTr": "Haberleri dokuzda izlerim." },
@@ -79,5 +79,5 @@
  "become--verb": { "tr": "olmak, dönüşmek", "def": "Bir duruma ya da mesleğe geçmek.", "ex": "She wants to become a pilot.", "exTr": "Pilot olmak istiyor." },
  "along--adv": { "tr": "beraberinde, ilerleyerek", "def": "Biriyle birlikte ya da bir yol boyunca.", "ex": "Bring your sister along.", "exTr": "Kız kardeşini de getir." },
  "food--noun": { "tr": "yiyecek, yemek", "def": "İnsanların yediği her şey.", "ex": "The food is very good.", "exTr": "Yemek çok güzel." },
- "outside--adv": { "tr": "dışarıda, dışarıya", "def": "Bir binanın ya da yerin dışında.", "ex": "The children are playing outside.", "exTr": "Çocuklar dışarıda oynuyor." }
+ "outside--adv": { "tr": "dışarıda, dışarıya", "def": "Bir binanın ya da yerin dışında.", "ex": "The children are playing outside.", "exTr": "Çocuklar dışarıda oyun oynuyor." }
 }

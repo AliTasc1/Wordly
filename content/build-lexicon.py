@@ -119,6 +119,23 @@ def primary_form(headword: str) -> str:
     return headword.split("/")[0].strip()
 
 
+def lookup_ipa(word: str, ipa: dict[str, str]) -> str:
+    """
+    ipa-dict only covers single words, so a phrase like `swimming pool` comes
+    back empty. Compose those from their parts: /ˈswɪmɪŋ/ + /ˈpul/ → /ˈswɪmɪŋ ˈpul/.
+    """
+    lower = word.lower()
+    if lower in ipa:
+        return ipa[lower]
+    parts = lower.split()
+    if len(parts) < 2:
+        return ""
+    pieces = [ipa.get(p, "").strip("/") for p in parts]
+    if not all(pieces):
+        return ""
+    return "/" + " ".join(pieces) + "/"
+
+
 def build() -> None:
     ipa = load_ipa()
     freq = load_frequency()
@@ -146,7 +163,7 @@ def build() -> None:
                 "pos": pos_short,
                 "posLabel": pos_tr,
                 "cefr": row["cefr"],
-                "ipa": ipa.get(lookup, ""),
+                "ipa": lookup_ipa(word, ipa),
                 "rank": freq.get(lookup, 999_999),
                 "source": row["source"],
                 # "vocab" words become flashcards; "grammar" words are only
