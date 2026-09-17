@@ -67,13 +67,33 @@ WORD_POS_FIX = {
     # CEFR-J already has the adjective at A2, so the correction also removes a
     # duplicate: the C1 entry collapses into the A2 one and nothing is lost.
     "automatic": "adjective",
+    # `minster` is a noun — a large church, as in York Minster. Octanove tags it
+    # as a verb, most likely confusing it with `minister`, which the lexicon
+    # already carries separately at B2. No noun entry exists, so the correction
+    # fixes the card rather than removing one.
+    "minster": "noun",
 }
 
 # Slurs have no place on a flashcard, whatever their frequency in the source
 # corpus. Checked against the whole lexicon: `gook` is the only entry that is a
 # slur and nothing else. `retard` also appears, but as the ordinary verb "to
 # slow down", which is what we teach, so it stays.
-BLOCKED_WORDS = {"gook"}
+BLOCKED_WORDS = {
+    "gook",
+    # The C2 tail of the Octanove list contains a few strings that are not
+    # English words at all. `porten` is a truncated `portent` (which the list
+    # does not otherwise carry), and `bereftly` and `evokingly` are adverbs
+    # formed mechanically from `bereft` and `evoke` that no dictionary records.
+    # Teaching an invented word is worse than teaching one fewer word, so they
+    # are dropped rather than guessed at.
+    "porten",
+    "bereftly",
+    "evokingly",
+}
+
+# The same tail also joins a two-word adverb into one string. The idiom is worth
+# teaching, so the spelling is corrected instead of the entry being dropped.
+WORD_SPELLING_FIX = {"flatout": "flat out"}
 
 
 # Function words are taught inside grammar lessons, not as vocabulary cards —
@@ -164,6 +184,7 @@ def build() -> None:
             word = primary_form(row["headword"])
             if not is_teachable(word) or word.lower() in BLOCKED_WORDS:
                 continue
+            word = WORD_SPELLING_FIX.get(word.lower(), word)
             pos_raw = WORD_POS_FIX.get(word.lower(), row["pos_raw"])
             pos_short, pos_tr = POS_MAP.get(pos_raw, ("other", "DİĞER"))
             key = slugify(word, pos_short)
