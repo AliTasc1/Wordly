@@ -57,6 +57,12 @@ POS_MAP = {
     "vern": ("verb", "FİİL"),
 }
 
+# A pos that is spelt correctly but belongs to the wrong word. Checked against
+# every -ate/-ise/-ize/-ify word the CSV tags as a noun; the rest of those
+# (bruise, cruise, promise, rise, surprise …) really do have noun senses, so
+# this is the only one.
+WORD_POS_FIX = {"exaggerate": "verb"}
+
 
 # Function words are taught inside grammar lessons, not as vocabulary cards —
 # nobody needs a flashcard for "the" or "'s".
@@ -146,7 +152,8 @@ def build() -> None:
             word = primary_form(row["headword"])
             if not is_teachable(word):
                 continue
-            pos_short, pos_tr = POS_MAP.get(row["pos_raw"], ("other", "DİĞER"))
+            pos_raw = WORD_POS_FIX.get(word.lower(), row["pos_raw"])
+            pos_short, pos_tr = POS_MAP.get(pos_raw, ("other", "DİĞER"))
             key = slugify(word, pos_short)
             if not key or key.startswith("--"):
                 continue
