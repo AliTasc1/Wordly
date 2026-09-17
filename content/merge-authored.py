@@ -162,8 +162,11 @@ def validate(entry: dict, authored: dict, problems: list[str]) -> bool:
     # English writes most of them as two words, so a hyphen in the key has to
     # match a hyphen, a space or nothing in the example. Splitting on the
     # hyphen before escaping keeps the inserted class out of re.escape's way.
+    # Split on the hyphen *and* the space: the key joins with a hyphen
+    # (`bank-account`, `bulk-up`) while the word field may hold either, and the
+    # example may write it a third way or inflect across the join (`bulked up`).
     raw_stem = lower_word[: max(3, len(lower_word) - 2)]
-    stem = r"[-\s]?".join(re.escape(part) for part in raw_stem.split("-"))
+    stem = r"[-\s]?".join(re.escape(p) for p in re.split(r"[-\s]", raw_stem))
     forms = [rf"\b{stem}"] + [
         rf"\b{re.escape(f)}\b" for f in IRREGULAR.get(lower_word, [])
     ]
