@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b1-004",
+    "level": "B1",
+    "range": "240-319"
+  },
+  "main--adj": {
+    "tr": "ana, başlıca",
+    "def": "Largest or most important.",
+    "ex": "The main entrance is on this side.",
+    "exTr": "Ana giriş bu tarafta."
+  },
+  "fellow--noun": {
+    "tr": "adam, arkadaş",
+    "def": "A man, or someone who belongs to the same group.",
+    "ex": "An old fellow sold us the tickets.",
+    "exTr": "Yaşlı bir adam bize biletleri sattı."
+  },
+  "blind--adj": {
+    "tr": "kör",
+    "def": "Unable to see.",
+    "ex": "He has been blind since birth.",
+    "exTr": "Doğuştan kör."
+  },
+  "hanging--adj": {
+    "tr": "asılı",
+    "def": "Attached at the top so that it hangs down.",
+    "ex": "A hanging lamp lit the table.",
+    "exTr": "Asılı bir lamba masayı aydınlatıyordu."
+  },
+  "speed--verb": {
+    "tr": "hızlı gitmek",
+    "def": "To move quickly, or to drive faster than allowed.",
+    "ex": "The driver was fined for speeding.",
+    "exTr": "Sürücüye hız yaptığı için ceza kesildi."
+  },
+  "somehow--adv": {
+    "tr": "her nasılsa, bir şekilde",
+    "def": "In a way you cannot explain or do not know yet.",
+    "ex": "We will finish it somehow.",
+    "exTr": "Bir şekilde bitireceğiz."
+  },
+  "hearing--noun": {
+    "tr": "işitme, duruşma",
+    "def": "The ability to hear, or a meeting in a court.",
+    "ex": "His hearing got worse with age.",
+    "exTr": "İşitmesi yaşla birlikte kötüleşti."
+  },
+  "account--verb": {
+    "tr": "açıklamak, oluşturmak",
+    "def": "To explain something, or to form a part of a total.",
+    "ex": "Exports account for half our income.",
+    "exTr": "İhracat gelirimizin yarısını oluşturuyor."
+  },
+  "tape--verb": {
+    "tr": "kaydetmek, bantlamak",
+    "def": "To record sound or pictures, or to fasten with tape.",
+    "ex": "They taped the whole interview.",
+    "exTr": "Bütün röportajı kaydettiler."
+  },
+  "pardon--verb": {
+    "tr": "bağışlamak",
+    "def": "To forgive someone, or to free them from punishment.",
+    "ex": "The president pardoned two prisoners.",
+    "exTr": "Cumhurbaşkanı iki mahkûmu affetti."
+  },
+  "vote--verb": {
+    "tr": "oy vermek",
+    "def": "To choose someone or something in an election.",
+    "ex": "Millions voted in the election.",
+    "exTr": "Seçimde milyonlarca kişi oy verdi."
+  },
+  "career--noun": {
+    "tr": "kariyer, meslek hayatı",
+    "def": "The work a person does over many years.",
+    "ex": "She began her career as a nurse.",
+    "exTr": "Kariyerine hemşire olarak başladı."
+  },
+  "breath--noun": {
+    "tr": "nefes",
+    "def": "The air you take into your body and let out.",
+    "ex": "Take a deep breath and relax.",
+    "exTr": "Derin bir nefes al ve rahatla."
+  },
+  "operation--noun": {
+    "tr": "ameliyat, operasyon",
+    "def": "Medical treatment by cutting, or an organized action.",
+    "ex": "She had an operation on her knee.",
+    "exTr": "Dizinden ameliyat oldu."
+  },
+  "market--verb": {
+    "tr": "pazarlamak",
+    "def": "To advertise and sell a product.",
+    "ex": "They market the tea in twelve countries.",
+    "exTr": "Çayı on iki ülkede pazarlıyorlar."
+  },
+  "monster--noun": {
+    "tr": "canavar",
+    "def": "A large frightening creature in stories.",
+    "ex": "The film is about a sea monster.",
+    "exTr": "Film bir deniz canavarını anlatıyor."
+  },
+  "loud--adj": {
+    "tr": "yüksek sesli, gürültülü",
+    "def": "Making a lot of noise.",
+    "ex": "The music was too loud.",
+    "exTr": "Müzik çok yüksekti."
+  },
+  "loud--adv": {
+    "tr": "yüksek sesle",
+    "def": "In a way that makes a lot of noise.",
+    "ex": "Don't speak so loud.",
+    "exTr": "Bu kadar yüksek sesle konuşma."
+  },
+  "horrible--adj": {
+    "tr": "berbat, korkunç",
+    "def": "Very unpleasant or shocking.",
+    "ex": "The weather was horrible all week.",
+    "exTr": "Hava bütün hafta berbattı."
+  },
+  "investigation--noun": {
+    "tr": "soruşturma, araştırma",
+    "def": "An official attempt to find out the truth.",
+    "ex": "The investigation took six months.",
+    "exTr": "Soruşturma altı ay sürdü."
+  },
+  "nonsense--noun": {
+    "tr": "saçmalık",
+    "def": "Ideas or words that have no sense at all.",
+    "ex": "That rumour is complete nonsense.",
+    "exTr": "Bu söylenti tam bir saçmalık."
+  },
+  "doc--noun": {
+    "tr": "doktor (samimi)",
+    "def": "An informal word for a doctor.",
+    "ex": "Thanks for the advice, doc.",
+    "exTr": "Tavsiye için teşekkürler doktor."
+  },
+  "prepared--adj": {
+    "tr": "hazır, hazırlanmış",
+    "def": "Ready for something, or willing to do it.",
+    "ex": "We were not prepared for the cold.",
+    "exTr": "Soğuğa hazırlıklı değildik."
+  },
+  "incredible--adj": {
+    "tr": "inanılmaz",
+    "def": "So surprising or good that it is hard to believe.",
+    "ex": "She made an incredible recovery.",
+    "exTr": "İnanılmaz bir şekilde iyileşti."
+  },
+  "criminal--noun": {
+    "tr": "suçlu, sabıkalı",
+    "def": "A person who has broken the law.",
+    "ex": "The criminal was caught at the border.",
+    "exTr": "Suçlu sınırda yakalandı."
+  },
+  "honestly--adv": {
+    "tr": "dürüstçe, açıkçası",
+    "def": "In a truthful way, or used to stress what you say.",
+    "ex": "Honestly, I did not like the film.",
+    "exTr": "Açıkçası filmi beğenmedim."
+  },
+  "feed--verb": {
+    "tr": "beslemek, yem vermek",
+    "def": "To give food to a person or an animal.",
+    "ex": "She fed the cats at dawn.",
+    "exTr": "Kedileri şafakta besledi."
+  },
+  "nurse--verb": {
+    "tr": "bakmak, hastaya bakmak",
+    "def": "To look after someone who is ill.",
+    "ex": "He nursed his father for months.",
+    "exTr": "Babasına aylarca baktı."
+  },
+  "fake--adj": {
+    "tr": "sahte",
+    "def": "Made to look real in order to trick people.",
+    "ex": "The painting turned out to be fake.",
+    "exTr": "Tablonun sahte olduğu ortaya çıktı."
+  },
+  "suicide--noun": {
+    "tr": "intihar",
+    "def": "The act of killing oneself on purpose.",
+    "ex": "The helpline aims to prevent suicide.",
+    "exTr": "Yardım hattı intiharı önlemeyi amaçlıyor."
+  },
+  "concerned--adj": {
+    "tr": "endişeli, ilgili",
+    "def": "Worried about something, or involved in it.",
+    "ex": "Parents are concerned about the new rule.",
+    "exTr": "Veliler yeni kural konusunda endişeli."
+  },
+  "view--verb": {
+    "tr": "görmek, değerlendirmek",
+    "def": "To look at something, or to think of it in a certain way.",
+    "ex": "They view the change as positive.",
+    "exTr": "Değişikliği olumlu olarak görüyorlar."
+  },
+  "strike--verb": {
+    "tr": "vurmak, çarpmak",
+    "def": "To hit something hard, or to happen suddenly.",
+    "ex": "Lightning struck the tall tree.",
+    "exTr": "Yıldırım uzun ağaca çarptı."
+  },
+  "nowhere--adv": {
+    "tr": "hiçbir yerde, hiçbir yere",
+    "def": "In or to no place at all.",
+    "ex": "The keys were nowhere to be found.",
+    "exTr": "Anahtarlar hiçbir yerde bulunamadı."
+  },
+  "sheriff--noun": {
+    "tr": "şerif",
+    "def": "An elected police officer in an American county.",
+    "ex": "The sheriff closed the road.",
+    "exTr": "Şerif yolu kapattı."
+  },
+  "turning--noun": {
+    "tr": "sapak, dönüş",
+    "def": "A place where a road goes off to one side.",
+    "ex": "Take the second turning on the left.",
+    "exTr": "Soldaki ikinci sapağa gir."
+  },
+  "recognize--verb": {
+    "tr": "tanımak, kabul etmek",
+    "def": "To know someone or something you have seen before.",
+    "ex": "I hardly recognized him with a beard.",
+    "exTr": "Sakallıyken onu zar zor tanıdım."
+  },
+  "jealous--adj": {
+    "tr": "kıskanç",
+    "def": "Unhappy because someone else has what you want.",
+    "ex": "He was jealous of her success.",
+    "exTr": "Onun başarısını kıskanıyordu."
+  },
+  "finding--noun": {
+    "tr": "bulgu",
+    "def": "A piece of information that research discovers.",
+    "ex": "The report presents three main findings.",
+    "exTr": "Rapor üç ana bulgu sunuyor."
+  },
+  "release--verb": {
+    "tr": "serbest bırakmak, piyasaya sürmek",
+    "def": "To set someone free, or to make something available.",
+    "ex": "The band released a new album.",
+    "exTr": "Grup yeni bir albüm çıkardı."
+  },
+  "universe--noun": {
+    "tr": "evren",
+    "def": "All of space and everything in it.",
+    "ex": "The universe is still expanding.",
+    "exTr": "Evren hâlâ genişliyor."
+  },
+  "program--verb": {
+    "tr": "programlamak",
+    "def": "To give a computer or a machine a set of instructions.",
+    "ex": "He programmed the heating to start early.",
+    "exTr": "Isıtmanın erken başlaması için programladı."
+  },
+  "heat--verb": {
+    "tr": "ısıtmak",
+    "def": "To make something hot.",
+    "ex": "Heat the oil in a wide pan.",
+    "exTr": "Yağı geniş bir tavada ısıt."
+  },
+  "aware--adj": {
+    "tr": "farkında",
+    "def": "Knowing that something exists or is happening.",
+    "ex": "Are you aware of the new rules?",
+    "exTr": "Yeni kuralların farkında mısın?"
+  },
+  "surely--adv": {
+    "tr": "elbette, herhâlde",
+    "def": "Used when you expect others to agree with you.",
+    "ex": "Surely he told you about it.",
+    "exTr": "Herhâlde sana bundan bahsetmiştir."
+  },
+  "male--adj": {
+    "tr": "erkek",
+    "def": "Belonging to the sex that does not give birth.",
+    "ex": "Most male birds have brighter colours.",
+    "exTr": "Erkek kuşların çoğu daha parlak renklidir."
+  },
+  "base--verb": {
+    "tr": "dayandırmak",
+    "def": "To build an idea or a decision on something.",
+    "ex": "The film is based on a true story.",
+    "exTr": "Film gerçek bir hikâyeye dayanıyor."
+  },
+  "lift--noun": {
+    "tr": "asansör, araçla götürme",
+    "def": "A machine that carries people between floors, or a ride.",
+    "ex": "Take the lift to the fifth floor.",
+    "exTr": "Beşinci kata asansörle çık."
+  },
+  "lift--verb": {
+    "tr": "kaldırmak",
+    "def": "To raise something to a higher position.",
+    "ex": "Can you lift this box alone?",
+    "exTr": "Bu kutuyu tek başına kaldırabilir misin?"
+  },
+  "lab--noun": {
+    "tr": "laboratuvar",
+    "def": "A room where scientific tests are done.",
+    "ex": "The samples are still in the lab.",
+    "exTr": "Örnekler hâlâ laboratuvarda."
+  },
+  "command--noun": {
+    "tr": "emir, komut",
+    "def": "An order, or an instruction given to a computer.",
+    "ex": "The soldiers waited for the command.",
+    "exTr": "Askerler emri bekledi."
+  },
+  "proof--noun": {
+    "tr": "kanıt",
+    "def": "Information that shows something is definitely true.",
+    "ex": "We need proof of your address.",
+    "exTr": "Adresinizin kanıtına ihtiyacımız var."
+  },
+  "afford--verb": {
+    "tr": "gücü yetmek",
+    "def": "To have enough money or time for something.",
+    "ex": "We cannot afford a new car.",
+    "exTr": "Yeni bir arabaya gücümüz yetmiyor."
+  },
+  "total--adj": {
+    "tr": "toplam, tam",
+    "def": "Complete, or counting everything together.",
+    "ex": "The total cost was quite low.",
+    "exTr": "Toplam maliyet oldukça düşüktü."
+  },
+  "total--noun": {
+    "tr": "toplam",
+    "def": "The number you get when you add everything.",
+    "ex": "The total came to nine hundred lira.",
+    "exTr": "Toplam dokuz yüz lirayı buldu."
+  },
+  "tie--verb": {
+    "tr": "bağlamak, berabere kalmak",
+    "def": "To fasten with string, or to finish a game equal.",
+    "ex": "Tie the rope around the post.",
+    "exTr": "İpi direğe bağla."
+  },
+  "opening--noun": {
+    "tr": "açılış, açıklık",
+    "def": "A hole or gap, or the start of an event.",
+    "ex": "We attended the opening of the museum.",
+    "exTr": "Müzenin açılışına katıldık."
+  },
+  "bullet--noun": {
+    "tr": "mermi",
+    "def": "A small piece of metal fired from a gun.",
+    "ex": "A bullet broke the window.",
+    "exTr": "Bir mermi camı kırdı."
+  },
+  "lately--adv": {
+    "tr": "son zamanlarda",
+    "def": "During the recent past.",
+    "ex": "I have not seen her lately.",
+    "exTr": "Son zamanlarda onu görmedim."
+  },
+  "season--noun": {
+    "tr": "mevsim, sezon",
+    "def": "One of the four parts of the year, or a period of activity.",
+    "ex": "Spring is my favourite season.",
+    "exTr": "İlkbahar en sevdiğim mevsim."
+  },
+  "distance--noun": {
+    "tr": "mesafe, uzaklık",
+    "def": "The amount of space between two places.",
+    "ex": "The distance is about ten kilometres.",
+    "exTr": "Mesafe yaklaşık on kilometre."
+  },
+  "responsibility--noun": {
+    "tr": "sorumluluk",
+    "def": "A duty that you must deal with.",
+    "ex": "Cleaning the lab is his responsibility.",
+    "exTr": "Laboratuvarı temizlemek onun sorumluluğu."
+  },
+  "whenever--adv": {
+    "tr": "ne zaman olursa",
+    "def": "At any time that you like.",
+    "ex": "Call me whenever you need help.",
+    "exTr": "Yardıma ihtiyacın olduğunda ne zaman olursa ara."
+  },
+  "process--noun": {
+    "tr": "süreç, işlem",
+    "def": "A series of steps that produce a result.",
+    "ex": "Learning a language is a slow process.",
+    "exTr": "Dil öğrenmek yavaş bir süreçtir."
+  },
+  "sword--noun": {
+    "tr": "kılıç",
+    "def": "A long sharp weapon with a handle.",
+    "ex": "The museum displays an old sword.",
+    "exTr": "Müze eski bir kılıç sergiliyor."
+  },
+  "tiny--adj": {
+    "tr": "minicik",
+    "def": "Extremely small.",
+    "ex": "A tiny insect landed on the page.",
+    "exTr": "Minicik bir böcek sayfaya kondu."
+  },
+  "property--noun": {
+    "tr": "mülk, özellik",
+    "def": "Something a person owns, or a quality of a material.",
+    "ex": "The property includes a large garden.",
+    "exTr": "Mülk büyük bir bahçeyi de kapsıyor."
+  },
+  "settle--verb": {
+    "tr": "yerleşmek, çözmek",
+    "def": "To go and live somewhere, or to end an argument.",
+    "ex": "They settled in Bursa after the war.",
+    "exTr": "Savaştan sonra Bursa'ya yerleştiler."
+  },
+  "bite--verb": {
+    "tr": "ısırmak",
+    "def": "To cut into something with your teeth.",
+    "ex": "The dog bit the postman.",
+    "exTr": "Köpek postacıyı ısırdı."
+  },
+  "interview--verb": {
+    "tr": "görüşme yapmak, röportaj yapmak",
+    "def": "To ask someone questions for a job or a report.",
+    "ex": "They interviewed six candidates.",
+    "exTr": "Altı adayla görüşme yaptılar."
+  },
+  "surgery--noun": {
+    "tr": "cerrahi, ameliyat",
+    "def": "Medical treatment in which a doctor cuts the body.",
+    "ex": "He needs surgery on his shoulder.",
+    "exTr": "Omzundan ameliyat olması gerekiyor."
+  },
+  "mayor--noun": {
+    "tr": "belediye başkanı",
+    "def": "The elected leader of a city or a town.",
+    "ex": "The mayor opened the new library.",
+    "exTr": "Belediye başkanı yeni kütüphaneyi açtı."
+  },
+  "gentleman--noun": {
+    "tr": "beyefendi",
+    "def": "A polite word for a man.",
+    "ex": "A gentleman is waiting at reception.",
+    "exTr": "Resepsiyonda bir beyefendi bekliyor."
+  },
+  "split--noun": {
+    "tr": "bölünme, ayrılık",
+    "def": "A division into parts, or a break between people.",
+    "ex": "The split in the party surprised nobody.",
+    "exTr": "Partideki bölünme kimseyi şaşırtmadı."
+  },
+  "alarm--verb": {
+    "tr": "endişelendirmek",
+    "def": "To make someone suddenly worried or frightened.",
+    "ex": "The news alarmed the whole village.",
+    "exTr": "Haber bütün köyü endişelendirdi."
+  },
+  "model--adj": {
+    "tr": "örnek, model",
+    "def": "Serving as a perfect example of something.",
+    "ex": "It is a model school for the region.",
+    "exTr": "Bölge için örnek bir okul."
+  },
+  "model--verb": {
+    "tr": "modellemek, mankenlik yapmak",
+    "def": "To make a copy of a system, or to display clothes.",
+    "ex": "Scientists modelled the spread of the disease.",
+    "exTr": "Bilim insanları hastalığın yayılmasını modelledi."
+  },
+  "finger--noun": {
+    "tr": "parmak",
+    "def": "One of the five parts at the end of your hand.",
+    "ex": "She cut her finger on the glass.",
+    "exTr": "Parmağını camda kesti."
+  },
+  "access--noun": {
+    "tr": "erişim",
+    "def": "The right or the chance to use something.",
+    "ex": "Students have access to the archive.",
+    "exTr": "Öğrencilerin arşive erişimi var."
+  },
+  "flat--adj": {
+    "tr": "düz, yassı",
+    "def": "Level and smooth, with no high parts.",
+    "ex": "We camped on flat ground.",
+    "exTr": "Düz bir zeminde kamp kurduk."
+  }
+}

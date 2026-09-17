@@ -61,6 +61,32 @@ IRREGULAR = {
     "tell": ["told"], "think": ["thought"], "throw": ["threw", "thrown"],
     "understand": ["understood"], "wake": ["woke", "woken"],
     "wear": ["wore", "worn"], "win": ["won"], "write": ["wrote", "written"],
+    # Added for B1 and above.
+    "arise": ["arose", "arisen"], "awake": ["awoke"],
+    "bear": ["bore", "borne"], "forbid": ["forbade", "forbidden"],
+    "foresee": ["foresaw"], "forgive": ["forgave", "forgiven"],
+    "kneel": ["knelt"], "lean": ["leant"], "leap": ["leapt"],
+    "learn": ["learnt"], "mistake": ["mistook", "mistaken"],
+    "smell": ["smelt"], "spell": ["spelt"], "spill": ["spilt"],
+    "swell": ["swollen"], "undergo": ["underwent", "undergone"],
+    "undertake": ["undertook", "undertaken"], "uphold": ["upheld"],
+    "withhold": ["withheld"],
+    "bend": ["bent"], "bind": ["bound"], "bite": ["bit", "bitten"],
+    "bleed": ["bled"], "breed": ["bred"], "burn": ["burnt"],
+    "cling": ["clung"], "creep": ["crept"], "deal": ["dealt"],
+    "dwell": ["dwelt"], "flee": ["fled"], "fling": ["flung"],
+    "freeze": ["froze", "frozen"], "grind": ["ground"], "hang": ["hung"],
+    "lay": ["laid"], "lend": ["lent"], "light": ["lit"],
+    "mislead": ["misled"], "overcome": ["overcame"], "rise": ["rose", "risen"],
+    "seek": ["sought"], "shed": ["shed"], "shine": ["shone"],
+    "shrink": ["shrank", "shrunk"], "sink": ["sank", "sunk"],
+    "slide": ["slid"], "sow": ["sown"], "spin": ["spun"],
+    "spoil": ["spoilt"], "spring": ["sprang", "sprung"], "stick": ["stuck"],
+    "sting": ["stung"], "stride": ["strode"], "strike": ["struck"],
+    "strive": ["strove"], "swear": ["swore", "sworn"], "sweep": ["swept"],
+    "swing": ["swung"], "tear": ["tore", "torn"], "tread": ["trod"],
+    "weave": ["wove", "woven"], "weep": ["wept"], "wind": ["wound"],
+    "withdraw": ["withdrew", "withdrawn"], "wring": ["wrung"],
 }
 
 # Detecting "is this Turkish?" by looking for Turkish letters misses plenty of
@@ -73,6 +99,18 @@ ENGLISH_MARKERS = re.compile(
     r"are|is|was|were|and|or|from|your|you|it|not|but|have|has|who|where|"
     r"very|more|than|about|into|other|people|way)\b",
     re.IGNORECASE,
+)
+
+# Turkish is agglutinative, so the suffixes give it away far more reliably than
+# any word list would: the infinitive `-mek/-mak`, the `-lık` and `-sız`
+# derivations, the genitive `-ın/-nin`, plus the five letters English lacks.
+# The letter class is deliberately case-sensitive: under IGNORECASE Python
+# folds `ı` onto `I` and `İ` onto `i`, which would flag every English sentence
+# containing the letter i.
+TURKISH_MARKERS = re.compile(
+    r"[ıİğĞşŞçÇöÖüÜ]"
+    r"|(?i:\b(?:bir|bu|sey|kisi|olan|icin|veya|gibi|hali)\b)"
+    r"|(?i:\w(?:mak|mek|lik|lık|siz|sız|nin|nın)\b)"
 )
 
 
@@ -130,11 +168,19 @@ def validate(entry: dict, authored: dict, problems: list[str]) -> bool:
 
     # Catches an English definition left in an A1/A2 batch. One stray match can
     # be a loanword or a quoted term, so two distinct markers are required.
+    definition = authored["def"]
     if DEFINITION_LANG[level] == "tr":
-        definition = authored["def"]
         markers = {m.group(0).lower() for m in ENGLISH_MARKERS.finditer(definition)}
         if len(markers) >= 2:
             problems.append(f"{key}: {level} tanımı Türkçe olmalı → {definition!r}")
+    else:
+        # The mirror image: a Turkish definition carried over into B1+. Turkish
+        # suffixes are the reliable tell — `-mek/-mak`, `-lık`, `-nın` and the
+        # letters English does not have — so two distinct ones are required for
+        # the same reason as above.
+        markers = {m.group(0).lower() for m in TURKISH_MARKERS.finditer(definition)}
+        if len(markers) >= 2:
+            problems.append(f"{key}: {level} tanımı İngilizce olmalı → {definition!r}")
 
     return True
 
