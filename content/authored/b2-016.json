@@ -1,0 +1,481 @@
+{
+  "_meta": {
+    "batch": "b2-016",
+    "level": "B2",
+    "range": "1199-1278"
+  },
+  "optimistic--adj": {
+    "tr": "iyimser",
+    "def": "Expecting good things to happen.",
+    "ex": "He stays optimistic about the harvest.",
+    "exTr": "Hasat konusunda iyimser kalıyor."
+  },
+  "fireplace--noun": {
+    "tr": "şömine",
+    "def": "The open space in a wall where a fire is lit.",
+    "ex": "A log burned in the fireplace.",
+    "exTr": "Şöminede bir kütük yanıyordu."
+  },
+  "mixture--noun": {
+    "tr": "karışım",
+    "def": "Two or more things combined together.",
+    "ex": "Pour the mixture into a tin.",
+    "exTr": "Karışımı bir kalıba dök."
+  },
+  "crocodile--noun": {
+    "tr": "timsah",
+    "def": "A large reptile with strong jaws that lives in rivers.",
+    "ex": "A crocodile lay on the bank.",
+    "exTr": "Kıyıda bir timsah yatıyordu."
+  },
+  "mist--noun": {
+    "tr": "pus, sis",
+    "def": "A thin cloud close to the ground.",
+    "ex": "Mist hid the far hills.",
+    "exTr": "Pus uzaktaki tepeleri gizledi."
+  },
+  "bikini--noun": {
+    "tr": "bikini",
+    "def": "A two-piece swimming costume for women.",
+    "ex": "She packed a bikini and a towel.",
+    "exTr": "Bir bikini ve havlu koydu."
+  },
+  "salty--adj": {
+    "tr": "tuzlu",
+    "def": "Containing a lot of salt.",
+    "ex": "The soup is too salty.",
+    "exTr": "Çorba fazla tuzlu."
+  },
+  "arch--noun": {
+    "tr": "kemer",
+    "def": "A curved structure over a door or a bridge.",
+    "ex": "The stone arch is very old.",
+    "exTr": "Taş kemer çok eski."
+  },
+  "percentage--noun": {
+    "tr": "yüzde, oran",
+    "def": "An amount expressed as a part of a hundred.",
+    "ex": "What percentage passed the test?",
+    "exTr": "Testi yüzde kaçı geçti?"
+  },
+  "bravery--noun": {
+    "tr": "cesaret, yiğitlik",
+    "def": "Courage shown in a dangerous situation.",
+    "ex": "He received a medal for bravery.",
+    "exTr": "Cesaretinden dolayı madalya aldı."
+  },
+  "morality--noun": {
+    "tr": "ahlak",
+    "def": "Ideas about what behaviour is right and wrong.",
+    "ex": "The book questions public morality.",
+    "exTr": "Kitap toplumsal ahlakı sorguluyor."
+  },
+  "leopard--noun": {
+    "tr": "leopar",
+    "def": "A large wild cat with dark spots.",
+    "ex": "A leopard rested in the tree.",
+    "exTr": "Bir leopar ağaçta dinleniyordu."
+  },
+  "vaccine--noun": {
+    "tr": "aşı",
+    "def": "A substance given to protect against a disease.",
+    "ex": "The vaccine is free for children.",
+    "exTr": "Aşı çocuklar için ücretsiz."
+  },
+  "motivated--adj": {
+    "tr": "motive, istekli",
+    "def": "Keen to work hard towards a goal.",
+    "ex": "The team is highly motivated.",
+    "exTr": "Takım son derece motive."
+  },
+  "burglary--noun": {
+    "tr": "hırsızlık (eve girme)",
+    "def": "The crime of entering a building to steal.",
+    "ex": "There were two burglaries last week.",
+    "exTr": "Geçen hafta iki hırsızlık oldu."
+  },
+  "resolution--noun": {
+    "tr": "karar, çözünürlük",
+    "def": "A firm decision, or the sharpness of a screen image.",
+    "ex": "The council passed a resolution.",
+    "exTr": "Meclis bir karar aldı."
+  },
+  "wink--noun": {
+    "tr": "göz kırpma",
+    "def": "A quick closing of one eye as a signal.",
+    "ex": "He gave her a wink.",
+    "exTr": "Ona göz kırptı."
+  },
+  "assessment--noun": {
+    "tr": "değerlendirme",
+    "def": "A judgement about how good or how serious something is.",
+    "ex": "The assessment took a week.",
+    "exTr": "Değerlendirme bir hafta sürdü."
+  },
+  "getaway--noun": {
+    "tr": "kaçış, kısa tatil",
+    "def": "An escape after a crime, or a short holiday.",
+    "ex": "They made a quick getaway.",
+    "exTr": "Hızlı bir kaçış yaptılar."
+  },
+  "leash--noun": {
+    "tr": "tasma kayışı",
+    "def": "A cord used to hold and control a dog.",
+    "ex": "Keep the dog on a leash.",
+    "exTr": "Köpeği tasmayla tut."
+  },
+  "cocoa--noun": {
+    "tr": "kakao",
+    "def": "A brown powder from cocoa beans used to make chocolate.",
+    "ex": "Add cocoa to the warm milk.",
+    "exTr": "Ilık süte kakao ekle."
+  },
+  "perception--noun": {
+    "tr": "algı",
+    "def": "The way you notice or understand something.",
+    "ex": "Public perception has changed.",
+    "exTr": "Kamuoyu algısı değişti."
+  },
+  "dense--adj": {
+    "tr": "yoğun, sık",
+    "def": "With parts very close together.",
+    "ex": "A dense forest covers the hill.",
+    "exTr": "Tepeyi sık bir orman kaplıyor."
+  },
+  "nod--verb": {
+    "tr": "başını sallamak",
+    "def": "To move your head down and up to mean yes.",
+    "ex": "She nodded and smiled.",
+    "exTr": "Başını sallayıp gülümsedi."
+  },
+  "nervously--adv": {
+    "tr": "gergin bir şekilde",
+    "def": "In a worried and uneasy way.",
+    "ex": "He waited nervously outside.",
+    "exTr": "Dışarıda gergin bir şekilde bekledi."
+  },
+  "veteran--noun": {
+    "tr": "gazi, kıdemli",
+    "def": "A former soldier, or a very experienced person.",
+    "ex": "The veteran told his story.",
+    "exTr": "Gazi hikâyesini anlattı."
+  },
+  "unaware--adj": {
+    "tr": "habersiz, farkında olmayan",
+    "def": "Not knowing that something exists or is happening.",
+    "ex": "She was unaware of the change.",
+    "exTr": "Değişiklikten habersizdi."
+  },
+  "assemble--verb": {
+    "tr": "monte etmek, toplanmak",
+    "def": "To put parts together, or to gather in a group.",
+    "ex": "The shelves are easy to assemble.",
+    "exTr": "Rafları monte etmek kolay."
+  },
+  "generosity--noun": {
+    "tr": "cömertlik",
+    "def": "The quality of giving freely to others.",
+    "ex": "Her generosity surprised us.",
+    "exTr": "Cömertliği bizi şaşırttı."
+  },
+  "evidently--adv": {
+    "tr": "besbelli, anlaşılan",
+    "def": "Clearly, judging by what can be seen.",
+    "ex": "He was evidently tired.",
+    "exTr": "Besbelli yorgundu."
+  },
+  "evacuation--noun": {
+    "tr": "tahliye",
+    "def": "The act of moving people away from danger.",
+    "ex": "The evacuation went smoothly.",
+    "exTr": "Tahliye sorunsuz geçti."
+  },
+  "closure--noun": {
+    "tr": "kapanma, kapatma",
+    "def": "The permanent shutting of a business or a road.",
+    "ex": "The closure cost forty jobs.",
+    "exTr": "Kapanma kırk iş kaybına yol açtı."
+  },
+  "excessive--adj": {
+    "tr": "aşırı",
+    "def": "Much more than is reasonable or necessary.",
+    "ex": "The charges were excessive.",
+    "exTr": "Ücretler aşırıydı."
+  },
+  "misunderstand--verb": {
+    "tr": "yanlış anlamak",
+    "def": "To understand something incorrectly.",
+    "ex": "Please do not misunderstand me.",
+    "exTr": "Lütfen beni yanlış anlama."
+  },
+  "unreasonable--adj": {
+    "tr": "makul olmayan, mantıksız",
+    "def": "Not fair or not sensible.",
+    "ex": "The demand is unreasonable.",
+    "exTr": "Talep makul değil."
+  },
+  "rattle--noun": {
+    "tr": "takırtı, çıngırak",
+    "def": "A quick series of short knocking sounds.",
+    "ex": "A rattle came from the engine.",
+    "exTr": "Motordan bir takırtı geliyordu."
+  },
+  "pneumonia--noun": {
+    "tr": "zatürre",
+    "def": "A serious illness affecting the lungs.",
+    "ex": "He was in hospital with pneumonia.",
+    "exTr": "Zatürreyle hastanedeydi."
+  },
+  "brag--noun": {
+    "tr": "övünme",
+    "def": "A boastful remark about yourself.",
+    "ex": "That was an empty brag.",
+    "exTr": "Boş bir övünmeydi."
+  },
+  "royalty--noun": {
+    "tr": "kraliyet ailesi, telif payı",
+    "def": "Members of a royal family, or money paid to a writer.",
+    "ex": "The author receives a royalty.",
+    "exTr": "Yazar telif payı alıyor."
+  },
+  "peep--noun": {
+    "tr": "gizlice bakış",
+    "def": "A quick secret look.",
+    "ex": "She took a peep inside.",
+    "exTr": "İçeri gizlice bir göz attı."
+  },
+  "ache--verb": {
+    "tr": "ağrımak",
+    "def": "To feel a continuous dull pain.",
+    "ex": "My legs ache after the climb.",
+    "exTr": "Tırmanıştan sonra bacaklarım ağrıyor."
+  },
+  "sympathetic--adj": {
+    "tr": "anlayışlı, sempatik",
+    "def": "Showing that you understand someone's trouble.",
+    "ex": "The nurse was very sympathetic.",
+    "exTr": "Hemşire çok anlayışlıydı."
+  },
+  "relay--noun": {
+    "tr": "bayrak yarışı",
+    "def": "A race in which team members take turns.",
+    "ex": "Our school won the relay.",
+    "exTr": "Okulumuz bayrak yarışını kazandı."
+  },
+  "particle--noun": {
+    "tr": "parçacık, zerre",
+    "def": "An extremely small piece of matter.",
+    "ex": "Dust particles filled the air.",
+    "exTr": "Havayı toz parçacıkları doldurdu."
+  },
+  "estimated--adj": {
+    "tr": "tahmini",
+    "def": "Judged approximately rather than measured.",
+    "ex": "The estimated cost is high.",
+    "exTr": "Tahmini maliyet yüksek."
+  },
+  "electronics--noun": {
+    "tr": "elektronik",
+    "def": "The science of electronic devices, or the devices themselves.",
+    "ex": "He studies electronics.",
+    "exTr": "Elektronik okuyor."
+  },
+  "daytime--noun": {
+    "tr": "gündüz",
+    "def": "The hours between sunrise and sunset.",
+    "ex": "The shop is busy in the daytime.",
+    "exTr": "Dükkân gündüz yoğun."
+  },
+  "dowry--noun": {
+    "tr": "çeyiz",
+    "def": "Money or goods a bride brings to a marriage.",
+    "ex": "The custom of a dowry is old.",
+    "exTr": "Çeyiz geleneği eskidir."
+  },
+  "faculty--noun": {
+    "tr": "fakülte, yeti",
+    "def": "A department of a university, or a natural ability.",
+    "ex": "She teaches in the law faculty.",
+    "exTr": "Hukuk fakültesinde ders veriyor."
+  },
+  "ounce--noun": {
+    "tr": "ons",
+    "def": "A small unit of weight, about twenty-eight grams.",
+    "ex": "Add an ounce of butter.",
+    "exTr": "Bir ons tereyağı ekle."
+  },
+  "console--verb": {
+    "tr": "teselli etmek",
+    "def": "To comfort someone who is sad.",
+    "ex": "She consoled the crying child.",
+    "exTr": "Ağlayan çocuğu teselli etti."
+  },
+  "caravan--noun": {
+    "tr": "karavan, kervan",
+    "def": "A vehicle you live in while travelling, or a group crossing a desert.",
+    "ex": "They towed a small caravan.",
+    "exTr": "Küçük bir karavan çektiler."
+  },
+  "defy--verb": {
+    "tr": "karşı gelmek, meydan okumak",
+    "def": "To refuse to obey a person or a rule.",
+    "ex": "He defied the ban and spoke.",
+    "exTr": "Yasağa karşı gelip konuştu."
+  },
+  "queue--verb": {
+    "tr": "kuyruğa girmek",
+    "def": "To stand in a line and wait your turn.",
+    "ex": "We queued for an hour.",
+    "exTr": "Bir saat kuyrukta bekledik."
+  },
+  "willingly--adv": {
+    "tr": "isteyerek",
+    "def": "Without being forced or asked twice.",
+    "ex": "She willingly gave up her seat.",
+    "exTr": "Yerini isteyerek verdi."
+  },
+  "cheeky--adj": {
+    "tr": "arsız, yüzsüz",
+    "def": "Slightly rude in an amusing way.",
+    "ex": "That was a cheeky answer.",
+    "exTr": "Bu arsız bir cevaptı."
+  },
+  "cruelty--noun": {
+    "tr": "zalimlik, eziyet",
+    "def": "Behaviour that causes pain to others on purpose.",
+    "ex": "The law punishes cruelty to animals.",
+    "exTr": "Yasa hayvanlara eziyeti cezalandırıyor."
+  },
+  "external--adj": {
+    "tr": "dış, harici",
+    "def": "On or from the outside.",
+    "ex": "The external walls need paint.",
+    "exTr": "Dış duvarların boyaya ihtiyacı var."
+  },
+  "quarantine--noun": {
+    "tr": "karantina",
+    "def": "A period of being kept apart to stop a disease spreading.",
+    "ex": "The animals stayed in quarantine.",
+    "exTr": "Hayvanlar karantinada kaldı."
+  },
+  "squash--noun": {
+    "tr": "kabak, squash (oyun)",
+    "def": "A vegetable of the pumpkin family, or an indoor racket game.",
+    "ex": "He plays squash twice a week.",
+    "exTr": "Haftada iki kez squash oynuyor."
+  },
+  "squash--verb": {
+    "tr": "ezmek, sıkıştırmak",
+    "def": "To press something so it becomes flat.",
+    "ex": "Do not squash the cake.",
+    "exTr": "Pastayı ezme."
+  },
+  "tuition--noun": {
+    "tr": "öğrenim ücreti, ders",
+    "def": "Teaching, especially in small groups, or the fee for it.",
+    "ex": "Tuition rose again this year.",
+    "exTr": "Öğrenim ücreti bu yıl yine arttı."
+  },
+  "tame--adj": {
+    "tr": "evcil, uysal",
+    "def": "Not wild, and used to being with people.",
+    "ex": "The fox became quite tame.",
+    "exTr": "Tilki epey uysallaştı."
+  },
+  "criticism--noun": {
+    "tr": "eleştiri",
+    "def": "Remarks saying what is wrong with something.",
+    "ex": "The plan met heavy criticism.",
+    "exTr": "Plan ağır eleştiri aldı."
+  },
+  "separately--adv": {
+    "tr": "ayrı ayrı",
+    "def": "Not together, as individual things.",
+    "ex": "Wrap each glass separately.",
+    "exTr": "Her bardağı ayrı ayrı sar."
+  },
+  "tread--verb": {
+    "tr": "basmak, çiğnemek",
+    "def": "To put your foot down on something.",
+    "ex": "Do not tread on the seedlings.",
+    "exTr": "Fidelere basma."
+  },
+  "exploit--verb": {
+    "tr": "sömürmek, yararlanmak",
+    "def": "To use someone unfairly, or to make good use of something.",
+    "ex": "The company exploited its workers.",
+    "exTr": "Şirket işçilerini sömürdü."
+  },
+  "seminar--noun": {
+    "tr": "seminer",
+    "def": "A meeting for teaching and discussion in a small group.",
+    "ex": "The seminar lasts two hours.",
+    "exTr": "Seminer iki saat sürüyor."
+  },
+  "evaluation--noun": {
+    "tr": "değer biçme",
+    "def": "A careful judgement of value or quality.",
+    "ex": "The evaluation was positive.",
+    "exTr": "Değerlendirme olumluydu."
+  },
+  "cube--noun": {
+    "tr": "küp",
+    "def": "A solid shape with six equal square sides.",
+    "ex": "Add two cubes of ice.",
+    "exTr": "İki küp buz ekle."
+  },
+  "revelation--noun": {
+    "tr": "ifşa, vahiy",
+    "def": "A surprising fact made known.",
+    "ex": "The letter was a revelation.",
+    "exTr": "Mektup bir ifşaydı."
+  },
+  "alternate--verb": {
+    "tr": "dönüşümlü yapmak",
+    "def": "To do two things one after the other, again and again.",
+    "ex": "They alternate between two shifts.",
+    "exTr": "İki vardiya arasında dönüşümlü çalışıyorlar."
+  },
+  "diversion--noun": {
+    "tr": "sapma, oyalama",
+    "def": "A different route around a closed road, or something that distracts.",
+    "ex": "Follow the diversion signs.",
+    "exTr": "Sapma tabelalarını takip et."
+  },
+  "effectively--adv": {
+    "tr": "etkili biçimde, fiilen",
+    "def": "In a way that works well, or in practice.",
+    "ex": "The drug works effectively.",
+    "exTr": "İlaç etkili biçimde çalışıyor."
+  },
+  "dedication--noun": {
+    "tr": "adanmışlık, ithaf",
+    "def": "Great effort given to a cause, or words offering a work to someone.",
+    "ex": "Her dedication is well known.",
+    "exTr": "Adanmışlığı iyi bilinir."
+  },
+  "dye--noun": {
+    "tr": "boya (kumaş, saç)",
+    "def": "A substance used to change the colour of cloth or hair.",
+    "ex": "The dye stained her hands.",
+    "exTr": "Boya ellerini lekeledi."
+  },
+  "prospect--noun": {
+    "tr": "ihtimal, olasılık",
+    "def": "The possibility that something will happen.",
+    "ex": "There is little prospect of rain.",
+    "exTr": "Yağmur ihtimali az."
+  },
+  "thigh--noun": {
+    "tr": "uyluk",
+    "def": "The upper part of the leg above the knee.",
+    "ex": "He injured his thigh running.",
+    "exTr": "Koşarken uyluğunu sakatladı."
+  },
+  "accusation--noun": {
+    "tr": "suçlama",
+    "def": "A statement that someone has done something wrong.",
+    "ex": "He denied every accusation.",
+    "exTr": "Her suçlamayı reddetti."
+  }
+}

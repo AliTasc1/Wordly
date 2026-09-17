@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b2-013",
+    "level": "B2",
+    "range": "959-1038"
+  },
+  "doom--noun": {
+    "tr": "kıyamet, felaket",
+    "def": "A terrible fate that cannot be avoided.",
+    "ex": "The film ends in doom.",
+    "exTr": "Film felaketle bitiyor."
+  },
+  "roar--verb": {
+    "tr": "kükremek, gürlemek",
+    "def": "To make a deep loud sound.",
+    "ex": "The engine roared to life.",
+    "exTr": "Motor gürleyerek çalıştı."
+  },
+  "queer--adj": {
+    "tr": "tuhaf, acayip",
+    "def": "Strange, in an older use of the word.",
+    "ex": "He felt queer after the journey.",
+    "exTr": "Yolculuktan sonra kendini tuhaf hissetti."
+  },
+  "resignation--noun": {
+    "tr": "istifa",
+    "def": "The act of officially leaving a job.",
+    "ex": "She handed in her resignation.",
+    "exTr": "İstifasını sundu."
+  },
+  "blink--verb": {
+    "tr": "göz kırpmak",
+    "def": "To close and open your eyes quickly.",
+    "ex": "He blinked in the bright light.",
+    "exTr": "Parlak ışıkta gözlerini kırpıştırdı."
+  },
+  "steer--verb": {
+    "tr": "yönlendirmek, direksiyon kullanmak",
+    "def": "To control the direction of a vehicle.",
+    "ex": "She steered the boat to shore.",
+    "exTr": "Tekneyi kıyıya yönlendirdi."
+  },
+  "injection--noun": {
+    "tr": "enjeksiyon, iğne",
+    "def": "The act of putting medicine into the body with a needle.",
+    "ex": "The injection takes a second.",
+    "exTr": "İğne bir saniye sürüyor."
+  },
+  "reform--noun": {
+    "tr": "reform",
+    "def": "A change made to improve a system or a law.",
+    "ex": "The reform took years to pass.",
+    "exTr": "Reformun geçmesi yıllar aldı."
+  },
+  "mother-in-law--noun": {
+    "tr": "kayınvalide",
+    "def": "The mother of your husband or wife.",
+    "ex": "My mother in law cooks beautifully.",
+    "exTr": "Kayınvalidem çok güzel yemek yapıyor."
+  },
+  "virtually--adv": {
+    "tr": "neredeyse, fiilen",
+    "def": "Almost completely.",
+    "ex": "The hall was virtually empty.",
+    "exTr": "Salon neredeyse boştu."
+  },
+  "formation--noun": {
+    "tr": "oluşum, düzen",
+    "def": "The process of forming, or an arranged pattern.",
+    "ex": "The formation of the cave took ages.",
+    "exTr": "Mağaranın oluşumu çağlar aldı."
+  },
+  "striking--adj": {
+    "tr": "çarpıcı, dikkat çekici",
+    "def": "Very noticeable and impressive.",
+    "ex": "There is a striking resemblance.",
+    "exTr": "Çarpıcı bir benzerlik var."
+  },
+  "antique--adj": {
+    "tr": "antika",
+    "def": "Old and valuable because of its age.",
+    "ex": "They collect antique clocks.",
+    "exTr": "Antika saat topluyorlar."
+  },
+  "sponsor--verb": {
+    "tr": "sponsor olmak",
+    "def": "To pay for an event or a person's costs.",
+    "ex": "A bank sponsored the tournament.",
+    "exTr": "Turnuvaya bir banka sponsor oldu."
+  },
+  "probe--noun": {
+    "tr": "soruşturma, sonda",
+    "def": "A thorough investigation, or a thin instrument.",
+    "ex": "The probe found no fault.",
+    "exTr": "Soruşturma hiçbir kusur bulmadı."
+  },
+  "underestimate--verb": {
+    "tr": "hafife almak",
+    "def": "To think something is smaller or easier than it is.",
+    "ex": "Do not underestimate the cold.",
+    "exTr": "Soğuğu hafife alma."
+  },
+  "dental--adj": {
+    "tr": "diş, dişle ilgili",
+    "def": "Relating to the teeth.",
+    "ex": "She needs dental treatment.",
+    "exTr": "Diş tedavisine ihtiyacı var."
+  },
+  "bomber--noun": {
+    "tr": "bombardıman uçağı, bombacı",
+    "def": "A plane that drops bombs, or a person who plants one.",
+    "ex": "The bomber flew very high.",
+    "exTr": "Bombardıman uçağı çok yüksekten uçtu."
+  },
+  "boiling--adj": {
+    "tr": "kaynayan, çok sıcak",
+    "def": "At the temperature where a liquid turns to gas, or extremely hot.",
+    "ex": "Pour boiling water over the tea.",
+    "exTr": "Çayın üstüne kaynar su dök."
+  },
+  "tramp--noun": {
+    "tr": "evsiz gezgin",
+    "def": "A person with no home who travels from place to place.",
+    "ex": "A tramp slept under the bridge.",
+    "exTr": "Bir serseri köprünün altında uyudu."
+  },
+  "mentor--noun": {
+    "tr": "akıl hocası, mentor",
+    "def": "An experienced person who advises someone younger.",
+    "ex": "Her mentor reads every draft.",
+    "exTr": "Akıl hocası her taslağı okuyor."
+  },
+  "arena--noun": {
+    "tr": "arena",
+    "def": "A large building where sports or concerts take place.",
+    "ex": "The arena holds ten thousand.",
+    "exTr": "Arena on bin kişi alıyor."
+  },
+  "hardware--noun": {
+    "tr": "donanım, hırdavat",
+    "def": "The physical parts of a computer, or metal tools.",
+    "ex": "The hardware is out of date.",
+    "exTr": "Donanım eskimiş."
+  },
+  "irresponsible--adj": {
+    "tr": "sorumsuz",
+    "def": "Not thinking about the results of what you do.",
+    "ex": "That was an irresponsible decision.",
+    "exTr": "Bu sorumsuzca bir karardı."
+  },
+  "initiative--noun": {
+    "tr": "girişim, inisiyatif",
+    "def": "A new plan to solve a problem, or the ability to act alone.",
+    "ex": "She took the initiative herself.",
+    "exTr": "İnisiyatifi kendi aldı."
+  },
+  "distraction--noun": {
+    "tr": "dikkat dağıtıcı şey",
+    "def": "Something that stops you concentrating.",
+    "ex": "The phone is a constant distraction.",
+    "exTr": "Telefon sürekli bir dikkat dağıtıcı."
+  },
+  "entertaining--adj": {
+    "tr": "eğlenceli",
+    "def": "Amusing and enjoyable to watch or read.",
+    "ex": "It was an entertaining talk.",
+    "exTr": "Eğlenceli bir konuşmaydı."
+  },
+  "banker--noun": {
+    "tr": "bankacı",
+    "def": "A person with an important job in a bank.",
+    "ex": "The banker refused the loan.",
+    "exTr": "Bankacı krediyi reddetti."
+  },
+  "temptation--noun": {
+    "tr": "cazibe, ayartma",
+    "def": "A strong wish to do something you should not do.",
+    "ex": "He resisted the temptation.",
+    "exTr": "Ayartmaya direndi."
+  },
+  "detailed--adj": {
+    "tr": "ayrıntılı",
+    "def": "Containing many small facts.",
+    "ex": "She wrote a detailed report.",
+    "exTr": "Ayrıntılı bir rapor yazdı."
+  },
+  "dove--noun": {
+    "tr": "güvercin, kumru",
+    "def": "A white bird used as a symbol of peace.",
+    "ex": "A dove landed on the roof.",
+    "exTr": "Çatıya bir güvercin kondu."
+  },
+  "sloppy--adj": {
+    "tr": "özensiz",
+    "def": "Done carelessly and without attention.",
+    "ex": "His work was sloppy this week.",
+    "exTr": "Bu hafta işi özensizdi."
+  },
+  "comb--verb": {
+    "tr": "taramak (saç)",
+    "def": "To make hair tidy with a comb.",
+    "ex": "She combed her hair quickly.",
+    "exTr": "Saçını çabucak taradı."
+  },
+  "superb--adj": {
+    "tr": "mükemmel, enfes",
+    "def": "Extremely good in quality.",
+    "ex": "The meal was superb.",
+    "exTr": "Yemek enfesti."
+  },
+  "refuge--noun": {
+    "tr": "sığınak, sığınma",
+    "def": "Shelter or protection from danger.",
+    "ex": "They took refuge in a cave.",
+    "exTr": "Bir mağaraya sığındılar."
+  },
+  "specialty--noun": {
+    "tr": "uzmanlık, spesiyal",
+    "def": "A subject you know best, or a food a place is famous for.",
+    "ex": "Fish is the house specialty.",
+    "exTr": "Balık evin spesiyali."
+  },
+  "thirst--noun": {
+    "tr": "susuzluk",
+    "def": "The feeling of needing to drink.",
+    "ex": "Thirst drove them to the well.",
+    "exTr": "Susuzluk onları kuyuya sürükledi."
+  },
+  "select--verb": {
+    "tr": "seçmek",
+    "def": "To choose carefully from a group.",
+    "ex": "Select two photographs.",
+    "exTr": "İki fotoğraf seç."
+  },
+  "knot--noun": {
+    "tr": "düğüm",
+    "def": "A tight join made by tying rope or string.",
+    "ex": "Tie a firm knot here.",
+    "exTr": "Buraya sıkı bir düğüm at."
+  },
+  "massacre--noun": {
+    "tr": "katliam",
+    "def": "The killing of many people at once.",
+    "ex": "The massacre shocked the world.",
+    "exTr": "Katliam dünyayı şoke etti."
+  },
+  "herb--noun": {
+    "tr": "ot, bitki (mutfak)",
+    "def": "A plant used in cooking or in medicine.",
+    "ex": "Add a fresh herb at the end.",
+    "exTr": "Sonda taze bir ot ekle."
+  },
+  "nursery--noun": {
+    "tr": "kreş, fidanlık",
+    "def": "A place caring for small children, or growing young plants.",
+    "ex": "The nursery opens at seven.",
+    "exTr": "Kreş yedide açılıyor."
+  },
+  "terrace--noun": {
+    "tr": "teras",
+    "def": "A flat outdoor area beside a building.",
+    "ex": "We ate on the terrace.",
+    "exTr": "Terasta yemek yedik."
+  },
+  "alter--verb": {
+    "tr": "değiştirmek",
+    "def": "To change something slightly.",
+    "ex": "The tailor altered the sleeves.",
+    "exTr": "Terzi kolları değiştirdi."
+  },
+  "trainer--noun": {
+    "tr": "antrenör, eğitmen",
+    "def": "A person who trains people or animals.",
+    "ex": "Her trainer plans every session.",
+    "exTr": "Antrenörü her seansı planlıyor."
+  },
+  "father-in-law--noun": {
+    "tr": "kayınpeder",
+    "def": "The father of your husband or wife.",
+    "ex": "My father in law owns a farm.",
+    "exTr": "Kayınpederimin bir çiftliği var."
+  },
+  "reminder--noun": {
+    "tr": "hatırlatma",
+    "def": "Something that makes you remember.",
+    "ex": "Send a reminder on Monday.",
+    "exTr": "Pazartesi bir hatırlatma gönder."
+  },
+  "blossom--noun": {
+    "tr": "çiçek (ağaç)",
+    "def": "The flowers on a fruit tree.",
+    "ex": "The almond blossom is early.",
+    "exTr": "Badem çiçeği erken açtı."
+  },
+  "agony--noun": {
+    "tr": "ıstırap, şiddetli acı",
+    "def": "Extreme physical or mental pain.",
+    "ex": "He was in agony for hours.",
+    "exTr": "Saatlerce ıstırap çekti."
+  },
+  "mold--noun": {
+    "tr": "küf, kalıp",
+    "def": "A green growth on old food, or a shaped container.",
+    "ex": "Mold covered the old bread.",
+    "exTr": "Küf eski ekmeği kaplamıştı."
+  },
+  "fundamental--adj": {
+    "tr": "temel",
+    "def": "Forming the base of something and very important.",
+    "ex": "This is a fundamental right.",
+    "exTr": "Bu temel bir hak."
+  },
+  "potentially--adv": {
+    "tr": "potansiyel olarak",
+    "def": "In a way that could happen in the future.",
+    "ex": "The leak is potentially dangerous.",
+    "exTr": "Sızıntı potansiyel olarak tehlikeli."
+  },
+  "utter--verb": {
+    "tr": "ağzından çıkarmak",
+    "def": "To say something, in formal or written English.",
+    "ex": "He did not utter a word.",
+    "exTr": "Tek kelime etmedi."
+  },
+  "discharge--noun": {
+    "tr": "taburcu, salıverme",
+    "def": "The act of letting someone leave hospital or the army.",
+    "ex": "Her discharge is set for Friday.",
+    "exTr": "Taburcusu cumaya ayarlandı."
+  },
+  "substitute--verb": {
+    "tr": "yerine koymak",
+    "def": "To use one thing in place of another.",
+    "ex": "Substitute honey for sugar.",
+    "exTr": "Şeker yerine bal koy."
+  },
+  "splash--noun": {
+    "tr": "sıçrama sesi",
+    "def": "The sound or mark made when something hits water.",
+    "ex": "We heard a loud splash.",
+    "exTr": "Yüksek bir sıçrama sesi duyduk."
+  },
+  "exile--noun": {
+    "tr": "sürgün",
+    "def": "Being forced to live away from your own country.",
+    "ex": "He spent ten years in exile.",
+    "exTr": "On yılını sürgünde geçirdi."
+  },
+  "addiction--noun": {
+    "tr": "bağımlılık",
+    "def": "The state of being unable to stop using something.",
+    "ex": "The clinic treats addiction.",
+    "exTr": "Klinik bağımlılığı tedavi ediyor."
+  },
+  "province--noun": {
+    "tr": "il, vilayet",
+    "def": "One of the administrative areas of a country.",
+    "ex": "The province has two airports.",
+    "exTr": "İlin iki havaalanı var."
+  },
+  "triangle--noun": {
+    "tr": "üçgen",
+    "def": "A flat shape with three straight sides.",
+    "ex": "Draw a triangle on the board.",
+    "exTr": "Tahtaya bir üçgen çiz."
+  },
+  "swift--adj": {
+    "tr": "hızlı, çevik",
+    "def": "Happening or moving very quickly.",
+    "ex": "The reply was swift.",
+    "exTr": "Cevap hızlıydı."
+  },
+  "temporarily--adv": {
+    "tr": "geçici olarak",
+    "def": "For a short time only.",
+    "ex": "The road is temporarily closed.",
+    "exTr": "Yol geçici olarak kapalı."
+  },
+  "retrieve--verb": {
+    "tr": "geri almak, getirmek",
+    "def": "To get something back from where it was left.",
+    "ex": "The dog retrieved the stick.",
+    "exTr": "Köpek sopayı geri getirdi."
+  },
+  "extension--noun": {
+    "tr": "uzatma, ek bina",
+    "def": "Extra time given, or a new part built onto a house.",
+    "ex": "They built an extension at the back.",
+    "exTr": "Arkaya bir ek bina yaptılar."
+  },
+  "hospitality--noun": {
+    "tr": "misafirperverlik",
+    "def": "Friendly and generous treatment of guests.",
+    "ex": "We thanked them for their hospitality.",
+    "exTr": "Misafirperverlikleri için teşekkür ettik."
+  },
+  "cozy--adj": {
+    "tr": "rahat, sıcacık",
+    "def": "Small, warm and comfortable.",
+    "ex": "The kitchen is warm and cozy.",
+    "exTr": "Mutfak sıcak ve rahat."
+  },
+  "recommendation--noun": {
+    "tr": "tavsiye, öneri",
+    "def": "Advice that something is good or should be done.",
+    "ex": "We came on a recommendation.",
+    "exTr": "Bir tavsiye üzerine geldik."
+  },
+  "microphone--noun": {
+    "tr": "mikrofon",
+    "def": "A device that makes a voice louder or records it.",
+    "ex": "Speak into the microphone.",
+    "exTr": "Mikrofona doğru konuş."
+  },
+  "toll--noun": {
+    "tr": "geçiş ücreti, bilanço",
+    "def": "Money paid to use a road, or the number harmed by a disaster.",
+    "ex": "The bridge toll went up.",
+    "exTr": "Köprü geçiş ücreti arttı."
+  },
+  "reconsider--verb": {
+    "tr": "yeniden düşünmek",
+    "def": "To think about a decision again.",
+    "ex": "Please reconsider your answer.",
+    "exTr": "Lütfen cevabını yeniden düşün."
+  },
+  "overboard--adv": {
+    "tr": "denize, gemiden aşağı",
+    "def": "Over the side of a ship into the water.",
+    "ex": "A box fell overboard.",
+    "exTr": "Bir kutu denize düştü."
+  },
+  "facilities--noun": {
+    "tr": "tesisler, olanaklar",
+    "def": "Buildings and equipment provided for a purpose.",
+    "ex": "The school has good sports facilities.",
+    "exTr": "Okulun iyi spor tesisleri var."
+  },
+  "donation--noun": {
+    "tr": "bağış",
+    "def": "Money or goods given to help others.",
+    "ex": "They made a large donation.",
+    "exTr": "Büyük bir bağışta bulundular."
+  },
+  "boxer--noun": {
+    "tr": "boksör",
+    "def": "A person who fights in the sport of boxing.",
+    "ex": "The boxer trains every morning.",
+    "exTr": "Boksör her sabah antrenman yapıyor."
+  },
+  "misfortune--noun": {
+    "tr": "talihsizlik",
+    "def": "Bad luck, or an unlucky event.",
+    "ex": "Illness was his only misfortune.",
+    "exTr": "Tek talihsizliği hastalıktı."
+  },
+  "maestro--noun": {
+    "tr": "maestro, usta",
+    "def": "A great musician, especially a conductor.",
+    "ex": "The maestro raised his baton.",
+    "exTr": "Maestro çubuğunu kaldırdı."
+  },
+  "involvement--noun": {
+    "tr": "katılım, dahil olma",
+    "def": "The fact of taking part in something.",
+    "ex": "His involvement was minor.",
+    "exTr": "Katılımı küçüktü."
+  },
+  "wilderness--noun": {
+    "tr": "vahşi doğa, çöl",
+    "def": "A large wild area where nobody lives.",
+    "ex": "They crossed the wilderness on foot.",
+    "exTr": "Vahşi doğayı yürüyerek geçtiler."
+  },
+  "vanish--verb": {
+    "tr": "yok olmak, kaybolmak",
+    "def": "To disappear suddenly and completely.",
+    "ex": "The keys vanished overnight.",
+    "exTr": "Anahtarlar bir gecede kayboldu."
+  },
+  "sage--noun": {
+    "tr": "adaçayı, bilge",
+    "def": "A herb with grey leaves, or a very wise person.",
+    "ex": "Add sage to the butter.",
+    "exTr": "Tereyağına adaçayı ekle."
+  }
+}

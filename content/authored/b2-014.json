@@ -1,0 +1,493 @@
+{
+  "_meta": {
+    "batch": "b2-014",
+    "level": "B2",
+    "range": "1039-1118"
+  },
+  "yummy--adj": {
+    "tr": "nefis, mis gibi",
+    "def": "Tasting very good, in informal speech.",
+    "ex": "These cakes are yummy.",
+    "exTr": "Bu kekler nefis."
+  },
+  "grown-up--adj": {
+    "tr": "yetişkin",
+    "def": "Adult, no longer a child.",
+    "ex": "Her children are grown up now.",
+    "exTr": "Çocukları artık yetişkin."
+  },
+  "grown-up--noun": {
+    "tr": "büyük, yetişkin",
+    "def": "An adult, as children call them.",
+    "ex": "Ask a grown up for help.",
+    "exTr": "Bir büyükten yardım iste."
+  },
+  "blend--noun": {
+    "tr": "harman, karışım",
+    "def": "A mixture of different types, especially of tea or coffee.",
+    "ex": "This is a strong blend.",
+    "exTr": "Bu güçlü bir harman."
+  },
+  "chancellor--noun": {
+    "tr": "şansölye, rektör",
+    "def": "The head of government in some countries, or of a university.",
+    "ex": "The chancellor opened the session.",
+    "exTr": "Şansölye oturumu açtı."
+  },
+  "gardener--noun": {
+    "tr": "bahçıvan",
+    "def": "A person who looks after a garden.",
+    "ex": "The gardener planted new roses.",
+    "exTr": "Bahçıvan yeni güller dikti."
+  },
+  "dwarf--noun": {
+    "tr": "cüce",
+    "def": "A very small imaginary person in old stories.",
+    "ex": "The tale has seven dwarfs.",
+    "exTr": "Masalda yedi cüce var."
+  },
+  "pint--noun": {
+    "tr": "pint (yarım litre)",
+    "def": "A unit of liquid, a little over half a litre.",
+    "ex": "He ordered a pint of milk.",
+    "exTr": "Bir pint süt söyledi."
+  },
+  "boost--noun": {
+    "tr": "artış, destek",
+    "def": "An increase or an improvement in something.",
+    "ex": "The news gave sales a boost.",
+    "exTr": "Haber satışlara bir destek verdi."
+  },
+  "boost--verb": {
+    "tr": "artırmak, desteklemek",
+    "def": "To increase or improve something.",
+    "ex": "The grant boosted local farms.",
+    "exTr": "Hibe yerel çiftlikleri destekledi."
+  },
+  "gaze--noun": {
+    "tr": "bakış",
+    "def": "A long steady look at something.",
+    "ex": "She avoided his gaze.",
+    "exTr": "Onun bakışından kaçındı."
+  },
+  "nuisance--noun": {
+    "tr": "baş belası, rahatsızlık",
+    "def": "A person or thing that annoys you.",
+    "ex": "The barking is a real nuisance.",
+    "exTr": "Havlama gerçek bir baş belası."
+  },
+  "donate--verb": {
+    "tr": "bağışlamak",
+    "def": "To give money or goods to help others.",
+    "ex": "They donated a hundred books.",
+    "exTr": "Yüz kitap bağışladılar."
+  },
+  "relieve--verb": {
+    "tr": "hafifletmek, rahatlatmak",
+    "def": "To make pain or a problem less serious.",
+    "ex": "The cream relieves the itching.",
+    "exTr": "Krem kaşıntıyı hafifletiyor."
+  },
+  "presidential--adj": {
+    "tr": "cumhurbaşkanlığı",
+    "def": "Relating to a president or the office of president.",
+    "ex": "The presidential election is in May.",
+    "exTr": "Cumhurbaşkanlığı seçimi mayısta."
+  },
+  "rental--noun": {
+    "tr": "kiralama, kira",
+    "def": "The act of renting, or the money paid for it.",
+    "ex": "Car rental is cheap here.",
+    "exTr": "Burada araba kiralama ucuz."
+  },
+  "dorm--noun": {
+    "tr": "yurt",
+    "def": "A building where students live at a school.",
+    "ex": "She shares a room in the dorm.",
+    "exTr": "Yurtta bir odayı paylaşıyor."
+  },
+  "dismiss--verb": {
+    "tr": "işten çıkarmak, göz ardı etmek",
+    "def": "To send someone away from a job, or to refuse to consider an idea.",
+    "ex": "He dismissed the idea at once.",
+    "exTr": "Fikri hemen göz ardı etti."
+  },
+  "overall--adj": {
+    "tr": "genel, toplam",
+    "def": "Considering everything, not just one part.",
+    "ex": "The overall cost is acceptable.",
+    "exTr": "Genel maliyet kabul edilebilir."
+  },
+  "overall--adv": {
+    "tr": "genel olarak",
+    "def": "Taking everything into account.",
+    "ex": "Overall, the year went well.",
+    "exTr": "Genel olarak yıl iyi geçti."
+  },
+  "daughter-in-law--noun": {
+    "tr": "gelin",
+    "def": "The wife of your son.",
+    "ex": "His daughter in law is a teacher.",
+    "exTr": "Gelini öğretmen."
+  },
+  "housekeeper--noun": {
+    "tr": "kâhya, ev görevlisi",
+    "def": "A person employed to manage a house or a hotel floor.",
+    "ex": "The housekeeper has the keys.",
+    "exTr": "Anahtarlar kâhyada."
+  },
+  "long-term--adj": {
+    "tr": "uzun vadeli",
+    "def": "Continuing far into the future.",
+    "ex": "This is a long term investment.",
+    "exTr": "Bu uzun vadeli bir yatırım."
+  },
+  "zoom--noun": {
+    "tr": "yakınlaştırma",
+    "def": "A camera setting that makes distant things look nearer.",
+    "ex": "Use the zoom for that bird.",
+    "exTr": "O kuş için yakınlaştırmayı kullan."
+  },
+  "portion--noun": {
+    "tr": "porsiyon, pay",
+    "def": "A part of something, or the amount of food for one person.",
+    "ex": "The portions here are generous.",
+    "exTr": "Buradaki porsiyonlar cömert."
+  },
+  "exceptional--adj": {
+    "tr": "olağanüstü, istisnai",
+    "def": "Unusually good, or very unusual.",
+    "ex": "Her results were exceptional.",
+    "exTr": "Sonuçları olağanüstüydü."
+  },
+  "despise--verb": {
+    "tr": "hor görmek, nefret etmek",
+    "def": "To dislike someone very strongly and have no respect for them.",
+    "ex": "He despised dishonesty.",
+    "exTr": "Sahtekârlıktan nefret ederdi."
+  },
+  "await--verb": {
+    "tr": "beklemek",
+    "def": "To wait for something, in formal English.",
+    "ex": "We await your reply.",
+    "exTr": "Cevabınızı bekliyoruz."
+  },
+  "telescope--noun": {
+    "tr": "teleskop",
+    "def": "A tube with lenses for looking at distant objects.",
+    "ex": "He looked through the telescope.",
+    "exTr": "Teleskoptan baktı."
+  },
+  "verse--noun": {
+    "tr": "dize, kıta",
+    "def": "A group of lines in a poem or a song.",
+    "ex": "Sing the second verse.",
+    "exTr": "İkinci kıtayı söyle."
+  },
+  "verse--verb": {
+    "tr": "şiirle anlatmak",
+    "def": "To put something into poetry.",
+    "ex": "The old tale was versed for children.",
+    "exTr": "Eski masal çocuklar için şiirleştirildi."
+  },
+  "distinguished--adj": {
+    "tr": "seçkin, saygın",
+    "def": "Very successful and respected.",
+    "ex": "He is a distinguished scientist.",
+    "exTr": "Seçkin bir bilim insanı."
+  },
+  "addicted--adj": {
+    "tr": "bağımlı hâle gelmiş",
+    "def": "Unable to stop using or doing something.",
+    "ex": "He is addicted to his phone.",
+    "exTr": "Telefonuna bağımlı."
+  },
+  "wit--noun": {
+    "tr": "zekâ, nükte",
+    "def": "The ability to say clever funny things.",
+    "ex": "Her wit filled the room.",
+    "exTr": "Nüktedanlığı odayı doldurdu."
+  },
+  "estimate--noun": {
+    "tr": "tahmin, keşif bedeli",
+    "def": "A judgement of an amount, or a stated price for work.",
+    "ex": "The builder gave an estimate.",
+    "exTr": "Usta bir keşif bedeli verdi."
+  },
+  "tutor--noun": {
+    "tr": "özel öğretmen",
+    "def": "A teacher who works with one student or a small group.",
+    "ex": "She hired a maths tutor.",
+    "exTr": "Bir matematik özel öğretmeni tuttu."
+  },
+  "impulse--noun": {
+    "tr": "dürtü, ani istek",
+    "def": "A sudden strong wish to do something.",
+    "ex": "He bought it on impulse.",
+    "exTr": "Onu ani bir dürtüyle aldı."
+  },
+  "penguin--noun": {
+    "tr": "penguen",
+    "def": "A black and white bird that swims but cannot fly.",
+    "ex": "A penguin dived into the water.",
+    "exTr": "Bir penguen suya daldı."
+  },
+  "peacefully--adv": {
+    "tr": "huzur içinde, barışçıl şekilde",
+    "def": "In a calm way, without violence.",
+    "ex": "The protest ended peacefully.",
+    "exTr": "Protesto barışçıl şekilde sona erdi."
+  },
+  "rag--noun": {
+    "tr": "paçavra, bez",
+    "def": "An old piece of cloth used for cleaning.",
+    "ex": "Wipe it with a rag.",
+    "exTr": "Onu bir bezle sil."
+  },
+  "stern--adj": {
+    "tr": "sert, haşin",
+    "def": "Serious and strict, and not kind.",
+    "ex": "The teacher gave a stern look.",
+    "exTr": "Öğretmen sert bir bakış attı."
+  },
+  "dearly--adv": {
+    "tr": "çok, pahalıya",
+    "def": "Very much, or at a great cost.",
+    "ex": "She loved her brother dearly.",
+    "exTr": "Kardeşini çok severdi."
+  },
+  "humiliation--noun": {
+    "tr": "aşağılanma",
+    "def": "The shame of being made to look foolish.",
+    "ex": "The defeat was a humiliation.",
+    "exTr": "Yenilgi bir aşağılanmaydı."
+  },
+  "worldwide--adj": {
+    "tr": "dünya çapında",
+    "def": "Happening in or affecting the whole world.",
+    "ex": "The book had worldwide success.",
+    "exTr": "Kitap dünya çapında başarı kazandı."
+  },
+  "bidding--noun": {
+    "tr": "teklif verme",
+    "def": "The offering of prices at an auction.",
+    "ex": "The bidding started at noon.",
+    "exTr": "Teklif verme öğlen başladı."
+  },
+  "masterpiece--noun": {
+    "tr": "başyapıt",
+    "def": "The best work an artist has produced.",
+    "ex": "The painting is a masterpiece.",
+    "exTr": "Tablo bir başyapıt."
+  },
+  "pentagon--noun": {
+    "tr": "beşgen",
+    "def": "A flat shape with five straight sides.",
+    "ex": "Draw a regular pentagon.",
+    "exTr": "Düzgün bir beşgen çiz."
+  },
+  "regime--noun": {
+    "tr": "rejim",
+    "def": "A government, especially one that is strict or unfair.",
+    "ex": "The regime banned all protest.",
+    "exTr": "Rejim bütün protestoları yasakladı."
+  },
+  "contempt--noun": {
+    "tr": "küçümseme, hor görme",
+    "def": "The feeling that someone deserves no respect.",
+    "ex": "He spoke with contempt.",
+    "exTr": "Küçümseyerek konuştu."
+  },
+  "tackle--verb": {
+    "tr": "ele almak, müdahale etmek",
+    "def": "To start dealing with a difficult problem.",
+    "ex": "The city tackled the traffic problem.",
+    "exTr": "Şehir trafik sorununu ele aldı."
+  },
+  "wage--noun": {
+    "tr": "ücret, yevmiye",
+    "def": "Money paid weekly for work, often manual.",
+    "ex": "The daily wage is low.",
+    "exTr": "Günlük ücret düşük."
+  },
+  "scooter--noun": {
+    "tr": "scooter, motosiklet",
+    "def": "A light motorcycle, or a child's two-wheeled toy.",
+    "ex": "She rides a scooter to work.",
+    "exTr": "İşe scooter ile gidiyor."
+  },
+  "supernatural--adj": {
+    "tr": "doğaüstü",
+    "def": "Impossible to explain by the laws of nature.",
+    "ex": "The story has supernatural elements.",
+    "exTr": "Hikâyede doğaüstü ögeler var."
+  },
+  "bankrupt--verb": {
+    "tr": "iflas ettirmek",
+    "def": "To make a person or a company unable to pay debts.",
+    "ex": "The lawsuit bankrupted the firm.",
+    "exTr": "Dava firmayı iflas ettirdi."
+  },
+  "merchandise--noun": {
+    "tr": "ürün, mal",
+    "def": "Goods that are for sale.",
+    "ex": "The shop displays new merchandise.",
+    "exTr": "Dükkân yeni ürünler sergiliyor."
+  },
+  "compensation--noun": {
+    "tr": "tazminat",
+    "def": "Money paid to someone for loss or injury.",
+    "ex": "She received compensation for the damage.",
+    "exTr": "Hasar için tazminat aldı."
+  },
+  "stitch--noun": {
+    "tr": "dikiş, ilmek",
+    "def": "One loop of thread made when sewing.",
+    "ex": "The wound needed six stitches.",
+    "exTr": "Yaraya altı dikiş atıldı."
+  },
+  "rib--noun": {
+    "tr": "kaburga",
+    "def": "One of the curved bones around the chest.",
+    "ex": "He cracked a rib falling.",
+    "exTr": "Düşerken bir kaburgasını çatlattı."
+  },
+  "ban--noun": {
+    "tr": "yasak",
+    "def": "An official order that something must not be done.",
+    "ex": "There is a ban on fishing here.",
+    "exTr": "Burada balık tutma yasağı var."
+  },
+  "ban--verb": {
+    "tr": "yasaklamak",
+    "def": "To officially forbid something.",
+    "ex": "The city banned old lorries.",
+    "exTr": "Şehir eski kamyonları yasakladı."
+  },
+  "monastery--noun": {
+    "tr": "manastır",
+    "def": "A building where monks live and pray.",
+    "ex": "The monastery sits on a cliff.",
+    "exTr": "Manastır bir uçurumun üstünde."
+  },
+  "recruit--verb": {
+    "tr": "işe almak, kaydetmek",
+    "def": "To find new people to join a company or an army.",
+    "ex": "They recruited twenty nurses.",
+    "exTr": "Yirmi hemşire işe aldılar."
+  },
+  "ignorance--noun": {
+    "tr": "cehalet, bilgisizlik",
+    "def": "A lack of knowledge about something.",
+    "ex": "Ignorance of the law is no excuse.",
+    "exTr": "Yasayı bilmemek mazeret değildir."
+  },
+  "artery--noun": {
+    "tr": "atardamar",
+    "def": "A tube carrying blood away from the heart.",
+    "ex": "Fat can block an artery.",
+    "exTr": "Yağ bir atardamarı tıkayabilir."
+  },
+  "dynamic--adj": {
+    "tr": "dinamik, enerjik",
+    "def": "Full of energy and new ideas, or always changing.",
+    "ex": "She is a dynamic leader.",
+    "exTr": "Dinamik bir lider."
+  },
+  "unbearable--adj": {
+    "tr": "dayanılmaz",
+    "def": "Too painful or unpleasant to accept.",
+    "ex": "The heat was unbearable.",
+    "exTr": "Sıcak dayanılmazdı."
+  },
+  "troop--noun": {
+    "tr": "birlik, asker",
+    "def": "A group of soldiers.",
+    "ex": "Fresh troops arrived at dawn.",
+    "exTr": "Şafakta taze birlikler geldi."
+  },
+  "employer--noun": {
+    "tr": "işveren",
+    "def": "A person or company that pays people to work.",
+    "ex": "Her employer gave her leave.",
+    "exTr": "İşvereni ona izin verdi."
+  },
+  "grim--adj": {
+    "tr": "kasvetli, sert",
+    "def": "Worrying and unpleasant, or looking very serious.",
+    "ex": "The news was grim.",
+    "exTr": "Haber kasvetliydi."
+  },
+  "medieval--adj": {
+    "tr": "ortaçağ",
+    "def": "Belonging to the period from about 1100 to 1500.",
+    "ex": "The town has a medieval wall.",
+    "exTr": "Kasabanın ortaçağdan kalma bir duvarı var."
+  },
+  "microwave--noun": {
+    "tr": "mikrodalga",
+    "def": "An oven that heats food very quickly.",
+    "ex": "Warm the soup in the microwave.",
+    "exTr": "Çorbayı mikrodalgada ısıt."
+  },
+  "funky--adj": {
+    "tr": "havalı, ilginç",
+    "def": "Modern and unusual in a pleasing way.",
+    "ex": "The café has a funky style.",
+    "exTr": "Kafenin havalı bir tarzı var."
+  },
+  "deceive--verb": {
+    "tr": "aldatmak, kandırmak",
+    "def": "To make someone believe something untrue.",
+    "ex": "The label deceived customers.",
+    "exTr": "Etiket müşterileri kandırdı."
+  },
+  "consultant--noun": {
+    "tr": "danışman, uzman hekim",
+    "def": "An expert paid for advice, or a senior hospital doctor.",
+    "ex": "A consultant reviewed the plan.",
+    "exTr": "Bir danışman planı gözden geçirdi."
+  },
+  "unacceptable--adj": {
+    "tr": "kabul edilemez",
+    "def": "So bad that it cannot be allowed.",
+    "ex": "The delay is unacceptable.",
+    "exTr": "Gecikme kabul edilemez."
+  },
+  "plumber--noun": {
+    "tr": "tesisatçı",
+    "def": "A worker who repairs water pipes.",
+    "ex": "Call a plumber about the leak.",
+    "exTr": "Sızıntı için bir tesisatçı çağır."
+  },
+  "ox--noun": {
+    "tr": "öküz",
+    "def": "A large male cow used for pulling heavy loads.",
+    "ex": "An ox pulled the plough.",
+    "exTr": "Sabanı bir öküz çekti."
+  },
+  "heritage--noun": {
+    "tr": "miras, kültürel miras",
+    "def": "The traditions and buildings passed down from the past.",
+    "ex": "The city protects its heritage.",
+    "exTr": "Şehir mirasını koruyor."
+  },
+  "nightclub--noun": {
+    "tr": "gece kulübü",
+    "def": "A place open late for dancing and drinks.",
+    "ex": "The nightclub closes at three.",
+    "exTr": "Gece kulübü üçte kapanıyor."
+  },
+  "preliminary--adj": {
+    "tr": "ön, hazırlık niteliğinde",
+    "def": "Coming before the main part of something.",
+    "ex": "These are preliminary results.",
+    "exTr": "Bunlar ön sonuçlar."
+  },
+  "valid--adj": {
+    "tr": "geçerli",
+    "def": "Legally acceptable, or based on good reasoning.",
+    "ex": "Your ticket is still valid.",
+    "exTr": "Biletin hâlâ geçerli."
+  }
+}
