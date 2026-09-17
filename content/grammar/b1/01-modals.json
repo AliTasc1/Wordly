@@ -1,0 +1,197 @@
+{
+  "_meta": { "batch": "b1-01", "level": "B1", "range": "Ders 1-5 — kip fiiller, olumsuzluk, past perfect, ikinci tip koşul" },
+  "lessons": [
+    {
+      "id": "b1-01-must-may-might",
+      "level": "B1",
+      "order": 1,
+      "title": "must, may, might",
+      "topic": "Modals of obligation, prohibition and possibility",
+      "canDo": "Bir şeyin kesin, olası ya da yasak olduğunu ayırt ederek söyleyebilirim.",
+      "covers": ["MD.must.AFF", "MD.may.AFF", "MD.might.AFF", "MD.should.NEG", "MD.need.NEG"],
+      "concept": {
+        "summary": "must güçlü zorunluluk ve güçlü tahmin bildirir; may ve might ihtimal bildirir. En çok karıştırılan çift mustn't ile don't have to: birincisi yasak, ikincisi gereksizlik demektir.",
+        "formula": { "left": "must / may / might", "right": "+ yalın fiil" },
+        "table": [
+          { "form": "must", "be": "zorunluluk / güçlü tahmin", "example": "You must wear a helmet. He must be tired." },
+          { "form": "mustn't", "be": "yasak", "example": "You mustn't smoke here." },
+          { "form": "don't have to", "be": "gerek yok", "example": "You don't have to come." },
+          { "form": "may / might", "be": "ihtimal", "example": "It may rain later." },
+          { "form": "needn't", "be": "gerek yok", "example": "You needn't wait." }
+        ]
+      },
+      "examples": [
+        { "en": "All passengers must show their tickets.", "tr": "Tüm yolcular biletlerini göstermek zorunda.", "note": "Kural bildiren zorunluluk." },
+        { "en": "You mustn't park in front of the gate.", "tr": "Kapının önüne park etmek yasak.", "note": "mustn't = yasak." },
+        { "en": "You don't have to finish it today.", "tr": "Bugün bitirmen gerekmiyor.", "note": "Gereksizlik; yasak değil." },
+        { "en": "She might call us tonight.", "tr": "Bu akşam bizi arayabilir.", "note": "İhtimal." },
+        { "en": "He must be at home; his car is outside.", "tr": "Evde olmalı, arabası dışarıda.", "note": "Kanıta dayalı güçlü tahmin." }
+      ],
+      "mistakes": [
+        { "wrong": "You mustn't come if you are busy.", "right": "You don't have to come if you are busy.", "why": "Gereksizlik mustn't ile değil don't have to ile anlatılır." },
+        { "wrong": "She musts wear a uniform.", "right": "She must wear a uniform.", "why": "Kip fiiller -s almaz." },
+        { "wrong": "It might to rain.", "right": "It might rain.", "why": "Kip fiilden sonra to gelmez." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "Visitors ___ sign in at reception.", "options": ["must", "musts", "must to", "are must"], "answer": 0, "note": "Kural → must + yalın fiil." },
+        { "type": "choice", "text": "You ___ touch the wires — it's dangerous.", "options": ["mustn't", "don't have to", "needn't", "may not to"], "answer": 0, "note": "Yasak → mustn't." },
+        { "type": "choice", "text": "It's Saturday, so you ___ get up early.", "options": ["don't have to", "mustn't", "can't", "shouldn't to"], "answer": 0, "note": "Gerek yok → don't have to." },
+        { "type": "choice", "text": "Take an umbrella; it ___ rain.", "options": ["might", "mights", "might to", "is might"], "answer": 0, "note": "İhtimal → might." },
+        { "type": "gap", "text": "You ___ worry, everything is ready.", "options": ["needn't", "mustn't to", "don't need"], "answer": 0, "note": "needn't + yalın fiil." }
+      ]
+    },
+    {
+      "id": "b1-02-could-able-used-to",
+      "level": "B1",
+      "order": 2,
+      "title": "could, be able to, used to",
+      "topic": "Past ability and past habits",
+      "canDo": "Eskiden neler yapabildiğimi ve nelere alışkın olduğumu anlatabilirim.",
+      "covers": ["MD.could.AFF", "MD.could.NEG", "MD.be_able_to.AFF", "MD.used_to.AFF"],
+      "concept": {
+        "summary": "could geçmişteki genel yeteneği anlatır. Tek seferlik bir başarıda could yerine was able to kullanılır. used to ise artık yapmadığımız eski alışkanlıkları anlatır ve yalnızca geçmişte kullanılır.",
+        "formula": { "left": "could / was able to", "right": "used to + yalın fiil" },
+        "table": [
+          { "form": "genel yetenek", "be": "could", "example": "I could swim at five." },
+          { "form": "tek seferlik başarı", "be": "was able to", "example": "I was able to fix it yesterday." },
+          { "form": "eski alışkanlık", "be": "used to", "example": "We used to live in Bursa." },
+          { "form": "olumsuz", "be": "couldn't / didn't use to", "example": "I couldn't drive then." }
+        ]
+      },
+      "examples": [
+        { "en": "She could read before school.", "tr": "Okuldan önce okuyabiliyordu.", "note": "Genel yetenek." },
+        { "en": "After two hours we were able to open the door.", "tr": "İki saat sonra kapıyı açabildik.", "note": "Tek seferlik başarı → was/were able to." },
+        { "en": "I used to smoke, but I stopped.", "tr": "Eskiden sigara içerdim ama bıraktım.", "note": "Artık yapılmayan alışkanlık." },
+        { "en": "He couldn't come because he was ill.", "tr": "Hasta olduğu için gelemedi.", "note": "could'un olumsuzu." },
+        { "en": "There used to be a cinema here.", "tr": "Eskiden burada bir sinema vardı.", "note": "Geçmişteki durum." }
+      ],
+      "mistakes": [
+        { "wrong": "Yesterday I could finally fix the car.", "right": "Yesterday I was able to fix the car.", "why": "Tek seferlik başarıda could kullanılmaz." },
+        { "wrong": "I use to smoke.", "right": "I used to smoke.", "why": "Kalıp geçmiş biçimdedir: used to." },
+        { "wrong": "I used to go there next year.", "right": "I used to go there.", "why": "used to yalnızca geçmiş içindir." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "When I was a child, I ___ play the piano.", "options": ["could", "can", "was can", "could to"], "answer": 0, "note": "Geçmiş genel yetenek." },
+        { "type": "choice", "text": "The room was locked, but we ___ get in through the window.", "options": ["were able to", "could", "can", "are able"], "answer": 0, "note": "Tek seferlik başarı." },
+        { "type": "choice", "text": "She ___ have long hair.", "options": ["used to", "use to", "used", "is used to"], "answer": 0, "note": "Eski durum → used to." },
+        { "type": "choice", "text": "I ___ understand a word he said.", "options": ["couldn't", "could not to", "can't", "wasn't could"], "answer": 0, "note": "Geçmişte yeteneğin yokluğu." },
+        { "type": "gap", "text": "There ___ be a market on this street.", "options": ["used to", "use to", "uses to"], "answer": 0, "note": "used to + yalın fiil." }
+      ]
+    },
+    {
+      "id": "b1-03-negatives",
+      "level": "B1",
+      "order": 3,
+      "title": "Olumsuzluk — tüm zamanlarda tek kural",
+      "topic": "Negation across tenses",
+      "canDo": "Öğrendiğim her zamanı olumsuz kurabilirim.",
+      "covers": ["TA.PRESENT.does.NEG", "TA.PRPRG.NEG", "TA.PRPF.NEG", "TA.FUT.NEG", "MD.will.NEG", "IMP.V.NEG"],
+      "concept": {
+        "summary": "İngilizcede olumsuzluk her zamanda aynı işler: not, yardımcı fiilin hemen arkasına gelir. Yardımcı fiil yoksa do getirilir. Bu tek kural bilinince yeni bir zaman için ayrı olumsuz kalıp ezberlemeye gerek kalmaz.",
+        "formula": { "left": "yardımcı fiil + not", "right": "yardımcı yoksa do/does/did + not" },
+        "table": [
+          { "form": "geniş zaman", "be": "doesn't / don't", "example": "He doesn't drive." },
+          { "form": "şimdiki", "be": "isn't / aren't + -ing", "example": "They aren't working." },
+          { "form": "present perfect", "be": "hasn't / haven't + V3", "example": "I haven't seen it." },
+          { "form": "gelecek", "be": "won't", "example": "She won't agree." },
+          { "form": "emir", "be": "don't", "example": "Don't touch it." }
+        ]
+      },
+      "examples": [
+        { "en": "He doesn't work here any more.", "tr": "Artık burada çalışmıyor.", "note": "Geniş zaman, üçüncü tekil." },
+        { "en": "They aren't listening to me.", "tr": "Beni dinlemiyorlar.", "note": "be zaten yardımcı, not hemen arkasına geldi." },
+        { "en": "I haven't finished the report yet.", "tr": "Raporu henüz bitirmedim.", "note": "yet olumsuzda cümle sonunda." },
+        { "en": "We won't be late.", "tr": "Geç kalmayacağız.", "note": "will not → won't." },
+        { "en": "Don't forget to lock the door.", "tr": "Kapıyı kilitlemeyi unutma.", "note": "Olumsuz emir." }
+      ],
+      "mistakes": [
+        { "wrong": "He doesn't works here.", "right": "He doesn't work here.", "why": "-s yardımcı fiile geçti, asıl fiil yalın kalır." },
+        { "wrong": "I not have finished.", "right": "I haven't finished.", "why": "not yardımcı fiilin arkasına gelir." },
+        { "wrong": "They don't are listening.", "right": "They aren't listening.", "why": "be zaten yardımcıdır, do gerekmez." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "She ___ like spicy food.", "options": ["doesn't", "don't", "isn't", "hasn't"], "answer": 0, "note": "Geniş zaman, üçüncü tekil." },
+        { "type": "choice", "text": "We ___ watching the match right now.", "options": ["aren't", "don't", "haven't", "won't"], "answer": 0, "note": "Şimdiki zaman → be + not." },
+        { "type": "choice", "text": "I ___ heard from him since May.", "options": ["haven't", "didn't", "don't", "am not"], "answer": 0, "note": "Present perfect → haven't + V3." },
+        { "type": "choice", "text": "They ___ arrive before eight.", "options": ["won't", "don't will", "aren't will", "not will"], "answer": 0, "note": "Gelecek → won't." },
+        { "type": "gap", "text": "___ open the window, please.", "options": ["Don't", "Not", "Doesn't"], "answer": 0, "note": "Olumsuz emir → Don't." }
+      ]
+    },
+    {
+      "id": "b1-04-past-perfect",
+      "level": "B1",
+      "order": 4,
+      "title": "Past perfect — had done",
+      "topic": "Past perfect",
+      "canDo": "Geçmişteki iki olaydan hangisinin önce olduğunu belirtebilirim.",
+      "covers": ["TA.PASTPF.AFF"],
+      "concept": {
+        "summary": "Geçmişte anlatılan bir olaydan daha önce olmuş bir şeyi göstermek için kullanılır. Yani \"geçmişin geçmişi\"dir: önce olan had + V3, sonra olan past simple olur. Tek bir olay anlatılıyorsa gerekmez.",
+        "formula": { "left": "had + fiilin üçüncü hâli", "right": "(daha önce olan)" },
+        "table": [
+          { "form": "önce olan", "be": "had + V3", "example": "The train had left." },
+          { "form": "sonra olan", "be": "past simple", "example": "when we arrived" },
+          { "form": "olumsuz", "be": "hadn't + V3", "example": "I hadn't seen it before." },
+          { "form": "sık kullanılan", "be": "already, just, never", "example": "She had already gone." }
+        ]
+      },
+      "examples": [
+        { "en": "When we arrived, the film had started.", "tr": "Biz vardığımızda film başlamıştı.", "note": "Film önce başladı." },
+        { "en": "He had never flown before that day.", "tr": "O güne kadar hiç uçmamıştı.", "note": "before + geçmiş nokta." },
+        { "en": "She had already left when I called.", "tr": "Ben aradığımda çoktan gitmişti.", "note": "already ile sık kullanılır." },
+        { "en": "I couldn't get in because I had lost my key.", "tr": "Anahtarımı kaybettiğim için giremedim.", "note": "Sebep önce olmuş." },
+        { "en": "They had finished dinner by eight.", "tr": "Sekize kadar yemeği bitirmişlerdi.", "note": "by + saat." }
+      ],
+      "mistakes": [
+        { "wrong": "When we arrived, the film has started.", "right": "When we arrived, the film had started.", "why": "Geçmişin geçmişi için had gerekir." },
+        { "wrong": "He had went home.", "right": "He had gone home.", "why": "had'den sonra üçüncü hâl gelir." },
+        { "wrong": "Yesterday I had gone to the cinema.", "right": "Yesterday I went to the cinema.", "why": "Tek bir geçmiş olayda past simple yeter." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "By the time I got there, everyone ___ .", "options": ["had left", "has left", "left had", "was left"], "answer": 0, "note": "Önce olan → had + V3." },
+        { "type": "choice", "text": "She ___ the book before she saw the film.", "options": ["had read", "has read", "reads", "was read"], "answer": 0, "note": "Okuma önce oldu." },
+        { "type": "choice", "text": "We ___ never been to Greece before last summer.", "options": ["had", "have", "did", "were"], "answer": 0, "note": "Geçmiş bir noktadan öncesi." },
+        { "type": "choice", "text": "He was tired because he ___ all night.", "options": ["had worked", "has worked", "works", "had work"], "answer": 0, "note": "Sebep daha önce gerçekleşti." },
+        { "type": "gap", "text": "The shop was closed; it ___ at six.", "options": ["had closed", "has closed", "closes"], "answer": 0, "note": "Kapanma daha önce olmuş." }
+      ]
+    },
+    {
+      "id": "b1-05-second-conditional",
+      "level": "B1",
+      "order": 5,
+      "title": "İkinci tip koşul — if I had, I would",
+      "topic": "Second conditional",
+      "canDo": "Gerçek olmayan durumlar üzerine konuşabilir, hayal kurabilirim.",
+      "covers": ["SUBJ.PAST.AFF"],
+      "concept": {
+        "summary": "Gerçekleşmesi mümkün olmayan ya da uzak ihtimalli durumlar için kullanılır. Yapı şaşırtıcıdır: if'li cümlecikte geçmiş zaman biçimi kullanılır ama anlam şimdiye ya da geleceğe bakar. be fiili için resmî dilde her öznede were gelir.",
+        "formula": { "left": "If + past simple", "right": ", would + yalın fiil" },
+        "table": [
+          { "form": "koşul", "be": "If I had …", "example": "If I had time, I would help." },
+          { "form": "sonuç", "be": "would + yalın fiil", "example": "I would travel more." },
+          { "form": "be", "be": "were (her özne)", "example": "If I were you, …" },
+          { "form": "birinci tiple fark", "be": "mümkün ↔ hayali", "example": "If it rains (olabilir) / If it rained (hayali)" }
+        ]
+      },
+      "examples": [
+        { "en": "If I had more money, I would buy a house.", "tr": "Daha çok param olsa bir ev alırdım.", "note": "Şu an param yok." },
+        { "en": "If I were you, I would apologise.", "tr": "Yerinde olsam özür dilerdim.", "note": "Tavsiye için en sık kullanılan kalıp." },
+        { "en": "She would travel more if she had time.", "tr": "Vakti olsa daha çok seyahat ederdi.", "note": "Ana cümle önce gelince virgül yok." },
+        { "en": "What would you do if you lost your passport?", "tr": "Pasaportunu kaybetsen ne yapardın?", "note": "Varsayımsal soru." },
+        { "en": "If they knew the answer, they would tell us.", "tr": "Cevabı bilseler bize söylerlerdi.", "note": "Bilmiyorlar." }
+      ],
+      "mistakes": [
+        { "wrong": "If I would have money, I would buy a house.", "right": "If I had money, I would buy a house.", "why": "would if'li cümlecikte kullanılmaz." },
+        { "wrong": "If I was you, I would apologise.", "right": "If I were you, I would apologise.", "why": "Bu kalıpta her öznede were gelir." },
+        { "wrong": "If she had time, she will travel more.", "right": "If she had time, she would travel more.", "why": "İkinci tipte sonuç would ile kurulur." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "If I ___ rich, I would help more people.", "options": ["were", "am", "will be", "would be"], "answer": 0, "note": "Hayali durum → were." },
+        { "type": "choice", "text": "If he studied harder, he ___ better marks.", "options": ["would get", "will get", "gets", "would got"], "answer": 0, "note": "Sonuç → would + yalın fiil." },
+        { "type": "choice", "text": "What ___ you say if she asked you?", "options": ["would", "will", "do", "did"], "answer": 0, "note": "Varsayımsal soru → would." },
+        { "type": "choice", "text": "If we ___ a car, we could visit them.", "options": ["had", "have", "would have", "will have"], "answer": 0, "note": "if'li cümlecikte geçmiş biçim." },
+        { "type": "gap", "text": "I would call her if I ___ her number.", "options": ["knew", "know", "would know"], "answer": 0, "note": "İkinci tip koşul." }
+      ]
+    }
+  ]
+}
