@@ -1,0 +1,481 @@
+{
+  "_meta": {
+    "batch": "b2-009",
+    "level": "B2",
+    "range": "639-718"
+  },
+  "sector--noun": {
+    "tr": "sektör",
+    "def": "One part of a country's economy or activity.",
+    "ex": "The tourism sector grew last year.",
+    "exTr": "Turizm sektörü geçen yıl büyüdü."
+  },
+  "laser--noun": {
+    "tr": "lazer",
+    "def": "A narrow very strong beam of light.",
+    "ex": "Surgeons use a laser for this.",
+    "exTr": "Cerrahlar bunun için lazer kullanıyor."
+  },
+  "lobby--noun": {
+    "tr": "lobi, giriş holü",
+    "def": "The entrance hall of a hotel, or a group that pressures politicians.",
+    "ex": "Wait for me in the lobby.",
+    "exTr": "Beni lobide bekle."
+  },
+  "recipe--noun": {
+    "tr": "tarif",
+    "def": "A set of instructions for cooking a dish.",
+    "ex": "This recipe needs four eggs.",
+    "exTr": "Bu tarif dört yumurta istiyor."
+  },
+  "missile--noun": {
+    "tr": "füze",
+    "def": "A weapon that flies through the air to a target.",
+    "ex": "The missile missed its target.",
+    "exTr": "Füze hedefini ıskaladı."
+  },
+  "tricky--adj": {
+    "tr": "çetrefilli, zor",
+    "def": "Difficult to do because it needs care.",
+    "ex": "Parking here is tricky.",
+    "exTr": "Burada park etmek zor."
+  },
+  "cellar--noun": {
+    "tr": "kiler, bodrum",
+    "def": "A room under a house used for storage.",
+    "ex": "The wine is kept in the cellar.",
+    "exTr": "Şarap kilerde saklanıyor."
+  },
+  "mortal--adj": {
+    "tr": "ölümlü, ölümcül",
+    "def": "Certain to die one day, or causing death.",
+    "ex": "All humans are mortal.",
+    "exTr": "Bütün insanlar ölümlüdür."
+  },
+  "laptop--noun": {
+    "tr": "dizüstü bilgisayar",
+    "def": "A small computer you can carry and open like a book.",
+    "ex": "Her laptop battery is failing.",
+    "exTr": "Dizüstü bilgisayarının pili bitiyor."
+  },
+  "rainbow--noun": {
+    "tr": "gökkuşağı",
+    "def": "A curve of colours in the sky after rain.",
+    "ex": "A rainbow appeared over the valley.",
+    "exTr": "Vadinin üstünde bir gökkuşağı belirdi."
+  },
+  "mature--adj": {
+    "tr": "olgun",
+    "def": "Fully grown, or behaving in a sensible adult way.",
+    "ex": "She is very mature for her age.",
+    "exTr": "Yaşına göre çok olgun."
+  },
+  "pirate--noun": {
+    "tr": "korsan",
+    "def": "A person who attacks ships to steal, or who copies work illegally.",
+    "ex": "Pirates once controlled this coast.",
+    "exTr": "Korsanlar bir zamanlar bu kıyıyı kontrol ederdi."
+  },
+  "retirement--noun": {
+    "tr": "emeklilik",
+    "def": "The period after you stop working for good.",
+    "ex": "He enjoys his retirement.",
+    "exTr": "Emekliliğinin tadını çıkarıyor."
+  },
+  "mill--noun": {
+    "tr": "değirmen, fabrika",
+    "def": "A building where grain is ground, or a factory.",
+    "ex": "The old mill still turns.",
+    "exTr": "Eski değirmen hâlâ dönüyor."
+  },
+  "fatal--adj": {
+    "tr": "ölümcül",
+    "def": "Causing death, or leading to complete failure.",
+    "ex": "The crash was fatal.",
+    "exTr": "Kaza ölümcüldü."
+  },
+  "copper--noun": {
+    "tr": "bakır",
+    "def": "A soft reddish metal that carries electricity well.",
+    "ex": "The pipes are made of copper.",
+    "exTr": "Borular bakırdan yapılmış."
+  },
+  "enterprise--noun": {
+    "tr": "girişim, teşebbüs",
+    "def": "A business, or a bold new project.",
+    "ex": "The bakery is a family enterprise.",
+    "exTr": "Fırın bir aile girişimi."
+  },
+  "roast--adj": {
+    "tr": "fırınlanmış, kavrulmuş",
+    "def": "Cooked in an oven or over a fire.",
+    "ex": "We had roast lamb.",
+    "exTr": "Fırında kuzu yedik."
+  },
+  "mansion--noun": {
+    "tr": "konak",
+    "def": "A very large impressive house.",
+    "ex": "The mansion has twenty rooms.",
+    "exTr": "Konağın yirmi odası var."
+  },
+  "scheduled--adj": {
+    "tr": "planlanmış, tarifeli",
+    "def": "Arranged to happen at a set time.",
+    "ex": "The scheduled flight leaves at six.",
+    "exTr": "Tarifeli uçuş altıda kalkıyor."
+  },
+  "cocktail--noun": {
+    "tr": "kokteyl",
+    "def": "A mixed alcoholic drink.",
+    "ex": "She ordered a fruit cocktail.",
+    "exTr": "Meyveli bir kokteyl söyledi."
+  },
+  "donkey--noun": {
+    "tr": "eşek",
+    "def": "A grey animal like a small horse with long ears.",
+    "ex": "A donkey carried the water.",
+    "exTr": "Suyu bir eşek taşıdı."
+  },
+  "reference--noun": {
+    "tr": "referans, kaynak",
+    "def": "A mention of something, or a letter about a worker.",
+    "ex": "Her old boss wrote a reference.",
+    "exTr": "Eski patronu bir referans mektubu yazdı."
+  },
+  "bully--verb": {
+    "tr": "zorbalık etmek",
+    "def": "To frighten or hurt someone weaker, again and again.",
+    "ex": "Nobody should be bullied at school.",
+    "exTr": "Okulda kimse zorbalığa uğramamalı."
+  },
+  "collapse--verb": {
+    "tr": "çökmek, yıkılmak",
+    "def": "To fall down suddenly, or to fail completely.",
+    "ex": "The old roof collapsed in the storm.",
+    "exTr": "Eski çatı fırtınada çöktü."
+  },
+  "wealthy--adj": {
+    "tr": "varlıklı, zengin",
+    "def": "Having a lot of money and property.",
+    "ex": "A wealthy family built the school.",
+    "exTr": "Okulu varlıklı bir aile yaptırdı."
+  },
+  "disgrace--noun": {
+    "tr": "rezalet, utanç",
+    "def": "The loss of respect after doing something wrong.",
+    "ex": "The result was a disgrace.",
+    "exTr": "Sonuç bir rezaletti."
+  },
+  "dime--noun": {
+    "tr": "on sent",
+    "def": "An American coin worth ten cents.",
+    "ex": "It did not cost a dime.",
+    "exTr": "Tek kuruş etmedi."
+  },
+  "domestic--adj": {
+    "tr": "yurt içi, evle ilgili",
+    "def": "Inside one country, or relating to the home.",
+    "ex": "We took a domestic flight.",
+    "exTr": "Yurt içi bir uçuşa bindik."
+  },
+  "spite--noun": {
+    "tr": "kin, garez",
+    "def": "The wish to hurt someone because you feel wronged.",
+    "ex": "He broke it out of spite.",
+    "exTr": "Onu kinden kırdı."
+  },
+  "rebel--noun": {
+    "tr": "isyancı, asi",
+    "def": "A person who fights against a government or authority.",
+    "ex": "The rebels held the bridge.",
+    "exTr": "İsyancılar köprüyü tuttu."
+  },
+  "rebel--verb": {
+    "tr": "isyan etmek",
+    "def": "To fight against those in power.",
+    "ex": "The villagers rebelled against the tax.",
+    "exTr": "Köylüler vergiye karşı isyan etti."
+  },
+  "encounter--verb": {
+    "tr": "karşılaşmak",
+    "def": "To meet someone, or to face a problem unexpectedly.",
+    "ex": "We encountered heavy snow.",
+    "exTr": "Yoğun karla karşılaştık."
+  },
+  "sigh--verb": {
+    "tr": "iç çekmek",
+    "def": "To let out a long breath showing tiredness or relief.",
+    "ex": "He sighed and sat down.",
+    "exTr": "İç çekip oturdu."
+  },
+  "sister-in-law--noun": {
+    "tr": "görümce, baldız, yenge",
+    "def": "The sister of your husband or wife.",
+    "ex": "My sister in law lives nearby.",
+    "exTr": "Görümcem yakında oturuyor."
+  },
+  "hilarious--adj": {
+    "tr": "çok komik",
+    "def": "Extremely funny.",
+    "ex": "His story was hilarious.",
+    "exTr": "Hikâyesi çok komikti."
+  },
+  "dreadful--adj": {
+    "tr": "berbat, korkunç",
+    "def": "Very bad or very unpleasant.",
+    "ex": "The weather was dreadful.",
+    "exTr": "Hava berbattı."
+  },
+  "shrink--noun": {
+    "tr": "çekilme, büzülme",
+    "def": "The amount by which something becomes smaller.",
+    "ex": "Allow for shrink when you cut.",
+    "exTr": "Keserken çekmeyi hesaba kat."
+  },
+  "shrink--verb": {
+    "tr": "küçülmek, çekmek",
+    "def": "To become smaller, especially after washing.",
+    "ex": "The shirt shrank in hot water.",
+    "exTr": "Gömlek sıcak suda çekti."
+  },
+  "proven--adj": {
+    "tr": "kanıtlanmış",
+    "def": "Shown by evidence to be true or effective.",
+    "ex": "This is a proven method.",
+    "exTr": "Bu kanıtlanmış bir yöntem."
+  },
+  "label--noun": {
+    "tr": "ürün etiketi",
+    "def": "A piece of paper on a product giving information.",
+    "ex": "Read the label before use.",
+    "exTr": "Kullanmadan önce etiketi oku."
+  },
+  "tan--noun": {
+    "tr": "bronzluk",
+    "def": "Brown skin colour from the sun.",
+    "ex": "She came back with a deep tan.",
+    "exTr": "Koyu bir bronzlukla döndü."
+  },
+  "worm--noun": {
+    "tr": "solucan, kurt",
+    "def": "A small soft creature with no legs that lives in soil.",
+    "ex": "A worm moved through the soil.",
+    "exTr": "Bir solucan toprakta ilerledi."
+  },
+  "publicity--noun": {
+    "tr": "tanıtım, kamuoyu ilgisi",
+    "def": "Public attention given to a person or a product.",
+    "ex": "The book got wide publicity.",
+    "exTr": "Kitap geniş bir tanıtım aldı."
+  },
+  "intimate--adj": {
+    "tr": "samimi, mahrem",
+    "def": "Very close and private.",
+    "ex": "They shared an intimate friendship.",
+    "exTr": "Samimi bir dostlukları vardı."
+  },
+  "exception--noun": {
+    "tr": "istisna",
+    "def": "A case that does not follow the usual rule.",
+    "ex": "We made one exception.",
+    "exTr": "Bir istisna yaptık."
+  },
+  "ultimately--adv": {
+    "tr": "nihayetinde",
+    "def": "In the end, after everything else.",
+    "ex": "Ultimately the choice is yours.",
+    "exTr": "Nihayetinde seçim senin."
+  },
+  "compromise--verb": {
+    "tr": "uzlaşmak, taviz vermek",
+    "def": "To settle an argument by each side giving something up.",
+    "ex": "Both sides finally compromised.",
+    "exTr": "İki taraf sonunda uzlaştı."
+  },
+  "dock--noun": {
+    "tr": "rıhtım, dok",
+    "def": "The place where ships are loaded and repaired.",
+    "ex": "The ship waited at the dock.",
+    "exTr": "Gemi rıhtımda bekledi."
+  },
+  "passionate--adj": {
+    "tr": "tutkulu",
+    "def": "Having or showing very strong feeling.",
+    "ex": "He is passionate about teaching.",
+    "exTr": "Öğretmenlik konusunda tutkulu."
+  },
+  "lawn--noun": {
+    "tr": "çimenlik",
+    "def": "An area of short cut grass near a house.",
+    "ex": "He cuts the lawn on Saturdays.",
+    "exTr": "Cumartesileri çimenliği biçiyor."
+  },
+  "opponent--noun": {
+    "tr": "rakip, karşıt",
+    "def": "A person you play or argue against.",
+    "ex": "Her opponent played very well.",
+    "exTr": "Rakibi çok iyi oynadı."
+  },
+  "convention--noun": {
+    "tr": "gelenek, kongre",
+    "def": "A usual way of behaving, or a large meeting.",
+    "ex": "Social convention expects a reply.",
+    "exTr": "Toplumsal gelenek bir cevap bekler."
+  },
+  "messenger--noun": {
+    "tr": "haberci, kurye",
+    "def": "A person who carries a message.",
+    "ex": "A messenger brought the letter.",
+    "exTr": "Bir haberci mektubu getirdi."
+  },
+  "cough--noun": {
+    "tr": "öksürük",
+    "def": "A sudden noisy push of air from the throat.",
+    "ex": "That cough sounds bad.",
+    "exTr": "O öksürük kötü geliyor."
+  },
+  "disguise--noun": {
+    "tr": "kılık değiştirme",
+    "def": "Clothes or a change of appearance that hides who you are.",
+    "ex": "He escaped in disguise.",
+    "exTr": "Kılık değiştirerek kaçtı."
+  },
+  "disguise--verb": {
+    "tr": "gizlemek, kılığına girmek",
+    "def": "To change how something looks so it is not recognized.",
+    "ex": "She disguised her handwriting.",
+    "exTr": "El yazısını gizledi."
+  },
+  "ballet--noun": {
+    "tr": "bale",
+    "def": "A formal style of dance telling a story with music.",
+    "ex": "She studied ballet for years.",
+    "exTr": "Yıllarca bale eğitimi aldı."
+  },
+  "possessed--adj": {
+    "tr": "cin çarpmış, sahip",
+    "def": "Controlled by an evil spirit, in stories.",
+    "ex": "The villagers thought he was possessed.",
+    "exTr": "Köylüler onu cin çarptığını düşündü."
+  },
+  "harmless--adj": {
+    "tr": "zararsız",
+    "def": "Not able to cause any damage.",
+    "ex": "This snake is harmless.",
+    "exTr": "Bu yılan zararsız."
+  },
+  "withdraw--verb": {
+    "tr": "çekmek, geri çekilmek",
+    "def": "To take money out, or to move back from a place.",
+    "ex": "She withdrew two hundred lira.",
+    "exTr": "İki yüz lira çekti."
+  },
+  "hint--noun": {
+    "tr": "ipucu, ima",
+    "def": "A small clue, or a useful piece of advice.",
+    "ex": "Give me a hint.",
+    "exTr": "Bana bir ipucu ver."
+  },
+  "arrogant--adj": {
+    "tr": "kibirli",
+    "def": "Behaving as if you are better than others.",
+    "ex": "His tone was arrogant.",
+    "exTr": "Ses tonu kibirliydi."
+  },
+  "leap--noun": {
+    "tr": "sıçrayış, atılım",
+    "def": "A big jump, or a sudden large increase.",
+    "ex": "Sales made a great leap.",
+    "exTr": "Satışlar büyük bir sıçrama yaptı."
+  },
+  "proposed--adj": {
+    "tr": "önerilen",
+    "def": "Suggested but not yet agreed.",
+    "ex": "The proposed route crosses the river.",
+    "exTr": "Önerilen güzergâh nehri geçiyor."
+  },
+  "caring--adj": {
+    "tr": "şefkatli, ilgili",
+    "def": "Kind and interested in helping others.",
+    "ex": "She is a caring nurse.",
+    "exTr": "Şefkatli bir hemşire."
+  },
+  "bounce--noun": {
+    "tr": "sekme, zıplama",
+    "def": "The movement of something hitting a surface and coming back.",
+    "ex": "Catch the ball on the bounce.",
+    "exTr": "Topu sektikten sonra yakala."
+  },
+  "creek--noun": {
+    "tr": "dere, koy",
+    "def": "A small stream, or a narrow inlet of the sea.",
+    "ex": "We camped beside a creek.",
+    "exTr": "Bir derenin yanında kamp kurduk."
+  },
+  "lighting--noun": {
+    "tr": "aydınlatma",
+    "def": "The lamps that light a place, or the light they give.",
+    "ex": "The lighting in here is poor.",
+    "exTr": "Buradaki aydınlatma kötü."
+  },
+  "educated--adj": {
+    "tr": "eğitimli",
+    "def": "Having received a good education.",
+    "ex": "She is an educated woman.",
+    "exTr": "Eğitimli bir kadın."
+  },
+  "racist--noun": {
+    "tr": "ırkçı",
+    "def": "A person who treats others badly because of their race.",
+    "ex": "The club banned a racist.",
+    "exTr": "Kulüp bir ırkçıyı yasakladı."
+  },
+  "terrifying--adj": {
+    "tr": "dehşet verici",
+    "def": "Making you feel extreme fear.",
+    "ex": "It was a terrifying moment.",
+    "exTr": "Dehşet verici bir andı."
+  },
+  "gasp--noun": {
+    "tr": "soluk alma, nefes kesilmesi",
+    "def": "A quick breath taken in from surprise or pain.",
+    "ex": "A gasp went round the room.",
+    "exTr": "Odada bir nefes kesilmesi oldu."
+  },
+  "draft--noun": {
+    "tr": "taslak",
+    "def": "An early version of a text before the final one.",
+    "ex": "Send me the first draft.",
+    "exTr": "Bana ilk taslağı gönder."
+  },
+  "factor--noun": {
+    "tr": "etken, faktör",
+    "def": "One of the things that affects a result.",
+    "ex": "Cost was the deciding factor.",
+    "exTr": "Belirleyici etken maliyetti."
+  },
+  "chew--verb": {
+    "tr": "çiğnemek",
+    "def": "To break food with your teeth before swallowing.",
+    "ex": "Chew your food slowly.",
+    "exTr": "Yemeğini yavaş çiğne."
+  },
+  "carbon--noun": {
+    "tr": "karbon",
+    "def": "A chemical element found in all living things.",
+    "ex": "Coal is mostly carbon.",
+    "exTr": "Kömür çoğunlukla karbondur."
+  },
+  "memorial--noun": {
+    "tr": "anıt",
+    "def": "A structure built to remember a person or an event.",
+    "ex": "A memorial stands in the square.",
+    "exTr": "Meydanda bir anıt duruyor."
+  },
+  "bearing--noun": {
+    "tr": "ilgi, yön",
+    "def": "The way something relates to a subject, or a direction.",
+    "ex": "That has no bearing on the case.",
+    "exTr": "Bunun davayla hiç ilgisi yok."
+  }
+}
