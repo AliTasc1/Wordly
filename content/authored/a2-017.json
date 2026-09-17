@@ -1,0 +1,505 @@
+{
+  "_meta": {
+    "batch": "a2-017",
+    "level": "A2",
+    "range": "atlanan 83 kelime — A2 tamamlanıyor"
+  },
+  "divide--verb": {
+    "tr": "bölmek",
+    "def": "Bir şeyi parçalara ayırmak.",
+    "ex": "Divide the cake into six pieces.",
+    "exTr": "Pastayı altı parçaya böl."
+  },
+  "make-up--noun": {
+    "tr": "makyaj",
+    "def": "Yüze sürülen güzellik ürünleri.",
+    "ex": "She wears very little make-up.",
+    "exTr": "Çok az makyaj yapıyor."
+  },
+  "ski--noun": {
+    "tr": "kayak",
+    "def": "Karda kaymak için ayağa takılan uzun tahta.",
+    "ex": "He bought new skis this winter.",
+    "exTr": "Bu kış yeni kayak aldı."
+  },
+  "shade--noun": {
+    "tr": "gölge, ton",
+    "def": "Güneşten korunan yer ya da bir rengin tonu.",
+    "ex": "Let's sit in the shade.",
+    "exTr": "Gölgeye oturalım."
+  },
+  "wander--verb": {
+    "tr": "gezinmek, dolaşmak",
+    "def": "Amaçsızca yürümek.",
+    "ex": "We wandered around the old market.",
+    "exTr": "Eski çarşıda dolaştık."
+  },
+  "chart--noun": {
+    "tr": "grafik, çizelge",
+    "def": "Bilgiyi görsel olarak gösteren tablo.",
+    "ex": "Look at the chart on page eight.",
+    "exTr": "Sekizinci sayfadaki grafiğe bak."
+  },
+  "granddaughter--noun": {
+    "tr": "torun (kız)",
+    "def": "Bir kişinin çocuğunun kızı.",
+    "ex": "His granddaughter is at school now.",
+    "exTr": "Torunu şimdi okulda."
+  },
+  "globe--noun": {
+    "tr": "küre, dünya",
+    "def": "Dünyanın küçük modeli ya da dünyanın kendisi.",
+    "ex": "There is a globe on the teacher's desk.",
+    "exTr": "Öğretmenin masasında bir küre var."
+  },
+  "pasta--noun": {
+    "tr": "makarna",
+    "def": "Undan yapılan İtalyan yemeği.",
+    "ex": "We cooked pasta with tomato sauce.",
+    "exTr": "Domates soslu makarna pişirdik."
+  },
+  "stove--noun": {
+    "tr": "ocak, soba",
+    "def": "Yemek pişirilen ya da ısıtan cihaz.",
+    "ex": "The pot is on the stove.",
+    "exTr": "Tencere ocakta."
+  },
+  "disco--noun": {
+    "tr": "disko",
+    "def": "Müzik eşliğinde dans edilen yer.",
+    "ex": "They danced at the disco all night.",
+    "exTr": "Bütün gece diskoda dans ettiler."
+  },
+  "additional--adj": {
+    "tr": "ek, ilave",
+    "def": "Var olana eklenen.",
+    "ex": "We need additional chairs.",
+    "exTr": "Ek sandalyeye ihtiyacımız var."
+  },
+  "frightening--adj": {
+    "tr": "korkutucu",
+    "def": "Korku veren.",
+    "ex": "That was a frightening story.",
+    "exTr": "Bu korkutucu bir hikâyeydi."
+  },
+  "adjust--verb": {
+    "tr": "ayarlamak, uyum sağlamak",
+    "def": "Küçük bir değişiklik yapmak.",
+    "ex": "Adjust the mirror before you drive.",
+    "exTr": "Sürmeden önce aynayı ayarla."
+  },
+  "violin--noun": {
+    "tr": "keman",
+    "def": "Yayla çalınan telli çalgı.",
+    "ex": "She plays the violin beautifully.",
+    "exTr": "Kemanı çok güzel çalıyor."
+  },
+  "lifestyle--noun": {
+    "tr": "yaşam tarzı",
+    "def": "Bir kişinin yaşama biçimi.",
+    "ex": "They have a healthy lifestyle.",
+    "exTr": "Sağlıklı bir yaşam tarzları var."
+  },
+  "tourist--noun": {
+    "tr": "turist",
+    "def": "Gezmek için başka yere giden kişi.",
+    "ex": "Many tourists visit this castle.",
+    "exTr": "Bu kaleyi birçok turist ziyaret ediyor."
+  },
+  "jelly--noun": {
+    "tr": "jöle",
+    "def": "Titreyen tatlı yiyecek.",
+    "ex": "The children ate jelly and cake.",
+    "exTr": "Çocuklar jöle ve kek yedi."
+  },
+  "refer--verb": {
+    "tr": "atıfta bulunmak, yönlendirmek",
+    "def": "Bir şeyden söz etmek ya da başkasına yollamak.",
+    "ex": "He referred to the last chapter.",
+    "exTr": "Son bölüme atıfta bulundu."
+  },
+  "fare--noun": {
+    "tr": "bilet ücreti",
+    "def": "Yolculuk için ödenen para.",
+    "ex": "The bus fare increased again.",
+    "exTr": "Otobüs ücreti yine arttı."
+  },
+  "artificial--adj": {
+    "tr": "yapay",
+    "def": "Doğal olmayan, insan yapımı.",
+    "ex": "These flowers are artificial.",
+    "exTr": "Bu çiçekler yapay."
+  },
+  "bake--verb": {
+    "tr": "fırında pişirmek",
+    "def": "Fırında ekmek ya da kek yapmak.",
+    "ex": "She bakes bread every Sunday.",
+    "exTr": "Her pazar ekmek pişiriyor."
+  },
+  "countryside--noun": {
+    "tr": "kırsal, kır",
+    "def": "Şehir dışındaki açık araziler.",
+    "ex": "We spent the weekend in the countryside.",
+    "exTr": "Hafta sonunu kırda geçirdik."
+  },
+  "sock--noun": {
+    "tr": "çorap",
+    "def": "Ayağa giyilen ince giysi.",
+    "ex": "I can't find my other sock.",
+    "exTr": "Diğer çorabımı bulamıyorum."
+  },
+  "meter--noun": {
+    "tr": "metre, sayaç",
+    "def": "Yüz santimlik uzunluk ya da ölçüm cihazı.",
+    "ex": "The room is four meters wide.",
+    "exTr": "Oda dört metre genişliğinde."
+  },
+  "cheque--noun": {
+    "tr": "çek",
+    "def": "Bankadan para ödeten yazılı belge.",
+    "ex": "He paid by cheque.",
+    "exTr": "Çekle ödedi."
+  },
+  "racket--noun": {
+    "tr": "raket",
+    "def": "Tenis gibi oyunlarda topa vuran alet.",
+    "ex": "My tennis racket is broken.",
+    "exTr": "Tenis raketim kırık."
+  },
+  "satisfy--verb": {
+    "tr": "memnun etmek",
+    "def": "Birinin isteğini karşılamak.",
+    "ex": "The answer did not satisfy her.",
+    "exTr": "Cevap onu memnun etmedi."
+  },
+  "surf--verb": {
+    "tr": "sörf yapmak, gezinmek",
+    "def": "Dalgada kaymak ya da internette dolaşmak.",
+    "ex": "They surf every summer morning.",
+    "exTr": "Her yaz sabahı sörf yapıyorlar."
+  },
+  "frighten--verb": {
+    "tr": "korkutmak",
+    "def": "Birinde korku uyandırmak.",
+    "ex": "The dark room frightened the child.",
+    "exTr": "Karanlık oda çocuğu korkuttu."
+  },
+  "spaghetti--noun": {
+    "tr": "spagetti",
+    "def": "Uzun ince makarna türü.",
+    "ex": "We had spaghetti for dinner.",
+    "exTr": "Akşam yemeğinde spagetti yedik."
+  },
+  "chili--noun": {
+    "tr": "acı biber",
+    "def": "Küçük, çok acı biber.",
+    "ex": "Add one chili to the sauce.",
+    "exTr": "Sosa bir acı biber ekle."
+  },
+  "feather--noun": {
+    "tr": "tüy",
+    "def": "Kuşların vücudunu kaplayan hafif yapı.",
+    "ex": "I found a white feather.",
+    "exTr": "Beyaz bir tüy buldum."
+  },
+  "continent--noun": {
+    "tr": "kıta",
+    "def": "Dünyanın büyük kara parçalarından biri.",
+    "ex": "Africa is a large continent.",
+    "exTr": "Afrika büyük bir kıta."
+  },
+  "organize--verb": {
+    "tr": "düzenlemek, organize etmek",
+    "def": "Bir şeyi planlayıp düzene koymak.",
+    "ex": "She organized the whole trip.",
+    "exTr": "Bütün geziyi o düzenledi."
+  },
+  "noisy--adj": {
+    "tr": "gürültülü",
+    "def": "Çok ses çıkaran.",
+    "ex": "The street is very noisy at night.",
+    "exTr": "Sokak geceleri çok gürültülü."
+  },
+  "curry--noun": {
+    "tr": "köri",
+    "def": "Baharatlı Hint yemeği.",
+    "ex": "We ordered chicken curry.",
+    "exTr": "Tavuklu köri söyledik."
+  },
+  "sunlight--noun": {
+    "tr": "güneş ışığı",
+    "def": "Güneşten gelen doğal ışık.",
+    "ex": "Plants need sunlight to grow.",
+    "exTr": "Bitkilerin büyümek için güneş ışığına ihtiyacı var."
+  },
+  "overseas--adv": {
+    "tr": "denizaşırı, yurt dışında",
+    "def": "Deniz ötesindeki ülkelerde.",
+    "ex": "He works overseas now.",
+    "exTr": "Şimdi yurt dışında çalışıyor."
+  },
+  "occupation--noun": {
+    "tr": "meslek",
+    "def": "Bir kişinin yaptığı iş.",
+    "ex": "Write your occupation on the form.",
+    "exTr": "Mesleğini forma yaz."
+  },
+  "publish--verb": {
+    "tr": "yayımlamak",
+    "def": "Bir kitabı ya da yazıyı basmak.",
+    "ex": "They published her first novel.",
+    "exTr": "İlk romanını yayımladılar."
+  },
+  "predict--verb": {
+    "tr": "tahmin etmek",
+    "def": "Gelecekte ne olacağını söylemek.",
+    "ex": "Nobody can predict the weather exactly.",
+    "exTr": "Kimse havayı tam olarak tahmin edemez."
+  },
+  "exhibition--noun": {
+    "tr": "sergi",
+    "def": "Eserlerin halka gösterildiği etkinlik.",
+    "ex": "The exhibition opens next week.",
+    "exTr": "Sergi gelecek hafta açılıyor."
+  },
+  "astronaut--noun": {
+    "tr": "astronot",
+    "def": "Uzaya giden kişi.",
+    "ex": "The astronaut spent a year in space.",
+    "exTr": "Astronot uzayda bir yıl geçirdi."
+  },
+  "boil--verb": {
+    "tr": "kaynatmak, haşlamak",
+    "def": "Suyu çok ısıtıp kaynatmak.",
+    "ex": "Boil the water for tea.",
+    "exTr": "Çay için suyu kaynat."
+  },
+  "garlic--noun": {
+    "tr": "sarımsak",
+    "def": "Keskin kokulu, beyaz baharat bitkisi.",
+    "ex": "Add garlic to the sauce.",
+    "exTr": "Sosa sarımsak ekle."
+  },
+  "hike--noun": {
+    "tr": "doğa yürüyüşü",
+    "def": "Kırda yapılan uzun yürüyüş.",
+    "ex": "We went for a long hike.",
+    "exTr": "Uzun bir doğa yürüyüşüne çıktık."
+  },
+  "petrol--noun": {
+    "tr": "benzin",
+    "def": "Araçlarda kullanılan yakıt.",
+    "ex": "Petrol is very expensive now.",
+    "exTr": "Benzin şimdi çok pahalı."
+  },
+  "lively--adj": {
+    "tr": "canlı, hareketli",
+    "def": "Enerjik ve neşeli.",
+    "ex": "It was a lively party.",
+    "exTr": "Hareketli bir partiydi."
+  },
+  "tidy--adj": {
+    "tr": "derli toplu",
+    "def": "Düzenli ve temiz.",
+    "ex": "Her desk is always tidy.",
+    "exTr": "Masası her zaman derli toplu."
+  },
+  "tidy--verb": {
+    "tr": "toplamak, düzeltmek",
+    "def": "Bir yeri düzene sokmak.",
+    "ex": "Tidy your room before dinner.",
+    "exTr": "Yemekten önce odanı topla."
+  },
+  "reflect--verb": {
+    "tr": "yansıtmak, düşünmek",
+    "def": "Işığı geri vermek ya da derin düşünmek.",
+    "ex": "The lake reflects the mountains.",
+    "exTr": "Göl dağları yansıtıyor."
+  },
+  "acceptable--adj": {
+    "tr": "kabul edilebilir",
+    "def": "Yeterince iyi bulunan.",
+    "ex": "That excuse is not acceptable.",
+    "exTr": "Bu bahane kabul edilebilir değil."
+  },
+  "refrigerator--noun": {
+    "tr": "buzdolabı",
+    "def": "Yiyecekleri soğukta saklayan cihaz.",
+    "ex": "Put the meat in the refrigerator.",
+    "exTr": "Eti buzdolabına koy."
+  },
+  "aisle--noun": {
+    "tr": "koridor",
+    "def": "Koltuklar ya da raflar arasındaki geçit.",
+    "ex": "I prefer an aisle seat.",
+    "exTr": "Koridor tarafı koltuğu tercih ederim."
+  },
+  "spaceship--noun": {
+    "tr": "uzay gemisi",
+    "def": "Uzayda yolculuk eden araç.",
+    "ex": "The spaceship landed safely.",
+    "exTr": "Uzay gemisi güvenle indi."
+  },
+  "pronounce--verb": {
+    "tr": "telaffuz etmek",
+    "def": "Bir kelimeyi söylemek.",
+    "ex": "How do you pronounce this word?",
+    "exTr": "Bu kelimeyi nasıl telaffuz ediyorsun?"
+  },
+  "runner--noun": {
+    "tr": "koşucu",
+    "def": "Koşu yapan kişi.",
+    "ex": "She is a fast runner.",
+    "exTr": "O hızlı bir koşucu."
+  },
+  "barber--noun": {
+    "tr": "berber",
+    "def": "Erkeklerin saçını kesen kişi.",
+    "ex": "I go to the barber every month.",
+    "exTr": "Her ay berbere giderim."
+  },
+  "aged--adj": {
+    "tr": "yaşında, yaşlı",
+    "def": "Belirli bir yaşta olan.",
+    "ex": "The class is for children aged six.",
+    "exTr": "Sınıf altı yaşındaki çocuklar için."
+  },
+  "semester--noun": {
+    "tr": "dönem, yarıyıl",
+    "def": "Okul yılının yarısı.",
+    "ex": "The new semester starts in February.",
+    "exTr": "Yeni dönem şubatta başlıyor."
+  },
+  "greatly--adv": {
+    "tr": "büyük ölçüde",
+    "def": "Çok fazla derecede.",
+    "ex": "Prices have greatly increased.",
+    "exTr": "Fiyatlar büyük ölçüde arttı."
+  },
+  "audio--adj": {
+    "tr": "sesli, ses",
+    "def": "Sesle ilgili.",
+    "ex": "We listened to an audio file.",
+    "exTr": "Bir ses dosyası dinledik."
+  },
+  "dinosaur--noun": {
+    "tr": "dinozor",
+    "def": "Milyonlarca yıl önce yaşamış büyük hayvan.",
+    "ex": "Children love dinosaur stories.",
+    "exTr": "Çocuklar dinozor hikâyelerini sever."
+  },
+  "container--noun": {
+    "tr": "kap, konteyner",
+    "def": "İçine bir şey konulan kutu.",
+    "ex": "Put the rice in a container.",
+    "exTr": "Pirinci bir kaba koy."
+  },
+  "cupboard--noun": {
+    "tr": "dolap",
+    "def": "Mutfakta eşya konulan kapaklı raf.",
+    "ex": "The plates are in the cupboard.",
+    "exTr": "Tabaklar dolapta."
+  },
+  "elderly--adj": {
+    "tr": "yaşlı",
+    "def": "İleri yaşta olan.",
+    "ex": "An elderly man sat beside me.",
+    "exTr": "Yaşlı bir adam yanıma oturdu."
+  },
+  "comb--noun": {
+    "tr": "tarak",
+    "def": "Saç taramaya yarayan dişli alet.",
+    "ex": "I lost my comb.",
+    "exTr": "Tarağımı kaybettim."
+  },
+  "onion--noun": {
+    "tr": "soğan",
+    "def": "Keskin kokulu, katmanlı sebze.",
+    "ex": "Cut the onion into small pieces.",
+    "exTr": "Soğanı küçük parçalara doğra."
+  },
+  "granddad--noun": {
+    "tr": "dede",
+    "def": "Büyükbabaya sevgiyle seslenme sözü.",
+    "ex": "My granddad taught me to fish.",
+    "exTr": "Dedem bana balık tutmayı öğretti."
+  },
+  "regularly--adv": {
+    "tr": "düzenli olarak",
+    "def": "Belirli aralıklarla.",
+    "ex": "He exercises regularly.",
+    "exTr": "Düzenli olarak spor yapıyor."
+  },
+  "invent--verb": {
+    "tr": "icat etmek",
+    "def": "İlk kez yeni bir şey yapmak.",
+    "ex": "Who invented the telephone?",
+    "exTr": "Telefonu kim icat etti?"
+  },
+  "weep--noun": {
+    "tr": "ağlama",
+    "def": "Sessizce ağlama hâli.",
+    "ex": "After a long weep, she felt better.",
+    "exTr": "Uzun bir ağlamadan sonra kendini daha iyi hissetti."
+  },
+  "gradually--adv": {
+    "tr": "yavaş yavaş",
+    "def": "Azar azar, zamanla.",
+    "ex": "The weather gradually got warmer.",
+    "exTr": "Hava yavaş yavaş ısındı."
+  },
+  "lemonade--noun": {
+    "tr": "limonata",
+    "def": "Limondan yapılan soğuk içecek.",
+    "ex": "She made fresh lemonade.",
+    "exTr": "Taze limonata yaptı."
+  },
+  "flour--noun": {
+    "tr": "un",
+    "def": "Buğdaydan öğütülen beyaz toz.",
+    "ex": "We need flour for the cake.",
+    "exTr": "Kek için una ihtiyacımız var."
+  },
+  "successfully--adv": {
+    "tr": "başarıyla",
+    "def": "İstenen sonuca ulaşarak.",
+    "ex": "She successfully finished the course.",
+    "exTr": "Kursu başarıyla tamamladı."
+  },
+  "splash--verb": {
+    "tr": "su sıçratmak",
+    "def": "Sıvıyı etrafa saçmak.",
+    "ex": "The children splashed in the pool.",
+    "exTr": "Çocuklar havuzda su sıçrattı."
+  },
+  "olympic--adj": {
+    "tr": "olimpik",
+    "def": "Olimpiyat oyunlarıyla ilgili.",
+    "ex": "He won an Olympic medal.",
+    "exTr": "Bir olimpiyat madalyası kazandı."
+  },
+  "weekly--adj": {
+    "tr": "haftalık",
+    "def": "Her hafta olan.",
+    "ex": "We have a weekly meeting.",
+    "exTr": "Haftalık bir toplantımız var."
+  },
+  "schoolwork--noun": {
+    "tr": "okul ödevi",
+    "def": "Okul için yapılan çalışma.",
+    "ex": "Finish your schoolwork first.",
+    "exTr": "Önce okul ödevini bitir."
+  },
+  "badminton--noun": {
+    "tr": "badminton",
+    "def": "Raketle tüylü top oynanan oyun.",
+    "ex": "We played badminton in the garden.",
+    "exTr": "Bahçede badminton oynadık."
+  },
+  "stair--noun": {
+    "tr": "basamak, merdiven",
+    "def": "Katlar arasındaki basamaklardan biri.",
+    "ex": "Be careful on the top stair.",
+    "exTr": "En üst basamakta dikkatli ol."
+  }
+}
