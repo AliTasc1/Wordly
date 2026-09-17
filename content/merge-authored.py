@@ -157,7 +157,12 @@ def validate(entry: dict, authored: dict, problems: list[str]) -> bool:
     # IRREGULAR covers the ones a prefix cannot (stand/stood).
     lower_example = example.lower()
     lower_word = word.lower()
-    stem = re.escape(lower_word[: max(3, len(lower_word) - 2)])
+    # The spine joins multi-word entries with a hyphen (`bank-account`), but
+    # English writes most of them as two words, so a hyphen in the key has to
+    # match a hyphen, a space or nothing in the example. Splitting on the
+    # hyphen before escaping keeps the inserted class out of re.escape's way.
+    raw_stem = lower_word[: max(3, len(lower_word) - 2)]
+    stem = r"[-\s]?".join(re.escape(part) for part in raw_stem.split("-"))
     forms = [rf"\b{stem}"] + [
         rf"\b{re.escape(f)}\b" for f in IRREGULAR.get(lower_word, [])
     ]

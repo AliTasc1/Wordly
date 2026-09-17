@@ -1,83 +1,481 @@
 {
-  "_meta": { "batch": "b1-026", "level": "B1", "range": "1990-2069" },
-
-  "technological--adj": { "tr": "teknolojik", "def": "Relating to new machines and science.", "ex": "Technological change is fast.", "exTr": "Teknolojik değişim hızlı." },
-  "gall--noun": { "tr": "safra, küstahlık", "def": "A bitter fluid from the liver, or rude boldness.", "ex": "He had the gall to complain.", "exTr": "Şikâyet edecek küstahlığı gösterdi." },
-  "unfit--adj": { "tr": "uygun olmayan, formsuz", "def": "Not suitable, or not healthy enough.", "ex": "The water is unfit to drink.", "exTr": "Su içmeye uygun değil." },
-  "prosperous--adj": { "tr": "müreffeh, varlıklı", "def": "Successful and having plenty of money.", "ex": "It was once a prosperous port.", "exTr": "Burası bir zamanlar müreffeh bir limandı." },
-  "symptom--noun": { "tr": "belirti, semptom", "def": "A sign of an illness that you feel or see.", "ex": "Fever is a common symptom.", "exTr": "Ateş yaygın bir belirtidir." },
-  "discrimination--noun": { "tr": "ayrımcılık", "def": "Unfair treatment of a group of people.", "ex": "The law bans discrimination at work.", "exTr": "Yasa iş yerinde ayrımcılığı yasaklıyor." },
-  "inscription--noun": { "tr": "kitabe, yazıt", "def": "Words carved into stone or metal.", "ex": "The inscription is barely readable.", "exTr": "Kitabe zar zor okunuyor." },
-  "moisture--noun": { "tr": "nem", "def": "Small amounts of water in the air or in a material.", "ex": "Moisture damaged the books.", "exTr": "Nem kitaplara zarar verdi." },
-  "disagreement--noun": { "tr": "anlaşmazlık", "def": "A situation where people have different opinions.", "ex": "They had a brief disagreement.", "exTr": "Kısa bir anlaşmazlık yaşadılar." },
-  "nectar--noun": { "tr": "nektar, bal özü", "def": "The sweet liquid that bees collect from flowers.", "ex": "Bees gather nectar all morning.", "exTr": "Arılar bütün sabah nektar topluyor." },
-  "swarm--noun": { "tr": "oğul, sürü", "def": "A large group of insects flying together.", "ex": "A swarm of bees left the hive.", "exTr": "Kovandan bir arı oğulu çıktı." },
-  "researcher--noun": { "tr": "araştırmacı", "def": "A person who studies a subject to discover facts.", "ex": "The researcher published her results.", "exTr": "Araştırmacı sonuçlarını yayımladı." },
-  "ness--noun": { "tr": "burun (coğrafi)", "def": "A piece of land that reaches out into the sea.", "ex": "A lighthouse stands on the ness.", "exTr": "Burunda bir deniz feneri duruyor." },
-  "imitate--verb": { "tr": "taklit etmek", "def": "To copy the way someone speaks or behaves.", "ex": "The parrot imitates her voice.", "exTr": "Papağan onun sesini taklit ediyor." },
-  "disable--verb": { "tr": "devre dışı bırakmak", "def": "To stop a machine or a system from working.", "ex": "Disable the alarm before entering.", "exTr": "Girmeden önce alarmı devre dışı bırak." },
-  "reproduce--verb": { "tr": "üremek, çoğaltmak", "def": "To produce young, or to make a copy.", "ex": "These fish reproduce in spring.", "exTr": "Bu balıklar ilkbaharda ürer." },
-  "evident--adj": { "tr": "besbelli, ortada", "def": "Clear and easy to see.", "ex": "Her relief was evident.", "exTr": "Rahatladığı besbelliydi." },
-  "coastal--adj": { "tr": "kıyı", "def": "Relating to the land beside the sea.", "ex": "Coastal roads flooded last night.", "exTr": "Kıyı yolları dün gece su altında kaldı." },
-  "outline--verb": { "tr": "ana hatlarıyla anlatmak", "def": "To describe the main points of something.", "ex": "He outlined the plan briefly.", "exTr": "Planı kısaca ana hatlarıyla anlattı." },
-  "residential--adj": { "tr": "konut, yerleşim", "def": "Consisting of houses rather than shops or factories.", "ex": "This is a quiet residential street.", "exTr": "Burası sakin bir konut sokağı." },
-  "safari--noun": { "tr": "safari", "def": "A trip to watch wild animals, especially in Africa.", "ex": "They went on a safari.", "exTr": "Safariye çıktılar." },
-  "boast--verb": { "tr": "övünmek", "def": "To talk too proudly about what you have done.", "ex": "He boasted about his new car.", "exTr": "Yeni arabasıyla övündü." },
-  "likeness--noun": { "tr": "benzerlik", "def": "The quality of looking similar to someone.", "ex": "The painting is a good likeness.", "exTr": "Tablo iyi bir benzerlik yakalamış." },
-  "auxiliary--adj": { "tr": "yardımcı", "def": "Giving extra help or support.", "ex": "The ship has an auxiliary engine.", "exTr": "Geminin yardımcı bir motoru var." },
-  "abundance--noun": { "tr": "bolluk", "def": "A very large quantity of something.", "ex": "There was an abundance of fruit.", "exTr": "Meyve bolluğu vardı." },
-  "gallon--noun": { "tr": "galon", "def": "A unit of liquid equal to about four litres.", "ex": "Buy a gallon of paint.", "exTr": "Bir galon boya al." },
-  "tourism--noun": { "tr": "turizm", "def": "The business of providing holidays for visitors.", "ex": "Tourism supports the whole town.", "exTr": "Turizm bütün kasabayı ayakta tutuyor." },
-  "undergo--verb": { "tr": "geçirmek, maruz kalmak", "def": "To experience something, especially a change or treatment.", "ex": "She underwent surgery last week.", "exTr": "Geçen hafta ameliyat geçirdi." },
-  "refusal--noun": { "tr": "ret, reddetme", "def": "The act of saying no to something.", "ex": "His refusal surprised us.", "exTr": "Reddetmesi bizi şaşırttı." },
-  "hearty--adj": { "tr": "candan, doyurucu", "def": "Warm and friendly, or large and filling.", "ex": "We had a hearty breakfast.", "exTr": "Doyurucu bir kahvaltı yaptık." },
-  "diameter--noun": { "tr": "çap", "def": "The distance across a circle through its centre.", "ex": "The pipe has a wide diameter.", "exTr": "Borunun geniş bir çapı var." },
-  "liberate--verb": { "tr": "özgürleştirmek, kurtarmak", "def": "To set a place or people free.", "ex": "The town was liberated in autumn.", "exTr": "Kasaba sonbaharda kurtarıldı." },
-  "tumble--verb": { "tr": "yuvarlanmak, devrilmek", "def": "To fall suddenly and roll over.", "ex": "The boxes tumbled off the cart.", "exTr": "Kutular arabadan yuvarlandı." },
-  "newcomer--noun": { "tr": "yeni gelen", "def": "A person who has recently arrived.", "ex": "The newcomer sat at the back.", "exTr": "Yeni gelen arkaya oturdu." },
-  "ironing--noun": { "tr": "ütü işi", "def": "The job of pressing clothes with a hot iron.", "ex": "I hate doing the ironing.", "exTr": "Ütü yapmaktan nefret ederim." },
-  "genetics--noun": { "tr": "genetik (bilim)", "def": "The study of how features pass to children.", "ex": "She lectures in genetics.", "exTr": "Genetik dersi veriyor." },
-  "compose--verb": { "tr": "bestelemek, oluşturmak", "def": "To write music, or to form something.", "ex": "He composed the music himself.", "exTr": "Müziği kendisi besteledi." },
-  "smoker--noun": { "tr": "sigara içen kişi", "def": "A person who smokes cigarettes regularly.", "ex": "He has been a smoker for years.", "exTr": "Yıllardır sigara içiyor." },
-  "citizenship--noun": { "tr": "vatandaşlık", "def": "The legal right to belong to a country.", "ex": "She applied for citizenship.", "exTr": "Vatandaşlık için başvurdu." },
-  "turbulence--noun": { "tr": "türbülans, çalkantı", "def": "Sudden violent movement of air or water.", "ex": "We hit turbulence over the mountains.", "exTr": "Dağların üstünde türbülansa girdik." },
-  "complicate--verb": { "tr": "karmaşıklaştırmak", "def": "To make something harder to deal with.", "ex": "New rules complicate the process.", "exTr": "Yeni kurallar süreci karmaşıklaştırıyor." },
-  "lifeguard--noun": { "tr": "cankurtaran", "def": "A person who watches swimmers and saves them.", "ex": "The lifeguard blew her whistle.", "exTr": "Cankurtaran düdüğünü çaldı." },
-  "firefighter--noun": { "tr": "itfaiyeci", "def": "A person whose job is putting out fires.", "ex": "Firefighters arrived within minutes.", "exTr": "İtfaiyeciler dakikalar içinde geldi." },
-  "earnest--adj": { "tr": "ciddi, samimi", "def": "Very serious and sincere.", "ex": "He made an earnest promise.", "exTr": "Samimi bir söz verdi." },
-  "traditionally--adv": { "tr": "geleneksel olarak", "def": "In the way that has been usual for a long time.", "ex": "The dish is traditionally served cold.", "exTr": "Yemek geleneksel olarak soğuk servis edilir." },
-  "endanger--verb": { "tr": "tehlikeye atmak", "def": "To put someone or something at risk.", "ex": "Pollution endangers the fish.", "exTr": "Kirlilik balıkları tehlikeye atıyor." },
-  "carton--noun": { "tr": "karton kutu", "def": "A light box made of cardboard.", "ex": "Buy a carton of milk.", "exTr": "Bir karton süt al." },
-  "unrelated--adj": { "tr": "ilgisiz, alakasız", "def": "Having no connection with something.", "ex": "The two cases are unrelated.", "exTr": "İki vaka birbiriyle ilgisiz." },
-  "penniless--adj": { "tr": "beş parasız", "def": "Having no money at all.", "ex": "He arrived penniless in the city.", "exTr": "Şehre beş parasız geldi." },
-  "prohibition--noun": { "tr": "yasak", "def": "An official rule that forbids something.", "ex": "There is a prohibition on fishing here.", "exTr": "Burada balık tutma yasağı var." },
-  "requirement--noun": { "tr": "gereklilik, şart", "def": "Something that is needed or demanded.", "ex": "A licence is a legal requirement.", "exTr": "Ehliyet yasal bir şarttır." },
-  "diverse--adj": { "tr": "çeşitli, farklı", "def": "Including many different kinds.", "ex": "The city has a diverse population.", "exTr": "Şehrin çeşitli bir nüfusu var." },
-  "novelist--noun": { "tr": "romancı", "def": "A person who writes novels.", "ex": "The novelist lives near the sea.", "exTr": "Romancı deniz kenarında yaşıyor." },
-  "distinctly--adv": { "tr": "açıkça, belirgin şekilde", "def": "Very clearly, without any doubt.", "ex": "I distinctly heard my name.", "exTr": "Adımı açıkça duydum." },
-  "emphasis--noun": { "tr": "vurgu", "def": "Special importance given to something.", "ex": "The course puts emphasis on speaking.", "exTr": "Kurs konuşmaya vurgu yapıyor." },
-  "moderate--adj": { "tr": "ılımlı, orta düzey", "def": "Neither very large nor very small.", "ex": "Take moderate exercise daily.", "exTr": "Her gün orta düzeyde egzersiz yap." },
-  "rainforest--noun": { "tr": "yağmur ormanı", "def": "A thick forest in a hot area with heavy rain.", "ex": "The rainforest is shrinking.", "exTr": "Yağmur ormanı küçülüyor." },
-  "characteristic--noun": { "tr": "özellik", "def": "A typical quality of a person or a thing.", "ex": "Patience is his best characteristic.", "exTr": "Sabır en iyi özelliği." },
-  "enjoyment--noun": { "tr": "keyif, zevk", "def": "The pleasure you get from something.", "ex": "Music gives him great enjoyment.", "exTr": "Müzik ona büyük keyif veriyor." },
-  "unheard--adj": { "tr": "duyulmamış", "def": "Not listened to, or never known before.", "ex": "Her warning went unheard.", "exTr": "Uyarısı duyulmadı." },
-  "faraway--adj": { "tr": "uzaktaki", "def": "A long distance from here.", "ex": "She dreams of faraway places.", "exTr": "Uzaktaki yerleri hayal ediyor." },
-  "shiver--verb": { "tr": "titremek (soğuktan)", "def": "To shake slightly because you are cold or afraid.", "ex": "We shivered in the wind.", "exTr": "Rüzgârda titredik." },
-  "animated--adj": { "tr": "canlı, animasyonlu", "def": "Full of energy, or made using animation.", "ex": "They had an animated discussion.", "exTr": "Canlı bir tartışma yaptılar." },
-  "continually--adv": { "tr": "durmadan", "def": "Repeatedly, again and again.", "ex": "The phone rang continually.", "exTr": "Telefon durmadan çaldı." },
-  "unfold--verb": { "tr": "açmak, ortaya çıkmak", "def": "To open something folded, or to develop gradually.", "ex": "Unfold the map on the table.", "exTr": "Haritayı masaya aç." },
-  "deprive--verb": { "tr": "mahrum bırakmak", "def": "To take something important away from someone.", "ex": "The illness deprived him of sleep.", "exTr": "Hastalık onu uykudan mahrum bıraktı." },
-  "accessible--adj": { "tr": "erişilebilir, ulaşılabilir", "def": "Easy to reach, enter or understand.", "ex": "The beach is accessible by bus.", "exTr": "Plaja otobüsle ulaşılabiliyor." },
-  "nucleus--noun": { "tr": "çekirdek", "def": "The central part of an atom or a cell.", "ex": "The nucleus holds the cell's genes.", "exTr": "Çekirdek hücrenin genlerini taşır." },
-  "upward--adj": { "tr": "yukarı doğru", "def": "Moving or pointing towards a higher place.", "ex": "There is an upward trend in prices.", "exTr": "Fiyatlarda yukarı doğru bir eğilim var." },
-  "biography--noun": { "tr": "biyografi", "def": "The story of a person's life written by someone else.", "ex": "She read a biography of Atatürk.", "exTr": "Atatürk'ün bir biyografisini okudu." },
-  "copyright--noun": { "tr": "telif hakkı", "def": "The legal right to control who copies a work.", "ex": "The photo is under copyright.", "exTr": "Fotoğraf telif hakkıyla korunuyor." },
-  "glide--noun": { "tr": "süzülüş", "def": "A smooth movement through air or over a surface.", "ex": "The bird's glide was silent.", "exTr": "Kuşun süzülüşü sessizdi." },
-  "schoolteacher--noun": { "tr": "okul öğretmeni", "def": "A person who teaches in a school.", "ex": "Her mother was a schoolteacher.", "exTr": "Annesi okul öğretmeniydi." },
-  "brightly--adv": { "tr": "parlak biçimde", "def": "With a lot of light or colour.", "ex": "The moon shone brightly.", "exTr": "Ay parlak biçimde parladı." },
-  "meditate--verb": { "tr": "meditasyon yapmak", "def": "To sit quietly and calm your mind.", "ex": "He meditates before breakfast.", "exTr": "Kahvaltıdan önce meditasyon yapıyor." },
-  "improper--adj": { "tr": "uygunsuz, yakışıksız", "def": "Not suitable or not honest.", "ex": "That was improper behaviour.", "exTr": "Bu yakışıksız bir davranıştı." },
-  "widespread--adj": { "tr": "yaygın", "def": "Found or happening over a large area.", "ex": "The damage was widespread.", "exTr": "Hasar yaygındı." },
-  "quake--noun": { "tr": "deprem, sarsıntı", "def": "A shaking of the ground, short for earthquake.", "ex": "The quake lasted ten seconds.", "exTr": "Sarsıntı on saniye sürdü." },
-  "nutrition--noun": { "tr": "beslenme", "def": "The process of getting the food your body needs.", "ex": "Good nutrition helps children grow.", "exTr": "İyi beslenme çocukların büyümesine yardımcı olur." }
+  "_meta": {
+    "batch": "b1-026",
+    "level": "B1",
+    "range": "1990-2069"
+  },
+  "technological--adj": {
+    "tr": "teknolojik",
+    "def": "Relating to new machines and science.",
+    "ex": "Technological change is fast.",
+    "exTr": "Teknolojik değişim hızlı."
+  },
+  "gall--noun": {
+    "tr": "safra, küstahlık",
+    "def": "A bitter fluid from the liver, or rude boldness.",
+    "ex": "He had the gall to complain.",
+    "exTr": "Şikâyet edecek küstahlığı gösterdi."
+  },
+  "unfit--adj": {
+    "tr": "uygun olmayan, formsuz",
+    "def": "Not suitable, or not healthy enough.",
+    "ex": "The water is unfit to drink.",
+    "exTr": "Su içmeye uygun değil."
+  },
+  "prosperous--adj": {
+    "tr": "müreffeh, varlıklı",
+    "def": "Successful and having plenty of money.",
+    "ex": "It was once a prosperous port.",
+    "exTr": "Burası bir zamanlar müreffeh bir limandı."
+  },
+  "symptom--noun": {
+    "tr": "belirti, semptom",
+    "def": "A sign of an illness that you feel or see.",
+    "ex": "Fever is a common symptom.",
+    "exTr": "Ateş yaygın bir belirtidir."
+  },
+  "discrimination--noun": {
+    "tr": "ayrımcılık",
+    "def": "Unfair treatment of a group of people.",
+    "ex": "The law bans discrimination at work.",
+    "exTr": "Yasa iş yerinde ayrımcılığı yasaklıyor."
+  },
+  "inscription--noun": {
+    "tr": "kitabe, yazıt",
+    "def": "Words carved into stone or metal.",
+    "ex": "The inscription is barely readable.",
+    "exTr": "Kitabe zar zor okunuyor."
+  },
+  "moisture--noun": {
+    "tr": "nem",
+    "def": "Small amounts of water in the air or in a material.",
+    "ex": "Moisture damaged the books.",
+    "exTr": "Nem kitaplara zarar verdi."
+  },
+  "disagreement--noun": {
+    "tr": "anlaşmazlık",
+    "def": "A situation where people have different opinions.",
+    "ex": "They had a brief disagreement.",
+    "exTr": "Kısa bir anlaşmazlık yaşadılar."
+  },
+  "nectar--noun": {
+    "tr": "nektar, bal özü",
+    "def": "The sweet liquid that bees collect from flowers.",
+    "ex": "Bees gather nectar all morning.",
+    "exTr": "Arılar bütün sabah nektar topluyor."
+  },
+  "swarm--noun": {
+    "tr": "oğul, sürü",
+    "def": "A large group of insects flying together.",
+    "ex": "A swarm of bees left the hive.",
+    "exTr": "Kovandan bir arı oğulu çıktı."
+  },
+  "researcher--noun": {
+    "tr": "araştırmacı",
+    "def": "A person who studies a subject to discover facts.",
+    "ex": "The researcher published her results.",
+    "exTr": "Araştırmacı sonuçlarını yayımladı."
+  },
+  "ness--noun": {
+    "tr": "burun (coğrafi)",
+    "def": "A piece of land that reaches out into the sea.",
+    "ex": "A lighthouse stands on the ness.",
+    "exTr": "Burunda bir deniz feneri duruyor."
+  },
+  "imitate--verb": {
+    "tr": "taklit etmek",
+    "def": "To copy the way someone speaks or behaves.",
+    "ex": "The parrot imitates her voice.",
+    "exTr": "Papağan onun sesini taklit ediyor."
+  },
+  "disable--verb": {
+    "tr": "devre dışı bırakmak",
+    "def": "To stop a machine or a system from working.",
+    "ex": "Disable the alarm before entering.",
+    "exTr": "Girmeden önce alarmı devre dışı bırak."
+  },
+  "reproduce--verb": {
+    "tr": "üremek, çoğaltmak",
+    "def": "To produce young, or to make a copy.",
+    "ex": "These fish reproduce in spring.",
+    "exTr": "Bu balıklar ilkbaharda ürer."
+  },
+  "evident--adj": {
+    "tr": "besbelli, ortada",
+    "def": "Clear and easy to see.",
+    "ex": "Her relief was evident.",
+    "exTr": "Rahatladığı besbelliydi."
+  },
+  "coastal--adj": {
+    "tr": "kıyı",
+    "def": "Relating to the land beside the sea.",
+    "ex": "Coastal roads flooded last night.",
+    "exTr": "Kıyı yolları dün gece su altında kaldı."
+  },
+  "outline--verb": {
+    "tr": "ana hatlarıyla anlatmak",
+    "def": "To describe the main points of something.",
+    "ex": "He outlined the plan briefly.",
+    "exTr": "Planı kısaca ana hatlarıyla anlattı."
+  },
+  "residential--adj": {
+    "tr": "konut, yerleşim",
+    "def": "Consisting of houses rather than shops or factories.",
+    "ex": "This is a quiet residential street.",
+    "exTr": "Burası sakin bir konut sokağı."
+  },
+  "safari--noun": {
+    "tr": "safari",
+    "def": "A trip to watch wild animals, especially in Africa.",
+    "ex": "They went on a safari.",
+    "exTr": "Safariye çıktılar."
+  },
+  "boast--verb": {
+    "tr": "övünmek",
+    "def": "To talk too proudly about what you have done.",
+    "ex": "He boasted about his new car.",
+    "exTr": "Yeni arabasıyla övündü."
+  },
+  "likeness--noun": {
+    "tr": "benzerlik",
+    "def": "The quality of looking similar to someone.",
+    "ex": "The painting is a good likeness.",
+    "exTr": "Tablo iyi bir benzerlik yakalamış."
+  },
+  "auxiliary--adj": {
+    "tr": "yardımcı",
+    "def": "Giving extra help or support.",
+    "ex": "The ship has an auxiliary engine.",
+    "exTr": "Geminin yardımcı bir motoru var."
+  },
+  "abundance--noun": {
+    "tr": "bolluk",
+    "def": "A very large quantity of something.",
+    "ex": "There was an abundance of fruit.",
+    "exTr": "Meyve bolluğu vardı."
+  },
+  "gallon--noun": {
+    "tr": "galon",
+    "def": "A unit of liquid equal to about four litres.",
+    "ex": "Buy a gallon of paint.",
+    "exTr": "Bir galon boya al."
+  },
+  "tourism--noun": {
+    "tr": "turizm",
+    "def": "The business of providing holidays for visitors.",
+    "ex": "Tourism supports the whole town.",
+    "exTr": "Turizm bütün kasabayı ayakta tutuyor."
+  },
+  "undergo--verb": {
+    "tr": "geçirmek, maruz kalmak",
+    "def": "To experience something, especially a change or treatment.",
+    "ex": "She underwent surgery last week.",
+    "exTr": "Geçen hafta ameliyat geçirdi."
+  },
+  "refusal--noun": {
+    "tr": "ret, reddetme",
+    "def": "The act of saying no to something.",
+    "ex": "His refusal surprised us.",
+    "exTr": "Reddetmesi bizi şaşırttı."
+  },
+  "hearty--adj": {
+    "tr": "candan, doyurucu",
+    "def": "Warm and friendly, or large and filling.",
+    "ex": "We had a hearty breakfast.",
+    "exTr": "Doyurucu bir kahvaltı yaptık."
+  },
+  "diameter--noun": {
+    "tr": "çap",
+    "def": "The distance across a circle through its centre.",
+    "ex": "The pipe has a wide diameter.",
+    "exTr": "Borunun geniş bir çapı var."
+  },
+  "liberate--verb": {
+    "tr": "özgürleştirmek, kurtarmak",
+    "def": "To set a place or people free.",
+    "ex": "The town was liberated in autumn.",
+    "exTr": "Kasaba sonbaharda kurtarıldı."
+  },
+  "tumble--verb": {
+    "tr": "yuvarlanmak, devrilmek",
+    "def": "To fall suddenly and roll over.",
+    "ex": "The boxes tumbled off the cart.",
+    "exTr": "Kutular arabadan yuvarlandı."
+  },
+  "newcomer--noun": {
+    "tr": "yeni gelen",
+    "def": "A person who has recently arrived.",
+    "ex": "The newcomer sat at the back.",
+    "exTr": "Yeni gelen arkaya oturdu."
+  },
+  "ironing--noun": {
+    "tr": "ütü işi",
+    "def": "The job of pressing clothes with a hot iron.",
+    "ex": "I hate doing the ironing.",
+    "exTr": "Ütü yapmaktan nefret ederim."
+  },
+  "genetics--noun": {
+    "tr": "genetik (bilim)",
+    "def": "The study of how features pass to children.",
+    "ex": "She lectures in genetics.",
+    "exTr": "Genetik dersi veriyor."
+  },
+  "compose--verb": {
+    "tr": "bestelemek, oluşturmak",
+    "def": "To write music, or to form something.",
+    "ex": "He composed the music himself.",
+    "exTr": "Müziği kendisi besteledi."
+  },
+  "smoker--noun": {
+    "tr": "sigara içen kişi",
+    "def": "A person who smokes cigarettes regularly.",
+    "ex": "He has been a smoker for years.",
+    "exTr": "Yıllardır sigara içiyor."
+  },
+  "citizenship--noun": {
+    "tr": "vatandaşlık",
+    "def": "The legal right to belong to a country.",
+    "ex": "She applied for citizenship.",
+    "exTr": "Vatandaşlık için başvurdu."
+  },
+  "turbulence--noun": {
+    "tr": "türbülans, çalkantı",
+    "def": "Sudden violent movement of air or water.",
+    "ex": "We hit turbulence over the mountains.",
+    "exTr": "Dağların üstünde türbülansa girdik."
+  },
+  "complicate--verb": {
+    "tr": "karmaşıklaştırmak",
+    "def": "To make something harder to deal with.",
+    "ex": "New rules complicate the process.",
+    "exTr": "Yeni kurallar süreci karmaşıklaştırıyor."
+  },
+  "lifeguard--noun": {
+    "tr": "cankurtaran",
+    "def": "A person who watches swimmers and saves them.",
+    "ex": "The lifeguard blew her whistle.",
+    "exTr": "Cankurtaran düdüğünü çaldı."
+  },
+  "firefighter--noun": {
+    "tr": "itfaiyeci",
+    "def": "A person whose job is putting out fires.",
+    "ex": "Firefighters arrived within minutes.",
+    "exTr": "İtfaiyeciler dakikalar içinde geldi."
+  },
+  "earnest--adj": {
+    "tr": "ciddi, samimi",
+    "def": "Very serious and sincere.",
+    "ex": "He made an earnest promise.",
+    "exTr": "Samimi bir söz verdi."
+  },
+  "traditionally--adv": {
+    "tr": "geleneksel olarak",
+    "def": "In the way that has been usual for a long time.",
+    "ex": "The dish is traditionally served cold.",
+    "exTr": "Yemek geleneksel olarak soğuk servis edilir."
+  },
+  "endanger--verb": {
+    "tr": "tehlikeye atmak",
+    "def": "To put someone or something at risk.",
+    "ex": "Pollution endangers the fish.",
+    "exTr": "Kirlilik balıkları tehlikeye atıyor."
+  },
+  "carton--noun": {
+    "tr": "karton kutu",
+    "def": "A light box made of cardboard.",
+    "ex": "Buy a carton of milk.",
+    "exTr": "Bir karton süt al."
+  },
+  "unrelated--adj": {
+    "tr": "ilgisiz, alakasız",
+    "def": "Having no connection with something.",
+    "ex": "The two cases are unrelated.",
+    "exTr": "İki vaka birbiriyle ilgisiz."
+  },
+  "penniless--adj": {
+    "tr": "beş parasız",
+    "def": "Having no money at all.",
+    "ex": "He arrived penniless in the city.",
+    "exTr": "Şehre beş parasız geldi."
+  },
+  "prohibition--noun": {
+    "tr": "yasaklama",
+    "def": "An official rule that forbids something.",
+    "ex": "There is a prohibition on fishing here.",
+    "exTr": "Burada balık tutma yasağı var."
+  },
+  "requirement--noun": {
+    "tr": "gereklilik, şart",
+    "def": "Something that is needed or demanded.",
+    "ex": "A licence is a legal requirement.",
+    "exTr": "Ehliyet yasal bir şarttır."
+  },
+  "diverse--adj": {
+    "tr": "çeşitli, farklı",
+    "def": "Including many different kinds.",
+    "ex": "The city has a diverse population.",
+    "exTr": "Şehrin çeşitli bir nüfusu var."
+  },
+  "novelist--noun": {
+    "tr": "romancı",
+    "def": "A person who writes novels.",
+    "ex": "The novelist lives near the sea.",
+    "exTr": "Romancı deniz kenarında yaşıyor."
+  },
+  "distinctly--adv": {
+    "tr": "açıkça, belirgin şekilde",
+    "def": "Very clearly, without any doubt.",
+    "ex": "I distinctly heard my name.",
+    "exTr": "Adımı açıkça duydum."
+  },
+  "emphasis--noun": {
+    "tr": "vurgu",
+    "def": "Special importance given to something.",
+    "ex": "The course puts emphasis on speaking.",
+    "exTr": "Kurs konuşmaya vurgu yapıyor."
+  },
+  "moderate--adj": {
+    "tr": "ılımlı, orta düzey",
+    "def": "Neither very large nor very small.",
+    "ex": "Take moderate exercise daily.",
+    "exTr": "Her gün orta düzeyde egzersiz yap."
+  },
+  "rainforest--noun": {
+    "tr": "yağmur ormanı",
+    "def": "A thick forest in a hot area with heavy rain.",
+    "ex": "The rainforest is shrinking.",
+    "exTr": "Yağmur ormanı küçülüyor."
+  },
+  "characteristic--noun": {
+    "tr": "özellik",
+    "def": "A typical quality of a person or a thing.",
+    "ex": "Patience is his best characteristic.",
+    "exTr": "Sabır en iyi özelliği."
+  },
+  "enjoyment--noun": {
+    "tr": "keyif, zevk",
+    "def": "The pleasure you get from something.",
+    "ex": "Music gives him great enjoyment.",
+    "exTr": "Müzik ona büyük keyif veriyor."
+  },
+  "unheard--adj": {
+    "tr": "duyulmamış",
+    "def": "Not listened to, or never known before.",
+    "ex": "Her warning went unheard.",
+    "exTr": "Uyarısı duyulmadı."
+  },
+  "faraway--adj": {
+    "tr": "uzaktaki",
+    "def": "A long distance from here.",
+    "ex": "She dreams of faraway places.",
+    "exTr": "Uzaktaki yerleri hayal ediyor."
+  },
+  "shiver--verb": {
+    "tr": "titremek (soğuktan)",
+    "def": "To shake slightly because you are cold or afraid.",
+    "ex": "We shivered in the wind.",
+    "exTr": "Rüzgârda titredik."
+  },
+  "animated--adj": {
+    "tr": "canlı, animasyonlu",
+    "def": "Full of energy, or made using animation.",
+    "ex": "They had an animated discussion.",
+    "exTr": "Canlı bir tartışma yaptılar."
+  },
+  "continually--adv": {
+    "tr": "durmadan",
+    "def": "Repeatedly, again and again.",
+    "ex": "The phone rang continually.",
+    "exTr": "Telefon durmadan çaldı."
+  },
+  "unfold--verb": {
+    "tr": "açmak, ortaya çıkmak",
+    "def": "To open something folded, or to develop gradually.",
+    "ex": "Unfold the map on the table.",
+    "exTr": "Haritayı masaya aç."
+  },
+  "deprive--verb": {
+    "tr": "mahrum bırakmak",
+    "def": "To take something important away from someone.",
+    "ex": "The illness deprived him of sleep.",
+    "exTr": "Hastalık onu uykudan mahrum bıraktı."
+  },
+  "accessible--adj": {
+    "tr": "erişilebilir, ulaşılabilir",
+    "def": "Easy to reach, enter or understand.",
+    "ex": "The beach is accessible by bus.",
+    "exTr": "Plaja otobüsle ulaşılabiliyor."
+  },
+  "nucleus--noun": {
+    "tr": "çekirdek",
+    "def": "The central part of an atom or a cell.",
+    "ex": "The nucleus holds the cell's genes.",
+    "exTr": "Çekirdek hücrenin genlerini taşır."
+  },
+  "upward--adj": {
+    "tr": "yukarı doğru",
+    "def": "Moving or pointing towards a higher place.",
+    "ex": "There is an upward trend in prices.",
+    "exTr": "Fiyatlarda yukarı doğru bir eğilim var."
+  },
+  "biography--noun": {
+    "tr": "biyografi",
+    "def": "The story of a person's life written by someone else.",
+    "ex": "She read a biography of Atatürk.",
+    "exTr": "Atatürk'ün bir biyografisini okudu."
+  },
+  "copyright--noun": {
+    "tr": "telif hakkı",
+    "def": "The legal right to control who copies a work.",
+    "ex": "The photo is under copyright.",
+    "exTr": "Fotoğraf telif hakkıyla korunuyor."
+  },
+  "glide--noun": {
+    "tr": "süzülüş",
+    "def": "A smooth movement through air or over a surface.",
+    "ex": "The bird's glide was silent.",
+    "exTr": "Kuşun süzülüşü sessizdi."
+  },
+  "schoolteacher--noun": {
+    "tr": "okul öğretmeni",
+    "def": "A person who teaches in a school.",
+    "ex": "Her mother was a schoolteacher.",
+    "exTr": "Annesi okul öğretmeniydi."
+  },
+  "brightly--adv": {
+    "tr": "parlak biçimde",
+    "def": "With a lot of light or colour.",
+    "ex": "The moon shone brightly.",
+    "exTr": "Ay parlak biçimde parladı."
+  },
+  "meditate--verb": {
+    "tr": "meditasyon yapmak",
+    "def": "To sit quietly and calm your mind.",
+    "ex": "He meditates before breakfast.",
+    "exTr": "Kahvaltıdan önce meditasyon yapıyor."
+  },
+  "improper--adj": {
+    "tr": "uygunsuz, yakışıksız",
+    "def": "Not suitable or not honest.",
+    "ex": "That was improper behaviour.",
+    "exTr": "Bu yakışıksız bir davranıştı."
+  },
+  "widespread--adj": {
+    "tr": "yaygın",
+    "def": "Found or happening over a large area.",
+    "ex": "The damage was widespread.",
+    "exTr": "Hasar yaygındı."
+  },
+  "quake--noun": {
+    "tr": "deprem, sarsıntı",
+    "def": "A shaking of the ground, short for earthquake.",
+    "ex": "The quake lasted ten seconds.",
+    "exTr": "Sarsıntı on saniye sürdü."
+  },
+  "nutrition--noun": {
+    "tr": "beslenme",
+    "def": "The process of getting the food your body needs.",
+    "ex": "Good nutrition helps children grow.",
+    "exTr": "İyi beslenme çocukların büyümesine yardımcı olur."
+  }
 }

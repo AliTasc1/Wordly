@@ -1,83 +1,481 @@
 {
-  "_meta": { "batch": "b1-009", "level": "B1", "range": "640-719" },
-
-  "electricity--noun": { "tr": "elektrik", "def": "The power that runs lamps and machines.", "ex": "The storm cut off our electricity.", "exTr": "Fırtına elektriğimizi kesti." },
-  "standard--noun": { "tr": "standart, ölçüt", "def": "A level of quality that people expect.", "ex": "The hotel keeps a high standard.", "exTr": "Otel yüksek bir standardı koruyor." },
-  "inform--verb": { "tr": "bilgilendirmek", "def": "To officially tell someone about something.", "ex": "Please inform us of any change.", "exTr": "Lütfen her değişiklikten bizi haberdar edin." },
-  "status--noun": { "tr": "statü, durum", "def": "A person's position in society, or the state of something.", "ex": "Check the status of your order.", "exTr": "Siparişinizin durumunu kontrol edin." },
-  "purse--noun": { "tr": "cüzdan, el çantası", "def": "A small bag for money, or a handbag.", "ex": "She left her purse on the bus.", "exTr": "Cüzdanını otobüste unuttu." },
-  "construction--noun": { "tr": "inşaat, yapım", "def": "The work of building things.", "ex": "Construction starts in September.", "exTr": "İnşaat eylülde başlıyor." },
-  "trigger--noun": { "tr": "tetik", "def": "The part of a gun you pull to fire it.", "ex": "He never touched the trigger.", "exTr": "Tetiğe hiç dokunmadı." },
-  "exit--noun": { "tr": "çıkış", "def": "The way out of a building or a road.", "ex": "The emergency exit is locked.", "exTr": "Acil çıkış kilitli." },
-  "exit--verb": { "tr": "çıkmak", "def": "To leave a place or a program.", "ex": "Exit the motorway at junction five.", "exTr": "Otoyoldan beşinci kavşakta çık." },
-  "cancel--verb": { "tr": "iptal etmek", "def": "To decide that a planned event will not happen.", "ex": "They cancelled the flight.", "exTr": "Uçuşu iptal ettiler." },
-  "clinic--noun": { "tr": "klinik", "def": "A small place where people receive medical care.", "ex": "The clinic opens at eight.", "exTr": "Klinik sekizde açılıyor." },
-  "vice--adj": { "tr": "yardımcı (unvan)", "def": "Second in rank, just below the leader.", "ex": "She was elected vice president.", "exTr": "Başkan yardımcısı seçildi." },
-  "generous--adj": { "tr": "cömert", "def": "Happy to give money, time or help.", "ex": "He is generous with his time.", "exTr": "Zamanı konusunda cömerttir." },
-  "gain--noun": { "tr": "kazanç, artış", "def": "An increase, or something useful you get.", "ex": "The report shows a small gain.", "exTr": "Rapor küçük bir kazanç gösteriyor." },
-  "gain--verb": { "tr": "kazanmak, elde etmek", "def": "To get something useful, or to increase.", "ex": "She gained useful experience there.", "exTr": "Orada faydalı deneyim kazandı." },
-  "jungle--noun": { "tr": "orman, cangıl", "def": "A thick tropical forest.", "ex": "The river runs through the jungle.", "exTr": "Nehir ormanın içinden geçiyor." },
-  "link--noun": { "tr": "bağlantı, link", "def": "A connection between things, or an address on a website.", "ex": "Send me the link by email.", "exTr": "Bağlantıyı bana e-postayla gönder." },
-  "link--verb": { "tr": "bağlamak, ilişkilendirmek", "def": "To connect two things or show a relation between them.", "ex": "The bridge links the two districts.", "exTr": "Köprü iki ilçeyi birbirine bağlıyor." },
-  "religious--adj": { "tr": "dindar, dini", "def": "Relating to religion, or having strong belief.", "ex": "They follow religious traditions closely.", "exTr": "Dini gelenekleri yakından takip ediyorlar." },
-  "routine--noun": { "tr": "rutin, alışılmış düzen", "def": "The usual order in which you do things.", "ex": "Exercise is part of my routine.", "exTr": "Egzersiz rutinimin bir parçası." },
-  "equal--adj": { "tr": "eşit", "def": "The same in size, number or value.", "ex": "Cut the cake into equal pieces.", "exTr": "Pastayı eşit parçalara böl." },
-  "incredibly--adv": { "tr": "inanılmaz derecede", "def": "Extremely, or in a way hard to believe.", "ex": "The test was incredibly difficult.", "exTr": "Sınav inanılmaz derecede zordu." },
-  "divorced--adj": { "tr": "boşanmış", "def": "No longer married because the marriage legally ended.", "ex": "Her parents are divorced.", "exTr": "Anne babası boşanmış." },
-  "port--noun": { "tr": "liman", "def": "A town or place where ships load and unload.", "ex": "The ship reached port at dawn.", "exTr": "Gemi şafakta limana ulaştı." },
-  "nephew--noun": { "tr": "yeğen (erkek)", "def": "The son of your brother or sister.", "ex": "My nephew starts school this year.", "exTr": "Yeğenim bu yıl okula başlıyor." },
-  "proceed--verb": { "tr": "devam etmek, ilerlemek", "def": "To continue doing something after a pause.", "ex": "Please proceed to gate twelve.", "exTr": "Lütfen on ikinci kapıya ilerleyin." },
-  "patience--noun": { "tr": "sabır", "def": "The ability to wait or accept trouble calmly.", "ex": "Teaching requires great patience.", "exTr": "Öğretmenlik büyük sabır ister." },
-  "recording--noun": { "tr": "kayıt", "def": "Sound or pictures that have been stored.", "ex": "The recording lasts an hour.", "exTr": "Kayıt bir saat sürüyor." },
-  "foolish--adj": { "tr": "akılsızca, budalaca", "def": "Silly and not sensible.", "ex": "It was foolish to go alone.", "exTr": "Tek başına gitmek akılsızcaydı." },
-  "cage--noun": { "tr": "kafes", "def": "A box of bars where animals are kept.", "ex": "The bird flew out of its cage.", "exTr": "Kuş kafesinden uçtu." },
-  "awkward--adj": { "tr": "tuhaf, zor", "def": "Uncomfortable, or difficult to handle.", "ex": "There was an awkward silence.", "exTr": "Tuhaf bir sessizlik oldu." },
-  "pattern--noun": { "tr": "desen, örüntü", "def": "A repeated design, or a regular way things happen.", "ex": "The cloth has a simple pattern.", "exTr": "Kumaşın basit bir deseni var." },
-  "someplace--adv": { "tr": "bir yerde", "def": "In or to some place, in American English.", "ex": "Let's eat someplace quiet.", "exTr": "Sessiz bir yerde yiyelim." },
-  "aim--noun": { "tr": "amaç, hedef", "def": "What you are trying to achieve.", "ex": "Our aim is to cut waste.", "exTr": "Amacımız israfı azaltmak." },
-  "cliff--noun": { "tr": "uçurum, yar", "def": "A high steep rock face, often by the sea.", "ex": "The path runs along the cliff.", "exTr": "Patika uçurum boyunca uzanıyor." },
-  "nail--noun": { "tr": "çivi, tırnak", "def": "A thin metal pin, or the hard part on a finger.", "ex": "Hammer the nail into the wood.", "exTr": "Çiviyi tahtaya çak." },
-  "interrupt--verb": { "tr": "sözünü kesmek, kesintiye uğratmak", "def": "To stop someone while they are speaking or working.", "ex": "Sorry to interrupt your lunch.", "exTr": "Öğle yemeğinizi böldüğüm için özür dilerim." },
-  "satisfied--adj": { "tr": "memnun", "def": "Pleased because you got what you wanted.", "ex": "Most customers were satisfied.", "exTr": "Müşterilerin çoğu memnundu." },
-  "election--noun": { "tr": "seçim", "def": "The process of choosing someone by voting.", "ex": "The election is held every five years.", "exTr": "Seçim beş yılda bir yapılıyor." },
-  "warrior--noun": { "tr": "savaşçı", "def": "A brave fighter, especially in the past.", "ex": "The poem tells of an old warrior.", "exTr": "Şiir yaşlı bir savaşçıyı anlatıyor." },
-  "forth--adv": { "tr": "ileri, dışarı", "def": "Forward, or out into view.", "ex": "They set forth before sunrise.", "exTr": "Gün doğmadan yola koyuldular." },
-  "fetch--verb": { "tr": "getirmek, alıp gelmek", "def": "To go somewhere and bring something back.", "ex": "Fetch me a glass of water.", "exTr": "Bana bir bardak su getir." },
-  "complex--adj": { "tr": "karmaşık", "def": "Made of many connected parts and not simple.", "ex": "The human brain is complex.", "exTr": "İnsan beyni karmaşıktır." },
-  "frozen--adj": { "tr": "donmuş", "def": "Turned to ice, or kept very cold to last longer.", "ex": "The lake was completely frozen.", "exTr": "Göl tamamen donmuştu." },
-  "prayer--noun": { "tr": "dua, namaz", "def": "Words spoken to God.", "ex": "He said a short prayer.", "exTr": "Kısa bir dua etti." },
-  "guilt--noun": { "tr": "suçluluk", "def": "The bad feeling of having done wrong.", "ex": "She felt no guilt at all.", "exTr": "Hiç suçluluk duymadı." },
-  "officially--adv": { "tr": "resmen", "def": "In a formal way, announced by an authority.", "ex": "The bridge officially opens tomorrow.", "exTr": "Köprü resmen yarın açılıyor." },
-  "wrap--noun": { "tr": "sarma, ambalaj", "def": "A cover put around something, or a rolled sandwich.", "ex": "Remove the plastic wrap first.", "exTr": "Önce plastik ambalajı çıkar." },
-  "wrap--verb": { "tr": "sarmak, paketlemek", "def": "To cover something by folding material around it.", "ex": "She wrapped the gift in blue paper.", "exTr": "Hediyeyi mavi kâğıda sardı." },
-  "behalf--noun": { "tr": "adına, namına", "def": "Used to say you are acting for someone else.", "ex": "He signed on behalf of the company.", "exTr": "Şirket adına imzaladı." },
-  "reasonable--adj": { "tr": "makul", "def": "Fair and sensible, or not too expensive.", "ex": "The price seems reasonable.", "exTr": "Fiyat makul görünüyor." },
-  "motive--noun": { "tr": "saik, güdü", "def": "The reason why someone does something.", "ex": "The police found no motive.", "exTr": "Polis bir saik bulamadı." },
-  "bishop--noun": { "tr": "piskopos", "def": "A senior Christian priest in charge of a region.", "ex": "The bishop opened the new school.", "exTr": "Piskopos yeni okulu açtı." },
-  "dealer--noun": { "tr": "satıcı, bayi", "def": "A person or shop that buys and sells goods.", "ex": "The car dealer offered a discount.", "exTr": "Araba bayisi indirim teklif etti." },
-  "nearby--adj": { "tr": "yakındaki", "def": "Situated a short distance away.", "ex": "We ate at a nearby café.", "exTr": "Yakındaki bir kafede yedik." },
-  "nearby--adv": { "tr": "yakınlarda", "def": "A short distance from here.", "ex": "A school was built nearby.", "exTr": "Yakınlarda bir okul yapıldı." },
-  "benefit--noun": { "tr": "fayda, yarar", "def": "An advantage that something gives you.", "ex": "Walking has many health benefits.", "exTr": "Yürümenin birçok sağlık faydası var." },
-  "apology--noun": { "tr": "özür", "def": "Words that say you are sorry.", "ex": "She accepted his apology.", "exTr": "Özrünü kabul etti." },
-  "thus--adv": { "tr": "böylece, bu nedenle", "def": "As a result, in a formal style.", "ex": "The road was closed; thus we waited.", "exTr": "Yol kapalıydı; bu yüzden bekledik." },
-  "pipe--noun": { "tr": "boru, pipo", "def": "A tube that carries water or gas.", "ex": "A pipe burst under the street.", "exTr": "Sokağın altında bir boru patladı." },
-  "goods--noun": { "tr": "mal, eşya", "def": "Things that are produced to be sold.", "ex": "The goods arrive by ship.", "exTr": "Mallar gemiyle geliyor." },
-  "loyal--adj": { "tr": "sadık", "def": "Always supporting a person or a group.", "ex": "He has loyal customers.", "exTr": "Sadık müşterileri var." },
-  "atmosphere--noun": { "tr": "atmosfer, hava", "def": "The air around the earth, or the mood of a place.", "ex": "The café has a warm atmosphere.", "exTr": "Kafenin sıcak bir atmosferi var." },
-  "pit--noun": { "tr": "çukur, ocak", "def": "A deep hole in the ground.", "ex": "They dug a pit for the rubbish.", "exTr": "Çöp için bir çukur kazdılar." },
-  "rotten--adj": { "tr": "çürük", "def": "Decayed and no longer good to eat or use.", "ex": "Throw away the rotten apples.", "exTr": "Çürük elmaları at." },
-  "paradise--noun": { "tr": "cennet", "def": "A perfect and beautiful place.", "ex": "The island felt like paradise.", "exTr": "Ada cennet gibiydi." },
-  "organization--noun": { "tr": "kuruluş, örgüt", "def": "A group of people working together for a purpose.", "ex": "The organization helps refugees.", "exTr": "Kuruluş mültecilere yardım ediyor." },
-  "comment--noun": { "tr": "yorum", "def": "Something you say or write giving an opinion.", "ex": "He made no comment.", "exTr": "Hiçbir yorum yapmadı." },
-  "shelter--noun": { "tr": "barınak, sığınak", "def": "A place that protects you from weather or danger.", "ex": "They found shelter under a tree.", "exTr": "Bir ağacın altında barınak buldular." },
-  "flow--noun": { "tr": "akış", "def": "The steady movement of liquid or traffic.", "ex": "The flow of the river slowed.", "exTr": "Nehrin akışı yavaşladı." },
-  "flow--verb": { "tr": "akmak", "def": "To move steadily in one direction.", "ex": "Water flows under the bridge.", "exTr": "Su köprünün altından akıyor." },
-  "strip--noun": { "tr": "şerit", "def": "A long narrow piece of something.", "ex": "Cut the paper into thin strips.", "exTr": "Kâğıdı ince şeritler hâlinde kes." },
-  "monk--noun": { "tr": "keşiş", "def": "A man who lives in a religious community.", "ex": "A monk showed us the library.", "exTr": "Bir keşiş bize kütüphaneyi gösterdi." },
-  "slightly--adv": { "tr": "biraz, hafifçe", "def": "To a small degree.", "ex": "The room is slightly warmer now.", "exTr": "Oda şimdi biraz daha sıcak." },
-  "judgment--noun": { "tr": "yargı, karar", "def": "The ability to decide wisely, or a court's decision.", "ex": "I trust her judgment.", "exTr": "Onun kararına güvenirim." },
-  "existence--noun": { "tr": "varoluş, varlık", "def": "The state of being real or living.", "ex": "Nobody doubts its existence.", "exTr": "Varlığından kimse şüphe etmiyor." },
-  "ward--noun": { "tr": "koğuş", "def": "A large room in a hospital with several beds.", "ex": "She works on the children's ward.", "exTr": "Çocuk koğuşunda çalışıyor." },
-  "actress--noun": { "tr": "kadın oyuncu", "def": "A woman who performs in films or plays.", "ex": "The actress won an award.", "exTr": "Kadın oyuncu bir ödül kazandı." },
-  "individual--adj": { "tr": "bireysel, tek tek", "def": "Considered separately rather than as a group.", "ex": "Each individual case is different.", "exTr": "Her bireysel vaka farklıdır." }
+  "_meta": {
+    "batch": "b1-009",
+    "level": "B1",
+    "range": "640-719"
+  },
+  "electricity--noun": {
+    "tr": "elektrik",
+    "def": "The power that runs lamps and machines.",
+    "ex": "The storm cut off our electricity.",
+    "exTr": "Fırtına elektriğimizi kesti."
+  },
+  "standard--noun": {
+    "tr": "standart, ölçüt",
+    "def": "A level of quality that people expect.",
+    "ex": "The hotel keeps a high standard.",
+    "exTr": "Otel yüksek bir standardı koruyor."
+  },
+  "inform--verb": {
+    "tr": "bilgilendirmek",
+    "def": "To officially tell someone about something.",
+    "ex": "Please inform us of any change.",
+    "exTr": "Lütfen her değişiklikten bizi haberdar edin."
+  },
+  "status--noun": {
+    "tr": "statü, durum",
+    "def": "A person's position in society, or the state of something.",
+    "ex": "Check the status of your order.",
+    "exTr": "Siparişinizin durumunu kontrol edin."
+  },
+  "purse--noun": {
+    "tr": "cüzdan, el çantası",
+    "def": "A small bag for money, or a handbag.",
+    "ex": "She left her purse on the bus.",
+    "exTr": "Cüzdanını otobüste unuttu."
+  },
+  "construction--noun": {
+    "tr": "inşaat, yapım",
+    "def": "The work of building things.",
+    "ex": "Construction starts in September.",
+    "exTr": "İnşaat eylülde başlıyor."
+  },
+  "trigger--noun": {
+    "tr": "tetik",
+    "def": "The part of a gun you pull to fire it.",
+    "ex": "He never touched the trigger.",
+    "exTr": "Tetiğe hiç dokunmadı."
+  },
+  "exit--noun": {
+    "tr": "çıkış",
+    "def": "The way out of a building or a road.",
+    "ex": "The emergency exit is locked.",
+    "exTr": "Acil çıkış kilitli."
+  },
+  "exit--verb": {
+    "tr": "çıkmak",
+    "def": "To leave a place or a program.",
+    "ex": "Exit the motorway at junction five.",
+    "exTr": "Otoyoldan beşinci kavşakta çık."
+  },
+  "cancel--verb": {
+    "tr": "iptal etmek",
+    "def": "To decide that a planned event will not happen.",
+    "ex": "They cancelled the flight.",
+    "exTr": "Uçuşu iptal ettiler."
+  },
+  "clinic--noun": {
+    "tr": "klinik",
+    "def": "A small place where people receive medical care.",
+    "ex": "The clinic opens at eight.",
+    "exTr": "Klinik sekizde açılıyor."
+  },
+  "vice--adj": {
+    "tr": "yardımcı (unvan)",
+    "def": "Second in rank, just below the leader.",
+    "ex": "She was elected vice president.",
+    "exTr": "Başkan yardımcısı seçildi."
+  },
+  "generous--adj": {
+    "tr": "cömert",
+    "def": "Happy to give money, time or help.",
+    "ex": "He is generous with his time.",
+    "exTr": "Zamanı konusunda cömerttir."
+  },
+  "gain--noun": {
+    "tr": "kazanç, artış",
+    "def": "An increase, or something useful you get.",
+    "ex": "The report shows a small gain.",
+    "exTr": "Rapor küçük bir kazanç gösteriyor."
+  },
+  "gain--verb": {
+    "tr": "kazanmak, elde etmek",
+    "def": "To get something useful, or to increase.",
+    "ex": "She gained useful experience there.",
+    "exTr": "Orada faydalı deneyim kazandı."
+  },
+  "jungle--noun": {
+    "tr": "orman, cangıl",
+    "def": "A thick tropical forest.",
+    "ex": "The river runs through the jungle.",
+    "exTr": "Nehir ormanın içinden geçiyor."
+  },
+  "link--noun": {
+    "tr": "bağlantı, link",
+    "def": "A connection between things, or an address on a website.",
+    "ex": "Send me the link by email.",
+    "exTr": "Bağlantıyı bana e-postayla gönder."
+  },
+  "link--verb": {
+    "tr": "bağlamak, ilişkilendirmek",
+    "def": "To connect two things or show a relation between them.",
+    "ex": "The bridge links the two districts.",
+    "exTr": "Köprü iki ilçeyi birbirine bağlıyor."
+  },
+  "religious--adj": {
+    "tr": "dindar, dini",
+    "def": "Relating to religion, or having strong belief.",
+    "ex": "They follow religious traditions closely.",
+    "exTr": "Dini gelenekleri yakından takip ediyorlar."
+  },
+  "routine--noun": {
+    "tr": "rutin, alışılmış düzen",
+    "def": "The usual order in which you do things.",
+    "ex": "Exercise is part of my routine.",
+    "exTr": "Egzersiz rutinimin bir parçası."
+  },
+  "equal--adj": {
+    "tr": "eşit",
+    "def": "The same in size, number or value.",
+    "ex": "Cut the cake into equal pieces.",
+    "exTr": "Pastayı eşit parçalara böl."
+  },
+  "incredibly--adv": {
+    "tr": "inanılmaz derecede",
+    "def": "Extremely, or in a way hard to believe.",
+    "ex": "The test was incredibly difficult.",
+    "exTr": "Sınav inanılmaz derecede zordu."
+  },
+  "divorced--adj": {
+    "tr": "boşanmış",
+    "def": "No longer married because the marriage legally ended.",
+    "ex": "Her parents are divorced.",
+    "exTr": "Anne babası boşanmış."
+  },
+  "port--noun": {
+    "tr": "liman",
+    "def": "A town or place where ships load and unload.",
+    "ex": "The ship reached port at dawn.",
+    "exTr": "Gemi şafakta limana ulaştı."
+  },
+  "nephew--noun": {
+    "tr": "yeğen (erkek)",
+    "def": "The son of your brother or sister.",
+    "ex": "My nephew starts school this year.",
+    "exTr": "Yeğenim bu yıl okula başlıyor."
+  },
+  "proceed--verb": {
+    "tr": "devam etmek, ilerlemek",
+    "def": "To continue doing something after a pause.",
+    "ex": "Please proceed to gate twelve.",
+    "exTr": "Lütfen on ikinci kapıya ilerleyin."
+  },
+  "patience--noun": {
+    "tr": "sabır",
+    "def": "The ability to wait or accept trouble calmly.",
+    "ex": "Teaching requires great patience.",
+    "exTr": "Öğretmenlik büyük sabır ister."
+  },
+  "recording--noun": {
+    "tr": "kayıt",
+    "def": "Sound or pictures that have been stored.",
+    "ex": "The recording lasts an hour.",
+    "exTr": "Kayıt bir saat sürüyor."
+  },
+  "foolish--adj": {
+    "tr": "akılsızca, budalaca",
+    "def": "Silly and not sensible.",
+    "ex": "It was foolish to go alone.",
+    "exTr": "Tek başına gitmek akılsızcaydı."
+  },
+  "cage--noun": {
+    "tr": "kafes",
+    "def": "A box of bars where animals are kept.",
+    "ex": "The bird flew out of its cage.",
+    "exTr": "Kuş kafesinden uçtu."
+  },
+  "awkward--adj": {
+    "tr": "tuhaf, zor",
+    "def": "Uncomfortable, or difficult to handle.",
+    "ex": "There was an awkward silence.",
+    "exTr": "Tuhaf bir sessizlik oldu."
+  },
+  "pattern--noun": {
+    "tr": "desen, örüntü",
+    "def": "A repeated design, or a regular way things happen.",
+    "ex": "The cloth has a simple pattern.",
+    "exTr": "Kumaşın basit bir deseni var."
+  },
+  "someplace--adv": {
+    "tr": "bir yerde",
+    "def": "In or to some place, in American English.",
+    "ex": "Let's eat someplace quiet.",
+    "exTr": "Sessiz bir yerde yiyelim."
+  },
+  "aim--noun": {
+    "tr": "amaç, hedef",
+    "def": "What you are trying to achieve.",
+    "ex": "Our aim is to cut waste.",
+    "exTr": "Amacımız israfı azaltmak."
+  },
+  "cliff--noun": {
+    "tr": "uçurum, yar",
+    "def": "A high steep rock face, often by the sea.",
+    "ex": "The path runs along the cliff.",
+    "exTr": "Patika uçurum boyunca uzanıyor."
+  },
+  "nail--noun": {
+    "tr": "çivi, tırnak",
+    "def": "A thin metal pin, or the hard part on a finger.",
+    "ex": "Hammer the nail into the wood.",
+    "exTr": "Çiviyi tahtaya çak."
+  },
+  "interrupt--verb": {
+    "tr": "sözünü kesmek, kesintiye uğratmak",
+    "def": "To stop someone while they are speaking or working.",
+    "ex": "Sorry to interrupt your lunch.",
+    "exTr": "Öğle yemeğinizi böldüğüm için özür dilerim."
+  },
+  "satisfied--adj": {
+    "tr": "memnun",
+    "def": "Pleased because you got what you wanted.",
+    "ex": "Most customers were satisfied.",
+    "exTr": "Müşterilerin çoğu memnundu."
+  },
+  "election--noun": {
+    "tr": "seçim",
+    "def": "The process of choosing someone by voting.",
+    "ex": "The election is held every five years.",
+    "exTr": "Seçim beş yılda bir yapılıyor."
+  },
+  "warrior--noun": {
+    "tr": "savaşçı",
+    "def": "A brave fighter, especially in the past.",
+    "ex": "The poem tells of an old warrior.",
+    "exTr": "Şiir yaşlı bir savaşçıyı anlatıyor."
+  },
+  "forth--adv": {
+    "tr": "ileri, dışarı",
+    "def": "Forward, or out into view.",
+    "ex": "They set forth before sunrise.",
+    "exTr": "Gün doğmadan yola koyuldular."
+  },
+  "fetch--verb": {
+    "tr": "getirmek, alıp gelmek",
+    "def": "To go somewhere and bring something back.",
+    "ex": "Fetch me a glass of water.",
+    "exTr": "Bana bir bardak su getir."
+  },
+  "complex--adj": {
+    "tr": "karmaşık, girift",
+    "def": "Made of many connected parts and not simple.",
+    "ex": "The human brain is complex.",
+    "exTr": "İnsan beyni karmaşıktır."
+  },
+  "frozen--adj": {
+    "tr": "donmuş",
+    "def": "Turned to ice, or kept very cold to last longer.",
+    "ex": "The lake was completely frozen.",
+    "exTr": "Göl tamamen donmuştu."
+  },
+  "prayer--noun": {
+    "tr": "dua, namaz",
+    "def": "Words spoken to God.",
+    "ex": "He said a short prayer.",
+    "exTr": "Kısa bir dua etti."
+  },
+  "guilt--noun": {
+    "tr": "suçluluk",
+    "def": "The bad feeling of having done wrong.",
+    "ex": "She felt no guilt at all.",
+    "exTr": "Hiç suçluluk duymadı."
+  },
+  "officially--adv": {
+    "tr": "resmen",
+    "def": "In a formal way, announced by an authority.",
+    "ex": "The bridge officially opens tomorrow.",
+    "exTr": "Köprü resmen yarın açılıyor."
+  },
+  "wrap--noun": {
+    "tr": "sarma, ambalaj",
+    "def": "A cover put around something, or a rolled sandwich.",
+    "ex": "Remove the plastic wrap first.",
+    "exTr": "Önce plastik ambalajı çıkar."
+  },
+  "wrap--verb": {
+    "tr": "sarmak, paketlemek",
+    "def": "To cover something by folding material around it.",
+    "ex": "She wrapped the gift in blue paper.",
+    "exTr": "Hediyeyi mavi kâğıda sardı."
+  },
+  "behalf--noun": {
+    "tr": "adına, namına",
+    "def": "Used to say you are acting for someone else.",
+    "ex": "He signed on behalf of the company.",
+    "exTr": "Şirket adına imzaladı."
+  },
+  "reasonable--adj": {
+    "tr": "makul",
+    "def": "Fair and sensible, or not too expensive.",
+    "ex": "The price seems reasonable.",
+    "exTr": "Fiyat makul görünüyor."
+  },
+  "motive--noun": {
+    "tr": "saik, güdü",
+    "def": "The reason why someone does something.",
+    "ex": "The police found no motive.",
+    "exTr": "Polis bir saik bulamadı."
+  },
+  "bishop--noun": {
+    "tr": "piskopos",
+    "def": "A senior Christian priest in charge of a region.",
+    "ex": "The bishop opened the new school.",
+    "exTr": "Piskopos yeni okulu açtı."
+  },
+  "dealer--noun": {
+    "tr": "satıcı, bayi",
+    "def": "A person or shop that buys and sells goods.",
+    "ex": "The car dealer offered a discount.",
+    "exTr": "Araba bayisi indirim teklif etti."
+  },
+  "nearby--adj": {
+    "tr": "yakındaki",
+    "def": "Situated a short distance away.",
+    "ex": "We ate at a nearby café.",
+    "exTr": "Yakındaki bir kafede yedik."
+  },
+  "nearby--adv": {
+    "tr": "yakınlarda",
+    "def": "A short distance from here.",
+    "ex": "A school was built nearby.",
+    "exTr": "Yakınlarda bir okul yapıldı."
+  },
+  "benefit--noun": {
+    "tr": "fayda, yarar",
+    "def": "An advantage that something gives you.",
+    "ex": "Walking has many health benefits.",
+    "exTr": "Yürümenin birçok sağlık faydası var."
+  },
+  "apology--noun": {
+    "tr": "özür",
+    "def": "Words that say you are sorry.",
+    "ex": "She accepted his apology.",
+    "exTr": "Özrünü kabul etti."
+  },
+  "thus--adv": {
+    "tr": "böylece, bu nedenle",
+    "def": "As a result, in a formal style.",
+    "ex": "The road was closed; thus we waited.",
+    "exTr": "Yol kapalıydı; bu yüzden bekledik."
+  },
+  "pipe--noun": {
+    "tr": "boru, pipo",
+    "def": "A tube that carries water or gas.",
+    "ex": "A pipe burst under the street.",
+    "exTr": "Sokağın altında bir boru patladı."
+  },
+  "goods--noun": {
+    "tr": "mal, eşya",
+    "def": "Things that are produced to be sold.",
+    "ex": "The goods arrive by ship.",
+    "exTr": "Mallar gemiyle geliyor."
+  },
+  "loyal--adj": {
+    "tr": "sadık",
+    "def": "Always supporting a person or a group.",
+    "ex": "He has loyal customers.",
+    "exTr": "Sadık müşterileri var."
+  },
+  "atmosphere--noun": {
+    "tr": "atmosfer, hava",
+    "def": "The air around the earth, or the mood of a place.",
+    "ex": "The café has a warm atmosphere.",
+    "exTr": "Kafenin sıcak bir atmosferi var."
+  },
+  "pit--noun": {
+    "tr": "çukur, ocak",
+    "def": "A deep hole in the ground.",
+    "ex": "They dug a pit for the rubbish.",
+    "exTr": "Çöp için bir çukur kazdılar."
+  },
+  "rotten--adj": {
+    "tr": "çürük",
+    "def": "Decayed and no longer good to eat or use.",
+    "ex": "Throw away the rotten apples.",
+    "exTr": "Çürük elmaları at."
+  },
+  "paradise--noun": {
+    "tr": "cennet (mecazi)",
+    "def": "A perfect and beautiful place.",
+    "ex": "The island felt like paradise.",
+    "exTr": "Ada cennet gibiydi."
+  },
+  "organization--noun": {
+    "tr": "kuruluş, örgüt",
+    "def": "A group of people working together for a purpose.",
+    "ex": "The organization helps refugees.",
+    "exTr": "Kuruluş mültecilere yardım ediyor."
+  },
+  "comment--noun": {
+    "tr": "yorum",
+    "def": "Something you say or write giving an opinion.",
+    "ex": "He made no comment.",
+    "exTr": "Hiçbir yorum yapmadı."
+  },
+  "shelter--noun": {
+    "tr": "barınak, sığınak",
+    "def": "A place that protects you from weather or danger.",
+    "ex": "They found shelter under a tree.",
+    "exTr": "Bir ağacın altında barınak buldular."
+  },
+  "flow--noun": {
+    "tr": "akış",
+    "def": "The steady movement of liquid or traffic.",
+    "ex": "The flow of the river slowed.",
+    "exTr": "Nehrin akışı yavaşladı."
+  },
+  "flow--verb": {
+    "tr": "akmak",
+    "def": "To move steadily in one direction.",
+    "ex": "Water flows under the bridge.",
+    "exTr": "Su köprünün altından akıyor."
+  },
+  "strip--noun": {
+    "tr": "şerit",
+    "def": "A long narrow piece of something.",
+    "ex": "Cut the paper into thin strips.",
+    "exTr": "Kâğıdı ince şeritler hâlinde kes."
+  },
+  "monk--noun": {
+    "tr": "keşiş",
+    "def": "A man who lives in a religious community.",
+    "ex": "A monk showed us the library.",
+    "exTr": "Bir keşiş bize kütüphaneyi gösterdi."
+  },
+  "slightly--adv": {
+    "tr": "biraz, hafifçe",
+    "def": "To a small degree.",
+    "ex": "The room is slightly warmer now.",
+    "exTr": "Oda şimdi biraz daha sıcak."
+  },
+  "judgment--noun": {
+    "tr": "yargı, karar",
+    "def": "The ability to decide wisely, or a court's decision.",
+    "ex": "I trust her judgment.",
+    "exTr": "Onun kararına güvenirim."
+  },
+  "existence--noun": {
+    "tr": "varoluş, varlık",
+    "def": "The state of being real or living.",
+    "ex": "Nobody doubts its existence.",
+    "exTr": "Varlığından kimse şüphe etmiyor."
+  },
+  "ward--noun": {
+    "tr": "koğuş",
+    "def": "A large room in a hospital with several beds.",
+    "ex": "She works on the children's ward.",
+    "exTr": "Çocuk koğuşunda çalışıyor."
+  },
+  "actress--noun": {
+    "tr": "kadın oyuncu",
+    "def": "A woman who performs in films or plays.",
+    "ex": "The actress won an award.",
+    "exTr": "Kadın oyuncu bir ödül kazandı."
+  },
+  "individual--adj": {
+    "tr": "bireysel, tek tek",
+    "def": "Considered separately rather than as a group.",
+    "ex": "Each individual case is different.",
+    "exTr": "Her bireysel vaka farklıdır."
+  }
 }

@@ -1,0 +1,511 @@
+{
+  "_meta": {
+    "batch": "b1-029",
+    "level": "B1",
+    "range": "2235-2319"
+  },
+  "classify--verb": {
+    "tr": "sınıflandırmak",
+    "def": "To put things into groups by type.",
+    "ex": "Classify the plants by leaf shape.",
+    "exTr": "Bitkileri yaprak şekline göre sınıflandır."
+  },
+  "summarize--verb": {
+    "tr": "özetlemek",
+    "def": "To give the main points briefly.",
+    "ex": "Summarize the article in five lines.",
+    "exTr": "Makaleyi beş satırda özetle."
+  },
+  "wristwatch--noun": {
+    "tr": "kol saati",
+    "def": "A watch worn on the wrist.",
+    "ex": "His wristwatch stopped at noon.",
+    "exTr": "Kol saati öğlen durdu."
+  },
+  "up-to-date--adj": {
+    "tr": "güncel",
+    "def": "Including the most recent information.",
+    "ex": "Keep the list up-to-date.",
+    "exTr": "Listeyi güncel tut."
+  },
+  "duvet--noun": {
+    "tr": "yorgan",
+    "def": "A soft thick cover for a bed.",
+    "ex": "She washed the duvet cover.",
+    "exTr": "Yorgan kılıfını yıkadı."
+  },
+  "motionless--adj": {
+    "tr": "hareketsiz",
+    "def": "Completely still, not moving at all.",
+    "ex": "The cat sat motionless.",
+    "exTr": "Kedi hareketsiz oturdu."
+  },
+  "webcam--noun": {
+    "tr": "web kamerası",
+    "def": "A small camera that sends pictures over the internet.",
+    "ex": "Turn your webcam on, please.",
+    "exTr": "Lütfen web kameranı aç."
+  },
+  "nervousness--noun": {
+    "tr": "gerginlik, sinirlilik",
+    "def": "The feeling of being worried and tense.",
+    "ex": "His nervousness showed in his voice.",
+    "exTr": "Gerginliği sesinden belli oluyordu."
+  },
+  "blogger--noun": {
+    "tr": "blog yazarı",
+    "def": "A person who writes a blog.",
+    "ex": "A food blogger wrote about us.",
+    "exTr": "Bir yemek blog yazarı bizden bahsetti."
+  },
+  "extensively--adv": {
+    "tr": "kapsamlı biçimde",
+    "def": "Over a wide area or in great detail.",
+    "ex": "He has travelled extensively.",
+    "exTr": "Kapsamlı biçimde seyahat etmiş."
+  },
+  "enrich--verb": {
+    "tr": "zenginleştirmek",
+    "def": "To improve the quality or value of something.",
+    "ex": "Compost enriches the soil.",
+    "exTr": "Kompost toprağı zenginleştirir."
+  },
+  "innermost--adj": {
+    "tr": "en içteki, en derin",
+    "def": "Furthest inside, or most private.",
+    "ex": "She shared her innermost fears.",
+    "exTr": "En derin korkularını paylaştı."
+  },
+  "shopper--noun": {
+    "tr": "alışveriş yapan kişi",
+    "def": "A person who is buying things in shops.",
+    "ex": "Shoppers filled the market.",
+    "exTr": "Alışveriş yapanlar pazarı doldurdu."
+  },
+  "ecology--noun": {
+    "tr": "ekoloji",
+    "def": "The study of how living things relate to their surroundings.",
+    "ex": "She lectures in marine ecology.",
+    "exTr": "Deniz ekolojisi dersi veriyor."
+  },
+  "firework--noun": {
+    "tr": "havai fişek",
+    "def": "A device that explodes with colour and noise.",
+    "ex": "One firework lit the whole sky.",
+    "exTr": "Bir havai fişek bütün gökyüzünü aydınlattı."
+  },
+  "unafraid--adj": {
+    "tr": "korkusuz",
+    "def": "Not frightened of something.",
+    "ex": "She was unafraid of the dark.",
+    "exTr": "Karanlıktan korkmuyordu."
+  },
+  "indirect--adj": {
+    "tr": "dolaylı",
+    "def": "Not going straight, or not caused directly.",
+    "ex": "We took an indirect route.",
+    "exTr": "Dolaylı bir yoldan gittik."
+  },
+  "doze--noun": {
+    "tr": "şekerleme, uyuklama",
+    "def": "A short light sleep.",
+    "ex": "He had a doze after lunch.",
+    "exTr": "Öğle yemeğinden sonra bir şekerleme yaptı."
+  },
+  "mountaintop--noun": {
+    "tr": "dağ zirvesi",
+    "def": "The highest part of a mountain.",
+    "ex": "Snow covers the mountaintop.",
+    "exTr": "Kar dağ zirvesini kaplıyor."
+  },
+  "paralyze--verb": {
+    "tr": "felç etmek",
+    "def": "To make someone unable to move, or to stop a system.",
+    "ex": "The strike paralyzed the port.",
+    "exTr": "Grev limanı felç etti."
+  },
+  "modem--noun": {
+    "tr": "modem",
+    "def": "A device that connects a computer to the internet.",
+    "ex": "Restart the modem, please.",
+    "exTr": "Lütfen modemi yeniden başlat."
+  },
+  "untidy--adj": {
+    "tr": "derli toplu olmayan",
+    "def": "Not neatly arranged.",
+    "ex": "His room is always untidy.",
+    "exTr": "Odası her zaman dağınık."
+  },
+  "dialog--noun": {
+    "tr": "diyalog",
+    "def": "A conversation, especially in a book or a film.",
+    "ex": "The dialog sounds natural.",
+    "exTr": "Diyalog doğal geliyor."
+  },
+  "annoyance--noun": {
+    "tr": "rahatsızlık, sinir",
+    "def": "A slightly angry feeling, or its cause.",
+    "ex": "The noise was a real annoyance.",
+    "exTr": "Gürültü gerçek bir rahatsızlıktı."
+  },
+  "limitation--noun": {
+    "tr": "sınırlama, kısıt",
+    "def": "Something that restricts what is possible.",
+    "ex": "The study has clear limitations.",
+    "exTr": "Çalışmanın açık kısıtları var."
+  },
+  "nightlife--noun": {
+    "tr": "gece hayatı",
+    "def": "The entertainment available in a place at night.",
+    "ex": "The town has little nightlife.",
+    "exTr": "Kasabada pek gece hayatı yok."
+  },
+  "handball--noun": {
+    "tr": "hentbol",
+    "def": "A team game where players throw a ball by hand.",
+    "ex": "She plays handball at school.",
+    "exTr": "Okulda hentbol oynuyor."
+  },
+  "narrate--verb": {
+    "tr": "anlatmak, seslendirmek",
+    "def": "To tell a story, or to speak over a film.",
+    "ex": "An actor narrates the film.",
+    "exTr": "Filmi bir oyuncu seslendiriyor."
+  },
+  "derive--verb": {
+    "tr": "türemek, elde etmek",
+    "def": "To come from a source, or to get something from it.",
+    "ex": "The word derives from Arabic.",
+    "exTr": "Kelime Arapçadan türemiş."
+  },
+  "continual--adj": {
+    "tr": "aralıksız, sürekli",
+    "def": "Repeated many times over a long period.",
+    "ex": "Continual noise ruined our sleep.",
+    "exTr": "Sürekli gürültü uykumuzu mahvetti."
+  },
+  "annually--adv": {
+    "tr": "yılda bir",
+    "def": "Once every year.",
+    "ex": "The festival is held annually.",
+    "exTr": "Festival yılda bir yapılıyor."
+  },
+  "intermediate--adj": {
+    "tr": "orta düzey",
+    "def": "Between the lowest and the highest level.",
+    "ex": "She joined the intermediate class.",
+    "exTr": "Orta düzey sınıfa katıldı."
+  },
+  "westward--adv": {
+    "tr": "batıya doğru",
+    "def": "Towards the west.",
+    "ex": "The road runs westward.",
+    "exTr": "Yol batıya doğru gidiyor."
+  },
+  "dustbin--noun": {
+    "tr": "çöp kovası",
+    "def": "A large container for rubbish, in British English.",
+    "ex": "The dustbin is by the gate.",
+    "exTr": "Çöp kovası kapının yanında."
+  },
+  "characterize--verb": {
+    "tr": "nitelendirmek",
+    "def": "To describe the typical qualities of something.",
+    "ex": "Heavy rain characterizes the region.",
+    "exTr": "Bölgeyi yoğun yağmur nitelendiriyor."
+  },
+  "vowel--noun": {
+    "tr": "ünlü harf",
+    "def": "A letter such as a, e, i, o or u.",
+    "ex": "Turkish has eight vowel letters.",
+    "exTr": "Türkçede sekiz ünlü harf var."
+  },
+  "oppress--verb": {
+    "tr": "ezmek, baskı yapmak",
+    "def": "To treat people cruelly and unfairly.",
+    "ex": "The regime oppressed its critics.",
+    "exTr": "Rejim eleştirenleri ezdi."
+  },
+  "uninteresting--adj": {
+    "tr": "ilgi çekmeyen",
+    "def": "Not interesting at all.",
+    "ex": "The lecture was uninteresting.",
+    "exTr": "Ders ilgi çekici değildi."
+  },
+  "brainstorming--noun": {
+    "tr": "beyin fırtınası",
+    "def": "A group activity to produce many ideas quickly.",
+    "ex": "We began with brainstorming.",
+    "exTr": "Beyin fırtınasıyla başladık."
+  },
+  "thunderous--adj": {
+    "tr": "gürleyen",
+    "def": "Extremely loud, like thunder.",
+    "ex": "There was thunderous applause.",
+    "exTr": "Gürleyen bir alkış koptu."
+  },
+  "outweigh--verb": {
+    "tr": "ağır basmak",
+    "def": "To be more important than something else.",
+    "ex": "The benefits outweigh the costs.",
+    "exTr": "Faydalar maliyetlere ağır basıyor."
+  },
+  "unify--verb": {
+    "tr": "birlik hâline getirmek",
+    "def": "To join separate parts into one whole.",
+    "ex": "The new law unified the system.",
+    "exTr": "Yeni yasa sistemi birleştirdi."
+  },
+  "tracksuit--noun": {
+    "tr": "eşofman",
+    "def": "Loose clothes worn for sport.",
+    "ex": "He trains in an old tracksuit.",
+    "exTr": "Eski bir eşofmanla antrenman yapıyor."
+  },
+  "fascinate--verb": {
+    "tr": "büyülemek, ilgisini çekmek",
+    "def": "To interest someone very strongly.",
+    "ex": "Insects fascinate her.",
+    "exTr": "Böcekler onu büyülüyor."
+  },
+  "biochemistry--noun": {
+    "tr": "biyokimya",
+    "def": "The study of chemical processes in living things.",
+    "ex": "He teaches biochemistry.",
+    "exTr": "Biyokimya dersi veriyor."
+  },
+  "easygoing--adj": {
+    "tr": "rahat, uysal",
+    "def": "Relaxed and not easily upset.",
+    "ex": "Our teacher is easygoing.",
+    "exTr": "Öğretmenimiz rahat biri."
+  },
+  "eco--noun": {
+    "tr": "eko, çevre dostu",
+    "def": "A short form used to mean environmental.",
+    "ex": "The hotel calls itself an eco resort.",
+    "exTr": "Otel kendine eko tesis diyor."
+  },
+  "glint--noun": {
+    "tr": "parıltı",
+    "def": "A quick flash of light.",
+    "ex": "A glint of gold caught his eye.",
+    "exTr": "Altın bir parıltı gözüne çarptı."
+  },
+  "fluently--adv": {
+    "tr": "akıcı biçimde",
+    "def": "Speaking a language easily and smoothly.",
+    "ex": "She speaks Arabic fluently.",
+    "exTr": "Arapçayı akıcı biçimde konuşuyor."
+  },
+  "sportsmanship--noun": {
+    "tr": "sportmenlik",
+    "def": "Fair and generous behaviour in sport.",
+    "ex": "He showed real sportsmanship.",
+    "exTr": "Gerçek bir sportmenlik gösterdi."
+  },
+  "devastate--verb": {
+    "tr": "harap etmek",
+    "def": "To destroy a place, or to shock someone deeply.",
+    "ex": "The flood devastated the valley.",
+    "exTr": "Sel vadiyi harap etti."
+  },
+  "grouping--noun": {
+    "tr": "gruplandırma",
+    "def": "A set of people or things put together.",
+    "ex": "The grouping by age worked well.",
+    "exTr": "Yaşa göre gruplandırma iyi işledi."
+  },
+  "transitional--adj": {
+    "tr": "geçiş dönemine ait",
+    "def": "Belonging to a period of change.",
+    "ex": "This is a transitional year.",
+    "exTr": "Bu bir geçiş yılı."
+  },
+  "overwork--noun": {
+    "tr": "aşırı çalışma",
+    "def": "Too much work over a long period.",
+    "ex": "He fell ill from overwork.",
+    "exTr": "Aşırı çalışmaktan hastalandı."
+  },
+  "backpacking--noun": {
+    "tr": "sırt çantalı gezi",
+    "def": "Travelling cheaply with your things in a backpack.",
+    "ex": "They went backpacking in Nepal.",
+    "exTr": "Nepal'de sırt çantalı geziye çıktılar."
+  },
+  "telecommunications--noun": {
+    "tr": "telekomünikasyon",
+    "def": "The sending of messages by phone and internet.",
+    "ex": "He works in telecommunications.",
+    "exTr": "Telekomünikasyon sektöründe çalışıyor."
+  },
+  "noisily--adv": {
+    "tr": "gürültülü biçimde",
+    "def": "In a way that makes a lot of noise.",
+    "ex": "The class entered noisily.",
+    "exTr": "Sınıf gürültülü biçimde içeri girdi."
+  },
+  "reunification--noun": {
+    "tr": "yeniden birleşme",
+    "def": "The joining of a divided country into one again.",
+    "ex": "Reunification took many years.",
+    "exTr": "Yeniden birleşme yıllar aldı."
+  },
+  "eagerness--noun": {
+    "tr": "heves, isteklilik",
+    "def": "Strong desire to do something.",
+    "ex": "Her eagerness impressed the coach.",
+    "exTr": "Hevesi antrenörü etkiledi."
+  },
+  "underline--verb": {
+    "tr": "altını çizmek",
+    "def": "To draw a line under a word, or to stress a point.",
+    "ex": "Underline the key words.",
+    "exTr": "Anahtar kelimelerin altını çiz."
+  },
+  "sundial--noun": {
+    "tr": "güneş saati",
+    "def": "An old device that shows time by a shadow.",
+    "ex": "A sundial stands in the garden.",
+    "exTr": "Bahçede bir güneş saati duruyor."
+  },
+  "calmness--noun": {
+    "tr": "sakinlik",
+    "def": "The state of being quiet and untroubled.",
+    "ex": "Her calmness helped everyone.",
+    "exTr": "Sakinliği herkese iyi geldi."
+  },
+  "schoolmate--noun": {
+    "tr": "okul arkadaşı",
+    "def": "A person who goes to the same school as you.",
+    "ex": "He met an old schoolmate.",
+    "exTr": "Eski bir okul arkadaşıyla karşılaştı."
+  },
+  "bilingual--adj": {
+    "tr": "iki dilli",
+    "def": "Able to speak two languages well.",
+    "ex": "Their children are bilingual.",
+    "exTr": "Çocukları iki dilli."
+  },
+  "sunbathe--verb": {
+    "tr": "güneşlenmek",
+    "def": "To lie in the sun to make your skin darker.",
+    "ex": "They sunbathed on the rocks.",
+    "exTr": "Kayalarda güneşlendiler."
+  },
+  "environmentalist--noun": {
+    "tr": "çevreci",
+    "def": "A person who works to protect nature.",
+    "ex": "An environmentalist spoke first.",
+    "exTr": "İlk olarak bir çevreci konuştu."
+  },
+  "nutrient--noun": {
+    "tr": "besin maddesi",
+    "def": "A substance that living things need to grow.",
+    "ex": "The soil lacks key nutrients.",
+    "exTr": "Toprakta önemli besin maddeleri eksik."
+  },
+  "northeastern--adj": {
+    "tr": "kuzeydoğudaki",
+    "def": "In or from the north-east part of a place.",
+    "ex": "Tea grows in northeastern provinces.",
+    "exTr": "Çay kuzeydoğu illerinde yetişiyor."
+  },
+  "hairdryer--noun": {
+    "tr": "saç kurutma makinesi",
+    "def": "A machine that blows warm air to dry hair.",
+    "ex": "The hairdryer stopped working.",
+    "exTr": "Saç kurutma makinesi bozuldu."
+  },
+  "snowboard--noun": {
+    "tr": "snowboard",
+    "def": "A wide board used to slide down snow.",
+    "ex": "He rented a snowboard.",
+    "exTr": "Bir snowboard kiraladı."
+  },
+  "enclose--verb": {
+    "tr": "eklemek, çevrelemek",
+    "def": "To put something inside a letter, or to surround a space.",
+    "ex": "I enclose a copy of the bill.",
+    "exTr": "Faturanın bir kopyasını ekliyorum."
+  },
+  "involuntarily--adv": {
+    "tr": "istem dışı",
+    "def": "Without meaning to or being able to stop it.",
+    "ex": "He shivered involuntarily.",
+    "exTr": "İstem dışı titredi."
+  },
+  "signpost--noun": {
+    "tr": "yön levhası",
+    "def": "A sign beside a road showing directions.",
+    "ex": "The signpost pointed left.",
+    "exTr": "Yön levhası solu gösteriyordu."
+  },
+  "hurriedly--adv": {
+    "tr": "aceleyle",
+    "def": "Doing something quickly because of little time.",
+    "ex": "She hurriedly packed a bag.",
+    "exTr": "Aceleyle bir çanta hazırladı."
+  },
+  "hand-held--adj": {
+    "tr": "elde taşınan",
+    "def": "Small enough to be held and used in one hand.",
+    "ex": "He used a hand-held camera.",
+    "exTr": "Elde taşınan bir kamera kullandı."
+  },
+  "settler--noun": {
+    "tr": "yerleşimci",
+    "def": "A person who goes to live in a new area.",
+    "ex": "The first settlers built by the river.",
+    "exTr": "İlk yerleşimciler nehir kenarına yerleşti."
+  },
+  "idiom--noun": {
+    "tr": "deyim",
+    "def": "A phrase whose meaning is not clear from its words.",
+    "ex": "Learn this idiom by heart.",
+    "exTr": "Bu deyimi ezberle."
+  },
+  "chronological--adj": {
+    "tr": "kronolojik",
+    "def": "Arranged in the order that events happened.",
+    "ex": "List the events in chronological order.",
+    "exTr": "Olayları kronolojik sırayla yaz."
+  },
+  "innovator--noun": {
+    "tr": "yenilikçi",
+    "def": "A person who introduces new ideas or methods.",
+    "ex": "She was an innovator in teaching.",
+    "exTr": "Öğretimde yenilikçi biriydi."
+  },
+  "acknowledgment--noun": {
+    "tr": "teşekkür, kabul",
+    "def": "A statement that you received or accept something.",
+    "ex": "We sent an acknowledgment by email.",
+    "exTr": "E-postayla bir teyit gönderdik."
+  },
+  "pullover--noun": {
+    "tr": "kazak (baştan geçme)",
+    "def": "A knitted top pulled over the head.",
+    "ex": "He wore a brown pullover.",
+    "exTr": "Kahverengi bir kazak giymişti."
+  },
+  "backache--noun": {
+    "tr": "sırt ağrısı",
+    "def": "A pain in your back.",
+    "ex": "Lifting boxes gave him backache.",
+    "exTr": "Kutu taşımak ona sırt ağrısı yaptı."
+  },
+  "uninterested--adj": {
+    "tr": "ilgisiz",
+    "def": "Not wanting to know about something.",
+    "ex": "He seemed uninterested in the offer.",
+    "exTr": "Teklife ilgisiz görünüyordu."
+  },
+  "saucepan--noun": {
+    "tr": "tencere (saplı)",
+    "def": "A deep cooking pot with a long handle.",
+    "ex": "Heat the milk in a saucepan.",
+    "exTr": "Sütü saplı bir tencerede ısıt."
+  }
+}

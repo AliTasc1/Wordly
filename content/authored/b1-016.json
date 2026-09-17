@@ -1,84 +1,487 @@
 {
-  "_meta": { "batch": "b1-016", "level": "B1", "range": "1197-1276" },
-
-  "sickness--noun": { "tr": "hastalık, mide bulantısı", "def": "The state of being ill, or the feeling of wanting to vomit.", "ex": "Travel sickness ruined the trip.", "exTr": "Yol tutması geziyi mahvetti." },
-  "customs--noun": { "tr": "gümrük", "def": "The place at a border where bags are checked.", "ex": "We waited an hour at customs.", "exTr": "Gümrükte bir saat bekledik." },
-  "shrimp--noun": { "tr": "karides", "def": "A small sea animal with a shell that is eaten.", "ex": "The soup contains shrimp.", "exTr": "Çorbada karides var." },
-  "household--noun": { "tr": "hane, ev halkı", "def": "All the people living together in one house.", "ex": "Each household received a letter.", "exTr": "Her haneye bir mektup geldi." },
-  "float--verb": { "tr": "yüzmek, su üstünde durmak", "def": "To stay on the surface of water or in air.", "ex": "Wood floats on water.", "exTr": "Tahta suyun üstünde durur." },
-  "curiosity--noun": { "tr": "merak", "def": "The wish to know or learn about something.", "ex": "Curiosity led him inside.", "exTr": "Merak onu içeri çekti." },
-  "shocking--adj": { "tr": "şok edici", "def": "Very surprising and upsetting.", "ex": "The report contains shocking figures.", "exTr": "Rapor şok edici rakamlar içeriyor." },
-  "forehead--noun": { "tr": "alın", "def": "The part of the face above the eyes.", "ex": "She touched his forehead.", "exTr": "Alnına dokundu." },
-  "reservation--noun": { "tr": "rezervasyon", "def": "An arrangement to keep a seat or a room for you.", "ex": "I made a reservation for two.", "exTr": "İki kişilik rezervasyon yaptırdım." },
-  "flu--noun": { "tr": "grip", "def": "An illness that gives you fever and aching.", "ex": "Half the class has flu.", "exTr": "Sınıfın yarısı grip." },
-  "peanut--noun": { "tr": "yer fıstığı", "def": "A small nut that grows under the ground.", "ex": "He is allergic to peanut oil.", "exTr": "Yer fıstığı yağına alerjisi var." },
-  "bracelet--noun": { "tr": "bileklik", "def": "A band of jewellery worn on the wrist.", "ex": "She lost her silver bracelet.", "exTr": "Gümüş bilekliğini kaybetti." },
-  "contain--verb": { "tr": "içermek", "def": "To have something inside.", "ex": "This drink contains no sugar.", "exTr": "Bu içecek şeker içermiyor." },
-  "gesture--noun": { "tr": "jest, hareket", "def": "A movement of the hand that shows meaning.", "ex": "He made a friendly gesture.", "exTr": "Dostça bir jest yaptı." },
-  "leap--verb": { "tr": "sıçramak, atlamak", "def": "To jump a long way or high.", "ex": "The cat leapt onto the wall.", "exTr": "Kedi duvara sıçradı." },
-  "jar--noun": { "tr": "kavanoz", "def": "A glass container with a wide mouth.", "ex": "Keep the honey in a jar.", "exTr": "Balı bir kavanozda sakla." },
-  "approximately--adv": { "tr": "yaklaşık olarak", "def": "Almost exactly but not completely.", "ex": "The trip takes approximately two hours.", "exTr": "Yolculuk yaklaşık iki saat sürüyor." },
-  "bounce--verb": { "tr": "sekmek, zıplamak", "def": "To hit a surface and move away from it again.", "ex": "The ball bounced off the wall.", "exTr": "Top duvardan sekti." },
-  "unlikely--adj": { "tr": "olası değil", "def": "Probably not going to happen or be true.", "ex": "Snow is unlikely this week.", "exTr": "Bu hafta kar olası değil." },
-  "volume--noun": { "tr": "ses düzeyi, hacim", "def": "How loud a sound is, or the space something fills.", "ex": "Turn the volume down.", "exTr": "Sesi kıs." },
-  "engage--verb": { "tr": "meşgul etmek, tutmak", "def": "To attract someone's interest, or to employ them.", "ex": "The story engaged the whole class.", "exTr": "Hikâye bütün sınıfın ilgisini çekti." },
-  "mutual--adj": { "tr": "karşılıklı", "def": "Felt or done by two people towards each other.", "ex": "They share a mutual respect.", "exTr": "Karşılıklı bir saygıları var." },
-  "offensive--adj": { "tr": "saldırgan, incitici", "def": "Rude in a way that upsets people.", "ex": "His remark was offensive.", "exTr": "Söylediği söz inciticiydi." },
-  "qualified--adj": { "tr": "nitelikli, ehliyetli", "def": "Having passed the training needed for a job.", "ex": "We need a qualified electrician.", "exTr": "Nitelikli bir elektrikçiye ihtiyacımız var." },
-  "poverty--noun": { "tr": "yoksulluk", "def": "The state of being very poor.", "ex": "The programme fights rural poverty.", "exTr": "Program kırsal yoksullukla mücadele ediyor." },
-  "leadership--noun": { "tr": "liderlik", "def": "The position of leading a group, or the skill of doing it.", "ex": "The team needs better leadership.", "exTr": "Takımın daha iyi liderliğe ihtiyacı var." },
-  "melt--verb": { "tr": "erimek, eritmek", "def": "To change from solid to liquid because of heat.", "ex": "The butter melted in the pan.", "exTr": "Tereyağı tavada eridi." },
-  "reserve--noun": { "tr": "rezerv, yedek", "def": "An amount kept for later, or protected land.", "ex": "The country has large gas reserves.", "exTr": "Ülkenin büyük gaz rezervleri var." },
-  "reserve--verb": { "tr": "ayırtmak", "def": "To arrange for something to be kept for you.", "ex": "I reserved two seats.", "exTr": "İki koltuk ayırttım." },
-  "eliminate--verb": { "tr": "ortadan kaldırmak, elemek", "def": "To remove something completely.", "ex": "The new filter eliminates dust.", "exTr": "Yeni filtre tozu ortadan kaldırıyor." },
-  "medium--adj": { "tr": "orta", "def": "Of middle size or level.", "ex": "Cook it over medium heat.", "exTr": "Orta ateşte pişir." },
-  "medium--noun": { "tr": "araç, ortam", "def": "A way of communicating or expressing something.", "ex": "Radio is still a powerful medium.", "exTr": "Radyo hâlâ güçlü bir araç." },
-  "messy--adj": { "tr": "dağınık", "def": "Dirty and untidy.", "ex": "His desk is always messy.", "exTr": "Masası her zaman dağınık." },
-  "stressed--adj": { "tr": "stresli", "def": "Feeling worried because of pressure.", "ex": "She was stressed before the exam.", "exTr": "Sınavdan önce stresliydi." },
-  "involve--verb": { "tr": "içermek, dahil etmek", "def": "To include something as a necessary part.", "ex": "The job involves some travel.", "exTr": "İş biraz seyahat içeriyor." },
-  "spectacular--adj": { "tr": "göz alıcı, muhteşem", "def": "Very impressive to look at.", "ex": "The view was spectacular.", "exTr": "Manzara göz alıcıydı." },
-  "reliable--adj": { "tr": "güvenilir", "def": "Able to be trusted to work or to be true.", "ex": "We need a reliable car.", "exTr": "Güvenilir bir arabaya ihtiyacımız var." },
-  "compound--noun": { "tr": "bileşik", "def": "A substance made of two or more elements.", "ex": "Water is a simple compound.", "exTr": "Su basit bir bileşiktir." },
-  "depth--noun": { "tr": "derinlik", "def": "How deep something is.", "ex": "The depth of the well is unknown.", "exTr": "Kuyunun derinliği bilinmiyor." },
-  "occur--verb": { "tr": "meydana gelmek, aklına gelmek", "def": "To happen, or to come into your mind.", "ex": "The accident occurred at dawn.", "exTr": "Kaza şafakta meydana geldi." },
-  "annual--adj": { "tr": "yıllık", "def": "Happening once every year.", "ex": "The annual report is ready.", "exTr": "Yıllık rapor hazır." },
-  "stall--noun": { "tr": "tezgâh", "def": "A small open shop in a market.", "ex": "She sells honey at a stall.", "exTr": "Bir tezgâhta bal satıyor." },
-  "literature--noun": { "tr": "edebiyat", "def": "Written works such as novels and poems.", "ex": "He studies Russian literature.", "exTr": "Rus edebiyatı okuyor." },
-  "sequence--noun": { "tr": "sıra, dizi", "def": "A set of things that follow each other in order.", "ex": "Put the photos in sequence.", "exTr": "Fotoğrafları sırayla diz." },
-  "congratulate--verb": { "tr": "tebrik etmek", "def": "To tell someone you are pleased about their success.", "ex": "Everyone congratulated the winner.", "exTr": "Herkes kazananı tebrik etti." },
-  "anxiety--noun": { "tr": "kaygı, endişe", "def": "A strong feeling of worry about the future.", "ex": "Exams cause real anxiety.", "exTr": "Sınavlar gerçek kaygı yaratıyor." },
-  "settlement--noun": { "tr": "yerleşim, uzlaşma", "def": "A small community, or an official agreement.", "ex": "The settlement dates from Roman times.", "exTr": "Yerleşim Roma dönemine dayanıyor." },
-  "nickname--noun": { "tr": "lakap, takma ad", "def": "An informal name friends use for you.", "ex": "His nickname is Uzun.", "exTr": "Lakabı Uzun." },
-  "dot--noun": { "tr": "nokta", "def": "A very small round mark.", "ex": "Put a dot above the letter.", "exTr": "Harfin üstüne bir nokta koy." },
-  "choir--noun": { "tr": "koro", "def": "A group of people who sing together.", "ex": "She sings in the school choir.", "exTr": "Okul korosunda şarkı söylüyor." },
-  "equally--adv": { "tr": "eşit olarak", "def": "In the same amount, or to the same degree.", "ex": "Divide the money equally.", "exTr": "Parayı eşit olarak böl." },
-  "hesitate--verb": { "tr": "tereddüt etmek", "def": "To pause before acting because you are unsure.", "ex": "Do not hesitate to ask.", "exTr": "Sormaktan çekinme." },
-  "hatch--noun": { "tr": "kapak, ambar kapağı", "def": "A small door in a floor, a wall or a ship.", "ex": "Close the hatch before sailing.", "exTr": "Denize açılmadan önce kapağı kapat." },
-  "persuade--verb": { "tr": "ikna etmek", "def": "To make someone agree by giving reasons.", "ex": "He persuaded me to join.", "exTr": "Beni katılmaya ikna etti." },
-  "industrial--adj": { "tr": "sınai, endüstriyel", "def": "Relating to factories and the making of goods.", "ex": "This is an industrial area.", "exTr": "Burası bir sanayi bölgesi." },
-  "regard--verb": { "tr": "saymak, addetmek", "def": "To think of someone or something in a certain way.", "ex": "They regard him as a friend.", "exTr": "Onu bir dost sayıyorlar." },
-  "fold--noun": { "tr": "kat, kıvrım", "def": "A line where something has been bent over.", "ex": "Iron along the fold.", "exTr": "Kıvrım boyunca ütüle." },
-  "fold--verb": { "tr": "katlamak", "def": "To bend something so one part lies on another.", "ex": "Fold the towels neatly.", "exTr": "Havluları düzgünce katla." },
-  "barbecue--verb": { "tr": "mangalda pişirmek", "def": "To cook food outdoors over a fire.", "ex": "We barbecued fish on the beach.", "exTr": "Plajda mangalda balık pişirdik." },
-  "scholarship--noun": { "tr": "burs", "def": "Money given to a student to pay for study.", "ex": "She won a full scholarship.", "exTr": "Tam burs kazandı." },
-  "initial--noun": { "tr": "baş harf", "def": "The first letter of a name.", "ex": "Write your initials here.", "exTr": "Baş harflerini buraya yaz." },
-  "laboratory--noun": { "tr": "laboratuvar", "def": "A room built for scientific work.", "ex": "The laboratory opens at eight.", "exTr": "Laboratuvar sekizde açılıyor." },
-  "landlord--noun": { "tr": "ev sahibi, mal sahibi", "def": "A person who rents out a house or a flat.", "ex": "Our landlord raised the rent.", "exTr": "Ev sahibimiz kirayı artırdı." },
-  "cultural--adj": { "tr": "kültürel", "def": "Relating to the art and customs of a society.", "ex": "The festival has cultural value.", "exTr": "Festivalin kültürel bir değeri var." },
-  "update--verb": { "tr": "güncellemek", "def": "To make something more modern or more current.", "ex": "Update the app before Monday.", "exTr": "Uygulamayı pazartesiden önce güncelle." },
-  "despair--noun": { "tr": "umutsuzluk, çaresizlik", "def": "The feeling of having lost all hope.", "ex": "He was close to despair.", "exTr": "Umutsuzluğun eşiğindeydi." },
-  "shiny--adj": { "tr": "parlak", "def": "Bright because it reflects light.", "ex": "The car looked shiny and new.", "exTr": "Araba parlak ve yeni görünüyordu." },
-  "representative--noun": { "tr": "temsilci", "def": "A person chosen to act or speak for others.", "ex": "Each class sends a representative.", "exTr": "Her sınıf bir temsilci gönderiyor." },
-  "telegram--noun": { "tr": "telgraf", "def": "A short message sent by wire in the past.", "ex": "His father sent a telegram.", "exTr": "Babası bir telgraf gönderdi." },
-  "magician--noun": { "tr": "sihirbaz", "def": "A person who performs magic tricks.", "ex": "A magician entertained the children.", "exTr": "Bir sihirbaz çocukları eğlendirdi." },
-  "conquer--verb": { "tr": "fethetmek, yenmek", "def": "To take control of a place by force.", "ex": "The army conquered the island.", "exTr": "Ordu adayı fethetti." },
-  "sadness--noun": { "tr": "hüzün, üzüntü", "def": "The feeling of being unhappy.", "ex": "There was sadness in her voice.", "exTr": "Sesinde hüzün vardı." },
-  "specialist--noun": { "tr": "uzman", "def": "A person with deep knowledge of one subject.", "ex": "She saw a heart specialist.", "exTr": "Bir kalp uzmanına göründü." },
-  "prescription--noun": { "tr": "reçete", "def": "A paper from a doctor allowing you to get medicine.", "ex": "Take the prescription to the chemist.", "exTr": "Reçeteyi eczaneye götür." },
-  "graduation--noun": { "tr": "mezuniyet", "def": "The ceremony when students finish their studies.", "ex": "Graduation is in late June.", "exTr": "Mezuniyet haziran sonunda." },
-  "lodge--noun": { "tr": "dağ evi, loca", "def": "A small house in the country, often for visitors.", "ex": "We stayed in a hunting lodge.", "exTr": "Bir av evinde kaldık." },
-  "conscious--adj": { "tr": "bilinçli, ayık", "def": "Awake and aware, or knowing about something.", "ex": "The patient is conscious again.", "exTr": "Hasta yeniden bilinci yerinde." },
-  "psychological--adj": { "tr": "psikolojik", "def": "Relating to the mind and how it works.", "ex": "The damage was psychological.", "exTr": "Hasar psikolojikti." },
-  "straw--noun": { "tr": "pipet, saman", "def": "A thin tube for drinking, or dry cut stems.", "ex": "She drank the juice with a straw.", "exTr": "Meyve suyunu pipetle içti." },
-  "accuse--verb": { "tr": "suçlamak", "def": "To say that someone has done something wrong.", "ex": "They accused him of cheating.", "exTr": "Onu kopya çekmekle suçladılar." }
+  "_meta": {
+    "batch": "b1-016",
+    "level": "B1",
+    "range": "1197-1276"
+  },
+  "sickness--noun": {
+    "tr": "hastalık, mide bulantısı",
+    "def": "The state of being ill, or the feeling of wanting to vomit.",
+    "ex": "Travel sickness ruined the trip.",
+    "exTr": "Yol tutması geziyi mahvetti."
+  },
+  "customs--noun": {
+    "tr": "gümrük",
+    "def": "The place at a border where bags are checked.",
+    "ex": "We waited an hour at customs.",
+    "exTr": "Gümrükte bir saat bekledik."
+  },
+  "shrimp--noun": {
+    "tr": "karides",
+    "def": "A small sea animal with a shell that is eaten.",
+    "ex": "The soup contains shrimp.",
+    "exTr": "Çorbada karides var."
+  },
+  "household--noun": {
+    "tr": "hane, ev halkı",
+    "def": "All the people living together in one house.",
+    "ex": "Each household received a letter.",
+    "exTr": "Her haneye bir mektup geldi."
+  },
+  "float--verb": {
+    "tr": "yüzmek, su üstünde durmak",
+    "def": "To stay on the surface of water or in air.",
+    "ex": "Wood floats on water.",
+    "exTr": "Tahta suyun üstünde durur."
+  },
+  "curiosity--noun": {
+    "tr": "merak",
+    "def": "The wish to know or learn about something.",
+    "ex": "Curiosity led him inside.",
+    "exTr": "Merak onu içeri çekti."
+  },
+  "shocking--adj": {
+    "tr": "şok edici",
+    "def": "Very surprising and upsetting.",
+    "ex": "The report contains shocking figures.",
+    "exTr": "Rapor şok edici rakamlar içeriyor."
+  },
+  "forehead--noun": {
+    "tr": "alın",
+    "def": "The part of the face above the eyes.",
+    "ex": "She touched his forehead.",
+    "exTr": "Alnına dokundu."
+  },
+  "reservation--noun": {
+    "tr": "rezervasyon",
+    "def": "An arrangement to keep a seat or a room for you.",
+    "ex": "I made a reservation for two.",
+    "exTr": "İki kişilik rezervasyon yaptırdım."
+  },
+  "flu--noun": {
+    "tr": "grip",
+    "def": "An illness that gives you fever and aching.",
+    "ex": "Half the class has flu.",
+    "exTr": "Sınıfın yarısı grip."
+  },
+  "peanut--noun": {
+    "tr": "yer fıstığı",
+    "def": "A small nut that grows under the ground.",
+    "ex": "He is allergic to peanut oil.",
+    "exTr": "Yer fıstığı yağına alerjisi var."
+  },
+  "bracelet--noun": {
+    "tr": "bileklik",
+    "def": "A band of jewellery worn on the wrist.",
+    "ex": "She lost her silver bracelet.",
+    "exTr": "Gümüş bilekliğini kaybetti."
+  },
+  "contain--verb": {
+    "tr": "içermek",
+    "def": "To have something inside.",
+    "ex": "This drink contains no sugar.",
+    "exTr": "Bu içecek şeker içermiyor."
+  },
+  "gesture--noun": {
+    "tr": "jest, hareket",
+    "def": "A movement of the hand that shows meaning.",
+    "ex": "He made a friendly gesture.",
+    "exTr": "Dostça bir jest yaptı."
+  },
+  "leap--verb": {
+    "tr": "sıçramak, atlamak",
+    "def": "To jump a long way or high.",
+    "ex": "The cat leapt onto the wall.",
+    "exTr": "Kedi duvara sıçradı."
+  },
+  "jar--noun": {
+    "tr": "kavanoz",
+    "def": "A glass container with a wide mouth.",
+    "ex": "Keep the honey in a jar.",
+    "exTr": "Balı bir kavanozda sakla."
+  },
+  "approximately--adv": {
+    "tr": "yaklaşık olarak",
+    "def": "Almost exactly but not completely.",
+    "ex": "The trip takes approximately two hours.",
+    "exTr": "Yolculuk yaklaşık iki saat sürüyor."
+  },
+  "bounce--verb": {
+    "tr": "sekmek, zıplamak",
+    "def": "To hit a surface and move away from it again.",
+    "ex": "The ball bounced off the wall.",
+    "exTr": "Top duvardan sekti."
+  },
+  "unlikely--adj": {
+    "tr": "olası değil",
+    "def": "Probably not going to happen or be true.",
+    "ex": "Snow is unlikely this week.",
+    "exTr": "Bu hafta kar olası değil."
+  },
+  "volume--noun": {
+    "tr": "ses düzeyi, hacim",
+    "def": "How loud a sound is, or the space something fills.",
+    "ex": "Turn the volume down.",
+    "exTr": "Sesi kıs."
+  },
+  "engage--verb": {
+    "tr": "meşgul etmek, tutmak",
+    "def": "To attract someone's interest, or to employ them.",
+    "ex": "The story engaged the whole class.",
+    "exTr": "Hikâye bütün sınıfın ilgisini çekti."
+  },
+  "mutual--adj": {
+    "tr": "karşılıklı",
+    "def": "Felt or done by two people towards each other.",
+    "ex": "They share a mutual respect.",
+    "exTr": "Karşılıklı bir saygıları var."
+  },
+  "offensive--adj": {
+    "tr": "saldırgan, incitici",
+    "def": "Rude in a way that upsets people.",
+    "ex": "His remark was offensive.",
+    "exTr": "Söylediği söz inciticiydi."
+  },
+  "qualified--adj": {
+    "tr": "nitelikli, ehliyetli",
+    "def": "Having passed the training needed for a job.",
+    "ex": "We need a qualified electrician.",
+    "exTr": "Nitelikli bir elektrikçiye ihtiyacımız var."
+  },
+  "poverty--noun": {
+    "tr": "yoksulluk",
+    "def": "The state of being very poor.",
+    "ex": "The programme fights rural poverty.",
+    "exTr": "Program kırsal yoksullukla mücadele ediyor."
+  },
+  "leadership--noun": {
+    "tr": "liderlik",
+    "def": "The position of leading a group, or the skill of doing it.",
+    "ex": "The team needs better leadership.",
+    "exTr": "Takımın daha iyi liderliğe ihtiyacı var."
+  },
+  "melt--verb": {
+    "tr": "erimek, eritmek",
+    "def": "To change from solid to liquid because of heat.",
+    "ex": "The butter melted in the pan.",
+    "exTr": "Tereyağı tavada eridi."
+  },
+  "reserve--noun": {
+    "tr": "rezerv, yedek",
+    "def": "An amount kept for later, or protected land.",
+    "ex": "The country has large gas reserves.",
+    "exTr": "Ülkenin büyük gaz rezervleri var."
+  },
+  "reserve--verb": {
+    "tr": "ayırtmak",
+    "def": "To arrange for something to be kept for you.",
+    "ex": "I reserved two seats.",
+    "exTr": "İki koltuk ayırttım."
+  },
+  "eliminate--verb": {
+    "tr": "ortadan kaldırmak, elemek",
+    "def": "To remove something completely.",
+    "ex": "The new filter eliminates dust.",
+    "exTr": "Yeni filtre tozu ortadan kaldırıyor."
+  },
+  "medium--adj": {
+    "tr": "orta",
+    "def": "Of middle size or level.",
+    "ex": "Cook it over medium heat.",
+    "exTr": "Orta ateşte pişir."
+  },
+  "medium--noun": {
+    "tr": "araç, ortam",
+    "def": "A way of communicating or expressing something.",
+    "ex": "Radio is still a powerful medium.",
+    "exTr": "Radyo hâlâ güçlü bir araç."
+  },
+  "messy--adj": {
+    "tr": "dağınık",
+    "def": "Dirty and untidy.",
+    "ex": "His desk is always messy.",
+    "exTr": "Masası her zaman dağınık."
+  },
+  "stressed--adj": {
+    "tr": "stresli",
+    "def": "Feeling worried because of pressure.",
+    "ex": "She was stressed before the exam.",
+    "exTr": "Sınavdan önce stresliydi."
+  },
+  "involve--verb": {
+    "tr": "içermek, dahil etmek",
+    "def": "To include something as a necessary part.",
+    "ex": "The job involves some travel.",
+    "exTr": "İş biraz seyahat içeriyor."
+  },
+  "spectacular--adj": {
+    "tr": "göz alıcı, muhteşem",
+    "def": "Very impressive to look at.",
+    "ex": "The view was spectacular.",
+    "exTr": "Manzara göz alıcıydı."
+  },
+  "reliable--adj": {
+    "tr": "güvenilir",
+    "def": "Able to be trusted to work or to be true.",
+    "ex": "We need a reliable car.",
+    "exTr": "Güvenilir bir arabaya ihtiyacımız var."
+  },
+  "compound--noun": {
+    "tr": "bileşik",
+    "def": "A substance made of two or more elements.",
+    "ex": "Water is a simple compound.",
+    "exTr": "Su basit bir bileşiktir."
+  },
+  "depth--noun": {
+    "tr": "derinlik",
+    "def": "How deep something is.",
+    "ex": "The depth of the well is unknown.",
+    "exTr": "Kuyunun derinliği bilinmiyor."
+  },
+  "occur--verb": {
+    "tr": "meydana gelmek, aklına gelmek",
+    "def": "To happen, or to come into your mind.",
+    "ex": "The accident occurred at dawn.",
+    "exTr": "Kaza şafakta meydana geldi."
+  },
+  "annual--adj": {
+    "tr": "yıllık",
+    "def": "Happening once every year.",
+    "ex": "The annual report is ready.",
+    "exTr": "Yıllık rapor hazır."
+  },
+  "stall--noun": {
+    "tr": "tezgâh",
+    "def": "A small open shop in a market.",
+    "ex": "She sells honey at a stall.",
+    "exTr": "Bir tezgâhta bal satıyor."
+  },
+  "literature--noun": {
+    "tr": "edebiyat",
+    "def": "Written works such as novels and poems.",
+    "ex": "He studies Russian literature.",
+    "exTr": "Rus edebiyatı okuyor."
+  },
+  "sequence--noun": {
+    "tr": "sıra, dizi",
+    "def": "A set of things that follow each other in order.",
+    "ex": "Put the photos in sequence.",
+    "exTr": "Fotoğrafları sırayla diz."
+  },
+  "congratulate--verb": {
+    "tr": "tebrik etmek",
+    "def": "To tell someone you are pleased about their success.",
+    "ex": "Everyone congratulated the winner.",
+    "exTr": "Herkes kazananı tebrik etti."
+  },
+  "anxiety--noun": {
+    "tr": "kaygı, endişe",
+    "def": "A strong feeling of worry about the future.",
+    "ex": "Exams cause real anxiety.",
+    "exTr": "Sınavlar gerçek kaygı yaratıyor."
+  },
+  "settlement--noun": {
+    "tr": "yerleşim, uzlaşma",
+    "def": "A small community, or an official agreement.",
+    "ex": "The settlement dates from Roman times.",
+    "exTr": "Yerleşim Roma dönemine dayanıyor."
+  },
+  "nickname--noun": {
+    "tr": "lakap, takma ad",
+    "def": "An informal name friends use for you.",
+    "ex": "His nickname is Uzun.",
+    "exTr": "Lakabı Uzun."
+  },
+  "dot--noun": {
+    "tr": "nokta",
+    "def": "A very small round mark.",
+    "ex": "Put a dot above the letter.",
+    "exTr": "Harfin üstüne bir nokta koy."
+  },
+  "choir--noun": {
+    "tr": "koro",
+    "def": "A group of people who sing together.",
+    "ex": "She sings in the school choir.",
+    "exTr": "Okul korosunda şarkı söylüyor."
+  },
+  "equally--adv": {
+    "tr": "eşit olarak",
+    "def": "In the same amount, or to the same degree.",
+    "ex": "Divide the money equally.",
+    "exTr": "Parayı eşit olarak böl."
+  },
+  "hesitate--verb": {
+    "tr": "tereddüt etmek",
+    "def": "To pause before acting because you are unsure.",
+    "ex": "Do not hesitate to ask.",
+    "exTr": "Sormaktan çekinme."
+  },
+  "hatch--noun": {
+    "tr": "kapak, ambar kapağı",
+    "def": "A small door in a floor, a wall or a ship.",
+    "ex": "Close the hatch before sailing.",
+    "exTr": "Denize açılmadan önce kapağı kapat."
+  },
+  "persuade--verb": {
+    "tr": "razı etmek",
+    "def": "To make someone agree by giving reasons.",
+    "ex": "He persuaded me to join.",
+    "exTr": "Beni katılmaya ikna etti."
+  },
+  "industrial--adj": {
+    "tr": "sınai, endüstriyel",
+    "def": "Relating to factories and the making of goods.",
+    "ex": "This is an industrial area.",
+    "exTr": "Burası bir sanayi bölgesi."
+  },
+  "regard--verb": {
+    "tr": "saymak, addetmek",
+    "def": "To think of someone or something in a certain way.",
+    "ex": "They regard him as a friend.",
+    "exTr": "Onu bir dost sayıyorlar."
+  },
+  "fold--noun": {
+    "tr": "kat, kıvrım",
+    "def": "A line where something has been bent over.",
+    "ex": "Iron along the fold.",
+    "exTr": "Kıvrım boyunca ütüle."
+  },
+  "fold--verb": {
+    "tr": "katlamak",
+    "def": "To bend something so one part lies on another.",
+    "ex": "Fold the towels neatly.",
+    "exTr": "Havluları düzgünce katla."
+  },
+  "barbecue--verb": {
+    "tr": "mangalda pişirmek",
+    "def": "To cook food outdoors over a fire.",
+    "ex": "We barbecued fish on the beach.",
+    "exTr": "Plajda mangalda balık pişirdik."
+  },
+  "scholarship--noun": {
+    "tr": "burs",
+    "def": "Money given to a student to pay for study.",
+    "ex": "She won a full scholarship.",
+    "exTr": "Tam burs kazandı."
+  },
+  "initial--noun": {
+    "tr": "baş harf",
+    "def": "The first letter of a name.",
+    "ex": "Write your initials here.",
+    "exTr": "Baş harflerini buraya yaz."
+  },
+  "laboratory--noun": {
+    "tr": "laboratuvar",
+    "def": "A room built for scientific work.",
+    "ex": "The laboratory opens at eight.",
+    "exTr": "Laboratuvar sekizde açılıyor."
+  },
+  "landlord--noun": {
+    "tr": "ev sahibi, mal sahibi",
+    "def": "A person who rents out a house or a flat.",
+    "ex": "Our landlord raised the rent.",
+    "exTr": "Ev sahibimiz kirayı artırdı."
+  },
+  "cultural--adj": {
+    "tr": "kültürel",
+    "def": "Relating to the art and customs of a society.",
+    "ex": "The festival has cultural value.",
+    "exTr": "Festivalin kültürel bir değeri var."
+  },
+  "update--verb": {
+    "tr": "güncellemek",
+    "def": "To make something more modern or more current.",
+    "ex": "Update the app before Monday.",
+    "exTr": "Uygulamayı pazartesiden önce güncelle."
+  },
+  "despair--noun": {
+    "tr": "umutsuzluk, çaresizlik",
+    "def": "The feeling of having lost all hope.",
+    "ex": "He was close to despair.",
+    "exTr": "Umutsuzluğun eşiğindeydi."
+  },
+  "shiny--adj": {
+    "tr": "parlak",
+    "def": "Bright because it reflects light.",
+    "ex": "The car looked shiny and new.",
+    "exTr": "Araba parlak ve yeni görünüyordu."
+  },
+  "representative--noun": {
+    "tr": "temsilci",
+    "def": "A person chosen to act or speak for others.",
+    "ex": "Each class sends a representative.",
+    "exTr": "Her sınıf bir temsilci gönderiyor."
+  },
+  "telegram--noun": {
+    "tr": "telgraf",
+    "def": "A short message sent by wire in the past.",
+    "ex": "His father sent a telegram.",
+    "exTr": "Babası bir telgraf gönderdi."
+  },
+  "magician--noun": {
+    "tr": "sihirbaz",
+    "def": "A person who performs magic tricks.",
+    "ex": "A magician entertained the children.",
+    "exTr": "Bir sihirbaz çocukları eğlendirdi."
+  },
+  "conquer--verb": {
+    "tr": "fethetmek, yenmek",
+    "def": "To take control of a place by force.",
+    "ex": "The army conquered the island.",
+    "exTr": "Ordu adayı fethetti."
+  },
+  "sadness--noun": {
+    "tr": "hüzün, üzüntü",
+    "def": "The feeling of being unhappy.",
+    "ex": "There was sadness in her voice.",
+    "exTr": "Sesinde hüzün vardı."
+  },
+  "specialist--noun": {
+    "tr": "uzman",
+    "def": "A person with deep knowledge of one subject.",
+    "ex": "She saw a heart specialist.",
+    "exTr": "Bir kalp uzmanına göründü."
+  },
+  "prescription--noun": {
+    "tr": "reçete",
+    "def": "A paper from a doctor allowing you to get medicine.",
+    "ex": "Take the prescription to the chemist.",
+    "exTr": "Reçeteyi eczaneye götür."
+  },
+  "graduation--noun": {
+    "tr": "mezuniyet",
+    "def": "The ceremony when students finish their studies.",
+    "ex": "Graduation is in late June.",
+    "exTr": "Mezuniyet haziran sonunda."
+  },
+  "lodge--noun": {
+    "tr": "dağ evi, loca",
+    "def": "A small house in the country, often for visitors.",
+    "ex": "We stayed in a hunting lodge.",
+    "exTr": "Bir av evinde kaldık."
+  },
+  "conscious--adj": {
+    "tr": "bilinçli, ayık",
+    "def": "Awake and aware, or knowing about something.",
+    "ex": "The patient is conscious again.",
+    "exTr": "Hasta yeniden bilinci yerinde."
+  },
+  "psychological--adj": {
+    "tr": "psikolojik",
+    "def": "Relating to the mind and how it works.",
+    "ex": "The damage was psychological.",
+    "exTr": "Hasar psikolojikti."
+  },
+  "straw--noun": {
+    "tr": "pipet, saman",
+    "def": "A thin tube for drinking, or dry cut stems.",
+    "ex": "She drank the juice with a straw.",
+    "exTr": "Meyve suyunu pipetle içti."
+  },
+  "accuse--verb": {
+    "tr": "suçlamak",
+    "def": "To say that someone has done something wrong.",
+    "ex": "They accused him of cheating.",
+    "exTr": "Onu kopya çekmekle suçladılar."
+  }
 }

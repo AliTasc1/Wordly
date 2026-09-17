@@ -1,0 +1,511 @@
+{
+  "_meta": {
+    "batch": "b1-028",
+    "level": "B1",
+    "range": "2150-2234"
+  },
+  "greenhouse--noun": {
+    "tr": "sera",
+    "def": "A glass building where plants are grown.",
+    "ex": "Tomatoes grow in the greenhouse.",
+    "exTr": "Domatesler serada yetişiyor."
+  },
+  "hardship--noun": {
+    "tr": "sıkıntı, zorluk",
+    "def": "A difficult situation, especially without money.",
+    "ex": "The family faced real hardship.",
+    "exTr": "Aile gerçek bir sıkıntıyla karşılaştı."
+  },
+  "lovingly--adv": {
+    "tr": "sevgiyle",
+    "def": "In a way that shows deep affection.",
+    "ex": "She lovingly wrapped the gift.",
+    "exTr": "Hediyeyi sevgiyle sardı."
+  },
+  "tasteless--adj": {
+    "tr": "tatsız, zevksiz",
+    "def": "Having no flavour, or showing bad judgement.",
+    "ex": "The soup was completely tasteless.",
+    "exTr": "Çorba tamamen tatsızdı."
+  },
+  "emphasize--verb": {
+    "tr": "önemle belirtmek",
+    "def": "To say strongly that something is important.",
+    "ex": "He emphasized the need for care.",
+    "exTr": "Dikkat gereğini vurguladı."
+  },
+  "climber--noun": {
+    "tr": "tırmanıcı, dağcı",
+    "def": "A person who climbs mountains or rocks.",
+    "ex": "The climber rested on a ledge.",
+    "exTr": "Dağcı bir çıkıntıda dinlendi."
+  },
+  "recycled--adj": {
+    "tr": "geri dönüştürülmüş",
+    "def": "Made from material that was used before.",
+    "ex": "The bag is recycled paper.",
+    "exTr": "Çanta geri dönüştürülmüş kâğıttan."
+  },
+  "diligent--adj": {
+    "tr": "gayretli, özenli",
+    "def": "Working carefully and steadily.",
+    "ex": "He is a diligent worker.",
+    "exTr": "Gayretli bir işçi."
+  },
+  "nutritious--adj": {
+    "tr": "besleyici",
+    "def": "Containing what the body needs to stay healthy.",
+    "ex": "Lentils are cheap and nutritious.",
+    "exTr": "Mercimek ucuz ve besleyici."
+  },
+  "purify--verb": {
+    "tr": "arıtmak, saflaştırmak",
+    "def": "To remove dirt or harmful things from something.",
+    "ex": "The plant purifies the water.",
+    "exTr": "Tesis suyu arıtıyor."
+  },
+  "mislead--verb": {
+    "tr": "yanıltmak",
+    "def": "To make someone believe something untrue.",
+    "ex": "The label misled many buyers.",
+    "exTr": "Etiket birçok alıcıyı yanılttı."
+  },
+  "timely--adj": {
+    "tr": "zamanında, yerinde",
+    "def": "Happening at exactly the right moment.",
+    "ex": "It was a timely warning.",
+    "exTr": "Zamanında bir uyarıydı."
+  },
+  "similarity--noun": {
+    "tr": "benzeşme",
+    "def": "The state of being alike in some way.",
+    "ex": "There is a clear similarity.",
+    "exTr": "Açık bir benzerlik var."
+  },
+  "next-door--adj": {
+    "tr": "yan kapıdaki, komşu",
+    "def": "Living or being in the house beside yours.",
+    "ex": "Our next-door neighbour is helpful.",
+    "exTr": "Yan komşumuz yardımsever."
+  },
+  "revise--verb": {
+    "tr": "gözden geçirmek, tekrar etmek",
+    "def": "To change a text, or to study again before an exam.",
+    "ex": "She revised the chapter twice.",
+    "exTr": "Bölümü iki kez gözden geçirdi."
+  },
+  "graph--noun": {
+    "tr": "grafik",
+    "def": "A drawing that shows how numbers relate.",
+    "ex": "The graph shows a clear rise.",
+    "exTr": "Grafik net bir artış gösteriyor."
+  },
+  "humorous--adj": {
+    "tr": "esprili",
+    "def": "Funny and amusing.",
+    "ex": "He wrote a humorous letter.",
+    "exTr": "Esprili bir mektup yazdı."
+  },
+  "guitarist--noun": {
+    "tr": "gitarist",
+    "def": "A person who plays the guitar.",
+    "ex": "Their guitarist is only sixteen.",
+    "exTr": "Gitaristleri daha on altı yaşında."
+  },
+  "humid--adj": {
+    "tr": "nemli",
+    "def": "With a lot of water in the air.",
+    "ex": "Summers here are hot and humid.",
+    "exTr": "Buradaki yazlar sıcak ve nemli."
+  },
+  "barman--noun": {
+    "tr": "barmen",
+    "def": "A man who serves drinks in a bar.",
+    "ex": "The barman brought our order.",
+    "exTr": "Barmen siparişimizi getirdi."
+  },
+  "cv--noun": {
+    "tr": "özgeçmiş",
+    "def": "A document listing your education and work history.",
+    "ex": "Send your cv with the letter.",
+    "exTr": "Özgeçmişini mektupla birlikte gönder."
+  },
+  "hearted--adj": {
+    "tr": "kalpli, yürekli",
+    "def": "Used after a word to describe someone's nature.",
+    "ex": "She is a kind hearted woman.",
+    "exTr": "İyi kalpli bir kadın."
+  },
+  "noticeable--adj": {
+    "tr": "fark edilir, göze çarpan",
+    "def": "Easy to see or to notice.",
+    "ex": "There is a noticeable difference.",
+    "exTr": "Fark edilir bir farklılık var."
+  },
+  "checkout--noun": {
+    "tr": "kasa, çıkış işlemi",
+    "def": "The place where you pay in a shop.",
+    "ex": "The queue at checkout was long.",
+    "exTr": "Kasadaki kuyruk uzundu."
+  },
+  "deficiency--noun": {
+    "tr": "eksiklik, yetersizlik",
+    "def": "A lack of something the body or a system needs.",
+    "ex": "Iron deficiency causes tiredness.",
+    "exTr": "Demir eksikliği yorgunluğa yol açar."
+  },
+  "advert--noun": {
+    "tr": "ilan, reklam",
+    "def": "A short advertisement, in British English.",
+    "ex": "I saw the advert in a magazine.",
+    "exTr": "Reklamı bir dergide gördüm."
+  },
+  "warranty--noun": {
+    "tr": "garanti belgesi",
+    "def": "A written promise to repair a product if it fails.",
+    "ex": "The warranty lasts two years.",
+    "exTr": "Garanti iki yıl sürüyor."
+  },
+  "indirectly--adv": {
+    "tr": "dolaylı olarak",
+    "def": "Not in a direct way, through something else.",
+    "ex": "The rule affects us indirectly.",
+    "exTr": "Kural bizi dolaylı olarak etkiliyor."
+  },
+  "scenic--adj": {
+    "tr": "manzaralı",
+    "def": "Having beautiful natural views.",
+    "ex": "We took the scenic route.",
+    "exTr": "Manzaralı yoldan gittik."
+  },
+  "aerobics--noun": {
+    "tr": "aerobik",
+    "def": "Energetic exercises done to music.",
+    "ex": "She teaches aerobics on Tuesdays.",
+    "exTr": "Salı günleri aerobik dersi veriyor."
+  },
+  "intermission--noun": {
+    "tr": "ara (gösteri)",
+    "def": "A short break in a play or a concert.",
+    "ex": "We bought tea at the intermission.",
+    "exTr": "Arada çay aldık."
+  },
+  "unfriendly--adj": {
+    "tr": "soğuk, dostça olmayan",
+    "def": "Not kind or welcoming.",
+    "ex": "The waiter seemed unfriendly.",
+    "exTr": "Garson soğuk görünüyordu."
+  },
+  "usage--noun": {
+    "tr": "kullanım",
+    "def": "The way words are used, or how much is used.",
+    "ex": "Water usage fell this year.",
+    "exTr": "Su kullanımı bu yıl düştü."
+  },
+  "retrospect--noun": {
+    "tr": "geriye bakış",
+    "def": "Thinking about the past with present knowledge.",
+    "ex": "In retrospect, we were lucky.",
+    "exTr": "Geriye bakınca şanslıymışız."
+  },
+  "farthest--adv": {
+    "tr": "en uzağa, en uzakta",
+    "def": "At the greatest distance.",
+    "ex": "She lives farthest from school.",
+    "exTr": "Okula en uzakta o oturuyor."
+  },
+  "fondness--noun": {
+    "tr": "düşkünlük, sevgi",
+    "def": "A feeling of liking someone or something.",
+    "ex": "He has a fondness for old films.",
+    "exTr": "Eski filmlere bir düşkünlüğü var."
+  },
+  "complement--noun": {
+    "tr": "tamamlayıcı",
+    "def": "Something that goes well with another thing.",
+    "ex": "The sauce is a fine complement.",
+    "exTr": "Sos güzel bir tamamlayıcı."
+  },
+  "flunk--verb": {
+    "tr": "kalmak (sınavda)",
+    "def": "To fail a test, in American informal English.",
+    "ex": "He flunked the maths exam.",
+    "exTr": "Matematik sınavında kaldı."
+  },
+  "participant--noun": {
+    "tr": "katılımcı",
+    "def": "A person who takes part in an activity.",
+    "ex": "Each participant got a badge.",
+    "exTr": "Her katılımcıya bir rozet verildi."
+  },
+  "overwhelm--verb": {
+    "tr": "altında bırakmak, boğmak",
+    "def": "To affect someone so strongly they cannot cope.",
+    "ex": "The emails overwhelmed her.",
+    "exTr": "E-postalar altından kalkamayacağı kadar çoktu."
+  },
+  "constitute--verb": {
+    "tr": "oluşturmak, teşkil etmek",
+    "def": "To form or be the parts of something.",
+    "ex": "Women constitute half the staff.",
+    "exTr": "Kadınlar personelin yarısını oluşturuyor."
+  },
+  "nationalist--noun": {
+    "tr": "milliyetçi",
+    "def": "A person who strongly supports their own nation.",
+    "ex": "The nationalist gave a long speech.",
+    "exTr": "Milliyetçi uzun bir konuşma yaptı."
+  },
+  "storyteller--noun": {
+    "tr": "hikâye anlatıcısı",
+    "def": "A person who tells stories well.",
+    "ex": "Grandfather was a fine storyteller.",
+    "exTr": "Dedem iyi bir hikâye anlatıcısıydı."
+  },
+  "illuminate--verb": {
+    "tr": "aydınlatmak",
+    "def": "To give light to a place, or to make something clear.",
+    "ex": "Lamps illuminate the courtyard.",
+    "exTr": "Lambalar avluyu aydınlatıyor."
+  },
+  "questionnaire--noun": {
+    "tr": "anket formu",
+    "def": "A set of written questions used to collect information.",
+    "ex": "Please complete the questionnaire.",
+    "exTr": "Lütfen anket formunu doldurun."
+  },
+  "internationally--adv": {
+    "tr": "uluslararası düzeyde",
+    "def": "Among or between different countries.",
+    "ex": "The band is internationally known.",
+    "exTr": "Grup uluslararası düzeyde tanınıyor."
+  },
+  "anxiously--adv": {
+    "tr": "endişeyle",
+    "def": "In a worried and nervous way.",
+    "ex": "She waited anxiously by the phone.",
+    "exTr": "Telefonun yanında endişeyle bekledi."
+  },
+  "golfer--noun": {
+    "tr": "golfçü",
+    "def": "A person who plays golf.",
+    "ex": "The golfer won three matches.",
+    "exTr": "Golfçü üç maç kazandı."
+  },
+  "snowstorm--noun": {
+    "tr": "kar fırtınası",
+    "def": "A storm with strong wind and heavy snow.",
+    "ex": "A snowstorm closed the pass.",
+    "exTr": "Kar fırtınası geçidi kapattı."
+  },
+  "simplify--verb": {
+    "tr": "basitleştirmek",
+    "def": "To make something easier to do or understand.",
+    "ex": "They simplified the form.",
+    "exTr": "Formu basitleştirdiler."
+  },
+  "systematic--adj": {
+    "tr": "sistemli",
+    "def": "Done according to a careful plan.",
+    "ex": "They made a systematic search.",
+    "exTr": "Sistemli bir arama yaptılar."
+  },
+  "viewpoint--noun": {
+    "tr": "bakış açısı",
+    "def": "A way of thinking about a subject.",
+    "ex": "Explain it from her viewpoint.",
+    "exTr": "Onun bakış açısından açıkla."
+  },
+  "rainfall--noun": {
+    "tr": "yağış miktarı",
+    "def": "The amount of rain that falls in a place.",
+    "ex": "Rainfall was low last winter.",
+    "exTr": "Geçen kış yağış azdı."
+  },
+  "furnish--verb": {
+    "tr": "döşemek, sağlamak",
+    "def": "To put furniture in a room, or to supply something.",
+    "ex": "They furnished the flat cheaply.",
+    "exTr": "Daireyi ucuza döşediler."
+  },
+  "northwestern--adj": {
+    "tr": "kuzeybatıdaki",
+    "def": "In or from the north-west part of a place.",
+    "ex": "Rain fell in northwestern areas.",
+    "exTr": "Kuzeybatı bölgelerine yağmur yağdı."
+  },
+  "ecological--adj": {
+    "tr": "ekolojik",
+    "def": "Relating to living things and their environment.",
+    "ex": "The fire had ecological effects.",
+    "exTr": "Yangının ekolojik etkileri oldu."
+  },
+  "skyscraper--noun": {
+    "tr": "gökdelen",
+    "def": "A very tall building in a city.",
+    "ex": "A new skyscraper opened downtown.",
+    "exTr": "Şehir merkezinde yeni bir gökdelen açıldı."
+  },
+  "unfairly--adv": {
+    "tr": "haksız biçimde",
+    "def": "In a way that is not right or equal.",
+    "ex": "He was unfairly treated.",
+    "exTr": "Ona haksız davranıldı."
+  },
+  "revision--noun": {
+    "tr": "gözden geçirme, tekrar",
+    "def": "A change to a text, or study before an exam.",
+    "ex": "The revision took a week.",
+    "exTr": "Gözden geçirme bir hafta sürdü."
+  },
+  "lessen--verb": {
+    "tr": "azaltmak, hafifletmek",
+    "def": "To make something smaller or weaker.",
+    "ex": "The pill lessens the pain.",
+    "exTr": "Hap ağrıyı hafifletiyor."
+  },
+  "carelessness--noun": {
+    "tr": "dikkatsizlik",
+    "def": "The fault of not paying enough attention.",
+    "ex": "Carelessness caused the accident.",
+    "exTr": "Kazaya dikkatsizlik yol açtı."
+  },
+  "daze--noun": {
+    "tr": "sersemlik",
+    "def": "A confused state in which you cannot think clearly.",
+    "ex": "He walked out in a daze.",
+    "exTr": "Sersem bir hâlde dışarı çıktı."
+  },
+  "warmly--adv": {
+    "tr": "sıcak bir şekilde",
+    "def": "In a friendly way, or with warm clothes.",
+    "ex": "They welcomed us warmly.",
+    "exTr": "Bizi sıcak bir şekilde karşıladılar."
+  },
+  "piety--noun": {
+    "tr": "dindarlık",
+    "def": "Strong respect for God and religious duty.",
+    "ex": "He was known for his piety.",
+    "exTr": "Dindarlığıyla tanınırdı."
+  },
+  "takeaway--noun": {
+    "tr": "paket servis, al götür",
+    "def": "A meal bought to eat at home, in British English.",
+    "ex": "We ordered a takeaway.",
+    "exTr": "Paket servis sipariş ettik."
+  },
+  "carelessly--adv": {
+    "tr": "dikkatsizce",
+    "def": "Without paying enough attention.",
+    "ex": "He carelessly left the tap running.",
+    "exTr": "Dikkatsizce musluğu açık bıraktı."
+  },
+  "informative--adj": {
+    "tr": "bilgilendirici",
+    "def": "Giving useful information.",
+    "ex": "The talk was very informative.",
+    "exTr": "Konuşma çok bilgilendiriciydi."
+  },
+  "shadowy--adj": {
+    "tr": "gölgeli, karanlık",
+    "def": "Dark and full of shadows, or hard to know about.",
+    "ex": "A shadowy figure crossed the yard.",
+    "exTr": "Karanlık bir figür avludan geçti."
+  },
+  "pleasantly--adv": {
+    "tr": "hoş bir şekilde",
+    "def": "In a way that is agreeable.",
+    "ex": "The room was pleasantly cool.",
+    "exTr": "Oda hoş bir şekilde serindi."
+  },
+  "curiously--adv": {
+    "tr": "merakla, tuhaf biçimde",
+    "def": "In a way that shows interest, or strangely.",
+    "ex": "She looked at me curiously.",
+    "exTr": "Bana merakla baktı."
+  },
+  "wasteful--adj": {
+    "tr": "savurgan",
+    "def": "Using more than is needed.",
+    "ex": "Long showers are wasteful.",
+    "exTr": "Uzun duşlar savurganlıktır."
+  },
+  "farmland--noun": {
+    "tr": "tarım arazisi",
+    "def": "Land used for growing crops or keeping animals.",
+    "ex": "Farmland surrounds the village.",
+    "exTr": "Köyü tarım arazisi çevreliyor."
+  },
+  "photocopy--noun": {
+    "tr": "fotokopi",
+    "def": "A copy of a document made by a machine.",
+    "ex": "Make a photocopy of your passport.",
+    "exTr": "Pasaportunun fotokopisini çek."
+  },
+  "rudely--adv": {
+    "tr": "kabaca",
+    "def": "In a way that is not polite.",
+    "ex": "He answered rudely and left.",
+    "exTr": "Kabaca cevap verip gitti."
+  },
+  "restrict--verb": {
+    "tr": "kısıtlamak",
+    "def": "To limit what someone can do or have.",
+    "ex": "They restricted parking on this street.",
+    "exTr": "Bu sokakta park etmeyi kısıtladılar."
+  },
+  "enthusiast--noun": {
+    "tr": "meraklı, tutkun",
+    "def": "A person who is very interested in something.",
+    "ex": "He is a bird enthusiast.",
+    "exTr": "Kuş meraklısı."
+  },
+  "windscreen--noun": {
+    "tr": "ön cam",
+    "def": "The glass at the front of a car, in British English.",
+    "ex": "A stone cracked the windscreen.",
+    "exTr": "Bir taş ön camı çatlattı."
+  },
+  "well-dressed--adj": {
+    "tr": "iyi giyimli",
+    "def": "Wearing smart and attractive clothes.",
+    "ex": "A well-dressed man waited outside.",
+    "exTr": "İyi giyimli bir adam dışarıda bekliyordu."
+  },
+  "vividly--adv": {
+    "tr": "capcanlı biçimde",
+    "def": "In a way that creates a clear strong picture.",
+    "ex": "I remember that day vividly.",
+    "exTr": "O günü capcanlı hatırlıyorum."
+  },
+  "seawater--noun": {
+    "tr": "deniz suyu",
+    "def": "The salty water of the sea.",
+    "ex": "Seawater damages metal quickly.",
+    "exTr": "Deniz suyu metale hızla zarar verir."
+  },
+  "sandal--noun": {
+    "tr": "sandalet",
+    "def": "A light open shoe worn in warm weather.",
+    "ex": "One sandal broke on the path.",
+    "exTr": "Patikada bir sandaletim kırıldı."
+  },
+  "goalkeeper--noun": {
+    "tr": "kaleci",
+    "def": "The player who defends the goal.",
+    "ex": "Their goalkeeper saved two shots.",
+    "exTr": "Kalecileri iki şutu kurtardı."
+  },
+  "columnist--noun": {
+    "tr": "köşe yazarı",
+    "def": "A writer with a regular article in a newspaper.",
+    "ex": "The columnist criticized the plan.",
+    "exTr": "Köşe yazarı planı eleştirdi."
+  },
+  "geographical--adj": {
+    "tr": "coğrafi",
+    "def": "Relating to the features of the earth.",
+    "ex": "The map shows geographical borders.",
+    "exTr": "Harita coğrafi sınırları gösteriyor."
+  }
+}

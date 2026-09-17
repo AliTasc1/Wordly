@@ -1,83 +1,481 @@
 {
-  "_meta": { "batch": "b1-011", "level": "B1", "range": "800-879" },
-
-  "brief--adj": { "tr": "kısa, özlü", "def": "Lasting only a short time, or using few words.", "ex": "He gave a brief explanation.", "exTr": "Kısa bir açıklama yaptı." },
-  "punish--verb": { "tr": "cezalandırmak", "def": "To make someone suffer for doing wrong.", "ex": "The school punished both boys.", "exTr": "Okul iki çocuğu da cezalandırdı." },
-  "eternal--adj": { "tr": "sonsuz, ebedi", "def": "Lasting for ever, with no end.", "ex": "They spoke of eternal life.", "exTr": "Ebedi hayattan söz ettiler." },
-  "tend--verb": { "tr": "eğiliminde olmak", "def": "To usually do something, or to be likely to.", "ex": "Prices tend to rise in summer.", "exTr": "Fiyatlar yazın artma eğiliminde." },
-  "development--noun": { "tr": "gelişme, kalkınma", "def": "The process of growing or becoming more advanced.", "ex": "Rural development takes time.", "exTr": "Kırsal kalkınma zaman alır." },
-  "global--adj": { "tr": "küresel", "def": "Affecting the whole world.", "ex": "Climate change is a global problem.", "exTr": "İklim değişikliği küresel bir sorun." },
-  "bitter--adj": { "tr": "acı, buruk", "def": "Having a sharp unpleasant taste, or full of resentment.", "ex": "The coffee tasted bitter.", "exTr": "Kahvenin tadı acıydı." },
-  "tent--noun": { "tr": "çadır", "def": "A shelter of cloth held up by poles.", "ex": "We slept in a small tent.", "exTr": "Küçük bir çadırda uyuduk." },
-  "propose--verb": { "tr": "önermek, teklif etmek", "def": "To suggest a plan, or to ask someone to marry you.", "ex": "She proposed a simpler solution.", "exTr": "Daha basit bir çözüm önerdi." },
-  "constantly--adv": { "tr": "sürekli", "def": "All the time, without stopping.", "ex": "The phone rang constantly.", "exTr": "Telefon sürekli çaldı." },
-  "survival--noun": { "tr": "hayatta kalma", "def": "The state of continuing to live.", "ex": "Water is essential for survival.", "exTr": "Su hayatta kalmak için şart." },
-  "connect--verb": { "tr": "bağlamak", "def": "To join two things together.", "ex": "Connect the cable to the screen.", "exTr": "Kabloyu ekrana bağla." },
-  "beard--noun": { "tr": "sakal", "def": "The hair that grows on a man's chin.", "ex": "He grew a short beard.", "exTr": "Kısa bir sakal bıraktı." },
-  "maintain--verb": { "tr": "sürdürmek, bakımını yapmak", "def": "To keep something in good condition or at the same level.", "ex": "They maintain the roads well.", "exTr": "Yolların bakımını iyi yapıyorlar." },
-  "possession--noun": { "tr": "mülkiyet, eşya", "def": "Something you own, or the state of having it.", "ex": "His only possession was a bag.", "exTr": "Tek eşyası bir çantaydı." },
-  "upper--adj": { "tr": "üst", "def": "Higher in position than another part.", "ex": "The upper floors have better light.", "exTr": "Üst katlar daha aydınlık." },
-  "tale--noun": { "tr": "masal, hikâye", "def": "A story, often an exciting or invented one.", "ex": "Grandmother told us a tale.", "exTr": "Büyükannem bize bir masal anlattı." },
-  "net--noun": { "tr": "ağ, file", "def": "Material made of crossed threads with holes between.", "ex": "The ball hit the net.", "exTr": "Top filelere çarptı." },
-  "heal--verb": { "tr": "iyileşmek, iyileştirmek", "def": "To become healthy again, or to make someone well.", "ex": "The cut healed in a week.", "exTr": "Kesik bir haftada iyileşti." },
-  "honeymoon--noun": { "tr": "balayı", "def": "The holiday taken by a newly married couple.", "ex": "They spent their honeymoon in Bodrum.", "exTr": "Balayını Bodrum'da geçirdiler." },
-  "appeal--noun": { "tr": "çağrı, cazibe", "def": "An urgent request, or the quality of being attractive.", "ex": "The charity made an appeal for blankets.", "exTr": "Hayır kurumu battaniye çağrısı yaptı." },
-  "critical--adj": { "tr": "kritik, eleştirel", "def": "Extremely serious, or expressing disapproval.", "ex": "The next hours are critical.", "exTr": "Önümüzdeki saatler kritik." },
-  "praise--noun": { "tr": "övgü", "def": "Words that show admiration for someone.", "ex": "Her book received high praise.", "exTr": "Kitabı büyük övgü aldı." },
-  "branch--verb": { "tr": "dallanmak, ayrılmak", "def": "To divide into smaller parts or directions.", "ex": "The road branches near the mill.", "exTr": "Yol değirmenin yanında ikiye ayrılıyor." },
-  "muscle--noun": { "tr": "kas", "def": "The tissue in the body that makes you move.", "ex": "He pulled a muscle in his leg.", "exTr": "Bacağında bir kas çekti." },
-  "tense--adj": { "tr": "gergin", "def": "Nervous and unable to relax.", "ex": "The meeting was very tense.", "exTr": "Toplantı çok gergindi." },
-  "tense--noun": { "tr": "zaman (dilbilgisi)", "def": "The form of a verb that shows time.", "ex": "Use the past tense here.", "exTr": "Burada geçmiş zaman kullan." },
-  "management--noun": { "tr": "yönetim", "def": "The people who run a company, or the act of running it.", "ex": "Management refused the request.", "exTr": "Yönetim talebi reddetti." },
-  "assignment--noun": { "tr": "ödev, görev", "def": "A piece of work you are given to do.", "ex": "The assignment is due Friday.", "exTr": "Ödevin teslimi cuma." },
-  "comedy--noun": { "tr": "komedi", "def": "A film or play that makes people laugh.", "ex": "We watched an old comedy.", "exTr": "Eski bir komedi izledik." },
-  "facility--noun": { "tr": "tesis, imkân", "def": "A building or service provided for a purpose.", "ex": "The sports facility opens at seven.", "exTr": "Spor tesisi yedide açılıyor." },
-  "remarkable--adj": { "tr": "dikkate değer, olağanüstü", "def": "Unusual in a way that deserves attention.", "ex": "She made a remarkable discovery.", "exTr": "Dikkate değer bir keşif yaptı." },
-  "motor--noun": { "tr": "motor", "def": "The part of a machine that makes it turn.", "ex": "The motor needs oil.", "exTr": "Motorun yağa ihtiyacı var." },
-  "magnificent--adj": { "tr": "muhteşem, görkemli", "def": "Extremely impressive and beautiful.", "ex": "The palace is magnificent.", "exTr": "Saray görkemli." },
-  "superior--adj": { "tr": "üstün", "def": "Better in quality or higher in rank.", "ex": "This wool is superior to cotton.", "exTr": "Bu yün pamuktan üstün." },
-  "currently--adv": { "tr": "şu anda, hâlihazırda", "def": "At the present time.", "ex": "She is currently studying abroad.", "exTr": "Şu anda yurt dışında okuyor." },
-  "deadly--adj": { "tr": "ölümcül", "def": "Able to cause death.", "ex": "The snake's bite is deadly.", "exTr": "Yılanın ısırığı ölümcül." },
-  "depressed--adj": { "tr": "bunalımda, keyifsiz", "def": "Very unhappy for a long period.", "ex": "He felt depressed all winter.", "exTr": "Bütün kış boyunca keyifsizdi." },
-  "poetry--noun": { "tr": "şiir (tür)", "def": "Writing in verse form.", "ex": "She teaches modern poetry.", "exTr": "Modern şiir dersi veriyor." },
-  "shortly--adv": { "tr": "birazdan, kısa süre içinde", "def": "Soon, after only a short time.", "ex": "The train leaves shortly.", "exTr": "Tren birazdan kalkıyor." },
-  "goddess--noun": { "tr": "tanrıça", "def": "A female god in old religions.", "ex": "Athena was a goddess of wisdom.", "exTr": "Athena bir bilgelik tanrıçasıydı." },
-  "pork--noun": { "tr": "domuz eti", "def": "The meat from a pig.", "ex": "This dish contains no pork.", "exTr": "Bu yemekte domuz eti yok." },
-  "magical--adj": { "tr": "büyülü", "def": "Involving magic, or wonderfully special.", "ex": "The evening felt magical.", "exTr": "Akşam büyülü geçti." },
-  "entry--noun": { "tr": "giriş, kayıt", "def": "The act of going in, or an item written in a list.", "ex": "Entry is free for children.", "exTr": "Çocuklar için giriş ücretsiz." },
-  "injury--noun": { "tr": "yaralanma, sakatlık", "def": "Damage to a part of the body.", "ex": "The injury kept him out for weeks.", "exTr": "Sakatlık onu haftalarca sahalardan uzak tuttu." },
-  "burden--noun": { "tr": "yük", "def": "A heavy responsibility that is hard to bear.", "ex": "The debt became a real burden.", "exTr": "Borç gerçek bir yük hâline geldi." },
-  "freezing--adj": { "tr": "buz gibi", "def": "Extremely cold.", "ex": "The water was freezing.", "exTr": "Su buz gibiydi." },
-  "mount--noun": { "tr": "dağ (isim önü)", "def": "A word used before the name of a mountain.", "ex": "They climbed Mount Ararat.", "exTr": "Ağrı Dağı'na tırmandılar." },
-  "pound--noun": { "tr": "pound, sterlin", "def": "A unit of weight, or British money.", "ex": "The book costs ten pounds.", "exTr": "Kitap on sterlin." },
-  "fond--adj": { "tr": "düşkün", "def": "Liking someone or something very much.", "ex": "She is fond of old films.", "exTr": "Eski filmlere düşkündür." },
-  "reception--noun": { "tr": "resepsiyon, karşılama", "def": "The desk at a hotel, or a formal party.", "ex": "Leave your key at reception.", "exTr": "Anahtarını resepsiyona bırak." },
-  "brick--noun": { "tr": "tuğla", "def": "A hard block of baked clay used for building.", "ex": "The wall is made of brick.", "exTr": "Duvar tuğladan yapılmış." },
-  "abandon--verb": { "tr": "terk etmek, vazgeçmek", "def": "To leave someone or something for ever.", "ex": "They abandoned the old mine.", "exTr": "Eski madeni terk ettiler." },
-  "recommend--verb": { "tr": "tavsiye etmek", "def": "To say that something is good and should be chosen.", "ex": "I recommend the fish soup.", "exTr": "Balık çorbasını tavsiye ederim." },
-  "concept--noun": { "tr": "kavram", "def": "A general idea about something.", "ex": "The concept is hard to explain.", "exTr": "Kavramı açıklamak zor." },
-  "delay--verb": { "tr": "geciktirmek, ertelemek", "def": "To make something happen later than planned.", "ex": "Fog delayed all flights.", "exTr": "Sis bütün uçuşları geciktirdi." },
-  "soil--verb": { "tr": "kirletmek", "def": "To make something dirty.", "ex": "The child soiled his new shirt.", "exTr": "Çocuk yeni gömleğini kirletti." },
-  "baker--noun": { "tr": "fırıncı", "def": "A person whose job is making bread.", "ex": "The baker starts work at three.", "exTr": "Fırıncı işe üçte başlıyor." },
-  "measure--noun": { "tr": "önlem, ölçü", "def": "An action taken to solve a problem, or a unit of size.", "ex": "The government took strong measures.", "exTr": "Hükümet sert önlemler aldı." },
-  "measure--verb": { "tr": "ölçmek", "def": "To find the size or amount of something.", "ex": "Measure the room before you buy.", "exTr": "Satın almadan önce odayı ölç." },
-  "hip--noun": { "tr": "kalça", "def": "The part of the body between the waist and the leg.", "ex": "She broke her hip last winter.", "exTr": "Geçen kış kalçasını kırdı." },
-  "function--noun": { "tr": "işlev, fonksiyon", "def": "The purpose something has, or what it does.", "ex": "The function of the heart is clear.", "exTr": "Kalbin işlevi açıktır." },
-  "foundation--noun": { "tr": "temel, vakıf", "def": "The base of a building, or an organization that gives money.", "ex": "The foundation of the house cracked.", "exTr": "Evin temeli çatladı." },
-  "homeless--adj": { "tr": "evsiz", "def": "Having no place to live.", "ex": "The flood left many homeless.", "exTr": "Sel birçok kişiyi evsiz bıraktı." },
-  "unfortunate--adj": { "tr": "talihsiz", "def": "Unlucky, or causing regret.", "ex": "It was an unfortunate mistake.", "exTr": "Talihsiz bir hataydı." },
-  "log--noun": { "tr": "kütük, kayıt", "def": "A thick piece of cut tree, or a written record.", "ex": "Put another log on the fire.", "exTr": "Ateşe bir kütük daha at." },
-  "satellite--noun": { "tr": "uydu", "def": "A machine sent into space to circle the earth.", "ex": "The satellite sends weather data.", "exTr": "Uydu hava durumu verisi gönderiyor." },
-  "privacy--noun": { "tr": "mahremiyet, gizlilik", "def": "The state of being free from other people's attention.", "ex": "Everyone has a right to privacy.", "exTr": "Herkesin mahremiyet hakkı vardır." },
-  "pub--noun": { "tr": "bar, meyhane", "def": "A British place where people drink and talk.", "ex": "They met at the village pub.", "exTr": "Köy meyhanesinde buluştular." },
-  "temporary--adj": { "tr": "geçici", "def": "Lasting only for a limited time.", "ex": "This is a temporary solution.", "exTr": "Bu geçici bir çözüm." },
-  "effective--adj": { "tr": "etkili", "def": "Producing the result you want.", "ex": "The new method is very effective.", "exTr": "Yeni yöntem çok etkili." },
-  "lamb--noun": { "tr": "kuzu", "def": "A young sheep, or its meat.", "ex": "A lamb followed its mother.", "exTr": "Bir kuzu annesini takip etti." },
-  "proposal--noun": { "tr": "öneri, teklif", "def": "A plan that is formally suggested.", "ex": "The council rejected the proposal.", "exTr": "Meclis teklifi reddetti." },
-  "blessing--noun": { "tr": "nimet, hayır dua", "def": "Something you are grateful for, or God's help.", "ex": "Good health is a blessing.", "exTr": "Sağlık bir nimettir." },
-  "rage--noun": { "tr": "hiddet, öfke nöbeti", "def": "Extremely strong and sudden anger.", "ex": "He shook with rage.", "exTr": "Hiddetten titriyordu." },
-  "basis--noun": { "tr": "temel, esas", "def": "The idea or fact that something develops from.", "ex": "The story has no basis in fact.", "exTr": "Hikâyenin gerçekte hiçbir temeli yok." },
-  "recover--verb": { "tr": "iyileşmek, geri almak", "def": "To become well again, or to get something back.", "ex": "He recovered after two weeks.", "exTr": "İki hafta sonra iyileşti." },
-  "twist--noun": { "tr": "dönüş, beklenmedik gelişme", "def": "A sudden change in a story or a road.", "ex": "The film has a clever twist.", "exTr": "Filmin zekice bir sürprizi var." },
-  "twist--verb": { "tr": "bükmek, burkmak", "def": "To turn something around, or to injure a joint.", "ex": "She twisted her ankle.", "exTr": "Ayak bileğini burktu." }
+  "_meta": {
+    "batch": "b1-011",
+    "level": "B1",
+    "range": "800-879"
+  },
+  "brief--adj": {
+    "tr": "kısa, özlü",
+    "def": "Lasting only a short time, or using few words.",
+    "ex": "He gave a brief explanation.",
+    "exTr": "Kısa bir açıklama yaptı."
+  },
+  "punish--verb": {
+    "tr": "cezalandırmak",
+    "def": "To make someone suffer for doing wrong.",
+    "ex": "The school punished both boys.",
+    "exTr": "Okul iki çocuğu da cezalandırdı."
+  },
+  "eternal--adj": {
+    "tr": "sonsuz, ebedi",
+    "def": "Lasting for ever, with no end.",
+    "ex": "They spoke of eternal life.",
+    "exTr": "Ebedi hayattan söz ettiler."
+  },
+  "tend--verb": {
+    "tr": "eğiliminde olmak",
+    "def": "To usually do something, or to be likely to.",
+    "ex": "Prices tend to rise in summer.",
+    "exTr": "Fiyatlar yazın artma eğiliminde."
+  },
+  "development--noun": {
+    "tr": "gelişme, kalkınma",
+    "def": "The process of growing or becoming more advanced.",
+    "ex": "Rural development takes time.",
+    "exTr": "Kırsal kalkınma zaman alır."
+  },
+  "global--adj": {
+    "tr": "küresel",
+    "def": "Affecting the whole world.",
+    "ex": "Climate change is a global problem.",
+    "exTr": "İklim değişikliği küresel bir sorun."
+  },
+  "bitter--adj": {
+    "tr": "acı, buruk",
+    "def": "Having a sharp unpleasant taste, or full of resentment.",
+    "ex": "The coffee tasted bitter.",
+    "exTr": "Kahvenin tadı acıydı."
+  },
+  "tent--noun": {
+    "tr": "çadır",
+    "def": "A shelter of cloth held up by poles.",
+    "ex": "We slept in a small tent.",
+    "exTr": "Küçük bir çadırda uyuduk."
+  },
+  "propose--verb": {
+    "tr": "önermek, teklif etmek",
+    "def": "To suggest a plan, or to ask someone to marry you.",
+    "ex": "She proposed a simpler solution.",
+    "exTr": "Daha basit bir çözüm önerdi."
+  },
+  "constantly--adv": {
+    "tr": "sürekli",
+    "def": "All the time, without stopping.",
+    "ex": "The phone rang constantly.",
+    "exTr": "Telefon sürekli çaldı."
+  },
+  "survival--noun": {
+    "tr": "hayatta kalma",
+    "def": "The state of continuing to live.",
+    "ex": "Water is essential for survival.",
+    "exTr": "Su hayatta kalmak için şart."
+  },
+  "connect--verb": {
+    "tr": "bağlamak",
+    "def": "To join two things together.",
+    "ex": "Connect the cable to the screen.",
+    "exTr": "Kabloyu ekrana bağla."
+  },
+  "beard--noun": {
+    "tr": "sakal",
+    "def": "The hair that grows on a man's chin.",
+    "ex": "He grew a short beard.",
+    "exTr": "Kısa bir sakal bıraktı."
+  },
+  "maintain--verb": {
+    "tr": "sürdürmek, bakımını yapmak",
+    "def": "To keep something in good condition or at the same level.",
+    "ex": "They maintain the roads well.",
+    "exTr": "Yolların bakımını iyi yapıyorlar."
+  },
+  "possession--noun": {
+    "tr": "mülkiyet, eşya",
+    "def": "Something you own, or the state of having it.",
+    "ex": "His only possession was a bag.",
+    "exTr": "Tek eşyası bir çantaydı."
+  },
+  "upper--adj": {
+    "tr": "üst",
+    "def": "Higher in position than another part.",
+    "ex": "The upper floors have better light.",
+    "exTr": "Üst katlar daha aydınlık."
+  },
+  "tale--noun": {
+    "tr": "masal, hikâye",
+    "def": "A story, often an exciting or invented one.",
+    "ex": "Grandmother told us a tale.",
+    "exTr": "Büyükannem bize bir masal anlattı."
+  },
+  "net--noun": {
+    "tr": "ağ, file",
+    "def": "Material made of crossed threads with holes between.",
+    "ex": "The ball hit the net.",
+    "exTr": "Top filelere çarptı."
+  },
+  "heal--verb": {
+    "tr": "iyileşmek, iyileştirmek",
+    "def": "To become healthy again, or to make someone well.",
+    "ex": "The cut healed in a week.",
+    "exTr": "Kesik bir haftada iyileşti."
+  },
+  "honeymoon--noun": {
+    "tr": "balayı",
+    "def": "The holiday taken by a newly married couple.",
+    "ex": "They spent their honeymoon in Bodrum.",
+    "exTr": "Balayını Bodrum'da geçirdiler."
+  },
+  "appeal--noun": {
+    "tr": "çağrı, cazibe",
+    "def": "An urgent request, or the quality of being attractive.",
+    "ex": "The charity made an appeal for blankets.",
+    "exTr": "Hayır kurumu battaniye çağrısı yaptı."
+  },
+  "critical--adj": {
+    "tr": "kritik, eleştirel",
+    "def": "Extremely serious, or expressing disapproval.",
+    "ex": "The next hours are critical.",
+    "exTr": "Önümüzdeki saatler kritik."
+  },
+  "praise--noun": {
+    "tr": "övgü",
+    "def": "Words that show admiration for someone.",
+    "ex": "Her book received high praise.",
+    "exTr": "Kitabı büyük övgü aldı."
+  },
+  "branch--verb": {
+    "tr": "dallanmak, ayrılmak",
+    "def": "To divide into smaller parts or directions.",
+    "ex": "The road branches near the mill.",
+    "exTr": "Yol değirmenin yanında ikiye ayrılıyor."
+  },
+  "muscle--noun": {
+    "tr": "kas",
+    "def": "The tissue in the body that makes you move.",
+    "ex": "He pulled a muscle in his leg.",
+    "exTr": "Bacağında bir kas çekti."
+  },
+  "tense--adj": {
+    "tr": "gergin",
+    "def": "Nervous and unable to relax.",
+    "ex": "The meeting was very tense.",
+    "exTr": "Toplantı çok gergindi."
+  },
+  "tense--noun": {
+    "tr": "zaman (dilbilgisi)",
+    "def": "The form of a verb that shows time.",
+    "ex": "Use the past tense here.",
+    "exTr": "Burada geçmiş zaman kullan."
+  },
+  "management--noun": {
+    "tr": "yönetim",
+    "def": "The people who run a company, or the act of running it.",
+    "ex": "Management refused the request.",
+    "exTr": "Yönetim talebi reddetti."
+  },
+  "assignment--noun": {
+    "tr": "ödev, görev",
+    "def": "A piece of work you are given to do.",
+    "ex": "The assignment is due Friday.",
+    "exTr": "Ödevin teslimi cuma."
+  },
+  "comedy--noun": {
+    "tr": "komedi",
+    "def": "A film or play that makes people laugh.",
+    "ex": "We watched an old comedy.",
+    "exTr": "Eski bir komedi izledik."
+  },
+  "facility--noun": {
+    "tr": "tesis, imkân",
+    "def": "A building or service provided for a purpose.",
+    "ex": "The sports facility opens at seven.",
+    "exTr": "Spor tesisi yedide açılıyor."
+  },
+  "remarkable--adj": {
+    "tr": "dikkate değer, olağanüstü",
+    "def": "Unusual in a way that deserves attention.",
+    "ex": "She made a remarkable discovery.",
+    "exTr": "Dikkate değer bir keşif yaptı."
+  },
+  "motor--noun": {
+    "tr": "elektrik motoru",
+    "def": "The part of a machine that makes it turn.",
+    "ex": "The motor needs oil.",
+    "exTr": "Motorun yağa ihtiyacı var."
+  },
+  "magnificent--adj": {
+    "tr": "muhteşem, görkemli",
+    "def": "Extremely impressive and beautiful.",
+    "ex": "The palace is magnificent.",
+    "exTr": "Saray görkemli."
+  },
+  "superior--adj": {
+    "tr": "üstün",
+    "def": "Better in quality or higher in rank.",
+    "ex": "This wool is superior to cotton.",
+    "exTr": "Bu yün pamuktan üstün."
+  },
+  "currently--adv": {
+    "tr": "şu anda, hâlihazırda",
+    "def": "At the present time.",
+    "ex": "She is currently studying abroad.",
+    "exTr": "Şu anda yurt dışında okuyor."
+  },
+  "deadly--adj": {
+    "tr": "ölümcül",
+    "def": "Able to cause death.",
+    "ex": "The snake's bite is deadly.",
+    "exTr": "Yılanın ısırığı ölümcül."
+  },
+  "depressed--adj": {
+    "tr": "bunalımda, keyifsiz",
+    "def": "Very unhappy for a long period.",
+    "ex": "He felt depressed all winter.",
+    "exTr": "Bütün kış boyunca keyifsizdi."
+  },
+  "poetry--noun": {
+    "tr": "şiir (tür)",
+    "def": "Writing in verse form.",
+    "ex": "She teaches modern poetry.",
+    "exTr": "Modern şiir dersi veriyor."
+  },
+  "shortly--adv": {
+    "tr": "birazdan, kısa süre içinde",
+    "def": "Soon, after only a short time.",
+    "ex": "The train leaves shortly.",
+    "exTr": "Tren birazdan kalkıyor."
+  },
+  "goddess--noun": {
+    "tr": "tanrıça",
+    "def": "A female god in old religions.",
+    "ex": "Athena was a goddess of wisdom.",
+    "exTr": "Athena bir bilgelik tanrıçasıydı."
+  },
+  "pork--noun": {
+    "tr": "domuz eti",
+    "def": "The meat from a pig.",
+    "ex": "This dish contains no pork.",
+    "exTr": "Bu yemekte domuz eti yok."
+  },
+  "magical--adj": {
+    "tr": "büyülü",
+    "def": "Involving magic, or wonderfully special.",
+    "ex": "The evening felt magical.",
+    "exTr": "Akşam büyülü geçti."
+  },
+  "entry--noun": {
+    "tr": "giriş, kayıt",
+    "def": "The act of going in, or an item written in a list.",
+    "ex": "Entry is free for children.",
+    "exTr": "Çocuklar için giriş ücretsiz."
+  },
+  "injury--noun": {
+    "tr": "yaralanma, sakatlık",
+    "def": "Damage to a part of the body.",
+    "ex": "The injury kept him out for weeks.",
+    "exTr": "Sakatlık onu haftalarca sahalardan uzak tuttu."
+  },
+  "burden--noun": {
+    "tr": "yük",
+    "def": "A heavy responsibility that is hard to bear.",
+    "ex": "The debt became a real burden.",
+    "exTr": "Borç gerçek bir yük hâline geldi."
+  },
+  "freezing--adj": {
+    "tr": "buz gibi",
+    "def": "Extremely cold.",
+    "ex": "The water was freezing.",
+    "exTr": "Su buz gibiydi."
+  },
+  "mount--noun": {
+    "tr": "dağ (isim önü)",
+    "def": "A word used before the name of a mountain.",
+    "ex": "They climbed Mount Ararat.",
+    "exTr": "Ağrı Dağı'na tırmandılar."
+  },
+  "pound--noun": {
+    "tr": "pound, sterlin",
+    "def": "A unit of weight, or British money.",
+    "ex": "The book costs ten pounds.",
+    "exTr": "Kitap on sterlin."
+  },
+  "fond--adj": {
+    "tr": "düşkün",
+    "def": "Liking someone or something very much.",
+    "ex": "She is fond of old films.",
+    "exTr": "Eski filmlere düşkündür."
+  },
+  "reception--noun": {
+    "tr": "resepsiyon, karşılama",
+    "def": "The desk at a hotel, or a formal party.",
+    "ex": "Leave your key at reception.",
+    "exTr": "Anahtarını resepsiyona bırak."
+  },
+  "brick--noun": {
+    "tr": "tuğla",
+    "def": "A hard block of baked clay used for building.",
+    "ex": "The wall is made of brick.",
+    "exTr": "Duvar tuğladan yapılmış."
+  },
+  "abandon--verb": {
+    "tr": "terk etmek, vazgeçmek",
+    "def": "To leave someone or something for ever.",
+    "ex": "They abandoned the old mine.",
+    "exTr": "Eski madeni terk ettiler."
+  },
+  "recommend--verb": {
+    "tr": "tavsiye etmek",
+    "def": "To say that something is good and should be chosen.",
+    "ex": "I recommend the fish soup.",
+    "exTr": "Balık çorbasını tavsiye ederim."
+  },
+  "concept--noun": {
+    "tr": "kavram",
+    "def": "A general idea about something.",
+    "ex": "The concept is hard to explain.",
+    "exTr": "Kavramı açıklamak zor."
+  },
+  "delay--verb": {
+    "tr": "geciktirmek, ertelemek",
+    "def": "To make something happen later than planned.",
+    "ex": "Fog delayed all flights.",
+    "exTr": "Sis bütün uçuşları geciktirdi."
+  },
+  "soil--verb": {
+    "tr": "kirletmek",
+    "def": "To make something dirty.",
+    "ex": "The child soiled his new shirt.",
+    "exTr": "Çocuk yeni gömleğini kirletti."
+  },
+  "baker--noun": {
+    "tr": "fırıncı",
+    "def": "A person whose job is making bread.",
+    "ex": "The baker starts work at three.",
+    "exTr": "Fırıncı işe üçte başlıyor."
+  },
+  "measure--noun": {
+    "tr": "önlem, ölçü",
+    "def": "An action taken to solve a problem, or a unit of size.",
+    "ex": "The government took strong measures.",
+    "exTr": "Hükümet sert önlemler aldı."
+  },
+  "measure--verb": {
+    "tr": "ölçmek",
+    "def": "To find the size or amount of something.",
+    "ex": "Measure the room before you buy.",
+    "exTr": "Satın almadan önce odayı ölç."
+  },
+  "hip--noun": {
+    "tr": "kalça",
+    "def": "The part of the body between the waist and the leg.",
+    "ex": "She broke her hip last winter.",
+    "exTr": "Geçen kış kalçasını kırdı."
+  },
+  "function--noun": {
+    "tr": "işlev, fonksiyon",
+    "def": "The purpose something has, or what it does.",
+    "ex": "The function of the heart is clear.",
+    "exTr": "Kalbin işlevi açıktır."
+  },
+  "foundation--noun": {
+    "tr": "temel, vakıf",
+    "def": "The base of a building, or an organization that gives money.",
+    "ex": "The foundation of the house cracked.",
+    "exTr": "Evin temeli çatladı."
+  },
+  "homeless--adj": {
+    "tr": "evsiz",
+    "def": "Having no place to live.",
+    "ex": "The flood left many homeless.",
+    "exTr": "Sel birçok kişiyi evsiz bıraktı."
+  },
+  "unfortunate--adj": {
+    "tr": "talihsiz",
+    "def": "Unlucky, or causing regret.",
+    "ex": "It was an unfortunate mistake.",
+    "exTr": "Talihsiz bir hataydı."
+  },
+  "log--noun": {
+    "tr": "kütük, kayıt",
+    "def": "A thick piece of cut tree, or a written record.",
+    "ex": "Put another log on the fire.",
+    "exTr": "Ateşe bir kütük daha at."
+  },
+  "satellite--noun": {
+    "tr": "uydu",
+    "def": "A machine sent into space to circle the earth.",
+    "ex": "The satellite sends weather data.",
+    "exTr": "Uydu hava durumu verisi gönderiyor."
+  },
+  "privacy--noun": {
+    "tr": "mahremiyet, gizlilik",
+    "def": "The state of being free from other people's attention.",
+    "ex": "Everyone has a right to privacy.",
+    "exTr": "Herkesin mahremiyet hakkı vardır."
+  },
+  "pub--noun": {
+    "tr": "bar, meyhane",
+    "def": "A British place where people drink and talk.",
+    "ex": "They met at the village pub.",
+    "exTr": "Köy meyhanesinde buluştular."
+  },
+  "temporary--adj": {
+    "tr": "geçici",
+    "def": "Lasting only for a limited time.",
+    "ex": "This is a temporary solution.",
+    "exTr": "Bu geçici bir çözüm."
+  },
+  "effective--adj": {
+    "tr": "etkili",
+    "def": "Producing the result you want.",
+    "ex": "The new method is very effective.",
+    "exTr": "Yeni yöntem çok etkili."
+  },
+  "lamb--noun": {
+    "tr": "kuzu",
+    "def": "A young sheep, or its meat.",
+    "ex": "A lamb followed its mother.",
+    "exTr": "Bir kuzu annesini takip etti."
+  },
+  "proposal--noun": {
+    "tr": "öneri, teklif",
+    "def": "A plan that is formally suggested.",
+    "ex": "The council rejected the proposal.",
+    "exTr": "Meclis teklifi reddetti."
+  },
+  "blessing--noun": {
+    "tr": "nimet, hayır dua",
+    "def": "Something you are grateful for, or God's help.",
+    "ex": "Good health is a blessing.",
+    "exTr": "Sağlık bir nimettir."
+  },
+  "rage--noun": {
+    "tr": "hiddet, öfke nöbeti",
+    "def": "Extremely strong and sudden anger.",
+    "ex": "He shook with rage.",
+    "exTr": "Hiddetten titriyordu."
+  },
+  "basis--noun": {
+    "tr": "temel, esas",
+    "def": "The idea or fact that something develops from.",
+    "ex": "The story has no basis in fact.",
+    "exTr": "Hikâyenin gerçekte hiçbir temeli yok."
+  },
+  "recover--verb": {
+    "tr": "iyileşmek, geri almak",
+    "def": "To become well again, or to get something back.",
+    "ex": "He recovered after two weeks.",
+    "exTr": "İki hafta sonra iyileşti."
+  },
+  "twist--noun": {
+    "tr": "dönüş, beklenmedik gelişme",
+    "def": "A sudden change in a story or a road.",
+    "ex": "The film has a clever twist.",
+    "exTr": "Filmin zekice bir sürprizi var."
+  },
+  "twist--verb": {
+    "tr": "bükmek, burkmak",
+    "def": "To turn something around, or to injure a joint.",
+    "ex": "She twisted her ankle.",
+    "exTr": "Ayak bileğini burktu."
+  }
 }

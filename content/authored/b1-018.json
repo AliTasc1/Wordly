@@ -1,83 +1,481 @@
 {
-  "_meta": { "batch": "b1-018", "level": "B1", "range": "1355-1434" },
-
-  "examination--noun": { "tr": "inceleme, muayene", "def": "A careful look at something, or a medical check.", "ex": "The examination revealed no problem.", "exTr": "İnceleme hiçbir sorun ortaya çıkarmadı." },
-  "participate--verb": { "tr": "katılmak", "def": "To take part in an activity with others.", "ex": "Every student participated in the project.", "exTr": "Her öğrenci projeye katıldı." },
-  "razor--noun": { "tr": "jilet, tıraş makinesi", "def": "A sharp tool used for shaving.", "ex": "The razor is in the drawer.", "exTr": "Jilet çekmecede." },
-  "heavenly--adj": { "tr": "ilahi, cennet gibi", "def": "Relating to heaven, or extremely pleasant.", "ex": "The garden smelled heavenly.", "exTr": "Bahçe cennet gibi kokuyordu." },
-  "bark--noun": { "tr": "ağaç kabuğu, havlama", "def": "The hard cover of a tree, or the sound a dog makes.", "ex": "The bark of this tree is thick.", "exTr": "Bu ağacın kabuğu kalın." },
-  "casual--adj": { "tr": "gündelik, resmi olmayan", "def": "Relaxed and not formal.", "ex": "Wear casual clothes tomorrow.", "exTr": "Yarın gündelik kıyafet giy." },
-  "finance--verb": { "tr": "finanse etmek", "def": "To provide money for a project.", "ex": "A bank financed the factory.", "exTr": "Fabrikayı bir banka finanse etti." },
-  "respectable--adj": { "tr": "saygın, düzgün", "def": "Accepted as decent and of good quality.", "ex": "They live in a respectable district.", "exTr": "Saygın bir semtte yaşıyorlar." },
-  "demonstration--noun": { "tr": "gösteri, tanıtım", "def": "A public protest, or a show of how something works.", "ex": "The demonstration filled the square.", "exTr": "Gösteri meydanı doldurdu." },
-  "stir--verb": { "tr": "karıştırmak", "def": "To move a liquid around with a spoon.", "ex": "Stir the soup gently.", "exTr": "Çorbayı yavaşça karıştır." },
-  "tuna--noun": { "tr": "ton balığı", "def": "A large sea fish that is often tinned.", "ex": "She made a tuna sandwich.", "exTr": "Ton balıklı sandviç yaptı." },
-  "inspection--noun": { "tr": "denetim, teftiş", "def": "An official examination to check standards.", "ex": "The kitchen passed its inspection.", "exTr": "Mutfak denetimden geçti." },
-  "choke--verb": { "tr": "boğulmak, tıkanmak", "def": "To be unable to breathe because something blocks the throat.", "ex": "He choked on a fish bone.", "exTr": "Bir kılçıkla boğuldu." },
-  "popcorn--noun": { "tr": "patlamış mısır", "def": "Corn that bursts open when heated.", "ex": "We shared a bag of popcorn.", "exTr": "Bir paket patlamış mısırı paylaştık." },
-  "documentary--noun": { "tr": "belgesel", "def": "A film that gives facts about real events.", "ex": "The documentary won an award.", "exTr": "Belgesel bir ödül kazandı." },
-  "rapidly--adv": { "tr": "hızla", "def": "Very quickly.", "ex": "The city grew rapidly.", "exTr": "Şehir hızla büyüdü." },
-  "efficient--adj": { "tr": "verimli", "def": "Working well without wasting time or energy.", "ex": "The new stove is more efficient.", "exTr": "Yeni ocak daha verimli." },
-  "mechanic--noun": { "tr": "tamirci, makinist", "def": "A person who repairs engines and machines.", "ex": "The mechanic fixed the brakes.", "exTr": "Tamirci frenleri tamir etti." },
-  "resolve--verb": { "tr": "çözmek, karara varmak", "def": "To find an answer to a problem.", "ex": "They resolved the dispute quietly.", "exTr": "Anlaşmazlığı sessizce çözdüler." },
-  "relation--noun": { "tr": "ilişki, bağıntı", "def": "A connection between two things or people.", "ex": "There is no relation between them.", "exTr": "Aralarında hiçbir bağ yok." },
-  "mechanical--adj": { "tr": "mekanik", "def": "Relating to machines, or done without thinking.", "ex": "A mechanical fault stopped the bus.", "exTr": "Mekanik bir arıza otobüsü durdurdu." },
-  "extend--verb": { "tr": "uzatmak, genişletmek", "def": "To make something longer or larger.", "ex": "They extended the deadline.", "exTr": "Son tarihi uzattılar." },
-  "accomplish--verb": { "tr": "başarmak, gerçekleştirmek", "def": "To succeed in doing something.", "ex": "We accomplished the task in a day.", "exTr": "Görevi bir günde başardık." },
-  "lightly--adv": { "tr": "hafifçe", "def": "With little force or in a small amount.", "ex": "Season the fish lightly.", "exTr": "Balığı hafifçe baharatla." },
-  "layer--noun": { "tr": "katman, tabaka", "def": "A flat amount of material lying over another.", "ex": "A layer of dust covered everything.", "exTr": "Her şeyi bir toz tabakası kaplamıştı." },
-  "gown--noun": { "tr": "gece elbisesi, cüppe", "def": "A long dress for a formal event, or an official robe.", "ex": "She wore a long blue gown.", "exTr": "Uzun mavi bir elbise giymişti." },
-  "adopt--verb": { "tr": "evlat edinmek, benimsemek", "def": "To take a child into your family, or to start using an idea.", "ex": "They adopted two children.", "exTr": "İki çocuk evlat edindiler." },
-  "consideration--noun": { "tr": "değerlendirme, düşünce", "def": "Careful thought, or something you take into account.", "ex": "Cost was the main consideration.", "exTr": "Ana değerlendirme maliyetti." },
-  "frost--noun": { "tr": "kırağı, don", "def": "The thin white ice that forms on cold nights.", "ex": "Frost covered the windows.", "exTr": "Pencereleri kırağı kaplamıştı." },
-  "registration--noun": { "tr": "kayıt", "def": "The act of putting a name on an official list.", "ex": "Registration closes on Friday.", "exTr": "Kayıt cuma günü kapanıyor." },
-  "constitution--noun": { "tr": "anayasa", "def": "The set of basic laws that govern a country.", "ex": "The constitution protects free speech.", "exTr": "Anayasa ifade özgürlüğünü korur." },
-  "buyer--noun": { "tr": "alıcı", "def": "A person who buys something.", "ex": "The buyer paid in cash.", "exTr": "Alıcı nakit ödedi." },
-  "volcano--noun": { "tr": "yanardağ", "def": "A mountain that can throw out hot melted rock.", "ex": "The volcano erupted at night.", "exTr": "Yanardağ gece patladı." },
-  "nevertheless--adv": { "tr": "yine de", "def": "In spite of what has just been said.", "ex": "It rained; nevertheless we walked.", "exTr": "Yağmur yağdı; yine de yürüdük." },
-  "supposedly--adv": { "tr": "sözde, güya", "def": "According to what people say, though it may not be true.", "ex": "The house is supposedly haunted.", "exTr": "Ev güya perili." },
-  "syndrome--noun": { "tr": "sendrom", "def": "A set of medical signs that happen together.", "ex": "Doctors named the new syndrome.", "exTr": "Doktorlar yeni sendroma ad verdi." },
-  "entertain--verb": { "tr": "eğlendirmek, ağırlamak", "def": "To amuse people, or to have guests at home.", "ex": "The clown entertained the children.", "exTr": "Palyaço çocukları eğlendirdi." },
-  "politician--noun": { "tr": "siyasetçi", "def": "A person whose work is in government or politics.", "ex": "The politician avoided the question.", "exTr": "Siyasetçi soruyu geçiştirdi." },
-  "amazed--adj": { "tr": "hayrete düşmüş", "def": "Very surprised in a good way.", "ex": "I was amazed by her memory.", "exTr": "Hafızasına hayret ettim." },
-  "phantom--adj": { "tr": "hayali, hayalet", "def": "Not real, although it seems to exist.", "ex": "He felt a phantom pain.", "exTr": "Hayali bir ağrı hissetti." },
-  "notion--noun": { "tr": "fikir, kavrayış", "def": "An idea or belief about something.", "ex": "He had no notion of the cost.", "exTr": "Maliyet hakkında hiçbir fikri yoktu." },
-  "tease--noun": { "tr": "takılma, şakacı kişi", "def": "A person who makes gentle jokes about others.", "ex": "Her brother is a terrible tease.", "exTr": "Kardeşi korkunç bir şakacı." },
-  "extent--noun": { "tr": "ölçü, kapsam", "def": "How large or how serious something is.", "ex": "The extent of the damage is unclear.", "exTr": "Hasarın boyutu belirsiz." },
-  "departure--noun": { "tr": "kalkış, ayrılış", "def": "The act of leaving a place.", "ex": "Departure is at half past six.", "exTr": "Kalkış altı buçukta." },
-  "shallow--adj": { "tr": "sığ", "def": "Not deep from top to bottom.", "ex": "The pool is shallow at this end.", "exTr": "Havuz bu uçta sığ." },
-  "diving--noun": { "tr": "dalış", "def": "The sport of swimming under water or jumping in.", "ex": "Diving is popular near Kaş.", "exTr": "Kaş civarında dalış popüler." },
-  "horizon--noun": { "tr": "ufuk", "def": "The line where the sky seems to meet the land.", "ex": "A ship appeared on the horizon.", "exTr": "Ufukta bir gemi belirdi." },
-  "reflection--noun": { "tr": "yansıma, düşünme", "def": "An image in a mirror, or careful thought.", "ex": "She saw her reflection in the water.", "exTr": "Suda yansımasını gördü." },
-  "merchant--noun": { "tr": "tüccar", "def": "A person who buys and sells goods, often abroad.", "ex": "A spice merchant built this house.", "exTr": "Bu evi bir baharat tüccarı yaptırmış." },
-  "disappointment--noun": { "tr": "hayal kırıklığı", "def": "The sad feeling when something is worse than expected.", "ex": "The result was a disappointment.", "exTr": "Sonuç bir hayal kırıklığıydı." },
-  "voyage--noun": { "tr": "deniz yolculuğu", "def": "A long journey by sea or in space.", "ex": "The voyage took eight weeks.", "exTr": "Yolculuk sekiz hafta sürdü." },
-  "grill--noun": { "tr": "ızgara", "def": "A metal frame for cooking food over heat.", "ex": "Clean the grill after cooking.", "exTr": "Pişirdikten sonra ızgarayı temizle." },
-  "grill--verb": { "tr": "ızgara yapmak", "def": "To cook food under or over direct heat.", "ex": "Grill the peppers for five minutes.", "exTr": "Biberleri beş dakika ızgarada pişir." },
-  "deadline--noun": { "tr": "son tarih", "def": "The latest time by which something must be done.", "ex": "The deadline is next Monday.", "exTr": "Son tarih önümüzdeki pazartesi." },
-  "define--verb": { "tr": "tanımlamak", "def": "To explain the exact meaning of something.", "ex": "Define the term in one sentence.", "exTr": "Terimi tek cümleyle tanımla." },
-  "reject--verb": { "tr": "reddetmek, geri çevirmek", "def": "To refuse to accept something.", "ex": "The committee rejected his plan.", "exTr": "Komite planını reddetti." },
-  "heel--noun": { "tr": "topuk", "def": "The back part of the foot or of a shoe.", "ex": "My heel hurts after the walk.", "exTr": "Yürüyüşten sonra topuğum ağrıyor." },
-  "farther--adv": { "tr": "daha uzağa", "def": "At or to a greater distance.", "ex": "We walked farther than yesterday.", "exTr": "Dünden daha uzağa yürüdük." },
-  "acknowledge--verb": { "tr": "kabul etmek, teyit etmek", "def": "To admit that something is true, or to say you received it.", "ex": "He acknowledged his mistake.", "exTr": "Hatasını kabul etti." },
-  "terminal--noun": { "tr": "terminal", "def": "A building where journeys begin and end.", "ex": "The bus leaves from terminal two.", "exTr": "Otobüs iki numaralı terminalden kalkıyor." },
-  "fade--verb": { "tr": "solmak, azalmak", "def": "To lose colour or strength gradually.", "ex": "The curtains faded in the sun.", "exTr": "Perdeler güneşte soldu." },
-  "submarine--noun": { "tr": "denizaltı", "def": "A ship that can travel under water.", "ex": "The submarine stayed down for hours.", "exTr": "Denizaltı saatlerce derinde kaldı." },
-  "opposition--noun": { "tr": "muhalefet, karşıtlık", "def": "Strong disagreement, or the parties not in power.", "ex": "The plan met strong opposition.", "exTr": "Plan güçlü bir muhalefetle karşılaştı." },
-  "rapid--adj": { "tr": "hızlı, süratli", "def": "Happening or moving very quickly.", "ex": "The patient made a rapid recovery.", "exTr": "Hasta hızlı bir iyileşme gösterdi." },
-  "definition--noun": { "tr": "tanım", "def": "An explanation of what a word means.", "ex": "Look up the definition online.", "exTr": "Tanıma çevrimiçi bak." },
-  "unlucky--adj": { "tr": "şanssız", "def": "Having or bringing bad luck.", "ex": "Thirteen is considered unlucky.", "exTr": "On üç uğursuz sayılır." },
-  "handwriting--noun": { "tr": "el yazısı", "def": "The way a person writes with a pen.", "ex": "His handwriting is hard to read.", "exTr": "El yazısını okumak zor." },
-  "challenging--adj": { "tr": "zorlu, meydan okuyan", "def": "Difficult in a way that tests your ability.", "ex": "It was a challenging climb.", "exTr": "Zorlu bir tırmanıştı." },
-  "attraction--noun": { "tr": "cazibe, ilgi çeken yer", "def": "Something that draws people, or the feeling of liking.", "ex": "The castle is the main attraction.", "exTr": "Kale en çok ilgi çeken yer." },
-  "workshop--noun": { "tr": "atölye", "def": "A room where things are made, or a practical class.", "ex": "He runs a pottery workshop.", "exTr": "Bir çömlek atölyesi işletiyor." },
-  "expand--verb": { "tr": "genişlemek, büyütmek", "def": "To become larger, or to make something larger.", "ex": "Metal expands when it is heated.", "exTr": "Metal ısıtıldığında genişler." },
-  "sunrise--noun": { "tr": "gün doğumu", "def": "The time when the sun appears in the morning.", "ex": "We left before sunrise.", "exTr": "Gün doğumundan önce çıktık." },
-  "selection--noun": { "tr": "seçim, seçki", "def": "A group of chosen things, or the act of choosing.", "ex": "The shop has a wide selection.", "exTr": "Dükkânda geniş bir seçki var." },
-  "democratic--adj": { "tr": "demokratik", "def": "Based on the idea that people choose their leaders.", "ex": "They held a democratic vote.", "exTr": "Demokratik bir oylama yaptılar." },
-  "translate--verb": { "tr": "çevirmek, tercüme etmek", "def": "To change words from one language into another.", "ex": "She translated the poem into Turkish.", "exTr": "Şiiri Türkçeye çevirdi." },
-  "sticky--adj": { "tr": "yapışkan", "def": "Made of or covered with something that sticks.", "ex": "The table is sticky with honey.", "exTr": "Masa balla yapış yapış." },
-  "primitive--adj": { "tr": "ilkel", "def": "Belonging to an early stage of development.", "ex": "They used primitive tools.", "exTr": "İlkel aletler kullandılar." },
-  "peculiar--adj": { "tr": "tuhaf, kendine özgü", "def": "Strange, or belonging only to one thing.", "ex": "The soup had a peculiar taste.", "exTr": "Çorbanın tuhaf bir tadı vardı." },
-  "freezer--noun": { "tr": "dondurucu, derin dondurucu", "def": "A machine that keeps food frozen.", "ex": "Put the meat in the freezer.", "exTr": "Eti dondurucuya koy." }
+  "_meta": {
+    "batch": "b1-018",
+    "level": "B1",
+    "range": "1355-1434"
+  },
+  "examination--noun": {
+    "tr": "inceleme, muayene",
+    "def": "A careful look at something, or a medical check.",
+    "ex": "The examination revealed no problem.",
+    "exTr": "İnceleme hiçbir sorun ortaya çıkarmadı."
+  },
+  "participate--verb": {
+    "tr": "katılmak",
+    "def": "To take part in an activity with others.",
+    "ex": "Every student participated in the project.",
+    "exTr": "Her öğrenci projeye katıldı."
+  },
+  "razor--noun": {
+    "tr": "jilet, tıraş makinesi",
+    "def": "A sharp tool used for shaving.",
+    "ex": "The razor is in the drawer.",
+    "exTr": "Jilet çekmecede."
+  },
+  "heavenly--adj": {
+    "tr": "ilahi, cennet gibi",
+    "def": "Relating to heaven, or extremely pleasant.",
+    "ex": "The garden smelled heavenly.",
+    "exTr": "Bahçe cennet gibi kokuyordu."
+  },
+  "bark--noun": {
+    "tr": "ağaç kabuğu, havlama",
+    "def": "The hard cover of a tree, or the sound a dog makes.",
+    "ex": "The bark of this tree is thick.",
+    "exTr": "Bu ağacın kabuğu kalın."
+  },
+  "casual--adj": {
+    "tr": "gündelik, resmi olmayan",
+    "def": "Relaxed and not formal.",
+    "ex": "Wear casual clothes tomorrow.",
+    "exTr": "Yarın gündelik kıyafet giy."
+  },
+  "finance--verb": {
+    "tr": "mali kaynak sağlamak",
+    "def": "To provide money for a project.",
+    "ex": "A bank financed the factory.",
+    "exTr": "Fabrikayı bir banka finanse etti."
+  },
+  "respectable--adj": {
+    "tr": "saygın, düzgün",
+    "def": "Accepted as decent and of good quality.",
+    "ex": "They live in a respectable district.",
+    "exTr": "Saygın bir semtte yaşıyorlar."
+  },
+  "demonstration--noun": {
+    "tr": "gösteri, tanıtım",
+    "def": "A public protest, or a show of how something works.",
+    "ex": "The demonstration filled the square.",
+    "exTr": "Gösteri meydanı doldurdu."
+  },
+  "stir--verb": {
+    "tr": "karıştırmak",
+    "def": "To move a liquid around with a spoon.",
+    "ex": "Stir the soup gently.",
+    "exTr": "Çorbayı yavaşça karıştır."
+  },
+  "tuna--noun": {
+    "tr": "ton balığı",
+    "def": "A large sea fish that is often tinned.",
+    "ex": "She made a tuna sandwich.",
+    "exTr": "Ton balıklı sandviç yaptı."
+  },
+  "inspection--noun": {
+    "tr": "denetim, teftiş",
+    "def": "An official examination to check standards.",
+    "ex": "The kitchen passed its inspection.",
+    "exTr": "Mutfak denetimden geçti."
+  },
+  "choke--verb": {
+    "tr": "boğulmak, tıkanmak",
+    "def": "To be unable to breathe because something blocks the throat.",
+    "ex": "He choked on a fish bone.",
+    "exTr": "Bir kılçıkla boğuldu."
+  },
+  "popcorn--noun": {
+    "tr": "patlamış mısır",
+    "def": "Corn that bursts open when heated.",
+    "ex": "We shared a bag of popcorn.",
+    "exTr": "Bir paket patlamış mısırı paylaştık."
+  },
+  "documentary--noun": {
+    "tr": "belgesel",
+    "def": "A film that gives facts about real events.",
+    "ex": "The documentary won an award.",
+    "exTr": "Belgesel bir ödül kazandı."
+  },
+  "rapidly--adv": {
+    "tr": "hızla",
+    "def": "Very quickly.",
+    "ex": "The city grew rapidly.",
+    "exTr": "Şehir hızla büyüdü."
+  },
+  "efficient--adj": {
+    "tr": "verimli",
+    "def": "Working well without wasting time or energy.",
+    "ex": "The new stove is more efficient.",
+    "exTr": "Yeni ocak daha verimli."
+  },
+  "mechanic--noun": {
+    "tr": "tamirci, makinist",
+    "def": "A person who repairs engines and machines.",
+    "ex": "The mechanic fixed the brakes.",
+    "exTr": "Tamirci frenleri tamir etti."
+  },
+  "resolve--verb": {
+    "tr": "çözmek, karara varmak",
+    "def": "To find an answer to a problem.",
+    "ex": "They resolved the dispute quietly.",
+    "exTr": "Anlaşmazlığı sessizce çözdüler."
+  },
+  "relation--noun": {
+    "tr": "ilişki, bağıntı",
+    "def": "A connection between two things or people.",
+    "ex": "There is no relation between them.",
+    "exTr": "Aralarında hiçbir bağ yok."
+  },
+  "mechanical--adj": {
+    "tr": "mekanik",
+    "def": "Relating to machines, or done without thinking.",
+    "ex": "A mechanical fault stopped the bus.",
+    "exTr": "Mekanik bir arıza otobüsü durdurdu."
+  },
+  "extend--verb": {
+    "tr": "uzatmak, genişletmek",
+    "def": "To make something longer or larger.",
+    "ex": "They extended the deadline.",
+    "exTr": "Son tarihi uzattılar."
+  },
+  "accomplish--verb": {
+    "tr": "başarmak, gerçekleştirmek",
+    "def": "To succeed in doing something.",
+    "ex": "We accomplished the task in a day.",
+    "exTr": "Görevi bir günde başardık."
+  },
+  "lightly--adv": {
+    "tr": "hafifçe",
+    "def": "With little force or in a small amount.",
+    "ex": "Season the fish lightly.",
+    "exTr": "Balığı hafifçe baharatla."
+  },
+  "layer--noun": {
+    "tr": "katman, tabaka",
+    "def": "A flat amount of material lying over another.",
+    "ex": "A layer of dust covered everything.",
+    "exTr": "Her şeyi bir toz tabakası kaplamıştı."
+  },
+  "gown--noun": {
+    "tr": "gece elbisesi, cüppe",
+    "def": "A long dress for a formal event, or an official robe.",
+    "ex": "She wore a long blue gown.",
+    "exTr": "Uzun mavi bir elbise giymişti."
+  },
+  "adopt--verb": {
+    "tr": "evlat edinmek, benimsemek",
+    "def": "To take a child into your family, or to start using an idea.",
+    "ex": "They adopted two children.",
+    "exTr": "İki çocuk evlat edindiler."
+  },
+  "consideration--noun": {
+    "tr": "değerlendirme, düşünce",
+    "def": "Careful thought, or something you take into account.",
+    "ex": "Cost was the main consideration.",
+    "exTr": "Ana değerlendirme maliyetti."
+  },
+  "frost--noun": {
+    "tr": "kırağı, don",
+    "def": "The thin white ice that forms on cold nights.",
+    "ex": "Frost covered the windows.",
+    "exTr": "Pencereleri kırağı kaplamıştı."
+  },
+  "registration--noun": {
+    "tr": "kayıt işlemi",
+    "def": "The act of putting a name on an official list.",
+    "ex": "Registration closes on Friday.",
+    "exTr": "Kayıt cuma günü kapanıyor."
+  },
+  "constitution--noun": {
+    "tr": "anayasa",
+    "def": "The set of basic laws that govern a country.",
+    "ex": "The constitution protects free speech.",
+    "exTr": "Anayasa ifade özgürlüğünü korur."
+  },
+  "buyer--noun": {
+    "tr": "alıcı",
+    "def": "A person who buys something.",
+    "ex": "The buyer paid in cash.",
+    "exTr": "Alıcı nakit ödedi."
+  },
+  "volcano--noun": {
+    "tr": "yanardağ",
+    "def": "A mountain that can throw out hot melted rock.",
+    "ex": "The volcano erupted at night.",
+    "exTr": "Yanardağ gece patladı."
+  },
+  "nevertheless--adv": {
+    "tr": "yine de",
+    "def": "In spite of what has just been said.",
+    "ex": "It rained; nevertheless we walked.",
+    "exTr": "Yağmur yağdı; yine de yürüdük."
+  },
+  "supposedly--adv": {
+    "tr": "sözde, güya",
+    "def": "According to what people say, though it may not be true.",
+    "ex": "The house is supposedly haunted.",
+    "exTr": "Ev güya perili."
+  },
+  "syndrome--noun": {
+    "tr": "sendrom",
+    "def": "A set of medical signs that happen together.",
+    "ex": "Doctors named the new syndrome.",
+    "exTr": "Doktorlar yeni sendroma ad verdi."
+  },
+  "entertain--verb": {
+    "tr": "eğlendirmek, ağırlamak",
+    "def": "To amuse people, or to have guests at home.",
+    "ex": "The clown entertained the children.",
+    "exTr": "Palyaço çocukları eğlendirdi."
+  },
+  "politician--noun": {
+    "tr": "siyasetçi",
+    "def": "A person whose work is in government or politics.",
+    "ex": "The politician avoided the question.",
+    "exTr": "Siyasetçi soruyu geçiştirdi."
+  },
+  "amazed--adj": {
+    "tr": "hayrete düşmüş",
+    "def": "Very surprised in a good way.",
+    "ex": "I was amazed by her memory.",
+    "exTr": "Hafızasına hayret ettim."
+  },
+  "phantom--adj": {
+    "tr": "hayali, hayalet",
+    "def": "Not real, although it seems to exist.",
+    "ex": "He felt a phantom pain.",
+    "exTr": "Hayali bir ağrı hissetti."
+  },
+  "notion--noun": {
+    "tr": "fikir, kavrayış",
+    "def": "An idea or belief about something.",
+    "ex": "He had no notion of the cost.",
+    "exTr": "Maliyet hakkında hiçbir fikri yoktu."
+  },
+  "tease--noun": {
+    "tr": "takılma, şakacı kişi",
+    "def": "A person who makes gentle jokes about others.",
+    "ex": "Her brother is a terrible tease.",
+    "exTr": "Kardeşi korkunç bir şakacı."
+  },
+  "extent--noun": {
+    "tr": "ölçü, kapsam",
+    "def": "How large or how serious something is.",
+    "ex": "The extent of the damage is unclear.",
+    "exTr": "Hasarın boyutu belirsiz."
+  },
+  "departure--noun": {
+    "tr": "kalkış, ayrılış",
+    "def": "The act of leaving a place.",
+    "ex": "Departure is at half past six.",
+    "exTr": "Kalkış altı buçukta."
+  },
+  "shallow--adj": {
+    "tr": "sığ",
+    "def": "Not deep from top to bottom.",
+    "ex": "The pool is shallow at this end.",
+    "exTr": "Havuz bu uçta sığ."
+  },
+  "diving--noun": {
+    "tr": "dalış sporu",
+    "def": "The sport of swimming under water or jumping in.",
+    "ex": "Diving is popular near Kaş.",
+    "exTr": "Kaş civarında dalış popüler."
+  },
+  "horizon--noun": {
+    "tr": "ufuk",
+    "def": "The line where the sky seems to meet the land.",
+    "ex": "A ship appeared on the horizon.",
+    "exTr": "Ufukta bir gemi belirdi."
+  },
+  "reflection--noun": {
+    "tr": "yansıma, düşünme",
+    "def": "An image in a mirror, or careful thought.",
+    "ex": "She saw her reflection in the water.",
+    "exTr": "Suda yansımasını gördü."
+  },
+  "merchant--noun": {
+    "tr": "tüccar",
+    "def": "A person who buys and sells goods, often abroad.",
+    "ex": "A spice merchant built this house.",
+    "exTr": "Bu evi bir baharat tüccarı yaptırmış."
+  },
+  "disappointment--noun": {
+    "tr": "hayal kırıklığı",
+    "def": "The sad feeling when something is worse than expected.",
+    "ex": "The result was a disappointment.",
+    "exTr": "Sonuç bir hayal kırıklığıydı."
+  },
+  "voyage--noun": {
+    "tr": "deniz yolculuğu",
+    "def": "A long journey by sea or in space.",
+    "ex": "The voyage took eight weeks.",
+    "exTr": "Yolculuk sekiz hafta sürdü."
+  },
+  "grill--noun": {
+    "tr": "ızgara",
+    "def": "A metal frame for cooking food over heat.",
+    "ex": "Clean the grill after cooking.",
+    "exTr": "Pişirdikten sonra ızgarayı temizle."
+  },
+  "grill--verb": {
+    "tr": "ızgara yapmak",
+    "def": "To cook food under or over direct heat.",
+    "ex": "Grill the peppers for five minutes.",
+    "exTr": "Biberleri beş dakika ızgarada pişir."
+  },
+  "deadline--noun": {
+    "tr": "son tarih",
+    "def": "The latest time by which something must be done.",
+    "ex": "The deadline is next Monday.",
+    "exTr": "Son tarih önümüzdeki pazartesi."
+  },
+  "define--verb": {
+    "tr": "tanımlamak",
+    "def": "To explain the exact meaning of something.",
+    "ex": "Define the term in one sentence.",
+    "exTr": "Terimi tek cümleyle tanımla."
+  },
+  "reject--verb": {
+    "tr": "reddetmek, geri çevirmek",
+    "def": "To refuse to accept something.",
+    "ex": "The committee rejected his plan.",
+    "exTr": "Komite planını reddetti."
+  },
+  "heel--noun": {
+    "tr": "topuk",
+    "def": "The back part of the foot or of a shoe.",
+    "ex": "My heel hurts after the walk.",
+    "exTr": "Yürüyüşten sonra topuğum ağrıyor."
+  },
+  "farther--adv": {
+    "tr": "daha uzağa",
+    "def": "At or to a greater distance.",
+    "ex": "We walked farther than yesterday.",
+    "exTr": "Dünden daha uzağa yürüdük."
+  },
+  "acknowledge--verb": {
+    "tr": "kabul etmek, teyit etmek",
+    "def": "To admit that something is true, or to say you received it.",
+    "ex": "He acknowledged his mistake.",
+    "exTr": "Hatasını kabul etti."
+  },
+  "terminal--noun": {
+    "tr": "terminal",
+    "def": "A building where journeys begin and end.",
+    "ex": "The bus leaves from terminal two.",
+    "exTr": "Otobüs iki numaralı terminalden kalkıyor."
+  },
+  "fade--verb": {
+    "tr": "solmak, azalmak",
+    "def": "To lose colour or strength gradually.",
+    "ex": "The curtains faded in the sun.",
+    "exTr": "Perdeler güneşte soldu."
+  },
+  "submarine--noun": {
+    "tr": "denizaltı",
+    "def": "A ship that can travel under water.",
+    "ex": "The submarine stayed down for hours.",
+    "exTr": "Denizaltı saatlerce derinde kaldı."
+  },
+  "opposition--noun": {
+    "tr": "muhalefet, karşıtlık",
+    "def": "Strong disagreement, or the parties not in power.",
+    "ex": "The plan met strong opposition.",
+    "exTr": "Plan güçlü bir muhalefetle karşılaştı."
+  },
+  "rapid--adj": {
+    "tr": "hızlı, süratli",
+    "def": "Happening or moving very quickly.",
+    "ex": "The patient made a rapid recovery.",
+    "exTr": "Hasta hızlı bir iyileşme gösterdi."
+  },
+  "definition--noun": {
+    "tr": "tanım",
+    "def": "An explanation of what a word means.",
+    "ex": "Look up the definition online.",
+    "exTr": "Tanıma çevrimiçi bak."
+  },
+  "unlucky--adj": {
+    "tr": "şanssız",
+    "def": "Having or bringing bad luck.",
+    "ex": "Thirteen is considered unlucky.",
+    "exTr": "On üç uğursuz sayılır."
+  },
+  "handwriting--noun": {
+    "tr": "el yazısı",
+    "def": "The way a person writes with a pen.",
+    "ex": "His handwriting is hard to read.",
+    "exTr": "El yazısını okumak zor."
+  },
+  "challenging--adj": {
+    "tr": "zorlu, meydan okuyan",
+    "def": "Difficult in a way that tests your ability.",
+    "ex": "It was a challenging climb.",
+    "exTr": "Zorlu bir tırmanıştı."
+  },
+  "attraction--noun": {
+    "tr": "cazibe, ilgi çeken yer",
+    "def": "Something that draws people, or the feeling of liking.",
+    "ex": "The castle is the main attraction.",
+    "exTr": "Kale en çok ilgi çeken yer."
+  },
+  "workshop--noun": {
+    "tr": "atölye",
+    "def": "A room where things are made, or a practical class.",
+    "ex": "He runs a pottery workshop.",
+    "exTr": "Bir çömlek atölyesi işletiyor."
+  },
+  "expand--verb": {
+    "tr": "genişlemek, büyütmek",
+    "def": "To become larger, or to make something larger.",
+    "ex": "Metal expands when it is heated.",
+    "exTr": "Metal ısıtıldığında genişler."
+  },
+  "sunrise--noun": {
+    "tr": "gün doğumu",
+    "def": "The time when the sun appears in the morning.",
+    "ex": "We left before sunrise.",
+    "exTr": "Gün doğumundan önce çıktık."
+  },
+  "selection--noun": {
+    "tr": "seçim, seçki",
+    "def": "A group of chosen things, or the act of choosing.",
+    "ex": "The shop has a wide selection.",
+    "exTr": "Dükkânda geniş bir seçki var."
+  },
+  "democratic--adj": {
+    "tr": "demokratik",
+    "def": "Based on the idea that people choose their leaders.",
+    "ex": "They held a democratic vote.",
+    "exTr": "Demokratik bir oylama yaptılar."
+  },
+  "translate--verb": {
+    "tr": "çevirmek, tercüme etmek",
+    "def": "To change words from one language into another.",
+    "ex": "She translated the poem into Turkish.",
+    "exTr": "Şiiri Türkçeye çevirdi."
+  },
+  "sticky--adj": {
+    "tr": "yapışkan",
+    "def": "Made of or covered with something that sticks.",
+    "ex": "The table is sticky with honey.",
+    "exTr": "Masa balla yapış yapış."
+  },
+  "primitive--adj": {
+    "tr": "ilkel",
+    "def": "Belonging to an early stage of development.",
+    "ex": "They used primitive tools.",
+    "exTr": "İlkel aletler kullandılar."
+  },
+  "peculiar--adj": {
+    "tr": "tuhaf, kendine özgü",
+    "def": "Strange, or belonging only to one thing.",
+    "ex": "The soup had a peculiar taste.",
+    "exTr": "Çorbanın tuhaf bir tadı vardı."
+  },
+  "freezer--noun": {
+    "tr": "dondurucu, derin dondurucu",
+    "def": "A machine that keeps food frozen.",
+    "ex": "Put the meat in the freezer.",
+    "exTr": "Eti dondurucuya koy."
+  }
 }

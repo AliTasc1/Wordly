@@ -1,83 +1,481 @@
 {
-  "_meta": { "batch": "b1-025", "level": "B1", "range": "1910-1989" },
-
-  "fashionable--adj": { "tr": "moda olan, şık", "def": "Popular and in the current style.", "ex": "Long coats are fashionable again.", "exTr": "Uzun paltolar yine moda." },
-  "cucumber--noun": { "tr": "salatalık", "def": "A long green vegetable eaten raw.", "ex": "Slice the cucumber thinly.", "exTr": "Salatalığı ince dilimle." },
-  "disastrous--adj": { "tr": "felaket gibi, yıkıcı", "def": "Extremely bad in its results.", "ex": "The decision proved disastrous.", "exTr": "Karar felaket oldu." },
-  "highlight--verb": { "tr": "vurgulamak", "def": "To draw attention to something important.", "ex": "The report highlights two risks.", "exTr": "Rapor iki riski vurguluyor." },
-  "cushion--noun": { "tr": "minder, yastık", "def": "A soft bag you sit on or lean against.", "ex": "Put a cushion behind your back.", "exTr": "Sırtının arkasına bir minder koy." },
-  "irregular--adj": { "tr": "düzensiz, kuralsız", "def": "Not following a regular pattern or rule.", "ex": "His breathing became irregular.", "exTr": "Nefesi düzensizleşti." },
-  "crossroads--noun": { "tr": "kavşak", "def": "A place where two roads cross.", "ex": "Turn left at the crossroads.", "exTr": "Kavşaktan sola dön." },
-  "lifelong--adj": { "tr": "ömür boyu süren", "def": "Lasting for the whole of your life.", "ex": "They were lifelong friends.", "exTr": "Ömür boyu arkadaştılar." },
-  "abstract--adj": { "tr": "soyut", "def": "Based on ideas rather than physical things.", "ex": "Justice is an abstract idea.", "exTr": "Adalet soyut bir kavramdır." },
-  "unwanted--adj": { "tr": "istenmeyen", "def": "Not needed or not welcome.", "ex": "Give unwanted clothes to charity.", "exTr": "İstenmeyen kıyafetleri bağışla." },
-  "primarily--adv": { "tr": "esas olarak", "def": "Mainly, more than anything else.", "ex": "The course is primarily for beginners.", "exTr": "Kurs esas olarak yeni başlayanlar için." },
-  "underage--adj": { "tr": "reşit olmayan", "def": "Too young to be legally allowed.", "ex": "Underage drinking is forbidden.", "exTr": "Reşit olmayanların içki içmesi yasak." },
-  "aloud--adv": { "tr": "yüksek sesle", "def": "In a voice others can hear.", "ex": "Read the poem aloud.", "exTr": "Şiiri yüksek sesle oku." },
-  "violently--adv": { "tr": "şiddetle", "def": "With great force, often causing harm.", "ex": "The boat rocked violently.", "exTr": "Tekne şiddetle sallandı." },
-  "tile--noun": { "tr": "fayans, karo", "def": "A flat piece used to cover a floor or a wall.", "ex": "One tile is cracked.", "exTr": "Bir fayans çatlamış." },
-  "resource--noun": { "tr": "kaynak", "def": "Something useful that a country or a person has.", "ex": "Water is our most precious resource.", "exTr": "Su en değerli kaynağımız." },
-  "dishwasher--noun": { "tr": "bulaşık makinesi", "def": "A machine that washes plates and cups.", "ex": "Load the dishwasher after dinner.", "exTr": "Yemekten sonra bulaşık makinesini doldur." },
-  "incorrect--adj": { "tr": "yanlış", "def": "Not right or not true.", "ex": "Two answers were incorrect.", "exTr": "İki cevap yanlıştı." },
-  "agricultural--adj": { "tr": "tarımsal", "def": "Relating to farming and growing crops.", "ex": "This is agricultural land.", "exTr": "Burası tarım arazisi." },
-  "bedside--noun": { "tr": "yatak başı", "def": "The area next to a bed.", "ex": "She sat at his bedside.", "exTr": "Yatağının başında oturdu." },
-  "politely--adv": { "tr": "kibarca", "def": "In a way that shows good manners.", "ex": "He politely refused the offer.", "exTr": "Teklifi kibarca reddetti." },
-  "graceful--adj": { "tr": "zarif", "def": "Moving in a smooth and attractive way.", "ex": "Her dance was graceful.", "exTr": "Dansı zarifti." },
-  "basin--noun": { "tr": "lavabo, leğen", "def": "A round open container for water.", "ex": "Fill the basin with warm water.", "exTr": "Leğeni ılık suyla doldur." },
-  "stylish--adj": { "tr": "şık", "def": "Fashionable and attractive in design.", "ex": "He wore a stylish grey coat.", "exTr": "Şık gri bir palto giymişti." },
-  "spinach--noun": { "tr": "ıspanak", "def": "A green leafy vegetable rich in iron.", "ex": "Add spinach to the pastry.", "exTr": "Böreğe ıspanak ekle." },
-  "historian--noun": { "tr": "tarihçi", "def": "A person who studies and writes about the past.", "ex": "The historian examined old letters.", "exTr": "Tarihçi eski mektupları inceledi." },
-  "swimmer--noun": { "tr": "yüzücü", "def": "A person who swims, especially well.", "ex": "She is a strong swimmer.", "exTr": "İyi bir yüzücü." },
-  "giraffe--noun": { "tr": "zürafa", "def": "A tall African animal with a very long neck.", "ex": "A giraffe reached the top leaves.", "exTr": "Bir zürafa en üstteki yapraklara uzandı." },
-  "renew--verb": { "tr": "yenilemek", "def": "To make something valid again for a longer period.", "ex": "I must renew my passport.", "exTr": "Pasaportumu yenilemeliyim." },
-  "dangerously--adv": { "tr": "tehlikeli biçimde", "def": "In a way that could cause harm.", "ex": "He drove dangerously fast.", "exTr": "Tehlikeli biçimde hızlı sürdü." },
-  "stumble--verb": { "tr": "tökezlemek", "def": "To hit your foot on something and almost fall.", "ex": "She stumbled on the step.", "exTr": "Basamakta tökezledi." },
-  "distinguish--verb": { "tr": "ayırt etmek", "def": "To see or explain the difference between things.", "ex": "Can you distinguish the two sounds?", "exTr": "İki sesi ayırt edebiliyor musun?" },
-  "accuracy--noun": { "tr": "doğruluk, isabet", "def": "The state of being exactly correct.", "ex": "The map's accuracy was checked.", "exTr": "Haritanın doğruluğu kontrol edildi." },
-  "circular--adj": { "tr": "dairesel, yuvarlak", "def": "Shaped like a circle.", "ex": "The tower has a circular base.", "exTr": "Kulenin dairesel bir tabanı var." },
-  "lawful--adj": { "tr": "yasal, meşru", "def": "Allowed by the law.", "ex": "He is the lawful owner.", "exTr": "Yasal sahibi o." },
-  "ration--noun": { "tr": "tayın, pay", "def": "A fixed small amount allowed to each person.", "ex": "Each soldier got a bread ration.", "exTr": "Her askere bir ekmek tayını verildi." },
-  "recycling--noun": { "tr": "geri dönüşüm", "def": "The process of treating waste so it can be used again.", "ex": "Recycling saves energy.", "exTr": "Geri dönüşüm enerji tasarrufu sağlar." },
-  "dissolve--verb": { "tr": "çözünmek, eritmek", "def": "To mix completely into a liquid.", "ex": "Sugar dissolves in hot tea.", "exTr": "Şeker sıcak çayda çözünür." },
-  "gymnastics--noun": { "tr": "jimnastik", "def": "A sport of physical exercises needing balance and skill.", "ex": "She trains in gymnastics daily.", "exTr": "Her gün jimnastik çalışıyor." },
-  "attachment--noun": { "tr": "ek dosya, bağlılık", "def": "A file sent with an email, or a feeling of closeness.", "ex": "Open the attachment carefully.", "exTr": "Ek dosyayı dikkatlice aç." },
-  "persuasive--adj": { "tr": "ikna edici", "def": "Able to make people agree with you.", "ex": "She made a persuasive case.", "exTr": "İkna edici bir savunma yaptı." },
-  "enjoyable--adj": { "tr": "keyifli", "def": "Giving pleasure.", "ex": "It was an enjoyable weekend.", "exTr": "Keyifli bir hafta sonuydu." },
-  "unusually--adv": { "tr": "alışılmadık şekilde", "def": "More than is normal.", "ex": "It is unusually warm today.", "exTr": "Bugün alışılmadık şekilde sıcak." },
-  "sophomore--noun": { "tr": "ikinci sınıf öğrencisi", "def": "A student in the second year, in American English.", "ex": "He is a sophomore now.", "exTr": "Artık ikinci sınıf öğrencisi." },
-  "uncertainty--noun": { "tr": "belirsizlik", "def": "The state of not knowing what will happen.", "ex": "The delay caused uncertainty.", "exTr": "Gecikme belirsizlik yarattı." },
-  "disability--noun": { "tr": "engellilik", "def": "A condition that limits movement or the senses.", "ex": "The building suits people with a disability.", "exTr": "Bina engelli kişilere uygun." },
-  "broccoli--noun": { "tr": "brokoli", "def": "A green vegetable with a thick stem and small heads.", "ex": "Steam the broccoli lightly.", "exTr": "Brokoliyi hafifçe buharda pişir." },
-  "pottery--noun": { "tr": "çömlekçilik, çanak çömlek", "def": "Objects made of baked clay, or the art of making them.", "ex": "The museum shows local pottery.", "exTr": "Müze yerel çömlekleri sergiliyor." },
-  "motherland--noun": { "tr": "anavatan", "def": "The country where you were born.", "ex": "He returned to his motherland.", "exTr": "Anavatanına döndü." },
-  "continuously--adv": { "tr": "aralıksız", "def": "Without any break or pause.", "ex": "The pump ran continuously.", "exTr": "Pompa aralıksız çalıştı." },
-  "narrative--adj": { "tr": "anlatısal", "def": "Telling a story.", "ex": "The poem has a narrative style.", "exTr": "Şiirin anlatısal bir üslubu var." },
-  "interact--verb": { "tr": "etkileşmek", "def": "To talk with or affect each other.", "ex": "Children interact through play.", "exTr": "Çocuklar oyunla etkileşiyor." },
-  "stormy--adj": { "tr": "fırtınalı", "def": "With strong wind and rain.", "ex": "It was a stormy night.", "exTr": "Fırtınalı bir geceydi." },
-  "fortnight--noun": { "tr": "iki hafta", "def": "A period of two weeks, in British English.", "ex": "We stayed a fortnight.", "exTr": "İki hafta kaldık." },
-  "excellence--noun": { "tr": "mükemmellik", "def": "The quality of being extremely good.", "ex": "The school is known for excellence.", "exTr": "Okul mükemmellikle tanınıyor." },
-  "upload--verb": { "tr": "yüklemek (internete)", "def": "To send a file from your device to the internet.", "ex": "Upload the photos tonight.", "exTr": "Fotoğrafları bu gece yükle." },
-  "interaction--noun": { "tr": "etkileşim", "def": "The way people or things affect each other.", "ex": "The class encourages interaction.", "exTr": "Ders etkileşimi teşvik ediyor." },
-  "govern--verb": { "tr": "yönetmek", "def": "To officially control a country or an area.", "ex": "A council governs the town.", "exTr": "Kasabayı bir meclis yönetiyor." },
-  "commonly--adv": { "tr": "yaygın olarak", "def": "Often, by many people.", "ex": "This plant is commonly called sage.", "exTr": "Bu bitkiye yaygın olarak adaçayı denir." },
-  "enable--verb": { "tr": "olanak vermek, etkinleştirmek", "def": "To make it possible for someone to do something.", "ex": "The grant enabled her to study.", "exTr": "Burs onun okumasına olanak verdi." },
-  "seaweed--noun": { "tr": "deniz yosunu", "def": "A plant that grows in the sea.", "ex": "Seaweed covered the rocks.", "exTr": "Deniz yosunu kayaları kaplamıştı." },
-  "bravely--adv": { "tr": "cesurca", "def": "In a way that shows courage.", "ex": "He bravely entered the smoke.", "exTr": "Cesurca dumanın içine girdi." },
-  "steadily--adv": { "tr": "istikrarlı biçimde", "def": "At a regular and continuing rate.", "ex": "Prices rose steadily all year.", "exTr": "Fiyatlar bütün yıl istikrarlı biçimde arttı." },
-  "oppression--noun": { "tr": "baskı, zulüm", "def": "Cruel and unfair treatment by those in power.", "ex": "The novel describes political oppression.", "exTr": "Roman siyasi baskıyı anlatıyor." },
-  "festive--adj": { "tr": "şenlikli, bayram havasında", "def": "Cheerful and suitable for a celebration.", "ex": "The street had a festive look.", "exTr": "Sokak şenlikli bir görünümdeydi." },
-  "takeoff--noun": { "tr": "kalkış", "def": "The moment a plane leaves the ground.", "ex": "Takeoff was delayed by fog.", "exTr": "Kalkış sis yüzünden gecikti." },
-  "advertise--verb": { "tr": "reklamını yapmak", "def": "To tell the public about a product or a job.", "ex": "They advertised the post online.", "exTr": "Pozisyonun ilanını çevrimiçi verdiler." },
-  "parental--adj": { "tr": "ebeveyn, anne baba ile ilgili", "def": "Relating to a mother or a father.", "ex": "Parental permission is required.", "exTr": "Ebeveyn izni gerekiyor." },
-  "afterward--adv": { "tr": "sonradan", "def": "Later, after something else, in American English.", "ex": "We talked about it afterward.", "exTr": "Bunu sonradan konuştuk." },
-  "accurately--adv": { "tr": "doğru biçimde", "def": "In a way that is exactly correct.", "ex": "Measure the wood accurately.", "exTr": "Tahtayı doğru biçimde ölç." },
-  "stun--verb": { "tr": "sersemletmek, şok etmek", "def": "To shock someone so much they cannot react.", "ex": "The news stunned the village.", "exTr": "Haber köyü şoke etti." },
-  "reclaim--verb": { "tr": "geri almak, ıslah etmek", "def": "To get something back, or to make land usable.", "ex": "They reclaimed the marsh for farming.", "exTr": "Bataklığı tarım için ıslah ettiler." },
-  "passive--adj": { "tr": "edilgen, pasif", "def": "Accepting what happens without acting.", "ex": "He stayed passive during the argument.", "exTr": "Tartışma boyunca pasif kaldı." },
-  "reduction--noun": { "tr": "azaltma, indirim", "def": "The act of making something smaller.", "ex": "There was a reduction in noise.", "exTr": "Gürültüde bir azalma oldu." },
-  "adviser--noun": { "tr": "danışman", "def": "A person whose job is giving expert advice.", "ex": "Her adviser suggested another course.", "exTr": "Danışmanı başka bir ders önerdi." },
-  "garment--noun": { "tr": "giysi parçası", "def": "A single piece of clothing.", "ex": "Wash this garment by hand.", "exTr": "Bu giysiyi elde yıka." },
-  "preference--noun": { "tr": "tercih", "def": "The thing you like better than another.", "ex": "My preference is the blue one.", "exTr": "Benim tercihim mavi olan." },
-  "knit--verb": { "tr": "örmek", "def": "To make clothes from wool using needles.", "ex": "She knits scarves in winter.", "exTr": "Kışın atkı örüyor." },
-  "discomfort--noun": { "tr": "rahatsızlık", "def": "A slight pain, or a feeling of unease.", "ex": "The chair caused some discomfort.", "exTr": "Sandalye biraz rahatsızlık verdi." }
+  "_meta": {
+    "batch": "b1-025",
+    "level": "B1",
+    "range": "1910-1989"
+  },
+  "fashionable--adj": {
+    "tr": "moda olan, şık",
+    "def": "Popular and in the current style.",
+    "ex": "Long coats are fashionable again.",
+    "exTr": "Uzun paltolar yine moda."
+  },
+  "cucumber--noun": {
+    "tr": "salatalık",
+    "def": "A long green vegetable eaten raw.",
+    "ex": "Slice the cucumber thinly.",
+    "exTr": "Salatalığı ince dilimle."
+  },
+  "disastrous--adj": {
+    "tr": "felaket gibi, yıkıcı",
+    "def": "Extremely bad in its results.",
+    "ex": "The decision proved disastrous.",
+    "exTr": "Karar felaket oldu."
+  },
+  "highlight--verb": {
+    "tr": "vurgulamak",
+    "def": "To draw attention to something important.",
+    "ex": "The report highlights two risks.",
+    "exTr": "Rapor iki riski vurguluyor."
+  },
+  "cushion--noun": {
+    "tr": "minder, yastık",
+    "def": "A soft bag you sit on or lean against.",
+    "ex": "Put a cushion behind your back.",
+    "exTr": "Sırtının arkasına bir minder koy."
+  },
+  "irregular--adj": {
+    "tr": "düzensiz, kuralsız",
+    "def": "Not following a regular pattern or rule.",
+    "ex": "His breathing became irregular.",
+    "exTr": "Nefesi düzensizleşti."
+  },
+  "crossroads--noun": {
+    "tr": "kavşak",
+    "def": "A place where two roads cross.",
+    "ex": "Turn left at the crossroads.",
+    "exTr": "Kavşaktan sola dön."
+  },
+  "lifelong--adj": {
+    "tr": "ömür boyu süren",
+    "def": "Lasting for the whole of your life.",
+    "ex": "They were lifelong friends.",
+    "exTr": "Ömür boyu arkadaştılar."
+  },
+  "abstract--adj": {
+    "tr": "soyut",
+    "def": "Based on ideas rather than physical things.",
+    "ex": "Justice is an abstract idea.",
+    "exTr": "Adalet soyut bir kavramdır."
+  },
+  "unwanted--adj": {
+    "tr": "istenmeyen",
+    "def": "Not needed or not welcome.",
+    "ex": "Give unwanted clothes to charity.",
+    "exTr": "İstenmeyen kıyafetleri bağışla."
+  },
+  "primarily--adv": {
+    "tr": "esas olarak",
+    "def": "Mainly, more than anything else.",
+    "ex": "The course is primarily for beginners.",
+    "exTr": "Kurs esas olarak yeni başlayanlar için."
+  },
+  "underage--adj": {
+    "tr": "reşit olmayan",
+    "def": "Too young to be legally allowed.",
+    "ex": "Underage drinking is forbidden.",
+    "exTr": "Reşit olmayanların içki içmesi yasak."
+  },
+  "aloud--adv": {
+    "tr": "sesli olarak",
+    "def": "In a voice others can hear.",
+    "ex": "Read the poem aloud.",
+    "exTr": "Şiiri yüksek sesle oku."
+  },
+  "violently--adv": {
+    "tr": "şiddetle",
+    "def": "With great force, often causing harm.",
+    "ex": "The boat rocked violently.",
+    "exTr": "Tekne şiddetle sallandı."
+  },
+  "tile--noun": {
+    "tr": "fayans, karo",
+    "def": "A flat piece used to cover a floor or a wall.",
+    "ex": "One tile is cracked.",
+    "exTr": "Bir fayans çatlamış."
+  },
+  "resource--noun": {
+    "tr": "kaynak",
+    "def": "Something useful that a country or a person has.",
+    "ex": "Water is our most precious resource.",
+    "exTr": "Su en değerli kaynağımız."
+  },
+  "dishwasher--noun": {
+    "tr": "bulaşık makinesi",
+    "def": "A machine that washes plates and cups.",
+    "ex": "Load the dishwasher after dinner.",
+    "exTr": "Yemekten sonra bulaşık makinesini doldur."
+  },
+  "incorrect--adj": {
+    "tr": "yanlış",
+    "def": "Not right or not true.",
+    "ex": "Two answers were incorrect.",
+    "exTr": "İki cevap yanlıştı."
+  },
+  "agricultural--adj": {
+    "tr": "tarımsal",
+    "def": "Relating to farming and growing crops.",
+    "ex": "This is agricultural land.",
+    "exTr": "Burası tarım arazisi."
+  },
+  "bedside--noun": {
+    "tr": "yatak başı",
+    "def": "The area next to a bed.",
+    "ex": "She sat at his bedside.",
+    "exTr": "Yatağının başında oturdu."
+  },
+  "politely--adv": {
+    "tr": "kibarca",
+    "def": "In a way that shows good manners.",
+    "ex": "He politely refused the offer.",
+    "exTr": "Teklifi kibarca reddetti."
+  },
+  "graceful--adj": {
+    "tr": "zarif",
+    "def": "Moving in a smooth and attractive way.",
+    "ex": "Her dance was graceful.",
+    "exTr": "Dansı zarifti."
+  },
+  "basin--noun": {
+    "tr": "lavabo, leğen",
+    "def": "A round open container for water.",
+    "ex": "Fill the basin with warm water.",
+    "exTr": "Leğeni ılık suyla doldur."
+  },
+  "stylish--adj": {
+    "tr": "şık",
+    "def": "Fashionable and attractive in design.",
+    "ex": "He wore a stylish grey coat.",
+    "exTr": "Şık gri bir palto giymişti."
+  },
+  "spinach--noun": {
+    "tr": "ıspanak",
+    "def": "A green leafy vegetable rich in iron.",
+    "ex": "Add spinach to the pastry.",
+    "exTr": "Böreğe ıspanak ekle."
+  },
+  "historian--noun": {
+    "tr": "tarihçi",
+    "def": "A person who studies and writes about the past.",
+    "ex": "The historian examined old letters.",
+    "exTr": "Tarihçi eski mektupları inceledi."
+  },
+  "swimmer--noun": {
+    "tr": "yüzücü",
+    "def": "A person who swims, especially well.",
+    "ex": "She is a strong swimmer.",
+    "exTr": "İyi bir yüzücü."
+  },
+  "giraffe--noun": {
+    "tr": "zürafa",
+    "def": "A tall African animal with a very long neck.",
+    "ex": "A giraffe reached the top leaves.",
+    "exTr": "Bir zürafa en üstteki yapraklara uzandı."
+  },
+  "renew--verb": {
+    "tr": "yenilemek",
+    "def": "To make something valid again for a longer period.",
+    "ex": "I must renew my passport.",
+    "exTr": "Pasaportumu yenilemeliyim."
+  },
+  "dangerously--adv": {
+    "tr": "tehlikeli biçimde",
+    "def": "In a way that could cause harm.",
+    "ex": "He drove dangerously fast.",
+    "exTr": "Tehlikeli biçimde hızlı sürdü."
+  },
+  "stumble--verb": {
+    "tr": "tökezlemek",
+    "def": "To hit your foot on something and almost fall.",
+    "ex": "She stumbled on the step.",
+    "exTr": "Basamakta tökezledi."
+  },
+  "distinguish--verb": {
+    "tr": "ayırt etmek",
+    "def": "To see or explain the difference between things.",
+    "ex": "Can you distinguish the two sounds?",
+    "exTr": "İki sesi ayırt edebiliyor musun?"
+  },
+  "accuracy--noun": {
+    "tr": "doğruluk, isabet",
+    "def": "The state of being exactly correct.",
+    "ex": "The map's accuracy was checked.",
+    "exTr": "Haritanın doğruluğu kontrol edildi."
+  },
+  "circular--adj": {
+    "tr": "dairesel, yuvarlak",
+    "def": "Shaped like a circle.",
+    "ex": "The tower has a circular base.",
+    "exTr": "Kulenin dairesel bir tabanı var."
+  },
+  "lawful--adj": {
+    "tr": "yasal, meşru",
+    "def": "Allowed by the law.",
+    "ex": "He is the lawful owner.",
+    "exTr": "Yasal sahibi o."
+  },
+  "ration--noun": {
+    "tr": "tayın, pay",
+    "def": "A fixed small amount allowed to each person.",
+    "ex": "Each soldier got a bread ration.",
+    "exTr": "Her askere bir ekmek tayını verildi."
+  },
+  "recycling--noun": {
+    "tr": "geri dönüşüm",
+    "def": "The process of treating waste so it can be used again.",
+    "ex": "Recycling saves energy.",
+    "exTr": "Geri dönüşüm enerji tasarrufu sağlar."
+  },
+  "dissolve--verb": {
+    "tr": "çözünmek, eritmek",
+    "def": "To mix completely into a liquid.",
+    "ex": "Sugar dissolves in hot tea.",
+    "exTr": "Şeker sıcak çayda çözünür."
+  },
+  "gymnastics--noun": {
+    "tr": "jimnastik",
+    "def": "A sport of physical exercises needing balance and skill.",
+    "ex": "She trains in gymnastics daily.",
+    "exTr": "Her gün jimnastik çalışıyor."
+  },
+  "attachment--noun": {
+    "tr": "ek dosya, bağlılık",
+    "def": "A file sent with an email, or a feeling of closeness.",
+    "ex": "Open the attachment carefully.",
+    "exTr": "Ek dosyayı dikkatlice aç."
+  },
+  "persuasive--adj": {
+    "tr": "ikna edici",
+    "def": "Able to make people agree with you.",
+    "ex": "She made a persuasive case.",
+    "exTr": "İkna edici bir savunma yaptı."
+  },
+  "enjoyable--adj": {
+    "tr": "keyifli",
+    "def": "Giving pleasure.",
+    "ex": "It was an enjoyable weekend.",
+    "exTr": "Keyifli bir hafta sonuydu."
+  },
+  "unusually--adv": {
+    "tr": "alışılmadık şekilde",
+    "def": "More than is normal.",
+    "ex": "It is unusually warm today.",
+    "exTr": "Bugün alışılmadık şekilde sıcak."
+  },
+  "sophomore--noun": {
+    "tr": "ikinci sınıf öğrencisi",
+    "def": "A student in the second year, in American English.",
+    "ex": "He is a sophomore now.",
+    "exTr": "Artık ikinci sınıf öğrencisi."
+  },
+  "uncertainty--noun": {
+    "tr": "belirsizlik",
+    "def": "The state of not knowing what will happen.",
+    "ex": "The delay caused uncertainty.",
+    "exTr": "Gecikme belirsizlik yarattı."
+  },
+  "disability--noun": {
+    "tr": "engellilik",
+    "def": "A condition that limits movement or the senses.",
+    "ex": "The building suits people with a disability.",
+    "exTr": "Bina engelli kişilere uygun."
+  },
+  "broccoli--noun": {
+    "tr": "brokoli",
+    "def": "A green vegetable with a thick stem and small heads.",
+    "ex": "Steam the broccoli lightly.",
+    "exTr": "Brokoliyi hafifçe buharda pişir."
+  },
+  "pottery--noun": {
+    "tr": "çömlekçilik, çanak çömlek",
+    "def": "Objects made of baked clay, or the art of making them.",
+    "ex": "The museum shows local pottery.",
+    "exTr": "Müze yerel çömlekleri sergiliyor."
+  },
+  "motherland--noun": {
+    "tr": "anavatan",
+    "def": "The country where you were born.",
+    "ex": "He returned to his motherland.",
+    "exTr": "Anavatanına döndü."
+  },
+  "continuously--adv": {
+    "tr": "aralıksız",
+    "def": "Without any break or pause.",
+    "ex": "The pump ran continuously.",
+    "exTr": "Pompa aralıksız çalıştı."
+  },
+  "narrative--adj": {
+    "tr": "anlatısal",
+    "def": "Telling a story.",
+    "ex": "The poem has a narrative style.",
+    "exTr": "Şiirin anlatısal bir üslubu var."
+  },
+  "interact--verb": {
+    "tr": "etkileşmek",
+    "def": "To talk with or affect each other.",
+    "ex": "Children interact through play.",
+    "exTr": "Çocuklar oyunla etkileşiyor."
+  },
+  "stormy--adj": {
+    "tr": "fırtınalı",
+    "def": "With strong wind and rain.",
+    "ex": "It was a stormy night.",
+    "exTr": "Fırtınalı bir geceydi."
+  },
+  "fortnight--noun": {
+    "tr": "iki hafta",
+    "def": "A period of two weeks, in British English.",
+    "ex": "We stayed a fortnight.",
+    "exTr": "İki hafta kaldık."
+  },
+  "excellence--noun": {
+    "tr": "mükemmellik",
+    "def": "The quality of being extremely good.",
+    "ex": "The school is known for excellence.",
+    "exTr": "Okul mükemmellikle tanınıyor."
+  },
+  "upload--verb": {
+    "tr": "yüklemek (internete)",
+    "def": "To send a file from your device to the internet.",
+    "ex": "Upload the photos tonight.",
+    "exTr": "Fotoğrafları bu gece yükle."
+  },
+  "interaction--noun": {
+    "tr": "etkileşim",
+    "def": "The way people or things affect each other.",
+    "ex": "The class encourages interaction.",
+    "exTr": "Ders etkileşimi teşvik ediyor."
+  },
+  "govern--verb": {
+    "tr": "yönetmek",
+    "def": "To officially control a country or an area.",
+    "ex": "A council governs the town.",
+    "exTr": "Kasabayı bir meclis yönetiyor."
+  },
+  "commonly--adv": {
+    "tr": "yaygın olarak",
+    "def": "Often, by many people.",
+    "ex": "This plant is commonly called sage.",
+    "exTr": "Bu bitkiye yaygın olarak adaçayı denir."
+  },
+  "enable--verb": {
+    "tr": "olanak vermek, etkinleştirmek",
+    "def": "To make it possible for someone to do something.",
+    "ex": "The grant enabled her to study.",
+    "exTr": "Burs onun okumasına olanak verdi."
+  },
+  "seaweed--noun": {
+    "tr": "deniz yosunu",
+    "def": "A plant that grows in the sea.",
+    "ex": "Seaweed covered the rocks.",
+    "exTr": "Deniz yosunu kayaları kaplamıştı."
+  },
+  "bravely--adv": {
+    "tr": "cesurca",
+    "def": "In a way that shows courage.",
+    "ex": "He bravely entered the smoke.",
+    "exTr": "Cesurca dumanın içine girdi."
+  },
+  "steadily--adv": {
+    "tr": "istikrarlı biçimde",
+    "def": "At a regular and continuing rate.",
+    "ex": "Prices rose steadily all year.",
+    "exTr": "Fiyatlar bütün yıl istikrarlı biçimde arttı."
+  },
+  "oppression--noun": {
+    "tr": "baskı, zulüm",
+    "def": "Cruel and unfair treatment by those in power.",
+    "ex": "The novel describes political oppression.",
+    "exTr": "Roman siyasi baskıyı anlatıyor."
+  },
+  "festive--adj": {
+    "tr": "şenlikli, bayram havasında",
+    "def": "Cheerful and suitable for a celebration.",
+    "ex": "The street had a festive look.",
+    "exTr": "Sokak şenlikli bir görünümdeydi."
+  },
+  "takeoff--noun": {
+    "tr": "kalkış",
+    "def": "The moment a plane leaves the ground.",
+    "ex": "Takeoff was delayed by fog.",
+    "exTr": "Kalkış sis yüzünden gecikti."
+  },
+  "advertise--verb": {
+    "tr": "reklamını yapmak",
+    "def": "To tell the public about a product or a job.",
+    "ex": "They advertised the post online.",
+    "exTr": "Pozisyonun ilanını çevrimiçi verdiler."
+  },
+  "parental--adj": {
+    "tr": "ebeveyn, anne baba ile ilgili",
+    "def": "Relating to a mother or a father.",
+    "ex": "Parental permission is required.",
+    "exTr": "Ebeveyn izni gerekiyor."
+  },
+  "afterward--adv": {
+    "tr": "sonradan",
+    "def": "Later, after something else, in American English.",
+    "ex": "We talked about it afterward.",
+    "exTr": "Bunu sonradan konuştuk."
+  },
+  "accurately--adv": {
+    "tr": "doğru biçimde",
+    "def": "In a way that is exactly correct.",
+    "ex": "Measure the wood accurately.",
+    "exTr": "Tahtayı doğru biçimde ölç."
+  },
+  "stun--verb": {
+    "tr": "sersemletmek, şok etmek",
+    "def": "To shock someone so much they cannot react.",
+    "ex": "The news stunned the village.",
+    "exTr": "Haber köyü şoke etti."
+  },
+  "reclaim--verb": {
+    "tr": "geri almak, ıslah etmek",
+    "def": "To get something back, or to make land usable.",
+    "ex": "They reclaimed the marsh for farming.",
+    "exTr": "Bataklığı tarım için ıslah ettiler."
+  },
+  "passive--adj": {
+    "tr": "edilgen, pasif",
+    "def": "Accepting what happens without acting.",
+    "ex": "He stayed passive during the argument.",
+    "exTr": "Tartışma boyunca pasif kaldı."
+  },
+  "reduction--noun": {
+    "tr": "azaltma, indirim",
+    "def": "The act of making something smaller.",
+    "ex": "There was a reduction in noise.",
+    "exTr": "Gürültüde bir azalma oldu."
+  },
+  "adviser--noun": {
+    "tr": "danışman",
+    "def": "A person whose job is giving expert advice.",
+    "ex": "Her adviser suggested another course.",
+    "exTr": "Danışmanı başka bir ders önerdi."
+  },
+  "garment--noun": {
+    "tr": "giysi parçası",
+    "def": "A single piece of clothing.",
+    "ex": "Wash this garment by hand.",
+    "exTr": "Bu giysiyi elde yıka."
+  },
+  "preference--noun": {
+    "tr": "tercih",
+    "def": "The thing you like better than another.",
+    "ex": "My preference is the blue one.",
+    "exTr": "Benim tercihim mavi olan."
+  },
+  "knit--verb": {
+    "tr": "örmek",
+    "def": "To make clothes from wool using needles.",
+    "ex": "She knits scarves in winter.",
+    "exTr": "Kışın atkı örüyor."
+  },
+  "discomfort--noun": {
+    "tr": "rahatsızlık",
+    "def": "A slight pain, or a feeling of unease.",
+    "ex": "The chair caused some discomfort.",
+    "exTr": "Sandalye biraz rahatsızlık verdi."
+  }
 }
