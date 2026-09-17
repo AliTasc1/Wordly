@@ -32,6 +32,37 @@ MAX_EXAMPLE_WORDS = {"A1": 8, "A2": 11, "B1": 15, "B2": 20, "C1": 26, "C2": 30}
 # reading a simple English gloss is itself useful practice.
 DEFINITION_LANG = {"A1": "tr", "A2": "tr", "B1": "en", "B2": "en", "C1": "en", "C2": "en"}
 
+# `stand` → `stood`, `fall` → `fell`: irregular verbs defeat prefix matching,
+# so the "example contains the word" check needs to know their other forms.
+IRREGULAR = {
+    "be": ["was", "were", "been", "am", "is", "are"], "become": ["became"],
+    "begin": ["began", "begun"], "blow": ["blew", "blown"],
+    "break": ["broke", "broken"], "bring": ["brought"], "build": ["built"],
+    "buy": ["bought"], "catch": ["caught"], "choose": ["chose", "chosen"],
+    "come": ["came"], "dig": ["dug"], "do": ["did", "does", "done"],
+    "draw": ["drew", "drawn"], "drink": ["drank", "drunk"],
+    "drive": ["drove", "driven"], "eat": ["ate", "eaten"],
+    "fall": ["fell", "fallen"], "feed": ["fed"], "feel": ["felt"],
+    "fight": ["fought"], "find": ["found"], "fly": ["flew", "flown"],
+    "forget": ["forgot", "forgotten"], "get": ["got", "gotten"],
+    "give": ["gave", "given"], "go": ["went", "gone", "goes"],
+    "grow": ["grew", "grown"], "have": ["had", "has"], "hear": ["heard"],
+    "hide": ["hid", "hidden"], "hold": ["held"], "keep": ["kept"],
+    "know": ["knew", "known"], "lead": ["led"], "leave": ["left"],
+    "lie": ["lay", "lain"], "lose": ["lost"], "make": ["made"],
+    "mean": ["meant"], "meet": ["met"], "pay": ["paid"],
+    "ring": ["rang", "rung"], "run": ["ran"], "say": ["said"],
+    "see": ["saw", "seen"], "sell": ["sold"], "send": ["sent"],
+    "shake": ["shook", "shaken"], "shoot": ["shot"],
+    "show": ["showed", "shown"], "sing": ["sang", "sung"], "sit": ["sat"],
+    "sleep": ["slept"], "speak": ["spoke", "spoken"], "spend": ["spent"],
+    "stand": ["stood"], "steal": ["stole", "stolen"],
+    "swim": ["swam", "swum"], "take": ["took", "taken"], "teach": ["taught"],
+    "tell": ["told"], "think": ["thought"], "throw": ["threw", "thrown"],
+    "understand": ["understood"], "wake": ["woke", "woken"],
+    "wear": ["wore", "worn"], "win": ["won"], "write": ["wrote", "written"],
+}
+
 # Detecting "is this Turkish?" by looking for Turkish letters misses plenty of
 # valid sentences ("Birini telefonla aramak."), so we look for English instead:
 # a definition left in English will be dense with these, and a Turkish one will
@@ -79,9 +110,19 @@ def validate(entry: dict, authored: dict, problems: list[str]) -> bool:
         problems.append(f"{key}: örnek cümle {level} için uzun ({length} > {limit} kelime)")
 
     # The example has to actually contain the word being taught, allowing for
-    # inflection (go/goes/going, man/men is handled by the prefix check).
-    stem = re.escape(word.lower()[: max(3, len(word) - 2)])
-    if not re.search(rf"\b{stem}", example.lower()):
+    # inflection: a prefix covers the regular cases (walk/walked/walking) and
+    # IRREGULAR covers the ones a prefix cannot (stand/stood).
+    lower_example = example.lower()
+    lower_word = word.lower()
+    stem = re.escape(lower_word[: max(3, len(lower_word) - 2)])
+    forms = [rf"\b{stem}"] + [
+        rf"\b{re.escape(f)}\b" for f in IRREGULAR.get(lower_word, [])
+    ]
+    # `cry` → `cried`, `study` → `studied`: a final -y becomes -i before an
+    # ending, which a prefix of the base form never matches.
+    if lower_word.endswith("y") and len(lower_word) > 2:
+        forms.append(rf"\b{re.escape(lower_word[:-1])}i")
+    if not any(re.search(pattern, lower_example) for pattern in forms):
         problems.append(f"{key}: örnek cümlede '{word}' geçmiyor → {example!r}")
 
     if not authored["exTr"].strip():
