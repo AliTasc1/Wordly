@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b1-006",
+    "level": "B1",
+    "range": "400-479"
+  },
+  "disgusting--adj": {
+    "tr": "iğrenç",
+    "def": "Extremely unpleasant to see, smell or taste.",
+    "ex": "The water had a disgusting smell.",
+    "exTr": "Suyun iğrenç bir kokusu vardı."
+  },
+  "neighborhood--noun": {
+    "tr": "mahalle, semt",
+    "def": "The area of a town around where you live.",
+    "ex": "It is a quiet neighborhood.",
+    "exTr": "Sakin bir mahalle."
+  },
+  "march--verb": {
+    "tr": "yürümek, yürüyüş yapmak",
+    "def": "To walk with regular steps, often as a group.",
+    "ex": "The soldiers marched through the square.",
+    "exTr": "Askerler meydandan yürüyerek geçti."
+  },
+  "pure--adj": {
+    "tr": "saf, katıksız",
+    "def": "Not mixed with anything else.",
+    "ex": "This is pure olive oil.",
+    "exTr": "Bu saf zeytinyağı."
+  },
+  "aside--adv": {
+    "tr": "bir kenara",
+    "def": "To one side, or kept for later.",
+    "ex": "She put some money aside each month.",
+    "exTr": "Her ay bir kenara biraz para koydu."
+  },
+  "mail--verb": {
+    "tr": "postalamak",
+    "def": "To send a letter or a package by post.",
+    "ex": "I mailed the documents yesterday.",
+    "exTr": "Belgeleri dün postaladım."
+  },
+  "violence--noun": {
+    "tr": "şiddet",
+    "def": "Behaviour that is meant to hurt people.",
+    "ex": "The protest ended without violence.",
+    "exTr": "Protesto şiddet olmadan sona erdi."
+  },
+  "firm--adj": {
+    "tr": "sıkı, sağlam",
+    "def": "Solid and not easily moved, or not likely to change.",
+    "ex": "He gave a firm answer.",
+    "exTr": "Kesin bir cevap verdi."
+  },
+  "firm--noun": {
+    "tr": "firma, şirket",
+    "def": "A business company, often of lawyers or engineers.",
+    "ex": "She joined a law firm in Ankara.",
+    "exTr": "Ankara'da bir hukuk firmasına katıldı."
+  },
+  "available--adj": {
+    "tr": "mevcut, müsait",
+    "def": "Able to be used or obtained, or free to meet.",
+    "ex": "No rooms are available tonight.",
+    "exTr": "Bu gece hiç oda yok."
+  },
+  "central--adj": {
+    "tr": "merkezi",
+    "def": "In the middle of a place, or most important.",
+    "ex": "They live in central Izmir.",
+    "exTr": "İzmir'in merkezinde oturuyorlar."
+  },
+  "union--noun": {
+    "tr": "sendika, birlik",
+    "def": "An organization of workers, or a group of states.",
+    "ex": "The union asked for higher pay.",
+    "exTr": "Sendika daha yüksek ücret istedi."
+  },
+  "studio--noun": {
+    "tr": "stüdyo, atölye",
+    "def": "A room where an artist works or a programme is recorded.",
+    "ex": "The album was made in a small studio.",
+    "exTr": "Albüm küçük bir stüdyoda yapıldı."
+  },
+  "iron--noun": {
+    "tr": "demir, ütü",
+    "def": "A strong grey metal, or a tool for pressing clothes.",
+    "ex": "The gate is made of iron.",
+    "exTr": "Kapı demirden yapılmış."
+  },
+  "iron--verb": {
+    "tr": "ütülemek",
+    "def": "To make clothes smooth with a hot tool.",
+    "ex": "He irons his shirts on Sundays.",
+    "exTr": "Gömleklerini pazar günleri ütüler."
+  },
+  "desire--noun": {
+    "tr": "arzu, istek",
+    "def": "A strong wish for something.",
+    "ex": "She had a real desire to learn.",
+    "exTr": "Öğrenmek için gerçek bir arzusu vardı."
+  },
+  "miracle--noun": {
+    "tr": "mucize",
+    "def": "A wonderful event that seems impossible.",
+    "ex": "His recovery was a miracle.",
+    "exTr": "İyileşmesi bir mucizeydi."
+  },
+  "christian--adj": {
+    "tr": "Hristiyan",
+    "def": "Relating to the religion based on Jesus Christ.",
+    "ex": "The town has two Christian churches.",
+    "exTr": "Kasabada iki Hristiyan kilisesi var."
+  },
+  "protection--noun": {
+    "tr": "koruma",
+    "def": "The act of keeping someone or something safe.",
+    "ex": "Helmets give good protection.",
+    "exTr": "Kasklar iyi koruma sağlar."
+  },
+  "treatment--noun": {
+    "tr": "tedavi, muamele",
+    "def": "Medical care, or the way you deal with someone.",
+    "ex": "The treatment lasted six weeks.",
+    "exTr": "Tedavi altı hafta sürdü."
+  },
+  "rescue--noun": {
+    "tr": "kurtarma",
+    "def": "The act of saving someone from danger.",
+    "ex": "The rescue took several hours.",
+    "exTr": "Kurtarma birkaç saat sürdü."
+  },
+  "rescue--verb": {
+    "tr": "kurtarmak",
+    "def": "To save someone from a dangerous situation.",
+    "ex": "Divers rescued the two swimmers.",
+    "exTr": "Dalgıçlar iki yüzücüyü kurtardı."
+  },
+  "capable--adj": {
+    "tr": "yetenekli, muktedir",
+    "def": "Having the ability or the skill to do something.",
+    "ex": "She is capable of much better work.",
+    "exTr": "Çok daha iyi iş çıkarabilecek durumda."
+  },
+  "result--verb": {
+    "tr": "sonuçlanmak, yol açmak",
+    "def": "To happen because of something else.",
+    "ex": "The delay resulted in extra costs.",
+    "exTr": "Gecikme ek maliyetlere yol açtı."
+  },
+  "governor--noun": {
+    "tr": "vali",
+    "def": "The official who governs a state or a province.",
+    "ex": "The governor visited the flooded villages.",
+    "exTr": "Vali su basan köyleri ziyaret etti."
+  },
+  "remove--verb": {
+    "tr": "çıkarmak, kaldırmak",
+    "def": "To take something away from a place.",
+    "ex": "Please remove your shoes here.",
+    "exTr": "Lütfen burada ayakkabılarınızı çıkarın."
+  },
+  "scream--verb": {
+    "tr": "çığlık atmak",
+    "def": "To make a loud high cry of fear or pain.",
+    "ex": "The child screamed at the sight.",
+    "exTr": "Çocuk manzarayı görünce çığlık attı."
+  },
+  "vehicle--noun": {
+    "tr": "araç, taşıt",
+    "def": "A machine such as a car or a bus that carries people.",
+    "ex": "Every vehicle must stop here.",
+    "exTr": "Her araç burada durmak zorunda."
+  },
+  "unbelievable--adj": {
+    "tr": "akıl almaz",
+    "def": "Too surprising or extreme to be believed.",
+    "ex": "The noise was unbelievable.",
+    "exTr": "Gürültü inanılmazdı."
+  },
+  "curious--adj": {
+    "tr": "meraklı, tuhaf",
+    "def": "Wanting to know something, or slightly strange.",
+    "ex": "Children are naturally curious.",
+    "exTr": "Çocuklar doğal olarak meraklıdır."
+  },
+  "edge--noun": {
+    "tr": "kenar, uç",
+    "def": "The outer part of something, where it ends.",
+    "ex": "Don't stand near the edge.",
+    "exTr": "Kenara yakın durma."
+  },
+  "boom--noun": {
+    "tr": "patlama, hızlı büyüme",
+    "def": "A deep loud sound, or a period of fast growth.",
+    "ex": "The city saw a building boom.",
+    "exTr": "Şehirde bir inşaat patlaması yaşandı."
+  },
+  "former--adj": {
+    "tr": "eski, önceki",
+    "def": "Having had a position in the past.",
+    "ex": "He is a former teacher.",
+    "exTr": "Eski bir öğretmen."
+  },
+  "penny--noun": {
+    "tr": "peni, kuruş",
+    "def": "A small British or American coin.",
+    "ex": "It did not cost a penny.",
+    "exTr": "Tek kuruş etmedi."
+  },
+  "claim--noun": {
+    "tr": "iddia, talep",
+    "def": "A statement that something is true, or a demand.",
+    "ex": "His claim was never proved.",
+    "exTr": "İddiası hiç kanıtlanmadı."
+  },
+  "desperate--adj": {
+    "tr": "çaresiz, umutsuz",
+    "def": "Ready to do anything because the situation is very bad.",
+    "ex": "They were desperate for clean water.",
+    "exTr": "Temiz su için çaresizdiler."
+  },
+  "dramatic--adj": {
+    "tr": "çarpıcı, dramatik",
+    "def": "Sudden and easy to notice, or full of strong feeling.",
+    "ex": "There was a dramatic change in temperature.",
+    "exTr": "Sıcaklıkta çarpıcı bir değişiklik oldu."
+  },
+  "refuse--noun": {
+    "tr": "çöp, atık",
+    "def": "Waste material that is thrown away.",
+    "ex": "The refuse is collected on Fridays.",
+    "exTr": "Çöp cuma günleri toplanıyor."
+  },
+  "refuse--verb": {
+    "tr": "reddetmek",
+    "def": "To say firmly that you will not do something.",
+    "ex": "She refused to sign the paper.",
+    "exTr": "Kâğıdı imzalamayı reddetti."
+  },
+  "properly--adv": {
+    "tr": "düzgünce, gerektiği gibi",
+    "def": "In the correct or suitable way.",
+    "ex": "Close the lid properly.",
+    "exTr": "Kapağı düzgünce kapat."
+  },
+  "directly--adv": {
+    "tr": "doğrudan",
+    "def": "Without anything or anyone in between.",
+    "ex": "Speak directly to the manager.",
+    "exTr": "Doğrudan müdürle konuş."
+  },
+  "surface--noun": {
+    "tr": "yüzey",
+    "def": "The outside or top layer of something.",
+    "ex": "Wipe the surface with a cloth.",
+    "exTr": "Yüzeyi bir bezle sil."
+  },
+  "silent--adj": {
+    "tr": "sessiz",
+    "def": "Making no sound at all.",
+    "ex": "The whole hall went silent.",
+    "exTr": "Bütün salon sessizleşti."
+  },
+  "warn--verb": {
+    "tr": "uyarmak",
+    "def": "To tell someone about a possible danger.",
+    "ex": "They warned us about the ice.",
+    "exTr": "Bizi buz konusunda uyardılar."
+  },
+  "fallen--adj": {
+    "tr": "düşmüş, devrilmiş",
+    "def": "Having come down to the ground.",
+    "ex": "Fallen leaves covered the path.",
+    "exTr": "Düşmüş yapraklar yolu kaplamıştı."
+  },
+  "presence--noun": {
+    "tr": "varlık, mevcudiyet",
+    "def": "The fact of being in a place.",
+    "ex": "Her presence calmed the room.",
+    "exTr": "Varlığı odayı sakinleştirdi."
+  },
+  "tear--verb": {
+    "tr": "yırtmak",
+    "def": "To pull paper or cloth apart so it breaks.",
+    "ex": "He tore the letter in half.",
+    "exTr": "Mektubu ikiye yırttı."
+  },
+  "precious--adj": {
+    "tr": "değerli, kıymetli",
+    "def": "Very valuable, or greatly loved.",
+    "ex": "Time with family is precious.",
+    "exTr": "Aileyle geçen zaman değerlidir."
+  },
+  "coast--verb": {
+    "tr": "kendi kendine kaymak",
+    "def": "To move forward without using power or effort.",
+    "ex": "The car coasted down the hill.",
+    "exTr": "Araba yokuş aşağı kendi kendine kaydı."
+  },
+  "exchange--verb": {
+    "tr": "değiştirmek, takas etmek",
+    "def": "To give one thing and receive another.",
+    "ex": "We exchanged phone numbers.",
+    "exTr": "Telefon numaralarımızı değiştirdik."
+  },
+  "convince--verb": {
+    "tr": "ikna etmek",
+    "def": "To make someone believe or agree.",
+    "ex": "He convinced her to stay.",
+    "exTr": "Onu kalmaya ikna etti."
+  },
+  "beast--noun": {
+    "tr": "canavar, hayvan",
+    "def": "A large or dangerous animal.",
+    "ex": "The story describes a wild beast.",
+    "exTr": "Hikâye vahşi bir canavarı anlatıyor."
+  },
+  "drag--verb": {
+    "tr": "sürüklemek",
+    "def": "To pull something heavy along the ground.",
+    "ex": "They dragged the boat onto the sand.",
+    "exTr": "Tekneyi kuma sürüklediler."
+  },
+  "ordinary--adj": {
+    "tr": "sıradan, olağan",
+    "def": "Normal and not special in any way.",
+    "ex": "It was an ordinary working day.",
+    "exTr": "Sıradan bir iş günüydü."
+  },
+  "shift--verb": {
+    "tr": "kaydırmak, yer değiştirmek",
+    "def": "To move something to a different position.",
+    "ex": "Shift the sofa a little left.",
+    "exTr": "Kanepeyi biraz sola kaydır."
+  },
+  "exact--adj": {
+    "tr": "tam, kesin",
+    "def": "Completely correct in every detail.",
+    "ex": "Give me the exact figures.",
+    "exTr": "Bana tam rakamları ver."
+  },
+  "direct--verb": {
+    "tr": "yönetmek, yönlendirmek",
+    "def": "To manage a film or a group, or to show the way.",
+    "ex": "She directed her first film last year.",
+    "exTr": "İlk filmini geçen yıl yönetti."
+  },
+  "score--noun": {
+    "tr": "skor, puan",
+    "def": "The number of points in a game or a test.",
+    "ex": "The final score was two-nil.",
+    "exTr": "Maçın skoru iki sıfırdı."
+  },
+  "score--verb": {
+    "tr": "gol atmak, puan almak",
+    "def": "To get a point in a game or a test.",
+    "ex": "He scored in the last minute.",
+    "exTr": "Son dakikada gol attı."
+  },
+  "series--noun": {
+    "tr": "dizi, seri",
+    "def": "A number of similar events or programmes in order.",
+    "ex": "The series has eight episodes.",
+    "exTr": "Dizinin sekiz bölümü var."
+  },
+  "darkness--noun": {
+    "tr": "karanlık",
+    "def": "The state of having no light.",
+    "ex": "We waited in complete darkness.",
+    "exTr": "Tam bir karanlıkta bekledik."
+  },
+  "cure--noun": {
+    "tr": "tedavi, çare",
+    "def": "Something that makes an illness go away.",
+    "ex": "There is still no cure.",
+    "exTr": "Hâlâ bir tedavisi yok."
+  },
+  "rare--adj": {
+    "tr": "nadir",
+    "def": "Not seen or happening often.",
+    "ex": "This bird is rare in Turkey.",
+    "exTr": "Bu kuş Türkiye'de nadir."
+  },
+  "explosion--noun": {
+    "tr": "patlama",
+    "def": "A sudden violent bursting with a loud noise.",
+    "ex": "The explosion broke every window.",
+    "exTr": "Patlama bütün camları kırdı."
+  },
+  "prisoner--noun": {
+    "tr": "mahkûm, esir",
+    "def": "A person kept in a prison or held by an enemy.",
+    "ex": "The prisoner was released early.",
+    "exTr": "Mahkûm erken tahliye edildi."
+  },
+  "pie--noun": {
+    "tr": "turta, börek",
+    "def": "A dish of pastry filled with meat or fruit.",
+    "ex": "She baked an apple pie.",
+    "exTr": "Elmalı turta pişirdi."
+  },
+  "pot--noun": {
+    "tr": "tencere, saksı",
+    "def": "A deep round container for cooking or for plants.",
+    "ex": "Boil the water in a large pot.",
+    "exTr": "Suyu büyük bir tencerede kaynat."
+  },
+  "parking--noun": {
+    "tr": "park etme, otopark",
+    "def": "The act of leaving a vehicle, or the space for it.",
+    "ex": "Parking is free after six.",
+    "exTr": "Altıdan sonra park ücretsiz."
+  },
+  "ambulance--noun": {
+    "tr": "ambulans",
+    "def": "A vehicle that takes ill people to hospital.",
+    "ex": "An ambulance arrived in minutes.",
+    "exTr": "Dakikalar içinde bir ambulans geldi."
+  },
+  "progress--noun": {
+    "tr": "ilerleme",
+    "def": "Movement towards a better or later state.",
+    "ex": "She is making good progress.",
+    "exTr": "İyi ilerleme kaydediyor."
+  },
+  "county--noun": {
+    "tr": "ilçe, kontluk",
+    "def": "An area of local government in Britain or America.",
+    "ex": "The county has two hospitals.",
+    "exTr": "İlçenin iki hastanesi var."
+  },
+  "vision--noun": {
+    "tr": "görüş, vizyon",
+    "def": "The ability to see, or an idea about the future.",
+    "ex": "His vision for the city was bold.",
+    "exTr": "Şehir için vizyonu cesurdu."
+  },
+  "equipment--noun": {
+    "tr": "ekipman, donanım",
+    "def": "The tools or machines needed for an activity.",
+    "ex": "The lab needs new equipment.",
+    "exTr": "Laboratuvarın yeni ekipmana ihtiyacı var."
+  },
+  "mass--adj": {
+    "tr": "kitlesel",
+    "def": "Involving a very large number of people.",
+    "ex": "Mass tourism changed the coast.",
+    "exTr": "Kitlesel turizm kıyıyı değiştirdi."
+  },
+  "defend--verb": {
+    "tr": "savunmak",
+    "def": "To protect someone, or to argue in support of them.",
+    "ex": "Soldiers defended the bridge.",
+    "exTr": "Askerler köprüyü savundu."
+  },
+  "trace--noun": {
+    "tr": "iz, eser",
+    "def": "A small sign that something existed.",
+    "ex": "There was no trace of the keys.",
+    "exTr": "Anahtarlardan hiçbir iz yoktu."
+  },
+  "nasty--adj": {
+    "tr": "kötü, çirkin",
+    "def": "Very unpleasant, or unkind.",
+    "ex": "He made a nasty remark.",
+    "exTr": "Çirkin bir laf etti."
+  },
+  "dump--noun": {
+    "tr": "çöplük",
+    "def": "A place where waste is left.",
+    "ex": "The old tyres went to the dump.",
+    "exTr": "Eski lastikler çöplüğe gitti."
+  },
+  "dump--verb": {
+    "tr": "atmak, boşaltmak",
+    "def": "To get rid of something carelessly.",
+    "ex": "Do not dump oil in the river.",
+    "exTr": "Nehre yağ boşaltma."
+  },
+  "emperor--noun": {
+    "tr": "imparator",
+    "def": "The male ruler of an empire.",
+    "ex": "The emperor ruled for forty years.",
+    "exTr": "İmparator kırk yıl hüküm sürdü."
+  }
+}

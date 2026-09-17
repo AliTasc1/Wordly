@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b1-007",
+    "level": "B1",
+    "range": "480-559"
+  },
+  "incident--noun": {
+    "tr": "olay, hadise",
+    "def": "An event, usually an unpleasant or unusual one.",
+    "ex": "Nobody was hurt in the incident.",
+    "exTr": "Olayda kimse yaralanmadı."
+  },
+  "leading--adj": {
+    "tr": "önde gelen",
+    "def": "Most important or most successful in a field.",
+    "ex": "She is a leading expert on bees.",
+    "exTr": "Arılar konusunda önde gelen bir uzman."
+  },
+  "engaged--adj": {
+    "tr": "nişanlı, meşgul",
+    "def": "Having promised to marry, or busy with something.",
+    "ex": "They got engaged in June.",
+    "exTr": "Haziranda nişanlandılar."
+  },
+  "anger--noun": {
+    "tr": "öfke",
+    "def": "The strong feeling you have when something is unfair.",
+    "ex": "His voice was full of anger.",
+    "exTr": "Sesi öfke doluydu."
+  },
+  "sharp--adj": {
+    "tr": "keskin",
+    "def": "Having an edge that cuts easily, or sudden and great.",
+    "ex": "Use a sharp knife for the bread.",
+    "exTr": "Ekmek için keskin bir bıçak kullan."
+  },
+  "shadow--verb": {
+    "tr": "takip etmek, izlemek",
+    "def": "To follow someone closely and secretly.",
+    "ex": "A detective shadowed him for days.",
+    "exTr": "Bir dedektif onu günlerce takip etti."
+  },
+  "wave--verb": {
+    "tr": "el sallamak",
+    "def": "To move your hand to greet someone or say goodbye.",
+    "ex": "She waved from the train window.",
+    "exTr": "Tren penceresinden el salladı."
+  },
+  "sometime--adv": {
+    "tr": "bir ara",
+    "def": "At a time that is not exactly stated.",
+    "ex": "Let's meet sometime next week.",
+    "exTr": "Önümüzdeki hafta bir ara buluşalım."
+  },
+  "bull--noun": {
+    "tr": "boğa",
+    "def": "The adult male of the cattle family.",
+    "ex": "A bull stood in the field.",
+    "exTr": "Tarlada bir boğa duruyordu."
+  },
+  "gorgeous--adj": {
+    "tr": "muhteşem, çok güzel",
+    "def": "Extremely beautiful or pleasant.",
+    "ex": "The sunset was gorgeous.",
+    "exTr": "Gün batımı muhteşemdi."
+  },
+  "passion--noun": {
+    "tr": "tutku",
+    "def": "A very strong feeling or interest.",
+    "ex": "Music is his greatest passion.",
+    "exTr": "Müzik en büyük tutkusu."
+  },
+  "empire--noun": {
+    "tr": "imparatorluk",
+    "def": "A group of countries ruled by one power.",
+    "ex": "The empire lasted six centuries.",
+    "exTr": "İmparatorluk altı yüzyıl sürdü."
+  },
+  "hire--verb": {
+    "tr": "işe almak, kiralamak",
+    "def": "To give someone a job, or to pay to use something.",
+    "ex": "They hired two new engineers.",
+    "exTr": "İki yeni mühendis işe aldılar."
+  },
+  "device--noun": {
+    "tr": "cihaz, aygıt",
+    "def": "A small machine made for a particular job.",
+    "ex": "This device measures air quality.",
+    "exTr": "Bu cihaz hava kalitesini ölçüyor."
+  },
+  "design--verb": {
+    "tr": "tasarlamak",
+    "def": "To plan how something will look and work.",
+    "ex": "He designed the new library.",
+    "exTr": "Yeni kütüphaneyi o tasarladı."
+  },
+  "movement--noun": {
+    "tr": "hareket",
+    "def": "A change of position, or a group working for a cause.",
+    "ex": "Any movement will hurt your back.",
+    "exTr": "Her hareket sırtını acıtacak."
+  },
+  "thunder--noun": {
+    "tr": "gök gürültüsü",
+    "def": "The loud noise that follows lightning.",
+    "ex": "Thunder woke the whole house.",
+    "exTr": "Gök gürültüsü bütün evi uyandırdı."
+  },
+  "object--noun": {
+    "tr": "nesne, amaç",
+    "def": "A thing you can see and touch, or an aim.",
+    "ex": "A small metal object lay there.",
+    "exTr": "Orada küçük bir metal nesne duruyordu."
+  },
+  "politics--noun": {
+    "tr": "siyaset",
+    "def": "The activities of government and political parties.",
+    "ex": "He left business for politics.",
+    "exTr": "İş dünyasını bırakıp siyasete atıldı."
+  },
+  "alcohol--noun": {
+    "tr": "alkol",
+    "def": "Drinks such as wine and beer that can make you drunk.",
+    "ex": "The club serves no alcohol.",
+    "exTr": "Kulüpte alkol servisi yok."
+  },
+  "trash--noun": {
+    "tr": "çöp",
+    "def": "Waste material, in American English.",
+    "ex": "Take the trash out, please.",
+    "exTr": "Lütfen çöpü dışarı çıkar."
+  },
+  "prize--noun": {
+    "tr": "ödül",
+    "def": "Something given to the winner of a competition.",
+    "ex": "She won first prize.",
+    "exTr": "Birincilik ödülünü kazandı."
+  },
+  "sports--adj": {
+    "tr": "spor (ile ilgili)",
+    "def": "Relating to games and physical competition.",
+    "ex": "He writes for a sports magazine.",
+    "exTr": "Bir spor dergisine yazıyor."
+  },
+  "debt--noun": {
+    "tr": "borç",
+    "def": "Money that you owe to someone.",
+    "ex": "They paid off the debt slowly.",
+    "exTr": "Borcu yavaş yavaş kapattılar."
+  },
+  "wire--noun": {
+    "tr": "tel, kablo",
+    "def": "A thin piece of metal used to carry electricity.",
+    "ex": "A loose wire caused the fire.",
+    "exTr": "Gevşek bir kablo yangına yol açtı."
+  },
+  "circle--verb": {
+    "tr": "daire çizmek, etrafında dönmek",
+    "def": "To move around something in a ring.",
+    "ex": "Birds circled above the field.",
+    "exTr": "Kuşlar tarlanın üstünde daireler çizdi."
+  },
+  "approach--noun": {
+    "tr": "yaklaşım",
+    "def": "A way of dealing with a problem.",
+    "ex": "We need a different approach.",
+    "exTr": "Farklı bir yaklaşıma ihtiyacımız var."
+  },
+  "percent--noun": {
+    "tr": "yüzde",
+    "def": "One part in every hundred.",
+    "ex": "Only twenty percent replied.",
+    "exTr": "Yalnızca yüzde yirmisi cevap verdi."
+  },
+  "normally--adv": {
+    "tr": "normalde, genellikle",
+    "def": "In the usual way, or most of the time.",
+    "ex": "I normally leave at eight.",
+    "exTr": "Normalde sekizde çıkarım."
+  },
+  "tank--noun": {
+    "tr": "depo, tank",
+    "def": "A large container for liquid, or an armoured vehicle.",
+    "ex": "The water tank is almost empty.",
+    "exTr": "Su deposu neredeyse boş."
+  },
+  "authority--noun": {
+    "tr": "yetki, otorite",
+    "def": "The power to give orders, or an official body.",
+    "ex": "Only the manager has that authority.",
+    "exTr": "Bu yetki yalnızca müdürde."
+  },
+  "current--adj": {
+    "tr": "güncel, şimdiki",
+    "def": "Happening or existing right now.",
+    "ex": "What is the current price?",
+    "exTr": "Güncel fiyat ne?"
+  },
+  "failure--noun": {
+    "tr": "başarısızlık, arıza",
+    "def": "A lack of success, or when a machine stops working.",
+    "ex": "The project ended in failure.",
+    "exTr": "Proje başarısızlıkla sonuçlandı."
+  },
+  "glory--noun": {
+    "tr": "şan, zafer",
+    "def": "Great fame and honour won by an achievement.",
+    "ex": "The team returned home in glory.",
+    "exTr": "Takım şan içinde eve döndü."
+  },
+  "border--noun": {
+    "tr": "sınır",
+    "def": "The line between two countries or areas.",
+    "ex": "We crossed the border at dawn.",
+    "exTr": "Sınırı şafakta geçtik."
+  },
+  "reputation--noun": {
+    "tr": "itibar, ün",
+    "def": "The opinion people have about someone.",
+    "ex": "The restaurant has a fine reputation.",
+    "exTr": "Restoranın iyi bir itibarı var."
+  },
+  "confidence--noun": {
+    "tr": "güven, özgüven",
+    "def": "The feeling that you or others can succeed.",
+    "ex": "She spoke with real confidence.",
+    "exTr": "Gerçek bir özgüvenle konuştu."
+  },
+  "beloved--adj": {
+    "tr": "sevgili, çok sevilen",
+    "def": "Loved very much.",
+    "ex": "He wrote about his beloved city.",
+    "exTr": "Çok sevdiği şehir hakkında yazdı."
+  },
+  "mental--adj": {
+    "tr": "zihinsel, ruhsal",
+    "def": "Relating to the mind rather than the body.",
+    "ex": "Sleep affects mental health.",
+    "exTr": "Uyku ruh sağlığını etkiler."
+  },
+  "secure--adj": {
+    "tr": "güvenli, sağlam",
+    "def": "Safe from danger, or firmly fixed.",
+    "ex": "Keep your passport in a secure place.",
+    "exTr": "Pasaportunu güvenli bir yerde tut."
+  },
+  "highly--adv": {
+    "tr": "son derece, oldukça",
+    "def": "To a great degree.",
+    "ex": "The method is highly effective.",
+    "exTr": "Yöntem son derece etkili."
+  },
+  "sand--noun": {
+    "tr": "kum",
+    "def": "The tiny grains that cover beaches and deserts.",
+    "ex": "The children played in the sand.",
+    "exTr": "Çocuklar kumda oynadı."
+  },
+  "emotional--adj": {
+    "tr": "duygusal",
+    "def": "Relating to feelings, or showing them strongly.",
+    "ex": "It was an emotional farewell.",
+    "exTr": "Duygusal bir vedaydı."
+  },
+  "setting--noun": {
+    "tr": "ortam, ayar",
+    "def": "The place where something happens, or a chosen level.",
+    "ex": "Change the setting to a lower heat.",
+    "exTr": "Ayarı daha düşük bir ısıya getir."
+  },
+  "reward--noun": {
+    "tr": "mükâfat",
+    "def": "Something given in return for good work or help.",
+    "ex": "There is a reward for the lost dog.",
+    "exTr": "Kayıp köpek için ödül var."
+  },
+  "commit--verb": {
+    "tr": "işlemek, kendini adamak",
+    "def": "To do something wrong, or to promise yourself to something.",
+    "ex": "He committed a serious crime.",
+    "exTr": "Ciddi bir suç işledi."
+  },
+  "entirely--adv": {
+    "tr": "büsbütün",
+    "def": "Completely, in every part.",
+    "ex": "The decision is entirely yours.",
+    "exTr": "Karar tamamen sana ait."
+  },
+  "extraordinary--adj": {
+    "tr": "olağanüstü",
+    "def": "Far beyond what is usual or expected.",
+    "ex": "She has an extraordinary memory.",
+    "exTr": "Olağanüstü bir hafızası var."
+  },
+  "opposite--adv": {
+    "tr": "karşısında",
+    "def": "Facing something from the other side.",
+    "ex": "The bakery is directly opposite.",
+    "exTr": "Fırın tam karşıda."
+  },
+  "opposite--noun": {
+    "tr": "zıt, karşıtı",
+    "def": "A thing that is completely different from another.",
+    "ex": "Hot is the opposite of cold.",
+    "exTr": "Sıcak, soğuğun zıttıdır."
+  },
+  "chat--noun": {
+    "tr": "sohbet",
+    "def": "A friendly informal conversation.",
+    "ex": "We had a long chat.",
+    "exTr": "Uzun bir sohbet ettik."
+  },
+  "slip--noun": {
+    "tr": "kâğıt parçası, sürçme",
+    "def": "A small piece of paper, or a small mistake.",
+    "ex": "He wrote it on a slip of paper.",
+    "exTr": "Bunu bir kâğıt parçasına yazdı."
+  },
+  "slip--verb": {
+    "tr": "kaymak",
+    "def": "To slide by accident and lose your balance.",
+    "ex": "She slipped on the wet floor.",
+    "exTr": "Islak zeminde kaydı."
+  },
+  "agreement--noun": {
+    "tr": "anlaşma",
+    "def": "An arrangement that two sides both accept.",
+    "ex": "They signed the agreement in Ankara.",
+    "exTr": "Anlaşmayı Ankara'da imzaladılar."
+  },
+  "solid--adj": {
+    "tr": "katı, sağlam",
+    "def": "Hard and firm, or strong and reliable.",
+    "ex": "The table is made of solid oak.",
+    "exTr": "Masa sağlam meşeden yapılmış."
+  },
+  "intend--verb": {
+    "tr": "niyetlenmek",
+    "def": "To plan to do something.",
+    "ex": "We intend to leave early.",
+    "exTr": "Erken çıkmayı planlıyoruz."
+  },
+  "district--noun": {
+    "tr": "bölge, ilçe",
+    "def": "One part of a city or a country.",
+    "ex": "She grew up in a farming district.",
+    "exTr": "Bir tarım bölgesinde büyüdü."
+  },
+  "gee--interj": {
+    "tr": "vay canına",
+    "def": "An American exclamation of surprise or mild annoyance.",
+    "ex": "Gee, that was close!",
+    "exTr": "Vay canına, ucuz atlattık!"
+  },
+  "ignore--verb": {
+    "tr": "görmezden gelmek",
+    "def": "To pay no attention to someone or something.",
+    "ex": "He ignored my question.",
+    "exTr": "Sorumu görmezden geldi."
+  },
+  "naturally--adv": {
+    "tr": "doğal olarak",
+    "def": "As you would expect, or without being changed.",
+    "ex": "Naturally, she was disappointed.",
+    "exTr": "Doğal olarak hayal kırıklığına uğradı."
+  },
+  "attempt--verb": {
+    "tr": "teşebbüs etmek, denemek",
+    "def": "To try to do something difficult.",
+    "ex": "They attempted the climb twice.",
+    "exTr": "Tırmanışı iki kez denediler."
+  },
+  "guarantee--noun": {
+    "tr": "garanti",
+    "def": "A promise that something will happen or be repaired.",
+    "ex": "The phone has a two-year guarantee.",
+    "exTr": "Telefonun iki yıl garantisi var."
+  },
+  "policy--noun": {
+    "tr": "politika, poliçe",
+    "def": "A plan of action agreed by a government or company.",
+    "ex": "The school changed its phone policy.",
+    "exTr": "Okul telefon politikasını değiştirdi."
+  },
+  "bow--noun": {
+    "tr": "yay, fiyonk",
+    "def": "A weapon for shooting arrows, or a tied ribbon.",
+    "ex": "He shot an arrow from his bow.",
+    "exTr": "Yayından bir ok fırlattı."
+  },
+  "disaster--noun": {
+    "tr": "felaket",
+    "def": "A sudden event that causes great damage.",
+    "ex": "The flood was a national disaster.",
+    "exTr": "Sel ulusal bir felaketti."
+  },
+  "terrific--adj": {
+    "tr": "şahane",
+    "def": "Extremely good.",
+    "ex": "You did a terrific job.",
+    "exTr": "Harika bir iş çıkardın."
+  },
+  "identity--noun": {
+    "tr": "kimlik",
+    "def": "Who a person is, or what makes a group different.",
+    "ex": "The thief hid his identity.",
+    "exTr": "Hırsız kimliğini gizledi."
+  },
+  "impressive--adj": {
+    "tr": "etkileyici",
+    "def": "So good that people admire it.",
+    "ex": "Her results were impressive.",
+    "exTr": "Sonuçları etkileyiciydi."
+  },
+  "potential--noun": {
+    "tr": "potansiyel",
+    "def": "The ability to develop or succeed in the future.",
+    "ex": "The young player has real potential.",
+    "exTr": "Genç oyuncunun gerçek bir potansiyeli var."
+  },
+  "dozen--noun": {
+    "tr": "düzine",
+    "def": "A group of twelve.",
+    "ex": "Buy a dozen eggs.",
+    "exTr": "Bir düzine yumurta al."
+  },
+  "delivery--noun": {
+    "tr": "teslimat",
+    "def": "The act of bringing goods to a place.",
+    "ex": "Delivery takes three working days.",
+    "exTr": "Teslimat üç iş günü sürüyor."
+  },
+  "advance--verb": {
+    "tr": "ilerlemek",
+    "def": "To move forward, or to make progress.",
+    "ex": "The army advanced towards the river.",
+    "exTr": "Ordu nehre doğru ilerledi."
+  },
+  "teaching--noun": {
+    "tr": "öğretmenlik, öğreti",
+    "def": "The job of a teacher, or an idea that is taught.",
+    "ex": "She left teaching after ten years.",
+    "exTr": "On yıl sonra öğretmenliği bıraktı."
+  },
+  "dirt--noun": {
+    "tr": "kir, toprak",
+    "def": "Dust or mud that makes things unclean.",
+    "ex": "His boots were covered in dirt.",
+    "exTr": "Botları çamurla kaplıydı."
+  },
+  "whistle--noun": {
+    "tr": "düdük, ıslık",
+    "def": "A small instrument that makes a high sound.",
+    "ex": "The referee blew his whistle.",
+    "exTr": "Hakem düdüğünü çaldı."
+  },
+  "deny--verb": {
+    "tr": "inkâr etmek, reddetmek",
+    "def": "To say that something is not true.",
+    "ex": "He denied taking the money.",
+    "exTr": "Parayı aldığını inkâr etti."
+  },
+  "urgent--adj": {
+    "tr": "acil",
+    "def": "Needing attention immediately.",
+    "ex": "This is an urgent matter.",
+    "exTr": "Bu acil bir mesele."
+  },
+  "unique--adj": {
+    "tr": "eşsiz, benzersiz",
+    "def": "The only one of its kind.",
+    "ex": "Every fingerprint is unique.",
+    "exTr": "Her parmak izi benzersizdir."
+  },
+  "cruel--adj": {
+    "tr": "zalim, acımasız",
+    "def": "Causing pain to others without caring.",
+    "ex": "It was a cruel decision.",
+    "exTr": "Acımasız bir karardı."
+  },
+  "behave--verb": {
+    "tr": "davranmak",
+    "def": "To act in a particular way towards others.",
+    "ex": "The children behaved very well.",
+    "exTr": "Çocuklar çok iyi davrandı."
+  }
+}

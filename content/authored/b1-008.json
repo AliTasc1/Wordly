@@ -1,0 +1,493 @@
+{
+  "_meta": {
+    "batch": "b1-008",
+    "level": "B1",
+    "range": "560-639"
+  },
+  "massive--adj": {
+    "tr": "muazzam, çok büyük",
+    "def": "Extremely large, heavy or serious.",
+    "ex": "The storm caused massive damage.",
+    "exTr": "Fırtına muazzam hasara yol açtı."
+  },
+  "struggle--noun": {
+    "tr": "mücadele, uğraş",
+    "def": "A hard effort against a difficulty.",
+    "ex": "It was a struggle to stay awake.",
+    "exTr": "Uyanık kalmak bir mücadeleydi."
+  },
+  "channel--noun": {
+    "tr": "kanal",
+    "def": "A television station, or a narrow passage for water.",
+    "ex": "The news is on another channel.",
+    "exTr": "Haberler başka bir kanalda."
+  },
+  "basement--noun": {
+    "tr": "bodrum",
+    "def": "The floor of a building below the ground.",
+    "ex": "The boxes are in the basement.",
+    "exTr": "Kutular bodrumda."
+  },
+  "bound--adj": {
+    "tr": "zorunlu, kesin",
+    "def": "Certain to happen, or required by duty.",
+    "ex": "He is bound to notice the change.",
+    "exTr": "Değişikliği fark etmesi kaçınılmaz."
+  },
+  "guide--noun": {
+    "tr": "rehber, kılavuz",
+    "def": "A person who shows the way, or a book of advice.",
+    "ex": "Our guide knew every path.",
+    "exTr": "Rehberimiz her patikayı biliyordu."
+  },
+  "guide--verb": {
+    "tr": "yol göstermek",
+    "def": "To show someone the way or how to do something.",
+    "ex": "She guided us through the old city.",
+    "exTr": "Bize eski şehirde yol gösterdi."
+  },
+  "transfer--verb": {
+    "tr": "aktarmak, nakletmek",
+    "def": "To move someone or something to another place.",
+    "ex": "He transferred the money online.",
+    "exTr": "Parayı çevrimiçi aktardı."
+  },
+  "quality--adj": {
+    "tr": "kaliteli",
+    "def": "Of a high standard.",
+    "ex": "They sell quality leather bags.",
+    "exTr": "Kaliteli deri çantalar satıyorlar."
+  },
+  "punishment--noun": {
+    "tr": "ceza",
+    "def": "Something unpleasant done to someone for a fault.",
+    "ex": "The punishment seemed too harsh.",
+    "exTr": "Ceza fazla sert görünüyordu."
+  },
+  "flash--adj": {
+    "tr": "ani, flaş",
+    "def": "Happening very suddenly and for a short time.",
+    "ex": "A flash flood closed the road.",
+    "exTr": "Ani bir sel yolu kapattı."
+  },
+  "bowl--verb": {
+    "tr": "top atmak (kriket)",
+    "def": "To throw the ball at the batsman in cricket.",
+    "ex": "He bowled the first over.",
+    "exTr": "İlk atışları o yaptı."
+  },
+  "supply--noun": {
+    "tr": "arz, tedarik",
+    "def": "An amount of something that is available.",
+    "ex": "The water supply was cut off.",
+    "exTr": "Su tedariki kesildi."
+  },
+  "hopefully--adv": {
+    "tr": "umarım",
+    "def": "Used to say what you hope will happen.",
+    "ex": "Hopefully the rain will stop.",
+    "exTr": "Umarım yağmur durur."
+  },
+  "rolling--adj": {
+    "tr": "yuvarlanan, dalgalı",
+    "def": "Turning over and over, or gently rising and falling.",
+    "ex": "We drove past rolling hills.",
+    "exTr": "Dalgalı tepelerin yanından geçtik."
+  },
+  "demand--noun": {
+    "tr": "talep",
+    "def": "A strong request, or the need customers have.",
+    "ex": "There is high demand for nurses.",
+    "exTr": "Hemşirelere yüksek talep var."
+  },
+  "demand--verb": {
+    "tr": "talep etmek",
+    "def": "To ask for something very firmly.",
+    "ex": "The workers demanded an answer.",
+    "exTr": "İşçiler bir cevap talep etti."
+  },
+  "steady--adj": {
+    "tr": "istikrarlı, sabit",
+    "def": "Not changing and not shaking.",
+    "ex": "He kept a steady pace.",
+    "exTr": "İstikrarlı bir tempo tutturdu."
+  },
+  "particularly--adv": {
+    "tr": "özellikle",
+    "def": "More than usual, or above all.",
+    "ex": "The soup was particularly good.",
+    "exTr": "Çorba özellikle güzeldi."
+  },
+  "joint--adj": {
+    "tr": "ortak",
+    "def": "Shared by two or more people.",
+    "ex": "They opened a joint account.",
+    "exTr": "Ortak bir hesap açtılar."
+  },
+  "package--noun": {
+    "tr": "paket",
+    "def": "Something wrapped for sending, or a set of things together.",
+    "ex": "A package arrived for you.",
+    "exTr": "Sana bir paket geldi."
+  },
+  "possibility--noun": {
+    "tr": "olasılık, ihtimal",
+    "def": "The chance that something may happen.",
+    "ex": "There is a possibility of snow.",
+    "exTr": "Kar ihtimali var."
+  },
+  "civil--adj": {
+    "tr": "sivil, medeni",
+    "def": "Relating to citizens rather than the army or religion.",
+    "ex": "The country avoided a civil war.",
+    "exTr": "Ülke bir iç savaştan kaçındı."
+  },
+  "express--verb": {
+    "tr": "ifade etmek",
+    "def": "To say or show what you think or feel.",
+    "ex": "She expressed her thanks briefly.",
+    "exTr": "Teşekkürlerini kısaca ifade etti."
+  },
+  "miserable--adj": {
+    "tr": "perişan, berbat",
+    "def": "Very unhappy, or very unpleasant.",
+    "ex": "He looked cold and miserable.",
+    "exTr": "Üşümüş ve perişan görünüyordu."
+  },
+  "trail--noun": {
+    "tr": "patika, iz",
+    "def": "A rough path, or a line of marks left behind.",
+    "ex": "The trail leads to a waterfall.",
+    "exTr": "Patika bir şelaleye çıkıyor."
+  },
+  "option--noun": {
+    "tr": "seçenek",
+    "def": "One of the things you can choose.",
+    "ex": "We have two options left.",
+    "exTr": "Elimizde iki seçenek kaldı."
+  },
+  "recall--verb": {
+    "tr": "hatırlamak, geri çağırmak",
+    "def": "To remember something, or to ask for goods back.",
+    "ex": "I cannot recall his name.",
+    "exTr": "Adını hatırlayamıyorum."
+  },
+  "accent--noun": {
+    "tr": "aksan, şive",
+    "def": "The way someone pronounces a language.",
+    "ex": "She speaks with a Scottish accent.",
+    "exTr": "İskoç aksanıyla konuşuyor."
+  },
+  "embarrassed--adj": {
+    "tr": "utanmış, mahcup",
+    "def": "Feeling uncomfortable in front of other people.",
+    "ex": "He was embarrassed by the applause.",
+    "exTr": "Alkıştan mahcup oldu."
+  },
+  "terribly--adv": {
+    "tr": "çok, korkunç derecede",
+    "def": "Very much, or very badly.",
+    "ex": "I am terribly sorry.",
+    "exTr": "Çok özür dilerim."
+  },
+  "charity--noun": {
+    "tr": "hayır kurumu, yardım",
+    "def": "An organization that helps people in need.",
+    "ex": "The charity feeds hundreds daily.",
+    "exTr": "Hayır kurumu her gün yüzlerce kişiyi doyuruyor."
+  },
+  "balance--noun": {
+    "tr": "denge, bakiye",
+    "def": "A steady state, or the money left in an account.",
+    "ex": "She lost her balance on the ice.",
+    "exTr": "Buzda dengesini kaybetti."
+  },
+  "nuclear--adj": {
+    "tr": "nükleer",
+    "def": "Relating to the energy inside atoms.",
+    "ex": "The country has no nuclear weapons.",
+    "exTr": "Ülkenin nükleer silahı yok."
+  },
+  "shout--verb": {
+    "tr": "bağırmak",
+    "def": "To say something very loudly.",
+    "ex": "Don't shout at the children.",
+    "exTr": "Çocuklara bağırma."
+  },
+  "impression--noun": {
+    "tr": "izlenim",
+    "def": "The idea or feeling you get about something.",
+    "ex": "He made a good impression.",
+    "exTr": "İyi bir izlenim bıraktı."
+  },
+  "network--noun": {
+    "tr": "ağ, şebeke",
+    "def": "A system of connected people, roads or computers.",
+    "ex": "The rail network needs repair.",
+    "exTr": "Demiryolu ağının onarıma ihtiyacı var."
+  },
+  "defeat--verb": {
+    "tr": "yenmek, mağlup etmek",
+    "def": "To beat someone in a game or a war.",
+    "ex": "They defeated the champions.",
+    "exTr": "Şampiyonları yendiler."
+  },
+  "ceremony--noun": {
+    "tr": "tören",
+    "def": "A formal event held for an important occasion.",
+    "ex": "The wedding ceremony was short.",
+    "exTr": "Nikâh töreni kısaydı."
+  },
+  "league--noun": {
+    "tr": "lig",
+    "def": "A group of teams that play against each other.",
+    "ex": "Our club plays in the second league.",
+    "exTr": "Kulübümüz ikinci ligde oynuyor."
+  },
+  "plastic--noun": {
+    "tr": "plastik",
+    "def": "A light artificial material used for many objects.",
+    "ex": "The toy is made of plastic.",
+    "exTr": "Oyuncak plastikten yapılmış."
+  },
+  "crisis--noun": {
+    "tr": "kriz",
+    "def": "A time of great danger or difficulty.",
+    "ex": "The country faced an economic crisis.",
+    "exTr": "Ülke ekonomik bir krizle karşılaştı."
+  },
+  "fifth--noun": {
+    "tr": "beşte bir",
+    "def": "One of five equal parts.",
+    "ex": "A fifth of the class was absent.",
+    "exTr": "Sınıfın beşte biri yoktu."
+  },
+  "term--noun": {
+    "tr": "dönem, terim",
+    "def": "A period of study, or a word with a special meaning.",
+    "ex": "The spring term begins in February.",
+    "exTr": "Bahar dönemi şubatta başlıyor."
+  },
+  "aboard--adv": {
+    "tr": "gemide, araçta",
+    "def": "On or onto a ship, a plane or a train.",
+    "ex": "Everyone is safely aboard.",
+    "exTr": "Herkes güvenle gemide."
+  },
+  "sweat--noun": {
+    "tr": "ter",
+    "def": "The liquid that comes from your skin when you are hot.",
+    "ex": "His shirt was wet with sweat.",
+    "exTr": "Gömleği terden ıslanmıştı."
+  },
+  "bust--verb": {
+    "tr": "kırmak, basmak",
+    "def": "To break something, or for police to raid a place.",
+    "ex": "Police busted the illegal workshop.",
+    "exTr": "Polis kaçak atölyeyi bastı."
+  },
+  "afterwards--adv": {
+    "tr": "sonrasında",
+    "def": "After the event you are talking about.",
+    "ex": "We had coffee afterwards.",
+    "exTr": "Sonrasında kahve içtik."
+  },
+  "comfort--noun": {
+    "tr": "rahatlık, teselli",
+    "def": "A pleasant easy state, or relief from sadness.",
+    "ex": "The old chair offers little comfort.",
+    "exTr": "Eski sandalye pek rahat değil."
+  },
+  "gym--noun": {
+    "tr": "spor salonu",
+    "def": "A room or building with equipment for exercise.",
+    "ex": "He goes to the gym twice weekly.",
+    "exTr": "Haftada iki kez spor salonuna gidiyor."
+  },
+  "crush--noun": {
+    "tr": "aşk, tutulma",
+    "def": "A short strong feeling of love for someone.",
+    "ex": "She had a crush on her neighbour.",
+    "exTr": "Komşusuna âşıktı."
+  },
+  "stress--noun": {
+    "tr": "stres, baskı",
+    "def": "Worry caused by a difficult situation.",
+    "ex": "Exams cause a lot of stress.",
+    "exTr": "Sınavlar çok stres yaratıyor."
+  },
+  "cave--noun": {
+    "tr": "mağara",
+    "def": "A large hole in the side of a hill or under ground.",
+    "ex": "The cave is open to visitors.",
+    "exTr": "Mağara ziyaretçilere açık."
+  },
+  "wing--noun": {
+    "tr": "kanat",
+    "def": "The part a bird or a plane uses to fly.",
+    "ex": "The bird hurt its left wing.",
+    "exTr": "Kuş sol kanadını incitti."
+  },
+  "arrange--verb": {
+    "tr": "ayarlamak, düzenlemek",
+    "def": "To plan an event, or to put things in order.",
+    "ex": "She arranged a meeting for Friday.",
+    "exTr": "Cuma için bir toplantı ayarladı."
+  },
+  "launch--verb": {
+    "tr": "başlatmak, fırlatmak",
+    "def": "To start something new, or to send a rocket into space.",
+    "ex": "They launched the app last month.",
+    "exTr": "Uygulamayı geçen ay piyasaya sürdüler."
+  },
+  "tax--noun": {
+    "tr": "vergi",
+    "def": "Money that people must pay to the government.",
+    "ex": "Books carry a lower tax.",
+    "exTr": "Kitaplarda daha düşük vergi var."
+  },
+  "insist--verb": {
+    "tr": "ısrar etmek",
+    "def": "To say something firmly and refuse to change.",
+    "ex": "He insisted on paying the bill.",
+    "exTr": "Hesabı ödemekte ısrar etti."
+  },
+  "selfish--adj": {
+    "tr": "bencil",
+    "def": "Caring only about yourself.",
+    "ex": "That was a selfish thing to do.",
+    "exTr": "Bu bencilce bir davranıştı."
+  },
+  "bat--verb": {
+    "tr": "vuruş yapmak",
+    "def": "To hit the ball in cricket or baseball.",
+    "ex": "He batted for twenty minutes.",
+    "exTr": "Yirmi dakika vuruş yaptı."
+  },
+  "print--noun": {
+    "tr": "baskı, iz",
+    "def": "Letters on paper, or a mark left by pressing.",
+    "ex": "The print is too small to read.",
+    "exTr": "Baskı okunamayacak kadar küçük."
+  },
+  "champion--noun": {
+    "tr": "şampiyon",
+    "def": "The winner of a competition.",
+    "ex": "She became national champion.",
+    "exTr": "Ulusal şampiyon oldu."
+  },
+  "experiment--noun": {
+    "tr": "deney",
+    "def": "A scientific test done to learn something.",
+    "ex": "The experiment gave clear results.",
+    "exTr": "Deney net sonuçlar verdi."
+  },
+  "attend--verb": {
+    "tr": "katılmak, devam etmek",
+    "def": "To go to an event, a school or a meeting.",
+    "ex": "Two hundred people attended the talk.",
+    "exTr": "Konuşmaya iki yüz kişi katıldı."
+  },
+  "steel--noun": {
+    "tr": "çelik",
+    "def": "A strong metal made from iron and carbon.",
+    "ex": "The frame is made of steel.",
+    "exTr": "İskelet çelikten yapılmış."
+  },
+  "cabin--noun": {
+    "tr": "kulübe, kabin",
+    "def": "A small wooden house, or a room on a ship.",
+    "ex": "We stayed in a mountain cabin.",
+    "exTr": "Bir dağ kulübesinde kaldık."
+  },
+  "financial--adj": {
+    "tr": "mali, finansal",
+    "def": "Relating to money and its management.",
+    "ex": "The firm is in financial trouble.",
+    "exTr": "Firma mali sıkıntıda."
+  },
+  "industry--noun": {
+    "tr": "sanayi, sektör",
+    "def": "The making of goods, or one area of business.",
+    "ex": "Tourism is a growing industry.",
+    "exTr": "Turizm büyüyen bir sektör."
+  },
+  "bond--noun": {
+    "tr": "bağ, tahvil",
+    "def": "A close connection between people, or a kind of investment.",
+    "ex": "There is a strong bond between them.",
+    "exTr": "Aralarında güçlü bir bağ var."
+  },
+  "painful--adj": {
+    "tr": "acı verici, ağrılı",
+    "def": "Causing pain in the body or the mind.",
+    "ex": "The injury is still painful.",
+    "exTr": "Yaralanma hâlâ acı veriyor."
+  },
+  "religion--noun": {
+    "tr": "din",
+    "def": "Belief in a god, and the practices that go with it.",
+    "ex": "The class compares three religions.",
+    "exTr": "Ders üç dini karşılaştırıyor."
+  },
+  "fuel--noun": {
+    "tr": "yakıt",
+    "def": "Material such as petrol or wood that is burnt for power.",
+    "ex": "Fuel prices rose sharply.",
+    "exTr": "Yakıt fiyatları keskin şekilde arttı."
+  },
+  "virus--noun": {
+    "tr": "virüs",
+    "def": "A tiny living thing that causes illness, or harmful software.",
+    "ex": "A virus closed the school.",
+    "exTr": "Bir virüs okulu kapattı."
+  },
+  "plain--adj": {
+    "tr": "sade, açık",
+    "def": "Simple and without decoration, or easy to understand.",
+    "ex": "He wore a plain white shirt.",
+    "exTr": "Sade beyaz bir gömlek giymişti."
+  },
+  "sacred--adj": {
+    "tr": "mukaddes, kutsal",
+    "def": "Holy, and treated with great respect.",
+    "ex": "The mountain is sacred to them.",
+    "exTr": "Dağ onlar için kutsal."
+  },
+  "robot--noun": {
+    "tr": "robot",
+    "def": "A machine that can do work by itself.",
+    "ex": "A robot packs the boxes.",
+    "exTr": "Kutuları bir robot paketliyor."
+  },
+  "confirm--verb": {
+    "tr": "doğrulamak, teyit etmek",
+    "def": "To show that something is definitely true.",
+    "ex": "Please confirm your booking.",
+    "exTr": "Lütfen rezervasyonunuzu teyit edin."
+  },
+  "mile--noun": {
+    "tr": "mil",
+    "def": "A unit of distance equal to about 1.6 kilometres.",
+    "ex": "The beach is a mile away.",
+    "exTr": "Plaj bir mil uzakta."
+  },
+  "scratch--noun": {
+    "tr": "çizik",
+    "def": "A thin mark or cut made by something sharp.",
+    "ex": "There is a scratch on the screen.",
+    "exTr": "Ekranda bir çizik var."
+  },
+  "valuable--adj": {
+    "tr": "değerli",
+    "def": "Worth a lot of money, or very useful.",
+    "ex": "He gave me valuable advice.",
+    "exTr": "Bana değerli tavsiyeler verdi."
+  },
+  "distant--adj": {
+    "tr": "uzak",
+    "def": "Far away in space, time or relationship.",
+    "ex": "They heard a distant train.",
+    "exTr": "Uzaktan bir tren sesi duydular."
+  }
+}
