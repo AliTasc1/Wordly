@@ -1,0 +1,13 @@
+{
+  "_note": "CEFR-J Gramer Profili bir yapıyı, öğrenci o seviyedeki metinlerde onunla KARŞILAŞTIĞI için o seviyeye koyar. Üretim hedefi olması gerekmez: A1 öğrencisi 'made in China' etiketini okur ama edilgen çatıyı kuramaz. Burada, envanterde olup o seviyenin dersine girmeyen maddeler hangi seviyeye ertelendiğiyle ve gerekçesiyle yazılıdır. Böylece atlanan hiçbir madde sessiz kalmaz.",
+  "A1": [
+    { "code": "PASS.PRESENT", "moveTo": "A2", "why": "Edilgen çatı A1'de yalnızca kalıp olarak görülür (made in Turkey); kurallı üretim A2 hedefidir." },
+    { "code": "PREL.who", "moveTo": "A2", "why": "Sıfat cümlecikleri iki cümleyi birleştirmeyi gerektirir; A1 tek cümlelik üretimde kalır." },
+    { "code": "PREL.that", "moveTo": "A2", "why": "who ile aynı ders; birlikte öğretilmesi daha verimli." },
+    { "code": "PRELO.OMIT", "moveTo": "B1", "why": "Nesne durumundaki ilgi zamirinin düşürülmesi, zamirin kendisi öğrenilmeden anlatılamaz." },
+    { "code": "PREP.STRAND", "moveTo": "B1", "why": "Edatın cümle sonunda kalması (Who are you waiting for?) soru ve ilgi cümleciği kurulduktan sonra anlamlı." },
+    { "code": "VG.N_VG", "moveTo": "B1", "why": "İsmi arkadan niteleyen -ing (the man standing there) ileri bir sıkıştırma yapısı; A1'de ayrı cümleyle anlatılır." },
+    { "code": "VN.VN_N", "moveTo": "A2", "why": "Önden niteleyen üçüncü hâl (a broken window) üçüncü hâl öğrenilmeden verilemez; A2'de present perfect ile birlikte gelir." },
+    { "code": "VN.N_VN", "moveTo": "B1", "why": "Arkadan niteleyen üçüncü hâl (a car made in Japan) edilgen çatıya dayanır." }
+  ]
+}

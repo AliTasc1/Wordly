@@ -1,0 +1,232 @@
+{
+  "_meta": { "batch": "a1-02", "level": "A1", "range": "Ders 7-12 — some/any, geniş zaman, sıklık zarfları, şimdiki zaman" },
+  "lessons": [
+    {
+      "id": "a1-07-some-any-no",
+      "level": "A1",
+      "order": 7,
+      "title": "some, any, no",
+      "topic": "Determiners: some / any / no",
+      "canDo": "Miktarı belli olmayan şeylerden söz edebilirim.",
+      "covers": ["DT.some.any", "DT.no"],
+      "concept": {
+        "summary": "Sayıyı söylemeden \"biraz, hiç\" demenin yolu. Olumlu cümlede some, olumsuz ve soruda any kullanılır. no ise tek başına olumsuzluk taşır, yanına not almaz.",
+        "formula": { "left": "some (olumlu) / any (olumsuz, soru)", "right": "no + isim = hiç yok" },
+        "table": [
+          { "form": "olumlu", "be": "some", "example": "I have some money." },
+          { "form": "olumsuz", "be": "any", "example": "I don't have any money." },
+          { "form": "soru", "be": "any", "example": "Do you have any money?" },
+          { "form": "no", "be": "not + any yerine", "example": "I have no money." }
+        ]
+      },
+      "examples": [
+        { "en": "There are some eggs in the fridge.", "tr": "Buzdolabında biraz yumurta var.", "note": "Olumlu cümle → some." },
+        { "en": "I don't want any sugar.", "tr": "Hiç şeker istemiyorum.", "note": "Olumsuz cümle → any." },
+        { "en": "Do you have any brothers?", "tr": "Hiç erkek kardeşin var mı?", "note": "Soruda any." },
+        { "en": "There is no time.", "tr": "Hiç zaman yok.", "note": "no zaten olumsuz, isn't gerekmez." },
+        { "en": "Would you like some tea?", "tr": "Çay ister misin?", "note": "İkramda soru olmasına rağmen some kullanılır." }
+      ],
+      "mistakes": [
+        { "wrong": "I don't have no money.", "right": "I don't have any money.", "why": "Bir cümlede iki olumsuzluk olmaz." },
+        { "wrong": "I have any questions.", "right": "I have some questions.", "why": "Olumlu cümlede any kullanılmaz." },
+        { "wrong": "There isn't no bread.", "right": "There is no bread.", "why": "no tek başına yeter." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "We need ___ help.", "options": ["some", "any", "no any", "a"], "answer": 0, "note": "Olumlu cümle → some." },
+        { "type": "choice", "text": "She doesn't have ___ friends here.", "options": ["any", "some", "no", "a"], "answer": 0, "note": "Olumsuz cümle → any." },
+        { "type": "choice", "text": "Is there ___ water in the bottle?", "options": ["any", "some", "a", "no any"], "answer": 0, "note": "Soruda any." },
+        { "type": "choice", "text": "There are ___ buses on Sunday.", "options": ["no", "any", "not", "some not"], "answer": 0, "note": "no tek başına olumsuzluk taşır." },
+        { "type": "gap", "text": "Would you like ___ coffee?", "options": ["some", "any", "no"], "answer": 0, "note": "İkram sorusunda some kalır." }
+      ]
+    },
+    {
+      "id": "a1-08-present-simple-affirmative",
+      "level": "A1",
+      "order": 8,
+      "title": "Geniş zaman — olumlu",
+      "topic": "Present simple (affirmative), SVO order",
+      "canDo": "Her gün yaptığım işleri ve genel doğruları anlatabilirim.",
+      "covers": ["TA.PRESENT.do.AFF", "TA.PRESENT.does.AFF", "VP.SVO.AFF"],
+      "concept": {
+        "summary": "Alışkanlıklar ve değişmeyen gerçekler için kullanılır. Fiil yalın hâlde kalır; yalnız he/she/it öznesinde sonuna -s eklenir. Cümle sırası değişmez: özne, fiil, nesne.",
+        "formula": { "left": "Özne + fiil", "right": "he / she / it + fiil-s" },
+        "table": [
+          { "form": "I / you / we / they", "be": "work", "example": "They work at a bank." },
+          { "form": "he / she / it", "be": "works", "example": "She works at a bank." },
+          { "form": "-o, -ch, -sh, -ss", "be": "+es", "example": "He goes / watches / finishes." },
+          { "form": "ünsüz + y", "be": "y → ies", "example": "study → he studies" }
+        ]
+      },
+      "examples": [
+        { "en": "I drink tea every morning.", "tr": "Her sabah çay içerim.", "note": "Alışkanlık." },
+        { "en": "She lives in Ankara.", "tr": "Ankara'da yaşıyor.", "note": "she → lives." },
+        { "en": "Water boils at 100 degrees.", "tr": "Su 100 derecede kaynar.", "note": "Değişmeyen gerçek." },
+        { "en": "My father watches the news at eight.", "tr": "Babam haberleri sekizde izler.", "note": "watch → watches." },
+        { "en": "They study English on Mondays.", "tr": "Pazartesileri İngilizce çalışırlar.", "note": "they → -s yok." }
+      ],
+      "mistakes": [
+        { "wrong": "She work at a bank.", "right": "She works at a bank.", "why": "he/she/it öznesinde -s zorunludur." },
+        { "wrong": "He studys hard.", "right": "He studies hard.", "why": "Ünsüzden sonra gelen y, ies olur." },
+        { "wrong": "Every day I to school go.", "right": "Every day I go to school.", "why": "İngilizcede fiil nesneden önce gelir." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "My sister ___ in a hospital.", "options": ["works", "work", "working", "is work"], "answer": 0, "note": "she → works." },
+        { "type": "choice", "text": "We ___ dinner at seven.", "options": ["have", "has", "haves", "having"], "answer": 0, "note": "we → yalın fiil." },
+        { "type": "choice", "text": "He ___ to the gym twice a week.", "options": ["goes", "go", "gos", "going"], "answer": 0, "note": "go → goes." },
+        { "type": "choice", "text": "The shop ___ at nine every day.", "options": ["opens", "open", "opening", "is open"], "answer": 0, "note": "shop = it → opens." },
+        { "type": "gap", "text": "She ___ French and Arabic.", "options": ["speaks", "speak", "speaking"], "answer": 0, "note": "she → speaks." }
+      ]
+    },
+    {
+      "id": "a1-09-present-simple-negative-question",
+      "level": "A1",
+      "order": 9,
+      "title": "Geniş zaman — olumsuz ve soru",
+      "topic": "Present simple: do / does",
+      "canDo": "Yapmadığım şeyleri söyleyebilir, başkasının alışkanlığını sorabilirim.",
+      "covers": ["TA.PRESENT.do.NEG", "TA.PRESENT.do.INT.AFF", "VP.SVO.INT.AFF"],
+      "concept": {
+        "summary": "be dışındaki fiillerde olumsuzluk ve soru için yardımcı fiil do gerekir. Yardımcı fiil -s'i üstlenir: does gelince asıl fiil yalın hâle döner.",
+        "formula": { "left": "Özne + don't / doesn't + fiil", "right": "Do / Does + özne + fiil?" },
+        "table": [
+          { "form": "I / you / we / they", "be": "don't — Do …?", "example": "They don't smoke. Do they smoke?" },
+          { "form": "he / she / it", "be": "doesn't — Does …?", "example": "He doesn't smoke. Does he smoke?" },
+          { "form": "dikkat", "be": "does + yalın fiil", "example": "Does she work? (works değil)" }
+        ]
+      },
+      "examples": [
+        { "en": "I don't eat meat.", "tr": "Et yemem.", "note": "I → don't." },
+        { "en": "He doesn't like coffee.", "tr": "Kahveyi sevmez.", "note": "-s doesn't'a geçti, like yalın kaldı." },
+        { "en": "Do you speak English?", "tr": "İngilizce konuşuyor musun?", "note": "Soruda do başa gelir." },
+        { "en": "Does your brother live here?", "tr": "Kardeşin burada mı yaşıyor?", "note": "brother = he → Does." },
+        { "en": "We don't work on Sundays.", "tr": "Pazarları çalışmayız.", "note": "we → don't." }
+      ],
+      "mistakes": [
+        { "wrong": "He doesn't likes coffee.", "right": "He doesn't like coffee.", "why": "-s zaten doesn't'ın içinde; fiile ikinci kez eklenmez." },
+        { "wrong": "You speak English?", "right": "Do you speak English?", "why": "Soru, do ile kurulur." },
+        { "wrong": "I not eat meat.", "right": "I don't eat meat.", "why": "Asıl fiili not tek başına olumsuzlaştıramaz." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "She ___ watch television.", "options": ["doesn't", "don't", "isn't", "not"], "answer": 0, "note": "she → doesn't." },
+        { "type": "choice", "text": "___ they live in Izmir?", "options": ["Do", "Does", "Are", "Is"], "answer": 0, "note": "they → Do." },
+        { "type": "choice", "text": "My phone ___ work.", "options": ["doesn't", "don't", "isn't", "aren't"], "answer": 0, "note": "phone = it → doesn't." },
+        { "type": "choice", "text": "Does he ___ early?", "options": ["get up", "gets up", "got up", "getting up"], "answer": 0, "note": "does'tan sonra fiil yalın." },
+        { "type": "gap", "text": "We ___ have a car.", "options": ["don't", "doesn't", "aren't"], "answer": 0, "note": "we → don't." }
+      ]
+    },
+    {
+      "id": "a1-10-adverbs-of-frequency",
+      "level": "A1",
+      "order": 10,
+      "title": "always, usually, never",
+      "topic": "Adverbs of frequency and intensifiers",
+      "canDo": "Bir şeyi ne sıklıkta yaptığımı söyleyebilirim.",
+      "covers": ["RB.FRQ", "RB.NEG", "RB.INT"],
+      "concept": {
+        "summary": "Sıklık zarfları cümlede belli bir yere oturur: asıl fiilden önce, ama be fiilinden sonra. never zaten olumsuzdur, yanına don't almaz. very ve really gibi zarflar ise sıfatı güçlendirir.",
+        "formula": { "left": "özne + zarf + fiil", "right": "özne + be + zarf" },
+        "table": [
+          { "form": "always", "be": "%100", "example": "I always walk to work." },
+          { "form": "usually / often", "be": "sık", "example": "She usually arrives late." },
+          { "form": "sometimes", "be": "bazen", "example": "We sometimes eat out." },
+          { "form": "never", "be": "%0", "example": "He never drinks coffee." }
+        ]
+      },
+      "examples": [
+        { "en": "I always take the bus.", "tr": "Her zaman otobüse binerim.", "note": "Zarf fiilden önce." },
+        { "en": "She is never late.", "tr": "Asla geç kalmaz.", "note": "be fiilinden sonra." },
+        { "en": "They sometimes work at home.", "tr": "Bazen evden çalışırlar.", "note": "sometimes cümle başına da gelebilir." },
+        { "en": "This film is really good.", "tr": "Bu film gerçekten iyi.", "note": "really sıfatı güçlendirir." },
+        { "en": "He doesn't usually answer.", "tr": "Genelde cevap vermez.", "note": "Olumsuzda zarf don't ile fiil arasına girer." }
+      ],
+      "mistakes": [
+        { "wrong": "I don't never drink tea.", "right": "I never drink tea.", "why": "never tek başına olumsuzluk taşır." },
+        { "wrong": "She always is happy.", "right": "She is always happy.", "why": "be fiilinden sonra gelir." },
+        { "wrong": "I take always the bus.", "right": "I always take the bus.", "why": "Zarf fiilden sonra değil, önce gelir." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "He ___ goes to bed before midnight.", "options": ["usually", "is usually", "usually is", "does usually"], "answer": 0, "note": "Asıl fiilden önce." },
+        { "type": "choice", "text": "My sister is ___ tired after work.", "options": ["always", "always is", "does always", "never not"], "answer": 0, "note": "be'den sonra." },
+        { "type": "choice", "text": "I ___ eat fast food.", "options": ["never", "don't never", "not never", "never don't"], "answer": 0, "note": "never olumsuzluğu kendi taşır." },
+        { "type": "choice", "text": "The exam was ___ difficult.", "options": ["really", "real", "reallly", "very much"], "answer": 0, "note": "Sıfatı güçlendiren zarf really." },
+        { "type": "gap", "text": "They ___ visit us on Sundays.", "options": ["often", "is often", "do often be"], "answer": 0, "note": "Asıl fiilden önce." }
+      ]
+    },
+    {
+      "id": "a1-11-present-progressive",
+      "level": "A1",
+      "order": 11,
+      "title": "Şimdiki zaman — şu anda",
+      "topic": "Present progressive",
+      "canDo": "Şu anda olup biteni anlatabilirim.",
+      "covers": ["TA.PRPRG.AFF"],
+      "concept": {
+        "summary": "Tam şu anda süren iş için kullanılır. İki parçalıdır: be fiili özneye göre çekilir, asıl fiile -ing eklenir. be düşerse cümle bozulur.",
+        "formula": { "left": "am / is / are", "right": "+ fiil-ing" },
+        "table": [
+          { "form": "I", "be": "am + -ing", "example": "I am reading." },
+          { "form": "he / she / it", "be": "is + -ing", "example": "She is cooking." },
+          { "form": "you / we / they", "be": "are + -ing", "example": "They are waiting." },
+          { "form": "sessiz e", "be": "e düşer", "example": "write → writing" }
+        ]
+      },
+      "examples": [
+        { "en": "I am working right now.", "tr": "Şu anda çalışıyorum.", "note": "right now bu zamanın tipik imzası." },
+        { "en": "She is talking on the phone.", "tr": "Telefonda konuşuyor.", "note": "she → is." },
+        { "en": "The children are playing outside.", "tr": "Çocuklar dışarıda oynuyor.", "note": "Çoğul özne → are." },
+        { "en": "It is raining.", "tr": "Yağmur yağıyor.", "note": "Hava olayında özne it." },
+        { "en": "We are having dinner.", "tr": "Akşam yemeği yiyoruz.", "note": "have burada \"yemek yemek\" demek, -ing alabilir." }
+      ],
+      "mistakes": [
+        { "wrong": "I working now.", "right": "I am working now.", "why": "be parçası düşmez." },
+        { "wrong": "She is cook.", "right": "She is cooking.", "why": "-ing eki şart." },
+        { "wrong": "They are wait.", "right": "They are waiting.", "why": "be + fiil-ing birlikte çalışır." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "Look! The bus ___ .", "options": ["is coming", "comes", "come", "is come"], "answer": 0, "note": "Şu an olan iş → is + -ing." },
+        { "type": "choice", "text": "I ___ for my friend.", "options": ["am waiting", "waiting", "wait am", "is waiting"], "answer": 0, "note": "I → am." },
+        { "type": "choice", "text": "They ___ football in the garden.", "options": ["are playing", "is playing", "play are", "playing"], "answer": 0, "note": "Çoğul → are." },
+        { "type": "choice", "text": "She ___ a letter at the moment.", "options": ["is writing", "is writeing", "writes", "write"], "answer": 0, "note": "write'ın sessiz e'si düşer." },
+        { "type": "gap", "text": "We ___ television now.", "options": ["are watching", "watch", "is watching"], "answer": 0, "note": "we → are + -ing." }
+      ]
+    },
+    {
+      "id": "a1-12-can",
+      "level": "A1",
+      "order": 12,
+      "title": "can — yapabilmek",
+      "topic": "Modal verb: can",
+      "canDo": "Neyi yapabildiğimi söyleyebilir, izin ve ricada bulunabilirim.",
+      "covers": ["MD.can.AFF", "MD.can.INT.AFF"],
+      "concept": {
+        "summary": "can yetenek, izin ve rica bildirir. Kipler özneye göre değişmez: he can olur, \"he cans\" olmaz. Ardından her zaman yalın fiil gelir, to almaz.",
+        "formula": { "left": "Özne + can", "right": "+ yalın fiil" },
+        "table": [
+          { "form": "olumlu", "be": "can", "example": "I can swim." },
+          { "form": "olumsuz", "be": "can't / cannot", "example": "He can't drive." },
+          { "form": "soru", "be": "Can + özne", "example": "Can you help me?" },
+          { "form": "değişmez", "be": "her öznede aynı", "example": "She can cook." }
+        ]
+      },
+      "examples": [
+        { "en": "I can speak three languages.", "tr": "Üç dil konuşabiliyorum.", "note": "Yetenek." },
+        { "en": "She can't come tonight.", "tr": "Bu akşam gelemez.", "note": "cannot'ın kısaltması can't." },
+        { "en": "Can I sit here?", "tr": "Buraya oturabilir miyim?", "note": "İzin isteme." },
+        { "en": "Can you open the window, please?", "tr": "Pencereyi açabilir misin lütfen?", "note": "Rica." },
+        { "en": "He can play the guitar well.", "tr": "Gitarı iyi çalabiliyor.", "note": "he olsa bile can değişmez." }
+      ],
+      "mistakes": [
+        { "wrong": "She cans drive.", "right": "She can drive.", "why": "Kip fiiller -s almaz." },
+        { "wrong": "I can to swim.", "right": "I can swim.", "why": "can'dan sonra to gelmez." },
+        { "wrong": "Do you can help me?", "right": "Can you help me?", "why": "Kip fiilin sorusunda do kullanılmaz." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "___ you speak Spanish?", "options": ["Can", "Do can", "Are", "Does"], "answer": 0, "note": "Kip fiil soruda başa geçer." },
+        { "type": "choice", "text": "He ___ come to the party.", "options": ["can't", "doesn't can", "can not to", "isn't can"], "answer": 0, "note": "Olumsuzu can't." },
+        { "type": "choice", "text": "I can ___ very fast.", "options": ["run", "to run", "running", "runs"], "answer": 0, "note": "can'dan sonra yalın fiil." },
+        { "type": "choice", "text": "My little brother ___ read yet.", "options": ["can't", "cans not", "don't can", "not can"], "answer": 0, "note": "Tek olumsuzluk, can't." },
+        { "type": "gap", "text": "___ I use your phone?", "options": ["Can", "Do", "Am"], "answer": 0, "note": "İzin isterken Can." }
+      ]
+    }
+  ]
+}

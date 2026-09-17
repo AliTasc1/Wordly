@@ -1,0 +1,3227 @@
+[
+ {
+  "id": "a1-01-be-affirmative",
+  "level": "A1",
+  "order": 1,
+  "title": "\"to be\" — am, is, are",
+  "topic": "Present simple: be (affirmative)",
+  "canDo": "Kendimi tanıtabilir, bir kişinin ya da şeyin ne olduğunu söyleyebilirim.",
+  "covers": [
+   "PP.I_am",
+   "PP.he.she_is",
+   "PP.we_are",
+   "PP.they_are",
+   "PP.it_is",
+   "TA.PRESENT.be.AFF"
+  ],
+  "concept": {
+   "summary": "İngilizcede \"-dir, -im, -sin\" ekleri yoktur; bunun yerine cümleye ayrı bir fiil konur: be. Özneye göre am, is ya da are'a dönüşür ve cümleden asla düşmez.",
+   "formula": {
+    "left": "Özne",
+    "right": "am / is / are + tamamlayıcı"
+   },
+   "table": [
+    {
+     "form": "I",
+     "be": "am",
+     "example": "I am a teacher."
+    },
+    {
+     "form": "you / we / they",
+     "be": "are",
+     "example": "They are at home."
+    },
+    {
+     "form": "he / she / it",
+     "be": "is",
+     "example": "She is my sister."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I am from Turkey.",
+    "tr": "Ben Türkiye'denim.",
+    "note": "Türkçede \"benim\" demeye gerek yok ama İngilizcede I düşmez."
+   },
+   {
+    "en": "He is a doctor.",
+    "tr": "O bir doktor.",
+    "note": "Meslek söylerken a/an gerekir."
+   },
+   {
+    "en": "We are ready.",
+    "tr": "Hazırız.",
+    "note": "Türkçede özne ekte gizli, İngilizcede yazılır."
+   },
+   {
+    "en": "The bag is heavy.",
+    "tr": "Çanta ağır.",
+    "note": "Tekil isim → is."
+   },
+   {
+    "en": "My parents are teachers.",
+    "tr": "Annemle babam öğretmen.",
+    "note": "Çoğul isim → are."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I from Turkey.",
+    "right": "I am from Turkey.",
+    "why": "Türkçede \"-den\" eki fiil işini görür, İngilizcede be'yi düşüremezsin."
+   },
+   {
+    "wrong": "She are my sister.",
+    "right": "She is my sister.",
+    "why": "she/he/it her zaman is alır."
+   },
+   {
+    "wrong": "He is teacher.",
+    "right": "He is a teacher.",
+    "why": "Tekil meslek adının önüne a/an gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I ___ a student.",
+    "options": [
+     "am",
+     "is",
+     "are",
+     "be"
+    ],
+    "answer": 0,
+    "note": "I ile her zaman am kullanılır."
+   },
+   {
+    "type": "choice",
+    "text": "My brother ___ ten years old.",
+    "options": [
+     "is",
+     "am",
+     "are",
+     "be"
+    ],
+    "answer": 0,
+    "note": "Tekil bir kişi (he) → is."
+   },
+   {
+    "type": "choice",
+    "text": "You ___ very kind.",
+    "options": [
+     "are",
+     "is",
+     "am",
+     "be"
+    ],
+    "answer": 0,
+    "note": "you tekil de olsa are alır."
+   },
+   {
+    "type": "choice",
+    "text": "The books ___ on the table.",
+    "options": [
+     "are",
+     "is",
+     "am",
+     "be"
+    ],
+    "answer": 0,
+    "note": "books çoğul → are."
+   },
+   {
+    "type": "choice",
+    "text": "It ___ cold today.",
+    "options": [
+     "is",
+     "are",
+     "am",
+     "be"
+    ],
+    "answer": 0,
+    "note": "Hava durumunda özne it'tir."
+   },
+   {
+    "type": "gap",
+    "text": "Ayse and I ___ friends.",
+    "options": [
+     "are",
+     "is",
+     "am"
+    ],
+    "answer": 0,
+    "note": "\"X and I\" = we, yani are."
+   }
+  ]
+ },
+ {
+  "id": "a1-02-be-negative-question",
+  "level": "A1",
+  "order": 2,
+  "title": "\"to be\" — olumsuz ve soru",
+  "topic": "Present simple: be (negative, interrogative)",
+  "canDo": "Bir şeyin öyle olmadığını söyleyebilir, basit sorular sorabilirim.",
+  "covers": [
+   "PP.I_am_not",
+   "PP.are_you",
+   "TA.PRESENT.be.NEG",
+   "TA.PRESENT.be.INT.AFF"
+  ],
+  "concept": {
+   "summary": "be cümlesinde olumsuzluk için be'den sonra not eklenir; soru için be öznenin önüne geçer. Ayrı bir yardımcı fiil (do) gerekmez — be zaten kendi işini görür.",
+   "formula": {
+    "left": "Özne + be + not",
+    "right": "Be + özne + ...?"
+   },
+   "table": [
+    {
+     "form": "olumsuz",
+     "be": "I am not / is not / are not",
+     "example": "She is not at home."
+    },
+    {
+     "form": "kısaltma",
+     "be": "isn't / aren't",
+     "example": "They aren't ready."
+    },
+    {
+     "form": "soru",
+     "be": "Am / Is / Are + özne",
+     "example": "Are you a student?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I am not tired.",
+    "tr": "Yorgun değilim.",
+    "note": "I am not'ın kısaltması I'm not'tır; \"amn't\" yoktur."
+   },
+   {
+    "en": "She isn't here.",
+    "tr": "O burada değil.",
+    "note": "is not → isn't."
+   },
+   {
+    "en": "Are you okay?",
+    "tr": "İyi misin?",
+    "note": "Soruda are başa geçer."
+   },
+   {
+    "en": "Is your sister a nurse?",
+    "tr": "Ablan hemşire mi?",
+    "note": "Özne uzun olsa da is en başta kalır."
+   },
+   {
+    "en": "We aren't late.",
+    "tr": "Geç kalmadık.",
+    "note": "are not → aren't."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I not tired.",
+    "right": "I am not tired.",
+    "why": "not tek başına olumsuzluk yapmaz, be ile gelir."
+   },
+   {
+    "wrong": "You are a doctor?",
+    "right": "Are you a doctor?",
+    "why": "Yazıda soru, be'yi başa almakla kurulur; sadece soru işareti yetmez."
+   },
+   {
+    "wrong": "Do you a student?",
+    "right": "Are you a student?",
+    "why": "be cümlesinde do kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "She ___ my teacher. (olumsuz)",
+    "options": [
+     "isn't",
+     "aren't",
+     "not is",
+     "doesn't"
+    ],
+    "answer": 0,
+    "note": "she → is not → isn't."
+   },
+   {
+    "type": "choice",
+    "text": "___ they at school?",
+    "options": [
+     "Are",
+     "Is",
+     "Am",
+     "Do"
+    ],
+    "answer": 0,
+    "note": "they → are, soruda başa geçer."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ hungry.",
+    "options": [
+     "am not",
+     "not am",
+     "isn't",
+     "don't"
+    ],
+    "answer": 0,
+    "note": "I am not; \"amn't\" diye bir biçim yok."
+   },
+   {
+    "type": "choice",
+    "text": "___ this your bag?",
+    "options": [
+     "Is",
+     "Are",
+     "Am",
+     "Does"
+    ],
+    "answer": 0,
+    "note": "this tekil → is."
+   },
+   {
+    "type": "gap",
+    "text": "We ___ from the same city. (olumsuz)",
+    "options": [
+     "aren't",
+     "isn't",
+     "am not"
+    ],
+    "answer": 0,
+    "note": "we → are not → aren't."
+   }
+  ]
+ },
+ {
+  "id": "a1-03-articles",
+  "level": "A1",
+  "order": 3,
+  "title": "a, an ve the",
+  "topic": "Articles: indefinite and definite",
+  "canDo": "Bir şeyden ilk kez söz edebilir, sonra aynı şeye geri dönebilirim.",
+  "covers": [
+   "DT.a.an",
+   "DT.the"
+  ],
+  "concept": {
+   "summary": "Türkçede yok sayılan bir ayrım: dinleyen hangi şeyden söz ettiğini bilmiyorsa a/an, biliyorsa the kullanılır. a ünsüz sesiyle, an ünlü sesiyle başlayan kelimeden önce gelir — yazılışa değil, sese bakılır.",
+   "formula": {
+    "left": "a / an + ilk kez anılan tekil isim",
+    "right": "the + belli olan isim"
+   },
+   "table": [
+    {
+     "form": "a",
+     "be": "ünsüz sesi",
+     "example": "a book, a university"
+    },
+    {
+     "form": "an",
+     "be": "ünlü sesi",
+     "example": "an apple, an hour"
+    },
+    {
+     "form": "the",
+     "be": "belli olan",
+     "example": "the book on the desk"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I have a car. The car is old.",
+    "tr": "Bir arabam var. Araba eski.",
+    "note": "İlk cümlede yeni bilgi (a), ikincisinde artık belli (the)."
+   },
+   {
+    "en": "She is an engineer.",
+    "tr": "O bir mühendis.",
+    "note": "engineer ünlü sesiyle başlıyor → an."
+   },
+   {
+    "en": "Open the door, please.",
+    "tr": "Kapıyı aç lütfen.",
+    "note": "Hangi kapı olduğu ortamdan belli → the."
+   },
+   {
+    "en": "It takes an hour.",
+    "tr": "Bir saat sürüyor.",
+    "note": "hour'un h'si okunmaz, ses ünlüdür → an."
+   },
+   {
+    "en": "He is a university student.",
+    "tr": "O bir üniversite öğrencisi.",
+    "note": "university /juː/ diye başlar, sesi ünsüzdür → a."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I saw an dog.",
+    "right": "I saw a dog.",
+    "why": "dog ünsüz sesiyle başlar."
+   },
+   {
+    "wrong": "She is teacher.",
+    "right": "She is a teacher.",
+    "why": "Tekil sayılabilir isim tanımlıksız kalmaz."
+   },
+   {
+    "wrong": "I go to the school every day.",
+    "right": "I go to school every day.",
+    "why": "Kurum anlamında (ders görmeye) school tanımlıksız kullanılır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "She has ___ umbrella.",
+    "options": [
+     "an",
+     "a",
+     "the",
+     "-"
+    ],
+    "answer": 0,
+    "note": "umbrella ünlü sesiyle başlar."
+   },
+   {
+    "type": "choice",
+    "text": "I bought a shirt. ___ shirt was cheap.",
+    "options": [
+     "The",
+     "A",
+     "An",
+     "-"
+    ],
+    "answer": 0,
+    "note": "İkinci anışta artık belli → the."
+   },
+   {
+    "type": "choice",
+    "text": "He is ___ honest man.",
+    "options": [
+     "an",
+     "a",
+     "the",
+     "-"
+    ],
+    "answer": 0,
+    "note": "honest'ın h'si okunmaz."
+   },
+   {
+    "type": "choice",
+    "text": "Can you close ___ window?",
+    "options": [
+     "the",
+     "a",
+     "an",
+     "-"
+    ],
+    "answer": 0,
+    "note": "Odada hangi pencere olduğu belli."
+   },
+   {
+    "type": "gap",
+    "text": "My father is ___ doctor.",
+    "options": [
+     "a",
+     "an",
+     "the"
+    ],
+    "answer": 0,
+    "note": "doctor ünsüz sesiyle başlar."
+   }
+  ]
+ },
+ {
+  "id": "a1-04-this-that",
+  "level": "A1",
+  "order": 4,
+  "title": "this, that, these, those",
+  "topic": "Demonstratives",
+  "canDo": "Yakındaki ve uzaktaki şeyleri işaret ederek anlatabilirim.",
+  "covers": [
+   "DT.this.that_is"
+  ],
+  "concept": {
+   "summary": "Türkçedeki bu / şu-o ayrımının aynısı: yakın için this, uzak için that. Çoğulda these ve those olur ve fiil de çoğullaşır.",
+   "formula": {
+    "left": "This / That + is",
+    "right": "These / Those + are"
+   },
+   "table": [
+    {
+     "form": "yakın tekil",
+     "be": "this is",
+     "example": "This is my phone."
+    },
+    {
+     "form": "uzak tekil",
+     "be": "that is",
+     "example": "That is your seat."
+    },
+    {
+     "form": "yakın çoğul",
+     "be": "these are",
+     "example": "These are my keys."
+    },
+    {
+     "form": "uzak çoğul",
+     "be": "those are",
+     "example": "Those are their bags."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "This is my brother.",
+    "tr": "Bu benim kardeşim.",
+    "note": "Tanıştırırken this kullanılır."
+   },
+   {
+    "en": "That is a nice hotel.",
+    "tr": "Şu güzel bir otel.",
+    "note": "Uzaktaki bir şeyi gösterirken that."
+   },
+   {
+    "en": "These are your books.",
+    "tr": "Bunlar senin kitapların.",
+    "note": "Çoğulda these + are."
+   },
+   {
+    "en": "Those shoes are expensive.",
+    "tr": "Şu ayakkabılar pahalı.",
+    "note": "those bir ismin önüne de gelebilir."
+   },
+   {
+    "en": "Is this seat free?",
+    "tr": "Bu koltuk boş mu?",
+    "note": "Soruda be başa geçer, this yerinde kalır."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "This are my keys.",
+    "right": "These are my keys.",
+    "why": "Çoğul özne this alamaz."
+   },
+   {
+    "wrong": "That is your shoes.",
+    "right": "Those are your shoes.",
+    "why": "shoes çoğuldur."
+   },
+   {
+    "wrong": "This my brother.",
+    "right": "This is my brother.",
+    "why": "be yine düşmez."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ is my seat.",
+    "options": [
+     "This",
+     "These",
+     "Those",
+     "They"
+    ],
+    "answer": 0,
+    "note": "Tekil ve yakın → This."
+   },
+   {
+    "type": "choice",
+    "text": "___ are my parents.",
+    "options": [
+     "These",
+     "This",
+     "That",
+     "It"
+    ],
+    "answer": 0,
+    "note": "Çoğul → These."
+   },
+   {
+    "type": "choice",
+    "text": "Look at ___ birds in the sky.",
+    "options": [
+     "those",
+     "that",
+     "this",
+     "it"
+    ],
+    "answer": 0,
+    "note": "Uzak ve çoğul → those."
+   },
+   {
+    "type": "choice",
+    "text": "___ this your coat?",
+    "options": [
+     "Is",
+     "Are",
+     "Am",
+     "Do"
+    ],
+    "answer": 0,
+    "note": "this tekil → is."
+   },
+   {
+    "type": "gap",
+    "text": "___ apples are fresh. (yakındaki)",
+    "options": [
+     "These",
+     "This",
+     "Those"
+    ],
+    "answer": 0,
+    "note": "apples çoğul, yakın → These."
+   }
+  ]
+ },
+ {
+  "id": "a1-05-possessive-object-pronouns",
+  "level": "A1",
+  "order": 5,
+  "title": "my, your, his — me, you, him",
+  "topic": "Possessive determiners and object pronouns",
+  "canDo": "Bir şeyin kime ait olduğunu söyleyebilir, kişileri tekrar etmeden anabilirim.",
+  "covers": [
+   "PGEN",
+   "PPO"
+  ],
+  "concept": {
+   "summary": "İki ayrı takım: ismin önüne gelip sahibini gösterenler (my, your, his…) ve fiilden ya da edattan sonra gelip nesne olanlar (me, you, him…). Türkçede ikisi de ek olduğu için karıştırılır.",
+   "formula": {
+    "left": "my / your / his / her / our / their + isim",
+    "right": "fiil + me / you / him / her / us / them"
+   },
+   "table": [
+    {
+     "form": "I",
+     "be": "my — me",
+     "example": "My name is Ali. Call me."
+    },
+    {
+     "form": "he",
+     "be": "his — him",
+     "example": "His car. I know him."
+    },
+    {
+     "form": "she",
+     "be": "her — her",
+     "example": "Her bag. I saw her."
+    },
+    {
+     "form": "they",
+     "be": "their — them",
+     "example": "Their house. Ask them."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "My name is Deniz.",
+    "tr": "Benim adım Deniz.",
+    "note": "İsmin önünde my."
+   },
+   {
+    "en": "Please help me.",
+    "tr": "Lütfen bana yardım et.",
+    "note": "Fiilden sonra me."
+   },
+   {
+    "en": "This is her office.",
+    "tr": "Burası onun ofisi.",
+    "note": "Sahibi kadınsa her."
+   },
+   {
+    "en": "I work with them every day.",
+    "tr": "Her gün onlarla çalışıyorum.",
+    "note": "Edattan sonra nesne biçimi gelir."
+   },
+   {
+    "en": "Our teacher knows us well.",
+    "tr": "Öğretmenimiz bizi iyi tanıyor.",
+    "note": "Aynı cümlede her iki takım da geçiyor."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Give the book to I.",
+    "right": "Give the book to me.",
+    "why": "Edattan sonra nesne biçimi (me) gelir."
+   },
+   {
+    "wrong": "Me name is Ali.",
+    "right": "My name is Ali.",
+    "why": "İsmin önünde sahiplik biçimi kullanılır."
+   },
+   {
+    "wrong": "I saw she yesterday.",
+    "right": "I saw her yesterday.",
+    "why": "Fiilin nesnesi her'dır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "This is ___ house. (biz)",
+    "options": [
+     "our",
+     "us",
+     "we",
+     "ours"
+    ],
+    "answer": 0,
+    "note": "İsmin önünde our."
+   },
+   {
+    "type": "choice",
+    "text": "Can you call ___ tonight? (ben)",
+    "options": [
+     "me",
+     "my",
+     "I",
+     "mine"
+    ],
+    "answer": 0,
+    "note": "Fiilden sonra me."
+   },
+   {
+    "type": "choice",
+    "text": "I like ___ new haircut. (o, kadın)",
+    "options": [
+     "her",
+     "she",
+     "hers",
+     "him"
+    ],
+    "answer": 0,
+    "note": "İsmin önünde her."
+   },
+   {
+    "type": "choice",
+    "text": "We invited ___ to dinner. (onlar)",
+    "options": [
+     "them",
+     "their",
+     "they",
+     "theirs"
+    ],
+    "answer": 0,
+    "note": "Fiilin nesnesi them."
+   },
+   {
+    "type": "gap",
+    "text": "___ brother works with me. (o, erkek)",
+    "options": [
+     "His",
+     "Him",
+     "He"
+    ],
+    "answer": 0,
+    "note": "İsmin önünde his."
+   }
+  ]
+ },
+ {
+  "id": "a1-06-there-is-are",
+  "level": "A1",
+  "order": 6,
+  "title": "there is / there are",
+  "topic": "Existential there + be",
+  "canDo": "Bir yerde ne olduğunu, ne olmadığını anlatabilirim.",
+  "covers": [
+   "EX.there.AFF"
+  ],
+  "concept": {
+   "summary": "Türkçedeki \"var / yok\" burada there is ve there are ile kurulur. Fiil, there'e değil hemen ardından gelen isme uyar: tekilse is, çoğulsa are.",
+   "formula": {
+    "left": "There is + tekil isim",
+    "right": "There are + çoğul isim"
+   },
+   "table": [
+    {
+     "form": "var (tekil)",
+     "be": "there is",
+     "example": "There is a park near here."
+    },
+    {
+     "form": "var (çoğul)",
+     "be": "there are",
+     "example": "There are two rooms."
+    },
+    {
+     "form": "yok",
+     "be": "there isn't / aren't",
+     "example": "There aren't any chairs."
+    },
+    {
+     "form": "soru",
+     "be": "Is / Are there",
+     "example": "Is there a bank here?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "There is a problem.",
+    "tr": "Bir sorun var.",
+    "note": "Tekil isim → is."
+   },
+   {
+    "en": "There are three windows.",
+    "tr": "Üç pencere var.",
+    "note": "Çoğul isim → are."
+   },
+   {
+    "en": "There isn't any milk.",
+    "tr": "Hiç süt yok.",
+    "note": "Sayılamayan isim tekil sayılır."
+   },
+   {
+    "en": "Are there any questions?",
+    "tr": "Soru var mı?",
+    "note": "Soruda are, there'in önüne geçer."
+   },
+   {
+    "en": "There is a lot of traffic today.",
+    "tr": "Bugün çok trafik var.",
+    "note": "traffic sayılamaz, is alır."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "It is a park near here.",
+    "right": "There is a park near here.",
+    "why": "\"Var\" anlamı it ile değil there ile kurulur."
+   },
+   {
+    "wrong": "There is two rooms.",
+    "right": "There are two rooms.",
+    "why": "Fiil, ardındaki çoğul isme uyar."
+   },
+   {
+    "wrong": "Have a bank here?",
+    "right": "Is there a bank here?",
+    "why": "Türkçedeki \"var mı\" have ile çevrilmez."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ a cat under the table.",
+    "options": [
+     "There is",
+     "There are",
+     "It is",
+     "Have"
+    ],
+    "answer": 0,
+    "note": "a cat tekil → There is."
+   },
+   {
+    "type": "choice",
+    "text": "___ many people in the street.",
+    "options": [
+     "There are",
+     "There is",
+     "It is",
+     "Has"
+    ],
+    "answer": 0,
+    "note": "people çoğuldur."
+   },
+   {
+    "type": "choice",
+    "text": "___ there any bread?",
+    "options": [
+     "Is",
+     "Are",
+     "Do",
+     "Has"
+    ],
+    "answer": 0,
+    "note": "bread sayılamaz → tekil."
+   },
+   {
+    "type": "choice",
+    "text": "There ___ any buses after midnight.",
+    "options": [
+     "aren't",
+     "isn't",
+     "don't",
+     "haven't"
+    ],
+    "answer": 0,
+    "note": "buses çoğul → aren't."
+   },
+   {
+    "type": "gap",
+    "text": "___ a good restaurant near the hotel.",
+    "options": [
+     "There is",
+     "There are",
+     "It is"
+    ],
+    "answer": 0,
+    "note": "restaurant tekil."
+   }
+  ]
+ },
+ {
+  "id": "a1-07-some-any-no",
+  "level": "A1",
+  "order": 7,
+  "title": "some, any, no",
+  "topic": "Determiners: some / any / no",
+  "canDo": "Miktarı belli olmayan şeylerden söz edebilirim.",
+  "covers": [
+   "DT.some.any",
+   "DT.no"
+  ],
+  "concept": {
+   "summary": "Sayıyı söylemeden \"biraz, hiç\" demenin yolu. Olumlu cümlede some, olumsuz ve soruda any kullanılır. no ise tek başına olumsuzluk taşır, yanına not almaz.",
+   "formula": {
+    "left": "some (olumlu) / any (olumsuz, soru)",
+    "right": "no + isim = hiç yok"
+   },
+   "table": [
+    {
+     "form": "olumlu",
+     "be": "some",
+     "example": "I have some money."
+    },
+    {
+     "form": "olumsuz",
+     "be": "any",
+     "example": "I don't have any money."
+    },
+    {
+     "form": "soru",
+     "be": "any",
+     "example": "Do you have any money?"
+    },
+    {
+     "form": "no",
+     "be": "not + any yerine",
+     "example": "I have no money."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "There are some eggs in the fridge.",
+    "tr": "Buzdolabında biraz yumurta var.",
+    "note": "Olumlu cümle → some."
+   },
+   {
+    "en": "I don't want any sugar.",
+    "tr": "Hiç şeker istemiyorum.",
+    "note": "Olumsuz cümle → any."
+   },
+   {
+    "en": "Do you have any brothers?",
+    "tr": "Hiç erkek kardeşin var mı?",
+    "note": "Soruda any."
+   },
+   {
+    "en": "There is no time.",
+    "tr": "Hiç zaman yok.",
+    "note": "no zaten olumsuz, isn't gerekmez."
+   },
+   {
+    "en": "Would you like some tea?",
+    "tr": "Çay ister misin?",
+    "note": "İkramda soru olmasına rağmen some kullanılır."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I don't have no money.",
+    "right": "I don't have any money.",
+    "why": "Bir cümlede iki olumsuzluk olmaz."
+   },
+   {
+    "wrong": "I have any questions.",
+    "right": "I have some questions.",
+    "why": "Olumlu cümlede any kullanılmaz."
+   },
+   {
+    "wrong": "There isn't no bread.",
+    "right": "There is no bread.",
+    "why": "no tek başına yeter."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "We need ___ help.",
+    "options": [
+     "some",
+     "any",
+     "no any",
+     "a"
+    ],
+    "answer": 0,
+    "note": "Olumlu cümle → some."
+   },
+   {
+    "type": "choice",
+    "text": "She doesn't have ___ friends here.",
+    "options": [
+     "any",
+     "some",
+     "no",
+     "a"
+    ],
+    "answer": 0,
+    "note": "Olumsuz cümle → any."
+   },
+   {
+    "type": "choice",
+    "text": "Is there ___ water in the bottle?",
+    "options": [
+     "any",
+     "some",
+     "a",
+     "no any"
+    ],
+    "answer": 0,
+    "note": "Soruda any."
+   },
+   {
+    "type": "choice",
+    "text": "There are ___ buses on Sunday.",
+    "options": [
+     "no",
+     "any",
+     "not",
+     "some not"
+    ],
+    "answer": 0,
+    "note": "no tek başına olumsuzluk taşır."
+   },
+   {
+    "type": "gap",
+    "text": "Would you like ___ coffee?",
+    "options": [
+     "some",
+     "any",
+     "no"
+    ],
+    "answer": 0,
+    "note": "İkram sorusunda some kalır."
+   }
+  ]
+ },
+ {
+  "id": "a1-08-present-simple-affirmative",
+  "level": "A1",
+  "order": 8,
+  "title": "Geniş zaman — olumlu",
+  "topic": "Present simple (affirmative), SVO order",
+  "canDo": "Her gün yaptığım işleri ve genel doğruları anlatabilirim.",
+  "covers": [
+   "TA.PRESENT.do.AFF",
+   "TA.PRESENT.does.AFF",
+   "VP.SVO.AFF"
+  ],
+  "concept": {
+   "summary": "Alışkanlıklar ve değişmeyen gerçekler için kullanılır. Fiil yalın hâlde kalır; yalnız he/she/it öznesinde sonuna -s eklenir. Cümle sırası değişmez: özne, fiil, nesne.",
+   "formula": {
+    "left": "Özne + fiil",
+    "right": "he / she / it + fiil-s"
+   },
+   "table": [
+    {
+     "form": "I / you / we / they",
+     "be": "work",
+     "example": "They work at a bank."
+    },
+    {
+     "form": "he / she / it",
+     "be": "works",
+     "example": "She works at a bank."
+    },
+    {
+     "form": "-o, -ch, -sh, -ss",
+     "be": "+es",
+     "example": "He goes / watches / finishes."
+    },
+    {
+     "form": "ünsüz + y",
+     "be": "y → ies",
+     "example": "study → he studies"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I drink tea every morning.",
+    "tr": "Her sabah çay içerim.",
+    "note": "Alışkanlık."
+   },
+   {
+    "en": "She lives in Ankara.",
+    "tr": "Ankara'da yaşıyor.",
+    "note": "she → lives."
+   },
+   {
+    "en": "Water boils at 100 degrees.",
+    "tr": "Su 100 derecede kaynar.",
+    "note": "Değişmeyen gerçek."
+   },
+   {
+    "en": "My father watches the news at eight.",
+    "tr": "Babam haberleri sekizde izler.",
+    "note": "watch → watches."
+   },
+   {
+    "en": "They study English on Mondays.",
+    "tr": "Pazartesileri İngilizce çalışırlar.",
+    "note": "they → -s yok."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "She work at a bank.",
+    "right": "She works at a bank.",
+    "why": "he/she/it öznesinde -s zorunludur."
+   },
+   {
+    "wrong": "He studys hard.",
+    "right": "He studies hard.",
+    "why": "Ünsüzden sonra gelen y, ies olur."
+   },
+   {
+    "wrong": "Every day I to school go.",
+    "right": "Every day I go to school.",
+    "why": "İngilizcede fiil nesneden önce gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "My sister ___ in a hospital.",
+    "options": [
+     "works",
+     "work",
+     "working",
+     "is work"
+    ],
+    "answer": 0,
+    "note": "she → works."
+   },
+   {
+    "type": "choice",
+    "text": "We ___ dinner at seven.",
+    "options": [
+     "have",
+     "has",
+     "haves",
+     "having"
+    ],
+    "answer": 0,
+    "note": "we → yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ to the gym twice a week.",
+    "options": [
+     "goes",
+     "go",
+     "gos",
+     "going"
+    ],
+    "answer": 0,
+    "note": "go → goes."
+   },
+   {
+    "type": "choice",
+    "text": "The shop ___ at nine every day.",
+    "options": [
+     "opens",
+     "open",
+     "opening",
+     "is open"
+    ],
+    "answer": 0,
+    "note": "shop = it → opens."
+   },
+   {
+    "type": "gap",
+    "text": "She ___ French and Arabic.",
+    "options": [
+     "speaks",
+     "speak",
+     "speaking"
+    ],
+    "answer": 0,
+    "note": "she → speaks."
+   }
+  ]
+ },
+ {
+  "id": "a1-09-present-simple-negative-question",
+  "level": "A1",
+  "order": 9,
+  "title": "Geniş zaman — olumsuz ve soru",
+  "topic": "Present simple: do / does",
+  "canDo": "Yapmadığım şeyleri söyleyebilir, başkasının alışkanlığını sorabilirim.",
+  "covers": [
+   "TA.PRESENT.do.NEG",
+   "TA.PRESENT.do.INT.AFF",
+   "VP.SVO.INT.AFF"
+  ],
+  "concept": {
+   "summary": "be dışındaki fiillerde olumsuzluk ve soru için yardımcı fiil do gerekir. Yardımcı fiil -s'i üstlenir: does gelince asıl fiil yalın hâle döner.",
+   "formula": {
+    "left": "Özne + don't / doesn't + fiil",
+    "right": "Do / Does + özne + fiil?"
+   },
+   "table": [
+    {
+     "form": "I / you / we / they",
+     "be": "don't — Do …?",
+     "example": "They don't smoke. Do they smoke?"
+    },
+    {
+     "form": "he / she / it",
+     "be": "doesn't — Does …?",
+     "example": "He doesn't smoke. Does he smoke?"
+    },
+    {
+     "form": "dikkat",
+     "be": "does + yalın fiil",
+     "example": "Does she work? (works değil)"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I don't eat meat.",
+    "tr": "Et yemem.",
+    "note": "I → don't."
+   },
+   {
+    "en": "He doesn't like coffee.",
+    "tr": "Kahveyi sevmez.",
+    "note": "-s doesn't'a geçti, like yalın kaldı."
+   },
+   {
+    "en": "Do you speak English?",
+    "tr": "İngilizce konuşuyor musun?",
+    "note": "Soruda do başa gelir."
+   },
+   {
+    "en": "Does your brother live here?",
+    "tr": "Kardeşin burada mı yaşıyor?",
+    "note": "brother = he → Does."
+   },
+   {
+    "en": "We don't work on Sundays.",
+    "tr": "Pazarları çalışmayız.",
+    "note": "we → don't."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "He doesn't likes coffee.",
+    "right": "He doesn't like coffee.",
+    "why": "-s zaten doesn't'ın içinde; fiile ikinci kez eklenmez."
+   },
+   {
+    "wrong": "You speak English?",
+    "right": "Do you speak English?",
+    "why": "Soru, do ile kurulur."
+   },
+   {
+    "wrong": "I not eat meat.",
+    "right": "I don't eat meat.",
+    "why": "Asıl fiili not tek başına olumsuzlaştıramaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "She ___ watch television.",
+    "options": [
+     "doesn't",
+     "don't",
+     "isn't",
+     "not"
+    ],
+    "answer": 0,
+    "note": "she → doesn't."
+   },
+   {
+    "type": "choice",
+    "text": "___ they live in Izmir?",
+    "options": [
+     "Do",
+     "Does",
+     "Are",
+     "Is"
+    ],
+    "answer": 0,
+    "note": "they → Do."
+   },
+   {
+    "type": "choice",
+    "text": "My phone ___ work.",
+    "options": [
+     "doesn't",
+     "don't",
+     "isn't",
+     "aren't"
+    ],
+    "answer": 0,
+    "note": "phone = it → doesn't."
+   },
+   {
+    "type": "choice",
+    "text": "Does he ___ early?",
+    "options": [
+     "get up",
+     "gets up",
+     "got up",
+     "getting up"
+    ],
+    "answer": 0,
+    "note": "does'tan sonra fiil yalın."
+   },
+   {
+    "type": "gap",
+    "text": "We ___ have a car.",
+    "options": [
+     "don't",
+     "doesn't",
+     "aren't"
+    ],
+    "answer": 0,
+    "note": "we → don't."
+   }
+  ]
+ },
+ {
+  "id": "a1-10-adverbs-of-frequency",
+  "level": "A1",
+  "order": 10,
+  "title": "always, usually, never",
+  "topic": "Adverbs of frequency and intensifiers",
+  "canDo": "Bir şeyi ne sıklıkta yaptığımı söyleyebilirim.",
+  "covers": [
+   "RB.FRQ",
+   "RB.NEG",
+   "RB.INT"
+  ],
+  "concept": {
+   "summary": "Sıklık zarfları cümlede belli bir yere oturur: asıl fiilden önce, ama be fiilinden sonra. never zaten olumsuzdur, yanına don't almaz. very ve really gibi zarflar ise sıfatı güçlendirir.",
+   "formula": {
+    "left": "özne + zarf + fiil",
+    "right": "özne + be + zarf"
+   },
+   "table": [
+    {
+     "form": "always",
+     "be": "%100",
+     "example": "I always walk to work."
+    },
+    {
+     "form": "usually / often",
+     "be": "sık",
+     "example": "She usually arrives late."
+    },
+    {
+     "form": "sometimes",
+     "be": "bazen",
+     "example": "We sometimes eat out."
+    },
+    {
+     "form": "never",
+     "be": "%0",
+     "example": "He never drinks coffee."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I always take the bus.",
+    "tr": "Her zaman otobüse binerim.",
+    "note": "Zarf fiilden önce."
+   },
+   {
+    "en": "She is never late.",
+    "tr": "Asla geç kalmaz.",
+    "note": "be fiilinden sonra."
+   },
+   {
+    "en": "They sometimes work at home.",
+    "tr": "Bazen evden çalışırlar.",
+    "note": "sometimes cümle başına da gelebilir."
+   },
+   {
+    "en": "This film is really good.",
+    "tr": "Bu film gerçekten iyi.",
+    "note": "really sıfatı güçlendirir."
+   },
+   {
+    "en": "He doesn't usually answer.",
+    "tr": "Genelde cevap vermez.",
+    "note": "Olumsuzda zarf don't ile fiil arasına girer."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I don't never drink tea.",
+    "right": "I never drink tea.",
+    "why": "never tek başına olumsuzluk taşır."
+   },
+   {
+    "wrong": "She always is happy.",
+    "right": "She is always happy.",
+    "why": "be fiilinden sonra gelir."
+   },
+   {
+    "wrong": "I take always the bus.",
+    "right": "I always take the bus.",
+    "why": "Zarf fiilden sonra değil, önce gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "He ___ goes to bed before midnight.",
+    "options": [
+     "usually",
+     "is usually",
+     "usually is",
+     "does usually"
+    ],
+    "answer": 0,
+    "note": "Asıl fiilden önce."
+   },
+   {
+    "type": "choice",
+    "text": "My sister is ___ tired after work.",
+    "options": [
+     "always",
+     "always is",
+     "does always",
+     "never not"
+    ],
+    "answer": 0,
+    "note": "be'den sonra."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ eat fast food.",
+    "options": [
+     "never",
+     "don't never",
+     "not never",
+     "never don't"
+    ],
+    "answer": 0,
+    "note": "never olumsuzluğu kendi taşır."
+   },
+   {
+    "type": "choice",
+    "text": "The exam was ___ difficult.",
+    "options": [
+     "really",
+     "real",
+     "reallly",
+     "very much"
+    ],
+    "answer": 0,
+    "note": "Sıfatı güçlendiren zarf really."
+   },
+   {
+    "type": "gap",
+    "text": "They ___ visit us on Sundays.",
+    "options": [
+     "often",
+     "is often",
+     "do often be"
+    ],
+    "answer": 0,
+    "note": "Asıl fiilden önce."
+   }
+  ]
+ },
+ {
+  "id": "a1-11-present-progressive",
+  "level": "A1",
+  "order": 11,
+  "title": "Şimdiki zaman — şu anda",
+  "topic": "Present progressive",
+  "canDo": "Şu anda olup biteni anlatabilirim.",
+  "covers": [
+   "TA.PRPRG.AFF"
+  ],
+  "concept": {
+   "summary": "Tam şu anda süren iş için kullanılır. İki parçalıdır: be fiili özneye göre çekilir, asıl fiile -ing eklenir. be düşerse cümle bozulur.",
+   "formula": {
+    "left": "am / is / are",
+    "right": "+ fiil-ing"
+   },
+   "table": [
+    {
+     "form": "I",
+     "be": "am + -ing",
+     "example": "I am reading."
+    },
+    {
+     "form": "he / she / it",
+     "be": "is + -ing",
+     "example": "She is cooking."
+    },
+    {
+     "form": "you / we / they",
+     "be": "are + -ing",
+     "example": "They are waiting."
+    },
+    {
+     "form": "sessiz e",
+     "be": "e düşer",
+     "example": "write → writing"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I am working right now.",
+    "tr": "Şu anda çalışıyorum.",
+    "note": "right now bu zamanın tipik imzası."
+   },
+   {
+    "en": "She is talking on the phone.",
+    "tr": "Telefonda konuşuyor.",
+    "note": "she → is."
+   },
+   {
+    "en": "The children are playing outside.",
+    "tr": "Çocuklar dışarıda oynuyor.",
+    "note": "Çoğul özne → are."
+   },
+   {
+    "en": "It is raining.",
+    "tr": "Yağmur yağıyor.",
+    "note": "Hava olayında özne it."
+   },
+   {
+    "en": "We are having dinner.",
+    "tr": "Akşam yemeği yiyoruz.",
+    "note": "have burada \"yemek yemek\" demek, -ing alabilir."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I working now.",
+    "right": "I am working now.",
+    "why": "be parçası düşmez."
+   },
+   {
+    "wrong": "She is cook.",
+    "right": "She is cooking.",
+    "why": "-ing eki şart."
+   },
+   {
+    "wrong": "They are wait.",
+    "right": "They are waiting.",
+    "why": "be + fiil-ing birlikte çalışır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "Look! The bus ___ .",
+    "options": [
+     "is coming",
+     "comes",
+     "come",
+     "is come"
+    ],
+    "answer": 0,
+    "note": "Şu an olan iş → is + -ing."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ for my friend.",
+    "options": [
+     "am waiting",
+     "waiting",
+     "wait am",
+     "is waiting"
+    ],
+    "answer": 0,
+    "note": "I → am."
+   },
+   {
+    "type": "choice",
+    "text": "They ___ football in the garden.",
+    "options": [
+     "are playing",
+     "is playing",
+     "play are",
+     "playing"
+    ],
+    "answer": 0,
+    "note": "Çoğul → are."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ a letter at the moment.",
+    "options": [
+     "is writing",
+     "is writeing",
+     "writes",
+     "write"
+    ],
+    "answer": 0,
+    "note": "write'ın sessiz e'si düşer."
+   },
+   {
+    "type": "gap",
+    "text": "We ___ television now.",
+    "options": [
+     "are watching",
+     "watch",
+     "is watching"
+    ],
+    "answer": 0,
+    "note": "we → are + -ing."
+   }
+  ]
+ },
+ {
+  "id": "a1-12-can",
+  "level": "A1",
+  "order": 12,
+  "title": "can — yapabilmek",
+  "topic": "Modal verb: can",
+  "canDo": "Neyi yapabildiğimi söyleyebilir, izin ve ricada bulunabilirim.",
+  "covers": [
+   "MD.can.AFF",
+   "MD.can.INT.AFF"
+  ],
+  "concept": {
+   "summary": "can yetenek, izin ve rica bildirir. Kipler özneye göre değişmez: he can olur, \"he cans\" olmaz. Ardından her zaman yalın fiil gelir, to almaz.",
+   "formula": {
+    "left": "Özne + can",
+    "right": "+ yalın fiil"
+   },
+   "table": [
+    {
+     "form": "olumlu",
+     "be": "can",
+     "example": "I can swim."
+    },
+    {
+     "form": "olumsuz",
+     "be": "can't / cannot",
+     "example": "He can't drive."
+    },
+    {
+     "form": "soru",
+     "be": "Can + özne",
+     "example": "Can you help me?"
+    },
+    {
+     "form": "değişmez",
+     "be": "her öznede aynı",
+     "example": "She can cook."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I can speak three languages.",
+    "tr": "Üç dil konuşabiliyorum.",
+    "note": "Yetenek."
+   },
+   {
+    "en": "She can't come tonight.",
+    "tr": "Bu akşam gelemez.",
+    "note": "cannot'ın kısaltması can't."
+   },
+   {
+    "en": "Can I sit here?",
+    "tr": "Buraya oturabilir miyim?",
+    "note": "İzin isteme."
+   },
+   {
+    "en": "Can you open the window, please?",
+    "tr": "Pencereyi açabilir misin lütfen?",
+    "note": "Rica."
+   },
+   {
+    "en": "He can play the guitar well.",
+    "tr": "Gitarı iyi çalabiliyor.",
+    "note": "he olsa bile can değişmez."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "She cans drive.",
+    "right": "She can drive.",
+    "why": "Kip fiiller -s almaz."
+   },
+   {
+    "wrong": "I can to swim.",
+    "right": "I can swim.",
+    "why": "can'dan sonra to gelmez."
+   },
+   {
+    "wrong": "Do you can help me?",
+    "right": "Can you help me?",
+    "why": "Kip fiilin sorusunda do kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ you speak Spanish?",
+    "options": [
+     "Can",
+     "Do can",
+     "Are",
+     "Does"
+    ],
+    "answer": 0,
+    "note": "Kip fiil soruda başa geçer."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ come to the party.",
+    "options": [
+     "can't",
+     "doesn't can",
+     "can not to",
+     "isn't can"
+    ],
+    "answer": 0,
+    "note": "Olumsuzu can't."
+   },
+   {
+    "type": "choice",
+    "text": "I can ___ very fast.",
+    "options": [
+     "run",
+     "to run",
+     "running",
+     "runs"
+    ],
+    "answer": 0,
+    "note": "can'dan sonra yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "My little brother ___ read yet.",
+    "options": [
+     "can't",
+     "cans not",
+     "don't can",
+     "not can"
+    ],
+    "answer": 0,
+    "note": "Tek olumsuzluk, can't."
+   },
+   {
+    "type": "gap",
+    "text": "___ I use your phone?",
+    "options": [
+     "Can",
+     "Do",
+     "Am"
+    ],
+    "answer": 0,
+    "note": "İzin isterken Can."
+   }
+  ]
+ },
+ {
+  "id": "a1-13-imperative",
+  "level": "A1",
+  "order": 13,
+  "title": "Emir kipi ve let's",
+  "topic": "Imperative and let's",
+  "canDo": "Yol tarif edebilir, birine ne yapacağını söyleyebilir, birlikte bir şey önerebilirim.",
+  "covers": [
+   "IMP.V.AFF",
+   "IMP.let's_V.AFF"
+  ],
+  "concept": {
+   "summary": "Emir kipi İngilizcenin en kısa cümlesidir: özne yazılmaz, fiil yalın hâlde başa gelir. Olumsuzu don't ile, \"hadi\" anlamındaki ortak öneri let's ile kurulur.",
+   "formula": {
+    "left": "Yalın fiil + ...",
+    "right": "Don't / Let's + yalın fiil"
+   },
+   "table": [
+    {
+     "form": "olumlu",
+     "be": "fiil",
+     "example": "Open the door."
+    },
+    {
+     "form": "olumsuz",
+     "be": "don't + fiil",
+     "example": "Don't touch that."
+    },
+    {
+     "form": "öneri",
+     "be": "let's + fiil",
+     "example": "Let's go home."
+    },
+    {
+     "form": "nazik",
+     "be": "please",
+     "example": "Please sit down."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Turn left at the corner.",
+    "tr": "Köşeden sola dön.",
+    "note": "Yol tarifi emir kipiyle verilir."
+   },
+   {
+    "en": "Don't worry.",
+    "tr": "Merak etme.",
+    "note": "Olumsuzda don't."
+   },
+   {
+    "en": "Let's take a taxi.",
+    "tr": "Hadi taksiye binelim.",
+    "note": "Konuşan da işin içinde."
+   },
+   {
+    "en": "Please close the window.",
+    "tr": "Lütfen pencereyi kapat.",
+    "note": "please cümlenin başına da sonuna da gelebilir."
+   },
+   {
+    "en": "Call me tomorrow.",
+    "tr": "Yarın beni ara.",
+    "note": "Özne (you) söylenmez."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "You open the door.",
+    "right": "Open the door.",
+    "why": "Emir kipinde özne yazılmaz."
+   },
+   {
+    "wrong": "Not touch that.",
+    "right": "Don't touch that.",
+    "why": "Olumsuz emir don't ile kurulur."
+   },
+   {
+    "wrong": "Let's to go home.",
+    "right": "Let's go home.",
+    "why": "let's'ten sonra yalın fiil gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ the salt, please.",
+    "options": [
+     "Pass",
+     "You pass",
+     "To pass",
+     "Passing"
+    ],
+    "answer": 0,
+    "note": "Emir kipi yalın fiille başlar."
+   },
+   {
+    "type": "choice",
+    "text": "___ be late again.",
+    "options": [
+     "Don't",
+     "Not",
+     "No",
+     "Doesn't"
+    ],
+    "answer": 0,
+    "note": "Olumsuz emir → Don't."
+   },
+   {
+    "type": "choice",
+    "text": "___ meet at seven.",
+    "options": [
+     "Let's",
+     "Let us to",
+     "Lets to",
+     "Let"
+    ],
+    "answer": 0,
+    "note": "Ortak öneri → Let's + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "___ your seatbelt.",
+    "options": [
+     "Fasten",
+     "Fastens",
+     "To fasten",
+     "Fastening"
+    ],
+    "answer": 0,
+    "note": "Yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "___ forget your keys.",
+    "options": [
+     "Don't",
+     "Not",
+     "No"
+    ],
+    "answer": 0,
+    "note": "Olumsuz emir."
+   }
+  ]
+ },
+ {
+  "id": "a1-14-wh-questions",
+  "level": "A1",
+  "order": 14,
+  "title": "What, Where, Why, How",
+  "topic": "Wh- questions",
+  "canDo": "Bilgi sorabilir, bir şeyin nerede, ne zaman ve neden olduğunu öğrenebilirim.",
+  "covers": [
+   "INT.what",
+   "INT.where",
+   "INT.why",
+   "INT.how",
+   "INT.how_JJ.RB"
+  ],
+  "concept": {
+   "summary": "Soru kelimesi en başa gelir, arkasından normal soru düzeni gelir: yardımcı fiil, sonra özne. Yani wh- kelimesi eklenince soru yapısı bozulmaz, sadece başına bir kelime alır.",
+   "formula": {
+    "left": "Wh- + do/does/be",
+    "right": "+ özne + fiil?"
+   },
+   "table": [
+    {
+     "form": "What",
+     "be": "ne",
+     "example": "What do you want?"
+    },
+    {
+     "form": "Where",
+     "be": "nerede",
+     "example": "Where does she live?"
+    },
+    {
+     "form": "Why",
+     "be": "neden",
+     "example": "Why are you late?"
+    },
+    {
+     "form": "How",
+     "be": "nasıl",
+     "example": "How do you go to work?"
+    },
+    {
+     "form": "How + sıfat",
+     "be": "ne kadar",
+     "example": "How old are you?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "What is your name?",
+    "tr": "Adın ne?",
+    "note": "be cümlesinde be özneden önce."
+   },
+   {
+    "en": "Where do you live?",
+    "tr": "Nerede yaşıyorsun?",
+    "note": "Asıl fiilde do gerekir."
+   },
+   {
+    "en": "Why is the shop closed?",
+    "tr": "Dükkân neden kapalı?",
+    "note": "be soruya taşınır."
+   },
+   {
+    "en": "How much is this?",
+    "tr": "Bu ne kadar?",
+    "note": "How much fiyat sorar."
+   },
+   {
+    "en": "How far is the station?",
+    "tr": "İstasyon ne kadar uzakta?",
+    "note": "How + sıfat kalıbı."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Where you live?",
+    "right": "Where do you live?",
+    "why": "Soru kelimesi yardımcı fiili ortadan kaldırmaz."
+   },
+   {
+    "wrong": "What means this word?",
+    "right": "What does this word mean?",
+    "why": "Özne ile fiilin yeri değişmez, do eklenir."
+   },
+   {
+    "wrong": "How old you are?",
+    "right": "How old are you?",
+    "why": "be öznenin önüne geçer."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ do you work?",
+    "options": [
+     "Where",
+     "What",
+     "Who",
+     "How much"
+    ],
+    "answer": 0,
+    "note": "Yer soruluyor → Where."
+   },
+   {
+    "type": "choice",
+    "text": "Why ___ you angry?",
+    "options": [
+     "are",
+     "do",
+     "does",
+     "is"
+    ],
+    "answer": 0,
+    "note": "you → are."
+   },
+   {
+    "type": "choice",
+    "text": "___ does this bag cost?",
+    "options": [
+     "How much",
+     "How many",
+     "What many",
+     "How old"
+    ],
+    "answer": 0,
+    "note": "Fiyat → How much."
+   },
+   {
+    "type": "choice",
+    "text": "What ___ she do at weekends?",
+    "options": [
+     "does",
+     "do",
+     "is",
+     "are"
+    ],
+    "answer": 0,
+    "note": "she → does."
+   },
+   {
+    "type": "gap",
+    "text": "___ old is your brother?",
+    "options": [
+     "How",
+     "What",
+     "Why"
+    ],
+    "answer": 0,
+    "note": "Yaş → How old."
+   }
+  ]
+ },
+ {
+  "id": "a1-15-past-simple",
+  "level": "A1",
+  "order": 15,
+  "title": "Geçmiş zaman — was, were, -ed",
+  "topic": "Past simple: be and lexical verbs",
+  "canDo": "Dün ne yaptığımı ve nerede olduğumu anlatabilirim.",
+  "covers": [
+   "TA.PAST.be.AFF",
+   "TA.PAST.do.AFF"
+  ],
+  "concept": {
+   "summary": "Bitmiş bir iş için kullanılır. be fiilinin geçmişi was ve were'dür. Diğer fiillerde sona -ed eklenir, ama sık kullanılan fiillerin çoğu düzensizdir ve ezberlenir.",
+   "formula": {
+    "left": "was / were",
+    "right": "fiil + -ed (ya da düzensiz biçim)"
+   },
+   "table": [
+    {
+     "form": "I / he / she / it",
+     "be": "was",
+     "example": "I was at home."
+    },
+    {
+     "form": "you / we / they",
+     "be": "were",
+     "example": "They were happy."
+    },
+    {
+     "form": "düzenli",
+     "be": "+ed",
+     "example": "work → worked"
+    },
+    {
+     "form": "düzensiz",
+     "be": "biçim değişir",
+     "example": "go → went, see → saw"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I was at work yesterday.",
+    "tr": "Dün işteydim.",
+    "note": "I → was."
+   },
+   {
+    "en": "They were very tired.",
+    "tr": "Çok yorgunlardı.",
+    "note": "they → were."
+   },
+   {
+    "en": "We watched a film last night.",
+    "tr": "Dün gece bir film izledik.",
+    "note": "Düzenli fiil → -ed."
+   },
+   {
+    "en": "She went to Ankara on Monday.",
+    "tr": "Pazartesi Ankara'ya gitti.",
+    "note": "go'nun geçmişi went."
+   },
+   {
+    "en": "He bought a new phone.",
+    "tr": "Yeni bir telefon aldı.",
+    "note": "buy → bought."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "They was late.",
+    "right": "They were late.",
+    "why": "Çoğul özne were alır."
+   },
+   {
+    "wrong": "She goed home.",
+    "right": "She went home.",
+    "why": "go düzensizdir, -ed almaz."
+   },
+   {
+    "wrong": "I was went there.",
+    "right": "I went there.",
+    "why": "İki geçmiş zaman üst üste gelmez."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "We ___ at the cinema last night.",
+    "options": [
+     "were",
+     "was",
+     "are",
+     "did"
+    ],
+    "answer": 0,
+    "note": "we → were."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ his homework yesterday.",
+    "options": [
+     "finished",
+     "finish",
+     "finishes",
+     "was finish"
+    ],
+    "answer": 0,
+    "note": "Düzenli fiil → -ed."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ my keys this morning.",
+    "options": [
+     "lost",
+     "losed",
+     "lose",
+     "was lose"
+    ],
+    "answer": 0,
+    "note": "lose → lost."
+   },
+   {
+    "type": "choice",
+    "text": "The weather ___ terrible on Sunday.",
+    "options": [
+     "was",
+     "were",
+     "is",
+     "did"
+    ],
+    "answer": 0,
+    "note": "weather = it → was."
+   },
+   {
+    "type": "gap",
+    "text": "They ___ to Antalya last summer.",
+    "options": [
+     "went",
+     "goed",
+     "go"
+    ],
+    "answer": 0,
+    "note": "go → went."
+   }
+  ]
+ },
+ {
+  "id": "a1-16-comparatives",
+  "level": "A1",
+  "order": 16,
+  "title": "Karşılaştırma: -er ve -est",
+  "topic": "Comparative and superlative: -er / -est",
+  "canDo": "İki şeyi karşılaştırabilir, bir grubun en iyisini söyleyebilirim.",
+  "covers": [
+   "COMP.JJR.RBR.er",
+   "COMP.JJS.RBS.est"
+  ],
+  "concept": {
+   "summary": "Kısa sıfatlarda karşılaştırma ek ile yapılır: -er daha, -est en demektir. -er'den sonra than, -est'ten önce the gelir.",
+   "formula": {
+    "left": "sıfat-er + than",
+    "right": "the + sıfat-est"
+   },
+   "table": [
+    {
+     "form": "tek heceli",
+     "be": "+er / +est",
+     "example": "old → older → the oldest"
+    },
+    {
+     "form": "sessiz e",
+     "be": "+r / +st",
+     "example": "large → larger → the largest"
+    },
+    {
+     "form": "ünsüz + y",
+     "be": "y → ier / iest",
+     "example": "easy → easier → the easiest"
+    },
+    {
+     "form": "düzensiz",
+     "be": "biçim değişir",
+     "example": "good → better → the best"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "My brother is taller than me.",
+    "tr": "Kardeşim benden uzun.",
+    "note": "-er'den sonra than."
+   },
+   {
+    "en": "This is the cheapest hotel in town.",
+    "tr": "Bu, şehirdeki en ucuz otel.",
+    "note": "-est'ten önce the."
+   },
+   {
+    "en": "Today is hotter than yesterday.",
+    "tr": "Bugün dünden sıcak.",
+    "note": "Tek heceli sıfatta son ünsüz ikizleşir."
+   },
+   {
+    "en": "She is the best student in the class.",
+    "tr": "Sınıftaki en iyi öğrenci o.",
+    "note": "good → the best."
+   },
+   {
+    "en": "The second book was easier.",
+    "tr": "İkinci kitap daha kolaydı.",
+    "note": "easy → easier."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "He is more tall than me.",
+    "right": "He is taller than me.",
+    "why": "Kısa sıfatta more değil -er kullanılır."
+   },
+   {
+    "wrong": "This is cheapest hotel.",
+    "right": "This is the cheapest hotel.",
+    "why": "En üstünlük derecesi the ister."
+   },
+   {
+    "wrong": "She is taller from me.",
+    "right": "She is taller than me.",
+    "why": "Karşılaştırma than ile kurulur."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "Winter is ___ than autumn.",
+    "options": [
+     "colder",
+     "more cold",
+     "coldest",
+     "the colder"
+    ],
+    "answer": 0,
+    "note": "Tek heceli sıfat → -er."
+   },
+   {
+    "type": "choice",
+    "text": "This is ___ day of the year.",
+    "options": [
+     "the longest",
+     "longest",
+     "longer",
+     "more long"
+    ],
+    "answer": 0,
+    "note": "En üstünlük → the + -est."
+   },
+   {
+    "type": "choice",
+    "text": "My new phone is ___ than the old one.",
+    "options": [
+     "faster",
+     "more fast",
+     "fastest",
+     "fast"
+    ],
+    "answer": 0,
+    "note": "Karşılaştırma → -er + than."
+   },
+   {
+    "type": "choice",
+    "text": "That was ___ film of the year.",
+    "options": [
+     "the worst",
+     "the baddest",
+     "worse",
+     "the worse"
+    ],
+    "answer": 0,
+    "note": "bad → the worst; A1'de henüz görülmemiş bir zaman kullanmamak için cümle yalın tutuldu."
+   },
+   {
+    "type": "gap",
+    "text": "This exercise is ___ than the first one.",
+    "options": [
+     "easier",
+     "easyer",
+     "more easy"
+    ],
+    "answer": 0,
+    "note": "y → ier."
+   }
+  ]
+ },
+ {
+  "id": "a1-17-prepositions",
+  "level": "A1",
+  "order": 17,
+  "title": "in, on, at — yer ve zaman",
+  "topic": "Basic prepositions of place and time",
+  "canDo": "Bir şeyin nerede ve ne zaman olduğunu söyleyebilirim.",
+  "covers": [
+   "IN.PREP.GENERAL"
+  ],
+  "concept": {
+   "summary": "Türkçede tek bir -de eki bu üç edatın işini görür, o yüzden ayrımı ezberlemek gerekir. Genel kural: alan için in, yüzey için on, nokta için at.",
+   "formula": {
+    "left": "yer: in > on > at",
+    "right": "zaman: in > on > at"
+   },
+   "table": [
+    {
+     "form": "in",
+     "be": "geniş alan / uzun süre",
+     "example": "in Turkey, in May, in the morning"
+    },
+    {
+     "form": "on",
+     "be": "yüzey / gün",
+     "example": "on the table, on Monday"
+    },
+    {
+     "form": "at",
+     "be": "nokta / saat",
+     "example": "at the door, at seven o'clock"
+    },
+    {
+     "form": "istisna",
+     "be": "at night",
+     "example": "I work at night."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "The keys are on the table.",
+    "tr": "Anahtarlar masanın üstünde.",
+    "note": "Yüzey → on."
+   },
+   {
+    "en": "She lives in Istanbul.",
+    "tr": "İstanbul'da yaşıyor.",
+    "note": "Şehir → in."
+   },
+   {
+    "en": "We meet at the bus stop.",
+    "tr": "Otobüs durağında buluşuyoruz.",
+    "note": "Belirli nokta → at."
+   },
+   {
+    "en": "My birthday is in July.",
+    "tr": "Doğum günüm temmuzda.",
+    "note": "Ay → in."
+   },
+   {
+    "en": "The class starts at nine.",
+    "tr": "Ders dokuzda başlıyor.",
+    "note": "Saat → at."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I live at Istanbul.",
+    "right": "I live in Istanbul.",
+    "why": "Şehir bir alandır → in."
+   },
+   {
+    "wrong": "See you in Monday.",
+    "right": "See you on Monday.",
+    "why": "Günlerde on kullanılır."
+   },
+   {
+    "wrong": "The film starts in eight.",
+    "right": "The film starts at eight.",
+    "why": "Saatte at kullanılır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "The cat is ___ the box.",
+    "options": [
+     "in",
+     "on",
+     "at",
+     "to"
+    ],
+    "answer": 0,
+    "note": "Kutunun içi → in."
+   },
+   {
+    "type": "choice",
+    "text": "We have a meeting ___ Friday.",
+    "options": [
+     "on",
+     "in",
+     "at",
+     "to"
+    ],
+    "answer": 0,
+    "note": "Gün → on."
+   },
+   {
+    "type": "choice",
+    "text": "I wake up ___ six o'clock.",
+    "options": [
+     "at",
+     "in",
+     "on",
+     "by"
+    ],
+    "answer": 0,
+    "note": "Saat → at."
+   },
+   {
+    "type": "choice",
+    "text": "She was born ___ 1998.",
+    "options": [
+     "in",
+     "on",
+     "at",
+     "from"
+    ],
+    "answer": 0,
+    "note": "Yıl → in."
+   },
+   {
+    "type": "gap",
+    "text": "Your book is ___ the shelf.",
+    "options": [
+     "on",
+     "in",
+     "at"
+    ],
+    "answer": 0,
+    "note": "Raf bir yüzeydir → on."
+   }
+  ]
+ },
+ {
+  "id": "a1-18-conjunctions",
+  "level": "A1",
+  "order": 18,
+  "title": "and, but, or — because, when",
+  "topic": "Coordinating and simple subordinating conjunctions",
+  "canDo": "İki fikri birleştirebilir, sebep ve zaman belirtebilirim.",
+  "covers": [
+   "CC",
+   "CL.when",
+   "CL_after.etc",
+   "CL.that.OMIT"
+  ],
+  "concept": {
+   "summary": "and, but ve or iki eşit parçayı birleştirir. because sebep, when ve before/after zaman bildirir ve kendi cümleciğini kurar. think, know, hope gibi fiillerden sonra gelen that günlük dilde düşürülebilir.",
+   "formula": {
+    "left": "cümle + and / but / or + cümle",
+    "right": "because / when / after + cümle"
+   },
+   "table": [
+    {
+     "form": "and",
+     "be": "ekleme",
+     "example": "I called and left a message."
+    },
+    {
+     "form": "but",
+     "be": "karşıtlık",
+     "example": "It is small but comfortable."
+    },
+    {
+     "form": "or",
+     "be": "seçenek",
+     "example": "Tea or coffee?"
+    },
+    {
+     "form": "because",
+     "be": "sebep",
+     "example": "I stayed because it rained."
+    },
+    {
+     "form": "when",
+     "be": "zaman",
+     "example": "Call me when you arrive."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I like tea and coffee.",
+    "tr": "Çayı da kahveyi de severim.",
+    "note": "and iki nesneyi birleştirir."
+   },
+   {
+    "en": "The room is small but clean.",
+    "tr": "Oda küçük ama temiz.",
+    "note": "but karşıtlık kurar."
+   },
+   {
+    "en": "We stayed at home because it was raining.",
+    "tr": "Yağmur yağdığı için evde kaldık.",
+    "note": "because sebep bildirir."
+   },
+   {
+    "en": "I brush my teeth before I go to bed.",
+    "tr": "Yatmadan önce dişlerimi fırçalarım.",
+    "note": "before kendi cümleciğini kurar."
+   },
+   {
+    "en": "I think you are right.",
+    "tr": "Bence haklısın.",
+    "note": "think'ten sonra that düşürülmüş."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I like tea, I like coffee.",
+    "right": "I like tea and coffee.",
+    "why": "İki cümleyi virgül tek başına birleştiremez."
+   },
+   {
+    "wrong": "Because it was raining. We stayed home.",
+    "right": "We stayed home because it was raining.",
+    "why": "because'lu parça tek başına cümle olmaz."
+   },
+   {
+    "wrong": "I will call you when I will arrive.",
+    "right": "I will call you when I arrive.",
+    "why": "when'li cümlecikte gelecek zaman kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I was tired, ___ I finished the work.",
+    "options": [
+     "but",
+     "and so",
+     "because",
+     "or"
+    ],
+    "answer": 0,
+    "note": "Beklenmedik karşıtlık → but."
+   },
+   {
+    "type": "choice",
+    "text": "She stayed home ___ she was ill.",
+    "options": [
+     "because",
+     "but",
+     "or",
+     "when to"
+    ],
+    "answer": 0,
+    "note": "Sebep → because."
+   },
+   {
+    "type": "choice",
+    "text": "Would you like tea ___ coffee?",
+    "options": [
+     "or",
+     "and",
+     "but",
+     "because"
+    ],
+    "answer": 0,
+    "note": "Seçenek → or."
+   },
+   {
+    "type": "choice",
+    "text": "Text me ___ you get home.",
+    "options": [
+     "when",
+     "but",
+     "or",
+     "because of"
+    ],
+    "answer": 0,
+    "note": "Zaman → when."
+   },
+   {
+    "type": "gap",
+    "text": "I know ___ you are busy today.",
+    "options": [
+     "that",
+     "what",
+     "which"
+    ],
+    "answer": 0,
+    "note": "know, think ve hope'tan sonra that gelir; günlük dilde düşürülebilir."
+   }
+  ]
+ },
+ {
+  "id": "a1-19-to-infinitive",
+  "level": "A1",
+  "order": 19,
+  "title": "want to, need to, would like to",
+  "topic": "To-infinitive after verbs",
+  "canDo": "Ne istediğimi ve ne yapmam gerektiğini söyleyebilirim.",
+  "covers": [
+   "TO.to_do",
+   "TO.VV_to_do",
+   "TO.VV_NP_to_do"
+  ],
+  "concept": {
+   "summary": "Bazı fiillerden sonra ikinci fiil yalın gelmez, başına to alır. Araya bir kişi girebilir: want somebody to do. Türkçede bu yapı \"-mesini istemek\" ekiyle karşılanır, o yüzden to unutulur.",
+   "formula": {
+    "left": "want / need / would like",
+    "right": "+ to + yalın fiil"
+   },
+   "table": [
+    {
+     "form": "want to",
+     "be": "istemek",
+     "example": "I want to go."
+    },
+    {
+     "form": "need to",
+     "be": "gerekmek",
+     "example": "You need to rest."
+    },
+    {
+     "form": "would like to",
+     "be": "nazik istek",
+     "example": "I would like to book a room."
+    },
+    {
+     "form": "want + kişi + to",
+     "be": "birinden istemek",
+     "example": "I want you to call me."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I want to learn English.",
+    "tr": "İngilizce öğrenmek istiyorum.",
+    "note": "want'tan sonra to + fiil."
+   },
+   {
+    "en": "She needs to leave early.",
+    "tr": "Erken çıkması gerekiyor.",
+    "note": "needs çekildi, ikinci fiil to aldı."
+   },
+   {
+    "en": "We would like to see the menu.",
+    "tr": "Menüyü görmek isteriz.",
+    "note": "Restoranda nazik istek."
+   },
+   {
+    "en": "My boss wants me to work on Saturday.",
+    "tr": "Patronum cumartesi çalışmamı istiyor.",
+    "note": "Araya kişi girdi: wants me to."
+   },
+   {
+    "en": "I forgot to lock the door.",
+    "tr": "Kapıyı kilitlemeyi unuttum.",
+    "note": "forget de to ister."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I want learn English.",
+    "right": "I want to learn English.",
+    "why": "want'tan sonra to düşmez."
+   },
+   {
+    "wrong": "I want that you call me.",
+    "right": "I want you to call me.",
+    "why": "İngilizcede bu yapı that ile kurulmaz."
+   },
+   {
+    "wrong": "She needs to leaves early.",
+    "right": "She needs to leave early.",
+    "why": "to'dan sonra fiil yalın kalır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I want ___ a new laptop.",
+    "options": [
+     "to buy",
+     "buy",
+     "buying",
+     "to buying"
+    ],
+    "answer": 0,
+    "note": "want + to + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "You need ___ more water.",
+    "options": [
+     "to drink",
+     "drink",
+     "drinking",
+     "drinks"
+    ],
+    "answer": 0,
+    "note": "need + to."
+   },
+   {
+    "type": "choice",
+    "text": "She wants ___ to help her.",
+    "options": [
+     "us",
+     "we",
+     "our",
+     "ours"
+    ],
+    "answer": 0,
+    "note": "Araya giren kişi nesne biçiminde olur."
+   },
+   {
+    "type": "choice",
+    "text": "Would you like ___ something?",
+    "options": [
+     "to eat",
+     "eat",
+     "eating",
+     "ate"
+    ],
+    "answer": 0,
+    "note": "would like + to."
+   },
+   {
+    "type": "gap",
+    "text": "Don't forget ___ me tonight.",
+    "options": [
+     "to call",
+     "call",
+     "calling"
+    ],
+    "answer": 0,
+    "note": "forget + to = yapmayı unutmak."
+   }
+  ]
+ },
+ {
+  "id": "a1-20-verb-ing",
+  "level": "A1",
+  "order": 20,
+  "title": "like + V-ing",
+  "topic": "Verb + -ing, preposition + -ing",
+  "canDo": "Nelerden hoşlandığımı söyleyebilirim.",
+  "covers": [
+   "VG",
+   "VG.VV_VG",
+   "VG.PREP_VG"
+  ],
+  "concept": {
+   "summary": "like, love, enjoy ve hate fiillerinden sonra ikinci fiil -ing alır. Edatlardan sonra da her zaman -ing gelir: at, of, about ne olursa olsun, ardından gelen fiil -ing'lidir.",
+   "formula": {
+    "left": "like / love / enjoy / hate",
+    "right": "+ fiil-ing"
+   },
+   "table": [
+    {
+     "form": "like",
+     "be": "+ -ing",
+     "example": "I like swimming."
+    },
+    {
+     "form": "enjoy",
+     "be": "+ -ing",
+     "example": "She enjoys cooking."
+    },
+    {
+     "form": "hate",
+     "be": "+ -ing",
+     "example": "He hates waiting."
+    },
+    {
+     "form": "edat + -ing",
+     "be": "her zaman",
+     "example": "good at drawing"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I like reading before bed.",
+    "tr": "Yatmadan önce okumayı severim.",
+    "note": "like + -ing."
+   },
+   {
+    "en": "She enjoys walking in the park.",
+    "tr": "Parkta yürümekten hoşlanır.",
+    "note": "enjoy her zaman -ing ister."
+   },
+   {
+    "en": "He is good at cooking.",
+    "tr": "Yemek yapmakta iyidir.",
+    "note": "at edatından sonra -ing."
+   },
+   {
+    "en": "Thank you for coming.",
+    "tr": "Geldiğiniz için teşekkürler.",
+    "note": "for edatından sonra -ing."
+   },
+   {
+    "en": "They hate getting up early.",
+    "tr": "Erken kalkmaktan nefret ederler.",
+    "note": "hate + -ing."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I like to swimming.",
+    "right": "I like swimming.",
+    "why": "to ile -ing birlikte kullanılmaz."
+   },
+   {
+    "wrong": "She is good at cook.",
+    "right": "She is good at cooking.",
+    "why": "Edattan sonra fiil -ing alır."
+   },
+   {
+    "wrong": "Thank you for come.",
+    "right": "Thank you for coming.",
+    "why": "for bir edattır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I enjoy ___ to music.",
+    "options": [
+     "listening",
+     "listen",
+     "to listen",
+     "listens"
+    ],
+    "answer": 0,
+    "note": "enjoy + -ing."
+   },
+   {
+    "type": "choice",
+    "text": "She is interested in ___ photography.",
+    "options": [
+     "learning",
+     "learn",
+     "to learn",
+     "learns"
+    ],
+    "answer": 0,
+    "note": "in edatından sonra -ing."
+   },
+   {
+    "type": "choice",
+    "text": "They hate ___ in traffic.",
+    "options": [
+     "sitting",
+     "sit",
+     "to sitting",
+     "sits"
+    ],
+    "answer": 0,
+    "note": "hate + -ing."
+   },
+   {
+    "type": "choice",
+    "text": "Thanks for ___ me.",
+    "options": [
+     "helping",
+     "help",
+     "to help",
+     "helped"
+    ],
+    "answer": 0,
+    "note": "for edatı → -ing."
+   },
+   {
+    "type": "gap",
+    "text": "He loves ___ football at weekends.",
+    "options": [
+     "playing",
+     "play",
+     "to playing"
+    ],
+    "answer": 0,
+    "note": "love + -ing."
+   }
+  ]
+ },
+ {
+  "id": "a1-21-indefinite-pronouns",
+  "level": "A1",
+  "order": 21,
+  "title": "somebody, anything, nobody",
+  "topic": "Indefinite pronouns",
+  "canDo": "Kim ve ne olduğunu bilmediğim şeylerden söz edebilirim.",
+  "covers": [
+   "PIND.nobody.anything.etc"
+  ],
+  "concept": {
+   "summary": "some-, any-, no- ve every- ön parçaları -body, -thing ve -where ile birleşir. Kural some/any kuralının aynısıdır: olumluda some-, olumsuz ve soruda any-. Hepsi tekildir, fiil de tekil gelir.",
+   "formula": {
+    "left": "some / any / no / every",
+    "right": "+ body / thing / where"
+   },
+   "table": [
+    {
+     "form": "olumlu",
+     "be": "somebody, something",
+     "example": "Somebody is at the door."
+    },
+    {
+     "form": "olumsuz/soru",
+     "be": "anybody, anything",
+     "example": "I don't know anybody here."
+    },
+    {
+     "form": "no-",
+     "be": "tek başına olumsuz",
+     "example": "Nobody answered."
+    },
+    {
+     "form": "every-",
+     "be": "herkes / her şey",
+     "example": "Everything is ready."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Somebody called you.",
+    "tr": "Biri seni aradı.",
+    "note": "Olumlu cümle → some-."
+   },
+   {
+    "en": "I didn't see anything.",
+    "tr": "Hiçbir şey görmedim.",
+    "note": "Olumsuz cümle → any-."
+   },
+   {
+    "en": "Nobody knows the answer.",
+    "tr": "Kimse cevabı bilmiyor.",
+    "note": "no- tek başına olumsuz."
+   },
+   {
+    "en": "Everything is fine.",
+    "tr": "Her şey yolunda.",
+    "note": "Tekil fiil: is."
+   },
+   {
+    "en": "Is there anywhere to sit?",
+    "tr": "Oturacak bir yer var mı?",
+    "note": "Soruda any-."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I didn't see nothing.",
+    "right": "I didn't see anything.",
+    "why": "Bir cümlede iki olumsuzluk olmaz."
+   },
+   {
+    "wrong": "Everything are ready.",
+    "right": "Everything is ready.",
+    "why": "Bu zamirler tekildir."
+   },
+   {
+    "wrong": "Nobody don't came.",
+    "right": "Nobody came.",
+    "why": "nobody olumsuzluğu kendi taşır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ is waiting for you outside.",
+    "options": [
+     "Somebody",
+     "Anybody",
+     "Nobody not",
+     "Everybody are"
+    ],
+    "answer": 0,
+    "note": "Olumlu cümle → Somebody."
+   },
+   {
+    "type": "choice",
+    "text": "I don't need ___ .",
+    "options": [
+     "anything",
+     "nothing",
+     "something not",
+     "everything not"
+    ],
+    "answer": 0,
+    "note": "Olumsuz cümle → anything."
+   },
+   {
+    "type": "choice",
+    "text": "___ answered the phone.",
+    "options": [
+     "Nobody",
+     "Not anybody",
+     "Anybody not",
+     "Nothing"
+    ],
+    "answer": 0,
+    "note": "Kimse yanıtlamadı → Nobody."
+   },
+   {
+    "type": "choice",
+    "text": "Everybody ___ here now.",
+    "options": [
+     "is",
+     "are",
+     "were",
+     "have"
+    ],
+    "answer": 0,
+    "note": "Belgisiz zamirler tekildir."
+   },
+   {
+    "type": "gap",
+    "text": "Did you go ___ last weekend?",
+    "options": [
+     "anywhere",
+     "somewhere not",
+     "nowhere not"
+    ],
+    "answer": 0,
+    "note": "Soruda any-."
+   }
+  ]
+ },
+ {
+  "id": "a1-22-phrasal-verbs",
+  "level": "A1",
+  "order": 22,
+  "title": "Öbek fiiller — giriş",
+  "topic": "Phrasal verbs: verb + particle",
+  "canDo": "Günlük konuşmada sık geçen iki kelimelik fiilleri anlayabilirim.",
+  "covers": [
+   "PHV.V_PART",
+   "PHV.V_PART_PREP"
+  ],
+  "concept": {
+   "summary": "Bazı fiiller yanlarına küçük bir kelime alır ve anlam tamamen değişir: get up kalkmak, look for aramak demektir. Tek tek kelimelerden anlamı çıkaramazsın; kalıp olarak öğrenilir.",
+   "formula": {
+    "left": "fiil + parçacık",
+    "right": "= yeni bir anlam"
+   },
+   "table": [
+    {
+     "form": "get up",
+     "be": "kalkmak",
+     "example": "I get up at seven."
+    },
+    {
+     "form": "turn on / off",
+     "be": "açmak / kapatmak",
+     "example": "Turn off the light."
+    },
+    {
+     "form": "look for",
+     "be": "aramak",
+     "example": "I am looking for my keys."
+    },
+    {
+     "form": "look forward to",
+     "be": "dört gözle beklemek",
+     "example": "I look forward to your reply."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I get up early every day.",
+    "tr": "Her gün erken kalkarım.",
+    "note": "get tek başına \"almak\", get up \"kalkmak\"."
+   },
+   {
+    "en": "Please turn on the light.",
+    "tr": "Lütfen ışığı aç.",
+    "note": "Nesne araya da girebilir: turn the light on."
+   },
+   {
+    "en": "She is looking for a job.",
+    "tr": "İş arıyor.",
+    "note": "look for = aramak."
+   },
+   {
+    "en": "Put on your coat.",
+    "tr": "Montunu giy.",
+    "note": "put on = giymek."
+   },
+   {
+    "en": "We are getting on the bus.",
+    "tr": "Otobüse biniyoruz.",
+    "note": "get on = binmek."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I am looking my keys.",
+    "right": "I am looking for my keys.",
+    "why": "look for kalıbında for düşmez."
+   },
+   {
+    "wrong": "Turn on it.",
+    "right": "Turn it on.",
+    "why": "Zamir nesne her zaman fiille parçacığın arasına girer."
+   },
+   {
+    "wrong": "I wake up at seven, then I get up the bus.",
+    "right": "I wake up at seven, then I get on the bus.",
+    "why": "Parçacık değişince anlam da değişir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "What time do you ___ in the morning?",
+    "options": [
+     "get up",
+     "get on",
+     "get off",
+     "get in"
+    ],
+    "answer": 0,
+    "note": "Yataktan kalkmak → get up."
+   },
+   {
+    "type": "choice",
+    "text": "I am looking ___ my glasses.",
+    "options": [
+     "for",
+     "at",
+     "to",
+     "on"
+    ],
+    "answer": 0,
+    "note": "look for = aramak."
+   },
+   {
+    "type": "choice",
+    "text": "It is cold. ___ your jacket.",
+    "options": [
+     "Put on",
+     "Put in",
+     "Put off",
+     "Put up"
+    ],
+    "answer": 0,
+    "note": "put on = giymek."
+   },
+   {
+    "type": "choice",
+    "text": "The TV is loud. Turn ___ down.",
+    "options": [
+     "it",
+     "on it",
+     "down it",
+     "the it"
+    ],
+    "answer": 0,
+    "note": "Zamir araya girer: turn it down."
+   },
+   {
+    "type": "gap",
+    "text": "We ___ the train at Ankara.",
+    "options": [
+     "got off",
+     "got up",
+     "got in off"
+    ],
+    "answer": 0,
+    "note": "get off = inmek."
+   }
+  ]
+ }
+]
