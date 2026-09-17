@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b2-021",
+    "level": "B2",
+    "range": "1597-1676"
+  },
+  "manufacture--noun": {
+    "tr": "imalat, üretim",
+    "def": "The process of making goods in a factory.",
+    "ex": "The manufacture of glass began here.",
+    "exTr": "Cam imalatı burada başladı."
+  },
+  "manufacture--verb": {
+    "tr": "imal etmek",
+    "def": "To make goods in large numbers in a factory.",
+    "ex": "They manufacture car parts.",
+    "exTr": "Araba parçaları imal ediyorlar."
+  },
+  "casually--adv": {
+    "tr": "gelişigüzel, rahat bir tavırla",
+    "def": "In a relaxed way, or without seeming to care.",
+    "ex": "He mentioned it casually.",
+    "exTr": "Bunu gelişigüzel bir şekilde söyledi."
+  },
+  "multiply--verb": {
+    "tr": "çarpmak, çoğalmak",
+    "def": "To add a number to itself, or to increase greatly.",
+    "ex": "Multiply the length by three.",
+    "exTr": "Uzunluğu üçle çarp."
+  },
+  "divert--verb": {
+    "tr": "yönünü değiştirmek, saptırmak",
+    "def": "To make something travel a different way.",
+    "ex": "Police diverted the traffic.",
+    "exTr": "Polis trafiğin yönünü değiştirdi."
+  },
+  "youthful--adj": {
+    "tr": "genç görünümlü, dinç",
+    "def": "Looking or seeming young.",
+    "ex": "She has a youthful energy.",
+    "exTr": "Genç bir enerjisi var."
+  },
+  "reasonably--adv": {
+    "tr": "makul biçimde, oldukça",
+    "def": "In a fair way, or fairly but not very.",
+    "ex": "The hotel is reasonably clean.",
+    "exTr": "Otel oldukça temiz."
+  },
+  "curl--noun": {
+    "tr": "bukle, kıvrım",
+    "def": "A curved piece of hair.",
+    "ex": "A curl fell over her eye.",
+    "exTr": "Bir bukle gözünün üstüne düştü."
+  },
+  "manufacturer--noun": {
+    "tr": "üretici, imalatçı",
+    "def": "A company that makes goods.",
+    "ex": "The manufacturer replaced the part.",
+    "exTr": "Üretici parçayı değiştirdi."
+  },
+  "flawless--adj": {
+    "tr": "kusursuz",
+    "def": "Having no faults at all.",
+    "ex": "Her performance was flawless.",
+    "exTr": "Performansı kusursuzdu."
+  },
+  "navigate--verb": {
+    "tr": "yol bulmak, seyretmek",
+    "def": "To find the way when travelling, or to move through something.",
+    "ex": "He navigated by the stars.",
+    "exTr": "Yıldızlara bakarak yol buldu."
+  },
+  "ethnic--adj": {
+    "tr": "etnik",
+    "def": "Relating to a group with a shared culture and origin.",
+    "ex": "The city has many ethnic groups.",
+    "exTr": "Şehirde birçok etnik grup var."
+  },
+  "racism--noun": {
+    "tr": "ırkçılık",
+    "def": "Unfair treatment of people because of their race.",
+    "ex": "The campaign fights racism.",
+    "exTr": "Kampanya ırkçılıkla mücadele ediyor."
+  },
+  "stingy--adj": {
+    "tr": "eli sıkı, cimri",
+    "def": "Unwilling to spend or give money.",
+    "ex": "Do not be stingy with the sauce.",
+    "exTr": "Sos konusunda cimrilik etme."
+  },
+  "administrative--adj": {
+    "tr": "idari",
+    "def": "Relating to managing an organization.",
+    "ex": "She handles administrative work.",
+    "exTr": "İdari işlerle ilgileniyor."
+  },
+  "anticipation--noun": {
+    "tr": "bekleyiş",
+    "def": "The feeling of looking forward to something.",
+    "ex": "The crowd waited in anticipation.",
+    "exTr": "Kalabalık beklenti içinde bekledi."
+  },
+  "paralysis--noun": {
+    "tr": "felç",
+    "def": "The loss of the ability to move part of the body.",
+    "ex": "The illness caused temporary paralysis.",
+    "exTr": "Hastalık geçici felce yol açtı."
+  },
+  "compassionate--adj": {
+    "tr": "merhametli",
+    "def": "Feeling and showing sympathy for others.",
+    "ex": "She is a compassionate doctor.",
+    "exTr": "Merhametli bir doktor."
+  },
+  "colon--noun": {
+    "tr": "iki nokta, kalın bağırsak",
+    "def": "The punctuation mark before a list, or part of the gut.",
+    "ex": "Put a colon before the list.",
+    "exTr": "Listeden önce iki nokta koy."
+  },
+  "uncommon--adj": {
+    "tr": "az rastlanır",
+    "def": "Not happening or seen very often.",
+    "ex": "Snow is uncommon here.",
+    "exTr": "Burada kar az rastlanır."
+  },
+  "ironically--adv": {
+    "tr": "ironik biçimde",
+    "def": "In a way that is the opposite of what you expect.",
+    "ex": "Ironically, the fire station burned.",
+    "exTr": "İronik biçimde itfaiye binası yandı."
+  },
+  "cello--noun": {
+    "tr": "çello, viyolonsel",
+    "def": "A large string instrument played sitting down.",
+    "ex": "She plays the cello beautifully.",
+    "exTr": "Çelloyu çok güzel çalıyor."
+  },
+  "orchid--noun": {
+    "tr": "orkide",
+    "def": "A flower with an unusual shape and bright colours.",
+    "ex": "The orchid needs little water.",
+    "exTr": "Orkide az su ister."
+  },
+  "controversy--noun": {
+    "tr": "tartışma, ihtilaf",
+    "def": "Public disagreement about something.",
+    "ex": "The plan caused controversy.",
+    "exTr": "Plan tartışma yarattı."
+  },
+  "jeopardize--verb": {
+    "tr": "tehlikeye atmak",
+    "def": "To put something good at risk.",
+    "ex": "Do not jeopardize your health.",
+    "exTr": "Sağlığını tehlikeye atma."
+  },
+  "shabby--adj": {
+    "tr": "eski püskü",
+    "def": "Old and in bad condition.",
+    "ex": "He wore a shabby coat.",
+    "exTr": "Eski püskü bir palto giymişti."
+  },
+  "axis--noun": {
+    "tr": "eksen",
+    "def": "A line around which something turns, or a line on a graph.",
+    "ex": "The earth turns on its axis.",
+    "exTr": "Dünya kendi ekseni etrafında döner."
+  },
+  "participation--noun": {
+    "tr": "katılım",
+    "def": "The act of taking part in something.",
+    "ex": "Participation is voluntary.",
+    "exTr": "Katılım gönüllü."
+  },
+  "blooming--adj": {
+    "tr": "çiçek açan",
+    "def": "Producing flowers, or looking very healthy.",
+    "ex": "The blooming trees line the street.",
+    "exTr": "Çiçek açan ağaçlar sokağı süslüyor."
+  },
+  "refresh--noun": {
+    "tr": "yenileme",
+    "def": "The act of updating what is shown on a screen.",
+    "ex": "Give the page a refresh.",
+    "exTr": "Sayfaya bir yenileme yap."
+  },
+  "compatible--adj": {
+    "tr": "uyumlu",
+    "def": "Able to work or exist together.",
+    "ex": "The charger is not compatible.",
+    "exTr": "Şarj aleti uyumlu değil."
+  },
+  "malaria--noun": {
+    "tr": "sıtma",
+    "def": "A serious illness spread by mosquitoes.",
+    "ex": "Nets protect against malaria.",
+    "exTr": "Cibinlikler sıtmaya karşı koruyor."
+  },
+  "overthrow--verb": {
+    "tr": "devirmek",
+    "def": "To remove a government or a leader by force.",
+    "ex": "The army overthrew the king.",
+    "exTr": "Ordu kralı devirdi."
+  },
+  "obsessive--adj": {
+    "tr": "takıntılı",
+    "def": "Thinking about something far too much.",
+    "ex": "He is obsessive about tidiness.",
+    "exTr": "Düzen konusunda takıntılı."
+  },
+  "respiratory--adj": {
+    "tr": "solunum",
+    "def": "Relating to breathing and the lungs.",
+    "ex": "Smoke causes respiratory problems.",
+    "exTr": "Duman solunum sorunlarına yol açar."
+  },
+  "needless--adj": {
+    "tr": "gereksiz",
+    "def": "Not necessary and easily avoided.",
+    "ex": "It caused needless worry.",
+    "exTr": "Gereksiz bir endişeye yol açtı."
+  },
+  "faulty--adj": {
+    "tr": "arızalı, kusurlu",
+    "def": "Not working correctly.",
+    "ex": "The faulty switch was replaced.",
+    "exTr": "Arızalı düğme değiştirildi."
+  },
+  "strand--noun": {
+    "tr": "tel, iplikçik",
+    "def": "A single thin piece of hair, thread or wire.",
+    "ex": "A strand of hair fell loose.",
+    "exTr": "Bir tutam saç düştü."
+  },
+  "prosper--verb": {
+    "tr": "gelişmek, zenginleşmek",
+    "def": "To become successful and rich.",
+    "ex": "The town prospered after the road opened.",
+    "exTr": "Yol açıldıktan sonra kasaba zenginleşti."
+  },
+  "handicap--noun": {
+    "tr": "engel, dezavantaj",
+    "def": "Something that makes progress harder.",
+    "ex": "Poor eyesight was a handicap.",
+    "exTr": "Zayıf görüş bir engeldi."
+  },
+  "export--noun": {
+    "tr": "ihracat",
+    "def": "Goods sold to another country.",
+    "ex": "Hazelnuts are a major export.",
+    "exTr": "Fındık önemli bir ihracat ürünü."
+  },
+  "export--verb": {
+    "tr": "ihraç etmek",
+    "def": "To sell goods to another country.",
+    "ex": "They export olive oil to Europe.",
+    "exTr": "Avrupa'ya zeytinyağı ihraç ediyorlar."
+  },
+  "conceive--verb": {
+    "tr": "tasarlamak, gebe kalmak",
+    "def": "To think of a plan, or to become pregnant.",
+    "ex": "He conceived the idea in prison.",
+    "exTr": "Fikri hapiste tasarladı."
+  },
+  "projection--noun": {
+    "tr": "öngörü, projeksiyon",
+    "def": "An estimate of a future figure.",
+    "ex": "The projection shows slow growth.",
+    "exTr": "Öngörü yavaş bir büyüme gösteriyor."
+  },
+  "editorial--noun": {
+    "tr": "başyazı",
+    "def": "An article giving a newspaper's own opinion.",
+    "ex": "The editorial criticized the law.",
+    "exTr": "Başyazı yasayı eleştirdi."
+  },
+  "shatter--verb": {
+    "tr": "paramparça olmak",
+    "def": "To break suddenly into very small pieces.",
+    "ex": "The mirror shattered on the floor.",
+    "exTr": "Ayna yerde paramparça oldu."
+  },
+  "affectionate--adj": {
+    "tr": "sevecen",
+    "def": "Showing warm feelings towards someone.",
+    "ex": "The dog is very affectionate.",
+    "exTr": "Köpek çok sevecen."
+  },
+  "carefree--adj": {
+    "tr": "kaygısız, gamsız",
+    "def": "Having no worries or responsibilities.",
+    "ex": "They spent a carefree summer.",
+    "exTr": "Kaygısız bir yaz geçirdiler."
+  },
+  "endurance--noun": {
+    "tr": "dayanıklılık",
+    "def": "The ability to keep going despite difficulty.",
+    "ex": "The race tests endurance.",
+    "exTr": "Yarış dayanıklılığı sınıyor."
+  },
+  "disrupt--verb": {
+    "tr": "aksatmak, bozmak",
+    "def": "To stop something from continuing normally.",
+    "ex": "Snow disrupted the trains.",
+    "exTr": "Kar trenleri aksattı."
+  },
+  "adventurous--adj": {
+    "tr": "maceraperest",
+    "def": "Willing to try new and risky things.",
+    "ex": "She has an adventurous spirit.",
+    "exTr": "Maceraperest bir ruhu var."
+  },
+  "expectation--noun": {
+    "tr": "beklenti",
+    "def": "A belief that something will happen.",
+    "ex": "The result beat every expectation.",
+    "exTr": "Sonuç her beklentiyi aştı."
+  },
+  "paramedic--adj": {
+    "tr": "sağlık ekibi, paramedik",
+    "def": "Relating to trained staff who give emergency care.",
+    "ex": "A paramedic team reached the scene.",
+    "exTr": "Bir sağlık ekibi olay yerine ulaştı."
+  },
+  "inflation--noun": {
+    "tr": "enflasyon",
+    "def": "A general rise in prices over time.",
+    "ex": "Inflation slowed last month.",
+    "exTr": "Enflasyon geçen ay yavaşladı."
+  },
+  "irritated--adj": {
+    "tr": "sinirlenmiş, tahriş olmuş",
+    "def": "Slightly angry, or sore and red.",
+    "ex": "His skin was irritated.",
+    "exTr": "Cildi tahriş olmuştu."
+  },
+  "worldly--adj": {
+    "tr": "dünyevi",
+    "def": "Relating to material life rather than the spirit.",
+    "ex": "He gave up worldly goods.",
+    "exTr": "Dünyevi malları bıraktı."
+  },
+  "checkpoint--noun": {
+    "tr": "kontrol noktası",
+    "def": "A place where vehicles are stopped and checked.",
+    "ex": "We waited at the checkpoint.",
+    "exTr": "Kontrol noktasında bekledik."
+  },
+  "potent--adj": {
+    "tr": "güçlü, etkili",
+    "def": "Very strong in effect.",
+    "ex": "This is a potent medicine.",
+    "exTr": "Bu güçlü bir ilaç."
+  },
+  "disposition--noun": {
+    "tr": "mizaç, huy",
+    "def": "A person's usual character and mood.",
+    "ex": "She has a cheerful disposition.",
+    "exTr": "Neşeli bir mizacı var."
+  },
+  "enforce--verb": {
+    "tr": "uygulamak, zorla yürürlüğe koymak",
+    "def": "To make people obey a law or a rule.",
+    "ex": "Police enforce the speed limit.",
+    "exTr": "Polis hız sınırını uyguluyor."
+  },
+  "imply--verb": {
+    "tr": "ima etmek",
+    "def": "To suggest something without saying it directly.",
+    "ex": "Her tone implied doubt.",
+    "exTr": "Ses tonu şüphe ima ediyordu."
+  },
+  "conception--noun": {
+    "tr": "kavrayış, tasarım",
+    "def": "An idea or understanding of something.",
+    "ex": "He has no conception of the cost.",
+    "exTr": "Maliyet hakkında hiçbir kavrayışı yok."
+  },
+  "catalog--noun": {
+    "tr": "katalog",
+    "def": "A list of goods or items with details.",
+    "ex": "Order it from the catalog.",
+    "exTr": "Onu katalogdan sipariş et."
+  },
+  "proximity--noun": {
+    "tr": "yakınlık",
+    "def": "The state of being near something.",
+    "ex": "The proximity to school helped.",
+    "exTr": "Okula yakınlık işe yaradı."
+  },
+  "unavailable--adj": {
+    "tr": "mevcut değil, müsait değil",
+    "def": "Not able to be obtained or not free to meet.",
+    "ex": "The item is unavailable.",
+    "exTr": "Ürün mevcut değil."
+  },
+  "innovation--noun": {
+    "tr": "yenilik",
+    "def": "A new idea or method that is introduced.",
+    "ex": "The innovation saved fuel.",
+    "exTr": "Yenilik yakıt tasarrufu sağladı."
+  },
+  "paradox--noun": {
+    "tr": "paradoks, çelişki",
+    "def": "A statement that seems to contradict itself but may be true.",
+    "ex": "That is an interesting paradox.",
+    "exTr": "Bu ilginç bir paradoks."
+  },
+  "conversion--noun": {
+    "tr": "dönüşüm, çevirme",
+    "def": "The act of changing something into another form.",
+    "ex": "The conversion took six months.",
+    "exTr": "Dönüşüm altı ay sürdü."
+  },
+  "blindly--adv": {
+    "tr": "körü körüne",
+    "def": "Without thinking or without being able to see.",
+    "ex": "Do not follow advice blindly.",
+    "exTr": "Tavsiyeye körü körüne uyma."
+  },
+  "formerly--adv": {
+    "tr": "eskiden",
+    "def": "In the past, before now.",
+    "ex": "The hall was formerly a church.",
+    "exTr": "Salon eskiden bir kiliseydi."
+  },
+  "desirable--adj": {
+    "tr": "arzu edilen, gözde",
+    "def": "Worth having and wanted by many people.",
+    "ex": "It is a desirable address.",
+    "exTr": "Gözde bir adres."
+  },
+  "considerably--adv": {
+    "tr": "epeyce, hatırı sayılır ölçüde",
+    "def": "By a large amount.",
+    "ex": "Prices rose considerably.",
+    "exTr": "Fiyatlar epeyce arttı."
+  },
+  "imitation--noun": {
+    "tr": "taklit",
+    "def": "A copy of something, or the act of copying.",
+    "ex": "The bag is a cheap imitation.",
+    "exTr": "Çanta ucuz bir taklit."
+  },
+  "latter--adj": {
+    "tr": "ikincisi, sonraki",
+    "def": "The second of two things just mentioned.",
+    "ex": "I prefer the latter option.",
+    "exTr": "İkinci seçeneği tercih ederim."
+  },
+  "inquire--verb": {
+    "tr": "sormak, soruşturmak",
+    "def": "To ask for information, in formal English.",
+    "ex": "She inquired about the price.",
+    "exTr": "Fiyatı sordu."
+  },
+  "listener--noun": {
+    "tr": "dinleyici",
+    "def": "A person who listens, especially to radio.",
+    "ex": "A listener sent in the question.",
+    "exTr": "Soruyu bir dinleyici gönderdi."
+  },
+  "juror--noun": {
+    "tr": "jüri üyesi",
+    "def": "A member of a jury in a court.",
+    "ex": "One juror asked to leave.",
+    "exTr": "Bir jüri üyesi ayrılmak istedi."
+  },
+  "mortar--noun": {
+    "tr": "harç, havan",
+    "def": "The mixture that holds bricks together, or a heavy gun.",
+    "ex": "The mortar between the bricks crumbled.",
+    "exTr": "Tuğlaların arasındaki harç döküldü."
+  },
+  "correspondent--noun": {
+    "tr": "muhabir",
+    "def": "A journalist who reports from a particular place.",
+    "ex": "Our correspondent sent the story.",
+    "exTr": "Muhabirimiz haberi gönderdi."
+  },
+  "outskirts--noun": {
+    "tr": "varoş, kenar mahalle",
+    "def": "The outer parts of a town, away from the centre.",
+    "ex": "They live on the outskirts.",
+    "exTr": "Şehrin kenarında oturuyorlar."
+  }
+}

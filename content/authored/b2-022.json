@@ -1,0 +1,487 @@
+{
+  "_meta": {
+    "batch": "b2-022",
+    "level": "B2",
+    "range": "1677-1756"
+  },
+  "interruption--noun": {
+    "tr": "kesinti, araya girme",
+    "def": "Something that stops an activity for a while.",
+    "ex": "We worked without interruption.",
+    "exTr": "Kesintisiz çalıştık."
+  },
+  "mediocre--adj": {
+    "tr": "vasat",
+    "def": "Not very good, only average.",
+    "ex": "The food was mediocre.",
+    "exTr": "Yemek vasattı."
+  },
+  "sob--verb": {
+    "tr": "hıçkıra hıçkıra ağlamak",
+    "def": "To cry loudly while taking short breaths.",
+    "ex": "The child sobbed for an hour.",
+    "exTr": "Çocuk bir saat hıçkıra hıçkıra ağladı."
+  },
+  "prestigious--adj": {
+    "tr": "saygın, prestijli",
+    "def": "Widely admired and respected.",
+    "ex": "She won a prestigious prize.",
+    "exTr": "Prestijli bir ödül kazandı."
+  },
+  "ballot--noun": {
+    "tr": "oy pusulası, oylama",
+    "def": "A secret vote, or the paper used for it.",
+    "ex": "Put the ballot in the box.",
+    "exTr": "Oy pusulasını kutuya at."
+  },
+  "complexion--noun": {
+    "tr": "ten, cilt rengi",
+    "def": "The natural colour and condition of the face.",
+    "ex": "She has a pale complexion.",
+    "exTr": "Soluk bir teni var."
+  },
+  "holocaust--noun": {
+    "tr": "soykırım, büyük kıyım",
+    "def": "The destruction of a very large number of people.",
+    "ex": "The museum records the holocaust.",
+    "exTr": "Müze soykırımı belgeliyor."
+  },
+  "exhaustion--noun": {
+    "tr": "aşırı yorgunluk, tükenme",
+    "def": "The state of being extremely tired.",
+    "ex": "He collapsed from exhaustion.",
+    "exTr": "Aşırı yorgunluktan yığıldı."
+  },
+  "legislation--noun": {
+    "tr": "yasama, mevzuat",
+    "def": "Laws considered together, or the making of them.",
+    "ex": "New legislation takes effect today.",
+    "exTr": "Yeni mevzuat bugün yürürlüğe giriyor."
+  },
+  "entrepreneur--noun": {
+    "tr": "girişimci",
+    "def": "A person who starts a business and takes the risk.",
+    "ex": "A young entrepreneur opened the café.",
+    "exTr": "Kafeyi genç bir girişimci açtı."
+  },
+  "unauthorized--adj": {
+    "tr": "yetkisiz, izinsiz",
+    "def": "Done without official permission.",
+    "ex": "Unauthorized entry is forbidden.",
+    "exTr": "İzinsiz giriş yasaktır."
+  },
+  "long-distance--adj": {
+    "tr": "uzun mesafe",
+    "def": "Travelling or reaching over a long way.",
+    "ex": "He is a long distance runner.",
+    "exTr": "Uzun mesafe koşucusu."
+  },
+  "genre--noun": {
+    "tr": "tür (sanat)",
+    "def": "A style or type of art, music or writing.",
+    "ex": "Crime is her favourite genre.",
+    "exTr": "Polisiye en sevdiği tür."
+  },
+  "prefect--noun": {
+    "tr": "sınıf başkanı, vali",
+    "def": "A senior pupil with duties, or a local official.",
+    "ex": "The prefect kept order.",
+    "exTr": "Sınıf başkanı düzeni sağladı."
+  },
+  "publication--noun": {
+    "tr": "yayın, yayımlama",
+    "def": "A book or magazine, or the act of publishing.",
+    "ex": "The publication sold out quickly.",
+    "exTr": "Yayın hızla tükendi."
+  },
+  "luxurious--adj": {
+    "tr": "lüks, konforlu",
+    "def": "Very comfortable and expensive.",
+    "ex": "They stayed in a luxurious suite.",
+    "exTr": "Lüks bir süitte kaldılar."
+  },
+  "showcase--noun": {
+    "tr": "vitrin, tanıtım",
+    "def": "An event or a place that displays something well.",
+    "ex": "The fair is a showcase for local food.",
+    "exTr": "Fuar yerel yemekler için bir vitrin."
+  },
+  "replica--noun": {
+    "tr": "replika, kopya",
+    "def": "An exact copy of an object.",
+    "ex": "The museum shows a replica.",
+    "exTr": "Müze bir replika sergiliyor."
+  },
+  "wondrous--adj": {
+    "tr": "harikulade",
+    "def": "Strange and beautiful, in poetic English.",
+    "ex": "It was a wondrous sight.",
+    "exTr": "Harikulade bir manzaraydı."
+  },
+  "instruct--verb": {
+    "tr": "talimat vermek, öğretmek",
+    "def": "To tell someone officially what to do, or to teach them.",
+    "ex": "The doctor instructed her to rest.",
+    "exTr": "Doktor ona dinlenmesi talimatını verdi."
+  },
+  "optimism--noun": {
+    "tr": "iyimserlik",
+    "def": "The belief that good things will happen.",
+    "ex": "There is quiet optimism here.",
+    "exTr": "Burada sessiz bir iyimserlik var."
+  },
+  "humane--adj": {
+    "tr": "insancıl",
+    "def": "Showing kindness and avoiding causing pain.",
+    "ex": "They demand humane conditions.",
+    "exTr": "İnsancıl koşullar talep ediyorlar."
+  },
+  "trolley--noun": {
+    "tr": "el arabası, tramvay",
+    "def": "A small cart for carrying goods or shopping.",
+    "ex": "Take a trolley at the entrance.",
+    "exTr": "Girişte bir el arabası al."
+  },
+  "earnings--noun": {
+    "tr": "kazanç",
+    "def": "The money a person or a company earns.",
+    "ex": "Her earnings doubled this year.",
+    "exTr": "Kazancı bu yıl ikiye katlandı."
+  },
+  "righteousness--noun": {
+    "tr": "doğruluk, dürüstlük",
+    "def": "The quality of being morally right.",
+    "ex": "He spoke of duty and righteousness.",
+    "exTr": "Görev ve doğruluktan söz etti."
+  },
+  "eruption--noun": {
+    "tr": "patlama (yanardağ)",
+    "def": "The sudden throwing out of lava by a volcano.",
+    "ex": "The eruption covered the town in ash.",
+    "exTr": "Patlama kasabayı külle kapladı."
+  },
+  "eternally--adv": {
+    "tr": "sonsuza dek",
+    "def": "For ever, without ending.",
+    "ex": "I am eternally grateful.",
+    "exTr": "Sonsuza dek minnettarım."
+  },
+  "costly--adj": {
+    "tr": "pahalı, maliyetli",
+    "def": "Expensive, or causing great loss.",
+    "ex": "The delay proved costly.",
+    "exTr": "Gecikme maliyetli oldu."
+  },
+  "setback--noun": {
+    "tr": "aksilik, geri adım",
+    "def": "A problem that delays progress.",
+    "ex": "The fire was a serious setback.",
+    "exTr": "Yangın ciddi bir aksilikti."
+  },
+  "novelty--noun": {
+    "tr": "yenilik, acayiplik",
+    "def": "The quality of being new and unusual.",
+    "ex": "The novelty soon wore off.",
+    "exTr": "Yeniliğin cazibesi çabuk geçti."
+  },
+  "doubtful--adj": {
+    "tr": "şüpheli, kuşkulu",
+    "def": "Uncertain, or unlikely to happen.",
+    "ex": "It is doubtful that he will come.",
+    "exTr": "Geleceği şüpheli."
+  },
+  "indebted--adj": {
+    "tr": "minnettar, borçlu",
+    "def": "Owing money, or grateful for help.",
+    "ex": "We are indebted to our neighbours.",
+    "exTr": "Komşularımıza minnettarız."
+  },
+  "implement--noun": {
+    "tr": "alet",
+    "def": "A tool used for a particular job.",
+    "ex": "A spade is a simple implement.",
+    "exTr": "Kürek basit bir alettir."
+  },
+  "implement--verb": {
+    "tr": "uygulamaya koymak",
+    "def": "To start using a plan or a decision.",
+    "ex": "They implemented the new rule.",
+    "exTr": "Yeni kuralı uygulamaya koydular."
+  },
+  "supervise--verb": {
+    "tr": "denetlemek, gözetmek",
+    "def": "To watch over work or people to check it is done well.",
+    "ex": "A teacher supervises the exam.",
+    "exTr": "Sınavı bir öğretmen denetliyor."
+  },
+  "outline--noun": {
+    "tr": "taslak, dış hat",
+    "def": "A short description of the main points, or a shape's edge.",
+    "ex": "Send me an outline first.",
+    "exTr": "Önce bana bir taslak gönder."
+  },
+  "completion--noun": {
+    "tr": "tamamlanma",
+    "def": "The state of being finished.",
+    "ex": "Completion is due in March.",
+    "exTr": "Tamamlanma martta bekleniyor."
+  },
+  "brochure--noun": {
+    "tr": "broşür",
+    "def": "A thin book with information about a product or a place.",
+    "ex": "Take a brochure from the desk.",
+    "exTr": "Bankodan bir broşür al."
+  },
+  "utility--noun": {
+    "tr": "kamu hizmeti, fayda",
+    "def": "A service such as water or electricity, or usefulness.",
+    "ex": "The bill covers three utilities.",
+    "exTr": "Fatura üç kamu hizmetini kapsıyor."
+  },
+  "snore--noun": {
+    "tr": "horlama",
+    "def": "The rough sound some people make when asleep.",
+    "ex": "His snore woke the whole tent.",
+    "exTr": "Horlaması bütün çadırı uyandırdı."
+  },
+  "snore--verb": {
+    "tr": "horlamak",
+    "def": "To breathe noisily while sleeping.",
+    "ex": "He snores every night.",
+    "exTr": "Her gece horluyor."
+  },
+  "prescribe--verb": {
+    "tr": "reçete yazmak",
+    "def": "To say officially what medicine a patient should take.",
+    "ex": "The doctor prescribed antibiotics.",
+    "exTr": "Doktor antibiyotik yazdı."
+  },
+  "blindness--noun": {
+    "tr": "körlük",
+    "def": "The state of being unable to see.",
+    "ex": "The disease can cause blindness.",
+    "exTr": "Hastalık körlüğe yol açabilir."
+  },
+  "tack--verb": {
+    "tr": "raptiyelemek, iliştirmek",
+    "def": "To fasten something with a small nail or a pin.",
+    "ex": "She tacked the map to the wall.",
+    "exTr": "Haritayı duvara raptiyeledi."
+  },
+  "incentive--noun": {
+    "tr": "teşvik",
+    "def": "Something that encourages you to do something.",
+    "ex": "Tax cuts are an incentive.",
+    "exTr": "Vergi indirimleri bir teşvik."
+  },
+  "outing--noun": {
+    "tr": "gezi, çıkma",
+    "def": "A short trip made for pleasure.",
+    "ex": "The class went on an outing.",
+    "exTr": "Sınıf bir geziye çıktı."
+  },
+  "scarcely--adv": {
+    "tr": "ancak, güçbela",
+    "def": "Almost not at all.",
+    "ex": "I scarcely knew him.",
+    "exTr": "Onu neredeyse hiç tanımıyordum."
+  },
+  "audit--noun": {
+    "tr": "denetim (mali)",
+    "def": "An official check of financial records.",
+    "ex": "The audit found no errors.",
+    "exTr": "Denetim hiç hata bulmadı."
+  },
+  "literal--adj": {
+    "tr": "gerçek, birebir",
+    "def": "Following the exact words, not a figure of speech.",
+    "ex": "Give me the literal meaning.",
+    "exTr": "Bana gerçek anlamını ver."
+  },
+  "trainee--noun": {
+    "tr": "stajyer",
+    "def": "A person who is learning to do a job.",
+    "ex": "The trainee starts on Monday.",
+    "exTr": "Stajyer pazartesi başlıyor."
+  },
+  "accommodation--noun": {
+    "tr": "konaklama",
+    "def": "A place to stay or to live.",
+    "ex": "Accommodation is included.",
+    "exTr": "Konaklama dahildir."
+  },
+  "mutton--noun": {
+    "tr": "koyun eti",
+    "def": "The meat of an adult sheep.",
+    "ex": "The stew is made with mutton.",
+    "exTr": "Güveç koyun etiyle yapılıyor."
+  },
+  "lucrative--adj": {
+    "tr": "kazançlı, para getiren",
+    "def": "Producing a lot of money.",
+    "ex": "It became a lucrative business.",
+    "exTr": "Kazançlı bir iş hâline geldi."
+  },
+  "orchestral--adj": {
+    "tr": "orkestral",
+    "def": "Written for or played by an orchestra.",
+    "ex": "The film has an orchestral score.",
+    "exTr": "Filmin orkestral bir müziği var."
+  },
+  "endlessly--adv": {
+    "tr": "bitmek bilmeden",
+    "def": "Continuing for a very long time.",
+    "ex": "They argued endlessly.",
+    "exTr": "Bitmek bilmeden tartıştılar."
+  },
+  "redo--verb": {
+    "tr": "yeniden yapmak",
+    "def": "To do something again, usually better.",
+    "ex": "She had to redo the exercise.",
+    "exTr": "Alıştırmayı yeniden yapmak zorunda kaldı."
+  },
+  "predicament--noun": {
+    "tr": "çıkmaz, zor durum",
+    "def": "A difficult situation with no easy answer.",
+    "ex": "We were in a real predicament.",
+    "exTr": "Gerçek bir çıkmazdaydık."
+  },
+  "ideology--noun": {
+    "tr": "ideoloji",
+    "def": "A set of political or social beliefs.",
+    "ex": "The party changed its ideology.",
+    "exTr": "Parti ideolojisini değiştirdi."
+  },
+  "stride--verb": {
+    "tr": "uzun adımlarla yürümek",
+    "def": "To walk with long confident steps.",
+    "ex": "He strode across the yard.",
+    "exTr": "Avluyu uzun adımlarla geçti."
+  },
+  "oval--adj": {
+    "tr": "oval, yumurta biçimli",
+    "def": "Shaped like an egg.",
+    "ex": "The table is oval.",
+    "exTr": "Masa oval."
+  },
+  "downfall--noun": {
+    "tr": "çöküş, düşüş",
+    "def": "The loss of power or success, or its cause.",
+    "ex": "Pride was his downfall.",
+    "exTr": "Gurur onun çöküşü oldu."
+  },
+  "beneficial--adj": {
+    "tr": "yararlı",
+    "def": "Having a good effect.",
+    "ex": "Walking is beneficial for the heart.",
+    "exTr": "Yürümek kalp için yararlı."
+  },
+  "unfamiliar--adj": {
+    "tr": "yabancı, tanıdık olmayan",
+    "def": "Not known to you.",
+    "ex": "The street was unfamiliar.",
+    "exTr": "Sokak yabancıydı."
+  },
+  "philosophical--adj": {
+    "tr": "felsefi",
+    "def": "Relating to philosophy, or calm about difficulty.",
+    "ex": "They had a philosophical discussion.",
+    "exTr": "Felsefi bir tartışma yaptılar."
+  },
+  "astronomy--noun": {
+    "tr": "gök bilimi",
+    "def": "The study of stars and planets.",
+    "ex": "He teaches astronomy.",
+    "exTr": "Gök bilimi dersi veriyor."
+  },
+  "fascination--noun": {
+    "tr": "büyülenme, tutku",
+    "def": "A very strong interest in something.",
+    "ex": "His fascination with maps began early.",
+    "exTr": "Haritalara olan tutkusu erken başladı."
+  },
+  "elect--verb": {
+    "tr": "seçmek (oyla)",
+    "def": "To choose someone by voting.",
+    "ex": "They elected a new mayor.",
+    "exTr": "Yeni bir belediye başkanı seçtiler."
+  },
+  "evaluate--verb": {
+    "tr": "değer biçmek, ölçmek",
+    "def": "To judge carefully how good or useful something is.",
+    "ex": "We evaluate every application.",
+    "exTr": "Her başvuruyu değerlendiriyoruz."
+  },
+  "microscopic--adj": {
+    "tr": "mikroskobik",
+    "def": "Too small to see without a microscope.",
+    "ex": "The cracks are microscopic.",
+    "exTr": "Çatlaklar mikroskobik."
+  },
+  "ointment--noun": {
+    "tr": "merhem",
+    "def": "A thick cream rubbed on the skin as medicine.",
+    "ex": "Put the ointment on twice daily.",
+    "exTr": "Merhemi günde iki kez sür."
+  },
+  "electrician--noun": {
+    "tr": "elektrikçi",
+    "def": "A worker who installs and repairs electrical systems.",
+    "ex": "The electrician found the fault.",
+    "exTr": "Elektrikçi arızayı buldu."
+  },
+  "actively--adv": {
+    "tr": "etkin biçimde",
+    "def": "In a way that involves real effort.",
+    "ex": "She actively supports the charity.",
+    "exTr": "Hayır kurumunu etkin biçimde destekliyor."
+  },
+  "assurance--noun": {
+    "tr": "güvence, teminat",
+    "def": "A promise that something is true or will happen.",
+    "ex": "We were given an assurance.",
+    "exTr": "Bize bir güvence verildi."
+  },
+  "bossy--adj": {
+    "tr": "buyurgan, emir veren",
+    "def": "Always telling other people what to do.",
+    "ex": "His older sister is bossy.",
+    "exTr": "Ablası buyurgan."
+  },
+  "bio--noun": {
+    "tr": "biyografi, özgeçmiş",
+    "def": "A short account of a person's life.",
+    "ex": "Read her bio on the website.",
+    "exTr": "Web sitesinde özgeçmişini oku."
+  },
+  "extraordinarily--adv": {
+    "tr": "olağanüstü biçimde",
+    "def": "To a very unusual degree.",
+    "ex": "The winter was extraordinarily mild.",
+    "exTr": "Kış olağanüstü ılık geçti."
+  },
+  "wasp--noun": {
+    "tr": "yaban arısı",
+    "def": "A flying insect with black and yellow stripes that stings.",
+    "ex": "A wasp flew into the kitchen.",
+    "exTr": "Mutfağa bir yaban arısı girdi."
+  },
+  "brilliantly--adv": {
+    "tr": "parlak biçimde, harika",
+    "def": "Extremely well, or very brightly.",
+    "ex": "She played brilliantly.",
+    "exTr": "Harika oynadı."
+  },
+  "capability--noun": {
+    "tr": "yeterlik, kapasite",
+    "def": "The ability to do something.",
+    "ex": "The plant has spare capability.",
+    "exTr": "Tesisin yedek kapasitesi var."
+  },
+  "delicacy--noun": {
+    "tr": "incelik, leziz yiyecek",
+    "def": "A special rare food, or great care and sensitivity.",
+    "ex": "Sea urchin is a local delicacy.",
+    "exTr": "Deniz kestanesi yerel bir lezzet."
+  }
+}
