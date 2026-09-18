@@ -14,6 +14,17 @@ export type Toast = { title: string; note: string } | null;
 /** The decks a learner moves through, each tracked separately per level. */
 export type DeckKind = 'vocab' | 'grammar' | 'reading' | 'listening' | 'speaking';
 
+/**
+ * What the placement test found. Navigation carries no params, so the result
+ * travels from the test screen to the result screen through here.
+ */
+export type TestResult = {
+  level: CefrLevel;
+  byLevel: Record<CefrLevel, { right: number; asked: number }>;
+  right: number;
+  asked: number;
+};
+
 type GameState = {
   combo: number;
   arenaXp: number;
@@ -39,6 +50,10 @@ type AppValue = {
   // Curriculum
   cefr: CefrLevel;
   setCefr: (level: CefrLevel) => void;
+
+  /** Null until the placement test has actually been taken. */
+  testResult: TestResult | null;
+  setTestResult: (result: TestResult) => void;
 
   // Game progress, shared between the arena and duels
   game: GameState;
@@ -103,6 +118,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     duelOp: 6,
   });
 
+  const [testResult, setTestResult] = useState<TestResult | null>(null);
   const [positions, setPositions] = useState<Record<string, number>>({});
   const [savedWords, setSavedWords] = useState<string[]>([]);
   const [liked, setLiked] = useState(false);
@@ -125,6 +141,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       toggleSkill: toggle(setSkills),
       cefr,
       setCefr,
+      testResult,
+      setTestResult,
       game,
       arenaSolved: (gained: number) =>
         setGame((g) => ({
@@ -159,7 +177,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       plan,
       setPlan,
     }),
-    [toast, fire, goals, dailyTime, skills, cefr, game, positions, savedWords, liked, following, joinedClub, plan],
+    [toast, fire, goals, dailyTime, skills, cefr, testResult, game, positions, savedWords, liked, following, joinedClub, plan],
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

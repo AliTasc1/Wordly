@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -7,20 +7,39 @@ import { Card } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii, shadows } from '../theme/tokens';
-import { GRAMMAR } from '../data/questions';
+import { grammarOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 
-/** 11 · Gramer — concept → example → exercise → challenge. */
+/** 11 · Gramer — concept → examples → mistakes → exercises. */
 export function GrammarScreen() {
   const { go } = useGo();
   const back = useBack('lesson');
-  const { fire } = useApp();
-  const ex = GRAMMAR.exercise;
-  const quiz = useQuiz(ex.answer, (_, correct) => {
-    if (correct) fire(ex.toast.title, ex.toast.note);
+  const { cefr, position, setPosition, fire } = useApp();
+
+  const lessons = useMemo(() => grammarOf(cefr), [cefr]);
+  const index = Math.min(position('grammar', cefr), lessons.length - 1);
+  const lesson = lessons[index];
+
+  const [asked, setAsked] = useState(0);
+  const exercise = lesson.exercises[asked];
+  const quiz = useQuiz(exercise.answer, (_, correct) => {
+    if (correct) fire('Doğru! +15 XP', exercise.note);
   });
+
+  const last = asked === lesson.exercises.length - 1;
+
+  const next = () => {
+    quiz.reset();
+    if (last) {
+      setPosition('grammar', cefr, (index + 1) % lessons.length);
+      setAsked(0);
+      go('listen');
+      return;
+    }
+    setAsked((n) => n + 1);
+  };
 
   return (
     <Screen padTop={62} gap={14}>
@@ -28,24 +47,32 @@ export function GrammarScreen() {
         <BackButton onPress={back} />
         <View style={styles.flex}>
           <Txt f="m" s={16} w={800}>
-            {GRAMMAR.title}
+            {lesson.title}
           </Txt>
           <Txt s={11} w={600} c={colors.textDim}>
-            {GRAMMAR.flow}
+            {lesson.topic}
           </Txt>
         </View>
         <View style={styles.levelTag}>
           <Txt f="mono" s={11} w={700} c={colors.violetSoft}>
-            {GRAMMAR.level}
+            {lesson.level} · {index + 1}/{lessons.length}
           </Txt>
         </View>
       </View>
 
       <View style={styles.steps}>
-        <View style={[styles.step, { backgroundColor: colors.accent }]} />
-        <View style={[styles.step, { backgroundColor: colors.accent }]} />
-        <View style={[styles.step, { backgroundColor: colors.primary }]} />
-        <View style={[styles.step, { backgroundColor: alpha.w10 }]} />
+        {lesson.exercises.map((_, i) => (
+          <View
+            key={i}
+            style={[
+              styles.step,
+              {
+                backgroundColor:
+                  i < asked ? colors.accent : i === asked ? colors.primary : alpha.w10,
+              },
+            ]}
+          />
+        ))}
       </View>
 
       <Gradient
@@ -53,46 +80,82 @@ export function GrammarScreen() {
         colors={['rgba(124,92,255,.22)', 'rgba(14,20,38,.92)']}
         style={styles.concept}>
         <Txt f="mono" s={10} w={700} c={colors.violetSoft} ls={0.14}>
-          {GRAMMAR.concept.kicker}
+          KURAL
         </Txt>
-        <Txt f="m" s={21} w={800} lh={1.3}>
-          {GRAMMAR.concept.leadIn}
-          <Txt f="m" s={21} w={800} c={colors.accent}>
-            {GRAMMAR.concept.highlight}
-          </Txt>
-          {GRAMMAR.concept.leadOut}
+        <Txt s={14.5} lh={1.6} c={colors.textBright}>
+          {lesson.concept.summary}
         </Txt>
-        <View style={styles.formula}>
-          <Txt f="mono" s={12} w={700} c={colors.accentSoft}>
-            {GRAMMAR.concept.formulaLeft}
+        {lesson.concept.formula ? (
+          <View style={styles.formula}>
+            <Txt f="mono" s={12} w={700} c={colors.accentSoft}>
+              {lesson.concept.formula.left}
+            </Txt>
+            <Txt c={colors.textGhost}>+</Txt>
+            <Txt f="mono" s={12} w={700} c={colors.violetSoft}>
+              {lesson.concept.formula.right}
+            </Txt>
+          </View>
+        ) : null}
+        <View style={styles.canDo}>
+          <Txt f="mono" s={10} w={700} c={colors.mintSoft} ls={0.1}>
+            ARTIK YAPABİLİRSİN
           </Txt>
-          <Txt c={colors.textGhost}>+</Txt>
-          <Txt f="mono" s={12} w={700} c={colors.violetSoft}>
-            {GRAMMAR.concept.formulaRight}
+          <Txt s={12.5} lh={1.55} c={colors.textMuted} style={styles.canDoBody}>
+            {lesson.canDo}
           </Txt>
         </View>
-        <Txt s={15} w={600}>
-          {GRAMMAR.concept.exampleBefore}
-          <Txt s={15} w={600} c={colors.accent}>
-            {GRAMMAR.concept.exampleHighlight}
-          </Txt>
-          {GRAMMAR.concept.exampleAfter}
-        </Txt>
-        <Txt s={12.5} c={colors.textMuted}>
-          {GRAMMAR.concept.exampleNote}
-        </Txt>
       </Gradient>
+
+      <View style={styles.examples}>
+        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+          ÖRNEKLER
+        </Txt>
+        {lesson.examples.map((example) => (
+          <View key={example.en} style={styles.example}>
+            <Txt s={14.5} w={600} lh={1.5}>
+              {example.en}
+            </Txt>
+            <Txt s={12.5} lh={1.5} c={colors.textDim}>
+              {example.tr}
+            </Txt>
+            {example.note ? (
+              <Txt s={11.5} lh={1.5} c={colors.textFaint}>
+                {example.note}
+              </Txt>
+            ) : null}
+          </View>
+        ))}
+      </View>
+
+      <View style={styles.mistakes}>
+        <Txt f="mono" s={10} w={700} c={colors.errorTint} ls={0.14}>
+          SIK YAPILAN HATA
+        </Txt>
+        {lesson.mistakes.map((mistake) => (
+          <View key={mistake.wrong} style={styles.mistake}>
+            <Txt s={13.5} w={600} lh={1.5} c={colors.errorTint} style={styles.wrong}>
+              ✕ {mistake.wrong}
+            </Txt>
+            <Txt s={13.5} w={600} lh={1.5} c={colors.mintSoft}>
+              ✓ {mistake.right}
+            </Txt>
+            <Txt s={11.5} lh={1.5} c={colors.textDim}>
+              {mistake.why}
+            </Txt>
+          </View>
+        ))}
+      </View>
 
       <Card>
         <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
-          {ex.kicker}
+          ALIŞTIRMA {asked + 1}/{lesson.exercises.length}
         </Txt>
         <Txt f="m" s={19} w={700} lh={1.4}>
-          {ex.question}
+          {exercise.text}
         </Txt>
-        {ex.options.map((option, i) => (
+        {exercise.options.map((option, i) => (
           <QuizOption
-            key={option}
+            key={`${asked}-${option}`}
             label={option}
             mark={quiz.markOf(i)}
             state={quiz.stateOf(i)}
@@ -102,8 +165,12 @@ export function GrammarScreen() {
         {quiz.answered ? (
           <AnswerFeedback
             correct={quiz.correct}
-            title={quiz.correct ? ex.correctTitle : ex.wrongTitle}
-            note={ex.note}
+            title={
+              quiz.correct
+                ? 'Doğru! +15 XP'
+                : `Yanlış — doğrusu: ${exercise.options[exercise.answer]}`
+            }
+            note={exercise.note}
             titleSize={13.5}
             noteSize={12}
             radius={radii.card}
@@ -117,14 +184,14 @@ export function GrammarScreen() {
         </View>
         <View style={styles.flex}>
           <Txt f="m" s={13.5} w={700}>
-            {GRAMMAR.challenge.title}
+            Hızlı tur
           </Txt>
           <Txt s={11.5} c={colors.textDim}>
-            {GRAMMAR.challenge.sub}
+            Arenada bu konuyu süreyle dene
           </Txt>
         </View>
         <TinyButton
-          label={GRAMMAR.challenge.cta}
+          label="Başla"
           bg={colors.warning}
           color={colors.onLight}
           onPress={() => go('arena')}
@@ -132,11 +199,11 @@ export function GrammarScreen() {
       </View>
 
       <PrimaryButton
-        label="Sonraki bölüm · Dinleme"
+        label={last ? 'Sonraki bölüm · Dinleme' : 'Sonraki alıştırma'}
         height={54}
         size={15.5}
         shadow={shadows.ctaBrand}
-        onPress={() => go('listen')}
+        onPress={next}
       />
     </Screen>
   );
@@ -170,6 +237,33 @@ const styles = StyleSheet.create({
     borderRadius: radii.card,
     padding: 12,
   },
+  canDo: {
+    backgroundColor: 'rgba(34,197,94,.1)',
+    borderWidth: 1,
+    borderColor: 'rgba(34,197,94,.24)',
+    borderRadius: radii.card,
+    padding: 12,
+  },
+  canDoBody: { marginTop: 3 },
+  examples: {
+    backgroundColor: colors.surface,
+    borderWidth: 1,
+    borderColor: alpha.w08,
+    borderRadius: radii.panel,
+    padding: 15,
+    gap: 12,
+  },
+  example: { gap: 2 },
+  mistakes: {
+    backgroundColor: 'rgba(255,77,94,.07)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,77,94,.2)',
+    borderRadius: radii.panel,
+    padding: 15,
+    gap: 12,
+  },
+  mistake: { gap: 2 },
+  wrong: { textDecorationLine: 'line-through' },
   challenge: {
     flexDirection: 'row',
     alignItems: 'center',

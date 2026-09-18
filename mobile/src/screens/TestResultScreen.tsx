@@ -4,16 +4,47 @@ import { Screen, Spacer } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Glow } from '../components/Glow';
 import { GhostButton, PrimaryButton } from '../components/Buttons';
-import { ResultDonut, SkillRadar, ProgressBar } from '../components/Progress';
+import { ResultDonut, ProgressBar } from '../components/Progress';
 import { FadeIn } from '../components/motion';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
-import { TEST_RESULT } from '../data/questions';
+import { LEVELS } from '../content';
+import { PASS_RATIO } from '../content/score';
+import { CEFR } from '../data/curriculum';
+import { useApp } from '../state/AppContext';
 import { useGo } from '../navigation/useGo';
 
-/** 05 · Test Sonucu — CEFR level, six-skill breakdown and the radar. */
+/**
+ * 05 · Test Sonucu — the level the test found, and how each level scored.
+ *
+ * The design showed a six-skill radar (reading, listening, speaking…). The
+ * placement test is a grammar and usage test and measures none of those
+ * separately, so the breakdown reports what was actually asked: the score at
+ * each CEFR level.
+ */
 export function TestResultScreen() {
   const { go, reset } = useGo();
+  const { testResult } = useApp();
+
+  if (!testResult) {
+    return (
+      <Screen padTop={70} padH={22} padBottom={26} gap={18}>
+        <Spacer />
+        <Txt f="m" s={18} w={800} style={styles.center}>
+          Henüz test çözmedin
+        </Txt>
+        <Txt s={13} lh={1.5} c={colors.textMuted} style={styles.center}>
+          Seviyeni belirlemek için kısa testi çözebilirsin.
+        </Txt>
+        <Spacer />
+        <PrimaryButton label="Teste başla" onPress={() => go('test')} />
+        <GhostButton label="Şimdilik geç" onPress={() => reset('home')} />
+      </Screen>
+    );
+  }
+
+  const { level, byLevel, right, asked } = testResult;
+  const summary = CEFR[level];
 
   return (
     <Screen
@@ -37,81 +68,79 @@ export function TestResultScreen() {
             />
           </View>
           <ResultDonut
-            pct={TEST_RESULT.ringPct}
-            level={TEST_RESULT.level}
+            pct={Math.round((right / asked) * 100)}
+            level={level}
             caption="GENEL SEVİYE"
           />
         </View>
         <Txt s={13} lh={1.5} c={colors.textMuted} style={styles.summary}>
-          {TEST_RESULT.summary}
+          {asked} sorudan {right} doğru. {summary.description}
         </Txt>
       </FadeIn>
 
       <Gradient deg={180} colors={gradients.card} style={styles.breakdown}>
-        <SkillRadar />
-        <View style={styles.skills}>
-          {TEST_RESULT.skills.map((s) => (
-            <View key={s.name} style={styles.skillRow}>
+        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+          SEVİYE SEVİYE
+        </Txt>
+        {LEVELS.map((l) => {
+          const bucket = byLevel[l];
+          if (bucket.asked === 0) return null;
+          const pct = Math.round((bucket.right / bucket.asked) * 100);
+          const passed = bucket.right / bucket.asked >= PASS_RATIO;
+          return (
+            <View key={l} style={styles.skillRow}>
               <View style={styles.skillHead}>
                 <Txt s={11.5} w={600} c={colors.textSubtle}>
-                  {s.name}
+                  {l}
                 </Txt>
-                <Txt f="m" s={11.5} w={700}>
-                  {s.level}
+                <Txt f="m" s={11.5} w={700} c={passed ? colors.mintSoft : colors.textDim}>
+                  {bucket.right}/{bucket.asked}
                 </Txt>
               </View>
-              <ProgressBar pct={s.pct} height={5} />
+              <ProgressBar
+                pct={pct}
+                height={5}
+                from={passed ? colors.success : colors.warning}
+                to={passed ? colors.accent : colors.warningText}
+              />
             </View>
-          ))}
-        </View>
+          );
+        })}
       </Gradient>
 
-      <View style={styles.callouts}>
-        <View style={[styles.callout, styles.strength]}>
-          <Txt s={11} w={700} c={colors.successSoft}>
-            {TEST_RESULT.strength.label}
-          </Txt>
-          <Txt f="m" s={15} w={800} style={styles.calloutValue}>
-            {TEST_RESULT.strength.value}
-          </Txt>
-        </View>
-        <View style={[styles.callout, styles.focus]}>
-          <Txt s={11} w={700} c={colors.errorSoft}>
-            {TEST_RESULT.focus.label}
-          </Txt>
-          <Txt f="m" s={15} w={800} style={styles.calloutValue}>
-            {TEST_RESULT.focus.value}
-          </Txt>
-        </View>
+      <View style={styles.note}>
+        <Txt s={11.5} lh={1.55} c={colors.textDim}>
+          Seviyen, alt seviyeleri de geçtiğin en yüksek basamak olarak belirlenir. Tek tek
+          doğru bilinen ileri sorular seviyeyi yukarı çekmez.
+        </Txt>
       </View>
 
       <Spacer />
 
-      <PrimaryButton label="B1 müfredatımı başlat" onPress={() => reset('home')} />
+      <PrimaryButton label={`${level} müfredatımı başlat`} onPress={() => reset('home')} />
       <GhostButton label="Testi tekrar çöz" onPress={() => go('test')} />
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
+  center: { textAlign: 'center' },
   hero: { alignItems: 'center' },
   donutWrap: { marginTop: 14, alignItems: 'center', justifyContent: 'center' },
   donutGlow: { position: 'absolute', top: -18, left: -18, right: -18, bottom: -18 },
   summary: { marginTop: 12, textAlign: 'center', paddingHorizontal: 10 },
   breakdown: {
-    flexDirection: 'row',
-    gap: 14,
+    gap: 9,
     borderWidth: 1,
     borderColor: alpha.w08,
     borderRadius: radii.hero,
     padding: 18,
   },
-  skills: { flex: 1, gap: 9, justifyContent: 'center' },
   skillRow: { gap: 4 },
   skillHead: { flexDirection: 'row', justifyContent: 'space-between' },
-  callouts: { flexDirection: 'row', gap: 10 },
-  callout: { flex: 1, borderRadius: radii.input, padding: 13, borderWidth: 1 },
-  strength: { backgroundColor: 'rgba(34,197,94,.1)', borderColor: 'rgba(34,197,94,.28)' },
-  focus: { backgroundColor: 'rgba(255,77,94,.1)', borderColor: 'rgba(255,77,94,.28)' },
-  calloutValue: { marginTop: 3 },
+  note: {
+    backgroundColor: alpha.w04,
+    borderRadius: radii.input,
+    padding: 13,
+  },
 });
