@@ -6,9 +6,9 @@
   },
   "lessons": [
     {
-      "id": "b1-06-passive-modals-get",
+      "id": "b1-08-passive-modals-get",
       "level": "B1",
-      "order": 6,
+      "order": 8,
       "title": "will be done, get + V3",
       "topic": "Passive with modals; get-passive; postmodifying participle",
       "canDo": "Her zamanda edilgen kurabilir, günlük dildeki get'li biçimi kullanabilirim.",
@@ -212,218 +212,9 @@
       ]
     },
     {
-      "id": "b1-07-pronouns",
+      "id": "b1-11-something-interesting",
       "level": "B1",
-      "order": 7,
-      "title": "mine, myself, each other",
-      "topic": "Possessive, reflexive and reciprocal pronouns",
-      "canDo": "Sahiplik, kendine dönüklük ve karşılıklılığı ayırt ederek anlatabilirim.",
-      "covers": [
-        "PPOS.mine.etc",
-        "PREFL.oneself.etc",
-        "PREF.each_other",
-        "P.others",
-        "PP.you_are",
-        "DT.these.those_N"
-      ],
-      "concept": {
-        "summary": "my ismin önüne gelir, mine ise ismin yerini tutar. myself işin öznesiyle nesnesi aynı kişiyse kullanılır. each other iki tarafın birbirine yaptığı işi anlatır; others ise \"başkaları, diğerleri\" demektir.",
-        "formula": {
-          "left": "mine / yours / theirs",
-          "right": "myself / yourself / each other"
-        },
-        "table": [
-          {
-            "form": "iyelik zamiri",
-            "be": "mine, yours, ours",
-            "example": "This book is mine."
-          },
-          {
-            "form": "dönüşlü",
-            "be": "myself, himself",
-            "example": "She hurt herself."
-          },
-          {
-            "form": "karşılıklı",
-            "be": "each other",
-            "example": "They help each other."
-          },
-          {
-            "form": "diğerleri",
-            "be": "others",
-            "example": "Some stayed, others left."
-          }
-        ]
-      },
-      "examples": [
-        {
-          "en": "That seat is mine.",
-          "tr": "O koltuk benim.",
-          "note": "mine ismin yerini tutar."
-        },
-        {
-          "en": "Did you make this cake yourself?",
-          "tr": "Bu pastayı kendin mi yaptın?",
-          "note": "Vurgu için dönüşlü zamir."
-        },
-        {
-          "en": "My parents write to each other every week.",
-          "tr": "Annemle babam her hafta birbirine yazıyor.",
-          "note": "Karşılıklılık."
-        },
-        {
-          "en": "Some people left early; others stayed.",
-          "tr": "Bazıları erken çıktı, diğerleri kaldı.",
-          "note": "others = başkaları."
-        },
-        {
-          "en": "Those shoes are more comfortable than these ones.",
-          "tr": "Şu ayakkabılar bunlardan daha rahat.",
-          "note": "these/those ismin önünde."
-        }
-      ],
-      "mistakes": [
-        {
-          "wrong": "This book is my.",
-          "right": "This book is mine.",
-          "why": "İsim yoksa iyelik zamiri kullanılır."
-        },
-        {
-          "wrong": "She hurt her.",
-          "right": "She hurt herself.",
-          "why": "Özne ile nesne aynı kişiyse dönüşlü zamir gelir."
-        },
-        {
-          "wrong": "They help themselves every day.",
-          "right": "They help each other every day.",
-          "why": "Karşılıklı iş each other ile anlatılır."
-        }
-      ],
-      "exercises": [
-        {
-          "type": "choice",
-          "text": "Is this pen ___ ?",
-          "options": [
-            "yours",
-            "your",
-            "you",
-            "yourself"
-          ],
-          "answer": 0,
-          "note": "İsim yok → yours."
-        },
-        {
-          "type": "choice",
-          "text": "He cut ___ while cooking.",
-          "options": [
-            "himself",
-            "him",
-            "his",
-            "he"
-          ],
-          "answer": 0,
-          "note": "Özne = nesne → himself."
-        },
-        {
-          "type": "choice",
-          "text": "The two brothers look after ___ .",
-          "options": [
-            "each other",
-            "themselves each",
-            "them",
-            "theirs"
-          ],
-          "answer": 0,
-          "note": "Karşılıklı → each other."
-        },
-        {
-          "type": "choice",
-          "text": "Some like tea, ___ prefer coffee.",
-          "options": [
-            "others",
-            "other",
-            "another",
-            "the other one"
-          ],
-          "answer": 0,
-          "note": "Belirsiz çoğul → others."
-        },
-        {
-          "type": "gap",
-          "text": "Our car is faster than ___ .",
-          "options": [
-            "theirs",
-            "their",
-            "them"
-          ],
-          "answer": 0,
-          "note": "İsim yok → theirs."
-        },
-        {
-          "type": "choice",
-          "text": "That coat is not mine; I think it is ___ .",
-          "options": [
-            "hers",
-            "her",
-            "she",
-            "her's"
-          ],
-          "answer": 0,
-          "note": "İyelik zamiri → hers."
-        },
-        {
-          "type": "choice",
-          "text": "He cut ___ while he was cooking.",
-          "options": [
-            "himself",
-            "him",
-            "his",
-            "he"
-          ],
-          "answer": 0,
-          "note": "Özneyle aynı kişi → himself."
-        },
-        {
-          "type": "choice",
-          "text": "The two brothers never speak to ___ .",
-          "options": [
-            "each other",
-            "themselves",
-            "them",
-            "theirs"
-          ],
-          "answer": 0,
-          "note": "Karşılıklı → each other."
-        },
-        {
-          "type": "gap",
-          "text": "We painted the kitchen ___ .",
-          "options": [
-            "ourselves",
-            "us",
-            "our"
-          ],
-          "answer": 0,
-          "note": "Kendimiz yaptık → ourselves."
-        },
-        {
-          "type": "choice",
-          "text": "Is this book yours or ___ ?",
-          "options": [
-            "theirs",
-            "their",
-            "them",
-            "their's"
-          ],
-          "answer": 0,
-          "note": "İyelik zamiri → theirs."
-        }
-      ]
-    },
-    {
-      "id": "b1-08-something-interesting",
-      "level": "B1",
-      "order": 8,
+      "order": 11,
       "title": "something interesting, here is",
       "topic": "Adjective after -thing pronouns; here is / there is",
       "canDo": "Belirsiz bir şeyi niteleyebilir, bir şeyi uzatırken doğal biçimde konuşabilirim.",
@@ -626,9 +417,9 @@
       ]
     },
     {
-      "id": "b1-09-attitude-adverbs",
+      "id": "b1-12-attitude-adverbs",
       "level": "B1",
-      "order": 9,
+      "order": 12,
       "title": "fortunately, much better",
       "topic": "Attitude adverbs and intensified comparatives",
       "canDo": "Söylediğim şeye tavrımı katabilir, karşılaştırmayı güçlendirebilirim.",
@@ -831,9 +622,9 @@
       ]
     },
     {
-      "id": "b1-10-infinitive-patterns",
+      "id": "b1-13-infinitive-patterns",
       "level": "B1",
-      "order": 10,
+      "order": 13,
       "title": "not to, for you to, be to",
       "topic": "Extended to-infinitive patterns",
       "canDo": "Bir şeyi yapmamayı söyleyebilir, kimin yapacağını belirtebilirim.",

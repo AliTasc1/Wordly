@@ -6,9 +6,9 @@
   },
   "lessons": [
     {
-      "id": "b1-11-wh-to-clauses",
+      "id": "b1-14-wh-to-clauses",
       "level": "B1",
-      "order": 11,
+      "order": 14,
       "title": "what to do, where to go",
       "topic": "Wh- + to-infinitive; wh-clauses as objects",
       "canDo": "Ne yapacağımı bilmediğimi söyleyebilir, seçenekler üzerine konuşabilirim.",
@@ -212,9 +212,9 @@
       ]
     },
     {
-      "id": "b1-12-ask-tell-someone",
+      "id": "b1-15-ask-tell-someone",
       "level": "B1",
-      "order": 12,
+      "order": 15,
       "title": "ask / tell somebody to do",
       "topic": "Reported commands and requests",
       "canDo": "Başkasının ricasını ve emrini aktarabilirim.",
@@ -418,9 +418,9 @@
       ]
     },
     {
-      "id": "b1-13-relative-clauses-extended",
+      "id": "b1-16-relative-clauses-extended",
       "level": "B1",
-      "order": 13,
+      "order": 16,
       "title": "İlgi cümleciklerinde ayrıntı",
       "topic": "Non-restrictive clauses, omitted pronoun, preposition stranding",
       "canDo": "Ek bilgi verebilir, günlük dilde doğal ilgi cümlecikleri kurabilirim.",
@@ -624,9 +624,9 @@
       ]
     },
     {
-      "id": "b1-14-participle-clauses",
+      "id": "b1-17-participle-clauses",
       "level": "B1",
-      "order": 14,
+      "order": 17,
       "title": "the man standing there",
       "topic": "Participle clauses",
       "canDo": "İki cümleyi tek cümlede toplayarak daha akıcı yazabilirim.",
