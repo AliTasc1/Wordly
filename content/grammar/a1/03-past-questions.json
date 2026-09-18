@@ -1,5 +1,9 @@
 {
-  "_meta": { "batch": "a1-03", "level": "A1", "range": "Ders 13-18 — emir kipi, wh- soruları, geçmiş zaman, karşılaştırma, edatlar, bağlaçlar" },
+  "_meta": {
+    "batch": "a1-03",
+    "level": "A1",
+    "range": "Ders 13-18 — emir kipi, wh- soruları, geçmiş zaman, karşılaştırma, edatlar, bağlaçlar"
+  },
   "lessons": [
     {
       "id": "a1-13-imperative",
@@ -8,35 +12,202 @@
       "title": "Emir kipi ve let's",
       "topic": "Imperative and let's",
       "canDo": "Yol tarif edebilir, birine ne yapacağını söyleyebilir, birlikte bir şey önerebilirim.",
-      "covers": ["IMP.V.AFF", "IMP.let's_V.AFF"],
+      "covers": [
+        "IMP.V.AFF",
+        "IMP.let's_V.AFF"
+      ],
       "concept": {
         "summary": "Emir kipi İngilizcenin en kısa cümlesidir: özne yazılmaz, fiil yalın hâlde başa gelir. Olumsuzu don't ile, \"hadi\" anlamındaki ortak öneri let's ile kurulur.",
-        "formula": { "left": "Yalın fiil + ...", "right": "Don't / Let's + yalın fiil" },
+        "formula": {
+          "left": "Yalın fiil + ...",
+          "right": "Don't / Let's + yalın fiil"
+        },
         "table": [
-          { "form": "olumlu", "be": "fiil", "example": "Open the door." },
-          { "form": "olumsuz", "be": "don't + fiil", "example": "Don't touch that." },
-          { "form": "öneri", "be": "let's + fiil", "example": "Let's go home." },
-          { "form": "nazik", "be": "please", "example": "Please sit down." }
+          {
+            "form": "olumlu",
+            "be": "fiil",
+            "example": "Open the door."
+          },
+          {
+            "form": "olumsuz",
+            "be": "don't + fiil",
+            "example": "Don't touch that."
+          },
+          {
+            "form": "öneri",
+            "be": "let's + fiil",
+            "example": "Let's go home."
+          },
+          {
+            "form": "nazik",
+            "be": "please",
+            "example": "Please sit down."
+          }
         ]
       },
       "examples": [
-        { "en": "Turn left at the corner.", "tr": "Köşeden sola dön.", "note": "Yol tarifi emir kipiyle verilir." },
-        { "en": "Don't worry.", "tr": "Merak etme.", "note": "Olumsuzda don't." },
-        { "en": "Let's take a taxi.", "tr": "Hadi taksiye binelim.", "note": "Konuşan da işin içinde." },
-        { "en": "Please close the window.", "tr": "Lütfen pencereyi kapat.", "note": "please cümlenin başına da sonuna da gelebilir." },
-        { "en": "Call me tomorrow.", "tr": "Yarın beni ara.", "note": "Özne (you) söylenmez." }
+        {
+          "en": "Turn left at the corner.",
+          "tr": "Köşeden sola dön.",
+          "note": "Yol tarifi emir kipiyle verilir."
+        },
+        {
+          "en": "Don't worry.",
+          "tr": "Merak etme.",
+          "note": "Olumsuzda don't."
+        },
+        {
+          "en": "Let's take a taxi.",
+          "tr": "Hadi taksiye binelim.",
+          "note": "Konuşan da işin içinde."
+        },
+        {
+          "en": "Please close the window.",
+          "tr": "Lütfen pencereyi kapat.",
+          "note": "please cümlenin başına da sonuna da gelebilir."
+        },
+        {
+          "en": "Call me tomorrow.",
+          "tr": "Yarın beni ara.",
+          "note": "Özne (you) söylenmez."
+        }
       ],
       "mistakes": [
-        { "wrong": "You open the door.", "right": "Open the door.", "why": "Emir kipinde özne yazılmaz." },
-        { "wrong": "Not touch that.", "right": "Don't touch that.", "why": "Olumsuz emir don't ile kurulur." },
-        { "wrong": "Let's to go home.", "right": "Let's go home.", "why": "let's'ten sonra yalın fiil gelir." }
+        {
+          "wrong": "You open the door.",
+          "right": "Open the door.",
+          "why": "Emir kipinde özne yazılmaz."
+        },
+        {
+          "wrong": "Not touch that.",
+          "right": "Don't touch that.",
+          "why": "Olumsuz emir don't ile kurulur."
+        },
+        {
+          "wrong": "Let's to go home.",
+          "right": "Let's go home.",
+          "why": "let's'ten sonra yalın fiil gelir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "___ the salt, please.", "options": ["Pass", "You pass", "To pass", "Passing"], "answer": 0, "note": "Emir kipi yalın fiille başlar." },
-        { "type": "choice", "text": "___ be late again.", "options": ["Don't", "Not", "No", "Doesn't"], "answer": 0, "note": "Olumsuz emir → Don't." },
-        { "type": "choice", "text": "___ meet at seven.", "options": ["Let's", "Let us to", "Lets to", "Let"], "answer": 0, "note": "Ortak öneri → Let's + yalın fiil." },
-        { "type": "choice", "text": "___ your seatbelt.", "options": ["Fasten", "Fastens", "To fasten", "Fastening"], "answer": 0, "note": "Yalın fiil." },
-        { "type": "gap", "text": "___ forget your keys.", "options": ["Don't", "Not", "No"], "answer": 0, "note": "Olumsuz emir." }
+        {
+          "type": "choice",
+          "text": "___ the salt, please.",
+          "options": [
+            "Pass",
+            "You pass",
+            "To pass",
+            "Passing"
+          ],
+          "answer": 0,
+          "note": "Emir kipi yalın fiille başlar."
+        },
+        {
+          "type": "choice",
+          "text": "___ be late again.",
+          "options": [
+            "Don't",
+            "Not",
+            "No",
+            "Doesn't"
+          ],
+          "answer": 0,
+          "note": "Olumsuz emir → Don't."
+        },
+        {
+          "type": "choice",
+          "text": "___ meet at seven.",
+          "options": [
+            "Let's",
+            "Let us to",
+            "Lets to",
+            "Let"
+          ],
+          "answer": 0,
+          "note": "Ortak öneri → Let's + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ your seatbelt.",
+          "options": [
+            "Fasten",
+            "Fastens",
+            "To fasten",
+            "Fastening"
+          ],
+          "answer": 0,
+          "note": "Yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "___ forget your keys.",
+          "options": [
+            "Don't",
+            "Not",
+            "No"
+          ],
+          "answer": 0,
+          "note": "Olumsuz emir."
+        },
+        {
+          "type": "choice",
+          "text": "___ the door, please.",
+          "options": [
+            "Close",
+            "Closes",
+            "Closing",
+            "To close"
+          ],
+          "answer": 0,
+          "note": "Emir → yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ not touch that.",
+          "options": [
+            "Do",
+            "Does",
+            "Are",
+            "Is"
+          ],
+          "answer": 0,
+          "note": "Olumsuz emir → Do not."
+        },
+        {
+          "type": "choice",
+          "text": "___ go to the beach tomorrow.",
+          "options": [
+            "Let's",
+            "Let",
+            "Lets us",
+            "We let"
+          ],
+          "answer": 0,
+          "note": "Birlikte öneri → Let's."
+        },
+        {
+          "type": "gap",
+          "text": "___ quiet in the library.",
+          "options": [
+            "Be",
+            "Are",
+            "Is"
+          ],
+          "answer": 0,
+          "note": "be fiilinin emir hâli → Be."
+        },
+        {
+          "type": "choice",
+          "text": "Please ___ me tonight.",
+          "options": [
+            "call",
+            "calls",
+            "calling",
+            "to call"
+          ],
+          "answer": 0,
+          "note": "Emir → yalın fiil."
+        }
       ]
     },
     {
@@ -46,36 +217,210 @@
       "title": "What, Where, Why, How",
       "topic": "Wh- questions",
       "canDo": "Bilgi sorabilir, bir şeyin nerede, ne zaman ve neden olduğunu öğrenebilirim.",
-      "covers": ["INT.what", "INT.where", "INT.why", "INT.how", "INT.how_JJ.RB"],
+      "covers": [
+        "INT.what",
+        "INT.where",
+        "INT.why",
+        "INT.how",
+        "INT.how_JJ.RB"
+      ],
       "concept": {
         "summary": "Soru kelimesi en başa gelir, arkasından normal soru düzeni gelir: yardımcı fiil, sonra özne. Yani wh- kelimesi eklenince soru yapısı bozulmaz, sadece başına bir kelime alır.",
-        "formula": { "left": "Wh- + do/does/be", "right": "+ özne + fiil?" },
+        "formula": {
+          "left": "Wh- + do/does/be",
+          "right": "+ özne + fiil?"
+        },
         "table": [
-          { "form": "What", "be": "ne", "example": "What do you want?" },
-          { "form": "Where", "be": "nerede", "example": "Where does she live?" },
-          { "form": "Why", "be": "neden", "example": "Why are you late?" },
-          { "form": "How", "be": "nasıl", "example": "How do you go to work?" },
-          { "form": "How + sıfat", "be": "ne kadar", "example": "How old are you?" }
+          {
+            "form": "What",
+            "be": "ne",
+            "example": "What do you want?"
+          },
+          {
+            "form": "Where",
+            "be": "nerede",
+            "example": "Where does she live?"
+          },
+          {
+            "form": "Why",
+            "be": "neden",
+            "example": "Why are you late?"
+          },
+          {
+            "form": "How",
+            "be": "nasıl",
+            "example": "How do you go to work?"
+          },
+          {
+            "form": "How + sıfat",
+            "be": "ne kadar",
+            "example": "How old are you?"
+          }
         ]
       },
       "examples": [
-        { "en": "What is your name?", "tr": "Adın ne?", "note": "be cümlesinde be özneden önce." },
-        { "en": "Where do you live?", "tr": "Nerede yaşıyorsun?", "note": "Asıl fiilde do gerekir." },
-        { "en": "Why is the shop closed?", "tr": "Dükkân neden kapalı?", "note": "be soruya taşınır." },
-        { "en": "How much is this?", "tr": "Bu ne kadar?", "note": "How much fiyat sorar." },
-        { "en": "How far is the station?", "tr": "İstasyon ne kadar uzakta?", "note": "How + sıfat kalıbı." }
+        {
+          "en": "What is your name?",
+          "tr": "Adın ne?",
+          "note": "be cümlesinde be özneden önce."
+        },
+        {
+          "en": "Where do you live?",
+          "tr": "Nerede yaşıyorsun?",
+          "note": "Asıl fiilde do gerekir."
+        },
+        {
+          "en": "Why is the shop closed?",
+          "tr": "Dükkân neden kapalı?",
+          "note": "be soruya taşınır."
+        },
+        {
+          "en": "How much is this?",
+          "tr": "Bu ne kadar?",
+          "note": "How much fiyat sorar."
+        },
+        {
+          "en": "How far is the station?",
+          "tr": "İstasyon ne kadar uzakta?",
+          "note": "How + sıfat kalıbı."
+        }
       ],
       "mistakes": [
-        { "wrong": "Where you live?", "right": "Where do you live?", "why": "Soru kelimesi yardımcı fiili ortadan kaldırmaz." },
-        { "wrong": "What means this word?", "right": "What does this word mean?", "why": "Özne ile fiilin yeri değişmez, do eklenir." },
-        { "wrong": "How old you are?", "right": "How old are you?", "why": "be öznenin önüne geçer." }
+        {
+          "wrong": "Where you live?",
+          "right": "Where do you live?",
+          "why": "Soru kelimesi yardımcı fiili ortadan kaldırmaz."
+        },
+        {
+          "wrong": "What means this word?",
+          "right": "What does this word mean?",
+          "why": "Özne ile fiilin yeri değişmez, do eklenir."
+        },
+        {
+          "wrong": "How old you are?",
+          "right": "How old are you?",
+          "why": "be öznenin önüne geçer."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "___ do you work?", "options": ["Where", "What", "Who", "How much"], "answer": 0, "note": "Yer soruluyor → Where." },
-        { "type": "choice", "text": "Why ___ you angry?", "options": ["are", "do", "does", "is"], "answer": 0, "note": "you → are." },
-        { "type": "choice", "text": "___ does this bag cost?", "options": ["How much", "How many", "What many", "How old"], "answer": 0, "note": "Fiyat → How much." },
-        { "type": "choice", "text": "What ___ she do at weekends?", "options": ["does", "do", "is", "are"], "answer": 0, "note": "she → does." },
-        { "type": "gap", "text": "___ old is your brother?", "options": ["How", "What", "Why"], "answer": 0, "note": "Yaş → How old." }
+        {
+          "type": "choice",
+          "text": "___ do you work?",
+          "options": [
+            "Where",
+            "What",
+            "Who",
+            "How much"
+          ],
+          "answer": 0,
+          "note": "Yer soruluyor → Where."
+        },
+        {
+          "type": "choice",
+          "text": "Why ___ you angry?",
+          "options": [
+            "are",
+            "do",
+            "does",
+            "is"
+          ],
+          "answer": 0,
+          "note": "you → are."
+        },
+        {
+          "type": "choice",
+          "text": "___ does this bag cost?",
+          "options": [
+            "How much",
+            "How many",
+            "What many",
+            "How old"
+          ],
+          "answer": 0,
+          "note": "Fiyat → How much."
+        },
+        {
+          "type": "choice",
+          "text": "What ___ she do at weekends?",
+          "options": [
+            "does",
+            "do",
+            "is",
+            "are"
+          ],
+          "answer": 0,
+          "note": "she → does."
+        },
+        {
+          "type": "gap",
+          "text": "___ old is your brother?",
+          "options": [
+            "How",
+            "What",
+            "Why"
+          ],
+          "answer": 0,
+          "note": "Yaş → How old."
+        },
+        {
+          "type": "choice",
+          "text": "___ is your birthday?",
+          "options": [
+            "When",
+            "What",
+            "Who",
+            "How"
+          ],
+          "answer": 0,
+          "note": "Zaman → When."
+        },
+        {
+          "type": "choice",
+          "text": "___ do you live?",
+          "options": [
+            "Where",
+            "What",
+            "Who",
+            "When"
+          ],
+          "answer": 0,
+          "note": "Yer → Where."
+        },
+        {
+          "type": "choice",
+          "text": "___ old is this building?",
+          "options": [
+            "How",
+            "What",
+            "Which",
+            "Who"
+          ],
+          "answer": 0,
+          "note": "Yaş → How old."
+        },
+        {
+          "type": "gap",
+          "text": "___ is that man over there?",
+          "options": [
+            "Who",
+            "Where",
+            "When"
+          ],
+          "answer": 0,
+          "note": "Kişi → Who."
+        },
+        {
+          "type": "choice",
+          "text": "___ are you sad?",
+          "options": [
+            "Why",
+            "Who",
+            "Where",
+            "Which"
+          ],
+          "answer": 0,
+          "note": "Sebep → Why."
+        }
       ]
     },
     {
@@ -85,35 +430,202 @@
       "title": "Geçmiş zaman — was, were, -ed",
       "topic": "Past simple: be and lexical verbs",
       "canDo": "Dün ne yaptığımı ve nerede olduğumu anlatabilirim.",
-      "covers": ["TA.PAST.be.AFF", "TA.PAST.do.AFF"],
+      "covers": [
+        "TA.PAST.be.AFF",
+        "TA.PAST.do.AFF"
+      ],
       "concept": {
         "summary": "Bitmiş bir iş için kullanılır. be fiilinin geçmişi was ve were'dür. Diğer fiillerde sona -ed eklenir, ama sık kullanılan fiillerin çoğu düzensizdir ve ezberlenir.",
-        "formula": { "left": "was / were", "right": "fiil + -ed (ya da düzensiz biçim)" },
+        "formula": {
+          "left": "was / were",
+          "right": "fiil + -ed (ya da düzensiz biçim)"
+        },
         "table": [
-          { "form": "I / he / she / it", "be": "was", "example": "I was at home." },
-          { "form": "you / we / they", "be": "were", "example": "They were happy." },
-          { "form": "düzenli", "be": "+ed", "example": "work → worked" },
-          { "form": "düzensiz", "be": "biçim değişir", "example": "go → went, see → saw" }
+          {
+            "form": "I / he / she / it",
+            "be": "was",
+            "example": "I was at home."
+          },
+          {
+            "form": "you / we / they",
+            "be": "were",
+            "example": "They were happy."
+          },
+          {
+            "form": "düzenli",
+            "be": "+ed",
+            "example": "work → worked"
+          },
+          {
+            "form": "düzensiz",
+            "be": "biçim değişir",
+            "example": "go → went, see → saw"
+          }
         ]
       },
       "examples": [
-        { "en": "I was at work yesterday.", "tr": "Dün işteydim.", "note": "I → was." },
-        { "en": "They were very tired.", "tr": "Çok yorgunlardı.", "note": "they → were." },
-        { "en": "We watched a film last night.", "tr": "Dün gece bir film izledik.", "note": "Düzenli fiil → -ed." },
-        { "en": "She went to Ankara on Monday.", "tr": "Pazartesi Ankara'ya gitti.", "note": "go'nun geçmişi went." },
-        { "en": "He bought a new phone.", "tr": "Yeni bir telefon aldı.", "note": "buy → bought." }
+        {
+          "en": "I was at work yesterday.",
+          "tr": "Dün işteydim.",
+          "note": "I → was."
+        },
+        {
+          "en": "They were very tired.",
+          "tr": "Çok yorgunlardı.",
+          "note": "they → were."
+        },
+        {
+          "en": "We watched a film last night.",
+          "tr": "Dün gece bir film izledik.",
+          "note": "Düzenli fiil → -ed."
+        },
+        {
+          "en": "She went to Ankara on Monday.",
+          "tr": "Pazartesi Ankara'ya gitti.",
+          "note": "go'nun geçmişi went."
+        },
+        {
+          "en": "He bought a new phone.",
+          "tr": "Yeni bir telefon aldı.",
+          "note": "buy → bought."
+        }
       ],
       "mistakes": [
-        { "wrong": "They was late.", "right": "They were late.", "why": "Çoğul özne were alır." },
-        { "wrong": "She goed home.", "right": "She went home.", "why": "go düzensizdir, -ed almaz." },
-        { "wrong": "I was went there.", "right": "I went there.", "why": "İki geçmiş zaman üst üste gelmez." }
+        {
+          "wrong": "They was late.",
+          "right": "They were late.",
+          "why": "Çoğul özne were alır."
+        },
+        {
+          "wrong": "She goed home.",
+          "right": "She went home.",
+          "why": "go düzensizdir, -ed almaz."
+        },
+        {
+          "wrong": "I was went there.",
+          "right": "I went there.",
+          "why": "İki geçmiş zaman üst üste gelmez."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "We ___ at the cinema last night.", "options": ["were", "was", "are", "did"], "answer": 0, "note": "we → were." },
-        { "type": "choice", "text": "He ___ his homework yesterday.", "options": ["finished", "finish", "finishes", "was finish"], "answer": 0, "note": "Düzenli fiil → -ed." },
-        { "type": "choice", "text": "I ___ my keys this morning.", "options": ["lost", "losed", "lose", "was lose"], "answer": 0, "note": "lose → lost." },
-        { "type": "choice", "text": "The weather ___ terrible on Sunday.", "options": ["was", "were", "is", "did"], "answer": 0, "note": "weather = it → was." },
-        { "type": "gap", "text": "They ___ to Antalya last summer.", "options": ["went", "goed", "go"], "answer": 0, "note": "go → went." }
+        {
+          "type": "choice",
+          "text": "We ___ at the cinema last night.",
+          "options": [
+            "were",
+            "was",
+            "are",
+            "did"
+          ],
+          "answer": 0,
+          "note": "we → were."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ his homework yesterday.",
+          "options": [
+            "finished",
+            "finish",
+            "finishes",
+            "was finish"
+          ],
+          "answer": 0,
+          "note": "Düzenli fiil → -ed."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ my keys this morning.",
+          "options": [
+            "lost",
+            "losed",
+            "lose",
+            "was lose"
+          ],
+          "answer": 0,
+          "note": "lose → lost."
+        },
+        {
+          "type": "choice",
+          "text": "The weather ___ terrible on Sunday.",
+          "options": [
+            "was",
+            "were",
+            "is",
+            "did"
+          ],
+          "answer": 0,
+          "note": "weather = it → was."
+        },
+        {
+          "type": "gap",
+          "text": "They ___ to Antalya last summer.",
+          "options": [
+            "went",
+            "goed",
+            "go"
+          ],
+          "answer": 0,
+          "note": "go → went."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ at home yesterday.",
+          "options": [
+            "was",
+            "were",
+            "am",
+            "is"
+          ],
+          "answer": 0,
+          "note": "I → was."
+        },
+        {
+          "type": "choice",
+          "text": "They ___ to Izmir last summer.",
+          "options": [
+            "went",
+            "go",
+            "goes",
+            "gone"
+          ],
+          "answer": 0,
+          "note": "go fiilinin 2. hâli → went."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ a new coat last week.",
+          "options": [
+            "bought",
+            "buys",
+            "buy",
+            "buyed"
+          ],
+          "answer": 0,
+          "note": "buy düzensiz → bought."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ very tired after the trip.",
+          "options": [
+            "were",
+            "was",
+            "are"
+          ],
+          "answer": 0,
+          "note": "we → were."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ the film on Saturday.",
+          "options": [
+            "watched",
+            "watch",
+            "watches",
+            "watching"
+          ],
+          "answer": 0,
+          "note": "Düzenli fiil → -ed."
+        }
       ]
     },
     {
@@ -123,35 +635,202 @@
       "title": "Karşılaştırma: -er ve -est",
       "topic": "Comparative and superlative: -er / -est",
       "canDo": "İki şeyi karşılaştırabilir, bir grubun en iyisini söyleyebilirim.",
-      "covers": ["COMP.JJR.RBR.er", "COMP.JJS.RBS.est"],
+      "covers": [
+        "COMP.JJR.RBR.er",
+        "COMP.JJS.RBS.est"
+      ],
       "concept": {
         "summary": "Kısa sıfatlarda karşılaştırma ek ile yapılır: -er daha, -est en demektir. -er'den sonra than, -est'ten önce the gelir.",
-        "formula": { "left": "sıfat-er + than", "right": "the + sıfat-est" },
+        "formula": {
+          "left": "sıfat-er + than",
+          "right": "the + sıfat-est"
+        },
         "table": [
-          { "form": "tek heceli", "be": "+er / +est", "example": "old → older → the oldest" },
-          { "form": "sessiz e", "be": "+r / +st", "example": "large → larger → the largest" },
-          { "form": "ünsüz + y", "be": "y → ier / iest", "example": "easy → easier → the easiest" },
-          { "form": "düzensiz", "be": "biçim değişir", "example": "good → better → the best" }
+          {
+            "form": "tek heceli",
+            "be": "+er / +est",
+            "example": "old → older → the oldest"
+          },
+          {
+            "form": "sessiz e",
+            "be": "+r / +st",
+            "example": "large → larger → the largest"
+          },
+          {
+            "form": "ünsüz + y",
+            "be": "y → ier / iest",
+            "example": "easy → easier → the easiest"
+          },
+          {
+            "form": "düzensiz",
+            "be": "biçim değişir",
+            "example": "good → better → the best"
+          }
         ]
       },
       "examples": [
-        { "en": "My brother is taller than me.", "tr": "Kardeşim benden uzun.", "note": "-er'den sonra than." },
-        { "en": "This is the cheapest hotel in town.", "tr": "Bu, şehirdeki en ucuz otel.", "note": "-est'ten önce the." },
-        { "en": "Today is hotter than yesterday.", "tr": "Bugün dünden sıcak.", "note": "Tek heceli sıfatta son ünsüz ikizleşir." },
-        { "en": "She is the best student in the class.", "tr": "Sınıftaki en iyi öğrenci o.", "note": "good → the best." },
-        { "en": "The second book was easier.", "tr": "İkinci kitap daha kolaydı.", "note": "easy → easier." }
+        {
+          "en": "My brother is taller than me.",
+          "tr": "Kardeşim benden uzun.",
+          "note": "-er'den sonra than."
+        },
+        {
+          "en": "This is the cheapest hotel in town.",
+          "tr": "Bu, şehirdeki en ucuz otel.",
+          "note": "-est'ten önce the."
+        },
+        {
+          "en": "Today is hotter than yesterday.",
+          "tr": "Bugün dünden sıcak.",
+          "note": "Tek heceli sıfatta son ünsüz ikizleşir."
+        },
+        {
+          "en": "She is the best student in the class.",
+          "tr": "Sınıftaki en iyi öğrenci o.",
+          "note": "good → the best."
+        },
+        {
+          "en": "The second book was easier.",
+          "tr": "İkinci kitap daha kolaydı.",
+          "note": "easy → easier."
+        }
       ],
       "mistakes": [
-        { "wrong": "He is more tall than me.", "right": "He is taller than me.", "why": "Kısa sıfatta more değil -er kullanılır." },
-        { "wrong": "This is cheapest hotel.", "right": "This is the cheapest hotel.", "why": "En üstünlük derecesi the ister." },
-        { "wrong": "She is taller from me.", "right": "She is taller than me.", "why": "Karşılaştırma than ile kurulur." }
+        {
+          "wrong": "He is more tall than me.",
+          "right": "He is taller than me.",
+          "why": "Kısa sıfatta more değil -er kullanılır."
+        },
+        {
+          "wrong": "This is cheapest hotel.",
+          "right": "This is the cheapest hotel.",
+          "why": "En üstünlük derecesi the ister."
+        },
+        {
+          "wrong": "She is taller from me.",
+          "right": "She is taller than me.",
+          "why": "Karşılaştırma than ile kurulur."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "Winter is ___ than autumn.", "options": ["colder", "more cold", "coldest", "the colder"], "answer": 0, "note": "Tek heceli sıfat → -er." },
-        { "type": "choice", "text": "This is ___ day of the year.", "options": ["the longest", "longest", "longer", "more long"], "answer": 0, "note": "En üstünlük → the + -est." },
-        { "type": "choice", "text": "My new phone is ___ than the old one.", "options": ["faster", "more fast", "fastest", "fast"], "answer": 0, "note": "Karşılaştırma → -er + than." },
-        { "type": "choice", "text": "That was ___ film of the year.", "options": ["the worst", "the baddest", "worse", "the worse"], "answer": 0, "note": "bad → the worst; A1'de henüz görülmemiş bir zaman kullanmamak için cümle yalın tutuldu." },
-        { "type": "gap", "text": "This exercise is ___ than the first one.", "options": ["easier", "easyer", "more easy"], "answer": 0, "note": "y → ier." }
+        {
+          "type": "choice",
+          "text": "Winter is ___ than autumn.",
+          "options": [
+            "colder",
+            "more cold",
+            "coldest",
+            "the colder"
+          ],
+          "answer": 0,
+          "note": "Tek heceli sıfat → -er."
+        },
+        {
+          "type": "choice",
+          "text": "This is ___ day of the year.",
+          "options": [
+            "the longest",
+            "longest",
+            "longer",
+            "more long"
+          ],
+          "answer": 0,
+          "note": "En üstünlük → the + -est."
+        },
+        {
+          "type": "choice",
+          "text": "My new phone is ___ than the old one.",
+          "options": [
+            "faster",
+            "more fast",
+            "fastest",
+            "fast"
+          ],
+          "answer": 0,
+          "note": "Karşılaştırma → -er + than."
+        },
+        {
+          "type": "choice",
+          "text": "That was ___ film of the year.",
+          "options": [
+            "the worst",
+            "the baddest",
+            "worse",
+            "the worse"
+          ],
+          "answer": 0,
+          "note": "bad → the worst; A1'de henüz görülmemiş bir zaman kullanmamak için cümle yalın tutuldu."
+        },
+        {
+          "type": "gap",
+          "text": "This exercise is ___ than the first one.",
+          "options": [
+            "easier",
+            "easyer",
+            "more easy"
+          ],
+          "answer": 0,
+          "note": "y → ier."
+        },
+        {
+          "type": "choice",
+          "text": "My bag is ___ than yours.",
+          "options": [
+            "heavier",
+            "heavy",
+            "heaviest",
+            "more heavy"
+          ],
+          "answer": 0,
+          "note": "İki heceli -y → -ier."
+        },
+        {
+          "type": "choice",
+          "text": "This is the ___ day of the year.",
+          "options": [
+            "longest",
+            "longer",
+            "long",
+            "most long"
+          ],
+          "answer": 0,
+          "note": "En üstünlük → the -est."
+        },
+        {
+          "type": "choice",
+          "text": "Ali is ___ than his brother.",
+          "options": [
+            "taller",
+            "tall",
+            "tallest",
+            "more tall"
+          ],
+          "answer": 0,
+          "note": "Kısa sıfat → -er."
+        },
+        {
+          "type": "gap",
+          "text": "Today is ___ than yesterday.",
+          "options": [
+            "colder",
+            "cold",
+            "coldest"
+          ],
+          "answer": 0,
+          "note": "than → karşılaştırma."
+        },
+        {
+          "type": "choice",
+          "text": "That was the ___ book in the shop.",
+          "options": [
+            "cheapest",
+            "cheaper",
+            "cheap",
+            "more cheap"
+          ],
+          "answer": 0,
+          "note": "the + -est."
+        }
       ]
     },
     {
@@ -161,35 +840,201 @@
       "title": "in, on, at — yer ve zaman",
       "topic": "Basic prepositions of place and time",
       "canDo": "Bir şeyin nerede ve ne zaman olduğunu söyleyebilirim.",
-      "covers": ["IN.PREP.GENERAL"],
+      "covers": [
+        "IN.PREP.GENERAL"
+      ],
       "concept": {
         "summary": "Türkçede tek bir -de eki bu üç edatın işini görür, o yüzden ayrımı ezberlemek gerekir. Genel kural: alan için in, yüzey için on, nokta için at.",
-        "formula": { "left": "yer: in > on > at", "right": "zaman: in > on > at" },
+        "formula": {
+          "left": "yer: in > on > at",
+          "right": "zaman: in > on > at"
+        },
         "table": [
-          { "form": "in", "be": "geniş alan / uzun süre", "example": "in Turkey, in May, in the morning" },
-          { "form": "on", "be": "yüzey / gün", "example": "on the table, on Monday" },
-          { "form": "at", "be": "nokta / saat", "example": "at the door, at seven o'clock" },
-          { "form": "istisna", "be": "at night", "example": "I work at night." }
+          {
+            "form": "in",
+            "be": "geniş alan / uzun süre",
+            "example": "in Turkey, in May, in the morning"
+          },
+          {
+            "form": "on",
+            "be": "yüzey / gün",
+            "example": "on the table, on Monday"
+          },
+          {
+            "form": "at",
+            "be": "nokta / saat",
+            "example": "at the door, at seven o'clock"
+          },
+          {
+            "form": "istisna",
+            "be": "at night",
+            "example": "I work at night."
+          }
         ]
       },
       "examples": [
-        { "en": "The keys are on the table.", "tr": "Anahtarlar masanın üstünde.", "note": "Yüzey → on." },
-        { "en": "She lives in Istanbul.", "tr": "İstanbul'da yaşıyor.", "note": "Şehir → in." },
-        { "en": "We meet at the bus stop.", "tr": "Otobüs durağında buluşuyoruz.", "note": "Belirli nokta → at." },
-        { "en": "My birthday is in July.", "tr": "Doğum günüm temmuzda.", "note": "Ay → in." },
-        { "en": "The class starts at nine.", "tr": "Ders dokuzda başlıyor.", "note": "Saat → at." }
+        {
+          "en": "The keys are on the table.",
+          "tr": "Anahtarlar masanın üstünde.",
+          "note": "Yüzey → on."
+        },
+        {
+          "en": "She lives in Istanbul.",
+          "tr": "İstanbul'da yaşıyor.",
+          "note": "Şehir → in."
+        },
+        {
+          "en": "We meet at the bus stop.",
+          "tr": "Otobüs durağında buluşuyoruz.",
+          "note": "Belirli nokta → at."
+        },
+        {
+          "en": "My birthday is in July.",
+          "tr": "Doğum günüm temmuzda.",
+          "note": "Ay → in."
+        },
+        {
+          "en": "The class starts at nine.",
+          "tr": "Ders dokuzda başlıyor.",
+          "note": "Saat → at."
+        }
       ],
       "mistakes": [
-        { "wrong": "I live at Istanbul.", "right": "I live in Istanbul.", "why": "Şehir bir alandır → in." },
-        { "wrong": "See you in Monday.", "right": "See you on Monday.", "why": "Günlerde on kullanılır." },
-        { "wrong": "The film starts in eight.", "right": "The film starts at eight.", "why": "Saatte at kullanılır." }
+        {
+          "wrong": "I live at Istanbul.",
+          "right": "I live in Istanbul.",
+          "why": "Şehir bir alandır → in."
+        },
+        {
+          "wrong": "See you in Monday.",
+          "right": "See you on Monday.",
+          "why": "Günlerde on kullanılır."
+        },
+        {
+          "wrong": "The film starts in eight.",
+          "right": "The film starts at eight.",
+          "why": "Saatte at kullanılır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "The cat is ___ the box.", "options": ["in", "on", "at", "to"], "answer": 0, "note": "Kutunun içi → in." },
-        { "type": "choice", "text": "We have a meeting ___ Friday.", "options": ["on", "in", "at", "to"], "answer": 0, "note": "Gün → on." },
-        { "type": "choice", "text": "I wake up ___ six o'clock.", "options": ["at", "in", "on", "by"], "answer": 0, "note": "Saat → at." },
-        { "type": "choice", "text": "She was born ___ 1998.", "options": ["in", "on", "at", "from"], "answer": 0, "note": "Yıl → in." },
-        { "type": "gap", "text": "Your book is ___ the shelf.", "options": ["on", "in", "at"], "answer": 0, "note": "Raf bir yüzeydir → on." }
+        {
+          "type": "choice",
+          "text": "The cat is ___ the box.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Kutunun içi → in."
+        },
+        {
+          "type": "choice",
+          "text": "We have a meeting ___ Friday.",
+          "options": [
+            "on",
+            "in",
+            "at",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Gün → on."
+        },
+        {
+          "type": "choice",
+          "text": "I wake up ___ six o'clock.",
+          "options": [
+            "at",
+            "in",
+            "on",
+            "by"
+          ],
+          "answer": 0,
+          "note": "Saat → at."
+        },
+        {
+          "type": "choice",
+          "text": "She was born ___ 1998.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "from"
+          ],
+          "answer": 0,
+          "note": "Yıl → in."
+        },
+        {
+          "type": "gap",
+          "text": "Your book is ___ the shelf.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": 0,
+          "note": "Raf bir yüzeydir → on."
+        },
+        {
+          "type": "choice",
+          "text": "The class starts ___ nine o'clock.",
+          "options": [
+            "at",
+            "in",
+            "on",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Saat → at."
+        },
+        {
+          "type": "choice",
+          "text": "My birthday is ___ June.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Ay → in."
+        },
+        {
+          "type": "choice",
+          "text": "We meet ___ Monday morning.",
+          "options": [
+            "on",
+            "in",
+            "at",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Belirli gün → on."
+        },
+        {
+          "type": "gap",
+          "text": "The keys are ___ the table.",
+          "options": [
+            "on",
+            "in",
+            "at"
+          ],
+          "answer": 0,
+          "note": "Yüzey üstü → on."
+        },
+        {
+          "type": "choice",
+          "text": "She lives ___ a small village.",
+          "options": [
+            "in",
+            "on",
+            "at",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Yerleşim yeri → in."
+        }
       ]
     },
     {
@@ -199,36 +1044,209 @@
       "title": "and, but, or — because, when",
       "topic": "Coordinating and simple subordinating conjunctions",
       "canDo": "İki fikri birleştirebilir, sebep ve zaman belirtebilirim.",
-      "covers": ["CC", "CL.when", "CL_after.etc", "CL.that.OMIT"],
+      "covers": [
+        "CC",
+        "CL.when",
+        "CL_after.etc",
+        "CL.that.OMIT"
+      ],
       "concept": {
         "summary": "and, but ve or iki eşit parçayı birleştirir. because sebep, when ve before/after zaman bildirir ve kendi cümleciğini kurar. think, know, hope gibi fiillerden sonra gelen that günlük dilde düşürülebilir.",
-        "formula": { "left": "cümle + and / but / or + cümle", "right": "because / when / after + cümle" },
+        "formula": {
+          "left": "cümle + and / but / or + cümle",
+          "right": "because / when / after + cümle"
+        },
         "table": [
-          { "form": "and", "be": "ekleme", "example": "I called and left a message." },
-          { "form": "but", "be": "karşıtlık", "example": "It is small but comfortable." },
-          { "form": "or", "be": "seçenek", "example": "Tea or coffee?" },
-          { "form": "because", "be": "sebep", "example": "I stayed because it rained." },
-          { "form": "when", "be": "zaman", "example": "Call me when you arrive." }
+          {
+            "form": "and",
+            "be": "ekleme",
+            "example": "I called and left a message."
+          },
+          {
+            "form": "but",
+            "be": "karşıtlık",
+            "example": "It is small but comfortable."
+          },
+          {
+            "form": "or",
+            "be": "seçenek",
+            "example": "Tea or coffee?"
+          },
+          {
+            "form": "because",
+            "be": "sebep",
+            "example": "I stayed because it rained."
+          },
+          {
+            "form": "when",
+            "be": "zaman",
+            "example": "Call me when you arrive."
+          }
         ]
       },
       "examples": [
-        { "en": "I like tea and coffee.", "tr": "Çayı da kahveyi de severim.", "note": "and iki nesneyi birleştirir." },
-        { "en": "The room is small but clean.", "tr": "Oda küçük ama temiz.", "note": "but karşıtlık kurar." },
-        { "en": "We stayed at home because it was raining.", "tr": "Yağmur yağdığı için evde kaldık.", "note": "because sebep bildirir." },
-        { "en": "I brush my teeth before I go to bed.", "tr": "Yatmadan önce dişlerimi fırçalarım.", "note": "before kendi cümleciğini kurar." },
-        { "en": "I think you are right.", "tr": "Bence haklısın.", "note": "think'ten sonra that düşürülmüş." }
+        {
+          "en": "I like tea and coffee.",
+          "tr": "Çayı da kahveyi de severim.",
+          "note": "and iki nesneyi birleştirir."
+        },
+        {
+          "en": "The room is small but clean.",
+          "tr": "Oda küçük ama temiz.",
+          "note": "but karşıtlık kurar."
+        },
+        {
+          "en": "We stayed at home because it was raining.",
+          "tr": "Yağmur yağdığı için evde kaldık.",
+          "note": "because sebep bildirir."
+        },
+        {
+          "en": "I brush my teeth before I go to bed.",
+          "tr": "Yatmadan önce dişlerimi fırçalarım.",
+          "note": "before kendi cümleciğini kurar."
+        },
+        {
+          "en": "I think you are right.",
+          "tr": "Bence haklısın.",
+          "note": "think'ten sonra that düşürülmüş."
+        }
       ],
       "mistakes": [
-        { "wrong": "I like tea, I like coffee.", "right": "I like tea and coffee.", "why": "İki cümleyi virgül tek başına birleştiremez." },
-        { "wrong": "Because it was raining. We stayed home.", "right": "We stayed home because it was raining.", "why": "because'lu parça tek başına cümle olmaz." },
-        { "wrong": "I will call you when I will arrive.", "right": "I will call you when I arrive.", "why": "when'li cümlecikte gelecek zaman kullanılmaz." }
+        {
+          "wrong": "I like tea, I like coffee.",
+          "right": "I like tea and coffee.",
+          "why": "İki cümleyi virgül tek başına birleştiremez."
+        },
+        {
+          "wrong": "Because it was raining. We stayed home.",
+          "right": "We stayed home because it was raining.",
+          "why": "because'lu parça tek başına cümle olmaz."
+        },
+        {
+          "wrong": "I will call you when I will arrive.",
+          "right": "I will call you when I arrive.",
+          "why": "when'li cümlecikte gelecek zaman kullanılmaz."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "I was tired, ___ I finished the work.", "options": ["but", "and so", "because", "or"], "answer": 0, "note": "Beklenmedik karşıtlık → but." },
-        { "type": "choice", "text": "She stayed home ___ she was ill.", "options": ["because", "but", "or", "when to"], "answer": 0, "note": "Sebep → because." },
-        { "type": "choice", "text": "Would you like tea ___ coffee?", "options": ["or", "and", "but", "because"], "answer": 0, "note": "Seçenek → or." },
-        { "type": "choice", "text": "Text me ___ you get home.", "options": ["when", "but", "or", "because of"], "answer": 0, "note": "Zaman → when." },
-        { "type": "gap", "text": "I know ___ you are busy today.", "options": ["that", "what", "which"], "answer": 0, "note": "know, think ve hope'tan sonra that gelir; günlük dilde düşürülebilir." }
+        {
+          "type": "choice",
+          "text": "I was tired, ___ I finished the work.",
+          "options": [
+            "but",
+            "and so",
+            "because",
+            "or"
+          ],
+          "answer": 0,
+          "note": "Beklenmedik karşıtlık → but."
+        },
+        {
+          "type": "choice",
+          "text": "She stayed home ___ she was ill.",
+          "options": [
+            "because",
+            "but",
+            "or",
+            "when to"
+          ],
+          "answer": 0,
+          "note": "Sebep → because."
+        },
+        {
+          "type": "choice",
+          "text": "Would you like tea ___ coffee?",
+          "options": [
+            "or",
+            "and",
+            "but",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Seçenek → or."
+        },
+        {
+          "type": "choice",
+          "text": "Text me ___ you get home.",
+          "options": [
+            "when",
+            "but",
+            "or",
+            "because of"
+          ],
+          "answer": 0,
+          "note": "Zaman → when."
+        },
+        {
+          "type": "gap",
+          "text": "I know ___ you are busy today.",
+          "options": [
+            "that",
+            "what",
+            "which"
+          ],
+          "answer": 0,
+          "note": "know, think ve hope'tan sonra that gelir; günlük dilde düşürülebilir."
+        },
+        {
+          "type": "choice",
+          "text": "I went to bed early ___ I was tired.",
+          "options": [
+            "because",
+            "but",
+            "or",
+            "and"
+          ],
+          "answer": 0,
+          "note": "Sebep → because."
+        },
+        {
+          "type": "choice",
+          "text": "Do you want tea ___ coffee?",
+          "options": [
+            "or",
+            "and",
+            "but",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Seçenek → or."
+        },
+        {
+          "type": "choice",
+          "text": "It was late, ___ we stayed.",
+          "options": [
+            "but",
+            "or",
+            "because",
+            "when"
+          ],
+          "answer": 0,
+          "note": "Zıtlık → but."
+        },
+        {
+          "type": "gap",
+          "text": "___ I was young, we lived in Bursa.",
+          "options": [
+            "When",
+            "But",
+            "Or"
+          ],
+          "answer": 0,
+          "note": "Zaman → when."
+        },
+        {
+          "type": "choice",
+          "text": "She opened the door ___ looked outside.",
+          "options": [
+            "and",
+            "but",
+            "or",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Ekleme → and."
+        }
       ]
     }
   ]

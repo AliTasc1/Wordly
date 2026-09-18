@@ -1,5 +1,9 @@
 {
-  "_meta": { "batch": "a1-04", "level": "A1", "range": "Ders 19-22 — to + fiil, -ing, belgisiz zamirler, öbek fiiller" },
+  "_meta": {
+    "batch": "a1-04",
+    "level": "A1",
+    "range": "Ders 19-22 — to + fiil, -ing, belgisiz zamirler, öbek fiiller"
+  },
   "lessons": [
     {
       "id": "a1-19-to-infinitive",
@@ -8,35 +12,203 @@
       "title": "want to, need to, would like to",
       "topic": "To-infinitive after verbs",
       "canDo": "Ne istediğimi ve ne yapmam gerektiğini söyleyebilirim.",
-      "covers": ["TO.to_do", "TO.VV_to_do", "TO.VV_NP_to_do"],
+      "covers": [
+        "TO.to_do",
+        "TO.VV_to_do",
+        "TO.VV_NP_to_do"
+      ],
       "concept": {
         "summary": "Bazı fiillerden sonra ikinci fiil yalın gelmez, başına to alır. Araya bir kişi girebilir: want somebody to do. Türkçede bu yapı \"-mesini istemek\" ekiyle karşılanır, o yüzden to unutulur.",
-        "formula": { "left": "want / need / would like", "right": "+ to + yalın fiil" },
+        "formula": {
+          "left": "want / need / would like",
+          "right": "+ to + yalın fiil"
+        },
         "table": [
-          { "form": "want to", "be": "istemek", "example": "I want to go." },
-          { "form": "need to", "be": "gerekmek", "example": "You need to rest." },
-          { "form": "would like to", "be": "nazik istek", "example": "I would like to book a room." },
-          { "form": "want + kişi + to", "be": "birinden istemek", "example": "I want you to call me." }
+          {
+            "form": "want to",
+            "be": "istemek",
+            "example": "I want to go."
+          },
+          {
+            "form": "need to",
+            "be": "gerekmek",
+            "example": "You need to rest."
+          },
+          {
+            "form": "would like to",
+            "be": "nazik istek",
+            "example": "I would like to book a room."
+          },
+          {
+            "form": "want + kişi + to",
+            "be": "birinden istemek",
+            "example": "I want you to call me."
+          }
         ]
       },
       "examples": [
-        { "en": "I want to learn English.", "tr": "İngilizce öğrenmek istiyorum.", "note": "want'tan sonra to + fiil." },
-        { "en": "She needs to leave early.", "tr": "Erken çıkması gerekiyor.", "note": "needs çekildi, ikinci fiil to aldı." },
-        { "en": "We would like to see the menu.", "tr": "Menüyü görmek isteriz.", "note": "Restoranda nazik istek." },
-        { "en": "My boss wants me to work on Saturday.", "tr": "Patronum cumartesi çalışmamı istiyor.", "note": "Araya kişi girdi: wants me to." },
-        { "en": "I forgot to lock the door.", "tr": "Kapıyı kilitlemeyi unuttum.", "note": "forget de to ister." }
+        {
+          "en": "I want to learn English.",
+          "tr": "İngilizce öğrenmek istiyorum.",
+          "note": "want'tan sonra to + fiil."
+        },
+        {
+          "en": "She needs to leave early.",
+          "tr": "Erken çıkması gerekiyor.",
+          "note": "needs çekildi, ikinci fiil to aldı."
+        },
+        {
+          "en": "We would like to see the menu.",
+          "tr": "Menüyü görmek isteriz.",
+          "note": "Restoranda nazik istek."
+        },
+        {
+          "en": "My boss wants me to work on Saturday.",
+          "tr": "Patronum cumartesi çalışmamı istiyor.",
+          "note": "Araya kişi girdi: wants me to."
+        },
+        {
+          "en": "I forgot to lock the door.",
+          "tr": "Kapıyı kilitlemeyi unuttum.",
+          "note": "forget de to ister."
+        }
       ],
       "mistakes": [
-        { "wrong": "I want learn English.", "right": "I want to learn English.", "why": "want'tan sonra to düşmez." },
-        { "wrong": "I want that you call me.", "right": "I want you to call me.", "why": "İngilizcede bu yapı that ile kurulmaz." },
-        { "wrong": "She needs to leaves early.", "right": "She needs to leave early.", "why": "to'dan sonra fiil yalın kalır." }
+        {
+          "wrong": "I want learn English.",
+          "right": "I want to learn English.",
+          "why": "want'tan sonra to düşmez."
+        },
+        {
+          "wrong": "I want that you call me.",
+          "right": "I want you to call me.",
+          "why": "İngilizcede bu yapı that ile kurulmaz."
+        },
+        {
+          "wrong": "She needs to leaves early.",
+          "right": "She needs to leave early.",
+          "why": "to'dan sonra fiil yalın kalır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "I want ___ a new laptop.", "options": ["to buy", "buy", "buying", "to buying"], "answer": 0, "note": "want + to + yalın fiil." },
-        { "type": "choice", "text": "You need ___ more water.", "options": ["to drink", "drink", "drinking", "drinks"], "answer": 0, "note": "need + to." },
-        { "type": "choice", "text": "She wants ___ to help her.", "options": ["us", "we", "our", "ours"], "answer": 0, "note": "Araya giren kişi nesne biçiminde olur." },
-        { "type": "choice", "text": "Would you like ___ something?", "options": ["to eat", "eat", "eating", "ate"], "answer": 0, "note": "would like + to." },
-        { "type": "gap", "text": "Don't forget ___ me tonight.", "options": ["to call", "call", "calling"], "answer": 0, "note": "forget + to = yapmayı unutmak." }
+        {
+          "type": "choice",
+          "text": "I want ___ a new laptop.",
+          "options": [
+            "to buy",
+            "buy",
+            "buying",
+            "to buying"
+          ],
+          "answer": 0,
+          "note": "want + to + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "You need ___ more water.",
+          "options": [
+            "to drink",
+            "drink",
+            "drinking",
+            "drinks"
+          ],
+          "answer": 0,
+          "note": "need + to."
+        },
+        {
+          "type": "choice",
+          "text": "She wants ___ to help her.",
+          "options": [
+            "us",
+            "we",
+            "our",
+            "ours"
+          ],
+          "answer": 0,
+          "note": "Araya giren kişi nesne biçiminde olur."
+        },
+        {
+          "type": "choice",
+          "text": "Would you like ___ something?",
+          "options": [
+            "to eat",
+            "eat",
+            "eating",
+            "ate"
+          ],
+          "answer": 0,
+          "note": "would like + to."
+        },
+        {
+          "type": "gap",
+          "text": "Don't forget ___ me tonight.",
+          "options": [
+            "to call",
+            "call",
+            "calling"
+          ],
+          "answer": 0,
+          "note": "forget + to = yapmayı unutmak."
+        },
+        {
+          "type": "choice",
+          "text": "I want ___ a new phone.",
+          "options": [
+            "to buy",
+            "buy",
+            "buying",
+            "bought"
+          ],
+          "answer": 0,
+          "note": "want + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "She needs ___ early tomorrow.",
+          "options": [
+            "to get up",
+            "get up",
+            "getting up",
+            "gets up"
+          ],
+          "answer": 0,
+          "note": "need + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "I would like ___ you a question.",
+          "options": [
+            "to ask",
+            "ask",
+            "asking",
+            "asks"
+          ],
+          "answer": 0,
+          "note": "would like + to + fiil."
+        },
+        {
+          "type": "gap",
+          "text": "We need ___ some bread.",
+          "options": [
+            "to buy",
+            "buy",
+            "buying"
+          ],
+          "answer": 0,
+          "note": "need to."
+        },
+        {
+          "type": "choice",
+          "text": "He wants ___ a doctor.",
+          "options": [
+            "to be",
+            "be",
+            "being",
+            "is"
+          ],
+          "answer": 0,
+          "note": "want to be."
+        }
       ]
     },
     {
@@ -46,35 +218,203 @@
       "title": "like + V-ing",
       "topic": "Verb + -ing, preposition + -ing",
       "canDo": "Nelerden hoşlandığımı söyleyebilirim.",
-      "covers": ["VG", "VG.VV_VG", "VG.PREP_VG"],
+      "covers": [
+        "VG",
+        "VG.VV_VG",
+        "VG.PREP_VG"
+      ],
       "concept": {
         "summary": "like, love, enjoy ve hate fiillerinden sonra ikinci fiil -ing alır. Edatlardan sonra da her zaman -ing gelir: at, of, about ne olursa olsun, ardından gelen fiil -ing'lidir.",
-        "formula": { "left": "like / love / enjoy / hate", "right": "+ fiil-ing" },
+        "formula": {
+          "left": "like / love / enjoy / hate",
+          "right": "+ fiil-ing"
+        },
         "table": [
-          { "form": "like", "be": "+ -ing", "example": "I like swimming." },
-          { "form": "enjoy", "be": "+ -ing", "example": "She enjoys cooking." },
-          { "form": "hate", "be": "+ -ing", "example": "He hates waiting." },
-          { "form": "edat + -ing", "be": "her zaman", "example": "good at drawing" }
+          {
+            "form": "like",
+            "be": "+ -ing",
+            "example": "I like swimming."
+          },
+          {
+            "form": "enjoy",
+            "be": "+ -ing",
+            "example": "She enjoys cooking."
+          },
+          {
+            "form": "hate",
+            "be": "+ -ing",
+            "example": "He hates waiting."
+          },
+          {
+            "form": "edat + -ing",
+            "be": "her zaman",
+            "example": "good at drawing"
+          }
         ]
       },
       "examples": [
-        { "en": "I like reading before bed.", "tr": "Yatmadan önce okumayı severim.", "note": "like + -ing." },
-        { "en": "She enjoys walking in the park.", "tr": "Parkta yürümekten hoşlanır.", "note": "enjoy her zaman -ing ister." },
-        { "en": "He is good at cooking.", "tr": "Yemek yapmakta iyidir.", "note": "at edatından sonra -ing." },
-        { "en": "Thank you for coming.", "tr": "Geldiğiniz için teşekkürler.", "note": "for edatından sonra -ing." },
-        { "en": "They hate getting up early.", "tr": "Erken kalkmaktan nefret ederler.", "note": "hate + -ing." }
+        {
+          "en": "I like reading before bed.",
+          "tr": "Yatmadan önce okumayı severim.",
+          "note": "like + -ing."
+        },
+        {
+          "en": "She enjoys walking in the park.",
+          "tr": "Parkta yürümekten hoşlanır.",
+          "note": "enjoy her zaman -ing ister."
+        },
+        {
+          "en": "He is good at cooking.",
+          "tr": "Yemek yapmakta iyidir.",
+          "note": "at edatından sonra -ing."
+        },
+        {
+          "en": "Thank you for coming.",
+          "tr": "Geldiğiniz için teşekkürler.",
+          "note": "for edatından sonra -ing."
+        },
+        {
+          "en": "They hate getting up early.",
+          "tr": "Erken kalkmaktan nefret ederler.",
+          "note": "hate + -ing."
+        }
       ],
       "mistakes": [
-        { "wrong": "I like to swimming.", "right": "I like swimming.", "why": "to ile -ing birlikte kullanılmaz." },
-        { "wrong": "She is good at cook.", "right": "She is good at cooking.", "why": "Edattan sonra fiil -ing alır." },
-        { "wrong": "Thank you for come.", "right": "Thank you for coming.", "why": "for bir edattır." }
+        {
+          "wrong": "I like to swimming.",
+          "right": "I like swimming.",
+          "why": "to ile -ing birlikte kullanılmaz."
+        },
+        {
+          "wrong": "She is good at cook.",
+          "right": "She is good at cooking.",
+          "why": "Edattan sonra fiil -ing alır."
+        },
+        {
+          "wrong": "Thank you for come.",
+          "right": "Thank you for coming.",
+          "why": "for bir edattır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "I enjoy ___ to music.", "options": ["listening", "listen", "to listen", "listens"], "answer": 0, "note": "enjoy + -ing." },
-        { "type": "choice", "text": "She is interested in ___ photography.", "options": ["learning", "learn", "to learn", "learns"], "answer": 0, "note": "in edatından sonra -ing." },
-        { "type": "choice", "text": "They hate ___ in traffic.", "options": ["sitting", "sit", "to sitting", "sits"], "answer": 0, "note": "hate + -ing." },
-        { "type": "choice", "text": "Thanks for ___ me.", "options": ["helping", "help", "to help", "helped"], "answer": 0, "note": "for edatı → -ing." },
-        { "type": "gap", "text": "He loves ___ football at weekends.", "options": ["playing", "play", "to playing"], "answer": 0, "note": "love + -ing." }
+        {
+          "type": "choice",
+          "text": "I enjoy ___ to music.",
+          "options": [
+            "listening",
+            "listen",
+            "to listen",
+            "listens"
+          ],
+          "answer": 0,
+          "note": "enjoy + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "She is interested in ___ photography.",
+          "options": [
+            "learning",
+            "learn",
+            "to learn",
+            "learns"
+          ],
+          "answer": 0,
+          "note": "in edatından sonra -ing."
+        },
+        {
+          "type": "choice",
+          "text": "They hate ___ in traffic.",
+          "options": [
+            "sitting",
+            "sit",
+            "to sitting",
+            "sits"
+          ],
+          "answer": 0,
+          "note": "hate + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "Thanks for ___ me.",
+          "options": [
+            "helping",
+            "help",
+            "to help",
+            "helped"
+          ],
+          "answer": 0,
+          "note": "for edatı → -ing."
+        },
+        {
+          "type": "gap",
+          "text": "He loves ___ football at weekends.",
+          "options": [
+            "playing",
+            "play",
+            "to playing"
+          ],
+          "answer": 0,
+          "note": "love + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "I like ___ in the park.",
+          "options": [
+            "walking",
+            "walk",
+            "walks",
+            "walked"
+          ],
+          "answer": 0,
+          "note": "like + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "She hates ___ up early.",
+          "options": [
+            "getting",
+            "get",
+            "gets",
+            "got"
+          ],
+          "answer": 0,
+          "note": "hate + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "Do you enjoy ___ films?",
+          "options": [
+            "watching",
+            "watch",
+            "watches",
+            "watched"
+          ],
+          "answer": 0,
+          "note": "enjoy her zaman V-ing alır."
+        },
+        {
+          "type": "gap",
+          "text": "They love ___ football.",
+          "options": [
+            "playing",
+            "play",
+            "plays"
+          ],
+          "answer": 0,
+          "note": "love + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "He does not like ___ in the rain.",
+          "options": [
+            "running",
+            "run",
+            "runs",
+            "ran"
+          ],
+          "answer": 0,
+          "note": "like + V-ing."
+        }
       ]
     },
     {
@@ -84,35 +424,201 @@
       "title": "somebody, anything, nobody",
       "topic": "Indefinite pronouns",
       "canDo": "Kim ve ne olduğunu bilmediğim şeylerden söz edebilirim.",
-      "covers": ["PIND.nobody.anything.etc"],
+      "covers": [
+        "PIND.nobody.anything.etc"
+      ],
       "concept": {
         "summary": "some-, any-, no- ve every- ön parçaları -body, -thing ve -where ile birleşir. Kural some/any kuralının aynısıdır: olumluda some-, olumsuz ve soruda any-. Hepsi tekildir, fiil de tekil gelir.",
-        "formula": { "left": "some / any / no / every", "right": "+ body / thing / where" },
+        "formula": {
+          "left": "some / any / no / every",
+          "right": "+ body / thing / where"
+        },
         "table": [
-          { "form": "olumlu", "be": "somebody, something", "example": "Somebody is at the door." },
-          { "form": "olumsuz/soru", "be": "anybody, anything", "example": "I don't know anybody here." },
-          { "form": "no-", "be": "tek başına olumsuz", "example": "Nobody answered." },
-          { "form": "every-", "be": "herkes / her şey", "example": "Everything is ready." }
+          {
+            "form": "olumlu",
+            "be": "somebody, something",
+            "example": "Somebody is at the door."
+          },
+          {
+            "form": "olumsuz/soru",
+            "be": "anybody, anything",
+            "example": "I don't know anybody here."
+          },
+          {
+            "form": "no-",
+            "be": "tek başına olumsuz",
+            "example": "Nobody answered."
+          },
+          {
+            "form": "every-",
+            "be": "herkes / her şey",
+            "example": "Everything is ready."
+          }
         ]
       },
       "examples": [
-        { "en": "Somebody called you.", "tr": "Biri seni aradı.", "note": "Olumlu cümle → some-." },
-        { "en": "I didn't see anything.", "tr": "Hiçbir şey görmedim.", "note": "Olumsuz cümle → any-." },
-        { "en": "Nobody knows the answer.", "tr": "Kimse cevabı bilmiyor.", "note": "no- tek başına olumsuz." },
-        { "en": "Everything is fine.", "tr": "Her şey yolunda.", "note": "Tekil fiil: is." },
-        { "en": "Is there anywhere to sit?", "tr": "Oturacak bir yer var mı?", "note": "Soruda any-." }
+        {
+          "en": "Somebody called you.",
+          "tr": "Biri seni aradı.",
+          "note": "Olumlu cümle → some-."
+        },
+        {
+          "en": "I didn't see anything.",
+          "tr": "Hiçbir şey görmedim.",
+          "note": "Olumsuz cümle → any-."
+        },
+        {
+          "en": "Nobody knows the answer.",
+          "tr": "Kimse cevabı bilmiyor.",
+          "note": "no- tek başına olumsuz."
+        },
+        {
+          "en": "Everything is fine.",
+          "tr": "Her şey yolunda.",
+          "note": "Tekil fiil: is."
+        },
+        {
+          "en": "Is there anywhere to sit?",
+          "tr": "Oturacak bir yer var mı?",
+          "note": "Soruda any-."
+        }
       ],
       "mistakes": [
-        { "wrong": "I didn't see nothing.", "right": "I didn't see anything.", "why": "Bir cümlede iki olumsuzluk olmaz." },
-        { "wrong": "Everything are ready.", "right": "Everything is ready.", "why": "Bu zamirler tekildir." },
-        { "wrong": "Nobody don't came.", "right": "Nobody came.", "why": "nobody olumsuzluğu kendi taşır." }
+        {
+          "wrong": "I didn't see nothing.",
+          "right": "I didn't see anything.",
+          "why": "Bir cümlede iki olumsuzluk olmaz."
+        },
+        {
+          "wrong": "Everything are ready.",
+          "right": "Everything is ready.",
+          "why": "Bu zamirler tekildir."
+        },
+        {
+          "wrong": "Nobody don't came.",
+          "right": "Nobody came.",
+          "why": "nobody olumsuzluğu kendi taşır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "___ is waiting for you outside.", "options": ["Somebody", "Anybody", "Nobody not", "Everybody are"], "answer": 0, "note": "Olumlu cümle → Somebody." },
-        { "type": "choice", "text": "I don't need ___ .", "options": ["anything", "nothing", "something not", "everything not"], "answer": 0, "note": "Olumsuz cümle → anything." },
-        { "type": "choice", "text": "___ answered the phone.", "options": ["Nobody", "Not anybody", "Anybody not", "Nothing"], "answer": 0, "note": "Kimse yanıtlamadı → Nobody." },
-        { "type": "choice", "text": "Everybody ___ here now.", "options": ["is", "are", "were", "have"], "answer": 0, "note": "Belgisiz zamirler tekildir." },
-        { "type": "gap", "text": "Did you go ___ last weekend?", "options": ["anywhere", "somewhere not", "nowhere not"], "answer": 0, "note": "Soruda any-." }
+        {
+          "type": "choice",
+          "text": "___ is waiting for you outside.",
+          "options": [
+            "Somebody",
+            "Anybody",
+            "Nobody not",
+            "Everybody are"
+          ],
+          "answer": 0,
+          "note": "Olumlu cümle → Somebody."
+        },
+        {
+          "type": "choice",
+          "text": "I don't need ___ .",
+          "options": [
+            "anything",
+            "nothing",
+            "something not",
+            "everything not"
+          ],
+          "answer": 0,
+          "note": "Olumsuz cümle → anything."
+        },
+        {
+          "type": "choice",
+          "text": "___ answered the phone.",
+          "options": [
+            "Nobody",
+            "Not anybody",
+            "Anybody not",
+            "Nothing"
+          ],
+          "answer": 0,
+          "note": "Kimse yanıtlamadı → Nobody."
+        },
+        {
+          "type": "choice",
+          "text": "Everybody ___ here now.",
+          "options": [
+            "is",
+            "are",
+            "were",
+            "have"
+          ],
+          "answer": 0,
+          "note": "Belgisiz zamirler tekildir."
+        },
+        {
+          "type": "gap",
+          "text": "Did you go ___ last weekend?",
+          "options": [
+            "anywhere",
+            "somewhere not",
+            "nowhere not"
+          ],
+          "answer": 0,
+          "note": "Soruda any-."
+        },
+        {
+          "type": "choice",
+          "text": "There is ___ in the kitchen. It is empty.",
+          "options": [
+            "nobody",
+            "somebody",
+            "anybody",
+            "everybody"
+          ],
+          "answer": 0,
+          "note": "Boş → nobody."
+        },
+        {
+          "type": "choice",
+          "text": "I want ___ to eat.",
+          "options": [
+            "something",
+            "somebody",
+            "anywhere",
+            "anybody"
+          ],
+          "answer": 0,
+          "note": "Şey → something."
+        },
+        {
+          "type": "choice",
+          "text": "___ knows the answer. We are all lost.",
+          "options": [
+            "Nobody",
+            "Somebody",
+            "Everybody",
+            "Anybody"
+          ],
+          "answer": 0,
+          "note": "Kimse → Nobody."
+        },
+        {
+          "type": "gap",
+          "text": "Did you see ___ in the garden?",
+          "options": [
+            "anybody",
+            "nobody",
+            "everything"
+          ],
+          "answer": 0,
+          "note": "Soru → anybody."
+        },
+        {
+          "type": "choice",
+          "text": "___ is ready. We can start.",
+          "options": [
+            "Everything",
+            "Anything",
+            "Nothing",
+            "Nobody"
+          ],
+          "answer": 0,
+          "note": "Her şey → Everything."
+        }
       ]
     },
     {
@@ -122,35 +628,202 @@
       "title": "Öbek fiiller — giriş",
       "topic": "Phrasal verbs: verb + particle",
       "canDo": "Günlük konuşmada sık geçen iki kelimelik fiilleri anlayabilirim.",
-      "covers": ["PHV.V_PART", "PHV.V_PART_PREP"],
+      "covers": [
+        "PHV.V_PART",
+        "PHV.V_PART_PREP"
+      ],
       "concept": {
         "summary": "Bazı fiiller yanlarına küçük bir kelime alır ve anlam tamamen değişir: get up kalkmak, look for aramak demektir. Tek tek kelimelerden anlamı çıkaramazsın; kalıp olarak öğrenilir.",
-        "formula": { "left": "fiil + parçacık", "right": "= yeni bir anlam" },
+        "formula": {
+          "left": "fiil + parçacık",
+          "right": "= yeni bir anlam"
+        },
         "table": [
-          { "form": "get up", "be": "kalkmak", "example": "I get up at seven." },
-          { "form": "turn on / off", "be": "açmak / kapatmak", "example": "Turn off the light." },
-          { "form": "look for", "be": "aramak", "example": "I am looking for my keys." },
-          { "form": "look forward to", "be": "dört gözle beklemek", "example": "I look forward to your reply." }
+          {
+            "form": "get up",
+            "be": "kalkmak",
+            "example": "I get up at seven."
+          },
+          {
+            "form": "turn on / off",
+            "be": "açmak / kapatmak",
+            "example": "Turn off the light."
+          },
+          {
+            "form": "look for",
+            "be": "aramak",
+            "example": "I am looking for my keys."
+          },
+          {
+            "form": "look forward to",
+            "be": "dört gözle beklemek",
+            "example": "I look forward to your reply."
+          }
         ]
       },
       "examples": [
-        { "en": "I get up early every day.", "tr": "Her gün erken kalkarım.", "note": "get tek başına \"almak\", get up \"kalkmak\"." },
-        { "en": "Please turn on the light.", "tr": "Lütfen ışığı aç.", "note": "Nesne araya da girebilir: turn the light on." },
-        { "en": "She is looking for a job.", "tr": "İş arıyor.", "note": "look for = aramak." },
-        { "en": "Put on your coat.", "tr": "Montunu giy.", "note": "put on = giymek." },
-        { "en": "We are getting on the bus.", "tr": "Otobüse biniyoruz.", "note": "get on = binmek." }
+        {
+          "en": "I get up early every day.",
+          "tr": "Her gün erken kalkarım.",
+          "note": "get tek başına \"almak\", get up \"kalkmak\"."
+        },
+        {
+          "en": "Please turn on the light.",
+          "tr": "Lütfen ışığı aç.",
+          "note": "Nesne araya da girebilir: turn the light on."
+        },
+        {
+          "en": "She is looking for a job.",
+          "tr": "İş arıyor.",
+          "note": "look for = aramak."
+        },
+        {
+          "en": "Put on your coat.",
+          "tr": "Montunu giy.",
+          "note": "put on = giymek."
+        },
+        {
+          "en": "We are getting on the bus.",
+          "tr": "Otobüse biniyoruz.",
+          "note": "get on = binmek."
+        }
       ],
       "mistakes": [
-        { "wrong": "I am looking my keys.", "right": "I am looking for my keys.", "why": "look for kalıbında for düşmez." },
-        { "wrong": "Turn on it.", "right": "Turn it on.", "why": "Zamir nesne her zaman fiille parçacığın arasına girer." },
-        { "wrong": "I wake up at seven, then I get up the bus.", "right": "I wake up at seven, then I get on the bus.", "why": "Parçacık değişince anlam da değişir." }
+        {
+          "wrong": "I am looking my keys.",
+          "right": "I am looking for my keys.",
+          "why": "look for kalıbında for düşmez."
+        },
+        {
+          "wrong": "Turn on it.",
+          "right": "Turn it on.",
+          "why": "Zamir nesne her zaman fiille parçacığın arasına girer."
+        },
+        {
+          "wrong": "I wake up at seven, then I get up the bus.",
+          "right": "I wake up at seven, then I get on the bus.",
+          "why": "Parçacık değişince anlam da değişir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "What time do you ___ in the morning?", "options": ["get up", "get on", "get off", "get in"], "answer": 0, "note": "Yataktan kalkmak → get up." },
-        { "type": "choice", "text": "I am looking ___ my glasses.", "options": ["for", "at", "to", "on"], "answer": 0, "note": "look for = aramak." },
-        { "type": "choice", "text": "It is cold. ___ your jacket.", "options": ["Put on", "Put in", "Put off", "Put up"], "answer": 0, "note": "put on = giymek." },
-        { "type": "choice", "text": "The TV is loud. Turn ___ down.", "options": ["it", "on it", "down it", "the it"], "answer": 0, "note": "Zamir araya girer: turn it down." },
-        { "type": "gap", "text": "We ___ the train at Ankara.", "options": ["got off", "got up", "got in off"], "answer": 0, "note": "get off = inmek." }
+        {
+          "type": "choice",
+          "text": "What time do you ___ in the morning?",
+          "options": [
+            "get up",
+            "get on",
+            "get off",
+            "get in"
+          ],
+          "answer": 0,
+          "note": "Yataktan kalkmak → get up."
+        },
+        {
+          "type": "choice",
+          "text": "I am looking ___ my glasses.",
+          "options": [
+            "for",
+            "at",
+            "to",
+            "on"
+          ],
+          "answer": 0,
+          "note": "look for = aramak."
+        },
+        {
+          "type": "choice",
+          "text": "It is cold. ___ your jacket.",
+          "options": [
+            "Put on",
+            "Put in",
+            "Put off",
+            "Put up"
+          ],
+          "answer": 0,
+          "note": "put on = giymek."
+        },
+        {
+          "type": "choice",
+          "text": "The TV is loud. Turn ___ down.",
+          "options": [
+            "it",
+            "on it",
+            "down it",
+            "the it"
+          ],
+          "answer": 0,
+          "note": "Zamir araya girer: turn it down."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ the train at Ankara.",
+          "options": [
+            "got off",
+            "got up",
+            "got in off"
+          ],
+          "answer": 0,
+          "note": "get off = inmek."
+        },
+        {
+          "type": "choice",
+          "text": "Please ___ up. I cannot hear you.",
+          "options": [
+            "speak",
+            "get",
+            "look",
+            "sit"
+          ],
+          "answer": 0,
+          "note": "speak up = daha yüksek sesle konuş."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ up at seven every day.",
+          "options": [
+            "get",
+            "go",
+            "take",
+            "put"
+          ],
+          "answer": 0,
+          "note": "get up = yataktan kalkmak."
+        },
+        {
+          "type": "choice",
+          "text": "Can you ___ on the light?",
+          "options": [
+            "turn",
+            "get",
+            "look",
+            "sit"
+          ],
+          "answer": 0,
+          "note": "turn on = açmak."
+        },
+        {
+          "type": "gap",
+          "text": "She is looking ___ her keys.",
+          "options": [
+            "for",
+            "at",
+            "up"
+          ],
+          "answer": 0,
+          "note": "look for = aramak."
+        },
+        {
+          "type": "choice",
+          "text": "___ down, please.",
+          "options": [
+            "Sit",
+            "Sits",
+            "Sitting",
+            "To sit"
+          ],
+          "answer": 0,
+          "note": "sit down = otur; emirde yalın fiil."
+        }
       ]
     }
   ]
