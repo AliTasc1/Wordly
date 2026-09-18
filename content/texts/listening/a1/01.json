@@ -1,0 +1,137 @@
+{
+  "_meta": { "batch": "a1-listening-01", "level": "A1", "range": "Diyalog 1-5" },
+  "items": [
+    {
+      "id": "a1-l-01",
+      "level": "A1",
+      "order": 1,
+      "kind": "listening",
+      "title": "Kafede sipariş",
+      "titleEn": "Ordering in a Cafe",
+      "minutes": 2,
+      "names": ["Ali"],
+      "speakers": ["Waiter", "Ali"],
+      "lines": [
+        { "who": "Waiter", "en": "Good morning. What would you like?", "tr": "Günaydın. Ne alırsınız?" },
+        { "who": "Ali", "en": "A tea, please. And a piece of cake.", "tr": "Bir çay lütfen. Bir de bir dilim kek." },
+        { "who": "Waiter", "en": "Chocolate cake or apple cake?", "tr": "Çikolatalı kek mi elmalı kek mi?" },
+        { "who": "Ali", "en": "Apple, please. How much is it?", "tr": "Elmalı lütfen. Ne kadar?" },
+        { "who": "Waiter", "en": "Sixty. Do you want it here or outside?", "tr": "Altmış. Burada mı olsun dışarıda mı?" },
+        { "who": "Ali", "en": "Outside, please. Thank you.", "tr": "Dışarıda lütfen. Teşekkürler." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "What does Ali order to drink?", "options": ["Tea", "Coffee", "Water", "Milk"], "answer": 0, "note": "\"A tea, please.\"" },
+        { "q": "Which cake does he choose?", "options": ["Apple", "Chocolate", "Both", "No cake"], "answer": 0, "note": "\"Apple, please.\"" },
+        { "q": "What is the price?", "options": ["Sixty", "Sixteen", "Six", "Seventy"], "answer": 0, "note": "\"Sixty.\"" },
+        { "q": "Where does Ali want to sit?", "options": ["Outside", "Inside", "At the window", "He does not say"], "answer": 0, "note": "\"Outside, please.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-02",
+      "level": "A1",
+      "order": 2,
+      "kind": "listening",
+      "title": "Yol sorma",
+      "titleEn": "Asking the Way",
+      "minutes": 2,
+      "names": ["Ece"],
+      "speakers": ["Ece", "Man"],
+      "lines": [
+        { "who": "Ece", "en": "Excuse me. Where is the bus station?", "tr": "Affedersiniz. Otobüs durağı nerede?" },
+        { "who": "Man", "en": "Go down this street and turn left.", "tr": "Bu sokaktan aşağı inin ve sola dönün." },
+        { "who": "Ece", "en": "Is it far?", "tr": "Uzak mı?" },
+        { "who": "Man", "en": "No, five minutes. It is next to the bank.", "tr": "Hayır, beş dakika. Bankanın yanında." },
+        { "who": "Ece", "en": "Thank you very much.", "tr": "Çok teşekkür ederim." },
+        { "who": "Man", "en": "You are welcome. Have a good day.", "tr": "Rica ederim. İyi günler." }
+      ],
+      "glossary": [
+        { "w": "far", "tr": "uzak" }
+      ],
+      "questions": [
+        { "q": "What is Ece looking for?", "options": ["The bus station", "The bank", "A street", "A shop"], "answer": 0, "note": "\"Where is the bus station?\"" },
+        { "q": "Which way must she turn?", "options": ["Left", "Right", "Back", "She must go straight"], "answer": 0, "note": "\"Turn left.\"" },
+        { "q": "How long does it take?", "options": ["Five minutes", "Fifteen minutes", "An hour", "Two minutes"], "answer": 0, "note": "\"No, five minutes.\"" },
+        { "q": "What is next to the bus station?", "options": ["A bank", "A school", "A park", "A cafe"], "answer": 0, "note": "\"It is next to the bank.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-03",
+      "level": "A1",
+      "order": 3,
+      "kind": "listening",
+      "title": "Telefonda",
+      "titleEn": "On the Phone",
+      "minutes": 2,
+      "names": ["Mert", "Sena"],
+      "speakers": ["Mert", "Sena"],
+      "lines": [
+        { "who": "Mert", "en": "Hello Sena. Are you at home?", "tr": "Merhaba Sena. Evde misin?" },
+        { "who": "Sena", "en": "No, I am at the supermarket. Why?", "tr": "Hayır, süpermarketteyim. Neden?" },
+        { "who": "Mert", "en": "We have no bread. Can you buy some?", "tr": "Ekmeğimiz yok. Biraz alabilir misin?" },
+        { "who": "Sena", "en": "Yes, of course. Do we need milk too?", "tr": "Evet, tabii. Süte de ihtiyacımız var mı?" },
+        { "who": "Mert", "en": "No, we have milk. Only bread.", "tr": "Hayır, sütümüz var. Sadece ekmek." },
+        { "who": "Sena", "en": "All right. I am coming home in twenty minutes.", "tr": "Tamam. Yirmi dakikaya eve geliyorum." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "Where is Sena?", "options": ["At the supermarket", "At home", "At work", "At school"], "answer": 0, "note": "\"I am at the supermarket.\"" },
+        { "q": "What must she buy?", "options": ["Bread", "Milk", "Bread and milk", "Nothing"], "answer": 0, "note": "\"Only bread.\"" },
+        { "q": "Do they need milk?", "options": ["No, they have milk", "Yes, two bottles", "Yes, one bottle", "Mert does not know"], "answer": 0, "note": "\"No, we have milk.\"" },
+        { "q": "When is Sena coming home?", "options": ["In twenty minutes", "In two minutes", "In an hour", "Tomorrow"], "answer": 0, "note": "\"I am coming home in twenty minutes.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-04",
+      "level": "A1",
+      "order": 4,
+      "kind": "listening",
+      "title": "Sınıfta",
+      "titleEn": "In the Classroom",
+      "minutes": 2,
+      "names": ["Ayla"],
+      "speakers": ["Teacher", "Ayla"],
+      "lines": [
+        { "who": "Teacher", "en": "Good morning. Open your books, please.", "tr": "Günaydın. Kitaplarınızı açın lütfen." },
+        { "who": "Ayla", "en": "Sorry, I do not have my book today.", "tr": "Özür dilerim, bugün kitabım yok." },
+        { "who": "Teacher", "en": "Why not?", "tr": "Neden?" },
+        { "who": "Ayla", "en": "It is at home. I am very sorry.", "tr": "Evde. Çok üzgünüm." },
+        { "who": "Teacher", "en": "All right. Sit with Deniz and look at her book.", "tr": "Tamam. Deniz'le otur ve onun kitabına bak." },
+        { "who": "Ayla", "en": "Thank you. I will bring it tomorrow.", "tr": "Teşekkürler. Yarın getireceğim." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "What is Ayla's problem?", "options": ["She does not have her book", "She is late", "She is tired", "She has no pen"], "answer": 0, "note": "\"I do not have my book today.\"" },
+        { "q": "Where is the book?", "options": ["At home", "In her bag", "At school", "With Deniz"], "answer": 0, "note": "\"It is at home.\"" },
+        { "q": "What does the teacher tell her to do?", "options": ["Sit with Deniz", "Go home", "Wait outside", "Buy a new book"], "answer": 0, "note": "\"Sit with Deniz and look at her book.\"" },
+        { "q": "What will Ayla do tomorrow?", "options": ["Bring the book", "Stay at home", "Buy a book", "Sit with Deniz again"], "answer": 0, "note": "\"I will bring it tomorrow.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-05",
+      "level": "A1",
+      "order": 5,
+      "kind": "listening",
+      "title": "Otel resepsiyonu",
+      "titleEn": "At the Hotel",
+      "minutes": 2,
+      "names": ["Kaan"],
+      "speakers": ["Kaan", "Receptionist"],
+      "lines": [
+        { "who": "Kaan", "en": "Hello. I have a room for two nights.", "tr": "Merhaba. İki gecelik bir odam var." },
+        { "who": "Receptionist", "en": "What is your name, please?", "tr": "Adınız nedir lütfen?" },
+        { "who": "Kaan", "en": "Kaan Yilmaz.", "tr": "Kaan Yılmaz." },
+        { "who": "Receptionist", "en": "Yes. Room twelve, on the first floor.", "tr": "Evet. On iki numaralı oda, birinci katta." },
+        { "who": "Kaan", "en": "What time is breakfast?", "tr": "Kahvaltı saat kaçta?" },
+        { "who": "Receptionist", "en": "From seven to ten. Here is your key.", "tr": "Yediden ona kadar. Buyurun anahtarınız." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "How many nights is Kaan staying?", "options": ["Two", "One", "Three", "Ten"], "answer": 0, "note": "\"I have a room for two nights.\"" },
+        { "q": "Which room does he have?", "options": ["Room twelve", "Room two", "Room ten", "Room seven"], "answer": 0, "note": "\"Room twelve, on the first floor.\"" },
+        { "q": "When does breakfast start?", "options": ["At seven", "At ten", "At twelve", "At six"], "answer": 0, "note": "\"From seven to ten.\"" },
+        { "q": "What does the receptionist give him?", "options": ["His key", "A map", "Breakfast", "A book"], "answer": 0, "note": "\"Here is your key.\"" }
+      ]
+    }
+  ]
+}

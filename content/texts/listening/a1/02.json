@@ -1,0 +1,138 @@
+{
+  "_meta": { "batch": "a1-listening-02", "level": "A1", "range": "Diyalog 6-10" },
+  "items": [
+    {
+      "id": "a1-l-06",
+      "level": "A1",
+      "order": 6,
+      "kind": "listening",
+      "title": "Markette",
+      "titleEn": "At the Shop",
+      "minutes": 2,
+      "names": ["Leyla"],
+      "speakers": ["Leyla", "Shop assistant"],
+      "lines": [
+        { "who": "Leyla", "en": "Excuse me, do you have red apples?", "tr": "Affedersiniz, kırmızı elma var mı?" },
+        { "who": "Shop assistant", "en": "Yes, they are next to the bananas.", "tr": "Evet, muzların yanında." },
+        { "who": "Leyla", "en": "Thank you. And where is the milk?", "tr": "Teşekkürler. Süt nerede?" },
+        { "who": "Shop assistant", "en": "At the back of the shop, on the left.", "tr": "Dükkânın arkasında, solda." },
+        { "who": "Leyla", "en": "Are you open on Sunday?", "tr": "Pazar günü açık mısınız?" },
+        { "who": "Shop assistant", "en": "Yes, but we close at six.", "tr": "Evet ama altıda kapatıyoruz." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "What does Leyla want first?", "options": ["Red apples", "Bananas", "Milk", "Bread"], "answer": 0, "note": "\"Do you have red apples?\"" },
+        { "q": "Where are the apples?", "options": ["Next to the bananas", "At the back", "On the left", "Near the door"], "answer": 0, "note": "\"They are next to the bananas.\"" },
+        { "q": "Where is the milk?", "options": ["At the back, on the left", "Next to the apples", "Near the door", "Outside"], "answer": 0, "note": "\"At the back of the shop, on the left.\"" },
+        { "q": "When does the shop close on Sunday?", "options": ["At six", "At eight", "It does not open", "At ten"], "answer": 0, "note": "\"We close at six.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-07",
+      "level": "A1",
+      "order": 7,
+      "kind": "listening",
+      "title": "Hafta sonu planı",
+      "titleEn": "Weekend Plans",
+      "minutes": 2,
+      "names": ["Emre", "Ceren"],
+      "speakers": ["Emre", "Ceren"],
+      "lines": [
+        { "who": "Emre", "en": "What are you doing on Saturday?", "tr": "Cumartesi ne yapıyorsun?" },
+        { "who": "Ceren", "en": "Nothing. Why do you ask?", "tr": "Hiçbir şey. Neden soruyorsun?" },
+        { "who": "Emre", "en": "We are going to the beach. Come with us.", "tr": "Plaja gidiyoruz. Bizimle gel." },
+        { "who": "Ceren", "en": "I would like to. What time?", "tr": "İsterim. Saat kaçta?" },
+        { "who": "Emre", "en": "At nine in the morning. We take my car.", "tr": "Sabah dokuzda. Arabamla gidiyoruz." },
+        { "who": "Ceren", "en": "Perfect. I will bring some food.", "tr": "Harika. Ben biraz yiyecek getiririm." }
+      ],
+      "glossary": [
+        { "w": "beach", "tr": "plaj, sahil" },
+        { "w": "perfect", "tr": "harika, mükemmel" }
+      ],
+      "questions": [
+        { "q": "Where are they going?", "options": ["To the beach", "To the park", "To a cafe", "To the mountains"], "answer": 0, "note": "\"We are going to the beach.\"" },
+        { "q": "What time do they leave?", "options": ["At nine", "At ten", "At eight", "At seven"], "answer": 0, "note": "\"At nine in the morning.\"" },
+        { "q": "How do they travel?", "options": ["By car", "By bus", "By train", "By taxi"], "answer": 0, "note": "\"We take my car.\"" },
+        { "q": "What will Ceren bring?", "options": ["Food", "Music", "A ball", "Nothing"], "answer": 0, "note": "\"I will bring some food.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-08",
+      "level": "A1",
+      "order": 8,
+      "kind": "listening",
+      "title": "Aile fotoğrafı",
+      "titleEn": "The Family Photo",
+      "minutes": 2,
+      "names": ["Burak", "Nur"],
+      "speakers": ["Burak", "Nur"],
+      "lines": [
+        { "who": "Nur", "en": "Is this your family?", "tr": "Bu senin ailen mi?" },
+        { "who": "Burak", "en": "Yes. That is my mother and my father.", "tr": "Evet. Bu annem, bu da babam." },
+        { "who": "Nur", "en": "Who is the girl with the long hair?", "tr": "Uzun saçlı kız kim?" },
+        { "who": "Burak", "en": "My sister. She is a doctor in Ankara.", "tr": "Kız kardeşim. Ankara'da doktor." },
+        { "who": "Nur", "en": "And the little boy?", "tr": "Peki küçük çocuk?" },
+        { "who": "Burak", "en": "That is me! I was seven years old.", "tr": "O benim! Yedi yaşındaydım." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "Who has long hair?", "options": ["His sister", "His mother", "Nur", "Burak"], "answer": 0, "note": "Uzun saçlı kız, kız kardeşi." },
+        { "q": "What is his sister's job?", "options": ["Doctor", "Teacher", "Student", "Nurse"], "answer": 0, "note": "\"She is a doctor in Ankara.\"" },
+        { "q": "Who is the little boy?", "options": ["Burak", "His brother", "His cousin", "A friend"], "answer": 0, "note": "\"That is me!\"" },
+        { "q": "How old was Burak in the photo?", "options": ["Seven", "Ten", "Five", "Seventeen"], "answer": 0, "note": "\"I was seven years old.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-09",
+      "level": "A1",
+      "order": 9,
+      "kind": "listening",
+      "title": "Doktorda randevu",
+      "titleEn": "A Doctor's Appointment",
+      "minutes": 2,
+      "names": ["Hakan"],
+      "speakers": ["Hakan", "Nurse"],
+      "lines": [
+        { "who": "Hakan", "en": "Hello. I want to see the doctor today.", "tr": "Merhaba. Bugün doktoru görmek istiyorum." },
+        { "who": "Nurse", "en": "What is the problem?", "tr": "Sorun nedir?" },
+        { "who": "Hakan", "en": "My back hurts and I cannot sleep.", "tr": "Sırtım ağrıyor ve uyuyamıyorum." },
+        { "who": "Nurse", "en": "The doctor is free at four o'clock.", "tr": "Doktor saat dörtte müsait." },
+        { "who": "Hakan", "en": "That is good. Do I need my card?", "tr": "Bu iyi. Kartım lazım mı?" },
+        { "who": "Nurse", "en": "Yes, please bring your card and come early.", "tr": "Evet, lütfen kartınızı getirin ve erken gelin." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "What is Hakan's problem?", "options": ["His back hurts", "His head hurts", "He is hot", "He is tired only"], "answer": 0, "note": "\"My back hurts and I cannot sleep.\"" },
+        { "q": "When can he see the doctor?", "options": ["At four", "At two", "Tomorrow", "At six"], "answer": 0, "note": "\"The doctor is free at four o'clock.\"" },
+        { "q": "What must he bring?", "options": ["His card", "A book", "Money only", "Nothing"], "answer": 0, "note": "\"Please bring your card.\"" },
+        { "q": "What else does the nurse say?", "options": ["Come early", "Come late", "Call again", "Bring a friend"], "answer": 0, "note": "\"Come early.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-10",
+      "level": "A1",
+      "order": 10,
+      "kind": "listening",
+      "title": "Kayıp çanta",
+      "titleEn": "The Lost Bag",
+      "minutes": 2,
+      "names": ["Melis"],
+      "speakers": ["Melis", "Officer"],
+      "lines": [
+        { "who": "Melis", "en": "Excuse me. I cannot find my bag.", "tr": "Affedersiniz. Çantamı bulamıyorum." },
+        { "who": "Officer", "en": "What color is it?", "tr": "Ne renk?" },
+        { "who": "Melis", "en": "It is black and very big.", "tr": "Siyah ve çok büyük." },
+        { "who": "Officer", "en": "What is in the bag?", "tr": "Çantanın içinde ne var?" },
+        { "who": "Melis", "en": "My books, a phone and my keys.", "tr": "Kitaplarım, bir telefon ve anahtarlarım." },
+        { "who": "Officer", "en": "Wait here, please. I think we have it.", "tr": "Lütfen burada bekleyin. Sanırım bizde." }
+      ],
+      "glossary": [],
+      "questions": [
+        { "q": "What cannot Melis find?", "options": ["Her bag", "Her phone", "Her keys", "Her books"], "answer": 0, "note": "\"I cannot find my bag.\"" },
+        { "q": "What color is it?", "options": ["Black", "Brown", "White", "Red"], "answer": 0, "note": "\"It is black and very big.\"" },
+        { "q": "What is inside?", "options": ["Books, a phone and keys", "Only books", "Money", "Clothes"], "answer": 0, "note": "\"My books, a phone and my keys.\"" },
+        { "q": "What does the officer say at the end?", "options": ["He thinks they have it", "The bag is not here", "She must come back", "He cannot help"], "answer": 0, "note": "\"I think we have it.\"" }
+      ]
+    }
+  ]
+}

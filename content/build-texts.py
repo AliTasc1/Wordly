@@ -39,6 +39,18 @@ LENGTH = {
     "C2": (300, 520),
 }
 
+# Dinleme için ayrı band. Konuşma okumadan yavaş akar: iki dakikalık bir
+# dinleme, iki dakikalık bir okumadan belirgin biçimde az kelime taşır. Aynı
+# bandı uygulamak diyalogları yapay biçimde uzatmayı dayatırdı.
+LENGTH_LISTENING = {
+    "A1": (30, 80),
+    "A2": (50, 120),
+    "B1": (90, 180),
+    "B2": (130, 250),
+    "C1": (180, 330),
+    "C2": (220, 400),
+}
+
 # Sözlükçeye alınabilecek yeni kelimenin üst sınırı (toplam kelimeye oran).
 # Okuma araştırmasındaki "i+1" ilkesi: metnin ezici çoğunluğu tanıdık olmalı,
 # yenilik bağlamdan çıkarılabilecek kadar seyrek kalmalı.
@@ -111,11 +123,15 @@ def check_level(item: dict, level: str, levels: dict, problems: list[str]) -> No
     for gloss in item.get("glossary", []):
         if not gloss.get("w") or not gloss.get("tr"):
             problems.append(f"{iid}: sözlükçede eksik alan")
+    # Konuşmacı etiketleri de özel ad sayılır; "Receptionist" bir kelime
+    # yükü değil, satırın kime ait olduğunu gösteren bir işaret.
     known = glossary | {n.lower() for n in item.get("names", [])}
+    known |= {s.lower() for s in item.get("speakers", [])}
 
     report = analyse(body_of(item), level, levels, known)
 
-    low, high = LENGTH[level]
+    band = LENGTH_LISTENING if item.get("kind") == "listening" else LENGTH
+    low, high = band[level]
     length = len(WORD_RE.findall(passage_of(item).lower()))
     # Konuşma senaryosunda "metin" yok, uzunluk ölçütü uygulanmaz.
     if item.get("kind") != "speaking" and not low <= length <= high:

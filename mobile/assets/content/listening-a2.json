@@ -1,0 +1,654 @@
+[
+ {
+  "id": "a2-l-01",
+  "level": "A2",
+  "order": 1,
+  "kind": "listening",
+  "title": "Tren bileti",
+  "titleEn": "Buying a Train Ticket",
+  "minutes": 3,
+  "names": [
+   "Konya"
+  ],
+  "speakers": [
+   "Traveler",
+   "Clerk"
+  ],
+  "lines": [
+   {
+    "who": "Traveler",
+    "en": "Good afternoon. I would like a ticket to Konya.",
+    "tr": "İyi günler. Konya'ya bir bilet istiyorum."
+   },
+   {
+    "who": "Clerk",
+    "en": "Single or return?",
+    "tr": "Tek yön mü gidiş dönüş mü?"
+   },
+   {
+    "who": "Traveler",
+    "en": "Return, please. I am coming back on Sunday.",
+    "tr": "Gidiş dönüş lütfen. Pazar günü dönüyorum."
+   },
+   {
+    "who": "Clerk",
+    "en": "There is a train at ten and another at two.",
+    "tr": "Onda bir tren var, bir de ikide."
+   },
+   {
+    "who": "Traveler",
+    "en": "I will take the one at ten. How long is the journey?",
+    "tr": "Ondakini alayım. Yolculuk ne kadar sürüyor?"
+   },
+   {
+    "who": "Clerk",
+    "en": "About four hours. Do you want a window seat?",
+    "tr": "Yaklaşık dört saat. Pencere kenarı ister misiniz?"
+   },
+   {
+    "who": "Traveler",
+    "en": "Yes, please. Can I pay by card?",
+    "tr": "Evet lütfen. Kartla ödeyebilir miyim?"
+   },
+   {
+    "who": "Clerk",
+    "en": "Of course. Your train leaves from platform three.",
+    "tr": "Tabii. Treniniz üç numaralı perondan kalkıyor."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "single",
+    "tr": "tek yön (bilet)"
+   },
+   {
+    "w": "return",
+    "tr": "gidiş dönüş"
+   },
+   {
+    "w": "platform",
+    "tr": "peron"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What kind of ticket does the traveler buy?",
+    "options": [
+     "Monthly",
+     "Return",
+     "Weekly",
+     "Single"
+    ],
+    "answer": 1,
+    "note": "\"Return, please.\""
+   },
+   {
+    "q": "Which train does she choose?",
+    "options": [
+     "The one at four",
+     "The one at three",
+     "The one at two",
+     "The one at ten"
+    ],
+    "answer": 3,
+    "note": "\"I will take the one at ten.\""
+   },
+   {
+    "q": "How long is the journey?",
+    "options": [
+     "About two hours",
+     "Three hours",
+     "About four hours",
+     "Ten hours"
+    ],
+    "answer": 2,
+    "note": "\"About four hours.\""
+   },
+   {
+    "q": "How does she pay?",
+    "options": [
+     "By phone",
+     "In cash",
+     "She does not pay",
+     "By card"
+    ],
+    "answer": 3,
+    "note": "\"Can I pay by card?\" — \"Of course.\""
+   },
+   {
+    "q": "Which platform is the train?",
+    "options": [
+     "Four",
+     "Ten",
+     "Three",
+     "Two"
+    ],
+    "answer": 2,
+    "note": "\"Your train leaves from platform three.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-02",
+  "level": "A2",
+  "order": 2,
+  "kind": "listening",
+  "title": "İş görüşmesi öncesi",
+  "titleEn": "Before the Interview",
+  "minutes": 3,
+  "names": [
+   "Defne",
+   "Umut"
+  ],
+  "speakers": [
+   "Defne",
+   "Umut"
+  ],
+  "lines": [
+   {
+    "who": "Umut",
+    "en": "You look nervous. Is everything all right?",
+    "tr": "Gergin görünüyorsun. Her şey yolunda mı?"
+   },
+   {
+    "who": "Defne",
+    "en": "I have an interview tomorrow morning.",
+    "tr": "Yarın sabah bir iş görüşmem var."
+   },
+   {
+    "who": "Umut",
+    "en": "That is great news. What is the job?",
+    "tr": "Bu harika bir haber. İş ne?"
+   },
+   {
+    "who": "Defne",
+    "en": "It is in a design studio. I sent my application in May.",
+    "tr": "Bir tasarım stüdyosunda. Başvurumu mayısta göndermiştim."
+   },
+   {
+    "who": "Umut",
+    "en": "Have you prepared your answers?",
+    "tr": "Cevaplarını hazırladın mı?"
+   },
+   {
+    "who": "Defne",
+    "en": "Some of them. I am worried about the salary question.",
+    "tr": "Bir kısmını. Maaş sorusundan endişeliyim."
+   },
+   {
+    "who": "Umut",
+    "en": "Just say what you need and wait. Do not apologize.",
+    "tr": "Ne istediğini söyle ve bekle. Özür dileme."
+   },
+   {
+    "who": "Defne",
+    "en": "That is good advice. Thank you.",
+    "tr": "İyi bir tavsiye. Teşekkürler."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "nervous",
+    "tr": "gergin"
+   },
+   {
+    "w": "interview",
+    "tr": "iş görüşmesi"
+   },
+   {
+    "w": "application",
+    "tr": "başvuru"
+   },
+   {
+    "w": "salary",
+    "tr": "maaş"
+   },
+   {
+    "w": "apologize",
+    "tr": "özür dilemek"
+   },
+   {
+    "w": "studio",
+    "tr": "stüdyo"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is Defne nervous?",
+    "options": [
+     "She has an interview tomorrow",
+     "She lost her job",
+     "She is moving",
+     "She is ill"
+    ],
+    "answer": 0,
+    "note": "\"I have an interview tomorrow morning.\""
+   },
+   {
+    "q": "Where is the job?",
+    "options": [
+     "In a school",
+     "In a hospital",
+     "In a shop",
+     "In a design studio"
+    ],
+    "answer": 3,
+    "note": "\"It is in a design studio.\""
+   },
+   {
+    "q": "When did she apply?",
+    "options": [
+     "Yesterday",
+     "In March",
+     "In May",
+     "Last week"
+    ],
+    "answer": 2,
+    "note": "\"I sent my application in May.\""
+   },
+   {
+    "q": "What worries her most?",
+    "options": [
+     "The time",
+     "The salary question",
+     "The journey",
+     "Her clothes"
+    ],
+    "answer": 1,
+    "note": "\"I am worried about the salary question.\""
+   },
+   {
+    "q": "What does Umut advise?",
+    "options": [
+     "Say what you need and wait",
+     "Ask for less",
+     "Take a friend",
+     "Ask for more time"
+    ],
+    "answer": 0,
+    "note": "\"Just say what you need and wait.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-03",
+  "level": "A2",
+  "order": 3,
+  "kind": "listening",
+  "title": "Komşu şikâyeti",
+  "titleEn": "A Complaint",
+  "minutes": 3,
+  "names": [
+   "Gul"
+  ],
+  "speakers": [
+   "Gul",
+   "Neighbor"
+  ],
+  "lines": [
+   {
+    "who": "Gul",
+    "en": "Excuse me, can I talk to you for a minute?",
+    "tr": "Affedersiniz, bir dakika konuşabilir miyiz?"
+   },
+   {
+    "who": "Neighbor",
+    "en": "Of course. Is there a problem?",
+    "tr": "Tabii. Bir sorun mu var?"
+   },
+   {
+    "who": "Gul",
+    "en": "Your music was very loud last night.",
+    "tr": "Dün gece müziğiniz çok yüksekti."
+   },
+   {
+    "who": "Neighbor",
+    "en": "I am really sorry. We had a birthday party.",
+    "tr": "Gerçekten özür dilerim. Doğum günü partimiz vardı."
+   },
+   {
+    "who": "Gul",
+    "en": "I understand, but my son has school in the morning.",
+    "tr": "Anlıyorum ama oğlumun sabah okulu var."
+   },
+   {
+    "who": "Neighbor",
+    "en": "You are right. Next time I will tell you before.",
+    "tr": "Haklısınız. Bir dahaki sefere size önceden söylerim."
+   },
+   {
+    "who": "Gul",
+    "en": "Thank you. That would help a lot.",
+    "tr": "Teşekkürler. Bu çok yardımcı olur."
+   },
+   {
+    "who": "Neighbor",
+    "en": "And we will stop the music at eleven.",
+    "tr": "Ayrıca müziği on birde keseriz."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "loud",
+    "tr": "yüksek sesli"
+   },
+   {
+    "w": "neighbor",
+    "tr": "komşu"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Gul's complaint?",
+    "options": [
+     "The music was too loud",
+     "The lights were on",
+     "There was a bad smell",
+     "The door was open"
+    ],
+    "answer": 0,
+    "note": "\"Your music was very loud last night.\""
+   },
+   {
+    "q": "Why was there music?",
+    "options": [
+     "A wedding",
+     "A birthday party",
+     "A concert",
+     "A holiday"
+    ],
+    "answer": 1,
+    "note": "\"We had a birthday party.\""
+   },
+   {
+    "q": "Why is this a problem for Gul?",
+    "options": [
+     "Her son has school in the morning",
+     "She hates music",
+     "She works at night",
+     "She is ill"
+    ],
+    "answer": 0,
+    "note": "\"My son has school in the morning.\""
+   },
+   {
+    "q": "What will the neighbor do next time?",
+    "options": [
+     "Move the party",
+     "Tell her before",
+     "Invite her",
+     "Play quieter music only"
+    ],
+    "answer": 1,
+    "note": "\"Next time I will tell you before.\""
+   },
+   {
+    "q": "When will they stop the music?",
+    "options": [
+     "At nine",
+     "At eleven",
+     "At midnight",
+     "At ten"
+    ],
+    "answer": 1,
+    "note": "\"We will stop the music at eleven.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-04",
+  "level": "A2",
+  "order": 4,
+  "kind": "listening",
+  "title": "Restoranda sorun",
+  "titleEn": "A Problem at the Restaurant",
+  "minutes": 3,
+  "names": [],
+  "speakers": [
+   "Customer",
+   "Waiter"
+  ],
+  "lines": [
+   {
+    "who": "Customer",
+    "en": "Excuse me, this is not what I ordered.",
+    "tr": "Affedersiniz, bu sipariş ettiğim şey değil."
+   },
+   {
+    "who": "Waiter",
+    "en": "I am very sorry. What did you order?",
+    "tr": "Çok özür dilerim. Ne sipariş etmiştiniz?"
+   },
+   {
+    "who": "Customer",
+    "en": "Chicken soup, but this is fish.",
+    "tr": "Tavuk çorbası ama bu balık."
+   },
+   {
+    "who": "Waiter",
+    "en": "You are right. I will change it immediately.",
+    "tr": "Haklısınız. Hemen değiştireceğim."
+   },
+   {
+    "who": "Customer",
+    "en": "How long will it take? We are in a hurry.",
+    "tr": "Ne kadar sürer? Acelemiz var."
+   },
+   {
+    "who": "Waiter",
+    "en": "Five minutes. The soup is already hot.",
+    "tr": "Beş dakika. Çorba zaten hazır."
+   },
+   {
+    "who": "Customer",
+    "en": "All right, thank you.",
+    "tr": "Tamam, teşekkürler."
+   },
+   {
+    "who": "Waiter",
+    "en": "And your coffee will be free today.",
+    "tr": "Ayrıca kahveniz bugün bizden."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "ordered",
+    "tr": "sipariş etti"
+   },
+   {
+    "w": "immediately",
+    "tr": "hemen"
+   },
+   {
+    "w": "hurry",
+    "tr": "acele"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the problem?",
+    "options": [
+     "The wrong food arrived",
+     "The table is dirty",
+     "The bill is wrong",
+     "The food is cold"
+    ],
+    "answer": 0,
+    "note": "\"This is not what I ordered.\""
+   },
+   {
+    "q": "What did the customer order?",
+    "options": [
+     "Chicken soup",
+     "Coffee",
+     "Fish",
+     "Salad"
+    ],
+    "answer": 0,
+    "note": "\"Chicken soup, but this is fish.\""
+   },
+   {
+    "q": "How long will the new dish take?",
+    "options": [
+     "Two minutes",
+     "Five minutes",
+     "An hour",
+     "Fifteen minutes"
+    ],
+    "answer": 1,
+    "note": "\"Five minutes.\""
+   },
+   {
+    "q": "Why is the customer worried about the time?",
+    "options": [
+     "The restaurant closes",
+     "They are in a hurry",
+     "They are hungry",
+     "They have a train"
+    ],
+    "answer": 1,
+    "note": "\"We are in a hurry.\""
+   },
+   {
+    "q": "What does the waiter offer?",
+    "options": [
+     "A free meal",
+     "Nothing",
+     "A discount",
+     "Free coffee"
+    ],
+    "answer": 3,
+    "note": "\"Your coffee will be free today.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-05",
+  "level": "A2",
+  "order": 5,
+  "kind": "listening",
+  "title": "Kurs kaydı",
+  "titleEn": "Signing Up for a Course",
+  "minutes": 3,
+  "names": [
+   "Tuna"
+  ],
+  "speakers": [
+   "Tuna",
+   "Assistant"
+  ],
+  "lines": [
+   {
+    "who": "Tuna",
+    "en": "Hello. I want to join the photography course.",
+    "tr": "Merhaba. Fotoğrafçılık kursuna katılmak istiyorum."
+   },
+   {
+    "who": "Assistant",
+    "en": "Have you done a course with us before?",
+    "tr": "Daha önce bizde kurs aldınız mı?"
+   },
+   {
+    "who": "Tuna",
+    "en": "No, this is my first time.",
+    "tr": "Hayır, ilk kez."
+   },
+   {
+    "who": "Assistant",
+    "en": "The course starts on the fifth of October.",
+    "tr": "Kurs beş ekimde başlıyor."
+   },
+   {
+    "who": "Tuna",
+    "en": "How often are the lessons?",
+    "tr": "Dersler ne sıklıkta?"
+   },
+   {
+    "who": "Assistant",
+    "en": "Twice a week, on Tuesday and Thursday evenings.",
+    "tr": "Haftada iki kez, salı ve perşembe akşamları."
+   },
+   {
+    "who": "Tuna",
+    "en": "Do I need my own camera?",
+    "tr": "Kendi fotoğraf makinem gerekli mi?"
+   },
+   {
+    "who": "Assistant",
+    "en": "Not for the first month. We lend cameras.",
+    "tr": "İlk ay için değil. Biz makine veriyoruz."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "photography",
+    "tr": "fotoğrafçılık"
+   },
+   {
+    "w": "camera",
+    "tr": "fotoğraf makinesi"
+   },
+   {
+    "w": "lend",
+    "tr": "ödünç vermek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What course does Tuna want?",
+    "options": [
+     "Painting",
+     "Photography",
+     "Cooking",
+     "Music"
+    ],
+    "answer": 1,
+    "note": "\"I want to join the photography course.\""
+   },
+   {
+    "q": "Has he studied there before?",
+    "options": [
+     "He does not say",
+     "Yes, twice",
+     "Yes, last year",
+     "No, it is his first time"
+    ],
+    "answer": 3,
+    "note": "\"No, this is my first time.\""
+   },
+   {
+    "q": "When does the course start?",
+    "options": [
+     "In one month",
+     "In September",
+     "On the fifth of October",
+     "Next Tuesday"
+    ],
+    "answer": 2,
+    "note": "\"The course starts on the fifth of October.\""
+   },
+   {
+    "q": "How often are the lessons?",
+    "options": [
+     "At weekends",
+     "Once a week",
+     "Twice a week",
+     "Every day"
+    ],
+    "answer": 2,
+    "note": "\"Twice a week, on Tuesday and Thursday evenings.\""
+   },
+   {
+    "q": "Does he need his own camera?",
+    "options": [
+     "Never",
+     "Only at weekends",
+     "Not for the first month",
+     "Yes, from the start"
+    ],
+    "answer": 2,
+    "note": "\"Not for the first month. We lend cameras.\""
+   }
+  ]
+ }
+]
