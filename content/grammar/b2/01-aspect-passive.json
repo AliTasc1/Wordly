@@ -1,5 +1,9 @@
 {
-  "_meta": { "batch": "b2-01", "level": "B2", "range": "Ders 1-6 — görünüş genişlemesi, geçmişe dair çıkarım, edilgen, ettirgen, eşitlik" },
+  "_meta": {
+    "batch": "b2-01",
+    "level": "B2",
+    "range": "Ders 1-6 — görünüş genişlemesi, geçmişe dair çıkarım, edilgen, ettirgen, eşitlik"
+  },
   "lessons": [
     {
       "id": "b2-01-perfect-progressive",
@@ -8,35 +12,203 @@
       "title": "have been doing, will be doing",
       "topic": "Present perfect progressive and future progressive",
       "canDo": "Bir işin ne kadar süredir devam ettiğini ve gelecekte hangi anda süreceğini anlatabilirim.",
-      "covers": ["TA.PRPFPRG.AFF", "TA.FUTPRG.AFF", "MD.MD_PRG.AFF"],
+      "covers": [
+        "TA.PRPFPRG.AFF",
+        "TA.FUTPRG.AFF",
+        "MD.MD_PRG.AFF"
+      ],
       "concept": {
         "summary": "Present perfect sonuca bakar, present perfect progressive sürece bakar: \"üç kitap yazdım\" ile \"üç aydır yazıyorum\" farkı. Future progressive ise gelecekte belirli bir anda sürmekte olacak işi anlatır ve İngilizcede nazik soru sormanın da yoludur.",
-        "formula": { "left": "have / has been + fiil-ing", "right": "will be + fiil-ing" },
+        "formula": {
+          "left": "have / has been + fiil-ing",
+          "right": "will be + fiil-ing"
+        },
         "table": [
-          { "form": "süre vurgusu", "be": "have been + -ing", "example": "I have been waiting for an hour." },
-          { "form": "sonuç vurgusu", "be": "have + V3", "example": "I have written three letters." },
-          { "form": "gelecekte süren", "be": "will be + -ing", "example": "This time tomorrow I will be flying." },
-          { "form": "kip + süren", "be": "must be + -ing", "example": "She must be working late." }
+          {
+            "form": "süre vurgusu",
+            "be": "have been + -ing",
+            "example": "I have been waiting for an hour."
+          },
+          {
+            "form": "sonuç vurgusu",
+            "be": "have + V3",
+            "example": "I have written three letters."
+          },
+          {
+            "form": "gelecekte süren",
+            "be": "will be + -ing",
+            "example": "This time tomorrow I will be flying."
+          },
+          {
+            "form": "kip + süren",
+            "be": "must be + -ing",
+            "example": "She must be working late."
+          }
         ]
       },
       "examples": [
-        { "en": "I have been studying English for six years.", "tr": "Altı yıldır İngilizce çalışıyorum.", "note": "Süre vurgulanıyor, iş sürüyor." },
-        { "en": "She has been working here since March.", "tr": "Mart'tan beri burada çalışıyor.", "note": "since + başlangıç." },
-        { "en": "Your eyes are red. Have you been crying?", "tr": "Gözlerin kızarmış. Ağlıyor muydun?", "note": "Görünen sonuçtan süreci sormak." },
-        { "en": "This time next week we will be sitting on a beach.", "tr": "Gelecek hafta bu saatlerde bir sahilde oturuyor olacağız.", "note": "Gelecekte süren iş." },
-        { "en": "He must be waiting outside.", "tr": "Dışarıda bekliyor olmalı.", "note": "Kip + be + -ing." }
+        {
+          "en": "I have been studying English for six years.",
+          "tr": "Altı yıldır İngilizce çalışıyorum.",
+          "note": "Süre vurgulanıyor, iş sürüyor."
+        },
+        {
+          "en": "She has been working here since March.",
+          "tr": "Mart'tan beri burada çalışıyor.",
+          "note": "since + başlangıç."
+        },
+        {
+          "en": "Your eyes are red. Have you been crying?",
+          "tr": "Gözlerin kızarmış. Ağlıyor muydun?",
+          "note": "Görünen sonuçtan süreci sormak."
+        },
+        {
+          "en": "This time next week we will be sitting on a beach.",
+          "tr": "Gelecek hafta bu saatlerde bir sahilde oturuyor olacağız.",
+          "note": "Gelecekte süren iş."
+        },
+        {
+          "en": "He must be waiting outside.",
+          "tr": "Dışarıda bekliyor olmalı.",
+          "note": "Kip + be + -ing."
+        }
       ],
       "mistakes": [
-        { "wrong": "I am working here since March.", "right": "I have been working here since March.", "why": "Geçmişte başlayıp süren işte present perfect progressive gerekir." },
-        { "wrong": "I have been knowing him for years.", "right": "I have known him for years.", "why": "know gibi durum fiilleri -ing almaz." },
-        { "wrong": "This time tomorrow I will fly to Rome.", "right": "This time tomorrow I will be flying to Rome.", "why": "Belirli bir anda süren iş için will be + -ing." }
+        {
+          "wrong": "I am working here since March.",
+          "right": "I have been working here since March.",
+          "why": "Geçmişte başlayıp süren işte present perfect progressive gerekir."
+        },
+        {
+          "wrong": "I have been knowing him for years.",
+          "right": "I have known him for years.",
+          "why": "know gibi durum fiilleri -ing almaz."
+        },
+        {
+          "wrong": "This time tomorrow I will fly to Rome.",
+          "right": "This time tomorrow I will be flying to Rome.",
+          "why": "Belirli bir anda süren iş için will be + -ing."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "They ___ for the bus for twenty minutes.", "options": ["have been waiting", "have waited been", "are waiting since", "waited have"], "answer": 0, "note": "Süre vurgusu." },
-        { "type": "choice", "text": "How long ___ you been learning Spanish?", "options": ["have", "are", "did", "do"], "answer": 0, "note": "have + been + -ing." },
-        { "type": "choice", "text": "At nine tonight I ___ the exam.", "options": ["will be taking", "will take been", "am taking will", "will been take"], "answer": 0, "note": "Gelecekte süren iş." },
-        { "type": "choice", "text": "The lights are on; they ___ at home.", "options": ["must be", "must been", "must being", "are must"], "answer": 0, "note": "Kip + be." },
-        { "type": "gap", "text": "She ___ been feeling ill all week.", "options": ["has", "have", "is"], "answer": 0, "note": "she → has been + -ing." }
+        {
+          "type": "choice",
+          "text": "They ___ for the bus for twenty minutes.",
+          "options": [
+            "have been waiting",
+            "have waited been",
+            "are waiting since",
+            "waited have"
+          ],
+          "answer": 0,
+          "note": "Süre vurgusu."
+        },
+        {
+          "type": "choice",
+          "text": "How long ___ you been learning Spanish?",
+          "options": [
+            "have",
+            "are",
+            "did",
+            "do"
+          ],
+          "answer": 0,
+          "note": "have + been + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "At nine tonight I ___ the exam.",
+          "options": [
+            "will be taking",
+            "will take been",
+            "am taking will",
+            "will been take"
+          ],
+          "answer": 0,
+          "note": "Gelecekte süren iş."
+        },
+        {
+          "type": "choice",
+          "text": "The lights are on; they ___ at home.",
+          "options": [
+            "must be",
+            "must been",
+            "must being",
+            "are must"
+          ],
+          "answer": 0,
+          "note": "Kip + be."
+        },
+        {
+          "type": "gap",
+          "text": "She ___ been feeling ill all week.",
+          "options": [
+            "has",
+            "have",
+            "is"
+          ],
+          "answer": 0,
+          "note": "she → has been + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ for the exam since six o'clock this morning.",
+          "options": [
+            "has been studying",
+            "is studying",
+            "studies",
+            "has studied since"
+          ],
+          "answer": 0,
+          "note": "Süregelen iş → have been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "This time next week we ___ on a beach.",
+          "options": [
+            "will be lying",
+            "will lie",
+            "are lying",
+            "will have lain"
+          ],
+          "answer": 0,
+          "note": "Gelecekte o anda sürecek iş → will be + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "They ___ here for twenty minutes before the bus came.",
+          "options": [
+            "had been waiting",
+            "have been waiting",
+            "were waiting for",
+            "are waiting"
+          ],
+          "answer": 0,
+          "note": "Geçmişteki bir andan öncesine uzanan süre → had been + V-ing."
+        },
+        {
+          "type": "gap",
+          "text": "How long ___ you been working on this project?",
+          "options": [
+            "have",
+            "are",
+            "do"
+          ],
+          "answer": 0,
+          "note": "How long + have been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "My hands are dirty because I ___ in the garden.",
+          "options": [
+            "have been digging",
+            "dug",
+            "have dug",
+            "am digging"
+          ],
+          "answer": 0,
+          "note": "Şimdiki hâli açıklayan süregelen iş."
+        }
       ]
     },
     {
@@ -46,35 +218,202 @@
       "title": "must have, might have, should have",
       "topic": "Modal + perfect infinitive",
       "canDo": "Geçmişte olanlar hakkında tahmin yürütebilir, pişmanlık ve eleştiri belirtebilirim.",
-      "covers": ["MD.MD_PF.AFF", "MD.MD_PF.NEG"],
+      "covers": [
+        "MD.MD_PF.AFF",
+        "MD.MD_PF.NEG"
+      ],
       "concept": {
         "summary": "Kip fiilden sonra have + V3 gelince bakış geçmişe döner. must have güçlü tahmin, might have zayıf ihtimal, should have yapılmayan ama yapılması gereken şeyi anlatır. can't have ise \"olamaz\" der.",
-        "formula": { "left": "kip + have", "right": "+ fiilin üçüncü hâli" },
+        "formula": {
+          "left": "kip + have",
+          "right": "+ fiilin üçüncü hâli"
+        },
         "table": [
-          { "form": "must have", "be": "kesin tahmin", "example": "He must have missed the train." },
-          { "form": "might / may have", "be": "ihtimal", "example": "She might have forgotten." },
-          { "form": "can't have", "be": "imkânsız", "example": "They can't have finished already." },
-          { "form": "should have", "be": "pişmanlık", "example": "I should have called you." }
+          {
+            "form": "must have",
+            "be": "kesin tahmin",
+            "example": "He must have missed the train."
+          },
+          {
+            "form": "might / may have",
+            "be": "ihtimal",
+            "example": "She might have forgotten."
+          },
+          {
+            "form": "can't have",
+            "be": "imkânsız",
+            "example": "They can't have finished already."
+          },
+          {
+            "form": "should have",
+            "be": "pişmanlık",
+            "example": "I should have called you."
+          }
         ]
       },
       "examples": [
-        { "en": "The ground is wet; it must have rained.", "tr": "Yer ıslak, yağmur yağmış olmalı.", "note": "Kanıta dayalı çıkarım." },
-        { "en": "She might have left already.", "tr": "Çoktan çıkmış olabilir.", "note": "Zayıf ihtimal." },
-        { "en": "You should have told me earlier.", "tr": "Bana daha önce söylemeliydin.", "note": "Yapılmayan şey; eleştiri." },
-        { "en": "He can't have seen us in that crowd.", "tr": "O kalabalıkta bizi görmüş olamaz.", "note": "İmkânsızlık." },
-        { "en": "I shouldn't have eaten so much.", "tr": "Bu kadar çok yememeliydim.", "note": "Pişmanlık." }
+        {
+          "en": "The ground is wet; it must have rained.",
+          "tr": "Yer ıslak, yağmur yağmış olmalı.",
+          "note": "Kanıta dayalı çıkarım."
+        },
+        {
+          "en": "She might have left already.",
+          "tr": "Çoktan çıkmış olabilir.",
+          "note": "Zayıf ihtimal."
+        },
+        {
+          "en": "You should have told me earlier.",
+          "tr": "Bana daha önce söylemeliydin.",
+          "note": "Yapılmayan şey; eleştiri."
+        },
+        {
+          "en": "He can't have seen us in that crowd.",
+          "tr": "O kalabalıkta bizi görmüş olamaz.",
+          "note": "İmkânsızlık."
+        },
+        {
+          "en": "I shouldn't have eaten so much.",
+          "tr": "Bu kadar çok yememeliydim.",
+          "note": "Pişmanlık."
+        }
       ],
       "mistakes": [
-        { "wrong": "He must had missed the train.", "right": "He must have missed the train.", "why": "Kipten sonra have yalın kalır." },
-        { "wrong": "You should have told me yesterday, but you did.", "right": "You should have told me yesterday, but you didn't.", "why": "should have yapılmayan işi anlatır." },
-        { "wrong": "She might forgot the meeting.", "right": "She might have forgotten the meeting.", "why": "Geçmişe bakan tahminde have + V3 gerekir." }
+        {
+          "wrong": "He must had missed the train.",
+          "right": "He must have missed the train.",
+          "why": "Kipten sonra have yalın kalır."
+        },
+        {
+          "wrong": "You should have told me yesterday, but you did.",
+          "right": "You should have told me yesterday, but you didn't.",
+          "why": "should have yapılmayan işi anlatır."
+        },
+        {
+          "wrong": "She might forgot the meeting.",
+          "right": "She might have forgotten the meeting.",
+          "why": "Geçmişe bakan tahminde have + V3 gerekir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "The car is gone; someone ___ taken it.", "options": ["must have", "must had", "must has", "must to have"], "answer": 0, "note": "Kesin tahmin → must have + V3." },
-        { "type": "choice", "text": "I ___ studied harder for that exam.", "options": ["should have", "should had", "should has", "should of"], "answer": 0, "note": "Pişmanlık → should have." },
-        { "type": "choice", "text": "They ___ arrived yet; it's too early.", "options": ["can't have", "can't had", "mustn't have to", "don't can have"], "answer": 0, "note": "İmkânsızlık → can't have." },
-        { "type": "choice", "text": "She ___ have missed the message.", "options": ["may", "may to", "mays", "is may"], "answer": 0, "note": "İhtimal → may have." },
-        { "type": "gap", "text": "We ___ have booked earlier; now it's full.", "options": ["should", "shall", "would to"], "answer": 0, "note": "should have + V3." }
+        {
+          "type": "choice",
+          "text": "The car is gone; someone ___ taken it.",
+          "options": [
+            "must have",
+            "must had",
+            "must has",
+            "must to have"
+          ],
+          "answer": 0,
+          "note": "Kesin tahmin → must have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ studied harder for that exam.",
+          "options": [
+            "should have",
+            "should had",
+            "should has",
+            "should of"
+          ],
+          "answer": 0,
+          "note": "Pişmanlık → should have."
+        },
+        {
+          "type": "choice",
+          "text": "They ___ arrived yet; it's too early.",
+          "options": [
+            "can't have",
+            "can't had",
+            "mustn't have to",
+            "don't can have"
+          ],
+          "answer": 0,
+          "note": "İmkânsızlık → can't have."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ have missed the message.",
+          "options": [
+            "may",
+            "may to",
+            "mays",
+            "is may"
+          ],
+          "answer": 0,
+          "note": "İhtimal → may have."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ have booked earlier; now it's full.",
+          "options": [
+            "should",
+            "shall",
+            "would to"
+          ],
+          "answer": 0,
+          "note": "should have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The lights are off. They ___ home.",
+          "options": [
+            "must have gone",
+            "must go",
+            "must have went",
+            "must be gone to"
+          ],
+          "answer": 0,
+          "note": "Geçmişe dair güçlü çıkarım → must have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "You ___ told me earlier; I could have helped.",
+          "options": [
+            "should have",
+            "should",
+            "must",
+            "would be"
+          ],
+          "answer": 0,
+          "note": "Yapılmayan doğru şey → should have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "She is late. She ___ missed the train.",
+          "options": [
+            "might have",
+            "might",
+            "must be",
+            "should"
+          ],
+          "answer": 0,
+          "note": "Geçmişe dair ihtimal → might have + V3."
+        },
+        {
+          "type": "gap",
+          "text": "He ___ have seen us; he was looking the other way.",
+          "options": [
+            "cannot",
+            "must",
+            "should"
+          ],
+          "answer": 0,
+          "note": "İmkânsız çıkarım → cannot have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ have left my wallet in the taxi.",
+          "options": [
+            "may",
+            "may to",
+            "may be",
+            "may had"
+          ],
+          "answer": 0,
+          "note": "may have + V3."
+        }
       ]
     },
     {
@@ -84,35 +423,204 @@
       "title": "Edilgen — her zamanda",
       "topic": "Passive across tenses; passive with indirect objects",
       "canDo": "Resmî yazıda ve haber dilinde edilgen yapıyı rahatça kullanabilirim.",
-      "covers": ["PASS.PRESENT.NEG", "PASS.PRSPF.AFF", "PASS.FUT.AFF", "PASS.IO.AFF"],
+      "covers": [
+        "PASS.PRESENT.NEG",
+        "PASS.PRSPF.AFF",
+        "PASS.FUT.AFF",
+        "PASS.IO.AFF"
+      ],
       "concept": {
         "summary": "Edilgende zaman be fiilinde taşınır, asıl fiil hep üçüncü hâlde kalır. İki nesneli fiillerde (give, send, offer) iki farklı edilgen kurulabilir; İngilizce genelde kişiyi öne alanı yeğler: She was given a prize.",
-        "formula": { "left": "be'nin çekimi", "right": "+ fiilin üçüncü hâli" },
+        "formula": {
+          "left": "be'nin çekimi",
+          "right": "+ fiilin üçüncü hâli"
+        },
         "table": [
-          { "form": "present perfect", "be": "has / have been + V3", "example": "The road has been closed." },
-          { "form": "gelecek", "be": "will be + V3", "example": "You will be informed." },
-          { "form": "olumsuz", "be": "isn't / aren't + V3", "example": "Photos aren't allowed." },
-          { "form": "iki nesneli", "be": "kişi öne alınır", "example": "He was sent an email." }
+          {
+            "form": "present perfect",
+            "be": "has / have been + V3",
+            "example": "The road has been closed."
+          },
+          {
+            "form": "gelecek",
+            "be": "will be + V3",
+            "example": "You will be informed."
+          },
+          {
+            "form": "olumsuz",
+            "be": "isn't / aren't + V3",
+            "example": "Photos aren't allowed."
+          },
+          {
+            "form": "iki nesneli",
+            "be": "kişi öne alınır",
+            "example": "He was sent an email."
+          }
         ]
       },
       "examples": [
-        { "en": "The results have been published online.", "tr": "Sonuçlar internette yayımlandı.", "note": "have been + V3." },
-        { "en": "All applicants will be contacted next week.", "tr": "Tüm başvuru sahiplerine önümüzdeki hafta ulaşılacak.", "note": "will be + V3." },
-        { "en": "Bags are not allowed in the hall.", "tr": "Salona çanta alınmaz.", "note": "Olumsuz edilgen." },
-        { "en": "She was offered a new position.", "tr": "Ona yeni bir pozisyon teklif edildi.", "note": "Kişi özne konumuna alındı." },
-        { "en": "We were told nothing about the delay.", "tr": "Gecikme hakkında bize hiçbir şey söylenmedi.", "note": "tell'in edilgeni." }
+        {
+          "en": "The results have been published online.",
+          "tr": "Sonuçlar internette yayımlandı.",
+          "note": "have been + V3."
+        },
+        {
+          "en": "All applicants will be contacted next week.",
+          "tr": "Tüm başvuru sahiplerine önümüzdeki hafta ulaşılacak.",
+          "note": "will be + V3."
+        },
+        {
+          "en": "Bags are not allowed in the hall.",
+          "tr": "Salona çanta alınmaz.",
+          "note": "Olumsuz edilgen."
+        },
+        {
+          "en": "She was offered a new position.",
+          "tr": "Ona yeni bir pozisyon teklif edildi.",
+          "note": "Kişi özne konumuna alındı."
+        },
+        {
+          "en": "We were told nothing about the delay.",
+          "tr": "Gecikme hakkında bize hiçbir şey söylenmedi.",
+          "note": "tell'in edilgeni."
+        }
       ],
       "mistakes": [
-        { "wrong": "The results have published online.", "right": "The results have been published online.", "why": "Edilgende be parçası düşmez." },
-        { "wrong": "She was offered to a new position.", "right": "She was offered a new position.", "why": "Kişi zaten özne; to gerekmez." },
-        { "wrong": "Bags are not allow in the hall.", "right": "Bags are not allowed in the hall.", "why": "Üçüncü hâl gerekir." }
+        {
+          "wrong": "The results have published online.",
+          "right": "The results have been published online.",
+          "why": "Edilgende be parçası düşmez."
+        },
+        {
+          "wrong": "She was offered to a new position.",
+          "right": "She was offered a new position.",
+          "why": "Kişi zaten özne; to gerekmez."
+        },
+        {
+          "wrong": "Bags are not allow in the hall.",
+          "right": "Bags are not allowed in the hall.",
+          "why": "Üçüncü hâl gerekir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "The bridge ___ since 2019.", "options": ["has been closed", "has closed", "is closing", "was close"], "answer": 0, "note": "since → present perfect edilgen." },
-        { "type": "choice", "text": "You ___ by email once we decide.", "options": ["will be notified", "will notify", "will be notify", "are notify"], "answer": 0, "note": "will be + V3." },
-        { "type": "choice", "text": "Cameras ___ inside the museum.", "options": ["aren't permitted", "aren't permit", "don't permitted", "not permitted are"], "answer": 0, "note": "Olumsuz edilgen." },
-        { "type": "choice", "text": "The students ___ a certificate at the end.", "options": ["were given", "were gave", "gave were", "was given"], "answer": 0, "note": "Kişi özne, iki nesneli fiil." },
-        { "type": "gap", "text": "The letters ___ sent yesterday.", "options": ["were", "have", "are been"], "answer": 0, "note": "Geçmiş edilgen → were + V3." }
+        {
+          "type": "choice",
+          "text": "The bridge ___ since 2019.",
+          "options": [
+            "has been closed",
+            "has closed",
+            "is closing",
+            "was close"
+          ],
+          "answer": 0,
+          "note": "since → present perfect edilgen."
+        },
+        {
+          "type": "choice",
+          "text": "You ___ by email once we decide.",
+          "options": [
+            "will be notified",
+            "will notify",
+            "will be notify",
+            "are notify"
+          ],
+          "answer": 0,
+          "note": "will be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Cameras ___ inside the museum.",
+          "options": [
+            "aren't permitted",
+            "aren't permit",
+            "don't permitted",
+            "not permitted are"
+          ],
+          "answer": 0,
+          "note": "Olumsuz edilgen."
+        },
+        {
+          "type": "choice",
+          "text": "The students ___ a certificate at the end.",
+          "options": [
+            "were given",
+            "were gave",
+            "gave were",
+            "was given"
+          ],
+          "answer": 0,
+          "note": "Kişi özne, iki nesneli fiil."
+        },
+        {
+          "type": "gap",
+          "text": "The letters ___ sent yesterday.",
+          "options": [
+            "were",
+            "have",
+            "are been"
+          ],
+          "answer": 0,
+          "note": "Geçmiş edilgen → were + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The road ___ repaired at the moment.",
+          "options": [
+            "is being",
+            "is",
+            "has been being",
+            "was being now"
+          ],
+          "answer": 0,
+          "note": "Şu an süren edilgen → is being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The decision ___ already been taken.",
+          "options": [
+            "has",
+            "is",
+            "was",
+            "had being"
+          ],
+          "answer": 0,
+          "note": "Present perfect edilgen → has been + V3."
+        },
+        {
+          "type": "choice",
+          "text": "When we arrived, the tables ___ been laid.",
+          "options": [
+            "had",
+            "have",
+            "were",
+            "are"
+          ],
+          "answer": 0,
+          "note": "Past perfect edilgen → had been + V3."
+        },
+        {
+          "type": "gap",
+          "text": "The building ___ being used when the fire started.",
+          "options": [
+            "was",
+            "is",
+            "has"
+          ],
+          "answer": 0,
+          "note": "Geçmişte süren edilgen → was being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "By next month the work ___ been completed.",
+          "options": [
+            "will have",
+            "will",
+            "has",
+            "is"
+          ],
+          "answer": 0,
+          "note": "Future perfect edilgen → will have been + V3."
+        }
       ]
     },
     {
@@ -122,35 +630,203 @@
       "title": "to be done, being done, not doing",
       "topic": "Passive infinitive and gerund; negative gerund",
       "canDo": "Edilgen anlamı fiilimsi biçimlerde de kurabilirim.",
-      "covers": ["TO.to_be_done", "VG.being_VN", "VG.not_VG"],
+      "covers": [
+        "TO.to_be_done",
+        "VG.being_VN",
+        "VG.not_VG"
+      ],
       "concept": {
         "summary": "Fiilimsiler de edilgen olabilir. to'lu biçimde to be + V3, -ing biçiminde being + V3 kullanılır. -ing'in olumsuzunda not, -ing'in önüne gelir: not knowing.",
-        "formula": { "left": "to be + V3", "right": "being + V3 / not + -ing" },
+        "formula": {
+          "left": "to be + V3",
+          "right": "being + V3 / not + -ing"
+        },
         "table": [
-          { "form": "to'lu edilgen", "be": "to be + V3", "example": "He wants to be promoted." },
-          { "form": "-ing edilgen", "be": "being + V3", "example": "She hates being interrupted." },
-          { "form": "olumsuz -ing", "be": "not + -ing", "example": "Not knowing the way, we asked." },
-          { "form": "gereklilik", "be": "to be done", "example": "There is work to be done." }
+          {
+            "form": "to'lu edilgen",
+            "be": "to be + V3",
+            "example": "He wants to be promoted."
+          },
+          {
+            "form": "-ing edilgen",
+            "be": "being + V3",
+            "example": "She hates being interrupted."
+          },
+          {
+            "form": "olumsuz -ing",
+            "be": "not + -ing",
+            "example": "Not knowing the way, we asked."
+          },
+          {
+            "form": "gereklilik",
+            "be": "to be done",
+            "example": "There is work to be done."
+          }
         ]
       },
       "examples": [
-        { "en": "Nobody likes being criticised in public.", "tr": "Kimse herkesin önünde eleştirilmekten hoşlanmaz.", "note": "being + V3." },
-        { "en": "She hopes to be chosen for the team.", "tr": "Takıma seçilmeyi umuyor.", "note": "to be + V3." },
-        { "en": "Not having a car, he takes the bus.", "tr": "Arabası olmadığı için otobüse biniyor.", "note": "not + -ing." },
-        { "en": "These forms need to be signed today.", "tr": "Bu formların bugün imzalanması gerekiyor.", "note": "need + to be + V3." },
-        { "en": "He apologised for not replying sooner.", "tr": "Daha erken cevap vermediği için özür diledi.", "note": "Edattan sonra not + -ing." }
+        {
+          "en": "Nobody likes being criticised in public.",
+          "tr": "Kimse herkesin önünde eleştirilmekten hoşlanmaz.",
+          "note": "being + V3."
+        },
+        {
+          "en": "She hopes to be chosen for the team.",
+          "tr": "Takıma seçilmeyi umuyor.",
+          "note": "to be + V3."
+        },
+        {
+          "en": "Not having a car, he takes the bus.",
+          "tr": "Arabası olmadığı için otobüse biniyor.",
+          "note": "not + -ing."
+        },
+        {
+          "en": "These forms need to be signed today.",
+          "tr": "Bu formların bugün imzalanması gerekiyor.",
+          "note": "need + to be + V3."
+        },
+        {
+          "en": "He apologised for not replying sooner.",
+          "tr": "Daha erken cevap vermediği için özür diledi.",
+          "note": "Edattan sonra not + -ing."
+        }
       ],
       "mistakes": [
-        { "wrong": "She hates to being interrupted.", "right": "She hates being interrupted.", "why": "to ile -ing birlikte gelmez." },
-        { "wrong": "He apologised for don't replying.", "right": "He apologised for not replying.", "why": "-ing biçiminin olumsuzu not ile yapılır." },
-        { "wrong": "These forms need to be sign today.", "right": "These forms need to be signed today.", "why": "Edilgende üçüncü hâl gerekir." }
+        {
+          "wrong": "She hates to being interrupted.",
+          "right": "She hates being interrupted.",
+          "why": "to ile -ing birlikte gelmez."
+        },
+        {
+          "wrong": "He apologised for don't replying.",
+          "right": "He apologised for not replying.",
+          "why": "-ing biçiminin olumsuzu not ile yapılır."
+        },
+        {
+          "wrong": "These forms need to be sign today.",
+          "right": "These forms need to be signed today.",
+          "why": "Edilgende üçüncü hâl gerekir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "He expects ___ for the delay.", "options": ["to be paid", "to pay be", "being paid to", "to been paid"], "answer": 0, "note": "to be + V3." },
-        { "type": "choice", "text": "She dislikes ___ at.", "options": ["being stared", "to be staring", "be stared", "been staring"], "answer": 0, "note": "-ing edilgen → being + V3." },
-        { "type": "choice", "text": "___ the answer, I said nothing.", "options": ["Not knowing", "Don't knowing", "Not know", "Knowing not"], "answer": 0, "note": "not + -ing." },
-        { "type": "choice", "text": "The room needs ___ before the guests arrive.", "options": ["to be cleaned", "to clean be", "being cleaned to", "to be clean"], "answer": 0, "note": "need + to be + V3." },
-        { "type": "gap", "text": "Thank you for ___ me wait.", "options": ["not making", "don't making", "not make"], "answer": 0, "note": "for + not + -ing." }
+        {
+          "type": "choice",
+          "text": "He expects ___ for the delay.",
+          "options": [
+            "to be paid",
+            "to pay be",
+            "being paid to",
+            "to been paid"
+          ],
+          "answer": 0,
+          "note": "to be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "She dislikes ___ at.",
+          "options": [
+            "being stared",
+            "to be staring",
+            "be stared",
+            "been staring"
+          ],
+          "answer": 0,
+          "note": "-ing edilgen → being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "___ the answer, I said nothing.",
+          "options": [
+            "Not knowing",
+            "Don't knowing",
+            "Not know",
+            "Knowing not"
+          ],
+          "answer": 0,
+          "note": "not + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "The room needs ___ before the guests arrive.",
+          "options": [
+            "to be cleaned",
+            "to clean be",
+            "being cleaned to",
+            "to be clean"
+          ],
+          "answer": 0,
+          "note": "need + to be + V3."
+        },
+        {
+          "type": "gap",
+          "text": "Thank you for ___ me wait.",
+          "options": [
+            "not making",
+            "don't making",
+            "not make"
+          ],
+          "answer": 0,
+          "note": "for + not + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "Nobody likes ___ criticized in public.",
+          "options": [
+            "being",
+            "to being",
+            "be",
+            "been"
+          ],
+          "answer": 0,
+          "note": "Edilgen isim-fiil → being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "These documents need ___ before Friday.",
+          "options": [
+            "to be signed",
+            "to sign be",
+            "being signed to",
+            "be signed"
+          ],
+          "answer": 0,
+          "note": "Edilgen mastar → to be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "He left without ___ goodbye.",
+          "options": [
+            "saying",
+            "to say",
+            "said",
+            "say"
+          ],
+          "answer": 0,
+          "note": "Edattan sonra → V-ing."
+        },
+        {
+          "type": "gap",
+          "text": "She apologized for ___ the message.",
+          "options": [
+            "not answering",
+            "not to answer",
+            "do not answer"
+          ],
+          "answer": 0,
+          "note": "Olumsuz isim-fiil → not + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "The letter seems ___ opened already.",
+          "options": [
+            "to have been",
+            "to be",
+            "being",
+            "to been"
+          ],
+          "answer": 0,
+          "note": "Önce olmuş edilgen iş → to have been + V3."
+        }
       ]
     },
     {
@@ -160,35 +836,201 @@
       "title": "have / get something done",
       "topic": "Causative passive",
       "canDo": "Bir işi başkasına yaptırdığımı söyleyebilirim.",
-      "covers": ["CAUS.have.get_NP_VN"],
+      "covers": [
+        "CAUS.have.get_NP_VN"
+      ],
       "concept": {
         "summary": "İşi kendimiz yapmadığımızda, yaptıranı özne yapan bir kalıp kullanılır: nesne önce, üçüncü hâl sonra gelir. Türkçedeki ettirgen ek (-tır) burada sözdizimiyle karşılanır. Sıra bozulursa anlam tersine döner.",
-        "formula": { "left": "have / get + nesne", "right": "+ fiilin üçüncü hâli" },
+        "formula": {
+          "left": "have / get + nesne",
+          "right": "+ fiilin üçüncü hâli"
+        },
         "table": [
-          { "form": "kalıp", "be": "have + nesne + V3", "example": "I had my hair cut." },
-          { "form": "günlük", "be": "get + nesne + V3", "example": "We got the car repaired." },
-          { "form": "karşılaştır", "be": "I cut my hair = kendim", "example": "I cut my hair. (kendim kestim)" },
-          { "form": "olumsuz deneyim", "be": "istenmeyen olay", "example": "He had his wallet stolen." }
+          {
+            "form": "kalıp",
+            "be": "have + nesne + V3",
+            "example": "I had my hair cut."
+          },
+          {
+            "form": "günlük",
+            "be": "get + nesne + V3",
+            "example": "We got the car repaired."
+          },
+          {
+            "form": "karşılaştır",
+            "be": "I cut my hair = kendim",
+            "example": "I cut my hair. (kendim kestim)"
+          },
+          {
+            "form": "olumsuz deneyim",
+            "be": "istenmeyen olay",
+            "example": "He had his wallet stolen."
+          }
         ]
       },
       "examples": [
-        { "en": "I had my car serviced last week.", "tr": "Geçen hafta arabamın bakımını yaptırdım.", "note": "Bakımı ben yapmadım." },
-        { "en": "She is getting her kitchen painted.", "tr": "Mutfağını boyatıyor.", "note": "get ile aynı anlam." },
-        { "en": "We had the photos printed.", "tr": "Fotoğrafları bastırdık.", "note": "Nesne önce, V3 sonra." },
-        { "en": "He had his phone stolen on the bus.", "tr": "Otobüste telefonu çalındı.", "note": "İstenmeyen olay da bu kalıpla anlatılır." },
-        { "en": "You should have your eyes tested.", "tr": "Gözlerini kontrol ettirmelisin.", "note": "Kip ile birlikte." }
+        {
+          "en": "I had my car serviced last week.",
+          "tr": "Geçen hafta arabamın bakımını yaptırdım.",
+          "note": "Bakımı ben yapmadım."
+        },
+        {
+          "en": "She is getting her kitchen painted.",
+          "tr": "Mutfağını boyatıyor.",
+          "note": "get ile aynı anlam."
+        },
+        {
+          "en": "We had the photos printed.",
+          "tr": "Fotoğrafları bastırdık.",
+          "note": "Nesne önce, V3 sonra."
+        },
+        {
+          "en": "He had his phone stolen on the bus.",
+          "tr": "Otobüste telefonu çalındı.",
+          "note": "İstenmeyen olay da bu kalıpla anlatılır."
+        },
+        {
+          "en": "You should have your eyes tested.",
+          "tr": "Gözlerini kontrol ettirmelisin.",
+          "note": "Kip ile birlikte."
+        }
       ],
       "mistakes": [
-        { "wrong": "I had cut my hair yesterday.", "right": "I had my hair cut yesterday.", "why": "Sıra bozulunca anlam \"kendim kesmiştim\"e döner." },
-        { "wrong": "She is getting paint her kitchen.", "right": "She is getting her kitchen painted.", "why": "Nesne önce, üçüncü hâl sonra." },
-        { "wrong": "We had printed the photos by a shop.", "right": "We had the photos printed at a shop.", "why": "Yaptırma kalıbında nesne fiilden önce gelir." }
+        {
+          "wrong": "I had cut my hair yesterday.",
+          "right": "I had my hair cut yesterday.",
+          "why": "Sıra bozulunca anlam \"kendim kesmiştim\"e döner."
+        },
+        {
+          "wrong": "She is getting paint her kitchen.",
+          "right": "She is getting her kitchen painted.",
+          "why": "Nesne önce, üçüncü hâl sonra."
+        },
+        {
+          "wrong": "We had printed the photos by a shop.",
+          "right": "We had the photos printed at a shop.",
+          "why": "Yaptırma kalıbında nesne fiilden önce gelir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "I need to ___ .", "options": ["have my suit cleaned", "have cleaned my suit", "clean my suit have", "be cleaned my suit"], "answer": 0, "note": "have + nesne + V3." },
-        { "type": "choice", "text": "They are ___ next month.", "options": ["getting their roof repaired", "getting repaired their roof", "get repair their roof", "repairing got their roof"], "answer": 0, "note": "get + nesne + V3." },
-        { "type": "choice", "text": "She had her passport ___ at the airport.", "options": ["checked", "check", "checking", "to check"], "answer": 0, "note": "Üçüncü hâl." },
-        { "type": "choice", "text": "He ___ his bike stolen last night.", "options": ["had", "was", "did", "made"], "answer": 0, "note": "İstenmeyen olay da have ile." },
-        { "type": "gap", "text": "You should have that tooth ___ .", "options": ["looked at", "look at", "looking at"], "answer": 0, "note": "have + nesne + V3." }
+        {
+          "type": "choice",
+          "text": "I need to ___ .",
+          "options": [
+            "have my suit cleaned",
+            "have cleaned my suit",
+            "clean my suit have",
+            "be cleaned my suit"
+          ],
+          "answer": 0,
+          "note": "have + nesne + V3."
+        },
+        {
+          "type": "choice",
+          "text": "They are ___ next month.",
+          "options": [
+            "getting their roof repaired",
+            "getting repaired their roof",
+            "get repair their roof",
+            "repairing got their roof"
+          ],
+          "answer": 0,
+          "note": "get + nesne + V3."
+        },
+        {
+          "type": "choice",
+          "text": "She had her passport ___ at the airport.",
+          "options": [
+            "checked",
+            "check",
+            "checking",
+            "to check"
+          ],
+          "answer": 0,
+          "note": "Üçüncü hâl."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ his bike stolen last night.",
+          "options": [
+            "had",
+            "was",
+            "did",
+            "made"
+          ],
+          "answer": 0,
+          "note": "İstenmeyen olay da have ile."
+        },
+        {
+          "type": "gap",
+          "text": "You should have that tooth ___ .",
+          "options": [
+            "looked at",
+            "look at",
+            "looking at"
+          ],
+          "answer": 0,
+          "note": "have + nesne + V3."
+        },
+        {
+          "type": "choice",
+          "text": "We ___ the kitchen painted last month.",
+          "options": [
+            "had",
+            "have",
+            "did",
+            "made"
+          ],
+          "answer": 0,
+          "note": "Geçmiş → had + nesne + V3."
+        },
+        {
+          "type": "choice",
+          "text": "I am going to ___ my eyes tested.",
+          "options": [
+            "have",
+            "make",
+            "do",
+            "let"
+          ],
+          "answer": 0,
+          "note": "have + nesne + V3."
+        },
+        {
+          "type": "choice",
+          "text": "She had her bag ___ on the train.",
+          "options": [
+            "stolen",
+            "steal",
+            "stealing",
+            "to steal"
+          ],
+          "answer": 0,
+          "note": "Başına gelen olay da bu kalıpla anlatılır."
+        },
+        {
+          "type": "gap",
+          "text": "You should ___ that tooth looked at.",
+          "options": [
+            "get",
+            "make",
+            "let"
+          ],
+          "answer": 0,
+          "note": "get + nesne + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Where did you ___ your hair cut?",
+          "options": [
+            "have",
+            "make",
+            "do",
+            "let"
+          ],
+          "answer": 0,
+          "note": "Soru: did + have + nesne + V3."
+        }
       ]
     },
     {
@@ -198,35 +1040,202 @@
       "title": "as … as, not as … as, less",
       "topic": "Comparison of equality and inferiority",
       "canDo": "Eşitlik kurabilir, bir şeyin daha azını söyleyebilirim.",
-      "covers": ["COMP.EQ.as_as", "COMP.INFER"],
+      "covers": [
+        "COMP.EQ.as_as",
+        "COMP.INFER"
+      ],
       "concept": {
         "summary": "Eşitlik as … as ile kurulur ve arada sıfat yalın hâlde kalır. Olumsuzu iki türlü söylenebilir: not as tall as ya da less tall than. less uzun sıfatlarla doğal durur; kısa sıfatlarda İngilizce genelde karşıt sıfatı yeğler.",
-        "formula": { "left": "as + yalın sıfat + as", "right": "less + sıfat + than" },
+        "formula": {
+          "left": "as + yalın sıfat + as",
+          "right": "less + sıfat + than"
+        },
         "table": [
-          { "form": "eşitlik", "be": "as … as", "example": "She is as tall as her brother." },
-          { "form": "olumsuz", "be": "not as … as", "example": "It isn't as cold as yesterday." },
-          { "form": "azlık", "be": "less … than", "example": "This route is less crowded." },
-          { "form": "en az", "be": "the least", "example": "the least expensive option" }
+          {
+            "form": "eşitlik",
+            "be": "as … as",
+            "example": "She is as tall as her brother."
+          },
+          {
+            "form": "olumsuz",
+            "be": "not as … as",
+            "example": "It isn't as cold as yesterday."
+          },
+          {
+            "form": "azlık",
+            "be": "less … than",
+            "example": "This route is less crowded."
+          },
+          {
+            "form": "en az",
+            "be": "the least",
+            "example": "the least expensive option"
+          }
         ]
       },
       "examples": [
-        { "en": "This phone is as good as the expensive one.", "tr": "Bu telefon pahalı olan kadar iyi.", "note": "Arada sıfat yalın." },
-        { "en": "The exam wasn't as hard as I expected.", "tr": "Sınav beklediğim kadar zor değildi.", "note": "Olumsuz eşitlik." },
-        { "en": "Trains are less polluting than planes.", "tr": "Trenler uçaklardan daha az kirletici.", "note": "less + uzun sıfat." },
-        { "en": "This is the least expensive room we have.", "tr": "Bu, elimizdeki en ucuz oda.", "note": "the least." },
-        { "en": "He works as hard as anyone here.", "tr": "Buradaki herkes kadar çok çalışıyor.", "note": "Zarflarda da aynı kalıp." }
+        {
+          "en": "This phone is as good as the expensive one.",
+          "tr": "Bu telefon pahalı olan kadar iyi.",
+          "note": "Arada sıfat yalın."
+        },
+        {
+          "en": "The exam wasn't as hard as I expected.",
+          "tr": "Sınav beklediğim kadar zor değildi.",
+          "note": "Olumsuz eşitlik."
+        },
+        {
+          "en": "Trains are less polluting than planes.",
+          "tr": "Trenler uçaklardan daha az kirletici.",
+          "note": "less + uzun sıfat."
+        },
+        {
+          "en": "This is the least expensive room we have.",
+          "tr": "Bu, elimizdeki en ucuz oda.",
+          "note": "the least."
+        },
+        {
+          "en": "He works as hard as anyone here.",
+          "tr": "Buradaki herkes kadar çok çalışıyor.",
+          "note": "Zarflarda da aynı kalıp."
+        }
       ],
       "mistakes": [
-        { "wrong": "She is as taller as her brother.", "right": "She is as tall as her brother.", "why": "as … as arasında sıfat yalın kalır." },
-        { "wrong": "It isn't so cold than yesterday.", "right": "It isn't as cold as yesterday.", "why": "Eşitlik kalıbı as … as'tır, than almaz." },
-        { "wrong": "This route is less crowdeder.", "right": "This route is less crowded.", "why": "less ile ek birlikte kullanılmaz." }
+        {
+          "wrong": "She is as taller as her brother.",
+          "right": "She is as tall as her brother.",
+          "why": "as … as arasında sıfat yalın kalır."
+        },
+        {
+          "wrong": "It isn't so cold than yesterday.",
+          "right": "It isn't as cold as yesterday.",
+          "why": "Eşitlik kalıbı as … as'tır, than almaz."
+        },
+        {
+          "wrong": "This route is less crowdeder.",
+          "right": "This route is less crowded.",
+          "why": "less ile ek birlikte kullanılmaz."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "My new laptop is ___ fast ___ the old one.", "options": ["as / as", "so / than", "as / than", "more / as"], "answer": 0, "note": "Eşitlik → as … as." },
-        { "type": "choice", "text": "The film wasn't ___ good as the book.", "options": ["as", "so than", "more", "less than"], "answer": 0, "note": "Olumsuz eşitlik." },
-        { "type": "choice", "text": "This model is ___ reliable than the older one.", "options": ["less", "lesser than", "least", "little"], "answer": 0, "note": "Azlık → less + than." },
-        { "type": "choice", "text": "It was ___ interesting talk of the day.", "options": ["the least", "the less", "least of", "less the"], "answer": 0, "note": "En az → the least." },
-        { "type": "gap", "text": "He speaks English ___ well ___ a native.", "options": ["as / as", "so / as", "as / than"], "answer": 0, "note": "Zarfta da as … as." }
+        {
+          "type": "choice",
+          "text": "My new laptop is ___ fast ___ the old one.",
+          "options": [
+            "as / as",
+            "so / than",
+            "as / than",
+            "more / as"
+          ],
+          "answer": 0,
+          "note": "Eşitlik → as … as."
+        },
+        {
+          "type": "choice",
+          "text": "The film wasn't ___ good as the book.",
+          "options": [
+            "as",
+            "so than",
+            "more",
+            "less than"
+          ],
+          "answer": 0,
+          "note": "Olumsuz eşitlik."
+        },
+        {
+          "type": "choice",
+          "text": "This model is ___ reliable than the older one.",
+          "options": [
+            "less",
+            "lesser than",
+            "least",
+            "little"
+          ],
+          "answer": 0,
+          "note": "Azlık → less + than."
+        },
+        {
+          "type": "choice",
+          "text": "It was ___ interesting talk of the day.",
+          "options": [
+            "the least",
+            "the less",
+            "least of",
+            "less the"
+          ],
+          "answer": 0,
+          "note": "En az → the least."
+        },
+        {
+          "type": "gap",
+          "text": "He speaks English ___ well ___ a native.",
+          "options": [
+            "as / as",
+            "so / as",
+            "as / than"
+          ],
+          "answer": 0,
+          "note": "Zarfta da as … as."
+        },
+        {
+          "type": "choice",
+          "text": "This year's results are not ___ good as last year's.",
+          "options": [
+            "as",
+            "so much",
+            "more",
+            "such"
+          ],
+          "answer": 0,
+          "note": "not as … as."
+        },
+        {
+          "type": "choice",
+          "text": "The second book is ___ interesting than the first.",
+          "options": [
+            "less",
+            "least",
+            "not as",
+            "fewer"
+          ],
+          "answer": 0,
+          "note": "less + sıfat + than."
+        },
+        {
+          "type": "choice",
+          "text": "She earns twice ___ much as I do.",
+          "options": [
+            "as",
+            "so",
+            "more",
+            "than"
+          ],
+          "answer": 0,
+          "note": "twice as much as."
+        },
+        {
+          "type": "gap",
+          "text": "The exam was ___ difficult as everyone said.",
+          "options": [
+            "as",
+            "so",
+            "more"
+          ],
+          "answer": 0,
+          "note": "as … as."
+        },
+        {
+          "type": "choice",
+          "text": "This is the ___ expensive of the three.",
+          "options": [
+            "least",
+            "less",
+            "fewest",
+            "lesser than"
+          ],
+          "answer": 0,
+          "note": "En az → the least."
+        }
       ]
     }
   ]
