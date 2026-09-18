@@ -10,7 +10,7 @@ import React, {
 import { AppState } from 'react-native';
 import { PLAN_IDS, PlanId } from '../data/subscription';
 import { CefrLevel } from '../data/curriculum';
-import { clear, EMPTY, flush, load, save, type Saved } from './persist';
+import { clear, EMPTY, flush, load, save, streakOf, today, type Saved } from './persist';
 
 export type Toast = { title: string; note: string } | null;
 
@@ -91,6 +91,18 @@ type AppValue = {
   plan: PlanId;
   setPlan: (p: PlanId) => void;
 
+  /** Kazanılan toplam XP ve kesintisiz çalışma serisi (gün). */
+  xp: number;
+  streak: number;
+  /**
+   * XP verir ve bugünü çalışılan günlere işler.
+   *
+   * Ekranlar zaten "+20 XP" diye bildirim gösteriyordu; o XP'nin bir yere
+   * yazılması gerekiyordu, yoksa her seferinde aynı sayıyı vaat edip
+   * unutuyorduk.
+   */
+  award: (points: number) => void;
+
   /** Cihazdaki ilerlemeyi siler — Ayarlar'daki "ilerlemeyi sıfırla". */
   resetProgress: () => void;
 };
@@ -137,6 +149,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [testResult, setTestResult] = useState<TestResult | null>(null);
   const [positions, setPositions] = useState<Record<string, number>>({});
   const [savedWords, setSavedWords] = useState<string[]>([]);
+  const [xp, setXp] = useState(0);
+  const [days, setDays] = useState<string[]>([]);
   // Kayıt okunana kadar hiçbir şey çizilmiyor: varsayılanlarla bir kare
   // çizmek, o karede yazılan bir değerin kaydı ezmesi demek olurdu.
   const [hydrated, setHydrated] = useState(false);
@@ -160,6 +174,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setTestResult(saved.testResult);
       setPositions(saved.positions);
       setSavedWords(saved.savedWords);
+      setXp(saved.xp);
+      setDays(saved.days);
       setGame((g) => ({
         ...g,
         arenaXp: saved.arena.xp,
@@ -186,6 +202,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       positions,
       savedWords,
       arena: { xp: game.arenaXp, found: game.arenaFound, streak: game.arenaStreak },
+      xp,
+      days,
     };
     save(state);
   }, [
@@ -200,6 +218,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     game.arenaXp,
     game.arenaFound,
     game.arenaStreak,
+    xp,
+    days,
   ]);
 
   // Uygulama arka plana alınırken bekleyen yazma hemen yapılır; aksi hâlde
@@ -211,8 +231,17 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     return () => sub.remove();
   }, []);
 
+  const award = useCallback((points: number) => {
+    setXp((n) => n + points);
+    // Gün listesi sınırsız büyümesin; seri ve haftalık grafik için son bir
+    // yıldan fazlası zaten kullanılmıyor.
+    setDays((cur) => (cur.includes(today()) ? cur : [...cur, today()].slice(-400)));
+  }, []);
+
   const resetProgress = useCallback(() => {
     void clear();
+    setXp(0);
+    setDays([]);
     setGoals(EMPTY.goals);
     setDailyTime(EMPTY.dailyTime);
     setSkills(EMPTY.skills);
@@ -271,9 +300,12 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       toggleJoinedClub: () => setJoinedClub((v) => !v),
       plan,
       setPlan,
+      xp,
+      streak: streakOf(days),
+      award,
       resetProgress,
     }),
-    [toast, fire, goals, dailyTime, skills, cefr, testResult, game, positions, savedWords, liked, following, joinedClub, plan, resetProgress],
+    [toast, fire, goals, dailyTime, skills, cefr, testResult, game, positions, savedWords, liked, following, joinedClub, plan, xp, days, award, resetProgress],
   );
 
   // Kayıt okunmadan çizmiyoruz; bu birkaç milisaniye sürüyor ve uygulama

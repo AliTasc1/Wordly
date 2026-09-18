@@ -35,6 +35,10 @@ export type Saved = {
   positions: Record<string, number>;
   savedWords: string[];
   arena: { xp: number; found: number; streak: number };
+  /** Kazanılan toplam XP. */
+  xp: number;
+  /** Çalışılan günler, ISO tarih (YYYY-MM-DD). Seri buradan hesaplanıyor. */
+  days: string[];
 };
 
 /** Kayıt yoksa ya da okunamazsa uygulama bu değerlerle açılır. */
@@ -47,6 +51,8 @@ export const EMPTY: Saved = {
   positions: {},
   savedWords: [],
   arena: { xp: 0, found: 0, streak: 0 },
+  xp: 0,
+  days: [],
 };
 
 /**
@@ -68,6 +74,8 @@ export async function load(): Promise<Saved> {
       positions: saved.positions ?? EMPTY.positions,
       savedWords: Array.isArray(saved.savedWords) ? saved.savedWords : EMPTY.savedWords,
       arena: { ...EMPTY.arena, ...(saved.arena ?? {}) },
+      xp: typeof saved.xp === 'number' ? saved.xp : 0,
+      days: Array.isArray(saved.days) ? saved.days : [],
     };
   } catch {
     return EMPTY;
@@ -129,4 +137,41 @@ export async function clear(): Promise<void> {
   } catch {
     // yoksay
   }
+}
+
+/** Bugünün tarihi, cihazın yerel gününe göre (YYYY-MM-DD). */
+export function today(): string {
+  const now = new Date();
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+}
+
+/**
+ * Kesintisiz çalışma serisi.
+ *
+ * Bugün çalışılmamışsa seri dünden geriye sayılır — akşam sekizde uygulamayı
+ * açan birine "serin bitti" demek, gün bitmeden yanlış olur. İki günden fazla
+ * boşluk seriyi keser.
+ */
+export function streakOf(days: string[]): number {
+  if (!days.length) return 0;
+  const set = new Set(days);
+  const cursor = new Date();
+  const iso = (d: Date) => {
+    const pad = (n: number) => String(n).padStart(2, '0');
+    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+  };
+
+  // Bugün yoksa dünden başla; ikisi de yoksa seri yok.
+  if (!set.has(iso(cursor))) {
+    cursor.setDate(cursor.getDate() - 1);
+    if (!set.has(iso(cursor))) return 0;
+  }
+
+  let streak = 0;
+  while (set.has(iso(cursor))) {
+    streak += 1;
+    cursor.setDate(cursor.getDate() - 1);
+  }
+  return streak;
 }

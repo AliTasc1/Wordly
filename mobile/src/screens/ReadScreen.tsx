@@ -17,7 +17,7 @@ import { useBack, useGo } from '../navigation/useGo';
 export function ReadScreen() {
   const { go } = useGo();
   const back = useBack('lesson');
-  const { cefr, position, setPosition, fire } = useApp();
+  const { cefr, position, setPosition, fire, award } = useApp();
 
   const items = useMemo(() => readingOf(cefr), [cefr]);
   const index = Math.min(position('reading', cefr), items.length - 1);
@@ -33,6 +33,7 @@ export function ReadScreen() {
   const quiz = useQuiz(question.answer, (_, correct) => {
     if (correct) {
       setRight((n) => n + 1);
+      award(20);
       fire('Doğru! +20 XP', question.note);
     }
   });

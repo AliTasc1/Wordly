@@ -21,7 +21,7 @@ const KEY = 50;
 /** 17 · Harf Arenası — the signature game: build a word from the wheel. */
 export function ArenaScreen() {
   const back = useBack('play');
-  const { cefr, fire, game, arenaSolved, arenaMissed } = useApp();
+  const { cefr, fire, game, arenaSolved, arenaMissed, award } = useApp();
 
   const [picked, setPicked] = useState<number[]>([]);
   const [rotation, setRotation] = useState(0);
@@ -52,6 +52,7 @@ export function ArenaScreen() {
       arenaSolved(gained);
       setPicked([]);
       setRound((r) => r + 1);
+      award(gained);
       fire(`${puzzle.target} · +${gained} XP`, `Kombo ×${nextCombo} · seri sürüyor`);
     } else {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);

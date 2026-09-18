@@ -15,7 +15,7 @@ import { deckProgress, totals, tr } from '../content/progress';
 /** 26 · Profil — a game-character profile for a learner. */
 export function ProfileScreen() {
   const { go } = useGo();
-  const { positions, cefr, savedWords } = useApp();
+  const { positions, cefr, savedWords, xp, streak } = useApp();
 
   // Bu üç sayı artık tasarımdan değil, öğrencinin gerçekten gördüklerinden
   // geliyor. "Düello kazanma oranı" kaldırıldı: düello ekranı hâlâ örnek
@@ -31,6 +31,11 @@ export function ProfileScreen() {
   // bitirdiğin. Eski listede "Yazma" ve "Telaffuz" da vardı — uygulamada
   // böyle iki bölüm yok, olmayan becerinin yüzdesi olmaz.
   const decks = deckProgress(positions, cefr);
+
+  // Sahte "seviye 24 → 25" yerine gerçek bir eşik: bir sonraki bin XP.
+  // Uydurma bir seviye sistemi kurmaktansa sayının kendisini göstermek daha
+  // dürüst; gerçek seviye sistemi kurulduğunda buraya o gelir.
+  const nextMark = (Math.floor(xp / 1000) + 1) * 1000;
 
   return (
     <Screen tabbed padTop={0} padH={0} gap={0}>
@@ -71,8 +76,12 @@ export function ProfileScreen() {
             </Txt>
             <View style={styles.pills}>
               <Pill label={USER.level} tint={colors.accent} size={10.5} style={styles.pill} />
-              <Pill label={USER.streak} tint={colors.warning} size={10.5} style={styles.pill} />
-              <Pill label={USER.league} tint={colors.secondary} size={10.5} style={styles.pill} />
+              <Pill
+                label={streak ? `🔥 ${streak} gün` : 'seri yok'}
+                tint={colors.warning}
+                size={10.5}
+                style={styles.pill}
+              />
             </View>
           </View>
         </View>
@@ -80,14 +89,14 @@ export function ProfileScreen() {
         <View style={styles.xpCard}>
           <View style={styles.xpHead}>
             <Txt f="mono" s={11.5} w={700} c={colors.textSubtle}>
-              SEVİYE 24 → 25
+              TOPLAM XP
             </Txt>
             <Txt f="mono" s={11.5} w={700} c={colors.accent}>
-              {USER.xp.current} / {USER.xp.target} XP
+              {tr(xp)} / {tr(nextMark)} XP
             </Txt>
           </View>
           <ProgressBar
-            pct={USER.xp.pct}
+            pct={Math.round(((xp % 1000) / 1000) * 100)}
             from={colors.secondary}
             to={colors.accent}
             height={9}
@@ -95,7 +104,7 @@ export function ProfileScreen() {
             glow={shadows.glowCyanSoft}
           />
           <Txt s={11} c={colors.textDim}>
-            {USER.xp.note}
+            Bir sonraki bine {tr(nextMark - xp)} XP kaldı.
           </Txt>
         </View>
       </Gradient>

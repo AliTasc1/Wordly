@@ -11,7 +11,6 @@ import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import {
   COACH_CARD,
   DAILY_GAME,
-  DAILY_RINGS,
   USER,
 } from '../data/profile';
 import { grammarOf } from '../content';
@@ -19,17 +18,34 @@ import { useApp } from '../state/AppContext';
 import { BOARD_PREVIEW, moveColor } from '../data/leaderboard';
 import { DUEL_INVITE } from '../data/social';
 import { useGo } from '../navigation/useGo';
+import { deckProgress, tr } from '../content/progress';
 
 /** 06 · Ana Sayfa — "what should I do now?" answered in two seconds. */
 export function HomeScreen() {
   const { go } = useGo();
-  const { cefr, position } = useApp();
+  const { cefr, position, positions, xp, streak } = useApp();
 
   // "Where you left off" names the lesson the learner will actually land on.
   const lessons = useMemo(() => grammarOf(cefr), [cefr]);
   const at = Math.min(position('grammar', cefr), lessons.length - 1);
   const lesson = lessons[at];
   const remaining = lessons.length - at;
+
+  /*
+    Halkalar profil ekranıyla aynı kaynaktan besleniyor. Daha önce buradaki
+    dört yüzde tasarımdan gelen sabitlerdi (%85, %60, %40, %15) ve profil
+    gerçek sayıya geçince iki ekran birbiriyle çelişir olmuştu — aynı öğrenci
+    için biri %85, diğeri %2 diyordu. Çelişen iki yalan, tek yalandan kötüdür.
+
+    Halkada beş bölümün dördü gösteriliyor; beşincisi satıra sığmıyor ve
+    kelime/gramer/dinleme/konuşma dördü günlük çalışmanın omurgası.
+  */
+  const RING_COLORS = [colors.primary, colors.secondary, colors.accent, colors.warning];
+  const decks = deckProgress(positions, cefr);
+  const rings = decks
+    .filter((d) => d.kind !== 'reading')
+    .map((d, i) => ({ ...d, color: RING_COLORS[i] }));
+  const overall = Math.round(decks.reduce((n, d) => n + d.pct, 0) / decks.length);
 
   return (
     <Screen tabbed padTop={62} gap={14}>
@@ -75,15 +91,15 @@ export function HomeScreen() {
         />
         <StatChip
           kicker="SERİ"
-          value={USER.streak}
+          value={streak ? `🔥 ${streak}` : '—'}
           tint={colors.warning}
           kickerColor={colors.warningSoft}
           fill="rgba(245,165,36,.18)"
           border="rgba(245,165,36,.3)"
         />
         <StatChip
-          kicker="HAFTALIK"
-          value={USER.weeklyRank}
+          kicker="TOPLAM XP"
+          value={tr(xp)}
           tint={colors.secondary}
           kickerColor={colors.violetSoft}
           fill="rgba(124,92,255,.2)"
@@ -94,28 +110,28 @@ export function HomeScreen() {
       <Card radius={radii.section}>
         <View style={styles.goalHead}>
           <Txt f="m" s={14.5} w={700}>
-            Günlük hedef
+            {cefr} seviyesinde ilerleme
           </Txt>
           <Txt f="mono" s={12} w={700} c={colors.textDim}>
             <Txt f="mono" s={12} w={700} c={colors.accent}>
-              {USER.daily.earned}
+              %{overall}
             </Txt>
-            {` / ${USER.daily.goal} XP`}
+            {' tamamlandı'}
           </Txt>
         </View>
-        <ProgressBar pct={USER.daily.pct} height={10} glow={shadows.glowCyan} />
+        <ProgressBar pct={overall} height={10} glow={shadows.glowCyan} />
         <View style={styles.rings}>
-          {DAILY_RINGS.map((r) => (
-            <View key={r.name} style={styles.ringItem}>
-              <ProgressRing size={50} thickness={6} pct={r.pct} color={r.color}>
+          {rings.map((deck) => (
+            <View key={deck.kind} style={styles.ringItem}>
+              <ProgressRing size={50} thickness={6} pct={deck.pct} color={deck.color}>
                 <View style={styles.ringInner}>
                   <Txt f="mono" s={11} w={700}>
-                    %{r.pct}
+                    %{deck.pct}
                   </Txt>
                 </View>
               </ProgressRing>
               <Txt s={10.5} w={600} c={colors.textDim}>
-                {r.name}
+                {deck.label}
               </Txt>
             </View>
           ))}

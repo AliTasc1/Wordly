@@ -10,21 +10,10 @@ export const USER = {
   initials: 'A',
   level: 'B1+',
   levelNo: 'LV 24',
-  streak: '🔥 42',
   league: 'ALTIN',
   greeting: 'İyi akşamlar, Ali 👋',
   tasks: 'Bugün 3 görevin var',
-  weeklyRank: '#7',
-  xp: { current: '18.240', target: '20.000', pct: 91, note: '1.760 XP sonra yeni avatar çerçevesi açılıyor' },
-  daily: { earned: 380, goal: 500, pct: 76 },
 };
-
-export const DAILY_RINGS = [
-  { name: 'Kelime', pct: 85, color: colors.primary },
-  { name: 'Gramer', pct: 60, color: colors.secondary },
-  { name: 'Dinleme', pct: 40, color: colors.accent },
-  { name: 'Konuşma', pct: 15, color: colors.warning },
-];
 
 export const COACH_CARD = {
   title: 'AI Koçun',
@@ -38,22 +27,6 @@ export const DAILY_GAME = {
   title: 'Harf Arenası',
   sub: '2× XP · 18:00’a kadar',
 };
-
-export const PROFILE_STATS = [
-  { value: '1.284', label: 'kelime', tint: colors.accent },
-  { value: '%68', label: 'düello kazanma', tint: colors.secondary },
-  { value: '96', label: 'ders', tint: colors.warning },
-];
-
-export const PROFILE_SKILLS = [
-  { name: 'Kelime', level: 'B2', pct: 82 },
-  { name: 'Gramer', level: 'B1', pct: 64 },
-  { name: 'Okuma', level: 'B1+', pct: 72 },
-  { name: 'Dinleme', level: 'B1', pct: 62 },
-  { name: 'Konuşma', level: 'A2+', pct: 44 },
-  { name: 'Yazma', level: 'B1', pct: 60 },
-  { name: 'Telaffuz', level: 'B1', pct: 58 },
-];
 
 export const DUEL_STATS = {
   title: 'Düello istatistikleri',

@@ -16,7 +16,7 @@ import { useBack, useGo } from '../navigation/useGo';
 export function GrammarScreen() {
   const { go } = useGo();
   const back = useBack('lesson');
-  const { cefr, position, setPosition, fire } = useApp();
+  const { cefr, position, setPosition, fire, award } = useApp();
 
   const lessons = useMemo(() => grammarOf(cefr), [cefr]);
   const index = Math.min(position('grammar', cefr), lessons.length - 1);
@@ -25,7 +25,10 @@ export function GrammarScreen() {
   const [asked, setAsked] = useState(0);
   const exercise = lesson.exercises[asked];
   const quiz = useQuiz(exercise.answer, (_, correct) => {
-    if (correct) fire('Doğru! +15 XP', exercise.note);
+    if (correct) {
+      award(15);
+      fire('Doğru! +15 XP', exercise.note);
+    }
   });
 
   const last = asked === lesson.exercises.length - 1;

@@ -16,7 +16,8 @@ import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
   const back = useBack('lesson');
-  const { cefr, position, setPosition, fire, isSaved, toggleSavedWord, savedWords } = useApp();
+  const { cefr, position, setPosition, fire, isSaved, toggleSavedWord, savedWords, award } =
+    useApp();
 
   const deck = useMemo(() => vocabOf(cefr), [cefr]);
   // A level switch can leave the stored index past the end of a shorter deck:
@@ -62,6 +63,7 @@ export function VocabScreen() {
   };
 
   const onKnown = () => {
+    award(10);
     fire('+10 XP', `“${card.word}” koleksiyonuna eklendi`);
     advance();
   };
