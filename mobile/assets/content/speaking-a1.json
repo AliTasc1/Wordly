@@ -1,0 +1,504 @@
+[
+ {
+  "id": "a1-s-01",
+  "level": "A1",
+  "order": 1,
+  "kind": "speaking",
+  "title": "Kendini tanıtma",
+  "titleEn": "Introducing Yourself",
+  "minutes": 3,
+  "situation": "You meet a new classmate on the first day. Tell them about yourself.",
+  "situationTr": "İlk gün yeni bir sınıf arkadaşıyla tanışıyorsun. Ona kendinden bahset.",
+  "prompts": [
+   "What is your name?",
+   "Where are you from?",
+   "How old are you?",
+   "What do you do?"
+  ],
+  "promptsTr": [
+   "Adın ne?",
+   "Nerelisin?",
+   "Kaç yaşındasın?",
+   "Ne iş yapıyorsun?"
+  ],
+  "usefulPhrases": [
+   {
+    "en": "My name is ...",
+    "tr": "Benim adım ..."
+   },
+   {
+    "en": "I am from ...",
+    "tr": "Ben ...lıyım."
+   },
+   {
+    "en": "I am twenty years old.",
+    "tr": "Yirmi yaşındayım."
+   },
+   {
+    "en": "I am a student.",
+    "tr": "Ben öğrenciyim."
+   },
+   {
+    "en": "Nice to meet you.",
+    "tr": "Memnun oldum."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "classmate",
+    "tr": "sınıf arkadaşı"
+   }
+  ]
+ },
+ {
+  "id": "a1-s-02",
+  "level": "A1",
+  "order": 2,
+  "kind": "speaking",
+  "title": "Kahve söylemek",
+  "titleEn": "Ordering a Coffee",
+  "minutes": 3,
+  "situation": "You are in a coffee shop. Order something to drink and eat.",
+  "situationTr": "Bir kahvecidesin. İçecek ve yiyecek bir şeyler söyle.",
+  "prompts": [
+   "What would you like to drink?",
+   "Do you want anything to eat?",
+   "Is that here or to take away?",
+   "How do you pay?"
+  ],
+  "promptsTr": [
+   "Ne içmek istersin?",
+   "Yiyecek bir şey ister misin?",
+   "Burada mı yoksa paket mi?",
+   "Nasıl ödeme yaparsın?"
+  ],
+  "usefulPhrases": [
+   {
+    "en": "A coffee, please.",
+    "tr": "Bir kahve lütfen."
+   },
+   {
+    "en": "How much is it?",
+    "tr": "Ne kadar?"
+   },
+   {
+    "en": "I would like a small one.",
+    "tr": "Küçük boy istiyorum."
+   },
+   {
+    "en": "Can I pay by card?",
+    "tr": "Kartla ödeyebilir miyim?"
+   },
+   {
+    "en": "Thank you very much.",
+    "tr": "Çok teşekkür ederim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "take away",
+    "tr": "paket, dışarı almak"
+   }
+  ]
+ },
+ {
+  "id": "a1-s-03",
+  "level": "A1",
+  "order": 3,
+  "kind": "speaking",
+  "title": "Ailen hakkında",
+  "titleEn": "Talking About Your Family",
+  "minutes": 3,
+  "situation": "A friend asks about your family. Talk about the people at home.",
+  "situationTr": "Bir arkadaşın ailen hakkında soruyor. Evdeki kişilerden bahset.",
+  "prompts": [
+   "How many people are in your family?",
+   "Do you have brothers or sisters?",
+   "What does your mother do?",
+   "Where do they live?"
+  ],
+  "promptsTr": [
+   "Ailen kaç kişi?",
+   "Erkek ya da kız kardeşin var mı?",
+   "Annen ne iş yapıyor?",
+   "Nerede yaşıyorlar?"
+  ],
+  "usefulPhrases": [
+   {
+    "en": "We are four people.",
+    "tr": "Biz dört kişiyiz."
+   },
+   {
+    "en": "I have one brother.",
+    "tr": "Bir erkek kardeşim var."
+   },
+   {
+    "en": "My father is a teacher.",
+    "tr": "Babam öğretmen."
+   },
+   {
+    "en": "They live in Ankara.",
+    "tr": "Ankara'da yaşıyorlar."
+   },
+   {
+    "en": "I do not have any sisters.",
+    "tr": "Hiç kız kardeşim yok."
+   }
+  ],
+  "glossary": []
+ },
+ {
+  "id": "a1-s-04",
+  "level": "A1",
+  "order": 4,
+  "kind": "speaking",
+  "title": "Yol sormak",
+  "titleEn": "Asking the Way",
+  "minutes": 3,
+  "situation": "You are lost in a new city. Ask a person in the street for help.",
+  "situationTr": "Yeni bir şehirde kayboldun. Sokakta birinden yardım iste.",
+  "prompts": [
+   "Ask where the station is.",
+   "Ask if it is far.",
+   "Ask how to go there.",
+   "Say thank you."
+  ],
+  "promptsTr": [
+   "İstasyonun nerede olduğunu sor.",
+   "Uzak olup olmadığını sor.",
+   "Oraya nasıl gidileceğini sor.",
+   "Teşekkür et."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "Excuse me, where is the station?",
+    "tr": "Affedersiniz, istasyon nerede?"
+   },
+   {
+    "en": "Is it far from here?",
+    "tr": "Buradan uzak mı?"
+   },
+   {
+    "en": "Can I walk there?",
+    "tr": "Yürüyerek gidebilir miyim?"
+   },
+   {
+    "en": "Turn left at the corner.",
+    "tr": "Köşeden sola dön."
+   },
+   {
+    "en": "Thank you for your help.",
+    "tr": "Yardımınız için teşekkürler."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "corner",
+    "tr": "köşe"
+   },
+   {
+    "w": "lost",
+    "tr": "kaybolmuş"
+   },
+   {
+    "w": "far",
+    "tr": "uzak"
+   }
+  ]
+ },
+ {
+  "id": "a1-s-05",
+  "level": "A1",
+  "order": 5,
+  "kind": "speaking",
+  "title": "Günün nasıl geçiyor",
+  "titleEn": "Your Day",
+  "minutes": 3,
+  "situation": "Your teacher asks about your day. Describe what you do.",
+  "situationTr": "Öğretmenin, günün nasıl geçtiğini soruyor. Ne yaptığını anlat.",
+  "prompts": [
+   "What time do you get up?",
+   "What do you eat in the morning?",
+   "When do you go to school or work?",
+   "What do you do in the evening?"
+  ],
+  "promptsTr": [
+   "Saat kaçta kalkıyorsun?",
+   "Sabahları ne yiyorsun?",
+   "Okula ya da işe ne zaman gidiyorsun?",
+   "Akşamları ne yapıyorsun?"
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I get up at seven.",
+    "tr": "Saat yedide kalkıyorum."
+   },
+   {
+    "en": "I have bread and tea.",
+    "tr": "Ekmek ve çay alıyorum."
+   },
+   {
+    "en": "I go to school by bus.",
+    "tr": "Okula otobüsle gidiyorum."
+   },
+   {
+    "en": "In the evening I watch television.",
+    "tr": "Akşamları televizyon izliyorum."
+   },
+   {
+    "en": "I go to bed at eleven.",
+    "tr": "Saat on birde yatıyorum."
+   }
+  ],
+  "glossary": []
+ },
+ {
+  "id": "a1-s-06",
+  "level": "A1",
+  "order": 6,
+  "kind": "speaking",
+  "title": "Markette alışveriş",
+  "titleEn": "At the Shop",
+  "minutes": 3,
+  "situation": "You are in a small shop. Buy food for dinner.",
+  "situationTr": "Küçük bir dükkândasın. Akşam yemeği için yiyecek al.",
+  "prompts": [
+   "Ask for bread and eggs.",
+   "Ask how much they are.",
+   "Ask for a bag.",
+   "Pay and say bye."
+  ],
+  "promptsTr": [
+   "Ekmek ve yumurta iste.",
+   "Fiyatlarını sor.",
+   "Bir poşet iste.",
+   "Öde ve hoşça kal de."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I would like some bread, please.",
+    "tr": "Biraz ekmek istiyorum lütfen."
+   },
+   {
+    "en": "How much are the eggs?",
+    "tr": "Yumurtalar ne kadar?"
+   },
+   {
+    "en": "Can I have a bag?",
+    "tr": "Bir poşet alabilir miyim?"
+   },
+   {
+    "en": "Here you are.",
+    "tr": "Buyurun."
+   },
+   {
+    "en": "Bye, have a nice day.",
+    "tr": "Hoşça kalın, iyi günler."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "bag",
+    "tr": "poşet, çanta"
+   }
+  ]
+ },
+ {
+  "id": "a1-s-07",
+  "level": "A1",
+  "order": 7,
+  "kind": "speaking",
+  "title": "Sevdiğin şeyler",
+  "titleEn": "Things You Like",
+  "minutes": 3,
+  "situation": "A new friend wants to know what you like. Talk about food, music and sport.",
+  "situationTr": "Yeni bir arkadaş neleri sevdiğini öğrenmek istiyor. Yemek, müzik ve spordan bahset.",
+  "prompts": [
+   "What food do you like?",
+   "What music do you listen to?",
+   "Do you play any sport?",
+   "What do you not like?"
+  ],
+  "promptsTr": [
+   "Hangi yemekleri seversin?",
+   "Hangi müzikleri dinlersin?",
+   "Spor yapar mısın?",
+   "Neyi sevmezsin?"
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I like fish very much.",
+    "tr": "Balığı çok severim."
+   },
+   {
+    "en": "I listen to music every day.",
+    "tr": "Her gün müzik dinlerim."
+   },
+   {
+    "en": "I play football on Sundays.",
+    "tr": "Pazar günleri futbol oynarım."
+   },
+   {
+    "en": "I do not like coffee.",
+    "tr": "Kahveyi sevmem."
+   },
+   {
+    "en": "What about you?",
+    "tr": "Peki ya sen?"
+   }
+  ],
+  "glossary": []
+ },
+ {
+  "id": "a1-s-08",
+  "level": "A1",
+  "order": 8,
+  "kind": "speaking",
+  "title": "Odanı anlatmak",
+  "titleEn": "Describing Your Room",
+  "minutes": 3,
+  "situation": "Your friend has not seen your home. Describe your room.",
+  "situationTr": "Arkadaşın evini görmedi. Odanı anlat.",
+  "prompts": [
+   "Is your room big or small?",
+   "What is in your room?",
+   "What color are the walls?",
+   "Where is the window?"
+  ],
+  "promptsTr": [
+   "Odan büyük mü küçük mü?",
+   "Odanda neler var?",
+   "Duvarlar ne renk?",
+   "Pencere nerede?"
+  ],
+  "usefulPhrases": [
+   {
+    "en": "My room is small.",
+    "tr": "Odam küçük."
+   },
+   {
+    "en": "There is a bed and a table.",
+    "tr": "Bir yatak ve bir masa var."
+   },
+   {
+    "en": "The walls are white.",
+    "tr": "Duvarlar beyaz."
+   },
+   {
+    "en": "The window is behind the bed.",
+    "tr": "Pencere yatağın arkasında."
+   },
+   {
+    "en": "I like my room.",
+    "tr": "Odamı severim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "wall",
+    "tr": "duvar"
+   }
+  ]
+ },
+ {
+  "id": "a1-s-09",
+  "level": "A1",
+  "order": 9,
+  "kind": "speaking",
+  "title": "Doktora gitmek",
+  "titleEn": "At the Doctor",
+  "minutes": 3,
+  "situation": "You do not feel well. Tell the doctor about the problem.",
+  "situationTr": "Kendini iyi hissetmiyorsun. Doktora sorunu anlat.",
+  "prompts": [
+   "Say what hurts.",
+   "Say when it started.",
+   "Ask what you must do.",
+   "Ask about medicine."
+  ],
+  "promptsTr": [
+   "Neren ağrıyor söyle.",
+   "Ne zaman başladığını söyle.",
+   "Ne yapman gerektiğini sor.",
+   "İlacı sor."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "My head hurts.",
+    "tr": "Başım ağrıyor."
+   },
+   {
+    "en": "It started on Monday.",
+    "tr": "Pazartesi başladı."
+   },
+   {
+    "en": "What must I do?",
+    "tr": "Ne yapmalıyım?"
+   },
+   {
+    "en": "Do I need medicine?",
+    "tr": "İlaca ihtiyacım var mı?"
+   },
+   {
+    "en": "Thank you, doctor.",
+    "tr": "Teşekkürler doktor."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "hurt",
+    "tr": "ağrımak, acımak"
+   },
+   {
+    "w": "medicine",
+    "tr": "ilaç"
+   }
+  ]
+ },
+ {
+  "id": "a1-s-10",
+  "level": "A1",
+  "order": 10,
+  "kind": "speaking",
+  "title": "Hafta sonu ne yapacaksın",
+  "titleEn": "Your Weekend",
+  "minutes": 3,
+  "situation": "It is Friday. A friend asks about your plans for Saturday and Sunday.",
+  "situationTr": "Cuma günü. Bir arkadaşın cumartesi ve pazar planlarını soruyor.",
+  "prompts": [
+   "What are you doing on Saturday?",
+   "Who are you going with?",
+   "What time are you meeting?",
+   "Ask your friend to come."
+  ],
+  "promptsTr": [
+   "Cumartesi ne yapıyorsun?",
+   "Kiminle gidiyorsun?",
+   "Saat kaçta buluşuyorsunuz?",
+   "Arkadaşını davet et."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "On Saturday I am going to the park.",
+    "tr": "Cumartesi parka gidiyorum."
+   },
+   {
+    "en": "I am going with my sister.",
+    "tr": "Kız kardeşimle gidiyorum."
+   },
+   {
+    "en": "We are meeting at two.",
+    "tr": "İkide buluşuyoruz."
+   },
+   {
+    "en": "Do you want to come?",
+    "tr": "Gelmek ister misin?"
+   },
+   {
+    "en": "See you on Saturday.",
+    "tr": "Cumartesi görüşürüz."
+   }
+  ],
+  "glossary": []
+ }
+]

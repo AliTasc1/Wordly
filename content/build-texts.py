@@ -106,6 +106,9 @@ def body_of(item: dict) -> str:
     yüzünden "çok uzun" görünür.
     """
     parts = [passage_of(item)]
+    # Konuşma senaryosunda durum tanımı da öğrencinin okuduğu İngilizce metin;
+    # ölçümün dışında kalırsa seviye üstü kelime oradan sızar.
+    parts += [item.get("situation", "")]
     parts += [q.get("q", "") for q in item.get("questions", [])]
     for question in item.get("questions", []):
         parts += [str(option) for option in question.get("options", [])]

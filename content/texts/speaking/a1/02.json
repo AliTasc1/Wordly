@@ -1,0 +1,167 @@
+{
+  "_meta": { "batch": "a1-speaking-02", "level": "A1", "range": "Senaryo 6-10" },
+  "items": [
+    {
+      "id": "a1-s-06",
+      "level": "A1",
+      "order": 6,
+      "kind": "speaking",
+      "title": "Markette alışveriş",
+      "titleEn": "At the Shop",
+      "minutes": 3,
+      "situation": "You are in a small shop. Buy food for dinner.",
+      "situationTr": "Küçük bir dükkândasın. Akşam yemeği için yiyecek al.",
+      "prompts": [
+        "Ask for bread and eggs.",
+        "Ask how much they are.",
+        "Ask for a bag.",
+        "Pay and say bye."
+      ],
+      "promptsTr": [
+        "Ekmek ve yumurta iste.",
+        "Fiyatlarını sor.",
+        "Bir poşet iste.",
+        "Öde ve hoşça kal de."
+      ],
+      "usefulPhrases": [
+        { "en": "I would like some bread, please.", "tr": "Biraz ekmek istiyorum lütfen." },
+        { "en": "How much are the eggs?", "tr": "Yumurtalar ne kadar?" },
+        { "en": "Can I have a bag?", "tr": "Bir poşet alabilir miyim?" },
+        { "en": "Here you are.", "tr": "Buyurun." },
+        { "en": "Bye, have a nice day.", "tr": "Hoşça kalın, iyi günler." }
+      ],
+      "glossary": [
+        { "w": "bag", "tr": "poşet, çanta" }
+      ]
+    },
+    {
+      "id": "a1-s-07",
+      "level": "A1",
+      "order": 7,
+      "kind": "speaking",
+      "title": "Sevdiğin şeyler",
+      "titleEn": "Things You Like",
+      "minutes": 3,
+      "situation": "A new friend wants to know what you like. Talk about food, music and sport.",
+      "situationTr": "Yeni bir arkadaş neleri sevdiğini öğrenmek istiyor. Yemek, müzik ve spordan bahset.",
+      "prompts": [
+        "What food do you like?",
+        "What music do you listen to?",
+        "Do you play any sport?",
+        "What do you not like?"
+      ],
+      "promptsTr": [
+        "Hangi yemekleri seversin?",
+        "Hangi müzikleri dinlersin?",
+        "Spor yapar mısın?",
+        "Neyi sevmezsin?"
+      ],
+      "usefulPhrases": [
+        { "en": "I like fish very much.", "tr": "Balığı çok severim." },
+        { "en": "I listen to music every day.", "tr": "Her gün müzik dinlerim." },
+        { "en": "I play football on Sundays.", "tr": "Pazar günleri futbol oynarım." },
+        { "en": "I do not like coffee.", "tr": "Kahveyi sevmem." },
+        { "en": "What about you?", "tr": "Peki ya sen?" }
+      ],
+      "glossary": []
+    },
+    {
+      "id": "a1-s-08",
+      "level": "A1",
+      "order": 8,
+      "kind": "speaking",
+      "title": "Odanı anlatmak",
+      "titleEn": "Describing Your Room",
+      "minutes": 3,
+      "situation": "Your friend has not seen your home. Describe your room.",
+      "situationTr": "Arkadaşın evini görmedi. Odanı anlat.",
+      "prompts": [
+        "Is your room big or small?",
+        "What is in your room?",
+        "What color are the walls?",
+        "Where is the window?"
+      ],
+      "promptsTr": [
+        "Odan büyük mü küçük mü?",
+        "Odanda neler var?",
+        "Duvarlar ne renk?",
+        "Pencere nerede?"
+      ],
+      "usefulPhrases": [
+        { "en": "My room is small.", "tr": "Odam küçük." },
+        { "en": "There is a bed and a table.", "tr": "Bir yatak ve bir masa var." },
+        { "en": "The walls are white.", "tr": "Duvarlar beyaz." },
+        { "en": "The window is behind the bed.", "tr": "Pencere yatağın arkasında." },
+        { "en": "I like my room.", "tr": "Odamı severim." }
+      ],
+      "glossary": [
+        { "w": "wall", "tr": "duvar" }
+      ]
+    },
+    {
+      "id": "a1-s-09",
+      "level": "A1",
+      "order": 9,
+      "kind": "speaking",
+      "title": "Doktora gitmek",
+      "titleEn": "At the Doctor",
+      "minutes": 3,
+      "situation": "You do not feel well. Tell the doctor about the problem.",
+      "situationTr": "Kendini iyi hissetmiyorsun. Doktora sorunu anlat.",
+      "prompts": [
+        "Say what hurts.",
+        "Say when it started.",
+        "Ask what you must do.",
+        "Ask about medicine."
+      ],
+      "promptsTr": [
+        "Neren ağrıyor söyle.",
+        "Ne zaman başladığını söyle.",
+        "Ne yapman gerektiğini sor.",
+        "İlacı sor."
+      ],
+      "usefulPhrases": [
+        { "en": "My head hurts.", "tr": "Başım ağrıyor." },
+        { "en": "It started on Monday.", "tr": "Pazartesi başladı." },
+        { "en": "What must I do?", "tr": "Ne yapmalıyım?" },
+        { "en": "Do I need medicine?", "tr": "İlaca ihtiyacım var mı?" },
+        { "en": "Thank you, doctor.", "tr": "Teşekkürler doktor." }
+      ],
+      "glossary": [
+        { "w": "hurt", "tr": "ağrımak, acımak" },
+        { "w": "medicine", "tr": "ilaç" }
+      ]
+    },
+    {
+      "id": "a1-s-10",
+      "level": "A1",
+      "order": 10,
+      "kind": "speaking",
+      "title": "Hafta sonu ne yapacaksın",
+      "titleEn": "Your Weekend",
+      "minutes": 3,
+      "situation": "It is Friday. A friend asks about your plans for Saturday and Sunday.",
+      "situationTr": "Cuma günü. Bir arkadaşın cumartesi ve pazar planlarını soruyor.",
+      "prompts": [
+        "What are you doing on Saturday?",
+        "Who are you going with?",
+        "What time are you meeting?",
+        "Ask your friend to come."
+      ],
+      "promptsTr": [
+        "Cumartesi ne yapıyorsun?",
+        "Kiminle gidiyorsun?",
+        "Saat kaçta buluşuyorsunuz?",
+        "Arkadaşını davet et."
+      ],
+      "usefulPhrases": [
+        { "en": "On Saturday I am going to the park.", "tr": "Cumartesi parka gidiyorum." },
+        { "en": "I am going with my sister.", "tr": "Kız kardeşimle gidiyorum." },
+        { "en": "We are meeting at two.", "tr": "İkide buluşuyoruz." },
+        { "en": "Do you want to come?", "tr": "Gelmek ister misin?" },
+        { "en": "See you on Saturday.", "tr": "Cumartesi görüşürüz." }
+      ],
+      "glossary": []
+    }
+  ]
+}

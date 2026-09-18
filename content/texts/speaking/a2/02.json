@@ -1,0 +1,174 @@
+{
+  "_meta": { "batch": "a2-speaking-02", "level": "A2", "range": "Senaryo 6-10" },
+  "items": [
+    {
+      "id": "a2-s-06",
+      "level": "A2",
+      "order": 6,
+      "kind": "speaking",
+      "title": "Doktordan randevu almak",
+      "titleEn": "Making an Appointment",
+      "minutes": 4,
+      "situation": "You telephone the health center to make an appointment for this week.",
+      "situationTr": "Bu hafta için randevu almak üzere sağlık ocağını arıyorsun.",
+      "prompts": [
+        "Say who you are and why you are calling.",
+        "Say which days you are free.",
+        "Ask how long the visit takes.",
+        "Ask what you should bring."
+      ],
+      "promptsTr": [
+        "Kim olduğunu ve neden aradığını söyle.",
+        "Hangi günler müsait olduğunu söyle.",
+        "Görüşmenin ne kadar süreceğini sor.",
+        "Ne getirmen gerektiğini sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I would like to make an appointment.", "tr": "Randevu almak istiyorum." },
+        { "en": "I am free on Tuesday afternoon.", "tr": "Salı öğleden sonra müsaitim." },
+        { "en": "How long does it take?", "tr": "Ne kadar sürüyor?" },
+        { "en": "Should I bring anything?", "tr": "Bir şey getirmeli miyim?" },
+        { "en": "Could you say that again, please?", "tr": "Tekrar eder misiniz lütfen?" }
+      ],
+      "glossary": [
+        { "w": "appointment", "tr": "randevu" },
+        { "w": "free", "tr": "müsait, boş" }
+      ]
+    },
+    {
+      "id": "a2-s-07",
+      "level": "A2",
+      "order": 7,
+      "kind": "speaking",
+      "title": "İki şehri karşılaştırmak",
+      "titleEn": "Comparing Two Cities",
+      "minutes": 4,
+      "situation": "You have lived in two cities. Compare them for a friend who wants to move.",
+      "situationTr": "İki şehirde yaşadın. Taşınmak isteyen bir arkadaşın için ikisini karşılaştır.",
+      "prompts": [
+        "Which city is bigger?",
+        "Which is cheaper to live in?",
+        "Which has better transport?",
+        "Which do you prefer and why?"
+      ],
+      "promptsTr": [
+        "Hangi şehir daha büyük?",
+        "Hangisinde yaşamak daha ucuz?",
+        "Hangisinin ulaşımı daha iyi?",
+        "Hangisini tercih ediyorsun, neden?"
+      ],
+      "usefulPhrases": [
+        { "en": "The first city is much bigger.", "tr": "Birinci şehir çok daha büyük." },
+        { "en": "Life is cheaper in the second one.", "tr": "İkincisinde hayat daha ucuz." },
+        { "en": "The buses are better there.", "tr": "Oradaki otobüsler daha iyi." },
+        { "en": "I prefer the smaller city.", "tr": "Küçük şehri tercih ediyorum." },
+        { "en": "It is quieter and I have more friends there.", "tr": "Daha sakin ve orada daha çok arkadaşım var." }
+      ],
+      "glossary": [
+        { "w": "transport", "tr": "ulaşım" },
+        { "w": "prefer", "tr": "tercih etmek" }
+      ]
+    },
+    {
+      "id": "a2-s-08",
+      "level": "A2",
+      "order": 8,
+      "kind": "speaking",
+      "title": "Restoranda sorun",
+      "titleEn": "A Problem With the Meal",
+      "minutes": 4,
+      "situation": "You are in a restaurant. Your food is cold and you waited a long time.",
+      "situationTr": "Bir restoranadasın. Yemeğin soğuk ve uzun süre bekledin.",
+      "prompts": [
+        "Call the waiter politely.",
+        "Explain the problem.",
+        "Say what you would like them to do.",
+        "Ask about the bill."
+      ],
+      "promptsTr": [
+        "Garsonu kibarca çağır.",
+        "Sorunu açıkla.",
+        "Ne yapmalarını istediğini söyle.",
+        "Hesabı sor."
+      ],
+      "usefulPhrases": [
+        { "en": "Excuse me, could you help me?", "tr": "Affedersiniz, yardım edebilir misiniz?" },
+        { "en": "I am afraid this food is cold.", "tr": "Maalesef bu yemek soğuk." },
+        { "en": "We waited for forty minutes.", "tr": "Kırk dakika bekledik." },
+        { "en": "Could you bring a hot one, please?", "tr": "Sıcak bir tane getirebilir misiniz?" },
+        { "en": "Could we have the bill, please?", "tr": "Hesabı alabilir miyiz lütfen?" }
+      ],
+      "glossary": [
+        { "w": "waiter", "tr": "garson" },
+        { "w": "politely", "tr": "kibarca" },
+        { "w": "bill", "tr": "hesap" }
+      ]
+    },
+    {
+      "id": "a2-s-09",
+      "level": "A2",
+      "order": 9,
+      "kind": "speaking",
+      "title": "Yeni bir iş",
+      "titleEn": "Talking About a New Job",
+      "minutes": 4,
+      "situation": "You started a new job last month. A friend asks how it is going.",
+      "situationTr": "Geçen ay yeni bir işe başladın. Bir arkadaşın nasıl gittiğini soruyor.",
+      "prompts": [
+        "Say what you do there.",
+        "Say what the hours are.",
+        "Say what you like about it.",
+        "Say what is difficult."
+      ],
+      "promptsTr": [
+        "Orada ne yaptığını söyle.",
+        "Çalışma saatlerini söyle.",
+        "Neyi sevdiğini söyle.",
+        "Zor olan şeyi söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I work in an office near the park.", "tr": "Parkın yanındaki bir ofiste çalışıyorum." },
+        { "en": "I start at nine and finish at six.", "tr": "Dokuzda başlıyor, altıda bitiriyorum." },
+        { "en": "The people there are very friendly.", "tr": "Oradaki insanlar çok cana yakın." },
+        { "en": "The hardest thing is the early mornings.", "tr": "En zor şey erken sabahlar." },
+        { "en": "I think I will stay.", "tr": "Sanırım kalacağım." }
+      ],
+      "glossary": [
+        { "w": "friendly", "tr": "cana yakın, arkadaş canlısı" }
+      ]
+    },
+    {
+      "id": "a2-s-10",
+      "level": "A2",
+      "order": 10,
+      "kind": "speaking",
+      "title": "Gelecek yıl planların",
+      "titleEn": "Plans for Next Year",
+      "minutes": 4,
+      "situation": "Your teacher asks about your plans for next year. Talk about what you want to do.",
+      "situationTr": "Öğretmenin gelecek yılki planlarını soruyor. Ne yapmak istediğini anlat.",
+      "prompts": [
+        "Say what you are going to study or do.",
+        "Say where you want to live.",
+        "Say what you want to learn.",
+        "Say what might change your plan."
+      ],
+      "promptsTr": [
+        "Ne okuyacağını ya da yapacağını söyle.",
+        "Nerede yaşamak istediğini söyle.",
+        "Ne öğrenmek istediğini söyle.",
+        "Planını ne değiştirebilir söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I am going to study computers.", "tr": "Bilgisayar okuyacağım." },
+        { "en": "I hope to live in a bigger city.", "tr": "Daha büyük bir şehirde yaşamayı umuyorum." },
+        { "en": "I want to learn to drive.", "tr": "Araba kullanmayı öğrenmek istiyorum." },
+        { "en": "If I do not pass the exam, I will wait a year.", "tr": "Sınavı geçemezsem bir yıl beklerim." },
+        { "en": "I am not sure yet.", "tr": "Henüz emin değilim." }
+      ],
+      "glossary": [
+        { "w": "exam", "tr": "sınav" }
+      ]
+    }
+  ]
+}
