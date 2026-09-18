@@ -1,0 +1,186 @@
+{
+  "_meta": { "batch": "b2-speaking-02", "level": "B2", "range": "Senaryo 6-10" },
+  "items": [
+    {
+      "id": "b2-s-06",
+      "level": "B2",
+      "order": 6,
+      "kind": "speaking",
+      "title": "Hatayı kabul etmek",
+      "titleEn": "Owning a Mistake",
+      "minutes": 6,
+      "situation": "You sent a client the wrong figures and they used them in a report. Explain.",
+      "situationTr": "Bir müşteriye yanlış rakamlar gönderdin ve onlar bunu raporda kullandı. Durumu açıkla.",
+      "prompts": [
+        "Say what happened before they ask.",
+        "Give the correct information clearly.",
+        "Explain how it happened without excuses.",
+        "Say what you have changed so it cannot happen again."
+      ],
+      "promptsTr": [
+        "Onlar sormadan ne olduğunu söyle.",
+        "Doğru bilgiyi net biçimde ver.",
+        "Nasıl olduğunu bahane üretmeden açıkla.",
+        "Tekrarlanmaması için neyi değiştirdiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I am calling because the figures I sent on Tuesday were wrong.", "tr": "Salı günü gönderdiğim rakamlar yanlış olduğu için arıyorum." },
+        { "en": "The correct total is nine hundred, not nine thousand.", "tr": "Doğru toplam dokuz yüz, dokuz bin değil." },
+        { "en": "I copied an old version of the file and did not check it.", "tr": "Dosyanın eski bir sürümünü kopyaladım ve kontrol etmedim." },
+        { "en": "From now on a second person signs off anything that leaves the office.", "tr": "Bundan sonra ofisten çıkan her şeyi ikinci bir kişi onaylayacak." },
+        { "en": "I will send a corrected version within the hour.", "tr": "Bir saat içinde düzeltilmiş sürümü göndereceğim." }
+      ],
+      "glossary": [
+        { "w": "figures", "tr": "rakamlar" },
+        { "w": "version", "tr": "sürüm" },
+        { "w": "signs off", "tr": "onaylar" },
+        { "w": "corrected", "tr": "düzeltilmiş" }
+      ]
+    },
+    {
+      "id": "b2-s-07",
+      "level": "B2",
+      "order": 7,
+      "kind": "speaking",
+      "title": "Bir yeteneği anlatmak",
+      "titleEn": "Talking About What You Are Good At",
+      "minutes": 6,
+      "situation": "Describe something you do well, without sounding boastful and without dismissing it.",
+      "situationTr": "İyi yaptığın bir şeyi, ne övünerek ne de küçümseyerek anlat.",
+      "prompts": [
+        "Say what the skill is and how you got it.",
+        "Give a concrete example of using it.",
+        "Say honestly what you are still bad at.",
+        "Say what you would like to reach next."
+      ],
+      "promptsTr": [
+        "Becerinin ne olduğunu ve onu nasıl kazandığını söyle.",
+        "Kullandığın somut bir örnek ver.",
+        "Hâlâ neyde kötü olduğunu dürüstçe söyle.",
+        "Bundan sonra neye ulaşmak istediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It is not a talent so much as something I practiced badly for years.", "tr": "Bir yetenekten çok, yıllarca kötü bir şekilde çalıştığım bir şey." },
+        { "en": "The clearest example was when the system failed during an event.", "tr": "En net örnek, bir etkinlik sırasında sistemin çökmesiydi." },
+        { "en": "What I am still poor at is explaining it to beginners.", "tr": "Hâlâ kötü olduğum şey, bunu yeni başlayanlara anlatmak." },
+        { "en": "I can do it quickly, but not yet reliably under pressure.", "tr": "Hızlı yapabiliyorum ama baskı altında henüz güvenilir değilim." },
+        { "en": "Within a year I would like to be teaching it.", "tr": "Bir yıl içinde bunu öğretiyor olmak isterim." }
+      ],
+      "glossary": [
+        { "w": "boastful", "tr": "övüngen" },
+        { "w": "talent", "tr": "yetenek" },
+        { "w": "concrete", "tr": "somut" },
+        { "w": "reliably", "tr": "güvenilir biçimde" }
+      ]
+    },
+    {
+      "id": "b2-s-08",
+      "level": "B2",
+      "order": 8,
+      "kind": "speaking",
+      "title": "İki seçenek arasında",
+      "titleEn": "Weighing Two Options",
+      "minutes": 6,
+      "situation": "Your team must choose between finishing early with fewer features or finishing late with all of them.",
+      "situationTr": "Ekibin, daha az özellikle erken bitirmekle hepsiyle geç bitirmek arasında seçim yapmalı.",
+      "prompts": [
+        "State the two options fairly, including the one you dislike.",
+        "Give the strongest argument for each.",
+        "Say which you would choose and why.",
+        "Say what would make you change your choice."
+      ],
+      "promptsTr": [
+        "İki seçeneği de, sevmediğin dâhil, adil biçimde ortaya koy.",
+        "Her biri için en güçlü savı ver.",
+        "Hangisini seçeceğini ve nedenini söyle.",
+        "Seçimini neyin değiştireceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "There is a real argument on both sides, so let me put them fairly.", "tr": "İki tarafın da gerçek bir savı var, ikisini de adil biçimde koyayım." },
+        { "en": "The case for finishing early is that we learn from real users sooner.", "tr": "Erken bitirmenin savı, gerçek kullanıcılardan daha erken öğrenmemiz." },
+        { "en": "The case against is that a weak first version is hard to recover from.", "tr": "Karşı sav ise zayıf bir ilk sürümden dönmenin zor olması." },
+        { "en": "On balance I would finish early, mainly because of the school calendar.", "tr": "Her şey tartıldığında erken bitirirdim, temelde okul takvimi yüzünden." },
+        { "en": "If two of the missing features were legal requirements, I would change my view.", "tr": "Eksik özelliklerden ikisi yasal zorunluluk olsaydı görüşümü değiştirirdim." }
+      ],
+      "glossary": [
+        { "w": "features", "tr": "özellikler" },
+        { "w": "on balance", "tr": "her şey tartıldığında" },
+        { "w": "requirements", "tr": "zorunluluklar, gereklilikler" }
+      ]
+    },
+    {
+      "id": "b2-s-09",
+      "level": "B2",
+      "order": 9,
+      "kind": "speaking",
+      "title": "Kültürel fark",
+      "titleEn": "Explaining a Custom",
+      "minutes": 6,
+      "situation": "A visitor is confused by a custom in your country. Explain it without defending or mocking it.",
+      "situationTr": "Bir ziyaretçi ülkendeki bir geleneği anlamıyor. Ne savunarak ne alay ederek açıkla.",
+      "prompts": [
+        "Describe what people actually do.",
+        "Explain where it comes from.",
+        "Say how people of different ages see it.",
+        "Say what a visitor should do."
+      ],
+      "promptsTr": [
+        "İnsanların gerçekte ne yaptığını anlat.",
+        "Nereden geldiğini açıkla.",
+        "Farklı yaşlardaki insanların buna nasıl baktığını söyle.",
+        "Bir ziyaretçinin ne yapması gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It looks stranger from outside than it feels from inside.", "tr": "Dışarıdan bakınca içeriden hissedildiğinden daha tuhaf görünüyor." },
+        { "en": "The habit goes back to a time when families lived closer together.", "tr": "Alışkanlık, ailelerin daha yakın yaşadığı bir döneme dayanıyor." },
+        { "en": "Older people take it seriously; younger ones mostly joke about it.", "tr": "Yaşlılar ciddiye alır, gençler çoğunlukla şakasını yapar." },
+        { "en": "Nobody expects a visitor to know the rules.", "tr": "Kimse bir ziyaretçinin kuralları bilmesini beklemez." },
+        { "en": "If you are unsure, watch what the person next to you does.", "tr": "Emin değilsen yanındakinin ne yaptığına bak." }
+      ],
+      "glossary": [
+        { "w": "custom", "tr": "gelenek, âdet" },
+        { "w": "mocking", "tr": "alay etmek" },
+        { "w": "habit", "tr": "alışkanlık" },
+        { "w": "unsure", "tr": "emin değil" }
+      ]
+    },
+    {
+      "id": "b2-s-10",
+      "level": "B2",
+      "order": 10,
+      "kind": "speaking",
+      "title": "Görüşmeyi yönetmek",
+      "titleEn": "Chairing a Difficult Meeting",
+      "minutes": 6,
+      "situation": "You are chairing a meeting. Two people are arguing and the meeting is running late.",
+      "situationTr": "Bir toplantıyı yönetiyorsun. İki kişi tartışıyor ve toplantı uzuyor.",
+      "prompts": [
+        "Interrupt without taking a side.",
+        "Summarize what each person actually wants.",
+        "Move the meeting to a decision.",
+        "Close with clear actions and names."
+      ],
+      "promptsTr": [
+        "Taraf tutmadan araya gir.",
+        "Her birinin gerçekte ne istediğini özetle.",
+        "Toplantıyı bir karara taşı.",
+        "Net görevler ve isimlerle kapat."
+      ],
+      "usefulPhrases": [
+        { "en": "Let me stop you both there, because I think you agree more than it sounds.", "tr": "İkinizi de burada durdurayım, çünkü göründüğünden fazla hemfikirsiniz." },
+        { "en": "As I understand it, you want speed and you want certainty.", "tr": "Anladığım kadarıyla biri hız, diğeri kesinlik istiyor." },
+        { "en": "We have ten minutes, so I would like a decision rather than agreement.", "tr": "On dakikamız var, o yüzden mutabakattan çok bir karar istiyorum." },
+        { "en": "Can we live with option two for now and review it in May?", "tr": "Şimdilik ikinci seçenekle idare edip mayısta gözden geçirebilir miyiz?" },
+        { "en": "Two actions: Deniz writes the note, and I speak to the client.", "tr": "İki görev: Deniz notu yazacak, ben de müşteriyle konuşacağım." }
+      ],
+      "names": ["Deniz"],
+      "glossary": [
+        { "w": "chairing", "tr": "yönetmek (toplantı)" },
+        { "w": "interrupt", "tr": "araya girmek, sözünü kesmek" },
+        { "w": "summarize", "tr": "özetlemek" },
+        { "w": "certainty", "tr": "kesinlik" },
+        { "w": "review", "tr": "gözden geçirmek" }
+      ]
+    }
+  ]
+}

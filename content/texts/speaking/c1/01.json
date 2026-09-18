@@ -1,0 +1,191 @@
+{
+  "_meta": { "batch": "c1-speaking-01", "level": "C1", "range": "Senaryo 1-5" },
+  "items": [
+    {
+      "id": "c1-s-01",
+      "level": "C1",
+      "order": 1,
+      "kind": "speaking",
+      "title": "Bir kararı savunmak",
+      "titleEn": "Defending an Unpopular Decision",
+      "minutes": 7,
+      "situation": "You closed a well-liked service to fund something less visible. Explain it to the people affected.",
+      "situationTr": "Daha az görünür bir şeyi finanse etmek için sevilen bir hizmeti kapattın. Etkilenenlere açıkla.",
+      "prompts": [
+        "Say what you decided and do not soften it.",
+        "Explain the reasoning, including what you gave up.",
+        "Answer the accusation that you did this quietly.",
+        "Say what you would accept as evidence that you were wrong."
+      ],
+      "promptsTr": [
+        "Neye karar verdiğini söyle ve yumuşatma.",
+        "Gerekçeyi, neyden vazgeçtiğin dâhil açıkla.",
+        "Bunu sessizce yaptığın suçlamasını yanıtla.",
+        "Yanıldığına dair neyi kanıt sayacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The decision was mine, and I am not going to describe it as a review.", "tr": "Karar benimdi ve bunu bir gözden geçirme diye anlatmayacağım." },
+        { "en": "What persuaded me was that the cost fell on the people least able to notice.", "tr": "Beni ikna eden şey, maliyetin fark etmesi en zor olanlara yüklenmesiydi." },
+        { "en": "I accept that the consultation was thinner than it should have been.", "tr": "Danışma sürecinin olması gerekenden zayıf olduğunu kabul ediyorum." },
+        { "en": "If usage of the new service has not risen by spring, the decision has failed.", "tr": "Yeni hizmetin kullanımı bahara kadar artmazsa karar başarısız olmuştur." },
+        { "en": "I would rather be argued out of this than left unchallenged.", "tr": "Bu konuda itiraz görmemektense ikna edilip vazgeçmeyi yeğlerim." }
+      ],
+      "glossary": [
+        { "w": "soften", "tr": "yumuşatmak" },
+        { "w": "accusation", "tr": "suçlama" },
+        { "w": "persuaded", "tr": "ikna etti" },
+        { "w": "consultation", "tr": "danışma süreci" },
+        { "w": "unchallenged", "tr": "itirazsız" }
+      ]
+    },
+    {
+      "id": "c1-s-02",
+      "level": "C1",
+      "order": 2,
+      "kind": "speaking",
+      "title": "Karşı tarafın savını kurmak",
+      "titleEn": "Arguing the Other Side",
+      "minutes": 7,
+      "situation": "Argue for a position you personally reject, as strongly as its supporters would.",
+      "situationTr": "Şahsen reddettiğin bir görüşü, savunucuları kadar güçlü biçimde savun.",
+      "prompts": [
+        "State the position in its strongest form, not its weakest.",
+        "Give the reason its supporters actually give.",
+        "Answer the objection you yourself would raise.",
+        "Say what the position gets right that your own side misses."
+      ],
+      "promptsTr": [
+        "Görüşü en zayıf değil en güçlü hâliyle ortaya koy.",
+        "Savunucularının gerçekte verdiği gerekçeyi ver.",
+        "Kendi yönelteceğin itirazı yanıtla.",
+        "Bu görüşün doğru gördüğü ama senin tarafının kaçırdığı şeyi söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The version worth arguing against is not the one usually attacked.", "tr": "Tartışmaya değer hâli, genellikle saldırılan hâli değil." },
+        { "en": "Its supporters are not appealing to prejudice but to a cost nobody counts.", "tr": "Savunucuları önyargıya değil, kimsenin saymadığı bir bedele dayanıyor." },
+        { "en": "The obvious reply is that the evidence is thin, and that reply is too quick.", "tr": "Bariz karşılık kanıtın zayıf olduğu, ama bu karşılık fazla aceleci." },
+        { "en": "What this position sees clearly is how slowly institutions actually change.", "tr": "Bu görüşün net gördüğü şey, kurumların gerçekte ne kadar yavaş değiştiği." },
+        { "en": "I still disagree, but I no longer think the disagreement is simple.", "tr": "Hâlâ katılmıyorum ama artık anlaşmazlığın basit olduğunu düşünmüyorum." }
+      ],
+      "glossary": [
+        { "w": "supporters", "tr": "savunucular" },
+        { "w": "objection", "tr": "itiraz" },
+        { "w": "prejudice", "tr": "önyargı" },
+        { "w": "institutions", "tr": "kurumlar" },
+        { "w": "disagreement", "tr": "anlaşmazlık" }
+      ]
+    },
+    {
+      "id": "c1-s-03",
+      "level": "C1",
+      "order": 3,
+      "kind": "speaking",
+      "title": "Performans görüşmesi",
+      "titleEn": "A Hard Performance Review",
+      "minutes": 7,
+      "situation": "You must tell a capable colleague that their manner is driving people out of the team.",
+      "situationTr": "Yetkin bir meslektaşına, tavrının insanları ekipten uzaklaştırdığını söylemelisin.",
+      "prompts": [
+        "Separate the work from the behavior.",
+        "Describe what happens, not what kind of person they are.",
+        "Handle the reply that others are too sensitive.",
+        "Agree on something measurable."
+      ],
+      "promptsTr": [
+        "İşi davranıştan ayır.",
+        "Nasıl biri olduğunu değil, ne olduğunu anlat.",
+        "Diğerlerinin fazla hassas olduğu karşılığını ele al.",
+        "Ölçülebilir bir noktada anlaş."
+      ],
+      "usefulPhrases": [
+        { "en": "Nothing I am about to say questions the quality of your work.", "tr": "Söyleyeceklerimin hiçbiri işinin kalitesini sorgulamıyor." },
+        { "en": "In three meetings this month a decision was reversed after midnight.", "tr": "Bu ay üç toplantıda bir karar gece yarısından sonra geri alındı." },
+        { "en": "Whether people ought to be sensitive is a separate question from whether they are.", "tr": "İnsanların hassas olması gerekip gerekmediği, hassas olup olmadıklarından ayrı bir soru." },
+        { "en": "I am not asking you to change your standards, only how they are delivered.", "tr": "Standartlarını değiştirmeni istemiyorum, yalnızca nasıl iletildiğini." },
+        { "en": "Let us ask the same four people again in eight weeks.", "tr": "Aynı dört kişiye sekiz hafta sonra tekrar soralım." }
+      ],
+      "glossary": [
+        { "w": "capable", "tr": "yetkin, becerikli" },
+        { "w": "behavior", "tr": "davranış" },
+        { "w": "sensitive", "tr": "hassas" },
+        { "w": "reversed", "tr": "geri alındı" },
+        { "w": "standards", "tr": "standartlar" }
+      ]
+    },
+    {
+      "id": "c1-s-04",
+      "level": "C1",
+      "order": 4,
+      "kind": "speaking",
+      "title": "Uzman olmayana anlatmak",
+      "titleEn": "Explaining Your Field to an Outsider",
+      "minutes": 7,
+      "situation": "Explain something technical from your work to someone intelligent who knows nothing about it.",
+      "situationTr": "İşinden teknik bir konuyu, zeki ama konuyu hiç bilmeyen birine anlat.",
+      "prompts": [
+        "Start from what the listener already knows.",
+        "Use one comparison, and say where the comparison breaks down.",
+        "Explain why it is harder than it sounds.",
+        "Say what is still unsettled in the field."
+      ],
+      "promptsTr": [
+        "Dinleyicinin zaten bildiği yerden başla.",
+        "Tek bir benzetme kullan ve benzetmenin nerede bozulduğunu söyle.",
+        "Kulağa geldiğinden neden zor olduğunu açıkla.",
+        "Alanda hâlâ neyin belirsiz olduğunu söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "You already know the hard part; you just know it under a different name.", "tr": "Zor kısmı zaten biliyorsun, sadece başka bir adla biliyorsun." },
+        { "en": "Think of it as a map, and then notice where the map misleads you.", "tr": "Bunu bir harita gibi düşün, sonra haritanın seni nerede yanılttığını fark et." },
+        { "en": "The difficulty is not the calculation but deciding what to measure.", "tr": "Zorluk hesaplama değil, neyin ölçüleceğine karar vermek." },
+        { "en": "Most of the argument in the field is about that choice.", "tr": "Alandaki tartışmanın çoğu bu seçimle ilgili." },
+        { "en": "If anybody tells you this is settled, they are selling something.", "tr": "Biri bunun çözüldüğünü söylüyorsa bir şey satıyordur." }
+      ],
+      "glossary": [
+        { "w": "technical", "tr": "teknik" },
+        { "w": "comparison", "tr": "benzetme, karşılaştırma" },
+        { "w": "misleads", "tr": "yanıltır" },
+        { "w": "calculation", "tr": "hesaplama" },
+        { "w": "unsettled", "tr": "belirsiz, çözülmemiş" }
+      ]
+    },
+    {
+      "id": "c1-s-05",
+      "level": "C1",
+      "order": 5,
+      "kind": "speaking",
+      "title": "Fikir değiştirmek",
+      "titleEn": "Describing a Change of Mind",
+      "minutes": 7,
+      "situation": "Describe an opinion you held firmly and later abandoned. Be honest about why.",
+      "situationTr": "Bir zamanlar kesin savunduğun ve sonra terk ettiğin bir görüşü anlat. Nedenini dürüstçe söyle.",
+      "prompts": [
+        "Say what you believed and why it was reasonable at the time.",
+        "Describe what began to unsettle it.",
+        "Say whether it was evidence or experience that changed you.",
+        "Say what you learnt about how you hold opinions."
+      ],
+      "promptsTr": [
+        "Neye inandığını ve o zaman neden makul olduğunu söyle.",
+        "Onu sarsmaya neyin başladığını anlat.",
+        "Seni kanıtın mı deneyimin mi değiştirdiğini söyle.",
+        "Görüşleri nasıl savunduğun hakkında ne öğrendiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It was not a foolish position, which is exactly why it lasted so long.", "tr": "Aptalca bir görüş değildi, tam da bu yüzden bu kadar uzun sürdü." },
+        { "en": "The first crack was a case that did not fit and that I explained away.", "tr": "İlk çatlak, uymayan ve benim geçiştirdiğim bir vakaydı." },
+        { "en": "Honestly, it was not the data. It was watching the consequences up close.", "tr": "Dürüstçe söylemek gerekirse veri değildi. Sonuçları yakından görmekti." },
+        { "en": "What worries me now is how confidently I argued the old view.", "tr": "Şimdi beni endişelendiren, eski görüşü ne kadar emin savunduğum." },
+        { "en": "I try to notice when I am explaining away rather than explaining.", "tr": "Artık açıklamak yerine geçiştirdiğim anları fark etmeye çalışıyorum." }
+      ],
+      "glossary": [
+        { "w": "abandoned", "tr": "terk etti" },
+        { "w": "unsettle", "tr": "sarsmak" },
+        { "w": "foolish", "tr": "aptalca" },
+        { "w": "crack", "tr": "çatlak" },
+        { "w": "explained away", "tr": "geçiştirdi, kılıfına uydurdu" },
+        { "w": "consequences", "tr": "sonuçlar" }
+      ]
+    }
+  ]
+}

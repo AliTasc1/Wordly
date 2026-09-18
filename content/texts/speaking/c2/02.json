@@ -1,0 +1,192 @@
+{
+  "_meta": { "batch": "c2-speaking-02", "level": "C2", "range": "Senaryo 6-10" },
+  "items": [
+    {
+      "id": "c2-s-06",
+      "level": "C2",
+      "order": 6,
+      "kind": "speaking",
+      "title": "Uzmanların anlaşamadığı konu",
+      "titleEn": "When the Experts Disagree",
+      "minutes": 8,
+      "situation": "Explain to a non-specialist why two groups of honest experts reach opposite conclusions.",
+      "situationTr": "Uzman olmayan birine, iki dürüst uzman grubunun neden zıt sonuçlara vardığını açıkla.",
+      "prompts": [
+        "Rule out the explanations that are usually reached for first.",
+        "Show where the disagreement actually sits.",
+        "Explain why more data would not settle it.",
+        "Say how a non-specialist should decide what to do meanwhile."
+      ],
+      "promptsTr": [
+        "Önce akla gelen açıklamaları ele.",
+        "Anlaşmazlığın gerçekte nerede olduğunu göster.",
+        "Daha fazla verinin neden çözmeyeceğini açıkla.",
+        "Uzman olmayan birinin bu arada nasıl karar vermesi gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It is not funding, and it is not dishonesty, although both are always suspected.", "tr": "Ne fon ne de sahtekârlık meselesi, gerçi ikisinden de hep şüphelenilir." },
+        { "en": "They agree about the measurements and disagree about what counts as a case.", "tr": "Ölçümlerde anlaşıyorlar, neyin vaka sayılacağında anlaşamıyorlar." },
+        { "en": "That is a definition, not a fact, so no quantity of data resolves it.", "tr": "Bu bir tanım, olgu değil; bu yüzden hiçbir veri miktarı çözmez." },
+        { "en": "Notice which side has to explain away more inconvenient findings.", "tr": "Hangi tarafın daha çok rahatsız edici bulguyu geçiştirmek zorunda kaldığına bak." },
+        { "en": "Act on the reading that costs least if it turns out to be wrong.", "tr": "Yanlış çıkarsa en az maliyetli olan okumaya göre hareket et." }
+      ],
+      "glossary": [
+        { "w": "non-specialist", "tr": "uzman olmayan" },
+        { "w": "dishonesty", "tr": "sahtekârlık" },
+        { "w": "measurements", "tr": "ölçümler" },
+        { "w": "definition", "tr": "tanım" },
+        { "w": "resolves", "tr": "çözer" },
+        { "w": "inconvenient", "tr": "rahatsız edici, işe gelmeyen" }
+      ]
+    },
+    {
+      "id": "c2-s-07",
+      "level": "C2",
+      "order": 7,
+      "kind": "speaking",
+      "title": "Bir kurumun savunması",
+      "titleEn": "Speaking for an Institution You Criticize",
+      "minutes": 8,
+      "situation": "Defend an organization you work for, whose faults you know better than its critics do.",
+      "situationTr": "Kusurlarını eleştirmenlerinden iyi bildiğin, çalıştığın bir kurumu savun.",
+      "prompts": [
+        "Concede the criticism that is correct, in full.",
+        "Explain what the critics have wrong, with evidence.",
+        "Say what you are doing about the part you conceded.",
+        "Avoid both loyalty and disloyalty as substitutes for argument."
+      ],
+      "promptsTr": [
+        "Doğru olan eleştiriyi tam olarak kabul et.",
+        "Eleştirmenlerin neyi yanlış bildiğini kanıtla açıkla.",
+        "Kabul ettiğin kısım için ne yaptığını söyle.",
+        "Sav yerine ne sadakati ne de sadakatsizliği koy."
+      ],
+      "usefulPhrases": [
+        { "en": "The waiting times are as bad as they say, and worse in two regions.", "tr": "Bekleme süreleri dedikleri kadar kötü, iki bölgede daha da kötü." },
+        { "en": "Where the account fails is in attributing that to a shortage of will.", "tr": "Anlatının hatalı olduğu yer, bunu irade eksikliğine bağlaması." },
+        { "en": "We lost a quarter of the staff in eighteen months, and I can show the figures.", "tr": "On sekiz ayda personelin dörtte birini kaybettik ve rakamları gösterebilirim." },
+        { "en": "Defending the institution is not the same as defending everything it did.", "tr": "Kurumu savunmak, yaptığı her şeyi savunmakla aynı şey değil." },
+        { "en": "If the next report does not show improvement, I will have nothing to say.", "tr": "Bir sonraki rapor iyileşme göstermezse söyleyecek sözüm kalmaz." }
+      ],
+      "glossary": [
+        { "w": "concede", "tr": "kabul etmek, teslim etmek" },
+        { "w": "critics", "tr": "eleştirmenler" },
+        { "w": "loyalty", "tr": "sadakat" },
+        { "w": "attributing", "tr": "atfetmek, bağlamak" },
+        { "w": "shortage", "tr": "eksiklik, kıtlık" },
+        { "w": "improvement", "tr": "iyileşme" }
+      ]
+    },
+    {
+      "id": "c2-s-08",
+      "level": "C2",
+      "order": 8,
+      "kind": "speaking",
+      "title": "Kötü bir savı tamir etmek",
+      "titleEn": "Repairing a Weak Argument",
+      "minutes": 8,
+      "situation": "Someone argues badly for a conclusion you agree with. Improve their case in front of them.",
+      "situationTr": "Biri, katıldığın bir sonucu kötü savunuyor. Onun savını önünde düzelt.",
+      "prompts": [
+        "Say that you agree with the conclusion before you touch the argument.",
+        "Identify the step that does not hold.",
+        "Supply the argument that does the work instead.",
+        "Say what the repaired argument no longer claims."
+      ],
+      "promptsTr": [
+        "Sava dokunmadan önce sonuca katıldığını söyle.",
+        "Tutmayan adımı belirle.",
+        "İşi gerçekten gören savı onun yerine koy.",
+        "Onarılmış savın artık neyi iddia etmediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I want the same thing you want, which is why the argument matters to me.", "tr": "Seninle aynı şeyi istiyorum, sav bu yüzden benim için önemli." },
+        { "en": "The comparison with the nineteenth century is the part that will be attacked.", "tr": "On dokuzuncu yüzyılla karşılaştırma, saldırıya uğrayacak kısım." },
+        { "en": "You do not need it. The point survives on the last three years alone.", "tr": "Ona ihtiyacın yok. Nokta yalnızca son üç yılla ayakta kalıyor." },
+        { "en": "Put that way it is narrower and considerably harder to dismiss.", "tr": "Böyle ifade edilince daha dar ve çok daha zor çürütülür." },
+        { "en": "What it no longer claims is that the pattern is universal.", "tr": "Artık iddia etmediği şey, örüntünün evrensel olduğu." }
+      ],
+      "glossary": [
+        { "w": "conclusion", "tr": "sonuç" },
+        { "w": "comparison", "tr": "karşılaştırma" },
+        { "w": "dismiss", "tr": "çürütmek, savuşturmak" },
+        { "w": "pattern", "tr": "örüntü" },
+        { "w": "universal", "tr": "evrensel" }
+      ]
+    },
+    {
+      "id": "c2-s-09",
+      "level": "C2",
+      "order": 9,
+      "kind": "speaking",
+      "title": "Bir metnin gizli varsayımları",
+      "titleEn": "Unpacking What Is Assumed",
+      "minutes": 8,
+      "situation": "Take a short public statement and bring out what it takes for granted without saying.",
+      "situationTr": "Kısa bir kamuya açık açıklamayı al ve söylemeden varsaydıklarını ortaya çıkar.",
+      "prompts": [
+        "Summarize what the statement says on its surface.",
+        "Name one assumption it needs but never defends.",
+        "Show what follows if that assumption is dropped.",
+        "Say whether the statement survives the change."
+      ],
+      "promptsTr": [
+        "Açıklamanın yüzeyde ne dediğini özetle.",
+        "İhtiyaç duyduğu ama hiç savunmadığı bir varsayımı adlandır.",
+        "O varsayım kaldırılırsa ne olacağını göster.",
+        "Açıklamanın bu değişimden sağ çıkıp çıkmadığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "On the surface it is a claim about cost, and it reads as uncontroversial.", "tr": "Yüzeyde maliyetle ilgili bir iddia ve tartışmasız gibi okunuyor." },
+        { "en": "It assumes, without saying, that the alternative is doing nothing.", "tr": "Söylemeden, alternatifin hiçbir şey yapmamak olduğunu varsayıyor." },
+        { "en": "Drop that and the comparison is with three other options, not with zero.", "tr": "Bunu kaldır, karşılaştırma sıfırla değil üç başka seçenekle olur." },
+        { "en": "The claim does not survive intact, though something weaker does.", "tr": "İddia olduğu gibi ayakta kalmıyor, daha zayıf bir şey kalıyor." },
+        { "en": "That weaker version is worth arguing about; the original was not.", "tr": "O zayıf hâli tartışmaya değer; özgün hâli değildi." }
+      ],
+      "glossary": [
+        { "w": "assumption", "tr": "varsayım" },
+        { "w": "uncontroversial", "tr": "tartışmasız" },
+        { "w": "alternative", "tr": "alternatif, seçenek" },
+        { "w": "intact", "tr": "olduğu gibi, zedelenmemiş" },
+        { "w": "original", "tr": "özgün, asıl" }
+      ]
+    },
+    {
+      "id": "c2-s-10",
+      "level": "C2",
+      "order": 10,
+      "kind": "speaking",
+      "title": "Uzun vadeli bir riski anlatmak",
+      "titleEn": "Making a Slow Risk Feel Real",
+      "minutes": 8,
+      "situation": "Persuade people to act on a risk whose consequences arrive long after the decision.",
+      "situationTr": "Sonuçları karardan çok sonra ortaya çıkan bir risk için insanları harekete geçmeye ikna et.",
+      "prompts": [
+        "Explain why the risk is easy to postpone, without blaming the audience.",
+        "Make the delay itself the subject.",
+        "Give one thing that can be done this year.",
+        "Say honestly what that thing will not achieve."
+      ],
+      "promptsTr": [
+        "Riskin neden ertelenmesinin kolay olduğunu, dinleyiciyi suçlamadan açıkla.",
+        "Gecikmenin kendisini konu yap.",
+        "Bu yıl yapılabilecek tek bir şey ver.",
+        "O şeyin neyi başaramayacağını dürüstçe söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Nothing about postponing this is irrational; the reward for acting arrives elsewhere.", "tr": "Bunu ertelemek akıl dışı değil; harekete geçmenin karşılığı başka yere düşüyor." },
+        { "en": "Every year of delay removes an option rather than postponing the same choice.", "tr": "Her gecikme yılı aynı seçimi ertelemez, bir seçeneği ortadan kaldırır." },
+        { "en": "The single thing worth doing this year is unglamorous and cheap.", "tr": "Bu yıl yapılmaya değer tek şey gösterişsiz ve ucuz." },
+        { "en": "It will not solve the problem, and anybody who tells you otherwise is guessing.", "tr": "Sorunu çözmeyecek ve aksini söyleyen tahmin yürütüyordur." },
+        { "en": "What it buys is time, and time is the only thing currently in short supply.", "tr": "Kazandırdığı şey zaman ve şu anda kıt olan tek şey zaman." }
+      ],
+      "glossary": [
+        { "w": "postpone", "tr": "ertelemek" },
+        { "w": "irrational", "tr": "akıl dışı" },
+        { "w": "reward", "tr": "karşılık, ödül" },
+        { "w": "unglamorous", "tr": "gösterişsiz" },
+        { "w": "in short supply", "tr": "kıt, az bulunur" }
+      ]
+    }
+  ]
+}

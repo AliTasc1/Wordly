@@ -1,0 +1,189 @@
+{
+  "_meta": { "batch": "c1-speaking-02", "level": "C1", "range": "Senaryo 6-10" },
+  "items": [
+    {
+      "id": "c1-s-06",
+      "level": "C1",
+      "order": 6,
+      "kind": "speaking",
+      "title": "Uzlaşma önermek",
+      "titleEn": "Proposing a Compromise",
+      "minutes": 7,
+      "situation": "Two departments have blocked each other for months. Propose a settlement both can accept.",
+      "situationTr": "İki bölüm aylardır birbirini engelliyor. İkisinin de kabul edebileceği bir uzlaşma öner.",
+      "prompts": [
+        "Describe each side's real interest, not its stated position.",
+        "Name what each side must give up.",
+        "Explain why your proposal is better than continuing.",
+        "Say how the agreement will be enforced."
+      ],
+      "promptsTr": [
+        "Her tarafın açıkladığı tutumu değil, gerçek çıkarını anlat.",
+        "Her tarafın neyden vazgeçmesi gerektiğini söyle.",
+        "Önerinin, böyle devam etmekten neden iyi olduğunu açıkla.",
+        "Anlaşmanın nasıl uygulanacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Both sides say this is about control; neither of them means that.", "tr": "İki taraf da bunun denetimle ilgili olduğunu söylüyor; ikisi de bunu kastetmiyor." },
+        { "en": "What one side needs is speed, and what the other needs is not being blamed.", "tr": "Bir tarafın ihtiyacı hız, diğerininki suçlanmamak." },
+        { "en": "Neither of you gets the approval process you asked for.", "tr": "İkiniz de istediğiniz onay sürecini alamıyorsunuz." },
+        { "en": "The cost of another six months is larger than anything either of you would lose.", "tr": "Altı ay daha beklemenin bedeli, ikinizin de kaybedeceğinden büyük." },
+        { "en": "We review it in October, and either side can reopen it then and only then.", "tr": "Ekimde gözden geçiririz; her iki taraf da yalnızca o zaman yeniden açabilir." }
+      ],
+      "glossary": [
+        { "w": "departments", "tr": "bölümler" },
+        { "w": "settlement", "tr": "uzlaşma" },
+        { "w": "interest", "tr": "çıkar, menfaat" },
+        { "w": "approval process", "tr": "onay süreci" },
+        { "w": "enforced", "tr": "uygulanan, yürütülen" }
+      ]
+    },
+    {
+      "id": "c1-s-07",
+      "level": "C1",
+      "order": 7,
+      "kind": "speaking",
+      "title": "Belirsizliği anlatmak",
+      "titleEn": "Reporting an Uncertain Result",
+      "minutes": 7,
+      "situation": "Present a finding that is genuinely uncertain to an audience that wants a clear answer.",
+      "situationTr": "Net bir cevap isteyen bir dinleyici kitlesine gerçekten belirsiz bir bulguyu sun.",
+      "prompts": [
+        "Give the finding and the uncertainty in the same breath.",
+        "Explain what would make the result firmer.",
+        "Resist the invitation to give a single number.",
+        "Say what decision the result can and cannot support."
+      ],
+      "promptsTr": [
+        "Bulguyu ve belirsizliği aynı anda ver.",
+        "Sonucu neyin sağlamlaştıracağını açıkla.",
+        "Tek bir rakam verme davetine direnç göster.",
+        "Sonucun hangi kararı destekleyip destekleyemeyeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The effect is probably real and probably smaller than the headline suggests.", "tr": "Etki muhtemelen gerçek ve muhtemelen başlığın ima ettiğinden küçük." },
+        { "en": "A second sample of the same size would settle most of this.", "tr": "Aynı büyüklükte ikinci bir örneklem bunun çoğunu çözerdi." },
+        { "en": "I can give you a range honestly or a number dishonestly.", "tr": "Size dürüstçe bir aralık ya da dürüst olmayan bir rakam verebilirim." },
+        { "en": "It supports going ahead cautiously; it does not support a public claim.", "tr": "Temkinli ilerlemeyi destekliyor; kamuya yönelik bir iddiayı desteklemiyor." },
+        { "en": "If we act as if it were certain, the first failure will discredit the whole line of work.", "tr": "Kesinmiş gibi davranırsak ilk başarısızlık bütün çalışmayı itibarsızlaştırır." }
+      ],
+      "glossary": [
+        { "w": "uncertainty", "tr": "belirsizlik" },
+        { "w": "sample", "tr": "örneklem" },
+        { "w": "range", "tr": "aralık" },
+        { "w": "cautiously", "tr": "temkinli biçimde" },
+        { "w": "discredit", "tr": "itibarsızlaştırmak" }
+      ]
+    },
+    {
+      "id": "c1-s-08",
+      "level": "C1",
+      "order": 8,
+      "kind": "speaking",
+      "title": "Görüşmeyi reddetmek",
+      "titleEn": "Turning Down a Request",
+      "minutes": 7,
+      "situation": "A respected colleague asks you to support a proposal you think is poor. Refuse without damage.",
+      "situationTr": "Saygı duyduğun bir meslektaşın zayıf bulduğun bir öneriyi desteklemeni istiyor. Zarar vermeden reddet.",
+      "prompts": [
+        "Refuse clearly before explaining.",
+        "Give the real reason rather than a convenient one.",
+        "Say what you would support instead.",
+        "Protect the relationship without weakening the refusal."
+      ],
+      "promptsTr": [
+        "Açıklamadan önce net biçimde reddet.",
+        "İşine gelen değil gerçek nedeni ver.",
+        "Bunun yerine neyi destekleyeceğini söyle.",
+        "Reddi yumuşatmadan ilişkiyi koru."
+      ],
+      "usefulPhrases": [
+        { "en": "I am not going to support it, and I would rather tell you than let you find out.", "tr": "Bunu desteklemeyeceğim ve bunu senin öğrenmene bırakmaktansa söylemeyi yeğlerim." },
+        { "en": "The reason is not the budget, although that would be easier to say.", "tr": "Neden bütçe değil, söylemesi daha kolay olsa da." },
+        { "en": "I do not think the pilot shows what the proposal claims it shows.", "tr": "Pilot çalışmanın, önerinin iddia ettiğini gösterdiğini düşünmüyorum." },
+        { "en": "If it were limited to one site for a year, I would support it tomorrow.", "tr": "Bir yıl boyunca tek bir yerle sınırlı olsaydı yarın desteklerdim." },
+        { "en": "I would like to be wrong about this, and I will say so publicly if I am.", "tr": "Bu konuda yanılmayı isterim ve yanılırsam bunu açıkça söylerim." }
+      ],
+      "glossary": [
+        { "w": "proposal", "tr": "öneri" },
+        { "w": "convenient", "tr": "işine gelen, kolaycı" },
+        { "w": "pilot", "tr": "pilot çalışma, deneme" },
+        { "w": "limited", "tr": "sınırlı" }
+      ]
+    },
+    {
+      "id": "c1-s-09",
+      "level": "C1",
+      "order": 9,
+      "kind": "speaking",
+      "title": "Bir metni eleştirmek",
+      "titleEn": "Criticizing Someone's Work",
+      "minutes": 7,
+      "situation": "Give detailed criticism of a piece of work by someone who is nervous about it.",
+      "situationTr": "Yaptığı iş konusunda gergin olan birine ayrıntılı eleştiri ver.",
+      "prompts": [
+        "Say what the work is actually trying to do.",
+        "Name the strongest thing in it, specifically.",
+        "Give the central criticism once and clearly.",
+        "Separate what must change from what is only your taste."
+      ],
+      "promptsTr": [
+        "İşin gerçekte ne yapmaya çalıştığını söyle.",
+        "İçindeki en güçlü şeyi, somut biçimde adlandır.",
+        "Asıl eleştiriyi bir kez ve net söyle.",
+        "Değişmesi gerekeni, yalnızca senin zevkin olandan ayır."
+      ],
+      "usefulPhrases": [
+        { "en": "Before anything else, let me say what I think you were attempting.", "tr": "Her şeyden önce, neyi denediğini düşündüğümü söyleyeyim." },
+        { "en": "The second section is the best thing here, and it is not close.", "tr": "İkinci bölüm buradaki en iyi şey ve farkla öyle." },
+        { "en": "My one real criticism is that the argument arrives too late to do any work.", "tr": "Tek gerçek eleştirim, savın iş görecek kadar erken gelmemesi." },
+        { "en": "That has to change. The rest of what I said is preference, not correction.", "tr": "Bunun değişmesi gerek. Söylediklerimin kalanı tercih, düzeltme değil." },
+        { "en": "You do not have to take any of it, and I will not ask about it again.", "tr": "Hiçbirini kabul etmek zorunda değilsin ve bir daha sormayacağım." }
+      ],
+      "glossary": [
+        { "w": "criticism", "tr": "eleştiri" },
+        { "w": "nervous", "tr": "gergin" },
+        { "w": "attempting", "tr": "denemek" },
+        { "w": "preference", "tr": "tercih" },
+        { "w": "correction", "tr": "düzeltme" }
+      ]
+    },
+    {
+      "id": "c1-s-10",
+      "level": "C1",
+      "order": 10,
+      "kind": "speaking",
+      "title": "Kamuoyuna açıklama",
+      "titleEn": "Facing the Press",
+      "minutes": 7,
+      "situation": "Your organization made a serious error. Answer questions from journalists.",
+      "situationTr": "Kurumun ciddi bir hata yaptı. Gazetecilerin sorularını yanıtla.",
+      "prompts": [
+        "Open by stating what went wrong, not what you are doing about it.",
+        "Say what you know and what you do not yet know.",
+        "Refuse to blame individuals while accepting responsibility.",
+        "Commit to something checkable with a date."
+      ],
+      "promptsTr": [
+        "Ne yaptığınla değil, neyin yanlış gittiğiyle başla.",
+        "Neyi bilip neyi henüz bilmediğini söyle.",
+        "Sorumluluğu üstlenirken kişileri suçlamayı reddet.",
+        "Tarihli ve denetlenebilir bir taahhüt ver."
+      ],
+      "usefulPhrases": [
+        { "en": "Three hundred people were sent the wrong result, and that is our fault.", "tr": "Üç yüz kişiye yanlış sonuç gönderildi ve bu bizim hatamız." },
+        { "en": "I know how it happened; I do not yet know why nobody caught it.", "tr": "Nasıl olduğunu biliyorum; kimsenin neden fark etmediğini henüz bilmiyorum." },
+        { "en": "I am not going to name anybody, because the failure was in the system.", "tr": "Kimseyi adıyla anmayacağım, çünkü hata sistemdeydi." },
+        { "en": "The independent review will report by the fifteenth of next month.", "tr": "Bağımsız inceleme gelecek ayın on beşine kadar rapor verecek." },
+        { "en": "If I have said anything today that turns out to be wrong, I will correct it publicly.", "tr": "Bugün söylediğim bir şey yanlış çıkarsa alenen düzelteceğim." }
+      ],
+      "glossary": [
+        { "w": "journalists", "tr": "gazeteciler" },
+        { "w": "responsibility", "tr": "sorumluluk" },
+        { "w": "checkable", "tr": "denetlenebilir" },
+        { "w": "fault", "tr": "hata, kusur" },
+        { "w": "independent review", "tr": "bağımsız inceleme" }
+      ]
+    }
+  ]
+}
