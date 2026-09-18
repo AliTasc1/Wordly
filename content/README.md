@@ -61,7 +61,8 @@ A1'de öğrendiğini yeniden anlatmak olurdu.
 ## Ses
 
 `build-audio.py` dinleme repliklerini ve kelime telaffuzlarını Google Cloud
-Text-to-Speech ile üretir. Anahtarsız çalıştırıldığında hiçbir şey üretmez,
+Text-to-Speech ile üretir. Anahtarın nasıl alınacağı adım adım
+[AUDIO-SETUP.md](AUDIO-SETUP.md)'de. Anahtarsız çalıştırıldığında hiçbir şey üretmez,
 yalnızca ne üretileceğini ve maliyetini yazar:
 
     python3 build-audio.py
