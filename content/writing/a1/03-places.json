@@ -1,0 +1,522 @@
+{
+ "_meta": {
+  "batch": "a1-03",
+  "level": "A1",
+  "range": "Set 8-13 — ev, yiyecek, sevdiklerim, alışveriş, eşyalar, yer tarifi"
+ },
+ "sets": [
+  {
+   "id": "a1-w-08",
+   "level": "A1",
+   "order": 8,
+   "title": "Evim",
+   "canDo": "Evimde ne olduğunu yazabilirim.",
+   "focus": "Türkçede \"var\" tek kelimedir. İngilizcede sayıya göre ikiye ayrılır: there is (tek), there are (çoğul).",
+   "tasks": [
+    {
+     "tr": "Masanın üstünde bir kitap var.",
+     "answers": ["There is a book on the table.", "There's a book on the table."],
+     "hint": "Tek şey için there is.",
+     "traps": [
+      { "has": "there are a book", "note": "Tek şey için there is." },
+      { "has": "it is a book on", "note": "\"Var\" için there is kullanılır." }
+     ]
+    },
+    {
+     "tr": "Evimizde üç oda var.",
+     "answers": ["There are three rooms in our house."],
+     "hint": "Çoğul için there are ve kelime çoğul olur.",
+     "traps": [
+      { "has": "there is three rooms", "note": "Çoğul için there are." },
+      { "has": "three room", "note": "Sayıdan sonra çoğul: three rooms." }
+     ]
+    },
+    {
+     "tr": "Mutfakta masa yok.",
+     "answers": ["There is not a table in the kitchen.", "There isn't a table in the kitchen."],
+     "hint": "Olumsuzda not, there is'ten sonra gelir.",
+     "traps": [
+      { "has": "there not is", "note": "Sıra: there is not." }
+     ]
+    },
+    {
+     "tr": "Odamda büyük bir pencere var.",
+     "answers": ["There is a big window in my room.", "There's a big window in my room."],
+     "hint": "Sıfat ismin önüne gelir: a big window.",
+     "traps": [
+      { "has": "a window big", "note": "Sıfat isimden önce gelir: a big window." }
+     ]
+    },
+    {
+     "tr": "Bahçemiz yok.",
+     "answers": ["We do not have a garden.", "We don't have a garden."],
+     "hint": "Sahiplik için have.",
+     "traps": [
+      { "has": "we have not a garden", "note": "Bugünün İngilizcesinde: We do not have a garden." }
+     ]
+    },
+    {
+     "tr": "Banyoda kaç havlu var?",
+     "answers": ["How many towels are there in the bathroom?"],
+     "hint": "Soruda there ve are yer değiştirir.",
+     "traps": [
+      { "has": "how much towels", "note": "Sayılabilen için how many." }
+     ]
+    },
+    {
+     "tr": "Evim küçük ama rahat.",
+     "answers": ["My house is small but nice."],
+     "hint": "İki sıfatı but ile bağlıyoruz.",
+     "traps": [
+      { "has": "my house small", "note": "be fiili düşmez: My house is small." }
+     ]
+    },
+    {
+     "tr": "Yatak odam mutfağın yanında.",
+     "answers": ["My bedroom is next to the kitchen."],
+     "hint": "Yanında: next to.",
+     "traps": [
+      { "has": "next the kitchen", "note": "Kalıp next to: next to the kitchen." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Evini dört cümleyle anlat: kaç oda var, odanda ne var, en sevdiğin yer neresi?",
+    "checklist": [
+     "Tek şey için there is, çoğul için there are kullandın mı?",
+     "Sayıdan sonra ismi çoğul yaptın mı?",
+     "Sıfatları ismin önüne koydun mu?"
+    ],
+    "model": "My house is small. There are three rooms. There is a big window in my bedroom. I like the kitchen."
+   }
+  },
+  {
+   "id": "a1-w-09",
+   "level": "A1",
+   "order": 9,
+   "title": "Yiyecek ve içecek",
+   "canDo": "Ne yiyip içtiğimi yazabilirim.",
+   "focus": "İngilizcede bazı isimler sayılamaz (water, bread, rice) ve çoğul eki almaz. Türkçede böyle bir ayrım yok.",
+   "tasks": [
+    {
+     "tr": "Biraz su istiyorum.",
+     "answers": ["I want some water."],
+     "hint": "Olumlu cümlede some kullanılır.",
+     "traps": [
+      { "has": "waters", "note": "water sayılamaz, çoğulu olmaz." },
+      { "has": "a water", "note": "water sayılamaz, a almaz." }
+     ]
+    },
+    {
+     "tr": "Hiç ekmeğimiz yok.",
+     "answers": ["We do not have any bread.", "We don't have any bread."],
+     "hint": "Olumsuzda any kullanılır.",
+     "traps": [
+      { "has": "breads", "note": "bread sayılamaz, çoğulu olmaz." },
+      { "has": "have some bread", "note": "Olumsuzda any kullanılır." }
+     ]
+    },
+    {
+     "tr": "Her sabah iki yumurta yerim.",
+     "answers": ["I eat two eggs every morning."],
+     "hint": "egg sayılabilir, sayıdan sonra çoğul olur.",
+     "traps": [
+      { "has": "two egg", "note": "Sayıdan sonra çoğul: two eggs." }
+     ]
+    },
+    {
+     "tr": "Çay sever misin?",
+     "answers": ["Do you like tea?"],
+     "hint": "Genel olarak sevmek: the kullanılmaz.",
+     "traps": [
+      { "has": "like the tea", "note": "Genel anlamda the kullanılmaz: like tea." }
+     ]
+    },
+    {
+     "tr": "Öğle yemeğinde balık yedim.",
+     "answers": ["I had fish for lunch."],
+     "hint": "Öğün için for: for lunch.",
+     "traps": [
+      { "has": "in lunch", "note": "Öğün için for: for lunch." },
+      { "has": "fishes", "note": "Yemek anlamında fish çoğul almaz." }
+     ]
+    },
+    {
+     "tr": "Şişede biraz süt var.",
+     "answers": ["There is some milk in the bottle.", "There's some milk in the bottle."],
+     "hint": "milk sayılamaz, there is alır.",
+     "traps": [
+      { "has": "there are some milk", "note": "milk sayılamaz: there is." },
+      { "has": "milks", "note": "milk sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Ne kadar şeker istersin?",
+     "answers": ["How much sugar do you want?"],
+     "hint": "Sayılamayan için how much.",
+     "traps": [
+      { "has": "how many sugar", "note": "Sayılamayan için how much." }
+     ]
+    },
+    {
+     "tr": "Sebze sevmem.",
+     "answers": ["I do not like vegetables.", "I don't like vegetables."],
+     "hint": "Genel anlamda çoğul kullanılır.",
+     "traps": [
+      { "has": "like vegetable", "note": "Genel anlamda çoğul: vegetables." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir günde ne yiyip içtiğini üç cümleyle yaz.",
+    "checklist": [
+     "Sayılamayan isimleri çoğul yapmadın, değil mi (water, bread, milk)?",
+     "Olumlu cümlede some, olumsuz ve soruda any kullandın mı?",
+     "Sayıdan sonra sayılabilen isimleri çoğul yaptın mı?"
+    ],
+    "model": "I have breakfast at seven. I eat two eggs and some bread. In the evening I drink tea."
+   }
+  },
+  {
+   "id": "a1-w-10",
+   "level": "A1",
+   "order": 10,
+   "title": "Sevdiklerim",
+   "canDo": "Neyi sevip sevmediğimi yazabilirim.",
+   "focus": "Türkçede \"yüzmeyi severim\" derken fiil değişir. İngilizcede like'tan sonra fiil -ing alır: I like swimming.",
+   "tasks": [
+    {
+     "tr": "Yüzmeyi severim.",
+     "answers": ["I like swimming.", "I like to swim."],
+     "hint": "like'tan sonra fiil -ing alır ya da to ile gelir.",
+     "traps": [
+      { "has": "i like swim", "at": "start", "note": "like'tan sonra swimming ya da to swim gelir." }
+     ]
+    },
+    {
+     "tr": "Erken kalkmaktan hoşlanmam.",
+     "answers": ["I do not like getting up early.", "I don't like getting up early."],
+     "hint": "Olumsuzda da fiil -ing kalır.",
+     "traps": [
+      { "has": "like get up", "note": "like'tan sonra getting up gelir." }
+     ]
+    },
+    {
+     "tr": "O müzik dinlemeyi sever.",
+     "answers": ["She likes listening to music.", "He likes listening to music.", "She likes to listen to music.", "He likes to listen to music."],
+     "hint": "Dinlemek: listen to.",
+     "traps": [
+      { "has": "listening music", "note": "listen'dan sonra to gelir: listening to music." },
+      { "has": "she like listening", "note": "Üçüncü tekil kişi: likes." }
+     ]
+    },
+    {
+     "tr": "En sevdiğim renk mavi.",
+     "answers": ["My favorite color is blue."],
+     "hint": "Amerikan yazımı: favorite, color.",
+     "traps": [
+      { "has": "my favorite color blue", "note": "be fiili gerekir: is blue." }
+     ]
+    },
+    {
+     "tr": "Futbolu çok severim.",
+     "answers": ["I like football very much.", "I love football."],
+     "hint": "\"Çok\" burada very much ve cümlenin sonuna gelir.",
+     "traps": [
+      { "has": "i very like", "note": "Sıra: I like football very much." }
+     ]
+    },
+    {
+     "tr": "Kediler mi köpekler mi?",
+     "answers": ["Cats or dogs?"],
+     "hint": "Genel anlamda çoğul kullanılır.",
+     "traps": [
+      { "has": "cat or dog", "note": "Genel anlamda çoğul: Cats or dogs?" }
+     ]
+    },
+    {
+     "tr": "Kardeşim kitap okumaktan hoşlanır.",
+     "answers": ["My brother likes reading books.", "My sister likes reading books."],
+     "hint": "Üçüncü tekil kişi eki unutulmasın.",
+     "traps": [
+      { "has": "like reading books", "note": "Üçüncü tekil kişi: likes." }
+     ]
+    },
+    {
+     "tr": "Soğuk havayı hiç sevmem.",
+     "answers": ["I do not like cold weather.", "I don't like cold weather."],
+     "hint": "weather sayılamaz, a almaz.",
+     "traps": [
+      { "has": "a cold weather", "note": "weather sayılamaz: cold weather." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Sevdiğin iki şeyi ve sevmediğin bir şeyi yaz. Her birinin sebebini ekle.",
+    "checklist": [
+     "like, love ve hate'ten sonra fiile -ing ekledin mi?",
+     "Üçüncü tekil kişide likes yazdın mı?",
+     "Genel anlamda çoğul kullandın mı (books, cats)?"
+    ],
+    "model": "I like swimming because it is easy. I love music. I do not like cold days."
+   }
+  },
+  {
+   "id": "a1-w-11",
+   "level": "A1",
+   "order": 11,
+   "title": "Alışveriş",
+   "canDo": "Bir şey alırken gereken cümleleri yazabilirim.",
+   "focus": "Fiyat ve miktar sorarken sayılabilir mi sayılamaz mı ayrımı belirleyici: how many / how much.",
+   "tasks": [
+    {
+     "tr": "Bu ne kadar?",
+     "answers": ["How much is this?", "How much is it?"],
+     "hint": "Fiyat için how much.",
+     "traps": [
+      { "has": "how many is this", "note": "Fiyat için how much." }
+     ]
+    },
+    {
+     "tr": "İki şişe su istiyorum.",
+     "answers": ["I want two bottles of water.", "I would like two bottles of water."],
+     "hint": "Miktar ile isim arasında of gelir.",
+     "traps": [
+      { "has": "two bottles water", "note": "Araya of gelir: two bottles of water." },
+      { "has": "two bottle", "note": "Sayıdan sonra çoğul: two bottles." }
+     ]
+    },
+    {
+     "tr": "Bu gömlek çok pahalı.",
+     "answers": ["This shirt is very expensive."],
+     "hint": "Sıfattan önce very gelir.",
+     "traps": [
+      { "has": "this shirt very expensive", "note": "be fiili gerekir: is very expensive." }
+     ]
+    },
+    {
+     "tr": "Bu çok pahalı mı?",
+     "answers": ["Is this too expensive?"],
+     "hint": "Soruda be fiili başa gelir.",
+     "traps": [
+      { "has": "this is too expensive", "at": "start", "note": "Soruda sıra değişir: Is this too expensive?" }
+     ]
+    },
+    {
+     "tr": "Kredi kartı alıyor musunuz?",
+     "answers": ["Do you take credit cards?"],
+     "hint": "Soru do ile başlar.",
+     "traps": [
+      { "has": "are you take", "note": "Bu fiille do kullanılır: Do you take…?" }
+     ]
+    },
+    {
+     "tr": "Yeni bir telefon almak istiyorum.",
+     "answers": ["I want to buy a new phone."],
+     "hint": "want'tan sonra to + fiil gelir.",
+     "traps": [
+      { "has": "want buy", "note": "want'tan sonra to gelir: want to buy." },
+      { "has": "want buying", "note": "want'tan sonra to buy gelir." }
+     ]
+    },
+    {
+     "tr": "Bunlar çok küçük.",
+     "answers": ["These are too small."],
+     "hint": "Çoğul işaret: these.",
+     "traps": [
+      { "has": "this are", "note": "Çoğul için these." },
+      { "has": "these is", "note": "these ile are kullanılır." }
+     ]
+    },
+    {
+     "tr": "Bir poşet alabilir miyim?",
+     "answers": ["Can I have a bag?", "Can I get a bag?"],
+     "hint": "Kibar istek: Can I have…?",
+     "traps": [
+      { "has": "can i to have", "note": "can'dan sonra fiil yalın: Can I have…?" }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir mağazada geçen kısa bir konuşma yaz: sen sor, satıcı cevaplasın, sen karar ver.",
+    "checklist": [
+     "Fiyat sorarken how much kullandın mı?",
+     "want ve can'dan sonra doğru biçimi kullandın mı (to buy, have)?",
+     "Çoğul işaret sıfatını doğru seçtin mi (this / these)?"
+    ],
+    "model": "How much is this shirt? It is very expensive. Do you have a black one? I want to buy two shirts."
+   }
+  },
+  {
+   "id": "a1-w-12",
+   "level": "A1",
+   "order": 12,
+   "title": "Eşyalar ve renkler",
+   "canDo": "Bir şeyi tarif edebilirim.",
+   "focus": "Türkçede sıfat da isimden önce gelir, ama İngilizcede sıfat asla çoğul olmaz: \"iki kırmızı arabalar\" değil, two red cars.",
+   "tasks": [
+    {
+     "tr": "İki kırmızı araba.",
+     "answers": ["Two red cars."],
+     "hint": "Sıfat çoğul olmaz, isim olur.",
+     "traps": [
+      { "has": "two reds cars", "note": "Sıfat çoğul olmaz: two red cars." },
+      { "has": "two red car", "note": "Sayıdan sonra isim çoğul: cars." }
+     ]
+    },
+    {
+     "tr": "Yeni bir siyah çantam var.",
+     "answers": ["I have a new black bag.", "I have got a new black bag.", "I've got a new black bag."],
+     "hint": "Birden çok sıfatta önce görüş, sonra renk gelir.",
+     "traps": [
+      { "has": "a black new bag", "note": "Sıra: a new black bag." }
+     ]
+    },
+    {
+     "tr": "Bu kalem senin mi?",
+     "answers": ["Is this pen yours?", "Is this your pen?"],
+     "hint": "İsimden sonra gelen iyelik: yours.",
+     "traps": [
+      { "has": "is this pen your", "note": "İsimden sonra yours kullanılır." }
+     ]
+    },
+    {
+     "tr": "Ayakkabılarım çok eski.",
+     "answers": ["My shoes are very old."],
+     "hint": "shoes çoğuldur, are alır.",
+     "traps": [
+      { "has": "my shoes is", "note": "Çoğul özne: are." }
+     ]
+    },
+    {
+     "tr": "Telefonu masanın üstünde.",
+     "answers": ["Her phone is on the table.", "His phone is on the table."],
+     "hint": "Türkçede \"onun\" cinsiyetsizdir, İngilizcede her ya da his seçilir.",
+     "traps": [
+      { "has": "its phone", "note": "İnsan için her ya da his." }
+     ]
+    },
+    {
+     "tr": "Bu ceket bana çok büyük.",
+     "answers": ["This jacket is too big for me."],
+     "hint": "\"Bana\" için for me.",
+     "traps": [
+      { "has": "for i", "note": "Edattan sonra me gelir: for me." },
+      { "has": "too big to me", "note": "Kalıp too big for me." }
+     ]
+    },
+    {
+     "tr": "Beyaz bir gömlek arıyorum.",
+     "answers": ["I am looking for a white shirt.", "I'm looking for a white shirt."],
+     "hint": "Aramak: look for.",
+     "traps": [
+      { "has": "looking a white", "note": "look'tan sonra for gelir: looking for." }
+     ]
+    },
+    {
+     "tr": "Saatim çalışmıyor.",
+     "answers": ["My watch does not work.", "My watch doesn't work.", "My watch is not working.", "My watch isn't working."],
+     "hint": "Cihaz için work fiili kullanılır.",
+     "traps": [
+      { "has": "my watch not work", "note": "does not gerekir: My watch does not work." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Çantanda ya da odanda olan üç eşyayı renk ve büyüklükleriyle tarif et.",
+    "checklist": [
+     "Sıfatları çoğul yapmadın, değil mi?",
+     "Sıfat sırasını doğru kullandın mı (new black bag)?",
+     "Çoğul öznelerde are kullandın mı?"
+    ],
+    "model": "I have a new black bag. There are two red pens in it. My phone is very old."
+   }
+  },
+  {
+   "id": "a1-w-13",
+   "level": "A1",
+   "order": 13,
+   "title": "Yer tarif etmek",
+   "canDo": "Bir şeyin nerede olduğunu yazabilirim.",
+   "focus": "Türkçede yer eki tektir (\"-de\"). İngilizcede in, on ve at farklı şeyler anlatır: içinde, üstünde, bir noktada.",
+   "tasks": [
+    {
+     "tr": "Anahtarlar çantanın içinde.",
+     "answers": ["The keys are in the bag."],
+     "hint": "İçinde: in.",
+     "traps": [
+      { "has": "on the bag", "note": "İçinde için in." },
+      { "has": "keys is", "note": "keys çoğuldur: are." }
+     ]
+    },
+    {
+     "tr": "Kitap masanın üstünde.",
+     "answers": ["The book is on the desk.", "The book is on the table."],
+     "hint": "Üstünde: on.",
+     "traps": [
+      { "has": "in the desk", "note": "Üstünde için on." }
+     ]
+    },
+    {
+     "tr": "Otobüs durağında bekliyorum.",
+     "answers": ["I am waiting at the bus stop.", "I'm waiting at the bus stop."],
+     "hint": "Nokta bildiren yerler için at.",
+     "traps": [
+      { "has": "in the bus stop", "note": "Nokta için at: at the bus stop." }
+     ]
+    },
+    {
+     "tr": "Evimiz okulun yanında.",
+     "answers": ["Our house is next to the school."],
+     "hint": "Yanında: next to.",
+     "traps": [
+      { "has": "near of the school", "note": "Kalıp next to ya da near the school." }
+     ]
+    },
+    {
+     "tr": "Kedi sandalyenin altında.",
+     "answers": ["The cat is under the chair."],
+     "hint": "Altında: under.",
+     "traps": [
+      { "has": "in under", "note": "under tek başına kullanılır." }
+     ]
+    },
+    {
+     "tr": "Banka okulun önünde.",
+     "answers": ["The bank is in front of the school."],
+     "hint": "Önünde: in front of — üç kelimenin üçü de gerekir.",
+     "traps": [
+      { "has": "in front the school", "note": "Kalıp in front of." },
+      { "has": "front of the school", "at": "start", "note": "Başta in gerekir: in front of." }
+     ]
+    },
+    {
+     "tr": "İki dükkânın arasında.",
+     "answers": ["It is between two shops.", "It's between two shops."],
+     "hint": "İki şeyin arasında: between.",
+     "traps": [
+      { "has": "between of two", "note": "between'den sonra of gelmez." }
+     ]
+    },
+    {
+     "tr": "Nerede yaşıyorsun?",
+     "answers": ["Where do you live?"],
+     "hint": "Soru do ile kurulur.",
+     "traps": [
+      { "has": "where you live", "note": "Soruda do gerekir: Where do you live?" },
+      { "has": "where are you live", "note": "Bu fiille do kullanılır: Where do you live?" }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Evinin yerini tarif et: yakınında ne var, nasıl gidilir?",
+    "checklist": [
+     "in, on ve at arasında doğru seçimi yaptın mı?",
+     "next to ve in front of kalıplarını eksiksiz yazdın mı?",
+     "Çoğul öznelerde are kullandın mı?"
+    ],
+    "model": "My house is next to the school. There is a shop in front of my house. The bus stop is very near."
+   }
+  }
+ ]
+}

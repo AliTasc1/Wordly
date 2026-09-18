@@ -1,0 +1,526 @@
+{
+ "_meta": {
+  "batch": "a1-04",
+  "level": "A1",
+  "range": "Set 14-19 — hava, yapabilmek, geçmiş (was/were, düzenli, düzensiz), gelecek"
+ },
+ "sets": [
+  {
+   "id": "a1-w-14",
+   "level": "A1",
+   "order": 14,
+   "title": "Hava durumu",
+   "canDo": "Havanın nasıl olduğunu yazabilirim.",
+   "focus": "Türkçede \"hava soğuk\" derken özne yoktur. İngilizcede bu cümlelerin öznesi it'tir ve düşmez: It is cold.",
+   "tasks": [
+    {
+     "tr": "Bugün hava soğuk.",
+     "answers": ["It is cold today.", "It's cold today."],
+     "hint": "Hava cümlelerinin öznesi it.",
+     "traps": [
+      { "has": "is cold today", "at": "start", "note": "Özne gerekir: It is cold today." },
+      { "has": "the weather is cold today", "note": "Kısa hâli yeğlenir: It is cold today." }
+     ]
+    },
+    {
+     "tr": "Yağmur yağıyor.",
+     "answers": ["It is raining.", "It's raining."],
+     "hint": "Şu an yağıyorsa be + -ing.",
+     "traps": [
+      { "has": "is raining", "at": "start", "note": "Özne gerekir: It is raining." },
+      { "has": "rain is falling", "note": "Kalıp: It is raining." }
+     ]
+    },
+    {
+     "tr": "Yarın hava güzel olacak.",
+     "answers": ["It will be nice tomorrow.", "It's going to be nice tomorrow.", "It is going to be nice tomorrow."],
+     "hint": "will'den sonra fiil yalın: will be.",
+     "traps": [
+      { "has": "will is", "note": "will'den sonra fiil yalın: will be." }
+     ]
+    },
+    {
+     "tr": "Kışın çok kar yağar.",
+     "answers": ["It snows a lot in winter."],
+     "hint": "Mevsim için in: in winter.",
+     "traps": [
+      { "has": "on winter", "note": "Mevsim için in: in winter." },
+      { "has": "it snow a lot", "note": "it ile fiil -s alır: snows." }
+     ]
+    },
+    {
+     "tr": "Hava çok sıcak değil.",
+     "answers": ["It is not very hot.", "It isn't very hot."],
+     "hint": "very, sıfattan önce gelir.",
+     "traps": [
+      { "has": "not hot very", "note": "Sıra: not very hot." }
+     ]
+    },
+    {
+     "tr": "Bugün hava nasıl?",
+     "answers": ["What is the weather like today?", "What's the weather like today?"],
+     "hint": "Kalıp: What is the weather like?",
+     "traps": [
+      { "has": "how is the weather like", "note": "Kalıp: What is the weather like?" },
+      { "has": "weathers", "note": "weather sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Yazın denize gideriz.",
+     "answers": ["We go to the sea in summer."],
+     "hint": "Mevsim için in.",
+     "traps": [
+      { "has": "at summer", "note": "Mevsim için in: in summer." }
+     ]
+    },
+    {
+     "tr": "Dışarısı çok soğuk.",
+     "answers": ["It is very cold outside.", "It's very cold outside."],
+     "hint": "outside kelimesinden önce edat gerekmez.",
+     "traps": [
+      { "has": "in outside", "note": "outside'tan önce edat kullanılmaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bulunduğun yerde dört mevsimin havasını birer cümleyle anlat.",
+    "checklist": [
+     "Her hava cümlesine it öznesini koydun mu?",
+     "Mevsim adlarından önce in kullandın mı?",
+     "weather kelimesini çoğul yapmadın, değil mi?"
+    ],
+    "model": "It is hot in summer. It rains a lot in autumn. It is very cold in winter. In spring the weather is nice."
+   }
+  },
+  {
+   "id": "a1-w-15",
+   "level": "A1",
+   "order": 15,
+   "title": "Yapabildiklerim",
+   "canDo": "Neyi yapabildiğimi ve yapamadığımı yazabilirim.",
+   "focus": "can'dan sonra fiil hep yalın kalır: to almaz, -s almaz, -ing almaz. Türkçede \"yapabilirim\" tek kelime olduğu için bu ayrım görünmez.",
+   "tasks": [
+    {
+     "tr": "Yüzebilirim.",
+     "answers": ["I can swim."],
+     "hint": "can'dan sonra fiil yalın.",
+     "traps": [
+      { "has": "can to swim", "note": "can'dan sonra to gelmez: can swim." },
+      { "has": "can swimming", "note": "can'dan sonra fiil yalın: can swim." }
+     ]
+    },
+    {
+     "tr": "O araba kullanamaz.",
+     "answers": ["She cannot drive.", "She can't drive.", "He cannot drive.", "He can't drive."],
+     "hint": "Üçüncü tekil kişide bile can değişmez.",
+     "traps": [
+      { "has": "cans not drive", "note": "can çekimlenmez: cannot drive." },
+      { "has": "does not can", "note": "can ile do kullanılmaz: cannot drive." }
+     ]
+    },
+    {
+     "tr": "İngilizce konuşabiliyor musun?",
+     "answers": ["Can you speak English?"],
+     "hint": "Soruda can başa gelir.",
+     "traps": [
+      { "has": "do you can speak", "note": "can ile do kullanılmaz: Can you speak…?" }
+     ]
+    },
+    {
+     "tr": "Gitar çalabiliyorum ama iyi değilim.",
+     "answers": ["I can play the guitar but I am not good.", "I can play the guitar but I'm not good."],
+     "hint": "Müzik aletiyle the kullanılır: play the guitar.",
+     "traps": [
+      { "has": "play guitar", "note": "Müzik aletinde the gerekir: play the guitar." }
+     ]
+    },
+    {
+     "tr": "Bana yardım edebilir misin?",
+     "answers": ["Can you help me?"],
+     "hint": "\"Bana\" için me.",
+     "traps": [
+      { "has": "help i", "note": "Nesne biçimi me: help me." },
+      { "has": "can you to help", "note": "can'dan sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Burada sigara içemezsiniz.",
+     "answers": ["You cannot smoke here.", "You can't smoke here."],
+     "hint": "Yasak için cannot.",
+     "traps": [
+      { "has": "you do not can", "note": "can ile do kullanılmaz: You cannot smoke." }
+     ]
+    },
+    {
+     "tr": "Çocuklar yürüyebiliyor.",
+     "answers": ["The children can walk."],
+     "hint": "Çoğul öznede de can değişmez.",
+     "traps": [
+      { "has": "children cans", "note": "can çekimlenmez." }
+     ]
+    },
+    {
+     "tr": "Seni duyamıyorum.",
+     "answers": ["I cannot hear you.", "I can't hear you."],
+     "hint": "hear fiili şu an kipine girmez, can ile kullanılır.",
+     "traps": [
+      { "has": "am not hearing", "note": "Bu fiilde: I cannot hear you." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Yapabildiğin iki şeyi ve yapamadığın iki şeyi yaz.",
+    "checklist": [
+     "can'dan sonra fiili yalın bıraktın mı?",
+     "Olumsuzda cannot ya da can't kullandın mı?",
+     "can ile do karıştırmadın, değil mi?"
+    ],
+    "model": "I can swim and I can drive. I cannot play the guitar. I can't cook very well."
+   }
+  },
+  {
+   "id": "a1-w-16",
+   "level": "A1",
+   "order": 16,
+   "title": "Dün neredeydim",
+   "canDo": "Geçmişte bir şeyin nasıl olduğunu yazabilirim.",
+   "focus": "be fiilinin geçmişi ikiye ayrılır: I, he, she, it için was; you, we, they için were. Türkçede tek bir \"-di\" eki vardır.",
+   "tasks": [
+    {
+     "tr": "Dün evdeydim.",
+     "answers": ["I was at home yesterday."],
+     "hint": "I ile was kullanılır.",
+     "traps": [
+      { "has": "i were", "note": "I ile was kullanılır." },
+      { "has": "in home", "note": "Kalıp at home." }
+     ]
+    },
+    {
+     "tr": "Onlar dün okuldaydı.",
+     "answers": ["They were at school yesterday."],
+     "hint": "they ile were kullanılır.",
+     "traps": [
+      { "has": "they was", "note": "they ile were kullanılır." }
+     ]
+    },
+    {
+     "tr": "Hava çok sıcaktı.",
+     "answers": ["It was very hot."],
+     "hint": "it ile was.",
+     "traps": [
+      { "has": "it were", "note": "it ile was kullanılır." }
+     ]
+    },
+    {
+     "tr": "Orada değildim.",
+     "answers": ["I was not there.", "I wasn't there."],
+     "hint": "Olumsuzluk was'tan sonra gelir.",
+     "traps": [
+      { "has": "i did not was", "note": "was ile did kullanılmaz: I was not there." }
+     ]
+    },
+    {
+     "tr": "Dün neredeydin?",
+     "answers": ["Where were you yesterday?"],
+     "hint": "you ile were, soruda başa gelir.",
+     "traps": [
+      { "has": "where was you", "note": "you ile were kullanılır." },
+      { "has": "where did you were", "note": "were ile did kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Yemek güzeldi.",
+     "answers": ["The food was nice.", "The food was good."],
+     "hint": "Tekil özne: was.",
+     "traps": [
+      { "has": "food were", "note": "Tekil özne: was." },
+      { "has": "foods", "note": "food burada sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Biz çok yorgunduk.",
+     "answers": ["We were very tired."],
+     "hint": "we ile were.",
+     "traps": [
+      { "has": "we was", "note": "we ile were kullanılır." }
+     ]
+    },
+    {
+     "tr": "Annen evde miydi?",
+     "answers": ["Was your mother at home?"],
+     "hint": "Soruda was başa gelir.",
+     "traps": [
+      { "has": "did your mother was", "note": "was ile did kullanılmaz: Was your mother…?" }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Dünün nasıl geçtiğini üç cümleyle yaz: neredeydin, hava nasıldı, nasıl hissettin?",
+    "checklist": [
+     "I, he, she, it için was kullandın mı?",
+     "you, we, they için were kullandın mı?",
+     "was ve were ile did'i karıştırmadın, değil mi?"
+    ],
+    "model": "Yesterday I was at home. It was very cold. My family was with me. We were happy."
+   }
+  },
+  {
+   "id": "a1-w-17",
+   "level": "A1",
+   "order": 17,
+   "title": "Dün ne yaptım",
+   "canDo": "Dün yaptığım şeyleri yazabilirim.",
+   "focus": "Geçmiş zamanda fiil -ed alır. Ama olumsuz ve soruda did devreye girer ve fiil yalına döner: I did not play, did you play?",
+   "tasks": [
+    {
+     "tr": "Dün futbol oynadım.",
+     "answers": ["I played football yesterday."],
+     "hint": "Düzenli fiilde geçmiş -ed ile yapılır.",
+     "traps": [
+      { "has": "i play football yesterday", "note": "Geçmiş için played." }
+     ]
+    },
+    {
+     "tr": "O bütün gün çalıştı.",
+     "answers": ["She worked all day.", "He worked all day."],
+     "hint": "Geçmişte üçüncü tekil kişi eki yoktur, sadece -ed.",
+     "traps": [
+      { "has": "worksed", "note": "Geçmişte -s eklenmez: worked." },
+      { "has": "she works all day", "note": "Geçmiş için worked." }
+     ]
+    },
+    {
+     "tr": "Televizyon izlemedim.",
+     "answers": ["I did not watch television.", "I didn't watch television."],
+     "hint": "did not'tan sonra fiil yalın kalır.",
+     "traps": [
+      { "has": "did not watched", "note": "did not'tan sonra fiil yalın: did not watch." }
+     ]
+    },
+    {
+     "tr": "Dün ne yaptın?",
+     "answers": ["What did you do yesterday?"],
+     "hint": "Soruda did kullanılır, fiil yalın kalır.",
+     "traps": [
+      { "has": "what did you did", "note": "did'ten sonra fiil yalın: did you do." },
+      { "has": "what you did", "note": "Soruda did gerekir: What did you do?" }
+     ]
+    },
+    {
+     "tr": "İki saat bekledik.",
+     "answers": ["We waited for two hours."],
+     "hint": "Süre için for.",
+     "traps": [
+      { "has": "waited two hours", "note": "Süre için for: waited for two hours." },
+      { "has": "two hour", "note": "Sayıdan sonra çoğul: two hours." }
+     ]
+    },
+    {
+     "tr": "Sabah erken kalktı.",
+     "answers": ["She got up early in the morning.", "He got up early in the morning."],
+     "hint": "get fiilinin geçmişi got.",
+     "traps": [
+      { "has": "getted up", "note": "get düzensizdir: got up." }
+     ]
+    },
+    {
+     "tr": "Bana yardım etmedin.",
+     "answers": ["You did not help me.", "You didn't help me."],
+     "hint": "Olumsuzda did not ve yalın fiil.",
+     "traps": [
+      { "has": "did not helped", "note": "did not'tan sonra fiil yalın: did not help." }
+     ]
+    },
+    {
+     "tr": "Beni aradın mı?",
+     "answers": ["Did you call me?"],
+     "hint": "Soru did ile başlar.",
+     "traps": [
+      { "has": "did you called", "note": "did'ten sonra fiil yalın: Did you call…?" }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Dün yaptığın dört şeyi sırayla yaz.",
+    "checklist": [
+     "Düzenli fiillere -ed ekledin mi?",
+     "did not ve did'ten sonra fiili yalın bıraktın mı?",
+     "Geçmişte üçüncü tekil kişi -s'i kullanmadın, değil mi?"
+    ],
+    "model": "Yesterday I got up early. I worked all day. I did not watch television. In the evening I called my mother."
+   }
+  },
+  {
+   "id": "a1-w-18",
+   "level": "A1",
+   "order": 18,
+   "title": "Düzensiz fiiller",
+   "canDo": "Sık kullanılan düzensiz fiillerle geçmişi yazabilirim.",
+   "focus": "Bazı fiillerin geçmişi -ed almaz, biçim tamamen değişir: go → went, have → had, see → saw. Bunlar ezberlenir; kural yoktur.",
+   "tasks": [
+    {
+     "tr": "Dün okula gittim.",
+     "answers": ["I went to school yesterday."],
+     "hint": "go fiilinin geçmişi went.",
+     "traps": [
+      { "has": "goed", "note": "go düzensizdir: went." },
+      { "has": "i go to school yesterday", "note": "Geçmiş için went." }
+     ]
+    },
+    {
+     "tr": "Güzel bir gün geçirdik.",
+     "answers": ["We had a nice day."],
+     "hint": "have fiilinin geçmişi had.",
+     "traps": [
+      { "has": "haved", "note": "have düzensizdir: had." }
+     ]
+    },
+    {
+     "tr": "Onu dün gördüm.",
+     "answers": ["I saw her yesterday.", "I saw him yesterday."],
+     "hint": "see fiilinin geçmişi saw.",
+     "traps": [
+      { "has": "seed", "note": "see düzensizdir: saw." },
+      { "has": "saw she", "note": "Nesne biçimi: saw her." }
+     ]
+    },
+    {
+     "tr": "Yeni bir araba aldı.",
+     "answers": ["She bought a new car.", "He bought a new car."],
+     "hint": "buy fiilinin geçmişi bought.",
+     "traps": [
+      { "has": "buyed", "note": "buy düzensizdir: bought." }
+     ]
+    },
+    {
+     "tr": "Bana her şeyi anlattı.",
+     "answers": ["She told me everything.", "He told me everything."],
+     "hint": "tell fiilinin geçmişi told; araya to girmez.",
+     "traps": [
+      { "has": "told to me", "note": "tell'den sonra doğrudan me gelir: told me." },
+      { "has": "telled", "note": "tell düzensizdir: told." }
+     ]
+    },
+    {
+     "tr": "Dün bir mektup yazdım.",
+     "answers": ["I wrote a letter yesterday."],
+     "hint": "write fiilinin geçmişi wrote.",
+     "traps": [
+      { "has": "writed", "note": "write düzensizdir: wrote." }
+     ]
+    },
+    {
+     "tr": "Nereye gittin?",
+     "answers": ["Where did you go?"],
+     "hint": "Soruda did kullanılır, fiil yalına döner.",
+     "traps": [
+      { "has": "where did you went", "note": "did'ten sonra fiil yalın: did you go." },
+      { "has": "where you went", "note": "Soruda did gerekir: Where did you go?" }
+     ]
+    },
+    {
+     "tr": "Hiçbir şey yemedim.",
+     "answers": ["I did not eat anything.", "I didn't eat anything.", "I ate nothing."],
+     "hint": "did not'tan sonra fiil yalın: eat, ate değil.",
+     "traps": [
+      { "has": "did not ate", "note": "did not'tan sonra fiil yalın: did not eat." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Geçen hafta sonunu anlat. En az üç düzensiz fiil kullan.",
+    "checklist": [
+     "Düzensiz fiillere -ed eklemedin, değil mi?",
+     "did ve did not'tan sonra fiili yalına çevirdin mi?",
+     "Nesne biçimlerini doğru kullandın mı (me, her, him)?"
+    ],
+    "model": "Last weekend I went to Izmir. I saw my family. We had a nice day. I bought a new shirt."
+   }
+  },
+  {
+   "id": "a1-w-19",
+   "level": "A1",
+   "order": 19,
+   "title": "Yarın ne yapacağım",
+   "canDo": "Planlarımı yazabilirim.",
+   "focus": "Plan anlatırken going to kullanılır ve be fiili düşmez: I am going to visit. Türkçede \"ziyaret edeceğim\" tek kelimedir, o yüzden be unutuluyor.",
+   "tasks": [
+    {
+     "tr": "Yarın büyükannemi ziyaret edeceğim.",
+     "answers": ["I am going to visit my grandmother tomorrow.", "I'm going to visit my grandmother tomorrow."],
+     "hint": "Kalıp: be + going to + yalın fiil.",
+     "traps": [
+      { "has": "i going to visit", "at": "start", "note": "be fiili gerekir: I am going to visit." },
+      { "has": "going to visiting", "note": "going to'dan sonra fiil yalın: going to visit." }
+     ]
+    },
+    {
+     "tr": "O bu akşam gelmeyecek.",
+     "answers": ["She is not going to come this evening.", "He is not going to come this evening.", "She will not come this evening.", "He will not come this evening."],
+     "hint": "Olumsuzluk be fiilinden sonra gelir.",
+     "traps": [
+      { "has": "not is going", "note": "Sıra: is not going to." }
+     ]
+    },
+    {
+     "tr": "Ne yapacaksın?",
+     "answers": ["What are you going to do?", "What will you do?"],
+     "hint": "Soruda be başa gelir.",
+     "traps": [
+      { "has": "what you are going", "note": "Soruda sıra değişir: What are you going to do?" }
+     ]
+    },
+    {
+     "tr": "Gelecek hafta İstanbul'a gideceğiz.",
+     "answers": ["We are going to go to Istanbul next week.", "We're going to Istanbul next week.", "We will go to Istanbul next week."],
+     "hint": "next week'ten önce edat kullanılmaz.",
+     "traps": [
+      { "has": "in next week", "note": "next week'ten önce edat gelmez." }
+     ]
+    },
+    {
+     "tr": "Sana yarın yardım edeceğim.",
+     "answers": ["I will help you tomorrow.", "I'll help you tomorrow."],
+     "hint": "will'den sonra fiil yalın.",
+     "traps": [
+      { "has": "will to help", "note": "will'den sonra to gelmez: will help." },
+      { "has": "will helping", "note": "will'den sonra fiil yalın: will help." }
+     ]
+    },
+    {
+     "tr": "Bir ev almayı planlıyorlar.",
+     "answers": ["They are going to buy a house.", "They're going to buy a house."],
+     "hint": "they ile are kullanılır.",
+     "traps": [
+      { "has": "they is going", "note": "they ile are kullanılır." }
+     ]
+    },
+    {
+     "tr": "Bu akşam ne yiyeceğiz?",
+     "answers": ["What are we going to eat this evening?"],
+     "hint": "we ile are.",
+     "traps": [
+      { "has": "what we are going", "note": "Soruda sıra değişir." }
+     ]
+    },
+    {
+     "tr": "Yarın çalışmayacağım.",
+     "answers": ["I am not going to work tomorrow.", "I'm not going to work tomorrow.", "I will not work tomorrow.", "I won't work tomorrow."],
+     "hint": "Olumsuzda not, be ya da will'den sonra gelir.",
+     "traps": [
+      { "has": "i not going to work", "at": "start", "note": "be fiili gerekir: I am not going to work." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Gelecek hafta yapacağın üç şeyi yaz.",
+    "checklist": [
+     "going to'dan önce be fiilini (am, is, are) koydun mu?",
+     "going to ve will'den sonra fiili yalın bıraktın mı?",
+     "next week gibi ifadelerden önce edat koymadın, değil mi?"
+    ],
+    "model": "Next week I am going to visit my family. We will go to the sea. I am not going to work."
+   }
+  }
+ ]
+}

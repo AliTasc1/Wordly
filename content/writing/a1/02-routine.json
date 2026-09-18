@@ -1,0 +1,437 @@
+{
+ "_meta": {
+  "batch": "a1-02",
+  "level": "A1",
+  "range": "Set 3-7 — rutin, şu an, sorular, olumsuzluk, saat ve gün"
+ },
+ "sets": [
+  {
+   "id": "a1-w-03",
+   "level": "A1",
+   "order": 3,
+   "title": "Her gün ne yaparım",
+   "canDo": "Günlük alışkanlıklarımı yazabilirim.",
+   "focus": "Geniş zamanda he, she ve it özneleriyle fiile -s eklenir. Türkçede böyle bir ek yok, o yüzden en sık unutulan şey budur.",
+   "tasks": [
+    {
+     "tr": "Saat yedide kalkarım.",
+     "answers": ["I get up at seven.", "I get up at seven o'clock."],
+     "hint": "Saatten önce at kullanılır.",
+     "traps": [
+      { "has": "in seven", "note": "Saat için at: at seven." },
+      { "has": "on seven", "note": "Saat için at: at seven." }
+     ]
+    },
+    {
+     "tr": "O her sabah kahve içer.",
+     "answers": ["She drinks coffee every morning.", "He drinks coffee every morning."],
+     "hint": "Üçüncü tekil kişide fiil -s alır.",
+     "traps": [
+      { "has": "she drink coffee", "note": "Üçüncü tekil kişi: drinks." },
+      { "has": "he drink coffee", "note": "Üçüncü tekil kişi: drinks." }
+     ]
+    },
+    {
+     "tr": "Okula otobüsle giderim.",
+     "answers": ["I go to school by bus."],
+     "hint": "Araçla gitmek: by bus, by car, by train.",
+     "traps": [
+      { "has": "with bus", "note": "Araç için by kullanılır: by bus." },
+      { "has": "with the bus", "note": "Araç için by kullanılır: by bus." }
+     ]
+    },
+    {
+     "tr": "Kardeşim akşamları televizyon izler.",
+     "answers": ["My brother watches television in the evening.", "My sister watches television in the evening."],
+     "hint": "-ch ile biten fiillerde ek -es olur: watches.",
+     "traps": [
+      { "has": "watch television in the evening", "note": "Üçüncü tekil kişi: watches." }
+     ]
+    },
+    {
+     "tr": "Genelde evde yemek yerim.",
+     "answers": ["I usually eat at home."],
+     "hint": "Sıklık zarfı fiilden önce gelir: usually eat.",
+     "traps": [
+      { "has": "i eat usually", "note": "Sıklık zarfı fiilden önce gelir: I usually eat." }
+     ]
+    },
+    {
+     "tr": "Babam bir fabrikada çalışır.",
+     "answers": ["My father works in a factory.", "My father works at a factory."],
+     "hint": "Üçüncü tekil kişi eki unutulmasın.",
+     "traps": [
+      { "has": "my father work in", "note": "Üçüncü tekil kişi: works." }
+     ]
+    },
+    {
+     "tr": "Hafta sonları çalışmam.",
+     "answers": ["I do not work at the weekend.", "I don't work at the weekend.", "I do not work on weekends.", "I don't work on weekends."],
+     "hint": "Olumsuzda do not kullanılır ve fiil yalın kalır.",
+     "traps": [
+      { "has": "i not work", "note": "Olumsuz için do not gerekir: I do not work." }
+     ]
+    },
+    {
+     "tr": "O asla geç kalmaz.",
+     "answers": ["She is never late.", "He is never late."],
+     "hint": "never zaten olumsuzdur, ayrıca not kullanılmaz.",
+     "traps": [
+      { "has": "is not never", "note": "never tek başına olumsuzdur: She is never late." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Sıradan bir gününü dört cümleyle yaz: ne zaman kalkıyorsun, ne yiyorsun, nereye gidiyorsun, akşam ne yapıyorsun?",
+    "checklist": [
+     "Üçüncü tekil kişide fiile -s ekledin mi?",
+     "Saatten önce at kullandın mı?",
+     "Sıklık zarfını fiilden önce koydun mu?"
+    ],
+    "model": "I get up at seven. I have breakfast at home. I go to work by bus. In the evening I read a book."
+   }
+  },
+  {
+   "id": "a1-w-04",
+   "level": "A1",
+   "order": 4,
+   "title": "Şu anda ne oluyor",
+   "canDo": "Tam şu anda olan şeyleri yazabilirim.",
+   "focus": "Türkçede \"okuyorum\" hem alışkanlığı hem şu anı anlatır. İngilizcede ikisi ayrı: alışkanlık için I read, şu an için I am reading.",
+   "tasks": [
+    {
+     "tr": "Şu anda kitap okuyorum.",
+     "answers": ["I am reading a book now.", "I'm reading a book now."],
+     "hint": "Şu an için be + fiil-ing.",
+     "traps": [
+      { "has": "i read a book now", "note": "Şu an için I am reading gerekir." },
+      { "has": "i am read", "note": "be'den sonra fiil -ing alır: I am reading." }
+     ]
+    },
+    {
+     "tr": "O şu anda yemek yapıyor.",
+     "answers": ["She is cooking now.", "He is cooking now.", "She's cooking now.", "He's cooking now."],
+     "hint": "be fiili özneye göre değişir: is.",
+     "traps": [
+      { "has": "she cooking now", "note": "be fiili düşmez: She is cooking." }
+     ]
+    },
+    {
+     "tr": "Çocuklar bahçede oynuyor.",
+     "answers": ["The children are playing in the garden."],
+     "hint": "children çoğuldur, are alır.",
+     "traps": [
+      { "has": "children is playing", "note": "children çoğuldur: are playing." },
+      { "has": "childrens", "note": "child'ın çoğulu children, childrens değil." }
+     ]
+    },
+    {
+     "tr": "Televizyon izlemiyorum.",
+     "answers": ["I am not watching television.", "I'm not watching television."],
+     "hint": "Olumsuzluk be fiilinden sonra gelir.",
+     "traps": [
+      { "has": "i do not watching", "note": "Şu an kipinde do kullanılmaz: I am not watching." }
+     ]
+    },
+    {
+     "tr": "Ne yapıyorsun?",
+     "answers": ["What are you doing?"],
+     "hint": "Soruda be fiili özneden önce gelir.",
+     "traps": [
+      { "has": "what you are doing", "note": "Soruda sıra değişir: What are you doing?" },
+      { "has": "what do you doing", "note": "Şu an kipinde do kullanılmaz: What are you doing?" }
+     ]
+    },
+    {
+     "tr": "Annem telefonda konuşuyor.",
+     "answers": ["My mother is talking on the phone."],
+     "hint": "Telefonda: on the phone.",
+     "traps": [
+      { "has": "in the phone", "note": "Kalıp on the phone." }
+     ]
+    },
+    {
+     "tr": "Biz şimdi eve gidiyoruz.",
+     "answers": ["We are going home now.", "We're going home now."],
+     "hint": "\"Eve\" için home yeterli, to gerekmez.",
+     "traps": [
+      { "has": "going to home", "note": "home kelimesinden önce to kullanılmaz: going home." }
+     ]
+    },
+    {
+     "tr": "O bugün çalışmıyor.",
+     "answers": ["She is not working today.", "He is not working today.", "She isn't working today.", "He isn't working today."],
+     "hint": "Bugün için today, cümlenin sonunda.",
+     "traps": [
+      { "has": "she not working", "note": "be fiili gerekir: She is not working." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Şu anda etrafında ne olduğunu üç cümleyle yaz: sen ne yapıyorsun, yanındakiler ne yapıyor?",
+    "checklist": [
+     "be fiilini (am, is, are) her cümleye koydun mu?",
+     "Fiillere -ing ekledin mi?",
+     "Çoğul öznelerde are kullandın mı?"
+    ],
+    "model": "I am sitting at my desk. My sister is watching television. The children are playing outside."
+   }
+  },
+  {
+   "id": "a1-w-05",
+   "level": "A1",
+   "order": 5,
+   "title": "Soru sormak",
+   "canDo": "Basit sorular yazabilirim.",
+   "focus": "Türkçede soru \"-mi\" ekiyle kurulur ve kelime sırası değişmez. İngilizcede sıra değişir ya da do/does eklenir.",
+   "tasks": [
+    {
+     "tr": "Sen öğrenci misin?",
+     "answers": ["Are you a student?"],
+     "hint": "be fiiliyle soruda be başa gelir.",
+     "traps": [
+      { "has": "you are a student", "note": "Soruda sıra değişir: Are you a student?" },
+      { "has": "do you are", "note": "be fiiliyle do kullanılmaz: Are you…?" }
+     ]
+    },
+    {
+     "tr": "Kahve sever misin?",
+     "answers": ["Do you like coffee?"],
+     "hint": "Geniş zamanda soru do ile başlar.",
+     "traps": [
+      { "has": "you like coffee", "at": "start", "note": "Soru do ile başlar: Do you like coffee?" },
+      { "has": "are you like", "note": "Bu fiille do kullanılır: Do you like…?" }
+     ]
+    },
+    {
+     "tr": "O nerede yaşıyor?",
+     "answers": ["Where does she live?", "Where does he live?"],
+     "hint": "does kullanıldığında fiil yalın kalır: live, lives değil.",
+     "traps": [
+      { "has": "does she lives", "note": "does'tan sonra fiil yalın: does she live." },
+      { "has": "where she lives", "note": "Soruda does gerekir: Where does she live?" }
+     ]
+    },
+    {
+     "tr": "Kaç kardeşin var?",
+     "answers": ["How many brothers do you have?", "How many sisters do you have?"],
+     "hint": "Sayılabilen şeyler için how many.",
+     "traps": [
+      { "has": "how much brothers", "note": "Sayılabilen için how many." }
+     ]
+    },
+    {
+     "tr": "Bu ne kadar?",
+     "answers": ["How much is it?", "How much is this?"],
+     "hint": "Fiyat sorarken how much.",
+     "traps": [
+      { "has": "how many is", "note": "Fiyat için how much." }
+     ]
+    },
+    {
+     "tr": "Neden geç kaldın?",
+     "answers": ["Why are you late?"],
+     "hint": "Türkçede \"kaldın\" geçmiş gibi durur ama burada durum anlatılıyor: are.",
+     "traps": [
+      { "has": "why you are late", "note": "Soruda sıra değişir: Why are you late?" }
+     ]
+    },
+    {
+     "tr": "O senin arkadaşın mı?",
+     "answers": ["Is she your friend?", "Is he your friend?"],
+     "hint": "be fiili başa gelir.",
+     "traps": [
+      { "has": "she is your friend", "note": "Soruda sıra değişir: Is she your friend?" }
+     ]
+    },
+    {
+     "tr": "Ne zaman geliyorsun?",
+     "answers": ["When are you coming?"],
+     "hint": "Şu an ya da yakın plan için be + -ing.",
+     "traps": [
+      { "has": "when you coming", "note": "be fiili gerekir: When are you coming?" }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Yeni tanıştığın birine sormak istediğin dört soruyu yaz.",
+    "checklist": [
+     "Her soru soru işaretiyle bitiyor mu?",
+     "be fiiliyle soruda sırayı değiştirdin mi?",
+     "Diğer fiillerde do ya da does kullandın mı?"
+    ],
+    "model": "Where are you from? Do you live here? What do you do? How old are you?"
+   }
+  },
+  {
+   "id": "a1-w-06",
+   "level": "A1",
+   "order": 6,
+   "title": "Olumsuz yazmak",
+   "canDo": "Bir şeyin olmadığını ya da yapılmadığını yazabilirim.",
+   "focus": "İngilizcede olumsuzluk iki yoldan kurulur: be fiiliyle not doğrudan, diğer fiillerde do not ile. Karıştırmak en sık hatadır.",
+   "tasks": [
+    {
+     "tr": "Ben aç değilim.",
+     "answers": ["I am not hungry.", "I'm not hungry."],
+     "hint": "be fiiliyle not hemen sonra gelir.",
+     "traps": [
+      { "has": "i do not hungry", "note": "be fiiliyle do kullanılmaz: I am not hungry." }
+     ]
+    },
+    {
+     "tr": "O et yemez.",
+     "answers": ["She does not eat meat.", "He does not eat meat.", "She doesn't eat meat.", "He doesn't eat meat."],
+     "hint": "does kullanınca fiil yalın kalır.",
+     "traps": [
+      { "has": "does not eats", "note": "does not'tan sonra fiil yalın: does not eat." },
+      { "has": "do not eat meat", "note": "Üçüncü tekil kişi: does not." }
+     ]
+    },
+    {
+     "tr": "Arabam yok.",
+     "answers": ["I do not have a car.", "I don't have a car."],
+     "hint": "\"Yok\" burada sahip olmamak: do not have.",
+     "traps": [
+      { "has": "i have not a car", "note": "Bugünün İngilizcesinde: I do not have a car." },
+      { "has": "there is not my car", "note": "Sahiplik için have kullanılır: I do not have a car." }
+     ]
+    },
+    {
+     "tr": "Onlar burada değil.",
+     "answers": ["They are not here.", "They aren't here."],
+     "hint": "they ile are kullanılır.",
+     "traps": [
+      { "has": "they is not", "note": "they ile are: They are not here." }
+     ]
+    },
+    {
+     "tr": "Bu benim çantam değil.",
+     "answers": ["This is not my bag.", "This isn't my bag."],
+     "hint": "be fiiliyle olumsuz.",
+     "traps": [
+      { "has": "this not is", "note": "Sıra: This is not." }
+     ]
+    },
+    {
+     "tr": "Sabahları kahvaltı yapmam.",
+     "answers": ["I do not have breakfast in the morning.", "I don't have breakfast in the morning."],
+     "hint": "Sabahları: in the morning.",
+     "traps": [
+      { "has": "at the morning", "note": "Kalıp in the morning." }
+     ]
+    },
+    {
+     "tr": "O İngilizce konuşmuyor.",
+     "answers": ["She does not speak English.", "He does not speak English.", "She doesn't speak English.", "He doesn't speak English."],
+     "hint": "Dil adları büyük harfle yazılır.",
+     "traps": [
+      { "has": "not speaks english", "note": "does not'tan sonra fiil yalın: does not speak." }
+     ]
+    },
+    {
+     "tr": "Hiç param yok.",
+     "answers": ["I do not have any money.", "I don't have any money.", "I have no money."],
+     "hint": "Olumsuz cümlede any kullanılır.",
+     "traps": [
+      { "has": "do not have some money", "note": "Olumsuzda any kullanılır: any money." },
+      { "has": "monies", "note": "money sayılamaz, çoğulu olmaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Yapmadığın ya da sevmediğin üç şeyi yaz.",
+    "checklist": [
+     "be fiiliyle not'u doğrudan kullandın mı?",
+     "Diğer fiillerde do not ya da does not kullandın mı?",
+     "do not'tan sonra fiili yalın bıraktın mı?"
+    ],
+    "model": "I do not drink coffee. I am not good at sport. My brother does not like cats."
+   }
+  },
+  {
+   "id": "a1-w-07",
+   "level": "A1",
+   "order": 7,
+   "title": "Saat, gün ve ay",
+   "canDo": "Bir şeyin ne zaman olduğunu yazabilirim.",
+   "focus": "Türkçede hepsi \"-de\" ekidir: saatte, günde, ayda. İngilizcede üç ayrı edat var ve seçim kelimeye göre yapılır.",
+   "tasks": [
+    {
+     "tr": "Saat sekizde başlıyor.",
+     "answers": ["It starts at eight.", "It starts at eight o'clock."],
+     "hint": "Saat için at.",
+     "traps": [
+      { "has": "in eight", "note": "Saat için at: at eight." }
+     ]
+    },
+    {
+     "tr": "Pazartesi günü çalışıyorum.",
+     "answers": ["I work on Monday.", "I work on Mondays."],
+     "hint": "Gün adları için on.",
+     "traps": [
+      { "has": "in monday", "note": "Gün için on: on Monday." },
+      { "has": "at monday", "note": "Gün için on: on Monday." }
+     ]
+    },
+    {
+     "tr": "Temmuzda tatile gidiyoruz.",
+     "answers": ["We are going on holiday in July.", "We're going on holiday in July."],
+     "hint": "Ay adları için in.",
+     "traps": [
+      { "has": "on july", "note": "Ay için in: in July." }
+     ]
+    },
+    {
+     "tr": "Gece çalışmam.",
+     "answers": ["I do not work at night.", "I don't work at night."],
+     "hint": "Gece için at night; \"in the night\" denmez.",
+     "traps": [
+      { "has": "in the night", "note": "Kalıp at night." }
+     ]
+    },
+    {
+     "tr": "Öğleden sonra müsaitim.",
+     "answers": ["I am free in the afternoon.", "I'm free in the afternoon."],
+     "hint": "Öğleden sonra: in the afternoon.",
+     "traps": [
+      { "has": "at the afternoon", "note": "Kalıp in the afternoon." }
+     ]
+    },
+    {
+     "tr": "Ders saat dokuz buçukta.",
+     "answers": ["The lesson is at half past nine."],
+     "hint": "Buçuk: half past.",
+     "traps": [
+      { "has": "half to nine", "note": "Buçuk için half past kullanılır." }
+     ]
+    },
+    {
+     "tr": "Cumartesi günü ne yapıyorsun?",
+     "answers": ["What are you doing on Saturday?"],
+     "hint": "Gün için on, soruda be başa gelir.",
+     "traps": [
+      { "has": "in saturday", "note": "Gün için on: on Saturday." }
+     ]
+    },
+    {
+     "tr": "Her yıl İzmir'e giderim.",
+     "answers": ["I go to Izmir every year."],
+     "hint": "every year ile edat kullanılmaz.",
+     "traps": [
+      { "has": "in every year", "note": "every year'dan önce edat gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Haftanın üç ayrı zamanında ne yaptığını yaz: bir gün, bir saat ve bir ay geçsin.",
+    "checklist": [
+     "Saat için at, gün için on, ay için in kullandın mı?",
+     "Gün ve ay adlarını büyük harfle yazdın mı?",
+     "every ile başlayan zaman ifadesinden önce edat koymadın, değil mi?"
+    ],
+    "model": "I play football on Monday. My lesson starts at six. In August I visit my family."
+   }
+  }
+ ]
+}

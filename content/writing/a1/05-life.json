@@ -1,0 +1,529 @@
+{
+ "_meta": {
+  "batch": "a1-05",
+  "level": "A1",
+  "range": "Set 20-25 — kıyafet, yol sormak, okul ve iş, sağlık, tatil, kısa mesaj"
+ },
+ "sets": [
+  {
+   "id": "a1-w-20",
+   "level": "A1",
+   "order": 20,
+   "title": "Kıyafetler",
+   "canDo": "Ne giydiğimi yazabilirim.",
+   "focus": "İngilizcede bazı kıyafetler her zaman çoğuldur (trousers, shoes) ve \"bir\" ile kullanılmaz. Türkçede bunlar tekildir: bir pantolon.",
+   "tasks": [
+    {
+     "tr": "Bugün beyaz bir gömlek giyiyorum.",
+     "answers": ["I am wearing a white shirt today.", "I'm wearing a white shirt today."],
+     "hint": "Şu an giyili olmak: be + wearing.",
+     "traps": [
+      { "has": "i wear a white shirt today", "note": "Şu an için I am wearing gerekir." }
+     ]
+    },
+    {
+     "tr": "Pantolonum çok eski.",
+     "answers": ["My trousers are very old."],
+     "hint": "trousers çoğuldur, are alır.",
+     "traps": [
+      { "has": "my trousers is", "note": "trousers çoğuldur: are." },
+      { "has": "a trousers", "note": "trousers ile a kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Bu ayakkabılar bana küçük.",
+     "answers": ["These shoes are too small for me."],
+     "hint": "Çoğul işaret sıfatı: these.",
+     "traps": [
+      { "has": "this shoes", "note": "Çoğul için these." },
+      { "has": "small to me", "note": "Kalıp too small for me." }
+     ]
+    },
+    {
+     "tr": "Kışın kalın bir palto giyerim.",
+     "answers": ["I wear a thick coat in winter."],
+     "hint": "Alışkanlık: I wear, şu an değil.",
+     "traps": [
+      { "has": "i am wearing a thick coat in winter", "note": "Alışkanlık için I wear." }
+     ]
+    },
+    {
+     "tr": "Bu elbise kaç beden?",
+     "answers": ["What size is this dress?"],
+     "hint": "Beden sorarken what size.",
+     "traps": [
+      { "has": "how size", "note": "Kalıp: What size…?" }
+     ]
+    },
+    {
+     "tr": "Şapka takmayı sevmem.",
+     "answers": ["I do not like wearing a hat.", "I don't like wearing a hat.", "I do not like hats.", "I don't like hats."],
+     "hint": "like'tan sonra fiil -ing alır.",
+     "traps": [
+      { "has": "like wear a hat", "note": "like'tan sonra wearing gelir." }
+     ]
+    },
+    {
+     "tr": "O mavi bir ceket giyiyor.",
+     "answers": ["She is wearing a blue jacket.", "He is wearing a blue jacket."],
+     "hint": "Renk sıfatı isimden önce gelir.",
+     "traps": [
+      { "has": "a jacket blue", "note": "Sıfat isimden önce: a blue jacket." }
+     ]
+    },
+    {
+     "tr": "Yeni ayakkabıya ihtiyacım var.",
+     "answers": ["I need new shoes."],
+     "hint": "shoes çoğuldur, a almaz.",
+     "traps": [
+      { "has": "a new shoes", "note": "shoes çoğuldur: new shoes." },
+      { "has": "need to new", "note": "need'den sonra doğrudan isim gelir: need new shoes." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bugün ne giydiğini ve kışın ne giydiğini yaz.",
+    "checklist": [
+     "Şu an için am/is/are + wearing kullandın mı?",
+     "Her zaman çoğul olan kıyafetlere a koymadın, değil mi?",
+     "Sıfatları ismin önüne yazdın mı?"
+    ],
+    "model": "Today I am wearing a white shirt and black trousers. In winter I wear a thick coat. I need new shoes."
+   }
+  },
+  {
+   "id": "a1-w-21",
+   "level": "A1",
+   "order": 21,
+   "title": "Yol sormak",
+   "canDo": "Yol sorabilir ve tarif edebilirim.",
+   "focus": "Yol tarifinde emir kipi kullanılır ve özne yazılmaz: Turn left. Türkçede de özne yoktur, ama İngilizcede bu sadece emir kipinde olur.",
+   "tasks": [
+    {
+     "tr": "Sola dön.",
+     "answers": ["Turn left."],
+     "hint": "Emir kipinde özne yazılmaz.",
+     "traps": [
+      { "has": "you turn left", "at": "start", "note": "Emir kipinde özne yazılmaz: Turn left." },
+      { "has": "turn to left", "note": "Kalıp turn left, araya to girmez." }
+     ]
+    },
+    {
+     "tr": "Düz git.",
+     "answers": ["Go straight."],
+     "hint": "Kalıp: go straight.",
+     "traps": [
+      { "has": "go to straight", "note": "Araya to girmez: Go straight." }
+     ]
+    },
+    {
+     "tr": "İstasyon nerede?",
+     "answers": ["Where is the station?", "Where's the station?"],
+     "hint": "Belirli bir yer: the station.",
+     "traps": [
+      { "has": "where is station", "note": "Belirli yer: the station." }
+     ]
+    },
+    {
+     "tr": "Buraya otobüsle geldim.",
+     "answers": ["I came here by bus."],
+     "hint": "come fiilinin geçmişi came.",
+     "traps": [
+      { "has": "comed", "note": "come düzensizdir: came." },
+      { "has": "with bus", "note": "Araç için by: by bus." }
+     ]
+    },
+    {
+     "tr": "Yürüyerek ne kadar sürer?",
+     "answers": ["How long does it take to walk?"],
+     "hint": "Süre sorarken how long.",
+     "traps": [
+      { "has": "how much time takes", "note": "Kalıp: How long does it take?" },
+      { "has": "does it takes", "note": "does'tan sonra fiil yalın: does it take." }
+     ]
+    },
+    {
+     "tr": "Bir bilete ihtiyacım var.",
+     "answers": ["I need a ticket."],
+     "hint": "need'den sonra doğrudan isim gelir.",
+     "traps": [
+      { "has": "need to a ticket", "note": "need'den sonra doğrudan isim: need a ticket." }
+     ]
+    },
+    {
+     "tr": "Tren saat altıda kalkıyor.",
+     "answers": ["The train leaves at six.", "The train leaves at six o'clock."],
+     "hint": "Tarifeler için geniş zaman kullanılır.",
+     "traps": [
+      { "has": "train leave at", "note": "Tekil özne: leaves." }
+     ]
+    },
+    {
+     "tr": "Haritam yok.",
+     "answers": ["I do not have a map.", "I don't have a map."],
+     "hint": "Sahiplik olumsuzu: do not have.",
+     "traps": [
+      { "has": "i have not a map", "note": "Bugünün İngilizcesinde: I do not have a map." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir yabancıya evinden en yakın durağa nasıl gidileceğini tarif et.",
+    "checklist": [
+     "Emir kipinde özneyi yazmadın, değil mi (Go, Turn)?",
+     "Araç için by kullandın mı?",
+     "Belirli yerlerden önce the koydun mu?"
+    ],
+    "model": "Go straight and turn left. The bus stop is in front of the shop. You can go by bus."
+   }
+  },
+  {
+   "id": "a1-w-22",
+   "level": "A1",
+   "order": 22,
+   "title": "Okul ve iş",
+   "canDo": "Ne okuduğumu ya da nerede çalıştığımı yazabilirim.",
+   "focus": "\"Ne iş yapıyorsun?\" sorusu İngilizcede What do you do? biçimindedir; kelimesi kelimesine çeviri yanlış sonuç verir.",
+   "tasks": [
+    {
+     "tr": "Ne iş yapıyorsun?",
+     "answers": ["What do you do?"],
+     "hint": "Meslek sorarken kalıp budur.",
+     "traps": [
+      { "has": "what is your job", "note": "Yaygın kalıp: What do you do?" },
+      { "has": "what you do", "at": "start", "note": "Soruda do gerekir: What do you do?" }
+     ]
+    },
+    {
+     "tr": "Bir okulda çalışıyorum.",
+     "answers": ["I work in a school.", "I work at a school."],
+     "hint": "Kurum için in ya da at.",
+     "traps": [
+      { "has": "work on a school", "note": "Kurum için in ya da at." }
+     ]
+    },
+    {
+     "tr": "Her gün iki saat ders çalışırım.",
+     "answers": ["I study for two hours every day."],
+     "hint": "Süre için for.",
+     "traps": [
+      { "has": "two hour", "note": "Sayıdan sonra çoğul: two hours." },
+      { "has": "study two hours", "note": "Süre için for: study for two hours." }
+     ]
+    },
+    {
+     "tr": "Ödevimi bitirmedim.",
+     "answers": ["I did not finish my homework.", "I didn't finish my homework."],
+     "hint": "homework sayılamaz, çoğulu yoktur.",
+     "traps": [
+      { "has": "homeworks", "note": "homework sayılamaz, çoğulu olmaz." },
+      { "has": "did not finished", "note": "did not'tan sonra fiil yalın: did not finish." }
+     ]
+    },
+    {
+     "tr": "Öğretmenimiz çok iyi.",
+     "answers": ["Our teacher is very good."],
+     "hint": "İyelik sıfatı: our.",
+     "traps": [
+      { "has": "we teacher", "note": "İyelik biçimi our: our teacher." }
+     ]
+    },
+    {
+     "tr": "Yarın toplantım var.",
+     "answers": ["I have a meeting tomorrow.", "I have got a meeting tomorrow.", "I've got a meeting tomorrow."],
+     "hint": "Sahiplik için have.",
+     "traps": [
+      { "has": "there is a meeting for me", "note": "Kişisel sahiplik için have kullanılır." }
+     ]
+    },
+    {
+     "tr": "Bugün çok meşgulüm.",
+     "answers": ["I am very busy today.", "I'm very busy today."],
+     "hint": "be fiili gerekir.",
+     "traps": [
+      { "has": "i very busy", "at": "start", "note": "be fiili gerekir: I am very busy." }
+     ]
+    },
+    {
+     "tr": "İngilizce öğrenmek istiyorum.",
+     "answers": ["I want to learn English."],
+     "hint": "want'tan sonra to + yalın fiil.",
+     "traps": [
+      { "has": "want learn", "note": "want'tan sonra to gelir: want to learn." },
+      { "has": "want learning", "note": "want'tan sonra to learn gelir." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Okulunu ya da işini dört cümleyle anlat: nerede, ne zaman, neyi seviyorsun?",
+    "checklist": [
+     "want'tan sonra to + yalın fiil kullandın mı?",
+     "homework gibi sayılamayan isimleri çoğul yapmadın, değil mi?",
+     "Süre için for kullandın mı?"
+    ],
+    "model": "I work in a school. I start at eight in the morning. I want to learn English. I am very busy but I am happy."
+   }
+  },
+  {
+   "id": "a1-w-23",
+   "level": "A1",
+   "order": 23,
+   "title": "Sağlık",
+   "canDo": "Nasıl hissettiğimi ve neyimin ağrıdığını yazabilirim.",
+   "focus": "Ağrı anlatırken İngilizcede iyelik sıfatı zorunludur: My head hurts. Türkçede \"başım ağrıyor\" derken ek yeter, İngilizcede my yazılır.",
+   "tasks": [
+    {
+     "tr": "Başım ağrıyor.",
+     "answers": ["My head hurts.", "I have a headache."],
+     "hint": "İyelik sıfatı gerekir: my head.",
+     "traps": [
+      { "has": "head hurts", "at": "start", "note": "İyelik gerekir: My head hurts." },
+      { "has": "the head hurts", "at": "start", "note": "Vücut için iyelik kullanılır: My head." }
+     ]
+    },
+    {
+     "tr": "Kendimi iyi hissetmiyorum.",
+     "answers": ["I do not feel well.", "I don't feel well.", "I am not feeling well.", "I'm not feeling well."],
+     "hint": "Sağlık için well kullanılır.",
+     "traps": [
+      { "has": "feel good", "note": "Sağlık için well: I do not feel well." }
+     ]
+    },
+    {
+     "tr": "Dişim ağrıyor.",
+     "answers": ["My tooth hurts."],
+     "hint": "Tekil diş: tooth.",
+     "traps": [
+      { "has": "my tooths", "note": "tooth'un çoğulu teeth, ama burada tekil gerekir." }
+     ]
+    },
+    {
+     "tr": "Doktora gitmelisin.",
+     "answers": ["You should go to the doctor.", "You must go to the doctor."],
+     "hint": "should'dan sonra fiil yalın.",
+     "traps": [
+      { "has": "should to go", "note": "should'dan sonra to gelmez: should go." },
+      { "has": "should going", "note": "should'dan sonra fiil yalın: should go." }
+     ]
+    },
+    {
+     "tr": "Dün hastaydım.",
+     "answers": ["I was sick yesterday.", "I was not well yesterday."],
+     "hint": "Geçmişte durum: was.",
+     "traps": [
+      { "has": "i were sick", "note": "I ile was kullanılır." }
+     ]
+    },
+    {
+     "tr": "İlacını aldın mı?",
+     "answers": ["Did you take your medicine?"],
+     "hint": "İlaç almak: take medicine.",
+     "traps": [
+      { "has": "did you took", "note": "did'ten sonra fiil yalın: did you take." },
+      { "has": "drink your medicine", "note": "İlaç için take kullanılır." }
+     ]
+    },
+    {
+     "tr": "Bugün daha iyiyim.",
+     "answers": ["I am better today.", "I'm better today."],
+     "hint": "good sıfatının karşılaştırması better.",
+     "traps": [
+      { "has": "more good", "note": "good düzensizdir: better." }
+     ]
+    },
+    {
+     "tr": "Elim çok acıyor.",
+     "answers": ["My hand hurts a lot."],
+     "hint": "İyelik sıfatı gerekir: my hand.",
+     "traps": [
+      { "has": "the hand hurts", "at": "start", "note": "Vücut için iyelik kullanılır: My hand." },
+      { "has": "hurts very", "note": "Kalıp hurts a lot." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Hasta olduğun bir günü anlat: neyin vardı, ne yaptın, şimdi nasılsın?",
+    "checklist": [
+     "Vücut bölümlerinden önce my kullandın mı?",
+     "should ve must'tan sonra fiili yalın bıraktın mı?",
+     "good yerine better yazdın mı?"
+    ],
+    "model": "Yesterday I was sick. My head hurt and I did not feel well. I went to the doctor. Today I am better."
+   }
+  },
+  {
+   "id": "a1-w-24",
+   "level": "A1",
+   "order": 24,
+   "title": "Tatil",
+   "canDo": "Tatilde ne yaptığımı yazabilirim.",
+   "focus": "Yer adlarında edat seçimi değişir: go to Izmir ama go home. Ayrıca \"tatilde\" için on holiday kalıbı kullanılır.",
+   "tasks": [
+    {
+     "tr": "Geçen yıl Antalya'ya gittik.",
+     "answers": ["We went to Antalya last year."],
+     "hint": "last year'dan önce edat gelmez.",
+     "traps": [
+      { "has": "in last year", "note": "last year'dan önce edat kullanılmaz." },
+      { "has": "went in antalya", "note": "Gitmek için to: went to Antalya." }
+     ]
+    },
+    {
+     "tr": "Bir hafta tatildeydik.",
+     "answers": ["We were on holiday for a week."],
+     "hint": "Kalıp: on holiday.",
+     "traps": [
+      { "has": "in holiday", "note": "Kalıp on holiday." },
+      { "has": "we was on holiday", "note": "we ile were kullanılır." }
+     ]
+    },
+    {
+     "tr": "Her gün denizde yüzdük.",
+     "answers": ["We swam in the sea every day."],
+     "hint": "swim fiilinin geçmişi swam.",
+     "traps": [
+      { "has": "swimmed", "note": "swim düzensizdir: swam." },
+      { "has": "swam in sea", "note": "Belirli yer: in the sea." }
+     ]
+    },
+    {
+     "tr": "Otel çok güzeldi.",
+     "answers": ["The hotel was very nice.", "The hotel was very good."],
+     "hint": "Tekil özne: was.",
+     "traps": [
+      { "has": "hotel were", "note": "Tekil özne: was." }
+     ]
+    },
+    {
+     "tr": "Çok fotoğraf çektim.",
+     "answers": ["I took a lot of photos.", "I took many photos."],
+     "hint": "Fotoğraf çekmek: take a photo.",
+     "traps": [
+      { "has": "photoes", "note": "Çoğulu photos." },
+      { "has": "i taked", "note": "take düzensizdir: took." }
+     ]
+    },
+    {
+     "tr": "Gelecek yaz nereye gideceksin?",
+     "answers": ["Where are you going to go next summer?", "Where will you go next summer?"],
+     "hint": "next summer'dan önce edat gelmez.",
+     "traps": [
+      { "has": "in next summer", "note": "next summer'dan önce edat kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Eve pazar günü döndük.",
+     "answers": ["We came home on Sunday."],
+     "hint": "home kelimesinden önce to gelmez.",
+     "traps": [
+      { "has": "came to home", "note": "home'dan önce to kullanılmaz: came home." },
+      { "has": "in sunday", "note": "Gün için on: on Sunday." }
+     ]
+    },
+    {
+     "tr": "Tatil çok kısaydı.",
+     "answers": ["The holiday was too short.", "The holiday was very short."],
+     "hint": "Tekil özne: was.",
+     "traps": [
+      { "has": "holiday were", "note": "Tekil özne: was." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "En son tatilini beş cümleyle anlat: nereye gittin, ne yaptın, nasıldı?",
+    "checklist": [
+     "Düzensiz fiillerin geçmiş biçimlerini doğru yazdın mı (went, swam, took)?",
+     "home kelimesinden önce to koymadın, değil mi?",
+     "last ve next ile başlayan zamanlarda edat kullanmadın, değil mi?"
+    ],
+    "model": "Last year we went to Antalya. We were on holiday for a week. We swam in the sea every day. I took a lot of photos. The holiday was too short."
+   }
+  },
+  {
+   "id": "a1-w-25",
+   "level": "A1",
+   "order": 25,
+   "title": "Kısa mesaj yazmak",
+   "canDo": "Bir arkadaşıma kısa bir mesaj yazabilirim.",
+   "focus": "Mesajda hitap ve kapanış kalıptır: Dear ile başlar, See you ya da Love ile biter. Bu kalıplar çevrilmez, olduğu gibi kullanılır.",
+   "tasks": [
+    {
+     "tr": "Sevgili Ayşe,",
+     "answers": ["Dear Ayse,"],
+     "hint": "Mektup ve mesajda hitap Dear ile başlar.",
+     "traps": [
+      { "has": "my dear ayse", "at": "start", "note": "Kalıp: Dear Ayse." }
+     ]
+    },
+    {
+     "tr": "Nasılsın?",
+     "answers": ["How are you?"],
+     "hint": "Kalıp sorudur, kelimesi kelimesine çevrilmez.",
+     "traps": [
+      { "has": "how you are", "note": "Soruda sıra değişir: How are you?" },
+      { "has": "how do you", "at": "start", "note": "Kalıp: How are you?" }
+     ]
+    },
+    {
+     "tr": "Umarım iyisindir.",
+     "answers": ["I hope you are well.", "I hope you're well."],
+     "hint": "hope'tan sonra cümle gelir.",
+     "traps": [
+      { "has": "i hope you good", "note": "be fiili gerekir: you are well." }
+     ]
+    },
+    {
+     "tr": "Seni özledim.",
+     "answers": ["I miss you."],
+     "hint": "Geniş zaman kullanılır.",
+     "traps": [
+      { "has": "i missed you", "note": "Bu kalıpta geniş zaman: I miss you." }
+     ]
+    },
+    {
+     "tr": "Cumartesi günü müsait misin?",
+     "answers": ["Are you free on Saturday?"],
+     "hint": "Gün için on, soruda be başa gelir.",
+     "traps": [
+      { "has": "in saturday", "note": "Gün için on: on Saturday." },
+      { "has": "you are free on saturday", "at": "start", "note": "Soruda sıra değişir." }
+     ]
+    },
+    {
+     "tr": "Bir kahve içelim.",
+     "answers": ["Let us have a coffee.", "Let's have a coffee."],
+     "hint": "Öneri için Let's + yalın fiil.",
+     "traps": [
+      { "has": "let us to have", "note": "let's'ten sonra to gelmez: Let's have." }
+     ]
+    },
+    {
+     "tr": "Lütfen bana yaz.",
+     "answers": ["Please write to me.", "Please write me."],
+     "hint": "Emir kipinde özne yazılmaz.",
+     "traps": [
+      { "has": "you write to me", "at": "start", "note": "Emir kipinde özne yazılmaz." }
+     ]
+    },
+    {
+     "tr": "Yakında görüşürüz.",
+     "answers": ["See you soon."],
+     "hint": "Kapanış kalıbıdır, özne almaz.",
+     "traps": [
+      { "has": "we see you soon", "at": "start", "note": "Kalıp: See you soon." },
+      { "has": "see you fast", "note": "Kalıp: See you soon." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir arkadaşına kısa bir mesaj yaz: hâlini sor, hafta sonu için bir şey öner, kapanış cümlesi ekle.",
+    "checklist": [
+     "Dear ile başlayıp bir kapanış cümlesiyle bitirdin mi?",
+     "Gün adlarından önce on kullandın mı?",
+     "Let's ve emir kipinden sonra fiili yalın bıraktın mı?"
+    ],
+    "model": "Dear Ayse, how are you? I hope you are well. Are you free on Saturday? Let's have a coffee. See you soon."
+   }
+  }
+ ]
+}
