@@ -1,0 +1,182 @@
+{
+  "_meta": { "batch": "b1-speaking-03", "level": "B1", "range": "Senaryo 11-15" },
+  "items": [
+    {
+      "id": "b1-s-11",
+      "level": "B1",
+      "order": 11,
+      "kind": "speaking",
+      "title": "Toplantıyı özetlemek",
+      "titleEn": "Summarizing a Meeting",
+      "minutes": 5,
+      "situation": "A colleague missed this morning's meeting. Tell her what was decided and what she has to do.",
+      "situationTr": "Bir iş arkadaşın bu sabahki toplantıyı kaçırdı. Ona nelere karar verildiğini ve ne yapması gerektiğini anlat.",
+      "prompts": [
+        "Say what the meeting was mainly about.",
+        "Say what was decided.",
+        "Say what was left open.",
+        "Tell her what she needs to do this week."
+      ],
+      "promptsTr": [
+        "Toplantının esas olarak neyle ilgili olduğunu söyle.",
+        "Neye karar verildiğini söyle.",
+        "Neyin açık bırakıldığını söyle.",
+        "Bu hafta ne yapması gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It was mostly about the new opening hours.", "tr": "Çoğunlukla yeni çalışma saatleriyle ilgiliydi." },
+        { "en": "In the end we agreed to start at half past eight.", "tr": "Sonunda sekiz buçukta başlamaya karar verdik." },
+        { "en": "Nothing was decided about the weekend shifts.", "tr": "Hafta sonu vardiyalarıyla ilgili bir karar alınmadı." },
+        { "en": "You need to send your hours to Melek by Friday.", "tr": "Saatlerini cumaya kadar Melek'e göndermen gerekiyor." },
+        { "en": "I can send you my notes if that helps.", "tr": "İşine yararsa notlarımı gönderebilirim." }
+      ],
+      "names": ["Melek"],
+      "glossary": [
+        { "w": "colleague", "tr": "iş arkadaşı" },
+        { "w": "shifts", "tr": "vardiyalar" },
+        { "w": "decided", "tr": "karar verildi" }
+      ]
+    },
+    {
+      "id": "b1-s-12",
+      "level": "B1",
+      "order": 12,
+      "kind": "speaking",
+      "title": "Bir kitabı anlatmak",
+      "titleEn": "Telling the Story of a Book",
+      "minutes": 5,
+      "situation": "A friend asks about the book you have just finished. Tell her about it without giving away the ending.",
+      "situationTr": "Bir arkadaşın yeni bitirdiğin kitabı soruyor. Sonunu söylemeden ondan bahset.",
+      "prompts": [
+        "Say what kind of book it is.",
+        "Describe the main character.",
+        "Say what happens at the beginning.",
+        "Say whether you would recommend it."
+      ],
+      "promptsTr": [
+        "Ne tür bir kitap olduğunu söyle.",
+        "Ana karakteri tarif et.",
+        "Başta ne olduğunu söyle.",
+        "Tavsiye edip etmeyeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It is a story about a family that moves to a small town.", "tr": "Küçük bir kasabaya taşınan bir ailenin hikâyesi." },
+        { "en": "The main character is a teacher who never says what she thinks.", "tr": "Ana karakter, düşündüğünü hiç söylemeyen bir öğretmen." },
+        { "en": "At the beginning she finds an old letter in the school.", "tr": "Başta okulda eski bir mektup buluyor." },
+        { "en": "I will not tell you how it ends.", "tr": "Nasıl bittiğini söylemeyeceğim." },
+        { "en": "The first fifty pages are slow, but after that I could not stop.", "tr": "İlk elli sayfa yavaş ama sonrasında bırakamadım." }
+      ],
+      "glossary": [
+        { "w": "character", "tr": "karakter" },
+        { "w": "recommend", "tr": "tavsiye etmek" },
+        { "w": "ending", "tr": "son, final" }
+      ]
+    },
+    {
+      "id": "b1-s-13",
+      "level": "B1",
+      "order": 13,
+      "kind": "speaking",
+      "title": "Bir alışkanlığı bırakmak",
+      "titleEn": "Giving Up a Habit",
+      "minutes": 5,
+      "situation": "You are trying to stop drinking coffee late at night. A friend asks how it is going.",
+      "situationTr": "Gece geç saatte kahve içmeyi bırakmaya çalışıyorsun. Bir arkadaşın nasıl gittiğini soruyor.",
+      "prompts": [
+        "Say what you are trying to change and why.",
+        "Say how long you have been trying.",
+        "Say what is hardest about it.",
+        "Say what has helped so far."
+      ],
+      "promptsTr": [
+        "Neyi değiştirmeye çalıştığını ve nedenini söyle.",
+        "Ne zamandır denediğini söyle.",
+        "En zor yanının ne olduğunu söyle.",
+        "Şimdiye kadar neyin işe yaradığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I am trying to stop drinking coffee after six.", "tr": "Altıdan sonra kahve içmeyi bırakmaya çalışıyorum." },
+        { "en": "I have been doing it for about three weeks now.", "tr": "Yaklaşık üç haftadır böyle yapıyorum." },
+        { "en": "The hardest time is around nine in the evening.", "tr": "En zor saat akşam dokuz civarı." },
+        { "en": "Drinking tea instead has helped a lot.", "tr": "Onun yerine çay içmek çok yardımcı oldu." },
+        { "en": "I sleep better, so it is worth it.", "tr": "Daha iyi uyuyorum, yani buna değer." }
+      ],
+      "glossary": [
+        { "w": "habit", "tr": "alışkanlık" },
+        { "w": "instead", "tr": "onun yerine" },
+        { "w": "worth it", "tr": "değer" }
+      ]
+    },
+    {
+      "id": "b1-s-14",
+      "level": "B1",
+      "order": 14,
+      "kind": "speaking",
+      "title": "İş arkadaşından yardım istemek",
+      "titleEn": "Asking a Colleague for Help",
+      "minutes": 5,
+      "situation": "You have too much work this week. Ask a colleague to take one job from you.",
+      "situationTr": "Bu hafta çok fazla işin var. Bir iş arkadaşından bir işi devralmasını iste.",
+      "prompts": [
+        "Explain your situation.",
+        "Say exactly what you are asking for.",
+        "Say why it would not take him long.",
+        "Offer something in return."
+      ],
+      "promptsTr": [
+        "Durumunu açıkla.",
+        "Tam olarak ne istediğini söyle.",
+        "Ona neden uzun sürmeyeceğini söyle.",
+        "Karşılığında bir şey teklif et."
+      ],
+      "usefulPhrases": [
+        { "en": "I have three deadlines on the same day this week.", "tr": "Bu hafta aynı güne denk gelen üç teslim tarihim var." },
+        { "en": "Would you be able to check the numbers for me?", "tr": "Benim için rakamları kontrol edebilir misin?" },
+        { "en": "It should not take more than half an hour.", "tr": "Yarım saatten fazla sürmemeli." },
+        { "en": "I can cover your shift on Thursday in return.", "tr": "Karşılığında perşembe senin vardiyana girebilirim." },
+        { "en": "If you are busy too, just say so.", "tr": "Sen de meşgulsen çekinmeden söyle." }
+      ],
+      "glossary": [
+        { "w": "colleague", "tr": "iş arkadaşı" },
+        { "w": "deadlines", "tr": "teslim tarihleri" },
+        { "w": "cover", "tr": "yerine bakmak" },
+        { "w": "in return", "tr": "karşılığında" }
+      ]
+    },
+    {
+      "id": "b1-s-15",
+      "level": "B1",
+      "order": 15,
+      "kind": "speaking",
+      "title": "Yanlış anlaşılmayı düzeltmek",
+      "titleEn": "Clearing Up a Misunderstanding",
+      "minutes": 5,
+      "situation": "A friend thinks you did not invite her to your birthday dinner. In fact the message did not reach her. Explain.",
+      "situationTr": "Bir arkadaşın doğum günü yemeğine onu çağırmadığını sanıyor. Aslında mesaj ona ulaşmamış. Durumu açıkla.",
+      "prompts": [
+        "Say what you think happened.",
+        "Show that you understand how she feels.",
+        "Say what you actually did.",
+        "Suggest how to put it right."
+      ],
+      "promptsTr": [
+        "Ne olduğunu düşündüğünü söyle.",
+        "Nasıl hissettiğini anladığını göster.",
+        "Aslında ne yaptığını söyle.",
+        "Nasıl telafi edeceğini öner."
+      ],
+      "usefulPhrases": [
+        { "en": "I think the message went to your old number.", "tr": "Sanırım mesaj eski numarana gitti." },
+        { "en": "I can see why you were upset.", "tr": "Neden üzüldüğünü anlıyorum." },
+        { "en": "I sent it on the Monday, together with the others.", "tr": "Onu pazartesi, diğerleriyle birlikte gönderdim." },
+        { "en": "Let me show you the message on my phone.", "tr": "Telefonumdaki mesajı sana göstereyim." },
+        { "en": "Let us do something together next weekend.", "tr": "Gelecek hafta sonu birlikte bir şey yapalım." }
+      ],
+      "glossary": [
+        { "w": "misunderstanding", "tr": "yanlış anlaşılma" },
+        { "w": "upset", "tr": "üzgün, kırgın" },
+        { "w": "put it right", "tr": "telafi etmek" }
+      ]
+    }
+  ]
+}

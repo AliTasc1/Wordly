@@ -1,0 +1,182 @@
+{
+  "_meta": { "batch": "b1-speaking-04", "level": "B1", "range": "Senaryo 16-20" },
+  "items": [
+    {
+      "id": "b1-s-16",
+      "level": "B1",
+      "order": 16,
+      "kind": "speaking",
+      "title": "Hangisi daha hesaplı",
+      "titleEn": "Which One Is Better Value",
+      "minutes": 5,
+      "situation": "You and a friend are choosing between two phone plans. Compare them and say which you prefer.",
+      "situationTr": "Bir arkadaşınla iki telefon paketi arasında seçim yapıyorsunuz. Onları karşılaştır ve hangisini tercih ettiğini söyle.",
+      "prompts": [
+        "Describe the first plan.",
+        "Describe the second one.",
+        "Say which is better for someone like you.",
+        "Say what you would still want to check."
+      ],
+      "promptsTr": [
+        "İlk paketi tarif et.",
+        "İkincisini tarif et.",
+        "Senin gibi biri için hangisinin daha iyi olduğunu söyle.",
+        "Yine de neyi kontrol etmek isteyeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The first one is cheaper but you get much less data.", "tr": "Birincisi daha ucuz ama çok daha az internet veriyor." },
+        { "en": "The second one costs twice as much.", "tr": "İkincisi iki katı tutuyor." },
+        { "en": "For me the calls matter more than the data.", "tr": "Benim için aramalar internetten daha önemli." },
+        { "en": "On balance I would choose the second one.", "tr": "Genel olarak ikincisini seçerdim." },
+        { "en": "I would want to know how long the contract is.", "tr": "Sözleşmenin ne kadar sürdüğünü bilmek isterdim." }
+      ],
+      "glossary": [
+        { "w": "data", "tr": "internet verisi" },
+        { "w": "on balance", "tr": "genel olarak" },
+        { "w": "contract", "tr": "sözleşme" }
+      ]
+    },
+    {
+      "id": "b1-s-17",
+      "level": "B1",
+      "order": 17,
+      "kind": "speaking",
+      "title": "Gecikmeyi açıklamak",
+      "titleEn": "Explaining a Delay",
+      "minutes": 5,
+      "situation": "A piece of work you promised for Monday will not be ready. Speak to the person who is waiting for it.",
+      "situationTr": "Pazartesiye söz verdiğin iş hazır olmayacak. Onu bekleyen kişiyle konuş.",
+      "prompts": [
+        "Say clearly that it will be late.",
+        "Explain why, without long excuses.",
+        "Give a new date you can keep.",
+        "Say what you can send now."
+      ],
+      "promptsTr": [
+        "Geç kalacağını açıkça söyle.",
+        "Uzun mazeretlere girmeden nedenini açıkla.",
+        "Tutabileceğin yeni bir tarih ver.",
+        "Şimdi ne gönderebileceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I am afraid it will not be ready on Monday.", "tr": "Maalesef pazartesi hazır olmayacak." },
+        { "en": "The data arrived three days later than we expected.", "tr": "Veriler beklediğimizden üç gün geç geldi." },
+        { "en": "I can have it with you by Thursday morning.", "tr": "Perşembe sabahına kadar size ulaştırabilirim." },
+        { "en": "I can send you the first half today.", "tr": "İlk yarısını bugün gönderebilirim." },
+        { "en": "I should have told you on Friday, and I am sorry.", "tr": "Size cuma günü söylemeliydim, özür dilerim." }
+      ],
+      "glossary": [
+        { "w": "data", "tr": "veri" },
+        { "w": "delay", "tr": "gecikme" },
+        { "w": "excuses", "tr": "mazeretler" },
+        { "w": "expected", "tr": "beklenen" }
+      ]
+    },
+    {
+      "id": "b1-s-18",
+      "level": "B1",
+      "order": 18,
+      "kind": "speaking",
+      "title": "Bir geleneği anlatmak",
+      "titleEn": "Explaining a Tradition",
+      "minutes": 5,
+      "situation": "A visitor from another country asks about a holiday in your country. Explain it to her.",
+      "situationTr": "Başka bir ülkeden gelen bir ziyaretçi ülkendeki bir bayramı soruyor. Ona anlat.",
+      "prompts": [
+        "Say when it happens and how long it lasts.",
+        "Say what families usually do.",
+        "Say what people eat or give.",
+        "Say what it means to you."
+      ],
+      "promptsTr": [
+        "Ne zaman olduğunu ve ne kadar sürdüğünü söyle.",
+        "Ailelerin genellikle ne yaptığını söyle.",
+        "İnsanların ne yediğini ya da verdiğini söyle.",
+        "Senin için ne anlama geldiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It lasts three days and the date changes every year.", "tr": "Üç gün sürüyor ve tarihi her yıl değişiyor." },
+        { "en": "People visit their older relatives first.", "tr": "İnsanlar önce yaşlı akrabalarını ziyaret ediyor." },
+        { "en": "Children are given sweets and a little money.", "tr": "Çocuklara şeker ve biraz para veriliyor." },
+        { "en": "For me it is mostly about seeing everybody in one place.", "tr": "Benim için daha çok herkesi bir arada görmekle ilgili." },
+        { "en": "It is quieter than it used to be.", "tr": "Eskiden olduğundan daha sakin." }
+      ],
+      "glossary": [
+        { "w": "tradition", "tr": "gelenek" },
+        { "w": "relatives", "tr": "akrabalar" },
+        { "w": "sweets", "tr": "şekerler" }
+      ]
+    },
+    {
+      "id": "b1-s-19",
+      "level": "B1",
+      "order": 19,
+      "kind": "speaking",
+      "title": "Şikâyetini doktora anlatmak",
+      "titleEn": "Describing Your Symptoms",
+      "minutes": 5,
+      "situation": "You have had a pain in your shoulder for two weeks. Describe it to the doctor.",
+      "situationTr": "İki haftadır omzunda ağrı var. Doktora durumu anlat.",
+      "prompts": [
+        "Say where the pain is and when it started.",
+        "Say when it is worse.",
+        "Say what you have already tried.",
+        "Ask what you should do now."
+      ],
+      "promptsTr": [
+        "Ağrının nerede olduğunu ve ne zaman başladığını söyle.",
+        "Ne zaman daha kötü olduğunu söyle.",
+        "Şimdiye kadar ne denediğini söyle.",
+        "Şimdi ne yapman gerektiğini sor."
+      ],
+      "usefulPhrases": [
+        { "en": "The pain is in my right shoulder and it started two weeks ago.", "tr": "Ağrı sağ omzumda ve iki hafta önce başladı." },
+        { "en": "It is worse at night and when I lift anything.", "tr": "Geceleri ve bir şey kaldırdığımda daha kötü." },
+        { "en": "I have taken painkillers, but they only help for an hour.", "tr": "Ağrı kesici aldım ama sadece bir saat işe yarıyor." },
+        { "en": "I have not had an injury that I know of.", "tr": "Bildiğim kadarıyla bir yaralanmam olmadı." },
+        { "en": "Do you think I need an X-ray?", "tr": "Sizce röntgen çektirmem gerekir mi?" }
+      ],
+      "glossary": [
+        { "w": "symptoms", "tr": "belirtiler" },
+        { "w": "painkillers", "tr": "ağrı kesiciler" },
+        { "w": "injury", "tr": "yaralanma" }
+      ]
+    },
+    {
+      "id": "b1-s-20",
+      "level": "B1",
+      "order": 20,
+      "kind": "speaking",
+      "title": "Bir daveti geri çevirmek",
+      "titleEn": "Turning Down an Invitation",
+      "minutes": 5,
+      "situation": "A colleague invites you to a weekend away with the team. You do not want to go. Say no politely.",
+      "situationTr": "Bir iş arkadaşın seni ekiple hafta sonu gezisine davet ediyor. Gitmek istemiyorsun. Kibarca reddet.",
+      "prompts": [
+        "Thank him for the invitation.",
+        "Say no clearly.",
+        "Give a reason you are comfortable giving.",
+        "Suggest something else."
+      ],
+      "promptsTr": [
+        "Davet için teşekkür et.",
+        "Açıkça hayır de.",
+        "Vermekte rahat olduğun bir sebep söyle.",
+        "Başka bir şey öner."
+      ],
+      "usefulPhrases": [
+        { "en": "Thank you for thinking of me.", "tr": "Beni düşündüğün için teşekkürler." },
+        { "en": "I am not going to come this time.", "tr": "Bu sefer gelmeyeceğim." },
+        { "en": "I need the weekend to be at home.", "tr": "Hafta sonunu evde geçirmem gerekiyor." },
+        { "en": "It is nothing to do with the company.", "tr": "Şirketle ilgili bir şey değil." },
+        { "en": "I would be happy to come to the dinner on Friday.", "tr": "Cuma akşamki yemeğe memnuniyetle gelirim." }
+      ],
+      "glossary": [
+        { "w": "colleague", "tr": "iş arkadaşı" },
+        { "w": "invitation", "tr": "davet" },
+        { "w": "politely", "tr": "kibarca" },
+        { "w": "comfortable", "tr": "rahat" }
+      ]
+    }
+  ]
+}

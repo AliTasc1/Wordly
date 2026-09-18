@@ -1,0 +1,183 @@
+{
+  "_meta": { "batch": "b1-speaking-05", "level": "B1", "range": "Senaryo 21-25" },
+  "items": [
+    {
+      "id": "b1-s-21",
+      "level": "B1",
+      "order": 21,
+      "kind": "speaking",
+      "title": "Yeni gelene yol göstermek",
+      "titleEn": "Showing a New Person Around",
+      "minutes": 5,
+      "situation": "It is a new colleague's first day. Show her around and tell her what she needs to know.",
+      "situationTr": "Yeni bir iş arkadaşının ilk günü. Ona etrafı gezdir ve bilmesi gerekenleri anlat.",
+      "prompts": [
+        "Welcome her and say what you do here.",
+        "Tell her where the important places are.",
+        "Explain one rule nobody writes down.",
+        "Tell her who to ask when you are not here."
+      ],
+      "promptsTr": [
+        "Onu karşıla ve burada ne iş yaptığını söyle.",
+        "Önemli yerlerin nerede olduğunu söyle.",
+        "Kimsenin yazmadığı bir kuralı açıkla.",
+        "Sen yokken kime soracağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Welcome. I work on the same floor, just over there.", "tr": "Hoş geldin. Aynı katta, hemen şurada çalışıyorum." },
+        { "en": "The kitchen is at the end of the corridor.", "tr": "Mutfak koridorun sonunda." },
+        { "en": "Nobody tells you this, but the meeting room is booked online.", "tr": "Kimse bunu söylemiyor ama toplantı odası internetten ayrılıyor." },
+        { "en": "If I am not here, ask Selin about anything technical.", "tr": "Ben yoksam teknik her şeyi Selin'e sor." },
+        { "en": "Do not worry about the names, they take a month.", "tr": "İsimleri dert etme, bir ay sürer." }
+      ],
+      "names": ["Selin"],
+      "glossary": [
+        { "w": "colleague", "tr": "iş arkadaşı" },
+        { "w": "corridor", "tr": "koridor" },
+        { "w": "technical", "tr": "teknik" },
+        { "w": "booked", "tr": "ayrılmış, rezerve edilmiş" }
+      ]
+    },
+    {
+      "id": "b1-s-22",
+      "level": "B1",
+      "order": 22,
+      "kind": "speaking",
+      "title": "Bir haberin doğruluğunu sorgulamak",
+      "titleEn": "Checking If a Story Is True",
+      "minutes": 5,
+      "situation": "A friend sends you a surprising story from the internet. Talk to her about whether it is true.",
+      "situationTr": "Bir arkadaşın internetten şaşırtıcı bir haber gönderiyor. Doğru olup olmadığını onunla konuş.",
+      "prompts": [
+        "Say what you thought when you read it.",
+        "Say what does not fit.",
+        "Say how you would check it.",
+        "Say what you will do with it."
+      ],
+      "promptsTr": [
+        "Okuduğunda ne düşündüğünü söyle.",
+        "Neyin yerine oturmadığını söyle.",
+        "Bunu nasıl kontrol edeceğini söyle.",
+        "Onunla ne yapacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "My first thought was that it sounds too strange to be true.", "tr": "İlk düşüncem, doğru olamayacak kadar tuhaf olduğuydu." },
+        { "en": "There is no date on it and no name of a writer.", "tr": "Üzerinde tarih de yok, yazar adı da." },
+        { "en": "I would look for the same story on a news site.", "tr": "Aynı haberi bir haber sitesinde arardım." },
+        { "en": "If nobody else is reporting it, I do not believe it.", "tr": "Başka kimse yazmıyorsa inanmam." },
+        { "en": "I am not going to send it on until we know.", "tr": "Öğrenene kadar başkasına göndermeyeceğim." }
+      ],
+      "glossary": [
+        { "w": "reporting", "tr": "haber yapıyor" },
+        { "w": "site", "tr": "site" },
+        { "w": "strange", "tr": "tuhaf" }
+      ]
+    },
+    {
+      "id": "b1-s-23",
+      "level": "B1",
+      "order": 23,
+      "kind": "speaking",
+      "title": "Görevleri paylaşmak",
+      "titleEn": "Sharing Out the Tasks",
+      "minutes": 5,
+      "situation": "You and two friends are organizing a small party. Decide together who does what.",
+      "situationTr": "İki arkadaşınla küçük bir parti düzenliyorsunuz. Kimin ne yapacağına birlikte karar verin.",
+      "prompts": [
+        "List what needs to be done.",
+        "Say which job you will take and why.",
+        "Suggest a job for each of the others.",
+        "Agree when you will check with each other."
+      ],
+      "promptsTr": [
+        "Yapılması gerekenleri sırala.",
+        "Hangi işi üstleneceğini ve nedenini söyle.",
+        "Diğerlerinin her birine bir iş öner.",
+        "Ne zaman birbirinizle kontrol edeceğinize karar verin."
+      ],
+      "usefulPhrases": [
+        { "en": "We need food, music and somewhere to put the coats.", "tr": "Yemek, müzik ve paltoları koyacak bir yer lazım." },
+        { "en": "I will do the food, because I finish work early on Friday.", "tr": "Yemeği ben yaparım, çünkü cuma işten erken çıkıyorum." },
+        { "en": "Could you look after the music?", "tr": "Müzikle sen ilgilenir misin?" },
+        { "en": "That leaves the drinks for Ozan.", "tr": "Geriye içecekler kalıyor, o da Ozan'a." },
+        { "en": "Let us send a message on Wednesday to see where we are.", "tr": "Çarşamba mesajlaşıp nerede olduğumuza bakalım." }
+      ],
+      "names": ["Ozan"],
+      "glossary": [
+        { "w": "tasks", "tr": "görevler" },
+        { "w": "organizing", "tr": "düzenlemek" },
+        { "w": "look after", "tr": "ilgilenmek" }
+      ]
+    },
+    {
+      "id": "b1-s-24",
+      "level": "B1",
+      "order": 24,
+      "kind": "speaking",
+      "title": "Bir anını anlatmak",
+      "titleEn": "Telling a Memory",
+      "minutes": 5,
+      "situation": "In a class you are asked to talk about a day you still remember clearly. Tell the story.",
+      "situationTr": "Derste hâlâ net hatırladığın bir günü anlatman isteniyor. Hikâyeyi anlat.",
+      "prompts": [
+        "Say when it was and where you were.",
+        "Say what happened.",
+        "Say how you felt at the time.",
+        "Say why you still remember it."
+      ],
+      "promptsTr": [
+        "Ne zaman olduğunu ve nerede olduğunu söyle.",
+        "Ne olduğunu anlat.",
+        "O sırada nasıl hissettiğini söyle.",
+        "Neden hâlâ hatırladığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It was about ten years ago, in my last year at school.", "tr": "Yaklaşık on yıl önce, okuldaki son yılımdaydı." },
+        { "en": "We had planned everything, and then it rained all day.", "tr": "Her şeyi planlamıştık, sonra bütün gün yağmur yağdı." },
+        { "en": "At the time I was angry, but we laughed about it later.", "tr": "O sırada kızmıştım ama sonradan buna güldük." },
+        { "en": "What I remember most is how quiet the street was.", "tr": "En çok hatırladığım şey sokağın ne kadar sessiz olduğu." },
+        { "en": "It was the last time we were all together.", "tr": "Hep birlikte olduğumuz son seferdi." }
+      ],
+      "glossary": [
+        { "w": "memory", "tr": "anı" },
+        { "w": "planned", "tr": "planlamıştık" },
+        { "w": "at the time", "tr": "o sırada" }
+      ]
+    },
+    {
+      "id": "b1-s-25",
+      "level": "B1",
+      "order": 25,
+      "kind": "speaking",
+      "title": "Bir aboneliği iptal etmek",
+      "titleEn": "Cancelling a Service",
+      "minutes": 5,
+      "situation": "You want to cancel a service you pay for every month. The company tries to keep you.",
+      "situationTr": "Her ay ödediğin bir aboneliği iptal etmek istiyorsun. Şirket seni tutmaya çalışıyor.",
+      "prompts": [
+        "Say clearly what you want.",
+        "Say why you are leaving.",
+        "Answer their offer.",
+        "Ask what happens with the last payment."
+      ],
+      "promptsTr": [
+        "Ne istediğini açıkça söyle.",
+        "Neden ayrıldığını söyle.",
+        "Tekliflerine cevap ver.",
+        "Son ödemenin ne olacağını sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I would like to cancel my subscription, please.", "tr": "Aboneliğimi iptal etmek istiyorum, lütfen." },
+        { "en": "I hardly use it any more.", "tr": "Artık neredeyse hiç kullanmıyorum." },
+        { "en": "Thank you, but a lower price does not change my mind.", "tr": "Teşekkürler ama daha düşük fiyat fikrimi değiştirmiyor." },
+        { "en": "When does the last payment come out?", "tr": "Son ödeme ne zaman çekiliyor?" },
+        { "en": "Could you send me written confirmation?", "tr": "Bana yazılı onay gönderebilir misiniz?" }
+      ],
+      "glossary": [
+        { "w": "cancel", "tr": "iptal etmek" },
+        { "w": "subscription", "tr": "abonelik" },
+        { "w": "confirmation", "tr": "onay, teyit" }
+      ]
+    }
+  ]
+}
