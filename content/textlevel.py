@@ -92,6 +92,7 @@ IRREGULAR = {
     "known": "know", "thought": "think", "found": "find", "left": "leave",
     "felt": "feel", "kept": "keep", "held": "hold", "brought": "bring",
     "bought": "buy", "caught": "catch", "taught": "teach", "sent": "send",
+    "fought": "fight",
     "spent": "spend", "built": "build", "lost": "lose", "won": "win",
     "met": "meet", "paid": "pay", "sat": "sit", "stood": "stand",
     "began": "begin", "begun": "begin", "shown": "show", "showed": "show", "drank": "drink", "drunk": "drink",
@@ -349,6 +350,15 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
     british = {}
     for token in tokens:
         if token in FREE or token in names:
+            continue
+
+        # Kelimenin KENDİSİ listelenmiş bir İngiliz yazımıysa, sözlüğe hiç
+        # bakmadan hata sayılıyor. Çünkü türetme eki soyucu yanlış yazımı
+        # gizleyebiliyor: "judgement" → "ment" soyulunca "judge" kalıyor,
+        # `judge` sözlükte olduğu için kelime doğruymuş gibi geçiyordu.
+        # Sözlükte gerçekten öğretilen biçimler (cheque, prise) muaf.
+        if token in BRITISH and token not in levels:
+            british[token] = BRITISH[token]
             continue
 
         forms = candidates(token)

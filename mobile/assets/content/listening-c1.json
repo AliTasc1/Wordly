@@ -1,0 +1,2010 @@
+[
+ {
+  "id": "c1-l-01",
+  "level": "C1",
+  "order": 1,
+  "kind": "listening",
+  "title": "Bağış kabul edilmeli mi",
+  "titleEn": "Should the Museum Take the Money",
+  "minutes": 6,
+  "names": [
+   "Defne",
+   "Murat"
+  ],
+  "speakers": [
+   "Defne",
+   "Murat"
+  ],
+  "lines": [
+   {
+    "who": "Defne",
+    "en": "The board votes on Friday, and I still cannot decide how I will vote.",
+    "tr": "Yönetim kurulu cuma günü oylayacak ve hâlâ nasıl oy vereceğime karar veremiyorum."
+   },
+   {
+    "who": "Murat",
+    "en": "It is two million, which would keep the education program alive for a decade.",
+    "tr": "İki milyon söz konusu; bu, eğitim programını on yıl ayakta tutar."
+   },
+   {
+    "who": "Defne",
+    "en": "And it comes from a company whose record on the environment is indefensible.",
+    "tr": "Ve çevre karnesi savunulamaz olan bir şirketten geliyor."
+   },
+   {
+    "who": "Murat",
+    "en": "Indefensible is a strong word. Their record is bad and improving.",
+    "tr": "Savunulamaz ağır bir söz. Karneleri kötü ama düzeliyor."
+   },
+   {
+    "who": "Defne",
+    "en": "Improving because of regulation they spent nine years fighting in court.",
+    "tr": "Dokuz yıl mahkemede karşı çıktıkları düzenlemeler yüzünden düzeliyor."
+   },
+   {
+    "who": "Murat",
+    "en": "I am not defending them. I am asking what refusing the money actually achieves.",
+    "tr": "Onları savunmuyorum. Parayı reddetmenin gerçekte ne sağladığını soruyorum."
+   },
+   {
+    "who": "Defne",
+    "en": "It states a position, and institutions are partly made of the positions they take.",
+    "tr": "Bir tavır ortaya koyar ve kurumlar kısmen aldıkları tavırlardan oluşur."
+   },
+   {
+    "who": "Murat",
+    "en": "They are also made of what they do, and we would be doing considerably less.",
+    "tr": "Aynı zamanda yaptıklarından da oluşurlar ve biz çok daha azını yapıyor olurduk."
+   },
+   {
+    "who": "Defne",
+    "en": "That is the argument every institution makes before it regrets a name on a wall.",
+    "tr": "Bu, her kurumun duvardaki bir isimden pişman olmadan önce yaptığı savunma."
+   },
+   {
+    "who": "Murat",
+    "en": "Then let us take the money and refuse the name. That is not an unusual arrangement.",
+    "tr": "O hâlde parayı alıp ismi reddedelim. Bu alışılmadık bir düzenleme değil."
+   },
+   {
+    "who": "Defne",
+    "en": "Would they accept it? Recognition is normally the entire point of the gift.",
+    "tr": "Kabul ederler mi? Tanınma genellikle bağışın bütün amacıdır."
+   },
+   {
+    "who": "Murat",
+    "en": "Some would walk away. This one might not, because they want the association quietly.",
+    "tr": "Bazıları çekilir. Bu şirket çekilmeyebilir, çünkü bağı sessizce istiyor."
+   },
+   {
+    "who": "Defne",
+    "en": "Which is arguably worse. Quiet association is exactly how reputations get laundered.",
+    "tr": "Ki bu tartışmalı biçimde daha kötü. İtibarlar tam da sessiz bağlarla aklanır."
+   },
+   {
+    "who": "Murat",
+    "en": "So your objection is not to the money but to the relationship it creates.",
+    "tr": "Yani itirazın paraya değil, yarattığı ilişkiye."
+   },
+   {
+    "who": "Defne",
+    "en": "Yes, and that distinction is the only useful thing either of us has said today.",
+    "tr": "Evet ve bu ayrım bugün ikimizin söylediği tek faydalı şey."
+   },
+   {
+    "who": "Murat",
+    "en": "Then propose a rule rather than a vote. No gift that grants access or influence.",
+    "tr": "O hâlde oy değil, bir kural öner. Erişim ya da nüfuz sağlayan hiçbir bağış olmayacak."
+   },
+   {
+    "who": "Defne",
+    "en": "A rule would survive this donor and the next one, which a vote would not.",
+    "tr": "Bir kural bu bağışçıdan da sonrakinden de sağ çıkar, oy ise çıkmaz."
+   },
+   {
+    "who": "Murat",
+    "en": "Write it tonight. If the board rejects the rule, you have learnt something either way.",
+    "tr": "Bu gece yaz. Kurul kuralı reddederse yine de bir şey öğrenmiş olursun."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "board",
+    "tr": "yönetim kurulu"
+   },
+   {
+    "w": "indefensible",
+    "tr": "savunulamaz"
+   },
+   {
+    "w": "regulation",
+    "tr": "düzenleme, mevzuat"
+   },
+   {
+    "w": "institution",
+    "tr": "kurum"
+   },
+   {
+    "w": "recognition",
+    "tr": "tanınma"
+   },
+   {
+    "w": "laundered",
+    "tr": "aklanmış"
+   },
+   {
+    "w": "donor",
+    "tr": "bağışçı"
+   },
+   {
+    "w": "influence",
+    "tr": "nüfuz, etki"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the size of the gift?",
+    "options": [
+     "Two million",
+     "Ten million",
+     "Nine million",
+     "Half a million"
+    ],
+    "answer": 0,
+    "note": "\"It is two million.\""
+   },
+   {
+    "q": "Why does Murat say the company's record is improving?",
+    "options": [
+     "Because of regulation they fought in court",
+     "Because of falling costs",
+     "Because of new owners",
+     "Because of public pressure"
+    ],
+    "answer": 0,
+    "note": "\"Because of regulation they spent nine years fighting in court.\""
+   },
+   {
+    "q": "What compromise does Murat first suggest?",
+    "options": [
+     "Take half the money",
+     "Ask for a public apology",
+     "Take the money but refuse the name",
+     "Delay the vote"
+    ],
+    "answer": 2,
+    "note": "\"Let us take the money and refuse the name.\""
+   },
+   {
+    "q": "Why does Defne call quiet association worse?",
+    "options": [
+     "It is illegal",
+     "It costs more",
+     "It is how reputations get laundered",
+     "It is harder to explain"
+    ],
+    "answer": 2,
+    "note": "\"Quiet association is exactly how reputations get laundered.\""
+   },
+   {
+    "q": "What do they finally agree to do?",
+    "options": [
+     "Accept the gift",
+     "Refuse the gift",
+     "Propose a general rule instead of a vote",
+     "Resign from the board"
+    ],
+    "answer": 2,
+    "note": "\"Propose a rule rather than a vote.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-02",
+  "level": "C1",
+  "order": 2,
+  "kind": "listening",
+  "title": "Araştırma sonucu tekrarlanamadı",
+  "titleEn": "The Result Would Not Repeat",
+  "minutes": 6,
+  "names": [
+   "Ela",
+   "Sinan"
+  ],
+  "speakers": [
+   "Ela",
+   "Sinan"
+  ],
+  "lines": [
+   {
+    "who": "Sinan",
+    "en": "We ran your experiment four times and the effect disappeared in all four.",
+    "tr": "Deneyinizi dört kez yaptık ve etki dördünde de kayboldu."
+   },
+   {
+    "who": "Ela",
+    "en": "That is not what I hoped to hear, but thank you for telling me directly.",
+    "tr": "Duymayı umduğum bu değildi ama doğrudan söylediğiniz için teşekkürler."
+   },
+   {
+    "who": "Sinan",
+    "en": "We followed the published method exactly, or as exactly as it allows.",
+    "tr": "Yayımlanan yöntemi aynen izledik, en azından izin verdiği ölçüde."
+   },
+   {
+    "who": "Ela",
+    "en": "That qualification is doing a lot of work in your sentence.",
+    "tr": "Bu kayıt, cümlenizde epey yük taşıyor."
+   },
+   {
+    "who": "Sinan",
+    "en": "It is. Three steps are described in terms that permit more than one reading.",
+    "tr": "Öyle. Üç adım, birden fazla okumaya izin veren ifadelerle anlatılmış."
+   },
+   {
+    "who": "Ela",
+    "en": "Then the first question is whether we ran the same experiment at all.",
+    "tr": "O hâlde ilk soru, aynı deneyi yapıp yapmadığımız."
+   },
+   {
+    "who": "Sinan",
+    "en": "I would rather establish that than argue about whose result is correct.",
+    "tr": "Kimin sonucunun doğru olduğunu tartışmaktansa bunu belirlemeyi tercih ederim."
+   },
+   {
+    "who": "Ela",
+    "en": "Send me your recordings and I will send you ours, without editing either.",
+    "tr": "Kayıtlarınızı bana gönderin, ben de bizimkini göndereyim, ikisini de düzenlemeden."
+   },
+   {
+    "who": "Sinan",
+    "en": "Agreed. If the difference is in the preparation, we will see it in an hour.",
+    "tr": "Kabul. Fark hazırlıktaysa bunu bir saatte görürüz."
+   },
+   {
+    "who": "Ela",
+    "en": "And if it is not, I have a paper that ought to be corrected publicly.",
+    "tr": "Değilse, alenen düzeltilmesi gereken bir makalem var demektir."
+   },
+   {
+    "who": "Sinan",
+    "en": "Few people say that sentence before they have to.",
+    "tr": "Pek az kişi bu cümleyi mecbur kalmadan söyler."
+   },
+   {
+    "who": "Ela",
+    "en": "I have watched colleagues defend results for years and lose everything slowly.",
+    "tr": "Meslektaşlarımın yıllarca sonuçlarını savunup yavaşça her şeyi kaybettiğini gördüm."
+   },
+   {
+    "who": "Sinan",
+    "en": "There is also the possibility that both results are real under different conditions.",
+    "tr": "Her iki sonucun farklı koşullarda gerçek olma ihtimali de var."
+   },
+   {
+    "who": "Ela",
+    "en": "That would be the most interesting outcome and the hardest to demonstrate.",
+    "tr": "Bu en ilginç sonuç ve gösterilmesi en zor olanı olurdu."
+   },
+   {
+    "who": "Sinan",
+    "en": "It would also require us to publish together, which some would find strange.",
+    "tr": "Ayrıca birlikte yayın yapmamızı gerektirir ki bazıları bunu garip bulur."
+   },
+   {
+    "who": "Ela",
+    "en": "Strange is preferable to a quarrel conducted through footnotes for five years.",
+    "tr": "Garip olmak, beş yıl dipnotlar üzerinden yürütülen bir kavgaya yeğdir."
+   },
+   {
+    "who": "Sinan",
+    "en": "Then let us write the method properly this time, so nobody repeats this conversation.",
+    "tr": "O hâlde yöntemi bu kez düzgün yazalım ki kimse bu konuşmayı tekrarlamasın."
+   },
+   {
+    "who": "Ela",
+    "en": "That alone would justify the whole miserable month I have just had.",
+    "tr": "Tek başına bu bile geçirdiğim o berbat ayı haklı çıkarırdı."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "experiment",
+    "tr": "deney"
+   },
+   {
+    "w": "qualification",
+    "tr": "çekince, kayıt"
+   },
+   {
+    "w": "preparation",
+    "tr": "hazırlık"
+   },
+   {
+    "w": "colleagues",
+    "tr": "meslektaşlar"
+   },
+   {
+    "w": "demonstrate",
+    "tr": "göstermek, kanıtlamak"
+   },
+   {
+    "w": "footnotes",
+    "tr": "dipnotlar"
+   },
+   {
+    "w": "miserable",
+    "tr": "berbat, sefil"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many times did Sinan run the experiment?",
+    "options": [
+     "Once",
+     "Four",
+     "Twice",
+     "Three"
+    ],
+    "answer": 1,
+    "note": "\"We ran your experiment four times.\""
+   },
+   {
+    "q": "What problem does Sinan find in the published method?",
+    "options": [
+     "It hides the results",
+     "It uses old equipment",
+     "Three steps allow more than one reading",
+     "It is too long"
+    ],
+    "answer": 2,
+    "note": "\"Three steps are described in terms that permit more than one reading.\""
+   },
+   {
+    "q": "What do they agree to exchange?",
+    "options": [
+     "Their unedited recordings",
+     "Their student notes",
+     "Their earlier drafts",
+     "Their funding data"
+    ],
+    "answer": 0,
+    "note": "\"Send me your recordings and I will send you ours.\""
+   },
+   {
+    "q": "What does Ela say she would do if her result is wrong?",
+    "options": [
+     "Correct the paper publicly",
+     "Blame her team",
+     "Repeat it a fifth time",
+     "Withdraw from the field"
+    ],
+    "answer": 0,
+    "note": "\"I have a paper that ought to be corrected publicly.\""
+   },
+   {
+    "q": "What third possibility does Sinan raise?",
+    "options": [
+     "The equipment was broken",
+     "The effect is too small to measure",
+     "Both results are real under different conditions",
+     "Someone changed the data"
+    ],
+    "answer": 2,
+    "note": "\"Both results are real under different conditions.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-03",
+  "level": "C1",
+  "order": 3,
+  "kind": "listening",
+  "title": "Fabrikanın kapanması",
+  "titleEn": "When the Factory Closes",
+  "minutes": 6,
+  "names": [
+   "Hulya",
+   "Ercan"
+  ],
+  "speakers": [
+   "Hulya",
+   "Ercan"
+  ],
+  "lines": [
+   {
+    "who": "Ercan",
+    "en": "The company says the closure is inevitable and the town says it is a choice.",
+    "tr": "Şirket kapanışın kaçınılmaz olduğunu söylüyor, kasaba ise bunun bir tercih olduğunu."
+   },
+   {
+    "who": "Hulya",
+    "en": "Both can be true. It is inevitable given decisions made fifteen years ago.",
+    "tr": "İkisi de doğru olabilir. On beş yıl önceki kararlar göz önüne alınırsa kaçınılmaz."
+   },
+   {
+    "who": "Ercan",
+    "en": "That is little comfort to four hundred families this winter.",
+    "tr": "Bu, dört yüz aileye bu kış pek teselli olmaz."
+   },
+   {
+    "who": "Hulya",
+    "en": "No, but it determines whether we ask for a rescue or for a transition.",
+    "tr": "Hayır ama kurtarma mı yoksa geçiş mi isteyeceğimizi belirler."
+   },
+   {
+    "who": "Ercan",
+    "en": "The council has spent two months asking for a rescue and been refused twice.",
+    "tr": "Meclis iki ay kurtarma istedi ve iki kez reddedildi."
+   },
+   {
+    "who": "Hulya",
+    "en": "Because a rescue preserves a plant that has lost money in nine of ten years.",
+    "tr": "Çünkü kurtarma, on yılın dokuzunda zarar eden bir tesisi ayakta tutuyor."
+   },
+   {
+    "who": "Ercan",
+    "en": "So what does a transition look like when there is nothing to transition to?",
+    "tr": "Peki geçilecek bir şey yokken geçiş neye benzer?"
+   },
+   {
+    "who": "Hulya",
+    "en": "It looks like money for retraining, and honest advice about which trades are dying.",
+    "tr": "Yeniden eğitim için para ve hangi mesleklerin öldüğüne dair dürüst tavsiye gibi."
+   },
+   {
+    "who": "Ercan",
+    "en": "We have run three retraining schemes since I was elected. Two achieved almost nothing.",
+    "tr": "Seçildiğimden beri üç yeniden eğitim programı yürüttük. İkisi neredeyse hiçbir şey başaramadı."
+   },
+   {
+    "who": "Hulya",
+    "en": "What distinguished the third?",
+    "tr": "Üçüncüsünü ayıran neydi?"
+   },
+   {
+    "who": "Ercan",
+    "en": "An employer had already promised to take whoever finished it.",
+    "tr": "Bir işveren, bitiren herkesi işe alacağına dair söz vermişti."
+   },
+   {
+    "who": "Hulya",
+    "en": "Then that is the condition, not the training. Find the employer first.",
+    "tr": "O hâlde koşul eğitim değil bu. Önce işvereni bul."
+   },
+   {
+    "who": "Ercan",
+    "en": "Employers will not commit to a town everyone assumes is finished.",
+    "tr": "İşverenler, herkesin bittiğini varsaydığı bir kasabaya bağlanmaz."
+   },
+   {
+    "who": "Hulya",
+    "en": "Then the first task is changing that assumption, which is slower than any grant.",
+    "tr": "O hâlde ilk iş bu varsayımı değiştirmek ki bu her türlü hibeden yavaştır."
+   },
+   {
+    "who": "Ercan",
+    "en": "I have eleven months before the next election. Slow is politically fatal.",
+    "tr": "Bir sonraki seçime on bir ayım var. Yavaş olmak siyaseten öldürücü."
+   },
+   {
+    "who": "Hulya",
+    "en": "Then say so publicly, rather than promising what nobody could deliver.",
+    "tr": "O hâlde bunu açıkça söyle, kimsenin yerine getiremeyeceği şeyleri vaat etmek yerine."
+   },
+   {
+    "who": "Ercan",
+    "en": "You have an unusual idea of how elections are won.",
+    "tr": "Seçimlerin nasıl kazanıldığına dair alışılmadık bir fikrin var."
+   },
+   {
+    "who": "Hulya",
+    "en": "I have an ordinary idea of how towns are lost.",
+    "tr": "Kasabaların nasıl kaybedildiğine dair sıradan bir fikrim var."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "closure",
+    "tr": "kapanış"
+   },
+   {
+    "w": "inevitable",
+    "tr": "kaçınılmaz"
+   },
+   {
+    "w": "transition",
+    "tr": "geçiş"
+   },
+   {
+    "w": "council",
+    "tr": "belediye meclisi"
+   },
+   {
+    "w": "plant",
+    "tr": "tesis, fabrika"
+   },
+   {
+    "w": "retraining",
+    "tr": "yeniden eğitim"
+   },
+   {
+    "w": "trades",
+    "tr": "meslekler, zanaatlar"
+   },
+   {
+    "w": "grant",
+    "tr": "hibe"
+   },
+   {
+    "w": "fatal",
+    "tr": "öldürücü"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many families are affected?",
+    "options": [
+     "Forty",
+     "Fifteen",
+     "Four hundred",
+     "Four thousand"
+    ],
+    "answer": 2,
+    "note": "\"Four hundred families this winter.\""
+   },
+   {
+    "q": "Why was the rescue refused?",
+    "options": [
+     "The law forbids it",
+     "The plant lost money in nine of ten years",
+     "The council asked too late",
+     "The company had closed already"
+    ],
+    "answer": 1,
+    "note": "\"A plant that has lost money in nine of ten years.\""
+   },
+   {
+    "q": "What made the third retraining scheme work?",
+    "options": [
+     "An employer had promised to hire the graduates",
+     "It was free",
+     "It was run by the company",
+     "It was longer"
+    ],
+    "answer": 0,
+    "note": "\"An employer had already promised to take whoever finished it.\""
+   },
+   {
+    "q": "What does Hulya say the first task is?",
+    "options": [
+     "Changing the assumption that the town is finished",
+     "Buying the factory",
+     "Replacing the council",
+     "Getting a larger grant"
+    ],
+    "answer": 0,
+    "note": "\"The first task is changing that assumption.\""
+   },
+   {
+    "q": "What is Ercan's political difficulty?",
+    "options": [
+     "He has no staff",
+     "He cannot speak publicly",
+     "The council opposes him",
+     "Slow results before an election in eleven months"
+    ],
+    "answer": 3,
+    "note": "\"Slow is politically fatal.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-04",
+  "level": "C1",
+  "order": 4,
+  "kind": "listening",
+  "title": "Yazarla editör",
+  "titleEn": "The Editor's Objection",
+  "minutes": 6,
+  "names": [
+   "Levent",
+   "Asli"
+  ],
+  "speakers": [
+   "Levent",
+   "Asli"
+  ],
+  "lines": [
+   {
+    "who": "Asli",
+    "en": "I have read it twice, and I admire it more than I like it.",
+    "tr": "İki kez okudum ve sevdiğimden çok hayran kaldım."
+   },
+   {
+    "who": "Levent",
+    "en": "That is either a compliment or the beginning of a very long letter.",
+    "tr": "Bu ya bir iltifat ya da çok uzun bir mektubun başlangıcı."
+   },
+   {
+    "who": "Asli",
+    "en": "It is both. The prose is remarkable and the narrator is unbearable.",
+    "tr": "İkisi de. Üslup olağanüstü, anlatıcı ise çekilmez."
+   },
+   {
+    "who": "Levent",
+    "en": "He is meant to be unbearable. That is the entire argument of the novel.",
+    "tr": "Çekilmez olması gerekiyor. Romanın bütün savı bu."
+   },
+   {
+    "who": "Asli",
+    "en": "I understand the intention. I am telling you how it lands over four hundred pages.",
+    "tr": "Niyeti anlıyorum. Size dört yüz sayfa boyunca nasıl karşılandığını söylüyorum."
+   },
+   {
+    "who": "Levent",
+    "en": "Readers who abandon him at page ninety were never going to finish anyway.",
+    "tr": "Doksanıncı sayfada onu bırakan okurlar zaten bitirmeyecekti."
+   },
+   {
+    "who": "Asli",
+    "en": "That is the kind of sentence writers say to avoid a harder question.",
+    "tr": "Bu, yazarların daha zor bir sorudan kaçmak için söylediği türden bir cümle."
+   },
+   {
+    "who": "Levent",
+    "en": "Go on, then. Ask the harder question.",
+    "tr": "Devam et öyleyse. Zor soruyu sor."
+   },
+   {
+    "who": "Asli",
+    "en": "Does the reader ever learn anything the narrator does not already know about himself?",
+    "tr": "Okur, anlatıcının kendisi hakkında zaten bilmediği bir şeyi hiç öğreniyor mu?"
+   },
+   {
+    "who": "Levent",
+    "en": "In the final chapter, when his sister speaks for the first time.",
+    "tr": "Son bölümde, kız kardeşi ilk kez konuştuğunda."
+   },
+   {
+    "who": "Asli",
+    "en": "Four hundred pages is a long wait for a correction that lasts nine.",
+    "tr": "Dokuz sayfa süren bir düzeltme için dört yüz sayfa uzun bir bekleyiş."
+   },
+   {
+    "who": "Levent",
+    "en": "You want her earlier.",
+    "tr": "Onu daha erken istiyorsun."
+   },
+   {
+    "who": "Asli",
+    "en": "I want her present. She can be silent and still be visible to the reader.",
+    "tr": "Onun orada olmasını istiyorum. Susabilir ama yine de okura görünür olabilir."
+   },
+   {
+    "who": "Levent",
+    "en": "If she is visible, his account stops being the only account, and the whole design falls.",
+    "tr": "O görünürse anlatısı tek anlatı olmaktan çıkar ve bütün tasarım çöker."
+   },
+   {
+    "who": "Asli",
+    "en": "Or it becomes a novel rather than an experiment conducted on the reader.",
+    "tr": "Ya da okur üzerinde yürütülen bir deney olmaktan çıkıp romana dönüşür."
+   },
+   {
+    "who": "Levent",
+    "en": "That is a serious accusation delivered in an extremely calm voice.",
+    "tr": "Bu, son derece sakin bir sesle iletilen ciddi bir suçlama."
+   },
+   {
+    "who": "Asli",
+    "en": "I have been practicing it since Tuesday. Try twenty pages and see what happens.",
+    "tr": "Salıdan beri prova ediyorum. Yirmi sayfa dene ve ne olacağını gör."
+   },
+   {
+    "who": "Levent",
+    "en": "I will try ten, and I will resent every one of them until I do not.",
+    "tr": "On deneyeceğim ve vazgeçene kadar her birine içerleyeceğim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "prose",
+    "tr": "düzyazı, üslup"
+   },
+   {
+    "w": "narrator",
+    "tr": "anlatıcı"
+   },
+   {
+    "w": "unbearable",
+    "tr": "çekilmez"
+   },
+   {
+    "w": "novel",
+    "tr": "roman"
+   },
+   {
+    "w": "abandon",
+    "tr": "terk etmek, bırakmak"
+   },
+   {
+    "w": "account",
+    "tr": "anlatı, aktarım"
+   },
+   {
+    "w": "accusation",
+    "tr": "suçlama"
+   },
+   {
+    "w": "resent",
+    "tr": "içerlemek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Asli's opinion of the book?",
+    "options": [
+     "She admires it more than she likes it",
+     "She dislikes the writing",
+     "She loves it completely",
+     "She thinks it is too short"
+    ],
+    "answer": 0,
+    "note": "\"I admire it more than I like it.\""
+   },
+   {
+    "q": "What is her main objection?",
+    "options": [
+     "The narrator is unbearable for four hundred pages",
+     "There are too many characters",
+     "The plot is confusing",
+     "The ending is happy"
+    ],
+    "answer": 0,
+    "note": "\"The narrator is unbearable.\""
+   },
+   {
+    "q": "What is the harder question she asks?",
+    "options": [
+     "Whether the style is original",
+     "Whether the book will sell",
+     "Whether the sister is real",
+     "Whether the reader learns anything the narrator does not know"
+    ],
+    "answer": 3,
+    "note": "\"Does the reader ever learn anything the narrator does not already know?\""
+   },
+   {
+    "q": "What does Asli want for the sister?",
+    "options": [
+     "To speak at the start",
+     "To be visible earlier, even in silence",
+     "To be removed",
+     "To have her own chapter"
+    ],
+    "answer": 1,
+    "note": "\"She can be silent and still be visible.\""
+   },
+   {
+    "q": "What does Levent finally agree to?",
+    "options": [
+     "To refuse the changes",
+     "To add a second narrator",
+     "To rewrite the ending",
+     "To try ten pages"
+    ],
+    "answer": 3,
+    "note": "\"I will try ten.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-05",
+  "level": "C1",
+  "order": 5,
+  "kind": "listening",
+  "title": "Algoritma neyi ölçüyor",
+  "titleEn": "What the Model Is Measuring",
+  "minutes": 6,
+  "names": [
+   "Ozan",
+   "Nese"
+  ],
+  "speakers": [
+   "Ozan",
+   "Nese"
+  ],
+  "lines": [
+   {
+    "who": "Nese",
+    "en": "Your model is accurate, and I am not convinced that is the relevant question.",
+    "tr": "Modeliniz isabetli ve bunun asıl soru olduğuna ikna değilim."
+   },
+   {
+    "who": "Ozan",
+    "en": "Ninety-one per cent on data it has never seen. What else would you measure?",
+    "tr": "Hiç görmediği veride yüzde doksan bir. Başka neyi ölçerdiniz?"
+   },
+   {
+    "who": "Nese",
+    "en": "What it is accurate about. It predicts who was hired, not who could do the job.",
+    "tr": "Neyde isabetli olduğunu. Kimin işe alındığını tahmin ediyor, işi kimin yapabileceğini değil."
+   },
+   {
+    "who": "Ozan",
+    "en": "Those overlap considerably in a well-run company.",
+    "tr": "İyi yönetilen bir şirkette bunlar büyük ölçüde örtüşür."
+   },
+   {
+    "who": "Nese",
+    "en": "They overlap where the past was fair. Elsewhere the model repeats the unfairness confidently.",
+    "tr": "Geçmişin adil olduğu yerde örtüşürler. Diğer yerlerde model adaletsizliği kendinden emin biçimde tekrarlar."
+   },
+   {
+    "who": "Ozan",
+    "en": "We removed names, ages and addresses precisely to prevent that.",
+    "tr": "Tam da bunu önlemek için isimleri, yaşları ve adresleri çıkardık."
+   },
+   {
+    "who": "Nese",
+    "en": "And the model reconstructed most of it from the schools and the gaps in employment.",
+    "tr": "Model de bunun çoğunu okullardan ve çalışma geçmişindeki boşluklardan yeniden kurdu."
+   },
+   {
+    "who": "Ozan",
+    "en": "You cannot know that from the outside.",
+    "tr": "Bunu dışarıdan bilemezsiniz."
+   },
+   {
+    "who": "Nese",
+    "en": "I can test it. Give me the model and I will tell you what it has learnt to notice.",
+    "tr": "Test edebilirim. Modeli bana verin, neyi fark etmeyi öğrendiğini size söyleyeyim."
+   },
+   {
+    "who": "Ozan",
+    "en": "That test would take three weeks we do not have before the launch.",
+    "tr": "O test, lansmandan önce sahip olmadığımız üç haftayı alır."
+   },
+   {
+    "who": "Nese",
+    "en": "Then you have chosen the launch date over knowing what you are selling.",
+    "tr": "O hâlde ne sattığınızı bilmek yerine lansman tarihini seçmişsiniz."
+   },
+   {
+    "who": "Ozan",
+    "en": "That is unfair. I raised this in March and was told to keep building.",
+    "tr": "Bu haksızlık. Bunu martta dile getirdim ve devam etmem söylendi."
+   },
+   {
+    "who": "Nese",
+    "en": "Then we are arguing with the wrong person, and I would rather help you than win.",
+    "tr": "O hâlde yanlış kişiyle tartışıyoruz ve kazanmaktansa size yardım etmeyi tercih ederim."
+   },
+   {
+    "who": "Ozan",
+    "en": "What would you say to them that I have not already said twice?",
+    "tr": "Benim iki kez söylemediğim neyi söylerdiniz onlara?"
+   },
+   {
+    "who": "Nese",
+    "en": "That the legal exposure of an unexamined model exceeds the cost of examining it.",
+    "tr": "İncelenmemiş bir modelin hukuki riskinin, onu incelemenin maliyetini aştığını."
+   },
+   {
+    "who": "Ozan",
+    "en": "That is the argument they will actually hear, which says something depressing.",
+    "tr": "Gerçekten duyacakları sav bu ki bu da iç karartıcı bir şey söylüyor."
+   },
+   {
+    "who": "Nese",
+    "en": "It says they respond to consequences. Most institutions do, eventually.",
+    "tr": "Sonuçlara tepki verdiklerini söylüyor. Çoğu kurum eninde sonunda öyle yapar."
+   },
+   {
+    "who": "Ozan",
+    "en": "Write me two paragraphs and I will put them in front of the board on Monday.",
+    "tr": "Bana iki paragraf yazın, pazartesi kurulun önüne koyayım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "model",
+    "tr": "model"
+   },
+   {
+    "w": "accurate",
+    "tr": "isabetli, doğru"
+   },
+   {
+    "w": "predicts",
+    "tr": "öngörür"
+   },
+   {
+    "w": "overlap",
+    "tr": "örtüşmek"
+   },
+   {
+    "w": "reconstructed",
+    "tr": "yeniden kurdu"
+   },
+   {
+    "w": "exposure",
+    "tr": "maruziyet, risk"
+   },
+   {
+    "w": "unexamined",
+    "tr": "incelenmemiş"
+   },
+   {
+    "w": "consequences",
+    "tr": "sonuçlar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How accurate is the model?",
+    "options": [
+     "Seventy per cent",
+     "Ninety-one per cent",
+     "Ninety-nine per cent",
+     "Fifty per cent"
+    ],
+    "answer": 1,
+    "note": "\"Ninety-one per cent on data it has never seen.\""
+   },
+   {
+    "q": "What does Nese say the model actually predicts?",
+    "options": [
+     "Who applied first",
+     "Who will earn most",
+     "Who will stay longest",
+     "Who was hired, not who could do the job"
+    ],
+    "answer": 3,
+    "note": "\"It predicts who was hired, not who could do the job.\""
+   },
+   {
+    "q": "How did the model recover the removed information?",
+    "options": [
+     "From schools and employment gaps",
+     "From photographs",
+     "From handwriting",
+     "From the application dates"
+    ],
+    "answer": 0,
+    "note": "\"From the schools and the gaps in employment.\""
+   },
+   {
+    "q": "Why does Ozan refuse the test?",
+    "options": [
+     "It costs too much",
+     "It is not allowed",
+     "It would take three weeks before the launch",
+     "He does not believe in it"
+    ],
+    "answer": 2,
+    "note": "\"That test would take three weeks we do not have.\""
+   },
+   {
+    "q": "Which argument does Nese say the company will hear?",
+    "options": [
+     "The legal exposure exceeds the cost of examining the model",
+     "It is morally wrong",
+     "Customers will complain",
+     "The model is inaccurate"
+    ],
+    "answer": 0,
+    "note": "\"The legal exposure of an unexamined model exceeds the cost of examining it.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-06",
+  "level": "C1",
+  "order": 6,
+  "kind": "listening",
+  "title": "Mirasın paylaşımı",
+  "titleEn": "Dividing What Was Left",
+  "minutes": 6,
+  "names": [
+   "Gunes",
+   "Baris"
+  ],
+  "speakers": [
+   "Gunes",
+   "Baris"
+  ],
+  "lines": [
+   {
+    "who": "Baris",
+    "en": "The house is worth more than everything else together, which is the whole difficulty.",
+    "tr": "Ev, diğer her şeyin toplamından daha değerli; bütün zorluk da bu."
+   },
+   {
+    "who": "Gunes",
+    "en": "It is not the whole difficulty. The difficulty is that you lived in it for eleven years.",
+    "tr": "Bütün zorluk bu değil. Zorluk, senin orada on bir yıl yaşamış olman."
+   },
+   {
+    "who": "Baris",
+    "en": "While looking after her, which nobody counted at the time and everybody counts now.",
+    "tr": "Ona bakarken ki bunu o zaman kimse saymıyordu, şimdi herkes sayıyor."
+   },
+   {
+    "who": "Gunes",
+    "en": "I am counting it. I am also counting that I paid rent elsewhere for those same years.",
+    "tr": "Ben sayıyorum. Aynı yıllarda başka yerde kira ödediğimi de sayıyorum."
+   },
+   {
+    "who": "Baris",
+    "en": "So we each have a claim that the other finds reasonable and inconvenient.",
+    "tr": "Yani her birimizin, diğerinin makul ama işine gelmez bulduğu bir hakkı var."
+   },
+   {
+    "who": "Gunes",
+    "en": "That is a fair description, and it is the first one either of us has offered.",
+    "tr": "Bu adil bir tanım ve ikimizin sunduğu ilk adil tanım."
+   },
+   {
+    "who": "Baris",
+    "en": "The lawyer says we could sell and divide, which is clean and leaves nobody satisfied.",
+    "tr": "Avukat satıp bölüşebileceğimizi söylüyor; temiz ama kimseyi memnun etmiyor."
+   },
+   {
+    "who": "Gunes",
+    "en": "Clean solutions are what people choose when they have stopped speaking to each other.",
+    "tr": "Temiz çözümler, insanlar birbiriyle konuşmayı bıraktığında seçtikleri şeylerdir."
+   },
+   {
+    "who": "Baris",
+    "en": "Then propose something that requires us to keep speaking.",
+    "tr": "O hâlde konuşmayı sürdürmemizi gerektiren bir şey öner."
+   },
+   {
+    "who": "Gunes",
+    "en": "You buy my share over ten years at a price we agree with an outside valuer.",
+    "tr": "Payımı, dışarıdan bir değerleme uzmanıyla anlaştığımız fiyattan on yılda satın al."
+   },
+   {
+    "who": "Baris",
+    "en": "Ten years of payments is ten years of arguments about whether a payment was late.",
+    "tr": "On yıllık ödeme, bir ödemenin geç olup olmadığına dair on yıllık tartışma demek."
+   },
+   {
+    "who": "Gunes",
+    "en": "Only if we do it informally. Put it in a proper agreement and the arguments have an answer.",
+    "tr": "Sadece gayriresmî yaparsak. Düzgün bir sözleşmeye koy, tartışmaların bir cevabı olsun."
+   },
+   {
+    "who": "Baris",
+    "en": "I did not expect you to be the one arguing for paperwork.",
+    "tr": "Evrak işini savunanın sen olmasını beklemezdim."
+   },
+   {
+    "who": "Gunes",
+    "en": "Paperwork is what protects people who want to remain related afterwards.",
+    "tr": "Evrak işi, sonrasında akraba kalmak isteyenleri koruyan şeydir."
+   },
+   {
+    "who": "Baris",
+    "en": "Would you take a lower price to make the payments manageable?",
+    "tr": "Ödemeleri sürdürülebilir kılmak için daha düşük bir fiyata razı olur musun?"
+   },
+   {
+    "who": "Gunes",
+    "en": "Yes, and I would like that recorded as a decision rather than discovered as a favor.",
+    "tr": "Evet ve bunun bir lütuf olarak keşfedilmesindense karar olarak kayda geçmesini isterim."
+   },
+   {
+    "who": "Baris",
+    "en": "Then we should write it down before either of us has time to feel wronged.",
+    "tr": "O hâlde ikimiz de haksızlığa uğradığını hissetmeye vakit bulmadan yazalım."
+   },
+   {
+    "who": "Gunes",
+    "en": "She would have hated this conversation and been relieved that we had it.",
+    "tr": "Bu konuşmadan nefret ederdi ama yaptığımıza sevinirdi."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "claim",
+    "tr": "hak iddiası"
+   },
+   {
+    "w": "inconvenient",
+    "tr": "işine gelmez, zahmetli"
+   },
+   {
+    "w": "lawyer",
+    "tr": "avukat"
+   },
+   {
+    "w": "share",
+    "tr": "pay, hisse"
+   },
+   {
+    "w": "valuer",
+    "tr": "değerleme uzmanı"
+   },
+   {
+    "w": "informally",
+    "tr": "gayriresmî biçimde"
+   },
+   {
+    "w": "paperwork",
+    "tr": "evrak işi"
+   },
+   {
+    "w": "wronged",
+    "tr": "haksızlığa uğramış"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long did Baris live in the house?",
+    "options": [
+     "Two years",
+     "Ten years",
+     "Twenty years",
+     "Eleven years"
+    ],
+    "answer": 3,
+    "note": "\"You lived in it for eleven years.\""
+   },
+   {
+    "q": "What does Gunes count on her own side?",
+    "options": [
+     "Paying rent elsewhere for the same years",
+     "Finding the buyer",
+     "Paying the medical bills",
+     "Repairing the house"
+    ],
+    "answer": 0,
+    "note": "\"I paid rent elsewhere for those same years.\""
+   },
+   {
+    "q": "Why does Gunes dislike selling and dividing?",
+    "options": [
+     "It is against the will",
+     "It would cost too much in tax",
+     "It is what people choose when they stop speaking",
+     "It takes too long"
+    ],
+    "answer": 2,
+    "note": "\"Clean solutions are what people choose when they have stopped speaking.\""
+   },
+   {
+    "q": "What does she propose instead?",
+    "options": [
+     "They rent the house out",
+     "They give it away",
+     "They live there together",
+     "Baris buys her share over ten years"
+    ],
+    "answer": 3,
+    "note": "\"You buy my share over ten years.\""
+   },
+   {
+    "q": "Why does Gunes want a written agreement?",
+    "options": [
+     "The lawyer insists on it",
+     "It is required by law",
+     "It protects people who want to stay related",
+     "It saves money"
+    ],
+    "answer": 2,
+    "note": "\"Paperwork is what protects people who want to remain related afterwards.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-07",
+  "level": "C1",
+  "order": 7,
+  "kind": "listening",
+  "title": "Sürdürülebilirlik raporu",
+  "titleEn": "Reading the Green Report",
+  "minutes": 6,
+  "names": [
+   "Ipek",
+   "Tarik"
+  ],
+  "speakers": [
+   "Ipek",
+   "Tarik"
+  ],
+  "lines": [
+   {
+    "who": "Ipek",
+    "en": "The report claims a forty per cent reduction, and the number is technically correct.",
+    "tr": "Rapor yüzde kırklık bir azalma iddia ediyor ve rakam teknik olarak doğru."
+   },
+   {
+    "who": "Tarik",
+    "en": "Technically correct is the phrase people use when they are about to explain a trick.",
+    "tr": "\"Teknik olarak doğru\", bir numarayı açıklamak üzere olanların kullandığı ifadedir."
+   },
+   {
+    "who": "Ipek",
+    "en": "They sold the two dirtiest factories in March and counted the sale as a reduction.",
+    "tr": "En kirli iki fabrikayı martta sattılar ve satışı azalma olarak saydılar."
+   },
+   {
+    "who": "Tarik",
+    "en": "The emissions did not stop. They simply moved onto somebody else's accounts.",
+    "tr": "Salımlar durmadı. Sadece başkasının hanesine geçti."
+   },
+   {
+    "who": "Ipek",
+    "en": "Which the rules permit, and which every experienced reader already assumes.",
+    "tr": "Kuralların izin verdiği ve deneyimli her okurun zaten varsaydığı bir şey."
+   },
+   {
+    "who": "Tarik",
+    "en": "Then the scandal is the rules, not the company, and that is a duller story.",
+    "tr": "O hâlde skandal kurallar, şirket değil ve bu daha sönük bir haber."
+   },
+   {
+    "who": "Ipek",
+    "en": "Duller and more useful. One company changes nothing. A rule changes four hundred.",
+    "tr": "Daha sönük ve daha faydalı. Bir şirket hiçbir şeyi değiştirmez. Bir kural dört yüzünü değiştirir."
+   },
+   {
+    "who": "Tarik",
+    "en": "Our readers will not finish an article about accounting standards.",
+    "tr": "Okurlarımız muhasebe standartları hakkında bir yazıyı bitirmez."
+   },
+   {
+    "who": "Ipek",
+    "en": "They will if it begins with the factories and only then explains why nobody lied.",
+    "tr": "Fabrikalarla başlayıp ancak ondan sonra kimsenin yalan söylemediğini açıklarsa bitirirler."
+   },
+   {
+    "who": "Tarik",
+    "en": "That is a better structure than the one I had in mind.",
+    "tr": "Bu, aklımdakinden daha iyi bir kurgu."
+   },
+   {
+    "who": "Ipek",
+    "en": "It also protects us. We are not accusing anyone of dishonesty we cannot prove.",
+    "tr": "Ayrıca bizi korur. Kanıtlayamayacağımız bir sahtekârlıkla kimseyi suçlamıyoruz."
+   },
+   {
+    "who": "Tarik",
+    "en": "Will they comment, or will we get four paragraphs written by a lawyer?",
+    "tr": "Yorum yaparlar mı, yoksa avukatın yazdığı dört paragraf mı alırız?"
+   },
+   {
+    "who": "Ipek",
+    "en": "The second, but the four paragraphs are themselves worth printing in full.",
+    "tr": "İkincisi ama o dört paragrafın kendisi tam olarak basılmaya değer."
+   },
+   {
+    "who": "Tarik",
+    "en": "Printed in full, they usually do more damage than anything we could write.",
+    "tr": "Tam basıldığında genellikle bizim yazabileceğimizden çok zarar verirler."
+   },
+   {
+    "who": "Ipek",
+    "en": "One more thing. Their new targets are measured from a base year they chose last month.",
+    "tr": "Bir şey daha. Yeni hedefleri, geçen ay seçtikleri bir temel yıla göre ölçülüyor."
+   },
+   {
+    "who": "Tarik",
+    "en": "Which happens to be their worst year on record.",
+    "tr": "Ki tesadüfen kayıtlardaki en kötü yılları."
+   },
+   {
+    "who": "Ipek",
+    "en": "It is not a coincidence, but I cannot write that sentence without a source.",
+    "tr": "Tesadüf değil ama bu cümleyi kaynaksız yazamam."
+   },
+   {
+    "who": "Tarik",
+    "en": "Then put the two years side by side and let the reader write it for you.",
+    "tr": "O hâlde iki yılı yan yana koy, cümleyi okur senin yerine yazsın."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "reduction",
+    "tr": "azalma"
+   },
+   {
+    "w": "emissions",
+    "tr": "salımlar"
+   },
+   {
+    "w": "scandal",
+    "tr": "skandal"
+   },
+   {
+    "w": "accounting standards",
+    "tr": "muhasebe standartları"
+   },
+   {
+    "w": "dishonesty",
+    "tr": "sahtekârlık"
+   },
+   {
+    "w": "targets",
+    "tr": "hedefler"
+   },
+   {
+    "w": "base year",
+    "tr": "temel yıl"
+   },
+   {
+    "w": "coincidence",
+    "tr": "tesadüf"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How did the company achieve the reduction?",
+    "options": [
+     "By closing two factories",
+     "By changing fuel",
+     "By cutting production",
+     "By selling its two dirtiest factories"
+    ],
+    "answer": 3,
+    "note": "\"They sold the two dirtiest factories in March.\""
+   },
+   {
+    "q": "What does Ipek say is the real scandal?",
+    "options": [
+     "The company",
+     "The rules",
+     "The auditors",
+     "The government"
+    ],
+    "answer": 1,
+    "note": "\"The scandal is the rules, not the company.\""
+   },
+   {
+    "q": "How does she suggest structuring the article?",
+    "options": [
+     "Begin with the lawyer's reply",
+     "Begin with the factories, then explain the rules",
+     "Begin with the rules",
+     "Begin with the targets"
+    ],
+    "answer": 1,
+    "note": "\"It begins with the factories and only then explains why nobody lied.\""
+   },
+   {
+    "q": "What is wrong with the new targets?",
+    "options": [
+     "They are too easy to check",
+     "They have no deadline",
+     "They exclude the factories",
+     "The base year is their worst on record"
+    ],
+    "answer": 3,
+    "note": "\"Their worst year on record.\""
+   },
+   {
+    "q": "What does Tarik suggest about the base year?",
+    "options": [
+     "Wait for a source",
+     "Show both years and let the reader conclude",
+     "Leave it out",
+     "Ask the company directly"
+    ],
+    "answer": 1,
+    "note": "\"Put the two years side by side.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-08",
+  "level": "C1",
+  "order": 8,
+  "kind": "listening",
+  "title": "Bir ekip yöneticisiyle konuşma",
+  "titleEn": "The Manager Nobody Wants",
+  "minutes": 6,
+  "names": [
+   "Cem",
+   "Aylin"
+  ],
+  "speakers": [
+   "Cem",
+   "Aylin"
+  ],
+  "lines": [
+   {
+    "who": "Aylin",
+    "en": "Four people have asked to move teams this quarter, and all four worked for you.",
+    "tr": "Bu çeyrekte dört kişi ekip değiştirmek istedi ve dördü de seninle çalışıyordu."
+   },
+   {
+    "who": "Cem",
+    "en": "I assume you are not here to tell me it is a coincidence.",
+    "tr": "Sanırım bunun tesadüf olduğunu söylemeye gelmedin."
+   },
+   {
+    "who": "Aylin",
+    "en": "I am here to find out what you already know and have not told anyone.",
+    "tr": "Zaten bildiğin ama kimseye söylemediğin şeyi öğrenmeye geldim."
+   },
+   {
+    "who": "Cem",
+    "en": "I know that I took a team that was behind and made it deliver on time.",
+    "tr": "Geride kalmış bir ekibi alıp zamanında teslim ettirdiğimi biliyorum."
+   },
+   {
+    "who": "Aylin",
+    "en": "You did. The delivery is not in question. The cost of it is.",
+    "tr": "Ettirdin. Teslimat tartışma konusu değil. Bedeli konusu."
+   },
+   {
+    "who": "Cem",
+    "en": "Then say the cost plainly rather than circling it politely.",
+    "tr": "O hâlde bedeli kibarca dolanmak yerine açıkça söyle."
+   },
+   {
+    "who": "Aylin",
+    "en": "Three of the four used the same word about you, without speaking to each other.",
+    "tr": "Dördün üçü, birbirleriyle konuşmadan senin için aynı kelimeyi kullandı."
+   },
+   {
+    "who": "Cem",
+    "en": "Which word?",
+    "tr": "Hangi kelime?"
+   },
+   {
+    "who": "Aylin",
+    "en": "Unpredictable. Not harsh, not unfair. Unpredictable.",
+    "tr": "Öngörülemez. Sert değil, haksız değil. Öngörülemez."
+   },
+   {
+    "who": "Cem",
+    "en": "That is worse than harsh, because I cannot correct it by being nicer.",
+    "tr": "Bu sertten kötü, çünkü daha kibar olarak düzeltemem."
+   },
+   {
+    "who": "Aylin",
+    "en": "No. You correct it by deciding once and not revisiting the decision at midnight.",
+    "tr": "Hayır. Bir kez karar verip gece yarısı o kararı yeniden açmayarak düzeltirsin."
+   },
+   {
+    "who": "Cem",
+    "en": "I revisit decisions because new information arrives and I would rather be right than consistent.",
+    "tr": "Kararları yeniden açıyorum çünkü yeni bilgi geliyor ve tutarlı olmaktansa haklı olmayı yeğlerim."
+   },
+   {
+    "who": "Aylin",
+    "en": "Your team cannot tell the difference between new information and a change of mood.",
+    "tr": "Ekibin yeni bilgiyle ruh hâli değişikliğini ayırt edemiyor."
+   },
+   {
+    "who": "Cem",
+    "en": "Then I should be explaining the reason every time, not only the new instruction.",
+    "tr": "O hâlde her seferinde yalnızca yeni talimatı değil, gerekçeyi de açıklamalıyım."
+   },
+   {
+    "who": "Aylin",
+    "en": "That is the whole conversation, and you arrived at it faster than I expected.",
+    "tr": "Bütün konuşma bundan ibaret ve buna beklediğimden hızlı vardın."
+   },
+   {
+    "who": "Cem",
+    "en": "Because I have heard a version of it before and ignored it.",
+    "tr": "Çünkü bunun bir benzerini daha önce duydum ve kulak asmadım."
+   },
+   {
+    "who": "Aylin",
+    "en": "I would like you to keep the team, and I am not certain the team would agree.",
+    "tr": "Ekibi sende tutmak isterim ama ekibin aynı fikirde olduğundan emin değilim."
+   },
+   {
+    "who": "Cem",
+    "en": "Then ask them in eight weeks, and tell me now exactly what you will ask.",
+    "tr": "O hâlde sekiz hafta sonra onlara sor ve ne soracağını bana şimdi tam olarak söyle."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "quarter",
+    "tr": "çeyrek (yıl)"
+   },
+   {
+    "w": "coincidence",
+    "tr": "tesadüf"
+   },
+   {
+    "w": "delivery",
+    "tr": "teslimat"
+   },
+   {
+    "w": "harsh",
+    "tr": "sert, haşin"
+   },
+   {
+    "w": "unpredictable",
+    "tr": "öngörülemez"
+   },
+   {
+    "w": "revisit",
+    "tr": "yeniden ele almak"
+   },
+   {
+    "w": "consistent",
+    "tr": "tutarlı"
+   },
+   {
+    "w": "instruction",
+    "tr": "talimat"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many people asked to move teams?",
+    "options": [
+     "Four",
+     "Two",
+     "Eight",
+     "Three"
+    ],
+    "answer": 0,
+    "note": "\"Four people have asked to move teams.\""
+   },
+   {
+    "q": "What does Aylin say is not in question?",
+    "options": [
+     "The cost",
+     "The delivery",
+     "The deadline",
+     "His honesty"
+    ],
+    "answer": 1,
+    "note": "\"The delivery is not in question.\""
+   },
+   {
+    "q": "Which word did three of them use?",
+    "options": [
+     "Unfair",
+     "Harsh",
+     "Unpredictable",
+     "Distant"
+    ],
+    "answer": 2,
+    "note": "\"Unpredictable. Not harsh, not unfair.\""
+   },
+   {
+    "q": "Why does Cem say it is worse than harsh?",
+    "options": [
+     "It is public",
+     "He cannot correct it by being nicer",
+     "It is untrue",
+     "It cannot be measured"
+    ],
+    "answer": 1,
+    "note": "\"I cannot correct it by being nicer.\""
+   },
+   {
+    "q": "What does Cem conclude he should do?",
+    "options": [
+     "Explain the reason, not only the instruction",
+     "Stop changing decisions",
+     "Meet the team weekly",
+     "Ask for a new team"
+    ],
+    "answer": 0,
+    "note": "\"I should be explaining the reason every time.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-09",
+  "level": "C1",
+  "order": 9,
+  "kind": "listening",
+  "title": "Kentsel dönüşüm tartışması",
+  "titleEn": "Who the New Housing Is For",
+  "minutes": 6,
+  "names": [
+   "Yasemin",
+   "Kerem"
+  ],
+  "speakers": [
+   "Yasemin",
+   "Kerem"
+  ],
+  "lines": [
+   {
+    "who": "Kerem",
+    "en": "Two thousand new homes in a city that is short of exactly that number.",
+    "tr": "Tam da o kadar konut açığı olan bir şehirde iki bin yeni konut."
+   },
+   {
+    "who": "Yasemin",
+    "en": "Short of two thousand homes that people here can pay for, which is a different number.",
+    "tr": "Buradakilerin ödeyebileceği iki bin konut açığı var ki bu farklı bir rakam."
+   },
+   {
+    "who": "Kerem",
+    "en": "Building anything reduces pressure. Even expensive homes take buyers out of the cheaper market.",
+    "tr": "Ne yapılırsa yapılsın baskıyı azaltır. Pahalı konutlar bile ucuz piyasadan alıcı çeker."
+   },
+   {
+    "who": "Yasemin",
+    "en": "That works where the buyers already live in the city. Half of these will not.",
+    "tr": "Bu, alıcılar zaten şehirde yaşıyorsa işler. Bunların yarısı yaşamayacak."
+   },
+   {
+    "who": "Kerem",
+    "en": "You are assuming a figure that nobody has actually established.",
+    "tr": "Kimsenin gerçekten tespit etmediği bir oranı varsayıyorsun."
+   },
+   {
+    "who": "Yasemin",
+    "en": "I am using the figure from the last two schemes, which is the best evidence available.",
+    "tr": "Son iki projedeki oranı kullanıyorum ki elde bulunan en iyi kanıt bu."
+   },
+   {
+    "who": "Kerem",
+    "en": "Those were on the waterfront. This site is next to a road and a hospital.",
+    "tr": "Onlar sahildeydi. Bu arsa bir yolun ve hastanenin yanında."
+   },
+   {
+    "who": "Yasemin",
+    "en": "That is a genuinely good point, and it changes my estimate rather than my objection.",
+    "tr": "Bu gerçekten iyi bir nokta ve itirazımı değil tahminimi değiştiriyor."
+   },
+   {
+    "who": "Kerem",
+    "en": "What would satisfy the objection?",
+    "tr": "İtirazı ne giderir?"
+   },
+   {
+    "who": "Yasemin",
+    "en": "A fixed proportion sold at a controlled price, written into the permission itself.",
+    "tr": "Sabit bir oranın denetimli fiyattan satılması, üstelik iznin içine yazılmış olarak."
+   },
+   {
+    "who": "Kerem",
+    "en": "Developers will say the scheme becomes unviable and walk away, as they did in the east.",
+    "tr": "Müteahhitler projenin yürümez hâle geldiğini söyleyip çekilir, doğuda yaptıkları gibi."
+   },
+   {
+    "who": "Yasemin",
+    "en": "Two of them said that and one of them built it anyway at the same proportion.",
+    "tr": "İkisi bunu söyledi, biri yine de aynı oranla inşa etti."
+   },
+   {
+    "who": "Kerem",
+    "en": "So your position is that the threat is usually a negotiating position.",
+    "tr": "Yani tavrın, bu tehdidin genellikle bir pazarlık tutumu olduğu."
+   },
+   {
+    "who": "Yasemin",
+    "en": "My position is that we never find out, because we agree before anybody tests it.",
+    "tr": "Tavrım, bunu hiç öğrenemediğimiz, çünkü kimse test etmeden kabul ediyoruz."
+   },
+   {
+    "who": "Kerem",
+    "en": "If they walk away, the site stays empty for another decade and I get the blame.",
+    "tr": "Çekilirlerse arsa bir on yıl daha boş kalır ve suç bana yüklenir."
+   },
+   {
+    "who": "Yasemin",
+    "en": "You will get the blame either way. Choose which version of it you can defend.",
+    "tr": "Her hâlükârda suç sana yüklenecek. Hangisini savunabileceğini seç."
+   },
+   {
+    "who": "Kerem",
+    "en": "That is unhelpfully accurate.",
+    "tr": "Bu, işe yaramaz biçimde isabetli."
+   },
+   {
+    "who": "Yasemin",
+    "en": "Ask for thirty per cent and settle at twenty. Nobody has ever opened at their real number.",
+    "tr": "Yüzde otuz iste, yirmide anlaş. Kimse gerçek rakamıyla açılmamıştır."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "pressure",
+    "tr": "baskı"
+   },
+   {
+    "w": "scheme",
+    "tr": "proje, plan"
+   },
+   {
+    "w": "waterfront",
+    "tr": "sahil şeridi"
+   },
+   {
+    "w": "estimate",
+    "tr": "tahmin"
+   },
+   {
+    "w": "proportion",
+    "tr": "oran"
+   },
+   {
+    "w": "permission",
+    "tr": "izin, ruhsat"
+   },
+   {
+    "w": "developers",
+    "tr": "müteahhitler"
+   },
+   {
+    "w": "unviable",
+    "tr": "yürütülemez"
+   },
+   {
+    "w": "negotiating",
+    "tr": "pazarlık eden"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many new homes are planned?",
+    "options": [
+     "Two thousand",
+     "One thousand",
+     "Twenty thousand",
+     "Two hundred"
+    ],
+    "answer": 0,
+    "note": "\"Two thousand new homes.\""
+   },
+   {
+    "q": "What is Yasemin's correction to the shortage figure?",
+    "options": [
+     "Homes near the hospital",
+     "Homes local people can pay for",
+     "Homes for rent only",
+     "Homes with gardens"
+    ],
+    "answer": 1,
+    "note": "\"Homes that people here can pay for.\""
+   },
+   {
+    "q": "Why does Kerem question her estimate?",
+    "options": [
+     "The earlier schemes were on the waterfront",
+     "The figure is out of date",
+     "Nobody kept records",
+     "She used the wrong city"
+    ],
+    "answer": 0,
+    "note": "\"Those were on the waterfront.\""
+   },
+   {
+    "q": "What does Yasemin want written into the permission?",
+    "options": [
+     "A fixed proportion at a controlled price",
+     "A ban on second homes",
+     "A limit on the height",
+     "A tax on the developer"
+    ],
+    "answer": 0,
+    "note": "\"A fixed proportion sold at a controlled price.\""
+   },
+   {
+    "q": "What is her final advice?",
+    "options": [
+     "Refuse the scheme",
+     "Ask for thirty per cent and settle at twenty",
+     "Wait for a better developer",
+     "Accept whatever is offered"
+    ],
+    "answer": 1,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "c1-l-10",
+  "level": "C1",
+  "order": 10,
+  "kind": "listening",
+  "title": "Bir sergi üzerine",
+  "titleEn": "The Photographs Nobody Agreed On",
+  "minutes": 6,
+  "names": [
+   "Dilara",
+   "Ahmet"
+  ],
+  "speakers": [
+   "Dilara",
+   "Ahmet"
+  ],
+  "lines": [
+   {
+    "who": "Ahmet",
+    "en": "You have hung the hardest photograph in the show where nobody can avoid it.",
+    "tr": "Sergideki en zor fotoğrafı kimsenin kaçamayacağı bir yere astın."
+   },
+   {
+    "who": "Dilara",
+    "en": "That is where it belongs. Putting it in a corner would be a judgment in itself.",
+    "tr": "Yeri orası. Köşeye koymak başlı başına bir yargı olurdu."
+   },
+   {
+    "who": "Ahmet",
+    "en": "So would putting it at the entrance. Every position says something.",
+    "tr": "Girişe koymak da öyle. Her konum bir şey söyler."
+   },
+   {
+    "who": "Dilara",
+    "en": "Then I would rather say it deliberately than pretend the wall is neutral.",
+    "tr": "O hâlde duvarın tarafsız olduğunu varsaymaktansa bunu bilerek söylemeyi yeğlerim."
+   },
+   {
+    "who": "Ahmet",
+    "en": "My worry is not the position. It is that the caption tells people how to feel.",
+    "tr": "Benim endişem konum değil. Etiketin insanlara nasıl hissedeceklerini söylemesi."
+   },
+   {
+    "who": "Dilara",
+    "en": "It tells them where and when. Everything else is their own.",
+    "tr": "Onlara nerede ve ne zaman olduğunu söylüyor. Gerisi kendilerine ait."
+   },
+   {
+    "who": "Ahmet",
+    "en": "It also names the photographer's intention, and intention is not evidence.",
+    "tr": "Ayrıca fotoğrafçının niyetini de anıyor ve niyet kanıt değildir."
+   },
+   {
+    "who": "Dilara",
+    "en": "She wrote it in a letter three weeks after taking it. That is as close as we get.",
+    "tr": "Bunu, çektikten üç hafta sonra bir mektupta yazmış. Yaklaşabileceğimiz en yakın nokta bu."
+   },
+   {
+    "who": "Ahmet",
+    "en": "Then quote the letter and let the visitor judge the distance between the two.",
+    "tr": "O hâlde mektuptan alıntı yap, ziyaretçi ikisi arasındaki mesafeyi kendisi ölçsün."
+   },
+   {
+    "who": "Dilara",
+    "en": "That is a genuinely better caption than mine, and I resent how quickly you produced it.",
+    "tr": "Bu benimkinden gerçekten daha iyi bir etiket ve bu kadar çabuk bulmana içerliyorum."
+   },
+   {
+    "who": "Ahmet",
+    "en": "I have had four months to think about a room I was not invited to design.",
+    "tr": "Tasarlamaya davet edilmediğim bir oda üzerine düşünecek dört ayım oldu."
+   },
+   {
+    "who": "Dilara",
+    "en": "You were invited. You said the subject was too raw for a public gallery.",
+    "tr": "Davet edildin. Konunun kamusal bir galeri için fazla çiğ olduğunu söyledin."
+   },
+   {
+    "who": "Ahmet",
+    "en": "I still think so, and I no longer think that is a reason not to show it.",
+    "tr": "Hâlâ öyle düşünüyorum ve artık bunu göstermemek için bir sebep saymıyorum."
+   },
+   {
+    "who": "Dilara",
+    "en": "What changed?",
+    "tr": "Ne değişti?"
+   },
+   {
+    "who": "Ahmet",
+    "en": "I watched the smaller version in Izmir and nobody behaved the way I predicted.",
+    "tr": "İzmir'deki küçük versiyonu izledim ve kimse tahmin ettiğim gibi davranmadı."
+   },
+   {
+    "who": "Dilara",
+    "en": "They stayed longer in that room than in any other.",
+    "tr": "O odada diğerlerinden daha uzun kaldılar."
+   },
+   {
+    "who": "Ahmet",
+    "en": "And they spoke more quietly, which is not something a gallery can arrange.",
+    "tr": "Ve daha alçak sesle konuştular ki bunu bir galeri düzenleyemez."
+   },
+   {
+    "who": "Dilara",
+    "en": "Then write me the caption tonight and I will hang it before the press come.",
+    "tr": "O hâlde etiketi bu gece yaz, basın gelmeden asayım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "hung",
+    "tr": "astı, asılı"
+   },
+   {
+    "w": "judgment",
+    "tr": "yargı"
+   },
+   {
+    "w": "neutral",
+    "tr": "tarafsız"
+   },
+   {
+    "w": "caption",
+    "tr": "etiket, altyazı"
+   },
+   {
+    "w": "intention",
+    "tr": "niyet"
+   },
+   {
+    "w": "visitor",
+    "tr": "ziyaretçi"
+   },
+   {
+    "w": "resent",
+    "tr": "içerlemek"
+   },
+   {
+    "w": "raw",
+    "tr": "çiğ, ham"
+   },
+   {
+    "w": "gallery",
+    "tr": "galeri"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Ahmet's first observation?",
+    "options": [
+     "The hardest photograph is impossible to avoid",
+     "The lighting is wrong",
+     "There are too many pictures",
+     "The room is too small"
+    ],
+    "answer": 0,
+    "note": "\"Where nobody can avoid it.\""
+   },
+   {
+    "q": "What is his real objection?",
+    "options": [
+     "The photographer is unknown",
+     "The photograph is fake",
+     "The caption tells people how to feel",
+     "The show is too long"
+    ],
+    "answer": 2,
+    "note": "\"The caption tells people how to feel.\""
+   },
+   {
+    "q": "What does he suggest instead?",
+    "options": [
+     "Remove the caption",
+     "Quote the letter and let visitors judge",
+     "Move the photograph",
+     "Close the room"
+    ],
+    "answer": 1,
+    "note": "\"Quote the letter and let the visitor judge.\""
+   },
+   {
+    "q": "Why did Ahmet refuse to design the room?",
+    "options": [
+     "He was too busy",
+     "He disliked the photographer",
+     "He was not paid",
+     "He thought the subject was too raw"
+    ],
+    "answer": 3,
+    "note": "\"The subject was too raw for a public gallery.\""
+   },
+   {
+    "q": "What changed his mind?",
+    "options": [
+     "Dilara's argument",
+     "Reading the letter",
+     "Watching visitors at the smaller show",
+     "A newspaper article"
+    ],
+    "answer": 2,
+    "note": "\"I watched the smaller version in Izmir.\""
+   }
+  ]
+ }
+]

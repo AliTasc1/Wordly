@@ -49,7 +49,7 @@
       "speakers": ["Serkan", "Landlord"],
       "lines": [
         { "who": "Serkan", "en": "I have called three times about the heating.", "tr": "Isıtma konusunda üç kez aradım." },
-        { "who": "Landlord", "en": "I know, and I am sorry. The engineer cancelled twice.", "tr": "Biliyorum, üzgünüm. Teknisyen iki kez iptal etti." },
+        { "who": "Landlord", "en": "I know, and I am sorry. The engineer canceled twice.", "tr": "Biliyorum, üzgünüm. Teknisyen iki kez iptal etti." },
         { "who": "Serkan", "en": "It has been cold for two weeks. My daughter has a cough.", "tr": "İki haftadır hava soğuk. Kızım öksürüyor." },
         { "who": "Landlord", "en": "I understand. I will call a different company today.", "tr": "Anlıyorum. Bugün başka bir firmayı arayacağım." },
         { "who": "Serkan", "en": "I would like that in writing, please.", "tr": "Bunu yazılı olarak istiyorum lütfen." },
@@ -69,7 +69,7 @@
       ],
       "questions": [
         { "q": "How many times has Serkan called?", "options": ["Three", "Two", "Once", "Five"], "answer": 0, "note": "\"I have called three times.\"" },
-        { "q": "Why has nothing been fixed?", "options": ["The engineer cancelled twice", "The landlord refused", "There is no money", "The part is missing"], "answer": 0, "note": "\"The engineer cancelled twice.\"" },
+        { "q": "Why has nothing been fixed?", "options": ["The engineer canceled twice", "The landlord refused", "There is no money", "The part is missing"], "answer": 0, "note": "\"The engineer canceled twice.\"" },
         { "q": "What does Serkan ask for?", "options": ["The promise in writing", "A lower rent", "A new flat", "His money back"], "answer": 0, "note": "\"I would like that in writing.\"" },
         { "q": "Why does he want it in writing?", "options": ["So both know what was agreed", "To show a lawyer", "Because he cannot hear", "To keep a record for tax"], "answer": 0, "note": "\"Then we both know what was agreed and when.\"" },
         { "q": "How does the landlord respond?", "options": ["He agrees to send it", "He refuses", "He asks for time", "He ends the call"], "answer": 0, "note": "\"I will send it this afternoon.\"" }

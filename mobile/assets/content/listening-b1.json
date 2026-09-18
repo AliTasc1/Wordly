@@ -164,7 +164,7 @@
    },
    {
     "who": "Landlord",
-    "en": "I know, and I am sorry. The engineer cancelled twice.",
+    "en": "I know, and I am sorry. The engineer canceled twice.",
     "tr": "Biliyorum, üzgünüm. Teknisyen iki kez iptal etti."
    },
    {
@@ -253,10 +253,10 @@
      "The part is missing",
      "The landlord refused",
      "There is no money",
-     "The engineer cancelled twice"
+     "The engineer canceled twice"
     ],
     "answer": 3,
-    "note": "\"The engineer cancelled twice.\""
+    "note": "\"The engineer canceled twice.\""
    },
    {
     "q": "What does Serkan ask for?",
