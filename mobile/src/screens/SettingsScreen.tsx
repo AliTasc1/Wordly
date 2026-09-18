@@ -7,6 +7,7 @@ import { IconTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
 import { SETTING_GROUPS, SETTINGS_FOOTER } from '../data/subscription';
+import { attribution } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 
@@ -14,7 +15,7 @@ import { useBack, useGo } from '../navigation/useGo';
 export function SettingsScreen() {
   const { go, reset } = useGo();
   const back = useBack('profile');
-  const { fire } = useApp();
+  const { fire, cefr } = useApp();
 
   return (
     <Screen tabbed padTop={62} gap={13}>
@@ -78,13 +79,35 @@ export function SettingsScreen() {
                   s={11}
                   w={700}
                   c={item.value === 'Kapalı' ? colors.textGhost : colors.textDim}>
-                  {item.value}
+                  {item.name === 'Seviye' ? cefr : item.value}
                 </Txt>
               </Press>
             ))}
           </View>
         </View>
       ))}
+
+      {/*
+        LICENSES.md, kelime listesinin ve telaffuz verisinin üçüncü taraf
+        olması nedeniyle bu künyenin yayından önce uygulamada görünür olmasını
+        şart koşuyor. Metinler manifest'ten geliyor, elle kopyalanmıyor.
+      */}
+      <View style={styles.group}>
+        <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14} style={styles.groupName}>
+          KAYNAKLAR
+        </Txt>
+        <View style={styles.groupBody}>
+          {attribution().map((line, i, all) => (
+            <View
+              key={line}
+              style={[styles.credit, i < all.length - 1 && styles.itemDivider]}>
+              <Txt s={11.5} lh={1.55} c={colors.textFaint}>
+                {line}
+              </Txt>
+            </View>
+          ))}
+        </View>
+      </View>
 
       <Press onPress={() => reset('splash')} style={styles.signOut}>
         <Txt f="m" s={14} w={700} c={colors.errorSoft}>
@@ -145,5 +168,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  credit: { paddingVertical: 11, paddingHorizontal: 13 },
   version: { textAlign: 'center' },
 });

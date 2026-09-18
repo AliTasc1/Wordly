@@ -80,39 +80,3 @@ export const COACH = {
 };
 
 /** AI speaking practice: hotel check-in role play. */
-export const SPEAKING = {
-  teacher: { name: 'Emma · AI Öğretmen', status: '● konuşmaya hazır' },
-  scenario: 'Senaryo: Otelde check-in',
-  finish: 'Bitir',
-  chat: [
-    { from: 'ai' as const, text: 'Good evening! Welcome to the Wordly Hotel. Do you have a reservation?', tr: 'İyi akşamlar! Rezervasyonunuz var mı?' },
-    { from: 'me' as const, text: 'Yes, I have a reservation for three nights.', tr: 'Evet, üç gecelik rezervasyonum var.' },
-    { from: 'ai' as const, text: 'Perfect. Could you tell me your name and show me your ID, please?', tr: 'Harika. Adınızı söyleyip kimliğinizi gösterir misiniz?' },
-    { from: 'me' as const, text: 'Sure — Ali Yılmaz. Here you are.', tr: 'Elbette — Ali Yılmaz. Buyurun.' },
-  ],
-  score: {
-    title: 'Konuşma puanın',
-    total: '78',
-    axes: [
-      { name: 'Gramer', value: 82 },
-      { name: 'Kelime', value: 76 },
-      { name: 'Telaffuz', value: 64 },
-      { name: 'Akıcılık', value: 71 },
-      { name: 'Doğallık', value: 80 },
-    ],
-    tipTitle: 'Öneri',
-    tipBefore: '"th" sesini /d/ yerine dil ucuyla dene: ',
-    tipWords: ['three', 'through'],
-    tipAfter: '. 2 dakikalık telaffuz drili hazır.',
-  },
-  recording: {
-    idle: 'Konuşmak için mikrofona bas',
-    live: 'Dinliyorum… “Here you are.” demeyi dene',
-  },
-  toasts: {
-    recorded: { title: 'Kayıt değerlendirildi', note: 'Telaffuz 64 → 71 · +15 XP' },
-    hint: { title: 'İpucu', note: '“Here you are.” = Buyurun' },
-    slow: { title: '0.6× hızda tekrar', note: 'Emma yavaş tekrar ediyor' },
-  },
-  actions: { hint: 'İpucu', slow: 'Yavaş tekrar et' },
-};

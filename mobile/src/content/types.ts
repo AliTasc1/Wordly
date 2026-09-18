@@ -126,7 +126,7 @@ export type GrammarManifest = {
 
 export type TextsManifest = Record<
   'reading' | 'listening' | 'speaking',
-  { level: Level; items: number; file: string }[]
+  { level: Level; items: number; minutes: number; file: string }[]
 > & {
   placement: { questions: number; file: string };
 };

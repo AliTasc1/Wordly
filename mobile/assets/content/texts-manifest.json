@@ -3,31 +3,37 @@
   {
    "level": "A1",
    "items": 10,
+   "minutes": 20,
    "file": "reading-a1.json"
   },
   {
    "level": "A2",
    "items": 10,
+   "minutes": 30,
    "file": "reading-a2.json"
   },
   {
    "level": "B1",
    "items": 10,
+   "minutes": 40,
    "file": "reading-b1.json"
   },
   {
    "level": "B2",
    "items": 10,
+   "minutes": 50,
    "file": "reading-b2.json"
   },
   {
    "level": "C1",
    "items": 10,
+   "minutes": 60,
    "file": "reading-c1.json"
   },
   {
    "level": "C2",
    "items": 10,
+   "minutes": 70,
    "file": "reading-c2.json"
   }
  ],
@@ -35,31 +41,37 @@
   {
    "level": "A1",
    "items": 10,
+   "minutes": 20,
    "file": "listening-a1.json"
   },
   {
    "level": "A2",
    "items": 10,
+   "minutes": 30,
    "file": "listening-a2.json"
   },
   {
    "level": "B1",
    "items": 10,
+   "minutes": 40,
    "file": "listening-b1.json"
   },
   {
    "level": "B2",
    "items": 10,
+   "minutes": 50,
    "file": "listening-b2.json"
   },
   {
    "level": "C1",
    "items": 10,
+   "minutes": 60,
    "file": "listening-c1.json"
   },
   {
    "level": "C2",
    "items": 10,
+   "minutes": 70,
    "file": "listening-c2.json"
   }
  ],
@@ -67,31 +79,37 @@
   {
    "level": "A1",
    "items": 10,
+   "minutes": 30,
    "file": "speaking-a1.json"
   },
   {
    "level": "A2",
    "items": 10,
+   "minutes": 40,
    "file": "speaking-a2.json"
   },
   {
    "level": "B1",
    "items": 10,
+   "minutes": 50,
    "file": "speaking-b1.json"
   },
   {
    "level": "B2",
    "items": 10,
+   "minutes": 60,
    "file": "speaking-b2.json"
   },
   {
    "level": "C1",
    "items": 10,
+   "minutes": 70,
    "file": "speaking-c1.json"
   },
   {
    "level": "C2",
    "items": 10,
+   "minutes": 80,
    "file": "speaking-c2.json"
   }
  ],

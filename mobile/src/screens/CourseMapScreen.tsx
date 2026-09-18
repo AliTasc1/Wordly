@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import Svg, { Line } from 'react-native-svg';
 import { Screen } from '../components/Screen';
@@ -6,13 +6,33 @@ import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import { MAP_NODES, MapNodeKind } from '../data/curriculum';
+import { grammarOf } from '../content';
+import { CEFR } from '../data/curriculum';
+import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 
-/** 08 · Kurs Haritası — a progress path, not an LMS table. */
+type MapNodeKind = 'done' | 'now' | 'next' | 'lock';
+
+/**
+ * 08 · Kurs Haritası — a progress path, not an LMS table.
+ *
+ * The path is the level's real grammar sequence. Everything after the current
+ * lesson stays open rather than locked: the content exists, and there is no
+ * reason to stop someone reading ahead.
+ */
 export function CourseMapScreen() {
   const { go } = useGo();
   const back = useBack('learn');
+  const { cefr, position, setPosition } = useApp();
+
+  const lessons = useMemo(() => grammarOf(cefr), [cefr]);
+  const at = Math.min(position('grammar', cefr), lessons.length - 1);
+  const progress = lessons.length ? Math.round((at / lessons.length) * 100) : 0;
+
+  const open = (index: number) => {
+    setPosition('grammar', cefr, index);
+    go('grammar');
+  };
 
   return (
     <Screen tabbed padTop={62} padH={0} gap={14}>
@@ -20,15 +40,15 @@ export function CourseMapScreen() {
         <BackButton onPress={back} />
         <View>
           <Txt f="m" s={19} w={800}>
-            B1 · Orta Seviye
+            {CEFR[cefr].title}
           </Txt>
           <Txt s={11.5} w={600} c={colors.textDim}>
-            12/20 ünite · 4.860 XP
+            {at}/{lessons.length} ders
           </Txt>
         </View>
         <View style={styles.pct}>
           <Txt f="mono" s={11} w={700} c={colors.accentSoft}>
-            %60
+            %{progress}
           </Txt>
         </View>
       </View>
@@ -49,11 +69,12 @@ export function CourseMapScreen() {
         </View>
 
         <View style={styles.nodes}>
-          {MAP_NODES.map((node, i) => {
+          {lessons.map((lesson, i) => {
             const left = i % 2 === 0;
+            const kind: MapNodeKind = i < at ? 'done' : i === at ? 'now' : 'next';
             return (
               <View
-                key={node.no}
+                key={lesson.id}
                 style={[
                   styles.nodeRow,
                   left
@@ -61,17 +82,21 @@ export function CourseMapScreen() {
                     : { flexDirection: 'row-reverse', paddingLeft: 40 },
                 ]}>
                 <NodeButton
-                  kind={node.kind}
-                  icon={node.icon}
-                  no={node.no}
-                  onPress={() => go(node.kind === 'lock' ? 'map' : 'lesson')}
+                  kind={kind}
+                  icon={kind === 'done' ? '✓' : kind === 'now' ? '▶' : String(lesson.order)}
+                  no={String(lesson.order).padStart(2, '0')}
+                  onPress={() => open(i)}
                 />
                 <View style={[styles.label, { alignItems: left ? 'flex-start' : 'flex-end' }]}>
                   <Txt f="m" s={13} w={700}>
-                    {node.name}
+                    {lesson.title}
                   </Txt>
                   <Txt s={11} c={colors.textDim}>
-                    {node.sub}
+                    {kind === 'done'
+                      ? 'Bitti'
+                      : kind === 'now'
+                        ? 'Şimdi'
+                        : `${lesson.exercises.length} alıştırma`}
                   </Txt>
                 </View>
               </View>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -7,16 +7,32 @@ import { Press } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
-import { CEFR, CEFR_LEVELS, UNITS } from '../data/curriculum';
+import { grammarOf } from '../content';
+import { formatMinutes, levelSummary } from '../content/summary';
+import { CEFR, CEFR_LEVELS } from '../data/curriculum';
 import { useApp } from '../state/AppContext';
 import { useGo } from '../navigation/useGo';
 
-/** 07 · Öğren — CEFR roadmap with the selected level's unit list. */
+/**
+ * 07 · Öğren — CEFR roadmap with the selected level's lessons.
+ *
+ * The design listed invented units; the real spine of a level is its grammar
+ * lesson sequence, which is ordered and numbered, so that is what is listed.
+ */
 export function LearnScreen() {
   const { go } = useGo();
-  const { cefr, setCefr } = useApp();
+  const { cefr, setCefr, position, setPosition } = useApp();
+
   const summary = CEFR[cefr];
-  const units = UNITS[cefr] ?? UNITS.B1!;
+  const counts = useMemo(() => levelSummary(cefr), [cefr]);
+  const lessons = useMemo(() => grammarOf(cefr), [cefr]);
+  const at = Math.min(position('grammar', cefr), lessons.length - 1);
+  const progress = lessons.length ? Math.round((at / lessons.length) * 100) : 0;
+
+  const open = (index: number) => {
+    setPosition('grammar', cefr, index);
+    go('grammar');
+  };
 
   return (
     <Screen tabbed padTop={62} gap={14}>
@@ -38,16 +54,14 @@ export function LearnScreen() {
         ))}
       </ScrollView>
 
-      <Gradient
-        colors={['rgba(46,107,255,.22)', 'rgba(14,20,38,.9)']}
-        style={styles.summary}>
+      <Gradient colors={['rgba(46,107,255,.22)', 'rgba(14,20,38,.9)']} style={styles.summary}>
         <View style={styles.summaryHead}>
           <Txt f="m" s={18} w={800}>
             {summary.title}
           </Txt>
           <View style={styles.pct}>
             <Txt f="mono" s={11} w={700}>
-              {summary.progressLabel}
+              %{progress}
             </Txt>
           </View>
         </View>
@@ -55,7 +69,7 @@ export function LearnScreen() {
           {summary.description}
         </Txt>
         <ProgressBar
-          pct={summary.progress}
+          pct={progress}
           from={colors.accent}
           to={colors.primary}
           height={8}
@@ -63,20 +77,31 @@ export function LearnScreen() {
         />
         <View style={styles.meta}>
           <Txt s={11.5} w={600} c={colors.textMuted}>
-            📘 {summary.units} ünite
+            📐 {counts.lessons} ders
           </Txt>
           <Txt s={11.5} w={600} c={colors.textMuted}>
-            🔤 {summary.words} kelime
+            🔤 {counts.words.toLocaleString('tr-TR')} kelime
           </Txt>
           <Txt s={11.5} w={600} c={colors.textMuted}>
-            ⏱ {summary.time}
+            ⏱ {formatMinutes(counts.minutes)}
+          </Txt>
+        </View>
+        <View style={styles.meta}>
+          <Txt s={11.5} w={600} c={colors.textMuted}>
+            📖 {counts.reading} okuma
+          </Txt>
+          <Txt s={11.5} w={600} c={colors.textMuted}>
+            🎧 {counts.listening} dinleme
+          </Txt>
+          <Txt s={11.5} w={600} c={colors.textMuted}>
+            🎙 {counts.speaking} konuşma
           </Txt>
         </View>
       </Gradient>
 
       <View style={styles.listHead}>
         <Txt f="m" s={14.5} w={700}>
-          Üniteler
+          Dersler
         </Txt>
         <Press onPress={() => go('map')} scale={0.97}>
           <Txt s={12.5} w={700} c={colors.link}>
@@ -85,48 +110,39 @@ export function LearnScreen() {
         </Press>
       </View>
 
-      {units.map((unit) => (
-        <Row key={unit.no} active={unit.state === 'DEVAM'} onPress={() => go('lesson')}>
-          <View
-            style={[
-              styles.unitBadge,
-              unit.progress === 100
-                ? styles.unitDone
-                : unit.state === 'DEVAM'
-                  ? styles.unitNowBorder
-                  : styles.unitIdle,
-            ]}>
-            {unit.state === 'DEVAM' ? (
-              <Gradient colors={gradients.brand} style={styles.unitFill} />
-            ) : null}
-            <Txt
-              f="m"
-              s={13}
-              w={800}
-              c={
-                unit.progress === 100
-                  ? colors.successSoft
-                  : unit.state === 'DEVAM'
-                    ? colors.text
-                    : colors.textFaint
-              }>
-              {unit.no}
+      {lessons.map((lesson, i) => {
+        const done = i < at;
+        const now = i === at;
+        return (
+          <Row key={lesson.id} active={now} onPress={() => open(i)}>
+            <View
+              style={[
+                styles.unitBadge,
+                done ? styles.unitDone : now ? styles.unitNowBorder : styles.unitIdle,
+              ]}>
+              {now ? <Gradient colors={gradients.brand} style={styles.unitFill} /> : null}
+              <Txt
+                f="m"
+                s={13}
+                w={800}
+                c={done ? colors.successSoft : now ? colors.text : colors.textFaint}>
+                {String(lesson.order).padStart(2, '0')}
+              </Txt>
+            </View>
+            <View style={styles.flex}>
+              <Txt f="m" s={14.5} w={700}>
+                {lesson.title}
+              </Txt>
+              <Txt s={11.5} c={colors.textDim} style={styles.unitSub}>
+                {lesson.topic} · {lesson.exercises.length} alıştırma
+              </Txt>
+            </View>
+            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+              {done ? 'BİTTİ' : now ? 'DEVAM' : 'YENİ'}
             </Txt>
-          </View>
-          <View style={styles.flex}>
-            <Txt f="m" s={14.5} w={700}>
-              {unit.name}
-            </Txt>
-            <Txt s={11.5} c={colors.textDim} style={styles.unitSub}>
-              {unit.sub}
-            </Txt>
-            <ProgressBar pct={unit.progress} height={4} style={styles.unitBar} />
-          </View>
-          <Txt f="mono" s={11} w={700} c={colors.textDim}>
-            {unit.state}
-          </Txt>
-        </Row>
-      ))}
+          </Row>
+        );
+      })}
     </Screen>
   );
 }
@@ -167,5 +183,4 @@ const styles = StyleSheet.create({
   unitIdle: { backgroundColor: alpha.w05, borderWidth: 1, borderColor: alpha.w10 },
   unitFill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
   unitSub: { marginTop: 2 },
-  unitBar: { marginTop: 8 },
 });

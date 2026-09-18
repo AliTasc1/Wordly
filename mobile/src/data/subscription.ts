@@ -116,7 +116,9 @@ export const SETTING_GROUPS: { name: string; items: SettingItem[] }[] = [
     name: 'UYGULAMA',
     items: [
       { glyph: '🌍', name: 'Arayüz dili', sub: 'Türkçe', value: 'TR', tint: colors.primary },
-      { glyph: '🎧', name: 'Aksan', sub: 'İngiliz İngilizcesi', value: 'UK', tint: colors.accent },
+      // İçeriğin tamamı Amerikan yazımında (favorite, color, center); arayüzün
+      // İngiliz İngilizcesi vaat etmesi öğrenciyi yanıltırdı.
+      { glyph: '🎧', name: 'Aksan', sub: 'Amerikan İngilizcesi', value: 'US', tint: colors.accent },
       { glyph: '📥', name: 'İndirilenler', sub: 'Çevrimdışı 3 ünite', value: 'Premium', tint: colors.warning },
     ],
   },

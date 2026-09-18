@@ -369,10 +369,13 @@ def main() -> int:
     # manifest üretilmemiş dosyaları vaat eder.
     if not all_problems and targets == KINDS:
         OUT.mkdir(parents=True, exist_ok=True)
+        # Dakikalar da burada toplanıyor: seviye özetini göstermek için
+        # uygulamanın bütün içeriği ayrıştırması gerekmesin.
         manifest = {
             kind: [
                 {"level": level.upper(),
                  "items": len(load(kind, level)),
+                 "minutes": sum(i.get("minutes", 0) for i in load(kind, level)),
                  "file": f"{kind}-{level}.json"}
                 for level in LEVELS
             ]

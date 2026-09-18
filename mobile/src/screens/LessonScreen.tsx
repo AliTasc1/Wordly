@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -7,13 +7,88 @@ import { IconTile, Row } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
-import { LESSON_STEPS, OPEN_UNIT } from '../data/curriculum';
+import { grammarOf, listeningOf, readingOf, speakingOf } from '../content';
+import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
+import type { ScreenId } from '../navigation/routes';
 
-/** 09 · Ders — the open unit split into six sections. */
+/**
+ * 09 · Ders — the open lesson and the five sections around it.
+ *
+ * The sections are not invented: each one names the actual next item waiting
+ * in that deck, so tapping a row opens exactly what the subtitle promised.
+ */
 export function LessonScreen() {
   const { go } = useGo();
   const back = useBack('map');
+  const { cefr, position } = useApp();
+
+  const lessons = useMemo(() => grammarOf(cefr), [cefr]);
+  const at = Math.min(position('grammar', cefr), lessons.length - 1);
+  const lesson = lessons[at];
+
+  const reading = useMemo(() => readingOf(cefr), [cefr]);
+  const listening = useMemo(() => listeningOf(cefr), [cefr]);
+  const speaking = useMemo(() => speakingOf(cefr), [cefr]);
+
+  const nextIn = <T extends { title: string; minutes: number }>(items: T[], kind: Parameters<typeof position>[0]) =>
+    items[Math.min(position(kind, cefr), items.length - 1)];
+
+  const read = nextIn(reading, 'reading');
+  const listen = nextIn(listening, 'listening');
+  const speak = nextIn(speaking, 'speaking');
+
+  const steps: {
+    name: string;
+    sub: string;
+    target: ScreenId;
+    glyph: string;
+    tag: string;
+    state: 'done' | 'now' | 'idle';
+  }[] = [
+    {
+      name: 'Kelime',
+      sub: `${cefr} destesi · sırada ${position('vocab', cefr) + 1}. kart`,
+      target: 'vocab',
+      glyph: '🔤',
+      tag: 'DESTE',
+      state: 'idle',
+    },
+    {
+      name: 'Gramer',
+      sub: lesson.topic,
+      target: 'grammar',
+      glyph: '📐',
+      tag: 'DEVAM',
+      state: 'now',
+    },
+    {
+      name: 'Dinleme',
+      sub: listen.title,
+      target: 'listen',
+      glyph: '🎧',
+      tag: `${listen.minutes} dk`,
+      state: 'idle',
+    },
+    {
+      name: 'Okuma',
+      sub: read.title,
+      target: 'read',
+      glyph: '📖',
+      tag: `${read.minutes} dk`,
+      state: 'idle',
+    },
+    {
+      name: 'Konuşma',
+      sub: speak.title,
+      target: 'speak',
+      glyph: '🎙',
+      tag: `${speak.minutes} dk`,
+      state: 'idle',
+    },
+  ];
+
+  const progress = lessons.length ? Math.round((at / lessons.length) * 100) : 0;
 
   return (
     <Screen tabbed padTop={0} padH={0} gap={0}>
@@ -25,18 +100,18 @@ export function LessonScreen() {
           <BackButton onPress={back} strong />
           <View style={styles.unitTag}>
             <Txt f="mono" s={11} w={700} c={colors.textSubtle}>
-              {OPEN_UNIT.number}
+              {cefr} · DERS {String(lesson.order).padStart(2, '0')}
             </Txt>
           </View>
         </View>
         <Txt f="m" s={28} w={800} lh={1.2} ls={-0.02}>
-          {OPEN_UNIT.title}
+          {lesson.title}
         </Txt>
         <Txt s={13} lh={1.5} c={colors.textSubtle}>
-          {OPEN_UNIT.meta}
+          {lesson.canDo}
         </Txt>
         <ProgressBar
-          pct={OPEN_UNIT.progress}
+          pct={progress}
           from={colors.accent}
           to={colors.primary}
           height={8}
@@ -45,11 +120,11 @@ export function LessonScreen() {
       </Gradient>
 
       <View style={styles.steps}>
-        {LESSON_STEPS.map((step) => {
-          const done = step.tag === 'BİTTİ';
-          const current = step.tag === 'DEVAM';
+        {steps.map((step) => {
+          const done = step.state === 'done';
+          const current = step.state === 'now';
           return (
-            <Row key={step.name} active={current} onPress={() => go(routeFor(step.target))}>
+            <Row key={step.name} active={current} onPress={() => go(step.target)}>
               <IconTile
                 glyph={step.glyph}
                 tint={done ? colors.success : colors.textDim}
@@ -63,7 +138,7 @@ export function LessonScreen() {
                 <Txt f="m" s={14.5} w={700}>
                   {step.name}
                 </Txt>
-                <Txt s={11.5} c={colors.textDim} style={styles.stepSub}>
+                <Txt s={11.5} c={colors.textDim} style={styles.stepSub} numberOfLines={1}>
                   {step.sub}
                 </Txt>
               </View>
@@ -91,25 +166,20 @@ export function LessonScreen() {
           </View>
           <View style={styles.flex}>
             <Txt f="m" s={13.5} w={700}>
-              Ünite Sınavı
+              Seviye Sınavı
             </Txt>
             <Txt s={11.5} c={colors.textDim}>
-              4 bölümü bitirince açılır
+              40 soruda seviyeni ölç
             </Txt>
           </View>
-          <Txt f="mono" s={11} w={700} c={colors.textGhost}>
-            KİLİTLİ
+          <Txt f="mono" s={11} w={700} c={colors.link} onPress={() => go('test')}>
+            ÇÖZ ›
           </Txt>
         </View>
       </View>
     </Screen>
   );
 }
-
-const routeFor = (target: string) =>
-  ({ Vocab: 'vocab', Grammar: 'grammar', Listen: 'listen', Read: 'read', Speak: 'speak' })[
-    target
-  ] as 'vocab' | 'grammar' | 'listen' | 'read' | 'speak';
 
 const styles = StyleSheet.create({
   flex: { flex: 1 },
