@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Alert, StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
@@ -15,7 +15,26 @@ import { useBack, useGo } from '../navigation/useGo';
 export function SettingsScreen() {
   const { go, reset } = useGo();
   const back = useBack('profile');
-  const { fire, cefr } = useApp();
+  const { fire, cefr, resetProgress } = useApp();
+
+  // Silme geri alınamıyor, o yüzden onay isteniyor. Yıkıcı işlem tek
+  // dokunuşla olmamalı.
+  const askReset = () =>
+    Alert.alert(
+      'İlerlemeyi sıfırla',
+      'Kaldığın yerler, kaydettiğin kelimeler ve seviye testi sonucun silinecek. Bu geri alınamaz.',
+      [
+        { text: 'Vazgeç', style: 'cancel' },
+        {
+          text: 'Sıfırla',
+          style: 'destructive',
+          onPress: () => {
+            resetProgress();
+            fire('İlerleme sıfırlandı', 'Her bölüm baştan başlıyor');
+          },
+        },
+      ],
+    );
 
   return (
     <Screen tabbed padTop={62} gap={13}>
@@ -109,6 +128,12 @@ export function SettingsScreen() {
         </View>
       </View>
 
+      <Press onPress={askReset} style={styles.danger}>
+        <Txt f="m" s={13.5} w={700} c={colors.textDim}>
+          İlerlemeyi sıfırla
+        </Txt>
+      </Press>
+
       <Press onPress={() => reset('splash')} style={styles.signOut}>
         <Txt f="m" s={14} w={700} c={colors.errorSoft}>
           {SETTINGS_FOOTER.signOut}
@@ -140,6 +165,14 @@ const styles = StyleSheet.create({
     borderRadius: radii.card,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  danger: {
+    alignItems: 'center',
+    paddingVertical: 14,
+    borderRadius: radii.input,
+    borderWidth: 1,
+    borderColor: alpha.w08,
+    backgroundColor: alpha.w04,
   },
   group: { gap: 7 },
   groupName: { paddingHorizontal: 4 },
