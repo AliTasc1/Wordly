@@ -1,0 +1,182 @@
+{
+  "_meta": { "batch": "b2-speaking-04", "level": "B2", "range": "Senaryo 16-20" },
+  "items": [
+    {
+      "id": "b2-s-16",
+      "level": "B2",
+      "order": 16,
+      "kind": "speaking",
+      "title": "İstifa etmek",
+      "titleEn": "Resigning",
+      "minutes": 6,
+      "situation": "You have accepted a job somewhere else. Tell your manager that you are leaving.",
+      "situationTr": "Başka bir yerde iş kabul ettin. Müdürüne ayrılacağını söyle.",
+      "prompts": [
+        "Say plainly that you are leaving.",
+        "Say when your last day would be.",
+        "Give a reason you are willing to give.",
+        "Say how you will hand your work over."
+      ],
+      "promptsTr": [
+        "Ayrılacağını açıkça söyle.",
+        "Son gününün ne zaman olacağını söyle.",
+        "Söylemekte sakınca görmediğin bir sebep ver.",
+        "İşini nasıl devredeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I have decided to leave, and I wanted to tell you first.", "tr": "Ayrılmaya karar verdim ve önce size söylemek istedim." },
+        { "en": "My notice period is a month, so my last day would be the thirtieth.", "tr": "İhbar sürem bir ay, yani son günüm otuzu olur." },
+        { "en": "The new role is closer to what I want to do long term.", "tr": "Yeni pozisyon uzun vadede yapmak istediğim işe daha yakın." },
+        { "en": "I will write down everything that is half finished.", "tr": "Yarım kalan her şeyi yazılı hâle getireceğim." },
+        { "en": "I am grateful for the last four years.", "tr": "Son dört yıl için minnettarım." }
+      ],
+      "glossary": [
+        { "w": "resigning", "tr": "istifa etmek" },
+        { "w": "notice period", "tr": "ihbar süresi" },
+        { "w": "hand over", "tr": "devretmek" },
+        { "w": "grateful", "tr": "minnettar" }
+      ]
+    },
+    {
+      "id": "b2-s-17",
+      "level": "B2",
+      "order": 17,
+      "kind": "speaking",
+      "title": "Müşteriye hayır demek",
+      "titleEn": "Saying No to a Customer",
+      "minutes": 6,
+      "situation": "A good customer asks for something you cannot do. Refuse without losing him.",
+      "situationTr": "İyi bir müşteri yapamayacağın bir şey istiyor. Onu kaybetmeden reddet.",
+      "prompts": [
+        "Say what you cannot do.",
+        "Explain why, briefly.",
+        "Offer what you can do instead.",
+        "Leave the relationship in good shape."
+      ],
+      "promptsTr": [
+        "Ne yapamayacağını söyle.",
+        "Nedenini kısaca açıkla.",
+        "Onun yerine ne yapabileceğini teklif et.",
+        "İlişkiyi iyi bir noktada bırak."
+      ],
+      "usefulPhrases": [
+        { "en": "I am not going to be able to deliver by the tenth.", "tr": "Ayın onuna kadar teslim edemeyeceğim." },
+        { "en": "The parts themselves take four weeks to arrive.", "tr": "Parçaların gelmesi dört hafta sürüyor." },
+        { "en": "What I can do is send half of the order on time.", "tr": "Yapabileceğim şey, siparişin yarısını zamanında göndermek." },
+        { "en": "I would rather tell you now than let you down later.", "tr": "Sonradan sizi zor durumda bırakmaktansa şimdi söylemeyi tercih ederim." },
+        { "en": "If the date is fixed, I will help you find somebody else.", "tr": "Tarih kesinse başka birini bulmanıza yardım ederim." }
+      ],
+      "glossary": [
+        { "w": "deliver", "tr": "teslim etmek" },
+        { "w": "order", "tr": "sipariş" },
+        { "w": "let down", "tr": "hayal kırıklığına uğratmak" }
+      ]
+    },
+    {
+      "id": "b2-s-18",
+      "level": "B2",
+      "order": 18,
+      "kind": "speaking",
+      "title": "Rakamları yorumlamak",
+      "titleEn": "Reading the Numbers Out Loud",
+      "minutes": 6,
+      "situation": "You are showing a chart of last year's sales to your team. Explain what it shows and what it does not.",
+      "situationTr": "Ekibine geçen yılın satış grafiğini gösteriyorsun. Neyi gösterdiğini ve neyi göstermediğini açıkla.",
+      "prompts": [
+        "Describe the main movement in the numbers.",
+        "Point out the part that surprises people.",
+        "Give one likely reason for it.",
+        "Say what the chart cannot tell you."
+      ],
+      "promptsTr": [
+        "Rakamlardaki ana hareketi anlat.",
+        "İnsanları şaşırtan kısmı göster.",
+        "Bunun olası bir sebebini söyle.",
+        "Grafiğin sana söyleyemeyeceği şeyi söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Sales rose steadily until August and then flattened.", "tr": "Satışlar ağustosa kadar istikrarlı biçimde arttı, sonra düzleşti." },
+        { "en": "The surprising part is the fall in the south.", "tr": "Şaşırtıcı kısım güneydeki düşüş." },
+        { "en": "One likely explanation is the shop that closed in July.", "tr": "Olası bir açıklama, temmuzda kapanan mağaza." },
+        { "en": "The chart shows what happened, not why.", "tr": "Grafik ne olduğunu gösteriyor, nedenini değil." },
+        { "en": "I would not draw a conclusion from two months.", "tr": "İki aya bakarak bir sonuca varmam." }
+      ],
+      "glossary": [
+        { "w": "chart", "tr": "grafik" },
+        { "w": "steadily", "tr": "istikrarlı biçimde" },
+        { "w": "flattened", "tr": "düzleşti" },
+        { "w": "conclusion", "tr": "sonuç" }
+      ]
+    },
+    {
+      "id": "b2-s-19",
+      "level": "B2",
+      "order": 19,
+      "kind": "speaking",
+      "title": "Bir tartışmayı yatıştırmak",
+      "titleEn": "Calming an Argument",
+      "minutes": 6,
+      "situation": "Two colleagues are arguing loudly in front of everybody. Step in and calm the situation.",
+      "situationTr": "İki iş arkadaşın herkesin önünde yüksek sesle tartışıyor. Araya gir ve durumu yatıştır.",
+      "prompts": [
+        "Stop the argument without taking sides.",
+        "Name the real question underneath it.",
+        "Suggest where to continue it.",
+        "Say what happens next."
+      ],
+      "promptsTr": [
+        "Taraf tutmadan tartışmayı durdur.",
+        "Altındaki asıl soruyu adlandır.",
+        "Nerede devam edileceğini öner.",
+        "Bundan sonra ne olacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Let us stop there for a moment.", "tr": "Bir an için burada duralım." },
+        { "en": "You are both right about different things.", "tr": "İkiniz de farklı konularda haklısınız." },
+        { "en": "The real question is who signs this off.", "tr": "Asıl soru bunu kimin onaylayacağı." },
+        { "en": "Can the three of us sit down at two?", "tr": "Üçümüz ikide oturabilir miyiz?" },
+        { "en": "Nothing gets sent until we have agreed.", "tr": "Anlaşana kadar hiçbir şey gönderilmiyor." }
+      ],
+      "glossary": [
+        { "w": "taking sides", "tr": "taraf tutmak" },
+        { "w": "underneath", "tr": "altında" },
+        { "w": "sign off", "tr": "onaylamak" }
+      ]
+    },
+    {
+      "id": "b2-s-20",
+      "level": "B2",
+      "order": 20,
+      "kind": "speaking",
+      "title": "Bir öneriyi savunmak",
+      "titleEn": "Making the Case for an Idea",
+      "minutes": 6,
+      "situation": "You want the company to buy new software. You have five minutes with the person who decides.",
+      "situationTr": "Şirketin yeni bir yazılım almasını istiyorsun. Karar veren kişiyle beş dakikan var.",
+      "prompts": [
+        "State the problem before the solution.",
+        "Say what the change would cost.",
+        "Say what it would save.",
+        "Say what you want him to do today."
+      ],
+      "promptsTr": [
+        "Çözümden önce sorunu ortaya koy.",
+        "Değişimin ne kadara mal olacağını söyle.",
+        "Ne kazandıracağını söyle.",
+        "Bugün ondan ne yapmasını istediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "At the moment we type the same numbers into two systems.", "tr": "Şu anda aynı rakamları iki ayrı sisteme giriyoruz." },
+        { "en": "The software costs about ninety thousand a year.", "tr": "Yazılımın yıllık maliyeti yaklaşık doksan bin." },
+        { "en": "It would give us back roughly a day a week each.", "tr": "Her birimize haftada kabaca bir gün geri kazandırırdı." },
+        { "en": "I am not asking you to sign anything today.", "tr": "Bugün bir şey imzalamanızı istemiyorum." },
+        { "en": "I am asking for a month to test it with two people.", "tr": "İki kişiyle bir ay test etmek için izin istiyorum." }
+      ],
+      "glossary": [
+        { "w": "software", "tr": "yazılım" },
+        { "w": "roughly", "tr": "kabaca" },
+        { "w": "test", "tr": "denemek" }
+      ]
+    }
+  ]
+}

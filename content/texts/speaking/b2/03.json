@@ -1,0 +1,181 @@
+{
+  "_meta": { "batch": "b2-speaking-03", "level": "B2", "range": "Senaryo 11-15" },
+  "items": [
+    {
+      "id": "b2-s-11",
+      "level": "B2",
+      "order": 11,
+      "kind": "speaking",
+      "title": "Bir süreci anlatmak",
+      "titleEn": "Explaining How Something Works",
+      "minutes": 6,
+      "situation": "A new team member asks how a request travels through your department. Explain the process clearly.",
+      "situationTr": "Ekibe yeni katılan biri, bir talebin biriminizde nasıl ilerlediğini soruyor. Süreci açıkça anlat.",
+      "prompts": [
+        "Describe the process from start to finish.",
+        "Say who is responsible at each stage.",
+        "Point out where it usually goes wrong.",
+        "Say what he should do if he is unsure."
+      ],
+      "promptsTr": [
+        "Süreci baştan sona anlat.",
+        "Her aşamada kimin sorumlu olduğunu söyle.",
+        "Genelde nerede aksadığını belirt.",
+        "Emin olamazsa ne yapması gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It starts when the request arrives in the shared inbox.", "tr": "Süreç, talep ortak gelen kutusuna düştüğünde başlıyor." },
+        { "en": "At that point it is checked by whoever is on duty that day.", "tr": "O noktada o gün nöbette olan kişi tarafından kontrol ediliyor." },
+        { "en": "Where it usually falls down is the second approval.", "tr": "Genelde aksadığı yer ikinci onay." },
+        { "en": "Once that is signed, the rest is automatic.", "tr": "O imzalandıktan sonra gerisi otomatik." },
+        { "en": "If you are not sure, put it on hold rather than guessing.", "tr": "Emin değilsen tahmin yürütmek yerine beklemeye al." }
+      ],
+      "glossary": [
+        { "w": "process", "tr": "süreç" },
+        { "w": "approval", "tr": "onay" },
+        { "w": "on duty", "tr": "nöbette, görevde" },
+        { "w": "on hold", "tr": "beklemede" }
+      ]
+    },
+    {
+      "id": "b2-s-12",
+      "level": "B2",
+      "order": 12,
+      "kind": "speaking",
+      "title": "Zor bir geri bildirim vermek",
+      "titleEn": "Giving Difficult Feedback",
+      "minutes": 6,
+      "situation": "Someone you work with keeps sending work that is late and unfinished. Speak to him about it.",
+      "situationTr": "Birlikte çalıştığın biri sürekli geç ve yarım işler gönderiyor. Bu konuda onunla konuş.",
+      "prompts": [
+        "Describe what you have noticed, with facts.",
+        "Say what effect it has.",
+        "Ask for his side of it.",
+        "Agree on one thing that will change."
+      ],
+      "promptsTr": [
+        "Fark ettiklerini olgularla anlat.",
+        "Bunun ne gibi bir etkisi olduğunu söyle.",
+        "Onun tarafını dinlemek istediğini söyle.",
+        "Değişecek tek bir şeyde anlaşın."
+      ],
+      "usefulPhrases": [
+        { "en": "The last three reports came in after the deadline.", "tr": "Son üç rapor teslim tarihinden sonra geldi." },
+        { "en": "That means somebody else has to finish them at short notice.", "tr": "Bu da başkasının onları son anda bitirmesi demek." },
+        { "en": "I would like to hear how it looks from where you are.", "tr": "Senin açından nasıl göründüğünü duymak isterim." },
+        { "en": "I am not asking for perfect work, I am asking for warning.", "tr": "Kusursuz iş istemiyorum, önceden haber istiyorum." },
+        { "en": "Can we agree that you tell me on the Wednesday?", "tr": "Bana çarşamba haber vermen konusunda anlaşabilir miyiz?" }
+      ],
+      "glossary": [
+        { "w": "feedback", "tr": "geri bildirim" },
+        { "w": "deadline", "tr": "teslim tarihi" },
+        { "w": "at short notice", "tr": "son anda" }
+      ]
+    },
+    {
+      "id": "b2-s-13",
+      "level": "B2",
+      "order": 13,
+      "kind": "speaking",
+      "title": "Araya kibarca girmek",
+      "titleEn": "Interrupting Politely",
+      "minutes": 6,
+      "situation": "In a meeting, a colleague has been talking for ten minutes and is going in the wrong direction. Interrupt and bring the meeting back.",
+      "situationTr": "Toplantıda bir iş arkadaşın on dakikadır konuşuyor ve yanlış yöne gidiyor. Araya gir ve toplantıyı geri getir.",
+      "prompts": [
+        "Interrupt without sounding rude.",
+        "Show that you understood his point.",
+        "Say what the meeting has to decide.",
+        "Suggest where his point belongs."
+      ],
+      "promptsTr": [
+        "Kaba görünmeden araya gir.",
+        "Söylediğini anladığını göster.",
+        "Toplantının neye karar vermesi gerektiğini söyle.",
+        "Onun konusunun nereye ait olduğunu öner."
+      ],
+      "usefulPhrases": [
+        { "en": "Can I come in here for a second?", "tr": "Bir saniye araya girebilir miyim?" },
+        { "en": "If I have understood you, your concern is the cost.", "tr": "Doğru anladıysam kaygın maliyet." },
+        { "en": "We do need to decide the date before twelve.", "tr": "On ikiden önce tarihe karar vermemiz gerekiyor." },
+        { "en": "Could we take the budget question separately?", "tr": "Bütçe konusunu ayrı ele alabilir miyiz?" },
+        { "en": "I will put it on the list for next week.", "tr": "Onu gelecek haftanın listesine ekleyeceğim." }
+      ],
+      "glossary": [
+        { "w": "interrupt", "tr": "araya girmek" },
+        { "w": "concern", "tr": "kaygı" },
+        { "w": "budget", "tr": "bütçe" }
+      ]
+    },
+    {
+      "id": "b2-s-14",
+      "level": "B2",
+      "order": 14,
+      "kind": "speaking",
+      "title": "Kimsenin duymak istemediği risk",
+      "titleEn": "Raising a Risk Nobody Wants to Hear",
+      "minutes": 6,
+      "situation": "The team is about to start a project. You believe the timetable is impossible. Say so.",
+      "situationTr": "Ekip bir projeye başlamak üzere. Takvimin imkânsız olduğuna inanıyorsun. Bunu dile getir.",
+      "prompts": [
+        "Say what the risk is, in one sentence.",
+        "Give the evidence you have.",
+        "Say what you are not saying.",
+        "Propose what would make you comfortable."
+      ],
+      "promptsTr": [
+        "Riskin ne olduğunu tek cümlede söyle.",
+        "Elindeki kanıtı sun.",
+        "Neyi söylemediğini belirt.",
+        "Seni rahatlatacak şeyi öner."
+      ],
+      "usefulPhrases": [
+        { "en": "My worry is that the testing has three weeks and needs six.", "tr": "Kaygım, testin üç haftası olması ve altı hafta gerekmesi." },
+        { "en": "Last year the same stage took us seven weeks.", "tr": "Geçen yıl aynı aşama bizi yedi hafta almıştı." },
+        { "en": "I am not saying we should not do it.", "tr": "Yapmayalım demiyorum." },
+        { "en": "If we move the launch by a month, I am comfortable.", "tr": "Lansmanı bir ay kaydırırsak içim rahat eder." },
+        { "en": "I would rather say this now than in September.", "tr": "Bunu eylülde değil şimdi söylemeyi tercih ederim." }
+      ],
+      "glossary": [
+        { "w": "risk", "tr": "risk" },
+        { "w": "testing", "tr": "test aşaması" },
+        { "w": "launch", "tr": "lansman, piyasaya çıkış" }
+      ]
+    },
+    {
+      "id": "b2-s-15",
+      "level": "B2",
+      "order": 15,
+      "kind": "speaking",
+      "title": "Duyurulmuş bir kararı geri almak",
+      "titleEn": "Changing a Decision You Announced",
+      "minutes": 6,
+      "situation": "Two weeks ago you told the team the office would close on Fridays. New information means it will not. Tell them.",
+      "situationTr": "İki hafta önce ekibe ofisin cuma günleri kapanacağını söyledin. Yeni bilgiler bunun olmayacağını gösteriyor. Onlara söyle.",
+      "prompts": [
+        "Say clearly what has changed.",
+        "Explain what you know now that you did not know then.",
+        "Accept that this is difficult for them.",
+        "Say what will not change again."
+      ],
+      "promptsTr": [
+        "Neyin değiştiğini açıkça söyle.",
+        "O zaman bilmediğin neyi şimdi bildiğini açıkla.",
+        "Bunun onlar için zor olduğunu kabul et.",
+        "Bir daha değişmeyecek olanı söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The office will stay open on Fridays after all.", "tr": "Ofis sonuçta cuma günleri de açık kalacak." },
+        { "en": "When I told you, I had not seen the new contract.", "tr": "Size söylediğimde yeni sözleşmeyi görmemiştim." },
+        { "en": "I know some of you have already changed your plans.", "tr": "Bazılarınızın planlarını çoktan değiştirdiğini biliyorum." },
+        { "en": "That was my mistake, not yours.", "tr": "Bu benim hatamdı, sizin değil." },
+        { "en": "The working hours themselves are not changing.", "tr": "Çalışma saatlerinin kendisi değişmiyor." }
+      ],
+      "glossary": [
+        { "w": "announced", "tr": "duyurdu" },
+        { "w": "contract", "tr": "sözleşme" },
+        { "w": "after all", "tr": "sonuçta, neticede" }
+      ]
+    }
+  ]
+}

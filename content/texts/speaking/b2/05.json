@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "b2-speaking-05", "level": "B2", "range": "Senaryo 21-25" },
+  "items": [
+    {
+      "id": "b2-s-21",
+      "level": "B2",
+      "order": 21,
+      "kind": "speaking",
+      "title": "İşi devretmek",
+      "titleEn": "Handing Over Your Job",
+      "minutes": 6,
+      "situation": "You are leaving in two weeks. Explain your work to the person taking it on.",
+      "situationTr": "İki hafta sonra ayrılıyorsun. İşini devralacak kişiye işini anlat.",
+      "prompts": [
+        "Describe what the job really is, not the title.",
+        "Say what must not be forgotten.",
+        "Say who she should know.",
+        "Say what you would do differently in her place."
+      ],
+      "promptsTr": [
+        "Unvanı değil, işin gerçekte ne olduğunu anlat.",
+        "Unutulmaması gerekeni söyle.",
+        "Kimleri tanıması gerektiğini söyle.",
+        "Onun yerinde olsan neyi farklı yapacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "On paper it is reporting, but most of it is chasing people.", "tr": "Kâğıt üzerinde raporlama ama çoğu insanların peşinden koşmak." },
+        { "en": "The one thing that cannot slip is the monthly return.", "tr": "Kayması mümkün olmayan tek şey aylık bildirim." },
+        { "en": "Get to know Fatih in accounts before you need him.", "tr": "Muhasebedeki Fatih'i ihtiyacın olmadan önce tanı." },
+        { "en": "In your place I would say no to the Friday meeting.", "tr": "Senin yerinde olsam cuma toplantısına hayır derdim." },
+        { "en": "Call me in the first month if anything is unclear.", "tr": "İlk ay bir şey belirsiz kalırsa beni ara." }
+      ],
+      "names": ["Fatih"],
+      "glossary": [
+        { "w": "handing over", "tr": "devretme" },
+        { "w": "chasing", "tr": "peşinden koşmak" },
+        { "w": "slip", "tr": "aksamak, kaymak" },
+        { "w": "accounts", "tr": "muhasebe" }
+      ]
+    },
+    {
+      "id": "b2-s-22",
+      "level": "B2",
+      "order": 22,
+      "kind": "speaking",
+      "title": "İş yükü adil dağılmıyorsa",
+      "titleEn": "When the Work Is Not Shared Fairly",
+      "minutes": 6,
+      "situation": "In your team, three people do most of the work. Raise it with your manager.",
+      "situationTr": "Ekibinde işin çoğunu üç kişi yapıyor. Bunu müdürüne aç.",
+      "prompts": [
+        "Describe the pattern without naming names angrily.",
+        "Give one clear example.",
+        "Say what it is costing the team.",
+        "Suggest a fair way to measure it."
+      ],
+      "promptsTr": [
+        "Öfkeyle isim vermeden düzeni anlat.",
+        "Net bir örnek ver.",
+        "Bunun ekibe neye mal olduğunu söyle.",
+        "Ölçmenin adil bir yolunu öner."
+      ],
+      "usefulPhrases": [
+        { "en": "The same three of us cover almost every urgent job.", "tr": "Neredeyse her acil işi aynı üçümüz karşılıyoruz." },
+        { "en": "Last month that was eleven evenings out of twenty.", "tr": "Geçen ay bu, yirmi akşamın on biriydi." },
+        { "en": "Two of us are now looking at other jobs.", "tr": "İkimiz şu an başka işlere bakıyoruz." },
+        { "en": "I am not asking you to punish anybody.", "tr": "Kimseyi cezalandırmanızı istemiyorum." },
+        { "en": "Could we simply record who takes each urgent job?", "tr": "Her acil işi kimin aldığını basitçe kayda geçirebilir miyiz?" }
+      ],
+      "glossary": [
+        { "w": "pattern", "tr": "düzen, örüntü" },
+        { "w": "urgent", "tr": "acil" },
+        { "w": "punish", "tr": "cezalandırmak" },
+        { "w": "record", "tr": "kayda geçirmek" }
+      ]
+    },
+    {
+      "id": "b2-s-23",
+      "level": "B2",
+      "order": 23,
+      "kind": "speaking",
+      "title": "Bir eleştiriye cevap vermek",
+      "titleEn": "Answering Criticism",
+      "minutes": 6,
+      "situation": "In a meeting somebody says your report was one-sided. Answer without getting defensive.",
+      "situationTr": "Toplantıda biri raporunun tek taraflı olduğunu söylüyor. Savunmaya geçmeden cevap ver.",
+      "prompts": [
+        "Say what part of the criticism is fair.",
+        "Say what you disagree with and why.",
+        "Give the evidence behind your choice.",
+        "Say what you will change."
+      ],
+      "promptsTr": [
+        "Eleştirinin hangi kısmının haklı olduğunu söyle.",
+        "Neye katılmadığını ve nedenini söyle.",
+        "Seçiminin arkasındaki kanıtı sun.",
+        "Neyi değiştireceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "You are right that I only used our own figures.", "tr": "Yalnızca kendi rakamlarımızı kullandığım konusunda haklısınız." },
+        { "en": "Where I would disagree is the conclusion.", "tr": "Katılmadığım nokta vardığım sonuç." },
+        { "en": "I left the survey out because the sample was fifty people.", "tr": "Anketi dışarıda bıraktım çünkü örneklem elli kişiydi." },
+        { "en": "That is a fair point and I had not considered it.", "tr": "Haklı bir nokta ve bunu düşünmemiştim." },
+        { "en": "I will add the other figures and send it again on Monday.", "tr": "Diğer rakamları ekleyip pazartesi tekrar göndereceğim." }
+      ],
+      "glossary": [
+        { "w": "criticism", "tr": "eleştiri" },
+        { "w": "one-sided", "tr": "tek taraflı" },
+        { "w": "sample", "tr": "örneklem" },
+        { "w": "considered", "tr": "düşünmüş" }
+      ]
+    },
+    {
+      "id": "b2-s-24",
+      "level": "B2",
+      "order": 24,
+      "kind": "speaking",
+      "title": "İşin hakkında röportaj",
+      "titleEn": "Being Interviewed About Your Work",
+      "minutes": 6,
+      "situation": "A local radio station asks you about the project you run. Answer their questions.",
+      "situationTr": "Yerel bir radyo yürüttüğün projeyi soruyor. Sorularını yanıtla.",
+      "prompts": [
+        "Explain the project in two sentences.",
+        "Say who it is for.",
+        "Answer a question about the money.",
+        "Say what you would like listeners to do."
+      ],
+      "promptsTr": [
+        "Projeyi iki cümlede anlat.",
+        "Kimin için olduğunu söyle.",
+        "Parayla ilgili bir soruyu yanıtla.",
+        "Dinleyicilerden ne yapmalarını istediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "We collect food that shops would throw away and pass it on.", "tr": "Mağazaların atacağı yiyecekleri toplayıp dağıtıyoruz." },
+        { "en": "It is open to anybody in the neighborhood, with no forms.", "tr": "Mahalledeki herkese açık, form yok." },
+        { "en": "About sixty percent comes from the city and the rest from donations.", "tr": "Yaklaşık yüzde altmışı şehirden, gerisi bağışlardan geliyor." },
+        { "en": "Nobody here is paid, including me.", "tr": "Burada ben dâhil kimse maaş almıyor." },
+        { "en": "What we need most is drivers on Saturday mornings.", "tr": "En çok ihtiyacımız olan şey cumartesi sabahları sürücüler." }
+      ],
+      "glossary": [
+        { "w": "donations", "tr": "bağışlar" },
+        { "w": "neighborhood", "tr": "mahalle" },
+        { "w": "listeners", "tr": "dinleyiciler" }
+      ]
+    },
+    {
+      "id": "b2-s-25",
+      "level": "B2",
+      "order": 25,
+      "kind": "speaking",
+      "title": "Savunabileceğin bir tahmin",
+      "titleEn": "Making a Prediction You Can Defend",
+      "minutes": 6,
+      "situation": "In a class discussion you are asked how people will travel to work in twenty years. Give an answer you can defend.",
+      "situationTr": "Sınıf tartışmasında yirmi yıl sonra insanların işe nasıl gideceği soruluyor. Savunabileceğin bir cevap ver.",
+      "prompts": [
+        "Give your prediction clearly.",
+        "Say what it is based on.",
+        "Say what would prove you wrong.",
+        "Say how confident you are."
+      ],
+      "promptsTr": [
+        "Tahminini açıkça söyle.",
+        "Neye dayandığını söyle.",
+        "Seni yanlış çıkaracak şeyin ne olduğunu söyle.",
+        "Ne kadar emin olduğunu söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I think most people in big cities will not own a car.", "tr": "Büyük şehirlerdeki çoğu insanın araba sahibi olmayacağını düşünüyorum." },
+        { "en": "That is based on what has happened in the last ten years.", "tr": "Bu, son on yılda olanlara dayanıyor." },
+        { "en": "If fuel becomes much cheaper, I would be wrong.", "tr": "Yakıt çok ucuzlarsa yanılmış olurum." },
+        { "en": "I am fairly confident about the cities, less so about small towns.", "tr": "Şehirler konusunda oldukça eminim, küçük kasabalarda daha az." },
+        { "en": "Twenty years is long enough for one change and no more.", "tr": "Yirmi yıl tek bir değişime yeter, fazlasına değil." }
+      ],
+      "glossary": [
+        { "w": "prediction", "tr": "tahmin" },
+        { "w": "based on", "tr": "dayanan" },
+        { "w": "fuel", "tr": "yakıt" },
+        { "w": "confident", "tr": "emin" }
+      ]
+    }
+  ]
+}
