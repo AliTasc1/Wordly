@@ -1,0 +1,621 @@
+{
+  "_meta": {
+    "batch": "c1-grammar-03",
+    "level": "C1",
+    "range": "Ders 8-10 — gelecek, ettirgen, edilgen"
+  },
+  "lessons": [
+    {
+      "id": "c1-08-future-perfect",
+      "level": "C1",
+      "order": 8,
+      "title": "will have done — gelecekte tamamlanmış",
+      "topic": "Future perfect",
+      "canDo": "Gelecekteki bir noktaya kadar nelerin tamamlanmış olacağını anlatabilirim.",
+      "covers": [
+        "TA.FUTPF.AFF"
+      ],
+      "concept": {
+        "summary": "Future perfect gelecekteki bir noktadan geriye bakar: o ana kadar bitmiş olacak işi anlatır. Neredeyse her zaman bir bitiş noktasıyla birlikte gelir: by next month, in ten years, by the time … Bitiş noktası yoksa cümle havada kalır ve düz will yeterlidir.",
+        "formula": {
+          "left": "will have + V3",
+          "right": "by + gelecek nokta"
+        },
+        "table": [
+          {
+            "form": "olumlu",
+            "be": "will have + V3",
+            "example": "I will have finished by six."
+          },
+          {
+            "form": "olumsuz",
+            "be": "will not have + V3",
+            "example": "They won't have arrived yet."
+          },
+          {
+            "form": "edilgen",
+            "be": "will have been + V3",
+            "example": "The work will have been done."
+          },
+          {
+            "form": "bitiş noktası",
+            "be": "by / in / by the time",
+            "example": "by next month, in ten years"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "By next month I will have finished the course.",
+          "tr": "Gelecek aya kadar kursu bitirmiş olacağım.",
+          "note": "by + gelecek nokta."
+        },
+        {
+          "en": "In ten years the city will have doubled in size.",
+          "tr": "On yıl içinde kent iki katına çıkmış olacak.",
+          "note": "Gelecekten geriye bakış."
+        },
+        {
+          "en": "They won't have received the parcel by Friday.",
+          "tr": "Paketi cumaya kadar almamış olacaklar.",
+          "note": "Olumsuz biçim."
+        },
+        {
+          "en": "In August we will have been married for twenty years.",
+          "tr": "Ağustosta evliliğimizin yirminci yılı dolmuş olacak.",
+          "note": "Süre bildiren kullanım."
+        },
+        {
+          "en": "The repairs will have been completed before the season starts.",
+          "tr": "Onarımlar sezon başlamadan tamamlanmış olacak.",
+          "note": "Edilgen biçim."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "By next month I will finish the course.",
+          "right": "By next month I will have finished the course.",
+          "why": "by ile tamamlanmışlık anlatılıyorsa have + V3 gerekir."
+        },
+        {
+          "wrong": "By next year I will have finish the work.",
+          "right": "By next year I will have finished the work.",
+          "why": "have'den sonra üçüncü hâl gelir."
+        },
+        {
+          "wrong": "I will have finished it tomorrow morning.",
+          "right": "I will have finished it by tomorrow morning.",
+          "why": "Bitiş noktası by ile verilir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "By the end of the year, they ___ the new line.",
+          "options": [
+            "will have opened",
+            "will open",
+            "have opened",
+            "opened"
+          ],
+          "answer": 0,
+          "note": "Bitiş noktası → will have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "By six o'clock she ___ for nine hours.",
+          "options": [
+            "will have worked",
+            "will work",
+            "works",
+            "has worked"
+          ],
+          "answer": 0,
+          "note": "Süre + gelecek nokta."
+        },
+        {
+          "type": "choice",
+          "text": "We ___ have heard anything by then.",
+          "options": [
+            "will not",
+            "are not",
+            "do not",
+            "have not"
+          ],
+          "answer": 0,
+          "note": "Olumsuz → will not have."
+        },
+        {
+          "type": "gap",
+          "text": "By the time you land, the storm ___ .",
+          "options": [
+            "will have passed",
+            "will pass",
+            "passes"
+          ],
+          "answer": 0,
+          "note": "Varışa kadar geçmiş olacak."
+        },
+        {
+          "type": "choice",
+          "text": "The decision ___ have been taken before the vote.",
+          "options": [
+            "will",
+            "is",
+            "has",
+            "does"
+          ],
+          "answer": 0,
+          "note": "Edilgen: will have been + V3."
+        },
+        {
+          "type": "choice",
+          "text": "In five years this building ___ down.",
+          "options": [
+            "will have come",
+            "will come have",
+            "has come",
+            "comes"
+          ],
+          "answer": 0,
+          "note": "in + süre → gelecekte tamamlanmış."
+        },
+        {
+          "type": "choice",
+          "text": "By Friday I ___ the whole report twice.",
+          "options": [
+            "will have read",
+            "will read",
+            "read",
+            "have read"
+          ],
+          "answer": 0,
+          "note": "by Friday → will have + V3."
+        },
+        {
+          "type": "gap",
+          "text": "They ___ have left by the time we get there.",
+          "options": [
+            "will",
+            "are",
+            "do"
+          ],
+          "answer": 0,
+          "note": "will have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "By next spring the loan ___ been paid off.",
+          "options": [
+            "will have",
+            "has",
+            "is",
+            "does"
+          ],
+          "answer": 0,
+          "note": "Edilgen gelecek tamamlanmış."
+        },
+        {
+          "type": "choice",
+          "text": "In two hours the shops ___ .",
+          "options": [
+            "will have closed",
+            "will closing",
+            "have close",
+            "close will"
+          ],
+          "answer": 0,
+          "note": "in + süre ile tamamlanmışlık."
+        }
+      ]
+    },
+    {
+      "id": "c1-09-get-somebody-doing",
+      "level": "C1",
+      "order": 9,
+      "title": "get it working — bir işi yürür hâle getirmek",
+      "topic": "get + object + -ing",
+      "canDo": "Bir şeyi çalışır hâle getirmeyi ya da birini bir işe başlatmayı tek kalıpla anlatabilirim.",
+      "covers": [
+        "CAUS.get_NP_VVG"
+      ],
+      "concept": {
+        "summary": "get + nesne + V-ing, durmuş bir şeyi çalıştırmak ya da birini bir işe başlatmak demektir. Vurgu başlatmaktadır: iş bundan sonra sürer. get + nesne + V3 ile karıştırma: o, işi başkasına yaptırmaktır (I got the car repaired). -ing biçimi \"çalışır duruma getirmek\", V3 biçimi \"yaptırmak\" anlatır.",
+        "formula": {
+          "left": "get + nesne + V-ing",
+          "right": "= başlatmak, yürütmek"
+        },
+        "table": [
+          {
+            "form": "çalıştırmak",
+            "be": "get + nesne + V-ing",
+            "example": "We got the heating working."
+          },
+          {
+            "form": "başlatmak",
+            "be": "get + kişi + V-ing",
+            "example": "She got everyone talking."
+          },
+          {
+            "form": "yaptırmak",
+            "be": "get + nesne + V3",
+            "example": "I got the car repaired."
+          },
+          {
+            "form": "ikna etmek",
+            "be": "get + kişi + to + fiil",
+            "example": "I got him to sign it."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "We finally got the heating working.",
+          "tr": "Sonunda ısıtmayı çalıştırabildik.",
+          "note": "get + nesne + -ing: çalışır hâle getirmek."
+        },
+        {
+          "en": "One question got the whole room talking.",
+          "tr": "Tek bir soru bütün odayı konuşturdu.",
+          "note": "Birini bir işe başlatmak."
+        },
+        {
+          "en": "It took an hour to get the printer working again.",
+          "tr": "Yazıcıyı yeniden çalıştırmak bir saat sürdü.",
+          "note": "again ile sık kullanılır."
+        },
+        {
+          "en": "I got the car repaired last week.",
+          "tr": "Arabayı geçen hafta tamir ettirdim.",
+          "note": "V3 biçimi: yaptırmak — farklı anlam."
+        },
+        {
+          "en": "Her speech got people thinking about the cost.",
+          "tr": "Konuşması insanlara maliyeti düşündürdü.",
+          "note": "Başlatma anlamı."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "We got the heating work.",
+          "right": "We got the heating working.",
+          "why": "Bu kalıpta fiil -ing alır."
+        },
+        {
+          "wrong": "I got the car repairing last week.",
+          "right": "I got the car repaired last week.",
+          "why": "Yaptırma anlamında V3 gerekir."
+        },
+        {
+          "wrong": "She got everyone to talking.",
+          "right": "She got everyone talking.",
+          "why": "-ing biçiminden önce to gelmez."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "It took us all morning to get the engine ___ .",
+          "options": [
+            "running",
+            "run",
+            "to run",
+            "ran"
+          ],
+          "answer": 0,
+          "note": "get + nesne + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "His question got everybody ___ at once.",
+          "options": [
+            "arguing",
+            "argue",
+            "to argue",
+            "argued"
+          ],
+          "answer": 0,
+          "note": "Başlatma → -ing."
+        },
+        {
+          "type": "choice",
+          "text": "I got my laptop ___ at the shop yesterday.",
+          "options": [
+            "fixed",
+            "fixing",
+            "fix",
+            "to fix"
+          ],
+          "answer": 0,
+          "note": "Yaptırma → V3."
+        },
+        {
+          "type": "gap",
+          "text": "We could not get the fire ___ in the rain.",
+          "options": [
+            "burning",
+            "burn",
+            "burnt"
+          ],
+          "answer": 0,
+          "note": "Çalışır hâle getirmek → -ing."
+        },
+        {
+          "type": "choice",
+          "text": "The new teacher got the quiet students ___ .",
+          "options": [
+            "speaking",
+            "speak",
+            "spoken",
+            "to speaking"
+          ],
+          "answer": 0,
+          "note": "Birini bir işe başlatmak."
+        },
+        {
+          "type": "choice",
+          "text": "She got her brother ___ the form for her.",
+          "options": [
+            "to sign",
+            "signing",
+            "sign",
+            "signed"
+          ],
+          "answer": 0,
+          "note": "İkna etme → to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "Can you get the heater ___ before the guests arrive?",
+          "options": [
+            "working",
+            "work",
+            "worked",
+            "to working"
+          ],
+          "answer": 0,
+          "note": "get + nesne + -ing."
+        },
+        {
+          "type": "gap",
+          "text": "The film got us all ___ about our own families.",
+          "options": [
+            "thinking",
+            "think",
+            "thought"
+          ],
+          "answer": 0,
+          "note": "Başlatma anlamı."
+        },
+        {
+          "type": "choice",
+          "text": "I need to get these shoes ___ before winter.",
+          "options": [
+            "mended",
+            "mending",
+            "mend",
+            "to mend"
+          ],
+          "answer": 0,
+          "note": "Yaptırma → V3."
+        },
+        {
+          "type": "choice",
+          "text": "One small change got the whole system ___ properly.",
+          "options": [
+            "running",
+            "run",
+            "to run",
+            "ran"
+          ],
+          "answer": 0,
+          "note": "Çalışır hâle gelme → -ing."
+        }
+      ]
+    },
+    {
+      "id": "c1-10-passive-progressive-negative",
+      "level": "C1",
+      "order": 10,
+      "title": "isn't being used — şu anda yapılmayan iş",
+      "topic": "Present progressive passive, negative",
+      "canDo": "Şu anda yapılmakta olmayan bir işi resmî duyuru dilinde anlatabilirim.",
+      "covers": [
+        "PASS.PRSPRG.NEG"
+      ],
+      "concept": {
+        "summary": "Şimdiki zamanın edilgeni is/are being + V3'tür; olumsuzu not'u be'den sonra alır: is not being used. Bu biçim duyurularda ve raporlarda sık geçer, çünkü işi kimin yapmadığını söylemeden durumu bildirir. \"Şu anda kullanılmıyor\" ile \"hiç kullanılmıyor\" farklıdır: ikincisi düz edilgen ister (is not used).",
+        "formula": {
+          "left": "is / are not being + V3",
+          "right": "= şu anda yapılmıyor"
+        },
+        "table": [
+          {
+            "form": "olumlu",
+            "be": "is being + V3",
+            "example": "The road is being repaired."
+          },
+          {
+            "form": "olumsuz",
+            "be": "is not being + V3",
+            "example": "The road isn't being repaired."
+          },
+          {
+            "form": "çoğul",
+            "be": "are not being + V3",
+            "example": "The files aren't being checked."
+          },
+          {
+            "form": "genel doğru",
+            "be": "is not + V3",
+            "example": "This form isn't used any more."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "The bridge isn't being used at the moment.",
+          "tr": "Köprü şu anda kullanılmıyor.",
+          "note": "Şimdiki zamanın edilgen olumsuzu."
+        },
+        {
+          "en": "The upper floor isn't being cleaned this week.",
+          "tr": "Üst kat bu hafta temizlenmiyor.",
+          "note": "Geçici durum."
+        },
+        {
+          "en": "These machines aren't being checked often enough.",
+          "tr": "Bu makineler yeterince sık denetlenmiyor.",
+          "note": "Çoğul özne → aren't being."
+        },
+        {
+          "en": "The old entrance is not being kept open after six.",
+          "tr": "Eski giriş altıdan sonra açık tutulmuyor.",
+          "note": "Resmî duyuru dili."
+        },
+        {
+          "en": "This form isn't used any more.",
+          "tr": "Bu form artık kullanılmıyor.",
+          "note": "Genel doğru: düz edilgen, being yok."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "The room is not used today because of the meeting.",
+          "right": "The room is not being used today because of the meeting.",
+          "why": "Bugüne özgü geçici durum being ister; being'siz biçim genel doğru anlatır."
+        },
+        {
+          "wrong": "The road is not being repair.",
+          "right": "The road is not being repaired.",
+          "why": "being'den sonra üçüncü hâl gelir."
+        },
+        {
+          "wrong": "The files are not be checked at the moment.",
+          "right": "The files are not being checked at the moment.",
+          "why": "Şu an süren iş için being gerekir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "The hall ___ being used this afternoon.",
+          "options": [
+            "isn't",
+            "doesn't",
+            "hasn't",
+            "not is"
+          ],
+          "answer": 0,
+          "note": "be + not + being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The results aren't being ___ until Monday.",
+          "options": [
+            "published",
+            "publish",
+            "publishing",
+            "to publish"
+          ],
+          "answer": 0,
+          "note": "being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "These rooms ___ being cleaned this week.",
+          "options": [
+            "aren't",
+            "isn't",
+            "don't",
+            "hasn't"
+          ],
+          "answer": 0,
+          "note": "Çoğul özne → aren't."
+        },
+        {
+          "type": "gap",
+          "text": "The lift ___ being repaired right now.",
+          "options": [
+            "isn't",
+            "doesn't",
+            "not is"
+          ],
+          "answer": 0,
+          "note": "Tekil özne → isn't being."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence describes a general fact rather than this moment? ___ is the one.",
+          "options": [
+            "This entrance isn't used in winter.",
+            "This entrance isn't being used today.",
+            "This entrance isn't being used right now.",
+            "This entrance isn't being used at the moment."
+          ],
+          "answer": 0,
+          "note": "being yoksa genel doğru anlatılır."
+        },
+        {
+          "type": "choice",
+          "text": "The forms aren't ___ checked carefully enough.",
+          "options": [
+            "being",
+            "be",
+            "been",
+            "to be"
+          ],
+          "answer": 0,
+          "note": "are not being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The money isn't being ___ as the donors intended.",
+          "options": [
+            "spent",
+            "spend",
+            "spending",
+            "to spend"
+          ],
+          "answer": 0,
+          "note": "being + V3."
+        },
+        {
+          "type": "gap",
+          "text": "The machines ___ being serviced this month.",
+          "options": [
+            "aren't",
+            "isn't",
+            "doesn't"
+          ],
+          "answer": 0,
+          "note": "Çoğul → aren't being."
+        },
+        {
+          "type": "choice",
+          "text": "The data ___ being stored on that server any longer.",
+          "options": [
+            "isn't",
+            "doesn't",
+            "hasn't",
+            "not is"
+          ],
+          "answer": 0,
+          "note": "isn't being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The garden is not ___ looked after this summer.",
+          "options": [
+            "being",
+            "be",
+            "been",
+            "to be"
+          ],
+          "answer": 0,
+          "note": "is not being + V3."
+        }
+      ]
+    }
+  ]
+}

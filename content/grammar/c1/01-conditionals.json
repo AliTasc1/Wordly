@@ -1,0 +1,825 @@
+{
+  "_meta": {
+    "batch": "c1-grammar-01",
+    "level": "C1",
+    "range": "Ders 1-4 — koşul yapıları"
+  },
+  "lessons": [
+    {
+      "id": "c1-01-third-conditional",
+      "level": "C1",
+      "order": 1,
+      "title": "Üçüncü tip koşul — olmamış olanı konuşmak",
+      "topic": "Third conditional",
+      "canDo": "Geçmişte olmamış bir şeyin sonuçlarını tartışabilir, pişmanlık ve eleştiri belirtebilirim.",
+      "covers": [
+        "SUBJ.PASTPF.AFF"
+      ],
+      "concept": {
+        "summary": "Geçmişte gerçekleşmemiş bir koşulun, gerçekleşmemiş sonucunu anlatır. Yapı iki kat geriye gider: koşul past perfect, sonuç would have + V3. Türkçedeki \"-seydi … -ecekti\" kalıbının tam karşılığıdır ve gerçeğin tersini söylediğini baştan belli eder.",
+        "formula": {
+          "left": "If + had + V3",
+          "right": ", would have + V3"
+        },
+        "table": [
+          {
+            "form": "koşul",
+            "be": "If I had known",
+            "example": "If I had known, I would have called."
+          },
+          {
+            "form": "sonuç",
+            "be": "would have + V3",
+            "example": "We would have won."
+          },
+          {
+            "form": "başka kipler",
+            "be": "could / might have",
+            "example": "She might have passed."
+          },
+          {
+            "form": "karma tip",
+            "be": "geçmiş koşul, bugünkü sonuç",
+            "example": "If they hadn't helped, we would still be there."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "If I had known, I would have told you.",
+          "tr": "Bilseydim sana söylerdim.",
+          "note": "Bilmiyordum, söylemedim."
+        },
+        {
+          "en": "We would have missed the flight if the traffic had been worse.",
+          "tr": "Trafik daha kötü olsaydı uçuşu kaçırırdık.",
+          "note": "Kaçırmadık."
+        },
+        {
+          "en": "She could have finished it in time with more help.",
+          "tr": "Daha çok yardım olsa zamanında bitirebilirdi.",
+          "note": "could have = yapabilirdi ama yapmadı."
+        },
+        {
+          "en": "If they hadn't helped us, we would still be there.",
+          "tr": "Onlar yardım etmeseydi hâlâ orada olurduk.",
+          "note": "Koşul geçmiş, sonuç şimdi: karma tip."
+        },
+        {
+          "en": "He would never have applied if you hadn't pushed him.",
+          "tr": "Sen zorlamasaydın asla başvurmazdı.",
+          "note": "never sonucun içine girer."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "If I would have known, I would have told you.",
+          "right": "If I had known, I would have told you.",
+          "why": "would if'li cümlecikte yer almaz."
+        },
+        {
+          "wrong": "If I had known, I would told you.",
+          "right": "If I had known, I would have told you.",
+          "why": "Sonuç kısmında have düşmez."
+        },
+        {
+          "wrong": "If she had asked, I helped her.",
+          "right": "If she had asked, I would have helped her.",
+          "why": "Gerçekleşmemiş sonuç düz geçmiş zamanla anlatılmaz."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "If she ___ earlier, she would have caught the train.",
+          "options": [
+            "had left",
+            "would leave",
+            "left",
+            "has left"
+          ],
+          "answer": 0,
+          "note": "Koşul → had + V3."
+        },
+        {
+          "type": "choice",
+          "text": "We ___ if we had had more time.",
+          "options": [
+            "would have stayed",
+            "would stayed",
+            "had stayed",
+            "will have stayed"
+          ],
+          "answer": 0,
+          "note": "Sonuç → would have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ the job if he had applied.",
+          "options": [
+            "might have got",
+            "might got",
+            "might have get",
+            "might getting"
+          ],
+          "answer": 0,
+          "note": "İhtimalli sonuç."
+        },
+        {
+          "type": "gap",
+          "text": "If you ___ me, I would have helped.",
+          "options": [
+            "had asked",
+            "would ask",
+            "asked"
+          ],
+          "answer": 0,
+          "note": "Üçüncü tip koşul."
+        },
+        {
+          "type": "choice",
+          "text": "If the report ___ on time, nobody would have complained.",
+          "options": [
+            "had arrived",
+            "arrived",
+            "would arrive",
+            "has arrived"
+          ],
+          "answer": 0,
+          "note": "if + had + V3."
+        },
+        {
+          "type": "choice",
+          "text": "They ___ the house if the price had been lower.",
+          "options": [
+            "would have bought",
+            "would buy",
+            "had bought",
+            "bought"
+          ],
+          "answer": 0,
+          "note": "would have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "If we had taken the other road, we ___ there by now.",
+          "options": [
+            "would be",
+            "would have been being",
+            "had been",
+            "will be"
+          ],
+          "answer": 0,
+          "note": "Karma tip: geçmiş koşul, bugünkü sonuç."
+        },
+        {
+          "type": "gap",
+          "text": "She ___ have said that if she had known you were listening.",
+          "options": [
+            "would never",
+            "never would have had",
+            "would not never"
+          ],
+          "answer": 0,
+          "note": "never, would ile have arasına girer."
+        },
+        {
+          "type": "choice",
+          "text": "If I ___ him, I would have recognized his voice.",
+          "options": [
+            "had met",
+            "met",
+            "would meet",
+            "have met"
+          ],
+          "answer": 0,
+          "note": "Koşul geçmişte gerçekleşmedi."
+        },
+        {
+          "type": "choice",
+          "text": "The team ___ if the referee had seen the foul.",
+          "options": [
+            "could have lost",
+            "could lost",
+            "could have lose",
+            "could losing"
+          ],
+          "answer": 0,
+          "note": "could have + V3."
+        }
+      ]
+    },
+    {
+      "id": "c1-02-by-the-time",
+      "level": "C1",
+      "order": 2,
+      "title": "by the time — hangi iş önce bitmişti",
+      "topic": "by the time + perfect tenses",
+      "canDo": "İki olayın hangisinin önce tamamlandığını tek cümlede kesin biçimde anlatabilirim.",
+      "covers": [
+        "CL.by_the_time"
+      ],
+      "concept": {
+        "summary": "by the time \"-e kadar, -diğinde\" demektir ve her zaman iki olay arasında sıra kurar: cümleciğin anlattığı an geldiğinde, esas cümlenin işi çoktan bitmiştir. Geçmişte esas cümle past perfect, gelecekte will have + V3 olur. Cümleciğin kendisi asla gelecek zaman almaz.",
+        "formula": {
+          "left": "By the time + özne + fiil",
+          "right": ", had / will have + V3"
+        },
+        "table": [
+          {
+            "form": "geçmiş",
+            "be": "by the time + past simple",
+            "example": "By the time we arrived, it had closed."
+          },
+          {
+            "form": "gelecek",
+            "be": "by the time + present simple",
+            "example": "By the time you read this, I will have left."
+          },
+          {
+            "form": "cümlecikte",
+            "be": "will kullanılmaz",
+            "example": "By the time he comes, not: will come."
+          },
+          {
+            "form": "by ile fark",
+            "be": "by + tarih",
+            "example": "By Friday the work will have finished."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "By the time the police arrived, the thieves had gone.",
+          "tr": "Polis geldiğinde hırsızlar gitmişti.",
+          "note": "İki geçmiş olay, biri önce."
+        },
+        {
+          "en": "By the time she finished school, her family had moved three times.",
+          "tr": "O okulu bitirene kadar ailesi üç kez taşınmıştı.",
+          "note": "Uzun bir süre boyunca olan iş."
+        },
+        {
+          "en": "By the time you read this, I will have left the country.",
+          "tr": "Sen bunu okuduğunda ben ülkeden ayrılmış olacağım.",
+          "note": "Gelecek için will have + V3."
+        },
+        {
+          "en": "By the time we noticed the mistake, the letters had been sent.",
+          "tr": "Hatayı fark ettiğimizde mektuplar gönderilmişti.",
+          "note": "Edilgen biçimde de kurulur."
+        },
+        {
+          "en": "By the time the meeting ends, the shops will have closed.",
+          "tr": "Toplantı bittiğinde dükkânlar kapanmış olacak.",
+          "note": "Cümlecikte geniş zaman, esas cümlede gelecek."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "By the time we arrived, the shop closed.",
+          "right": "By the time we arrived, the shop had closed.",
+          "why": "Önce olan iş past perfect ister."
+        },
+        {
+          "wrong": "By the time he will come, we will have finished.",
+          "right": "By the time he comes, we will have finished.",
+          "why": "Zaman cümleciğinde will kullanılmaz."
+        },
+        {
+          "wrong": "By the time I will be forty, I will have paid the loan.",
+          "right": "By the time I am forty, I will have paid the loan.",
+          "why": "Cümlecik geniş zaman alır."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "By the time I got home, everyone ___ .",
+          "options": [
+            "had eaten",
+            "has eaten",
+            "ate",
+            "was eating"
+          ],
+          "answer": 0,
+          "note": "by the time + past perfect."
+        },
+        {
+          "type": "choice",
+          "text": "By the time the train ___ , we had been waiting an hour.",
+          "options": [
+            "arrived",
+            "had arrived",
+            "has arrived",
+            "arrives"
+          ],
+          "answer": 0,
+          "note": "Cümlecikte düz geçmiş."
+        },
+        {
+          "type": "choice",
+          "text": "By the time you ___ this letter, I will be in Ankara.",
+          "options": [
+            "get",
+            "will get",
+            "got",
+            "are getting"
+          ],
+          "answer": 0,
+          "note": "Zaman cümleciğinde will yok."
+        },
+        {
+          "type": "gap",
+          "text": "By the time the doctor came, the pain ___ .",
+          "options": [
+            "had stopped",
+            "has stopped",
+            "stops"
+          ],
+          "answer": 0,
+          "note": "Önce biten iş → had + V3."
+        },
+        {
+          "type": "choice",
+          "text": "By next summer they ___ here for ten years.",
+          "options": [
+            "will have lived",
+            "will live",
+            "have lived",
+            "lived"
+          ],
+          "answer": 0,
+          "note": "Gelecekten geriye bakış."
+        },
+        {
+          "type": "choice",
+          "text": "By the time we found the hotel, it ___ dark.",
+          "options": [
+            "had got",
+            "has got",
+            "gets",
+            "was getting"
+          ],
+          "answer": 0,
+          "note": "İkinci olay önce tamamlandı."
+        },
+        {
+          "type": "choice",
+          "text": "By the time the results ___ , most students had gone home.",
+          "options": [
+            "came out",
+            "had come out",
+            "come out",
+            "will come out"
+          ],
+          "answer": 0,
+          "note": "Cümlecik düz geçmiş alır."
+        },
+        {
+          "type": "gap",
+          "text": "By the time she is thirty, she ___ two degrees.",
+          "options": [
+            "will have finished",
+            "will finish",
+            "finishes"
+          ],
+          "answer": 0,
+          "note": "Gelecekte tamamlanmış iş."
+        },
+        {
+          "type": "choice",
+          "text": "By the time the fire brigade arrived, the roof ___ .",
+          "options": [
+            "had fallen in",
+            "has fallen in",
+            "fell in",
+            "was falling in"
+          ],
+          "answer": 0,
+          "note": "Varıştan önce olan iş."
+        },
+        {
+          "type": "choice",
+          "text": "By the time we get to the theatre, the play ___ .",
+          "options": [
+            "will have started",
+            "will start",
+            "started",
+            "starts"
+          ],
+          "answer": 0,
+          "note": "Vardığımızda çoktan başlamış olacak."
+        }
+      ]
+    },
+    {
+      "id": "c1-03-if-should",
+      "level": "C1",
+      "order": 3,
+      "title": "If you should — ihtimali uzak koşul",
+      "topic": "if + should",
+      "canDo": "Bir ihtimali uzak görerek, resmî bir tonda koşul kurabilirim.",
+      "covers": [
+        "SUBJ.if_should"
+      ],
+      "concept": {
+        "summary": "if + should, koşulun gerçekleşme ihtimalini düşürür: \"bir ihtimal olursa\". should burada gereklilik bildirmez, olasılığı zayıflatır. Resmî yazışmada ve talimatlarda geçer; günlük konuşmada yerini düz if + geniş zaman alır.",
+        "formula": {
+          "left": "If + özne + should + yalın fiil",
+          "right": ", esas cümle"
+        },
+        "table": [
+          {
+            "form": "düşük ihtimal",
+            "be": "if + should",
+            "example": "If you should see him, tell him to call."
+          },
+          {
+            "form": "sonuç emir",
+            "be": "yalın fiil",
+            "example": "If it should rain, take the car."
+          },
+          {
+            "form": "sonuç will",
+            "be": "will + fiil",
+            "example": "If anything should change, we will write."
+          },
+          {
+            "form": "fiil biçimi",
+            "be": "should + yalın",
+            "example": "not: should rains"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "If it should rain tomorrow, we will cancel the trip.",
+          "tr": "Yarın yağmur yağacak olursa geziyi iptal ederiz.",
+          "note": "Yağmur beklenmiyor."
+        },
+        {
+          "en": "If you should need anything, the office is open until six.",
+          "tr": "Bir şeye ihtiyacınız olursa ofis altıya kadar açık.",
+          "note": "Nazik, resmî ton."
+        },
+        {
+          "en": "If the machine should stop, press the red button.",
+          "tr": "Makine duracak olursa kırmızı düğmeye basın.",
+          "note": "Talimat dilinde sık."
+        },
+        {
+          "en": "If anyone should ask, say nothing about the price.",
+          "tr": "Biri soracak olursa fiyat hakkında bir şey söyleme.",
+          "note": "anyone ile sık kullanılır."
+        },
+        {
+          "en": "If the results should be delayed, candidates will be informed.",
+          "tr": "Sonuçlar gecikecek olursa adaylara bilgi verilecek.",
+          "note": "Resmî duyuru dili."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "If it should rains tomorrow, we will cancel.",
+          "right": "If it should rain tomorrow, we will cancel.",
+          "why": "Kipten sonra fiil yalın kalır."
+        },
+        {
+          "wrong": "If you should to need help, call me.",
+          "right": "If you should need help, call me.",
+          "why": "should ile fiil arasına to girmez."
+        },
+        {
+          "wrong": "If it should rain, we would cancel.",
+          "right": "If it should rain, we will cancel.",
+          "why": "Bu yapı gerçek ihtimali anlatır, sonucu would ile kurulmaz."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "If you ___ change your mind, the offer stays open.",
+          "options": [
+            "should",
+            "would",
+            "will",
+            "shall to"
+          ],
+          "answer": 0,
+          "note": "Düşük ihtimal → if + should."
+        },
+        {
+          "type": "choice",
+          "text": "If the alarm should ___ , leave by the nearest exit.",
+          "options": [
+            "sound",
+            "sounds",
+            "sounded",
+            "to sound"
+          ],
+          "answer": 0,
+          "note": "should + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "If anything should ___ wrong, we will contact you at once.",
+          "options": [
+            "go",
+            "goes",
+            "went",
+            "going"
+          ],
+          "answer": 0,
+          "note": "Kipten sonra yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "If you should ___ any errors, please write to the editor.",
+          "options": [
+            "notice",
+            "notices",
+            "noticed"
+          ],
+          "answer": 0,
+          "note": "should + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "If the payment should be late, the bank ___ you.",
+          "options": [
+            "will inform",
+            "would inform",
+            "informs would",
+            "will informed"
+          ],
+          "answer": 0,
+          "note": "Sonuç will ile kurulur."
+        },
+        {
+          "type": "choice",
+          "text": "If she should ___ before us, ask her to wait.",
+          "options": [
+            "arrive",
+            "arrives",
+            "arrived",
+            "arriving"
+          ],
+          "answer": 0,
+          "note": "should + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ the weather should turn, the match will be moved.",
+          "options": [
+            "If",
+            "That",
+            "Unless",
+            "So"
+          ],
+          "answer": 0,
+          "note": "Bu yapı if ile kurulur."
+        },
+        {
+          "type": "gap",
+          "text": "If anyone should ___ for me, I am in the back office.",
+          "options": [
+            "ask",
+            "asks",
+            "asked"
+          ],
+          "answer": 0,
+          "note": "anyone + should + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "If the file should ___ , we keep a second copy on paper.",
+          "options": [
+            "be lost",
+            "lose",
+            "lost",
+            "be losing"
+          ],
+          "answer": 0,
+          "note": "Edilgen anlam → should be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "If you should be ___ in the position, send us your papers.",
+          "options": [
+            "interested",
+            "interesting",
+            "interest",
+            "to interest"
+          ],
+          "answer": 0,
+          "note": "Kişi ilgi duyuyor → interested."
+        }
+      ]
+    },
+    {
+      "id": "c1-04-should-inversion",
+      "level": "C1",
+      "order": 4,
+      "title": "Should you need — if'siz devrik koşul",
+      "topic": "Inverted conditional with should",
+      "canDo": "Resmî yazışmada koşulu if kullanmadan kurabilirim.",
+      "covers": [
+        "SUBJ.INV.should"
+      ],
+      "concept": {
+        "summary": "Resmî dilde koşul, if atılıp should öne alınarak kurulur: Should you need help, call us. Anlam if + should ile aynıdır; fark tondadır. Devrik biçim yazılı ve resmî metne özgüdür, günlük konuşmada kullanılmaz. if ile devrik biçim bir arada bulunmaz.",
+        "formula": {
+          "left": "If + özne + should + fiil",
+          "right": "Should + özne + fiil"
+        },
+        "table": [
+          {
+            "form": "if'li",
+            "be": "If you should need",
+            "example": "If you should need help, call us."
+          },
+          {
+            "form": "devrik",
+            "be": "Should you need",
+            "example": "Should you need help, call us."
+          },
+          {
+            "form": "olumsuz",
+            "be": "Should you not wish",
+            "example": "Should you not wish to attend, let us know."
+          },
+          {
+            "form": "if ile birlikte",
+            "be": "kullanılmaz",
+            "example": "not: Should you need help, if call us."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Should you require further information, please contact us.",
+          "tr": "Daha fazla bilgiye ihtiyaç duyarsanız lütfen bizimle iletişime geçin.",
+          "note": "Resmî yazışmanın standart kapanışı."
+        },
+        {
+          "en": "Should the weather change, the event will move indoors.",
+          "tr": "Hava değişirse etkinlik içeriye alınacak.",
+          "note": "Düşük ihtimalli koşul."
+        },
+        {
+          "en": "Should anything go wrong, call this number.",
+          "tr": "Bir aksilik olursa bu numarayı arayın.",
+          "note": "anything ile sık kullanılır."
+        },
+        {
+          "en": "Should you decide to accept, sign both copies.",
+          "tr": "Kabul etmeye karar verirseniz iki nüshayı da imzalayın.",
+          "note": "Talimat dilinde."
+        },
+        {
+          "en": "Should you not receive the parcel by Friday, let us know.",
+          "tr": "Paketi cumaya kadar almazsanız bize bildirin.",
+          "note": "Olumsuzda not özneden sonra gelir."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Should you need help, if call me.",
+          "right": "Should you need help, call me.",
+          "why": "Devrik biçim if'in yerini alır, ikisi bir arada olmaz."
+        },
+        {
+          "wrong": "Should you to need help, call me.",
+          "right": "Should you need help, call me.",
+          "why": "Kip fiilden sonra to gelmez."
+        },
+        {
+          "wrong": "Should it rains tomorrow, we will cancel.",
+          "right": "Should it rain tomorrow, we will cancel.",
+          "why": "Kipten sonra fiil yalın kalır."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ you need assistance, our staff will be happy to help.",
+          "options": [
+            "Should",
+            "If should",
+            "Would",
+            "Shall"
+          ],
+          "answer": 0,
+          "note": "Devrik koşul Should ile başlar."
+        },
+        {
+          "type": "choice",
+          "text": "Should the flight ___ delayed, passengers will be contacted.",
+          "options": [
+            "be",
+            "is",
+            "being",
+            "to be"
+          ],
+          "answer": 0,
+          "note": "should + be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Should you ___ to cancel, there is no charge.",
+          "options": [
+            "wish",
+            "wishes",
+            "wished",
+            "wishing"
+          ],
+          "answer": 0,
+          "note": "Kipten sonra yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "Should anything ___ , I will call you at once.",
+          "options": [
+            "change",
+            "changes",
+            "changed"
+          ],
+          "answer": 0,
+          "note": "anything + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "Should you ___ wish to take part, simply ignore this letter.",
+          "options": [
+            "not",
+            "no",
+            "do not",
+            "not to"
+          ],
+          "answer": 0,
+          "note": "Olumsuzda not özneden sonra gelir."
+        },
+        {
+          "type": "choice",
+          "text": "Should you ___ her before Friday, give her my number.",
+          "options": [
+            "see",
+            "sees",
+            "saw",
+            "to see"
+          ],
+          "answer": 0,
+          "note": "Kipten sonra yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ the goods arrive damaged, we will replace them free of charge.",
+          "options": [
+            "Should",
+            "Would",
+            "Will",
+            "Shall to"
+          ],
+          "answer": 0,
+          "note": "Resmî koşul → Should."
+        },
+        {
+          "type": "gap",
+          "text": "Should the system ___ down, use the paper forms.",
+          "options": [
+            "go",
+            "goes",
+            "went"
+          ],
+          "answer": 0,
+          "note": "Kipten sonra yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "Should there ___ any questions, we will answer them at the end.",
+          "options": [
+            "be",
+            "is",
+            "are",
+            "being"
+          ],
+          "answer": 0,
+          "note": "there + be, kipten sonra yalın."
+        },
+        {
+          "type": "choice",
+          "text": "Should you ___ any difficulty, our office will assist you.",
+          "options": [
+            "experience",
+            "experiences",
+            "experienced",
+            "experiencing"
+          ],
+          "answer": 0,
+          "note": "Should + özne + yalın fiil."
+        }
+      ]
+    }
+  ]
+}

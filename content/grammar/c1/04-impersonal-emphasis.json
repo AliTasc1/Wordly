@@ -1,0 +1,134 @@
+{
+  "_meta": { "batch": "c1-grammar-04", "level": "C1", "range": "Ders 11-13 — kişisiz anlatım ve vurgu" },
+  "lessons": [
+    {
+      "id": "c1-11-it-that-clauses",
+      "level": "C1",
+      "order": 11,
+      "title": "It is clear that — kişisiz değerlendirme",
+      "topic": "it + be + adjective + that-clause",
+      "canDo": "Akademik ve resmî üslupta kişisiz, nesnel değerlendirme cümleleri kurabilirim.",
+      "covers": ["PP.it_that.AFF"],
+      "concept": {
+        "summary": "Akademik yazının temel aracı: gerçek özneyi cümlenin sonuna atıp başa sahte özne it koymak. Böylece \"ben düşünüyorum\" demeden değerlendirme yapılabilir. Baştaki it hiçbir şeyi göstermez, yalnızca özne yerini doldurur; bu yüzden cümlenin sonunda tekrar edilmez. seem, appear ve edilgen fiillerle de kurulur.",
+        "formula": { "left": "It is + sıfat + that", "right": "+ cümle" },
+        "table": [
+          { "form": "sıfatla", "be": "It is clear that …", "example": "It is clear that the policy has failed." },
+          { "form": "edilgen fiille", "be": "It is said that …", "example": "It is said that the house is empty." },
+          { "form": "seem ile", "be": "It seems that …", "example": "It seems that nobody told her." },
+          { "form": "olumsuz", "be": "It is not certain that …", "example": "It is not certain that they will come." }
+        ]
+      },
+      "examples": [
+        { "en": "It is clear that the policy has failed.", "tr": "Politikanın başarısız olduğu açık.", "note": "Değerlendirme kişisiz kuruldu." },
+        { "en": "It is widely accepted that the data is incomplete.", "tr": "Verilerin eksik olduğu genel kabul görüyor.", "note": "Akademik yazıda çok sık." },
+        { "en": "It seems unlikely that they will agree.", "tr": "Kabul etmeleri pek olası görünmüyor.", "note": "seem ile de kurulur." },
+        { "en": "It is often argued that the law came too late.", "tr": "Yasanın çok geç geldiği sık sık ileri sürülür.", "note": "Kaynağı belirtmeden görüş aktarma." },
+        { "en": "It is not certain that the figures are reliable.", "tr": "Rakamların güvenilir olduğu kesin değil.", "note": "Olumsuz biçim." }
+      ],
+      "mistakes": [
+        { "wrong": "It is clear that the policy has failed it.", "right": "It is clear that the policy has failed.", "why": "Baştaki it sahte öznedir, sonda tekrar edilmez." },
+        { "wrong": "Is clear that the policy has failed.", "right": "It is clear that the policy has failed.", "why": "İngilizcede özne düşmez; sahte özne it şarttır." },
+        { "wrong": "It is clear the policy has failed that.", "right": "It is clear that the policy has failed.", "why": "that cümleciğin başında durur." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "___ is clear that the numbers do not add up.", "options": ["It", "That", "This", "There"], "answer": 0, "note": "Sahte özne → It." },
+        { "type": "choice", "text": "It is widely ___ that the method is out of date.", "options": ["believed", "believe", "believing", "belief"], "answer": 0, "note": "Edilgen: is + V3." },
+        { "type": "choice", "text": "It seems ___ that the two reports were written by one person.", "options": ["likely", "like", "alike", "likeness"], "answer": 0, "note": "seem + sıfat + that." },
+        { "type": "gap", "text": "It is important ___ every applicant reads the notes.", "options": ["that", "what", "which"], "answer": 0, "note": "it + sıfat + that + cümle." },
+        { "type": "choice", "text": "It ___ not certain that the funding will continue.", "options": ["is", "has", "does", "are"], "answer": 0, "note": "It is not certain that …" },
+        { "type": "choice", "text": "It is often ___ that the system favors large firms.", "options": ["argued", "argue", "arguing", "argument"], "answer": 0, "note": "Edilgen ile görüş aktarma." },
+        { "type": "choice", "text": "It appears ___ nobody checked the second column.", "options": ["that", "what", "which", "who"], "answer": 0, "note": "appear + that." },
+        { "type": "gap", "text": "It is ___ that the meeting was recorded.", "options": ["possible", "possibly", "possibility"], "answer": 0, "note": "it is + sıfat." },
+        { "type": "choice", "text": "Which sentence keeps the writer out of it? ___ is the one.", "options": ["It is clear that the plan failed.", "I think the plan failed.", "In my opinion the plan failed.", "I would say the plan failed."], "answer": 0, "note": "Kişisiz yapı yazarı cümleden çıkarır." },
+        { "type": "choice", "text": "It has ___ suggested that the deadline should move.", "options": ["been", "being", "be", "was"], "answer": 0, "note": "Present perfect edilgen: has been + V3." }
+      ]
+    },
+    {
+      "id": "c1-12-emphatic-did",
+      "level": "C1",
+      "order": 12,
+      "title": "I did send it — itiraza karşı vurgu",
+      "topic": "Emphatic do / did",
+      "canDo": "Söylediğim şeye inanılmadığında cümleyi vurgulayarak tekrar edebilirim.",
+      "covers": ["V.INT.did"],
+      "concept": {
+        "summary": "Olumlu bir cümleye do, does ya da did eklemek vurgu verir: söyleneni tartışan birine karşı \"gerçekten yaptım\" demektir. Yardımcı fiil zamanı ve kişiyi taşır, esas fiil yalın kalır. Konuşmada vurgu do üzerindedir. Yazıda da kullanılır ama itiraz ya da karşıtlık varsa anlamlıdır, yoksa cümle tuhaf durur.",
+        "formula": { "left": "do / does / did + yalın fiil", "right": "= gerçekten yaptım" },
+        "table": [
+          { "form": "geniş zaman", "be": "do / does + yalın", "example": "She does know the answer." },
+          { "form": "geçmiş", "be": "did + yalın", "example": "I did send the email." },
+          { "form": "emir", "be": "Do + yalın", "example": "Do sit down." },
+          { "form": "karşıtlıkla", "be": "… but …", "example": "I did try, but it was too late." }
+        ]
+      },
+      "examples": [
+        { "en": "I did send the email — check your spam folder.", "tr": "E-postayı gönderdim gerçekten, spam klasörüne bak.", "note": "İtiraza karşı vurgu." },
+        { "en": "She does understand the problem; she just disagrees.", "tr": "Sorunu gerçekten anlıyor; sadece katılmıyor.", "note": "Karşıtlıkla birlikte." },
+        { "en": "We did warn them twice before the deadline.", "tr": "Son tarihten önce onları iki kez gerçekten uyardık.", "note": "Geçmişte vurgu did ile." },
+        { "en": "Do sit down and make yourself comfortable.", "tr": "Lütfen oturun, rahatınıza bakın.", "note": "Nazik emirde vurgu." },
+        { "en": "He did apologize, but nobody heard him.", "tr": "Özür diledi gerçekten ama kimse duymadı.", "note": "but ile karşıtlık." }
+      ],
+      "mistakes": [
+        { "wrong": "I did sent the email.", "right": "I did send the email.", "why": "did vurgusundan sonra fiil yalın kalır." },
+        { "wrong": "She does knows the answer.", "right": "She does know the answer.", "why": "Kişi eki yardımcı fiile geçer, esas fiil yalın kalır." },
+        { "wrong": "I did not send it, I did send it.", "right": "I did send it.", "why": "Vurgu yalnızca olumlu cümlede kurulur; olumsuzda do zaten vardır." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "I ___ tell her about the meeting; she must have forgotten.", "options": ["did", "was", "have", "am"], "answer": 0, "note": "Geçmişte vurgu → did + yalın fiil." },
+        { "type": "choice", "text": "She does ___ the answer, whatever you think.", "options": ["know", "knows", "knew", "knowing"], "answer": 0, "note": "Yardımcı fiilden sonra yalın fiil." },
+        { "type": "choice", "text": "We ___ ask for permission before we started.", "options": ["did", "were", "have", "are"], "answer": 0, "note": "did + yalın fiil." },
+        { "type": "gap", "text": "He ___ apologize, but it was too late.", "options": ["did", "was", "has"], "answer": 0, "note": "Karşıtlıkla vurgu." },
+        { "type": "choice", "text": "___ come in and sit down.", "options": ["Do", "Does", "Did", "Doing"], "answer": 0, "note": "Nazik emirde Do + yalın fiil." },
+        { "type": "choice", "text": "They ___ pay us in the end, though it took months.", "options": ["did", "were", "have been", "are"], "answer": 0, "note": "did ile vurgu." },
+        { "type": "choice", "text": "The letter ___ arrive; I signed for it myself.", "options": ["did", "was", "has", "is"], "answer": 0, "note": "İtiraza karşı vurgu." },
+        { "type": "gap", "text": "She ___ seem tired at the interview.", "options": ["did", "was", "has"], "answer": 0, "note": "did + yalın fiil." },
+        { "type": "choice", "text": "In which case is emphatic did natural? ___ is the case.", "options": ["Somebody says you never told them.", "You are telling a story for the first time.", "You are writing a shopping list.", "You are giving a date."], "answer": 0, "note": "Vurgu, itiraz ya da karşıtlık varsa anlamlıdır." },
+        { "type": "choice", "text": "I ___ like the film, but I would not watch it twice.", "options": ["did", "was", "have", "am"], "answer": 0, "note": "but ile karşıtlık." }
+      ]
+    },
+    {
+      "id": "c1-13-negative-there-questions",
+      "level": "C1",
+      "order": 13,
+      "title": "Isn't there …? — şaşkınlık ve sitem sorusu",
+      "topic": "Negative questions with there",
+      "canDo": "Beklediğim şeyin olmadığını fark ettiğimde şaşkınlık ya da sitem bildiren soru sorabilirim.",
+      "covers": ["EX.there.INT.NEG"],
+      "concept": {
+        "summary": "there is / there are yapısının olumsuz sorusu, bilgi istemekten çok tepki bildirir: konuşmacı bir şeyin var olmasını bekliyordu ve olmadığını görüyor. Günlük dilde kısaltılmış biçim kullanılır: Isn't there …? / Aren't there …?. Kısaltmasız biçim yalnızca çok resmî yazıda geçer ve not özneden sonra gelir.",
+        "formula": { "left": "Isn't there + tekil?", "right": "Aren't there + çoğul?" },
+        "table": [
+          { "form": "tekil", "be": "Isn't there …?", "example": "Isn't there a later train?" },
+          { "form": "çoğul", "be": "Aren't there …?", "example": "Aren't there any seats left?" },
+          { "form": "geçmiş", "be": "Wasn't there …?", "example": "Wasn't there a shop here?" },
+          { "form": "resmî", "be": "Is there not …?", "example": "Is there not a simpler way?" }
+        ]
+      },
+      "examples": [
+        { "en": "Isn't there any other option?", "tr": "Başka seçenek yok mu gerçekten?", "note": "Olumsuz soru, sitem tonu taşır." },
+        { "en": "Aren't there any seats left on the evening flight?", "tr": "Akşam uçuşunda hiç yer kalmadı mı?", "note": "Çoğul → Aren't there." },
+        { "en": "Wasn't there a bakery on this corner?", "tr": "Bu köşede bir fırın yok muydu?", "note": "Geçmişe dair şaşkınlık." },
+        { "en": "Isn't there anybody who can sign this today?", "tr": "Bunu bugün imzalayabilecek kimse yok mu?", "note": "anybody ile sık kullanılır." },
+        { "en": "Is there not a simpler way of doing this?", "tr": "Bunu yapmanın daha basit bir yolu yok mu?", "note": "Kısaltmasız biçim: çok resmî." }
+      ],
+      "mistakes": [
+        { "wrong": "Is not there any other option?", "right": "Isn't there any other option?", "why": "Kısaltmasız biçimde not özneden sonra gelir: Is there not …?" },
+        { "wrong": "Isn't there any seats left?", "right": "Aren't there any seats left?", "why": "Çoğul özne are ister." },
+        { "wrong": "Isn't it there a later train?", "right": "Isn't there a later train?", "why": "Bu yapıda it kullanılmaz." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "___ there a later bus to the airport?", "options": ["Isn't", "Aren't", "Wasn't there not", "Is not"], "answer": 0, "note": "Tekil → Isn't there." },
+        { "type": "choice", "text": "___ there any tickets left for Saturday?", "options": ["Aren't", "Isn't", "Wasn't", "Is not"], "answer": 0, "note": "Çoğul → Aren't there." },
+        { "type": "choice", "text": "___ there a chemist on this street last year?", "options": ["Wasn't", "Isn't", "Aren't", "Weren't"], "answer": 0, "note": "Geçmiş tekil → Wasn't there." },
+        { "type": "gap", "text": "___ there anybody at the desk?", "options": ["Isn't", "Aren't", "Weren't"], "answer": 0, "note": "anybody tekil sayılır." },
+        { "type": "choice", "text": "In a very formal report you would write: ___", "options": ["Is there not a simpler method?", "Is not there a simpler method?", "Isn't there not a simpler method?", "There is not a simpler method?"], "answer": 0, "note": "Kısaltmasız biçimde not özneden sonra gelir." },
+        { "type": "choice", "text": "___ there two lifts in this building?", "options": ["Aren't", "Isn't", "Wasn't", "Is not"], "answer": 0, "note": "two → çoğul." },
+        { "type": "choice", "text": "___ there enough chairs for everyone?", "options": ["Aren't", "Isn't", "Wasn't", "Is not"], "answer": 0, "note": "chairs çoğul." },
+        { "type": "gap", "text": "___ there any milk in the fridge this morning?", "options": ["Wasn't", "Weren't", "Aren't"], "answer": 0, "note": "milk sayılamaz, geçmiş → Wasn't." },
+        { "type": "choice", "text": "What does \"Isn't there a cheaper one?\" usually express? It expresses ___ .", "options": ["surprise that there is not one", "a request for a price", "an order", "an apology"], "answer": 0, "note": "Olumsuz soru şaşkınlık ya da sitem bildirir." },
+        { "type": "choice", "text": "___ there some mistake here?", "options": ["Isn't", "Aren't", "Weren't", "Is not"], "answer": 0, "note": "mistake tekil → Isn't there." }
+      ]
+    }
+  ]
+}

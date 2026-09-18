@@ -1,0 +1,622 @@
+{
+  "_meta": {
+    "batch": "c1-grammar-02",
+    "level": "C1",
+    "range": "Ders 5-7 — ileri kip kullanımları"
+  },
+  "lessons": [
+    {
+      "id": "c1-05-may-well",
+      "level": "C1",
+      "order": 5,
+      "title": "may well — pekâlâ olabilir",
+      "topic": "may well",
+      "canDo": "Bir ihtimalin gücünü inceden ayarlayabilir, kabul edilebilir bir tahmini dile getirebilirim.",
+      "covers": [
+        "MD.may_well.AFF"
+      ],
+      "concept": {
+        "summary": "may well, may'den güçlü bir ihtimal bildirir: \"pekâlâ olabilir, olması şaşırtmaz\". Konuşmacı ihtimali ciddiye aldığını söyler ama kesinlik iddia etmez. Geçmişe bakan tahminde may well have + V3 kullanılır. Olumsuzu yaygın değildir; olumsuz tahmin için may not ya da probably not tercih edilir.",
+        "formula": {
+          "left": "may well + yalın fiil",
+          "right": "may well have + V3"
+        },
+        "table": [
+          {
+            "form": "şimdi / gelecek",
+            "be": "may well + yalın",
+            "example": "She may well refuse."
+          },
+          {
+            "form": "geçmiş",
+            "be": "may well have + V3",
+            "example": "He may well have forgotten."
+          },
+          {
+            "form": "might well",
+            "be": "biraz daha zayıf",
+            "example": "It might well rain."
+          },
+          {
+            "form": "güç sırası",
+            "be": "may < may well < must",
+            "example": "must = neredeyse kesin"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "He may well have forgotten the meeting.",
+          "tr": "Toplantıyı pekâlâ unutmuş olabilir.",
+          "note": "may well + have + V3."
+        },
+        {
+          "en": "The price may well go up again next year.",
+          "tr": "Fiyat gelecek yıl pekâlâ yine artabilir.",
+          "note": "Gelecek için tahmin."
+        },
+        {
+          "en": "You may well be right about that.",
+          "tr": "Bu konuda pekâlâ haklı olabilirsin.",
+          "note": "Karşı tarafın görüşünü ciddiye alma."
+        },
+        {
+          "en": "She may well decide not to take the job.",
+          "tr": "İşi almamaya pekâlâ karar verebilir.",
+          "note": "Olumsuzluk fiile geçer, kipe değil."
+        },
+        {
+          "en": "It might well be the last chance we get.",
+          "tr": "Bu pekâlâ elimize geçecek son fırsat olabilir.",
+          "note": "might well biraz daha temkinli."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "He may well forgotten the meeting.",
+          "right": "He may well have forgotten the meeting.",
+          "why": "Geçmişe bakan tahminde have + V3 gerekir."
+        },
+        {
+          "wrong": "She may well to refuse the offer.",
+          "right": "She may well refuse the offer.",
+          "why": "Kipten sonra to gelmez."
+        },
+        {
+          "wrong": "It may well is the best solution.",
+          "right": "It may well be the best solution.",
+          "why": "Kipten sonra fiil yalın kalır."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "The train is late; they ___ well miss the connection.",
+          "options": [
+            "may",
+            "are",
+            "have",
+            "do"
+          ],
+          "answer": 0,
+          "note": "may well = güçlü ihtimal."
+        },
+        {
+          "type": "choice",
+          "text": "He may well ___ the letter without reading it.",
+          "options": [
+            "have thrown away",
+            "threw away",
+            "throwing away",
+            "throws away"
+          ],
+          "answer": 0,
+          "note": "Geçmiş tahmin → have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "You may well ___ the only person who noticed.",
+          "options": [
+            "be",
+            "are",
+            "being",
+            "to be"
+          ],
+          "answer": 0,
+          "note": "Kipten sonra yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "The meeting may ___ last until seven.",
+          "options": [
+            "well",
+            "good",
+            "very"
+          ],
+          "answer": 0,
+          "note": "Kalıp: may well."
+        },
+        {
+          "type": "choice",
+          "text": "Of these four, the strongest guess about where he is: \"He ___ be at home.\"",
+          "options": [
+            "must",
+            "may",
+            "might",
+            "could"
+          ],
+          "answer": 0,
+          "note": "Güç sırası: must > may well > may / might / could."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ well have left before the storm started.",
+          "options": [
+            "may",
+            "is",
+            "does",
+            "has"
+          ],
+          "answer": 0,
+          "note": "may well have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The figures ___ well be wrong; nobody has checked them.",
+          "options": [
+            "may",
+            "are",
+            "have",
+            "do"
+          ],
+          "answer": 0,
+          "note": "Ciddiye alınan ihtimal."
+        },
+        {
+          "type": "gap",
+          "text": "It might well ___ cheaper to take the bus.",
+          "options": [
+            "be",
+            "is",
+            "being"
+          ],
+          "answer": 0,
+          "note": "might well + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "They may well ___ about the change already.",
+          "options": [
+            "have heard",
+            "heard",
+            "hearing",
+            "hears"
+          ],
+          "answer": 0,
+          "note": "Geçmişe bakan tahmin."
+        },
+        {
+          "type": "choice",
+          "text": "This ___ well turn out to be the best year yet.",
+          "options": [
+            "may",
+            "will",
+            "shall",
+            "does"
+          ],
+          "answer": 0,
+          "note": "may well + yalın fiil."
+        }
+      ]
+    },
+    {
+      "id": "c1-06-dare-questions",
+      "level": "C1",
+      "order": 6,
+      "title": "Dare you …? — cesaret sorusu",
+      "topic": "dare in questions",
+      "canDo": "dare fiilinin soru biçimlerini tanıyabilir, kalıplaşmış kullanımlarını doğru kurabilirim.",
+      "covers": [
+        "MD.dare.INT.AFF",
+        "MD.dare.INT.NEG"
+      ],
+      "concept": {
+        "summary": "dare iki türlü çekilir. Kip gibi çekildiğinde soru devrikleşir ve fiil yalın kalır: Dare you tell him? Gerçek fiil gibi çekildiğinde do/does/did alır: Do you dare to tell him? Kip çekimi bugün çoğunlukla kalıplarda kalmıştır: How dare you …? en yaygınıdır ve öfke bildirir. Olumsuz soruda daren't kullanılır.",
+        "formula": {
+          "left": "Dare + özne + yalın fiil",
+          "right": "Do + özne + dare (to) + fiil"
+        },
+        "table": [
+          {
+            "form": "kip gibi",
+            "be": "Dare you ask?",
+            "example": "Dare you ask him yourself?"
+          },
+          {
+            "form": "fiil gibi",
+            "be": "Do you dare to ask?",
+            "example": "Do you dare to ask him?"
+          },
+          {
+            "form": "olumsuz soru",
+            "be": "Daren't you …?",
+            "example": "Daren't you tell her the truth?"
+          },
+          {
+            "form": "kalıp",
+            "be": "How dare you …?",
+            "example": "How dare you read my letters?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "How dare you go through my things?",
+          "tr": "Eşyalarımı karıştırmaya ne cüretle kalkıyorsun?",
+          "note": "Öfke bildiren kalıp; dare kip gibi davranır."
+        },
+        {
+          "en": "Dare you tell him what really happened?",
+          "tr": "Gerçekte ne olduğunu ona söylemeye cesaretin var mı?",
+          "note": "Kip çekimi: devrik soru, yalın fiil."
+        },
+        {
+          "en": "Do you dare to ask for a higher salary?",
+          "tr": "Daha yüksek maaş istemeye cesaret ediyor musun?",
+          "note": "Fiil çekimi: do + dare + to."
+        },
+        {
+          "en": "Daren't you say anything in front of her?",
+          "tr": "Onun önünde bir şey söylemeye cesaret edemiyor musun?",
+          "note": "Olumsuz soru biçimi."
+        },
+        {
+          "en": "How dare they change the rules without telling anybody?",
+          "tr": "Kimseye söylemeden kuralları değiştirmeye ne cüret ederler?",
+          "note": "Kalıbın çoğul öznesiyle kullanımı."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "How dare you to speak like that?",
+          "right": "How dare you speak like that?",
+          "why": "Bu kalıpta dare kip gibi davranır, to almaz."
+        },
+        {
+          "wrong": "Do you dare tell him?",
+          "right": "Do you dare to tell him?",
+          "why": "do ile çekildiğinde to tercih edilir."
+        },
+        {
+          "wrong": "Dare you asked him?",
+          "right": "Dare you ask him?",
+          "why": "Kip çekiminde fiil yalın kalır."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "How ___ you speak to your mother like that?",
+          "options": [
+            "dare",
+            "dares",
+            "daring",
+            "dared to"
+          ],
+          "answer": 0,
+          "note": "Kalıp: How dare you + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ you ask him for the money yourself?",
+          "options": [
+            "Dare",
+            "Dares",
+            "Daring",
+            "Do dare"
+          ],
+          "answer": 0,
+          "note": "Kip gibi çekim: devrik soru."
+        },
+        {
+          "type": "choice",
+          "text": "Do you ___ to tell her before Monday?",
+          "options": [
+            "dare",
+            "dares",
+            "dared",
+            "daring"
+          ],
+          "answer": 0,
+          "note": "do + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "___ you not say anything at all?",
+          "options": [
+            "Daren't",
+            "Don't dare to",
+            "Not dare"
+          ],
+          "answer": 0,
+          "note": "Olumsuz soru → Daren't you …?"
+        },
+        {
+          "type": "choice",
+          "text": "How dare they ___ the locks without telling us?",
+          "options": [
+            "change",
+            "changes",
+            "changed",
+            "to change"
+          ],
+          "answer": 0,
+          "note": "Kalıptan sonra yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ she ask for another extension?",
+          "options": [
+            "Dare",
+            "Dares",
+            "Daring",
+            "Did dare"
+          ],
+          "answer": 0,
+          "note": "Kip çekiminde 3. tekilde de dare."
+        },
+        {
+          "type": "choice",
+          "text": "Does he ___ to go back there alone?",
+          "options": [
+            "dare",
+            "dares",
+            "dared",
+            "daring"
+          ],
+          "answer": 0,
+          "note": "does + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "How dare you ___ my letters?",
+          "options": [
+            "read",
+            "reads",
+            "to read"
+          ],
+          "answer": 0,
+          "note": "Yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ you not tell me the truth now?",
+          "options": [
+            "Daren't",
+            "Dare not you",
+            "Do not dare"
+          ],
+          "answer": 0,
+          "note": "Olumsuz soru biçimi."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence uses dare as a full verb? ___ is the answer.",
+          "options": [
+            "Do you dare to ask?",
+            "Dare you ask?",
+            "Daren't you ask?",
+            "How dare you ask?"
+          ],
+          "answer": 0,
+          "note": "do/does/did ile çekim gerçek fiil kullanımıdır."
+        }
+      ]
+    },
+    {
+      "id": "c1-07-shall-used-to-questions",
+      "level": "C1",
+      "order": 7,
+      "title": "shan't ve Used you to …? — okuyunca tanı",
+      "topic": "shall not, used to in questions",
+      "canDo": "Eski ve resmî metinlerde karşıma çıkan kip biçimlerini tanıyabilir, bugünkü karşılıklarını kullanabilirim.",
+      "covers": [
+        "MD.shall.NEG",
+        "MD.used_to.INT.AFF"
+      ],
+      "concept": {
+        "summary": "Bu dersteki iki biçimi tanıman gerekiyor, kullanman değil. shan't (shall not) bugün yalnızca İngiliz yazınında ve eski metinlerde geçer; Amerikan kullanımında yerini won't almıştır. used to'nun soru biçimi de ikiye ayrılır: eski Used you to …? ve bugünkü Did you use to …?. Bu üründe öğrettiğimiz yazım ve kullanım Amerikan İngilizcesi olduğu için üretimde won't ve Did you use to kullanacaksın.",
+        "formula": {
+          "left": "shall not → shan't (eski)",
+          "right": "Did + özne + use to + fiil"
+        },
+        "table": [
+          {
+            "form": "eski olumsuz",
+            "be": "shan't",
+            "example": "I shan't be long."
+          },
+          {
+            "form": "bugünkü karşılığı",
+            "be": "won't",
+            "example": "I won't be long."
+          },
+          {
+            "form": "eski soru",
+            "be": "Used you to …?",
+            "example": "Used you to live here?"
+          },
+          {
+            "form": "bugünkü karşılığı",
+            "be": "Did you use to …?",
+            "example": "Did you use to live here?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "I shan't be long; wait here.",
+          "tr": "Uzun sürmez; burada bekle.",
+          "note": "Eski metinlerde karşına çıkar; bugün won't."
+        },
+        {
+          "en": "I won't be long; wait in the car.",
+          "tr": "Uzun sürmeyecek; arabada bekle.",
+          "note": "Bugün kullanılan biçim."
+        },
+        {
+          "en": "Did you use to work at the ministry?",
+          "tr": "Eskiden bakanlıkta mı çalışırdın?",
+          "note": "used to'nun bugünkü soru biçimi."
+        },
+        {
+          "en": "Used you to spend the summers there?",
+          "tr": "Yazları orada mı geçirirdin?",
+          "note": "Eski soru biçimi; romanlarda görürsün."
+        },
+        {
+          "en": "We shan't know the result until Friday.",
+          "tr": "Sonucu cumaya kadar öğrenemeyeceğiz.",
+          "note": "Resmî ve eski ton."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Did you used to work there?",
+          "right": "Did you use to work there?",
+          "why": "Geçmişlik did'e geçtiği için use yalın kalır."
+        },
+        {
+          "wrong": "I shan't to be long.",
+          "right": "I shan't be long.",
+          "why": "Kipten sonra to gelmez."
+        },
+        {
+          "wrong": "Do you use to live here?",
+          "right": "Did you use to live here?",
+          "why": "used to geçmişi anlatır, soruda did kullanılır."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "Did you ___ to walk to school every day?",
+          "options": [
+            "use",
+            "used",
+            "using",
+            "uses"
+          ],
+          "answer": 0,
+          "note": "did + use to."
+        },
+        {
+          "type": "choice",
+          "text": "In today's American English, \"I shan't be long\" is written as \"I ___ be long\".",
+          "options": [
+            "won't",
+            "shan't",
+            "shall not to",
+            "will not to"
+          ],
+          "answer": 0,
+          "note": "shan't yerine won't."
+        },
+        {
+          "type": "choice",
+          "text": "___ you use to live in this street?",
+          "options": [
+            "Did",
+            "Do",
+            "Have",
+            "Were"
+          ],
+          "answer": 0,
+          "note": "Geçmiş alışkanlık sorusu → Did."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ know the answer before Monday.",
+          "options": [
+            "won't",
+            "shan't to",
+            "not will"
+          ],
+          "answer": 0,
+          "note": "Bugünkü biçim → won't."
+        },
+        {
+          "type": "choice",
+          "text": "\"Used you to smoke?\" belongs to ___ .",
+          "options": [
+            "older written English",
+            "modern American English",
+            "spoken slang",
+            "business email"
+          ],
+          "answer": 0,
+          "note": "Eski biçim; bugün Did you use to …?"
+        },
+        {
+          "type": "choice",
+          "text": "Did she use to ___ the shop on her own?",
+          "options": [
+            "run",
+            "runs",
+            "ran",
+            "running"
+          ],
+          "answer": 0,
+          "note": "use to + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ be at the office tomorrow; I am on leave.",
+          "options": [
+            "won't",
+            "shan't not",
+            "will not to",
+            "am not will"
+          ],
+          "answer": 0,
+          "note": "Gelecek olumsuz → won't."
+        },
+        {
+          "type": "gap",
+          "text": "___ they use to come here every summer?",
+          "options": [
+            "Did",
+            "Do",
+            "Were"
+          ],
+          "answer": 0,
+          "note": "Geçmiş → Did."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence would a modern American writer choose? ___ is the one.",
+          "options": [
+            "I won't need it.",
+            "I shan't need it.",
+            "I shall not to need it.",
+            "I won't to need it."
+          ],
+          "answer": 0,
+          "note": "Amerikan kullanımı won't."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ to work nights before the baby was born.",
+          "options": [
+            "used",
+            "use",
+            "uses",
+            "using"
+          ],
+          "answer": 0,
+          "note": "Olumlu cümlede used to."
+        }
+      ]
+    }
+  ]
+}
