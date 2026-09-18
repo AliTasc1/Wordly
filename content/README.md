@@ -57,3 +57,36 @@ en altı B2 veya yukarısı. İkinci koşul "A1, C2" gibi satırları dışarıd
 bunlar A1'de öğretilen bir yapının ileri bir kullanımını gösterir, yapının
 kendisi C2 konusu değildir — böyle bir satırı C2 dersine koymak öğrenciye
 A1'de öğrendiğini yeniden anlatmak olurdu.
+
+## Ses
+
+`build-audio.py` dinleme repliklerini ve kelime telaffuzlarını Google Cloud
+Text-to-Speech ile üretir. Anahtarsız çalıştırıldığında hiçbir şey üretmez,
+yalnızca ne üretileceğini ve maliyetini yazar:
+
+    python3 build-audio.py
+    GOOGLE_TTS_KEY=... python3 build-audio.py --run
+
+Bugünkü ölçü: 11.414 parça, 184.460 karakter, ~214 dakika ses. Google'ın en
+iyi ses ailesinde bile aylık ücretsiz kota 1 milyon karakter olduğu için bu iş
+**ücretsiz kotaya sığıyor**. İçerik sabit olduğu için de tek seferlik: bir kez
+üretilir, uygulamaya girer, bir daha API çağrısı yapılmaz.
+
+**Neden replik replik.** Uygulama diyaloğu satır satır oynatıyor — öğrenci tek
+bir repliği tekrar dinleyebiliyor, okunan satır vurgulanıyor. Tek parça ses
+bunların hiçbirine izin vermez.
+
+**Neden örnek cümleler yok.** 9.461 örnek cümle 280.799 karakter ve ~336 dakika
+ses demek; 24 kbps'te yaklaşık 60 MB. Uygulama boyutunu bu kadar büyütmeye
+değecek bir kazanç değil, çünkü orada ses ikincil — cihazın kendi TTS'i yeter.
+Dinleme diyalogları ve kelime telaffuzları ise sesin asıl gerekli olduğu yer:
+ikisi birlikte ~39 MB.
+
+**Ses adları sabit yazılmadı.** Google'ın ses adları zamanla emekliye ayrılıyor;
+betik listeyi çalışma anında API'den alıp tercih sırasına göre (Chirp 3 HD →
+Neural2 → WaveNet → Standard) iki ses seçiyor. Diyalogdaki iki konuşmacı bu iki
+sesi paylaşıyor.
+
+Betik yeniden çalıştırılabilir: var olan dosyayı atlar, ağ koparsa kaldığı
+yerden devam eder. API yüzeyi ezberden değil, Google'ın discovery belgesinden
+doğrulandı.
