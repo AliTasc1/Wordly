@@ -1,0 +1,168 @@
+{
+  "_meta": { "batch": "c2-reading-01", "level": "C2", "range": "Parça 1-5" },
+  "items": [
+    {
+      "id": "c2-r-01",
+      "level": "C2",
+      "order": 1,
+      "kind": "reading",
+      "title": "Mahremiyetin fiyatı",
+      "titleEn": "The Price of Privacy",
+      "minutes": 7,
+      "names": [],
+      "text": "Debates about privacy are conducted almost entirely in the language of individual choice, and that framing is the source of most of the confusion. A person is offered a service, told what will be collected, and clicks to accept; whatever follows is presented as the consequence of a free decision. The account would be more persuasive if the decision were genuinely individual. When a substantial proportion of a population shares its behavior, the inferences that become possible apply to everybody, including those who refused. A model trained on the movements of a million willing participants can predict the movements of the abstainer, because human behavior is correlated and the abstainer is not an exception to the patterns the model has learned. This is why the analogy with property fails. If I sell my furniture, your furniture is unaffected; if I sell my data, I have also sold a statistical portrait of you. Regulators have begun, slowly, to recognize the problem, but the remedies remain individual: a right to see what is held, a right to delete it, a right to object. Each of these is worth having and none addresses the structure. A more honest approach would treat certain inferences as impermissible regardless of consent, in the way that some contracts are void even when both parties sign willingly. That move is resisted because it removes the comfortable fiction that the person who clicked has authorized everything that follows, and because it requires somebody to decide which inferences are unacceptable, which is a political question rather than a technical one, and therefore the kind of question modern institutions are least equipped to answer. There is a precedent, and it is instructive. Employment law in most countries does not permit a worker to consent to unlimited hours, on the reasoning that the consent is extracted under conditions the worker did not choose and that the harm falls partly on others. Nobody regards this as an insult to the worker's judgment. Applying the same reasoning to data would not be a novel move; it would be the ordinary recognition that consent does its moral work only when the person consenting is in a position to refuse.",
+      "glossary": [
+        { "w": "framing", "tr": "çerçeveleme" },
+        { "w": "inferences", "tr": "çıkarımlar" },
+        { "w": "abstainer", "tr": "katılmayan, çekimser kalan" },
+        { "w": "correlated", "tr": "bağıntılı" },
+        { "w": "analogy", "tr": "benzetme" },
+        { "w": "regulators", "tr": "düzenleyici kurumlar" },
+        { "w": "impermissible", "tr": "izin verilemez" },
+        { "w": "void", "tr": "hükümsüz" },
+        { "w": "statistical", "tr": "istatistiksel" },
+        { "w": "precedent", "tr": "emsal, önceki örnek" },
+        { "w": "authorized", "tr": "yetki vermiş" }
+      ],
+      "questions": [
+        { "q": "What does the author say is the source of the confusion?", "options": ["Framing privacy as individual choice", "Bad technology", "Weak laws", "Public ignorance"], "answer": 0, "note": "İlk cümle." },
+        { "q": "Why is the decision not genuinely individual?", "options": ["Inferences apply to those who refused too", "People do not read terms", "Services are compulsory", "Choices are hidden"], "answer": 0, "note": "Model, katılmayanın hareketlerini de tahmin edebiliyor." },
+        { "q": "Why does the property analogy fail?", "options": ["Selling your data sells a portrait of others", "Data cannot be owned", "Furniture is physical", "Data has no value"], "answer": 0, "note": "\"If I sell my data, I have also sold a statistical portrait of you.\"" },
+        { "q": "What do current remedies have in common?", "options": ["They are all individual rights", "They are all criminal penalties", "They apply only to companies", "They are voluntary"], "answer": 0, "note": "Görme, silme, itiraz hakkı — hepsi bireysel." },
+        { "q": "What does the author propose instead?", "options": ["Treating some inferences as impermissible regardless of consent", "Banning data collection", "Paying people for data", "Stronger passwords"], "answer": 0, "note": "Rıza olsa bile bazı çıkarımlar yasaklanmalı." },
+        { "q": "Why is that move resisted?", "options": ["It requires a political decision institutions avoid", "It costs too much", "It is technically impossible", "Users dislike it"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-02",
+      "level": "C2",
+      "order": 2,
+      "kind": "reading",
+      "title": "Mimarlıkta dürüstlük",
+      "titleEn": "Honesty in Architecture",
+      "minutes": 7,
+      "names": [],
+      "text": "Among the principles that architects inherited from the modern movement, none has proved more durable or more slippery than the demand for honesty. A building should express its structure; materials should appear as what they are; ornament that conceals construction is a kind of lie. Stated in that form the principle sounds almost self-evident, and for several decades it produced work of remarkable clarity. Its difficulties emerge as soon as one asks what a building is being honest about. A steel frame wrapped in fireproofing and then clad in steel panels is, in the literal sense, concealing its structure behind a representation of that structure, and some of the most admired buildings of the period do exactly this. The panels are not structural; they are a sign meaning structure. Once that is noticed, honesty turns out to be a style rather than an absence of style, with its own conventions, its own permitted materials and its own characteristic dishonesty, which is the pretense that a set of aesthetic preferences is a moral requirement. The interesting question is why the vocabulary of virtue attached itself to architecture so firmly, when we do not usually ask a chair to be truthful. One plausible answer is that buildings are imposed. Nobody is obliged to read a novel they dislike, but the inhabitants of a street must look at whatever is built there for the rest of their lives, and a profession that exercises that kind of power without a license from the people affected will reach, almost inevitably, for a justification framed in ethical terms. None of this is an argument for ornament, and the modern movement produced buildings that remain among the best of the century. It is an argument for describing taste as taste. A profession that says it prefers exposed concrete is making a claim anybody can disagree with; a profession that says exposed concrete is honest has placed its preference beyond argument, and has done so using a word that belongs to a different subject entirely.",
+      "glossary": [
+        { "w": "ornament", "tr": "süsleme" },
+        { "w": "self-evident", "tr": "apaçık" },
+        { "w": "fireproofing", "tr": "yangın yalıtımı" },
+        { "w": "clad", "tr": "kaplanmış" },
+        { "w": "conventions", "tr": "yerleşik kurallar" },
+        { "w": "pretense", "tr": "numara, iddia" },
+        { "w": "aesthetic", "tr": "estetik" },
+        { "w": "virtue", "tr": "erdem" },
+        { "w": "inhabitants", "tr": "sakinler" },
+        { "w": "clarity", "tr": "berraklık" },
+        { "w": "justification", "tr": "gerekçelendirme" },
+        { "w": "slippery", "tr": "kaygan, ele avuca sığmaz" }
+      ],
+      "questions": [
+        { "q": "What does the principle of honesty demand?", "options": ["That a building express its structure", "That buildings be cheap", "That materials be local", "That ornament be traditional"], "answer": 0, "note": "İkinci cümle." },
+        { "q": "What problem does the clad steel frame reveal?", "options": ["The panels are a sign meaning structure, not structure", "Steel is unsafe", "Fireproofing is expensive", "Panels fall off"], "answer": 0, "note": "\"The panels are not structural; they are a sign meaning structure.\"" },
+        { "q": "What does honesty turn out to be?", "options": ["A style with its own conventions", "A building method", "A legal requirement", "An economic choice"], "answer": 0, "note": "\"Honesty turns out to be a style rather than an absence of style.\"" },
+        { "q": "What is its characteristic dishonesty?", "options": ["Presenting taste as a moral requirement", "Hiding costs", "Copying old buildings", "Using cheap materials"], "answer": 0, "note": "Estetik tercihin ahlaki zorunluluk gibi sunulması." },
+        { "q": "Why do we not ask a chair to be truthful?", "options": ["A chair is not imposed on everyone", "Chairs are small", "Chairs are private property", "Chairs have no structure"], "answer": 0, "note": "Binalar dayatılır, sandalyeler dayatılmaz." },
+        { "q": "What explains the ethical vocabulary, according to the author?", "options": ["Architects exercise power without permission from those affected", "Architects study philosophy", "Clients demand it", "Critics invented it"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-03",
+      "level": "C2",
+      "order": 3,
+      "kind": "reading",
+      "title": "Belgeselin kurgusu",
+      "titleEn": "The Fiction in Documentary",
+      "minutes": 7,
+      "names": [],
+      "text": "Audiences approach documentary with an expectation they would never bring to a novel: that what they are watching is, in some straightforward sense, what happened. The expectation survives despite everyone knowing that a camera must be placed somewhere, that a hundred hours are reduced to ninety minutes, and that music is added afterwards to tell the viewer how to feel. Each of these is a fictional operation in the technical sense — a shaping of material according to a purpose — and none of them is dishonest, because no alternative exists. A film that refused to choose would be unwatchable and would still have chosen, by leaving the camera running in one place rather than another. The genuine ethical questions lie elsewhere, and are rarely the ones audiences ask about. They concern the relationship between the filmmaker and the person filmed, who has usually agreed to participate without any realistic idea of how they will appear when their words are placed beside somebody else's. A subject can consent to being recorded; they cannot meaningfully consent to an edit that does not yet exist. Some directors have responded by showing participants the finished film and offering a veto, a practice that produces obvious problems of its own, since the most revealing material is precisely what a subject is most likely to remove. Others argue that the obligation runs to the audience instead, and that softening a portrait to protect its subject is a betrayal of the form. The disagreement has no settled answer, which is perhaps why the more thoughtful documentaries have started to make the negotiation visible, leaving in the moments where the person on screen asks what exactly this is going to be used for. The device is not a solution and is sometimes merely another effect, since a filmmaker who shows you the negotiation has also chosen which negotiation to show. What it does accomplish is to remove the pretense of absence. A viewer who has watched somebody hesitate before answering is unlikely to forget, ten minutes later, that a person with a camera was standing there.",
+      "glossary": [
+        { "w": "documentary", "tr": "belgesel" },
+        { "w": "unwatchable", "tr": "izlenemez" },
+        { "w": "filmmaker", "tr": "film yapımcısı" },
+        { "w": "consent", "tr": "rıza göstermek" },
+        { "w": "veto", "tr": "veto" },
+        { "w": "betrayal", "tr": "ihanet" },
+        { "w": "negotiation", "tr": "pazarlık, müzakere" },
+        { "w": "portrait", "tr": "portre" },
+        { "w": "softening", "tr": "yumuşatmak" },
+        { "w": "pretense", "tr": "numara, iddia" }
+      ],
+      "questions": [
+        { "q": "What expectation do audiences bring?", "options": ["That what they see is what happened", "That the film is entertaining", "That it is short", "That it has no music"], "answer": 0, "note": "İlk cümle." },
+        { "q": "Why are the shaping operations not dishonest?", "options": ["No alternative exists", "They are disclosed", "Audiences expect them", "They are regulated"], "answer": 0, "note": "\"None of them is dishonest, because no alternative exists.\"" },
+        { "q": "Where do the genuine ethical questions lie?", "options": ["In the relationship with the person filmed", "In the choice of music", "In the length of the film", "In the camera position"], "answer": 0, "note": "\"They concern the relationship between the filmmaker and the person filmed.\"" },
+        { "q": "What can a subject not meaningfully consent to?", "options": ["An edit that does not yet exist", "Being recorded", "Being interviewed", "Appearing in public"], "answer": 0, "note": "\"They cannot meaningfully consent to an edit that does not yet exist.\"" },
+        { "q": "What is the problem with offering a veto?", "options": ["Subjects remove the most revealing material", "It takes too long", "It costs money", "Audiences object"], "answer": 0, "note": "En açıklayıcı malzeme tam da kaldırılmak istenendir." },
+        { "q": "How have thoughtful documentaries responded?", "options": ["By making the negotiation visible on screen", "By avoiding interviews", "By using actors", "By removing music"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-04",
+      "level": "C2",
+      "order": 4,
+      "kind": "reading",
+      "title": "Kıtlığın icadı",
+      "titleEn": "The Invention of Scarcity",
+      "minutes": 7,
+      "names": [],
+      "text": "Economics defines itself as the study of scarcity, which sounds like a description of the physical world and is in fact a description of a relationship. A resource is scarce relative to the demands placed on it, and those demands are not fixed facts but the product of arrangements that could be otherwise. Water in a dry region is scarce in a way that no institution invented; water in a wet region where agriculture has been organized around a thirsty crop is scarce in a quite different sense, and confusing the two has consequences. The first situation calls for allocation; the second calls for asking who decided on the crop. This distinction is routinely lost because the vocabulary of scarcity carries an implication of natural limit, which is politically convenient for whoever benefits from the current arrangement. Housing offers the clearest contemporary example. In several cities where residential space is described as scarce, the quantity of built space per person has risen steadily for decades. What changed was not the supply of rooms but the rules governing who may occupy them and at what price, together with the conversion of housing from a place to live into an instrument for storing wealth. Describing the outcome as scarcity is not false, since people genuinely cannot find somewhere to live, but it is incomplete in a way that points policy in a particular direction: towards building more, which is slow and profitable, and away from asking what the existing stock is being used for, which is fast and unpopular. Economists are not responsible for this elision, and many have spent careers pointing it out, but the word does most of the work before the argument begins. This is worth stating plainly because the alternative framings are available and unused. One could describe the same situation as a distribution problem, or as a question of what the built environment is for, and each of those phrasings would recruit a different set of experts and permit a different set of solutions. Vocabulary is not a neutral wrapper around policy; it is the first policy decision, taken before anybody notices that a decision has been made.",
+      "glossary": [
+        { "w": "scarcity", "tr": "kıtlık" },
+        { "w": "allocation", "tr": "tahsis, paylaştırma" },
+        { "w": "implication", "tr": "ima" },
+        { "w": "residential", "tr": "konut, yerleşim" },
+        { "w": "conversion", "tr": "dönüştürme" },
+        { "w": "instrument", "tr": "araç" },
+        { "w": "stock", "tr": "mevcut yapı stoğu" },
+        { "w": "elision", "tr": "atlama, es geçme" },
+        { "w": "scarce", "tr": "kıt" },
+        { "w": "irrigation", "tr": "sulama" }
+      ],
+      "questions": [
+        { "q": "What is scarcity really a description of?", "options": ["A relationship", "The physical world", "A quantity", "A market price"], "answer": 0, "note": "İlk cümle." },
+        { "q": "What does the second kind of scarcity call for?", "options": ["Asking who decided on the crop", "Careful allocation", "More irrigation", "Higher prices"], "answer": 0, "note": "\"The second calls for asking who decided on the crop.\"" },
+        { "q": "Why is the distinction routinely lost?", "options": ["The word implies a natural limit", "Economists ignore it", "Data is missing", "It is too technical"], "answer": 0, "note": "Kıtlık sözcüğü doğal sınır çağrışımı taşıyor." },
+        { "q": "What has happened to built space per person in those cities?", "options": ["It has risen steadily", "It has fallen", "It has stayed the same", "It was never measured"], "answer": 0, "note": "\"Has risen steadily for decades.\"" },
+        { "q": "What does the scarcity framing point policy towards?", "options": ["Building more", "Rent control", "Higher taxes", "Smaller homes"], "answer": 0, "note": "Yavaş ve kârlı olan yöne: daha çok inşaat." },
+        { "q": "What does the author say about economists?", "options": ["They are not responsible for the elision", "They invented the confusion", "They benefit from it", "They ignore housing"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-05",
+      "level": "C2",
+      "order": 5,
+      "kind": "reading",
+      "title": "Unutmanın işlevi",
+      "titleEn": "The Function of Forgetting",
+      "minutes": 7,
+      "names": [],
+      "text": "Forgetting is generally treated as a defect, a failure of a system that would work better if it retained everything. The assumption survives because the costs of forgetting are visible and the costs of remembering are not. A person who cannot find a name is obviously inconvenienced; a person who cannot stop retrieving irrelevant detail appears, at first, merely well informed. The clinical literature suggests otherwise. The handful of documented cases of exceptionally complete autobiographical memory describe lives in which the past intrudes continuously, where a date mentioned in conversation summons the whole of a particular afternoon, and where reconciliation after an argument is extremely difficult because the argument does not fade. Memory researchers now generally regard forgetting as an active process rather than a leak: the system is not failing to hold information, it is deciding, by criteria we understand only partly, what deserves to remain available. Something similar appears to operate at the level of institutions and societies. Archives that keep everything become unusable, and the labor of a good archivist is largely the labor of destruction. Legal systems have built forgetting into their structure through limitation periods, after which a claim can no longer be brought, not because the wrong stopped mattering but because a society that permits any grievance to be revived indefinitely cannot settle anything. The arrival of technologies that do not forget has therefore changed something more fundamental than privacy. A remark made at nineteen remains available at forty, and the social mechanism that once allowed people to become different from their earlier selves — not forgiveness, which is rare, but ordinary forgetting, which was universal — has quietly been switched off. The consequences are easiest to see in the young, who are conducting their experiments in public and will be asked about them for the rest of their lives, but they extend further. A society in which nothing is allowed to recede is a society in which reputations become fixed early, and in which the incentive to change is weakened precisely where it matters most: among people whose earlier selves were worth abandoning.",
+      "glossary": [
+        { "w": "retained", "tr": "elde tuttu" },
+        { "w": "inconvenienced", "tr": "zahmete sokulmuş" },
+        { "w": "retrieving", "tr": "geri çağırmak" },
+        { "w": "clinical", "tr": "klinik" },
+        { "w": "autobiographical", "tr": "kendi yaşamına ilişkin" },
+        { "w": "intrudes", "tr": "araya girer, içeri dalar" },
+        { "w": "reconciliation", "tr": "barışma" },
+        { "w": "archivist", "tr": "arşivci" },
+        { "w": "limitation periods", "tr": "zamanaşımı süreleri" },
+        { "w": "grievance", "tr": "şikâyet, gücenme" },
+        { "w": "defect", "tr": "kusur" },
+        { "w": "summons", "tr": "çağırır" },
+        { "w": "catalogs", "tr": "kataloglar" },
+        { "w": "digitizing", "tr": "sayısallaştırmak" },
+        { "w": "recede", "tr": "geri çekilmek, solmak" }
+      ],
+      "questions": [
+        { "q": "Why does the assumption about forgetting survive?", "options": ["The costs of remembering are invisible", "Research is new", "Doctors say so", "Memory is untestable"], "answer": 0, "note": "İkinci cümle." },
+        { "q": "What do documented cases of complete memory describe?", "options": ["A past that intrudes continuously", "Perfect recall with no cost", "Improved intelligence", "Better relationships"], "answer": 0, "note": "Geçmiş sürekli araya giriyor." },
+        { "q": "How do researchers now regard forgetting?", "options": ["As an active process", "As a leak", "As an illness", "As unmeasurable"], "answer": 0, "note": "\"An active process rather than a leak.\"" },
+        { "q": "What is the labor of a good archivist?", "options": ["Largely the labor of destruction", "Collecting everything", "Digitizing records", "Writing catalogs"], "answer": 0, "note": "\"Largely the labor of destruction.\"" },
+        { "q": "Why do legal systems have limitation periods?", "options": ["A society that revives every grievance cannot settle anything", "Evidence disappears", "Courts are busy", "Wrongs stop mattering"], "answer": 0, "note": "\"Not because the wrong stopped mattering.\"" },
+        { "q": "What has been switched off, according to the author?", "options": ["Ordinary forgetting", "Forgiveness", "Legal protection", "Public memory"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

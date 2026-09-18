@@ -78,6 +78,8 @@ BRITISH = {
     "behaviours": "behaviors", "labelled": "labeled", "traveller": "traveler",
     "travellers": "travelers", "fulfil": "fulfill", "enrol": "enroll",
     "sceptical": "skeptical", "aluminium": "aluminum", "pyjamas": "pajamas",
+    "catalogue": "catalog", "catalogues": "catalogs", "dialogue": "dialog",
+    "digitise": "digitize", "digitising": "digitizing", "prise": "pry",
 }
 
 # Düzenli ek soyma bunları bulamaz.
@@ -110,6 +112,7 @@ IRREGULAR = {
     "wept": "weep", "wound": "wind", "withdrew": "withdraw",
     "withheld": "withhold", "wrung": "wring", "arose": "arise",
     "awoke": "awake", "bore": "bear", "borne": "bear", "woken": "wake",
+    "lying": "lie", "dying": "die", "tying": "tie", "selves": "self",
     "breadth": "broad", "depth": "deep", "width": "wide", "strength": "strong",
     "length": "long", "height": "high", "growth": "grow", "death": "die",
     "understood": "understand", "wrote": "write", "written": "write",
@@ -246,7 +249,8 @@ DERIVATION = [
     ("ically", ["", "y", "ic"]),
 ]
 
-PREFIXES = ("un", "re", "dis", "mis", "non", "over", "under", "pre", "in")
+PREFIXES = ("un", "re", "dis", "mis", "non", "over", "under", "pre", "in",
+            "en", "im", "il", "ir", "anti", "co", "de", "inter", "sub")
 
 
 # -ise/-isation ile biten İngiliz yazımlarını tek tek listelemek yerine kuralla

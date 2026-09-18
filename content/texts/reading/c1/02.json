@@ -1,0 +1,160 @@
+{
+  "_meta": { "batch": "c1-reading-02", "level": "C1", "range": "Parça 6-10" },
+  "items": [
+    {
+      "id": "c1-r-06",
+      "level": "C1",
+      "order": 6,
+      "kind": "reading",
+      "title": "Ölçmenin bozduğu şey",
+      "titleEn": "What Measurement Breaks",
+      "minutes": 6,
+      "names": [],
+      "text": "A hospital that is judged on waiting times will reduce waiting times. This sounds like a success, and sometimes it is. But the target does not specify how the reduction should be achieved, and administrators under pressure will find the cheapest route. Patients may be recorded as having been seen when a nurse takes their name; difficult cases may be moved to a different list; appointments may be offered at hours nobody can attend, so that a refusal counts as a patient choice rather than a delay. None of this requires dishonesty on the part of any individual. It requires only that a number matters more than the thing the number was invented to describe. Economists have written about this pattern for decades, and it appears wherever performance is managed from a distance: in schools judged on pass rates, in police forces judged on recorded crime, in charities judged on the proportion of donations spent on programs. The lesson usually drawn is that targets are harmful, but that conclusion is too convenient, because the alternative — trusting institutions without evidence — has its own long record of failure. A more demanding response is to treat every measure as temporary, to change it before anyone has learned to satisfy it artificially, and to pay attention to the people who deliver the service, who generally know exactly which numbers have become theater and which still mean something. That last group is systematically the least consulted, because consulting them requires admitting that the measure was always an approximation. An administrator who asks a nurse which figures are honest is opening a conversation that cannot be closed again, and the reluctance to open it is not stupidity but self-preservation.",
+      "glossary": [
+        { "w": "administrators", "tr": "yöneticiler" },
+        { "w": "administrator", "tr": "yönetici" },
+        { "w": "dishonesty", "tr": "dürüstsüzlük" },
+        { "w": "donations", "tr": "bağışlar" },
+        { "w": "artificially", "tr": "yapay olarak" },
+        { "w": "theater", "tr": "gösteri, tiyatro" },
+        { "w": "drawn", "tr": "çıkarılan" },
+        { "w": "approximation", "tr": "yaklaşık değer" },
+        { "w": "reluctance", "tr": "isteksizlik" },
+        { "w": "refusal", "tr": "reddetme" }
+      ],
+      "questions": [
+        { "q": "What happens when a hospital is judged on waiting times?", "options": ["It reduces them, by whatever route is cheapest", "It hires more doctors", "It closes departments", "It ignores the target"], "answer": 0, "note": "İlk üç cümle." },
+        { "q": "What does the text say about individual dishonesty?", "options": ["It is not required", "It is the main cause", "It is always present", "It is punished"], "answer": 0, "note": "\"None of this requires dishonesty on the part of any individual.\"" },
+        { "q": "Where else does the pattern appear?", "options": ["Schools, police forces and charities", "Only in hospitals", "Only in private companies", "In courts"], "answer": 0, "note": "Uzaktan yönetilen her yerde." },
+        { "q": "Why is 'targets are harmful' too convenient?", "options": ["Trusting institutions without evidence also fails", "Targets are popular", "It is hard to prove", "Managers disagree"], "answer": 0, "note": "Alternatifin de uzun bir başarısızlık sicili var." },
+        { "q": "What does the author recommend instead?", "options": ["Treating every measure as temporary", "Abolishing measurement", "Measuring more often", "Publishing all data"], "answer": 0, "note": "\"To treat every measure as temporary.\"" },
+        { "q": "Who knows which numbers have become theater?", "options": ["The people who deliver the service", "Senior managers", "Economists", "Patients"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-07",
+      "level": "C1",
+      "order": 7,
+      "kind": "reading",
+      "title": "Sessiz bırakma",
+      "titleEn": "Quiet Quitting",
+      "minutes": 6,
+      "names": [],
+      "text": "The phrase arrived suddenly and was immediately misunderstood. Quiet quitting does not describe leaving a job; it describes doing the job as written and declining to do more. The debate that followed revealed less about young workers than about the assumptions of everybody else. Managers who described the behavior as laziness were, without quite saying so, admitting that their teams had been staffed on the understanding that people would work beyond their contracts. Defenders of the practice were equally quick to overstate their case, presenting the refusal of unpaid effort as a form of resistance rather than as a plain contractual position. What both sides tended to avoid was the question of what extra effort had actually been buying. In organizations where discretionary work led reliably to promotion, few people withdrew it. Where it had become a permanent expectation attached to no reward, the withdrawal was not a generational mood but a rational adjustment, and it had been occurring quietly for years before anybody produced a name for it. The most useful consequence of the phrase, whatever its accuracy, is that a large number of managers were obliged to look at their own job descriptions and notice how much of the work was being done by goodwill that appeared nowhere in writing. A few organizations went further and wrote the extra duties down, which had the useful effect of making them negotiable. Once a task appears in a document it can be costed, assigned or removed, whereas an expectation that lives only in habit can be neither refused nor rewarded, and tends to fall on whoever is least able to object.",
+      "glossary": [
+        { "w": "assumptions", "tr": "varsayımlar" },
+        { "w": "contracts", "tr": "sözleşmeler" },
+        { "w": "overstate", "tr": "abartmak" },
+        { "w": "resistance", "tr": "direniş" },
+        { "w": "discretionary", "tr": "isteğe bağlı, gönüllü" },
+        { "w": "withdrawal", "tr": "geri çekme" },
+        { "w": "generational", "tr": "kuşaksal" },
+        { "w": "goodwill", "tr": "iyi niyet" },
+        { "w": "contractual", "tr": "sözleşmeye dayalı" },
+        { "w": "implicitly", "tr": "üstü kapalı biçimde" },
+        { "w": "negotiable", "tr": "pazarlığa açık" }
+      ],
+      "questions": [
+        { "q": "What does quiet quitting actually describe?", "options": ["Doing the job as written and no more", "Leaving a job silently", "Working from home", "Refusing to attend meetings"], "answer": 0, "note": "İkinci cümle." },
+        { "q": "What were critical managers implicitly admitting?", "options": ["Teams were staffed assuming extra unpaid work", "Salaries were too low", "Contracts were unclear", "Training was poor"], "answer": 0, "note": "Sözleşmenin ötesinde çalışılacağı varsayımıyla kadro kurulmuş." },
+        { "q": "How did defenders overstate the case?", "options": ["They presented it as resistance rather than a contractual position", "They denied it existed", "They claimed it raised pay", "They blamed managers"], "answer": 0, "note": "\"Presenting the refusal of unpaid effort as a form of resistance.\"" },
+        { "q": "Where did few people withdraw extra effort?", "options": ["Where it reliably led to promotion", "Where salaries were high", "In small companies", "In public institutions"], "answer": 0, "note": "\"Where discretionary work led reliably to promotion, few people withdrew it.\"" },
+        { "q": "How does the author describe the withdrawal?", "options": ["A rational adjustment, not a generational mood", "An act of protest", "A temporary fashion", "A management failure"], "answer": 0, "note": "\"Not a generational mood but a rational adjustment.\"" },
+        { "q": "What was the useful consequence of the phrase?", "options": ["Managers examined how much work depended on goodwill", "Contracts were rewritten by law", "Salaries rose", "Young workers were promoted"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-08",
+      "level": "C1",
+      "order": 8,
+      "kind": "reading",
+      "title": "Şehrin altındaki nehir",
+      "titleEn": "The River Under the City",
+      "minutes": 6,
+      "names": [],
+      "text": "Under most old cities there is at least one river that no longer appears on any map. As settlements grew, small watercourses became convenient drains, then health hazards, and were finally covered over and forgotten. For a century this was regarded as progress. The reversal of that judgment began not with environmental campaigns but with flooding. A buried river still carries water, and when heavy rain exceeds the capacity of the pipe it was forced into, the water returns to its original route, which is now occupied by basements and car parks. Engineers discovered that restoring a stretch of river to the surface was frequently cheaper than enlarging the pipe, and that the restored section absorbed storm water in a way no drain could match. The projects that followed produced effects nobody had costed. Property values along the reopened sections rose, which was welcome to owners and less welcome to tenants. Streets that had been shortcuts became destinations, and traffic patterns changed across whole districts. Ecologists recorded species returning within two seasons. None of this means that every covered river should be opened; some run beneath structures that cannot be moved, and reopening others would displace communities who have no say in the matter. It does suggest that a decision taken for one reason, by a generation that could not imagine an alternative, is not automatically the right decision now. Several cities have therefore begun to map their buried watercourses before any proposal is made, on the reasonable ground that a public argument about a river is only possible once people know the river is there. The maps have proved popular in a way the engineers did not anticipate, and in two cases residents have asked for a stream to remain covered, which is also a decision worth having made deliberately.",
+      "glossary": [
+        { "w": "settlements", "tr": "yerleşimler" },
+        { "w": "watercourses", "tr": "su yolları" },
+        { "w": "hazards", "tr": "tehlikeler" },
+        { "w": "basements", "tr": "bodrumlar" },
+        { "w": "restoring", "tr": "eski hâline getirmek" },
+        { "w": "tenants", "tr": "kiracılar" },
+        { "w": "ecologists", "tr": "ekologlar" },
+        { "w": "displace", "tr": "yerinden etmek" },
+        { "w": "enlarging", "tr": "genişletmek" },
+        { "w": "shortcuts", "tr": "kestirmeler" }
+      ],
+      "questions": [
+        { "q": "Why were small rivers covered over?", "options": ["They became drains and then health hazards", "They dried up", "They were too narrow", "They flooded constantly"], "answer": 0, "note": "İkinci cümle." },
+        { "q": "What began the reversal of that judgment?", "options": ["Flooding", "Environmental campaigns", "New laws", "Property developers"], "answer": 0, "note": "\"Began not with environmental campaigns but with flooding.\"" },
+        { "q": "What did engineers discover?", "options": ["Reopening was often cheaper than enlarging the pipe", "Pipes were unnecessary", "Rivers had disappeared", "Storms were rare"], "answer": 0, "note": "\"Frequently cheaper than enlarging the pipe.\"" },
+        { "q": "Which effect was welcome to owners but not to tenants?", "options": ["Rising property values", "More traffic", "Returning species", "New shortcuts"], "answer": 0, "note": "\"Welcome to owners and less welcome to tenants.\"" },
+        { "q": "Why should not every river be reopened?", "options": ["Some run under structures that cannot be moved", "It is always too expensive", "Species would suffer", "Nobody wants it"], "answer": 0, "note": "\"Some run beneath structures that cannot be moved.\"" },
+        { "q": "What is the author's general point?", "options": ["An old decision is not automatically right now", "Cities should remove all pipes", "Engineers know best", "Flooding cannot be prevented"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-09",
+      "level": "C1",
+      "order": 9,
+      "kind": "reading",
+      "title": "Uzman tanığın sorunu",
+      "titleEn": "The Problem of the Expert Witness",
+      "minutes": 6,
+      "names": [],
+      "text": "Courts need specialist knowledge and have no reliable method of evaluating it. A judge who must decide whether a building collapsed because of a design fault cannot personally assess structural engineering, and so the system relies on expert witnesses. The arrangement contains an obvious tension: the expert is chosen and paid by one side. Most experts are honest, and the dishonest ones are rarely caught lying outright. The distortion operates more subtly, through selection. A lawyer who consults five specialists and instructs the one whose preliminary view is most favorable has not corrupted anybody; they have simply filtered. The court then hears two confident opinions and has no way of knowing that eight other specialists were never called. Several jurisdictions have experimented with remedies. Court-appointed experts remove the selection problem but introduce another, since the single appointed voice acquires enormous influence and cannot be tested by disagreement. Requiring both experts to meet before the hearing and produce a joint statement of what they agree on has proved more useful, because it narrows the dispute to the genuine point of difference and exposes areas where a confident claim was not shared by anybody else in the field. The reform is unglamorous, costs almost nothing, and is resisted mainly by those whose advantage lay in the confusion. Judges who have used the procedure describe a further benefit that is harder to quantify. When the two experts have already agreed on eighty per cent of the technical ground, the remaining disagreement becomes legible to a non-specialist, and the court can concentrate on the question it is actually competent to decide: not which account of the physics is correct, but which witness has given reasons rather than assertions.",
+      "glossary": [
+        { "w": "structural", "tr": "yapısal" },
+        { "w": "witnesses", "tr": "tanıklar" },
+        { "w": "distortion", "tr": "çarpıtma" },
+        { "w": "preliminary", "tr": "ön, ilk" },
+        { "w": "jurisdictions", "tr": "yargı bölgeleri" },
+        { "w": "appointed", "tr": "atanmış" },
+        { "w": "hearing", "tr": "duruşma" },
+        { "w": "unglamorous", "tr": "gösterişsiz" },
+        { "w": "expertise", "tr": "uzmanlık" },
+        { "w": "outright", "tr": "açıkça, düpedüz" }
+      ],
+      "questions": [
+        { "q": "What tension does the arrangement contain?", "options": ["The expert is chosen and paid by one side", "Experts are unqualified", "Judges dislike experts", "Hearings are too short"], "answer": 0, "note": "\"The expert is chosen and paid by one side.\"" },
+        { "q": "How does the distortion usually operate?", "options": ["Through selection rather than lying", "Through direct bribery", "Through false documents", "Through delay"], "answer": 0, "note": "\"The distortion operates more subtly, through selection.\"" },
+        { "q": "What does the court not know?", "options": ["That other specialists were never called", "Who paid the expert", "The expert's qualifications", "The cost of the case"], "answer": 0, "note": "\"No way of knowing that eight other specialists were never called.\"" },
+        { "q": "What problem do court-appointed experts create?", "options": ["A single voice that cannot be tested by disagreement", "Higher costs", "Longer trials", "Less expertise"], "answer": 0, "note": "Tek atanmış görüş büyük etki kazanıyor ve sınanamıyor." },
+        { "q": "What has proved more useful?", "options": ["A joint statement of what the experts agree on", "Removing experts entirely", "Written questions only", "Public hearings"], "answer": 0, "note": "Duruşmadan önce ortak beyan hazırlamak." },
+        { "q": "Who resists the reform?", "options": ["Those whose advantage lay in the confusion", "Judges", "Universities", "Insurance companies"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-10",
+      "level": "C1",
+      "order": 10,
+      "kind": "reading",
+      "title": "Yeniden okumanın değeri",
+      "titleEn": "The Case for Rereading",
+      "minutes": 6,
+      "names": [],
+      "text": "Reading lists are built on the assumption that quantity is the measure. Students record how many books they have finished, applications ask what you have read, and the culture rewards breadth. Rereading, by contrast, looks like inefficiency: why return to a book you already know when so many remain unopened? The objection assumes that a book is a container of information which, once transferred, need not be visited again. That description fits a manual and almost nothing else. With any text whose meaning depends on structure, the first reading is spent discovering what happens; only on a second reading can attention be given to how the thing is made, because the reader is no longer occupied with suspense. Writers describe this experience unanimously and readers rarely believe them until they try it. There is also a less comfortable argument. A book you reread at thirty and again at fifty produces different results, not because the text changed but because you did, which makes rereading one of the few available instruments for measuring your own movement. The practice has a cost, and pretending otherwise would be dishonest: an hour spent rereading is an hour not spent discovering something new, and a reader who only returns to familiar books gradually stops being challenged at all. What seems defensible is a ratio rather than a rule, and a willingness to notice which of the two activities you are currently avoiding. Libraries, which have no commercial reason to prefer one over the other, have quietly encouraged the practice for years by keeping the same editions on the shelf for decades. A reader who returns to the same building and the same copy is being offered a measurement instrument, whether or not anybody describes it that way.",
+      "glossary": [
+        { "w": "quantity", "tr": "nicelik, sayı" },
+        { "w": "breadth", "tr": "genişlik, kapsam" },
+        { "w": "inefficiency", "tr": "verimsizlik" },
+        { "w": "container", "tr": "kap" },
+        { "w": "suspense", "tr": "merak, gerilim" },
+        { "w": "unanimously", "tr": "oybirliğiyle" },
+        { "w": "instruments", "tr": "araçlar" },
+        { "w": "defensible", "tr": "savunulabilir" },
+        { "w": "ratio", "tr": "oran" }
+      ],
+      "questions": [
+        { "q": "What assumption do reading lists rest on?", "options": ["That quantity is the measure", "That difficulty matters", "That order matters", "That speed matters"], "answer": 0, "note": "İlk cümle." },
+        { "q": "What description of a book does the objection assume?", "options": ["A container of information", "A work of art", "A personal record", "A teaching tool"], "answer": 0, "note": "\"A container of information which, once transferred, need not be visited again.\"" },
+        { "q": "What becomes possible on a second reading?", "options": ["Attention to how the text is made", "Faster reading", "Better memory of names", "Understanding the plot"], "answer": 0, "note": "Okur artık merakla meşgul olmadığı için yapıya bakabiliyor." },
+        { "q": "Why does rereading at different ages give different results?", "options": ["Because the reader has changed", "Because editions differ", "Because memory fails", "Because translations vary"], "answer": 0, "note": "\"Not because the text changed but because you did.\"" },
+        { "q": "What cost does the author admit?", "options": ["An hour rereading is an hour not spent discovering", "Books are expensive", "It is tiring", "It annoys teachers"], "answer": 0, "note": "\"An hour spent rereading is an hour not spent discovering something new.\"" },
+        { "q": "What does the author finally recommend?", "options": ["A ratio rather than a rule", "Rereading everything", "Reading only new books", "Keeping a record"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}
