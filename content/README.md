@@ -83,9 +83,9 @@ demek. Uygulamada bugün 34 statik varlık çağrısı var; bunu üç yüz katı
 göze almak doğru değil. Kelime telaffuzu tek bir sözcük: cihazın kendi TTS'i
 orada yeterli ve IPA zaten kartın üzerinde. `--kind vocab` ile açılabilir.
 
-Dinlemenin 1.953 dosyası bile bugünkünün elli katı. Paket ölçüldükten sonra
-sorun çıkarsa çözüm belli: diyalog başına tek dosya + replik zaman indeksi
-(150 dosya), uygulama tek dosyayı çalıp repliğe atlar.
+**Ölçüldü, sorun çıkmadı.** 1.953 ses varlığı JS paketini 6,6 MB'tan 7,2 MB'a
+çıkardı; sesin kendisi 32 MB, dışa aktarılan toplam 40 MB. Endişe yerindeydi
+ama plan B'ye (diyalog başına tek dosya + replik zaman indeksi) gerek kalmadı.
 
 **Neden örnek cümleler yok.** 9.461 örnek cümle 280.799 karakter ve ~336 dakika
 ses demek; 24 kbps'te yaklaşık 60 MB. Uygulama boyutunu bu kadar büyütmeye
