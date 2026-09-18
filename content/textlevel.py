@@ -370,7 +370,10 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
             if spelling:
                 # Öneriyi mümkünse kelimenin kendi çekimiyle ver: "organisations"
                 # için "organize" değil "organizations" demek daha yardımcı.
-                british[token] = british_z(token) or BRITISH[spelling]
+                # Ama yalnızca üretilen biçim gerçek bir kelimeyse: "practise"
+                # için kural "practize" üretiyor, oysa doğrusu "practice".
+                z = british_z(token)
+                british[token] = z if (z and z in levels) else BRITISH[spelling]
                 continue
             z_form = british_z(token)
             if z_form and any(f in levels for f in candidates(z_form)):

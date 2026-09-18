@@ -1,0 +1,192 @@
+{
+  "_meta": { "batch": "b1-listening-02", "level": "B1", "range": "Diyalog 6-10" },
+  "items": [
+    {
+      "id": "b1-l-06",
+      "level": "B1",
+      "order": 6,
+      "kind": "listening",
+      "title": "Bankada hesap",
+      "titleEn": "At the Bank",
+      "minutes": 4,
+      "names": ["Melike"],
+      "speakers": ["Melike", "Adviser"],
+      "lines": [
+        { "who": "Melike", "en": "I want to open an account, but I am not sure which type.", "tr": "Hesap açmak istiyorum ama hangi tür olacağından emin değilim." },
+        { "who": "Adviser", "en": "Will you use it mainly for daily spending or for saving?", "tr": "Daha çok günlük harcama için mi yoksa birikim için mi kullanacaksınız?" },
+        { "who": "Melike", "en": "Both, really. My salary comes in and I try to keep some aside.", "tr": "Aslında ikisi de. Maaşım yatıyor, bir kısmını ayırmaya çalışıyorum." },
+        { "who": "Adviser", "en": "Then I would suggest two accounts rather than one.", "tr": "O zaman tek hesap yerine iki hesap önerebilirim." },
+        { "who": "Melike", "en": "Does the second one cost anything?", "tr": "İkincisinin bir maliyeti var mı?" },
+        { "who": "Adviser", "en": "No fee, and you can move money between them instantly.", "tr": "Ücret yok, ve aralarında anında para aktarabilirsiniz." },
+        { "who": "Melike", "en": "The problem is that I always spend what I can see.", "tr": "Sorun şu ki gördüğüm parayı hep harcıyorum." },
+        { "who": "Adviser", "en": "Then hide the savings account from your main screen. Most people do.", "tr": "O zaman birikim hesabını ana ekranınızdan gizleyin. Çoğu kişi öyle yapıyor." },
+        { "who": "Melike", "en": "That is a surprisingly good idea. Let us do that.", "tr": "Şaşırtıcı biçimde iyi bir fikir. Öyle yapalım." }
+      ],
+      "glossary": [
+        { "w": "account", "tr": "hesap" },
+        { "w": "saving", "tr": "birikim" },
+        { "w": "fee", "tr": "ücret" },
+        { "w": "instantly", "tr": "anında" },
+        { "w": "salary", "tr": "maaş" }
+      ],
+      "questions": [
+        { "q": "What does Melike want?", "options": ["To open an account", "To close an account", "To borrow money", "To change her card"], "answer": 0, "note": "\"I want to open an account.\"" },
+        { "q": "What does she use money for?", "options": ["Daily spending and saving", "Only saving", "Only spending", "Business"], "answer": 0, "note": "\"Both, really.\"" },
+        { "q": "What does the adviser suggest?", "options": ["Two accounts", "One account", "A credit card", "A different bank"], "answer": 0, "note": "\"I would suggest two accounts rather than one.\"" },
+        { "q": "What is Melike's own problem?", "options": ["She spends what she can see", "She forgets passwords", "She travels often", "She has no salary"], "answer": 0, "note": "\"I always spend what I can see.\"" },
+        { "q": "What is the adviser's solution?", "options": ["Hide the savings account from the main screen", "Use cash only", "Set a daily limit", "Close the second account"], "answer": 0, "note": "\"Hide the savings account from your main screen.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-07",
+      "level": "B1",
+      "order": 7,
+      "kind": "listening",
+      "title": "İkinci dil",
+      "titleEn": "A Second Language",
+      "minutes": 4,
+      "names": ["Ferhat", "Lena"],
+      "speakers": ["Ferhat", "Lena"],
+      "lines": [
+        { "who": "Lena", "en": "Your English has improved a lot since January.", "tr": "İngilizcen ocaktan beri epey gelişmiş." },
+        { "who": "Ferhat", "en": "Thank you. I changed what I do, not how long I study.", "tr": "Teşekkürler. Ne kadar çalıştığımı değil, ne yaptığımı değiştirdim." },
+        { "who": "Lena", "en": "What do you mean?", "tr": "Ne demek istiyorsun?" },
+        { "who": "Ferhat", "en": "I used to read lists of words. Now I listen and repeat out loud.", "tr": "Eskiden kelime listeleri okurdum. Şimdi dinleyip yüksek sesle tekrar ediyorum." },
+        { "who": "Lena", "en": "Does that not feel strange when you are alone?", "tr": "Yalnızken tuhaf gelmiyor mu?" },
+        { "who": "Ferhat", "en": "It did at first. Now I do it while I am cooking.", "tr": "İlk başta geliyordu. Şimdi yemek yaparken yapıyorum." },
+        { "who": "Lena", "en": "And the words stay in your head?", "tr": "Kelimeler aklında kalıyor mu?" },
+        { "who": "Ferhat", "en": "Better than before. Saying something is harder than reading it.", "tr": "Eskisinden iyi. Bir şeyi söylemek okumaktan zor." },
+        { "who": "Lena", "en": "I might try that. My problem is exactly the opposite.", "tr": "Ben de deneyebilirim. Benim sorunum tam tersi." },
+        { "who": "Ferhat", "en": "You understand everything but hesitate to speak.", "tr": "Her şeyi anlıyorsun ama konuşmakta tereddüt ediyorsun." }
+      ],
+      "glossary": [
+        { "w": "improved", "tr": "gelişti" },
+        { "w": "repeat", "tr": "tekrar etmek" },
+        { "w": "hesitate", "tr": "tereddüt etmek" },
+        { "w": "opposite", "tr": "tam tersi" }
+      ],
+      "questions": [
+        { "q": "What has changed for Ferhat?", "options": ["What he does, not how long", "How long he studies", "His teacher", "His course book"], "answer": 0, "note": "\"I changed what I do, not how long I study.\"" },
+        { "q": "What did he do before?", "options": ["Read lists of words", "Watch films", "Take classes", "Nothing"], "answer": 0, "note": "\"I used to read lists of words.\"" },
+        { "q": "When does he practice now?", "options": ["While cooking", "On the bus", "Before sleeping", "At work"], "answer": 0, "note": "\"Now I do it while I am cooking.\"" },
+        { "q": "Why does he think it works?", "options": ["Saying is harder than reading", "It takes longer", "It is more fun", "He has a teacher"], "answer": 0, "note": "\"Saying something is harder than reading it.\"" },
+        { "q": "What is Lena's problem?", "options": ["She understands but hesitates to speak", "She cannot understand", "She has no time", "She forgets words"], "answer": 0, "note": "Son replik." }
+      ]
+    },
+    {
+      "id": "b1-l-08",
+      "level": "B1",
+      "order": 8,
+      "kind": "listening",
+      "title": "Gönüllü olmak",
+      "titleEn": "Becoming a Volunteer",
+      "minutes": 4,
+      "names": ["Aysel"],
+      "speakers": ["Aysel", "Coordinator"],
+      "lines": [
+        { "who": "Aysel", "en": "I saw your notice about volunteers. What would I actually do?", "tr": "Gönüllülerle ilgili duyurunuzu gördüm. Tam olarak ne yapardım?" },
+        { "who": "Coordinator", "en": "It depends on your time. Most people give three hours a week.", "tr": "Zamanınıza bağlı. Çoğu kişi haftada üç saat veriyor." },
+        { "who": "Aysel", "en": "I could manage Saturday mornings.", "tr": "Cumartesi sabahlarını ayarlayabilirim." },
+        { "who": "Coordinator", "en": "Perfect. Saturday is when we deliver food parcels.", "tr": "Harika. Cumartesi gıda kolisi dağıttığımız gün." },
+        { "who": "Aysel", "en": "Do I need a car?", "tr": "Araba gerekli mi?" },
+        { "who": "Coordinator", "en": "Not necessarily. Some volunteers pack, others deliver.", "tr": "Şart değil. Bazı gönüllüler paketliyor, bazıları dağıtıyor." },
+        { "who": "Aysel", "en": "I would prefer packing at first. I am a bit shy with strangers.", "tr": "Başta paketlemeyi tercih ederim. Yabancılarla biraz çekingenim." },
+        { "who": "Coordinator", "en": "That is completely normal. Many people move to delivery later.", "tr": "Bu gayet normal. Birçok kişi sonradan dağıtıma geçiyor." },
+        { "who": "Aysel", "en": "When could I start?", "tr": "Ne zaman başlayabilirim?" },
+        { "who": "Coordinator", "en": "This Saturday, if you like. Just wear comfortable shoes.", "tr": "İsterseniz bu cumartesi. Sadece rahat ayakkabı giyin." },
+        { "who": "Aysel", "en": "Should I bring anything else?", "tr": "Başka bir şey getirmeli miyim?" },
+        { "who": "Coordinator", "en": "Only water. The room gets warm and the morning goes quickly.", "tr": "Sadece su. Oda ısınıyor ve sabah çabuk geçiyor." }
+      ],
+      "glossary": [
+        { "w": "volunteers", "tr": "gönüllüler" },
+        { "w": "parcels", "tr": "koliler" },
+        { "w": "shy", "tr": "çekingen" },
+        { "w": "comfortable", "tr": "rahat" }
+      ],
+      "questions": [
+        { "q": "How much time do most volunteers give?", "options": ["Three hours a week", "One day a week", "Ten hours", "Every evening"], "answer": 0, "note": "\"Most people give three hours a week.\"" },
+        { "q": "What happens on Saturdays?", "options": ["Food parcels are delivered", "Meetings are held", "The office is closed", "Training takes place"], "answer": 0, "note": "\"Saturday is when we deliver food parcels.\"" },
+        { "q": "Does Aysel need a car?", "options": ["Not necessarily", "Yes, always", "Only in winter", "Yes, for packing"], "answer": 0, "note": "\"Not necessarily. Some volunteers pack.\"" },
+        { "q": "What does she prefer at first?", "options": ["Packing", "Delivering", "Office work", "Cooking"], "answer": 0, "note": "\"I would prefer packing at first.\"" },
+        { "q": "When can she start?", "options": ["This Saturday", "Next month", "After training", "In a week"], "answer": 0, "note": "\"This Saturday, if you like.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-09",
+      "level": "B1",
+      "order": 9,
+      "kind": "listening",
+      "title": "Yanlış fatura",
+      "titleEn": "The Wrong Bill",
+      "minutes": 4,
+      "names": ["Volkan"],
+      "speakers": ["Volkan", "Operator"],
+      "lines": [
+        { "who": "Volkan", "en": "My bill is three times higher than usual and I have not changed anything.", "tr": "Faturam normalin üç katı ve hiçbir şey değiştirmedim." },
+        { "who": "Operator", "en": "Let me look. I can see a charge for international calls.", "tr": "Bir bakayım. Uluslararası arama ücreti görüyorum." },
+        { "who": "Volkan", "en": "I have never made an international call in my life.", "tr": "Hayatımda hiç uluslararası arama yapmadım." },
+        { "who": "Operator", "en": "The calls were made at two in the morning, on the fourteenth.", "tr": "Aramalar on dördünde, gece ikide yapılmış." },
+        { "who": "Volkan", "en": "I was asleep. Could someone have used my number?", "tr": "Uyuyordum. Biri numaramı kullanmış olabilir mi?" },
+        { "who": "Operator", "en": "It happens. I will open a case and stop those charges for now.", "tr": "Oluyor. Bir kayıt açıp bu ücretleri şimdilik durduracağım." },
+        { "who": "Volkan", "en": "How long does the investigation take?", "tr": "İnceleme ne kadar sürüyor?" },
+        { "who": "Operator", "en": "Up to ten working days. You will get a message with the result.", "tr": "On iş gününe kadar. Sonuç size mesajla bildirilecek." },
+        { "who": "Volkan", "en": "And I do not pay that part meanwhile?", "tr": "Bu arada o kısmı ödemiyorum, değil mi?" },
+        { "who": "Operator", "en": "Correct. Pay the normal amount and we will hold the rest.", "tr": "Doğru. Normal tutarı ödeyin, kalanı bekletiyoruz." }
+      ],
+      "glossary": [
+        { "w": "charge", "tr": "ücret" },
+        { "w": "international", "tr": "uluslararası" },
+        { "w": "case", "tr": "kayıt, dosya" },
+        { "w": "investigation", "tr": "inceleme" },
+        { "w": "meanwhile", "tr": "bu arada" },
+        { "w": "data", "tr": "veri" }
+      ],
+      "questions": [
+        { "q": "What is wrong with the bill?", "options": ["It is three times higher", "It arrived late", "It has no details", "It is for another person"], "answer": 0, "note": "İlk replik." },
+        { "q": "What charge does the operator find?", "options": ["International calls", "Extra data", "A new service", "A late fee"], "answer": 0, "note": "\"A charge for international calls.\"" },
+        { "q": "When were the calls made?", "options": ["At two in the morning", "In the afternoon", "At midnight", "On the fourth"], "answer": 0, "note": "\"At two in the morning, on the fourteenth.\"" },
+        { "q": "What does the operator do?", "options": ["Opens a case and stops the charges", "Cancels the account", "Sends a new bill", "Nothing"], "answer": 0, "note": "\"I will open a case and stop those charges.\"" },
+        { "q": "What should Volkan pay now?", "options": ["The normal amount", "The whole bill", "Nothing", "Half"], "answer": 0, "note": "\"Pay the normal amount and we will hold the rest.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-10",
+      "level": "B1",
+      "order": 10,
+      "kind": "listening",
+      "title": "Taşınma kararı",
+      "titleEn": "Deciding to Move",
+      "minutes": 4,
+      "names": ["Eda", "Tunc"],
+      "speakers": ["Eda", "Tunc"],
+      "lines": [
+        { "who": "Eda", "en": "They offered me the job in Izmir. I have a week to decide.", "tr": "İzmir'deki işi teklif ettiler. Karar vermek için bir haftam var." },
+        { "who": "Tunc", "en": "That is what you wanted. Why do you look worried?", "tr": "İstediğin buydu. Neden endişeli görünüyorsun?" },
+        { "who": "Eda", "en": "Because wanting a job and moving a whole life are different things.", "tr": "Çünkü bir işi istemekle bütün bir hayatı taşımak farklı şeyler." },
+        { "who": "Tunc", "en": "What worries you most?", "tr": "En çok ne endişelendiriyor?" },
+        { "who": "Eda", "en": "My mother. She is not ill, but she is seventy-eight.", "tr": "Annem. Hasta değil ama yetmiş sekiz yaşında." },
+        { "who": "Tunc", "en": "Have you actually asked her what she thinks?", "tr": "Ona gerçekten ne düşündüğünü sordun mu?" },
+        { "who": "Eda", "en": "Not directly. I assumed she would be upset.", "tr": "Doğrudan değil. Üzüleceğini varsaydım." },
+        { "who": "Tunc", "en": "That assumption might be the heaviest thing you are carrying.", "tr": "Bu varsayım taşıdığın en ağır şey olabilir." },
+        { "who": "Eda", "en": "You are right. I will talk to her tonight.", "tr": "Haklısın. Bu akşam onunla konuşacağım." },
+        { "who": "Tunc", "en": "Then decide. Not before.", "tr": "Ondan sonra karar ver. Önce değil." },
+        { "who": "Eda", "en": "And if she says she wants me to stay?", "tr": "Ya kalmamı istediğini söylerse?" },
+        { "who": "Tunc", "en": "Then at least you are deciding about something real.", "tr": "O zaman en azından gerçek bir şey üzerine karar veriyor olursun." }
+      ],
+      "glossary": [
+        { "w": "decide", "tr": "karar vermek" },
+        { "w": "assumed", "tr": "varsaydı" },
+        { "w": "assumption", "tr": "varsayım" },
+        { "w": "upset", "tr": "üzgün" },
+        { "w": "salary", "tr": "maaş" }
+      ],
+      "questions": [
+        { "q": "What has Eda been offered?", "options": ["A job in Izmir", "A place at university", "A flat", "A promotion here"], "answer": 0, "note": "\"They offered me the job in Izmir.\"" },
+        { "q": "How long does she have to decide?", "options": ["A week", "A month", "Two days", "Until tonight"], "answer": 0, "note": "\"I have a week to decide.\"" },
+        { "q": "What is the main source of her worry?", "options": ["Her mother", "The salary", "The city", "The work itself"], "answer": 0, "note": "\"My mother. She is not ill, but she is seventy-eight.\"" },
+        { "q": "What has she not done?", "options": ["Asked her mother directly", "Accepted the job", "Told her boss", "Visited Izmir"], "answer": 0, "note": "\"Not directly. I assumed she would be upset.\"" },
+        { "q": "What does Tunc point out?", "options": ["The assumption may be the heaviest burden", "The job is not good", "Her mother will refuse", "She should stay"], "answer": 0, "note": "\"That assumption might be the heaviest thing you are carrying.\"" }
+      ]
+    }
+  ]
+}

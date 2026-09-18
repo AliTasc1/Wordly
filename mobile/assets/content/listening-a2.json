@@ -650,5 +650,651 @@
     "note": "\"Not for the first month. We lend cameras.\""
    }
   ]
+ },
+ {
+  "id": "a2-l-06",
+  "level": "A2",
+  "order": 6,
+  "kind": "listening",
+  "title": "Ev arkadaşı arıyorum",
+  "titleEn": "Looking for a Flatmate",
+  "minutes": 3,
+  "names": [
+   "Ozan"
+  ],
+  "speakers": [
+   "Ozan",
+   "Caller"
+  ],
+  "lines": [
+   {
+    "who": "Caller",
+    "en": "Hello, I am calling about the room.",
+    "tr": "Merhaba, oda için arıyorum."
+   },
+   {
+    "who": "Ozan",
+    "en": "Yes, it is still free. Are you a student?",
+    "tr": "Evet, hâlâ boş. Öğrenci misiniz?"
+   },
+   {
+    "who": "Caller",
+    "en": "No, I work at the hospital. I start at seven.",
+    "tr": "Hayır, hastanede çalışıyorum. Yediye başlıyorum."
+   },
+   {
+    "who": "Ozan",
+    "en": "That is fine. The rent is four thousand a month.",
+    "tr": "Sorun değil. Kira ayda dört bin."
+   },
+   {
+    "who": "Caller",
+    "en": "Does that include water and electricity?",
+    "tr": "Buna su ve elektrik dahil mi?"
+   },
+   {
+    "who": "Ozan",
+    "en": "Water yes, electricity no. We share that.",
+    "tr": "Su evet, elektrik hayır. Onu paylaşıyoruz."
+   },
+   {
+    "who": "Caller",
+    "en": "Can I come and see it this evening?",
+    "tr": "Bu akşam gelip görebilir miyim?"
+   },
+   {
+    "who": "Ozan",
+    "en": "Of course. Come after six and bring your questions.",
+    "tr": "Tabii. Altıdan sonra gelin, sorularınızı da getirin."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "rent",
+    "tr": "kira"
+   },
+   {
+    "w": "electricity",
+    "tr": "elektrik"
+   },
+   {
+    "w": "include",
+    "tr": "içermek, dahil olmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is the caller phoning?",
+    "options": [
+     "About a bill",
+     "About a hospital",
+     "About a room",
+     "About a job"
+    ],
+    "answer": 2,
+    "note": "\"I am calling about the room.\""
+   },
+   {
+    "q": "Where does the caller work?",
+    "options": [
+     "She is a student",
+     "At the hospital",
+     "At a school",
+     "At a shop"
+    ],
+    "answer": 1,
+    "note": "\"I work at the hospital.\""
+   },
+   {
+    "q": "How much is the rent?",
+    "options": [
+     "Six thousand",
+     "Four thousand a month",
+     "Seven thousand",
+     "Four hundred"
+    ],
+    "answer": 1,
+    "note": "\"The rent is four thousand a month.\""
+   },
+   {
+    "q": "What is included in the rent?",
+    "options": [
+     "Both",
+     "No, nothing",
+     "Electricity",
+     "Water"
+    ],
+    "answer": 3,
+    "note": "\"Water yes, electricity no.\""
+   },
+   {
+    "q": "When can the caller visit?",
+    "options": [
+     "Tomorrow morning",
+     "After six this evening",
+     "At seven",
+     "Next week"
+    ],
+    "answer": 1,
+    "note": "\"Come after six.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-07",
+  "level": "A2",
+  "order": 7,
+  "kind": "listening",
+  "title": "Kargo sorunu",
+  "titleEn": "A Delivery Problem",
+  "minutes": 3,
+  "names": [
+   "Sibel"
+  ],
+  "speakers": [
+   "Sibel",
+   "Agent"
+  ],
+  "lines": [
+   {
+    "who": "Sibel",
+    "en": "Hello. My package has not arrived.",
+    "tr": "Merhaba. Kargom gelmedi."
+   },
+   {
+    "who": "Agent",
+    "en": "Can you give me the number, please?",
+    "tr": "Numarayı verebilir misiniz lütfen?"
+   },
+   {
+    "who": "Sibel",
+    "en": "It is four seven two nine.",
+    "tr": "Dört yedi iki dokuz."
+   },
+   {
+    "who": "Agent",
+    "en": "I see it. The driver came on Tuesday but nobody was home.",
+    "tr": "Görüyorum. Sürücü salı günü gelmiş ama evde kimse yokmuş."
+   },
+   {
+    "who": "Sibel",
+    "en": "I was at work. Can he come again on Saturday?",
+    "tr": "İşteydim. Cumartesi tekrar gelebilir mi?"
+   },
+   {
+    "who": "Agent",
+    "en": "Yes, but somebody must sign for it.",
+    "tr": "Evet ama birinin imzalaması gerekiyor."
+   },
+   {
+    "who": "Sibel",
+    "en": "My neighbor can sign. Is that possible?",
+    "tr": "Komşum imzalayabilir. Mümkün mü?"
+   },
+   {
+    "who": "Agent",
+    "en": "Yes. I will write a note on the order.",
+    "tr": "Evet. Siparişe bir not düşeceğim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "package",
+    "tr": "kargo, paket"
+   },
+   {
+    "w": "sign",
+    "tr": "imzalamak"
+   },
+   {
+    "w": "possible",
+    "tr": "mümkün"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Sibel's problem?",
+    "options": [
+     "She paid twice",
+     "Her package has not arrived",
+     "She lost the number",
+     "The package is broken"
+    ],
+    "answer": 1,
+    "note": "\"My package has not arrived.\""
+   },
+   {
+    "q": "Why did the driver not leave it?",
+    "options": [
+     "Nobody was home",
+     "It was too heavy",
+     "The address was wrong",
+     "He was late"
+    ],
+    "answer": 0,
+    "note": "\"The driver came on Tuesday but nobody was home.\""
+   },
+   {
+    "q": "When does Sibel want the driver to come?",
+    "options": [
+     "Tomorrow",
+     "Next month",
+     "On Tuesday",
+     "On Saturday"
+    ],
+    "answer": 3,
+    "note": "\"Can he come again on Saturday?\""
+   },
+   {
+    "q": "What is necessary before the driver leaves the package?",
+    "options": [
+     "Somebody must sign",
+     "A phone call",
+     "Payment in cash",
+     "A new number"
+    ],
+    "answer": 0,
+    "note": "\"Somebody must sign for it.\""
+   },
+   {
+    "q": "Who will sign?",
+    "options": [
+     "Nobody",
+     "Her neighbor",
+     "Sibel",
+     "The driver"
+    ],
+    "answer": 1,
+    "note": "\"My neighbor can sign.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-08",
+  "level": "A2",
+  "order": 8,
+  "kind": "listening",
+  "title": "Kütüphane kartı",
+  "titleEn": "A Library Card",
+  "minutes": 3,
+  "names": [
+   "Efe"
+  ],
+  "speakers": [
+   "Efe",
+   "Librarian"
+  ],
+  "lines": [
+   {
+    "who": "Efe",
+    "en": "Good morning. I would like a library card.",
+    "tr": "Günaydın. Kütüphane kartı almak istiyorum."
+   },
+   {
+    "who": "Librarian",
+    "en": "Do you live in this city?",
+    "tr": "Bu şehirde mi yaşıyorsunuz?"
+   },
+   {
+    "who": "Efe",
+    "en": "Yes, I moved here two months ago.",
+    "tr": "Evet, iki ay önce buraya taşındım."
+   },
+   {
+    "who": "Librarian",
+    "en": "Then I need a document with your address.",
+    "tr": "O zaman adresinizin olduğu bir belge gerekiyor."
+   },
+   {
+    "who": "Efe",
+    "en": "I have an electricity bill. Is that enough?",
+    "tr": "Elektrik faturam var. Yeterli mi?"
+   },
+   {
+    "who": "Librarian",
+    "en": "That is perfect. You can borrow five books.",
+    "tr": "Bu harika. Beş kitap ödünç alabilirsiniz."
+   },
+   {
+    "who": "Efe",
+    "en": "For how long?",
+    "tr": "Ne kadar süreyle?"
+   },
+   {
+    "who": "Librarian",
+    "en": "Three weeks, and you can extend it online.",
+    "tr": "Üç hafta, internetten uzatabilirsiniz."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "document",
+    "tr": "belge"
+   },
+   {
+    "w": "bill",
+    "tr": "fatura"
+   },
+   {
+    "w": "borrow",
+    "tr": "ödünç almak"
+   },
+   {
+    "w": "extend",
+    "tr": "uzatmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Efe want?",
+    "options": [
+     "A library card",
+     "A book",
+     "An address",
+     "A bill"
+    ],
+    "answer": 0,
+    "note": "\"I would like a library card.\""
+   },
+   {
+    "q": "When did he move to the city?",
+    "options": [
+     "Two weeks ago",
+     "Last year",
+     "Two months ago",
+     "Yesterday"
+    ],
+    "answer": 2,
+    "note": "\"I moved here two months ago.\""
+   },
+   {
+    "q": "What document does he show?",
+    "options": [
+     "A photograph",
+     "A letter",
+     "A card",
+     "An electricity bill"
+    ],
+    "answer": 3,
+    "note": "\"I have an electricity bill.\""
+   },
+   {
+    "q": "How many books can he borrow?",
+    "options": [
+     "Two",
+     "Ten",
+     "Five",
+     "Three"
+    ],
+    "answer": 2,
+    "note": "\"You can borrow five books.\""
+   },
+   {
+    "q": "How long can he keep them?",
+    "options": [
+     "Three weeks",
+     "One month",
+     "Three days",
+     "Five weeks"
+    ],
+    "answer": 0,
+    "note": "\"Three weeks, and you can extend it online.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-09",
+  "level": "A2",
+  "order": 9,
+  "kind": "listening",
+  "title": "Sinema mı yürüyüş mü",
+  "titleEn": "Cinema or a Walk",
+  "minutes": 3,
+  "names": [
+   "Ilker",
+   "Yasemin"
+  ],
+  "speakers": [
+   "Ilker",
+   "Yasemin"
+  ],
+  "lines": [
+   {
+    "who": "Ilker",
+    "en": "The weather is beautiful. Shall we walk by the sea?",
+    "tr": "Hava çok güzel. Deniz kenarında yürüyelim mi?"
+   },
+   {
+    "who": "Yasemin",
+    "en": "I wanted to see the new film this evening.",
+    "tr": "Bu akşam yeni filmi izlemek istiyordum."
+   },
+   {
+    "who": "Ilker",
+    "en": "The film is on until Thursday. The sun is not.",
+    "tr": "Film perşembeye kadar var. Güneş yok."
+   },
+   {
+    "who": "Yasemin",
+    "en": "That is true. But I am quite tired today.",
+    "tr": "Doğru. Ama bugün oldukça yorgunum."
+   },
+   {
+    "who": "Ilker",
+    "en": "We can walk for half an hour and then have tea.",
+    "tr": "Yarım saat yürür, sonra çay içeriz."
+   },
+   {
+    "who": "Yasemin",
+    "en": "All right. But you buy the tea.",
+    "tr": "Tamam. Ama çayı sen alıyorsun."
+   },
+   {
+    "who": "Ilker",
+    "en": "Agreed. I will meet you at the gate at five.",
+    "tr": "Anlaştık. Seninle beşte kapıda buluşurum."
+   },
+   {
+    "who": "Yasemin",
+    "en": "See you there. Do not be late again.",
+    "tr": "Orada görüşürüz. Yine geç kalma."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "quite",
+    "tr": "oldukça"
+   },
+   {
+    "w": "agreed",
+    "tr": "anlaştık"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Ilker suggest?",
+    "options": [
+     "Staying at home",
+     "Drinking tea only",
+     "Going to the cinema",
+     "A walk by the sea"
+    ],
+    "answer": 3,
+    "note": "\"Shall we walk by the sea?\""
+   },
+   {
+    "q": "What did Yasemin want to do?",
+    "options": [
+     "Meet friends",
+     "Go to work",
+     "See the new film",
+     "Sleep early"
+    ],
+    "answer": 2,
+    "note": "\"I wanted to see the new film.\""
+   },
+   {
+    "q": "What is Ilker's argument?",
+    "options": [
+     "The tickets are expensive",
+     "The film is bad",
+     "The film stays until Thursday",
+     "The cinema is closed"
+    ],
+    "answer": 2,
+    "note": "\"The film is on until Thursday. The sun is not.\""
+   },
+   {
+    "q": "What do they agree to do?",
+    "options": [
+     "Walk and then have tea",
+     "Go to the cinema",
+     "Meet tomorrow",
+     "Stay at home"
+    ],
+    "answer": 0,
+    "note": "\"We can walk for half an hour and then have tea.\""
+   },
+   {
+    "q": "Where do they meet?",
+    "options": [
+     "At the gate at five",
+     "At the cinema",
+     "At her house",
+     "At the sea at six"
+    ],
+    "answer": 0,
+    "note": "\"I will meet you at the gate at five.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-l-10",
+  "level": "A2",
+  "order": 10,
+  "kind": "listening",
+  "title": "Telefonu tamir ettirmek",
+  "titleEn": "Getting the Phone Repaired",
+  "minutes": 3,
+  "names": [
+   "Aysun"
+  ],
+  "speakers": [
+   "Aysun",
+   "Technician"
+  ],
+  "lines": [
+   {
+    "who": "Aysun",
+    "en": "My phone fell and the screen is broken.",
+    "tr": "Telefonum düştü ve ekranı kırıldı."
+   },
+   {
+    "who": "Technician",
+    "en": "Does it still work?",
+    "tr": "Hâlâ çalışıyor mu?"
+   },
+   {
+    "who": "Aysun",
+    "en": "Yes, but I cannot read anything on the left side.",
+    "tr": "Evet ama sol tarafta hiçbir şey okuyamıyorum."
+   },
+   {
+    "who": "Technician",
+    "en": "We can change the screen. It costs two thousand.",
+    "tr": "Ekranı değiştirebiliriz. İki bin tutuyor."
+   },
+   {
+    "who": "Aysun",
+    "en": "That is a lot. How long does it take?",
+    "tr": "Bu çok fazla. Ne kadar sürüyor?"
+   },
+   {
+    "who": "Technician",
+    "en": "Two hours. You can wait or come back later.",
+    "tr": "İki saat. Bekleyebilirsiniz ya da sonra gelebilirsiniz."
+   },
+   {
+    "who": "Aysun",
+    "en": "I will come back at four. Is my photographs safe?",
+    "tr": "Dörtte gelirim. Fotoğraflarım güvende mi?"
+   },
+   {
+    "who": "Technician",
+    "en": "Yes, we do not touch anything inside the phone.",
+    "tr": "Evet, telefonun içindeki hiçbir şeye dokunmuyoruz."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "screen",
+    "tr": "ekran"
+   },
+   {
+    "w": "technician",
+    "tr": "teknisyen"
+   },
+   {
+    "w": "safe",
+    "tr": "güvende"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is wrong with the phone?",
+    "options": [
+     "The screen is broken",
+     "It is lost",
+     "The battery is old",
+     "It does not start"
+    ],
+    "answer": 0,
+    "note": "\"The screen is broken.\""
+   },
+   {
+    "q": "Does the phone still work?",
+    "options": [
+     "Only for calls and messages",
+     "Yes, but part of the screen is unreadable",
+     "No, not at all",
+     "Only for calls"
+    ],
+    "answer": 1,
+    "note": "\"I cannot read anything on the left side.\""
+   },
+   {
+    "q": "How much does the repair cost?",
+    "options": [
+     "Two thousand",
+     "It is free",
+     "Two hundred",
+     "Four thousand"
+    ],
+    "answer": 0,
+    "note": "\"It costs two thousand.\""
+   },
+   {
+    "q": "How long must Aysun wait for the repair?",
+    "options": [
+     "Two days",
+     "Two hours",
+     "Twenty minutes",
+     "Four hours"
+    ],
+    "answer": 1,
+    "note": "\"Two hours.\""
+   },
+   {
+    "q": "What does the technician say about her photographs?",
+    "options": [
+     "He does not know",
+     "They are safe",
+     "They will be deleted",
+     "She must save them first"
+    ],
+    "answer": 1,
+    "note": "\"We do not touch anything inside the phone.\""
+   }
+  ]
  }
 ]

@@ -1,0 +1,191 @@
+{
+  "_meta": { "batch": "b1-listening-01", "level": "B1", "range": "Diyalog 1-5" },
+  "items": [
+    {
+      "id": "b1-l-01",
+      "level": "B1",
+      "order": 1,
+      "kind": "listening",
+      "title": "Maaş görüşmesi",
+      "titleEn": "Talking About Pay",
+      "minutes": 4,
+      "names": ["Pelin"],
+      "speakers": ["Pelin", "Manager"],
+      "lines": [
+        { "who": "Pelin", "en": "Thank you for making the time. I wanted to talk about my salary.", "tr": "Vakit ayırdığınız için teşekkürler. Maaşım hakkında konuşmak istiyordum." },
+        { "who": "Manager", "en": "Of course. You have been with us for two years now.", "tr": "Tabii. Artık iki yıldır bizimlesiniz." },
+        { "who": "Pelin", "en": "Two years in March. In that time my work has changed a lot.", "tr": "Martta iki yıl olacak. Bu sürede işim epey değişti." },
+        { "who": "Manager", "en": "That is fair. You are managing the whole reporting side now.", "tr": "Bu doğru. Artık raporlama tarafının tamamını siz yönetiyorsunuz." },
+        { "who": "Pelin", "en": "Exactly. I took that over when Hakan left and it was never discussed.", "tr": "Aynen öyle. Hakan ayrılınca devraldım ve hiç konuşulmadı." },
+        { "who": "Manager", "en": "What figure did you have in mind?", "tr": "Aklınızda hangi rakam var?" },
+        { "who": "Pelin", "en": "Fifteen per cent, which matches what similar roles pay.", "tr": "Yüzde on beş; benzer pozisyonların ödediğiyle uyuşuyor." },
+        { "who": "Manager", "en": "I cannot promise that today. I can promise an answer by Friday.", "tr": "Bugün bunu söz veremem. Cumaya kadar bir cevap sözü verebilirim." },
+        { "who": "Pelin", "en": "That is all I am asking for. Thank you.", "tr": "Tek istediğim bu. Teşekkür ederim." }
+      ],
+      "glossary": [
+        { "w": "salary", "tr": "maaş" },
+        { "w": "reporting", "tr": "raporlama" },
+        { "w": "figure", "tr": "rakam" },
+        { "w": "per cent", "tr": "yüzde" },
+        { "w": "roles", "tr": "pozisyonlar, görevler" }
+      ],
+      "questions": [
+        { "q": "How long has Pelin worked there?", "options": ["Almost two years", "Five years", "Six months", "Three years"], "answer": 0, "note": "\"Two years in March.\"" },
+        { "q": "What extra work has she taken on?", "options": ["The reporting side", "Hiring staff", "Customer service", "Training"], "answer": 0, "note": "\"You are managing the whole reporting side now.\"" },
+        { "q": "When did she take it over?", "options": ["When Hakan left", "When she joined", "Last month", "In March"], "answer": 0, "note": "\"I took that over when Hakan left.\"" },
+        { "q": "What increase does she ask for?", "options": ["Fifteen per cent", "Five per cent", "Fifty per cent", "She does not say"], "answer": 0, "note": "\"Fifteen per cent.\"" },
+        { "q": "What does the manager promise?", "options": ["An answer by Friday", "The full increase", "A new title", "Nothing"], "answer": 0, "note": "\"I can promise an answer by Friday.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-02",
+      "level": "B1",
+      "order": 2,
+      "kind": "listening",
+      "title": "Bozuk daire",
+      "titleEn": "Problems with the Flat",
+      "minutes": 4,
+      "names": ["Serkan"],
+      "speakers": ["Serkan", "Landlord"],
+      "lines": [
+        { "who": "Serkan", "en": "I have called three times about the heating.", "tr": "Isıtma konusunda üç kez aradım." },
+        { "who": "Landlord", "en": "I know, and I am sorry. The engineer cancelled twice.", "tr": "Biliyorum, üzgünüm. Teknisyen iki kez iptal etti." },
+        { "who": "Serkan", "en": "It has been cold for two weeks. My daughter has a cough.", "tr": "İki haftadır hava soğuk. Kızım öksürüyor." },
+        { "who": "Landlord", "en": "I understand. I will call a different company today.", "tr": "Anlıyorum. Bugün başka bir firmayı arayacağım." },
+        { "who": "Serkan", "en": "I would like that in writing, please.", "tr": "Bunu yazılı olarak istiyorum lütfen." },
+        { "who": "Landlord", "en": "You want a message rather than a phone call?", "tr": "Telefon yerine mesaj mı istiyorsunuz?" },
+        { "who": "Serkan", "en": "Yes. Then we both know what was agreed and when.", "tr": "Evet. Böylece ikimiz de neyin ne zaman kararlaştırıldığını biliriz." },
+        { "who": "Landlord", "en": "That is reasonable. I will send it this afternoon.", "tr": "Bu makul. Bu öğleden sonra gönderirim." },
+        { "who": "Serkan", "en": "Thank you. I do not want an argument, I want heating.", "tr": "Teşekkürler. Tartışma istemiyorum, ısınma istiyorum." },
+        { "who": "Landlord", "en": "I do not want one either. If the new company cannot come this week, I will pay for a heater.", "tr": "Ben de istemiyorum. Yeni firma bu hafta gelemezse bir ısıtıcının parasını ben veririm." },
+        { "who": "Serkan", "en": "That would be fair. I will wait for your message.", "tr": "Bu adil olur. Mesajınızı bekleyeceğim." }
+      ],
+      "glossary": [
+        { "w": "heating", "tr": "ısıtma" },
+        { "w": "engineer", "tr": "teknisyen, usta" },
+        { "w": "cough", "tr": "öksürük" },
+        { "w": "landlord", "tr": "ev sahibi" },
+        { "w": "reasonable", "tr": "makul" }
+      ],
+      "questions": [
+        { "q": "How many times has Serkan called?", "options": ["Three", "Two", "Once", "Five"], "answer": 0, "note": "\"I have called three times.\"" },
+        { "q": "Why has nothing been fixed?", "options": ["The engineer cancelled twice", "The landlord refused", "There is no money", "The part is missing"], "answer": 0, "note": "\"The engineer cancelled twice.\"" },
+        { "q": "What does Serkan ask for?", "options": ["The promise in writing", "A lower rent", "A new flat", "His money back"], "answer": 0, "note": "\"I would like that in writing.\"" },
+        { "q": "Why does he want it in writing?", "options": ["So both know what was agreed", "To show a lawyer", "Because he cannot hear", "To keep a record for tax"], "answer": 0, "note": "\"Then we both know what was agreed and when.\"" },
+        { "q": "How does the landlord respond?", "options": ["He agrees to send it", "He refuses", "He asks for time", "He ends the call"], "answer": 0, "note": "\"I will send it this afternoon.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-03",
+      "level": "B1",
+      "order": 3,
+      "kind": "listening",
+      "title": "Grup ödevi",
+      "titleEn": "The Group Project",
+      "minutes": 4,
+      "names": ["Cansu", "Tarik"],
+      "speakers": ["Cansu", "Tarik"],
+      "lines": [
+        { "who": "Cansu", "en": "We need to talk about the presentation. It is on Monday.", "tr": "Sunum hakkında konuşmalıyız. Pazartesi." },
+        { "who": "Tarik", "en": "I know. I have not finished my part yet.", "tr": "Biliyorum. Kendi kısmımı henüz bitirmedim." },
+        { "who": "Cansu", "en": "That is the third time you have said that.", "tr": "Bunu üçüncü kez söylüyorsun." },
+        { "who": "Tarik", "en": "I have been working evenings. I am not doing nothing.", "tr": "Akşamları çalışıyorum. Hiçbir şey yapmıyor değilim." },
+        { "who": "Cansu", "en": "I did not say that. But I cannot build the slides without your data.", "tr": "Öyle demedim. Ama senin verin olmadan slaytları hazırlayamam." },
+        { "who": "Tarik", "en": "What if I send you the numbers tonight, even if they are rough?", "tr": "Ya bu gece sana rakamları göndersem, ham hâliyle bile olsa?" },
+        { "who": "Cansu", "en": "That would help. I can start and you correct them tomorrow.", "tr": "Bu yardımcı olur. Ben başlarım, sen yarın düzeltirsin." },
+        { "who": "Tarik", "en": "Agreed. And I will do the speaking part, since you did last time.", "tr": "Anlaştık. Konuşma kısmını da ben yaparım, geçen sefer sen yapmıştın." },
+        { "who": "Cansu", "en": "Now we have a plan. Send them before midnight.", "tr": "Şimdi bir planımız var. Gece yarısından önce gönder." }
+      ],
+      "glossary": [
+        { "w": "presentation", "tr": "sunum" },
+        { "w": "slides", "tr": "slaytlar" },
+        { "w": "rough", "tr": "ham, kaba" },
+        { "w": "correct", "tr": "düzeltmek" },
+        { "w": "data", "tr": "veri" }
+      ],
+      "questions": [
+        { "q": "When is the presentation?", "options": ["On Monday", "Tonight", "On Friday", "Next week"], "answer": 0, "note": "\"It is on Monday.\"" },
+        { "q": "What is Cansu's complaint?", "options": ["Tarik keeps saying he is not finished", "Tarik is lazy at school", "Tarik missed the class", "Tarik changed the topic"], "answer": 0, "note": "\"That is the third time you have said that.\"" },
+        { "q": "Why can Cansu not continue?", "options": ["She needs his data for the slides", "She has no computer", "She does not know the topic", "She is ill"], "answer": 0, "note": "\"I cannot build the slides without your data.\"" },
+        { "q": "What does Tarik offer?", "options": ["To send rough numbers tonight", "To do everything himself", "To ask for more time", "To change groups"], "answer": 0, "note": "\"What if I send you the numbers tonight, even if they are rough?\"" },
+        { "q": "Who will speak in the presentation?", "options": ["Tarik", "Cansu", "Both equally", "They have not decided"], "answer": 0, "note": "\"I will do the speaking part, since you did last time.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-04",
+      "level": "B1",
+      "order": 4,
+      "kind": "listening",
+      "title": "Sağlık kontrolü",
+      "titleEn": "A Health Check",
+      "minutes": 4,
+      "names": ["Kemal"],
+      "speakers": ["Kemal", "Doctor"],
+      "lines": [
+        { "who": "Doctor", "en": "Your results are mostly normal, but your blood pressure is high.", "tr": "Sonuçlarınız çoğunlukla normal ama tansiyonunuz yüksek." },
+        { "who": "Kemal", "en": "Is that serious? I feel completely fine.", "tr": "Ciddi mi? Kendimi gayet iyi hissediyorum." },
+        { "who": "Doctor", "en": "That is exactly the problem. It usually has no symptoms.", "tr": "Sorun tam da bu. Genelde belirti vermez." },
+        { "who": "Kemal", "en": "My father had the same thing at my age.", "tr": "Babam da benim yaşımdayken aynı şeyi yaşamıştı." },
+        { "who": "Doctor", "en": "That matters. Family history raises the risk.", "tr": "Bu önemli. Aile geçmişi riski artırır." },
+        { "who": "Kemal", "en": "Do I have to take tablets straight away?", "tr": "Hemen ilaç almam gerekiyor mu?" },
+        { "who": "Doctor", "en": "Not yet. Let us try three months of exercise and less salt.", "tr": "Henüz değil. Üç ay egzersiz ve daha az tuz deneyelim." },
+        { "who": "Kemal", "en": "And if it does not fall?", "tr": "Peki düşmezse?" },
+        { "who": "Doctor", "en": "Then we start medicine. But most people improve without it.", "tr": "O zaman ilaca başlarız. Ama çoğu kişi ilaçsız düzeliyor." },
+        { "who": "Kemal", "en": "What counts as exercise? I have no time for a gym.", "tr": "Egzersiz derken ne kastediyorsunuz? Spor salonuna vaktim yok." },
+        { "who": "Doctor", "en": "Thirty minutes of fast walking, five days a week. It is enough.", "tr": "Haftada beş gün, otuz dakika hızlı yürüyüş. Bu yeterli." },
+        { "who": "Kemal", "en": "That I can do. I will come back in March.", "tr": "Bunu yapabilirim. Martta tekrar gelirim." }
+      ],
+      "glossary": [
+        { "w": "blood pressure", "tr": "tansiyon" },
+        { "w": "symptoms", "tr": "belirtiler" },
+        { "w": "risk", "tr": "risk" },
+        { "w": "tablets", "tr": "haplar" },
+        { "w": "medicine", "tr": "ilaç" }
+      ],
+      "questions": [
+        { "q": "What is the problem with Kemal's results?", "options": ["High blood pressure", "Low weight", "A bad heart", "Nothing at all"], "answer": 0, "note": "\"Your blood pressure is high.\"" },
+        { "q": "Why does the doctor say feeling fine is the problem?", "options": ["The condition usually has no symptoms", "Kemal is lying", "The test may be wrong", "He is too young"], "answer": 0, "note": "\"It usually has no symptoms.\"" },
+        { "q": "Why does the family history matter?", "options": ["It raises the risk", "It proves the test", "It changes the treatment", "It does not matter"], "answer": 0, "note": "\"Family history raises the risk.\"" },
+        { "q": "What does the doctor suggest first?", "options": ["Exercise and less salt", "Tablets", "Another test", "Rest"], "answer": 0, "note": "\"Three months of exercise and less salt.\"" },
+        { "q": "What happens if that does not work?", "options": ["They start medicine", "Nothing", "He sees a specialist", "He repeats the test"], "answer": 0, "note": "\"Then we start medicine.\"" }
+      ]
+    },
+    {
+      "id": "b1-l-05",
+      "level": "B1",
+      "order": 5,
+      "kind": "listening",
+      "title": "Araba mı otobüs mü",
+      "titleEn": "Car or Bus",
+      "minutes": 4,
+      "names": ["Naz", "Batu"],
+      "speakers": ["Naz", "Batu"],
+      "lines": [
+        { "who": "Batu", "en": "I am thinking of selling the car and using the bus.", "tr": "Arabayı satıp otobüs kullanmayı düşünüyorum." },
+        { "who": "Naz", "en": "Really? You always said the bus takes too long.", "tr": "Gerçekten mi? Hep otobüsün çok uzun sürdüğünü söylerdin." },
+        { "who": "Batu", "en": "It does, but I added up what the car actually costs.", "tr": "Öyle ama arabanın gerçek maliyetini topladım." },
+        { "who": "Naz", "en": "Petrol and insurance?", "tr": "Benzin ve sigorta mı?" },
+        { "who": "Batu", "en": "Those, plus repairs, parking and the test every year.", "tr": "Onlar artı tamir, otopark ve her yılki muayene." },
+        { "who": "Naz", "en": "And the bus is much cheaper, obviously.", "tr": "Otobüs de belli ki çok daha ucuz." },
+        { "who": "Batu", "en": "About a tenth. The problem is my mother's hospital visits.", "tr": "Yaklaşık onda biri. Sorun annemin hastane ziyaretleri." },
+        { "who": "Naz", "en": "Could you rent a car for those days?", "tr": "O günler için araba kiralayamaz mısın?" },
+        { "who": "Batu", "en": "I had not thought of that. It would still be cheaper.", "tr": "Bunu düşünmemiştim. Yine de daha ucuza gelirdi." },
+        { "who": "Naz", "en": "Try it for a month before you sell anything.", "tr": "Bir şey satmadan önce bir ay dene." },
+        { "who": "Batu", "en": "That is sensible. If I hate it, I have lost nothing.", "tr": "Mantıklı. Nefret edersem hiçbir şey kaybetmem." }
+      ],
+      "glossary": [
+        { "w": "insurance", "tr": "sigorta" },
+        { "w": "repairs", "tr": "tamir masrafları" },
+        { "w": "obviously", "tr": "besbelli" },
+        { "w": "rent", "tr": "kiralamak" }
+      ],
+      "questions": [
+        { "q": "What is Batu considering?", "options": ["Selling his car", "Buying a new car", "Moving house", "Changing job"], "answer": 0, "note": "\"I am thinking of selling the car.\"" },
+        { "q": "What did he do before deciding?", "options": ["Added up the real costs", "Asked his mother", "Tried the bus for a month", "Read an article"], "answer": 0, "note": "\"I added up what the car actually costs.\"" },
+        { "q": "Which costs does he mention?", "options": ["Petrol, insurance, repairs, parking and the test", "Only petrol", "Only insurance", "Only parking"], "answer": 0, "note": "\"Those, plus repairs, parking and the test every year.\"" },
+        { "q": "What is the difficulty?", "options": ["His mother's hospital visits", "The bus is unsafe", "He likes driving", "His work is far"], "answer": 0, "note": "\"The problem is my mother's hospital visits.\"" },
+        { "q": "What does Naz suggest?", "options": ["Renting a car for those days", "Keeping the car", "Taking a taxi", "Asking a neighbor"], "answer": 0, "note": "\"Could you rent a car for those days?\"" }
+      ]
+    }
+  ]
+}
