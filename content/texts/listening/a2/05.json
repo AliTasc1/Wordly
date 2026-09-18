@@ -1,0 +1,197 @@
+{
+  "_meta": { "batch": "a2-listening-05", "level": "A2", "range": "Diyalog 21-25" },
+  "items": [
+    {
+      "id": "a2-l-21",
+      "level": "A2",
+      "order": 21,
+      "kind": "listening",
+      "title": "İkinci görüşmeye hazırlık",
+      "titleEn": "Before the Second Interview",
+      "minutes": 3,
+      "names": ["Pelin", "Emre"],
+      "speakers": ["Pelin", "Emre"],
+      "lines": [
+        { "who": "Pelin", "en": "I have a second interview on Thursday and I am worried.", "tr": "Perşembe ikinci görüşmem var ve endişeliyim." },
+        { "who": "Emre", "en": "The first one went well, so they liked something.", "tr": "İlki iyi geçti, demek bir şeyi beğendiler." },
+        { "who": "Pelin", "en": "This time it is with the manager, not the office.", "tr": "Bu sefer ofisle değil, müdürle." },
+        { "who": "Emre", "en": "What do you think he will ask?", "tr": "Sence ne soracak?" },
+        { "who": "Pelin", "en": "Probably why I left my last job after only one year.", "tr": "Muhtemelen son işimden neden bir yıl sonra ayrıldığımı." },
+        { "who": "Emre", "en": "What will you say?", "tr": "Ne diyeceksin?" },
+        { "who": "Pelin", "en": "The truth. The work was fine but there was nothing to learn.", "tr": "Gerçeği. İş iyiydi ama öğrenecek bir şey yoktu." },
+        { "who": "Emre", "en": "That is a good answer. Do not say anything bad about the people.", "tr": "İyi bir cevap. İnsanlar hakkında kötü bir şey söyleme." },
+        { "who": "Pelin", "en": "I know. Nobody wants to hire somebody who complains.", "tr": "Biliyorum. Kimse şikâyet eden birini işe almak istemez." },
+        { "who": "Emre", "en": "Prepare two questions for him too. It shows interest.", "tr": "Ona da iki soru hazırla. İlgi gösterir." },
+        { "who": "Pelin", "en": "What kind of questions?", "tr": "Ne tür sorular?" },
+        { "who": "Emre", "en": "Ask what a normal week looks like. That is always useful.", "tr": "Normal bir haftanın nasıl geçtiğini sor. Bu her zaman faydalıdır." }
+      ],
+      "glossary": [
+        { "w": "interview", "tr": "iş görüşmesi" },
+        { "w": "manager", "tr": "müdür" },
+        { "w": "hire", "tr": "işe almak" },
+        { "w": "complains", "tr": "şikâyet eder" },
+        { "w": "prepare", "tr": "hazırlamak" }
+      ],
+      "questions": [
+        { "q": "Who is the second interview with?", "options": ["The manager", "The office", "A group", "Another company"], "answer": 0, "note": "\"This time it is with the manager.\"" },
+        { "q": "What does Pelin think he will ask?", "options": ["Why she left her last job", "About her school", "About her family", "About money"], "answer": 0, "note": "\"Probably why I left my last job.\"" },
+        { "q": "What is her real reason?", "options": ["There was nothing to learn", "The pay was low", "The people were bad", "It was too far"], "answer": 0, "note": "\"The work was fine but there was nothing to learn.\"" },
+        { "q": "What does Emre tell her not to do?", "options": ["Say bad things about the people", "Ask questions", "Arrive early", "Talk about money"], "answer": 0, "note": "\"Do not say anything bad about the people.\"" },
+        { "q": "What question does Emre suggest?", "options": ["What a normal week looks like", "How much they pay", "Who the manager is", "When she can start"], "answer": 0, "note": "\"Ask what a normal week looks like.\"" }
+      ]
+    },
+    {
+      "id": "a2-l-22",
+      "level": "A2",
+      "order": 22,
+      "kind": "listening",
+      "title": "Kayıp cüzdan",
+      "titleEn": "Reporting a Lost Wallet",
+      "minutes": 3,
+      "names": ["Burak"],
+      "speakers": ["Burak", "Officer"],
+      "lines": [
+        { "who": "Burak", "en": "I lost my wallet this afternoon, somewhere in the city.", "tr": "Bu öğleden sonra cüzdanımı kaybettim, şehirde bir yerde." },
+        { "who": "Officer", "en": "Where were you between one and four?", "tr": "Birle dört arası neredeydiniz?" },
+        { "who": "Burak", "en": "At the market, then a cafe, then the bus.", "tr": "Pazarda, sonra bir kafede, sonra otobüste." },
+        { "who": "Officer", "en": "Did you pay for the cafe with money from the wallet?", "tr": "Kafeyi cüzdandaki parayla mı ödediniz?" },
+        { "who": "Burak", "en": "Yes. So I had it at three o'clock.", "tr": "Evet. Yani saat üçte yanımdaydı." },
+        { "who": "Officer", "en": "Then it went on the bus or at the bus stop.", "tr": "O hâlde otobüste ya da durakta gitti." },
+        { "who": "Burak", "en": "The bus was very full. I stood all the way.", "tr": "Otobüs çok doluydu. Yol boyunca ayakta durdum." },
+        { "who": "Officer", "en": "What was in it?", "tr": "İçinde ne vardı?" },
+        { "who": "Burak", "en": "Two cards, a little money, and a photo of my daughter.", "tr": "İki kart, biraz para ve kızımın bir fotoğrafı." },
+        { "who": "Officer", "en": "Call the bank first, then fill in this form.", "tr": "Önce bankayı arayın, sonra bu formu doldurun." },
+        { "who": "Burak", "en": "Do people bring wallets here?", "tr": "İnsanlar cüzdanları buraya getiriyor mu?" },
+        { "who": "Officer", "en": "More often than you think. Usually without the money.", "tr": "Sandığınızdan sık. Genelde parasız." }
+      ],
+      "glossary": [
+        { "w": "wallet", "tr": "cüzdan" },
+        { "w": "officer", "tr": "görevli, memur" },
+        { "w": "fill in", "tr": "doldurmak" },
+        { "w": "daughter", "tr": "kız evlat" }
+      ],
+      "questions": [
+        { "q": "Where was Burak between one and four?", "options": ["The market, a cafe and the bus", "Only the market", "At home", "At work"], "answer": 0, "note": "\"At the market, then a cafe, then the bus.\"" },
+        { "q": "How do they know he had it at three?", "options": ["He paid at the cafe", "He saw it", "A friend saw it", "He took a photo"], "answer": 0, "note": "\"Yes. So I had it at three o'clock.\"" },
+        { "q": "What was the bus like?", "options": ["Very full", "Empty", "Late", "Cold"], "answer": 0, "note": "\"The bus was very full.\"" },
+        { "q": "What does Burak mention last?", "options": ["A photo of his daughter", "Two cards", "His card number", "Some keys"], "answer": 0, "note": "\"A photo of my daughter.\"" },
+        { "q": "What does the officer say about returned wallets?", "options": ["Usually without the money", "Never returned", "Always complete", "Sent by post"], "answer": 0, "note": "\"Usually without the money.\"" }
+      ]
+    },
+    {
+      "id": "a2-l-23",
+      "level": "A2",
+      "order": 23,
+      "kind": "listening",
+      "title": "Tarif sormak",
+      "titleEn": "Asking for a Recipe",
+      "minutes": 3,
+      "names": ["Nurten", "Selin"],
+      "speakers": ["Nurten", "Selin"],
+      "lines": [
+        { "who": "Selin", "en": "The soup was wonderful. Can you tell me how you make it?", "tr": "Çorba harikaydı. Nasıl yaptığını söyler misin?" },
+        { "who": "Nurten", "en": "Of course. It is very easy but it takes time.", "tr": "Tabii. Çok kolay ama zaman alıyor." },
+        { "who": "Selin", "en": "How long?", "tr": "Ne kadar?" },
+        { "who": "Nurten", "en": "Two hours, but you do nothing for most of it.", "tr": "İki saat ama çoğunda bir şey yapmıyorsun." },
+        { "who": "Selin", "en": "What do I need?", "tr": "Neye ihtiyacım var?" },
+        { "who": "Nurten", "en": "Red lentils, one onion, oil, salt and a little lemon.", "tr": "Kırmızı mercimek, bir soğan, yağ, tuz ve biraz limon." },
+        { "who": "Selin", "en": "That is all? My mother uses ten things.", "tr": "Hepsi bu mu? Annem on şey kullanıyor." },
+        { "who": "Nurten", "en": "Ten things make a different soup, not a better one.", "tr": "On şey farklı bir çorba yapar, daha iyisini değil." },
+        { "who": "Selin", "en": "When do I put the lemon?", "tr": "Limonu ne zaman koyayım?" },
+        { "who": "Nurten", "en": "At the end, off the heat. That is the only important part.", "tr": "Sonunda, ocaktan aldıktan sonra. Tek önemli kısım bu." },
+        { "who": "Selin", "en": "I will try it on Sunday.", "tr": "Pazar günü deneyeceğim." },
+        { "who": "Nurten", "en": "Call me if something goes wrong. It usually does the first time.", "tr": "Bir şey ters giderse beni ara. İlk seferde genelde gider." }
+      ],
+      "glossary": [
+        { "w": "recipe", "tr": "tarif" },
+        { "w": "lentils", "tr": "mercimek" },
+        { "w": "onion", "tr": "soğan" },
+        { "w": "oil", "tr": "yağ" },
+        { "w": "salt", "tr": "tuz" },
+        { "w": "heat", "tr": "ocak, ateş" }
+      ],
+      "questions": [
+        { "q": "How long does the soup take?", "options": ["Two hours", "Ten minutes", "Half an hour", "All day"], "answer": 0, "note": "\"Two hours, but you do nothing for most of it.\"" },
+        { "q": "How many things does Nurten use?", "options": ["Five", "Ten", "Two", "Eight"], "answer": 0, "note": "\"Red lentils, one onion, oil, salt and a little lemon.\"" },
+        { "q": "What does Nurten say about using ten things?", "options": ["It makes a different soup, not a better one", "It is better", "It is too expensive", "It is faster"], "answer": 0, "note": "\"Ten things make a different soup, not a better one.\"" },
+        { "q": "When does the lemon go in?", "options": ["At the end, off the heat", "At the start", "In the middle", "Before the onion"], "answer": 0, "note": "\"At the end, off the heat.\"" },
+        { "q": "What does Nurten say about the first time?", "options": ["Something usually goes wrong", "It is always perfect", "It takes longer", "It is easier"], "answer": 0, "note": "\"It usually does the first time.\"" }
+      ]
+    },
+    {
+      "id": "a2-l-24",
+      "level": "A2",
+      "order": 24,
+      "kind": "listening",
+      "title": "Yeni bir şehre taşınmak",
+      "titleEn": "Two Weeks in a New City",
+      "minutes": 3,
+      "names": ["Kaan", "Bora"],
+      "speakers": ["Kaan", "Bora"],
+      "lines": [
+        { "who": "Bora", "en": "How are the first two weeks?", "tr": "İlk iki hafta nasıl geçiyor?" },
+        { "who": "Kaan", "en": "The flat is good and the work is fine. The evenings are hard.", "tr": "Ev iyi, iş de iyi. Akşamlar zor." },
+        { "who": "Bora", "en": "Because you know nobody?", "tr": "Kimseyi tanımadığın için mi?" },
+        { "who": "Kaan", "en": "Yes. At home I always had somebody to call.", "tr": "Evet. Memlekette hep arayacak biri vardı." },
+        { "who": "Bora", "en": "Is there anybody friendly at work?", "tr": "İşte cana yakın biri var mı?" },
+        { "who": "Kaan", "en": "Two or three, but we only talk about the job.", "tr": "İki üç kişi ama sadece işi konuşuyoruz." },
+        { "who": "Bora", "en": "Ask one of them where they eat on Friday. That is how it starts.", "tr": "Birine cuma nerede yediklerini sor. Böyle başlar." },
+        { "who": "Kaan", "en": "That feels strange after two weeks.", "tr": "İki hafta sonra tuhaf geliyor." },
+        { "who": "Bora", "en": "It is stranger after six months, believe me.", "tr": "Altı ay sonra daha tuhaf oluyor, inan bana." },
+        { "who": "Kaan", "en": "You are right. There is also a running group near the park.", "tr": "Haklısın. Ayrıca parkın yanında bir koşu grubu var." },
+        { "who": "Bora", "en": "Go on Saturday. You do not have to talk when you run.", "tr": "Cumartesi git. Koşarken konuşmak zorunda değilsin." },
+        { "who": "Kaan", "en": "That is exactly why it is a good idea.", "tr": "Tam da bu yüzden iyi bir fikir." }
+      ],
+      "glossary": [
+        { "w": "friendly", "tr": "cana yakın" },
+        { "w": "strange", "tr": "tuhaf" },
+        { "w": "believe", "tr": "inanmak" }
+      ],
+      "questions": [
+        { "q": "What is hard for Kaan?", "options": ["The evenings", "The work", "The flat", "The travel"], "answer": 0, "note": "\"The evenings are hard.\"" },
+        { "q": "What does he talk about at work?", "options": ["Only the job", "Their families", "Sport", "The city"], "answer": 0, "note": "\"We only talk about the job.\"" },
+        { "q": "What does Bora suggest first?", "options": ["Ask where they eat on Friday", "Join a club", "Go home", "Wait six months"], "answer": 0, "note": "\"Ask one of them where they eat on Friday.\"" },
+        { "q": "Why does Bora say it will be stranger later?", "options": ["After six months it is harder to start", "People change jobs", "He will be busy", "Nobody will remember him"], "answer": 0, "note": "\"It is stranger after six months.\"" },
+        { "q": "Why does Kaan like the running group?", "options": ["You do not have to talk", "It is free", "It is near his flat", "His team goes"], "answer": 0, "note": "Son iki replik." }
+      ]
+    },
+    {
+      "id": "a2-l-25",
+      "level": "A2",
+      "order": 25,
+      "kind": "listening",
+      "title": "Kirayı geç ödemek",
+      "titleEn": "Paying the Rent Late",
+      "minutes": 3,
+      "names": ["Ferda"],
+      "speakers": ["Ferda", "Landlord"],
+      "lines": [
+        { "who": "Ferda", "en": "I want to tell you before the fifth. My pay is coming late this month.", "tr": "Beşinden önce size söylemek istiyorum. Bu ay maaşım geç geliyor." },
+        { "who": "Landlord", "en": "How late?", "tr": "Ne kadar geç?" },
+        { "who": "Ferda", "en": "The company said the twelfth instead of the first.", "tr": "Şirket birinci yerine on ikisi dedi." },
+        { "who": "Landlord", "en": "Has this happened before?", "tr": "Daha önce oldu mu?" },
+        { "who": "Ferda", "en": "Not in two years. I have always paid on the fifth.", "tr": "İki yıldır olmadı. Hep beşinde ödedim." },
+        { "who": "Landlord", "en": "That is true, and it is why I am not worried.", "tr": "Doğru, zaten bu yüzden endişelenmiyorum." },
+        { "who": "Ferda", "en": "I can pay half on the fifth and half on the thirteenth.", "tr": "Yarısını beşinde, yarısını on üçünde ödeyebilirim." },
+        { "who": "Landlord", "en": "Just pay all of it on the thirteenth. Two payments is more work for both of us.", "tr": "Hepsini on üçünde ödeyin. İki ödeme ikimiz için de fazla iş." },
+        { "who": "Ferda", "en": "Thank you. I was worried about this call.", "tr": "Teşekkür ederim. Bu telefon için endişeleniyordum." },
+        { "who": "Landlord", "en": "The people who call are never the problem.", "tr": "Arayan insanlar hiçbir zaman sorun olmaz." },
+        { "who": "Ferda", "en": "I will send a message on the thirteenth.", "tr": "On üçünde mesaj atarım." },
+        { "who": "Landlord", "en": "Good. And tell me early next time too.", "tr": "Güzel. Bir dahaki sefere de erken haber verin." }
+      ],
+      "glossary": [
+        { "w": "rent", "tr": "kira" },
+        { "w": "landlord", "tr": "ev sahibi" },
+        { "w": "pay", "tr": "maaş" },
+        { "w": "payments", "tr": "ödemeler" }
+      ],
+      "questions": [
+        { "q": "When will Ferda's pay come?", "options": ["On the twelfth", "On the first", "On the fifth", "On the thirteenth"], "answer": 0, "note": "\"The company said the twelfth instead of the first.\"" },
+        { "q": "When does she usually pay?", "options": ["On the fifth", "On the first", "On the twelfth", "At the end of the month"], "answer": 0, "note": "\"I have always paid on the fifth.\"" },
+        { "q": "Why is the landlord not worried?", "options": ["She has always paid on time", "The rent is small", "He has other flats", "She pays a lot"], "answer": 0, "note": "\"That is true, and it is why I am not worried.\"" },
+        { "q": "What does the landlord prefer?", "options": ["One payment on the thirteenth", "Two payments", "Payment on the fifth", "Payment next month"], "answer": 0, "note": "\"Just pay all of it on the thirteenth.\"" },
+        { "q": "What does the landlord say about people who call?", "options": ["They are never the problem", "They always want more time", "They are usually late", "They should write"], "answer": 0, "note": "\"The people who call are never the problem.\"" }
+      ]
+    }
+  ]
+}
