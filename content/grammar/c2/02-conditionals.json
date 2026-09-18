@@ -1,0 +1,134 @@
+{
+  "_meta": { "batch": "c2-grammar-02", "level": "C2", "range": "Ders 4-6 — koşul ve pişmanlık" },
+  "lessons": [
+    {
+      "id": "c2-04-if-it-were-not-for",
+      "level": "C2",
+      "order": 4,
+      "title": "If it were not for — o olmasaydı",
+      "topic": "if it were not for / if it hadn't been for",
+      "canDo": "Bir şeyin varlığının her şeyi değiştirdiğini tek kalıpla anlatabilirim.",
+      "covers": ["SUBJ.if_it_were_not_for", "SUBJ.if_it_hadn't_been_for"],
+      "concept": {
+        "summary": "Bu kalıp tek bir etkenin belirleyici olduğunu söyler: \"o olmasa, bambaşka olurdu\". Bugüne bakan biçimi if it were not for, geçmişe bakan biçimi if it hadn't been for'dur. Zaman farkı kalıbın içinde taşınır: sonuç cümlesi buna uyar, bugün için would + fiil, geçmiş için would have + V3. Kalıptan sonra her zaman bir isim öbeği gelir, cümle gelmez.",
+        "formula": { "left": "If it were not for + isim", "right": "If it hadn't been for + isim" },
+        "table": [
+          { "form": "bugün", "be": "If it were not for X", "example": "If it were not for her, we would be lost." },
+          { "form": "geçmiş", "be": "If it hadn't been for X", "example": "If it hadn't been for the storm, …" },
+          { "form": "bugünkü sonuç", "be": "would + fiil", "example": "… the project would stop." },
+          { "form": "geçmiş sonuç", "be": "would have + V3", "example": "… the ship would have arrived." }
+        ]
+      },
+      "examples": [
+        { "en": "If it were not for his support, the project would stop tomorrow.", "tr": "Onun desteği olmasa proje yarın dururdu.", "note": "Bugüne bakan biçim." },
+        { "en": "If it hadn't been for the storm, the ship would have arrived on time.", "tr": "Fırtına olmasaydı gemi zamanında varırdı.", "note": "Geçmişe bakan biçim." },
+        { "en": "If it were not for the noise, this would be a perfect flat.", "tr": "Gürültü olmasa bu daire mükemmel olurdu.", "note": "Tek etken belirleyici." },
+        { "en": "If it hadn't been for that letter, nobody would ever have known.", "tr": "O mektup olmasaydı kimsenin haberi olmazdı.", "note": "would ever have + V3." },
+        { "en": "If it were not for the children, they would have separated years ago.", "tr": "Çocuklar olmasa yıllar önce ayrılmışlardı.", "note": "Karma tip: bugünkü etken, geçmiş sonuç." }
+      ],
+      "mistakes": [
+        { "wrong": "If it wasn't for the storm, the ship would have arrived.", "right": "If it hadn't been for the storm, the ship would have arrived.", "why": "Geçmişteki etken için hadn't been kullanılır." },
+        { "wrong": "If it were not for she helped us, we would be lost.", "right": "If it were not for her help, we would be lost.", "why": "Kalıptan sonra isim öbeği gelir, cümle gelmez." },
+        { "wrong": "If it were not for his support, the project stopped.", "right": "If it were not for his support, the project would stop.", "why": "Gerçek dışı koşulun sonucu would ile kurulur." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "If it ___ not for the scholarship, she would leave the course.", "options": ["were", "was", "is", "had been"], "answer": 0, "note": "Bugüne bakan biçim → were." },
+        { "type": "choice", "text": "If it ___ been for the neighbors, the fire would have spread.", "options": ["hadn't", "wasn't", "weren't", "didn't"], "answer": 0, "note": "Geçmiş etken → hadn't been." },
+        { "type": "choice", "text": "If it were not for the rain, we ___ in the garden now.", "options": ["would be", "will be", "would have been", "are"], "answer": 0, "note": "Bugünkü sonuç → would + fiil." },
+        { "type": "gap", "text": "If it hadn't been for his advice, I ___ the wrong flat.", "options": ["would have bought", "would buy", "bought"], "answer": 0, "note": "Geçmiş sonuç → would have + V3." },
+        { "type": "choice", "text": "If it were not for ___ , the shop would have closed years ago.", "options": ["the regular customers", "the customers come", "customers are regular", "that customers come"], "answer": 0, "note": "Kalıptan sonra isim öbeği." },
+        { "type": "choice", "text": "If it ___ not for the traffic, the journey would take an hour.", "options": ["were", "is", "has", "had"], "answer": 0, "note": "Bugünkü genel durum → were." },
+        { "type": "choice", "text": "If it hadn't been for that phone call, nobody ___ .", "options": ["would have noticed", "would notice", "noticed", "will notice"], "answer": 0, "note": "Geçmiş sonuç." },
+        { "type": "gap", "text": "If it ___ not for her patience, the class would be chaos.", "options": ["were", "was", "had"], "answer": 0, "note": "Bugün → were not for." },
+        { "type": "choice", "text": "If it hadn't been for the delay, we ___ the connection.", "options": ["would have caught", "would catch", "caught", "will catch"], "answer": 0, "note": "Geçmişte kaçırılan bağlantı." },
+        { "type": "choice", "text": "Which form points to the past? ___", "options": ["If it hadn't been for the fog …", "If it were not for the fog …", "If it is not for the fog …", "If it will not be for the fog …"], "answer": 0, "note": "Geçmiş etken → hadn't been for." }
+      ]
+    },
+    {
+      "id": "c2-05-were-it-not-for",
+      "level": "C2",
+      "order": 5,
+      "title": "Were it not for — en resmî devrik koşul",
+      "topic": "Inverted were it not for / had it not been for",
+      "canDo": "En resmî üslupta koşulu if kullanmadan kurabilirim.",
+      "covers": ["SUBJ.were_it_not_for", "SUBJ.had_it_not_been_for"],
+      "concept": {
+        "summary": "Bir önceki dersin iki kalıbı, resmî yazıda if atılarak kurulur: Were it not for X ve Had it not been for X. Anlam tıpatıp aynıdır; değişen yalnızca üsluptur. Bu en resmî biçimdir ve yazıya özgüdür. if ile devrik biçim asla bir arada bulunmaz.",
+        "formula": { "left": "If it were not for X", "right": "Were it not for X" },
+        "table": [
+          { "form": "bugün, if'li", "be": "If it were not for", "example": "If it were not for the grant, …" },
+          { "form": "bugün, devrik", "be": "Were it not for", "example": "Were it not for the grant, …" },
+          { "form": "geçmiş, if'li", "be": "If it hadn't been for", "example": "If it hadn't been for the storm, …" },
+          { "form": "geçmiş, devrik", "be": "Had it not been for", "example": "Had it not been for the storm, …" }
+        ]
+      },
+      "examples": [
+        { "en": "Were it not for the scholarship, she couldn't have studied abroad.", "tr": "Burs olmasaydı yurt dışında okuyamazdı.", "note": "Devrik, en resmî biçim." },
+        { "en": "Had it not been for the storm, the ship would have reached port.", "tr": "Fırtına olmasaydı gemi limana varırdı.", "note": "Geçmiş için devrik biçim." },
+        { "en": "Were it not for the language, I would apply for the post today.", "tr": "Dil sorunu olmasa bugün o göreve başvururdum.", "note": "Bugüne bakan devrik biçim." },
+        { "en": "Had it not been for one witness, the case would have collapsed.", "tr": "Tek bir tanık olmasaydı dava çökerdi.", "note": "Tek etken belirleyici." },
+        { "en": "Were it not for these two clauses, the contract would be acceptable.", "tr": "Şu iki madde olmasa sözleşme kabul edilebilir olurdu.", "note": "Resmî yazı dili." }
+      ],
+      "mistakes": [
+        { "wrong": "If had it not been for the storm, the ship would have arrived.", "right": "Had it not been for the storm, the ship would have arrived.", "why": "Devrik biçim if'in yerini alır." },
+        { "wrong": "Were it not for the scholarship, she couldn't studied abroad.", "right": "Were it not for the scholarship, she couldn't have studied abroad.", "why": "Geçmiş sonuçta have + V3 gerekir." },
+        { "wrong": "Was it not for the grant, we would stop.", "right": "Were it not for the grant, we would stop.", "why": "Bu kalıp her öznede were ister." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "___ it not for the new road, the village would be cut off.", "options": ["Were", "Was", "If were", "Had"], "answer": 0, "note": "Bugüne bakan devrik biçim → Were." },
+        { "type": "choice", "text": "___ it not been for the nurse, he would not have survived.", "options": ["Had", "Were", "Was", "If had"], "answer": 0, "note": "Geçmişe bakan devrik biçim → Had." },
+        { "type": "choice", "text": "Were it not for the cost, we ___ the house.", "options": ["would buy", "will buy", "would have bought", "bought"], "answer": 0, "note": "Bugünkü sonuç → would + fiil." },
+        { "type": "gap", "text": "Had it not been for the warning, the crash ___ .", "options": ["would have happened", "would happen", "happened"], "answer": 0, "note": "Geçmiş sonuç → would have + V3." },
+        { "type": "choice", "text": "Which sentence is written correctly? ___", "options": ["Had it not been for you, I would have failed.", "If had it not been for you, I would have failed.", "Had it not for you, I would have failed.", "Had not it been for you, I would have failed."], "answer": 0, "note": "if kullanılmaz, been düşmez, not özneden sonra gelir." },
+        { "type": "choice", "text": "Were it not for these ___ , the plan would go ahead.", "options": ["two objections", "two objections are", "that they object", "objecting they"], "answer": 0, "note": "Kalıptan sonra isim öbeği." },
+        { "type": "choice", "text": "___ it not been for the delay, we would have met her at the airport.", "options": ["Had", "Were", "Was", "Have"], "answer": 0, "note": "Geçmiş → Had it not been for." },
+        { "type": "gap", "text": "___ it not for the weather, this would be a perfect place to live.", "options": ["Were", "Was", "Had"], "answer": 0, "note": "Bugün → Were it not for." },
+        { "type": "choice", "text": "In which text would you expect this structure? In ___ .", "options": ["a formal report", "a text to a friend", "a song lyric", "a shopping list"], "answer": 0, "note": "Devrik koşul resmî yazıya özgüdür." },
+        { "type": "choice", "text": "Had it not been for one signature, the deal ___ through.", "options": ["would have fallen", "would fall", "fell", "will fall"], "answer": 0, "note": "Geçmişte gerçekleşmemiş sonuç." }
+      ]
+    },
+    {
+      "id": "c2-06-if-only",
+      "level": "C2",
+      "order": 6,
+      "title": "If only I had — pişmanlığın en yoğun biçimi",
+      "topic": "if only + past perfect",
+      "canDo": "Geçmişe dair pişmanlığımı en güçlü biçimde dile getirebilirim.",
+      "covers": ["SUBJ.if_only_PASTPF"],
+      "concept": {
+        "summary": "if only + past perfect, geçmişte yapılmamış bir şeye duyulan pişmanlığı anlatır ve I wish'ten daha yoğundur. Cümle çoğu zaman yarım bırakılır; sonuç söylenmeden de anlaşılır. Pişmanlık geçmişe bakıyorsa had + V3 gelir; bugüne bakıyorsa geçmiş biçim yeterlidir: If only I knew. would have bu kalıpta kullanılmaz.",
+        "formula": { "left": "If only + had + V3", "right": "= keşke -seydim" },
+        "table": [
+          { "form": "geçmiş pişmanlık", "be": "If only + had + V3", "example": "If only I had listened." },
+          { "form": "bugünkü istek", "be": "If only + geçmiş biçim", "example": "If only I knew the answer." },
+          { "form": "geleceğe dair", "be": "If only + would", "example": "If only he would stop talking." },
+          { "form": "yanlış biçim", "be": "would have kullanılmaz", "example": "not: If only I would have gone." }
+        ]
+      },
+      "examples": [
+        { "en": "If only I had taken that job.", "tr": "Keşke o işi kabul etseydim.", "note": "Yoğun pişmanlık." },
+        { "en": "If only we had known earlier.", "tr": "Keşke daha erken bilseydik.", "note": "if only + had + V3." },
+        { "en": "If only she had asked before signing.", "tr": "Keşke imzalamadan önce sorsaydı.", "note": "Yapılmamış bir şeye pişmanlık." },
+        { "en": "If only I knew where he was.", "tr": "Keşke nerede olduğunu bilsem.", "note": "Bugüne bakan istek: geçmiş biçim yeter." },
+        { "en": "If only the phone would stop ringing.", "tr": "Keşke telefon çalmayı kesse.", "note": "Devam eden rahatsızlık: would." }
+      ],
+      "mistakes": [
+        { "wrong": "If only I would have listened.", "right": "If only I had listened.", "why": "Geçmişe dair pişmanlıkta had + V3 kullanılır." },
+        { "wrong": "If only I have taken that job.", "right": "If only I had taken that job.", "why": "Present perfect bu kalıpta yer almaz." },
+        { "wrong": "If only I would know the answer.", "right": "If only I knew the answer.", "why": "Bugüne bakan istekte geçmiş biçim gelir." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "If only I ___ the email before the meeting.", "options": ["had read", "have read", "would have read", "read"], "answer": 0, "note": "Geçmiş pişmanlık → had + V3." },
+        { "type": "choice", "text": "If only they ___ us that the road was closed.", "options": ["had told", "told", "have told", "would have told"], "answer": 0, "note": "if only + had + V3." },
+        { "type": "choice", "text": "If only I ___ how to say it in Turkish.", "options": ["knew", "know", "had known now", "would know"], "answer": 0, "note": "Bugüne bakan istek → geçmiş biçim." },
+        { "type": "gap", "text": "If only he ___ apologizing every five minutes.", "options": ["would stop", "stopped have", "had stop"], "answer": 0, "note": "Devam eden rahatsızlık → would." },
+        { "type": "choice", "text": "If only we ___ the earlier flight.", "options": ["had taken", "took", "have taken", "would take"], "answer": 0, "note": "Geçmişte yapılmamış iş." },
+        { "type": "choice", "text": "Which sentence expresses regret about the past? ___", "options": ["If only I had said no.", "If only I said no.", "If only I would say no.", "If only I say no."], "answer": 0, "note": "Geçmiş pişmanlık had + V3 ister." },
+        { "type": "choice", "text": "If only she ___ so quickly.", "options": ["hadn't signed", "didn't sign", "wouldn't have signed", "hasn't signed"], "answer": 0, "note": "Olumsuz pişmanlık." },
+        { "type": "gap", "text": "If only the tickets ___ cheaper.", "options": ["were", "are", "had been now"], "answer": 0, "note": "Bugünkü istek → geçmiş biçim." },
+        { "type": "choice", "text": "If only I ___ him at the station that day.", "options": ["had met", "met", "have met", "would meet"], "answer": 0, "note": "that day → geçmiş pişmanlık." },
+        { "type": "choice", "text": "If only somebody ___ something at the time.", "options": ["had said", "said", "has said", "would have said"], "answer": 0, "note": "at the time → had + V3." }
+      ]
+    }
+  ]
+}

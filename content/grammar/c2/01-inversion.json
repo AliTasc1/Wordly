@@ -1,0 +1,134 @@
+{
+  "_meta": { "batch": "c2-grammar-01", "level": "C2", "range": "Ders 1-3 — devrik düzen ve örtük olumsuzluk" },
+  "lessons": [
+    {
+      "id": "c2-01-negative-inversion",
+      "level": "C2",
+      "order": 1,
+      "title": "Never have I seen — olumsuz devrik yapı",
+      "topic": "Negative adverb inversion",
+      "canDo": "Yazılı ve retorik dilde vurguyu cümle düzeniyle kurabilirim.",
+      "covers": ["INV.never.etc"],
+      "concept": {
+        "summary": "Olumsuz ya da neredeyse olumsuz bir zarf cümlenin başına alınırsa, arkasından soru düzeni gelir: özne ile yardımcı fiil yer değiştirir. Bu bir üslup seçimidir; anlam aynı kalır, vurgu artar. Yardımcı fiil yoksa do/does/did getirilir. Yapı yazıya ve resmî konuşmaya özgüdür; günlük dilde kullanılırsa abartılı durur.",
+        "formula": { "left": "Never / Rarely / Hardly + yardımcı", "right": "+ özne + fiil" },
+        "table": [
+          { "form": "yardımcı varsa", "be": "Never have I …", "example": "Never have I heard such a thing." },
+          { "form": "yardımcı yoksa", "be": "Rarely does …", "example": "Rarely does a film do this." },
+          { "form": "eşli kalıp", "be": "Hardly … when", "example": "Hardly had we left when it began." },
+          { "form": "eşli kalıp", "be": "No sooner … than", "example": "No sooner had she spoken than …" }
+        ]
+      },
+      "examples": [
+        { "en": "Never have I heard such a weak argument.", "tr": "Hayatımda bu kadar zayıf bir sav duymadım.", "note": "Devrik düzen, vurgu için." },
+        { "en": "Rarely does a film divide critics so sharply.", "tr": "Bir film eleştirmenleri nadiren bu kadar keskin böler.", "note": "Yardımcı fiil yoksa does getirilir." },
+        { "en": "Hardly had we left when the storm began.", "tr": "Biz çıkar çıkmaz fırtına başladı.", "note": "Hardly … when kalıbı." },
+        { "en": "No sooner had she spoken than the room fell silent.", "tr": "O konuşur konuşmaz oda sessizleşti.", "note": "No sooner … than; as değil than." },
+        { "en": "Under no circumstances should the door be left open.", "tr": "Hiçbir koşulda kapı açık bırakılmamalıdır.", "note": "Olumsuz öbek de devrik düzen ister." }
+      ],
+      "mistakes": [
+        { "wrong": "Never I have seen such a mess.", "right": "Never have I seen such a mess.", "why": "Olumsuz zarf başa gelince soru düzeni gerekir." },
+        { "wrong": "No sooner had he left when it started to rain.", "right": "No sooner had he left than it started to rain.", "why": "No sooner than ile eşlenir; when ile değil." },
+        { "wrong": "Rarely a film divides critics so sharply.", "right": "Rarely does a film divide critics so sharply.", "why": "Yardımcı fiil yoksa does getirilir." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "Never ___ such a badly written report.", "options": ["have I read", "I have read", "I read have", "did I have read"], "answer": 0, "note": "Olumsuz zarf + soru düzeni." },
+        { "type": "choice", "text": "Rarely ___ an offer this good.", "options": ["do we see", "we see", "we do see", "see we"], "answer": 0, "note": "Yardımcı yoksa do getirilir." },
+        { "type": "choice", "text": "No sooner had the meeting started ___ the power went off.", "options": ["than", "when", "then", "that"], "answer": 0, "note": "No sooner … than." },
+        { "type": "gap", "text": "Hardly had we sat down ___ the phone rang.", "options": ["when", "than", "that"], "answer": 0, "note": "Hardly … when." },
+        { "type": "choice", "text": "Under no circumstances ___ leave the building unlocked.", "options": ["should staff", "staff should", "should to staff", "staff must to"], "answer": 0, "note": "Olumsuz öbek + devrik düzen." },
+        { "type": "choice", "text": "Seldom ___ a decision been taken so quickly.", "options": ["has", "have", "did", "is"], "answer": 0, "note": "Tekil özne → has been taken." },
+        { "type": "choice", "text": "Not until the third week ___ the mistake.", "options": ["did we notice", "we noticed", "we did notice", "noticed we"], "answer": 0, "note": "Not until + devrik düzen." },
+        { "type": "gap", "text": "Little ___ that the file had already been sent.", "options": ["did she know", "she knew", "knew she"], "answer": 0, "note": "Little da devrik düzen ister." },
+        { "type": "choice", "text": "In which kind of writing does this order belong? It belongs in ___ .", "options": ["a formal essay", "a text message", "a shopping list", "a recipe"], "answer": 0, "note": "Devrik düzen yazılı ve resmî dile özgüdür." },
+        { "type": "choice", "text": "Only after the audit ___ the size of the loss.", "options": ["did they understand", "they understood", "understood they", "they did understood"], "answer": 0, "note": "Only after + devrik düzen." }
+      ]
+    },
+    {
+      "id": "c2-02-so-neither-inversion",
+      "level": "C2",
+      "order": 2,
+      "title": "So do I — kısa onay ve So + sıfat devriği",
+      "topic": "so / neither inversion",
+      "canDo": "Bir görüşe katıldığımı ya da katılmadığımı tek kısa cümleyle bildirebilirim.",
+      "covers": ["INV.so_V_NP"],
+      "concept": {
+        "summary": "Bir cümleye katıldığını söylemenin kısa yolu so ya da neither ile başlayıp yardımcı fiili özneden önce koymaktır: So do I, Neither can she. Olumlu cümleye so, olumsuz cümleye neither ya da nor gelir. Aynı devrik düzen So + sıfat + be + özne kalıbında da görülür ve derece vurgular: So great was the damage that … Dikkat: So I do farklı bir anlam taşır, onay değil doğrulamadır.",
+        "formula": { "left": "So + yardımcı + özne", "right": "Neither / Nor + yardımcı + özne" },
+        "table": [
+          { "form": "olumlu onay", "be": "So do I.", "example": "I like it. — So do I." },
+          { "form": "olumsuz onay", "be": "Neither do I.", "example": "I don't like it. — Neither do I." },
+          { "form": "başka yardımcı", "be": "So have we.", "example": "They have finished. — So have we." },
+          { "form": "derece", "be": "So + sıfat + be + özne", "example": "So great was the damage that …" }
+        ]
+      },
+      "examples": [
+        { "en": "I can't stand the noise. — Neither can I.", "tr": "Gürültüye dayanamıyorum. — Ben de.", "note": "Olumsuz onayda neither." },
+        { "en": "She works in the same building. — So do I.", "tr": "Aynı binada çalışıyor. — Ben de.", "note": "Olumlu onayda so + yardımcı + özne." },
+        { "en": "They have already voted. — So have we.", "tr": "Çoktan oy verdiler. — Biz de.", "note": "Yardımcı fiil cümledekiyle aynı olur." },
+        { "en": "So great was the damage that the road stayed closed for a year.", "tr": "Hasar öyle büyüktü ki yol bir yıl kapalı kaldı.", "note": "Derece bildiren devrik düzen." },
+        { "en": "He didn't apply, and nor did his brother.", "tr": "O başvurmadı, kardeşi de başvurmadı.", "note": "nor, neither ile aynı işi görür." }
+      ],
+      "mistakes": [
+        { "wrong": "I love it. — So I do.", "right": "I love it. — So do I.", "why": "Onayda devrik düzen kullanılır; \"So I do\" farklı bir anlam taşır." },
+        { "wrong": "I can't swim. — So can't I.", "right": "I can't swim. — Neither can I.", "why": "Olumsuz cümleye neither ya da nor gelir." },
+        { "wrong": "Neither I can see it.", "right": "Neither can I see it.", "why": "neither'dan sonra yardımcı fiil özneden önce gelir." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "I have already eaten. — ___ .", "options": ["So have I", "So I have already", "So do I have", "Also have I"], "answer": 0, "note": "Aynı yardımcı fiil + devrik düzen." },
+        { "type": "choice", "text": "She doesn't drive. — ___ .", "options": ["Neither do I", "So do I", "Neither I do", "Nor I do"], "answer": 0, "note": "Olumsuz onay → Neither + yardımcı + özne." },
+        { "type": "choice", "text": "They were late. — ___ .", "options": ["So were we", "So we were late too", "So did we", "Neither were we"], "answer": 0, "note": "be fiiliyle kurulan onay." },
+        { "type": "gap", "text": "He can't come on Friday, ___ can his wife.", "options": ["nor", "so", "either"], "answer": 0, "note": "nor = neither, olumsuz devam." },
+        { "type": "choice", "text": "So ___ the crowd that the doors had to be closed.", "options": ["large was", "was large", "large it was", "it was large"], "answer": 0, "note": "So + sıfat + be + özne." },
+        { "type": "choice", "text": "I went home early. — ___ .", "options": ["So did I", "So I did go", "So do I", "Neither did I"], "answer": 0, "note": "Geçmiş olumlu → So did I." },
+        { "type": "choice", "text": "We hadn't been told. — ___ .", "options": ["Neither had they", "So had they", "Neither they had", "Nor they had"], "answer": 0, "note": "Past perfect olumsuz onay." },
+        { "type": "gap", "text": "She is not on the list, ___ am I.", "options": ["nor", "so", "either"], "answer": 0, "note": "Olumsuz devam → nor am I." },
+        { "type": "choice", "text": "So ___ the noise that nobody could hear the speaker.", "options": ["loud was", "was loud", "loud it was", "it was loud"], "answer": 0, "note": "Derece devriği." },
+        { "type": "choice", "text": "I would never sign that. — ___ .", "options": ["Neither would I", "So would I", "Neither I would", "So I would not"], "answer": 0, "note": "would ile olumsuz onay." }
+      ]
+    },
+    {
+      "id": "c2-03-quasi-negation",
+      "level": "C2",
+      "order": 3,
+      "title": "hardly, scarcely, seldom — biçimce olumlu, anlamca olumsuz",
+      "topic": "Quasi-negative adverbs",
+      "canDo": "Olumsuzluğu doğrudan söylemeden, derecesini ayarlayarak kurabilirim.",
+      "covers": ["RB.NEG.QU"],
+      "concept": {
+        "summary": "Bu zarflar biçimce olumlu ama anlamca olumsuzdur: hardly \"neredeyse hiç\", seldom \"pek seyrek\" demektir. Olumsuzluğu kendileri taşıdıkları için cümlede ikinci bir olumsuz almazlar; bu Türkçe konuşan öğrencinin en sık düştüğü tuzaktır, çünkü Türkçede olumsuzluk fiile de yansır. Soru eklerinde de olumlu biçim gelir: He hardly ever calls, does he?",
+        "formula": { "left": "hardly / scarcely / seldom / barely", "right": "= neredeyse hiç (ikinci olumsuz yok)" },
+        "table": [
+          { "form": "miktar", "be": "hardly any", "example": "There is hardly any milk left." },
+          { "form": "sıklık", "be": "hardly ever", "example": "He hardly ever answers." },
+          { "form": "resmî sıklık", "be": "seldom", "example": "She seldom speaks at meetings." },
+          { "form": "güçlükle", "be": "barely", "example": "I could barely hear him." }
+        ]
+      },
+      "examples": [
+        { "en": "There is hardly any milk left.", "tr": "Neredeyse hiç süt kalmamış.", "note": "hardly any = neredeyse hiç." },
+        { "en": "He hardly ever answers his phone.", "tr": "Telefonunu neredeyse hiç açmaz.", "note": "Sıklık bildiren kalıp." },
+        { "en": "She seldom speaks at meetings.", "tr": "Toplantılarda nadiren konuşur.", "note": "Resmî üslupta seldom." },
+        { "en": "I could barely understand his accent.", "tr": "Aksanını güç bela anlayabildim.", "note": "barely = ancak." },
+        { "en": "Scarcely anyone noticed the change.", "tr": "Değişikliği neredeyse kimse fark etmedi.", "note": "scarcely anyone." }
+      ],
+      "mistakes": [
+        { "wrong": "There isn't hardly any milk left.", "right": "There is hardly any milk left.", "why": "hardly zaten olumsuzdur, ikinci olumsuz almaz." },
+        { "wrong": "He doesn't hardly ever call.", "right": "He hardly ever calls.", "why": "Aynı kural: tek olumsuzluk yeter." },
+        { "wrong": "She seldom doesn't travel by car.", "right": "She seldom travels by car.", "why": "seldom olumsuzluğu kendi taşır." }
+      ],
+      "exercises": [
+        { "type": "choice", "text": "There is ___ any bread left in the shop.", "options": ["hardly", "not hardly", "hardly not", "no hardly"], "answer": 0, "note": "Tek olumsuzluk yeter." },
+        { "type": "choice", "text": "He ___ ever writes back.", "options": ["hardly", "doesn't hardly", "hardly not", "not hardly"], "answer": 0, "note": "hardly ever + olumlu fiil." },
+        { "type": "choice", "text": "She ___ travels by plane these days.", "options": ["seldom", "doesn't seldom", "seldom not", "not seldom"], "answer": 0, "note": "seldom olumsuzluğu taşır." },
+        { "type": "gap", "text": "I could ___ hear what he was saying.", "options": ["barely", "not barely", "barely not"], "answer": 0, "note": "barely = güç bela." },
+        { "type": "choice", "text": "___ anyone came to the second meeting.", "options": ["Scarcely", "Not scarcely", "Scarcely not", "No scarcely"], "answer": 0, "note": "scarcely anyone." },
+        { "type": "choice", "text": "He hardly ever calls, ___ ?", "options": ["does he", "doesn't he", "does not he", "is he"], "answer": 0, "note": "Cümle anlamca olumsuz olduğu için ek olumlu gelir." },
+        { "type": "choice", "text": "We ___ had time to eat before the train left.", "options": ["hardly", "hardly not", "not hardly", "didn't hardly"], "answer": 0, "note": "Tek olumsuzluk." },
+        { "type": "gap", "text": "There were ___ any seats free in the hall.", "options": ["hardly", "not hardly", "no hardly"], "answer": 0, "note": "hardly any + çoğul." },
+        { "type": "choice", "text": "Which sentence is correct? ___", "options": ["She seldom eats meat.", "She seldom doesn't eat meat.", "She doesn't seldom eat meat.", "She not seldom eats meat."], "answer": 0, "note": "seldom ikinci olumsuz almaz." },
+        { "type": "choice", "text": "The two brothers ___ speak to each other any more.", "options": ["seldom", "don't seldom", "seldom not", "not seldom"], "answer": 0, "note": "seldom + olumlu fiil." }
+      ]
+    }
+  ]
+}

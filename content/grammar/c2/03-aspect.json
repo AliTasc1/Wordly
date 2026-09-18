@@ -1,0 +1,621 @@
+{
+  "_meta": {
+    "batch": "c2-grammar-03",
+    "level": "C2",
+    "range": "Ders 7-9 — katmanlı zaman biçimleri"
+  },
+  "lessons": [
+    {
+      "id": "c2-07-future-perfect-progressive",
+      "level": "C2",
+      "order": 7,
+      "title": "will have been doing — gelecekte sürmüş olacak",
+      "topic": "Future perfect progressive",
+      "canDo": "Gelecekteki bir noktada bir işin ne kadar süredir sürüyor olacağını anlatabilirim.",
+      "covers": [
+        "TA.FUTPFPRG.AFF"
+      ],
+      "concept": {
+        "summary": "Future perfect gelecekte biten işi anlatır; future perfect progressive ise gelecekteki bir noktada hâlâ süren ve o ana kadar ne kadar sürmüş olduğu sayılan işi anlatır. Neredeyse her zaman for + süre ile gelir. İşin bitip bitmediği önemli değildir, süresi önemlidir. Durum bildiren fiiller (know, be, own) bu biçimde kullanılmaz.",
+        "formula": {
+          "left": "will have been + V-ing",
+          "right": "for + süre"
+        },
+        "table": [
+          {
+            "form": "süre",
+            "be": "will have been + V-ing",
+            "example": "I will have been working here for ten years."
+          },
+          {
+            "form": "bitmişlik",
+            "be": "will have + V3",
+            "example": "I will have finished the report."
+          },
+          {
+            "form": "zaman noktası",
+            "be": "by + nokta",
+            "example": "By May, by then, by the time …"
+          },
+          {
+            "form": "kullanılmaz",
+            "be": "durum fiilleri",
+            "example": "not: will have been knowing"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "By next spring I will have been living here for five years.",
+          "tr": "Gelecek bahara burada beş yıldır yaşıyor olacağım.",
+          "note": "Gelecekten geriye bakan süre."
+        },
+        {
+          "en": "By then the team will have been testing the system for months.",
+          "tr": "O zamana kadar ekip sistemi aylardır test ediyor olacak.",
+          "note": "Süre vurgusu."
+        },
+        {
+          "en": "In June she will have been teaching for thirty years.",
+          "tr": "Haziranda otuz yıldır öğretmenlik yapıyor olacak.",
+          "note": "in + zaman noktası."
+        },
+        {
+          "en": "By the time you arrive, we will have been waiting for two hours.",
+          "tr": "Sen varana kadar iki saattir bekliyor olacağız.",
+          "note": "by the time + geniş zaman."
+        },
+        {
+          "en": "Next month they will have been married for forty years.",
+          "tr": "Gelecek ay kırk yıllık evli olacaklar.",
+          "note": "Durum bildiren anlamda düz perfect kullanılır."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "By next spring I will be living here for five years.",
+          "right": "By next spring I will have been living here for five years.",
+          "why": "Süre gelecekteki bir noktaya kadar sayılıyorsa have been gerekir."
+        },
+        {
+          "wrong": "By June I will have been knowing her for ten years.",
+          "right": "By June I will have known her for ten years.",
+          "why": "Durum bildiren fiiller sürerli biçime girmez."
+        },
+        {
+          "wrong": "By then we will have been waiting since two hours.",
+          "right": "By then we will have been waiting for two hours.",
+          "why": "Süre uzunluğu for ile verilir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "By December they ___ on the bridge for three years.",
+          "options": [
+            "will have been working",
+            "will work",
+            "will have worked once",
+            "are working"
+          ],
+          "answer": 0,
+          "note": "Süre + gelecek nokta."
+        },
+        {
+          "type": "choice",
+          "text": "By the time the film ends, we ___ for four hours.",
+          "options": [
+            "will have been sitting",
+            "will sit",
+            "sit",
+            "have sat"
+          ],
+          "answer": 0,
+          "note": "will have been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "In August I will have been ___ this car for ten years.",
+          "options": [
+            "driving",
+            "drive",
+            "drove",
+            "to drive"
+          ],
+          "answer": 0,
+          "note": "have been + V-ing."
+        },
+        {
+          "type": "gap",
+          "text": "By next week she will have been studying ___ six months.",
+          "options": [
+            "for",
+            "since",
+            "during"
+          ],
+          "answer": 0,
+          "note": "Süre uzunluğu → for."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence counts the length of time? ___",
+          "options": [
+            "By May I will have been living here for a year.",
+            "By May I will have moved house.",
+            "By May I will move house.",
+            "By May I am living here."
+          ],
+          "answer": 0,
+          "note": "Süre sayan biçim have been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "By June he ___ her for twenty years.",
+          "options": [
+            "will have known",
+            "will have been knowing",
+            "will know",
+            "is knowing"
+          ],
+          "answer": 0,
+          "note": "know durum fiilidir, sürerli biçime girmez."
+        },
+        {
+          "type": "choice",
+          "text": "By the end of the shift they ___ for eleven hours.",
+          "options": [
+            "will have been standing",
+            "will stand",
+            "stood",
+            "have stood"
+          ],
+          "answer": 0,
+          "note": "Süre vurgusu."
+        },
+        {
+          "type": "gap",
+          "text": "By then the machine ___ non-stop for two days.",
+          "options": [
+            "will have been running",
+            "will run",
+            "runs"
+          ],
+          "answer": 0,
+          "note": "Süregelen iş."
+        },
+        {
+          "type": "choice",
+          "text": "Next year we ___ in this office for a decade.",
+          "options": [
+            "will have been working",
+            "will work",
+            "work",
+            "worked"
+          ],
+          "answer": 0,
+          "note": "Gelecekte sayılan süre."
+        },
+        {
+          "type": "choice",
+          "text": "By six o'clock the children ___ television all afternoon.",
+          "options": [
+            "will have been watching",
+            "will watch",
+            "watch",
+            "watched"
+          ],
+          "answer": 0,
+          "note": "all afternoon → süregelen iş."
+        }
+      ]
+    },
+    {
+      "id": "c2-08-past-perfect-progressive-questions",
+      "level": "C2",
+      "order": 8,
+      "title": "Had you been waiting long? — öncesini sormak",
+      "topic": "Past perfect progressive questions",
+      "canDo": "Geçmişteki bir andan önce sürmekte olan bir işi sorgulayabilirim.",
+      "covers": [
+        "TA.PASTPFPRG.INT.AFF"
+      ],
+      "concept": {
+        "summary": "Geçmişte bir olay olduğunda, ondan önce süren işi sormak için had + özne + been + V-ing kullanılır. Soruda had başa gelir; do, does ya da did asla kullanılmaz. Bu biçim süreyi sorar, işin bitip bitmediğini değil. Cevap genellikle for ya da since ile verilir.",
+        "formula": {
+          "left": "Had + özne + been + V-ing",
+          "right": "+ for / since …?"
+        },
+        "table": [
+          {
+            "form": "soru",
+            "be": "Had you been waiting?",
+            "example": "Had you been waiting long?"
+          },
+          {
+            "form": "olumsuz soru",
+            "be": "Hadn't they been …?",
+            "example": "Hadn't they been working together?"
+          },
+          {
+            "form": "wh- soru",
+            "be": "How long had …?",
+            "example": "How long had she been living there?"
+          },
+          {
+            "form": "kullanılmaz",
+            "be": "did",
+            "example": "not: Did you have been waiting?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Had you been waiting long when the train came?",
+          "tr": "Tren geldiğinde uzun süredir bekliyor muydun?",
+          "note": "Geçmişteki sürecin sorusu."
+        },
+        {
+          "en": "Had they been arguing before you arrived?",
+          "tr": "Sen gelmeden önce tartışıyorlar mıydı?",
+          "note": "Devrik soru biçimi."
+        },
+        {
+          "en": "How long had she been working there before the takeover?",
+          "tr": "Devralmadan önce orada ne zamandır çalışıyordu?",
+          "note": "How long ile süre sorusu."
+        },
+        {
+          "en": "Hadn't he been complaining about the noise for months?",
+          "tr": "Aylardır gürültüden şikâyet etmiyor muydu?",
+          "note": "Olumsuz soru, şaşkınlık tonu."
+        },
+        {
+          "en": "Had it been raining all night, or did it start at dawn?",
+          "tr": "Bütün gece mi yağmıştı, yoksa şafakta mı başladı?",
+          "note": "İki olasılığı karşılaştırma."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Did you have been waiting long?",
+          "right": "Had you been waiting long?",
+          "why": "Past perfect sorusunda had başa gelir, do kullanılmaz."
+        },
+        {
+          "wrong": "Had you been waited long?",
+          "right": "Had you been waiting long?",
+          "why": "been'den sonra -ing biçimi gelir."
+        },
+        {
+          "wrong": "How long had she been working there since three years?",
+          "right": "How long had she been working there for three years?",
+          "why": "Süre uzunluğu for ile verilir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ you been waiting long when I called?",
+          "options": [
+            "Had",
+            "Did",
+            "Have",
+            "Were"
+          ],
+          "answer": 0,
+          "note": "Past perfect sorusu → Had."
+        },
+        {
+          "type": "choice",
+          "text": "Had they been ___ together before the merger?",
+          "options": [
+            "working",
+            "worked",
+            "work",
+            "to work"
+          ],
+          "answer": 0,
+          "note": "been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "How long ___ he been living abroad before he came back?",
+          "options": [
+            "had",
+            "did",
+            "has",
+            "was"
+          ],
+          "answer": 0,
+          "note": "Geçmişten öncesi → had."
+        },
+        {
+          "type": "gap",
+          "text": "___ it been snowing all night?",
+          "options": [
+            "Had",
+            "Did",
+            "Was"
+          ],
+          "answer": 0,
+          "note": "Had + been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "Which question is correct? ___",
+          "options": [
+            "Had you been sleeping?",
+            "Did you have been sleeping?",
+            "Have you had been sleeping?",
+            "Were you had sleeping?"
+          ],
+          "answer": 0,
+          "note": "Yardımcı fiil had, başa gelir."
+        },
+        {
+          "type": "choice",
+          "text": "Hadn't she been ___ about that clause since May?",
+          "options": [
+            "asking",
+            "asked",
+            "ask",
+            "to ask"
+          ],
+          "answer": 0,
+          "note": "been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "___ the machine been making that noise before it stopped?",
+          "options": [
+            "Had",
+            "Did",
+            "Has",
+            "Was"
+          ],
+          "answer": 0,
+          "note": "Durmadan önce süren iş."
+        },
+        {
+          "type": "gap",
+          "text": "How long had you been ___ for the results?",
+          "options": [
+            "waiting",
+            "waited",
+            "wait"
+          ],
+          "answer": 0,
+          "note": "been + V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "Had they been living there ___ ten years when the flood came?",
+          "options": [
+            "for",
+            "since",
+            "during",
+            "from"
+          ],
+          "answer": 0,
+          "note": "Süre uzunluğu → for."
+        },
+        {
+          "type": "choice",
+          "text": "___ he been driving for six hours without a break?",
+          "options": [
+            "Had",
+            "Did",
+            "Was",
+            "Has"
+          ],
+          "answer": 0,
+          "note": "Geçmişteki bir andan öncesi."
+        }
+      ]
+    },
+    {
+      "id": "c2-09-future-perfect-questions",
+      "level": "C2",
+      "order": 9,
+      "title": "Will you have finished? — o zamana kadar biter mi",
+      "topic": "Future perfect questions",
+      "canDo": "Gelecekteki bir noktaya kadar bir işin tamamlanmış olup olmayacağını sorabilirim.",
+      "covers": [
+        "TA.FUTPF.INT.AFF"
+      ],
+      "concept": {
+        "summary": "Gelecekteki bir noktaya kadar işin bitmiş olup olmayacağını sormak için will özneden öne alınır: Will you have finished by Monday? Soru neredeyse her zaman bir bitiş noktasıyla gelir. finish, complete, arrive gibi sonuç bildiren fiillerle sürerli biçim kullanılmaz; bu sorularda düz will have + V3 yeterlidir.",
+        "formula": {
+          "left": "Will + özne + have + V3",
+          "right": "+ by + nokta?"
+        },
+        "table": [
+          {
+            "form": "soru",
+            "be": "Will you have finished?",
+            "example": "Will you have finished by six?"
+          },
+          {
+            "form": "olumsuz soru",
+            "be": "Won't they have left?",
+            "example": "Won't they have left by then?"
+          },
+          {
+            "form": "wh- soru",
+            "be": "How much will …?",
+            "example": "How much will we have paid by June?"
+          },
+          {
+            "form": "edilgen",
+            "be": "Will it have been done?",
+            "example": "Will the work have been done?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Will you have finished the draft by Monday?",
+          "tr": "Taslağı pazartesiye kadar bitirmiş olur musun?",
+          "note": "Tamamlanmışlık sorusu."
+        },
+        {
+          "en": "Won't they have left the country by then?",
+          "tr": "O zamana kadar ülkeden ayrılmış olmazlar mı?",
+          "note": "Olumsuz soru."
+        },
+        {
+          "en": "How much will we have spent by the end of the year?",
+          "tr": "Yıl sonuna kadar ne kadar harcamış olacağız?",
+          "note": "wh- soru biçimi."
+        },
+        {
+          "en": "Will the results have been published before the holiday?",
+          "tr": "Sonuçlar tatilden önce yayımlanmış olacak mı?",
+          "note": "Edilgen soru biçimi."
+        },
+        {
+          "en": "Will she have heard about the change by tomorrow morning?",
+          "tr": "Yarın sabaha kadar değişiklikten haberi olmuş olur mu?",
+          "note": "by + gelecek nokta."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Will you have been finished by Monday?",
+          "right": "Will you have finished by Monday?",
+          "why": "finish sonuç bildirir; burada süre biçimi gerekmez."
+        },
+        {
+          "wrong": "Do you will have finished by Monday?",
+          "right": "Will you have finished by Monday?",
+          "why": "Soruda will özneden öne alınır, do kullanılmaz."
+        },
+        {
+          "wrong": "Will you have finish by Monday?",
+          "right": "Will you have finished by Monday?",
+          "why": "have'den sonra üçüncü hâl gelir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ they have arrived by seven?",
+          "options": [
+            "Will",
+            "Do",
+            "Are",
+            "Have"
+          ],
+          "answer": 0,
+          "note": "Soruda will başa gelir."
+        },
+        {
+          "type": "choice",
+          "text": "Will you have ___ the forms before the deadline?",
+          "options": [
+            "completed",
+            "complete",
+            "completing",
+            "to complete"
+          ],
+          "answer": 0,
+          "note": "have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "How much ___ we have paid back by next June?",
+          "options": [
+            "will",
+            "do",
+            "are",
+            "have"
+          ],
+          "answer": 0,
+          "note": "wh- + will + özne + have."
+        },
+        {
+          "type": "gap",
+          "text": "___ the building have been finished by the autumn?",
+          "options": [
+            "Will",
+            "Does",
+            "Has"
+          ],
+          "answer": 0,
+          "note": "Edilgen soru → Will … have been + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Which question about Friday is correct? ___",
+          "options": [
+            "Will you have read it by Friday?",
+            "Do you will have read it by Friday?",
+            "Will you have been read it by Friday?",
+            "Have you will read it by Friday?"
+          ],
+          "answer": 0,
+          "note": "will + özne + have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "___ she have heard the news by the time we meet?",
+          "options": [
+            "Will",
+            "Does",
+            "Is",
+            "Has"
+          ],
+          "answer": 0,
+          "note": "Gelecekte tamamlanmışlık sorusu."
+        },
+        {
+          "type": "choice",
+          "text": "Won't they ___ left by the time the guests arrive?",
+          "options": [
+            "have",
+            "has",
+            "having",
+            "had"
+          ],
+          "answer": 0,
+          "note": "Olumsuz soruda da have + V3."
+        },
+        {
+          "type": "gap",
+          "text": "Will the team have ___ the work before the money runs out?",
+          "options": [
+            "finished",
+            "finish",
+            "finishing"
+          ],
+          "answer": 0,
+          "note": "have + V3."
+        },
+        {
+          "type": "choice",
+          "text": "___ we have saved enough by December?",
+          "options": [
+            "Will",
+            "Do",
+            "Are",
+            "Have"
+          ],
+          "answer": 0,
+          "note": "by December → gelecekte tamamlanmışlık."
+        },
+        {
+          "type": "choice",
+          "text": "Will the letters have ___ sent by this afternoon?",
+          "options": [
+            "been",
+            "be",
+            "being",
+            "was"
+          ],
+          "answer": 0,
+          "note": "Edilgen: have been + V3."
+        }
+      ]
+    }
+  ]
+}

@@ -4,39 +4,37 @@
   "level": "C2",
   "order": 1,
   "title": "Never have I seen — olumsuz devrik yapı",
-  "topic": "Inversion after negative adverbials",
+  "topic": "Negative adverb inversion",
   "canDo": "Yazılı ve retorik dilde vurguyu cümle düzeniyle kurabilirim.",
   "covers": [
-   "INV.never.etc",
-   "RB.NEG.QU",
-   "INV.so_V_NP"
+   "INV.never.etc"
   ],
   "concept": {
-   "summary": "Olumsuz ya da neredeyse olumsuz bir zarf cümlenin başına alınırsa, arkasından soru düzeni gelir: özne ile yardımcı fiil yer değiştirir. Bu bir üslup seçimidir; anlam aynı kalır, vurgu artar. so ve neither ile kurulan kısa onaylarda da aynı devrik düzen kullanılır.",
+   "summary": "Olumsuz ya da neredeyse olumsuz bir zarf cümlenin başına alınırsa, arkasından soru düzeni gelir: özne ile yardımcı fiil yer değiştirir. Bu bir üslup seçimidir; anlam aynı kalır, vurgu artar. Yardımcı fiil yoksa do/does/did getirilir. Yapı yazıya ve resmî konuşmaya özgüdür; günlük dilde kullanılırsa abartılı durur.",
    "formula": {
     "left": "Never / Rarely / Hardly + yardımcı",
     "right": "+ özne + fiil"
    },
    "table": [
     {
-     "form": "never",
+     "form": "yardımcı varsa",
      "be": "Never have I …",
-     "example": "Never have I seen such a mess."
+     "example": "Never have I heard such a thing."
     },
     {
-     "form": "hardly … when",
-     "be": "Hardly had … when",
-     "example": "Hardly had we sat down when the phone rang."
+     "form": "yardımcı yoksa",
+     "be": "Rarely does …",
+     "example": "Rarely does a film do this."
     },
     {
-     "form": "no sooner … than",
-     "be": "No sooner had …",
-     "example": "No sooner had he left than it started to rain."
+     "form": "eşli kalıp",
+     "be": "Hardly … when",
+     "example": "Hardly had we left when it began."
     },
     {
-     "form": "onay",
-     "be": "So do I / Neither do I",
-     "example": "I love it. — So do I."
+     "form": "eşli kalıp",
+     "be": "No sooner … than",
+     "example": "No sooner had she spoken than …"
     }
    ]
   },
@@ -62,9 +60,9 @@
     "note": "No sooner … than; as değil than."
    },
    {
-    "en": "I can't stand the noise. — Neither can I.",
-    "tr": "Gürültüye dayanamıyorum. — Ben de.",
-    "note": "Olumsuz onayda neither."
+    "en": "Under no circumstances should the door be left open.",
+    "tr": "Hiçbir koşulda kapı açık bırakılmamalıdır.",
+    "note": "Olumsuz öbek de devrik düzen ister."
    }
   ],
   "mistakes": [
@@ -79,39 +77,39 @@
     "why": "No sooner than ile eşlenir; when ile değil."
    },
    {
-    "wrong": "I love it. — So I do.",
-    "right": "I love it. — So do I.",
-    "why": "Onayda devrik düzen kullanılır; \"So I do\" farklı bir anlam taşır."
+    "wrong": "Rarely a film divides critics so sharply.",
+    "right": "Rarely does a film divide critics so sharply.",
+    "why": "Yardımcı fiil yoksa does getirilir."
    }
   ],
   "exercises": [
    {
     "type": "choice",
-    "text": "Rarely ___ such a talented group.",
+    "text": "Never ___ such a badly written report.",
     "options": [
-     "see we",
-     "we see",
-     "we do see",
-     "do we see"
+     "did I have read",
+     "I have read",
+     "I read have",
+     "have I read"
     ],
     "answer": 3,
-    "note": "Devrik düzen → yardımcı + özne."
+    "note": "Olumsuz zarf + soru düzeni."
    },
    {
     "type": "choice",
-    "text": "Not until later ___ what had happened.",
+    "text": "Rarely ___ an offer this good.",
     "options": [
-     "learned we",
-     "we did learn",
-     "did we learn",
-     "we learned"
+     "see we",
+     "we do see",
+     "do we see",
+     "we see"
     ],
     "answer": 2,
-    "note": "Not until + devrik."
+    "note": "Yardımcı yoksa do getirilir."
    },
    {
     "type": "choice",
-    "text": "No sooner had they arrived ___ the meeting started.",
+    "text": "No sooner had the meeting started ___ the power went off.",
     "options": [
      "then",
      "that",
@@ -122,813 +120,328 @@
     "note": "No sooner … than."
    },
    {
-    "type": "choice",
-    "text": "She has never been late. — ___ .",
+    "type": "gap",
+    "text": "Hardly had we sat down ___ the phone rang.",
     "options": [
-     "So have I not",
-     "Neither have I",
-     "Either have I",
-     "Neither I have"
+     "that",
+     "than",
+     "when"
+    ],
+    "answer": 2,
+    "note": "Hardly … when."
+   },
+   {
+    "type": "choice",
+    "text": "Under no circumstances ___ leave the building unlocked.",
+    "options": [
+     "should staff",
+     "staff should",
+     "should to staff",
+     "staff must to"
+    ],
+    "answer": 0,
+    "note": "Olumsuz öbek + devrik düzen."
+   },
+   {
+    "type": "choice",
+    "text": "Seldom ___ a decision been taken so quickly.",
+    "options": [
+     "have",
+     "did",
+     "has",
+     "is"
+    ],
+    "answer": 2,
+    "note": "Tekil özne → has been taken."
+   },
+   {
+    "type": "choice",
+    "text": "Not until the third week ___ the mistake.",
+    "options": [
+     "we noticed",
+     "we did notice",
+     "did we notice",
+     "noticed we"
+    ],
+    "answer": 2,
+    "note": "Not until + devrik düzen."
+   },
+   {
+    "type": "gap",
+    "text": "Little ___ that the file had already been sent.",
+    "options": [
+     "she knew",
+     "did she know",
+     "knew she"
+    ],
+    "answer": 1,
+    "note": "Little da devrik düzen ister."
+   },
+   {
+    "type": "choice",
+    "text": "In which kind of writing does this order belong? It belongs in ___ .",
+    "options": [
+     "a text message",
+     "a recipe",
+     "a formal essay",
+     "a shopping list"
+    ],
+    "answer": 2,
+    "note": "Devrik düzen yazılı ve resmî dile özgüdür."
+   },
+   {
+    "type": "choice",
+    "text": "Only after the audit ___ the size of the loss.",
+    "options": [
+     "they understood",
+     "they did understood",
+     "understood they",
+     "did they understand"
+    ],
+    "answer": 3,
+    "note": "Only after + devrik düzen."
+   }
+  ]
+ },
+ {
+  "id": "c2-02-so-neither-inversion",
+  "level": "C2",
+  "order": 2,
+  "title": "So do I — kısa onay ve So + sıfat devriği",
+  "topic": "so / neither inversion",
+  "canDo": "Bir görüşe katıldığımı ya da katılmadığımı tek kısa cümleyle bildirebilirim.",
+  "covers": [
+   "INV.so_V_NP"
+  ],
+  "concept": {
+   "summary": "Bir cümleye katıldığını söylemenin kısa yolu so ya da neither ile başlayıp yardımcı fiili özneden önce koymaktır: So do I, Neither can she. Olumlu cümleye so, olumsuz cümleye neither ya da nor gelir. Aynı devrik düzen So + sıfat + be + özne kalıbında da görülür ve derece vurgular: So great was the damage that … Dikkat: So I do farklı bir anlam taşır, onay değil doğrulamadır.",
+   "formula": {
+    "left": "So + yardımcı + özne",
+    "right": "Neither / Nor + yardımcı + özne"
+   },
+   "table": [
+    {
+     "form": "olumlu onay",
+     "be": "So do I.",
+     "example": "I like it. — So do I."
+    },
+    {
+     "form": "olumsuz onay",
+     "be": "Neither do I.",
+     "example": "I don't like it. — Neither do I."
+    },
+    {
+     "form": "başka yardımcı",
+     "be": "So have we.",
+     "example": "They have finished. — So have we."
+    },
+    {
+     "form": "derece",
+     "be": "So + sıfat + be + özne",
+     "example": "So great was the damage that …"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I can't stand the noise. — Neither can I.",
+    "tr": "Gürültüye dayanamıyorum. — Ben de.",
+    "note": "Olumsuz onayda neither."
+   },
+   {
+    "en": "She works in the same building. — So do I.",
+    "tr": "Aynı binada çalışıyor. — Ben de.",
+    "note": "Olumlu onayda so + yardımcı + özne."
+   },
+   {
+    "en": "They have already voted. — So have we.",
+    "tr": "Çoktan oy verdiler. — Biz de.",
+    "note": "Yardımcı fiil cümledekiyle aynı olur."
+   },
+   {
+    "en": "So great was the damage that the road stayed closed for a year.",
+    "tr": "Hasar öyle büyüktü ki yol bir yıl kapalı kaldı.",
+    "note": "Derece bildiren devrik düzen."
+   },
+   {
+    "en": "He didn't apply, and nor did his brother.",
+    "tr": "O başvurmadı, kardeşi de başvurmadı.",
+    "note": "nor, neither ile aynı işi görür."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "I love it. — So I do.",
+    "right": "I love it. — So do I.",
+    "why": "Onayda devrik düzen kullanılır; \"So I do\" farklı bir anlam taşır."
+   },
+   {
+    "wrong": "I can't swim. — So can't I.",
+    "right": "I can't swim. — Neither can I.",
+    "why": "Olumsuz cümleye neither ya da nor gelir."
+   },
+   {
+    "wrong": "Neither I can see it.",
+    "right": "Neither can I see it.",
+    "why": "neither'dan sonra yardımcı fiil özneden önce gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I have already eaten. — ___ .",
+    "options": [
+     "So have I",
+     "Also have I",
+     "So do I have",
+     "So I have already"
+    ],
+    "answer": 0,
+    "note": "Aynı yardımcı fiil + devrik düzen."
+   },
+   {
+    "type": "choice",
+    "text": "She doesn't drive. — ___ .",
+    "options": [
+     "Nor I do",
+     "Neither do I",
+     "So do I",
+     "Neither I do"
     ],
     "answer": 1,
     "note": "Olumsuz onay → Neither + yardımcı + özne."
    },
    {
-    "type": "gap",
-    "text": "Little ___ that the deal had collapsed.",
-    "options": [
-     "did he know",
-     "knew he",
-     "he knew"
-    ],
-    "answer": 0,
-    "note": "Little başta → devrik düzen."
-   }
-  ]
- },
- {
-  "id": "c2-02-were-it-not-for",
-  "level": "C2",
-  "order": 2,
-  "title": "Were it not for — devrik koşul",
-  "topic": "Inverted and formal conditionals without if",
-  "canDo": "En resmî üslupta koşulu if kullanmadan kurabilirim.",
-  "covers": [
-   "SUBJ.if_it_were_not_for",
-   "SUBJ.were_it_not_for",
-   "SUBJ.if_it_hadn't_been_for",
-   "SUBJ.had_it_not_been_for",
-   "SUBJ.if_only_PASTPF"
-  ],
-  "concept": {
-   "summary": "\"Bir şey olmasa\" anlamı if it were not for ile kurulur; resmî yazıda if atılıp were öne alınır. Geçmiş için aynı kalıp had it not been for olur. if only + past perfect ise pişmanlığın en yoğun biçimidir.",
-   "formula": {
-    "left": "If it were not for X",
-    "right": "Were it not for X"
-   },
-   "table": [
-    {
-     "form": "şimdi",
-     "be": "if it were not for",
-     "example": "If it were not for you, I would fail."
-    },
-    {
-     "form": "şimdi, devrik",
-     "be": "were it not for",
-     "example": "Were it not for you, I would fail."
-    },
-    {
-     "form": "geçmiş",
-     "be": "if it hadn't been for",
-     "example": "If it hadn't been for the delay, we'd have made it."
-    },
-    {
-     "form": "geçmiş, devrik",
-     "be": "had it not been for",
-     "example": "Had it not been for the delay, …"
-    },
-    {
-     "form": "pişmanlık",
-     "be": "if only + had + V3",
-     "example": "If only I had listened."
-    }
-   ]
-  },
-  "examples": [
-   {
-    "en": "Were it not for the scholarship, she couldn't have studied abroad.",
-    "tr": "Burs olmasaydı yurt dışında okuyamazdı.",
-    "note": "Devrik, en resmî biçim."
-   },
-   {
-    "en": "Had it not been for the storm, the ship would have arrived on time.",
-    "tr": "Fırtına olmasaydı gemi zamanında varırdı.",
-    "note": "Geçmiş için devrik biçim."
-   },
-   {
-    "en": "If it were not for his support, the project would have stopped.",
-    "tr": "Onun desteği olmasa proje dururdu.",
-    "note": "if'li biçim, aynı anlam."
-   },
-   {
-    "en": "If only I had taken that job.",
-    "tr": "Keşke o işi kabul etseydim.",
-    "note": "Yoğun pişmanlık."
-   },
-   {
-    "en": "If only we had known earlier.",
-    "tr": "Keşke daha erken bilseydik.",
-    "note": "if only + had + V3."
-   }
-  ],
-  "mistakes": [
-   {
-    "wrong": "Were it not for the scholarship, she couldn't studied abroad.",
-    "right": "Were it not for the scholarship, she couldn't have studied abroad.",
-    "why": "Geçmiş sonuçta have + V3 gerekir."
-   },
-   {
-    "wrong": "If had it not been for the storm, …",
-    "right": "Had it not been for the storm, …",
-    "why": "Devrik biçim if'in yerini alır."
-   },
-   {
-    "wrong": "If only I would have listened.",
-    "right": "If only I had listened.",
-    "why": "Geçmişe dair pişmanlıkta had + V3 kullanılır."
-   }
-  ],
-  "exercises": [
-   {
     "type": "choice",
-    "text": "___ it not for her help, we would have failed.",
+    "text": "They were late. — ___ .",
     "options": [
-     "If were",
-     "Were",
-     "Was",
-     "Had were"
-    ],
-    "answer": 1,
-    "note": "Şimdiki koşulda were."
-   },
-   {
-    "type": "choice",
-    "text": "___ it not been for the traffic, we would have arrived earlier.",
-    "options": [
-     "Were",
-     "Would have",
-     "If had",
-     "Had"
-    ],
-    "answer": 3,
-    "note": "Geçmişte had."
-   },
-   {
-    "type": "choice",
-    "text": "If only I ___ the warning signs.",
-    "options": [
-     "have noticed",
-     "noticed",
-     "would notice",
-     "had noticed"
-    ],
-    "answer": 3,
-    "note": "if only + had + V3."
-   },
-   {
-    "type": "choice",
-    "text": "If it ___ not for the rain, the match would continue.",
-    "options": [
-     "had been",
-     "is",
-     "was",
-     "were"
-    ],
-    "answer": 3,
-    "note": "Şimdiki hayali koşul → were."
-   },
-   {
-    "type": "gap",
-    "text": "Had it not been for you, I ___ have managed.",
-    "options": [
-     "didn't",
-     "won't",
-     "wouldn't"
+     "Neither were we",
+     "So did we",
+     "So were we",
+     "So we were late too"
     ],
     "answer": 2,
-    "note": "Geçmiş sonuç → would have."
+    "note": "be fiiliyle kurulan onay."
+   },
+   {
+    "type": "gap",
+    "text": "He can't come on Friday, ___ can his wife.",
+    "options": [
+     "either",
+     "nor",
+     "so"
+    ],
+    "answer": 1,
+    "note": "nor = neither, olumsuz devam."
+   },
+   {
+    "type": "choice",
+    "text": "So ___ the crowd that the doors had to be closed.",
+    "options": [
+     "large it was",
+     "large was",
+     "was large",
+     "it was large"
+    ],
+    "answer": 1,
+    "note": "So + sıfat + be + özne."
+   },
+   {
+    "type": "choice",
+    "text": "I went home early. — ___ .",
+    "options": [
+     "So did I",
+     "Neither did I",
+     "So do I",
+     "So I did go"
+    ],
+    "answer": 0,
+    "note": "Geçmiş olumlu → So did I."
+   },
+   {
+    "type": "choice",
+    "text": "We hadn't been told. — ___ .",
+    "options": [
+     "Neither they had",
+     "Nor they had",
+     "So had they",
+     "Neither had they"
+    ],
+    "answer": 3,
+    "note": "Past perfect olumsuz onay."
+   },
+   {
+    "type": "gap",
+    "text": "She is not on the list, ___ am I.",
+    "options": [
+     "either",
+     "so",
+     "nor"
+    ],
+    "answer": 2,
+    "note": "Olumsuz devam → nor am I."
+   },
+   {
+    "type": "choice",
+    "text": "So ___ the noise that nobody could hear the speaker.",
+    "options": [
+     "loud it was",
+     "it was loud",
+     "loud was",
+     "was loud"
+    ],
+    "answer": 2,
+    "note": "Derece devriği."
+   },
+   {
+    "type": "choice",
+    "text": "I would never sign that. — ___ .",
+    "options": [
+     "So would I",
+     "Neither would I",
+     "So I would not",
+     "Neither I would"
+    ],
+    "answer": 1,
+    "note": "would ile olumsuz onay."
    }
   ]
  },
  {
-  "id": "c2-03-advanced-aspect",
+  "id": "c2-03-quasi-negation",
   "level": "C2",
   "order": 3,
-  "title": "will have been doing, had you been",
-  "topic": "Future perfect progressive; perfect progressive questions",
-  "canDo": "Sürenin ve tamamlanmışlığın en ince ayrımlarını kurabilirim.",
-  "covers": [
-   "TA.FUTPFPRG.AFF",
-   "TA.PASTPFPRG.INT.AFF",
-   "TA.FUTPF.INT.AFF"
-  ],
-  "concept": {
-   "summary": "İngilizcenin en katmanlı zaman biçimleri. Future perfect progressive gelecekteki bir noktada sürenin ne kadar olacağını söyler: by May I will have been working here for ten years. Past perfect progressive'in soru biçimi ise bir anın öncesindeki süreci sorgular.",
-   "formula": {
-    "left": "will have been + fiil-ing",
-    "right": "Had + özne + been + fiil-ing?"
-   },
-   "table": [
-    {
-     "form": "gelecek süre",
-     "be": "will have been + -ing",
-     "example": "I will have been teaching for 20 years."
-    },
-    {
-     "form": "gelecek tamamlanmış soru",
-     "be": "Will … have + V3?",
-     "example": "Will they have finished by then?"
-    },
-    {
-     "form": "geçmiş süre sorusu",
-     "be": "Had … been + -ing?",
-     "example": "Had you been waiting long?"
-    },
-    {
-     "form": "ayrım",
-     "be": "süre ↔ sonuç",
-     "example": "have been writing (süre) / have written (sonuç)"
-    }
-   ]
-  },
-  "examples": [
-   {
-    "en": "By next spring I will have been living here for five years.",
-    "tr": "Gelecek bahara burada beş yıldır yaşıyor olacağım.",
-    "note": "Gelecekten geriye bakan süre."
-   },
-   {
-    "en": "Will you have finished the draft by Monday?",
-    "tr": "Taslağı pazartesiye kadar bitirmiş olur musun?",
-    "note": "Tamamlanmışlık sorusu."
-   },
-   {
-    "en": "Had you been waiting long when the train came?",
-    "tr": "Tren geldiğinde uzun süredir bekliyor muydun?",
-    "note": "Geçmişteki sürecin sorusu."
-   },
-   {
-    "en": "By then the team will have been testing the system for months.",
-    "tr": "O zamana kadar ekip sistemi aylardır test ediyor olacak.",
-    "note": "Süre vurgusu."
-   },
-   {
-    "en": "Had they been arguing before you arrived?",
-    "tr": "Sen gelmeden önce tartışıyorlar mıydı?",
-    "note": "Devrik soru biçimi."
-   }
-  ],
-  "mistakes": [
-   {
-    "wrong": "By next spring I will be living here for five years.",
-    "right": "By next spring I will have been living here for five years.",
-    "why": "Süre gelecekteki bir noktaya kadar sayılıyorsa have been gerekir."
-   },
-   {
-    "wrong": "Did you have been waiting long?",
-    "right": "Had you been waiting long?",
-    "why": "Past perfect sorusunda had başa gelir, do kullanılmaz."
-   },
-   {
-    "wrong": "Will you have been finished by Monday?",
-    "right": "Will you have finished by Monday?",
-    "why": "finish sonuç bildirir; burada süre biçimi gerekmez."
-   }
-  ],
-  "exercises": [
-   {
-    "type": "choice",
-    "text": "By December she ___ for the company for a decade.",
-    "options": [
-     "has been working",
-     "will have been working",
-     "will have worked been",
-     "will be working"
-    ],
-    "answer": 1,
-    "note": "Gelecekte süre."
-   },
-   {
-    "type": "choice",
-    "text": "___ they have completed the audit by then?",
-    "options": [
-     "Will",
-     "Are",
-     "Have",
-     "Do"
-    ],
-    "answer": 0,
-    "note": "Future perfect sorusu."
-   },
-   {
-    "type": "choice",
-    "text": "___ you been standing here all this time?",
-    "options": [
-     "Had",
-     "Did",
-     "Have been",
-     "Were have"
-    ],
-    "answer": 0,
-    "note": "Past perfect progressive sorusu."
-   },
-   {
-    "type": "choice",
-    "text": "By 2035 the plant ___ operating for fifty years.",
-    "options": [
-     "would have",
-     "will have been",
-     "has been",
-     "will be"
-    ],
-    "answer": 1,
-    "note": "will have been + -ing."
-   },
-   {
-    "type": "gap",
-    "text": "Had he ___ working there before the merger?",
-    "options": [
-     "be",
-     "been",
-     "being"
-    ],
-    "answer": 1,
-    "note": "had + been + -ing."
-   }
-  ]
- },
- {
-  "id": "c2-04-perfect-infinitive-participle",
-  "level": "C2",
-  "order": 4,
-  "title": "to have done, having been done",
-  "topic": "Perfect infinitives and perfect passive participles",
-  "canDo": "Zaman ilişkisini fiilimsi biçimlerle sıkıştırarak yazabilirim.",
-  "covers": [
-   "TO.to_have_done",
-   "VG.having_been_VN",
-   "TO.so_as_to_do"
-  ],
-  "concept": {
-   "summary": "Fiilimsi, ana fiilden önce olmuş bir işi gösterecekse mükemmel biçime geçer: to have done, having done, having been done. Bu yapı akademik yazıda iki cümleyi tek cümlede toplamanın başlıca aracıdır. so as to ise amaç bildirir ve in order to'nun eşidir.",
-   "formula": {
-    "left": "to have + V3",
-    "right": "having been + V3"
-   },
-   "table": [
-    {
-     "form": "önce olmuş",
-     "be": "to have + V3",
-     "example": "He seems to have forgotten."
-    },
-    {
-     "form": "-ing, önce olmuş",
-     "be": "having + V3",
-     "example": "Having finished, she left."
-    },
-    {
-     "form": "edilgen",
-     "be": "having been + V3",
-     "example": "Having been warned, he stopped."
-    },
-    {
-     "form": "amaç",
-     "be": "so as to",
-     "example": "He whispered so as not to wake her."
-    }
-   ]
-  },
-  "examples": [
-   {
-    "en": "She appears to have misunderstood the question.",
-    "tr": "Soruyu yanlış anlamış görünüyor.",
-    "note": "Yanlış anlama, görünmeden önce oldu."
-   },
-   {
-    "en": "Having been rejected twice, he stopped applying.",
-    "tr": "İki kez reddedildikten sonra başvurmayı bıraktı.",
-    "note": "Edilgen ve önce olmuş."
-   },
-   {
-    "en": "Having read the report, the committee postponed the decision.",
-    "tr": "Komite raporu okuduktan sonra kararı erteledi.",
-    "note": "İki cümle tek cümlede."
-   },
-   {
-    "en": "He left early so as to avoid the traffic.",
-    "tr": "Trafiğe yakalanmamak için erken çıktı.",
-    "note": "Amaç → so as to."
-   },
-   {
-    "en": "She spoke quietly so as not to disturb anyone.",
-    "tr": "Kimseyi rahatsız etmemek için alçak sesle konuştu.",
-    "note": "Olumsuzda not, to'dan önce."
-   }
-  ],
-  "mistakes": [
-   {
-    "wrong": "She appears to misunderstood the question.",
-    "right": "She appears to have misunderstood the question.",
-    "why": "Önce olmuş işte to have + V3 gerekir."
-   },
-   {
-    "wrong": "Being rejected twice, he stopped applying.",
-    "right": "Having been rejected twice, he stopped applying.",
-    "why": "İş ana fiilden önce bittiyse having been kullanılır."
-   },
-   {
-    "wrong": "He left early so as to not miss the train.",
-    "right": "He left early so as not to miss the train.",
-    "why": "not, to'dan önce gelir."
-   }
-  ],
-  "exercises": [
-   {
-    "type": "choice",
-    "text": "He is believed ___ the country last week.",
-    "options": [
-     "to had left",
-     "leaving",
-     "to leave",
-     "to have left"
-    ],
-    "answer": 3,
-    "note": "Geçmişe bakan to'lu biçim."
-   },
-   {
-    "type": "choice",
-    "text": "___ the documents, she signed the contract.",
-    "options": [
-     "Having checked",
-     "Having been checked",
-     "Checked having",
-     "Being checked"
-    ],
-    "answer": 0,
-    "note": "Etken ve önce olmuş."
-   },
-   {
-    "type": "choice",
-    "text": "___ informed of the risks, they proceeded anyway.",
-    "options": [
-     "Being been",
-     "Been having",
-     "Having",
-     "Having been"
-    ],
-    "answer": 3,
-    "note": "Edilgen → having been + V3."
-   },
-   {
-    "type": "choice",
-    "text": "She sat at the back ___ not to be noticed.",
-    "options": [
-     "so as",
-     "in order that",
-     "so that",
-     "for"
-    ],
-    "answer": 0,
-    "note": "so as not to."
-   },
-   {
-    "type": "gap",
-    "text": "They seem ___ forgotten our agreement.",
-    "options": [
-     "to had",
-     "to has",
-     "to have"
-    ],
-    "answer": 2,
-    "note": "to have + V3."
-   }
-  ]
- },
- {
-  "id": "c2-05-modal-nuance",
-  "level": "C2",
-  "order": 5,
-  "title": "may as well, ought not to, dare",
-  "topic": "Fine-grained modal meanings",
-  "canDo": "Kip fiillerin ince tonlarını yerli konuşmacı gibi ayarlayabilirim.",
-  "covers": [
-   "MD.may_as_well.AFF",
-   "MD.ought_to.NEG",
-   "MD.ought_to.INT.NEG",
-   "MD.dare.AFF",
-   "MD.dare.NEG",
-   "MD.could.INT.NEG"
-  ],
-  "concept": {
-   "summary": "may as well \"daha iyi bir seçenek yok, bari\" der. ought to should ile aynı anlamdadır ama biraz daha nesnel, kurala dayalı durur; olumsuzu ought not to olur ve to düşmez. dare hem kip hem gerçek fiil olarak çekilebilir.",
-   "formula": {
-    "left": "may / might as well + yalın fiil",
-    "right": "ought not to + yalın fiil"
-   },
-   "table": [
-    {
-     "form": "may as well",
-     "be": "bari, madem",
-     "example": "We may as well start now."
-    },
-    {
-     "form": "ought to",
-     "be": "nesnel tavsiye",
-     "example": "You ought to see a specialist."
-    },
-    {
-     "form": "ought not to",
-     "be": "to düşmez",
-     "example": "You ought not to worry."
-    },
-    {
-     "form": "dare",
-     "be": "iki türlü çekim",
-     "example": "He doesn't dare to ask. / He daren't ask."
-    },
-    {
-     "form": "couldn't … ?",
-     "be": "sitem / şaşkınlık",
-     "example": "Couldn't you have called?"
-    }
-   ]
-  },
-  "examples": [
-   {
-    "en": "The train is delayed, so we may as well have a coffee.",
-    "tr": "Tren rötarlı, bari bir kahve içelim.",
-    "note": "Daha iyi seçenek yok."
-   },
-   {
-    "en": "You ought to check the terms before signing.",
-    "tr": "İmzalamadan önce koşullara bakmalısın.",
-    "note": "Nesnel tavsiye."
-   },
-   {
-    "en": "They ought not to have published those figures.",
-    "tr": "O rakamları yayımlamamaları gerekirdi.",
-    "note": "ought not to have + V3."
-   },
-   {
-    "en": "He didn't dare to contradict his manager.",
-    "tr": "Müdürüne karşı çıkmaya cesaret edemedi.",
-    "note": "Gerçek fiil gibi çekildi."
-   },
-   {
-    "en": "Couldn't you have told me earlier?",
-    "tr": "Bana daha erken söyleyemez miydin?",
-    "note": "Sitem bildiren olumsuz soru."
-   }
-  ],
-  "mistakes": [
-   {
-    "wrong": "You oughtn't worry about it.",
-    "right": "You ought not to worry about it.",
-    "why": "ought'un olumsuzunda to korunur."
-   },
-   {
-    "wrong": "We may as well to start now.",
-    "right": "We may as well start now.",
-    "why": "Kalıptan sonra yalın fiil gelir."
-   },
-   {
-    "wrong": "He didn't dare contradicting his manager.",
-    "right": "He didn't dare to contradict his manager.",
-    "why": "Gerçek fiil olarak çekilince to'lu biçim gelir."
-   }
-  ],
-  "exercises": [
-   {
-    "type": "choice",
-    "text": "Nobody else is coming, so we ___ begin.",
-    "options": [
-     "may as well",
-     "as well may",
-     "may as well to",
-     "may so well"
-    ],
-    "answer": 0,
-    "note": "may as well + yalın fiil."
-   },
-   {
-    "type": "choice",
-    "text": "You ___ to leave the door unlocked.",
-    "options": [
-     "oughtn't not",
-     "don't ought",
-     "ought no",
-     "ought not"
-    ],
-    "answer": 3,
-    "note": "ought not to."
-   },
-   {
-    "type": "choice",
-    "text": "They ___ have warned us about the change.",
-    "options": [
-     "ought not to not",
-     "did ought",
-     "ought",
-     "ought to"
-    ],
-    "answer": 3,
-    "note": "ought to have + V3."
-   },
-   {
-    "type": "choice",
-    "text": "___ you have mentioned this sooner?",
-    "options": [
-     "Can't",
-     "Didn't could",
-     "Couldn't",
-     "Not could"
-    ],
-    "answer": 2,
-    "note": "Sitem → Couldn't you have."
-   },
-   {
-    "type": "gap",
-    "text": "She ___ to question the decision.",
-    "options": [
-     "not dared",
-     "didn't dare",
-     "doesn't dared"
-    ],
-    "answer": 1,
-    "note": "dare gerçek fiil olarak çekildi."
-   }
-  ]
- },
- {
-  "id": "c2-06-the-other-others",
-  "level": "C2",
-  "order": 6,
-  "title": "the other, others, the others",
-  "topic": "Reference with other",
-  "canDo": "Bir grubun parçalarına karışıklığa yer bırakmadan gönderme yapabilirim.",
-  "covers": [
-   "P.the_other.others"
-  ],
-  "concept": {
-   "summary": "Belirlilik bu kelimede her şeyi değiştirir. the other geriye kalan tek şeydir; others belirsiz \"başkaları\"dır; the others belirli bir grubun geri kalanının tamamıdır. another ise \"bir tane daha\" demektir ve tekildir.",
-   "formula": {
-    "left": "the other (tek, belirli)",
-    "right": "others (belirsiz) / the others (kalan hepsi)"
-   },
-   "table": [
-    {
-     "form": "another",
-     "be": "bir tane daha",
-     "example": "Would you like another?"
-    },
-    {
-     "form": "the other",
-     "be": "kalan tek",
-     "example": "One is red, the other is blue."
-    },
-    {
-     "form": "others",
-     "be": "belirsiz başkaları",
-     "example": "Some agreed; others did not."
-    },
-    {
-     "form": "the others",
-     "be": "kalanların hepsi",
-     "example": "Two stayed; the others left."
-    }
-   ]
-  },
-  "examples": [
-   {
-    "en": "I have two brothers: one is a doctor, the other is a pilot.",
-    "tr": "İki erkek kardeşim var: biri doktor, diğeri pilot.",
-    "note": "Geriye tek kişi kaldı → the other."
-   },
-   {
-    "en": "Some people welcomed the plan; others opposed it.",
-    "tr": "Bazıları planı olumlu karşıladı, başkaları karşı çıktı.",
-    "note": "Belirsiz grup → others."
-   },
-   {
-    "en": "Three of us stayed; the others went home.",
-    "tr": "Üçümüz kaldık, kalanlar eve gitti.",
-    "note": "Belirli grubun kalanı → the others."
-   },
-   {
-    "en": "This one is broken; do you have another?",
-    "tr": "Bu bozuk, başka var mı?",
-    "note": "Bir tane daha → another."
-   },
-   {
-    "en": "We should consider the views of others.",
-    "tr": "Başkalarının görüşlerini de düşünmeliyiz.",
-    "note": "Genel anlamda başkaları."
-   }
-  ],
-  "mistakes": [
-   {
-    "wrong": "One is red, another is blue.",
-    "right": "One is red, the other is blue.",
-    "why": "İkiden biri kaldıysa belirlidir."
-   },
-   {
-    "wrong": "Some agreed; the others did not, but we don't know who.",
-    "right": "Some agreed; others did not.",
-    "why": "Grup belirsizse the kullanılmaz."
-   },
-   {
-    "wrong": "Two stayed; others left, all of them.",
-    "right": "Two stayed; the others left.",
-    "why": "Kalanların tamamı kastediliyorsa the others."
-   }
-  ],
-  "exercises": [
-   {
-    "type": "choice",
-    "text": "I have two keys: this one and ___ .",
-    "options": [
-     "another",
-     "others",
-     "other",
-     "the other"
-    ],
-    "answer": 3,
-    "note": "Kalan tek → the other."
-   },
-   {
-    "type": "choice",
-    "text": "Some students passed; ___ had to resit.",
-    "options": [
-     "another",
-     "others",
-     "other",
-     "the other"
-    ],
-    "answer": 1,
-    "note": "Belirsiz grup → others."
-   },
-   {
-    "type": "choice",
-    "text": "Five of us went ahead; ___ waited at the car.",
-    "options": [
-     "the other",
-     "others",
-     "the others",
-     "another"
-    ],
-    "answer": 2,
-    "note": "Belirli kalan grup."
-   },
-   {
-    "type": "choice",
-    "text": "This pen doesn't work. Can I have ___ ?",
-    "options": [
-     "the others",
-     "another",
-     "the other",
-     "others"
-    ],
-    "answer": 1,
-    "note": "Bir tane daha → another."
-   },
-   {
-    "type": "gap",
-    "text": "Be considerate of ___ .",
-    "options": [
-     "another",
-     "the other",
-     "others"
-    ],
-    "answer": 2,
-    "note": "Genel anlamda başkaları."
-   }
-  ]
- },
- {
-  "id": "c2-07-quasi-negation",
-  "level": "C2",
-  "order": 7,
-  "title": "hardly, scarcely, seldom",
+  "title": "hardly, scarcely, seldom — biçimce olumlu, anlamca olumsuz",
   "topic": "Quasi-negative adverbs",
   "canDo": "Olumsuzluğu doğrudan söylemeden, derecesini ayarlayarak kurabilirim.",
   "covers": [
    "RB.NEG.QU"
   ],
   "concept": {
-   "summary": "Bu zarflar biçimce olumlu ama anlamca olumsuzdur: hardly \"neredeyse hiç\", seldom \"pek seyrek\" demektir. Olumsuzluğu kendileri taşıdıkları için cümlede ikinci bir olumsuz almazlar ve soru eklerinde olumlu biçim gelir.",
+   "summary": "Bu zarflar biçimce olumlu ama anlamca olumsuzdur: hardly \"neredeyse hiç\", seldom \"pek seyrek\" demektir. Olumsuzluğu kendileri taşıdıkları için cümlede ikinci bir olumsuz almazlar; bu Türkçe konuşan öğrencinin en sık düştüğü tuzaktır, çünkü Türkçede olumsuzluk fiile de yansır. Soru eklerinde de olumlu biçim gelir: He hardly ever calls, does he?",
    "formula": {
     "left": "hardly / scarcely / seldom / barely",
     "right": "= neredeyse hiç (ikinci olumsuz yok)"
    },
    "table": [
     {
-     "form": "hardly any",
-     "be": "neredeyse hiç",
-     "example": "There was hardly any food left."
+     "form": "miktar",
+     "be": "hardly any",
+     "example": "There is hardly any milk left."
     },
     {
-     "form": "hardly ever",
-     "be": "neredeyse hiç (sıklık)",
-     "example": "He hardly ever complains."
+     "form": "sıklık",
+     "be": "hardly ever",
+     "example": "He hardly ever answers."
     },
     {
-     "form": "seldom",
-     "be": "nadiren",
-     "example": "She seldom travels by car."
+     "form": "resmî sıklık",
+     "be": "seldom",
+     "example": "She seldom speaks at meetings."
     },
     {
-     "form": "barely",
-     "be": "ancak, güç bela",
+     "form": "güçlükle",
+     "be": "barely",
      "example": "I could barely hear him."
     }
    ]
@@ -980,9 +493,80 @@
   "exercises": [
    {
     "type": "choice",
-    "text": "There was ___ any time to prepare.",
+    "text": "There is ___ any bread left in the shop.",
     "options": [
      "no hardly",
+     "not hardly",
+     "hardly",
+     "hardly not"
+    ],
+    "answer": 2,
+    "note": "Tek olumsuzluk yeter."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ ever writes back.",
+    "options": [
+     "hardly not",
+     "hardly",
+     "not hardly",
+     "doesn't hardly"
+    ],
+    "answer": 1,
+    "note": "hardly ever + olumlu fiil."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ travels by plane these days.",
+    "options": [
+     "seldom",
+     "doesn't seldom",
+     "seldom not",
+     "not seldom"
+    ],
+    "answer": 0,
+    "note": "seldom olumsuzluğu taşır."
+   },
+   {
+    "type": "gap",
+    "text": "I could ___ hear what he was saying.",
+    "options": [
+     "not barely",
+     "barely not",
+     "barely"
+    ],
+    "answer": 2,
+    "note": "barely = güç bela."
+   },
+   {
+    "type": "choice",
+    "text": "___ anyone came to the second meeting.",
+    "options": [
+     "Scarcely",
+     "Not scarcely",
+     "Scarcely not",
+     "No scarcely"
+    ],
+    "answer": 0,
+    "note": "scarcely anyone."
+   },
+   {
+    "type": "choice",
+    "text": "He hardly ever calls, ___ ?",
+    "options": [
+     "does he",
+     "doesn't he",
+     "does not he",
+     "is he"
+    ],
+    "answer": 0,
+    "note": "Cümle anlamca olumsuz olduğu için ek olumlu gelir."
+   },
+   {
+    "type": "choice",
+    "text": "We ___ had time to eat before the train left.",
+    "options": [
+     "didn't hardly",
      "not hardly",
      "hardly not",
      "hardly"
@@ -991,51 +575,2899 @@
     "note": "Tek olumsuzluk."
    },
    {
-    "type": "choice",
-    "text": "He ___ ever takes a day off.",
+    "type": "gap",
+    "text": "There were ___ any seats free in the hall.",
     "options": [
-     "hardly",
-     "hardly not",
      "not hardly",
-     "doesn't hardly"
-    ],
-    "answer": 0,
-    "note": "hardly ever kalıbı."
-   },
-   {
-    "type": "choice",
-    "text": "I could ___ hear the announcement.",
-    "options": [
-     "not barely",
-     "barely not",
-     "barely",
-     "hardly not"
+     "no hardly",
+     "hardly"
     ],
     "answer": 2,
-    "note": "barely = güç bela."
+    "note": "hardly any + çoğul."
    },
    {
     "type": "choice",
-    "text": "She ___ complains about anything.",
+    "text": "Which sentence is correct? ___",
     "options": [
+     "She seldom doesn't eat meat.",
+     "She not seldom eats meat.",
+     "She doesn't seldom eat meat.",
+     "She seldom eats meat."
+    ],
+    "answer": 3,
+    "note": "seldom ikinci olumsuz almaz."
+   },
+   {
+    "type": "choice",
+    "text": "The two brothers ___ speak to each other any more.",
+    "options": [
+     "don't seldom",
      "seldom not",
-     "not seldom to",
-     "doesn't seldom",
+     "not seldom",
      "seldom"
     ],
     "answer": 3,
-    "note": "seldom tek başına olumsuz."
+    "note": "seldom + olumlu fiil."
+   }
+  ]
+ },
+ {
+  "id": "c2-04-if-it-were-not-for",
+  "level": "C2",
+  "order": 4,
+  "title": "If it were not for — o olmasaydı",
+  "topic": "if it were not for / if it hadn't been for",
+  "canDo": "Bir şeyin varlığının her şeyi değiştirdiğini tek kalıpla anlatabilirim.",
+  "covers": [
+   "SUBJ.if_it_were_not_for",
+   "SUBJ.if_it_hadn't_been_for"
+  ],
+  "concept": {
+   "summary": "Bu kalıp tek bir etkenin belirleyici olduğunu söyler: \"o olmasa, bambaşka olurdu\". Bugüne bakan biçimi if it were not for, geçmişe bakan biçimi if it hadn't been for'dur. Zaman farkı kalıbın içinde taşınır: sonuç cümlesi buna uyar, bugün için would + fiil, geçmiş için would have + V3. Kalıptan sonra her zaman bir isim öbeği gelir, cümle gelmez.",
+   "formula": {
+    "left": "If it were not for + isim",
+    "right": "If it hadn't been for + isim"
+   },
+   "table": [
+    {
+     "form": "bugün",
+     "be": "If it were not for X",
+     "example": "If it were not for her, we would be lost."
+    },
+    {
+     "form": "geçmiş",
+     "be": "If it hadn't been for X",
+     "example": "If it hadn't been for the storm, …"
+    },
+    {
+     "form": "bugünkü sonuç",
+     "be": "would + fiil",
+     "example": "… the project would stop."
+    },
+    {
+     "form": "geçmiş sonuç",
+     "be": "would have + V3",
+     "example": "… the ship would have arrived."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "If it were not for his support, the project would stop tomorrow.",
+    "tr": "Onun desteği olmasa proje yarın dururdu.",
+    "note": "Bugüne bakan biçim."
+   },
+   {
+    "en": "If it hadn't been for the storm, the ship would have arrived on time.",
+    "tr": "Fırtına olmasaydı gemi zamanında varırdı.",
+    "note": "Geçmişe bakan biçim."
+   },
+   {
+    "en": "If it were not for the noise, this would be a perfect flat.",
+    "tr": "Gürültü olmasa bu daire mükemmel olurdu.",
+    "note": "Tek etken belirleyici."
+   },
+   {
+    "en": "If it hadn't been for that letter, nobody would ever have known.",
+    "tr": "O mektup olmasaydı kimsenin haberi olmazdı.",
+    "note": "would ever have + V3."
+   },
+   {
+    "en": "If it were not for the children, they would have separated years ago.",
+    "tr": "Çocuklar olmasa yıllar önce ayrılmışlardı.",
+    "note": "Karma tip: bugünkü etken, geçmiş sonuç."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "If it wasn't for the storm, the ship would have arrived.",
+    "right": "If it hadn't been for the storm, the ship would have arrived.",
+    "why": "Geçmişteki etken için hadn't been kullanılır."
+   },
+   {
+    "wrong": "If it were not for she helped us, we would be lost.",
+    "right": "If it were not for her help, we would be lost.",
+    "why": "Kalıptan sonra isim öbeği gelir, cümle gelmez."
+   },
+   {
+    "wrong": "If it were not for his support, the project stopped.",
+    "right": "If it were not for his support, the project would stop.",
+    "why": "Gerçek dışı koşulun sonucu would ile kurulur."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "If it ___ not for the scholarship, she would leave the course.",
+    "options": [
+     "were",
+     "was",
+     "is",
+     "had been"
+    ],
+    "answer": 0,
+    "note": "Bugüne bakan biçim → were."
+   },
+   {
+    "type": "choice",
+    "text": "If it ___ been for the neighbors, the fire would have spread.",
+    "options": [
+     "weren't",
+     "hadn't",
+     "didn't",
+     "wasn't"
+    ],
+    "answer": 1,
+    "note": "Geçmiş etken → hadn't been."
+   },
+   {
+    "type": "choice",
+    "text": "If it were not for the rain, we ___ in the garden now.",
+    "options": [
+     "would be",
+     "are",
+     "will be",
+     "would have been"
+    ],
+    "answer": 0,
+    "note": "Bugünkü sonuç → would + fiil."
    },
    {
     "type": "gap",
-    "text": "___ anyone attended the first session.",
+    "text": "If it hadn't been for his advice, I ___ the wrong flat.",
     "options": [
-     "Not scarcely",
-     "Scarcely not",
-     "Scarcely"
+     "would have bought",
+     "would buy",
+     "bought"
+    ],
+    "answer": 0,
+    "note": "Geçmiş sonuç → would have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "If it were not for ___ , the shop would have closed years ago.",
+    "options": [
+     "the regular customers",
+     "that customers come",
+     "customers are regular",
+     "the customers come"
+    ],
+    "answer": 0,
+    "note": "Kalıptan sonra isim öbeği."
+   },
+   {
+    "type": "choice",
+    "text": "If it ___ not for the traffic, the journey would take an hour.",
+    "options": [
+     "is",
+     "had",
+     "were",
+     "has"
     ],
     "answer": 2,
-    "note": "scarcely anyone."
+    "note": "Bugünkü genel durum → were."
+   },
+   {
+    "type": "choice",
+    "text": "If it hadn't been for that phone call, nobody ___ .",
+    "options": [
+     "will notice",
+     "noticed",
+     "would notice",
+     "would have noticed"
+    ],
+    "answer": 3,
+    "note": "Geçmiş sonuç."
+   },
+   {
+    "type": "gap",
+    "text": "If it ___ not for her patience, the class would be chaos.",
+    "options": [
+     "was",
+     "had",
+     "were"
+    ],
+    "answer": 2,
+    "note": "Bugün → were not for."
+   },
+   {
+    "type": "choice",
+    "text": "If it hadn't been for the delay, we ___ the connection.",
+    "options": [
+     "will catch",
+     "caught",
+     "would catch",
+     "would have caught"
+    ],
+    "answer": 3,
+    "note": "Geçmişte kaçırılan bağlantı."
+   },
+   {
+    "type": "choice",
+    "text": "Which form points to the past? ___",
+    "options": [
+     "If it is not for the fog …",
+     "If it will not be for the fog …",
+     "If it were not for the fog …",
+     "If it hadn't been for the fog …"
+    ],
+    "answer": 3,
+    "note": "Geçmiş etken → hadn't been for."
+   }
+  ]
+ },
+ {
+  "id": "c2-05-were-it-not-for",
+  "level": "C2",
+  "order": 5,
+  "title": "Were it not for — en resmî devrik koşul",
+  "topic": "Inverted were it not for / had it not been for",
+  "canDo": "En resmî üslupta koşulu if kullanmadan kurabilirim.",
+  "covers": [
+   "SUBJ.were_it_not_for",
+   "SUBJ.had_it_not_been_for"
+  ],
+  "concept": {
+   "summary": "Bir önceki dersin iki kalıbı, resmî yazıda if atılarak kurulur: Were it not for X ve Had it not been for X. Anlam tıpatıp aynıdır; değişen yalnızca üsluptur. Bu en resmî biçimdir ve yazıya özgüdür. if ile devrik biçim asla bir arada bulunmaz.",
+   "formula": {
+    "left": "If it were not for X",
+    "right": "Were it not for X"
+   },
+   "table": [
+    {
+     "form": "bugün, if'li",
+     "be": "If it were not for",
+     "example": "If it were not for the grant, …"
+    },
+    {
+     "form": "bugün, devrik",
+     "be": "Were it not for",
+     "example": "Were it not for the grant, …"
+    },
+    {
+     "form": "geçmiş, if'li",
+     "be": "If it hadn't been for",
+     "example": "If it hadn't been for the storm, …"
+    },
+    {
+     "form": "geçmiş, devrik",
+     "be": "Had it not been for",
+     "example": "Had it not been for the storm, …"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Were it not for the scholarship, she couldn't have studied abroad.",
+    "tr": "Burs olmasaydı yurt dışında okuyamazdı.",
+    "note": "Devrik, en resmî biçim."
+   },
+   {
+    "en": "Had it not been for the storm, the ship would have reached port.",
+    "tr": "Fırtına olmasaydı gemi limana varırdı.",
+    "note": "Geçmiş için devrik biçim."
+   },
+   {
+    "en": "Were it not for the language, I would apply for the post today.",
+    "tr": "Dil sorunu olmasa bugün o göreve başvururdum.",
+    "note": "Bugüne bakan devrik biçim."
+   },
+   {
+    "en": "Had it not been for one witness, the case would have collapsed.",
+    "tr": "Tek bir tanık olmasaydı dava çökerdi.",
+    "note": "Tek etken belirleyici."
+   },
+   {
+    "en": "Were it not for these two clauses, the contract would be acceptable.",
+    "tr": "Şu iki madde olmasa sözleşme kabul edilebilir olurdu.",
+    "note": "Resmî yazı dili."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "If had it not been for the storm, the ship would have arrived.",
+    "right": "Had it not been for the storm, the ship would have arrived.",
+    "why": "Devrik biçim if'in yerini alır."
+   },
+   {
+    "wrong": "Were it not for the scholarship, she couldn't studied abroad.",
+    "right": "Were it not for the scholarship, she couldn't have studied abroad.",
+    "why": "Geçmiş sonuçta have + V3 gerekir."
+   },
+   {
+    "wrong": "Was it not for the grant, we would stop.",
+    "right": "Were it not for the grant, we would stop.",
+    "why": "Bu kalıp her öznede were ister."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ it not for the new road, the village would be cut off.",
+    "options": [
+     "If were",
+     "Had",
+     "Were",
+     "Was"
+    ],
+    "answer": 2,
+    "note": "Bugüne bakan devrik biçim → Were."
+   },
+   {
+    "type": "choice",
+    "text": "___ it not been for the nurse, he would not have survived.",
+    "options": [
+     "Was",
+     "Were",
+     "Had",
+     "If had"
+    ],
+    "answer": 2,
+    "note": "Geçmişe bakan devrik biçim → Had."
+   },
+   {
+    "type": "choice",
+    "text": "Were it not for the cost, we ___ the house.",
+    "options": [
+     "will buy",
+     "would buy",
+     "would have bought",
+     "bought"
+    ],
+    "answer": 1,
+    "note": "Bugünkü sonuç → would + fiil."
+   },
+   {
+    "type": "gap",
+    "text": "Had it not been for the warning, the crash ___ .",
+    "options": [
+     "would happen",
+     "happened",
+     "would have happened"
+    ],
+    "answer": 2,
+    "note": "Geçmiş sonuç → would have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence is written correctly? ___",
+    "options": [
+     "If had it not been for you, I would have failed.",
+     "Had it not for you, I would have failed.",
+     "Had not it been for you, I would have failed.",
+     "Had it not been for you, I would have failed."
+    ],
+    "answer": 3,
+    "note": "if kullanılmaz, been düşmez, not özneden sonra gelir."
+   },
+   {
+    "type": "choice",
+    "text": "Were it not for these ___ , the plan would go ahead.",
+    "options": [
+     "two objections",
+     "objecting they",
+     "that they object",
+     "two objections are"
+    ],
+    "answer": 0,
+    "note": "Kalıptan sonra isim öbeği."
+   },
+   {
+    "type": "choice",
+    "text": "___ it not been for the delay, we would have met her at the airport.",
+    "options": [
+     "Had",
+     "Were",
+     "Have",
+     "Was"
+    ],
+    "answer": 0,
+    "note": "Geçmiş → Had it not been for."
+   },
+   {
+    "type": "gap",
+    "text": "___ it not for the weather, this would be a perfect place to live.",
+    "options": [
+     "Was",
+     "Had",
+     "Were"
+    ],
+    "answer": 2,
+    "note": "Bugün → Were it not for."
+   },
+   {
+    "type": "choice",
+    "text": "In which text would you expect this structure? In ___ .",
+    "options": [
+     "a formal report",
+     "a text to a friend",
+     "a song lyric",
+     "a shopping list"
+    ],
+    "answer": 0,
+    "note": "Devrik koşul resmî yazıya özgüdür."
+   },
+   {
+    "type": "choice",
+    "text": "Had it not been for one signature, the deal ___ through.",
+    "options": [
+     "will fall",
+     "would fall",
+     "would have fallen",
+     "fell"
+    ],
+    "answer": 2,
+    "note": "Geçmişte gerçekleşmemiş sonuç."
+   }
+  ]
+ },
+ {
+  "id": "c2-06-if-only",
+  "level": "C2",
+  "order": 6,
+  "title": "If only I had — pişmanlığın en yoğun biçimi",
+  "topic": "if only + past perfect",
+  "canDo": "Geçmişe dair pişmanlığımı en güçlü biçimde dile getirebilirim.",
+  "covers": [
+   "SUBJ.if_only_PASTPF"
+  ],
+  "concept": {
+   "summary": "if only + past perfect, geçmişte yapılmamış bir şeye duyulan pişmanlığı anlatır ve I wish'ten daha yoğundur. Cümle çoğu zaman yarım bırakılır; sonuç söylenmeden de anlaşılır. Pişmanlık geçmişe bakıyorsa had + V3 gelir; bugüne bakıyorsa geçmiş biçim yeterlidir: If only I knew. would have bu kalıpta kullanılmaz.",
+   "formula": {
+    "left": "If only + had + V3",
+    "right": "= keşke -seydim"
+   },
+   "table": [
+    {
+     "form": "geçmiş pişmanlık",
+     "be": "If only + had + V3",
+     "example": "If only I had listened."
+    },
+    {
+     "form": "bugünkü istek",
+     "be": "If only + geçmiş biçim",
+     "example": "If only I knew the answer."
+    },
+    {
+     "form": "geleceğe dair",
+     "be": "If only + would",
+     "example": "If only he would stop talking."
+    },
+    {
+     "form": "yanlış biçim",
+     "be": "would have kullanılmaz",
+     "example": "not: If only I would have gone."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "If only I had taken that job.",
+    "tr": "Keşke o işi kabul etseydim.",
+    "note": "Yoğun pişmanlık."
+   },
+   {
+    "en": "If only we had known earlier.",
+    "tr": "Keşke daha erken bilseydik.",
+    "note": "if only + had + V3."
+   },
+   {
+    "en": "If only she had asked before signing.",
+    "tr": "Keşke imzalamadan önce sorsaydı.",
+    "note": "Yapılmamış bir şeye pişmanlık."
+   },
+   {
+    "en": "If only I knew where he was.",
+    "tr": "Keşke nerede olduğunu bilsem.",
+    "note": "Bugüne bakan istek: geçmiş biçim yeter."
+   },
+   {
+    "en": "If only the phone would stop ringing.",
+    "tr": "Keşke telefon çalmayı kesse.",
+    "note": "Devam eden rahatsızlık: would."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "If only I would have listened.",
+    "right": "If only I had listened.",
+    "why": "Geçmişe dair pişmanlıkta had + V3 kullanılır."
+   },
+   {
+    "wrong": "If only I have taken that job.",
+    "right": "If only I had taken that job.",
+    "why": "Present perfect bu kalıpta yer almaz."
+   },
+   {
+    "wrong": "If only I would know the answer.",
+    "right": "If only I knew the answer.",
+    "why": "Bugüne bakan istekte geçmiş biçim gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "If only I ___ the email before the meeting.",
+    "options": [
+     "would have read",
+     "read",
+     "had read",
+     "have read"
+    ],
+    "answer": 2,
+    "note": "Geçmiş pişmanlık → had + V3."
+   },
+   {
+    "type": "choice",
+    "text": "If only they ___ us that the road was closed.",
+    "options": [
+     "have told",
+     "had told",
+     "would have told",
+     "told"
+    ],
+    "answer": 1,
+    "note": "if only + had + V3."
+   },
+   {
+    "type": "choice",
+    "text": "If only I ___ how to say it in Turkish.",
+    "options": [
+     "would know",
+     "knew",
+     "had known now",
+     "know"
+    ],
+    "answer": 1,
+    "note": "Bugüne bakan istek → geçmiş biçim."
+   },
+   {
+    "type": "gap",
+    "text": "If only he ___ apologizing every five minutes.",
+    "options": [
+     "had stop",
+     "stopped have",
+     "would stop"
+    ],
+    "answer": 2,
+    "note": "Devam eden rahatsızlık → would."
+   },
+   {
+    "type": "choice",
+    "text": "If only we ___ the earlier flight.",
+    "options": [
+     "had taken",
+     "would take",
+     "took",
+     "have taken"
+    ],
+    "answer": 0,
+    "note": "Geçmişte yapılmamış iş."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence expresses regret about the past? ___",
+    "options": [
+     "If only I said no.",
+     "If only I would say no.",
+     "If only I had said no.",
+     "If only I say no."
+    ],
+    "answer": 2,
+    "note": "Geçmiş pişmanlık had + V3 ister."
+   },
+   {
+    "type": "choice",
+    "text": "If only she ___ so quickly.",
+    "options": [
+     "didn't sign",
+     "wouldn't have signed",
+     "hadn't signed",
+     "hasn't signed"
+    ],
+    "answer": 2,
+    "note": "Olumsuz pişmanlık."
+   },
+   {
+    "type": "gap",
+    "text": "If only the tickets ___ cheaper.",
+    "options": [
+     "were",
+     "are",
+     "had been now"
+    ],
+    "answer": 0,
+    "note": "Bugünkü istek → geçmiş biçim."
+   },
+   {
+    "type": "choice",
+    "text": "If only I ___ him at the station that day.",
+    "options": [
+     "had met",
+     "met",
+     "would meet",
+     "have met"
+    ],
+    "answer": 0,
+    "note": "that day → geçmiş pişmanlık."
+   },
+   {
+    "type": "choice",
+    "text": "If only somebody ___ something at the time.",
+    "options": [
+     "has said",
+     "would have said",
+     "said",
+     "had said"
+    ],
+    "answer": 3,
+    "note": "at the time → had + V3."
+   }
+  ]
+ },
+ {
+  "id": "c2-07-future-perfect-progressive",
+  "level": "C2",
+  "order": 7,
+  "title": "will have been doing — gelecekte sürmüş olacak",
+  "topic": "Future perfect progressive",
+  "canDo": "Gelecekteki bir noktada bir işin ne kadar süredir sürüyor olacağını anlatabilirim.",
+  "covers": [
+   "TA.FUTPFPRG.AFF"
+  ],
+  "concept": {
+   "summary": "Future perfect gelecekte biten işi anlatır; future perfect progressive ise gelecekteki bir noktada hâlâ süren ve o ana kadar ne kadar sürmüş olduğu sayılan işi anlatır. Neredeyse her zaman for + süre ile gelir. İşin bitip bitmediği önemli değildir, süresi önemlidir. Durum bildiren fiiller (know, be, own) bu biçimde kullanılmaz.",
+   "formula": {
+    "left": "will have been + V-ing",
+    "right": "for + süre"
+   },
+   "table": [
+    {
+     "form": "süre",
+     "be": "will have been + V-ing",
+     "example": "I will have been working here for ten years."
+    },
+    {
+     "form": "bitmişlik",
+     "be": "will have + V3",
+     "example": "I will have finished the report."
+    },
+    {
+     "form": "zaman noktası",
+     "be": "by + nokta",
+     "example": "By May, by then, by the time …"
+    },
+    {
+     "form": "kullanılmaz",
+     "be": "durum fiilleri",
+     "example": "not: will have been knowing"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "By next spring I will have been living here for five years.",
+    "tr": "Gelecek bahara burada beş yıldır yaşıyor olacağım.",
+    "note": "Gelecekten geriye bakan süre."
+   },
+   {
+    "en": "By then the team will have been testing the system for months.",
+    "tr": "O zamana kadar ekip sistemi aylardır test ediyor olacak.",
+    "note": "Süre vurgusu."
+   },
+   {
+    "en": "In June she will have been teaching for thirty years.",
+    "tr": "Haziranda otuz yıldır öğretmenlik yapıyor olacak.",
+    "note": "in + zaman noktası."
+   },
+   {
+    "en": "By the time you arrive, we will have been waiting for two hours.",
+    "tr": "Sen varana kadar iki saattir bekliyor olacağız.",
+    "note": "by the time + geniş zaman."
+   },
+   {
+    "en": "Next month they will have been married for forty years.",
+    "tr": "Gelecek ay kırk yıllık evli olacaklar.",
+    "note": "Durum bildiren anlamda düz perfect kullanılır."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "By next spring I will be living here for five years.",
+    "right": "By next spring I will have been living here for five years.",
+    "why": "Süre gelecekteki bir noktaya kadar sayılıyorsa have been gerekir."
+   },
+   {
+    "wrong": "By June I will have been knowing her for ten years.",
+    "right": "By June I will have known her for ten years.",
+    "why": "Durum bildiren fiiller sürerli biçime girmez."
+   },
+   {
+    "wrong": "By then we will have been waiting since two hours.",
+    "right": "By then we will have been waiting for two hours.",
+    "why": "Süre uzunluğu for ile verilir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "By December they ___ on the bridge for three years.",
+    "options": [
+     "are working",
+     "will have been working",
+     "will work",
+     "will have worked once"
+    ],
+    "answer": 1,
+    "note": "Süre + gelecek nokta."
+   },
+   {
+    "type": "choice",
+    "text": "By the time the film ends, we ___ for four hours.",
+    "options": [
+     "have sat",
+     "will sit",
+     "will have been sitting",
+     "sit"
+    ],
+    "answer": 2,
+    "note": "will have been + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "In August I will have been ___ this car for ten years.",
+    "options": [
+     "to drive",
+     "driving",
+     "drive",
+     "drove"
+    ],
+    "answer": 1,
+    "note": "have been + V-ing."
+   },
+   {
+    "type": "gap",
+    "text": "By next week she will have been studying ___ six months.",
+    "options": [
+     "for",
+     "during",
+     "since"
+    ],
+    "answer": 0,
+    "note": "Süre uzunluğu → for."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence counts the length of time? ___",
+    "options": [
+     "By May I will have moved house.",
+     "By May I will move house.",
+     "By May I will have been living here for a year.",
+     "By May I am living here."
+    ],
+    "answer": 2,
+    "note": "Süre sayan biçim have been + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "By June he ___ her for twenty years.",
+    "options": [
+     "will have known",
+     "will know",
+     "will have been knowing",
+     "is knowing"
+    ],
+    "answer": 0,
+    "note": "know durum fiilidir, sürerli biçime girmez."
+   },
+   {
+    "type": "choice",
+    "text": "By the end of the shift they ___ for eleven hours.",
+    "options": [
+     "will stand",
+     "stood",
+     "will have been standing",
+     "have stood"
+    ],
+    "answer": 2,
+    "note": "Süre vurgusu."
+   },
+   {
+    "type": "gap",
+    "text": "By then the machine ___ non-stop for two days.",
+    "options": [
+     "runs",
+     "will have been running",
+     "will run"
+    ],
+    "answer": 1,
+    "note": "Süregelen iş."
+   },
+   {
+    "type": "choice",
+    "text": "Next year we ___ in this office for a decade.",
+    "options": [
+     "will work",
+     "worked",
+     "will have been working",
+     "work"
+    ],
+    "answer": 2,
+    "note": "Gelecekte sayılan süre."
+   },
+   {
+    "type": "choice",
+    "text": "By six o'clock the children ___ television all afternoon.",
+    "options": [
+     "will watch",
+     "watch",
+     "watched",
+     "will have been watching"
+    ],
+    "answer": 3,
+    "note": "all afternoon → süregelen iş."
+   }
+  ]
+ },
+ {
+  "id": "c2-08-past-perfect-progressive-questions",
+  "level": "C2",
+  "order": 8,
+  "title": "Had you been waiting long? — öncesini sormak",
+  "topic": "Past perfect progressive questions",
+  "canDo": "Geçmişteki bir andan önce sürmekte olan bir işi sorgulayabilirim.",
+  "covers": [
+   "TA.PASTPFPRG.INT.AFF"
+  ],
+  "concept": {
+   "summary": "Geçmişte bir olay olduğunda, ondan önce süren işi sormak için had + özne + been + V-ing kullanılır. Soruda had başa gelir; do, does ya da did asla kullanılmaz. Bu biçim süreyi sorar, işin bitip bitmediğini değil. Cevap genellikle for ya da since ile verilir.",
+   "formula": {
+    "left": "Had + özne + been + V-ing",
+    "right": "+ for / since …?"
+   },
+   "table": [
+    {
+     "form": "soru",
+     "be": "Had you been waiting?",
+     "example": "Had you been waiting long?"
+    },
+    {
+     "form": "olumsuz soru",
+     "be": "Hadn't they been …?",
+     "example": "Hadn't they been working together?"
+    },
+    {
+     "form": "wh- soru",
+     "be": "How long had …?",
+     "example": "How long had she been living there?"
+    },
+    {
+     "form": "kullanılmaz",
+     "be": "did",
+     "example": "not: Did you have been waiting?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Had you been waiting long when the train came?",
+    "tr": "Tren geldiğinde uzun süredir bekliyor muydun?",
+    "note": "Geçmişteki sürecin sorusu."
+   },
+   {
+    "en": "Had they been arguing before you arrived?",
+    "tr": "Sen gelmeden önce tartışıyorlar mıydı?",
+    "note": "Devrik soru biçimi."
+   },
+   {
+    "en": "How long had she been working there before the takeover?",
+    "tr": "Devralmadan önce orada ne zamandır çalışıyordu?",
+    "note": "How long ile süre sorusu."
+   },
+   {
+    "en": "Hadn't he been complaining about the noise for months?",
+    "tr": "Aylardır gürültüden şikâyet etmiyor muydu?",
+    "note": "Olumsuz soru, şaşkınlık tonu."
+   },
+   {
+    "en": "Had it been raining all night, or did it start at dawn?",
+    "tr": "Bütün gece mi yağmıştı, yoksa şafakta mı başladı?",
+    "note": "İki olasılığı karşılaştırma."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Did you have been waiting long?",
+    "right": "Had you been waiting long?",
+    "why": "Past perfect sorusunda had başa gelir, do kullanılmaz."
+   },
+   {
+    "wrong": "Had you been waited long?",
+    "right": "Had you been waiting long?",
+    "why": "been'den sonra -ing biçimi gelir."
+   },
+   {
+    "wrong": "How long had she been working there since three years?",
+    "right": "How long had she been working there for three years?",
+    "why": "Süre uzunluğu for ile verilir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ you been waiting long when I called?",
+    "options": [
+     "Were",
+     "Had",
+     "Have",
+     "Did"
+    ],
+    "answer": 1,
+    "note": "Past perfect sorusu → Had."
+   },
+   {
+    "type": "choice",
+    "text": "Had they been ___ together before the merger?",
+    "options": [
+     "to work",
+     "worked",
+     "working",
+     "work"
+    ],
+    "answer": 2,
+    "note": "been + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "How long ___ he been living abroad before he came back?",
+    "options": [
+     "has",
+     "did",
+     "was",
+     "had"
+    ],
+    "answer": 3,
+    "note": "Geçmişten öncesi → had."
+   },
+   {
+    "type": "gap",
+    "text": "___ it been snowing all night?",
+    "options": [
+     "Had",
+     "Did",
+     "Was"
+    ],
+    "answer": 0,
+    "note": "Had + been + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "Which question is correct? ___",
+    "options": [
+     "Were you had sleeping?",
+     "Had you been sleeping?",
+     "Did you have been sleeping?",
+     "Have you had been sleeping?"
+    ],
+    "answer": 1,
+    "note": "Yardımcı fiil had, başa gelir."
+   },
+   {
+    "type": "choice",
+    "text": "Hadn't she been ___ about that clause since May?",
+    "options": [
+     "to ask",
+     "asked",
+     "ask",
+     "asking"
+    ],
+    "answer": 3,
+    "note": "been + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "___ the machine been making that noise before it stopped?",
+    "options": [
+     "Has",
+     "Had",
+     "Was",
+     "Did"
+    ],
+    "answer": 1,
+    "note": "Durmadan önce süren iş."
+   },
+   {
+    "type": "gap",
+    "text": "How long had you been ___ for the results?",
+    "options": [
+     "waited",
+     "waiting",
+     "wait"
+    ],
+    "answer": 1,
+    "note": "been + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "Had they been living there ___ ten years when the flood came?",
+    "options": [
+     "from",
+     "for",
+     "since",
+     "during"
+    ],
+    "answer": 1,
+    "note": "Süre uzunluğu → for."
+   },
+   {
+    "type": "choice",
+    "text": "___ he been driving for six hours without a break?",
+    "options": [
+     "Did",
+     "Has",
+     "Was",
+     "Had"
+    ],
+    "answer": 3,
+    "note": "Geçmişteki bir andan öncesi."
+   }
+  ]
+ },
+ {
+  "id": "c2-09-future-perfect-questions",
+  "level": "C2",
+  "order": 9,
+  "title": "Will you have finished? — o zamana kadar biter mi",
+  "topic": "Future perfect questions",
+  "canDo": "Gelecekteki bir noktaya kadar bir işin tamamlanmış olup olmayacağını sorabilirim.",
+  "covers": [
+   "TA.FUTPF.INT.AFF"
+  ],
+  "concept": {
+   "summary": "Gelecekteki bir noktaya kadar işin bitmiş olup olmayacağını sormak için will özneden öne alınır: Will you have finished by Monday? Soru neredeyse her zaman bir bitiş noktasıyla gelir. finish, complete, arrive gibi sonuç bildiren fiillerle sürerli biçim kullanılmaz; bu sorularda düz will have + V3 yeterlidir.",
+   "formula": {
+    "left": "Will + özne + have + V3",
+    "right": "+ by + nokta?"
+   },
+   "table": [
+    {
+     "form": "soru",
+     "be": "Will you have finished?",
+     "example": "Will you have finished by six?"
+    },
+    {
+     "form": "olumsuz soru",
+     "be": "Won't they have left?",
+     "example": "Won't they have left by then?"
+    },
+    {
+     "form": "wh- soru",
+     "be": "How much will …?",
+     "example": "How much will we have paid by June?"
+    },
+    {
+     "form": "edilgen",
+     "be": "Will it have been done?",
+     "example": "Will the work have been done?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Will you have finished the draft by Monday?",
+    "tr": "Taslağı pazartesiye kadar bitirmiş olur musun?",
+    "note": "Tamamlanmışlık sorusu."
+   },
+   {
+    "en": "Won't they have left the country by then?",
+    "tr": "O zamana kadar ülkeden ayrılmış olmazlar mı?",
+    "note": "Olumsuz soru."
+   },
+   {
+    "en": "How much will we have spent by the end of the year?",
+    "tr": "Yıl sonuna kadar ne kadar harcamış olacağız?",
+    "note": "wh- soru biçimi."
+   },
+   {
+    "en": "Will the results have been published before the holiday?",
+    "tr": "Sonuçlar tatilden önce yayımlanmış olacak mı?",
+    "note": "Edilgen soru biçimi."
+   },
+   {
+    "en": "Will she have heard about the change by tomorrow morning?",
+    "tr": "Yarın sabaha kadar değişiklikten haberi olmuş olur mu?",
+    "note": "by + gelecek nokta."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Will you have been finished by Monday?",
+    "right": "Will you have finished by Monday?",
+    "why": "finish sonuç bildirir; burada süre biçimi gerekmez."
+   },
+   {
+    "wrong": "Do you will have finished by Monday?",
+    "right": "Will you have finished by Monday?",
+    "why": "Soruda will özneden öne alınır, do kullanılmaz."
+   },
+   {
+    "wrong": "Will you have finish by Monday?",
+    "right": "Will you have finished by Monday?",
+    "why": "have'den sonra üçüncü hâl gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ they have arrived by seven?",
+    "options": [
+     "Have",
+     "Are",
+     "Do",
+     "Will"
+    ],
+    "answer": 3,
+    "note": "Soruda will başa gelir."
+   },
+   {
+    "type": "choice",
+    "text": "Will you have ___ the forms before the deadline?",
+    "options": [
+     "completed",
+     "completing",
+     "to complete",
+     "complete"
+    ],
+    "answer": 0,
+    "note": "have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "How much ___ we have paid back by next June?",
+    "options": [
+     "do",
+     "have",
+     "will",
+     "are"
+    ],
+    "answer": 2,
+    "note": "wh- + will + özne + have."
+   },
+   {
+    "type": "gap",
+    "text": "___ the building have been finished by the autumn?",
+    "options": [
+     "Will",
+     "Does",
+     "Has"
+    ],
+    "answer": 0,
+    "note": "Edilgen soru → Will … have been + V3."
+   },
+   {
+    "type": "choice",
+    "text": "Which question about Friday is correct? ___",
+    "options": [
+     "Will you have been read it by Friday?",
+     "Do you will have read it by Friday?",
+     "Will you have read it by Friday?",
+     "Have you will read it by Friday?"
+    ],
+    "answer": 2,
+    "note": "will + özne + have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "___ she have heard the news by the time we meet?",
+    "options": [
+     "Is",
+     "Will",
+     "Does",
+     "Has"
+    ],
+    "answer": 1,
+    "note": "Gelecekte tamamlanmışlık sorusu."
+   },
+   {
+    "type": "choice",
+    "text": "Won't they ___ left by the time the guests arrive?",
+    "options": [
+     "has",
+     "had",
+     "having",
+     "have"
+    ],
+    "answer": 3,
+    "note": "Olumsuz soruda da have + V3."
+   },
+   {
+    "type": "gap",
+    "text": "Will the team have ___ the work before the money runs out?",
+    "options": [
+     "finishing",
+     "finish",
+     "finished"
+    ],
+    "answer": 2,
+    "note": "have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "___ we have saved enough by December?",
+    "options": [
+     "Do",
+     "Are",
+     "Will",
+     "Have"
+    ],
+    "answer": 2,
+    "note": "by December → gelecekte tamamlanmışlık."
+   },
+   {
+    "type": "choice",
+    "text": "Will the letters have ___ sent by this afternoon?",
+    "options": [
+     "being",
+     "be",
+     "been",
+     "was"
+    ],
+    "answer": 2,
+    "note": "Edilgen: have been + V3."
+   }
+  ]
+ },
+ {
+  "id": "c2-10-perfect-infinitive",
+  "level": "C2",
+  "order": 10,
+  "title": "to have done — daha önce olmuş iş",
+  "topic": "Perfect infinitive",
+  "canDo": "Bir işin ana fiilden önce olduğunu mastar biçimiyle gösterebilirim.",
+  "covers": [
+   "TO.to_have_done"
+  ],
+  "concept": {
+   "summary": "Mastar, ana fiilden önce olmuş bir işi gösterecekse mükemmel biçime geçer: to have done. seem, appear, claim, be said gibi fiillerden sonra çok sık kullanılır ve iki cümleyi tek cümlede toplar. Düz mastar aynı anda ya da sonra olan işi gösterir; fark yalnızca have ile kurulur.",
+   "formula": {
+    "left": "to have + V3",
+    "right": "= ana fiilden önce olmuş"
+   },
+   "table": [
+    {
+     "form": "önce olmuş",
+     "be": "to have + V3",
+     "example": "He seems to have left."
+    },
+    {
+     "form": "aynı anda",
+     "be": "to + yalın",
+     "example": "He seems to know."
+    },
+    {
+     "form": "edilgen",
+     "be": "to have been + V3",
+     "example": "It appears to have been moved."
+    },
+    {
+     "form": "olumsuz",
+     "be": "not to have + V3",
+     "example": "She claims not to have seen it."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "She appears to have misunderstood the question.",
+    "tr": "Soruyu yanlış anlamış görünüyor.",
+    "note": "Yanlış anlama, görünmeden önce oldu."
+   },
+   {
+    "en": "He claims to have paid the bill in March.",
+    "tr": "Faturayı martta ödediğini iddia ediyor.",
+    "note": "İddia şimdi, ödeme geçmişte."
+   },
+   {
+    "en": "The file seems to have been deleted by mistake.",
+    "tr": "Dosya yanlışlıkla silinmiş görünüyor.",
+    "note": "Edilgen: to have been + V3."
+   },
+   {
+    "en": "She is said to have refused three offers.",
+    "tr": "Üç teklifi reddettiği söyleniyor.",
+    "note": "be said to have + V3."
+   },
+   {
+    "en": "He claims not to have known about the change.",
+    "tr": "Değişiklikten haberi olmadığını iddia ediyor.",
+    "note": "Olumsuzda not, to'dan önce."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "She appears to misunderstood the question.",
+    "right": "She appears to have misunderstood the question.",
+    "why": "Önce olmuş işte to have + V3 gerekir."
+   },
+   {
+    "wrong": "He claims to have pay the bill.",
+    "right": "He claims to have paid the bill.",
+    "why": "have'den sonra üçüncü hâl gelir."
+   },
+   {
+    "wrong": "She claims to not have seen it.",
+    "right": "She claims not to have seen it.",
+    "why": "Olumsuzda not, to'dan önce gelir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "He seems ___ the wrong bus.",
+    "options": [
+     "taking",
+     "to took",
+     "to take",
+     "to have taken"
+    ],
+    "answer": 3,
+    "note": "Önce olmuş iş → to have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "She is said ___ in three languages.",
+    "options": [
+     "to written",
+     "to have write",
+     "writing",
+     "to write"
+    ],
+    "answer": 3,
+    "note": "Hâlâ süren yetenek → düz mastar."
+   },
+   {
+    "type": "choice",
+    "text": "The letter appears ___ opened before it reached us.",
+    "options": [
+     "to be",
+     "to have been",
+     "to been",
+     "being"
+    ],
+    "answer": 1,
+    "note": "Edilgen ve önce olmuş."
+   },
+   {
+    "type": "gap",
+    "text": "They claim ___ the money last year.",
+    "options": [
+     "to have returned",
+     "returning",
+     "to return"
+    ],
+    "answer": 0,
+    "note": "Geçen yıl → to have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "He claims ___ anything about the meeting.",
+    "options": [
+     "to have not hearing",
+     "not have heard",
+     "not to have heard",
+     "to not have heard"
+    ],
+    "answer": 2,
+    "note": "not, to'dan önce gelir."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence puts the event before the main verb? ___",
+    "options": [
+     "She seems to read it.",
+     "She seems to have read it.",
+     "She seems read it.",
+     "She seems reading it."
+    ],
+    "answer": 1,
+    "note": "to have + V3 önceliği gösterir."
+   },
+   {
+    "type": "choice",
+    "text": "The two firms are believed ___ before the sale.",
+    "options": [
+     "to merge",
+     "to merged",
+     "merging",
+     "to have merged"
+    ],
+    "answer": 3,
+    "note": "Satıştan önce olmuş iş."
+   },
+   {
+    "type": "gap",
+    "text": "He is thought ___ the country in April.",
+    "options": [
+     "leaving",
+     "to have left",
+     "to leave"
+    ],
+    "answer": 1,
+    "note": "Nisanda → to have left."
+   },
+   {
+    "type": "choice",
+    "text": "The painting is known ___ twice in the last century.",
+    "options": [
+     "to be sold",
+     "to sold",
+     "to have been sold",
+     "selling"
+    ],
+    "answer": 2,
+    "note": "Edilgen ve önce olmuş."
+   },
+   {
+    "type": "choice",
+    "text": "She pretended ___ the question.",
+    "options": [
+     "not to have heard",
+     "not hearing to",
+     "to not have heard",
+     "to have not heard"
+    ],
+    "answer": 0,
+    "note": "Olumsuz mükemmel mastar."
+   }
+  ]
+ },
+ {
+  "id": "c2-11-having-been-done",
+  "level": "C2",
+  "order": 11,
+  "title": "Having been rejected — iki cümleyi tek cümlede toplamak",
+  "topic": "Perfect participle clauses",
+  "canDo": "Sırayı ve nedeni koruyarak iki cümleyi tek cümlede sıkıştırabilirim.",
+  "covers": [
+   "VG.having_been_VN"
+  ],
+  "concept": {
+   "summary": "Having + V3 ile başlayan cümlecik, ana cümledeki işten önce bitmiş bir işi gösterir; edilgen anlamda having been + V3 olur. Akademik yazıda iki cümleyi tek cümlede toplamanın başlıca aracıdır. Kural: iki cümleciğin öznesi aynı olmalıdır; farklıysa cümle yanlış kişiye bağlanır ve anlam bozulur.",
+   "formula": {
+    "left": "Having + V3",
+    "right": "Having been + V3 (edilgen)"
+   },
+   "table": [
+    {
+     "form": "etken",
+     "be": "Having read …",
+     "example": "Having read the report, they postponed it."
+    },
+    {
+     "form": "edilgen",
+     "be": "Having been rejected …",
+     "example": "Having been rejected twice, he stopped."
+    },
+    {
+     "form": "aynı anda",
+     "be": "Being …",
+     "example": "Being new, she asked a lot of questions."
+    },
+    {
+     "form": "kural",
+     "be": "özne aynı olmalı",
+     "example": "not: Having read it, the room was quiet."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Having been rejected twice, he stopped applying.",
+    "tr": "İki kez reddedildikten sonra başvurmayı bıraktı.",
+    "note": "Edilgen ve önce olmuş."
+   },
+   {
+    "en": "Having read the report, the committee postponed the decision.",
+    "tr": "Komite raporu okuduktan sonra kararı erteledi.",
+    "note": "İki cümle tek cümlede."
+   },
+   {
+    "en": "Having been warned about the road, we took the long way.",
+    "tr": "Yol konusunda uyarıldığımız için uzun yoldan gittik.",
+    "note": "Neden bildiren kullanım."
+   },
+   {
+    "en": "Having lost the first game, the team played more carefully.",
+    "tr": "İlk maçı kaybettikten sonra takım daha dikkatli oynadı.",
+    "note": "Sıra: önce kaybetti, sonra oynadı."
+   },
+   {
+    "en": "Having been told nothing, the staff learned it from the news.",
+    "tr": "Kendilerine hiçbir şey söylenmediği için personel haberi gazeteden öğrendi.",
+    "note": "Edilgen, neden bildiriyor."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Being rejected twice, he stopped applying.",
+    "right": "Having been rejected twice, he stopped applying.",
+    "why": "İş ana fiilden önce bittiyse having been kullanılır."
+   },
+   {
+    "wrong": "Having read the report, the decision was postponed.",
+    "right": "Having read the report, the committee postponed the decision.",
+    "why": "İki cümleciğin öznesi aynı olmalı; raporu karar okumadı."
+   },
+   {
+    "wrong": "Having been finish the work, we went home.",
+    "right": "Having finished the work, we went home.",
+    "why": "İşi biz yaptık: etken biçim gerekir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ the letter, she put it in her pocket.",
+    "options": [
+     "Read having",
+     "Being read",
+     "Having read",
+     "Having been read"
+    ],
+    "answer": 2,
+    "note": "Mektubu o okudu → etken."
+   },
+   {
+    "type": "choice",
+    "text": "___ twice about the risk, they went ahead anyway.",
+    "options": [
+     "Warned having",
+     "Being warn",
+     "Having warned",
+     "Having been warned"
+    ],
+    "answer": 3,
+    "note": "Onlar uyarıldı → edilgen."
+   },
+   {
+    "type": "choice",
+    "text": "Having ___ the exam, he took a week off.",
+    "options": [
+     "pass",
+     "passing",
+     "passed",
+     "been passed"
+    ],
+    "answer": 2,
+    "note": "Having + V3."
+   },
+   {
+    "type": "gap",
+    "text": "___ nothing for two days, the children were very hungry.",
+    "options": [
+     "Being eaten",
+     "Having been eaten",
+     "Having eaten"
+    ],
+    "answer": 2,
+    "note": "Çocuklar yedi → etken."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence has the same subject in both parts? ___",
+    "options": [
+     "Having checked the figures, it was signed.",
+     "Having checked the figures, the auditor signed the report.",
+     "Having checked the figures, the report was signed.",
+     "Having checked the figures, signing happened."
+    ],
+    "answer": 1,
+    "note": "Rakamları denetçi denetledi, raporu da o imzaladı."
+   },
+   {
+    "type": "choice",
+    "text": "___ from the list, she asked for an explanation.",
+    "options": [
+     "Having been removed",
+     "Being remove",
+     "Having removed",
+     "Removed having"
+    ],
+    "answer": 0,
+    "note": "O listeden çıkarıldı → edilgen."
+   },
+   {
+    "type": "choice",
+    "text": "Having ___ the money, they closed the account.",
+    "options": [
+     "withdrawn",
+     "withdraw",
+     "withdrawing",
+     "been withdrawn"
+    ],
+    "answer": 0,
+    "note": "Parayı onlar çekti → etken."
+   },
+   {
+    "type": "gap",
+    "text": "___ for the post, he waited three weeks for an answer.",
+    "options": [
+     "Having applied",
+     "Having been applied",
+     "Being applied"
+    ],
+    "answer": 0,
+    "note": "Başvuran o → etken."
+   },
+   {
+    "type": "choice",
+    "text": "___ so often, the story is now hard to check.",
+    "options": [
+     "Having been repeated",
+     "Repeated having",
+     "Being repeat",
+     "Having repeated"
+    ],
+    "answer": 0,
+    "note": "Hikâye tekrarlandı → edilgen."
+   },
+   {
+    "type": "choice",
+    "text": "Having ___ the door, she realized she had no key.",
+    "options": [
+     "closed",
+     "close",
+     "been closed",
+     "closing"
+    ],
+    "answer": 0,
+    "note": "Kapıyı o kapattı → etken."
+   }
+  ]
+ },
+ {
+  "id": "c2-12-so-as-to",
+  "level": "C2",
+  "order": 12,
+  "title": "so as to — amacı resmî biçimde bildirmek",
+  "topic": "so as to / so as not to",
+  "canDo": "Bir eylemin amacını resmî üslupta, özellikle olumsuz amaçlarda doğru kurabilirim.",
+  "covers": [
+   "TO.so_as_to_do"
+  ],
+  "concept": {
+   "summary": "so as to, in order to ile aynı işi görür ve düz to'dan daha resmîdir. Asıl değeri olumsuz amaçtadır: \"-memek için\" demek için so as not to kullanılır, çünkü düz mastar bu anlamı taşıyamaz. not her zaman to'dan önce gelir. Amaç bildiren yapının öznesi ana cümlenin öznesiyle aynıdır.",
+   "formula": {
+    "left": "so as to + yalın fiil",
+    "right": "so as not to + yalın fiil"
+   },
+   "table": [
+    {
+     "form": "amaç",
+     "be": "so as to",
+     "example": "He left early so as to avoid the traffic."
+    },
+    {
+     "form": "olumsuz amaç",
+     "be": "so as not to",
+     "example": "She spoke quietly so as not to wake him."
+    },
+    {
+     "form": "eşdeğeri",
+     "be": "in order (not) to",
+     "example": "in order not to wake him"
+    },
+    {
+     "form": "günlük biçim",
+     "be": "to + fiil",
+     "example": "He left early to avoid the traffic."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "He left early so as to avoid the traffic.",
+    "tr": "Trafiğe yakalanmamak için erken çıktı.",
+    "note": "Amaç → so as to."
+   },
+   {
+    "en": "She spoke quietly so as not to disturb anyone.",
+    "tr": "Kimseyi rahatsız etmemek için alçak sesle konuştu.",
+    "note": "Olumsuzda not, to'dan önce."
+   },
+   {
+    "en": "The figures were rounded so as to simplify the table.",
+    "tr": "Tabloyu sadeleştirmek için rakamlar yuvarlandı.",
+    "note": "Resmî yazı dili."
+   },
+   {
+    "en": "We took separate cars so as not to arrive together.",
+    "tr": "Birlikte varmamak için ayrı arabalarla gittik.",
+    "note": "Olumsuz amaç."
+   },
+   {
+    "en": "He kept his voice flat so as to give nothing away.",
+    "tr": "Hiçbir şey belli etmemek için sesini düz tuttu.",
+    "note": "give away = belli etmek."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "He left early so as to not miss the train.",
+    "right": "He left early so as not to miss the train.",
+    "why": "not, to'dan önce gelir."
+   },
+   {
+    "wrong": "She spoke quietly so as she didn't wake him.",
+    "right": "She spoke quietly so as not to wake him.",
+    "why": "so as'tan sonra cümle değil mastar gelir."
+   },
+   {
+    "wrong": "He left early so as avoid the traffic.",
+    "right": "He left early so as to avoid the traffic.",
+    "why": "so as ile fiil arasında to düşmez."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "She took the back road so as ___ the roadworks.",
+    "options": [
+     "for avoid",
+     "to avoid",
+     "avoiding",
+     "avoid"
+    ],
+    "answer": 1,
+    "note": "so as + to + fiil."
+   },
+   {
+    "type": "choice",
+    "text": "He closed the door quietly so as ___ the baby.",
+    "options": [
+     "to not wake",
+     "not to wake",
+     "to wake not",
+     "not waking"
+    ],
+    "answer": 1,
+    "note": "Olumsuz amaç → so as not to."
+   },
+   {
+    "type": "choice",
+    "text": "The notes were shortened so as ___ the reader time.",
+    "options": [
+     "saving",
+     "to save",
+     "save",
+     "for saving"
+    ],
+    "answer": 1,
+    "note": "Amaç mastarı."
+   },
+   {
+    "type": "gap",
+    "text": "We left in two groups so as ___ attention.",
+    "options": [
+     "to not attract",
+     "not to attract",
+     "not attracting"
+    ],
+    "answer": 1,
+    "note": "not, to'dan önce."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence puts not in the right place? ___",
+    "options": [
+     "He whispered so as not being heard.",
+     "He whispered so as he was not heard.",
+     "He whispered so as to not be heard.",
+     "He whispered so as not to be heard."
+    ],
+    "answer": 3,
+    "note": "so as not to + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "The meeting was moved so as ___ everyone to attend.",
+    "options": [
+     "for allow",
+     "to allow",
+     "allowing",
+     "allow"
+    ],
+    "answer": 1,
+    "note": "so as to + fiil."
+   },
+   {
+    "type": "choice",
+    "text": "She wrote it down so as ___ it.",
+    "options": [
+     "to not forget",
+     "not forgetting",
+     "not to forget",
+     "to forget not"
+    ],
+    "answer": 2,
+    "note": "Olumsuz amaç."
+   },
+   {
+    "type": "gap",
+    "text": "They arrived separately so as ___ suspicion.",
+    "options": [
+     "to not raise",
+     "not to raise",
+     "not raising"
+    ],
+    "answer": 1,
+    "note": "so as not to + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "In which register does so as to belong? In ___ .",
+    "options": [
+     "children's books",
+     "street signs",
+     "formal writing",
+     "text messages"
+    ],
+    "answer": 2,
+    "note": "so as to, düz to'dan daha resmîdir."
+   },
+   {
+    "type": "choice",
+    "text": "The prices were fixed so as ___ small shops.",
+    "options": [
+     "to protect",
+     "protecting",
+     "for protect",
+     "protect"
+    ],
+    "answer": 0,
+    "note": "Amaç mastarı."
+   }
+  ]
+ },
+ {
+  "id": "c2-13-may-as-well",
+  "level": "C2",
+  "order": 13,
+  "title": "may as well — daha iyi seçenek yoksa",
+  "topic": "may as well / might as well",
+  "canDo": "Daha iyi bir seçenek olmadığı için alınan kararı doğal biçimde dile getirebilirim.",
+  "covers": [
+   "MD.may_as_well.AFF"
+  ],
+  "concept": {
+   "summary": "may as well ve might as well \"bari, madem öyle\" der: konuşmacı bu seçeneği coşkuyla değil, daha iyisi olmadığı için önerir. Arkasından her zaman yalın fiil gelir. İki biçim arasında anlam farkı yok denecek kadar azdır; might as well biraz daha yaygındır. Bu kalıp gönüllülük değil, kabullenme bildirir.",
+   "formula": {
+    "left": "may / might as well",
+    "right": "+ yalın fiil"
+   },
+   "table": [
+    {
+     "form": "öneri",
+     "be": "We may as well start.",
+     "example": "Nobody else is coming."
+    },
+    {
+     "form": "kabulleniş",
+     "be": "I might as well walk.",
+     "example": "The bus is not running."
+    },
+    {
+     "form": "geçmiş",
+     "be": "might as well have + V3",
+     "example": "We might as well have stayed at home."
+    },
+    {
+     "form": "ton",
+     "be": "coşku değil, kabulleniş",
+     "example": "Bari yapalım."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "The train is delayed, so we may as well have a coffee.",
+    "tr": "Tren rötarlı, bari bir kahve içelim.",
+    "note": "Daha iyi seçenek yok."
+   },
+   {
+    "en": "Nobody else has come, so we might as well begin.",
+    "tr": "Başka kimse gelmedi, bari başlayalım.",
+    "note": "Kabulleniş tonu."
+   },
+   {
+    "en": "If you are going that way, you may as well take the parcel.",
+    "tr": "Madem o tarafa gidiyorsun, bari paketi de götür.",
+    "note": "Zaten yapılacak bir işe ekleme."
+   },
+   {
+    "en": "We might as well have stayed at home for all the good it did.",
+    "tr": "Bu kadar faydası olduysa bari evde kalsaydık.",
+    "note": "Geçmiş için: might as well have + V3."
+   },
+   {
+    "en": "The shop shuts in ten minutes; I may as well wait until tomorrow.",
+    "tr": "Dükkân on dakikaya kapanıyor; bari yarına kadar bekleyeyim.",
+    "note": "Zorunlu kabulleniş."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "We may as well to start now.",
+    "right": "We may as well start now.",
+    "why": "Kalıptan sonra yalın fiil gelir."
+   },
+   {
+    "wrong": "We may as well starting now.",
+    "right": "We may as well start now.",
+    "why": "-ing biçimi bu kalıpta kullanılmaz."
+   },
+   {
+    "wrong": "We may as well stayed at home.",
+    "right": "We might as well have stayed at home.",
+    "why": "Geçmişe bakan kullanımda have + V3 gerekir."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "The last bus has gone, so we may as well ___ .",
+    "options": [
+     "walking",
+     "walked",
+     "to walk",
+     "walk"
+    ],
+    "answer": 3,
+    "note": "Kalıptan sonra yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "Nobody is answering; you might as well ___ a message.",
+    "options": [
+     "leave",
+     "to leave",
+     "leaving",
+     "left"
+    ],
+    "answer": 0,
+    "note": "might as well + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "We ___ as well tell her the truth now.",
+    "options": [
+     "have",
+     "may",
+     "do",
+     "are"
+    ],
+    "answer": 1,
+    "note": "Kalıp: may as well."
+   },
+   {
+    "type": "gap",
+    "text": "The meeting is over, so I might as well ___ home.",
+    "options": [
+     "going",
+     "to go",
+     "go"
+    ],
+    "answer": 2,
+    "note": "Yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "What does may as well express? It expresses ___ .",
+    "options": [
+     "strong obligation",
+     "acceptance rather than enthusiasm",
+     "a polite refusal",
+     "a firm promise"
+    ],
+    "answer": 1,
+    "note": "Kalıp kabullenme bildirir."
+   },
+   {
+    "type": "choice",
+    "text": "Since you are up, you may as well ___ the kettle on.",
+    "options": [
+     "puts",
+     "putting",
+     "to put",
+     "put"
+    ],
+    "answer": 3,
+    "note": "Zaten yapılacak işe ekleme."
+   },
+   {
+    "type": "choice",
+    "text": "We might as well ___ the tickets last week; the concert is sold out.",
+    "options": [
+     "bought",
+     "buying",
+     "have bought",
+     "buy"
+    ],
+    "answer": 2,
+    "note": "Geçmişe bakış → have + V3."
+   },
+   {
+    "type": "gap",
+    "text": "It is raining anyway, so we might as well ___ inside.",
+    "options": [
+     "to stay",
+     "staying",
+     "stay"
+    ],
+    "answer": 2,
+    "note": "Yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "Nobody reads the second page, so we may as well ___ it.",
+    "options": [
+     "cuts",
+     "cut",
+     "cutting",
+     "to cut"
+    ],
+    "answer": 1,
+    "note": "Kabullenerek verilen karar."
+   },
+   {
+    "type": "choice",
+    "text": "The file is open; you may as well ___ the change now.",
+    "options": [
+     "made",
+     "make",
+     "to make",
+     "making"
+    ],
+    "answer": 1,
+    "note": "Kalıptan sonra yalın fiil."
+   }
+  ]
+ },
+ {
+  "id": "c2-14-ought-not-to",
+  "level": "C2",
+  "order": 14,
+  "title": "ought not to — kurala dayalı tavsiye",
+  "topic": "ought to, negative and interrogative",
+  "canDo": "Tavsiyeyi kişisel görüşten çok kurala dayandırarak, olumsuz ve soru biçimlerinde kurabilirim.",
+  "covers": [
+   "MD.ought_to.NEG",
+   "MD.ought_to.INT.NEG"
+  ],
+  "concept": {
+   "summary": "ought to should ile aynı anlamdadır ama biraz daha nesnel durur: konuşmacı kendi görüşünü değil, dışarıdaki bir kuralı ya da genel kabulü işaret eder. Olumsuzu ought not to olur ve to düşmez; bu, İngilizcedeki tek kip artığıdır ve en sık yapılan yanlış tam burada olur. Olumsuz soru biçimi Ought you not to …? çok resmîdir; günlük dilde yerini Shouldn't you …? alır.",
+   "formula": {
+    "left": "ought not to + yalın fiil",
+    "right": "Ought + özne + not to …?"
+   },
+   "table": [
+    {
+     "form": "olumlu",
+     "be": "ought to",
+     "example": "You ought to check the terms."
+    },
+    {
+     "form": "olumsuz",
+     "be": "ought not to",
+     "example": "You ought not to worry."
+    },
+    {
+     "form": "geçmiş",
+     "be": "ought not to have + V3",
+     "example": "They ought not to have published it."
+    },
+    {
+     "form": "olumsuz soru",
+     "be": "Ought you not to …?",
+     "example": "Ought we not to ask first?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "You ought to check the terms before signing.",
+    "tr": "İmzalamadan önce koşullara bakmalısın.",
+    "note": "Nesnel tavsiye."
+   },
+   {
+    "en": "They ought not to have published those figures.",
+    "tr": "O rakamları yayımlamamaları gerekirdi.",
+    "note": "ought not to have + V3."
+   },
+   {
+    "en": "You ought not to worry about a form that nobody reads.",
+    "tr": "Kimsenin okumadığı bir form için endişelenmemelisin.",
+    "note": "Olumsuzda to korunur."
+   },
+   {
+    "en": "Ought we not to ask the owner first?",
+    "tr": "Önce sahibine sormamız gerekmez mi?",
+    "note": "Çok resmî olumsuz soru."
+   },
+   {
+    "en": "Shouldn't we ask the owner first?",
+    "tr": "Önce sahibine sormamız gerekmez mi?",
+    "note": "Aynı anlamın günlük biçimi."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "You oughtn't worry about it.",
+    "right": "You ought not to worry about it.",
+    "why": "ought'un olumsuzunda to korunur."
+   },
+   {
+    "wrong": "You ought not to published those figures.",
+    "right": "You ought not to have published those figures.",
+    "why": "Geçmişe dair eleştiride have + V3 gerekir."
+   },
+   {
+    "wrong": "Do you ought to ask first?",
+    "right": "Ought you to ask first?",
+    "why": "ought bir kiptir; soruda do kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "You ought ___ to leave the door unlocked.",
+    "options": [
+     "don't",
+     "no",
+     "to not",
+     "not"
+    ],
+    "answer": 3,
+    "note": "ought not to + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "They ought not to ___ the results before the check.",
+    "options": [
+     "announce",
+     "announced",
+     "announcing",
+     "have announced"
+    ],
+    "answer": 3,
+    "note": "Geçmişe dair eleştiri → have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "___ we not to warn them first?",
+    "options": [
+     "Do",
+     "Should to",
+     "Ought",
+     "Are"
+    ],
+    "answer": 2,
+    "note": "Resmî olumsuz soru → Ought we not to …?"
+   },
+   {
+    "type": "gap",
+    "text": "You ought not ___ sign anything today.",
+    "options": [
+     "that",
+     "to",
+     "for"
+    ],
+    "answer": 1,
+    "note": "Olumsuzda to düşmez."
+   },
+   {
+    "type": "choice",
+    "text": "Which is the everyday form of \"Ought you not to tell her?\" It is ___ .",
+    "options": [
+     "Don't you ought to tell her?",
+     "Shouldn't you tell her?",
+     "Ought not you to tell her?",
+     "Oughtn't you telling her?"
+    ],
+    "answer": 1,
+    "note": "Günlük dilde Shouldn't you …?"
+   },
+   {
+    "type": "choice",
+    "text": "He ought ___ to have taken the car without asking.",
+    "options": [
+     "don't",
+     "not",
+     "to not",
+     "no"
+    ],
+    "answer": 1,
+    "note": "ought not to have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "___ the committee not to have seen the letter first?",
+    "options": [
+     "Ought",
+     "Does",
+     "Did",
+     "Has"
+    ],
+    "answer": 0,
+    "note": "Kip sorusunda yardımcı fiil eklenmez."
+   },
+   {
+    "type": "gap",
+    "text": "We ought not to ___ so long before answering.",
+    "options": [
+     "have waited",
+     "waiting",
+     "waited"
+    ],
+    "answer": 0,
+    "note": "Geçmiş eleştiri."
+   },
+   {
+    "type": "choice",
+    "text": "Why is ought to used instead of should? Because it sounds ___ .",
+    "options": [
+     "more objective, based on a rule",
+     "less certain",
+     "more casual",
+     "friendlier"
+    ],
+    "answer": 0,
+    "note": "ought to kurala dayalı ton taşır."
+   },
+   {
+    "type": "choice",
+    "text": "You ought not to ___ about it in front of the staff.",
+    "options": [
+     "talk",
+     "talked",
+     "talking",
+     "to talk"
+    ],
+    "answer": 0,
+    "note": "to'dan sonra yalın fiil."
+   }
+  ]
+ },
+ {
+  "id": "c2-15-dare-statements",
+  "level": "C2",
+  "order": 15,
+  "title": "dare — cesaret etmenin iki çekimi",
+  "topic": "dare in statements",
+  "canDo": "dare fiilini hem kip hem gerçek fiil olarak doğru çekebilirim.",
+  "covers": [
+   "MD.dare.AFF",
+   "MD.dare.NEG"
+  ],
+  "concept": {
+   "summary": "dare düz cümlede de iki türlü çekilir. Gerçek fiil gibi çekilirse do/does/did alır ve arkasından to gelir: He didn't dare to say anything. Kip gibi çekilirse yardımcı fiil almaz, olumsuzu daren't olur ve arkasından yalın fiil gelir: He daren't say anything. Kip çekimi bugün çoğunlukla olumsuz cümlede kalmıştır; olumlu kip çekimi (I dare say) kalıplaşmıştır.",
+   "formula": {
+    "left": "didn't dare to + fiil",
+    "right": "daren't + yalın fiil"
+   },
+   "table": [
+    {
+     "form": "gerçek fiil",
+     "be": "didn't dare to",
+     "example": "He didn't dare to contradict her."
+    },
+    {
+     "form": "kip",
+     "be": "daren't",
+     "example": "He daren't contradict her."
+    },
+    {
+     "form": "olumlu kalıp",
+     "be": "I dare say",
+     "example": "I dare say you are right."
+    },
+    {
+     "form": "geçmiş kip",
+     "be": "dared not",
+     "example": "She dared not look up."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "He didn't dare to contradict his manager.",
+    "tr": "Müdürüne karşı çıkmaya cesaret edemedi.",
+    "note": "Gerçek fiil gibi çekildi."
+   },
+   {
+    "en": "I daren't tell her what the doctor said.",
+    "tr": "Doktorun ne dediğini ona söylemeye cesaret edemiyorum.",
+    "note": "Kip gibi çekildi: yalın fiil."
+   },
+   {
+    "en": "She dared not look at the results.",
+    "tr": "Sonuçlara bakmaya cesaret edemedi.",
+    "note": "Geçmişte kip çekimi."
+   },
+   {
+    "en": "I dare say the price will go up again.",
+    "tr": "Sanırım fiyat yine artacak.",
+    "note": "Kalıplaşmış olumlu kullanım."
+   },
+   {
+    "en": "Nobody dared to ask what the delay had cost.",
+    "tr": "Gecikmenin neye mal olduğunu kimse sormaya cesaret edemedi.",
+    "note": "Gerçek fiil çekimi, olumlu."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "He didn't dare contradicting his manager.",
+    "right": "He didn't dare to contradict his manager.",
+    "why": "Gerçek fiil olarak çekilince to'lu biçim gelir."
+   },
+   {
+    "wrong": "I daren't to tell her.",
+    "right": "I daren't tell her.",
+    "why": "Kip çekiminde to gelmez."
+   },
+   {
+    "wrong": "She didn't dared to look up.",
+    "right": "She didn't dare to look up.",
+    "why": "Geçmişlik did'e geçtiği için dare yalın kalır."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "He didn't dare ___ anything in front of the others.",
+    "options": [
+     "to say",
+     "saying",
+     "said",
+     "says"
+    ],
+    "answer": 0,
+    "note": "do ile çekim → to + fiil."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ tell him what really happened.",
+    "options": [
+     "daren't to",
+     "daren't",
+     "don't dare to not",
+     "not dare"
+    ],
+    "answer": 1,
+    "note": "Kip çekimi → daren't + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "She dared not ___ at the examiner.",
+    "options": [
+     "look",
+     "looking",
+     "to look",
+     "looked"
+    ],
+    "answer": 0,
+    "note": "Kip çekiminde yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "Nobody dared ___ the manager about the missing file.",
+    "options": [
+     "to ask",
+     "asking",
+     "asked"
+    ],
+    "answer": 0,
+    "note": "Gerçek fiil çekimi."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ say you have heard this before.",
+    "options": [
+     "dare",
+     "dared to",
+     "daring",
+     "dares"
+    ],
+    "answer": 0,
+    "note": "Kalıp: I dare say."
+   },
+   {
+    "type": "choice",
+    "text": "They didn't ___ to complain about the noise.",
+    "options": [
+     "daring",
+     "dares",
+     "dare",
+     "dared"
+    ],
+    "answer": 2,
+    "note": "didn't + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ go back to the house alone.",
+    "options": [
+     "daren't to",
+     "not dares",
+     "daren't",
+     "dare not to"
+    ],
+    "answer": 2,
+    "note": "daren't + yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "She did not dare ___ the subject again.",
+    "options": [
+     "raised",
+     "to raise",
+     "raising"
+    ],
+    "answer": 1,
+    "note": "did not dare to + fiil."
+   },
+   {
+    "type": "choice",
+    "text": "Which sentence treats dare as a modal? ___",
+    "options": [
+     "He didn't dare to speak.",
+     "He did not dare to speak.",
+     "He daren't speak.",
+     "He doesn't dare to speak."
+    ],
+    "answer": 2,
+    "note": "Kip çekiminde yardımcı fiil ve to yoktur."
+   },
+   {
+    "type": "choice",
+    "text": "The children dared not ___ a sound.",
+    "options": [
+     "to make",
+     "making",
+     "made",
+     "make"
+    ],
+    "answer": 3,
+    "note": "dared not + yalın fiil."
+   }
+  ]
+ },
+ {
+  "id": "c2-16-couldnt-you",
+  "level": "C2",
+  "order": 16,
+  "title": "Couldn't you have …? — sitem sorusu",
+  "topic": "Negative questions with could",
+  "canDo": "Bir şeyin neden yapılmadığını, suçlamadan ama sitemi belli ederek sorabilirim.",
+  "covers": [
+   "MD.could.INT.NEG"
+  ],
+  "concept": {
+   "summary": "could ile kurulan olumsuz soru bilgi istemez; yapılabilecekken yapılmamış bir şeye sitem bildirir. Geçmişe bakıyorsa couldn't … have + V3 biçimini alır. Ton önemlidir: aynı cümle yumuşak bir serzeniş de olabilir, sert bir suçlama da. Bu yüzden resmî yazışmada değil, konuşmada ve kişisel yazışmada geçer.",
+   "formula": {
+    "left": "Couldn't + özne + have + V3?",
+    "right": "= yapabilirdin, neden yapmadın"
+   },
+   "table": [
+    {
+     "form": "geçmişe sitem",
+     "be": "Couldn't you have …?",
+     "example": "Couldn't you have told me?"
+    },
+    {
+     "form": "şimdiye sitem",
+     "be": "Can't you …?",
+     "example": "Can't you just call her?"
+    },
+    {
+     "form": "yumuşak rica",
+     "be": "Couldn't you …?",
+     "example": "Couldn't you stay a little longer?"
+    },
+    {
+     "form": "resmî değil",
+     "be": "konuşma dili",
+     "example": "Rapora yazılmaz."
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "Couldn't you have told me earlier?",
+    "tr": "Bana daha erken söyleyemez miydin?",
+    "note": "Sitem bildiren olumsuz soru."
+   },
+   {
+    "en": "Couldn't they have warned the neighbors first?",
+    "tr": "Önce komşuları uyaramazlar mıydı?",
+    "note": "Geçmişe bakan sitem."
+   },
+   {
+    "en": "Couldn't you stay until Sunday?",
+    "tr": "Pazara kadar kalamaz mısın?",
+    "note": "Yumuşak rica; sitem yok."
+   },
+   {
+    "en": "Couldn't we have done this last week?",
+    "tr": "Bunu geçen hafta yapamaz mıydık?",
+    "note": "Kendini de içine katan sitem."
+   },
+   {
+    "en": "Can't you just send her a message?",
+    "tr": "Ona bir mesaj atsan olmaz mı?",
+    "note": "Bugüne dair sabırsızlık."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "Couldn't you told me earlier?",
+    "right": "Couldn't you have told me earlier?",
+    "why": "Geçmişe bakan sitemde have + V3 gerekir."
+   },
+   {
+    "wrong": "Couldn't you have tell me earlier?",
+    "right": "Couldn't you have told me earlier?",
+    "why": "have'den sonra üçüncü hâl gelir."
+   },
+   {
+    "wrong": "Don't you could have told me?",
+    "right": "Couldn't you have told me?",
+    "why": "Kip sorusunda do kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "___ you have said something at the meeting?",
+    "options": [
+     "Didn't could",
+     "Couldn't",
+     "Don't",
+     "Aren't"
+    ],
+    "answer": 1,
+    "note": "Kip sorusu → Couldn't."
+   },
+   {
+    "type": "choice",
+    "text": "Couldn't they have ___ us before changing the date?",
+    "options": [
+     "ask",
+     "asked",
+     "asking",
+     "to ask"
+    ],
+    "answer": 1,
+    "note": "have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "Couldn't you ___ a little longer? The train is not until eight.",
+    "options": [
+     "staying",
+     "stayed",
+     "to stay",
+     "stay"
+    ],
+    "answer": 3,
+    "note": "Bugüne dair rica → yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "Couldn't she ___ me the file yesterday?",
+    "options": [
+     "have sent",
+     "sent",
+     "send"
+    ],
+    "answer": 0,
+    "note": "Geçmişe sitem → have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "What does \"Couldn't you have called?\" usually express? It expresses ___ .",
+    "options": [
+     "mild reproach",
+     "a threat",
+     "an apology",
+     "a formal request"
+    ],
+    "answer": 0,
+    "note": "Yumuşak serzeniş bildirir."
+   },
+   {
+    "type": "choice",
+    "text": "___ we have taken the earlier flight?",
+    "options": [
+     "Didn't could",
+     "Couldn't",
+     "Don't",
+     "Haven't could"
+    ],
+    "answer": 1,
+    "note": "Couldn't we have + V3."
+   },
+   {
+    "type": "choice",
+    "text": "Couldn't he have ___ the money before the shop closed?",
+    "options": [
+     "to pay",
+     "pay",
+     "paid",
+     "paying"
+    ],
+    "answer": 2,
+    "note": "have + V3."
+   },
+   {
+    "type": "gap",
+    "text": "___ you just ring the bell?",
+    "options": [
+     "Don't can",
+     "Aren't can",
+     "Can't"
+    ],
+    "answer": 2,
+    "note": "Bugüne dair sabırsızlık → Can't you …?"
+   },
+   {
+    "type": "choice",
+    "text": "In which text is this question at home? In ___ .",
+    "options": [
+     "a conversation between friends",
+     "a public notice",
+     "a scientific abstract",
+     "a legal contract"
+    ],
+    "answer": 0,
+    "note": "Sitem sorusu konuşma diline aittir."
+   },
+   {
+    "type": "choice",
+    "text": "Couldn't the office have ___ us a week's notice?",
+    "options": [
+     "give",
+     "to give",
+     "giving",
+     "given"
+    ],
+    "answer": 3,
+    "note": "have + V3."
+   }
+  ]
+ },
+ {
+  "id": "c2-17-the-other-others",
+  "level": "C2",
+  "order": 17,
+  "title": "the other, others, the others",
+  "topic": "other / another",
+  "canDo": "Bir grubun parçalarına karışıklığa yer bırakmadan gönderme yapabilirim.",
+  "covers": [
+   "P.the_other.others"
+  ],
+  "concept": {
+   "summary": "Belirlilik bu kelimede her şeyi değiştirir. the other geriye kalan tek şeydir; others belirsiz \"başkaları\"dır; the others belirli bir grubun geri kalanının tamamıdır. another ise \"bir tane daha\" demektir ve tekildir. Seçerken tek soru şu: grup belli mi ve geriye kaç şey kalıyor?",
+   "formula": {
+    "left": "the other (tek, belirli)",
+    "right": "others (belirsiz) / the others (kalan hepsi)"
+   },
+   "table": [
+    {
+     "form": "ikiden kalan",
+     "be": "the other",
+     "example": "one is a doctor, the other is a pilot"
+    },
+    {
+     "form": "belirsiz",
+     "be": "others",
+     "example": "some agreed; others did not"
+    },
+    {
+     "form": "kalanın tamamı",
+     "be": "the others",
+     "example": "three stayed; the others left"
+    },
+    {
+     "form": "bir tane daha",
+     "be": "another",
+     "example": "do you have another?"
+    }
+   ]
+  },
+  "examples": [
+   {
+    "en": "I have two brothers: one is a doctor, the other is a pilot.",
+    "tr": "İki erkek kardeşim var: biri doktor, diğeri pilot.",
+    "note": "Geriye tek kişi kaldı → the other."
+   },
+   {
+    "en": "Some people welcomed the plan; others opposed it.",
+    "tr": "Bazıları planı olumlu karşıladı, başkaları karşı çıktı.",
+    "note": "Belirsiz grup → others."
+   },
+   {
+    "en": "Three of us stayed; the others went home.",
+    "tr": "Üçümüz kaldık, kalanlar eve gitti.",
+    "note": "Belirli grubun kalanı → the others."
+   },
+   {
+    "en": "This one is broken; do you have another?",
+    "tr": "Bu bozuk, başka var mı?",
+    "note": "Bir tane daha → another."
+   },
+   {
+    "en": "We should consider the views of others.",
+    "tr": "Başkalarının görüşlerini de düşünmeliyiz.",
+    "note": "Genel anlamda başkaları."
+   }
+  ],
+  "mistakes": [
+   {
+    "wrong": "One is red, another is blue, and that is all of them.",
+    "right": "One is red, the other is blue.",
+    "why": "İkiden biri kaldıysa belirlidir."
+   },
+   {
+    "wrong": "Two stayed; others left, all of them.",
+    "right": "Two stayed; the others left.",
+    "why": "Kalanların tamamı kastediliyorsa the others."
+   },
+   {
+    "wrong": "Some agreed; the others did not, but we do not know who.",
+    "right": "Some agreed; others did not.",
+    "why": "Grup belirsizse the kullanılmaz."
+   }
+  ],
+  "exercises": [
+   {
+    "type": "choice",
+    "text": "I have two keys: this one opens the door and ___ opens the gate.",
+    "options": [
+     "other",
+     "others",
+     "another",
+     "the other"
+    ],
+    "answer": 3,
+    "note": "İkiden biri kaldı → the other."
+   },
+   {
+    "type": "choice",
+    "text": "Four of us went by car; ___ took the train.",
+    "options": [
+     "other",
+     "others",
+     "the others",
+     "another"
+    ],
+    "answer": 2,
+    "note": "Belirli grubun kalanı."
+   },
+   {
+    "type": "choice",
+    "text": "Some students finished early; ___ needed more time.",
+    "options": [
+     "other",
+     "another",
+     "the others",
+     "others"
+    ],
+    "answer": 3,
+    "note": "Belirsiz grup → others."
+   },
+   {
+    "type": "gap",
+    "text": "This cup is dirty. Could I have ___ ?",
+    "options": [
+     "others",
+     "another",
+     "the other"
+    ],
+    "answer": 1,
+    "note": "Bir tane daha → another."
+   },
+   {
+    "type": "choice",
+    "text": "Two of the machines work; ___ are broken.",
+    "options": [
+     "other",
+     "others",
+     "another",
+     "the others"
+    ],
+    "answer": 3,
+    "note": "Kalanların tamamı."
+   },
+   {
+    "type": "choice",
+    "text": "She is always thinking about ___ before herself.",
+    "options": [
+     "others",
+     "another",
+     "other",
+     "the others"
+    ],
+    "answer": 0,
+    "note": "Genel anlamda başkaları."
+   },
+   {
+    "type": "choice",
+    "text": "I have read one of the two reports; I will read ___ tonight.",
+    "options": [
+     "other",
+     "others",
+     "another",
+     "the other"
+    ],
+    "answer": 3,
+    "note": "İkiden kalan tek şey."
+   },
+   {
+    "type": "gap",
+    "text": "One of the twins is quiet; ___ never stops talking.",
+    "options": [
+     "another",
+     "others",
+     "the other"
+    ],
+    "answer": 2,
+    "note": "İki kişiden kalan."
+   },
+   {
+    "type": "choice",
+    "text": "We invited twenty people; six came and ___ sent apologies.",
+    "options": [
+     "another",
+     "the others",
+     "other",
+     "others"
+    ],
+    "answer": 1,
+    "note": "Belirli grubun kalanı."
+   },
+   {
+    "type": "choice",
+    "text": "Would you like ___ piece of cake?",
+    "options": [
+     "the others",
+     "others",
+     "the other",
+     "another"
+    ],
+    "answer": 3,
+    "note": "Bir tane daha → another."
    }
   ]
  }
