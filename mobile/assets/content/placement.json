@@ -1,0 +1,490 @@
+{
+ "_meta": {
+  "title": "Seviye belirleme sınavı",
+  "titleEn": "Placement Test",
+  "questions": 40,
+  "note": "Sorular kolaydan zora sıralanmıştır. Her seviyeden soru bulunur; doğru cevapların durduğu nokta seviyeyi verir."
+ },
+ "questions": [
+  {
+   "level": "A1",
+   "text": "She ___ a teacher.",
+   "options": [
+    "is",
+    "be",
+    "am",
+    "are"
+   ],
+   "answer": 0,
+   "note": "Üçüncü tekil kişi (she) ile 'is' kullanılır."
+  },
+  {
+   "level": "A1",
+   "text": "I ___ two brothers.",
+   "options": [
+    "has",
+    "having",
+    "have",
+    "am"
+   ],
+   "answer": 2,
+   "note": "'I' ile 'have' kullanılır."
+  },
+  {
+   "level": "A1",
+   "text": "___ is your name?",
+   "options": [
+    "What",
+    "Who",
+    "When",
+    "Where"
+   ],
+   "answer": 0,
+   "note": "İsim sorulurken 'What' kullanılır."
+  },
+  {
+   "level": "A1",
+   "text": "There ___ four books on the table.",
+   "options": [
+    "be",
+    "are",
+    "has",
+    "is"
+   ],
+   "answer": 1,
+   "note": "Çoğul özne (four books) ile 'there are'."
+  },
+  {
+   "level": "A1",
+   "text": "He goes to work ___ bus.",
+   "options": [
+    "on",
+    "by",
+    "in",
+    "with"
+   ],
+   "answer": 1,
+   "note": "Ulaşım aracı için 'by bus' kalıbı kullanılır."
+  },
+  {
+   "level": "A1",
+   "text": "My sister ___ like coffee.",
+   "options": [
+    "not",
+    "does not",
+    "is not",
+    "do not"
+   ],
+   "answer": 1,
+   "note": "Üçüncü tekil kişide olumsuzluk 'does not' ile kurulur."
+  },
+  {
+   "level": "A1",
+   "text": "We are ___ the classroom.",
+   "options": [
+    "in",
+    "on",
+    "of",
+    "at"
+   ],
+   "answer": 0,
+   "note": "Kapalı bir mekânın içi için 'in'."
+  },
+  {
+   "level": "A2",
+   "text": "Yesterday I ___ to the market.",
+   "options": [
+    "went",
+    "go",
+    "going",
+    "have gone"
+   ],
+   "answer": 0,
+   "note": "'Yesterday' geçmiş zaman ister: go → went."
+  },
+  {
+   "level": "A2",
+   "text": "This book is ___ than that one.",
+   "options": [
+    "cheap",
+    "cheaper",
+    "cheapest",
+    "more cheap"
+   ],
+   "answer": 1,
+   "note": "Kısa sıfatlarda karşılaştırma -er ile yapılır."
+  },
+  {
+   "level": "A2",
+   "text": "I am going to visit my aunt ___ Sunday.",
+   "options": [
+    "in",
+    "to",
+    "at",
+    "on"
+   ],
+   "answer": 3,
+   "note": "Günlerle 'on' kullanılır."
+  },
+  {
+   "level": "A2",
+   "text": "She can ___ very well.",
+   "options": [
+    "to swim",
+    "swim",
+    "swimming",
+    "swims"
+   ],
+   "answer": 1,
+   "note": "'can' modalından sonra yalın fiil gelir."
+  },
+  {
+   "level": "A2",
+   "text": "There is ___ milk in the bottle.",
+   "options": [
+    "many",
+    "some",
+    "a few",
+    "several"
+   ],
+   "answer": 1,
+   "note": "'milk' sayılamayan bir isimdir; 'some' uygundur."
+  },
+  {
+   "level": "A2",
+   "text": "We were watching a film ___ the lights went out.",
+   "options": [
+    "while",
+    "during",
+    "when",
+    "since"
+   ],
+   "answer": 2,
+   "note": "Süren eylemi kesen olay 'when' ile bağlanır."
+  },
+  {
+   "level": "A2",
+   "text": "I would like ___ a question.",
+   "options": [
+    "asked",
+    "to ask",
+    "ask",
+    "asking"
+   ],
+   "answer": 1,
+   "note": "'would like' ardından 'to' + fiil gelir."
+  },
+  {
+   "level": "B1",
+   "text": "I ___ here since 2019.",
+   "options": [
+    "live",
+    "am living",
+    "lived",
+    "have lived"
+   ],
+   "answer": 3,
+   "note": "'since' ile başlayıp süren durum present perfect ister."
+  },
+  {
+   "level": "B1",
+   "text": "If it rains tomorrow, we ___ at home.",
+   "options": [
+    "will stay",
+    "would stay",
+    "stay",
+    "stayed"
+   ],
+   "answer": 0,
+   "note": "Birinci tip koşul: if + geniş zaman, ana cümlede 'will'."
+  },
+  {
+   "level": "B1",
+   "text": "The report ___ by the whole team last month.",
+   "options": [
+    "wrote",
+    "was written",
+    "has written",
+    "is written"
+   ],
+   "answer": 1,
+   "note": "Geçmiş zaman edilgen yapı: was/were + üçüncü hâl."
+  },
+  {
+   "level": "B1",
+   "text": "She asked me where I ___ the keys.",
+   "options": [
+    "put",
+    "had put",
+    "have put",
+    "putting"
+   ],
+   "answer": 1,
+   "note": "Dolaylı anlatımda bir önceki eylem past perfect'e kayar."
+  },
+  {
+   "level": "B1",
+   "text": "You ___ wear a helmet on this site. It is the rule.",
+   "options": [
+    "used to",
+    "might",
+    "could",
+    "have to"
+   ],
+   "answer": 3,
+   "note": "Dışarıdan gelen zorunluluk 'have to' ile ifade edilir."
+  },
+  {
+   "level": "B1",
+   "text": "This is the woman ___ helped us at the station.",
+   "options": [
+    "whose",
+    "who",
+    "which",
+    "whom"
+   ],
+   "answer": 1,
+   "note": "İnsan için özne konumunda 'who'."
+  },
+  {
+   "level": "B1",
+   "text": "I am not used ___ so early.",
+   "options": [
+    "to get up",
+    "get up",
+    "getting up",
+    "to getting up"
+   ],
+   "answer": 3,
+   "note": "'be used to' kalıbından sonra -ing gelir."
+  },
+  {
+   "level": "B2",
+   "text": "If I ___ about the meeting, I would have come.",
+   "options": [
+    "had known",
+    "would know",
+    "have known",
+    "knew"
+   ],
+   "answer": 0,
+   "note": "Üçüncü tip koşul: if + past perfect."
+  },
+  {
+   "level": "B2",
+   "text": "She is the only one ___ objections were taken seriously.",
+   "options": [
+    "whose",
+    "who",
+    "that",
+    "which"
+   ],
+   "answer": 0,
+   "note": "İyelik ilgisi kuran ilgi zamiri 'whose'."
+  },
+  {
+   "level": "B2",
+   "text": "The project is said ___ three years.",
+   "options": [
+    "to take",
+    "taking",
+    "taken",
+    "to have taken"
+   ],
+   "answer": 3,
+   "note": "'is said' + tamamlanmış eylem için 'to have' + üçüncü hâl."
+  },
+  {
+   "level": "B2",
+   "text": "I would rather you ___ anything to him yet.",
+   "options": [
+    "did not say",
+    "will not say",
+    "do not say",
+    "not saying"
+   ],
+   "answer": 0,
+   "note": "'would rather' + özne ile geçmiş biçim kullanılır."
+  },
+  {
+   "level": "B2",
+   "text": "___ the delay, the audience stayed until the end.",
+   "options": [
+    "However",
+    "Despite",
+    "Although",
+    "Because"
+   ],
+   "answer": 1,
+   "note": "'Despite' isim öbeği alır; 'although' cümle alır."
+  },
+  {
+   "level": "B2",
+   "text": "He denied ___ the document.",
+   "options": [
+    "that see",
+    "having seen",
+    "to see",
+    "see"
+   ],
+   "answer": 1,
+   "note": "'deny' fiili -ing alır; geçmişe gönderim 'having' ile."
+  },
+  {
+   "level": "B2",
+   "text": "By the time the letter arrived, she ___ the offer.",
+   "options": [
+    "had already accepted",
+    "already accepted",
+    "has already accepted",
+    "was already accepting"
+   ],
+   "answer": 0,
+   "note": "İki geçmiş olaydan önce olanı past perfect ile verilir."
+  },
+  {
+   "level": "C1",
+   "text": "___ had he finished speaking than the questions began.",
+   "options": [
+    "Rarely",
+    "No sooner",
+    "Seldom",
+    "Hardly ever"
+   ],
+   "answer": 1,
+   "note": "'No sooner ... than' kalıbı devrik yapı gerektirir."
+  },
+  {
+   "level": "C1",
+   "text": "Not only ___ the deadline, but he improved the design.",
+   "options": [
+    "he met",
+    "he did meet",
+    "met he",
+    "did he meet"
+   ],
+   "answer": 3,
+   "note": "Cümle 'Not only' ile başlarsa yardımcı fiil öne geçer."
+  },
+  {
+   "level": "C1",
+   "text": "The committee insisted that the report ___ before Friday.",
+   "options": [
+    "will be submitted",
+    "be submitted",
+    "is submitted",
+    "was submitted"
+   ],
+   "answer": 1,
+   "note": "'insist that' sonrası istek kipinde yalın fiil kullanılır."
+  },
+  {
+   "level": "C1",
+   "text": "___ for the storm, the ship would have arrived on time.",
+   "options": [
+    "But",
+    "Apart",
+    "Except",
+    "Unless"
+   ],
+   "answer": 0,
+   "note": "'But for' kalıbı 'olmasaydı' anlamı verir."
+  },
+  {
+   "level": "C1",
+   "text": "Little ___ that the decision had already been made.",
+   "options": [
+    "realized she",
+    "she did realize",
+    "did she realize",
+    "she realized"
+   ],
+   "answer": 2,
+   "note": "Olumsuz anlamlı 'Little' başa gelince devrik yapı gerekir."
+  },
+  {
+   "level": "C1",
+   "text": "The evidence, ___ was collected in March, has since been questioned.",
+   "options": [
+    "that",
+    "it",
+    "what",
+    "which"
+   ],
+   "answer": 3,
+   "note": "Virgülle ayrılan açıklayıcı ilgi cümlesinde 'that' kullanılamaz."
+  },
+  {
+   "level": "C2",
+   "text": "Were the funding ___ withdrawn, the study would stop at once.",
+   "options": [
+    "to be",
+    "will be",
+    "been",
+    "being"
+   ],
+   "answer": 0,
+   "note": "'Were ... to be' devrik koşul yapısıdır, uzak bir ihtimali anlatır."
+  },
+  {
+   "level": "C2",
+   "text": "Scarcely ___ the results when the criticism started.",
+   "options": [
+    "had they published",
+    "they published",
+    "did they publish",
+    "they had published"
+   ],
+   "answer": 0,
+   "note": "'Scarcely' başa geldiğinde past perfect ile devrik yapı kurulur."
+  },
+  {
+   "level": "C2",
+   "text": "It is essential that every claim ___ against the original source.",
+   "options": [
+    "was checked",
+    "be checked",
+    "is checked",
+    "checks"
+   ],
+   "answer": 1,
+   "note": "'It is essential that' sonrası istek kipi: yalın 'be'."
+  },
+  {
+   "level": "C2",
+   "text": "Such ___ the response that the office had to close the line.",
+   "options": [
+    "were",
+    "is",
+    "was",
+    "had"
+   ],
+   "answer": 2,
+   "note": "'Such was ...' devrik yapıda özne tekil olduğu için 'was'."
+  },
+  {
+   "level": "C2",
+   "text": "___ as the argument is, it does not answer the central objection.",
+   "options": [
+    "However",
+    "Although",
+    "Persuasive",
+    "Despite"
+   ],
+   "answer": 2,
+   "note": "'Adjective + as + özne + fiil' ödünleyici bir yapıdır."
+  },
+  {
+   "level": "C2",
+   "text": "Had the warning been heeded, the loss ___ avoided.",
+   "options": [
+    "might have been",
+    "may be",
+    "might be",
+    "would be"
+   ],
+   "answer": 0,
+   "note": "Devrik üçüncü tip koşul: geçmişe dönük ihtimal 'might have been'."
+  }
+ ]
+}

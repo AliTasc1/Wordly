@@ -267,6 +267,26 @@ def check_placement(levels: dict) -> tuple[int, list[str]]:
             problems.append(f"{where}: cevap sırası seçeneklerin dışında")
         if not question.get("note"):
             problems.append(f"{where}: açıklama yok")
+        # Soru kendi etiketlediği seviyede okunabilmeli. A1 sorusunun içinde
+        # B2 kelimesi varsa soru dilbilgisini değil kelime bilgisini ölçer ve
+        # sonuç olduğundan düşük çıkar.
+        level = question.get("level")
+        if level in ORDER and question.get("text"):
+            report = analyse(
+                ". ".join([question["text"].replace("___", "something")]
+                          + [str(o) for o in options]),
+                level.upper(), levels, set(),
+            )
+            if report["british"]:
+                detail = ", ".join(f"{uk} → {us}" for uk, us in report["british"].items())
+                problems.append(f"{where}: İngiliz yazımı: {detail}")
+            stray = sorted(set(report["above"]) | set(report["unknown"]))
+            if stray:
+                detail = ", ".join(
+                    f"{w} ({report['above'][w]})" if w in report["above"]
+                    else f"{w} (sözlükte yok)" for w in stray[:6]
+                )
+                problems.append(f"{where}: {level.upper()} dışında: {detail}")
 
     # Sınav her seviyeyi yoklamalı; eksik seviye varsa sonuç o aralıkta kör olur.
     covered = {q.get("level") for q in questions}
