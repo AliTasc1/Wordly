@@ -1489,5 +1489,2325 @@
     "note": "\"That assumption might be the heaviest thing you are carrying.\""
    }
   ]
+ },
+ {
+  "id": "b1-l-11",
+  "level": "B1",
+  "order": 11,
+  "kind": "listening",
+  "title": "Ortak bir hediye",
+  "titleEn": "Splitting the Cost",
+  "minutes": 4,
+  "names": [
+   "Aslan",
+   "Nehir"
+  ],
+  "speakers": [
+   "Aslan",
+   "Nehir"
+  ],
+  "lines": [
+   {
+    "who": "Nehir",
+    "en": "Eleven people want to join the present, but three have not paid.",
+    "tr": "On bir kişi hediyeye katılmak istiyor ama üçü ödemedi."
+   },
+   {
+    "who": "Aslan",
+    "en": "Is it the same three as last time?",
+    "tr": "Geçen seferki üç kişi mi?"
+   },
+   {
+    "who": "Nehir",
+    "en": "Two of them, yes. I do not want to ask again.",
+    "tr": "İkisi evet. Bir daha sormak istemiyorum."
+   },
+   {
+    "who": "Aslan",
+    "en": "Then do not. Buy the present with what you have.",
+    "tr": "O zaman sorma. Elindekiyle hediyeyi al."
+   },
+   {
+    "who": "Nehir",
+    "en": "But then the card has eleven names and eight people paid.",
+    "tr": "Ama o zaman kartta on bir isim olacak, sekiz kişi ödedi."
+   },
+   {
+    "who": "Aslan",
+    "en": "Put the eight names on the card. That solves it quietly.",
+    "tr": "Karta sekiz ismi yaz. Bu meseleyi sessizce çözer."
+   },
+   {
+    "who": "Nehir",
+    "en": "That feels a little hard.",
+    "tr": "Biraz sert geliyor."
+   },
+   {
+    "who": "Aslan",
+    "en": "Harder than paying for three people yourself every time?",
+    "tr": "Her seferinde üç kişinin parasını kendin ödemekten mi sert?"
+   },
+   {
+    "who": "Nehir",
+    "en": "You have a point. I have done that twice this year.",
+    "tr": "Haklısın. Bu yıl iki kez yaptım."
+   },
+   {
+    "who": "Aslan",
+    "en": "Next time collect the money before you order anything.",
+    "tr": "Bir dahaki sefere bir şey sipariş etmeden önce parayı topla."
+   },
+   {
+    "who": "Nehir",
+    "en": "That is the real lesson, and I keep forgetting it.",
+    "tr": "Asıl ders bu ve sürekli unutuyorum."
+   },
+   {
+    "who": "Aslan",
+    "en": "Write it on the top of the list next year.",
+    "tr": "Gelecek yıl listenin en üstüne yaz."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "present",
+    "tr": "hediye"
+   },
+   {
+    "w": "solves",
+    "tr": "çözer"
+   },
+   {
+    "w": "collect",
+    "tr": "toplamak"
+   },
+   {
+    "w": "lesson",
+    "tr": "ders"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many people have not paid?",
+    "options": [
+     "Three",
+     "Two",
+     "Eight",
+     "Eleven"
+    ],
+    "answer": 0,
+    "note": "\"Eleven people want to join... but three have not paid.\""
+   },
+   {
+    "q": "What does Aslan suggest about the card?",
+    "options": [
+     "Put all eleven names",
+     "Do not send a card",
+     "Put only the eight names on it",
+     "Write a note"
+    ],
+    "answer": 2,
+    "note": "\"Put the eight names on the card.\""
+   },
+   {
+    "q": "What has Nehir done twice this year?",
+    "options": [
+     "Forgotten the present",
+     "Refused to join",
+     "Changed the list",
+     "Paid for other people herself"
+    ],
+    "answer": 3,
+    "note": "\"I have done that twice this year.\""
+   },
+   {
+    "q": "What does Aslan advise for next time?",
+    "options": [
+     "Buy a cheaper present",
+     "Ask twice",
+     "Collect the money before ordering",
+     "Invite fewer people"
+    ],
+    "answer": 2,
+    "note": "\"Collect the money before you order anything.\""
+   },
+   {
+    "q": "What does Nehir say about the lesson?",
+    "options": [
+     "She keeps forgetting it",
+     "She wrote it down",
+     "She disagrees with it",
+     "She learnt it last year"
+    ],
+    "answer": 0,
+    "note": "\"That is the real lesson, and I keep forgetting it.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-12",
+  "level": "B1",
+  "order": 12,
+  "kind": "listening",
+  "title": "Sınavdan sonra",
+  "titleEn": "After the Results",
+  "minutes": 4,
+  "names": [
+   "Melis",
+   "Tuna"
+  ],
+  "speakers": [
+   "Melis",
+   "Tuna"
+  ],
+  "lines": [
+   {
+    "who": "Tuna",
+    "en": "I passed everything except one, and that one was my best subject.",
+    "tr": "Biri hariç hepsini geçtim ve o en iyi olduğum dersti."
+   },
+   {
+    "who": "Melis",
+    "en": "What happened?",
+    "tr": "Ne oldu?"
+   },
+   {
+    "who": "Tuna",
+    "en": "I did no work for it. I was sure I already knew it.",
+    "tr": "Hiç çalışmadım. Zaten bildiğimden emindim."
+   },
+   {
+    "who": "Melis",
+    "en": "That is the most common way to fail something.",
+    "tr": "Bu, bir şeyi kaybetmenin en yaygın yolu."
+   },
+   {
+    "who": "Tuna",
+    "en": "My father says I should take it again in June.",
+    "tr": "Babam haziranda tekrar girmemi söylüyor."
+   },
+   {
+    "who": "Melis",
+    "en": "Do you want to?",
+    "tr": "İstiyor musun?"
+   },
+   {
+    "who": "Tuna",
+    "en": "Not really, but I need it for the course I want.",
+    "tr": "Pek değil ama istediğim bölüm için gerekli."
+   },
+   {
+    "who": "Melis",
+    "en": "Then the question is not whether you want to. It is how you study this time.",
+    "tr": "O zaman soru istemen değil. Bu kez nasıl çalışacağın."
+   },
+   {
+    "who": "Tuna",
+    "en": "The same as the others, I suppose.",
+    "tr": "Diğerleri gibi herhâlde."
+   },
+   {
+    "who": "Melis",
+    "en": "The others worked because you were worried about them.",
+    "tr": "Diğerleri işe yaradı çünkü onlar için endişeliydin."
+   },
+   {
+    "who": "Tuna",
+    "en": "So I have to make myself worried about the easy one.",
+    "tr": "Yani kolay olan için kendimi endişelendirmem gerekiyor."
+   },
+   {
+    "who": "Melis",
+    "en": "Or just treat it exactly like the hard ones and stop thinking about it.",
+    "tr": "Ya da ona tam olarak zor olanlar gibi davran ve düşünmeyi bırak."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "subject",
+    "tr": "ders, konu"
+   },
+   {
+    "w": "fail",
+    "tr": "kalmak, başaramamak"
+   },
+   {
+    "w": "course",
+    "tr": "bölüm, kurs"
+   },
+   {
+    "w": "suppose",
+    "tr": "sanmak, varsaymak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Which exam did Tuna fail?",
+    "options": [
+     "His hardest subject",
+     "All of them",
+     "A new subject",
+     "His best subject"
+    ],
+    "answer": 3,
+    "note": "\"That one was my best subject.\""
+   },
+   {
+    "q": "Why did he fail it?",
+    "options": [
+     "The exam was unfair",
+     "He did no work for it",
+     "He ran out of time",
+     "He was ill"
+    ],
+    "answer": 1,
+    "note": "\"I did no work for it.\""
+   },
+   {
+    "q": "Why does he need to take it again?",
+    "options": [
+     "To improve his average",
+     "His father says so",
+     "He needs it for the course he wants",
+     "The school requires it"
+    ],
+    "answer": 2,
+    "note": "\"I need it for the course I want.\""
+   },
+   {
+    "q": "Why did the other exams go well?",
+    "options": [
+     "He had more time",
+     "He was worried about them",
+     "He liked them more",
+     "They were easier"
+    ],
+    "answer": 1,
+    "note": "\"The others worked because you were worried about them.\""
+   },
+   {
+    "q": "What is Melis's final advice?",
+    "options": [
+     "Ask his father",
+     "Study every day",
+     "Take a different course",
+     "Treat it like the hard ones"
+    ],
+    "answer": 3,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "b1-l-13",
+  "level": "B1",
+  "order": 13,
+  "kind": "listening",
+  "title": "Fazla mesai",
+  "titleEn": "The Extra Hours",
+  "minutes": 4,
+  "names": [
+   "Gokce"
+  ],
+  "speakers": [
+   "Gokce",
+   "Manager"
+  ],
+  "lines": [
+   {
+    "who": "Gokce",
+    "en": "I have stayed late every evening for three weeks.",
+    "tr": "Üç haftadır her akşam geç kalıyorum."
+   },
+   {
+    "who": "Manager",
+    "en": "I know, and I am grateful. The project was late when you got it.",
+    "tr": "Biliyorum ve minnettarım. Proje size geldiğinde zaten gecikmişti."
+   },
+   {
+    "who": "Gokce",
+    "en": "I understand that. My question is what happens after Friday.",
+    "tr": "Bunu anlıyorum. Sorum cumadan sonra ne olacağı."
+   },
+   {
+    "who": "Manager",
+    "en": "After Friday it should return to normal.",
+    "tr": "Cumadan sonra normale dönmeli."
+   },
+   {
+    "who": "Gokce",
+    "en": "That is what was said before the last project.",
+    "tr": "Son projeden önce de bu söylenmişti."
+   },
+   {
+    "who": "Manager",
+    "en": "That is a fair criticism.",
+    "tr": "Bu haklı bir eleştiri."
+   },
+   {
+    "who": "Gokce",
+    "en": "I am not asking for money. I am asking for the hours back.",
+    "tr": "Para istemiyorum. Saatleri geri istiyorum."
+   },
+   {
+    "who": "Manager",
+    "en": "How many do you think you are owed?",
+    "tr": "Sizce ne kadar alacağınız var?"
+   },
+   {
+    "who": "Gokce",
+    "en": "About thirty. I wrote them down each evening.",
+    "tr": "Otuz kadar. Her akşam yazdım."
+   },
+   {
+    "who": "Manager",
+    "en": "Send me the list. Take the week after next as four days.",
+    "tr": "Listeyi bana gönderin. Sonraki haftayı dört gün olarak kullanın."
+   },
+   {
+    "who": "Gokce",
+    "en": "That is fair. And next time can we talk before the three weeks?",
+    "tr": "Bu adil. Bir dahaki sefere üç haftadan önce konuşabilir miyiz?"
+   },
+   {
+    "who": "Manager",
+    "en": "Yes. Ask me in the first week, not the third.",
+    "tr": "Evet. Bana üçüncü haftada değil ilk haftada sorun."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "grateful",
+    "tr": "minnettar"
+   },
+   {
+    "w": "criticism",
+    "tr": "eleştiri"
+   },
+   {
+    "w": "owed",
+    "tr": "alacaklı olunan"
+   },
+   {
+    "w": "fair",
+    "tr": "adil"
+   },
+   {
+    "w": "project",
+    "tr": "proje"
+   },
+   {
+    "w": "client",
+    "tr": "müşteri"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long has Gokce stayed late?",
+    "options": [
+     "Thirty days",
+     "One week",
+     "Three weeks",
+     "Four days"
+    ],
+    "answer": 2,
+    "note": "\"I have stayed late every evening for three weeks.\""
+   },
+   {
+    "q": "Why was the project late?",
+    "options": [
+     "It was already late when she got it",
+     "She worked slowly",
+     "The client changed it",
+     "Staff left"
+    ],
+    "answer": 0,
+    "note": "\"The project was late when you got it.\""
+   },
+   {
+    "q": "What does Gokce ask for?",
+    "options": [
+     "A different team",
+     "Extra pay",
+     "The hours back",
+     "A new project"
+    ],
+    "answer": 2,
+    "note": "\"I am asking for the hours back.\""
+   },
+   {
+    "q": "How many hours does she think she is owed?",
+    "options": [
+     "About fifteen",
+     "About thirty",
+     "About four",
+     "About three"
+    ],
+    "answer": 1,
+    "note": "\"About thirty. I wrote them down each evening.\""
+   },
+   {
+    "q": "What does the manager offer?",
+    "options": [
+     "Double pay",
+     "A new project",
+     "A day off on Friday",
+     "A four-day week"
+    ],
+    "answer": 3,
+    "note": "\"Take the week after next as four days.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-14",
+  "level": "B1",
+  "order": 14,
+  "kind": "listening",
+  "title": "Spor sakatlığı",
+  "titleEn": "Coming Back Too Soon",
+  "minutes": 4,
+  "names": [
+   "Alp"
+  ],
+  "speakers": [
+   "Alp",
+   "Doctor"
+  ],
+  "lines": [
+   {
+    "who": "Alp",
+    "en": "The knee feels almost normal. Can I play on Sunday?",
+    "tr": "Diz neredeyse normal hissettiriyor. Pazar oynayabilir miyim?"
+   },
+   {
+    "who": "Doctor",
+    "en": "How long is it since the injury?",
+    "tr": "Sakatlıktan bu yana ne kadar oldu?"
+   },
+   {
+    "who": "Alp",
+    "en": "Five weeks.",
+    "tr": "Beş hafta."
+   },
+   {
+    "who": "Doctor",
+    "en": "And how does it feel when you run in a straight line?",
+    "tr": "Düz çizgide koşarken nasıl hissettiriyor?"
+   },
+   {
+    "who": "Alp",
+    "en": "Fine. No pain at all.",
+    "tr": "İyi. Hiç ağrı yok."
+   },
+   {
+    "who": "Doctor",
+    "en": "And when you turn quickly?",
+    "tr": "Peki hızlı dönerken?"
+   },
+   {
+    "who": "Alp",
+    "en": "I have not tried that yet.",
+    "tr": "Henüz denemedim."
+   },
+   {
+    "who": "Doctor",
+    "en": "That is the part that matters, and it is always the last to come back.",
+    "tr": "Asıl önemli olan o kısım ve her zaman en son düzelen o."
+   },
+   {
+    "who": "Alp",
+    "en": "So Sunday is too early.",
+    "tr": "Yani pazar erken."
+   },
+   {
+    "who": "Doctor",
+    "en": "Sunday is possible if you can turn hard for twenty minutes on Friday without pain.",
+    "tr": "Cuma günü yirmi dakika ağrısız sert dönebilirseniz pazar mümkün."
+   },
+   {
+    "who": "Alp",
+    "en": "And if it hurts on Friday?",
+    "tr": "Ya cuma acırsa?"
+   },
+   {
+    "who": "Doctor",
+    "en": "Then you miss one game instead of losing three months.",
+    "tr": "O zaman üç ay kaybetmek yerine bir maç kaçırırsınız."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "knee",
+    "tr": "diz"
+   },
+   {
+    "w": "injury",
+    "tr": "sakatlık"
+   },
+   {
+    "w": "straight",
+    "tr": "düz"
+   },
+   {
+    "w": "pain",
+    "tr": "ağrı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long ago was the injury?",
+    "options": [
+     "Five weeks",
+     "Three months",
+     "One week",
+     "Twenty days"
+    ],
+    "answer": 0,
+    "note": "\"Five weeks.\""
+   },
+   {
+    "q": "How does the knee feel when he runs straight?",
+    "options": [
+     "Very bad",
+     "A little sore",
+     "Fine, no pain",
+     "He has not tried"
+    ],
+    "answer": 2,
+    "note": "\"Fine. No pain at all.\""
+   },
+   {
+    "q": "What has he not tried?",
+    "options": [
+     "Jumping",
+     "Running",
+     "Turning quickly",
+     "Walking"
+    ],
+    "answer": 2,
+    "note": "\"I have not tried that yet.\""
+   },
+   {
+    "q": "What is the doctor's test?",
+    "options": [
+     "Wait three months",
+     "Run for an hour",
+     "Play half a game",
+     "Turn hard for twenty minutes on Friday"
+    ],
+    "answer": 3,
+    "note": "\"If you can turn hard for twenty minutes on Friday without pain.\""
+   },
+   {
+    "q": "What is the risk of playing too early?",
+    "options": [
+     "Missing one game",
+     "A small pain",
+     "Losing three months",
+     "Nothing serious"
+    ],
+    "answer": 2,
+    "note": "\"Instead of losing three months.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-15",
+  "level": "B1",
+  "order": 15,
+  "kind": "listening",
+  "title": "Bir alışkanlığı bırakmak",
+  "titleEn": "Giving It Up",
+  "minutes": 4,
+  "names": [
+   "Sinem",
+   "Doruk"
+  ],
+  "speakers": [
+   "Sinem",
+   "Doruk"
+  ],
+  "lines": [
+   {
+    "who": "Doruk",
+    "en": "Twenty-two days without a cigarette.",
+    "tr": "Yirmi iki gün sigarasız."
+   },
+   {
+    "who": "Sinem",
+    "en": "That is the longest yet. What is different this time?",
+    "tr": "Şimdiye kadarki en uzunu. Bu sefer ne farklı?"
+   },
+   {
+    "who": "Doruk",
+    "en": "I stopped in the week I changed jobs.",
+    "tr": "İş değiştirdiğim hafta bıraktım."
+   },
+   {
+    "who": "Sinem",
+    "en": "Was that on purpose?",
+    "tr": "Bilerek mi yaptın?"
+   },
+   {
+    "who": "Doruk",
+    "en": "No, but I think it is the reason it is working.",
+    "tr": "Hayır ama işe yaramasının sebebi bu bence."
+   },
+   {
+    "who": "Sinem",
+    "en": "Because nothing reminds you.",
+    "tr": "Çünkü hiçbir şey sana hatırlatmıyor."
+   },
+   {
+    "who": "Doruk",
+    "en": "Exactly. The old building had a place where everybody went at eleven.",
+    "tr": "Aynen. Eski binada herkesin on birde gittiği bir yer vardı."
+   },
+   {
+    "who": "Sinem",
+    "en": "And the new one does not.",
+    "tr": "Yenisinde yok."
+   },
+   {
+    "who": "Doruk",
+    "en": "There is a place, but I have never stood in it, so it means nothing.",
+    "tr": "Bir yer var ama hiç orada durmadım, o yüzden bir şey ifade etmiyor."
+   },
+   {
+    "who": "Sinem",
+    "en": "Do not start now, then. Not even once.",
+    "tr": "O zaman şimdi başlama. Bir kez bile."
+   },
+   {
+    "who": "Doruk",
+    "en": "I was thinking exactly that this morning.",
+    "tr": "Bu sabah tam da bunu düşünüyordum."
+   },
+   {
+    "who": "Sinem",
+    "en": "Then you already know the hardest part is a place, not a decision.",
+    "tr": "O hâlde en zor kısmın bir karar değil bir yer olduğunu zaten biliyorsun."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "cigarette",
+    "tr": "sigara"
+   },
+   {
+    "w": "on purpose",
+    "tr": "bilerek"
+   },
+   {
+    "w": "reminds",
+    "tr": "hatırlatır"
+   },
+   {
+    "w": "decision",
+    "tr": "karar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long has Doruk stopped for?",
+    "options": [
+     "Two months",
+     "One week",
+     "Eleven days",
+     "Twenty-two days"
+    ],
+    "answer": 3,
+    "note": "\"Twenty-two days without a cigarette.\""
+   },
+   {
+    "q": "What was different this time?",
+    "options": [
+     "A doctor helped",
+     "He used medicine",
+     "He stopped in the week he changed jobs",
+     "He told everybody"
+    ],
+    "answer": 2,
+    "note": "\"I stopped in the week I changed jobs.\""
+   },
+   {
+    "q": "Why does that help?",
+    "options": [
+     "He is busier",
+     "He has less time",
+     "Nothing reminds him",
+     "He earns more"
+    ],
+    "answer": 2,
+    "note": "\"Because nothing reminds you.\""
+   },
+   {
+    "q": "What was in the old building?",
+    "options": [
+     "A place everybody went to at eleven",
+     "A garden",
+     "A smoking room upstairs",
+     "A shop"
+    ],
+    "answer": 0,
+    "note": "\"The old building had a place where everybody went at eleven.\""
+   },
+   {
+    "q": "What does Sinem say is the hardest part?",
+    "options": [
+     "Telling people",
+     "The evenings",
+     "The first day",
+     "A place, not a decision"
+    ],
+    "answer": 3,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "b1-l-16",
+  "level": "B1",
+  "order": 16,
+  "kind": "listening",
+  "title": "İnternette alışveriş sorunu",
+  "titleEn": "The Wrong Size Again",
+  "minutes": 4,
+  "names": [
+   "Ezgi"
+  ],
+  "speakers": [
+   "Ezgi",
+   "Agent"
+  ],
+  "lines": [
+   {
+    "who": "Ezgi",
+    "en": "This is the third time the same shop has sent the wrong size.",
+    "tr": "Aynı dükkânın yanlış beden göndermesi üçüncü kez."
+   },
+   {
+    "who": "Agent",
+    "en": "I am sorry. Did you order the same size each time?",
+    "tr": "Üzgünüm. Her seferinde aynı bedeni mi sipariş ettiniz?"
+   },
+   {
+    "who": "Ezgi",
+    "en": "Yes, medium. Twice they sent small and once large.",
+    "tr": "Evet, orta. İki kez küçük, bir kez büyük gönderdiler."
+   },
+   {
+    "who": "Agent",
+    "en": "That suggests a problem in their store, not in your order.",
+    "tr": "Bu, sizin siparişinizde değil depolarında bir sorun olduğunu gösteriyor."
+   },
+   {
+    "who": "Ezgi",
+    "en": "I do not mind sending it back. I mind waiting three weeks each time.",
+    "tr": "Geri göndermeyi dert etmiyorum. Her seferinde üç hafta beklemeyi dert ediyorum."
+   },
+   {
+    "who": "Agent",
+    "en": "I can send the correct one today and you return the other when it suits you.",
+    "tr": "Doğrusunu bugün gönderebilirim, diğerini uygun olduğunuzda iade edersiniz."
+   },
+   {
+    "who": "Ezgi",
+    "en": "That would help. Does that cost me anything?",
+    "tr": "Bu işe yarar. Bana bir maliyeti var mı?"
+   },
+   {
+    "who": "Agent",
+    "en": "Nothing. And I will put a note on the shop's account.",
+    "tr": "Hiçbir şey. Ayrıca dükkânın hesabına bir not düşeceğim."
+   },
+   {
+    "who": "Ezgi",
+    "en": "Will anybody read that note?",
+    "tr": "O notu okuyan olacak mı?"
+   },
+   {
+    "who": "Agent",
+    "en": "If there are three, somebody looks at it. That is why I am adding yours.",
+    "tr": "Üç tane olursa biri bakıyor. O yüzden sizinkini ekliyorum."
+   },
+   {
+    "who": "Ezgi",
+    "en": "Then I am glad I called instead of writing again.",
+    "tr": "O hâlde yine yazmak yerine aradığıma sevindim."
+   },
+   {
+    "who": "Agent",
+    "en": "Calls get counted. Messages often do not.",
+    "tr": "Aramalar sayılıyor. Mesajlar çoğu zaman sayılmıyor."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "size",
+    "tr": "beden"
+   },
+   {
+    "w": "medium",
+    "tr": "orta beden"
+   },
+   {
+    "w": "store",
+    "tr": "depo"
+   },
+   {
+    "w": "return",
+    "tr": "iade etmek"
+   },
+   {
+    "w": "account",
+    "tr": "hesap"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many times has this happened?",
+    "options": [
+     "Three",
+     "Four",
+     "Once",
+     "Twice"
+    ],
+    "answer": 0,
+    "note": "\"This is the third time.\""
+   },
+   {
+    "q": "What does Ezgi actually mind?",
+    "options": [
+     "Waiting three weeks each time",
+     "Sending it back",
+     "The shop staff",
+     "The price"
+    ],
+    "answer": 0,
+    "note": "\"I mind waiting three weeks each time.\""
+   },
+   {
+    "q": "What does the agent offer?",
+    "options": [
+     "A new shop",
+     "A discount",
+     "A refund",
+     "Send the correct one today"
+    ],
+    "answer": 3,
+    "note": "\"I can send the correct one today.\""
+   },
+   {
+    "q": "When does somebody read the notes?",
+    "options": [
+     "Never",
+     "Every day",
+     "When there are three",
+     "Once a month"
+    ],
+    "answer": 2,
+    "note": "\"If there are three, somebody looks at it.\""
+   },
+   {
+    "q": "Why was calling better than writing?",
+    "options": [
+     "It is free",
+     "Calls get counted",
+     "Messages are lost",
+     "It is faster"
+    ],
+    "answer": 1,
+    "note": "\"Calls get counted. Messages often do not.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-17",
+  "level": "B1",
+  "order": 17,
+  "kind": "listening",
+  "title": "Üniversite tercihi",
+  "titleEn": "Choosing Where to Study",
+  "minutes": 4,
+  "names": [
+   "Yaren",
+   "Sencer"
+  ],
+  "speakers": [
+   "Yaren",
+   "Sencer"
+  ],
+  "lines": [
+   {
+    "who": "Sencer",
+    "en": "Two places offered me a room. One is here, one is four hours away.",
+    "tr": "İki yer bana yer verdi. Biri burada, biri dört saat uzakta."
+   },
+   {
+    "who": "Yaren",
+    "en": "Is the course the same?",
+    "tr": "Bölüm aynı mı?"
+   },
+   {
+    "who": "Sencer",
+    "en": "Almost. The one far away is slightly better known.",
+    "tr": "Neredeyse. Uzaktaki biraz daha bilinir."
+   },
+   {
+    "who": "Yaren",
+    "en": "How much does that matter in your field?",
+    "tr": "Senin alanında bu ne kadar önemli?"
+   },
+   {
+    "who": "Sencer",
+    "en": "Honestly, not much after the first job.",
+    "tr": "Açıkçası ilk işten sonra pek değil."
+   },
+   {
+    "who": "Yaren",
+    "en": "Then you are deciding about something else.",
+    "tr": "O zaman başka bir şeye karar veriyorsun."
+   },
+   {
+    "who": "Sencer",
+    "en": "I know. I am deciding whether I want to live away from home.",
+    "tr": "Biliyorum. Evden uzakta yaşamak isteyip istemediğime karar veriyorum."
+   },
+   {
+    "who": "Yaren",
+    "en": "And what is the honest answer?",
+    "tr": "Peki dürüst cevap ne?"
+   },
+   {
+    "who": "Sencer",
+    "en": "Half of me wants to. The other half is frightened of being alone.",
+    "tr": "Yarım bir yanım istiyor. Diğer yarı yalnız kalmaktan korkuyor."
+   },
+   {
+    "who": "Yaren",
+    "en": "Everybody is frightened of that for about six weeks.",
+    "tr": "Herkes bundan altı hafta kadar korkar."
+   },
+   {
+    "who": "Sencer",
+    "en": "You are saying the fear is not information.",
+    "tr": "Korkunun bilgi olmadığını söylüyorsun."
+   },
+   {
+    "who": "Yaren",
+    "en": "I am saying it is information about six weeks, not about four years.",
+    "tr": "Dört yıl hakkında değil, altı hafta hakkında bilgi olduğunu söylüyorum."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "offered",
+    "tr": "teklif etti"
+   },
+   {
+    "w": "slightly",
+    "tr": "biraz"
+   },
+   {
+    "w": "field",
+    "tr": "alan"
+   },
+   {
+    "w": "frightened",
+    "tr": "korkmuş"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the difference between the two places?",
+    "options": [
+     "One is shorter",
+     "One is four hours away and better known",
+     "One is cheaper",
+     "One has no rooms"
+    ],
+    "answer": 1,
+    "note": "\"One is here, one is four hours away... slightly better known.\""
+   },
+   {
+    "q": "How much does the name matter?",
+    "options": [
+     "Only abroad",
+     "Very much",
+     "Not much after the first job",
+     "Only for research"
+    ],
+    "answer": 2,
+    "note": "\"Not much after the first job.\""
+   },
+   {
+    "q": "What is he really deciding?",
+    "options": [
+     "Which course to take",
+     "Whether to live away from home",
+     "When to start",
+     "How much to pay"
+    ],
+    "answer": 1,
+    "note": "\"I am deciding whether I want to live away from home.\""
+   },
+   {
+    "q": "What does Yaren say about the fear?",
+    "options": [
+     "Everybody feels it for about six weeks",
+     "It means he should stay",
+     "It should be ignored",
+     "It never goes"
+    ],
+    "answer": 0,
+    "note": "\"Everybody is frightened of that for about six weeks.\""
+   },
+   {
+    "q": "What is her final point?",
+    "options": [
+     "The fear is about six weeks, not four years",
+     "He must decide today",
+     "He should ask his family",
+     "Both places are equal"
+    ],
+    "answer": 0,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "b1-l-18",
+  "level": "B1",
+  "order": 18,
+  "kind": "listening",
+  "title": "Apartmanda gürültü",
+  "titleEn": "The Flat Above",
+  "minutes": 4,
+  "names": [
+   "Naz"
+  ],
+  "speakers": [
+   "Naz",
+   "Neighbor"
+  ],
+  "lines": [
+   {
+    "who": "Naz",
+    "en": "I hope you do not mind me knocking. It is about the evenings.",
+    "tr": "Kapı çaldığım için kusura bakmayın. Akşamlarla ilgili."
+   },
+   {
+    "who": "Neighbor",
+    "en": "The noise? I was afraid somebody would come.",
+    "tr": "Gürültü mü? Birinin geleceğinden korkuyordum."
+   },
+   {
+    "who": "Naz",
+    "en": "It is not every night. It is mostly after eleven.",
+    "tr": "Her gece değil. Çoğunlukla on birden sonra."
+   },
+   {
+    "who": "Neighbor",
+    "en": "That is when my son practices. He has an exam in May.",
+    "tr": "Oğlum o saatte çalışıyor. Mayısta sınavı var."
+   },
+   {
+    "who": "Naz",
+    "en": "I did not know it was music practice. I thought it was a machine.",
+    "tr": "Müzik çalışması olduğunu bilmiyordum. Makine sanmıştım."
+   },
+   {
+    "who": "Neighbor",
+    "en": "Through a floor it probably sounds like one.",
+    "tr": "Tavandan muhtemelen öyle duyuluyordur."
+   },
+   {
+    "who": "Naz",
+    "en": "Could he finish by ten thirty?",
+    "tr": "On buçukta bitirebilir mi?"
+   },
+   {
+    "who": "Neighbor",
+    "en": "He gets home from work at nine. That would leave him an hour.",
+    "tr": "İşten dokuzda geliyor. Bu ona bir saat bırakır."
+   },
+   {
+    "who": "Naz",
+    "en": "An hour is more than nothing, and I start at six.",
+    "tr": "Bir saat hiç yoktan iyidir, ben de altıda başlıyorum."
+   },
+   {
+    "who": "Neighbor",
+    "en": "Then let us say ten thirty until the exam, and we will talk again in May.",
+    "tr": "O zaman sınava kadar on buçuk diyelim, mayısta yine konuşuruz."
+   },
+   {
+    "who": "Naz",
+    "en": "That is fair. Thank you for not being difficult about it.",
+    "tr": "Bu adil. Zorluk çıkarmadığınız için teşekkürler."
+   },
+   {
+    "who": "Neighbor",
+    "en": "You came to the door instead of writing to the building. That is why.",
+    "tr": "Yönetime yazmak yerine kapıya geldiniz. Sebebi bu."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "knocking",
+    "tr": "kapı çalmak"
+   },
+   {
+    "w": "practices",
+    "tr": "çalışıyor (müzik)"
+   },
+   {
+    "w": "machine",
+    "tr": "makine"
+   },
+   {
+    "w": "floor",
+    "tr": "kat, döşeme"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When is the noise?",
+    "options": [
+     "In the morning",
+     "Every night",
+     "Mostly after eleven",
+     "At six"
+    ],
+    "answer": 2,
+    "note": "\"It is mostly after eleven.\""
+   },
+   {
+    "q": "What is the noise?",
+    "options": [
+     "Building work",
+     "Her son practicing music",
+     "A television",
+     "A machine"
+    ],
+    "answer": 1,
+    "note": "\"That is when my son practices.\""
+   },
+   {
+    "q": "Why does he practice late?",
+    "options": [
+     "He prefers the night",
+     "The room is free then",
+     "He sleeps in the day",
+     "He gets home from work at nine"
+    ],
+    "answer": 3,
+    "note": "\"He gets home from work at nine.\""
+   },
+   {
+    "q": "What do they agree?",
+    "options": [
+     "Finish by ten thirty until the exam",
+     "Talk to the building",
+     "Move the practice",
+     "Stop completely"
+    ],
+    "answer": 0,
+    "note": "\"Let us say ten thirty until the exam.\""
+   },
+   {
+    "q": "Why was the neighbor helpful?",
+    "options": [
+     "She knows Naz well",
+     "She was afraid",
+     "The rules require it",
+     "Naz came to the door instead of writing"
+    ],
+    "answer": 3,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "b1-l-19",
+  "level": "B1",
+  "order": 19,
+  "kind": "listening",
+  "title": "Para biriktirmek",
+  "titleEn": "Where the Money Goes",
+  "minutes": 4,
+  "names": [
+   "Batu",
+   "Ipek"
+  ],
+  "speakers": [
+   "Batu",
+   "Ipek"
+  ],
+  "lines": [
+   {
+    "who": "Batu",
+    "en": "I earn more than last year and I have less money at the end of the month.",
+    "tr": "Geçen yıldan çok kazanıyorum ve ay sonunda daha az param oluyor."
+   },
+   {
+    "who": "Ipek",
+    "en": "Did you write down what you spent for one month?",
+    "tr": "Bir ay ne harcadığını yazdın mı?"
+   },
+   {
+    "who": "Batu",
+    "en": "I did. The big things were all the same as last year.",
+    "tr": "Yazdım. Büyük kalemler geçen yılla aynıydı."
+   },
+   {
+    "who": "Ipek",
+    "en": "Then it is the small ones. It usually is.",
+    "tr": "O zaman küçükler. Genelde öyledir."
+   },
+   {
+    "who": "Batu",
+    "en": "Coffee, lunch, and things I order in the evening.",
+    "tr": "Kahve, öğle yemeği ve akşamları sipariş ettiğim şeyler."
+   },
+   {
+    "who": "Ipek",
+    "en": "How much was the evening ordering?",
+    "tr": "Akşam siparişleri ne kadardı?"
+   },
+   {
+    "who": "Batu",
+    "en": "More than my electricity and water together. I did not believe it.",
+    "tr": "Elektrik ve suyumun toplamından fazla. İnanamadım."
+   },
+   {
+    "who": "Ipek",
+    "en": "That is the usual answer, and nobody guesses it before they count.",
+    "tr": "Her zamanki cevap bu ve kimse saymadan tahmin edemiyor."
+   },
+   {
+    "who": "Batu",
+    "en": "I do not want to stop completely. I work late and I am tired.",
+    "tr": "Tamamen bırakmak istemiyorum. Geç çalışıyorum ve yorgunum."
+   },
+   {
+    "who": "Ipek",
+    "en": "Then do not. Choose two evenings and cook on the others.",
+    "tr": "O zaman bırakma. İki akşam seç, diğerlerinde yemek yap."
+   },
+   {
+    "who": "Batu",
+    "en": "Two out of five is still most of the saving.",
+    "tr": "Beşte iki yine de tasarrufun çoğu."
+   },
+   {
+    "who": "Ipek",
+    "en": "And it is the only plan you will still be following in March.",
+    "tr": "Ayrıca martta hâlâ uyguluyor olacağın tek plan bu."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "earn",
+    "tr": "kazanmak"
+   },
+   {
+    "w": "spent",
+    "tr": "harcadı"
+   },
+   {
+    "w": "electricity",
+    "tr": "elektrik"
+   },
+   {
+    "w": "saving",
+    "tr": "tasarruf"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Batu's problem?",
+    "options": [
+     "He earns less",
+     "His rent went up",
+     "He earns more but saves less",
+     "He lost his job"
+    ],
+    "answer": 2,
+    "note": "\"I earn more than last year and I have less money at the end of the month.\""
+   },
+   {
+    "q": "What did the big costs show?",
+    "options": [
+     "They had doubled",
+     "They had fallen",
+     "They were the same as last year",
+     "He could not find them"
+    ],
+    "answer": 2,
+    "note": "\"The big things were all the same as last year.\""
+   },
+   {
+    "q": "What surprised him most?",
+    "options": [
+     "Lunch had doubled",
+     "His rent",
+     "Coffee was expensive",
+     "Evening ordering cost more than electricity and water"
+    ],
+    "answer": 3,
+    "note": "\"More than my electricity and water together.\""
+   },
+   {
+    "q": "What does Ipek suggest?",
+    "options": [
+     "Order two evenings and cook the rest",
+     "Stop ordering completely",
+     "Eat at work",
+     "Cook every day"
+    ],
+    "answer": 0,
+    "note": "\"Choose two evenings and cook on the others.\""
+   },
+   {
+    "q": "Why does she prefer that?",
+    "options": [
+     "It is what she does",
+     "It saves the most money",
+     "He will still be doing it in March",
+     "It is easier to count"
+    ],
+    "answer": 2,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "b1-l-20",
+  "level": "B1",
+  "order": 20,
+  "kind": "listening",
+  "title": "Sunum provası",
+  "titleEn": "Practising the Presentation",
+  "minutes": 4,
+  "names": [
+   "Ceren",
+   "Mete"
+  ],
+  "speakers": [
+   "Ceren",
+   "Mete"
+  ],
+  "lines": [
+   {
+    "who": "Mete",
+    "en": "That was good, but it was nineteen minutes and you have twelve.",
+    "tr": "İyiydi ama on dokuz dakikaydı, senin on iki dakikan var."
+   },
+   {
+    "who": "Ceren",
+    "en": "I know. Which part should go?",
+    "tr": "Biliyorum. Hangi kısım çıkmalı?"
+   },
+   {
+    "who": "Mete",
+    "en": "The history at the beginning. Four minutes before you say anything new.",
+    "tr": "Baştaki tarihçe. Yeni bir şey söylemeden önce dört dakika."
+   },
+   {
+    "who": "Ceren",
+    "en": "But people need to understand where it came from.",
+    "tr": "Ama insanların nereden geldiğini anlaması gerekiyor."
+   },
+   {
+    "who": "Mete",
+    "en": "Do they? Or do you feel safer starting with something you are sure about?",
+    "tr": "Gerekiyor mu? Yoksa emin olduğun bir şeyle başlamak sana mı güvenli geliyor?"
+   },
+   {
+    "who": "Ceren",
+    "en": "That is uncomfortably accurate.",
+    "tr": "Bu rahatsız edici biçimde doğru."
+   },
+   {
+    "who": "Mete",
+    "en": "Start with the result. Then explain it. Then the history if there is time.",
+    "tr": "Sonuçla başla. Sonra açıkla. Vakit kalırsa tarihçe."
+   },
+   {
+    "who": "Ceren",
+    "en": "And if somebody asks about the background?",
+    "tr": "Peki biri arka planı sorarsa?"
+   },
+   {
+    "who": "Mete",
+    "en": "Then you answer it and it takes one minute instead of four.",
+    "tr": "O zaman cevaplarsın ve dört yerine bir dakika sürer."
+   },
+   {
+    "who": "Ceren",
+    "en": "What about the last slide?",
+    "tr": "Peki son slayt?"
+   },
+   {
+    "who": "Mete",
+    "en": "Keep it. It is the only place you say what you want them to do.",
+    "tr": "Kalsın. Onlardan ne istediğini söylediğin tek yer orası."
+   },
+   {
+    "who": "Ceren",
+    "en": "Then I will run it again tonight with the new order.",
+    "tr": "O zaman bu gece yeni sırayla bir daha çalışırım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "presentation",
+    "tr": "sunum"
+   },
+   {
+    "w": "history",
+    "tr": "tarihçe, geçmiş"
+   },
+   {
+    "w": "accurate",
+    "tr": "isabetli"
+   },
+   {
+    "w": "background",
+    "tr": "arka plan"
+   },
+   {
+    "w": "slide",
+    "tr": "slayt"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long was the practice run?",
+    "options": [
+     "Nineteen minutes",
+     "Four minutes",
+     "Twelve minutes",
+     "One minute"
+    ],
+    "answer": 0,
+    "note": "\"It was nineteen minutes and you have twelve.\""
+   },
+   {
+    "q": "What does Mete say should go?",
+    "options": [
+     "The history at the beginning",
+     "The last slide",
+     "The result",
+     "The questions"
+    ],
+    "answer": 0,
+    "note": "\"The history at the beginning.\""
+   },
+   {
+    "q": "Why does Ceren really start with it?",
+    "options": [
+     "It is required",
+     "It is the shortest part",
+     "The audience asks for it",
+     "She feels safer with something she is sure about"
+    ],
+    "answer": 3,
+    "note": "\"Or do you feel safer starting with something you are sure about?\""
+   },
+   {
+    "q": "What order does Mete suggest?",
+    "options": [
+     "Slides only",
+     "Questions first",
+     "Result, explanation, then history",
+     "History, result, explanation"
+    ],
+    "answer": 2,
+    "note": "\"Start with the result. Then explain it. Then the history if there is time.\""
+   },
+   {
+    "q": "Why keep the last slide?",
+    "options": [
+     "The manager asked for it",
+     "It has the numbers",
+     "It is the shortest",
+     "It says what she wants them to do"
+    ],
+    "answer": 3,
+    "note": "\"It is the only place you say what you want them to do.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-21",
+  "level": "B1",
+  "order": 21,
+  "kind": "listening",
+  "title": "Kitap kulübü",
+  "titleEn": "The Book Nobody Finished",
+  "minutes": 4,
+  "names": [
+   "Derya",
+   "Ufuk"
+  ],
+  "speakers": [
+   "Derya",
+   "Ufuk"
+  ],
+  "lines": [
+   {
+    "who": "Derya",
+    "en": "Six of us came and four had not finished the book.",
+    "tr": "Altımız geldik ve dördü kitabı bitirmemişti."
+   },
+   {
+    "who": "Ufuk",
+    "en": "Including me. It was four hundred pages in two weeks.",
+    "tr": "Ben dâhil. İki haftada dört yüz sayfaydı."
+   },
+   {
+    "who": "Derya",
+    "en": "So the problem is the length, not the book.",
+    "tr": "Yani sorun kitap değil uzunluk."
+   },
+   {
+    "who": "Ufuk",
+    "en": "Partly. It is also that we meet on Wednesdays.",
+    "tr": "Kısmen. Ayrıca çarşambaları buluşuyoruz."
+   },
+   {
+    "who": "Derya",
+    "en": "What is wrong with Wednesday?",
+    "tr": "Çarşambanın nesi var?"
+   },
+   {
+    "who": "Ufuk",
+    "en": "Nobody reads on a work night. Everybody reads at the weekend.",
+    "tr": "İş gecesi kimse okumaz. Herkes hafta sonu okur."
+   },
+   {
+    "who": "Derya",
+    "en": "So if we meet on Monday, people have two free days before it.",
+    "tr": "Yani pazartesi buluşursak, öncesinde iki boş gün olur."
+   },
+   {
+    "who": "Ufuk",
+    "en": "Exactly. And choose books under three hundred pages.",
+    "tr": "Aynen. Bir de üç yüz sayfadan kısa kitaplar seç."
+   },
+   {
+    "who": "Derya",
+    "en": "Some people will say that is not serious reading.",
+    "tr": "Bazıları buna ciddi okuma denmez diyecek."
+   },
+   {
+    "who": "Ufuk",
+    "en": "A finished short book is more serious than an unfinished long one.",
+    "tr": "Bitmiş kısa bir kitap, bitmemiş uzun bir kitaptan daha ciddidir."
+   },
+   {
+    "who": "Derya",
+    "en": "I will suggest both changes in the message tonight.",
+    "tr": "Bu gece mesajda iki değişikliği de öneririm."
+   },
+   {
+    "who": "Ufuk",
+    "en": "Suggest the day first. People argue less about days.",
+    "tr": "Önce günü öner. İnsanlar günler konusunda daha az tartışır."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "length",
+    "tr": "uzunluk"
+   },
+   {
+    "w": "serious",
+    "tr": "ciddi"
+   },
+   {
+    "w": "unfinished",
+    "tr": "bitmemiş"
+   },
+   {
+    "w": "suggest",
+    "tr": "önermek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many had not finished?",
+    "options": [
+     "Six",
+     "Three",
+     "Four",
+     "Two"
+    ],
+    "answer": 2,
+    "note": "\"Six of us came and four had not finished the book.\""
+   },
+   {
+    "q": "What was the book's length?",
+    "options": [
+     "Four hundred pages",
+     "Three hundred pages",
+     "Two hundred pages",
+     "Six hundred pages"
+    ],
+    "answer": 0,
+    "note": "\"It was four hundred pages in two weeks.\""
+   },
+   {
+    "q": "What is wrong with Wednesday?",
+    "options": [
+     "The room is busy",
+     "It is too early",
+     "People work late",
+     "Nobody reads on a work night"
+    ],
+    "answer": 3,
+    "note": "\"Nobody reads on a work night.\""
+   },
+   {
+    "q": "Why is Monday better?",
+    "options": [
+     "It is cheaper",
+     "It is quieter",
+     "People have two free days before it",
+     "The room is free"
+    ],
+    "answer": 2,
+    "note": "\"People have two free days before it.\""
+   },
+   {
+    "q": "What does Ufuk say about short books?",
+    "options": [
+     "A finished short book beats an unfinished long one",
+     "They are not serious",
+     "They are harder",
+     "They cost less"
+    ],
+    "answer": 0,
+    "note": "\"A finished short book is more serious than an unfinished long one.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-22",
+  "level": "B1",
+  "order": 22,
+  "kind": "listening",
+  "title": "Bisiklet çalındı",
+  "titleEn": "The Stolen Bicycle",
+  "minutes": 4,
+  "names": [
+   "Onat"
+  ],
+  "speakers": [
+   "Onat",
+   "Officer"
+  ],
+  "lines": [
+   {
+    "who": "Onat",
+    "en": "My bicycle was taken from in front of my building last night.",
+    "tr": "Bisikletim dün gece binamın önünden alındı."
+   },
+   {
+    "who": "Officer",
+    "en": "Was it locked?",
+    "tr": "Kilitli miydi?"
+   },
+   {
+    "who": "Onat",
+    "en": "Yes, but only to itself, not to anything fixed.",
+    "tr": "Evet ama sadece kendine, sabit bir şeye değil."
+   },
+   {
+    "who": "Officer",
+    "en": "Then two people could lift it into a car in ten seconds.",
+    "tr": "O zaman iki kişi on saniyede arabaya koyabilir."
+   },
+   {
+    "who": "Onat",
+    "en": "I understand that now.",
+    "tr": "Şimdi anlıyorum."
+   },
+   {
+    "who": "Officer",
+    "en": "Do you have the number from the frame?",
+    "tr": "Kadrodaki numara sizde var mı?"
+   },
+   {
+    "who": "Onat",
+    "en": "No. Is that important?",
+    "tr": "Yok. Önemli mi?"
+   },
+   {
+    "who": "Officer",
+    "en": "It is the only thing that lets us return it if we find it.",
+    "tr": "Bulursak size iade etmemizi sağlayan tek şey o."
+   },
+   {
+    "who": "Onat",
+    "en": "I have photographs. Does that help?",
+    "tr": "Fotoğraflarım var. İşe yarar mı?"
+   },
+   {
+    "who": "Officer",
+    "en": "Only if the number is in one of them. Look carefully tonight.",
+    "tr": "Sadece numara birindeyse. Bu gece dikkatlice bakın."
+   },
+   {
+    "who": "Onat",
+    "en": "And if I buy another one?",
+    "tr": "Bir tane daha alırsam?"
+   },
+   {
+    "who": "Officer",
+    "en": "Write the number down before you leave the shop. Most people never do.",
+    "tr": "Dükkândan çıkmadan numarayı yazın. Çoğu insan hiç yazmıyor."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "bicycle",
+    "tr": "bisiklet"
+   },
+   {
+    "w": "locked",
+    "tr": "kilitli"
+   },
+   {
+    "w": "fixed",
+    "tr": "sabit"
+   },
+   {
+    "w": "frame",
+    "tr": "kadro, çerçeve"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How was the bicycle locked?",
+    "options": [
+     "Only to itself",
+     "Inside the building",
+     "To a post",
+     "It was not locked"
+    ],
+    "answer": 0,
+    "note": "\"Only to itself, not to anything fixed.\""
+   },
+   {
+    "q": "What does the officer say two people could do?",
+    "options": [
+     "Break the lock",
+     "Sell it online",
+     "Ride it away",
+     "Lift it into a car in ten seconds"
+    ],
+    "answer": 3,
+    "note": "\"Two people could lift it into a car in ten seconds.\""
+   },
+   {
+    "q": "Why is the frame number important?",
+    "options": [
+     "It lets them return the bicycle",
+     "The insurance needs it",
+     "It proves the price",
+     "It shows where it was bought"
+    ],
+    "answer": 0,
+    "note": "\"It is the only thing that lets us return it if we find it.\""
+   },
+   {
+    "q": "When do photographs help?",
+    "options": [
+     "Never",
+     "If they are recent",
+     "If the number is in one of them",
+     "Always"
+    ],
+    "answer": 2,
+    "note": "\"Only if the number is in one of them.\""
+   },
+   {
+    "q": "What is the officer's advice for next time?",
+    "options": [
+     "Buy a better lock",
+     "Write the number down at the shop",
+     "Insure it",
+     "Keep it inside"
+    ],
+    "answer": 1,
+    "note": "\"Write the number down before you leave the shop.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-23",
+  "level": "B1",
+  "order": 23,
+  "kind": "listening",
+  "title": "Yeni yönetici",
+  "titleEn": "The New Manager",
+  "minutes": 4,
+  "names": [
+   "Cansu",
+   "Serkan"
+  ],
+  "speakers": [
+   "Cansu",
+   "Serkan"
+  ],
+  "lines": [
+   {
+    "who": "Serkan",
+    "en": "Three weeks with the new manager. What do you think?",
+    "tr": "Yeni müdürle üç hafta oldu. Ne düşünüyorsun?"
+   },
+   {
+    "who": "Cansu",
+    "en": "Better than I expected, but everybody is still careful.",
+    "tr": "Beklediğimden iyi ama herkes hâlâ temkinli."
+   },
+   {
+    "who": "Serkan",
+    "en": "She asks a lot of questions.",
+    "tr": "Çok soru soruyor."
+   },
+   {
+    "who": "Cansu",
+    "en": "That is what I like. The last one told us things.",
+    "tr": "Hoşuma giden bu. Öncekisi bize bir şeyler söylerdi."
+   },
+   {
+    "who": "Serkan",
+    "en": "Some people say the questions are a test.",
+    "tr": "Bazıları soruların bir sınav olduğunu söylüyor."
+   },
+   {
+    "who": "Cansu",
+    "en": "Some people say that about everything.",
+    "tr": "Bazıları her şey için bunu söylüyor."
+   },
+   {
+    "who": "Serkan",
+    "en": "Fair. What worries me is the reporting.",
+    "tr": "Doğru. Beni endişelendiren raporlama."
+   },
+   {
+    "who": "Cansu",
+    "en": "Weekly instead of monthly. It is more work.",
+    "tr": "Aylık yerine haftalık. Daha fazla iş."
+   },
+   {
+    "who": "Serkan",
+    "en": "For us, yes. For her it is the only way to learn the place quickly.",
+    "tr": "Bizim için evet. Onun için burayı çabuk öğrenmenin tek yolu."
+   },
+   {
+    "who": "Cansu",
+    "en": "Then somebody should ask her when it goes back to monthly.",
+    "tr": "O zaman biri ona ne zaman aylığa döneceğini sormalı."
+   },
+   {
+    "who": "Serkan",
+    "en": "You ask her. She answers you more directly than she answers me.",
+    "tr": "Sen sor. Sana bana verdiğinden daha doğrudan cevap veriyor."
+   },
+   {
+    "who": "Cansu",
+    "en": "That is because I ask directly.",
+    "tr": "Çünkü ben doğrudan soruyorum."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "careful",
+    "tr": "temkinli"
+   },
+   {
+    "w": "reporting",
+    "tr": "raporlama"
+   },
+   {
+    "w": "weekly",
+    "tr": "haftalık"
+   },
+   {
+    "w": "directly",
+    "tr": "doğrudan"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Cansu like about the new manager?",
+    "options": [
+     "She works late",
+     "She asks questions",
+     "She is quiet",
+     "She changed the team"
+    ],
+    "answer": 1,
+    "note": "\"That is what I like.\""
+   },
+   {
+    "q": "What did the last manager do?",
+    "options": [
+     "Told them things",
+     "Asked questions",
+     "Left quickly",
+     "Changed the reporting"
+    ],
+    "answer": 0,
+    "note": "\"The last one told us things.\""
+   },
+   {
+    "q": "What worries Serkan?",
+    "options": [
+     "The questions",
+     "The team",
+     "The reporting",
+     "The hours"
+    ],
+    "answer": 2,
+    "note": "\"What worries me is the reporting.\""
+   },
+   {
+    "q": "Why does Serkan think she wants weekly reports?",
+    "options": [
+     "Because the rules changed",
+     "To save time",
+     "To learn the place quickly",
+     "To check the staff"
+    ],
+    "answer": 2,
+    "note": "\"For her it is the only way to learn the place quickly.\""
+   },
+   {
+    "q": "Why should Cansu ask her?",
+    "options": [
+     "She is senior",
+     "She wrote the reports",
+     "She gets more direct answers",
+     "She knows her"
+    ],
+    "answer": 2,
+    "note": "\"She answers you more directly than she answers me.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-24",
+  "level": "B1",
+  "order": 24,
+  "kind": "listening",
+  "title": "Tatil planı ayrılığı",
+  "titleEn": "Two Kinds of Holiday",
+  "minutes": 4,
+  "names": [
+   "Ayten",
+   "Koray"
+  ],
+  "speakers": [
+   "Ayten",
+   "Koray"
+  ],
+  "lines": [
+   {
+    "who": "Ayten",
+    "en": "You want a city and I want the sea. We do this every year.",
+    "tr": "Sen şehir istiyorsun, ben deniz. Bunu her yıl yapıyoruz."
+   },
+   {
+    "who": "Koray",
+    "en": "And every year we choose one and one of us is quietly unhappy.",
+    "tr": "Ve her yıl birini seçiyoruz, birimiz sessizce mutsuz oluyor."
+   },
+   {
+    "who": "Ayten",
+    "en": "Last year it was me.",
+    "tr": "Geçen yıl bendim."
+   },
+   {
+    "who": "Koray",
+    "en": "I know. You said the museums were interesting six times.",
+    "tr": "Biliyorum. Müzelerin ilginç olduğunu altı kez söyledin."
+   },
+   {
+    "who": "Ayten",
+    "en": "That is how you know somebody is unhappy.",
+    "tr": "Birinin mutsuz olduğu böyle anlaşılır."
+   },
+   {
+    "who": "Koray",
+    "en": "What if we take ten days and split them?",
+    "tr": "On gün alıp ikiye bölsek?"
+   },
+   {
+    "who": "Ayten",
+    "en": "Four in a city and six by the sea?",
+    "tr": "Dördü şehirde, altısı denizde mi?"
+   },
+   {
+    "who": "Koray",
+    "en": "Five and five. The travel between them takes half a day anyway.",
+    "tr": "Beş beş. Aralarındaki yol zaten yarım gün alıyor."
+   },
+   {
+    "who": "Ayten",
+    "en": "It costs more to move in the middle.",
+    "tr": "Ortada yer değiştirmek daha pahalı."
+   },
+   {
+    "who": "Koray",
+    "en": "It costs one bus ticket and it saves an argument in March.",
+    "tr": "Bir otobüs biletine mal oluyor ve martta bir tartışmayı önlüyor."
+   },
+   {
+    "who": "Ayten",
+    "en": "Then book the city first. I sleep better by the sea at the end.",
+    "tr": "O zaman önce şehri ayarla. Sonda denizde daha iyi uyuyorum."
+   },
+   {
+    "who": "Koray",
+    "en": "That is the first useful thing either of us has said about this.",
+    "tr": "Bu konuda ikimizin söylediği ilk faydalı şey bu."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "museums",
+    "tr": "müzeler"
+   },
+   {
+    "w": "split",
+    "tr": "bölmek"
+   },
+   {
+    "w": "travel",
+    "tr": "yolculuk"
+   },
+   {
+    "w": "argument",
+    "tr": "tartışma"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the yearly problem?",
+    "options": [
+     "One wants a city, one wants the sea",
+     "They argue about money",
+     "They have no time",
+     "They cannot afford a holiday"
+    ],
+    "answer": 0,
+    "note": "\"You want a city and I want the sea.\""
+   },
+   {
+    "q": "How did Koray know Ayten was unhappy?",
+    "options": [
+     "She said the museums were interesting six times",
+     "She went home early",
+     "She told him",
+     "She was silent"
+    ],
+    "answer": 0,
+    "note": "\"You said the museums were interesting six times.\""
+   },
+   {
+    "q": "What does Koray suggest?",
+    "options": [
+     "Stay at home",
+     "Split ten days between both",
+     "Go to the sea",
+     "Go separately"
+    ],
+    "answer": 1,
+    "note": "\"What if we take ten days and split them?\""
+   },
+   {
+    "q": "What is Ayten's objection?",
+    "options": [
+     "Ten days is too long",
+     "The sea is far",
+     "She dislikes cities",
+     "Moving in the middle costs more"
+    ],
+    "answer": 3,
+    "note": "\"It costs more to move in the middle.\""
+   },
+   {
+    "q": "Why does she want the city first?",
+    "options": [
+     "She sleeps better by the sea at the end",
+     "The sea is busy later",
+     "Her friend is there",
+     "The city is cheaper early"
+    ],
+    "answer": 0,
+    "note": "\"I sleep better by the sea at the end.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-l-25",
+  "level": "B1",
+  "order": 25,
+  "kind": "listening",
+  "title": "Gönüllü öğretmenlik",
+  "titleEn": "Teaching on Saturdays",
+  "minutes": 4,
+  "names": [
+   "Meryem"
+  ],
+  "speakers": [
+   "Meryem",
+   "Coordinator"
+  ],
+  "lines": [
+   {
+    "who": "Meryem",
+    "en": "I would like to help with the Saturday classes.",
+    "tr": "Cumartesi derslerinde yardım etmek istiyorum."
+   },
+   {
+    "who": "Coordinator",
+    "en": "Have you taught before?",
+    "tr": "Daha önce ders verdiniz mi?"
+   },
+   {
+    "who": "Meryem",
+    "en": "No, and I am honest about that.",
+    "tr": "Hayır ve bu konuda dürüstüm."
+   },
+   {
+    "who": "Coordinator",
+    "en": "Good. Most of our best volunteers had not.",
+    "tr": "Güzel. En iyi gönüllülerimizin çoğu vermemişti."
+   },
+   {
+    "who": "Meryem",
+    "en": "That surprises me.",
+    "tr": "Bu beni şaşırttı."
+   },
+   {
+    "who": "Coordinator",
+    "en": "Teachers sometimes explain too much. The children need somebody to sit with them.",
+    "tr": "Öğretmenler bazen fazla açıklıyor. Çocukların yanlarında oturacak birine ihtiyacı var."
+   },
+   {
+    "who": "Meryem",
+    "en": "How many children in a group?",
+    "tr": "Grupta kaç çocuk oluyor?"
+   },
+   {
+    "who": "Coordinator",
+    "en": "Four. Never more, because then it becomes a lesson.",
+    "tr": "Dört. Daha fazlası olmaz, yoksa derse dönüşür."
+   },
+   {
+    "who": "Meryem",
+    "en": "What do I do if I cannot answer something?",
+    "tr": "Bir şeyi cevaplayamazsam ne yapayım?"
+   },
+   {
+    "who": "Coordinator",
+    "en": "Say so and look for it together. That is a lesson in itself.",
+    "tr": "Söyleyin ve birlikte bakın. Bu başlı başına bir ders."
+   },
+   {
+    "who": "Meryem",
+    "en": "How long do most volunteers stay?",
+    "tr": "Çoğu gönüllü ne kadar kalıyor?"
+   },
+   {
+    "who": "Coordinator",
+    "en": "The ones who come for the children stay years. The ones who come for themselves stay two months.",
+    "tr": "Çocuklar için gelenler yıllarca kalıyor. Kendisi için gelenler iki ay."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "volunteers",
+    "tr": "gönüllüler"
+   },
+   {
+    "w": "coordinator",
+    "tr": "koordinatör"
+   },
+   {
+    "w": "explain",
+    "tr": "açıklamak"
+   },
+   {
+    "w": "group",
+    "tr": "grup"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Meryem admit?",
+    "options": [
+     "She has little time",
+     "She has never taught",
+     "She is not patient",
+     "She needs money"
+    ],
+    "answer": 1,
+    "note": "\"No, and I am honest about that.\""
+   },
+   {
+    "q": "What does the coordinator say about that?",
+    "options": [
+     "Most of their best volunteers had not taught",
+     "It is a problem",
+     "She needs training first",
+     "It does not matter at all"
+    ],
+    "answer": 0,
+    "note": "\"Most of our best volunteers had not.\""
+   },
+   {
+    "q": "What do teachers sometimes do?",
+    "options": [
+     "Ask for pay",
+     "Arrive late",
+     "Explain too much",
+     "Talk too little"
+    ],
+    "answer": 2,
+    "note": "\"Teachers sometimes explain too much.\""
+   },
+   {
+    "q": "Why is the group only four?",
+    "options": [
+     "There are few children",
+     "More would become a lesson",
+     "It is the rule",
+     "The room is small"
+    ],
+    "answer": 1,
+    "note": "\"Never more, because then it becomes a lesson.\""
+   },
+   {
+    "q": "Who stays for years?",
+    "options": [
+     "Those who come for themselves",
+     "Older volunteers",
+     "Trained teachers",
+     "Those who come for the children"
+    ],
+    "answer": 3,
+    "note": "Son replik."
+   }
+  ]
  }
 ]
