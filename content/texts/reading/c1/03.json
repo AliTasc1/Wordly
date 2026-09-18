@@ -1,0 +1,166 @@
+{
+  "_meta": { "batch": "c1-reading-03", "level": "C1", "range": "Parça 11-15" },
+  "items": [
+    {
+      "id": "c1-r-11",
+      "level": "C1",
+      "order": 11,
+      "kind": "reading",
+      "title": "Uzmanlığın devredilemeyen kısmı",
+      "titleEn": "What Cannot Be Written Down",
+      "minutes": 6,
+      "names": [],
+      "text": "Every organization that loses an experienced person discovers the same thing at roughly the same speed. The tasks were documented. The procedures were written. What has gone is the layer underneath, which nobody thought to record because nobody had ever articulated it. An engineer of thirty years knows which of the readings on a panel is the one that actually matters, and knows it in a way that survives no attempt at explanation, because the knowledge is not a rule but a very large number of remembered exceptions. Asked to write it down, such a person produces a document that is accurate, complete and useless, since the useful part was never a sentence. The standard response to this problem is documentation, which addresses the part that was never the problem. The responses that work are slower and more awkward. Pairing, in which the successor watches ordinary work for months rather than being taught. Deliberate overlap, in which a departure is planned a year in advance and the two people share responsibility without either being formally in charge. Both are expensive, and both are the first things canceled when a budget tightens, which is how organizations reliably arrange to lose the thing they least intended to. What makes the loss hard to see is that nothing fails immediately. The new person follows the written procedure and gets a correct result for eleven months. The failure arrives on the first occasion that falls outside the procedure, and by then the person who would have recognized it has been gone long enough that nobody connects the two events.",
+      "glossary": [
+        { "w": "documented", "tr": "belgelenmiş" },
+        { "w": "procedures", "tr": "prosedürler" },
+        { "w": "articulated", "tr": "dile getirilmiş" },
+        { "w": "panel", "tr": "gösterge paneli" },
+        { "w": "exceptions", "tr": "istisnalar" },
+        { "w": "documentation", "tr": "belgeleme" },
+        { "w": "pairing", "tr": "eşleştirme" },
+        { "w": "successor", "tr": "halef, yerine geçen" },
+        { "w": "deliberate", "tr": "kasıtlı, bilinçli" },
+        { "w": "overlap", "tr": "örtüşme dönemi" },
+        { "w": "departure", "tr": "ayrılış" },
+        { "w": "tightens", "tr": "daralır" }
+      ],
+      "questions": [
+        { "q": "What is lost when an experienced person leaves?", "options": ["The layer nobody thought to record", "The written procedures", "The task list", "The equipment knowledge"], "answer": 0, "note": "\"What has gone is the layer underneath.\"" },
+        { "q": "Why is the engineer's knowledge hard to write?", "options": ["It is remembered exceptions, not a rule", "It is secret", "It changes weekly", "It is too technical"], "answer": 0, "note": "\"The knowledge is not a rule but a very large number of remembered exceptions.\"" },
+        { "q": "What is wrong with the standard response?", "options": ["It addresses a part that was never the problem", "It costs too much", "It takes too long", "Nobody reads it"], "answer": 0, "note": "\"Documentation, which addresses the part that was never the problem.\"" },
+        { "q": "What happens to pairing and overlap in a tight budget?", "options": ["They are canceled first", "They are extended", "They are made compulsory", "They are given to outside firms"], "answer": 0, "note": "\"Both are the first things canceled when a budget tightens.\"" },
+        { "q": "Why is the loss hard to see?", "options": ["Nothing fails immediately", "It is deliberately hidden", "Results improve at first", "Nobody measures it"], "answer": 0, "note": "\"What makes the loss hard to see is that nothing fails immediately.\"" }
+      ]
+    },
+    {
+      "id": "c1-r-12",
+      "level": "C1",
+      "order": 12,
+      "kind": "reading",
+      "title": "Bir sayının kariyeri",
+      "titleEn": "The Career of a Statistic",
+      "minutes": 6,
+      "names": [],
+      "text": "A number enters public life through a recognizable sequence. It begins as an estimate in a study, surrounded by the conditions under which it holds. A press office removes the conditions, because a headline cannot carry them. A newspaper removes the word estimate. A second newspaper, reporting the first, removes the source. Within a month the figure is a fact, repeated by people who would be astonished to learn that it was ever a range. The mechanism deserves more attention than the individual errors it produces, because it operates identically on numbers that happen to be true. Nothing in the process selects for accuracy; it selects for portability, and the qualities that make a figure travel are shortness, roundness and the absence of any accompanying condition. A carefully bounded estimate of between eleven and nineteen per cent will lose every race to a confident fifteen. What can be done about this is limited and worth doing anyway. Journalists who print the range rather than the midpoint are read slightly less and are right considerably more often. Researchers who refuse to supply a single figure are treated as difficult and are usually protecting something real. The most useful habit available to an ordinary reader is to ask, on encountering any striking number, what it was before somebody made it memorable. The question is answerable more often than it looks. A figure that has survived the journey intact will usually still carry the word about, or a range, or the name of the body that produced it, and a figure that has lost all three has almost certainly been through the process described here. This is not a test of truth, since a number can be stripped of its conditions and remain correct. It is a test of how much weight the figure can bear, which is a different question and the one that actually matters when somebody is using it to argue for something.",
+      "glossary": [
+        { "w": "estimate", "tr": "tahmin" },
+        { "w": "press office", "tr": "basın bürosu" },
+        { "w": "astonished", "tr": "hayrete düşmüş" },
+        { "w": "mechanism", "tr": "mekanizma" },
+        { "w": "identically", "tr": "aynı biçimde" },
+        { "w": "portability", "tr": "taşınabilirlik" },
+        { "w": "roundness", "tr": "yuvarlaklık" },
+        { "w": "accompanying", "tr": "eşlik eden" },
+        { "w": "bounded", "tr": "sınırlandırılmış" },
+        { "w": "midpoint", "tr": "orta nokta" },
+        { "w": "striking", "tr": "çarpıcı" }
+      ],
+      "questions": [
+        { "q": "What does a press office remove?", "options": ["The conditions", "The number", "The source", "The word estimate"], "answer": 0, "note": "\"A press office removes the conditions.\"" },
+        { "q": "What does the process select for?", "options": ["Portability, not accuracy", "Accuracy", "Novelty", "Importance"], "answer": 0, "note": "\"Nothing in the process selects for accuracy; it selects for portability.\"" },
+        { "q": "Which figure travels better?", "options": ["A confident fifteen", "A range of eleven to nineteen", "A long explanation", "An unrounded number"], "answer": 0, "note": "\"Will lose every race to a confident fifteen.\"" },
+        { "q": "What does the writer say about journalists who print ranges?", "options": ["Read less, right more often", "Read more, right less often", "Never published", "Always ignored"], "answer": 0, "note": "\"Are read slightly less and are right considerably more often.\"" },
+        { "q": "What habit does the writer recommend?", "options": ["Ask what the number was before it was made memorable", "Check the newspaper", "Ignore all statistics", "Trust the researcher"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-13",
+      "level": "C1",
+      "order": 13,
+      "kind": "reading",
+      "title": "Mimarlıkta korumacılık",
+      "titleEn": "Keeping the Front and Losing the Building",
+      "minutes": 6,
+      "names": [],
+      "text": "A practice has grown up in cities under pressure to build, in which the front wall of a historic building is retained and everything behind it is demolished and replaced. The result satisfies the letter of the protection and empties it of meaning. Defenders of the approach argue, not unreasonably, that the alternative is either a museum city that cannot house anybody or the loss of the front as well. Both consequences are real, and the argument would be stronger if the practice were confined to buildings whose interiors had genuinely been lost. In a considerable number of cases the interior was structurally sound and simply inconvenient. What the practice reveals is a confusion about what protection was ever for. A building is not valuable because of the arrangement of stone visible from the pavement; it is valuable because of the relationship between that arrangement and the rooms it implies, and a façade with a different building behind it is a sentence with the verb removed. Critics sometimes overstate their case by implying that nothing may change, which is indefensible in a city that needs housing. The stronger position accepts substantial change and asks a narrower question: whether what remains still explains itself. A converted warehouse whose windows are in the wrong places for its new use passes that test. A stone front with eleven floors of glass behind it does not, and no amount of architectural language makes the difference invisible to somebody standing on the street.",
+      "glossary": [
+        { "w": "retained", "tr": "korunan" },
+        { "w": "demolished", "tr": "yıkılmış" },
+        { "w": "letter", "tr": "lafzı, harfi" },
+        { "w": "consequences", "tr": "sonuçlar" },
+        { "w": "confined", "tr": "sınırlı" },
+        { "w": "interiors", "tr": "iç mekânlar" },
+        { "w": "structurally", "tr": "yapısal olarak" },
+        { "w": "pavement", "tr": "kaldırım" },
+        { "w": "implies", "tr": "ima eder" },
+        { "w": "façade", "tr": "cephe" },
+        { "w": "indefensible", "tr": "savunulamaz" },
+        { "w": "substantial", "tr": "esaslı, önemli" },
+        { "w": "converted", "tr": "dönüştürülmüş" },
+        { "w": "warehouse", "tr": "depo" }
+      ],
+      "questions": [
+        { "q": "What does the practice do?", "options": ["Keeps the front and replaces everything behind", "Rebuilds the interior exactly", "Moves the whole building", "Adds a new floor"], "answer": 0, "note": "\"The front wall... is retained and everything behind it is demolished.\"" },
+        { "q": "When would the defenders' argument be stronger?", "options": ["If it were used only where interiors were truly lost", "If the city were smaller", "If housing were cheaper", "If the fronts were newer"], "answer": 0, "note": "\"If the practice were confined to buildings whose interiors had genuinely been lost.\"" },
+        { "q": "What does the writer say a building's value depends on?", "options": ["The relationship between the front and the rooms it implies", "The age of the stone", "The street it stands on", "Its height"], "answer": 0, "note": "\"The relationship between that arrangement and the rooms it implies.\"" },
+        { "q": "How do critics sometimes overstate their case?", "options": ["By implying nothing may change", "By ignoring history", "By supporting demolition", "By asking for money"], "answer": 0, "note": "\"By implying that nothing may change, which is indefensible.\"" },
+        { "q": "What is the narrower question the writer prefers?", "options": ["Whether what remains still explains itself", "Whether the front is original", "Whether the cost is justified", "Whether anybody objects"], "answer": 0, "note": "\"Whether what remains still explains itself.\"" }
+      ]
+    },
+    {
+      "id": "c1-r-14",
+      "level": "C1",
+      "order": 14,
+      "kind": "reading",
+      "title": "Gönüllü yardımın zararı",
+      "titleEn": "When Helping Makes Things Worse",
+      "minutes": 6,
+      "names": [],
+      "text": "After a disaster, donations of clothing arrive in quantities that nobody requested and almost nobody can use. The consequences are well established among people who do this work and almost unknown outside it. Sorting the material consumes the labor of staff who are needed elsewhere. Storing it occupies space that is required for supplies that were requested. Disposing of what cannot be used costs money that was donated for something else, and in several documented cases the cost of destroying unwanted clothing has exceeded its value when new. The same pattern appears with volunteers who arrive without being asked, who must be housed and fed and supervised by an operation already at its limit. None of this is a reason to doubt the generosity. It is a reason to notice that generosity, expressed in the wrong form, transfers the cost of the donor's feelings onto the people being helped. The organizations that handle this well have stopped explaining the economics, which persuades nobody, and have started making the alternative equally satisfying: a photograph of the specific thing a given amount actually bought, sent to the person who sent the money. It works because the problem was never that people are stupid about aid. The problem is that writing a number into a form feels like nothing, and filling a box with coats feels like helping. That asymmetry is not a failure of intelligence and it will not be argued away. It is the same reason that people who will not give blood will queue for hours to carry water, and any organization that treats it as ignorance rather than as a fact about human beings will keep receiving lorries of clothing it cannot use, along with letters expressing surprise that the gratitude was not warmer.",
+      "glossary": [
+        { "w": "donations", "tr": "bağışlar" },
+        { "w": "consequences", "tr": "sonuçlar" },
+        { "w": "sorting", "tr": "ayıklama" },
+        { "w": "consumes", "tr": "tüketir" },
+        { "w": "supplies", "tr": "malzemeler" },
+        { "w": "disposing", "tr": "elden çıkarma" },
+        { "w": "supervised", "tr": "gözetilen" },
+        { "w": "generosity", "tr": "cömertlik" },
+        { "w": "transfers", "tr": "aktarır" },
+        { "w": "economics", "tr": "ekonomi, hesap" },
+        { "w": "persuades", "tr": "ikna eder" },
+        { "w": "aid", "tr": "yardım" },
+        { "w": "asymmetry", "tr": "asimetri, dengesizlik" }
+      ],
+      "questions": [
+        { "q": "What does sorting donated clothing consume?", "options": ["The labor of staff needed elsewhere", "Money only", "Volunteer time only", "Storage space only"], "answer": 0, "note": "\"Sorting the material consumes the labor of staff who are needed elsewhere.\"" },
+        { "q": "What has exceeded the clothing's new value?", "options": ["The cost of destroying it", "The cost of shipping it", "The cost of storing it", "The cost of sorting it"], "answer": 0, "note": "\"The cost of destroying unwanted clothing has exceeded its value when new.\"" },
+        { "q": "What is the problem with unasked volunteers?", "options": ["They must be housed, fed and supervised", "They do not work hard", "They arrive too late", "They take payment"], "answer": 0, "note": "\"Who must be housed and fed and supervised.\"" },
+        { "q": "What does misdirected generosity transfer?", "options": ["The cost of the donor's feelings onto those helped", "Money to the wrong charity", "Blame to the volunteers", "Risk to the donor"], "answer": 0, "note": "\"Transfers the cost of the donor's feelings onto the people being helped.\"" },
+        { "q": "What works better than explaining the economics?", "options": ["A photograph of what the money actually bought", "A longer appeal", "Refusing all goods", "Public criticism"], "answer": 0, "note": "\"A photograph of the specific thing a given amount actually bought.\"" }
+      ]
+    },
+    {
+      "id": "c1-r-15",
+      "level": "C1",
+      "order": 15,
+      "kind": "reading",
+      "title": "Sınav sisteminin kendi kendini bozması",
+      "titleEn": "The Target That Ate the Purpose",
+      "minutes": 6,
+      "names": [],
+      "text": "Any measure used to judge performance eventually stops measuring what it was chosen to measure, and the mechanism is not corruption but attention. A hospital judged on waiting times will reduce waiting times, and the reduction will be genuine; what is invisible in the figure is which activities were quietly moved aside to achieve it. A school judged on the proportion of students reaching a threshold will concentrate its effort on the students closest to that threshold, because that is where the effort produces the most movement in the number. Neither institution has cheated. Both have responded rationally to the question they were asked, and the trouble is that the question was a summary of the purpose rather than the purpose itself. The proposed remedies are mostly worse than the disease. Adding more measures multiplies the distortions and consumes the time of the people being measured. Removing measures altogether returns power to whoever is most confident. What survives contact with practice is narrower: keep the measure, publish it, and require the institution to report alongside it a small number of things that the measure would predictably damage. A school that reports its threshold figure next to the performance of its weakest quarter has not solved the problem, but it has made the trade-off visible to the people who chose it, which is the most that any system of measurement can honestly promise. The objection to this is that it makes the institution look worse, and that objection is correct. A school publishing both figures will be compared unfavorably with one publishing only the flattering one, at least until the practice becomes general. This is the ordinary difficulty of going first, and it is the reason such changes almost never come from the institutions themselves. They come from whoever is in a position to require the second figure from everybody at once.",
+      "glossary": [
+        { "w": "corruption", "tr": "yolsuzluk" },
+        { "w": "threshold", "tr": "eşik, baraj" },
+        { "w": "proportion", "tr": "oran" },
+        { "w": "rationally", "tr": "akılcı biçimde" },
+        { "w": "summary", "tr": "özet" },
+        { "w": "remedies", "tr": "çareler" },
+        { "w": "multiplies", "tr": "çoğaltır" },
+        { "w": "distortions", "tr": "çarpıtmalar" },
+        { "w": "predictably", "tr": "öngörülebilir biçimde" },
+        { "w": "trade-off", "tr": "ödünleşim, denge" },
+        { "w": "measurement", "tr": "ölçme" }
+      ],
+      "questions": [
+        { "q": "What is the mechanism behind the problem?", "options": ["Attention, not corruption", "Deliberate cheating", "Poor management", "Bad data"], "answer": 0, "note": "\"The mechanism is not corruption but attention.\"" },
+        { "q": "What does a school judged on a threshold do?", "options": ["Concentrates on students closest to it", "Teaches everybody equally", "Lowers the threshold", "Refuses weak students"], "answer": 0, "note": "\"Will concentrate its effort on the students closest to that threshold.\"" },
+        { "q": "What is wrong with adding more measures?", "options": ["It multiplies distortions and consumes time", "It costs nothing", "It is illegal", "It works too slowly"], "answer": 0, "note": "\"Adding more measures multiplies the distortions.\"" },
+        { "q": "What happens if measures are removed?", "options": ["Power returns to whoever is most confident", "Everything improves", "Costs rise", "Nothing changes"], "answer": 0, "note": "\"Removing measures altogether returns power to whoever is most confident.\"" },
+        { "q": "What does the writer recommend?", "options": ["Report the measure next to what it would damage", "Abolish all targets", "Use a single perfect measure", "Let institutions choose"], "answer": 0, "note": "\"Require the institution to report alongside it a small number of things that the measure would predictably damage.\"" }
+      ]
+    }
+  ]
+}

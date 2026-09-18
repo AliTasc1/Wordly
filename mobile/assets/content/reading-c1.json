@@ -1192,5 +1192,1823 @@
     "note": "Son cümle."
    }
   ]
+ },
+ {
+  "id": "c1-r-11",
+  "level": "C1",
+  "order": 11,
+  "kind": "reading",
+  "title": "Uzmanlığın devredilemeyen kısmı",
+  "titleEn": "What Cannot Be Written Down",
+  "minutes": 6,
+  "names": [],
+  "text": "Every organization that loses an experienced person discovers the same thing at roughly the same speed. The tasks were documented. The procedures were written. What has gone is the layer underneath, which nobody thought to record because nobody had ever articulated it. An engineer of thirty years knows which of the readings on a panel is the one that actually matters, and knows it in a way that survives no attempt at explanation, because the knowledge is not a rule but a very large number of remembered exceptions. Asked to write it down, such a person produces a document that is accurate, complete and useless, since the useful part was never a sentence. The standard response to this problem is documentation, which addresses the part that was never the problem. The responses that work are slower and more awkward. Pairing, in which the successor watches ordinary work for months rather than being taught. Deliberate overlap, in which a departure is planned a year in advance and the two people share responsibility without either being formally in charge. Both are expensive, and both are the first things canceled when a budget tightens, which is how organizations reliably arrange to lose the thing they least intended to. What makes the loss hard to see is that nothing fails immediately. The new person follows the written procedure and gets a correct result for eleven months. The failure arrives on the first occasion that falls outside the procedure, and by then the person who would have recognized it has been gone long enough that nobody connects the two events.",
+  "glossary": [
+   {
+    "w": "documented",
+    "tr": "belgelenmiş"
+   },
+   {
+    "w": "procedures",
+    "tr": "prosedürler"
+   },
+   {
+    "w": "articulated",
+    "tr": "dile getirilmiş"
+   },
+   {
+    "w": "panel",
+    "tr": "gösterge paneli"
+   },
+   {
+    "w": "exceptions",
+    "tr": "istisnalar"
+   },
+   {
+    "w": "documentation",
+    "tr": "belgeleme"
+   },
+   {
+    "w": "pairing",
+    "tr": "eşleştirme"
+   },
+   {
+    "w": "successor",
+    "tr": "halef, yerine geçen"
+   },
+   {
+    "w": "deliberate",
+    "tr": "kasıtlı, bilinçli"
+   },
+   {
+    "w": "overlap",
+    "tr": "örtüşme dönemi"
+   },
+   {
+    "w": "departure",
+    "tr": "ayrılış"
+   },
+   {
+    "w": "tightens",
+    "tr": "daralır"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is lost when an experienced person leaves?",
+    "options": [
+     "The layer nobody thought to record",
+     "The written procedures",
+     "The equipment knowledge",
+     "The task list"
+    ],
+    "answer": 0,
+    "note": "\"What has gone is the layer underneath.\""
+   },
+   {
+    "q": "Why is the engineer's knowledge hard to write?",
+    "options": [
+     "It is remembered exceptions, not a rule",
+     "It changes weekly",
+     "It is secret",
+     "It is too technical"
+    ],
+    "answer": 0,
+    "note": "\"The knowledge is not a rule but a very large number of remembered exceptions.\""
+   },
+   {
+    "q": "What is wrong with the standard response?",
+    "options": [
+     "It takes too long",
+     "It addresses a part that was never the problem",
+     "Nobody reads it",
+     "It costs too much"
+    ],
+    "answer": 1,
+    "note": "\"Documentation, which addresses the part that was never the problem.\""
+   },
+   {
+    "q": "What happens to pairing and overlap in a tight budget?",
+    "options": [
+     "They are made compulsory",
+     "They are given to outside firms",
+     "They are extended",
+     "They are canceled first"
+    ],
+    "answer": 3,
+    "note": "\"Both are the first things canceled when a budget tightens.\""
+   },
+   {
+    "q": "Why is the loss hard to see?",
+    "options": [
+     "Nothing fails immediately",
+     "Results improve at first",
+     "It is deliberately hidden",
+     "Nobody measures it"
+    ],
+    "answer": 0,
+    "note": "\"What makes the loss hard to see is that nothing fails immediately.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-r-12",
+  "level": "C1",
+  "order": 12,
+  "kind": "reading",
+  "title": "Bir sayının kariyeri",
+  "titleEn": "The Career of a Statistic",
+  "minutes": 6,
+  "names": [],
+  "text": "A number enters public life through a recognizable sequence. It begins as an estimate in a study, surrounded by the conditions under which it holds. A press office removes the conditions, because a headline cannot carry them. A newspaper removes the word estimate. A second newspaper, reporting the first, removes the source. Within a month the figure is a fact, repeated by people who would be astonished to learn that it was ever a range. The mechanism deserves more attention than the individual errors it produces, because it operates identically on numbers that happen to be true. Nothing in the process selects for accuracy; it selects for portability, and the qualities that make a figure travel are shortness, roundness and the absence of any accompanying condition. A carefully bounded estimate of between eleven and nineteen per cent will lose every race to a confident fifteen. What can be done about this is limited and worth doing anyway. Journalists who print the range rather than the midpoint are read slightly less and are right considerably more often. Researchers who refuse to supply a single figure are treated as difficult and are usually protecting something real. The most useful habit available to an ordinary reader is to ask, on encountering any striking number, what it was before somebody made it memorable. The question is answerable more often than it looks. A figure that has survived the journey intact will usually still carry the word about, or a range, or the name of the body that produced it, and a figure that has lost all three has almost certainly been through the process described here. This is not a test of truth, since a number can be stripped of its conditions and remain correct. It is a test of how much weight the figure can bear, which is a different question and the one that actually matters when somebody is using it to argue for something.",
+  "glossary": [
+   {
+    "w": "estimate",
+    "tr": "tahmin"
+   },
+   {
+    "w": "press office",
+    "tr": "basın bürosu"
+   },
+   {
+    "w": "astonished",
+    "tr": "hayrete düşmüş"
+   },
+   {
+    "w": "mechanism",
+    "tr": "mekanizma"
+   },
+   {
+    "w": "identically",
+    "tr": "aynı biçimde"
+   },
+   {
+    "w": "portability",
+    "tr": "taşınabilirlik"
+   },
+   {
+    "w": "roundness",
+    "tr": "yuvarlaklık"
+   },
+   {
+    "w": "accompanying",
+    "tr": "eşlik eden"
+   },
+   {
+    "w": "bounded",
+    "tr": "sınırlandırılmış"
+   },
+   {
+    "w": "midpoint",
+    "tr": "orta nokta"
+   },
+   {
+    "w": "striking",
+    "tr": "çarpıcı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does a press office remove?",
+    "options": [
+     "The number",
+     "The conditions",
+     "The source",
+     "The word estimate"
+    ],
+    "answer": 1,
+    "note": "\"A press office removes the conditions.\""
+   },
+   {
+    "q": "What does the process select for?",
+    "options": [
+     "Accuracy",
+     "Portability, not accuracy",
+     "Importance",
+     "Novelty"
+    ],
+    "answer": 1,
+    "note": "\"Nothing in the process selects for accuracy; it selects for portability.\""
+   },
+   {
+    "q": "Which figure travels better?",
+    "options": [
+     "A confident fifteen",
+     "A long explanation",
+     "An unrounded number",
+     "A range of eleven to nineteen"
+    ],
+    "answer": 0,
+    "note": "\"Will lose every race to a confident fifteen.\""
+   },
+   {
+    "q": "What does the writer say about journalists who print ranges?",
+    "options": [
+     "Read less, right more often",
+     "Read more, right less often",
+     "Never published",
+     "Always ignored"
+    ],
+    "answer": 0,
+    "note": "\"Are read slightly less and are right considerably more often.\""
+   },
+   {
+    "q": "What habit does the writer recommend?",
+    "options": [
+     "Ignore all statistics",
+     "Trust the researcher",
+     "Ask what the number was before it was made memorable",
+     "Check the newspaper"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-13",
+  "level": "C1",
+  "order": 13,
+  "kind": "reading",
+  "title": "Mimarlıkta korumacılık",
+  "titleEn": "Keeping the Front and Losing the Building",
+  "minutes": 6,
+  "names": [],
+  "text": "A practice has grown up in cities under pressure to build, in which the front wall of a historic building is retained and everything behind it is demolished and replaced. The result satisfies the letter of the protection and empties it of meaning. Defenders of the approach argue, not unreasonably, that the alternative is either a museum city that cannot house anybody or the loss of the front as well. Both consequences are real, and the argument would be stronger if the practice were confined to buildings whose interiors had genuinely been lost. In a considerable number of cases the interior was structurally sound and simply inconvenient. What the practice reveals is a confusion about what protection was ever for. A building is not valuable because of the arrangement of stone visible from the pavement; it is valuable because of the relationship between that arrangement and the rooms it implies, and a façade with a different building behind it is a sentence with the verb removed. Critics sometimes overstate their case by implying that nothing may change, which is indefensible in a city that needs housing. The stronger position accepts substantial change and asks a narrower question: whether what remains still explains itself. A converted warehouse whose windows are in the wrong places for its new use passes that test. A stone front with eleven floors of glass behind it does not, and no amount of architectural language makes the difference invisible to somebody standing on the street.",
+  "glossary": [
+   {
+    "w": "retained",
+    "tr": "korunan"
+   },
+   {
+    "w": "demolished",
+    "tr": "yıkılmış"
+   },
+   {
+    "w": "letter",
+    "tr": "lafzı, harfi"
+   },
+   {
+    "w": "consequences",
+    "tr": "sonuçlar"
+   },
+   {
+    "w": "confined",
+    "tr": "sınırlı"
+   },
+   {
+    "w": "interiors",
+    "tr": "iç mekânlar"
+   },
+   {
+    "w": "structurally",
+    "tr": "yapısal olarak"
+   },
+   {
+    "w": "pavement",
+    "tr": "kaldırım"
+   },
+   {
+    "w": "implies",
+    "tr": "ima eder"
+   },
+   {
+    "w": "façade",
+    "tr": "cephe"
+   },
+   {
+    "w": "indefensible",
+    "tr": "savunulamaz"
+   },
+   {
+    "w": "substantial",
+    "tr": "esaslı, önemli"
+   },
+   {
+    "w": "converted",
+    "tr": "dönüştürülmüş"
+   },
+   {
+    "w": "warehouse",
+    "tr": "depo"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the practice do?",
+    "options": [
+     "Keeps the front and replaces everything behind",
+     "Rebuilds the interior exactly",
+     "Moves the whole building",
+     "Adds a new floor"
+    ],
+    "answer": 0,
+    "note": "\"The front wall... is retained and everything behind it is demolished.\""
+   },
+   {
+    "q": "When would the defenders' argument be stronger?",
+    "options": [
+     "If the city were smaller",
+     "If housing were cheaper",
+     "If the fronts were newer",
+     "If it were used only where interiors were truly lost"
+    ],
+    "answer": 3,
+    "note": "\"If the practice were confined to buildings whose interiors had genuinely been lost.\""
+   },
+   {
+    "q": "What does the writer say a building's value depends on?",
+    "options": [
+     "Its height",
+     "The age of the stone",
+     "The street it stands on",
+     "The relationship between the front and the rooms it implies"
+    ],
+    "answer": 3,
+    "note": "\"The relationship between that arrangement and the rooms it implies.\""
+   },
+   {
+    "q": "How do critics sometimes overstate their case?",
+    "options": [
+     "By ignoring history",
+     "By supporting demolition",
+     "By asking for money",
+     "By implying nothing may change"
+    ],
+    "answer": 3,
+    "note": "\"By implying that nothing may change, which is indefensible.\""
+   },
+   {
+    "q": "What is the narrower question the writer prefers?",
+    "options": [
+     "Whether what remains still explains itself",
+     "Whether the front is original",
+     "Whether the cost is justified",
+     "Whether anybody objects"
+    ],
+    "answer": 0,
+    "note": "\"Whether what remains still explains itself.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-r-14",
+  "level": "C1",
+  "order": 14,
+  "kind": "reading",
+  "title": "Gönüllü yardımın zararı",
+  "titleEn": "When Helping Makes Things Worse",
+  "minutes": 6,
+  "names": [],
+  "text": "After a disaster, donations of clothing arrive in quantities that nobody requested and almost nobody can use. The consequences are well established among people who do this work and almost unknown outside it. Sorting the material consumes the labor of staff who are needed elsewhere. Storing it occupies space that is required for supplies that were requested. Disposing of what cannot be used costs money that was donated for something else, and in several documented cases the cost of destroying unwanted clothing has exceeded its value when new. The same pattern appears with volunteers who arrive without being asked, who must be housed and fed and supervised by an operation already at its limit. None of this is a reason to doubt the generosity. It is a reason to notice that generosity, expressed in the wrong form, transfers the cost of the donor's feelings onto the people being helped. The organizations that handle this well have stopped explaining the economics, which persuades nobody, and have started making the alternative equally satisfying: a photograph of the specific thing a given amount actually bought, sent to the person who sent the money. It works because the problem was never that people are stupid about aid. The problem is that writing a number into a form feels like nothing, and filling a box with coats feels like helping. That asymmetry is not a failure of intelligence and it will not be argued away. It is the same reason that people who will not give blood will queue for hours to carry water, and any organization that treats it as ignorance rather than as a fact about human beings will keep receiving lorries of clothing it cannot use, along with letters expressing surprise that the gratitude was not warmer.",
+  "glossary": [
+   {
+    "w": "donations",
+    "tr": "bağışlar"
+   },
+   {
+    "w": "consequences",
+    "tr": "sonuçlar"
+   },
+   {
+    "w": "sorting",
+    "tr": "ayıklama"
+   },
+   {
+    "w": "consumes",
+    "tr": "tüketir"
+   },
+   {
+    "w": "supplies",
+    "tr": "malzemeler"
+   },
+   {
+    "w": "disposing",
+    "tr": "elden çıkarma"
+   },
+   {
+    "w": "supervised",
+    "tr": "gözetilen"
+   },
+   {
+    "w": "generosity",
+    "tr": "cömertlik"
+   },
+   {
+    "w": "transfers",
+    "tr": "aktarır"
+   },
+   {
+    "w": "economics",
+    "tr": "ekonomi, hesap"
+   },
+   {
+    "w": "persuades",
+    "tr": "ikna eder"
+   },
+   {
+    "w": "aid",
+    "tr": "yardım"
+   },
+   {
+    "w": "asymmetry",
+    "tr": "asimetri, dengesizlik"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does sorting donated clothing consume?",
+    "options": [
+     "The labor of staff needed elsewhere",
+     "Volunteer time only",
+     "Storage space only",
+     "Money only"
+    ],
+    "answer": 0,
+    "note": "\"Sorting the material consumes the labor of staff who are needed elsewhere.\""
+   },
+   {
+    "q": "What has exceeded the clothing's new value?",
+    "options": [
+     "The cost of storing it",
+     "The cost of destroying it",
+     "The cost of shipping it",
+     "The cost of sorting it"
+    ],
+    "answer": 1,
+    "note": "\"The cost of destroying unwanted clothing has exceeded its value when new.\""
+   },
+   {
+    "q": "What is the problem with unasked volunteers?",
+    "options": [
+     "They do not work hard",
+     "They arrive too late",
+     "They take payment",
+     "They must be housed, fed and supervised"
+    ],
+    "answer": 3,
+    "note": "\"Who must be housed and fed and supervised.\""
+   },
+   {
+    "q": "What does misdirected generosity transfer?",
+    "options": [
+     "The cost of the donor's feelings onto those helped",
+     "Risk to the donor",
+     "Money to the wrong charity",
+     "Blame to the volunteers"
+    ],
+    "answer": 0,
+    "note": "\"Transfers the cost of the donor's feelings onto the people being helped.\""
+   },
+   {
+    "q": "What works better than explaining the economics?",
+    "options": [
+     "A photograph of what the money actually bought",
+     "A longer appeal",
+     "Public criticism",
+     "Refusing all goods"
+    ],
+    "answer": 0,
+    "note": "\"A photograph of the specific thing a given amount actually bought.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-r-15",
+  "level": "C1",
+  "order": 15,
+  "kind": "reading",
+  "title": "Sınav sisteminin kendi kendini bozması",
+  "titleEn": "The Target That Ate the Purpose",
+  "minutes": 6,
+  "names": [],
+  "text": "Any measure used to judge performance eventually stops measuring what it was chosen to measure, and the mechanism is not corruption but attention. A hospital judged on waiting times will reduce waiting times, and the reduction will be genuine; what is invisible in the figure is which activities were quietly moved aside to achieve it. A school judged on the proportion of students reaching a threshold will concentrate its effort on the students closest to that threshold, because that is where the effort produces the most movement in the number. Neither institution has cheated. Both have responded rationally to the question they were asked, and the trouble is that the question was a summary of the purpose rather than the purpose itself. The proposed remedies are mostly worse than the disease. Adding more measures multiplies the distortions and consumes the time of the people being measured. Removing measures altogether returns power to whoever is most confident. What survives contact with practice is narrower: keep the measure, publish it, and require the institution to report alongside it a small number of things that the measure would predictably damage. A school that reports its threshold figure next to the performance of its weakest quarter has not solved the problem, but it has made the trade-off visible to the people who chose it, which is the most that any system of measurement can honestly promise. The objection to this is that it makes the institution look worse, and that objection is correct. A school publishing both figures will be compared unfavorably with one publishing only the flattering one, at least until the practice becomes general. This is the ordinary difficulty of going first, and it is the reason such changes almost never come from the institutions themselves. They come from whoever is in a position to require the second figure from everybody at once.",
+  "glossary": [
+   {
+    "w": "corruption",
+    "tr": "yolsuzluk"
+   },
+   {
+    "w": "threshold",
+    "tr": "eşik, baraj"
+   },
+   {
+    "w": "proportion",
+    "tr": "oran"
+   },
+   {
+    "w": "rationally",
+    "tr": "akılcı biçimde"
+   },
+   {
+    "w": "summary",
+    "tr": "özet"
+   },
+   {
+    "w": "remedies",
+    "tr": "çareler"
+   },
+   {
+    "w": "multiplies",
+    "tr": "çoğaltır"
+   },
+   {
+    "w": "distortions",
+    "tr": "çarpıtmalar"
+   },
+   {
+    "w": "predictably",
+    "tr": "öngörülebilir biçimde"
+   },
+   {
+    "w": "trade-off",
+    "tr": "ödünleşim, denge"
+   },
+   {
+    "w": "measurement",
+    "tr": "ölçme"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the mechanism behind the problem?",
+    "options": [
+     "Attention, not corruption",
+     "Bad data",
+     "Poor management",
+     "Deliberate cheating"
+    ],
+    "answer": 0,
+    "note": "\"The mechanism is not corruption but attention.\""
+   },
+   {
+    "q": "What does a school judged on a threshold do?",
+    "options": [
+     "Teaches everybody equally",
+     "Concentrates on students closest to it",
+     "Refuses weak students",
+     "Lowers the threshold"
+    ],
+    "answer": 1,
+    "note": "\"Will concentrate its effort on the students closest to that threshold.\""
+   },
+   {
+    "q": "What is wrong with adding more measures?",
+    "options": [
+     "It multiplies distortions and consumes time",
+     "It is illegal",
+     "It works too slowly",
+     "It costs nothing"
+    ],
+    "answer": 0,
+    "note": "\"Adding more measures multiplies the distortions.\""
+   },
+   {
+    "q": "What happens if measures are removed?",
+    "options": [
+     "Power returns to whoever is most confident",
+     "Nothing changes",
+     "Costs rise",
+     "Everything improves"
+    ],
+    "answer": 0,
+    "note": "\"Removing measures altogether returns power to whoever is most confident.\""
+   },
+   {
+    "q": "What does the writer recommend?",
+    "options": [
+     "Abolish all targets",
+     "Use a single perfect measure",
+     "Report the measure next to what it would damage",
+     "Let institutions choose"
+    ],
+    "answer": 2,
+    "note": "\"Require the institution to report alongside it a small number of things that the measure would predictably damage.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-r-16",
+  "level": "C1",
+  "order": 16,
+  "kind": "reading",
+  "title": "Tarafsızlık iddiası",
+  "titleEn": "The Trouble With Both Sides",
+  "minutes": 6,
+  "names": [],
+  "text": "A reporter who gives equal space to two positions has done something that looks like fairness and may be its opposite. Where the evidence genuinely divides a field, balance describes the situation accurately. Where it does not, the same practice manufactures a disagreement that exists only on the page, and does so in a form the reader cannot detect, since nothing in the article discloses the proportions outside it. The defense usually offered is that the reader should decide. This sounds respectful and quietly transfers to the reader a task the reader cannot perform, because the information needed to weigh the two accounts is precisely what has been left out. A reader who is told that some researchers hold one view and others hold another has been given no way of knowing whether the split is nine to one or one to nine, and in most disputes that ratio is the entire question. The alternative is not to suppress the smaller position, which would be both dishonest and unwise, since fields have been wrong before and the correction usually starts small. It is to report the position and the weight it carries in the same sentence. Journalists resist this because it requires a judgment, and judgments can be criticized in a way that quotation cannot. That is true, and it is also the job. A newspaper that will not weigh evidence has not avoided taking a position; it has taken the position that all positions are equally supported, which is a claim about the world and one that is very often false.",
+  "glossary": [
+   {
+    "w": "manufactures",
+    "tr": "imal eder, üretir"
+   },
+   {
+    "w": "discloses",
+    "tr": "açıklar"
+   },
+   {
+    "w": "proportions",
+    "tr": "oranlar"
+   },
+   {
+    "w": "respectful",
+    "tr": "saygılı"
+   },
+   {
+    "w": "accounts",
+    "tr": "anlatımlar"
+   },
+   {
+    "w": "ratio",
+    "tr": "oran"
+   },
+   {
+    "w": "suppress",
+    "tr": "bastırmak"
+   },
+   {
+    "w": "unwise",
+    "tr": "akılsızca"
+   },
+   {
+    "w": "quotation",
+    "tr": "alıntı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When is balance accurate?",
+    "options": [
+     "Never",
+     "Always",
+     "Only in politics",
+     "Where the evidence genuinely divides a field"
+    ],
+    "answer": 3,
+    "note": "\"Where the evidence genuinely divides a field, balance describes the situation accurately.\""
+   },
+   {
+    "q": "Why can the reader not detect the problem?",
+    "options": [
+     "Sources are hidden",
+     "The article is too short",
+     "Nothing in the article discloses the proportions",
+     "The language is technical"
+    ],
+    "answer": 2,
+    "note": "\"Nothing in the article discloses the proportions outside it.\""
+   },
+   {
+    "q": "What is wrong with 'the reader should decide'?",
+    "options": [
+     "It takes too long",
+     "Readers are not interested",
+     "The reader lacks the information needed to decide",
+     "It is against the law"
+    ],
+    "answer": 2,
+    "note": "\"The information needed to weigh the two accounts is precisely what has been left out.\""
+   },
+   {
+    "q": "Why should the smaller position not be suppressed?",
+    "options": [
+     "It is always correct",
+     "Readers demand it",
+     "It sells newspapers",
+     "Fields have been wrong before"
+    ],
+    "answer": 3,
+    "note": "\"Fields have been wrong before and the correction usually starts small.\""
+   },
+   {
+    "q": "What position does a newspaper take by refusing to weigh evidence?",
+    "options": [
+     "That nothing can be known",
+     "That all positions are equally supported",
+     "No position at all",
+     "That the majority is right"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-17",
+  "level": "C1",
+  "order": 17,
+  "kind": "reading",
+  "title": "Kariyer değiştirmenin gerçek maliyeti",
+  "titleEn": "Counting the Cost of Starting Again",
+  "minutes": 6,
+  "names": [],
+  "text": "People considering a change of career calculate the salary they will forgo and stop there, which understates the cost in one direction and overstates it in another. The understatement is the loss of position within a hierarchy of competence. A person with fifteen years in a field does not merely earn more; they are consulted, their judgment is trusted without explanation, and a great deal of their working day runs on a credit that was accumulated slowly and cannot be transferred. Moving means being the person whose suggestions are politely noted. Very few people who describe the financial arithmetic mention this, and a considerable number of those who return to their old field name it as the reason. The overstatement lies in the assumption that the fifteen years are lost. In practice the portable part is larger than it looks, and it is rarely the technical part. Knowing how a decision actually gets made, how to tell a real deadline from a performance, and how to say no without damage: these survive the move intact, and their value in a new field is frequently higher, because the people who have them are scarcer there. The honest summary is that the transferable skills are real and the transferable status is not. A person who understands this before moving tends to plan for eighteen difficult months and to be pleasantly surprised. A person who does not tends to interpret the eighteen months as evidence of a mistake.",
+  "glossary": [
+   {
+    "w": "forgo",
+    "tr": "vazgeçmek"
+   },
+   {
+    "w": "understates",
+    "tr": "eksik gösterir"
+   },
+   {
+    "w": "overstates",
+    "tr": "abartır"
+   },
+   {
+    "w": "hierarchy",
+    "tr": "hiyerarşi"
+   },
+   {
+    "w": "competence",
+    "tr": "yetkinlik"
+   },
+   {
+    "w": "consulted",
+    "tr": "kendisine danışılan"
+   },
+   {
+    "w": "accumulated",
+    "tr": "birikmiş"
+   },
+   {
+    "w": "portable",
+    "tr": "taşınabilir"
+   },
+   {
+    "w": "scarcer",
+    "tr": "daha az bulunur"
+   },
+   {
+    "w": "transferable",
+    "tr": "aktarılabilir"
+   },
+   {
+    "w": "status",
+    "tr": "konum, statü"
+   },
+   {
+    "w": "interpret",
+    "tr": "yorumlamak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What do people usually calculate?",
+    "options": [
+     "The risk of failure",
+     "The salary they will give up",
+     "The time required",
+     "The new skills needed"
+    ],
+    "answer": 1,
+    "note": "\"People... calculate the salary they will forgo and stop there.\""
+   },
+   {
+    "q": "What is the hidden loss?",
+    "options": [
+     "Office space",
+     "Position within a hierarchy of competence",
+     "Pension rights",
+     "Friendships"
+    ],
+    "answer": 1,
+    "note": "\"The loss of position within a hierarchy of competence.\""
+   },
+   {
+    "q": "What does the writer say is portable?",
+    "options": [
+     "Technical knowledge",
+     "Professional contacts",
+     "Seniority",
+     "Knowing how decisions actually get made"
+    ],
+    "answer": 3,
+    "note": "\"Knowing how a decision actually gets made... these survive the move intact.\""
+   },
+   {
+    "q": "Why is that knowledge more valuable in a new field?",
+    "options": [
+     "It is better paid",
+     "The people who have it are scarcer there",
+     "It is easier to prove",
+     "It is formally required"
+    ],
+    "answer": 1,
+    "note": "\"Because the people who have them are scarcer there.\""
+   },
+   {
+    "q": "How does an unprepared person read the first eighteen months?",
+    "options": [
+     "As a success",
+     "As too short",
+     "As normal",
+     "As evidence of a mistake"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-18",
+  "level": "C1",
+  "order": 18,
+  "kind": "reading",
+  "title": "Kentin gece hayatı kimin",
+  "titleEn": "Who the Night Belongs To",
+  "minutes": 6,
+  "names": [],
+  "text": "The argument about noise in a city center is usually presented as residents against businesses, which is accurate about the parties and misleading about the substance. What is actually in dispute is the order in which people arrived and what that entitles them to. A person who buys a flat above a bar that has operated for thirty years has a weaker case than one whose quiet street acquired a bar last spring, and most legal systems recognize some version of this, though rarely in a form that resolves anything. The practical difficulty is that both changes happen at once. Districts become desirable because they are lively, which raises prices, which brings residents who can afford the prices and did not come for the liveliness. Within a decade the venues that created the value are closed by complaints from people who moved there because of them. Several cities have tried to break this loop by attaching the obligation to the building rather than the occupant. A flat built near an existing venue must be constructed to a higher standard of insulation, and the cost falls on the developer who profits from the location rather than on the business that was there first. Where this has been tried it has worked better than any system of curfews, and it has one property that makes it politically survivable: it does not require anybody to decide who was right. The objection raised by developers is that the requirement makes some sites unbuildable, and in a small number of cases that is true and is the intended effect. A flat that cannot be built to a standard where its occupant will sleep is a flat that will generate complaints for as long as it stands, and permitting it transfers a permanent problem to the venue in exchange for a single sale.",
+  "glossary": [
+   {
+    "w": "residents",
+    "tr": "sakinler"
+   },
+   {
+    "w": "substance",
+    "tr": "esas mesele"
+   },
+   {
+    "w": "entitles",
+    "tr": "hak kazandırır"
+   },
+   {
+    "w": "acquired",
+    "tr": "edindi"
+   },
+   {
+    "w": "resolves",
+    "tr": "çözer"
+   },
+   {
+    "w": "districts",
+    "tr": "semtler"
+   },
+   {
+    "w": "desirable",
+    "tr": "rağbet gören"
+   },
+   {
+    "w": "liveliness",
+    "tr": "canlılık"
+   },
+   {
+    "w": "venues",
+    "tr": "mekânlar"
+   },
+   {
+    "w": "obligation",
+    "tr": "yükümlülük"
+   },
+   {
+    "w": "occupant",
+    "tr": "oturan kişi"
+   },
+   {
+    "w": "insulation",
+    "tr": "yalıtım"
+   },
+   {
+    "w": "developer",
+    "tr": "müteahhit"
+   },
+   {
+    "w": "curfews",
+    "tr": "kapanış saatleri"
+   },
+   {
+    "w": "loop",
+    "tr": "döngü, kısır döngü"
+   },
+   {
+    "w": "insulate",
+    "tr": "yalıtmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is actually in dispute?",
+    "options": [
+     "The level of the noise",
+     "The closing hour",
+     "Who arrived first and what that entitles them to",
+     "The price of property"
+    ],
+    "answer": 2,
+    "note": "\"What is actually in dispute is the order in which people arrived.\""
+   },
+   {
+    "q": "What is the loop the writer describes?",
+    "options": [
+     "Prices fall then rise",
+     "Liveliness raises prices, which brings people who close the venues",
+     "Noise drives everybody away",
+     "Businesses replace each other"
+    ],
+    "answer": 1,
+    "note": "\"The venues that created the value are closed by complaints from people who moved there because of them.\""
+   },
+   {
+    "q": "What have several cities attached to the building?",
+    "options": [
+     "A noise limit",
+     "A higher tax",
+     "A closing hour",
+     "The obligation to insulate"
+    ],
+    "answer": 3,
+    "note": "\"Attaching the obligation to the building rather than the occupant.\""
+   },
+   {
+    "q": "Who pays under that system?",
+    "options": [
+     "The city",
+     "The developer who profits from the location",
+     "The venue",
+     "The resident"
+    ],
+    "answer": 1,
+    "note": "\"The cost falls on the developer who profits from the location.\""
+   },
+   {
+    "q": "Why is the approach politically survivable?",
+    "options": [
+     "Nobody has to be declared right",
+     "It closes the venues slowly",
+     "It costs nothing",
+     "It is popular with residents"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-19",
+  "level": "C1",
+  "order": 19,
+  "kind": "reading",
+  "title": "Kötü haberi erken vermek",
+  "titleEn": "The Cost of Waiting to Tell",
+  "minutes": 6,
+  "names": [],
+  "text": "Organizations that discover a problem almost always delay the announcement, and the reasons given are almost always reasonable in isolation. The facts are incomplete. A partial statement would cause unnecessary alarm. The investigation should be allowed to establish what happened before anybody speaks. Each of these is true, and their combined effect is a delay that converts a manageable failure into a scandal about concealment, which is a considerably worse thing to be accused of than the original error. The pattern is consistent enough to be treated as a law. What the delay actually purchases is not accuracy but the appearance of control, and it purchases it from the wrong account. Every week of silence increases the probability that the information will emerge through somebody else, and the difference between an organization that discloses and an organization that is caught is the difference between a bad month and a decade of distrust. Institutions that handle this well share one uncomfortable habit. They have decided in advance, in writing, what threshold of evidence triggers disclosure, and they have decided it at a moment when no incident is in progress. The rule is not written to be wise; it is written to be binding on people who will, at the relevant moment, be frightened, defensive and entirely convinced that this particular case is different. That conviction is worth taking seriously as a symptom rather than an argument. It arrives in every case, including the ones that later turn out to have been ordinary, and an organization that has felt it four times and been wrong four times has learned something that no amount of reasoning in the moment will supply. The rule exists to carry that learning across into a week when nobody can remember it.",
+  "glossary": [
+   {
+    "w": "isolation",
+    "tr": "tek başına"
+   },
+   {
+    "w": "partial",
+    "tr": "kısmi"
+   },
+   {
+    "w": "alarm",
+    "tr": "telaş"
+   },
+   {
+    "w": "investigation",
+    "tr": "soruşturma"
+   },
+   {
+    "w": "manageable",
+    "tr": "yönetilebilir"
+   },
+   {
+    "w": "scandal",
+    "tr": "skandal"
+   },
+   {
+    "w": "concealment",
+    "tr": "gizleme"
+   },
+   {
+    "w": "purchases",
+    "tr": "satın alır"
+   },
+   {
+    "w": "probability",
+    "tr": "olasılık"
+   },
+   {
+    "w": "discloses",
+    "tr": "açıklar"
+   },
+   {
+    "w": "distrust",
+    "tr": "güvensizlik"
+   },
+   {
+    "w": "threshold",
+    "tr": "eşik"
+   },
+   {
+    "w": "triggers",
+    "tr": "tetikler"
+   },
+   {
+    "w": "binding",
+    "tr": "bağlayıcı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the writer say about the reasons for delay?",
+    "options": [
+     "They are always dishonest",
+     "They are legally required",
+     "They are never given",
+     "Each is reasonable in isolation"
+    ],
+    "answer": 3,
+    "note": "\"The reasons given are almost always reasonable in isolation.\""
+   },
+   {
+    "q": "What does the delay convert the failure into?",
+    "options": [
+     "A minor error",
+     "A scandal about concealment",
+     "A financial loss",
+     "A legal case"
+    ],
+    "answer": 1,
+    "note": "\"Converts a manageable failure into a scandal about concealment.\""
+   },
+   {
+    "q": "What does the delay actually purchase?",
+    "options": [
+     "Accuracy",
+     "Time to fix the problem",
+     "The appearance of control",
+     "Legal protection"
+    ],
+    "answer": 2,
+    "note": "\"What the delay actually purchases is not accuracy but the appearance of control.\""
+   },
+   {
+    "q": "What is the difference between disclosing and being caught?",
+    "options": [
+     "A bad month against a decade of distrust",
+     "Nothing at all",
+     "A week against a year",
+     "A fine against a warning"
+    ],
+    "answer": 0,
+    "note": "\"The difference between a bad month and a decade of distrust.\""
+   },
+   {
+    "q": "Why is the rule written in advance?",
+    "options": [
+     "To satisfy the law",
+     "To impress the public",
+     "To save time",
+     "To bind people who will later be frightened and defensive"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-20",
+  "level": "C1",
+  "order": 20,
+  "kind": "reading",
+  "title": "Klasiklerin yeniden çevrilmesi",
+  "titleEn": "Why Translations Age Faster Than Books",
+  "minutes": 6,
+  "names": [],
+  "text": "A novel written two centuries ago can still be read without difficulty in its own language, while a translation made sixty years ago often feels distinctly older than the original. The reason is not that translators write badly. It is that a translation is a reading, and a reading is made of the assumptions of its moment: what counts as natural speech, what may be said directly, which foreign words a reader is expected to know. The original carries its age openly, and the reader adjusts. The translation carries two ages at once, and the second is invisible, which is why it grates. This has a consequence that publishers understand and readers often resent. Retranslation is not a commercial trick but a structural necessity, and a literature that stops retranslating gradually loses access to works it believes it possesses. The resentment is understandable. A reader who loved a particular version is being told that the book they loved was partly the translator's, which is true and unwelcome. The most useful thing a new edition can do is decline to pretend otherwise. Editions that print a short note explaining what the previous translator was trying to achieve, and where the new one has decided differently, convert an apparent insult into the only thing it actually is: evidence that somebody has been reading the book closely for two hundred years. There is a limit to how far this can be pushed. A work retranslated every fifteen years by publishers competing for the same small market produces versions that differ mainly in their marketing, and readers are right to be suspicious of a new edition whose only visible argument is that it is new. The distinction is not difficult to draw in practice, and it rests on whether the translator can say what the previous version got wrong.",
+  "glossary": [
+   {
+    "w": "translation",
+    "tr": "çeviri"
+   },
+   {
+    "w": "distinctly",
+    "tr": "belirgin biçimde"
+   },
+   {
+    "w": "assumptions",
+    "tr": "varsayımlar"
+   },
+   {
+    "w": "adjusts",
+    "tr": "uyum sağlar"
+   },
+   {
+    "w": "grates",
+    "tr": "tırmalar, rahatsız eder"
+   },
+   {
+    "w": "resent",
+    "tr": "içerlemek"
+   },
+   {
+    "w": "retranslation",
+    "tr": "yeniden çeviri"
+   },
+   {
+    "w": "structural",
+    "tr": "yapısal"
+   },
+   {
+    "w": "necessity",
+    "tr": "zorunluluk"
+   },
+   {
+    "w": "possesses",
+    "tr": "sahiptir"
+   },
+   {
+    "w": "edition",
+    "tr": "baskı"
+   },
+   {
+    "w": "apparent",
+    "tr": "görünürdeki"
+   },
+   {
+    "w": "insult",
+    "tr": "hakaret"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does a translation age faster?",
+    "options": [
+     "Paper wears out",
+     "Languages change faster",
+     "Translators write badly",
+     "It is made of the assumptions of its moment"
+    ],
+    "answer": 3,
+    "note": "\"A translation is a reading, and a reading is made of the assumptions of its moment.\""
+   },
+   {
+    "q": "What does the writer say about the original's age?",
+    "options": [
+     "It grows faster",
+     "It is carried openly and the reader adjusts",
+     "It is hidden",
+     "It cannot be noticed"
+    ],
+    "answer": 1,
+    "note": "\"The original carries its age openly, and the reader adjusts.\""
+   },
+   {
+    "q": "What is retranslation described as?",
+    "options": [
+     "A commercial trick",
+     "An insult to readers",
+     "A structural necessity",
+     "A rare event"
+    ],
+    "answer": 2,
+    "note": "\"Retranslation is not a commercial trick but a structural necessity.\""
+   },
+   {
+    "q": "Why do readers resent it?",
+    "options": [
+     "Publishers say so",
+     "The book they loved was partly the translator's",
+     "The new edition costs more",
+     "The old one disappears"
+    ],
+    "answer": 1,
+    "note": "\"The book they loved was partly the translator's, which is true and unwelcome.\""
+   },
+   {
+    "q": "What should a new edition do?",
+    "options": [
+     "Use fewer notes",
+     "Keep the same wording",
+     "Explain what the previous translator was trying to achieve",
+     "Ignore the old version"
+    ],
+    "answer": 2,
+    "note": "\"Editions that print a short note explaining what the previous translator was trying to achieve.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-r-21",
+  "level": "C1",
+  "order": 21,
+  "kind": "reading",
+  "title": "Bağışlanan koleksiyon",
+  "titleEn": "The Gift With Conditions",
+  "minutes": 6,
+  "names": [],
+  "text": "A private collector who leaves a collection to a public institution almost always attaches conditions, and the conditions are almost always the part that causes trouble thirty years later. The most common is that the works must be displayed together and in the arrangement the donor chose. This sounds modest and is not. A museum that accepts it has agreed to give a permanent room to a particular taste, and taste is the one thing in a collection guaranteed to date. Rooms of this kind exist in most large institutions, and they are recognizable at once: well lit, carefully maintained, and visited chiefly by people looking for the way out. The institutions are not free to reconsider, since the condition was the price of the gift and the family is usually still watching. Refusing such gifts is harder than it looks. A curator who declines a significant collection on the grounds that the conditions are unwise will be overruled by a board that sees a valuable acquisition at no cost, and the curator will have left by the time the difficulty becomes visible. The compromise that works is dull and requires patience: accept the collection, agree to display it in full for a fixed term of perhaps twenty years, and record in the same document what happens afterwards. Donors resist this, which is informative. A gift intended to enrich a collection survives a time limit without difficulty. A gift intended to secure a reputation does not.",
+  "glossary": [
+   {
+    "w": "collector",
+    "tr": "koleksiyoncu"
+   },
+   {
+    "w": "donor",
+    "tr": "bağışçı"
+   },
+   {
+    "w": "permanent",
+    "tr": "kalıcı"
+   },
+   {
+    "w": "guaranteed",
+    "tr": "garantili"
+   },
+   {
+    "w": "date",
+    "tr": "eskimek"
+   },
+   {
+    "w": "maintained",
+    "tr": "bakımlı"
+   },
+   {
+    "w": "chiefly",
+    "tr": "başlıca"
+   },
+   {
+    "w": "curator",
+    "tr": "küratör"
+   },
+   {
+    "w": "overruled",
+    "tr": "kararı bozulan"
+   },
+   {
+    "w": "acquisition",
+    "tr": "kazanım, edinim"
+   },
+   {
+    "w": "compromise",
+    "tr": "uzlaşma"
+   },
+   {
+    "w": "informative",
+    "tr": "öğretici, bilgi verici"
+   },
+   {
+    "w": "enrich",
+    "tr": "zenginleştirmek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the most common condition?",
+    "options": [
+     "The works must never be sold",
+     "The donor's name must appear",
+     "The room must be free to enter",
+     "The works must stay together in the donor's arrangement"
+    ],
+    "answer": 3,
+    "note": "\"The works must be displayed together and in the arrangement the donor chose.\""
+   },
+   {
+    "q": "Why is that condition not modest?",
+    "options": [
+     "It gives a permanent room to a taste that will date",
+     "It blocks research",
+     "It costs too much",
+     "It prevents loans"
+    ],
+    "answer": 0,
+    "note": "\"Taste is the one thing in a collection guaranteed to date.\""
+   },
+   {
+    "q": "Why is refusing such gifts hard?",
+    "options": [
+     "Donors pay the staff",
+     "A board sees a valuable acquisition at no cost",
+     "Curators want the works",
+     "The law forbids refusal"
+    ],
+    "answer": 1,
+    "note": "\"Will be overruled by a board that sees a valuable acquisition at no cost.\""
+   },
+   {
+    "q": "What compromise does the writer suggest?",
+    "options": [
+     "Store the works",
+     "Refuse all conditions",
+     "Display in full for a fixed term, then reconsider",
+     "Accept everything"
+    ],
+    "answer": 2,
+    "note": "\"Agree to display it in full for a fixed term of perhaps twenty years.\""
+   },
+   {
+    "q": "What does resistance to a time limit reveal?",
+    "options": [
+     "The family disagrees",
+     "The collection is valuable",
+     "The donor is generous",
+     "The gift was meant to secure a reputation"
+    ],
+    "answer": 3,
+    "note": "Son iki cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-22",
+  "level": "C1",
+  "order": 22,
+  "kind": "reading",
+  "title": "Kurallara harfiyen uymak",
+  "titleEn": "Working Exactly to the Rules",
+  "minutes": 6,
+  "names": [],
+  "text": "When workers in a dispute decide to follow every written procedure precisely, the operation slows to a degree that surprises everybody including the workers. This is generally reported as a tactic, and it is, but the interesting part is what it demonstrates about ordinary weeks. A system that fails when its rules are obeyed exactly was never running on its rules. It was running on continuous small judgments about which rule to relax, and those judgments were being made by people who were never asked to make them, are not paid for making them, and would be disciplined if a relaxation went wrong. Management responses divide predictably. The common one is to treat the slowdown as bad faith, which is accurate as a description of the intent and useless as an analysis of the mechanism. The rarer one is to ask which rules were being quietly ignored and why, and this occasionally produces the discovery that a procedure written eleven years ago for equipment that no longer exists has been formally in force and universally disregarded throughout. Neither response resolves the dispute, which is about something else. But an organization that has been through this and taken the second route emerges with a rulebook that describes what it actually does, which is rarer than it should be and worth more than the argument that produced it. There is a reason this outcome is uncommon. Rewriting a rulebook to match practice requires somebody senior to put in writing that a rule has been broken for years with the knowledge of everybody involved, and the natural instinct is to restate the rule instead and hope. That instinct is understandable and it guarantees a repeat performance, because the pressures that produced the informal relaxations are still there on the Monday after the dispute ends.",
+  "glossary": [
+   {
+    "w": "dispute",
+    "tr": "uyuşmazlık, iş anlaşmazlığı"
+   },
+   {
+    "w": "procedure",
+    "tr": "prosedür, usul"
+   },
+   {
+    "w": "tactic",
+    "tr": "taktik"
+   },
+   {
+    "w": "demonstrates",
+    "tr": "gösterir"
+   },
+   {
+    "w": "obeyed",
+    "tr": "uyulan"
+   },
+   {
+    "w": "continuous",
+    "tr": "sürekli"
+   },
+   {
+    "w": "relax",
+    "tr": "gevşetmek"
+   },
+   {
+    "w": "disciplined",
+    "tr": "cezalandırılmış"
+   },
+   {
+    "w": "bad faith",
+    "tr": "kötü niyet"
+   },
+   {
+    "w": "mechanism",
+    "tr": "mekanizma"
+   },
+   {
+    "w": "in force",
+    "tr": "yürürlükte"
+   },
+   {
+    "w": "disregarded",
+    "tr": "göz ardı edilen"
+   },
+   {
+    "w": "rulebook",
+    "tr": "kural kitabı"
+   },
+   {
+    "w": "slowdown",
+    "tr": "yavaşlatma eylemi"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the slowdown demonstrate?",
+    "options": [
+     "The rules are too few",
+     "Management is absent",
+     "The workers are slow",
+     "The system was never running on its rules"
+    ],
+    "answer": 3,
+    "note": "\"A system that fails when its rules are obeyed exactly was never running on its rules.\""
+   },
+   {
+    "q": "Who was making the small judgments?",
+    "options": [
+     "The rule writers",
+     "People never asked or paid to make them",
+     "Nobody",
+     "Senior managers"
+    ],
+    "answer": 1,
+    "note": "\"Made by people who were never asked to make them, are not paid for making them.\""
+   },
+   {
+    "q": "What is the common management response?",
+    "options": [
+     "Pay more",
+     "Ask which rules were ignored",
+     "Treat the slowdown as bad faith",
+     "Rewrite the rulebook"
+    ],
+    "answer": 2,
+    "note": "\"The common one is to treat the slowdown as bad faith.\""
+   },
+   {
+    "q": "What can the rarer response discover?",
+    "options": [
+     "Workers breaking the law",
+     "Missing pay records",
+     "A faster procedure",
+     "Rules in force for equipment that no longer exists"
+    ],
+    "answer": 3,
+    "note": "\"A procedure written eleven years ago for equipment that no longer exists.\""
+   },
+   {
+    "q": "What does an organization taking the second route gain?",
+    "options": [
+     "A rulebook describing what it actually does",
+     "Lower costs",
+     "An end to the dispute",
+     "More staff"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-23",
+  "level": "C1",
+  "order": 23,
+  "kind": "reading",
+  "title": "Deniz seviyesinden önce gelen",
+  "titleEn": "The Water That Arrives First",
+  "minutes": 6,
+  "names": [],
+  "text": "Coastal planning concentrates on the level of the sea, which is measurable and rises slowly, and pays much less attention to the thing that reaches a town decades earlier. Salt moves through ground water long before any street is under water, and it moves horizontally through soil in a way that is invisible from the surface until wells turn brackish and trees that have stood for a century begin to die from the roots. A community can therefore lose its agriculture, its drinking water and a substantial share of its property value while every photograph of the coastline looks reassuringly unchanged. Defences designed against waves do nothing about this, since the water is not arriving over anything. What makes the problem politically difficult is that it has no moment. A storm produces a date, a photograph and a budget. A gradual rise in the salt content of a well produces a series of slightly worse harvests and an argument about whether the farmer is managing the land properly. By the time the pattern is undeniable the affordable responses have usually expired. The places that have handled it best are the ones that began monitoring wells thirty years before they expected trouble, which is an unglamorous program to fund and the only one that produces the evidence at the moment it can still be used. The cost of such monitoring is trivial next to any of the responses it later makes possible, which is the usual shape of this kind of problem and the usual reason it is not done. A budget line that pays for readings nobody is alarmed by is indistinguishable, in a difficult year, from a budget line that pays for nothing at all.",
+  "glossary": [
+   {
+    "w": "coastal",
+    "tr": "kıyı"
+   },
+   {
+    "w": "horizontally",
+    "tr": "yatay olarak"
+   },
+   {
+    "w": "soil",
+    "tr": "toprak"
+   },
+   {
+    "w": "wells",
+    "tr": "kuyular"
+   },
+   {
+    "w": "brackish",
+    "tr": "acı, tuzlu"
+   },
+   {
+    "w": "roots",
+    "tr": "kökler"
+   },
+   {
+    "w": "agriculture",
+    "tr": "tarım"
+   },
+   {
+    "w": "reassuringly",
+    "tr": "içi rahatlatacak biçimde"
+   },
+   {
+    "w": "defences",
+    "tr": "savunma yapıları"
+   },
+   {
+    "w": "harvests",
+    "tr": "hasatlar"
+   },
+   {
+    "w": "undeniable",
+    "tr": "inkâr edilemez"
+   },
+   {
+    "w": "expired",
+    "tr": "süresi dolmuş"
+   },
+   {
+    "w": "monitoring",
+    "tr": "izleme"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What arrives decades before the sea?",
+    "options": [
+     "Storms",
+     "Salt in the ground water",
+     "Stronger winds",
+     "Higher tides"
+    ],
+    "answer": 1,
+    "note": "\"Salt moves through ground water long before any street is under water.\""
+   },
+   {
+    "q": "How is the change first noticed?",
+    "options": [
+     "Boats cannot dock",
+     "Beaches shrink",
+     "Wells turn brackish and old trees die",
+     "Streets flood"
+    ],
+    "answer": 2,
+    "note": "\"Wells turn brackish and trees... begin to die from the roots.\""
+   },
+   {
+    "q": "Why do wave defences not help?",
+    "options": [
+     "They were built badly",
+     "The water is not arriving over anything",
+     "They are too low",
+     "They are too expensive"
+    ],
+    "answer": 1,
+    "note": "\"Since the water is not arriving over anything.\""
+   },
+   {
+    "q": "Why is the problem politically difficult?",
+    "options": [
+     "It has no single moment",
+     "Nobody believes it",
+     "It affects few people",
+     "It is too costly"
+    ],
+    "answer": 0,
+    "note": "\"What makes the problem politically difficult is that it has no moment.\""
+   },
+   {
+    "q": "What have the best-prepared places done?",
+    "options": [
+     "Built higher walls",
+     "Changed crops",
+     "Monitored wells thirty years in advance",
+     "Moved the population"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c1-r-24",
+  "level": "C1",
+  "order": 24,
+  "kind": "reading",
+  "title": "Mülakatın ölçtüğü şey",
+  "titleEn": "What the Interview Actually Tests",
+  "minutes": 6,
+  "names": [],
+  "text": "The unstructured interview, in which a manager talks to a candidate for forty minutes and forms an impression, is among the most thoroughly studied selection methods and among the least predictive. Its accuracy is close to that of a brief work sample and considerably below that of a structured conversation in which every candidate is asked the same questions in the same order and scored against agreed criteria. These findings have been stable for decades and have changed practice remarkably little, which is itself the interesting fact. The explanation is not ignorance. Managers who know the evidence continue to trust their impressions, and the reason they give, when pressed, is that the structured version feels mechanical and prevents them from following up something interesting. This is accurate, and it is precisely the mechanism by which the unstructured version fails: following up something interesting means spending the available time on whatever the candidate happened to make vivid, and vividness is not evidence. There is a further difficulty that rarely appears in the research. An interview is not only a measurement; it is the candidate's first experience of the organization, and a process that treats them as a set of scores communicates something true about what the job will be like. The firms that have resolved this tend to run the structured assessment and then add a separate, explicitly unscored conversation whose purpose is to let the candidate decide. That second conversation is worth protecting from the first. As soon as anything said in it can affect the outcome, the candidate returns to performing and the organization loses the only part of the process in which it might have heard something true about how it looks from outside.",
+  "glossary": [
+   {
+    "w": "unstructured",
+    "tr": "yapılandırılmamış"
+   },
+   {
+    "w": "candidate",
+    "tr": "aday"
+   },
+   {
+    "w": "predictive",
+    "tr": "öngörücü"
+   },
+   {
+    "w": "work sample",
+    "tr": "iş örneği"
+   },
+   {
+    "w": "criteria",
+    "tr": "ölçütler"
+   },
+   {
+    "w": "ignorance",
+    "tr": "bilgisizlik"
+   },
+   {
+    "w": "mechanical",
+    "tr": "mekanik"
+   },
+   {
+    "w": "vivid",
+    "tr": "canlı, çarpıcı"
+   },
+   {
+    "w": "vividness",
+    "tr": "canlılık, çarpıcılık"
+   },
+   {
+    "w": "assessment",
+    "tr": "değerlendirme"
+   },
+   {
+    "w": "explicitly",
+    "tr": "açıkça"
+   },
+   {
+    "w": "unscored",
+    "tr": "puanlanmayan"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How accurate is the unstructured interview?",
+    "options": [
+     "Better than a work sample",
+     "The most accurate method",
+     "Close to a brief work sample and below structured methods",
+     "Completely useless"
+    ],
+    "answer": 2,
+    "note": "\"Its accuracy is close to that of a brief work sample and considerably below that of a structured conversation.\""
+   },
+   {
+    "q": "What is the interesting fact?",
+    "options": [
+     "Nobody has studied it",
+     "The method is banned",
+     "Managers agree with the research",
+     "The findings have changed practice very little"
+    ],
+    "answer": 3,
+    "note": "\"Have changed practice remarkably little, which is itself the interesting fact.\""
+   },
+   {
+    "q": "What reason do managers give?",
+    "options": [
+     "Structure takes too long",
+     "It costs more",
+     "Structure prevents following up something interesting",
+     "Candidates dislike it"
+    ],
+    "answer": 2,
+    "note": "\"The structured version feels mechanical and prevents them from following up something interesting.\""
+   },
+   {
+    "q": "Why is that reason the mechanism of failure?",
+    "options": [
+     "Candidates lie",
+     "Managers run out of time",
+     "Time goes to whatever is vivid, and vividness is not evidence",
+     "Questions are too hard"
+    ],
+    "answer": 2,
+    "note": "\"Vividness is not evidence.\""
+   },
+   {
+    "q": "What further difficulty does the writer raise?",
+    "options": [
+     "Scores can be leaked",
+     "The interview is the candidate's first experience of the organization",
+     "Interviews are expensive",
+     "Candidates prepare too much"
+    ],
+    "answer": 1,
+    "note": "\"An interview is not only a measurement; it is the candidate's first experience.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-r-25",
+  "level": "C1",
+  "order": 25,
+  "kind": "reading",
+  "title": "Uzun vadeli tahminlerin ömrü",
+  "titleEn": "Predictions Nobody Checks",
+  "minutes": 6,
+  "names": [],
+  "text": "Long-range forecasts are produced in enormous quantities and are almost never scored, which is the single most important fact about them. A prediction made for ten years hence is consumed in the month it is published, and by the time it could be evaluated the publication has moved on, the author has revised the view without announcement, and the audience has forgotten the original wording. The absence of scoring is not an accident of publishing schedules. It is what allows the activity to continue in its present form, since a forecaster whose record was tracked would be obliged to express uncertainty, and expressed uncertainty is commercially worthless. The small research literature that has tracked forecasts finds the expected result: confident specific predictions perform worse than hedged vague ones, and the forecasters most in demand are drawn disproportionately from the confident group. What is less expected is that the better forecasters are not distinguished by expertise in the subject. They are distinguished by the habit of revising in small increments as evidence arrives, and by a marked reluctance to defend a position they have already stated. This is an unappealing set of professional qualities. It produces people who are frequently right, rarely quoted, and almost never invited back a second time. The practical consequence for a reader is straightforward and slightly depressing. The forecaster worth attending to is identifiable in advance, but not by the qualities that make a forecast enjoyable to read. The test is whether the person has publicly changed their mind about something specific, and said so without being forced to, which almost nobody in the business has ever done.",
+  "glossary": [
+   {
+    "w": "forecasts",
+    "tr": "tahminler, öngörüler"
+   },
+   {
+    "w": "scored",
+    "tr": "puanlanmış, denetlenmiş"
+   },
+   {
+    "w": "consumed",
+    "tr": "tüketilir"
+   },
+   {
+    "w": "evaluated",
+    "tr": "değerlendirilmiş"
+   },
+   {
+    "w": "revised",
+    "tr": "gözden geçirdi"
+   },
+   {
+    "w": "obliged",
+    "tr": "zorunda"
+   },
+   {
+    "w": "uncertainty",
+    "tr": "belirsizlik"
+   },
+   {
+    "w": "commercially",
+    "tr": "ticari olarak"
+   },
+   {
+    "w": "hedged",
+    "tr": "ihtiyatlı, çekinceli"
+   },
+   {
+    "w": "vague",
+    "tr": "belirsiz, muğlak"
+   },
+   {
+    "w": "disproportionately",
+    "tr": "orantısız biçimde"
+   },
+   {
+    "w": "increments",
+    "tr": "küçük adımlar"
+   },
+   {
+    "w": "reluctance",
+    "tr": "isteksizlik"
+   },
+   {
+    "w": "unappealing",
+    "tr": "çekici olmayan"
+   },
+   {
+    "w": "expertise",
+    "tr": "uzmanlık"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the most important fact about long-range forecasts?",
+    "options": [
+     "They are usually wrong",
+     "They are too short",
+     "They are almost never scored",
+     "They are expensive"
+    ],
+    "answer": 2,
+    "note": "\"Are almost never scored, which is the single most important fact about them.\""
+   },
+   {
+    "q": "Why is the absence of scoring not an accident?",
+    "options": [
+     "It allows the activity to continue in its present form",
+     "Publishers are careless",
+     "The data is lost",
+     "Nobody keeps records"
+    ],
+    "answer": 0,
+    "note": "\"It is what allows the activity to continue in its present form.\""
+   },
+   {
+    "q": "What does the research find?",
+    "options": [
+     "Confident specific predictions perform worse",
+     "Experts are always right",
+     "Hedged predictions are useless",
+     "Forecasts improve over time"
+    ],
+    "answer": 0,
+    "note": "\"Confident specific predictions perform worse than hedged vague ones.\""
+   },
+   {
+    "q": "What distinguishes the better forecasters?",
+    "options": [
+     "Access to better data",
+     "Revising in small increments as evidence arrives",
+     "Long experience",
+     "Deep subject expertise"
+    ],
+    "answer": 1,
+    "note": "\"The habit of revising in small increments as evidence arrives.\""
+   },
+   {
+    "q": "What is the result of those qualities?",
+    "options": [
+     "Widely quoted and well paid",
+     "Never published",
+     "Always disputed",
+     "Frequently right, rarely quoted"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
  }
 ]

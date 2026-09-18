@@ -1,0 +1,172 @@
+{
+  "_meta": { "batch": "c1-reading-05", "level": "C1", "range": "Parça 21-25" },
+  "items": [
+    {
+      "id": "c1-r-21",
+      "level": "C1",
+      "order": 21,
+      "kind": "reading",
+      "title": "Bağışlanan koleksiyon",
+      "titleEn": "The Gift With Conditions",
+      "minutes": 6,
+      "names": [],
+      "text": "A private collector who leaves a collection to a public institution almost always attaches conditions, and the conditions are almost always the part that causes trouble thirty years later. The most common is that the works must be displayed together and in the arrangement the donor chose. This sounds modest and is not. A museum that accepts it has agreed to give a permanent room to a particular taste, and taste is the one thing in a collection guaranteed to date. Rooms of this kind exist in most large institutions, and they are recognizable at once: well lit, carefully maintained, and visited chiefly by people looking for the way out. The institutions are not free to reconsider, since the condition was the price of the gift and the family is usually still watching. Refusing such gifts is harder than it looks. A curator who declines a significant collection on the grounds that the conditions are unwise will be overruled by a board that sees a valuable acquisition at no cost, and the curator will have left by the time the difficulty becomes visible. The compromise that works is dull and requires patience: accept the collection, agree to display it in full for a fixed term of perhaps twenty years, and record in the same document what happens afterwards. Donors resist this, which is informative. A gift intended to enrich a collection survives a time limit without difficulty. A gift intended to secure a reputation does not.",
+      "glossary": [
+        { "w": "collector", "tr": "koleksiyoncu" },
+        { "w": "donor", "tr": "bağışçı" },
+        { "w": "permanent", "tr": "kalıcı" },
+        { "w": "guaranteed", "tr": "garantili" },
+        { "w": "date", "tr": "eskimek" },
+        { "w": "maintained", "tr": "bakımlı" },
+        { "w": "chiefly", "tr": "başlıca" },
+        { "w": "curator", "tr": "küratör" },
+        { "w": "overruled", "tr": "kararı bozulan" },
+        { "w": "acquisition", "tr": "kazanım, edinim" },
+        { "w": "compromise", "tr": "uzlaşma" },
+        { "w": "informative", "tr": "öğretici, bilgi verici" },
+        { "w": "enrich", "tr": "zenginleştirmek" }
+      ],
+      "questions": [
+        { "q": "What is the most common condition?", "options": ["The works must stay together in the donor's arrangement", "The works must never be sold", "The donor's name must appear", "The room must be free to enter"], "answer": 0, "note": "\"The works must be displayed together and in the arrangement the donor chose.\"" },
+        { "q": "Why is that condition not modest?", "options": ["It gives a permanent room to a taste that will date", "It costs too much", "It blocks research", "It prevents loans"], "answer": 0, "note": "\"Taste is the one thing in a collection guaranteed to date.\"" },
+        { "q": "Why is refusing such gifts hard?", "options": ["A board sees a valuable acquisition at no cost", "The law forbids refusal", "Curators want the works", "Donors pay the staff"], "answer": 0, "note": "\"Will be overruled by a board that sees a valuable acquisition at no cost.\"" },
+        { "q": "What compromise does the writer suggest?", "options": ["Display in full for a fixed term, then reconsider", "Refuse all conditions", "Accept everything", "Store the works"], "answer": 0, "note": "\"Agree to display it in full for a fixed term of perhaps twenty years.\"" },
+        { "q": "What does resistance to a time limit reveal?", "options": ["The gift was meant to secure a reputation", "The donor is generous", "The collection is valuable", "The family disagrees"], "answer": 0, "note": "Son iki cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-22",
+      "level": "C1",
+      "order": 22,
+      "kind": "reading",
+      "title": "Kurallara harfiyen uymak",
+      "titleEn": "Working Exactly to the Rules",
+      "minutes": 6,
+      "names": [],
+      "text": "When workers in a dispute decide to follow every written procedure precisely, the operation slows to a degree that surprises everybody including the workers. This is generally reported as a tactic, and it is, but the interesting part is what it demonstrates about ordinary weeks. A system that fails when its rules are obeyed exactly was never running on its rules. It was running on continuous small judgments about which rule to relax, and those judgments were being made by people who were never asked to make them, are not paid for making them, and would be disciplined if a relaxation went wrong. Management responses divide predictably. The common one is to treat the slowdown as bad faith, which is accurate as a description of the intent and useless as an analysis of the mechanism. The rarer one is to ask which rules were being quietly ignored and why, and this occasionally produces the discovery that a procedure written eleven years ago for equipment that no longer exists has been formally in force and universally disregarded throughout. Neither response resolves the dispute, which is about something else. But an organization that has been through this and taken the second route emerges with a rulebook that describes what it actually does, which is rarer than it should be and worth more than the argument that produced it. There is a reason this outcome is uncommon. Rewriting a rulebook to match practice requires somebody senior to put in writing that a rule has been broken for years with the knowledge of everybody involved, and the natural instinct is to restate the rule instead and hope. That instinct is understandable and it guarantees a repeat performance, because the pressures that produced the informal relaxations are still there on the Monday after the dispute ends.",
+      "glossary": [
+        { "w": "dispute", "tr": "uyuşmazlık, iş anlaşmazlığı" },
+        { "w": "procedure", "tr": "prosedür, usul" },
+        { "w": "tactic", "tr": "taktik" },
+        { "w": "demonstrates", "tr": "gösterir" },
+        { "w": "obeyed", "tr": "uyulan" },
+        { "w": "continuous", "tr": "sürekli" },
+        { "w": "relax", "tr": "gevşetmek" },
+        { "w": "disciplined", "tr": "cezalandırılmış" },
+        { "w": "bad faith", "tr": "kötü niyet" },
+        { "w": "mechanism", "tr": "mekanizma" },
+        { "w": "in force", "tr": "yürürlükte" },
+        { "w": "disregarded", "tr": "göz ardı edilen" },
+        { "w": "rulebook", "tr": "kural kitabı" },
+        { "w": "slowdown", "tr": "yavaşlatma eylemi" }
+      ],
+      "questions": [
+        { "q": "What does the slowdown demonstrate?", "options": ["The system was never running on its rules", "The workers are slow", "The rules are too few", "Management is absent"], "answer": 0, "note": "\"A system that fails when its rules are obeyed exactly was never running on its rules.\"" },
+        { "q": "Who was making the small judgments?", "options": ["People never asked or paid to make them", "Senior managers", "The rule writers", "Nobody"], "answer": 0, "note": "\"Made by people who were never asked to make them, are not paid for making them.\"" },
+        { "q": "What is the common management response?", "options": ["Treat the slowdown as bad faith", "Rewrite the rulebook", "Pay more", "Ask which rules were ignored"], "answer": 0, "note": "\"The common one is to treat the slowdown as bad faith.\"" },
+        { "q": "What can the rarer response discover?", "options": ["Rules in force for equipment that no longer exists", "Workers breaking the law", "Missing pay records", "A faster procedure"], "answer": 0, "note": "\"A procedure written eleven years ago for equipment that no longer exists.\"" },
+        { "q": "What does an organization taking the second route gain?", "options": ["A rulebook describing what it actually does", "An end to the dispute", "Lower costs", "More staff"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-23",
+      "level": "C1",
+      "order": 23,
+      "kind": "reading",
+      "title": "Deniz seviyesinden önce gelen",
+      "titleEn": "The Water That Arrives First",
+      "minutes": 6,
+      "names": [],
+      "text": "Coastal planning concentrates on the level of the sea, which is measurable and rises slowly, and pays much less attention to the thing that reaches a town decades earlier. Salt moves through ground water long before any street is under water, and it moves horizontally through soil in a way that is invisible from the surface until wells turn brackish and trees that have stood for a century begin to die from the roots. A community can therefore lose its agriculture, its drinking water and a substantial share of its property value while every photograph of the coastline looks reassuringly unchanged. Defences designed against waves do nothing about this, since the water is not arriving over anything. What makes the problem politically difficult is that it has no moment. A storm produces a date, a photograph and a budget. A gradual rise in the salt content of a well produces a series of slightly worse harvests and an argument about whether the farmer is managing the land properly. By the time the pattern is undeniable the affordable responses have usually expired. The places that have handled it best are the ones that began monitoring wells thirty years before they expected trouble, which is an unglamorous program to fund and the only one that produces the evidence at the moment it can still be used. The cost of such monitoring is trivial next to any of the responses it later makes possible, which is the usual shape of this kind of problem and the usual reason it is not done. A budget line that pays for readings nobody is alarmed by is indistinguishable, in a difficult year, from a budget line that pays for nothing at all.",
+      "glossary": [
+        { "w": "coastal", "tr": "kıyı" },
+        { "w": "horizontally", "tr": "yatay olarak" },
+        { "w": "soil", "tr": "toprak" },
+        { "w": "wells", "tr": "kuyular" },
+        { "w": "brackish", "tr": "acı, tuzlu" },
+        { "w": "roots", "tr": "kökler" },
+        { "w": "agriculture", "tr": "tarım" },
+        { "w": "reassuringly", "tr": "içi rahatlatacak biçimde" },
+        { "w": "defences", "tr": "savunma yapıları" },
+        { "w": "harvests", "tr": "hasatlar" },
+        { "w": "undeniable", "tr": "inkâr edilemez" },
+        { "w": "expired", "tr": "süresi dolmuş" },
+        { "w": "monitoring", "tr": "izleme" }
+      ],
+      "questions": [
+        { "q": "What arrives decades before the sea?", "options": ["Salt in the ground water", "Higher tides", "Storms", "Stronger winds"], "answer": 0, "note": "\"Salt moves through ground water long before any street is under water.\"" },
+        { "q": "How is the change first noticed?", "options": ["Wells turn brackish and old trees die", "Streets flood", "Beaches shrink", "Boats cannot dock"], "answer": 0, "note": "\"Wells turn brackish and trees... begin to die from the roots.\"" },
+        { "q": "Why do wave defences not help?", "options": ["The water is not arriving over anything", "They are too low", "They are too expensive", "They were built badly"], "answer": 0, "note": "\"Since the water is not arriving over anything.\"" },
+        { "q": "Why is the problem politically difficult?", "options": ["It has no single moment", "Nobody believes it", "It is too costly", "It affects few people"], "answer": 0, "note": "\"What makes the problem politically difficult is that it has no moment.\"" },
+        { "q": "What have the best-prepared places done?", "options": ["Monitored wells thirty years in advance", "Built higher walls", "Moved the population", "Changed crops"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-24",
+      "level": "C1",
+      "order": 24,
+      "kind": "reading",
+      "title": "Mülakatın ölçtüğü şey",
+      "titleEn": "What the Interview Actually Tests",
+      "minutes": 6,
+      "names": [],
+      "text": "The unstructured interview, in which a manager talks to a candidate for forty minutes and forms an impression, is among the most thoroughly studied selection methods and among the least predictive. Its accuracy is close to that of a brief work sample and considerably below that of a structured conversation in which every candidate is asked the same questions in the same order and scored against agreed criteria. These findings have been stable for decades and have changed practice remarkably little, which is itself the interesting fact. The explanation is not ignorance. Managers who know the evidence continue to trust their impressions, and the reason they give, when pressed, is that the structured version feels mechanical and prevents them from following up something interesting. This is accurate, and it is precisely the mechanism by which the unstructured version fails: following up something interesting means spending the available time on whatever the candidate happened to make vivid, and vividness is not evidence. There is a further difficulty that rarely appears in the research. An interview is not only a measurement; it is the candidate's first experience of the organization, and a process that treats them as a set of scores communicates something true about what the job will be like. The firms that have resolved this tend to run the structured assessment and then add a separate, explicitly unscored conversation whose purpose is to let the candidate decide. That second conversation is worth protecting from the first. As soon as anything said in it can affect the outcome, the candidate returns to performing and the organization loses the only part of the process in which it might have heard something true about how it looks from outside.",
+      "glossary": [
+        { "w": "unstructured", "tr": "yapılandırılmamış" },
+        { "w": "candidate", "tr": "aday" },
+        { "w": "predictive", "tr": "öngörücü" },
+        { "w": "work sample", "tr": "iş örneği" },
+        { "w": "criteria", "tr": "ölçütler" },
+        { "w": "ignorance", "tr": "bilgisizlik" },
+        { "w": "mechanical", "tr": "mekanik" },
+        { "w": "vivid", "tr": "canlı, çarpıcı" },
+        { "w": "vividness", "tr": "canlılık, çarpıcılık" },
+        { "w": "assessment", "tr": "değerlendirme" },
+        { "w": "explicitly", "tr": "açıkça" },
+        { "w": "unscored", "tr": "puanlanmayan" }
+      ],
+      "questions": [
+        { "q": "How accurate is the unstructured interview?", "options": ["Close to a brief work sample and below structured methods", "The most accurate method", "Completely useless", "Better than a work sample"], "answer": 0, "note": "\"Its accuracy is close to that of a brief work sample and considerably below that of a structured conversation.\"" },
+        { "q": "What is the interesting fact?", "options": ["The findings have changed practice very little", "Nobody has studied it", "Managers agree with the research", "The method is banned"], "answer": 0, "note": "\"Have changed practice remarkably little, which is itself the interesting fact.\"" },
+        { "q": "What reason do managers give?", "options": ["Structure prevents following up something interesting", "Structure takes too long", "Candidates dislike it", "It costs more"], "answer": 0, "note": "\"The structured version feels mechanical and prevents them from following up something interesting.\"" },
+        { "q": "Why is that reason the mechanism of failure?", "options": ["Time goes to whatever is vivid, and vividness is not evidence", "Managers run out of time", "Candidates lie", "Questions are too hard"], "answer": 0, "note": "\"Vividness is not evidence.\"" },
+        { "q": "What further difficulty does the writer raise?", "options": ["The interview is the candidate's first experience of the organization", "Scores can be leaked", "Interviews are expensive", "Candidates prepare too much"], "answer": 0, "note": "\"An interview is not only a measurement; it is the candidate's first experience.\"" }
+      ]
+    },
+    {
+      "id": "c1-r-25",
+      "level": "C1",
+      "order": 25,
+      "kind": "reading",
+      "title": "Uzun vadeli tahminlerin ömrü",
+      "titleEn": "Predictions Nobody Checks",
+      "minutes": 6,
+      "names": [],
+      "text": "Long-range forecasts are produced in enormous quantities and are almost never scored, which is the single most important fact about them. A prediction made for ten years hence is consumed in the month it is published, and by the time it could be evaluated the publication has moved on, the author has revised the view without announcement, and the audience has forgotten the original wording. The absence of scoring is not an accident of publishing schedules. It is what allows the activity to continue in its present form, since a forecaster whose record was tracked would be obliged to express uncertainty, and expressed uncertainty is commercially worthless. The small research literature that has tracked forecasts finds the expected result: confident specific predictions perform worse than hedged vague ones, and the forecasters most in demand are drawn disproportionately from the confident group. What is less expected is that the better forecasters are not distinguished by expertise in the subject. They are distinguished by the habit of revising in small increments as evidence arrives, and by a marked reluctance to defend a position they have already stated. This is an unappealing set of professional qualities. It produces people who are frequently right, rarely quoted, and almost never invited back a second time. The practical consequence for a reader is straightforward and slightly depressing. The forecaster worth attending to is identifiable in advance, but not by the qualities that make a forecast enjoyable to read. The test is whether the person has publicly changed their mind about something specific, and said so without being forced to, which almost nobody in the business has ever done.",
+      "glossary": [
+        { "w": "forecasts", "tr": "tahminler, öngörüler" },
+        { "w": "scored", "tr": "puanlanmış, denetlenmiş" },
+        { "w": "consumed", "tr": "tüketilir" },
+        { "w": "evaluated", "tr": "değerlendirilmiş" },
+        { "w": "revised", "tr": "gözden geçirdi" },
+        { "w": "obliged", "tr": "zorunda" },
+        { "w": "uncertainty", "tr": "belirsizlik" },
+        { "w": "commercially", "tr": "ticari olarak" },
+        { "w": "hedged", "tr": "ihtiyatlı, çekinceli" },
+        { "w": "vague", "tr": "belirsiz, muğlak" },
+        { "w": "disproportionately", "tr": "orantısız biçimde" },
+        { "w": "increments", "tr": "küçük adımlar" },
+        { "w": "reluctance", "tr": "isteksizlik" },
+        { "w": "unappealing", "tr": "çekici olmayan" },
+        { "w": "expertise", "tr": "uzmanlık" }
+      ],
+      "questions": [
+        { "q": "What is the most important fact about long-range forecasts?", "options": ["They are almost never scored", "They are usually wrong", "They are too short", "They are expensive"], "answer": 0, "note": "\"Are almost never scored, which is the single most important fact about them.\"" },
+        { "q": "Why is the absence of scoring not an accident?", "options": ["It allows the activity to continue in its present form", "Publishers are careless", "Nobody keeps records", "The data is lost"], "answer": 0, "note": "\"It is what allows the activity to continue in its present form.\"" },
+        { "q": "What does the research find?", "options": ["Confident specific predictions perform worse", "Hedged predictions are useless", "Experts are always right", "Forecasts improve over time"], "answer": 0, "note": "\"Confident specific predictions perform worse than hedged vague ones.\"" },
+        { "q": "What distinguishes the better forecasters?", "options": ["Revising in small increments as evidence arrives", "Deep subject expertise", "Long experience", "Access to better data"], "answer": 0, "note": "\"The habit of revising in small increments as evidence arrives.\"" },
+        { "q": "What is the result of those qualities?", "options": ["Frequently right, rarely quoted", "Widely quoted and well paid", "Never published", "Always disputed"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

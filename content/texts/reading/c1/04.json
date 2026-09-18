@@ -1,0 +1,169 @@
+{
+  "_meta": { "batch": "c1-reading-04", "level": "C1", "range": "Parça 16-20" },
+  "items": [
+    {
+      "id": "c1-r-16",
+      "level": "C1",
+      "order": 16,
+      "kind": "reading",
+      "title": "Tarafsızlık iddiası",
+      "titleEn": "The Trouble With Both Sides",
+      "minutes": 6,
+      "names": [],
+      "text": "A reporter who gives equal space to two positions has done something that looks like fairness and may be its opposite. Where the evidence genuinely divides a field, balance describes the situation accurately. Where it does not, the same practice manufactures a disagreement that exists only on the page, and does so in a form the reader cannot detect, since nothing in the article discloses the proportions outside it. The defense usually offered is that the reader should decide. This sounds respectful and quietly transfers to the reader a task the reader cannot perform, because the information needed to weigh the two accounts is precisely what has been left out. A reader who is told that some researchers hold one view and others hold another has been given no way of knowing whether the split is nine to one or one to nine, and in most disputes that ratio is the entire question. The alternative is not to suppress the smaller position, which would be both dishonest and unwise, since fields have been wrong before and the correction usually starts small. It is to report the position and the weight it carries in the same sentence. Journalists resist this because it requires a judgment, and judgments can be criticized in a way that quotation cannot. That is true, and it is also the job. A newspaper that will not weigh evidence has not avoided taking a position; it has taken the position that all positions are equally supported, which is a claim about the world and one that is very often false.",
+      "glossary": [
+        { "w": "manufactures", "tr": "imal eder, üretir" },
+        { "w": "discloses", "tr": "açıklar" },
+        { "w": "proportions", "tr": "oranlar" },
+        { "w": "respectful", "tr": "saygılı" },
+        { "w": "accounts", "tr": "anlatımlar" },
+        { "w": "ratio", "tr": "oran" },
+        { "w": "suppress", "tr": "bastırmak" },
+        { "w": "unwise", "tr": "akılsızca" },
+        { "w": "quotation", "tr": "alıntı" }
+      ],
+      "questions": [
+        { "q": "When is balance accurate?", "options": ["Where the evidence genuinely divides a field", "Always", "Never", "Only in politics"], "answer": 0, "note": "\"Where the evidence genuinely divides a field, balance describes the situation accurately.\"" },
+        { "q": "Why can the reader not detect the problem?", "options": ["Nothing in the article discloses the proportions", "The language is technical", "The article is too short", "Sources are hidden"], "answer": 0, "note": "\"Nothing in the article discloses the proportions outside it.\"" },
+        { "q": "What is wrong with 'the reader should decide'?", "options": ["The reader lacks the information needed to decide", "Readers are not interested", "It takes too long", "It is against the law"], "answer": 0, "note": "\"The information needed to weigh the two accounts is precisely what has been left out.\"" },
+        { "q": "Why should the smaller position not be suppressed?", "options": ["Fields have been wrong before", "It sells newspapers", "Readers demand it", "It is always correct"], "answer": 0, "note": "\"Fields have been wrong before and the correction usually starts small.\"" },
+        { "q": "What position does a newspaper take by refusing to weigh evidence?", "options": ["That all positions are equally supported", "That the majority is right", "That nothing can be known", "No position at all"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-17",
+      "level": "C1",
+      "order": 17,
+      "kind": "reading",
+      "title": "Kariyer değiştirmenin gerçek maliyeti",
+      "titleEn": "Counting the Cost of Starting Again",
+      "minutes": 6,
+      "names": [],
+      "text": "People considering a change of career calculate the salary they will forgo and stop there, which understates the cost in one direction and overstates it in another. The understatement is the loss of position within a hierarchy of competence. A person with fifteen years in a field does not merely earn more; they are consulted, their judgment is trusted without explanation, and a great deal of their working day runs on a credit that was accumulated slowly and cannot be transferred. Moving means being the person whose suggestions are politely noted. Very few people who describe the financial arithmetic mention this, and a considerable number of those who return to their old field name it as the reason. The overstatement lies in the assumption that the fifteen years are lost. In practice the portable part is larger than it looks, and it is rarely the technical part. Knowing how a decision actually gets made, how to tell a real deadline from a performance, and how to say no without damage: these survive the move intact, and their value in a new field is frequently higher, because the people who have them are scarcer there. The honest summary is that the transferable skills are real and the transferable status is not. A person who understands this before moving tends to plan for eighteen difficult months and to be pleasantly surprised. A person who does not tends to interpret the eighteen months as evidence of a mistake.",
+      "glossary": [
+        { "w": "forgo", "tr": "vazgeçmek" },
+        { "w": "understates", "tr": "eksik gösterir" },
+        { "w": "overstates", "tr": "abartır" },
+        { "w": "hierarchy", "tr": "hiyerarşi" },
+        { "w": "competence", "tr": "yetkinlik" },
+        { "w": "consulted", "tr": "kendisine danışılan" },
+        { "w": "accumulated", "tr": "birikmiş" },
+        { "w": "portable", "tr": "taşınabilir" },
+        { "w": "scarcer", "tr": "daha az bulunur" },
+        { "w": "transferable", "tr": "aktarılabilir" },
+        { "w": "status", "tr": "konum, statü" },
+        { "w": "interpret", "tr": "yorumlamak" }
+      ],
+      "questions": [
+        { "q": "What do people usually calculate?", "options": ["The salary they will give up", "The time required", "The risk of failure", "The new skills needed"], "answer": 0, "note": "\"People... calculate the salary they will forgo and stop there.\"" },
+        { "q": "What is the hidden loss?", "options": ["Position within a hierarchy of competence", "Pension rights", "Friendships", "Office space"], "answer": 0, "note": "\"The loss of position within a hierarchy of competence.\"" },
+        { "q": "What does the writer say is portable?", "options": ["Knowing how decisions actually get made", "Technical knowledge", "Professional contacts", "Seniority"], "answer": 0, "note": "\"Knowing how a decision actually gets made... these survive the move intact.\"" },
+        { "q": "Why is that knowledge more valuable in a new field?", "options": ["The people who have it are scarcer there", "It is better paid", "It is easier to prove", "It is formally required"], "answer": 0, "note": "\"Because the people who have them are scarcer there.\"" },
+        { "q": "How does an unprepared person read the first eighteen months?", "options": ["As evidence of a mistake", "As normal", "As a success", "As too short"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-18",
+      "level": "C1",
+      "order": 18,
+      "kind": "reading",
+      "title": "Kentin gece hayatı kimin",
+      "titleEn": "Who the Night Belongs To",
+      "minutes": 6,
+      "names": [],
+      "text": "The argument about noise in a city center is usually presented as residents against businesses, which is accurate about the parties and misleading about the substance. What is actually in dispute is the order in which people arrived and what that entitles them to. A person who buys a flat above a bar that has operated for thirty years has a weaker case than one whose quiet street acquired a bar last spring, and most legal systems recognize some version of this, though rarely in a form that resolves anything. The practical difficulty is that both changes happen at once. Districts become desirable because they are lively, which raises prices, which brings residents who can afford the prices and did not come for the liveliness. Within a decade the venues that created the value are closed by complaints from people who moved there because of them. Several cities have tried to break this loop by attaching the obligation to the building rather than the occupant. A flat built near an existing venue must be constructed to a higher standard of insulation, and the cost falls on the developer who profits from the location rather than on the business that was there first. Where this has been tried it has worked better than any system of curfews, and it has one property that makes it politically survivable: it does not require anybody to decide who was right. The objection raised by developers is that the requirement makes some sites unbuildable, and in a small number of cases that is true and is the intended effect. A flat that cannot be built to a standard where its occupant will sleep is a flat that will generate complaints for as long as it stands, and permitting it transfers a permanent problem to the venue in exchange for a single sale.",
+      "glossary": [
+        { "w": "residents", "tr": "sakinler" },
+        { "w": "substance", "tr": "esas mesele" },
+        { "w": "entitles", "tr": "hak kazandırır" },
+        { "w": "acquired", "tr": "edindi" },
+        { "w": "resolves", "tr": "çözer" },
+        { "w": "districts", "tr": "semtler" },
+        { "w": "desirable", "tr": "rağbet gören" },
+        { "w": "liveliness", "tr": "canlılık" },
+        { "w": "venues", "tr": "mekânlar" },
+        { "w": "obligation", "tr": "yükümlülük" },
+        { "w": "occupant", "tr": "oturan kişi" },
+        { "w": "insulation", "tr": "yalıtım" },
+        { "w": "developer", "tr": "müteahhit" },
+        { "w": "curfews", "tr": "kapanış saatleri" },
+        { "w": "loop", "tr": "döngü, kısır döngü" },
+        { "w": "insulate", "tr": "yalıtmak" }
+      ],
+      "questions": [
+        { "q": "What is actually in dispute?", "options": ["Who arrived first and what that entitles them to", "The level of the noise", "The price of property", "The closing hour"], "answer": 0, "note": "\"What is actually in dispute is the order in which people arrived.\"" },
+        { "q": "What is the loop the writer describes?", "options": ["Liveliness raises prices, which brings people who close the venues", "Noise drives everybody away", "Prices fall then rise", "Businesses replace each other"], "answer": 0, "note": "\"The venues that created the value are closed by complaints from people who moved there because of them.\"" },
+        { "q": "What have several cities attached to the building?", "options": ["The obligation to insulate", "A noise limit", "A higher tax", "A closing hour"], "answer": 0, "note": "\"Attaching the obligation to the building rather than the occupant.\"" },
+        { "q": "Who pays under that system?", "options": ["The developer who profits from the location", "The venue", "The resident", "The city"], "answer": 0, "note": "\"The cost falls on the developer who profits from the location.\"" },
+        { "q": "Why is the approach politically survivable?", "options": ["Nobody has to be declared right", "It costs nothing", "It is popular with residents", "It closes the venues slowly"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-19",
+      "level": "C1",
+      "order": 19,
+      "kind": "reading",
+      "title": "Kötü haberi erken vermek",
+      "titleEn": "The Cost of Waiting to Tell",
+      "minutes": 6,
+      "names": [],
+      "text": "Organizations that discover a problem almost always delay the announcement, and the reasons given are almost always reasonable in isolation. The facts are incomplete. A partial statement would cause unnecessary alarm. The investigation should be allowed to establish what happened before anybody speaks. Each of these is true, and their combined effect is a delay that converts a manageable failure into a scandal about concealment, which is a considerably worse thing to be accused of than the original error. The pattern is consistent enough to be treated as a law. What the delay actually purchases is not accuracy but the appearance of control, and it purchases it from the wrong account. Every week of silence increases the probability that the information will emerge through somebody else, and the difference between an organization that discloses and an organization that is caught is the difference between a bad month and a decade of distrust. Institutions that handle this well share one uncomfortable habit. They have decided in advance, in writing, what threshold of evidence triggers disclosure, and they have decided it at a moment when no incident is in progress. The rule is not written to be wise; it is written to be binding on people who will, at the relevant moment, be frightened, defensive and entirely convinced that this particular case is different. That conviction is worth taking seriously as a symptom rather than an argument. It arrives in every case, including the ones that later turn out to have been ordinary, and an organization that has felt it four times and been wrong four times has learned something that no amount of reasoning in the moment will supply. The rule exists to carry that learning across into a week when nobody can remember it.",
+      "glossary": [
+        { "w": "isolation", "tr": "tek başına" },
+        { "w": "partial", "tr": "kısmi" },
+        { "w": "alarm", "tr": "telaş" },
+        { "w": "investigation", "tr": "soruşturma" },
+        { "w": "manageable", "tr": "yönetilebilir" },
+        { "w": "scandal", "tr": "skandal" },
+        { "w": "concealment", "tr": "gizleme" },
+        { "w": "purchases", "tr": "satın alır" },
+        { "w": "probability", "tr": "olasılık" },
+        { "w": "discloses", "tr": "açıklar" },
+        { "w": "distrust", "tr": "güvensizlik" },
+        { "w": "threshold", "tr": "eşik" },
+        { "w": "triggers", "tr": "tetikler" },
+        { "w": "binding", "tr": "bağlayıcı" }
+      ],
+      "questions": [
+        { "q": "What does the writer say about the reasons for delay?", "options": ["Each is reasonable in isolation", "They are always dishonest", "They are never given", "They are legally required"], "answer": 0, "note": "\"The reasons given are almost always reasonable in isolation.\"" },
+        { "q": "What does the delay convert the failure into?", "options": ["A scandal about concealment", "A legal case", "A financial loss", "A minor error"], "answer": 0, "note": "\"Converts a manageable failure into a scandal about concealment.\"" },
+        { "q": "What does the delay actually purchase?", "options": ["The appearance of control", "Accuracy", "Time to fix the problem", "Legal protection"], "answer": 0, "note": "\"What the delay actually purchases is not accuracy but the appearance of control.\"" },
+        { "q": "What is the difference between disclosing and being caught?", "options": ["A bad month against a decade of distrust", "Nothing at all", "A fine against a warning", "A week against a year"], "answer": 0, "note": "\"The difference between a bad month and a decade of distrust.\"" },
+        { "q": "Why is the rule written in advance?", "options": ["To bind people who will later be frightened and defensive", "To satisfy the law", "To impress the public", "To save time"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-20",
+      "level": "C1",
+      "order": 20,
+      "kind": "reading",
+      "title": "Klasiklerin yeniden çevrilmesi",
+      "titleEn": "Why Translations Age Faster Than Books",
+      "minutes": 6,
+      "names": [],
+      "text": "A novel written two centuries ago can still be read without difficulty in its own language, while a translation made sixty years ago often feels distinctly older than the original. The reason is not that translators write badly. It is that a translation is a reading, and a reading is made of the assumptions of its moment: what counts as natural speech, what may be said directly, which foreign words a reader is expected to know. The original carries its age openly, and the reader adjusts. The translation carries two ages at once, and the second is invisible, which is why it grates. This has a consequence that publishers understand and readers often resent. Retranslation is not a commercial trick but a structural necessity, and a literature that stops retranslating gradually loses access to works it believes it possesses. The resentment is understandable. A reader who loved a particular version is being told that the book they loved was partly the translator's, which is true and unwelcome. The most useful thing a new edition can do is decline to pretend otherwise. Editions that print a short note explaining what the previous translator was trying to achieve, and where the new one has decided differently, convert an apparent insult into the only thing it actually is: evidence that somebody has been reading the book closely for two hundred years. There is a limit to how far this can be pushed. A work retranslated every fifteen years by publishers competing for the same small market produces versions that differ mainly in their marketing, and readers are right to be suspicious of a new edition whose only visible argument is that it is new. The distinction is not difficult to draw in practice, and it rests on whether the translator can say what the previous version got wrong.",
+      "glossary": [
+        { "w": "translation", "tr": "çeviri" },
+        { "w": "distinctly", "tr": "belirgin biçimde" },
+        { "w": "assumptions", "tr": "varsayımlar" },
+        { "w": "adjusts", "tr": "uyum sağlar" },
+        { "w": "grates", "tr": "tırmalar, rahatsız eder" },
+        { "w": "resent", "tr": "içerlemek" },
+        { "w": "retranslation", "tr": "yeniden çeviri" },
+        { "w": "structural", "tr": "yapısal" },
+        { "w": "necessity", "tr": "zorunluluk" },
+        { "w": "possesses", "tr": "sahiptir" },
+        { "w": "edition", "tr": "baskı" },
+        { "w": "apparent", "tr": "görünürdeki" },
+        { "w": "insult", "tr": "hakaret" }
+      ],
+      "questions": [
+        { "q": "Why does a translation age faster?", "options": ["It is made of the assumptions of its moment", "Translators write badly", "Paper wears out", "Languages change faster"], "answer": 0, "note": "\"A translation is a reading, and a reading is made of the assumptions of its moment.\"" },
+        { "q": "What does the writer say about the original's age?", "options": ["It is carried openly and the reader adjusts", "It is hidden", "It cannot be noticed", "It grows faster"], "answer": 0, "note": "\"The original carries its age openly, and the reader adjusts.\"" },
+        { "q": "What is retranslation described as?", "options": ["A structural necessity", "A commercial trick", "An insult to readers", "A rare event"], "answer": 0, "note": "\"Retranslation is not a commercial trick but a structural necessity.\"" },
+        { "q": "Why do readers resent it?", "options": ["The book they loved was partly the translator's", "The new edition costs more", "The old one disappears", "Publishers say so"], "answer": 0, "note": "\"The book they loved was partly the translator's, which is true and unwelcome.\"" },
+        { "q": "What should a new edition do?", "options": ["Explain what the previous translator was trying to achieve", "Ignore the old version", "Keep the same wording", "Use fewer notes"], "answer": 0, "note": "\"Editions that print a short note explaining what the previous translator was trying to achieve.\"" }
+      ]
+    }
+  ]
+}
