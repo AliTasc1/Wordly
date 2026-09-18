@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Screen } from '../components/Screen';
@@ -9,6 +9,7 @@ import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import { ARENA } from '../data/play';
+import { arenaRound } from '../content/arena';
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
 
@@ -20,15 +21,21 @@ const KEY = 50;
 /** 17 · Harf Arenası — the signature game: build a word from the wheel. */
 export function ArenaScreen() {
   const back = useBack('play');
-  const { fire, game, arenaSolved, arenaMissed } = useApp();
+  const { cefr, fire, game, arenaSolved, arenaMissed } = useApp();
 
   const [picked, setPicked] = useState<number[]>([]);
   const [rotation, setRotation] = useState(0);
+  const [round, setRound] = useState(0);
 
-  const offset = rotation % ARENA.letters.length;
-  const order = [...ARENA.letters.slice(offset), ...ARENA.letters.slice(0, offset)];
+  // The round is drawn from the learner's own level deck, so the arena drills
+  // words they are actually meant to know. It is memoised because the wheel
+  // must not reshuffle under the player's finger on every state change.
+  const puzzle = useMemo(() => arenaRound(cefr, round), [cefr, round]);
+
+  const offset = rotation % puzzle.letters.length;
+  const order = [...puzzle.letters.slice(offset), ...puzzle.letters.slice(0, offset)];
   const word = picked.map((i) => order[i]).join('');
-  const ready = word.length === ARENA.slots;
+  const ready = word.length === puzzle.slots;
 
   const tapLetter = (index: number) => {
     if (picked.includes(index) || ready) return;
@@ -38,18 +45,19 @@ export function ArenaScreen() {
 
   const submit = () => {
     if (!ready) return;
-    if (word === ARENA.target) {
+    if (word === puzzle.target) {
       const gained = ARENA.baseReward * game.combo;
       const nextCombo = Math.min(game.combo + 1, 5);
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
       arenaSolved(gained);
       setPicked([]);
-      fire(`${ARENA.target} · +${gained} XP`, `Kombo ×${nextCombo} · seri sürüyor`);
+      setRound((r) => r + 1);
+      fire(`${puzzle.target} · +${gained} XP`, `Kombo ×${nextCombo} · seri sürüyor`);
     } else {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
       arenaMissed();
       setPicked([]);
-      fire(`“${word}” listede yok`, ARENA.wrongHint);
+      fire(`“${word}” aradığımız kelime değil`, `Kombo sıfırlandı · ipucu: ${puzzle.tr}`);
     }
   };
 
@@ -109,16 +117,16 @@ export function ArenaScreen() {
           GÖREV
         </Txt>
         <Txt f="m" s={16.5} w={700} lh={1.4} style={styles.missionText}>
-          {ARENA.goalBefore}
+          Türkçesi verilen 
           <Txt f="m" s={16.5} w={700} c={colors.accent}>
-            {ARENA.goalHighlight}
+            {puzzle.slots} harfli
           </Txt>
-          {ARENA.goalAfter}
+           kelimeyi kur
         </Txt>
       </Gradient>
 
       <View style={styles.slots}>
-        {Array.from({ length: ARENA.slots }).map((_, i) => (
+        {Array.from({ length: puzzle.slots }).map((_, i) => (
           <View key={i} style={[styles.slot, word[i] ? styles.slotFilled : styles.slotEmpty]}>
             <Txt f="m" s={20} w={800} c={word[i] ? colors.text : colors.textGhost}>
               {word[i] ?? ''}
@@ -138,14 +146,14 @@ export function ArenaScreen() {
           />
           <View style={styles.wheelCoreText}>
             <Txt f="m" s={15} w={800}>
-              {word || ARENA.emptyWord}
+              {word || `${puzzle.slots} HARF`}
             </Txt>
             <Txt f="mono" s={10} w={600} c={colors.blueSoft} style={styles.coreHint}>
               {word
                 ? ready
                   ? ARENA.readyHint
-                  : `${word.length}/${ARENA.slots} harf`
-                : ARENA.categoryHint}
+                  : `${word.length}/${puzzle.slots} harf`
+                : `ipucu: ${puzzle.tr}`}
             </Txt>
           </View>
         </View>

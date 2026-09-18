@@ -36,25 +36,20 @@ export const TOURNAMENT = {
   cta: 'Katıl',
 };
 
-/** Harf Arenası round: the letter wheel spells TICKET plus decoys. */
+/**
+ * Harf Arenası kabuğu. Kelime, harfler ve ipucu artık öğrencinin kendi
+ * seviyesindeki sözlükten üretiliyor (`src/content/arena.ts`); burada yalnızca
+ * turun sabitleri kalıyor.
+ */
 export const ARENA = {
   mode: 'SÜRE ATAĞI',
   time: '24',
   timePct: 40,
-  letters: 'TICKETARNO'.split(''),
-  target: 'TICKET',
-  slots: 6,
-  goalBefore: 'Seyahatle ilgili ',
-  goalHighlight: '6 harfli',
-  goalAfter: ' bir kelime bul',
-  emptyWord: '6 HARF',
-  categoryHint: 'kategori: seyahat',
   readyHint: 'kontrol et',
   found: '/8',
   submitReady: 'Gönder',
   submitIdle: 'Harf seç',
   baseReward: 50,
-  wrongHint: 'Kombo sıfırlandı · ipucu: bilet',
 };
 
 /** AI coach screen. */
