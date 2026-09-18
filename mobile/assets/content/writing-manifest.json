@@ -8,5 +8,10 @@
   "sets": 25,
   "tasks": 200,
   "file": "writing-a2.json"
+ },
+ "B1": {
+  "sets": 25,
+  "tasks": 200,
+  "file": "writing-b1.json"
  }
 }

@@ -127,6 +127,10 @@ IRREGULAR = {
     "wept": "weep", "wound": "wind", "withdrew": "withdraw",
     "withheld": "withhold", "wrung": "wring", "arose": "arise",
     "awoke": "awake", "bore": "bear", "borne": "bear", "woken": "wake",
+    # "borne" tabloya girmişti ama "born" unutulmuştu; oysa günlük dilde
+    # geçen biçim bu ("I was born in Izmir"). bear A1 olduğu için born da
+    # A1 sayılıyor.
+    "born": "bear",
     "lying": "lie", "dying": "die", "tying": "tie", "selves": "self",
     "breadth": "broad", "depth": "deep", "width": "wide", "strength": "strong",
     "length": "long", "height": "high", "growth": "grow", "death": "die",

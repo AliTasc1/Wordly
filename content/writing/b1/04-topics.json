@@ -1,0 +1,543 @@
+{
+ "_meta": {
+  "batch": "b1-04",
+  "level": "B1",
+  "range": "Set 20-25 — sorun ve çözüm, gelecek incelikleri, alışkanlık kazanmak, iş yazışması, tartışma yazısı, anı"
+ },
+ "sets": [
+  {
+   "id": "b1-w-20",
+   "level": "B1",
+   "order": 20,
+   "title": "Sorun ve çözüm",
+   "canDo": "Bir sorunu tanımlayıp çözüm önerebilirim.",
+   "focus": "Öneri fiilleri farklı yapı ister: suggest + -ing, advise someone to, recommend + -ing. Türkçede hepsi \"önermek\" olduğu için kalıplar sürekli karışır.",
+   "tasks": [
+    {
+     "tr": "Şehrimizde ciddi bir trafik sorunu var.",
+     "answers": ["There is a serious traffic problem in our city."],
+     "hint": "traffic sayılamaz ama problem sayılabilir.",
+     "traps": [
+      { "has": "there is a serious traffics", "note": "traffic sayılamaz, çoğulu olmaz." },
+      { "has": "there are a serious traffic problem", "note": "Tekil: there is." }
+     ]
+    },
+    {
+     "tr": "Bu sorunun birkaç sebebi var.",
+     "answers": ["There are several reasons for this problem."],
+     "hint": "Sebep için for.",
+     "traps": [
+      { "has": "reasons of this problem", "note": "Kalıp: reasons for this problem." },
+      { "has": "several reason", "note": "several ile çoğul: several reasons." }
+     ]
+    },
+    {
+     "tr": "Toplu taşımanın geliştirilmesini öneriyorum.",
+     "answers": ["I suggest improving public transport.", "I suggest that public transport should be improved."],
+     "hint": "suggest'ten sonra -ing ya da that gelir, to gelmez.",
+     "traps": [
+      { "has": "i suggest to improve", "note": "suggest'ten sonra -ing: suggest improving." },
+      { "has": "i suggest you to improve", "note": "Kalıp: I suggest improving…" }
+     ]
+    },
+    {
+     "tr": "İnsanlara bisiklet kullanmalarını tavsiye ederim.",
+     "answers": ["I would advise people to use bicycles.", "I advise people to use bicycles."],
+     "hint": "advise'dan sonra kişi, sonra to + fiil gelir.",
+     "traps": [
+      { "has": "advise people using", "note": "advise'dan sonra to gelir: advise people to use." },
+      { "has": "i would advice people", "note": "advice isimdir; fiil advise." }
+     ]
+    },
+    {
+     "tr": "Bu önlem trafiği azaltır.",
+     "answers": ["This measure would reduce traffic.", "This would reduce traffic."],
+     "hint": "would'dan sonra fiil yalın.",
+     "traps": [
+      { "has": "would reduces", "note": "would'dan sonra fiil yalın: would reduce." }
+     ]
+    },
+    {
+     "tr": "Ayrıca havayı temizlemeye yardımcı olur.",
+     "answers": ["It would also help to clean the air.", "It would also help clean the air."],
+     "hint": "help'ten sonra to'lu ya da to'suz yalın fiil gelir.",
+     "traps": [
+      { "has": "help cleaning the air", "note": "help'ten sonra yalın fiil: help clean." }
+     ]
+    },
+    {
+     "tr": "Ancak bu kolay bir çözüm değil.",
+     "answers": ["However, this is not an easy solution.", "However, it is not an easy solution."],
+     "hint": "easy sesli harfle başlamaz ama sesi öyledir: an easy.",
+     "traps": [
+      { "has": "a easy solution", "note": "Sesli sesle başlar: an easy solution." }
+     ]
+    },
+    {
+     "tr": "Hükümetin harekete geçmesi gerekiyor.",
+     "answers": ["The government needs to act.", "The government should take action."],
+     "hint": "need'den sonra to + fiil gelir.",
+     "traps": [
+      { "has": "the government need to act", "note": "Tekil özne: needs." },
+      { "has": "take actions", "note": "Bu anlamda action sayılamaz: take action." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Yaşadığın yerdeki bir sorunu anlat: sorun, iki sebep, iki çözüm önerisi, sonuç.",
+    "checklist": [
+     "suggest'ten sonra -ing, advise'dan sonra kişi + to kullandın mı?",
+     "advice (isim) ile advise (fiil) ayrımını yaptın mı?",
+     "traffic ve action gibi sayılamayan isimleri çoğul yapmadın, değil mi?"
+    ],
+    "model": "There is a serious traffic problem in our city. There are several reasons for this problem. I suggest improving public transport. I would also advise people to use bicycles. However, this is not an easy solution and the government needs to act."
+   }
+  },
+  {
+   "id": "b1-w-21",
+   "level": "B1",
+   "order": 21,
+   "title": "Geleceği anlatmanın yolları",
+   "canDo": "Plan, karar ve tahmin arasındaki farkı yazıya yansıtabilirim.",
+   "focus": "will anlık karar ve tahmin, going to önceden yapılmış plan, şimdiki zaman kesinleşmiş randevu içindir. Türkçede üçü de gelecek ekiyle kurulur; İngilizcede seçim anlamı değiştirir.",
+   "tasks": [
+    {
+     "tr": "Yarın saat üçte dişçiye gidiyorum.",
+     "answers": ["I am seeing the dentist at three tomorrow.", "I'm seeing the dentist at three tomorrow."],
+     "hint": "Kesinleşmiş randevu için şimdiki zaman.",
+     "traps": [
+      { "has": "i will see the dentist at three tomorrow", "note": "Kesinleşmiş randevu: I am seeing…" }
+     ]
+    },
+    {
+     "tr": "Yeni bir araba almayı planlıyoruz.",
+     "answers": ["We are going to buy a new car.", "We're going to buy a new car."],
+     "hint": "Önceden yapılmış plan: going to.",
+     "traps": [
+      { "has": "we will buy a new car", "note": "Önceden plan: We are going to buy…" },
+      { "has": "going to buying", "note": "going to'dan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Tamam, ben açarım.",
+     "answers": ["All right, I will open it.", "OK, I'll get it."],
+     "hint": "Anlık karar: will.",
+     "traps": [
+      { "has": "i am going to open it", "note": "Anlık karar için will kullanılır." }
+     ]
+    },
+    {
+     "tr": "Bence yarın yağmur yağacak.",
+     "answers": ["I think it will rain tomorrow."],
+     "hint": "Tahmin: think + will.",
+     "traps": [
+      { "has": "i think it rains tomorrow", "note": "Tahmin için: it will rain." }
+     ]
+    },
+    {
+     "tr": "Şu bulutlara bak, yağmur yağacak.",
+     "answers": ["Look at those clouds, it is going to rain.", "Look at those clouds, it's going to rain."],
+     "hint": "Kanıta dayalı tahmin: going to.",
+     "traps": [
+      { "has": "look at those clouds it will rain", "note": "Kanıt varsa: it is going to rain." }
+     ]
+    },
+    {
+     "tr": "Tren saat yedide kalkıyor.",
+     "answers": ["The train leaves at seven."],
+     "hint": "Tarife için geniş zaman.",
+     "traps": [
+      { "has": "the train will leave at seven", "note": "Tarife için geniş zaman: leaves." },
+      { "has": "the train is leaving at seven o clock tomorrow", "note": "Tarife için geniş zaman kullanılır." }
+     ]
+    },
+    {
+     "tr": "Gelecek yıl bu zamanlar mezun olmuş olacağım.",
+     "answers": ["This time next year I will have finished my studies."],
+     "hint": "Gelecekte tamamlanmış iş: will have + üçüncü biçim.",
+     "traps": [
+      { "has": "will have finish", "note": "Üçüncü biçim: will have finished." },
+      { "has": "i will finish this time next year", "note": "O ana kadar bitmiş: will have finished." }
+     ]
+    },
+    {
+     "tr": "Sana söz veriyorum, geç kalmayacağım.",
+     "answers": ["I promise I will not be late.", "I promise I won't be late."],
+     "hint": "Söz vermek: will.",
+     "traps": [
+      { "has": "i promise i am not going to be late", "note": "Söz için will kullanılır." },
+      { "has": "will not to be", "note": "will'den sonra to gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Önümüzdeki hafta için dört cümle yaz: bir randevu, bir plan, bir tahmin ve bir söz.",
+    "checklist": [
+     "Kesinleşmiş randevuda şimdiki zaman kullandın mı?",
+     "Önceden yapılmış planda going to kullandın mı?",
+     "Anlık karar ve sözde will kullandın mı?"
+    ],
+    "model": "I am seeing the dentist at three tomorrow. We are going to buy a new car next month. I think it will rain at the weekend. I promise I will not be late again."
+   }
+  },
+  {
+   "id": "b1-w-22",
+   "level": "B1",
+   "order": 22,
+   "title": "Alışmak",
+   "canDo": "Yeni bir duruma alışma sürecimi yazabilirim.",
+   "focus": "Üç kalıp birbirine çok benzer ama anlamları ayrıdır: used to geçmiş alışkanlık, be used to alışkın olmak, get used to alışmaya başlamak. Son ikisinde to bir edattır ve -ing alır.",
+   "tasks": [
+    {
+     "tr": "Eskiden köyde yaşardım.",
+     "answers": ["I used to live in a village."],
+     "hint": "Geçmiş alışkanlık: used to + yalın fiil.",
+     "traps": [
+      { "has": "i am used to live in a village", "note": "Bu \"alışkınım\" demek olur." },
+      { "has": "used to living in a village", "at": "start", "note": "Geçmiş alışkanlıkta yalın fiil: used to live." }
+     ]
+    },
+    {
+     "tr": "Artık şehirde yaşamaya alışkınım.",
+     "answers": ["I am used to living in the city now.", "I'm used to living in the city now."],
+     "hint": "be used to'dan sonra -ing gelir.",
+     "traps": [
+      { "has": "i am used to live in the city", "note": "Buradaki to edattır: used to living." },
+      { "has": "i used to live in the city now", "note": "Bu \"eskiden yaşardım\" demek olur." }
+     ]
+    },
+    {
+     "tr": "Erken kalkmaya yavaş yavaş alışıyorum.",
+     "answers": ["I am getting used to getting up early.", "I'm getting used to getting up early."],
+     "hint": "get used to: alışma süreci.",
+     "traps": [
+      { "has": "getting used to get up", "note": "to'dan sonra -ing: used to getting up." }
+     ]
+    },
+    {
+     "tr": "İlk başta çok zordu.",
+     "answers": ["At first it was very difficult.", "At first it was very hard."],
+     "hint": "Kalıp: at first.",
+     "traps": [
+      { "has": "at the first it was", "at": "start", "note": "Kalıp: At first." },
+      { "has": "firstly it was very difficult", "at": "start", "note": "Burada zaman anlatılıyor: At first." }
+     ]
+    },
+    {
+     "tr": "Yavaş yavaş daha kolay hale geldi.",
+     "answers": ["Little by little it became easier.", "It gradually became easier."],
+     "hint": "y düşer: easier.",
+     "traps": [
+      { "has": "more easy", "note": "Kısa sıfat: easier." },
+      { "has": "it became more easier", "note": "İkisi birden kullanılmaz: easier." }
+     ]
+    },
+    {
+     "tr": "Şimdi gürültüyü fark bile etmiyorum.",
+     "answers": ["Now I do not even notice the noise.", "Now I don't even notice the noise."],
+     "hint": "even, fiilden önce gelir.",
+     "traps": [
+      { "has": "i do not notice even", "note": "Sıra: do not even notice." },
+      { "has": "noises", "note": "Bu anlamda noise sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Yalnız yaşamaya asla alışamadım.",
+     "answers": ["I never got used to living alone."],
+     "hint": "get used to'dan sonra -ing gelir.",
+     "traps": [
+      { "has": "never got used to live alone", "note": "to'dan sonra -ing: to living alone." },
+      { "has": "i did not never get used", "note": "never tek başına olumsuzdur." }
+     ]
+    },
+    {
+     "tr": "İnsan her şeye alışıyor.",
+     "answers": ["People get used to everything.", "You get used to everything."],
+     "hint": "Genel özne için people ya da you.",
+     "traps": [
+      { "has": "human gets used to everything", "at": "start", "note": "Genel özne: People ya da You." },
+      { "has": "get used to every things", "note": "Tek kelime: everything." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Hayatında büyük bir değişikliği anlat: eskiden nasıldı, nasıl alıştın, şimdi nasıl?",
+    "checklist": [
+     "used to, be used to ve get used to arasındaki farkı doğru kullandın mı?",
+     "be/get used to'dan sonra -ing kullandın mı?",
+     "never ile ayrıca olumsuzluk eklemedin, değil mi?"
+    ],
+    "model": "I used to live in a village. At first the city was very difficult for me. Little by little I got used to living here. Now I am used to the noise and I do not even notice it."
+   }
+  },
+  {
+   "id": "b1-w-23",
+   "level": "B1",
+   "order": 23,
+   "title": "İş yazışması",
+   "canDo": "İş yerinde kısa ve net mesajlar yazabilirim.",
+   "focus": "İş yazışmasında kısalık kibarlıktan önemli değildir: kısa ama kibar olmalı. Ayrıca sorumluluk cümleleri açık olmalı, kim ne yapacak belli olmalı.",
+   "tasks": [
+    {
+     "tr": "Toplantı yarına ertelendi.",
+     "answers": ["The meeting has been put off until tomorrow."],
+     "hint": "Zaman sınırı için until.",
+     "traps": [
+      { "has": "put off to tomorrow", "note": "Kalıp: put off until tomorrow." },
+      { "has": "the meeting put off until", "at": "start", "note": "Edilgen: has been put off." }
+     ]
+    },
+    {
+     "tr": "Raporu cuma gününe kadar gönderebilir misiniz?",
+     "answers": ["Could you send the report by Friday?"],
+     "hint": "Son tarih için by, süre için until.",
+     "traps": [
+      { "has": "until friday", "note": "Son tarih için by: by Friday." },
+      { "has": "send the report on friday latest", "note": "Kalıp: by Friday." }
+     ]
+    },
+    {
+     "tr": "Dosyayı ekte gönderiyorum.",
+     "answers": ["Please find the file attached.", "I am attaching the file."],
+     "hint": "Resmî kalıp: please find attached.",
+     "traps": [
+      { "has": "i send in attachment", "at": "start", "note": "Kalıp: Please find the file attached." }
+     ]
+    },
+    {
+     "tr": "Bu konudan ben sorumluyum.",
+     "answers": ["I am responsible for this.", "I'm responsible for this."],
+     "hint": "Kalıp: responsible for.",
+     "traps": [
+      { "has": "responsible from", "note": "Kalıp responsible for." },
+      { "has": "responsible of", "note": "Kalıp responsible for." }
+     ]
+    },
+    {
+     "tr": "Sizinle cuma günü iletişime geçeceğim.",
+     "answers": ["I will get in touch with you on Friday.", "I will contact you on Friday."],
+     "hint": "contact'tan sonra doğrudan kişi gelir.",
+     "traps": [
+      { "has": "contact with you", "note": "contact'tan sonra doğrudan you gelir." },
+      { "has": "in friday", "note": "Gün için on: on Friday." }
+     ]
+    },
+    {
+     "tr": "Bu işi bitirmem iki gün sürecek.",
+     "answers": ["It will take me two days to finish this."],
+     "hint": "Kalıp: it takes me + süre + to + fiil.",
+     "traps": [
+      { "has": "i will take two days to finish", "at": "start", "note": "Kalıp: It will take me two days." },
+      { "has": "two day", "note": "Sayıdan sonra çoğul: two days." }
+     ]
+    },
+    {
+     "tr": "Sorularınız olursa bana yazın.",
+     "answers": ["If you have any questions, please write to me.", "If you have any questions, please let me know."],
+     "hint": "let'ten sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "let me to know", "note": "let'ten sonra yalın fiil: let me know." },
+      { "has": "if you will have any questions", "note": "if'ten sonra geniş zaman kullanılır." }
+     ]
+    },
+    {
+     "tr": "Yardımınız için teşekkürler.",
+     "answers": ["Thank you for your help.", "Thanks for your help."],
+     "hint": "thank you for + isim ya da -ing.",
+     "traps": [
+      { "has": "thank you for your helping", "note": "help burada isimdir: for your help." },
+      { "has": "thanks to your help", "note": "Teşekkür için: Thanks for your help." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir iş arkadaşına kısa bir mesaj yaz: bir değişikliği bildir, bir rica et, bir tarih ver, kapanış yap.",
+    "checklist": [
+     "Son tarih için by, süre sonu için until kullandın mı?",
+     "responsible for ve contact kalıplarını doğru yazdın mı?",
+     "let'ten sonra yalın fiil kullandın mı?"
+    ],
+    "model": "The meeting has been put off until tomorrow. Could you send the report by Friday? It will take me two days to finish my part. If you have any questions, please let me know. Thank you for your help."
+   }
+  },
+  {
+   "id": "b1-w-24",
+   "level": "B1",
+   "order": 24,
+   "title": "Tartışma yazısı",
+   "canDo": "İki görüşü karşılaştıran dengeli bir yazı yazabilirim.",
+   "focus": "Dengeli yazıda kendi görüşün en sonda gelir ve karşı görüş dürüstçe aktarılır. Bağlaçlar okuyucuyu yönlendirir: some people argue, others believe, nevertheless.",
+   "tasks": [
+    {
+     "tr": "Bu konu uzun zamandır tartışılıyor.",
+     "answers": ["This subject has been discussed for a long time.", "This topic has been discussed for a long time."],
+     "hint": "Edilgen ve süren: has been + üçüncü biçim.",
+     "traps": [
+      { "has": "has been discuss", "note": "Üçüncü biçim: has been discussed." },
+      { "has": "discussed about", "note": "discuss'tan sonra about gelmez." }
+     ]
+    },
+    {
+     "tr": "Bazı insanlar bunun gerekli olduğunu savunuyor.",
+     "answers": ["Some people argue that it is necessary.", "Some people believe that it is necessary."],
+     "hint": "argue that + cümle.",
+     "traps": [
+      { "has": "some people argues", "note": "people çoğuldur: argue." },
+      { "has": "argue to it is necessary", "note": "Kalıp: argue that…" }
+     ]
+    },
+    {
+     "tr": "Diğerleri ise tam tersini düşünüyor.",
+     "answers": ["Others think the opposite.", "Others believe the opposite."],
+     "hint": "others, belirsiz bir grubu anlatır.",
+     "traps": [
+      { "has": "the others think opposite", "at": "start", "note": "Genel grup: Others think the opposite." },
+      { "has": "other think", "at": "start", "note": "Çoğul biçim: Others." }
+     ]
+    },
+    {
+     "tr": "Birinci görüşün güçlü bir yanı var.",
+     "answers": ["The first view has a strong point.", "There is a strong point in the first view."],
+     "hint": "Tekil özne: has.",
+     "traps": [
+      { "has": "the first view have", "note": "Tekil özne: has." }
+     ]
+    },
+    {
+     "tr": "Buna rağmen bazı sorular cevapsız kalıyor.",
+     "answers": ["Nevertheless, some questions remain unanswered.", "Even so, some questions remain unanswered."],
+     "hint": "Zıtlık bağlacı cümle başında, virgülle.",
+     "traps": [
+      { "has": "despite this some questions remains", "note": "Çoğul özne: remain." },
+      { "has": "questions remain without answer", "note": "Doğal biçim: remain unanswered." }
+     ]
+    },
+    {
+     "tr": "Her iki tarafın da haklı olduğu noktalar var.",
+     "answers": ["Both sides have strong points.", "There are strong points on both sides."],
+     "hint": "both ile çoğul kullanılır.",
+     "traps": [
+      { "has": "both sides has", "note": "both ile çoğul: have." },
+      { "has": "both side", "note": "both ile çoğul isim: both sides." }
+     ]
+    },
+    {
+     "tr": "Kendi görüşüme gelince, ikinci fikri destekliyorum.",
+     "answers": ["As for my own view, I support the second idea.", "In my own opinion, I support the second idea."],
+     "hint": "Kalıp: as for.",
+     "traps": [
+      { "has": "as for me i am support", "note": "support bir fiildir: I support." }
+     ]
+    },
+    {
+     "tr": "Bütün bunları göz önüne alarak bu sonuca varıyorum.",
+     "answers": ["Taking all this into account, I reach this conclusion.", "Considering all this, I reach this conclusion."],
+     "hint": "Kalıp: take into account.",
+     "traps": [
+      { "has": "taking all this in account", "at": "start", "note": "Kalıp: into account." },
+      { "has": "i arrive this conclusion", "note": "Kalıp: reach a conclusion ya da come to a conclusion." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "\"Öğrenciler telefonlarını okula getirebilmeli\" konusunda dengeli bir yazı yaz: iki görüş, karşılaştırma, kendi görüşün en sonda.",
+    "checklist": [
+     "Karşı görüşü dürüstçe aktardın mı?",
+     "Kendi görüşünü en sona bıraktın mı?",
+     "people, both ve others ile çoğul fiil kullandın mı?"
+    ],
+    "model": "This subject has been discussed for a long time. Some people argue that it is necessary. Others think the opposite. Both sides have strong points. Nevertheless, some questions remain unanswered. As for my own view, I support the second idea."
+   }
+  },
+  {
+   "id": "b1-w-25",
+   "level": "B1",
+   "order": 25,
+   "title": "Bir anı yazmak",
+   "canDo": "Beni etkileyen bir anıyı ayrıntılı yazabilirim.",
+   "focus": "Anı yazısında üç zaman katmanı iç içe geçer: olaydan önce olanlar had + üçüncü biçim, olayın kendisi geçmiş zaman, bugüne etkisi have + üçüncü biçim. Katmanları ayırmak anlatıyı anlaşılır kılar.",
+   "tasks": [
+    {
+     "tr": "On yaşındaydım ve daha önce hiç uçağa binmemiştim.",
+     "answers": ["I was ten and I had never flown before."],
+     "hint": "Olaydan önceki durum: had + üçüncü biçim.",
+     "traps": [
+      { "has": "i have never flown before", "note": "Geçmişteki bir andan önce: I had never flown." },
+      { "has": "had never fly", "note": "Üçüncü biçim: had never flown." }
+     ]
+    },
+    {
+     "tr": "Ailem o yolculuğu aylar önce planlamıştı.",
+     "answers": ["My family had planned that trip months before."],
+     "hint": "Daha eski olay: had + üçüncü biçim.",
+     "traps": [
+      { "has": "my family has planned that trip", "note": "Geçmişten öncesi: had planned." },
+      { "has": "had planned that trip before months", "note": "Sıra: months before." }
+     ]
+    },
+    {
+     "tr": "Havaalanına vardığımızda çok heyecanlıydım.",
+     "answers": ["When we arrived at the airport, I was very excited."],
+     "hint": "Kişinin hâli: excited.",
+     "traps": [
+      { "has": "i was very exciting", "note": "Kişi için: excited." },
+      { "has": "arrived to the airport", "note": "Kalıp: arrive at the airport." }
+     ]
+    },
+    {
+     "tr": "Uçak kalkarken gözlerimi kapattım.",
+     "answers": ["I closed my eyes while the plane was taking off."],
+     "hint": "Süren olay: was taking off.",
+     "traps": [
+      { "has": "while the plane took off", "note": "Süren olay: was taking off." }
+     ]
+    },
+    {
+     "tr": "Hayatımda gördüğüm en güzel manzaraydı.",
+     "answers": ["It was the most beautiful view I had ever seen."],
+     "hint": "O ana kadarki deneyim: had ever seen.",
+     "traps": [
+      { "has": "i have ever seen", "note": "Geçmişteki bir ana kadar: I had ever seen." },
+      { "has": "the beautifulest", "note": "Uzun sıfat: the most beautiful." }
+     ]
+    },
+    {
+     "tr": "O günden beri uçmayı seviyorum.",
+     "answers": ["I have loved flying since that day.", "I've loved flying since that day."],
+     "hint": "Bugüne uzanan: have + üçüncü biçim, since.",
+     "traps": [
+      { "has": "for that day", "note": "Başlangıç noktası için since." },
+      { "has": "i love flying since that day", "at": "start", "note": "Süren durum: I have loved flying since…" }
+     ]
+    },
+    {
+     "tr": "O yolculuk bana korkmamayı öğretti.",
+     "answers": ["That trip taught me not to be afraid."],
+     "hint": "Olumsuz mastar: not to + fiil.",
+     "traps": [
+      { "has": "taught me to not be afraid", "note": "Olumsuz mastar: not to be afraid." },
+      { "has": "teached", "note": "teach düzensizdir: taught." }
+     ]
+    },
+    {
+     "tr": "Bugün bile o günü hatırlıyorum.",
+     "answers": ["Even today I remember that day."],
+     "hint": "even, vurguladığı kelimeden önce gelir.",
+     "traps": [
+      { "has": "today even i remember", "at": "start", "note": "Sıra: Even today I remember." },
+      { "has": "i am remembering that day", "note": "remember bu kipe girmez: I remember." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Seni değiştiren bir anıyı sekiz cümleyle anlat: öncesi, olay, en çarpıcı an, bugüne etkisi.",
+    "checklist": [
+     "Olaydan önceki durumlarda had + üçüncü biçim kullandın mı?",
+     "Olayın kendisini geçmiş zamanla yazdın mı?",
+     "Bugüne uzanan etkide have + üçüncü biçim ve since kullandın mı?"
+    ],
+    "model": "I was ten and I had never flown before. My family had planned that trip months before. When we arrived at the airport, I was very excited. I closed my eyes while the plane was taking off. It was the most beautiful view I had ever seen. I have loved flying since that day."
+   }
+  }
+ ]
+}
