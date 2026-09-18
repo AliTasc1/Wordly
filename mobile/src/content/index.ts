@@ -86,6 +86,7 @@ const WRITING: Partial<Record<Level, () => WritingSet[]>> = {
   A2: () => require('../../assets/content/writing-a2.json') as WritingSet[],
   B1: () => require('../../assets/content/writing-b1.json') as WritingSet[],
   B2: () => require('../../assets/content/writing-b2.json') as WritingSet[],
+  C1: () => require('../../assets/content/writing-c1.json') as WritingSet[],
 };
 
 export const vocabOf = (level: Level): VocabCard[] => VOCAB[level]();
