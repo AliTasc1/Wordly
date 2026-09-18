@@ -12,8 +12,9 @@ uygulamaya girer, bir daha hiç API çağrısı yapılmaz. Yani bu abonelik değ
 tek seferlik bir iş — ve tek seferlik işler elle değil betikle yapılır ki
 yarın bir replik düzeltildiğinde yalnız o replik yeniden üretilsin.
 
-Betik yeniden çalıştırılabilir: var olan dosyayı atlar. Bin replikte ağ
-koparsa kaldığı yerden devam eder.
+Betik yeniden çalıştırılabilir: var olan dosyayı atlar. Bağlantı koparsa
+üretimin içinde geri çekilerek yeniden dener; öldürücü bir hatada durur ve
+sonraki çalıştırma kaldığı yerden sürer.
 
 API yüzeyi ezberden yazılmadı; Google'ın kendi discovery belgesinden
 doğrulandı (texttospeech.googleapis.com/$discovery/rest?version=v1).
@@ -30,6 +31,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from http.client import HTTPException
 from pathlib import Path
 
 ROOT = Path(__file__).parent
@@ -37,6 +39,11 @@ TEXTS = ROOT / "texts"
 CARDS = ROOT.parent / "mobile" / "assets" / "content"
 OUT = ROOT.parent / "mobile" / "assets" / "audio"
 LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"]
+
+# Ağ kopması sayılan hatalar: sunucudan gelen bir cevap değil, yolun kopması.
+# OSError bilerek dışarıda: diske yazamamak ağ sorunu değildir ve onu
+# "bağlantı kurulamadı" diye raporlamak hatayı gizler.
+TRANSIENT = (urllib.error.URLError, HTTPException, TimeoutError, ConnectionError)
 
 SYNTHESIZE = "https://texttospeech.googleapis.com/v1/text:synthesize"
 VOICES = "https://texttospeech.googleapis.com/v1/voices"
@@ -160,8 +167,16 @@ def pick_voices(key: str) -> list[str]:
     alınıyor; sabit ad yazmak betiği bir yıl sonra sessizce bozar. Aileler
     tercih sırasıyla taranıyor, ilk ikisini birden karşılayan aile kazanıyor.
     """
-    with urllib.request.urlopen(f"{VOICES}?languageCode=en-US&key={key}", timeout=30) as r:
-        voices = json.loads(r.read()).get("voices", [])
+    voices: list[dict] = []
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(f"{VOICES}?languageCode=en-US&key={key}", timeout=30) as r:
+                voices = json.loads(r.read()).get("voices", [])
+            break
+        except TRANSIENT:
+            if attempt == 4:
+                raise
+            time.sleep(2 ** attempt)
 
     for family in VOICE_ORDER:
         same = [v for v in voices if family.lower() in v["name"].lower()]
@@ -307,16 +322,26 @@ def main() -> int:
 
     todo = pending[: args.limit] if args.limit else pending
     for i, clip in enumerate(todo, 1):
-        for attempt in range(4):
+        for attempt in range(6):
             try:
                 synthesize(clip, key, voices)
                 break
             except urllib.error.HTTPError as error:
                 # 429 ve 5xx geçici; gerisinde durmak doğrusu, çünkü yanlış
                 # anahtarla bin kez denemek kotayı da zamanı da yakar.
-                if error.code not in (429, 500, 502, 503) or attempt == 3:
+                if error.code not in (429, 500, 502, 503) or attempt == 5:
                     print(f"\n{clip.path.name}: {error.code} {error.reason}", file=sys.stderr)
                     print(error.read().decode("utf-8", "replace")[:400], file=sys.stderr)
+                    return 1
+                time.sleep(2 ** attempt)
+            except TRANSIENT as error:
+                # Kopan bağlantı, zaman aşımı, DNS hatası. İlk sürümde yalnızca
+                # HTTP durum kodları yakalanıyordu ve bin repliğin ortasında
+                # düşen tek bir bağlantı bütün üretimi öldürüyordu — nitekim
+                # öldürdü. Bunlar sunucunun verdiği bir cevap değil, yolun
+                # kopması; her zaman yeniden denenir.
+                if attempt == 5:
+                    print(f"\n{clip.path.name}: bağlantı kurulamadı — {error}", file=sys.stderr)
                     return 1
                 time.sleep(2 ** attempt)
         if i % 25 == 0 or i == len(todo):
