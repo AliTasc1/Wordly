@@ -1,0 +1,201 @@
+{
+  "_meta": { "batch": "b2-listening-05", "level": "B2", "range": "Diyalog 21-25" },
+  "items": [
+    {
+      "id": "b2-l-21",
+      "level": "B2",
+      "order": 21,
+      "kind": "listening",
+      "title": "Bir söz verilmişti",
+      "titleEn": "The Promotion That Did Not Happen",
+      "minutes": 5,
+      "names": ["Esra", "Serhat"],
+      "speakers": ["Esra", "Serhat"],
+      "lines": [
+        { "who": "Esra", "en": "In March you told me the position was mine in the autumn.", "tr": "Martta pozisyonun sonbaharda benim olacağını söylemiştiniz." },
+        { "who": "Serhat", "en": "I said it was likely, and I understand that is not how it sounded.", "tr": "Muhtemel dedim ve bunun öyle duyulmadığını anlıyorum." },
+        { "who": "Esra", "en": "It is not how anybody in that room heard it either.", "tr": "O odadaki kimse de öyle duymadı." },
+        { "who": "Serhat", "en": "That is fair. What changed is not your work.", "tr": "Bu haklı. Değişen şey sizin işiniz değil." },
+        { "who": "Esra", "en": "Then say what did change, in plain words.", "tr": "O hâlde neyin değiştiğini açık kelimelerle söyleyin." },
+        { "who": "Serhat", "en": "The department above us was cut and a manager came down into the post.", "tr": "Üstümüzdeki birim küçültüldü ve bir müdür bu pozisyona indi." },
+        { "who": "Esra", "en": "So it was decided somewhere I have never been.", "tr": "Yani hiç bulunmadığım bir yerde karara bağlandı." },
+        { "who": "Serhat", "en": "Yes. And I should have told you in July instead of waiting.", "tr": "Evet. Beklemek yerine temmuzda size söylemeliydim." },
+        { "who": "Esra", "en": "That is the part I am angry about, not the post.", "tr": "Kızgın olduğum kısım bu, pozisyon değil." },
+        { "who": "Serhat", "en": "I know. What would make this something you could accept?", "tr": "Biliyorum. Bunu kabul edebileceğiniz hâle ne getirir?" },
+        { "who": "Esra", "en": "A date, in writing, and the work that goes with the title starting now.", "tr": "Yazılı bir tarih ve unvanla gelen işin şimdiden başlaması." },
+        { "who": "Serhat", "en": "I can do the second today. The first I have to get above me, and I will name the day I asked.", "tr": "İkincisini bugün yapabilirim. Birincisini üstümden almam gerek ve sorduğum günü size söyleyeceğim." }
+      ],
+      "glossary": [
+        { "w": "position", "tr": "pozisyon" },
+        { "w": "likely", "tr": "muhtemel" },
+        { "w": "department", "tr": "birim, bölüm" },
+        { "w": "post", "tr": "görev, kadro" },
+        { "w": "title", "tr": "unvan" }
+      ],
+      "questions": [
+        { "q": "What did Serhat say in March?", "options": ["That the position was likely hers", "That she had the job", "That she should wait a year", "Nothing about the post"], "answer": 0, "note": "\"I said it was likely.\"" },
+        { "q": "What actually changed?", "options": ["A manager moved down into the post", "Her work got worse", "The post was removed", "The budget fell"], "answer": 0, "note": "\"A manager came down into the post.\"" },
+        { "q": "What is Esra most angry about?", "options": ["Not being told in July", "Losing the post", "The manager", "The money"], "answer": 0, "note": "\"That is the part I am angry about, not the post.\"" },
+        { "q": "What does she ask for?", "options": ["A written date and the work starting now", "An apology", "More pay", "A different team"], "answer": 0, "note": "\"A date, in writing, and the work that goes with the title starting now.\"" },
+        { "q": "What can Serhat do today?", "options": ["Start giving her the work", "Confirm the date", "Change the decision", "Nothing"], "answer": 0, "note": "\"I can do the second today.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-22",
+      "level": "B2",
+      "order": 22,
+      "kind": "listening",
+      "title": "Yaşlı komşuyu ikna etmek",
+      "titleEn": "Persuading Him to Stop Driving",
+      "minutes": 5,
+      "names": ["Gonca", "Nejat"],
+      "speakers": ["Gonca", "Nejat"],
+      "lines": [
+        { "who": "Gonca", "en": "The car has four new marks on it since spring and he has not mentioned one of them.", "tr": "Arabada bahardan beri dört yeni iz var ve hiçbirinden söz etmedi." },
+        { "who": "Nejat", "en": "Have you said anything?", "tr": "Bir şey söyledin mi?" },
+        { "who": "Gonca", "en": "Twice, and both times it became an argument about whether he is old.", "tr": "İki kez ve ikisinde de yaşlı olup olmadığı tartışmasına döndü." },
+        { "who": "Nejat", "en": "Because that is what he heard, whatever you said.", "tr": "Çünkü sen ne dersen de duyduğu buydu." },
+        { "who": "Gonca", "en": "So how do I have the conversation without it being that conversation?", "tr": "Peki bu konuşmayı o konuşma olmadan nasıl yaparım?" },
+        { "who": "Nejat", "en": "Do not talk about driving. Talk about what he uses the car for.", "tr": "Araba kullanmayı konuşma. Arabayı ne için kullandığını konuş." },
+        { "who": "Gonca", "en": "The market on Tuesday and his brother on Sundays.", "tr": "Salı pazarı ve pazar günleri kardeşi." },
+        { "who": "Nejat", "en": "Then the question is how he gets to those two places, not whether he drives.", "tr": "O hâlde soru araba kullanıp kullanmadığı değil, o iki yere nasıl gittiği." },
+        { "who": "Gonca", "en": "If both are solved, the car becomes something he pays for and does not need.", "tr": "İkisi çözülürse araba, parasını ödediği ama ihtiyaç duymadığı bir şey olur." },
+        { "who": "Nejat", "en": "And then he decides, which is the only way it lasts.", "tr": "Ve kararı o verir, kalıcı olmasının tek yolu bu." },
+        { "who": "Gonca", "en": "That will take months.", "tr": "Bu aylar sürer." },
+        { "who": "Nejat", "en": "It will. The alternative took four marks and is still where it started.", "tr": "Sürecek. Diğer yol dört ize mal oldu ve hâlâ başladığı yerde." }
+      ],
+      "glossary": [
+        { "w": "marks", "tr": "izler, çizikler" },
+        { "w": "argument", "tr": "tartışma" },
+        { "w": "solved", "tr": "çözülmüş" },
+        { "w": "alternative", "tr": "diğer yol, alternatif" }
+      ],
+      "questions": [
+        { "q": "What has Gonca noticed?", "options": ["Four new marks on the car", "He drives faster", "He stopped going out", "He lost his keys"], "answer": 0, "note": "\"The car has four new marks on it since spring.\"" },
+        { "q": "What happened when she raised it?", "options": ["It became an argument about his age", "He agreed at once", "He said nothing", "He sold the car"], "answer": 0, "note": "\"Both times it became an argument about whether he is old.\"" },
+        { "q": "What does Nejat suggest talking about?", "options": ["What he uses the car for", "His age", "The cost of the car", "His health"], "answer": 0, "note": "\"Talk about what he uses the car for.\"" },
+        { "q": "What does he use it for?", "options": ["The market and visiting his brother", "Work", "Hospital visits", "Shopping only"], "answer": 0, "note": "\"The market on Tuesday and his brother on Sundays.\"" },
+        { "q": "Why must he decide himself?", "options": ["It is the only way it lasts", "It is the law", "Nobody else can", "He owns the car"], "answer": 0, "note": "\"And then he decides, which is the only way it lasts.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-23",
+      "level": "B2",
+      "order": 23,
+      "kind": "listening",
+      "title": "Ekipte bir hata",
+      "titleEn": "Whose Mistake Was It",
+      "minutes": 5,
+      "names": ["Taner", "Yeliz"],
+      "speakers": ["Taner", "Yeliz"],
+      "lines": [
+        { "who": "Yeliz", "en": "The wrong file went to the client and three people touched it before it left.", "tr": "Müşteriye yanlış dosya gitti ve çıkmadan önce üç kişi ona dokundu." },
+        { "who": "Taner", "en": "Do we need to know which one?", "tr": "Hangisi olduğunu bilmemiz gerekiyor mu?" },
+        { "who": "Yeliz", "en": "The client will ask, and I would rather have an answer than a silence.", "tr": "Müşteri soracak ve sessizlik yerine bir cevabım olsun isterim." },
+        { "who": "Taner", "en": "Then the honest answer is that our process allowed it, not that somebody failed.", "tr": "O hâlde dürüst cevap, birinin hata yapması değil, sürecimizin buna izin vermesi." },
+        { "who": "Yeliz", "en": "That sounds like the sentence companies use when they are hiding somebody.", "tr": "Bu, şirketlerin birini sakladığında kullandığı cümleye benziyor." },
+        { "who": "Taner", "en": "It does, and it is also true here. Two files had almost the same name.", "tr": "Benziyor, ama burada aynı zamanda doğru. İki dosyanın adı neredeyse aynıydı." },
+        { "who": "Yeliz", "en": "Then say that, and say what we changed today.", "tr": "O zaman bunu söyle ve bugün neyi değiştirdiğimizi söyle." },
+        { "who": "Taner", "en": "We have already renamed everything and added the date to the front.", "tr": "Her şeyi yeniden adlandırdık ve başına tarih ekledik." },
+        { "who": "Yeliz", "en": "Good. And internally?", "tr": "Peki içeride?" },
+        { "who": "Taner", "en": "I would tell the three of them together that nobody is being blamed, once.", "tr": "Üçüne birlikte, bir kez, kimsenin suçlanmadığını söylerdim." },
+        { "who": "Yeliz", "en": "Once?", "tr": "Bir kez mi?" },
+        { "who": "Taner", "en": "Saying it twice makes people certain that somebody is.", "tr": "İki kez söylemek insanları birinin suçlandığından emin eder." },
+        { "who": "Yeliz", "en": "Then I will say it in the same sentence as the new naming rule.", "tr": "O hâlde bunu yeni adlandırma kuralıyla aynı cümlede söylerim." },
+        { "who": "Taner", "en": "That is better. A change explains itself; a reassurance invites questions.", "tr": "Bu daha iyi. Bir değişiklik kendini açıklar; bir güvence soru davet eder." }
+      ],
+      "glossary": [
+        { "w": "client", "tr": "müşteri" },
+        { "w": "process", "tr": "süreç" },
+        { "w": "renamed", "tr": "yeniden adlandırıldı" },
+        { "w": "internally", "tr": "içeride, kurum içinde" },
+        { "w": "blamed", "tr": "suçlanan" }
+      ],
+      "questions": [
+        { "q": "What went wrong?", "options": ["The wrong file went to the client", "A deadline was missed", "A meeting was canceled", "A payment was late"], "answer": 0, "note": "\"The wrong file went to the client.\"" },
+        { "q": "Why does Yeliz want an answer ready?", "options": ["The client will ask", "The manager demands it", "It is company policy", "To blame somebody"], "answer": 0, "note": "\"The client will ask.\"" },
+        { "q": "What was the actual cause?", "options": ["Two files had almost the same name", "Carelessness", "A broken system", "A new employee"], "answer": 0, "note": "\"Two files had almost the same name.\"" },
+        { "q": "What has been changed?", "options": ["Files renamed with the date in front", "A new approval step", "A new system", "Nothing yet"], "answer": 0, "note": "\"We have already renamed everything and added the date to the front.\"" },
+        { "q": "Why say it only once?", "options": ["Saying it twice makes people certain somebody is blamed", "There is no time", "It is in the policy", "Nobody listens twice"], "answer": 0, "note": "Son replik." }
+      ]
+    },
+    {
+      "id": "b2-l-24",
+      "level": "B2",
+      "order": 24,
+      "kind": "listening",
+      "title": "Kursu bırakmak",
+      "titleEn": "Leaving the Course",
+      "minutes": 5,
+      "names": ["Ahmet", "Zehra"],
+      "speakers": ["Ahmet", "Zehra"],
+      "lines": [
+        { "who": "Ahmet", "en": "I am eight months into a two-year course and I do not want to finish it.", "tr": "İki yıllık bir kursun sekizinci ayındayım ve bitirmek istemiyorum." },
+        { "who": "Zehra", "en": "Is it the subject or the way it is taught?", "tr": "Konu mu, anlatılma biçimi mi?" },
+        { "who": "Ahmet", "en": "The subject. I chose it because I was good at it, not because I liked it.", "tr": "Konu. İyi olduğum için seçtim, sevdiğim için değil." },
+        { "who": "Zehra", "en": "That is a very common way to choose and a very bad one.", "tr": "Bu çok yaygın ve çok kötü bir seçme biçimi." },
+        { "who": "Ahmet", "en": "Everybody says finish it because it is only sixteen more months.", "tr": "Herkes bitir diyor, sadece on altı ay kaldı diye." },
+        { "who": "Zehra", "en": "Sixteen months is not a small price for a paper you will not use.", "tr": "On altı ay, kullanmayacağın bir kâğıt için küçük bir bedel değil." },
+        { "who": "Ahmet", "en": "But leaving after eight months looks bad.", "tr": "Ama sekiz ay sonra bırakmak kötü görünüyor." },
+        { "who": "Zehra", "en": "To whom? Name one person whose opinion will still matter in five years.", "tr": "Kime? Beş yıl sonra fikri hâlâ önemli olacak bir kişi say." },
+        { "who": "Ahmet", "en": "My father, and he would understand if I had a plan.", "tr": "Babam ve bir planım olsa anlardı." },
+        { "who": "Zehra", "en": "Then the real work is the plan, not the decision.", "tr": "O hâlde asıl iş plan, karar değil." },
+        { "who": "Ahmet", "en": "I have been treating them as the same thing for four months.", "tr": "Dört aydır ikisini aynı şey sanıyorum." },
+        { "who": "Zehra", "en": "Most people do. Write the plan first and the decision makes itself.", "tr": "Çoğu insan öyle. Önce planı yaz, karar kendiliğinden gelir." }
+      ],
+      "glossary": [
+        { "w": "subject", "tr": "konu, alan" },
+        { "w": "taught", "tr": "öğretilen" },
+        { "w": "price", "tr": "bedel" },
+        { "w": "opinion", "tr": "fikir" },
+        { "w": "decision", "tr": "karar" }
+      ],
+      "questions": [
+        { "q": "How far into the course is he?", "options": ["Eight months", "Sixteen months", "Two years", "Four months"], "answer": 0, "note": "\"I am eight months into a two-year course.\"" },
+        { "q": "Why did he choose the subject?", "options": ["He was good at it", "He liked it", "His father chose it", "It was cheap"], "answer": 0, "note": "\"I chose it because I was good at it, not because I liked it.\"" },
+        { "q": "What does Zehra say about sixteen months?", "options": ["Not a small price for a paper he will not use", "It is nothing", "It is too long to waste", "He should count it"], "answer": 0, "note": "\"Sixteen months is not a small price for a paper you will not use.\"" },
+        { "q": "Whose opinion does Ahmet name?", "options": ["His father's", "His teacher's", "His friends'", "A future employer's"], "answer": 0, "note": "\"My father, and he would understand if I had a plan.\"" },
+        { "q": "What does Zehra say the real work is?", "options": ["The plan, not the decision", "The decision", "Talking to his father", "Finishing the course"], "answer": 0, "note": "\"The real work is the plan, not the decision.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-25",
+      "level": "B2",
+      "order": 25,
+      "kind": "listening",
+      "title": "Mahalle bahçesi",
+      "titleEn": "The Garden on the Empty Lot",
+      "minutes": 5,
+      "names": ["Songul", "Devrim"],
+      "speakers": ["Songul", "Devrim"],
+      "lines": [
+        { "who": "Songul", "en": "Nineteen people signed up in April and six are still coming in September.", "tr": "Nisanda on dokuz kişi yazıldı, eylülde altısı hâlâ geliyor." },
+        { "who": "Devrim", "en": "Six is not a failure. Six is a garden.", "tr": "Altı başarısızlık değil. Altı bir bahçe demek." },
+        { "who": "Songul", "en": "It feels like one when I remember the first meeting.", "tr": "İlk toplantıyı hatırlayınca başarısızlık gibi geliyor." },
+        { "who": "Devrim", "en": "The first meeting is always full. It costs nothing to attend a meeting.", "tr": "İlk toplantı hep doludur. Toplantıya gelmenin maliyeti yoktur." },
+        { "who": "Songul", "en": "What worries me is the water. Two of the six do all of it.", "tr": "Beni endişelendiren su. Altının ikisi bütün sulamayı yapıyor." },
+        { "who": "Devrim", "en": "That is the thing that will end it, not the numbers.", "tr": "Bunu bitirecek olan bu, sayılar değil." },
+        { "who": "Songul", "en": "I have asked for help twice in the group message.", "tr": "Grup mesajında iki kez yardım istedim." },
+        { "who": "Devrim", "en": "A message to six people is a message to nobody. Ask one person for one day.", "tr": "Altı kişiye mesaj kimseye mesajdır. Bir kişiden bir gün iste." },
+        { "who": "Songul", "en": "That feels like I am choosing somebody.", "tr": "Birini seçiyormuşum gibi geliyor." },
+        { "who": "Devrim", "en": "You are, and people say yes to being chosen far more than to being asked generally.", "tr": "Seçiyorsun ve insanlar seçilmeye, genel bir ricadan çok daha sık evet diyor." },
+        { "who": "Songul", "en": "Then I will write to three people tonight with three separate days.", "tr": "O zaman bu gece üç kişiye üç ayrı gün için yazacağım." },
+        { "who": "Devrim", "en": "And when they come, do not thank them too much. It makes it feel like a favor.", "tr": "Geldiklerinde de fazla teşekkür etme. Lütuf gibi hissettiriyor." }
+      ],
+      "glossary": [
+        { "w": "signed up", "tr": "kaydoldu" },
+        { "w": "failure", "tr": "başarısızlık" },
+        { "w": "attend", "tr": "katılmak" },
+        { "w": "generally", "tr": "genel olarak" },
+        { "w": "favor", "tr": "lütuf, iyilik" }
+      ],
+      "questions": [
+        { "q": "How many still come in September?", "options": ["Six", "Nineteen", "Two", "Three"], "answer": 0, "note": "\"Six are still coming in September.\"" },
+        { "q": "What does Devrim say about the first meeting?", "options": ["It is always full because attending costs nothing", "It is the most important", "It should be smaller", "Nobody remembers it"], "answer": 0, "note": "\"It costs nothing to attend a meeting.\"" },
+        { "q": "What actually worries Songul?", "options": ["Two people do all the watering", "The number of people", "The weather", "The money"], "answer": 0, "note": "\"Two of the six do all of it.\"" },
+        { "q": "What does Devrim say about group messages?", "options": ["A message to six is a message to nobody", "They work well", "They should be shorter", "They should be weekly"], "answer": 0, "note": "\"A message to six people is a message to nobody.\"" },
+        { "q": "What is his final advice?", "options": ["Do not thank them too much", "Thank them publicly", "Pay them", "Make a list of days"], "answer": 0, "note": "Son replik." }
+      ]
+    }
+  ]
+}

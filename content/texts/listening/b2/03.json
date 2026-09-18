@@ -1,0 +1,207 @@
+{
+  "_meta": { "batch": "b2-listening-03", "level": "B2", "range": "Diyalog 11-15" },
+  "items": [
+    {
+      "id": "b2-l-11",
+      "level": "B2",
+      "order": 11,
+      "kind": "listening",
+      "title": "Ortaklıkta anlaşmazlık",
+      "titleEn": "Dividing the Business",
+      "minutes": 5,
+      "names": ["Ferhat", "Neval"],
+      "speakers": ["Ferhat", "Neval"],
+      "lines": [
+        { "who": "Neval", "en": "We have avoided this conversation for four months, so let us have it badly rather than not at all.", "tr": "Bu konuşmadan dört aydır kaçıyoruz; hiç yapmamaktansa kötü yapalım." },
+        { "who": "Ferhat", "en": "Agreed. You want to grow and I want to keep it the size it is.", "tr": "Kabul. Sen büyütmek istiyorsun, ben olduğu boyutta tutmak." },
+        { "who": "Neval", "en": "That is fair, but it is not the whole thing. I also do the part that grows.", "tr": "Doğru ama tamamı bu değil. Büyümeyi sağlayan kısmı da ben yapıyorum." },
+        { "who": "Ferhat", "en": "And I do the part that keeps the customers we already have.", "tr": "Ben de mevcut müşterileri tutan kısmı yapıyorum." },
+        { "who": "Neval", "en": "Which is worth less on paper and more in reality.", "tr": "Kâğıtta daha az, gerçekte daha çok değerli olan kısım." },
+        { "who": "Ferhat", "en": "I did not expect you to say that.", "tr": "Bunu söylemeni beklemiyordum." },
+        { "who": "Neval", "en": "I am not trying to win. I am trying to stop this taking another year.", "tr": "Kazanmaya çalışmıyorum. Bunun bir yıl daha sürmesini engellemeye çalışıyorum." },
+        { "who": "Ferhat", "en": "Then say what you actually want.", "tr": "O hâlde gerçekte ne istediğini söyle." },
+        { "who": "Neval", "en": "To take the new work into a separate company and pay you for the name.", "tr": "Yeni işi ayrı bir şirkete taşımak ve isim için sana ödeme yapmak." },
+        { "who": "Ferhat", "en": "That is cleaner than anything I had thought of.", "tr": "Bu, aklıma gelen her şeyden temiz." },
+        { "who": "Neval", "en": "It also means if I am wrong, I am wrong with my own money.", "tr": "Ayrıca yanılırsam kendi paramla yanılmış olurum." },
+        { "who": "Ferhat", "en": "Put it in writing this week, before either of us starts improving it.", "tr": "Bu hafta yazıya dök, ikimiz de onu iyileştirmeye başlamadan." }
+      ],
+      "glossary": [
+        { "w": "avoided", "tr": "kaçındı" },
+        { "w": "customers", "tr": "müşteriler" },
+        { "w": "reality", "tr": "gerçek" },
+        { "w": "separate", "tr": "ayrı" },
+        { "w": "cleaner", "tr": "daha temiz, daha sade" }
+      ],
+      "questions": [
+        { "q": "How long have they avoided the conversation?", "options": ["Four months", "One year", "Four weeks", "Six months"], "answer": 0, "note": "\"We have avoided this conversation for four months.\"" },
+        { "q": "What is the basic disagreement?", "options": ["One wants to grow, one wants to stay the same size", "Money", "Who works harder", "The office"], "answer": 0, "note": "\"You want to grow and I want to keep it the size it is.\"" },
+        { "q": "What does Neval say about Ferhat's part?", "options": ["Worth less on paper and more in reality", "It is not important", "It is easier", "It costs more"], "answer": 0, "note": "\"Worth less on paper and more in reality.\"" },
+        { "q": "What does she propose?", "options": ["A separate company, paying him for the name", "Buying his share", "Closing the business", "Hiring a manager"], "answer": 0, "note": "\"To take the new work into a separate company and pay you for the name.\"" },
+        { "q": "What does Ferhat want done this week?", "options": ["Put it in writing", "Tell the staff", "Call a lawyer", "Wait and think"], "answer": 0, "note": "\"Put it in writing this week.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-12",
+      "level": "B2",
+      "order": 12,
+      "kind": "listening",
+      "title": "Makale reddi",
+      "titleEn": "The Paper Was Rejected",
+      "minutes": 5,
+      "names": ["Ceyhun", "Aybike"],
+      "speakers": ["Ceyhun", "Aybike"],
+      "lines": [
+        { "who": "Ceyhun", "en": "Rejected, and one of the two readers clearly did not read past the method.", "tr": "Reddedildi ve iki hakemden biri belli ki yöntemden ötesini okumadı." },
+        { "who": "Aybike", "en": "That happens. What did the other one say?", "tr": "Olur böyle. Diğeri ne dedi?" },
+        { "who": "Ceyhun", "en": "Four pages, all of it useful, most of it painful.", "tr": "Dört sayfa, hepsi faydalı, çoğu can yakıcı." },
+        { "who": "Aybike", "en": "Then you have had a good outcome and it does not feel like one.", "tr": "O zaman iyi bir sonuç almışsın ama öyle hissettirmiyor." },
+        { "who": "Ceyhun", "en": "It feels like eleven months for nothing.", "tr": "On bir ay boşa gitmiş gibi hissettiriyor." },
+        { "who": "Aybike", "en": "Is the central claim still standing after those four pages?", "tr": "O dört sayfadan sonra asıl iddia hâlâ ayakta mı?" },
+        { "who": "Ceyhun", "en": "Yes. The argument survives. The evidence for one step does not.", "tr": "Evet. Sav ayakta. Bir adımın kanıtı değil." },
+        { "who": "Aybike", "en": "Then that is a repair, not a rebuild.", "tr": "O hâlde bu tamir, yeniden inşa değil." },
+        { "who": "Ceyhun", "en": "It is four more months of work.", "tr": "Dört ay daha iş demek." },
+        { "who": "Aybike", "en": "Which you would have had to do eventually, with your name already printed on it.", "tr": "Ki adın basılı hâldeyken de eninde sonunda yapman gerekecekti." },
+        { "who": "Ceyhun", "en": "You are saying the rejection is cheaper than the correction would have been.", "tr": "Reddin, düzeltmenin olacağından ucuz olduğunu söylüyorsun." },
+        { "who": "Aybike", "en": "Considerably. A correction after publication follows the paper for the rest of its life.", "tr": "Hem de çok. Yayından sonraki bir düzeltme, makaleyi ömrü boyunca takip eder." },
+        { "who": "Ceyhun", "en": "Whereas nobody outside this room will ever know this version existed.", "tr": "Oysa bu odanın dışında kimse bu hâlin var olduğunu bilmeyecek." },
+        { "who": "Aybike", "en": "Write to the second reader and thank them properly before you start.", "tr": "Başlamadan önce ikinci hakeme yaz ve düzgünce teşekkür et." }
+      ],
+      "glossary": [
+        { "w": "rejected", "tr": "reddedildi" },
+        { "w": "method", "tr": "yöntem" },
+        { "w": "outcome", "tr": "sonuç" },
+        { "w": "claim", "tr": "iddia" },
+        { "w": "evidence", "tr": "kanıt" },
+        { "w": "rejection", "tr": "ret" },
+        { "w": "correction", "tr": "düzeltme" }
+      ],
+      "questions": [
+        { "q": "What did the first reader do?", "options": ["Did not read past the method", "Wrote four pages", "Praised the paper", "Asked for more data"], "answer": 0, "note": "\"One of the two readers clearly did not read past the method.\"" },
+        { "q": "How does Ceyhun describe the second review?", "options": ["Useful but painful", "Useless", "Too short", "Unfair"], "answer": 0, "note": "\"All of it useful, most of it painful.\"" },
+        { "q": "What survived the review?", "options": ["The central argument", "The evidence for every step", "Nothing", "The method only"], "answer": 0, "note": "\"The argument survives.\"" },
+        { "q": "How does Aybike describe the work needed?", "options": ["A repair, not a rebuild", "A complete rewrite", "A small edit", "A new subject"], "answer": 0, "note": "\"Then that is a repair, not a rebuild.\"" },
+        { "q": "What does Aybike tell him to do before starting?", "options": ["Thank the second reader properly", "Send it elsewhere at once", "Complain to the journal", "Stop the project"], "answer": 0, "note": "\"Write to the second reader and thank them properly.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-13",
+      "level": "B2",
+      "order": 13,
+      "kind": "listening",
+      "title": "Ailede bakım sorumluluğu",
+      "titleEn": "Who Looks After Mother",
+      "minutes": 5,
+      "names": ["Filiz", "Adem"],
+      "speakers": ["Filiz", "Adem"],
+      "lines": [
+        { "who": "Filiz", "en": "I have been doing this alone for two years and I did not choose it.", "tr": "İki yıldır bunu tek başıma yapıyorum ve bunu seçmedim." },
+        { "who": "Adem", "en": "You live twenty minutes away. I live in another city.", "tr": "Sen yirmi dakika uzaktasın. Ben başka şehirdeyim." },
+        { "who": "Filiz", "en": "That explains the daily part. It does not explain everything else.", "tr": "Bu günlük kısmı açıklar. Geri kalanı açıklamaz." },
+        { "who": "Adem", "en": "Meaning what?", "tr": "Yani?" },
+        { "who": "Filiz", "en": "The appointments, the forms, the phone calls. None of that needs to happen in her kitchen.", "tr": "Randevular, formlar, telefonlar. Bunların hiçbirinin onun mutfağında olması gerekmiyor." },
+        { "who": "Adem", "en": "That is a fair point and I have not made it easy to hear.", "tr": "Bu haklı bir nokta ve duymayı kolaylaştırmadım." },
+        { "who": "Filiz", "en": "I am not asking you to move. I am asking you to take a category.", "tr": "Taşınmanı istemiyorum. Bir kategoriyi üstlenmeni istiyorum." },
+        { "who": "Adem", "en": "Which one?", "tr": "Hangisini?" },
+        { "who": "Filiz", "en": "Everything with an office attached. You are better at it than I am.", "tr": "Bir kuruma bağlı olan her şeyi. Bu konuda benden iyisin." },
+        { "who": "Adem", "en": "I can do that from here. Why did we not say this a year ago?", "tr": "Bunu buradan yapabilirim. Neden bunu bir yıl önce söylemedik?" },
+        { "who": "Filiz", "en": "Because I was waiting for you to notice, which was not a plan.", "tr": "Çünkü fark etmeni bekliyordum ve bu bir plan değildi." },
+        { "who": "Adem", "en": "Send me the three things that are open this week and I will start tonight.", "tr": "Bu hafta açık olan üç şeyi bana gönder, bu gece başlarım." }
+      ],
+      "glossary": [
+        { "w": "appointments", "tr": "randevular" },
+        { "w": "forms", "tr": "formlar" },
+        { "w": "category", "tr": "kategori, alan" },
+        { "w": "attached", "tr": "bağlı" }
+      ],
+      "questions": [
+        { "q": "How long has Filiz done it alone?", "options": ["Two years", "One year", "Twenty months", "Three years"], "answer": 0, "note": "\"I have been doing this alone for two years.\"" },
+        { "q": "What is Adem's reason?", "options": ["He lives in another city", "He is too busy", "He was not asked", "He has no car"], "answer": 0, "note": "\"I live in another city.\"" },
+        { "q": "What does Filiz say that does not explain?", "options": ["Appointments, forms and phone calls", "The daily visits", "The money", "The cooking"], "answer": 0, "note": "\"The appointments, the forms, the phone calls.\"" },
+        { "q": "What does she ask him to take?", "options": ["Everything with an office attached", "Half the visits", "The money side", "Nothing specific"], "answer": 0, "note": "\"Everything with an office attached.\"" },
+        { "q": "Why did they not discuss it earlier?", "options": ["She was waiting for him to notice", "He refused", "They argued", "There was no time"], "answer": 0, "note": "\"Because I was waiting for you to notice.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-14",
+      "level": "B2",
+      "order": 14,
+      "kind": "listening",
+      "title": "Fiyat artışını duyurmak",
+      "titleEn": "Telling Customers About the Price",
+      "minutes": 5,
+      "names": ["Sinan", "Perin"],
+      "speakers": ["Sinan", "Perin"],
+      "lines": [
+        { "who": "Sinan", "en": "We have to raise prices by twelve per cent and I do not know how to say it.", "tr": "Fiyatları yüzde on iki artırmak zorundayız ve bunu nasıl söyleyeceğimi bilmiyorum." },
+        { "who": "Perin", "en": "Say it in one sentence at the top, with the date.", "tr": "En üste tek cümleyle, tarihiyle birlikte söyle." },
+        { "who": "Sinan", "en": "Without explaining first?", "tr": "Önce açıklamadan mı?" },
+        { "who": "Perin", "en": "The explanation after the number reads as a reason. Before it, it reads as an excuse.", "tr": "Rakamdan sonraki açıklama gerekçe gibi okunur. Öncesindeki bahane gibi." },
+        { "who": "Sinan", "en": "What should the explanation actually be?", "tr": "Açıklama ne olmalı peki?" },
+        { "who": "Perin", "en": "The true one. Materials rose nineteen per cent and you absorbed it for two years.", "tr": "Gerçek olan. Malzeme yüzde on dokuz arttı ve iki yıl bunu sen üstlendin." },
+        { "who": "Sinan", "en": "That sounds like I am asking for sympathy.", "tr": "Kendime acındırıyormuşum gibi duruyor." },
+        { "who": "Perin", "en": "It sounds like a fact. Give the figure and stop; do not describe how hard it was.", "tr": "Bir olgu gibi duruyor. Rakamı ver ve dur; ne kadar zor olduğunu anlatma." },
+        { "who": "Sinan", "en": "Should I offer the old price to anybody?", "tr": "Eski fiyatı birilerine teklif etmeli miyim?" },
+        { "who": "Perin", "en": "To people already booked. Not as a favor, as a rule you state.", "tr": "Randevusu olanlara. Lütuf olarak değil, açıkladığın bir kural olarak." },
+        { "who": "Sinan", "en": "And if somebody leaves?", "tr": "Peki biri giderse?" },
+        { "who": "Perin", "en": "Some will. The ones who leave over twelve per cent were leaving over something.", "tr": "Bazıları gidecek. Yüzde on iki için gidenler zaten bir şey için gidiyordu." }
+      ],
+      "glossary": [
+        { "w": "raise", "tr": "artırmak" },
+        { "w": "explanation", "tr": "açıklama" },
+        { "w": "excuse", "tr": "bahane" },
+        { "w": "materials", "tr": "malzemeler" },
+        { "w": "absorbed", "tr": "üstlendi, karşıladı" },
+        { "w": "sympathy", "tr": "acıma, sempati" },
+        { "w": "booked", "tr": "randevusu olan" }
+      ],
+      "questions": [
+        { "q": "How much is the rise?", "options": ["Twelve per cent", "Nineteen per cent", "Two per cent", "Twenty per cent"], "answer": 0, "note": "\"Raise prices by twelve per cent.\"" },
+        { "q": "Where should the number go?", "options": ["In one sentence at the top", "At the end", "In a separate letter", "In small print"], "answer": 0, "note": "\"Say it in one sentence at the top, with the date.\"" },
+        { "q": "Why put the explanation after?", "options": ["Before the number it reads as an excuse", "It is shorter", "Nobody reads the top", "It is the rule"], "answer": 0, "note": "\"Before it, it reads as an excuse.\"" },
+        { "q": "Who keeps the old price?", "options": ["People already booked", "Everybody for a month", "Nobody", "The oldest customers"], "answer": 0, "note": "\"To people already booked.\"" },
+        { "q": "What does Perin say about people who leave?", "options": ["They were leaving over something anyway", "Nobody will leave", "They should be called", "They will return"], "answer": 0, "note": "Son replik." }
+      ]
+    },
+    {
+      "id": "b2-l-15",
+      "level": "B2",
+      "order": 15,
+      "kind": "listening",
+      "title": "Sınıfta bir öğrenci",
+      "titleEn": "The Student Who Stopped Coming",
+      "minutes": 5,
+      "names": ["Hulya", "Emrah"],
+      "speakers": ["Hulya", "Emrah"],
+      "lines": [
+        { "who": "Hulya", "en": "He missed eleven classes and he was the best student in the room in October.", "tr": "On bir ders kaçırdı ve ekimde odadaki en iyi öğrenciydi." },
+        { "who": "Emrah", "en": "Have you written to him?", "tr": "Ona yazdın mı?" },
+        { "who": "Hulya", "en": "Twice. The second time he answered with one line saying he was fine.", "tr": "İki kez. İkincisinde tek satırla iyi olduğunu yazdı." },
+        { "who": "Emrah", "en": "Which is what people write when they are not.", "tr": "İnsanlar iyi olmadıklarında böyle yazar." },
+        { "who": "Hulya", "en": "I know. But I am his teacher, not his family.", "tr": "Biliyorum. Ama ben öğretmeniyim, ailesi değil." },
+        { "who": "Emrah", "en": "You are also the only person who has noticed and said so.", "tr": "Aynı zamanda fark edip bunu söyleyen tek kişisin." },
+        { "who": "Hulya", "en": "What would you do?", "tr": "Sen ne yapardın?" },
+        { "who": "Emrah", "en": "Ask him one specific question that is easy to answer.", "tr": "Ona cevaplaması kolay, somut tek bir soru sorardım." },
+        { "who": "Hulya", "en": "Such as?", "tr": "Mesela?" },
+        { "who": "Emrah", "en": "Whether he wants the notes from the classes he missed.", "tr": "Kaçırdığı derslerin notlarını isteyip istemediğini." },
+        { "who": "Hulya", "en": "That gives him a reason to reply without saying anything about himself.", "tr": "Bu ona kendisi hakkında bir şey söylemeden cevap verme sebebi veriyor." },
+        { "who": "Emrah", "en": "And if he takes the notes, he has not decided to stop.", "tr": "Notları alırsa bırakmaya karar vermemiş demektir." },
+        { "who": "Hulya", "en": "And if he does not answer at all, I will have to decide whether to tell somebody else.", "tr": "Hiç cevap vermezse başkasına söyleyip söylemeyeceğime karar vermem gerekecek." },
+        { "who": "Emrah", "en": "Then tell somebody. A teacher who worries alone for six weeks helps nobody.", "tr": "O zaman söyle. Altı hafta tek başına endişelenen bir öğretmen kimseye yardım etmez." },
+        { "who": "Hulya", "en": "That is the part I have been avoiding since the second message.", "tr": "İkinci mesajdan beri kaçındığım kısım tam da bu." }
+      ],
+      "glossary": [
+        { "w": "missed", "tr": "kaçırdı" },
+        { "w": "noticed", "tr": "fark etti" },
+        { "w": "specific", "tr": "somut, belirli" },
+        { "w": "reply", "tr": "cevap vermek" }
+      ],
+      "questions": [
+        { "q": "How many classes has he missed?", "options": ["Eleven", "Two", "Ten", "One"], "answer": 0, "note": "\"He missed eleven classes.\"" },
+        { "q": "What did he answer the second time?", "options": ["One line saying he was fine", "Nothing", "A long message", "That he was leaving"], "answer": 0, "note": "\"He answered with one line saying he was fine.\"" },
+        { "q": "What does Emrah say about that answer?", "options": ["It is what people write when they are not fine", "It should be believed", "It means he is busy", "It is rude"], "answer": 0, "note": "\"Which is what people write when they are not.\"" },
+        { "q": "What question does Emrah suggest?", "options": ["Whether he wants the notes he missed", "Why he stopped coming", "If he is ill", "When he will return"], "answer": 0, "note": "\"Whether he wants the notes from the classes he missed.\"" },
+        { "q": "What would taking the notes show?", "options": ["He has not decided to stop", "He is well", "He wants to leave", "He needs help"], "answer": 0, "note": "Son replik." }
+      ]
+    }
+  ]
+}
