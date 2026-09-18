@@ -2198,5 +2198,947 @@
     "note": "\"Write to them before, and publish your letter on the day they announce.\""
    }
   ]
+ },
+ {
+  "id": "c2-l-11",
+  "level": "C2",
+  "order": 11,
+  "kind": "listening",
+  "title": "Ölmüş bir yazarı düzeltmek",
+  "titleEn": "Editing a Dead Writer",
+  "minutes": 7,
+  "names": [
+   "Nermin",
+   "Cahit"
+  ],
+  "speakers": [
+   "Nermin",
+   "Cahit"
+  ],
+  "lines": [
+   {
+    "who": "Cahit",
+    "en": "The word appears eleven times and every one of them will be quoted at us within a week of publication.",
+    "tr": "Kelime on bir kez geçiyor ve yayımlandıktan bir hafta içinde her biri bize karşı alıntılanacak."
+   },
+   {
+    "who": "Nermin",
+    "en": "Then let it be quoted, with a note that says when he wrote it and what it meant then.",
+    "tr": "Alıntılansın; yanında onu ne zaman yazdığını ve o zaman ne anlama geldiğini söyleyen bir notla."
+   },
+   {
+    "who": "Cahit",
+    "en": "A note nobody reads, placed in front of a word everybody reads.",
+    "tr": "Kimsenin okumadığı bir not, herkesin okuduğu bir kelimenin önüne konuyor."
+   },
+   {
+    "who": "Nermin",
+    "en": "That is true of every note ever printed, and it is still the honest arrangement.",
+    "tr": "Bu basılmış her not için doğru ve yine de dürüst olan düzenleme bu."
+   },
+   {
+    "who": "Cahit",
+    "en": "He would have changed it himself. He changed three other things in the nineteen seventy-one edition.",
+    "tr": "Kendisi değiştirirdi. Bin dokuz yüz yetmiş bir baskısında üç şeyi değiştirmişti."
+   },
+   {
+    "who": "Nermin",
+    "en": "He changed them while alive, which is the whole of the difference, and you are asking me to guess at a fourth.",
+    "tr": "Onları yaşarken değiştirdi; farkın tamamı bu ve sen benden bir dördüncüsünü tahmin etmemi istiyorsun."
+   },
+   {
+    "who": "Cahit",
+    "en": "I am his son. I am not guessing.",
+    "tr": "Ben onun oğluyum. Tahmin yürütmüyorum."
+   },
+   {
+    "who": "Nermin",
+    "en": "You are remembering, which is a form of guessing that feels like knowledge.",
+    "tr": "Hatırlıyorsun; bu da bilgi gibi hissettiren bir tahmin biçimi."
+   },
+   {
+    "who": "Cahit",
+    "en": "That sentence is cruel and I suspect you prepared it before you came.",
+    "tr": "Bu cümle acımasız ve gelmeden önce hazırladığından şüpheleniyorum."
+   },
+   {
+    "who": "Nermin",
+    "en": "I did, on the train, because I knew we would arrive here and I wanted to be exact rather than kind.",
+    "tr": "Hazırladım, trende; buraya geleceğimizi biliyordum ve nazik olmaktansa kesin olmak istedim."
+   },
+   {
+    "who": "Cahit",
+    "en": "Then be exact about the risk. The book is taught. One school will drop it and the others will follow.",
+    "tr": "O hâlde risk konusunda kesin ol. Kitap okutuluyor. Bir okul çıkaracak, diğerleri de onu izleyecek."
+   },
+   {
+    "who": "Nermin",
+    "en": "Some will. The ones that keep it will teach the note as well as the word, which is more than the book asks for.",
+    "tr": "Bazıları çıkaracak. Tutanlar kelimeyle birlikte notu da okutacak; bu kitabın istediğinden fazlası."
+   },
+   {
+    "who": "Cahit",
+    "en": "You are describing a better world than the one that buys books.",
+    "tr": "Kitap satın alan dünyadan daha iyi bir dünya tarif ediyorsun."
+   },
+   {
+    "who": "Nermin",
+    "en": "I am describing the only version I can defend in thirty years, when neither of us is here to be asked.",
+    "tr": "Otuz yıl sonra, ikimiz de sorulacak durumda değilken savunabileceğim tek hâli tarif ediyorum."
+   },
+   {
+    "who": "Cahit",
+    "en": "Put my objection at the front of the book, under my name, and print the word.",
+    "tr": "İtirazımı kitabın başına, adımın altına koy ve kelimeyi bas."
+   },
+   {
+    "who": "Nermin",
+    "en": "That is the arrangement I came to propose, and I did not expect to be given it.",
+    "tr": "Önermeye geldiğim düzenleme buydu ve bana verilmesini beklemiyordum."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "quoted",
+    "tr": "alıntılanmış"
+   },
+   {
+    "w": "publication",
+    "tr": "yayımlanma"
+   },
+   {
+    "w": "arrangement",
+    "tr": "düzenleme, anlaşma"
+   },
+   {
+    "w": "edition",
+    "tr": "baskı"
+   },
+   {
+    "w": "cruel",
+    "tr": "acımasız"
+   },
+   {
+    "w": "exact",
+    "tr": "kesin, tam"
+   },
+   {
+    "w": "objection",
+    "tr": "itiraz"
+   },
+   {
+    "w": "defend",
+    "tr": "savunmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Cahit want done with the word?",
+    "options": [
+     "Removed from the new printing",
+     "Printed in the title",
+     "Left to the reader",
+     "Explained in a note"
+    ],
+    "answer": 0,
+    "note": "Kelimenin basılmamasını istiyor; Nermin nota razı."
+   },
+   {
+    "q": "Why does Nermin refuse the comparison with nineteen seventy-one?",
+    "options": [
+     "Nobody noticed them",
+     "He made those changes while alive",
+     "The changes were small",
+     "The edition was different"
+    ],
+    "answer": 1,
+    "note": "\"He changed them while alive, which is the whole of the difference.\""
+   },
+   {
+    "q": "What does Nermin say Cahit is doing?",
+    "options": [
+     "Following the lawyers",
+     "Protecting the sales",
+     "Remembering, which feels like knowledge",
+     "Lying"
+    ],
+    "answer": 2,
+    "note": "\"You are remembering, which is a form of guessing that feels like knowledge.\""
+   },
+   {
+    "q": "Why did Nermin prepare that sentence?",
+    "options": [
+     "She was angry",
+     "She had no time to think",
+     "Her editor asked her to",
+     "She wanted to be exact rather than kind"
+    ],
+    "answer": 3,
+    "note": "\"I wanted to be exact rather than kind.\""
+   },
+   {
+    "q": "How is the book to be published in the end?",
+    "options": [
+     "With the word removed",
+     "A year later",
+     "In two editions",
+     "With his objection at the front and the word printed"
+    ],
+    "answer": 3,
+    "note": "Son iki replik."
+   }
+  ]
+ },
+ {
+  "id": "c2-l-12",
+  "level": "C2",
+  "order": 12,
+  "kind": "listening",
+  "title": "Suyu kim alacak",
+  "titleEn": "Who Gets the Water",
+  "minutes": 7,
+  "names": [
+   "Feriha",
+   "Bulent"
+  ],
+  "speakers": [
+   "Feriha",
+   "Bulent"
+  ],
+  "lines": [
+   {
+    "who": "Bulent",
+    "en": "You are asking four hundred families to take less so that a factory employing ninety can take more.",
+    "tr": "Dört yüz aileden daha az almasını istiyorsun ki doksan kişi çalıştıran bir fabrika daha çok alabilsin."
+   },
+   {
+    "who": "Feriha",
+    "en": "I am asking them to take less in August, and I am offering to guarantee what they take in May.",
+    "tr": "Ağustosta daha az almalarını istiyorum ve mayısta alacaklarını güvence altına almayı öneriyorum."
+   },
+   {
+    "who": "Bulent",
+    "en": "A guarantee written by the office that broke the last one.",
+    "tr": "Bir öncekini bozan ofisin yazdığı bir güvence."
+   },
+   {
+    "who": "Feriha",
+    "en": "By the office that was overruled, which is not the same thing, although I understand why you will not separate them.",
+    "tr": "Kararı bozulan ofis tarafından; aynı şey değil, gerçi ikisini neden ayırmadığını anlıyorum."
+   },
+   {
+    "who": "Bulent",
+    "en": "The difference matters to you and it does not matter in the village.",
+    "tr": "Bu fark senin için önemli, köyde önemli değil."
+   },
+   {
+    "who": "Feriha",
+    "en": "Then tell me what does, and I will write the offer in those terms instead of mine.",
+    "tr": "O hâlde neyin önemli olduğunu söyle, teklifi kendi terimlerimle değil onlarla yazayım."
+   },
+   {
+    "who": "Bulent",
+    "en": "A number they can plan around, published in March, that nobody may lower after the first of June.",
+    "tr": "Etrafında plan yapabilecekleri, martta açıklanan ve bir hazirandan sonra kimsenin düşüremeyeceği bir rakam."
+   },
+   {
+    "who": "Feriha",
+    "en": "That I can sign. What I cannot sign is what happens in a third dry year in a row.",
+    "tr": "Buna imza atarım. İmza atamayacağım şey üst üste üçüncü kurak yılda ne olacağı."
+   },
+   {
+    "who": "Bulent",
+    "en": "Then say so out loud, in the hall, rather than leaving it inside a paragraph.",
+    "tr": "O hâlde bunu bir paragrafın içinde bırakmak yerine salonda yüksek sesle söyle."
+   },
+   {
+    "who": "Feriha",
+    "en": "If I say it out loud the meeting ends and the agreement dies in the room.",
+    "tr": "Yüksek sesle söylersem toplantı biter ve anlaşma o odada ölür."
+   },
+   {
+    "who": "Bulent",
+    "en": "It dies anyway in the third year, and then it takes the office with it.",
+    "tr": "Üçüncü yılda zaten ölür ve giderken ofisi de götürür."
+   },
+   {
+    "who": "Feriha",
+    "en": "You are right, and I have been told twice this month not to say the thing I am about to agree to.",
+    "tr": "Haklısın ve bu ay iki kez, birazdan kabul edeceğim şeyi söylememem istendi."
+   },
+   {
+    "who": "Bulent",
+    "en": "Say it, and I will stand up first, so that it does not look as though you were forced into it.",
+    "tr": "Söyle, ben önce ayağa kalkarım; buna zorlanmışsın gibi görünmesin diye."
+   },
+   {
+    "who": "Feriha",
+    "en": "That is a generous offer from somebody who came here to win.",
+    "tr": "Buraya kazanmaya gelmiş biri için cömert bir teklif."
+   },
+   {
+    "who": "Bulent",
+    "en": "I came here to still be farming in ten years. Winning was Tuesday's plan.",
+    "tr": "Buraya on yıl sonra hâlâ çiftçilik yapmak için geldim. Kazanmak salı günkü plandı."
+   },
+   {
+    "who": "Feriha",
+    "en": "Then we go in together, you speak second, and neither of us pretends the third year is solved.",
+    "tr": "O hâlde birlikte gireriz, sen ikinci konuşursun ve ikimiz de üçüncü yıl çözülmüş gibi yapmayız."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "guarantee",
+    "tr": "güvence vermek"
+   },
+   {
+    "w": "overruled",
+    "tr": "kararı bozulmuş"
+   },
+   {
+    "w": "separate",
+    "tr": "ayırmak"
+   },
+   {
+    "w": "published",
+    "tr": "açıklanmış, yayımlanmış"
+   },
+   {
+    "w": "agreement",
+    "tr": "anlaşma"
+   },
+   {
+    "w": "generous",
+    "tr": "cömert"
+   },
+   {
+    "w": "farming",
+    "tr": "çiftçilik"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is Feriha actually asking for?",
+    "options": [
+     "A new factory",
+     "Less water in August only",
+     "A higher price",
+     "Less water all year"
+    ],
+    "answer": 1,
+    "note": "\"I am asking them to take less in August.\""
+   },
+   {
+    "q": "Why does Bulent distrust the guarantee?",
+    "options": [
+     "The same office broke the last one",
+     "It is too short",
+     "It is not written down",
+     "The factory wrote it"
+    ],
+    "answer": 0,
+    "note": "\"A guarantee written by the office that broke the last one.\""
+   },
+   {
+    "q": "What does Bulent say the village needs?",
+    "options": [
+     "A new well",
+     "More money",
+     "A court case",
+     "A number published in March that cannot be lowered after June"
+    ],
+    "answer": 3,
+    "note": "\"A number they can plan around, published in March.\""
+   },
+   {
+    "q": "What can Feriha not sign?",
+    "options": [
+     "The August cut",
+     "What happens in a third dry year",
+     "The May guarantee",
+     "The March number"
+    ],
+    "answer": 1,
+    "note": "\"What I cannot sign is what happens in a third dry year in a row.\""
+   },
+   {
+    "q": "Why does Bulent offer to stand up first?",
+    "options": [
+     "So she does not look forced into it",
+     "To win the vote",
+     "To leave early",
+     "To speak longer"
+    ],
+    "answer": 0,
+    "note": "\"So that it does not look as though you were forced into it.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-l-13",
+  "level": "C2",
+  "order": 13,
+  "kind": "listening",
+  "title": "Mezarların üzerinde kazı",
+  "titleEn": "Digging Where People Are Buried",
+  "minutes": 7,
+  "names": [
+   "Suheyla",
+   "Mahir"
+  ],
+  "speakers": [
+   "Suheyla",
+   "Mahir"
+  ],
+  "lines": [
+   {
+    "who": "Mahir",
+    "en": "You have permission from the ministry and you do not have permission from anybody who is buried there.",
+    "tr": "Bakanlıktan iznin var, orada gömülü olanların hiçbirinden iznin yok."
+   },
+   {
+    "who": "Suheyla",
+    "en": "Nobody buried anywhere can give permission, which is why the question passes to the living, and I am standing in front of them.",
+    "tr": "Hiçbir yerde gömülü kimse izin veremez; bu yüzden soru yaşayanlara geçer ve ben onların karşısında duruyorum."
+   },
+   {
+    "who": "Mahir",
+    "en": "You are standing in front of me. The families are in four countries and they have not been asked.",
+    "tr": "Benim karşımda duruyorsun. Aileler dört ülkede ve onlara sorulmadı."
+   },
+   {
+    "who": "Suheyla",
+    "en": "I wrote to nine addresses in March and two of them answered.",
+    "tr": "Martta dokuz adrese yazdım ve ikisi cevap verdi."
+   },
+   {
+    "who": "Mahir",
+    "en": "Two out of nine is a number you would refuse in your own work.",
+    "tr": "Dokuzda iki, kendi çalışmanda reddedeceğin bir oran."
+   },
+   {
+    "who": "Suheyla",
+    "en": "It is, and I would rather hear that from you than pretend the letters were consent.",
+    "tr": "Öyle ve mektupların onay olduğunu varsaymaktansa bunu senden duymayı tercih ederim."
+   },
+   {
+    "who": "Mahir",
+    "en": "Then wait one season. I can reach thirty families by winter if the digging has not started.",
+    "tr": "O hâlde bir mevsim bekle. Kazı başlamamışsa kışa kadar otuz aileye ulaşabilirim."
+   },
+   {
+    "who": "Suheyla",
+    "en": "And if the digging has started you will reach sixty, and every one of them will be angry.",
+    "tr": "Kazı başlamışsa altmışına ulaşırsın ve hepsi öfkeli olur."
+   },
+   {
+    "who": "Mahir",
+    "en": "Yes. That is what I am offering you: the quieter version, at the price of one summer.",
+    "tr": "Evet. Sana önerdiğim bu: bir yaz karşılığında daha sakin hâli."
+   },
+   {
+    "who": "Suheyla",
+    "en": "The summer is not mine to spend. The money ends in October and there is no second grant.",
+    "tr": "O yaz benim harcayacağım bir şey değil. Para ekimde bitiyor ve ikinci bir destek yok."
+   },
+   {
+    "who": "Mahir",
+    "en": "Then the honest sentence is that the timing of a fund decided this, and not the question of who may dig.",
+    "tr": "O hâlde dürüst cümle şu: buna bir fonun takvimi karar verdi, kimin kazabileceği sorusu değil."
+   },
+   {
+    "who": "Suheyla",
+    "en": "That is the honest sentence and I have been avoiding it since the ministry wrote back.",
+    "tr": "Dürüst cümle bu ve bakanlık cevap verdiğinden beri ondan kaçıyorum."
+   },
+   {
+    "who": "Mahir",
+    "en": "Say it to the fund. Not to me, and not in an article afterwards.",
+    "tr": "Bunu fona söyle. Bana değil ve sonradan bir yazıda da değil."
+   },
+   {
+    "who": "Suheyla",
+    "en": "They will say the work is delayed and hand the site to somebody who will not write to anybody.",
+    "tr": "İşin geciktiğini söyleyip alanı kimseye mektup yazmayacak birine verirler."
+   },
+   {
+    "who": "Mahir",
+    "en": "That is the part I cannot answer, and it is the reason I have not simply gone to court.",
+    "tr": "Cevaplayamadığım kısım bu ve doğrudan mahkemeye gitmememin sebebi de bu."
+   },
+   {
+    "who": "Suheyla",
+    "en": "Then we write to them together, this week, and we both sign what the delay is actually for.",
+    "tr": "O hâlde bu hafta onlara birlikte yazarız ve gecikmenin gerçekte ne için olduğunu ikimiz de imzalarız."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "ministry",
+    "tr": "bakanlık"
+   },
+   {
+    "w": "buried",
+    "tr": "gömülü"
+   },
+   {
+    "w": "permission",
+    "tr": "izin"
+   },
+   {
+    "w": "consent",
+    "tr": "onay, rıza"
+   },
+   {
+    "w": "digging",
+    "tr": "kazı"
+   },
+   {
+    "w": "grant",
+    "tr": "araştırma desteği"
+   },
+   {
+    "w": "site",
+    "tr": "kazı alanı"
+   },
+   {
+    "w": "delayed",
+    "tr": "geciktirilmiş"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many families answered her letters?",
+    "options": [
+     "Nine of nine",
+     "Two of nine",
+     "Thirty",
+     "None"
+    ],
+    "answer": 1,
+    "note": "\"I wrote to nine addresses in March and two of them answered.\""
+   },
+   {
+    "q": "What does Mahir offer?",
+    "options": [
+     "A court case",
+     "Money for the dig",
+     "Thirty families reached by winter",
+     "A new site"
+    ],
+    "answer": 2,
+    "note": "\"I can reach thirty families by winter if the digging has not started.\""
+   },
+   {
+    "q": "Why can she not wait?",
+    "options": [
+     "The ministry forbids it",
+     "The money ends in October",
+     "Winter is too cold",
+     "The site is unsafe"
+    ],
+    "answer": 1,
+    "note": "\"The money ends in October and there is no second grant.\""
+   },
+   {
+    "q": "What is the honest sentence Mahir names?",
+    "options": [
+     "The families decided it",
+     "The ministry decided it",
+     "A fund's timing decided it, not the question of who may dig",
+     "Nobody decided it"
+    ],
+    "answer": 2,
+    "note": "\"The timing of a fund decided this.\""
+   },
+   {
+    "q": "Why has Mahir not gone to court?",
+    "options": [
+     "He cannot afford it",
+     "He trusts the ministry",
+     "The site could go to somebody who writes to nobody",
+     "He has no case"
+    ],
+    "answer": 2,
+    "note": "\"That is the part I cannot answer, and it is the reason I have not simply gone to court.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-l-14",
+  "level": "C2",
+  "order": 14,
+  "kind": "listening",
+  "title": "Tablonun imzası",
+  "titleEn": "The Painting That May Not Be His",
+  "minutes": 7,
+  "names": [
+   "Reyhan",
+   "Zafer"
+  ],
+  "speakers": [
+   "Reyhan",
+   "Zafer"
+  ],
+  "lines": [
+   {
+    "who": "Zafer",
+    "en": "Three specialists have looked at it and the third one used the word probably, which is the strongest word you will ever get.",
+    "tr": "Üç uzman inceledi ve üçüncüsü muhtemelen kelimesini kullandı; alabileceğin en güçlü kelime bu."
+   },
+   {
+    "who": "Reyhan",
+    "en": "Probably is the word the whole field runs on, and you have been content with it for twenty years.",
+    "tr": "Muhtemelen, bütün alanın üzerinde yürüdüğü kelime ve yirmi yıldır bundan memnundun."
+   },
+   {
+    "who": "Zafer",
+    "en": "I have been content with it on the way up. It behaves differently on the way down.",
+    "tr": "Yukarı çıkarken memnundum. Aşağı inerken farklı davranıyor."
+   },
+   {
+    "who": "Reyhan",
+    "en": "Then say plainly what you want. You want the museum to hang it with his name on the card.",
+    "tr": "O hâlde ne istediğini açıkça söyle. Müzenin onu adıyla birlikte asmasını istiyorsun."
+   },
+   {
+    "who": "Zafer",
+    "en": "I want the card to say what the specialists said, which is not the same as what you are refusing to write.",
+    "tr": "Kartın uzmanların söylediğini yazmasını istiyorum; bu senin yazmayı reddettiğin şeyle aynı değil."
+   },
+   {
+    "who": "Reyhan",
+    "en": "The card has room for eleven words and the visitor reads five of them.",
+    "tr": "Kartta on bir kelimelik yer var ve ziyaretçi beşini okuyor."
+   },
+   {
+    "who": "Zafer",
+    "en": "Then use the five honestly. Attributed to him. Nobody has ever gone to court over attributed to.",
+    "tr": "O hâlde o beşini dürüstçe kullan. Ona atfedilen. Kimse ona atfedilen yüzünden mahkemeye gitmedi."
+   },
+   {
+    "who": "Reyhan",
+    "en": "And in four years a letter appears, and the card becomes the reason the museum is in the story.",
+    "tr": "Dört yıl sonra bir mektup çıkar ve kart, müzenin o haberde yer almasının sebebi olur."
+   },
+   {
+    "who": "Zafer",
+    "en": "The card becomes the reason the museum was careful. That is a different story and it is one you survive.",
+    "tr": "Kart, müzenin dikkatli davrandığının sebebi olur. Bu başka bir haber ve atlatabileceğin bir haber."
+   },
+   {
+    "who": "Reyhan",
+    "en": "You are a great deal more comfortable with my risk than with your own.",
+    "tr": "Benim riskimle kendi riskinden çok daha rahatsın."
+   },
+   {
+    "who": "Zafer",
+    "en": "I am, and I would say the same in your chair, and it does not make the painting less likely to be his.",
+    "tr": "Öyleyim ve senin koltuğunda olsam aynısını söylerdim; bu tablonun ona ait olma ihtimalini azaltmıyor."
+   },
+   {
+    "who": "Reyhan",
+    "en": "It does not. What it does is move the cost of being wrong onto a wall that is free to the public.",
+    "tr": "Azaltmıyor. Yaptığı şey, yanılmanın bedelini halka açık bir duvarın üzerine kaydırmak."
+   },
+   {
+    "who": "Zafer",
+    "en": "Then put the doubt on the wall beside it. A paragraph, not a card.",
+    "tr": "O hâlde şüpheyi yanındaki duvara koy. Bir paragraf, kart değil."
+   },
+   {
+    "who": "Reyhan",
+    "en": "A paragraph about how a painting is judged, with this one as the example.",
+    "tr": "Bir tablonun nasıl değerlendirildiğine dair bir paragraf, örneği de bu tablo."
+   },
+   {
+    "who": "Zafer",
+    "en": "That will be the most read thing in the room and it will not help me sell anything.",
+    "tr": "O, odadaki en çok okunan şey olur ve bana hiçbir şey satmamda yardımcı olmaz."
+   },
+   {
+    "who": "Reyhan",
+    "en": "No. It is the only version I can hang, and you brought it to me knowing that.",
+    "tr": "Olmaz. Asabileceğim tek hâl bu ve sen bunu bilerek bana getirdin."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "specialists",
+    "tr": "uzmanlar"
+   },
+   {
+    "w": "content",
+    "tr": "memnun"
+   },
+   {
+    "w": "attributed to",
+    "tr": "ona atfedilen"
+   },
+   {
+    "w": "visitor",
+    "tr": "ziyaretçi"
+   },
+   {
+    "w": "doubt",
+    "tr": "şüphe"
+   },
+   {
+    "w": "judged",
+    "tr": "değerlendirilen"
+   },
+   {
+    "w": "survive",
+    "tr": "atlatmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What word did the third specialist use?",
+    "options": [
+     "Certainly",
+     "Copy",
+     "Never",
+     "Probably"
+    ],
+    "answer": 3,
+    "note": "\"The third one used the word probably.\""
+   },
+   {
+    "q": "Why is Zafer less content with probably now?",
+    "options": [
+     "It behaves differently when prices fall",
+     "A letter appeared",
+     "The painting was cleaned",
+     "The specialists changed"
+    ],
+    "answer": 0,
+    "note": "\"I have been content with it on the way up. It behaves differently on the way down.\""
+   },
+   {
+    "q": "What is Reyhan's objection to the card?",
+    "options": [
+     "The name is wrong",
+     "It moves the cost of being wrong onto the museum",
+     "Visitors never read cards",
+     "It is too long"
+    ],
+    "answer": 1,
+    "note": "\"It moves the cost of being wrong onto a wall that is free to the public.\""
+   },
+   {
+    "q": "What does Zafer suggest instead?",
+    "options": [
+     "No label at all",
+     "A second opinion",
+     "A paragraph on the wall beside it",
+     "Selling it privately"
+    ],
+    "answer": 2,
+    "note": "\"Then put the doubt on the wall beside it. A paragraph, not a card.\""
+   },
+   {
+    "q": "Why does Zafer dislike the paragraph?",
+    "options": [
+     "It is too short",
+     "It names him",
+     "It will not help him sell anything",
+     "It is dishonest"
+    ],
+    "answer": 2,
+    "note": "\"It will not help me sell anything.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-l-15",
+  "level": "C2",
+  "order": 15,
+  "kind": "listening",
+  "title": "Toprağı geri vermek",
+  "titleEn": "Letting the Land Go Back",
+  "minutes": 7,
+  "names": [
+   "Yesim",
+   "Orhan"
+  ],
+  "speakers": [
+   "Yesim",
+   "Orhan"
+  ],
+  "lines": [
+   {
+    "who": "Orhan",
+    "en": "My grandfather took that water off the land and you are proposing to put it back in a single winter.",
+    "tr": "Dedem o suyu topraktan çekti ve sen onu tek bir kışta geri koymayı öneriyorsun."
+   },
+   {
+    "who": "Yesim",
+    "en": "Over four winters, and only in the two fields that flood anyway in the years nobody talks about.",
+    "tr": "Dört kış boyunca ve yalnızca kimsenin konuşmadığı yıllarda zaten su basan iki tarlada."
+   },
+   {
+    "who": "Orhan",
+    "en": "They flood once in seven years and I plan for it. What you describe is every year by design.",
+    "tr": "Yedi yılda bir su basıyor ve ona göre plan yapıyorum. Senin tarif ettiğin, tasarım gereği her yıl."
+   },
+   {
+    "who": "Yesim",
+    "en": "By design and with payment, which is the part that matters and the part nobody believes until it arrives.",
+    "tr": "Tasarım gereği ve ödemeyle; önemli olan kısım bu ve gelene kadar kimsenin inanmadığı kısım da bu."
+   },
+   {
+    "who": "Orhan",
+    "en": "The payment lasts as long as the fund does, and the water lasts a great deal longer.",
+    "tr": "Ödeme fon sürdüğü kadar sürer, su ise çok daha uzun kalır."
+   },
+   {
+    "who": "Yesim",
+    "en": "That is the strongest thing anybody has said to me about this project in two years.",
+    "tr": "Bu proje hakkında iki yılda bana söylenmiş en güçlü şey bu."
+   },
+   {
+    "who": "Orhan",
+    "en": "Then answer it rather than admiring it.",
+    "tr": "O hâlde ona hayran olmak yerine cevap ver."
+   },
+   {
+    "who": "Yesim",
+    "en": "I can offer a clause that returns the land to drainage if the payment stops, and I can tell you honestly that undoing it would take a decade.",
+    "tr": "Ödeme durursa toprağı yeniden kurutmaya döndüren bir madde önerebilirim ve dürüstçe söyleyebilirim ki geri almak on yıl sürer."
+   },
+   {
+    "who": "Orhan",
+    "en": "So the clause is a comfort and not a remedy.",
+    "tr": "Yani madde bir teselli, çözüm değil."
+   },
+   {
+    "who": "Yesim",
+    "en": "It is a comfort. The remedy is that the payment is written into law and not into a program.",
+    "tr": "Teselli. Çözüm, ödemenin bir programa değil yasaya yazılması."
+   },
+   {
+    "who": "Orhan",
+    "en": "And is it?",
+    "tr": "Peki yazıldı mı?"
+   },
+   {
+    "who": "Yesim",
+    "en": "Not yet. It is in a bill that has passed one of the two readings it needs.",
+    "tr": "Henüz değil. İhtiyaç duyduğu iki görüşmeden birini geçmiş bir tasarıda."
+   },
+   {
+    "who": "Orhan",
+    "en": "Then come back when it has passed the second, and I will sign in the same week.",
+    "tr": "O hâlde ikincisini geçince gel, aynı hafta imzalarım."
+   },
+   {
+    "who": "Yesim",
+    "en": "If everybody says that, the bill fails, because it is counted by how many farmers have already agreed.",
+    "tr": "Herkes böyle derse tasarı düşer, çünkü kaç çiftçinin şimdiden kabul ettiğine göre sayılıyor."
+   },
+   {
+    "who": "Orhan",
+    "en": "That is a dishonest way to build a law and you did not design it.",
+    "tr": "Bu, bir yasayı kurmanın dürüst olmayan bir yolu ve onu sen tasarlamadın."
+   },
+   {
+    "who": "Yesim",
+    "en": "I did not, and I am still the one asking you to carry it, which is why I will put that sentence in the letter myself.",
+    "tr": "Tasarlamadım ve yine de onu taşımanı isteyen benim; bu yüzden o cümleyi mektuba kendim yazacağım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "flood",
+    "tr": "su basmak"
+   },
+   {
+    "w": "by design",
+    "tr": "tasarım gereği, bilerek"
+   },
+   {
+    "w": "clause",
+    "tr": "sözleşme maddesi"
+   },
+   {
+    "w": "drainage",
+    "tr": "toprağın suyunu çekme"
+   },
+   {
+    "w": "remedy",
+    "tr": "çözüm, çare"
+   },
+   {
+    "w": "bill",
+    "tr": "yasa tasarısı"
+   },
+   {
+    "w": "readings",
+    "tr": "meclis görüşmeleri"
+   },
+   {
+    "w": "farmers",
+    "tr": "çiftçiler"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long would the change take?",
+    "options": [
+     "Seven years",
+     "Four winters",
+     "A decade",
+     "One winter"
+    ],
+    "answer": 1,
+    "note": "\"Over four winters.\""
+   },
+   {
+    "q": "What is Orhan's strongest point?",
+    "options": [
+     "The payment ends with the fund but the water stays",
+     "The fields are too small",
+     "The law is unclear",
+     "He has no time"
+    ],
+    "answer": 0,
+    "note": "\"The payment lasts as long as the fund does, and the water lasts a great deal longer.\""
+   },
+   {
+    "q": "What does Yesim admit about the clause?",
+    "options": [
+     "It is illegal",
+     "It is a comfort, not a remedy",
+     "It cannot be written",
+     "It costs too much"
+    ],
+    "answer": 1,
+    "note": "\"So the clause is a comfort and not a remedy.\" — \"It is a comfort.\""
+   },
+   {
+    "q": "Where does the payment stand now?",
+    "options": [
+     "In law",
+     "In a bill that has passed one reading",
+     "Nowhere",
+     "In a signed contract"
+    ],
+    "answer": 1,
+    "note": "\"It is in a bill that has passed one of the two readings it needs.\""
+   },
+   {
+    "q": "Why can Orhan not simply wait?",
+    "options": [
+     "The fund closes",
+     "The bill is counted by how many farmers agreed",
+     "His neighbors object",
+     "The fields flood in spring"
+    ],
+    "answer": 1,
+    "note": "\"It is counted by how many farmers have already agreed.\""
+   }
+  ]
  }
 ]
