@@ -1,0 +1,555 @@
+{
+ "_meta": {
+  "batch": "b2-03",
+  "level": "B2",
+  "range": "Set 14-19 — paraphrase, alıntı, ikna, anlatıda gerilim, takip yazısı, kendi metnini düzeltmek"
+ },
+ "sets": [
+  {
+   "id": "b2-w-14",
+   "level": "B2",
+   "order": 14,
+   "title": "Başka sözcüklerle anlatmak",
+   "canDo": "Bir cümleyi anlamını koruyarak yeniden yazabilirim.",
+   "focus": "Paraphrase kelime değiştirmek değil, yapı değiştirmektir: etken–edilgen, isim–fiil, olumlu–olumsuz. Yalnızca eşanlamlı koymak metni hâlâ alıntı yapar, kendi cümlen olmaz.",
+   "tasks": [
+    {
+     "tr": "Şirket kararı geçen hafta açıkladı. (Edilgen yaz.)",
+     "answers": ["The decision was announced by the company last week."],
+     "hint": "Etken cümleyi edilgene çevir.",
+     "traps": [
+      { "has": "the decision announced by", "at": "start", "note": "be gerekir: was announced." },
+      { "has": "was announce", "note": "Üçüncü biçim: was announced." }
+     ]
+    },
+    {
+     "tr": "Fiyatlar hızla arttı. (İsim öbeğiyle yaz.)",
+     "answers": ["There was a rapid rise in prices.", "There was a rapid increase in prices."],
+     "hint": "Fiili isme çevir: rise in prices.",
+     "traps": [
+      { "has": "there was a rapid rise of prices", "at": "start", "note": "Kalıp: rise in prices." },
+      { "has": "prices rised", "note": "rise düzensizdir: rose." }
+     ]
+    },
+    {
+     "tr": "Çok az insan katıldı. (Olumsuz yapıyla yaz.)",
+     "answers": ["Not many people took part.", "Few people took part."],
+     "hint": "Katılmak: take part.",
+     "traps": [
+      { "has": "not many peoples", "at": "start", "note": "people zaten çoğuldur." },
+      { "has": "took part in", "note": "Nesne yoksa in gelmez: took part." }
+     ]
+    },
+    {
+     "tr": "Yöntem etkili olduğu için seçildi. (Sebebi isimle yaz.)",
+     "answers": ["The method was chosen because of its effectiveness.", "The method was chosen due to its effectiveness."],
+     "hint": "because of'tan sonra isim gelir.",
+     "traps": [
+      { "has": "because of it was effective", "note": "İsim gerekir: because of its effectiveness." },
+      { "has": "was choosed", "note": "choose düzensizdir: chosen." }
+     ]
+    },
+    {
+     "tr": "Yazar bunun mümkün olmadığını söylüyor. (Edilgen aktar.)",
+     "answers": ["It is claimed that this is not possible.", "This is said to be impossible."],
+     "hint": "Kaynağı belirsizleştiren edilgen.",
+     "traps": [
+      { "has": "it is claimed this is not possible", "at": "start", "note": "that gerekir." },
+      { "has": "is said to impossible", "note": "to'dan sonra be gerekir." }
+     ]
+    },
+    {
+     "tr": "Sonuçlar bekleneni doğruladı. (Farklı fiille yaz.)",
+     "answers": ["The results confirmed what was expected.", "The findings supported the expectation."],
+     "hint": "what, ilgi öbeği kurar.",
+     "traps": [
+      { "has": "confirmed that was expected", "note": "Burada what kullanılır." },
+      { "has": "the results confirms", "at": "start", "note": "Çoğul özne: confirmed." }
+     ]
+    },
+    {
+     "tr": "Bu zor bir sorudur. (Karşıt sıfatla, olumsuz yaz.)",
+     "answers": ["This is not an easy question.", "This question is not easy."],
+     "hint": "easy sesli sesle başlar: an easy.",
+     "traps": [
+      { "has": "a easy question", "note": "Sesli sesle başlar: an easy question." },
+      { "has": "this is not easy question", "at": "start", "note": "Tekil sayılabilen isimde a/an gerekir." }
+     ]
+    },
+    {
+     "tr": "İnsanlar giderek daha çok çevrimiçi alışveriş yapıyor. (İsimle yaz.)",
+     "answers": ["There is a growing amount of online shopping.", "Online shopping is becoming more common."],
+     "hint": "shopping sayılamaz.",
+     "traps": [
+      { "has": "a growing number of online shopping", "note": "Sayılamayan için amount kullanılır." },
+      { "has": "shoppings", "note": "shopping sayılamaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kısa bir paragraf seç ve üç cümlesini yapı değiştirerek yeniden yaz. Her birinde farklı bir dönüşüm kullan.",
+    "checklist": [
+     "Sadece eşanlamlı koymadın, yapıyı da değiştirdin mi?",
+     "Etken–edilgen dönüşümünde be + üçüncü biçim kullandın mı?",
+     "Sayılabilir–sayılamaz ayrımına göre number ve amount seçtin mi?"
+    ],
+    "model": "The decision was announced by the company last week. There was a rapid rise in prices, and the method was chosen because of its effectiveness. Not many people took part, and the results confirmed what was expected."
+   }
+  },
+  {
+   "id": "b2-w-15",
+   "level": "B2",
+   "order": 15,
+   "title": "Kaynak göstermek",
+   "canDo": "Başkasının fikrini kaynağıyla birlikte aktarabilirim.",
+   "focus": "Kaynak gösterirken fiil seçimi tutum bildirir: states nötr, argues iddialı, admits isteksiz kabul anlatır. Yanlış fiil, kaynağın söylemediği bir tavrı ona yükler.",
+   "tasks": [
+    {
+     "tr": "Yazar üç etkenin önemli olduğunu belirtiyor.",
+     "answers": ["The writer states that three factors are important.", "The author states that three factors are important."],
+     "hint": "Nötr aktarım için state.",
+     "traps": [
+      { "has": "the writer states three factors are important", "at": "start", "note": "that kullanmak daha açıktır." },
+      { "has": "the writer state", "at": "start", "note": "Tekil özne: states." }
+     ]
+    },
+    {
+     "tr": "Aynı yazar bunun tek sebep olmadığını kabul ediyor.",
+     "answers": ["The same writer admits that this is not the only reason."],
+     "hint": "İsteksiz kabul için admit.",
+     "traps": [
+      { "has": "admits to this is not", "note": "admit'ten sonra that gelir." },
+      { "has": "the same writer admit", "at": "start", "note": "Tekil özne: admits." }
+     ]
+    },
+    {
+     "tr": "Bir başka araştırmacı tam tersini savunuyor.",
+     "answers": ["Another researcher argues the opposite.", "Another researcher claims the opposite."],
+     "hint": "İddialı aktarım için argue.",
+     "traps": [
+      { "has": "an other researcher", "at": "start", "note": "Tek kelime: another." },
+      { "has": "argues to the opposite", "note": "argue'dan sonra doğrudan nesne gelir." }
+     ]
+    },
+    {
+     "tr": "Bu görüş 2019 tarihli bir çalışmaya dayanıyor.",
+     "answers": ["This view is based on a study from 2019.", "This view is based on a 2019 study."],
+     "hint": "Dayanmak: be based on.",
+     "traps": [
+      { "has": "is based in a study", "note": "Kalıp: based on." },
+      { "has": "is base on", "note": "Üçüncü biçim: is based on." }
+     ]
+    },
+    {
+     "tr": "Yazara göre bu sonuç şaşırtıcı değildir.",
+     "answers": ["According to the writer, this result is not surprising."],
+     "hint": "Şeyin özelliği: surprising.",
+     "traps": [
+      { "has": "according to the writer says", "at": "start", "note": "İkisi birlikte kullanılmaz." },
+      { "has": "this result is not surprised", "note": "Şeyin özelliği: surprising." }
+     ]
+    },
+    {
+     "tr": "Bu iddianın kanıtı ikinci bölümde verilmiştir.",
+     "answers": ["The evidence for this claim is given in the second section."],
+     "hint": "Kanıt için for edatı kullanılır.",
+     "traps": [
+      { "has": "the evidence of this claim", "at": "start", "note": "Kalıp: evidence for." },
+      { "has": "evidences", "note": "evidence sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Yazarın sözlerini aynen aktarıyorum.",
+     "answers": ["I am quoting the writer's exact words.", "These are the writer's exact words."],
+     "hint": "Sahiplik için 's kullanılır.",
+     "traps": [
+      { "has": "the words of the writer exact", "at": "start", "note": "Doğal biçim: the writer's exact words." },
+      { "has": "writers exact words", "note": "Sahiplik: writer's." }
+     ]
+    },
+    {
+     "tr": "Bu fikri kendim geliştirmedim.",
+     "answers": ["I did not develop this idea myself.", "This idea is not my own."],
+     "hint": "Dönüşlü zamir cümle sonuna gelir.",
+     "traps": [
+      { "has": "i did not developed", "at": "start", "note": "did not'tan sonra fiil yalın." },
+      { "has": "myself i did not develop", "at": "start", "note": "Dönüşlü zamir sona gelir." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir konuda iki farklı kaynağın görüşünü aktar, sonra kendi görüşünü ayır.",
+    "checklist": [
+     "Aktarma fiilini kaynağın tutumuna göre seçtin mi?",
+     "based on ve evidence for kalıplarını doğru yazdın mı?",
+     "Kendi görüşünü kaynaklardan açıkça ayırdın mı?"
+    ],
+    "model": "The writer states that three factors are important. The same writer admits that this is not the only reason. Another researcher argues the opposite, and this view is based on a study from 2019. In my own view, both explanations are incomplete."
+   }
+  },
+  {
+   "id": "b2-w-16",
+   "level": "B2",
+   "order": 16,
+   "title": "İkna edici yazmak",
+   "canDo": "Okuyucuyu bir görüşe ikna edecek bir metin yazabilirim.",
+   "focus": "İkna, karşı tarafı küçümsemeden yapılır: önce onun görüşü dürüstçe aktarılır, sonra sınırı gösterilir. Bu yapıya \"kabul et ve karşı çık\" denir ve İngilizcede kalıpları vardır: it is true that… however…",
+   "tasks": [
+    {
+     "tr": "Bu konuda hemen harekete geçmeliyiz.",
+     "answers": ["We must act on this issue immediately.", "We should act on this issue immediately."],
+     "hint": "must'tan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "must to act", "note": "must'tan sonra to gelmez." },
+      { "has": "act on this issue immediate", "note": "Zarf biçimi: immediately." }
+     ]
+    },
+    {
+     "tr": "Maliyetin yüksek olduğu doğrudur.",
+     "answers": ["It is true that the cost is high.", "Admittedly, the cost is high."],
+     "hint": "Kabul kalıbı: it is true that.",
+     "traps": [
+      { "has": "it is true the cost is high", "at": "start", "note": "that gerekir." },
+      { "has": "it is truth that", "at": "start", "note": "Sıfat gerekir: it is true." }
+     ]
+    },
+    {
+     "tr": "Ancak hiçbir şey yapmamanın bedeli daha ağırdır.",
+     "answers": ["However, the cost of doing nothing is higher.", "However, the price of inaction is higher."],
+     "hint": "Edattan sonra fiil -ing alır.",
+     "traps": [
+      { "has": "cost of do nothing", "note": "Edattan sonra -ing: of doing nothing." },
+      { "has": "more high", "note": "Kısa sıfat: higher." }
+     ]
+    },
+    {
+     "tr": "Bir an için bunun yapılmadığını düşünün.",
+     "answers": ["Imagine for a moment that this is not done.", "Suppose for a moment that this is not done."],
+     "hint": "imagine'den sonra that + cümle gelir.",
+     "traps": [
+      { "has": "imagine for a moment this is not done", "at": "start", "note": "that daha açıktır." },
+      { "has": "imagine to this", "at": "start", "note": "imagine'den sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Sonuçlar herkesi etkileyecektir.",
+     "answers": ["The consequences will affect everyone.", "The results will affect us all."],
+     "hint": "affect fiil, effect isimdir.",
+     "traps": [
+      { "has": "will effect everyone", "note": "Fiil biçimi: affect." },
+      { "has": "will affects", "note": "will'den sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Bu yüzden bu öneriyi desteklemenizi rica ediyorum.",
+     "answers": ["I therefore urge you to support this proposal.", "I therefore ask you to support this proposal."],
+     "hint": "urge'den sonra kişi ve to + fiil gelir.",
+     "traps": [
+      { "has": "urge you supporting", "note": "urge'den sonra to gelir." },
+      { "has": "urge to you", "note": "Kalıp: urge you to support." }
+     ]
+    },
+    {
+     "tr": "Seçim bizim elimizde.",
+     "answers": ["The choice is ours.", "The decision is in our hands."],
+     "hint": "İyelik zamiri: ours.",
+     "traps": [
+      { "has": "the choice is our", "at": "start", "note": "İyelik zamiri: ours." },
+      { "has": "in our hand", "note": "Kalıp: in our hands." }
+     ]
+    },
+    {
+     "tr": "Beklemek artık bir seçenek değil.",
+     "answers": ["Waiting is no longer an option.", "Waiting is not an option any more."],
+     "hint": "Özne olunca fiil -ing alır.",
+     "traps": [
+      { "has": "wait is no longer an option", "at": "start", "note": "Özne olunca: Waiting." },
+      { "has": "no longer not an option", "note": "no longer zaten olumsuzdur." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir konuda okuyucuyu ikna eden bir metin yaz: iddia, karşı görüşü kabul, karşı çıkış, çağrı.",
+    "checklist": [
+     "Karşı görüşü dürüstçe aktardın mı?",
+     "affect ve effect ayrımını doğru yaptın mı?",
+     "urge ve ask'tan sonra kişi + to kullandın mı?"
+    ],
+    "model": "We must act on this issue immediately. It is true that the cost is high. However, the cost of doing nothing is higher, and the consequences will affect everyone. I therefore urge you to support this proposal. Waiting is no longer an option."
+   }
+  },
+  {
+   "id": "b2-w-17",
+   "level": "B2",
+   "order": 17,
+   "title": "Anlatıda gerilim",
+   "canDo": "Bir olayı okuyucuyu içine çekecek biçimde anlatabilirim.",
+   "focus": "Gerilim cümle uzunluğuyla kurulur: uzun cümleler yavaşlatır, kısa cümleler hızlandırır. Ayrıca sıralı geçmiş katmanları (had + üçüncü biçim) okuyucunun ne bildiğini yönetir.",
+   "tasks": [
+    {
+     "tr": "Bir şeylerin ters gittiğini anlamıştım.",
+     "answers": ["I had realized that something was wrong.", "I had understood that something was wrong."],
+     "hint": "Daha önce olmuş: had + üçüncü biçim.",
+     "traps": [
+      { "has": "i have realized that something was wrong", "at": "start", "note": "Anlatı içinde: I had realized." },
+      { "has": "realised", "note": "Amerikan yazımı: realized." }
+     ]
+    },
+    {
+     "tr": "Kapı yavaşça açıldı.",
+     "answers": ["The door opened slowly.", "Slowly, the door opened."],
+     "hint": "Zarf fiilden sonra ya da vurgu için başta.",
+     "traps": [
+      { "has": "the door opened slow", "at": "start", "note": "Zarf biçimi: slowly." },
+      { "has": "the door was opened slowly by itself", "note": "Kendiliğinden: The door opened slowly." }
+     ]
+    },
+    {
+     "tr": "İçeride kimse yoktu.",
+     "answers": ["There was nobody inside.", "There was no one inside."],
+     "hint": "Tek olumsuzluk yeter.",
+     "traps": [
+      { "has": "there was not nobody", "at": "start", "note": "Çift olumsuz olmaz." },
+      { "has": "inside there was not anybody there", "at": "start", "note": "Gereksiz tekrar." }
+     ]
+    },
+    {
+     "tr": "Ne olduğunu ancak sonra öğrendim.",
+     "answers": ["Only later did I find out what had happened.", "I found out what had happened only later."],
+     "hint": "Only later ile başlarsa devrik kuruluş gerekir.",
+     "traps": [
+      { "has": "only later i found out", "at": "start", "note": "Devrik: Only later did I find out." },
+      { "has": "what had happen", "note": "Üçüncü biçim: what had happened." }
+     ]
+    },
+    {
+     "tr": "O ana kadar iki saat beklemiştim.",
+     "answers": ["By that time I had been waiting for two hours.", "By then I had waited for two hours."],
+     "hint": "O ana kadar süregelen: had been + -ing.",
+     "traps": [
+      { "has": "i was waiting for two hours by that time", "note": "O ana kadar: I had been waiting." },
+      { "has": "two hour", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Kalbim hızla çarpıyordu.",
+     "answers": ["My heart was beating fast.", "My heart was beating quickly."],
+     "hint": "Süren arka plan: was + -ing.",
+     "traps": [
+      { "has": "my heart beat fast", "at": "start", "note": "Süren olay: was beating." },
+      { "has": "beating fastly", "note": "fast zarf olarak da fast kalır." }
+     ]
+    },
+    {
+     "tr": "Sonra her şey birden durdu.",
+     "answers": ["Then everything suddenly stopped.", "Then, all at once, everything stopped."],
+     "hint": "everything tekil kabul edilir.",
+     "traps": [
+      { "has": "everything suddenly stop", "note": "Geçmiş zaman: stopped." },
+      { "has": "everything were", "note": "everything tekildir." }
+     ]
+    },
+    {
+     "tr": "O günden beri o sokağa hiç gitmedim.",
+     "answers": ["I have never been back to that street since that day.", "I have not been to that street since that day."],
+     "hint": "Bugüne uzanan: have + üçüncü biçim, since.",
+     "traps": [
+      { "has": "i never went to that street since", "at": "start", "note": "Bugüne uzanıyor: I have never been." },
+      { "has": "for that day", "note": "Başlangıç noktası için since." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Gerilimli bir anı sekiz cümleyle anlat. Cümle uzunluğunu bilinçli değiştir.",
+    "checklist": [
+     "Daha eski olayları had + üçüncü biçimle ayırdın mı?",
+     "Arka plan olaylarında was/were + -ing kullandın mı?",
+     "Only later gibi başlangıçlarda devrik kuruluşu uyguladın mı?"
+    ],
+    "model": "I had realized that something was wrong. By that time I had been waiting for two hours. My heart was beating fast. The door opened slowly. There was nobody inside. Then everything suddenly stopped. Only later did I find out what had happened."
+   }
+  },
+  {
+   "id": "b2-w-18",
+   "level": "B2",
+   "order": 18,
+   "title": "Takip yazısı",
+   "canDo": "Bir görüşme ya da toplantı sonrası takip mesajı yazabilirim.",
+   "focus": "Takip mesajı kısa, somut ve zamanlıdır: neye atıf yapıldığı, ne kararlaştırıldığı ve kimin ne yapacağı açıkça yazılır. Belirsiz bırakılan her madde, yapılmayan bir iş demektir.",
+   "tasks": [
+    {
+     "tr": "Dünkü görüşmemiz için teşekkür ederim.",
+     "answers": ["Thank you for our meeting yesterday.", "Thank you for meeting me yesterday."],
+     "hint": "thank you for + isim ya da -ing.",
+     "traps": [
+      { "has": "thank you for to meet", "at": "start", "note": "for'dan sonra -ing ya da isim gelir." },
+      { "has": "thank you for the meet", "at": "start", "note": "İsim biçimi: the meeting." }
+     ]
+    },
+    {
+     "tr": "Konuştuklarımızı kısaca özetlemek isterim.",
+     "answers": ["I would like to summarize briefly what we discussed.", "I would like to briefly summarize our discussion."],
+     "hint": "Dolaylı öbekte sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "what did we discuss", "note": "Dolaylı: what we discussed." },
+      { "has": "summarise", "note": "Amerikan yazımı: summarize." }
+     ]
+    },
+    {
+     "tr": "Üç konuda anlaştık.",
+     "answers": ["We agreed on three points.", "We reached agreement on three points."],
+     "hint": "Bir konuda anlaşmak: agree on.",
+     "traps": [
+      { "has": "we agreed three points", "at": "start", "note": "Konu için agree on." },
+      { "has": "three point", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Taslağı cuma gününe kadar göndereceğim.",
+     "answers": ["I will send the draft by Friday."],
+     "hint": "Son tarih için by.",
+     "traps": [
+      { "has": "until friday", "note": "Son tarih için by." },
+      { "has": "i will sending", "at": "start", "note": "will'den sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Sizden geri bildirim bekliyorum.",
+     "answers": ["I am waiting for your feedback.", "I look forward to your feedback."],
+     "hint": "feedback sayılamaz.",
+     "traps": [
+      { "has": "feedbacks", "note": "feedback sayılamaz." },
+      { "has": "waiting your feedback", "note": "wait'ten sonra for gelir." }
+     ]
+    },
+    {
+     "tr": "Bir sonraki adımı birlikte belirleyelim.",
+     "answers": ["Let us decide the next step together.", "Let's decide on the next step together."],
+     "hint": "Let's'ten sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "let's to decide", "note": "Let's'ten sonra to gelmez." },
+      { "has": "let's deciding", "note": "Let's'ten sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Bir şey atladıysam lütfen düzeltin.",
+     "answers": ["Please correct me if I have missed anything.", "Please correct me if I missed anything."],
+     "hint": "Olumsuz koşulda anything kullanılır.",
+     "traps": [
+      { "has": "if i have missed nothing", "note": "Bu tersini söyler: if I have missed anything." },
+      { "has": "if i will miss", "note": "if'ten sonra gelecek zaman kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Tekrar görüşmek üzere.",
+     "answers": ["I look forward to speaking with you again.", "I look forward to seeing you again."],
+     "hint": "look forward to'dan sonra -ing gelir.",
+     "traps": [
+      { "has": "look forward to speak", "note": "Buradaki to edattır: to speaking." },
+      { "has": "see you again soon meeting", "note": "Karışık kuruluş; sade tut." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir toplantı sonrası takip mesajı yaz: teşekkür, özet, üç karar, senin işin, tarih, kapanış.",
+    "checklist": [
+     "Kimin ne yapacağını açıkça yazdın mı?",
+     "agree on ve by kalıplarını doğru kullandın mı?",
+     "look forward to'dan sonra -ing kullandın mı?"
+    ],
+    "model": "Thank you for our meeting yesterday. I would like to summarize briefly what we discussed. We agreed on three points. I will send the draft by Friday and I am waiting for your feedback. Please correct me if I have missed anything. I look forward to speaking with you again."
+   }
+  },
+  {
+   "id": "b2-w-19",
+   "level": "B2",
+   "order": 19,
+   "title": "Kendi metnini düzeltmek",
+   "canDo": "Yazdığım metni gözden geçirip düzeltebilirim.",
+   "focus": "Düzeltme, yeni cümle yazmak değil fazlalığı atmaktır. İngilizcede en sık fazlalıklar: gereksiz ikilemeler (return back), boş güçlendiriciler (very very), ve öznesi kayan uzun cümleler.",
+   "tasks": [
+    {
+     "tr": "Eve döndüm. (Fazlalık kullanma.)",
+     "answers": ["I returned home.", "I went back home."],
+     "hint": "return zaten \"geri\" anlamı taşır.",
+     "traps": [
+      { "has": "returned back", "note": "return zaten geri demektir." },
+      { "has": "returned to home", "note": "home'dan önce to gelmez." }
+     ]
+    },
+    {
+     "tr": "Soruyu tekrarladı. (Fazlalık kullanma.)",
+     "answers": ["She repeated the question.", "He repeated the question."],
+     "hint": "repeat zaten \"tekrar\" anlamı taşır.",
+     "traps": [
+      { "has": "repeated again", "note": "repeat zaten tekrar demektir." },
+      { "has": "repeated the question one more time again", "note": "Gereksiz yığma." }
+     ]
+    },
+    {
+     "tr": "Sonuç çok önemliydi. (Güçlendiriciyi yığma.)",
+     "answers": ["The result was very important.", "The result was crucial."],
+     "hint": "Tek güçlendirici yeter.",
+     "traps": [
+      { "has": "very very important", "note": "Tek very yeter ya da daha güçlü bir sıfat seç." },
+      { "has": "the result was so much important", "at": "start", "note": "Doğal biçim: very important." }
+     ]
+    },
+    {
+     "tr": "Bu iki seçenek birbirinden farklıdır.",
+     "answers": ["These two options are different from each other.", "These two options differ from each other."],
+     "hint": "different from kalıbı.",
+     "traps": [
+      { "has": "different than each other", "note": "Kalıp: different from." },
+      { "has": "differ from with", "note": "differ'dan sonra yalnız from gelir." }
+     ]
+    },
+    {
+     "tr": "Toplantıya katıldım. (Doğru fiili seç.)",
+     "answers": ["I attended the meeting.", "I took part in the meeting."],
+     "hint": "attend'den sonra doğrudan nesne gelir.",
+     "traps": [
+      { "has": "attended to the meeting", "at": "start", "note": "attend'den sonra to gelmez." },
+      { "has": "participated the meeting", "at": "start", "note": "participate'ten sonra in gelir." }
+     ]
+    },
+    {
+     "tr": "Bu konuyu tartıştık.",
+     "answers": ["We discussed this subject.", "We talked about this subject."],
+     "hint": "discuss doğrudan nesne alır, talk about ister.",
+     "traps": [
+      { "has": "discussed about this subject", "at": "start", "note": "discuss'tan sonra about gelmez." },
+      { "has": "talked this subject", "at": "start", "note": "talk'tan sonra about gelir." }
+     ]
+    },
+    {
+     "tr": "Sorun çözüldü ve herkes rahatladı.",
+     "answers": ["The problem was solved and everyone was relieved."],
+     "hint": "everyone tekil kabul edilir.",
+     "traps": [
+      { "has": "everyone were relieved", "note": "everyone tekildir: was." },
+      { "has": "the problem solved and", "at": "start", "note": "Edilgen: was solved." }
+     ]
+    },
+    {
+     "tr": "Kısa yazmak uzun yazmaktan zordur.",
+     "answers": ["Writing briefly is harder than writing at length.", "It is harder to write briefly than at length."],
+     "hint": "Özne olunca fiil -ing alır.",
+     "traps": [
+      { "has": "write briefly is harder", "at": "start", "note": "Özne olunca: Writing briefly." },
+      { "has": "more hard", "note": "Kısa sıfat: harder." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Daha önce yazdığın bir paragrafı al ve kısalt: fazlalıkları çıkar, güçlendiricileri azalt, uzun cümleleri böl.",
+    "checklist": [
+     "return back gibi ikilemeleri temizledin mi?",
+     "discuss, attend, participate fiillerinde edatları doğru kullandın mı?",
+     "everyone ve everything ile tekil fiil kullandın mı?"
+    ],
+    "model": "I returned home and repeated the question. The result was very important. We discussed this subject and attended the meeting. Writing briefly is harder than writing at length."
+   }
+  }
+ ]
+}

@@ -1,0 +1,641 @@
+{
+ "_meta": {
+  "batch": "b2-02",
+  "level": "B2",
+  "range": "Set 7-13 — isimleştirme, temkinli dil, rapor, öneri yazısı, eleştirel değerlendirme, üslup, zarf yerleşimi"
+ },
+ "sets": [
+  {
+   "id": "b2-w-07",
+   "level": "B2",
+   "order": 7,
+   "title": "İsimleştirme",
+   "canDo": "Fiil ağırlıklı cümleleri akademik isim öbeklerine çevirebilirim.",
+   "focus": "Akademik İngilizce fiil yerine isim kullanmayı yeğler: \"prices rose quickly\" yerine \"the rapid rise in prices\". Bu bilgiyi sıkıştırır ve metni nesnelleştirir. Türkçede de \"artış\" gibi isimler vardır ama İngilizcede hangi edatın geleceği kelimeye göre değişir.",
+   "tasks": [
+    {
+     "tr": "Fiyatlardaki hızlı artış herkesi etkiledi.",
+     "answers": ["The rapid rise in prices affected everyone.", "The rapid increase in prices affected everyone."],
+     "hint": "Artış için in edatı kullanılır.",
+     "traps": [
+      { "has": "rise of prices", "note": "Kalıp: rise in prices." },
+      { "has": "affected to everyone", "note": "affect'ten sonra doğrudan nesne gelir." }
+     ]
+    },
+    {
+     "tr": "Yatırım eksikliği sorunun temelinde yatıyor.",
+     "answers": ["The lack of investment lies at the heart of the problem.", "A lack of investment lies behind the problem."],
+     "hint": "Eksiklik için of edatı kullanılır.",
+     "traps": [
+      { "has": "lack in investment", "note": "Kalıp: lack of investment." },
+      { "has": "investments", "note": "Bu anlamda investment sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Bu yöntemin uygulanması zaman aldı.",
+     "answers": ["The application of this method took time.", "Applying this method took time."],
+     "hint": "Uygulama için of edatı kullanılır.",
+     "traps": [
+      { "has": "the application to this method", "at": "start", "note": "Kalıp: the application of." },
+      { "has": "took a time", "note": "Bu anlamda time sayılamaz." }
+     ]
+    },
+    {
+     "tr": "İklim üzerindeki etkisi hâlâ tartışılıyor.",
+     "answers": ["Its effect on the climate is still being discussed.", "Its impact on the climate is still under discussion."],
+     "hint": "Etki için on edatı kullanılır.",
+     "traps": [
+      { "has": "effect to the climate", "note": "Kalıp: effect on." },
+      { "has": "is still discussing", "note": "Edilgen: is still being discussed." }
+     ]
+    },
+    {
+     "tr": "Sonuçlar arasında güçlü bir ilişki var.",
+     "answers": ["There is a strong relationship between the results.", "There is a strong link between the results."],
+     "hint": "İlişki için between ya da with.",
+     "traps": [
+      { "has": "relationship of the results", "at": "start", "note": "Kalıp: relationship between." },
+      { "has": "there are a strong relationship", "at": "start", "note": "Tekil: there is." }
+     ]
+    },
+    {
+     "tr": "Bu konudaki farkındalık arttı.",
+     "answers": ["Awareness of this issue has increased.", "Awareness about this issue has grown."],
+     "hint": "awareness sayılamaz ve of alır.",
+     "traps": [
+      { "has": "awarenesses", "note": "awareness sayılamaz." },
+      { "has": "awareness on this issue", "at": "start", "note": "Kalıp: awareness of." }
+     ]
+    },
+    {
+     "tr": "Kurallara uyulması zorunludur.",
+     "answers": ["Agreement with the rules is necessary.", "Following the rules is necessary."],
+     "hint": "Uyum için with edatı kullanılır.",
+     "traps": [
+      { "has": "agreement to the rules", "at": "start", "note": "Kalıp: agreement with." },
+      { "has": "following the rules are", "at": "start", "note": "Tekil özne: is." }
+     ]
+    },
+    {
+     "tr": "Bu değişikliğin nedeni açıklanmadı.",
+     "answers": ["The reason for this change has not been explained.", "The reason for this change was not explained."],
+     "hint": "Neden için for edatı kullanılır.",
+     "traps": [
+      { "has": "the reason of this change", "at": "start", "note": "Kalıp: the reason for." },
+      { "has": "has not been explain", "note": "Üçüncü biçim: has not been explained." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir değişimi isim öbekleriyle anlat: artış, eksiklik, etki ve ilişki kelimelerini kullan.",
+    "checklist": [
+     "rise in, lack of, effect on, relationship between edatlarını doğru eşleştirdin mi?",
+     "Sayılamayan isimleri çoğul yapmadın, değil mi?",
+     "İsim öbeği özne olduğunda fiili tekil tuttun mu?"
+    ],
+    "model": "The rapid rise in prices affected everyone. The lack of investment lies at the heart of the problem. Its effect on the economy is still being discussed. The reason for this change has not been explained."
+   }
+  },
+  {
+   "id": "b2-w-08",
+   "level": "B2",
+   "order": 8,
+   "title": "Temkinli dil",
+   "canDo": "İddialarımı ölçülü biçimde yumuşatabilirim.",
+   "focus": "Akademik yazıda kesin iddia risklidir: veriye dayanmayan her kesinlik yazarı savunmasız bırakır. tend to, appear to, may ve it seems that yapıları iddiayı bilimsel ölçüye çeker. Türkçede bu yumuşatma zarf ve ek ile yapılır, İngilizcede fiil yapısıyla.",
+   "tasks": [
+    {
+     "tr": "Gençler bu yöntemi tercih etme eğiliminde.",
+     "answers": ["Young people tend to prefer this method."],
+     "hint": "tend to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "tend to preferring", "note": "tend to'dan sonra yalın fiil: tend to prefer." },
+      { "has": "young people tends", "note": "people çoğuldur: tend." }
+     ]
+    },
+    {
+     "tr": "Sonuçlar bu görüşü destekler görünüyor.",
+     "answers": ["The results appear to support this view.", "The results seem to support this view."],
+     "hint": "appear to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "appear supporting", "note": "appear'dan sonra to gelir: appear to support." },
+      { "has": "the results appears", "note": "Çoğul özne: appear." }
+     ]
+    },
+    {
+     "tr": "Bu durum bazı sorunlara yol açabilir.",
+     "answers": ["This may lead to some problems.", "This could lead to some problems."],
+     "hint": "may'den sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "may leads", "note": "may'den sonra fiil yalın: may lead." },
+      { "has": "may to lead", "note": "may'den sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Verilere göre eğilim olumlu görünmektedir.",
+     "answers": ["According to the data, the trend appears positive.", "The data suggest that the trend is positive."],
+     "hint": "Akademik kullanımda data çoğul kabul edilir.",
+     "traps": [
+      { "has": "according the data", "at": "start", "note": "Kalıp: according to." },
+      { "has": "datas", "note": "data zaten çoğuldur." }
+     ]
+    },
+    {
+     "tr": "Bu sonuç kesin olarak kanıtlanmış değildir.",
+     "answers": ["This result has not been definitely proved.", "This conclusion has not been clearly proved."],
+     "hint": "Edilgen: has not been + üçüncü biçim.",
+     "traps": [
+      { "has": "has not been prove", "note": "Üçüncü biçim: has not been proved." },
+      { "has": "is not proved definitely certain", "note": "Gereksiz yığma; sade tut." }
+     ]
+    },
+    {
+     "tr": "Genel olarak bu yaklaşım daha güvenilirdir.",
+     "answers": ["In general, this approach is more reliable.", "On the whole, this approach is more reliable."],
+     "hint": "Genelleme bağlacı cümle başında.",
+     "traps": [
+      { "has": "in generally", "at": "start", "note": "Kalıp: in general." },
+      { "has": "more reliabler", "note": "İkisi birden kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Bu konuda daha fazla araştırmaya ihtiyaç var.",
+     "answers": ["Further research is needed on this subject.", "More research is needed on this subject."],
+     "hint": "research sayılamaz, tekil fiil alır.",
+     "traps": [
+      { "has": "researches are needed", "note": "research sayılamaz: research is needed." },
+      { "has": "need for more research is", "at": "start", "note": "Sade biçim: Further research is needed." }
+     ]
+    },
+    {
+     "tr": "Bu bulgular dikkatle yorumlanmalıdır.",
+     "answers": ["These findings should be interpreted carefully.", "These results should be interpreted with care."],
+     "hint": "Edilgen kip: should be + üçüncü biçim.",
+     "traps": [
+      { "has": "should be interpret", "note": "Üçüncü biçim: should be interpreted." },
+      { "has": "this findings", "at": "start", "note": "Çoğul: these findings." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir iddiayı önce kesin, sonra temkinli dille yaz. Farkı iki paragrafta göster.",
+    "checklist": [
+     "tend to ve appear to'dan sonra yalın fiil kullandın mı?",
+     "may ve could'dan sonra yalın fiil kullandın mı?",
+     "research ve data gibi isimlerde doğru fiil uyumunu kullandın mı?"
+    ],
+    "model": "Young people tend to prefer this method. The results appear to support this view, although this has not been definitely proved. This may lead to some problems, so further research is needed on this subject."
+   }
+  },
+  {
+   "id": "b2-w-09",
+   "level": "B2",
+   "order": 9,
+   "title": "Rapor yazmak",
+   "canDo": "Bir durumu bölümlere ayrılmış bir raporla anlatabilirim.",
+   "focus": "Raporda kişisel görüş en sona ayrılır ve bulgular nesnel aktarılır. Başlıklar, edilgen çatı ve ölçülü dil bir aradadır; \"bence\" cümleleri bulgular bölümünde yer almaz.",
+   "tasks": [
+    {
+     "tr": "Bu raporun amacı sorunu incelemektir.",
+     "answers": ["The aim of this report is to examine the problem.", "The purpose of this report is to examine the problem."],
+     "hint": "Amaç için is to + yalın fiil.",
+     "traps": [
+      { "has": "the aim of this report is examining", "at": "start", "note": "Kalıp: is to examine." },
+      { "has": "the aim for this report", "at": "start", "note": "Kalıp: the aim of." }
+     ]
+    },
+    {
+     "tr": "Veriler üç kaynaktan toplandı.",
+     "answers": ["The data were collected from three sources.", "The data was collected from three sources."],
+     "hint": "Toplamak: collect from.",
+     "traps": [
+      { "has": "collected by three sources", "note": "Kaynak için from: collected from." },
+      { "has": "datas", "note": "data zaten çoğuldur." }
+     ]
+    },
+    {
+     "tr": "Katılımcıların yarısı bu görüşe katıldı.",
+     "answers": ["Half of the participants agreed with this view."],
+     "hint": "Katılmak: agree with.",
+     "traps": [
+      { "has": "agreed to this view", "note": "Görüş için agree with." },
+      { "has": "the half of participants", "at": "start", "note": "Kalıp: half of the participants." }
+     ]
+    },
+    {
+     "tr": "Bulgular önceki çalışmalarla uyumludur.",
+     "answers": ["The findings are consistent with previous studies.", "The results agree with previous studies."],
+     "hint": "Uyumlu: consistent with.",
+     "traps": [
+      { "has": "consistent to previous", "note": "Kalıp: consistent with." },
+      { "has": "the findings is consistent", "at": "start", "note": "Çoğul özne: are." }
+     ]
+    },
+    {
+     "tr": "Ancak örneklem küçüktü.",
+     "answers": ["However, the sample was small.", "The sample was small, however."],
+     "hint": "however ayrı cümle kurar.",
+     "traps": [
+      { "has": "but however the sample", "at": "start", "note": "İkisi birlikte kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Bu nedenle sonuçlar genellenemez.",
+     "answers": ["Therefore, the results cannot be generalized.", "For this reason, the results cannot be generalized."],
+     "hint": "Edilgen kip: cannot be + üçüncü biçim.",
+     "traps": [
+      { "has": "cannot be generalize", "note": "Üçüncü biçim: cannot be generalized." },
+      { "has": "generalised", "note": "Amerikan yazımı: generalized." }
+     ]
+    },
+    {
+     "tr": "Sonuç olarak üç öneri sunulmaktadır.",
+     "answers": ["In conclusion, three recommendations are made.", "In conclusion, three suggestions are offered."],
+     "hint": "Öneri sunmak: make a recommendation.",
+     "traps": [
+      { "has": "three recommendations are done", "note": "Kalıp: recommendations are made." },
+      { "has": "three recommendation", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Bu önerilerin kısa sürede uygulanması tavsiye edilir.",
+     "answers": ["It is recommended that these suggestions be implemented soon.", "These suggestions should be implemented soon."],
+     "hint": "Öneri kipinde fiil yalın kalabilir.",
+     "traps": [
+      { "has": "should be implement", "note": "Üçüncü biçim: should be implemented." },
+      { "has": "it is recommended these suggestions", "at": "start", "note": "that gerekir." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kısa bir rapor yaz: amaç, yöntem, iki bulgu, bir sınırlılık, bir öneri.",
+    "checklist": [
+     "Bulgular bölümünde kişisel görüş kullanmadın, değil mi?",
+     "consistent with, agree with, collect from edatlarını doğru yazdın mı?",
+     "Edilgen yapılarda üçüncü biçimi kullandın mı?"
+    ],
+    "model": "The aim of this report is to examine the problem. The data were collected from three sources. Half of the participants agreed with this view and the findings are consistent with previous studies. However, the sample was small, so the results cannot be generalized. In conclusion, three recommendations are made."
+   }
+  },
+  {
+   "id": "b2-w-10",
+   "level": "B2",
+   "order": 10,
+   "title": "Öneri sunmak",
+   "canDo": "Bir kuruma gerekçeli bir öneri yazabilirim.",
+   "focus": "Öneri yazısında dil gelecek ve koşula dayanır: bu yapılırsa şu olur. Ayrıca fayda dili kullanılır ve maliyet dürüstçe belirtilir; sadece olumlu yan yazmak öneriyi zayıflatır.",
+   "tasks": [
+    {
+     "tr": "Bu öneri mevcut sorunu ele almaktadır.",
+     "answers": ["This proposal addresses the current problem.", "This proposal deals with the current problem."],
+     "hint": "Ele almak: address ya da deal with.",
+     "traps": [
+      { "has": "deals the current problem", "note": "deal'den sonra with gelir." },
+      { "has": "this proposal address", "note": "Tekil özne: addresses." }
+     ]
+    },
+    {
+     "tr": "Eğitim programının genişletilmesini öneriyorum.",
+     "answers": ["I propose expanding the training program.", "I propose that the training program be expanded."],
+     "hint": "propose'dan sonra -ing ya da that + yalın fiil gelir.",
+     "traps": [
+      { "has": "i propose to expand the training program", "at": "start", "note": "Bu kalıpta: propose expanding." },
+      { "has": "programme", "note": "Amerikan yazımı: program." }
+     ]
+    },
+    {
+     "tr": "Bu değişiklik verimliliği artıracaktır.",
+     "answers": ["This change will increase efficiency.", "This change would increase efficiency."],
+     "hint": "efficiency sayılamaz, a almaz.",
+     "traps": [
+      { "has": "an efficiency", "note": "efficiency sayılamaz." },
+      { "has": "will increases", "note": "will'den sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Ayrıca çalışanların memnuniyetini yükseltecektir.",
+     "answers": ["It will also raise employee satisfaction.", "It would also improve employee satisfaction."],
+     "hint": "raise geçişli, rise geçişsizdir.",
+     "traps": [
+      { "has": "it will also rise employee satisfaction", "note": "Nesne varsa raise kullanılır." },
+      { "has": "satisfactions", "note": "satisfaction sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Maliyeti yaklaşık on bin lira olacaktır.",
+     "answers": ["The cost will be about ten thousand dollars.", "The cost would be approximately ten thousand dollars."],
+     "hint": "Yaklaşık için about ya da approximately.",
+     "traps": [
+      { "has": "ten thousands lira", "note": "Sayı sıfat olunca çoğul olmaz: ten thousand." }
+     ]
+    },
+    {
+     "tr": "Bu tutar altı ayda geri kazanılacaktır.",
+     "answers": ["This amount will be recovered within six months.", "This sum would be recovered within six months."],
+     "hint": "Süre sınırı için within.",
+     "traps": [
+      { "has": "in six months time", "note": "Kalıp: within six months." },
+      { "has": "will be recover", "note": "Üçüncü biçim: will be recovered." }
+     ]
+    },
+    {
+     "tr": "Öneri kabul edilirse uygulamaya eylülde başlanabilir.",
+     "answers": ["If the proposal is accepted, it can be put into practice in September."],
+     "hint": "if'ten sonra geniş zaman kullanılır.",
+     "traps": [
+      { "has": "if the proposal will be accepted", "at": "start", "note": "if'ten sonra geniş zaman." },
+      { "has": "on september", "note": "Ay için in: in September." }
+     ]
+    },
+    {
+     "tr": "Bu konuyu görüşmeye hazırım.",
+     "answers": ["I am ready to discuss this matter.", "I would be happy to discuss this matter."],
+     "hint": "ready to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "ready to discussing", "note": "ready to'dan sonra yalın fiil." },
+      { "has": "discuss about this matter", "note": "discuss'tan sonra about gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Çalıştığın ya da okuduğun yere bir öneri yaz: sorun, öneri, iki fayda, maliyet, takvim.",
+    "checklist": [
+     "propose ve suggest'ten sonra doğru yapıyı kullandın mı?",
+     "raise ve rise ayrımını yaptın mı?",
+     "Maliyeti dürüstçe belirttin mi?"
+    ],
+    "model": "This proposal addresses the current problem. I propose expanding the training program. This change will increase efficiency and it will also raise employee satisfaction. The cost will be about ten thousand dollars, but this amount will be recovered within six months."
+   }
+  },
+  {
+   "id": "b2-w-11",
+   "level": "B2",
+   "order": 11,
+   "title": "Eleştirel değerlendirme",
+   "canDo": "Bir çalışmanın güçlü ve zayıf yanlarını dengeli biçimde değerlendirebilirim.",
+   "focus": "Eleştiri kişiye değil işe yöneltilir ve gerekçelendirilir. \"Kötü yazılmış\" bir yargıdır; \"kaynak gösterilmemiş\" bir gözlemdir. İngilizcede bu ayrım fiil seçimiyle görünür hale gelir: fails to, overlooks, does not address.",
+   "tasks": [
+    {
+     "tr": "Çalışmanın güçlü bir yanı var.",
+     "answers": ["The study has one clear strength.", "One strength of the study is clear."],
+     "hint": "Tekil özne: has.",
+     "traps": [
+      { "has": "the study have one", "at": "start", "note": "Tekil özne: has." },
+      { "has": "strenght", "note": "Yazım: strength." }
+     ]
+    },
+    {
+     "tr": "Yazar konuyu açıkça tanımlıyor.",
+     "answers": ["The writer defines the subject clearly.", "The author defines the subject clearly."],
+     "hint": "Zarf fiilden sonra gelir.",
+     "traps": [
+      { "has": "defines clear the subject", "note": "Zarf biçimi: clearly." },
+      { "has": "the writer define", "note": "Tekil özne: defines." }
+     ]
+    },
+    {
+     "tr": "Ancak çalışma maliyet konusunu ele almıyor.",
+     "answers": ["However, the study does not address the question of cost.", "However, the study fails to address the question of cost."],
+     "hint": "fail to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "fails addressing", "note": "fail'den sonra to gelir: fails to address." },
+      { "has": "the study do not address", "note": "Tekil özne: does not." }
+     ]
+    },
+    {
+     "tr": "Yazar önemli bir noktayı gözden kaçırıyor.",
+     "answers": ["The writer overlooks an important point.", "The author misses an important point."],
+     "hint": "Gözden kaçırmak: overlook.",
+     "traps": [
+      { "has": "overlooks to an important point", "note": "overlook'tan sonra doğrudan nesne gelir." },
+      { "has": "a important point", "note": "Sesli sesle başlar: an important point." }
+     ]
+    },
+    {
+     "tr": "İkinci bölümdeki kanıt zayıftır.",
+     "answers": ["The evidence in the second section is weak."],
+     "hint": "evidence sayılamaz, tekil fiil alır.",
+     "traps": [
+      { "has": "evidences", "note": "evidence sayılamaz." },
+      { "has": "the evidence are weak", "at": "start", "note": "Tekil: is weak." }
+     ]
+    },
+    {
+     "tr": "Bu iddia kaynakla desteklenmemiştir.",
+     "answers": ["This claim is not supported by any source.", "This claim is not supported by evidence."],
+     "hint": "Edilgende yapan by ile gelir.",
+     "traps": [
+      { "has": "supported with any source", "note": "Edilgende by kullanılır." },
+      { "has": "is not support", "note": "Üçüncü biçim: is not supported." }
+     ]
+    },
+    {
+     "tr": "Bu eksikliklere rağmen çalışma değerlidir.",
+     "answers": ["Despite these weaknesses, the study is valuable.", "In spite of these weaknesses, the study is valuable."],
+     "hint": "despite'tan sonra isim öbeği gelir.",
+     "traps": [
+      { "has": "despite of these weaknesses", "at": "start", "note": "despite'tan sonra of gelmez." },
+      { "has": "although these weaknesses", "at": "start", "note": "İsim geliyorsa despite kullanılır." }
+     ]
+    },
+    {
+     "tr": "İleride bu konunun daha ayrıntılı incelenmesi gerekir.",
+     "answers": ["This subject should be examined in more detail in future.", "This issue needs to be studied in more detail in future."],
+     "hint": "Kalıp: in more detail.",
+     "traps": [
+      { "has": "in more details", "note": "Kalıp: in more detail." },
+      { "has": "should be examine", "note": "Üçüncü biçim: should be examined." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Okuduğun bir yazıyı değerlendir: iki güçlü yan, iki zayıf yan, genel yargı.",
+    "checklist": [
+     "Eleştiriyi kişiye değil işe yönelttin mi?",
+     "fail to'dan sonra yalın fiil kullandın mı?",
+     "evidence ve research gibi isimlerde tekil fiil kullandın mı?"
+    ],
+    "model": "The study has one clear strength: the writer defines the subject clearly. However, the study fails to address the question of cost and the evidence in the second section is weak. Despite these weaknesses, the study is valuable and should be examined in more detail in future."
+   }
+  },
+  {
+   "id": "b2-w-12",
+   "level": "B2",
+   "order": 12,
+   "title": "Üslup seçmek",
+   "canDo": "Aynı içeriği resmî ve gündelik dille yazabilirim.",
+   "focus": "Üslup kelime seçimiyle belirlenir: get yerine receive, a lot of yerine considerable, kısaltma yerine tam biçim. Aynı bilgi iki üslupta da doğru olabilir ama yanlış üslup okuru rahatsız eder.",
+   "tasks": [
+    {
+     "tr": "Mektubunuzu aldık.",
+     "answers": ["We have received your letter.", "We received your letter."],
+     "hint": "Resmî dilde receive, gündelikte get.",
+     "traps": [
+      { "has": "we got your letter", "at": "start", "note": "Resmî yazışmada: We have received your letter." },
+      { "has": "we have receive", "at": "start", "note": "Üçüncü biçim: have received." }
+     ]
+    },
+    {
+     "tr": "Bu konuda epey sorun yaşandı.",
+     "answers": ["Considerable problems have arisen in this area.", "A number of problems have arisen in this area."],
+     "hint": "arise fiilinin üçüncü biçimi arisen.",
+     "traps": [
+      { "has": "have arised", "note": "arise düzensizdir: arisen." },
+      { "has": "a lot of problems have arisen in this area", "at": "start", "note": "Resmî üslupta: considerable problems." }
+     ]
+    },
+    {
+     "tr": "Toplantıyı iptal etmek zorunda kaldık.",
+     "answers": ["We had to cancel the meeting.", "We were forced to cancel the meeting."],
+     "hint": "have to kalıbının geçmişi had to.",
+     "traps": [
+      { "has": "we must cancel the meeting yesterday", "at": "start", "note": "Geçmişte: We had to cancel." },
+      { "has": "to canceling", "note": "to'dan sonra yalın fiil: to cancel." }
+     ]
+    },
+    {
+     "tr": "Yardımınız için minnettarız.",
+     "answers": ["We are grateful for your assistance.", "We are grateful for your help."],
+     "hint": "grateful for kalıbı.",
+     "traps": [
+      { "has": "grateful to your assistance", "note": "Kalıp: grateful for." },
+      { "has": "thanks a lot for your assistance", "at": "start", "note": "Resmî üslupta: We are grateful for…" }
+     ]
+    },
+    {
+     "tr": "Sorunuza en kısa sürede döneceğiz.",
+     "answers": ["We will respond to your question as soon as possible.", "We shall reply to your question as soon as possible."],
+     "hint": "respond to ve reply to kalıpları edat ister.",
+     "traps": [
+      { "has": "respond your question", "note": "respond'dan sonra to gelir." },
+      { "has": "reply your question", "note": "reply'dan sonra to gelir." }
+     ]
+    },
+    {
+     "tr": "Bu durum kabul edilemez olarak değerlendirilmiştir.",
+     "answers": ["This situation has been considered unacceptable."],
+     "hint": "consider'dan sonra doğrudan sıfat gelebilir.",
+     "traps": [
+      { "has": "considered as unacceptable", "note": "consider'dan sonra as gerekmez." },
+      { "has": "has been consider", "note": "Üçüncü biçim: has been considered." }
+     ]
+    },
+    {
+     "tr": "Görüşlerinizi bize iletmenizi rica ederiz.",
+     "answers": ["We would ask you to send us your comments.", "We request that you send us your comments."],
+     "hint": "ask'tan sonra kişi ve to + yalın fiil gelir.",
+     "traps": [
+      { "has": "we would ask you sending", "at": "start", "note": "Kalıp: ask you to send." },
+      { "has": "request you to sending", "note": "to'dan sonra yalın fiil." }
+     ]
+    },
+    {
+     "tr": "Anlayışınız için teşekkür ederiz.",
+     "answers": ["Thank you for your understanding."],
+     "hint": "thank you for + isim.",
+     "traps": [
+      { "has": "thank you for your understandings", "note": "understanding burada sayılamaz." },
+      { "has": "thanks for understanding us", "at": "start", "note": "Kalıp: Thank you for your understanding." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Aynı haberi iki kez yaz: bir arkadaşına gündelik dille, bir kuruma resmî dille.",
+    "checklist": [
+     "Resmî metinde kısaltma kullanmadın, değil mi?",
+     "respond to, reply to, grateful for edatlarını doğru yazdın mı?",
+     "Resmî metinde get yerine receive gibi seçimler yaptın mı?"
+    ],
+    "model": "We have received your letter. Considerable problems have arisen in this area and we had to cancel the meeting. We are grateful for your assistance and we will respond to your question as soon as possible. Thank you for your understanding."
+   }
+  },
+  {
+   "id": "b2-w-13",
+   "level": "B2",
+   "order": 13,
+   "title": "Zarf yerleşimi",
+   "canDo": "Zarfları doğru yere koyarak anlamı ayarlayabilirim.",
+   "focus": "İngilizcede zarfın yeri anlamı değiştirir: only, even ve also vurguladıkları ögeden hemen önce durur. Türkçede vurgu kelime sırasıyla yapıldığı için bu zarflar sürekli yanlış yere konur.",
+   "tasks": [
+    {
+     "tr": "Sadece iki kişi geldi.",
+     "answers": ["Only two people came."],
+     "hint": "only, vurguladığı ögeden önce gelir.",
+     "traps": [
+      { "has": "two people only came", "at": "start", "note": "Sıra: Only two people came." },
+      { "has": "two peoples", "note": "people zaten çoğuldur." }
+     ]
+    },
+    {
+     "tr": "Ben sadece sordum.",
+     "answers": ["I only asked.", "I just asked."],
+     "hint": "Burada only fiili vurguluyor.",
+     "traps": [
+      { "has": "only i asked", "at": "start", "note": "Bu \"sadece ben sordum\" demek olur." }
+     ]
+    },
+    {
+     "tr": "O bile bunu bilmiyordu.",
+     "answers": ["Even she did not know this.", "Even he did not know this."],
+     "hint": "even, vurguladığı ögeden önce.",
+     "traps": [
+      { "has": "she even did not know", "at": "start", "note": "Özne vurgulanıyorsa: Even she did not know." }
+     ]
+    },
+    {
+     "tr": "Bunu daha önce hiç duymamıştım bile.",
+     "answers": ["I had not even heard of it before."],
+     "hint": "even, yardımcı fiilden sonra gelir.",
+     "traps": [
+      { "has": "i had even not heard", "at": "start", "note": "Sıra: had not even heard." },
+      { "has": "heard it before", "note": "Bu anlamda: heard of it." }
+     ]
+    },
+    {
+     "tr": "O da aynı fikirde.",
+     "answers": ["She agrees too.", "He agrees too.", "She also agrees.", "He also agrees."],
+     "hint": "also fiilden önce, too cümle sonunda.",
+     "traps": [
+      { "has": "she agrees also", "at": "start", "note": "also fiilden önce gelir: She also agrees." },
+      { "has": "too she agrees", "at": "start", "note": "too cümlenin sonuna gelir." }
+     ]
+    },
+    {
+     "tr": "Nadiren geç kalır.",
+     "answers": ["She is rarely late.", "He is rarely late.", "She rarely arrives late."],
+     "hint": "Sıklık zarfı be fiilinden sonra gelir.",
+     "traps": [
+      { "has": "she rarely is late", "at": "start", "note": "be fiilinden sonra: She is rarely late." }
+     ]
+    },
+    {
+     "tr": "Nadiren böyle bir fırsat çıkar.",
+     "answers": ["Rarely does such an opportunity arise.", "Such an opportunity rarely arises."],
+     "hint": "Olumsuz zarfla başlarsa devrik kuruluş gerekir.",
+     "traps": [
+      { "has": "rarely such an opportunity arises", "at": "start", "note": "Devrik kuruluş: Rarely does such an opportunity arise." },
+      { "has": "rarely does such an opportunity arises", "at": "start", "note": "does'tan sonra fiil yalın: arise." }
+     ]
+    },
+    {
+     "tr": "Dikkatle dinledi.",
+     "answers": ["She listened carefully.", "He listened carefully.", "She listened with care."],
+     "hint": "Zarf nesnesiz fiilden sonra gelir.",
+     "traps": [
+      { "has": "she carefully listened to", "at": "start", "note": "Doğal sıra: listened carefully." },
+      { "has": "listened careful", "note": "Zarf biçimi: carefully." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir olayı anlat ve only, even, also ile rarely zarflarını bilinçli yerleştir.",
+    "checklist": [
+     "only ve even'ı vurguladıkları ögeden hemen önce koydun mu?",
+     "also'yu fiilden önce, too'yu cümle sonunda kullandın mı?",
+     "Olumsuz zarfla başlayan cümlede devrik kuruluşu uyguladın mı?"
+    ],
+    "model": "Only two people came to the meeting. Even she did not know about it. I had not even heard of it before. Rarely does such an opportunity arise, and I also missed it."
+   }
+  }
+ ]
+}

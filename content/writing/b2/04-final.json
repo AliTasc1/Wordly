@@ -1,0 +1,555 @@
+{
+ "_meta": {
+  "batch": "b2-04",
+  "level": "B2",
+  "range": "Set 20-25 — karşılaştırmalı deneme, veri yorumu, sunum metni, katılmama, koşul çeşitleri, sonuç paragrafı"
+ },
+ "sets": [
+  {
+   "id": "b2-w-20",
+   "level": "B2",
+   "order": 20,
+   "title": "Karşılaştırmalı deneme",
+   "canDo": "İki seçeneği ölçütlere göre karşılaştıran bir metin yazabilirim.",
+   "focus": "Karşılaştırma ancak ölçüt belirtilirse anlam taşır: neye göre daha iyi? İngilizcede ölçüt in terms of, with regard to gibi kalıplarla verilir ve karşılaştırılan iki şey dilbilgisi olarak eşit olmalıdır.",
+   "tasks": [
+    {
+     "tr": "İki yaklaşım maliyet açısından farklıdır.",
+     "answers": ["The two approaches differ in terms of cost.", "The two approaches are different in terms of cost."],
+     "hint": "Ölçüt kalıbı: in terms of.",
+     "traps": [
+      { "has": "in terms of the cost differ", "at": "start", "note": "Sıra: differ in terms of cost." },
+      { "has": "differ in cost terms", "note": "Kalıp: in terms of cost." }
+     ]
+    },
+    {
+     "tr": "Hız bakımından birinci yöntem öndedir.",
+     "answers": ["With regard to speed, the first method is ahead.", "In terms of speed, the first method is better."],
+     "hint": "Konu belirtme kalıbı: with regard to.",
+     "traps": [
+      { "has": "with regards to speed", "at": "start", "note": "Kalıp: with regard to." },
+      { "has": "according to speed", "at": "start", "note": "Ölçüt için in terms of kullanılır." }
+     ]
+    },
+    {
+     "tr": "Güvenlik konusunda ikisi de aynıdır.",
+     "answers": ["As for safety, the two are the same.", "In terms of safety, both are the same."],
+     "hint": "the same ile as kullanılır, than değil.",
+     "traps": [
+      { "has": "the same than", "note": "Kalıp: the same as." },
+      { "has": "safeties", "note": "safety burada sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Birinci yöntemi kullanmak ikincisinden daha ucuzdur.",
+     "answers": ["Using the first method is cheaper than using the second.", "The first method is cheaper to use than the second."],
+     "hint": "Karşılaştırılan iki öge aynı biçimde olmalı.",
+     "traps": [
+      { "has": "using the first method is cheaper than the second method to use", "at": "start", "note": "İki taraf aynı biçimde olmalı." },
+      { "has": "more cheap", "note": "Kısa sıfat: cheaper." }
+     ]
+    },
+    {
+     "tr": "Her ikisinin de kendine göre avantajları var.",
+     "answers": ["Both have their own advantages.", "Each has its own advantages."],
+     "hint": "both çoğul, each tekil alır.",
+     "traps": [
+      { "has": "both has their own", "at": "start", "note": "both ile çoğul: have." },
+      { "has": "each have its own", "at": "start", "note": "each ile tekil: has." }
+     ]
+    },
+    {
+     "tr": "Aradaki fark göründüğünden küçüktür.",
+     "answers": ["The difference is smaller than it appears.", "The difference is smaller than it seems."],
+     "hint": "Kalıp: difference between.",
+     "traps": [
+      { "has": "more small", "note": "Kısa sıfat: smaller." },
+      { "has": "than it appear", "note": "Tekil özne: appears." }
+     ]
+    },
+    {
+     "tr": "İkisi arasındaki en önemli fark budur.",
+     "answers": ["This is the most important difference between the two."],
+     "hint": "İki şey arasında: between.",
+     "traps": [
+      { "has": "difference among the two", "note": "İki şey için between." },
+      { "has": "most important difference", "at": "start", "note": "En üstünlükte the gerekir." }
+     ]
+    },
+    {
+     "tr": "Sonuçta seçim amaca bağlıdır.",
+     "answers": ["In the end, the choice depends on the purpose.", "Ultimately, the choice depends on the purpose."],
+     "hint": "Bağlı olmak: depend on.",
+     "traps": [
+      { "has": "depends to the purpose", "note": "Kalıp: depend on." },
+      { "has": "the choice depend on", "note": "Tekil özne: depends." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "İki seçeneği üç ölçüte göre karşılaştır ve bir sonuca bağla.",
+    "checklist": [
+     "Her karşılaştırmada ölçütü belirttin mi?",
+     "Karşılaştırılan iki ögeyi aynı dilbilgisi biçiminde tuttun mu?",
+     "both ile çoğul, each ile tekil fiil kullandın mı?"
+    ],
+    "model": "The two approaches differ in terms of cost. With regard to speed, the first method is ahead. As for safety, the two are the same. Both have their own advantages, and in the end the choice depends on the purpose."
+   }
+  },
+  {
+   "id": "b2-w-21",
+   "level": "B2",
+   "order": 21,
+   "title": "Veriyi yorumlamak",
+   "canDo": "Sayıların ne anlama geldiğini yazabilirim.",
+   "focus": "Veri anlatmak ile yorumlamak farklıdır: ilki ne olduğunu, ikincisi neden önemli olduğunu söyler. İyi bir metin ikisini ayırır ve yorumu veriye bağlar.",
+   "tasks": [
+    {
+     "tr": "Rakam üç yılda iki katına çıktı.",
+     "answers": ["The figure doubled in three years.", "The number doubled over three years."],
+     "hint": "İki katına çıkmak: double.",
+     "traps": [
+      { "has": "became two times", "note": "Doğal biçim: doubled." },
+      { "has": "in three year", "note": "Sayıdan sonra çoğul: three years." }
+     ]
+    },
+    {
+     "tr": "Bu artış istikrarlı değildi.",
+     "answers": ["This increase was not steady.", "The rise was not steady."],
+     "hint": "steady sıfatı düzenli artışı anlatır.",
+     "traps": [
+      { "has": "this increase was not stable steady", "at": "start", "note": "Tek sıfat yeter." },
+      { "has": "increase were", "note": "Tekil özne: was." }
+     ]
+    },
+    {
+     "tr": "En keskin düşüş 2018'de yaşandı.",
+     "answers": ["The sharpest fall occurred in 2018.", "The sharpest drop was in 2018."],
+     "hint": "En üstünlükte the gerekir.",
+     "traps": [
+      { "has": "sharpest fall occurred", "at": "start", "note": "the gerekir: The sharpest fall." },
+      { "has": "the most sharp", "at": "start", "note": "Kısa sıfat: the sharpest." }
+     ]
+    },
+    {
+     "tr": "Bu, politika değişikliğiyle açıklanabilir.",
+     "answers": ["This can be explained by the change in policy.", "This may be explained by the policy change."],
+     "hint": "Edilgende yapan by ile gelir.",
+     "traps": [
+      { "has": "can be explain", "note": "Üçüncü biçim: can be explained." },
+      { "has": "explained with the change", "note": "Edilgende by kullanılır." }
+     ]
+    },
+    {
+     "tr": "Ancak bu tek açıklama olmayabilir.",
+     "answers": ["However, this may not be the only explanation."],
+     "hint": "Kipten sonra be yalın kalır.",
+     "traps": [
+      { "has": "may not to be", "note": "may'den sonra to gelmez." },
+      { "has": "the only explanation may not to be this", "at": "start", "note": "Doğal sıra: this may not be the only explanation." }
+     ]
+    },
+    {
+     "tr": "Veriler bir eğilim gösteriyor ama sebep göstermiyor.",
+     "answers": ["The data show a trend but not a cause.", "The data shows a trend but not a cause."],
+     "hint": "data akademik kullanımda çoğul kabul edilir.",
+     "traps": [
+      { "has": "datas", "note": "data zaten çoğuldur." },
+      { "has": "show a trend but not show", "note": "Tekrar gereksiz: but not a cause." }
+     ]
+    },
+    {
+     "tr": "Bu sayılara temkinli yaklaşmak gerekir.",
+     "answers": ["These figures should be treated with caution.", "These numbers should be treated carefully."],
+     "hint": "Kalıp: with caution.",
+     "traps": [
+      { "has": "should be treat", "note": "Üçüncü biçim: should be treated." },
+      { "has": "with cautions", "note": "caution burada sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Yine de genel yön açıktır.",
+     "answers": ["Even so, the general direction is clear.", "Nevertheless, the overall direction is clear."],
+     "hint": "Zıtlık bağlacı cümle başında, virgülle.",
+     "traps": [
+      { "has": "even so of", "at": "start", "note": "even so tek başına kullanılır." },
+      { "has": "the general direction are", "note": "Tekil özne: is." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir tabloyu ya da kendi ilerlemeni anlat: üç cümle veri, üç cümle yorum, bir uyarı.",
+    "checklist": [
+     "Veriyi ve yorumu ayrı cümlelerde tuttun mu?",
+     "Edilgen yapılarda by ve üçüncü biçimi kullandın mı?",
+     "data ve caution gibi isimlerde doğru uyumu kullandın mı?"
+    ],
+    "model": "The figure doubled in three years, but this increase was not steady. The sharpest fall occurred in 2018. This can be explained by the change in policy, however this may not be the only explanation. These figures should be treated with caution."
+   }
+  },
+  {
+   "id": "b2-w-22",
+   "level": "B2",
+   "order": 22,
+   "title": "Sunum metni",
+   "canDo": "Konuşulacak bir metni yazılı olarak hazırlayabilirim.",
+   "focus": "Konuşma için yazılan metin, okunmak için yazılandan farklıdır: cümleler kısa, bağlantılar açık, sorular doğrudandır. Yazılı akademik üslup sesli okunduğunda ağır kalır.",
+   "tasks": [
+    {
+     "tr": "Bugün sizinle üç konuyu paylaşmak istiyorum.",
+     "answers": ["Today I would like to share three points with you.", "Today I want to share three points with you."],
+     "hint": "share'den sonra with kullanılır.",
+     "traps": [
+      { "has": "share three points to you", "note": "Kalıp: share with you." },
+      { "has": "three point", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Birincisiyle başlayayım.",
+     "answers": ["Let me start with the first one.", "Let us begin with the first point."],
+     "hint": "let me'den sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "let me to start", "at": "start", "note": "let'ten sonra to gelmez." },
+      { "has": "start with first one", "at": "start", "note": "the gerekir: the first one." }
+     ]
+    },
+    {
+     "tr": "Buna daha sonra döneceğim.",
+     "answers": ["I will come back to this later.", "I will return to this later."],
+     "hint": "Geri dönmek: come back to.",
+     "traps": [
+      { "has": "come back this later", "note": "come back'ten sonra to gelir." },
+      { "has": "return back to this", "note": "return zaten geri demektir." }
+     ]
+    },
+    {
+     "tr": "Şimdi ikinci noktaya geçiyorum.",
+     "answers": ["Now I will move on to the second point.", "Let me now turn to the second point."],
+     "hint": "Geçmek: move on to.",
+     "traps": [
+      { "has": "move on the second point", "note": "Kalıp: move on to." },
+      { "has": "pass to the second point", "at": "start", "note": "Doğal biçim: move on to." }
+     ]
+    },
+    {
+     "tr": "Bu tabloya bir bakalım.",
+     "answers": ["Let us look at this table.", "Let's take a look at this table."],
+     "hint": "look'tan sonra at gelir.",
+     "traps": [
+      { "has": "look this table", "note": "look'tan sonra at gelir." },
+      { "has": "let's to look", "at": "start", "note": "Let's'ten sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Gördüğünüz gibi eğilim yukarı yönlü.",
+     "answers": ["As you can see, the trend is upward.", "As you can see, the trend is rising."],
+     "hint": "Kalıp: as you can see.",
+     "traps": [
+      { "has": "how you can see", "at": "start", "note": "Kalıp: as you can see." },
+      { "has": "as you can seeing", "at": "start", "note": "can'dan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Özetlemem gerekirse üç noktaya değindim.",
+     "answers": ["To sum up, I have covered three points.", "In summary, I have covered three points."],
+     "hint": "Özet kalıbı: to sum up.",
+     "traps": [
+      { "has": "for summarize", "at": "start", "note": "Kalıp: to sum up." },
+      { "has": "i have cover", "note": "Üçüncü biçim: have covered." }
+     ]
+    },
+    {
+     "tr": "Sorularınız varsa memnuniyetle yanıtlarım.",
+     "answers": ["I will be happy to answer any questions.", "I would be glad to answer any questions."],
+     "hint": "answer'dan sonra doğrudan nesne gelir.",
+     "traps": [
+      { "has": "answer to any questions", "note": "answer'dan sonra to gelmez." },
+      { "has": "happy to answering", "note": "happy to'dan sonra yalın fiil gelir." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Beş dakikalık bir sunumun açılış ve kapanışını yaz: selam, plan, geçişler, özet, soru daveti.",
+    "checklist": [
+     "Cümleleri konuşmaya uygun biçimde kısa tuttun mu?",
+     "move on to, look at, share with kalıplarını doğru yazdın mı?",
+     "let me ve let's'ten sonra yalın fiil kullandın mı?"
+    ],
+    "model": "Today I would like to share three points with you. Let me start with the first one. Now I will move on to the second point. As you can see, the trend is upward. To sum up, I have covered three points. I will be happy to answer any questions."
+   }
+  },
+  {
+   "id": "b2-w-23",
+   "level": "B2",
+   "order": 23,
+   "title": "Katılmamak",
+   "canDo": "Bir görüşe kibarca ama net biçimde karşı çıkabilirim.",
+   "focus": "İngilizcede doğrudan karşı çıkış sert algılanır; yumuşatıcı bir giriş neredeyse zorunludur. Ama yumuşatma, karşı çıkışı belirsizleştirmemeli: önce kabul, sonra net itiraz.",
+   "tasks": [
+    {
+     "tr": "Ne demek istediğinizi anlıyorum.",
+     "answers": ["I see what you mean.", "I understand what you mean."],
+     "hint": "Dolaylı öbekte sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "i see what do you mean", "at": "start", "note": "Dolaylı: what you mean." },
+      { "has": "i am seeing what you mean", "at": "start", "note": "Bu fiilde: I see." }
+     ]
+    },
+    {
+     "tr": "Bir noktaya kadar katılıyorum.",
+     "answers": ["I agree up to a point.", "I agree to some extent."],
+     "hint": "Kalıp: up to a point.",
+     "traps": [
+      { "has": "i am agree up to a point", "at": "start", "note": "agree fiildir: I agree." },
+      { "has": "in some extent", "note": "Kalıp: to some extent." }
+     ]
+    },
+    {
+     "tr": "Ancak bu konuda farklı düşünüyorum.",
+     "answers": ["However, I think differently about this.", "However, I take a different view on this."],
+     "hint": "Zarf biçimi: differently.",
+     "traps": [
+      { "has": "i think different about this", "note": "Zarf biçimi: differently." },
+      { "has": "different view about this", "note": "Kalıp: a different view on." }
+     ]
+    },
+    {
+     "tr": "Kanıtın bunu desteklediğinden emin değilim.",
+     "answers": ["I am not sure the evidence supports this.", "I am not convinced that the evidence supports this."],
+     "hint": "evidence tekil fiil alır.",
+     "traps": [
+      { "has": "the evidence support this", "note": "Tekil özne: supports." },
+      { "has": "evidences", "note": "evidence sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Başka bir açıklama daha olabilir.",
+     "answers": ["There may be another explanation.", "There could be another explanation."],
+     "hint": "Kipten sonra be yalın kalır.",
+     "traps": [
+      { "has": "there may to be", "at": "start", "note": "may'den sonra to gelmez." },
+      { "has": "an other explanation", "note": "Tek kelime: another." }
+     ]
+    },
+    {
+     "tr": "Bunu şöyle açıklayabilirim.",
+     "answers": ["Let me explain what I mean.", "I can explain this as follows."],
+     "hint": "explain'den sonra doğrudan nesne gelir.",
+     "traps": [
+      { "has": "explain me this", "at": "start", "note": "Kalıp: explain this to me." },
+      { "has": "as following", "note": "Kalıp: as follows." }
+     ]
+    },
+    {
+     "tr": "Sizi ikna edemeyebilirim ama görüşüm bu.",
+     "answers": ["I may not convince you, but this is my view.", "I might not convince you, but that is my view."],
+     "hint": "Kipten sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "may not to convince", "note": "may'den sonra to gelmez." },
+      { "has": "convince to you", "note": "convince'ten sonra doğrudan nesne gelir." }
+     ]
+    },
+    {
+     "tr": "Bu konuda anlaşamayabiliriz.",
+     "answers": ["We may have to agree to disagree.", "We may not agree on this."],
+     "hint": "Konu için agree on kullanılır.",
+     "traps": [
+      { "has": "agree in this", "note": "Konu için agree on." },
+      { "has": "we may not to agree", "at": "start", "note": "may'den sonra to gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Katılmadığın bir görüşe kibar ama net bir itiraz yaz: kabul, itiraz, gerekçe, alternatif.",
+    "checklist": [
+     "Önce kabul, sonra net itiraz sırasını kurdun mu?",
+     "agree fiilini be ile değil do ile kullandın mı?",
+     "Kiplerden sonra yalın fiil kullandın mı?"
+    ],
+    "model": "I see what you mean and I agree up to a point. However, I think differently about this. I am not sure the evidence supports this claim, and there may be another explanation. I may not convince you, but this is my view."
+   }
+  },
+  {
+   "id": "b2-w-24",
+   "level": "B2",
+   "order": 24,
+   "title": "Koşulun diğer yolları",
+   "canDo": "if kullanmadan koşul kurabilirim.",
+   "focus": "Koşul yalnızca if ile kurulmaz: unless, provided that, as long as, otherwise. Her biri farklı bir koşul ilişkisi anlatır ve unless zaten olumsuzdur, ayrıca not almaz.",
+   "tasks": [
+    {
+     "tr": "Acele etmezsen geç kalırsın.",
+     "answers": ["Unless you hurry, you will be late.", "If you do not hurry, you will be late."],
+     "hint": "unless zaten olumsuzdur.",
+     "traps": [
+      { "has": "unless you do not hurry", "at": "start", "note": "unless zaten olumsuzdur." },
+      { "has": "unless you will hurry", "at": "start", "note": "unless'ten sonra geniş zaman gelir." }
+     ]
+    },
+    {
+     "tr": "Söz verirsen sana anlatırım.",
+     "answers": ["I will tell you provided that you promise.", "I will tell you as long as you promise."],
+     "hint": "provided that'ten sonra geniş zaman gelir.",
+     "traps": [
+      { "has": "provided that you will promise", "note": "Sonrasında geniş zaman kullanılır." },
+      { "has": "tell to you", "note": "tell'den sonra doğrudan you gelir." }
+     ]
+    },
+    {
+     "tr": "Erken çık, yoksa treni kaçırırsın.",
+     "answers": ["Leave early, otherwise you will miss the train.", "Leave early, or you will miss the train."],
+     "hint": "otherwise ayrı cümle kurar.",
+     "traps": [
+      { "has": "otherwise of", "note": "otherwise tek başına kullanılır." },
+      { "has": "you will missed", "note": "will'den sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Sessiz olduğu sürece kalabilir.",
+     "answers": ["She can stay as long as she is quiet.", "He can stay as long as he is quiet."],
+     "hint": "as long as'ten sonra geniş zaman gelir.",
+     "traps": [
+      { "has": "as long as she will be quiet", "note": "Sonrasında geniş zaman kullanılır." },
+      { "has": "can to stay", "note": "can'dan sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Yardımın olmasa bunu yapamazdım.",
+     "answers": ["Without your help, I could not do this.", "But for your help, I could not do this."],
+     "hint": "without'tan sonra isim gelir.",
+     "traps": [
+      { "has": "without your help i could not to do", "at": "start", "note": "could'dan sonra to gelmez." },
+      { "has": "without you help", "at": "start", "note": "İyelik sıfatı: your help." }
+     ]
+    },
+    {
+     "tr": "Gerekmedikçe aramayacağım.",
+     "answers": ["I will not call unless it is necessary.", "I will not call if it is not necessary."],
+     "hint": "unless zaten olumsuzdur.",
+     "traps": [
+      { "has": "unless it is not necessary", "note": "unless zaten olumsuzdur." },
+      { "has": "unless it will be necessary", "note": "Sonrasında geniş zaman kullanılır." }
+     ]
+    },
+    {
+     "tr": "Bu koşulla kabul ediyorum.",
+     "answers": ["I accept on this condition.", "I agree on this condition."],
+     "hint": "Kalıp: on condition.",
+     "traps": [
+      { "has": "with this condition", "at": "start", "note": "Kalıp: on this condition." },
+      { "has": "in this condition", "at": "start", "note": "Kalıp: on this condition." }
+     ]
+    },
+    {
+     "tr": "Aksi takdirde başka bir yol bulmamız gerekir.",
+     "answers": ["Otherwise we will have to find another way.", "If not, we will have to find another way."],
+     "hint": "have to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "will have to finding", "note": "have to'dan sonra yalın fiil." },
+      { "has": "will must find", "note": "İki kip yan yana gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir anlaşmanın koşullarını yaz: iki olumlu koşul, bir yasak, bir uyarı. if'i en fazla bir kez kullan.",
+    "checklist": [
+     "unless'ten sonra ayrıca olumsuzluk koymadın, değil mi?",
+     "Koşul bağlaçlarından sonra geniş zaman kullandın mı?",
+     "otherwise'ı ayrı cümlede kullandın mı?"
+    ],
+    "model": "Unless you hurry, you will be late. I will tell you provided that you promise. She can stay as long as she is quiet. Leave early, otherwise you will miss the train."
+   }
+  },
+  {
+   "id": "b2-w-25",
+   "level": "B2",
+   "order": 25,
+   "title": "Sonuç paragrafı",
+   "canDo": "Bir yazıyı güçlü bir sonuçla bitirebilirim.",
+   "focus": "Sonuç paragrafı yeni bilgi getirmez: tezi hatırlatır, gerekçeleri toparlar ve bir sonuca bağlar. Yeni bir iddiayla biten yazı, okuyucuyu açıkta bırakır.",
+   "tasks": [
+    {
+     "tr": "Bu yazı iki görüşü de incelemiştir.",
+     "answers": ["This essay has examined both views.", "This paper has examined both views."],
+     "hint": "Tamamlanmış iş: has + üçüncü biçim.",
+     "traps": [
+      { "has": "this essay has examine", "at": "start", "note": "Üçüncü biçim: has examined." },
+      { "has": "both view", "note": "both ile çoğul: both views." }
+     ]
+    },
+    {
+     "tr": "Sunulan kanıt ilk görüşü desteklemektedir.",
+     "answers": ["The evidence presented supports the first view."],
+     "hint": "evidence tekil fiil alır.",
+     "traps": [
+      { "has": "the evidence presented support", "at": "start", "note": "Tekil özne: supports." },
+      { "has": "evidences", "note": "evidence sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Karşı görüşün de haklı yanları vardır.",
+     "answers": ["The opposing view also has strong points."],
+     "hint": "Tekil özne: has.",
+     "traps": [
+      { "has": "the opposing view also have", "at": "start", "note": "Tekil özne: has." },
+      { "has": "strong point", "note": "Çoğul: strong points." }
+     ]
+    },
+    {
+     "tr": "Ancak bunlar temel sonucu değiştirmemektedir.",
+     "answers": ["However, these do not change the main conclusion."],
+     "hint": "Çoğul özne: do not.",
+     "traps": [
+      { "has": "these does not change", "note": "Çoğul özne: do not." },
+      { "has": "do not changes", "note": "do not'tan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Bu nedenle ilk yaklaşım tercih edilmelidir.",
+     "answers": ["Therefore, the first approach should be preferred."],
+     "hint": "Edilgen kip: should be + üçüncü biçim.",
+     "traps": [
+      { "has": "should be prefer", "note": "Üçüncü biçim: should be preferred." },
+      { "has": "should prefer the first approach", "at": "start", "note": "Edilgen isteniyor: should be preferred." }
+     ]
+    },
+    {
+     "tr": "Yine de bu konu kapanmış değildir.",
+     "answers": ["Even so, the issue is not closed.", "Nevertheless, the question remains open."],
+     "hint": "Zıtlık bağlacı cümle başında.",
+     "traps": [
+      { "has": "the issue is not close", "note": "Sıfat biçimi: closed." },
+      { "has": "remains opened", "note": "Doğal biçim: remains open." }
+     ]
+    },
+    {
+     "tr": "İleride yapılacak çalışmalar bunu netleştirebilir.",
+     "answers": ["Future studies may clarify this.", "Further work may make this clearer."],
+     "hint": "may'den sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "may clarifies", "note": "may'den sonra fiil yalın." },
+      { "has": "more clearer", "note": "İkisi birden kullanılmaz: clearer." }
+     ]
+    },
+    {
+     "tr": "Şimdilik kanıt bu yöndedir.",
+     "answers": ["For now, the evidence points in this direction.", "For the time being, the evidence points this way."],
+     "hint": "İşaret etmek: point in a direction.",
+     "traps": [
+      { "has": "points to this direction", "note": "Kalıp: points in this direction." },
+      { "has": "the evidence point", "note": "Tekil özne: points." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Daha önce yazdığın bir denemeye sonuç paragrafı yaz: tez hatırlatma, gerekçe toparlama, sınır, kapanış.",
+    "checklist": [
+     "Sonuçta yeni iddia getirmedin, değil mi?",
+     "evidence ve research gibi isimlerde tekil fiil kullandın mı?",
+     "Edilgen kiplerde üçüncü biçimi kullandın mı?"
+    ],
+    "model": "This essay has examined both views. The evidence presented supports the first view. The opposing view also has strong points, however these do not change the main conclusion. Therefore, the first approach should be preferred. Even so, the issue is not closed and future studies may clarify this."
+   }
+  }
+ ]
+}

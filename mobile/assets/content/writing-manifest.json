@@ -13,5 +13,10 @@
   "sets": 25,
   "tasks": 200,
   "file": "writing-b1.json"
+ },
+ "B2": {
+  "sets": 25,
+  "tasks": 200,
+  "file": "writing-b2.json"
  }
 }
