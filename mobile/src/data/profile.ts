@@ -26,13 +26,6 @@ export const DAILY_RINGS = [
   { name: 'Konuşma', pct: 15, color: colors.warning },
 ];
 
-export const CONTINUE_CARD = {
-  kicker: 'KALDIĞIN YER',
-  title: 'B1 · Ünite 12',
-  sub: 'Present Perfect · 4 bölüm kaldı',
-  badge: '12',
-};
-
 export const COACH_CARD = {
   title: 'AI Koçun',
   status: 'HAZIR',

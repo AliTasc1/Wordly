@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -10,11 +10,12 @@ import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import {
   COACH_CARD,
-  CONTINUE_CARD,
   DAILY_GAME,
   DAILY_RINGS,
   USER,
 } from '../data/profile';
+import { grammarOf } from '../content';
+import { useApp } from '../state/AppContext';
 import { BOARD_PREVIEW, moveColor } from '../data/leaderboard';
 import { DUEL_INVITE } from '../data/social';
 import { useGo } from '../navigation/useGo';
@@ -22,6 +23,13 @@ import { useGo } from '../navigation/useGo';
 /** 06 · Ana Sayfa — "what should I do now?" answered in two seconds. */
 export function HomeScreen() {
   const { go } = useGo();
+  const { cefr, position } = useApp();
+
+  // "Where you left off" names the lesson the learner will actually land on.
+  const lessons = useMemo(() => grammarOf(cefr), [cefr]);
+  const at = Math.min(position('grammar', cefr), lessons.length - 1);
+  const lesson = lessons[at];
+  const remaining = lessons.length - at;
 
   return (
     <Screen tabbed padTop={62} gap={14}>
@@ -59,7 +67,7 @@ export function HomeScreen() {
       <View style={styles.statRow}>
         <StatChip
           kicker="SEVİYE"
-          value={USER.level}
+          value={cefr}
           tint={colors.primary}
           kickerColor={colors.blueSoft}
           fill="rgba(46,107,255,.2)"
@@ -120,18 +128,18 @@ export function HomeScreen() {
           style={styles.continue}>
           <Gradient colors={gradients.brand} style={styles.continueBadge}>
             <Txt f="m" s={15} w={800}>
-              {CONTINUE_CARD.badge}
+              {String(lesson.order).padStart(2, '0')}
             </Txt>
           </Gradient>
           <View style={styles.flex}>
             <Txt f="mono" s={10} w={700} c={colors.blueSoft} ls={0.1}>
-              {CONTINUE_CARD.kicker}
+              KALDIĞIN YER
             </Txt>
             <Txt f="m" s={17} w={800} style={styles.gap2}>
-              {CONTINUE_CARD.title}
+              {cefr} · Ders {lesson.order}
             </Txt>
             <Txt s={12} c={colors.textMuted} style={styles.gap3}>
-              {CONTINUE_CARD.sub}
+              {lesson.topic} · {remaining} ders kaldı
             </Txt>
           </View>
           <Txt f="m" s={22} w={800}>
