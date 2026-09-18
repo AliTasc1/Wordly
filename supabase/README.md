@@ -47,6 +47,32 @@ kullanılır.
 tek `for all` politikasına toplamak kısa görünür ama `with check`'i unutmaya
 açıktır; o unutulduğunda kullanıcı başkasının adına satır yazabilir.
 
+## Hesap akışı (e-posta + şifre)
+
+Uygulama tarafı `mobile/src/server/` ve `mobile/src/state/AuthContext.tsx`
+içinde. İki kural şeklini belirliyor:
+
+- **Hesap zorunlu değil.** Uygulama girişsiz tam çalışıyor; giriş yalnızca
+  ilerlemeyi ikinci bir cihaza taşımak için. Öğrenmeye başlamadan kayıt
+  dayatmak, henüz hiçbir şey vermeden bedel istemek olurdu.
+- **Çıkış ilerlemeyi silmez.** Cihazdaki kayıt yerinde kalır.
+
+E-postadaki bağlantı `wordly://` şemasıyla (Expo Go'da `exp://…`) uygulamaya
+döner. Tarayıcı olmadığı için `detectSessionInUrl` kapalı; jetonlar
+`src/server/deepLink.ts` içinde elle çözülüyor.
+
+### Panelde yapılması gerekenler
+
+Bunlar SQL ile ayarlanamıyor, Supabase panelinden elle girilmeli:
+
+1. **Authentication → Providers → Email** açık olmalı (varsayılan açık).
+2. **Authentication → URL Configuration → Redirect URLs** listesine
+   eklenmeli, yoksa e-postadaki bağlantı uygulamaya dönmez:
+   - `wordly://**` — derlenmiş uygulama
+   - `exp://**` — Expo Go ile geliştirme
+3. **Confirm email** açık bırakılırsa kayıttan sonra oturum açılmaz;
+   uygulama bunu "E-postanı doğrula" ekranıyla anlatıyor.
+
 ## Migration'lar
 
 `migrations/` altındaki dosyalar Supabase'e uygulanmış hâlleriyle duruyor.

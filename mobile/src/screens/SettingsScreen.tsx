@@ -9,13 +9,15 @@ import { alpha, colors, gradients, radii } from '../theme/tokens';
 import { SETTING_GROUPS, SETTINGS_FOOTER } from '../data/subscription';
 import { attribution } from '../content';
 import { useApp } from '../state/AppContext';
+import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
 
 /** 31 · Ayarlar — account, notifications, audio, accessibility, language. */
 export function SettingsScreen() {
-  const { go, reset } = useGo();
+  const { go } = useGo();
   const back = useBack('profile');
   const { fire, cefr, resetProgress } = useApp();
+  const { user, loading, signOut } = useAuth();
 
   // Silme geri alınamıyor, o yüzden onay isteniyor. Yıkıcı işlem tek
   // dokunuşla olmamalı.
@@ -36,6 +38,28 @@ export function SettingsScreen() {
       ],
     );
 
+  // Çıkış ilerlemeyi silmiyor — telefondaki kayıt olduğu yerde duruyor. Bunu
+  // söylemek gerekiyor, aksi hâlde kullanıcı her şeyini kaybedeceğini sanıp
+  // çıkış yapmaktan çekinir.
+  const askSignOut = () =>
+    Alert.alert(
+      'Çıkış yap',
+      'İlerlemen bu telefonda kalmaya devam eder. Tekrar giriş yaptığında hesabına bağlanır.',
+      [
+        { text: 'Vazgeç', style: 'cancel' },
+        {
+          text: 'Çıkış yap',
+          style: 'destructive',
+          onPress: () => {
+            void signOut().then((problem) => {
+              if (problem) fire('Çıkış yapılamadı', problem.text);
+              else fire('Çıkış yapıldı', 'İlerlemen telefonda duruyor');
+            });
+          },
+        },
+      ],
+    );
+
   return (
     <Screen tabbed padTop={62} gap={13}>
       <View style={styles.header}>
@@ -44,6 +68,45 @@ export function SettingsScreen() {
           Ayarlar
         </Txt>
       </View>
+
+      {/* Hesap kutusu. Girişli ve girişsiz iki hâli var; ikisi de gerçek
+          durumu gösteriyor, çünkü hesap isteğe bağlı ve girişsiz kullanım
+          eksik bir hâl değil. */}
+      <Press
+        onPress={() => (user ? undefined : go('signin'))}
+        disabled={Boolean(user) || loading}
+        scale={user ? 1 : 0.99}>
+        <View style={styles.account}>
+          <IconTile
+            glyph={user ? '✓' : '→'}
+            tint={user ? colors.success : colors.primary}
+            size={42}
+            radius={radii.card}
+            fontSize={17}
+          />
+          <View style={styles.flex}>
+            <Txt f="m" s={13.5} w={700}>
+              {loading
+                ? 'Hesap kontrol ediliyor…'
+                : user
+                  ? 'Hesabın bağlı'
+                  : 'Hesabını bağla'}
+            </Txt>
+            <Txt s={11.5} c={colors.textFaint} style={styles.itemSub}>
+              {loading
+                ? ' '
+                : user
+                  ? (user.email ?? 'E-posta yok')
+                  : 'İlerlemeni diğer cihazlarına taşı'}
+            </Txt>
+          </View>
+          {!user && !loading ? (
+            <Txt f="m" s={20} w={800}>
+              ›
+            </Txt>
+          ) : null}
+        </View>
+      </Press>
 
       <Press onPress={() => go('sub')} scale={0.99}>
         <Gradient
@@ -68,7 +131,13 @@ export function SettingsScreen() {
 
       {SETTING_GROUPS.map((group) => (
         <View key={group.name} style={styles.group}>
-          <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14} style={styles.groupName}>
+          <Txt
+            f="mono"
+            s={10}
+            w={700}
+            c={colors.textDisabled}
+            ls={0.14}
+            style={styles.groupName}>
             {group.name}
           </Txt>
           <View style={styles.groupBody}>
@@ -112,7 +181,13 @@ export function SettingsScreen() {
         şart koşuyor. Metinler manifest'ten geliyor, elle kopyalanmıyor.
       */}
       <View style={styles.group}>
-        <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14} style={styles.groupName}>
+        <Txt
+          f="mono"
+          s={10}
+          w={700}
+          c={colors.textDisabled}
+          ls={0.14}
+          style={styles.groupName}>
           KAYNAKLAR
         </Txt>
         <View style={styles.groupBody}>
@@ -134,11 +209,15 @@ export function SettingsScreen() {
         </Txt>
       </Press>
 
-      <Press onPress={() => reset('splash')} style={styles.signOut}>
-        <Txt f="m" s={14} w={700} c={colors.errorSoft}>
-          {SETTINGS_FOOTER.signOut}
-        </Txt>
-      </Press>
+      {/* Girişsizken "Çıkış yap" göstermek anlamsızdı; eski düğme yalnızca
+          açılış ekranına dönüyordu, yani hiçbir oturumu kapatmıyordu. */}
+      {user ? (
+        <Press onPress={askSignOut} style={styles.signOut}>
+          <Txt f="m" s={14} w={700} c={colors.errorSoft}>
+            {SETTINGS_FOOTER.signOut}
+          </Txt>
+        </Press>
+      ) : null}
 
       <Txt f="mono" s={10.5} w={600} c={colors.textDisabled} style={styles.version}>
         {SETTINGS_FOOTER.version}
@@ -157,6 +236,16 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'rgba(124,92,255,.32)',
     borderRadius: radii.tile,
+    padding: 15,
+  },
+  account: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    borderWidth: 1,
+    borderColor: alpha.w08,
+    borderRadius: radii.tile,
+    backgroundColor: colors.surface,
     padding: 15,
   },
   premiumIcon: {

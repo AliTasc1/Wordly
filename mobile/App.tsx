@@ -22,6 +22,7 @@ import {
 import { RootNavigator } from './src/navigation/RootNavigator';
 import { navigationRef } from './src/navigation/routes';
 import { AppProvider } from './src/state/AppContext';
+import { AuthProvider } from './src/state/AuthContext';
 import { ToastHost } from './src/components/Toast';
 import { colors } from './src/theme/tokens';
 
@@ -49,12 +50,14 @@ export default function App() {
       <SafeAreaProvider>
         <StatusBar style="light" />
         {fontsLoaded ? (
-          <AppProvider>
-            <NavigationContainer ref={navigationRef} theme={theme}>
-              <RootNavigator />
-            </NavigationContainer>
-            <ToastHost />
-          </AppProvider>
+          <AuthProvider>
+            <AppProvider>
+              <NavigationContainer ref={navigationRef} theme={theme}>
+                <RootNavigator />
+              </NavigationContainer>
+              <ToastHost />
+            </AppProvider>
+          </AuthProvider>
         ) : (
           <View style={styles.root} />
         )}

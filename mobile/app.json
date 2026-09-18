@@ -3,6 +3,7 @@
     "name": "WORDLY",
     "slug": "wordly",
     "version": "2.4.0",
+    "scheme": "wordly",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",

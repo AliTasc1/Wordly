@@ -39,7 +39,13 @@ export type ScreenId =
   | 'settings'
   | 'tokens'
   | 'empty'
-  | 'errors';
+  | 'errors'
+  // Hesap akışı. Tasarımın 34 ekranında yoktu; hesap sonradan eklendi ve
+  // isteğe bağlı olduğu için ürünün ana akışına değil, kenarına oturuyor.
+  | 'signin'
+  | 'signup'
+  | 'forgot'
+  | 'newpass';
 
 export type TabName = 'HomeTab' | 'LearnTab' | 'PlayTab' | 'SocialTab' | 'ProfileTab';
 
@@ -88,6 +94,11 @@ export const TARGETS: Record<ScreenId, Target> = {
   tokens: { root: 'DesignTokens' },
   empty: { root: 'EmptyStates' },
   errors: { root: 'ErrorStates' },
+
+  signin: { root: 'SignIn' },
+  signup: { root: 'SignUp' },
+  forgot: { root: 'ForgotPassword' },
+  newpass: { root: 'NewPassword' },
 };
 
 export const navigationRef = createNavigationContainerRef();

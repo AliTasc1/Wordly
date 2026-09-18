@@ -39,6 +39,11 @@ import { PaywallScreen } from '../screens/PaywallScreen';
 import { DesignTokensScreen } from '../screens/DesignTokensScreen';
 import { EmptyStatesScreen } from '../screens/EmptyStatesScreen';
 import { ErrorStatesScreen } from '../screens/ErrorStatesScreen';
+import { SignInScreen } from '../screens/SignInScreen';
+import { SignUpScreen } from '../screens/SignUpScreen';
+import { ForgotPasswordScreen } from '../screens/ForgotPasswordScreen';
+import { NewPasswordScreen } from '../screens/NewPasswordScreen';
+import { useAuth } from '../state/AuthContext';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -107,6 +112,20 @@ function MainTabs() {
  * hides the bottom bar on exactly these.
  */
 export function RootNavigator() {
+  const { recovering } = useAuth();
+
+  // Sıfırlama bağlantısıyla açılan oturum, sahibi henüz şifresini bilmeyen
+  // bir oturumdur. Geri kalan uygulamayı bu durumda göstermek, kullanıcının
+  // şifreyi belirlemeden dolaşmasına ve sonra neden çıkış yapamadığını
+  // anlamamasına yol açardı — tek çıkış yolu bu ekran.
+  if (recovering) {
+    return (
+      <Stack.Navigator screenOptions={stackOptions}>
+        <Stack.Screen name="NewPassword" component={NewPasswordScreen} />
+      </Stack.Navigator>
+    );
+  }
+
   return (
     <Stack.Navigator initialRouteName="Splash" screenOptions={stackOptions}>
       <Stack.Screen name="Splash" component={SplashScreen} />
@@ -133,6 +152,10 @@ export function RootNavigator() {
         component={PaywallScreen}
         options={{ presentation: 'modal' }}
       />
+
+      <Stack.Screen name="SignIn" component={SignInScreen} />
+      <Stack.Screen name="SignUp" component={SignUpScreen} />
+      <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
 
       {/* Design-system reference screens — not linked from the product UI. */}
       <Stack.Screen name="DesignTokens" component={DesignTokensScreen} />
