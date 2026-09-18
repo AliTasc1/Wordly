@@ -1,0 +1,159 @@
+{
+  "_meta": { "batch": "b2-reading-03", "level": "B2", "range": "Parça 11-15" },
+  "items": [
+    {
+      "id": "b2-r-11",
+      "level": "B2",
+      "order": 11,
+      "kind": "reading",
+      "title": "Sıfır atık mağazası",
+      "titleEn": "The Shop With No Packaging",
+      "minutes": 5,
+      "names": [],
+      "text": "A shop that sells food without packaging looks like an obvious improvement, and in one respect it is: the containers that would have been thrown away simply never exist. What the early enthusiasm missed is that packaging does more than one job. It carries the date, it keeps air out, and it makes the product identical wherever it is bought. Remove it and each of those jobs has to be done another way or accepted as a loss. Shops of this kind report that their waste of the food itself is higher than in an ordinary supermarket, because rice left in an open container for three weeks does not keep as well as rice in a sealed bag. The honest accounting is therefore less flattering than the photographs suggest, though it is still probably favorable overall. What has proved harder to solve is convenience. A customer must remember to bring containers, and the shops that survive are the ones that accept this and sell jars at the door rather than lecturing the person who forgot. Several owners now say the environmental argument was never their strongest one. The shops that last are the ones where the food is simply better, and the absence of packaging is a reason to stay rather than a reason to come.",
+      "glossary": [
+        { "w": "packaging", "tr": "ambalaj" },
+        { "w": "containers", "tr": "kaplar" },
+        { "w": "enthusiasm", "tr": "heves" },
+        { "w": "identical", "tr": "birebir aynı" },
+        { "w": "sealed", "tr": "kapalı, mühürlü" },
+        { "w": "accounting", "tr": "hesap" },
+        { "w": "flattering", "tr": "gurur okşayan, parlak" },
+        { "w": "favorable", "tr": "olumlu" },
+        { "w": "convenience", "tr": "kolaylık" },
+        { "w": "jars", "tr": "kavanozlar" },
+        { "w": "lecturing", "tr": "nutuk çekmek" },
+        { "w": "absence", "tr": "yokluk" }
+      ],
+      "questions": [
+        { "q": "What does the writer say packaging also does?", "options": ["Carries the date and keeps air out", "Reduces the price", "Makes food last for ever", "Helps the shop earn more"], "answer": 0, "note": "\"It carries the date, it keeps air out.\"" },
+        { "q": "Why is food waste higher in such shops?", "options": ["Open containers do not keep food as well", "Customers take too much", "Deliveries are slower", "The food is older"], "answer": 0, "note": "\"Rice left in an open container for three weeks does not keep as well.\"" },
+        { "q": "What is the writer's view of the overall accounting?", "options": ["Less flattering but still probably favorable", "Clearly negative", "Exactly as good as claimed", "Impossible to judge"], "answer": 0, "note": "\"Less flattering than the photographs suggest, though it is still probably favorable.\"" },
+        { "q": "What do the surviving shops do about forgotten containers?", "options": ["Sell jars at the door", "Refuse the customer", "Charge a penalty", "Lend containers free"], "answer": 0, "note": "\"Sell jars at the door rather than lecturing the person who forgot.\"" },
+        { "q": "What do several owners now say?", "options": ["The environmental argument was never their strongest", "Customers do not care about waste", "Packaging should return", "The shops cannot survive"], "answer": 0, "note": "\"The environmental argument was never their strongest one.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-12",
+      "level": "B2",
+      "order": 12,
+      "kind": "reading",
+      "title": "Yorumların güvenilirliği",
+      "titleEn": "Reading Between the Stars",
+      "minutes": 5,
+      "names": [],
+      "text": "Most people now consult reviews before buying almost anything, and most people also know that a proportion of those reviews are not genuine. What is less widely understood is that the fake ones are rarely the problem. A paid review is usually clumsy, and readers have become good at spotting the enthusiasm that arrives three days after the product launches. The subtler difficulty lies in who chooses to write at all. Satisfied customers are largely silent; the people who take the time are those who were delighted or furious. A product with a genuine five-star average may simply have annoyed nobody enough to provoke a paragraph. Worse, the average conceals the shape of the distribution: a restaurant where half the visits are excellent and half are unacceptable scores the same as one that is reliably ordinary, and the second is by far the safer choice for a birthday. Experienced readers have adapted. They ignore the number, read the three-star reviews, which tend to be the most careful, and look for complaints that repeat. A single furious review tells you about one evening. The same complaint in four separate months tells you about the kitchen.",
+      "glossary": [
+        { "w": "consult", "tr": "bakmak, danışmak" },
+        { "w": "genuine", "tr": "gerçek" },
+        { "w": "clumsy", "tr": "beceriksiz, sırıtan" },
+        { "w": "launches", "tr": "piyasaya çıkar" },
+        { "w": "subtler", "tr": "daha ince" },
+        { "w": "delighted", "tr": "çok memnun" },
+        { "w": "furious", "tr": "çok öfkeli" },
+        { "w": "provoke", "tr": "kışkırtmak, yol açmak" },
+        { "w": "conceals", "tr": "gizler" },
+        { "w": "distribution", "tr": "dağılım" },
+        { "w": "unacceptable", "tr": "kabul edilemez" },
+        { "w": "adapted", "tr": "uyum sağladı" }
+      ],
+      "questions": [
+        { "q": "Why are fake reviews rarely the main problem?", "options": ["They are usually easy to spot", "There are very few of them", "They are always removed", "They are positive"], "answer": 0, "note": "\"A paid review is usually clumsy.\"" },
+        { "q": "What is the subtler difficulty?", "options": ["Who chooses to write at all", "How stars are counted", "The age of the reviews", "The length of reviews"], "answer": 0, "note": "\"The subtler difficulty lies in who chooses to write at all.\"" },
+        { "q": "What does an average conceal?", "options": ["The shape of the distribution", "The number of reviews", "The date of the visit", "The price"], "answer": 0, "note": "\"The average conceals the shape of the distribution.\"" },
+        { "q": "Which restaurant does the writer call safer?", "options": ["The reliably ordinary one", "The one with excellent evenings", "The one with more reviews", "The newer one"], "answer": 0, "note": "\"The second is by far the safer choice for a birthday.\"" },
+        { "q": "What do experienced readers do?", "options": ["Read three-star reviews and look for repeated complaints", "Trust the average", "Read only the newest reviews", "Ignore reviews entirely"], "answer": 0, "note": "\"Read the three-star reviews... and look for complaints that repeat.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-13",
+      "level": "B2",
+      "order": 13,
+      "kind": "reading",
+      "title": "Emeklilikten sonraki ilk yıl",
+      "titleEn": "The First Year After Work",
+      "minutes": 5,
+      "names": [],
+      "text": "Retirement is planned almost entirely in financial terms, which is understandable, since money is the part that can be calculated. The part that cannot be calculated causes more trouble. Studies that follow people through the first year after leaving work find a consistent pattern: three or four months of genuine pleasure, followed by a decline that surprises almost everyone who experiences it. The explanation is not that people miss the work. Very few do. What they miss is structure, and a supply of low-effort social contact that they never had to arrange. A working day delivers perhaps twenty small exchanges without any planning at all, and replacing them requires an effort that feels undignified to organize. Those who do best tend to have one fixed commitment involving other people that they cannot quietly drop: a class that meets at a set hour, a team that expects them, a grandchild collected on Thursdays. The commitment matters more than the activity. Financial advisers have begun, cautiously, to raise this with clients, though several report that the question lands badly. A person who has spent a decade calculating a pension does not always welcome being asked who they will speak to on a Tuesday.",
+      "glossary": [
+        { "w": "retirement", "tr": "emeklilik" },
+        { "w": "calculated", "tr": "hesaplanmış" },
+        { "w": "consistent", "tr": "tutarlı" },
+        { "w": "decline", "tr": "düşüş" },
+        { "w": "structure", "tr": "düzen, yapı" },
+        { "w": "exchanges", "tr": "kısa temaslar" },
+        { "w": "undignified", "tr": "onur kırıcı" },
+        { "w": "commitment", "tr": "bağlılık, taahhüt" },
+        { "w": "advisers", "tr": "danışmanlar" },
+        { "w": "cautiously", "tr": "temkinli biçimde" },
+        { "w": "pension", "tr": "emekli maaşı" }
+      ],
+      "questions": [
+        { "q": "Why is retirement planned financially?", "options": ["Money is the part that can be calculated", "Money is the only thing that matters", "Advisers insist on it", "It is required by law"], "answer": 0, "note": "\"Money is the part that can be calculated.\"" },
+        { "q": "What pattern do studies find?", "options": ["Pleasure for months, then a decline", "Steady improvement", "Immediate unhappiness", "No change at all"], "answer": 0, "note": "\"Three or four months of genuine pleasure, followed by a decline.\"" },
+        { "q": "What do people actually miss?", "options": ["Structure and easy social contact", "The work itself", "The money", "Their managers"], "answer": 0, "note": "\"What they miss is structure, and a supply of low-effort social contact.\"" },
+        { "q": "What helps most, according to the text?", "options": ["A fixed commitment involving other people", "A new hobby", "More savings", "Moving house"], "answer": 0, "note": "\"One fixed commitment involving other people that they cannot quietly drop.\"" },
+        { "q": "How do clients react to the question?", "options": ["It often lands badly", "They welcome it", "They ignore it", "They change advisers"], "answer": 0, "note": "\"Several report that the question lands badly.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-14",
+      "level": "B2",
+      "order": 14,
+      "kind": "reading",
+      "title": "Çok dilli çocuk",
+      "titleEn": "Two Languages at Home",
+      "minutes": 5,
+      "names": [],
+      "text": "Parents raising a child in two languages are given a great deal of contradictory advice, much of it delivered with more confidence than the evidence supports. The most persistent worry is that the child will be delayed. Children in this situation do often produce their first sentences slightly later and mix the two systems for a period, which alarms relatives. Both effects disappear, and by school age the child's total vocabulary across both languages is normal or better. The genuine risk is different and rarely mentioned. A second language survives only where it is needed, and a child works out very quickly which language is optional. If the parent understands the majority language, the child will answer in it, and within two years the second language becomes something the child comprehends but does not speak. Families who avoid this are not the ones with the best method; they are the ones with a genuine reason. A grandmother who speaks no English is worth more than any amount of determination, because she makes the language necessary rather than virtuous. Those without such a reason often manufacture one, and the ones who succeed tend to admit that the manufacturing never stops.",
+      "glossary": [
+        { "w": "contradictory", "tr": "çelişkili" },
+        { "w": "persistent", "tr": "ısrarlı, inatçı" },
+        { "w": "delayed", "tr": "gecikmiş" },
+        { "w": "alarms", "tr": "telaşlandırır" },
+        { "w": "relatives", "tr": "akrabalar" },
+        { "w": "majority", "tr": "çoğunluk" },
+        { "w": "comprehends", "tr": "anlar" },
+        { "w": "determination", "tr": "kararlılık" },
+        { "w": "virtuous", "tr": "erdemli" },
+        { "w": "manufacture", "tr": "imal etmek, üretmek" }
+      ],
+      "questions": [
+        { "q": "What is the most persistent worry?", "options": ["That the child will be delayed", "That the child will be confused for life", "That school will be harder", "That the parents will argue"], "answer": 0, "note": "\"The most persistent worry is that the child will be delayed.\"" },
+        { "q": "What does the writer say about that worry?", "options": ["The effects disappear by school age", "It is fully justified", "It cannot be tested", "It applies only to some families"], "answer": 0, "note": "\"Both effects disappear, and by school age the child's total vocabulary... is normal or better.\"" },
+        { "q": "What is the genuine risk?", "options": ["The child stops speaking the optional language", "The child forgets both languages", "The child refuses school", "The child mixes the systems for ever"], "answer": 0, "note": "\"A child works out very quickly which language is optional.\"" },
+        { "q": "What makes a second language survive?", "options": ["A genuine reason to need it", "The best teaching method", "Starting very early", "Strict parental rules"], "answer": 0, "note": "\"A second language survives only where it is needed.\"" },
+        { "q": "Why is the grandmother valuable?", "options": ["She makes the language necessary", "She teaches grammar", "She lives nearby", "She speaks slowly"], "answer": 0, "note": "\"She makes the language necessary rather than virtuous.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-15",
+      "level": "B2",
+      "order": 15,
+      "kind": "reading",
+      "title": "Açık ofis deneyi",
+      "titleEn": "What Happened to the Walls",
+      "minutes": 5,
+      "names": [],
+      "text": "The open office was sold on a simple promise. Remove the walls and colleagues will talk to one another, ideas will travel, and the accidental meeting will replace the scheduled one. The promise was tested properly for the first time only recently, when researchers fitted staff with badges that recorded who spoke to whom, before and after a company removed its internal walls. Face-to-face conversation fell by roughly seventy per cent. Electronic messages rose sharply. The employees had not become less social; they had become less willing to be overheard, and a message is private in a way that a conversation across an open floor is not. This finding has been widely quoted and rather less widely acted upon, partly because the open plan solved a problem that was never about collaboration. It is considerably cheaper per employee. The more interesting response has come from firms that kept the open floor but added enough small enclosed rooms for anybody to take a conversation out of public hearing. Their conversation rates recovered. The lesson appears to be that people will talk in the open only when they have somewhere else to go.",
+      "glossary": [
+        { "w": "accidental", "tr": "tesadüfi" },
+        { "w": "scheduled", "tr": "planlanmış" },
+        { "w": "badges", "tr": "rozetler, yaka kartları" },
+        { "w": "internal", "tr": "iç" },
+        { "w": "overheard", "tr": "kulak misafiri olunan" },
+        { "w": "quoted", "tr": "alıntılanan" },
+        { "w": "collaboration", "tr": "iş birliği" },
+        { "w": "enclosed", "tr": "kapalı" },
+        { "w": "recovered", "tr": "toparlandı" }
+      ],
+      "questions": [
+        { "q": "What was the open office promise?", "options": ["Colleagues would talk more and ideas would travel", "Rent would fall", "Meetings would end", "Staff would be happier"], "answer": 0, "note": "\"Remove the walls and colleagues will talk to one another.\"" },
+        { "q": "How was the promise tested?", "options": ["Badges recorded who spoke to whom", "Staff filled in a survey", "Managers watched the floor", "Messages were counted only"], "answer": 0, "note": "\"Researchers fitted staff with badges that recorded who spoke to whom.\"" },
+        { "q": "What happened to face-to-face conversation?", "options": ["It fell by about seventy per cent", "It rose sharply", "It stayed the same", "It doubled"], "answer": 0, "note": "\"Face-to-face conversation fell by roughly seventy per cent.\"" },
+        { "q": "Why did behavior change?", "options": ["People became unwilling to be overheard", "People disliked their colleagues", "The rooms were too cold", "Managers forbade talking"], "answer": 0, "note": "\"They had become less willing to be overheard.\"" },
+        { "q": "What worked for some firms?", "options": ["Adding small enclosed rooms", "Rebuilding all the walls", "Banning messages", "Reducing staff numbers"], "answer": 0, "note": "\"Added enough small enclosed rooms... Their conversation rates recovered.\"" }
+      ]
+    }
+  ]
+}

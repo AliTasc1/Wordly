@@ -1,0 +1,165 @@
+{
+  "_meta": { "batch": "b2-reading-04", "level": "B2", "range": "Parça 16-20" },
+  "items": [
+    {
+      "id": "b2-r-16",
+      "level": "B2",
+      "order": 16,
+      "kind": "reading",
+      "title": "Müzelerin ödünç aldığı eserler",
+      "titleEn": "The Exhibition That Traveled Too Far",
+      "minutes": 5,
+      "names": [],
+      "text": "A traveling exhibition looks generous. Objects that would otherwise be seen by the few thousand people who can reach one building are shown to hundreds of thousands across a continent. The cost of that generosity is rarely discussed outside the profession. Every journey exposes an object to changes in humidity and temperature, to vibration, and above all to handling, which is when almost all damage occurs. Conservators have a rule of thumb that the risk lies not in the flight but in the eleven separate occasions on which human hands lift the crate. Insurance covers the financial loss and can do nothing about the other kind. There is also a quieter effect. Objects that travel well are chosen repeatedly, so the same robust pieces tour while the fragile ones stay in storage, and the public's sense of what a collection contains is shaped by what survives a truck. Some museums have begun refusing loans for anything that has traveled twice in five years. The policy is unpopular with the institutions that want the object and, in the long run, is almost certainly correct.",
+      "glossary": [
+        { "w": "exhibition", "tr": "sergi" },
+        { "w": "generous", "tr": "cömert" },
+        { "w": "humidity", "tr": "nem" },
+        { "w": "vibration", "tr": "titreşim" },
+        { "w": "handling", "tr": "elle taşıma" },
+        { "w": "conservators", "tr": "restorasyon uzmanları" },
+        { "w": "rule of thumb", "tr": "pratik kural" },
+        { "w": "crate", "tr": "sandık" },
+        { "w": "insurance", "tr": "sigorta" },
+        { "w": "robust", "tr": "sağlam, dayanıklı" },
+        { "w": "fragile", "tr": "kırılgan" },
+        { "w": "storage", "tr": "depo" },
+        { "w": "loans", "tr": "ödünç verme" }
+      ],
+      "questions": [
+        { "q": "Where does most damage occur?", "options": ["During handling", "In the air", "In storage", "On display"], "answer": 0, "note": "\"Above all to handling, which is when almost all damage occurs.\"" },
+        { "q": "What is the conservators' rule of thumb?", "options": ["The risk is in the eleven liftings, not the flight", "Flights are the main danger", "Insurance covers everything", "Short journeys are safe"], "answer": 0, "note": "\"The risk lies not in the flight but in the eleven separate occasions.\"" },
+        { "q": "What is the quieter effect?", "options": ["Robust pieces tour while fragile ones stay hidden", "Museums lose money", "Objects are copied", "Visitors fall"], "answer": 0, "note": "\"The same robust pieces tour while the fragile ones stay in storage.\"" },
+        { "q": "What have some museums begun doing?", "options": ["Refusing loans for objects that traveled twice in five years", "Charging higher fees", "Ending all loans", "Insuring twice"], "answer": 0, "note": "\"Refusing loans for anything that has traveled twice in five years.\"" },
+        { "q": "What is the writer's view of that policy?", "options": ["Unpopular but almost certainly correct", "Clearly wrong", "Too weak to matter", "Impossible to enforce"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-17",
+      "level": "B2",
+      "order": 17,
+      "kind": "reading",
+      "title": "Kalabalıkla iş yapmak",
+      "titleEn": "The Wisdom of the Crowd, and Its Limits",
+      "minutes": 5,
+      "names": [],
+      "text": "Ask a large group to estimate the weight of an ox and the average of their guesses will be close to the true figure, often closer than any expert. The experiment is famous and it is usually told as a story about the intelligence of crowds. It is really a story about independence. The average works because the individual errors point in different directions and cancel out, and that only happens when nobody hears anybody else's answer. Repeat the experiment while letting participants see the guesses already submitted and the accuracy collapses, because early answers pull later ones towards them and the errors stop being independent. This is not an obscure academic point. It describes what happens in a meeting where the most senior person speaks first, and it explains why written estimates collected before discussion routinely beat the number a group agrees on after an hour of debate. The practical instruction that follows is almost insultingly simple and almost never followed: ask everybody to write their answer down before anybody says anything out loud. The objection is always the same, that a meeting is for discussion and that writing things privately defeats the purpose. It does not. The written figures are the starting point rather than the conclusion, and the discussion that follows them is better informed precisely because it begins from a spread of genuinely separate opinions instead of a single number that everybody has already agreed to.",
+      "glossary": [
+        { "w": "estimate", "tr": "tahmin etmek" },
+        { "w": "ox", "tr": "öküz" },
+        { "w": "independence", "tr": "bağımsızlık" },
+        { "w": "cancel out", "tr": "birbirini götürmek" },
+        { "w": "participants", "tr": "katılımcılar" },
+        { "w": "submitted", "tr": "gönderilmiş" },
+        { "w": "accuracy", "tr": "isabet" },
+        { "w": "collapses", "tr": "çöker" },
+        { "w": "obscure", "tr": "kapalı, sıra dışı" },
+        { "w": "senior", "tr": "kıdemli" },
+        { "w": "routinely", "tr": "düzenli olarak" },
+        { "w": "insultingly", "tr": "hakaret edercesine" }
+      ],
+      "questions": [
+        { "q": "Why does the average work?", "options": ["Individual errors cancel out", "Crowds are intelligent", "Experts join in", "The task is easy"], "answer": 0, "note": "\"The individual errors point in different directions and cancel out.\"" },
+        { "q": "What destroys the effect?", "options": ["Letting people see earlier guesses", "Using a larger group", "Asking experts", "Repeating the test"], "answer": 0, "note": "\"Letting participants see the guesses already submitted and the accuracy collapses.\"" },
+        { "q": "What does this explain about meetings?", "options": ["Why the senior person speaking first is harmful", "Why meetings are too long", "Why groups need experts", "Why debate improves numbers"], "answer": 0, "note": "\"It describes what happens in a meeting where the most senior person speaks first.\"" },
+        { "q": "What beats a group's agreed number?", "options": ["Written estimates collected before discussion", "A longer debate", "An expert's opinion", "A second meeting"], "answer": 0, "note": "\"Written estimates collected before discussion routinely beat the number a group agrees on.\"" },
+        { "q": "What is the practical instruction?", "options": ["Write answers down before anybody speaks", "Let the junior speak first", "Use larger groups", "Avoid meetings"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-18",
+      "level": "B2",
+      "order": 18,
+      "kind": "reading",
+      "title": "Hastanede gece vardiyası",
+      "titleEn": "The Hours Nobody Watches",
+      "minutes": 5,
+      "names": [],
+      "text": "Hospital outcomes are measurably worse at night, and the reason is not that the staff on duty are less able. It is that almost every support around them thins out. Fewer senior doctors are on site, so a junior faces a decision alone that would be shared at noon. Test results take longer. The equipment is the same but the person who knows its particular failures has gone home. Add to this the biological cost of working against the body's own clock, which reduces accuracy in a way that no amount of professionalism prevents, and the gap becomes easy to explain and hard to close. The responses that work are unglamorous. A structured handover at every shift change, with a written form that cannot be skipped, is worth more than any appeal to vigilance. So is making it socially acceptable to telephone a senior at three in the morning, which sounds like a matter of policy and is really a matter of culture. Hospitals that have narrowed the night-time gap tend to describe the change in exactly those terms: not that they hired more people, but that nobody is now embarrassed to wake somebody up.",
+      "glossary": [
+        { "w": "outcomes", "tr": "sonuçlar" },
+        { "w": "on duty", "tr": "görevde" },
+        { "w": "thins out", "tr": "seyrelir" },
+        { "w": "junior", "tr": "genç, kıdemsiz" },
+        { "w": "equipment", "tr": "cihazlar" },
+        { "w": "biological", "tr": "biyolojik" },
+        { "w": "professionalism", "tr": "profesyonellik" },
+        { "w": "unglamorous", "tr": "gösterişsiz" },
+        { "w": "handover", "tr": "devir teslim" },
+        { "w": "skipped", "tr": "atlanmış" },
+        { "w": "vigilance", "tr": "dikkat, uyanıklık" },
+        { "w": "narrowed", "tr": "daralttı" },
+        { "w": "embarrassed", "tr": "mahcup" }
+      ],
+      "questions": [
+        { "q": "Why are night outcomes worse?", "options": ["The support around the staff thins out", "The staff are less able", "Patients arrive later", "Equipment is older"], "answer": 0, "note": "\"Almost every support around them thins out.\"" },
+        { "q": "What does the body's clock do?", "options": ["Reduces accuracy whatever the effort", "Makes staff sleep", "Has no measurable effect", "Improves at night"], "answer": 0, "note": "\"Reduces accuracy in a way that no amount of professionalism prevents.\"" },
+        { "q": "What is worth more than appeals to vigilance?", "options": ["A structured handover that cannot be skipped", "Longer shifts", "More equipment", "Fewer patients"], "answer": 0, "note": "\"A structured handover at every shift change... is worth more than any appeal to vigilance.\"" },
+        { "q": "What does the writer call a matter of culture?", "options": ["Being able to phone a senior at three", "Writing the handover form", "Hiring more staff", "Buying equipment"], "answer": 0, "note": "\"Sounds like a matter of policy and is really a matter of culture.\"" },
+        { "q": "How do successful hospitals describe the change?", "options": ["Nobody is embarrassed to wake somebody up", "They hired more people", "They cut the shifts", "They closed at night"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-19",
+      "level": "B2",
+      "order": 19,
+      "kind": "reading",
+      "title": "İkinci el pazarının yükselişi",
+      "titleEn": "The Second Life of Everything",
+      "minutes": 5,
+      "names": [],
+      "text": "The market for used goods has grown faster than almost any part of retail, and the usual explanation is that buyers have become poorer or greener. Both are partly true and neither explains the shape of the growth. What changed was the removal of the two things that always made second-hand difficult: finding the item and trusting the seller. A search box solved the first. Ratings, photographs and a payment system that holds the money until the buyer confirms solved the second. Once those existed, the market grew into categories that nobody predicted, including furniture, which is expensive to move, and children's clothes, which are worn for weeks. There is an unresolved tension at the center of the business. Manufacturers benefit, because an item with a strong resale price is easier to sell new, and the buyer effectively borrows rather than buys. They also lose, because every used sale is a new one that did not happen. Most large firms have settled on a position that satisfies nobody: they run their own resale platforms, take a small fee, and quietly hope the whole thing stays small.",
+      "glossary": [
+        { "w": "retail", "tr": "perakende" },
+        { "w": "greener", "tr": "daha çevreci" },
+        { "w": "ratings", "tr": "puanlar" },
+        { "w": "confirms", "tr": "onaylar" },
+        { "w": "categories", "tr": "kategoriler" },
+        { "w": "unresolved", "tr": "çözülmemiş" },
+        { "w": "tension", "tr": "gerilim" },
+        { "w": "manufacturers", "tr": "üreticiler" },
+        { "w": "resale", "tr": "yeniden satış" },
+        { "w": "platforms", "tr": "platformlar" },
+        { "w": "fee", "tr": "komisyon, ücret" }
+      ],
+      "questions": [
+        { "q": "What does the writer say about the usual explanations?", "options": ["Partly true but they do not explain the shape", "Completely wrong", "Fully sufficient", "Impossible to test"], "answer": 0, "note": "\"Both are partly true and neither explains the shape of the growth.\"" },
+        { "q": "What actually changed?", "options": ["Finding items and trusting sellers became easy", "Prices fell sharply", "Shops closed", "Quality improved"], "answer": 0, "note": "\"The removal of the two things that always made second-hand difficult.\"" },
+        { "q": "What solved the trust problem?", "options": ["Ratings and held payments", "A search box", "Cheaper delivery", "New laws"], "answer": 0, "note": "\"Ratings, photographs and a payment system that holds the money.\"" },
+        { "q": "Why do manufacturers benefit?", "options": ["A strong resale price helps sell new items", "They take all the profit", "They control the platforms", "Used goods break quickly"], "answer": 0, "note": "\"An item with a strong resale price is easier to sell new.\"" },
+        { "q": "What position have most large firms taken?", "options": ["Run their own resale sites and hope it stays small", "Ban resale entirely", "Buy the platforms", "Lower new prices"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-20",
+      "level": "B2",
+      "order": 20,
+      "kind": "reading",
+      "title": "Yapay ışığın bedeli",
+      "titleEn": "The Cost of Lighting Everything",
+      "minutes": 5,
+      "names": [],
+      "text": "Cheap lighting was one of the clearest improvements of the last century, and like most clear improvements it was applied far past the point of usefulness. A street that is lit well enough to read a newspaper is lit considerably brighter than is needed to walk safely, and the extra brightness produces glare, which makes the dark places between lamps harder to see into rather than easier. The effect on wildlife is better documented than most people assume. Insects that navigate by the moon circle a lamp until they die, and the species that eat them follow the food and lose their own cycles. For human beings the measurable cost is to sleep, and it is caused less by the quantity of light than by its color: the blue-heavy light that is cheapest to produce is also the most effective at telling the body that the day has not ended. Several cities have quietly reduced their lighting at night and reported no rise in crime, which is the result nobody campaigns on because it is difficult to celebrate the absence of something. The cheapest improvement available is not to switch lights off but to point them down.",
+      "glossary": [
+        { "w": "lighting", "tr": "aydınlatma" },
+        { "w": "glare", "tr": "göz kamaştırma" },
+        { "w": "wildlife", "tr": "yaban hayatı" },
+        { "w": "documented", "tr": "belgelenmiş" },
+        { "w": "navigate", "tr": "yön bulmak" },
+        { "w": "species", "tr": "türler" },
+        { "w": "cycles", "tr": "döngüler" },
+        { "w": "quantity", "tr": "miktar" },
+        { "w": "campaigns", "tr": "kampanya yapar" },
+        { "w": "celebrate", "tr": "kutlamak" },
+        { "w": "absence", "tr": "yokluk" }
+      ],
+      "questions": [
+        { "q": "What does extra brightness produce?", "options": ["Glare that hides the dark places", "A clearer view everywhere", "Lower costs", "Safer streets"], "answer": 0, "note": "\"The extra brightness produces glare.\"" },
+        { "q": "What happens to insects?", "options": ["They circle a lamp until they die", "They avoid lit streets", "They breed faster", "They change color"], "answer": 0, "note": "\"Insects that navigate by the moon circle a lamp until they die.\"" },
+        { "q": "What causes the cost to human sleep?", "options": ["The color of the light", "The number of lamps", "The height of the lamps", "The hour they switch on"], "answer": 0, "note": "\"Caused less by the quantity of light than by its color.\"" },
+        { "q": "What did several cities report?", "options": ["No rise in crime after reducing lighting", "A sharp rise in crime", "Higher costs", "More complaints"], "answer": 0, "note": "\"Reported no rise in crime.\"" },
+        { "q": "What is the cheapest improvement?", "options": ["Point the lights down", "Switch the lights off", "Use more lamps", "Change the hours"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

@@ -1024,5 +1024,1755 @@
     "note": "Son cümle."
    }
   ]
+ },
+ {
+  "id": "b2-r-11",
+  "level": "B2",
+  "order": 11,
+  "kind": "reading",
+  "title": "Sıfır atık mağazası",
+  "titleEn": "The Shop With No Packaging",
+  "minutes": 5,
+  "names": [],
+  "text": "A shop that sells food without packaging looks like an obvious improvement, and in one respect it is: the containers that would have been thrown away simply never exist. What the early enthusiasm missed is that packaging does more than one job. It carries the date, it keeps air out, and it makes the product identical wherever it is bought. Remove it and each of those jobs has to be done another way or accepted as a loss. Shops of this kind report that their waste of the food itself is higher than in an ordinary supermarket, because rice left in an open container for three weeks does not keep as well as rice in a sealed bag. The honest accounting is therefore less flattering than the photographs suggest, though it is still probably favorable overall. What has proved harder to solve is convenience. A customer must remember to bring containers, and the shops that survive are the ones that accept this and sell jars at the door rather than lecturing the person who forgot. Several owners now say the environmental argument was never their strongest one. The shops that last are the ones where the food is simply better, and the absence of packaging is a reason to stay rather than a reason to come.",
+  "glossary": [
+   {
+    "w": "packaging",
+    "tr": "ambalaj"
+   },
+   {
+    "w": "containers",
+    "tr": "kaplar"
+   },
+   {
+    "w": "enthusiasm",
+    "tr": "heves"
+   },
+   {
+    "w": "identical",
+    "tr": "birebir aynı"
+   },
+   {
+    "w": "sealed",
+    "tr": "kapalı, mühürlü"
+   },
+   {
+    "w": "accounting",
+    "tr": "hesap"
+   },
+   {
+    "w": "flattering",
+    "tr": "gurur okşayan, parlak"
+   },
+   {
+    "w": "favorable",
+    "tr": "olumlu"
+   },
+   {
+    "w": "convenience",
+    "tr": "kolaylık"
+   },
+   {
+    "w": "jars",
+    "tr": "kavanozlar"
+   },
+   {
+    "w": "lecturing",
+    "tr": "nutuk çekmek"
+   },
+   {
+    "w": "absence",
+    "tr": "yokluk"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the writer say packaging also does?",
+    "options": [
+     "Makes food last for ever",
+     "Carries the date and keeps air out",
+     "Reduces the price",
+     "Helps the shop earn more"
+    ],
+    "answer": 1,
+    "note": "\"It carries the date, it keeps air out.\""
+   },
+   {
+    "q": "Why is food waste higher in such shops?",
+    "options": [
+     "The food is older",
+     "Deliveries are slower",
+     "Customers take too much",
+     "Open containers do not keep food as well"
+    ],
+    "answer": 3,
+    "note": "\"Rice left in an open container for three weeks does not keep as well.\""
+   },
+   {
+    "q": "What is the writer's view of the overall accounting?",
+    "options": [
+     "Less flattering but still probably favorable",
+     "Clearly negative",
+     "Impossible to judge",
+     "Exactly as good as claimed"
+    ],
+    "answer": 0,
+    "note": "\"Less flattering than the photographs suggest, though it is still probably favorable.\""
+   },
+   {
+    "q": "What do the surviving shops do about forgotten containers?",
+    "options": [
+     "Lend containers free",
+     "Sell jars at the door",
+     "Refuse the customer",
+     "Charge a penalty"
+    ],
+    "answer": 1,
+    "note": "\"Sell jars at the door rather than lecturing the person who forgot.\""
+   },
+   {
+    "q": "What do several owners now say?",
+    "options": [
+     "Customers do not care about waste",
+     "Packaging should return",
+     "The environmental argument was never their strongest",
+     "The shops cannot survive"
+    ],
+    "answer": 2,
+    "note": "\"The environmental argument was never their strongest one.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-12",
+  "level": "B2",
+  "order": 12,
+  "kind": "reading",
+  "title": "Yorumların güvenilirliği",
+  "titleEn": "Reading Between the Stars",
+  "minutes": 5,
+  "names": [],
+  "text": "Most people now consult reviews before buying almost anything, and most people also know that a proportion of those reviews are not genuine. What is less widely understood is that the fake ones are rarely the problem. A paid review is usually clumsy, and readers have become good at spotting the enthusiasm that arrives three days after the product launches. The subtler difficulty lies in who chooses to write at all. Satisfied customers are largely silent; the people who take the time are those who were delighted or furious. A product with a genuine five-star average may simply have annoyed nobody enough to provoke a paragraph. Worse, the average conceals the shape of the distribution: a restaurant where half the visits are excellent and half are unacceptable scores the same as one that is reliably ordinary, and the second is by far the safer choice for a birthday. Experienced readers have adapted. They ignore the number, read the three-star reviews, which tend to be the most careful, and look for complaints that repeat. A single furious review tells you about one evening. The same complaint in four separate months tells you about the kitchen.",
+  "glossary": [
+   {
+    "w": "consult",
+    "tr": "bakmak, danışmak"
+   },
+   {
+    "w": "genuine",
+    "tr": "gerçek"
+   },
+   {
+    "w": "clumsy",
+    "tr": "beceriksiz, sırıtan"
+   },
+   {
+    "w": "launches",
+    "tr": "piyasaya çıkar"
+   },
+   {
+    "w": "subtler",
+    "tr": "daha ince"
+   },
+   {
+    "w": "delighted",
+    "tr": "çok memnun"
+   },
+   {
+    "w": "furious",
+    "tr": "çok öfkeli"
+   },
+   {
+    "w": "provoke",
+    "tr": "kışkırtmak, yol açmak"
+   },
+   {
+    "w": "conceals",
+    "tr": "gizler"
+   },
+   {
+    "w": "distribution",
+    "tr": "dağılım"
+   },
+   {
+    "w": "unacceptable",
+    "tr": "kabul edilemez"
+   },
+   {
+    "w": "adapted",
+    "tr": "uyum sağladı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why are fake reviews rarely the main problem?",
+    "options": [
+     "They are usually easy to spot",
+     "They are positive",
+     "They are always removed",
+     "There are very few of them"
+    ],
+    "answer": 0,
+    "note": "\"A paid review is usually clumsy.\""
+   },
+   {
+    "q": "What is the subtler difficulty?",
+    "options": [
+     "The length of reviews",
+     "Who chooses to write at all",
+     "The age of the reviews",
+     "How stars are counted"
+    ],
+    "answer": 1,
+    "note": "\"The subtler difficulty lies in who chooses to write at all.\""
+   },
+   {
+    "q": "What does an average conceal?",
+    "options": [
+     "The price",
+     "The date of the visit",
+     "The number of reviews",
+     "The shape of the distribution"
+    ],
+    "answer": 3,
+    "note": "\"The average conceals the shape of the distribution.\""
+   },
+   {
+    "q": "Which restaurant does the writer call safer?",
+    "options": [
+     "The one with more reviews",
+     "The reliably ordinary one",
+     "The newer one",
+     "The one with excellent evenings"
+    ],
+    "answer": 1,
+    "note": "\"The second is by far the safer choice for a birthday.\""
+   },
+   {
+    "q": "What do experienced readers do?",
+    "options": [
+     "Trust the average",
+     "Ignore reviews entirely",
+     "Read three-star reviews and look for repeated complaints",
+     "Read only the newest reviews"
+    ],
+    "answer": 2,
+    "note": "\"Read the three-star reviews... and look for complaints that repeat.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-13",
+  "level": "B2",
+  "order": 13,
+  "kind": "reading",
+  "title": "Emeklilikten sonraki ilk yıl",
+  "titleEn": "The First Year After Work",
+  "minutes": 5,
+  "names": [],
+  "text": "Retirement is planned almost entirely in financial terms, which is understandable, since money is the part that can be calculated. The part that cannot be calculated causes more trouble. Studies that follow people through the first year after leaving work find a consistent pattern: three or four months of genuine pleasure, followed by a decline that surprises almost everyone who experiences it. The explanation is not that people miss the work. Very few do. What they miss is structure, and a supply of low-effort social contact that they never had to arrange. A working day delivers perhaps twenty small exchanges without any planning at all, and replacing them requires an effort that feels undignified to organize. Those who do best tend to have one fixed commitment involving other people that they cannot quietly drop: a class that meets at a set hour, a team that expects them, a grandchild collected on Thursdays. The commitment matters more than the activity. Financial advisers have begun, cautiously, to raise this with clients, though several report that the question lands badly. A person who has spent a decade calculating a pension does not always welcome being asked who they will speak to on a Tuesday.",
+  "glossary": [
+   {
+    "w": "retirement",
+    "tr": "emeklilik"
+   },
+   {
+    "w": "calculated",
+    "tr": "hesaplanmış"
+   },
+   {
+    "w": "consistent",
+    "tr": "tutarlı"
+   },
+   {
+    "w": "decline",
+    "tr": "düşüş"
+   },
+   {
+    "w": "structure",
+    "tr": "düzen, yapı"
+   },
+   {
+    "w": "exchanges",
+    "tr": "kısa temaslar"
+   },
+   {
+    "w": "undignified",
+    "tr": "onur kırıcı"
+   },
+   {
+    "w": "commitment",
+    "tr": "bağlılık, taahhüt"
+   },
+   {
+    "w": "advisers",
+    "tr": "danışmanlar"
+   },
+   {
+    "w": "cautiously",
+    "tr": "temkinli biçimde"
+   },
+   {
+    "w": "pension",
+    "tr": "emekli maaşı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is retirement planned financially?",
+    "options": [
+     "Money is the only thing that matters",
+     "Advisers insist on it",
+     "Money is the part that can be calculated",
+     "It is required by law"
+    ],
+    "answer": 2,
+    "note": "\"Money is the part that can be calculated.\""
+   },
+   {
+    "q": "What pattern do studies find?",
+    "options": [
+     "No change at all",
+     "Pleasure for months, then a decline",
+     "Steady improvement",
+     "Immediate unhappiness"
+    ],
+    "answer": 1,
+    "note": "\"Three or four months of genuine pleasure, followed by a decline.\""
+   },
+   {
+    "q": "What do people actually miss?",
+    "options": [
+     "The work itself",
+     "The money",
+     "Structure and easy social contact",
+     "Their managers"
+    ],
+    "answer": 2,
+    "note": "\"What they miss is structure, and a supply of low-effort social contact.\""
+   },
+   {
+    "q": "What helps most, according to the text?",
+    "options": [
+     "A fixed commitment involving other people",
+     "More savings",
+     "Moving house",
+     "A new hobby"
+    ],
+    "answer": 0,
+    "note": "\"One fixed commitment involving other people that they cannot quietly drop.\""
+   },
+   {
+    "q": "How do clients react to the question?",
+    "options": [
+     "They change advisers",
+     "They ignore it",
+     "It often lands badly",
+     "They welcome it"
+    ],
+    "answer": 2,
+    "note": "\"Several report that the question lands badly.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-14",
+  "level": "B2",
+  "order": 14,
+  "kind": "reading",
+  "title": "Çok dilli çocuk",
+  "titleEn": "Two Languages at Home",
+  "minutes": 5,
+  "names": [],
+  "text": "Parents raising a child in two languages are given a great deal of contradictory advice, much of it delivered with more confidence than the evidence supports. The most persistent worry is that the child will be delayed. Children in this situation do often produce their first sentences slightly later and mix the two systems for a period, which alarms relatives. Both effects disappear, and by school age the child's total vocabulary across both languages is normal or better. The genuine risk is different and rarely mentioned. A second language survives only where it is needed, and a child works out very quickly which language is optional. If the parent understands the majority language, the child will answer in it, and within two years the second language becomes something the child comprehends but does not speak. Families who avoid this are not the ones with the best method; they are the ones with a genuine reason. A grandmother who speaks no English is worth more than any amount of determination, because she makes the language necessary rather than virtuous. Those without such a reason often manufacture one, and the ones who succeed tend to admit that the manufacturing never stops.",
+  "glossary": [
+   {
+    "w": "contradictory",
+    "tr": "çelişkili"
+   },
+   {
+    "w": "persistent",
+    "tr": "ısrarlı, inatçı"
+   },
+   {
+    "w": "delayed",
+    "tr": "gecikmiş"
+   },
+   {
+    "w": "alarms",
+    "tr": "telaşlandırır"
+   },
+   {
+    "w": "relatives",
+    "tr": "akrabalar"
+   },
+   {
+    "w": "majority",
+    "tr": "çoğunluk"
+   },
+   {
+    "w": "comprehends",
+    "tr": "anlar"
+   },
+   {
+    "w": "determination",
+    "tr": "kararlılık"
+   },
+   {
+    "w": "virtuous",
+    "tr": "erdemli"
+   },
+   {
+    "w": "manufacture",
+    "tr": "imal etmek, üretmek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the most persistent worry?",
+    "options": [
+     "That the parents will argue",
+     "That school will be harder",
+     "That the child will be confused for life",
+     "That the child will be delayed"
+    ],
+    "answer": 3,
+    "note": "\"The most persistent worry is that the child will be delayed.\""
+   },
+   {
+    "q": "What does the writer say about that worry?",
+    "options": [
+     "The effects disappear by school age",
+     "It is fully justified",
+     "It cannot be tested",
+     "It applies only to some families"
+    ],
+    "answer": 0,
+    "note": "\"Both effects disappear, and by school age the child's total vocabulary... is normal or better.\""
+   },
+   {
+    "q": "What is the genuine risk?",
+    "options": [
+     "The child mixes the systems for ever",
+     "The child stops speaking the optional language",
+     "The child refuses school",
+     "The child forgets both languages"
+    ],
+    "answer": 1,
+    "note": "\"A child works out very quickly which language is optional.\""
+   },
+   {
+    "q": "What makes a second language survive?",
+    "options": [
+     "The best teaching method",
+     "A genuine reason to need it",
+     "Strict parental rules",
+     "Starting very early"
+    ],
+    "answer": 1,
+    "note": "\"A second language survives only where it is needed.\""
+   },
+   {
+    "q": "Why is the grandmother valuable?",
+    "options": [
+     "She lives nearby",
+     "She speaks slowly",
+     "She teaches grammar",
+     "She makes the language necessary"
+    ],
+    "answer": 3,
+    "note": "\"She makes the language necessary rather than virtuous.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-15",
+  "level": "B2",
+  "order": 15,
+  "kind": "reading",
+  "title": "Açık ofis deneyi",
+  "titleEn": "What Happened to the Walls",
+  "minutes": 5,
+  "names": [],
+  "text": "The open office was sold on a simple promise. Remove the walls and colleagues will talk to one another, ideas will travel, and the accidental meeting will replace the scheduled one. The promise was tested properly for the first time only recently, when researchers fitted staff with badges that recorded who spoke to whom, before and after a company removed its internal walls. Face-to-face conversation fell by roughly seventy per cent. Electronic messages rose sharply. The employees had not become less social; they had become less willing to be overheard, and a message is private in a way that a conversation across an open floor is not. This finding has been widely quoted and rather less widely acted upon, partly because the open plan solved a problem that was never about collaboration. It is considerably cheaper per employee. The more interesting response has come from firms that kept the open floor but added enough small enclosed rooms for anybody to take a conversation out of public hearing. Their conversation rates recovered. The lesson appears to be that people will talk in the open only when they have somewhere else to go.",
+  "glossary": [
+   {
+    "w": "accidental",
+    "tr": "tesadüfi"
+   },
+   {
+    "w": "scheduled",
+    "tr": "planlanmış"
+   },
+   {
+    "w": "badges",
+    "tr": "rozetler, yaka kartları"
+   },
+   {
+    "w": "internal",
+    "tr": "iç"
+   },
+   {
+    "w": "overheard",
+    "tr": "kulak misafiri olunan"
+   },
+   {
+    "w": "quoted",
+    "tr": "alıntılanan"
+   },
+   {
+    "w": "collaboration",
+    "tr": "iş birliği"
+   },
+   {
+    "w": "enclosed",
+    "tr": "kapalı"
+   },
+   {
+    "w": "recovered",
+    "tr": "toparlandı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was the open office promise?",
+    "options": [
+     "Colleagues would talk more and ideas would travel",
+     "Staff would be happier",
+     "Rent would fall",
+     "Meetings would end"
+    ],
+    "answer": 0,
+    "note": "\"Remove the walls and colleagues will talk to one another.\""
+   },
+   {
+    "q": "How was the promise tested?",
+    "options": [
+     "Staff filled in a survey",
+     "Messages were counted only",
+     "Managers watched the floor",
+     "Badges recorded who spoke to whom"
+    ],
+    "answer": 3,
+    "note": "\"Researchers fitted staff with badges that recorded who spoke to whom.\""
+   },
+   {
+    "q": "What happened to face-to-face conversation?",
+    "options": [
+     "It rose sharply",
+     "It doubled",
+     "It stayed the same",
+     "It fell by about seventy per cent"
+    ],
+    "answer": 3,
+    "note": "\"Face-to-face conversation fell by roughly seventy per cent.\""
+   },
+   {
+    "q": "Why did behavior change?",
+    "options": [
+     "People became unwilling to be overheard",
+     "People disliked their colleagues",
+     "Managers forbade talking",
+     "The rooms were too cold"
+    ],
+    "answer": 0,
+    "note": "\"They had become less willing to be overheard.\""
+   },
+   {
+    "q": "What worked for some firms?",
+    "options": [
+     "Adding small enclosed rooms",
+     "Banning messages",
+     "Reducing staff numbers",
+     "Rebuilding all the walls"
+    ],
+    "answer": 0,
+    "note": "\"Added enough small enclosed rooms... Their conversation rates recovered.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-16",
+  "level": "B2",
+  "order": 16,
+  "kind": "reading",
+  "title": "Müzelerin ödünç aldığı eserler",
+  "titleEn": "The Exhibition That Traveled Too Far",
+  "minutes": 5,
+  "names": [],
+  "text": "A traveling exhibition looks generous. Objects that would otherwise be seen by the few thousand people who can reach one building are shown to hundreds of thousands across a continent. The cost of that generosity is rarely discussed outside the profession. Every journey exposes an object to changes in humidity and temperature, to vibration, and above all to handling, which is when almost all damage occurs. Conservators have a rule of thumb that the risk lies not in the flight but in the eleven separate occasions on which human hands lift the crate. Insurance covers the financial loss and can do nothing about the other kind. There is also a quieter effect. Objects that travel well are chosen repeatedly, so the same robust pieces tour while the fragile ones stay in storage, and the public's sense of what a collection contains is shaped by what survives a truck. Some museums have begun refusing loans for anything that has traveled twice in five years. The policy is unpopular with the institutions that want the object and, in the long run, is almost certainly correct.",
+  "glossary": [
+   {
+    "w": "exhibition",
+    "tr": "sergi"
+   },
+   {
+    "w": "generous",
+    "tr": "cömert"
+   },
+   {
+    "w": "humidity",
+    "tr": "nem"
+   },
+   {
+    "w": "vibration",
+    "tr": "titreşim"
+   },
+   {
+    "w": "handling",
+    "tr": "elle taşıma"
+   },
+   {
+    "w": "conservators",
+    "tr": "restorasyon uzmanları"
+   },
+   {
+    "w": "rule of thumb",
+    "tr": "pratik kural"
+   },
+   {
+    "w": "crate",
+    "tr": "sandık"
+   },
+   {
+    "w": "insurance",
+    "tr": "sigorta"
+   },
+   {
+    "w": "robust",
+    "tr": "sağlam, dayanıklı"
+   },
+   {
+    "w": "fragile",
+    "tr": "kırılgan"
+   },
+   {
+    "w": "storage",
+    "tr": "depo"
+   },
+   {
+    "w": "loans",
+    "tr": "ödünç verme"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does most damage occur?",
+    "options": [
+     "In the air",
+     "In storage",
+     "On display",
+     "During handling"
+    ],
+    "answer": 3,
+    "note": "\"Above all to handling, which is when almost all damage occurs.\""
+   },
+   {
+    "q": "What is the conservators' rule of thumb?",
+    "options": [
+     "The risk is in the eleven liftings, not the flight",
+     "Flights are the main danger",
+     "Insurance covers everything",
+     "Short journeys are safe"
+    ],
+    "answer": 0,
+    "note": "\"The risk lies not in the flight but in the eleven separate occasions.\""
+   },
+   {
+    "q": "What is the quieter effect?",
+    "options": [
+     "Museums lose money",
+     "Robust pieces tour while fragile ones stay hidden",
+     "Visitors fall",
+     "Objects are copied"
+    ],
+    "answer": 1,
+    "note": "\"The same robust pieces tour while the fragile ones stay in storage.\""
+   },
+   {
+    "q": "What have some museums begun doing?",
+    "options": [
+     "Ending all loans",
+     "Charging higher fees",
+     "Insuring twice",
+     "Refusing loans for objects that traveled twice in five years"
+    ],
+    "answer": 3,
+    "note": "\"Refusing loans for anything that has traveled twice in five years.\""
+   },
+   {
+    "q": "What is the writer's view of that policy?",
+    "options": [
+     "Clearly wrong",
+     "Impossible to enforce",
+     "Unpopular but almost certainly correct",
+     "Too weak to matter"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-17",
+  "level": "B2",
+  "order": 17,
+  "kind": "reading",
+  "title": "Kalabalıkla iş yapmak",
+  "titleEn": "The Wisdom of the Crowd, and Its Limits",
+  "minutes": 5,
+  "names": [],
+  "text": "Ask a large group to estimate the weight of an ox and the average of their guesses will be close to the true figure, often closer than any expert. The experiment is famous and it is usually told as a story about the intelligence of crowds. It is really a story about independence. The average works because the individual errors point in different directions and cancel out, and that only happens when nobody hears anybody else's answer. Repeat the experiment while letting participants see the guesses already submitted and the accuracy collapses, because early answers pull later ones towards them and the errors stop being independent. This is not an obscure academic point. It describes what happens in a meeting where the most senior person speaks first, and it explains why written estimates collected before discussion routinely beat the number a group agrees on after an hour of debate. The practical instruction that follows is almost insultingly simple and almost never followed: ask everybody to write their answer down before anybody says anything out loud. The objection is always the same, that a meeting is for discussion and that writing things privately defeats the purpose. It does not. The written figures are the starting point rather than the conclusion, and the discussion that follows them is better informed precisely because it begins from a spread of genuinely separate opinions instead of a single number that everybody has already agreed to.",
+  "glossary": [
+   {
+    "w": "estimate",
+    "tr": "tahmin etmek"
+   },
+   {
+    "w": "ox",
+    "tr": "öküz"
+   },
+   {
+    "w": "independence",
+    "tr": "bağımsızlık"
+   },
+   {
+    "w": "cancel out",
+    "tr": "birbirini götürmek"
+   },
+   {
+    "w": "participants",
+    "tr": "katılımcılar"
+   },
+   {
+    "w": "submitted",
+    "tr": "gönderilmiş"
+   },
+   {
+    "w": "accuracy",
+    "tr": "isabet"
+   },
+   {
+    "w": "collapses",
+    "tr": "çöker"
+   },
+   {
+    "w": "obscure",
+    "tr": "kapalı, sıra dışı"
+   },
+   {
+    "w": "senior",
+    "tr": "kıdemli"
+   },
+   {
+    "w": "routinely",
+    "tr": "düzenli olarak"
+   },
+   {
+    "w": "insultingly",
+    "tr": "hakaret edercesine"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does the average work?",
+    "options": [
+     "Individual errors cancel out",
+     "The task is easy",
+     "Experts join in",
+     "Crowds are intelligent"
+    ],
+    "answer": 0,
+    "note": "\"The individual errors point in different directions and cancel out.\""
+   },
+   {
+    "q": "What destroys the effect?",
+    "options": [
+     "Asking experts",
+     "Letting people see earlier guesses",
+     "Repeating the test",
+     "Using a larger group"
+    ],
+    "answer": 1,
+    "note": "\"Letting participants see the guesses already submitted and the accuracy collapses.\""
+   },
+   {
+    "q": "What does this explain about meetings?",
+    "options": [
+     "Why debate improves numbers",
+     "Why groups need experts",
+     "Why the senior person speaking first is harmful",
+     "Why meetings are too long"
+    ],
+    "answer": 2,
+    "note": "\"It describes what happens in a meeting where the most senior person speaks first.\""
+   },
+   {
+    "q": "What beats a group's agreed number?",
+    "options": [
+     "An expert's opinion",
+     "A longer debate",
+     "Written estimates collected before discussion",
+     "A second meeting"
+    ],
+    "answer": 2,
+    "note": "\"Written estimates collected before discussion routinely beat the number a group agrees on.\""
+   },
+   {
+    "q": "What is the practical instruction?",
+    "options": [
+     "Use larger groups",
+     "Let the junior speak first",
+     "Avoid meetings",
+     "Write answers down before anybody speaks"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-18",
+  "level": "B2",
+  "order": 18,
+  "kind": "reading",
+  "title": "Hastanede gece vardiyası",
+  "titleEn": "The Hours Nobody Watches",
+  "minutes": 5,
+  "names": [],
+  "text": "Hospital outcomes are measurably worse at night, and the reason is not that the staff on duty are less able. It is that almost every support around them thins out. Fewer senior doctors are on site, so a junior faces a decision alone that would be shared at noon. Test results take longer. The equipment is the same but the person who knows its particular failures has gone home. Add to this the biological cost of working against the body's own clock, which reduces accuracy in a way that no amount of professionalism prevents, and the gap becomes easy to explain and hard to close. The responses that work are unglamorous. A structured handover at every shift change, with a written form that cannot be skipped, is worth more than any appeal to vigilance. So is making it socially acceptable to telephone a senior at three in the morning, which sounds like a matter of policy and is really a matter of culture. Hospitals that have narrowed the night-time gap tend to describe the change in exactly those terms: not that they hired more people, but that nobody is now embarrassed to wake somebody up.",
+  "glossary": [
+   {
+    "w": "outcomes",
+    "tr": "sonuçlar"
+   },
+   {
+    "w": "on duty",
+    "tr": "görevde"
+   },
+   {
+    "w": "thins out",
+    "tr": "seyrelir"
+   },
+   {
+    "w": "junior",
+    "tr": "genç, kıdemsiz"
+   },
+   {
+    "w": "equipment",
+    "tr": "cihazlar"
+   },
+   {
+    "w": "biological",
+    "tr": "biyolojik"
+   },
+   {
+    "w": "professionalism",
+    "tr": "profesyonellik"
+   },
+   {
+    "w": "unglamorous",
+    "tr": "gösterişsiz"
+   },
+   {
+    "w": "handover",
+    "tr": "devir teslim"
+   },
+   {
+    "w": "skipped",
+    "tr": "atlanmış"
+   },
+   {
+    "w": "vigilance",
+    "tr": "dikkat, uyanıklık"
+   },
+   {
+    "w": "narrowed",
+    "tr": "daralttı"
+   },
+   {
+    "w": "embarrassed",
+    "tr": "mahcup"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why are night outcomes worse?",
+    "options": [
+     "The staff are less able",
+     "The support around the staff thins out",
+     "Equipment is older",
+     "Patients arrive later"
+    ],
+    "answer": 1,
+    "note": "\"Almost every support around them thins out.\""
+   },
+   {
+    "q": "What does the body's clock do?",
+    "options": [
+     "Makes staff sleep",
+     "Improves at night",
+     "Reduces accuracy whatever the effort",
+     "Has no measurable effect"
+    ],
+    "answer": 2,
+    "note": "\"Reduces accuracy in a way that no amount of professionalism prevents.\""
+   },
+   {
+    "q": "What is worth more than appeals to vigilance?",
+    "options": [
+     "Fewer patients",
+     "More equipment",
+     "A structured handover that cannot be skipped",
+     "Longer shifts"
+    ],
+    "answer": 2,
+    "note": "\"A structured handover at every shift change... is worth more than any appeal to vigilance.\""
+   },
+   {
+    "q": "What does the writer call a matter of culture?",
+    "options": [
+     "Hiring more staff",
+     "Writing the handover form",
+     "Being able to phone a senior at three",
+     "Buying equipment"
+    ],
+    "answer": 2,
+    "note": "\"Sounds like a matter of policy and is really a matter of culture.\""
+   },
+   {
+    "q": "How do successful hospitals describe the change?",
+    "options": [
+     "They cut the shifts",
+     "They hired more people",
+     "Nobody is embarrassed to wake somebody up",
+     "They closed at night"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-19",
+  "level": "B2",
+  "order": 19,
+  "kind": "reading",
+  "title": "İkinci el pazarının yükselişi",
+  "titleEn": "The Second Life of Everything",
+  "minutes": 5,
+  "names": [],
+  "text": "The market for used goods has grown faster than almost any part of retail, and the usual explanation is that buyers have become poorer or greener. Both are partly true and neither explains the shape of the growth. What changed was the removal of the two things that always made second-hand difficult: finding the item and trusting the seller. A search box solved the first. Ratings, photographs and a payment system that holds the money until the buyer confirms solved the second. Once those existed, the market grew into categories that nobody predicted, including furniture, which is expensive to move, and children's clothes, which are worn for weeks. There is an unresolved tension at the center of the business. Manufacturers benefit, because an item with a strong resale price is easier to sell new, and the buyer effectively borrows rather than buys. They also lose, because every used sale is a new one that did not happen. Most large firms have settled on a position that satisfies nobody: they run their own resale platforms, take a small fee, and quietly hope the whole thing stays small.",
+  "glossary": [
+   {
+    "w": "retail",
+    "tr": "perakende"
+   },
+   {
+    "w": "greener",
+    "tr": "daha çevreci"
+   },
+   {
+    "w": "ratings",
+    "tr": "puanlar"
+   },
+   {
+    "w": "confirms",
+    "tr": "onaylar"
+   },
+   {
+    "w": "categories",
+    "tr": "kategoriler"
+   },
+   {
+    "w": "unresolved",
+    "tr": "çözülmemiş"
+   },
+   {
+    "w": "tension",
+    "tr": "gerilim"
+   },
+   {
+    "w": "manufacturers",
+    "tr": "üreticiler"
+   },
+   {
+    "w": "resale",
+    "tr": "yeniden satış"
+   },
+   {
+    "w": "platforms",
+    "tr": "platformlar"
+   },
+   {
+    "w": "fee",
+    "tr": "komisyon, ücret"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the writer say about the usual explanations?",
+    "options": [
+     "Fully sufficient",
+     "Partly true but they do not explain the shape",
+     "Impossible to test",
+     "Completely wrong"
+    ],
+    "answer": 1,
+    "note": "\"Both are partly true and neither explains the shape of the growth.\""
+   },
+   {
+    "q": "What actually changed?",
+    "options": [
+     "Shops closed",
+     "Prices fell sharply",
+     "Quality improved",
+     "Finding items and trusting sellers became easy"
+    ],
+    "answer": 3,
+    "note": "\"The removal of the two things that always made second-hand difficult.\""
+   },
+   {
+    "q": "What solved the trust problem?",
+    "options": [
+     "Cheaper delivery",
+     "A search box",
+     "Ratings and held payments",
+     "New laws"
+    ],
+    "answer": 2,
+    "note": "\"Ratings, photographs and a payment system that holds the money.\""
+   },
+   {
+    "q": "Why do manufacturers benefit?",
+    "options": [
+     "They control the platforms",
+     "They take all the profit",
+     "A strong resale price helps sell new items",
+     "Used goods break quickly"
+    ],
+    "answer": 2,
+    "note": "\"An item with a strong resale price is easier to sell new.\""
+   },
+   {
+    "q": "What position have most large firms taken?",
+    "options": [
+     "Ban resale entirely",
+     "Buy the platforms",
+     "Lower new prices",
+     "Run their own resale sites and hope it stays small"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-20",
+  "level": "B2",
+  "order": 20,
+  "kind": "reading",
+  "title": "Yapay ışığın bedeli",
+  "titleEn": "The Cost of Lighting Everything",
+  "minutes": 5,
+  "names": [],
+  "text": "Cheap lighting was one of the clearest improvements of the last century, and like most clear improvements it was applied far past the point of usefulness. A street that is lit well enough to read a newspaper is lit considerably brighter than is needed to walk safely, and the extra brightness produces glare, which makes the dark places between lamps harder to see into rather than easier. The effect on wildlife is better documented than most people assume. Insects that navigate by the moon circle a lamp until they die, and the species that eat them follow the food and lose their own cycles. For human beings the measurable cost is to sleep, and it is caused less by the quantity of light than by its color: the blue-heavy light that is cheapest to produce is also the most effective at telling the body that the day has not ended. Several cities have quietly reduced their lighting at night and reported no rise in crime, which is the result nobody campaigns on because it is difficult to celebrate the absence of something. The cheapest improvement available is not to switch lights off but to point them down.",
+  "glossary": [
+   {
+    "w": "lighting",
+    "tr": "aydınlatma"
+   },
+   {
+    "w": "glare",
+    "tr": "göz kamaştırma"
+   },
+   {
+    "w": "wildlife",
+    "tr": "yaban hayatı"
+   },
+   {
+    "w": "documented",
+    "tr": "belgelenmiş"
+   },
+   {
+    "w": "navigate",
+    "tr": "yön bulmak"
+   },
+   {
+    "w": "species",
+    "tr": "türler"
+   },
+   {
+    "w": "cycles",
+    "tr": "döngüler"
+   },
+   {
+    "w": "quantity",
+    "tr": "miktar"
+   },
+   {
+    "w": "campaigns",
+    "tr": "kampanya yapar"
+   },
+   {
+    "w": "celebrate",
+    "tr": "kutlamak"
+   },
+   {
+    "w": "absence",
+    "tr": "yokluk"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does extra brightness produce?",
+    "options": [
+     "A clearer view everywhere",
+     "Glare that hides the dark places",
+     "Safer streets",
+     "Lower costs"
+    ],
+    "answer": 1,
+    "note": "\"The extra brightness produces glare.\""
+   },
+   {
+    "q": "What happens to insects?",
+    "options": [
+     "They change color",
+     "They avoid lit streets",
+     "They breed faster",
+     "They circle a lamp until they die"
+    ],
+    "answer": 3,
+    "note": "\"Insects that navigate by the moon circle a lamp until they die.\""
+   },
+   {
+    "q": "What causes the cost to human sleep?",
+    "options": [
+     "The color of the light",
+     "The hour they switch on",
+     "The height of the lamps",
+     "The number of lamps"
+    ],
+    "answer": 0,
+    "note": "\"Caused less by the quantity of light than by its color.\""
+   },
+   {
+    "q": "What did several cities report?",
+    "options": [
+     "More complaints",
+     "A sharp rise in crime",
+     "Higher costs",
+     "No rise in crime after reducing lighting"
+    ],
+    "answer": 3,
+    "note": "\"Reported no rise in crime.\""
+   },
+   {
+    "q": "What is the cheapest improvement?",
+    "options": [
+     "Switch the lights off",
+     "Use more lamps",
+     "Point the lights down",
+     "Change the hours"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-21",
+  "level": "B2",
+  "order": 21,
+  "kind": "reading",
+  "title": "Ses kaydı ve hafıza",
+  "titleEn": "Recording the Family",
+  "minutes": 5,
+  "names": [],
+  "text": "A growing number of people are recording conversations with elderly relatives, and the results are almost never what the recorder expected. The instinct is to ask about history: the war, the move, the hard years. Those answers tend to be the least useful, partly because they have been told so often that they have hardened into a fixed shape, and partly because the important detail has usually been polished away. The recordings that turn out to matter are the ones where nothing happens. A description of a kitchen. The names of four neighbors on a street that no longer exists. How much a bus cost and what the driver did when somebody could not pay. These are the things nobody thinks to preserve, because they seem too ordinary to lose, and they are exactly what disappears first. There is a practical difficulty. Most people begin recording after a diagnosis, which is the worst possible moment: the subject is tired, the family is frightened, and the recording carries a weight that makes ordinary talk impossible. The advice that archivists give is uncomfortable but consistent. Start ten years early, while it still feels unnecessary, and ask about a Tuesday rather than a decade.",
+  "glossary": [
+   {
+    "w": "elderly",
+    "tr": "yaşlı"
+   },
+   {
+    "w": "instinct",
+    "tr": "içgüdü"
+   },
+   {
+    "w": "hardened",
+    "tr": "katılaşmış"
+   },
+   {
+    "w": "polished away",
+    "tr": "cilalanıp yok edilmiş"
+   },
+   {
+    "w": "preserve",
+    "tr": "korumak, saklamak"
+   },
+   {
+    "w": "diagnosis",
+    "tr": "teşhis"
+   },
+   {
+    "w": "frightened",
+    "tr": "korkmuş"
+   },
+   {
+    "w": "archivists",
+    "tr": "arşivciler"
+   },
+   {
+    "w": "consistent",
+    "tr": "tutarlı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why are the history answers least useful?",
+    "options": [
+     "They are too short",
+     "They have hardened into a fixed shape",
+     "They are untrue",
+     "Nobody remembers them"
+    ],
+    "answer": 1,
+    "note": "\"They have been told so often that they have hardened into a fixed shape.\""
+   },
+   {
+    "q": "Which recordings turn out to matter?",
+    "options": [
+     "The earliest ones",
+     "The ones about the war",
+     "The longest ones",
+     "The ones where nothing happens"
+    ],
+    "answer": 3,
+    "note": "\"The recordings that turn out to matter are the ones where nothing happens.\""
+   },
+   {
+    "q": "Why is the ordinary detail lost?",
+    "options": [
+     "Nobody can remember it",
+     "It is embarrassing",
+     "It is not recorded well",
+     "It seems too ordinary to lose"
+    ],
+    "answer": 3,
+    "note": "\"They seem too ordinary to lose, and they are exactly what disappears first.\""
+   },
+   {
+    "q": "Why is starting after a diagnosis bad?",
+    "options": [
+     "The subject refuses",
+     "The equipment fails",
+     "It costs more",
+     "The recording carries a weight that stops ordinary talk"
+    ],
+    "answer": 3,
+    "note": "\"The recording carries a weight that makes ordinary talk impossible.\""
+   },
+   {
+    "q": "What do archivists advise?",
+    "options": [
+     "Start ten years early and ask about a Tuesday",
+     "Wait for the right moment",
+     "Ask about the war first",
+     "Record only once"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-22",
+  "level": "B2",
+  "order": 22,
+  "kind": "reading",
+  "title": "Turizmin iki yüzü",
+  "titleEn": "The Town That Filled Up",
+  "minutes": 5,
+  "names": [],
+  "text": "A coastal town of nine thousand people receives about four hundred thousand visitors a year, and the arithmetic of that produces effects that neither side of the argument describes accurately. The complaint that tourism destroys a place is too simple. Without the visitors the town would have the economy of the villages inland, which are emptying at a rate nobody defends. The claim that tourism saves a place is equally careless. The money arrives, but it arrives in a shape that the town cannot easily use: concentrated in fourteen weeks, spent mostly with firms registered elsewhere, and paid to staff who are themselves seasonal and leave in October. What the town is left with for the other thirty-eight weeks is a high street where two thirds of the units are shut and a housing market priced for people who are not there. The interventions that have worked in comparable places are unglamorous and local. A limit on how many properties in one street may be let to visitors. A requirement that a proportion of new building be sold only to residents. Neither policy attracts headlines, and both are considerably more effective than the debates that do.",
+  "glossary": [
+   {
+    "w": "coastal",
+    "tr": "kıyı"
+   },
+   {
+    "w": "arithmetic",
+    "tr": "aritmetik, hesap"
+   },
+   {
+    "w": "inland",
+    "tr": "iç kesimlerde"
+   },
+   {
+    "w": "careless",
+    "tr": "özensiz"
+   },
+   {
+    "w": "concentrated",
+    "tr": "yoğunlaşmış"
+   },
+   {
+    "w": "registered",
+    "tr": "kayıtlı"
+   },
+   {
+    "w": "seasonal",
+    "tr": "mevsimlik"
+   },
+   {
+    "w": "units",
+    "tr": "dükkânlar, birimler"
+   },
+   {
+    "w": "interventions",
+    "tr": "müdahaleler"
+   },
+   {
+    "w": "comparable",
+    "tr": "benzer"
+   },
+   {
+    "w": "properties",
+    "tr": "mülkler"
+   },
+   {
+    "w": "residents",
+    "tr": "yerleşikler, oturanlar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is the complaint too simple?",
+    "options": [
+     "The numbers are wrong",
+     "The town is too small",
+     "Without visitors the town would empty like the villages",
+     "Tourism does no damage"
+    ],
+    "answer": 2,
+    "note": "\"Without the visitors the town would have the economy of the villages inland.\""
+   },
+   {
+    "q": "What is wrong with the money that arrives?",
+    "options": [
+     "It comes in a shape the town cannot use",
+     "It is taxed twice",
+     "There is too little of it",
+     "It arrives too late"
+    ],
+    "answer": 0,
+    "note": "\"It arrives in a shape that the town cannot easily use.\""
+   },
+   {
+    "q": "What is the town left with off-season?",
+    "options": [
+     "Shut units and housing priced for absent people",
+     "More residents",
+     "A stable economy",
+     "An empty beach only"
+    ],
+    "answer": 0,
+    "note": "\"Two thirds of the units are shut and a housing market priced for people who are not there.\""
+   },
+   {
+    "q": "What kind of measures have worked?",
+    "options": [
+     "Higher taxes on visitors",
+     "Building more hotels",
+     "Unglamorous local limits and requirements",
+     "National campaigns"
+    ],
+    "answer": 2,
+    "note": "\"The interventions that have worked... are unglamorous and local.\""
+   },
+   {
+    "q": "What does the writer say about headlines?",
+    "options": [
+     "They shape good policy",
+     "They are always wrong",
+     "They help the town",
+     "The effective policies do not attract them"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-23",
+  "level": "B2",
+  "order": 23,
+  "kind": "reading",
+  "title": "Sınav kaygısı",
+  "titleEn": "What the Nerves Are For",
+  "minutes": 5,
+  "names": [],
+  "text": "Exam nerves are usually treated as a problem to be removed, and a great deal of advice is built on that assumption. The assumption is only half right. A moderate rise in heart rate before a test improves performance measurably; the body is preparing to concentrate, and students who report feeling nothing at all tend to do worse than those who report feeling slightly sick. What harms performance is not the sensation but the interpretation. A student who reads a fast heartbeat as evidence that they are about to fail enters a loop in which the fear produces the symptom and the symptom confirms the fear. Studies that simply tell students the physical meaning of what they are feeling, without any relaxation technique at all, produce a small but reliable improvement in results. This is a cheap intervention and it is rarely attempted, partly because it sounds too easy to be serious. It also has an obvious limit. Reframing works on ordinary nerves and does nothing for a student whose anxiety is severe enough to stop them entering the room, and treating those two situations as the same problem is the mistake that the confident advice usually makes.",
+  "glossary": [
+   {
+    "w": "nerves",
+    "tr": "gerginlik, heyecan"
+   },
+   {
+    "w": "assumption",
+    "tr": "varsayım"
+   },
+   {
+    "w": "moderate",
+    "tr": "ölçülü"
+   },
+   {
+    "w": "performance",
+    "tr": "başarım"
+   },
+   {
+    "w": "sensation",
+    "tr": "his, duyum"
+   },
+   {
+    "w": "interpretation",
+    "tr": "yorum"
+   },
+   {
+    "w": "symptom",
+    "tr": "belirti"
+   },
+   {
+    "w": "relaxation",
+    "tr": "gevşeme"
+   },
+   {
+    "w": "intervention",
+    "tr": "müdahale"
+   },
+   {
+    "w": "reframing",
+    "tr": "yeniden çerçeveleme"
+   },
+   {
+    "w": "anxiety",
+    "tr": "kaygı"
+   },
+   {
+    "w": "severe",
+    "tr": "ağır, şiddetli"
+   },
+   {
+    "w": "heartbeat",
+    "tr": "kalp atışı"
+   },
+   {
+    "w": "loop",
+    "tr": "döngü"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does a moderate rise in heart rate do?",
+    "options": [
+     "It has no effect",
+     "It improves performance",
+     "It causes panic",
+     "It always harms results"
+    ],
+    "answer": 1,
+    "note": "\"A moderate rise in heart rate before a test improves performance measurably.\""
+   },
+   {
+    "q": "What actually harms performance?",
+    "options": [
+     "The length of the exam",
+     "Lack of sleep",
+     "The sensation itself",
+     "The interpretation of the sensation"
+    ],
+    "answer": 3,
+    "note": "\"What harms performance is not the sensation but the interpretation.\""
+   },
+   {
+    "q": "What do the studies do?",
+    "options": [
+     "Give extra time",
+     "Teach relaxation",
+     "Make the exam shorter",
+     "Tell students the physical meaning of the feeling"
+    ],
+    "answer": 3,
+    "note": "\"Studies that simply tell students the physical meaning of what they are feeling.\""
+   },
+   {
+    "q": "Why is the intervention rarely attempted?",
+    "options": [
+     "It does not work",
+     "It takes months",
+     "It sounds too easy to be serious",
+     "It costs too much"
+    ],
+    "answer": 2,
+    "note": "\"Partly because it sounds too easy to be serious.\""
+   },
+   {
+    "q": "What is the limit of the method?",
+    "options": [
+     "It only works once",
+     "It works only in one subject",
+     "It needs a teacher",
+     "It does nothing for severe anxiety"
+    ],
+    "answer": 3,
+    "note": "\"Reframing... does nothing for a student whose anxiety is severe.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-24",
+  "level": "B2",
+  "order": 24,
+  "kind": "reading",
+  "title": "Tamir hakkı",
+  "titleEn": "The Right to Open the Case",
+  "minutes": 5,
+  "names": [],
+  "text": "For about two decades it became steadily harder to repair the things people own. Cases were glued rather than screwed, parts were paired to a single device by software, and repair manuals were treated as commercial secrets. The manufacturers' argument was safety, and it was not entirely dishonest: a badly repaired battery is genuinely dangerous. The argument was also extremely convenient, since the same policies produced a replacement cycle that no marketing department could have achieved on its own. The change now under way came from an unusual direction. Rather than banning the practices, several governments required firms to publish a repairability score on the packaging, in the same place as the energy rating. Scores are crude and can be gamed, and within two years the average score rose sharply, which suggests that the gaming was less effective than the embarrassment. The remaining obstacle is not law but skill. A generation has grown up without ever opening anything, and a repairable device is worth little to somebody who has never held a screwdriver. The countries making the most progress are the ones that funded repair workshops at the same time as the labels.",
+  "glossary": [
+   {
+    "w": "glued",
+    "tr": "yapıştırılmış"
+   },
+   {
+    "w": "glue",
+    "tr": "yapıştırıcı"
+   },
+   {
+    "w": "screwed",
+    "tr": "vidalanmış"
+   },
+   {
+    "w": "paired",
+    "tr": "eşleştirilmiş"
+   },
+   {
+    "w": "manuals",
+    "tr": "kılavuzlar"
+   },
+   {
+    "w": "commercial",
+    "tr": "ticari"
+   },
+   {
+    "w": "dishonest",
+    "tr": "dürüst olmayan"
+   },
+   {
+    "w": "convenient",
+    "tr": "işe gelen"
+   },
+   {
+    "w": "repairability",
+    "tr": "onarılabilirlik"
+   },
+   {
+    "w": "crude",
+    "tr": "kaba, ham"
+   },
+   {
+    "w": "gamed",
+    "tr": "suistimal edilmiş"
+   },
+   {
+    "w": "embarrassment",
+    "tr": "mahcubiyet"
+   },
+   {
+    "w": "obstacle",
+    "tr": "engel"
+   },
+   {
+    "w": "screwdriver",
+    "tr": "tornavida"
+   },
+   {
+    "w": "workshops",
+    "tr": "atölyeler"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What made repair harder?",
+    "options": [
+     "Fewer shops",
+     "New materials only",
+     "Glued cases, paired parts and secret manuals",
+     "Higher prices"
+    ],
+    "answer": 2,
+    "note": "\"Cases were glued rather than screwed, parts were paired... manuals were treated as commercial secrets.\""
+   },
+   {
+    "q": "What does the writer say about the safety argument?",
+    "options": [
+     "Not entirely dishonest but very convenient",
+     "Never made",
+     "Completely false",
+     "Fully justified"
+    ],
+    "answer": 0,
+    "note": "\"It was not entirely dishonest... The argument was also extremely convenient.\""
+   },
+   {
+    "q": "What did several governments require?",
+    "options": [
+     "A repairability score on the packaging",
+     "A ban on glue",
+     "Longer guarantees",
+     "Free repair manuals"
+    ],
+    "answer": 0,
+    "note": "\"Required firms to publish a repairability score on the packaging.\""
+   },
+   {
+    "q": "What does the rise in scores suggest?",
+    "options": [
+     "Firms ignored the rule",
+     "The law was strict",
+     "Embarrassment worked better than gaming",
+     "The scores are accurate"
+    ],
+    "answer": 2,
+    "note": "\"The gaming was less effective than the embarrassment.\""
+   },
+   {
+    "q": "What is the remaining obstacle?",
+    "options": [
+     "Skill, not law",
+     "The law",
+     "Cost",
+     "Materials"
+    ],
+    "answer": 0,
+    "note": "\"The remaining obstacle is not law but skill.\""
+   }
+  ]
+ },
+ {
+  "id": "b2-r-25",
+  "level": "B2",
+  "order": 25,
+  "kind": "reading",
+  "title": "Yeni bir şehirde arkadaşlık",
+  "titleEn": "Making Friends After Thirty",
+  "minutes": 5,
+  "names": [],
+  "text": "People who move cities in their thirties are routinely surprised by how hard it is to make friends, having found it effortless at twenty. The explanation is not that adults are colder. Friendship reliably requires three conditions: repeated unplanned contact, a shared activity, and enough time in one another's company for the conversation to move past the subject that brought people together. School and university supply all three without anybody arranging anything. Adult life supplies the first only at work, where the relationship is complicated by the fact that both parties are being paid to be there and one of them may one day be reviewing the other. The practical conclusion is unromantic and it is the only one that reliably works. Friendship in adulthood has to be scheduled, which feels wrong to people who remember it happening by itself. The activity matters less than its regularity: a class that meets weekly for eight weeks will produce more genuine connection than eight separate interesting evenings with different people. Those who understand this tend to describe the first year in a new city as a project rather than a disappointment, and they are the ones who are still there in year three.",
+  "glossary": [
+   {
+    "w": "effortless",
+    "tr": "zahmetsiz"
+   },
+   {
+    "w": "reliably",
+    "tr": "güvenilir biçimde"
+   },
+   {
+    "w": "unplanned",
+    "tr": "planlanmamış"
+   },
+   {
+    "w": "parties",
+    "tr": "taraflar"
+   },
+   {
+    "w": "reviewing",
+    "tr": "değerlendirmek"
+   },
+   {
+    "w": "unromantic",
+    "tr": "romantik olmayan"
+   },
+   {
+    "w": "scheduled",
+    "tr": "planlanmış"
+   },
+   {
+    "w": "regularity",
+    "tr": "düzenlilik"
+   },
+   {
+    "w": "connection",
+    "tr": "bağ"
+   },
+   {
+    "w": "disappointment",
+    "tr": "hayal kırıklığı"
+   },
+   {
+    "w": "adulthood",
+    "tr": "yetişkinlik"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What are the three conditions for friendship?",
+    "options": [
+     "Interest, humor and space",
+     "Unplanned contact, a shared activity, and time",
+     "Work, school and family",
+     "Money, time and luck"
+    ],
+    "answer": 1,
+    "note": "\"Repeated unplanned contact, a shared activity, and enough time.\""
+   },
+   {
+    "q": "Why is work an incomplete substitute?",
+    "options": [
+     "It is too formal",
+     "There is no time",
+     "Both are paid to be there and one may review the other",
+     "Colleagues are unfriendly"
+    ],
+    "answer": 2,
+    "note": "\"Both parties are being paid to be there and one of them may one day be reviewing the other.\""
+   },
+   {
+    "q": "What is the practical conclusion?",
+    "options": [
+     "Adult friendship has to be scheduled",
+     "It is impossible after thirty",
+     "Change jobs",
+     "Move back home"
+    ],
+    "answer": 0,
+    "note": "\"Friendship in adulthood has to be scheduled.\""
+   },
+   {
+    "q": "What matters more than the activity?",
+    "options": [
+     "Its regularity",
+     "Its cost",
+     "Its subject",
+     "Its size"
+    ],
+    "answer": 0,
+    "note": "\"The activity matters less than its regularity.\""
+   },
+   {
+    "q": "How do successful people describe the first year?",
+    "options": [
+     "As a holiday",
+     "As the easiest year",
+     "As a project rather than a disappointment",
+     "As a mistake"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
  }
 ]

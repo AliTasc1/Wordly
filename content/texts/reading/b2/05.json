@@ -1,0 +1,166 @@
+{
+  "_meta": { "batch": "b2-reading-05", "level": "B2", "range": "Parça 21-25" },
+  "items": [
+    {
+      "id": "b2-r-21",
+      "level": "B2",
+      "order": 21,
+      "kind": "reading",
+      "title": "Ses kaydı ve hafıza",
+      "titleEn": "Recording the Family",
+      "minutes": 5,
+      "names": [],
+      "text": "A growing number of people are recording conversations with elderly relatives, and the results are almost never what the recorder expected. The instinct is to ask about history: the war, the move, the hard years. Those answers tend to be the least useful, partly because they have been told so often that they have hardened into a fixed shape, and partly because the important detail has usually been polished away. The recordings that turn out to matter are the ones where nothing happens. A description of a kitchen. The names of four neighbors on a street that no longer exists. How much a bus cost and what the driver did when somebody could not pay. These are the things nobody thinks to preserve, because they seem too ordinary to lose, and they are exactly what disappears first. There is a practical difficulty. Most people begin recording after a diagnosis, which is the worst possible moment: the subject is tired, the family is frightened, and the recording carries a weight that makes ordinary talk impossible. The advice that archivists give is uncomfortable but consistent. Start ten years early, while it still feels unnecessary, and ask about a Tuesday rather than a decade.",
+      "glossary": [
+        { "w": "elderly", "tr": "yaşlı" },
+        { "w": "instinct", "tr": "içgüdü" },
+        { "w": "hardened", "tr": "katılaşmış" },
+        { "w": "polished away", "tr": "cilalanıp yok edilmiş" },
+        { "w": "preserve", "tr": "korumak, saklamak" },
+        { "w": "diagnosis", "tr": "teşhis" },
+        { "w": "frightened", "tr": "korkmuş" },
+        { "w": "archivists", "tr": "arşivciler" },
+        { "w": "consistent", "tr": "tutarlı" }
+      ],
+      "questions": [
+        { "q": "Why are the history answers least useful?", "options": ["They have hardened into a fixed shape", "They are untrue", "They are too short", "Nobody remembers them"], "answer": 0, "note": "\"They have been told so often that they have hardened into a fixed shape.\"" },
+        { "q": "Which recordings turn out to matter?", "options": ["The ones where nothing happens", "The ones about the war", "The longest ones", "The earliest ones"], "answer": 0, "note": "\"The recordings that turn out to matter are the ones where nothing happens.\"" },
+        { "q": "Why is the ordinary detail lost?", "options": ["It seems too ordinary to lose", "Nobody can remember it", "It is not recorded well", "It is embarrassing"], "answer": 0, "note": "\"They seem too ordinary to lose, and they are exactly what disappears first.\"" },
+        { "q": "Why is starting after a diagnosis bad?", "options": ["The recording carries a weight that stops ordinary talk", "The equipment fails", "The subject refuses", "It costs more"], "answer": 0, "note": "\"The recording carries a weight that makes ordinary talk impossible.\"" },
+        { "q": "What do archivists advise?", "options": ["Start ten years early and ask about a Tuesday", "Wait for the right moment", "Ask about the war first", "Record only once"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-22",
+      "level": "B2",
+      "order": 22,
+      "kind": "reading",
+      "title": "Turizmin iki yüzü",
+      "titleEn": "The Town That Filled Up",
+      "minutes": 5,
+      "names": [],
+      "text": "A coastal town of nine thousand people receives about four hundred thousand visitors a year, and the arithmetic of that produces effects that neither side of the argument describes accurately. The complaint that tourism destroys a place is too simple. Without the visitors the town would have the economy of the villages inland, which are emptying at a rate nobody defends. The claim that tourism saves a place is equally careless. The money arrives, but it arrives in a shape that the town cannot easily use: concentrated in fourteen weeks, spent mostly with firms registered elsewhere, and paid to staff who are themselves seasonal and leave in October. What the town is left with for the other thirty-eight weeks is a high street where two thirds of the units are shut and a housing market priced for people who are not there. The interventions that have worked in comparable places are unglamorous and local. A limit on how many properties in one street may be let to visitors. A requirement that a proportion of new building be sold only to residents. Neither policy attracts headlines, and both are considerably more effective than the debates that do.",
+      "glossary": [
+        { "w": "coastal", "tr": "kıyı" },
+        { "w": "arithmetic", "tr": "aritmetik, hesap" },
+        { "w": "inland", "tr": "iç kesimlerde" },
+        { "w": "careless", "tr": "özensiz" },
+        { "w": "concentrated", "tr": "yoğunlaşmış" },
+        { "w": "registered", "tr": "kayıtlı" },
+        { "w": "seasonal", "tr": "mevsimlik" },
+        { "w": "units", "tr": "dükkânlar, birimler" },
+        { "w": "interventions", "tr": "müdahaleler" },
+        { "w": "comparable", "tr": "benzer" },
+        { "w": "properties", "tr": "mülkler" },
+        { "w": "residents", "tr": "yerleşikler, oturanlar" }
+      ],
+      "questions": [
+        { "q": "Why is the complaint too simple?", "options": ["Without visitors the town would empty like the villages", "Tourism does no damage", "The numbers are wrong", "The town is too small"], "answer": 0, "note": "\"Without the visitors the town would have the economy of the villages inland.\"" },
+        { "q": "What is wrong with the money that arrives?", "options": ["It comes in a shape the town cannot use", "There is too little of it", "It is taxed twice", "It arrives too late"], "answer": 0, "note": "\"It arrives in a shape that the town cannot easily use.\"" },
+        { "q": "What is the town left with off-season?", "options": ["Shut units and housing priced for absent people", "An empty beach only", "A stable economy", "More residents"], "answer": 0, "note": "\"Two thirds of the units are shut and a housing market priced for people who are not there.\"" },
+        { "q": "What kind of measures have worked?", "options": ["Unglamorous local limits and requirements", "National campaigns", "Higher taxes on visitors", "Building more hotels"], "answer": 0, "note": "\"The interventions that have worked... are unglamorous and local.\"" },
+        { "q": "What does the writer say about headlines?", "options": ["The effective policies do not attract them", "They shape good policy", "They are always wrong", "They help the town"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-23",
+      "level": "B2",
+      "order": 23,
+      "kind": "reading",
+      "title": "Sınav kaygısı",
+      "titleEn": "What the Nerves Are For",
+      "minutes": 5,
+      "names": [],
+      "text": "Exam nerves are usually treated as a problem to be removed, and a great deal of advice is built on that assumption. The assumption is only half right. A moderate rise in heart rate before a test improves performance measurably; the body is preparing to concentrate, and students who report feeling nothing at all tend to do worse than those who report feeling slightly sick. What harms performance is not the sensation but the interpretation. A student who reads a fast heartbeat as evidence that they are about to fail enters a loop in which the fear produces the symptom and the symptom confirms the fear. Studies that simply tell students the physical meaning of what they are feeling, without any relaxation technique at all, produce a small but reliable improvement in results. This is a cheap intervention and it is rarely attempted, partly because it sounds too easy to be serious. It also has an obvious limit. Reframing works on ordinary nerves and does nothing for a student whose anxiety is severe enough to stop them entering the room, and treating those two situations as the same problem is the mistake that the confident advice usually makes.",
+      "glossary": [
+        { "w": "nerves", "tr": "gerginlik, heyecan" },
+        { "w": "assumption", "tr": "varsayım" },
+        { "w": "moderate", "tr": "ölçülü" },
+        { "w": "performance", "tr": "başarım" },
+        { "w": "sensation", "tr": "his, duyum" },
+        { "w": "interpretation", "tr": "yorum" },
+        { "w": "symptom", "tr": "belirti" },
+        { "w": "relaxation", "tr": "gevşeme" },
+        { "w": "intervention", "tr": "müdahale" },
+        { "w": "reframing", "tr": "yeniden çerçeveleme" },
+        { "w": "anxiety", "tr": "kaygı" },
+        { "w": "severe", "tr": "ağır, şiddetli" },
+        { "w": "heartbeat", "tr": "kalp atışı" },
+        { "w": "loop", "tr": "döngü" }
+      ],
+      "questions": [
+        { "q": "What does a moderate rise in heart rate do?", "options": ["It improves performance", "It always harms results", "It has no effect", "It causes panic"], "answer": 0, "note": "\"A moderate rise in heart rate before a test improves performance measurably.\"" },
+        { "q": "What actually harms performance?", "options": ["The interpretation of the sensation", "The sensation itself", "The length of the exam", "Lack of sleep"], "answer": 0, "note": "\"What harms performance is not the sensation but the interpretation.\"" },
+        { "q": "What do the studies do?", "options": ["Tell students the physical meaning of the feeling", "Teach relaxation", "Make the exam shorter", "Give extra time"], "answer": 0, "note": "\"Studies that simply tell students the physical meaning of what they are feeling.\"" },
+        { "q": "Why is the intervention rarely attempted?", "options": ["It sounds too easy to be serious", "It costs too much", "It does not work", "It takes months"], "answer": 0, "note": "\"Partly because it sounds too easy to be serious.\"" },
+        { "q": "What is the limit of the method?", "options": ["It does nothing for severe anxiety", "It only works once", "It needs a teacher", "It works only in one subject"], "answer": 0, "note": "\"Reframing... does nothing for a student whose anxiety is severe.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-24",
+      "level": "B2",
+      "order": 24,
+      "kind": "reading",
+      "title": "Tamir hakkı",
+      "titleEn": "The Right to Open the Case",
+      "minutes": 5,
+      "names": [],
+      "text": "For about two decades it became steadily harder to repair the things people own. Cases were glued rather than screwed, parts were paired to a single device by software, and repair manuals were treated as commercial secrets. The manufacturers' argument was safety, and it was not entirely dishonest: a badly repaired battery is genuinely dangerous. The argument was also extremely convenient, since the same policies produced a replacement cycle that no marketing department could have achieved on its own. The change now under way came from an unusual direction. Rather than banning the practices, several governments required firms to publish a repairability score on the packaging, in the same place as the energy rating. Scores are crude and can be gamed, and within two years the average score rose sharply, which suggests that the gaming was less effective than the embarrassment. The remaining obstacle is not law but skill. A generation has grown up without ever opening anything, and a repairable device is worth little to somebody who has never held a screwdriver. The countries making the most progress are the ones that funded repair workshops at the same time as the labels.",
+      "glossary": [
+        { "w": "glued", "tr": "yapıştırılmış" },
+        { "w": "glue", "tr": "yapıştırıcı" },
+        { "w": "screwed", "tr": "vidalanmış" },
+        { "w": "paired", "tr": "eşleştirilmiş" },
+        { "w": "manuals", "tr": "kılavuzlar" },
+        { "w": "commercial", "tr": "ticari" },
+        { "w": "dishonest", "tr": "dürüst olmayan" },
+        { "w": "convenient", "tr": "işe gelen" },
+        { "w": "repairability", "tr": "onarılabilirlik" },
+        { "w": "crude", "tr": "kaba, ham" },
+        { "w": "gamed", "tr": "suistimal edilmiş" },
+        { "w": "embarrassment", "tr": "mahcubiyet" },
+        { "w": "obstacle", "tr": "engel" },
+        { "w": "screwdriver", "tr": "tornavida" },
+        { "w": "workshops", "tr": "atölyeler" }
+      ],
+      "questions": [
+        { "q": "What made repair harder?", "options": ["Glued cases, paired parts and secret manuals", "Higher prices", "Fewer shops", "New materials only"], "answer": 0, "note": "\"Cases were glued rather than screwed, parts were paired... manuals were treated as commercial secrets.\"" },
+        { "q": "What does the writer say about the safety argument?", "options": ["Not entirely dishonest but very convenient", "Completely false", "Fully justified", "Never made"], "answer": 0, "note": "\"It was not entirely dishonest... The argument was also extremely convenient.\"" },
+        { "q": "What did several governments require?", "options": ["A repairability score on the packaging", "A ban on glue", "Free repair manuals", "Longer guarantees"], "answer": 0, "note": "\"Required firms to publish a repairability score on the packaging.\"" },
+        { "q": "What does the rise in scores suggest?", "options": ["Embarrassment worked better than gaming", "The scores are accurate", "The law was strict", "Firms ignored the rule"], "answer": 0, "note": "\"The gaming was less effective than the embarrassment.\"" },
+        { "q": "What is the remaining obstacle?", "options": ["Skill, not law", "Cost", "The law", "Materials"], "answer": 0, "note": "\"The remaining obstacle is not law but skill.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-25",
+      "level": "B2",
+      "order": 25,
+      "kind": "reading",
+      "title": "Yeni bir şehirde arkadaşlık",
+      "titleEn": "Making Friends After Thirty",
+      "minutes": 5,
+      "names": [],
+      "text": "People who move cities in their thirties are routinely surprised by how hard it is to make friends, having found it effortless at twenty. The explanation is not that adults are colder. Friendship reliably requires three conditions: repeated unplanned contact, a shared activity, and enough time in one another's company for the conversation to move past the subject that brought people together. School and university supply all three without anybody arranging anything. Adult life supplies the first only at work, where the relationship is complicated by the fact that both parties are being paid to be there and one of them may one day be reviewing the other. The practical conclusion is unromantic and it is the only one that reliably works. Friendship in adulthood has to be scheduled, which feels wrong to people who remember it happening by itself. The activity matters less than its regularity: a class that meets weekly for eight weeks will produce more genuine connection than eight separate interesting evenings with different people. Those who understand this tend to describe the first year in a new city as a project rather than a disappointment, and they are the ones who are still there in year three.",
+      "glossary": [
+        { "w": "effortless", "tr": "zahmetsiz" },
+        { "w": "reliably", "tr": "güvenilir biçimde" },
+        { "w": "unplanned", "tr": "planlanmamış" },
+        { "w": "parties", "tr": "taraflar" },
+        { "w": "reviewing", "tr": "değerlendirmek" },
+        { "w": "unromantic", "tr": "romantik olmayan" },
+        { "w": "scheduled", "tr": "planlanmış" },
+        { "w": "regularity", "tr": "düzenlilik" },
+        { "w": "connection", "tr": "bağ" },
+        { "w": "disappointment", "tr": "hayal kırıklığı" },
+        { "w": "adulthood", "tr": "yetişkinlik" }
+      ],
+      "questions": [
+        { "q": "What are the three conditions for friendship?", "options": ["Unplanned contact, a shared activity, and time", "Money, time and luck", "Work, school and family", "Interest, humor and space"], "answer": 0, "note": "\"Repeated unplanned contact, a shared activity, and enough time.\"" },
+        { "q": "Why is work an incomplete substitute?", "options": ["Both are paid to be there and one may review the other", "Colleagues are unfriendly", "There is no time", "It is too formal"], "answer": 0, "note": "\"Both parties are being paid to be there and one of them may one day be reviewing the other.\"" },
+        { "q": "What is the practical conclusion?", "options": ["Adult friendship has to be scheduled", "It is impossible after thirty", "Move back home", "Change jobs"], "answer": 0, "note": "\"Friendship in adulthood has to be scheduled.\"" },
+        { "q": "What matters more than the activity?", "options": ["Its regularity", "Its cost", "Its subject", "Its size"], "answer": 0, "note": "\"The activity matters less than its regularity.\"" },
+        { "q": "How do successful people describe the first year?", "options": ["As a project rather than a disappointment", "As a mistake", "As the easiest year", "As a holiday"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}
