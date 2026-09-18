@@ -213,6 +213,7 @@ def check_set(
     levels: dict[str, str],
     ids: dict[str, str],
     titles: dict[str, str],
+    prompts: dict[str, tuple[str, str]],
 ) -> None:
     sid = item.get("id", "?")
     where = sid
@@ -240,13 +241,22 @@ def check_set(
     if len(tasks) < MIN_TASKS:
         fail(problems, where, f"{len(tasks)} cümle var, en az {MIN_TASKS} olmalı")
 
-    prompts: dict[str, int] = {}
+    # Aynı Türkçe cümle yalnızca set içinde değil, bütün içerikte bir kez
+    # geçmeli. İki set aynı cümleyi sorarsa kabul edilen cevapları da ayrışıyor
+    # ve öğrenci bir sette doğru yazdığı cevabı diğerinde yanlış görüyor.
+    # Seviyeler arası tekrarda ayrıca anlam sorunu var: "Bilseydim söylerdim"
+    # Türkçede hem ikinci hem üçüncü tip koşula karşılık gelebiliyor, yani
+    # cümle iki seviyede iki farklı doğru cevap istiyor. Böyle bir soruda
+    # öğrencinin hangi okumayı seçeceğini bilmesi imkânsızdır.
     for i, task in enumerate(tasks):
         check_task(problems, f"{sid} · {i + 1}. cümle", task, level.upper(), levels)
         key = norm(task.get("tr") or "")
-        if key and key in prompts:
-            fail(problems, where, f"{i + 1}. cümle {prompts[key] + 1}. ile aynı")
-        prompts[key] = i
+        if not key:
+            continue
+        if key in prompts:
+            other_sid, other_no = prompts[key]
+            fail(problems, where, f"{i + 1}. cümle {other_sid} ({other_no}) ile aynı")
+        prompts[key] = (sid, f"{i + 1}. cümle")
 
     compose = item.get("compose")
     if not compose:
@@ -273,6 +283,10 @@ def build(only: str | None) -> int:
     levels = load_levels()
     problems: list[str] = []
     ids: dict[str, str] = {}
+    titles: dict[str, str] = {}
+    # Yönerge tablosu seviyeler arasında paylaşılıyor; tekrar bütün içerikte
+    # aranıyor, yalnızca aynı seviyede değil.
+    prompts: dict[str, tuple[str, str]] = {}
     counts: dict[str, dict] = {}
 
     for level in LEVELS:
@@ -283,11 +297,10 @@ def build(only: str | None) -> int:
             continue
 
         items: list[dict] = []
-        titles: dict[str, str] = {}
         for path in sorted(folder.glob("*.json")):
             data = json.loads(path.read_text(encoding="utf-8"))
             for item in data.get("sets", []):
-                check_set(problems, item, level, levels, ids, titles)
+                check_set(problems, item, level, levels, ids, titles, prompts)
                 items.append(item)
 
         if not items:

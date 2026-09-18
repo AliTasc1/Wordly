@@ -358,16 +358,16 @@
     ]
    },
    {
-    "tr": "Bilseydim sana söylerdim.",
+    "tr": "O gün bilseydim sana hemen söylerdim.",
     "answers": [
-     "If I had known, I would have told you."
+     "If I had known that day, I would have told you at once."
     ],
     "hint": "know fiilinin üçüncü biçimi known.",
     "traps": [
      {
-      "has": "if i knew i would have told",
+      "has": "if i knew that day",
       "at": "start",
-      "note": "Geçmiş için: If I had known."
+      "note": "Geçmiş için: If I had known that day."
      },
      {
       "has": "would have tell",

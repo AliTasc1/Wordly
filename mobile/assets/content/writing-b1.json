@@ -3376,20 +3376,20 @@
   "focus": "İş yazışmasında kısalık kibarlıktan önemli değildir: kısa ama kibar olmalı. Ayrıca sorumluluk cümleleri açık olmalı, kim ne yapacak belli olmalı.",
   "tasks": [
    {
-    "tr": "Toplantı yarına ertelendi.",
+    "tr": "Sunum salı gününe alındı.",
     "answers": [
-     "The meeting has been put off until tomorrow."
+     "The presentation has been moved to Tuesday."
     ],
-    "hint": "Zaman sınırı için until.",
+    "hint": "Başka bir güne almak: move to.",
     "traps": [
      {
-      "has": "put off to tomorrow",
-      "note": "Kalıp: put off until tomorrow."
+      "has": "moved on tuesday",
+      "note": "Kalıp: moved to Tuesday."
      },
      {
-      "has": "the meeting put off until",
+      "has": "the presentation moved to tuesday",
       "at": "start",
-      "note": "Edilgen: has been put off."
+      "note": "Edilgen: has been moved."
      }
     ]
    },
@@ -3523,7 +3523,7 @@
     "responsible for ve contact kalıplarını doğru yazdın mı?",
     "let'ten sonra yalın fiil kullandın mı?"
    ],
-   "model": "The meeting has been put off until tomorrow. Could you send the report by Friday? It will take me two days to finish my part. If you have any questions, please let me know. Thank you for your help."
+   "model": "The presentation has been moved to Tuesday. Could you send the report by Friday? It will take me two days to finish my part. If you have any questions, please let me know. Thank you for your help."
   }
  },
  {

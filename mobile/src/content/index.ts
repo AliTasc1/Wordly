@@ -75,11 +75,11 @@ const SPEAKING = {
 /**
  * Yazma setleri.
  *
- * Diğer tabloların aksine burada altı seviye yok: yazma bölümü seviye seviye
- * yazılıyor ve henüz tamamlanmayan seviyenin dosyası yok. Metro `require`'ı
- * derleme anında çözdüğü için olmayan bir dosyayı burada anmak paketi bozar —
- * bu yüzden tabloya yalnızca üretilmiş dosyalar giriyor ve `writingOf` eksik
- * seviyede boş liste döndürüyor. Seviye tamamlandıkça buraya bir satır eklenir.
+ * Tablo altı seviyeyi de kapsıyor. Tür yine `Partial` bırakıldı ve
+ * `writingOf` eksik seviyede boş liste döndürmeye devam ediyor: yeni bir
+ * seviye ya da alt seviye eklenirse, dosyası üretilene kadar uygulama
+ * çökmeden çalışsın. Metro `require`'ı derleme anında çözdüğü için olmayan
+ * bir dosyayı burada anmak paketi bozar.
  */
 const WRITING: Partial<Record<Level, () => WritingSet[]>> = {
   A1: () => require('../../assets/content/writing-a1.json') as WritingSet[],
@@ -87,6 +87,7 @@ const WRITING: Partial<Record<Level, () => WritingSet[]>> = {
   B1: () => require('../../assets/content/writing-b1.json') as WritingSet[],
   B2: () => require('../../assets/content/writing-b2.json') as WritingSet[],
   C1: () => require('../../assets/content/writing-c1.json') as WritingSet[],
+  C2: () => require('../../assets/content/writing-c2.json') as WritingSet[],
 };
 
 export const vocabOf = (level: Level): VocabCard[] => VOCAB[level]();

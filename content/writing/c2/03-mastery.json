@@ -1,0 +1,737 @@
+{
+ "_meta": {
+  "batch": "c2-03",
+  "level": "C2",
+  "range": "Set 18-25 — karşıt görüşü güçlendirmek, tartışma bölümü, okura uyarlama, terim türetme, kendi sesi, son okuma, belirsizlik, kapanış"
+ },
+ "sets": [
+  {
+   "id": "c2-w-18",
+   "level": "C2",
+   "order": 18,
+   "title": "Karşıt görüşü güçlendirmek",
+   "canDo": "Karşı tarafın görüşünü onun savunacağından daha iyi kurabilirim.",
+   "focus": "Bir tartışmada en zor iş, karşı görüşü en güçlü hâliyle kurmaktır. Zayıflatılmış bir karşı görüşü çürütmek kolaydır ve hiçbir şey kanıtlamaz; okur bunu görür ve yazara güvenmez.",
+   "tasks": [
+    {
+     "tr": "Karşı görüşü en güçlü hâliyle kurayım.",
+     "answers": ["Let me put the opposing view at its strongest."],
+     "hint": "Kalıp: at its strongest.",
+     "traps": [
+      { "has": "at it's strongest", "note": "İyelik: its." },
+      { "has": "let me to put", "at": "start", "note": "let'ten sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Bu görüşün dayandığı gözlem doğrudur.",
+     "answers": ["The observation on which this view rests is correct.", "The observation that this view rests on is correct."],
+     "hint": "rest on kalıbında edat ya öne ya sona gider.",
+     "traps": [
+      { "has": "the observation which this view rests is correct", "at": "start", "note": "Edat gerekir: rests on." },
+      { "has": "the observation on which this view rest", "at": "start", "note": "Tekil özne: rests." }
+     ]
+    },
+    {
+     "tr": "Bunu kabul etmek benim iddiama zarar vermiyor.",
+     "answers": ["Accepting this does not damage my claim."],
+     "hint": "Özne olunca fiil -ing alır.",
+     "traps": [
+      { "has": "accept this does not damage", "at": "start", "note": "Özne olunca: Accepting." },
+      { "has": "do not damage", "note": "Tekil özne: does not." }
+     ]
+    },
+    {
+     "tr": "Zayıf bir itirazı çürütmek hiçbir şey kanıtlamaz.",
+     "answers": ["Defeating a weak objection proves nothing."],
+     "hint": "nothing zaten olumsuzdur.",
+     "traps": [
+      { "has": "does not prove nothing", "note": "Çift olumsuz olmaz." },
+      { "has": "defeat a weak objection proves", "at": "start", "note": "Özne olunca: Defeating." }
+     ]
+    },
+    {
+     "tr": "Asıl mesele görüşün nerede durduğudur.",
+     "answers": ["The real issue is where the view stops."],
+     "hint": "Dolaylı soruda sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "where does the view stop", "note": "Dolaylı: where the view stops." },
+      { "has": "the real issue are", "at": "start", "note": "Tekil özne: is." }
+     ]
+    },
+    {
+     "tr": "Gözlem doğru, ondan çıkarılan sonuç değil.",
+     "answers": ["The observation is right; the conclusion drawn from it is not."],
+     "hint": "Kısaltılmış ortaç: drawn from it.",
+     "traps": [
+      { "has": "the conclusion which drawn from it", "note": "which düşerse was da düşer: drawn from it." },
+      { "has": "conclusion drew from it", "note": "Üçüncü biçim: drawn." }
+     ]
+    },
+    {
+     "tr": "Aradaki adım gösterilmemiştir.",
+     "answers": ["The step in between has not been shown."],
+     "hint": "Edilgen tamamlanmış: has not been + üçüncü biçim.",
+     "traps": [
+      { "has": "has not been show", "note": "Üçüncü biçim: has not been shown." },
+      { "has": "the step in between have not", "at": "start", "note": "Tekil özne: has not." }
+     ]
+    },
+    {
+     "tr": "Tartışmam bu adımla ilgilidir, gözlemle değil.",
+     "answers": ["My argument concerns this step, not the observation."],
+     "hint": "concern'den sonra doğrudan nesne gelir.",
+     "traps": [
+      { "has": "concerns about this step", "note": "concern'den sonra about gelmez." },
+      { "has": "my argument concern", "at": "start", "note": "Tekil özne: concerns." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kendi görüşüne karşı en güçlü itirazı kur, doğru yanını kabul et, sonra tam olarak nerede ayrıldığını göster.",
+    "checklist": [
+     "Karşı görüşü zayıflatmadan kurdun mu?",
+     "Kabul ettiğin yerle itiraz ettiğin yeri ayırdın mı?",
+     "nothing ve nobody ile ayrıca olumsuzluk kullanmadın, değil mi?"
+    ],
+    "model": "Let me put the opposing view at its strongest. The observation on which this view rests is correct, and accepting this does not damage my claim. The observation is right; the conclusion drawn from it is not. The step in between has not been shown."
+   }
+  },
+  {
+   "id": "c2-w-19",
+   "level": "C2",
+   "order": 19,
+   "title": "Tartışma bölümü",
+   "canDo": "Bulguları yorumlayan bir tartışma bölümü yazabilirim.",
+   "focus": "Tartışma bölümü bulguyu tekrar etmez, onu bağlar: önceki çalışmalarla, sınırlılıklarla ve olası açıklamalarla. En yaygın hata, bulgudan daha büyük bir iddiaya sıçramaktır.",
+   "tasks": [
+    {
+     "tr": "Bu bulgu önceki çalışmalarla uyumludur.",
+     "answers": ["This finding is in line with earlier work.", "This finding agrees with earlier work."],
+     "hint": "Kalıp: in line with.",
+     "traps": [
+      { "has": "in line to earlier work", "note": "Kalıp: in line with." },
+      { "has": "this finding are", "at": "start", "note": "Tekil özne: is." }
+     ]
+    },
+    {
+     "tr": "Ancak farkın büyüklüğü beklenenden azdı.",
+     "answers": ["However, the size of the difference was smaller than expected."],
+     "hint": "Kısa sıfat: smaller.",
+     "traps": [
+      { "has": "more small", "note": "Kısa sıfat: smaller." },
+      { "has": "than it was expected to be by us", "note": "Sade tut: than expected." }
+     ]
+    },
+    {
+     "tr": "Bunun üç olası açıklaması var.",
+     "answers": ["There are three possible explanations for this."],
+     "hint": "Açıklama için for edatı kullanılır.",
+     "traps": [
+      { "has": "explanations of this", "note": "Kalıp: explanation for." },
+      { "has": "there is three possible explanations", "at": "start", "note": "Çoğul: there are." }
+     ]
+    },
+    {
+     "tr": "Birincisi ölçüm yöntemiyle ilgilidir.",
+     "answers": ["The first has to do with the way of measuring.", "The first concerns the method of measurement."],
+     "hint": "Kalıp: have to do with.",
+     "traps": [
+      { "has": "has to do about", "note": "Kalıp: has to do with." },
+      { "has": "the first have to do with", "at": "start", "note": "Tekil özne: has." }
+     ]
+    },
+    {
+     "tr": "Bu açıklama test edilebilir.",
+     "answers": ["This explanation can be tested."],
+     "hint": "Edilgen kip: can be + üçüncü biçim.",
+     "traps": [
+      { "has": "can be test", "note": "Üçüncü biçim: can be tested." },
+      { "has": "this explanation can test", "at": "start", "note": "Edilgen gerekir: can be tested." }
+     ]
+    },
+    {
+     "tr": "Bulgular daha geniş bir iddiayı desteklemiyor.",
+     "answers": ["The findings do not support a wider claim."],
+     "hint": "Bulgudan büyük iddiaya sıçrama yapılmaz.",
+     "traps": [
+      { "has": "the findings does not support", "at": "start", "note": "Çoğul özne: do not." },
+      { "has": "a more wide claim", "note": "Kısa sıfat: a wider claim." }
+     ]
+    },
+    {
+     "tr": "Bu sınırlılık açıkça belirtilmelidir.",
+     "answers": ["This limitation should be stated clearly."],
+     "hint": "Edilgen kip: should be + üçüncü biçim.",
+     "traps": [
+      { "has": "should be state", "note": "Üçüncü biçim: should be stated." },
+      { "has": "stated clear", "note": "Zarf biçimi: clearly." }
+     ]
+    },
+    {
+     "tr": "İleride yapılacak çalışma bu boşluğu doldurabilir.",
+     "answers": ["Future work could fill this gap."],
+     "hint": "could'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "could fills", "note": "Kipten sonra fiil yalın." },
+      { "has": "future works could fill", "at": "start", "note": "Bu anlamda work sayılamaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Hayalî bir bulgu için tartışma bölümü yaz: bağlama oturt, üç açıklama, bir sınırlılık, bir sonraki adım.",
+    "checklist": [
+     "Bulguyu tekrar etmek yerine yorumladın mı?",
+     "Bulgudan büyük bir iddiaya sıçramadın, değil mi?",
+     "in line with, explanation for, have to do with kalıplarını doğru yazdın mı?"
+    ],
+    "model": "This finding is in line with earlier work. However, the size of the difference was smaller than expected. There are three possible explanations for this. The findings do not support a wider claim, and this limitation should be stated clearly."
+   }
+  },
+  {
+   "id": "c2-w-20",
+   "level": "C2",
+   "order": 20,
+   "title": "Okura uyarlamak",
+   "canDo": "Aynı içeriği farklı okurlar için yeniden yazabilirim.",
+   "focus": "Uyarlama, basitleştirme değildir: uzman okur için ayrıntı, karar verici için sonuç, genel okur için bağlam öne çıkar. Bilgi aynı kalır, sıralama ve ayrıntı düzeyi değişir.",
+   "tasks": [
+    {
+     "tr": "Uzmana: Yöntem üç aşamada uygulandı.",
+     "answers": ["The method was applied in three stages."],
+     "hint": "Uzman okur ayrıntı bekler.",
+     "traps": [
+      { "has": "was apply", "note": "Üçüncü biçim: was applied." },
+      { "has": "in three stage", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Karar vericiye: Sonuç, mevcut planın işe yaramadığıdır.",
+     "answers": ["The conclusion is that the current plan does not work."],
+     "hint": "Karar verici sonucu önce ister.",
+     "traps": [
+      { "has": "the conclusion is the current plan does not work", "at": "start", "note": "that gerekir." },
+      { "has": "the current plan do not work", "note": "Tekil özne: does not." }
+     ]
+    },
+    {
+     "tr": "Genel okura: Bu, günlük hayatta şu anlama geliyor.",
+     "answers": ["In everyday life, this means the following."],
+     "hint": "Genel okur bağlam ister.",
+     "traps": [
+      { "has": "in the everyday life", "at": "start", "note": "Genel anlamda the kullanılmaz." },
+      { "has": "this mean the following", "note": "Tekil özne: means." }
+     ]
+    },
+    {
+     "tr": "Uzmana: Ölçüm hatası yüzde iki olarak hesaplandı.",
+     "answers": ["The measurement error was calculated as two percent."],
+     "hint": "Kalıp: calculated as.",
+     "traps": [
+      { "has": "calculated like two percent", "note": "Kalıp: calculated as." },
+      { "has": "was calculate", "note": "Üçüncü biçim: was calculated." }
+     ]
+    },
+    {
+     "tr": "Karar vericiye: Bu hata kararı değiştirmez.",
+     "answers": ["This error does not change the decision."],
+     "hint": "Karar verici etkiyi bilmek ister.",
+     "traps": [
+      { "has": "this error do not change", "at": "start", "note": "Tekil özne: does not." },
+      { "has": "does not changes", "note": "does not'tan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Genel okura: Kısacası sayılar güvenilir.",
+     "answers": ["In short, the numbers can be trusted."],
+     "hint": "Edilgen kip: can be + üçüncü biçim.",
+     "traps": [
+      { "has": "can be trust", "note": "Üçüncü biçim: can be trusted." },
+      { "has": "the numbers can trust", "note": "Edilgen gerekir: can be trusted." }
+     ]
+    },
+    {
+     "tr": "Üç metin de aynı şeyi söylüyor.",
+     "answers": ["All three texts say the same thing."],
+     "hint": "the same ile as kullanılır.",
+     "traps": [
+      { "has": "all three texts says", "at": "start", "note": "Çoğul özne: say." },
+      { "has": "the same thing than", "note": "Kalıp: the same as." }
+     ]
+    },
+    {
+     "tr": "Değişen yalnızca neyin önce geldiğidir.",
+     "answers": ["What changes is only what comes first."],
+     "hint": "What ile başlayan öbek tekil kabul edilir.",
+     "traps": [
+      { "has": "what change is only", "at": "start", "note": "Tekil: What changes." },
+      { "has": "what comes first is only what changes it", "note": "Sade tut." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Aynı bulguyu üç okur için yaz: uzman, karar verici, genel okur. Bilgiyi değiştirme, sıralamayı değiştir.",
+    "checklist": [
+     "Bilgiyi değiştirmeden sıralamayı değiştirdin mi?",
+     "Karar vericiye sonucu önce verdin mi?",
+     "Genel okura bağlam sağladın mı?"
+    ],
+    "model": "The method was applied in three stages and the measurement error was calculated as two percent. The conclusion is that the current plan does not work, and this error does not change the decision. In short, the numbers can be trusted."
+   }
+  },
+  {
+   "id": "c2-w-21",
+   "level": "C2",
+   "order": 21,
+   "title": "Terim önermek",
+   "canDo": "Yeni bir terim önerip tanımlayabilirim.",
+   "focus": "Yeni terim ancak var olanlar yetmediğinde önerilir ve önerildiğinde borç doğurur: tanımlanmalı, sınırlanmalı ve tutarlı kullanılmalıdır. Tanımsız terim, gösterişten başka bir şey değildir.",
+   "tasks": [
+    {
+     "tr": "Mevcut terimlerin hiçbiri bunu tam karşılamıyor.",
+     "answers": ["None of the existing terms covers this exactly."],
+     "hint": "none of + çoğul, tekil fiil alabilir.",
+     "traps": [
+      { "has": "none of the existing terms do not cover", "at": "start", "note": "none zaten olumsuzdur." },
+      { "has": "covers this exact", "note": "Zarf biçimi: exactly." }
+     ]
+    },
+    {
+     "tr": "Bu yüzden bir terim öneriyorum.",
+     "answers": ["I therefore propose a term."],
+     "hint": "propose'dan sonra doğrudan nesne gelir.",
+     "traps": [
+      { "has": "propose for a term", "note": "propose'dan sonra doğrudan nesne gelir." },
+      { "has": "i therefore proposes", "at": "start", "note": "Birinci tekil: propose." }
+     ]
+    },
+    {
+     "tr": "Bu terimi şöyle tanımlıyorum.",
+     "answers": ["I define this term as follows."],
+     "hint": "Kalıp: as follows.",
+     "traps": [
+      { "has": "as following", "note": "Kalıp: as follows." },
+      { "has": "i define this term like", "at": "start", "note": "Kalıp: define as." }
+     ]
+    },
+    {
+     "tr": "Terim yalnızca bu koşullarda geçerlidir.",
+     "answers": ["The term applies only under these conditions."],
+     "hint": "Koşul için under.",
+     "traps": [
+      { "has": "applies only in these conditions", "note": "Kalıp: under these conditions." },
+      { "has": "the term apply only", "at": "start", "note": "Tekil özne: applies." }
+     ]
+    },
+    {
+     "tr": "Bu koşulların dışında eski terim yeterlidir.",
+     "answers": ["Outside these conditions the older term is enough."],
+     "hint": "Kısa sıfat: older.",
+     "traps": [
+      { "has": "more old term", "note": "Kısa sıfat: older." },
+      { "has": "outside of these conditions", "at": "start", "note": "Sade biçim: outside these conditions." }
+     ]
+    },
+    {
+     "tr": "Terimi bu yazı boyunca aynı anlamda kullanacağım.",
+     "answers": ["I will use the term in the same sense throughout this essay."],
+     "hint": "Boyunca: throughout.",
+     "traps": [
+      { "has": "in all this essay", "note": "Doğal biçim: throughout this essay." },
+      { "has": "in the same meaning", "note": "Kalıp: in the same sense." }
+     ]
+    },
+    {
+     "tr": "Daha iyi bir terim önerilirse bırakırım.",
+     "answers": ["If a better term is proposed, I will drop it."],
+     "hint": "if'ten sonra geniş zaman gelir.",
+     "traps": [
+      { "has": "if a better term will be proposed", "at": "start", "note": "if'ten sonra geniş zaman." },
+      { "has": "a more good term", "note": "Düzensiz: a better term." }
+     ]
+    },
+    {
+     "tr": "Terime bağlanmak, fikre bağlanmaktan kolaydır.",
+     "answers": ["Becoming attached to a term is easier than becoming attached to an idea."],
+     "hint": "İki taraf aynı biçimde olmalı.",
+     "traps": [
+      { "has": "becoming attached to a term is easier than to an idea", "at": "start", "note": "İki taraf aynı biçimde olmalı." },
+      { "has": "attached with a term", "note": "Kalıp: attached to." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir alanda eksik bulduğun bir kavram için terim öner: neden gerekli, tanımı, sınırı, ne zaman bırakırsın.",
+    "checklist": [
+     "Terimin neden gerekli olduğunu gösterdin mi?",
+     "Tanımını ve sınırını yazdın mı?",
+     "under these conditions ve as follows kalıplarını doğru yazdın mı?"
+    ],
+    "model": "None of the existing terms covers this exactly, so I therefore propose a term. I define this term as follows. The term applies only under these conditions; outside these conditions the older term is enough. If a better term is proposed, I will drop it."
+   }
+  },
+  {
+   "id": "c2-w-22",
+   "level": "C2",
+   "order": 22,
+   "title": "Kendi sesin",
+   "canDo": "Kurallara uyarken kendi üslubumu koruyabilirim.",
+   "focus": "Üslup, kuralların dışında değil içinde bulunur. Kişisel ses; cümle uzunluğu tercihi, hangi ayrıntıyı seçtiğin ve neyi söylemediğinle oluşur. Kuralları bozmak ses değil, gürültü üretir.",
+   "tasks": [
+    {
+     "tr": "Kısa cümleleri severim.",
+     "answers": ["I like short sentences."],
+     "hint": "Genel anlamda çoğul kullanılır.",
+     "traps": [
+      { "has": "i like the short sentences", "at": "start", "note": "Genel anlamda the kullanılmaz." },
+      { "has": "i like short sentence", "at": "start", "note": "Genel anlamda çoğul: sentences." }
+     ]
+    },
+    {
+     "tr": "Bu bir tercih, kural değil.",
+     "answers": ["This is a preference, not a rule."],
+     "hint": "not A but B kalıbında iki taraf aynı türden.",
+     "traps": [
+      { "has": "this is a preference not rule", "at": "start", "note": "Tekil sayılabilen isimde a gerekir." },
+      { "has": "a preference and not a rule is this", "at": "start", "note": "Sıra bozuk." }
+     ]
+    },
+    {
+     "tr": "Başkası uzun cümleyi daha iyi kullanır.",
+     "answers": ["Someone else uses long sentences better."],
+     "hint": "Kalıp: someone else.",
+     "traps": [
+      { "has": "other someone uses", "at": "start", "note": "Kalıp: someone else." },
+      { "has": "someone else use", "at": "start", "note": "Tekil özne: uses." }
+     ]
+    },
+    {
+     "tr": "Önemli olan, seçimin bilinçli olmasıdır.",
+     "answers": ["What matters is that the choice is deliberate."],
+     "hint": "What ile başlayan öbek tekil kabul edilir.",
+     "traps": [
+      { "has": "what matter is", "at": "start", "note": "Tekil: What matters." },
+      { "has": "that the choice is deliberately", "note": "Sıfat gerekir: deliberate." }
+     ]
+    },
+    {
+     "tr": "Kuralı bilmeden bozmak, bozmak değildir.",
+     "answers": ["Breaking a rule without knowing it is not breaking it."],
+     "hint": "Edattan sonra fiil -ing alır.",
+     "traps": [
+      { "has": "without know it", "note": "Edattan sonra -ing: without knowing." },
+      { "has": "break a rule without knowing", "at": "start", "note": "Özne olunca: Breaking." }
+     ]
+    },
+    {
+     "tr": "Yalnızca hata olur.",
+     "answers": ["It is simply a mistake."],
+     "hint": "Kısa cümle yargıyı taşır.",
+     "traps": [
+      { "has": "it is simply mistake", "at": "start", "note": "Tekil sayılabilen isimde a gerekir." },
+      { "has": "simply it is a mistake", "at": "start", "note": "Doğal sıra: It is simply a mistake." }
+     ]
+    },
+    {
+     "tr": "Ses, zamanla ve okuyarak gelir.",
+     "answers": ["Voice comes with time and with reading."],
+     "hint": "Edattan sonra fiil -ing alır.",
+     "traps": [
+      { "has": "with read", "note": "Edattan sonra -ing: with reading." },
+      { "has": "voice come with time", "at": "start", "note": "Tekil özne: comes." }
+     ]
+    },
+    {
+     "tr": "Aramakla bulunmaz.",
+     "answers": ["It is not found by looking for it."],
+     "hint": "Edilgen: is not found.",
+     "traps": [
+      { "has": "is not find", "note": "Üçüncü biçim: is not found." },
+      { "has": "by look for it", "note": "Edattan sonra -ing: by looking." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kendi yazma tercihlerini yaz: neyi seviyorsun, neden, hangi kuralı bilerek esnetiyorsun ve neden.",
+    "checklist": [
+     "Tercihlerini kural gibi sunmadın, değil mi?",
+     "Edatlardan sonra -ing biçimini kullandın mı?",
+     "What ile başlayan öbeklerde tekil fiil kullandın mı?"
+    ],
+    "model": "I like short sentences. This is a preference, not a rule: someone else uses long sentences better. What matters is that the choice is deliberate. Breaking a rule without knowing it is not breaking it. It is simply a mistake."
+   }
+  },
+  {
+   "id": "c2-w-23",
+   "level": "C2",
+   "order": 23,
+   "title": "Bilinçli belirsizlik",
+   "canDo": "Bilmediğim şeyi bilmiyormuş gibi yazabilirim.",
+   "focus": "Belirsizlik kusur değil, bilginin sınırının dürüst gösterilmesidir. Kusur, belirsizliği kesinlikmiş gibi yazmak ya da tersine her cümleyi kaçamakla doldurmaktır. Doğru yol: sınırı bir kez, net olarak çizmek.",
+   "tasks": [
+    {
+     "tr": "Bunu bilmiyoruz ve bilmediğimizi söylemeliyiz.",
+     "answers": ["We do not know this, and we should say so."],
+     "hint": "Kalıp: say so.",
+     "traps": [
+      { "has": "we should say it so", "note": "Kalıp: say so." },
+      { "has": "we do not know this and we should to say", "note": "should'dan sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Eldeki kanıt bir yön göstermiyor.",
+     "answers": ["The available evidence points in no clear direction."],
+     "hint": "evidence tekil fiil alır.",
+     "traps": [
+      { "has": "the available evidence point", "at": "start", "note": "Tekil özne: points." },
+      { "has": "points to no clear direction", "note": "Kalıp: points in a direction." }
+     ]
+    },
+    {
+     "tr": "Bu, iki açıklamanın da mümkün olduğu anlamına gelir.",
+     "answers": ["This means that both explanations remain possible."],
+     "hint": "both ile çoğul kullanılır.",
+     "traps": [
+      { "has": "both explanation remains", "note": "both ile çoğul: explanations remain." },
+      { "has": "this mean that", "at": "start", "note": "Tekil özne: means." }
+     ]
+    },
+    {
+     "tr": "Birini seçmek için bir sebebim yok.",
+     "answers": ["I have no reason to choose one over the other."],
+     "hint": "Kalıp: over the other.",
+     "traps": [
+      { "has": "no reason for choose", "note": "Kalıp: reason to choose." },
+      { "has": "one from the other", "note": "Kalıp: one over the other." }
+     ]
+    },
+    {
+     "tr": "Bunu bir sonuç gibi yazmak yanıltıcı olurdu.",
+     "answers": ["Writing this as a conclusion would be misleading."],
+     "hint": "Özne olunca fiil -ing alır.",
+     "traps": [
+      { "has": "write this as a conclusion would be misleading", "at": "start", "note": "Özne olunca: Writing." },
+      { "has": "would be misled", "note": "Şeyin özelliği: misleading." }
+     ]
+    },
+    {
+     "tr": "Sınırı bir kez çizmek yeterlidir.",
+     "answers": ["Drawing the line once is enough."],
+     "hint": "Özne olunca fiil -ing alır ve tekil sayılır.",
+     "traps": [
+      { "has": "drawing the line once are enough", "at": "start", "note": "Tekil: is enough." },
+      { "has": "draw the line once is enough", "at": "start", "note": "Özne olunca: Drawing." }
+     ]
+    },
+    {
+     "tr": "Her cümleye kaçamak eklemek okuru yorar.",
+     "answers": ["Adding a hedge to every sentence tires the reader."],
+     "hint": "every ile tekil kullanılır.",
+     "traps": [
+      { "has": "to every sentences", "note": "every ile tekil: every sentence." },
+      { "has": "adding a hedge tire the reader", "at": "start", "note": "Tekil özne: tires." }
+     ]
+    },
+    {
+     "tr": "Dürüstlük ile kararsızlık aynı şey değildir.",
+     "answers": ["Honesty is not the same as being unable to decide."],
+     "hint": "the same ile as kullanılır.",
+     "traps": [
+      { "has": "the same than", "note": "Kalıp: the same as." },
+      { "has": "honesty are not", "at": "start", "note": "Tekil özne: is." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Emin olmadığın bir konuda yaz: neyi biliyorsun, neyi bilmiyorsun, sınırı nerede çiziyorsun. Her cümlede kaçamak kullanma.",
+    "checklist": [
+     "Sınırı bir kez, net olarak çizdin mi?",
+     "Her cümleye kaçamak eklemedin, değil mi?",
+     "Özne olan fiilleri -ing biçiminde ve tekil kullandın mı?"
+    ],
+    "model": "We do not know this, and we should say so. The available evidence points in no clear direction, which means that both explanations remain possible. Writing this as a conclusion would be misleading. Honesty is not the same as being unable to decide."
+   }
+  },
+  {
+   "id": "c2-w-24",
+   "level": "C2",
+   "order": 24,
+   "title": "Son okuma",
+   "canDo": "Bir metni yayına hazır hâle getirebilirim.",
+   "focus": "Son okuma, yazma değil kontrol işidir ve sırası vardır: önce yapı, sonra paragraf, sonra cümle, en son yazım. Ters sırayla okumak, silinecek bir paragrafın virgülünü düzeltmek demektir.",
+   "tasks": [
+    {
+     "tr": "Önce yapıyı kontrol et, sonra cümleleri.",
+     "answers": ["Check the structure first, then the sentences."],
+     "hint": "Emir kipinde özne yazılmaz.",
+     "traps": [
+      { "has": "you check the structure first", "at": "start", "note": "Emir kipinde özne yazılmaz." },
+      { "has": "check first the structure", "at": "start", "note": "Doğal sıra: Check the structure first." }
+     ]
+    },
+    {
+     "tr": "Her paragrafın bir işi olmalı.",
+     "answers": ["Every paragraph should have one job."],
+     "hint": "every ile tekil kullanılır.",
+     "traps": [
+      { "has": "every paragraphs", "at": "start", "note": "every ile tekil: every paragraph." },
+      { "has": "should has", "note": "should'dan sonra fiil yalın: have." }
+     ]
+    },
+    {
+     "tr": "İşi olmayan paragrafı sil.",
+     "answers": ["Delete the paragraph that has no job.", "Remove any paragraph without a job."],
+     "hint": "Tekil özne: has.",
+     "traps": [
+      { "has": "the paragraph which have no job", "note": "Tekil özne: has." },
+      { "has": "delete the paragraph which has not job", "note": "Kalıp: has no job." }
+     ]
+    },
+    {
+     "tr": "Sesli oku: takıldığın yer okurun da takılacağı yerdir.",
+     "answers": ["Read it aloud: where you stumble, the reader will stumble too."],
+     "hint": "Olumlu cümlede too kullanılır.",
+     "traps": [
+      { "has": "the reader will stumble either", "note": "Olumluda too kullanılır." },
+      { "has": "read it loudly", "at": "start", "note": "Kalıp: read aloud." }
+     ]
+    },
+    {
+     "tr": "En sona yazım denetimini bırak.",
+     "answers": ["Leave the spelling check until last.", "Leave spelling until the end."],
+     "hint": "Zaman sınırı için until.",
+     "traps": [
+      { "has": "leave the spelling check by last", "at": "start", "note": "Kalıp: until last." },
+      { "has": "leave to the spelling check", "at": "start", "note": "leave'den sonra doğrudan nesne gelir." }
+     ]
+    },
+    {
+     "tr": "Metni bir gün beklet.",
+     "answers": ["Leave the text for a day.", "Put the text aside for a day."],
+     "hint": "Süre için for.",
+     "traps": [
+      { "has": "leave the text a day", "at": "start", "note": "Süre için for: for a day." },
+      { "has": "put aside the text for a day", "at": "start", "note": "Doğal sıra: put the text aside." }
+     ]
+    },
+    {
+     "tr": "Ertesi gün yarısını atarsın.",
+     "answers": ["The next day you will cut half of it."],
+     "hint": "Kalıp: half of it.",
+     "traps": [
+      { "has": "you will cut the half of it", "note": "Kalıp: half of it." },
+      { "has": "the next day you will cutting", "at": "start", "note": "will'den sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Kalan yarısı gerçekten senindir.",
+     "answers": ["The half that remains is really yours."],
+     "hint": "İyelik zamiri: yours.",
+     "traps": [
+      { "has": "is really your", "note": "İyelik zamiri: yours." },
+      { "has": "the half that remain", "at": "start", "note": "Tekil özne: remains." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kendi bir metnin için son okuma listesi yaz: dört adım, her adımda ne aradığın ve bir de kendi tekrar eden hatan.",
+    "checklist": [
+     "Kontrol sırasını yapıdan yazıma doğru kurdun mu?",
+     "Emir kipinde özne kullanmadın, değil mi?",
+     "until ve for edatlarını doğru yazdın mı?"
+    ],
+    "model": "Check the structure first, then the sentences. Every paragraph should have one job; delete the paragraph that has no job. Read it aloud: where you stumble, the reader will stumble too. Leave the spelling check until last."
+   }
+  },
+  {
+   "id": "c2-w-25",
+   "level": "C2",
+   "order": 25,
+   "title": "Son söz",
+   "canDo": "Uzun bir öğrenme sürecini kapatan bir metin yazabilirim.",
+   "focus": "Bu son settir ve kapanış yazmanın kendi kuralı vardır: geriye değil ileriye bak, kesin bir yargıyla bitir, okurun elinde bir şey bırak. Kapanışta yeni bilgi olmaz ama yeni bir bakış olabilir.",
+   "tasks": [
+    {
+     "tr": "Buraya kadar altı seviyeyi geçtin.",
+     "answers": ["You have come through six levels so far."],
+     "hint": "Bugüne uzanan: have + üçüncü biçim.",
+     "traps": [
+      { "has": "you came through six levels so far", "at": "start", "note": "Bugüne uzanıyor: You have come." },
+      { "has": "six level", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Öğrendiğin şey kelime listesi değildi.",
+     "answers": ["What you learned was not a list of words."],
+     "hint": "What ile başlayan öbek tekil kabul edilir.",
+     "traps": [
+      { "has": "what you learned were not", "at": "start", "note": "Tekil: was not." },
+      { "has": "what you learnt", "at": "start", "note": "Amerikan yazımı: learned." }
+     ]
+    },
+    {
+     "tr": "Seçim yapmayı öğrendin.",
+     "answers": ["You learned to make choices.", "You have learned how to choose."],
+     "hint": "learn'den sonra to + fiil gelir.",
+     "traps": [
+      { "has": "you learned making choices", "at": "start", "note": "learn'den sonra to gelir." },
+      { "has": "how to choosing", "note": "to'dan sonra yalın fiil." }
+     ]
+    },
+    {
+     "tr": "Her doğru cümlenin birden fazla biçimi var.",
+     "answers": ["Every correct sentence has more than one form."],
+     "hint": "every ile tekil kullanılır.",
+     "traps": [
+      { "has": "every correct sentences", "at": "start", "note": "every ile tekil." },
+      { "has": "have more than one form", "note": "Tekil özne: has." }
+     ]
+    },
+    {
+     "tr": "Hangisini seçeceğin okura bağlı.",
+     "answers": ["Which one you choose depends on the reader."],
+     "hint": "Dolaylı öbekte sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "which one do you choose depends", "at": "start", "note": "Dolaylı: which one you choose." },
+      { "has": "depends to the reader", "note": "Kalıp: depend on." }
+     ]
+    },
+    {
+     "tr": "Bundan sonrası tekrar değil, alışkanlıktır.",
+     "answers": ["What comes next is not practice but habit."],
+     "hint": "not A but B kalıbında iki taraf aynı türden.",
+     "traps": [
+      { "has": "what comes next are not", "at": "start", "note": "Tekil: is not." },
+      { "has": "not practice but to have a habit", "note": "İki taraf aynı biçimde: but habit." }
+     ]
+    },
+    {
+     "tr": "Bugün bir şey yaz. Uzun olmasına gerek yok.",
+     "answers": ["Write something today. It does not have to be long."],
+     "hint": "have to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "it does not have to being long", "note": "have to'dan sonra yalın fiil: to be." },
+      { "has": "it must not be long", "note": "Bu yasak demek olur: does not have to be long." }
+     ]
+    },
+    {
+     "tr": "Yarın da yaz. İşin sırrı bu.",
+     "answers": ["Write again tomorrow. That is the whole secret."],
+     "hint": "Kısa kapanış cümlesi.",
+     "traps": [
+      { "has": "that is all the secret", "note": "Doğal biçim: the whole secret." },
+      { "has": "you write again tomorrow", "at": "start", "note": "Emir kipinde özne yazılmaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kendi İngilizce yazma yolculuğun için bir kapanış yaz: nereden başladın, ne değişti, yarın ne yapacaksın.",
+    "checklist": [
+     "Kapanışta yeni bilgi vermek yerine yeni bir bakış sundun mu?",
+     "What ile başlayan öbeklerde tekil fiil kullandın mı?",
+     "must not ile do not have to ayrımını doğru yaptın mı?"
+    ],
+    "model": "You have come through six levels so far. What you learned was not a list of words: you learned to make choices. Every correct sentence has more than one form, and which one you choose depends on the reader. Write something today. It does not have to be long. Write again tomorrow. That is the whole secret."
+   }
+  }
+ ]
+}

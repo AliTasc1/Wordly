@@ -1,0 +1,828 @@
+{
+ "_meta": {
+  "batch": "c2-02",
+  "level": "C2",
+  "range": "Set 9-17 — çeviride kayıp, üslup taklidi, mizah, kültürel gönderme, söylem belirteçleri, hukuk dili, eleştiri yazısı, anma, manifesto"
+ },
+ "sets": [
+  {
+   "id": "c2-w-09",
+   "level": "C2",
+   "order": 9,
+   "title": "Çeviride kaybolan",
+   "canDo": "Türkçede tek kelimeyle söylenen şeyleri İngilizcede kurabilirim.",
+   "focus": "Bazı Türkçe yapıların İngilizcede tek kelimelik karşılığı yoktur: \"-miş\" ile kurulan duyulan geçmiş, \"kolay gelsin\" gibi durum ifadeleri, ettirgen çatının inceliği. Bunlar çevrilmez, yeniden kurulur.",
+   "tasks": [
+    {
+     "tr": "Toplantı iptal olmuş.",
+     "answers": ["Apparently the meeting was canceled.", "I hear the meeting was canceled."],
+     "hint": "Duyulan geçmiş için apparently ya da I hear.",
+     "traps": [
+      { "has": "the meeting was canceled apparently it seems", "note": "Tek işaret yeter." },
+      { "has": "cancelled", "note": "Amerikan yazımı: canceled." }
+     ]
+    },
+    {
+     "tr": "Saçını kestirmiş.",
+     "answers": ["Apparently she has had her hair cut.", "Apparently he has had his hair cut."],
+     "hint": "Ettirgen: have something done.",
+     "traps": [
+      { "has": "she has cut her hair", "at": "start", "note": "Kuaför kesti: has had her hair cut." },
+      { "has": "has had her hair cutted", "note": "cut düzensizdir, biçim değişmez." }
+     ]
+    },
+    {
+     "tr": "Evi boyatıyoruz.",
+     "answers": ["We are having the house painted."],
+     "hint": "Başkasına yaptırmak: have something done.",
+     "traps": [
+      { "has": "we are painting the house", "at": "start", "note": "Başkası boyuyor: having the house painted." },
+      { "has": "having the house paint", "note": "Üçüncü biçim: painted." }
+     ]
+    },
+    {
+     "tr": "Ona mektubu yazdırdım.",
+     "answers": ["I made her write the letter.", "I got her to write the letter."],
+     "hint": "make + kişi + yalın fiil; get + kişi + to + fiil.",
+     "traps": [
+      { "has": "i made her to write", "at": "start", "note": "make'ten sonra yalın fiil." },
+      { "has": "i got her write", "at": "start", "note": "get'ten sonra to gelir." }
+     ]
+    },
+    {
+     "tr": "Kolay gelsin. (En yakın karşılık.)",
+     "answers": ["Good luck with the work.", "Hope the work goes well."],
+     "hint": "Birebir karşılığı yoktur, yeniden kurulur.",
+     "traps": [
+      { "has": "let it come easy", "at": "start", "note": "Birebir çeviri anlamsız kalır." },
+      { "has": "easy come to you", "at": "start", "note": "Böyle bir kalıp yoktur." }
+     ]
+    },
+    {
+     "tr": "Eline sağlık. (En yakın karşılık.)",
+     "answers": ["That was very well made.", "You did a great job."],
+     "hint": "Birebir karşılığı yoktur.",
+     "traps": [
+      { "has": "health to your hand", "at": "start", "note": "Birebir çeviri anlamsız kalır." },
+      { "has": "well made was that", "at": "start", "note": "Sıra bozuk." }
+     ]
+    },
+    {
+     "tr": "Gitsek mi acaba?",
+     "answers": ["I wonder whether we should go.", "Should we go, I wonder?"],
+     "hint": "acaba için I wonder kullanılır.",
+     "traps": [
+      { "has": "i wonder should we go", "at": "start", "note": "Dolaylı: whether we should go." },
+      { "has": "i am wondering to go", "at": "start", "note": "Kalıp: I wonder whether." }
+     ]
+    },
+    {
+     "tr": "Yapmasaydım keşke.",
+     "answers": ["I wish I had not done it."],
+     "hint": "Geçmiş pişmanlık: wish + had + üçüncü biçim.",
+     "traps": [
+      { "has": "i wish i did not do it", "at": "start", "note": "Geçmiş için: I wish I had not done it." },
+      { "has": "i wish i had not did", "at": "start", "note": "Üçüncü biçim: had not done." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Türkçede tek kelimeyle söylenen üç şeyi İngilizcede kur: bir duyulan geçmiş, bir ettirgen, bir dilek.",
+    "checklist": [
+     "Duyulan geçmişi tek bir işaretle kurdun mu?",
+     "have something done yapısında üçüncü biçimi kullandın mı?",
+     "make ve get'ten sonra doğru biçimi kullandın mı?"
+    ],
+    "model": "Apparently the meeting was canceled. We are having the house painted and I made her write the letter. I wish I had not done it."
+   }
+  },
+  {
+   "id": "c2-w-10",
+   "level": "C2",
+   "order": 10,
+   "title": "Üslup taklidi",
+   "canDo": "Aynı olayı farklı türlerin diliyle yazabilirim.",
+   "focus": "Tür, kelime seçimini ve cümle yapısını birlikte belirler. Haber dili kısa ve edilgen, hukuk dili koşullu ve tanımlı, günlük dili birinci kişi ve duygusaldır. Türü taklit edebilmek, üslubun kural olduğunu görmek demektir.",
+   "tasks": [
+    {
+     "tr": "Haber dili: Dün akşam bir yangın çıktı ve üç bina hasar gördü.",
+     "answers": ["A fire broke out last night and three buildings were damaged."],
+     "hint": "Haber dilinde edilgen ve kısa cümle.",
+     "traps": [
+      { "has": "there was a fire last night which was very frightening and", "at": "start", "note": "Haber dili duygusuz ve kısadır." },
+      { "has": "were damage", "note": "Üçüncü biçim: were damaged." }
+     ]
+    },
+    {
+     "tr": "Günlük dili: Dün gece yangını gördüm ve çok korktum.",
+     "answers": ["I saw the fire last night and I was very frightened."],
+     "hint": "Günlükte birinci kişi ve duygu.",
+     "traps": [
+      { "has": "i was very frightening", "note": "Kişi için frightened." },
+      { "has": "a fire was seen by me", "at": "start", "note": "Günlükte etken çatı doğaldır." }
+     ]
+    },
+    {
+     "tr": "Resmî dil: Olay yetkililere bildirilmiştir.",
+     "answers": ["The incident has been reported to the authorities."],
+     "hint": "Resmî dilde edilgen ve tamamlanmış zaman.",
+     "traps": [
+      { "has": "has been report", "note": "Üçüncü biçim: has been reported." },
+      { "has": "we told the authorities about it", "at": "start", "note": "Resmî dilde edilgen yeğlenir." }
+     ]
+    },
+    {
+     "tr": "Bilimsel dil: Hasar üç binada gözlemlenmiştir.",
+     "answers": ["Damage was observed in three buildings."],
+     "hint": "Bilimsel dilde edilgen ve nesnel.",
+     "traps": [
+      { "has": "damages were observed", "at": "start", "note": "Bu anlamda damage sayılamaz." },
+      { "has": "we saw damage in three buildings", "at": "start", "note": "Bilimsel dilde edilgen yeğlenir." }
+     ]
+    },
+    {
+     "tr": "Gündelik konuşma: Dün gece koca bir yangın vardı.",
+     "answers": ["There was a huge fire last night."],
+     "hint": "Konuşma dilinde güçlü sıfat serbesttir.",
+     "traps": [
+      { "has": "a fire of considerable size occurred", "at": "start", "note": "Konuşma dili isteniyor." },
+      { "has": "there were a huge fire", "at": "start", "note": "Tekil: there was." }
+     ]
+    },
+    {
+     "tr": "Reklam dili: Güvende olmak artık daha kolay.",
+     "answers": ["Staying safe has never been easier."],
+     "hint": "Reklam dili en üstünlüğü olumsuzla kurar.",
+     "traps": [
+      { "has": "stay safe has never been easier", "at": "start", "note": "Özne olunca: Staying safe." },
+      { "has": "has never not been easier", "note": "never zaten olumsuzdur." }
+     ]
+    },
+    {
+     "tr": "Şiir dili: Yangın gitti, koku kaldı.",
+     "answers": ["The fire went; the smell stayed."],
+     "hint": "Noktalı virgül iki kısa yargıyı dengeler.",
+     "traps": [
+      { "has": "the fire went and after that the smell stayed there", "at": "start", "note": "Yoğunluk isteniyor; kısalt." },
+      { "has": "the fire gone", "at": "start", "note": "Geçmiş zaman: went." }
+     ]
+    },
+    {
+     "tr": "Aynı olay, altı dil.",
+     "answers": ["The same event, six registers.", "One event, six ways of writing."],
+     "hint": "Fiilsiz başlık kuruluşu.",
+     "traps": [
+      { "has": "the same event have six registers", "at": "start", "note": "Başlıkta fiil gerekmez." },
+      { "has": "six register", "note": "Çoğul: registers." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Küçük bir olayı dört farklı türde yaz: haber, günlük, resmî yazı, gündelik konuşma.",
+    "checklist": [
+     "Her türde cümle yapısını da değiştirdin mi, sadece kelimeleri değil?",
+     "Haber ve bilimsel dilde edilgen kullandın mı?",
+     "Günlük ve konuşma dilinde etken çatıyı koruduğun mu?"
+    ],
+    "model": "A fire broke out last night and three buildings were damaged. I saw the fire and I was very frightened. The incident has been reported to the authorities. There was a huge fire last night."
+   }
+  },
+  {
+   "id": "c2-w-11",
+   "level": "C2",
+   "order": 11,
+   "title": "Zamanlama ve mizah",
+   "canDo": "Bir cümleyi beklenmedik sonla bitirerek etki yaratabilirim.",
+   "focus": "Mizah yazıda yapıyla kurulur: beklenti önce kurulur, sonra son kelimeyle bozulur. Bu yüzden vurgulu öge cümlenin sonuna konur; sona koyulmayan sürpriz, sürpriz olmaz.",
+   "tasks": [
+    {
+     "tr": "Plan mükemmeldi, tek eksiği vardı: gerçeklik.",
+     "answers": ["The plan was perfect; it lacked only one thing: reality."],
+     "hint": "Sürpriz öge en sona.",
+     "traps": [
+      { "has": "the plan lacked reality and was otherwise perfect", "at": "start", "note": "Sürpriz sona konmalı." },
+      { "has": "it lacked of only one thing", "note": "lack'ten sonra doğrudan nesne gelir." }
+     ]
+    },
+    {
+     "tr": "Herkes hazırdı. Toplantı iptal edilmişti.",
+     "answers": ["Everyone was ready. The meeting had been canceled."],
+     "hint": "Önceden olmuş: had been + üçüncü biçim.",
+     "traps": [
+      { "has": "the meeting was canceled everyone was ready", "at": "start", "note": "Sıra bozulunca etki kaybolur." },
+      { "has": "everyone were ready", "at": "start", "note": "everyone tekildir: was." }
+     ]
+    },
+    {
+     "tr": "Yıllarca bu anı bekledim. On dakika sürdü.",
+     "answers": ["I waited years for this moment. It lasted ten minutes."],
+     "hint": "Kısa ikinci cümle zıtlığı taşır.",
+     "traps": [
+      { "has": "i waited for years to this moment", "at": "start", "note": "Kalıp: wait for something." },
+      { "has": "it lasted for ten minutes only which was short", "note": "Kısalık etkiyi taşıyor; uzatma." }
+     ]
+    },
+    {
+     "tr": "Ona güvenebilirsiniz. Genellikle.",
+     "answers": ["You can rely on him. Usually.", "You can rely on her. Usually."],
+     "hint": "Tek kelimelik ikinci cümle anlamı çevirir.",
+     "traps": [
+      { "has": "you can usually rely on him", "at": "start", "note": "Ayrı cümle etkiyi taşır." },
+      { "has": "rely to him", "note": "Kalıp: rely on." }
+     ]
+    },
+    {
+     "tr": "Toplantı tam üç saat sürdü ve hiçbir karar alınmadı.",
+     "answers": ["The meeting lasted exactly three hours and no decision was taken."],
+     "hint": "Kesinlik, boşlukla zıtlık yaratır.",
+     "traps": [
+      { "has": "no decision was not taken", "note": "Çift olumsuz olmaz." },
+      { "has": "three hour", "note": "Sayıdan sonra çoğul." }
+     ]
+    },
+    {
+     "tr": "Sonuç raporu yazıldı ve dosyalandı. Kimse okumadı.",
+     "answers": ["The final report was written and filed. Nobody read it."],
+     "hint": "Üçüncü cümle beklentiyi bozar.",
+     "traps": [
+      { "has": "nobody did not read it", "note": "nobody zaten olumsuzdur." },
+      { "has": "was wrote", "note": "Üçüncü biçim: was written." }
+     ]
+    },
+    {
+     "tr": "Bu yazının bir amacı vardı. Hâlâ arıyorum.",
+     "answers": ["This essay had a purpose. I am still looking for it."],
+     "hint": "Kalıp: look for.",
+     "traps": [
+      { "has": "i am still looking it", "at": "start", "note": "look'tan sonra for gelir." },
+      { "has": "this essay have a purpose", "at": "start", "note": "Tekil özne: had." }
+     ]
+    },
+    {
+     "tr": "Şaka bir yana, konu ciddi.",
+     "answers": ["Joking aside, the subject is serious."],
+     "hint": "Kalıp: joking aside.",
+     "traps": [
+      { "has": "joke aside", "at": "start", "note": "Kalıp: joking aside." },
+      { "has": "the subject is seriously", "note": "Sıfat gerekir: serious." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir aksaklığı mizahla anlat: beklentiyi kur, son kelimeyle boz, sonra ciddi bir cümleyle kapat.",
+    "checklist": [
+     "Sürpriz ögeyi cümlenin sonuna koydun mu?",
+     "Kısa cümleyi uzatarak etkisini öldürmedin, değil mi?",
+     "Çift olumsuz kullanmadın, değil mi?"
+    ],
+    "model": "The plan was perfect; it lacked only one thing: reality. Everyone was ready. The meeting had been canceled. The final report was written and filed. Nobody read it. Joking aside, the subject is serious."
+   }
+  },
+  {
+   "id": "c2-w-12",
+   "level": "C2",
+   "order": 12,
+   "title": "Söylem belirteçleri",
+   "canDo": "Okuru metnin içinde yönlendiren küçük işaretleri yerinde kullanabilirim.",
+   "focus": "after all, in fact, then again gibi küçük öbekler okura \"şimdi ne olacağını\" söyler. Yanlış kullanıldıklarında okuru yanlış yöne çevirirler ve bu, bağlaç hatasından daha sinsidir çünkü cümle dilbilgisi olarak doğrudur.",
+   "tasks": [
+    {
+     "tr": "Ne de olsa bunu ilk yapan o değildi.",
+     "answers": ["After all, she was not the first to do this.", "After all, he was not the first to do this."],
+     "hint": "after all, bilineni hatırlatır.",
+     "traps": [
+      { "has": "at the end she was not the first", "at": "start", "note": "Kalıp: After all." },
+      { "has": "the first to doing this", "note": "to'dan sonra yalın fiil." }
+     ]
+    },
+    {
+     "tr": "Aslına bakılırsa tam tersi oldu.",
+     "answers": ["In fact, the opposite happened."],
+     "hint": "in fact, beklentiyi düzeltir.",
+     "traps": [
+      { "has": "in the fact the opposite happened", "at": "start", "note": "Kalıp: In fact." },
+      { "has": "the opposite was happened", "note": "happen edilgen almaz: happened." }
+     ]
+    },
+    {
+     "tr": "Öte yandan, bunun bir bedeli vardı.",
+     "answers": ["Then again, there was a price to pay."],
+     "hint": "then again, kendi söylediğini yumuşatır.",
+     "traps": [
+      { "has": "then again of this there was a price", "at": "start", "note": "then again tek başına kullanılır." },
+      { "has": "a price for pay", "note": "Kalıp: a price to pay." }
+     ]
+    },
+    {
+     "tr": "Yani sonuç belliydi.",
+     "answers": ["In other words, the result was clear."],
+     "hint": "in other words, yeniden ifade eder.",
+     "traps": [
+      { "has": "with other words", "at": "start", "note": "Kalıp: In other words." },
+      { "has": "the result were clear", "note": "Tekil özne: was." }
+     ]
+    },
+    {
+     "tr": "Yine de kimse itiraz etmedi.",
+     "answers": ["All the same, nobody objected.", "Even so, nobody objected."],
+     "hint": "all the same, zıtlığı korur.",
+     "traps": [
+      { "has": "all the same nobody did not object", "at": "start", "note": "nobody zaten olumsuzdur." },
+      { "has": "objected to it against", "note": "Sade tut: objected." }
+     ]
+    },
+    {
+     "tr": "Dahası, bunu kimse belgelemedi.",
+     "answers": ["What is more, nobody recorded it."],
+     "hint": "what is more, ekleme yapar.",
+     "traps": [
+      { "has": "what is more of this", "at": "start", "note": "what is more tek başına kullanılır." },
+      { "has": "nobody recorded nothing", "note": "Çift olumsuz olmaz." }
+     ]
+    },
+    {
+     "tr": "Sonuçta önemli olan buydu.",
+     "answers": ["In the end, that was what mattered."],
+     "hint": "what ile kurulan öbek tekil kabul edilir.",
+     "traps": [
+      { "has": "that was what matter", "note": "Tekil: what mattered." },
+      { "has": "at the end that was what mattered", "at": "start", "note": "Burada in the end kullanılır." }
+     ]
+    },
+    {
+     "tr": "Kısacası, hikaye burada bitmiyor.",
+     "answers": ["In short, the story does not end here."],
+     "hint": "in short, özetler.",
+     "traps": [
+      { "has": "shortly the story does not end", "at": "start", "note": "Kalıp: In short." },
+      { "has": "the story do not end", "note": "Tekil özne: does not." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir gelişmeyi anlat ve en az beş farklı söylem belirteci kullan. Her biri okuru doğru yöne çevirsin.",
+    "checklist": [
+     "Her belirteci doğru işlevde kullandın mı?",
+     "Belirteçleri virgülle ayırdın mı?",
+     "nobody ve nothing ile ayrıca olumsuzluk kullanmadın, değil mi?"
+    ],
+    "model": "After all, she was not the first to do this. In fact, the opposite happened. Then again, there was a price to pay. All the same, nobody objected. In short, the story does not end here."
+   }
+  },
+  {
+   "id": "c2-w-13",
+   "level": "C2",
+   "order": 13,
+   "title": "Sözleşme dili",
+   "canDo": "Bağlayıcı bir metnin dilini kurabilirim.",
+   "focus": "Hukuk dilinde belirsizlik kusur değil tehlikedir. Her taraf tanımlanır, her yükümlülük shall ile bağlanır, her koşul açıkça yazılır. Gündelik dilde doğal olan eksiltmeler burada boşluk yaratır.",
+   "tasks": [
+    {
+     "tr": "Bu sözleşme iki taraf arasında yapılmıştır.",
+     "answers": ["This agreement is made between the two parties."],
+     "hint": "İki taraf arasında: between.",
+     "traps": [
+      { "has": "among the two parties", "note": "İki şey için between." },
+      { "has": "is make between", "note": "Üçüncü biçim: is made." }
+     ]
+    },
+    {
+     "tr": "Bundan böyle birinci taraf Satıcı olarak anılacaktır.",
+     "answers": ["The first party shall be referred to as the Seller."],
+     "hint": "Kalıp: refer to as.",
+     "traps": [
+      { "has": "referred as the seller", "note": "Kalıp: referred to as." },
+      { "has": "shall be refer", "note": "Üçüncü biçim: shall be referred." }
+     ]
+    },
+    {
+     "tr": "Satıcı malı otuz gün içinde teslim edecektir.",
+     "answers": ["The Seller shall deliver the goods within thirty days."],
+     "hint": "Yükümlülük için shall, süre için within.",
+     "traps": [
+      { "has": "shall delivers", "note": "shall'dan sonra fiil yalın." },
+      { "has": "in thirty days time", "note": "Kalıp: within thirty days." }
+     ]
+    },
+    {
+     "tr": "Ödeme teslimden sonra yapılacaktır.",
+     "answers": ["Payment shall be made after delivery."],
+     "hint": "Edilgen yükümlülük: shall be + üçüncü biçim.",
+     "traps": [
+      { "has": "shall be make", "note": "Üçüncü biçim: shall be made." },
+      { "has": "payments shall be made after the delivery of it", "note": "Sade tut." }
+     ]
+    },
+    {
+     "tr": "Taraflardan biri yükümlülüğünü yerine getirmezse sözleşme feshedilir.",
+     "answers": ["If either party fails to meet its obligations, the agreement shall be ended."],
+     "hint": "either party tekil kabul edilir.",
+     "traps": [
+      { "has": "if either party fail", "at": "start", "note": "either party tekildir: fails." },
+      { "has": "fails meeting", "note": "fail'den sonra to gelir: fails to meet." }
+     ]
+    },
+    {
+     "tr": "Bu madde diğer maddeleri etkilemez.",
+     "answers": ["This article shall not affect the other articles."],
+     "hint": "affect fiil, effect isimdir.",
+     "traps": [
+      { "has": "shall not effect", "note": "Fiil biçimi: affect." },
+      { "has": "shall not affects", "note": "shall'dan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Anlaşmazlık hâlinde İngilizce metin esas alınacaktır.",
+     "answers": ["In the event of a disagreement, the English text shall apply."],
+     "hint": "Kalıp: in the event of.",
+     "traps": [
+      { "has": "in the event of disagreement happens", "at": "start", "note": "of'tan sonra isim gelir." },
+      { "has": "shall applies", "note": "shall'dan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Taraflar bu koşulları okumuş ve kabul etmiştir.",
+     "answers": ["The parties have read and accepted these conditions."],
+     "hint": "İki fiil aynı yardımcıyı paylaşır.",
+     "traps": [
+      { "has": "have read and accept", "note": "İkinci fiil de üçüncü biçimde: accepted." },
+      { "has": "this conditions", "note": "Çoğul: these conditions." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Basit bir anlaşma metni yaz: taraflar, iki yükümlülük, bir süre, bir fesih koşulu.",
+    "checklist": [
+     "Her tarafı tanımladın mı?",
+     "Yükümlülükleri shall ile bağladın mı?",
+     "Süreleri within ile açıkça yazdın mı?"
+    ],
+    "model": "This agreement is made between the two parties. The first party shall be referred to as the Seller. The Seller shall deliver the goods within thirty days and payment shall be made after delivery. If either party fails to meet its obligations, the agreement shall be ended."
+   }
+  },
+  {
+   "id": "c2-w-14",
+   "level": "C2",
+   "order": 14,
+   "title": "Eleştiri yazısı",
+   "canDo": "Bir eseri hem anlatıp hem değerlendiren bir yazı yazabilirim.",
+   "focus": "Eleştiri özet değildir. Okur eserin ne olduğunu değil, ne yaptığını ve bunu başarıp başarmadığını öğrenmek ister. İyi eleştiri kendi ölçütünü de açık eder.",
+   "tasks": [
+    {
+     "tr": "Bu kitap zor bir soruyu ele almaya çalışıyor.",
+     "answers": ["This book sets out to tackle a difficult question.", "This book attempts to address a difficult question."],
+     "hint": "Kalıp: set out to.",
+     "traps": [
+      { "has": "sets out tackling", "note": "set out'tan sonra to gelir." },
+      { "has": "attempts addressing", "note": "attempt'ten sonra to gelir." }
+     ]
+    },
+    {
+     "tr": "Bunu yarı yarıya başarıyor.",
+     "answers": ["It half succeeds.", "It succeeds only in part."],
+     "hint": "succeed'den sonra in gelir.",
+     "traps": [
+      { "has": "it succeeds only a part", "at": "start", "note": "Kalıp: in part." },
+      { "has": "it half succeed", "at": "start", "note": "Tekil özne: succeeds." }
+     ]
+    },
+    {
+     "tr": "İlk bölüm açık ve iyi kurulmuş.",
+     "answers": ["The first part is clear and well built.", "The opening section is clear and well constructed."],
+     "hint": "Zarf + üçüncü biçim birleşik sıfat kurar.",
+     "traps": [
+      { "has": "well build", "note": "Üçüncü biçim: well built." },
+      { "has": "clear and good built", "note": "Zarf gerekir: well built." }
+     ]
+    },
+    {
+     "tr": "Sonraki bölümlerde yazar kendi ölçütünü unutuyor.",
+     "answers": ["In the later chapters the writer forgets her own standard.", "In the later chapters the author forgets his own standard."],
+     "hint": "İyelik vurgusu: her own.",
+     "traps": [
+      { "has": "the writer forget", "note": "Tekil özne: forgets." },
+      { "has": "her own standards", "note": "Tek ölçüt anlatılıyor: her own standard." }
+     ]
+    },
+    {
+     "tr": "Bu tutarsızlık kitabın gücünü zayıflatıyor.",
+     "answers": ["This change weakens the book.", "This shift weakens the book."],
+     "hint": "weaken'dan sonra doğrudan nesne gelir.",
+     "traps": [
+      { "has": "weakens to the book", "note": "weaken'dan sonra doğrudan nesne gelir." },
+      { "has": "this change weaken", "at": "start", "note": "Tekil özne: weakens." }
+     ]
+    },
+    {
+     "tr": "Yine de kitap sorulmaya değer bir soru soruyor.",
+     "answers": ["Even so, the book asks a question worth asking."],
+     "hint": "worth'tan sonra -ing gelir.",
+     "traps": [
+      { "has": "worth to ask", "note": "worth'tan sonra -ing: worth asking." },
+      { "has": "a question worthy asking", "note": "Kalıp: worth asking." }
+     ]
+    },
+    {
+     "tr": "Bu, çoğu kitaptan fazlasıdır.",
+     "answers": ["That is more than most books do."],
+     "hint": "Karşılaştırmada than gelir.",
+     "traps": [
+      { "has": "more that most books", "at": "start", "note": "Karşılaştırmada than kullanılır." },
+      { "has": "most book", "note": "Çoğul: most books." }
+     ]
+    },
+    {
+     "tr": "Okumaya değer mi? Sabırlı okur için evet.",
+     "answers": ["Is it worth reading? For the patient reader, yes."],
+     "hint": "worth'tan sonra -ing gelir.",
+     "traps": [
+      { "has": "is it worth to read", "at": "start", "note": "worth'tan sonra -ing: worth reading." },
+      { "has": "for the patient readers yes", "note": "Tekil genelleme: the patient reader." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Okuduğun bir kitap ya da izlediğin bir film için eleştiri yaz: ne yapmaya çalışıyor, ölçütün ne, başardı mı, kime tavsiye edersin.",
+    "checklist": [
+     "Özet değil değerlendirme yazdın mı?",
+     "Kendi ölçütünü açık ettin mi?",
+     "worth'tan sonra -ing kullandın mı?"
+    ],
+    "model": "This book sets out to tackle a difficult question. It half succeeds. The first part is clear and well built, but in the later chapters the writer forgets her own standard, and this change weakens the book. Even so, the book asks a question worth asking. That is more than most books do."
+   }
+  },
+  {
+   "id": "c2-w-15",
+   "level": "C2",
+   "order": 15,
+   "title": "Anma yazısı",
+   "canDo": "Bir kişiyi ölçülü ve gerçekçi biçimde anabilirim.",
+   "focus": "Anma yazısının tehlikesi abartıdır: kusursuz anlatılan insan tanınmaz hâle gelir. Güçlü anma yazısı somut bir ayrıntıyla başlar ve kusuru gizlemez; böylece övgü inandırıcı olur.",
+   "tasks": [
+    {
+     "tr": "Her sabah aynı saatte gelirdi.",
+     "answers": ["She used to arrive at the same time every morning.", "He used to arrive at the same time every morning."],
+     "hint": "Geçmiş alışkanlık: used to.",
+     "traps": [
+      { "has": "she was arriving at the same time every morning", "at": "start", "note": "Alışkanlık için used to." },
+      { "has": "used to arriving", "note": "used to'dan sonra yalın fiil." }
+     ]
+    },
+    {
+     "tr": "Kolay bir insan değildi.",
+     "answers": ["She was not an easy person.", "He was not an easy person."],
+     "hint": "Kusuru gizlememek övgüyü güçlendirir.",
+     "traps": [
+      { "has": "was not a easy person", "note": "Sesli sesle başlar: an easy person." },
+      { "has": "she was not easy person", "at": "start", "note": "Tekil sayılabilen isimde an gerekir." }
+     ]
+    },
+    {
+     "tr": "Ama hiçbir zaman kestirme yol seçmedi.",
+     "answers": ["But she never took the easy way.", "But he never took the easy way."],
+     "hint": "never ile ayrıca not kullanılmaz.",
+     "traps": [
+      { "has": "never did not take", "note": "never zaten olumsuzdur." },
+      { "has": "never taked", "note": "take düzensizdir: took." }
+     ]
+    },
+    {
+     "tr": "Çalıştığı herkes bunu bilir.",
+     "answers": ["Everyone who worked with her knows this.", "Everyone who worked with him knows this."],
+     "hint": "everyone tekil kabul edilir.",
+     "traps": [
+      { "has": "everyone who worked with her know this", "at": "start", "note": "everyone tekildir: knows." },
+      { "has": "everyone which worked", "at": "start", "note": "İnsan için who." }
+     ]
+    },
+    {
+     "tr": "Ardında bitmemiş bir çalışma bıraktı.",
+     "answers": ["She left behind an unfinished piece of work.", "He left behind unfinished work."],
+     "hint": "work bu anlamda sayılamaz.",
+     "traps": [
+      { "has": "an unfinished work", "note": "work sayılamaz: a piece of work." },
+      { "has": "left back", "note": "Kalıp: left behind." }
+     ]
+    },
+    {
+     "tr": "Onu tamamlamak bize düşüyor.",
+     "answers": ["It falls to us to finish it.", "Finishing it is now our task."],
+     "hint": "Kalıp: it falls to someone to.",
+     "traps": [
+      { "has": "it falls to us finishing it", "at": "start", "note": "Kalıp: to finish it." },
+      { "has": "finish it is now our task", "at": "start", "note": "Özne olunca: Finishing it." }
+     ]
+    },
+    {
+     "tr": "Bu, isteyeceği türden bir anma olurdu.",
+     "answers": ["That is the kind of memory she would have wanted.", "That is the kind of memory he would have wanted."],
+     "hint": "Gerçekleşmemiş geçmiş: would have + üçüncü biçim.",
+     "traps": [
+      { "has": "would have want", "note": "Üçüncü biçim: would have wanted." },
+      { "has": "the kind of memory which she would wanted", "note": "Kalıp: would have wanted." }
+     ]
+    },
+    {
+     "tr": "Çiçek değil, iş isterdi.",
+     "answers": ["She would have asked for work, not flowers.", "He would have asked for work, not flowers."],
+     "hint": "ask'tan sonra for gelir.",
+     "traps": [
+      { "has": "asked work not flowers", "note": "ask'tan sonra for gelir." },
+      { "has": "would have asked to work", "note": "Kalıp: asked for work." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Tanıdığın ya da hayran olduğun birini an: somut bir ayrıntıyla başla, bir kusurunu yaz, bir katkısını anlat, bir çağrıyla bitir.",
+    "checklist": [
+     "Somut bir ayrıntıyla başladın mı?",
+     "Kusuru gizlemeden yazdın mı?",
+     "never ile ayrıca olumsuzluk kullanmadın, değil mi?"
+    ],
+    "model": "She used to arrive at the same time every morning. She was not an easy person, but she never took the easy way, and everyone who worked with her knows this. She left behind an unfinished piece of work. It falls to us to finish it."
+   }
+  },
+  {
+   "id": "c2-w-16",
+   "level": "C2",
+   "order": 16,
+   "title": "Çağrı metni",
+   "canDo": "Okuyucuyu harekete çağıran güçlü bir metin yazabilirim.",
+   "focus": "Çağrı metninde ritim ve paralellik öne çıkar, ama iddia yine kanıtlanır. Duygu, gerekçenin yerine geçmez; taşıyıcısı olur. Somut bir eylem istemeyen çağrı, çağrı değildir.",
+   "tasks": [
+    {
+     "tr": "Bu bir tercih değil, bir zorunluluk.",
+     "answers": ["This is not a choice but a necessity."],
+     "hint": "not A but B kalıbında iki taraf aynı türden.",
+     "traps": [
+      { "has": "not a choice but necessary", "note": "İki taraf aynı biçimde: but a necessity." },
+      { "has": "this is not choice", "at": "start", "note": "Tekil sayılabilen isimde a gerekir." }
+     ]
+    },
+    {
+     "tr": "Beklersek geç kalırız. Şimdi başlarsak yetişiriz.",
+     "answers": ["If we wait, we will be late. If we start now, we will make it."],
+     "hint": "if'ten sonra geniş zaman gelir.",
+     "traps": [
+      { "has": "if we will wait", "at": "start", "note": "if'ten sonra geniş zaman." },
+      { "has": "we will made it", "note": "will'den sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Bu bizim işimiz, başkasının değil.",
+     "answers": ["This is our work, not somebody else's."],
+     "hint": "Kalıp: somebody else's.",
+     "traps": [
+      { "has": "not somebody other", "note": "Kalıp: somebody else's." },
+      { "has": "not else somebody", "note": "Sıra: somebody else's." }
+     ]
+    },
+    {
+     "tr": "Üç şey istiyoruz: zaman, kaynak ve açıklık.",
+     "answers": ["We are asking for three things: time, resources and openness."],
+     "hint": "ask'tan sonra for gelir; üç öge aynı biçimde.",
+     "traps": [
+      { "has": "we are asking three things", "at": "start", "note": "ask'tan sonra for gelir." },
+      { "has": "time resources and to be open", "note": "Üç öge aynı biçimde olmalı." }
+     ]
+    },
+    {
+     "tr": "Bunların üçü de bugün verilebilir.",
+     "answers": ["All three can be given today."],
+     "hint": "Edilgen kip: can be + üçüncü biçim.",
+     "traps": [
+      { "has": "can be give", "note": "Üçüncü biçim: can be given." },
+      { "has": "all three can be given todays", "note": "today çoğul olmaz." }
+     ]
+    },
+    {
+     "tr": "Bunu yapmazsak kimse yapmayacak.",
+     "answers": ["If we do not do it, nobody will."],
+     "hint": "Tekrardan kaçınmak için fiil düşürülür.",
+     "traps": [
+      { "has": "nobody will not", "note": "nobody zaten olumsuzdur." },
+      { "has": "if we will not do it", "at": "start", "note": "if'ten sonra geniş zaman." }
+     ]
+    },
+    {
+     "tr": "Bugün bir şey yapın: bir mektup yazın.",
+     "answers": ["Do one thing today: write a letter."],
+     "hint": "Somut eylem iste.",
+     "traps": [
+      { "has": "you do one thing today", "at": "start", "note": "Emir kipinde özne yazılmaz." },
+      { "has": "write letter", "note": "Tekil sayılabilen isimde a gerekir." }
+     ]
+    },
+    {
+     "tr": "Bu kadarı bile bir fark yaratır.",
+     "answers": ["Even that makes a difference."],
+     "hint": "Kalıp: make a difference.",
+     "traps": [
+      { "has": "even that does a difference", "at": "start", "note": "Kalıp: makes a difference." },
+      { "has": "even that make a difference", "at": "start", "note": "Tekil özne: makes." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir konuda çağrı metni yaz: sorun, aciliyet, üç somut istek, tek bir eylem çağrısı.",
+    "checklist": [
+     "Somut bir eylem istedin mi?",
+     "Duyguyu gerekçenin yerine koymadın, değil mi?",
+     "Paralel yapıları aynı biçimde tuttun mu?"
+    ],
+    "model": "This is not a choice but a necessity. If we wait, we will be late. If we start now, we will make it. We are asking for three things: time, resources and openness. Do one thing today: write a letter. Even that makes a difference."
+   }
+  },
+  {
+   "id": "c2-w-17",
+   "level": "C2",
+   "order": 17,
+   "title": "Kültürel gönderme",
+   "canDo": "Okurun bilmediği göndermeleri yönetebilirim.",
+   "focus": "Gönderme, paylaşılan bilgiye dayanır. Okur o bilgiyi taşımıyorsa gönderme onu dışarıda bırakır. Çözüm göndermeyi atmak değil, bir cümlelik köprü kurmaktır — köprü, göndermeyi bilen okuru da rahatsız etmez.",
+   "tasks": [
+    {
+     "tr": "Bu tartışma yeni değil; iki yüz yıldır sürüyor.",
+     "answers": ["This debate is not new; it has been going on for two hundred years."],
+     "hint": "Süregelen: has been + -ing, süre için for.",
+     "traps": [
+      { "has": "since two hundred years", "note": "Süre için for." },
+      { "has": "two hundreds years", "note": "Sayı sıfat olunca çoğul olmaz." }
+     ]
+    },
+    {
+     "tr": "Aynı soru Türk edebiyatında da sorulmuştur.",
+     "answers": ["The same question has been asked in Turkish literature as well."],
+     "hint": "Edilgen tamamlanmış: has been + üçüncü biçim.",
+     "traps": [
+      { "has": "has been ask", "note": "Üçüncü biçim: has been asked." },
+      { "has": "in the turkish literature", "note": "Genel anlamda the kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Bu adı duymamış okur için kısa bir not düşeyim.",
+     "answers": ["For the reader who does not know this name, let me add a short note."],
+     "hint": "Köprü cümlesi kısa olmalı.",
+     "traps": [
+      { "has": "the reader which does not know", "note": "İnsan için who." },
+      { "has": "let me to add", "note": "let'ten sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Ayrıntıya girmeye gerek yok.",
+     "answers": ["There is no need to go into detail."],
+     "hint": "Kalıp: go into detail.",
+     "traps": [
+      { "has": "go into details", "note": "Kalıp: go into detail." },
+      { "has": "there is no need going", "at": "start", "note": "need'den sonra to gelir." }
+     ]
+    },
+    {
+     "tr": "Bilmek isteyen okur kaynağa bakabilir.",
+     "answers": ["The reader who wants to know more can look at the source."],
+     "hint": "look'tan sonra at gelir.",
+     "traps": [
+      { "has": "can look the source", "note": "look'tan sonra at gelir." },
+      { "has": "the reader who want", "at": "start", "note": "Tekil özne: wants." }
+     ]
+    },
+    {
+     "tr": "Göndermeyi açıklamak onu öldürmez.",
+     "answers": ["Explaining a reference does not kill it."],
+     "hint": "Özne olunca fiil -ing alır.",
+     "traps": [
+      { "has": "explain a reference does not kill it", "at": "start", "note": "Özne olunca: Explaining." },
+      { "has": "do not kill it", "note": "Tekil özne: does not." }
+     ]
+    },
+    {
+     "tr": "Okuru dışarıda bırakmak öldürür.",
+     "answers": ["Leaving the reader outside does."],
+     "hint": "Tekrardan kaçınmak için fiil does ile karşılanır.",
+     "traps": [
+      { "has": "leaving the reader outside kills it does", "at": "start", "note": "Tekrar gereksiz: does yeter." },
+      { "has": "leave the reader outside does", "at": "start", "note": "Özne olunca: Leaving." }
+     ]
+    },
+    {
+     "tr": "Bu yüzden köprüyü kurmayı yeğliyorum.",
+     "answers": ["That is why I prefer to build the bridge.", "That is why I prefer building the bridge."],
+     "hint": "prefer'dan sonra to + fiil ya da -ing gelir.",
+     "traps": [
+      { "has": "prefer build", "note": "prefer'dan sonra to ya da -ing gelir." },
+      { "has": "for this i prefer", "at": "start", "note": "Kalıp: That is why." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir göndermeyi kullan ve tek cümlelik bir köprü kur. Köprü, göndermeyi bilen okuru da rahatsız etmesin.",
+    "checklist": [
+     "Köprüyü tek cümlede tuttun mu?",
+     "Göndermeyi bilen okuru yormadın, değil mi?",
+     "Özne olan fiilleri -ing biçiminde yazdın mı?"
+    ],
+    "model": "This debate is not new; it has been going on for two hundred years. The same question has been asked in Turkish literature as well. For the reader who does not know this name, let me add a short note. Explaining a reference does not kill it. Leaving the reader outside does."
+   }
+  }
+ ]
+}

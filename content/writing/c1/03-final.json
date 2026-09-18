@@ -196,12 +196,12 @@
    "focus": "Bir başkasının cümlesini küçük değişikliklerle kullanmak alıntı değil, kopyadır. Doğru yol ikisinden biridir: ya tırnak içinde aynen ve kaynakla, ya da tamamen yeniden kurulmuş ve yine kaynakla.",
    "tasks": [
     {
-     "tr": "Yazarın sözlerini aynen aktarıyorum.",
-     "answers": ["I am quoting the writer word for word.", "These are the writer's exact words."],
+     "tr": "Bu paragrafı olduğu gibi aldım.",
+     "answers": ["I have taken this paragraph word for word."],
      "hint": "Kalıp: word for word.",
      "traps": [
       { "has": "word by word", "note": "Kalıp: word for word." },
-      { "has": "writers exact words", "note": "Sahiplik: writer's." }
+      { "has": "i have take this paragraph", "at": "start", "note": "Üçüncü biçim: have taken." }
      ]
     },
     {
@@ -275,7 +275,7 @@
      "Yeniden kurarken yapıyı da değiştirdin mi?",
      "Kaynağı her iki durumda da belirttin mi?"
     ],
-    "model": "These are the writer's exact words, and I have given the source in a footnote. Here I am summarizing in my own words. Changing a few words is not enough: the structure must change as well. Otherwise this is copying."
+    "model": "I have taken this paragraph word for word, and I have given the source in a footnote. Here I am summarizing in my own words. Changing a few words is not enough: the structure must change as well. Otherwise this is copying."
    }
   },
   {

@@ -1,0 +1,737 @@
+{
+ "_meta": {
+  "batch": "c2-01",
+  "level": "C2",
+  "range": "Set 1-8 — ritim, çağrışım, bilgi yapısı, paralellik, ağırlıklı son, diplomatik dil, muğlaklık, yoğunlaştırma"
+ },
+ "sets": [
+  {
+   "id": "c2-w-01",
+   "level": "C2",
+   "order": 1,
+   "title": "Cümle ritmi",
+   "canDo": "Cümle uzunluğunu bilinçli değiştirerek okuma hızını yönetebilirim.",
+   "focus": "Aynı bilgi, uzun bir cümlede düşünceye, kısa bir cümlede darbeye dönüşür. Uzun cümleden sonra gelen kısa cümle vurgu yaratır; ardı ardına kısa cümleler ise okuru yorar. Ritim süs değil, anlamın taşıyıcısıdır.",
+   "tasks": [
+    {
+     "tr": "Uzun süre tartıştık, her ayrıntıyı gözden geçirdik, sonunda bir karara vardık. Karar yanlıştı.",
+     "answers": ["We argued for a long time, went over every detail and finally reached a decision. The decision was wrong."],
+     "hint": "Uzun cümleden sonra kısa cümle vurgu yapar.",
+     "traps": [
+      { "has": "reached to a decision", "note": "reach'ten sonra doğrudan nesne gelir." },
+      { "has": "the decision was wrong and this was because", "note": "Kısa cümle vurgu için; uzatma." }
+     ]
+    },
+    {
+     "tr": "Bunu kimse öngörmedi. Kimse de sormadı.",
+     "answers": ["Nobody expected this. Nobody asked either."],
+     "hint": "Olumsuz cümlede either kullanılır.",
+     "traps": [
+      { "has": "nobody asked too", "note": "Olumsuzda either kullanılır." },
+      { "has": "nobody did not expect", "at": "start", "note": "nobody zaten olumsuzdur." }
+     ]
+    },
+    {
+     "tr": "Sorun buydu: kimse sormadı.",
+     "answers": ["That was the problem: nobody asked."],
+     "hint": "İki nokta, açıklamayı öne çıkarır.",
+     "traps": [
+      { "has": "that was the problem that nobody asked", "at": "start", "note": "İki nokta daha etkili." },
+      { "has": "nobody asked nothing", "note": "Çift olumsuz olmaz." }
+     ]
+    },
+    {
+     "tr": "Birinci rapor uzundu, ikincisi kısa, üçüncüsü hiç yazılmadı.",
+     "answers": ["The first report was long, the second short, the third never written."],
+     "hint": "Tekrarlanan fiil düşürülerek ritim sıkılaştırılır.",
+     "traps": [
+      { "has": "the third was never not written", "note": "never zaten olumsuzdur." },
+      { "has": "the second was short and the third was never written and", "note": "Tekrar ritmi bozuyor; fiili düşür." }
+     ]
+    },
+    {
+     "tr": "Ne kadar beklediğimizi sorma.",
+     "answers": ["Do not ask how long we waited."],
+     "hint": "Dolaylı soruda sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "how long did we wait", "note": "Dolaylı: how long we waited." },
+      { "has": "not ask how long", "at": "start", "note": "Olumsuz emirde do gerekir." }
+     ]
+    },
+    {
+     "tr": "Beklemek, ummak, sonra yeniden beklemek: bütün bir yıl böyle geçti.",
+     "answers": ["Waiting, hoping, then waiting again: that was the whole year."],
+     "hint": "Üçleme ritmi kurar; üç öge aynı biçimde olmalı.",
+     "traps": [
+      { "has": "waiting hoping then to wait again", "at": "start", "note": "Üç öge aynı biçimde: waiting again." },
+      { "has": "that was all the year", "note": "Doğal biçim: the whole year." }
+     ]
+    },
+    {
+     "tr": "Sonunda bir şey değişti.",
+     "answers": ["In the end, something changed."],
+     "hint": "Kısa cümle, uzun bölümden sonra nefes verir.",
+     "traps": [
+      { "has": "at the end something changed", "at": "start", "note": "Burada in the end kullanılır." },
+      { "has": "something has changed in the end", "note": "Bitmiş anlatıda geçmiş zaman." }
+     ]
+    },
+    {
+     "tr": "Ama bu başka bir yazının konusu.",
+     "answers": ["But that is the subject of another essay."],
+     "hint": "Tek kelime: another.",
+     "traps": [
+      { "has": "an other essay", "note": "Tek kelime: another." },
+      { "has": "the subject for another essay", "note": "Kalıp: the subject of." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir olayı anlat: uzun bir cümleyle kur, kısa bir cümleyle vur, sonra bir üçlemeyle kapat.",
+    "checklist": [
+     "Uzun cümleden sonra kısa cümleyle vurgu yaptın mı?",
+     "Üçlemede üç ögeyi aynı biçimde tuttun mu?",
+     "Olumsuz cümlede too yerine either kullandın mı?"
+    ],
+    "model": "We argued for a long time, went over every detail and finally reached a decision. The decision was wrong. Nobody expected this. Nobody asked either. Waiting, hoping, then waiting again: that was the whole year."
+   }
+  },
+  {
+   "id": "c2-w-02",
+   "level": "C2",
+   "order": 2,
+   "title": "Çağrışım",
+   "canDo": "Sözlük anlamı aynı ama çağrışımı farklı kelimeler arasında seçim yapabilirim.",
+   "focus": "thin ve slim aynı şeyi anlatır ama biri nötr biri olumludur. confident ile arrogant, determined ile stubborn da öyle: aynı davranış, farklı yargı. Sözlük bu farkı çoğu zaman göstermez; okur her zaman görür. Yanlış çağrışım, söylemediğin bir yargıyı taşır.",
+   "tasks": [
+    {
+     "tr": "Zayıf ama sağlıklı görünüyordu. (Olumlu çağrışım.)",
+     "answers": ["She looked slim but healthy.", "He looked slim but healthy."],
+     "hint": "Olumlu çağrışım: slim.",
+     "traps": [
+      { "has": "looked thin but healthy", "note": "thin daha nötr; burada slim uygun." },
+      { "has": "looked slim but healthily", "note": "Sıfat gerekir: healthy." }
+     ]
+    },
+    {
+     "tr": "Kendine aşırı güveniyordu. (Olumsuz çağrışım.)",
+     "answers": ["She was arrogant.", "He was arrogant."],
+     "hint": "Olumsuz çağrışım: arrogant.",
+     "traps": [
+      { "has": "she was confident", "at": "start", "note": "Olumlu çağrışım; burada arrogant uygun." },
+      { "has": "she was arrogantly", "at": "start", "note": "Sıfat gerekir: arrogant." }
+     ]
+    },
+    {
+     "tr": "Kendine güveniyordu. (Olumlu çağrışım.)",
+     "answers": ["She was confident.", "He was confident."],
+     "hint": "Olumlu çağrışım: confident.",
+     "traps": [
+      { "has": "she was arrogant", "at": "start", "note": "Olumsuz çağrışım; burada confident uygun." },
+      { "has": "she was confidence", "at": "start", "note": "Sıfat gerekir: confident." }
+     ]
+    },
+    {
+     "tr": "Israrcı bir insandı. (Olumlu çağrışım.)",
+     "answers": ["She was a determined person.", "He was a determined person."],
+     "hint": "Olumlu: determined.",
+     "traps": [
+      { "has": "was a stubborn person", "note": "Olumsuz çağrışım; burada determined uygun." },
+      { "has": "was determined person", "note": "Tekil sayılabilen isimde a gerekir." }
+     ]
+    },
+    {
+     "tr": "Aynı kişi inatçıydı da. (Olumsuz çağrışım.)",
+     "answers": ["The same person was also stubborn."],
+     "hint": "also, be fiilinden sonra gelir.",
+     "traps": [
+      { "has": "the same person also was stubborn", "at": "start", "note": "be fiilinden sonra: was also." },
+      { "has": "was also determined", "note": "Burada olumsuz çağrışım isteniyor: stubborn." }
+     ]
+    },
+    {
+     "tr": "Ucuz bir çözümdü. (Olumsuz çağrışım.)",
+     "answers": ["It was a cheap solution."],
+     "hint": "Olumsuz çağrışım: cheap.",
+     "traps": [
+      { "has": "it was an inexpensive solution", "at": "start", "note": "Nötr çağrışım; burada cheap isteniyor." },
+      { "has": "a cheap solutions", "note": "Tekil: a cheap solution." }
+     ]
+    },
+    {
+     "tr": "Maliyeti düşüktü. (Nötr çağrışım.)",
+     "answers": ["The cost was low.", "It was inexpensive."],
+     "hint": "Nötr: low cost ya da inexpensive.",
+     "traps": [
+      { "has": "the cost was cheap", "at": "start", "note": "cheap, cost ile kullanılmaz: the cost was low." },
+      { "has": "it was cheap", "at": "start", "note": "Nötr isteniyor: inexpensive." }
+     ]
+    },
+    {
+     "tr": "Bu iki kelime arasındaki fark küçük değildir.",
+     "answers": ["The difference between these two words is not small."],
+     "hint": "İki şey arasında: between.",
+     "traps": [
+      { "has": "difference among these two", "at": "start", "note": "İki şey için between." },
+      { "has": "these two words are not small", "note": "Özne fark: the difference is not small." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Aynı kişiyi iki kez tarif et: bir kez yalnızca olumlu çağrışımlı kelimelerle, bir kez olumsuzlarla. Olguları değiştirme.",
+    "checklist": [
+     "Olguları değiştirmeden yalnızca çağrışımı değiştirdin mi?",
+     "slim/thin, confident/arrogant, determined/stubborn çiftlerini doğru kullandın mı?",
+     "cheap kelimesini cost ile birlikte kullanmadın, değil mi?"
+    ],
+    "model": "She was a determined person and she was confident. The same person was also stubborn and sometimes arrogant, and her solutions were sometimes cheap. The difference between these two descriptions is not small: the facts are the same."
+   }
+  },
+  {
+   "id": "c2-w-03",
+   "level": "C2",
+   "order": 3,
+   "title": "Bilgi yapısı",
+   "canDo": "Bilinen bilgiyi başa, yeni bilgiyi sona koyarak akıcılık sağlayabilirim.",
+   "focus": "İngilizce cümle bilineni başta, yeniyi sonda ister. Bu kural bozulunca cümle dilbilgisi olarak doğru ama okunması zor olur. Türkçede vurgu fiile yakın yerde olduğu için bu sıra sezgiyle gelmez.",
+   "tasks": [
+    {
+     "tr": "Toplantıda bir karar alındı. Bu kararı yönetim kurulu onayladı.",
+     "answers": ["A decision was taken at the meeting. The board approved it."],
+     "hint": "Bilinen bilgi (karar) sonraki cümlenin başında zamirle döner.",
+     "traps": [
+      { "has": "the board approved a decision which was taken", "note": "Bilinen bilgi başta olmalı." },
+      { "has": "a decision was take", "at": "start", "note": "Üçüncü biçim: was taken." }
+     ]
+    },
+    {
+     "tr": "Bu sonucu açıklayan tek bir etken var.",
+     "answers": ["There is only one factor that explains this result."],
+     "hint": "There is yapısı yeni bilgiyi sona atar.",
+     "traps": [
+      { "has": "only one factor which explains this result exists", "at": "start", "note": "Doğal biçim: There is only one factor that…" },
+      { "has": "there are only one factor", "at": "start", "note": "Tekil: there is." }
+     ]
+    },
+    {
+     "tr": "Sorunun kaynağı buydu: eksik veri.",
+     "answers": ["This was the source of the problem: missing data."],
+     "hint": "Yeni bilgi iki noktadan sonra gelir.",
+     "traps": [
+      { "has": "missing data was this the source", "at": "start", "note": "Sıra bozuk; yeni bilgi sona." },
+      { "has": "the source for the problem", "note": "Kalıp: the source of." }
+     ]
+    },
+    {
+     "tr": "Bu eksiklik ancak aylar sonra fark edildi.",
+     "answers": ["This gap was noticed only months later."],
+     "hint": "Bilinen (this gap) başta, yeni bilgi (months later) sonda.",
+     "traps": [
+      { "has": "only months later this gap was noticed", "at": "start", "note": "Bilinen bilgi başta olmalı." },
+      { "has": "was notice", "note": "Üçüncü biçim: was noticed." }
+     ]
+    },
+    {
+     "tr": "Bunu fark eden kişi yeni bir stajyerdi.",
+     "answers": ["The person who noticed it was a new assistant."],
+     "hint": "Yeni bilgi (stajyer) sonda.",
+     "traps": [
+      { "has": "a new intern was the person who noticed it", "at": "start", "note": "Yeni bilgi sona: was a new intern." },
+      { "has": "the person which noticed", "at": "start", "note": "İnsan için who." }
+     ]
+    },
+    {
+     "tr": "Bu ayrıntı raporda hiç geçmiyor.",
+     "answers": ["This detail does not appear in the report at all."],
+     "hint": "Vurgu için at all cümle sonunda.",
+     "traps": [
+      { "has": "at all this detail does not appear", "at": "start", "note": "at all cümlenin sonuna gelir." },
+      { "has": "this detail do not appear", "at": "start", "note": "Tekil özne: does not." }
+     ]
+    },
+    {
+     "tr": "Raporu kimin yazdığını biliyoruz.",
+     "answers": ["We know who wrote the report."],
+     "hint": "Dolaylı soruda sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "we know who did write the report", "at": "start", "note": "Dolaylı soruda: who wrote." },
+      { "has": "who the report wrote", "note": "Özne who: who wrote the report." }
+     ]
+    },
+    {
+     "tr": "Asıl soru, neden yazdığıdır.",
+     "answers": ["The real question is why it was written."],
+     "hint": "Dolaylı soruda sıra düz cümle gibidir.",
+     "traps": [
+      { "has": "why was it written", "note": "Dolaylı: why it was written." },
+      { "has": "why it was write", "note": "Üçüncü biçim: was written." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir olayı beş cümleyle anlat ve her cümle bir öncekinin son ögesiyle başlasın.",
+    "checklist": [
+     "Bilinen bilgiyi cümle başına koydun mu?",
+     "Yeni bilgiyi cümle sonuna bıraktın mı?",
+     "Dolaylı sorularda sırayı düz cümle gibi bıraktın mı?"
+    ],
+    "model": "A decision was taken at the meeting. The board approved it. This approval rested on a single factor: missing data. This gap was noticed only months later, and the person who noticed it was a new assistant."
+   }
+  },
+  {
+   "id": "c2-w-04",
+   "level": "C2",
+   "order": 4,
+   "title": "Paralellik",
+   "canDo": "Sıralanan ögeleri aynı dilbilgisi biçiminde tutabilirim.",
+   "focus": "Paralellik bir süs değil, okumayı hızlandıran bir yapıdır. Liste ögeleri biçim değiştirirse okur her ögede yeniden ayar yapmak zorunda kalır ve cümle tökezler.",
+   "tasks": [
+    {
+     "tr": "Görevi okumak, özetlemek ve sunmaktı.",
+     "answers": ["Her job was to read, to summarize and to present.", "His job was reading, summarizing and presenting."],
+     "hint": "Üç öge de aynı biçimde olmalı.",
+     "traps": [
+      { "has": "to read summarizing and to present", "note": "Üç öge aynı biçimde olmalı." },
+      { "has": "to summarise", "note": "Amerikan yazımı: summarize." }
+     ]
+    },
+    {
+     "tr": "Ne zamanı vardı ne de parası.",
+     "answers": ["She had neither the time nor the money.", "He had neither the time nor the money."],
+     "hint": "neither… nor kalıbında iki taraf aynı türden olmalı.",
+     "traps": [
+      { "has": "neither the time or the money", "note": "Kalıp: neither… nor." },
+      { "has": "she had not neither", "at": "start", "note": "neither zaten olumsuzdur." }
+     ]
+    },
+    {
+     "tr": "Hem hızlı hem de güvenilirdi.",
+     "answers": ["It was both fast and reliable."],
+     "hint": "both… and kalıbında iki taraf aynı türden olmalı.",
+     "traps": [
+      { "has": "both fast and it was reliable", "at": "start", "note": "İki taraf aynı biçimde: both fast and reliable." },
+      { "has": "both fast and also reliable", "at": "start", "note": "both… and yeterli; also gereksiz." }
+     ]
+    },
+    {
+     "tr": "Ya bugün başlarız ya da hiç başlamayız.",
+     "answers": ["Either we start today or we do not start at all."],
+     "hint": "either… or kalıbında iki taraf aynı biçimde.",
+     "traps": [
+      { "has": "either we start today or never starting", "at": "start", "note": "İki taraf aynı biçimde olmalı." },
+      { "has": "either we start today nor", "at": "start", "note": "Kalıp: either… or." }
+     ]
+    },
+    {
+     "tr": "Bu yöntem yalnızca daha hızlı değil, aynı zamanda daha ucuzdur.",
+     "answers": ["This method is not only faster but also cheaper."],
+     "hint": "not only… but also kalıbında iki taraf aynı biçimde.",
+     "traps": [
+      { "has": "not only faster but it is also cheaper", "note": "İki taraf aynı biçimde: but also cheaper." },
+      { "has": "more fast", "note": "Kısa sıfat: faster." }
+     ]
+    },
+    {
+     "tr": "Okumaktan çok yazmayı severdi.",
+     "answers": ["She liked writing more than reading.", "He liked writing more than reading."],
+     "hint": "İki taraf da -ing biçiminde olmalı.",
+     "traps": [
+      { "has": "liked writing more than to read", "note": "İki taraf aynı biçimde: than reading." },
+      { "has": "liked to write more than reading", "note": "İki taraf aynı biçimde olmalı." }
+     ]
+    },
+    {
+     "tr": "Amaç bilgi vermek değil, soru sordurmaktı.",
+     "answers": ["The aim was not to give information but to raise questions."],
+     "hint": "not A but B kalıbında iki taraf aynı biçimde.",
+     "traps": [
+      { "has": "not to give information but raising questions", "note": "İki taraf aynı biçimde: but to raise." },
+      { "has": "informations", "note": "information sayılamaz." }
+     ]
+    },
+    {
+     "tr": "Geldi, gördü, yazdı.",
+     "answers": ["She came, she saw, she wrote.", "He came, he saw, he wrote."],
+     "hint": "Üç fiil de aynı zamanda ve biçimde.",
+     "traps": [
+      { "has": "she came she saw and writing", "at": "start", "note": "Üç öge aynı biçimde olmalı." },
+      { "has": "she comed", "at": "start", "note": "come düzensizdir: came." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir kişiyi ya da bir yöntemi tarif et ve en az üç paralel yapı kullan (üçleme, not only… but also, neither… nor).",
+    "checklist": [
+     "Liste ögelerini aynı dilbilgisi biçiminde tuttun mu?",
+     "neither ile ayrıca olumsuzluk kullanmadın, değil mi?",
+     "not only… but also'da iki tarafı eşitledin mi?"
+    ],
+    "model": "Her job was to read, to summarize and to present. She had neither the time nor the money, yet the work was both fast and reliable. The aim was not to give information but to raise questions."
+   }
+  },
+  {
+   "id": "c2-w-05",
+   "level": "C2",
+   "order": 5,
+   "title": "Ağırlığı sona koymak",
+   "canDo": "Uzun öbekleri cümle sonuna taşıyarak okunurluğu artırabilirim.",
+   "focus": "İngilizce ağır ögeyi sonda taşır. Uzun bir özne fiili geciktirir ve okur beklemek zorunda kalır; bu yüzden ağırlık sona atılır, başa boş bir it konur.",
+   "tasks": [
+    {
+     "tr": "Onun bu kadar erken ayrılması beni şaşırttı.",
+     "answers": ["It surprised me that she left so early.", "It surprised me that he left so early."],
+     "hint": "Ağır özne sona atılır, başa it konur.",
+     "traps": [
+      { "has": "that she left so early surprised me", "at": "start", "note": "Ağırlık sona: It surprised me that…" },
+      { "has": "it surprised me she left", "at": "start", "note": "that gerekir." }
+     ]
+    },
+    {
+     "tr": "Bu kadar kısa sürede bitirmek zordu.",
+     "answers": ["It was difficult to finish in such a short time."],
+     "hint": "Mastar öbeği sona atılır.",
+     "traps": [
+      { "has": "to finish in such a short time was difficult", "at": "start", "note": "Ağırlık sona: It was difficult to finish…" },
+      { "has": "in such short time", "note": "Tekil sayılabilen isimde a gerekir." }
+     ]
+    },
+    {
+     "tr": "Kimin haklı olduğu hâlâ belli değil.",
+     "answers": ["It is still not clear who was right."],
+     "hint": "Dolaylı soru öbeği sona atılır.",
+     "traps": [
+      { "has": "who was right is still not clear", "at": "start", "note": "Ağırlık sona: It is still not clear who…" },
+      { "has": "who was right it is not clear still", "at": "start", "note": "Sıra bozuk." }
+     ]
+    },
+    {
+     "tr": "Toplantıya yıllardır aynı konuyu tartışan üç kişi katıldı.",
+     "answers": ["Three people attended the meeting who had been arguing about the same subject for years."],
+     "hint": "Uzun ilgi cümleciği sona kaydırılabilir.",
+     "traps": [
+      { "has": "three people who had been arguing about the same subject for years attended", "at": "start", "note": "Ağırlık sona kaydırılmalı." },
+      { "has": "attended to the meeting", "note": "attend'den sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Bir şey açıktı: kimse hazırlıklı değildi.",
+     "answers": ["One thing was clear: nobody was prepared."],
+     "hint": "İki nokta ağır bilgiyi sona taşır.",
+     "traps": [
+      { "has": "nobody was prepared was one clear thing", "at": "start", "note": "Ağırlık sona: One thing was clear: …" },
+      { "has": "nobody were prepared", "note": "nobody tekildir: was." }
+     ]
+    },
+    {
+     "tr": "Bunu yapmanın neden gerekli olduğunu açıklamak kolay değil.",
+     "answers": ["It is not easy to explain why this is necessary."],
+     "hint": "Ağır mastar öbeği sona atılır.",
+     "traps": [
+      { "has": "to explain why this is necessary is not easy", "at": "start", "note": "Ağırlık sona: It is not easy to explain…" },
+      { "has": "why is this necessary", "note": "Dolaylı: why this is necessary." }
+     ]
+    },
+    {
+     "tr": "Gecikmenin sebebi olarak tek bir şey gösterildi: bütçe.",
+     "answers": ["Only one thing was given as the reason for the delay: the budget."],
+     "hint": "En ağır öge en sona.",
+     "traps": [
+      { "has": "the budget was given as the only reason for the delay which was", "note": "Ağırlık sona kalmalı." },
+      { "has": "the reason of the delay", "note": "Kalıp: the reason for." }
+     ]
+    },
+    {
+     "tr": "Bu açıklamanın kimseyi ikna etmediği ortaya çıktı.",
+     "answers": ["It turned out that this explanation convinced nobody."],
+     "hint": "Ağır that öbeği sona atılır.",
+     "traps": [
+      { "has": "that this explanation convinced nobody turned out", "at": "start", "note": "Ağırlık sona: It turned out that…" },
+      { "has": "did not convince nobody", "note": "Çift olumsuz olmaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Beş cümle yaz ve her birinde ağır ögeyi sona taşı. En az üçünde başa it koy.",
+    "checklist": [
+     "Uzun özneleri sona taşıyıp başa it koydun mu?",
+     "Dolaylı sorularda sırayı düz cümle gibi bıraktın mı?",
+     "Çift olumsuz kullanmadın, değil mi?"
+    ],
+    "model": "It surprised me that she left so early. It was difficult to finish in such a short time, and it is still not clear who was right. One thing was clear: nobody was prepared. It turned out that this explanation convinced nobody."
+   }
+  },
+  {
+   "id": "c2-w-06",
+   "level": "C2",
+   "order": 6,
+   "title": "Diplomatik dil",
+   "canDo": "Sert bir mesajı yumuşatmadan kibarca iletebilirim.",
+   "focus": "Diplomatik dil belirsizlik değildir. Mesaj aynı kalır, taşıyıcı değişir: koşul kipi, edilgen çatı, ölçülü sıfat. Mesajın kendisi yumuşarsa bu diplomasi değil, kaçamaktır.",
+   "tasks": [
+    {
+     "tr": "Bu rakamların doğruluğundan emin değiliz.",
+     "answers": ["We are not entirely confident about these figures."],
+     "hint": "Ölçülü ifade: not entirely.",
+     "traps": [
+      { "has": "confident on these figures", "note": "Kalıp: confident about." },
+      { "has": "we are not sure at all", "at": "start", "note": "Bu mesajı sertleştirir; ölçülü biçim isteniyor." }
+     ]
+    },
+    {
+     "tr": "Bir açıklama yararlı olurdu.",
+     "answers": ["An explanation would be helpful."],
+     "hint": "would, talebi yumuşatır ama korur.",
+     "traps": [
+      { "has": "an explanation will be helpful", "at": "start", "note": "Diplomatik biçim: would be helpful." },
+      { "has": "a explanation", "at": "start", "note": "Sesli sesle başlar: an explanation." }
+     ]
+    },
+    {
+     "tr": "Bu yaklaşımın bazı riskleri olabilir.",
+     "answers": ["This approach may carry certain risks."],
+     "hint": "may, ölçü katar ama uyarıyı korur.",
+     "traps": [
+      { "has": "may carries", "note": "may'den sonra fiil yalın." },
+      { "has": "this approach has no risk", "at": "start", "note": "Mesaj tersine döner." }
+     ]
+    },
+    {
+     "tr": "Zamanlama konusunda endişelerimiz var.",
+     "answers": ["We have some concerns about the timing."],
+     "hint": "Kalıp: concerns about.",
+     "traps": [
+      { "has": "concerns on the timing", "note": "Kalıp: concerns about." },
+      { "has": "we have a few little concerns maybe", "at": "start", "note": "Aşırı yumuşatma mesajı siler." }
+     ]
+    },
+    {
+     "tr": "Bu kararı gözden geçirmenizi öneriyoruz.",
+     "answers": ["We would suggest reviewing this decision."],
+     "hint": "suggest'ten sonra -ing gelir.",
+     "traps": [
+      { "has": "we would suggest to review", "at": "start", "note": "suggest'ten sonra -ing gelir." },
+      { "has": "we would suggest you to review", "at": "start", "note": "Kalıp: suggest reviewing." }
+     ]
+    },
+    {
+     "tr": "Mevcut hâliyle teklifi kabul edemeyiz.",
+     "answers": ["We are unable to accept the proposal in its present form."],
+     "hint": "unable to'dan sonra yalın fiil gelir.",
+     "traps": [
+      { "has": "unable to accepting", "note": "to'dan sonra yalın fiil." },
+      { "has": "in it's present form", "note": "İyelik: its." }
+     ]
+    },
+    {
+     "tr": "Ancak görüşmeye açığız.",
+     "answers": ["We are, however, open to discussion."],
+     "hint": "open to'dan sonra isim ya da -ing gelir.",
+     "traps": [
+      { "has": "open to discuss", "note": "open to'dan sonra isim ya da -ing gelir." },
+      { "has": "we are however open for discussion", "at": "start", "note": "Kalıp: open to." }
+     ]
+    },
+    {
+     "tr": "Gözden kaçırdığımız bir şey varsa lütfen belirtin.",
+     "answers": ["Please let us know if we have overlooked anything."],
+     "hint": "Olumsuz koşulda anything kullanılır.",
+     "traps": [
+      { "has": "let us to know", "at": "start", "note": "let'ten sonra to gelmez." },
+      { "has": "if we have overlooked nothing", "note": "Anlam tersine döner: anything." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir teklifi reddet ama kapıyı kapatma: endişe, ret, gerekçe, açıklık, davet. Mesaj net kalsın.",
+    "checklist": [
+     "Mesajı yumuşatırken silmedin, değil mi?",
+     "concerns about, open to, confident about edatlarını doğru yazdın mı?",
+     "suggest'ten sonra -ing kullandın mı?"
+    ],
+    "model": "We are not entirely confident about these figures and we have some concerns about the timing. We are unable to accept the proposal in its present form. We would suggest reviewing this decision. We are, however, open to discussion."
+   }
+  },
+  {
+   "id": "c2-w-07",
+   "level": "C2",
+   "order": 7,
+   "title": "Muğlaklığı gidermek",
+   "canDo": "İki anlama gelen cümleleri fark edip düzeltebilirim.",
+   "focus": "Muğlaklık çoğu zaman zamirden, bazen de niteleyicinin yerinden doğar. \"They told the students they had failed\" cümlesinde kim başarısız oldu belli değil. Okur tahmin etmek zorunda kalıyorsa cümle kusurludur.",
+   "tasks": [
+    {
+     "tr": "Öğrencilere sınavı geçemediklerini söylediler. (Muğlaklığı gider.)",
+     "answers": ["They told the students that the students had failed.", "The teachers told the students that the students had failed."],
+     "hint": "Zamir yerine ismi tekrarla.",
+     "traps": [
+      { "has": "they told the students they had failed", "at": "start", "note": "Kim başarısız oldu belirsiz; ismi tekrarla." },
+      { "has": "that the students have failed", "note": "Aktarımda: had failed." }
+     ]
+    },
+    {
+     "tr": "Yalnızca o testi geçti. (Testi kastet.)",
+     "answers": ["She passed only that test.", "He passed only that test."],
+     "hint": "only, vurguladığı ögeden hemen önce.",
+     "traps": [
+      { "has": "only she passed that test", "at": "start", "note": "Bu \"yalnızca o kişi\" demek olur." },
+      { "has": "she only passed that test", "at": "start", "note": "Burada test vurgulanıyor: only that test." }
+     ]
+    },
+    {
+     "tr": "Bir kadını köpeğiyle gördüm. (Niteleyici yerini düzelt.)",
+     "answers": ["I saw a woman with a dog."],
+     "hint": "Niteleyici, nitelediği ögeye yakın durur.",
+     "traps": [
+      { "has": "with a dog i saw a woman", "at": "start", "note": "Niteleyici nitelediğine yakın olmalı." },
+      { "has": "i saw with a dog a woman", "at": "start", "note": "Sıra bozuk." }
+     ]
+    },
+    {
+     "tr": "Rapor ve özeti dün geldi. Özeti okudum. (Hangisini okuduğunu netleştir.)",
+     "answers": ["The report and its summary arrived yesterday. I read the summary."],
+     "hint": "Zamir yerine ismi kullan.",
+     "traps": [
+      { "has": "i read it", "at": "start", "note": "Hangisi belirsiz; ismi yaz." },
+      { "has": "the report and it's summary", "at": "start", "note": "İyelik: its." }
+     ]
+    },
+    {
+     "tr": "Toplantıdan sonra yazdığı notu kaybetti. (Kim yazdı, netleştir.)",
+     "answers": ["She lost the note that she had written after the meeting.", "He lost the note that he had written after the meeting."],
+     "hint": "İlgi cümleciği ile kimin yazdığını sabitle.",
+     "traps": [
+      { "has": "lost the note written after the meeting by", "note": "Sade tut: that she had written." },
+      { "has": "that she has written", "note": "Geçmiş katman: had written." }
+     ]
+    },
+    {
+     "tr": "Yaklaşık iki yıl önceydi. (Belirsizliği koru ama açık yaz.)",
+     "answers": ["It was about two years ago."],
+     "hint": "Kasıtlı belirsizlik açıkça işaretlenir: about.",
+     "traps": [
+      { "has": "it was two years ago about", "at": "start", "note": "about, sayıdan önce gelir." },
+      { "has": "before two years", "note": "Kalıp: two years ago." }
+     ]
+    },
+    {
+     "tr": "Bu cümlenin iki okuması var.",
+     "answers": ["This sentence has two readings.", "This sentence can be read in two ways."],
+     "hint": "Tekil özne: has.",
+     "traps": [
+      { "has": "this sentence have two readings", "at": "start", "note": "Tekil özne: has." },
+      { "has": "can be read at two ways", "note": "Kalıp: in two ways." }
+     ]
+    },
+    {
+     "tr": "Okuru tahmin etmek zorunda bırakmamalıyız.",
+     "answers": ["We should not leave the reader to guess."],
+     "hint": "leave someone to + fiil kalıbı.",
+     "traps": [
+      { "has": "leave the reader guessing to", "note": "Sade tut: leave the reader to guess." },
+      { "has": "should not to leave", "note": "should'dan sonra to gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "İki anlama gelen üç cümle yaz, sonra her birini iki farklı biçimde netleştir.",
+    "checklist": [
+     "Zamirlerin neye gönderme yaptığı açık mı?",
+     "only ve diğer niteleyicileri doğru yere koydun mu?",
+     "Kasıtlı belirsizliği açıkça işaretledin mi?"
+    ],
+    "model": "They told the students that the students had failed. She passed only that test. I saw a woman with a dog. This sentence has two readings, and we should not leave the reader to guess."
+   }
+  },
+  {
+   "id": "c2-w-08",
+   "level": "C2",
+   "order": 8,
+   "title": "Yoğunlaştırmak",
+   "canDo": "Bir metni anlamını kaybetmeden yarıya indirebilirim.",
+   "focus": "Kısaltmak silmek değildir: bilgi korunur, taşıyıcı küçülür. En çok kazanç ilgi cümleciklerini ortaca, fiil öbeklerini isme, iki cümleyi bire indirmekten gelir.",
+   "tasks": [
+    {
+     "tr": "Geçen yıl yayımlanan rapor. (İlgi cümleciğini ortaca indir: The report which was published last year.)",
+     "answers": ["The report published last year."],
+     "hint": "which was düşer, üçüncü biçim kalır.",
+     "traps": [
+      { "has": "the report which published last year", "at": "start", "note": "which düşerse was da düşer: published last year." },
+      { "has": "the report publishing last year", "at": "start", "note": "Edilgen anlam: published." }
+     ]
+    },
+    {
+     "tr": "Fiyatların hızla artması. (Fiili isme indir: Prices rose quickly.)",
+     "answers": ["The rapid rise in prices."],
+     "hint": "Artış için in edatı kullanılır.",
+     "traps": [
+      { "has": "the rapid rise of prices", "at": "start", "note": "Kalıp: rise in prices." },
+      { "has": "the rapidly rise in prices", "at": "start", "note": "Sıfat gerekir: rapid." }
+     ]
+    },
+    {
+     "tr": "Hasta olduğu için gelmedi. (Ortaca indir.)",
+     "answers": ["Being ill, she did not come.", "Being sick, he did not come."],
+     "hint": "Sebep ortacı: being + sıfat.",
+     "traps": [
+      { "has": "being ill she did not came", "at": "start", "note": "did not'tan sonra fiil yalın." },
+      { "has": "because being ill", "at": "start", "note": "Ortaç tek başına yeter." }
+     ]
+    },
+    {
+     "tr": "Toplantı uzundu ve belirsizdi. (Tek öbeğe indir.)",
+     "answers": ["The meeting was long and unclear."],
+     "hint": "İki sıfat tek fiile bağlanır.",
+     "traps": [
+      { "has": "the meeting was long and it was unclear", "at": "start", "note": "Tek öbeğe indir: long and unclear." },
+      { "has": "the meeting were long", "at": "start", "note": "Tekil özne: was." }
+     ]
+    },
+    {
+     "tr": "Bunu yapabilen tek kişi oydu. (Sadeleştir.)",
+     "answers": ["She was the only one who could do it.", "He was the only one who could do it."],
+     "hint": "Kalıp: the only one who.",
+     "traps": [
+      { "has": "she was the only person which could", "at": "start", "note": "İnsan için who." },
+      { "has": "the only one who could to do it", "note": "could'dan sonra to gelmez." }
+     ]
+    },
+    {
+     "tr": "Bence bu gerçekten çok önemli bir konu. (Yoğunlaştır.)",
+     "answers": ["This matters.", "This is important."],
+     "hint": "Güçlendirici yığını atılır.",
+     "traps": [
+      { "has": "in my opinion this is really a very important subject", "at": "start", "note": "Yoğunlaştırma isteniyor." },
+      { "has": "this matter", "at": "start", "note": "Tekil özne: matters." }
+     ]
+    },
+    {
+     "tr": "Kararı verdikten sonra herkese duyurdu. (Ortaca indir.)",
+     "answers": ["Having made the decision, she announced it to everyone.", "Having made the decision, he announced it to everyone."],
+     "hint": "Önce biten iş: having + üçüncü biçim.",
+     "traps": [
+      { "has": "having make the decision", "at": "start", "note": "Üçüncü biçim: having made." },
+      { "has": "announced everyone it", "note": "Kalıp: announced it to everyone." }
+     ]
+    },
+    {
+     "tr": "Bu paragrafta söylenenlerin yarısı gereksizdi.",
+     "answers": ["Half of what was said in this paragraph was unnecessary."],
+     "hint": "Half of what… öbeği tekil kabul edilir.",
+     "traps": [
+      { "has": "half of what was said were unnecessary", "at": "start", "note": "Tekil: was unnecessary." },
+      { "has": "the half of what", "at": "start", "note": "Kalıp: half of what." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Kendi yazdığın bir paragrafı al ve kelime sayısını yarıya indir. Hiçbir bilgiyi atma.",
+    "checklist": [
+     "İlgi cümleciklerini ortaca indirdin mi?",
+     "Fiil öbeklerini isme çevirdin mi?",
+     "Bilgi kaybı olmadığını kontrol ettin mi?"
+    ],
+    "model": "The report published last year described the rapid rise in prices. The meeting was long and unclear. Having made the decision, she announced it to everyone. Half of what was said in that paragraph was unnecessary."
+   }
+  }
+ ]
+}

@@ -270,11 +270,12 @@
    "focus": "Fiyat ve miktar sorarken sayılabilir mi sayılamaz mı ayrımı belirleyici: how many / how much.",
    "tasks": [
     {
-     "tr": "Bu ne kadar?",
-     "answers": ["How much is this?", "How much is it?"],
-     "hint": "Fiyat için how much.",
+     "tr": "Şu gömlek ne kadar?",
+     "answers": ["How much is that shirt?"],
+     "hint": "Fiyat için how much; uzaktaki şey için that.",
      "traps": [
-      { "has": "how many is this", "note": "Fiyat için how much." }
+      { "has": "how many is that shirt", "note": "Fiyat için how much." },
+      { "has": "how much is this shirt", "note": "Uzaktaki şey için that." }
      ]
     },
     {
@@ -344,7 +345,7 @@
      "want ve can'dan sonra doğru biçimi kullandın mı (to buy, have)?",
      "Çoğul işaret sıfatını doğru seçtin mi (this / these)?"
     ],
-    "model": "How much is this shirt? It is very expensive. Do you have a black one? I want to buy two shirts."
+    "model": "How much is that shirt? It is very expensive. Do you have a black one? I want to buy two shirts."
    }
   },
   {

@@ -18,5 +18,15 @@
   "sets": 25,
   "tasks": 200,
   "file": "writing-b2.json"
+ },
+ "C1": {
+  "sets": 25,
+  "tasks": 200,
+  "file": "writing-c1.json"
+ },
+ "C2": {
+  "sets": 25,
+  "tasks": 200,
+  "file": "writing-c2.json"
  }
 }
