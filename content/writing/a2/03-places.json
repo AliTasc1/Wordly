@@ -1,0 +1,614 @@
+{
+ "_meta": {
+  "batch": "a2-03",
+  "level": "A2",
+  "range": "Set 12-18 — şehir, tarif yazma, alışkanlık değişimi, şikayet, özür, hava tahmini, para"
+ },
+ "sets": [
+  {
+   "id": "a2-w-12",
+   "level": "A2",
+   "order": 12,
+   "title": "Şehrimi anlatmak",
+   "canDo": "Yaşadığım yeri ayrıntılı yazabilirim.",
+   "focus": "Geçmişte var olan şeyler için there was / there were kullanılır. Ayrıca sayılamayan isimlerde much, sayılabilenlerde many gelir.",
+   "tasks": [
+    {
+     "tr": "Şehrimde iki müze var.",
+     "answers": ["There are two museums in my city."],
+     "hint": "Çoğul için there are.",
+     "traps": [
+      { "has": "there is two museums", "note": "Çoğul için there are." },
+      { "has": "two museum", "note": "Sayıdan sonra çoğul: two museums." }
+     ]
+    },
+    {
+     "tr": "Eskiden burada bir sinema vardı.",
+     "answers": ["There used to be a cinema here.", "There was a cinema here before."],
+     "hint": "Eski alışkanlık ya da durum için used to.",
+     "traps": [
+      { "has": "there use to be", "note": "Yazım: used to be." },
+      { "has": "there used to being", "note": "used to'dan sonra fiil yalın: used to be." }
+     ]
+    },
+    {
+     "tr": "Çok fazla trafik yok.",
+     "answers": ["There is not much traffic.", "There isn't much traffic."],
+     "hint": "traffic sayılamaz: much kullanılır.",
+     "traps": [
+      { "has": "many traffic", "note": "Sayılamayan için much: much traffic." },
+      { "has": "traffics", "note": "traffic sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Burada çok insan yaşıyor.",
+     "answers": ["Many people live here.", "A lot of people live here."],
+     "hint": "people zaten çoğuldur.",
+     "traps": [
+      { "has": "much people", "note": "Sayılabilen için many: many people." },
+      { "has": "peoples live here", "note": "people çoğuldur, ayrıca -s almaz." }
+     ]
+    },
+    {
+     "tr": "Şehir merkezi çok gürültülü.",
+     "answers": ["The city center is very noisy."],
+     "hint": "Amerikan yazımı: center.",
+     "traps": [
+      { "has": "city center very noisy", "note": "be fiili gerekir: is very noisy." }
+     ]
+    },
+    {
+     "tr": "Denize yürüyerek on dakika.",
+     "answers": ["It is ten minutes to the sea.", "It's ten minutes to the sea."],
+     "hint": "Mesafe cümlelerinin öznesi it.",
+     "traps": [
+      { "has": "is ten minutes", "at": "start", "note": "Özne gerekir: It is ten minutes." },
+      { "has": "ten minute", "note": "Sayıdan sonra çoğul: ten minutes." }
+     ]
+    },
+    {
+     "tr": "Burası eskiden daha sessizdi.",
+     "answers": ["It used to be quieter here.", "This place used to be quieter."],
+     "hint": "quiet sıfatının karşılaştırması quieter.",
+     "traps": [
+      { "has": "more quiet", "note": "Kısa sıfat: quieter." }
+     ]
+    },
+    {
+     "tr": "Yakınlarda hiç park yok.",
+     "answers": ["There are no parks near here.", "There are not any parks near here.", "There aren't any parks near here."],
+     "hint": "Olumsuzda any ya da no kullanılır.",
+     "traps": [
+      { "has": "there are not some parks", "note": "Olumsuzda any kullanılır." },
+      { "has": "no any parks", "note": "no ve any birlikte kullanılmaz." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Yaşadığın yeri anlat: ne var, ne yok, eskiden nasıldı?",
+    "checklist": [
+     "Tekil ve çoğulda there is / there are ayrımını yaptın mı?",
+     "Sayılamayanlarda much, sayılabilenlerde many kullandın mı?",
+     "used to'dan sonra fiili yalın bıraktın mı?"
+    ],
+    "model": "There are two museums in my city. There is not much traffic. Many people live here. It used to be quieter."
+   }
+  },
+  {
+   "id": "a2-w-13",
+   "level": "A2",
+   "order": 13,
+   "title": "Yemek tarifi yazmak",
+   "canDo": "Adım adım bir tarif yazabilirim.",
+   "focus": "Tarifte emir kipi kullanılır ve özne yazılmaz. Miktarlar için sayılabilir–sayılamaz ayrımı önemlidir: a piece of, a glass of.",
+   "tasks": [
+    {
+     "tr": "İki yumurta kır.",
+     "answers": ["Break two eggs."],
+     "hint": "Emir kipinde özne yazılmaz.",
+     "traps": [
+      { "has": "you break two eggs", "at": "start", "note": "Emir kipinde özne yazılmaz." },
+      { "has": "two egg", "note": "Sayıdan sonra çoğul: two eggs." }
+     ]
+    },
+    {
+     "tr": "Biraz tuz ekle.",
+     "answers": ["Add some salt."],
+     "hint": "salt sayılamaz: some kullanılır.",
+     "traps": [
+      { "has": "add a salt", "note": "salt sayılamaz: some salt." },
+      { "has": "salts", "note": "salt sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Bir bardak su koy.",
+     "answers": ["Put a glass of water."],
+     "hint": "Miktar ile isim arasında of gelir.",
+     "traps": [
+      { "has": "a glass water", "note": "Araya of gelir: a glass of water." }
+     ]
+    },
+    {
+     "tr": "Sebzeleri küçük doğra.",
+     "answers": ["Cut the vegetables small."],
+     "hint": "Belirli sebzeler: the vegetables.",
+     "traps": [
+      { "has": "cut the vegetable", "note": "Çoğul: the vegetables." }
+     ]
+    },
+    {
+     "tr": "On dakika pişir.",
+     "answers": ["Cook for ten minutes."],
+     "hint": "Süre için for.",
+     "traps": [
+      { "has": "cook ten minutes", "note": "Süre için for: cook for ten minutes." }
+     ]
+    },
+    {
+     "tr": "Karıştırmayı unutma.",
+     "answers": ["Do not forget to mix.", "Don't forget to mix."],
+     "hint": "Olumsuz emir: Do not + yalın fiil.",
+     "traps": [
+      { "has": "not forget to mix", "at": "start", "note": "Olumsuz emirde do gerekir: Do not forget." },
+      { "has": "forget mixing", "note": "Bu anlamda forget to mix kullanılır." }
+     ]
+    },
+    {
+     "tr": "Sıcak servis et.",
+     "answers": ["Serve it hot.", "Serve hot."],
+     "hint": "Emir kipinde özne yok.",
+     "traps": [
+      { "has": "you serve it hot", "at": "start", "note": "Emir kipinde özne yazılmaz." }
+     ]
+    },
+    {
+     "tr": "Bu yemek çok kolay.",
+     "answers": ["This dish is very easy.", "This meal is very easy."],
+     "hint": "be fiili gerekir.",
+     "traps": [
+      { "has": "this dish very easy", "note": "be fiili gerekir: is very easy." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bildiğin en kolay yemeğin tarifini beş adımda yaz.",
+    "checklist": [
+     "Emir kipinde özneyi yazmadın, değil mi?",
+     "Olumsuz emirde Do not kullandın mı?",
+     "Miktar ile isim arasına of koydun mu?"
+    ],
+    "model": "Break two eggs. Add some salt. Put a glass of water. Cook for ten minutes. Serve it hot."
+   }
+  },
+  {
+   "id": "a2-w-14",
+   "level": "A2",
+   "order": 14,
+   "title": "Eskiden ve şimdi",
+   "canDo": "Değişen alışkanlıklarımı yazabilirim.",
+   "focus": "used to yalnızca geçmiş alışkanlıklar için kullanılır ve şimdiki zamanda karşılığı yoktur; bugün için geniş zaman kullanılır.",
+   "tasks": [
+    {
+     "tr": "Eskiden çok sigara içerdim.",
+     "answers": ["I used to smoke a lot."],
+     "hint": "used to'dan sonra fiil yalın.",
+     "traps": [
+      { "has": "i use to smoke", "at": "start", "note": "Yazım: used to smoke." },
+      { "has": "used to smoking", "note": "used to'dan sonra fiil yalın." }
+     ]
+    },
+    {
+     "tr": "Artık sigara içmiyorum.",
+     "answers": ["I do not smoke any more.", "I don't smoke any more.", "I do not smoke anymore.", "I don't smoke anymore."],
+     "hint": "Bugün için geniş zaman.",
+     "traps": [
+      { "has": "i used to not smoke", "note": "Bugün için geniş zaman: I do not smoke any more." }
+     ]
+    },
+    {
+     "tr": "Çocukken futbol oynardım.",
+     "answers": ["I used to play football when I was a child."],
+     "hint": "when'den sonra tam cümle gelir.",
+     "traps": [
+      { "has": "when i was child", "note": "a gerekir: when I was a child." }
+     ]
+    },
+    {
+     "tr": "Eskiden erken kalkmazdım.",
+     "answers": ["I did not use to get up early.", "I didn't use to get up early."],
+     "hint": "Olumsuzda did not use to yazılır, d düşer.",
+     "traps": [
+      { "has": "did not used to", "note": "Olumsuzda: did not use to." }
+     ]
+    },
+    {
+     "tr": "Şimdi her sabah yürüyorum.",
+     "answers": ["Now I walk every morning."],
+     "hint": "Bugünkü alışkanlık: geniş zaman.",
+     "traps": [
+      { "has": "now i am walking every morning", "note": "Alışkanlık için geniş zaman: I walk." }
+     ]
+    },
+    {
+     "tr": "Eskiden burada yaşar mıydın?",
+     "answers": ["Did you use to live here?"],
+     "hint": "Soruda da d düşer: use to.",
+     "traps": [
+      { "has": "did you used to live", "note": "Soruda: Did you use to live?" }
+     ]
+    },
+    {
+     "tr": "Eskiden hiç kitap okumazdım ama şimdi çok okuyorum.",
+     "answers": ["I did not use to read books but now I read a lot.", "I didn't use to read books but now I read a lot."],
+     "hint": "İki zamanı but ile bağlıyoruz.",
+     "traps": [
+      { "has": "but now i am reading a lot", "note": "Alışkanlık için geniş zaman: now I read a lot." }
+     ]
+    },
+    {
+     "tr": "Hayatım çok değişti.",
+     "answers": ["My life has changed a lot.", "My life changed a lot."],
+     "hint": "Sonucu bugüne uzanıyorsa has changed.",
+     "traps": [
+      { "has": "my life is changed", "note": "Kalıp: My life has changed." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Beş yıl önceki hâlinle bugünkü hâlini karşılaştır: neyi bıraktın, neye başladın?",
+    "checklist": [
+     "used to'dan sonra fiili yalın bıraktın mı?",
+     "Olumsuz ve soruda use to yazdın mı (d olmadan)?",
+     "Bugünkü alışkanlıkları geniş zamanla yazdın mı?"
+    ],
+    "model": "I used to smoke a lot but I do not smoke any more. I did not use to get up early. Now I walk every morning. My life has changed a lot."
+   }
+  },
+  {
+   "id": "a2-w-15",
+   "level": "A2",
+   "order": 15,
+   "title": "Şikayet etmek",
+   "canDo": "Bir sorunu kibarca yazabilirim.",
+   "focus": "Şikayette kibarlık kipten gelir: I am afraid, there is a problem with, could you. Doğrudan emir kullanmak İngilizcede kaba durur; Türkçede aynı cümle nötr olabilir.",
+   "tasks": [
+    {
+     "tr": "Korkarım bir sorun var.",
+     "answers": ["I am afraid there is a problem.", "I'm afraid there is a problem."],
+     "hint": "Kibar giriş kalıbı: I am afraid.",
+     "traps": [
+      { "has": "i am afraid from", "note": "Bu kalıpta from kullanılmaz: I am afraid there is…" }
+     ]
+    },
+    {
+     "tr": "Odamda sıcak su yok.",
+     "answers": ["There is no hot water in my room.", "There is not any hot water in my room."],
+     "hint": "water sayılamaz.",
+     "traps": [
+      { "has": "waters", "note": "water sayılamaz, çoğulu olmaz." },
+      { "has": "there are no hot water", "note": "Sayılamayan için there is." }
+     ]
+    },
+    {
+     "tr": "Bu yemek soğuk.",
+     "answers": ["This food is cold."],
+     "hint": "food burada sayılamaz.",
+     "traps": [
+      { "has": "this food cold", "note": "be fiili gerekir: is cold." },
+      { "has": "these food", "note": "food sayılamaz: this food." }
+     ]
+    },
+    {
+     "tr": "Bir saattir bekliyorum.",
+     "answers": ["I have been waiting for an hour.", "I've been waiting for an hour."],
+     "hint": "Süren ve hâlâ devam eden iş: have been + -ing.",
+     "traps": [
+      { "has": "i am waiting since an hour", "note": "Süre için for: for an hour." },
+      { "has": "a hour", "note": "Sesli harfle başlayan sesten önce an: an hour." }
+     ]
+    },
+    {
+     "tr": "Bunu değiştirebilir misiniz?",
+     "answers": ["Could you change this?", "Can you change this?"],
+     "hint": "Kibar rica için could.",
+     "traps": [
+      { "has": "could you to change", "note": "could'dan sonra to gelmez." },
+      { "has": "change this", "at": "start", "note": "Doğrudan emir kaba durur: Could you change this?" }
+     ]
+    },
+    {
+     "tr": "Yanlış bir şey gönderdiniz.",
+     "answers": ["You sent the wrong thing.", "You have sent the wrong thing."],
+     "hint": "send fiilinin geçmişi sent.",
+     "traps": [
+      { "has": "sended", "note": "send düzensizdir: sent." }
+     ]
+    },
+    {
+     "tr": "Paramı geri istiyorum.",
+     "answers": ["I would like my money back.", "I'd like my money back."],
+     "hint": "Kibar istek: I would like.",
+     "traps": [
+      { "has": "i want my money back", "note": "Şikayette kibar biçim: I would like my money back." },
+      { "has": "monies", "note": "money sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Umarım bunu çözebilirsiniz.",
+     "answers": ["I hope you can solve this.", "I hope you can help me."],
+     "hint": "can'dan sonra fiil yalın.",
+     "traps": [
+      { "has": "you can to solve", "note": "can'dan sonra to gelmez." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir otele ya da mağazaya kısa bir şikayet yaz: sorun ne, ne kadar sürdü, ne istiyorsun?",
+    "checklist": [
+     "Doğrudan emir yerine Could you kullandın mı?",
+     "Süre için for kullandın mı?",
+     "Sayılamayan isimleri çoğul yapmadın, değil mi?"
+    ],
+    "model": "I am afraid there is a problem. There is no hot water in my room. I have been waiting for an hour. Could you help me?"
+   }
+  },
+  {
+   "id": "a2-w-16",
+   "level": "A2",
+   "order": 16,
+   "title": "Özür dilemek",
+   "canDo": "Bir hatam için özür yazabilirim.",
+   "focus": "Özür kalıplarında edat sabittir: sorry for + isim ya da -ing, sorry about + isim. sorry to + fiil ise başka anlam taşır.",
+   "tasks": [
+    {
+     "tr": "Geç kaldığım için özür dilerim.",
+     "answers": ["I am sorry for being late.", "I'm sorry for being late.", "I am sorry I am late.", "I'm sorry I'm late."],
+     "hint": "sorry for'dan sonra fiil -ing alır.",
+     "traps": [
+      { "has": "sorry for be late", "note": "sorry for'dan sonra -ing: for being late." },
+      { "has": "sorry for to be late", "note": "sorry for'dan sonra -ing gelir." }
+     ]
+    },
+    {
+     "tr": "Dün gelemediğim için üzgünüm.",
+     "answers": ["I am sorry I could not come yesterday.", "I'm sorry I couldn't come yesterday."],
+     "hint": "can fiilinin geçmişi could.",
+     "traps": [
+      { "has": "i did not can come", "note": "can ile did kullanılmaz: could not come." }
+     ]
+    },
+    {
+     "tr": "Benim hatamdı.",
+     "answers": ["It was my fault.", "It was my mistake."],
+     "hint": "Özne it.",
+     "traps": [
+      { "has": "was my fault", "at": "start", "note": "Özne gerekir: It was my fault." }
+     ]
+    },
+    {
+     "tr": "Bir daha olmayacak.",
+     "answers": ["It will not happen again.", "It won't happen again."],
+     "hint": "will'den sonra fiil yalın.",
+     "traps": [
+      { "has": "will not happens", "note": "will'den sonra fiil yalın: will not happen." }
+     ]
+    },
+    {
+     "tr": "Sana daha önce haber vermeliydim.",
+     "answers": ["I should have told you before.", "I should've told you before."],
+     "hint": "Geçmişe pişmanlık: should have + üçüncü biçim.",
+     "traps": [
+      { "has": "should told you", "note": "Kalıp: should have told you." },
+      { "has": "should have tell", "note": "should have'den sonra üçüncü biçim: told." }
+     ]
+    },
+    {
+     "tr": "Umarım kızgın değilsin.",
+     "answers": ["I hope you are not angry.", "I hope you're not angry."],
+     "hint": "hope'tan sonra cümle gelir.",
+     "traps": [
+      { "has": "i hope you not angry", "note": "be fiili gerekir: you are not angry." }
+     ]
+    },
+    {
+     "tr": "Bunu telafi edeceğim.",
+     "answers": ["I will make it up to you.", "I'll make it up to you."],
+     "hint": "Kalıptır, kelime kelime çevrilmez.",
+     "traps": [
+      { "has": "i will pay it back", "note": "Kalıp: I will make it up to you." }
+     ]
+    },
+    {
+     "tr": "Tekrar özür dilerim.",
+     "answers": ["I am sorry again.", "I'm sorry again.", "Sorry again."],
+     "hint": "again cümlenin sonuna gelir.",
+     "traps": [
+      { "has": "again i am sorry", "at": "start", "note": "again sona gelir: I am sorry again." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Bir buluşmayı kaçırdığın için arkadaşına özür mesajı yaz: sebep, pişmanlık ve telafi.",
+    "checklist": [
+     "sorry for'dan sonra -ing kullandın mı?",
+     "should have'den sonra üçüncü biçimi kullandın mı?",
+     "will'den sonra fiili yalın bıraktın mı?"
+    ],
+    "model": "I am sorry for being late yesterday. I could not come because I was sick. I should have told you before. It will not happen again."
+   }
+  },
+  {
+   "id": "a2-w-17",
+   "level": "A2",
+   "order": 17,
+   "title": "Tahmin ve olasılık",
+   "canDo": "Ne olabileceğini yazabilirim.",
+   "focus": "Tahmin için will, might ve may kullanılır ve üçünden sonra da fiil yalın kalır. Kesinlik derecesi değişir, biçim değişmez.",
+   "tasks": [
+    {
+     "tr": "Yarın yağmur yağabilir.",
+     "answers": ["It might rain tomorrow.", "It may rain tomorrow."],
+     "hint": "might'tan sonra fiil yalın.",
+     "traps": [
+      { "has": "might to rain", "note": "might'tan sonra to gelmez." },
+      { "has": "might rains", "note": "might'tan sonra fiil yalın: might rain." }
+     ]
+    },
+    {
+     "tr": "Sanırım gelmeyecek.",
+     "answers": ["I do not think she will come.", "I don't think she will come.", "I do not think he will come.", "I don't think he will come."],
+     "hint": "İngilizcede olumsuzluk think fiiline taşınır.",
+     "traps": [
+      { "has": "i think she will not come", "note": "Yaygın kuruluş: I do not think she will come." }
+     ]
+    },
+    {
+     "tr": "Belki yarın görüşürüz.",
+     "answers": ["Maybe we will see each other tomorrow.", "Maybe we'll meet tomorrow."],
+     "hint": "maybe cümlenin başına gelir.",
+     "traps": [
+      { "has": "we maybe will", "note": "maybe genelde başa gelir." },
+      { "has": "may be we will", "at": "start", "note": "Tek kelime: Maybe." }
+     ]
+    },
+    {
+     "tr": "Eminim başaracaksın.",
+     "answers": ["I am sure you will succeed.", "I'm sure you will succeed.", "I am sure you will do it."],
+     "hint": "sure'dan sonra cümle gelir.",
+     "traps": [
+      { "has": "i am sure from", "note": "Bu kalıpta from kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Geç kalabilirim.",
+     "answers": ["I might be late.", "I may be late."],
+     "hint": "Kipten sonra be fiili de yalın kalır.",
+     "traps": [
+      { "has": "i might am late", "note": "Kipten sonra yalın: might be late." }
+     ]
+    },
+    {
+     "tr": "Yarın hava nasıl olacak?",
+     "answers": ["What will the weather be like tomorrow?"],
+     "hint": "Kalıp: What will… be like?",
+     "traps": [
+      { "has": "how will the weather be", "note": "Kalıp: What will the weather be like?" }
+     ]
+    },
+    {
+     "tr": "Muhtemelen evde olacak.",
+     "answers": ["She will probably be at home.", "He will probably be at home."],
+     "hint": "probably, will ile fiil arasına girer.",
+     "traps": [
+      { "has": "will be probably", "note": "Sıra: will probably be." }
+     ]
+    },
+    {
+     "tr": "Bu işe yaramayabilir.",
+     "answers": ["This might not work.", "This may not work."],
+     "hint": "Olumsuzda not, kipten sonra gelir.",
+     "traps": [
+      { "has": "this does not might work", "note": "Kiple do kullanılmaz: This might not work." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Gelecek yıl hayatında olabilecek üç şeyi yaz. Farklı kesinlik dereceleri kullan.",
+    "checklist": [
+     "will, might ve may'den sonra fiili yalın bıraktın mı?",
+     "probably'yi will ile fiil arasına koydun mu?",
+     "Kiplerle do kullanmadın, değil mi?"
+    ],
+    "model": "Next year I might change my job. I will probably move to another city. I am sure I will learn more English."
+   }
+  },
+  {
+   "id": "a2-w-18",
+   "level": "A2",
+   "order": 18,
+   "title": "Para ve alışveriş",
+   "canDo": "Harcamalarımı ve fiyatları yazabilirim.",
+   "focus": "money, information ve advice gibi isimler sayılamaz: çoğul olmaz, a almaz ve much ile kullanılır. Türkçede bunların hepsi sayılabilir gibi davranır.",
+   "tasks": [
+    {
+     "tr": "Çok param yok.",
+     "answers": ["I do not have much money.", "I don't have much money."],
+     "hint": "money sayılamaz: much.",
+     "traps": [
+      { "has": "many money", "note": "Sayılamayan için much: much money." },
+      { "has": "monies", "note": "money sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Bu ceket ne kadar tuttu?",
+     "answers": ["How much did this jacket cost?", "How much was this jacket?"],
+     "hint": "did'ten sonra fiil yalın.",
+     "traps": [
+      { "has": "how much did this jacket costed", "note": "did'ten sonra fiil yalın: cost." }
+     ]
+    },
+    {
+     "tr": "Yeni bir bilgisayar almak için para biriktiriyorum.",
+     "answers": ["I am saving money for a new computer.", "I'm saving money for a new computer."],
+     "hint": "Amaç için for + isim.",
+     "traps": [
+      { "has": "saving money to a new computer", "note": "İsimden önce for: for a new computer." }
+     ]
+    },
+    {
+     "tr": "Bana biraz tavsiye verebilir misin?",
+     "answers": ["Could you give me some advice?", "Can you give me some advice?"],
+     "hint": "advice sayılamaz.",
+     "traps": [
+      { "has": "an advice", "note": "advice sayılamaz: some advice." },
+      { "has": "advices", "note": "advice sayılamaz, çoğulu olmaz." }
+     ]
+    },
+    {
+     "tr": "Bu çok pahalı, daha ucuzu var mı?",
+     "answers": ["This is too expensive, is there anything cheaper?"],
+     "hint": "cheap kısa sıfattır: cheaper.",
+     "traps": [
+      { "has": "more cheap", "note": "Kısa sıfat: cheaper." }
+     ]
+    },
+    {
+     "tr": "Nakit mi kartla mı ödeyeceksin?",
+     "answers": ["Will you pay in cash or by card?", "Are you going to pay in cash or by card?"],
+     "hint": "Nakit için in cash, kart için by card.",
+     "traps": [
+      { "has": "with cash", "note": "Kalıp in cash." },
+      { "has": "with card", "note": "Kalıp by card." }
+     ]
+    },
+    {
+     "tr": "Geçen ay çok fazla harcadım.",
+     "answers": ["I spent too much last month.", "I spent too much money last month."],
+     "hint": "spend fiilinin geçmişi spent.",
+     "traps": [
+      { "has": "spended", "note": "spend düzensizdir: spent." },
+      { "has": "in last month", "note": "last month'tan önce edat gelmez." }
+     ]
+    },
+    {
+     "tr": "Bana bilgi verebilir misiniz?",
+     "answers": ["Could you give me some information?", "Can you give me some information?"],
+     "hint": "information sayılamaz.",
+     "traps": [
+      { "has": "informations", "note": "information sayılamaz, çoğulu olmaz." },
+      { "has": "an information", "note": "information sayılamaz: some information." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Geçen ayki harcamalarını anlat: neye ne kadar verdin, neyden kaçındın?",
+    "checklist": [
+     "money, advice ve information'ı çoğul yapmadın, değil mi?",
+     "Sayılamayanlarda much kullandın mı?",
+     "last month gibi ifadelerden önce edat koymadın, değil mi?"
+    ],
+    "model": "Last month I spent too much money. I bought a new jacket and it was very expensive. I did not have much money at the end. Now I am saving money."
+   }
+  }
+ ]
+}

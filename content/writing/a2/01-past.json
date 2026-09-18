@@ -1,0 +1,446 @@
+{
+ "_meta": {
+  "batch": "a2-01",
+  "level": "A2",
+  "range": "Set 1-5 — geçmişi anlatma, sürerken kesilen olay, karşılaştırma, en üstünlük, sebep-sonuç"
+ },
+ "sets": [
+  {
+   "id": "a2-w-01",
+   "level": "A2",
+   "order": 1,
+   "title": "Bir günü anlatmak",
+   "canDo": "Olayları sırayla, bağlaçlarla anlatabilirim.",
+   "focus": "Türkçede olaylar \"-ip, -dikten sonra\" ekleriyle bağlanır. İngilizcede bağlaç ayrı bir kelimedir ve cümlenin başına ya da ortasına konur: then, after that, before.",
+   "tasks": [
+    {
+     "tr": "Önce kahvaltı yaptım, sonra işe gittim.",
+     "answers": ["First I had breakfast, then I went to work.", "First I had breakfast and then I went to work."],
+     "hint": "Sıralama için first ve then.",
+     "traps": [
+      { "has": "after i had breakfast i went", "note": "Burada sıralama isteniyor: First… then…" },
+      { "has": "i had breakfast then went", "note": "İkinci cümlenin de öznesi olmalı: then I went." }
+     ]
+    },
+    {
+     "tr": "Eve döndükten sonra biraz uyudum.",
+     "answers": ["After I came home, I slept for a while.", "After I got home, I slept for a while."],
+     "hint": "\"-dikten sonra\" için after + cümle.",
+     "traps": [
+      { "has": "after came home", "at": "start", "note": "after'dan sonra özne gerekir: After I came home." },
+      { "has": "after to come home", "note": "after'dan sonra cümle gelir, to + fiil değil." }
+     ]
+    },
+    {
+     "tr": "Yatmadan önce kitap okudum.",
+     "answers": ["Before I went to bed, I read a book.", "I read a book before I went to bed."],
+     "hint": "\"-madan önce\" için before + cümle.",
+     "traps": [
+      { "has": "before to go to bed", "note": "before'dan sonra cümle gelir: before I went to bed." }
+     ]
+    },
+    {
+     "tr": "İki saat çalıştım ve çok yoruldum.",
+     "answers": ["I worked for two hours and I got very tired.", "I worked for two hours and got very tired."],
+     "hint": "Yorulmak bir değişimdir: get tired.",
+     "traps": [
+      { "has": "i was very tired because i worked", "note": "Burada \"ve\" ile bağlanıyor: and I got very tired." },
+      { "has": "worked two hours", "note": "Süre için for: worked for two hours." }
+     ]
+    },
+    {
+     "tr": "Sonunda otobüsü kaçırdım.",
+     "answers": ["In the end, I missed the bus.", "Finally I missed the bus."],
+     "hint": "Sonuç bildiren kalıp: in the end.",
+     "traps": [
+      { "has": "at the end i missed", "note": "Burada in the end kullanılır; at the end bir şeyin sonunu anlatır." }
+     ]
+    },
+    {
+     "tr": "Bütün gün hiçbir şey yemedim.",
+     "answers": ["I did not eat anything all day.", "I didn't eat anything all day."],
+     "hint": "Olumsuz cümlede anything kullanılır.",
+     "traps": [
+      { "has": "did not eat nothing", "note": "Çift olumsuz olmaz: did not eat anything." }
+     ]
+    },
+    {
+     "tr": "Arkadaşım beni aradığında uyuyordum.",
+     "answers": ["I was sleeping when my friend called me.", "When my friend called me, I was sleeping."],
+     "hint": "Süren olay için was/were + -ing, kesen olay için geçmiş.",
+     "traps": [
+      { "has": "i slept when my friend called", "note": "Süren olay: I was sleeping." },
+      { "has": "when my friend was calling me i was sleeping", "note": "Kesen olay geçmiş zamandır: called." }
+     ]
+    },
+    {
+     "tr": "Gün çok uzundu ama güzeldi.",
+     "answers": ["The day was very long but it was nice.", "The day was very long but nice."],
+     "hint": "but ile iki yargı bağlanıyor.",
+     "traps": [
+      { "has": "but was nice", "note": "İkinci cümlede özne gerekir: but it was nice." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Dün gününü baştan sona anlat. En az üç sıralama bağlacı kullan (first, then, after that, in the end).",
+    "checklist": [
+     "Her cümlede özne var mı?",
+     "Bağlaçları ayrı kelime olarak yazdın mı?",
+     "Süren olaylarda was/were + -ing kullandın mı?"
+    ],
+    "model": "First I had breakfast, then I went to work. After that I met my friend. In the end I came home late and went to bed."
+   }
+  },
+  {
+   "id": "a2-w-02",
+   "level": "A2",
+   "order": 2,
+   "title": "Sürerken olanlar",
+   "canDo": "Bir şey olurken başka bir şeyin olduğunu yazabilirim.",
+   "focus": "İki geçmiş olay aynı anda anlatılırken hangisinin sürdüğü, hangisinin kestiği belirlenir. while süren olayı, when kesen olayı alır.",
+   "tasks": [
+    {
+     "tr": "Ben yemek yaparken telefon çaldı.",
+     "answers": ["While I was cooking, the phone rang.", "The phone rang while I was cooking."],
+     "hint": "while + süren olay (was cooking).",
+     "traps": [
+      { "has": "while i cooked", "note": "while ile süren biçim: while I was cooking." },
+      { "has": "the phone was ringing while", "note": "Kesen olay geçmiş zamandır: rang." }
+     ]
+    },
+    {
+     "tr": "Eve gelirken yağmur yağmaya başladı.",
+     "answers": ["While I was coming home, it started to rain.", "It started to rain while I was coming home."],
+     "hint": "start'tan sonra to + fiil ya da -ing gelir.",
+     "traps": [
+      { "has": "started rain", "note": "start'tan sonra to rain ya da raining gelir." }
+     ]
+    },
+    {
+     "tr": "Onlar televizyon izlerken ben ders çalışıyordum.",
+     "answers": ["While they were watching television, I was studying."],
+     "hint": "İki olay da sürüyorsa ikisi de was/were + -ing olur.",
+     "traps": [
+      { "has": "they was watching", "note": "they ile were kullanılır." }
+     ]
+    },
+    {
+     "tr": "Kapıyı açtığımda kimse yoktu.",
+     "answers": ["When I opened the door, there was nobody.", "When I opened the door, there was no one."],
+     "hint": "\"Kimse yok\" için there was nobody.",
+     "traps": [
+      { "has": "there was not nobody", "note": "Çift olumsuz olmaz: there was nobody." }
+     ]
+    },
+    {
+     "tr": "Otobüsü beklerken bir arkadaşımı gördüm.",
+     "answers": ["While I was waiting for the bus, I saw a friend.", "I saw a friend while I was waiting for the bus."],
+     "hint": "Beklemek: wait for.",
+     "traps": [
+      { "has": "waiting the bus", "note": "wait'ten sonra for gelir: waiting for the bus." }
+     ]
+    },
+    {
+     "tr": "Dün akşam saat sekizde ne yapıyordun?",
+     "answers": ["What were you doing at eight last night?", "What were you doing at eight yesterday evening?"],
+     "hint": "Belirli bir anda süren olay: were you doing.",
+     "traps": [
+      { "has": "what did you do at eight", "note": "O anda süren olay soruluyor: What were you doing?" }
+     ]
+    },
+    {
+     "tr": "O çalışırken ben uyuyordum.",
+     "answers": ["While she was working, I was sleeping.", "While he was working, I was sleeping."],
+     "hint": "İki süren olay.",
+     "traps": [
+      { "has": "while she worked", "note": "Süren biçim: while she was working." }
+     ]
+    },
+    {
+     "tr": "Yürürken düştüm.",
+     "answers": ["I fell while I was walking.", "While I was walking, I fell."],
+     "hint": "fall fiilinin geçmişi fell.",
+     "traps": [
+      { "has": "falled", "note": "fall düzensizdir: fell." },
+      { "has": "i was falling", "note": "Kısa süren olay geçmiş zamandır: I fell." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Beklenmedik bir şeyin olduğu bir anı anlat: sen ne yapıyordun, ne oldu?",
+    "checklist": [
+     "Süren olayda was/were + -ing kullandın mı?",
+     "Kesen olayı geçmiş zamanla yazdın mı?",
+     "wait for gibi kalıplarda edatı unutmadın, değil mi?"
+    ],
+    "model": "Yesterday I was waiting for the bus. While I was reading a message, the bus came. I did not see it and I missed it."
+   }
+  },
+  {
+   "id": "a2-w-03",
+   "level": "A2",
+   "order": 3,
+   "title": "Karşılaştırmak",
+   "canDo": "İki şeyi karşılaştırabilirim.",
+   "focus": "Kısa sıfatlar -er alır (cheaper), uzun sıfatlar more ile kurulur (more expensive). İkisi birden kullanılmaz ve karşılaştırmada than gelir.",
+   "tasks": [
+    {
+     "tr": "Bu araba diğerinden daha ucuz.",
+     "answers": ["This car is cheaper than the other one."],
+     "hint": "Kısa sıfat: cheaper, sonra than.",
+     "traps": [
+      { "has": "more cheap", "note": "Kısa sıfatta -er kullanılır: cheaper." },
+      { "has": "cheaper from", "note": "Karşılaştırmada than gelir: cheaper than." }
+     ]
+    },
+    {
+     "tr": "Benim şehrim İstanbul'dan daha büyük.",
+     "answers": ["My city is bigger than Istanbul."],
+     "hint": "big sıfatında son harf ikilenir: bigger.",
+     "traps": [
+      { "has": "biger", "note": "Yazım: bigger." },
+      { "has": "more big", "note": "Kısa sıfat: bigger." }
+     ]
+    },
+    {
+     "tr": "Bu kitap ötekinden daha ilginç.",
+     "answers": ["This book is more interesting than the other one."],
+     "hint": "Uzun sıfat: more interesting.",
+     "traps": [
+      { "has": "interestinger", "note": "Uzun sıfatta more kullanılır: more interesting." },
+      { "has": "more interestinger", "note": "İkisi birden kullanılmaz." }
+     ]
+    },
+    {
+     "tr": "Kardeşim benden daha iyi yüzüyor.",
+     "answers": ["My brother swims better than me.", "My sister swims better than me."],
+     "hint": "well zarfının karşılaştırması better.",
+     "traps": [
+      { "has": "more good", "note": "Düzensiz: better." },
+      { "has": "gooder", "note": "Düzensiz: better." }
+     ]
+    },
+    {
+     "tr": "Bugün dünden daha kötü.",
+     "answers": ["Today is worse than yesterday."],
+     "hint": "bad sıfatının karşılaştırması worse.",
+     "traps": [
+      { "has": "more bad", "note": "Düzensiz: worse." },
+      { "has": "badder", "note": "Düzensiz: worse." }
+     ]
+    },
+    {
+     "tr": "O benim kadar uzun değil.",
+     "answers": ["She is not as tall as me.", "He is not as tall as me."],
+     "hint": "Eşitlik kalıbı: as + sıfat + as.",
+     "traps": [
+      { "has": "as tall than", "note": "Eşitlikte as… as kullanılır." },
+      { "has": "so tall as", "note": "Kalıp: as tall as." }
+     ]
+    },
+    {
+     "tr": "Trenle gitmek otobüsten daha hızlı.",
+     "answers": ["Going by train is faster than going by bus.", "Going by train is faster than by bus."],
+     "hint": "Özne olarak fiil kullanılırsa -ing alır.",
+     "traps": [
+      { "has": "go by train is faster", "at": "start", "note": "Özne olunca -ing gerekir: Going by train." }
+     ]
+    },
+    {
+     "tr": "Bu ikisinden hangisi daha kolay?",
+     "answers": ["Which of these two is easier?", "Which one is easier?"],
+     "hint": "y ile biten sıfatta y düşer: easier.",
+     "traps": [
+      { "has": "easyer", "note": "Yazım: easier." },
+      { "has": "more easy", "note": "Kısa sıfat: easier." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Yaşadığın şehirle başka bir şehri karşılaştır. En az üç karşılaştırma cümlesi yaz.",
+    "checklist": [
+     "Kısa sıfatlarda -er, uzun sıfatlarda more kullandın mı?",
+     "Karşılaştırmadan sonra than koydun mu?",
+     "good ve bad için better ve worse yazdın mı?"
+    ],
+    "model": "My city is smaller than Istanbul. Life here is easier and cheaper. But Istanbul is more interesting than my city."
+   }
+  },
+  {
+   "id": "a2-w-04",
+   "level": "A2",
+   "order": 4,
+   "title": "En iyisi, en kötüsü",
+   "canDo": "Bir şeyin en üstün özelliğini yazabilirim.",
+   "focus": "En üstünlükte sıfatın önüne the gelir ve bu the asla düşmez: the biggest, the most beautiful. Türkçede \"en\" tek başına yeter.",
+   "tasks": [
+    {
+     "tr": "Bu sınıftaki en uzun öğrenci.",
+     "answers": ["She is the tallest student in the class.", "He is the tallest student in the class."],
+     "hint": "En üstünlükte the gerekir.",
+     "traps": [
+      { "has": "is tallest student", "note": "the gerekir: the tallest student." },
+      { "has": "most tall", "note": "Kısa sıfat: the tallest." }
+     ]
+    },
+    {
+     "tr": "Bu gördüğüm en güzel şehir.",
+     "answers": ["This is the most beautiful city I have ever seen.", "This is the most beautiful city I've ever seen."],
+     "hint": "Uzun sıfat: the most beautiful.",
+     "traps": [
+      { "has": "beautifulest", "note": "Uzun sıfat: the most beautiful." },
+      { "has": "i ever saw", "note": "Bu kalıpta: I have ever seen." }
+     ]
+    },
+    {
+     "tr": "Yılın en sıcak günüydü.",
+     "answers": ["It was the hottest day of the year."],
+     "hint": "hot sıfatında son harf ikilenir: hottest.",
+     "traps": [
+      { "has": "hotest", "note": "Yazım: hottest." },
+      { "has": "the most hot", "note": "Kısa sıfat: the hottest." }
+     ]
+    },
+    {
+     "tr": "Sınıftaki en iyi öğrenci o.",
+     "answers": ["She is the best student in the class.", "He is the best student in the class."],
+     "hint": "good sıfatının en üstünü best.",
+     "traps": [
+      { "has": "the goodest", "note": "Düzensiz: the best." },
+      { "has": "the most good", "note": "Düzensiz: the best." }
+     ]
+    },
+    {
+     "tr": "Bu hayatımın en kötü günü.",
+     "answers": ["This is the worst day of my life."],
+     "hint": "bad sıfatının en üstünü worst.",
+     "traps": [
+      { "has": "the baddest", "note": "Düzensiz: the worst." },
+      { "has": "the most bad", "note": "Düzensiz: the worst." }
+     ]
+    },
+    {
+     "tr": "Ailedeki en küçük çocuk benim.",
+     "answers": ["I am the youngest child in the family.", "I'm the youngest child in the family."],
+     "hint": "Grup içinde en: in the family.",
+     "traps": [
+      { "has": "youngest of the family", "note": "Burada in kullanılır: in the family." }
+     ]
+    },
+    {
+     "tr": "En sevdiğim yemek ne biliyor musun?",
+     "answers": ["Do you know what my favorite food is?"],
+     "hint": "Dolaylı soruda sıra düz cümle gibi olur.",
+     "traps": [
+      { "has": "what is my favorite food", "note": "Dolaylı soruda sıra değişmez: what my favorite food is." }
+     ]
+    },
+    {
+     "tr": "Bu şimdiye kadarki en kolay sınavdı.",
+     "answers": ["It was the easiest test so far."],
+     "hint": "y düşer: easiest.",
+     "traps": [
+      { "has": "easyest", "note": "Yazım: easiest." },
+      { "has": "the most easy", "note": "Kısa sıfat: the easiest." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Hayatındaki \"en\"leri yaz: en iyi gün, en zor iş, en sevdiğin yer.",
+    "checklist": [
+     "En üstünlükten önce the koydun mu?",
+     "Kısa sıfatlarda -est, uzun sıfatlarda the most kullandın mı?",
+     "good ve bad için best ve worst yazdın mı?"
+    ],
+    "model": "The best day of my life was my brother's wedding. The hardest thing for me is getting up early. My favorite place is the sea."
+   }
+  },
+  {
+   "id": "a2-w-05",
+   "level": "A2",
+   "order": 5,
+   "title": "Sebep ve sonuç",
+   "canDo": "Bir şeyin sebebini ve sonucunu yazabilirim.",
+   "focus": "because sebebi, so sonucu getirir ve ikisi ters çevrilemez. Türkçede \"çünkü\" ve \"bu yüzden\" aynı cümleye birlikte girebilir, İngilizcede biri seçilir.",
+   "tasks": [
+    {
+     "tr": "Yorgun olduğum için erken yattım.",
+     "answers": ["I went to bed early because I was tired.", "Because I was tired, I went to bed early."],
+     "hint": "Sebep için because.",
+     "traps": [
+      { "has": "because i was tired so i went", "note": "because ve so birlikte kullanılmaz." },
+      { "has": "because of i was tired", "note": "because of'tan sonra isim gelir, cümle değil." }
+     ]
+    },
+    {
+     "tr": "Hava kötüydü, bu yüzden evde kaldık.",
+     "answers": ["The weather was bad, so we stayed at home."],
+     "hint": "Sonuç için so.",
+     "traps": [
+      { "has": "so we stayed at home because", "note": "Bir cümlede biri seçilir." },
+      { "has": "for this we stayed", "note": "Sonuç için so kullanılır." }
+     ]
+    },
+    {
+     "tr": "Yağmur yüzünden dışarı çıkmadık.",
+     "answers": ["We did not go out because of the rain.", "We didn't go out because of the rain."],
+     "hint": "because of'tan sonra isim gelir.",
+     "traps": [
+      { "has": "because the rain", "note": "İsimden önce because of gerekir." },
+      { "has": "because of it rained", "note": "because of'tan sonra isim gelir: because of the rain." }
+     ]
+    },
+    {
+     "tr": "Otobüsü kaçırdım, bu yüzden geç kaldım.",
+     "answers": ["I missed the bus, so I was late."],
+     "hint": "Sonuç için so.",
+     "traps": [
+      { "has": "so i late", "note": "be fiili gerekir: so I was late." }
+     ]
+    },
+    {
+     "tr": "Çok çalıştığı için sınavı geçti.",
+     "answers": ["She passed the test because she studied a lot.", "He passed the test because he studied a lot."],
+     "hint": "because'tan sonra tam cümle gelir.",
+     "traps": [
+      { "has": "because studied a lot", "note": "because'tan sonra özne gerekir." }
+     ]
+    },
+    {
+     "tr": "Param yoktu, bu yüzden hiçbir şey almadım.",
+     "answers": ["I did not have any money, so I did not buy anything.", "I didn't have any money, so I didn't buy anything."],
+     "hint": "İki olumsuz cümle so ile bağlanıyor.",
+     "traps": [
+      { "has": "did not buy nothing", "note": "Çift olumsuz olmaz: did not buy anything." }
+     ]
+    },
+    {
+     "tr": "Neden gelmedin?",
+     "answers": ["Why did not you come?", "Why didn't you come?"],
+     "hint": "Sebep sorusu why ile başlar.",
+     "traps": [
+      { "has": "why you did not come", "note": "Soruda sıra değişir: Why didn't you come?" }
+     ]
+    },
+    {
+     "tr": "Hasta olduğu için işe gelemedi.",
+     "answers": ["She could not come to work because she was sick.", "He could not come to work because he was sick.", "She couldn't come to work because she was sick.", "He couldn't come to work because he was sick."],
+     "hint": "can fiilinin geçmişi could.",
+     "traps": [
+      { "has": "did not can come", "note": "can ile did kullanılmaz: could not come." }
+     ]
+    }
+   ],
+   "compose": {
+    "prompt": "Son zamanlarda verdiğin bir kararı anlat: neden verdin, sonucu ne oldu? because ve so kullan.",
+    "checklist": [
+     "because ve so'yu aynı cümlede birlikte kullanmadın, değil mi?",
+     "because of'tan sonra isim, because'tan sonra cümle koydun mu?",
+     "Çift olumsuz kullanmadın, değil mi?"
+    ],
+    "model": "Last month I changed my job because the office was very far. The new job is nearer, so I get up later. I am happier now."
+   }
+  }
+ ]
+}
