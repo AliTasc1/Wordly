@@ -1,31 +1,60 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen, Spacer } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press, PrimaryButton } from '../components/Buttons';
-import { Card, Chip } from '../components/Surfaces';
+import { Card } from '../components/Surfaces';
+import { AnswerFeedback, QuizOption } from '../components/QuizOption';
+import { GlossedText } from '../components/GlossedText';
 import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import { LISTENING } from '../data/questions';
+import { listeningOf } from '../content';
+import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 
-/** 12 · Dinleme — player, speed control, transcript and a cloze. */
+const SPEEDS = ['1×', '0.75×', '0.5×'];
+
+/** 12 · Dinleme — player, transcript and comprehension questions. */
 export function ListenScreen() {
   const { go } = useGo();
   const back = useBack('lesson');
-  const { fire } = useApp();
+  const { cefr, position, setPosition, fire } = useApp();
 
-  const [playing, setPlaying] = useState(false);
+  const items = useMemo(() => listeningOf(cefr), [cefr]);
+  const index = Math.min(position('listening', cefr), items.length - 1);
+  const item = items[index];
+
   const [speedIndex, setSpeedIndex] = useState(0);
-  const [transcript, setTranscript] = useState(false);
-  const [blank, setBlank] = useState<number | null>(null);
+  // The transcript opens by default while there is no audio to listen to;
+  // hiding it would leave the screen with nothing the learner can actually do.
+  const [transcript, setTranscript] = useState(true);
+  const [asked, setAsked] = useState(0);
+  const [right, setRight] = useState(0);
 
-  const cloze = LISTENING.cloze;
-  const blankText = blank === null ? cloze.placeholder : cloze.options[blank];
-  const blankCorrect = blank === cloze.answer;
+  const question = item.questions[asked];
+  const quiz = useQuiz(question.answer, (_, correct) => {
+    if (correct) {
+      setRight((n) => n + 1);
+      fire('Doğru! +20 XP', question.note);
+    }
+  });
+
+  const last = asked === item.questions.length - 1;
+
+  const nextQuestion = () => {
+    quiz.reset();
+    if (last) {
+      setPosition('listening', cefr, (index + 1) % items.length);
+      setAsked(0);
+      setRight(0);
+      go('read');
+      return;
+    }
+    setAsked((n) => n + 1);
+  };
 
   return (
     <Screen padTop={62} gap={14}>
@@ -33,10 +62,10 @@ export function ListenScreen() {
         <BackButton onPress={back} />
         <View style={styles.flex}>
           <Txt f="m" s={16} w={800}>
-            {LISTENING.title}
+            {item.title}
           </Txt>
           <Txt s={11} w={600} c={colors.textDim}>
-            {LISTENING.meta}
+            {item.level} · {item.lines.length} replik · {index + 1}/{items.length}
           </Txt>
         </View>
       </View>
@@ -49,7 +78,7 @@ export function ListenScreen() {
 
         <View style={styles.controls}>
           <Press
-            onPress={() => fire('5 saniye geri', 'Tekrar dinliyorsun')}
+            onPress={() => fire('Ses kaydı hazırlanıyor', 'Şimdilik transkriptten çalışabilirsin')}
             accessibilityRole="button"
             accessibilityLabel="5 saniye geri"
             style={styles.smallBtn}>
@@ -59,33 +88,33 @@ export function ListenScreen() {
           </Press>
 
           <Press
-            onPress={() => setPlaying((p) => !p)}
+            onPress={() => fire('Ses kaydı henüz eklenmedi', 'Diyaloğu transkriptten okuyabilirsin')}
             accessibilityRole="button"
-            accessibilityLabel={playing ? 'Duraklat' : 'Oynat'}>
+            accessibilityLabel="Oynat">
             <Gradient colors={gradients.cyan} style={styles.playBtn}>
               <Txt f="m" s={18} w={700}>
-                {playing ? '❚❚' : '▶'}
+                ▶
               </Txt>
             </Gradient>
           </Press>
 
           <Press
-            onPress={() => setSpeedIndex((i) => (i + 1) % LISTENING.speeds.length)}
+            onPress={() => setSpeedIndex((i) => (i + 1) % SPEEDS.length)}
             accessibilityRole="button"
             accessibilityLabel="Oynatma hızı"
             style={styles.smallBtn}>
             <Txt f="mono" s={11} w={700}>
-              {LISTENING.speeds[speedIndex]}
+              {SPEEDS[speedIndex]}
             </Txt>
           </Press>
         </View>
 
         <View style={styles.scrubber}>
           <Txt f="mono" s={11} w={700} c={colors.textDim}>
-            {LISTENING.elapsed}
+            0:00
           </Txt>
           <ProgressBar
-            pct={LISTENING.progress}
+            pct={0}
             from={colors.accent}
             to={colors.primary}
             height={5}
@@ -93,7 +122,7 @@ export function ListenScreen() {
             style={styles.flex}
           />
           <Txt f="mono" s={11} w={700} c={colors.textDim}>
-            {LISTENING.duration}
+            {item.minutes}:00
           </Txt>
         </View>
       </Gradient>
@@ -115,72 +144,65 @@ export function ListenScreen() {
 
       {transcript ? (
         <View style={styles.transcript}>
-          <Txt s={13.5} lh={1.6} c={colors.textBright}>
-            {LISTENING.transcript.before}
-            <Txt s={13.5} lh={1.6} style={styles.highlight}>
-              {LISTENING.transcript.highlight}
-            </Txt>
-            {LISTENING.transcript.after}
-          </Txt>
-          <Txt s={12} lh={1.6} c={colors.textDim}>
-            {LISTENING.transcript.translation}
-          </Txt>
+          {item.lines.map((line, i) => (
+            <View key={i} style={styles.line}>
+              <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.08}>
+                {line.who.toUpperCase()}
+              </Txt>
+              <GlossedText
+                text={line.en}
+                glossary={item.glossary}
+                size={13.5}
+                onWord={(gloss) => fire(gloss.w, gloss.tr)}
+              />
+              <Txt s={12} lh={1.6} c={colors.textDim}>
+                {line.tr}
+              </Txt>
+            </View>
+          ))}
         </View>
       ) : null}
 
       <Card>
         <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
-          {cloze.kicker}
+          SORU {asked + 1}/{item.questions.length} · {right} doğru
         </Txt>
-        <Txt s={16.5} w={600} lh={1.6}>
-          {cloze.before}
-          <Txt
-            s={16.5}
-            w={700}
-            c={
-              blank === null
-                ? colors.textGhost
-                : blankCorrect
-                  ? colors.mintSoft
-                  : colors.errorTint
+        <Txt f="m" s={17} w={700} lh={1.4}>
+          {question.q}
+        </Txt>
+        {question.options.map((option, i) => (
+          <QuizOption
+            key={`${asked}-${option}`}
+            label={option}
+            mark={quiz.markOf(i)}
+            state={quiz.stateOf(i)}
+            onPress={() => quiz.pick(i)}
+          />
+        ))}
+        {quiz.answered ? (
+          <AnswerFeedback
+            correct={quiz.correct}
+            title={
+              quiz.correct
+                ? 'Doğru! +20 XP'
+                : `Yanlış — doğrusu: ${question.options[question.answer]}`
             }
-            style={
-              blank === null
-                ? styles.blankIdle
-                : blankCorrect
-                  ? styles.blankOk
-                  : styles.blankBad
-            }>
-            {blankText}
-          </Txt>
-          {cloze.after}
-        </Txt>
-        <View style={styles.clozeOptions}>
-          {cloze.options.map((option, i) => (
-            <Chip
-              key={option}
-              label={option}
-              active={blank === i}
-              padV={10}
-              padH={13}
-              onPress={() => {
-                setBlank(i);
-                const toast = i === cloze.answer ? cloze.correctToast : cloze.wrongToast;
-                fire(toast.title, toast.note);
-              }}
-            />
-          ))}
-        </View>
+            note={question.note}
+            titleSize={13.5}
+            noteSize={12}
+            radius={radii.card}
+          />
+        ) : null}
       </Card>
 
       <Spacer />
 
       <PrimaryButton
-        label="Sonraki bölüm · Okuma"
+        label={last ? 'Sonraki bölüm · Okuma' : 'Sonraki soru'}
         height={54}
         size={15.5}
         shadow={shadows.ctaBrand}
-        onPress={() => go('read')}
+        onPress={nextQuestion}
       />
     </Screen>
   );
@@ -232,11 +254,7 @@ const styles = StyleSheet.create({
     borderColor: alpha.w08,
     borderRadius: radii.panel,
     padding: 15,
-    gap: 10,
+    gap: 14,
   },
-  highlight: { backgroundColor: 'rgba(46,107,255,.28)' },
-  blankIdle: { backgroundColor: alpha.w08 },
-  blankOk: { backgroundColor: 'rgba(34,197,94,.22)' },
-  blankBad: { backgroundColor: 'rgba(255,77,94,.22)' },
-  clozeOptions: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  line: { gap: 3 },
 });

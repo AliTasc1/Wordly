@@ -364,6 +364,26 @@ def main() -> int:
 
     all_problems.extend(check_across(everything))
 
+    # Uygulama hangi dosyanın var olduğunu tahmin etmesin: ne üretildiyse
+    # tek bir listede yazılı olsun. Yalnızca hepsi temizse yazılıyor, yoksa
+    # manifest üretilmemiş dosyaları vaat eder.
+    if not all_problems and targets == KINDS:
+        OUT.mkdir(parents=True, exist_ok=True)
+        manifest = {
+            kind: [
+                {"level": level.upper(),
+                 "items": len(load(kind, level)),
+                 "file": f"{kind}-{level}.json"}
+                for level in LEVELS
+            ]
+            for kind in KINDS
+        }
+        manifest["placement"] = {"questions": count, "file": "placement.json"}
+        (OUT / "texts-manifest.json").write_text(
+            json.dumps(manifest, ensure_ascii=False, indent=1) + "\n",
+            encoding="utf-8",
+        )
+
     if all_problems:
         print()
         for problem in all_problems:

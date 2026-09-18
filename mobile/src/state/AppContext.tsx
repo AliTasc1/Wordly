@@ -11,6 +11,9 @@ import { CefrLevel } from '../data/curriculum';
 
 export type Toast = { title: string; note: string } | null;
 
+/** The decks a learner moves through, each tracked separately per level. */
+export type DeckKind = 'vocab' | 'grammar' | 'reading' | 'listening' | 'speaking';
+
 type GameState = {
   combo: number;
   arenaXp: number;
@@ -43,9 +46,18 @@ type AppValue = {
   arenaMissed: () => void;
   duelCorrect: () => void;
 
-  // Sticky UI choices
-  savedWord: boolean;
-  toggleSavedWord: () => void;
+  /**
+   * Where the learner is in each deck. Keyed by kind *and* level, because
+   * switching to A2 and back should not lose the B1 position, and the reading
+   * position has nothing to do with the vocabulary one.
+   */
+  position: (kind: DeckKind, level: CefrLevel) => number;
+  setPosition: (kind: DeckKind, level: CefrLevel, index: number) => void;
+
+  /** Saved words, by card id. */
+  savedWords: string[];
+  isSaved: (id: string) => boolean;
+  toggleSavedWord: (id: string) => void;
   liked: boolean;
   toggleLiked: () => void;
   following: boolean;
@@ -91,7 +103,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     duelOp: 6,
   });
 
-  const [savedWord, setSavedWord] = useState(false);
+  const [positions, setPositions] = useState<Record<string, number>>({});
+  const [savedWords, setSavedWords] = useState<string[]>([]);
   const [liked, setLiked] = useState(false);
   const [following, setFollowing] = useState(false);
   const [joinedClub, setJoinedClub] = useState(true);
@@ -128,8 +141,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
           duelMe: g.duelMe + 1,
           combo: Math.min(g.combo + 1, MAX_COMBO),
         })),
-      savedWord,
-      toggleSavedWord: () => setSavedWord((v) => !v),
+      position: (kind: DeckKind, level: CefrLevel) => positions[`${kind}:${level}`] ?? 0,
+      setPosition: (kind: DeckKind, level: CefrLevel, index: number) =>
+        setPositions((cur) => ({ ...cur, [`${kind}:${level}`]: index })),
+      savedWords,
+      isSaved: (id: string) => savedWords.includes(id),
+      toggleSavedWord: (id: string) =>
+        setSavedWords((cur) =>
+          cur.includes(id) ? cur.filter((w) => w !== id) : [...cur, id],
+        ),
       liked,
       toggleLiked: () => setLiked((v) => !v),
       following,
@@ -139,7 +159,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       plan,
       setPlan,
     }),
-    [toast, fire, goals, dailyTime, skills, cefr, game, savedWord, liked, following, joinedClub, plan],
+    [toast, fire, goals, dailyTime, skills, cefr, game, positions, savedWords, liked, following, joinedClub, plan],
   );
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

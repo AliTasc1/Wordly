@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -8,20 +8,40 @@ import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii, shadows } from '../theme/tokens';
-import { WORD_CARD } from '../data/vocab';
+import { vocabOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
 
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
   const back = useBack('lesson');
-  const { fire, savedWord, toggleSavedWord } = useApp();
-  const t = WORD_CARD.toasts;
+  const { cefr, position, setPosition, fire, isSaved, toggleSavedWord, savedWords } = useApp();
+
+  const deck = useMemo(() => vocabOf(cefr), [cefr]);
+  // A level switch can leave the stored index past the end of a shorter deck:
+  // C1 has 1.040 cards where B2 has 2.755.
+  const index = Math.min(position('vocab', cefr), deck.length - 1);
+  const card = deck[index];
+  const saved = isSaved(card.id);
+
+  const advance = () => setPosition('vocab', cefr, (index + 1) % deck.length);
 
   const onSave = () => {
-    toggleSavedWord();
-    const next = savedWord ? t.unsaved : t.saved;
-    fire(next.title, next.note);
+    toggleSavedWord(card.id);
+    fire(
+      saved ? 'Kelime listeden çıktı' : `“${card.word}” kaydedildi`,
+      saved ? 'Tekrar sırasından kaldırıldı' : 'Aralıklı tekrara eklendi',
+    );
+  };
+
+  const onKnown = () => {
+    fire('+10 XP', `“${card.word}” koleksiyonuna eklendi`);
+    advance();
+  };
+
+  const onAgain = () => {
+    fire('Tekrar sırasına alındı', '10 dakika içinde yeniden sorulacak');
+    advance();
   };
 
   return (
@@ -29,13 +49,13 @@ export function VocabScreen() {
       <View style={styles.header}>
         <BackButton onPress={back} />
         <ProgressBar
-          pct={WORD_CARD.progress}
+          pct={((index + 1) / deck.length) * 100}
           from={colors.secondary}
           to={colors.accent}
           style={styles.flex}
         />
         <Txt f="mono" s={12} w={700} c={colors.textDim}>
-          {WORD_CARD.index}
+          {index + 1}/{deck.length}
         </Txt>
       </View>
 
@@ -44,12 +64,12 @@ export function VocabScreen() {
           <Press
             onPress={onSave}
             accessibilityRole="button"
-            accessibilityLabel={savedWord ? 'Kayıtlardan çıkar' : 'Kelimeyi kaydet'}
-            style={[styles.iconBtn, savedWord ? styles.saved : styles.unsaved]}>
-            <Txt s={15}>{savedWord ? '★' : '☆'}</Txt>
+            accessibilityLabel={saved ? 'Kayıtlardan çıkar' : 'Kelimeyi kaydet'}
+            style={[styles.iconBtn, saved ? styles.saved : styles.unsaved]}>
+            <Txt s={15}>{saved ? '★' : '☆'}</Txt>
           </Press>
           <Press
-            onPress={() => fire(t.audio.title, t.audio.note)}
+            onPress={() => fire(`🔊 ${card.ipa ?? card.word}`, 'Telaffuz oynatılıyor · 0.75× dene')}
             accessibilityRole="button"
             accessibilityLabel="Telaffuzu dinle"
             style={[styles.iconBtn, styles.audioBtn]}>
@@ -59,20 +79,22 @@ export function VocabScreen() {
 
         <View style={styles.pos}>
           <Txt f="mono" s={10} w={700} c={colors.violetSoft} ls={0.1}>
-            {WORD_CARD.pos}
+            {card.posLabel} · {card.cefr}
           </Txt>
         </View>
 
         <View>
           <Txt f="m" s={40} w={800} ls={-0.02}>
-            {WORD_CARD.word}
+            {card.word}
           </Txt>
           <View style={styles.ipaRow}>
-            <Txt f="mono" s={14} w={600} c={colors.accentSoft}>
-              {WORD_CARD.ipa}
-            </Txt>
+            {card.ipa ? (
+              <Txt f="mono" s={14} w={600} c={colors.accentSoft}>
+                {card.ipa}
+              </Txt>
+            ) : null}
             <Txt s={13} w={600} c={colors.textDim}>
-              {WORD_CARD.translation}
+              · {card.tr}
             </Txt>
           </View>
         </View>
@@ -84,7 +106,7 @@ export function VocabScreen() {
             TANIM
           </Txt>
           <Txt s={13.5} lh={1.5} c={colors.textBright}>
-            {WORD_CARD.definition}
+            {card.definition}
           </Txt>
         </View>
 
@@ -92,37 +114,9 @@ export function VocabScreen() {
           <Txt f="mono" s={10} w={700} c={colors.blueSoft} ls={0.1} style={styles.blockKicker}>
             ÖRNEK
           </Txt>
-          <Txt s={14} w={600} lh={1.5}>
-            {WORD_CARD.example.before}
-            <Txt s={14} w={600} c={colors.accent}>
-              {WORD_CARD.example.highlight}
-            </Txt>
-            {WORD_CARD.example.after}
-          </Txt>
+          <Example sentence={card.example} word={card.word} />
           <Txt s={12} c={colors.textDim} style={styles.exampleTr}>
-            {WORD_CARD.example.translation}
-          </Txt>
-        </View>
-
-        <View style={styles.relations}>
-          <RelationRow label="EŞ ANLAM" items={WORD_CARD.synonyms} tone="success" />
-          <RelationRow label="ZIT ANLAM" items={WORD_CARD.antonyms} tone="error" />
-          <RelationRow label="BİRLİKTE" items={WORD_CARD.collocations} tone="neutral" />
-        </View>
-
-        <View style={styles.mastery}>
-          <Txt s={11} w={700} c={colors.textDim}>
-            Ustalık
-          </Txt>
-          <ProgressBar
-            pct={WORD_CARD.mastery}
-            from={colors.success}
-            to={colors.accent}
-            height={7}
-            style={styles.flex}
-          />
-          <Txt f="m" s={13} w={800} c={colors.successSoft}>
-            %{WORD_CARD.mastery}
+            {card.exampleTr}
           </Txt>
         </View>
       </Gradient>
@@ -133,7 +127,7 @@ export function VocabScreen() {
           height={52}
           radius={16}
           fill={alpha.w04}
-          onPress={() => fire(t.again.title, t.again.note)}
+          onPress={onAgain}
           style={styles.flex}
         />
         <PrimaryButton
@@ -142,58 +136,46 @@ export function VocabScreen() {
           radius={16}
           size={14.5}
           shadow={shadows.ctaBrandSmall}
-          onPress={() => fire(t.known.title, t.known.note)}
+          onPress={onKnown}
           style={styles.flexWide}
         />
       </View>
 
       <View style={styles.stats}>
-        {WORD_CARD.stats.map((s, i) => (
-          <StatTile
-            key={s.label}
-            value={s.value}
-            label={s.label}
-            tint={[colors.accent, colors.secondary, colors.warning][i]}
-          />
-        ))}
+        <StatTile value={String(savedWords.length)} label="kaydedilen kelime" tint={colors.accent} />
+        <StatTile value={String(index + 1)} label="bu seviyede görülen" tint={colors.secondary} />
+        <StatTile
+          value={String(deck.length - index - 1)}
+          label="kalan kart"
+          tint={colors.warning}
+        />
       </View>
     </Screen>
   );
 }
 
-function RelationRow({
-  label,
-  items,
-  tone,
-}: {
-  label: string;
-  items: string[];
-  tone: 'success' | 'error' | 'neutral';
-}) {
-  const style =
-    tone === 'success'
-      ? { bg: 'rgba(34,197,94,.12)', border: 'rgba(34,197,94,.26)', color: colors.mintSoft }
-      : tone === 'error'
-        ? { bg: 'rgba(255,77,94,.12)', border: 'rgba(255,77,94,.26)', color: colors.errorTint }
-        : { bg: alpha.w06, border: alpha.w10, color: colors.textSubtle };
-
-  return (
-    <View style={styles.relationRow}>
-      <Txt f="mono" s={10} w={700} c={colors.textFaint} style={styles.relationLabel}>
-        {label}
+/**
+ * Highlights the head word inside its example sentence. The content files hold
+ * one plain sentence rather than pre-split before/after parts, so the split
+ * happens here — case-insensitively, since a sentence may open with the word.
+ */
+function Example({ sentence, word }: { sentence: string; word: string }) {
+  const at = sentence.toLowerCase().indexOf(word.toLowerCase());
+  if (at < 0) {
+    return (
+      <Txt s={14} w={600} lh={1.5}>
+        {sentence}
       </Txt>
-      <View style={styles.relationItems}>
-        {items.map((item) => (
-          <View
-            key={item}
-            style={[styles.relationChip, { backgroundColor: style.bg, borderColor: style.border }]}>
-            <Txt s={11.5} w={600} c={style.color}>
-              {item}
-            </Txt>
-          </View>
-        ))}
-      </View>
-    </View>
+    );
+  }
+  return (
+    <Txt s={14} w={600} lh={1.5}>
+      {sentence.slice(0, at)}
+      <Txt s={14} w={600} c={colors.accent}>
+        {sentence.slice(at, at + word.length)}
+      </Txt>
+      {sentence.slice(at + word.length)}
+    </Txt>
   );
 }
 
@@ -235,25 +217,6 @@ const styles = StyleSheet.create({
   blockKicker: { marginBottom: 5 },
   exampleBlock: { backgroundColor: 'rgba(46,107,255,.1)' },
   exampleTr: { marginTop: 4 },
-  relations: { gap: 8 },
-  relationRow: { flexDirection: 'row', gap: 7, alignItems: 'flex-start' },
-  relationLabel: { width: 74, paddingTop: 5 },
-  relationItems: { flex: 1, flexDirection: 'row', flexWrap: 'wrap', gap: 6 },
-  relationChip: {
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: radii.chipSm,
-    borderWidth: 1,
-  },
-  mastery: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    backgroundColor: alpha.w04,
-    borderRadius: radii.card,
-    paddingVertical: 11,
-    paddingHorizontal: 13,
-  },
   actions: { flexDirection: 'row', gap: 10 },
   stats: { flexDirection: 'row', gap: 9 },
 });

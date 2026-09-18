@@ -1,0 +1,102 @@
+{
+ "reading": [
+  {
+   "level": "A1",
+   "items": 10,
+   "file": "reading-a1.json"
+  },
+  {
+   "level": "A2",
+   "items": 10,
+   "file": "reading-a2.json"
+  },
+  {
+   "level": "B1",
+   "items": 10,
+   "file": "reading-b1.json"
+  },
+  {
+   "level": "B2",
+   "items": 10,
+   "file": "reading-b2.json"
+  },
+  {
+   "level": "C1",
+   "items": 10,
+   "file": "reading-c1.json"
+  },
+  {
+   "level": "C2",
+   "items": 10,
+   "file": "reading-c2.json"
+  }
+ ],
+ "listening": [
+  {
+   "level": "A1",
+   "items": 10,
+   "file": "listening-a1.json"
+  },
+  {
+   "level": "A2",
+   "items": 10,
+   "file": "listening-a2.json"
+  },
+  {
+   "level": "B1",
+   "items": 10,
+   "file": "listening-b1.json"
+  },
+  {
+   "level": "B2",
+   "items": 10,
+   "file": "listening-b2.json"
+  },
+  {
+   "level": "C1",
+   "items": 10,
+   "file": "listening-c1.json"
+  },
+  {
+   "level": "C2",
+   "items": 10,
+   "file": "listening-c2.json"
+  }
+ ],
+ "speaking": [
+  {
+   "level": "A1",
+   "items": 10,
+   "file": "speaking-a1.json"
+  },
+  {
+   "level": "A2",
+   "items": 10,
+   "file": "speaking-a2.json"
+  },
+  {
+   "level": "B1",
+   "items": 10,
+   "file": "speaking-b1.json"
+  },
+  {
+   "level": "B2",
+   "items": 10,
+   "file": "speaking-b2.json"
+  },
+  {
+   "level": "C1",
+   "items": 10,
+   "file": "speaking-c1.json"
+  },
+  {
+   "level": "C2",
+   "items": 10,
+   "file": "speaking-c2.json"
+  }
+ ],
+ "placement": {
+  "questions": 40,
+  "file": "placement.json"
+ }
+}
