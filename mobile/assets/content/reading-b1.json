@@ -1,0 +1,925 @@
+[
+ {
+  "id": "b1-r-01",
+  "level": "B1",
+  "order": 1,
+  "kind": "reading",
+  "title": "Dört günlük hafta",
+  "titleEn": "The Four-Day Week",
+  "minutes": 4,
+  "names": [
+   "Kerem"
+  ],
+  "text": "Two years ago a small software company in Izmir tried an experiment. Instead of working five days a week, the staff would work four, but they would receive the same salary. The owner, Kerem, expected that the company would produce less. In fact, after six months the results were better than before. Meetings became shorter because nobody wanted to waste a morning. Employees stopped answering emails during dinner. The number of sick days fell by almost half. However, the change did not suit everybody. Two members of the team said they felt under pressure to finish the same amount of work in less time, and one of them eventually left. Kerem admits that the system works well for his company because the work can be measured easily. He is less sure that a hospital or a school could do the same thing. \"We did not become lazy,\" he says. \"We became careful about where our hours go.\"",
+  "glossary": [
+   {
+    "w": "experiment",
+    "tr": "deney"
+   },
+   {
+    "w": "salary",
+    "tr": "maaş"
+   },
+   {
+    "w": "employees",
+    "tr": "çalışanlar"
+   },
+   {
+    "w": "eventually",
+    "tr": "sonunda"
+   },
+   {
+    "w": "measured",
+    "tr": "ölçülmek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did Kerem expect before the experiment?",
+    "options": [
+     "That costs would rise",
+     "That nobody would agree",
+     "That staff would be happier",
+     "That the company would produce less"
+    ],
+    "answer": 3,
+    "note": "\"The owner expected that the company would produce less.\""
+   },
+   {
+    "q": "Why did meetings become shorter?",
+    "options": [
+     "The rooms were smaller",
+     "The manager stopped them",
+     "There were fewer people",
+     "Nobody wanted to waste a morning"
+    ],
+    "answer": 3,
+    "note": "\"Meetings became shorter because nobody wanted to waste a morning.\""
+   },
+   {
+    "q": "What problem did two employees report?",
+    "options": [
+     "Lower pay",
+     "Too many meetings",
+     "Longer journeys",
+     "Pressure to do the same work in less time"
+    ],
+    "answer": 3,
+    "note": "\"They felt under pressure to finish the same amount of work in less time.\""
+   },
+   {
+    "q": "Why does Kerem doubt the system would suit a hospital?",
+    "options": [
+     "That kind of work is harder to measure",
+     "Hospitals are bigger",
+     "Doctors earn more",
+     "Patients would complain"
+    ],
+    "answer": 0,
+    "note": "İşin kolayca ölçülebilmesi onun şirketinde işe yaramasının nedeni."
+   },
+   {
+    "q": "What does Kerem's final sentence mean?",
+    "options": [
+     "They used their time more carefully",
+     "They became tired",
+     "They stopped caring",
+     "They worked less hard"
+    ],
+    "answer": 0,
+    "note": "\"We became careful about where our hours go.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-r-02",
+  "level": "B1",
+  "order": 2,
+  "kind": "reading",
+  "title": "İkinci el mağazası",
+  "titleEn": "The Second-Hand Shop",
+  "minutes": 4,
+  "names": [
+   "Meltem"
+  ],
+  "text": "When Meltem opened a second-hand clothes shop in her neighborhood, several friends warned her that nobody would buy used clothes. At the beginning they seemed to be right. For three months she sold almost nothing, and she began to think about closing. Then she changed two things. First, she cleaned and repaired every item before putting it on the shelf, so the clothes no longer looked old. Second, she wrote a small card for each piece: where it came from, and what could be worn with it. Customers started to stay longer and to talk to her. Within a year the shop had regular visitors who came every Saturday. Meltem believes the real product is not the clothing. People come because the shop feels personal, and because they like the idea that something useful is not thrown away.",
+  "glossary": [
+   {
+    "w": "second-hand",
+    "tr": "ikinci el"
+   },
+   {
+    "w": "warned",
+    "tr": "uyardılar"
+   },
+   {
+    "w": "repaired",
+    "tr": "onardı"
+   },
+   {
+    "w": "regular",
+    "tr": "düzenli"
+   },
+   {
+    "w": "customers",
+    "tr": "müşteriler"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did her friends think?",
+    "options": [
+     "The rent was too high",
+     "The shop was too small",
+     "Nobody would buy used clothes",
+     "She should sell new clothes"
+    ],
+    "answer": 2,
+    "note": "\"Several friends warned her that nobody would buy used clothes.\""
+   },
+   {
+    "q": "What happened in the first three months?",
+    "options": [
+     "She hired staff",
+     "She sold almost nothing",
+     "The shop was full",
+     "She was ready to close"
+    ],
+    "answer": 1,
+    "note": "\"For three months she sold almost nothing.\""
+   },
+   {
+    "q": "What was the first change she made?",
+    "options": [
+     "She moved the shop",
+     "She cleaned and repaired the clothes",
+     "She sold online",
+     "She made the prices cheaper"
+    ],
+    "answer": 1,
+    "note": "\"She cleaned and repaired every item.\""
+   },
+   {
+    "q": "What was written on the cards?",
+    "options": [
+     "Washing instructions",
+     "The owner's name",
+     "Where the item came from",
+     "The price only"
+    ],
+    "answer": 2,
+    "note": "\"Where it came from, and what could be worn with it.\""
+   },
+   {
+    "q": "What does Meltem think the real product is?",
+    "options": [
+     "The feeling of the shop",
+     "Repair work",
+     "Advertising",
+     "Cheap clothing"
+    ],
+    "answer": 0,
+    "note": "İnsanlar mağaza kişisel hissettirdiği için geliyor."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-03",
+  "level": "B1",
+  "order": 3,
+  "kind": "reading",
+  "title": "Gece vardiyası",
+  "titleEn": "The Night Shift",
+  "minutes": 4,
+  "names": [
+   "Sinan"
+  ],
+  "text": "Sinan has worked at a petrol station at night for four years. He starts at eleven in the evening and finishes at seven in the morning. Most people imagine that a night shift is quiet, and for much of the time it is. Between two and five o'clock he may serve only ten or twelve drivers. But those hours are also strange. Drivers who stop at three in the morning often want to talk, and Sinan has heard hundreds of stories: a man driving to a hospital in another city, a woman leaving her job, a family who had been traveling for eleven hours. The difficult part is not the work itself but the return home. While the rest of the city is beginning its day, Sinan closes the curtains and tries to sleep. He says he has never really got used to it, and he plans to change jobs when his daughter starts school.",
+  "glossary": [
+   {
+    "w": "shift",
+    "tr": "vardiya"
+   },
+   {
+    "w": "petrol station",
+    "tr": "benzin istasyonu"
+   },
+   {
+    "w": "curtains",
+    "tr": "perdeler"
+   },
+   {
+    "w": "imagine",
+    "tr": "hayal etmek, sanmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When does Sinan's shift end?",
+    "options": [
+     "At five o'clock",
+     "At three in the morning",
+     "At seven in the morning",
+     "At eleven at night"
+    ],
+    "answer": 2,
+    "note": "\"He starts at eleven in the evening and finishes at seven in the morning.\""
+   },
+   {
+    "q": "How many drivers may he serve between two and five?",
+    "options": [
+     "About thirty",
+     "Ten or twelve",
+     "None",
+     "Fifty"
+    ],
+    "answer": 1,
+    "note": "\"He may serve only ten or twelve drivers.\""
+   },
+   {
+    "q": "What do late-night drivers often want?",
+    "options": [
+     "To pay by card",
+     "To complain",
+     "To talk",
+     "To sleep"
+    ],
+    "answer": 2,
+    "note": "\"Drivers who stop at three in the morning often want to talk.\""
+   },
+   {
+    "q": "What does Sinan find most difficult?",
+    "options": [
+     "The cold",
+     "Sleeping after the shift",
+     "The journey to work",
+     "Serving customers"
+    ],
+    "answer": 1,
+    "note": "\"The difficult part is not the work itself but the return home.\""
+   },
+   {
+    "q": "When does he plan to change jobs?",
+    "options": [
+     "After four years",
+     "When he saves enough money",
+     "Next year",
+     "When his daughter starts school"
+    ],
+    "answer": 3,
+    "note": "\"He plans to change jobs when his daughter starts school.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-r-04",
+  "level": "B1",
+  "order": 4,
+  "kind": "reading",
+  "title": "Şehirdeki ağaçlar",
+  "titleEn": "Trees in the City",
+  "minutes": 4,
+  "names": [],
+  "text": "Most people agree that trees make a city more pleasant, but few realize how much practical work they do. On a hot afternoon the temperature under a large tree can be several degrees lower than on the pavement beside it. Trees also hold water when it rains heavily, which reduces the pressure on drains, and their leaves catch dust from traffic. A recent study in three European cities found that streets with trees had fewer complaints about noise, even though the trees did not actually block much sound. The explanation appears to be psychological: people who can see green report that they feel calmer. However, planting trees is not simple. A young tree in a narrow street needs regular water for at least three years, and roots can damage old pipes. Cities that plant trees without planning often lose most of them within a decade.",
+  "glossary": [
+   {
+    "w": "pavement",
+    "tr": "kaldırım"
+   },
+   {
+    "w": "drains",
+    "tr": "kanalizasyon, gider"
+   },
+   {
+    "w": "psychological",
+    "tr": "psikolojik"
+   },
+   {
+    "w": "roots",
+    "tr": "kökler"
+   },
+   {
+    "w": "decade",
+    "tr": "on yıl"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What happens to the temperature under a large tree?",
+    "options": [
+     "It changes only at night",
+     "It stays the same",
+     "It is several degrees lower",
+     "It rises"
+    ],
+    "answer": 2,
+    "note": "\"The temperature under a large tree can be several degrees lower.\""
+   },
+   {
+    "q": "Why do trees help when it rains heavily?",
+    "options": [
+     "They hold water and reduce pressure on drains",
+     "They stop the rain",
+     "They protect the roads",
+     "They clean the water"
+    ],
+    "answer": 0,
+    "note": "\"Trees also hold water when it rains heavily.\""
+   },
+   {
+    "q": "What did the study find about noise?",
+    "options": [
+     "There was no difference",
+     "Streets with trees had fewer complaints",
+     "Noise increased",
+     "Trees blocked most sound"
+    ],
+    "answer": 1,
+    "note": "\"Streets with trees had fewer complaints about noise.\""
+   },
+   {
+    "q": "How does the text explain the noise result?",
+    "options": [
+     "Seeing green makes people feel calmer",
+     "The streets were quieter anyway",
+     "People move away",
+     "Trees absorb sound"
+    ],
+    "answer": 0,
+    "note": "\"The explanation appears to be psychological.\""
+   },
+   {
+    "q": "What problem can roots cause?",
+    "options": [
+     "Damage to old pipes",
+     "More dust",
+     "Less shade",
+     "Higher temperatures"
+    ],
+    "answer": 0,
+    "note": "\"Roots can damage old pipes.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-r-05",
+  "level": "B1",
+  "order": 5,
+  "kind": "reading",
+  "title": "Yanlış anlaşılan e-posta",
+  "titleEn": "The Email That Was Misunderstood",
+  "minutes": 4,
+  "names": [
+   "Gizem",
+   "Ahmet"
+  ],
+  "text": "Gizem sent her colleague Ahmet a short message: \"We need to talk about the report.\" She wrote it quickly between two meetings and thought nothing more about it. Ahmet read the message at nine in the evening. Because it was short and gave no reason, he assumed that something was seriously wrong. He spent most of the night checking his work and preparing an explanation. The next morning he arrived early, pale and nervous, and asked Gizem which part of the report had failed. Gizem was surprised: she had only wanted to move a deadline. Since then their team has agreed on a simple rule. If a message might worry somebody, the writer must add one sentence explaining why. It costs ten seconds and it has saved several evenings.",
+  "glossary": [
+   {
+    "w": "assumed",
+    "tr": "varsaydı"
+   },
+   {
+    "w": "seriously",
+    "tr": "ciddi biçimde"
+   },
+   {
+    "w": "pale",
+    "tr": "solgun"
+   },
+   {
+    "w": "deadline",
+    "tr": "teslim tarihi"
+   },
+   {
+    "w": "colleague",
+    "tr": "iş arkadaşı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did Gizem write a short message?",
+    "options": [
+     "She was angry",
+     "She was busy between meetings",
+     "She was in a hurry to leave",
+     "She wanted a quick reply"
+    ],
+    "answer": 1,
+    "note": "\"She wrote it quickly between two meetings.\""
+   },
+   {
+    "q": "What did Ahmet think the message meant?",
+    "options": [
+     "The report was finished",
+     "A meeting was moved",
+     "He would be promoted",
+     "Something was seriously wrong"
+    ],
+    "answer": 3,
+    "note": "\"He assumed that something was seriously wrong.\""
+   },
+   {
+    "q": "What did Ahmet do that night?",
+    "options": [
+     "He wrote a reply",
+     "He called Gizem",
+     "He slept badly but did nothing",
+     "He checked his work"
+    ],
+    "answer": 3,
+    "note": "\"He spent most of the night checking his work.\""
+   },
+   {
+    "q": "What did Gizem actually want?",
+    "options": [
+     "To praise him",
+     "To cancel the report",
+     "To correct a mistake",
+     "To move a deadline"
+    ],
+    "answer": 3,
+    "note": "\"She had only wanted to move a deadline.\""
+   },
+   {
+    "q": "What rule did the team agree on?",
+    "options": [
+     "Only speak face to face",
+     "Send messages in the morning",
+     "Never write short messages",
+     "Explain why in one sentence"
+    ],
+    "answer": 3,
+    "note": "\"The writer must add one sentence explaining why.\""
+   }
+  ]
+ },
+ {
+  "id": "b1-r-06",
+  "level": "B1",
+  "order": 6,
+  "kind": "reading",
+  "title": "Dede ve telefon",
+  "titleEn": "Grandfather and the Phone",
+  "minutes": 4,
+  "names": [
+   "Yusuf"
+  ],
+  "text": "When Yusuf gave his grandfather a smartphone, the family expected a disaster. The old man had never used a computer and often said that the world had become too fast. For the first two weeks he kept the phone in a drawer. Then his granddaughter sent him a photograph of her new kitten, and he wanted to reply. Yusuf spent an afternoon showing him how to write a message. Six months later the grandfather has a group with eleven relatives, sends voice messages every morning and has taught two of his neighbors to do the same. He still refuses to read the news on the screen, because he says the paper version helps him to stop. What surprised the family most was not that he learned quickly, but that he had been waiting for a reason.",
+  "glossary": [
+   {
+    "w": "smartphone",
+    "tr": "akıllı telefon"
+   },
+   {
+    "w": "disaster",
+    "tr": "felaket"
+   },
+   {
+    "w": "drawer",
+    "tr": "çekmece"
+   },
+   {
+    "w": "relatives",
+    "tr": "akrabalar"
+   },
+   {
+    "w": "refuses",
+    "tr": "reddediyor"
+   },
+   {
+    "w": "version",
+    "tr": "sürüm, biçim"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the family expect?",
+    "options": [
+     "That he would sell the phone",
+     "A disaster",
+     "A quick success",
+     "That he would be angry"
+    ],
+    "answer": 1,
+    "note": "\"The family expected a disaster.\""
+   },
+   {
+    "q": "Why did the grandfather start to use the phone?",
+    "options": [
+     "He wanted to reply to a photograph",
+     "He was bored",
+     "He needed to call a doctor",
+     "Yusuf insisted"
+    ],
+    "answer": 0,
+    "note": "\"His granddaughter sent him a photograph ... and he wanted to reply.\""
+   },
+   {
+    "q": "What does he do every morning now?",
+    "options": [
+     "He sends voice messages",
+     "He calls Yusuf",
+     "He teaches a class",
+     "He reads the news online"
+    ],
+    "answer": 0,
+    "note": "\"Sends voice messages every morning.\""
+   },
+   {
+    "q": "Why does he still read the news on paper?",
+    "options": [
+     "The paper version helps him to stop",
+     "He does not trust the screen",
+     "The screen is too small",
+     "It is cheaper"
+    ],
+    "answer": 0,
+    "note": "\"The paper version helps him to stop.\""
+   },
+   {
+    "q": "What surprised the family most?",
+    "options": [
+     "He taught his neighbors",
+     "He disliked the phone",
+     "He learned slowly",
+     "He had been waiting for a reason"
+    ],
+    "answer": 3,
+    "note": "Son cümle: asıl şaşırtan, bir sebep bekliyor olmasıydı."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-07",
+  "level": "B1",
+  "order": 7,
+  "kind": "reading",
+  "title": "Yanlış tren",
+  "titleEn": "The Wrong Train",
+  "minutes": 4,
+  "names": [
+   "Derya",
+   "Eskisehir",
+   "Konya"
+  ],
+  "text": "Derya had traveled the same route for three years and could have found her platform with her eyes closed. That morning, however, the station had changed the platform numbers because of repair work. She got on a train that looked exactly like her usual one, sat down and opened her book. Twenty minutes later she realized that the fields outside the window were unfamiliar. She was on the train to Konya instead of Eskisehir. Her first reaction was panic: she had an important meeting at eleven. Then she noticed that the next stop was a town she had never visited. She called her office, explained the situation and moved the meeting to the afternoon. She spent two hours in a small town she would never have chosen, drank tea in a garden and took the next train back. She still says it was the best morning of that month.",
+  "glossary": [
+   {
+    "w": "route",
+    "tr": "güzergâh"
+   },
+   {
+    "w": "platform",
+    "tr": "peron"
+   },
+   {
+    "w": "unfamiliar",
+    "tr": "yabancı, tanıdık olmayan"
+   },
+   {
+    "w": "panic",
+    "tr": "panik"
+   },
+   {
+    "w": "reaction",
+    "tr": "tepki"
+   },
+   {
+    "w": "drank",
+    "tr": "içti"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did Derya get on the wrong train?",
+    "options": [
+     "The platform numbers had changed",
+     "She was reading",
+     "She arrived late",
+     "The train was early"
+    ],
+    "answer": 0,
+    "note": "\"The station had changed the platform numbers because of repair work.\""
+   },
+   {
+    "q": "How did she notice the mistake?",
+    "options": [
+     "The fields looked unfamiliar",
+     "She checked her ticket",
+     "The train stopped",
+     "Someone told her"
+    ],
+    "answer": 0,
+    "note": "\"The fields outside the window were unfamiliar.\""
+   },
+   {
+    "q": "What was her first reaction?",
+    "options": [
+     "Panic",
+     "Anger",
+     "Laughter",
+     "Excitement"
+    ],
+    "answer": 0,
+    "note": "\"Her first reaction was panic.\""
+   },
+   {
+    "q": "What did she do about the meeting?",
+    "options": [
+     "She joined from the station",
+     "She gave it to someone else",
+     "She joined by phone",
+     "She moved it to the afternoon"
+    ],
+    "answer": 3,
+    "note": "\"She moved the meeting to the afternoon.\""
+   },
+   {
+    "q": "How does she feel about that day now?",
+    "options": [
+     "She missed her meeting",
+     "She never travels by train",
+     "It was the best morning of the month",
+     "She was embarrassed"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-08",
+  "level": "B1",
+  "order": 8,
+  "kind": "reading",
+  "title": "Ucuz uçak bileti",
+  "titleEn": "The Cheap Flight",
+  "minutes": 4,
+  "names": [],
+  "text": "A ticket that costs twenty euros looks like a gift, but the final price is often three times higher. Low-cost airlines usually sell the seat and nothing else. A bag in the hold costs extra, choosing where you sit costs extra, and printing your ticket at the airport may cost more than the seat itself. The flight may also leave from a smaller airport an hour outside the city, so the bus adds both money and time. None of this is hidden: it is written on the website, usually in small letters at the bottom of the page. The airlines rely on the fact that most passengers compare only the first number they see. Travelers who read carefully and take one small bag can still fly very cheaply. The rest pay for their hurry.",
+  "glossary": [
+   {
+    "w": "airlines",
+    "tr": "havayolu şirketleri"
+   },
+   {
+    "w": "hold",
+    "tr": "uçağın bagaj bölümü"
+   },
+   {
+    "w": "passengers",
+    "tr": "yolcular"
+   },
+   {
+    "w": "compare",
+    "tr": "karşılaştırmak"
+   },
+   {
+    "w": "rely",
+    "tr": "güvenmek, bel bağlamak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What do low-cost airlines usually sell?",
+    "options": [
+     "Only return tickets",
+     "Seats with bags included",
+     "A full service",
+     "The seat and nothing else"
+    ],
+    "answer": 3,
+    "note": "\"Low-cost airlines usually sell the seat and nothing else.\""
+   },
+   {
+    "q": "What may cost more than the seat itself?",
+    "options": [
+     "A window seat",
+     "The return flight",
+     "Food on board",
+     "Printing the ticket at the airport"
+    ],
+    "answer": 3,
+    "note": "\"Printing your ticket at the airport may cost more than the seat itself.\""
+   },
+   {
+    "q": "Why can the airport be a problem?",
+    "options": [
+     "It is always closed",
+     "It is too large",
+     "It has no buses",
+     "It may be an hour outside the city"
+    ],
+    "answer": 3,
+    "note": "\"An hour outside the city, so the bus adds both money and time.\""
+   },
+   {
+    "q": "Is the extra cost hidden?",
+    "options": [
+     "No, it is on the website in small letters",
+     "Yes, completely",
+     "Only for some airlines",
+     "Only at the airport"
+    ],
+    "answer": 0,
+    "note": "\"None of this is hidden: it is written on the website.\""
+   },
+   {
+    "q": "Who can still fly cheaply?",
+    "options": [
+     "People who fly often",
+     "People who read carefully and take one small bag",
+     "People who book late",
+     "Nobody"
+    ],
+    "answer": 1,
+    "note": "Son iki cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-09",
+  "level": "B1",
+  "order": 9,
+  "kind": "reading",
+  "title": "Gönüllü öğretmen",
+  "titleEn": "The Volunteer Teacher",
+  "minutes": 4,
+  "names": [
+   "Nazli"
+  ],
+  "text": "Every Tuesday evening Nazli teaches English to a group of eight adults in a community center. None of them pays anything, and she receives no money either. Her students are between nineteen and sixty-two years old; some want a better job, one is preparing to visit his son abroad, and one simply enjoys the exercise. The lessons are harder than Nazli expected. In a school the students share the same age and the same starting point, but here one man can read well and cannot speak, while a woman next to him understands everything and writes nothing. Nazli has learned to give different tasks to different people in the same hour. She says she has become a better teacher in that room than in any course she ever attended, because there is nowhere to hide: if a lesson is boring, people simply do not come back next week.",
+  "glossary": [
+   {
+    "w": "volunteer",
+    "tr": "gönüllü"
+   },
+   {
+    "w": "community",
+    "tr": "topluluk"
+   },
+   {
+    "w": "abroad",
+    "tr": "yurt dışı"
+   },
+   {
+    "w": "tasks",
+    "tr": "görevler"
+   },
+   {
+    "w": "attended",
+    "tr": "katıldı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How much do the students pay?",
+    "options": [
+     "It depends on their age",
+     "Nothing",
+     "A small fee",
+     "Only for materials"
+    ],
+    "answer": 1,
+    "note": "\"None of them pays anything.\""
+   },
+   {
+    "q": "Why is one man learning English?",
+    "options": [
+     "To help his wife",
+     "For the exercise",
+     "To visit his son abroad",
+     "To find a job"
+    ],
+    "answer": 2,
+    "note": "\"One is preparing to visit his son abroad.\""
+   },
+   {
+    "q": "What makes the class difficult?",
+    "options": [
+     "The room is small",
+     "There are too many students",
+     "The students have very different abilities",
+     "The lessons are too short"
+    ],
+    "answer": 2,
+    "note": "Biri iyi okuyup konuşamıyor, diğeri anlıyor ama yazamıyor."
+   },
+   {
+    "q": "How has Nazli changed her teaching?",
+    "options": [
+     "She gives different tasks in the same hour",
+     "She teaches more slowly",
+     "She tests everybody weekly",
+     "She uses only Turkish"
+    ],
+    "answer": 0,
+    "note": "\"Nazli has learned to give different tasks to different people.\""
+   },
+   {
+    "q": "Why does she say there is nowhere to hide?",
+    "options": [
+     "She is not paid",
+     "If a lesson is boring, people do not come back",
+     "The room has windows",
+     "Her students are strict"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-10",
+  "level": "B1",
+  "order": 10,
+  "kind": "reading",
+  "title": "Uykusuz sınav haftası",
+  "titleEn": "A Week Without Sleep",
+  "minutes": 4,
+  "names": [
+   "Onur"
+  ],
+  "text": "Before his final exams Onur decided that sleep was a waste of time. For five nights he studied until four in the morning and got up at eight. At first he felt proud of himself. By Wednesday he noticed that he was reading the same paragraph three times without understanding it. In the exam on Friday he could remember dates and names, but he could not organize them into an answer. He passed, though with a much lower mark than he had expected. Afterwards he read about research on sleep and learned that the brain moves new information into long-term memory during the night. In other words, the hours he had taken from sleep were exactly the hours his memory needed. This year he is trying the opposite method: fewer hours of study, but seven hours of sleep. So far the results are better.",
+  "glossary": [
+   {
+    "w": "exams",
+    "tr": "sınavlar"
+   },
+   {
+    "w": "paragraph",
+    "tr": "paragraf"
+   },
+   {
+    "w": "organize",
+    "tr": "düzenlemek"
+   },
+   {
+    "w": "research",
+    "tr": "araştırma"
+   },
+   {
+    "w": "memory",
+    "tr": "hafıza"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long did Onur sleep during that week?",
+    "options": [
+     "About four hours",
+     "Eight hours",
+     "He did not sleep",
+     "Seven hours"
+    ],
+    "answer": 0,
+    "note": "Dörtte yatıp sekizde kalkıyordu."
+   },
+   {
+    "q": "What did he notice by Wednesday?",
+    "options": [
+     "He had finished everything",
+     "He was reading the same paragraph again and again",
+     "He was ill",
+     "He felt stronger"
+    ],
+    "answer": 1,
+    "note": "\"He was reading the same paragraph three times without understanding it.\""
+   },
+   {
+    "q": "What was his problem in the exam?",
+    "options": [
+     "He forgot everything",
+     "He arrived late",
+     "He ran out of time",
+     "He could not organize what he remembered"
+    ],
+    "answer": 3,
+    "note": "\"He could not organize them into an answer.\""
+   },
+   {
+    "q": "What does the brain do during sleep?",
+    "options": [
+     "It moves new information into long-term memory",
+     "It rests completely",
+     "It forgets details",
+     "It repeats the day"
+    ],
+    "answer": 0,
+    "note": "\"The brain moves new information into long-term memory during the night.\""
+   },
+   {
+    "q": "What is Onur doing this year?",
+    "options": [
+     "Taking the exam again",
+     "Studying less and sleeping seven hours",
+     "Studying more",
+     "Using the same method"
+    ],
+    "answer": 1,
+    "note": "\"Fewer hours of study, but seven hours of sleep.\""
+   }
+  ]
+ }
+]

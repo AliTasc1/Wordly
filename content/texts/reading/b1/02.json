@@ -1,0 +1,132 @@
+{
+  "_meta": { "batch": "b1-reading-02", "level": "B1", "range": "Parça 6-10" },
+  "items": [
+    {
+      "id": "b1-r-06",
+      "level": "B1",
+      "order": 6,
+      "kind": "reading",
+      "title": "Dede ve telefon",
+      "titleEn": "Grandfather and the Phone",
+      "minutes": 4,
+      "names": ["Yusuf"],
+      "text": "When Yusuf gave his grandfather a smartphone, the family expected a disaster. The old man had never used a computer and often said that the world had become too fast. For the first two weeks he kept the phone in a drawer. Then his granddaughter sent him a photograph of her new kitten, and he wanted to reply. Yusuf spent an afternoon showing him how to write a message. Six months later the grandfather has a group with eleven relatives, sends voice messages every morning and has taught two of his neighbors to do the same. He still refuses to read the news on the screen, because he says the paper version helps him to stop. What surprised the family most was not that he learned quickly, but that he had been waiting for a reason.",
+      "glossary": [
+        { "w": "smartphone", "tr": "akıllı telefon" },
+        { "w": "disaster", "tr": "felaket" },
+        { "w": "drawer", "tr": "çekmece" },
+        { "w": "relatives", "tr": "akrabalar" },
+        { "w": "refuses", "tr": "reddediyor" },
+        { "w": "version", "tr": "sürüm, biçim" }
+      ],
+      "questions": [
+        { "q": "What did the family expect?", "options": ["A disaster", "A quick success", "That he would sell the phone", "That he would be angry"], "answer": 0, "note": "\"The family expected a disaster.\"" },
+        { "q": "Why did the grandfather start to use the phone?", "options": ["He wanted to reply to a photograph", "Yusuf insisted", "He was bored", "He needed to call a doctor"], "answer": 0, "note": "\"His granddaughter sent him a photograph ... and he wanted to reply.\"" },
+        { "q": "What does he do every morning now?", "options": ["He sends voice messages", "He reads the news online", "He calls Yusuf", "He teaches a class"], "answer": 0, "note": "\"Sends voice messages every morning.\"" },
+        { "q": "Why does he still read the news on paper?", "options": ["The paper version helps him to stop", "The screen is too small", "He does not trust the screen", "It is cheaper"], "answer": 0, "note": "\"The paper version helps him to stop.\"" },
+        { "q": "What surprised the family most?", "options": ["He had been waiting for a reason", "He learned slowly", "He disliked the phone", "He taught his neighbors"], "answer": 0, "note": "Son cümle: asıl şaşırtan, bir sebep bekliyor olmasıydı." }
+      ]
+    },
+    {
+      "id": "b1-r-07",
+      "level": "B1",
+      "order": 7,
+      "kind": "reading",
+      "title": "Yanlış tren",
+      "titleEn": "The Wrong Train",
+      "minutes": 4,
+      "names": ["Derya", "Eskisehir", "Konya"],
+      "text": "Derya had traveled the same route for three years and could have found her platform with her eyes closed. That morning, however, the station had changed the platform numbers because of repair work. She got on a train that looked exactly like her usual one, sat down and opened her book. Twenty minutes later she realized that the fields outside the window were unfamiliar. She was on the train to Konya instead of Eskisehir. Her first reaction was panic: she had an important meeting at eleven. Then she noticed that the next stop was a town she had never visited. She called her office, explained the situation and moved the meeting to the afternoon. She spent two hours in a small town she would never have chosen, drank tea in a garden and took the next train back. She still says it was the best morning of that month.",
+      "glossary": [
+        { "w": "route", "tr": "güzergâh" },
+        { "w": "platform", "tr": "peron" },
+        { "w": "unfamiliar", "tr": "yabancı, tanıdık olmayan" },
+        { "w": "panic", "tr": "panik" },
+        { "w": "reaction", "tr": "tepki" },
+        { "w": "drank", "tr": "içti" }
+      ],
+      "questions": [
+        { "q": "Why did Derya get on the wrong train?", "options": ["The platform numbers had changed", "She arrived late", "She was reading", "The train was early"], "answer": 0, "note": "\"The station had changed the platform numbers because of repair work.\"" },
+        { "q": "How did she notice the mistake?", "options": ["The fields looked unfamiliar", "Someone told her", "She checked her ticket", "The train stopped"], "answer": 0, "note": "\"The fields outside the window were unfamiliar.\"" },
+        { "q": "What was her first reaction?", "options": ["Panic", "Laughter", "Anger", "Excitement"], "answer": 0, "note": "\"Her first reaction was panic.\"" },
+        { "q": "What did she do about the meeting?", "options": ["She moved it to the afternoon", "She gave it to someone else", "She joined by phone", "She joined from the station"], "answer": 0, "note": "\"She moved the meeting to the afternoon.\"" },
+        { "q": "How does she feel about that day now?", "options": ["It was the best morning of the month", "She was embarrassed", "She missed her meeting", "She never travels by train"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-08",
+      "level": "B1",
+      "order": 8,
+      "kind": "reading",
+      "title": "Ucuz uçak bileti",
+      "titleEn": "The Cheap Flight",
+      "minutes": 4,
+      "names": [],
+      "text": "A ticket that costs twenty euros looks like a gift, but the final price is often three times higher. Low-cost airlines usually sell the seat and nothing else. A bag in the hold costs extra, choosing where you sit costs extra, and printing your ticket at the airport may cost more than the seat itself. The flight may also leave from a smaller airport an hour outside the city, so the bus adds both money and time. None of this is hidden: it is written on the website, usually in small letters at the bottom of the page. The airlines rely on the fact that most passengers compare only the first number they see. Travelers who read carefully and take one small bag can still fly very cheaply. The rest pay for their hurry.",
+      "glossary": [
+        { "w": "airlines", "tr": "havayolu şirketleri" },
+        { "w": "hold", "tr": "uçağın bagaj bölümü" },
+        { "w": "passengers", "tr": "yolcular" },
+        { "w": "compare", "tr": "karşılaştırmak" },
+        { "w": "rely", "tr": "güvenmek, bel bağlamak" }
+      ],
+      "questions": [
+        { "q": "What do low-cost airlines usually sell?", "options": ["The seat and nothing else", "A full service", "Only return tickets", "Seats with bags included"], "answer": 0, "note": "\"Low-cost airlines usually sell the seat and nothing else.\"" },
+        { "q": "What may cost more than the seat itself?", "options": ["Printing the ticket at the airport", "Food on board", "The return flight", "A window seat"], "answer": 0, "note": "\"Printing your ticket at the airport may cost more than the seat itself.\"" },
+        { "q": "Why can the airport be a problem?", "options": ["It may be an hour outside the city", "It is always closed", "It has no buses", "It is too large"], "answer": 0, "note": "\"An hour outside the city, so the bus adds both money and time.\"" },
+        { "q": "Is the extra cost hidden?", "options": ["No, it is on the website in small letters", "Yes, completely", "Only for some airlines", "Only at the airport"], "answer": 0, "note": "\"None of this is hidden: it is written on the website.\"" },
+        { "q": "Who can still fly cheaply?", "options": ["People who read carefully and take one small bag", "People who book late", "People who fly often", "Nobody"], "answer": 0, "note": "Son iki cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-09",
+      "level": "B1",
+      "order": 9,
+      "kind": "reading",
+      "title": "Gönüllü öğretmen",
+      "titleEn": "The Volunteer Teacher",
+      "minutes": 4,
+      "names": ["Nazli"],
+      "text": "Every Tuesday evening Nazli teaches English to a group of eight adults in a community center. None of them pays anything, and she receives no money either. Her students are between nineteen and sixty-two years old; some want a better job, one is preparing to visit his son abroad, and one simply enjoys the exercise. The lessons are harder than Nazli expected. In a school the students share the same age and the same starting point, but here one man can read well and cannot speak, while a woman next to him understands everything and writes nothing. Nazli has learned to give different tasks to different people in the same hour. She says she has become a better teacher in that room than in any course she ever attended, because there is nowhere to hide: if a lesson is boring, people simply do not come back next week.",
+      "glossary": [
+        { "w": "volunteer", "tr": "gönüllü" },
+        { "w": "community", "tr": "topluluk" },
+        { "w": "abroad", "tr": "yurt dışı" },
+        { "w": "tasks", "tr": "görevler" },
+        { "w": "attended", "tr": "katıldı" }
+      ],
+      "questions": [
+        { "q": "How much do the students pay?", "options": ["Nothing", "A small fee", "Only for materials", "It depends on their age"], "answer": 0, "note": "\"None of them pays anything.\"" },
+        { "q": "Why is one man learning English?", "options": ["To visit his son abroad", "To find a job", "To help his wife", "For the exercise"], "answer": 0, "note": "\"One is preparing to visit his son abroad.\"" },
+        { "q": "What makes the class difficult?", "options": ["The students have very different abilities", "The room is small", "There are too many students", "The lessons are too short"], "answer": 0, "note": "Biri iyi okuyup konuşamıyor, diğeri anlıyor ama yazamıyor." },
+        { "q": "How has Nazli changed her teaching?", "options": ["She gives different tasks in the same hour", "She teaches more slowly", "She uses only Turkish", "She tests everybody weekly"], "answer": 0, "note": "\"Nazli has learned to give different tasks to different people.\"" },
+        { "q": "Why does she say there is nowhere to hide?", "options": ["If a lesson is boring, people do not come back", "The room has windows", "Her students are strict", "She is not paid"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-10",
+      "level": "B1",
+      "order": 10,
+      "kind": "reading",
+      "title": "Uykusuz sınav haftası",
+      "titleEn": "A Week Without Sleep",
+      "minutes": 4,
+      "names": ["Onur"],
+      "text": "Before his final exams Onur decided that sleep was a waste of time. For five nights he studied until four in the morning and got up at eight. At first he felt proud of himself. By Wednesday he noticed that he was reading the same paragraph three times without understanding it. In the exam on Friday he could remember dates and names, but he could not organize them into an answer. He passed, though with a much lower mark than he had expected. Afterwards he read about research on sleep and learned that the brain moves new information into long-term memory during the night. In other words, the hours he had taken from sleep were exactly the hours his memory needed. This year he is trying the opposite method: fewer hours of study, but seven hours of sleep. So far the results are better.",
+      "glossary": [
+        { "w": "exams", "tr": "sınavlar" },
+        { "w": "paragraph", "tr": "paragraf" },
+        { "w": "organize", "tr": "düzenlemek" },
+        { "w": "research", "tr": "araştırma" },
+        { "w": "memory", "tr": "hafıza" }
+      ],
+      "questions": [
+        { "q": "How long did Onur sleep during that week?", "options": ["About four hours", "Seven hours", "He did not sleep", "Eight hours"], "answer": 0, "note": "Dörtte yatıp sekizde kalkıyordu." },
+        { "q": "What did he notice by Wednesday?", "options": ["He was reading the same paragraph again and again", "He was ill", "He had finished everything", "He felt stronger"], "answer": 0, "note": "\"He was reading the same paragraph three times without understanding it.\"" },
+        { "q": "What was his problem in the exam?", "options": ["He could not organize what he remembered", "He forgot everything", "He arrived late", "He ran out of time"], "answer": 0, "note": "\"He could not organize them into an answer.\"" },
+        { "q": "What does the brain do during sleep?", "options": ["It moves new information into long-term memory", "It rests completely", "It forgets details", "It repeats the day"], "answer": 0, "note": "\"The brain moves new information into long-term memory during the night.\"" },
+        { "q": "What is Onur doing this year?", "options": ["Studying less and sleeping seven hours", "Studying more", "Taking the exam again", "Using the same method"], "answer": 0, "note": "\"Fewer hours of study, but seven hours of sleep.\"" }
+      ]
+    }
+  ]
+}

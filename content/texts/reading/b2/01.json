@@ -1,0 +1,143 @@
+{
+  "_meta": { "batch": "b2-reading-01", "level": "B2", "range": "Parça 1-5" },
+  "items": [
+    {
+      "id": "b2-r-01",
+      "level": "B2",
+      "order": 1,
+      "kind": "reading",
+      "title": "Uzaktan çalışmanın ikinci perdesi",
+      "titleEn": "The Second Act of Remote Work",
+      "minutes": 5,
+      "names": [],
+      "text": "When offices closed in 2020, remote work was presented as a straightforward victory: no commute, fewer interruptions, more autonomy. Five years later the picture is considerably more complicated. Productivity data from large firms suggests that individual output often rose, particularly for tasks that can be completed alone. What fell was something harder to measure. Junior employees, who once learned by overhearing experienced colleagues solve problems, reported that they had no idea how decisions were actually made. Informal knowledge, the kind that never appears in a manual, stopped circulating. Several companies responded by requiring three days in the office, a compromise that satisfied almost nobody. Employees who had moved to cheaper cities felt betrayed; managers argued that a team which never meets eventually stops behaving like a team. The more thoughtful organizations have stopped asking how many days people should attend and started asking what an office is actually for. If it exists to provide a desk, it has already lost to the kitchen table. If it exists to make collaboration and learning visible, then the question becomes which specific activities deserve the journey. That reframing is uncomfortable, because it requires managers to justify their own routines rather than simply reinstate them.",
+      "glossary": [
+        { "w": "commute", "tr": "işe gidiş geliş" },
+        { "w": "autonomy", "tr": "özerklik" },
+        { "w": "compromise", "tr": "uzlaşma" },
+        { "w": "betrayed", "tr": "ihanete uğramış" },
+        { "w": "reframing", "tr": "yeniden çerçeveleme" },
+        { "w": "reinstate", "tr": "eski hâline döndürmek" },
+        { "w": "collaboration", "tr": "iş birliği" },
+        { "w": "circulating", "tr": "dolaşımda olmak" }
+      ],
+      "questions": [
+        { "q": "What does the data suggest about individual output?", "options": ["It often rose", "It fell sharply", "It stayed identical", "It could not be measured"], "answer": 0, "note": "\"Individual output often rose, particularly for tasks that can be completed alone.\"" },
+        { "q": "What did junior employees lose?", "options": ["Informal knowledge about how decisions are made", "Access to software", "Their salaries", "Contact with clients"], "answer": 0, "note": "\"They had no idea how decisions were actually made.\"" },
+        { "q": "How did employees react to the three-day rule?", "options": ["Those who had moved away felt betrayed", "They welcomed it", "They ignored it", "They asked for five days"], "answer": 0, "note": "\"Employees who had moved to cheaper cities felt betrayed.\"" },
+        { "q": "What better question does the text propose?", "options": ["What an office is actually for", "How many days are required", "Which cities are cheapest", "How to measure output"], "answer": 0, "note": "\"Started asking what an office is actually for.\"" },
+        { "q": "Why is that question uncomfortable for managers?", "options": ["They must justify their own routines", "It costs money", "It takes too long", "Employees dislike it"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b2-r-02",
+      "level": "B2",
+      "order": 2,
+      "kind": "reading",
+      "title": "Restoran eleştirisinin sonu",
+      "titleEn": "The End of the Restaurant Critic",
+      "minutes": 5,
+      "names": [],
+      "text": "For most of the twentieth century a single newspaper critic could determine whether a restaurant survived its first year. The critic visited anonymously, paid for the meal and published a judgment that carried the authority of the newspaper behind it. That arrangement has quietly collapsed. Today a restaurant is judged by thousands of customers who photograph every dish before eating it, and the average of their opinions appears on a map before anyone has finished dessert. The change is genuinely democratic, but it has consequences that are rarely discussed. Because a single angry review can lower a score noticeably, owners have strong incentives to avoid anything that might divide opinion. Unusual dishes, uncomfortable chairs and challenging flavors are quietly removed. What survives is what nobody objects to. Some chefs have adapted by designing food that photographs well, which is not the same as food that tastes good. A number of critics argue that their profession still matters precisely because it is not an average: one informed voice, willing to be wrong in public, can defend a difficult restaurant that a crowd would punish. Whether readers still want that voice is a separate question, and the evidence is not encouraging.",
+      "glossary": [
+        { "w": "critic", "tr": "eleştirmen" },
+        { "w": "anonymously", "tr": "kimliğini gizleyerek" },
+        { "w": "incentives", "tr": "teşvikler" },
+        { "w": "objects", "tr": "itiraz etmek" },
+        { "w": "flavors", "tr": "tatlar" },
+        { "w": "evidence", "tr": "kanıt" },
+        { "w": "divisive", "tr": "bölücü, ayrıştırıcı" }
+      ],
+      "questions": [
+        { "q": "What could a newspaper critic once determine?", "options": ["Whether a restaurant survived its first year", "The price of a meal", "Who was allowed to cook", "The opening hours"], "answer": 0, "note": "İlk cümle." },
+        { "q": "What is the consequence of many small reviews?", "options": ["Owners avoid anything divisive", "Prices fall", "Restaurants close faster", "Critics earn more"], "answer": 0, "note": "\"Owners have strong incentives to avoid anything that might divide opinion.\"" },
+        { "q": "What does the text say survives?", "options": ["What nobody objects to", "The most expensive food", "Traditional dishes", "Small restaurants"], "answer": 0, "note": "\"What survives is what nobody objects to.\"" },
+        { "q": "How have some chefs adapted?", "options": ["By designing food that photographs well", "By lowering prices", "By refusing reviews", "By cooking more slowly"], "answer": 0, "note": "\"Designing food that photographs well.\"" },
+        { "q": "Why do critics argue their work still matters?", "options": ["One informed voice is not an average", "They are cheaper", "They eat more often", "Readers trust newspapers"], "answer": 0, "note": "\"Precisely because it is not an average.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-03",
+      "level": "B2",
+      "order": 3,
+      "kind": "reading",
+      "title": "Deprem sonrası bir kasaba",
+      "titleEn": "A Town After the Earthquake",
+      "minutes": 5,
+      "names": ["Demirkoy"],
+      "text": "Three years after the earthquake, the town of Demirkoy has been rebuilt, and the result satisfies almost nobody. The new houses are safer than anything that stood before; engineers inspected every foundation and the standards applied were unusually strict. Yet the population has fallen by a third. Families who lost their homes were housed temporarily in a city ninety kilometers away, and by the time the new buildings were ready, many of their children had started school there and their parents had found work. Returning would have meant a second disruption, this time voluntary. Those who did come back complain less about the buildings than about the arrangement of the streets. The old town had narrow lanes where neighbors met by accident; the new plan has wide roads designed for emergency vehicles, and people now drive past one another. The municipality points out, reasonably, that those wide roads exist because ambulances could not reach the old center. Nobody disputes the logic. The difficulty is that safety was measurable and community was not, so one of them shaped the plan and the other did not.",
+      "glossary": [
+        { "w": "foundation", "tr": "temel" },
+        { "w": "temporarily", "tr": "geçici olarak" },
+        { "w": "disruption", "tr": "altüst oluş" },
+        { "w": "municipality", "tr": "belediye" },
+        { "w": "disputes", "tr": "itiraz etmek" },
+        { "w": "lanes", "tr": "dar sokaklar" },
+        { "w": "voluntary", "tr": "gönüllü, isteğe bağlı" }
+      ],
+      "questions": [
+        { "q": "What is true about the new houses?", "options": ["They are safer than the old ones", "They were built quickly", "They are cheaper", "They are smaller"], "answer": 0, "note": "\"The new houses are safer than anything that stood before.\"" },
+        { "q": "Why did many families not return?", "options": ["Their children had started school elsewhere", "The new houses were too expensive", "They disliked the design", "They were not allowed"], "answer": 0, "note": "Çocuklar orada okula başlamış, ebeveynler iş bulmuştu." },
+        { "q": "What do returning residents complain about most?", "options": ["The arrangement of the streets", "The quality of the buildings", "The cost of living", "The distance to the city"], "answer": 0, "note": "\"They complain less about the buildings than about the arrangement of the streets.\"" },
+        { "q": "Why are the new roads wide?", "options": ["So emergency vehicles can pass", "To reduce traffic", "For new shops", "Because land was cheap"], "answer": 0, "note": "\"Ambulances could not reach the old center.\"" },
+        { "q": "What is the central difficulty in the final sentence?", "options": ["Safety could be measured and community could not", "Nobody planned the town", "The engineers were wrong", "There was no money"], "answer": 0, "note": "Ölçülebilen plana yön verdi, ölçülemeyen vermedi." }
+      ]
+    },
+    {
+      "id": "b2-r-04",
+      "level": "B2",
+      "order": 4,
+      "kind": "reading",
+      "title": "Ücretsiz staj tartışması",
+      "titleEn": "The Unpaid Internship Debate",
+      "minutes": 5,
+      "names": [],
+      "text": "Defenders of unpaid internships usually make a reasonable-sounding argument: the student gains experience, the company takes a risk on somebody untested, and no money changes hands in either direction. The difficulty becomes obvious as soon as you ask who can accept such an offer. A student whose family can cover three months of rent in an expensive city can afford to work for nothing. A student who supports a younger sibling cannot, regardless of ability. Over time, entire professions become filled with people who were able to work without payment at twenty-two, which is a poor method of selecting talent and an efficient method of reproducing privilege. Some countries have responded with regulation, requiring that any internship lasting more than a few weeks must be paid at least the minimum wage. Employers warned that the number of opportunities would collapse. In practice the number fell modestly and the quality improved, because a company that must pay an intern has an incentive to give that intern real work rather than photocopying. The remaining problem is enforcement: in sectors where competition for entry is fierce, students rarely complain, and a rule that nobody reports is close to no rule at all.",
+      "glossary": [
+        { "w": "internships", "tr": "stajlar" },
+        { "w": "sibling", "tr": "kardeş" },
+        { "w": "privilege", "tr": "ayrıcalık" },
+        { "w": "regulation", "tr": "düzenleme" },
+        { "w": "enforcement", "tr": "uygulama, denetim" },
+        { "w": "fierce", "tr": "çetin, kıyasıya" },
+        { "w": "internship", "tr": "staj" },
+        { "w": "intern", "tr": "stajyer" },
+        { "w": "breaches", "tr": "ihlaller" }
+      ],
+      "questions": [
+        { "q": "What is the argument of defenders?", "options": ["Experience is exchanged for a risk, with no money either way", "Interns work harder", "Companies save money", "Students prefer it"], "answer": 0, "note": "İlk cümle." },
+        { "q": "Which student cannot accept an unpaid offer?", "options": ["One who supports a younger sibling", "One who lives at home", "One with high marks", "One from a large city"], "answer": 0, "note": "\"A student who supports a younger sibling cannot, regardless of ability.\"" },
+        { "q": "What does the practice reproduce, according to the text?", "options": ["Privilege", "Talent", "Competition", "Experience"], "answer": 0, "note": "\"An efficient method of reproducing privilege.\"" },
+        { "q": "What actually happened after regulation?", "options": ["Numbers fell modestly and quality improved", "Opportunities collapsed", "Nothing changed", "Companies left the country"], "answer": 0, "note": "\"The number fell modestly and the quality improved.\"" },
+        { "q": "What is the remaining problem?", "options": ["Students rarely report breaches", "The wage is too low", "Companies cannot pay", "Universities object"], "answer": 0, "note": "\"A rule that nobody reports is close to no rule at all.\"" }
+      ]
+    },
+    {
+      "id": "b2-r-05",
+      "level": "B2",
+      "order": 5,
+      "kind": "reading",
+      "title": "Kaybolan el yazısı",
+      "titleEn": "The Disappearance of Handwriting",
+      "minutes": 5,
+      "names": [],
+      "text": "Several education systems have quietly reduced the time devoted to handwriting, on the grounds that children will spend their working lives typing. The reasoning is practical and, on the surface, difficult to argue with. Research on how writing affects memory, however, complicates the picture. In a series of studies, students who took notes by hand performed better on questions requiring understanding than students who typed, even though the typists recorded considerably more words. The explanation offered is that handwriting is slow. Because you cannot possibly record everything, you are forced to decide what matters, and that decision is itself a form of learning. Typing, being fast enough to capture a lecture almost verbatim, allows the listener to postpone thinking indefinitely. None of this proves that handwriting should be protected at all costs; the studies involved small groups, and a skilled typist who summarizes rather than transcribes may well do better than either. But it does suggest that the choice is not merely about speed, and that a curriculum which treats writing purely as a technology for storing words may be removing something it never intended to touch.",
+      "glossary": [
+        { "w": "handwriting", "tr": "el yazısı" },
+        { "w": "devoted", "tr": "ayrılan" },
+        { "w": "verbatim", "tr": "kelimesi kelimesine" },
+        { "w": "postpone", "tr": "ertelemek" },
+        { "w": "transcribes", "tr": "olduğu gibi yazar" },
+        { "w": "curriculum", "tr": "müfredat" },
+        { "w": "curricula", "tr": "müfredatlar" }
+      ],
+      "questions": [
+        { "q": "Why have some systems reduced handwriting lessons?", "options": ["Children will spend their working lives typing", "Teachers asked for it", "It is too expensive", "Pupils dislike it"], "answer": 0, "note": "İlk cümle." },
+        { "q": "What did the studies find?", "options": ["Hand-writers did better on understanding", "Typists remembered more", "There was no difference", "Typists wrote fewer words"], "answer": 0, "note": "\"Students who took notes by hand performed better on questions requiring understanding.\"" },
+        { "q": "What explanation is offered?", "options": ["Slowness forces you to decide what matters", "Pens are more comfortable", "Screens tire the eyes", "Typing is noisy"], "answer": 0, "note": "\"Because you cannot possibly record everything, you are forced to decide what matters.\"" },
+        { "q": "What limitation does the text admit?", "options": ["The studies involved small groups", "The results were invented", "Nobody repeated them", "Only adults were tested"], "answer": 0, "note": "\"The studies involved small groups.\"" },
+        { "q": "What is the author's final point?", "options": ["The choice is not merely about speed", "Handwriting must be protected at all costs", "Typing should be banned", "Curricula are always wrong"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

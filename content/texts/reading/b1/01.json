@@ -1,0 +1,129 @@
+{
+  "_meta": { "batch": "b1-reading-01", "level": "B1", "range": "Parça 1-5" },
+  "items": [
+    {
+      "id": "b1-r-01",
+      "level": "B1",
+      "order": 1,
+      "kind": "reading",
+      "title": "Dört günlük hafta",
+      "titleEn": "The Four-Day Week",
+      "minutes": 4,
+      "names": ["Kerem"],
+      "text": "Two years ago a small software company in Izmir tried an experiment. Instead of working five days a week, the staff would work four, but they would receive the same salary. The owner, Kerem, expected that the company would produce less. In fact, after six months the results were better than before. Meetings became shorter because nobody wanted to waste a morning. Employees stopped answering emails during dinner. The number of sick days fell by almost half. However, the change did not suit everybody. Two members of the team said they felt under pressure to finish the same amount of work in less time, and one of them eventually left. Kerem admits that the system works well for his company because the work can be measured easily. He is less sure that a hospital or a school could do the same thing. \"We did not become lazy,\" he says. \"We became careful about where our hours go.\"",
+      "glossary": [
+        { "w": "experiment", "tr": "deney" },
+        { "w": "salary", "tr": "maaş" },
+        { "w": "employees", "tr": "çalışanlar" },
+        { "w": "eventually", "tr": "sonunda" },
+        { "w": "measured", "tr": "ölçülmek" }
+      ],
+      "questions": [
+        { "q": "What did Kerem expect before the experiment?", "options": ["That the company would produce less", "That staff would be happier", "That costs would rise", "That nobody would agree"], "answer": 0, "note": "\"The owner expected that the company would produce less.\"" },
+        { "q": "Why did meetings become shorter?", "options": ["Nobody wanted to waste a morning", "There were fewer people", "The rooms were smaller", "The manager stopped them"], "answer": 0, "note": "\"Meetings became shorter because nobody wanted to waste a morning.\"" },
+        { "q": "What problem did two employees report?", "options": ["Pressure to do the same work in less time", "Lower pay", "Too many meetings", "Longer journeys"], "answer": 0, "note": "\"They felt under pressure to finish the same amount of work in less time.\"" },
+        { "q": "Why does Kerem doubt the system would suit a hospital?", "options": ["That kind of work is harder to measure", "Hospitals are bigger", "Doctors earn more", "Patients would complain"], "answer": 0, "note": "İşin kolayca ölçülebilmesi onun şirketinde işe yaramasının nedeni." },
+        { "q": "What does Kerem's final sentence mean?", "options": ["They used their time more carefully", "They worked less hard", "They became tired", "They stopped caring"], "answer": 0, "note": "\"We became careful about where our hours go.\"" }
+      ]
+    },
+    {
+      "id": "b1-r-02",
+      "level": "B1",
+      "order": 2,
+      "kind": "reading",
+      "title": "İkinci el mağazası",
+      "titleEn": "The Second-Hand Shop",
+      "minutes": 4,
+      "names": ["Meltem"],
+      "text": "When Meltem opened a second-hand clothes shop in her neighborhood, several friends warned her that nobody would buy used clothes. At the beginning they seemed to be right. For three months she sold almost nothing, and she began to think about closing. Then she changed two things. First, she cleaned and repaired every item before putting it on the shelf, so the clothes no longer looked old. Second, she wrote a small card for each piece: where it came from, and what could be worn with it. Customers started to stay longer and to talk to her. Within a year the shop had regular visitors who came every Saturday. Meltem believes the real product is not the clothing. People come because the shop feels personal, and because they like the idea that something useful is not thrown away.",
+      "glossary": [
+        { "w": "second-hand", "tr": "ikinci el" },
+        { "w": "warned", "tr": "uyardılar" },
+        { "w": "repaired", "tr": "onardı" },
+        { "w": "regular", "tr": "düzenli" },
+        { "w": "customers", "tr": "müşteriler" }
+      ],
+      "questions": [
+        { "q": "What did her friends think?", "options": ["Nobody would buy used clothes", "The shop was too small", "The rent was too high", "She should sell new clothes"], "answer": 0, "note": "\"Several friends warned her that nobody would buy used clothes.\"" },
+        { "q": "What happened in the first three months?", "options": ["She sold almost nothing", "The shop was full", "She hired staff", "She was ready to close"], "answer": 0, "note": "\"For three months she sold almost nothing.\"" },
+        { "q": "What was the first change she made?", "options": ["She cleaned and repaired the clothes", "She made the prices cheaper", "She moved the shop", "She sold online"], "answer": 0, "note": "\"She cleaned and repaired every item.\"" },
+        { "q": "What was written on the cards?", "options": ["Where the item came from", "The price only", "The owner's name", "Washing instructions"], "answer": 0, "note": "\"Where it came from, and what could be worn with it.\"" },
+        { "q": "What does Meltem think the real product is?", "options": ["The feeling of the shop", "Cheap clothing", "Repair work", "Advertising"], "answer": 0, "note": "İnsanlar mağaza kişisel hissettirdiği için geliyor." }
+      ]
+    },
+    {
+      "id": "b1-r-03",
+      "level": "B1",
+      "order": 3,
+      "kind": "reading",
+      "title": "Gece vardiyası",
+      "titleEn": "The Night Shift",
+      "minutes": 4,
+      "names": ["Sinan"],
+      "text": "Sinan has worked at a petrol station at night for four years. He starts at eleven in the evening and finishes at seven in the morning. Most people imagine that a night shift is quiet, and for much of the time it is. Between two and five o'clock he may serve only ten or twelve drivers. But those hours are also strange. Drivers who stop at three in the morning often want to talk, and Sinan has heard hundreds of stories: a man driving to a hospital in another city, a woman leaving her job, a family who had been traveling for eleven hours. The difficult part is not the work itself but the return home. While the rest of the city is beginning its day, Sinan closes the curtains and tries to sleep. He says he has never really got used to it, and he plans to change jobs when his daughter starts school.",
+      "glossary": [
+        { "w": "shift", "tr": "vardiya" },
+        { "w": "petrol station", "tr": "benzin istasyonu" },
+        { "w": "curtains", "tr": "perdeler" },
+        { "w": "imagine", "tr": "hayal etmek, sanmak" }
+      ],
+      "questions": [
+        { "q": "When does Sinan's shift end?", "options": ["At seven in the morning", "At eleven at night", "At five o'clock", "At three in the morning"], "answer": 0, "note": "\"He starts at eleven in the evening and finishes at seven in the morning.\"" },
+        { "q": "How many drivers may he serve between two and five?", "options": ["Ten or twelve", "Fifty", "None", "About thirty"], "answer": 0, "note": "\"He may serve only ten or twelve drivers.\"" },
+        { "q": "What do late-night drivers often want?", "options": ["To talk", "To sleep", "To complain", "To pay by card"], "answer": 0, "note": "\"Drivers who stop at three in the morning often want to talk.\"" },
+        { "q": "What does Sinan find most difficult?", "options": ["Sleeping after the shift", "Serving customers", "The cold", "The journey to work"], "answer": 0, "note": "\"The difficult part is not the work itself but the return home.\"" },
+        { "q": "When does he plan to change jobs?", "options": ["When his daughter starts school", "Next year", "After four years", "When he saves enough money"], "answer": 0, "note": "\"He plans to change jobs when his daughter starts school.\"" }
+      ]
+    },
+    {
+      "id": "b1-r-04",
+      "level": "B1",
+      "order": 4,
+      "kind": "reading",
+      "title": "Şehirdeki ağaçlar",
+      "titleEn": "Trees in the City",
+      "minutes": 4,
+      "names": [],
+      "text": "Most people agree that trees make a city more pleasant, but few realize how much practical work they do. On a hot afternoon the temperature under a large tree can be several degrees lower than on the pavement beside it. Trees also hold water when it rains heavily, which reduces the pressure on drains, and their leaves catch dust from traffic. A recent study in three European cities found that streets with trees had fewer complaints about noise, even though the trees did not actually block much sound. The explanation appears to be psychological: people who can see green report that they feel calmer. However, planting trees is not simple. A young tree in a narrow street needs regular water for at least three years, and roots can damage old pipes. Cities that plant trees without planning often lose most of them within a decade.",
+      "glossary": [
+        { "w": "pavement", "tr": "kaldırım" },
+        { "w": "drains", "tr": "kanalizasyon, gider" },
+        { "w": "psychological", "tr": "psikolojik" },
+        { "w": "roots", "tr": "kökler" },
+        { "w": "decade", "tr": "on yıl" }
+      ],
+      "questions": [
+        { "q": "What happens to the temperature under a large tree?", "options": ["It is several degrees lower", "It stays the same", "It rises", "It changes only at night"], "answer": 0, "note": "\"The temperature under a large tree can be several degrees lower.\"" },
+        { "q": "Why do trees help when it rains heavily?", "options": ["They hold water and reduce pressure on drains", "They stop the rain", "They clean the water", "They protect the roads"], "answer": 0, "note": "\"Trees also hold water when it rains heavily.\"" },
+        { "q": "What did the study find about noise?", "options": ["Streets with trees had fewer complaints", "Trees blocked most sound", "Noise increased", "There was no difference"], "answer": 0, "note": "\"Streets with trees had fewer complaints about noise.\"" },
+        { "q": "How does the text explain the noise result?", "options": ["Seeing green makes people feel calmer", "Trees absorb sound", "The streets were quieter anyway", "People move away"], "answer": 0, "note": "\"The explanation appears to be psychological.\"" },
+        { "q": "What problem can roots cause?", "options": ["Damage to old pipes", "Less shade", "More dust", "Higher temperatures"], "answer": 0, "note": "\"Roots can damage old pipes.\"" }
+      ]
+    },
+    {
+      "id": "b1-r-05",
+      "level": "B1",
+      "order": 5,
+      "kind": "reading",
+      "title": "Yanlış anlaşılan e-posta",
+      "titleEn": "The Email That Was Misunderstood",
+      "minutes": 4,
+      "names": ["Gizem", "Ahmet"],
+      "text": "Gizem sent her colleague Ahmet a short message: \"We need to talk about the report.\" She wrote it quickly between two meetings and thought nothing more about it. Ahmet read the message at nine in the evening. Because it was short and gave no reason, he assumed that something was seriously wrong. He spent most of the night checking his work and preparing an explanation. The next morning he arrived early, pale and nervous, and asked Gizem which part of the report had failed. Gizem was surprised: she had only wanted to move a deadline. Since then their team has agreed on a simple rule. If a message might worry somebody, the writer must add one sentence explaining why. It costs ten seconds and it has saved several evenings.",
+      "glossary": [
+        { "w": "assumed", "tr": "varsaydı" },
+        { "w": "seriously", "tr": "ciddi biçimde" },
+        { "w": "pale", "tr": "solgun" },
+        { "w": "deadline", "tr": "teslim tarihi" },
+        { "w": "colleague", "tr": "iş arkadaşı" }
+      ],
+      "questions": [
+        { "q": "Why did Gizem write a short message?", "options": ["She was busy between meetings", "She was angry", "She wanted a quick reply", "She was in a hurry to leave"], "answer": 0, "note": "\"She wrote it quickly between two meetings.\"" },
+        { "q": "What did Ahmet think the message meant?", "options": ["Something was seriously wrong", "The report was finished", "He would be promoted", "A meeting was moved"], "answer": 0, "note": "\"He assumed that something was seriously wrong.\"" },
+        { "q": "What did Ahmet do that night?", "options": ["He checked his work", "He slept badly but did nothing", "He called Gizem", "He wrote a reply"], "answer": 0, "note": "\"He spent most of the night checking his work.\"" },
+        { "q": "What did Gizem actually want?", "options": ["To move a deadline", "To correct a mistake", "To praise him", "To cancel the report"], "answer": 0, "note": "\"She had only wanted to move a deadline.\"" },
+        { "q": "What rule did the team agree on?", "options": ["Explain why in one sentence", "Never write short messages", "Only speak face to face", "Send messages in the morning"], "answer": 0, "note": "\"The writer must add one sentence explaining why.\"" }
+      ]
+    }
+  ]
+}

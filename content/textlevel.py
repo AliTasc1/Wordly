@@ -68,6 +68,13 @@ BRITISH = {
     "flavour": "flavor", "harbour": "harbor", "rumour": "rumor",
     "analyse": "analyze", "cancelled": "canceled", "modelling": "modeling",
     "aeroplane": "airplane", "maths": "math", "storey": "story",
+    "judgement": "judgment", "kilometres": "kilometers", "kilometre": "kilometer",
+    "summarise": "summarize", "summarises": "summarizes", "criticise": "criticize",
+    "emphasise": "emphasize", "specialise": "specialize", "civilisation": "civilization",
+    "favourites": "favorites", "colours": "colors", "neighbours": "neighbors",
+    "behaviours": "behaviors", "labelled": "labeled", "traveller": "traveler",
+    "travellers": "travelers", "fulfil": "fulfill", "enrol": "enroll",
+    "sceptical": "skeptical", "aluminium": "aluminum", "pyjamas": "pajamas",
 }
 
 # Düzenli ek soyma bunları bulamaz.
@@ -82,6 +89,24 @@ IRREGULAR = {
     "bought": "buy", "caught": "catch", "taught": "teach", "sent": "send",
     "spent": "spend", "built": "build", "lost": "lose", "won": "win",
     "met": "meet", "paid": "pay", "sat": "sit", "stood": "stand",
+    "began": "begin", "begun": "begin", "drank": "drink", "drunk": "drink",
+    "sunk": "sink", "sprung": "spring", "swum": "swim", "shrunk": "shrink", "meant": "mean", "sought": "seek",
+    "dealt": "deal", "bent": "bend", "bound": "bind", "bit": "bite",
+    "bled": "bleed", "bred": "breed", "burnt": "burn", "clung": "cling",
+    "crept": "creep", "fled": "flee", "flung": "fling", "forbade": "forbid",
+    "forgave": "forgive", "froze": "freeze", "frozen": "freeze",
+    "ground": "grind", "hung": "hang", "knelt": "kneel", "leant": "lean",
+    "leapt": "leap", "learnt": "learn", "lent": "lend", "lit": "light",
+    "misled": "mislead", "mistook": "mistake", "overcame": "overcome",
+    "shone": "shine", "shrank": "shrink", "sank": "sink", "slid": "slide",
+    "smelt": "smell", "sowed": "sow", "spelt": "spell", "spilt": "spill",
+    "spun": "spin", "spoilt": "spoil", "sprang": "spring", "stuck": "stick",
+    "stung": "sting", "strode": "stride", "struck": "strike",
+    "strove": "strive", "swore": "swear", "swept": "sweep", "swelled": "swell",
+    "swung": "swing", "tore": "tear", "torn": "tear", "trod": "tread",
+    "wept": "weep", "wound": "wind", "withdrew": "withdraw",
+    "withheld": "withhold", "wrung": "wring", "arose": "arise",
+    "awoke": "awake", "bore": "bear", "borne": "bear",
     "understood": "understand", "wrote": "write", "written": "write",
     "spoke": "speak", "spoken": "speak", "broke": "break", "broken": "break",
     "chose": "choose", "chosen": "choose", "drove": "drive", "driven": "drive",
@@ -179,22 +204,34 @@ def load_levels() -> dict[str, str]:
     return levels
 
 
-def candidates(token: str) -> list[str]:
-    """Bir kelimenin olabilecek yalın biçimleri.
+# Çekim ekleri kelimeyi değiştirmez, türetme ekleri yeni kelime yapar. Yine de
+# kökü bilen öğrenci türevi çözebilir: `slow` biliniyorsa `slowness`, `measure`
+# biliniyorsa `measurable` okunabilir. Bunları "bilinmeyen kelime" saymak
+# denetimi gereksiz gürültüyle doldurup asıl seviye ihlallerini gizliyordu.
+DERIVATION = [
+    ("ness", [""]),
+    ("ably", ["able", ""]),
+    ("ibly", ["ible", ""]),
+    ("able", ["", "e"]),
+    ("ible", ["", "e"]),
+    ("ity", ["e", "", "y"]),
+    ("ist", ["", "e"]),
+    ("ism", ["", "e"]),
+    ("ment", ["", "e"]),
+    ("ful", ["", "e"]),
+    ("less", [""]),
+    ("ish", ["", "e"]),
+    ("ive", ["", "e"]),
+    ("ation", ["e", ""]),
+    ("ally", ["", "al"]),
+]
 
-    Sıra önemsiz; hepsi denenip sözlükte bulunan ilk karşılık alınıyor. Amaç
-    dilbilimsel doğruluk değil, "bu kelime öğrenciye tanıdık mı" sorusuna
-    pratik bir cevap vermek.
-    """
-    forms = [token]
-    if token in IRREGULAR:
-        forms.append(IRREGULAR[token])
-    # Tireli birleşikte parçalar ayrı ayrı bilinebilir: twenty-three,
-    # well-known. Parçaların hepsi tanıdıksa kelime de tanıdık sayılır, o yüzden
-    # parçalar da aday listesine giriyor.
-    if "-" in token:
-        forms.extend(part for part in token.split("-") if part)
+PREFIXES = ("un", "re", "dis", "mis", "non", "over", "under", "pre", "in")
 
+
+def strip_once(token: str) -> list[str]:
+    """Bir turluk ek ve ön ek soyma."""
+    forms = []
     for suffix, replacements in (
         ("ies", ["y"]),
         ("ied", ["y"]),
@@ -219,14 +256,44 @@ def candidates(token: str) -> list[str]:
         ("'re", [""]),
         ("'ve", [""]),
         ("'d", [""]),
+        *DERIVATION,
     ):
         if token.endswith(suffix) and len(token) > len(suffix) + 1:
             stem = token[: -len(suffix)]
-            for replacement in replacements:
-                forms.append(stem + replacement)
+            forms.extend(stem + replacement for replacement in replacements)
             # koşarak → running: son ünsüz ikizleşmiş olabilir
             if len(stem) > 2 and stem[-1] == stem[-2]:
                 forms.append(stem[:-1])
+
+    for prefix in PREFIXES:
+        if token.startswith(prefix) and len(token) > len(prefix) + 2:
+            forms.append(token[len(prefix):])
+    return forms
+
+
+def candidates(token: str) -> list[str]:
+    """Bir kelimenin olabilecek yalın biçimleri.
+
+    İki tur soyuluyor: `noticeably` tek turda `noticeab`a iner, ikinci turda
+    `notice`a. Sıra önemsiz; hepsi denenip en erken seviyeli karşılık alınıyor.
+    Amaç dilbilimsel doğruluk değil, "bu kelime öğrenciye tanıdık mı" sorusuna
+    pratik bir cevap vermek.
+    """
+    forms = [token]
+    if token in IRREGULAR:
+        forms.append(IRREGULAR[token])
+    # Tireli birleşikte parçalar ayrı ayrı bilinebilir: twenty-three,
+    # well-known. Parçaların hepsi tanıdıksa kelime de tanıdık sayılır, o yüzden
+    # parçalar da aday listesine giriyor.
+    if "-" in token:
+        forms.extend(part for part in token.split("-") if part)
+
+    first = strip_once(token)
+    forms.extend(first)
+    for form in first:
+        forms.extend(strip_once(form))
+        if form in IRREGULAR:
+            forms.append(IRREGULAR[form])
     return forms
 
 
@@ -245,13 +312,18 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
     for token in tokens:
         if token in FREE or token in names:
             continue
+        # Yazım denetimi sözlükçeden ÖNCE geliyor. Sonra gelseydi, yazar
+        # İngiliz yazımlı bir kelimeyi sözlükçeye eklediğinde yazım hatası
+        # görünmez olurdu — "flavours" tam olarak böyle bir kez kaçtı. Çekimli
+        # biçim de taranıyor ki "flavours" kadar "flavour" da yakalansın.
+        spelling = next((f for f in candidates(token) if f in BRITISH), None)
+        if spelling:
+            british[token] = BRITISH[spelling]
+            continue
         # Sözlükçe yalın biçimi veriyor (gym), metin çekimli kullanıyor (gyms).
         # Çekimli biçimi de tanınmış saymazsak yazar aynı kelimeyi sözlükçeye
         # iki kez yazmak zorunda kalır.
         if any(form in known for form in candidates(token)):
-            continue
-        if token in BRITISH:
-            british[token] = BRITISH[token]
             continue
         # Aday biçimlerin EN ERKEN seviyesi alınıyor, ilk bulunan değil.
         # "walking" sözlükte A2'de isim olarak da duruyor ama "walk" A1'de
