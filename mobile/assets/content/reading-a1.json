@@ -1,0 +1,323 @@
+[
+ {
+  "id": "a1-r-01",
+  "level": "A1",
+  "order": 1,
+  "kind": "reading",
+  "title": "Benim günüm",
+  "titleEn": "My Day",
+  "minutes": 2,
+  "names": [
+   "Deniz",
+   "Izmir"
+  ],
+  "text": "My name is Deniz. I am nineteen years old and I live in Izmir. I live with my mother, my father and my sister. Every morning I get up at seven o'clock. I drink tea and eat bread with cheese. Then I go to school by bus. My favorite lesson is English. I do not like math because it is difficult for me. After school I play football with my friends in the park. In the evening I help my mother in the kitchen. I go to bed at eleven o'clock.",
+  "textTr": "Benim adım Deniz. On dokuz yaşındayım ve İzmir'de yaşıyorum. Annem, babam ve kız kardeşimle birlikte yaşıyorum. Her sabah saat yedide kalkarım. Çay içerim ve peynirli ekmek yerim. Sonra okula otobüsle giderim. En sevdiğim ders İngilizce. Matematiği sevmem çünkü benim için zor. Okuldan sonra parkta arkadaşlarımla futbol oynarım. Akşamları mutfakta anneme yardım ederim. Saat on birde yatarım.",
+  "glossary": [],
+  "questions": [
+   {
+    "q": "How old is Deniz?",
+    "options": [
+     "Nineteen",
+     "Sixteen",
+     "Seven",
+     "Eleven"
+    ],
+    "answer": 0,
+    "note": "İlk cümlede geçiyor: \"I am nineteen years old.\""
+   },
+   {
+    "q": "How does Deniz go to school?",
+    "options": [
+     "By train",
+     "By car",
+     "By bus",
+     "By taxi"
+    ],
+    "answer": 2,
+    "note": "\"Then I go to school by bus.\""
+   },
+   {
+    "q": "Which lesson does Deniz not like?",
+    "options": [
+     "Math",
+     "English",
+     "Music",
+     "Sport"
+    ],
+    "answer": 0,
+    "note": "\"I do not like math because it is difficult.\""
+   },
+   {
+    "q": "What does Deniz do after school?",
+    "options": [
+     "He plays football",
+     "He works",
+     "He sleeps",
+     "He watches television"
+    ],
+    "answer": 0,
+    "note": "\"After school I play football with my friends.\""
+   },
+   {
+    "q": "Who does Deniz help in the evening?",
+    "options": [
+     "His teacher",
+     "His mother",
+     "His sister",
+     "His friend"
+    ],
+    "answer": 1,
+    "note": "\"In the evening I help my mother in the kitchen.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-02",
+  "level": "A1",
+  "order": 2,
+  "kind": "reading",
+  "title": "Küçük bir kafe",
+  "titleEn": "A Small Cafe",
+  "minutes": 2,
+  "names": [
+   "Ayse",
+   "Ankara"
+  ],
+  "text": "There is a small cafe near my house in Ankara. It opens at eight in the morning and closes at ten at night. The cafe is not big, but it is very clean and warm. My friend Ayse works there. She makes coffee and sells cakes. The coffee is not expensive and the cakes are delicious. On Saturday I go there with my brother. We sit near the window and read the newspaper. Sometimes we stay for two hours. The cafe is quiet in the morning but it is busy after five o'clock.",
+  "textTr": "Ankara'da evimin yakınında küçük bir kafe var. Sabah sekizde açılıyor, gece onda kapanıyor. Kafe büyük değil ama çok temiz ve sıcak. Arkadaşım Ayşe orada çalışıyor. Kahve yapıyor ve kek satıyor. Kahve pahalı değil, kekler de çok lezzetli. Cumartesi günü kardeşimle oraya giderim. Pencerenin yanına oturur, gazete okuruz. Bazen iki saat kalırız. Kafe sabahları sakin ama saat beşten sonra kalabalık oluyor.",
+  "glossary": [],
+  "questions": [
+   {
+    "q": "When does the cafe close?",
+    "options": [
+     "At two o'clock",
+     "At five o'clock",
+     "At eight in the morning",
+     "At ten at night"
+    ],
+    "answer": 3,
+    "note": "\"It opens at eight in the morning and closes at ten at night.\""
+   },
+   {
+    "q": "What does Ayse sell?",
+    "options": [
+     "Books",
+     "Flowers",
+     "Newspapers",
+     "Cakes"
+    ],
+    "answer": 3,
+    "note": "\"She makes coffee and sells cakes.\""
+   },
+   {
+    "q": "Where do they sit?",
+    "options": [
+     "Near the window",
+     "In the kitchen",
+     "Outside",
+     "Near the door"
+    ],
+    "answer": 0,
+    "note": "\"We sit near the window.\""
+   },
+   {
+    "q": "When is the cafe busy?",
+    "options": [
+     "In the morning",
+     "At eight",
+     "After five o'clock",
+     "On Saturday only"
+    ],
+    "answer": 2,
+    "note": "\"It is busy after five o'clock.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-03",
+  "level": "A1",
+  "order": 3,
+  "kind": "reading",
+  "title": "Yeni bir şehir",
+  "titleEn": "A New City",
+  "minutes": 2,
+  "names": [
+   "Mert",
+   "Bursa",
+   "Istanbul"
+  ],
+  "text": "Mert is twenty-three years old. Last month he moved from Bursa to Istanbul because he has a new job. He works in a bank from nine to five. His office is in a tall building near the sea. Mert lives in a small flat with two other men. The flat is not expensive but it is not near his office, so he takes the train every day. Istanbul is very big and sometimes he feels alone. But he likes his job and he has new friends now. Next summer his family will visit him.",
+  "textTr": "Mert yirmi üç yaşında. Geçen ay yeni bir işi olduğu için Bursa'dan İstanbul'a taşındı. Bir bankada dokuzdan beşe kadar çalışıyor. Ofisi denize yakın yüksek bir binada. Mert iki başka adamla küçük bir dairede yaşıyor. Daire pahalı değil ama ofisine yakın değil, o yüzden her gün trene biniyor. İstanbul çok büyük ve bazen kendini yalnız hissediyor. Ama işini seviyor ve artık yeni arkadaşları var. Gelecek yaz ailesi onu ziyaret edecek.",
+  "glossary": [],
+  "questions": [
+   {
+    "q": "Why did Mert move to Istanbul?",
+    "options": [
+     "Because of his family",
+     "Because of a new job",
+     "Because of the sea",
+     "Because of school"
+    ],
+    "answer": 1,
+    "note": "\"He moved ... because he has a new job.\""
+   },
+   {
+    "q": "Where is his office?",
+    "options": [
+     "Next to the train",
+     "In a small flat",
+     "In a tall building near the sea",
+     "In Bursa"
+    ],
+    "answer": 2,
+    "note": "\"His office is in a tall building near the sea.\""
+   },
+   {
+    "q": "How does Mert travel to work?",
+    "options": [
+     "By bus",
+     "By plane",
+     "By train",
+     "By car"
+    ],
+    "answer": 2,
+    "note": "\"He takes the train every day.\""
+   },
+   {
+    "q": "How does Mert sometimes feel?",
+    "options": [
+     "Angry",
+     "Tired",
+     "Afraid",
+     "Alone"
+    ],
+    "answer": 3,
+    "note": "\"Sometimes he feels alone.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-04",
+  "level": "A1",
+  "order": 4,
+  "kind": "reading",
+  "title": "Market listesi",
+  "titleEn": "The Shopping List",
+  "minutes": 2,
+  "names": [
+   "Elif"
+  ],
+  "text": "It is Sunday morning and Elif is in the supermarket. She has a list in her hand. She needs milk, eggs, rice and some apples. She also wants to buy fish for dinner, but the fish is very expensive today, so she buys chicken. At the door she sees her neighbor. They talk about the weather for ten minutes. Elif pays and puts everything in two bags. The bags are heavy and her house is not near, so she takes a taxi home.",
+  "textTr": "Pazar sabahı ve Elif süpermarkette. Elinde bir liste var. Süt, yumurta, pirinç ve biraz elma lazım. Ayrıca akşam yemeği için balık almak istiyor ama balık bugün çok pahalı, o yüzden tavuk alıyor. Kapıda komşusunu görüyor. On dakika hava hakkında konuşuyorlar. Elif ödeme yapıyor ve her şeyi iki poşete koyuyor. Poşetler ağır ve evi yakın değil, bu yüzden eve taksiyle gidiyor.",
+  "glossary": [],
+  "questions": [
+   {
+    "q": "What day is it?",
+    "options": [
+     "Sunday",
+     "Friday",
+     "Monday",
+     "Saturday"
+    ],
+    "answer": 0,
+    "note": "\"It is Sunday morning.\""
+   },
+   {
+    "q": "Why does Elif buy chicken?",
+    "options": [
+     "Chicken is on her list",
+     "There is no fish",
+     "She does not like fish",
+     "The fish is expensive"
+    ],
+    "answer": 3,
+    "note": "\"The fish is very expensive today, so she buys chicken.\""
+   },
+   {
+    "q": "Who does she see at the door?",
+    "options": [
+     "Her teacher",
+     "Her friend",
+     "Her sister",
+     "Her neighbor"
+    ],
+    "answer": 3,
+    "note": "\"At the door she sees her neighbor.\""
+   },
+   {
+    "q": "How does Elif go home?",
+    "options": [
+     "By train",
+     "By car",
+     "By taxi",
+     "By bus"
+    ],
+    "answer": 2,
+    "note": "Poşetler ağır olduğu için taksiye biniyor."
+   }
+  ]
+ },
+ {
+  "id": "a1-r-05",
+  "level": "A1",
+  "order": 5,
+  "kind": "reading",
+  "title": "Hafta sonu planı",
+  "titleEn": "Weekend Plan",
+  "minutes": 2,
+  "names": [
+   "Can",
+   "Selin"
+  ],
+  "text": "Can and Selin are brother and sister. Next weekend they want to go to the mountains with their parents. Their father has a small car and the drive is three hours. They will stay in a hotel for two nights. Selin wants to walk in the forest and take photos. Can does not like walking, but he likes swimming, and there is a river near the hotel. Their mother says the weather will be cold at night, so they must take warm clothes. Can is happy because there is no school on Monday.",
+  "textTr": "Can ve Selin kardeşler. Gelecek hafta sonu anne babalarıyla dağlara gitmek istiyorlar. Babalarının küçük bir arabası var ve yolculuk üç saat sürüyor. Bir otelde iki gece kalacaklar. Selin ormanda yürümek ve fotoğraf çekmek istiyor. Can yürümeyi sevmiyor ama yüzmeyi seviyor ve otelin yakınında bir nehir var. Anneleri gece havanın soğuk olacağını söylüyor, bu yüzden kalın kıyafet almaları gerekiyor. Can mutlu çünkü pazartesi okul yok.",
+  "glossary": [],
+  "questions": [
+   {
+    "q": "How long is the drive?",
+    "options": [
+     "One hour",
+     "Two hours",
+     "Two nights",
+     "Three hours"
+    ],
+    "answer": 3,
+    "note": "\"The drive is three hours.\""
+   },
+   {
+    "q": "What does Selin want to do?",
+    "options": [
+     "Walk in the forest",
+     "Stay in the hotel",
+     "Drive the car",
+     "Swim in the river"
+    ],
+    "answer": 0,
+    "note": "\"Selin wants to walk in the forest and take photos.\""
+   },
+   {
+    "q": "Why must they take warm clothes?",
+    "options": [
+     "The car is old",
+     "It will rain",
+     "The hotel is cold",
+     "It will be cold at night"
+    ],
+    "answer": 3,
+    "note": "Anneleri gece havanın soğuk olacağını söylüyor."
+   },
+   {
+    "q": "Why is Can happy?",
+    "options": [
+     "The hotel is big",
+     "He likes walking",
+     "His father has a car",
+     "There is no school on Monday"
+    ],
+    "answer": 3,
+    "note": "\"Can is happy because there is no school on Monday.\""
+   }
+  ]
+ }
+]
