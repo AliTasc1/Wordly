@@ -1,0 +1,175 @@
+{
+  "_meta": { "batch": "a1-listening-05", "level": "A1", "range": "Diyalog 21-25" },
+  "items": [
+    {
+      "id": "a1-l-21",
+      "level": "A1",
+      "order": 21,
+      "kind": "listening",
+      "title": "Spor salonuna yazılmak",
+      "titleEn": "Joining the Sports Club",
+      "minutes": 2,
+      "names": ["Cemre"],
+      "speakers": ["Cemre", "Man"],
+      "lines": [
+        { "who": "Cemre", "en": "Hello. I want to come here three times a week.", "tr": "Merhaba. Buraya haftada üç kez gelmek istiyorum." },
+        { "who": "Man", "en": "Good. It is four hundred a month.", "tr": "Güzel. Ayda dört yüz." },
+        { "who": "Cemre", "en": "Is that for every day?", "tr": "Bu her gün için mi?" },
+        { "who": "Man", "en": "Yes, from seven in the morning to eleven at night.", "tr": "Evet, sabah yediden gece on bire kadar." },
+        { "who": "Cemre", "en": "I am a student. Is there a student card?", "tr": "Öğrenciyim. Öğrenci kartı var mı?" },
+        { "who": "Man", "en": "Yes, three hundred. Do you have your school card?", "tr": "Evet, üç yüz. Okul kartınız var mı?" },
+        { "who": "Cemre", "en": "It is at home. Can I bring it tomorrow?", "tr": "Evde. Yarın getirebilir miyim?" },
+        { "who": "Man", "en": "Of course. You can start today.", "tr": "Tabii. Bugün başlayabilirsiniz." },
+        { "who": "Cemre", "en": "Where can I put my bag?", "tr": "Çantamı nereye koyabilirim?" },
+        { "who": "Man", "en": "In that room. Take a key from me.", "tr": "Şu odaya. Benden bir anahtar alın." }
+      ],
+      "glossary": [
+        { "w": "card", "tr": "kart" },
+        { "w": "key", "tr": "anahtar" }
+      ],
+      "questions": [
+        { "q": "How often does Cemre want to come?", "options": ["Three times a week", "Every day", "Once a week", "Two days a week"], "answer": 0, "note": "\"I want to come here three times a week.\"" },
+        { "q": "How much is it for one month?", "options": ["Four hundred", "Three hundred", "Seven hundred", "Eleven hundred"], "answer": 0, "note": "\"It is four hundred a month.\"" },
+        { "q": "How much do students pay?", "options": ["Three hundred", "Four hundred", "Nothing", "Two hundred"], "answer": 0, "note": "\"Yes, three hundred.\"" },
+        { "q": "Where is her school card?", "options": ["At home", "In her bag", "At school", "With her friend"], "answer": 0, "note": "\"It is at home.\"" },
+        { "q": "What does she need for her bag?", "options": ["A key", "A second card", "A bag room card", "Money"], "answer": 0, "note": "\"Take a key from me.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-22",
+      "level": "A1",
+      "order": 22,
+      "kind": "listening",
+      "title": "Öğretmenle konuşmak",
+      "titleEn": "Talking to the Teacher",
+      "minutes": 2,
+      "names": ["Arda"],
+      "speakers": ["Arda", "Teacher"],
+      "lines": [
+        { "who": "Arda", "en": "Excuse me. I did not understand the homework.", "tr": "Affedersiniz. Ödevi anlamadım." },
+        { "who": "Teacher", "en": "Which one?", "tr": "Hangisini?" },
+        { "who": "Arda", "en": "Number four. Do I write one sentence or five?", "tr": "Dört numarayı. Bir cümle mi yoksa beş mi yazacağım?" },
+        { "who": "Teacher", "en": "Five short sentences about your family.", "tr": "Ailen hakkında beş kısa cümle." },
+        { "who": "Arda", "en": "In English?", "tr": "İngilizce mi?" },
+        { "who": "Teacher", "en": "Yes, in English. Use the words on page ten.", "tr": "Evet, İngilizce. Onuncu sayfadaki kelimeleri kullan." },
+        { "who": "Arda", "en": "When must I give it to you?", "tr": "Ne zaman vermeliyim?" },
+        { "who": "Teacher", "en": "On Thursday morning.", "tr": "Perşembe sabahı." },
+        { "who": "Arda", "en": "Thank you. Now it is clear.", "tr": "Teşekkürler. Şimdi anlaşıldı." }
+      ],
+      "glossary": [
+        { "w": "homework", "tr": "ödev" },
+        { "w": "sentence", "tr": "cümle" },
+        { "w": "page", "tr": "sayfa" },
+        { "w": "clear", "tr": "anlaşılır, açık" }
+      ],
+      "questions": [
+        { "q": "What is Arda's problem?", "options": ["He did not understand the homework", "He has no book", "He was not in class", "He has no paper"], "answer": 0, "note": "\"I did not understand the homework.\"" },
+        { "q": "How many sentences must he write?", "options": ["Five", "One", "Four", "Ten"], "answer": 0, "note": "\"Five short sentences about your family.\"" },
+        { "q": "What must the sentences be about?", "options": ["His family", "His school", "His city", "His day"], "answer": 0, "note": "\"Five short sentences about your family.\"" },
+        { "q": "Which words must he use?", "options": ["The words on page ten", "New words", "Words from the teacher", "Any words"], "answer": 0, "note": "\"Use the words on page ten.\"" },
+        { "q": "When is the homework?", "options": ["Thursday morning", "Thursday evening", "Friday", "Monday"], "answer": 0, "note": "\"On Thursday morning.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-23",
+      "level": "A1",
+      "order": 23,
+      "kind": "listening",
+      "title": "Hangi film",
+      "titleEn": "Which Film",
+      "minutes": 2,
+      "names": ["Sude", "Kaan"],
+      "speakers": ["Sude", "Kaan"],
+      "lines": [
+        { "who": "Sude", "en": "There are two films tonight. Which one do you want?", "tr": "Bu akşam iki film var. Hangisini istersin?" },
+        { "who": "Kaan", "en": "What are they?", "tr": "Neler bunlar?" },
+        { "who": "Sude", "en": "One is about a family in a small town. The other is about a dog.", "tr": "Biri küçük bir kasabadaki aileyle ilgili. Diğeri bir köpekle ilgili." },
+        { "who": "Kaan", "en": "How long are they?", "tr": "Ne kadar sürüyorlar?" },
+        { "who": "Sude", "en": "The first is two hours. The second is ninety minutes.", "tr": "İlki iki saat. İkincisi doksan dakika." },
+        { "who": "Kaan", "en": "I have school in the morning. Let us take the short one.", "tr": "Sabah okulum var. Kısa olanı alalım." },
+        { "who": "Sude", "en": "All right. It starts at eight.", "tr": "Tamam. Sekizde başlıyor." },
+        { "who": "Kaan", "en": "Good. We can eat something first.", "tr": "Güzel. Önce bir şeyler yiyebiliriz." },
+        { "who": "Sude", "en": "I will be at the door at seven.", "tr": "Yedide kapıda olurum." }
+      ],
+      "glossary": [
+        { "w": "film", "tr": "film" },
+        { "w": "town", "tr": "kasaba" }
+      ],
+      "questions": [
+        { "q": "What is the first film about?", "options": ["A family in a small town", "A dog", "A school", "A city"], "answer": 0, "note": "\"One is about a family in a small town.\"" },
+        { "q": "How long is the second film?", "options": ["Ninety minutes", "Two hours", "One hour", "Eight hours"], "answer": 0, "note": "\"The second is ninety minutes.\"" },
+        { "q": "Why does Kaan want the short one?", "options": ["He has school in the morning", "He does not like long films", "It is very good", "It is about a dog"], "answer": 0, "note": "\"I have school in the morning.\"" },
+        { "q": "When does the film start?", "options": ["At eight", "At seven", "At nine", "At two"], "answer": 0, "note": "\"It starts at eight.\"" },
+        { "q": "What will they do first?", "options": ["Eat something", "Go home", "Buy a book", "Walk in the park"], "answer": 0, "note": "\"We can eat something first.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-24",
+      "level": "A1",
+      "order": 24,
+      "kind": "listening",
+      "title": "Yağmurda",
+      "titleEn": "Caught in the Rain",
+      "minutes": 2,
+      "names": ["Nil", "Emir"],
+      "speakers": ["Nil", "Emir"],
+      "lines": [
+        { "who": "Nil", "en": "It is raining and I have no umbrella.", "tr": "Yağmur yağıyor ve şemsiyem yok." },
+        { "who": "Emir", "en": "Where are you?", "tr": "Neredesin?" },
+        { "who": "Nil", "en": "In front of the school. My shoes are already wet.", "tr": "Okulun önündeyim. Ayakkabılarım şimdiden ıslandı." },
+        { "who": "Emir", "en": "Wait inside. I can come with the car.", "tr": "İçeride bekle. Arabayla gelebilirim." },
+        { "who": "Nil", "en": "How long?", "tr": "Ne kadar sürer?" },
+        { "who": "Emir", "en": "Fifteen minutes. There are many cars in the street.", "tr": "On beş dakika. Sokakta çok araba var." },
+        { "who": "Nil", "en": "All right. I will be near the door.", "tr": "Tamam. Kapının yanında olurum." },
+        { "who": "Emir", "en": "Do not go out. The rain is very strong now.", "tr": "Dışarı çıkma. Yağmur şimdi çok kuvvetli." },
+        { "who": "Nil", "en": "I know. I can hear it.", "tr": "Biliyorum. Duyabiliyorum." }
+      ],
+      "glossary": [
+        { "w": "umbrella", "tr": "şemsiye" },
+        { "w": "wet", "tr": "ıslak" },
+        { "w": "strong", "tr": "kuvvetli" }
+      ],
+      "questions": [
+        { "q": "What is Nil's problem?", "options": ["She has no umbrella", "Her bag is open", "She has no money", "She is late"], "answer": 0, "note": "\"It is raining and I have no umbrella.\"" },
+        { "q": "Where is she?", "options": ["In front of the school", "In the car", "At home", "At school"], "answer": 0, "note": "\"In front of the school.\"" },
+        { "q": "How long will Emir take?", "options": ["Fifteen minutes", "Five minutes", "Half an hour", "One hour"], "answer": 0, "note": "\"Fifteen minutes.\"" },
+        { "q": "Why will it take that long?", "options": ["There are many cars in the street", "He is at work", "He is eating", "It is very late"], "answer": 0, "note": "\"There are many cars in the street.\"" },
+        { "q": "What does Emir tell her?", "options": ["Do not go out", "Take a bus", "Call her mother", "Walk home"], "answer": 0, "note": "\"Do not go out.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-25",
+      "level": "A1",
+      "order": 25,
+      "kind": "listening",
+      "title": "Kahvaltı siparişi",
+      "titleEn": "Ordering Breakfast",
+      "minutes": 2,
+      "names": ["Yusuf"],
+      "speakers": ["Yusuf", "Waiter"],
+      "lines": [
+        { "who": "Waiter", "en": "Good morning. Breakfast for one?", "tr": "Günaydın. Tek kişilik kahvaltı mı?" },
+        { "who": "Yusuf", "en": "Yes, please. What is in it?", "tr": "Evet lütfen. İçinde ne var?" },
+        { "who": "Waiter", "en": "Bread, cheese, olives, tomatoes, two eggs and tea.", "tr": "Ekmek, peynir, zeytin, domates, iki yumurta ve çay." },
+        { "who": "Yusuf", "en": "I do not eat eggs. Can I take more cheese?", "tr": "Yumurta yemiyorum. Daha çok peynir alabilir miyim?" },
+        { "who": "Waiter", "en": "Yes, no problem.", "tr": "Evet, sorun değil." },
+        { "who": "Yusuf", "en": "And can I have coffee, not tea?", "tr": "Çay yerine kahve alabilir miyim?" },
+        { "who": "Waiter", "en": "Coffee is twenty more.", "tr": "Kahve yirmi lira fazla." },
+        { "who": "Yusuf", "en": "That is fine. How much is the breakfast?", "tr": "Olur. Kahvaltı ne kadar?" },
+        { "who": "Waiter", "en": "Two hundred with the coffee.", "tr": "Kahveyle birlikte iki yüz." }
+      ],
+      "glossary": [
+        { "w": "breakfast", "tr": "kahvaltı" },
+        { "w": "olives", "tr": "zeytin" },
+        { "w": "waiter", "tr": "garson" }
+      ],
+      "questions": [
+        { "q": "What does Yusuf not eat?", "options": ["Eggs", "Cheese", "Olives", "Bread"], "answer": 0, "note": "\"I do not eat eggs.\"" },
+        { "q": "What does he want more of?", "options": ["More cheese", "More bread", "More tea", "More tomatoes"], "answer": 0, "note": "\"Can I take more cheese?\"" },
+        { "q": "What does he want to drink?", "options": ["Coffee", "Tea", "Water", "Milk"], "answer": 0, "note": "\"Can I have coffee, not tea?\"" },
+        { "q": "How much more is the coffee?", "options": ["Twenty", "Two hundred", "Ten", "Nothing"], "answer": 0, "note": "\"Coffee is twenty more.\"" },
+        { "q": "How much must he pay?", "options": ["Two hundred", "One hundred", "Twenty", "Two hundred and twenty"], "answer": 0, "note": "\"Two hundred with the coffee.\"" }
+      ]
+    }
+  ]
+}

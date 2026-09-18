@@ -1,0 +1,171 @@
+{
+  "_meta": { "batch": "a1-listening-03", "level": "A1", "range": "Diyalog 11-15" },
+  "items": [
+    {
+      "id": "a1-l-11",
+      "level": "A1",
+      "order": 11,
+      "kind": "listening",
+      "title": "Otobüs saatini sormak",
+      "titleEn": "Asking About the Bus",
+      "minutes": 2,
+      "names": ["Mert"],
+      "speakers": ["Mert", "Woman"],
+      "lines": [
+        { "who": "Mert", "en": "Excuse me, is this the bus to the station?", "tr": "Affedersiniz, bu otobüs istasyona mı gidiyor?" },
+        { "who": "Woman", "en": "No, this is number nine. You need number twelve.", "tr": "Hayır, bu dokuz numara. Size on iki lazım." },
+        { "who": "Mert", "en": "When does it come?", "tr": "Ne zaman geliyor?" },
+        { "who": "Woman", "en": "Every twenty minutes. The next one is at ten past four.", "tr": "Yirmi dakikada bir. Sonraki dördü on geçe." },
+        { "who": "Mert", "en": "Thank you. Is it far to the station?", "tr": "Teşekkürler. İstasyon uzak mı?" },
+        { "who": "Woman", "en": "Ten minutes by bus. You can walk in half an hour.", "tr": "Otobüsle on dakika. Yürüyerek yarım saatte gidersiniz." },
+        { "who": "Mert", "en": "I have a big bag, so I will wait.", "tr": "Büyük bir çantam var, o yüzden bekleyeceğim." },
+        { "who": "Woman", "en": "Good idea. Here it comes now.", "tr": "İyi fikir. İşte geliyor." }
+      ],
+      "glossary": [
+        { "w": "far", "tr": "uzak" },
+        { "w": "idea", "tr": "fikir" }
+      ],
+      "questions": [
+        { "q": "Which bus does Mert need?", "options": ["Number twelve", "Number nine", "Number four", "Number ten"], "answer": 0, "note": "\"You need number twelve.\"" },
+        { "q": "When is the next bus?", "options": ["At ten past four", "At four o'clock", "In twenty minutes", "At half past four"], "answer": 0, "note": "\"The next one is at ten past four.\"" },
+        { "q": "How long does the bus take?", "options": ["Ten minutes", "Half an hour", "Twenty minutes", "One hour"], "answer": 0, "note": "\"Ten minutes by bus.\"" },
+        { "q": "Why does Mert wait?", "options": ["He has a big bag", "He is tired", "It is raining", "He has time"], "answer": 0, "note": "\"I have a big bag, so I will wait.\"" },
+        { "q": "What happens at the end?", "options": ["The bus arrives", "The woman leaves", "Mert walks", "The bus is late"], "answer": 0, "note": "\"Here it comes now.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-12",
+      "level": "A1",
+      "order": 12,
+      "kind": "listening",
+      "title": "Kitap ödünç almak",
+      "titleEn": "Borrowing a Book",
+      "minutes": 2,
+      "names": ["Ceyda"],
+      "speakers": ["Ceyda", "Librarian"],
+      "lines": [
+        { "who": "Ceyda", "en": "Hello. I want to take this book, please.", "tr": "Merhaba. Bu kitabı almak istiyorum lütfen." },
+        { "who": "Librarian", "en": "Do you have a card?", "tr": "Kartınız var mı?" },
+        { "who": "Ceyda", "en": "Yes, here it is.", "tr": "Evet, buyurun." },
+        { "who": "Librarian", "en": "Thank you. You can keep it for two weeks.", "tr": "Teşekkürler. İki hafta tutabilirsiniz." },
+        { "who": "Ceyda", "en": "Can I take two books?", "tr": "İki kitap alabilir miyim?" },
+        { "who": "Librarian", "en": "Yes, but not three. Three is for teachers.", "tr": "Evet ama üç olmaz. Üç, öğretmenler için." },
+        { "who": "Ceyda", "en": "Two is enough. What day must I come back?", "tr": "İki yeter. Hangi gün dönmeliyim?" },
+        { "who": "Librarian", "en": "The twentieth. It is on this paper.", "tr": "Yirmisinde. Bu kâğıtta yazıyor." }
+      ],
+      "glossary": [
+        { "w": "card", "tr": "kart" },
+        { "w": "keep", "tr": "tutmak, elinde bulundurmak" },
+        { "w": "enough", "tr": "yeterli" }
+      ],
+      "questions": [
+        { "q": "What does the librarian ask for first?", "options": ["A card", "A book", "Money", "A name"], "answer": 0, "note": "\"Do you have a card?\"" },
+        { "q": "How long can Ceyda keep the book?", "options": ["Two weeks", "Three weeks", "Two days", "One month"], "answer": 0, "note": "\"You can keep it for two weeks.\"" },
+        { "q": "How many books can she take?", "options": ["Two", "Three", "One", "Four"], "answer": 0, "note": "\"Yes, but not three.\"" },
+        { "q": "Who can take three books?", "options": ["Teachers", "Students", "Everybody", "Only new students"], "answer": 0, "note": "\"Three is for teachers.\"" },
+        { "q": "When must she come back?", "options": ["On the twentieth", "On the second", "Next week", "On Monday"], "answer": 0, "note": "\"The twentieth.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-13",
+      "level": "A1",
+      "order": 13,
+      "kind": "listening",
+      "title": "Sınıfta ilk gün",
+      "titleEn": "Meeting a New Classmate",
+      "minutes": 2,
+      "names": ["Berk", "Lara", "Izmir", "Ankara", "English"],
+      "speakers": ["Berk", "Lara"],
+      "lines": [
+        { "who": "Berk", "en": "Hi. Is this seat free?", "tr": "Merhaba. Bu yer boş mu?" },
+        { "who": "Lara", "en": "Yes, sit down. I am Lara.", "tr": "Evet, otur. Ben Lara." },
+        { "who": "Berk", "en": "I am Berk. Are you new here too?", "tr": "Ben Berk. Sen de yeni misin?" },
+        { "who": "Lara", "en": "Yes. I came from Izmir last month.", "tr": "Evet. Geçen ay İzmir'den geldim." },
+        { "who": "Berk", "en": "Do you like the school?", "tr": "Okulu beğendin mi?" },
+        { "who": "Lara", "en": "The teachers are nice but the building is very cold.", "tr": "Öğretmenler iyi ama bina çok soğuk." },
+        { "who": "Berk", "en": "In winter it is always cold. Bring a big coat.", "tr": "Kışın hep soğuk olur. Kalın bir ceket getir." },
+        { "who": "Lara", "en": "Thank you. What lesson do we have now?", "tr": "Teşekkürler. Şimdi hangi dersimiz var?" },
+        { "who": "Berk", "en": "English. It is my favorite.", "tr": "İngilizce. En sevdiğim ders." }
+      ],
+      "glossary": [
+        { "w": "seat", "tr": "yer, koltuk" },
+        { "w": "free", "tr": "boş" },
+        { "w": "coat", "tr": "ceket, palto" },
+        { "w": "far", "tr": "uzak" }
+      ],
+      "questions": [
+        { "q": "Where did Lara come from?", "options": ["Izmir", "Ankara", "The next street", "Another school"], "answer": 0, "note": "\"I came from Izmir last month.\"" },
+        { "q": "When did she come?", "options": ["Last month", "Last week", "Today", "Last year"], "answer": 0, "note": "\"I came from Izmir last month.\"" },
+        { "q": "What is the problem with the building?", "options": ["It is very cold", "It is very old", "It is too small", "It is far away"], "answer": 0, "note": "\"The building is very cold.\"" },
+        { "q": "What does Berk say she should bring?", "options": ["A big coat", "A book", "Some food", "A friend"], "answer": 0, "note": "\"Bring a big coat.\"" },
+        { "q": "What lesson do they have now?", "options": ["English", "Math", "Music", "History"], "answer": 0, "note": "\"English. It is my favorite.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-14",
+      "level": "A1",
+      "order": 14,
+      "kind": "listening",
+      "title": "Pastanede",
+      "titleEn": "At the Cake Shop",
+      "minutes": 2,
+      "names": ["Melek"],
+      "speakers": ["Melek", "Seller"],
+      "lines": [
+        { "who": "Melek", "en": "Good afternoon. How much is the chocolate cake?", "tr": "İyi günler. Çikolatalı kek ne kadar?" },
+        { "who": "Seller", "en": "Sixty for a small one, ninety for a big one.", "tr": "Küçüğü altmış, büyüğü doksan." },
+        { "who": "Melek", "en": "We are six people at home.", "tr": "Evde altı kişiyiz." },
+        { "who": "Seller", "en": "Then take the big one. The small one is for three.", "tr": "O zaman büyüğü alın. Küçüğü üç kişilik." },
+        { "who": "Melek", "en": "All right, the big one. Do you have apple cake too?", "tr": "Tamam, büyüğü. Elmalı kek de var mı?" },
+        { "who": "Seller", "en": "Not today. Come on Friday.", "tr": "Bugün yok. Cuma günü gelin." },
+        { "who": "Melek", "en": "My mother loves apple cake.", "tr": "Annem elmalı keki çok sever." },
+        { "who": "Seller", "en": "Then I will keep one for her.", "tr": "O hâlde ona bir tane ayırırım." }
+      ],
+      "glossary": [
+        { "w": "cake", "tr": "kek, pasta" },
+        { "w": "seller", "tr": "satıcı" },
+        { "w": "keep", "tr": "ayırmak, saklamak" }
+      ],
+      "questions": [
+        { "q": "How much is the big cake?", "options": ["Ninety", "Sixty", "Six", "Three"], "answer": 0, "note": "\"Ninety for a big one.\"" },
+        { "q": "Why does Melek take the big one?", "options": ["They are six people", "It is small", "It is chocolate", "The small one is finished"], "answer": 0, "note": "\"We are six people at home.\"" },
+        { "q": "Is there apple cake today?", "options": ["No", "Yes", "Only a small one", "Only in the morning"], "answer": 0, "note": "\"Not today.\"" },
+        { "q": "When can she come for apple cake?", "options": ["On Friday", "On Monday", "Tomorrow", "Next month"], "answer": 0, "note": "\"Come on Friday.\"" },
+        { "q": "What does the seller offer to do?", "options": ["Keep one for her mother", "Make a new cake", "Give a small cake", "Open on Sunday"], "answer": 0, "note": "\"Then I will keep one for her.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-15",
+      "level": "A1",
+      "order": 15,
+      "kind": "listening",
+      "title": "Anahtarı unutmak",
+      "titleEn": "Locked Out",
+      "minutes": 2,
+      "names": ["Umut", "Sevil"],
+      "speakers": ["Umut", "Sevil"],
+      "lines": [
+        { "who": "Umut", "en": "Sevil, I am at the door and I do not have my key.", "tr": "Sevil, kapıdayım ve anahtarım yok." },
+        { "who": "Sevil", "en": "Again? Where is it?", "tr": "Yine mi? Nerede?" },
+        { "who": "Umut", "en": "I think it is on my desk at work.", "tr": "Sanırım işteki masamda." },
+        { "who": "Sevil", "en": "I am at my mother's house. I can come at seven.", "tr": "Annemlerdeyim. Yedide gelebilirim." },
+        { "who": "Umut", "en": "It is five now. Two hours is a long time.", "tr": "Şimdi saat beş. İki saat uzun." },
+        { "who": "Sevil", "en": "Go to the cafe on the corner and have a tea.", "tr": "Köşedeki kafeye git ve bir çay iç." },
+        { "who": "Umut", "en": "Good idea. I have my book with me.", "tr": "İyi fikir. Kitabım yanımda." },
+        { "who": "Sevil", "en": "And tomorrow we will make a second key.", "tr": "Yarın da ikinci bir anahtar yaptıracağız." }
+      ],
+      "glossary": [
+        { "w": "key", "tr": "anahtar" },
+        { "w": "desk", "tr": "çalışma masası" },
+        { "w": "corner", "tr": "köşe" }
+      ],
+      "questions": [
+        { "q": "What is Umut's problem?", "options": ["He does not have his key", "He is late", "He forgot his book", "He is at work"], "answer": 0, "note": "\"I do not have my key.\"" },
+        { "q": "Where does he think the key is?", "options": ["On his desk at work", "In the cafe", "At his mother's house", "In his bag"], "answer": 0, "note": "\"I think it is on my desk at work.\"" },
+        { "q": "What time can Sevil come?", "options": ["At seven", "At five", "At two", "Tomorrow"], "answer": 0, "note": "\"I can come at seven.\"" },
+        { "q": "What does Sevil tell him to do?", "options": ["Go to the cafe", "Go to her mother", "Call a friend", "Wait at the door"], "answer": 0, "note": "\"Go to the cafe on the corner.\"" },
+        { "q": "What will they do tomorrow?", "options": ["Make a second key", "Change the door", "Visit her mother", "Buy a new bag"], "answer": 0, "note": "\"Tomorrow we will make a second key.\"" }
+      ]
+    }
+  ]
+}

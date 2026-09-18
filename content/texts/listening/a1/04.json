@@ -1,0 +1,179 @@
+{
+  "_meta": { "batch": "a1-listening-04", "level": "A1", "range": "Diyalog 16-20" },
+  "items": [
+    {
+      "id": "a1-l-16",
+      "level": "A1",
+      "order": 16,
+      "kind": "listening",
+      "title": "Fotoğraf çekmek",
+      "titleEn": "Taking a Photo",
+      "minutes": 2,
+      "names": ["Gul"],
+      "speakers": ["Gul", "Tourist"],
+      "lines": [
+        { "who": "Tourist", "en": "Excuse me, can you take a photo of us?", "tr": "Affedersiniz, bizim fotoğrafımızı çeker misiniz?" },
+        { "who": "Gul", "en": "Of course. Give me the phone.", "tr": "Tabii. Telefonu verin." },
+        { "who": "Tourist", "en": "Thank you. Can you take the sea too?", "tr": "Teşekkürler. Denizi de alabilir misiniz?" },
+        { "who": "Gul", "en": "Yes. Go back two steps, please.", "tr": "Evet. İki adım geriye gidin lütfen." },
+        { "who": "Tourist", "en": "Like this?", "tr": "Böyle mi?" },
+        { "who": "Gul", "en": "Perfect. One, two, three. Now smile!", "tr": "Harika. Bir, iki, üç. Şimdi gülümseyin!" },
+        { "who": "Tourist", "en": "Is it good?", "tr": "İyi oldu mu?" },
+        { "who": "Gul", "en": "Look. The sea is behind you and the sun is on your face.", "tr": "Bakın. Deniz arkanızda ve güneş yüzünüzde." },
+        { "who": "Tourist", "en": "It is beautiful. Thank you very much.", "tr": "Çok güzel. Çok teşekkürler." }
+      ],
+      "glossary": [
+        { "w": "photo", "tr": "fotoğraf" },
+        { "w": "steps", "tr": "adım" },
+        { "w": "smile", "tr": "gülümsemek" },
+        { "w": "perfect", "tr": "harika, kusursuz" }
+      ],
+      "questions": [
+        { "q": "What does the tourist want?", "options": ["A photo of them", "The way to the sea", "A phone", "Help with a bag"], "answer": 0, "note": "\"Can you take a photo of us?\"" },
+        { "q": "What does Gul ask them to do?", "options": ["Go back two steps", "Come closer", "Sit down", "Wait a minute"], "answer": 0, "note": "\"Go back two steps, please.\"" },
+        { "q": "What is behind them in the photo?", "options": ["The sea", "A building", "A tree", "The sun"], "answer": 0, "note": "\"The sea is behind you.\"" },
+        { "q": "Where is the sun?", "options": ["On their face", "Behind them", "Under the sea", "In the phone"], "answer": 0, "note": "\"The sun is on your face.\"" },
+        { "q": "How does the tourist feel?", "options": ["Happy with the photo", "Angry", "Tired", "Worried"], "answer": 0, "note": "\"It is beautiful. Thank you very much.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-17",
+      "level": "A1",
+      "order": 17,
+      "kind": "listening",
+      "title": "Eczanede",
+      "titleEn": "At the Chemist",
+      "minutes": 2,
+      "names": ["Ilker"],
+      "speakers": ["Ilker", "Chemist"],
+      "lines": [
+        { "who": "Ilker", "en": "Hello. I have a headache.", "tr": "Merhaba. Başım ağrıyor." },
+        { "who": "Chemist", "en": "Since when?", "tr": "Ne zamandan beri?" },
+        { "who": "Ilker", "en": "Two days. I work at a computer all day.", "tr": "İki gün. Bütün gün bilgisayarda çalışıyorum." },
+        { "who": "Chemist", "en": "Do you drink water?", "tr": "Su içiyor musunuz?" },
+        { "who": "Ilker", "en": "Not very much. I drink a lot of coffee.", "tr": "Pek değil. Çok kahve içiyorum." },
+        { "who": "Chemist", "en": "That is the problem. Drink more water first.", "tr": "Sorun bu. Önce daha çok su için." },
+        { "who": "Ilker", "en": "And if it does not stop?", "tr": "Peki geçmezse?" },
+        { "who": "Chemist", "en": "Then take this medicine. One in the morning, one at night.", "tr": "O zaman bu ilacı alın. Sabah bir, gece bir." },
+        { "who": "Ilker", "en": "How much is it?", "tr": "Ne kadar?" },
+        { "who": "Chemist", "en": "Forty. But try the water first. It is free.", "tr": "Kırk. Ama önce suyu deneyin. Bedava." }
+      ],
+      "glossary": [
+        { "w": "headache", "tr": "baş ağrısı" },
+        { "w": "chemist", "tr": "eczacı" },
+        { "w": "medicine", "tr": "ilaç" },
+        { "w": "free", "tr": "bedava" },
+        { "w": "since", "tr": "-den beri" }
+      ],
+      "questions": [
+        { "q": "What is Ilker's problem?", "options": ["He has a headache", "He is very tired", "He cannot sleep", "His eyes hurt"], "answer": 0, "note": "\"I have a headache.\"" },
+        { "q": "How long has he had it?", "options": ["Two days", "Two weeks", "One day", "All year"], "answer": 0, "note": "\"Two days.\"" },
+        { "q": "What does he drink a lot of?", "options": ["Coffee", "Water", "Tea", "Milk"], "answer": 0, "note": "\"I drink a lot of coffee.\"" },
+        { "q": "What does the chemist say to do first?", "options": ["Drink more water", "Take the medicine", "See a doctor", "Stop working"], "answer": 0, "note": "\"Drink more water first.\"" },
+        { "q": "How does he take the medicine?", "options": ["One in the morning, one at night", "Three a day", "Only at night", "Every hour"], "answer": 0, "note": "\"One in the morning, one at night.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-18",
+      "level": "A1",
+      "order": 18,
+      "kind": "listening",
+      "title": "Yeni komşu",
+      "titleEn": "The New Neighbor",
+      "minutes": 2,
+      "names": ["Fatma", "Deniz"],
+      "speakers": ["Fatma", "Deniz"],
+      "lines": [
+        { "who": "Fatma", "en": "Hello. Are you the new family in number five?", "tr": "Merhaba. Beş numaradaki yeni aile siz misiniz?" },
+        { "who": "Deniz", "en": "Yes. We came on Saturday. I am Deniz.", "tr": "Evet. Cumartesi geldik. Ben Deniz." },
+        { "who": "Fatma", "en": "I am Fatma. I live in number three.", "tr": "Ben Fatma. Üç numarada oturuyorum." },
+        { "who": "Deniz", "en": "Nice to meet you. Is there a market near here?", "tr": "Memnun oldum. Buraya yakın bir market var mı?" },
+        { "who": "Fatma", "en": "Yes, at the end of the street. It opens at eight.", "tr": "Evet, sokağın sonunda. Sekizde açılıyor." },
+        { "who": "Deniz", "en": "And the school? We have two children.", "tr": "Peki okul? İki çocuğumuz var." },
+        { "who": "Fatma", "en": "The school is behind the park. My son goes there.", "tr": "Okul parkın arkasında. Oğlum oraya gidiyor." },
+        { "who": "Deniz", "en": "That is very good news.", "tr": "Bu çok iyi haber." },
+        { "who": "Fatma", "en": "Come for tea on Sunday. Bring the children.", "tr": "Pazar günü çaya gelin. Çocukları da getirin." }
+      ],
+      "glossary": [
+        { "w": "market", "tr": "market" },
+        { "w": "news", "tr": "haber" }
+      ],
+      "questions": [
+        { "q": "When did Deniz's family come?", "options": ["On Saturday", "On Sunday", "Last month", "Today"], "answer": 0, "note": "\"We came on Saturday.\"" },
+        { "q": "Where does Fatma live?", "options": ["In number three", "In number five", "Near the park", "Behind the school"], "answer": 0, "note": "\"I live in number three.\"" },
+        { "q": "When does the market open?", "options": ["At eight", "At five", "At three", "At nine"], "answer": 0, "note": "\"It opens at eight.\"" },
+        { "q": "Where is the school?", "options": ["Behind the park", "At the end of the street", "Next to the market", "In number five"], "answer": 0, "note": "\"The school is behind the park.\"" },
+        { "q": "What does Fatma ask them to do?", "options": ["Come for tea on Sunday", "Visit the school", "Meet her son", "Go to the market"], "answer": 0, "note": "\"Come for tea on Sunday.\"" }
+      ]
+    },
+    {
+      "id": "a1-l-19",
+      "level": "A1",
+      "order": 19,
+      "kind": "listening",
+      "title": "Kayıp çocuk",
+      "titleEn": "Looking for a Brother",
+      "minutes": 2,
+      "names": ["Efe"],
+      "speakers": ["Girl", "Man"],
+      "lines": [
+        { "who": "Girl", "en": "Excuse me, can you help me? I cannot find my brother.", "tr": "Affedersiniz, yardım eder misiniz? Kardeşimi bulamıyorum." },
+        { "who": "Man", "en": "Do not worry. What is his name?", "tr": "Merak etmeyin. Adı ne?" },
+        { "who": "Girl", "en": "Efe. He is six years old.", "tr": "Efe. Altı yaşında." },
+        { "who": "Man", "en": "What is he wearing?", "tr": "Ne giyiyor?" },
+        { "who": "Girl", "en": "A blue shirt and black shoes.", "tr": "Mavi bir gömlek ve siyah ayakkabı." },
+        { "who": "Man", "en": "Where did you see him last?", "tr": "Onu en son nerede gördünüz?" },
+        { "who": "Girl", "en": "At the ice cream shop, ten minutes ago.", "tr": "On dakika önce dondurmacıda." },
+        { "who": "Man", "en": "Look, is that him near the water?", "tr": "Bakın, sudaki o mu?" },
+        { "who": "Girl", "en": "Yes! Efe! Come here now!", "tr": "Evet! Efe! Hemen buraya gel!" }
+      ],
+      "glossary": [
+        { "w": "worry", "tr": "endişelenmek" },
+        { "w": "wearing", "tr": "giyiyor" },
+        { "w": "shirt", "tr": "gömlek" },
+        { "w": "ice cream", "tr": "dondurma" }
+      ],
+      "questions": [
+        { "q": "How old is Efe?", "options": ["Six", "Ten", "Five", "Eight"], "answer": 0, "note": "\"He is six years old.\"" },
+        { "q": "What is he wearing?", "options": ["A blue shirt and black shoes", "A black shirt", "A blue coat", "White shoes"], "answer": 0, "note": "\"A blue shirt and black shoes.\"" },
+        { "q": "Where did she see him last?", "options": ["At the ice cream shop", "Near the water", "At home", "In the park"], "answer": 0, "note": "\"At the ice cream shop.\"" },
+        { "q": "How long ago was that?", "options": ["Ten minutes", "One hour", "Six minutes", "This morning"], "answer": 0, "note": "\"Ten minutes ago.\"" },
+        { "q": "Where is Efe?", "options": ["Near the water", "In the shop", "At home", "With his mother"], "answer": 0, "note": "\"Is that him near the water?\"" }
+      ]
+    },
+    {
+      "id": "a1-l-20",
+      "level": "A1",
+      "order": 20,
+      "kind": "listening",
+      "title": "Doğum günü hediyesi",
+      "titleEn": "Choosing a Present",
+      "minutes": 2,
+      "names": ["Aylin", "Tuna"],
+      "speakers": ["Aylin", "Tuna"],
+      "lines": [
+        { "who": "Aylin", "en": "Tuna, what can we give to mother?", "tr": "Tuna, anneme ne verebiliriz?" },
+        { "who": "Tuna", "en": "A book? She reads every night.", "tr": "Kitap mı? Her gece okuyor." },
+        { "who": "Aylin", "en": "She has too many books. She has no place for them.", "tr": "Çok fazla kitabı var. Koyacak yeri yok." },
+        { "who": "Tuna", "en": "Then flowers.", "tr": "O zaman çiçek." },
+        { "who": "Aylin", "en": "Flowers are for one week. I want something better.", "tr": "Çiçek bir hafta. Daha iyi bir şey istiyorum." },
+        { "who": "Tuna", "en": "She always says she wants a new bag.", "tr": "Hep yeni bir çanta istediğini söylüyor." },
+        { "who": "Aylin", "en": "That is it! Do you have money?", "tr": "İşte bu! Paran var mı?" },
+        { "who": "Tuna", "en": "I have two hundred. And you?", "tr": "İki yüzüm var. Sende?" },
+        { "who": "Aylin", "en": "Three hundred. Let us go to the shop after school.", "tr": "Üç yüz. Okuldan sonra dükkâna gidelim." }
+      ],
+      "glossary": [
+        { "w": "present", "tr": "hediye" },
+        { "w": "flowers", "tr": "çiçekler" },
+        { "w": "place", "tr": "yer" }
+      ],
+      "questions": [
+        { "q": "Why is a book not good?", "options": ["She has no place for more books", "She does not read", "It is too expensive", "She has that book"], "answer": 0, "note": "\"She has too many books. She has no place for them.\"" },
+        { "q": "Why does Aylin say no to flowers?", "options": ["They last only one week", "Mother does not like them", "They are too small", "They are not beautiful"], "answer": 0, "note": "\"Flowers are for one week.\"" },
+        { "q": "What does mother always say she wants?", "options": ["A new bag", "A new book", "Flowers", "A phone"], "answer": 0, "note": "\"She always says she wants a new bag.\"" },
+        { "q": "How much money do they have together?", "options": ["Five hundred", "Two hundred", "Three hundred", "Six hundred"], "answer": 0, "note": "İki yüz + üç yüz." },
+        { "q": "When will they go to the shop?", "options": ["After school", "Tomorrow", "On Sunday", "In the morning"], "answer": 0, "note": "\"Let us go to the shop after school.\"" }
+      ]
+    }
+  ]
+}
