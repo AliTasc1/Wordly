@@ -1,0 +1,829 @@
+{
+  "_meta": {
+    "batch": "a2-grammar-04",
+    "level": "A2",
+    "range": "Bölünen dersler: geçmiş olumsuz/soru, miktar/belirteç"
+  },
+  "lessons": [
+    {
+      "id": "a2-01-past-negative",
+      "level": "A2",
+      "order": 1,
+      "title": "Geçmiş zaman — yapmadım demek",
+      "topic": "Past simple: negative",
+      "canDo": "Dün yapmadığım şeyleri söyleyebilirim.",
+      "covers": [
+        "TA.PAST.be.NEG",
+        "TA.PAST.do.NEG",
+        "VP.SVO.NEG"
+      ],
+      "concept": {
+        "summary": "Geçmişte olumsuzluk için didn't kullanılır. Geçmişlik didn't'e geçtiği için asıl fiil yalın hâle döner — geçmiş iki kez gösterilmez. be fiili ise kendi başına çalışır ve did almaz: wasn't, weren't.",
+        "formula": {
+          "left": "Özne + didn't + yalın fiil",
+          "right": "wasn't / weren't"
+        },
+        "table": [
+          {
+            "form": "asıl fiil",
+            "be": "didn't + yalın fiil",
+            "example": "I didn't see him."
+          },
+          {
+            "form": "be, tekil",
+            "be": "wasn't",
+            "example": "She wasn't at home."
+          },
+          {
+            "form": "be, çoğul",
+            "be": "weren't",
+            "example": "They weren't ready."
+          },
+          {
+            "form": "yanlış",
+            "be": "didn't + geçmiş fiil",
+            "example": "not: I didn't went."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "I didn't go to work yesterday.",
+          "tr": "Dün işe gitmedim.",
+          "note": "went değil go — geçmişlik didn't'te."
+        },
+        {
+          "en": "He wasn't ready.",
+          "tr": "Hazır değildi.",
+          "note": "be fiili did almaz."
+        },
+        {
+          "en": "We didn't know the address.",
+          "tr": "Adresi bilmiyorduk.",
+          "note": "know yalın kaldı."
+        },
+        {
+          "en": "The keys weren't in my bag.",
+          "tr": "Anahtarlar çantamda değildi.",
+          "note": "Çoğul be → weren't."
+        },
+        {
+          "en": "She didn't say anything about the delay.",
+          "tr": "Gecikme hakkında bir şey söylemedi.",
+          "note": "didn't + yalın fiil."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "I didn't went there.",
+          "right": "I didn't go there.",
+          "why": "Geçmişlik bir cümlede iki kez gösterilmez."
+        },
+        {
+          "wrong": "She didn't was at home.",
+          "right": "She wasn't at home.",
+          "why": "be fiiliyle did kullanılmaz."
+        },
+        {
+          "wrong": "They not came to the party.",
+          "right": "They didn't come to the party.",
+          "why": "not tek başına olumsuzluk yapmaz."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "They ___ the bus this morning.",
+          "options": [
+            "didn't catch",
+            "didn't caught",
+            "not caught",
+            "weren't catch"
+          ],
+          "answer": 0,
+          "note": "didn't + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "The shops ___ open on Sunday.",
+          "options": [
+            "weren't",
+            "wasn't",
+            "didn't",
+            "don't"
+          ],
+          "answer": 0,
+          "note": "shops çoğul be → weren't."
+        },
+        {
+          "type": "gap",
+          "text": "I ___ anything about it.",
+          "options": [
+            "didn't know",
+            "didn't knew",
+            "not knew"
+          ],
+          "answer": 0,
+          "note": "didn't + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ not come to the meeting yesterday.",
+          "options": [
+            "did",
+            "was",
+            "does",
+            "is"
+          ],
+          "answer": 0,
+          "note": "Geçmiş olumsuz → did not + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "They ___ not at the station when we arrived.",
+          "options": [
+            "were",
+            "was",
+            "did",
+            "are"
+          ],
+          "answer": 0,
+          "note": "be fiilinde did kullanılmaz → were not."
+        },
+        {
+          "type": "choice",
+          "text": "He did not ___ anything about it.",
+          "options": [
+            "say",
+            "said",
+            "says",
+            "saying"
+          ],
+          "answer": 0,
+          "note": "did not + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "We ___ the film because we arrived late.",
+          "options": [
+            "didn't see",
+            "didn't saw",
+            "not saw",
+            "weren't see"
+          ],
+          "answer": 0,
+          "note": "didn't + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "The letter ___ in the post box.",
+          "options": [
+            "wasn't",
+            "weren't",
+            "didn't"
+          ],
+          "answer": 0,
+          "note": "Tekil be → wasn't."
+        },
+        {
+          "type": "choice",
+          "text": "My parents ___ me about the plan.",
+          "options": [
+            "didn't tell",
+            "didn't told",
+            "not told",
+            "weren't tell"
+          ],
+          "answer": 0,
+          "note": "didn't + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "It ___ very cold last winter.",
+          "options": [
+            "wasn't",
+            "weren't",
+            "didn't",
+            "doesn't"
+          ],
+          "answer": 0,
+          "note": "it → wasn't."
+        }
+      ]
+    },
+    {
+      "id": "a2-02-past-questions",
+      "level": "A2",
+      "order": 2,
+      "title": "Did you …? — geçmişi sormak",
+      "topic": "Past simple: questions",
+      "canDo": "Dün ve geçen hafta olanları sorabilirim.",
+      "covers": [
+        "TA.PAST.do.INT.AFF"
+      ],
+      "concept": {
+        "summary": "Geçmiş zaman sorusunda Did başa gelir ve asıl fiil yalın kalır: Did you see him? Geçmişlik Did'e geçtiği için fiil ikinci hâline girmez. be fiiliyle kurulan sorularda ise Did kullanılmaz; Was ya da Were başa gelir. Kısa cevapta did tekrarlanır: Yes, I did.",
+        "formula": {
+          "left": "Did + özne + yalın fiil?",
+          "right": "Was / Were + özne …?"
+        },
+        "table": [
+          {
+            "form": "asıl fiil",
+            "be": "Did + özne + yalın",
+            "example": "Did you call her?"
+          },
+          {
+            "form": "be, tekil",
+            "be": "Was + özne",
+            "example": "Was she at home?"
+          },
+          {
+            "form": "be, çoğul",
+            "be": "Were + özne",
+            "example": "Were they late?"
+          },
+          {
+            "form": "kısa cevap",
+            "be": "Yes, I did.",
+            "example": "No, I didn't."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Did you call her?",
+          "tr": "Onu aradın mı?",
+          "note": "Soruda Did başa gelir."
+        },
+        {
+          "en": "Were you at the meeting?",
+          "tr": "Toplantıda mıydın?",
+          "note": "you → Were."
+        },
+        {
+          "en": "Did the train arrive on time?",
+          "tr": "Tren zamanında geldi mi?",
+          "note": "Did + yalın fiil."
+        },
+        {
+          "en": "What did you do at the weekend?",
+          "tr": "Hafta sonu ne yaptın?",
+          "note": "Soru kelimesi Did'den önce gelir."
+        },
+        {
+          "en": "Did you enjoy the concert? — Yes, I did.",
+          "tr": "Konseri beğendin mi? — Evet, beğendim.",
+          "note": "Kısa cevapta did tekrarlanır."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Did you saw the film?",
+          "right": "Did you see the film?",
+          "why": "Did'den sonra fiil yalın gelir."
+        },
+        {
+          "wrong": "Did she was at home?",
+          "right": "Was she at home?",
+          "why": "be fiiliyle Did kullanılmaz."
+        },
+        {
+          "wrong": "You did go there?",
+          "right": "Did you go there?",
+          "why": "Soruda Did özneden önce gelir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ she finish the report?",
+          "options": [
+            "Did",
+            "Does",
+            "Was",
+            "Has"
+          ],
+          "answer": 0,
+          "note": "Geçmiş soru → Did."
+        },
+        {
+          "type": "choice",
+          "text": "Did you ___ my message?",
+          "options": [
+            "get",
+            "got",
+            "getting",
+            "gets"
+          ],
+          "answer": 0,
+          "note": "Did'den sonra yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ you see the new film last night?",
+          "options": [
+            "Did",
+            "Do",
+            "Were",
+            "Was"
+          ],
+          "answer": 0,
+          "note": "Geçmiş soru → Did + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "___ the shop open on Sunday?",
+          "options": [
+            "Was",
+            "Did",
+            "Were"
+          ],
+          "answer": 0,
+          "note": "open burada sıfat, be gerekiyor → Was."
+        },
+        {
+          "type": "choice",
+          "text": "___ they at the airport when you arrived?",
+          "options": [
+            "Were",
+            "Did",
+            "Was",
+            "Do"
+          ],
+          "answer": 0,
+          "note": "they → Were."
+        },
+        {
+          "type": "choice",
+          "text": "Where ___ you go after the lesson?",
+          "options": [
+            "did",
+            "was",
+            "were",
+            "do"
+          ],
+          "answer": 0,
+          "note": "Soru kelimesi + did + özne."
+        },
+        {
+          "type": "choice",
+          "text": "Did your brother ___ the exam?",
+          "options": [
+            "pass",
+            "passed",
+            "passes",
+            "passing"
+          ],
+          "answer": 0,
+          "note": "Did + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "___ it expensive?",
+          "options": [
+            "Was",
+            "Did",
+            "Were"
+          ],
+          "answer": 0,
+          "note": "it → Was."
+        },
+        {
+          "type": "choice",
+          "text": "Did you sleep well? — Yes, ___ .",
+          "options": [
+            "I did",
+            "I was",
+            "I do",
+            "did I"
+          ],
+          "answer": 0,
+          "note": "Kısa cevapta did tekrarlanır."
+        },
+        {
+          "type": "choice",
+          "text": "How many people ___ come to the meeting?",
+          "options": [
+            "did",
+            "was",
+            "were",
+            "do"
+          ],
+          "answer": 0,
+          "note": "Geçmiş soru → did + yalın fiil."
+        }
+      ]
+    },
+    {
+      "id": "a2-12-quantifiers-much-many",
+      "level": "A2",
+      "order": 12,
+      "title": "much, many, a little, a few — ne kadar",
+      "topic": "Quantifiers",
+      "canDo": "Miktarı, sayılabilir ve sayılamayan isimlere göre doğru belirtebilirim.",
+      "covers": [
+        "QUANT.much"
+      ],
+      "concept": {
+        "summary": "İngilizcede miktar kelimesi ismin sayılabilir olup olmamasına göre değişir. much sayılamayan isimlerle (time, money, water), many sayılabilirlerle (people, books) kullanılır; ikisi de daha çok olumsuz cümlede ve soruda geçer. Az miktar için de aynı ayrım sürer: a little sayılamayanla, a few sayılabilirle.",
+        "formula": {
+          "left": "much + sayılamayan",
+          "right": "many + sayılabilir"
+        },
+        "table": [
+          {
+            "form": "much",
+            "be": "sayılamayan",
+            "example": "How much time do we have?"
+          },
+          {
+            "form": "many",
+            "be": "sayılabilir",
+            "example": "How many people came?"
+          },
+          {
+            "form": "a little",
+            "be": "sayılamayan, az",
+            "example": "a little sugar"
+          },
+          {
+            "form": "a few",
+            "be": "sayılabilir, az",
+            "example": "a few friends"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "We don't have much time.",
+          "tr": "Fazla vaktimiz yok.",
+          "note": "time sayılamaz → much."
+        },
+        {
+          "en": "How much sugar do you want?",
+          "tr": "Ne kadar şeker istersin?",
+          "note": "Soruda much."
+        },
+        {
+          "en": "There weren't many people at the station.",
+          "tr": "İstasyonda çok kişi yoktu.",
+          "note": "people sayılabilir → many."
+        },
+        {
+          "en": "I speak a little Spanish.",
+          "tr": "Biraz İspanyolca konuşurum.",
+          "note": "Dil sayılamaz → a little."
+        },
+        {
+          "en": "She invited a few friends for dinner.",
+          "tr": "Yemeğe birkaç arkadaşını çağırdı.",
+          "note": "friends sayılabilir → a few."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "How much people came?",
+          "right": "How many people came?",
+          "why": "people sayılabilir → many."
+        },
+        {
+          "wrong": "I have a few money.",
+          "right": "I have a little money.",
+          "why": "money sayılamaz → a little."
+        },
+        {
+          "wrong": "There are much cars in the street.",
+          "right": "There are many cars in the street.",
+          "why": "cars sayılabilir → many."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "How ___ money do you need?",
+          "options": [
+            "much",
+            "many",
+            "some",
+            "another"
+          ],
+          "answer": 0,
+          "note": "money sayılamaz."
+        },
+        {
+          "type": "choice",
+          "text": "How ___ students are in the class?",
+          "options": [
+            "many",
+            "much",
+            "another",
+            "one"
+          ],
+          "answer": 0,
+          "note": "students sayılabilir."
+        },
+        {
+          "type": "choice",
+          "text": "There is not ___ time left.",
+          "options": [
+            "much",
+            "many",
+            "a lot",
+            "few"
+          ],
+          "answer": 0,
+          "note": "time sayılamaz → much."
+        },
+        {
+          "type": "gap",
+          "text": "How ___ people came to the party?",
+          "options": [
+            "many",
+            "much",
+            "a lot"
+          ],
+          "answer": 0,
+          "note": "people sayılabilir → many."
+        },
+        {
+          "type": "choice",
+          "text": "I have ___ money, but not enough for a taxi.",
+          "options": [
+            "a little",
+            "a few",
+            "many",
+            "much of"
+          ],
+          "answer": 0,
+          "note": "money sayılamaz → a little."
+        },
+        {
+          "type": "choice",
+          "text": "Only ___ students passed the exam.",
+          "options": [
+            "a few",
+            "a little",
+            "much",
+            "any"
+          ],
+          "answer": 0,
+          "note": "students sayılabilir → a few."
+        },
+        {
+          "type": "choice",
+          "text": "We did not have ___ rain last summer.",
+          "options": [
+            "much",
+            "many",
+            "a few",
+            "one"
+          ],
+          "answer": 0,
+          "note": "rain sayılamaz → much."
+        },
+        {
+          "type": "gap",
+          "text": "There were ___ cars in the car park.",
+          "options": [
+            "many",
+            "much",
+            "a little"
+          ],
+          "answer": 0,
+          "note": "cars sayılabilir → many."
+        },
+        {
+          "type": "choice",
+          "text": "Add ___ salt to the soup.",
+          "options": [
+            "a little",
+            "a few",
+            "many",
+            "one"
+          ],
+          "answer": 0,
+          "note": "salt sayılamaz → a little."
+        },
+        {
+          "type": "choice",
+          "text": "She has ___ close friends in this city.",
+          "options": [
+            "a few",
+            "a little",
+            "much",
+            "any"
+          ],
+          "answer": 0,
+          "note": "friends sayılabilir → a few."
+        }
+      ]
+    },
+    {
+      "id": "a2-13-determiners-another-ones",
+      "level": "A2",
+      "order": 13,
+      "title": "another, this book, the red ones",
+      "topic": "Determiners and prop-words",
+      "canDo": "Hangi şeyden söz ettiğimi netleştirebilir, ismi tekrar etmeden konuşabilirim.",
+      "covers": [
+        "DT.another",
+        "DT.this.that_N",
+        "PIND.ones"
+      ],
+      "concept": {
+        "summary": "another \"bir tane daha\" demektir ve her zaman tekil isim alır. this ve that yalnız başına durabildiği gibi ismin önüne de gelir: this book, that car. Aynı ismi tekrar etmemek için yerine one, çoğulda ones konur: the red ones. Bu küçük kelimeler cümlede hangi şeyden söz ettiğini belli eder.",
+        "formula": {
+          "left": "another + tekil isim",
+          "right": "this / that + isim, one / ones"
+        },
+        "table": [
+          {
+            "form": "another",
+            "be": "bir tane daha",
+            "example": "Would you like another cup?"
+          },
+          {
+            "form": "this / that + isim",
+            "be": "bu / şu",
+            "example": "this book, that car"
+          },
+          {
+            "form": "one",
+            "be": "tekil isim yerine",
+            "example": "the blue one"
+          },
+          {
+            "form": "ones",
+            "be": "çoğul isim yerine",
+            "example": "the red ones"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Can I have another slice?",
+          "tr": "Bir dilim daha alabilir miyim?",
+          "note": "another + tekil isim."
+        },
+        {
+          "en": "This film is better than that one.",
+          "tr": "Bu film şundan daha iyi.",
+          "note": "one, film'in yerini tuttu."
+        },
+        {
+          "en": "I like these shoes, not those ones.",
+          "tr": "Bu ayakkabıları beğendim, şunları değil.",
+          "note": "Çoğulda ones."
+        },
+        {
+          "en": "That book on the shelf is mine.",
+          "tr": "Raftaki o kitap benim.",
+          "note": "that + isim."
+        },
+        {
+          "en": "The blue ones are cheaper than the black ones.",
+          "tr": "Maviler siyahlardan daha ucuz.",
+          "note": "İki kez ones kullanıldı."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Can I have another slices?",
+          "right": "Can I have another slice?",
+          "why": "another her zaman tekil isim alır."
+        },
+        {
+          "wrong": "I like these shoes, not those one.",
+          "right": "I like these shoes, not those ones.",
+          "why": "Çoğul karşılığı ones'tır."
+        },
+        {
+          "wrong": "This is more comfortable than that chair one.",
+          "right": "This chair is more comfortable than that one.",
+          "why": "one ismin yerine geçer, ismin yanına gelmez."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "He asked for ___ glass of water.",
+          "options": [
+            "another",
+            "another the",
+            "other a",
+            "the another"
+          ],
+          "answer": 0,
+          "note": "Bir tane daha → another."
+        },
+        {
+          "type": "choice",
+          "text": "I don't like this bag; show me ___ .",
+          "options": [
+            "another one",
+            "another ones",
+            "other one",
+            "an another"
+          ],
+          "answer": 0,
+          "note": "Tekil → another one."
+        },
+        {
+          "type": "choice",
+          "text": "These apples are fresh, but ___ are not.",
+          "options": [
+            "those ones",
+            "that ones",
+            "those one",
+            "them ones"
+          ],
+          "answer": 0,
+          "note": "Uzak ve çoğul → those ones."
+        },
+        {
+          "type": "gap",
+          "text": "Would you like ___ cup of tea?",
+          "options": [
+            "another",
+            "other",
+            "others"
+          ],
+          "answer": 0,
+          "note": "Bir tane daha → another."
+        },
+        {
+          "type": "choice",
+          "text": "___ jacket in the window is very nice.",
+          "options": [
+            "That",
+            "Those",
+            "These one",
+            "That one of"
+          ],
+          "answer": 0,
+          "note": "Tekil isimden önce → That."
+        },
+        {
+          "type": "choice",
+          "text": "I have two pens. Take the green ___ .",
+          "options": [
+            "one",
+            "ones",
+            "the one of",
+            "them"
+          ],
+          "answer": 0,
+          "note": "Tek bir kalem → one."
+        },
+        {
+          "type": "choice",
+          "text": "The small cups are here; the big ___ are in the cupboard.",
+          "options": [
+            "ones",
+            "one",
+            "ones of",
+            "them"
+          ],
+          "answer": 0,
+          "note": "Çoğul → ones."
+        },
+        {
+          "type": "gap",
+          "text": "___ shoes are too small for me.",
+          "options": [
+            "These",
+            "This",
+            "That one"
+          ],
+          "answer": 0,
+          "note": "Çoğul isimden önce → These."
+        },
+        {
+          "type": "choice",
+          "text": "This road is closed, so we will take ___ .",
+          "options": [
+            "another",
+            "another roads",
+            "other",
+            "the another"
+          ],
+          "answer": 0,
+          "note": "Başka bir tane → another."
+        },
+        {
+          "type": "choice",
+          "text": "Which shirt do you want, the white ___ or the blue one?",
+          "options": [
+            "one",
+            "ones",
+            "it",
+            "that"
+          ],
+          "answer": 0,
+          "note": "Tekil → one."
+        }
+      ]
+    }
+  ]
+}

@@ -6,9 +6,9 @@
   },
   "lessons": [
     {
-      "id": "a2-13-that-clauses",
+      "id": "a2-15-that-clauses",
       "level": "A2",
-      "order": 13,
+      "order": 15,
       "title": "say, tell, think + that",
       "topic": "Reported speech with that-clauses",
       "canDo": "Başkasının söylediğini kendi cümlemle aktarabilirim.",
@@ -211,9 +211,9 @@
       ]
     },
     {
-      "id": "a2-14-indirect-questions",
+      "id": "a2-16-indirect-questions",
       "level": "A2",
-      "order": 14,
+      "order": 16,
       "title": "Dolaylı sorular",
       "topic": "Indirect questions and what-clauses",
       "canDo": "Kibarca bilgi isteyebilir, bir şeyi bilip bilmediğimi söyleyebilirim.",
@@ -416,9 +416,9 @@
       ]
     },
     {
-      "id": "a2-15-have-let-make",
+      "id": "a2-17-have-let-make",
       "level": "A2",
-      "order": 15,
+      "order": 17,
       "title": "make, let, have — birine yaptırmak",
       "topic": "Causative verbs: have / let / make",
       "canDo": "Birinin bir şeyi yapmasını sağladığımı ya da ona izin verdiğimi anlatabilirim.",
@@ -622,9 +622,9 @@
       ]
     },
     {
-      "id": "a2-16-phrasal-verb-objects",
+      "id": "a2-18-phrasal-verb-objects",
       "level": "A2",
-      "order": 16,
+      "order": 18,
       "title": "Öbek fiillerde nesnenin yeri",
       "topic": "Separable phrasal verbs, relative adverbs",
       "canDo": "Öbek fiilleri nesneyle birlikte doğru sırada kullanabilirim.",

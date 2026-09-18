@@ -6,9 +6,9 @@
   },
   "lessons": [
     {
-      "id": "a2-07-present-perfect",
+      "id": "a2-08-present-perfect",
       "level": "A2",
-      "order": 7,
+      "order": 8,
       "title": "Present perfect — have done",
       "topic": "Present perfect (affirmative)",
       "canDo": "Hayatımda neler yaptığımı, ne zaman olduğunu söylemeden anlatabilirim.",
@@ -210,9 +210,9 @@
       ]
     },
     {
-      "id": "a2-08-passive",
+      "id": "a2-09-passive",
       "level": "A2",
-      "order": 8,
+      "order": 9,
       "title": "Edilgen çatı — is made, was built",
       "topic": "Passive: present and past",
       "canDo": "İşi kimin yaptığı önemli değilken olayın kendisini anlatabilirim.",
@@ -416,9 +416,9 @@
       ]
     },
     {
-      "id": "a2-09-relative-who-that",
+      "id": "a2-10-relative-who-that",
       "level": "A2",
-      "order": 9,
+      "order": 10,
       "title": "who ve that — kim, hangi",
       "topic": "Relative pronouns: who, that, which",
       "canDo": "Bir kişiyi ya da şeyi ayrıntısıyla tarif edebilirim.",
@@ -621,9 +621,9 @@
       ]
     },
     {
-      "id": "a2-10-comparatives-more",
+      "id": "a2-11-comparatives-more",
       "level": "A2",
-      "order": 10,
+      "order": 11,
       "title": "more ve the most",
       "topic": "Comparatives and superlatives with more / most",
       "canDo": "Uzun sıfatlarla karşılaştırma yapabilirim.",
@@ -826,216 +826,9 @@
       ]
     },
     {
-      "id": "a2-11-determiners-quantifiers",
+      "id": "a2-14-if-as",
       "level": "A2",
-      "order": 11,
-      "title": "much, another, this book",
-      "topic": "Determiners and quantifiers",
-      "canDo": "Miktar belirtebilir, hangi şeyden söz ettiğimi netleştirebilirim.",
-      "covers": [
-        "QUANT.much",
-        "DT.another",
-        "DT.this.that_N",
-        "PIND.ones"
-      ],
-      "concept": {
-        "summary": "much sayılamayan isimlerle, many sayılabilirlerle kullanılır ve ikisi de daha çok olumsuz ve soruda geçer. another \"bir tane daha\" demektir ve tekil isim ister. this/that ismin önüne de gelebilir; tekrardan kaçınmak için isim yerine one ya da ones konur.",
-        "formula": {
-          "left": "much + sayılamayan / many + sayılabilir",
-          "right": "another + tekil isim"
-        },
-        "table": [
-          {
-            "form": "much",
-            "be": "sayılamayan",
-            "example": "How much time do we have?"
-          },
-          {
-            "form": "many",
-            "be": "sayılabilir",
-            "example": "How many people came?"
-          },
-          {
-            "form": "another",
-            "be": "bir tane daha",
-            "example": "Would you like another cup?"
-          },
-          {
-            "form": "one / ones",
-            "be": "isim yerine",
-            "example": "I'll take the red ones."
-          }
-        ]
-      },
-      "examples": [
-        {
-          "en": "We don't have much time.",
-          "tr": "Fazla vaktimiz yok.",
-          "note": "time sayılamaz → much."
-        },
-        {
-          "en": "How much sugar do you want?",
-          "tr": "Ne kadar şeker istersin?",
-          "note": "Soruda much."
-        },
-        {
-          "en": "Can I have another slice?",
-          "tr": "Bir dilim daha alabilir miyim?",
-          "note": "another + tekil isim."
-        },
-        {
-          "en": "This film is better than that one.",
-          "tr": "Bu film şundan daha iyi.",
-          "note": "one, film'in yerini tuttu."
-        },
-        {
-          "en": "I like these shoes, not those ones.",
-          "tr": "Bu ayakkabıları beğendim, şunları değil.",
-          "note": "Çoğulda ones."
-        }
-      ],
-      "mistakes": [
-        {
-          "wrong": "How much people came?",
-          "right": "How many people came?",
-          "why": "people sayılabilir → many."
-        },
-        {
-          "wrong": "Can I have another slices?",
-          "right": "Can I have another slice?",
-          "why": "another her zaman tekil isim alır."
-        },
-        {
-          "wrong": "I like these shoes, not those one.",
-          "right": "I like these shoes, not those ones.",
-          "why": "Çoğul karşılığı ones'tır."
-        }
-      ],
-      "exercises": [
-        {
-          "type": "choice",
-          "text": "How ___ money do you need?",
-          "options": [
-            "much",
-            "many",
-            "some",
-            "another"
-          ],
-          "answer": 0,
-          "note": "money sayılamaz."
-        },
-        {
-          "type": "choice",
-          "text": "How ___ students are in the class?",
-          "options": [
-            "many",
-            "much",
-            "another",
-            "one"
-          ],
-          "answer": 0,
-          "note": "students sayılabilir."
-        },
-        {
-          "type": "choice",
-          "text": "He asked for ___ glass of water.",
-          "options": [
-            "another",
-            "another the",
-            "other a",
-            "the another"
-          ],
-          "answer": 0,
-          "note": "Bir tane daha → another."
-        },
-        {
-          "type": "choice",
-          "text": "I don't like this bag; show me ___ .",
-          "options": [
-            "another one",
-            "another ones",
-            "other one",
-            "an another"
-          ],
-          "answer": 0,
-          "note": "Tekil → another one."
-        },
-        {
-          "type": "gap",
-          "text": "These apples are fresh, but ___ are not.",
-          "options": [
-            "those ones",
-            "that ones",
-            "those one"
-          ],
-          "answer": 0,
-          "note": "Uzak ve çoğul → those ones."
-        },
-        {
-          "type": "choice",
-          "text": "There is not ___ time left.",
-          "options": [
-            "much",
-            "many",
-            "a lot",
-            "few"
-          ],
-          "answer": 0,
-          "note": "time sayılamaz → much."
-        },
-        {
-          "type": "choice",
-          "text": "How ___ people came to the party?",
-          "options": [
-            "many",
-            "much",
-            "a lot",
-            "little"
-          ],
-          "answer": 0,
-          "note": "people sayılabilir → many."
-        },
-        {
-          "type": "choice",
-          "text": "Would you like ___ cup of tea?",
-          "options": [
-            "another",
-            "other",
-            "others",
-            "the other"
-          ],
-          "answer": 0,
-          "note": "Bir tane daha → another."
-        },
-        {
-          "type": "gap",
-          "text": "I have ___ money, but not enough for a taxi.",
-          "options": [
-            "a little",
-            "a few",
-            "many"
-          ],
-          "answer": 0,
-          "note": "money sayılamaz → a little."
-        },
-        {
-          "type": "choice",
-          "text": "Only ___ students passed the exam.",
-          "options": [
-            "a few",
-            "a little",
-            "much",
-            "any"
-          ],
-          "answer": 0,
-          "note": "students sayılabilir → a few."
-        }
-      ]
-    },
-    {
-      "id": "a2-12-if-as",
-      "level": "A2",
-      "order": 12,
+      "order": 14,
       "title": "if ve as",
       "topic": "Adverbial clauses: if, as",
       "canDo": "Koşul kurabilir, sebep ve zaman bildirebilirim.",

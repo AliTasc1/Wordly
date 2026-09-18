@@ -6,216 +6,9 @@
   },
   "lessons": [
     {
-      "id": "a2-01-past-negative-question",
+      "id": "a2-03-past-progressive",
       "level": "A2",
-      "order": 1,
-      "title": "Geçmiş zaman — olumsuz ve soru",
-      "topic": "Past simple: didn't / did",
-      "canDo": "Dün yapmadığım şeyleri söyleyebilir, olanı biteni sorabilirim.",
-      "covers": [
-        "TA.PAST.be.NEG",
-        "TA.PAST.do.NEG",
-        "TA.PAST.do.INT.AFF",
-        "VP.SVO.NEG"
-      ],
-      "concept": {
-        "summary": "Geçmişte olumsuzluk ve soru için did kullanılır. Geçmişlik did'e geçtiği için asıl fiil yalın hâle döner — ikinci kez geçmiş yapılmaz. be fiili ise kendi başına çalışır: wasn't, weren't.",
-        "formula": {
-          "left": "Özne + didn't + yalın fiil",
-          "right": "Did + özne + yalın fiil?"
-        },
-        "table": [
-          {
-            "form": "olumsuz",
-            "be": "didn't + yalın fiil",
-            "example": "I didn't see him."
-          },
-          {
-            "form": "soru",
-            "be": "Did + özne + yalın fiil",
-            "example": "Did you see him?"
-          },
-          {
-            "form": "be olumsuz",
-            "be": "wasn't / weren't",
-            "example": "She wasn't at home."
-          },
-          {
-            "form": "be soru",
-            "be": "Was / Were + özne",
-            "example": "Were they late?"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "en": "I didn't go to work yesterday.",
-          "tr": "Dün işe gitmedim.",
-          "note": "went değil go — geçmişlik didn't'te."
-        },
-        {
-          "en": "Did you call her?",
-          "tr": "Onu aradın mı?",
-          "note": "Soruda Did başa gelir."
-        },
-        {
-          "en": "He wasn't ready.",
-          "tr": "Hazır değildi.",
-          "note": "be fiili did almaz."
-        },
-        {
-          "en": "We didn't know the address.",
-          "tr": "Adresi bilmiyorduk.",
-          "note": "know yalın kaldı."
-        },
-        {
-          "en": "Were you at the meeting?",
-          "tr": "Toplantıda mıydın?",
-          "note": "you → Were."
-        }
-      ],
-      "mistakes": [
-        {
-          "wrong": "I didn't went there.",
-          "right": "I didn't go there.",
-          "why": "Geçmişlik bir cümlede iki kez gösterilmez."
-        },
-        {
-          "wrong": "Did you saw the film?",
-          "right": "Did you see the film?",
-          "why": "Did'den sonra fiil yalın gelir."
-        },
-        {
-          "wrong": "She didn't was at home.",
-          "right": "She wasn't at home.",
-          "why": "be fiiliyle did kullanılmaz."
-        }
-      ],
-      "exercises": [
-        {
-          "type": "choice",
-          "text": "They ___ the bus this morning.",
-          "options": [
-            "didn't catch",
-            "didn't caught",
-            "not caught",
-            "weren't catch"
-          ],
-          "answer": 0,
-          "note": "didn't + yalın fiil."
-        },
-        {
-          "type": "choice",
-          "text": "___ she finish the report?",
-          "options": [
-            "Did",
-            "Does",
-            "Was",
-            "Has"
-          ],
-          "answer": 0,
-          "note": "Geçmiş soru → Did."
-        },
-        {
-          "type": "choice",
-          "text": "The shops ___ open on Sunday.",
-          "options": [
-            "weren't",
-            "wasn't",
-            "didn't",
-            "don't"
-          ],
-          "answer": 0,
-          "note": "shops çoğul be → weren't."
-        },
-        {
-          "type": "choice",
-          "text": "Did you ___ my message?",
-          "options": [
-            "get",
-            "got",
-            "getting",
-            "gets"
-          ],
-          "answer": 0,
-          "note": "Did'den sonra yalın fiil."
-        },
-        {
-          "type": "gap",
-          "text": "I ___ anything about it.",
-          "options": [
-            "didn't know",
-            "didn't knew",
-            "not knew"
-          ],
-          "answer": 0,
-          "note": "didn't + yalın fiil."
-        },
-        {
-          "type": "choice",
-          "text": "She ___ not come to the meeting yesterday.",
-          "options": [
-            "did",
-            "was",
-            "does",
-            "is"
-          ],
-          "answer": 0,
-          "note": "Geçmiş olumsuz → did not + yalın fiil."
-        },
-        {
-          "type": "choice",
-          "text": "___ you see the new film last night?",
-          "options": [
-            "Did",
-            "Do",
-            "Were",
-            "Was"
-          ],
-          "answer": 0,
-          "note": "Geçmiş soru → Did + yalın fiil."
-        },
-        {
-          "type": "choice",
-          "text": "They ___ not at the station when we arrived.",
-          "options": [
-            "were",
-            "was",
-            "did",
-            "are"
-          ],
-          "answer": 0,
-          "note": "be fiilinde did kullanılmaz → were not."
-        },
-        {
-          "type": "gap",
-          "text": "___ the shop open on Sunday?",
-          "options": [
-            "Was",
-            "Did",
-            "Were"
-          ],
-          "answer": 0,
-          "note": "open burada sıfat, be gerekiyor → Was."
-        },
-        {
-          "type": "choice",
-          "text": "He did not ___ anything about it.",
-          "options": [
-            "say",
-            "said",
-            "says",
-            "saying"
-          ],
-          "answer": 0,
-          "note": "did not + yalın fiil."
-        }
-      ]
-    },
-    {
-      "id": "a2-02-past-progressive",
-      "level": "A2",
-      "order": 2,
+      "order": 3,
       "title": "Sürekli geçmiş — was doing",
       "topic": "Past progressive",
       "canDo": "Geçmişte bir anda ne yapmakta olduğumu anlatabilirim.",
@@ -417,9 +210,9 @@
       ]
     },
     {
-      "id": "a2-03-will",
+      "id": "a2-04-will",
       "level": "A2",
-      "order": 3,
+      "order": 4,
       "title": "will — gelecek",
       "topic": "Future: will",
       "canDo": "Gelecekle ilgili tahmin yapabilir, o anda karar verebilirim.",
@@ -622,9 +415,9 @@
       ]
     },
     {
-      "id": "a2-04-be-going-to",
+      "id": "a2-05-be-going-to",
       "level": "A2",
-      "order": 4,
+      "order": 5,
       "title": "be going to — plan",
       "topic": "Future: be going to",
       "canDo": "Önceden yaptığım planları anlatabilirim.",
@@ -826,9 +619,9 @@
       ]
     },
     {
-      "id": "a2-05-have-to-should",
+      "id": "a2-06-have-to-should",
       "level": "A2",
-      "order": 5,
+      "order": 6,
       "title": "have to, should, need to",
       "topic": "Modals of obligation and advice",
       "canDo": "Bir şeyin zorunlu mu yoksa tavsiye mi olduğunu ayırt ederek söyleyebilirim.",
@@ -1032,9 +825,9 @@
       ]
     },
     {
-      "id": "a2-06-would-can-you",
+      "id": "a2-07-would-can-you",
       "level": "A2",
-      "order": 6,
+      "order": 7,
       "title": "would like, Can you …?",
       "topic": "would and functional requests",
       "canDo": "Kibarca istekte bulunabilir, sipariş verebilir, yardım isteyebilirim.",
