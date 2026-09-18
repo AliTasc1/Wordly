@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Screen, Spacer } from '../components/Screen';
@@ -9,6 +9,7 @@ import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
 import { speakingOf } from '../content';
 import { useApp } from '../state/AppContext';
+import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
 import { useBack } from '../navigation/useGo';
 
 /**
@@ -23,6 +24,12 @@ import { useBack } from '../navigation/useGo';
 export function SpeakScreen() {
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire } = useApp();
+
+  // Ekrandan çıkınca model ses susmalı.
+  useEffect(() => {
+    primeVoices();
+    return stopSpeech;
+  }, []);
 
   const items = useMemo(() => speakingOf(cefr), [cefr]);
   const index = Math.min(position('speaking', cefr), items.length - 1);
@@ -121,14 +128,23 @@ export function SpeakScreen() {
         {phrases ? (
           <View style={styles.phraseList}>
             {item.usefulPhrases.map((phrase) => (
-              <View key={phrase.en} style={styles.phrase}>
-                <Txt s={13.5} w={600} lh={1.5}>
-                  {phrase.en}
-                </Txt>
+              <Press
+                key={phrase.en}
+                scale={0.995}
+                onPress={() => speakLine(phrase.en, { level: item.level })}
+                accessibilityRole="button"
+                accessibilityLabel={`Kalıbı dinle: ${phrase.en}`}
+                style={styles.phrase}>
+                <View style={styles.phraseRow}>
+                  <Txt s={13.5} w={600} lh={1.5} style={styles.flex}>
+                    {phrase.en}
+                  </Txt>
+                  <Txt s={12}>🔊</Txt>
+                </View>
                 <Txt s={12} lh={1.5} c={colors.textDim}>
                   {phrase.tr}
                 </Txt>
-              </View>
+              </Press>
             ))}
           </View>
         ) : null}
@@ -222,6 +238,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   phrase: { gap: 3 },
+  phraseRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   recorder: { paddingTop: 16, paddingHorizontal: 18, alignItems: 'center', gap: 12 },
   recWave: { width: '100%' },
   mic: { width: 84, height: 84, borderRadius: 42, alignItems: 'center', justifyContent: 'center' },

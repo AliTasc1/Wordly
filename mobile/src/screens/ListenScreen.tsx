@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen, Spacer } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -14,8 +14,13 @@ import { listeningOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
+import { primeVoices, speakLine, speakSequence, stopSpeech } from '../audio/speech';
 
-const SPEEDS = ['1×', '0.75×', '0.5×'];
+const SPEEDS = [
+  { label: '1×', value: 1 },
+  { label: '0.75×', value: 0.75 },
+  { label: '0.5×', value: 0.5 },
+];
 
 /** 12 · Dinleme — player, transcript and comprehension questions. */
 export function ListenScreen() {
@@ -28,11 +33,60 @@ export function ListenScreen() {
   const item = items[index];
 
   const [speedIndex, setSpeedIndex] = useState(0);
-  // The transcript opens by default while there is no audio to listen to;
-  // hiding it would leave the screen with nothing the learner can actually do.
-  const [transcript, setTranscript] = useState(true);
+  // The transcript starts hidden: this is a listening exercise, and reading
+  // along from the first second turns it into a reading exercise. It is one
+  // tap away for the learner who needs it.
+  const [transcript, setTranscript] = useState(false);
   const [asked, setAsked] = useState(0);
   const [right, setRight] = useState(0);
+  const [playing, setPlaying] = useState(false);
+  const [line, setLine] = useState(-1);
+
+  // Konuşmacı başına ses seçimi cihazdan asenkron geliyor; ekran açılır
+  // açılmaz istiyoruz ki ilk dokunuşta iki ses hazır olsun.
+  useEffect(() => {
+    primeVoices();
+  }, []);
+
+  // Ekrandan çıkılınca ya da başka bir diyaloğa geçilince ses susmalı,
+  // yoksa okuma ekranında arka planda konuşmaya devam eder.
+  useEffect(
+    () => () => {
+      stopSpeech();
+    },
+    [],
+  );
+  useEffect(() => {
+    stopSpeech();
+    setPlaying(false);
+    setLine(-1);
+  }, [item.id]);
+
+  const speakers = useMemo(() => item.speakers ?? [], [item.speakers]);
+  const speed = SPEEDS[speedIndex].value;
+
+  /** Diyaloğu verilen replikten itibaren okur. */
+  const play = (from: number) => {
+    setPlaying(true);
+    speakSequence(
+      item.lines.map((l) => ({ text: l.en, speaker: Math.max(speakers.indexOf(l.who), 0) })),
+      {
+        level: item.level,
+        speed,
+        from,
+        onLine: setLine,
+        onDone: () => {
+          setPlaying(false);
+          setLine(-1);
+        },
+      },
+    );
+  };
+
+  const stop = () => {
+    stopSpeech();
+    setPlaying(false);
+  };
 
   const question = item.questions[asked];
   const quiz = useQuiz(question.answer, (_, correct) => {
@@ -47,6 +101,7 @@ export function ListenScreen() {
   const nextQuestion = () => {
     quiz.reset();
     if (last) {
+      stop();
       setPosition('listening', cefr, (index + 1) % items.length);
       setAsked(0);
       setRight(0);
@@ -74,26 +129,27 @@ export function ListenScreen() {
         deg={150}
         colors={['rgba(34,211,238,.18)', 'rgba(14,20,38,.94)']}
         style={styles.player}>
-        <Waveform tall height={72} />
+        <Waveform tall height={72} lit={playing ? (line + 1) / item.lines.length : 0} />
 
         <View style={styles.controls}>
           <Press
-            onPress={() => fire('Ses kaydı hazırlanıyor', 'Şimdilik transkriptten çalışabilirsin')}
+            onPress={() => play(Math.max(line, 0))}
             accessibilityRole="button"
-            accessibilityLabel="5 saniye geri"
+            accessibilityLabel="Bu repliği tekrar dinle"
             style={styles.smallBtn}>
-            <Txt f="mono" s={12} w={700}>
-              -5s
+            <Txt f="mono" s={13} w={700}>
+              ↺
             </Txt>
           </Press>
 
           <Press
-            onPress={() => fire('Ses kaydı henüz eklenmedi', 'Diyaloğu transkriptten okuyabilirsin')}
+            onPress={() => (playing ? stop() : play(0))}
             accessibilityRole="button"
-            accessibilityLabel="Oynat">
+            accessibilityState={{ selected: playing }}
+            accessibilityLabel={playing ? 'Durdur' : 'Oynat'}>
             <Gradient colors={gradients.cyan} style={styles.playBtn}>
               <Txt f="m" s={18} w={700}>
-                ▶
+                {playing ? '■' : '▶'}
               </Txt>
             </Gradient>
           </Press>
@@ -104,17 +160,17 @@ export function ListenScreen() {
             accessibilityLabel="Oynatma hızı"
             style={styles.smallBtn}>
             <Txt f="mono" s={11} w={700}>
-              {SPEEDS[speedIndex]}
+              {SPEEDS[speedIndex].label}
             </Txt>
           </Press>
         </View>
 
         <View style={styles.scrubber}>
           <Txt f="mono" s={11} w={700} c={colors.textDim}>
-            0:00
+            {Math.max(line + 1, 0)}
           </Txt>
           <ProgressBar
-            pct={0}
+            pct={playing ? ((line + 1) / item.lines.length) * 100 : 0}
             from={colors.accent}
             to={colors.primary}
             height={5}
@@ -122,9 +178,13 @@ export function ListenScreen() {
             style={styles.flex}
           />
           <Txt f="mono" s={11} w={700} c={colors.textDim}>
-            {item.minutes}:00
+            {item.lines.length} replik
           </Txt>
         </View>
+
+        <Txt s={11} lh={1.5} c={colors.textFaint}>
+          Cihazının kendi seslendirmesiyle okunuyor. Stüdyo kaydı henüz yok.
+        </Txt>
       </Gradient>
 
       <Press
@@ -144,21 +204,35 @@ export function ListenScreen() {
 
       {transcript ? (
         <View style={styles.transcript}>
-          {item.lines.map((line, i) => (
-            <View key={i} style={styles.line}>
+          {item.lines.map((turn, i) => (
+            <Press
+              key={i}
+              scale={0.995}
+              onPress={() => {
+                stop();
+                setLine(i);
+                speakLine(turn.en, {
+                  level: item.level,
+                  speaker: Math.max(speakers.indexOf(turn.who), 0),
+                  speed,
+                });
+              }}
+              accessibilityRole="button"
+              accessibilityLabel={`${turn.who}: repliği dinle`}
+              style={[styles.line, i === line && styles.lineOn]}>
               <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.08}>
-                {line.who.toUpperCase()}
+                {turn.who.toUpperCase()}
               </Txt>
               <GlossedText
-                text={line.en}
+                text={turn.en}
                 glossary={item.glossary}
                 size={13.5}
                 onWord={(gloss) => fire(gloss.w, gloss.tr)}
               />
               <Txt s={12} lh={1.6} c={colors.textDim}>
-                {line.tr}
+                {turn.tr}
               </Txt>
-            </View>
+            </Press>
           ))}
         </View>
       ) : null}
@@ -256,5 +330,7 @@ const styles = StyleSheet.create({
     padding: 15,
     gap: 14,
   },
-  line: { gap: 3 },
+  line: { gap: 3, borderRadius: radii.input, paddingHorizontal: 8, paddingVertical: 6 },
+  // Okunmakta olan replik: öğrenci sesi hangi satırda olduğunu kaybetmesin.
+  lineOn: { backgroundColor: alpha.w05, borderWidth: 1, borderColor: 'rgba(34,211,238,.35)' },
 });

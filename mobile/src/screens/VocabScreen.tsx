@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -11,6 +11,7 @@ import { alpha, colors, radii, shadows } from '../theme/tokens';
 import { vocabOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
+import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
 
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
@@ -23,6 +24,32 @@ export function VocabScreen() {
   const index = Math.min(position('vocab', cefr), deck.length - 1);
   const card = deck[index];
   const saved = isSaved(card.id);
+
+  // Kelimeyi mi örnek cümleyi mi okuduğumuzu gösteriyor; dalga formu buna
+  // göre yanıyor, yoksa iki düğme de aynı ölü süsü paylaşıyor.
+  const [speaking, setSpeaking] = useState<'word' | 'example' | null>(null);
+
+  useEffect(() => {
+    primeVoices();
+    return stopSpeech;
+  }, []);
+
+  // Karttan karta geçerken önceki kelimenin okunması sürmemeli.
+  useEffect(() => {
+    stopSpeech();
+    setSpeaking(null);
+  }, [card.id]);
+
+  const say = (what: 'word' | 'example', text: string) => {
+    stopSpeech();
+    setSpeaking(what);
+    speakLine(text, {
+      level: card.cefr,
+      // Kelime telaffuzu ezber için; cümleden biraz daha yavaş okunuyor.
+      speed: what === 'word' ? 0.85 : 1,
+      onDone: () => setSpeaking(null),
+    });
+  };
 
   const advance = () => setPosition('vocab', cefr, (index + 1) % deck.length);
 
@@ -69,9 +96,10 @@ export function VocabScreen() {
             <Txt s={15}>{saved ? '★' : '☆'}</Txt>
           </Press>
           <Press
-            onPress={() => fire(`🔊 ${card.ipa ?? card.word}`, 'Telaffuz oynatılıyor · 0.75× dene')}
+            onPress={() => say('word', card.word)}
             accessibilityRole="button"
-            accessibilityLabel="Telaffuzu dinle"
+            accessibilityState={{ selected: speaking === 'word' }}
+            accessibilityLabel={`“${card.word}” telaffuzunu dinle`}
             style={[styles.iconBtn, styles.audioBtn]}>
             <Txt s={15}>🔊</Txt>
           </Press>
@@ -99,7 +127,13 @@ export function VocabScreen() {
           </View>
         </View>
 
-        <Waveform height={34} />
+        <Press
+          onPress={() => say('word', card.word)}
+          scale={0.99}
+          accessibilityRole="button"
+          accessibilityLabel={`“${card.word}” telaffuzunu dinle`}>
+          <Waveform height={34} lit={speaking === 'word' ? 1 : 0} />
+        </Press>
 
         <View style={styles.block}>
           <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.1} style={styles.blockKicker}>
@@ -111,9 +145,17 @@ export function VocabScreen() {
         </View>
 
         <View style={[styles.block, styles.exampleBlock]}>
-          <Txt f="mono" s={10} w={700} c={colors.blueSoft} ls={0.1} style={styles.blockKicker}>
-            ÖRNEK
-          </Txt>
+          <Press
+            onPress={() => say('example', card.example)}
+            accessibilityRole="button"
+            accessibilityState={{ selected: speaking === 'example' }}
+            accessibilityLabel="Örnek cümleyi dinle"
+            style={styles.blockKickerRow}>
+            <Txt f="mono" s={10} w={700} c={colors.blueSoft} ls={0.1}>
+              ÖRNEK
+            </Txt>
+            <Txt s={12}>🔊</Txt>
+          </Press>
           <Example sentence={card.example} word={card.word} />
           <Txt s={12} c={colors.textDim} style={styles.exampleTr}>
             {card.exampleTr}
@@ -215,6 +257,7 @@ const styles = StyleSheet.create({
   ipaRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 5 },
   block: { backgroundColor: alpha.w04, borderRadius: radii.input, padding: 13 },
   blockKicker: { marginBottom: 5 },
+  blockKickerRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 5 },
   exampleBlock: { backgroundColor: 'rgba(46,107,255,.1)' },
   exampleTr: { marginTop: 4 },
   actions: { flexDirection: 'row', gap: 10 },

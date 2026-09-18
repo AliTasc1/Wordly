@@ -21,12 +21,19 @@ export function Waveform({
   tall = false,
   /** Idle state for the recorder — flat 4px bars. */
   idle = false,
+  /**
+   * How far playback has got, 0–1. Bars before this point are lit, the rest
+   * stay dim — the waveform then shows real progress instead of decorating
+   * the player with a fixed pattern.
+   */
+  lit,
   height,
   style,
 }: {
   heights?: number[];
   tall?: boolean;
   idle?: boolean;
+  lit?: number;
   height?: number;
   style?: StyleProp<ViewStyle>;
 }) {
@@ -47,7 +54,16 @@ export function Waveform({
               {
                 height: barHeight,
                 borderRadius: tall ? 3 : 2,
-                opacity: tall ? (i < 10 ? 0.95 : 0.4) : 0.8,
+                opacity:
+                  lit != null
+                    ? i < Math.round(lit * heights.length)
+                      ? 0.95
+                      : 0.28
+                    : tall
+                      ? i < 10
+                        ? 0.95
+                        : 0.4
+                      : 0.8,
               },
             ]}
           />
