@@ -502,5 +502,527 @@
     "note": "Son cümle."
    }
   ]
+ },
+ {
+  "id": "b2-r-06",
+  "level": "B2",
+  "order": 6,
+  "kind": "reading",
+  "title": "Müzede kimin hikâyesi",
+  "titleEn": "Whose Story Does the Museum Tell?",
+  "minutes": 5,
+  "names": [],
+  "text": "A museum label appears to be a neutral piece of information: a name, a date, a material. In practice every label is the end of a long argument. When a regional museum recently reopened, the curators discovered that the collection had been described in the 1950s in language that no longer seemed defensible. Objects taken during a military campaign were listed as having been acquired, and the people who made them appeared only as anonymous craftsmen. Rewriting the labels sounds straightforward until you attempt it. Saying too little leaves the old impression intact; saying too much turns a display case into an essay that few visitors will read. The museum eventually settled on a compromise. Each label states plainly how the object entered the collection, in one sentence, and a longer explanation is available to anyone who wants it. Attendance has not fallen, and the letters of complaint were outnumbered by letters of thanks. The curators are careful, however, not to claim that the problem is solved. They point out that the new labels were written by the same institution that wrote the old ones, and that no amount of careful wording changes who currently holds the objects.",
+  "glossary": [
+   {
+    "w": "label",
+    "tr": "etiket"
+   },
+   {
+    "w": "curators",
+    "tr": "küratörler"
+   },
+   {
+    "w": "defensible",
+    "tr": "savunulabilir"
+   },
+   {
+    "w": "acquired",
+    "tr": "edinildi"
+   },
+   {
+    "w": "craftsmen",
+    "tr": "zanaatkârlar"
+   },
+   {
+    "w": "attendance",
+    "tr": "ziyaretçi sayısı"
+   },
+   {
+    "w": "outnumbered",
+    "tr": "sayıca geçti"
+   },
+   {
+    "w": "intact",
+    "tr": "olduğu gibi, dokunulmamış"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the curators discover?",
+    "options": [
+     "Visitors had stopped coming",
+     "The building was unsafe",
+     "The objects were fake",
+     "The old descriptions were no longer defensible"
+    ],
+    "answer": 3,
+    "note": "1950'lerdeki dil artık savunulabilir görünmüyordu."
+   },
+   {
+    "q": "How were the original makers described?",
+    "options": [
+     "By name",
+     "As soldiers",
+     "As owners",
+     "As anonymous craftsmen"
+    ],
+    "answer": 3,
+    "note": "\"The people who made them appeared only as anonymous craftsmen.\""
+   },
+   {
+    "q": "What is the problem with saying too much on a label?",
+    "options": [
+     "It costs more",
+     "It is inaccurate",
+     "Few visitors will read it",
+     "The case is too small"
+    ],
+    "answer": 2,
+    "note": "\"Turns a display case into an essay that few visitors will read.\""
+   },
+   {
+    "q": "What compromise did the museum reach?",
+    "options": [
+     "They closed the display",
+     "They removed the labels",
+     "They returned the objects",
+     "One plain sentence, with more available on request"
+    ],
+    "answer": 3,
+    "note": "Tek cümlelik açık ifade, isteyene daha uzun açıklama."
+   },
+   {
+    "q": "Why do the curators refuse to say the problem is solved?",
+    "options": [
+     "Attendance fell",
+     "The letters were negative",
+     "The same institution still holds the objects",
+     "The wording is unclear"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-07",
+  "level": "B2",
+  "order": 7,
+  "kind": "reading",
+  "title": "Algoritmanın önerdiği şarkı",
+  "titleEn": "The Song the Algorithm Chose",
+  "minutes": 5,
+  "names": [],
+  "text": "Music services promise to understand your taste better than you do, and to a remarkable degree they succeed. The system observes which songs you finish, which you skip after nine seconds, and what you play on a Tuesday morning as opposed to a Friday night. From these signals it builds a model that reliably produces music you enjoy. The criticism is not that the recommendations are bad, but that they are too well aimed. A listener who is never offered anything uncomfortable will never discover that their taste could have been different. Record shops and radio presenters were inefficient by comparison: they wasted your time with music you did not want, and occasionally that waste changed your life. Some services have tried to build surprise back in, adding a proportion of unfamiliar tracks to each playlist. The results have been mixed, largely because engineered surprise is measured by whether the listener stays, which quietly turns the unfamiliar track into another tool for keeping attention. Genuine discovery may require an institution that does not benefit from your continued listening, and it is not obvious who would pay for that.",
+  "glossary": [
+   {
+    "w": "algorithm",
+    "tr": "algoritma"
+   },
+   {
+    "w": "signals",
+    "tr": "sinyaller, işaretler"
+   },
+   {
+    "w": "recommendations",
+    "tr": "öneriler"
+   },
+   {
+    "w": "inefficient",
+    "tr": "verimsiz"
+   },
+   {
+    "w": "proportion",
+    "tr": "oran"
+   },
+   {
+    "w": "engineered",
+    "tr": "mühendislikle kurgulanmış"
+   },
+   {
+    "w": "playlist",
+    "tr": "çalma listesi"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the system observe?",
+    "options": [
+     "Your friends' choices",
+     "Which songs you finish or skip",
+     "Your age and address",
+     "The price you pay"
+    ],
+    "answer": 1,
+    "note": "\"Which songs you finish, which you skip after nine seconds.\""
+   },
+   {
+    "q": "What is the criticism in the text?",
+    "options": [
+     "They are usually wrong",
+     "They are too slow",
+     "The recommendations are too well aimed",
+     "They cost too much"
+    ],
+    "answer": 2,
+    "note": "\"Not that the recommendations are bad, but that they are too well aimed.\""
+   },
+   {
+    "q": "Why were record shops described as inefficient?",
+    "options": [
+     "They closed early",
+     "They were expensive",
+     "They wasted your time with unwanted music",
+     "They had little stock"
+    ],
+    "answer": 2,
+    "note": "\"They wasted your time with music you did not want.\""
+   },
+   {
+    "q": "What problem does engineered surprise have?",
+    "options": [
+     "It removes good songs",
+     "It is too expensive",
+     "Listeners never notice it",
+     "It is measured by whether the listener stays"
+    ],
+    "answer": 3,
+    "note": "Sürpriz de dikkat tutma aracına dönüşüyor."
+   },
+   {
+    "q": "What might genuine discovery require?",
+    "options": [
+     "Longer playlists",
+     "An institution that does not profit from your listening",
+     "Better algorithms",
+     "More data"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-08",
+  "level": "B2",
+  "order": 8,
+  "kind": "reading",
+  "title": "Gece treni geri döndü",
+  "titleEn": "The Return of the Night Train",
+  "minutes": 5,
+  "names": [],
+  "text": "For two decades the night train looked like a museum piece. Budget airlines were faster and cheaper, and one European operator after another withdrew its sleeper services. The reversal, when it came, was driven less by nostalgia than by arithmetic. As the cost of short flights began to include their environmental damage, and as city centers introduced restrictions on early-morning flights, the comparison changed. A traveler who leaves at ten in the evening and arrives at seven in the morning has also avoided a hotel bill, which alters the calculation considerably. New services now run across several borders, and most of them are full. The obstacles are no longer commercial but technical. Each country operates its own signalling system, and a train crossing three of them needs equipment and staff certified for all three. Rolling stock is scarce, since the old carriages were sold or scrapped and new ones take years to build. Operators are therefore expanding slowly, which frustrates passengers but probably protects the revival: a service that runs late every night would lose the goodwill it has taken twenty years to rebuild.",
+  "glossary": [
+   {
+    "w": "sleeper services",
+    "tr": "yataklı seferler"
+   },
+   {
+    "w": "nostalgia",
+    "tr": "nostalji"
+   },
+   {
+    "w": "arithmetic",
+    "tr": "hesap"
+   },
+   {
+    "w": "signalling",
+    "tr": "sinyalizasyon"
+   },
+   {
+    "w": "certified",
+    "tr": "sertifikalı"
+   },
+   {
+    "w": "rolling stock",
+    "tr": "çeken ve çekilen araçlar"
+   },
+   {
+    "w": "scrapped",
+    "tr": "hurdaya çıkarıldı"
+   },
+   {
+    "w": "goodwill",
+    "tr": "iyi niyet, itibar"
+   },
+   {
+    "w": "reversal",
+    "tr": "tersine dönüş"
+   },
+   {
+    "w": "scarce",
+    "tr": "kıt, az bulunur"
+   },
+   {
+    "w": "frustrates",
+    "tr": "sinirlendirir, canını sıkar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did operators withdraw sleeper services?",
+    "options": [
+     "Governments banned them",
+     "Trains were unsafe",
+     "Budget airlines were faster and cheaper",
+     "Passengers disliked them"
+    ],
+    "answer": 2,
+    "note": "İkinci cümle."
+   },
+   {
+    "q": "What drove the reversal?",
+    "options": [
+     "Cheaper tickets",
+     "New technology",
+     "Government orders",
+     "Arithmetic rather than nostalgia"
+    ],
+    "answer": 3,
+    "note": "\"Driven less by nostalgia than by arithmetic.\""
+   },
+   {
+    "q": "What extra saving does a night train offer?",
+    "options": [
+     "A hotel bill is avoided",
+     "Shorter journeys",
+     "Cheaper tickets",
+     "Free meals"
+    ],
+    "answer": 0,
+    "note": "\"Has also avoided a hotel bill.\""
+   },
+   {
+    "q": "What is the main obstacle now?",
+    "options": [
+     "Technical differences between countries",
+     "Airline competition",
+     "Lack of passengers",
+     "High ticket prices"
+    ],
+    "answer": 0,
+    "note": "\"The obstacles are no longer commercial but technical.\""
+   },
+   {
+    "q": "Why may slow expansion be a good thing?",
+    "options": [
+     "Staff need training",
+     "It saves money",
+     "Late trains would destroy the rebuilt goodwill",
+     "Passengers prefer it"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-09",
+  "level": "B2",
+  "order": 9,
+  "kind": "reading",
+  "title": "Sınavın ölçtüğü şey",
+  "titleEn": "What the Exam Measures",
+  "minutes": 5,
+  "names": [],
+  "text": "Every national examination carries an unspoken promise: that it measures ability rather than circumstance. The promise is never entirely kept. Research across several countries has repeatedly shown that results correlate with family income, and the usual explanation, private tuition, accounts for only part of the gap. A quieter factor is familiarity with the format. A student who has practiced sixty past papers is not necessarily better at the subject, but is much better at the examination, and those two things are easy to confuse. Some systems have responded by making past papers freely available, which helps but does not equalise, since the scarce resource is not the paper but the adult who explains what went wrong. Others have reduced the weight of the final exam and included work completed during the year, a change that introduces its own problem: coursework can be assisted at home, and the assistance is distributed as unevenly as everything else. There is no arrangement that removes advantage entirely. The honest position is to state clearly which advantages a particular system tolerates, rather than to claim that it has none.",
+  "glossary": [
+   {
+    "w": "circumstance",
+    "tr": "koşullar"
+   },
+   {
+    "w": "correlate",
+    "tr": "bağıntılı olmak"
+   },
+   {
+    "w": "tuition",
+    "tr": "özel ders"
+   },
+   {
+    "w": "familiarity",
+    "tr": "aşinalık"
+   },
+   {
+    "w": "equalise",
+    "tr": "eşitlemek"
+   },
+   {
+    "w": "coursework",
+    "tr": "yıl içi çalışma"
+   },
+   {
+    "w": "tolerates",
+    "tr": "hoş görür, kabul eder"
+   },
+   {
+    "w": "scarce",
+    "tr": "kıt, az bulunur"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the unspoken promise of an exam?",
+    "options": [
+     "It predicts success",
+     "It is marked quickly",
+     "It is the same for everyone",
+     "It measures ability rather than circumstance"
+    ],
+    "answer": 3,
+    "note": "İlk cümle."
+   },
+   {
+    "q": "What does private tuition explain?",
+    "options": [
+     "The gap in one country only",
+     "The whole gap",
+     "Nothing at all",
+     "Only part of the gap"
+    ],
+    "answer": 3,
+    "note": "\"Accounts for only part of the gap.\""
+   },
+   {
+    "q": "What is the quieter factor?",
+    "options": [
+     "Better teachers",
+     "Familiarity with the exam format",
+     "Nutrition",
+     "Longer school days"
+    ],
+    "answer": 1,
+    "note": "\"A quieter factor is familiarity with the format.\""
+   },
+   {
+    "q": "Why does publishing past papers not equalise results?",
+    "options": [
+     "Students ignore them",
+     "They cost money",
+     "The papers are too hard",
+     "The scarce resource is the adult who explains mistakes"
+    ],
+    "answer": 3,
+    "note": "Kıt olan kâğıt değil, hatayı açıklayan yetişkin."
+   },
+   {
+    "q": "What does the author call the honest position?",
+    "options": [
+     "Abolishing exams",
+     "Using coursework only",
+     "Stating which advantages the system tolerates",
+     "Testing more often"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b2-r-10",
+  "level": "B2",
+  "order": 10,
+  "kind": "reading",
+  "title": "Bir dilin son konuşanı",
+  "titleEn": "The Last Speaker of a Language",
+  "minutes": 5,
+  "names": [],
+  "text": "Linguists estimate that a language stops being spoken somewhere in the world every two weeks. The phrase \"last speaker\" is misleading, because a language rarely ends with a single person; it ends earlier, on the day the last two speakers who could hold a conversation are separated. After that the survivor has the vocabulary but nowhere to use it, and vocabulary without conversation decays quickly. Documentation projects record what they can, and the recordings are valuable, but a dictionary preserves a language in roughly the way a photograph preserves a person. What disappears is not only words. Many small languages encode information that the surrounding major language does not: precise terms for local plants, for the behavior of the sea in particular months, for relationships between families. Communities that decide to revive a language face a difficult choice, because reviving it means standardizing it, and standardization always favors one village's version over another's. Several revivals have nevertheless succeeded, usually where the language acquired a practical role — a school, a radio station, a workplace — rather than being preserved out of duty alone.",
+  "glossary": [
+   {
+    "w": "linguists",
+    "tr": "dilbilimciler"
+   },
+   {
+    "w": "misleading",
+    "tr": "yanıltıcı"
+   },
+   {
+    "w": "decays",
+    "tr": "çürür, körelir"
+   },
+   {
+    "w": "documentation",
+    "tr": "belgeleme"
+   },
+   {
+    "w": "encode",
+    "tr": "içinde taşımak, kodlamak"
+   },
+   {
+    "w": "revive",
+    "tr": "canlandırmak"
+   },
+   {
+    "w": "standardization",
+    "tr": "standartlaştırma"
+   },
+   {
+    "w": "standardizing",
+    "tr": "standartlaştırmak"
+   },
+   {
+    "w": "acquired",
+    "tr": "kazandı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is 'last speaker' misleading?",
+    "options": [
+     "Languages never end",
+     "Nobody counts speakers",
+     "A language ends when the last two speakers are separated",
+     "The term is too technical"
+    ],
+    "answer": 2,
+    "note": "İkinci cümle."
+   },
+   {
+    "q": "What happens to the survivor's vocabulary?",
+    "options": [
+     "It is written down",
+     "It stays the same",
+     "It decays without conversation",
+     "It grows"
+    ],
+    "answer": 2,
+    "note": "\"Vocabulary without conversation decays quickly.\""
+   },
+   {
+    "q": "What comparison is made about dictionaries?",
+    "options": [
+     "A photograph preserving a person",
+     "A map preserving a city",
+     "A seed preserving a tree",
+     "A law preserving order"
+    ],
+    "answer": 0,
+    "note": "\"In roughly the way a photograph preserves a person.\""
+   },
+   {
+    "q": "What kind of knowledge can small languages carry?",
+    "options": [
+     "Religious rules",
+     "Only old stories",
+     "Grammar rules",
+     "Precise local terms the major language lacks"
+    ],
+    "answer": 3,
+    "note": "Yerel bitkiler, denizin davranışı, akrabalık ilişkileri."
+   },
+   {
+    "q": "When have revivals usually succeeded?",
+    "options": [
+     "When speakers moved together",
+     "When governments paid for them",
+     "When the language gained a practical role",
+     "When dictionaries were published"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
  }
 ]

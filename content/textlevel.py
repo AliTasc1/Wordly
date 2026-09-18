@@ -66,6 +66,9 @@ BRITISH = {
     "labour": "labor", "honour": "honor", "humour": "humor",
     "behaviour": "behavior", "neighbourhood": "neighborhood",
     "flavour": "flavor", "harbour": "harbor", "rumour": "rumor",
+    "favour": "favor", "favours": "favors", "favoured": "favored",
+    "endeavour": "endeavor", "vapour": "vapor", "armour": "armor",
+    "splendour": "splendor", "rigour": "rigor", "savour": "savor",
     "analyse": "analyze", "cancelled": "canceled", "modelling": "modeling",
     "aeroplane": "airplane", "maths": "math", "storey": "story",
     "judgement": "judgment", "kilometres": "kilometers", "kilometre": "kilometer",
@@ -89,7 +92,7 @@ IRREGULAR = {
     "bought": "buy", "caught": "catch", "taught": "teach", "sent": "send",
     "spent": "spend", "built": "build", "lost": "lose", "won": "win",
     "met": "meet", "paid": "pay", "sat": "sit", "stood": "stand",
-    "began": "begin", "begun": "begin", "drank": "drink", "drunk": "drink",
+    "began": "begin", "begun": "begin", "shown": "show", "showed": "show", "drank": "drink", "drunk": "drink",
     "sunk": "sink", "sprung": "spring", "swum": "swim", "shrunk": "shrink", "meant": "mean", "sought": "seek",
     "dealt": "deal", "bent": "bend", "bound": "bind", "bit": "bite",
     "bled": "bleed", "bred": "breed", "burnt": "burn", "clung": "cling",
@@ -229,6 +232,18 @@ DERIVATION = [
 PREFIXES = ("un", "re", "dis", "mis", "non", "over", "under", "pre", "in")
 
 
+# -ise/-isation ile biten İngiliz yazımlarını tek tek listelemek yerine kuralla
+# yakalıyoruz: Amerikan karşılığı z ile yazılır ve sözlükte o var.
+BRITISH_Z = re.compile(r"is(e|es|ed|ing|er|ers|ation|ations)$")
+
+
+def british_z(token: str) -> str | None:
+    """standardisation → standardization gibi düzenli farkı bulur."""
+    if BRITISH_Z.search(token):
+        return BRITISH_Z.sub(lambda m: "iz" + m.group(1), token)
+    return None
+
+
 def strip_once(token: str) -> list[str]:
     """Bir turluk ek ve ön ek soyma."""
     forms = []
@@ -252,6 +267,8 @@ def strip_once(token: str) -> list[str]:
         ("n't", [""]),
         ("'t", [""]),
         ("'s", [""]),
+        # Çoğul iyelik sonda yalnız kesme bırakır: friends' → friends.
+        ("'", [""]),
         ("'ll", [""]),
         ("'re", [""]),
         ("'ve", [""]),
@@ -319,6 +336,10 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
         spelling = next((f for f in candidates(token) if f in BRITISH), None)
         if spelling:
             british[token] = BRITISH[spelling]
+            continue
+        z_form = british_z(token)
+        if z_form and z_form in levels:
+            british[token] = z_form
             continue
         # Sözlükçe yalın biçimi veriyor (gym), metin çekimli kullanıyor (gyms).
         # Çekimli biçimi de tanınmış saymazsak yazar aynı kelimeyi sözlükçeye
