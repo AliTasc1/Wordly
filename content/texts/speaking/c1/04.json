@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "c1-speaking-04", "level": "C1", "range": "Senaryo 16-20" },
+  "items": [
+    {
+      "id": "c1-s-16",
+      "level": "C1",
+      "order": 16,
+      "kind": "speaking",
+      "title": "Devraldığın bir uygulamayı sorgulamak",
+      "titleEn": "Questioning a Practice You Inherited",
+      "minutes": 6,
+      "situation": "Your department has done something the same way for fifteen years. You think it should stop. Make the case.",
+      "situationTr": "Biriminiz on beş yıldır bir şeyi aynı biçimde yapıyor. Sona ermesi gerektiğini düşünüyorsun. Savunu yap.",
+      "prompts": [
+        "Describe the practice without mockery.",
+        "Say what it was originally for.",
+        "Say what has changed since then.",
+        "Say what you would put in its place."
+      ],
+      "promptsTr": [
+        "Uygulamayı alay etmeden anlat.",
+        "Başlangıçta ne için olduğunu söyle.",
+        "O zamandan beri neyin değiştiğini söyle.",
+        "Yerine ne koyacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Everyone still signs the paper copy as well as the digital one.", "tr": "Herkes dijital kopyanın yanında kâğıt kopyayı da hâlâ imzalıyor." },
+        { "en": "It made sense when the system went down twice a month.", "tr": "Sistem ayda iki kez çöktüğünde bunun anlamı vardı." },
+        { "en": "The system has not failed once in four years.", "tr": "Sistem dört yılda bir kez bile arıza vermedi." },
+        { "en": "I am not proposing that we keep no record at all.", "tr": "Hiç kayıt tutmayalım demiyorum." },
+        { "en": "One signature, in one place, checked once a quarter.", "tr": "Tek imza, tek yerde, üç ayda bir denetlenen." }
+      ],
+      "glossary": [
+        { "w": "practice", "tr": "uygulama, alışılmış yöntem" },
+        { "w": "inherited", "tr": "devralınmış" },
+        { "w": "mockery", "tr": "alay" },
+        { "w": "quarter", "tr": "üç aylık dönem" }
+      ]
+    },
+    {
+      "id": "c1-s-17",
+      "level": "C1",
+      "order": 17,
+      "kind": "speaking",
+      "title": "Kaynağı kime vereceğini savunmak",
+      "titleEn": "Justifying Who Gets the Resource",
+      "minutes": 6,
+      "situation": "There is money for one of three teams. You chose one. Explain your reasoning to all three.",
+      "situationTr": "Üç ekipten yalnızca birine para var. Birini seçtin. Gerekçeni üçüne birden açıkla.",
+      "prompts": [
+        "State the decision before the reasons.",
+        "Say what you weighed and how.",
+        "Say what the two others should hear.",
+        "Say what you will do next time."
+      ],
+      "promptsTr": [
+        "Gerekçelerden önce kararı söyle.",
+        "Neyi nasıl tarttığını söyle.",
+        "Diğer ikisinin ne duyması gerektiğini söyle.",
+        "Bir dahaki sefere ne yapacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The money is going to the workshop team, and I will say why.", "tr": "Para atölye ekibine gidiyor ve nedenini söyleyeceğim." },
+        { "en": "I weighed three things: reach, risk and whether it can wait.", "tr": "Üç şeyi tarttım: erişim, risk ve bekleyip bekleyemeyeceği." },
+        { "en": "The other two proposals lost on the third of those, not the first.", "tr": "Diğer iki öneri üçüncüsünde kaybetti, birincisinde değil." },
+        { "en": "That is not a judgment about the quality of your work.", "tr": "Bu, işinizin niteliğine dair bir yargı değil." },
+        { "en": "Next year I will publish the criteria before the applications.", "tr": "Gelecek yıl ölçütleri başvurulardan önce açıklayacağım." }
+      ],
+      "glossary": [
+        { "w": "reasoning", "tr": "gerekçelendirme" },
+        { "w": "weighed", "tr": "tarttı, değerlendirdi" },
+        { "w": "reach", "tr": "erişim, kapsam" },
+        { "w": "criteria", "tr": "ölçütler" }
+      ]
+    },
+    {
+      "id": "c1-s-18",
+      "level": "C1",
+      "order": 18,
+      "kind": "speaking",
+      "title": "Bir başarısızlığı açıkça üstlenmek",
+      "titleEn": "Owning a Failure in Public",
+      "minutes": 6,
+      "situation": "A project you led did not work and money was lost. Speak about it at a meeting with staff and partners.",
+      "situationTr": "Yönettiğin bir proje yürümedi ve para kaybedildi. Bunu personel ve ortakların olduğu bir toplantıda anlat.",
+      "prompts": [
+        "Say what went wrong, without passive language.",
+        "Separate what you decided from what happened to you.",
+        "Say what you would have needed to see earlier.",
+        "Say what changes because of it."
+      ],
+      "promptsTr": [
+        "Edilgen dile kaçmadan neyin ters gittiğini söyle.",
+        "Senin kararlarınla başına gelenleri ayır.",
+        "Daha erken neyi görmen gerektiğini söyle.",
+        "Bunun neyi değiştirdiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I decided to start before the supplier was confirmed.", "tr": "Tedarikçi kesinleşmeden başlamaya ben karar verdim." },
+        { "en": "The delay in the port was not something I could control.", "tr": "Limandaki gecikme denetleyebileceğim bir şey değildi." },
+        { "en": "What I should have asked for was a second quote in March.", "tr": "İstemem gereken şey martta ikinci bir fiyat teklifiydi." },
+        { "en": "The loss is about four hundred thousand, and that is the real figure.", "tr": "Zarar yaklaşık dört yüz bin ve bu gerçek rakam." },
+        { "en": "From now on nothing starts without two written quotes.", "tr": "Bundan böyle iki yazılı teklif olmadan hiçbir şey başlamıyor." }
+      ],
+      "glossary": [
+        { "w": "supplier", "tr": "tedarikçi" },
+        { "w": "quote", "tr": "fiyat teklifi" },
+        { "w": "loss", "tr": "zarar" },
+        { "w": "confirmed", "tr": "kesinleşmiş" }
+      ]
+    },
+    {
+      "id": "c1-s-19",
+      "level": "C1",
+      "order": 19,
+      "kind": "speaking",
+      "title": "Bir tasarıyı yorumlamak",
+      "titleEn": "Reading a Draft Law Aloud",
+      "minutes": 6,
+      "situation": "A new draft law will affect the people you work with. Explain to them what it would actually mean.",
+      "situationTr": "Yeni bir yasa tasarısı birlikte çalıştığın insanları etkileyecek. Onlara gerçekte ne anlama geleceğini anlat.",
+      "prompts": [
+        "Say what the draft changes in practice.",
+        "Say which part is clear and which is not.",
+        "Say who decides the unclear part.",
+        "Say what they can do before it passes."
+      ],
+      "promptsTr": [
+        "Tasarının uygulamada neyi değiştirdiğini söyle.",
+        "Hangi kısmın açık, hangisinin olmadığını söyle.",
+        "Belirsiz kısma kimin karar vereceğini söyle.",
+        "Yasalaşmadan önce ne yapabileceklerini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "In practice it moves the deadline from sixty days to thirty.", "tr": "Uygulamada süreyi altmış günden otuza indiriyor." },
+        { "en": "That part is clear; the definition of a small trader is not.", "tr": "O kısım açık; küçük esnafın tanımı değil." },
+        { "en": "The definition will be set later by regulation, not by the law itself.", "tr": "Tanım sonradan yönetmelikle belirlenecek, yasanın kendisiyle değil." },
+        { "en": "That means the important decision has not been taken yet.", "tr": "Bu da önemli kararın henüz alınmadığı anlamına geliyor." },
+        { "en": "Written comments are open until the fifteenth.", "tr": "Yazılı görüşler ayın on beşine kadar açık." }
+      ],
+      "glossary": [
+        { "w": "draft law", "tr": "yasa tasarısı" },
+        { "w": "definition", "tr": "tanım" },
+        { "w": "trader", "tr": "esnaf, tüccar" },
+        { "w": "regulation", "tr": "yönetmelik" }
+      ]
+    },
+    {
+      "id": "c1-s-20",
+      "level": "C1",
+      "order": 20,
+      "kind": "speaking",
+      "title": "Kimsenin sormadığı soruyu sormak",
+      "titleEn": "Asking the Question Nobody Asks",
+      "minutes": 6,
+      "situation": "You are interviewing a candidate everybody already likes. Ask the hard question well.",
+      "situationTr": "Herkesin şimdiden beğendiği bir adayla görüşüyorsun. Zor soruyu iyi biçimde sor.",
+      "prompts": [
+        "Set up the question so it is not an attack.",
+        "Ask it plainly.",
+        "Follow up on the part that was avoided.",
+        "Give him a fair way to answer."
+      ],
+      "promptsTr": [
+        "Soruyu saldırı gibi olmayacak şekilde kur.",
+        "Soruyu açıkça sor.",
+        "Kaçınılan kısmı takip et.",
+        "Ona cevaplaması için adil bir yol bırak."
+      ],
+      "usefulPhrases": [
+        { "en": "I want to ask about something that is not in the file.", "tr": "Dosyada olmayan bir şeyi sormak istiyorum." },
+        { "en": "You left two posts in eighteen months. What happened?", "tr": "On sekiz ayda iki görevden ayrıldınız. Ne oldu?" },
+        { "en": "You answered about the second one; I asked about the first.", "tr": "İkincisini yanıtladınız; ben birincisini sormuştum." },
+        { "en": "I am not looking for a perfect record.", "tr": "Kusursuz bir geçmiş aramıyorum." },
+        { "en": "Tell it the way you would tell somebody who already knows.", "tr": "Bunu, zaten bilen birine anlatır gibi anlatın." }
+      ],
+      "glossary": [
+        { "w": "candidate", "tr": "aday" },
+        { "w": "posts", "tr": "görevler" },
+        { "w": "avoided", "tr": "kaçınılan" },
+        { "w": "record", "tr": "geçmiş, sicil" }
+      ]
+    }
+  ]
+}

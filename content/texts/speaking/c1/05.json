@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "c1-speaking-05", "level": "C1", "range": "Senaryo 21-25" },
+  "items": [
+    {
+      "id": "c1-s-21",
+      "level": "C1",
+      "order": 21,
+      "kind": "speaking",
+      "title": "Gevşek kullanılan bir kavramı tanımlamak",
+      "titleEn": "Defining a Word People Use Loosely",
+      "minutes": 6,
+      "situation": "In your field a word is used to mean four different things. Define it for a room that keeps arguing past each other.",
+      "situationTr": "Alanında bir kelime dört farklı anlamda kullanılıyor. Birbirini duymadan tartışan bir odaya bu kelimeyi tanımla.",
+      "prompts": [
+        "Say why the word is causing trouble.",
+        "Give the meaning you will use.",
+        "Say what you are deliberately leaving out.",
+        "Say how the discussion changes with that definition."
+      ],
+      "promptsTr": [
+        "Kelimenin neden sorun yarattığını söyle.",
+        "Kullanacağın anlamı ver.",
+        "Bilerek neyi dışarıda bıraktığını söyle.",
+        "Bu tanımla tartışmanın nasıl değiştiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Three people have used the word this morning and meant three things.", "tr": "Bu sabah üç kişi bu kelimeyi kullandı ve üç ayrı şey kastetti." },
+        { "en": "For the next hour I will use it to mean only the narrow sense.", "tr": "Önümüzdeki bir saat onu yalnızca dar anlamında kullanacağım." },
+        { "en": "I am deliberately leaving out the legal meaning.", "tr": "Hukuki anlamı bilerek dışarıda bırakıyorum." },
+        { "en": "Once we do that, two of our disagreements disappear.", "tr": "Bunu yaptığımızda anlaşmazlıklarımızın ikisi ortadan kalkıyor." },
+        { "en": "The one that remains is a real disagreement, and worth the time.", "tr": "Kalan anlaşmazlık gerçek bir anlaşmazlık ve zamana değer." }
+      ],
+      "glossary": [
+        { "w": "loosely", "tr": "gevşek biçimde" },
+        { "w": "deliberately", "tr": "bilerek" },
+        { "w": "narrow sense", "tr": "dar anlam" },
+        { "w": "disagreements", "tr": "anlaşmazlıklar" }
+      ]
+    },
+    {
+      "id": "c1-s-22",
+      "level": "C1",
+      "order": 22,
+      "kind": "speaking",
+      "title": "Geç karşılık veren bir yatırımı savunmak",
+      "titleEn": "Arguing for Something That Pays Off Late",
+      "minutes": 6,
+      "situation": "You want the board to spend on training that will show results in three years, not this year.",
+      "situationTr": "Yönetimin, bu yıl değil üç yıl sonra sonuç verecek bir eğitime harcama yapmasını istiyorsun.",
+      "prompts": [
+        "Admit the timing problem before they raise it.",
+        "Say what the cost of waiting is.",
+        "Give a way of seeing progress before year three.",
+        "Say what should be cut if this is funded."
+      ],
+      "promptsTr": [
+        "Zamanlama sorununu onlar dile getirmeden kabul et.",
+        "Beklemenin maliyetini söyle.",
+        "Üçüncü yıldan önce ilerlemenin nasıl görüleceğini söyle.",
+        "Bu finanse edilirse neyin kesilmesi gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Nothing I am asking for will show in this year's accounts.", "tr": "İstediğim hiçbir şey bu yılın hesaplarında görünmeyecek." },
+        { "en": "The cost of waiting is that we lose the same six people again.", "tr": "Beklemenin bedeli, aynı altı kişiyi yine kaybetmemiz." },
+        { "en": "You can watch one number: how many stay past two years.", "tr": "Tek bir rakamı izleyebilirsiniz: kaç kişi iki yılı geçiyor." },
+        { "en": "If you fund this, I would stop the conference budget.", "tr": "Bunu finanse ederseniz konferans bütçesini durdururdum." },
+        { "en": "I would rather lose the argument than win it quietly.", "tr": "Tartışmayı sessizce kazanmaktansa kaybetmeyi tercih ederim." }
+      ],
+      "glossary": [
+        { "w": "board", "tr": "yönetim kurulu" },
+        { "w": "accounts", "tr": "hesaplar" },
+        { "w": "fund", "tr": "finanse etmek" },
+        { "w": "budget", "tr": "bütçe" }
+      ]
+    },
+    {
+      "id": "c1-s-23",
+      "level": "C1",
+      "order": 23,
+      "kind": "speaking",
+      "title": "İki taraf arasında arabuluculuk",
+      "titleEn": "Mediating Between Two Sides",
+      "minutes": 6,
+      "situation": "Two departments have stopped speaking to each other. You have been asked to chair one meeting between them.",
+      "situationTr": "İki birim birbiriyle konuşmayı kesti. Aralarındaki tek bir toplantıyı yönetmen istendi.",
+      "prompts": [
+        "Open by saying what this meeting is and is not.",
+        "State each side's position in their own terms.",
+        "Name the one thing both sides want.",
+        "Say what you will do if it breaks down."
+      ],
+      "promptsTr": [
+        "Bu toplantının ne olduğunu ve ne olmadığını söyleyerek aç.",
+        "Her tarafın konumunu kendi terimleriyle ifade et.",
+        "İki tarafın da istediği tek şeyi adlandır.",
+        "Toplantı dağılırsa ne yapacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "This meeting is not going to decide who was right in April.", "tr": "Bu toplantı nisanda kimin haklı olduğuna karar vermeyecek." },
+        { "en": "As I understand it, your position is that you were not consulted.", "tr": "Anladığım kadarıyla konumunuz, size danışılmamış olması." },
+        { "en": "And yours is that consulting you would have cost three weeks.", "tr": "Sizinki de size danışmanın üç haftaya mal olacağı." },
+        { "en": "Both of you want the same thing in September.", "tr": "İkiniz de eylülde aynı şeyi istiyorsunuz." },
+        { "en": "If we cannot agree today, I will write down where we stopped.", "tr": "Bugün anlaşamazsak nerede durduğumuzu yazıya geçireceğim." }
+      ],
+      "glossary": [
+        { "w": "mediating", "tr": "arabuluculuk" },
+        { "w": "chair", "tr": "toplantıyı yönetmek" },
+        { "w": "consulted", "tr": "danışılmış" },
+        { "w": "position", "tr": "konum, duruş" }
+      ]
+    },
+    {
+      "id": "c1-s-24",
+      "level": "C1",
+      "order": 24,
+      "kind": "speaking",
+      "title": "Bir istatistiği çözümlemek",
+      "titleEn": "Taking Apart a Statistic",
+      "minutes": 6,
+      "situation": "A striking number is being repeated everywhere. Explain to a general audience what is wrong with it.",
+      "situationTr": "Çarpıcı bir rakam her yerde tekrarlanıyor. Genel bir dinleyici kitlesine bu rakamın neyinin yanlış olduğunu anlat.",
+      "prompts": [
+        "Repeat the claim exactly as people say it.",
+        "Say what is true in it.",
+        "Show where the number comes from.",
+        "Give the honest version of the same fact."
+      ],
+      "promptsTr": [
+        "İddiayı insanların söylediği gibi tekrarla.",
+        "İçinde doğru olanı söyle.",
+        "Rakamın nereden geldiğini göster.",
+        "Aynı olgunun dürüst hâlini ver."
+      ],
+      "usefulPhrases": [
+        { "en": "The claim is that reading has fallen by half in ten years.", "tr": "İddia, okumanın on yılda yarı yarıya düştüğü." },
+        { "en": "It is true that the figure in the report says exactly that.", "tr": "Rapordaki rakamın tam da bunu söylediği doğru." },
+        { "en": "The question asked about printed books only.", "tr": "Soru yalnızca basılı kitapları soruyordu." },
+        { "en": "Counting everything people read, the fall is about eight percent.", "tr": "İnsanların okuduğu her şey sayıldığında düşüş yaklaşık yüzde sekiz." },
+        { "en": "Eight percent is still a real change and it deserves a real answer.", "tr": "Yüzde sekiz yine de gerçek bir değişim ve gerçek bir cevabı hak ediyor." }
+      ],
+      "glossary": [
+        { "w": "statistic", "tr": "istatistik" },
+        { "w": "claim", "tr": "iddia" },
+        { "w": "printed", "tr": "basılı" },
+        { "w": "audience", "tr": "dinleyici kitlesi" }
+      ]
+    },
+    {
+      "id": "c1-s-25",
+      "level": "C1",
+      "order": 25,
+      "kind": "speaking",
+      "title": "Yön değiştirmeyi anlatmak",
+      "titleEn": "Explaining a Change of Direction",
+      "minutes": 6,
+      "situation": "After twelve years in one field you are moving to another. Explain the decision to people who think it is a waste.",
+      "situationTr": "Bir alanda on iki yıldan sonra başka bir alana geçiyorsun. Bunu israf sayan kişilere kararını anlat.",
+      "prompts": [
+        "Say what you are moving towards, not only away from.",
+        "Say what carries over.",
+        "Answer the charge that it is wasted years.",
+        "Say what you expect to be bad at."
+      ],
+      "promptsTr": [
+        "Yalnızca neyden değil, neye doğru gittiğini söyle.",
+        "Neyin seninle taşındığını söyle.",
+        "Yılların boşa gittiği eleştirisine cevap ver.",
+        "Neyde kötü olmayı beklediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I am going towards work where I see the result within a year.", "tr": "Sonucunu bir yıl içinde gördüğüm bir işe doğru gidiyorum." },
+        { "en": "The part that carries over is how to read a contract.", "tr": "Benimle taşınan kısım bir sözleşmenin nasıl okunacağı." },
+        { "en": "Twelve years are not wasted because they are not continued.", "tr": "On iki yıl, sürdürülmediği için boşa gitmiş olmuyor." },
+        { "en": "I will be the least experienced person in the room for two years.", "tr": "İki yıl boyunca odadaki en deneyimsiz kişi ben olacağım." },
+        { "en": "I have thought about this for longer than anyone has known about it.", "tr": "Bunu, kimsenin haberi olduğundan çok daha uzun süredir düşünüyorum." }
+      ],
+      "glossary": [
+        { "w": "carries over", "tr": "taşınır, geçerliliğini korur" },
+        { "w": "charge", "tr": "suçlama, eleştiri" },
+        { "w": "wasted", "tr": "boşa gitmiş" },
+        { "w": "experienced", "tr": "deneyimli" }
+      ]
+    }
+  ]
+}
