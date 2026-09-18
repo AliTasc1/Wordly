@@ -1,0 +1,182 @@
+{
+  "_meta": { "batch": "a2-speaking-04", "level": "A2", "range": "Senaryo 16-20" },
+  "items": [
+    {
+      "id": "a2-s-16",
+      "level": "A2",
+      "order": 16,
+      "kind": "speaking",
+      "title": "Bir kurstan bahsetmek",
+      "titleEn": "Talking About a Course",
+      "minutes": 5,
+      "situation": "A friend is thinking about the English course you are taking. Tell her about it.",
+      "situationTr": "Bir arkadaşın gittiğin İngilizce kursunu düşünüyor. Ona kurstan bahset.",
+      "prompts": [
+        "Say when and where the course is.",
+        "Say what you do in the lessons.",
+        "Say what you like about it.",
+        "Say one thing that is difficult."
+      ],
+      "promptsTr": [
+        "Kursun ne zaman ve nerede olduğunu söyle.",
+        "Derslerde ne yaptığınızı söyle.",
+        "Neyini beğendiğini söyle.",
+        "Zor olan bir şeyi söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It is twice a week, on Tuesday and Thursday evenings.", "tr": "Haftada iki kez, salı ve perşembe akşamları." },
+        { "en": "We speak a lot and we do very little grammar.", "tr": "Çok konuşuyoruz ve çok az dilbilgisi yapıyoruz." },
+        { "en": "The teacher is patient and she explains well.", "tr": "Öğretmen sabırlı ve iyi anlatıyor." },
+        { "en": "The hardest part for me is listening.", "tr": "Benim için en zor kısım dinleme." },
+        { "en": "You should come and try one lesson.", "tr": "Gelip bir ders denemelisin." }
+      ],
+      "glossary": [
+        { "w": "patient", "tr": "sabırlı" },
+        { "w": "explains", "tr": "açıklıyor" },
+        { "w": "grammar", "tr": "dilbilgisi" }
+      ]
+    },
+    {
+      "id": "a2-s-17",
+      "level": "A2",
+      "order": 17,
+      "kind": "speaking",
+      "title": "Yol tarifi vermek",
+      "titleEn": "Giving Directions",
+      "minutes": 5,
+      "situation": "A visitor stops you in the street. He is looking for the train station. Help him.",
+      "situationTr": "Sokakta bir ziyaretçi seni durduruyor. Tren istasyonunu arıyor. Ona yardım et.",
+      "prompts": [
+        "Tell him the way from here.",
+        "Say how long it takes on foot.",
+        "Mention something he will see on the way.",
+        "Tell him what to do if he gets lost."
+      ],
+      "promptsTr": [
+        "Buradan yolu tarif et.",
+        "Yürüyerek ne kadar sürdüğünü söyle.",
+        "Yolda göreceği bir şeyi söyle.",
+        "Kaybolursa ne yapması gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Go straight on and take the second street on the left.", "tr": "Düz git ve soldaki ikinci sokağa sap." },
+        { "en": "It takes about ten minutes on foot.", "tr": "Yürüyerek yaklaşık on dakika sürer." },
+        { "en": "You will pass a big hospital on your right.", "tr": "Sağında büyük bir hastanenin önünden geçeceksin." },
+        { "en": "If you get lost, ask again near the bridge.", "tr": "Kaybolursan köprünün yanında tekrar sor." },
+        { "en": "You cannot miss it.", "tr": "Kaçırman mümkün değil." }
+      ],
+      "glossary": [
+        { "w": "straight on", "tr": "dosdoğru" },
+        { "w": "on foot", "tr": "yürüyerek" },
+        { "w": "bridge", "tr": "köprü" }
+      ]
+    },
+    {
+      "id": "a2-s-18",
+      "level": "A2",
+      "order": 18,
+      "kind": "speaking",
+      "title": "İşe hasta olduğunu bildirmek",
+      "titleEn": "Telling Work You Are Ill",
+      "minutes": 5,
+      "situation": "You woke up ill this morning. Call your manager and tell her.",
+      "situationTr": "Bu sabah hasta uyandın. Müdürünü ara ve durumu bildir.",
+      "prompts": [
+        "Say what is wrong.",
+        "Say that you cannot come in today.",
+        "Say what you will do about your work.",
+        "Say when you think you will be back."
+      ],
+      "promptsTr": [
+        "Neyin olduğunu söyle.",
+        "Bugün gelemeyeceğini söyle.",
+        "İşin için ne yapacağını söyle.",
+        "Ne zaman döneceğini düşündüğünü söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I woke up with a high temperature.", "tr": "Yüksek ateşle uyandım." },
+        { "en": "I am afraid I cannot come in today.", "tr": "Maalesef bugün gelemeyeceğim." },
+        { "en": "I have sent the report to Ayla already.", "tr": "Raporu Ayla'ya çoktan gönderdim." },
+        { "en": "I am going to the doctor this afternoon.", "tr": "Bu öğleden sonra doktora gidiyorum." },
+        { "en": "I hope to be back on Wednesday.", "tr": "Çarşamba dönmeyi umuyorum." }
+      ],
+      "names": ["Ayla"],
+      "glossary": [
+        { "w": "temperature", "tr": "ateş, sıcaklık" },
+        { "w": "report", "tr": "rapor" }
+      ]
+    },
+    {
+      "id": "a2-s-19",
+      "level": "A2",
+      "order": 19,
+      "kind": "speaking",
+      "title": "Bir şey ödünç istemek",
+      "titleEn": "Borrowing Something",
+      "minutes": 5,
+      "situation": "You need a suitcase for a short trip. Ask your neighbor if you can borrow hers.",
+      "situationTr": "Kısa bir gezi için bavula ihtiyacın var. Komşuna onunkini ödünç alıp alamayacağını sor.",
+      "prompts": [
+        "Ask for the suitcase politely.",
+        "Say why you need it.",
+        "Say when you will bring it back.",
+        "Thank her and offer something in return."
+      ],
+      "promptsTr": [
+        "Bavulu kibarca iste.",
+        "Neden ihtiyacın olduğunu söyle.",
+        "Ne zaman geri getireceğini söyle.",
+        "Teşekkür et ve karşılığında bir şey öner."
+      ],
+      "usefulPhrases": [
+        { "en": "Could I borrow your suitcase for a few days?", "tr": "Birkaç günlüğüne bavulunu ödünç alabilir miyim?" },
+        { "en": "I am going to Ankara on Friday.", "tr": "Cuma günü Ankara'ya gidiyorum." },
+        { "en": "I will bring it back on Monday evening.", "tr": "Pazartesi akşamı geri getireceğim." },
+        { "en": "Thank you, that is very kind of you.", "tr": "Teşekkürler, çok naziksiniz." },
+        { "en": "Let me know if you need anything from there.", "tr": "Oradan bir şey isterseniz söyleyin." }
+      ],
+      "names": ["Ankara"],
+      "glossary": [
+        { "w": "borrow", "tr": "ödünç almak" },
+        { "w": "suitcase", "tr": "bavul" },
+        { "w": "kind", "tr": "nazik" }
+      ]
+    },
+    {
+      "id": "a2-s-20",
+      "level": "A2",
+      "order": 20,
+      "kind": "speaking",
+      "title": "Yeni bir şehre taşınmak",
+      "titleEn": "Moving to a New City",
+      "minutes": 5,
+      "situation": "You moved to a new city three months ago. A friend asks how it is going.",
+      "situationTr": "Üç ay önce yeni bir şehre taşındın. Bir arkadaşın nasıl gittiğini soruyor.",
+      "prompts": [
+        "Say why you moved.",
+        "Say what is better than before.",
+        "Say what you miss.",
+        "Say how you are meeting people."
+      ],
+      "promptsTr": [
+        "Neden taşındığını söyle.",
+        "Öncekinden daha iyi olan şeyi söyle.",
+        "Neyi özlediğini söyle.",
+        "İnsanlarla nasıl tanıştığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I moved here because of my job.", "tr": "Buraya işim yüzünden taşındım." },
+        { "en": "The buses are much better here.", "tr": "Burada otobüsler çok daha iyi." },
+        { "en": "I miss my family and my old neighbors.", "tr": "Ailemi ve eski komşularımı özlüyorum." },
+        { "en": "I have met a few people at the gym.", "tr": "Spor salonunda birkaç kişiyle tanıştım." },
+        { "en": "It was hard at first, but it is better now.", "tr": "Başta zordu ama şimdi daha iyi." }
+      ],
+      "glossary": [
+        { "w": "gym", "tr": "spor salonu" },
+        { "w": "moved", "tr": "taşındı" },
+        { "w": "miss", "tr": "özlemek" },
+        { "w": "at first", "tr": "başlangıçta" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "a2-speaking-05", "level": "A2", "range": "Senaryo 21-25" },
+  "items": [
+    {
+      "id": "a2-s-21",
+      "level": "A2",
+      "order": 21,
+      "kind": "speaking",
+      "title": "Faturadaki hata",
+      "titleEn": "A Mistake on the Bill",
+      "minutes": 5,
+      "situation": "Your phone bill this month is much higher than usual. Call the company.",
+      "situationTr": "Bu ayki telefon faturan her zamankinden çok yüksek. Şirketi ara.",
+      "prompts": [
+        "Say what the problem is.",
+        "Say how much you usually pay.",
+        "Ask them to check the bill.",
+        "Ask what happens next."
+      ],
+      "promptsTr": [
+        "Sorunun ne olduğunu söyle.",
+        "Normalde ne kadar ödediğini söyle.",
+        "Faturayı kontrol etmelerini iste.",
+        "Bundan sonra ne olacağını sor."
+      ],
+      "usefulPhrases": [
+        { "en": "There seems to be a mistake on my bill.", "tr": "Faturamda bir hata var gibi görünüyor." },
+        { "en": "I usually pay about two hundred lira a month.", "tr": "Normalde ayda yaklaşık iki yüz lira ödüyorum." },
+        { "en": "This month it is nearly double that.", "tr": "Bu ay neredeyse iki katı." },
+        { "en": "Could you check it for me, please?", "tr": "Benim için kontrol edebilir misiniz, lütfen?" },
+        { "en": "How long will it take to sort out?", "tr": "Çözülmesi ne kadar sürer?" }
+      ],
+      "glossary": [
+        { "w": "bill", "tr": "fatura" },
+        { "w": "lira", "tr": "lira" },
+        { "w": "double", "tr": "iki katı" },
+        { "w": "sort out", "tr": "çözmek, halletmek" }
+      ]
+    },
+    {
+      "id": "a2-s-22",
+      "level": "A2",
+      "order": 22,
+      "kind": "speaking",
+      "title": "Fotoğraf çekmesini istemek",
+      "titleEn": "Asking Someone to Take a Photo",
+      "minutes": 5,
+      "situation": "You are on holiday with a friend. You want a photo of the two of you. Ask a stranger.",
+      "situationTr": "Bir arkadaşınla tatildesin. İkinizin bir fotoğrafını istiyorsun. Bir yabancıdan rica et.",
+      "prompts": [
+        "Ask politely for help.",
+        "Explain what you want in the photo.",
+        "Say which button to press.",
+        "Thank her and offer to do the same."
+      ],
+      "promptsTr": [
+        "Kibarca yardım iste.",
+        "Fotoğrafta ne istediğini açıkla.",
+        "Hangi düğmeye basacağını söyle.",
+        "Teşekkür et ve aynısını yapmayı teklif et."
+      ],
+      "usefulPhrases": [
+        { "en": "Excuse me, could you take a photo of us?", "tr": "Affedersiniz, fotoğrafımızı çeker misiniz?" },
+        { "en": "Could you get the bridge in the picture too?", "tr": "Köprüyü de fotoğrafa alabilir misiniz?" },
+        { "en": "Just press this round button.", "tr": "Sadece bu yuvarlak düğmeye basın." },
+        { "en": "Would you like me to take one of you?", "tr": "Sizin de bir fotoğrafınızı çekmemi ister misiniz?" },
+        { "en": "That is lovely, thank you.", "tr": "Çok güzel olmuş, teşekkürler." }
+      ],
+      "glossary": [
+        { "w": "button", "tr": "düğme" },
+        { "w": "press", "tr": "basmak" },
+        { "w": "lovely", "tr": "çok güzel" }
+      ]
+    },
+    {
+      "id": "a2-s-23",
+      "level": "A2",
+      "order": 23,
+      "kind": "speaking",
+      "title": "Bir arkadaşa teşekkür etmek",
+      "titleEn": "Thanking a Friend",
+      "minutes": 5,
+      "situation": "A friend looked after your cat while you were away. Thank her properly.",
+      "situationTr": "Sen yokken bir arkadaşın kedine baktı. Ona gerektiği gibi teşekkür et.",
+      "prompts": [
+        "Thank her for what she did.",
+        "Say why it helped you.",
+        "Ask how the week went.",
+        "Offer to do something for her."
+      ],
+      "promptsTr": [
+        "Yaptığı şey için teşekkür et.",
+        "Sana nasıl yardımı olduğunu söyle.",
+        "Haftanın nasıl geçtiğini sor.",
+        "Onun için bir şey yapmayı teklif et."
+      ],
+      "usefulPhrases": [
+        { "en": "Thank you so much for looking after Mia.", "tr": "Mia'ya baktığın için çok teşekkür ederim." },
+        { "en": "I could relax because I knew she was fine.", "tr": "İyi olduğunu bildiğim için rahat edebildim." },
+        { "en": "Was she any trouble?", "tr": "Sorun çıkardı mı?" },
+        { "en": "Let me cook for you on Saturday.", "tr": "Cumartesi sana yemek pişireyim." },
+        { "en": "I owe you one.", "tr": "Sana bir borcum var." }
+      ],
+      "names": ["Mia"],
+      "glossary": [
+        { "w": "look after", "tr": "bakmak, ilgilenmek" },
+        { "w": "owe", "tr": "borçlu olmak" },
+        { "w": "relax", "tr": "rahatlamak" },
+        { "w": "trouble", "tr": "sorun, zahmet" }
+      ]
+    },
+    {
+      "id": "a2-s-24",
+      "level": "A2",
+      "order": 24,
+      "kind": "speaking",
+      "title": "Hafta sonu gezisi",
+      "titleEn": "A Weekend Trip",
+      "minutes": 5,
+      "situation": "You and a friend want to go somewhere for the weekend. Plan the trip together.",
+      "situationTr": "Bir arkadaşınla hafta sonu bir yere gitmek istiyorsunuz. Geziyi birlikte planlayın.",
+      "prompts": [
+        "Suggest a place and say why.",
+        "Say how you will travel.",
+        "Say where you can stay.",
+        "Say how much it will cost."
+      ],
+      "promptsTr": [
+        "Bir yer öner ve nedenini söyle.",
+        "Nasıl seyahat edeceğinizi söyle.",
+        "Nerede kalabileceğinizi söyle.",
+        "Ne kadar tutacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Why do we not go to Eskisehir? It is quiet and cheap.", "tr": "Eskişehir'e gitsek mi? Sakin ve ucuz." },
+        { "en": "The train leaves early on Saturday morning.", "tr": "Tren cumartesi sabahı erken kalkıyor." },
+        { "en": "My cousin says there is a small hotel near the river.", "tr": "Kuzenim nehrin yanında küçük bir otel olduğunu söylüyor." },
+        { "en": "It should cost about a thousand lira each.", "tr": "Kişi başı yaklaşık bin lira tutmalı." },
+        { "en": "Shall we book the tickets tonight?", "tr": "Biletleri bu akşam alalım mı?" }
+      ],
+      "names": ["Eskisehir"],
+      "glossary": [
+        { "w": "cousin", "tr": "kuzen" },
+        { "w": "lira", "tr": "lira" },
+        { "w": "book", "tr": "yer ayırtmak" },
+        { "w": "river", "tr": "nehir" }
+      ]
+    },
+    {
+      "id": "a2-s-25",
+      "level": "A2",
+      "order": 25,
+      "kind": "speaking",
+      "title": "Bir ürünü iade etmek",
+      "titleEn": "Returning Something to a Shop",
+      "minutes": 5,
+      "situation": "You bought a jacket last week and it is too small. Take it back to the shop.",
+      "situationTr": "Geçen hafta bir ceket aldın ve küçük geldi. Onu mağazaya geri götür.",
+      "prompts": [
+        "Say what you bought and when.",
+        "Explain the problem.",
+        "Say what you would like instead.",
+        "Answer if they ask for the receipt."
+      ],
+      "promptsTr": [
+        "Ne aldığını ve ne zaman aldığını söyle.",
+        "Sorunu açıkla.",
+        "Onun yerine ne istediğini söyle.",
+        "Fiş sorarlarsa cevap ver."
+      ],
+      "usefulPhrases": [
+        { "en": "I bought this jacket here last Tuesday.", "tr": "Bu ceketi geçen salı buradan aldım." },
+        { "en": "It is too small for me.", "tr": "Bana çok küçük geliyor." },
+        { "en": "Could I change it for a larger size?", "tr": "Daha büyük bir bedenle değiştirebilir miyim?" },
+        { "en": "Here is the receipt.", "tr": "İşte fiş." },
+        { "en": "If you do not have my size, I would like my money back.", "tr": "Bedenim yoksa paramı geri istiyorum." }
+      ],
+      "glossary": [
+        { "w": "jacket", "tr": "ceket" },
+        { "w": "size", "tr": "beden" },
+        { "w": "receipt", "tr": "fiş" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "_meta": { "batch": "a2-speaking-03", "level": "A2", "range": "Senaryo 11-15" },
+  "items": [
+    {
+      "id": "a2-s-11",
+      "level": "A2",
+      "order": 11,
+      "kind": "speaking",
+      "title": "Kargoyu sormak",
+      "titleEn": "Asking About a Delivery",
+      "minutes": 5,
+      "situation": "You ordered a pair of shoes ten days ago and they have not arrived. You call the shop.",
+      "situationTr": "On gün önce bir çift ayakkabı sipariş ettin ve gelmedi. Mağazayı arıyorsun.",
+      "prompts": [
+        "Say what you ordered and when.",
+        "Explain that it has not arrived.",
+        "Give your order number.",
+        "Ask what they can do."
+      ],
+      "promptsTr": [
+        "Ne sipariş ettiğini ve ne zaman ettiğini söyle.",
+        "Gelmediğini açıkla.",
+        "Sipariş numaranı ver.",
+        "Ne yapabileceklerini sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I ordered a pair of shoes on the fifth of March.", "tr": "Beş Mart'ta bir çift ayakkabı sipariş ettim." },
+        { "en": "They still have not arrived.", "tr": "Hâlâ gelmediler." },
+        { "en": "My order number is four seven two one.", "tr": "Sipariş numaram dört yedi iki bir." },
+        { "en": "Could you check where the package is?", "tr": "Paketin nerede olduğuna bakabilir misiniz?" },
+        { "en": "If it is lost, I would like my money back.", "tr": "Kaybolduysa paramı geri istiyorum." }
+      ],
+      "glossary": [
+        { "w": "ordered", "tr": "sipariş etti" },
+        { "w": "arrived", "tr": "ulaştı" },
+        { "w": "package", "tr": "paket" }
+      ]
+    },
+    {
+      "id": "a2-s-12",
+      "level": "A2",
+      "order": 12,
+      "kind": "speaking",
+      "title": "Bir daireye bakmak",
+      "titleEn": "Looking at an Apartment",
+      "minutes": 5,
+      "situation": "You are visiting an apartment you may rent. Ask the owner your questions.",
+      "situationTr": "Kiralayabileceğin bir daireyi geziyorsun. Ev sahibine sorularını sor.",
+      "prompts": [
+        "Ask about the rent and the bills.",
+        "Ask how many rooms there are.",
+        "Ask about buses and shops nearby.",
+        "Say what you think of the apartment."
+      ],
+      "promptsTr": [
+        "Kirayı ve faturaları sor.",
+        "Kaç oda olduğunu sor.",
+        "Yakındaki otobüsleri ve dükkânları sor.",
+        "Daire hakkında ne düşündüğünü söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "How much is the rent each month?", "tr": "Aylık kira ne kadar?" },
+        { "en": "Are the bills included?", "tr": "Faturalar dâhil mi?" },
+        { "en": "How far is the bus stop?", "tr": "Otobüs durağı ne kadar uzakta?" },
+        { "en": "The kitchen is smaller than I expected.", "tr": "Mutfak beklediğimden küçük." },
+        { "en": "I like it, but I need to think about it.", "tr": "Beğendim ama düşünmem gerek." }
+      ],
+      "glossary": [
+        { "w": "rent", "tr": "kira" },
+        { "w": "nearby", "tr": "yakında, civarda" },
+        { "w": "bills", "tr": "faturalar" },
+        { "w": "included", "tr": "dâhil" }
+      ]
+    },
+    {
+      "id": "a2-s-13",
+      "level": "A2",
+      "order": 13,
+      "kind": "speaking",
+      "title": "Spor salonuna yazılmak",
+      "titleEn": "Joining a Gym",
+      "minutes": 5,
+      "situation": "You want to join a gym near your home. Talk to the person at the desk.",
+      "situationTr": "Evine yakın bir spor salonuna yazılmak istiyorsun. Danışmadaki kişiyle konuş.",
+      "prompts": [
+        "Say why you want to join.",
+        "Ask about the prices.",
+        "Ask when the gym is open.",
+        "Ask if you can try it first."
+      ],
+      "promptsTr": [
+        "Neden yazılmak istediğini söyle.",
+        "Fiyatları sor.",
+        "Salonun ne zaman açık olduğunu sor.",
+        "Önce deneyip deneyemeyeceğini sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I want to get fit before the summer.", "tr": "Yazdan önce forma girmek istiyorum." },
+        { "en": "How much is it for three months?", "tr": "Üç aylık ne kadar?" },
+        { "en": "What time do you open at the weekend?", "tr": "Hafta sonu kaçta açılıyorsunuz?" },
+        { "en": "Can I try it for one day first?", "tr": "Önce bir gün deneyebilir miyim?" },
+        { "en": "Do I need to bring my own towel?", "tr": "Kendi havlumu getirmem gerekiyor mu?" }
+      ],
+      "glossary": [
+        { "w": "gym", "tr": "spor salonu" },
+        { "w": "join", "tr": "üye olmak" },
+        { "w": "get fit", "tr": "forma girmek" },
+        { "w": "towel", "tr": "havlu" }
+      ]
+    },
+    {
+      "id": "a2-s-14",
+      "level": "A2",
+      "order": 14,
+      "kind": "speaking",
+      "title": "Buluşmayı başka güne almak",
+      "titleEn": "Changing the Day",
+      "minutes": 5,
+      "situation": "You cannot meet your friend on Saturday any more. Call her and change the day.",
+      "situationTr": "Cumartesi arkadaşınla buluşamayacaksın. Onu ara ve günü değiştir.",
+      "prompts": [
+        "Say that you cannot come on Saturday.",
+        "Explain why.",
+        "Suggest another day.",
+        "Say you are sorry."
+      ],
+      "promptsTr": [
+        "Cumartesi gelemeyeceğini söyle.",
+        "Nedenini açıkla.",
+        "Başka bir gün öner.",
+        "Özür dile."
+      ],
+      "usefulPhrases": [
+        { "en": "I am afraid I cannot come on Saturday.", "tr": "Maalesef cumartesi gelemeyeceğim." },
+        { "en": "My brother is arriving that morning.", "tr": "Kardeşim o sabah geliyor." },
+        { "en": "Could we meet on Sunday instead?", "tr": "Onun yerine pazar buluşabilir miyiz?" },
+        { "en": "I am really sorry about this.", "tr": "Bunun için gerçekten üzgünüm." },
+        { "en": "Any time after two is fine for me.", "tr": "İkiden sonra her saat benim için uygun." }
+      ],
+      "glossary": [
+        { "w": "instead", "tr": "onun yerine" },
+        { "w": "arriving", "tr": "geliyor, varıyor" }
+      ]
+    },
+    {
+      "id": "a2-s-15",
+      "level": "A2",
+      "order": 15,
+      "kind": "speaking",
+      "title": "Kuaförde",
+      "titleEn": "At the Hairdresser",
+      "minutes": 5,
+      "situation": "You are at the hairdresser. Explain what you want and answer her questions.",
+      "situationTr": "Kuafördesin. Ne istediğini anlat ve sorularını yanıtla.",
+      "prompts": [
+        "Say what you would like.",
+        "Say how short you want it.",
+        "Say when you were here last.",
+        "Ask how much it will cost."
+      ],
+      "promptsTr": [
+        "Ne istediğini söyle.",
+        "Ne kadar kısa istediğini söyle.",
+        "En son ne zaman geldiğini söyle.",
+        "Ne kadar tutacağını sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I would like a haircut, please.", "tr": "Saç kesimi istiyorum, lütfen." },
+        { "en": "Not too short at the back.", "tr": "Arkası çok kısa olmasın." },
+        { "en": "I was here about two months ago.", "tr": "Yaklaşık iki ay önce buradaydım." },
+        { "en": "How much will that be?", "tr": "Ne kadar tutar?" },
+        { "en": "That is fine, thank you.", "tr": "Böyle iyi, teşekkürler." }
+      ],
+      "glossary": [
+        { "w": "hairdresser", "tr": "kuaför" },
+        { "w": "haircut", "tr": "saç kesimi" }
+      ]
+    }
+  ]
+}
