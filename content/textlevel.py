@@ -93,6 +93,15 @@ IRREGULAR = {
     "felt": "feel", "kept": "keep", "held": "hold", "brought": "bring",
     "bought": "buy", "caught": "catch", "taught": "teach", "sent": "send",
     "fought": "fight",
+    # Sözlükteki her düzensiz fiilin çekimleri tek tek tarandı; ek soyucunun
+    # çözemediği biçimler burada. Eksik bir çekim, kökü sözlükte olan bir
+    # kelimeyi "bilinmiyor" diye raporlamaya yol açıyordu (draw A1 iken drew).
+    "drew": "draw", "drawn": "draw", "blew": "blow", "blown": "blow",
+    "rode": "ride", "ridden": "ride", "rung": "ring", "shook": "shake",
+    "stole": "steal", "stolen": "steal", "dug": "dig", "laid": "lay",
+    "sped": "speed", "beaten": "beat", "awoken": "awake", "arisen": "arise",
+    "forgiven": "forgive", "sworn": "swear", "trodden": "tread",
+    "wove": "weave", "woven": "weave",
     "spent": "spend", "built": "build", "lost": "lose", "won": "win",
     "met": "meet", "paid": "pay", "sat": "sit", "stood": "stand",
     "began": "begin", "begun": "begin", "shown": "show", "showed": "show", "drank": "drink", "drunk": "drink",

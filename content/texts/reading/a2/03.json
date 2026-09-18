@@ -1,0 +1,137 @@
+{
+  "_meta": { "batch": "a2-reading-03", "level": "A2", "range": "Parça 11-15" },
+  "items": [
+    {
+      "id": "a2-r-11",
+      "level": "A2",
+      "order": 11,
+      "kind": "reading",
+      "title": "Pazar günü pazarı",
+      "titleEn": "The Sunday Market",
+      "minutes": 3,
+      "names": ["Kadikoy"],
+      "text": "Every Sunday morning a market opens in our street. The men arrive at six o'clock and build the stalls. By eight the street is full of people. You can buy vegetables, fruit, cheese, clothes and cheap kitchen things. My mother goes early because the best tomatoes are gone by ten. She always talks to the same man about the price, and they both enjoy it. Nothing really changes, but she says it is part of the shopping. I go with her to carry the heavy bags. Around one o'clock the men start to pack. By three the street is empty and clean again, and only a few boxes show that the market was there at all.",
+      "textTr": "Her pazar sabahı sokağımızda bir pazar kuruluyor. Adamlar altıda gelip tezgâhları kuruyor. Sekizde sokak insanla doluyor. Sebze, meyve, peynir, kıyafet ve ucuz mutfak eşyası alabilirsin. Annem erken gidiyor çünkü en iyi domatesler ona kadar bitiyor. Hep aynı adamla fiyat konusunda konuşuyor ve ikisi de bundan keyif alıyor. Aslında bir şey değişmiyor ama annem bunun alışverişin parçası olduğunu söylüyor. Ağır poşetleri taşımak için onunla gidiyorum. Saat bire doğru adamlar toplamaya başlıyor. Üçte sokak yeniden boş ve temiz oluyor; pazarın orada olduğunu sadece birkaç kutu gösteriyor.",
+      "glossary": [
+        { "w": "stalls", "tr": "tezgâhlar" },
+        { "w": "price", "tr": "fiyat" },
+        { "w": "carry", "tr": "taşımak" },
+        { "w": "pack", "tr": "toplamak" },
+        { "w": "boxes", "tr": "kutular" }
+      ],
+      "questions": [
+        { "q": "What time do the men arrive?", "options": ["Six o'clock", "Eight o'clock", "Ten o'clock", "One o'clock"], "answer": 0, "note": "\"The men arrive at six o'clock.\"" },
+        { "q": "Why does the mother go early?", "options": ["The best tomatoes are gone by ten", "The market closes at nine", "It is cooler", "There are fewer people"], "answer": 0, "note": "\"The best tomatoes are gone by ten.\"" },
+        { "q": "What does the mother do with the same man?", "options": ["Talks about the price", "Buys cheese", "Asks for a bag", "Sells vegetables"], "answer": 0, "note": "\"She always talks to the same man about the price.\"" },
+        { "q": "Why does the writer go with her?", "options": ["To carry the heavy bags", "To choose the fruit", "To meet friends", "To pay"], "answer": 0, "note": "\"I go with her to carry the heavy bags.\"" },
+        { "q": "What is the street like at three?", "options": ["Empty and clean", "Full of people", "Closed to cars", "Covered in boxes"], "answer": 0, "note": "\"By three the street is empty and clean again.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-12",
+      "level": "A2",
+      "order": 12,
+      "kind": "reading",
+      "title": "Ehliyet sınavı",
+      "titleEn": "The Driving Test",
+      "minutes": 3,
+      "names": ["Murat"],
+      "text": "I took my driving test three times. The first time I was so nervous that I forgot to look in the mirror. The examiner stopped the test after ten minutes. The second time I drove well for twenty minutes, but then I stopped in the wrong place and a bus had to wait. My teacher Murat told me the problem was not my driving. He said I was thinking about the test instead of the road. Before the third test he made me drive for an hour without saying anything about the exam. That morning I was calmer. I passed. Now I drive to work every day and I still remember that advice when the traffic is bad.",
+      "textTr": "Ehliyet sınavına üç kez girdim. İlk seferde o kadar gergindim ki aynaya bakmayı unuttum. Sınav görevlisi on dakika sonra sınavı bitirdi. İkinci seferde yirmi dakika iyi sürdüm ama sonra yanlış yerde durdum ve bir otobüs beklemek zorunda kaldı. Hocam Murat sorunun sürüşüm olmadığını söyledi. Yolu değil sınavı düşündüğümü söyledi. Üçüncü sınavdan önce bana bir saat boyunca sınavdan hiç bahsetmeden araba sürdürdü. O sabah daha sakindim. Geçtim. Şimdi her gün işe arabayla gidiyorum ve trafik kötü olduğunda hâlâ o tavsiyeyi hatırlıyorum.",
+      "glossary": [
+        { "w": "nervous", "tr": "gergin" },
+        { "w": "mirror", "tr": "ayna" },
+        { "w": "examiner", "tr": "sınav görevlisi" },
+        { "w": "calmer", "tr": "daha sakin" },
+        { "w": "advice", "tr": "tavsiye" },
+        { "w": "traffic", "tr": "trafik" }
+      ],
+      "questions": [
+        { "q": "What went wrong the first time?", "options": ["He forgot to look in the mirror", "He stopped in the wrong place", "He was late", "He drove too fast"], "answer": 0, "note": "\"I forgot to look in the mirror.\"" },
+        { "q": "What happened the second time?", "options": ["He stopped in the wrong place", "He forgot the mirror", "He hit a car", "He passed"], "answer": 0, "note": "\"I stopped in the wrong place and a bus had to wait.\"" },
+        { "q": "What did Murat say the real problem was?", "options": ["He was thinking about the test", "He drove too slowly", "He did not practice", "He was tired"], "answer": 0, "note": "\"He said I was thinking about the test instead of the road.\"" },
+        { "q": "What did Murat do before the third test?", "options": ["Made him drive without talking about the exam", "Gave him a new car", "Changed the car", "Tested him twice"], "answer": 0, "note": "\"He made me drive for an hour without saying anything about the exam.\"" },
+        { "q": "What does the writer remember now?", "options": ["Murat's advice", "The examiner's name", "The bus", "The first test"], "answer": 0, "note": "\"I still remember that advice when the traffic is bad.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-13",
+      "level": "A2",
+      "order": 13,
+      "kind": "reading",
+      "title": "Yeni bir dil öğrenmek",
+      "titleEn": "Learning a New Language",
+      "minutes": 3,
+      "names": ["Ayla"],
+      "text": "My aunt Ayla started to learn German when she was forty-five. Everybody in the family said she was too old. She went to a class two evenings a week after work. In the first year she could only say simple sentences and she often felt stupid next to the young students. She did not stop. She wrote new words on small papers and put them on the kitchen door. After three years she went to Berlin alone for a week. She told me it was the best week of her life because she could ask questions and understand the answers. She is fifty now and she is learning her third language.",
+      "textTr": "Teyzem Ayla kırk beş yaşında Almanca öğrenmeye başladı. Ailede herkes onun çok yaşlı olduğunu söyledi. İşten sonra haftada iki akşam kursa gitti. İlk yıl sadece basit cümleler kurabiliyordu ve genç öğrencilerin yanında sık sık kendini aptal gibi hissediyordu. Bırakmadı. Yeni kelimeleri küçük kâğıtlara yazıp mutfak kapısına astı. Üç yıl sonra bir haftalığına tek başına Berlin'e gitti. Bana hayatının en güzel haftası olduğunu söyledi çünkü soru sorabiliyor ve cevapları anlayabiliyordu. Şimdi elli yaşında ve üçüncü dilini öğreniyor.",
+      "glossary": [
+        { "w": "aunt", "tr": "teyze, hala" },
+        { "w": "simple", "tr": "basit" },
+        { "w": "stupid", "tr": "aptal" },
+        { "w": "alone", "tr": "tek başına" }
+      ],
+      "questions": [
+        { "q": "How old was Ayla when she started?", "options": ["Forty-five", "Fifty", "Forty", "Thirty-five"], "answer": 0, "note": "\"She started to learn German when she was forty-five.\"" },
+        { "q": "What did the family say?", "options": ["She was too old", "She should go to Berlin", "German is easy", "She should stop working"], "answer": 0, "note": "\"Everybody in the family said she was too old.\"" },
+        { "q": "How did she feel in the first year?", "options": ["Stupid next to the young students", "Very confident", "Bored", "Angry with the teacher"], "answer": 0, "note": "\"She often felt stupid next to the young students.\"" },
+        { "q": "Where did she put the new words?", "options": ["On the kitchen door", "In a notebook", "On her phone", "On the classroom wall"], "answer": 0, "note": "\"She wrote new words on small papers and put them on the kitchen door.\"" },
+        { "q": "Why was the week in Berlin the best?", "options": ["She could ask questions and understand", "The city was beautiful", "She met her class", "She had a holiday"], "answer": 0, "note": "\"Because she could ask questions and understand the answers.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-14",
+      "level": "A2",
+      "order": 14,
+      "kind": "reading",
+      "title": "Kardeşimle paylaştığım oda",
+      "titleEn": "Sharing a Room",
+      "minutes": 3,
+      "names": ["Efe"],
+      "text": "I shared a room with my brother Efe for eleven years. We are very different. I go to bed early and I need a quiet room. He works until two in the morning and he listens to music while he works. For a long time we argued almost every night. Then my father drew a line on the floor with tape. It was a joke, but it helped. We made three rules: no music after midnight, no clothes on the other side of the line, and nobody touches the other one's desk. The rules worked better than the arguments. Last month Efe moved to another city for university. The room is quiet now and I do not like it as much as I expected.",
+      "textTr": "Kardeşim Efe ile on bir yıl aynı odayı paylaştım. Çok farklıyız. Ben erken yatıyorum ve sessiz bir oda istiyorum. O sabah ikiye kadar çalışıyor ve çalışırken müzik dinliyor. Uzun süre neredeyse her gece tartıştık. Sonra babam bantla yere bir çizgi çekti. Şakaydı ama işe yaradı. Üç kural koyduk: gece yarısından sonra müzik yok, çizginin öbür tarafında kıyafet yok ve kimse diğerinin masasına dokunmuyor. Kurallar tartışmalardan daha iyi işledi. Geçen ay Efe üniversite için başka bir şehre taşındı. Oda şimdi sessiz ve bunu beklediğim kadar sevmedim.",
+      "glossary": [
+        { "w": "shared", "tr": "paylaştı" },
+        { "w": "argued", "tr": "tartıştı" },
+        { "w": "line", "tr": "çizgi" },
+        { "w": "tape", "tr": "bant" },
+        { "w": "rules", "tr": "kurallar" },
+        { "w": "desk", "tr": "çalışma masası" }
+      ],
+      "questions": [
+        { "q": "How long did they share the room?", "options": ["Eleven years", "Two years", "Three years", "One year"], "answer": 0, "note": "\"I shared a room with my brother Efe for eleven years.\"" },
+        { "q": "What is the difference between them?", "options": ["One sleeps early, one works late", "One is older", "One has more things", "One studies, one works"], "answer": 0, "note": "\"I go to bed early... He works until two in the morning.\"" },
+        { "q": "How did the father end the arguments?", "options": ["He drew a line on the floor", "Bought a second room", "Took the music away", "Talked to the school"], "answer": 0, "note": "\"My father drew a line on the floor with tape.\"" },
+        { "q": "How many rules did they make?", "options": ["Three", "Two", "Five", "One"], "answer": 0, "note": "\"We made three rules.\"" },
+        { "q": "How does the writer feel now?", "options": ["He likes the quiet less than he expected", "He is very happy", "He wants a bigger room", "He misses the rules"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "a2-r-15",
+      "level": "A2",
+      "order": 15,
+      "kind": "reading",
+      "title": "Kırık saat",
+      "titleEn": "The Broken Watch",
+      "minutes": 3,
+      "names": ["Sabri"],
+      "text": "My grandfather gave me his watch before he died. It stopped working two years later. I took it to three shops. The first two said it was too old and the parts do not exist any more. The third shop was very small and dark, behind the fish market. The man there, Sabri, looked at it for a long time without saying anything. Then he said he could not buy the parts but he could make one. It took him a month and it was not cheap. My friends say I paid too much for an old watch that is not worth the money. They are right about the money. But when I wear it I can hear it, and that is what I paid for.",
+      "textTr": "Dedem ölmeden önce bana saatini verdi. İki yıl sonra durdu. Üç dükkâna götürdüm. İlk ikisi çok eski olduğunu ve parçalarının artık bulunmadığını söyledi. Üçüncü dükkân çok küçük ve karanlıktı, balık pazarının arkasındaydı. Oradaki adam, Sabri, hiçbir şey söylemeden saate uzun süre baktı. Sonra parçayı satın alamayacağını ama yapabileceğini söyledi. Bir ayını aldı ve ucuz değildi. Arkadaşlarım paranın etmediği eski bir saate çok para verdiğimi söylüyor. Para konusunda haklılar. Ama onu taktığımda sesini duyabiliyorum ve parayı bunun için verdim.",
+      "glossary": [
+        { "w": "watch", "tr": "kol saati" },
+        { "w": "parts", "tr": "parçalar" },
+        { "w": "exist", "tr": "var olmak" },
+        { "w": "worth", "tr": "değer" },
+        { "w": "refused", "tr": "reddetti" },
+        { "w": "charged", "tr": "ücret aldı" }
+      ],
+      "questions": [
+        { "q": "Who gave the writer the watch?", "options": ["His grandfather", "His father", "Sabri", "A friend"], "answer": 0, "note": "\"My grandfather gave me his watch.\"" },
+        { "q": "What did the first two shops say?", "options": ["The parts do not exist any more", "The watch was not real", "It was too expensive to fix", "They were too busy"], "answer": 0, "note": "\"It was too old and the parts do not exist any more.\"" },
+        { "q": "Where was the third shop?", "options": ["Behind the fish market", "Near the school", "In the city center", "Next to a bank"], "answer": 0, "note": "\"Behind the fish market.\"" },
+        { "q": "What did Sabri do?", "options": ["He made a part himself", "He bought a new watch", "He sold the watch", "He refused the job"], "answer": 0, "note": "\"He could not buy the parts but he could make one.\"" },
+        { "q": "What does the writer say about the money?", "options": ["His friends are right, but he does not mind", "He paid very little", "He wants his money back", "Sabri charged nothing"], "answer": 0, "note": "\"They are right about the money.\"" }
+      ]
+    }
+  ]
+}

@@ -2,14 +2,14 @@
  "reading": [
   {
    "level": "A1",
-   "items": 10,
-   "minutes": 20,
+   "items": 25,
+   "minutes": 50,
    "file": "reading-a1.json"
   },
   {
    "level": "A2",
-   "items": 10,
-   "minutes": 30,
+   "items": 15,
+   "minutes": 45,
    "file": "reading-a2.json"
   },
   {

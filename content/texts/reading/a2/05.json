@@ -1,0 +1,134 @@
+{
+  "_meta": { "batch": "a2-reading-05", "level": "A2", "range": "Parça 21-25" },
+  "items": [
+    {
+      "id": "a2-r-21",
+      "level": "A2",
+      "order": 21,
+      "kind": "reading",
+      "title": "Yağmurda kalan düğün",
+      "titleEn": "The Wedding in the Rain",
+      "minutes": 3,
+      "names": ["Gizem"],
+      "text": "My cousin Gizem planned her wedding in a garden. She checked the weather every day for a month. On the morning of the wedding the sky was blue. At six in the evening, ten minutes before the start, it began to rain. Everybody ran inside the small house. There were a hundred guests and not enough chairs. People sat on the stairs and on the kitchen table. The music did not work. Gizem cried for five minutes and then she laughed. Her photos are the funniest photos I have ever seen. She says now that a perfect garden wedding would have been forgotten in a year.",
+      "textTr": "Kuzenim Gizem düğününü bir bahçede planladı. Bir ay boyunca her gün havayı kontrol etti. Düğün sabahı gökyüzü maviydi. Akşam altıda, başlamadan on dakika önce yağmur başladı. Herkes küçük evin içine koştu. Yüz misafir vardı ve yeterince sandalye yoktu. İnsanlar merdivenlere ve mutfak masasına oturdu. Müzik çalışmadı. Gizem beş dakika ağladı, sonra güldü. Fotoğrafları gördüğüm en komik fotoğraflar. Şimdi kusursuz bir bahçe düğününün bir yılda unutulacağını söylüyor.",
+      "glossary": [
+        { "w": "wedding", "tr": "düğün" },
+        { "w": "weather", "tr": "hava durumu" },
+        { "w": "guests", "tr": "misafirler" },
+        { "w": "stairs", "tr": "merdiven" },
+        { "w": "perfect", "tr": "kusursuz" }
+      ],
+      "questions": [
+        { "q": "Where was the wedding planned?", "options": ["In a garden", "In a hotel", "In a small house", "In a restaurant"], "answer": 0, "note": "\"Gizem planned her wedding in a garden.\"" },
+        { "q": "When did it start to rain?", "options": ["Ten minutes before the start", "In the morning", "After the wedding", "At noon"], "answer": 0, "note": "\"At six in the evening, ten minutes before the start, it began to rain.\"" },
+        { "q": "What was the problem inside?", "options": ["Not enough chairs", "No food", "No guests", "It was too cold"], "answer": 0, "note": "\"There were a hundred guests and not enough chairs.\"" },
+        { "q": "What did Gizem do?", "options": ["Cried and then laughed", "Went home", "Stopped the wedding", "Called the guests"], "answer": 0, "note": "\"Gizem cried for five minutes and then she laughed.\"" },
+        { "q": "What does she say now?", "options": ["A perfect wedding would have been forgotten", "She wants another wedding", "The rain was terrible", "The photos are bad"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "a2-r-22",
+      "level": "A2",
+      "order": 22,
+      "kind": "reading",
+      "title": "Koşmaya başlamak",
+      "titleEn": "Starting to Run",
+      "minutes": 3,
+      "names": [],
+      "text": "In January I decided to start running. On the first day I ran for four minutes and then I had to walk. I was very tired and my legs hurt for two days. A friend told me the mistake was clear: I started too fast. She said to run slowly enough to talk at the same time. It felt silly, but I tried it. After six weeks I could run for twenty minutes without stopping. I am still slow. Cars, bicycles and even some people who are walking fast pass me. But in January I could not run for five minutes, and now I run three times a week.",
+      "textTr": "Ocakta koşmaya başlamaya karar verdim. İlk gün dört dakika koştum, sonra yürümek zorunda kaldım. Çok yorgundum ve bacaklarım iki gün ağrıdı. Bir arkadaşım hatanın belli olduğunu söyledi: çok hızlı başlamışım. Aynı anda konuşabilecek kadar yavaş koşmamı söyledi. Saçma geldi ama denedim. Altı hafta sonra durmadan yirmi dakika koşabiliyordum. Hâlâ yavaşım. Arabalar, bisikletler, hatta hızlı yürüyen bazı insanlar beni geçiyor. Ama ocakta beş dakika koşamıyordum, şimdi haftada üç kez koşuyorum.",
+      "glossary": [
+        { "w": "legs", "tr": "bacaklar" },
+        { "w": "hurt", "tr": "ağrımak" },
+        { "w": "mistake", "tr": "hata" },
+        { "w": "silly", "tr": "saçma" },
+        { "w": "bicycles", "tr": "bisikletler" },
+        { "w": "pass", "tr": "geçmek" }
+      ],
+      "questions": [
+        { "q": "How long did the writer run on the first day?", "options": ["Four minutes", "Twenty minutes", "Five minutes", "Half an hour"], "answer": 0, "note": "\"On the first day I ran for four minutes.\"" },
+        { "q": "What was the mistake?", "options": ["Starting too fast", "Running too far", "Running at night", "Not eating first"], "answer": 0, "note": "\"I started too fast.\"" },
+        { "q": "What was the friend's advice?", "options": ["Run slowly enough to talk", "Run every day", "Buy better shoes", "Run with a group"], "answer": 0, "note": "\"She said to run slowly enough to talk at the same time.\"" },
+        { "q": "What could the writer do after six weeks?", "options": ["Run twenty minutes without stopping", "Run very fast", "Run every day", "Run with her friend"], "answer": 0, "note": "\"After six weeks I could run for twenty minutes without stopping.\"" },
+        { "q": "How often does the writer run now?", "options": ["Three times a week", "Every day", "Once a month", "Twice a day"], "answer": 0, "note": "\"Now I run three times a week.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-23",
+      "level": "A2",
+      "order": 23,
+      "kind": "reading",
+      "title": "Dedemin defterleri",
+      "titleEn": "My Grandfather's Notebooks",
+      "minutes": 3,
+      "names": [],
+      "text": "When we cleaned my grandfather's house we found twenty-two notebooks under his bed. He wrote in one every year from 1968. They are not about big things. He wrote what the weather was, what he paid for bread, who came to visit and what they said. On the first page of 1971 he wrote only four words: today my son arrived. That son is my father. My father read that page three times and then he closed the book. We put the notebooks in a box in our living room. My mother wants to type them on the computer. I think she is right, but nobody has started yet.",
+      "textTr": "Dedemin evini temizlerken yatağının altında yirmi iki defter bulduk. 1968'den itibaren her yıl birine yazmış. Büyük şeylerle ilgili değiller. Havanın nasıl olduğunu, ekmeğe ne verdiğini, kimin ziyarete geldiğini ve ne söylediğini yazmış. 1971'in ilk sayfasına sadece dört kelime yazmış: bugün oğlum geldi. O oğul benim babam. Babam o sayfayı üç kez okudu ve sonra defteri kapattı. Defterleri oturma odamızdaki bir kutuya koyduk. Annem onları bilgisayara geçirmek istiyor. Bence haklı ama henüz kimse başlamadı.",
+      "glossary": [
+        { "w": "notebooks", "tr": "defterler" },
+        { "w": "visit", "tr": "ziyaret" },
+        { "w": "arrived", "tr": "geldi, vardı" },
+        { "w": "type", "tr": "yazmak (klavyede)" }
+      ],
+      "questions": [
+        { "q": "Where were the notebooks?", "options": ["Under his bed", "In the kitchen", "In a box", "In the living room"], "answer": 0, "note": "\"We found twenty-two notebooks under his bed.\"" },
+        { "q": "What did the grandfather write about?", "options": ["Small daily things", "The war", "His work", "His travels"], "answer": 0, "note": "\"He wrote what the weather was, what he paid for bread.\"" },
+        { "q": "What did he write in 1971?", "options": ["Today my son arrived", "The price of bread", "Nothing at all", "A long letter"], "answer": 0, "note": "\"Today my son arrived.\"" },
+        { "q": "How did the father react?", "options": ["He read the page three times", "He cried", "He put the book away at once", "He wrote in it"], "answer": 0, "note": "\"My father read that page three times.\"" },
+        { "q": "What does the mother want to do?", "options": ["Type them on the computer", "Sell them", "Give them away", "Keep them under the bed"], "answer": 0, "note": "\"My mother wants to type them on the computer.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-24",
+      "level": "A2",
+      "order": 24,
+      "kind": "reading",
+      "title": "Ev arkadaşı ilanı",
+      "titleEn": "Looking for the Right Person",
+      "minutes": 3,
+      "names": ["Cansu"],
+      "text": "When my flatmate moved out I put a small advertisement on the internet. Twelve people wrote to me in three days. I met six of them in a cafe near the flat. One man asked only about the price. One woman asked if she could bring two dogs. Another person did not come and did not write. Then Cansu came. She asked what time I get up, if I cook, and if I mind people in the kitchen late at night. Those were the right questions. She has lived here for eight months now and we have never argued about anything important.",
+      "textTr": "Ev arkadaşım taşınınca internete küçük bir ilan koydum. Üç günde on iki kişi bana yazdı. Altısıyla evin yakınındaki bir kafede buluştum. Bir adam sadece fiyatı sordu. Bir kadın iki köpek getirip getiremeyeceğini sordu. Başka biri ne geldi ne de yazdı. Sonra Cansu geldi. Saat kaçta kalktığımı, yemek yapıp yapmadığımı ve gece geç saatte mutfakta insan olmasından rahatsız olup olmadığımı sordu. Doğru sorular bunlardı. Sekiz aydır burada yaşıyor ve önemli hiçbir şey için tartışmadık.",
+      "glossary": [
+        { "w": "flatmate", "tr": "ev arkadaşı" },
+        { "w": "advertisement", "tr": "ilan" },
+        { "w": "mind", "tr": "rahatsız olmak" },
+        { "w": "argued", "tr": "tartıştı" }
+      ],
+      "questions": [
+        { "q": "How many people wrote in three days?", "options": ["Twelve", "Six", "Two", "Eight"], "answer": 0, "note": "\"Twelve people wrote to me in three days.\"" },
+        { "q": "What did one man ask about?", "options": ["Only the price", "The kitchen", "The neighbors", "The dogs"], "answer": 0, "note": "\"One man asked only about the price.\"" },
+        { "q": "What did Cansu ask about?", "options": ["Daily habits in the flat", "The price", "The neighbors", "The furniture"], "answer": 0, "note": "\"She asked what time I get up, if I cook.\"" },
+        { "q": "How long has Cansu lived there?", "options": ["Eight months", "Three days", "Two years", "Six months"], "answer": 0, "note": "\"She has lived here for eight months now.\"" },
+        { "q": "What does the writer say about them?", "options": ["They have never argued about anything important", "They argue often", "They almost never speak", "They plan to move"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "a2-r-25",
+      "level": "A2",
+      "order": 25,
+      "kind": "reading",
+      "title": "Gece treni",
+      "titleEn": "The Overnight Bus",
+      "minutes": 3,
+      "names": ["Adana"],
+      "text": "Last winter I went to Adana by bus. The journey was twelve hours and it started at nine in the evening. I had a seat near the window. Next to me sat an old woman with a large bag of food. After one hour she opened the bag and gave me bread and cheese. I said no twice and then I said yes. She talked about her four children for three hours. I was tired and I wanted to sleep, but her stories were better than sleeping. At six in the morning her son met her at the station. She gave me the rest of the bread and she did not ask for my name.",
+      "textTr": "Geçen kış Adana'ya otobüsle gittim. Yolculuk on iki saatti ve akşam dokuzda başladı. Pencere kenarında oturdum. Yanımda büyük bir yiyecek çantası olan yaşlı bir kadın oturuyordu. Bir saat sonra çantayı açtı ve bana ekmek ve peynir verdi. İki kez hayır dedim, sonra evet dedim. Üç saat boyunca dört çocuğundan bahsetti. Yorgundum ve uyumak istiyordum ama hikâyeleri uykudan iyiydi. Sabah altıda oğlu onu garda karşıladı. Kalan ekmeği bana verdi ve adımı sormadı.",
+      "glossary": [
+        { "w": "journey", "tr": "yolculuk" },
+        { "w": "seat", "tr": "koltuk" },
+        { "w": "rest", "tr": "kalan, geri kalanı" },
+        { "w": "station", "tr": "gar, istasyon" },
+        { "w": "loud", "tr": "gürültülü" }
+      ],
+      "questions": [
+        { "q": "How long was the journey?", "options": ["Twelve hours", "Six hours", "Three hours", "One hour"], "answer": 0, "note": "\"The journey was twelve hours.\"" },
+        { "q": "What did the old woman have?", "options": ["A large bag of food", "Four children with her", "A small dog", "A newspaper"], "answer": 0, "note": "\"An old woman with a large bag of food.\"" },
+        { "q": "How did the writer answer at first?", "options": ["He said no twice", "He said yes at once", "He said nothing", "He left his seat"], "answer": 0, "note": "\"I said no twice and then I said yes.\"" },
+        { "q": "Why did the writer not sleep?", "options": ["Her stories were better than sleeping", "The bus was loud", "The seat was hard", "He was not tired"], "answer": 0, "note": "\"Her stories were better than sleeping.\"" },
+        { "q": "What did she do at the end?", "options": ["Gave him the rest of the bread", "Asked for his name", "Took his address", "Said nothing"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

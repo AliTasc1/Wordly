@@ -1,0 +1,132 @@
+{
+  "_meta": { "batch": "a2-reading-04", "level": "A2", "range": "Parça 16-20" },
+  "items": [
+    {
+      "id": "a2-r-16",
+      "level": "A2",
+      "order": 16,
+      "kind": "reading",
+      "title": "İlk maaş",
+      "titleEn": "The First Salary",
+      "minutes": 3,
+      "names": ["Onur"],
+      "text": "My cousin Onur got his first salary last month. He is nineteen and he works in a shop at the weekend. On Monday he came to our house with a big bag. He bought a present for his mother, a shirt for his father and chocolate for everybody. By Wednesday he had almost no money left. My mother said nothing at the time. Two weeks later she asked him quietly how the month was going. He said it was difficult. She did not tell him he was stupid. She only said that her first salary went the same way. Next month he wants to save half of it. I do not know if he will, but he has a plan now.",
+      "textTr": "Kuzenim Onur geçen ay ilk maaşını aldı. On dokuz yaşında ve hafta sonları bir dükkânda çalışıyor. Pazartesi elinde büyük bir poşetle evimize geldi. Annesine hediye, babasına gömlek ve herkese çikolata almış. Çarşambaya kadar neredeyse hiç parası kalmamıştı. Annem o an bir şey söylemedi. İki hafta sonra ona sessizce ayın nasıl gittiğini sordu. Zor olduğunu söyledi. Annem ona aptal olduğunu söylemedi. Sadece kendi ilk maaşının da aynı şekilde gittiğini söyledi. Gelecek ay yarısını biriktirmek istiyor. Yapar mı bilmiyorum ama artık bir planı var.",
+      "glossary": [
+        { "w": "cousin", "tr": "kuzen" },
+        { "w": "salary", "tr": "maaş" },
+        { "w": "present", "tr": "hediye" },
+        { "w": "save", "tr": "biriktirmek" },
+        { "w": "stupid", "tr": "aptal" }
+      ],
+      "questions": [
+        { "q": "Where does Onur work?", "options": ["In a shop at the weekend", "In an office", "At a school", "In a restaurant"], "answer": 0, "note": "\"He works in a shop at the weekend.\"" },
+        { "q": "What did he buy for his father?", "options": ["A shirt", "Chocolate", "A present", "A bag"], "answer": 0, "note": "\"A shirt for his father.\"" },
+        { "q": "When did the money run out?", "options": ["By Wednesday", "By Friday", "After two weeks", "The same day"], "answer": 0, "note": "\"By Wednesday he had almost no money left.\"" },
+        { "q": "What did the mother say two weeks later?", "options": ["Her first salary went the same way", "He was stupid", "He must give the money back", "He should stop working"], "answer": 0, "note": "\"She only said that her first salary went the same way.\"" },
+        { "q": "What does Onur want to do next month?", "options": ["Save half of his salary", "Buy more presents", "Change his job", "Work every day"], "answer": 0, "note": "\"Next month he wants to save half of it.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-17",
+      "level": "A2",
+      "order": 17,
+      "kind": "reading",
+      "title": "Sınav gecesi",
+      "titleEn": "The Night Before the Exam",
+      "minutes": 3,
+      "names": ["Pinar"],
+      "text": "The night before an important exam I usually cannot sleep. Last June I had a history exam at nine in the morning. At midnight I was still reading my notes. At one o'clock I decided to sleep, but my head was full of dates. At three I got up and made tea. My sister Pinar found me in the kitchen. She is a nurse and she works at night, so she was awake too. She told me to stop reading and to talk about something else. We talked about her work for half an hour. Then I slept until seven. In the exam I remembered everything. Now I always stop reading at eleven.",
+      "textTr": "Önemli bir sınavdan önceki gece genelde uyuyamam. Geçen haziran sabah dokuzda tarih sınavım vardı. Gece yarısı hâlâ notlarımı okuyordum. Birde uyumaya karar verdim ama kafam tarihlerle doluydu. Üçte kalkıp çay yaptım. Kız kardeşim Pınar beni mutfakta buldu. Hemşire ve geceleri çalışıyor, o yüzden o da uyanıktı. Bana okumayı bırakıp başka bir şeyden konuşmamı söyledi. Yarım saat onun işini konuştuk. Sonra yediye kadar uyudum. Sınavda her şeyi hatırladım. Artık hep on birde okumayı bırakıyorum.",
+      "glossary": [
+        { "w": "notes", "tr": "notlar" },
+        { "w": "dates", "tr": "tarihler" },
+        { "w": "nurse", "tr": "hemşire" },
+        { "w": "awake", "tr": "uyanık" }
+      ],
+      "questions": [
+        { "q": "What time was the exam?", "options": ["Nine in the morning", "Midnight", "Seven o'clock", "Eleven o'clock"], "answer": 0, "note": "\"I had a history exam at nine in the morning.\"" },
+        { "q": "Why was Pinar awake?", "options": ["She works at night", "She had an exam too", "She heard her sister", "She was ill"], "answer": 0, "note": "\"She is a nurse and she works at night.\"" },
+        { "q": "What did Pinar tell her to do?", "options": ["Stop reading and talk about something else", "Read the notes again", "Go for a walk", "Take medicine"], "answer": 0, "note": "\"She told me to stop reading and to talk about something else.\"" },
+        { "q": "How long did they talk?", "options": ["Half an hour", "Two hours", "Ten minutes", "All night"], "answer": 0, "note": "\"We talked about her work for half an hour.\"" },
+        { "q": "What does the writer do now?", "options": ["Stops reading at eleven", "Sleeps in the afternoon", "Drinks tea at three", "Reads all night"], "answer": 0, "note": "\"Now I always stop reading at eleven.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-18",
+      "level": "A2",
+      "order": 18,
+      "kind": "reading",
+      "title": "Balkondan gelen ses",
+      "titleEn": "The Noise from the Balcony",
+      "minutes": 3,
+      "names": ["Sema"],
+      "text": "For two weeks we heard a strange noise from the balcony at night. My mother thought it was a bird. My father thought it was the wind. I thought somebody was there and I did not sleep well. On Saturday morning we looked properly. Behind the old chairs there was a small box, and inside the box there were four young cats. Our neighbor Sema said the mother cat comes every night through the open window. We wanted to keep them but my father said no. Sema found homes for three of them. The fourth one still lives with us. My father feeds her every morning and he says he is only doing it because nobody else will.",
+      "textTr": "İki hafta boyunca geceleri balkondan tuhaf bir ses duyduk. Annem kuş olduğunu düşündü. Babam rüzgâr olduğunu düşündü. Ben orada biri olduğunu düşündüm ve iyi uyuyamadım. Cumartesi sabahı düzgünce baktık. Eski sandalyelerin arkasında küçük bir kutu vardı ve kutunun içinde dört yavru kedi vardı. Komşumuz Sema anne kedinin her gece açık pencereden geldiğini söyledi. Onları tutmak istedik ama babam hayır dedi. Sema üçüne yuva buldu. Dördüncüsü hâlâ bizimle yaşıyor. Babam her sabah onu besliyor ve bunu sadece başka kimse yapmayacağı için yaptığını söylüyor.",
+      "glossary": [
+        { "w": "noise", "tr": "ses, gürültü" },
+        { "w": "strange", "tr": "tuhaf" },
+        { "w": "properly", "tr": "düzgünce" },
+        { "w": "feeds", "tr": "besliyor" }
+      ],
+      "questions": [
+        { "q": "How long did they hear the noise?", "options": ["Two weeks", "Two nights", "One month", "Four days"], "answer": 0, "note": "\"For two weeks we heard a strange noise.\"" },
+        { "q": "What did the father think it was?", "options": ["The wind", "A bird", "A person", "A cat"], "answer": 0, "note": "\"My father thought it was the wind.\"" },
+        { "q": "What did they find in the box?", "options": ["Four young cats", "A bird", "Old chairs", "Nothing"], "answer": 0, "note": "\"Inside the box there were four young cats.\"" },
+        { "q": "Who found homes for the cats?", "options": ["Sema", "The mother", "The father", "The writer"], "answer": 0, "note": "\"Sema found homes for three of them.\"" },
+        { "q": "What does the father do now?", "options": ["He feeds the last cat", "He closed the window", "He gave the cat away", "He built a new box"], "answer": 0, "note": "\"My father feeds her every morning.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-19",
+      "level": "A2",
+      "order": 19,
+      "kind": "reading",
+      "title": "Fotoğraf makinesi",
+      "titleEn": "The Old Camera",
+      "minutes": 3,
+      "names": ["Tolga"],
+      "text": "My friend Tolga bought an old camera at a second-hand shop. It uses film, so you cannot see the photo after you take it. You must wait and pay to see the pictures. At first I thought this was stupid. Why pay for something when your phone is free? Then he showed me his first photos. Only twenty of the thirty-six were good, but he could talk about every one of them. He remembered where he stood and why he took it. I take two hundred photos on a holiday and I do not remember any of them. Last week I asked him where the shop was.",
+      "textTr": "Arkadaşım Tolga ikinci el bir dükkândan eski bir fotoğraf makinesi aldı. Film kullanıyor, yani çektikten sonra fotoğrafı göremiyorsun. Beklemen ve resimleri görmek için para ödemen gerekiyor. Başta bunun aptalca olduğunu düşündüm. Telefonun bedavayken neden para ödeyesin? Sonra bana ilk fotoğraflarını gösterdi. Otuz altının sadece yirmisi iyiydi ama her biri hakkında konuşabiliyordu. Nerede durduğunu ve neden çektiğini hatırlıyordu. Ben bir tatilde iki yüz fotoğraf çekiyorum ve hiçbirini hatırlamıyorum. Geçen hafta ona dükkânın nerede olduğunu sordum.",
+      "glossary": [
+        { "w": "camera", "tr": "fotoğraf makinesi" },
+        { "w": "second-hand", "tr": "ikinci el" },
+        { "w": "film", "tr": "film" },
+        { "w": "stupid", "tr": "aptalca" }
+      ],
+      "questions": [
+        { "q": "What is special about the camera?", "options": ["It uses film", "It is very small", "It is new", "It was free"], "answer": 0, "note": "\"It uses film.\"" },
+        { "q": "What did the writer think at first?", "options": ["That it was stupid", "That it was clever", "That it was cheap", "That he wanted one"], "answer": 0, "note": "\"At first I thought this was stupid.\"" },
+        { "q": "How many photos were good?", "options": ["Twenty", "Thirty-six", "Two hundred", "Two"], "answer": 0, "note": "\"Only twenty of the thirty-six were good.\"" },
+        { "q": "What could Tolga do with every photo?", "options": ["Talk about it", "Sell it", "Print it at home", "Send it to friends"], "answer": 0, "note": "\"He could talk about every one of them.\"" },
+        { "q": "What did the writer do last week?", "options": ["Asked where the shop was", "Bought a phone", "Took two hundred photos", "Sold his camera"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "a2-r-20",
+      "level": "A2",
+      "order": 20,
+      "kind": "reading",
+      "title": "Yanlış anlaşılan şaka",
+      "titleEn": "A Joke That Went Wrong",
+      "minutes": 3,
+      "names": ["Berk"],
+      "text": "At work last month I made a joke about my colleague Berk. Everybody laughed, and I thought he laughed too. The next day he was very quiet. He did not come to lunch with us. I thought he was busy. On Friday another colleague told me that Berk was upset about the joke. I felt terrible. I did not want to write a message because it is easy to write the wrong thing. So on Monday I asked him for a coffee and I said sorry. He said the joke was not really the problem; the problem was that it was in front of ten people. He was right. Now I am more careful about where I say things.",
+      "textTr": "Geçen ay işte meslektaşım Berk hakkında bir şaka yaptım. Herkes güldü ve onun da güldüğünü sandım. Ertesi gün çok sessizdi. Bizimle öğle yemeğine gelmedi. Meşgul sandım. Cuma günü başka bir meslektaşım Berk'in şakaya üzüldüğünü söyledi. Berbat hissettim. Mesaj yazmak istemedim çünkü yanlış bir şey yazmak kolay. O yüzden pazartesi ona kahve teklif ettim ve özür diledim. Asıl sorunun şaka olmadığını, on kişinin önünde olması olduğunu söyledi. Haklıydı. Artık bir şeyi nerede söylediğime daha çok dikkat ediyorum.",
+      "glossary": [
+        { "w": "joke", "tr": "şaka" },
+        { "w": "colleague", "tr": "meslektaş, iş arkadaşı" },
+        { "w": "upset", "tr": "üzgün, kırgın" },
+        { "w": "terrible", "tr": "berbat" },
+        { "w": "careful", "tr": "dikkatli" }
+      ],
+      "questions": [
+        { "q": "How did the writer read the room?", "options": ["He thought Berk laughed too", "That Berk was angry", "That nobody heard", "That Berk was ill"], "answer": 0, "note": "\"I thought he laughed too.\"" },
+        { "q": "How did the writer find out?", "options": ["Another colleague told him", "Berk wrote a message", "The manager said so", "He guessed"], "answer": 0, "note": "\"On Friday another colleague told me.\"" },
+        { "q": "Why did the writer not send a message?", "options": ["It is easy to write the wrong thing", "He had no phone", "Berk was away", "He was too busy"], "answer": 0, "note": "\"Because it is easy to write the wrong thing.\"" },
+        { "q": "What did Berk say the real problem was?", "options": ["It was said in front of ten people", "The joke was not funny", "It was about his family", "It was written down"], "answer": 0, "note": "\"The problem was that it was in front of ten people.\"" },
+        { "q": "What is the writer more careful about now?", "options": ["Where he says things", "Who he works with", "What he writes", "When he has lunch"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}
