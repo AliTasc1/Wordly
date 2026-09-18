@@ -144,6 +144,65 @@
     ],
     "answer": 1,
     "note": "didn't + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ not come to the meeting yesterday.",
+    "options": [
+     "is",
+     "did",
+     "was",
+     "does"
+    ],
+    "answer": 1,
+    "note": "Geçmiş olumsuz → did not + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "___ you see the new film last night?",
+    "options": [
+     "Do",
+     "Were",
+     "Did",
+     "Was"
+    ],
+    "answer": 2,
+    "note": "Geçmiş soru → Did + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "They ___ not at the station when we arrived.",
+    "options": [
+     "are",
+     "were",
+     "did",
+     "was"
+    ],
+    "answer": 1,
+    "note": "be fiilinde did kullanılmaz → were not."
+   },
+   {
+    "type": "gap",
+    "text": "___ the shop open on Sunday?",
+    "options": [
+     "Were",
+     "Was",
+     "Did"
+    ],
+    "answer": 1,
+    "note": "open burada sıfat, be gerekiyor → Was."
+   },
+   {
+    "type": "choice",
+    "text": "He did not ___ anything about it.",
+    "options": [
+     "says",
+     "said",
+     "saying",
+     "say"
+    ],
+    "answer": 3,
+    "note": "did not + yalın fiil."
    }
   ]
  },
@@ -289,6 +348,65 @@
     ],
     "answer": 2,
     "note": "we → were + -ing."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ dinner when the phone rang.",
+    "options": [
+     "was cooking",
+     "cook",
+     "am cooking",
+     "cooked"
+    ],
+    "answer": 0,
+    "note": "Kesintiye uğrayan iş → was + V-ing."
+   },
+   {
+    "type": "choice",
+    "text": "They ___ football all afternoon.",
+    "options": [
+     "were playing",
+     "was playing",
+     "play",
+     "are playing"
+    ],
+    "answer": 0,
+    "note": "they → were playing."
+   },
+   {
+    "type": "choice",
+    "text": "What ___ you doing at eight o'clock?",
+    "options": [
+     "was",
+     "are",
+     "were",
+     "did"
+    ],
+    "answer": 2,
+    "note": "you → were."
+   },
+   {
+    "type": "gap",
+    "text": "It ___ raining when we left the house.",
+    "options": [
+     "were",
+     "was",
+     "did"
+    ],
+    "answer": 1,
+    "note": "it → was raining."
+   },
+   {
+    "type": "choice",
+    "text": "While she ___ , somebody knocked on the door.",
+    "options": [
+     "sleeps",
+     "slept",
+     "was sleeping",
+     "is sleeping"
+    ],
+    "answer": 2,
+    "note": "while + sürekli geçmiş."
    }
   ]
  },
@@ -435,6 +553,65 @@
     ],
     "answer": 2,
     "note": "will + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "I think it ___ rain tomorrow.",
+    "options": [
+     "does",
+     "would",
+     "is",
+     "will"
+    ],
+    "answer": 3,
+    "note": "Tahmin → will."
+   },
+   {
+    "type": "choice",
+    "text": "Do not worry, I ___ help you.",
+    "options": [
+     "do",
+     "will",
+     "would",
+     "am"
+    ],
+    "answer": 1,
+    "note": "Anlık karar → will."
+   },
+   {
+    "type": "choice",
+    "text": "She will ___ here at six.",
+    "options": [
+     "being",
+     "be",
+     "to be",
+     "is"
+    ],
+    "answer": 1,
+    "note": "will + yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "They ___ not be late again.",
+    "options": [
+     "will",
+     "do",
+     "are"
+    ],
+    "answer": 0,
+    "note": "will not = won't."
+   },
+   {
+    "type": "choice",
+    "text": "___ you carry this bag for me?",
+    "options": [
+     "Did",
+     "Are",
+     "Do",
+     "Will"
+    ],
+    "answer": 3,
+    "note": "Rica → Will you …?"
    }
   ]
  },
@@ -580,6 +757,65 @@
     ],
     "answer": 0,
     "note": "I am not going to."
+   },
+   {
+    "type": "choice",
+    "text": "We ___ going to move house in June.",
+    "options": [
+     "am",
+     "will",
+     "is",
+     "are"
+    ],
+    "answer": 3,
+    "note": "we → are going to."
+   },
+   {
+    "type": "choice",
+    "text": "Look at those clouds. It ___ to rain.",
+    "options": [
+     "go",
+     "is going",
+     "will going",
+     "goes"
+    ],
+    "answer": 1,
+    "note": "Belirti var → be going to."
+   },
+   {
+    "type": "choice",
+    "text": "She is going to ___ a new job next month.",
+    "options": [
+     "start",
+     "started",
+     "starting",
+     "starts"
+    ],
+    "answer": 0,
+    "note": "going to + yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "___ you going to call him?",
+    "options": [
+     "Will",
+     "Do",
+     "Are"
+    ],
+    "answer": 2,
+    "note": "be going to sorusu be ile kurulur."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ not going to say anything.",
+    "options": [
+     "do",
+     "am",
+     "are",
+     "is"
+    ],
+    "answer": 1,
+    "note": "I → am not going to."
    }
   ]
  },
@@ -727,6 +963,65 @@
     ],
     "answer": 2,
     "note": "need to + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "You ___ see a doctor about that cough.",
+    "options": [
+     "should",
+     "are should",
+     "should to",
+     "shoulds"
+    ],
+    "answer": 0,
+    "note": "Tavsiye → should + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "He ___ to work on Saturdays.",
+    "options": [
+     "is",
+     "has",
+     "does",
+     "have"
+    ],
+    "answer": 1,
+    "note": "3. tekil → has to."
+   },
+   {
+    "type": "choice",
+    "text": "We ___ not have to pay for the tickets.",
+    "options": [
+     "do",
+     "did",
+     "are",
+     "have"
+    ],
+    "answer": 0,
+    "note": "have to olumsuzu do ile kurulur."
+   },
+   {
+    "type": "gap",
+    "text": "You ___ not eat so fast.",
+    "options": [
+     "should",
+     "must to",
+     "have"
+    ],
+    "answer": 0,
+    "note": "Tavsiye olumsuzu → should not."
+   },
+   {
+    "type": "choice",
+    "text": "Do I ___ to bring my passport?",
+    "options": [
+     "needing",
+     "needed",
+     "needs",
+     "need"
+    ],
+    "answer": 3,
+    "note": "do + yalın fiil → need to."
    }
   ]
  },
@@ -873,6 +1168,65 @@
     ],
     "answer": 0,
     "note": "would like kalıbı."
+   },
+   {
+    "type": "choice",
+    "text": "___ you like some more soup?",
+    "options": [
+     "Would",
+     "Do",
+     "Are",
+     "Will"
+    ],
+    "answer": 0,
+    "note": "Nazik ikram → Would you like …?"
+   },
+   {
+    "type": "choice",
+    "text": "___ you open the window, please?",
+    "options": [
+     "Could",
+     "Should",
+     "Do",
+     "Are"
+    ],
+    "answer": 0,
+    "note": "Nazik rica → Could you …?"
+   },
+   {
+    "type": "choice",
+    "text": "I would like ___ two tickets.",
+    "options": [
+     "to book",
+     "booking",
+     "booked",
+     "book"
+    ],
+    "answer": 0,
+    "note": "would like + to + fiil."
+   },
+   {
+    "type": "gap",
+    "text": "___ I ask you something?",
+    "options": [
+     "Can",
+     "Am",
+     "Do can"
+    ],
+    "answer": 0,
+    "note": "İzin → Can I …?"
+   },
+   {
+    "type": "choice",
+    "text": "She would ___ to speak to the manager.",
+    "options": [
+     "like",
+     "likes",
+     "liked",
+     "liking"
+    ],
+    "answer": 0,
+    "note": "would + yalın fiil."
    }
   ]
  },
@@ -1018,6 +1372,65 @@
     ],
     "answer": 2,
     "note": "he → has."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ never been to Greece.",
+    "options": [
+     "am",
+     "did",
+     "have",
+     "has"
+    ],
+    "answer": 2,
+    "note": "I → have been."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ just finished her homework.",
+    "options": [
+     "did",
+     "is",
+     "have",
+     "has"
+    ],
+    "answer": 3,
+    "note": "3. tekil → has."
+   },
+   {
+    "type": "choice",
+    "text": "We have ___ in this city since two thousand and ten.",
+    "options": [
+     "lives",
+     "live",
+     "lived",
+     "living"
+    ],
+    "answer": 2,
+    "note": "have + V3."
+   },
+   {
+    "type": "gap",
+    "text": "___ you ever eaten Japanese food?",
+    "options": [
+     "Did",
+     "Have",
+     "Are"
+    ],
+    "answer": 1,
+    "note": "ever ile present perfect."
+   },
+   {
+    "type": "choice",
+    "text": "He has not called me ___ Monday.",
+    "options": [
+     "ago",
+     "from",
+     "since",
+     "for"
+    ],
+    "answer": 2,
+    "note": "Başlangıç noktası → since."
    }
   ]
  },
@@ -1165,6 +1578,65 @@
     ],
     "answer": 2,
     "note": "Üçüncü hâl ismi niteler."
+   },
+   {
+    "type": "choice",
+    "text": "This bridge ___ built in nineteen seventy.",
+    "options": [
+     "were",
+     "is",
+     "was",
+     "has"
+    ],
+    "answer": 2,
+    "note": "Geçmiş edilgen tekil → was built."
+   },
+   {
+    "type": "choice",
+    "text": "Cheese ___ made from milk.",
+    "options": [
+     "does",
+     "is",
+     "are",
+     "was"
+    ],
+    "answer": 1,
+    "note": "Genel doğru → is made."
+   },
+   {
+    "type": "choice",
+    "text": "The invitations ___ printed last week.",
+    "options": [
+     "were",
+     "did",
+     "was",
+     "are"
+    ],
+    "answer": 0,
+    "note": "Çoğul + geçmiş → were printed."
+   },
+   {
+    "type": "gap",
+    "text": "The room ___ cleaned every morning.",
+    "options": [
+     "are",
+     "is",
+     "was"
+    ],
+    "answer": 1,
+    "note": "Tekil + geniş zaman → is cleaned."
+   },
+   {
+    "type": "choice",
+    "text": "The car was ___ by my uncle.",
+    "options": [
+     "repaired",
+     "repairs",
+     "repairing",
+     "repair"
+    ],
+    "answer": 0,
+    "note": "be + V3."
    }
   ]
  },
@@ -1311,6 +1783,65 @@
     ],
     "answer": 0,
     "note": "Cansız çoğul → that."
+   },
+   {
+    "type": "choice",
+    "text": "The woman ___ lives next door is a nurse.",
+    "options": [
+     "where",
+     "which",
+     "what",
+     "who"
+    ],
+    "answer": 3,
+    "note": "Kişi → who."
+   },
+   {
+    "type": "choice",
+    "text": "This is the book ___ changed my mind.",
+    "options": [
+     "who",
+     "where",
+     "that",
+     "whose"
+    ],
+    "answer": 2,
+    "note": "Nesne → that."
+   },
+   {
+    "type": "choice",
+    "text": "The man ___ you met is my teacher.",
+    "options": [
+     "that",
+     "what",
+     "which",
+     "where"
+    ],
+    "answer": 0,
+    "note": "Kişi için that da kullanılabilir."
+   },
+   {
+    "type": "gap",
+    "text": "I have a friend ___ speaks four languages.",
+    "options": [
+     "who",
+     "which",
+     "what"
+    ],
+    "answer": 0,
+    "note": "Kişi → who."
+   },
+   {
+    "type": "choice",
+    "text": "The bus ___ goes to the airport leaves at six.",
+    "options": [
+     "that",
+     "whose",
+     "who",
+     "when"
+    ],
+    "answer": 0,
+    "note": "Nesne → that."
    }
   ]
  },
@@ -1457,6 +1988,65 @@
     ],
     "answer": 0,
     "note": "Karşılaştırmada more + than."
+   },
+   {
+    "type": "choice",
+    "text": "This film is ___ interesting than the other one.",
+    "options": [
+     "most",
+     "many",
+     "much",
+     "more"
+    ],
+    "answer": 3,
+    "note": "Uzun sıfat → more."
+   },
+   {
+    "type": "choice",
+    "text": "She is the ___ careful driver in the family.",
+    "options": [
+     "more",
+     "most",
+     "many",
+     "much"
+    ],
+    "answer": 1,
+    "note": "En üstünlük → the most."
+   },
+   {
+    "type": "choice",
+    "text": "This chair is ___ than that one.",
+    "options": [
+     "much comfortable",
+     "more comfortable",
+     "most comfortable",
+     "comfortabler"
+    ],
+    "answer": 1,
+    "note": "Uzun sıfat → more comfortable."
+   },
+   {
+    "type": "gap",
+    "text": "Today the traffic is ___ than usual.",
+    "options": [
+     "worst",
+     "worse",
+     "more bad"
+    ],
+    "answer": 1,
+    "note": "bad düzensiz → worse."
+   },
+   {
+    "type": "choice",
+    "text": "It was the ___ holiday of my life.",
+    "options": [
+     "better",
+     "goodest",
+     "best",
+     "most good"
+    ],
+    "answer": 2,
+    "note": "good → the best."
    }
   ]
  },
@@ -1605,6 +2195,65 @@
     ],
     "answer": 2,
     "note": "Uzak ve çoğul → those ones."
+   },
+   {
+    "type": "choice",
+    "text": "There is not ___ time left.",
+    "options": [
+     "few",
+     "a lot",
+     "many",
+     "much"
+    ],
+    "answer": 3,
+    "note": "time sayılamaz → much."
+   },
+   {
+    "type": "choice",
+    "text": "How ___ people came to the party?",
+    "options": [
+     "much",
+     "many",
+     "a lot",
+     "little"
+    ],
+    "answer": 1,
+    "note": "people sayılabilir → many."
+   },
+   {
+    "type": "choice",
+    "text": "Would you like ___ cup of tea?",
+    "options": [
+     "others",
+     "another",
+     "the other",
+     "other"
+    ],
+    "answer": 1,
+    "note": "Bir tane daha → another."
+   },
+   {
+    "type": "gap",
+    "text": "I have ___ money, but not enough for a taxi.",
+    "options": [
+     "many",
+     "a few",
+     "a little"
+    ],
+    "answer": 2,
+    "note": "money sayılamaz → a little."
+   },
+   {
+    "type": "choice",
+    "text": "Only ___ students passed the exam.",
+    "options": [
+     "any",
+     "much",
+     "a few",
+     "a little"
+    ],
+    "answer": 2,
+    "note": "students sayılabilir → a few."
    }
   ]
  },
@@ -1751,6 +2400,65 @@
     ],
     "answer": 1,
     "note": "if + geniş zaman."
+   },
+   {
+    "type": "choice",
+    "text": "If it ___ tomorrow, we will stay at home.",
+    "options": [
+     "rains",
+     "rained",
+     "will rain",
+     "is raining"
+    ],
+    "answer": 0,
+    "note": "if cümleciğinde geniş zaman."
+   },
+   {
+    "type": "choice",
+    "text": "If you heat water, it ___ .",
+    "options": [
+     "is boiling",
+     "will boil",
+     "boiled",
+     "boils"
+    ],
+    "answer": 3,
+    "note": "Genel doğru → iki tarafta da geniş zaman."
+   },
+   {
+    "type": "choice",
+    "text": "___ I was walking home, I met an old friend.",
+    "options": [
+     "So",
+     "Or",
+     "If",
+     "As"
+    ],
+    "answer": 3,
+    "note": "Aynı anda → as."
+   },
+   {
+    "type": "gap",
+    "text": "We will call you if we ___ any news.",
+    "options": [
+     "will have",
+     "have",
+     "had"
+    ],
+    "answer": 1,
+    "note": "if + geniş zaman."
+   },
+   {
+    "type": "choice",
+    "text": "She works ___ a nurse in the city hospital.",
+    "options": [
+     "like to",
+     "if",
+     "as",
+     "so"
+    ],
+    "answer": 2,
+    "note": "Meslek → work as."
    }
   ]
  },
@@ -1897,6 +2605,65 @@
     ],
     "answer": 2,
     "note": "explain + that + cümle."
+   },
+   {
+    "type": "choice",
+    "text": "He said ___ he was tired.",
+    "options": [
+     "if to",
+     "that",
+     "which",
+     "what"
+    ],
+    "answer": 1,
+    "note": "say + that + cümle."
+   },
+   {
+    "type": "choice",
+    "text": "She ___ me that the shop was closed.",
+    "options": [
+     "told",
+     "said",
+     "spoke",
+     "asked to"
+    ],
+    "answer": 0,
+    "note": "tell doğrudan nesne alır: told me."
+   },
+   {
+    "type": "choice",
+    "text": "I ___ that you are right.",
+    "options": [
+     "thinking",
+     "am think",
+     "think",
+     "thinks"
+    ],
+    "answer": 2,
+    "note": "think + that."
+   },
+   {
+    "type": "gap",
+    "text": "They ___ that the train would be late.",
+    "options": [
+     "said",
+     "told",
+     "spoke"
+    ],
+    "answer": 0,
+    "note": "Nesnesiz → said that."
+   },
+   {
+    "type": "choice",
+    "text": "We hope ___ everything goes well.",
+    "options": [
+     "who",
+     "what",
+     "which",
+     "that"
+    ],
+    "answer": 3,
+    "note": "hope + that."
    }
   ]
  },
@@ -2043,6 +2810,65 @@
     ],
     "answer": 0,
     "note": "İç cümlede do kullanılmaz."
+   },
+   {
+    "type": "choice",
+    "text": "Could you tell me where ___ ?",
+    "options": [
+     "the station be",
+     "does the station",
+     "the station is",
+     "is the station"
+    ],
+    "answer": 2,
+    "note": "Dolaylı soruda özne fiilden önce."
+   },
+   {
+    "type": "choice",
+    "text": "I do not know what ___ .",
+    "options": [
+     "does he want",
+     "he want",
+     "want he",
+     "he wants"
+    ],
+    "answer": 3,
+    "note": "Dolaylı soruda do/does kullanılmaz."
+   },
+   {
+    "type": "choice",
+    "text": "Do you know ___ the film starts?",
+    "options": [
+     "that",
+     "what",
+     "which is",
+     "when"
+    ],
+    "answer": 3,
+    "note": "Saat sorusu → when."
+   },
+   {
+    "type": "gap",
+    "text": "She asked me ___ I lived.",
+    "options": [
+     "where",
+     "who",
+     "what"
+    ],
+    "answer": 0,
+    "note": "Yer → where."
+   },
+   {
+    "type": "choice",
+    "text": "Can you tell me ___ this bus goes to the city center?",
+    "options": [
+     "that",
+     "what",
+     "if",
+     "which"
+    ],
+    "answer": 2,
+    "note": "Evet-hayır sorusu dolaylı hâlde → if."
    }
   ]
  },
@@ -2190,6 +3016,65 @@
     ],
     "answer": 2,
     "note": "keep + kişi + -ing."
+   },
+   {
+    "type": "choice",
+    "text": "My parents let me ___ out at the weekend.",
+    "options": [
+     "goes",
+     "to go",
+     "going",
+     "go"
+    ],
+    "answer": 3,
+    "note": "let + nesne + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "The teacher made us ___ the exercise again.",
+    "options": [
+     "did",
+     "to do",
+     "do",
+     "doing"
+    ],
+    "answer": 2,
+    "note": "make + nesne + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "I had the mechanic ___ my car.",
+    "options": [
+     "check",
+     "checking",
+     "checks",
+     "to check"
+    ],
+    "answer": 0,
+    "note": "have + kişi + yalın fiil."
+   },
+   {
+    "type": "gap",
+    "text": "She will not let anybody ___ her desk.",
+    "options": [
+     "touching",
+     "touch",
+     "to touch"
+    ],
+    "answer": 1,
+    "note": "let + yalın fiil."
+   },
+   {
+    "type": "choice",
+    "text": "The film made me ___ .",
+    "options": [
+     "cry",
+     "cried",
+     "to cry",
+     "crying"
+    ],
+    "answer": 0,
+    "note": "make + yalın fiil."
    }
   ]
  },
@@ -2336,6 +3221,65 @@
     ],
     "answer": 0,
     "note": "Zaman → when."
+   },
+   {
+    "type": "choice",
+    "text": "Here is your coat. Please ___ .",
+    "options": [
+     "put it on",
+     "put on it",
+     "put on",
+     "it put on"
+    ],
+    "answer": 0,
+    "note": "Zamir nesne fiille edat arasına girer."
+   },
+   {
+    "type": "choice",
+    "text": "I need to ___ before the exam.",
+    "options": [
+     "look the words up",
+     "look them the words up",
+     "look up them",
+     "look up the words them"
+    ],
+    "answer": 0,
+    "note": "İsim nesne iki yerde de durabilir."
+   },
+   {
+    "type": "choice",
+    "text": "The lamp is broken. Do not ___ .",
+    "options": [
+     "it turn on",
+     "turn on it",
+     "turn it on",
+     "turn on"
+    ],
+    "answer": 2,
+    "note": "it → fiille edat arasına."
+   },
+   {
+    "type": "gap",
+    "text": "She took her shoes off and ___ under the bed.",
+    "options": [
+     "away put them",
+     "put them away",
+     "put away them"
+    ],
+    "answer": 1,
+    "note": "them ortada durur."
+   },
+   {
+    "type": "choice",
+    "text": "Your bag is on the floor. Can you ___ ?",
+    "options": [
+     "pick up it",
+     "pick up",
+     "pick it up",
+     "up pick it"
+    ],
+    "answer": 2,
+    "note": "pick it up — zamir ortada."
    }
   ]
  }

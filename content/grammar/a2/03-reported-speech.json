@@ -1,5 +1,9 @@
 {
-  "_meta": { "batch": "a2-03", "level": "A2", "range": "Ders 13-16 — that'li cümlecikler, dolaylı anlatım, ettirgen yapı, öbek fiillerde nesne yeri" },
+  "_meta": {
+    "batch": "a2-03",
+    "level": "A2",
+    "range": "Ders 13-16 — that'li cümlecikler, dolaylı anlatım, ettirgen yapı, öbek fiillerde nesne yeri"
+  },
   "lessons": [
     {
       "id": "a2-13-that-clauses",
@@ -8,35 +12,202 @@
       "title": "say, tell, think + that",
       "topic": "Reported speech with that-clauses",
       "canDo": "Başkasının söylediğini kendi cümlemle aktarabilirim.",
-      "covers": ["CL.that.OBJ", "INDSP.explain.report.say"],
+      "covers": [
+        "CL.that.OBJ",
+        "INDSP.explain.report.say"
+      ],
       "concept": {
         "summary": "Birinin sözünü aktarırken that'li bir cümlecik kurulur. say kime söylendiğini almaz, tell alır: he said that… ama he told me that… Aktarılan cümle geçmişe kayar: is → was, will → would.",
-        "formula": { "left": "said / told + (kişi) + that", "right": "+ cümle" },
+        "formula": {
+          "left": "said / told + (kişi) + that",
+          "right": "+ cümle"
+        },
         "table": [
-          { "form": "say", "be": "kişi almaz", "example": "He said that he was tired." },
-          { "form": "tell", "be": "kişi alır", "example": "He told me that he was tired." },
-          { "form": "zaman kayması", "be": "is → was", "example": "\"I am busy\" → He said he was busy." },
-          { "form": "that düşebilir", "be": "günlük dilde", "example": "She said she would come." }
+          {
+            "form": "say",
+            "be": "kişi almaz",
+            "example": "He said that he was tired."
+          },
+          {
+            "form": "tell",
+            "be": "kişi alır",
+            "example": "He told me that he was tired."
+          },
+          {
+            "form": "zaman kayması",
+            "be": "is → was",
+            "example": "\"I am busy\" → He said he was busy."
+          },
+          {
+            "form": "that düşebilir",
+            "be": "günlük dilde",
+            "example": "She said she would come."
+          }
         ]
       },
       "examples": [
-        { "en": "He said that he was busy.", "tr": "Meşgul olduğunu söyledi.", "note": "am → was." },
-        { "en": "She told me she would be late.", "tr": "Geç kalacağını söyledi bana.", "note": "tell kişi alır; will → would." },
-        { "en": "They explained that the shop was closed.", "tr": "Dükkânın kapalı olduğunu açıkladılar.", "note": "explain de that alır." },
-        { "en": "I think we should wait.", "tr": "Bence beklemeliyiz.", "note": "think'ten sonra that düşürülmüş." },
-        { "en": "The teacher said we could leave.", "tr": "Öğretmen çıkabileceğimizi söyledi.", "note": "can → could." }
+        {
+          "en": "He said that he was busy.",
+          "tr": "Meşgul olduğunu söyledi.",
+          "note": "am → was."
+        },
+        {
+          "en": "She told me she would be late.",
+          "tr": "Geç kalacağını söyledi bana.",
+          "note": "tell kişi alır; will → would."
+        },
+        {
+          "en": "They explained that the shop was closed.",
+          "tr": "Dükkânın kapalı olduğunu açıkladılar.",
+          "note": "explain de that alır."
+        },
+        {
+          "en": "I think we should wait.",
+          "tr": "Bence beklemeliyiz.",
+          "note": "think'ten sonra that düşürülmüş."
+        },
+        {
+          "en": "The teacher said we could leave.",
+          "tr": "Öğretmen çıkabileceğimizi söyledi.",
+          "note": "can → could."
+        }
       ],
       "mistakes": [
-        { "wrong": "He said me that he was tired.", "right": "He told me that he was tired.", "why": "say kişi almaz, tell alır." },
-        { "wrong": "She told that she was busy.", "right": "She said that she was busy.", "why": "tell kullanılacaksa kime söylendiği yazılmalı." },
-        { "wrong": "He said that he is tired yesterday.", "right": "He said that he was tired.", "why": "Aktarımda zaman bir adım geriye kayar." }
+        {
+          "wrong": "He said me that he was tired.",
+          "right": "He told me that he was tired.",
+          "why": "say kişi almaz, tell alır."
+        },
+        {
+          "wrong": "She told that she was busy.",
+          "right": "She said that she was busy.",
+          "why": "tell kullanılacaksa kime söylendiği yazılmalı."
+        },
+        {
+          "wrong": "He said that he is tired yesterday.",
+          "right": "He said that he was tired.",
+          "why": "Aktarımda zaman bir adım geriye kayar."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "She ___ me that the meeting was cancelled.", "options": ["told", "said", "spoke", "talked"], "answer": 0, "note": "Kişi varsa tell." },
-        { "type": "choice", "text": "He ___ that he would call later.", "options": ["said", "told", "said to", "spoke"], "answer": 0, "note": "Kişi yoksa say." },
-        { "type": "choice", "text": "\"I am tired.\" → He said he ___ tired.", "options": ["was", "is", "will be", "has been"], "answer": 0, "note": "am → was." },
-        { "type": "choice", "text": "\"I will help.\" → She said she ___ help.", "options": ["would", "will", "was", "does"], "answer": 0, "note": "will → would." },
-        { "type": "gap", "text": "They explained ___ the train was late.", "options": ["that", "what", "which"], "answer": 0, "note": "explain + that + cümle." }
+        {
+          "type": "choice",
+          "text": "She ___ me that the meeting was cancelled.",
+          "options": [
+            "told",
+            "said",
+            "spoke",
+            "talked"
+          ],
+          "answer": 0,
+          "note": "Kişi varsa tell."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ that he would call later.",
+          "options": [
+            "said",
+            "told",
+            "said to",
+            "spoke"
+          ],
+          "answer": 0,
+          "note": "Kişi yoksa say."
+        },
+        {
+          "type": "choice",
+          "text": "\"I am tired.\" → He said he ___ tired.",
+          "options": [
+            "was",
+            "is",
+            "will be",
+            "has been"
+          ],
+          "answer": 0,
+          "note": "am → was."
+        },
+        {
+          "type": "choice",
+          "text": "\"I will help.\" → She said she ___ help.",
+          "options": [
+            "would",
+            "will",
+            "was",
+            "does"
+          ],
+          "answer": 0,
+          "note": "will → would."
+        },
+        {
+          "type": "gap",
+          "text": "They explained ___ the train was late.",
+          "options": [
+            "that",
+            "what",
+            "which"
+          ],
+          "answer": 0,
+          "note": "explain + that + cümle."
+        },
+        {
+          "type": "choice",
+          "text": "He said ___ he was tired.",
+          "options": [
+            "that",
+            "what",
+            "which",
+            "if to"
+          ],
+          "answer": 0,
+          "note": "say + that + cümle."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ me that the shop was closed.",
+          "options": [
+            "told",
+            "said",
+            "spoke",
+            "asked to"
+          ],
+          "answer": 0,
+          "note": "tell doğrudan nesne alır: told me."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ that you are right.",
+          "options": [
+            "think",
+            "thinks",
+            "thinking",
+            "am think"
+          ],
+          "answer": 0,
+          "note": "think + that."
+        },
+        {
+          "type": "gap",
+          "text": "They ___ that the train would be late.",
+          "options": [
+            "said",
+            "told",
+            "spoke"
+          ],
+          "answer": 0,
+          "note": "Nesnesiz → said that."
+        },
+        {
+          "type": "choice",
+          "text": "We hope ___ everything goes well.",
+          "options": [
+            "that",
+            "what",
+            "which",
+            "who"
+          ],
+          "answer": 0,
+          "note": "hope + that."
+        }
       ]
     },
     {
@@ -46,35 +217,202 @@
       "title": "Dolaylı sorular",
       "topic": "Indirect questions and what-clauses",
       "canDo": "Kibarca bilgi isteyebilir, bir şeyi bilip bilmediğimi söyleyebilirim.",
-      "covers": ["INDQ.know.etc", "PREL.what"],
+      "covers": [
+        "INDQ.know.etc",
+        "PREL.what"
+      ],
       "concept": {
         "summary": "Soru bir cümlenin içine girince soru düzeni bozulur: özne ile fiil yer değiştirmez, do da kullanılmaz. Evet-hayır sorusu aktarılırken if ya da whether gerekir. what burada hem soru hem \"şey\" anlamı taşır.",
-        "formula": { "left": "I don't know / Could you tell me", "right": "+ soru kelimesi + özne + fiil" },
+        "formula": {
+          "left": "I don't know / Could you tell me",
+          "right": "+ soru kelimesi + özne + fiil"
+        },
         "table": [
-          { "form": "doğrudan", "be": "Where is he?", "example": "Where is he?" },
-          { "form": "dolaylı", "be": "where he is", "example": "I don't know where he is." },
-          { "form": "evet-hayır", "be": "if / whether", "example": "I wonder if she is coming." },
-          { "form": "what = şey", "be": "isim gibi", "example": "I didn't hear what you said." }
+          {
+            "form": "doğrudan",
+            "be": "Where is he?",
+            "example": "Where is he?"
+          },
+          {
+            "form": "dolaylı",
+            "be": "where he is",
+            "example": "I don't know where he is."
+          },
+          {
+            "form": "evet-hayır",
+            "be": "if / whether",
+            "example": "I wonder if she is coming."
+          },
+          {
+            "form": "what = şey",
+            "be": "isim gibi",
+            "example": "I didn't hear what you said."
+          }
         ]
       },
       "examples": [
-        { "en": "I don't know where she lives.", "tr": "Nerede yaşadığını bilmiyorum.", "note": "does yok, özne fiilden önce." },
-        { "en": "Could you tell me when the bank opens?", "tr": "Bankanın ne zaman açıldığını söyler misiniz?", "note": "Kibar bilgi isteme." },
-        { "en": "I wonder if he got my message.", "tr": "Mesajımı aldı mı acaba.", "note": "Evet-hayır sorusu → if." },
-        { "en": "She didn't understand what I meant.", "tr": "Ne demek istediğimi anlamadı.", "note": "what burada \"şey\" demek." },
-        { "en": "Do you know how much it costs?", "tr": "Ne kadar tuttuğunu biliyor musun?", "note": "İç cümlede düz sıra." }
+        {
+          "en": "I don't know where she lives.",
+          "tr": "Nerede yaşadığını bilmiyorum.",
+          "note": "does yok, özne fiilden önce."
+        },
+        {
+          "en": "Could you tell me when the bank opens?",
+          "tr": "Bankanın ne zaman açıldığını söyler misiniz?",
+          "note": "Kibar bilgi isteme."
+        },
+        {
+          "en": "I wonder if he got my message.",
+          "tr": "Mesajımı aldı mı acaba.",
+          "note": "Evet-hayır sorusu → if."
+        },
+        {
+          "en": "She didn't understand what I meant.",
+          "tr": "Ne demek istediğimi anlamadı.",
+          "note": "what burada \"şey\" demek."
+        },
+        {
+          "en": "Do you know how much it costs?",
+          "tr": "Ne kadar tuttuğunu biliyor musun?",
+          "note": "İç cümlede düz sıra."
+        }
       ],
       "mistakes": [
-        { "wrong": "I don't know where does she live.", "right": "I don't know where she lives.", "why": "Dolaylı soruda do/does kullanılmaz." },
-        { "wrong": "Could you tell me when is the meeting?", "right": "Could you tell me when the meeting is?", "why": "Özne ile fiil yer değiştirmez." },
-        { "wrong": "I wonder that he is coming.", "right": "I wonder if he is coming.", "why": "Evet-hayır sorusunda if kullanılır." }
+        {
+          "wrong": "I don't know where does she live.",
+          "right": "I don't know where she lives.",
+          "why": "Dolaylı soruda do/does kullanılmaz."
+        },
+        {
+          "wrong": "Could you tell me when is the meeting?",
+          "right": "Could you tell me when the meeting is?",
+          "why": "Özne ile fiil yer değiştirmez."
+        },
+        {
+          "wrong": "I wonder that he is coming.",
+          "right": "I wonder if he is coming.",
+          "why": "Evet-hayır sorusunda if kullanılır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "I don't know what time ___ .", "options": ["it starts", "does it start", "start it", "is it start"], "answer": 0, "note": "Dolaylı soruda düz sıra." },
-        { "type": "choice", "text": "Can you tell me where ___ ?", "options": ["the station is", "is the station", "does the station", "the station does"], "answer": 0, "note": "Özne önce, fiil sonra." },
-        { "type": "choice", "text": "I wonder ___ she will come.", "options": ["if", "that", "what", "is"], "answer": 0, "note": "Evet-hayır → if." },
-        { "type": "choice", "text": "He didn't hear ___ I said.", "options": ["what", "that", "which", "who"], "answer": 0, "note": "\"Söylediğim şey\" → what." },
-        { "type": "gap", "text": "Do you know how much this ___ ?", "options": ["costs", "does cost", "cost does"], "answer": 0, "note": "İç cümlede do kullanılmaz." }
+        {
+          "type": "choice",
+          "text": "I don't know what time ___ .",
+          "options": [
+            "it starts",
+            "does it start",
+            "start it",
+            "is it start"
+          ],
+          "answer": 0,
+          "note": "Dolaylı soruda düz sıra."
+        },
+        {
+          "type": "choice",
+          "text": "Can you tell me where ___ ?",
+          "options": [
+            "the station is",
+            "is the station",
+            "does the station",
+            "the station does"
+          ],
+          "answer": 0,
+          "note": "Özne önce, fiil sonra."
+        },
+        {
+          "type": "choice",
+          "text": "I wonder ___ she will come.",
+          "options": [
+            "if",
+            "that",
+            "what",
+            "is"
+          ],
+          "answer": 0,
+          "note": "Evet-hayır → if."
+        },
+        {
+          "type": "choice",
+          "text": "He didn't hear ___ I said.",
+          "options": [
+            "what",
+            "that",
+            "which",
+            "who"
+          ],
+          "answer": 0,
+          "note": "\"Söylediğim şey\" → what."
+        },
+        {
+          "type": "gap",
+          "text": "Do you know how much this ___ ?",
+          "options": [
+            "costs",
+            "does cost",
+            "cost does"
+          ],
+          "answer": 0,
+          "note": "İç cümlede do kullanılmaz."
+        },
+        {
+          "type": "choice",
+          "text": "Could you tell me where ___ ?",
+          "options": [
+            "the station is",
+            "is the station",
+            "the station be",
+            "does the station"
+          ],
+          "answer": 0,
+          "note": "Dolaylı soruda özne fiilden önce."
+        },
+        {
+          "type": "choice",
+          "text": "I do not know what ___ .",
+          "options": [
+            "he wants",
+            "does he want",
+            "he want",
+            "want he"
+          ],
+          "answer": 0,
+          "note": "Dolaylı soruda do/does kullanılmaz."
+        },
+        {
+          "type": "choice",
+          "text": "Do you know ___ the film starts?",
+          "options": [
+            "when",
+            "what",
+            "which is",
+            "that"
+          ],
+          "answer": 0,
+          "note": "Saat sorusu → when."
+        },
+        {
+          "type": "gap",
+          "text": "She asked me ___ I lived.",
+          "options": [
+            "where",
+            "what",
+            "who"
+          ],
+          "answer": 0,
+          "note": "Yer → where."
+        },
+        {
+          "type": "choice",
+          "text": "Can you tell me ___ this bus goes to the city center?",
+          "options": [
+            "if",
+            "that",
+            "what",
+            "which"
+          ],
+          "answer": 0,
+          "note": "Evet-hayır sorusu dolaylı hâlde → if."
+        }
       ]
     },
     {
@@ -84,35 +422,203 @@
       "title": "make, let, have — birine yaptırmak",
       "topic": "Causative verbs: have / let / make",
       "canDo": "Birinin bir şeyi yapmasını sağladığımı ya da ona izin verdiğimi anlatabilirim.",
-      "covers": ["CAUS.have.let.make", "VG.VV_NP_VG", "VG.VG_N"],
+      "covers": [
+        "CAUS.have.let.make",
+        "VG.VV_NP_VG",
+        "VG.VG_N"
+      ],
       "concept": {
         "summary": "Bu üç fiilden sonra kişi gelir, sonra fiil to almadan yalın kalır: make him wait. make zorlar, let izin verir, have görevlendirir. Süren bir işi göstermek istersek -ing kullanılır: I saw him waiting.",
-        "formula": { "left": "make / let / have + kişi", "right": "+ yalın fiil (to yok)" },
+        "formula": {
+          "left": "make / let / have + kişi",
+          "right": "+ yalın fiil (to yok)"
+        },
         "table": [
-          { "form": "make", "be": "zorlamak", "example": "She made me wait." },
-          { "form": "let", "be": "izin vermek", "example": "They let us go early." },
-          { "form": "have", "be": "yaptırmak", "example": "I had the mechanic check the car." },
-          { "form": "-ing", "be": "süren iş", "example": "I saw him waiting outside." }
+          {
+            "form": "make",
+            "be": "zorlamak",
+            "example": "She made me wait."
+          },
+          {
+            "form": "let",
+            "be": "izin vermek",
+            "example": "They let us go early."
+          },
+          {
+            "form": "have",
+            "be": "yaptırmak",
+            "example": "I had the mechanic check the car."
+          },
+          {
+            "form": "-ing",
+            "be": "süren iş",
+            "example": "I saw him waiting outside."
+          }
         ]
       },
       "examples": [
-        { "en": "My parents let me stay out late.", "tr": "Ailem geç saate kadar dışarıda kalmama izin veriyor.", "note": "let + kişi + yalın fiil." },
-        { "en": "The film made me cry.", "tr": "Film beni ağlattı.", "note": "make + kişi + yalın fiil." },
-        { "en": "I had the plumber fix the tap.", "tr": "Musluğu tesisatçıya tamir ettirdim.", "note": "have + kişi + yalın fiil." },
-        { "en": "I saw her crossing the street.", "tr": "Onu caddeyi geçerken gördüm.", "note": "Süren iş → -ing." },
-        { "en": "Don't keep me waiting.", "tr": "Beni bekletme.", "note": "keep + kişi + -ing." }
+        {
+          "en": "My parents let me stay out late.",
+          "tr": "Ailem geç saate kadar dışarıda kalmama izin veriyor.",
+          "note": "let + kişi + yalın fiil."
+        },
+        {
+          "en": "The film made me cry.",
+          "tr": "Film beni ağlattı.",
+          "note": "make + kişi + yalın fiil."
+        },
+        {
+          "en": "I had the plumber fix the tap.",
+          "tr": "Musluğu tesisatçıya tamir ettirdim.",
+          "note": "have + kişi + yalın fiil."
+        },
+        {
+          "en": "I saw her crossing the street.",
+          "tr": "Onu caddeyi geçerken gördüm.",
+          "note": "Süren iş → -ing."
+        },
+        {
+          "en": "Don't keep me waiting.",
+          "tr": "Beni bekletme.",
+          "note": "keep + kişi + -ing."
+        }
       ],
       "mistakes": [
-        { "wrong": "She made me to wait.", "right": "She made me wait.", "why": "make'ten sonra to gelmez." },
-        { "wrong": "They let us to go early.", "right": "They let us go early.", "why": "let de yalın fiil ister." },
-        { "wrong": "I saw her to cross the street.", "right": "I saw her crossing the street.", "why": "Süren işte -ing kullanılır." }
+        {
+          "wrong": "She made me to wait.",
+          "right": "She made me wait.",
+          "why": "make'ten sonra to gelmez."
+        },
+        {
+          "wrong": "They let us to go early.",
+          "right": "They let us go early.",
+          "why": "let de yalın fiil ister."
+        },
+        {
+          "wrong": "I saw her to cross the street.",
+          "right": "I saw her crossing the street.",
+          "why": "Süren işte -ing kullanılır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "My boss made me ___ overtime.", "options": ["work", "to work", "working", "worked"], "answer": 0, "note": "make + yalın fiil." },
-        { "type": "choice", "text": "Please let me ___ .", "options": ["explain", "to explain", "explaining", "explains"], "answer": 0, "note": "let + yalın fiil." },
-        { "type": "choice", "text": "I had a friend ___ my computer.", "options": ["repair", "to repair", "repairing", "repaired to"], "answer": 0, "note": "have + kişi + yalın fiil." },
-        { "type": "choice", "text": "We heard them ___ in the kitchen.", "options": ["arguing", "to argue", "argued", "argues"], "answer": 0, "note": "Süren iş → -ing." },
-        { "type": "gap", "text": "Sorry to keep you ___ .", "options": ["waiting", "to wait", "wait"], "answer": 0, "note": "keep + kişi + -ing." }
+        {
+          "type": "choice",
+          "text": "My boss made me ___ overtime.",
+          "options": [
+            "work",
+            "to work",
+            "working",
+            "worked"
+          ],
+          "answer": 0,
+          "note": "make + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "Please let me ___ .",
+          "options": [
+            "explain",
+            "to explain",
+            "explaining",
+            "explains"
+          ],
+          "answer": 0,
+          "note": "let + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "I had a friend ___ my computer.",
+          "options": [
+            "repair",
+            "to repair",
+            "repairing",
+            "repaired to"
+          ],
+          "answer": 0,
+          "note": "have + kişi + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "We heard them ___ in the kitchen.",
+          "options": [
+            "arguing",
+            "to argue",
+            "argued",
+            "argues"
+          ],
+          "answer": 0,
+          "note": "Süren iş → -ing."
+        },
+        {
+          "type": "gap",
+          "text": "Sorry to keep you ___ .",
+          "options": [
+            "waiting",
+            "to wait",
+            "wait"
+          ],
+          "answer": 0,
+          "note": "keep + kişi + -ing."
+        },
+        {
+          "type": "choice",
+          "text": "My parents let me ___ out at the weekend.",
+          "options": [
+            "go",
+            "to go",
+            "going",
+            "goes"
+          ],
+          "answer": 0,
+          "note": "let + nesne + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "The teacher made us ___ the exercise again.",
+          "options": [
+            "do",
+            "to do",
+            "doing",
+            "did"
+          ],
+          "answer": 0,
+          "note": "make + nesne + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "I had the mechanic ___ my car.",
+          "options": [
+            "check",
+            "to check",
+            "checking",
+            "checks"
+          ],
+          "answer": 0,
+          "note": "have + kişi + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "She will not let anybody ___ her desk.",
+          "options": [
+            "touch",
+            "to touch",
+            "touching"
+          ],
+          "answer": 0,
+          "note": "let + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "The film made me ___ .",
+          "options": [
+            "cry",
+            "to cry",
+            "crying",
+            "cried"
+          ],
+          "answer": 0,
+          "note": "make + yalın fiil."
+        }
       ]
     },
     {
@@ -122,35 +628,202 @@
       "title": "Öbek fiillerde nesnenin yeri",
       "topic": "Separable phrasal verbs, relative adverbs",
       "canDo": "Öbek fiilleri nesneyle birlikte doğru sırada kullanabilirim.",
-      "covers": ["PHV.V_NP_PART", "RBREL"],
+      "covers": [
+        "PHV.V_NP_PART",
+        "RBREL"
+      ],
       "concept": {
         "summary": "Ayrılabilen öbek fiillerde nesne iki yere de gelebilir: turn the light off ya da turn off the light. Ama nesne zamirse (it, them) araya girmek zorundadır. Yer, zaman ve sebep tarif ederken where, when ve why ilgi zarfı olarak kullanılır.",
-        "formula": { "left": "fiil + nesne + parçacık", "right": "fiil + parçacık + nesne" },
+        "formula": {
+          "left": "fiil + nesne + parçacık",
+          "right": "fiil + parçacık + nesne"
+        },
         "table": [
-          { "form": "isim nesne", "be": "iki sıra da olur", "example": "turn off the radio / turn the radio off" },
-          { "form": "zamir nesne", "be": "yalnız araya", "example": "turn it off" },
-          { "form": "where", "be": "yer", "example": "the town where I grew up" },
-          { "form": "when", "be": "zaman", "example": "the day when we met" }
+          {
+            "form": "isim nesne",
+            "be": "iki sıra da olur",
+            "example": "turn off the radio / turn the radio off"
+          },
+          {
+            "form": "zamir nesne",
+            "be": "yalnız araya",
+            "example": "turn it off"
+          },
+          {
+            "form": "where",
+            "be": "yer",
+            "example": "the town where I grew up"
+          },
+          {
+            "form": "when",
+            "be": "zaman",
+            "example": "the day when we met"
+          }
         ]
       },
       "examples": [
-        { "en": "Please turn off the television.", "tr": "Lütfen televizyonu kapat.", "note": "İsim nesne sonda." },
-        { "en": "Please turn the television off.", "tr": "Lütfen televizyonu kapat.", "note": "Aynı anlam, nesne arada." },
-        { "en": "It's too loud — turn it off.", "tr": "Çok gürültülü, kapat şunu.", "note": "Zamir zorunlu olarak arada." },
-        { "en": "This is the house where I was born.", "tr": "Burası doğduğum ev.", "note": "Yer → where." },
-        { "en": "I remember the day when we met.", "tr": "Tanıştığımız günü hatırlıyorum.", "note": "Zaman → when." }
+        {
+          "en": "Please turn off the television.",
+          "tr": "Lütfen televizyonu kapat.",
+          "note": "İsim nesne sonda."
+        },
+        {
+          "en": "Please turn the television off.",
+          "tr": "Lütfen televizyonu kapat.",
+          "note": "Aynı anlam, nesne arada."
+        },
+        {
+          "en": "It's too loud — turn it off.",
+          "tr": "Çok gürültülü, kapat şunu.",
+          "note": "Zamir zorunlu olarak arada."
+        },
+        {
+          "en": "This is the house where I was born.",
+          "tr": "Burası doğduğum ev.",
+          "note": "Yer → where."
+        },
+        {
+          "en": "I remember the day when we met.",
+          "tr": "Tanıştığımız günü hatırlıyorum.",
+          "note": "Zaman → when."
+        }
       ],
       "mistakes": [
-        { "wrong": "Turn off it.", "right": "Turn it off.", "why": "Zamir nesne fiille parçacığın arasına girer." },
-        { "wrong": "I threw away it.", "right": "I threw it away.", "why": "Aynı kural: zamir araya." },
-        { "wrong": "This is the house which I was born.", "right": "This is the house where I was born.", "why": "Yer bildiren cümlecikte where kullanılır." }
+        {
+          "wrong": "Turn off it.",
+          "right": "Turn it off.",
+          "why": "Zamir nesne fiille parçacığın arasına girer."
+        },
+        {
+          "wrong": "I threw away it.",
+          "right": "I threw it away.",
+          "why": "Aynı kural: zamir araya."
+        },
+        {
+          "wrong": "This is the house which I was born.",
+          "right": "This is the house where I was born.",
+          "why": "Yer bildiren cümlecikte where kullanılır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "The bag is old. Throw ___ .", "options": ["it away", "away it", "it the away", "away"], "answer": 0, "note": "Zamir araya girer." },
-        { "type": "choice", "text": "Can you pick ___ at six?", "options": ["me up", "up me", "up to me", "me to up"], "answer": 0, "note": "pick me up." },
-        { "type": "choice", "text": "Please fill ___ this form.", "options": ["in", "in to", "at", "up on"], "answer": 0, "note": "fill in = doldurmak." },
-        { "type": "choice", "text": "That is the café ___ we first met.", "options": ["where", "which", "that", "when"], "answer": 0, "note": "Yer → where." },
-        { "type": "gap", "text": "I will never forget the summer ___ we travelled together.", "options": ["when", "where", "which"], "answer": 0, "note": "Zaman → when." }
+        {
+          "type": "choice",
+          "text": "The bag is old. Throw ___ .",
+          "options": [
+            "it away",
+            "away it",
+            "it the away",
+            "away"
+          ],
+          "answer": 0,
+          "note": "Zamir araya girer."
+        },
+        {
+          "type": "choice",
+          "text": "Can you pick ___ at six?",
+          "options": [
+            "me up",
+            "up me",
+            "up to me",
+            "me to up"
+          ],
+          "answer": 0,
+          "note": "pick me up."
+        },
+        {
+          "type": "choice",
+          "text": "Please fill ___ this form.",
+          "options": [
+            "in",
+            "in to",
+            "at",
+            "up on"
+          ],
+          "answer": 0,
+          "note": "fill in = doldurmak."
+        },
+        {
+          "type": "choice",
+          "text": "That is the café ___ we first met.",
+          "options": [
+            "where",
+            "which",
+            "that",
+            "when"
+          ],
+          "answer": 0,
+          "note": "Yer → where."
+        },
+        {
+          "type": "gap",
+          "text": "I will never forget the summer ___ we travelled together.",
+          "options": [
+            "when",
+            "where",
+            "which"
+          ],
+          "answer": 0,
+          "note": "Zaman → when."
+        },
+        {
+          "type": "choice",
+          "text": "Here is your coat. Please ___ .",
+          "options": [
+            "put it on",
+            "put on it",
+            "put on",
+            "it put on"
+          ],
+          "answer": 0,
+          "note": "Zamir nesne fiille edat arasına girer."
+        },
+        {
+          "type": "choice",
+          "text": "I need to ___ before the exam.",
+          "options": [
+            "look the words up",
+            "look up the words them",
+            "look up them",
+            "look them the words up"
+          ],
+          "answer": 0,
+          "note": "İsim nesne iki yerde de durabilir."
+        },
+        {
+          "type": "choice",
+          "text": "The lamp is broken. Do not ___ .",
+          "options": [
+            "turn it on",
+            "turn on it",
+            "it turn on",
+            "turn on"
+          ],
+          "answer": 0,
+          "note": "it → fiille edat arasına."
+        },
+        {
+          "type": "gap",
+          "text": "She took her shoes off and ___ under the bed.",
+          "options": [
+            "put them away",
+            "put away them",
+            "away put them"
+          ],
+          "answer": 0,
+          "note": "them ortada durur."
+        },
+        {
+          "type": "choice",
+          "text": "Your bag is on the floor. Can you ___ ?",
+          "options": [
+            "pick it up",
+            "pick up it",
+            "up pick it",
+            "pick up"
+          ],
+          "answer": 0,
+          "note": "pick it up — zamir ortada."
+        }
       ]
     }
   ]
