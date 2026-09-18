@@ -67,14 +67,24 @@ yalnızca ne üretileceğini ve maliyetini yazar:
     python3 build-audio.py
     GOOGLE_TTS_KEY=... python3 build-audio.py --run
 
-Bugünkü ölçü: 11.414 parça, 184.460 karakter, ~214 dakika ses. Google'ın en
-iyi ses ailesinde bile aylık ücretsiz kota 1 milyon karakter olduğu için bu iş
-**ücretsiz kotaya sığıyor**. İçerik sabit olduğu için de tek seferlik: bir kez
+Öntanımlı kapsam yalnızca dinleme: 1.953 parça, 115.137 karakter, ~150 dakika
+ses. Google'ın en iyi ses ailesinde bile aylık ücretsiz kota 1 milyon karakter
+olduğu için bu iş **ücretsiz kotaya sığıyor**. İçerik sabit olduğu için de tek seferlik: bir kez
 üretilir, uygulamaya girer, bir daha API çağrısı yapılmaz.
 
 **Neden replik replik.** Uygulama diyaloğu satır satır oynatıyor — öğrenci tek
 bir repliği tekrar dinleyebiliyor, okunan satır vurgulanıyor. Tek parça ses
 bunların hiçbirine izin vermez.
+
+**Neden kelime telaffuzları öntanımlı değil.** 9.461 kelime 9.461 ayrı varlık
+demek. Uygulamada bugün 34 statik varlık çağrısı var; bunu üç yüz katına
+çıkarmanın paket boyutuna, Metro derleme süresine ve açılışa etkisini ölçmeden
+göze almak doğru değil. Kelime telaffuzu tek bir sözcük: cihazın kendi TTS'i
+orada yeterli ve IPA zaten kartın üzerinde. `--kind vocab` ile açılabilir.
+
+Dinlemenin 1.953 dosyası bile bugünkünün elli katı. Paket ölçüldükten sonra
+sorun çıkarsa çözüm belli: diyalog başına tek dosya + replik zaman indeksi
+(150 dosya), uygulama tek dosyayı çalıp repliğe atlar.
 
 **Neden örnek cümleler yok.** 9.461 örnek cümle 280.799 karakter ve ~336 dakika
 ses demek; 24 kbps'te yaklaşık 60 MB. Uygulama boyutunu bu kadar büyütmeye

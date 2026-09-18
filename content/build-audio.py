@@ -109,7 +109,14 @@ def listening_clips(levels: list[str]) -> list[Clip]:
 
 
 def vocab_clips(levels: list[str]) -> list[Clip]:
-    """Kelimelerin telaffuzu. Örnek cümleler dahil değil — gerekçesi README'de."""
+    """Kelimelerin telaffuzu.
+
+    Öntanımlı üretime dahil DEĞİL (--kind vocab ile açılır). 9.461 kelime
+    9.461 ayrı varlık demek; uygulamada bugün 34 statik varlık çağrısı var ve
+    bunu üç yüz katına çıkarmanın paket boyutuna ve açılış süresine etkisini
+    ölçmeden göze almak doğru değil. Kelime telaffuzu tek bir sözcük; cihazın
+    kendi TTS'i orada yeterli ve IPA zaten kartın üzerinde yazıyor.
+    """
     clips = []
     for level in levels:
         path = CARDS / f"{level}.json"
@@ -203,7 +210,7 @@ def report(clips: list[Clip], pending: list[Clip]) -> None:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run", action="store_true", help="gerçekten üret (anahtar ister)")
-    parser.add_argument("--kind", choices=["listening", "vocab", "all"], default="all")
+    parser.add_argument("--kind", choices=["listening", "vocab", "all"], default="listening")
     parser.add_argument("--level", choices=LEVELS + ["all"], default="all")
     parser.add_argument("--limit", type=int, default=0, help="en fazla kaç parça üretilsin")
     args = parser.parse_args()
