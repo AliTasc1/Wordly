@@ -1,0 +1,228 @@
+{
+  "_meta": { "batch": "c1-listening-05", "level": "C1", "range": "Diyalog 21-25" },
+  "items": [
+    {
+      "id": "c1-l-21",
+      "level": "C1",
+      "order": 21,
+      "kind": "listening",
+      "title": "Şube kütüphanesi kapanıyor",
+      "titleEn": "Closing the Branch Library",
+      "minutes": 6,
+      "names": ["Nesrin", "Muzaffer"],
+      "speakers": ["Nesrin", "Muzaffer"],
+      "lines": [
+        { "who": "Muzaffer", "en": "The numbers you are using count visits, and almost nobody in this building comes for a book.", "tr": "Kullandığın sayılar ziyaretleri sayıyor ve bu binaya neredeyse kimse kitap için gelmiyor." },
+        { "who": "Nesrin", "en": "That is an argument against the library, not for it.", "tr": "Bu kütüphanenin aleyhine bir sav, lehine değil." },
+        { "who": "Muzaffer", "en": "It is an argument against calling it a library, which is a different repair.", "tr": "Ona kütüphane demenin aleyhine bir sav; bu başka bir çözüm demek." },
+        { "who": "Nesrin", "en": "Say what you mean.", "tr": "Ne demek istediğini söyle." },
+        { "who": "Muzaffer", "en": "Forty people a day use the computers and eleven of them are filling in forms they cannot do at home.", "tr": "Günde kırk kişi bilgisayarları kullanıyor ve on biri evde dolduramadığı formları dolduruyor." },
+        { "who": "Nesrin", "en": "Those forms are the city's own, which makes this our cost either way.", "tr": "O formlar şehrin kendi formları, yani bu her hâlükârda bizim masrafımız." },
+        { "who": "Muzaffer", "en": "Then move the cost, do not remove it. You will pay it at the main office instead.", "tr": "O hâlde masrafı taşı, kaldırma. Onu bu kez merkez ofiste ödeyeceksin." },
+        { "who": "Nesrin", "en": "The main office is eleven minutes away by bus.", "tr": "Merkez ofis otobüsle on bir dakika." },
+        { "who": "Muzaffer", "en": "For you. For the woman who was here on Monday it is two buses and a child.", "tr": "Senin için. Pazartesi burada olan kadın için iki otobüs ve bir çocuk." },
+        { "who": "Nesrin", "en": "I have heard that sentence in every meeting for a year and it is still true.", "tr": "O cümleyi bir yıldır her toplantıda duyuyorum ve hâlâ doğru." },
+        { "who": "Muzaffer", "en": "Then stop asking me to prove it and start asking what the building should become.", "tr": "O hâlde bana kanıtlatmayı bırak ve binanın ne olması gerektiğini sormaya başla." },
+        { "who": "Nesrin", "en": "I can protect the computers and the staff hours. I cannot protect the shelves.", "tr": "Bilgisayarları ve personel saatlerini koruyabilirim. Rafları koruyamam." },
+        { "who": "Muzaffer", "en": "Protect the hours and I will give up half the shelves this month.", "tr": "Saatleri koru, ben bu ay rafların yarısından vazgeçeyim." },
+        { "who": "Nesrin", "en": "Half?", "tr": "Yarısından mı?" },
+        { "who": "Muzaffer", "en": "Half. I would rather choose which books go than watch somebody choose in April.", "tr": "Yarısı. Nisanda başkasının seçmesini izlemektense hangi kitapların gideceğini ben seçerim." },
+        { "who": "Nesrin", "en": "Then write me the list by Friday and I will take it in as your proposal, not mine.", "tr": "O hâlde listeyi cumaya kadar yaz, ben de onu benim değil senin önerin olarak götüreyim." }
+      ],
+      "glossary": [
+        { "w": "visits", "tr": "ziyaretler" },
+        { "w": "forms", "tr": "formlar" },
+        { "w": "cost", "tr": "masraf, maliyet" },
+        { "w": "prove", "tr": "kanıtlamak" },
+        { "w": "staff", "tr": "personel" },
+        { "w": "shelves", "tr": "raflar" },
+        { "w": "proposal", "tr": "öneri" }
+      ],
+      "questions": [
+        { "q": "What do the visit numbers hide?", "options": ["Almost nobody comes for a book", "The building is empty", "The staff are few", "The bus is slow"], "answer": 0, "note": "\"Almost nobody in this building comes for a book.\"" },
+        { "q": "What are eleven of the computer users doing?", "options": ["Filling in city forms", "Reading the news", "Looking for work", "Printing books"], "answer": 0, "note": "\"Eleven of them are filling in forms they cannot do at home.\"" },
+        { "q": "Why is the main office not a real answer?", "options": ["For some people it is two buses and a child", "It is closed", "It has no computers", "It costs money"], "answer": 0, "note": "\"For the woman who was here on Monday it is two buses and a child.\"" },
+        { "q": "What can Nesrin protect?", "options": ["The computers and the staff hours", "The shelves", "The building", "Nothing"], "answer": 0, "note": "\"I can protect the computers and the staff hours.\"" },
+        { "q": "Why does Muzaffer want to choose the books himself?", "options": ["So somebody else does not choose in April", "To keep his favorites", "To sell them", "To save time"], "answer": 0, "note": "\"I would rather choose which books go than watch somebody choose in April.\"" }
+      ]
+    },
+    {
+      "id": "c1-l-22",
+      "level": "C1",
+      "order": 22,
+      "kind": "listening",
+      "title": "Odadaki çevirmen",
+      "titleEn": "The Interpreter in the Room",
+      "minutes": 6,
+      "names": ["Ozlem", "Kadir"],
+      "speakers": ["Ozlem", "Kadir"],
+      "lines": [
+        { "who": "Kadir", "en": "You changed what she said. I heard how long she spoke and I heard how long you did.", "tr": "Söylediklerini değiştirdin. Onun ne kadar konuştuğunu da senin ne kadar konuştuğunu da duydum." },
+        { "who": "Ozlem", "en": "I gave you the whole meaning in fewer words. That is not the same as changing it.", "tr": "Bütün anlamı daha az kelimeyle verdim. Bu onu değiştirmekle aynı şey değil." },
+        { "who": "Kadir", "en": "She spoke for thirty seconds and you gave me nine.", "tr": "O otuz saniye konuştu, sen bana dokuz saniye verdin." },
+        { "who": "Ozlem", "en": "Twenty of those seconds were an apology for taking your time. Do you want it?", "tr": "O saniyelerin yirmisi vaktini aldığı için özürdü. İster misin?" },
+        { "who": "Kadir", "en": "Yes. Every time.", "tr": "Evet. Her seferinde." },
+        { "who": "Ozlem", "en": "Then I will give it to you, and you will learn nothing from it except that she is frightened.", "tr": "O hâlde veririm ve bundan korktuğu dışında hiçbir şey öğrenmezsin." },
+        { "who": "Kadir", "en": "That is exactly the thing I am not allowed to guess at.", "tr": "Tam da tahmin etmeme izin verilmeyen şey bu." },
+        { "who": "Ozlem", "en": "Fair. I have been deciding what matters and that is not my decision to make.", "tr": "Haklısın. Neyin önemli olduğuna ben karar veriyordum ve bu benim vereceğim karar değil." },
+        { "who": "Kadir", "en": "It is the hardest rule in your work and it is the only one that keeps you useful.", "tr": "İşindeki en zor kural bu ve seni yararlı kılan tek kural." },
+        { "who": "Ozlem", "en": "There is a second problem and you will like it less.", "tr": "İkinci bir sorun var ve onu daha az seveceksin." },
+        { "who": "Kadir", "en": "Go on.", "tr": "Devam et." },
+        { "who": "Ozlem", "en": "She used a word for her brother's wife that we do not have. I said sister.", "tr": "Erkek kardeşinin karısı için bizde olmayan bir kelime kullandı. Ben kız kardeş dedim." },
+        { "who": "Kadir", "en": "Which changes who lives in the house.", "tr": "Bu da evde kimin yaşadığını değiştiriyor." },
+        { "who": "Ozlem", "en": "It does, and I only noticed on the way home, and the form went in on Tuesday.", "tr": "Değiştiriyor ve ben ancak eve dönerken fark ettim; form salı günü verildi." },
+        { "who": "Kadir", "en": "Then we correct it today and we say who noticed it.", "tr": "O hâlde bugün düzeltiriz ve kimin fark ettiğini de yazarız." },
+        { "who": "Ozlem", "en": "I would rather that than be careful with you for the next four years.", "tr": "Önümüzdeki dört yıl sana karşı temkinli olmaktansa bunu tercih ederim." }
+      ],
+      "glossary": [
+        { "w": "interpreter", "tr": "sözlü çevirmen" },
+        { "w": "meaning", "tr": "anlam" },
+        { "w": "apology", "tr": "özür" },
+        { "w": "frightened", "tr": "korkmuş" },
+        { "w": "guess at", "tr": "tahmin yürütmek" },
+        { "w": "correct", "tr": "düzeltmek" }
+      ],
+      "questions": [
+        { "q": "What was in the twenty seconds Ozlem left out?", "options": ["An apology for taking his time", "A question", "An address", "A complaint"], "answer": 0, "note": "\"Twenty of those seconds were an apology for taking your time.\"" },
+        { "q": "Why does Kadir want everything?", "options": ["He is not allowed to guess at such things", "He speaks the language", "He records the meetings", "He does not trust her"], "answer": 0, "note": "\"That is exactly the thing I am not allowed to guess at.\"" },
+        { "q": "What does Ozlem admit?", "options": ["She was deciding what mattered", "She was tired", "She arrived late", "She misheard the name"], "answer": 0, "note": "\"I have been deciding what matters and that is not my decision to make.\"" },
+        { "q": "What was the second problem?", "options": ["She translated a family word as sister", "She lost a page", "She left early", "She used the wrong date"], "answer": 0, "note": "\"She used a word for her brother's wife that we do not have. I said sister.\"" },
+        { "q": "What do they decide to do?", "options": ["Correct it today and name who noticed", "Wait for the next meeting", "Say nothing", "Change the interpreter"], "answer": 0, "note": "\"We correct it today and we say who noticed it.\"" }
+      ]
+    },
+    {
+      "id": "c1-l-23",
+      "level": "C1",
+      "order": 23,
+      "kind": "listening",
+      "title": "Denemeye katılmak",
+      "titleEn": "Volunteering for the Trial",
+      "minutes": 6,
+      "names": ["Ayla", "Recep"],
+      "speakers": ["Ayla", "Recep"],
+      "lines": [
+        { "who": "Recep", "en": "You have explained it twice and I still want to know what you would do.", "tr": "İki kez açıkladın ve ben hâlâ senin ne yapacağını bilmek istiyorum." },
+        { "who": "Ayla", "en": "I am not allowed to answer that, and you know why I am not.", "tr": "Buna cevap vermeme izin yok ve neden olmadığını biliyorsun." },
+        { "who": "Recep", "en": "Because I would do whatever you said.", "tr": "Çünkü ne dersen onu yapardım." },
+        { "who": "Ayla", "en": "Yes. And in eight months you would say that I put you there.", "tr": "Evet. Ve sekiz ay sonra seni oraya benim soktuğumu söylerdin." },
+        { "who": "Recep", "en": "Then tell me the part you think people miss.", "tr": "O hâlde insanların atladığını düşündüğün kısmı anlat." },
+        { "who": "Ayla", "en": "That half the group receives the usual treatment and neither of us will know which half you are in.", "tr": "Grubun yarısı her zamanki tedaviyi alıyor ve hangi yarıda olduğunu ikimiz de bilmeyeceğiz." },
+        { "who": "Recep", "en": "Until it ends.", "tr": "Bitene kadar." },
+        { "who": "Ayla", "en": "Until it ends, or until something happens that makes us stop it early.", "tr": "Bitene kadar ya da erken durdurmamıza yol açacak bir şey olana kadar." },
+        { "who": "Recep", "en": "And if I am in the other half, I have given a year for nothing.", "tr": "Ya diğer yarıdaysam, bir yılı boşuna vermiş olurum." },
+        { "who": "Ayla", "en": "For nothing for you. The year is not wasted; it is simply not spent on you.", "tr": "Senin için boşuna. O yıl boşa gitmiyor; sadece sana harcanmıyor." },
+        { "who": "Recep", "en": "That is an honest sentence and I do not enjoy it.", "tr": "Dürüst bir cümle ve hoşuma gitmiyor." },
+        { "who": "Ayla", "en": "You should not. It is the sentence the form is built on and most people read past it.", "tr": "Gitmemeli. Formun üzerine kurulduğu cümle bu ve çoğu kişi onu atlayarak okuyor." },
+        { "who": "Recep", "en": "Can I leave in the middle?", "tr": "Ortasında bırakabilir miyim?" },
+        { "who": "Ayla", "en": "At any hour, without giving a reason, and your treatment here does not change.", "tr": "Her saat, sebep göstermeden ve buradaki tedavin değişmez." },
+        { "who": "Recep", "en": "Say that one again at the end, in front of my daughter.", "tr": "Bunu sonunda kızımın önünde bir kez daha söyle." },
+        { "who": "Ayla", "en": "I will say it first, and then again at the end.", "tr": "Önce söyleyeceğim, sonunda bir kez daha söyleyeceğim." }
+      ],
+      "glossary": [
+        { "w": "trial", "tr": "klinik deneme" },
+        { "w": "treatment", "tr": "tedavi" },
+        { "w": "wasted", "tr": "boşa harcanmış" },
+        { "w": "honest", "tr": "dürüst" },
+        { "w": "reason", "tr": "sebep" }
+      ],
+      "questions": [
+        { "q": "Why will Ayla not say what she would do?", "options": ["He would do whatever she said", "She does not know", "It is a secret", "He would not listen"], "answer": 0, "note": "\"Because I would do whatever you said.\" — \"Yes.\"" },
+        { "q": "What does she say people miss?", "options": ["Half the group gets the usual treatment", "The trial is long", "It costs money", "It is painful"], "answer": 0, "note": "\"Half the group receives the usual treatment.\"" },
+        { "q": "Who knows which half he is in?", "options": ["Neither of them", "Only the doctor", "Only the patient", "The whole team"], "answer": 0, "note": "\"Neither of us will know which half you are in.\"" },
+        { "q": "How does Ayla answer the idea of a wasted year?", "options": ["The year is not wasted, it is not spent on him", "He will be paid", "He can start again", "He will not be in that half"], "answer": 0, "note": "\"The year is not wasted; it is simply not spent on you.\"" },
+        { "q": "What happens if he leaves in the middle?", "options": ["His treatment there does not change", "He pays a fee", "He must give a reason", "He cannot return"], "answer": 0, "note": "\"Your treatment here does not change.\"" }
+      ]
+    },
+    {
+      "id": "c1-l-24",
+      "level": "C1",
+      "order": 24,
+      "kind": "listening",
+      "title": "Fotoğrafın sahibi kim",
+      "titleEn": "Who Owns the Photograph",
+      "minutes": 6,
+      "names": ["Gonca", "Turgay"],
+      "speakers": ["Gonca", "Turgay"],
+      "lines": [
+        { "who": "Turgay", "en": "The picture is on four websites and not one of them asked me.", "tr": "Fotoğraf dört sitede ve hiçbiri bana sormadı." },
+        { "who": "Gonca", "en": "Two of them put your name under it, which is not permission but it is not theft either.", "tr": "İkisi altına adını yazmış; bu izin değil ama hırsızlık da değil." },
+        { "who": "Turgay", "en": "It is the same act with better manners.", "tr": "Aynı eylemin daha nazik hâli." },
+        { "who": "Gonca", "en": "It is, and courts treat manners as evidence of what people believed they were allowed to do.", "tr": "Öyle ve mahkemeler nezaketi, insanların kendilerine ne izin verildiğine inandığının kanıtı sayar." },
+        { "who": "Turgay", "en": "So the polite ones are harder to stop.", "tr": "Yani kibar olanları durdurmak daha zor." },
+        { "who": "Gonca", "en": "Harder to be angry at. Not harder to stop, if you write to them first.", "tr": "Onlara kızmak daha zor. Önce yazarsan durdurmak zor değil." },
+        { "who": "Turgay", "en": "I want the money, not the letter.", "tr": "Parayı istiyorum, mektubu değil." },
+        { "who": "Gonca", "en": "You will get the letter, then money from one of them, and nothing from the other three.", "tr": "Mektubu alacaksın, sonra birinden para, diğer üçünden hiçbir şey." },
+        { "who": "Turgay", "en": "Why nothing?", "tr": "Neden hiçbir şey?" },
+        { "who": "Gonca", "en": "Two are abroad and one has no address that answers. That is most of this work.", "tr": "İkisi yurt dışında ve birinin cevap veren bir adresi yok. Bu işin çoğu böyle." },
+        { "who": "Turgay", "en": "Then tell me it is worth doing.", "tr": "O hâlde yapmaya değer olduğunu söyle." },
+        { "who": "Gonca", "en": "It is worth doing once, loudly, so that the fifth website finds the first four when it searches.", "tr": "Bir kez, yüksek sesle yapmaya değer; ki beşinci site arama yaptığında ilk dördünü bulsun." },
+        { "who": "Turgay", "en": "You are asking me to spend a month building a warning.", "tr": "Benden bir ayımı bir uyarı inşa etmeye harcamamı istiyorsun." },
+        { "who": "Gonca", "en": "I am asking for a week. The month is what you spend if you do nothing and it keeps happening.", "tr": "Bir hafta istiyorum. Ay, hiçbir şey yapmazsan ve bu sürerse harcayacağın süre." },
+        { "who": "Turgay", "en": "And the photograph stays up while we write?", "tr": "Peki biz yazarken fotoğraf yayında mı kalıyor?" },
+        { "who": "Gonca", "en": "It stays up. Taking it down early is the one thing that makes the money harder to prove.", "tr": "Kalıyor. Erken kaldırmak, parayı kanıtlamayı zorlaştıran tek şey." }
+      ],
+      "glossary": [
+        { "w": "permission", "tr": "izin" },
+        { "w": "theft", "tr": "hırsızlık" },
+        { "w": "manners", "tr": "nezaket, görgü" },
+        { "w": "evidence", "tr": "kanıt" },
+        { "w": "polite", "tr": "kibar" },
+        { "w": "abroad", "tr": "yurt dışında" },
+        { "w": "warning", "tr": "uyarı" },
+        { "w": "prove", "tr": "kanıtlamak" }
+      ],
+      "questions": [
+        { "q": "What did two of the websites do?", "options": ["Put his name under the picture", "Pay him", "Write to him", "Remove the picture"], "answer": 0, "note": "\"Two of them put your name under it.\"" },
+        { "q": "How do courts treat good manners here?", "options": ["As evidence of what people believed they could do", "As proof of guilt", "As nothing", "As permission"], "answer": 0, "note": "\"Courts treat manners as evidence of what people believed they were allowed to do.\"" },
+        { "q": "Why will three of them pay nothing?", "options": ["Two are abroad and one has no working address", "They are too poor", "They removed the picture", "They have lawyers"], "answer": 0, "note": "\"Two are abroad and one has no address that answers.\"" },
+        { "q": "Why is it worth doing loudly once?", "options": ["So the next website finds the first four", "To win more money", "To please the courts", "To get an apology"], "answer": 0, "note": "\"So that the fifth website finds the first four when it searches.\"" },
+        { "q": "Why should the photograph stay up?", "options": ["Taking it down early makes the money harder to prove", "It brings visitors", "The websites asked", "It is already paid for"], "answer": 0, "note": "Son replik." }
+      ]
+    },
+    {
+      "id": "c1-l-25",
+      "level": "C1",
+      "order": 25,
+      "kind": "listening",
+      "title": "Emekliliğe bir yıl kala",
+      "titleEn": "One Year From Retiring",
+      "minutes": 6,
+      "names": ["Sermin", "Ilhan"],
+      "speakers": ["Sermin", "Ilhan"],
+      "lines": [
+        { "who": "Ilhan", "en": "They have offered me the department for one year and then I retire out of it.", "tr": "Bana bölümü bir yıllığına önerdiler, sonra oradan emekli oluyorum." },
+        { "who": "Sermin", "en": "Which means you carry a decision that somebody else lives with for ten.", "tr": "Yani başkasının on yıl yaşayacağı bir kararı sen vereceksin." },
+        { "who": "Ilhan", "en": "That is the reason I am asking you and not my wife.", "tr": "Bunu eşime değil sana sormamın sebebi bu." },
+        { "who": "Sermin", "en": "Your wife will give you the kinder answer and it will also be the correct one.", "tr": "Eşin sana daha nazik cevabı verecek ve o cevap aynı zamanda doğru olan olacak." },
+        { "who": "Ilhan", "en": "Say the unkind one anyway.", "tr": "Yine de nazik olmayanı söyle." },
+        { "who": "Sermin", "en": "A year is long enough to start things and too short to finish them, and starting is the harm.", "tr": "Bir yıl işleri başlatmaya yeter, bitirmeye yetmez ve zarar başlatmakta." },
+        { "who": "Ilhan", "en": "Unless I start nothing.", "tr": "Hiçbir şey başlatmazsam başka." },
+        { "who": "Sermin", "en": "Then why would they want you? They want the year to look like movement.", "tr": "O zaman seni neden istesinler? O yılın hareket gibi görünmesini istiyorlar." },
+        { "who": "Ilhan", "en": "They want somebody who will not be there when the bill arrives.", "tr": "Hesap geldiğinde orada olmayacak birini istiyorlar." },
+        { "who": "Sermin", "en": "You said that, not me, and I notice you said it quickly.", "tr": "Bunu ben değil sen söyledin ve çabuk söylediğini fark ettim." },
+        { "who": "Ilhan", "en": "I have been thinking it since Thursday.", "tr": "Perşembeden beri bunu düşünüyorum." },
+        { "who": "Sermin", "en": "Then take it on one condition you set in writing: the person after you is chosen now, by the same room.", "tr": "O hâlde yazılı olarak koyacağın tek koşulla kabul et: senden sonraki kişi şimdi, aynı oda tarafından seçilsin." },
+        { "who": "Ilhan", "en": "They will refuse.", "tr": "Reddedecekler." },
+        { "who": "Sermin", "en": "Then you have learned what the year was for, and you have lost nothing but a week.", "tr": "O zaman o yılın ne için olduğunu öğrenmiş olursun ve bir haftadan başka bir şey kaybetmezsin." },
+        { "who": "Ilhan", "en": "And if they agree?", "tr": "Ya kabul ederlerse?" },
+        { "who": "Sermin", "en": "Then you spend the year handing over, which is the only useful thing a last year can be.", "tr": "O zaman yılı devretmekle geçirirsin; bir son yılın olabileceği tek yararlı şey bu." }
+      ],
+      "glossary": [
+        { "w": "department", "tr": "bölüm, birim" },
+        { "w": "retire", "tr": "emekli olmak" },
+        { "w": "harm", "tr": "zarar" },
+        { "w": "movement", "tr": "hareket" },
+        { "w": "condition", "tr": "koşul" },
+        { "w": "refuse", "tr": "reddetmek" },
+        { "w": "handing over", "tr": "devretme" }
+      ],
+      "questions": [
+        { "q": "What have they offered Ilhan?", "options": ["The department for one year", "A longer contract", "Early retirement", "A pay rise"], "answer": 0, "note": "\"They have offered me the department for one year.\"" },
+        { "q": "What is Sermin's main objection?", "options": ["A year is long enough to start and too short to finish", "He is too old", "The pay is poor", "He would be unpopular"], "answer": 0, "note": "\"A year is long enough to start things and too short to finish them.\"" },
+        { "q": "What does Ilhan think they really want?", "options": ["Somebody who will be gone when the bill arrives", "A quiet year", "A cheap manager", "A new plan"], "answer": 0, "note": "\"Somebody who will not be there when the bill arrives.\"" },
+        { "q": "What condition does Sermin suggest?", "options": ["His replacement is chosen now by the same room", "A two-year term", "More money", "A written plan"], "answer": 0, "note": "\"The person after you is chosen now, by the same room.\"" },
+        { "q": "What should the year be spent on if they agree?", "options": ["Handing over", "New projects", "Cutting costs", "Hiring staff"], "answer": 0, "note": "\"You spend the year handing over.\"" }
+      ]
+    }
+  ]
+}
