@@ -15,6 +15,7 @@ import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 import { primeVoices, speakLine, speakSequence, stopSpeech } from '../audio/speech';
+import { clipsFor } from '../audio/clips';
 
 const SPEEDS = [
   { label: '1×', value: 1 },
@@ -65,11 +66,20 @@ export function ListenScreen() {
   const speakers = useMemo(() => item.speakers ?? [], [item.speakers]);
   const speed = SPEEDS[speedIndex].value;
 
+  // Bu diyaloğun üretilmiş sesi var mı? Yoksa cihazın kendi seslendirmesi
+  // devreye giriyor; ekran ikisini de aynı biçimde kullanıyor.
+  const clips = useMemo(() => clipsFor(item.id), [item.id]);
+  const recorded = clips != null && clips.length === item.lines.length;
+
   /** Diyaloğu verilen replikten itibaren okur. */
   const play = (from: number) => {
     setPlaying(true);
     speakSequence(
-      item.lines.map((l) => ({ text: l.en, speaker: Math.max(speakers.indexOf(l.who), 0) })),
+      item.lines.map((l, i) => ({
+        text: l.en,
+        speaker: Math.max(speakers.indexOf(l.who), 0),
+        clip: recorded ? clips![i] : undefined,
+      })),
       {
         level: item.level,
         speed,
@@ -183,9 +193,12 @@ export function ListenScreen() {
           </Txt>
         </View>
 
-        <Txt s={11} lh={1.5} c={colors.textFaint}>
-          Cihazının kendi seslendirmesiyle okunuyor. Stüdyo kaydı henüz yok.
-        </Txt>
+        {recorded ? null : (
+          <Txt s={11} lh={1.5} c={colors.textFaint}>
+            Bu diyaloğun kaydı henüz üretilmedi; cihazının kendi seslendirmesiyle
+            okunuyor.
+          </Txt>
+        )}
       </Gradient>
 
       <Press
@@ -216,6 +229,7 @@ export function ListenScreen() {
                   level: item.level,
                   speaker: Math.max(speakers.indexOf(turn.who), 0),
                   speed,
+                  clip: recorded ? clips![i] : undefined,
                 });
               }}
               accessibilityRole="button"

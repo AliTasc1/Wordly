@@ -1,16 +1,18 @@
 import * as Speech from 'expo-speech';
 import type { Level } from '../content/types';
+import { playClip, playClips, stopClips } from './player';
 
 /**
- * Seslendirme katmanı — bugün cihazın kendi TTS'i.
+ * Seslendirme katmanı — iki motor, tek arayüz.
  *
- * Dinleme bölümünün 150 diyaloğu metin olarak hazır ama stüdyo sesi henüz
- * üretilmedi. Sesi olmayan bir dinleme bölümü aslında ikinci bir okuma
- * bölümüdür, o yüzden cihazın TTS'i geçici bir çözüm değil, bugünkü çözüm.
+ * Bir repliğin üretilmiş ses dosyası varsa o çalınır (Google Cloud TTS ile
+ * bir kez üretildi, bkz. content/build-audio.py); yoksa cihazın kendi
+ * seslendirmesine düşülür. Ekranlar hangisinin kullanıldığını bilmez ve
+ * Speech'i doğrudan çağırmaz — bu ayrım sayesinde seslendirme bir seviyede
+ * varken diğerinde yokken de uygulama çalışır.
  *
- * Gerçek ses dosyaları üretildiğinde (bkz. content/build-audio.py) değişecek
- * tek yer bu modüldür: `speakLine` metin okumak yerine dosya çalar, ekranlar
- * aynı kalır. Bu yüzden ekranlar Speech'i doğrudan çağırmıyor.
+ * Bir diyalogda iki motor karıştırılmıyor: ya hepsi dosya, ya hepsi cihaz
+ * sesi. Yarısı stüdyo yarısı robot bir diyalog, ikisinden de kötüdür.
  */
 
 /**
@@ -79,15 +81,22 @@ function options(opts: SpeakOptions): Speech.SpeechOptions {
   };
 }
 
-/** Tek bir cümleyi okur. Okuma sırasında başka bir çağrı gelirse sıraya girer. */
-export function speakLine(text: string, opts: SpeakOptions): void {
+/** Tek bir cümleyi seslendirir: dosya varsa dosyayı, yoksa cihaz sesini. */
+export function speakLine(text: string, opts: SpeakOptions & { clip?: number }): void {
+  if (opts.clip != null) {
+    stopSpeech();
+    opts.onStart?.();
+    playClip(opts.clip, { rate: opts.speed ?? 1, onDone: opts.onDone });
+    return;
+  }
   Speech.speak(text, options(opts));
 }
 
-/** Konuşan varsa susturur ve sıradakileri iptal eder. */
+/** Konuşan ya da çalan varsa susturur ve sıradakileri iptal eder. */
 export function stopSpeech(): void {
   generation += 1;
   Speech.stop();
+  stopClips();
 }
 
 /**
@@ -99,7 +108,12 @@ export function stopSpeech(): void {
  */
 let generation = 0;
 
-export type Utterance = { text: string; speaker: number };
+export type Utterance = {
+  text: string;
+  speaker: number;
+  /** Varsa üretilmiş ses dosyası (require() modül kimliği). */
+  clip?: number;
+};
 
 /**
  * Bir diyaloğu replik replik okur.
@@ -114,6 +128,24 @@ export function speakSequence(
   stopSpeech();
   const mine = generation;
   const start = opts.from ?? 0;
+
+  // Diyalogdaki her repliğin dosyası varsa dosya motoru kullanılıyor.
+  // Eksik tek bir replik bile varsa tamamı cihaz sesiyle okunur; iki motoru
+  // aynı diyalogda karıştırmak sesi replik başına değiştirir.
+  const clips = lines.map((l) => l.clip);
+  if (clips.every((c): c is number => c != null)) {
+    playClips(clips, {
+      from: start,
+      rate: opts.speed ?? 1,
+      onIndex: (index) => {
+        if (generation === mine) opts.onLine?.(index);
+      },
+      onDone: () => {
+        if (generation === mine) opts.onDone?.();
+      },
+    });
+    return stopSpeech;
+  }
 
   lines.slice(start).forEach((line, offset) => {
     const index = start + offset;

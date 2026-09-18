@@ -150,28 +150,31 @@ def post(url: str, key: str, body: dict) -> dict:
 
 
 def pick_voices(key: str) -> list[str]:
-    """Kullanılabilir en iyi iki İngilizce sesi seçer.
+    """Diyalog için bir kadın ve bir erkek ses seçer.
 
-    Ses adları zamanla değişiyor ve emekliye ayrılıyor; bu yüzden listeyi
-    çalışma anında API'den alıp tercih sırasına göre eşleştiriyoruz. Sabit
-    ses adı yazmak, betiği bir yıl sonra sessizce bozar.
+    İki konuşmacıyı ayırmanın en güçlü yolu cinsiyet farkı: aynı aileden iki
+    kadın sesi, dikkatli dinlemeyen öğrenci için tek ses gibi duyulur. Bu
+    yüzden seçim tesadüfe bırakılmıyor, açıkça FEMALE + MALE isteniyor.
+
+    Ses adları zamanla emekliye ayrıldığı için liste çalışma anında API'den
+    alınıyor; sabit ad yazmak betiği bir yıl sonra sessizce bozar. Aileler
+    tercih sırasıyla taranıyor, ilk ikisini birden karşılayan aile kazanıyor.
     """
     with urllib.request.urlopen(f"{VOICES}?languageCode=en-US&key={key}", timeout=30) as r:
         voices = json.loads(r.read()).get("voices", [])
-    names = [v["name"] for v in voices]
-    chosen: list[str] = []
+
     for family in VOICE_ORDER:
-        matches = sorted(n for n in names if family.lower() in n.lower())
-        for name in matches:
-            if name not in chosen:
-                chosen.append(name)
-            if len(chosen) == 2:
-                return chosen
-    if not chosen:
-        raise SystemExit("en-US sesi bulunamadı; anahtarın Text-to-Speech API'sine erişimi var mı?")
-    # Tek ses varsa iki konuşmacı da onu kullanır; diyalog daha az ayırt
-    # edilir ama üretim durmaz.
-    return [chosen[0], chosen[0]]
+        same = [v for v in voices if family.lower() in v["name"].lower()]
+        women = sorted(v["name"] for v in same if v.get("ssmlGender") == "FEMALE")
+        men = sorted(v["name"] for v in same if v.get("ssmlGender") == "MALE")
+        if women and men:
+            return [women[0], men[0]]
+        # Tek cinsiyet varsa bu ailede iki farklı ses yine de denenebilir.
+        names = sorted(v["name"] for v in same)
+        if len(names) >= 2:
+            return names[:2]
+
+    raise SystemExit("en-US sesi bulunamadı; anahtarın Text-to-Speech API'sine erişimi var mı?")
 
 
 def synthesize(clip: Clip, key: str, voices: list[str]) -> None:
@@ -186,6 +189,63 @@ def synthesize(clip: Clip, key: str, voices: list[str]) -> None:
 
 
 # --------------------------------------------------------------------------
+
+
+INDEX = ROOT.parent / "mobile" / "src" / "audio" / "clips.ts"
+
+
+def write_index() -> int:
+    """Uygulamanın okuyacağı require() tablosunu üretir.
+
+    Metro varlıkları derleme anında çözer, yani her dosya için kaynakta
+    gerçek bir require() durmalı — değişkenle kurulan yol çalışmaz. Bu yüzden
+    tablo elle değil burada, üretilen dosyalara bakarak yazılıyor: elle
+    yazılmış 1.953 satırlık bir tablo ilk düzeltmede bozulurdu.
+
+    Eksik diyalog sorun değil: uygulama dosyası olmayan diyalogda cihazın
+    kendi seslendirmesine düşüyor.
+    """
+    folder = OUT / "listening"
+    dialogues: dict[str, list[str]] = {}
+    if folder.is_dir():
+        for item in sorted(folder.iterdir()):
+            if not item.is_dir():
+                continue
+            files = sorted(item.glob("*.mp3"))
+            if files:
+                dialogues[item.name] = [f.name for f in files]
+
+    lines = [
+        "/**",
+        " * Üretilmiş dinleme sesleri — bu dosya elle yazılmaz.",
+        " *",
+        " * content/build-audio.py tarafından üretiliyor. Metro varlıkları derleme",
+        " * anında çözdüğü için her dosyanın kaynakta gerçek bir require() olarak",
+        " * durması gerekiyor; değişkenle kurulan yol çalışmaz.",
+        " *",
+        " * Sesi olmayan diyalog listede yer almaz ve uygulama orada cihazın kendi",
+        " * seslendirmesine düşer.",
+        " */",
+        "",
+        "export const CLIPS: Record<string, number[]> = {",
+    ]
+    for name, files in dialogues.items():
+        refs = ", ".join(
+            f"require('../../assets/audio/listening/{name}/{f}')" for f in files
+        )
+        lines.append(f"  '{name}': [{refs}],")
+    lines += [
+        "};",
+        "",
+        "/** Bir diyaloğun replik sesleri; üretilmemişse null. */",
+        "export function clipsFor(id: string): number[] | null {",
+        "  return CLIPS[id] ?? null;",
+        "}",
+        "",
+    ]
+    INDEX.parent.mkdir(parents=True, exist_ok=True)
+    INDEX.write_text("\n".join(lines), encoding="utf-8")
+    return sum(len(f) for f in dialogues.values())
 
 
 def report(clips: list[Clip], pending: list[Clip]) -> None:
@@ -213,6 +273,7 @@ def main() -> int:
     parser.add_argument("--kind", choices=["listening", "vocab", "all"], default="listening")
     parser.add_argument("--level", choices=LEVELS + ["all"], default="all")
     parser.add_argument("--limit", type=int, default=0, help="en fazla kaç parça üretilsin")
+    parser.add_argument("--index-only", action="store_true", help="yalnızca clips.ts üret")
     args = parser.parse_args()
 
     levels = LEVELS if args.level == "all" else [args.level]
@@ -221,6 +282,10 @@ def main() -> int:
         clips += listening_clips(levels)
     if args.kind in ("vocab", "all"):
         clips += vocab_clips(levels)
+
+    if args.index_only:
+        print(f"{write_index()} dosya dizine yazıldı → {INDEX}")
+        return 0
 
     pending = [c for c in clips if not c.path.exists()]
     report(clips, pending)
@@ -257,11 +322,8 @@ def main() -> int:
         if i % 25 == 0 or i == len(todo):
             print(f"  {i}/{len(todo)}")
 
-    manifest = sorted(str(p.relative_to(OUT)) for p in OUT.rglob("*.mp3"))
-    (OUT / "audio-manifest.json").write_text(
-        json.dumps({"files": manifest}, ensure_ascii=False, indent=1) + "\n", encoding="utf-8"
-    )
-    print(f"\n{len(manifest)} dosya hazır → {OUT}")
+    count = write_index()
+    print(f"\n{count} dosya hazır → {OUT}")
     return 0
 
 
