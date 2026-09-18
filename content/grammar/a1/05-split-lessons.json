@@ -1,0 +1,1239 @@
+{
+  "_meta": {
+    "batch": "a1-grammar-05",
+    "level": "A1",
+    "range": "Bölünen dersler: be olumsuz/soru, wh- soruları, bağlaçlar"
+  },
+  "lessons": [
+    {
+      "id": "a1-02-be-negative",
+      "level": "A1",
+      "order": 2,
+      "title": "\"to be\" — değil demek",
+      "topic": "Present simple: be (negative)",
+      "canDo": "Bir şeyin öyle olmadığını söyleyebilirim.",
+      "covers": [
+        "PP.I_am_not",
+        "TA.PRESENT.be.NEG"
+      ],
+      "concept": {
+        "summary": "be cümlesinde olumsuzluk için be'den sonra not eklenir. Ayrı bir yardımcı fiil (do) gerekmez — be zaten kendi işini görür. Konuşmada kısaltma kullanılır: isn't, aren't. I am not'ın kısaltması I'm not'tır; \"amn't\" diye bir biçim yoktur.",
+        "formula": {
+          "left": "Özne + be + not",
+          "right": "isn't / aren't / I'm not"
+        },
+        "table": [
+          {
+            "form": "I",
+            "be": "I am not",
+            "example": "I am not tired."
+          },
+          {
+            "form": "he / she / it",
+            "be": "is not → isn't",
+            "example": "She isn't here."
+          },
+          {
+            "form": "we / you / they",
+            "be": "are not → aren't",
+            "example": "We aren't late."
+          },
+          {
+            "form": "yanlış",
+            "be": "amn't yoktur",
+            "example": "not: I amn't tired."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "I am not tired.",
+          "tr": "Yorgun değilim.",
+          "note": "I am not'ın kısaltması I'm not'tır; \"amn't\" yoktur."
+        },
+        {
+          "en": "She isn't here.",
+          "tr": "O burada değil.",
+          "note": "is not → isn't."
+        },
+        {
+          "en": "We aren't late.",
+          "tr": "Geç kalmadık.",
+          "note": "are not → aren't."
+        },
+        {
+          "en": "The shop isn't open on Sunday.",
+          "tr": "Dükkân pazar günü açık değil.",
+          "note": "Tekil özne → isn't."
+        },
+        {
+          "en": "They aren't at home this week.",
+          "tr": "Bu hafta evde değiller.",
+          "note": "Çoğul özne → aren't."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "I not tired.",
+          "right": "I am not tired.",
+          "why": "not tek başına olumsuzluk yapmaz, be ile gelir."
+        },
+        {
+          "wrong": "She doesn't here.",
+          "right": "She isn't here.",
+          "why": "be cümlesinde do kullanılmaz."
+        },
+        {
+          "wrong": "I amn't ready.",
+          "right": "I am not ready.",
+          "why": "am not'ın kısaltması yoktur."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "She ___ my teacher. (olumsuz)",
+          "options": [
+            "isn't",
+            "aren't",
+            "not is",
+            "doesn't"
+          ],
+          "answer": 0,
+          "note": "she → is not → isn't."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ hungry.",
+          "options": [
+            "am not",
+            "not am",
+            "isn't",
+            "don't"
+          ],
+          "answer": 0,
+          "note": "I am not; \"amn't\" diye bir biçim yok."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ from the same city. (olumsuz)",
+          "options": [
+            "aren't",
+            "isn't",
+            "am not"
+          ],
+          "answer": 0,
+          "note": "we → are not → aren't."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ not here today.",
+          "options": [
+            "is",
+            "are",
+            "am",
+            "be"
+          ],
+          "answer": 0,
+          "note": "she → is not."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ not ready yet.",
+          "options": [
+            "are",
+            "is",
+            "am"
+          ],
+          "answer": 0,
+          "note": "we → are not."
+        },
+        {
+          "type": "choice",
+          "text": "The children ___ in the garden now.",
+          "options": [
+            "aren't",
+            "isn't",
+            "am not",
+            "don't"
+          ],
+          "answer": 0,
+          "note": "Çoğul özne → aren't."
+        },
+        {
+          "type": "choice",
+          "text": "This coffee ___ very hot.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not",
+            "doesn't"
+          ],
+          "answer": 0,
+          "note": "Tekil özne → isn't."
+        },
+        {
+          "type": "gap",
+          "text": "I ___ from Ankara.",
+          "options": [
+            "am not",
+            "not am",
+            "isn't"
+          ],
+          "answer": 0,
+          "note": "I → am not."
+        },
+        {
+          "type": "choice",
+          "text": "My parents ___ at work today.",
+          "options": [
+            "aren't",
+            "isn't",
+            "am not",
+            "don't"
+          ],
+          "answer": 0,
+          "note": "parents çoğul → aren't."
+        },
+        {
+          "type": "choice",
+          "text": "It ___ cold in here.",
+          "options": [
+            "isn't",
+            "aren't",
+            "am not",
+            "doesn't"
+          ],
+          "answer": 0,
+          "note": "it → isn't."
+        }
+      ]
+    },
+    {
+      "id": "a1-03-be-questions",
+      "level": "A1",
+      "order": 3,
+      "title": "Are you …? — \"to be\" ile soru",
+      "topic": "Present simple: be (interrogative)",
+      "canDo": "be fiiliyle basit sorular sorabilirim.",
+      "covers": [
+        "PP.are_you",
+        "TA.PRESENT.be.INT.AFF"
+      ],
+      "concept": {
+        "summary": "be cümlesinde soru, be'yi öznenin önüne alarak kurulur. Başka bir yardımcı fiil eklenmez; do burada kullanılmaz. Yazıda yalnızca soru işareti koymak yetmez, kelime sırası da değişmelidir. Kısa cevapta be tekrarlanır: Yes, I am. / No, she isn't.",
+        "formula": {
+          "left": "Be + özne + …?",
+          "right": "Yes, I am. / No, she isn't."
+        },
+        "table": [
+          {
+            "form": "I",
+            "be": "Am I …?",
+            "example": "Am I late?"
+          },
+          {
+            "form": "he / she / it",
+            "be": "Is he …?",
+            "example": "Is she a nurse?"
+          },
+          {
+            "form": "we / you / they",
+            "be": "Are you …?",
+            "example": "Are you a student?"
+          },
+          {
+            "form": "kısa cevap",
+            "be": "Yes, … am / is / are",
+            "example": "Yes, I am."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Are you okay?",
+          "tr": "İyi misin?",
+          "note": "Soruda are başa geçer."
+        },
+        {
+          "en": "Is your sister a nurse?",
+          "tr": "Ablan hemşire mi?",
+          "note": "Özne uzun olsa da is en başta kalır."
+        },
+        {
+          "en": "Am I in the right room?",
+          "tr": "Doğru odada mıyım?",
+          "note": "I ile Am."
+        },
+        {
+          "en": "Are they ready to leave?",
+          "tr": "Gitmeye hazırlar mı?",
+          "note": "Çoğul özne → Are."
+        },
+        {
+          "en": "Is it far from here?",
+          "tr": "Buradan uzak mı?",
+          "note": "it → Is."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "You are a doctor?",
+          "right": "Are you a doctor?",
+          "why": "Yazıda soru, be'yi başa almakla kurulur; sadece soru işareti yetmez."
+        },
+        {
+          "wrong": "Do you a student?",
+          "right": "Are you a student?",
+          "why": "be cümlesinde do kullanılmaz."
+        },
+        {
+          "wrong": "Is your sister and her friend here?",
+          "right": "Are your sister and her friend here?",
+          "why": "İki kişi çoğuldur → Are."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ they at school?",
+          "options": [
+            "Are",
+            "Is",
+            "Am",
+            "Do"
+          ],
+          "answer": 0,
+          "note": "they → are, soruda başa geçer."
+        },
+        {
+          "type": "choice",
+          "text": "___ this your bag?",
+          "options": [
+            "Is",
+            "Are",
+            "Am",
+            "Does"
+          ],
+          "answer": 0,
+          "note": "this tekil → is."
+        },
+        {
+          "type": "choice",
+          "text": "___ you a student?",
+          "options": [
+            "Are",
+            "Is",
+            "Am",
+            "Be"
+          ],
+          "answer": 0,
+          "note": "you → Are."
+        },
+        {
+          "type": "gap",
+          "text": "___ your father a doctor?",
+          "options": [
+            "Is",
+            "Are",
+            "Am"
+          ],
+          "answer": 0,
+          "note": "Tekil özne → Is."
+        },
+        {
+          "type": "choice",
+          "text": "___ I late?",
+          "options": [
+            "Am",
+            "Is",
+            "Are",
+            "Do"
+          ],
+          "answer": 0,
+          "note": "I → Am."
+        },
+        {
+          "type": "choice",
+          "text": "___ the shops open today?",
+          "options": [
+            "Are",
+            "Is",
+            "Am",
+            "Do"
+          ],
+          "answer": 0,
+          "note": "shops çoğul → Are."
+        },
+        {
+          "type": "choice",
+          "text": "___ it far from the station?",
+          "options": [
+            "Is",
+            "Are",
+            "Am",
+            "Does"
+          ],
+          "answer": 0,
+          "note": "it → Is."
+        },
+        {
+          "type": "gap",
+          "text": "___ we in the right queue?",
+          "options": [
+            "Are",
+            "Is",
+            "Am"
+          ],
+          "answer": 0,
+          "note": "we → Are."
+        },
+        {
+          "type": "choice",
+          "text": "Are you tired? — Yes, ___ .",
+          "options": [
+            "I am",
+            "I do",
+            "am I",
+            "I are"
+          ],
+          "answer": 0,
+          "note": "Kısa cevapta be tekrarlanır."
+        },
+        {
+          "type": "choice",
+          "text": "Is she your sister? — No, ___ .",
+          "options": [
+            "she isn't",
+            "she doesn't",
+            "isn't she",
+            "she not is"
+          ],
+          "answer": 0,
+          "note": "Olumsuz kısa cevap: No, she isn't."
+        }
+      ]
+    },
+    {
+      "id": "a1-15-wh-questions-what-where",
+      "level": "A1",
+      "order": 15,
+      "title": "What, Where, When — bilgi sorma",
+      "topic": "Wh- questions: what, where",
+      "canDo": "Bir şeyin ne olduğunu, nerede ve ne zaman olduğunu sorabilirim.",
+      "covers": [
+        "INT.what",
+        "INT.where"
+      ],
+      "concept": {
+        "summary": "Soru kelimesi en başa gelir, arkasından normal soru düzeni gelir: yardımcı fiil, sonra özne. Yani wh- kelimesi eklenince soru yapısı bozulmaz, sadece başına bir kelime alır. be cümlesinde be özneden önce gelir; asıl fiilde do ya da does gerekir.",
+        "formula": {
+          "left": "Wh- + do / does / be",
+          "right": "+ özne + fiil?"
+        },
+        "table": [
+          {
+            "form": "What",
+            "be": "ne",
+            "example": "What do you want?"
+          },
+          {
+            "form": "Where",
+            "be": "nerede",
+            "example": "Where does she live?"
+          },
+          {
+            "form": "When",
+            "be": "ne zaman",
+            "example": "When is the meeting?"
+          },
+          {
+            "form": "be ile",
+            "be": "be öne geçer",
+            "example": "What is your name?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "What is your name?",
+          "tr": "Adın ne?",
+          "note": "be cümlesinde be özneden önce."
+        },
+        {
+          "en": "Where do you live?",
+          "tr": "Nerede yaşıyorsun?",
+          "note": "Asıl fiilde do gerekir."
+        },
+        {
+          "en": "When does the film start?",
+          "tr": "Film ne zaman başlıyor?",
+          "note": "3. tekil → does."
+        },
+        {
+          "en": "What do you do at the weekend?",
+          "tr": "Hafta sonu ne yaparsın?",
+          "note": "İlk do yardımcı, ikinci do asıl fiil."
+        },
+        {
+          "en": "Where is the nearest bank?",
+          "tr": "En yakın banka nerede?",
+          "note": "be ile yer sorusu."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Where you live?",
+          "right": "Where do you live?",
+          "why": "Soru kelimesi yardımcı fiili ortadan kaldırmaz."
+        },
+        {
+          "wrong": "What means this word?",
+          "right": "What does this word mean?",
+          "why": "Özne ile fiilin yeri değişmez, do eklenir."
+        },
+        {
+          "wrong": "When the film starts?",
+          "right": "When does the film start?",
+          "why": "Asıl fiilli soruda does gerekir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ do you work?",
+          "options": [
+            "Where",
+            "What",
+            "Who",
+            "How much"
+          ],
+          "answer": 0,
+          "note": "Yer soruluyor → Where."
+        },
+        {
+          "type": "choice",
+          "text": "What ___ she do at weekends?",
+          "options": [
+            "does",
+            "do",
+            "is",
+            "are"
+          ],
+          "answer": 0,
+          "note": "she → does."
+        },
+        {
+          "type": "choice",
+          "text": "___ is your birthday?",
+          "options": [
+            "When",
+            "What",
+            "Who",
+            "How"
+          ],
+          "answer": 0,
+          "note": "Zaman → When."
+        },
+        {
+          "type": "gap",
+          "text": "___ do you live?",
+          "options": [
+            "Where",
+            "What",
+            "Who"
+          ],
+          "answer": 0,
+          "note": "Yer → Where."
+        },
+        {
+          "type": "choice",
+          "text": "___ is in the box?",
+          "options": [
+            "What",
+            "Where",
+            "When",
+            "How"
+          ],
+          "answer": 0,
+          "note": "Şey → What."
+        },
+        {
+          "type": "choice",
+          "text": "Where ___ your parents live?",
+          "options": [
+            "do",
+            "does",
+            "is",
+            "are"
+          ],
+          "answer": 0,
+          "note": "parents çoğul → do."
+        },
+        {
+          "type": "choice",
+          "text": "___ does the shop open?",
+          "options": [
+            "When",
+            "What",
+            "Who",
+            "Which"
+          ],
+          "answer": 0,
+          "note": "Saat → When."
+        },
+        {
+          "type": "gap",
+          "text": "What ___ your phone number?",
+          "options": [
+            "is",
+            "does",
+            "do"
+          ],
+          "answer": 0,
+          "note": "be cümlesi → is."
+        },
+        {
+          "type": "choice",
+          "text": "___ do we meet, here or at the station?",
+          "options": [
+            "Where",
+            "What",
+            "When",
+            "Who"
+          ],
+          "answer": 0,
+          "note": "İki yer arasında seçim → Where."
+        },
+        {
+          "type": "choice",
+          "text": "___ is the next train to Konya?",
+          "options": [
+            "When",
+            "What",
+            "Who",
+            "Which one of"
+          ],
+          "answer": 0,
+          "note": "Zaman → When."
+        }
+      ]
+    },
+    {
+      "id": "a1-16-wh-questions-why-how",
+      "level": "A1",
+      "order": 16,
+      "title": "Why, How, How old — sebep ve ölçü",
+      "topic": "Wh- questions: why, how, how + adjective",
+      "canDo": "Bir şeyin neden ve nasıl olduğunu, ne kadar olduğunu sorabilirim.",
+      "covers": [
+        "INT.why",
+        "INT.how",
+        "INT.how_JJ.RB"
+      ],
+      "concept": {
+        "summary": "Why sebep, How yol ya da durum sorar. How'un arkasına bir sıfat ya da zarf eklenirse ölçü sorusu olur: How old, How far, How much, How many, How often. Bu kalıpta How ile sıfat birbirinden ayrılmaz, ikisi birlikte başa gelir. Geri kalan düzen normal soru düzenidir.",
+        "formula": {
+          "left": "Why / How + do / be",
+          "right": "How + sıfat + be + özne?"
+        },
+        "table": [
+          {
+            "form": "Why",
+            "be": "neden",
+            "example": "Why are you late?"
+          },
+          {
+            "form": "How",
+            "be": "nasıl",
+            "example": "How do you go to work?"
+          },
+          {
+            "form": "How old",
+            "be": "kaç yaşında",
+            "example": "How old are you?"
+          },
+          {
+            "form": "How much / many",
+            "be": "ne kadar / kaç tane",
+            "example": "How much is this?"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "Why is the shop closed?",
+          "tr": "Dükkân neden kapalı?",
+          "note": "be soruya taşınır."
+        },
+        {
+          "en": "How much is this?",
+          "tr": "Bu ne kadar?",
+          "note": "How much fiyat sorar."
+        },
+        {
+          "en": "How far is the station?",
+          "tr": "İstasyon ne kadar uzakta?",
+          "note": "How + sıfat kalıbı."
+        },
+        {
+          "en": "How do you spell your surname?",
+          "tr": "Soyadını nasıl yazıyorsun?",
+          "note": "How ile yol sorusu."
+        },
+        {
+          "en": "Why do you want this job?",
+          "tr": "Bu işi neden istiyorsun?",
+          "note": "Asıl fiilde do gerekir."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "How old you are?",
+          "right": "How old are you?",
+          "why": "be öznenin önüne geçer."
+        },
+        {
+          "wrong": "Why you are late?",
+          "right": "Why are you late?",
+          "why": "Soru düzeni wh- kelimesinden sonra da korunur."
+        },
+        {
+          "wrong": "How much are this book?",
+          "right": "How much is this book?",
+          "why": "book tekil → is."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "Why ___ you angry?",
+          "options": [
+            "are",
+            "do",
+            "does",
+            "is"
+          ],
+          "answer": 0,
+          "note": "you → are."
+        },
+        {
+          "type": "choice",
+          "text": "___ does this bag cost?",
+          "options": [
+            "How much",
+            "How many",
+            "What many",
+            "How old"
+          ],
+          "answer": 0,
+          "note": "Fiyat → How much."
+        },
+        {
+          "type": "choice",
+          "text": "___ old is this building?",
+          "options": [
+            "How",
+            "What",
+            "Which",
+            "Who"
+          ],
+          "answer": 0,
+          "note": "Yaş → How old."
+        },
+        {
+          "type": "gap",
+          "text": "___ are you sad?",
+          "options": [
+            "Why",
+            "Who",
+            "Where"
+          ],
+          "answer": 0,
+          "note": "Sebep → Why."
+        },
+        {
+          "type": "choice",
+          "text": "___ many people work here?",
+          "options": [
+            "How",
+            "What",
+            "Which",
+            "Why"
+          ],
+          "answer": 0,
+          "note": "Sayı → How many."
+        },
+        {
+          "type": "choice",
+          "text": "___ do you get to school?",
+          "options": [
+            "How",
+            "Why",
+            "What",
+            "Which"
+          ],
+          "answer": 0,
+          "note": "Yol sorusu → How."
+        },
+        {
+          "type": "choice",
+          "text": "___ far is it to the beach?",
+          "options": [
+            "How",
+            "What",
+            "Why",
+            "Which"
+          ],
+          "answer": 0,
+          "note": "Uzaklık → How far."
+        },
+        {
+          "type": "gap",
+          "text": "Why ___ she leave so early?",
+          "options": [
+            "does",
+            "is",
+            "are"
+          ],
+          "answer": 0,
+          "note": "Asıl fiil → does."
+        },
+        {
+          "type": "choice",
+          "text": "___ often do you play tennis?",
+          "options": [
+            "How",
+            "What",
+            "Why",
+            "Which"
+          ],
+          "answer": 0,
+          "note": "Sıklık → How often."
+        },
+        {
+          "type": "choice",
+          "text": "___ is the water so cold today?",
+          "options": [
+            "Why",
+            "How many",
+            "What",
+            "Which"
+          ],
+          "answer": 0,
+          "note": "Sebep → Why."
+        }
+      ]
+    },
+    {
+      "id": "a1-20-conjunctions-and-but-or",
+      "level": "A1",
+      "order": 20,
+      "title": "and, but, or — iki eşit parçayı birleştirmek",
+      "topic": "Coordinating conjunctions",
+      "canDo": "İki fikri, iki nesneyi ya da iki seçeneği tek cümlede birleştirebilirim.",
+      "covers": [
+        "CC"
+      ],
+      "concept": {
+        "summary": "and, but ve or iki eşit parçayı birleştirir: iki kelime, iki öbek ya da iki cümle. and ekler, but karşıtlık kurar, or seçenek sunar. İki cümleyi yalnızca virgülle birleştirmek yetmez; aralarına bağlaç girmelidir.",
+        "formula": {
+          "left": "parça + and / but / or",
+          "right": "+ parça"
+        },
+        "table": [
+          {
+            "form": "and",
+            "be": "ekleme",
+            "example": "I called and left a message."
+          },
+          {
+            "form": "but",
+            "be": "karşıtlık",
+            "example": "It is small but comfortable."
+          },
+          {
+            "form": "or",
+            "be": "seçenek",
+            "example": "Tea or coffee?"
+          },
+          {
+            "form": "virgül",
+            "be": "tek başına yetmez",
+            "example": "not: I like tea, I like coffee."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "I like tea and coffee.",
+          "tr": "Çayı da kahveyi de severim.",
+          "note": "and iki nesneyi birleştirir."
+        },
+        {
+          "en": "The room is small but clean.",
+          "tr": "Oda küçük ama temiz.",
+          "note": "but karşıtlık kurar."
+        },
+        {
+          "en": "You can pay by card or in cash.",
+          "tr": "Kartla ya da nakit ödeyebilirsin.",
+          "note": "or seçenek sunar."
+        },
+        {
+          "en": "She opened the door and looked outside.",
+          "tr": "Kapıyı açtı ve dışarı baktı.",
+          "note": "İki fiili birleştirir."
+        },
+        {
+          "en": "It is cheap but very good.",
+          "tr": "Ucuz ama çok iyi.",
+          "note": "Sıfatlar arasında but."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "I like tea, I like coffee.",
+          "right": "I like tea and coffee.",
+          "why": "İki cümleyi virgül tek başına birleştiremez."
+        },
+        {
+          "wrong": "The room is small and clean, but I do not like it because it is clean.",
+          "right": "The room is small but clean.",
+          "why": "Karşıtlık varsa and değil but gelir."
+        },
+        {
+          "wrong": "Do you want tea and coffee? Choose one.",
+          "right": "Do you want tea or coffee?",
+          "why": "Seçenek sunulurken or kullanılır."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "I was tired, ___ I finished the work.",
+          "options": [
+            "but",
+            "and so",
+            "because",
+            "or"
+          ],
+          "answer": 0,
+          "note": "Beklenmedik karşıtlık → but."
+        },
+        {
+          "type": "choice",
+          "text": "Would you like tea ___ coffee?",
+          "options": [
+            "or",
+            "and",
+            "but",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Seçenek → or."
+        },
+        {
+          "type": "choice",
+          "text": "Do you want tea ___ coffee?",
+          "options": [
+            "or",
+            "and",
+            "but",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Seçenek → or."
+        },
+        {
+          "type": "gap",
+          "text": "It was late, ___ we stayed.",
+          "options": [
+            "but",
+            "or",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Zıtlık → but."
+        },
+        {
+          "type": "choice",
+          "text": "She opened the door ___ looked outside.",
+          "options": [
+            "and",
+            "but",
+            "or",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Ekleme → and."
+        },
+        {
+          "type": "choice",
+          "text": "The film was long ___ interesting.",
+          "options": [
+            "but",
+            "or",
+            "and so",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Karşıtlık → but."
+        },
+        {
+          "type": "choice",
+          "text": "We can walk ___ take the bus.",
+          "options": [
+            "or",
+            "and",
+            "but",
+            "because"
+          ],
+          "answer": 0,
+          "note": "İki seçenek → or."
+        },
+        {
+          "type": "gap",
+          "text": "I bought bread ___ milk.",
+          "options": [
+            "and",
+            "but",
+            "or"
+          ],
+          "answer": 0,
+          "note": "Ekleme → and."
+        },
+        {
+          "type": "choice",
+          "text": "He called twice ___ nobody answered.",
+          "options": [
+            "but",
+            "or",
+            "and also",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Beklenmedik sonuç → but."
+        },
+        {
+          "type": "choice",
+          "text": "Bring a coat ___ an umbrella; it may rain.",
+          "options": [
+            "or",
+            "but",
+            "because",
+            "and so"
+          ],
+          "answer": 0,
+          "note": "Seçenek → or."
+        }
+      ]
+    },
+    {
+      "id": "a1-21-clause-conjunctions",
+      "level": "A1",
+      "order": 21,
+      "title": "because, when, before — cümlecik kuran bağlaçlar",
+      "topic": "Subordinating conjunctions and that-clauses",
+      "canDo": "Sebep ve zaman belirtebilir, düşüncemi think ve know ile aktarabilirim.",
+      "covers": [
+        "CL.when",
+        "CL_after.etc",
+        "CL.that.OMIT"
+      ],
+      "concept": {
+        "summary": "because sebep, when, before ve after zaman bildirir. Bu bağlaçlar kendi cümleciklerini kurar ve o cümlecik tek başına duramaz: \"Because it was raining.\" cümle değildir. when'li cümlecikte gelecekten söz edilse bile geniş zaman kullanılır. think, know, hope gibi fiillerden sonra gelen that günlük dilde düşürülebilir.",
+        "formula": {
+          "left": "cümle + because / when / before",
+          "right": "+ cümlecik"
+        },
+        "table": [
+          {
+            "form": "because",
+            "be": "sebep",
+            "example": "I stayed because it rained."
+          },
+          {
+            "form": "when",
+            "be": "zaman",
+            "example": "Call me when you arrive."
+          },
+          {
+            "form": "before / after",
+            "be": "önce / sonra",
+            "example": "I read before I sleep."
+          },
+          {
+            "form": "that",
+            "be": "düşürülebilir",
+            "example": "I think (that) you are right."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "We stayed at home because it was raining.",
+          "tr": "Yağmur yağdığı için evde kaldık.",
+          "note": "because sebep bildirir."
+        },
+        {
+          "en": "I brush my teeth before I go to bed.",
+          "tr": "Yatmadan önce dişlerimi fırçalarım.",
+          "note": "before kendi cümleciğini kurar."
+        },
+        {
+          "en": "I think you are right.",
+          "tr": "Bence haklısın.",
+          "note": "think'ten sonra that düşürülmüş."
+        },
+        {
+          "en": "Call me when you get home.",
+          "tr": "Eve varınca beni ara.",
+          "note": "when'li cümlecikte geniş zaman."
+        },
+        {
+          "en": "She was tired after she came back from work.",
+          "tr": "İşten döndükten sonra yorgundu.",
+          "note": "after ile zaman cümleciği."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Because it was raining. We stayed home.",
+          "right": "We stayed home because it was raining.",
+          "why": "because'lu parça tek başına cümle olmaz."
+        },
+        {
+          "wrong": "I will call you when I will arrive.",
+          "right": "I will call you when I arrive.",
+          "why": "when'li cümlecikte gelecek zaman kullanılmaz."
+        },
+        {
+          "wrong": "I think that are you right.",
+          "right": "I think that you are right.",
+          "why": "that'ten sonra soru düzeni değil düz cümle gelir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "She stayed home ___ she was ill.",
+          "options": [
+            "because",
+            "but",
+            "or",
+            "when to"
+          ],
+          "answer": 0,
+          "note": "Sebep → because."
+        },
+        {
+          "type": "choice",
+          "text": "Text me ___ you get home.",
+          "options": [
+            "when",
+            "but",
+            "or",
+            "because of"
+          ],
+          "answer": 0,
+          "note": "Zaman → when."
+        },
+        {
+          "type": "choice",
+          "text": "I know ___ you are busy today.",
+          "options": [
+            "that",
+            "what",
+            "which",
+            "who"
+          ],
+          "answer": 0,
+          "note": "know, think ve hope'tan sonra that gelir; günlük dilde düşürülebilir."
+        },
+        {
+          "type": "gap",
+          "text": "I went to bed early ___ I was tired.",
+          "options": [
+            "because",
+            "but",
+            "or"
+          ],
+          "answer": 0,
+          "note": "Sebep → because."
+        },
+        {
+          "type": "choice",
+          "text": "___ I was young, we lived in Bursa.",
+          "options": [
+            "When",
+            "But",
+            "Or",
+            "And"
+          ],
+          "answer": 0,
+          "note": "Zaman → when."
+        },
+        {
+          "type": "choice",
+          "text": "Wash your hands ___ you eat.",
+          "options": [
+            "before",
+            "but",
+            "or",
+            "because"
+          ],
+          "answer": 0,
+          "note": "Önce olan iş → before."
+        },
+        {
+          "type": "choice",
+          "text": "We went home ___ the film finished.",
+          "options": [
+            "after",
+            "but",
+            "or",
+            "and so"
+          ],
+          "answer": 0,
+          "note": "Sonra olan iş → after."
+        },
+        {
+          "type": "gap",
+          "text": "I hope ___ the weather is better tomorrow.",
+          "options": [
+            "that",
+            "what",
+            "which"
+          ],
+          "answer": 0,
+          "note": "hope + that."
+        },
+        {
+          "type": "choice",
+          "text": "I will write to you ___ I get there.",
+          "options": [
+            "when",
+            "when will",
+            "will when",
+            "that"
+          ],
+          "answer": 0,
+          "note": "when'li cümlecikte gelecek zaman kullanılmaz."
+        },
+        {
+          "type": "choice",
+          "text": "He is happy ___ his team won.",
+          "options": [
+            "because",
+            "but",
+            "or",
+            "when to"
+          ],
+          "answer": 0,
+          "note": "Sebep → because."
+        }
+      ]
+    }
+  ]
+}

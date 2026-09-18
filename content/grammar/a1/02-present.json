@@ -6,9 +6,9 @@
   },
   "lessons": [
     {
-      "id": "a1-07-some-any-no",
+      "id": "a1-08-some-any-no",
       "level": "A1",
-      "order": 7,
+      "order": 8,
       "title": "some, any, no",
       "topic": "Determiners: some / any / no",
       "canDo": "Miktarı belli olmayan şeylerden söz edebilirim.",
@@ -211,9 +211,9 @@
       ]
     },
     {
-      "id": "a1-08-present-simple-affirmative",
+      "id": "a1-09-present-simple-affirmative",
       "level": "A1",
-      "order": 8,
+      "order": 9,
       "title": "Geniş zaman — olumlu",
       "topic": "Present simple (affirmative), SVO order",
       "canDo": "Her gün yaptığım işleri ve genel doğruları anlatabilirim.",
@@ -417,9 +417,9 @@
       ]
     },
     {
-      "id": "a1-09-present-simple-negative-question",
+      "id": "a1-10-present-simple-negative-question",
       "level": "A1",
-      "order": 9,
+      "order": 10,
       "title": "Geniş zaman — olumsuz ve soru",
       "topic": "Present simple: do / does",
       "canDo": "Yapmadığım şeyleri söyleyebilir, başkasının alışkanlığını sorabilirim.",
@@ -618,9 +618,9 @@
       ]
     },
     {
-      "id": "a1-10-adverbs-of-frequency",
+      "id": "a1-11-adverbs-of-frequency",
       "level": "A1",
-      "order": 10,
+      "order": 11,
       "title": "always, usually, never",
       "topic": "Adverbs of frequency and intensifiers",
       "canDo": "Bir şeyi ne sıklıkta yaptığımı söyleyebilirim.",
@@ -824,9 +824,9 @@
       ]
     },
     {
-      "id": "a1-11-present-progressive",
+      "id": "a1-12-present-progressive",
       "level": "A1",
-      "order": 11,
+      "order": 12,
       "title": "Şimdiki zaman — şu anda",
       "topic": "Present progressive",
       "canDo": "Şu anda olup biteni anlatabilirim.",
@@ -1028,9 +1028,9 @@
       ]
     },
     {
-      "id": "a1-12-can",
+      "id": "a1-13-can",
       "level": "A1",
-      "order": 12,
+      "order": 13,
       "title": "can — yapabilmek",
       "topic": "Modal verb: can",
       "canDo": "Neyi yapabildiğimi söyleyebilir, izin ve ricada bulunabilirim.",

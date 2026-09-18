@@ -210,211 +210,9 @@
       ]
     },
     {
-      "id": "a1-02-be-negative-question",
+      "id": "a1-04-articles",
       "level": "A1",
-      "order": 2,
-      "title": "\"to be\" — olumsuz ve soru",
-      "topic": "Present simple: be (negative, interrogative)",
-      "canDo": "Bir şeyin öyle olmadığını söyleyebilir, basit sorular sorabilirim.",
-      "covers": [
-        "PP.I_am_not",
-        "PP.are_you",
-        "TA.PRESENT.be.NEG",
-        "TA.PRESENT.be.INT.AFF"
-      ],
-      "concept": {
-        "summary": "be cümlesinde olumsuzluk için be'den sonra not eklenir; soru için be öznenin önüne geçer. Ayrı bir yardımcı fiil (do) gerekmez — be zaten kendi işini görür.",
-        "formula": {
-          "left": "Özne + be + not",
-          "right": "Be + özne + ...?"
-        },
-        "table": [
-          {
-            "form": "olumsuz",
-            "be": "I am not / is not / are not",
-            "example": "She is not at home."
-          },
-          {
-            "form": "kısaltma",
-            "be": "isn't / aren't",
-            "example": "They aren't ready."
-          },
-          {
-            "form": "soru",
-            "be": "Am / Is / Are + özne",
-            "example": "Are you a student?"
-          }
-        ]
-      },
-      "examples": [
-        {
-          "en": "I am not tired.",
-          "tr": "Yorgun değilim.",
-          "note": "I am not'ın kısaltması I'm not'tır; \"amn't\" yoktur."
-        },
-        {
-          "en": "She isn't here.",
-          "tr": "O burada değil.",
-          "note": "is not → isn't."
-        },
-        {
-          "en": "Are you okay?",
-          "tr": "İyi misin?",
-          "note": "Soruda are başa geçer."
-        },
-        {
-          "en": "Is your sister a nurse?",
-          "tr": "Ablan hemşire mi?",
-          "note": "Özne uzun olsa da is en başta kalır."
-        },
-        {
-          "en": "We aren't late.",
-          "tr": "Geç kalmadık.",
-          "note": "are not → aren't."
-        }
-      ],
-      "mistakes": [
-        {
-          "wrong": "I not tired.",
-          "right": "I am not tired.",
-          "why": "not tek başına olumsuzluk yapmaz, be ile gelir."
-        },
-        {
-          "wrong": "You are a doctor?",
-          "right": "Are you a doctor?",
-          "why": "Yazıda soru, be'yi başa almakla kurulur; sadece soru işareti yetmez."
-        },
-        {
-          "wrong": "Do you a student?",
-          "right": "Are you a student?",
-          "why": "be cümlesinde do kullanılmaz."
-        }
-      ],
-      "exercises": [
-        {
-          "type": "choice",
-          "text": "She ___ my teacher. (olumsuz)",
-          "options": [
-            "isn't",
-            "aren't",
-            "not is",
-            "doesn't"
-          ],
-          "answer": 0,
-          "note": "she → is not → isn't."
-        },
-        {
-          "type": "choice",
-          "text": "___ they at school?",
-          "options": [
-            "Are",
-            "Is",
-            "Am",
-            "Do"
-          ],
-          "answer": 0,
-          "note": "they → are, soruda başa geçer."
-        },
-        {
-          "type": "choice",
-          "text": "I ___ hungry.",
-          "options": [
-            "am not",
-            "not am",
-            "isn't",
-            "don't"
-          ],
-          "answer": 0,
-          "note": "I am not; \"amn't\" diye bir biçim yok."
-        },
-        {
-          "type": "choice",
-          "text": "___ this your bag?",
-          "options": [
-            "Is",
-            "Are",
-            "Am",
-            "Does"
-          ],
-          "answer": 0,
-          "note": "this tekil → is."
-        },
-        {
-          "type": "gap",
-          "text": "We ___ from the same city. (olumsuz)",
-          "options": [
-            "aren't",
-            "isn't",
-            "am not"
-          ],
-          "answer": 0,
-          "note": "we → are not → aren't."
-        },
-        {
-          "type": "choice",
-          "text": "___ you a student?",
-          "options": [
-            "Are",
-            "Is",
-            "Am",
-            "Be"
-          ],
-          "answer": 0,
-          "note": "you → Are."
-        },
-        {
-          "type": "choice",
-          "text": "She ___ not here today.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "answer": 0,
-          "note": "she → is not."
-        },
-        {
-          "type": "choice",
-          "text": "___ your father a doctor?",
-          "options": [
-            "Is",
-            "Are",
-            "Am",
-            "Do"
-          ],
-          "answer": 0,
-          "note": "Tekil özne → Is."
-        },
-        {
-          "type": "gap",
-          "text": "We ___ not ready yet.",
-          "options": [
-            "are",
-            "is",
-            "am"
-          ],
-          "answer": 0,
-          "note": "we → are not."
-        },
-        {
-          "type": "choice",
-          "text": "___ I late?",
-          "options": [
-            "Am",
-            "Is",
-            "Are",
-            "Do"
-          ],
-          "answer": 0,
-          "note": "I → Am."
-        }
-      ]
-    },
-    {
-      "id": "a1-03-articles",
-      "level": "A1",
-      "order": 3,
+      "order": 4,
       "title": "a, an ve the",
       "topic": "Articles: indefinite and definite",
       "canDo": "Bir şeyden ilk kez söz edebilir, sonra aynı şeye geri dönebilirim.",
@@ -612,9 +410,9 @@
       ]
     },
     {
-      "id": "a1-04-this-that",
+      "id": "a1-05-this-that",
       "level": "A1",
-      "order": 4,
+      "order": 5,
       "title": "this, that, these, those",
       "topic": "Demonstratives",
       "canDo": "Yakındaki ve uzaktaki şeyleri işaret ederek anlatabilirim.",
@@ -816,9 +614,9 @@
       ]
     },
     {
-      "id": "a1-05-possessive-object-pronouns",
+      "id": "a1-06-possessive-object-pronouns",
       "level": "A1",
-      "order": 5,
+      "order": 6,
       "title": "my, your, his — me, you, him",
       "topic": "Possessive determiners and object pronouns",
       "canDo": "Bir şeyin kime ait olduğunu söyleyebilir, kişileri tekrar etmeden anabilirim.",
@@ -1021,9 +819,9 @@
       ]
     },
     {
-      "id": "a1-06-there-is-are",
+      "id": "a1-07-there-is-are",
       "level": "A1",
-      "order": 6,
+      "order": 7,
       "title": "there is / there are",
       "topic": "Existential there + be",
       "canDo": "Bir yerde ne olduğunu, ne olmadığını anlatabilirim.",
