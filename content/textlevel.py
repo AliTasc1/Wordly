@@ -109,7 +109,9 @@ IRREGULAR = {
     "swung": "swing", "tore": "tear", "torn": "tear", "trod": "tread",
     "wept": "weep", "wound": "wind", "withdrew": "withdraw",
     "withheld": "withhold", "wrung": "wring", "arose": "arise",
-    "awoke": "awake", "bore": "bear", "borne": "bear",
+    "awoke": "awake", "bore": "bear", "borne": "bear", "woken": "wake",
+    "breadth": "broad", "depth": "deep", "width": "wide", "strength": "strong",
+    "length": "long", "height": "high", "growth": "grow", "death": "die",
     "understood": "understand", "wrote": "write", "written": "write",
     "spoke": "speak", "spoken": "speak", "broke": "break", "broken": "break",
     "chose": "choose", "chosen": "choose", "drove": "drive", "driven": "drive",
@@ -227,6 +229,21 @@ DERIVATION = [
     ("ive", ["", "e"]),
     ("ation", ["e", ""]),
     ("ally", ["", "al"]),
+    # -ure: expose → exposure, please → pleasure
+    ("ure", ["", "e"]),
+    # -y ile biten kök: vary → variable, justify → justifiable
+    ("iable", ["y"]),
+    ("ifiable", ["ify"]),
+    ("ifiably", ["ify"]),
+    # Latince çoğullar: supernova → supernovae, criterion → criteria
+    ("ae", ["a"]),
+    ("i", ["us"]),
+    # -al, -or, -ship, -ically: institution → institutional, contribute →
+    # contributor, reader → readership, period → periodically
+    ("al", ["", "e"]),
+    ("or", ["", "e"]),
+    ("ship", [""]),
+    ("ically", ["", "y", "ic"]),
 ]
 
 PREFIXES = ("un", "re", "dis", "mis", "non", "over", "under", "pre", "in")
@@ -329,22 +346,37 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
     for token in tokens:
         if token in FREE or token in names:
             continue
-        # Yazım denetimi sözlükçeden ÖNCE geliyor. Sonra gelseydi, yazar
-        # İngiliz yazımlı bir kelimeyi sözlükçeye eklediğinde yazım hatası
-        # görünmez olurdu — "flavours" tam olarak böyle bir kez kaçtı. Çekimli
-        # biçim de taranıyor ki "flavours" kadar "flavour" da yakalansın.
-        spelling = next((f for f in candidates(token) if f in BRITISH), None)
-        if spelling:
-            british[token] = BRITISH[spelling]
-            continue
-        z_form = british_z(token)
-        if z_form and z_form in levels:
-            british[token] = z_form
-            continue
+
+        forms = candidates(token)
+        # Sıra önemli. Önce sözlükte karşılık aranıyor: "analyses" hem
+        # `analyse`ın (İngiliz yazımı) hem `analysis`in çekimi olabilir, ve
+        # ikincisi doğru Amerikan yazımıdır. Yazım denetimini öne alsaydık
+        # doğru kelimeyi hatalı ilan ederdik.
+        found = None
+        for form in forms:
+            level_of = levels.get(form)
+            if level_of and (found is None or ORDER.index(level_of) < ORDER.index(found)):
+                found = level_of
+
+        if found is None:
+            # Sözlükte karşılığı yok: İngiliz yazımı olabilir. Bu denetim
+            # sözlükçeden ÖNCE geliyor, yoksa yazar yanlış yazımı sözlükçeye
+            # ekleyerek hatayı görünmez kılabilirdi — "flavours" böyle kaçtı.
+            spelling = next((f for f in forms if f in BRITISH), None)
+            if spelling:
+                # Öneriyi mümkünse kelimenin kendi çekimiyle ver: "organisations"
+                # için "organize" değil "organizations" demek daha yardımcı.
+                british[token] = british_z(token) or BRITISH[spelling]
+                continue
+            z_form = british_z(token)
+            if z_form and any(f in levels for f in candidates(z_form)):
+                british[token] = z_form
+                continue
+
         # Sözlükçe yalın biçimi veriyor (gym), metin çekimli kullanıyor (gyms).
         # Çekimli biçimi de tanınmış saymazsak yazar aynı kelimeyi sözlükçeye
         # iki kez yazmak zorunda kalır.
-        if any(form in known for form in candidates(token)):
+        if any(form in known for form in forms):
             continue
         # Aday biçimlerin EN ERKEN seviyesi alınıyor, ilk bulunan değil.
         # "walking" sözlükte A2'de isim olarak da duruyor ama "walk" A1'de

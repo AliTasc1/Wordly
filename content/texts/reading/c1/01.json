@@ -1,0 +1,156 @@
+{
+  "_meta": { "batch": "c1-reading-01", "level": "C1", "range": "Parça 1-5" },
+  "items": [
+    {
+      "id": "c1-r-01",
+      "level": "C1",
+      "order": 1,
+      "kind": "reading",
+      "title": "Tahmin edilebilirlik yanılgısı",
+      "titleEn": "The Illusion of Predictability",
+      "minutes": 6,
+      "names": [],
+      "text": "Ask anyone who has lived through a financial crisis and they will describe it as something that was obviously coming. The warnings were everywhere, the reasoning goes; the authorities simply refused to listen. This account is comforting because it implies that the next crisis can be avoided by paying attention. It is also, in most cases, a reconstruction. What actually existed beforehand was a large number of warnings about a large number of possible disasters, most of which never occurred. Once one of them does occur, the human mind performs an operation so automatic that it feels like memory rather than interpretation: it deletes the unrealized warnings and promotes the remaining one to the status of a signal that anybody could have read. Psychologists call the effect hindsight bias, and it has been demonstrated in settings ranging from medical diagnosis to sports commentary. Its practical consequences are considerable. Institutions that believe the last failure was predictable will build systems designed to catch that particular failure, which is rarely the one that arrives next. Worse, the belief makes honest decision-making under uncertainty look like incompetence, since any official who says a risk was genuinely unforeseeable will be assumed to be making an excuse. A more useful discipline, though a much less satisfying one, is to record predictions in writing before the event, with the degree of confidence attached. Organizations that have adopted this practice report an uncomfortable discovery: their experts are neither as accurate nor as consistent as everyone, including the experts, remembered them being.",
+      "glossary": [
+        { "w": "reconstruction", "tr": "sonradan kurgulama" },
+        { "w": "unrealized", "tr": "gerçekleşmemiş" },
+        { "w": "hindsight bias", "tr": "sonradan bilme yanlılığı" },
+        { "w": "diagnosis", "tr": "teşhis" },
+        { "w": "unforeseeable", "tr": "öngörülemez" },
+        { "w": "incompetence", "tr": "yetersizlik, beceriksizlik" },
+        { "w": "bias", "tr": "yanlılık" },
+        { "w": "hindsight", "tr": "sonradan görme, olay sonrası bakış" },
+        { "w": "commentary", "tr": "yorum, spikerlik" },
+        { "w": "denials", "tr": "yalanlamalar" }
+      ],
+      "questions": [
+        { "q": "Why is the usual account comforting?", "options": ["It implies the next crisis can be avoided", "It blames nobody", "It is supported by evidence", "It is simple to explain"], "answer": 0, "note": "\"It implies that the next crisis can be avoided by paying attention.\"" },
+        { "q": "What actually existed before the crisis?", "options": ["Many warnings about many possible disasters", "One clear warning", "No warnings at all", "Official denials"], "answer": 0, "note": "Gerçekleşmeyen pek çok uyarı vardı." },
+        { "q": "What does the mind do after the event?", "options": ["It deletes the warnings that did not come true", "It forgets the event", "It invents new warnings", "It blames the authorities"], "answer": 0, "note": "\"It deletes the unrealized warnings and promotes the remaining one.\"" },
+        { "q": "What institutional mistake follows from the bias?", "options": ["Building systems for the last failure", "Ignoring all warnings", "Hiring more experts", "Publishing fewer reports"], "answer": 0, "note": "Geçen sefer olan başarısızlığı yakalamaya ayarlı sistemler kuruluyor." },
+        { "q": "What discipline does the author recommend?", "options": ["Recording predictions with confidence levels beforehand", "Trusting experienced officials", "Avoiding public statements", "Repeating earlier reports"], "answer": 0, "note": "Olaydan önce yazılı ve güven derecesi belirtilmiş tahmin." },
+        { "q": "What did organizations discover?", "options": ["Their experts were less accurate than remembered", "Predictions were always right", "Records were unnecessary", "Confidence levels are meaningless"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-02",
+      "level": "C1",
+      "order": 2,
+      "kind": "reading",
+      "title": "Kurumun hafızası",
+      "titleEn": "Institutional Memory",
+      "minutes": 6,
+      "names": [],
+      "text": "When a long-serving employee retires, the organization loses two things. The first is obvious: a set of skills, which can be replaced through recruitment. The second is harder to name and almost impossible to advertise for. It consists of knowledge about why particular arrangements exist. Every institution accumulates rules that appear arbitrary to newcomers, and a proportion of them genuinely are. Others are the residue of an expensive mistake that nobody now remembers making. The person who can distinguish between the two is usually someone who was present when the mistake occurred. Once that person leaves, the organization faces an unattractive choice: preserve every rule out of caution, and gradually become unable to move, or clear away the ones that look pointless and periodically rediscover why they existed. Consultants tend to recommend the second, partly because the first produces no visible achievement. The most careful organizations attempt a third approach. Before removing a rule, they require somebody to write down what the rule appears to prevent, and to circulate that note widely enough that anyone who remembers the original reason has an opportunity to object. The method is slow and is frequently ignored under pressure, but where it has been maintained it converts institutional memory from something stored in individuals into something stored in a process, which retirement cannot take away. The difficulty is that the benefit appears only in the form of mistakes that were never repeated, and nobody is promoted for those. A practice whose value is invisible tends to survive only where somebody senior keeps insisting on it, which is itself a kind of institutional memory and equally fragile.",
+      "glossary": [
+        { "w": "recruitment", "tr": "işe alım" },
+        { "w": "arbitrary", "tr": "keyfî" },
+        { "w": "residue", "tr": "kalıntı" },
+        { "w": "consultants", "tr": "danışmanlar" },
+        { "w": "circulate", "tr": "dolaştırmak, duyurmak" },
+        { "w": "retirement", "tr": "emeklilik" },
+        { "w": "morale", "tr": "moral, çalışma şevki" },
+        { "w": "fragile", "tr": "kırılgan" }
+      ],
+      "questions": [
+        { "q": "What is the first loss when an employee retires?", "options": ["A set of skills", "Knowledge of reasons", "Client relationships", "Team morale"], "answer": 0, "note": "\"The first is obvious: a set of skills.\"" },
+        { "q": "What does the second kind of knowledge consist of?", "options": ["Why particular arrangements exist", "How to use the systems", "Who the customers are", "Where documents are kept"], "answer": 0, "note": "\"Knowledge about why particular arrangements exist.\"" },
+        { "q": "What are some apparently arbitrary rules?", "options": ["The residue of a forgotten mistake", "Legal requirements", "Personal preferences", "Copies of other firms' rules"], "answer": 0, "note": "\"The residue of an expensive mistake that nobody now remembers making.\"" },
+        { "q": "What is the risk of preserving every rule?", "options": ["The organization becomes unable to move", "Costs rise sharply", "Staff leave", "Customers complain"], "answer": 0, "note": "\"Gradually become unable to move.\"" },
+        { "q": "What does the third approach require?", "options": ["Writing down what a rule appears to prevent", "Interviewing retired staff", "Keeping all rules for ten years", "Hiring consultants"], "answer": 0, "note": "Kural kaldırılmadan önce neyi önlediği yazılıp duyuruluyor." },
+        { "q": "What is the benefit of the third approach?", "options": ["Memory is stored in a process, not in individuals", "It is faster", "It costs nothing", "It pleases consultants"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-03",
+      "level": "C1",
+      "order": 3,
+      "kind": "reading",
+      "title": "Çevirinin görünmezliği",
+      "titleEn": "The Invisibility of Translation",
+      "minutes": 6,
+      "names": [],
+      "text": "A translation is generally praised when it does not feel like one. Reviewers commend a novel for reading fluently in its new language, which sounds like an obvious compliment until you consider what it requires. To produce that fluency the translator must remove everything that would remind the reader of the original: unfamiliar rhythms, sentence structures that resist the target language, references that would demand a footnote. The result is a text that the reader can absorb without effort, and which quietly conceals the labor that produced it. A number of translators have argued that this convention does the original a disservice. A novel written in a language with a different relationship to time or formality is not simply the same story in other words; the strangeness is part of what is being communicated. Translations that preserve some of that strangeness are harder to read and are routinely criticized as clumsy, even when the clumsiness is faithful. The dispute is not merely aesthetic. Publishers rarely name translators on covers, and contracts frequently deny them royalties, arrangements that follow logically from the belief that a translator transfers a text rather than writes one. Where campaigns have succeeded in putting translators' names on covers, sales have not fallen, which suggests the invisibility was never a commercial necessity so much as an inherited habit that nobody had been asked to defend. The habit is now weakening for a practical reason as well as a moral one. Readers who follow a translator across several authors have begun to treat that name as a guide to quality, in the way they once followed an editor or a publishing house. A profession that spent a century being praised for disappearing may turn out to have a readership of its own.",
+      "glossary": [
+        { "w": "commend", "tr": "övmek" },
+        { "w": "footnote", "tr": "dipnot" },
+        { "w": "conceals", "tr": "gizler" },
+        { "w": "disservice", "tr": "kötülük, zarar" },
+        { "w": "clumsy", "tr": "beceriksiz, hantal" },
+        { "w": "royalties", "tr": "telif payı" },
+        { "w": "inherited", "tr": "devralınmış" },
+        { "w": "invisibility", "tr": "görünmezlik" },
+        { "w": "clumsiness", "tr": "hantallık, beceriksizlik" }
+      ],
+      "questions": [
+        { "q": "When is a translation usually praised?", "options": ["When it does not feel like a translation", "When it is literal", "When it is short", "When it keeps footnotes"], "answer": 0, "note": "İlk cümle." },
+        { "q": "What must the translator remove to achieve fluency?", "options": ["Anything reminding the reader of the original", "All difficult vocabulary", "The author's name", "Long chapters"], "answer": 0, "note": "Yabancı ritimler, dirençli yapılar, dipnot gerektiren göndermeler." },
+        { "q": "What do some translators argue?", "options": ["The strangeness is part of the message", "Fluency is impossible", "Originals should not be translated", "Readers prefer footnotes"], "answer": 0, "note": "\"The strangeness is part of what is being communicated.\"" },
+        { "q": "How are faithful but strange translations received?", "options": ["Criticized as clumsy", "Widely praised", "Ignored completely", "Given prizes"], "answer": 0, "note": "\"Routinely criticized as clumsy, even when the clumsiness is faithful.\"" },
+        { "q": "What follows from seeing translation as transfer?", "options": ["No name on the cover and no royalties", "Higher fees", "Longer deadlines", "More editing"], "answer": 0, "note": "Bu inançtan mantıken bu düzenlemeler çıkıyor." },
+        { "q": "What happened when translators were named?", "options": ["Sales did not fall", "Sales collapsed", "Publishers lost money", "Readers complained"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-04",
+      "level": "C1",
+      "order": 4,
+      "kind": "reading",
+      "title": "Gürültünün maliyeti",
+      "titleEn": "The Cost of Noise",
+      "minutes": 6,
+      "names": [],
+      "text": "Noise is the pollutant that legislation reaches last, partly because it leaves no residue. Smoke can be photographed and contaminated water can be sampled, but a sound that damaged somebody's sleep two hours ago has vanished entirely. This has consequences for how the harm is treated. Where air quality is monitored continuously and published, noise is typically measured after a complaint, at a time chosen by the authority, and expressed as an average that smooths away exactly the events that cause the damage. A road that is silent for six hours and unbearable for twenty minutes can produce a respectable average. Medical research has steadily strengthened the case for taking the problem seriously. Long-term exposure to traffic noise is associated with elevated blood pressure and with disturbances to sleep architecture that persist even when the sleeper reports no awareness of being woken. The mechanism appears to be that the auditory system does not switch off; it continues to assess sounds for threat throughout the night. Remedies exist and are mostly unglamorous: quieter road surfaces, lower speed limits, restrictions on night deliveries, and building regulations that treat sound insulation as seriously as heat insulation. What is missing is not technology but a way of registering the harm, since a population that sleeps badly rarely knows what it is losing and therefore rarely demands anything. A few cities have begun to publish continuous noise measurements in the same form as air quality data, street by street and hour by hour. The effect has been immediate and slightly awkward for the authorities, because residents who can point at a chart stop being treated as complainers and start being treated as witnesses.",
+      "glossary": [
+        { "w": "pollutant", "tr": "kirletici" },
+        { "w": "legislation", "tr": "yasal düzenleme" },
+        { "w": "contaminated", "tr": "kirlenmiş" },
+        { "w": "elevated", "tr": "yükselmiş" },
+        { "w": "auditory", "tr": "işitsel" },
+        { "w": "insulation", "tr": "yalıtım" },
+        { "w": "unglamorous", "tr": "göz alıcı olmayan" },
+        { "w": "residue", "tr": "kalıntı" }
+      ],
+      "questions": [
+        { "q": "Why does legislation reach noise last?", "options": ["It leaves no residue", "It is not harmful", "It is expensive to measure", "Nobody complains"], "answer": 0, "note": "İlk cümle." },
+        { "q": "What is the problem with averages?", "options": ["They smooth away the damaging events", "They are illegal", "They are hard to calculate", "They exclude traffic"], "answer": 0, "note": "Yirmi dakikalık dayanılmaz gürültü ortalamada kayboluyor." },
+        { "q": "What does long-term exposure affect?", "options": ["Blood pressure and sleep architecture", "Hearing only", "Memory only", "Appetite"], "answer": 0, "note": "\"Elevated blood pressure and ... disturbances to sleep architecture.\"" },
+        { "q": "Why does sleep suffer even without awareness?", "options": ["The auditory system keeps assessing threat", "The sleeper wakes fully", "Noise causes dreams", "The body needs silence to breathe"], "answer": 0, "note": "İşitme sistemi gece boyunca kapanmıyor." },
+        { "q": "What does the author say is missing?", "options": ["A way of registering the harm", "Technology", "Money", "Medical evidence"], "answer": 0, "note": "\"What is missing is not technology but a way of registering the harm.\"" },
+        { "q": "Why do affected populations rarely demand action?", "options": ["They do not know what they are losing", "They are compensated", "They move away", "They prefer noise"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c1-r-05",
+      "level": "C1",
+      "order": 5,
+      "kind": "reading",
+      "title": "Amatörün geri dönüşü",
+      "titleEn": "The Return of the Amateur",
+      "minutes": 6,
+      "names": [],
+      "text": "For most of the twentieth century, expertise moved in one direction. A discipline professionalised, established qualifications, and the amateurs who had founded it were politely shown to the door. Astronomy is the standard example: the wealthy enthusiast with a private telescope gave way to institutions with instruments no individual could afford. What has happened over the past two decades is therefore unexpected. Amateur astronomers now contribute a substantial proportion of observations of variable stars and are frequently the first to report a supernova, because professional telescopes are scheduled months in advance and cannot simply look at whatever happens to be interesting tonight. Similar patterns appear elsewhere. Volunteers with modest equipment record birdsong across whole countries, producing datasets that no funded project could match for coverage. The relationship is not without friction. Professionals complain, sometimes justifiably, about data collected without consistent method, and amateurs complain that their contributions are absorbed into papers where they appear, if at all, in an acknowledgement. The collaborations that function best have an explicit division of labor: the amateurs supply breadth and persistence, the professionals supply instruments and analysis, and both are named. What makes the arrangement possible is not goodwill but a particular kind of problem — one where the limiting factor is attention distributed over time and space, which is precisely the resource that institutions find hardest to buy. It is worth noticing that this reverses the usual anxiety about volunteers. The fear was always that unpaid contributors would undercut professional work; what has happened instead is that they have occupied the part of the field professionals were structurally unable to reach.",
+      "glossary": [
+        { "w": "professionalised", "tr": "profesyonelleşti" },
+        { "w": "qualifications", "tr": "yeterlilikler, diplomalar" },
+        { "w": "supernova", "tr": "süpernova" },
+        { "w": "datasets", "tr": "veri kümeleri" },
+        { "w": "friction", "tr": "sürtüşme" },
+        { "w": "acknowledgement", "tr": "teşekkür bölümü" },
+        { "w": "persistence", "tr": "süreklilik, ısrar" },
+        { "w": "expertise", "tr": "uzmanlık" },
+        { "w": "explicit", "tr": "açık, açıkça belirtilmiş" },
+        { "w": "birdsong", "tr": "kuş sesi" },
+        { "w": "supernovae", "tr": "süpernovalar" }
+      ],
+      "questions": [
+        { "q": "What happened to amateurs during the twentieth century?", "options": ["They were pushed out as disciplines professionalised", "They took control", "They funded institutions", "They were given qualifications"], "answer": 0, "note": "\"The amateurs who had founded it were politely shown to the door.\"" },
+        { "q": "Why can amateurs report supernovae first?", "options": ["Professional telescopes are scheduled in advance", "They have better instruments", "They work at night", "They are more numerous"], "answer": 0, "note": "Profesyonel teleskoplar aylar öncesinden programlanıyor." },
+        { "q": "What do volunteer birdsong projects achieve?", "options": ["Coverage no funded project could match", "Higher accuracy", "Cheaper equipment", "Faster analysis"], "answer": 0, "note": "\"Producing datasets that no funded project could match for coverage.\"" },
+        { "q": "What do amateurs complain about?", "options": ["Appearing only in an acknowledgement", "Poor equipment", "Lack of training", "Long hours"], "answer": 0, "note": "Katkıları makalelerde ancak teşekkür bölümünde görünüyor." },
+        { "q": "What do the best collaborations have?", "options": ["An explicit division of labor", "Equal funding", "The same instruments", "No professionals"], "answer": 0, "note": "\"An explicit division of labor.\"" },
+        { "q": "What makes such arrangements possible?", "options": ["The limiting factor is attention over time and space", "Amateurs work free of charge", "Institutions lack money", "Equipment is cheap"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}
