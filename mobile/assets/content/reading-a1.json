@@ -652,5 +652,1350 @@
     "note": "\"She draws very well.\""
    }
   ]
+ },
+ {
+  "id": "a1-r-11",
+  "level": "A1",
+  "order": 11,
+  "kind": "reading",
+  "title": "En yakın arkadaşım",
+  "titleEn": "My Best Friend",
+  "minutes": 2,
+  "names": [
+   "Elif",
+   "Bursa"
+  ],
+  "text": "My best friend is Elif. We are in the same class. She is seventeen years old and she lives near my house. Elif is tall and she has long black hair. She is very funny. We walk to school together every morning. After school we do our homework at her house. Her mother makes good cakes. On Saturdays we go to the park or we watch a film. Elif wants to be a doctor. She reads many books about the body. I am not good at science but she helps me. She is a very good friend.",
+  "textTr": "En yakın arkadaşım Elif. Aynı sınıftayız. On yedi yaşında ve evimin yakınında oturuyor. Elif uzun boylu ve uzun siyah saçları var. Çok komik biri. Her sabah birlikte okula yürüyoruz. Okuldan sonra ödevlerimizi onun evinde yapıyoruz. Annesi güzel kekler yapıyor. Cumartesileri parka gidiyoruz ya da film izliyoruz. Elif doktor olmak istiyor. Vücut hakkında çok kitap okuyor. Ben fende iyi değilim ama o bana yardım ediyor. Çok iyi bir arkadaş.",
+  "glossary": [
+   {
+    "w": "science",
+    "tr": "fen, bilim"
+   },
+   {
+    "w": "film",
+    "tr": "film"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How old is Elif?",
+    "options": [
+     "Eighteen",
+     "Seven",
+     "Fifteen",
+     "Seventeen"
+    ],
+    "answer": 3,
+    "note": "\"She is seventeen years old.\""
+   },
+   {
+    "q": "Where do they do their homework?",
+    "options": [
+     "In the park",
+     "At Elif's house",
+     "In the library",
+     "At school"
+    ],
+    "answer": 1,
+    "note": "\"We do our homework at her house.\""
+   },
+   {
+    "q": "What does Elif want to be?",
+    "options": [
+     "A doctor",
+     "A nurse",
+     "A writer",
+     "A teacher"
+    ],
+    "answer": 0,
+    "note": "\"Elif wants to be a doctor.\""
+   },
+   {
+    "q": "Who makes good cakes?",
+    "options": [
+     "My sister",
+     "Elif's mother",
+     "Elif",
+     "My mother"
+    ],
+    "answer": 1,
+    "note": "\"Her mother makes good cakes.\""
+   },
+   {
+    "q": "What do they do on Saturdays?",
+    "options": [
+     "Work in a shop",
+     "Go to the park or watch a film",
+     "Go to school",
+     "Visit the doctor"
+    ],
+    "answer": 1,
+    "note": "\"On Saturdays we go to the park or we watch a film.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-12",
+  "level": "A1",
+  "order": 12,
+  "kind": "reading",
+  "title": "Evde kahvaltı",
+  "titleEn": "Breakfast at Home",
+  "minutes": 2,
+  "names": [
+   "Kerem"
+  ],
+  "text": "In my family we always eat breakfast together. It is my favorite time of the day. My mother makes tea. My father buys bread from the shop on the corner. We eat cheese, olives, eggs and tomatoes. My little brother Kerem does not like tomatoes. He only eats bread and honey. On school days breakfast is short because we are in a hurry. But on Sundays we sit at the table for one hour. We talk about the week. My grandmother comes and she brings fruit from her garden.",
+  "textTr": "Ailemizde kahvaltıyı hep birlikte ederiz. Günün en sevdiğim vakti. Annem çay yapar. Babam köşedeki dükkândan ekmek alır. Peynir, zeytin, yumurta ve domates yeriz. Küçük kardeşim Kerem domates sevmez. Sadece ekmek ve bal yer. Okul günlerinde kahvaltı kısa sürer çünkü acelemiz olur. Ama pazar günleri bir saat masada otururuz. Haftayı konuşuruz. Büyükannem gelir ve bahçesinden meyve getirir.",
+  "glossary": [
+   {
+    "w": "olives",
+    "tr": "zeytin"
+   },
+   {
+    "w": "honey",
+    "tr": "bal"
+   },
+   {
+    "w": "in a hurry",
+    "tr": "acele"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who makes the tea?",
+    "options": [
+     "The father",
+     "The mother",
+     "Kerem",
+     "The grandmother"
+    ],
+    "answer": 1,
+    "note": "\"My mother makes tea.\""
+   },
+   {
+    "q": "What does Kerem not like?",
+    "options": [
+     "Tomatoes",
+     "Honey",
+     "Bread",
+     "Cheese"
+    ],
+    "answer": 0,
+    "note": "\"My little brother Kerem does not like tomatoes.\""
+   },
+   {
+    "q": "Why is breakfast short on school days?",
+    "options": [
+     "There is no bread",
+     "They are in a hurry",
+     "It is not a school day",
+     "The shop is closed"
+    ],
+    "answer": 1,
+    "note": "\"Breakfast is short because we are in a hurry.\""
+   },
+   {
+    "q": "How long is breakfast on Sundays?",
+    "options": [
+     "Ten minutes",
+     "Half an hour",
+     "Two hours",
+     "One hour"
+    ],
+    "answer": 3,
+    "note": "\"On Sundays we sit at the table for one hour.\""
+   },
+   {
+    "q": "What does the grandmother bring?",
+    "options": [
+     "Eggs",
+     "Fruit from her garden",
+     "Bread",
+     "Tea"
+    ],
+    "answer": 1,
+    "note": "\"She brings fruit from her garden.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-13",
+  "level": "A1",
+  "order": 13,
+  "kind": "reading",
+  "title": "Okula giden otobüs",
+  "titleEn": "The Bus to School",
+  "minutes": 2,
+  "names": [
+   "Mehmet"
+  ],
+  "text": "I take the bus to school every day. The bus stop is in front of the bank. I wait there at half past seven. The bus is number twelve. In the morning it is always full. Sometimes I stand for twenty minutes. The driver is an old man. His name is Mehmet and he says good morning to every student. I like him. I sit near the window and I look at the street. I see the same shops and the same people every day. The bus is not fast but it is cheap.",
+  "textTr": "Her gün okula otobüsle giderim. Otobüs durağı bankanın önünde. Yedi buçukta orada beklerim. Otobüsün numarası on iki. Sabahları hep doludur. Bazen yirmi dakika ayakta dururum. Şoför yaşlı bir adam. Adı Mehmet ve her öğrenciye günaydın der. Onu severim. Pencerenin yanına otururum ve sokağa bakarım. Her gün aynı dükkânları ve aynı insanları görürüm. Otobüs hızlı değil ama ucuz.",
+  "glossary": [
+   {
+    "w": "bus stop",
+    "tr": "otobüs durağı"
+   },
+   {
+    "w": "driver",
+    "tr": "şoför"
+   },
+   {
+    "w": "full",
+    "tr": "dolu"
+   },
+   {
+    "w": "cheap",
+    "tr": "ucuz"
+   },
+   {
+    "w": "empty",
+    "tr": "boş"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is the bus stop?",
+    "options": [
+     "In the park",
+     "In front of the bank",
+     "Near the school",
+     "Next to a shop"
+    ],
+    "answer": 1,
+    "note": "\"The bus stop is in front of the bank.\""
+   },
+   {
+    "q": "What time does the writer wait?",
+    "options": [
+     "Half past eight",
+     "Twelve o'clock",
+     "Half past seven",
+     "Seven o'clock"
+    ],
+    "answer": 2,
+    "note": "\"I wait there at half past seven.\""
+   },
+   {
+    "q": "Why does the writer sometimes stand?",
+    "options": [
+     "The bus is full",
+     "He wants to stand",
+     "The bus is small",
+     "There are no seats on the bus"
+    ],
+    "answer": 0,
+    "note": "\"In the morning it is always full.\""
+   },
+   {
+    "q": "What does the driver do every morning?",
+    "options": [
+     "He plays music",
+     "He reads a book",
+     "He drives fast",
+     "He says good morning"
+    ],
+    "answer": 3,
+    "note": "\"He says good morning to every student.\""
+   },
+   {
+    "q": "What does the writer say about the bus?",
+    "options": [
+     "It is slow but cheap",
+     "It is always empty",
+     "It is fast and cheap",
+     "It is fast but expensive"
+    ],
+    "answer": 0,
+    "note": "\"The bus is not fast but it is cheap.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-14",
+  "level": "A1",
+  "order": 14,
+  "kind": "reading",
+  "title": "Kedim",
+  "titleEn": "My Cat",
+  "minutes": 2,
+  "names": [
+   "Duman"
+  ],
+  "text": "I have a cat. Her name is Duman. She is three years old and she is gray and white. We found her in the street two years ago. She was very small and very thin. Now she is big and she eats a lot. Duman sleeps all day on my bed. At night she is not tired and she runs in the house. She likes fish and she does not like water. When I come home from school she waits at the door. She is not a quiet cat. She talks to me and she wants food. I love her very much.",
+  "textTr": "Bir kedim var. Adı Duman. Üç yaşında, gri ve beyaz. Onu iki yıl önce sokakta bulduk. Çok küçüktü ve çok zayıftı. Şimdi büyük ve çok yiyor. Duman bütün gün yatağımda uyuyor. Geceleri yorgun olmuyor ve evde koşuyor. Balığı seviyor, suyu sevmiyor. Okuldan eve geldiğimde kapıda bekliyor. Sessiz bir kedi değil. Benimle konuşuyor ve yemek istiyor. Onu çok seviyorum.",
+  "glossary": [
+   {
+    "w": "thin",
+    "tr": "zayıf, ince"
+   },
+   {
+    "w": "gray",
+    "tr": "gri"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How old is the cat?",
+    "options": [
+     "Three",
+     "Two",
+     "Five",
+     "One"
+    ],
+    "answer": 0,
+    "note": "\"She is three years old.\""
+   },
+   {
+    "q": "Where did they find her?",
+    "options": [
+     "In the garden",
+     "In the street",
+     "At a shop",
+     "At school"
+    ],
+    "answer": 1,
+    "note": "\"We found her in the street two years ago.\""
+   },
+   {
+    "q": "What does the cat do all day?",
+    "options": [
+     "She plays",
+     "She eats",
+     "She runs",
+     "She sleeps"
+    ],
+    "answer": 3,
+    "note": "\"Duman sleeps all day on my bed.\""
+   },
+   {
+    "q": "What does the cat not like?",
+    "options": [
+     "Food",
+     "The bed",
+     "Fish",
+     "Water"
+    ],
+    "answer": 3,
+    "note": "\"She does not like water.\""
+   },
+   {
+    "q": "Where does the cat wait after school?",
+    "options": [
+     "At the door",
+     "In the street",
+     "In the kitchen",
+     "On the bed"
+    ],
+    "answer": 0,
+    "note": "\"She waits at the door.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-15",
+  "level": "A1",
+  "order": 15,
+  "kind": "reading",
+  "title": "Parkta bir gün",
+  "titleEn": "A Day in the Park",
+  "minutes": 2,
+  "names": [
+   "Ayse"
+  ],
+  "text": "There is a big park near my house. On Sunday morning I go there with my sister Ayse. Many people are in the park. Old men play games at the tables. Children run and play football. Some people walk with their dogs. We sit on a bench under a tree and we eat our sandwiches. There is a small lake and we look at the birds. In summer the park is very green. In winter it is cold and there are not many people. But I like the park in every season.",
+  "textTr": "Evimin yakınında büyük bir park var. Pazar sabahı oraya kız kardeşim Ayşe ile giderim. Parkta çok insan olur. Yaşlı adamlar masalarda oyun oynar. Çocuklar koşar ve futbol oynar. Bazı insanlar köpekleriyle yürür. Bir ağacın altındaki banka otururuz ve sandviçlerimizi yeriz. Küçük bir göl var ve kuşlara bakarız. Yazın park çok yeşil olur. Kışın soğuk olur ve çok insan olmaz. Ama parkı her mevsim severim.",
+  "glossary": [
+   {
+    "w": "bench",
+    "tr": "bank, sıra"
+   },
+   {
+    "w": "lake",
+    "tr": "göl"
+   },
+   {
+    "w": "season",
+    "tr": "mevsim"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When does the writer go to the park?",
+    "options": [
+     "On Saturday evening",
+     "On Monday",
+     "On Sunday morning",
+     "Every day"
+    ],
+    "answer": 2,
+    "note": "\"On Sunday morning I go there with my sister.\""
+   },
+   {
+    "q": "What do the old men do?",
+    "options": [
+     "They play football",
+     "They walk with dogs",
+     "They eat sandwiches",
+     "They play games at the tables"
+    ],
+    "answer": 3,
+    "note": "\"Old men play games at the tables.\""
+   },
+   {
+    "q": "Where do the sisters sit?",
+    "options": [
+     "On the grass",
+     "At a table",
+     "On a bench under a tree",
+     "Near the lake"
+    ],
+    "answer": 2,
+    "note": "\"We sit on a bench under a tree.\""
+   },
+   {
+    "q": "What is the park like in winter?",
+    "options": [
+     "Closed",
+     "Green and full",
+     "Hot and busy",
+     "Cold and quiet"
+    ],
+    "answer": 3,
+    "note": "\"In winter it is cold and there are not many people.\""
+   },
+   {
+    "q": "How does the writer feel about the park?",
+    "options": [
+     "She likes it only in summer",
+     "She does not like it",
+     "She likes it in every season",
+     "She goes there in winter only"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "a1-r-16",
+  "level": "A1",
+  "order": 16,
+  "kind": "reading",
+  "title": "Büyükannem",
+  "titleEn": "My Grandmother",
+  "minutes": 2,
+  "names": [
+   "Nene"
+  ],
+  "text": "My grandmother lives in a small house with a big garden. She is seventy-two years old. Every summer I stay with her for two weeks. In the morning we work in the garden. She has tomatoes, beans and flowers. She knows the name of every plant. In the afternoon it is hot and we sit inside. She tells me stories about her village. Her mother and father were farmers. She did not go to school after twelve. But she reads the newspaper every day and she is very clever.",
+  "textTr": "Büyükannem büyük bahçeli küçük bir evde yaşıyor. Yetmiş iki yaşında. Her yaz iki hafta onda kalırım. Sabahları bahçede çalışırız. Domatesi, fasulyesi ve çiçekleri var. Her bitkinin adını bilir. Öğleden sonra hava sıcak olur ve içeride otururuz. Bana köyüyle ilgili hikâyeler anlatır. Annesi ve babası çiftçiymiş. On ikiden sonra okula gitmemiş. Ama her gün gazete okur ve çok zekidir.",
+  "glossary": [
+   {
+    "w": "beans",
+    "tr": "fasulye"
+   },
+   {
+    "w": "village",
+    "tr": "köy"
+   },
+   {
+    "w": "plant",
+    "tr": "bitki"
+   },
+   {
+    "w": "farmers",
+    "tr": "çiftçiler"
+   },
+   {
+    "w": "clever",
+    "tr": "zeki"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How old is the grandmother?",
+    "options": [
+     "Sixty-two",
+     "Twelve",
+     "Seventy-two",
+     "Seventy"
+    ],
+    "answer": 2,
+    "note": "\"She is seventy-two years old.\""
+   },
+   {
+    "q": "How long does the writer stay?",
+    "options": [
+     "Two days",
+     "Two weeks",
+     "One month",
+     "All summer"
+    ],
+    "answer": 1,
+    "note": "\"I stay with her for two weeks.\""
+   },
+   {
+    "q": "What do they do in the morning?",
+    "options": [
+     "Work in the garden",
+     "Read the newspaper",
+     "Go shopping",
+     "Visit the village"
+    ],
+    "answer": 0,
+    "note": "\"In the morning we work in the garden.\""
+   },
+   {
+    "q": "What were her parents?",
+    "options": [
+     "Farmers",
+     "Doctors",
+     "Teachers",
+     "Shop workers"
+    ],
+    "answer": 0,
+    "note": "\"Her mother and father were farmers.\""
+   },
+   {
+    "q": "What does she do every day?",
+    "options": [
+     "She writes stories",
+     "She reads the newspaper",
+     "She goes to school",
+     "She cooks for the village"
+    ],
+    "answer": 1,
+    "note": "\"She reads the newspaper every day.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-17",
+  "level": "A1",
+  "order": 17,
+  "kind": "reading",
+  "title": "Futbol maçı",
+  "titleEn": "The Football Match",
+  "minutes": 2,
+  "names": [
+   "Emre",
+   "Baris"
+  ],
+  "text": "On Saturday my father and I went to a football match. The stadium was near the sea. It was very big and there were thousands of people. Our seats were high but we could see everything. The match started at four o'clock. The first half was not good. Nobody made a goal. After the break our team played better. Emre made a goal in the last ten minutes. Everybody stood up and shouted. My father was very happy. We came home late and we talked about the match all evening.",
+  "textTr": "Cumartesi babamla bir futbol maçına gittik. Stadyum denizin yakınındaydı. Çok büyüktü ve binlerce insan vardı. Yerlerimiz yüksekti ama her şeyi görebiliyorduk. Maç saat dörtte başladı. İlk yarı iyi değildi. Kimse gol atamadı. Aradan sonra takımımız daha iyi oynadı. Emre son on dakikada gol attı. Herkes ayağa kalktı ve bağırdı. Babam çok mutluydu. Eve geç geldik ve bütün akşam maçı konuştuk.",
+  "glossary": [
+   {
+    "w": "stadium",
+    "tr": "stadyum"
+   },
+   {
+    "w": "thousands",
+    "tr": "binlerce"
+   },
+   {
+    "w": "half",
+    "tr": "devre, yarı"
+   },
+   {
+    "w": "goal",
+    "tr": "gol"
+   },
+   {
+    "w": "break",
+    "tr": "ara"
+   },
+   {
+    "w": "shouted",
+    "tr": "bağırdı"
+   },
+   {
+    "w": "nobody",
+    "tr": "hiç kimse"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where was the stadium?",
+    "options": [
+     "On a hill",
+     "Near the school",
+     "Near the sea",
+     "In the old town"
+    ],
+    "answer": 2,
+    "note": "\"The stadium was near the sea.\""
+   },
+   {
+    "q": "What time did the match start?",
+    "options": [
+     "Four o'clock",
+     "Six o'clock",
+     "Two o'clock",
+     "Ten o'clock"
+    ],
+    "answer": 0,
+    "note": "\"The match started at four o'clock.\""
+   },
+   {
+    "q": "What happened in the first half?",
+    "options": [
+     "Their team played well",
+     "Emre made a goal",
+     "There were no goals",
+     "It rained"
+    ],
+    "answer": 2,
+    "note": "\"Nobody made a goal.\""
+   },
+   {
+    "q": "When did Emre make the goal?",
+    "options": [
+     "After the match",
+     "In the first half",
+     "At the start",
+     "In the last ten minutes"
+    ],
+    "answer": 3,
+    "note": "\"Emre made a goal in the last ten minutes.\""
+   },
+   {
+    "q": "What did they do at home?",
+    "options": [
+     "They talked about the match",
+     "They ate dinner",
+     "They went to bed",
+     "They watched television"
+    ],
+    "answer": 0,
+    "note": "\"We talked about the match all evening.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-18",
+  "level": "A1",
+  "order": 18,
+  "kind": "reading",
+  "title": "Mutfakta",
+  "titleEn": "In the Kitchen",
+  "minutes": 2,
+  "names": [
+   "Zeynep"
+  ],
+  "text": "Our kitchen is small but it is my favorite room. There is a window over the sink and I can see the street. My mother cooks there every day. On Fridays she makes soup and rice. I help her. I wash the vegetables and I put the plates on the table. My sister Zeynep does not help. She says she is busy with her homework, but she is on her phone. After dinner we all clean the kitchen together. My father washes the plates and he sings. He is not a good singer.",
+  "textTr": "Mutfağımız küçük ama en sevdiğim oda. Lavabonun üstünde bir pencere var ve sokağı görebiliyorum. Annem orada her gün yemek yapar. Cumaları çorba ve pilav yapar. Ona yardım ederim. Sebzeleri yıkarım ve tabakları masaya koyarım. Kız kardeşim Zeynep yardım etmez. Ödevle meşgul olduğunu söyler ama telefondadır. Yemekten sonra hep birlikte mutfağı temizleriz. Babam tabakları yıkar ve şarkı söyler. İyi bir şarkıcı değildir.",
+  "glossary": [
+   {
+    "w": "sink",
+    "tr": "lavabo, evye"
+   },
+   {
+    "w": "soup",
+    "tr": "çorba"
+   },
+   {
+    "w": "rice",
+    "tr": "pilav, pirinç"
+   },
+   {
+    "w": "vegetables",
+    "tr": "sebzeler"
+   },
+   {
+    "w": "plates",
+    "tr": "tabaklar"
+   },
+   {
+    "w": "singer",
+    "tr": "şarkıcı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What can the writer see from the window?",
+    "options": [
+     "The street",
+     "The school",
+     "The garden",
+     "The sea"
+    ],
+    "answer": 0,
+    "note": "\"I can see the street.\""
+   },
+   {
+    "q": "What does the mother make on Fridays?",
+    "options": [
+     "Cake",
+     "Bread",
+     "Fish",
+     "Soup and rice"
+    ],
+    "answer": 3,
+    "note": "\"On Fridays she makes soup and rice.\""
+   },
+   {
+    "q": "What does the writer do to help?",
+    "options": [
+     "Cook the soup",
+     "Clean the window",
+     "Wash the vegetables",
+     "Buy the food"
+    ],
+    "answer": 2,
+    "note": "\"I wash the vegetables and I put the plates on the table.\""
+   },
+   {
+    "q": "What is Zeynep really doing?",
+    "options": [
+     "She is cooking",
+     "She is on her phone",
+     "She is sleeping",
+     "She is doing homework"
+    ],
+    "answer": 1,
+    "note": "\"She says she is busy with her homework, but she is on her phone.\""
+   },
+   {
+    "q": "What does the father do after dinner?",
+    "options": [
+     "He reads",
+     "He goes out",
+     "He washes the plates",
+     "He watches television"
+    ],
+    "answer": 2,
+    "note": "\"My father washes the plates and he sings.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-19",
+  "level": "A1",
+  "order": 19,
+  "kind": "reading",
+  "title": "En sevdiğim mevsim",
+  "titleEn": "My Favorite Season",
+  "minutes": 2,
+  "names": [],
+  "text": "My favorite season is autumn. In summer it is too hot in my city and I cannot sleep. In winter it is cold and dark at five o'clock. But in autumn the weather is good. It is not hot and it is not cold. The trees are yellow and red. I can walk for hours. School starts again and I see my friends. My mother makes soup in the evening. I like the rain too. I sit near the window with a book and I listen to it. Autumn is short but it is beautiful.",
+  "textTr": "En sevdiğim mevsim sonbahar. Yazın şehrimde hava çok sıcak oluyor ve uyuyamıyorum. Kışın soğuk oluyor ve saat beşte karanlık oluyor. Ama sonbaharda hava güzel. Ne sıcak ne soğuk. Ağaçlar sarı ve kırmızı oluyor. Saatlerce yürüyebiliyorum. Okul tekrar başlıyor ve arkadaşlarımı görüyorum. Annem akşamları çorba yapıyor. Yağmuru da seviyorum. Pencerenin yanına kitapla oturup onu dinliyorum. Sonbahar kısa ama güzel.",
+  "glossary": [
+   {
+    "w": "season",
+    "tr": "mevsim"
+   },
+   {
+    "w": "autumn",
+    "tr": "sonbahar"
+   },
+   {
+    "w": "dark",
+    "tr": "karanlık"
+   },
+   {
+    "w": "soup",
+    "tr": "çorba"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Which season does the writer like best?",
+    "options": [
+     "Spring",
+     "Winter",
+     "Autumn",
+     "Summer"
+    ],
+    "answer": 2,
+    "note": "\"My favorite season is autumn.\""
+   },
+   {
+    "q": "What is the problem with summer?",
+    "options": [
+     "School starts",
+     "It is too hot to sleep",
+     "It rains a lot",
+     "It is dark"
+    ],
+    "answer": 1,
+    "note": "\"In summer it is too hot in my city and I cannot sleep.\""
+   },
+   {
+    "q": "What color are the trees in autumn?",
+    "options": [
+     "Brown",
+     "Green",
+     "White",
+     "Yellow and red"
+    ],
+    "answer": 3,
+    "note": "\"The trees are yellow and red.\""
+   },
+   {
+    "q": "What does the writer do when it rains?",
+    "options": [
+     "Walks in the park",
+     "Sits near the window with a book",
+     "Goes to school",
+     "Makes soup"
+    ],
+    "answer": 1,
+    "note": "\"I sit near the window with a book.\""
+   },
+   {
+    "q": "What does the writer say about autumn?",
+    "options": [
+     "It is long and cold",
+     "It is too dark",
+     "It is the hottest season",
+     "It is short but beautiful"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "a1-r-20",
+  "level": "A1",
+  "order": 20,
+  "kind": "reading",
+  "title": "Okul kütüphanesi",
+  "titleEn": "The School Library",
+  "minutes": 2,
+  "names": [
+   "Mrs Yilmaz"
+  ],
+  "text": "Our school library is on the second floor. It is open from nine to five. There are many books and six computers. Students can take two books for two weeks. Mrs Yilmaz works there. She is quiet and she knows every book in the room. When I want a book about animals, she finds it in one minute. In the library we cannot eat or talk. Some students only come for the computers. I come for the big table near the window. It is the best place in the school for homework.",
+  "textTr": "Okul kütüphanemiz ikinci katta. Dokuzdan beşe kadar açık. Çok kitap ve altı bilgisayar var. Öğrenciler iki haftalığına iki kitap alabilir. Orada Yılmaz Hanım çalışıyor. Sessiz biri ve odadaki her kitabı biliyor. Hayvanlarla ilgili bir kitap istediğimde bir dakikada buluyor. Kütüphanede yemek yiyemeyiz ve konuşamayız. Bazı öğrenciler sadece bilgisayarlar için geliyor. Ben pencerenin yanındaki büyük masa için geliyorum. Ödev için okuldaki en iyi yer.",
+  "glossary": [
+   {
+    "w": "floor",
+    "tr": "kat"
+   },
+   {
+    "w": "computers",
+    "tr": "bilgisayarlar"
+   },
+   {
+    "w": "animals",
+    "tr": "hayvanlar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where is the library?",
+    "options": [
+     "On the second floor",
+     "Next to the kitchen",
+     "On the first floor",
+     "Near the garden"
+    ],
+    "answer": 0,
+    "note": "\"Our school library is on the second floor.\""
+   },
+   {
+    "q": "How many books can a student take?",
+    "options": [
+     "Nine",
+     "Two",
+     "Six",
+     "Five"
+    ],
+    "answer": 1,
+    "note": "\"Students can take two books for two weeks.\""
+   },
+   {
+    "q": "What is Mrs Yilmaz good at?",
+    "options": [
+     "Cooking",
+     "Teaching English",
+     "Finding books quickly",
+     "Using computers"
+    ],
+    "answer": 2,
+    "note": "\"She finds it in one minute.\""
+   },
+   {
+    "q": "What can students not do in the library?",
+    "options": [
+     "Eat or talk",
+     "Sit at the table",
+     "Read books",
+     "Use computers"
+    ],
+    "answer": 0,
+    "note": "\"In the library we cannot eat or talk.\""
+   },
+   {
+    "q": "Why does the writer go there?",
+    "options": [
+     "To talk to Mrs Yilmaz",
+     "For the computers",
+     "To meet friends",
+     "For the big table near the window"
+    ],
+    "answer": 3,
+    "note": "\"I come for the big table near the window.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-21",
+  "level": "A1",
+  "order": 21,
+  "kind": "reading",
+  "title": "Komşumuz",
+  "titleEn": "Our Neighbor",
+  "minutes": 2,
+  "names": [
+   "Hasan"
+  ],
+  "text": "Our neighbor is Hasan. He lives alone in the flat under us. He is sixty years old. Every morning he goes out at eight with his newspaper and he sits in the small cafe on our street. He comes home at eleven. In the afternoon he works in front of the building. He waters the flowers and he cleans the door. Nobody asks him to do it. When my mother makes too much food, she gives some to him. He always says thank you and he brings us bread the next day.",
+  "textTr": "Komşumuz Hasan. Altımızdaki dairede yalnız yaşıyor. Altmış yaşında. Her sabah sekizde gazetesiyle çıkıyor ve sokağımızdaki küçük kafede oturuyor. On birde eve dönüyor. Öğleden sonra binanın önünde çalışıyor. Çiçekleri suluyor ve kapıyı temizliyor. Kimse ondan bunu istemiyor. Annem fazla yemek yaptığında ona da veriyor. Hep teşekkür ediyor ve ertesi gün bize ekmek getiriyor.",
+  "glossary": [
+   {
+    "w": "neighbor",
+    "tr": "komşu"
+   },
+   {
+    "w": "alone",
+    "tr": "yalnız"
+   },
+   {
+    "w": "flat",
+    "tr": "daire"
+   },
+   {
+    "w": "waters",
+    "tr": "suluyor"
+   },
+   {
+    "w": "nobody",
+    "tr": "hiç kimse"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where does Hasan live?",
+    "options": [
+     "In a house",
+     "In the next street",
+     "In the flat over us",
+     "In the flat under us"
+    ],
+    "answer": 3,
+    "note": "\"He lives alone in the flat under us.\""
+   },
+   {
+    "q": "What does he take to the cafe?",
+    "options": [
+     "A book",
+     "His newspaper",
+     "His dog",
+     "His food"
+    ],
+    "answer": 1,
+    "note": "\"He goes out at eight with his newspaper.\""
+   },
+   {
+    "q": "What does he do in the afternoon?",
+    "options": [
+     "Goes to the cafe",
+     "Works in front of the building",
+     "Sleeps",
+     "Visits his family"
+    ],
+    "answer": 1,
+    "note": "\"In the afternoon he works in front of the building.\""
+   },
+   {
+    "q": "Who asks him to clean the door?",
+    "options": [
+     "The owner",
+     "Nobody",
+     "The neighbors",
+     "The mother"
+    ],
+    "answer": 1,
+    "note": "\"Nobody asks him to do it.\""
+   },
+   {
+    "q": "What does he give the family?",
+    "options": [
+     "A newspaper",
+     "Flowers",
+     "Money",
+     "Bread"
+    ],
+    "answer": 3,
+    "note": "\"He brings us bread the next day.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-22",
+  "level": "A1",
+  "order": 22,
+  "kind": "reading",
+  "title": "Kışlık ceket",
+  "titleEn": "A Winter Coat",
+  "minutes": 2,
+  "names": [],
+  "text": "Last week I went shopping with my mother. I needed a winter coat. My old coat was too small. We went to three shops. In the first shop the coats were beautiful but too expensive. In the second shop there was nothing in my size. In the third shop I found a black coat. It was warm and it was not expensive. My mother said the color was boring. I said black is good with everything. We bought it. Now I wear it every day and my mother says it was a good choice.",
+  "textTr": "Geçen hafta annemle alışverişe gittim. Kışlık bir cekete ihtiyacım vardı. Eski ceketim çok küçüktü. Üç dükkâna gittik. İlk dükkânda ceketler güzeldi ama çok pahalıydı. İkinci dükkânda benim bedenimde hiçbir şey yoktu. Üçüncü dükkânda siyah bir ceket buldum. Sıcaktı ve pahalı değildi. Annem rengin sıkıcı olduğunu söyledi. Ben siyahın her şeyle iyi gittiğini söyledim. Onu aldık. Şimdi her gün giyiyorum ve annem iyi bir seçim olduğunu söylüyor.",
+  "glossary": [
+   {
+    "w": "coat",
+    "tr": "ceket, palto"
+   },
+   {
+    "w": "expensive",
+    "tr": "pahalı"
+   },
+   {
+    "w": "size",
+    "tr": "beden"
+   },
+   {
+    "w": "boring",
+    "tr": "sıkıcı"
+   },
+   {
+    "w": "choice",
+    "tr": "seçim"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did the writer need a coat?",
+    "options": [
+     "The old one was too small",
+     "The old one was old",
+     "The old one was green",
+     "It was a present"
+    ],
+    "answer": 0,
+    "note": "\"My old coat was too small.\""
+   },
+   {
+    "q": "What was wrong with the first shop?",
+    "options": [
+     "The coats were black",
+     "The coats were too expensive",
+     "There was nothing in her size",
+     "It was closed"
+    ],
+    "answer": 1,
+    "note": "\"The coats were beautiful but too expensive.\""
+   },
+   {
+    "q": "What was the problem in the second shop?",
+    "options": [
+     "The coats were old",
+     "Nothing was in her size",
+     "There were no coats",
+     "It was very expensive"
+    ],
+    "answer": 1,
+    "note": "\"There was nothing in my size.\""
+   },
+   {
+    "q": "What did the mother say about the coat?",
+    "options": [
+     "It was warm",
+     "It was too small",
+     "The color was boring",
+     "It was expensive"
+    ],
+    "answer": 2,
+    "note": "\"My mother said the color was boring.\""
+   },
+   {
+    "q": "What does the mother say now?",
+    "options": [
+     "It is too small",
+     "It was a good choice",
+     "They must take it back",
+     "The color is bad"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "a1-r-23",
+  "level": "A1",
+  "order": 23,
+  "kind": "reading",
+  "title": "Müzik dersi",
+  "titleEn": "The Music Lesson",
+  "minutes": 2,
+  "names": [
+   "Selin"
+  ],
+  "text": "I have a music lesson on Tuesdays after school. My teacher is Selin. She teaches me the guitar. My first lesson was very difficult. My fingers hurt and I could not play one song. Selin said this is not a problem. Now I can play four songs. I practice for twenty minutes every evening. My brother closes his door because he says it is loud. In June there is a small concert at the music school. All the students play one song. I am not ready but Selin says I will be ready.",
+  "textTr": "Salı günleri okuldan sonra müzik dersim var. Öğretmenim Selin. Bana gitar öğretiyor. İlk dersim çok zordu. Parmaklarım acıdı ve bir şarkı bile çalamadım. Selin bunun sorun olmadığını söyledi. Şimdi dört şarkı çalabiliyorum. Her akşam yirmi dakika çalışıyorum. Kardeşim kapısını kapatıyor çünkü sesin yüksek olduğunu söylüyor. Haziranda müzik okulunda küçük bir konser var. Bütün öğrenciler bir şarkı çalıyor. Hazır değilim ama Selin hazır olacağımı söylüyor.",
+  "glossary": [
+   {
+    "w": "guitar",
+    "tr": "gitar"
+   },
+   {
+    "w": "fingers",
+    "tr": "parmaklar"
+   },
+   {
+    "w": "hurt",
+    "tr": "acımak, ağrımak"
+   },
+   {
+    "w": "practice",
+    "tr": "çalışmak, pratik yapmak"
+   },
+   {
+    "w": "loud",
+    "tr": "sesli, gürültülü"
+   },
+   {
+    "w": "concert",
+    "tr": "konser"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When is the music lesson?",
+    "options": [
+     "Every evening",
+     "On Tuesdays after school",
+     "In June",
+     "On Saturdays"
+    ],
+    "answer": 1,
+    "note": "\"I have a music lesson on Tuesdays after school.\""
+   },
+   {
+    "q": "What was difficult in the first lesson?",
+    "options": [
+     "The room was cold",
+     "The guitar was old",
+     "Her fingers hurt",
+     "The teacher was late"
+    ],
+    "answer": 2,
+    "note": "\"My fingers hurt and I could not play one song.\""
+   },
+   {
+    "q": "How many songs can she play now?",
+    "options": [
+     "Twenty",
+     "Two",
+     "Four",
+     "One"
+    ],
+    "answer": 2,
+    "note": "\"Now I can play four songs.\""
+   },
+   {
+    "q": "Why does her brother close his door?",
+    "options": [
+     "The music is loud",
+     "He is sleeping",
+     "He does not like the song",
+     "He is working"
+    ],
+    "answer": 0,
+    "note": "\"He says it is loud.\""
+   },
+   {
+    "q": "What happens in June?",
+    "options": [
+     "A holiday",
+     "A new lesson",
+     "A new teacher",
+     "A small concert"
+    ],
+    "answer": 3,
+    "note": "\"In June there is a small concert at the music school.\""
+   }
+  ]
+ },
+ {
+  "id": "a1-r-24",
+  "level": "A1",
+  "order": 24,
+  "kind": "reading",
+  "title": "Yeni telefon",
+  "titleEn": "The New Phone",
+  "minutes": 2,
+  "names": [
+   "Baran"
+  ],
+  "text": "For my birthday my parents gave me a phone. It is my first phone. I was very happy. The first day I looked at it for five hours. My father was not happy about that. Now we have a rule in our house. No phones at dinner. No phones after ten o'clock at night. At first the rule was difficult for me. My friend Baran writes to me in the evening and I cannot answer. But now I sleep better and I read more. The rule is good but I do not say that to my father.",
+  "textTr": "Doğum günümde ailem bana bir telefon verdi. İlk telefonum. Çok mutlu oldum. İlk gün beş saat ona baktım. Babam bundan memnun olmadı. Şimdi evimizde bir kural var. Yemekte telefon yok. Gece ondan sonra telefon yok. Başta kural bana zor geldi. Arkadaşım Baran akşamları yazıyor ve cevap veremiyorum. Ama şimdi daha iyi uyuyorum ve daha çok okuyorum. Kural iyi ama bunu babama söylemiyorum.",
+  "glossary": [
+   {
+    "w": "rule",
+    "tr": "kural"
+   },
+   {
+    "w": "at first",
+    "tr": "başta, ilk başta"
+   },
+   {
+    "w": "answer",
+    "tr": "cevap vermek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who gave the phone?",
+    "options": [
+     "His teacher",
+     "His brother",
+     "His friend Baran",
+     "His parents"
+    ],
+    "answer": 3,
+    "note": "\"My parents gave me a phone.\""
+   },
+   {
+    "q": "What did he do on the first day?",
+    "options": [
+     "Looked at it for five hours",
+     "Gave it back",
+     "Left it at home",
+     "Gave it to Baran"
+    ],
+    "answer": 0,
+    "note": "\"The first day I looked at it for five hours.\""
+   },
+   {
+    "q": "What is the rule at dinner?",
+    "options": [
+     "No talking",
+     "No phones",
+     "No television",
+     "No friends"
+    ],
+    "answer": 1,
+    "note": "\"No phones at dinner.\""
+   },
+   {
+    "q": "What is better now?",
+    "options": [
+     "He is faster at school",
+     "He sleeps better and reads more",
+     "He has more friends",
+     "He writes more"
+    ],
+    "answer": 1,
+    "note": "\"Now I sleep better and I read more.\""
+   },
+   {
+    "q": "What does he not tell his father?",
+    "options": [
+     "That Baran writes to him",
+     "That he is tired",
+     "That the rule is good",
+     "That he wants a new phone"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "a1-r-25",
+  "level": "A1",
+  "order": 25,
+  "kind": "reading",
+  "title": "Denizde bir gün",
+  "titleEn": "A Day by the Sea",
+  "minutes": 2,
+  "names": [
+   "Antalya"
+  ],
+  "text": "Last August we went to Antalya for one week. The hotel was old but the sea was in front of it. Every morning I got up at seven and I ran on the sand. The water was warm. My mother does not swim so she read her book under a tree. My father made friends with a man from another hotel and they played cards for hours. In the evening we ate fish in a small restaurant. On the last day I did not want to go home. But school started in two weeks.",
+  "textTr": "Geçen ağustos bir haftalığına Antalya'ya gittik. Otel eskiydi ama deniz önündeydi. Her sabah yedide kalkıp kumda koştum. Su sıcaktı. Annem yüzmez, o yüzden bir ağacın altında kitabını okudu. Babam başka bir otelden bir adamla arkadaş oldu ve saatlerce kâğıt oynadılar. Akşamları küçük bir lokantada balık yedik. Son gün eve gitmek istemedim. Ama okul iki hafta sonra başlıyordu.",
+  "glossary": [
+   {
+    "w": "sand",
+    "tr": "kum"
+   },
+   {
+    "w": "swim",
+    "tr": "yüzmek"
+   },
+   {
+    "w": "cards",
+    "tr": "iskambil, kâğıt oyunu"
+   },
+   {
+    "w": "restaurant",
+    "tr": "lokanta"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long was the holiday?",
+    "options": [
+     "Three days",
+     "One week",
+     "Two weeks",
+     "One month"
+    ],
+    "answer": 1,
+    "note": "\"We went to Antalya for one week.\""
+   },
+   {
+    "q": "What did the writer do every morning?",
+    "options": [
+     "Swam with his father",
+     "Slept until ten",
+     "Ran on the sand",
+     "Read a book"
+    ],
+    "answer": 2,
+    "note": "\"I got up at seven and I ran on the sand.\""
+   },
+   {
+    "q": "What did the mother do?",
+    "options": [
+     "Swam in the sea",
+     "Read her book under a tree",
+     "Played cards",
+     "Cooked fish"
+    ],
+    "answer": 1,
+    "note": "\"She read her book under a tree.\""
+   },
+   {
+    "q": "What did the father do?",
+    "options": [
+     "Ran on the sand",
+     "Went home early",
+     "Stayed in the hotel",
+     "Played cards with a new friend"
+    ],
+    "answer": 3,
+    "note": "\"They played cards for hours.\""
+   },
+   {
+    "q": "How did the writer feel on the last day?",
+    "options": [
+     "He was tired",
+     "He missed school",
+     "He was happy to go home",
+     "He did not want to go home"
+    ],
+    "answer": 3,
+    "note": "\"On the last day I did not want to go home.\""
+   }
+  ]
  }
 ]

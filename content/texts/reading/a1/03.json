@@ -1,0 +1,125 @@
+{
+  "_meta": { "batch": "a1-reading-03", "level": "A1", "range": "Parça 11-15" },
+  "items": [
+    {
+      "id": "a1-r-11",
+      "level": "A1",
+      "order": 11,
+      "kind": "reading",
+      "title": "En yakın arkadaşım",
+      "titleEn": "My Best Friend",
+      "minutes": 2,
+      "names": ["Elif", "Bursa"],
+      "text": "My best friend is Elif. We are in the same class. She is seventeen years old and she lives near my house. Elif is tall and she has long black hair. She is very funny. We walk to school together every morning. After school we do our homework at her house. Her mother makes good cakes. On Saturdays we go to the park or we watch a film. Elif wants to be a doctor. She reads many books about the body. I am not good at science but she helps me. She is a very good friend.",
+      "textTr": "En yakın arkadaşım Elif. Aynı sınıftayız. On yedi yaşında ve evimin yakınında oturuyor. Elif uzun boylu ve uzun siyah saçları var. Çok komik biri. Her sabah birlikte okula yürüyoruz. Okuldan sonra ödevlerimizi onun evinde yapıyoruz. Annesi güzel kekler yapıyor. Cumartesileri parka gidiyoruz ya da film izliyoruz. Elif doktor olmak istiyor. Vücut hakkında çok kitap okuyor. Ben fende iyi değilim ama o bana yardım ediyor. Çok iyi bir arkadaş.",
+      "glossary": [
+        { "w": "science", "tr": "fen, bilim" },
+        { "w": "film", "tr": "film" }
+      ],
+      "questions": [
+        { "q": "How old is Elif?", "options": ["Seventeen", "Seven", "Fifteen", "Eighteen"], "answer": 0, "note": "\"She is seventeen years old.\"" },
+        { "q": "Where do they do their homework?", "options": ["At Elif's house", "At school", "In the park", "In the library"], "answer": 0, "note": "\"We do our homework at her house.\"" },
+        { "q": "What does Elif want to be?", "options": ["A doctor", "A teacher", "A writer", "A nurse"], "answer": 0, "note": "\"Elif wants to be a doctor.\"" },
+        { "q": "Who makes good cakes?", "options": ["Elif's mother", "Elif", "My mother", "My sister"], "answer": 0, "note": "\"Her mother makes good cakes.\"" },
+        { "q": "What do they do on Saturdays?", "options": ["Go to the park or watch a film", "Go to school", "Work in a shop", "Visit the doctor"], "answer": 0, "note": "\"On Saturdays we go to the park or we watch a film.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-12",
+      "level": "A1",
+      "order": 12,
+      "kind": "reading",
+      "title": "Evde kahvaltı",
+      "titleEn": "Breakfast at Home",
+      "minutes": 2,
+      "names": ["Kerem"],
+      "text": "In my family we always eat breakfast together. It is my favorite time of the day. My mother makes tea. My father buys bread from the shop on the corner. We eat cheese, olives, eggs and tomatoes. My little brother Kerem does not like tomatoes. He only eats bread and honey. On school days breakfast is short because we are in a hurry. But on Sundays we sit at the table for one hour. We talk about the week. My grandmother comes and she brings fruit from her garden.",
+      "textTr": "Ailemizde kahvaltıyı hep birlikte ederiz. Günün en sevdiğim vakti. Annem çay yapar. Babam köşedeki dükkândan ekmek alır. Peynir, zeytin, yumurta ve domates yeriz. Küçük kardeşim Kerem domates sevmez. Sadece ekmek ve bal yer. Okul günlerinde kahvaltı kısa sürer çünkü acelemiz olur. Ama pazar günleri bir saat masada otururuz. Haftayı konuşuruz. Büyükannem gelir ve bahçesinden meyve getirir.",
+      "glossary": [
+        { "w": "olives", "tr": "zeytin" },
+        { "w": "honey", "tr": "bal" },
+        { "w": "in a hurry", "tr": "acele" }
+      ],
+      "questions": [
+        { "q": "Who makes the tea?", "options": ["The mother", "The father", "Kerem", "The grandmother"], "answer": 0, "note": "\"My mother makes tea.\"" },
+        { "q": "What does Kerem not like?", "options": ["Tomatoes", "Bread", "Honey", "Cheese"], "answer": 0, "note": "\"My little brother Kerem does not like tomatoes.\"" },
+        { "q": "Why is breakfast short on school days?", "options": ["They are in a hurry", "There is no bread", "It is not a school day", "The shop is closed"], "answer": 0, "note": "\"Breakfast is short because we are in a hurry.\"" },
+        { "q": "How long is breakfast on Sundays?", "options": ["One hour", "Ten minutes", "Two hours", "Half an hour"], "answer": 0, "note": "\"On Sundays we sit at the table for one hour.\"" },
+        { "q": "What does the grandmother bring?", "options": ["Fruit from her garden", "Bread", "Tea", "Eggs"], "answer": 0, "note": "\"She brings fruit from her garden.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-13",
+      "level": "A1",
+      "order": 13,
+      "kind": "reading",
+      "title": "Okula giden otobüs",
+      "titleEn": "The Bus to School",
+      "minutes": 2,
+      "names": ["Mehmet"],
+      "text": "I take the bus to school every day. The bus stop is in front of the bank. I wait there at half past seven. The bus is number twelve. In the morning it is always full. Sometimes I stand for twenty minutes. The driver is an old man. His name is Mehmet and he says good morning to every student. I like him. I sit near the window and I look at the street. I see the same shops and the same people every day. The bus is not fast but it is cheap.",
+      "textTr": "Her gün okula otobüsle giderim. Otobüs durağı bankanın önünde. Yedi buçukta orada beklerim. Otobüsün numarası on iki. Sabahları hep doludur. Bazen yirmi dakika ayakta dururum. Şoför yaşlı bir adam. Adı Mehmet ve her öğrenciye günaydın der. Onu severim. Pencerenin yanına otururum ve sokağa bakarım. Her gün aynı dükkânları ve aynı insanları görürüm. Otobüs hızlı değil ama ucuz.",
+      "glossary": [
+        { "w": "bus stop", "tr": "otobüs durağı" },
+        { "w": "driver", "tr": "şoför" },
+        { "w": "full", "tr": "dolu" },
+        { "w": "cheap", "tr": "ucuz" },
+        { "w": "empty", "tr": "boş" }
+      ],
+      "questions": [
+        { "q": "Where is the bus stop?", "options": ["In front of the bank", "Near the school", "Next to a shop", "In the park"], "answer": 0, "note": "\"The bus stop is in front of the bank.\"" },
+        { "q": "What time does the writer wait?", "options": ["Half past seven", "Seven o'clock", "Half past eight", "Twelve o'clock"], "answer": 0, "note": "\"I wait there at half past seven.\"" },
+        { "q": "Why does the writer sometimes stand?", "options": ["The bus is full", "There are no seats on the bus", "He wants to stand", "The bus is small"], "answer": 0, "note": "\"In the morning it is always full.\"" },
+        { "q": "What does the driver do every morning?", "options": ["He says good morning", "He plays music", "He reads a book", "He drives fast"], "answer": 0, "note": "\"He says good morning to every student.\"" },
+        { "q": "What does the writer say about the bus?", "options": ["It is slow but cheap", "It is fast and cheap", "It is fast but expensive", "It is always empty"], "answer": 0, "note": "\"The bus is not fast but it is cheap.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-14",
+      "level": "A1",
+      "order": 14,
+      "kind": "reading",
+      "title": "Kedim",
+      "titleEn": "My Cat",
+      "minutes": 2,
+      "names": ["Duman"],
+      "text": "I have a cat. Her name is Duman. She is three years old and she is gray and white. We found her in the street two years ago. She was very small and very thin. Now she is big and she eats a lot. Duman sleeps all day on my bed. At night she is not tired and she runs in the house. She likes fish and she does not like water. When I come home from school she waits at the door. She is not a quiet cat. She talks to me and she wants food. I love her very much.",
+      "textTr": "Bir kedim var. Adı Duman. Üç yaşında, gri ve beyaz. Onu iki yıl önce sokakta bulduk. Çok küçüktü ve çok zayıftı. Şimdi büyük ve çok yiyor. Duman bütün gün yatağımda uyuyor. Geceleri yorgun olmuyor ve evde koşuyor. Balığı seviyor, suyu sevmiyor. Okuldan eve geldiğimde kapıda bekliyor. Sessiz bir kedi değil. Benimle konuşuyor ve yemek istiyor. Onu çok seviyorum.",
+      "glossary": [
+        { "w": "thin", "tr": "zayıf, ince" },
+        { "w": "gray", "tr": "gri" }
+      ],
+      "questions": [
+        { "q": "How old is the cat?", "options": ["Three", "Two", "One", "Five"], "answer": 0, "note": "\"She is three years old.\"" },
+        { "q": "Where did they find her?", "options": ["In the street", "At a shop", "In the garden", "At school"], "answer": 0, "note": "\"We found her in the street two years ago.\"" },
+        { "q": "What does the cat do all day?", "options": ["She sleeps", "She runs", "She eats", "She plays"], "answer": 0, "note": "\"Duman sleeps all day on my bed.\"" },
+        { "q": "What does the cat not like?", "options": ["Water", "Fish", "Food", "The bed"], "answer": 0, "note": "\"She does not like water.\"" },
+        { "q": "Where does the cat wait after school?", "options": ["At the door", "On the bed", "In the kitchen", "In the street"], "answer": 0, "note": "\"She waits at the door.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-15",
+      "level": "A1",
+      "order": 15,
+      "kind": "reading",
+      "title": "Parkta bir gün",
+      "titleEn": "A Day in the Park",
+      "minutes": 2,
+      "names": ["Ayse"],
+      "text": "There is a big park near my house. On Sunday morning I go there with my sister Ayse. Many people are in the park. Old men play games at the tables. Children run and play football. Some people walk with their dogs. We sit on a bench under a tree and we eat our sandwiches. There is a small lake and we look at the birds. In summer the park is very green. In winter it is cold and there are not many people. But I like the park in every season.",
+      "textTr": "Evimin yakınında büyük bir park var. Pazar sabahı oraya kız kardeşim Ayşe ile giderim. Parkta çok insan olur. Yaşlı adamlar masalarda oyun oynar. Çocuklar koşar ve futbol oynar. Bazı insanlar köpekleriyle yürür. Bir ağacın altındaki banka otururuz ve sandviçlerimizi yeriz. Küçük bir göl var ve kuşlara bakarız. Yazın park çok yeşil olur. Kışın soğuk olur ve çok insan olmaz. Ama parkı her mevsim severim.",
+      "glossary": [
+        { "w": "bench", "tr": "bank, sıra" },
+        { "w": "lake", "tr": "göl" },
+        { "w": "season", "tr": "mevsim" }
+      ],
+      "questions": [
+        { "q": "When does the writer go to the park?", "options": ["On Sunday morning", "On Saturday evening", "Every day", "On Monday"], "answer": 0, "note": "\"On Sunday morning I go there with my sister.\"" },
+        { "q": "What do the old men do?", "options": ["They play games at the tables", "They walk with dogs", "They play football", "They eat sandwiches"], "answer": 0, "note": "\"Old men play games at the tables.\"" },
+        { "q": "Where do the sisters sit?", "options": ["On a bench under a tree", "Near the lake", "At a table", "On the grass"], "answer": 0, "note": "\"We sit on a bench under a tree.\"" },
+        { "q": "What is the park like in winter?", "options": ["Cold and quiet", "Green and full", "Hot and busy", "Closed"], "answer": 0, "note": "\"In winter it is cold and there are not many people.\"" },
+        { "q": "How does the writer feel about the park?", "options": ["She likes it in every season", "She likes it only in summer", "She does not like it", "She goes there in winter only"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}
