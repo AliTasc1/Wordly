@@ -44,7 +44,10 @@ FREE = {
     "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
     "seventeen", "eighteen", "nineteen", "twenty", "thirty", "forty", "fifty",
     "sixty", "seventy", "eighty", "ninety", "hundred", "thousand", "million",
-    "zero", "first", "second", "third", "last", "next", "s", "t", "ll", "re",
+    "zero", "first", "second", "third", "fourth", "fifth", "sixth",
+    "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth",
+    "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth",
+    "eighteenth", "nineteenth", "twentieth", "last", "next", "s", "t", "ll", "re",
     "ve", "d", "m",
 }
 
@@ -69,7 +72,7 @@ BRITISH = {
 
 # Düzenli ek soyma bunları bulamaz.
 IRREGULAR = {
-    "went": "go", "gone": "go", "goes": "go",
+    "cannot": "can", "won't": "will", "shan't": "shall", "went": "go", "gone": "go", "goes": "go",
     "came": "come", "become": "become", "became": "become",
     "saw": "see", "seen": "see", "said": "say", "told": "tell",
     "took": "take", "taken": "take", "gave": "give", "given": "give",
@@ -121,7 +124,9 @@ GRAMMAR_WORDS = {
     "C2": {"hardly", "scarcely", "seldom", "barely", "dare"},
 }
 
-WORD_RE = re.compile(r"[a-z][a-z'’-]*")
+# Aksanlı harfler de sınıfa dahil: yoksa "café" sessizce "caf" diye
+# kırpılıyor ve denetim yanlış kelimeyi bildiriyor.
+WORD_RE = re.compile(r"[a-zà-ÿ][a-zà-ÿ'’-]*")
 # Özel adı bulmak için büyük harfli biçime de bakmak gerekiyor.
 CASED_RE = re.compile(r"[A-Za-z][A-Za-z'’-]*")
 
@@ -203,7 +208,12 @@ def candidates(token: str) -> list[str]:
         ("er", ["", "e"]),
         ("est", ["", "e"]),
         ("ly", [""]),
+        # Olumsuz kısaltmada iki ayrı yol gerekiyor. "n't" soyulursa don't → do
+        # olur ama can't → "ca" olur, çünkü oradaki n can'ın parçası. Yalnızca
+        # "'t" soyulursa can't → can olur ama don't → "don" olur. İkisi de
+        # denenip hangisi sözlükte bulunursa o alınıyor.
         ("n't", [""]),
+        ("'t", [""]),
         ("'s", [""]),
         ("'ll", [""]),
         ("'re", [""]),
@@ -233,7 +243,12 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
 
     british = {}
     for token in tokens:
-        if token in FREE or token in known or token in names:
+        if token in FREE or token in names:
+            continue
+        # Sözlükçe yalın biçimi veriyor (gym), metin çekimli kullanıyor (gyms).
+        # Çekimli biçimi de tanınmış saymazsak yazar aynı kelimeyi sözlükçeye
+        # iki kez yazmak zorunda kalır.
+        if any(form in known for form in candidates(token)):
             continue
         if token in BRITISH:
             british[token] = BRITISH[token]

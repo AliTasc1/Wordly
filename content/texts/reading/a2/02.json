@@ -1,0 +1,123 @@
+{
+  "_meta": { "batch": "a2-reading-02", "level": "A2", "range": "Parça 6-10" },
+  "items": [
+    {
+      "id": "a2-r-06",
+      "level": "A2",
+      "order": 6,
+      "kind": "reading",
+      "title": "Otel sorunu",
+      "titleEn": "A Problem at the Hotel",
+      "minutes": 3,
+      "names": ["Cem", "Antalya"],
+      "text": "Cem booked a hotel room in Antalya for four nights. On the website the photographs showed a large room with a view of the sea. When he arrived, the receptionist gave him a key for a room at the back of the building. The window looked at a car park and the air conditioning did not work. Cem went downstairs and explained the problem politely. The receptionist said the hotel was full and there were no other rooms. Cem showed her the photographs on his phone and asked for the manager. After twenty minutes the manager found a better room on the fourth floor. He also offered a free breakfast for the whole week. Cem was pleased, but he decided to read the reviews more carefully next time.",
+      "textTr": "Cem Antalya'da dört gecelik bir otel odası ayırttı. İnternet sitesinde fotoğraflar deniz manzaralı büyük bir oda gösteriyordu. Vardığında resepsiyon görevlisi ona binanın arkasındaki bir odanın anahtarını verdi. Pencere otoparka bakıyordu ve klima çalışmıyordu. Cem aşağı inip sorunu kibarca anlattı. Görevli otelin dolu olduğunu ve başka oda olmadığını söyledi. Cem ona telefonundaki fotoğrafları gösterdi ve müdürü istedi. Yirmi dakika sonra müdür dördüncü katta daha iyi bir oda buldu. Ayrıca bütün hafta için ücretsiz kahvaltı teklif etti. Cem memnun oldu ama bir dahaki sefere yorumları daha dikkatli okumaya karar verdi.",
+      "glossary": [
+        { "w": "receptionist", "tr": "resepsiyon görevlisi" },
+        { "w": "reviews", "tr": "yorumlar, değerlendirmeler" },
+        { "w": "politely", "tr": "kibarca" }
+      ],
+      "questions": [
+        { "q": "What was wrong with the first room?", "options": ["It looked at a car park", "It was too small", "It was on the fourth floor", "It was expensive"], "answer": 0, "note": "\"The window looked at a car park and the air conditioning did not work.\"" },
+        { "q": "What did the receptionist say at first?", "options": ["The hotel was full", "The manager was away", "She would change the room", "The photographs were old"], "answer": 0, "note": "\"The hotel was full and there were no other rooms.\"" },
+        { "q": "What did Cem show her?", "options": ["The photographs on his phone", "His ticket", "A letter", "His key"], "answer": 0, "note": "\"Cem showed her the photographs on his phone.\"" },
+        { "q": "What did the manager offer?", "options": ["A better room and free breakfast", "Money back", "A different hotel", "One free night"], "answer": 0, "note": "Daha iyi bir oda ve bütün hafta ücretsiz kahvaltı." },
+        { "q": "What will Cem do next time?", "options": ["Read the reviews carefully", "Book a different hotel", "Travel in winter", "Call before he arrives"], "answer": 0, "note": "\"He decided to read the reviews more carefully next time.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-07",
+      "level": "A2",
+      "order": 7,
+      "kind": "reading",
+      "title": "Sokak kedisi",
+      "titleEn": "The Street Cat",
+      "minutes": 3,
+      "names": ["Aylin", "Duman"],
+      "text": "Last winter a thin gray cat started to sleep in front of Aylin's door. At first Aylin only gave it water, because she did not want a pet. But the nights were cold and the cat was always waiting there in the morning. One day she took it to a doctor for animals. The doctor said the cat was about two years old and quite healthy. Aylin bought a small bed and called the cat Duman. Now Duman sleeps inside and follows her from room to room. Aylin says she did not choose the cat; the cat chose her. Her neighbors often ask about Duman because he sits in the window and watches the street all day.",
+      "textTr": "Geçen kış ince gri bir kedi Aylin'in kapısının önünde uyumaya başladı. Aylin başta sadece su verdi çünkü evcil hayvan istemiyordu. Ama geceler soğuktu ve kedi her sabah orada bekliyordu. Bir gün onu hayvan doktoruna götürdü. Doktor kedinin yaklaşık iki yaşında ve oldukça sağlıklı olduğunu söyledi. Aylin küçük bir yatak aldı ve kediye Duman adını verdi. Şimdi Duman içeride uyuyor ve odadan odaya onu takip ediyor. Aylin kediyi kendisinin seçmediğini, kedinin onu seçtiğini söylüyor. Komşuları sık sık Duman'ı soruyor çünkü bütün gün pencerede oturup sokağı izliyor.",
+      "glossary": [
+        { "w": "pet", "tr": "evcil hayvan" },
+        { "w": "healthy", "tr": "sağlıklı" }
+      ],
+      "questions": [
+        { "q": "Where did the cat sleep at first?", "options": ["In front of Aylin's door", "In the street", "Inside the house", "At the doctor's"], "answer": 0, "note": "\"A thin gray cat started to sleep in front of Aylin's door.\"" },
+        { "q": "Why did Aylin only give water at first?", "options": ["She did not want a pet", "She had no food", "The cat was ill", "She was busy"], "answer": 0, "note": "\"She did not want a pet.\"" },
+        { "q": "What did the doctor say?", "options": ["The cat was healthy", "The cat was very old", "The cat was ill", "The cat had an owner"], "answer": 0, "note": "\"The cat was about two years old and quite healthy.\"" },
+        { "q": "What does Aylin say about the cat?", "options": ["The cat chose her", "She always wanted a cat", "The cat is difficult", "She will find a new home for it"], "answer": 0, "note": "\"She did not choose the cat; the cat chose her.\"" },
+        { "q": "Why do the neighbors ask about Duman?", "options": ["He sits in the window all day", "He is very noisy", "He visits their houses", "He belongs to a neighbor"], "answer": 0, "note": "Pencerede oturup sokağı izlediği için herkes onu görüyor." }
+      ]
+    },
+    {
+      "id": "a2-r-08",
+      "level": "A2",
+      "order": 8,
+      "kind": "reading",
+      "title": "Bisikletle işe",
+      "titleEn": "Cycling to Work",
+      "minutes": 3,
+      "names": ["Tolga"],
+      "text": "Tolga used to drive to work every morning. The journey was only six kilometers, but it often took him thirty minutes because of the traffic. Last spring he bought a bicycle. On the first day he was slow and arrived late, but after two weeks he was faster than his car. Now he saves money and he arrives at the office awake and in a good mood. Of course there are problems. When it rains he gets wet, and in winter it is dark when he comes home. His wife thinks the roads are dangerous, so Tolga always wears a helmet and bright clothes. He says he will never go back to driving.",
+      "textTr": "Tolga eskiden her sabah işe arabayla giderdi. Yol sadece altı kilometreydi ama trafik yüzünden çoğu zaman otuz dakika sürüyordu. Geçen ilkbahar bir bisiklet aldı. İlk gün yavaştı ve geç kaldı ama iki hafta sonra arabasından daha hızlıydı. Şimdi para biriktiriyor ve ofise uyanık ve keyifli varıyor. Tabii sorunlar da var. Yağmur yağınca ıslanıyor, kışın eve dönerken hava karanlık oluyor. Eşi yolların tehlikeli olduğunu düşünüyor, o yüzden Tolga hep kask ve parlak kıyafet giyiyor. Bir daha asla arabaya dönmeyeceğini söylüyor.",
+      "glossary": [
+        { "w": "helmet", "tr": "kask" },
+        { "w": "mood", "tr": "ruh hâli, keyif" }
+      ],
+      "questions": [
+        { "q": "How long is Tolga's journey to work?", "options": ["Six kilometers", "Thirty kilometers", "Two kilometers", "Sixteen kilometers"], "answer": 0, "note": "\"The journey was only six kilometers.\"" },
+        { "q": "Why did the car journey take so long?", "options": ["Because of the traffic", "Because the road was bad", "Because he started late", "Because the car was old"], "answer": 0, "note": "\"It often took him thirty minutes because of the traffic.\"" },
+        { "q": "What happened after two weeks?", "options": ["He was faster than his car", "He stopped cycling", "He bought a new bicycle", "He was still slow"], "answer": 0, "note": "\"After two weeks he was faster than his car.\"" },
+        { "q": "What does his wife think?", "options": ["The roads are dangerous", "Cycling is too slow", "He should drive again", "The bicycle was expensive"], "answer": 0, "note": "\"His wife thinks the roads are dangerous.\"" },
+        { "q": "What does Tolga wear?", "options": ["A helmet and bright clothes", "A warm coat only", "Nothing special", "Work clothes"], "answer": 0, "note": "\"Tolga always wears a helmet and bright clothes.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-09",
+      "level": "A2",
+      "order": 9,
+      "kind": "reading",
+      "title": "Kütüphanedeki sessizlik",
+      "titleEn": "Quiet in the Library",
+      "minutes": 3,
+      "names": ["Ece"],
+      "text": "Ece studies at the city library almost every afternoon. She likes it because it is quiet and she cannot look at her phone there. The rule is simple: no telephones, no food, no talking. Last week a group of students came in and started to talk about a film. The other readers looked at them, but nobody said anything. Finally an old man stood up and asked them politely to be quiet. The students apologized and moved to the cafe downstairs. Ece thought about this for a long time. She realized that she never says anything when something is wrong. Now she is trying to speak up more often.",
+      "textTr": "Ece neredeyse her öğleden sonra şehir kütüphanesinde ders çalışıyor. Orayı seviyor çünkü sessiz ve orada telefonuna bakamıyor. Kural basit: telefon yok, yiyecek yok, konuşma yok. Geçen hafta bir grup öğrenci geldi ve bir film hakkında konuşmaya başladı. Diğer okuyucular onlara baktı ama kimse bir şey söylemedi. Sonunda yaşlı bir adam ayağa kalkıp kibarca sessiz olmalarını istedi. Öğrenciler özür dileyip alt kattaki kafeye gittiler. Ece bunu uzun süre düşündü. Bir şey yanlış olduğunda hiçbir zaman bir şey söylemediğini fark etti. Artık daha sık sesini çıkarmaya çalışıyor.",
+      "glossary": [
+        { "w": "apologized", "tr": "özür dilediler" },
+        { "w": "realized", "tr": "fark etti" },
+        { "w": "politely", "tr": "kibarca" }
+      ],
+      "questions": [
+        { "q": "Why does Ece like the library?", "options": ["It is quiet and she cannot use her phone", "It is near her house", "Her friends are there", "It is warm"], "answer": 0, "note": "\"She likes it because it is quiet and she cannot look at her phone there.\"" },
+        { "q": "What did the students do?", "options": ["They talked about a film", "They ate food", "They used phones", "They moved the chairs"], "answer": 0, "note": "\"A group of students came in and started to talk about a film.\"" },
+        { "q": "Who spoke to the students?", "options": ["An old man", "Ece", "A student", "Nobody"], "answer": 0, "note": "\"An old man stood up and asked them politely to be quiet.\"" },
+        { "q": "What did the students do then?", "options": ["They moved to the cafe", "They left the building", "They continued talking", "They became angry"], "answer": 0, "note": "\"The students apologized and moved to the cafe downstairs.\"" },
+        { "q": "What did Ece realize about herself?", "options": ["She never speaks up", "She talks too much", "She needs new friends", "She should study at home"], "answer": 0, "note": "\"She never says anything when something is wrong.\"" }
+      ]
+    },
+    {
+      "id": "a2-r-10",
+      "level": "A2",
+      "order": 10,
+      "kind": "reading",
+      "title": "Balkonda bahçe",
+      "titleEn": "A Garden on the Balcony",
+      "minutes": 3,
+      "names": ["Fatma"],
+      "text": "Fatma lives on the sixth floor and she has no garden. Two years ago her daughter gave her three small plants for her birthday. Fatma put them on the balcony and watered them every morning. They grew quickly, so she bought more. Now the balcony is full of green: tomatoes, peppers, mint and flowers of many colors. In summer she eats a salad from her own balcony almost every day. Her neighbor on the fifth floor started a small garden too, and they exchange plants. Fatma says the best part is not the food. It is that she has something to look after, and a reason to open the door every morning.",
+      "textTr": "Fatma altıncı katta yaşıyor ve bahçesi yok. İki yıl önce kızı doğum gününde ona üç küçük bitki verdi. Fatma onları balkona koydu ve her sabah suladı. Hızla büyüdüler, o da daha fazla aldı. Şimdi balkon yemyeşil: domates, biber, nane ve birçok renkte çiçek. Yazın neredeyse her gün kendi balkonundan salata yiyor. Beşinci kattaki komşusu da küçük bir bahçe kurdu ve bitki değiş tokuşu yapıyorlar. Fatma en güzel kısmın yiyecek olmadığını söylüyor. Asıl güzel olan, bakacak bir şeyinin ve her sabah kapıyı açmak için bir sebebinin olması.",
+      "glossary": [
+        { "w": "plants", "tr": "bitkiler" },
+        { "w": "mint", "tr": "nane" },
+        { "w": "exchange", "tr": "değiş tokuş etmek" }
+      ],
+      "questions": [
+        { "q": "Who gave Fatma the first plants?", "options": ["Her daughter", "Her neighbor", "Her son", "A friend"], "answer": 0, "note": "\"Her daughter gave her three small plants for her birthday.\"" },
+        { "q": "What grows on the balcony now?", "options": ["Tomatoes, peppers, mint and flowers", "Only flowers", "Fruit trees", "Only tomatoes"], "answer": 0, "note": "\"Tomatoes, peppers, mint and flowers of many colors.\"" },
+        { "q": "What does Fatma do with her neighbor?", "options": ["They exchange plants", "They cook together", "They sell vegetables", "They share a balcony"], "answer": 0, "note": "\"They exchange plants.\"" },
+        { "q": "What does Fatma like most?", "options": ["Having something to look after", "The free food", "Talking to her neighbor", "The colors"], "answer": 0, "note": "En güzel kısım bakacak bir şeyinin olması." },
+        { "q": "How often does she eat her own salad in summer?", "options": ["Almost every day", "Once a week", "Twice a month", "Never"], "answer": 0, "note": "\"In summer she eats a salad from her own balcony almost every day.\"" }
+      ]
+    }
+  ]
+}

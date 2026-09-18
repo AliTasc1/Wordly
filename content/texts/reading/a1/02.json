@@ -1,0 +1,110 @@
+{
+  "_meta": { "batch": "a1-reading-02", "level": "A1", "range": "Parça 6-10" },
+  "items": [
+    {
+      "id": "a1-r-06",
+      "level": "A1",
+      "order": 6,
+      "kind": "reading",
+      "title": "Doğum günü",
+      "titleEn": "A Birthday",
+      "minutes": 2,
+      "names": ["Zeynep", "Kaya"],
+      "text": "Today is Zeynep's birthday. She is eight years old. Her mother makes a big cake with chocolate. Her father buys a red bicycle for her. In the afternoon her friends come to the house. They sing a song and eat cake. Zeynep opens her presents. She gets two books, a doll and a white hat. Her friend Kaya gives her a small cat. Zeynep is very happy. In the evening she is tired but she does not want to go to bed.",
+      "textTr": "Bugün Zeynep'in doğum günü. Sekiz yaşında. Annesi çikolatalı büyük bir pasta yapıyor. Babası ona kırmızı bir bisiklet alıyor. Öğleden sonra arkadaşları eve geliyor. Şarkı söyleyip pasta yiyorlar. Zeynep hediyelerini açıyor. İki kitap, bir bebek ve beyaz bir şapka alıyor. Arkadaşı Kaya ona küçük bir kedi veriyor. Zeynep çok mutlu. Akşam yorgun ama yatmak istemiyor.",
+      "glossary": [],
+      "questions": [
+        { "q": "How old is Zeynep today?", "options": ["Eight", "Two", "Ten", "Five"], "answer": 0, "note": "\"She is eight years old.\"" },
+        { "q": "What does her father buy?", "options": ["A bicycle", "A cake", "A hat", "A cat"], "answer": 0, "note": "\"Her father buys a red bicycle for her.\"" },
+        { "q": "What does Kaya give her?", "options": ["A cat", "A doll", "A book", "A song"], "answer": 0, "note": "\"Her friend Kaya gives her a small cat.\"" },
+        { "q": "How does Zeynep feel in the evening?", "options": ["Tired but happy", "Angry", "Hungry", "Afraid"], "answer": 0, "note": "Akşam yorgun ama mutlu, yatmak istemiyor." }
+      ]
+    },
+    {
+      "id": "a1-r-07",
+      "level": "A1",
+      "order": 7,
+      "kind": "reading",
+      "title": "Doktorda",
+      "titleEn": "At the Doctor",
+      "minutes": 2,
+      "names": ["Murat"],
+      "text": "Murat does not feel well today. His head hurts and he is very hot. He calls his office and says, \"I am ill. I cannot come to work.\" Then he goes to the doctor. The doctor asks many questions. She looks at his eyes and his mouth. She says, \"You must stay at home for three days. Drink a lot of water and sleep.\" Murat buys medicine and goes home. His sister makes hot soup for him. After two days he feels better.",
+      "textTr": "Murat bugün kendini iyi hissetmiyor. Başı ağrıyor ve ateşi çok yüksek. Ofisini arayıp \"Hastayım, işe gelemiyorum\" diyor. Sonra doktora gidiyor. Doktor birçok soru soruyor. Gözlerine ve ağzına bakıyor. \"Üç gün evde kalmalısın. Bol su iç ve uyu\" diyor. Murat ilaç alıp eve gidiyor. Kız kardeşi ona sıcak çorba yapıyor. İki gün sonra kendini daha iyi hissediyor.",
+      "glossary": [
+        { "w": "ill", "tr": "hasta" },
+        { "w": "medicine", "tr": "ilaç" }
+      ],
+      "questions": [
+        { "q": "What is the problem with Murat?", "options": ["His head hurts", "His leg hurts", "He is hungry", "He is tired"], "answer": 0, "note": "\"His head hurts and he is very hot.\"" },
+        { "q": "What does the doctor say?", "options": ["Stay at home for three days", "Go to work", "Come again tomorrow", "Eat more"], "answer": 0, "note": "\"You must stay at home for three days.\"" },
+        { "q": "Who makes soup for Murat?", "options": ["His sister", "His mother", "The doctor", "His friend"], "answer": 0, "note": "\"His sister makes hot soup for him.\"" },
+        { "q": "How does Murat feel after two days?", "options": ["Better", "Worse", "Angry", "Afraid"], "answer": 0, "note": "\"After two days he feels better.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-08",
+      "level": "A1",
+      "order": 8,
+      "kind": "reading",
+      "title": "Odam",
+      "titleEn": "My Room",
+      "minutes": 2,
+      "names": [],
+      "text": "My room is not big but I like it. There is a bed near the window and a small table next to it. On the table there is a lamp, a clock and two books. My computer is on the desk. There are three pictures on the wall. My favorite picture is of the sea. Under the bed there is a box with old letters in it. The room is often cold in winter, so I close the window at night. I do my homework here every evening.",
+      "textTr": "Odam büyük değil ama seviyorum. Pencerenin yanında bir yatak ve onun yanında küçük bir masa var. Masanın üstünde bir lamba, bir saat ve iki kitap var. Bilgisayarım çalışma masasının üstünde. Duvarda üç resim var. En sevdiğim resim denizin resmi. Yatağın altında içinde eski mektuplar olan bir kutu var. Oda kışın çoğu zaman soğuk oluyor, o yüzden geceleri pencereyi kapatıyorum. Her akşam ödevimi burada yapıyorum.",
+      "glossary": [
+        { "w": "lamp", "tr": "lamba" }
+      ],
+      "questions": [
+        { "q": "Where is the bed?", "options": ["Near the window", "Next to the door", "Under the table", "On the wall"], "answer": 0, "note": "\"There is a bed near the window.\"" },
+        { "q": "What is under the bed?", "options": ["A box with old letters", "A computer", "Three pictures", "A lamp"], "answer": 0, "note": "\"Under the bed there is a box with old letters.\"" },
+        { "q": "Why does the writer close the window at night?", "options": ["The room is cold", "The room is hot", "It is late", "It is dark"], "answer": 0, "note": "Oda kışın soğuk oluyor." },
+        { "q": "What does the writer do in the room every evening?", "options": ["Homework", "Sport", "Cooking", "Nothing"], "answer": 0, "note": "\"I do my homework here every evening.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-09",
+      "level": "A1",
+      "order": 9,
+      "kind": "reading",
+      "title": "Yağmurlu gün",
+      "titleEn": "A Rainy Day",
+      "minutes": 2,
+      "names": ["Berk"],
+      "text": "It is Saturday and it is raining. Berk wants to play football with his friends, but they cannot go to the park. He is not happy. His mother says, \"Let's make pizza together.\" They go to the kitchen. Berk cuts the tomatoes and his mother makes the bread. The kitchen is warm and it smells good. After lunch they watch a film about animals. In the evening the rain stops. Berk looks out of the window and sees the moon. Tomorrow he can play football.",
+      "textTr": "Cumartesi ve yağmur yağıyor. Berk arkadaşlarıyla futbol oynamak istiyor ama parka gidemiyorlar. Mutlu değil. Annesi \"Hadi birlikte pizza yapalım\" diyor. Mutfağa gidiyorlar. Berk domatesleri kesiyor, annesi hamuru yapıyor. Mutfak sıcak ve güzel kokuyor. Öğle yemeğinden sonra hayvanlarla ilgili bir film izliyorlar. Akşam yağmur duruyor. Berk pencereden dışarı bakıyor ve ayı görüyor. Yarın futbol oynayabilir.",
+      "glossary": [
+        { "w": "film", "tr": "film" }
+      ],
+      "questions": [
+        { "q": "Why can't Berk play football?", "options": ["It is raining", "He is busy", "He has homework", "The park is closed"], "answer": 0, "note": "\"It is Saturday and it is raining.\"" },
+        { "q": "What do Berk and his mother make?", "options": ["Pizza", "Soup", "Cake", "Bread only"], "answer": 0, "note": "\"Let's make pizza together.\"" },
+        { "q": "What do they watch after lunch?", "options": ["A film about animals", "A football match", "The news", "A song"], "answer": 0, "note": "\"They watch a film about animals.\"" },
+        { "q": "What happens in the evening?", "options": ["The rain stops", "It rains more", "They go to the park", "Berk goes to bed"], "answer": 0, "note": "\"In the evening the rain stops.\"" }
+      ]
+    },
+    {
+      "id": "a1-r-10",
+      "level": "A1",
+      "order": 10,
+      "kind": "reading",
+      "title": "Yeni öğrenci",
+      "titleEn": "The New Student",
+      "minutes": 2,
+      "names": ["Lina", "Emre"],
+      "text": "There is a new student in our class. Her name is Lina and she is from another country. She speaks three languages but her Turkish is not very good. On the first day she sits alone and says nothing. My friend Emre gives her a pen and asks her name. Now we eat lunch together every day. Lina teaches us words in her language and we help her with Turkish. She is funny and she draws very well. Our teacher says Lina is a good student.",
+      "textTr": "Sınıfımızda yeni bir öğrenci var. Adı Lina ve başka bir ülkeden geliyor. Üç dil konuşuyor ama Türkçesi pek iyi değil. İlk gün tek başına oturuyor ve hiçbir şey söylemiyor. Arkadaşım Emre ona bir kalem veriyor ve adını soruyor. Artık her gün birlikte öğle yemeği yiyoruz. Lina bize kendi dilinde kelimeler öğretiyor, biz de ona Türkçede yardım ediyoruz. Komik biri ve çok güzel resim çiziyor. Öğretmenimiz Lina'nın iyi bir öğrenci olduğunu söylüyor.",
+      "glossary": [
+        { "w": "country", "tr": "ülke" },
+        { "w": "village", "tr": "köy" }
+      ],
+      "questions": [
+        { "q": "Where is Lina from?", "options": ["Another country", "Our city", "The same school", "A village"], "answer": 0, "note": "\"She is from another country.\"" },
+        { "q": "What does Emre give her?", "options": ["A pen", "A book", "Lunch", "A picture"], "answer": 0, "note": "\"Emre gives her a pen and asks her name.\"" },
+        { "q": "What does Lina teach the class?", "options": ["Words in her language", "Turkish", "Music", "Sport"], "answer": 0, "note": "\"Lina teaches us words in her language.\"" },
+        { "q": "What is Lina good at?", "options": ["Drawing", "Football", "Cooking", "Singing"], "answer": 0, "note": "\"She draws very well.\"" }
+      ]
+    }
+  ]
+}

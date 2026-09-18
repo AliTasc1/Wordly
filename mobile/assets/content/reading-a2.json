@@ -1,0 +1,835 @@
+[
+ {
+  "id": "a2-r-01",
+  "level": "A2",
+  "order": 1,
+  "kind": "reading",
+  "title": "İlk iş günü",
+  "titleEn": "The First Day at Work",
+  "minutes": 3,
+  "names": [
+   "Selin",
+   "Okan"
+  ],
+  "text": "Last Monday was Selin's first day at her new job. She woke up at six because she did not want to be late. The office was in the city center, about forty minutes from her flat. When she arrived, a man called Okan was waiting for her at the door. He showed her the kitchen, the meeting rooms and her desk near the window. In the morning she read a lot of documents and tried to remember everybody's name. At lunch her new colleagues invited her to a small restaurant. They were friendly and asked her many questions. In the afternoon her manager explained the first project. Selin did not understand everything, but she wrote notes in her notebook. When she got home, she was tired but happy. She thought, \"I am going to like this place.\"",
+  "textTr": "Geçen pazartesi Selin'in yeni işindeki ilk günüydü. Geç kalmak istemediği için altıda kalktı. Ofis şehir merkezindeydi, dairesine yaklaşık kırk dakika uzaklıkta. Vardığında Okan adında bir adam kapıda onu bekliyordu. Ona mutfağı, toplantı odalarını ve pencerenin yanındaki masasını gösterdi. Sabah birçok belge okudu ve herkesin adını hatırlamaya çalıştı. Öğle yemeğinde yeni iş arkadaşları onu küçük bir restorana davet etti. Samimilerdi ve ona birçok soru sordular. Öğleden sonra müdürü ilk projeyi anlattı. Selin her şeyi anlamadı ama defterine not aldı. Eve geldiğinde yorgundu ama mutluydu. \"Burayı seveceğim\" diye düşündü.",
+  "glossary": [
+   {
+    "w": "colleagues",
+    "tr": "iş arkadaşları"
+   },
+   {
+    "w": "documents",
+    "tr": "belgeler"
+   },
+   {
+    "w": "project",
+    "tr": "proje"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did Selin wake up at six?",
+    "options": [
+     "The office opened early",
+     "She could not sleep",
+     "She did not want to be late",
+     "Her manager called her"
+    ],
+    "answer": 2,
+    "note": "\"She woke up at six because she did not want to be late.\""
+   },
+   {
+    "q": "Who met her at the door?",
+    "options": [
+     "Her manager",
+     "Nobody",
+     "A friend",
+     "Okan"
+    ],
+    "answer": 3,
+    "note": "\"A man called Okan was waiting for her at the door.\""
+   },
+   {
+    "q": "What did she do during the morning?",
+    "options": [
+     "She worked on the project",
+     "She had a meeting",
+     "She met the manager",
+     "She read documents"
+    ],
+    "answer": 3,
+    "note": "\"She read a lot of documents.\""
+   },
+   {
+    "q": "How did Selin feel at the end of the day?",
+    "options": [
+     "Afraid",
+     "Bored",
+     "Angry",
+     "Tired but happy"
+    ],
+    "answer": 3,
+    "note": "\"She was tired but happy.\""
+   },
+   {
+    "q": "What did she do when she did not understand?",
+    "options": [
+     "She went home",
+     "She asked nothing",
+     "She called a friend",
+     "She wrote notes"
+    ],
+    "answer": 3,
+    "note": "\"She wrote notes in her notebook.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-02",
+  "level": "A2",
+  "order": 2,
+  "kind": "reading",
+  "title": "Kayıp telefon",
+  "titleEn": "The Lost Phone",
+  "minutes": 3,
+  "names": [
+   "Baris"
+  ],
+  "text": "Yesterday Baris lost his phone on the bus. He did not notice it until he arrived at the university. He looked in his bag three times, but the phone was not there. He remembered that he had put it on the seat next to him. Baris was worried because all his photographs were on that phone. He went to the bus office and explained the problem. The woman behind the desk took his name and telephone number and said, \"Call us tomorrow morning.\" That evening Baris could not study. He kept thinking about the phone. The next day the office called him: a student had found the phone and brought it back. Baris was so happy that he bought a box of chocolates for the office staff.",
+  "textTr": "Dün Barış telefonunu otobüste kaybetti. Üniversiteye varana kadar fark etmedi. Çantasına üç kez baktı ama telefon orada değildi. Onu yanındaki koltuğa koyduğunu hatırladı. Barış endişeliydi çünkü bütün fotoğrafları o telefondaydı. Otobüs bürosuna gidip sorunu anlattı. Masanın arkasındaki kadın adını ve telefon numarasını aldı ve \"Yarın sabah bizi arayın\" dedi. O akşam Barış ders çalışamadı. Sürekli telefonu düşündü. Ertesi gün büro onu aradı: bir öğrenci telefonu bulup getirmişti. Barış o kadar mutlu oldu ki büro çalışanlarına bir kutu çikolata aldı.",
+  "glossary": [
+   {
+    "w": "staff",
+    "tr": "çalışanlar, personel"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Baris lose his phone?",
+    "options": [
+     "At the university",
+     "In the office",
+     "On the bus",
+     "At home"
+    ],
+    "answer": 2,
+    "note": "\"Baris lost his phone on the bus.\""
+   },
+   {
+    "q": "Why was he worried?",
+    "options": [
+     "It was a new phone",
+     "His photographs were on the phone",
+     "The phone was expensive",
+     "He needed to call his family"
+    ],
+    "answer": 1,
+    "note": "\"All his photographs were on that phone.\""
+   },
+   {
+    "q": "What did the woman ask for?",
+    "options": [
+     "His name and number",
+     "Money",
+     "His address",
+     "A photograph"
+    ],
+    "answer": 0,
+    "note": "\"The woman took his name and telephone number.\""
+   },
+   {
+    "q": "Who found the phone?",
+    "options": [
+     "His friend",
+     "The driver",
+     "The woman",
+     "A student"
+    ],
+    "answer": 3,
+    "note": "\"A student had found the phone.\""
+   },
+   {
+    "q": "What did Baris do at the end?",
+    "options": [
+     "He went back to the bus",
+     "He wrote a letter",
+     "He bought a new phone",
+     "He bought chocolates for the staff"
+    ],
+    "answer": 3,
+    "note": "Teşekkür olarak çikolata aldı."
+   }
+  ]
+ },
+ {
+  "id": "a2-r-03",
+  "level": "A2",
+  "order": 3,
+  "kind": "reading",
+  "title": "Köyden şehre",
+  "titleEn": "From the Village to the City",
+  "minutes": 3,
+  "names": [
+   "Hasan"
+  ],
+  "text": "Hasan grew up in a small village with about two hundred people. His family had sheep and a garden with fruit trees. There was only one school and one shop. When he was eighteen, he moved to the city to study engineering. At first everything was strange. The streets were noisy, the buildings were tall and nobody said hello in the morning. He missed the quiet nights and the smell of the garden. After two years he made good friends and started to enjoy the city. Now he works for a large company and lives in a modern flat. But every summer he goes back to the village for three weeks. He says the village is still his real home.",
+  "textTr": "Hasan yaklaşık iki yüz kişilik küçük bir köyde büyüdü. Ailesinin koyunları ve meyve ağaçları olan bir bahçesi vardı. Sadece bir okul ve bir dükkân vardı. On sekiz yaşındayken mühendislik okumak için şehre taşındı. Başta her şey tuhaftı. Sokaklar gürültülüydü, binalar yüksekti ve sabahları kimse selam vermiyordu. Sessiz geceleri ve bahçenin kokusunu özledi. İki yıl sonra iyi arkadaşlar edindi ve şehri sevmeye başladı. Şimdi büyük bir şirkette çalışıyor ve modern bir dairede yaşıyor. Ama her yaz üç haftalığına köye dönüyor. Köyün hâlâ gerçek evi olduğunu söylüyor.",
+  "glossary": [
+   {
+    "w": "engineering",
+    "tr": "mühendislik"
+   },
+   {
+    "w": "sheep",
+    "tr": "koyun"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many people lived in the village?",
+    "options": [
+     "Three hundred",
+     "Eighteen",
+     "About two hundred",
+     "About two thousand"
+    ],
+    "answer": 2,
+    "note": "\"A small village with about two hundred people.\""
+   },
+   {
+    "q": "Why did Hasan move to the city?",
+    "options": [
+     "To be with friends",
+     "To find work",
+     "To study engineering",
+     "To sell fruit"
+    ],
+    "answer": 2,
+    "note": "\"He moved to the city to study engineering.\""
+   },
+   {
+    "q": "What did he find difficult at first?",
+    "options": [
+     "The school was hard",
+     "The city was noisy and strange",
+     "He had no money",
+     "The flat was small"
+    ],
+    "answer": 1,
+    "note": "\"At first everything was strange. The streets were noisy.\""
+   },
+   {
+    "q": "How often does he visit the village now?",
+    "options": [
+     "Every month",
+     "Twice a year",
+     "Every summer",
+     "Never"
+    ],
+    "answer": 2,
+    "note": "\"Every summer he goes back to the village for three weeks.\""
+   },
+   {
+    "q": "What does Hasan say about the village?",
+    "options": [
+     "He will move back",
+     "It is still his real home",
+     "It is too quiet",
+     "It has changed"
+    ],
+    "answer": 1,
+    "note": "\"He says the village is still his real home.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-04",
+  "level": "A2",
+  "order": 4,
+  "kind": "reading",
+  "title": "Spor salonu",
+  "titleEn": "The Gym",
+  "minutes": 3,
+  "names": [
+   "Pinar"
+  ],
+  "text": "Three months ago Pinar decided to change her habits. She was always tired and she never did any sport. A friend told her about a gym near the train station, so she went there on a Saturday morning to ask about the prices. The trainer showed her the machines and made a plan for her: three days a week, forty minutes each time. The first week was difficult and her legs hurt, but she did not stop. After a month she noticed that she slept better. After two months she could run for twenty minutes without a break. Now Pinar goes to the gym before work and she has more energy during the day. Her sister has decided to join her next month.",
+  "textTr": "Üç ay önce Pınar alışkanlıklarını değiştirmeye karar verdi. Sürekli yorgundu ve hiç spor yapmıyordu. Bir arkadaşı ona tren istasyonunun yanındaki spor salonundan bahsetti, o da bir cumartesi sabahı fiyatları sormaya gitti. Antrenör ona aletleri gösterdi ve bir program yaptı: haftada üç gün, her seferinde kırk dakika. İlk hafta zordu ve bacakları ağrıdı ama bırakmadı. Bir ay sonra daha iyi uyuduğunu fark etti. İki ay sonra ara vermeden yirmi dakika koşabiliyordu. Şimdi Pınar işten önce spor salonuna gidiyor ve gün içinde daha çok enerjisi oluyor. Kız kardeşi de gelecek ay ona katılmaya karar verdi.",
+  "glossary": [
+   {
+    "w": "gym",
+    "tr": "spor salonu"
+   },
+   {
+    "w": "trainer",
+    "tr": "antrenör"
+   },
+   {
+    "w": "energy",
+    "tr": "enerji"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why did Pinar decide to change her habits?",
+    "options": [
+     "She was always tired",
+     "She was ill",
+     "Her sister asked her",
+     "She wanted to meet people"
+    ],
+    "answer": 0,
+    "note": "\"She was always tired and she never did any sport.\""
+   },
+   {
+    "q": "How often does she go to the gym?",
+    "options": [
+     "Twice a week",
+     "Three days a week",
+     "Every day",
+     "At weekends only"
+    ],
+    "answer": 1,
+    "note": "\"Three days a week, forty minutes each time.\""
+   },
+   {
+    "q": "What happened after one month?",
+    "options": [
+     "She stopped going",
+     "She slept better",
+     "She could run for twenty minutes",
+     "She changed gyms"
+    ],
+    "answer": 1,
+    "note": "\"After a month she noticed that she slept better.\""
+   },
+   {
+    "q": "When does Pinar go to the gym now?",
+    "options": [
+     "At lunch",
+     "Before work",
+     "At night",
+     "After work"
+    ],
+    "answer": 1,
+    "note": "\"Pinar goes to the gym before work.\""
+   },
+   {
+    "q": "Who is going to join her?",
+    "options": [
+     "Her brother",
+     "The trainer",
+     "Her sister",
+     "Her friend"
+    ],
+    "answer": 2,
+    "note": "\"Her sister has decided to join her next month.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-05",
+  "level": "A2",
+  "order": 5,
+  "kind": "reading",
+  "title": "Eski bir mektup",
+  "titleEn": "An Old Letter",
+  "minutes": 3,
+  "names": [
+   "Nil"
+  ],
+  "text": "While Nil was cleaning the cupboard, she found a box of old letters. They were written by her grandmother more than fifty years ago. The paper was yellow and some words were difficult to read. In one letter her grandmother described her wedding day: the weather was terrible, the car did not start and the photographer arrived two hours late. But she wrote, \"It was the happiest day of my life.\" Nil sat on the floor and read for two hours. She learned things about her family that nobody had told her. The next weekend she visited her grandmother and asked about the letters. They talked until midnight and looked at old photographs together.",
+  "textTr": "Nil dolabı temizlerken eski mektuplarla dolu bir kutu buldu. Bunlar elli yıldan fazla süre önce büyükannesi tarafından yazılmıştı. Kâğıt sararmıştı ve bazı kelimeleri okumak zordu. Bir mektupta büyükannesi düğün gününü anlatıyordu: hava berbattı, araba çalışmadı ve fotoğrafçı iki saat geç geldi. Ama \"Hayatımın en mutlu günüydü\" diye yazmıştı. Nil yere oturup iki saat okudu. Ailesi hakkında kimsenin ona anlatmadığı şeyler öğrendi. Ertesi hafta sonu büyükannesini ziyaret edip mektupları sordu. Gece yarısına kadar konuştular ve birlikte eski fotoğraflara baktılar.",
+  "glossary": [
+   {
+    "w": "cupboard",
+    "tr": "dolap"
+   },
+   {
+    "w": "wedding",
+    "tr": "düğün"
+   },
+   {
+    "w": "photographer",
+    "tr": "fotoğrafçı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did Nil find the letters?",
+    "options": [
+     "In a cupboard",
+     "At her grandmother's house",
+     "In the garden",
+     "In a shop"
+    ],
+    "answer": 0,
+    "note": "\"While Nil was cleaning the cupboard, she found a box of old letters.\""
+   },
+   {
+    "q": "Who wrote the letters?",
+    "options": [
+     "Her sister",
+     "Her grandmother",
+     "Her mother",
+     "A friend"
+    ],
+    "answer": 1,
+    "note": "\"They were written by her grandmother.\""
+   },
+   {
+    "q": "What went wrong on the wedding day?",
+    "options": [
+     "Nobody came",
+     "It was too hot",
+     "The car did not start",
+     "She was ill"
+    ],
+    "answer": 2,
+    "note": "\"The car did not start and the photographer arrived two hours late.\""
+   },
+   {
+    "q": "What did her grandmother write about that day?",
+    "options": [
+     "She was angry",
+     "It was the happiest day of her life",
+     "It was terrible",
+     "She wanted to forget it"
+    ],
+    "answer": 1,
+    "note": "Her şeye rağmen \"hayatımın en mutlu günü\" yazmış."
+   },
+   {
+    "q": "What did Nil do the next weekend?",
+    "options": [
+     "She visited her grandmother",
+     "She cleaned again",
+     "She wrote a letter",
+     "She showed the letters to friends"
+    ],
+    "answer": 0,
+    "note": "\"The next weekend she visited her grandmother.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-06",
+  "level": "A2",
+  "order": 6,
+  "kind": "reading",
+  "title": "Otel sorunu",
+  "titleEn": "A Problem at the Hotel",
+  "minutes": 3,
+  "names": [
+   "Cem",
+   "Antalya"
+  ],
+  "text": "Cem booked a hotel room in Antalya for four nights. On the website the photographs showed a large room with a view of the sea. When he arrived, the receptionist gave him a key for a room at the back of the building. The window looked at a car park and the air conditioning did not work. Cem went downstairs and explained the problem politely. The receptionist said the hotel was full and there were no other rooms. Cem showed her the photographs on his phone and asked for the manager. After twenty minutes the manager found a better room on the fourth floor. He also offered a free breakfast for the whole week. Cem was pleased, but he decided to read the reviews more carefully next time.",
+  "textTr": "Cem Antalya'da dört gecelik bir otel odası ayırttı. İnternet sitesinde fotoğraflar deniz manzaralı büyük bir oda gösteriyordu. Vardığında resepsiyon görevlisi ona binanın arkasındaki bir odanın anahtarını verdi. Pencere otoparka bakıyordu ve klima çalışmıyordu. Cem aşağı inip sorunu kibarca anlattı. Görevli otelin dolu olduğunu ve başka oda olmadığını söyledi. Cem ona telefonundaki fotoğrafları gösterdi ve müdürü istedi. Yirmi dakika sonra müdür dördüncü katta daha iyi bir oda buldu. Ayrıca bütün hafta için ücretsiz kahvaltı teklif etti. Cem memnun oldu ama bir dahaki sefere yorumları daha dikkatli okumaya karar verdi.",
+  "glossary": [
+   {
+    "w": "receptionist",
+    "tr": "resepsiyon görevlisi"
+   },
+   {
+    "w": "reviews",
+    "tr": "yorumlar, değerlendirmeler"
+   },
+   {
+    "w": "politely",
+    "tr": "kibarca"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was wrong with the first room?",
+    "options": [
+     "It was on the fourth floor",
+     "It was too small",
+     "It looked at a car park",
+     "It was expensive"
+    ],
+    "answer": 2,
+    "note": "\"The window looked at a car park and the air conditioning did not work.\""
+   },
+   {
+    "q": "What did the receptionist say at first?",
+    "options": [
+     "The manager was away",
+     "The hotel was full",
+     "She would change the room",
+     "The photographs were old"
+    ],
+    "answer": 1,
+    "note": "\"The hotel was full and there were no other rooms.\""
+   },
+   {
+    "q": "What did Cem show her?",
+    "options": [
+     "A letter",
+     "His ticket",
+     "His key",
+     "The photographs on his phone"
+    ],
+    "answer": 3,
+    "note": "\"Cem showed her the photographs on his phone.\""
+   },
+   {
+    "q": "What did the manager offer?",
+    "options": [
+     "One free night",
+     "A different hotel",
+     "Money back",
+     "A better room and free breakfast"
+    ],
+    "answer": 3,
+    "note": "Daha iyi bir oda ve bütün hafta ücretsiz kahvaltı."
+   },
+   {
+    "q": "What will Cem do next time?",
+    "options": [
+     "Travel in winter",
+     "Call before he arrives",
+     "Book a different hotel",
+     "Read the reviews carefully"
+    ],
+    "answer": 3,
+    "note": "\"He decided to read the reviews more carefully next time.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-07",
+  "level": "A2",
+  "order": 7,
+  "kind": "reading",
+  "title": "Sokak kedisi",
+  "titleEn": "The Street Cat",
+  "minutes": 3,
+  "names": [
+   "Aylin",
+   "Duman"
+  ],
+  "text": "Last winter a thin gray cat started to sleep in front of Aylin's door. At first Aylin only gave it water, because she did not want a pet. But the nights were cold and the cat was always waiting there in the morning. One day she took it to a doctor for animals. The doctor said the cat was about two years old and quite healthy. Aylin bought a small bed and called the cat Duman. Now Duman sleeps inside and follows her from room to room. Aylin says she did not choose the cat; the cat chose her. Her neighbors often ask about Duman because he sits in the window and watches the street all day.",
+  "textTr": "Geçen kış ince gri bir kedi Aylin'in kapısının önünde uyumaya başladı. Aylin başta sadece su verdi çünkü evcil hayvan istemiyordu. Ama geceler soğuktu ve kedi her sabah orada bekliyordu. Bir gün onu hayvan doktoruna götürdü. Doktor kedinin yaklaşık iki yaşında ve oldukça sağlıklı olduğunu söyledi. Aylin küçük bir yatak aldı ve kediye Duman adını verdi. Şimdi Duman içeride uyuyor ve odadan odaya onu takip ediyor. Aylin kediyi kendisinin seçmediğini, kedinin onu seçtiğini söylüyor. Komşuları sık sık Duman'ı soruyor çünkü bütün gün pencerede oturup sokağı izliyor.",
+  "glossary": [
+   {
+    "w": "pet",
+    "tr": "evcil hayvan"
+   },
+   {
+    "w": "healthy",
+    "tr": "sağlıklı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Where did the cat sleep at first?",
+    "options": [
+     "At the doctor's",
+     "In the street",
+     "Inside the house",
+     "In front of Aylin's door"
+    ],
+    "answer": 3,
+    "note": "\"A thin gray cat started to sleep in front of Aylin's door.\""
+   },
+   {
+    "q": "Why did Aylin only give water at first?",
+    "options": [
+     "She was busy",
+     "She did not want a pet",
+     "The cat was ill",
+     "She had no food"
+    ],
+    "answer": 1,
+    "note": "\"She did not want a pet.\""
+   },
+   {
+    "q": "What did the doctor say?",
+    "options": [
+     "The cat was ill",
+     "The cat had an owner",
+     "The cat was very old",
+     "The cat was healthy"
+    ],
+    "answer": 3,
+    "note": "\"The cat was about two years old and quite healthy.\""
+   },
+   {
+    "q": "What does Aylin say about the cat?",
+    "options": [
+     "The cat is difficult",
+     "The cat chose her",
+     "She always wanted a cat",
+     "She will find a new home for it"
+    ],
+    "answer": 1,
+    "note": "\"She did not choose the cat; the cat chose her.\""
+   },
+   {
+    "q": "Why do the neighbors ask about Duman?",
+    "options": [
+     "He belongs to a neighbor",
+     "He is very noisy",
+     "He sits in the window all day",
+     "He visits their houses"
+    ],
+    "answer": 2,
+    "note": "Pencerede oturup sokağı izlediği için herkes onu görüyor."
+   }
+  ]
+ },
+ {
+  "id": "a2-r-08",
+  "level": "A2",
+  "order": 8,
+  "kind": "reading",
+  "title": "Bisikletle işe",
+  "titleEn": "Cycling to Work",
+  "minutes": 3,
+  "names": [
+   "Tolga"
+  ],
+  "text": "Tolga used to drive to work every morning. The journey was only six kilometers, but it often took him thirty minutes because of the traffic. Last spring he bought a bicycle. On the first day he was slow and arrived late, but after two weeks he was faster than his car. Now he saves money and he arrives at the office awake and in a good mood. Of course there are problems. When it rains he gets wet, and in winter it is dark when he comes home. His wife thinks the roads are dangerous, so Tolga always wears a helmet and bright clothes. He says he will never go back to driving.",
+  "textTr": "Tolga eskiden her sabah işe arabayla giderdi. Yol sadece altı kilometreydi ama trafik yüzünden çoğu zaman otuz dakika sürüyordu. Geçen ilkbahar bir bisiklet aldı. İlk gün yavaştı ve geç kaldı ama iki hafta sonra arabasından daha hızlıydı. Şimdi para biriktiriyor ve ofise uyanık ve keyifli varıyor. Tabii sorunlar da var. Yağmur yağınca ıslanıyor, kışın eve dönerken hava karanlık oluyor. Eşi yolların tehlikeli olduğunu düşünüyor, o yüzden Tolga hep kask ve parlak kıyafet giyiyor. Bir daha asla arabaya dönmeyeceğini söylüyor.",
+  "glossary": [
+   {
+    "w": "helmet",
+    "tr": "kask"
+   },
+   {
+    "w": "mood",
+    "tr": "ruh hâli, keyif"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long is Tolga's journey to work?",
+    "options": [
+     "Two kilometers",
+     "Six kilometers",
+     "Sixteen kilometers",
+     "Thirty kilometers"
+    ],
+    "answer": 1,
+    "note": "\"The journey was only six kilometers.\""
+   },
+   {
+    "q": "Why did the car journey take so long?",
+    "options": [
+     "Because the road was bad",
+     "Because of the traffic",
+     "Because the car was old",
+     "Because he started late"
+    ],
+    "answer": 1,
+    "note": "\"It often took him thirty minutes because of the traffic.\""
+   },
+   {
+    "q": "What happened after two weeks?",
+    "options": [
+     "He stopped cycling",
+     "He bought a new bicycle",
+     "He was still slow",
+     "He was faster than his car"
+    ],
+    "answer": 3,
+    "note": "\"After two weeks he was faster than his car.\""
+   },
+   {
+    "q": "What does his wife think?",
+    "options": [
+     "Cycling is too slow",
+     "He should drive again",
+     "The bicycle was expensive",
+     "The roads are dangerous"
+    ],
+    "answer": 3,
+    "note": "\"His wife thinks the roads are dangerous.\""
+   },
+   {
+    "q": "What does Tolga wear?",
+    "options": [
+     "Nothing special",
+     "Work clothes",
+     "A helmet and bright clothes",
+     "A warm coat only"
+    ],
+    "answer": 2,
+    "note": "\"Tolga always wears a helmet and bright clothes.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-09",
+  "level": "A2",
+  "order": 9,
+  "kind": "reading",
+  "title": "Kütüphanedeki sessizlik",
+  "titleEn": "Quiet in the Library",
+  "minutes": 3,
+  "names": [
+   "Ece"
+  ],
+  "text": "Ece studies at the city library almost every afternoon. She likes it because it is quiet and she cannot look at her phone there. The rule is simple: no telephones, no food, no talking. Last week a group of students came in and started to talk about a film. The other readers looked at them, but nobody said anything. Finally an old man stood up and asked them politely to be quiet. The students apologized and moved to the cafe downstairs. Ece thought about this for a long time. She realized that she never says anything when something is wrong. Now she is trying to speak up more often.",
+  "textTr": "Ece neredeyse her öğleden sonra şehir kütüphanesinde ders çalışıyor. Orayı seviyor çünkü sessiz ve orada telefonuna bakamıyor. Kural basit: telefon yok, yiyecek yok, konuşma yok. Geçen hafta bir grup öğrenci geldi ve bir film hakkında konuşmaya başladı. Diğer okuyucular onlara baktı ama kimse bir şey söylemedi. Sonunda yaşlı bir adam ayağa kalkıp kibarca sessiz olmalarını istedi. Öğrenciler özür dileyip alt kattaki kafeye gittiler. Ece bunu uzun süre düşündü. Bir şey yanlış olduğunda hiçbir zaman bir şey söylemediğini fark etti. Artık daha sık sesini çıkarmaya çalışıyor.",
+  "glossary": [
+   {
+    "w": "apologized",
+    "tr": "özür dilediler"
+   },
+   {
+    "w": "realized",
+    "tr": "fark etti"
+   },
+   {
+    "w": "politely",
+    "tr": "kibarca"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why does Ece like the library?",
+    "options": [
+     "It is warm",
+     "It is near her house",
+     "It is quiet and she cannot use her phone",
+     "Her friends are there"
+    ],
+    "answer": 2,
+    "note": "\"She likes it because it is quiet and she cannot look at her phone there.\""
+   },
+   {
+    "q": "What did the students do?",
+    "options": [
+     "They used phones",
+     "They talked about a film",
+     "They moved the chairs",
+     "They ate food"
+    ],
+    "answer": 1,
+    "note": "\"A group of students came in and started to talk about a film.\""
+   },
+   {
+    "q": "Who spoke to the students?",
+    "options": [
+     "A student",
+     "Ece",
+     "An old man",
+     "Nobody"
+    ],
+    "answer": 2,
+    "note": "\"An old man stood up and asked them politely to be quiet.\""
+   },
+   {
+    "q": "What did the students do then?",
+    "options": [
+     "They moved to the cafe",
+     "They left the building",
+     "They became angry",
+     "They continued talking"
+    ],
+    "answer": 0,
+    "note": "\"The students apologized and moved to the cafe downstairs.\""
+   },
+   {
+    "q": "What did Ece realize about herself?",
+    "options": [
+     "She talks too much",
+     "She never speaks up",
+     "She should study at home",
+     "She needs new friends"
+    ],
+    "answer": 1,
+    "note": "\"She never says anything when something is wrong.\""
+   }
+  ]
+ },
+ {
+  "id": "a2-r-10",
+  "level": "A2",
+  "order": 10,
+  "kind": "reading",
+  "title": "Balkonda bahçe",
+  "titleEn": "A Garden on the Balcony",
+  "minutes": 3,
+  "names": [
+   "Fatma"
+  ],
+  "text": "Fatma lives on the sixth floor and she has no garden. Two years ago her daughter gave her three small plants for her birthday. Fatma put them on the balcony and watered them every morning. They grew quickly, so she bought more. Now the balcony is full of green: tomatoes, peppers, mint and flowers of many colors. In summer she eats a salad from her own balcony almost every day. Her neighbor on the fifth floor started a small garden too, and they exchange plants. Fatma says the best part is not the food. It is that she has something to look after, and a reason to open the door every morning.",
+  "textTr": "Fatma altıncı katta yaşıyor ve bahçesi yok. İki yıl önce kızı doğum gününde ona üç küçük bitki verdi. Fatma onları balkona koydu ve her sabah suladı. Hızla büyüdüler, o da daha fazla aldı. Şimdi balkon yemyeşil: domates, biber, nane ve birçok renkte çiçek. Yazın neredeyse her gün kendi balkonundan salata yiyor. Beşinci kattaki komşusu da küçük bir bahçe kurdu ve bitki değiş tokuşu yapıyorlar. Fatma en güzel kısmın yiyecek olmadığını söylüyor. Asıl güzel olan, bakacak bir şeyinin ve her sabah kapıyı açmak için bir sebebinin olması.",
+  "glossary": [
+   {
+    "w": "plants",
+    "tr": "bitkiler"
+   },
+   {
+    "w": "mint",
+    "tr": "nane"
+   },
+   {
+    "w": "exchange",
+    "tr": "değiş tokuş etmek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Who gave Fatma the first plants?",
+    "options": [
+     "Her son",
+     "Her neighbor",
+     "Her daughter",
+     "A friend"
+    ],
+    "answer": 2,
+    "note": "\"Her daughter gave her three small plants for her birthday.\""
+   },
+   {
+    "q": "What grows on the balcony now?",
+    "options": [
+     "Fruit trees",
+     "Only tomatoes",
+     "Only flowers",
+     "Tomatoes, peppers, mint and flowers"
+    ],
+    "answer": 3,
+    "note": "\"Tomatoes, peppers, mint and flowers of many colors.\""
+   },
+   {
+    "q": "What does Fatma do with her neighbor?",
+    "options": [
+     "They exchange plants",
+     "They sell vegetables",
+     "They share a balcony",
+     "They cook together"
+    ],
+    "answer": 0,
+    "note": "\"They exchange plants.\""
+   },
+   {
+    "q": "What does Fatma like most?",
+    "options": [
+     "The free food",
+     "Talking to her neighbor",
+     "The colors",
+     "Having something to look after"
+    ],
+    "answer": 3,
+    "note": "En güzel kısım bakacak bir şeyinin olması."
+   },
+   {
+    "q": "How often does she eat her own salad in summer?",
+    "options": [
+     "Twice a month",
+     "Once a week",
+     "Never",
+     "Almost every day"
+    ],
+    "answer": 3,
+    "note": "\"In summer she eats a salad from her own balcony almost every day.\""
+   }
+  ]
+ }
+]
