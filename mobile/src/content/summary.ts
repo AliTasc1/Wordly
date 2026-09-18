@@ -15,8 +15,12 @@ export type LevelSummary = {
   minutes: number;
 };
 
-/** Minutes assumed for one grammar lesson: read the rule, work the exercises. */
-const GRAMMAR_MINUTES = 6;
+/**
+ * Minutes assumed for one grammar lesson: read the rule, work the exercises.
+ * Every lesson now carries ten exercises rather than five, so the old estimate
+ * of six minutes was counting a lesson that no longer exists.
+ */
+const GRAMMAR_MINUTES = 9;
 
 /**
  * What a level actually contains, read off the build manifests.
