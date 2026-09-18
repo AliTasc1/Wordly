@@ -1,0 +1,222 @@
+{
+  "_meta": { "batch": "b2-listening-01", "level": "B2", "range": "Diyalog 1-5" },
+  "items": [
+    {
+      "id": "b2-l-01",
+      "level": "B2",
+      "order": 1,
+      "kind": "listening",
+      "title": "Proje gecikmesi",
+      "titleEn": "The Project Is Late",
+      "minutes": 5,
+      "names": ["Deniz", "Arda"],
+      "speakers": ["Deniz", "Arda"],
+      "lines": [
+        { "who": "Deniz", "en": "We are three weeks behind and the client has noticed.", "tr": "Üç hafta gerideyiz ve müşteri fark etti." },
+        { "who": "Arda", "en": "I know. The question is what we tell them on Thursday.", "tr": "Biliyorum. Asıl soru perşembe onlara ne söyleyeceğimiz." },
+        { "who": "Deniz", "en": "The honest answer is that we underestimated the testing.", "tr": "Dürüst cevap, test sürecini hafife aldığımız." },
+        { "who": "Arda", "en": "That is true, but saying it plainly will cost us trust.", "tr": "Doğru ama bunu düpedüz söylemek bize güven kaybettirir." },
+        { "who": "Deniz", "en": "Hiding it will cost more when the next delay arrives.", "tr": "Saklamak, bir sonraki gecikmede daha pahalıya patlar." },
+        { "who": "Arda", "en": "So you want to give them the real reason and a new date?", "tr": "Yani gerçek nedeni ve yeni bir tarih vermek mi istiyorsun?" },
+        { "who": "Deniz", "en": "A new date and a shorter list. We cannot deliver everything.", "tr": "Yeni bir tarih ve daha kısa bir liste. Her şeyi teslim edemeyiz." },
+        { "who": "Arda", "en": "They will ask which features are being dropped.", "tr": "Hangi özelliklerin çıkarıldığını soracaklar." },
+        { "who": "Deniz", "en": "Then we should decide that ourselves before the meeting.", "tr": "O hâlde bunu toplantıdan önce kendimiz kararlaştırmalıyız." },
+        { "who": "Arda", "en": "Agreed. A recommendation lands better than a confession.", "tr": "Kabul. Bir öneri, itiraftan daha iyi karşılanır." },
+        { "who": "Deniz", "en": "I would keep the two features they use every day and postpone the rest.", "tr": "Her gün kullandıkları iki özelliği tutar, kalanını ertelerdim." },
+        { "who": "Arda", "en": "The reports will be the hard part. Their finance team asked for those first.", "tr": "Zor kısım raporlar olacak. Mali ekipleri önce onları istemişti." },
+        { "who": "Deniz", "en": "Then we keep the reports and drop the design work nobody has mentioned since spring.", "tr": "O zaman raporları tutar, bahardan beri kimsenin anmadığı tasarım işini çıkarırız." },
+        { "who": "Arda", "en": "That is defensible. Can you put it on one page by Wednesday?", "tr": "Bu savunulabilir. Çarşambaya kadar tek sayfaya sığdırabilir misin?" },
+        { "who": "Deniz", "en": "One page, three columns: what is ready, what is late, what is being postponed.", "tr": "Tek sayfa, üç sütun: hazır olan, geciken, ertelenen." },
+        { "who": "Arda", "en": "Send it to me first. If it survives my questions, it will survive theirs.", "tr": "Önce bana gönder. Benim sorularımdan sağ çıkarsa onlarınkinden de çıkar." }
+      ],
+      "glossary": [
+        { "w": "client", "tr": "müşteri" },
+        { "w": "underestimated", "tr": "hafife aldık" },
+        { "w": "features", "tr": "özellikler" },
+        { "w": "recommendation", "tr": "öneri" },
+        { "w": "confession", "tr": "itiraf" }
+      ],
+      "questions": [
+        { "q": "How far behind is the project?", "options": ["Three weeks", "Three days", "A month", "Two weeks"], "answer": 0, "note": "\"We are three weeks behind.\"" },
+        { "q": "What is the honest reason for the delay?", "options": ["They underestimated testing", "The client changed the plan", "Staff left", "The budget was cut"], "answer": 0, "note": "\"We underestimated the testing.\"" },
+        { "q": "What is Arda's worry about honesty?", "options": ["It will cost trust", "It is against policy", "It takes too long", "Nobody will believe it"], "answer": 0, "note": "\"Saying it plainly will cost us trust.\"" },
+        { "q": "What does Deniz propose?", "options": ["A new date and a shorter list", "More staff", "Working weekends", "Cancelling the project"], "answer": 0, "note": "\"A new date and a shorter list.\"" },
+        { "q": "What do they decide to do before the meeting?", "options": ["Choose which features to drop", "Write an apology", "Call the client", "Ask their manager"], "answer": 0, "note": "\"We should decide that ourselves before the meeting.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-02",
+      "level": "B2",
+      "order": 2,
+      "kind": "listening",
+      "title": "Tez danışmanı",
+      "titleEn": "Meeting the Supervisor",
+      "minutes": 5,
+      "names": ["Irem"],
+      "speakers": ["Irem", "Supervisor"],
+      "lines": [
+        { "who": "Supervisor", "en": "Your draft is well written, but I am not sure what you are arguing.", "tr": "Taslağınız iyi yazılmış ama neyi savunduğunuzdan emin değilim." },
+        { "who": "Irem", "en": "I thought the argument was clear in the introduction.", "tr": "Savın girişte açık olduğunu düşünmüştüm." },
+        { "who": "Supervisor", "en": "You describe the debate accurately. You do not enter it.", "tr": "Tartışmayı doğru biçimde anlatıyorsunuz ama içine girmiyorsunuz." },
+        { "who": "Irem", "en": "I was worried about being too confident with so little data.", "tr": "Bu kadar az veriyle fazla iddialı olmaktan çekindim." },
+        { "who": "Supervisor", "en": "That caution is reasonable, but a thesis must take a position.", "tr": "Bu ihtiyat makul ama bir tez konum almak zorunda." },
+        { "who": "Irem", "en": "Even if the evidence only supports a weak conclusion?", "tr": "Kanıt yalnızca zayıf bir sonucu desteklese bile mi?" },
+        { "who": "Supervisor", "en": "Then argue the weak conclusion and say why it is weak.", "tr": "O zaman zayıf sonucu savunun ve neden zayıf olduğunu söyleyin." },
+        { "who": "Irem", "en": "That feels safer than I expected.", "tr": "Bu beklediğimden daha güvenli geliyor." },
+        { "who": "Supervisor", "en": "It is. Examiners punish vagueness, not modest claims.", "tr": "Öyle. Jüri belirsizliği cezalandırır, mütevazı iddiaları değil." },
+        { "who": "Irem", "en": "I will rewrite the introduction this week.", "tr": "Girişi bu hafta yeniden yazacağım." },
+        { "who": "Supervisor", "en": "Start with one sentence that begins: this thesis argues that.", "tr": "Şöyle başlayan tek bir cümleyle başlayın: bu tez şunu savunur." },
+        { "who": "Irem", "en": "And if I cannot finish that sentence honestly?", "tr": "Ya o cümleyi dürüstçe tamamlayamazsam?" },
+        { "who": "Supervisor", "en": "Then you have found the real problem, and it is not a writing problem.", "tr": "O zaman asıl sorunu bulmuşsunuz demektir ve bu bir yazım sorunu değildir." },
+        { "who": "Irem", "en": "You mean the design of the study itself.", "tr": "Çalışmanın tasarımını kastediyorsunuz." },
+        { "who": "Supervisor", "en": "Exactly. Better to discover that now than two months before you submit.", "tr": "Aynen. Bunu teslimden iki ay önce değil, şimdi keşfetmek daha iyi." },
+        { "who": "Irem", "en": "Can I send you the sentence before I rewrite the whole chapter?", "tr": "Bütün bölümü yeniden yazmadan önce cümleyi size gönderebilir miyim?" },
+        { "who": "Supervisor", "en": "Please do. One good sentence will save you a wasted month.", "tr": "Lütfen gönderin. İyi bir cümle size boşa geçecek bir ayı kazandırır." }
+      ],
+      "glossary": [
+        { "w": "draft", "tr": "taslak" },
+        { "w": "thesis", "tr": "tez" },
+        { "w": "caution", "tr": "ihtiyat" },
+        { "w": "examiners", "tr": "jüri, sınav görevlileri" },
+        { "w": "vagueness", "tr": "belirsizlik" },
+        { "w": "modest", "tr": "mütevazı" }
+      ],
+      "questions": [
+        { "q": "What is the supervisor's criticism?", "options": ["The argument is unclear", "The writing is poor", "The topic is wrong", "It is too short"], "answer": 0, "note": "\"I am not sure what you are arguing.\"" },
+        { "q": "What does Irem do well?", "options": ["Describe the debate accurately", "Present strong data", "Take a clear position", "Write conclusions"], "answer": 0, "note": "\"You describe the debate accurately.\"" },
+        { "q": "Why did she avoid a position?", "options": ["She had little data", "She had no time", "She disagreed with everyone", "She was told to"], "answer": 0, "note": "\"I was worried about being too confident with so little data.\"" },
+        { "q": "What does the supervisor advise?", "options": ["Argue the weak conclusion and explain its weakness", "Collect more data", "Change the topic", "Remove the introduction"], "answer": 0, "note": "\"Argue the weak conclusion and say why it is weak.\"" },
+        { "q": "What do examiners punish?", "options": ["Vagueness", "Modest claims", "Long chapters", "Simple language"], "answer": 0, "note": "\"Examiners punish vagueness, not modest claims.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-03",
+      "level": "B2",
+      "order": 3,
+      "kind": "listening",
+      "title": "Sigorta reddi",
+      "titleEn": "The Claim Was Refused",
+      "minutes": 5,
+      "names": ["Zafer"],
+      "speakers": ["Zafer", "Officer"],
+      "lines": [
+        { "who": "Zafer", "en": "You refused my claim and the letter does not explain why.", "tr": "Talebimi reddettiniz ve mektup nedenini açıklamıyor." },
+        { "who": "Officer", "en": "It says the damage falls outside the covered period.", "tr": "Hasarın kapsam dışı döneme düştüğü yazıyor." },
+        { "who": "Zafer", "en": "The flood was on the twelfth. My policy started on the first.", "tr": "Sel on ikisinde oldu. Poliçem ayın birinde başladı." },
+        { "who": "Officer", "en": "There is a waiting period of thirty days for flood damage.", "tr": "Sel hasarı için otuz günlük bekleme süresi var." },
+        { "who": "Zafer", "en": "Nobody mentioned that when I signed.", "tr": "İmzalarken kimse bundan bahsetmedi." },
+        { "who": "Officer", "en": "It is in the document, but I accept it is not prominent.", "tr": "Belgede var ama göze çarpmadığını kabul ediyorum." },
+        { "who": "Zafer", "en": "Then the problem is how it was sold, not whether I read it.", "tr": "O hâlde sorun okuyup okumadığım değil, nasıl satıldığı." },
+        { "who": "Officer", "en": "That is a fair point. You can request a formal review.", "tr": "Bu haklı bir nokta. Resmi bir inceleme talep edebilirsiniz." },
+        { "who": "Zafer", "en": "How long does a review take, and does it cost anything?", "tr": "İnceleme ne kadar sürer ve bir maliyeti var mı?" },
+        { "who": "Officer", "en": "Eight weeks, and it is free. I will send you the form today.", "tr": "Sekiz hafta, ücretsiz. Formu bugün size göndereceğim." },
+        { "who": "Zafer", "en": "What should I include with it?", "tr": "Yanında ne göndermeliyim?" },
+        { "who": "Officer", "en": "Photographs of the damage, the repair bills, and anything the seller wrote to you.", "tr": "Hasarın fotoğrafları, tamir faturaları ve satıcının size yazdığı her şey." },
+        { "who": "Zafer", "en": "I have messages where he says I am covered from the first day.", "tr": "İlk günden itibaren kapsandığımı söylediği mesajlar bende var." },
+        { "who": "Officer", "en": "Those matter a great deal. Send them exactly as they were written.", "tr": "Bunlar çok önemli. Yazıldığı gibi aynen gönderin." },
+        { "who": "Zafer", "en": "So the review is not only about the rule, but about what I was told.", "tr": "Yani inceleme yalnızca kuralla değil, bana söylenenlerle de ilgili." },
+        { "who": "Officer", "en": "Yes. Written promises made during a sale carry weight.", "tr": "Evet. Satış sırasında verilen yazılı sözlerin ağırlığı vardır." },
+        { "who": "Zafer", "en": "Thank you. This is the first useful conversation I have had about it.", "tr": "Teşekkür ederim. Bu konuda yaptığım ilk faydalı konuşma bu." }
+      ],
+      "glossary": [
+        { "w": "claim", "tr": "tazminat talebi" },
+        { "w": "policy", "tr": "poliçe" },
+        { "w": "flood", "tr": "sel" },
+        { "w": "prominent", "tr": "göze çarpan" },
+        { "w": "formal review", "tr": "resmi inceleme" }
+      ],
+      "questions": [
+        { "q": "Why was the claim refused?", "options": ["The damage fell outside the covered period", "The form was wrong", "He paid late", "The damage was small"], "answer": 0, "note": "\"The damage falls outside the covered period.\"" },
+        { "q": "What is the waiting period for flood damage?", "options": ["Thirty days", "Twelve days", "Eight weeks", "One year"], "answer": 0, "note": "\"There is a waiting period of thirty days.\"" },
+        { "q": "What does the officer admit?", "options": ["The rule is not prominent in the document", "The refusal was wrong", "The policy is invalid", "He made an error"], "answer": 0, "note": "\"I accept it is not prominent.\"" },
+        { "q": "What is Zafer's argument?", "options": ["The problem is how it was sold", "The rule is illegal", "He never signed", "The flood was later"], "answer": 0, "note": "\"The problem is how it was sold, not whether I read it.\"" },
+        { "q": "What can he do next?", "options": ["Request a free formal review", "Go to court immediately", "Pay a fee and appeal", "Nothing"], "answer": 0, "note": "\"Eight weeks, and it is free.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-04",
+      "level": "B2",
+      "order": 4,
+      "kind": "listening",
+      "title": "İki iş teklifi",
+      "titleEn": "Two Job Offers",
+      "minutes": 5,
+      "names": ["Berna", "Onur"],
+      "speakers": ["Berna", "Onur"],
+      "lines": [
+        { "who": "Berna", "en": "I have two offers and a week to choose. I keep changing my mind.", "tr": "İki teklifim var ve seçmek için bir haftam. Sürekli fikir değiştiriyorum." },
+        { "who": "Onur", "en": "What separates them?", "tr": "Aralarındaki fark ne?" },
+        { "who": "Berna", "en": "One pays considerably more. The other would teach me something new.", "tr": "Biri belirgin biçimde daha çok ödüyor. Diğeri bana yeni bir şey öğretir." },
+        { "who": "Onur", "en": "How much more is considerably?", "tr": "Belirgin dediğin ne kadar fazla?" },
+        { "who": "Berna", "en": "About twenty per cent. Enough to matter, not enough to decide.", "tr": "Yaklaşık yüzde yirmi. Önemsenecek kadar, karar verdirecek kadar değil." },
+        { "who": "Onur", "en": "Then ask a different question. Where will you be in three years?", "tr": "O zaman başka bir soru sor. Üç yıl sonra nerede olacaksın?" },
+        { "who": "Berna", "en": "With the first one, doing the same work for more money.", "tr": "Birincisiyle aynı işi daha çok paraya yapıyor olacağım." },
+        { "who": "Onur", "en": "And with the second?", "tr": "İkincisiyle?" },
+        { "who": "Berna", "en": "Probably able to apply for jobs I cannot apply for today.", "tr": "Muhtemelen bugün başvuramadığım işlere başvurabiliyor olacağım." },
+        { "who": "Onur", "en": "You have answered your own question. You just did not like the answer.", "tr": "Kendi sorunu yanıtladın. Sadece cevabı hoşuna gitmedi." },
+        { "who": "Berna", "en": "Because twenty per cent is real money and the future is only a guess.", "tr": "Çünkü yüzde yirmi gerçek para, gelecekse sadece bir tahmin." },
+        { "who": "Onur", "en": "It is. But you can ask the second company to close some of the gap.", "tr": "Öyle. Ama ikinci şirketten farkın bir kısmını kapatmasını isteyebilirsin." },
+        { "who": "Berna", "en": "Would that not seem greedy when they have already made an offer?", "tr": "Zaten teklif vermişken bu açgözlülük gibi görünmez mi?" },
+        { "who": "Onur", "en": "Not if you explain that you have a higher offer and prefer their work.", "tr": "Daha yüksek bir teklifin olduğunu ve onların işini tercih ettiğini açıklarsan hayır." },
+        { "who": "Berna", "en": "And if they say no?", "tr": "Ya hayır derlerse?" },
+        { "who": "Onur", "en": "Then nothing has changed and you decide exactly as you would have anyway.", "tr": "O zaman hiçbir şey değişmez ve zaten vereceğin kararı verirsin." },
+        { "who": "Berna", "en": "I will write to them tomorrow morning, before I lose my nerve.", "tr": "Yarın sabah, cesaretimi kaybetmeden onlara yazacağım." }
+      ],
+      "glossary": [
+        { "w": "offers", "tr": "teklifler" },
+        { "w": "considerably", "tr": "belirgin biçimde" },
+        { "w": "apply", "tr": "başvurmak" }
+      ],
+      "questions": [
+        { "q": "What is Berna's difficulty?", "options": ["Choosing between two offers", "Finding a job", "Asking for more money", "Leaving her team"], "answer": 0, "note": "\"I have two offers and a week to choose.\"" },
+        { "q": "What is the difference in pay?", "options": ["About twenty per cent", "About fifty per cent", "Nothing", "About five per cent"], "answer": 0, "note": "\"About twenty per cent.\"" },
+        { "q": "What question does Onur suggest?", "options": ["Where will you be in three years?", "Which manager is better?", "Which is nearer?", "Which pays more?"], "answer": 0, "note": "\"Where will you be in three years?\"" },
+        { "q": "What would the first job lead to?", "options": ["The same work for more money", "A promotion", "A new field", "More travel"], "answer": 0, "note": "\"Doing the same work for more money.\"" },
+        { "q": "What is Onur's conclusion?", "options": ["She has already answered herself", "She should take the money", "She should refuse both", "She needs more time"], "answer": 0, "note": "Son replik." }
+      ]
+    },
+    {
+      "id": "b2-l-05",
+      "level": "B2",
+      "order": 5,
+      "kind": "listening",
+      "title": "Toplantıda anlaşmazlık",
+      "titleEn": "Disagreement in a Meeting",
+      "minutes": 5,
+      "names": ["Yigit", "Seda"],
+      "speakers": ["Yigit", "Seda"],
+      "lines": [
+        { "who": "Yigit", "en": "I think we should launch in March, even if the product is not perfect.", "tr": "Bence mart ayında çıkmalıyız, uygulama kusursuz olmasa bile." },
+        { "who": "Seda", "en": "I disagree, and I want to say why before we vote.", "tr": "Katılmıyorum ve oylamadan önce nedenini söylemek istiyorum." },
+        { "who": "Yigit", "en": "Go ahead.", "tr": "Buyur." },
+        { "who": "Seda", "en": "Our users are schools. A broken launch in March means losing the year.", "tr": "Kullanıcılarımız okullar. Martta kötü bir çıkış, yılı kaybetmek demek." },
+        { "who": "Yigit", "en": "That is a stronger argument than the one I expected.", "tr": "Bu beklediğimden güçlü bir sav." },
+        { "who": "Seda", "en": "Because you assumed I was worried about our reputation.", "tr": "Çünkü itibarımız için endişelendiğimi varsaydın." },
+        { "who": "Yigit", "en": "I did, and I was wrong. The school calendar is the real constraint.", "tr": "Varsaydım ve yanılmışım. Asıl kısıt okul takvimi." },
+        { "who": "Seda", "en": "So can we agree on September and use the time properly?", "tr": "O hâlde eylülde anlaşıp zamanı düzgün kullanabilir miyiz?" },
+        { "who": "Yigit", "en": "On one condition: we set the scope now and do not extend it again.", "tr": "Tek şartla: kapsamı şimdi belirleyelim ve bir daha genişletmeyelim." },
+        { "who": "Seda", "en": "That is the most useful sentence anyone has said this month.", "tr": "Bu ay söylenen en faydalı cümle bu." },
+        { "who": "Yigit", "en": "Write it down, then. Every extension so far began as a small favor.", "tr": "Öyleyse yaz. Şimdiye kadarki her genişletme küçük bir jest olarak başladı." },
+        { "who": "Seda", "en": "I will bring a list on Monday and we can agree what is inside and outside.", "tr": "Pazartesi bir liste getiririm, neyin içeride neyin dışarıda olduğunu kararlaştırırız." },
+        { "who": "Yigit", "en": "Include the teachers. They will notice things that we would never think of.", "tr": "Öğretmenleri de dahil et. Bizim aklımıza hiç gelmeyecek şeyleri fark ederler." },
+        { "who": "Seda", "en": "Three of them have already offered to test it during the summer.", "tr": "Üçü şimdiden yaz boyunca test etmeyi teklif etti." },
+        { "who": "Yigit", "en": "Then September is not a delay. It is the first sensible plan we have had.", "tr": "O hâlde eylül bir gecikme değil. Sahip olduğumuz ilk makul plan." },
+        { "who": "Seda", "en": "Say that in the meeting. It will sound better coming from you.", "tr": "Bunu toplantıda söyle. Senden gelince daha iyi duyulur." },
+        { "who": "Yigit", "en": "I will. And I will say the argument was yours.", "tr": "Söylerim. Ve savın senin olduğunu da söylerim." }
+      ],
+      "glossary": [
+        { "w": "launch", "tr": "piyasaya çıkarmak, lansman" },
+        { "w": "reputation", "tr": "itibar" },
+        { "w": "constraint", "tr": "kısıt" },
+        { "w": "scope", "tr": "kapsam" }
+      ],
+      "questions": [
+        { "q": "What does Yigit want?", "options": ["To launch in March", "To delay to September", "To cancel the project", "To add features"], "answer": 0, "note": "\"We should launch in March.\"" },
+        { "q": "Why does Seda disagree?", "options": ["A bad March launch means losing the school year", "The product is unfinished", "The team is tired", "Costs are too high"], "answer": 0, "note": "\"A broken launch in March means losing the year.\"" },
+        { "q": "What had Yigit assumed?", "options": ["That she worried about reputation", "That she wanted more pay", "That she disliked the plan", "That she had no argument"], "answer": 0, "note": "\"You assumed I was worried about our reputation.\"" },
+        { "q": "What do they agree on?", "options": ["September", "March", "Another vote", "Two launches"], "answer": 0, "note": "\"Can we agree on September?\"" },
+        { "q": "What condition does Yigit set?", "options": ["Fix the scope now and do not extend it", "Hire more people", "Review monthly", "Keep March as a backup"], "answer": 0, "note": "\"We set the scope now and do not extend it again.\"" }
+      ]
+    }
+  ]
+}

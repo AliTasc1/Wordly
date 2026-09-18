@@ -1,0 +1,220 @@
+{
+  "_meta": { "batch": "b2-listening-02", "level": "B2", "range": "Diyalog 6-10" },
+  "items": [
+    {
+      "id": "b2-l-06",
+      "level": "B2",
+      "order": 6,
+      "kind": "listening",
+      "title": "Kirada zam",
+      "titleEn": "The Rent Increase",
+      "minutes": 5,
+      "names": ["Melis"],
+      "speakers": ["Melis", "Landlord"],
+      "lines": [
+        { "who": "Landlord", "en": "I am raising the rent by thirty per cent from January.", "tr": "Ocaktan itibaren kirayı yüzde otuz artırıyorum." },
+        { "who": "Melis", "en": "That is a very large jump. May I ask what it is based on?", "tr": "Bu çok büyük bir sıçrama. Neye dayandığını sorabilir miyim?" },
+        { "who": "Landlord", "en": "Similar apartments in this street are being advertised at that price.", "tr": "Bu sokaktaki benzer daireler o fiyattan ilan ediliyor." },
+        { "who": "Melis", "en": "Advertised, yes. I have watched three of them stay empty since August.", "tr": "İlan ediliyor, evet. Üçünün ağustostan beri boş kaldığını gördüm." },
+        { "who": "Landlord", "en": "Prices take time to settle. That does not mean the market is weak.", "tr": "Fiyatların oturması zaman alır. Bu piyasanın zayıf olduğu anlamına gelmez." },
+        { "who": "Melis", "en": "It means an empty flat earns you nothing for four months.", "tr": "Boş bir dairenin dört ay boyunca size hiçbir şey kazandırmadığı anlamına gelir." },
+        { "who": "Landlord", "en": "You have a point. What increase would you consider reasonable?", "tr": "Haklısınız. Ne kadarlık bir artışı makul bulursunuz?" },
+        { "who": "Melis", "en": "Twelve per cent, and I sign for two years instead of one.", "tr": "Yüzde on iki ve bir yerine iki yıllığına imzalarım." },
+        { "who": "Landlord", "en": "Two years is worth something to me. I was thinking of twenty.", "tr": "İki yıl benim için değerli. Ben yirmiyi düşünüyordum." },
+        { "who": "Melis", "en": "Fifteen, and I will pay for the bathroom repairs myself.", "tr": "On beş ve banyo tamiratını kendim karşılarım." },
+        { "who": "Landlord", "en": "Those repairs are my responsibility under the contract.", "tr": "O tamirat sözleşmeye göre benim sorumluluğum." },
+        { "who": "Melis", "en": "They are, and they have been waiting since March.", "tr": "Öyle ve marttan beri bekliyorlar." },
+        { "who": "Landlord", "en": "That is fair criticism. Fifteen per cent, and I will fix the bathroom.", "tr": "Bu haklı bir eleştiri. Yüzde on beş ve banyoyu ben yapacağım." },
+        { "who": "Melis", "en": "Then we agree. Can we put both points in writing this week?", "tr": "O hâlde anlaştık. İki maddeyi de bu hafta yazıya dökebilir miyiz?" },
+        { "who": "Landlord", "en": "I will bring the new contract on Saturday morning.", "tr": "Yeni sözleşmeyi cumartesi sabahı getiririm." },
+        { "who": "Melis", "en": "Thank you for listening rather than simply announcing a number.", "tr": "Bir rakam bildirmek yerine dinlediğiniz için teşekkürler." }
+      ],
+      "glossary": [
+        { "w": "rent", "tr": "kira" },
+        { "w": "advertised", "tr": "ilan edilen" },
+        { "w": "market", "tr": "piyasa" },
+        { "w": "contract", "tr": "sözleşme" },
+        { "w": "responsibility", "tr": "sorumluluk" }
+      ],
+      "questions": [
+        { "q": "What increase does the landlord first ask for?", "options": ["Thirty per cent", "Twenty per cent", "Fifteen per cent", "Twelve per cent"], "answer": 0, "note": "\"Raising the rent by thirty per cent.\"" },
+        { "q": "What is Melis's evidence against him?", "options": ["Three flats have stayed empty since August", "Her income has fallen", "The building is old", "He raised it last year"], "answer": 0, "note": "\"I have watched three of them stay empty since August.\"" },
+        { "q": "What does Melis offer in return?", "options": ["A two-year contract", "Payment in advance", "A larger deposit", "Nothing"], "answer": 0, "note": "\"I sign for two years instead of one.\"" },
+        { "q": "What do they finally agree on?", "options": ["Fifteen per cent", "Twelve per cent", "Twenty per cent", "No increase"], "answer": 0, "note": "\"Fifteen per cent, and I will fix the bathroom.\"" },
+        { "q": "Who will pay for the bathroom repairs?", "options": ["The landlord", "Melis", "Both equally", "Nobody"], "answer": 0, "note": "\"I will fix the bathroom.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-07",
+      "level": "B2",
+      "order": 7,
+      "kind": "listening",
+      "title": "Sınav sonucuna itiraz",
+      "titleEn": "Questioning a Grade",
+      "minutes": 5,
+      "names": ["Kaan"],
+      "speakers": ["Kaan", "Teacher"],
+      "lines": [
+        { "who": "Kaan", "en": "I would like to understand my grade rather than complain about it.", "tr": "Notumdan şikâyet etmekten çok onu anlamak istiyorum." },
+        { "who": "Teacher", "en": "That is a good place to start. Which part surprised you?", "tr": "Başlamak için iyi bir yer. Hangi kısım sizi şaşırttı?" },
+        { "who": "Kaan", "en": "The third essay. I thought it was the strongest thing I wrote.", "tr": "Üçüncü kompozisyon. Yazdığım en güçlü şey olduğunu düşünmüştüm." },
+        { "who": "Teacher", "en": "It was the most interesting. It was also the least organized.", "tr": "En ilginciydi. Aynı zamanda en dağınığıydı." },
+        { "who": "Kaan", "en": "So the ideas were fine but the structure lost me the marks.", "tr": "Yani fikirler iyiydi ama puanları yapı kaybettirdi." },
+        { "who": "Teacher", "en": "Partly. You also introduced a new argument in your final paragraph.", "tr": "Kısmen. Ayrıca son paragrafta yeni bir sav ortaya attınız." },
+        { "who": "Kaan", "en": "I ran out of space earlier and thought I should still mention it.", "tr": "Daha önce yerim kalmamıştı, yine de değinmem gerektiğini düşündüm." },
+        { "who": "Teacher", "en": "A conclusion should close doors, not open them.", "tr": "Bir sonuç kapıları kapatmalı, açmamalı." },
+        { "who": "Kaan", "en": "Is the grade something I can appeal, or is this conversation the appeal?", "tr": "Bu nota itiraz edebilir miyim, yoksa bu konuşma zaten itiraz mı?" },
+        { "who": "Teacher", "en": "You can request a second reader, and I would not discourage you.", "tr": "İkinci bir okuyucu talep edebilirsiniz, sizi vazgeçirmeye çalışmam." },
+        { "who": "Kaan", "en": "Would that annoy you?", "tr": "Bu sizi rahatsız eder mi?" },
+        { "who": "Teacher", "en": "Not at all. I mark better when I know somebody might check.", "tr": "Hiç de değil. Biri kontrol edebilir diye bilince daha iyi not veririm." },
+        { "who": "Kaan", "en": "Honestly, I care more about the next essay than about this one.", "tr": "Açıkçası bu kompozisyondan çok bir sonrakini önemsiyorum." },
+        { "who": "Teacher", "en": "Then bring me a plan before you write it, not a draft afterwards.", "tr": "O zaman yazmadan önce bana bir plan getirin, sonradan taslak değil." },
+        { "who": "Kaan", "en": "A plan is harder to write than the essay itself.", "tr": "Plan yazmak kompozisyonun kendisinden daha zor." },
+        { "who": "Teacher", "en": "That is exactly why it is worth doing.", "tr": "İşte tam da bu yüzden yapmaya değer." }
+      ],
+      "glossary": [
+        { "w": "grade", "tr": "not" },
+        { "w": "essay", "tr": "kompozisyon, deneme" },
+        { "w": "structure", "tr": "yapı" },
+        { "w": "appeal", "tr": "itiraz etmek, itiraz" },
+        { "w": "discourage", "tr": "vazgeçirmek" }
+      ],
+      "questions": [
+        { "q": "What does Kaan say he wants?", "options": ["To understand the grade", "To change teachers", "To repeat the course", "To complain formally"], "answer": 0, "note": "\"I would like to understand my grade rather than complain about it.\"" },
+        { "q": "What was wrong with the third essay?", "options": ["It was badly organized", "It was too short", "It was copied", "It was off the topic"], "answer": 0, "note": "\"It was also the least organized.\"" },
+        { "q": "What mistake did Kaan make at the end?", "options": ["He introduced a new argument", "He repeated himself", "He forgot a conclusion", "He wrote too much"], "answer": 0, "note": "\"You also introduced a new argument in your final paragraph.\"" },
+        { "q": "What is the teacher's view of a second reader?", "options": ["He would not discourage it", "He forbids it", "He thinks it is pointless", "He would be offended"], "answer": 0, "note": "\"I would not discourage you.\"" },
+        { "q": "What does the teacher ask for next time?", "options": ["A plan before writing", "A longer essay", "An earlier draft", "Fewer ideas"], "answer": 0, "note": "\"Bring me a plan before you write it.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-08",
+      "level": "B2",
+      "order": 8,
+      "kind": "listening",
+      "title": "Doktorda ikinci görüş",
+      "titleEn": "A Second Opinion",
+      "minutes": 5,
+      "names": ["Nalan"],
+      "speakers": ["Nalan", "Doctor"],
+      "lines": [
+        { "who": "Nalan", "en": "Another doctor told me I need an operation. I wanted a second opinion.", "tr": "Başka bir doktor ameliyat olmam gerektiğini söyledi. İkinci bir görüş istedim." },
+        { "who": "Doctor", "en": "You were right to ask. Do you have the results with you?", "tr": "Sormakta haklıydınız. Sonuçlar yanınızda mı?" },
+        { "who": "Nalan", "en": "Everything is here, including the pictures from May.", "tr": "Her şey burada, mayıstaki görüntüler dâhil." },
+        { "who": "Doctor", "en": "Good. The damage is real, but it has not become worse since May.", "tr": "Güzel. Hasar gerçek ama mayıstan bu yana kötüleşmemiş." },
+        { "who": "Nalan", "en": "So is the operation necessary or merely possible?", "tr": "Yani ameliyat gerekli mi, yoksa sadece mümkün mü?" },
+        { "who": "Doctor", "en": "Possible. Half of these cases improve with exercise over six months.", "tr": "Mümkün. Bu vakaların yarısı altı ayda egzersizle iyileşiyor." },
+        { "who": "Nalan", "en": "And the other half?", "tr": "Diğer yarısı?" },
+        { "who": "Doctor", "en": "They end up having the operation anyway, with no extra risk from waiting.", "tr": "Sonunda yine ameliyat oluyorlar, beklemekten doğan ek bir risk olmadan." },
+        { "who": "Nalan", "en": "That sounds like an easy decision when you put it that way.", "tr": "Böyle ifade edince kolay bir karar gibi görünüyor." },
+        { "who": "Doctor", "en": "It is easier than most. The hard part is doing the exercises daily.", "tr": "Çoğundan kolay. Zor kısım egzersizleri her gün yapmak." },
+        { "who": "Nalan", "en": "How long each day, realistically?", "tr": "Gerçekçi olarak günde ne kadar?" },
+        { "who": "Doctor", "en": "Twenty minutes, and missing three days a week ruins the whole plan.", "tr": "Yirmi dakika ve haftada üç gün kaçırmak bütün planı bozar." },
+        { "who": "Nalan", "en": "Why did the first doctor not mention this option at all?", "tr": "İlk doktor neden bu seçenekten hiç bahsetmedi?" },
+        { "who": "Doctor", "en": "I cannot answer for him. Some colleagues prefer certainty to patience.", "tr": "Onun adına konuşamam. Bazı meslektaşlar sabır yerine kesinliği tercih eder." },
+        { "who": "Nalan", "en": "I would like to try the six months and come back in autumn.", "tr": "Altı ayı denemek ve sonbaharda geri gelmek istiyorum." },
+        { "who": "Doctor", "en": "Then let us book that appointment now, so you actually keep it.", "tr": "O hâlde randevuyu şimdi alalım ki gerçekten gelin." }
+      ],
+      "glossary": [
+        { "w": "operation", "tr": "ameliyat" },
+        { "w": "second opinion", "tr": "ikinci görüş" },
+        { "w": "risk", "tr": "risk" },
+        { "w": "colleagues", "tr": "meslektaşlar" },
+        { "w": "certainty", "tr": "kesinlik" },
+        { "w": "patience", "tr": "sabır" }
+      ],
+      "questions": [
+        { "q": "Why has Nalan come?", "options": ["For a second opinion", "For an operation", "For a test", "For medicine"], "answer": 0, "note": "\"I wanted a second opinion.\"" },
+        { "q": "What does the doctor say about the damage?", "options": ["It has not become worse since May", "It has disappeared", "It is very serious now", "It was never there"], "answer": 0, "note": "\"It has not become worse since May.\"" },
+        { "q": "What happens to half of these cases?", "options": ["They improve with exercise", "They become worse", "They need two operations", "They stay the same"], "answer": 0, "note": "\"Half of these cases improve with exercise.\"" },
+        { "q": "What is the risk of waiting six months?", "options": ["There is no extra risk", "The operation becomes harder", "The pain doubles", "It cannot be done later"], "answer": 0, "note": "\"With no extra risk from waiting.\"" },
+        { "q": "What does the doctor say is the hard part?", "options": ["Doing the exercises every day", "Paying for the treatment", "Finding the time to travel", "Waiting for the results"], "answer": 0, "note": "\"The hard part is doing the exercises daily.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-09",
+      "level": "B2",
+      "order": 9,
+      "kind": "listening",
+      "title": "Gönüllü ekibi",
+      "titleEn": "Running a Volunteer Team",
+      "minutes": 5,
+      "names": ["Ufuk", "Pelin"],
+      "speakers": ["Ufuk", "Pelin"],
+      "lines": [
+        { "who": "Pelin", "en": "We started with forty volunteers in spring. Eleven still come.", "tr": "Bahar başında kırk gönüllüyle başladık. On biri hâlâ geliyor." },
+        { "who": "Ufuk", "en": "That is normal for the first year, but it still hurts.", "tr": "İlk yıl için normal ama yine de acıtıyor." },
+        { "who": "Pelin", "en": "I want to know whether it is normal or whether we drove them away.", "tr": "Normal mi yoksa onları biz mi kaçırdık, bunu bilmek istiyorum." },
+        { "who": "Ufuk", "en": "Did you ask any of them why they stopped?", "tr": "Neden bıraktıklarını hiçbirine sordun mu?" },
+        { "who": "Pelin", "en": "I asked six. Four said they never knew what to do when they arrived.", "tr": "Altısına sordum. Dördü geldiklerinde ne yapacaklarını hiç bilmediklerini söyledi." },
+        { "who": "Ufuk", "en": "Then the answer is not enthusiasm. It is organization.", "tr": "O hâlde cevap heves değil. Örgütlenme." },
+        { "who": "Pelin", "en": "We were so grateful that people came, we forgot to give them tasks.", "tr": "İnsanlar geldiği için o kadar minnettardık ki onlara görev vermeyi unuttuk." },
+        { "who": "Ufuk", "en": "Nobody feels useful standing in a room being thanked.", "tr": "Bir odada durup teşekkür edilerek kimse kendini faydalı hissetmez." },
+        { "who": "Pelin", "en": "So what would you do differently on the first evening?", "tr": "Peki ilk akşam neyi farklı yapardın?" },
+        { "who": "Ufuk", "en": "Give every new person a named job and somebody to ask questions to.", "tr": "Her yeni kişiye adı konmuş bir iş ve soru sorabileceği biri verirdim." },
+        { "who": "Pelin", "en": "That means the experienced ones spend the evening teaching.", "tr": "Bu, deneyimlilerin akşamı öğreterek geçirmesi demek." },
+        { "who": "Ufuk", "en": "Yes, and they will stay longer because of it.", "tr": "Evet ve bu sayede daha uzun kalırlar." },
+        { "who": "Pelin", "en": "Because being needed is a stronger reason than being wanted.", "tr": "Çünkü ihtiyaç duyulmak, istenmekten daha güçlü bir sebeptir." },
+        { "who": "Ufuk", "en": "Exactly. Try it in September and count again at the new year.", "tr": "Aynen. Eylülde dene ve yılbaşında yeniden say." },
+        { "who": "Pelin", "en": "If we keep twenty of forty, I will call that a success.", "tr": "Kırkın yirmisini tutabilirsek buna başarı derim." },
+        { "who": "Ufuk", "en": "Keep eleven who bring a friend each and you have done better.", "tr": "Her biri bir arkadaş getiren on bir kişiyi tut, daha iyisini yapmış olursun." }
+      ],
+      "glossary": [
+        { "w": "volunteers", "tr": "gönüllüler" },
+        { "w": "enthusiasm", "tr": "heves" },
+        { "w": "organization", "tr": "örgütlenme, düzen" },
+        { "w": "experienced", "tr": "deneyimli" }
+      ],
+      "questions": [
+        { "q": "How many volunteers still come?", "options": ["Eleven", "Forty", "Twenty", "Six"], "answer": 0, "note": "\"Eleven still come.\"" },
+        { "q": "What reason did most of the six give?", "options": ["They never knew what to do", "The work was too hard", "It was too far away", "They disliked the team"], "answer": 0, "note": "\"Four said they never knew what to do when they arrived.\"" },
+        { "q": "What does Ufuk say the real problem is?", "options": ["Organization", "Enthusiasm", "Money", "Space"], "answer": 0, "note": "\"It is organization.\"" },
+        { "q": "What does Ufuk suggest for new volunteers?", "options": ["A named job and someone to ask", "A written contract", "A trial month", "Free transport"], "answer": 0, "note": "\"A named job and somebody to ask questions to.\"" },
+        { "q": "What would Pelin call a success?", "options": ["Keeping twenty of forty", "Keeping all forty", "Doubling the team", "Keeping eleven"], "answer": 0, "note": "\"If we keep twenty of forty, I will call that a success.\"" }
+      ]
+    },
+    {
+      "id": "b2-l-10",
+      "level": "B2",
+      "order": 10,
+      "kind": "listening",
+      "title": "Yurt dışına taşınmak",
+      "titleEn": "Moving Abroad",
+      "minutes": 5,
+      "names": ["Ceren", "Tolga"],
+      "speakers": ["Ceren", "Tolga"],
+      "lines": [
+        { "who": "Tolga", "en": "Everyone says the first year abroad is the hardest. Was it?", "tr": "Herkes yurt dışındaki ilk yılın en zoru olduğunu söylüyor. Öyle miydi?" },
+        { "who": "Ceren", "en": "The first year was exciting. The second was the hardest.", "tr": "İlk yıl heyecan vericiydi. En zoru ikinci yıldı." },
+        { "who": "Tolga", "en": "That is the opposite of what I expected. Why the second?", "tr": "Bu beklediğimin tam tersi. Neden ikinci?" },
+        { "who": "Ceren", "en": "In the first year everything is new, so nothing feels like failure.", "tr": "İlk yıl her şey yeni, bu yüzden hiçbir şey başarısızlık gibi gelmiyor." },
+        { "who": "Tolga", "en": "And in the second you are expected to have settled.", "tr": "İkinci yılda ise yerleşmiş olman bekleniyor." },
+        { "who": "Ceren", "en": "By yourself most of all. I kept asking why I was still tired.", "tr": "En çok da kendin tarafından. Neden hâlâ yorgun olduğumu soruyordum." },
+        { "who": "Tolga", "en": "Was the language the main difficulty?", "tr": "Asıl zorluk dil miydi?" },
+        { "who": "Ceren", "en": "Not the words. The jokes, the silences, knowing when to leave a party.", "tr": "Kelimeler değil. Şakalar, sessizlikler, bir partiden ne zaman ayrılacağını bilmek." },
+        { "who": "Tolga", "en": "Those are things nobody can teach you in a class.", "tr": "Bunlar kimsenin sana derste öğretemeyeceği şeyler." },
+        { "who": "Ceren", "en": "They take about three years, and then you stop noticing them.", "tr": "Yaklaşık üç yıl alıyorlar, sonra onları fark etmeyi bırakıyorsun." },
+        { "who": "Tolga", "en": "Would you still go if you could decide again?", "tr": "Yeniden karar verebilsen yine gider miydin?" },
+        { "who": "Ceren", "en": "Yes, but I would have visited home twice a year from the start.", "tr": "Evet ama en baştan yılda iki kez memlekete giderdim." },
+        { "who": "Tolga", "en": "Instead of saving the money for something bigger.", "tr": "Parayı daha büyük bir şey için biriktirmek yerine." },
+        { "who": "Ceren", "en": "There is nothing bigger. That was an expensive lesson.", "tr": "Daha büyük bir şey yok. Bu pahalı bir dersti." },
+        { "who": "Tolga", "en": "My offer starts in November. I have six weeks to decide.", "tr": "Teklifim kasımda başlıyor. Karar vermek için altı haftam var." },
+        { "who": "Ceren", "en": "Then decide on the second year, not on the first.", "tr": "O zaman kararını ilk yıla göre değil, ikinci yıla göre ver." }
+      ],
+      "glossary": [
+        { "w": "abroad", "tr": "yurt dışında" },
+        { "w": "failure", "tr": "başarısızlık" },
+        { "w": "settled", "tr": "yerleşmiş" },
+        { "w": "silences", "tr": "sessizlikler" },
+        { "w": "lesson", "tr": "ders" }
+      ],
+      "questions": [
+        { "q": "Which year does Ceren say was hardest?", "options": ["The second", "The first", "The third", "All of them equally"], "answer": 0, "note": "\"The second was the hardest.\"" },
+        { "q": "Why was the first year easier?", "options": ["Everything was new, so nothing felt like failure", "She had more money", "She spoke the language well", "Her family was there"], "answer": 0, "note": "\"Nothing feels like failure.\"" },
+        { "q": "What was the real language difficulty?", "options": ["Jokes and silences", "Reading and writing", "The accent", "Grammar"], "answer": 0, "note": "\"The jokes, the silences.\"" },
+        { "q": "What would she do differently?", "options": ["Visit home twice a year from the start", "Learn the language earlier", "Live with local people", "Move to a smaller city"], "answer": 0, "note": "\"I would have visited home twice a year from the start.\"" },
+        { "q": "What advice does she give Tolga?", "options": ["Decide on the second year, not the first", "Refuse the offer", "Wait another year", "Ask for more money"], "answer": 0, "note": "Son replik." }
+      ]
+    }
+  ]
+}
