@@ -22,6 +22,7 @@ import type {
   TextsManifest,
   VocabCard,
   VocabManifest,
+  WritingSet,
 } from './types';
 
 export * from './types';
@@ -71,11 +72,30 @@ const SPEAKING = {
   C2: () => require('../../assets/content/speaking-c2.json') as SpeakingItem[],
 };
 
+/**
+ * Yazma setleri.
+ *
+ * Diğer tabloların aksine burada altı seviye yok: yazma bölümü seviye seviye
+ * yazılıyor ve henüz tamamlanmayan seviyenin dosyası yok. Metro `require`'ı
+ * derleme anında çözdüğü için olmayan bir dosyayı burada anmak paketi bozar —
+ * bu yüzden tabloya yalnızca üretilmiş dosyalar giriyor ve `writingOf` eksik
+ * seviyede boş liste döndürüyor. Seviye tamamlandıkça buraya bir satır eklenir.
+ */
+const WRITING: Partial<Record<Level, () => WritingSet[]>> = {
+  A1: () => require('../../assets/content/writing-a1.json') as WritingSet[],
+};
+
 export const vocabOf = (level: Level): VocabCard[] => VOCAB[level]();
 export const grammarOf = (level: Level): GrammarLesson[] => GRAMMAR[level]();
 export const readingOf = (level: Level): ReadingItem[] => READING[level]();
 export const listeningOf = (level: Level): ListeningItem[] => LISTENING[level]();
 export const speakingOf = (level: Level): SpeakingItem[] => SPEAKING[level]();
+
+/** Bir seviyenin yazma setleri; o seviye henüz yazılmadıysa boş liste. */
+export const writingOf = (level: Level): WritingSet[] => WRITING[level]?.() ?? [];
+
+/** Yazma bölümü bu seviyede var mı — ekranlar buna göre kilitli gösteriyor. */
+export const hasWriting = (level: Level): boolean => level in WRITING;
 
 export const placement = (): Placement =>
   require('../../assets/content/placement.json') as Placement;

@@ -197,7 +197,12 @@ def proper_nouns(text: str) -> set[str]:
         # Bilinen bir İngiliz yazımı büyük harfle geçse de özel ad değildir;
         # yoksa "Maths" seçeneği yazım denetiminden kaçar.
         if not sentence_start and token[0].isupper() and token.lower() not in BRITISH:
-            names.add(token.lower())
+            # Ad kısaltmayla bitişik olabilir ("Elif's"). Çözümleme metni
+            # açılmış hâlde tarıyor, bu yüzden ad da açılmış hâliyle
+            # kaydediliyor; yoksa "elif's" listede, "elif" metinde kalır ve
+            # ad bilinmeyen kelime sayılır. Açılmadan gelen ek parçalar
+            # (is, am, have…) zaten serbest kelimeler.
+            names.update(WORD_RE.findall(expand(token.lower())))
         sentence_start = False
     return names
 
@@ -365,6 +370,52 @@ def candidates(token: str) -> list[str]:
     return forms
 
 
+# Kısaltmalar, çözümlemeden önce açılıyor.
+#
+# "I'm" sözlükte yok ve hiçbir zaman olmayacak: sözlük kelime öğretir, kısaltma
+# bir yazım biçimidir. Açmadan bakınca "i'm" bilinmeyen kelime görünüyordu ve
+# içerik yazarı ya kısaltmadan kaçınıyor ya da sözlükçeye saçma bir madde
+# ekliyordu. Özellikle yazma bölümünde bu kabul edilemez: öğrenci "I'm a
+# teacher" yazdığında bu doğrudur ve doğru sayılmalıdır.
+#
+# Sıra önemli: "can't" ve "won't" düzenli kurala uymuyor ("ca not", "wo not"
+# çıkardı), o yüzden önce onlar açılıyor.
+#
+# Ad `IRREGULAR` değil: bu dosyada zaten düzensiz fiil çekimlerinin tablosu
+# o adı taşıyor. İlk yazışta gölgeledim ve düzensiz fiillerin tamamı
+# ("met", "taken", "said") bilinmeyen kelime oldu.
+CONTRACTIONS_IRREGULAR = [
+    (re.compile(r"\bcan't\b"), "can not"),
+    (re.compile(r"\bwon't\b"), "will not"),
+    (re.compile(r"\bshan't\b"), "shall not"),
+    (re.compile(r"\bcannot\b"), "can not"),
+    (re.compile(r"\blet's\b"), "let us"),
+]
+
+# `'s` bilerek "is" sayılıyor. Aslında üç şey olabilir (is / has / iyelik) ama
+# üçünde de sonuç aynı: kalan gövde sözlükte aranır, eklenen parça zaten
+# serbest kelimedir. Ayrım yapmak çözümlemeye bir şey katmaz.
+CONTRACTIONS_SUFFIX = [
+    (re.compile(r"n't\b"), " not"),
+    (re.compile(r"'m\b"), " am"),
+    (re.compile(r"'re\b"), " are"),
+    (re.compile(r"'ve\b"), " have"),
+    (re.compile(r"'ll\b"), " will"),
+    (re.compile(r"'d\b"), " would"),
+    (re.compile(r"'s\b"), " is"),
+]
+
+
+def expand(text: str) -> str:
+    """Küçük harfe indirilmiş metindeki kısaltmaları açar."""
+    text = text.replace("’", "'")
+    for pattern, full in CONTRACTIONS_IRREGULAR:
+        text = pattern.sub(full, text)
+    for pattern, full in CONTRACTIONS_SUFFIX:
+        text = pattern.sub(full, text)
+    return text
+
+
 def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> dict:
     """Metni seviyeye göre çözümler.
 
@@ -372,7 +423,7 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
     üstünde olsa bile sorun sayılmaz, çünkü öğrenci karşılığını orada görüyor.
     """
     limit = ORDER.index(level)
-    tokens = WORD_RE.findall(text.lower())
+    tokens = WORD_RE.findall(expand(text.lower()))
     names = proper_nouns(text)
     above, unknown = {}, set()
 

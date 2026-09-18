@@ -7,7 +7,7 @@ import { IconTile, Row } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
-import { grammarOf, listeningOf, readingOf, speakingOf } from '../content';
+import { grammarOf, listeningOf, readingOf, speakingOf, writingOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 import type { ScreenId } from '../navigation/routes';
@@ -30,6 +30,7 @@ export function LessonScreen() {
   const reading = useMemo(() => readingOf(cefr), [cefr]);
   const listening = useMemo(() => listeningOf(cefr), [cefr]);
   const speaking = useMemo(() => speakingOf(cefr), [cefr]);
+  const writing = useMemo(() => writingOf(cefr), [cefr]);
 
   const nextIn = <T extends { title: string; minutes: number }>(items: T[], kind: Parameters<typeof position>[0]) =>
     items[Math.min(position(kind, cefr), items.length - 1)];
@@ -87,6 +88,19 @@ export function LessonScreen() {
       state: 'idle',
     },
   ];
+
+  // Yazma seviye seviye yazılıyor; henüz hazır olmayan seviyede adımı hiç
+  // göstermiyoruz. Boş bir bölüme götüren düğme, olmayan bir şeyi vaat eder.
+  if (writing.length) {
+    steps.push({
+      name: 'Yazma',
+      sub: writing[Math.min(position('writing', cefr), writing.length - 1)].title,
+      target: 'write',
+      glyph: '✍️',
+      tag: `${writing.length} set`,
+      state: 'idle',
+    });
+  }
 
   const progress = lessons.length ? Math.round((at / lessons.length) * 100) : 0;
 

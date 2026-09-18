@@ -1,0 +1,43 @@
+{
+ "_comment": [
+  "Cevap denetiminin ortak vakaları.",
+  "",
+  "Aynı kural iki dilde yazılı: content/build-writing.py doğrulama sırasında,",
+  "mobile/src/content/writing.ts telefonda çalışırken. İkisi ayrışırsa betikte",
+  "geçen bir cevap telefonda yanlış sayılır ve bunu kimse fark etmez — öğrenci",
+  "doğru yazdığını sanıp hata alır.",
+  "",
+  "Bu yüzden kural burada bir kez tarif ediliyor ve iki taraf da bu dosyaya",
+  "karşı sınanıyor. Kurala dokunan, önce buraya vaka eklemeli."
+ ],
+ "norm": [
+  { "in": "I am a teacher.", "out": "i am a teacher", "why": "küçük harf, sondaki nokta atılır" },
+  { "in": "  I  am   a teacher  ", "out": "i am a teacher", "why": "fazla boşluklar teklenir" },
+  { "in": "I'm a teacher", "out": "i'm a teacher", "why": "kesme işareti korunur" },
+  { "in": "I’m a teacher", "out": "i'm a teacher", "why": "eğik kesme düz kesmeye çevrilir" },
+  { "in": "Is it you?", "out": "is it you", "why": "soru işareti atılır" },
+  { "in": "Yes, it is!", "out": "yes it is", "why": "virgül ve ünlem atılır" },
+  { "in": "He said: \"no\"", "out": "he said no", "why": "iki nokta ve tırnak atılır" }
+ ],
+ "accepts": [
+  { "answers": ["I am a teacher."], "typed": "I am a teacher.", "ok": true, "why": "birebir" },
+  { "answers": ["I am a teacher."], "typed": "i am a teacher", "ok": true, "why": "büyük harf ve nokta önemsiz" },
+  { "answers": ["I am a teacher."], "typed": "  I am a teacher  ", "ok": true, "why": "baştaki sondaki boşluk" },
+  { "answers": ["I am a teacher.", "I'm a teacher."], "typed": "I’m a teacher", "ok": true, "why": "eğik kesme kabul" },
+  { "answers": ["I am a teacher."], "typed": "I'm a teacher", "ok": false, "why": "kısaltma listede yoksa kabul edilmez" },
+  { "answers": ["I am a teacher."], "typed": "I am teacher", "ok": false, "why": "eksik kelime" },
+  { "answers": ["I am a teacher."], "typed": "", "ok": false, "why": "boş cevap" },
+  { "answers": ["We are students."], "typed": "We are student", "ok": false, "why": "çoğul eki eksik" }
+ ],
+ "traps": [
+  { "has": "two brother", "typed": "I have two brothers.", "hit": false, "why": "brothers ile brother ayrı kelimeler" },
+  { "has": "two brother", "typed": "I have two brother.", "hit": true, "why": "tam kelime dizisi" },
+  { "has": "he is my sister", "typed": "She is my sister.", "hit": false, "why": "she içinde he geçer ama kelime değil" },
+  { "has": "he is my sister", "typed": "He is my sister.", "hit": true, "why": "tam eşleşme" },
+  { "has": "we are student", "typed": "We are students.", "hit": false, "why": "students ayrı kelime" },
+  { "has": "in home", "typed": "They are in home.", "hit": true, "why": "cümle ortasında geçiyor" },
+  { "has": "am a teacher", "at": "start", "typed": "I am a teacher.", "hit": false, "why": "başta değil" },
+  { "has": "am a teacher", "at": "start", "typed": "Am a teacher.", "hit": true, "why": "cümle başında" },
+  { "has": "am a teacher", "typed": "I am a teacher.", "hit": true, "why": "çapa yoksa her yerde aranır" }
+ ]
+}

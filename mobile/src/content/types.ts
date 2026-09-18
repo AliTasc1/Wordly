@@ -130,3 +130,56 @@ export type TextsManifest = Record<
 > & {
   placement: { questions: number; file: string };
 };
+
+/**
+ * Yazma alıştırması.
+ *
+ * Diğer bölümlerden farkı: ekranda İngilizce hiçbir ipucu yok. Öğrenci
+ * Türkçe cümleyi görüyor ve İngilizcesini kendisi yazıyor. Bu yüzden
+ * `answers` birden fazla olabilir — "I am a teacher" ve "I'm a teacher"
+ * ikisi de doğrudur ve ikisi de kabul edilmelidir.
+ */
+export type WritingTrap = {
+  /** Aranan kelime dizisi, küçük harfle. */
+  has: string;
+  /** 'start' ise kalıp yalnızca cümle başında aranır. */
+  at?: 'start';
+  /** Öğrenciye gösterilecek açıklama. */
+  note: string;
+};
+
+export type WritingTask = {
+  /** Çevrilecek Türkçe cümle. */
+  tr: string;
+  /** Kabul edilen İngilizce karşılıklar. */
+  answers: string[];
+  hint: string;
+  /** Bilinen yanlışlar ve sebepleri. */
+  traps?: WritingTrap[];
+};
+
+export type WritingSet = {
+  id: string;
+  level: Level;
+  order: number;
+  title: string;
+  canDo: string;
+  /** Bu sette Türkçe konuşanı zorlayan asıl nokta. */
+  focus: string;
+  tasks: WritingTask[];
+  /**
+   * Serbest yazma görevi.
+   *
+   * Otomatik puanlanmıyor: kısa bir metni gerçekten değerlendirmek için dil
+   * modeli gerekiyor ve o sunucu tarafında çalışmalı. Öğrenci kendi metnini
+   * denetim listesine ve örnek metne bakarak karşılaştırıyor. Bu, sahte bir
+   * puandan dürüsttür.
+   */
+  compose: {
+    prompt: string;
+    checklist: string[];
+    model: string;
+  };
+};
+
+export type WritingManifest = Record<Level, { sets: number; tasks: number; file: string }>;

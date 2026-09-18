@@ -28,6 +28,7 @@ import { GrammarScreen } from '../screens/GrammarScreen';
 import { ListenScreen } from '../screens/ListenScreen';
 import { ReadScreen } from '../screens/ReadScreen';
 import { SpeakScreen } from '../screens/SpeakScreen';
+import { WriteScreen } from '../screens/WriteScreen';
 import { ArenaScreen } from '../screens/ArenaScreen';
 import { DuelScreen } from '../screens/DuelScreen';
 import { LeaderboardScreen } from '../screens/LeaderboardScreen';
@@ -120,6 +121,7 @@ export function RootNavigator() {
       <Stack.Screen name="Listen" component={ListenScreen} />
       <Stack.Screen name="Read" component={ReadScreen} />
       <Stack.Screen name="Speak" component={SpeakScreen} />
+      <Stack.Screen name="Write" component={WriteScreen} />
       <Stack.Screen name="Arena" component={ArenaScreen} />
       <Stack.Screen name="Duel" component={DuelScreen} />
       <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />

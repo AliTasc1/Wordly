@@ -2,6 +2,7 @@ import {
   grammarManifest,
   textsManifest,
   vocabManifest,
+  writingOf,
   type Level,
 } from './index';
 
@@ -11,9 +12,17 @@ export type LevelSummary = {
   reading: number;
   listening: number;
   speaking: number;
+  /** Yazma setleri; henüz yazılmamış seviyelerde sıfır. */
+  writing: number;
   /** Rough total study time, in minutes. */
   minutes: number;
 };
+
+/**
+ * Bir yazma seti için varsayılan süre: sekiz cümleyi çevir, sonra kısa metni
+ * yaz. Yazmak seçmekten yavaştır, o yüzden gramer dersinden uzun tutuldu.
+ */
+const WRITING_MINUTES = 12;
 
 /**
  * Minutes assumed for one grammar lesson: read the rule, work the exercises.
@@ -40,8 +49,10 @@ export function levelSummary(level: Level): LevelSummary {
     texts[kind].find((l) => l.level === level);
 
   const lessons = grammar?.lessons ?? 0;
+  const writing = writingOf(level).length;
   const minutes =
     lessons * GRAMMAR_MINUTES +
+    writing * WRITING_MINUTES +
     (row('reading')?.minutes ?? 0) +
     (row('listening')?.minutes ?? 0) +
     (row('speaking')?.minutes ?? 0);
@@ -52,6 +63,7 @@ export function levelSummary(level: Level): LevelSummary {
     reading: row('reading')?.items ?? 0,
     listening: row('listening')?.items ?? 0,
     speaking: row('speaking')?.items ?? 0,
+    writing,
     minutes,
   };
 }

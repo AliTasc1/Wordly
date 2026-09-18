@@ -28,7 +28,13 @@ export type { Mistake } from './persist';
 export type Toast = { title: string; note: string } | null;
 
 /** The decks a learner moves through, each tracked separately per level. */
-export type DeckKind = 'vocab' | 'grammar' | 'reading' | 'listening' | 'speaking';
+export type DeckKind =
+  | 'vocab'
+  | 'grammar'
+  | 'reading'
+  | 'listening'
+  | 'speaking'
+  | 'writing';
 
 /**
  * What the placement test found. Navigation carries no params, so the result

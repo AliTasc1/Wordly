@@ -108,6 +108,7 @@ const KIND_LABELS: Record<Mistake['kind'], string> = {
   reading: 'Okuma',
   listening: 'Dinleme',
   speaking: 'Konuşma',
+  writing: 'Yazma',
 };
 
 export function kindLabel(kind: Mistake['kind']): string {

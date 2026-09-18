@@ -1,0 +1,308 @@
+[
+ {
+  "id": "a1-w-01",
+  "level": "A1",
+  "order": 1,
+  "title": "Kendini tanıtmak",
+  "canDo": "Adımı, nereli olduğumu ve ne iş yaptığımı yazabilirim.",
+  "focus": "Türkçede özne ekte gizlidir ve \"bir\" çoğu zaman düşer. İngilizcede ikisi de yazılır: özne her cümlede, meslek önünde a/an.",
+  "tasks": [
+   {
+    "tr": "Ben bir öğretmenim.",
+    "answers": [
+     "I am a teacher.",
+     "I'm a teacher."
+    ],
+    "hint": "Meslek söylerken önüne a ya da an gelir.",
+    "traps": [
+     {
+      "has": "i am teacher",
+      "note": "Meslek önünde a gerekir: I am a teacher."
+     },
+     {
+      "has": "am a teacher",
+      "at": "start",
+      "note": "Özne düşmez. Türkçede \"öğretmenim\" yeter, İngilizcede I gerekir."
+     }
+    ]
+   },
+   {
+    "tr": "O bir doktor.",
+    "answers": [
+     "He is a doctor.",
+     "He's a doctor.",
+     "She is a doctor.",
+     "She's a doctor."
+    ],
+    "hint": "Türkçede \"o\" erkek de kadın da olabilir; İngilizcede he ya da she seçmen gerekir.",
+    "traps": [
+     {
+      "has": "it is a doctor",
+      "note": "İnsan için it kullanılmaz: he ya da she."
+     }
+    ]
+   },
+   {
+    "tr": "Ben Türkiye'denim.",
+    "answers": [
+     "I am from Turkey.",
+     "I'm from Turkey."
+    ],
+    "hint": "\"-den\" eki burada from oluyor.",
+    "traps": [
+     {
+      "has": "i am turkey",
+      "note": "Nereli olduğunu söylerken from gerekir: I am from Turkey."
+     }
+    ]
+   },
+   {
+    "tr": "Biz öğrenciyiz.",
+    "answers": [
+     "We are students.",
+     "We're students."
+    ],
+    "hint": "Birden fazla kişi için çoğul: student değil students.",
+    "traps": [
+     {
+      "has": "we are student",
+      "note": "Biz çoğuluz, o yüzden students."
+     },
+     {
+      "has": "we is",
+      "note": "we ile are kullanılır."
+     }
+    ]
+   },
+   {
+    "tr": "Adım Ayşe.",
+    "answers": [
+     "My name is Ayse.",
+     "My name's Ayse."
+    ],
+    "hint": "\"Adım\" = my name. İyelik eki İngilizcede kelimenin önüne geçer.",
+    "traps": [
+     {
+      "has": "name my",
+      "note": "İyelik önce gelir: my name."
+     }
+    ]
+   },
+   {
+    "tr": "O benim kız kardeşim.",
+    "answers": [
+     "She is my sister.",
+     "She's my sister."
+    ],
+    "hint": "Kız kardeş için she.",
+    "traps": [
+     {
+      "has": "he is my sister",
+      "note": "sister kadındır, o yüzden she."
+     }
+    ]
+   },
+   {
+    "tr": "Ben bir öğrenci değilim.",
+    "answers": [
+     "I am not a student.",
+     "I'm not a student."
+    ],
+    "hint": "Olumsuzluk be fiilinden hemen sonra gelir.",
+    "traps": [
+     {
+      "has": "i not am",
+      "note": "Sıra: I am not."
+     },
+     {
+      "has": "i do not am",
+      "note": "be fiiliyle do kullanılmaz: I am not."
+     }
+    ]
+   },
+   {
+    "tr": "Onlar evde.",
+    "answers": [
+     "They are at home.",
+     "They're at home."
+    ],
+    "hint": "\"Evde\" için at home denir, in the home değil.",
+    "traps": [
+     {
+      "has": "they are in home",
+      "note": "Kalıp at home."
+     },
+     {
+      "has": "they is",
+      "note": "they ile are kullanılır."
+     }
+    ]
+   }
+  ],
+  "compose": {
+   "prompt": "Kendini üç cümleyle tanıt: adın, nereli olduğun ve ne iş yaptığın.",
+   "checklist": [
+    "Her cümlede özne var mı (I)?",
+    "Meslek söylerken a ya da an kullandın mı?",
+    "Her cümle büyük harfle başlayıp nokta ile bitiyor mu?"
+   ],
+   "model": "My name is Ayse. I am from Izmir. I am a nurse."
+  }
+ },
+ {
+  "id": "a1-w-02",
+  "level": "A1",
+  "order": 2,
+  "title": "Ailem",
+  "canDo": "Ailemdeki kişileri ve ne yaptıklarını yazabilirim.",
+  "focus": "Türkçede \"o\" cinsiyet belirtmez, İngilizcede he/she seçmek zorundasın. Ayrıca iyelik \"-nın\" eki İngilizcede 's olur.",
+  "tasks": [
+   {
+    "tr": "Babam bir şoför.",
+    "answers": [
+     "My father is a driver.",
+     "My father's a driver."
+    ],
+    "hint": "\"Babam\" = my father.",
+    "traps": [
+     {
+      "has": "father my",
+      "note": "İyelik önce gelir: my father."
+     },
+     {
+      "has": "my father is driver",
+      "note": "Meslek önünde a gerekir."
+     }
+    ]
+   },
+   {
+    "tr": "Annem bir hemşire.",
+    "answers": [
+     "My mother is a nurse.",
+     "My mother's a nurse."
+    ],
+    "hint": "Anne için she, ama burada özne my mother.",
+    "traps": [
+     {
+      "has": "my mother is nurse",
+      "note": "Meslek önünde a gerekir."
+     }
+    ]
+   },
+   {
+    "tr": "İki kardeşim var.",
+    "answers": [
+     "I have two brothers.",
+     "I have got two brothers.",
+     "I've got two brothers."
+    ],
+    "hint": "Türkçede sayıdan sonra çoğul eki gelmez, İngilizcede gelir.",
+    "traps": [
+     {
+      "has": "two brother",
+      "note": "Sayıdan sonra çoğul: two brothers."
+     },
+     {
+      "has": "i have two brother",
+      "note": "İngilizcede sayıdan sonra kelime çoğullaşır: brothers."
+     }
+    ]
+   },
+   {
+    "tr": "Kız kardeşim bir bankada çalışıyor.",
+    "answers": [
+     "My sister works in a bank.",
+     "My sister works at a bank."
+    ],
+    "hint": "Üçüncü tekil kişide fiile -s eklenir.",
+    "traps": [
+     {
+      "has": "my sister work in",
+      "note": "Üçüncü tekil kişi: works."
+     }
+    ]
+   },
+   {
+    "tr": "Ailem İstanbul'da yaşıyor.",
+    "answers": [
+     "My family lives in Istanbul.",
+     "My family live in Istanbul."
+    ],
+    "hint": "Şehir adından önce in kullanılır.",
+    "traps": [
+     {
+      "has": "lives at istanbul",
+      "note": "Şehir için in: in Istanbul."
+     },
+     {
+      "has": "live at istanbul",
+      "note": "Şehir için in: in Istanbul."
+     }
+    ]
+   },
+   {
+    "tr": "Bu benim erkek kardeşimin arabası.",
+    "answers": [
+     "This is my brother's car."
+    ],
+    "hint": "\"Kardeşimin arabası\" → sahip önce, sonra 's, sonra eşya.",
+    "traps": [
+     {
+      "has": "car of my brother",
+      "note": "İnsanlarda 's kullanılır: my brother's car."
+     },
+     {
+      "has": "my brother car",
+      "note": "Sahiplik için 's gerekir: my brother's car."
+     }
+    ]
+   },
+   {
+    "tr": "Onun bir kedisi var.",
+    "answers": [
+     "She has a cat.",
+     "He has a cat.",
+     "She has got a cat.",
+     "He has got a cat."
+    ],
+    "hint": "Üçüncü tekil kişide have değil has.",
+    "traps": [
+     {
+      "has": "she have a cat",
+      "note": "Üçüncü tekil kişi: has."
+     },
+     {
+      "has": "he have a cat",
+      "note": "Üçüncü tekil kişi: has."
+     }
+    ]
+   },
+   {
+    "tr": "Büyükannem bizimle yaşıyor.",
+    "answers": [
+     "My grandmother lives with us."
+    ],
+    "hint": "\"Bizimle\" = with us. we değil us.",
+    "traps": [
+     {
+      "has": "with we",
+      "note": "Edattan sonra us gelir: with us."
+     },
+     {
+      "has": "grandmother live with",
+      "note": "Üçüncü tekil kişi: lives."
+     }
+    ]
+   }
+  ],
+  "compose": {
+   "prompt": "Ailenden üç kişiyi yaz: kim olduklarını ve ne yaptıklarını anlat.",
+   "checklist": [
+    "Üçüncü tekil kişide fiile -s ekledin mi (works, lives)?",
+    "Kadın için she, erkek için he kullandın mı?",
+    "Sayıdan sonra çoğul yaptın mı (two brothers)?"
+   ],
+   "model": "My father is a driver. My mother works in a school. I have two sisters."
+  }
+ }
+]

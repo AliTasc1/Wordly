@@ -33,6 +33,7 @@ const SCREEN_OF: Record<DeckKind, ScreenId> = {
   reading: 'read',
   listening: 'listen',
   speaking: 'speak',
+  writing: 'write',
 };
 
 const TINT_OF: Record<DeckKind, string> = {
@@ -41,6 +42,7 @@ const TINT_OF: Record<DeckKind, string> = {
   reading: colors.success,
   listening: colors.accent,
   speaking: colors.warning,
+  writing: colors.error,
 };
 
 export function CoachScreen() {

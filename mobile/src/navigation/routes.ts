@@ -19,6 +19,7 @@ export type ScreenId =
   | 'listen'
   | 'read'
   | 'speak'
+  | 'write'
   | 'coach'
   | 'play'
   | 'arena'
@@ -76,6 +77,7 @@ export const TARGETS: Record<ScreenId, Target> = {
   listen: { root: 'Listen' },
   read: { root: 'Read' },
   speak: { root: 'Speak' },
+  write: { root: 'Write' },
   arena: { root: 'Arena' },
   duel: { root: 'Duel' },
   board: { root: 'Leaderboard' },

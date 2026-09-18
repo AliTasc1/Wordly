@@ -30,6 +30,7 @@ const LABELS: Record<DeckKind, string> = {
   reading: 'Okuma',
   listening: 'Dinleme',
   speaking: 'Konuşma',
+  writing: 'Yazma',
 };
 
 function sizes(level: Level): Record<DeckKind, number> {
@@ -40,6 +41,7 @@ function sizes(level: Level): Record<DeckKind, number> {
     reading: s.reading,
     listening: s.listening,
     speaking: s.speaking,
+    writing: s.writing,
   };
 }
 

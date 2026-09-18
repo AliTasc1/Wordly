@@ -18,7 +18,13 @@ export function StatsScreen() {
   const { daily, positions, cefr, mistakes } = useApp();
 
   const week = useMemo(() => weekStats(daily), [daily]);
-  const decks = useMemo(() => deckProgress(positions, cefr), [positions, cefr]);
+  // İçeriği henüz üretilmemiş bölümler listeye girmiyor: "Yazma %0" satırı,
+  // öğrencinin çalışmadığını değil bölümün var olmadığını anlatır ve ikisi
+  // aynı şey değil.
+  const decks = useMemo(
+    () => deckProgress(positions, cefr).filter((deck) => deck.total > 0),
+    [positions, cefr],
+  );
   const mistakeCount = useMemo(
     () => Object.values(mistakes).reduce((n, m) => n + m.times, 0),
     [mistakes],
