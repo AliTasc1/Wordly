@@ -4082,5 +4082,943 @@
     "note": "\"The next application in this field will make the same claim you made last year.\""
    }
   ]
+ },
+ {
+  "id": "c2-l-21",
+  "level": "C2",
+  "order": 21,
+  "kind": "listening",
+  "title": "Meydandaki heykel",
+  "titleEn": "The Statue in the Square",
+  "minutes": 7,
+  "names": [
+   "Hulya",
+   "Kenan"
+  ],
+  "speakers": [
+   "Hulya",
+   "Kenan"
+  ],
+  "lines": [
+   {
+    "who": "Kenan",
+    "en": "Whatever you do with it, in ten years the argument will be about what you did, not about the man.",
+    "tr": "Onunla ne yaparsan yap, on yıl sonra tartışma adam hakkında değil senin ne yaptığın hakkında olacak."
+   },
+   {
+    "who": "Hulya",
+    "en": "That is true of removing it and it is equally true of leaving it exactly where it is.",
+    "tr": "Bu onu kaldırmak için de, tam olduğu yerde bırakmak için de aynı ölçüde doğru."
+   },
+   {
+    "who": "Kenan",
+    "en": "Leaving it is the option that pretends no decision was taken.",
+    "tr": "Bırakmak, hiçbir karar alınmamış gibi davranan seçenek."
+   },
+   {
+    "who": "Hulya",
+    "en": "Which is why I will not choose it, and it is also the option with the most supporters in every survey.",
+    "tr": "Bu yüzden onu seçmeyeceğim; ayrıca her ankette en çok destekçisi olan seçenek de o."
+   },
+   {
+    "who": "Kenan",
+    "en": "Surveys ask the people who walk past it. They do not ask the people who cross the square to avoid it.",
+    "tr": "Anketler onun yanından geçenlere soruyor. Ondan kaçınmak için meydanı dolaşanlara sormuyor."
+   },
+   {
+    "who": "Hulya",
+    "en": "Then tell me the third option, since you have clearly arrived with one.",
+    "tr": "O hâlde üçüncü seçeneği söyle; belli ki bir tanesiyle geldin."
+   },
+   {
+    "who": "Kenan",
+    "en": "Lower it. Off the column, onto the ground, at the height of the people looking at it.",
+    "tr": "İndir. Sütundan al, yere koy, ona bakanların boyunda dursun."
+   },
+   {
+    "who": "Hulya",
+    "en": "And the column?",
+    "tr": "Peki sütun?"
+   },
+   {
+    "who": "Kenan",
+    "en": "Stays empty, with the dates on it, and becomes the part of the square that makes people ask.",
+    "tr": "Tarihleri üzerinde boş kalır ve meydanın insanlara soru sorduran kısmı olur."
+   },
+   {
+    "who": "Hulya",
+    "en": "You are proposing that the missing thing does the teaching.",
+    "tr": "Eksik olan şeyin öğretmesini öneriyorsun."
+   },
+   {
+    "who": "Kenan",
+    "en": "An empty column is read by everybody. A paragraph on a board is read by nobody, as you know.",
+    "tr": "Boş bir sütunu herkes okur. Bir levhadaki paragrafı, bildiğin gibi, kimse okumaz."
+   },
+   {
+    "who": "Hulya",
+    "en": "It will be called a compromise by both sides and neither of them will thank me.",
+    "tr": "İki taraf da buna uzlaşma diyecek ve ikisi de bana teşekkür etmeyecek."
+   },
+   {
+    "who": "Kenan",
+    "en": "Neither will thank you for any of the three, and this is the only one still standing in fifty years.",
+    "tr": "Üçünün hiçbirinde teşekkür etmeyecekler ve elli yıl sonra ayakta duracak tek seçenek bu."
+   },
+   {
+    "who": "Hulya",
+    "en": "Why that one?",
+    "tr": "Neden o?"
+   },
+   {
+    "who": "Kenan",
+    "en": "Because it can be undone in a day, and things that can be undone outlive the people who hate them.",
+    "tr": "Çünkü bir günde geri alınabilir ve geri alınabilen şeyler onlardan nefret edenlerden uzun yaşar."
+   },
+   {
+    "who": "Hulya",
+    "en": "That is the most useful thing anybody has said to me about this since March.",
+    "tr": "Bu konuda marttan beri bana söylenmiş en yararlı şey bu."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "statue",
+    "tr": "heykel"
+   },
+   {
+    "w": "column",
+    "tr": "sütun"
+   },
+   {
+    "w": "survey",
+    "tr": "anket"
+   },
+   {
+    "w": "avoid",
+    "tr": "kaçınmak"
+   },
+   {
+    "w": "compromise",
+    "tr": "uzlaşma"
+   },
+   {
+    "w": "undone",
+    "tr": "geri alınmış"
+   },
+   {
+    "w": "outlive",
+    "tr": "-den uzun yaşamak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does Kenan say the argument will be about in ten years?",
+    "options": [
+     "The man himself",
+     "What the city did",
+     "The artist",
+     "The cost"
+    ],
+    "answer": 1,
+    "note": "\"The argument will be about what you did, not about the man.\""
+   },
+   {
+    "q": "What is wrong with the surveys?",
+    "options": [
+     "They ask children",
+     "They are old",
+     "They are too small",
+     "They ask only the people who walk past it"
+    ],
+    "answer": 3,
+    "note": "\"They do not ask the people who cross the square to avoid it.\""
+   },
+   {
+    "q": "What is his third option?",
+    "options": [
+     "Cover it",
+     "Move it to a museum",
+     "Replace it",
+     "Lower it to the ground and leave the column empty"
+    ],
+    "answer": 3,
+    "note": "\"Off the column, onto the ground.\""
+   },
+   {
+    "q": "Why does he prefer an empty column to a written board?",
+    "options": [
+     "Everybody reads an empty column",
+     "It is traditional",
+     "It is safer",
+     "It costs less"
+    ],
+    "answer": 0,
+    "note": "\"A paragraph on a board is read by nobody.\""
+   },
+   {
+    "q": "Why will this option last?",
+    "options": [
+     "The law protects it",
+     "Both sides like it",
+     "It is cheap",
+     "It can be undone in a day"
+    ],
+    "answer": 3,
+    "note": "\"Things that can be undone outlive the people who hate them.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-l-22",
+  "level": "C2",
+  "order": 22,
+  "kind": "listening",
+  "title": "Borçların silinmesi",
+  "titleEn": "Writing Off What They Owe",
+  "minutes": 7,
+  "names": [
+   "Guven",
+   "Zerrin"
+  ],
+  "speakers": [
+   "Guven",
+   "Zerrin"
+  ],
+  "lines": [
+   {
+    "who": "Zerrin",
+    "en": "Your plan writes off the debt of people who apply, and the people who most need it are the people who do not apply.",
+    "tr": "Planın başvuranların borcunu siliyor ve ona en çok ihtiyacı olanlar başvurmayanlar."
+   },
+   {
+    "who": "Guven",
+    "en": "That is true of every plan ever written and it is not a reason to have no plan.",
+    "tr": "Bu yazılmış her plan için doğru ve hiç plan olmaması için bir gerekçe değil."
+   },
+   {
+    "who": "Zerrin",
+    "en": "It is a reason to write this one differently. Cancel it for everybody under the line and let people refuse it.",
+    "tr": "Bunu farklı yazmak için bir gerekçe. Sınırın altındaki herkes için sil ve isteyen reddetsin."
+   },
+   {
+    "who": "Guven",
+    "en": "Then we cancel debt for people who could have paid, and that is the sentence that kills it in the chamber.",
+    "tr": "O zaman ödeyebilecek kişilerin borcunu da silmiş oluruz ve mecliste bunu öldüren cümle o olur."
+   },
+   {
+    "who": "Zerrin",
+    "en": "How many? You have the figures and you have not said the number once this morning.",
+    "tr": "Kaç kişi? Rakamlar sende ve bu sabah sayıyı bir kez bile söylemedin."
+   },
+   {
+    "who": "Guven",
+    "en": "About nine percent, and I have not said it because nine percent is small enough to lose me the argument.",
+    "tr": "Yaklaşık yüzde dokuz ve söylemedim çünkü yüzde dokuz bana tartışmayı kaybettirecek kadar küçük."
+   },
+   {
+    "who": "Zerrin",
+    "en": "It is small enough to win it, if you say it before somebody else guesses at thirty.",
+    "tr": "Kazandıracak kadar küçük; yeter ki başkası otuz diye tahmin etmeden sen söyle."
+   },
+   {
+    "who": "Guven",
+    "en": "Somebody will still say thirty, and the number they say is the number that gets printed.",
+    "tr": "Biri yine otuz diyecek ve basılan sayı onun söylediği olacak."
+   },
+   {
+    "who": "Zerrin",
+    "en": "Then publish nine with the working, in March, and let them argue with the method instead of the figure.",
+    "tr": "O hâlde dokuzu hesabıyla birlikte martta yayımla ve rakamla değil yöntemle tartışsınlar."
+   },
+   {
+    "who": "Guven",
+    "en": "The method has a weakness and you have not found it yet.",
+    "tr": "Yöntemin bir zayıflığı var ve henüz bulmadın."
+   },
+   {
+    "who": "Zerrin",
+    "en": "Tell me now rather than in a hall in April.",
+    "tr": "Nisanda bir salonda değil, şimdi söyle."
+   },
+   {
+    "who": "Guven",
+    "en": "It counts households, and a third of the people you see do not live in a household anybody has counted.",
+    "tr": "Haneleri sayıyor ve senin gördüğün insanların üçte biri kimsenin saymadığı bir hanede yaşıyor."
+   },
+   {
+    "who": "Zerrin",
+    "en": "So the nine percent is wrong in the direction that helps you.",
+    "tr": "Yani yüzde dokuz, senin işine yarayan yönde yanlış."
+   },
+   {
+    "who": "Guven",
+    "en": "It is, and that is why I have been quiet about it, and why I am telling you rather than a newspaper.",
+    "tr": "Öyle ve bu yüzden sessiz kaldım; bu yüzden de bunu bir gazeteye değil sana söylüyorum."
+   },
+   {
+    "who": "Zerrin",
+    "en": "Then we correct it together and the correction arrives before the plan does.",
+    "tr": "O hâlde birlikte düzeltiriz ve düzeltme plandan önce gelir."
+   },
+   {
+    "who": "Guven",
+    "en": "It will delay the plan by a season, and it is the only version still standing in three years.",
+    "tr": "Planı bir mevsim geciktirir ve üç yıl sonra ayakta duracak tek hâli o."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "writes off",
+    "tr": "borcu siler"
+   },
+   {
+    "w": "debt",
+    "tr": "borç"
+   },
+   {
+    "w": "apply",
+    "tr": "başvurmak"
+   },
+   {
+    "w": "chamber",
+    "tr": "meclis"
+   },
+   {
+    "w": "figures",
+    "tr": "rakamlar"
+   },
+   {
+    "w": "method",
+    "tr": "yöntem"
+   },
+   {
+    "w": "households",
+    "tr": "haneler"
+   },
+   {
+    "w": "correction",
+    "tr": "düzeltme"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is wrong with a plan people must apply to?",
+    "options": [
+     "Those who need it most do not apply",
+     "It is unfair to the state",
+     "It costs too much",
+     "It is slow"
+    ],
+    "answer": 0,
+    "note": "İlk replik."
+   },
+   {
+    "q": "Why has Guven not said the nine percent?",
+    "options": [
+     "It is wrong",
+     "It is secret",
+     "He does not know it",
+     "He fears it sounds small enough to lose him the argument"
+    ],
+    "answer": 3,
+    "note": "\"Nine percent is small enough to lose me the argument.\""
+   },
+   {
+    "q": "What does Zerrin advise?",
+    "options": [
+     "Say nothing",
+     "Wait until April",
+     "Use a larger figure",
+     "Publish nine with the working in March"
+    ],
+    "answer": 3,
+    "note": "\"Publish nine with the working, in March.\""
+   },
+   {
+    "q": "What is the weakness of the method?",
+    "options": [
+     "It is old",
+     "It counts households and misses people outside them",
+     "It ignores debt size",
+     "It uses small samples"
+    ],
+    "answer": 1,
+    "note": "\"A third of the people you see do not live in a household anybody has counted.\""
+   },
+   {
+    "q": "What will correcting it cost?",
+    "options": [
+     "Nothing",
+     "His job",
+     "The whole plan",
+     "A season's delay"
+    ],
+    "answer": 3,
+    "note": "\"It will delay the plan by a season.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-l-23",
+  "level": "C2",
+  "order": 23,
+  "kind": "listening",
+  "title": "Yukarısı kimin",
+  "titleEn": "Who Owns What Is Up There",
+  "minutes": 7,
+  "names": [
+   "Aynur",
+   "Tolga"
+  ],
+  "speakers": [
+   "Aynur",
+   "Tolga"
+  ],
+  "lines": [
+   {
+    "who": "Tolga",
+    "en": "Nobody owns the orbit, and everybody behaves as though whoever arrives first does.",
+    "tr": "Yörünge kimsenin değil ve herkes oraya ilk varanınmış gibi davranıyor."
+   },
+   {
+    "who": "Aynur",
+    "en": "That is not quite true. The treaty says no state may claim it, and it says nothing about a company from that state.",
+    "tr": "Tam olarak doğru değil. Antlaşma hiçbir devletin onu sahiplenemeyeceğini söylüyor, o devletten bir şirket hakkında bir şey söylemiyor."
+   },
+   {
+    "who": "Tolga",
+    "en": "Which is the gap the whole industry is standing in.",
+    "tr": "Bütün sektörün içinde durduğu boşluk da bu."
+   },
+   {
+    "who": "Aynur",
+    "en": "It is, and the gap will close in the direction of whoever is standing in it when somebody finally writes the rule.",
+    "tr": "Öyle ve biri sonunda kuralı yazdığında boşluk, o sırada içinde duranın lehine kapanacak."
+   },
+   {
+    "who": "Tolga",
+    "en": "Then we should be standing in it.",
+    "tr": "O hâlde içinde duran biz olmalıyız."
+   },
+   {
+    "who": "Aynur",
+    "en": "We should be writing the rule, which is slower and is the only thing that lasts.",
+    "tr": "Kuralı yazan biz olmalıyız; bu daha yavaş ve kalıcı olan tek şey."
+   },
+   {
+    "who": "Tolga",
+    "en": "I have four hundred objects up there and you are asking me to spend two years in meetings.",
+    "tr": "Yukarıda dört yüz cismim var ve sen benden iki yılı toplantılarda geçirmemi istiyorsun."
+   },
+   {
+    "who": "Aynur",
+    "en": "I am asking you to spend two years making the rule one you can live with.",
+    "tr": "İki yılı, kuralı birlikte yaşayabileceğin bir kural hâline getirmeye harcamanı istiyorum."
+   },
+   {
+    "who": "Tolga",
+    "en": "And if the rule that arrives says every object must be brought down within five years?",
+    "tr": "Ya gelen kural her cismin beş yıl içinde indirilmesi gerektiğini söylerse?"
+   },
+   {
+    "who": "Aynur",
+    "en": "Then you will have been in the room while the five was chosen, and you will know why it is not three.",
+    "tr": "O zaman beş seçilirken odada olmuş olursun ve neden üç olmadığını bilirsin."
+   },
+   {
+    "who": "Tolga",
+    "en": "Five we survive. Three ends the business.",
+    "tr": "Beşi atlatırız. Üç işi bitirir."
+   },
+   {
+    "who": "Aynur",
+    "en": "Three is what gets chosen by people who have never been told what it costs, and nobody has told them.",
+    "tr": "Üç, maliyetinin ne olduğu hiç söylenmemiş kişilerce seçilir ve kimse onlara söylemedi."
+   },
+   {
+    "who": "Tolga",
+    "en": "Because telling them sounds like asking for a favor.",
+    "tr": "Çünkü onlara söylemek bir ayrıcalık istemek gibi duyuluyor."
+   },
+   {
+    "who": "Aynur",
+    "en": "It does, which is why the number has to come with the failures, not only with the costs.",
+    "tr": "Öyle duyuluyor; bu yüzden sayı sadece maliyetlerle değil başarısızlıklarla birlikte gelmeli."
+   },
+   {
+    "who": "Tolga",
+    "en": "You want me to publish how often we lose one.",
+    "tr": "Ne sıklıkta birini kaybettiğimizi yayımlamamı istiyorsun."
+   },
+   {
+    "who": "Aynur",
+    "en": "Before a journalist counts them, because the count is the same and the sentence around it is not.",
+    "tr": "Bir gazeteci onları saymadan önce; çünkü sayı aynı, etrafındaki cümle değil."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "orbit",
+    "tr": "yörünge"
+   },
+   {
+    "w": "treaty",
+    "tr": "antlaşma"
+   },
+   {
+    "w": "claim",
+    "tr": "sahiplenmek"
+   },
+   {
+    "w": "gap",
+    "tr": "boşluk"
+   },
+   {
+    "w": "industry",
+    "tr": "sektör"
+   },
+   {
+    "w": "objects",
+    "tr": "cisimler"
+   },
+   {
+    "w": "favor",
+    "tr": "ayrıcalık, iyilik"
+   },
+   {
+    "w": "failures",
+    "tr": "başarısızlıklar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the treaty leave open?",
+    "options": [
+     "Military use",
+     "Companies, as opposed to states",
+     "Old satellites",
+     "Small objects"
+    ],
+    "answer": 1,
+    "note": "\"It says nothing about a company from that state.\""
+   },
+   {
+    "q": "What does Aynur want Tolga to do?",
+    "options": [
+     "Sell the company",
+     "Wait for the treaty",
+     "Help write the rule",
+     "Launch sooner"
+    ],
+    "answer": 2,
+    "note": "\"We should be writing the rule.\""
+   },
+   {
+    "q": "Why does the difference between five and three years matter?",
+    "options": [
+     "Five is impossible",
+     "Three is cheaper",
+     "Three would end the business",
+     "Five is illegal"
+    ],
+    "answer": 2,
+    "note": "\"Five we survive. Three ends the business.\""
+   },
+   {
+    "q": "Why is three likely to be chosen?",
+    "options": [
+     "The public wants it",
+     "Nobody has told the decision makers the cost",
+     "It is in the treaty",
+     "It is the safest"
+    ],
+    "answer": 1,
+    "note": "\"Three is what gets chosen by people who have never been told what it costs.\""
+   },
+   {
+    "q": "Why publish the failures first?",
+    "options": [
+     "It delays the rule",
+     "The count is the same but the sentence around it is not",
+     "It wins customers",
+     "It is required"
+    ],
+    "answer": 1,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "c2-l-24",
+  "level": "C2",
+  "order": 24,
+  "kind": "listening",
+  "title": "Gazetenin yeni sahibi",
+  "titleEn": "Who Owns the Paper Now",
+  "minutes": 7,
+  "names": [
+   "Necla",
+   "Serkan"
+  ],
+  "speakers": [
+   "Necla",
+   "Serkan"
+  ],
+  "lines": [
+   {
+    "who": "Serkan",
+    "en": "He has bought it, he has said the right things, and he has said them in writing, which is more than the last owner did.",
+    "tr": "Satın aldı, doğru şeyleri söyledi ve onları yazılı olarak söyledi; bu bir öncekinin yaptığından fazlası."
+   },
+   {
+    "who": "Necla",
+    "en": "The last owner said them out loud and meant them, and the paper still changed within eighteen months.",
+    "tr": "Bir öncekiler onları yüksek sesle söyledi ve içtendi; gazete yine de on sekiz ayda değişti."
+   },
+   {
+    "who": "Serkan",
+    "en": "Changed how? Nobody was ever told what to write.",
+    "tr": "Nasıl değişti? Kimseye ne yazacağı söylenmedi."
+   },
+   {
+    "who": "Necla",
+    "en": "Nobody is ever told. Three subjects simply became difficult to get onto a page and everybody learned it without a meeting.",
+    "tr": "Kimseye söylenmez. Üç konu sayfaya girmesi zor konular hâline geldi ve herkes bunu toplantısız öğrendi."
+   },
+   {
+    "who": "Serkan",
+    "en": "Then name the three and put them in the agreement.",
+    "tr": "O hâlde üçünün adını koy ve anlaşmaya yaz."
+   },
+   {
+    "who": "Necla",
+    "en": "If I can name them now, they are not the ones that will happen. The ones that matter are the ones neither of us has thought of.",
+    "tr": "Şimdi adlarını koyabiliyorsam, olacak olanlar onlar değildir. Önemli olanlar ikimizin de aklına gelmeyenler."
+   },
+   {
+    "who": "Serkan",
+    "en": "So the agreement is useless.",
+    "tr": "Yani anlaşma işe yaramaz."
+   },
+   {
+    "who": "Necla",
+    "en": "The agreement is useful for the thing nobody protects: the right to publish something and still be here the following week.",
+    "tr": "Anlaşma kimsenin korumadığı şey için yararlı: bir şey yayımlayıp ertesi hafta hâlâ burada olma hakkı."
+   },
+   {
+    "who": "Serkan",
+    "en": "A clause about not being dismissed.",
+    "tr": "İşten çıkarılmamaya dair bir madde."
+   },
+   {
+    "who": "Necla",
+    "en": "A clause about who may dismiss, and a period of notice long enough that the reason has to be written down.",
+    "tr": "Kimin çıkarabileceğine dair bir madde ve sebebin yazılmasını gerektirecek kadar uzun bir ihbar süresi."
+   },
+   {
+    "who": "Serkan",
+    "en": "He will sign that. It costs him nothing today.",
+    "tr": "Buna imza atar. Bugün ona hiçbir şeye mal olmuyor."
+   },
+   {
+    "who": "Necla",
+    "en": "It costs him everything on the day he wants to use it, which is exactly when it should cost something.",
+    "tr": "Kullanmak istediği gün ona her şeye mal olur; tam da bir bedeli olması gereken gün."
+   },
+   {
+    "who": "Serkan",
+    "en": "And if he refuses?",
+    "tr": "Ya reddederse?"
+   },
+   {
+    "who": "Necla",
+    "en": "Then we have learned it in April rather than in the second year, and I will say so to the staff that afternoon.",
+    "tr": "O zaman bunu ikinci yılda değil nisanda öğrenmiş oluruz ve o öğleden sonra personele söylerim."
+   },
+   {
+    "who": "Serkan",
+    "en": "You will lose half of them by June.",
+    "tr": "Hazirana kadar yarısını kaybedersin."
+   },
+   {
+    "who": "Necla",
+    "en": "I will lose them either way. The difference is whether they leave knowing or find out afterwards.",
+    "tr": "İki hâlde de kaybedeceğim. Fark, bilerek gitmeleriyle sonradan öğrenmeleri arasında."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "owner",
+    "tr": "sahip"
+   },
+   {
+    "w": "subjects",
+    "tr": "konular"
+   },
+   {
+    "w": "agreement",
+    "tr": "anlaşma"
+   },
+   {
+    "w": "clause",
+    "tr": "sözleşme maddesi"
+   },
+   {
+    "w": "dismissed",
+    "tr": "işten çıkarılmış"
+   },
+   {
+    "w": "notice",
+    "tr": "ihbar süresi"
+   },
+   {
+    "w": "staff",
+    "tr": "personel"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How did the paper change under the last owner?",
+    "options": [
+     "Staff were dismissed",
+     "Pages were cut",
+     "Three subjects became hard to get onto a page",
+     "The price rose"
+    ],
+    "answer": 2,
+    "note": "\"Three subjects simply became difficult to get onto a page.\""
+   },
+   {
+    "q": "Why will Necla not name three subjects in the agreement?",
+    "options": [
+     "They are secret",
+     "The ones that matter are the ones nobody has thought of",
+     "She is not allowed",
+     "They change weekly"
+    ],
+    "answer": 1,
+    "note": "\"The ones that matter are the ones neither of us has thought of.\""
+   },
+   {
+    "q": "What does she want the agreement to protect?",
+    "options": [
+     "The building",
+     "The right to publish and still be there next week",
+     "Page numbers",
+     "Salaries"
+    ],
+    "answer": 1,
+    "note": "\"The right to publish something and still be here the following week.\""
+   },
+   {
+    "q": "What exactly should the clause say?",
+    "options": [
+     "That staff choose the editor",
+     "That the owner may not visit",
+     "Who may dismiss, and a long period of notice",
+     "That nobody may be dismissed"
+    ],
+    "answer": 2,
+    "note": "\"A clause about who may dismiss, and a period of notice.\""
+   },
+   {
+    "q": "Why is a refusal in April useful?",
+    "options": [
+     "The staff would stay",
+     "It costs him money",
+     "It ends the sale",
+     "They learn it now instead of in the second year"
+    ],
+    "answer": 3,
+    "note": "\"We have learned it in April rather than in the second year.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-l-25",
+  "level": "C2",
+  "order": 25,
+  "kind": "listening",
+  "title": "Taşınmak zorunda olan köy",
+  "titleEn": "The Village That Must Move",
+  "minutes": 7,
+  "names": [
+   "Sibel",
+   "Rasim"
+  ],
+  "speakers": [
+   "Sibel",
+   "Rasim"
+  ],
+  "lines": [
+   {
+    "who": "Rasim",
+    "en": "You have given us twelve years and the sea has given us about seven, and both of you are guessing.",
+    "tr": "Siz bize on iki yıl verdiniz, deniz yaklaşık yedi yıl verdi ve ikiniz de tahmin yürütüyorsunuz."
+   },
+   {
+    "who": "Sibel",
+    "en": "The seven is a guess. The twelve is what the money allows, and nobody has ever said that out loud in your hall.",
+    "tr": "Yedi bir tahmin. On iki, paranın izin verdiği süre ve bunu sizin salonunuzda kimse yüksek sesle söylemedi."
+   },
+   {
+    "who": "Rasim",
+    "en": "Say it there and half the village stops believing anything the office prints.",
+    "tr": "Orada söyle, köyün yarısı ofisin bastığı hiçbir şeye inanmaz."
+   },
+   {
+    "who": "Sibel",
+    "en": "Say it there and the other half starts making plans that do not depend on us.",
+    "tr": "Orada söyle, diğer yarısı bize bağlı olmayan planlar yapmaya başlar."
+   },
+   {
+    "who": "Rasim",
+    "en": "That is the half that can afford to move. They will go first and the rest are left with a smaller village and the same sea.",
+    "tr": "Taşınmaya gücü yeten yarısı o. Önce onlar gider ve geri kalanlara daha küçük bir köy ve aynı deniz kalır."
+   },
+   {
+    "who": "Sibel",
+    "en": "Which is what happens in every one of these, and the only thing that changes it is moving the school early.",
+    "tr": "Bunların her birinde olan bu ve bunu değiştiren tek şey okulu erken taşımak."
+   },
+   {
+    "who": "Rasim",
+    "en": "The school is the last thing anybody agrees to move.",
+    "tr": "Okul, taşınmasına en son razı olunan şeydir."
+   },
+   {
+    "who": "Sibel",
+    "en": "It is the first thing that decides who stays. Families follow it and the rest of the argument follows them.",
+    "tr": "Kimin kalacağına karar veren ilk şey odur. Aileler onu izler, tartışmanın geri kalanı da aileleri izler."
+   },
+   {
+    "who": "Rasim",
+    "en": "You are asking me to propose closing the school in a village that believes it has twelve years.",
+    "tr": "Benden, on iki yılı olduğuna inanan bir köyde okulun kapatılmasını önermemi istiyorsun."
+   },
+   {
+    "who": "Sibel",
+    "en": "I am asking you to propose opening a school three kilometers inland, which is the same act described honestly.",
+    "tr": "Üç kilometre içeride bir okul açılmasını önermeni istiyorum; aynı eylemin dürüstçe anlatılmış hâli."
+   },
+   {
+    "who": "Rasim",
+    "en": "It is the same act described in a way that lets people say yes to it.",
+    "tr": "Aynı eylemin, insanların evet diyebileceği biçimde anlatılmış hâli."
+   },
+   {
+    "who": "Sibel",
+    "en": "Both. And I will come and say the seven, so that the honesty is not something you carry alone.",
+    "tr": "İkisi de. Ve ben gelip yediyi söyleyeceğim ki dürüstlüğü tek başına taşımak zorunda kalmayasın."
+   },
+   {
+    "who": "Rasim",
+    "en": "They will shout at you for an hour.",
+    "tr": "Sana bir saat bağıracaklar."
+   },
+   {
+    "who": "Sibel",
+    "en": "They should. I have been in four of these halls and the quiet ones were the villages that later had no time.",
+    "tr": "Bağırmalılar. Bu salonlardan dördünde bulundum ve sessiz olanlar sonradan vakti kalmayan köylerdi."
+   },
+   {
+    "who": "Rasim",
+    "en": "Then come in February, when the water is in the lower road and nobody has to be persuaded that it is coming.",
+    "tr": "O hâlde şubatta gel; su alt yolda olur ve kimsenin geldiğine ikna edilmesi gerekmez."
+   },
+   {
+    "who": "Sibel",
+    "en": "February, and I will bring the map that shows what the money buys in each of the twelve years.",
+    "tr": "Şubat; ve on iki yılın her birinde paranın ne satın aldığını gösteren haritayı getireceğim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "guessing",
+    "tr": "tahmin yürütmek"
+   },
+   {
+    "w": "hall",
+    "tr": "köy salonu"
+   },
+   {
+    "w": "afford",
+    "tr": "gücü yetmek"
+   },
+   {
+    "w": "inland",
+    "tr": "içeride, denizden uzakta"
+   },
+   {
+    "w": "honesty",
+    "tr": "dürüstlük"
+   },
+   {
+    "w": "shout",
+    "tr": "bağırmak"
+   },
+   {
+    "w": "persuaded",
+    "tr": "ikna edilmiş"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the difference between twelve and seven?",
+    "options": [
+     "Twelve is the sea",
+     "Twelve is what the money allows; seven is the sea",
+     "Both are official",
+     "Seven is the plan"
+    ],
+    "answer": 1,
+    "note": "\"The twelve is what the money allows.\""
+   },
+   {
+    "q": "What happens if the richer half leaves first?",
+    "options": [
+     "The money grows",
+     "The school closes early",
+     "The plan succeeds",
+     "A smaller village faces the same sea"
+    ],
+    "answer": 3,
+    "note": "\"The rest are left with a smaller village and the same sea.\""
+   },
+   {
+    "q": "What does Sibel say decides who stays?",
+    "options": [
+     "The money",
+     "The harbor",
+     "The road",
+     "The school"
+    ],
+    "answer": 3,
+    "note": "\"It is the first thing that decides who stays.\""
+   },
+   {
+    "q": "How should the proposal be worded?",
+    "options": [
+     "Repairing the road",
+     "Moving the village",
+     "Opening a school three kilometers inland",
+     "Closing the school"
+    ],
+    "answer": 2,
+    "note": "\"Propose opening a school three kilometers inland.\""
+   },
+   {
+    "q": "Why does Rasim want her to come in February?",
+    "options": [
+     "The school is closed",
+     "The water is in the lower road then",
+     "Fewer people attend",
+     "The hall is free"
+    ],
+    "answer": 1,
+    "note": "\"When the water is in the lower road.\""
+   }
+  ]
  }
 ]
