@@ -635,5 +635,658 @@
     "note": "Son cümle."
    }
   ]
+ },
+ {
+  "id": "c2-r-06",
+  "level": "C2",
+  "order": 6,
+  "kind": "reading",
+  "title": "Uzmanlığın sınırları",
+  "titleEn": "The Limits of Expertise",
+  "minutes": 7,
+  "names": [],
+  "text": "There is a category of question on which expert judgment reliably outperforms the amateur, and a second category on which it does not, and the two are frequently confused by experts and critics alike. Where a field offers rapid, unambiguous feedback, practice produces genuine skill. A surgeon learns within hours whether an operation succeeded; a chess player learns within minutes whether a move was sound. In such environments experience accumulates into judgment that can be trusted precisely because the world has been correcting it continuously. Now consider a field in which the feedback arrives years later, arrives mixed with a hundred other influences, and can be interpreted in several ways. Long-range political forecasting has this shape, as does the selection of employees and the prediction of which novel will sell. Studies of these domains report a disquieting result: experienced practitioners perform barely better than simple statistical rules, and sometimes worse, while remaining considerably more confident than either. The confidence is not fraudulent. It is produced by the same mechanism as genuine expertise — the accumulation of vivid, memorable cases — but without the corrective that would make the accumulation informative. What follows is not that expertise is worthless, which is the conclusion popular writing usually draws, but that the value of an expert depends on a property of the field rather than a property of the person. Before deferring to a specialist it is worth asking a single question: how quickly, and how unambiguously, does this person find out when they are wrong? The answer predicts more than any qualification. The practical difficulty is that fields with poor feedback tend to develop the strongest professional cultures, precisely because nothing external is available to settle disputes and status must therefore be conferred internally. Where the world corrects you, credentials matter less; where it does not, they become the only currency. This is why demands for humility, addressed to individuals, rarely change anything. The individual is responding rationally to the incentives of a field in which confidence is rewarded and error is never clearly assigned.",
+  "glossary": [
+   {
+    "w": "outperforms",
+    "tr": "daha iyi sonuç verir"
+   },
+   {
+    "w": "unambiguous",
+    "tr": "kesin, çift anlamı olmayan"
+   },
+   {
+    "w": "accumulates",
+    "tr": "birikir"
+   },
+   {
+    "w": "forecasting",
+    "tr": "öngörü, tahmin"
+   },
+   {
+    "w": "disquieting",
+    "tr": "tedirgin edici"
+   },
+   {
+    "w": "practitioners",
+    "tr": "uygulayıcılar, meslek erbabı"
+   },
+   {
+    "w": "fraudulent",
+    "tr": "sahtekârca"
+   },
+   {
+    "w": "vivid",
+    "tr": "canlı, çarpıcı"
+   },
+   {
+    "w": "deferring",
+    "tr": "söz vermek, üstünlüğünü kabul etmek"
+   },
+   {
+    "w": "qualification",
+    "tr": "diploma, yeterlilik"
+   },
+   {
+    "w": "expertise",
+    "tr": "uzmanlık"
+   },
+   {
+    "w": "domains",
+    "tr": "alanlar"
+   },
+   {
+    "w": "statistical",
+    "tr": "istatistiksel"
+   },
+   {
+    "w": "accumulation",
+    "tr": "birikim"
+   },
+   {
+    "w": "deception",
+    "tr": "aldatma"
+   },
+   {
+    "w": "conferred",
+    "tr": "verilen, bahşedilen"
+   },
+   {
+    "w": "humility",
+    "tr": "alçakgönüllülük"
+   }
+  ],
+  "questions": [
+   {
+    "q": "In which fields does expertise reliably develop?",
+    "options": [
+     "Where feedback is rapid and unambiguous",
+     "Where training is long",
+     "Where pay is high",
+     "Where the work is difficult"
+    ],
+    "answer": 0,
+    "note": "\"Where a field offers rapid, unambiguous feedback.\""
+   },
+   {
+    "q": "What shape does long-range forecasting have?",
+    "options": [
+     "Feedback arrives years later and mixed",
+     "No feedback at all",
+     "Immediate feedback",
+     "Feedback from colleagues"
+    ],
+    "answer": 0,
+    "note": "Geri bildirim yıllar sonra, yüz türlü etkiyle karışık geliyor."
+   },
+   {
+    "q": "What do studies of such domains find?",
+    "options": [
+     "Amateurs do better",
+     "Experts barely beat simple rules but are more confident",
+     "Rules are useless",
+     "Experts always fail"
+    ],
+    "answer": 1,
+    "note": "\"Barely better than simple statistical rules ... considerably more confident.\""
+   },
+   {
+    "q": "How is the confidence produced?",
+    "options": [
+     "By vivid memorable cases without correction",
+     "By training courses",
+     "By peer pressure",
+     "By deliberate deception"
+    ],
+    "answer": 0,
+    "note": "Gerçek uzmanlıkla aynı mekanizma, ama düzeltici yok."
+   },
+   {
+    "q": "What conclusion does the author reject?",
+    "options": [
+     "That expertise is worthless",
+     "That confidence is misleading",
+     "That fields differ",
+     "That feedback matters"
+    ],
+    "answer": 0,
+    "note": "\"Not that expertise is worthless, which is the conclusion popular writing usually draws.\""
+   },
+   {
+    "q": "What single question should you ask?",
+    "options": [
+     "How long have they worked?",
+     "Who pays them?",
+     "How quickly does this person learn they are wrong?",
+     "Where did they study?"
+    ],
+    "answer": 2,
+    "note": "Son iki cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-07",
+  "level": "C2",
+  "order": 7,
+  "kind": "reading",
+  "title": "Sokak adlarının siyaseti",
+  "titleEn": "The Politics of Street Names",
+  "minutes": 7,
+  "names": [],
+  "text": "A street name is the most widely distributed piece of official language in any city. It appears on documents, in conversation, on the envelopes of people who have no interest in history, and it does its work without ever being read as a statement. This is precisely what makes renaming so contentious. Those who defend an existing name usually argue that it is merely a label, emptied of meaning by daily use, and there is something to this: few residents of a street named after a general think about the general. Those who want the name changed reply that the emptiness is the point, since a commemoration nobody notices is the most durable kind. Both positions are stronger than their opponents allow. The practical consequences of renaming are real and are borne unequally. A shopkeeper reprints signs and stationery and loses customers who cannot find the address; a resident updates records with a dozen institutions, each of which has its own procedure. Cities that have handled the process well tend to share two features. They fund the administrative cost rather than transferring it to whoever happens to live there, and they treat the old name as information rather than as an embarrassment, leaving it visible on a small plate beneath the new one. The second measure irritates both camps, which is a reasonable indication that it is close to right: it denies the honor while preserving the fact, and it leaves a city whose surfaces record that an argument took place rather than one that appears always to have agreed with itself. There is a version of this argument that goes too far, and it is worth marking. If every contested name were retained beneath its replacement, the result would be a city as cluttered as a footnote, and the practice would lose its force through repetition. The measure works because it is exceptional, applied where the original decision was itself a public act rather than an accident of habit. Most streets are named after trees.",
+  "glossary": [
+   {
+    "w": "contentious",
+    "tr": "tartışmalı"
+   },
+   {
+    "w": "commemoration",
+    "tr": "anma"
+   },
+   {
+    "w": "durable",
+    "tr": "kalıcı"
+   },
+   {
+    "w": "borne",
+    "tr": "üstlenilen"
+   },
+   {
+    "w": "stationery",
+    "tr": "kırtasiye, matbu evrak"
+   },
+   {
+    "w": "administrative",
+    "tr": "idari"
+   },
+   {
+    "w": "embarrassment",
+    "tr": "utanç kaynağı"
+   },
+   {
+    "w": "irritates",
+    "tr": "rahatsız eder"
+   },
+   {
+    "w": "camps",
+    "tr": "taraflar"
+   },
+   {
+    "w": "emptiness",
+    "tr": "boşluk"
+   },
+   {
+    "w": "indication",
+    "tr": "gösterge"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is a street name unusual as official language?",
+    "options": [
+     "It works without being read as a statement",
+     "It changes often",
+     "It is written in capitals",
+     "It is legally binding"
+    ],
+    "answer": 0,
+    "note": "İlk iki cümle."
+   },
+   {
+    "q": "What do defenders of an existing name argue?",
+    "options": [
+     "It is merely a label emptied by use",
+     "It is historically accurate",
+     "Changing is illegal",
+     "Residents like it"
+    ],
+    "answer": 0,
+    "note": "\"It is merely a label, emptied of meaning by daily use.\""
+   },
+   {
+    "q": "How do those wanting change reply?",
+    "options": [
+     "Labels are never empty",
+     "Names are symbols only",
+     "Unnoticed commemoration is the most durable kind",
+     "History must be taught"
+    ],
+    "answer": 2,
+    "note": "\"A commemoration nobody notices is the most durable kind.\""
+   },
+   {
+    "q": "Who bears the practical cost?",
+    "options": [
+     "The city council",
+     "Shopkeepers and residents",
+     "Nobody",
+     "Historians"
+    ],
+    "answer": 1,
+    "note": "İşaretleri yeniden bastıran esnaf, kayıtlarını güncelleyen sakin."
+   },
+   {
+    "q": "What do cities that handle it well do?",
+    "options": [
+     "Avoid renaming",
+     "Rename everything at once",
+     "Fund the cost and keep the old name visible",
+     "Hold a vote"
+    ],
+    "answer": 2,
+    "note": "İki özellik: maliyeti üstlenmek, eski adı küçük bir levhada bırakmak."
+   },
+   {
+    "q": "Why does the author approve of irritating both camps?",
+    "options": [
+     "It saves money",
+     "It pleases historians",
+     "It denies the honor while preserving the fact",
+     "It ends the argument"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-08",
+  "level": "C2",
+  "order": 8,
+  "kind": "reading",
+  "title": "Çeviri makinesi ve anlam",
+  "titleEn": "Machine Translation and Meaning",
+  "minutes": 7,
+  "names": [],
+  "text": "Machine translation reached a standard two decades ago that its early designers had regarded as distant, and it did so by abandoning the assumption on which the field was founded. The original programs attempted to understand a sentence: to parse its structure, identify its parts, resolve its ambiguities and then reconstruct the meaning in another language. Progress was painfully slow. The systems that replaced them make no attempt to understand anything. They observe that certain sequences of words in one language have historically appeared alongside certain sequences in another, and they produce the sequence that the pattern makes most probable. By any reasonable measure the output is better. This ought to raise a question that the industry has mostly avoided: what does it tell us that a process with no comprehension whatever can produce text that competent speakers accept? One tempting answer is that understanding was never necessary, that meaning is exhausted by patterns of use, and that the machine has quietly settled a philosophical dispute in favor of one side. A second answer, harder to dismiss than it first appears, is that the machine is parasitic on understanding rather than independent of it. Every sentence in its training data was written by somebody who meant something, and the statistical shadow of all that meaning is what the system rearranges. On this view the translations are competent for the same reason that a well-made copy is accurate, and the moment the system is asked about a situation for which no human ever wrote a sentence, the limits of the arrangement become visible immediately. Neither answer can be settled by pointing at the output, which is what both camps keep doing. A translation that reads well is consistent with the machine having learned meaning and equally consistent with its having learned the shadow of meaning, and no amount of additional fluency distinguishes the two. What would distinguish them is performance in territory the training data never covered, which is precisely the territory where deployment is least common and evaluation least rigorous.",
+  "glossary": [
+   {
+    "w": "parse",
+    "tr": "çözümlemek, ayrıştırmak"
+   },
+   {
+    "w": "ambiguities",
+    "tr": "belirsizlikler"
+   },
+   {
+    "w": "reconstruct",
+    "tr": "yeniden kurmak"
+   },
+   {
+    "w": "probable",
+    "tr": "olası"
+   },
+   {
+    "w": "comprehension",
+    "tr": "anlama"
+   },
+   {
+    "w": "exhausted",
+    "tr": "tüketilmiş, tamamen açıklanmış"
+   },
+   {
+    "w": "parasitic",
+    "tr": "asalak, başkasına dayanan"
+   },
+   {
+    "w": "statistical",
+    "tr": "istatistiksel"
+   },
+   {
+    "w": "rearranges",
+    "tr": "yeniden düzenler"
+   },
+   {
+    "w": "random",
+    "tr": "rastgele"
+   },
+   {
+    "w": "rigorous",
+    "tr": "titiz, sıkı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the early programs attempt?",
+    "options": [
+     "To ask human translators",
+     "To count words",
+     "To understand the sentence",
+     "To copy dictionaries"
+    ],
+    "answer": 2,
+    "note": "\"The original programs attempted to understand a sentence.\""
+   },
+   {
+    "q": "What do the replacement systems do?",
+    "options": [
+     "Parse grammar carefully",
+     "Consult a dictionary",
+     "Produce the most probable sequence",
+     "Translate word by word"
+    ],
+    "answer": 2,
+    "note": "\"They produce the sequence that the pattern makes most probable.\""
+   },
+   {
+    "q": "What question has the industry avoided?",
+    "options": [
+     "Which languages are hardest",
+     "What it means that a process without comprehension succeeds",
+     "Who owns the data",
+     "How much it costs"
+    ],
+    "answer": 1,
+    "note": "\"What does it tell us that a process with no comprehension whatever can produce text...\""
+   },
+   {
+    "q": "What is the first tempting answer?",
+    "options": [
+     "Translation is impossible",
+     "Humans were always wrong",
+     "Meaning is exhausted by patterns of use",
+     "Machines think"
+    ],
+    "answer": 2,
+    "note": "İlk cevap: anlam kullanım örüntüleriyle tükeniyor."
+   },
+   {
+    "q": "What does the second answer claim?",
+    "options": [
+     "The machine is parasitic on human understanding",
+     "The machine understands slowly",
+     "Training data is too small",
+     "Patterns are random"
+    ],
+    "answer": 0,
+    "note": "\"The machine is parasitic on understanding rather than independent of it.\""
+   },
+   {
+    "q": "When do the limits become visible?",
+    "options": [
+     "When data is old",
+     "When no human ever wrote about the situation",
+     "When languages are rare",
+     "When sentences are long"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-09",
+  "level": "C2",
+  "order": 9,
+  "kind": "reading",
+  "title": "Emeklilik yaşının aritmetiği",
+  "titleEn": "The Arithmetic of Retirement",
+  "minutes": 7,
+  "names": [],
+  "text": "Governments that raise the retirement age generally present the decision as arithmetic rather than choice. People live longer, the ratio of workers to pensioners has fallen, and the sums no longer balance; the conclusion is said to follow. The premises are accurate and the conclusion does not follow, because arithmetic can only tell you that something must change, never which thing. A pension gap can be closed by later retirement, by higher contributions, by lower payments, by taxing other activities, or by raising the number of contributors through migration or employment policy. Each option distributes the cost to a different group, and presenting one of them as a mathematical necessity is a way of removing that distribution from discussion. The choice of later retirement has a further feature that is rarely stated in the announcements. Life expectancy has risen unevenly. In several countries the gap in healthy years between the richest and poorest groups exceeds a decade, and it is concentrated in exactly the occupations where the work is physical. A uniform increase in the retirement age therefore takes a larger proportion of remaining healthy life from a construction worker than from an accountant, while being presented as an equal measure because the number is the same. Some systems have responded with differentiated ages tied to occupation or to years of contribution rather than to birth date, which is administratively awkward and closer to the underlying reality. The awkwardness is often cited as a reason to prefer the uniform rule, an argument that mistakes the convenience of the administrator for a principle of fairness. It is also worth noticing what the framing does to the people affected. A worker told that the change is arithmetic has been told, in effect, that there is nobody to argue with. A worker told that the state has chosen one of five available options can ask why that one, and can be answered. The second conversation is harder to manage and is the only one that treats the listener as a citizen rather than as a variable.",
+  "glossary": [
+   {
+    "w": "pensioners",
+    "tr": "emekliler"
+   },
+   {
+    "w": "premises",
+    "tr": "öncüller"
+   },
+   {
+    "w": "contributions",
+    "tr": "primler, katkı payları"
+   },
+   {
+    "w": "migration",
+    "tr": "göç"
+   },
+   {
+    "w": "life expectancy",
+    "tr": "yaşam beklentisi"
+   },
+   {
+    "w": "unevenly",
+    "tr": "eşitsiz biçimde"
+   },
+   {
+    "w": "occupations",
+    "tr": "meslekler"
+   },
+   {
+    "w": "uniform",
+    "tr": "tek tip"
+   },
+   {
+    "w": "accountant",
+    "tr": "muhasebeci"
+   },
+   {
+    "w": "differentiated",
+    "tr": "farklılaştırılmış"
+   },
+   {
+    "w": "ratio",
+    "tr": "oran"
+   },
+   {
+    "w": "expectancy",
+    "tr": "beklenti süresi"
+   },
+   {
+    "w": "administrator",
+    "tr": "yönetici"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How is the decision usually presented?",
+    "options": [
+     "As arithmetic rather than choice",
+     "As an experiment",
+     "As a public demand",
+     "As a temporary measure"
+    ],
+    "answer": 0,
+    "note": "İlk cümle."
+   },
+   {
+    "q": "What can arithmetic tell you?",
+    "options": [
+     "That something must change, not which thing",
+     "Exactly what to do",
+     "Nothing useful",
+     "Only the cost"
+    ],
+    "answer": 0,
+    "note": "\"Arithmetic can only tell you that something must change, never which thing.\""
+   },
+   {
+    "q": "What does presenting one option as necessity achieve?",
+    "options": [
+     "It satisfies economists",
+     "It removes the distribution of cost from discussion",
+     "It saves time",
+     "It reduces the gap"
+    ],
+    "answer": 1,
+    "note": "Maliyetin kime yükleneceği tartışma dışına çıkıyor."
+   },
+   {
+    "q": "What is true of life expectancy?",
+    "options": [
+     "It has risen unevenly between groups",
+     "It is equal everywhere",
+     "It cannot be measured",
+     "It has fallen"
+    ],
+    "answer": 0,
+    "note": "\"Life expectancy has risen unevenly.\""
+   },
+   {
+    "q": "Why is a uniform increase unequal in effect?",
+    "options": [
+     "It takes more healthy years from physical workers",
+     "It applies only to men",
+     "It excludes the self-employed",
+     "It is applied late"
+    ],
+    "answer": 0,
+    "note": "İnşaat işçisinden muhasebeciden daha fazla sağlıklı yıl alıyor."
+   },
+   {
+    "q": "How does the author judge the administrative objection?",
+    "options": [
+     "It is irrelevant to cost",
+     "It is decisive",
+     "It is dishonest",
+     "It mistakes convenience for fairness"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-10",
+  "level": "C2",
+  "order": 10,
+  "kind": "reading",
+  "title": "Sıkılmanın kaybı",
+  "titleEn": "The Loss of Boredom",
+  "minutes": 7,
+  "names": [],
+  "text": "Boredom has almost disappeared from ordinary life, and the disappearance has been so convenient that its significance is easy to miss. Every interval that was previously empty — a queue, a train journey, the minutes before sleep — can now be filled at no cost and with no planning. Since nobody enjoys being bored, the change looks like an unambiguous improvement, and for the shorter intervals it probably is. The complication concerns what boredom was doing. Psychologists who study the state describe it as an aversive signal, unpleasant by design, whose function is to push a person away from the current situation and towards something else. Whether that something else is productive is not determined in advance: a bored adolescent may write a novel or may break a window. What the signal guarantees is motion. Remove the discomfort and the motion becomes optional, which is why the most commonly reported consequence is not a decline in creative work but a curious flatness, a sense of days passing without any of them pressing hard enough to force a change. There is a second effect, less often discussed. Boredom is where a person encounters their own company without a task, and that encounter, though frequently unpleasant, is the standard route to noticing what one actually thinks. A life in which the interval never arrives is a life in which that noticing is always postponed. None of this argues for manufacturing boredom deliberately, which would be as artificial as avoiding it. It argues for leaving one or two intervals unfilled, and for treating the restlessness that follows not as a problem to be solved but as information about what has been missing. The claim is modest and should be kept modest, because the literature is thinner than the confident essays on the subject suggest, and because the interval that suits one person is unbearable to another. What can be said with reasonable confidence is that the removal happened without anybody choosing it, as a side effect of a device becoming small enough to carry, and that changes which nobody decided are the ones most worth examining afterwards.",
+  "glossary": [
+   {
+    "w": "boredom",
+    "tr": "sıkılma, can sıkıntısı"
+   },
+   {
+    "w": "intervals",
+    "tr": "aralıklar"
+   },
+   {
+    "w": "aversive",
+    "tr": "itici, kaçınma yaratan"
+   },
+   {
+    "w": "adolescent",
+    "tr": "ergen"
+   },
+   {
+    "w": "flatness",
+    "tr": "yavanlık, düzlük"
+   },
+   {
+    "w": "encounters",
+    "tr": "karşılaşır"
+   },
+   {
+    "w": "postponed",
+    "tr": "ertelenmiş"
+   },
+   {
+    "w": "manufacturing",
+    "tr": "imal etmek, üretmek"
+   },
+   {
+    "w": "restlessness",
+    "tr": "huzursuzluk, yerinde duramama"
+   },
+   {
+    "w": "complication",
+    "tr": "güçlük, çetrefil nokta"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is the disappearance of boredom easy to miss?",
+    "options": [
+     "It affects few people",
+     "It happened long ago",
+     "Nobody studies it",
+     "It has been so convenient"
+    ],
+    "answer": 3,
+    "note": "İlk cümle."
+   },
+   {
+    "q": "How do psychologists describe boredom?",
+    "options": [
+     "A form of tiredness",
+     "A modern illness",
+     "A harmless mood",
+     "An aversive signal, unpleasant by design"
+    ],
+    "answer": 3,
+    "note": "\"An aversive signal, unpleasant by design.\""
+   },
+   {
+    "q": "What does the signal guarantee?",
+    "options": [
+     "Rest",
+     "Creativity",
+     "Learning",
+     "Motion"
+    ],
+    "answer": 3,
+    "note": "\"What the signal guarantees is motion.\""
+   },
+   {
+    "q": "What is the most commonly reported consequence?",
+    "options": [
+     "More anxiety",
+     "A curious flatness",
+     "Less creative work",
+     "Better sleep"
+    ],
+    "answer": 1,
+    "note": "\"Not a decline in creative work but a curious flatness.\""
+   },
+   {
+    "q": "What is the second effect?",
+    "options": [
+     "People sleep less",
+     "Noticing what one thinks is always postponed",
+     "Work suffers",
+     "Conversation declines"
+    ],
+    "answer": 1,
+    "note": "Kendi şirketiyle görevsiz karşılaşma ertelenir."
+   },
+   {
+    "q": "What does the author finally argue for?",
+    "options": [
+     "Leaving one or two intervals unfilled",
+     "Banning phones",
+     "Manufacturing boredom",
+     "Longer queues"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
  }
 ]
