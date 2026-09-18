@@ -2006,5 +2006,923 @@
     "note": "\"I watched the smaller version in Izmir.\""
    }
   ]
+ },
+ {
+  "id": "c1-l-11",
+  "level": "C1",
+  "order": 11,
+  "kind": "listening",
+  "title": "Kaynak gizliliği",
+  "titleEn": "Protecting the Source",
+  "minutes": 6,
+  "names": [
+   "Ilknur",
+   "Refik"
+  ],
+  "speakers": [
+   "Ilknur",
+   "Refik"
+  ],
+  "lines": [
+   {
+    "who": "Refik",
+    "en": "If we publish the document, four people had access to it and she is one of them.",
+    "tr": "Belgeyi yayımlarsak ona erişimi olan dört kişi vardı ve o da bunlardan biri."
+   },
+   {
+    "who": "Ilknur",
+    "en": "Three, since the fourth left in February and could not have the current version.",
+    "tr": "Üç, çünkü dördüncüsü şubatta ayrıldı ve güncel sürüme sahip olamaz."
+   },
+   {
+    "who": "Refik",
+    "en": "That makes it worse, not better.",
+    "tr": "Bu durumu iyileştirmiyor, kötüleştiriyor."
+   },
+   {
+    "who": "Ilknur",
+    "en": "It does. And she understood that when she gave it to us.",
+    "tr": "Öyle. Ve bize verirken bunu anlamıştı."
+   },
+   {
+    "who": "Refik",
+    "en": "Understanding a risk in a cafe is not the same as living with it afterwards.",
+    "tr": "Bir kafede riski anlamak, sonrasında onunla yaşamakla aynı şey değil."
+   },
+   {
+    "who": "Ilknur",
+    "en": "Which is why I want to change what we publish rather than whether.",
+    "tr": "Bu yüzden yayımlayıp yayımlamamayı değil, neyi yayımladığımızı değiştirmek istiyorum."
+   },
+   {
+    "who": "Refik",
+    "en": "Describe the contents without the document itself.",
+    "tr": "Belgeyi vermeden içeriğini anlat."
+   },
+   {
+    "who": "Ilknur",
+    "en": "Yes. It is weaker journalism and it is the only version she survives.",
+    "tr": "Evet. Daha zayıf bir gazetecilik ve onun sağ çıkacağı tek hâli."
+   },
+   {
+    "who": "Refik",
+    "en": "They will deny it and demand the paper.",
+    "tr": "Reddedecekler ve belgeyi isteyecekler."
+   },
+   {
+    "who": "Ilknur",
+    "en": "They will, and we hold it, and that is a position we can defend for years.",
+    "tr": "İsteyecekler, biz tutacağız ve bu yıllarca savunabileceğimiz bir konum."
+   },
+   {
+    "who": "Refik",
+    "en": "Have you told her what the weaker version costs her?",
+    "tr": "Zayıf hâlin ona neye mal olduğunu ona söyledin mi?"
+   },
+   {
+    "who": "Ilknur",
+    "en": "That it may change nothing? Yes. She said publish it anyway.",
+    "tr": "Hiçbir şeyi değiştirmeyebileceğini mi? Evet. Yine de yayımlayın dedi."
+   },
+   {
+    "who": "Refik",
+    "en": "Then the decision is not ours to feel good about.",
+    "tr": "O hâlde bu karar, kendimizi iyi hissedeceğimiz bir karar değil."
+   },
+   {
+    "who": "Ilknur",
+    "en": "No. It is hers, and our job is to make sure it stays hers.",
+    "tr": "Değil. Karar onun ve bizim işimiz onun kalmasını sağlamak."
+   },
+   {
+    "who": "Refik",
+    "en": "Then I will write the version that never names the office she works in.",
+    "tr": "O hâlde çalıştığı ofisin adını hiç anmayan hâlini yazacağım."
+   },
+   {
+    "who": "Ilknur",
+    "en": "And I will read it twice before it goes anywhere near the lawyers.",
+    "tr": "Ben de avukatların yanına yaklaşmadan önce iki kez okuyacağım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "access",
+    "tr": "erişim"
+   },
+   {
+    "w": "version",
+    "tr": "sürüm"
+   },
+   {
+    "w": "contents",
+    "tr": "içerik"
+   },
+   {
+    "w": "journalism",
+    "tr": "gazetecilik"
+   },
+   {
+    "w": "deny",
+    "tr": "inkâr etmek"
+   },
+   {
+    "w": "defend",
+    "tr": "savunmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How many people could have supplied the document?",
+    "options": [
+     "Three",
+     "One",
+     "Four",
+     "Two"
+    ],
+    "answer": 0,
+    "note": "\"Three, since the fourth left in February.\""
+   },
+   {
+    "q": "What does Ilknur want to change?",
+    "options": [
+     "The date of publication",
+     "What they publish, not whether",
+     "The writer",
+     "Nothing"
+    ],
+    "answer": 1,
+    "note": "\"I want to change what we publish rather than whether.\""
+   },
+   {
+    "q": "What is the cost of that approach?",
+    "options": [
+     "It is weaker journalism",
+     "It takes longer",
+     "It costs money",
+     "It is illegal"
+    ],
+    "answer": 0,
+    "note": "\"It is weaker journalism and it is the only version she survives.\""
+   },
+   {
+    "q": "What did the source say?",
+    "options": [
+     "Ask a lawyer",
+     "Do not publish",
+     "Publish it anyway",
+     "Wait a year"
+    ],
+    "answer": 2,
+    "note": "\"She said publish it anyway.\""
+   },
+   {
+    "q": "Whose decision is it?",
+    "options": [
+     "The source's",
+     "The editor's",
+     "The lawyer's",
+     "The newspaper's"
+    ],
+    "answer": 0,
+    "note": "\"It is hers, and our job is to make sure it stays hers.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-12",
+  "level": "C1",
+  "order": 12,
+  "kind": "listening",
+  "title": "Kurumda bir gelenek",
+  "titleEn": "The Tradition Nobody Defends",
+  "minutes": 6,
+  "names": [
+   "Vedia",
+   "Ismet"
+  ],
+  "speakers": [
+   "Vedia",
+   "Ismet"
+  ],
+  "lines": [
+   {
+    "who": "Vedia",
+    "en": "Nobody in this building can tell me why we still do the March review.",
+    "tr": "Bu binada kimse mart değerlendirmesini neden hâlâ yaptığımızı söyleyemiyor."
+   },
+   {
+    "who": "Ismet",
+    "en": "I can. It was introduced when the funding year ended in April.",
+    "tr": "Ben söyleyebilirim. Mali yıl nisanda bitiyorken getirilmişti."
+   },
+   {
+    "who": "Vedia",
+    "en": "Which changed in two thousand and nine.",
+    "tr": "Ki bu iki bin dokuzda değişti."
+   },
+   {
+    "who": "Ismet",
+    "en": "Yes. So the reason has been gone for longer than most of the staff have been here.",
+    "tr": "Evet. Yani gerekçe, personelin çoğunun burada olduğu süreden uzun zamandır yok."
+   },
+   {
+    "who": "Vedia",
+    "en": "Then why has nobody stopped it?",
+    "tr": "O hâlde neden kimse durdurmadı?"
+   },
+   {
+    "who": "Ismet",
+    "en": "Because stopping something requires a person, and continuing it requires nobody.",
+    "tr": "Çünkü bir şeyi durdurmak bir kişi gerektirir, sürdürmek kimseyi gerektirmez."
+   },
+   {
+    "who": "Vedia",
+    "en": "That is the whole answer, is it not.",
+    "tr": "Bütün cevap bu, değil mi."
+   },
+   {
+    "who": "Ismet",
+    "en": "For most of what this place does, yes.",
+    "tr": "Buranın yaptıklarının çoğu için evet."
+   },
+   {
+    "who": "Vedia",
+    "en": "I am reluctant to remove it entirely. Three departments use it as a deadline.",
+    "tr": "Tamamen kaldırmak konusunda çekimserim. Üç birim onu son tarih olarak kullanıyor."
+   },
+   {
+    "who": "Ismet",
+    "en": "Then that is what it is now, and it should be renamed to say so.",
+    "tr": "O hâlde artık bu, ve adı bunu söyleyecek biçimde değiştirilmeli."
+   },
+   {
+    "who": "Vedia",
+    "en": "A deadline with a review attached, rather than a review nobody reads.",
+    "tr": "Kimsenin okumadığı bir değerlendirme değil, değerlendirmesi olan bir son tarih."
+   },
+   {
+    "who": "Ismet",
+    "en": "And if the three departments then say they do not need it, you have your answer.",
+    "tr": "Üç birim sonra ihtiyaçları olmadığını söylerse cevabını almış olursun."
+   },
+   {
+    "who": "Vedia",
+    "en": "You have been here nineteen years and you have never suggested this.",
+    "tr": "On dokuz yıldır buradasın ve bunu hiç önermemiştin."
+   },
+   {
+    "who": "Ismet",
+    "en": "Nobody asked me why we do it. You are the first.",
+    "tr": "Kimse bana neden yaptığımızı sormadı. İlk sen sordun."
+   },
+   {
+    "who": "Vedia",
+    "en": "I will take the new name to the meeting and let them argue about the word.",
+    "tr": "Yeni adı toplantıya götürüp kelime üzerine tartışmalarına izin vereceğim."
+   },
+   {
+    "who": "Ismet",
+    "en": "They will argue for an hour and agree, which is how this place decides things.",
+    "tr": "Bir saat tartışıp kabul edecekler; burası işleri böyle karara bağlar."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "review",
+    "tr": "değerlendirme"
+   },
+   {
+    "w": "introduced",
+    "tr": "getirildi"
+   },
+   {
+    "w": "funding year",
+    "tr": "mali yıl"
+   },
+   {
+    "w": "staff",
+    "tr": "personel"
+   },
+   {
+    "w": "reluctant",
+    "tr": "çekimser, isteksiz"
+   },
+   {
+    "w": "departments",
+    "tr": "birimler"
+   },
+   {
+    "w": "renamed",
+    "tr": "adı değiştirilmiş"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why was the March review introduced?",
+    "options": [
+     "A director wanted it",
+     "The funding year ended in April",
+     "It was a legal rule",
+     "Nobody knows"
+    ],
+    "answer": 1,
+    "note": "\"It was introduced when the funding year ended in April.\""
+   },
+   {
+    "q": "When did that change?",
+    "options": [
+     "Last year",
+     "It has not",
+     "In two thousand and nine",
+     "Nineteen years ago"
+    ],
+    "answer": 2,
+    "note": "\"Which changed in two thousand and nine.\""
+   },
+   {
+    "q": "Why has nobody stopped it?",
+    "options": [
+     "Stopping needs a person; continuing needs nobody",
+     "It is popular",
+     "It costs nothing",
+     "It is required"
+    ],
+    "answer": 0,
+    "note": "\"Stopping something requires a person, and continuing it requires nobody.\""
+   },
+   {
+    "q": "Why is Vedia reluctant to remove it?",
+    "options": [
+     "It is in the rules",
+     "Three departments use it as a deadline",
+     "It is traditional",
+     "Staff like it"
+    ],
+    "answer": 1,
+    "note": "\"Three departments use it as a deadline.\""
+   },
+   {
+    "q": "Why did Ismet never suggest this before?",
+    "options": [
+     "He agreed with the review",
+     "He had forgotten",
+     "He was not senior enough",
+     "Nobody asked him why they do it"
+    ],
+    "answer": 3,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "c1-l-13",
+  "level": "C1",
+  "order": 13,
+  "kind": "listening",
+  "title": "Bir teşhisin ardından",
+  "titleEn": "What the Family Should Be Told",
+  "minutes": 6,
+  "names": [
+   "Handan",
+   "Ercument"
+  ],
+  "speakers": [
+   "Handan",
+   "Ercument"
+  ],
+  "lines": [
+   {
+    "who": "Ercument",
+    "en": "He has asked me not to tell his children, and they have asked me what is wrong.",
+    "tr": "Çocuklarına söylememi istemedi, onlar da bana neyi olduğunu sordu."
+   },
+   {
+    "who": "Handan",
+    "en": "Then you have no dilemma. You have an instruction.",
+    "tr": "O hâlde ikilemin yok. Bir talimatın var."
+   },
+   {
+    "who": "Ercument",
+    "en": "The instruction costs them the chance to say things while he can hear them.",
+    "tr": "O talimat, onlara o duyabilecekken bir şeyler söyleme şansını kaybettiriyor."
+   },
+   {
+    "who": "Handan",
+    "en": "That is a real cost and it is still not yours to spend.",
+    "tr": "Bu gerçek bir bedel ve yine de senin harcayacağın bir bedel değil."
+   },
+   {
+    "who": "Ercument",
+    "en": "You are firmer about this than I expected.",
+    "tr": "Bu konuda beklediğimden daha katısın."
+   },
+   {
+    "who": "Handan",
+    "en": "Because the alternative is a rule that lets us decide when a person's wishes stop counting.",
+    "tr": "Çünkü alternatifi, bir insanın isteklerinin ne zaman geçersiz olacağına bizim karar vermemiz."
+   },
+   {
+    "who": "Ercument",
+    "en": "So I say nothing and watch them assume it is less serious than it is.",
+    "tr": "Yani hiçbir şey demeyeceğim ve olduğundan hafif sandıklarını izleyeceğim."
+   },
+   {
+    "who": "Handan",
+    "en": "You say nothing about the diagnosis. You can say a great deal else.",
+    "tr": "Teşhis hakkında bir şey demeyeceksin. Başka çok şey diyebilirsin."
+   },
+   {
+    "who": "Ercument",
+    "en": "Such as?",
+    "tr": "Mesela?"
+   },
+   {
+    "who": "Handan",
+    "en": "That he is at a point where visits matter more than they did last year.",
+    "tr": "Ziyaretlerin geçen yıla göre daha çok önem taşıdığı bir noktada olduğunu."
+   },
+   {
+    "who": "Ercument",
+    "en": "That is close to the line.",
+    "tr": "Bu sınıra yakın."
+   },
+   {
+    "who": "Handan",
+    "en": "It is on the right side of it, and it does what you actually want done.",
+    "tr": "Sınırın doğru tarafında ve gerçekte yapılmasını istediğin şeyi yapıyor."
+   },
+   {
+    "who": "Ercument",
+    "en": "And I should tell him I said it.",
+    "tr": "Ve bunu söylediğimi ona da söylemeliyim."
+   },
+   {
+    "who": "Handan",
+    "en": "Yes. Anything you would not repeat to him is something you should not have said.",
+    "tr": "Evet. Ona tekrarlayamayacağın hiçbir şeyi söylememeliydin."
+   },
+   {
+    "who": "Ercument",
+    "en": "I will see him on Thursday and tell him exactly what I said to them.",
+    "tr": "Onu perşembe göreceğim ve onlara ne dediğimi ona tam olarak anlatacağım."
+   },
+   {
+    "who": "Handan",
+    "en": "Do that, and let him correct you. It is still his illness and his family.",
+    "tr": "Öyle yap ve seni düzeltmesine izin ver. Hastalık da aile de hâlâ onun."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "dilemma",
+    "tr": "ikilem"
+   },
+   {
+    "w": "instruction",
+    "tr": "talimat"
+   },
+   {
+    "w": "alternative",
+    "tr": "alternatif"
+   },
+   {
+    "w": "wishes",
+    "tr": "istekler"
+   },
+   {
+    "w": "assume",
+    "tr": "varsaymak"
+   },
+   {
+    "w": "diagnosis",
+    "tr": "teşhis"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What has the patient asked?",
+    "options": [
+     "That his children be told",
+     "For a second opinion",
+     "That his children not be told",
+     "To change doctor"
+    ],
+    "answer": 2,
+    "note": "\"He has asked me not to tell his children.\""
+   },
+   {
+    "q": "What does the instruction cost the children?",
+    "options": [
+     "The chance to say things while he can hear",
+     "Nothing",
+     "Money",
+     "Time with the doctor"
+    ],
+    "answer": 0,
+    "note": "\"The chance to say things while he can hear them.\""
+   },
+   {
+    "q": "Why is Handan firm?",
+    "options": [
+     "The family is difficult",
+     "It saves time",
+     "The law is clear",
+     "The alternative lets doctors decide when wishes stop counting"
+    ],
+    "answer": 3,
+    "note": "\"A rule that lets us decide when a person's wishes stop counting.\""
+   },
+   {
+    "q": "What may he say?",
+    "options": [
+     "Nothing at all",
+     "How long is left",
+     "That visits matter more than last year",
+     "The name of the illness"
+    ],
+    "answer": 2,
+    "note": "\"That he is at a point where visits matter more than they did last year.\""
+   },
+   {
+    "q": "What is Handan's final rule?",
+    "options": [
+     "Ask a colleague first",
+     "Write everything down",
+     "Do not say what you would not repeat to him",
+     "Always tell the family"
+    ],
+    "answer": 2,
+    "note": "Son replik."
+   }
+  ]
+ },
+ {
+  "id": "c1-l-14",
+  "level": "C1",
+  "order": 14,
+  "kind": "listening",
+  "title": "Sınav sisteminde değişiklik",
+  "titleEn": "Changing How Students Are Marked",
+  "minutes": 6,
+  "names": [
+   "Bengi",
+   "Halim"
+  ],
+  "speakers": [
+   "Bengi",
+   "Halim"
+  ],
+  "lines": [
+   {
+    "who": "Bengi",
+    "en": "The proposal removes the final exam and puts everything into coursework.",
+    "tr": "Öneri final sınavını kaldırıp her şeyi dönem içi çalışmaya yıkıyor."
+   },
+   {
+    "who": "Halim",
+    "en": "Which improves the marks of exactly the students the exam was unfair to.",
+    "tr": "Bu, sınavın haksızlık ettiği öğrencilerin notlarını iyileştiriyor."
+   },
+   {
+    "who": "Bengi",
+    "en": "And also of the students who can pay somebody to help.",
+    "tr": "Aynı zamanda yardım için para verebilenlerin de."
+   },
+   {
+    "who": "Halim",
+    "en": "That is the strongest objection and it is not a reason to keep the exam.",
+    "tr": "En güçlü itiraz bu ve sınavı korumak için bir gerekçe değil."
+   },
+   {
+    "who": "Bengi",
+    "en": "Why not?",
+    "tr": "Neden değil?"
+   },
+   {
+    "who": "Halim",
+    "en": "Because the exam has its own version of the same problem, sold as preparation courses.",
+    "tr": "Çünkü sınavın da aynı sorunun kendi hâli var: hazırlık kursu olarak satılıyor."
+   },
+   {
+    "who": "Bengi",
+    "en": "So both systems are bought, just by different people at different times.",
+    "tr": "Yani iki sistem de satın alınıyor, sadece farklı kişilerce, farklı zamanlarda."
+   },
+   {
+    "who": "Halim",
+    "en": "Correct. The question is which one is easier to detect.",
+    "tr": "Doğru. Soru hangisinin tespit edilmesinin daha kolay olduğu."
+   },
+   {
+    "who": "Bengi",
+    "en": "Coursework, if you require a short conversation about each submission.",
+    "tr": "Her teslim için kısa bir konuşma şart koşarsan dönem içi çalışma."
+   },
+   {
+    "who": "Halim",
+    "en": "That is the part everybody leaves out because it costs staff time.",
+    "tr": "Herkesin atladığı kısım bu, çünkü personel zamanına mal oluyor."
+   },
+   {
+    "who": "Bengi",
+    "en": "Then the proposal should be costed with the conversations in it, or rejected.",
+    "tr": "O hâlde öneri, konuşmalar dâhil maliyetlendirilmeli ya da reddedilmeli."
+   },
+   {
+    "who": "Halim",
+    "en": "Write that in one paragraph. It is the only useful thing either of us has produced.",
+    "tr": "Bunu tek paragrafta yaz. İkimizin ürettiği tek faydalı şey bu."
+   },
+   {
+    "who": "Bengi",
+    "en": "It will be read as opposition to the change.",
+    "tr": "Değişikliğe karşı çıkış olarak okunacak."
+   },
+   {
+    "who": "Halim",
+    "en": "Then put the support first and the condition second. The order decides how it is read.",
+    "tr": "O zaman desteği başa, koşulu sona koy. Nasıl okunacağını sıra belirler."
+   },
+   {
+    "who": "Bengi",
+    "en": "One paragraph, then, with the cost of those conversations attached as a number.",
+    "tr": "Tek paragraf o hâlde, o konuşmaların maliyeti de rakam olarak eklenmiş."
+   },
+   {
+    "who": "Halim",
+    "en": "A number they can refuse openly, rather than a worry they can ignore quietly.",
+    "tr": "Sessizce görmezden gelecekleri bir endişe değil, açıkça reddedebilecekleri bir rakam."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "proposal",
+    "tr": "öneri"
+   },
+   {
+    "w": "coursework",
+    "tr": "dönem içi çalışma"
+   },
+   {
+    "w": "objection",
+    "tr": "itiraz"
+   },
+   {
+    "w": "detect",
+    "tr": "tespit etmek"
+   },
+   {
+    "w": "submission",
+    "tr": "teslim edilen ödev"
+   },
+   {
+    "w": "costed",
+    "tr": "maliyetlendirilmiş"
+   },
+   {
+    "w": "opposition",
+    "tr": "karşı çıkış"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the proposal do?",
+    "options": [
+     "Adds a second exam",
+     "Raises the pass mark",
+     "Ends the course early",
+     "Removes the final exam"
+    ],
+    "answer": 3,
+    "note": "\"The proposal removes the final exam.\""
+   },
+   {
+    "q": "What is Bengi's objection?",
+    "options": [
+     "It is too expensive",
+     "It takes longer",
+     "Staff will refuse",
+     "Students who can pay for help benefit"
+    ],
+    "answer": 3,
+    "note": "\"Also of the students who can pay somebody to help.\""
+   },
+   {
+    "q": "Why is that not a reason to keep the exam?",
+    "options": [
+     "Nobody cheats in coursework",
+     "The exam has the same problem as preparation courses",
+     "The law forbids it",
+     "The exam is worse"
+    ],
+    "answer": 1,
+    "note": "\"The exam has its own version of the same problem.\""
+   },
+   {
+    "q": "What makes coursework easier to check?",
+    "options": [
+     "A short conversation about each submission",
+     "Computer checking",
+     "Shorter tasks",
+     "More markers"
+    ],
+    "answer": 0,
+    "note": "\"If you require a short conversation about each submission.\""
+   },
+   {
+    "q": "How should the paragraph be ordered?",
+    "options": [
+     "Support first, condition second",
+     "Condition first",
+     "Objection only",
+     "Support only"
+    ],
+    "answer": 0,
+    "note": "\"Put the support first and the condition second.\""
+   }
+  ]
+ },
+ {
+  "id": "c1-l-15",
+  "level": "C1",
+  "order": 15,
+  "kind": "listening",
+  "title": "Mirasla gelen ev",
+  "titleEn": "The House and the Village",
+  "minutes": 6,
+  "names": [
+   "Kemal",
+   "Sevda"
+  ],
+  "speakers": [
+   "Kemal",
+   "Sevda"
+  ],
+  "lines": [
+   {
+    "who": "Kemal",
+    "en": "The offer is good and the house has been empty for six years.",
+    "tr": "Teklif iyi ve ev altı yıldır boş."
+   },
+   {
+    "who": "Sevda",
+    "en": "It has been empty because neither of us can bring ourselves to go there.",
+    "tr": "Boş, çünkü ikimiz de oraya gitmeye kendimizi ikna edemiyoruz."
+   },
+   {
+    "who": "Kemal",
+    "en": "Which is an argument for selling, not against it.",
+    "tr": "Bu satmak için bir sav, satmamak için değil."
+   },
+   {
+    "who": "Sevda",
+    "en": "It would be, if the buyer were going to live in it.",
+    "tr": "Alıcı orada yaşayacak olsa öyle olurdu."
+   },
+   {
+    "who": "Kemal",
+    "en": "You have been asking about him.",
+    "tr": "Onu araştırmışsın."
+   },
+   {
+    "who": "Sevda",
+    "en": "He has bought two others on the same street and they are both closed all winter.",
+    "tr": "Aynı sokakta iki tane daha almış ve ikisi de bütün kış kapalı."
+   },
+   {
+    "who": "Kemal",
+    "en": "That is his business, and it does not change what the house is worth to us.",
+    "tr": "Bu onun bileceği iş ve evin bizim için değerini değiştirmiyor."
+   },
+   {
+    "who": "Sevda",
+    "en": "It changes what the street will be in ten years, which is the only thing I care about.",
+    "tr": "Sokağın on yıl sonra ne olacağını değiştiriyor, umursadığım tek şey de bu."
+   },
+   {
+    "who": "Kemal",
+    "en": "You do not live there. Neither do I.",
+    "tr": "Sen orada yaşamıyorsun. Ben de."
+   },
+   {
+    "who": "Sevda",
+    "en": "Seven families do, and two of them looked after our mother.",
+    "tr": "Yedi aile yaşıyor ve ikisi annemize baktı."
+   },
+   {
+    "who": "Kemal",
+    "en": "That is the actual argument and you should have started with it.",
+    "tr": "Asıl sav bu ve bununla başlamalıydın."
+   },
+   {
+    "who": "Sevda",
+    "en": "I did not want it to sound like sentiment.",
+    "tr": "Duygusallık gibi duymasını istemedim."
+   },
+   {
+    "who": "Kemal",
+    "en": "It is an obligation, which is different, and I would have heard it in March.",
+    "tr": "Bu bir yükümlülük ve bu farklı bir şey; martta duyardım."
+   },
+   {
+    "who": "Sevda",
+    "en": "Then let us find out whether anybody in the village wants it, and give them until spring.",
+    "tr": "O hâlde köyde isteyen var mı öğrenelim ve onlara bahara kadar süre verelim."
+   },
+   {
+    "who": "Kemal",
+    "en": "If nobody there wants it by spring, I will accept the offer and you will not argue.",
+    "tr": "Bahara kadar orada isteyen olmazsa teklifi kabul edeceğim, sen de itiraz etmeyeceksin."
+   },
+   {
+    "who": "Sevda",
+    "en": "That is fair, and I will be the one who asks the seven families.",
+    "tr": "Bu adil ve yedi aileye soran ben olacağım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "offer",
+    "tr": "teklif"
+   },
+   {
+    "w": "buyer",
+    "tr": "alıcı"
+   },
+   {
+    "w": "worth",
+    "tr": "değer"
+   },
+   {
+    "w": "sentiment",
+    "tr": "duygusallık"
+   },
+   {
+    "w": "obligation",
+    "tr": "yükümlülük"
+   },
+   {
+    "w": "village",
+    "tr": "köy"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long has the house been empty?",
+    "options": [
+     "Six years",
+     "Ten years",
+     "Two years",
+     "One winter"
+    ],
+    "answer": 0,
+    "note": "\"The house has been empty for six years.\""
+   },
+   {
+    "q": "What has Sevda found out about the buyer?",
+    "options": [
+     "He pays late",
+     "He owns two other closed houses on the street",
+     "He lives abroad",
+     "He is a builder"
+    ],
+    "answer": 1,
+    "note": "\"He has bought two others on the same street.\""
+   },
+   {
+    "q": "What does Sevda say she cares about?",
+    "options": [
+     "The buyer",
+     "What the street will be in ten years",
+     "Her mother's wishes",
+     "The price"
+    ],
+    "answer": 1,
+    "note": "\"It changes what the street will be in ten years.\""
+   },
+   {
+    "q": "What does Kemal call the actual argument?",
+    "options": [
+     "The empty houses",
+     "The money",
+     "The winter",
+     "That two families looked after their mother"
+    ],
+    "answer": 3,
+    "note": "\"That is the actual argument.\""
+   },
+   {
+    "q": "What do the two of them decide about the village?",
+    "options": [
+     "Keep it empty",
+     "Sell at once",
+     "Rent it out",
+     "Ask the village and wait until spring"
+    ],
+    "answer": 3,
+    "note": "Son replikler."
+   }
+  ]
  }
 ]
