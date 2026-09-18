@@ -1,0 +1,233 @@
+{
+  "_meta": { "batch": "c2-listening-04", "level": "C2", "range": "Diyalog 16-20" },
+  "items": [
+    {
+      "id": "c2-l-16",
+      "level": "C2",
+      "order": 16,
+      "kind": "listening",
+      "title": "Sınırdaki karar",
+      "titleEn": "The Officer at the Border",
+      "minutes": 7,
+      "names": ["Nihal", "Ergin"],
+      "speakers": ["Nihal", "Ergin"],
+      "lines": [
+        { "who": "Ergin", "en": "The file says her account changed twice, and the guidance says a changed account is a weak account.", "tr": "Dosyada anlatımının iki kez değiştiği yazıyor ve yönergeye göre değişen anlatım zayıf anlatımdır." },
+        { "who": "Nihal", "en": "The guidance says that because most changed accounts are weak, which tells you about most and nothing about her.", "tr": "Yönerge bunu, değişen anlatımların çoğu zayıf olduğu için söyler; bu sana çoğunluk hakkında bir şey söyler, onun hakkında hiçbir şey." },
+        { "who": "Ergin", "en": "I cannot write most in a decision. I have to write she or he.", "tr": "Bir karara çoğunluk yazamam. O yazmak zorundayım." },
+        { "who": "Nihal", "en": "Then write what changed, and when, and what she was asked in between.", "tr": "O hâlde neyin değiştiğini, ne zaman değiştiğini ve arada ona ne sorulduğunu yaz." },
+        { "who": "Ergin", "en": "She was asked the same question by three people in eleven hours, in a language she uses at work and not at home.", "tr": "Aynı soru ona on bir saatte üç kişi tarafından, evde değil işte kullandığı bir dilde soruldu." },
+        { "who": "Nihal", "en": "And that sentence is the decision. Everything after it is arithmetic.", "tr": "Ve karar o cümledir. Ondan sonrası aritmetiktir." },
+        { "who": "Ergin", "en": "It is also the sentence that gets a decision sent back to me with a note.", "tr": "Aynı zamanda kararın bana bir notla geri gönderilmesine yol açan cümle." },
+        { "who": "Nihal", "en": "Sent back by whom? Name one person who has ever returned a decision for being too careful.", "tr": "Kim tarafından geri gönderilen? Fazla dikkatli olduğu için bir kararı geri gönderen bir kişi say." },
+        { "who": "Ergin", "en": "Nobody has, and the cost of being careful is that I decide eleven fewer files a week.", "tr": "Kimse göndermedi ve dikkatli olmanın bedeli haftada on bir dosya az karara bağlamam." },
+        { "who": "Nihal", "en": "Which is the real rule in this building and it is written nowhere.", "tr": "Bu binadaki gerçek kural bu ve hiçbir yerde yazmıyor." },
+        { "who": "Ergin", "en": "You are going to tell me to write it down.", "tr": "Bana onu yazmamı söyleyeceksin." },
+        { "who": "Nihal", "en": "I am going to tell you to write that the interview conditions affected the account, and let somebody above us argue with the sentence.", "tr": "Görüşme koşullarının anlatımı etkilediğini yazmanı ve o cümleyle üstümüzdeki birinin tartışmasını söyleyeceğim." },
+        { "who": "Ergin", "en": "And if they overturn it?", "tr": "Ya bozarlarsa?" },
+        { "who": "Nihal", "en": "Then the overturning is on the record, and the next officer sees that the question was raised at all.", "tr": "O zaman bozma kayda geçer ve bir sonraki memur sorunun hiç değilse sorulduğunu görür." },
+        { "who": "Ergin", "en": "That is a slow way to change anything.", "tr": "Bir şeyi değiştirmenin yavaş bir yolu bu." },
+        { "who": "Nihal", "en": "It is the only way I have seen work, and I have watched the fast ways twice.", "tr": "İşe yaradığını gördüğüm tek yol ve hızlı yolları iki kez izledim." }
+      ],
+      "glossary": [
+        { "w": "account", "tr": "anlatım, ifade" },
+        { "w": "guidance", "tr": "yönerge" },
+        { "w": "arithmetic", "tr": "aritmetik, hesap işi" },
+        { "w": "conditions", "tr": "koşullar" },
+        { "w": "affected", "tr": "etkiledi" },
+        { "w": "overturn", "tr": "kararı bozmak" },
+        { "w": "on the record", "tr": "kayda geçmiş" },
+        { "w": "officer", "tr": "memur" }
+      ],
+      "questions": [
+        { "q": "What does the guidance say about a changed account?", "options": ["That it is weak", "That it is usual", "That it must be checked twice", "That it is strong"], "answer": 0, "note": "\"The guidance says a changed account is a weak account.\"" },
+        { "q": "What does Nihal say the guidance really describes?", "options": ["Most cases, not this one", "The law", "The interview room", "The officer's duty"], "answer": 0, "note": "\"That tells you about most and nothing about her.\"" },
+        { "q": "What were the interview conditions?", "options": ["Three people, eleven hours, a second language", "One person, one hour", "A written form only", "A telephone call"], "answer": 0, "note": "\"The same question by three people in eleven hours, in a language she uses at work.\"" },
+        { "q": "What is the real cost of being careful?", "options": ["Eleven fewer files a week", "A written warning", "A slower promotion", "A returned decision"], "answer": 0, "note": "\"I decide eleven fewer files a week.\"" },
+        { "q": "Why does an overturned decision still help?", "options": ["It puts the question on the record for the next officer", "It ends the case", "It is faster", "It protects the officer"], "answer": 0, "note": "\"The next officer sees that the question was raised at all.\"" }
+      ]
+    },
+    {
+      "id": "c2-l-17",
+      "level": "C2",
+      "order": 17,
+      "kind": "listening",
+      "title": "Kodu herkese açmak",
+      "titleEn": "Giving the Code Away",
+      "minutes": 7,
+      "names": ["Duygu", "Kerem"],
+      "speakers": ["Duygu", "Kerem"],
+      "lines": [
+        { "who": "Kerem", "en": "If we publish it, three companies copy it within a month and one of them is better at selling than we are.", "tr": "Yayımlarsak bir ay içinde üç şirket kopyalar ve biri satışta bizden iyidir." },
+        { "who": "Duygu", "en": "All three already have something similar and none of them has ours working inside a hospital.", "tr": "Üçünün de zaten benzeri var ve hiçbirinin bizimki gibi bir hastanede çalışanı yok." },
+        { "who": "Kerem", "en": "That is an argument for our service, not for giving away the thing the service runs on.", "tr": "Bu hizmetimiz lehine bir sav, hizmetin üzerinde çalıştığı şeyi bağışlamak lehine değil." },
+        { "who": "Duygu", "en": "It is an argument that the thing is not where the value sits, which is uncomfortable and is also true.", "tr": "Değerin o şeyde olmadığı yönünde bir sav; rahatsız edici ve aynı zamanda doğru." },
+        { "who": "Kerem", "en": "Say it is true. What do we gain on the day it goes out?", "tr": "Diyelim doğru. Çıktığı gün ne kazanıyoruz?" },
+        { "who": "Duygu", "en": "Everybody who reads it and finds the four mistakes we have not found.", "tr": "Onu okuyup bizim bulamadığımız dört hatayı bulan herkesi." },
+        { "who": "Kerem", "en": "We also gain everybody who reads it and finds the mistake before we do.", "tr": "Bir de onu okuyup hatayı bizden önce bulan herkesi kazanıyoruz." },
+        { "who": "Duygu", "en": "Which happens either way. The difference is whether we hear about it or read about it.", "tr": "Bu iki hâlde de oluyor. Fark, bunu duymamızla gazeteden okumamız arasında." },
+        { "who": "Kerem", "en": "That sentence will work on the board and it will not work on me.", "tr": "O cümle yönetimde işe yarar, bende yaramaz." },
+        { "who": "Duygu", "en": "Then here is the one for you. Two of our engineers stay because the work is public.", "tr": "O hâlde sana özel olanı şu: iki mühendisimiz iş herkese açık olduğu için kalıyor." },
+        { "who": "Kerem", "en": "You have asked them.", "tr": "Onlara sormuşsun." },
+        { "who": "Duygu", "en": "I have not, and I do not need to, because they told me before I had the question.", "tr": "Sormadım ve sormama gerek yok, çünkü daha soru aklıma gelmeden söylediler." },
+        { "who": "Kerem", "en": "Then the decision is about hiring and we should say so, rather than dressing it as openness.", "tr": "O hâlde karar işe alımla ilgili ve bunu açıklık kılığına sokmak yerine böyle söylemeliyiz." },
+        { "who": "Duygu", "en": "It is about both, and pretending it is only one of them is how such decisions get reversed in a bad quarter.", "tr": "İkisiyle de ilgili ve tek biriymiş gibi davranmak, böyle kararların kötü bir çeyrek dönemde geri alınma biçimidir." },
+        { "who": "Kerem", "en": "Write the paper with both reasons and put the hiring one first.", "tr": "Belgeyi iki gerekçeyle yaz ve işe alım olanı başa koy." },
+        { "who": "Duygu", "en": "Second. If it is first, the board reads it as a threat from the engineers.", "tr": "İkinci sıraya. Başa koyarsak yönetim onu mühendislerden gelen bir tehdit olarak okur." }
+      ],
+      "glossary": [
+        { "w": "publish", "tr": "yayımlamak, herkese açmak" },
+        { "w": "value", "tr": "değer" },
+        { "w": "engineers", "tr": "mühendisler" },
+        { "w": "openness", "tr": "açıklık" },
+        { "w": "reversed", "tr": "geri alınmış" },
+        { "w": "quarter", "tr": "çeyrek dönem" },
+        { "w": "threat", "tr": "tehdit" }
+      ],
+      "questions": [
+        { "q": "What does Duygu say the three companies lack?", "options": ["Something working inside a hospital", "Money", "Engineers", "A similar product"], "answer": 0, "note": "\"None of them has ours working inside a hospital.\"" },
+        { "q": "What is the uncomfortable truth in her argument?", "options": ["The code is not where the value sits", "The service is failing", "The board is wrong", "The hospital will leave"], "answer": 0, "note": "\"The thing is not where the value sits.\"" },
+        { "q": "What is her answer about mistakes being found?", "options": ["It happens either way; only how they learn differs", "Nobody will look", "Their code has none", "The board will not mind"], "answer": 0, "note": "\"The difference is whether we hear about it or read about it.\"" },
+        { "q": "What is the argument aimed at Kerem himself?", "options": ["Two engineers stay because the work is public", "The board has voted", "A customer asked for it", "It saves money"], "answer": 0, "note": "\"Two of our engineers stay because the work is public.\"" },
+        { "q": "Why should the hiring reason come second?", "options": ["First, it reads as a threat from the engineers", "It is weaker", "It is private", "The board dislikes hiring"], "answer": 0, "note": "Son replik." }
+      ]
+    },
+    {
+      "id": "c2-l-18",
+      "level": "C2",
+      "order": 18,
+      "kind": "listening",
+      "title": "Ortak sekiz nota",
+      "titleEn": "Eight Notes in Common",
+      "minutes": 7,
+      "names": ["Pelin", "Umit"],
+      "speakers": ["Pelin", "Umit"],
+      "lines": [
+        { "who": "Umit", "en": "Eight notes, in the same order, at a different speed, and they have asked for half of everything the song earns.", "tr": "Sekiz nota, aynı sırada, farklı hızda ve şarkının kazandığı her şeyin yarısını istiyorlar." },
+        { "who": "Pelin", "en": "Those eight notes are in a folk song my grandmother sang and neither of us invented them.", "tr": "O sekiz nota anneannemin söylediği bir türküde var ve ikimiz de onları icat etmedik." },
+        { "who": "Umit", "en": "Then find the recording and the year, and this ends in a letter rather than a courtroom.", "tr": "O hâlde kaydı ve yılı bul; bu iş mahkeme salonunda değil bir mektupla biter." },
+        { "who": "Pelin", "en": "There is no recording. There are people in one town who still sing it at weddings.", "tr": "Kayıt yok. Bir kasabada onu hâlâ düğünlerde söyleyen insanlar var." },
+        { "who": "Umit", "en": "People at weddings are evidence. They are simply expensive evidence, because somebody has to go and record them.", "tr": "Düğünlerdeki insanlar kanıttır. Sadece pahalı bir kanıttır, çünkü birinin gidip onları kaydetmesi gerekir." },
+        { "who": "Pelin", "en": "And when I do, I have turned a song my family sang into a document in my defense.", "tr": "Bunu yaptığımda ailemin söylediği bir türküyü savunmamda bir belgeye çevirmiş olurum." },
+        { "who": "Umit", "en": "You have. I will not pretend that is a small thing, and I still think you should do it.", "tr": "Öyle olur. Bunun küçük bir şey olduğunu iddia etmeyeceğim ve yine de yapmalısın diyorum." },
+        { "who": "Pelin", "en": "Tell me why, in a sentence I can repeat to my mother.", "tr": "Nedenini anneme tekrarlayabileceğim bir cümleyle söyle." },
+        { "who": "Umit", "en": "Because if you do not, a court will decide that those eight notes belong to a man in another country.", "tr": "Çünkü yapmazsan bir mahkeme o sekiz notanın başka bir ülkedeki bir adama ait olduğuna karar verir." },
+        { "who": "Pelin", "en": "That is the sentence. I dislike it and it is the sentence.", "tr": "İşte o cümle. Hoşuma gitmiyor ve aradığım cümle o." },
+        { "who": "Umit", "en": "There is a second reason and it is worse. The recording protects everybody else who sings it.", "tr": "İkinci bir sebep var ve daha ağır. Kayıt, onu söyleyen herkesi de koruyor." },
+        { "who": "Pelin", "en": "So I am doing it for a town that does not know this is happening.", "tr": "Yani bunu, olanlardan haberi olmayan bir kasaba için yapıyorum." },
+        { "who": "Umit", "en": "Yes, and the town will hear about it in a newspaper, and half of them will say you sold something.", "tr": "Evet ve kasaba bunu gazeteden duyacak ve yarısı bir şey sattığını söyleyecek." },
+        { "who": "Pelin", "en": "Then I go first and tell them before anybody writes it down.", "tr": "O hâlde önce ben gider, kimse yazmadan onlara anlatırım." },
+        { "who": "Umit", "en": "Go in January, before we file anything, and take somebody who is not a lawyer.", "tr": "Ocakta git, biz hiçbir şey sunmadan önce ve yanında avukat olmayan biri götür." },
+        { "who": "Pelin", "en": "I will take my mother, who will disagree with me the entire journey and then say the right thing in the room.", "tr": "Annemi götürürüm; bütün yol boyunca bana karşı çıkar, sonra o odada doğru şeyi söyler." }
+      ],
+      "glossary": [
+        { "w": "notes", "tr": "notalar" },
+        { "w": "folk song", "tr": "türkü" },
+        { "w": "recording", "tr": "kayıt" },
+        { "w": "courtroom", "tr": "mahkeme salonu" },
+        { "w": "evidence", "tr": "kanıt" },
+        { "w": "defense", "tr": "savunma" },
+        { "w": "file", "tr": "resmî olarak sunmak" }
+      ],
+      "questions": [
+        { "q": "What are they asking for?", "options": ["Half of what the song earns", "The song removed", "An apology", "A new recording"], "answer": 0, "note": "\"They have asked for half of everything the song earns.\"" },
+        { "q": "What is the difficulty with Pelin's defense?", "options": ["There is no recording of the folk song", "She cannot remember it", "Her grandmother is abroad", "The notes are different"], "answer": 0, "note": "\"There is no recording.\"" },
+        { "q": "Why does Pelin dislike making the recording?", "options": ["It turns a family song into a legal document", "It costs too much", "The town will refuse", "It takes a year"], "answer": 0, "note": "\"I have turned a song my family sang into a document in my defense.\"" },
+        { "q": "What is the second, worse reason to do it?", "options": ["It protects everybody else who sings it", "It wins the case", "It pays for the trip", "It pleases the court"], "answer": 0, "note": "\"The recording protects everybody else who sings it.\"" },
+        { "q": "What does Umit advise about the visit?", "options": ["Go in January and take somebody who is not a lawyer", "Send a letter first", "Go after filing", "Take two lawyers"], "answer": 0, "note": "\"Go in January, before we file anything.\"" }
+      ]
+    },
+    {
+      "id": "c2-l-19",
+      "level": "C2",
+      "order": 19,
+      "kind": "listening",
+      "title": "Tabelalardaki ad",
+      "titleEn": "Changing the Name on the Signs",
+      "minutes": 7,
+      "names": ["Guler", "Tahsin"],
+      "speakers": ["Guler", "Tahsin"],
+      "lines": [
+        { "who": "Tahsin", "en": "The older name is on nineteenth-century maps, on two gravestones, and in the mouths of about forty people.", "tr": "Eski ad on dokuzuncu yüzyıl haritalarında, iki mezar taşında ve yaklaşık kırk kişinin ağzında." },
+        { "who": "Guler", "en": "Forty people is a real number, and it is also the number that makes this a decision rather than a correction.", "tr": "Kırk kişi gerçek bir sayı ve aynı zamanda bunu düzeltme değil karar hâline getiren sayı." },
+        { "who": "Tahsin", "en": "You want it to be a correction. Corrections do not need a vote.", "tr": "Bunun bir düzeltme olmasını istiyorsun. Düzeltmeler oylama gerektirmez." },
+        { "who": "Guler", "en": "They do not need a vote and they also do not last, because the next office calls them a decision and reverses them.", "tr": "Oylama gerektirmez ve kalıcı da olmazlar, çünkü bir sonraki yönetim onlara karar der ve geri alır." },
+        { "who": "Tahsin", "en": "Then hold the vote and lose it.", "tr": "O hâlde oylamayı yap ve kaybet." },
+        { "who": "Guler", "en": "I would rather lose it than win it in a way that is undone in four years.", "tr": "Dört yılda geri alınacak şekilde kazanmaktansa kaybetmeyi tercih ederim." },
+        { "who": "Tahsin", "en": "Say that in the meeting. It is a better argument than the history, which nobody in that room will read.", "tr": "Bunu toplantıda söyle. O odada kimsenin okumayacağı tarihten daha iyi bir sav." },
+        { "who": "Guler", "en": "They will read the cost. Signs, records, addresses, every document that carries the name.", "tr": "Maliyeti okurlar. Tabelalar, kayıtlar, adresler, adı taşıyan her belge." },
+        { "who": "Tahsin", "en": "Then give them the number before they ask, and give them the larger number of doing it in two stages.", "tr": "O hâlde sayıyı onlar sormadan ver ve iki aşamada yapmanın daha büyük rakamını da ver." },
+        { "who": "Guler", "en": "Two stages costs more?", "tr": "İki aşama daha mı pahalı?" },
+        { "who": "Tahsin", "en": "Always. And saying so is the only way anybody believes the first number.", "tr": "Her zaman. Ve bunu söylemek, ilk rakama inanılmasının tek yolu." },
+        { "who": "Guler", "en": "You have done this in another town.", "tr": "Bunu başka bir kasabada yapmışsın." },
+        { "who": "Tahsin", "en": "I watched it fail in another town, which teaches more and takes longer to say.", "tr": "Başka bir kasabada başarısız olmasını izledim; bu daha çok öğretir ve anlatması daha uzun sürer." },
+        { "who": "Guler", "en": "Then come and say it. Six minutes, and the forty people are not mentioned.", "tr": "O hâlde gel ve söyle. Altı dakika ve kırk kişiden söz edilmeyecek." },
+        { "who": "Tahsin", "en": "They must be mentioned. They are the reason, and leaving them out turns this into a tidy story about maps.", "tr": "Onlardan söz edilmeli. Sebep onlar ve onları dışarıda bırakmak bunu haritalara dair derli toplu bir hikâyeye çevirir." },
+        { "who": "Guler", "en": "Mention them at the end, then, once the room has already agreed about the money.", "tr": "O hâlde sona bırak; oda para konusunda çoktan anlaştıktan sonra." }
+      ],
+      "glossary": [
+        { "w": "gravestones", "tr": "mezar taşları" },
+        { "w": "correction", "tr": "düzeltme" },
+        { "w": "reverses", "tr": "geri alır" },
+        { "w": "undone", "tr": "geri alınmış" },
+        { "w": "records", "tr": "kayıtlar" },
+        { "w": "stages", "tr": "aşamalar" },
+        { "w": "tidy", "tr": "derli toplu" }
+      ],
+      "questions": [
+        { "q": "Where does the older name survive?", "options": ["On old maps, two gravestones and in forty mouths", "Only on maps", "Only in books", "Only on signs"], "answer": 0, "note": "İlk replik." },
+        { "q": "Why does Guler refuse to treat it as a correction?", "options": ["Corrections do not last", "Corrections are illegal", "Nobody would notice", "It would cost more"], "answer": 0, "note": "\"They also do not last, because the next office calls them a decision and reverses them.\"" },
+        { "q": "What will the meeting actually read?", "options": ["The cost", "The history", "The maps", "The names of the forty"], "answer": 0, "note": "\"They will read the cost.\"" },
+        { "q": "Why give the two-stage figure as well?", "options": ["It is the only way the first number is believed", "It is cheaper", "The rules require it", "It delays the vote"], "answer": 0, "note": "\"Saying so is the only way anybody believes the first number.\"" },
+        { "q": "What does Tahsin insist on?", "options": ["Mentioning the forty people", "Speaking last", "Showing the maps", "A second vote"], "answer": 0, "note": "\"They must be mentioned. They are the reason.\"" }
+      ]
+    },
+    {
+      "id": "c2-l-20",
+      "level": "C2",
+      "order": 20,
+      "kind": "listening",
+      "title": "Son hayvan deneyi",
+      "titleEn": "The Last Experiment on Animals",
+      "minutes": 7,
+      "names": ["Nevin", "Baris"],
+      "speakers": ["Nevin", "Baris"],
+      "lines": [
+        { "who": "Baris", "en": "Your application says the computer model is not yet good enough, and last year you wrote that it nearly was.", "tr": "Başvurun bilgisayar modelinin henüz yeterince iyi olmadığını söylüyor, geçen yıl neredeyse olduğunu yazmıştın." },
+        { "who": "Nevin", "en": "Nearly was, for the part of the question I was asking last year. This year the question moved.", "tr": "Geçen yıl sorduğum sorunun o kısmı için neredeyse öyleydi. Bu yıl soru yer değiştirdi." },
+        { "who": "Baris", "en": "That is either an honest answer or the most useful sentence in your profession.", "tr": "Bu ya dürüst bir cevap ya da mesleğindeki en kullanışlı cümle." },
+        { "who": "Nevin", "en": "It is both, and you should treat it as the second until I show you the difference.", "tr": "İkisi de ve ben farkı gösterene kadar onu ikincisi olarak görmelisin." },
+        { "who": "Baris", "en": "Then show me.", "tr": "O hâlde göster." },
+        { "who": "Nevin", "en": "The model predicts the effect in tissue and it does not predict what the liver does to the compound afterwards.", "tr": "Model dokudaki etkiyi öngörüyor, karaciğerin sonrasında bileşiğe ne yaptığını öngörmüyor." },
+        { "who": "Baris", "en": "How many animals does the afterwards cost?", "tr": "O sonrası kaç hayvana mal oluyor?" },
+        { "who": "Nevin", "en": "Fourteen, and I have argued it down from forty over three drafts, and I cannot argue it to zero.", "tr": "On dört; üç taslakta kırktan buraya indirdim ve sıfıra indiremiyorum." },
+        { "who": "Baris", "en": "I am not asking you to reach zero. I am asking whether fourteen is a number or a habit.", "tr": "Sıfıra inmeni istemiyorum. On dördün bir sayı mı yoksa bir alışkanlık mı olduğunu soruyorum." },
+        { "who": "Nevin", "en": "It is a number this time. Two years ago it would have been a habit and you would have been right to say so.", "tr": "Bu kez bir sayı. İki yıl önce bir alışkanlıktı ve bunu söylemekte haklı olurdun." },
+        { "who": "Baris", "en": "That is the first time anybody has answered that question instead of defending it.", "tr": "Bu soruyu savunmak yerine cevaplayan ilk kişisin." },
+        { "who": "Nevin", "en": "It cost me a year to be able to. The drafts are what changed, not my opinions.", "tr": "Bunu yapabilmek bana bir yıla mal oldu. Değişen taslaklardı, görüşlerim değil." },
+        { "who": "Baris", "en": "I will approve fourteen on one condition: that the model failure is published whether or not the study works.", "tr": "On dördü tek koşulla onaylarım: çalışma işe yarasa da yaramasa da modelin başarısızlığı yayımlanacak." },
+        { "who": "Nevin", "en": "Nobody publishes the failure of a model they intend to keep using.", "tr": "Kimse kullanmaya devam edeceği bir modelin başarısızlığını yayımlamaz." },
+        { "who": "Baris", "en": "Which is why the next application in this field will make the same claim you made last year.", "tr": "İşte bu yüzden bu alandaki bir sonraki başvuru geçen yıl senin yaptığın iddianın aynısını yapacak." },
+        { "who": "Nevin", "en": "Then I will write it, and it will be the least read paper I ever produce, and I will still write it.", "tr": "O hâlde yazacağım ve yazdığım en az okunan makale olacak ve yine de yazacağım." }
+      ],
+      "glossary": [
+        { "w": "application", "tr": "başvuru" },
+        { "w": "predicts", "tr": "öngörür" },
+        { "w": "tissue", "tr": "doku" },
+        { "w": "liver", "tr": "karaciğer" },
+        { "w": "compound", "tr": "bileşik" },
+        { "w": "drafts", "tr": "taslaklar" },
+        { "w": "habit", "tr": "alışkanlık" },
+        { "w": "approve", "tr": "onaylamak" },
+        { "w": "claim", "tr": "iddia" }
+      ],
+      "questions": [
+        { "q": "What does the model fail to predict?", "options": ["What the liver does to the compound", "The effect in tissue", "The cost", "The number of animals"], "answer": 0, "note": "\"It does not predict what the liver does to the compound afterwards.\"" },
+        { "q": "How did the number reach fourteen?", "options": ["Argued down from forty over three drafts", "It was fourteen from the start", "The committee set it", "It was raised from ten"], "answer": 0, "note": "\"I have argued it down from forty over three drafts.\"" },
+        { "q": "What is Baris really asking?", "options": ["Whether fourteen is a number or a habit", "Whether the study is funded", "Whether she has approval", "Whether the model is new"], "answer": 0, "note": "\"I am asking whether fourteen is a number or a habit.\"" },
+        { "q": "What condition does Baris set?", "options": ["The model failure must be published either way", "Only ten animals", "A second committee", "A yearly report"], "answer": 0, "note": "\"That the model failure is published whether or not the study works.\"" },
+        { "q": "Why does that condition matter?", "options": ["Otherwise the next application repeats her old claim", "It saves money", "It is required by law", "The paper will be popular"], "answer": 0, "note": "\"The next application in this field will make the same claim you made last year.\"" }
+      ]
+    }
+  ]
+}
