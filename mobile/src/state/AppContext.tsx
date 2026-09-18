@@ -72,6 +72,12 @@ type AppValue = {
   position: (kind: DeckKind, level: CefrLevel) => number;
   setPosition: (kind: DeckKind, level: CefrLevel, index: number) => void;
 
+  /**
+   * Ham konum tablosu. Profil ve istatistik ekranları toplamları buradan
+   * türetiyor; tek tek `position()` çağırmak altı seviye × beş bölüm demek.
+   */
+  positions: Record<string, number>;
+
   /** Saved words, by card id. */
   savedWords: string[];
   isSaved: (id: string) => boolean;
@@ -250,6 +256,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       position: (kind: DeckKind, level: CefrLevel) => positions[`${kind}:${level}`] ?? 0,
       setPosition: (kind: DeckKind, level: CefrLevel, index: number) =>
         setPositions((cur) => ({ ...cur, [`${kind}:${level}`]: index })),
+      positions,
       savedWords,
       isSaved: (id: string) => savedWords.includes(id),
       toggleSavedWord: (id: string) =>

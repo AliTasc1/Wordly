@@ -7,12 +7,30 @@ import { Card, Pill, StatTile } from '../components/Surfaces';
 import { ProgressBar, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import { DUEL_STATS, PROFILE_SKILLS, PROFILE_STATS, USER } from '../data/profile';
+import { DUEL_STATS, USER } from '../data/profile';
 import { useGo } from '../navigation/useGo';
+import { useApp } from '../state/AppContext';
+import { deckProgress, totals, tr } from '../content/progress';
 
 /** 26 · Profil — a game-character profile for a learner. */
 export function ProfileScreen() {
   const { go } = useGo();
+  const { positions, cefr, savedWords } = useApp();
+
+  // Bu üç sayı artık tasarımdan değil, öğrencinin gerçekten gördüklerinden
+  // geliyor. "Düello kazanma oranı" kaldırıldı: düello ekranı hâlâ örnek
+  // veriyle çalışıyor, olmayan bir maçın oranını göstermek uydurmaktır.
+  const seen = totals(positions);
+  const stats = [
+    { value: tr(seen.words), label: 'kelime görüldü', tint: colors.accent },
+    { value: tr(seen.lessons), label: 'gramer dersi', tint: colors.warning },
+    { value: tr(savedWords.length), label: 'kaydedilen', tint: colors.secondary },
+  ];
+
+  // Beceri dağılımı da gerçek: bulunduğun seviyede her bölümün ne kadarını
+  // bitirdiğin. Eski listede "Yazma" ve "Telaffuz" da vardı — uygulamada
+  // böyle iki bölüm yok, olmayan becerinin yüzdesi olmaz.
+  const decks = deckProgress(positions, cefr);
 
   return (
     <Screen tabbed padTop={0} padH={0} gap={0}>
@@ -84,7 +102,7 @@ export function ProfileScreen() {
 
       <View style={styles.body}>
         <View style={styles.stats}>
-          {PROFILE_STATS.map((s) => (
+          {stats.map((s) => (
             <StatTile
               key={s.label}
               value={s.value}
@@ -98,16 +116,16 @@ export function ProfileScreen() {
 
         <Card gap={11}>
           <Txt f="m" s={14} w={700}>
-            Beceri dağılımı
+            {cefr} seviyesinde ilerleme
           </Txt>
-          {PROFILE_SKILLS.map((skill) => (
+          {decks.map((deck) => (
             <SkillBar
-              key={skill.name}
-              name={skill.name}
-              value={skill.level}
-              pct={skill.pct}
-              from={skill.pct < 55 ? colors.warning : colors.secondary}
-              to={skill.pct < 55 ? colors.orange : colors.accent}
+              key={deck.kind}
+              name={deck.label}
+              value={`${tr(deck.done)}/${tr(deck.total)}`}
+              pct={deck.pct}
+              from={deck.pct < 55 ? colors.warning : colors.secondary}
+              to={deck.pct < 55 ? colors.orange : colors.accent}
             />
           ))}
         </Card>
