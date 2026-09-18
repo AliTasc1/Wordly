@@ -417,216 +417,9 @@
       ]
     },
     {
-      "id": "b2-03-passive-extended",
+      "id": "b2-05-passive-infinitive-gerund",
       "level": "B2",
-      "order": 3,
-      "title": "Edilgen — her zamanda",
-      "topic": "Passive across tenses; passive with indirect objects",
-      "canDo": "Resmî yazıda ve haber dilinde edilgen yapıyı rahatça kullanabilirim.",
-      "covers": [
-        "PASS.PRESENT.NEG",
-        "PASS.PRSPF.AFF",
-        "PASS.FUT.AFF",
-        "PASS.IO.AFF"
-      ],
-      "concept": {
-        "summary": "Edilgende zaman be fiilinde taşınır, asıl fiil hep üçüncü hâlde kalır. İki nesneli fiillerde (give, send, offer) iki farklı edilgen kurulabilir; İngilizce genelde kişiyi öne alanı yeğler: She was given a prize.",
-        "formula": {
-          "left": "be'nin çekimi",
-          "right": "+ fiilin üçüncü hâli"
-        },
-        "table": [
-          {
-            "form": "present perfect",
-            "be": "has / have been + V3",
-            "example": "The road has been closed."
-          },
-          {
-            "form": "gelecek",
-            "be": "will be + V3",
-            "example": "You will be informed."
-          },
-          {
-            "form": "olumsuz",
-            "be": "isn't / aren't + V3",
-            "example": "Photos aren't allowed."
-          },
-          {
-            "form": "iki nesneli",
-            "be": "kişi öne alınır",
-            "example": "He was sent an email."
-          }
-        ]
-      },
-      "examples": [
-        {
-          "en": "The results have been published online.",
-          "tr": "Sonuçlar internette yayımlandı.",
-          "note": "have been + V3."
-        },
-        {
-          "en": "All applicants will be contacted next week.",
-          "tr": "Tüm başvuru sahiplerine önümüzdeki hafta ulaşılacak.",
-          "note": "will be + V3."
-        },
-        {
-          "en": "Bags are not allowed in the hall.",
-          "tr": "Salona çanta alınmaz.",
-          "note": "Olumsuz edilgen."
-        },
-        {
-          "en": "She was offered a new position.",
-          "tr": "Ona yeni bir pozisyon teklif edildi.",
-          "note": "Kişi özne konumuna alındı."
-        },
-        {
-          "en": "We were told nothing about the delay.",
-          "tr": "Gecikme hakkında bize hiçbir şey söylenmedi.",
-          "note": "tell'in edilgeni."
-        }
-      ],
-      "mistakes": [
-        {
-          "wrong": "The results have published online.",
-          "right": "The results have been published online.",
-          "why": "Edilgende be parçası düşmez."
-        },
-        {
-          "wrong": "She was offered to a new position.",
-          "right": "She was offered a new position.",
-          "why": "Kişi zaten özne; to gerekmez."
-        },
-        {
-          "wrong": "Bags are not allow in the hall.",
-          "right": "Bags are not allowed in the hall.",
-          "why": "Üçüncü hâl gerekir."
-        }
-      ],
-      "exercises": [
-        {
-          "type": "choice",
-          "text": "The bridge ___ since 2019.",
-          "options": [
-            "has been closed",
-            "has closed",
-            "is closing",
-            "was close"
-          ],
-          "answer": 0,
-          "note": "since → present perfect edilgen."
-        },
-        {
-          "type": "choice",
-          "text": "You ___ by email once we decide.",
-          "options": [
-            "will be notified",
-            "will notify",
-            "will be notify",
-            "are notify"
-          ],
-          "answer": 0,
-          "note": "will be + V3."
-        },
-        {
-          "type": "choice",
-          "text": "Cameras ___ inside the museum.",
-          "options": [
-            "aren't permitted",
-            "aren't permit",
-            "don't permitted",
-            "not permitted are"
-          ],
-          "answer": 0,
-          "note": "Olumsuz edilgen."
-        },
-        {
-          "type": "choice",
-          "text": "The students ___ a certificate at the end.",
-          "options": [
-            "were given",
-            "were gave",
-            "gave were",
-            "was given"
-          ],
-          "answer": 0,
-          "note": "Kişi özne, iki nesneli fiil."
-        },
-        {
-          "type": "gap",
-          "text": "The letters ___ sent yesterday.",
-          "options": [
-            "were",
-            "have",
-            "are been"
-          ],
-          "answer": 0,
-          "note": "Geçmiş edilgen → were + V3."
-        },
-        {
-          "type": "choice",
-          "text": "The road ___ repaired at the moment.",
-          "options": [
-            "is being",
-            "is",
-            "has been being",
-            "was being now"
-          ],
-          "answer": 0,
-          "note": "Şu an süren edilgen → is being + V3."
-        },
-        {
-          "type": "choice",
-          "text": "The decision ___ already been taken.",
-          "options": [
-            "has",
-            "is",
-            "was",
-            "had being"
-          ],
-          "answer": 0,
-          "note": "Present perfect edilgen → has been + V3."
-        },
-        {
-          "type": "choice",
-          "text": "When we arrived, the tables ___ been laid.",
-          "options": [
-            "had",
-            "have",
-            "were",
-            "are"
-          ],
-          "answer": 0,
-          "note": "Past perfect edilgen → had been + V3."
-        },
-        {
-          "type": "gap",
-          "text": "The building ___ being used when the fire started.",
-          "options": [
-            "was",
-            "is",
-            "has"
-          ],
-          "answer": 0,
-          "note": "Geçmişte süren edilgen → was being + V3."
-        },
-        {
-          "type": "choice",
-          "text": "By next month the work ___ been completed.",
-          "options": [
-            "will have",
-            "will",
-            "has",
-            "is"
-          ],
-          "answer": 0,
-          "note": "Future perfect edilgen → will have been + V3."
-        }
-      ]
-    },
-    {
-      "id": "b2-04-passive-infinitive-gerund",
-      "level": "B2",
-      "order": 4,
+      "order": 5,
       "title": "to be done, being done, not doing",
       "topic": "Passive infinitive and gerund; negative gerund",
       "canDo": "Edilgen anlamı fiilimsi biçimlerde de kurabilirim.",
@@ -830,9 +623,9 @@
       ]
     },
     {
-      "id": "b2-05-have-something-done",
+      "id": "b2-06-have-something-done",
       "level": "B2",
-      "order": 5,
+      "order": 6,
       "title": "have / get something done",
       "topic": "Causative passive",
       "canDo": "Bir işi başkasına yaptırdığımı söyleyebilirim.",
@@ -1034,9 +827,9 @@
       ]
     },
     {
-      "id": "b2-06-as-as-less",
+      "id": "b2-07-as-as-less",
       "level": "B2",
-      "order": 6,
+      "order": 7,
       "title": "as … as, not as … as, less",
       "topic": "Comparison of equality and inferiority",
       "canDo": "Eşitlik kurabilir, bir şeyin daha azını söyleyebilirim.",

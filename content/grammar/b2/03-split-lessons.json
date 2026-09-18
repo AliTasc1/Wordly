@@ -1,0 +1,1243 @@
+{
+  "_meta": {
+    "batch": "b2-grammar-03",
+    "level": "B2",
+    "range": "Bölünen dersler: edilgen, ilgi zamirleri, vurgu ve kipler"
+  },
+  "lessons": [
+    {
+      "id": "b2-03-passive-extended",
+      "level": "B2",
+      "order": 3,
+      "title": "Edilgen — her zamanda",
+      "topic": "Passive across tenses",
+      "canDo": "Resmî yazıda ve haber dilinde edilgen yapıyı her zamanda kurabilirim.",
+      "covers": [
+        "PASS.PRESENT.NEG",
+        "PASS.PRSPF.AFF",
+        "PASS.FUT.AFF"
+      ],
+      "concept": {
+        "summary": "Edilgende zaman be fiilinde taşınır, asıl fiil hep üçüncü hâlde kalır. Hangi zamanı kuracaksan be'yi o zamana çek, sonra V3'ü ekle: is closed, was closed, has been closed, will be closed, is being closed. Olumsuzluk da be'ye takılır: aren't allowed.",
+        "formula": {
+          "left": "be'nin çekimi",
+          "right": "+ fiilin üçüncü hâli"
+        },
+        "table": [
+          {
+            "form": "present perfect",
+            "be": "has / have been + V3",
+            "example": "The road has been closed."
+          },
+          {
+            "form": "gelecek",
+            "be": "will be + V3",
+            "example": "You will be informed."
+          },
+          {
+            "form": "olumsuz",
+            "be": "isn't / aren't + V3",
+            "example": "Photos aren't allowed."
+          },
+          {
+            "form": "şu anda süren",
+            "be": "is being + V3",
+            "example": "The road is being repaired."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "The results have been published online.",
+          "tr": "Sonuçlar internette yayımlandı.",
+          "note": "have been + V3."
+        },
+        {
+          "en": "All applicants will be contacted next week.",
+          "tr": "Tüm başvuru sahiplerine önümüzdeki hafta ulaşılacak.",
+          "note": "will be + V3."
+        },
+        {
+          "en": "Bags are not allowed in the hall.",
+          "tr": "Salona çanta alınmaz.",
+          "note": "Olumsuz edilgen."
+        },
+        {
+          "en": "The old wing has been closed since March.",
+          "tr": "Eski bölüm marttan beri kapalı.",
+          "note": "since ile present perfect edilgen."
+        },
+        {
+          "en": "The forms will be checked by two people.",
+          "tr": "Formlar iki kişi tarafından kontrol edilecek.",
+          "note": "by + eylemi yapan."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "The results have published online.",
+          "right": "The results have been published online.",
+          "why": "Edilgende be parçası düşmez."
+        },
+        {
+          "wrong": "Bags are not allow in the hall.",
+          "right": "Bags are not allowed in the hall.",
+          "why": "Üçüncü hâl gerekir."
+        },
+        {
+          "wrong": "All applicants will contacted next week.",
+          "right": "All applicants will be contacted next week.",
+          "why": "will'den sonra be gelir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "The bridge ___ since 2019.",
+          "options": [
+            "has been closed",
+            "has closed",
+            "is closing",
+            "was close"
+          ],
+          "answer": 0,
+          "note": "since → present perfect edilgen."
+        },
+        {
+          "type": "choice",
+          "text": "You ___ by email once we decide.",
+          "options": [
+            "will be notified",
+            "will notify",
+            "will be notify",
+            "are notify"
+          ],
+          "answer": 0,
+          "note": "will be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Cameras ___ inside the museum.",
+          "options": [
+            "aren't permitted",
+            "aren't permit",
+            "don't permitted",
+            "not permitted are"
+          ],
+          "answer": 0,
+          "note": "Olumsuz edilgen."
+        },
+        {
+          "type": "gap",
+          "text": "The letters ___ sent yesterday.",
+          "options": [
+            "were",
+            "have",
+            "are been"
+          ],
+          "answer": 0,
+          "note": "Geçmiş edilgen → were + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The road ___ repaired at the moment.",
+          "options": [
+            "is being",
+            "is",
+            "has been being",
+            "was being now"
+          ],
+          "answer": 0,
+          "note": "Şu an süren edilgen → is being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The decision ___ already been taken.",
+          "options": [
+            "has",
+            "is",
+            "was",
+            "had being"
+          ],
+          "answer": 0,
+          "note": "Present perfect edilgen → has been + V3."
+        },
+        {
+          "type": "choice",
+          "text": "When we arrived, the tables ___ been laid.",
+          "options": [
+            "had",
+            "have",
+            "were",
+            "are"
+          ],
+          "answer": 0,
+          "note": "Past perfect edilgen → had been + V3."
+        },
+        {
+          "type": "gap",
+          "text": "The building ___ being used when the fire started.",
+          "options": [
+            "was",
+            "is",
+            "has"
+          ],
+          "answer": 0,
+          "note": "Geçmişte süren edilgen → was being + V3."
+        },
+        {
+          "type": "choice",
+          "text": "By next month the work ___ been completed.",
+          "options": [
+            "will have",
+            "will",
+            "has",
+            "is"
+          ],
+          "answer": 0,
+          "note": "Future perfect edilgen → will have been + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Mobile phones ___ during the exam.",
+          "options": [
+            "are not allowed",
+            "are not allow",
+            "do not allowed",
+            "not are allowed"
+          ],
+          "answer": 0,
+          "note": "Olumsuz edilgen: be + not + V3."
+        }
+      ]
+    },
+    {
+      "id": "b2-04-passive-indirect-object",
+      "level": "B2",
+      "order": 4,
+      "title": "She was given a prize — iki nesneli fiillerin edilgeni",
+      "topic": "Passive with indirect objects",
+      "canDo": "give, send, offer gibi fiillerin edilgenini, kişiyi öne alarak doğal biçimde kurabilirim.",
+      "covers": [
+        "PASS.IO.AFF"
+      ],
+      "concept": {
+        "summary": "give, send, offer, show, tell, teach gibi fiillerin iki nesnesi vardır: bir kişi, bir şey. Bu yüzden iki farklı edilgen kurulabilir. İngilizce genelde kişiyi özne yapanı yeğler: She was given a prize. Kişi özne konumuna geçince artık to almaz; \"She was given to a prize\" yanlıştır.",
+        "formula": {
+          "left": "kişi + be + V3 + şey",
+          "right": "She was given a prize."
+        },
+        "table": [
+          {
+            "form": "etken",
+            "be": "They gave her a prize.",
+            "example": "iki nesne: her, a prize"
+          },
+          {
+            "form": "yeğlenen edilgen",
+            "be": "She was given a prize.",
+            "example": "kişi özne"
+          },
+          {
+            "form": "öteki edilgen",
+            "be": "A prize was given to her.",
+            "example": "şey özne, kişi to alır"
+          },
+          {
+            "form": "yanlış",
+            "be": "to düşer",
+            "example": "not: She was given to a prize."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "She was offered a new position.",
+          "tr": "Ona yeni bir pozisyon teklif edildi.",
+          "note": "Kişi özne konumuna alındı."
+        },
+        {
+          "en": "We were told nothing about the delay.",
+          "tr": "Gecikme hakkında bize hiçbir şey söylenmedi.",
+          "note": "tell'in edilgeni."
+        },
+        {
+          "en": "Every student was sent a copy of the timetable.",
+          "tr": "Her öğrenciye ders programının bir kopyası gönderildi.",
+          "note": "send + kişi + şey."
+        },
+        {
+          "en": "He was shown the new machine on his first day.",
+          "tr": "İlk gün ona yeni makine gösterildi.",
+          "note": "show'un edilgeni."
+        },
+        {
+          "en": "A letter was sent to every member.",
+          "tr": "Her üyeye bir mektup gönderildi.",
+          "note": "Şey özne olunca kişi to alır."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "She was offered to a new position.",
+          "right": "She was offered a new position.",
+          "why": "Kişi zaten özne; to gerekmez."
+        },
+        {
+          "wrong": "Was given she a prize?",
+          "right": "Was she given a prize?",
+          "why": "Soruda özne be ile V3 arasında durur."
+        },
+        {
+          "wrong": "We were told about nothing the delay.",
+          "right": "We were told nothing about the delay.",
+          "why": "Nesne fiilden hemen sonra gelir."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "The students ___ a certificate at the end.",
+          "options": [
+            "were given",
+            "were gave",
+            "gave were",
+            "was given"
+          ],
+          "answer": 0,
+          "note": "Kişi özne, iki nesneli fiil."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ the job before the interviews finished.",
+          "options": [
+            "was offered",
+            "was offered to",
+            "offered was",
+            "was offer"
+          ],
+          "answer": 0,
+          "note": "Kişi özne → to gelmez."
+        },
+        {
+          "type": "choice",
+          "text": "We ___ nothing about the change of plan.",
+          "options": [
+            "were told",
+            "were telling",
+            "told were",
+            "was told"
+          ],
+          "answer": 0,
+          "note": "tell'in edilgeni, çoğul özne."
+        },
+        {
+          "type": "gap",
+          "text": "Each new member ___ a card and a key.",
+          "options": [
+            "is given",
+            "is give",
+            "gives"
+          ],
+          "answer": 0,
+          "note": "Kişi özne → is given."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ the plans on his first morning.",
+          "options": [
+            "was shown",
+            "was show",
+            "showed was",
+            "was showing"
+          ],
+          "answer": 0,
+          "note": "show'un edilgeni."
+        },
+        {
+          "type": "choice",
+          "text": "A copy ___ to every household last week.",
+          "options": [
+            "was sent",
+            "was sent to be",
+            "sent was",
+            "were sent"
+          ],
+          "answer": 0,
+          "note": "Şey özne → kişi to alır."
+        },
+        {
+          "type": "choice",
+          "text": "The children ___ how to use the machine safely.",
+          "options": [
+            "were taught",
+            "were teach",
+            "taught were",
+            "was taught"
+          ],
+          "answer": 0,
+          "note": "teach'in edilgeni."
+        },
+        {
+          "type": "gap",
+          "text": "___ she given any explanation?",
+          "options": [
+            "Was",
+            "Did",
+            "Has been"
+          ],
+          "answer": 0,
+          "note": "Soruda be başa gelir."
+        },
+        {
+          "type": "choice",
+          "text": "Which passive does English usually prefer? ___",
+          "options": [
+            "She was given a prize.",
+            "A prize was given to her.",
+            "Given was she a prize.",
+            "A prize was given her to."
+          ],
+          "answer": 0,
+          "note": "Kişiyi öne alan biçim yeğlenir."
+        },
+        {
+          "type": "choice",
+          "text": "Every applicant ___ an email with the date.",
+          "options": [
+            "was sent",
+            "was send",
+            "sent was",
+            "were sent"
+          ],
+          "answer": 0,
+          "note": "Tekil özne → was sent."
+        }
+      ]
+    },
+    {
+      "id": "b2-09-relative-object",
+      "level": "B2",
+      "order": 9,
+      "title": "whom, which, that — nesne konumundaki ilgi zamiri",
+      "topic": "Relative pronouns in object position",
+      "canDo": "İlgi zamirinin cümlecikte nesne olduğu durumlarda doğru biçimi seçebilirim.",
+      "covers": [
+        "PRELO.who",
+        "PRELO.whom",
+        "PRELO.which",
+        "PRELO.that",
+        "PREL.which"
+      ],
+      "concept": {
+        "summary": "İlgi zamiri kendi cümleciğinde özne değil nesne olabilir: the man whom I met. Bu durumda günlük dilde who kullanılır ya da zamir düşürülür; whom resmî dilde tercih edilir. Cansız varlıklarda which ya da that gelir. İlgi zamiri zaten nesnedir; cümleciğe ikinci bir nesne konmaz.",
+        "formula": {
+          "left": "nesne konumunda: who / whom / that / ∅",
+          "right": "cansızda which / that"
+        },
+        "table": [
+          {
+            "form": "günlük",
+            "be": "who / that / ∅",
+            "example": "the man (who) I met"
+          },
+          {
+            "form": "resmî",
+            "be": "whom",
+            "example": "the man whom I met"
+          },
+          {
+            "form": "cansız",
+            "be": "which / that / ∅",
+            "example": "the report (which) I read"
+          },
+          {
+            "form": "virgüllü",
+            "be": "which (that olmaz)",
+            "example": "the report, which was late,"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "The colleague whom I mentioned has resigned.",
+          "tr": "Sözünü ettiğim meslektaş istifa etti.",
+          "note": "Resmî; nesne konumunda whom."
+        },
+        {
+          "en": "The report which you sent was very useful.",
+          "tr": "Gönderdiğin rapor çok işime yaradı.",
+          "note": "Cansız nesne → which."
+        },
+        {
+          "en": "She is the person I trust most.",
+          "tr": "En çok güvendiğim kişi o.",
+          "note": "Zamir düşürüldü."
+        },
+        {
+          "en": "The film that we watched last night was too long.",
+          "tr": "Dün gece izlediğimiz film çok uzundu.",
+          "note": "Cansız nesne → that."
+        },
+        {
+          "en": "The report, which was written in a hurry, has several mistakes.",
+          "tr": "Aceleyle yazılan rapor birkaç hata içeriyor.",
+          "note": "Virgüllü ek bilgide that kullanılmaz."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "The report which you sent it was useful.",
+          "right": "The report which you sent was useful.",
+          "why": "İlgi zamiri zaten nesnedir, ikinci nesne konmaz."
+        },
+        {
+          "wrong": "The report, that was written in a hurry, has mistakes.",
+          "right": "The report, which was written in a hurry, has mistakes.",
+          "why": "Virgüllü ek bilgide that kullanılmaz."
+        },
+        {
+          "wrong": "The man which I met was her brother.",
+          "right": "The man whom I met was her brother.",
+          "why": "Kişi için which kullanılmaz."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "The manager ___ I spoke to was helpful.",
+          "options": [
+            "whom",
+            "which",
+            "what",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Kişi, nesne konumunda."
+        },
+        {
+          "type": "choice",
+          "text": "The meeting ___ was cancelled has been rescheduled.",
+          "options": [
+            "which",
+            "who",
+            "whom",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Cansız → which."
+        },
+        {
+          "type": "choice",
+          "text": "The book ___ I borrowed is overdue.",
+          "options": [
+            "that",
+            "who",
+            "whom",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Cansız nesne → that (düşürülebilir de)."
+        },
+        {
+          "type": "gap",
+          "text": "The report, ___ was written in a hurry, has several mistakes.",
+          "options": [
+            "which",
+            "that",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Virgüllü ek bilgi → which (that olmaz)."
+        },
+        {
+          "type": "choice",
+          "text": "The people ___ we invited did not come.",
+          "options": [
+            "whom",
+            "who's",
+            "what",
+            "which"
+          ],
+          "answer": 0,
+          "note": "Nesne konumunda whom."
+        },
+        {
+          "type": "choice",
+          "text": "The letter ___ arrived this morning was unsigned.",
+          "options": [
+            "which",
+            "who",
+            "whom",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Cansız özne → which."
+        },
+        {
+          "type": "choice",
+          "text": "The candidate ___ we chose starts in June.",
+          "options": [
+            "whom",
+            "which",
+            "what",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Kişi, nesne konumunda."
+        },
+        {
+          "type": "gap",
+          "text": "The song ___ she sang at the end was her own.",
+          "options": [
+            "that",
+            "who",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Cansız nesne → that."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence has a second object by mistake? ___",
+          "options": [
+            "The book which I read it was long.",
+            "The book which I read was long.",
+            "The book I read was long.",
+            "The book that I read was long."
+          ],
+          "answer": 0,
+          "note": "İlgi zamiri zaten nesnedir."
+        },
+        {
+          "type": "choice",
+          "text": "The teacher ___ everybody remembers retired last year.",
+          "options": [
+            "whom",
+            "which",
+            "what",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Kişi, nesne konumunda → whom."
+        }
+      ]
+    },
+    {
+      "id": "b2-10-relative-with-preposition",
+      "level": "B2",
+      "order": 10,
+      "title": "the room in which — edat ve ilgi zamiri",
+      "topic": "Preposition + relative pronoun",
+      "canDo": "Resmî yazıda edatı ilgi zamirinin önüne alarak cümle kurabilirim.",
+      "covers": [
+        "PREL.PREP_PREL"
+      ],
+      "concept": {
+        "summary": "Günlük dilde edat cümleciğin sonunda kalır: the room we met in. Resmî yazıda edat ilgi zamirinin önüne alınır: the room in which we met. Bu yapıda iki kural vardır: edattan sonra kişi için whom, cansız için which gelir; that ve who edattan sonra kullanılamaz. Aitlik için of which kalıbı vardır: the subject of which.",
+        "formula": {
+          "left": "edat + whom (kişi)",
+          "right": "edat + which (cansız)"
+        },
+        "table": [
+          {
+            "form": "günlük",
+            "be": "… we met in",
+            "example": "the room we met in"
+          },
+          {
+            "form": "resmî",
+            "be": "in which",
+            "example": "the room in which we met"
+          },
+          {
+            "form": "kişi",
+            "be": "to whom",
+            "example": "the person to whom I spoke"
+          },
+          {
+            "form": "aitlik",
+            "be": "of which",
+            "example": "a talk, the subject of which …"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "This is the house in which he was born.",
+          "tr": "Burası doğduğu ev.",
+          "note": "Edat + which, resmî."
+        },
+        {
+          "en": "The candidate to whom we offered the job declined.",
+          "tr": "İşi teklif ettiğimiz aday reddetti.",
+          "note": "Edattan sonra zorunlu olarak whom."
+        },
+        {
+          "en": "That is the fund from which the money came.",
+          "tr": "Para o fondan geldi.",
+          "note": "from + which."
+        },
+        {
+          "en": "He gave a talk, the subject of which was climate.",
+          "tr": "Konusu iklim olan bir konuşma yaptı.",
+          "note": "of which — aitlik."
+        },
+        {
+          "en": "The company for which she works has moved.",
+          "tr": "Çalıştığı şirket taşındı.",
+          "note": "for + which."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "The candidate to who we offered the job declined.",
+          "right": "The candidate to whom we offered the job declined.",
+          "why": "Edattan hemen sonra whom gelir, who değil."
+        },
+        {
+          "wrong": "This is the house in that he was born.",
+          "right": "This is the house in which he was born.",
+          "why": "that edattan sonra kullanılamaz."
+        },
+        {
+          "wrong": "The fund from which the money came from was closed.",
+          "right": "The fund from which the money came was closed.",
+          "why": "Edat bir kez kullanılır, sonda tekrar edilmez."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "That is the fund from ___ the money came.",
+          "options": [
+            "which",
+            "that",
+            "who",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Edattan sonra which."
+        },
+        {
+          "type": "choice",
+          "text": "The lawyer with ___ she works is my cousin.",
+          "options": [
+            "whom",
+            "who",
+            "which",
+            "that"
+          ],
+          "answer": 0,
+          "note": "Edat + whom."
+        },
+        {
+          "type": "choice",
+          "text": "The colleague ___ I share an office is on leave.",
+          "options": [
+            "with whom",
+            "whom with",
+            "who with",
+            "with who"
+          ],
+          "answer": 0,
+          "note": "Resmî yapı: edat + whom."
+        },
+        {
+          "type": "gap",
+          "text": "This is the house in ___ she was born.",
+          "options": [
+            "which",
+            "that",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Edattan sonra which."
+        },
+        {
+          "type": "choice",
+          "text": "He gave a talk, the subject of ___ was climate.",
+          "options": [
+            "which",
+            "that",
+            "what",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "of which — aitlik, nesneler için."
+        },
+        {
+          "type": "choice",
+          "text": "The village in ___ they grew up has no school now.",
+          "options": [
+            "which",
+            "that",
+            "who",
+            "what"
+          ],
+          "answer": 0,
+          "note": "in + which."
+        },
+        {
+          "type": "choice",
+          "text": "The friend to ___ I lent the book has moved abroad.",
+          "options": [
+            "whom",
+            "who",
+            "which",
+            "that"
+          ],
+          "answer": 0,
+          "note": "Edat + whom."
+        },
+        {
+          "type": "gap",
+          "text": "The shelf on ___ the files were kept is empty.",
+          "options": [
+            "which",
+            "that",
+            "what"
+          ],
+          "answer": 0,
+          "note": "on + which."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence belongs in a formal report? ___",
+          "options": [
+            "The room in which the meeting was held was too small.",
+            "The room that the meeting was held in was too small.",
+            "The room the meeting was held in was too small.",
+            "The room which the meeting was held in was too small."
+          ],
+          "answer": 0,
+          "note": "Edatın öne alınması resmî biçimdir."
+        },
+        {
+          "type": "choice",
+          "text": "The report, the first page of ___ is missing, arrived yesterday.",
+          "options": [
+            "which",
+            "that",
+            "what",
+            "who"
+          ],
+          "answer": 0,
+          "note": "of which — aitlik."
+        }
+      ]
+    },
+    {
+      "id": "b2-13-emphasis-questions",
+      "level": "B2",
+      "order": 13,
+      "title": "I do believe you — vurgu ve özne soruları",
+      "topic": "Emphatic do; who-questions",
+      "canDo": "Söylediğimi vurgulayabilir, özneyi doğru biçimde sorabilirim.",
+      "covers": [
+        "V.INT.do_does",
+        "INT.who",
+        "PP.it_is_not"
+      ],
+      "concept": {
+        "summary": "Olumlu bir cümleye do eklenince vurgu doğar: I do like it. Yardımcı fiil zamanı taşır, esas fiil yalın kalır. Who özneyi sorduğunda cümle düzeni bozulmaz ve do kullanılmaz — İngilizcenin tek soru istisnası budur. Who nesneyi sorduğunda ise normal soru düzeni geri gelir: Who did you call?",
+        "formula": {
+          "left": "do / does / did + yalın fiil",
+          "right": "Who + fiil? (do yok)"
+        },
+        "table": [
+          {
+            "form": "vurgu",
+            "be": "do + fiil",
+            "example": "I do understand."
+          },
+          {
+            "form": "özne sorusu",
+            "be": "Who + fiil",
+            "example": "Who called you?"
+          },
+          {
+            "form": "nesne sorusu",
+            "be": "Who + do + özne",
+            "example": "Who did you call?"
+          },
+          {
+            "form": "it is not",
+            "be": "olumsuz be",
+            "example": "It isn't my fault."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "I do believe you, but the evidence is weak.",
+          "tr": "Sana inanıyorum gerçekten ama kanıt zayıf.",
+          "note": "Vurgu için do."
+        },
+        {
+          "en": "She did tell me, I just forgot.",
+          "tr": "Bana söyledi aslında, ben unuttum.",
+          "note": "Geçmişte vurgu → did + yalın fiil."
+        },
+        {
+          "en": "Who broke the window?",
+          "tr": "Camı kim kırdı?",
+          "note": "Özne sorusu; did kullanılmaz."
+        },
+        {
+          "en": "Who did you invite?",
+          "tr": "Kimi davet ettin?",
+          "note": "Nesne sorusu; did gerekir."
+        },
+        {
+          "en": "It isn't my fault; the system failed.",
+          "tr": "Benim hatam değil, sistem bozuldu.",
+          "note": "be fiilinin olumsuzu."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "Who did break the window?",
+          "right": "Who broke the window?",
+          "why": "Özne sorulduğunda do kullanılmaz."
+        },
+        {
+          "wrong": "I do believed you.",
+          "right": "I do believe you.",
+          "why": "do vurgusundan sonra fiil yalın kalır."
+        },
+        {
+          "wrong": "Who did called you?",
+          "right": "Who called you?",
+          "why": "Özne sorusunda yardımcı fiil eklenmez."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "___ wants more coffee?",
+          "options": [
+            "Who",
+            "Who does",
+            "Whom does",
+            "Who do"
+          ],
+          "answer": 0,
+          "note": "Özne sorusu, do yok."
+        },
+        {
+          "type": "choice",
+          "text": "___ did they choose in the end?",
+          "options": [
+            "Who",
+            "Who did they",
+            "Whoever",
+            "Whose"
+          ],
+          "answer": 0,
+          "note": "Nesne sorusu, did var."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ want to help, but I'm busy.",
+          "options": [
+            "do",
+            "am",
+            "does",
+            "did do"
+          ],
+          "answer": 0,
+          "note": "Vurgu → do + yalın fiil."
+        },
+        {
+          "type": "gap",
+          "text": "It ___ my fault; the system failed.",
+          "options": [
+            "isn't",
+            "not is",
+            "doesn't"
+          ],
+          "answer": 0,
+          "note": "be fiilinin olumsuzu."
+        },
+        {
+          "type": "choice",
+          "text": "I ___ tell him, but he had already left.",
+          "options": [
+            "did try to",
+            "did tried to",
+            "was did try",
+            "do tried"
+          ],
+          "answer": 0,
+          "note": "Vurgu için did + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ told you about the meeting?",
+          "options": [
+            "Who",
+            "Whom",
+            "Which one of",
+            "What person did"
+          ],
+          "answer": 0,
+          "note": "Özne sorusunda yardımcı fiil kullanılmaz."
+        },
+        {
+          "type": "choice",
+          "text": "It was in March ___ the factory closed.",
+          "options": [
+            "that",
+            "when it",
+            "which",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Vurgulu yapı: It was … that."
+        },
+        {
+          "type": "gap",
+          "text": "She ___ know the answer; she just would not say it.",
+          "options": [
+            "did",
+            "was",
+            "has"
+          ],
+          "answer": 0,
+          "note": "Geçmişte vurgu → did + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "___ pays for the repairs in this building?",
+          "options": [
+            "Who",
+            "Who does",
+            "Whom does",
+            "Who do"
+          ],
+          "answer": 0,
+          "note": "Özne sorusu."
+        },
+        {
+          "type": "choice",
+          "text": "It ___ the price that worries me, it is the delay.",
+          "options": [
+            "isn't",
+            "not is",
+            "doesn't",
+            "aren't"
+          ],
+          "answer": 0,
+          "note": "Tekil özne → isn't."
+        }
+      ]
+    },
+    {
+      "id": "b2-14-negative-modals",
+      "level": "B2",
+      "order": 14,
+      "title": "wouldn't, mightn't, don't have to — kiplerin olumsuzu",
+      "topic": "Negative modals",
+      "canDo": "Kip fiilleri olumsuz kurarken anlamın nereye düştüğünü ayırt edebilirim.",
+      "covers": [
+        "MD.have_to.NEG",
+        "MD.might.NEG",
+        "MD.would.NEG"
+      ],
+      "concept": {
+        "summary": "Kiplerin olumsuzunda not kipin hemen arkasına gelir ve fiil yalın kalır. Ama olumsuzluk her kipte aynı yere düşmez: mightn't \"olmayabilir\" der, olumsuzluk ihtimale değil fiile düşer. don't have to \"gerek yok\" demektir, mustn't ise \"yasak\". wouldn't hem ret hem de gerçek dışı sonucun olumsuzudur.",
+        "formula": {
+          "left": "kip + not + yalın fiil",
+          "right": "don't have to ≠ mustn't"
+        },
+        "table": [
+          {
+            "form": "wouldn't",
+            "be": "ret / gerçek dışı",
+            "example": "He wouldn't agree."
+          },
+          {
+            "form": "mightn't",
+            "be": "olmayabilir",
+            "example": "She mightn't come."
+          },
+          {
+            "form": "don't have to",
+            "be": "gerek yok",
+            "example": "You don't have to pay."
+          },
+          {
+            "form": "mustn't",
+            "be": "yasak",
+            "example": "You mustn't park here."
+          }
+        ]
+      },
+      "examples": [
+        {
+          "en": "He wouldn't agree to those terms.",
+          "tr": "O koşulları kabul etmezdi.",
+          "note": "Kip + not, fiil yalın."
+        },
+        {
+          "en": "She mightn't be back before nine.",
+          "tr": "Dokuzdan önce dönmeyebilir.",
+          "note": "Olumsuzluk fiile düşer."
+        },
+        {
+          "en": "You don't have to explain; it isn't my business.",
+          "tr": "Açıklamak zorunda değilsin, beni ilgilendirmez.",
+          "note": "Gereksizlik, yasak değil."
+        },
+        {
+          "en": "I asked twice, but he wouldn't answer.",
+          "tr": "İki kez sordum ama cevap vermedi.",
+          "note": "wouldn't = inatla reddetti."
+        },
+        {
+          "en": "We don't have to decide today.",
+          "tr": "Bugün karar vermek zorunda değiliz.",
+          "note": "have to'nun olumsuzu do ile kurulur."
+        }
+      ],
+      "mistakes": [
+        {
+          "wrong": "He wouldn't to agree.",
+          "right": "He wouldn't agree.",
+          "why": "Kip fiilden sonra to gelmez."
+        },
+        {
+          "wrong": "You mustn't pay; the ticket is free.",
+          "right": "You don't have to pay; the ticket is free.",
+          "why": "Gereksizlik mustn't ile anlatılmaz."
+        },
+        {
+          "wrong": "She mightn'ts come.",
+          "right": "She mightn't come.",
+          "why": "Kip fiiller -s almaz."
+        }
+      ],
+      "exercises": [
+        {
+          "type": "choice",
+          "text": "She ___ agree to those terms.",
+          "options": [
+            "wouldn't",
+            "wouldn't to",
+            "not would",
+            "doesn't would"
+          ],
+          "answer": 0,
+          "note": "Kip + not."
+        },
+        {
+          "type": "choice",
+          "text": "You ___ not tell anybody about this.",
+          "options": [
+            "must",
+            "have",
+            "need",
+            "are"
+          ],
+          "answer": 0,
+          "note": "Yasak → must not."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ not have paid; the meal was free.",
+          "options": [
+            "need",
+            "must",
+            "should",
+            "would"
+          ],
+          "answer": 0,
+          "note": "Gereksiz yere yapılmış → need not have + V3."
+        },
+        {
+          "type": "gap",
+          "text": "We ___ have to leave before six.",
+          "options": [
+            "don't",
+            "mustn't",
+            "not"
+          ],
+          "answer": 0,
+          "note": "Gereksizlik → don't have to."
+        },
+        {
+          "type": "choice",
+          "text": "He ___ be at home; I saw him in town an hour ago.",
+          "options": [
+            "mightn't",
+            "mustn't",
+            "wouldn't",
+            "doesn't might"
+          ],
+          "answer": 0,
+          "note": "Olmayabilir → mightn't."
+        },
+        {
+          "type": "choice",
+          "text": "The door ___ open, however hard we pushed.",
+          "options": [
+            "wouldn't",
+            "mustn't",
+            "didn't have to",
+            "mightn't to"
+          ],
+          "answer": 0,
+          "note": "İnatçı ret → wouldn't."
+        },
+        {
+          "type": "choice",
+          "text": "Which sentence means it is not necessary? ___",
+          "options": [
+            "You don't have to wear a tie.",
+            "You mustn't wear a tie.",
+            "You wouldn't wear a tie.",
+            "You mightn't wear a tie."
+          ],
+          "answer": 0,
+          "note": "Gereksizlik → don't have to."
+        },
+        {
+          "type": "gap",
+          "text": "They ___ to work on Saturdays any more.",
+          "options": [
+            "don't have",
+            "mustn't have",
+            "not have"
+          ],
+          "answer": 0,
+          "note": "have to'nun olumsuzu do ile kurulur."
+        },
+        {
+          "type": "choice",
+          "text": "It ___ rain this evening, so take a coat just in case.",
+          "options": [
+            "might",
+            "mightn't",
+            "wouldn't",
+            "doesn't have to"
+          ],
+          "answer": 0,
+          "note": "İhtimal → might."
+        },
+        {
+          "type": "choice",
+          "text": "She ___ tell me where she had been.",
+          "options": [
+            "wouldn't",
+            "wouldn't to",
+            "not would",
+            "didn't would"
+          ],
+          "answer": 0,
+          "note": "Söylemeyi reddetti → wouldn't."
+        }
+      ]
+    }
+  ]
+}

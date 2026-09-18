@@ -35,9 +35,11 @@ OUT = ROOT.parent / "mobile" / "assets" / "content"
 LEVELS = ["a1", "a2", "b1", "b2", "c1", "c2"]
 
 # Ders başına en az bu kadar örnek ve alıştırma olsun; altında kalan ders
-# öğretmez, değinir.
+# öğretmez, değinir. Alıştırma tabanı 4'ten 10'a çıkarıldı: beş soru bir
+# yapıyı ölçmeye yetiyor ama pekiştirmiyordu, öğrenci kalıbı çözer çözmez
+# ders bitiyordu. On soru hem daha çok bağlam hem de tekrar demek.
 MIN_EXAMPLES = 4
-MIN_EXERCISES = 4
+MIN_EXERCISES = 10
 
 EXERCISE_TYPES = {"choice", "gap", "order"}
 
