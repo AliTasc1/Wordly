@@ -1,0 +1,182 @@
+{
+  "_meta": { "batch": "c2-reading-03", "level": "C2", "range": "Parça 11-15" },
+  "items": [
+    {
+      "id": "c2-r-11",
+      "level": "C2",
+      "order": 11,
+      "kind": "reading",
+      "title": "Anonimliğin iki yüzü",
+      "titleEn": "The Case For and Against Anonymity",
+      "minutes": 7,
+      "names": [],
+      "text": "The argument that anonymity degrades public conversation has an obvious empirical basis and a less obvious weakness. The basis is that people say things under a false name they would not say under their own, and anybody who has read a comment section understands the point without further evidence. The weakness is that the same property is what allows a nurse to describe conditions on a ward, a citizen of an unfriendly state to report what is happening in it, and a person with a diagnosis to ask a question they could not ask in their own town. Proposals to require real names therefore trade one harm for another, and the trade is usually presented as though only one side of it existed. It is also worth noticing what the proposals would not achieve. Studies of platforms that require verified identity find that abuse falls but does not disappear, and that the abuse which remains is disproportionately committed by people who are entirely comfortable being identified, because their community approves. The mechanism that restrains most people is not the fear of exposure but the presence of an audience whose opinion they value, and a real-name policy does nothing about a person whose audience shares their view. What has worked better, where it has been tried, is stranger and less satisfying: not identifying the speaker but slowing the speech. Platforms that impose a delay between writing and publishing, or that require a comment to be read once before it can be posted, report reductions comparable to identity requirements and without the cost to the nurse. The finding is unwelcome to both camps in the argument, which is usually a sign that it is measuring something real. It suggests that most of what we call cruelty online is not a settled disposition but a momentary one, and that the design question is not who is speaking but how quickly they were allowed to.",
+      "glossary": [
+        { "w": "anonymity", "tr": "anonimlik" },
+        { "w": "degrades", "tr": "bozar, düşürür" },
+        { "w": "empirical", "tr": "gözleme dayalı" },
+        { "w": "ward", "tr": "hastane koğuşu" },
+        { "w": "diagnosis", "tr": "teşhis" },
+        { "w": "verified", "tr": "doğrulanmış" },
+        { "w": "abuse", "tr": "hakaret, taciz" },
+        { "w": "disproportionately", "tr": "orantısız biçimde" },
+        { "w": "restrains", "tr": "dizginler" },
+        { "w": "exposure", "tr": "ifşa" },
+        { "w": "impose", "tr": "dayatmak" },
+        { "w": "reductions", "tr": "azalmalar" },
+        { "w": "camps", "tr": "kamplar, taraflar" },
+        { "w": "cruelty", "tr": "zalimlik" },
+        { "w": "disposition", "tr": "mizaç, eğilim" }
+      ],
+      "questions": [
+        { "q": "What is the weakness of the anti-anonymity argument?", "options": ["The same property protects people who need it", "The evidence is fabricated", "Nobody uses false names", "It is illegal"], "answer": 0, "note": "\"The same property is what allows a nurse to describe conditions on a ward.\"" },
+        { "q": "What do studies of verified platforms find?", "options": ["Abuse falls but does not disappear", "Abuse disappears entirely", "Abuse rises", "Nothing measurable"], "answer": 0, "note": "\"Abuse falls but does not disappear.\"" },
+        { "q": "Who commits the remaining abuse?", "options": ["People comfortable being identified", "Anonymous accounts", "New users", "Automated accounts"], "answer": 0, "note": "\"Disproportionately committed by people who are entirely comfortable being identified.\"" },
+        { "q": "What actually restrains most people?", "options": ["An audience whose opinion they value", "Fear of the law", "Fear of exposure", "Platform rules"], "answer": 0, "note": "\"The presence of an audience whose opinion they value.\"" },
+        { "q": "What has worked better?", "options": ["Slowing the speech rather than identifying the speaker", "Banning comments", "Stricter platform rules", "Charging for accounts"], "answer": 0, "note": "\"Not identifying the speaker but slowing the speech.\"" }
+      ]
+    },
+    {
+      "id": "c2-r-12",
+      "level": "C2",
+      "order": 12,
+      "kind": "reading",
+      "title": "Ölçülemeyen işin değeri",
+      "titleEn": "The Work That Leaves No Trace",
+      "minutes": 7,
+      "names": [],
+      "text": "Certain kinds of labor are recognized only by their absence. A building that does not catch fire, a system that is not attacked, a conflict that does not escalate: in each case the outcome is nothing happening, and the people responsible for that nothing occupy an awkward position in any organization that measures output. Their success produces no artifact. Worse, sustained success actively undermines the case for continuing to fund them, since a decade without incident is readily interpreted as evidence that the risk was overstated in the first place. The pattern is so reliable that it can be stated as a rule: preventive work is cut in proportion to how well it has been performed. What makes this more than an administrative curiosity is that the people doing the work understand the dynamic perfectly well, and it shapes their conduct in ways that are rarely acknowledged. A safety team that is never visible has no constituency when the budget is reviewed, so competent teams learn to generate visible activity — reports, exercises, briefings — whose primary function is to demonstrate existence rather than to reduce risk. This is not dishonesty. It is the rational response to an environment that will not otherwise notice them, and the cost is that some proportion of the available effort is diverted from the work into the documentation of the work. The organizations that have escaped this trap are few and share an unusual feature. They have made the counterfactual explicit, requiring the preventive function to state in advance what it expects to prevent and at what rate, so that a quiet year can be recognized as a result rather than mistaken for an absence of need. It is a clumsy instrument and it fails in both directions. It remains the only serious attempt anybody has made to pay for something that, when it works, looks exactly like nothing at all.",
+      "glossary": [
+        { "w": "labor", "tr": "emek" },
+        { "w": "escalate", "tr": "tırmanmak" },
+        { "w": "artifact", "tr": "somut ürün" },
+        { "w": "sustained", "tr": "sürekli" },
+        { "w": "undermines", "tr": "zayıflatır" },
+        { "w": "overstated", "tr": "abartılmış" },
+        { "w": "preventive", "tr": "önleyici" },
+        { "w": "curiosity", "tr": "tuhaflık, merak konusu" },
+        { "w": "dynamic", "tr": "işleyiş, dinamik" },
+        { "w": "constituency", "tr": "destekçi kitle" },
+        { "w": "briefings", "tr": "bilgilendirmeler" },
+        { "w": "diverted", "tr": "saptırılmış" },
+        { "w": "counterfactual", "tr": "olmasaydı ne olurdu senaryosu" },
+        { "w": "explicit", "tr": "açık, sarih" },
+        { "w": "clumsy", "tr": "hantal, kaba" }
+      ],
+      "questions": [
+        { "q": "How is this kind of work recognized?", "options": ["Only by its absence", "By its reports", "By its cost", "By its staff numbers"], "answer": 0, "note": "\"Certain kinds of labor are recognized only by their absence.\"" },
+        { "q": "What does sustained success do?", "options": ["Undermines the case for funding the work", "Guarantees more funding", "Attracts new staff", "Raises the risk"], "answer": 0, "note": "\"Sustained success actively undermines the case for continuing to fund them.\"" },
+        { "q": "Why do competent teams generate visible activity?", "options": ["To demonstrate existence in a system that would not notice them", "To meet legal rules", "To train new staff", "To impress the public"], "answer": 0, "note": "\"Whose primary function is to demonstrate existence rather than to reduce risk.\"" },
+        { "q": "What is the cost of that response?", "options": ["Effort moves from the work to documenting it", "Staff leave", "Risk rises sharply", "Budgets are frozen"], "answer": 0, "note": "\"Some proportion of the available effort is diverted from the work into the documentation.\"" },
+        { "q": "What do the few successful organizations do?", "options": ["Make the counterfactual explicit in advance", "Hide the team", "Double the budget", "Stop measuring"], "answer": 0, "note": "\"They have made the counterfactual explicit.\"" }
+      ]
+    },
+    {
+      "id": "c2-r-13",
+      "level": "C2",
+      "order": 13,
+      "kind": "reading",
+      "title": "Yasanın geriye yürümesi",
+      "titleEn": "Judging the Past by Present Rules",
+      "minutes": 7,
+      "names": [],
+      "text": "There is a principle, close to universal in developed legal systems, that a person may not be punished under a law that did not exist when they acted. Its justification is not sentimental. A rule that can be written afterwards is not a rule at all but an instrument, and a citizen who cannot know in advance what is forbidden cannot meaningfully choose to obey. The principle nonetheless produces outcomes that are difficult to accept, and the difficulty is not resolved by restating the principle more firmly. Consider a practice that was lawful, widely known, and is now understood to have caused serious harm. The people responsible cannot be prosecuted, and the argument that they should be is not stupid: they knew what they were doing, the harm was foreseeable to anybody who looked, and the lawfulness of the practice was itself the product of their influence over the people writing the law. What the principle protects, in such a case, is precisely the person least deserving of protection. Legal systems have developed partial answers, none of them satisfying. Civil liability, which operates on a different standard and can reach conduct that was not criminal. Public inquiries, which establish a record without imposing a penalty and are routinely dismissed as inadequate by the people they are meant to satisfy. Disqualification from future office, which is preventive rather than punitive and attracts the objection that it is punishment under another name. The honest account is that the principle costs something and is worth its cost, and that the cost falls unevenly on people who have no say in the matter. Systems that pretend otherwise, by quietly stretching definitions until an old act becomes a current offence, buy a single satisfying outcome at the price of the thing that made the system worth defending.",
+      "glossary": [
+        { "w": "sentimental", "tr": "duygusal" },
+        { "w": "justification", "tr": "gerekçe" },
+        { "w": "instrument", "tr": "araç" },
+        { "w": "forbidden", "tr": "yasak" },
+        { "w": "prosecuted", "tr": "kovuşturulan" },
+        { "w": "foreseeable", "tr": "öngörülebilir" },
+        { "w": "lawfulness", "tr": "hukuka uygunluk" },
+        { "w": "liability", "tr": "hukuki sorumluluk" },
+        { "w": "conduct", "tr": "davranış, eylem" },
+        { "w": "inquiries", "tr": "soruşturmalar" },
+        { "w": "penalty", "tr": "ceza" },
+        { "w": "inadequate", "tr": "yetersiz" },
+        { "w": "disqualification", "tr": "görevden men" },
+        { "w": "punitive", "tr": "cezalandırıcı" },
+        { "w": "offence", "tr": "suç" }
+      ],
+      "questions": [
+        { "q": "What is the justification for the principle?", "options": ["A citizen must be able to know in advance what is forbidden", "It protects the innocent", "It is traditional", "It reduces court costs"], "answer": 0, "note": "\"A citizen who cannot know in advance what is forbidden cannot meaningfully choose to obey.\"" },
+        { "q": "Why is the opposing argument not stupid?", "options": ["The harm was foreseeable and the law reflected their influence", "The law was secret", "Nobody was harmed", "The practice was hidden"], "answer": 0, "note": "\"The lawfulness of the practice was itself the product of their influence.\"" },
+        { "q": "What does the principle protect in such cases?", "options": ["The person least deserving of protection", "The victims", "The state", "Future citizens"], "answer": 0, "note": "\"What the principle protects... is precisely the person least deserving of protection.\"" },
+        { "q": "What objection is raised against disqualification?", "options": ["That it is punishment under another name", "That it is too weak", "That it is illegal", "That it is expensive"], "answer": 0, "note": "\"Attracts the objection that it is punishment under another name.\"" },
+        { "q": "What is the writer's honest account?", "options": ["The principle costs something and is worth its cost", "The principle should be abandoned", "The cost is imaginary", "Inquiries solve the problem"], "answer": 0, "note": "\"The principle costs something and is worth its cost.\"" }
+      ]
+    },
+    {
+      "id": "c2-r-14",
+      "level": "C2",
+      "order": 14,
+      "kind": "reading",
+      "title": "Yaşlanan nüfusun sessiz hesabı",
+      "titleEn": "The Arithmetic Nobody Disputes",
+      "minutes": 7,
+      "names": [],
+      "text": "Of all the large problems facing wealthy states, demographic ageing is the one about which there is least genuine disagreement and least useful action, and the two facts are connected. The arithmetic is not contested by anybody: a population in which the ratio of working-age people to retired people falls steadily will, absent some other change, find that the promises made to the second group cannot be met from the contributions of the first. Every serious participant accepts this. What is disputed is which of four unpopular adjustments to make, and since each has a clearly identifiable group of losers who exist now, while the beneficiaries are diffuse and largely in the future, the stable political equilibrium is to describe the problem accurately and postpone. The four adjustments are familiar. Raise the retirement age, which falls hardest on manual workers whose bodies are the reason the age was set where it was. Raise contributions, which reduces the income of people currently working. Reduce payments, which breaks a promise that people arranged their lives around. Increase the number of contributors through immigration, which is the only option that expands rather than divides the total, and the one that has proved least available politically in most of the countries that need it most. What is genuinely unusual about the debate is the relationship between knowledge and action. This is not a case of disputed science, competing models or hidden data. The projections have been published, repeatedly, for forty years, and have proved conservative. A political system that cannot act on a forecast this uncontested is not suffering from insufficient information, and the persistent proposal to commission further study is best understood not as a request for evidence but as a way of agreeing that something must be done at some point by somebody else.",
+      "glossary": [
+        { "w": "demographic", "tr": "demografik" },
+        { "w": "ageing", "tr": "yaşlanma" },
+        { "w": "contested", "tr": "tartışmalı" },
+        { "w": "ratio", "tr": "oran" },
+        { "w": "absent", "tr": "olmadığı takdirde" },
+        { "w": "contributions", "tr": "primler, katkılar" },
+        { "w": "adjustments", "tr": "düzenlemeler" },
+        { "w": "beneficiaries", "tr": "yararlananlar" },
+        { "w": "diffuse", "tr": "dağınık" },
+        { "w": "equilibrium", "tr": "denge" },
+        { "w": "postpone", "tr": "ertelemek" },
+        { "w": "manual", "tr": "bedenle çalışan" },
+        { "w": "immigration", "tr": "göç" },
+        { "w": "projections", "tr": "öngörüler" },
+        { "w": "conservative", "tr": "ihtiyatlı" },
+        { "w": "uncontested", "tr": "tartışmasız" },
+        { "w": "commission", "tr": "sipariş etmek, yaptırmak" }
+      ],
+      "questions": [
+        { "q": "Why is there little useful action?", "options": ["The losers exist now and the gainers are in the future", "The science is disputed", "The data is hidden", "Nobody understands it"], "answer": 0, "note": "\"Each has a clearly identifiable group of losers who exist now, while the beneficiaries are diffuse.\"" },
+        { "q": "Why does raising the retirement age fall hardest on manual workers?", "options": ["Their bodies are the reason the age was set there", "They earn less", "They retire earlier", "They pay more"], "answer": 0, "note": "\"Whose bodies are the reason the age was set where it was.\"" },
+        { "q": "Which option expands rather than divides the total?", "options": ["Immigration", "Higher contributions", "Lower payments", "A later retirement age"], "answer": 0, "note": "\"Increase the number of contributors through immigration.\"" },
+        { "q": "What does the writer say about the projections?", "options": ["Published for forty years and proved conservative", "Recently disputed", "Never made public", "Consistently too pessimistic"], "answer": 0, "note": "\"Published, repeatedly, for forty years, and have proved conservative.\"" },
+        { "q": "How does the writer read calls for further study?", "options": ["As a way of leaving action to somebody else", "As genuine caution", "As a sign of progress", "As a funding request"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-15",
+      "level": "C2",
+      "order": 15,
+      "kind": "reading",
+      "title": "Kurgu odasının sessiz yazarlığı",
+      "titleEn": "The Editing Room's Quiet Authorship",
+      "minutes": 7,
+      "names": [],
+      "text": "A documentary that contains no false statement can still be substantially untrue, and the mechanism is not deception in any sense the maker would recognize. Two hundred hours of material become ninety minutes, and every decision in that reduction is an argument about what the material means. A subject who spoke for six hours appears for ninety seconds, and which ninety seconds is a judgment the viewer cannot inspect. Sequence performs the same work more quietly: two events placed adjacently acquire a causal relationship that neither the film nor the maker has asserted and that the viewer supplies without noticing. Music is the least defensible of the instruments and the most used, since it instructs the audience how to feel about a face before the face has said anything. None of this is avoidable. A film without selection is not a film, and the demand that documentary be neutral rests on a confusion about what a camera does. The honest position is therefore not neutrality but disclosure, and the forms it can take are more varied than is usually recognized. A maker can show the question as well as the answer. A maker can leave in the moment where a subject asks to stop. A maker can decline to use music under an interview, which is a decision the audience will not register consciously and which changes what they are able to think. What distinguishes the documentaries that survive is rarely their subject and almost always this: the viewer finishes with a clear sense of having been shown an argument, rather than a clear sense of having seen what happened. Makers who achieve the second effect are usually praised for it, which is a fair description of the problem. The reviewer who writes that a film simply lets the facts speak has paid the maker the highest available compliment and identified, without meaning to, the exact point at which the audience stopped being able to argue back. Facts do not speak. Somebody chose the order, and the better that choice was, the less visible it is.",
+      "glossary": [
+        { "w": "documentary", "tr": "belgesel" },
+        { "w": "timeline", "tr": "zaman çizgisi" },
+        { "w": "substantially", "tr": "esas itibarıyla" },
+        { "w": "deception", "tr": "aldatma" },
+        { "w": "reduction", "tr": "indirgeme" },
+        { "w": "inspect", "tr": "denetlemek" },
+        { "w": "sequence", "tr": "sıralama" },
+        { "w": "adjacently", "tr": "yan yana" },
+        { "w": "causal", "tr": "nedensel" },
+        { "w": "asserted", "tr": "ileri sürülmüş" },
+        { "w": "instruments", "tr": "araçlar" },
+        { "w": "instructs", "tr": "talimat verir" },
+        { "w": "neutrality", "tr": "tarafsızlık" },
+        { "w": "disclosure", "tr": "açık etme, beyan" },
+        { "w": "register", "tr": "fark etmek, kaydetmek" }
+      ],
+      "questions": [
+        { "q": "How can a documentary be untrue without false statements?", "options": ["Through the decisions made in reducing the material", "By inventing scenes", "By using actors", "By changing the sound"], "answer": 0, "note": "\"Every decision in that reduction is an argument about what the material means.\"" },
+        { "q": "What does sequence do?", "options": ["Creates a causal relationship the viewer supplies", "Makes the film shorter", "Clarifies the timeline", "Protects the subject"], "answer": 0, "note": "\"Two events placed adjacently acquire a causal relationship.\"" },
+        { "q": "Why is music the least defensible instrument?", "options": ["It instructs the audience how to feel before anything is said", "It is expensive", "It hides the words", "It is always borrowed"], "answer": 0, "note": "\"It instructs the audience how to feel about a face before the face has said anything.\"" },
+        { "q": "What is the honest position?", "options": ["Disclosure rather than neutrality", "Strict neutrality", "Refusing to edit", "Showing all the material"], "answer": 0, "note": "\"The honest position is therefore not neutrality but disclosure.\"" },
+        { "q": "What distinguishes documentaries that survive?", "options": ["The viewer knows they were shown an argument", "Their subject matter", "Their length", "Their budget"], "answer": 0, "note": "\"The viewer finishes with a clear sense of having been shown an argument.\"" }
+      ]
+    }
+  ]
+}

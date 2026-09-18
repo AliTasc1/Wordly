@@ -48,7 +48,7 @@
       ],
       "questions": [
         { "q": "When does Rifat finish?", "options": ["Half past seven", "Five o'clock", "Nine o'clock", "Midday"], "answer": 0, "note": "\"He starts at five and finishes at half past seven.\"" },
-        { "q": "What did he do before?", "options": ["Worked in an office", "Worked as a baker", "Ran a shop", "Taught at a school"], "answer": 0, "note": "\"He worked in an office for thirty years.\"" },
+        { "q": "What was his job before he retired?", "options": ["He worked in an office", "Worked as a baker", "Ran a shop", "Taught at a school"], "answer": 0, "note": "\"He worked in an office for thirty years.\"" },
         { "q": "Why did he continue after the first year?", "options": ["His wife ate the bread without complaining", "The bread was good", "Neighbors paid him", "He had nothing else to do"], "answer": 0, "note": "\"His wife ate it without complaining, which he says was the reason he continued.\"" },
         { "q": "How do the neighbors collect the bread?", "options": ["They leave a bag on his door handle", "They knock every morning", "He delivers it", "They meet him at five"], "answer": 0, "note": "\"Two neighbors leave a cloth bag on his door handle.\"" },
         { "q": "What is his honest reason?", "options": ["He needed a reason to get up", "He wanted to earn money", "He wanted to learn a skill", "His wife asked him to"], "answer": 0, "note": "Son cümle." }

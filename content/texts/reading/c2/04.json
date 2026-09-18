@@ -1,0 +1,177 @@
+{
+  "_meta": { "batch": "c2-reading-04", "level": "C2", "range": "Parça 16-20" },
+  "items": [
+    {
+      "id": "c2-r-16",
+      "level": "C2",
+      "order": 16,
+      "kind": "reading",
+      "title": "Uzmana danışmanın maliyeti",
+      "titleEn": "Asking Somebody Who Knows",
+      "minutes": 7,
+      "names": [],
+      "text": "A person facing a decision outside their competence is advised to consult an expert, and the advice is sound as far as it goes. What it omits is that the question being asked and the question the expert is equipped to answer are frequently not the same, and that neither party is well placed to notice the gap. A surgeon asked whether an operation is possible will answer a question about surgery. The question the patient meant was whether the remaining years would be better with the operation or without it, and that question contains a great deal that the surgeon has no special access to: what the patient can tolerate, what they want their remaining time to contain, how much they fear one kind of decline relative to another. The surgeon is not overreaching by answering; they have answered exactly what was asked. The failure occurred at the point of translation, and it is invisible because both sides believe the conversation went well. This has a practical consequence that runs against the usual advice about seeking second opinions. A second expert in the same discipline will very often confirm the first, not because the first was right about the patient's life but because both are answering the technical question correctly. The useful second opinion is frequently from a different discipline entirely, or from somebody who has made the same decision and lived with it. Professions differ markedly in how well they handle this. Some have built the translation into the encounter, training practitioners to ask what the person is hoping the decision will achieve before describing what is technically available. Others treat such questions as outside their remit, which is defensible as a description of their training and leaves the most consequential part of the decision to whoever happens to be in the room.",
+      "glossary": [
+        { "w": "competence", "tr": "yetkinlik alanı" },
+        { "w": "omits", "tr": "atlar" },
+        { "w": "omit", "tr": "atlamak" },
+        { "w": "equipped", "tr": "donanımlı" },
+        { "w": "surgeon", "tr": "cerrah" },
+        { "w": "tolerate", "tr": "katlanmak" },
+        { "w": "decline", "tr": "gerileme" },
+        { "w": "overreaching", "tr": "haddini aşmak" },
+        { "w": "translation", "tr": "çeviri, aktarım" },
+        { "w": "discipline", "tr": "disiplin, alan" },
+        { "w": "markedly", "tr": "belirgin biçimde" },
+        { "w": "practitioners", "tr": "uygulayıcılar" },
+        { "w": "remit", "tr": "görev alanı" },
+        { "w": "consequential", "tr": "sonuç doğuran, önemli" }
+      ],
+      "questions": [
+        { "q": "What does the usual advice omit?", "options": ["The question asked and the one answered may differ", "Experts are expensive", "Experts disagree", "Experts are rare"], "answer": 0, "note": "\"The question being asked and the question the expert is equipped to answer are frequently not the same.\"" },
+        { "q": "What does the patient's real question contain?", "options": ["Things the surgeon has no special access to", "Only technical facts", "Legal matters", "Financial detail"], "answer": 0, "note": "\"That question contains a great deal that the surgeon has no special access to.\"" },
+        { "q": "Why is the failure invisible?", "options": ["Both sides believe the conversation went well", "Nobody records it", "The patient says nothing", "It happens later"], "answer": 0, "note": "\"It is invisible because both sides believe the conversation went well.\"" },
+        { "q": "Why does a second opinion often confirm the first?", "options": ["Both answer the technical question correctly", "Experts protect each other", "The case is simple", "They share records"], "answer": 0, "note": "\"Both are answering the technical question correctly.\"" },
+        { "q": "What do the better professions do?", "options": ["Ask what the person hopes the decision will achieve", "Refuse to advise", "Offer written guarantees", "Send the patient elsewhere"], "answer": 0, "note": "\"Training practitioners to ask what the person is hoping the decision will achieve.\"" }
+      ]
+    },
+    {
+      "id": "c2-r-17",
+      "level": "C2",
+      "order": 17,
+      "kind": "reading",
+      "title": "Kamusal alanın özelleşmesi",
+      "titleEn": "The Square That Belongs to Somebody",
+      "minutes": 7,
+      "names": [],
+      "text": "A great deal of what appears to be public space in modern cities is privately owned, and the distinction is invisible until it becomes relevant. The paving is continuous, the benches are comfortable, the planting is better maintained than anything the city manages, and there is no sign at the boundary. What differs is the rule. A genuinely public square is governed by law, which is slow, contested and appealable. Its privately owned equivalent is governed by the conditions of entry, which can forbid photography, assembly, sleeping, skateboarding or remaining without making a purchase, and which can be changed by the owner without notice or explanation. Nothing about this is concealed; it is simply not announced, and almost nobody reads the conditions of entry to a paved area. Defenders of the arrangement make a reasonable point. Cities acquired these spaces at no cost to the public purse, and they are cleaner and safer than what preceded them, which was frequently a car park. The objection is not that the spaces are bad but that the transfer was not described. A city that sells the right to make rules in the center of itself has done something that a city which builds a square has not, and residents who experience the two as identical have not consented to the difference because they were never told there was one. The reform that has been tried in several places is modest and revealing in its reception. It requires nothing more than a sign at each entrance stating who owns the ground and listing what is forbidden. Owners have resisted this with a force entirely out of proportion to the cost of a sign, which tells you what the sign would cost them. The point is not that the rules are unreasonable. Most of them are the rules any careful landlord would write, and a city square governed by law also forbids a great deal. The point is that one set was arrived at through a process a resident can enter and the other was not, and the difference only becomes visible on the day somebody wants to stand in the square and say something the owner would rather not host.",
+      "glossary": [
+        { "w": "paving", "tr": "döşeme, kaldırım taşı" },
+        { "w": "boundary", "tr": "sınır" },
+        { "w": "contested", "tr": "itiraz edilebilir" },
+        { "w": "appealable", "tr": "temyiz edilebilir" },
+        { "w": "equivalent", "tr": "muadil" },
+        { "w": "assembly", "tr": "toplanma" },
+        { "w": "concealed", "tr": "gizlenmiş" },
+        { "w": "purse", "tr": "kese, bütçe" },
+        { "w": "preceded", "tr": "önce gelen" },
+        { "w": "consented", "tr": "rıza gösterdi" },
+        { "w": "reform", "tr": "reform, düzenleme" },
+        { "w": "reception", "tr": "karşılanış" },
+        { "w": "exempt", "tr": "muaf tutmak" }
+      ],
+      "questions": [
+        { "q": "What makes the distinction invisible?", "options": ["Nothing marks the boundary", "The spaces are hidden", "The law is secret", "Owners are anonymous"], "answer": 0, "note": "\"There is no sign at the boundary.\"" },
+        { "q": "How is a genuinely public square governed?", "options": ["By law, which is contested and appealable", "By the city's owner", "By conditions of entry", "By the police alone"], "answer": 0, "note": "\"A genuinely public square is governed by law.\"" },
+        { "q": "What is the defenders' reasonable point?", "options": ["The spaces cost the public nothing and replaced car parks", "The rules are fair", "Nobody uses public squares", "The law is too slow"], "answer": 0, "note": "\"Cities acquired these spaces at no cost to the public purse.\"" },
+        { "q": "What is the writer's actual objection?", "options": ["The transfer was never described", "The spaces are unpleasant", "The owners are foreign", "The rules are illegal"], "answer": 0, "note": "\"The objection is not that the spaces are bad but that the transfer was not described.\"" },
+        { "q": "What does resistance to the sign reveal?", "options": ["What the sign would cost the owners", "That signs are expensive", "That the law forbids signs", "That nobody would read it"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-18",
+      "level": "C2",
+      "order": 18,
+      "kind": "reading",
+      "title": "Bilimsel makalenin biçimi",
+      "titleEn": "The Paper That Hides Its Own History",
+      "minutes": 7,
+      "names": [],
+      "text": "The standard scientific paper describes a process that did not occur. It opens with a question, proceeds to a method chosen to answer it, reports what was found and concludes. The actual work almost never proceeded in that order. The question was frequently arrived at after the results were in, the method was partly determined by what equipment was free that month, and several lines of enquiry were abandoned without appearing anywhere in the published account. None of this is fraud. The convention exists because the reconstructed version is easier to evaluate: a reader wishing to know whether the conclusion follows from the evidence is not helped by a chronological account of eighteen months of confusion. The cost is that the form conceals precisely the information needed to judge how much the result should be believed. A hypothesis formed before the data was collected and one formed after it have very different evidential weight, and the paper makes them typographically identical. The reforms that address this are recent and their adoption is uneven. Pre-registration, in which the question and the analysis are deposited publicly before the data exists, separates the two cases cleanly and has produced an instructive result: in fields where it has been adopted, the proportion of studies reporting the effect they set out to find has fallen sharply. This was predicted by its advocates and treated as an objection by its opponents, and both were describing the same number. What the convention protected was not dishonesty but a form of self-deception available to entirely honest people, which is harder to argue against and considerably more common. The objection most often raised is that pre-registration suits some fields and not others, and this is correct. Work that sets out to find what is there rather than to test a stated expectation cannot be registered in advance without destroying the thing that makes it valuable. The answer is not to exempt such work but to label it, so that a reader knows which kind of claim is being made before deciding how much weight to give it.",
+      "glossary": [
+        { "w": "proceeds", "tr": "ilerler" },
+        { "w": "enquiry", "tr": "araştırma yolu" },
+        { "w": "abandoned", "tr": "terk edilmiş" },
+        { "w": "fraud", "tr": "sahtekârlık" },
+        { "w": "convention", "tr": "yerleşik biçim" },
+        { "w": "reconstructed", "tr": "yeniden kurulmuş" },
+        { "w": "chronological", "tr": "kronolojik" },
+        { "w": "conceals", "tr": "gizler" },
+        { "w": "hypothesis", "tr": "hipotez" },
+        { "w": "hypotheses", "tr": "hipotezler" },
+        { "w": "evidential", "tr": "kanıt değeri taşıyan" },
+        { "w": "typographically", "tr": "dizgi bakımından" },
+        { "w": "pre-registration", "tr": "ön kayıt" },
+        { "w": "exempt", "tr": "muaf tutmak" },
+        { "w": "deposited", "tr": "tevdi edilmiş, bırakılmış" },
+        { "w": "advocates", "tr": "savunucular" },
+        { "w": "self-deception", "tr": "kendini kandırma" }
+      ],
+      "questions": [
+        { "q": "What does the standard paper describe?", "options": ["A process that did not occur", "The exact order of the work", "Only the failures", "The funding history"], "answer": 0, "note": "\"The standard scientific paper describes a process that did not occur.\"" },
+        { "q": "Why does the convention exist?", "options": ["The reconstructed version is easier to evaluate", "It saves space", "Journals require it", "It hides mistakes"], "answer": 0, "note": "\"Because the reconstructed version is easier to evaluate.\"" },
+        { "q": "What is the cost of the form?", "options": ["It conceals what is needed to judge the result", "It is too long", "It is hard to read", "It excludes data"], "answer": 0, "note": "\"The form conceals precisely the information needed to judge how much the result should be believed.\"" },
+        { "q": "What does pre-registration separate?", "options": ["Hypotheses formed before and after the data", "Authors and reviewers", "Method and result", "Funding and findings"], "answer": 0, "note": "\"Separates the two cases cleanly.\"" },
+        { "q": "What was the convention protecting?", "options": ["Self-deception available to honest people", "Deliberate fraud", "Commercial secrets", "Slow researchers"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "c2-r-19",
+      "level": "C2",
+      "order": 19,
+      "kind": "reading",
+      "title": "Sadeliğin pahalılığı",
+      "titleEn": "Why Simple Things Cost More",
+      "minutes": 7,
+      "names": [],
+      "text": "A product with three buttons is frequently more expensive to develop than one with thirty, and the reason is not materials. Every feature that does not appear in the finished object represents a decision that somebody had to make and then defend, and the defense is structurally harder than the alternative. A feature that is included can be justified by the person who wanted it; a feature that is excluded must be refused by somebody willing to say no to a colleague who has a reason. Multiply this across four hundred proposals and the organizations that produce simple objects are not the ones with better taste but the ones that have arranged for refusal to be somebody's job. There is a further cost that is easier to overlook. Removing a control does not remove the underlying decision it represented; it relocates the decision into the object, which must now make it automatically and correctly in circumstances its designers did not foresee. A device with a manual setting fails visibly and is adjusted by its owner. A device that decides for itself fails invisibly and is described by its owner as being broken for no reason. Simplicity of this kind therefore transfers work from the user to the engineer, and the transfer is only worthwhile where the engineer genuinely knows more about the situation than the person holding the object, which is a narrower set of cases than the industry's enthusiasm suggests. The products that age well tend to be those that removed the controls nobody used and kept the one that everybody eventually needs, and identifying which is which requires the kind of long observation that almost nobody funds. The information exists, in the sense that every repair shop and every support line knows exactly which control the customer is calling about. It is simply held at the point furthest from the people making the decision, and by an organization that classifies it as a cost rather than as the only honest account of how the object is actually used.",
+      "glossary": [
+        { "w": "materials", "tr": "malzemeler" },
+        { "w": "structurally", "tr": "yapısal olarak" },
+        { "w": "excluded", "tr": "çıkarılmış" },
+        { "w": "refusal", "tr": "reddetme" },
+        { "w": "relocates", "tr": "yerini değiştirir" },
+        { "w": "automatically", "tr": "otomatik olarak" },
+        { "w": "foresee", "tr": "öngörmek" },
+        { "w": "manual", "tr": "elle kullanılan" },
+        { "w": "adjusted", "tr": "ayarlanan" },
+        { "w": "simplicity", "tr": "sadelik" },
+        { "w": "transfers", "tr": "aktarır" },
+        { "w": "enthusiasm", "tr": "heves" },
+        { "w": "observation", "tr": "gözlem" }
+      ],
+      "questions": [
+        { "q": "Why is a simple product expensive to develop?", "options": ["Every excluded feature had to be refused by somebody", "The materials cost more", "It takes longer to build", "Fewer people can make it"], "answer": 0, "note": "\"A feature that is excluded must be refused by somebody willing to say no.\"" },
+        { "q": "What distinguishes organizations that make simple objects?", "options": ["Refusal is somebody's job", "They have better taste", "They have more money", "They have fewer staff"], "answer": 0, "note": "\"The ones that have arranged for refusal to be somebody's job.\"" },
+        { "q": "What does removing a control do?", "options": ["Relocates the decision into the object", "Removes the decision entirely", "Makes the product cheaper", "Reduces failures"], "answer": 0, "note": "\"It relocates the decision into the object.\"" },
+        { "q": "How does an automatic device fail?", "options": ["Invisibly, and seems broken for no reason", "Loudly", "Only under heavy use", "Exactly like a manual one"], "answer": 0, "note": "\"A device that decides for itself fails invisibly.\"" },
+        { "q": "When is the transfer worthwhile?", "options": ["When the engineer genuinely knows more than the user", "Always", "When the product is cheap", "When users complain"], "answer": 0, "note": "\"Only worthwhile where the engineer genuinely knows more about the situation.\"" }
+      ]
+    },
+    {
+      "id": "c2-r-20",
+      "level": "C2",
+      "order": 20,
+      "kind": "reading",
+      "title": "Tanıklığın yazıya geçirilmesi",
+      "titleEn": "Taking Down What Was Said",
+      "minutes": 7,
+      "names": [],
+      "text": "An oral account becomes a document through a series of small operations, each defensible and each subtractive. Hesitation is removed, since a transcript peppered with pauses is unreadable and the pauses were not the point. Repetition is condensed, on the reasonable ground that the speaker said the same thing three times. Grammar is corrected, out of respect, so that the speaker does not appear on the page less articulate than they were in the room. Digression is cut, because the account has to be about something. Every one of these decisions improves the document and removes evidence, and the evidence removed is disproportionately about the speaker's relationship to what they are describing. A person who hesitates before a date is telling you something about the date. A person who repeats a sentence three times is telling you which sentence matters. Archives that have understood this have moved, where resources allow, to keeping the recording as the record and treating the transcript as a finding aid rather than a substitute. The difficulty is that a recording is almost never consulted. A researcher with four hundred interviews and a deadline reads transcripts, and will continue to, and the honest response to that is not to demand better habits from researchers but to design the transcript so that its own limitations are legible: marking where material was cut, preserving hesitation at the points where it carries weight, and stating at the head of the document what conventions were applied. None of this recovers what was lost. It does tell the reader that something was. That is a smaller claim than the one usually made for good practice in this field, and it is the one that survives contact with a deadline. A reader who knows that a document is partial will read it differently, ask different questions of it, and go to the recording on the two occasions out of four hundred when the answer actually matters.",
+      "glossary": [
+        { "w": "oral", "tr": "sözlü" },
+        { "w": "subtractive", "tr": "eksilten" },
+        { "w": "hesitation", "tr": "duraksama" },
+        { "w": "transcript", "tr": "deşifre metni" },
+        { "w": "peppered", "tr": "serpiştirilmiş" },
+        { "w": "condensed", "tr": "kısaltılmış" },
+        { "w": "articulate", "tr": "kendini iyi ifade eden" },
+        { "w": "digression", "tr": "konu dışına çıkma" },
+        { "w": "disproportionately", "tr": "orantısız biçimde" },
+        { "w": "archives", "tr": "arşivler" },
+        { "w": "finding aid", "tr": "bulma aracı, dizin" },
+        { "w": "substitute", "tr": "yerine geçen" },
+        { "w": "consulted", "tr": "başvurulan" },
+        { "w": "legible", "tr": "okunabilir" },
+        { "w": "conventions", "tr": "uygulanan kurallar" }
+      ],
+      "questions": [
+        { "q": "What do the small operations have in common?", "options": ["Each is defensible and each removes something", "Each is dishonest", "Each adds material", "Each is accidental"], "answer": 0, "note": "\"Each defensible and each subtractive.\"" },
+        { "q": "What does hesitation before a date indicate?", "options": ["Something about the date", "Nervousness only", "Poor memory", "Nothing at all"], "answer": 0, "note": "\"A person who hesitates before a date is telling you something about the date.\"" },
+        { "q": "What have some archives moved to?", "options": ["Keeping the recording as the record", "Destroying transcripts", "Refusing interviews", "Editing more heavily"], "answer": 0, "note": "\"Keeping the recording as the record.\"" },
+        { "q": "What is the difficulty with recordings?", "options": ["They are almost never consulted", "They are expensive", "They degrade", "They cannot be searched at all"], "answer": 0, "note": "\"A recording is almost never consulted.\"" },
+        { "q": "What does the writer propose instead?", "options": ["Make the transcript's limitations legible", "Ban transcripts", "Cut the interviews short", "Give researchers new rules"], "answer": 0, "note": "\"Design the transcript so that its own limitations are legible.\"" }
+      ]
+    }
+  ]
+}

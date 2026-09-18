@@ -280,6 +280,21 @@ def british_z(token: str) -> str | None:
     return None
 
 
+# -our/-or farkı da düzenli. Tabloyu tek tek doldurmak güvenilmez çıktı:
+# "rigour" listedeydi, "vigour" değildi ve denetimden kaçtı. Kural iki
+# korumayla güvenli: buraya yalnızca sözlükte karşılığı bulunamayan kelimeler
+# geliyor (four, tour, flour, hour zaten çözülüyor) ve öneri ancak gerçekten
+# sözlükteyse hata sayılıyor (scour, devour, contour boşta kalıyor).
+BRITISH_OUR = re.compile(r"our(s|ed|ing|able|less)?$")
+
+
+def british_our(token: str) -> str | None:
+    """vigour → vigor, tumour → tumor gibi düzenli farkı bulur."""
+    if len(token) > 5 and BRITISH_OUR.search(token):
+        return BRITISH_OUR.sub(lambda m: "or" + (m.group(1) or ""), token)
+    return None
+
+
 def strip_once(token: str) -> list[str]:
     """Bir turluk ek ve ön ek soyma."""
     forms = []
@@ -402,6 +417,10 @@ def analyse(text: str, level: str, levels: dict[str, str], known: set[str]) -> d
             z_form = british_z(token)
             if z_form and any(f in levels for f in candidates(z_form)):
                 british[token] = z_form
+                continue
+            our_form = british_our(token)
+            if our_form and any(f in levels for f in candidates(our_form)):
+                british[token] = our_form
                 continue
 
         # Sözlükçe yalın biçimi veriyor (gym), metin çekimli kullanıyor (gyms).

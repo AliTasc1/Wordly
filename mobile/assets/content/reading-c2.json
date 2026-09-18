@@ -1288,5 +1288,1301 @@
     "note": "Son cümle."
    }
   ]
+ },
+ {
+  "id": "c2-r-11",
+  "level": "C2",
+  "order": 11,
+  "kind": "reading",
+  "title": "Anonimliğin iki yüzü",
+  "titleEn": "The Case For and Against Anonymity",
+  "minutes": 7,
+  "names": [],
+  "text": "The argument that anonymity degrades public conversation has an obvious empirical basis and a less obvious weakness. The basis is that people say things under a false name they would not say under their own, and anybody who has read a comment section understands the point without further evidence. The weakness is that the same property is what allows a nurse to describe conditions on a ward, a citizen of an unfriendly state to report what is happening in it, and a person with a diagnosis to ask a question they could not ask in their own town. Proposals to require real names therefore trade one harm for another, and the trade is usually presented as though only one side of it existed. It is also worth noticing what the proposals would not achieve. Studies of platforms that require verified identity find that abuse falls but does not disappear, and that the abuse which remains is disproportionately committed by people who are entirely comfortable being identified, because their community approves. The mechanism that restrains most people is not the fear of exposure but the presence of an audience whose opinion they value, and a real-name policy does nothing about a person whose audience shares their view. What has worked better, where it has been tried, is stranger and less satisfying: not identifying the speaker but slowing the speech. Platforms that impose a delay between writing and publishing, or that require a comment to be read once before it can be posted, report reductions comparable to identity requirements and without the cost to the nurse. The finding is unwelcome to both camps in the argument, which is usually a sign that it is measuring something real. It suggests that most of what we call cruelty online is not a settled disposition but a momentary one, and that the design question is not who is speaking but how quickly they were allowed to.",
+  "glossary": [
+   {
+    "w": "anonymity",
+    "tr": "anonimlik"
+   },
+   {
+    "w": "degrades",
+    "tr": "bozar, düşürür"
+   },
+   {
+    "w": "empirical",
+    "tr": "gözleme dayalı"
+   },
+   {
+    "w": "ward",
+    "tr": "hastane koğuşu"
+   },
+   {
+    "w": "diagnosis",
+    "tr": "teşhis"
+   },
+   {
+    "w": "verified",
+    "tr": "doğrulanmış"
+   },
+   {
+    "w": "abuse",
+    "tr": "hakaret, taciz"
+   },
+   {
+    "w": "disproportionately",
+    "tr": "orantısız biçimde"
+   },
+   {
+    "w": "restrains",
+    "tr": "dizginler"
+   },
+   {
+    "w": "exposure",
+    "tr": "ifşa"
+   },
+   {
+    "w": "impose",
+    "tr": "dayatmak"
+   },
+   {
+    "w": "reductions",
+    "tr": "azalmalar"
+   },
+   {
+    "w": "camps",
+    "tr": "kamplar, taraflar"
+   },
+   {
+    "w": "cruelty",
+    "tr": "zalimlik"
+   },
+   {
+    "w": "disposition",
+    "tr": "mizaç, eğilim"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the weakness of the anti-anonymity argument?",
+    "options": [
+     "The same property protects people who need it",
+     "It is illegal",
+     "Nobody uses false names",
+     "The evidence is fabricated"
+    ],
+    "answer": 0,
+    "note": "\"The same property is what allows a nurse to describe conditions on a ward.\""
+   },
+   {
+    "q": "What do studies of verified platforms find?",
+    "options": [
+     "Abuse rises",
+     "Abuse disappears entirely",
+     "Nothing measurable",
+     "Abuse falls but does not disappear"
+    ],
+    "answer": 3,
+    "note": "\"Abuse falls but does not disappear.\""
+   },
+   {
+    "q": "Who commits the remaining abuse?",
+    "options": [
+     "Automated accounts",
+     "New users",
+     "People comfortable being identified",
+     "Anonymous accounts"
+    ],
+    "answer": 2,
+    "note": "\"Disproportionately committed by people who are entirely comfortable being identified.\""
+   },
+   {
+    "q": "What actually restrains most people?",
+    "options": [
+     "Platform rules",
+     "Fear of exposure",
+     "Fear of the law",
+     "An audience whose opinion they value"
+    ],
+    "answer": 3,
+    "note": "\"The presence of an audience whose opinion they value.\""
+   },
+   {
+    "q": "What has worked better?",
+    "options": [
+     "Stricter platform rules",
+     "Charging for accounts",
+     "Slowing the speech rather than identifying the speaker",
+     "Banning comments"
+    ],
+    "answer": 2,
+    "note": "\"Not identifying the speaker but slowing the speech.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-r-12",
+  "level": "C2",
+  "order": 12,
+  "kind": "reading",
+  "title": "Ölçülemeyen işin değeri",
+  "titleEn": "The Work That Leaves No Trace",
+  "minutes": 7,
+  "names": [],
+  "text": "Certain kinds of labor are recognized only by their absence. A building that does not catch fire, a system that is not attacked, a conflict that does not escalate: in each case the outcome is nothing happening, and the people responsible for that nothing occupy an awkward position in any organization that measures output. Their success produces no artifact. Worse, sustained success actively undermines the case for continuing to fund them, since a decade without incident is readily interpreted as evidence that the risk was overstated in the first place. The pattern is so reliable that it can be stated as a rule: preventive work is cut in proportion to how well it has been performed. What makes this more than an administrative curiosity is that the people doing the work understand the dynamic perfectly well, and it shapes their conduct in ways that are rarely acknowledged. A safety team that is never visible has no constituency when the budget is reviewed, so competent teams learn to generate visible activity — reports, exercises, briefings — whose primary function is to demonstrate existence rather than to reduce risk. This is not dishonesty. It is the rational response to an environment that will not otherwise notice them, and the cost is that some proportion of the available effort is diverted from the work into the documentation of the work. The organizations that have escaped this trap are few and share an unusual feature. They have made the counterfactual explicit, requiring the preventive function to state in advance what it expects to prevent and at what rate, so that a quiet year can be recognized as a result rather than mistaken for an absence of need. It is a clumsy instrument and it fails in both directions. It remains the only serious attempt anybody has made to pay for something that, when it works, looks exactly like nothing at all.",
+  "glossary": [
+   {
+    "w": "labor",
+    "tr": "emek"
+   },
+   {
+    "w": "escalate",
+    "tr": "tırmanmak"
+   },
+   {
+    "w": "artifact",
+    "tr": "somut ürün"
+   },
+   {
+    "w": "sustained",
+    "tr": "sürekli"
+   },
+   {
+    "w": "undermines",
+    "tr": "zayıflatır"
+   },
+   {
+    "w": "overstated",
+    "tr": "abartılmış"
+   },
+   {
+    "w": "preventive",
+    "tr": "önleyici"
+   },
+   {
+    "w": "curiosity",
+    "tr": "tuhaflık, merak konusu"
+   },
+   {
+    "w": "dynamic",
+    "tr": "işleyiş, dinamik"
+   },
+   {
+    "w": "constituency",
+    "tr": "destekçi kitle"
+   },
+   {
+    "w": "briefings",
+    "tr": "bilgilendirmeler"
+   },
+   {
+    "w": "diverted",
+    "tr": "saptırılmış"
+   },
+   {
+    "w": "counterfactual",
+    "tr": "olmasaydı ne olurdu senaryosu"
+   },
+   {
+    "w": "explicit",
+    "tr": "açık, sarih"
+   },
+   {
+    "w": "clumsy",
+    "tr": "hantal, kaba"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How is this kind of work recognized?",
+    "options": [
+     "Only by its absence",
+     "By its reports",
+     "By its staff numbers",
+     "By its cost"
+    ],
+    "answer": 0,
+    "note": "\"Certain kinds of labor are recognized only by their absence.\""
+   },
+   {
+    "q": "What does sustained success do?",
+    "options": [
+     "Attracts new staff",
+     "Raises the risk",
+     "Undermines the case for funding the work",
+     "Guarantees more funding"
+    ],
+    "answer": 2,
+    "note": "\"Sustained success actively undermines the case for continuing to fund them.\""
+   },
+   {
+    "q": "Why do competent teams generate visible activity?",
+    "options": [
+     "To impress the public",
+     "To demonstrate existence in a system that would not notice them",
+     "To meet legal rules",
+     "To train new staff"
+    ],
+    "answer": 1,
+    "note": "\"Whose primary function is to demonstrate existence rather than to reduce risk.\""
+   },
+   {
+    "q": "What is the cost of that response?",
+    "options": [
+     "Budgets are frozen",
+     "Effort moves from the work to documenting it",
+     "Risk rises sharply",
+     "Staff leave"
+    ],
+    "answer": 1,
+    "note": "\"Some proportion of the available effort is diverted from the work into the documentation.\""
+   },
+   {
+    "q": "What do the few successful organizations do?",
+    "options": [
+     "Make the counterfactual explicit in advance",
+     "Hide the team",
+     "Double the budget",
+     "Stop measuring"
+    ],
+    "answer": 0,
+    "note": "\"They have made the counterfactual explicit.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-r-13",
+  "level": "C2",
+  "order": 13,
+  "kind": "reading",
+  "title": "Yasanın geriye yürümesi",
+  "titleEn": "Judging the Past by Present Rules",
+  "minutes": 7,
+  "names": [],
+  "text": "There is a principle, close to universal in developed legal systems, that a person may not be punished under a law that did not exist when they acted. Its justification is not sentimental. A rule that can be written afterwards is not a rule at all but an instrument, and a citizen who cannot know in advance what is forbidden cannot meaningfully choose to obey. The principle nonetheless produces outcomes that are difficult to accept, and the difficulty is not resolved by restating the principle more firmly. Consider a practice that was lawful, widely known, and is now understood to have caused serious harm. The people responsible cannot be prosecuted, and the argument that they should be is not stupid: they knew what they were doing, the harm was foreseeable to anybody who looked, and the lawfulness of the practice was itself the product of their influence over the people writing the law. What the principle protects, in such a case, is precisely the person least deserving of protection. Legal systems have developed partial answers, none of them satisfying. Civil liability, which operates on a different standard and can reach conduct that was not criminal. Public inquiries, which establish a record without imposing a penalty and are routinely dismissed as inadequate by the people they are meant to satisfy. Disqualification from future office, which is preventive rather than punitive and attracts the objection that it is punishment under another name. The honest account is that the principle costs something and is worth its cost, and that the cost falls unevenly on people who have no say in the matter. Systems that pretend otherwise, by quietly stretching definitions until an old act becomes a current offence, buy a single satisfying outcome at the price of the thing that made the system worth defending.",
+  "glossary": [
+   {
+    "w": "sentimental",
+    "tr": "duygusal"
+   },
+   {
+    "w": "justification",
+    "tr": "gerekçe"
+   },
+   {
+    "w": "instrument",
+    "tr": "araç"
+   },
+   {
+    "w": "forbidden",
+    "tr": "yasak"
+   },
+   {
+    "w": "prosecuted",
+    "tr": "kovuşturulan"
+   },
+   {
+    "w": "foreseeable",
+    "tr": "öngörülebilir"
+   },
+   {
+    "w": "lawfulness",
+    "tr": "hukuka uygunluk"
+   },
+   {
+    "w": "liability",
+    "tr": "hukuki sorumluluk"
+   },
+   {
+    "w": "conduct",
+    "tr": "davranış, eylem"
+   },
+   {
+    "w": "inquiries",
+    "tr": "soruşturmalar"
+   },
+   {
+    "w": "penalty",
+    "tr": "ceza"
+   },
+   {
+    "w": "inadequate",
+    "tr": "yetersiz"
+   },
+   {
+    "w": "disqualification",
+    "tr": "görevden men"
+   },
+   {
+    "w": "punitive",
+    "tr": "cezalandırıcı"
+   },
+   {
+    "w": "offence",
+    "tr": "suç"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What is the justification for the principle?",
+    "options": [
+     "It reduces court costs",
+     "It is traditional",
+     "A citizen must be able to know in advance what is forbidden",
+     "It protects the innocent"
+    ],
+    "answer": 2,
+    "note": "\"A citizen who cannot know in advance what is forbidden cannot meaningfully choose to obey.\""
+   },
+   {
+    "q": "Why is the opposing argument not stupid?",
+    "options": [
+     "The harm was foreseeable and the law reflected their influence",
+     "The law was secret",
+     "Nobody was harmed",
+     "The practice was hidden"
+    ],
+    "answer": 0,
+    "note": "\"The lawfulness of the practice was itself the product of their influence.\""
+   },
+   {
+    "q": "What does the principle protect in such cases?",
+    "options": [
+     "The victims",
+     "The state",
+     "Future citizens",
+     "The person least deserving of protection"
+    ],
+    "answer": 3,
+    "note": "\"What the principle protects... is precisely the person least deserving of protection.\""
+   },
+   {
+    "q": "What objection is raised against disqualification?",
+    "options": [
+     "That it is illegal",
+     "That it is too weak",
+     "That it is expensive",
+     "That it is punishment under another name"
+    ],
+    "answer": 3,
+    "note": "\"Attracts the objection that it is punishment under another name.\""
+   },
+   {
+    "q": "What is the writer's honest account?",
+    "options": [
+     "Inquiries solve the problem",
+     "The principle should be abandoned",
+     "The principle costs something and is worth its cost",
+     "The cost is imaginary"
+    ],
+    "answer": 2,
+    "note": "\"The principle costs something and is worth its cost.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-r-14",
+  "level": "C2",
+  "order": 14,
+  "kind": "reading",
+  "title": "Yaşlanan nüfusun sessiz hesabı",
+  "titleEn": "The Arithmetic Nobody Disputes",
+  "minutes": 7,
+  "names": [],
+  "text": "Of all the large problems facing wealthy states, demographic ageing is the one about which there is least genuine disagreement and least useful action, and the two facts are connected. The arithmetic is not contested by anybody: a population in which the ratio of working-age people to retired people falls steadily will, absent some other change, find that the promises made to the second group cannot be met from the contributions of the first. Every serious participant accepts this. What is disputed is which of four unpopular adjustments to make, and since each has a clearly identifiable group of losers who exist now, while the beneficiaries are diffuse and largely in the future, the stable political equilibrium is to describe the problem accurately and postpone. The four adjustments are familiar. Raise the retirement age, which falls hardest on manual workers whose bodies are the reason the age was set where it was. Raise contributions, which reduces the income of people currently working. Reduce payments, which breaks a promise that people arranged their lives around. Increase the number of contributors through immigration, which is the only option that expands rather than divides the total, and the one that has proved least available politically in most of the countries that need it most. What is genuinely unusual about the debate is the relationship between knowledge and action. This is not a case of disputed science, competing models or hidden data. The projections have been published, repeatedly, for forty years, and have proved conservative. A political system that cannot act on a forecast this uncontested is not suffering from insufficient information, and the persistent proposal to commission further study is best understood not as a request for evidence but as a way of agreeing that something must be done at some point by somebody else.",
+  "glossary": [
+   {
+    "w": "demographic",
+    "tr": "demografik"
+   },
+   {
+    "w": "ageing",
+    "tr": "yaşlanma"
+   },
+   {
+    "w": "contested",
+    "tr": "tartışmalı"
+   },
+   {
+    "w": "ratio",
+    "tr": "oran"
+   },
+   {
+    "w": "absent",
+    "tr": "olmadığı takdirde"
+   },
+   {
+    "w": "contributions",
+    "tr": "primler, katkılar"
+   },
+   {
+    "w": "adjustments",
+    "tr": "düzenlemeler"
+   },
+   {
+    "w": "beneficiaries",
+    "tr": "yararlananlar"
+   },
+   {
+    "w": "diffuse",
+    "tr": "dağınık"
+   },
+   {
+    "w": "equilibrium",
+    "tr": "denge"
+   },
+   {
+    "w": "postpone",
+    "tr": "ertelemek"
+   },
+   {
+    "w": "manual",
+    "tr": "bedenle çalışan"
+   },
+   {
+    "w": "immigration",
+    "tr": "göç"
+   },
+   {
+    "w": "projections",
+    "tr": "öngörüler"
+   },
+   {
+    "w": "conservative",
+    "tr": "ihtiyatlı"
+   },
+   {
+    "w": "uncontested",
+    "tr": "tartışmasız"
+   },
+   {
+    "w": "commission",
+    "tr": "sipariş etmek, yaptırmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is there little useful action?",
+    "options": [
+     "Nobody understands it",
+     "The science is disputed",
+     "The losers exist now and the gainers are in the future",
+     "The data is hidden"
+    ],
+    "answer": 2,
+    "note": "\"Each has a clearly identifiable group of losers who exist now, while the beneficiaries are diffuse.\""
+   },
+   {
+    "q": "Why does raising the retirement age fall hardest on manual workers?",
+    "options": [
+     "Their bodies are the reason the age was set there",
+     "They pay more",
+     "They earn less",
+     "They retire earlier"
+    ],
+    "answer": 0,
+    "note": "\"Whose bodies are the reason the age was set where it was.\""
+   },
+   {
+    "q": "Which option expands rather than divides the total?",
+    "options": [
+     "A later retirement age",
+     "Immigration",
+     "Higher contributions",
+     "Lower payments"
+    ],
+    "answer": 1,
+    "note": "\"Increase the number of contributors through immigration.\""
+   },
+   {
+    "q": "What does the writer say about the projections?",
+    "options": [
+     "Recently disputed",
+     "Published for forty years and proved conservative",
+     "Consistently too pessimistic",
+     "Never made public"
+    ],
+    "answer": 1,
+    "note": "\"Published, repeatedly, for forty years, and have proved conservative.\""
+   },
+   {
+    "q": "How does the writer read calls for further study?",
+    "options": [
+     "As a sign of progress",
+     "As a funding request",
+     "As genuine caution",
+     "As a way of leaving action to somebody else"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-15",
+  "level": "C2",
+  "order": 15,
+  "kind": "reading",
+  "title": "Kurgu odasının sessiz yazarlığı",
+  "titleEn": "The Editing Room's Quiet Authorship",
+  "minutes": 7,
+  "names": [],
+  "text": "A documentary that contains no false statement can still be substantially untrue, and the mechanism is not deception in any sense the maker would recognize. Two hundred hours of material become ninety minutes, and every decision in that reduction is an argument about what the material means. A subject who spoke for six hours appears for ninety seconds, and which ninety seconds is a judgment the viewer cannot inspect. Sequence performs the same work more quietly: two events placed adjacently acquire a causal relationship that neither the film nor the maker has asserted and that the viewer supplies without noticing. Music is the least defensible of the instruments and the most used, since it instructs the audience how to feel about a face before the face has said anything. None of this is avoidable. A film without selection is not a film, and the demand that documentary be neutral rests on a confusion about what a camera does. The honest position is therefore not neutrality but disclosure, and the forms it can take are more varied than is usually recognized. A maker can show the question as well as the answer. A maker can leave in the moment where a subject asks to stop. A maker can decline to use music under an interview, which is a decision the audience will not register consciously and which changes what they are able to think. What distinguishes the documentaries that survive is rarely their subject and almost always this: the viewer finishes with a clear sense of having been shown an argument, rather than a clear sense of having seen what happened. Makers who achieve the second effect are usually praised for it, which is a fair description of the problem. The reviewer who writes that a film simply lets the facts speak has paid the maker the highest available compliment and identified, without meaning to, the exact point at which the audience stopped being able to argue back. Facts do not speak. Somebody chose the order, and the better that choice was, the less visible it is.",
+  "glossary": [
+   {
+    "w": "documentary",
+    "tr": "belgesel"
+   },
+   {
+    "w": "timeline",
+    "tr": "zaman çizgisi"
+   },
+   {
+    "w": "substantially",
+    "tr": "esas itibarıyla"
+   },
+   {
+    "w": "deception",
+    "tr": "aldatma"
+   },
+   {
+    "w": "reduction",
+    "tr": "indirgeme"
+   },
+   {
+    "w": "inspect",
+    "tr": "denetlemek"
+   },
+   {
+    "w": "sequence",
+    "tr": "sıralama"
+   },
+   {
+    "w": "adjacently",
+    "tr": "yan yana"
+   },
+   {
+    "w": "causal",
+    "tr": "nedensel"
+   },
+   {
+    "w": "asserted",
+    "tr": "ileri sürülmüş"
+   },
+   {
+    "w": "instruments",
+    "tr": "araçlar"
+   },
+   {
+    "w": "instructs",
+    "tr": "talimat verir"
+   },
+   {
+    "w": "neutrality",
+    "tr": "tarafsızlık"
+   },
+   {
+    "w": "disclosure",
+    "tr": "açık etme, beyan"
+   },
+   {
+    "w": "register",
+    "tr": "fark etmek, kaydetmek"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How can a documentary be untrue without false statements?",
+    "options": [
+     "By inventing scenes",
+     "By changing the sound",
+     "Through the decisions made in reducing the material",
+     "By using actors"
+    ],
+    "answer": 2,
+    "note": "\"Every decision in that reduction is an argument about what the material means.\""
+   },
+   {
+    "q": "What does sequence do?",
+    "options": [
+     "Makes the film shorter",
+     "Clarifies the timeline",
+     "Protects the subject",
+     "Creates a causal relationship the viewer supplies"
+    ],
+    "answer": 3,
+    "note": "\"Two events placed adjacently acquire a causal relationship.\""
+   },
+   {
+    "q": "Why is music the least defensible instrument?",
+    "options": [
+     "It hides the words",
+     "It is expensive",
+     "It is always borrowed",
+     "It instructs the audience how to feel before anything is said"
+    ],
+    "answer": 3,
+    "note": "\"It instructs the audience how to feel about a face before the face has said anything.\""
+   },
+   {
+    "q": "What is the honest position?",
+    "options": [
+     "Showing all the material",
+     "Disclosure rather than neutrality",
+     "Strict neutrality",
+     "Refusing to edit"
+    ],
+    "answer": 1,
+    "note": "\"The honest position is therefore not neutrality but disclosure.\""
+   },
+   {
+    "q": "What distinguishes documentaries that survive?",
+    "options": [
+     "Their budget",
+     "The viewer knows they were shown an argument",
+     "Their length",
+     "Their subject matter"
+    ],
+    "answer": 1,
+    "note": "\"The viewer finishes with a clear sense of having been shown an argument.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-r-16",
+  "level": "C2",
+  "order": 16,
+  "kind": "reading",
+  "title": "Uzmana danışmanın maliyeti",
+  "titleEn": "Asking Somebody Who Knows",
+  "minutes": 7,
+  "names": [],
+  "text": "A person facing a decision outside their competence is advised to consult an expert, and the advice is sound as far as it goes. What it omits is that the question being asked and the question the expert is equipped to answer are frequently not the same, and that neither party is well placed to notice the gap. A surgeon asked whether an operation is possible will answer a question about surgery. The question the patient meant was whether the remaining years would be better with the operation or without it, and that question contains a great deal that the surgeon has no special access to: what the patient can tolerate, what they want their remaining time to contain, how much they fear one kind of decline relative to another. The surgeon is not overreaching by answering; they have answered exactly what was asked. The failure occurred at the point of translation, and it is invisible because both sides believe the conversation went well. This has a practical consequence that runs against the usual advice about seeking second opinions. A second expert in the same discipline will very often confirm the first, not because the first was right about the patient's life but because both are answering the technical question correctly. The useful second opinion is frequently from a different discipline entirely, or from somebody who has made the same decision and lived with it. Professions differ markedly in how well they handle this. Some have built the translation into the encounter, training practitioners to ask what the person is hoping the decision will achieve before describing what is technically available. Others treat such questions as outside their remit, which is defensible as a description of their training and leaves the most consequential part of the decision to whoever happens to be in the room.",
+  "glossary": [
+   {
+    "w": "competence",
+    "tr": "yetkinlik alanı"
+   },
+   {
+    "w": "omits",
+    "tr": "atlar"
+   },
+   {
+    "w": "omit",
+    "tr": "atlamak"
+   },
+   {
+    "w": "equipped",
+    "tr": "donanımlı"
+   },
+   {
+    "w": "surgeon",
+    "tr": "cerrah"
+   },
+   {
+    "w": "tolerate",
+    "tr": "katlanmak"
+   },
+   {
+    "w": "decline",
+    "tr": "gerileme"
+   },
+   {
+    "w": "overreaching",
+    "tr": "haddini aşmak"
+   },
+   {
+    "w": "translation",
+    "tr": "çeviri, aktarım"
+   },
+   {
+    "w": "discipline",
+    "tr": "disiplin, alan"
+   },
+   {
+    "w": "markedly",
+    "tr": "belirgin biçimde"
+   },
+   {
+    "w": "practitioners",
+    "tr": "uygulayıcılar"
+   },
+   {
+    "w": "remit",
+    "tr": "görev alanı"
+   },
+   {
+    "w": "consequential",
+    "tr": "sonuç doğuran, önemli"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the usual advice omit?",
+    "options": [
+     "Experts are rare",
+     "The question asked and the one answered may differ",
+     "Experts disagree",
+     "Experts are expensive"
+    ],
+    "answer": 1,
+    "note": "\"The question being asked and the question the expert is equipped to answer are frequently not the same.\""
+   },
+   {
+    "q": "What does the patient's real question contain?",
+    "options": [
+     "Legal matters",
+     "Things the surgeon has no special access to",
+     "Financial detail",
+     "Only technical facts"
+    ],
+    "answer": 1,
+    "note": "\"That question contains a great deal that the surgeon has no special access to.\""
+   },
+   {
+    "q": "Why is the failure invisible?",
+    "options": [
+     "Nobody records it",
+     "The patient says nothing",
+     "Both sides believe the conversation went well",
+     "It happens later"
+    ],
+    "answer": 2,
+    "note": "\"It is invisible because both sides believe the conversation went well.\""
+   },
+   {
+    "q": "Why does a second opinion often confirm the first?",
+    "options": [
+     "Experts protect each other",
+     "They share records",
+     "The case is simple",
+     "Both answer the technical question correctly"
+    ],
+    "answer": 3,
+    "note": "\"Both are answering the technical question correctly.\""
+   },
+   {
+    "q": "What do the better professions do?",
+    "options": [
+     "Refuse to advise",
+     "Ask what the person hopes the decision will achieve",
+     "Offer written guarantees",
+     "Send the patient elsewhere"
+    ],
+    "answer": 1,
+    "note": "\"Training practitioners to ask what the person is hoping the decision will achieve.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-r-17",
+  "level": "C2",
+  "order": 17,
+  "kind": "reading",
+  "title": "Kamusal alanın özelleşmesi",
+  "titleEn": "The Square That Belongs to Somebody",
+  "minutes": 7,
+  "names": [],
+  "text": "A great deal of what appears to be public space in modern cities is privately owned, and the distinction is invisible until it becomes relevant. The paving is continuous, the benches are comfortable, the planting is better maintained than anything the city manages, and there is no sign at the boundary. What differs is the rule. A genuinely public square is governed by law, which is slow, contested and appealable. Its privately owned equivalent is governed by the conditions of entry, which can forbid photography, assembly, sleeping, skateboarding or remaining without making a purchase, and which can be changed by the owner without notice or explanation. Nothing about this is concealed; it is simply not announced, and almost nobody reads the conditions of entry to a paved area. Defenders of the arrangement make a reasonable point. Cities acquired these spaces at no cost to the public purse, and they are cleaner and safer than what preceded them, which was frequently a car park. The objection is not that the spaces are bad but that the transfer was not described. A city that sells the right to make rules in the center of itself has done something that a city which builds a square has not, and residents who experience the two as identical have not consented to the difference because they were never told there was one. The reform that has been tried in several places is modest and revealing in its reception. It requires nothing more than a sign at each entrance stating who owns the ground and listing what is forbidden. Owners have resisted this with a force entirely out of proportion to the cost of a sign, which tells you what the sign would cost them. The point is not that the rules are unreasonable. Most of them are the rules any careful landlord would write, and a city square governed by law also forbids a great deal. The point is that one set was arrived at through a process a resident can enter and the other was not, and the difference only becomes visible on the day somebody wants to stand in the square and say something the owner would rather not host.",
+  "glossary": [
+   {
+    "w": "paving",
+    "tr": "döşeme, kaldırım taşı"
+   },
+   {
+    "w": "boundary",
+    "tr": "sınır"
+   },
+   {
+    "w": "contested",
+    "tr": "itiraz edilebilir"
+   },
+   {
+    "w": "appealable",
+    "tr": "temyiz edilebilir"
+   },
+   {
+    "w": "equivalent",
+    "tr": "muadil"
+   },
+   {
+    "w": "assembly",
+    "tr": "toplanma"
+   },
+   {
+    "w": "concealed",
+    "tr": "gizlenmiş"
+   },
+   {
+    "w": "purse",
+    "tr": "kese, bütçe"
+   },
+   {
+    "w": "preceded",
+    "tr": "önce gelen"
+   },
+   {
+    "w": "consented",
+    "tr": "rıza gösterdi"
+   },
+   {
+    "w": "reform",
+    "tr": "reform, düzenleme"
+   },
+   {
+    "w": "reception",
+    "tr": "karşılanış"
+   },
+   {
+    "w": "exempt",
+    "tr": "muaf tutmak"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What makes the distinction invisible?",
+    "options": [
+     "The spaces are hidden",
+     "Nothing marks the boundary",
+     "Owners are anonymous",
+     "The law is secret"
+    ],
+    "answer": 1,
+    "note": "\"There is no sign at the boundary.\""
+   },
+   {
+    "q": "How is a genuinely public square governed?",
+    "options": [
+     "By the police alone",
+     "By conditions of entry",
+     "By the city's owner",
+     "By law, which is contested and appealable"
+    ],
+    "answer": 3,
+    "note": "\"A genuinely public square is governed by law.\""
+   },
+   {
+    "q": "What is the defenders' reasonable point?",
+    "options": [
+     "The law is too slow",
+     "Nobody uses public squares",
+     "The rules are fair",
+     "The spaces cost the public nothing and replaced car parks"
+    ],
+    "answer": 3,
+    "note": "\"Cities acquired these spaces at no cost to the public purse.\""
+   },
+   {
+    "q": "What is the writer's actual objection?",
+    "options": [
+     "The owners are foreign",
+     "The transfer was never described",
+     "The rules are illegal",
+     "The spaces are unpleasant"
+    ],
+    "answer": 1,
+    "note": "\"The objection is not that the spaces are bad but that the transfer was not described.\""
+   },
+   {
+    "q": "What does resistance to the sign reveal?",
+    "options": [
+     "That signs are expensive",
+     "What the sign would cost the owners",
+     "That nobody would read it",
+     "That the law forbids signs"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-18",
+  "level": "C2",
+  "order": 18,
+  "kind": "reading",
+  "title": "Bilimsel makalenin biçimi",
+  "titleEn": "The Paper That Hides Its Own History",
+  "minutes": 7,
+  "names": [],
+  "text": "The standard scientific paper describes a process that did not occur. It opens with a question, proceeds to a method chosen to answer it, reports what was found and concludes. The actual work almost never proceeded in that order. The question was frequently arrived at after the results were in, the method was partly determined by what equipment was free that month, and several lines of enquiry were abandoned without appearing anywhere in the published account. None of this is fraud. The convention exists because the reconstructed version is easier to evaluate: a reader wishing to know whether the conclusion follows from the evidence is not helped by a chronological account of eighteen months of confusion. The cost is that the form conceals precisely the information needed to judge how much the result should be believed. A hypothesis formed before the data was collected and one formed after it have very different evidential weight, and the paper makes them typographically identical. The reforms that address this are recent and their adoption is uneven. Pre-registration, in which the question and the analysis are deposited publicly before the data exists, separates the two cases cleanly and has produced an instructive result: in fields where it has been adopted, the proportion of studies reporting the effect they set out to find has fallen sharply. This was predicted by its advocates and treated as an objection by its opponents, and both were describing the same number. What the convention protected was not dishonesty but a form of self-deception available to entirely honest people, which is harder to argue against and considerably more common. The objection most often raised is that pre-registration suits some fields and not others, and this is correct. Work that sets out to find what is there rather than to test a stated expectation cannot be registered in advance without destroying the thing that makes it valuable. The answer is not to exempt such work but to label it, so that a reader knows which kind of claim is being made before deciding how much weight to give it.",
+  "glossary": [
+   {
+    "w": "proceeds",
+    "tr": "ilerler"
+   },
+   {
+    "w": "enquiry",
+    "tr": "araştırma yolu"
+   },
+   {
+    "w": "abandoned",
+    "tr": "terk edilmiş"
+   },
+   {
+    "w": "fraud",
+    "tr": "sahtekârlık"
+   },
+   {
+    "w": "convention",
+    "tr": "yerleşik biçim"
+   },
+   {
+    "w": "reconstructed",
+    "tr": "yeniden kurulmuş"
+   },
+   {
+    "w": "chronological",
+    "tr": "kronolojik"
+   },
+   {
+    "w": "conceals",
+    "tr": "gizler"
+   },
+   {
+    "w": "hypothesis",
+    "tr": "hipotez"
+   },
+   {
+    "w": "hypotheses",
+    "tr": "hipotezler"
+   },
+   {
+    "w": "evidential",
+    "tr": "kanıt değeri taşıyan"
+   },
+   {
+    "w": "typographically",
+    "tr": "dizgi bakımından"
+   },
+   {
+    "w": "pre-registration",
+    "tr": "ön kayıt"
+   },
+   {
+    "w": "exempt",
+    "tr": "muaf tutmak"
+   },
+   {
+    "w": "deposited",
+    "tr": "tevdi edilmiş, bırakılmış"
+   },
+   {
+    "w": "advocates",
+    "tr": "savunucular"
+   },
+   {
+    "w": "self-deception",
+    "tr": "kendini kandırma"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What does the standard paper describe?",
+    "options": [
+     "Only the failures",
+     "The exact order of the work",
+     "The funding history",
+     "A process that did not occur"
+    ],
+    "answer": 3,
+    "note": "\"The standard scientific paper describes a process that did not occur.\""
+   },
+   {
+    "q": "Why does the convention exist?",
+    "options": [
+     "The reconstructed version is easier to evaluate",
+     "It saves space",
+     "Journals require it",
+     "It hides mistakes"
+    ],
+    "answer": 0,
+    "note": "\"Because the reconstructed version is easier to evaluate.\""
+   },
+   {
+    "q": "What is the cost of the form?",
+    "options": [
+     "It is too long",
+     "It excludes data",
+     "It conceals what is needed to judge the result",
+     "It is hard to read"
+    ],
+    "answer": 2,
+    "note": "\"The form conceals precisely the information needed to judge how much the result should be believed.\""
+   },
+   {
+    "q": "What does pre-registration separate?",
+    "options": [
+     "Hypotheses formed before and after the data",
+     "Authors and reviewers",
+     "Funding and findings",
+     "Method and result"
+    ],
+    "answer": 0,
+    "note": "\"Separates the two cases cleanly.\""
+   },
+   {
+    "q": "What was the convention protecting?",
+    "options": [
+     "Slow researchers",
+     "Commercial secrets",
+     "Self-deception available to honest people",
+     "Deliberate fraud"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "c2-r-19",
+  "level": "C2",
+  "order": 19,
+  "kind": "reading",
+  "title": "Sadeliğin pahalılığı",
+  "titleEn": "Why Simple Things Cost More",
+  "minutes": 7,
+  "names": [],
+  "text": "A product with three buttons is frequently more expensive to develop than one with thirty, and the reason is not materials. Every feature that does not appear in the finished object represents a decision that somebody had to make and then defend, and the defense is structurally harder than the alternative. A feature that is included can be justified by the person who wanted it; a feature that is excluded must be refused by somebody willing to say no to a colleague who has a reason. Multiply this across four hundred proposals and the organizations that produce simple objects are not the ones with better taste but the ones that have arranged for refusal to be somebody's job. There is a further cost that is easier to overlook. Removing a control does not remove the underlying decision it represented; it relocates the decision into the object, which must now make it automatically and correctly in circumstances its designers did not foresee. A device with a manual setting fails visibly and is adjusted by its owner. A device that decides for itself fails invisibly and is described by its owner as being broken for no reason. Simplicity of this kind therefore transfers work from the user to the engineer, and the transfer is only worthwhile where the engineer genuinely knows more about the situation than the person holding the object, which is a narrower set of cases than the industry's enthusiasm suggests. The products that age well tend to be those that removed the controls nobody used and kept the one that everybody eventually needs, and identifying which is which requires the kind of long observation that almost nobody funds. The information exists, in the sense that every repair shop and every support line knows exactly which control the customer is calling about. It is simply held at the point furthest from the people making the decision, and by an organization that classifies it as a cost rather than as the only honest account of how the object is actually used.",
+  "glossary": [
+   {
+    "w": "materials",
+    "tr": "malzemeler"
+   },
+   {
+    "w": "structurally",
+    "tr": "yapısal olarak"
+   },
+   {
+    "w": "excluded",
+    "tr": "çıkarılmış"
+   },
+   {
+    "w": "refusal",
+    "tr": "reddetme"
+   },
+   {
+    "w": "relocates",
+    "tr": "yerini değiştirir"
+   },
+   {
+    "w": "automatically",
+    "tr": "otomatik olarak"
+   },
+   {
+    "w": "foresee",
+    "tr": "öngörmek"
+   },
+   {
+    "w": "manual",
+    "tr": "elle kullanılan"
+   },
+   {
+    "w": "adjusted",
+    "tr": "ayarlanan"
+   },
+   {
+    "w": "simplicity",
+    "tr": "sadelik"
+   },
+   {
+    "w": "transfers",
+    "tr": "aktarır"
+   },
+   {
+    "w": "enthusiasm",
+    "tr": "heves"
+   },
+   {
+    "w": "observation",
+    "tr": "gözlem"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why is a simple product expensive to develop?",
+    "options": [
+     "Fewer people can make it",
+     "Every excluded feature had to be refused by somebody",
+     "The materials cost more",
+     "It takes longer to build"
+    ],
+    "answer": 1,
+    "note": "\"A feature that is excluded must be refused by somebody willing to say no.\""
+   },
+   {
+    "q": "What distinguishes organizations that make simple objects?",
+    "options": [
+     "They have better taste",
+     "They have more money",
+     "Refusal is somebody's job",
+     "They have fewer staff"
+    ],
+    "answer": 2,
+    "note": "\"The ones that have arranged for refusal to be somebody's job.\""
+   },
+   {
+    "q": "What does removing a control do?",
+    "options": [
+     "Relocates the decision into the object",
+     "Reduces failures",
+     "Makes the product cheaper",
+     "Removes the decision entirely"
+    ],
+    "answer": 0,
+    "note": "\"It relocates the decision into the object.\""
+   },
+   {
+    "q": "How does an automatic device fail?",
+    "options": [
+     "Invisibly, and seems broken for no reason",
+     "Only under heavy use",
+     "Exactly like a manual one",
+     "Loudly"
+    ],
+    "answer": 0,
+    "note": "\"A device that decides for itself fails invisibly.\""
+   },
+   {
+    "q": "When is the transfer worthwhile?",
+    "options": [
+     "When the product is cheap",
+     "When users complain",
+     "Always",
+     "When the engineer genuinely knows more than the user"
+    ],
+    "answer": 3,
+    "note": "\"Only worthwhile where the engineer genuinely knows more about the situation.\""
+   }
+  ]
+ },
+ {
+  "id": "c2-r-20",
+  "level": "C2",
+  "order": 20,
+  "kind": "reading",
+  "title": "Tanıklığın yazıya geçirilmesi",
+  "titleEn": "Taking Down What Was Said",
+  "minutes": 7,
+  "names": [],
+  "text": "An oral account becomes a document through a series of small operations, each defensible and each subtractive. Hesitation is removed, since a transcript peppered with pauses is unreadable and the pauses were not the point. Repetition is condensed, on the reasonable ground that the speaker said the same thing three times. Grammar is corrected, out of respect, so that the speaker does not appear on the page less articulate than they were in the room. Digression is cut, because the account has to be about something. Every one of these decisions improves the document and removes evidence, and the evidence removed is disproportionately about the speaker's relationship to what they are describing. A person who hesitates before a date is telling you something about the date. A person who repeats a sentence three times is telling you which sentence matters. Archives that have understood this have moved, where resources allow, to keeping the recording as the record and treating the transcript as a finding aid rather than a substitute. The difficulty is that a recording is almost never consulted. A researcher with four hundred interviews and a deadline reads transcripts, and will continue to, and the honest response to that is not to demand better habits from researchers but to design the transcript so that its own limitations are legible: marking where material was cut, preserving hesitation at the points where it carries weight, and stating at the head of the document what conventions were applied. None of this recovers what was lost. It does tell the reader that something was. That is a smaller claim than the one usually made for good practice in this field, and it is the one that survives contact with a deadline. A reader who knows that a document is partial will read it differently, ask different questions of it, and go to the recording on the two occasions out of four hundred when the answer actually matters.",
+  "glossary": [
+   {
+    "w": "oral",
+    "tr": "sözlü"
+   },
+   {
+    "w": "subtractive",
+    "tr": "eksilten"
+   },
+   {
+    "w": "hesitation",
+    "tr": "duraksama"
+   },
+   {
+    "w": "transcript",
+    "tr": "deşifre metni"
+   },
+   {
+    "w": "peppered",
+    "tr": "serpiştirilmiş"
+   },
+   {
+    "w": "condensed",
+    "tr": "kısaltılmış"
+   },
+   {
+    "w": "articulate",
+    "tr": "kendini iyi ifade eden"
+   },
+   {
+    "w": "digression",
+    "tr": "konu dışına çıkma"
+   },
+   {
+    "w": "disproportionately",
+    "tr": "orantısız biçimde"
+   },
+   {
+    "w": "archives",
+    "tr": "arşivler"
+   },
+   {
+    "w": "finding aid",
+    "tr": "bulma aracı, dizin"
+   },
+   {
+    "w": "substitute",
+    "tr": "yerine geçen"
+   },
+   {
+    "w": "consulted",
+    "tr": "başvurulan"
+   },
+   {
+    "w": "legible",
+    "tr": "okunabilir"
+   },
+   {
+    "w": "conventions",
+    "tr": "uygulanan kurallar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What do the small operations have in common?",
+    "options": [
+     "Each is dishonest",
+     "Each adds material",
+     "Each is defensible and each removes something",
+     "Each is accidental"
+    ],
+    "answer": 2,
+    "note": "\"Each defensible and each subtractive.\""
+   },
+   {
+    "q": "What does hesitation before a date indicate?",
+    "options": [
+     "Poor memory",
+     "Nervousness only",
+     "Something about the date",
+     "Nothing at all"
+    ],
+    "answer": 2,
+    "note": "\"A person who hesitates before a date is telling you something about the date.\""
+   },
+   {
+    "q": "What have some archives moved to?",
+    "options": [
+     "Editing more heavily",
+     "Refusing interviews",
+     "Destroying transcripts",
+     "Keeping the recording as the record"
+    ],
+    "answer": 3,
+    "note": "\"Keeping the recording as the record.\""
+   },
+   {
+    "q": "What is the difficulty with recordings?",
+    "options": [
+     "They cannot be searched at all",
+     "They degrade",
+     "They are almost never consulted",
+     "They are expensive"
+    ],
+    "answer": 2,
+    "note": "\"A recording is almost never consulted.\""
+   },
+   {
+    "q": "What does the writer propose instead?",
+    "options": [
+     "Make the transcript's limitations legible",
+     "Cut the interviews short",
+     "Ban transcripts",
+     "Give researchers new rules"
+    ],
+    "answer": 0,
+    "note": "\"Design the transcript so that its own limitations are legible.\""
+   }
+  ]
  }
 ]

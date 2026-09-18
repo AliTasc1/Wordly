@@ -1071,12 +1071,12 @@
     "note": "\"He starts at five and finishes at half past seven.\""
    },
    {
-    "q": "What did he do before?",
+    "q": "What was his job before he retired?",
     "options": [
      "Worked as a baker",
      "Ran a shop",
      "Taught at a school",
-     "Worked in an office"
+     "He worked in an office"
     ],
     "answer": 3,
     "note": "\"He worked in an office for thirty years.\""
