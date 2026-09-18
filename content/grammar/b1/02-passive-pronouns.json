@@ -1,5 +1,9 @@
 {
-  "_meta": { "batch": "b1-02", "level": "B1", "range": "Ders 6-10 — edilgen genişleme, zamirler, -thing + sıfat, zarflar, to'lu yapılar" },
+  "_meta": {
+    "batch": "b1-02",
+    "level": "B1",
+    "range": "Ders 6-10 — edilgen genişleme, zamirler, -thing + sıfat, zarflar, to'lu yapılar"
+  },
   "lessons": [
     {
       "id": "b1-06-passive-modals-get",
@@ -8,35 +12,203 @@
       "title": "will be done, get + V3",
       "topic": "Passive with modals; get-passive; postmodifying participle",
       "canDo": "Her zamanda edilgen kurabilir, günlük dildeki get'li biçimi kullanabilirim.",
-      "covers": ["PASS.MD.AFF", "PASS.get_VN", "VN.N_VN"],
+      "covers": [
+        "PASS.MD.AFF",
+        "PASS.get_VN",
+        "VN.N_VN"
+      ],
       "concept": {
         "summary": "Edilgen yapı kip fiillerle de kurulur: kipin ardından be gelir, asıl fiil üçüncü hâlde kalır. Günlük konuşmada be yerine get kullanılır ve olayın beklenmedikliğini vurgular. Üçüncü hâl bir ismi arkadan da niteleyebilir: a car made in Japan.",
-        "formula": { "left": "kip + be + V3", "right": "get + V3" },
+        "formula": {
+          "left": "kip + be + V3",
+          "right": "get + V3"
+        },
         "table": [
-          { "form": "will", "be": "will be + V3", "example": "The results will be announced." },
-          { "form": "can / must", "be": "can be / must be + V3", "example": "It can be repaired." },
-          { "form": "get", "be": "günlük dil", "example": "He got fired last week." },
-          { "form": "arkadan niteleme", "be": "isim + V3", "example": "a book written in 1920" }
+          {
+            "form": "will",
+            "be": "will be + V3",
+            "example": "The results will be announced."
+          },
+          {
+            "form": "can / must",
+            "be": "can be / must be + V3",
+            "example": "It can be repaired."
+          },
+          {
+            "form": "get",
+            "be": "günlük dil",
+            "example": "He got fired last week."
+          },
+          {
+            "form": "arkadan niteleme",
+            "be": "isim + V3",
+            "example": "a book written in 1920"
+          }
         ]
       },
       "examples": [
-        { "en": "The winners will be announced tomorrow.", "tr": "Kazananlar yarın açıklanacak.", "note": "will + be + V3." },
-        { "en": "This form must be signed by a parent.", "tr": "Bu form bir veli tarafından imzalanmalı.", "note": "must + be + V3." },
-        { "en": "The laptop can be fixed today.", "tr": "Dizüstü bugün tamir edilebilir.", "note": "can + be + V3." },
-        { "en": "Her bike got stolen at the station.", "tr": "Bisikleti istasyonda çalındı.", "note": "get, beklenmedik olayda yaygın." },
-        { "en": "I read a novel written by a Turkish author.", "tr": "Türk bir yazarın yazdığı bir roman okudum.", "note": "written ismi arkadan niteliyor." }
+        {
+          "en": "The winners will be announced tomorrow.",
+          "tr": "Kazananlar yarın açıklanacak.",
+          "note": "will + be + V3."
+        },
+        {
+          "en": "This form must be signed by a parent.",
+          "tr": "Bu form bir veli tarafından imzalanmalı.",
+          "note": "must + be + V3."
+        },
+        {
+          "en": "The laptop can be fixed today.",
+          "tr": "Dizüstü bugün tamir edilebilir.",
+          "note": "can + be + V3."
+        },
+        {
+          "en": "Her bike got stolen at the station.",
+          "tr": "Bisikleti istasyonda çalındı.",
+          "note": "get, beklenmedik olayda yaygın."
+        },
+        {
+          "en": "I read a novel written by a Turkish author.",
+          "tr": "Türk bir yazarın yazdığı bir roman okudum.",
+          "note": "written ismi arkadan niteliyor."
+        }
       ],
       "mistakes": [
-        { "wrong": "The results will announced tomorrow.", "right": "The results will be announced tomorrow.", "why": "Kip ile üçüncü hâl arasında be gerekir." },
-        { "wrong": "This form must be sign by a parent.", "right": "This form must be signed by a parent.", "why": "Üçüncü hâl kullanılır." },
-        { "wrong": "I read a novel wrote by a Turkish author.", "right": "I read a novel written by a Turkish author.", "why": "Niteleyen biçim üçüncü hâldir, ikinci hâl değil." }
+        {
+          "wrong": "The results will announced tomorrow.",
+          "right": "The results will be announced tomorrow.",
+          "why": "Kip ile üçüncü hâl arasında be gerekir."
+        },
+        {
+          "wrong": "This form must be sign by a parent.",
+          "right": "This form must be signed by a parent.",
+          "why": "Üçüncü hâl kullanılır."
+        },
+        {
+          "wrong": "I read a novel wrote by a Turkish author.",
+          "right": "I read a novel written by a Turkish author.",
+          "why": "Niteleyen biçim üçüncü hâldir, ikinci hâl değil."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "The road ___ repaired next month.", "options": ["will be", "will", "is will", "will been"], "answer": 0, "note": "will + be + V3." },
-        { "type": "choice", "text": "Tickets ___ bought online.", "options": ["can be", "can", "can being", "are can"], "answer": 0, "note": "Kip + be + V3." },
-        { "type": "choice", "text": "My wallet ___ on the bus.", "options": ["got stolen", "got steal", "get stolen", "was steal"], "answer": 0, "note": "get + V3, geçmişte got." },
-        { "type": "choice", "text": "This is a photo ___ in 1975.", "options": ["taken", "took", "taking", "takes"], "answer": 0, "note": "Arkadan niteleyen üçüncü hâl." },
-        { "type": "gap", "text": "The report ___ be finished by Friday.", "options": ["must", "must to", "musts"], "answer": 0, "note": "must + be + V3." }
+        {
+          "type": "choice",
+          "text": "The road ___ repaired next month.",
+          "options": [
+            "will be",
+            "will",
+            "is will",
+            "will been"
+          ],
+          "answer": 0,
+          "note": "will + be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Tickets ___ bought online.",
+          "options": [
+            "can be",
+            "can",
+            "can being",
+            "are can"
+          ],
+          "answer": 0,
+          "note": "Kip + be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "My wallet ___ on the bus.",
+          "options": [
+            "got stolen",
+            "got steal",
+            "get stolen",
+            "was steal"
+          ],
+          "answer": 0,
+          "note": "get + V3, geçmişte got."
+        },
+        {
+          "type": "choice",
+          "text": "This is a photo ___ in 1975.",
+          "options": [
+            "taken",
+            "took",
+            "taking",
+            "takes"
+          ],
+          "answer": 0,
+          "note": "Arkadan niteleyen üçüncü hâl."
+        },
+        {
+          "type": "gap",
+          "text": "The report ___ be finished by Friday.",
+          "options": [
+            "must",
+            "must to",
+            "musts"
+          ],
+          "answer": 0,
+          "note": "must + be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "The results ___ be announced tomorrow.",
+          "options": [
+            "will",
+            "are",
+            "have",
+            "do"
+          ],
+          "answer": 0,
+          "note": "Gelecek edilgen → will be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "This form ___ be signed by both parents.",
+          "options": [
+            "must",
+            "musts",
+            "is must",
+            "must to"
+          ],
+          "answer": 0,
+          "note": "Kip + be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "My phone ___ stolen on the bus.",
+          "options": [
+            "got",
+            "get",
+            "gets",
+            "getting"
+          ],
+          "answer": 0,
+          "note": "Konuşma dilinde get + V3."
+        },
+        {
+          "type": "gap",
+          "text": "The work should ___ finished by Friday.",
+          "options": [
+            "be",
+            "is",
+            "been"
+          ],
+          "answer": 0,
+          "note": "should + be + V3."
+        },
+        {
+          "type": "choice",
+          "text": "Nothing can ___ done about it now.",
+          "options": [
+            "be",
+            "is",
+            "been",
+            "being"
+          ],
+          "answer": 0,
+          "note": "can + be + V3."
+        }
       ]
     },
     {
@@ -46,35 +218,206 @@
       "title": "mine, myself, each other",
       "topic": "Possessive, reflexive and reciprocal pronouns",
       "canDo": "Sahiplik, kendine dönüklük ve karşılıklılığı ayırt ederek anlatabilirim.",
-      "covers": ["PPOS.mine.etc", "PREFL.oneself.etc", "PREF.each_other", "P.others", "PP.you_are", "DT.these.those_N"],
+      "covers": [
+        "PPOS.mine.etc",
+        "PREFL.oneself.etc",
+        "PREF.each_other",
+        "P.others",
+        "PP.you_are",
+        "DT.these.those_N"
+      ],
       "concept": {
         "summary": "my ismin önüne gelir, mine ise ismin yerini tutar. myself işin öznesiyle nesnesi aynı kişiyse kullanılır. each other iki tarafın birbirine yaptığı işi anlatır; others ise \"başkaları, diğerleri\" demektir.",
-        "formula": { "left": "mine / yours / theirs", "right": "myself / yourself / each other" },
+        "formula": {
+          "left": "mine / yours / theirs",
+          "right": "myself / yourself / each other"
+        },
         "table": [
-          { "form": "iyelik zamiri", "be": "mine, yours, ours", "example": "This book is mine." },
-          { "form": "dönüşlü", "be": "myself, himself", "example": "She hurt herself." },
-          { "form": "karşılıklı", "be": "each other", "example": "They help each other." },
-          { "form": "diğerleri", "be": "others", "example": "Some stayed, others left." }
+          {
+            "form": "iyelik zamiri",
+            "be": "mine, yours, ours",
+            "example": "This book is mine."
+          },
+          {
+            "form": "dönüşlü",
+            "be": "myself, himself",
+            "example": "She hurt herself."
+          },
+          {
+            "form": "karşılıklı",
+            "be": "each other",
+            "example": "They help each other."
+          },
+          {
+            "form": "diğerleri",
+            "be": "others",
+            "example": "Some stayed, others left."
+          }
         ]
       },
       "examples": [
-        { "en": "That seat is mine.", "tr": "O koltuk benim.", "note": "mine ismin yerini tutar." },
-        { "en": "Did you make this cake yourself?", "tr": "Bu pastayı kendin mi yaptın?", "note": "Vurgu için dönüşlü zamir." },
-        { "en": "My parents write to each other every week.", "tr": "Annemle babam her hafta birbirine yazıyor.", "note": "Karşılıklılık." },
-        { "en": "Some people left early; others stayed.", "tr": "Bazıları erken çıktı, diğerleri kaldı.", "note": "others = başkaları." },
-        { "en": "Those shoes are more comfortable than these ones.", "tr": "Şu ayakkabılar bunlardan daha rahat.", "note": "these/those ismin önünde." }
+        {
+          "en": "That seat is mine.",
+          "tr": "O koltuk benim.",
+          "note": "mine ismin yerini tutar."
+        },
+        {
+          "en": "Did you make this cake yourself?",
+          "tr": "Bu pastayı kendin mi yaptın?",
+          "note": "Vurgu için dönüşlü zamir."
+        },
+        {
+          "en": "My parents write to each other every week.",
+          "tr": "Annemle babam her hafta birbirine yazıyor.",
+          "note": "Karşılıklılık."
+        },
+        {
+          "en": "Some people left early; others stayed.",
+          "tr": "Bazıları erken çıktı, diğerleri kaldı.",
+          "note": "others = başkaları."
+        },
+        {
+          "en": "Those shoes are more comfortable than these ones.",
+          "tr": "Şu ayakkabılar bunlardan daha rahat.",
+          "note": "these/those ismin önünde."
+        }
       ],
       "mistakes": [
-        { "wrong": "This book is my.", "right": "This book is mine.", "why": "İsim yoksa iyelik zamiri kullanılır." },
-        { "wrong": "She hurt her.", "right": "She hurt herself.", "why": "Özne ile nesne aynı kişiyse dönüşlü zamir gelir." },
-        { "wrong": "They help themselves every day.", "right": "They help each other every day.", "why": "Karşılıklı iş each other ile anlatılır." }
+        {
+          "wrong": "This book is my.",
+          "right": "This book is mine.",
+          "why": "İsim yoksa iyelik zamiri kullanılır."
+        },
+        {
+          "wrong": "She hurt her.",
+          "right": "She hurt herself.",
+          "why": "Özne ile nesne aynı kişiyse dönüşlü zamir gelir."
+        },
+        {
+          "wrong": "They help themselves every day.",
+          "right": "They help each other every day.",
+          "why": "Karşılıklı iş each other ile anlatılır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "Is this pen ___ ?", "options": ["yours", "your", "you", "yourself"], "answer": 0, "note": "İsim yok → yours." },
-        { "type": "choice", "text": "He cut ___ while cooking.", "options": ["himself", "him", "his", "he"], "answer": 0, "note": "Özne = nesne → himself." },
-        { "type": "choice", "text": "The two brothers look after ___ .", "options": ["each other", "themselves each", "them", "theirs"], "answer": 0, "note": "Karşılıklı → each other." },
-        { "type": "choice", "text": "Some like tea, ___ prefer coffee.", "options": ["others", "other", "another", "the other one"], "answer": 0, "note": "Belirsiz çoğul → others." },
-        { "type": "gap", "text": "Our car is faster than ___ .", "options": ["theirs", "their", "them"], "answer": 0, "note": "İsim yok → theirs." }
+        {
+          "type": "choice",
+          "text": "Is this pen ___ ?",
+          "options": [
+            "yours",
+            "your",
+            "you",
+            "yourself"
+          ],
+          "answer": 0,
+          "note": "İsim yok → yours."
+        },
+        {
+          "type": "choice",
+          "text": "He cut ___ while cooking.",
+          "options": [
+            "himself",
+            "him",
+            "his",
+            "he"
+          ],
+          "answer": 0,
+          "note": "Özne = nesne → himself."
+        },
+        {
+          "type": "choice",
+          "text": "The two brothers look after ___ .",
+          "options": [
+            "each other",
+            "themselves each",
+            "them",
+            "theirs"
+          ],
+          "answer": 0,
+          "note": "Karşılıklı → each other."
+        },
+        {
+          "type": "choice",
+          "text": "Some like tea, ___ prefer coffee.",
+          "options": [
+            "others",
+            "other",
+            "another",
+            "the other one"
+          ],
+          "answer": 0,
+          "note": "Belirsiz çoğul → others."
+        },
+        {
+          "type": "gap",
+          "text": "Our car is faster than ___ .",
+          "options": [
+            "theirs",
+            "their",
+            "them"
+          ],
+          "answer": 0,
+          "note": "İsim yok → theirs."
+        },
+        {
+          "type": "choice",
+          "text": "That coat is not mine; I think it is ___ .",
+          "options": [
+            "hers",
+            "her",
+            "she",
+            "her's"
+          ],
+          "answer": 0,
+          "note": "İyelik zamiri → hers."
+        },
+        {
+          "type": "choice",
+          "text": "He cut ___ while he was cooking.",
+          "options": [
+            "himself",
+            "him",
+            "his",
+            "he"
+          ],
+          "answer": 0,
+          "note": "Özneyle aynı kişi → himself."
+        },
+        {
+          "type": "choice",
+          "text": "The two brothers never speak to ___ .",
+          "options": [
+            "each other",
+            "themselves",
+            "them",
+            "theirs"
+          ],
+          "answer": 0,
+          "note": "Karşılıklı → each other."
+        },
+        {
+          "type": "gap",
+          "text": "We painted the kitchen ___ .",
+          "options": [
+            "ourselves",
+            "us",
+            "our"
+          ],
+          "answer": 0,
+          "note": "Kendimiz yaptık → ourselves."
+        },
+        {
+          "type": "choice",
+          "text": "Is this book yours or ___ ?",
+          "options": [
+            "theirs",
+            "their",
+            "them",
+            "their's"
+          ],
+          "answer": 0,
+          "note": "İyelik zamiri → theirs."
+        }
       ]
     },
     {
@@ -84,35 +427,202 @@
       "title": "something interesting, here is",
       "topic": "Adjective after -thing pronouns; here is / there is",
       "canDo": "Belirsiz bir şeyi niteleyebilir, bir şeyi uzatırken doğal biçimde konuşabilirim.",
-      "covers": ["NN.thing_JJ", "EX.here.AFF"],
+      "covers": [
+        "NN.thing_JJ",
+        "EX.here.AFF"
+      ],
       "concept": {
         "summary": "İngilizcede sıfat ismin önüne gelir ama something, anyone, nothing gibi zamirlerde tam tersi olur: sıfat arkadan gelir. here is / here are ise bir şeyi uzatırken ya da gösterirken kullanılır.",
-        "formula": { "left": "something / nothing + sıfat", "right": "Here is / Here are + isim" },
+        "formula": {
+          "left": "something / nothing + sıfat",
+          "right": "Here is / Here are + isim"
+        },
         "table": [
-          { "form": "ters sıra", "be": "zamir + sıfat", "example": "something strange" },
-          { "form": "olumsuz", "be": "nothing + sıfat", "example": "nothing new" },
-          { "form": "kişi", "be": "someone + sıfat", "example": "someone reliable" },
-          { "form": "uzatma", "be": "Here is / Here are", "example": "Here is your ticket." }
+          {
+            "form": "ters sıra",
+            "be": "zamir + sıfat",
+            "example": "something strange"
+          },
+          {
+            "form": "olumsuz",
+            "be": "nothing + sıfat",
+            "example": "nothing new"
+          },
+          {
+            "form": "kişi",
+            "be": "someone + sıfat",
+            "example": "someone reliable"
+          },
+          {
+            "form": "uzatma",
+            "be": "Here is / Here are",
+            "example": "Here is your ticket."
+          }
         ]
       },
       "examples": [
-        { "en": "I heard something strange last night.", "tr": "Dün gece tuhaf bir şey duydum.", "note": "Sıfat arkadan geldi." },
-        { "en": "There is nothing interesting on television.", "tr": "Televizyonda ilginç bir şey yok.", "note": "nothing + sıfat." },
-        { "en": "We need someone reliable for this job.", "tr": "Bu iş için güvenilir birine ihtiyacımız var.", "note": "someone + sıfat." },
-        { "en": "Here is your change.", "tr": "Buyurun, para üstünüz.", "note": "Bir şeyi uzatırken." },
-        { "en": "Here are the documents you asked for.", "tr": "İstediğiniz belgeler burada.", "note": "Çoğul → Here are." }
+        {
+          "en": "I heard something strange last night.",
+          "tr": "Dün gece tuhaf bir şey duydum.",
+          "note": "Sıfat arkadan geldi."
+        },
+        {
+          "en": "There is nothing interesting on television.",
+          "tr": "Televizyonda ilginç bir şey yok.",
+          "note": "nothing + sıfat."
+        },
+        {
+          "en": "We need someone reliable for this job.",
+          "tr": "Bu iş için güvenilir birine ihtiyacımız var.",
+          "note": "someone + sıfat."
+        },
+        {
+          "en": "Here is your change.",
+          "tr": "Buyurun, para üstünüz.",
+          "note": "Bir şeyi uzatırken."
+        },
+        {
+          "en": "Here are the documents you asked for.",
+          "tr": "İstediğiniz belgeler burada.",
+          "note": "Çoğul → Here are."
+        }
       ],
       "mistakes": [
-        { "wrong": "I heard strange something.", "right": "I heard something strange.", "why": "Bu zamirlerde sıfat arkadan gelir." },
-        { "wrong": "There is interesting nothing on TV.", "right": "There is nothing interesting on TV.", "why": "Aynı kural nothing için de geçerli." },
-        { "wrong": "Here is the documents.", "right": "Here are the documents.", "why": "Fiil ardındaki çoğul isme uyar." }
+        {
+          "wrong": "I heard strange something.",
+          "right": "I heard something strange.",
+          "why": "Bu zamirlerde sıfat arkadan gelir."
+        },
+        {
+          "wrong": "There is interesting nothing on TV.",
+          "right": "There is nothing interesting on TV.",
+          "why": "Aynı kural nothing için de geçerli."
+        },
+        {
+          "wrong": "Here is the documents.",
+          "right": "Here are the documents.",
+          "why": "Fiil ardındaki çoğul isme uyar."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "Did you buy ___ ?", "options": ["anything nice", "nice anything", "any nice thing not", "nice something"], "answer": 0, "note": "Zamir önce, sıfat sonra." },
-        { "type": "choice", "text": "There was ___ in the fridge.", "options": ["nothing fresh", "fresh nothing", "no fresh nothing", "not fresh anything"], "answer": 0, "note": "nothing + sıfat." },
-        { "type": "choice", "text": "I met ___ at the conference.", "options": ["someone famous", "famous someone", "a famous someone", "someone of famous"], "answer": 0, "note": "someone + sıfat." },
-        { "type": "choice", "text": "___ your coffee.", "options": ["Here is", "Here are", "Here it is the", "Here have"], "answer": 0, "note": "Tekil → Here is." },
-        { "type": "gap", "text": "___ the keys you lost.", "options": ["Here are", "Here is", "Here have"], "answer": 0, "note": "keys çoğul → Here are." }
+        {
+          "type": "choice",
+          "text": "Did you buy ___ ?",
+          "options": [
+            "anything nice",
+            "nice anything",
+            "any nice thing not",
+            "nice something"
+          ],
+          "answer": 0,
+          "note": "Zamir önce, sıfat sonra."
+        },
+        {
+          "type": "choice",
+          "text": "There was ___ in the fridge.",
+          "options": [
+            "nothing fresh",
+            "fresh nothing",
+            "no fresh nothing",
+            "not fresh anything"
+          ],
+          "answer": 0,
+          "note": "nothing + sıfat."
+        },
+        {
+          "type": "choice",
+          "text": "I met ___ at the conference.",
+          "options": [
+            "someone famous",
+            "famous someone",
+            "a famous someone",
+            "someone of famous"
+          ],
+          "answer": 0,
+          "note": "someone + sıfat."
+        },
+        {
+          "type": "choice",
+          "text": "___ your coffee.",
+          "options": [
+            "Here is",
+            "Here are",
+            "Here it is the",
+            "Here have"
+          ],
+          "answer": 0,
+          "note": "Tekil → Here is."
+        },
+        {
+          "type": "gap",
+          "text": "___ the keys you lost.",
+          "options": [
+            "Here are",
+            "Here is",
+            "Here have"
+          ],
+          "answer": 0,
+          "note": "keys çoğul → Here are."
+        },
+        {
+          "type": "choice",
+          "text": "I read ___ about it in the paper yesterday.",
+          "options": [
+            "something interesting",
+            "interesting something",
+            "something interested",
+            "interesting anything"
+          ],
+          "answer": 0,
+          "note": "Sıfat belgisiz zamirden sonra gelir."
+        },
+        {
+          "type": "choice",
+          "text": "Is there ___ in this article?",
+          "options": [
+            "anything new",
+            "new anything",
+            "anything news",
+            "any new thing of"
+          ],
+          "answer": 0,
+          "note": "anything + sıfat."
+        },
+        {
+          "type": "choice",
+          "text": "___ your keys, on the shelf.",
+          "options": [
+            "Here are",
+            "Here is",
+            "Here have",
+            "Here it is"
+          ],
+          "answer": 0,
+          "note": "Çoğul → Here are."
+        },
+        {
+          "type": "gap",
+          "text": "There is ___ wrong with this computer.",
+          "options": [
+            "something",
+            "some",
+            "thing some"
+          ],
+          "answer": 0,
+          "note": "something + sıfat."
+        },
+        {
+          "type": "choice",
+          "text": "We met ___ at the conference.",
+          "options": [
+            "nobody interesting",
+            "interesting nobody",
+            "nobody interested",
+            "no interesting body"
+          ],
+          "answer": 0,
+          "note": "nobody + sıfat."
+        }
       ]
     },
     {
@@ -122,35 +632,202 @@
       "title": "fortunately, much better",
       "topic": "Attitude adverbs and intensified comparatives",
       "canDo": "Söylediğim şeye tavrımı katabilir, karşılaştırmayı güçlendirebilirim.",
-      "covers": ["RB.ATT", "COMP.even_JJR.RBR"],
+      "covers": [
+        "RB.ATT",
+        "COMP.even_JJR.RBR"
+      ],
       "concept": {
         "summary": "Bazı zarflar cümlenin içeriğine değil, konuşanın o içeriğe bakışına yorum katar: fortunately, apparently, obviously. Genelde cümlenin başında dururlar. Karşılaştırmayı güçlendirmek içinse much, far, a lot ve even kullanılır — very değil.",
-        "formula": { "left": "Fortunately / Apparently + cümle", "right": "much / far / even + karşılaştırma" },
+        "formula": {
+          "left": "Fortunately / Apparently + cümle",
+          "right": "much / far / even + karşılaştırma"
+        },
         "table": [
-          { "form": "tavır", "be": "fortunately, luckily", "example": "Fortunately, nobody was hurt." },
-          { "form": "aktarım", "be": "apparently", "example": "Apparently, they moved abroad." },
-          { "form": "güçlendirme", "be": "much / far / a lot", "example": "much better, far worse" },
-          { "form": "even", "be": "daha da", "example": "even cheaper" }
+          {
+            "form": "tavır",
+            "be": "fortunately, luckily",
+            "example": "Fortunately, nobody was hurt."
+          },
+          {
+            "form": "aktarım",
+            "be": "apparently",
+            "example": "Apparently, they moved abroad."
+          },
+          {
+            "form": "güçlendirme",
+            "be": "much / far / a lot",
+            "example": "much better, far worse"
+          },
+          {
+            "form": "even",
+            "be": "daha da",
+            "example": "even cheaper"
+          }
         ]
       },
       "examples": [
-        { "en": "Fortunately, nobody was injured.", "tr": "Neyse ki kimse yaralanmadı.", "note": "Cümle başında, virgülle." },
-        { "en": "Apparently, the shop has closed down.", "tr": "Görünüşe göre dükkân kapanmış.", "note": "Duyuma dayalı aktarım." },
-        { "en": "This route is much faster.", "tr": "Bu güzergâh çok daha hızlı.", "note": "much + karşılaştırma." },
-        { "en": "The second book was even better.", "tr": "İkinci kitap daha da iyiydi.", "note": "even = daha da." },
-        { "en": "Prices are far higher this year.", "tr": "Fiyatlar bu yıl çok daha yüksek.", "note": "far = çok." }
+        {
+          "en": "Fortunately, nobody was injured.",
+          "tr": "Neyse ki kimse yaralanmadı.",
+          "note": "Cümle başında, virgülle."
+        },
+        {
+          "en": "Apparently, the shop has closed down.",
+          "tr": "Görünüşe göre dükkân kapanmış.",
+          "note": "Duyuma dayalı aktarım."
+        },
+        {
+          "en": "This route is much faster.",
+          "tr": "Bu güzergâh çok daha hızlı.",
+          "note": "much + karşılaştırma."
+        },
+        {
+          "en": "The second book was even better.",
+          "tr": "İkinci kitap daha da iyiydi.",
+          "note": "even = daha da."
+        },
+        {
+          "en": "Prices are far higher this year.",
+          "tr": "Fiyatlar bu yıl çok daha yüksek.",
+          "note": "far = çok."
+        }
       ],
       "mistakes": [
-        { "wrong": "This route is very faster.", "right": "This route is much faster.", "why": "very karşılaştırmayı güçlendiremez." },
-        { "wrong": "Fortunately nobody was injured however.", "right": "Fortunately, nobody was injured.", "why": "Tek bir tavır zarfı yeter." },
-        { "wrong": "The book was even good.", "right": "The book was even better.", "why": "even karşılaştırma biçimiyle kullanılır." }
+        {
+          "wrong": "This route is very faster.",
+          "right": "This route is much faster.",
+          "why": "very karşılaştırmayı güçlendiremez."
+        },
+        {
+          "wrong": "Fortunately nobody was injured however.",
+          "right": "Fortunately, nobody was injured.",
+          "why": "Tek bir tavır zarfı yeter."
+        },
+        {
+          "wrong": "The book was even good.",
+          "right": "The book was even better.",
+          "why": "even karşılaştırma biçimiyle kullanılır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "___ , we found the keys.", "options": ["Luckily", "Lucky", "Luck", "With luck of"], "answer": 0, "note": "Tavır zarfı cümle başında." },
-        { "type": "choice", "text": "This laptop is ___ lighter than mine.", "options": ["much", "very", "too", "so much of"], "answer": 0, "note": "Karşılaştırmayı much güçlendirir." },
-        { "type": "choice", "text": "The film was ___ worse than the book.", "options": ["far", "very", "too", "quite a"], "answer": 0, "note": "far + karşılaştırma." },
-        { "type": "choice", "text": "___ , he never got the letter.", "options": ["Apparently", "Apparent", "Appear", "In apparently"], "answer": 0, "note": "Aktarım → Apparently." },
-        { "type": "gap", "text": "Today is ___ colder than yesterday.", "options": ["even", "very", "so"], "answer": 0, "note": "even + karşılaştırma." }
+        {
+          "type": "choice",
+          "text": "___ , we found the keys.",
+          "options": [
+            "Luckily",
+            "Lucky",
+            "Luck",
+            "With luck of"
+          ],
+          "answer": 0,
+          "note": "Tavır zarfı cümle başında."
+        },
+        {
+          "type": "choice",
+          "text": "This laptop is ___ lighter than mine.",
+          "options": [
+            "much",
+            "very",
+            "too",
+            "so much of"
+          ],
+          "answer": 0,
+          "note": "Karşılaştırmayı much güçlendirir."
+        },
+        {
+          "type": "choice",
+          "text": "The film was ___ worse than the book.",
+          "options": [
+            "far",
+            "very",
+            "too",
+            "quite a"
+          ],
+          "answer": 0,
+          "note": "far + karşılaştırma."
+        },
+        {
+          "type": "choice",
+          "text": "___ , he never got the letter.",
+          "options": [
+            "Apparently",
+            "Apparent",
+            "Appear",
+            "In apparently"
+          ],
+          "answer": 0,
+          "note": "Aktarım → Apparently."
+        },
+        {
+          "type": "gap",
+          "text": "Today is ___ colder than yesterday.",
+          "options": [
+            "even",
+            "very",
+            "so"
+          ],
+          "answer": 0,
+          "note": "even + karşılaştırma."
+        },
+        {
+          "type": "choice",
+          "text": "___ , nobody was hurt in the accident.",
+          "options": [
+            "Fortunately",
+            "Fortunate",
+            "Fortune",
+            "Fortunately that"
+          ],
+          "answer": 0,
+          "note": "Cümle zarfı başta, virgülle."
+        },
+        {
+          "type": "choice",
+          "text": "This year the results are ___ better.",
+          "options": [
+            "much",
+            "very",
+            "too",
+            "so much of"
+          ],
+          "answer": 0,
+          "note": "Karşılaştırmayı güçlendiren → much better."
+        },
+        {
+          "type": "choice",
+          "text": "___ , the train was cancelled.",
+          "options": [
+            "Unfortunately",
+            "Unfortunate",
+            "Unfortune",
+            "Unluck"
+          ],
+          "answer": 0,
+          "note": "Olumsuz tutum zarfı."
+        },
+        {
+          "type": "gap",
+          "text": "The second half was ___ more exciting than the first.",
+          "options": [
+            "far",
+            "very",
+            "too"
+          ],
+          "answer": 0,
+          "note": "far more = çok daha."
+        },
+        {
+          "type": "choice",
+          "text": "___ , she had already sent the message.",
+          "options": [
+            "Luckily",
+            "Lucky",
+            "Luck",
+            "Luckily of"
+          ],
+          "answer": 0,
+          "note": "Zarf biçimi → luckily."
+        }
       ]
     },
     {
@@ -160,35 +837,203 @@
       "title": "not to, for you to, be to",
       "topic": "Extended to-infinitive patterns",
       "canDo": "Bir şeyi yapmamayı söyleyebilir, kimin yapacağını belirtebilirim.",
-      "covers": ["TO.not_to_do", "TO.for_NP_to_do", "TO.be_to_do"],
+      "covers": [
+        "TO.not_to_do",
+        "TO.for_NP_to_do",
+        "TO.be_to_do"
+      ],
       "concept": {
         "summary": "to'lu yapı olumsuzlanırken not, to'dan önce gelir: not to be late. Eylemi yapacak kişi cümlenin öznesinden farklıysa for ile eklenir: for you to decide. be to ise resmî dilde plan ve talimat bildirir.",
-        "formula": { "left": "not + to + fiil", "right": "for + kişi + to + fiil" },
+        "formula": {
+          "left": "not + to + fiil",
+          "right": "for + kişi + to + fiil"
+        },
         "table": [
-          { "form": "olumsuz", "be": "not to", "example": "I decided not to go." },
-          { "form": "farklı özne", "be": "for + kişi + to", "example": "It is important for him to rest." },
-          { "form": "resmî plan", "be": "be to", "example": "The minister is to visit Ankara." },
-          { "form": "uyarı", "be": "told me not to", "example": "She told me not to worry." }
+          {
+            "form": "olumsuz",
+            "be": "not to",
+            "example": "I decided not to go."
+          },
+          {
+            "form": "farklı özne",
+            "be": "for + kişi + to",
+            "example": "It is important for him to rest."
+          },
+          {
+            "form": "resmî plan",
+            "be": "be to",
+            "example": "The minister is to visit Ankara."
+          },
+          {
+            "form": "uyarı",
+            "be": "told me not to",
+            "example": "She told me not to worry."
+          }
         ]
       },
       "examples": [
-        { "en": "He decided not to accept the offer.", "tr": "Teklifi kabul etmemeye karar verdi.", "note": "not, to'dan önce." },
-        { "en": "It is difficult for me to say no.", "tr": "Hayır demek benim için zor.", "note": "Eylemi yapan for ile belirtildi." },
-        { "en": "The president is to open the new hospital.", "tr": "Cumhurbaşkanı yeni hastaneyi açacak.", "note": "Resmî dilde planlanmış olay." },
-        { "en": "She asked me not to tell anyone.", "tr": "Kimseye söylememi istemedi.", "note": "Dolaylı olumsuz rica." },
-        { "en": "We waited for the rain to stop.", "tr": "Yağmurun durmasını bekledik.", "note": "for + özne + to." }
+        {
+          "en": "He decided not to accept the offer.",
+          "tr": "Teklifi kabul etmemeye karar verdi.",
+          "note": "not, to'dan önce."
+        },
+        {
+          "en": "It is difficult for me to say no.",
+          "tr": "Hayır demek benim için zor.",
+          "note": "Eylemi yapan for ile belirtildi."
+        },
+        {
+          "en": "The president is to open the new hospital.",
+          "tr": "Cumhurbaşkanı yeni hastaneyi açacak.",
+          "note": "Resmî dilde planlanmış olay."
+        },
+        {
+          "en": "She asked me not to tell anyone.",
+          "tr": "Kimseye söylememi istemedi.",
+          "note": "Dolaylı olumsuz rica."
+        },
+        {
+          "en": "We waited for the rain to stop.",
+          "tr": "Yağmurun durmasını bekledik.",
+          "note": "for + özne + to."
+        }
       ],
       "mistakes": [
-        { "wrong": "He decided to not accept the offer.", "right": "He decided not to accept the offer.", "why": "not, to'nun önüne gelir." },
-        { "wrong": "It is difficult to me to say no.", "right": "It is difficult for me to say no.", "why": "Eylemi yapan kişi for ile eklenir." },
-        { "wrong": "She asked me to not tell anyone.", "right": "She asked me not to tell anyone.", "why": "Aynı kural: not + to." }
+        {
+          "wrong": "He decided to not accept the offer.",
+          "right": "He decided not to accept the offer.",
+          "why": "not, to'nun önüne gelir."
+        },
+        {
+          "wrong": "It is difficult to me to say no.",
+          "right": "It is difficult for me to say no.",
+          "why": "Eylemi yapan kişi for ile eklenir."
+        },
+        {
+          "wrong": "She asked me to not tell anyone.",
+          "right": "She asked me not to tell anyone.",
+          "why": "Aynı kural: not + to."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "I promised ___ late again.", "options": ["not to be", "to not be", "to be not", "not being"], "answer": 0, "note": "not + to + fiil." },
-        { "type": "choice", "text": "It is important ___ the children to sleep early.", "options": ["for", "to", "of", "that"], "answer": 0, "note": "Farklı özne → for." },
-        { "type": "choice", "text": "The team ___ leave on Monday.", "options": ["is to", "is for", "is going", "will to"], "answer": 0, "note": "Resmî plan → be to." },
-        { "type": "choice", "text": "He told us ___ the door open.", "options": ["not to leave", "to not leave", "not leaving", "don't leave"], "answer": 0, "note": "Dolaylı olumsuz emir." },
-        { "type": "gap", "text": "We are waiting ___ the bus to arrive.", "options": ["for", "to", "that"], "answer": 0, "note": "for + özne + to." }
+        {
+          "type": "choice",
+          "text": "I promised ___ late again.",
+          "options": [
+            "not to be",
+            "to not be",
+            "to be not",
+            "not being"
+          ],
+          "answer": 0,
+          "note": "not + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "It is important ___ the children to sleep early.",
+          "options": [
+            "for",
+            "to",
+            "of",
+            "that"
+          ],
+          "answer": 0,
+          "note": "Farklı özne → for."
+        },
+        {
+          "type": "choice",
+          "text": "The team ___ leave on Monday.",
+          "options": [
+            "is to",
+            "is for",
+            "is going",
+            "will to"
+          ],
+          "answer": 0,
+          "note": "Resmî plan → be to."
+        },
+        {
+          "type": "choice",
+          "text": "He told us ___ the door open.",
+          "options": [
+            "not to leave",
+            "to not leave",
+            "not leaving",
+            "don't leave"
+          ],
+          "answer": 0,
+          "note": "Dolaylı olumsuz emir."
+        },
+        {
+          "type": "gap",
+          "text": "We are waiting ___ the bus to arrive.",
+          "options": [
+            "for",
+            "to",
+            "that"
+          ],
+          "answer": 0,
+          "note": "for + özne + to."
+        },
+        {
+          "type": "choice",
+          "text": "He decided ___ tell anybody.",
+          "options": [
+            "not to",
+            "to not",
+            "do not to",
+            "not"
+          ],
+          "answer": 0,
+          "note": "Olumsuz mastar → not to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "It is important ___ you to be on time.",
+          "options": [
+            "for",
+            "to",
+            "that",
+            "of"
+          ],
+          "answer": 0,
+          "note": "for + kişi + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "The meeting ___ to begin at nine.",
+          "options": [
+            "is",
+            "will",
+            "has",
+            "does"
+          ],
+          "answer": 0,
+          "note": "Resmî düzenleme → be to + fiil."
+        },
+        {
+          "type": "gap",
+          "text": "She promised ___ late again.",
+          "options": [
+            "not to be",
+            "to not be",
+            "not being"
+          ],
+          "answer": 0,
+          "note": "not to be."
+        },
+        {
+          "type": "choice",
+          "text": "It would be better ___ us to wait here.",
+          "options": [
+            "for",
+            "to",
+            "of",
+            "that"
+          ],
+          "answer": 0,
+          "note": "for + kişi + to."
+        }
       ]
     }
   ]

@@ -1,5 +1,9 @@
 {
-  "_meta": { "batch": "b1-03", "level": "B1", "range": "Ders 11-14 — wh + to, dolaylı emir, ilgi cümlecikleri, ortaç yapıları" },
+  "_meta": {
+    "batch": "b1-03",
+    "level": "B1",
+    "range": "Ders 11-14 — wh + to, dolaylı emir, ilgi cümlecikleri, ortaç yapıları"
+  },
   "lessons": [
     {
       "id": "b1-11-wh-to-clauses",
@@ -8,35 +12,203 @@
       "title": "what to do, where to go",
       "topic": "Wh- + to-infinitive; wh-clauses as objects",
       "canDo": "Ne yapacağımı bilmediğimi söyleyebilir, seçenekler üzerine konuşabilirim.",
-      "covers": ["TO.WH_to_do", "CL.WH.OBJ", "RBREL.NOANT"],
+      "covers": [
+        "TO.WH_to_do",
+        "CL.WH.OBJ",
+        "RBREL.NOANT"
+      ],
       "concept": {
         "summary": "know, decide ve wonder gibi fiillerden sonra soru kelimesiyle başlayan bir parça gelebilir. Bu parça ya tam bir cümlecik olur (where she lives) ya da kısaltılıp to alır (where to go). Kısaltma ancak özne ikisinde de aynıysa yapılabilir.",
-        "formula": { "left": "soru kelimesi + to + fiil", "right": "soru kelimesi + özne + fiil" },
+        "formula": {
+          "left": "soru kelimesi + to + fiil",
+          "right": "soru kelimesi + özne + fiil"
+        },
         "table": [
-          { "form": "kısa biçim", "be": "what to do", "example": "I don't know what to do." },
-          { "form": "tam cümlecik", "be": "what he wants", "example": "I don't know what he wants." },
-          { "form": "koşul", "be": "özne aynı olmalı", "example": "I know where to go. (ben giderim)" },
-          { "form": "öncülsüz", "be": "where / when tek başına", "example": "This is where I work." }
+          {
+            "form": "kısa biçim",
+            "be": "what to do",
+            "example": "I don't know what to do."
+          },
+          {
+            "form": "tam cümlecik",
+            "be": "what he wants",
+            "example": "I don't know what he wants."
+          },
+          {
+            "form": "koşul",
+            "be": "özne aynı olmalı",
+            "example": "I know where to go. (ben giderim)"
+          },
+          {
+            "form": "öncülsüz",
+            "be": "where / when tek başına",
+            "example": "This is where I work."
+          }
         ]
       },
       "examples": [
-        { "en": "I don't know what to say.", "tr": "Ne diyeceğimi bilmiyorum.", "note": "Özne aynı → kısa biçim." },
-        { "en": "She hasn't decided where to study.", "tr": "Nerede okuyacağına karar vermedi.", "note": "decide + where to." },
-        { "en": "Can you show me how to use this?", "tr": "Bunu nasıl kullanacağımı gösterir misin?", "note": "how to + fiil." },
-        { "en": "I wonder why he left so early.", "tr": "Neden bu kadar erken gittiğini merak ediyorum.", "note": "Özne farklı → tam cümlecik." },
-        { "en": "This is where I grew up.", "tr": "Burası büyüdüğüm yer.", "note": "where tek başına, öncül almadan." }
+        {
+          "en": "I don't know what to say.",
+          "tr": "Ne diyeceğimi bilmiyorum.",
+          "note": "Özne aynı → kısa biçim."
+        },
+        {
+          "en": "She hasn't decided where to study.",
+          "tr": "Nerede okuyacağına karar vermedi.",
+          "note": "decide + where to."
+        },
+        {
+          "en": "Can you show me how to use this?",
+          "tr": "Bunu nasıl kullanacağımı gösterir misin?",
+          "note": "how to + fiil."
+        },
+        {
+          "en": "I wonder why he left so early.",
+          "tr": "Neden bu kadar erken gittiğini merak ediyorum.",
+          "note": "Özne farklı → tam cümlecik."
+        },
+        {
+          "en": "This is where I grew up.",
+          "tr": "Burası büyüdüğüm yer.",
+          "note": "where tek başına, öncül almadan."
+        }
       ],
       "mistakes": [
-        { "wrong": "I don't know what I should to do.", "right": "I don't know what to do.", "why": "Kısa biçimde to yeterlidir." },
-        { "wrong": "I don't know what does he want.", "right": "I don't know what he wants.", "why": "İç cümlecikte soru düzeni kullanılmaz." },
-        { "wrong": "She decided where I to study.", "right": "She decided where to study.", "why": "Kısa biçimde araya özne girmez." }
+        {
+          "wrong": "I don't know what I should to do.",
+          "right": "I don't know what to do.",
+          "why": "Kısa biçimde to yeterlidir."
+        },
+        {
+          "wrong": "I don't know what does he want.",
+          "right": "I don't know what he wants.",
+          "why": "İç cümlecikte soru düzeni kullanılmaz."
+        },
+        {
+          "wrong": "She decided where I to study.",
+          "right": "She decided where to study.",
+          "why": "Kısa biçimde araya özne girmez."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "We haven't decided ___ for the holiday.", "options": ["where to go", "where we to go", "where going", "where do we go"], "answer": 0, "note": "Özne aynı → where to go." },
-        { "type": "choice", "text": "Do you know ___ the meeting starts?", "options": ["when", "when to", "when does", "that when"], "answer": 0, "note": "Farklı özne → tam cümlecik." },
-        { "type": "choice", "text": "She showed me ___ the machine.", "options": ["how to use", "how using", "how I use to", "how do I use"], "answer": 0, "note": "how to + yalın fiil." },
-        { "type": "choice", "text": "I wonder ___ he didn't call.", "options": ["why", "why to", "why does", "that why"], "answer": 0, "note": "Sebep + tam cümlecik." },
-        { "type": "gap", "text": "That café is ___ we first met.", "options": ["where", "which", "what"], "answer": 0, "note": "Yer bildiren öncülsüz where." }
+        {
+          "type": "choice",
+          "text": "We haven't decided ___ for the holiday.",
+          "options": [
+            "where to go",
+            "where we to go",
+            "where going",
+            "where do we go"
+          ],
+          "answer": 0,
+          "note": "Özne aynı → where to go."
+        },
+        {
+          "type": "choice",
+          "text": "Do you know ___ the meeting starts?",
+          "options": [
+            "when",
+            "when to",
+            "when does",
+            "that when"
+          ],
+          "answer": 0,
+          "note": "Farklı özne → tam cümlecik."
+        },
+        {
+          "type": "choice",
+          "text": "She showed me ___ the machine.",
+          "options": [
+            "how to use",
+            "how using",
+            "how I use to",
+            "how do I use"
+          ],
+          "answer": 0,
+          "note": "how to + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "I wonder ___ he didn't call.",
+          "options": [
+            "why",
+            "why to",
+            "why does",
+            "that why"
+          ],
+          "answer": 0,
+          "note": "Sebep + tam cümlecik."
+        },
+        {
+          "type": "gap",
+          "text": "That café is ___ we first met.",
+          "options": [
+            "where",
+            "which",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Yer bildiren öncülsüz where."
+        },
+        {
+          "type": "choice",
+          "text": "I do not know ___ in this situation.",
+          "options": [
+            "what to do",
+            "what do",
+            "what to doing",
+            "to what do"
+          ],
+          "answer": 0,
+          "note": "wh- + to + yalın fiil."
+        },
+        {
+          "type": "choice",
+          "text": "Can you show me ___ the machine?",
+          "options": [
+            "how to use",
+            "how use",
+            "how using",
+            "to how use"
+          ],
+          "answer": 0,
+          "note": "how to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "We have not decided ___ yet.",
+          "options": [
+            "where to go",
+            "where go",
+            "where going",
+            "to where go"
+          ],
+          "answer": 0,
+          "note": "where to + fiil."
+        },
+        {
+          "type": "gap",
+          "text": "She could not remember ___ the letter.",
+          "options": [
+            "where to put",
+            "where put",
+            "to where put"
+          ],
+          "answer": 0,
+          "note": "where to put."
+        },
+        {
+          "type": "choice",
+          "text": "He asked me ___ first.",
+          "options": [
+            "who to call",
+            "who call",
+            "who calling",
+            "to who call"
+          ],
+          "answer": 0,
+          "note": "who to + fiil."
+        }
       ]
     },
     {
@@ -46,35 +218,203 @@
       "title": "ask / tell somebody to do",
       "topic": "Reported commands and requests",
       "canDo": "Başkasının ricasını ve emrini aktarabilirim.",
-      "covers": ["CAUS.ask.tell_NP_to_do", "INDSP.tell", "INDQ.ask.etc"],
+      "covers": [
+        "CAUS.ask.tell_NP_to_do",
+        "INDSP.tell",
+        "INDQ.ask.etc"
+      ],
       "concept": {
         "summary": "Emir ve rica aktarılırken that'li cümlecik kurulmaz; kişi yazılır, ardından to'lu fiil gelir. Olumsuzunda not, to'dan önce durur. Soru aktarılırken ask kullanılır ve iç cümlede soru düzeni bozulur.",
-        "formula": { "left": "asked / told + kişi + to + fiil", "right": "asked + kişi + soru kelimesi + özne + fiil" },
+        "formula": {
+          "left": "asked / told + kişi + to + fiil",
+          "right": "asked + kişi + soru kelimesi + özne + fiil"
+        },
         "table": [
-          { "form": "rica", "be": "ask + kişi + to", "example": "She asked me to wait." },
-          { "form": "emir", "be": "tell + kişi + to", "example": "He told us to stop." },
-          { "form": "olumsuz", "be": "not to", "example": "They told him not to move." },
-          { "form": "soru aktarımı", "be": "ask + kişi + wh-", "example": "He asked me where I lived." }
+          {
+            "form": "rica",
+            "be": "ask + kişi + to",
+            "example": "She asked me to wait."
+          },
+          {
+            "form": "emir",
+            "be": "tell + kişi + to",
+            "example": "He told us to stop."
+          },
+          {
+            "form": "olumsuz",
+            "be": "not to",
+            "example": "They told him not to move."
+          },
+          {
+            "form": "soru aktarımı",
+            "be": "ask + kişi + wh-",
+            "example": "He asked me where I lived."
+          }
         ]
       },
       "examples": [
-        { "en": "The teacher told us to open our books.", "tr": "Öğretmen kitaplarımızı açmamızı söyledi.", "note": "tell + kişi + to." },
-        { "en": "She asked me to help her with the boxes.", "tr": "Kutularda ona yardım etmemi istedi.", "note": "ask = rica." },
-        { "en": "The guard told them not to take photos.", "tr": "Görevli fotoğraf çekmemelerini söyledi.", "note": "not, to'dan önce." },
-        { "en": "He asked me where I worked.", "tr": "Nerede çalıştığımı sordu.", "note": "İç cümlede düz sıra." },
-        { "en": "She asked if I could drive.", "tr": "Araba kullanıp kullanamadığımı sordu.", "note": "Evet-hayır sorusu → if." }
+        {
+          "en": "The teacher told us to open our books.",
+          "tr": "Öğretmen kitaplarımızı açmamızı söyledi.",
+          "note": "tell + kişi + to."
+        },
+        {
+          "en": "She asked me to help her with the boxes.",
+          "tr": "Kutularda ona yardım etmemi istedi.",
+          "note": "ask = rica."
+        },
+        {
+          "en": "The guard told them not to take photos.",
+          "tr": "Görevli fotoğraf çekmemelerini söyledi.",
+          "note": "not, to'dan önce."
+        },
+        {
+          "en": "He asked me where I worked.",
+          "tr": "Nerede çalıştığımı sordu.",
+          "note": "İç cümlede düz sıra."
+        },
+        {
+          "en": "She asked if I could drive.",
+          "tr": "Araba kullanıp kullanamadığımı sordu.",
+          "note": "Evet-hayır sorusu → if."
+        }
       ],
       "mistakes": [
-        { "wrong": "She asked me that I wait.", "right": "She asked me to wait.", "why": "Rica aktarımında that'li cümlecik kullanılmaz." },
-        { "wrong": "He asked me where did I work.", "right": "He asked me where I worked.", "why": "Aktarılan soruda soru düzeni bozulur." },
-        { "wrong": "The teacher said us to open our books.", "right": "The teacher told us to open our books.", "why": "say kişi almaz, tell alır." }
+        {
+          "wrong": "She asked me that I wait.",
+          "right": "She asked me to wait.",
+          "why": "Rica aktarımında that'li cümlecik kullanılmaz."
+        },
+        {
+          "wrong": "He asked me where did I work.",
+          "right": "He asked me where I worked.",
+          "why": "Aktarılan soruda soru düzeni bozulur."
+        },
+        {
+          "wrong": "The teacher said us to open our books.",
+          "right": "The teacher told us to open our books.",
+          "why": "say kişi almaz, tell alır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "My boss ___ me to finish the report.", "options": ["asked", "said", "spoke", "told to"], "answer": 0, "note": "ask/tell + kişi + to." },
-        { "type": "choice", "text": "They told us ___ in the corridor.", "options": ["not to wait", "to not wait", "don't wait", "not waiting"], "answer": 0, "note": "not + to." },
-        { "type": "choice", "text": "She asked me what time ___ .", "options": ["I finished", "did I finish", "do I finish", "finished I"], "answer": 0, "note": "Aktarılan soruda düz sıra." },
-        { "type": "choice", "text": "He asked ___ I wanted a lift.", "options": ["if", "that", "what", "to"], "answer": 0, "note": "Evet-hayır sorusu → if." },
-        { "type": "gap", "text": "The doctor told him ___ more water.", "options": ["to drink", "drink", "that drink"], "answer": 0, "note": "tell + kişi + to + fiil." }
+        {
+          "type": "choice",
+          "text": "My boss ___ me to finish the report.",
+          "options": [
+            "asked",
+            "said",
+            "spoke",
+            "told to"
+          ],
+          "answer": 0,
+          "note": "ask/tell + kişi + to."
+        },
+        {
+          "type": "choice",
+          "text": "They told us ___ in the corridor.",
+          "options": [
+            "not to wait",
+            "to not wait",
+            "don't wait",
+            "not waiting"
+          ],
+          "answer": 0,
+          "note": "not + to."
+        },
+        {
+          "type": "choice",
+          "text": "She asked me what time ___ .",
+          "options": [
+            "I finished",
+            "did I finish",
+            "do I finish",
+            "finished I"
+          ],
+          "answer": 0,
+          "note": "Aktarılan soruda düz sıra."
+        },
+        {
+          "type": "choice",
+          "text": "He asked ___ I wanted a lift.",
+          "options": [
+            "if",
+            "that",
+            "what",
+            "to"
+          ],
+          "answer": 0,
+          "note": "Evet-hayır sorusu → if."
+        },
+        {
+          "type": "gap",
+          "text": "The doctor told him ___ more water.",
+          "options": [
+            "to drink",
+            "drink",
+            "that drink"
+          ],
+          "answer": 0,
+          "note": "tell + kişi + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "The doctor told me ___ more water.",
+          "options": [
+            "to drink",
+            "drink",
+            "drinking",
+            "that drink"
+          ],
+          "answer": 0,
+          "note": "tell + kişi + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "She asked her brother ___ her with the boxes.",
+          "options": [
+            "to help",
+            "help",
+            "helping",
+            "helps"
+          ],
+          "answer": 0,
+          "note": "ask + kişi + to + fiil."
+        },
+        {
+          "type": "choice",
+          "text": "The guard told the visitors ___ photographs inside.",
+          "options": [
+            "not to take",
+            "to not take",
+            "do not take",
+            "not taking"
+          ],
+          "answer": 0,
+          "note": "Olumsuz → not to + fiil."
+        },
+        {
+          "type": "gap",
+          "text": "I asked him ___ the window.",
+          "options": [
+            "to close",
+            "close",
+            "closing"
+          ],
+          "answer": 0,
+          "note": "ask + kişi + to."
+        },
+        {
+          "type": "choice",
+          "text": "The teacher wants everyone ___ the text at home.",
+          "options": [
+            "to read",
+            "read",
+            "reading",
+            "reads"
+          ],
+          "answer": 0,
+          "note": "want + kişi + to + fiil."
+        }
       ]
     },
     {
@@ -84,35 +424,203 @@
       "title": "İlgi cümleciklerinde ayrıntı",
       "topic": "Non-restrictive clauses, omitted pronoun, preposition stranding",
       "canDo": "Ek bilgi verebilir, günlük dilde doğal ilgi cümlecikleri kurabilirim.",
-      "covers": ["PREL.NR", "PRELO.OMIT", "PREP.STRAND"],
+      "covers": [
+        "PREL.NR",
+        "PRELO.OMIT",
+        "PREP.STRAND"
+      ],
       "concept": {
         "summary": "İlgi cümleciği iki iş görebilir: hangisinden söz ettiğimizi belirlemek ya da bilineni ek bilgiyle genişletmek. İkincisinde virgül kullanılır ve that kullanılamaz. İlgi zamiri nesne konumundaysa düşürülebilir; edat ise günlük dilde cümlenin sonunda kalır.",
-        "formula": { "left": ", which / who + ek bilgi", "right": "nesne konumunda zamir düşer" },
+        "formula": {
+          "left": ", which / who + ek bilgi",
+          "right": "nesne konumunda zamir düşer"
+        },
         "table": [
-          { "form": "belirleyen", "be": "virgülsüz", "example": "The man who called is my uncle." },
-          { "form": "ek bilgi", "be": "virgüllü", "example": "My uncle, who lives in Bursa, called." },
-          { "form": "düşen zamir", "be": "nesne konumunda", "example": "the film (that) we saw" },
-          { "form": "edat sonda", "be": "günlük dil", "example": "the person I told you about" }
+          {
+            "form": "belirleyen",
+            "be": "virgülsüz",
+            "example": "The man who called is my uncle."
+          },
+          {
+            "form": "ek bilgi",
+            "be": "virgüllü",
+            "example": "My uncle, who lives in Bursa, called."
+          },
+          {
+            "form": "düşen zamir",
+            "be": "nesne konumunda",
+            "example": "the film (that) we saw"
+          },
+          {
+            "form": "edat sonda",
+            "be": "günlük dil",
+            "example": "the person I told you about"
+          }
         ]
       },
       "examples": [
-        { "en": "My sister, who works in Berlin, is visiting us.", "tr": "Berlin'de çalışan kız kardeşim bizi ziyaret ediyor.", "note": "Tek kardeş var; bilgi ek." },
-        { "en": "The book I bought yesterday is excellent.", "tr": "Dün aldığım kitap çok iyi.", "note": "that düşürüldü, nesne konumunda." },
-        { "en": "Who are you waiting for?", "tr": "Kimi bekliyorsun?", "note": "Edat sonda kaldı." },
-        { "en": "This is the colleague I work with.", "tr": "Birlikte çalıştığım meslektaşım bu.", "note": "with cümle sonunda." },
-        { "en": "The hotel, which opened last year, is already full.", "tr": "Geçen yıl açılan otel şimdiden dolu.", "note": "Virgüllü yapıda that kullanılamaz." }
+        {
+          "en": "My sister, who works in Berlin, is visiting us.",
+          "tr": "Berlin'de çalışan kız kardeşim bizi ziyaret ediyor.",
+          "note": "Tek kardeş var; bilgi ek."
+        },
+        {
+          "en": "The book I bought yesterday is excellent.",
+          "tr": "Dün aldığım kitap çok iyi.",
+          "note": "that düşürüldü, nesne konumunda."
+        },
+        {
+          "en": "Who are you waiting for?",
+          "tr": "Kimi bekliyorsun?",
+          "note": "Edat sonda kaldı."
+        },
+        {
+          "en": "This is the colleague I work with.",
+          "tr": "Birlikte çalıştığım meslektaşım bu.",
+          "note": "with cümle sonunda."
+        },
+        {
+          "en": "The hotel, which opened last year, is already full.",
+          "tr": "Geçen yıl açılan otel şimdiden dolu.",
+          "note": "Virgüllü yapıda that kullanılamaz."
+        }
       ],
       "mistakes": [
-        { "wrong": "My sister, that works in Berlin, is visiting.", "right": "My sister, who works in Berlin, is visiting.", "why": "Virgüllü ek bilgi cümleciğinde that kullanılmaz." },
-        { "wrong": "The book I bought it yesterday is excellent.", "right": "The book I bought yesterday is excellent.", "why": "Zamir düştüyse yerine it konmaz." },
-        { "wrong": "For who are you waiting?", "right": "Who are you waiting for?", "why": "Günlük İngilizcede edat sonda kalır." }
+        {
+          "wrong": "My sister, that works in Berlin, is visiting.",
+          "right": "My sister, who works in Berlin, is visiting.",
+          "why": "Virgüllü ek bilgi cümleciğinde that kullanılmaz."
+        },
+        {
+          "wrong": "The book I bought it yesterday is excellent.",
+          "right": "The book I bought yesterday is excellent.",
+          "why": "Zamir düştüyse yerine it konmaz."
+        },
+        {
+          "wrong": "For who are you waiting?",
+          "right": "Who are you waiting for?",
+          "why": "Günlük İngilizcede edat sonda kalır."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "My father, ___ is 70, still works.", "options": ["who", "that", "which", "what"], "answer": 0, "note": "Virgüllü yapıda who." },
-        { "type": "choice", "text": "The film ___ we watched was boring.", "options": ["that", "what", "who", "whose"], "answer": 0, "note": "Nesne konumunda that (düşürülebilir de)." },
-        { "type": "choice", "text": "That is the man I told you ___ .", "options": ["about", "about him", "of that", "for about"], "answer": 0, "note": "Edat sonda kalır." },
-        { "type": "choice", "text": "Our office, ___ moved last year, is near the station.", "options": ["which", "that", "who", "where"], "answer": 0, "note": "Cansız + virgüllü → which." },
-        { "type": "gap", "text": "Who did you go to the concert ___ ?", "options": ["with", "with them", "together"], "answer": 0, "note": "Edat cümle sonunda." }
+        {
+          "type": "choice",
+          "text": "My father, ___ is 70, still works.",
+          "options": [
+            "who",
+            "that",
+            "which",
+            "what"
+          ],
+          "answer": 0,
+          "note": "Virgüllü yapıda who."
+        },
+        {
+          "type": "choice",
+          "text": "The film ___ we watched was boring.",
+          "options": [
+            "that",
+            "what",
+            "who",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Nesne konumunda that (düşürülebilir de)."
+        },
+        {
+          "type": "choice",
+          "text": "That is the man I told you ___ .",
+          "options": [
+            "about",
+            "about him",
+            "of that",
+            "for about"
+          ],
+          "answer": 0,
+          "note": "Edat sonda kalır."
+        },
+        {
+          "type": "choice",
+          "text": "Our office, ___ moved last year, is near the station.",
+          "options": [
+            "which",
+            "that",
+            "who",
+            "where"
+          ],
+          "answer": 0,
+          "note": "Cansız + virgüllü → which."
+        },
+        {
+          "type": "gap",
+          "text": "Who did you go to the concert ___ ?",
+          "options": [
+            "with",
+            "with them",
+            "together"
+          ],
+          "answer": 0,
+          "note": "Edat cümle sonunda."
+        },
+        {
+          "type": "choice",
+          "text": "The house ___ roof is red belongs to my aunt.",
+          "options": [
+            "whose",
+            "which",
+            "who",
+            "that"
+          ],
+          "answer": 0,
+          "note": "Aitlik → whose."
+        },
+        {
+          "type": "choice",
+          "text": "This is the village ___ my mother grew up.",
+          "options": [
+            "where",
+            "which",
+            "that",
+            "who"
+          ],
+          "answer": 0,
+          "note": "Yer → where."
+        },
+        {
+          "type": "choice",
+          "text": "I remember the day ___ we first met.",
+          "options": [
+            "when",
+            "which",
+            "where",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Zaman → when."
+        },
+        {
+          "type": "gap",
+          "text": "The film ___ we watched last night was terrible.",
+          "options": [
+            "that",
+            "who",
+            "whose"
+          ],
+          "answer": 0,
+          "note": "Nesne için that."
+        },
+        {
+          "type": "choice",
+          "text": "My neighbor, ___ works at the hospital, helped us.",
+          "options": [
+            "who",
+            "which",
+            "whose",
+            "where"
+          ],
+          "answer": 0,
+          "note": "Virgüllü ek bilgi + kişi → who."
+        }
       ]
     },
     {
@@ -122,35 +630,203 @@
       "title": "the man standing there",
       "topic": "Participle clauses",
       "canDo": "İki cümleyi tek cümlede toplayarak daha akıcı yazabilirim.",
-      "covers": ["VG.P.AFF", "VG.N_VG", "VP.SV.AFF"],
+      "covers": [
+        "VG.P.AFF",
+        "VG.N_VG",
+        "VP.SV.AFF"
+      ],
       "concept": {
         "summary": "İki cümleyi birleştirmenin kısa yolu: ilgi zamiri ve yardımcı fiil atılır, geriye -ing'li parça kalır. Bu parça ya bir ismi arkadan niteler (the man standing there) ya da cümle başında zaman ve sebep bildirir (Walking home, I saw…). Her iki durumda da öznenin aynı olması gerekir.",
-        "formula": { "left": "isim + fiil-ing", "right": "Fiil-ing + , + ana cümle" },
+        "formula": {
+          "left": "isim + fiil-ing",
+          "right": "Fiil-ing + , + ana cümle"
+        },
         "table": [
-          { "form": "ismi niteleme", "be": "isim + -ing", "example": "the woman sitting by the window" },
-          { "form": "açılımı", "be": "who is + -ing", "example": "the woman who is sitting …" },
-          { "form": "cümle başı", "be": "-ing , …", "example": "Feeling tired, he went to bed." },
-          { "form": "koşul", "be": "özne aynı olmalı", "example": "Walking home, I met Ali." }
+          {
+            "form": "ismi niteleme",
+            "be": "isim + -ing",
+            "example": "the woman sitting by the window"
+          },
+          {
+            "form": "açılımı",
+            "be": "who is + -ing",
+            "example": "the woman who is sitting …"
+          },
+          {
+            "form": "cümle başı",
+            "be": "-ing , …",
+            "example": "Feeling tired, he went to bed."
+          },
+          {
+            "form": "koşul",
+            "be": "özne aynı olmalı",
+            "example": "Walking home, I met Ali."
+          }
         ]
       },
       "examples": [
-        { "en": "The man standing at the door is my neighbour.", "tr": "Kapıda duran adam komşum.", "note": "who is standing'in kısası." },
-        { "en": "Do you know the girl talking to Ali?", "tr": "Ali ile konuşan kızı tanıyor musun?", "note": "İsmi arkadan niteliyor." },
-        { "en": "Feeling tired, she went to bed early.", "tr": "Yorgun hissettiği için erken yattı.", "note": "Cümle başında sebep bildiriyor." },
-        { "en": "Walking through the park, I saw an old friend.", "tr": "Parkta yürürken eski bir arkadaşımı gördüm.", "note": "Aynı özne: yürüyen de gören de ben." },
-        { "en": "The train arriving at platform two is delayed.", "tr": "İki numaralı perona gelen tren rötarlı.", "note": "Duyuru dilinde çok yaygın." }
+        {
+          "en": "The man standing at the door is my neighbour.",
+          "tr": "Kapıda duran adam komşum.",
+          "note": "who is standing'in kısası."
+        },
+        {
+          "en": "Do you know the girl talking to Ali?",
+          "tr": "Ali ile konuşan kızı tanıyor musun?",
+          "note": "İsmi arkadan niteliyor."
+        },
+        {
+          "en": "Feeling tired, she went to bed early.",
+          "tr": "Yorgun hissettiği için erken yattı.",
+          "note": "Cümle başında sebep bildiriyor."
+        },
+        {
+          "en": "Walking through the park, I saw an old friend.",
+          "tr": "Parkta yürürken eski bir arkadaşımı gördüm.",
+          "note": "Aynı özne: yürüyen de gören de ben."
+        },
+        {
+          "en": "The train arriving at platform two is delayed.",
+          "tr": "İki numaralı perona gelen tren rötarlı.",
+          "note": "Duyuru dilinde çok yaygın."
+        }
       ],
       "mistakes": [
-        { "wrong": "The man is standing at the door is my neighbour.", "right": "The man standing at the door is my neighbour.", "why": "Kısaltmada yardımcı fiil de düşer." },
-        { "wrong": "Walking through the park, the rain started.", "right": "While I was walking through the park, the rain started.", "why": "Özneler farklıysa kısaltma yapılamaz; yağmur yürümüyor." },
-        { "wrong": "Feeling tired, the bed was ready.", "right": "Feeling tired, she went to bed.", "why": "-ing'li parçanın öznesi ana cümlenin öznesidir." }
+        {
+          "wrong": "The man is standing at the door is my neighbour.",
+          "right": "The man standing at the door is my neighbour.",
+          "why": "Kısaltmada yardımcı fiil de düşer."
+        },
+        {
+          "wrong": "Walking through the park, the rain started.",
+          "right": "While I was walking through the park, the rain started.",
+          "why": "Özneler farklıysa kısaltma yapılamaz; yağmur yürümüyor."
+        },
+        {
+          "wrong": "Feeling tired, the bed was ready.",
+          "right": "Feeling tired, she went to bed.",
+          "why": "-ing'li parçanın öznesi ana cümlenin öznesidir."
+        }
       ],
       "exercises": [
-        { "type": "choice", "text": "The people ___ outside are waiting for tickets.", "options": ["standing", "stand", "stood", "are standing"], "answer": 0, "note": "İsmi niteleyen -ing." },
-        { "type": "choice", "text": "___ the news, she called her family.", "options": ["Hearing", "Heard", "To hear", "She heard"], "answer": 0, "note": "Cümle başında -ing." },
-        { "type": "choice", "text": "Who is the woman ___ the piano?", "options": ["playing", "plays", "is playing", "played"], "answer": 0, "note": "who is playing'in kısası." },
-        { "type": "choice", "text": "___ for hours, they finally reached the village.", "options": ["Having walked", "Walked", "To walk", "They walked"], "answer": 0, "note": "Önce biten iş → having + V3." },
-        { "type": "gap", "text": "The flight ___ from Rome has landed.", "options": ["arriving", "arrive", "arrives"], "answer": 0, "note": "Arkadan niteleyen -ing." }
+        {
+          "type": "choice",
+          "text": "The people ___ outside are waiting for tickets.",
+          "options": [
+            "standing",
+            "stand",
+            "stood",
+            "are standing"
+          ],
+          "answer": 0,
+          "note": "İsmi niteleyen -ing."
+        },
+        {
+          "type": "choice",
+          "text": "___ the news, she called her family.",
+          "options": [
+            "Hearing",
+            "Heard",
+            "To hear",
+            "She heard"
+          ],
+          "answer": 0,
+          "note": "Cümle başında -ing."
+        },
+        {
+          "type": "choice",
+          "text": "Who is the woman ___ the piano?",
+          "options": [
+            "playing",
+            "plays",
+            "is playing",
+            "played"
+          ],
+          "answer": 0,
+          "note": "who is playing'in kısası."
+        },
+        {
+          "type": "choice",
+          "text": "___ for hours, they finally reached the village.",
+          "options": [
+            "Having walked",
+            "Walked",
+            "To walk",
+            "They walked"
+          ],
+          "answer": 0,
+          "note": "Önce biten iş → having + V3."
+        },
+        {
+          "type": "gap",
+          "text": "The flight ___ from Rome has landed.",
+          "options": [
+            "arriving",
+            "arrive",
+            "arrives"
+          ],
+          "answer": 0,
+          "note": "Arkadan niteleyen -ing."
+        },
+        {
+          "type": "choice",
+          "text": "The woman ___ next to me was reading a map.",
+          "options": [
+            "sitting",
+            "sat",
+            "sits",
+            "to sit"
+          ],
+          "answer": 0,
+          "note": "Etken ortaç → V-ing."
+        },
+        {
+          "type": "choice",
+          "text": "The money ___ last week has not been found.",
+          "options": [
+            "stolen",
+            "stealing",
+            "steal",
+            "to steal"
+          ],
+          "answer": 0,
+          "note": "Edilgen ortaç → V3."
+        },
+        {
+          "type": "choice",
+          "text": "___ the door, he noticed the light was on.",
+          "options": [
+            "Opening",
+            "Opened",
+            "To open",
+            "Opens"
+          ],
+          "answer": 0,
+          "note": "Aynı anda olan iş → V-ing."
+        },
+        {
+          "type": "gap",
+          "text": "The letters ___ this morning are on your desk.",
+          "options": [
+            "delivered",
+            "delivering",
+            "to deliver"
+          ],
+          "answer": 0,
+          "note": "Edilgen anlam → V3."
+        },
+        {
+          "type": "choice",
+          "text": "Anybody ___ to join the trip should sign here.",
+          "options": [
+            "wanting",
+            "wanted",
+            "to want",
+            "wants"
+          ],
+          "answer": 0,
+          "note": "Etken anlam → V-ing."
+        }
       ]
     }
   ]
