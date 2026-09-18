@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "c2-speaking-03", "level": "C2", "range": "Senaryo 11-15" },
+  "items": [
+    {
+      "id": "c2-s-11",
+      "level": "C2",
+      "order": 11,
+      "kind": "speaking",
+      "title": "İnandığın bir kuralın istisnasını savunmak",
+      "titleEn": "Defending an Exception to a Rule You Believe In",
+      "minutes": 7,
+      "situation": "You have always argued for a rule. In one case you are asking for an exception to it. Justify that to an audience that has heard you defend the rule.",
+      "situationTr": "Bir kuralı hep savundun. Tek bir vakada ona istisna istiyorsun. Bunu, seni o kuralı savunurken dinlemiş bir topluluğa gerekçelendir.",
+      "prompts": [
+        "Restate the rule and why you still hold it.",
+        "Explain what is different about this case.",
+        "Say what would stop the exception becoming the rule.",
+        "Say what you would accept as the cost of being wrong."
+      ],
+      "promptsTr": [
+        "Kuralı ve neden hâlâ savunduğunu yeniden ifade et.",
+        "Bu vakada neyin farklı olduğunu açıkla.",
+        "İstisnanın kurala dönüşmesini neyin engelleyeceğini söyle.",
+        "Yanılmanın bedeli olarak neyi kabul edeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I have argued for this rule in this room for six years and I still would.", "tr": "Bu kuralı bu odada altı yıldır savundum ve hâlâ savunurum." },
+        { "en": "What distinguishes this case is that the harm is immediate and the delay is not recoverable.", "tr": "Bu vakayı ayıran şey, zararın ânında olması ve gecikmenin telafi edilemez olması." },
+        { "en": "An exception becomes a rule when nobody has to ask for it a second time.", "tr": "Bir istisna, ikinci kez istenmesi gerekmediğinde kurala dönüşür." },
+        { "en": "I would tie it to this case by name, with an end date in the text.", "tr": "Onu adıyla bu vakaya bağlar, metne bir bitiş tarihi koyardım." },
+        { "en": "If I am wrong, the cost falls on me, not on the next applicant.", "tr": "Yanılıyorsam bedel bana düşer, sıradaki başvurana değil." }
+      ],
+      "glossary": [
+        { "w": "exception", "tr": "istisna" },
+        { "w": "distinguishes", "tr": "ayırt eder" },
+        { "w": "recoverable", "tr": "telafi edilebilir" },
+        { "w": "applicant", "tr": "başvuran" }
+      ]
+    },
+    {
+      "id": "c2-s-12",
+      "level": "C2",
+      "order": 12,
+      "kind": "speaking",
+      "title": "Bir uzlaşmanın bedelini adlandırmak",
+      "titleEn": "Naming What a Compromise Costs",
+      "minutes": 7,
+      "situation": "An agreement is about to be signed and everybody is calling it a win. Say plainly what is being given up.",
+      "situationTr": "Bir anlaşma imzalanmak üzere ve herkes buna kazanç diyor. Nelerden vazgeçildiğini açıkça söyle.",
+      "prompts": [
+        "Say that you support the agreement, if you do.",
+        "Name precisely what is lost in it.",
+        "Say who bears that loss.",
+        "Say why naming it now matters."
+      ],
+      "promptsTr": [
+        "Anlaşmayı destekliyorsan desteklediğini söyle.",
+        "İçinde tam olarak neyin kaybedildiğini adlandır.",
+        "O kaybı kimin üstlendiğini söyle.",
+        "Bunu şimdi adlandırmanın neden önemli olduğunu söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I will vote for this, and I want the record to say what it costs.", "tr": "Buna evet oyu vereceğim ve tutanağın neye mal olduğunu yazmasını istiyorum." },
+        { "en": "We are giving up the right to reopen the boundary for twenty years.", "tr": "Sınırı yirmi yıl boyunca yeniden açma hakkından vazgeçiyoruz." },
+        { "en": "That cost is borne almost entirely by the eastern villages.", "tr": "Bu bedeli neredeyse tamamen doğudaki köyler üstleniyor." },
+        { "en": "Nobody in this room will be asked to live with it.", "tr": "Bu odadaki hiç kimseden onunla yaşaması istenmeyecek." },
+        { "en": "If we do not say it today, in four years it will be called a surprise.", "tr": "Bugün söylemezsek dört yıl sonra buna sürpriz denecek." }
+      ],
+      "glossary": [
+        { "w": "compromise", "tr": "uzlaşma" },
+        { "w": "borne", "tr": "üstlenilen" },
+        { "w": "boundary", "tr": "sınır" },
+        { "w": "reopen", "tr": "yeniden açmak" }
+      ]
+    },
+    {
+      "id": "c2-s-13",
+      "level": "C2",
+      "order": 13,
+      "kind": "speaking",
+      "title": "Kanıtın bittiği yerde karar vermek",
+      "titleEn": "Deciding Where the Evidence Runs Out",
+      "minutes": 7,
+      "situation": "A decision must be made and the research does not reach the question being asked. Explain how you will decide anyway.",
+      "situationTr": "Bir karar verilmeli ama araştırma sorulan soruya ulaşmıyor. Yine de nasıl karar vereceğini açıkla.",
+      "prompts": [
+        "Say exactly where the evidence stops.",
+        "Say what you are substituting for it.",
+        "Say which way you are erring and why.",
+        "Say what would make you revisit the decision."
+      ],
+      "promptsTr": [
+        "Kanıtın tam olarak nerede bittiğini söyle.",
+        "Onun yerine neyi koyduğunu söyle.",
+        "Hangi yönde hata yapmayı seçtiğini ve nedenini söyle.",
+        "Kararı yeniden gözden geçirmene ne yol açar söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The evidence takes us as far as twelve months and no further.", "tr": "Kanıt bizi on iki aya kadar götürüyor, daha ileriye değil." },
+        { "en": "Beyond that I am relying on judgment, and I would rather say so.", "tr": "Ondan sonrası için muhakemeye dayanıyorum ve bunu söylemeyi tercih ederim." },
+        { "en": "Where I am uncertain, I am erring towards the reversible option.", "tr": "Emin olmadığım yerde geri dönülebilir seçenek yönünde hata yapmayı seçiyorum." },
+        { "en": "A decision you can undo is worth a slightly worse expected outcome.", "tr": "Geri alabileceğin bir karar, biraz daha kötü bir beklenen sonuca değer." },
+        { "en": "Two consecutive quarters below the line and I would reopen this.", "tr": "Üst üste iki çeyrek eşiğin altında kalırsa bunu yeniden açardım." }
+      ],
+      "glossary": [
+        { "w": "substituting", "tr": "yerine koymak" },
+        { "w": "erring", "tr": "hata payını bir yöne bırakmak" },
+        { "w": "reversible", "tr": "geri döndürülebilir" },
+        { "w": "consecutive", "tr": "ardışık" }
+      ]
+    },
+    {
+      "id": "c2-s-14",
+      "level": "C2",
+      "order": 14,
+      "kind": "speaking",
+      "title": "Geçmişteki bir haksızlığı bugüne bağlamak",
+      "titleEn": "Connecting a Historical Wrong to the Present",
+      "minutes": 7,
+      "situation": "You are asked why something that happened seventy years ago should affect a decision today. Answer without slogans.",
+      "situationTr": "Yetmiş yıl önce olan bir şeyin bugünkü kararı neden etkilemesi gerektiği soruluyor. Sloganlara başvurmadan cevapla.",
+      "prompts": [
+        "State the historical fact without decoration.",
+        "Trace the line from then to now, step by step.",
+        "Say where the line is weakest.",
+        "Say what follows from it and what does not."
+      ],
+      "promptsTr": [
+        "Tarihsel olguyu süslemeden ortaya koy.",
+        "O günden bugüne uzanan çizgiyi adım adım izle.",
+        "Çizginin en zayıf olduğu yeri söyle.",
+        "Ondan neyin çıktığını ve neyin çıkmadığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "In nineteen fifty-four the land was transferred without payment.", "tr": "Bin dokuz yüz elli dörtte toprak bedelsiz devredildi." },
+        { "en": "The families who lost it were then excluded from the loans that followed.", "tr": "Onu kaybeden aileler ardından gelen kredilerin dışında bırakıldı." },
+        { "en": "The weakest link is the third generation, and I will not overstate it.", "tr": "En zayıf halka üçüncü kuşak ve bunu abartmayacağım." },
+        { "en": "What follows is a claim about the process, not about individual guilt.", "tr": "Buradan çıkan şey süreçle ilgili bir iddia, kişisel suçlulukla ilgili değil." },
+        { "en": "Nothing here requires anybody alive to be blamed for it.", "tr": "Buradaki hiçbir şey yaşayan birinin suçlanmasını gerektirmiyor." }
+      ],
+      "glossary": [
+        { "w": "transferred", "tr": "devredildi" },
+        { "w": "excluded", "tr": "dışarıda bırakılmış" },
+        { "w": "overstate", "tr": "abartmak" },
+        { "w": "guilt", "tr": "suçluluk" }
+      ]
+    },
+    {
+      "id": "c2-s-15",
+      "level": "C2",
+      "order": 15,
+      "kind": "speaking",
+      "title": "İki meslek arasında çeviri yapmak",
+      "titleEn": "Translating Between Two Professions",
+      "minutes": 7,
+      "situation": "Engineers and lawyers in the same project are using the same words differently. Stand between them and translate.",
+      "situationTr": "Aynı projedeki mühendisler ve hukukçular aynı kelimeleri farklı kullanıyor. Aralarında dur ve çeviri yap.",
+      "prompts": [
+        "Show one word that means two things here.",
+        "Say what each side hears when it is used.",
+        "Give a form of words both can sign.",
+        "Say what still has to be decided, not translated."
+      ],
+      "promptsTr": [
+        "Burada iki anlama gelen bir kelimeyi göster.",
+        "Kullanıldığında her tarafın ne duyduğunu söyle.",
+        "İkisinin de imzalayabileceği bir ifade öner.",
+        "Çevrilmesi değil, karara bağlanması gerekeni söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "When the engineers say safe, they mean within the design limit.", "tr": "Mühendisler güvenli dediğinde tasarım sınırı içinde demek istiyor." },
+        { "en": "When the lawyers hear safe, they hear a promise that survives a court.", "tr": "Hukukçular güvenli kelimesini duyduğunda mahkemede ayakta kalan bir taahhüt duyuyor." },
+        { "en": "A form of words both can sign is within the stated tolerance.", "tr": "İkisinin de imzalayabileceği ifade: belirtilen tolerans içinde." },
+        { "en": "That sentence is not a compromise; it is simply more accurate.", "tr": "Bu cümle bir uzlaşma değil; sadece daha doğru." },
+        { "en": "What remains is a real decision: who signs when the limit is reached.", "tr": "Geriye gerçek bir karar kalıyor: sınıra ulaşıldığında kimin imzalayacağı." }
+      ],
+      "glossary": [
+        { "w": "professions", "tr": "meslekler" },
+        { "w": "design limit", "tr": "tasarım sınırı" },
+        { "w": "tolerance", "tr": "tolerans, izin verilen sapma" },
+        { "w": "accurate", "tr": "doğru, kesin" }
+      ]
+    }
+  ]
+}

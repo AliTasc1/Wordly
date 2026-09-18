@@ -34,7 +34,7 @@
       ],
       "questions": [
         { "q": "What did Serhat say in March?", "options": ["That the position was likely hers", "That she had the job", "That she should wait a year", "Nothing about the post"], "answer": 0, "note": "\"I said it was likely.\"" },
-        { "q": "What actually changed?", "options": ["A manager moved down into the post", "Her work got worse", "The post was removed", "The budget fell"], "answer": 0, "note": "\"A manager came down into the post.\"" },
+        { "q": "What change was made to the post itself?", "options": ["A manager moved down into the post", "Her work got worse", "The post was removed", "The budget fell"], "answer": 0, "note": "\"A manager came down into the post.\"" },
         { "q": "What is Esra most angry about?", "options": ["Not being told in July", "Losing the post", "The manager", "The money"], "answer": 0, "note": "\"That is the part I am angry about, not the post.\"" },
         { "q": "What does she ask for?", "options": ["A written date and the work starting now", "An apology", "More pay", "A different team"], "answer": 0, "note": "\"A date, in writing, and the work that goes with the title starting now.\"" },
         { "q": "What can Serhat do today?", "options": ["Start giving her the work", "Confirm the date", "Change the decision", "Nothing"], "answer": 0, "note": "\"I can do the second today.\"" }

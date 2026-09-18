@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "c2-speaking-04", "level": "C2", "range": "Senaryo 16-20" },
+  "items": [
+    {
+      "id": "c2-s-16",
+      "level": "C2",
+      "order": 16,
+      "kind": "speaking",
+      "title": "Öngörünün tutmadığını kabul etmek",
+      "titleEn": "Admitting Your Forecast Was Wrong",
+      "minutes": 7,
+      "situation": "Two years ago you made a public forecast. It was wrong. Speak about it before somebody else does.",
+      "situationTr": "İki yıl önce kamuya açık bir öngörüde bulundun. Tutmadı. Başkası konuşmadan önce sen konuş.",
+      "prompts": [
+        "Restate the forecast exactly as you made it.",
+        "Say what actually happened.",
+        "Say which part of your reasoning failed.",
+        "Say what you have changed in how you forecast."
+      ],
+      "promptsTr": [
+        "Öngörünü yaptığın hâliyle tam olarak yinele.",
+        "Gerçekte ne olduğunu söyle.",
+        "Akıl yürütmenin hangi kısmının çöktüğünü söyle.",
+        "Öngörü yapış biçiminde neyi değiştirdiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I said prices would fall by a fifth within eighteen months.", "tr": "Fiyatların on sekiz ayda beşte bir düşeceğini söylemiştim." },
+        { "en": "They rose by six percent, which is not a small error but a different direction.", "tr": "Yüzde altı yükseldi; bu küçük bir hata değil, farklı bir yön." },
+        { "en": "The failure was not the model but the assumption I never tested.", "tr": "Kusur modelde değil, hiç sınamadığım varsayımdaydı." },
+        { "en": "I treated the supply side as fixed because it had been fixed for a decade.", "tr": "Arz tarafını sabit saydım, çünkü on yıldır sabitti." },
+        { "en": "I now publish the assumptions separately, so they can be attacked first.", "tr": "Artık varsayımları ayrı yayımlıyorum, önce onlar hedef alınabilsin diye." }
+      ],
+      "glossary": [
+        { "w": "forecast", "tr": "öngörü" },
+        { "w": "assumption", "tr": "varsayım" },
+        { "w": "supply", "tr": "arz" },
+        { "w": "attacked", "tr": "eleştiriyle hedef alınmış" }
+      ]
+    },
+    {
+      "id": "c2-s-17",
+      "level": "C2",
+      "order": 17,
+      "kind": "speaking",
+      "title": "Konuşmamış olmanın gerekçesi",
+      "titleEn": "Justifying Not Speaking Out",
+      "minutes": 7,
+      "situation": "You knew about a problem for a year and said nothing publicly. You are asked to explain that choice.",
+      "situationTr": "Bir sorunu bir yıl boyunca bildin ve kamuoyunda bir şey söylemedin. Bu tercihi açıklaman isteniyor.",
+      "prompts": [
+        "Say what you knew and when you knew it.",
+        "Say what you did instead of speaking publicly.",
+        "Give the reasoning, without dressing it up.",
+        "Say whether you would make the same choice again."
+      ],
+      "promptsTr": [
+        "Neyi ve ne zaman bildiğini söyle.",
+        "Kamuoyuna açıklamak yerine ne yaptığını söyle.",
+        "Gerekçeni süslemeden ver.",
+        "Aynı tercihi yine yapıp yapmayacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I knew the figures were unreliable from the March audit on.", "tr": "Rakamların güvenilmez olduğunu mart denetiminden itibaren biliyordum." },
+        { "en": "I raised it four times internally and I have the dates.", "tr": "Bunu kurum içinde dört kez dile getirdim ve tarihleri elimde." },
+        { "en": "I judged that going public would have ended the audit, not the practice.", "tr": "Kamuoyuna gitmenin uygulamayı değil denetimi bitireceğine hükmettim." },
+        { "en": "That judgment was defensible and it was also convenient for me.", "tr": "Bu muhakeme savunulabilirdi ve aynı zamanda benim işime geliyordu." },
+        { "en": "Knowing how it ended, I would go public in the ninth month.", "tr": "Nasıl bittiğini bildiğim için dokuzuncu ayda kamuoyuna giderdim." }
+      ],
+      "glossary": [
+        { "w": "unreliable", "tr": "güvenilmez" },
+        { "w": "audit", "tr": "denetim" },
+        { "w": "internally", "tr": "kurum içinde" },
+        { "w": "defensible", "tr": "savunulabilir" }
+      ]
+    },
+    {
+      "id": "c2-s-18",
+      "level": "C2",
+      "order": 18,
+      "kind": "speaking",
+      "title": "Ölçütün ölçemedikleri",
+      "titleEn": "What the Measure Leaves Out",
+      "minutes": 7,
+      "situation": "Your institution is ranked by a single number and has done well. Explain to staff what the number does not capture.",
+      "situationTr": "Kurumun tek bir sayıyla sıralanıyor ve iyi bir yer aldı. Personele o sayının neleri yakalayamadığını anlat.",
+      "prompts": [
+        "Acknowledge what the measure does capture.",
+        "Say what it cannot see, with an example.",
+        "Say how the measure changes behavior.",
+        "Say what you will not do to protect the ranking."
+      ],
+      "promptsTr": [
+        "Ölçütün neyi gerçekten yakaladığını kabul et.",
+        "Bir örnekle neyi göremediğini söyle.",
+        "Ölçütün davranışı nasıl değiştirdiğini söyle.",
+        "Sıralamayı korumak için neyi yapmayacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The measure does capture something real: how fast people finish.", "tr": "Ölçüt gerçek bir şeyi yakalıyor: insanların ne kadar hızlı bitirdiğini." },
+        { "en": "What it cannot see is the student who takes five years and then stays.", "tr": "Göremediği şey, beş yıl süren ve sonra kalan öğrenci." },
+        { "en": "Any measure that is watched closely enough starts to be managed.", "tr": "Yeterince yakından izlenen her ölçüt yönetilmeye başlar." },
+        { "en": "We are not going to stop admitting the students who take longer.", "tr": "Daha uzun süren öğrencileri almayı bırakmayacağız." },
+        { "en": "I would rather fall ten places than teach to a number.", "tr": "Bir sayıya göre eğitim vermektense on sıra düşmeyi tercih ederim." }
+      ],
+      "glossary": [
+        { "w": "ranked", "tr": "sıralanmış" },
+        { "w": "capture", "tr": "yakalamak, ölçebilmek" },
+        { "w": "admitting", "tr": "kabul etmek (öğrenci)" },
+        { "w": "ranking", "tr": "sıralama" }
+      ]
+    },
+    {
+      "id": "c2-s-19",
+      "level": "C2",
+      "order": 19,
+      "kind": "speaking",
+      "title": "Kuralın neden çiğnendiğini sormak",
+      "titleEn": "Asking Why the Rule Was Broken",
+      "minutes": 7,
+      "situation": "A rule was broken by several people in the same month. Lead the discussion about why, rather than about who.",
+      "situationTr": "Bir kural aynı ay içinde birkaç kişi tarafından çiğnendi. Tartışmayı kimin değil, neden sorusu üzerinden yürüt.",
+      "prompts": [
+        "Set out the facts without naming individuals.",
+        "Say why the pattern matters more than the cases.",
+        "Ask the question in a way people can answer honestly.",
+        "Say what you will do with what you hear."
+      ],
+      "promptsTr": [
+        "Kişileri adlandırmadan olguları ortaya koy.",
+        "Örüntünün tekil vakalardan neden daha önemli olduğunu söyle.",
+        "Soruyu insanların dürüstçe cevaplayabileceği biçimde sor.",
+        "Duyduklarınla ne yapacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The same step was skipped eleven times in four weeks.", "tr": "Aynı adım dört haftada on bir kez atlandı." },
+        { "en": "Eleven people breaking one rule is a fact about the rule.", "tr": "On bir kişinin tek bir kuralı çiğnemesi, kural hakkında bir olgudur." },
+        { "en": "I am not asking who, and nothing said here goes into a file.", "tr": "Kim olduğunu sormuyorum ve burada söylenen hiçbir şey dosyaya girmeyecek." },
+        { "en": "Tell me what the rule costs you on an ordinary Tuesday.", "tr": "Sıradan bir salı günü bu kuralın size neye mal olduğunu anlatın." },
+        { "en": "If the answer is that it is unworkable, I will rewrite it, not enforce it.", "tr": "Cevap uygulanamaz olduğuysa onu uygulatmam, yeniden yazarım." }
+      ],
+      "glossary": [
+        { "w": "pattern", "tr": "örüntü" },
+        { "w": "skipped", "tr": "atlandı" },
+        { "w": "unworkable", "tr": "uygulanamaz" },
+        { "w": "enforce", "tr": "uygulatmak" }
+      ]
+    },
+    {
+      "id": "c2-s-20",
+      "level": "C2",
+      "order": 20,
+      "kind": "speaking",
+      "title": "Bir metni yazarına karşı okumak",
+      "titleEn": "Reading a Text Against Its Author",
+      "minutes": 7,
+      "situation": "A well-known report argues one thing, but its own data suggests another. Present that reading to a seminar.",
+      "situationTr": "Tanınmış bir rapor bir şeyi savunuyor ama kendi verileri başka bir şeye işaret ediyor. Bu okumayı bir seminerde sun.",
+      "prompts": [
+        "State the report's own conclusion fairly.",
+        "Point to the table that does not support it.",
+        "Say what an honest reading would conclude.",
+        "Say what you are not accusing the author of."
+      ],
+      "promptsTr": [
+        "Raporun kendi sonucunu adilce ortaya koy.",
+        "Onu desteklemeyen tabloyu göster.",
+        "Dürüst bir okumanın neye varacağını söyle.",
+        "Yazarı neyle suçlamadığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The report concludes that the program raised earnings by a tenth.", "tr": "Rapor, programın kazançları onda bir artırdığı sonucuna varıyor." },
+        { "en": "Table nine shows the whole effect in one region and none elsewhere.", "tr": "Dokuzuncu tablo etkinin tamamını tek bir bölgede, başka hiçbir yerde göstermiyor." },
+        { "en": "A careful reading gives a regional finding, not a national one.", "tr": "Dikkatli bir okuma ulusal değil bölgesel bir bulgu verir." },
+        { "en": "I am not suggesting the data were handled dishonestly.", "tr": "Verilerin dürüst olmayan biçimde işlendiğini ileri sürmüyorum." },
+        { "en": "This is the ordinary pull of wanting a result to be general.", "tr": "Bu, bir sonucun genel olmasını isteme yönündeki sıradan eğilim." }
+      ],
+      "glossary": [
+        { "w": "conclusion", "tr": "sonuç" },
+        { "w": "earnings", "tr": "kazançlar" },
+        { "w": "regional", "tr": "bölgesel" },
+        { "w": "dishonestly", "tr": "dürüst olmayan biçimde" }
+      ]
+    }
+  ]
+}

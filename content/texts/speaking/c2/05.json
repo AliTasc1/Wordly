@@ -1,0 +1,185 @@
+{
+  "_meta": { "batch": "c2-speaking-05", "level": "C2", "range": "Senaryo 21-25" },
+  "items": [
+    {
+      "id": "c2-s-21",
+      "level": "C2",
+      "order": 21,
+      "kind": "speaking",
+      "title": "Zamanı gelmemiş bir fikri savunmak",
+      "titleEn": "Arguing for an Idea Before Its Time",
+      "minutes": 7,
+      "situation": "You are proposing something that will not be accepted for years. Make the case anyway, to people who will reject it.",
+      "situationTr": "Yıllarca kabul görmeyecek bir şey öneriyorsun. Yine de onu reddedecek kişilere savunusunu yap.",
+      "prompts": [
+        "Say why you are raising it now, knowing the answer.",
+        "Set out the argument in its strongest form.",
+        "Say what would have to change for it to be adopted.",
+        "Say what you want on the record today."
+      ],
+      "promptsTr": [
+        "Cevabı bildiğin hâlde bunu neden şimdi açtığını söyle.",
+        "Savını en güçlü hâliyle ortaya koy.",
+        "Kabul edilmesi için neyin değişmesi gerektiğini söyle.",
+        "Bugün kayda ne geçmesini istediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I know this will not be adopted today, and I am raising it anyway.", "tr": "Bunun bugün kabul edilmeyeceğini biliyorum ve yine de açıyorum." },
+        { "en": "The strongest form of the argument is not about money at all.", "tr": "Savın en güçlü hâli parayla hiç ilgili değil." },
+        { "en": "Two things would have to change: the funding cycle and one law.", "tr": "İki şeyin değişmesi gerekir: fon döngüsü ve tek bir yasa." },
+        { "en": "Neither of those is unthinkable within five years.", "tr": "İkisi de beş yıl içinde düşünülemez değil." },
+        { "en": "What I want today is that the objections are written down.", "tr": "Bugün istediğim şey, itirazların yazıya geçirilmesi." }
+      ],
+      "glossary": [
+        { "w": "adopted", "tr": "benimsenmiş, kabul edilmiş" },
+        { "w": "funding cycle", "tr": "fon döngüsü" },
+        { "w": "unthinkable", "tr": "düşünülemez" },
+        { "w": "objections", "tr": "itirazlar" }
+      ]
+    },
+    {
+      "id": "c2-s-22",
+      "level": "C2",
+      "order": 22,
+      "kind": "speaking",
+      "title": "Aynı odada iki kuşak",
+      "titleEn": "Between Two Generations in One Room",
+      "minutes": 7,
+      "situation": "Older and younger staff disagree about how the work should be done, and each thinks the other is not serious. Speak to both.",
+      "situationTr": "Kıdemli ve genç çalışanlar işin nasıl yapılacağı konusunda anlaşamıyor ve her biri diğerini ciddi bulmuyor. İkisine birden konuş.",
+      "prompts": [
+        "Say what each group is actually defending.",
+        "Say what each group is getting wrong about the other.",
+        "Name the thing that has genuinely changed.",
+        "Say what you expect from both, concretely."
+      ],
+      "promptsTr": [
+        "Her grubun gerçekte neyi savunduğunu söyle.",
+        "Her grubun diğeri hakkında neyi yanlış anladığını söyle.",
+        "Gerçekten değişmiş olan şeyi adlandır.",
+        "İkisinden de somut olarak ne beklediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "What the older group is defending is not the method but the reliability.", "tr": "Kıdemli grubun savunduğu şey yöntem değil güvenilirlik." },
+        { "en": "What the younger group is defending is not speed but their own time.", "tr": "Genç grubun savunduğu şey hız değil kendi zamanları." },
+        { "en": "Each side reads the other as careless, and neither of them is.", "tr": "Her taraf diğerini özensiz okuyor ve ikisi de değil." },
+        { "en": "What has genuinely changed is that the work is now visible to clients.", "tr": "Gerçekten değişen şey, işin artık müşterilere görünür olması." },
+        { "en": "From both of you I want the same thing written down by Friday.", "tr": "İkinizden de cumaya kadar yazılı olarak aynı şeyi istiyorum." }
+      ],
+      "glossary": [
+        { "w": "generations", "tr": "kuşaklar" },
+        { "w": "reliability", "tr": "güvenilirlik" },
+        { "w": "careless", "tr": "özensiz" },
+        { "w": "visible", "tr": "görünür" }
+      ]
+    },
+    {
+      "id": "c2-s-23",
+      "level": "C2",
+      "order": 23,
+      "kind": "speaking",
+      "title": "Kendi mesleğini eleştirmek",
+      "titleEn": "Criticizing Your Own Profession",
+      "minutes": 7,
+      "situation": "You are asked to speak at a conference of your own profession about what it does badly. Do it without either flattery or performance.",
+      "situationTr": "Kendi mesleğinin konferansında, mesleğin kötü yaptığı şeyler üzerine konuşman isteniyor. Ne yağcılık ne gösteri yaparak bunu yap.",
+      "prompts": [
+        "Say what the profession genuinely does well.",
+        "Name the failure precisely.",
+        "Say how you personally take part in it.",
+        "Say what a first honest step would be."
+      ],
+      "promptsTr": [
+        "Mesleğin gerçekten iyi yaptığı şeyi söyle.",
+        "Kusuru tam olarak adlandır.",
+        "Bu kusura kendinin nasıl ortak olduğunu söyle.",
+        "İlk dürüst adımın ne olacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "We are better than any other field at admitting small errors quickly.", "tr": "Küçük hataları hızla kabul etmekte başka her alandan iyiyiz." },
+        { "en": "We are worse than most at saying that a whole line of work failed.", "tr": "Bütün bir çalışma hattının çöktüğünü söylemekte çoğundan kötüyüz." },
+        { "en": "I have two papers whose direction I no longer believe in.", "tr": "Artık yönüne inanmadığım iki makalem var." },
+        { "en": "I have never written the sentence that says so.", "tr": "Bunu söyleyen cümleyi hiç yazmadım." },
+        { "en": "A first step would be a section in every review for what did not work.", "tr": "İlk adım, her derlemede işe yaramayanlar için bir bölüm olurdu." }
+      ],
+      "glossary": [
+        { "w": "profession", "tr": "meslek" },
+        { "w": "flattery", "tr": "yağcılık, dalkavukluk" },
+        { "w": "papers", "tr": "makaleler" },
+        { "w": "review", "tr": "derleme, değerlendirme yazısı" }
+      ]
+    },
+    {
+      "id": "c2-s-24",
+      "level": "C2",
+      "order": 24,
+      "kind": "speaking",
+      "title": "Derin belirsizlik altında politika önermek",
+      "titleEn": "Recommending Policy Under Deep Uncertainty",
+      "minutes": 7,
+      "situation": "You must recommend a policy for a situation where the range of possible outcomes is very wide. Present it honestly.",
+      "situationTr": "Olası sonuçların aralığının çok geniş olduğu bir durumda politika önermen gerekiyor. Bunu dürüstçe sun.",
+      "prompts": [
+        "Describe the range rather than a single number.",
+        "Say which outcomes you are designing against.",
+        "Explain why you prefer flexible measures here.",
+        "Say what you would monitor and how often."
+      ],
+      "promptsTr": [
+        "Tek bir sayı değil, aralığı tarif et.",
+        "Hangi sonuçlara karşı tasarım yaptığını söyle.",
+        "Burada neden esnek önlemleri tercih ettiğini açıkla.",
+        "Neyi ve ne sıklıkta izleyeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "The credible range runs from almost no effect to a very large one.", "tr": "İnandırıcı aralık neredeyse hiç etki yokken çok büyük bir etkiye kadar uzanıyor." },
+        { "en": "I am designing against the bad tail, not against the central estimate.", "tr": "Merkezî tahmine değil, kötü uca karşı tasarım yapıyorum." },
+        { "en": "Flexible measures cost more in the expected case and less in the worst one.", "tr": "Esnek önlemler beklenen durumda daha pahalı, en kötüsünde daha ucuz." },
+        { "en": "I would monitor three indicators quarterly and publish all three.", "tr": "Üç göstergeyi üç ayda bir izler ve üçünü de yayımlardım." },
+        { "en": "Anybody who gives you a single number here is not being careful.", "tr": "Burada size tek bir sayı veren kimse dikkatli davranmıyordur." }
+      ],
+      "glossary": [
+        { "w": "credible", "tr": "inandırıcı" },
+        { "w": "tail", "tr": "dağılımın uç kısmı" },
+        { "w": "estimate", "tr": "tahmin" },
+        { "w": "indicators", "tr": "göstergeler" }
+      ]
+    },
+    {
+      "id": "c2-s-25",
+      "level": "C2",
+      "order": 25,
+      "kind": "speaking",
+      "title": "Ayrılırken söylenen son şey",
+      "titleEn": "The Last Thing You Say on Leaving",
+      "minutes": 7,
+      "situation": "You are leaving a post you held for eleven years. You have one short speech and no further influence afterwards.",
+      "situationTr": "On bir yıl sürdürdüğün bir görevden ayrılıyorsun. Kısa bir konuşman var ve sonrasında hiçbir etkin kalmayacak.",
+      "prompts": [
+        "Say what you are genuinely grateful for.",
+        "Say the one thing you were never able to fix.",
+        "Say it in a way your successor can use.",
+        "Say what you will not comment on afterwards."
+      ],
+      "promptsTr": [
+        "Gerçekten minnettar olduğun şeyi söyle.",
+        "Hiç düzeltemediğin tek şeyi söyle.",
+        "Bunu, senden sonra gelenin kullanabileceği biçimde söyle.",
+        "Bundan sonra neye yorum yapmayacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "What I am grateful for is that nobody here lied to me to be kind.", "tr": "Minnettar olduğum şey, burada kimsenin bana iyilik olsun diye yalan söylememesi." },
+        { "en": "The thing I never fixed is that we decide slowly and then cannot revisit.", "tr": "Hiç düzeltemediğim şey, yavaş karar verip sonra geri dönemememiz." },
+        { "en": "I am leaving a note that lists the four decisions I would reopen.", "tr": "Yeniden açacağım dört kararı sıralayan bir not bırakıyorum." },
+        { "en": "It is addressed to my successor and it is not a judgment on anybody here.", "tr": "Not benden sonra gelene yazıldı ve buradaki hiç kimse hakkında bir yargı değil." },
+        { "en": "After today I will not comment publicly on decisions I did not take.", "tr": "Bugünden sonra almadığım kararlar hakkında kamuoyunda yorum yapmayacağım." }
+      ],
+      "glossary": [
+        { "w": "post", "tr": "görev" },
+        { "w": "influence", "tr": "etki" },
+        { "w": "successor", "tr": "halef, yerine gelen" },
+        { "w": "revisit", "tr": "yeniden ele almak" }
+      ]
+    }
+  ]
+}

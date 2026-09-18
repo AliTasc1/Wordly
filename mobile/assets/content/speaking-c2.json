@@ -680,5 +680,950 @@
     "tr": "kıt, az bulunur"
    }
   ]
+ },
+ {
+  "id": "c2-s-11",
+  "level": "C2",
+  "order": 11,
+  "kind": "speaking",
+  "title": "İnandığın bir kuralın istisnasını savunmak",
+  "titleEn": "Defending an Exception to a Rule You Believe In",
+  "minutes": 7,
+  "situation": "You have always argued for a rule. In one case you are asking for an exception to it. Justify that to an audience that has heard you defend the rule.",
+  "situationTr": "Bir kuralı hep savundun. Tek bir vakada ona istisna istiyorsun. Bunu, seni o kuralı savunurken dinlemiş bir topluluğa gerekçelendir.",
+  "prompts": [
+   "Restate the rule and why you still hold it.",
+   "Explain what is different about this case.",
+   "Say what would stop the exception becoming the rule.",
+   "Say what you would accept as the cost of being wrong."
+  ],
+  "promptsTr": [
+   "Kuralı ve neden hâlâ savunduğunu yeniden ifade et.",
+   "Bu vakada neyin farklı olduğunu açıkla.",
+   "İstisnanın kurala dönüşmesini neyin engelleyeceğini söyle.",
+   "Yanılmanın bedeli olarak neyi kabul edeceğini söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I have argued for this rule in this room for six years and I still would.",
+    "tr": "Bu kuralı bu odada altı yıldır savundum ve hâlâ savunurum."
+   },
+   {
+    "en": "What distinguishes this case is that the harm is immediate and the delay is not recoverable.",
+    "tr": "Bu vakayı ayıran şey, zararın ânında olması ve gecikmenin telafi edilemez olması."
+   },
+   {
+    "en": "An exception becomes a rule when nobody has to ask for it a second time.",
+    "tr": "Bir istisna, ikinci kez istenmesi gerekmediğinde kurala dönüşür."
+   },
+   {
+    "en": "I would tie it to this case by name, with an end date in the text.",
+    "tr": "Onu adıyla bu vakaya bağlar, metne bir bitiş tarihi koyardım."
+   },
+   {
+    "en": "If I am wrong, the cost falls on me, not on the next applicant.",
+    "tr": "Yanılıyorsam bedel bana düşer, sıradaki başvurana değil."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "exception",
+    "tr": "istisna"
+   },
+   {
+    "w": "distinguishes",
+    "tr": "ayırt eder"
+   },
+   {
+    "w": "recoverable",
+    "tr": "telafi edilebilir"
+   },
+   {
+    "w": "applicant",
+    "tr": "başvuran"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-12",
+  "level": "C2",
+  "order": 12,
+  "kind": "speaking",
+  "title": "Bir uzlaşmanın bedelini adlandırmak",
+  "titleEn": "Naming What a Compromise Costs",
+  "minutes": 7,
+  "situation": "An agreement is about to be signed and everybody is calling it a win. Say plainly what is being given up.",
+  "situationTr": "Bir anlaşma imzalanmak üzere ve herkes buna kazanç diyor. Nelerden vazgeçildiğini açıkça söyle.",
+  "prompts": [
+   "Say that you support the agreement, if you do.",
+   "Name precisely what is lost in it.",
+   "Say who bears that loss.",
+   "Say why naming it now matters."
+  ],
+  "promptsTr": [
+   "Anlaşmayı destekliyorsan desteklediğini söyle.",
+   "İçinde tam olarak neyin kaybedildiğini adlandır.",
+   "O kaybı kimin üstlendiğini söyle.",
+   "Bunu şimdi adlandırmanın neden önemli olduğunu söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I will vote for this, and I want the record to say what it costs.",
+    "tr": "Buna evet oyu vereceğim ve tutanağın neye mal olduğunu yazmasını istiyorum."
+   },
+   {
+    "en": "We are giving up the right to reopen the boundary for twenty years.",
+    "tr": "Sınırı yirmi yıl boyunca yeniden açma hakkından vazgeçiyoruz."
+   },
+   {
+    "en": "That cost is borne almost entirely by the eastern villages.",
+    "tr": "Bu bedeli neredeyse tamamen doğudaki köyler üstleniyor."
+   },
+   {
+    "en": "Nobody in this room will be asked to live with it.",
+    "tr": "Bu odadaki hiç kimseden onunla yaşaması istenmeyecek."
+   },
+   {
+    "en": "If we do not say it today, in four years it will be called a surprise.",
+    "tr": "Bugün söylemezsek dört yıl sonra buna sürpriz denecek."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "compromise",
+    "tr": "uzlaşma"
+   },
+   {
+    "w": "borne",
+    "tr": "üstlenilen"
+   },
+   {
+    "w": "boundary",
+    "tr": "sınır"
+   },
+   {
+    "w": "reopen",
+    "tr": "yeniden açmak"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-13",
+  "level": "C2",
+  "order": 13,
+  "kind": "speaking",
+  "title": "Kanıtın bittiği yerde karar vermek",
+  "titleEn": "Deciding Where the Evidence Runs Out",
+  "minutes": 7,
+  "situation": "A decision must be made and the research does not reach the question being asked. Explain how you will decide anyway.",
+  "situationTr": "Bir karar verilmeli ama araştırma sorulan soruya ulaşmıyor. Yine de nasıl karar vereceğini açıkla.",
+  "prompts": [
+   "Say exactly where the evidence stops.",
+   "Say what you are substituting for it.",
+   "Say which way you are erring and why.",
+   "Say what would make you revisit the decision."
+  ],
+  "promptsTr": [
+   "Kanıtın tam olarak nerede bittiğini söyle.",
+   "Onun yerine neyi koyduğunu söyle.",
+   "Hangi yönde hata yapmayı seçtiğini ve nedenini söyle.",
+   "Kararı yeniden gözden geçirmene ne yol açar söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The evidence takes us as far as twelve months and no further.",
+    "tr": "Kanıt bizi on iki aya kadar götürüyor, daha ileriye değil."
+   },
+   {
+    "en": "Beyond that I am relying on judgment, and I would rather say so.",
+    "tr": "Ondan sonrası için muhakemeye dayanıyorum ve bunu söylemeyi tercih ederim."
+   },
+   {
+    "en": "Where I am uncertain, I am erring towards the reversible option.",
+    "tr": "Emin olmadığım yerde geri dönülebilir seçenek yönünde hata yapmayı seçiyorum."
+   },
+   {
+    "en": "A decision you can undo is worth a slightly worse expected outcome.",
+    "tr": "Geri alabileceğin bir karar, biraz daha kötü bir beklenen sonuca değer."
+   },
+   {
+    "en": "Two consecutive quarters below the line and I would reopen this.",
+    "tr": "Üst üste iki çeyrek eşiğin altında kalırsa bunu yeniden açardım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "substituting",
+    "tr": "yerine koymak"
+   },
+   {
+    "w": "erring",
+    "tr": "hata payını bir yöne bırakmak"
+   },
+   {
+    "w": "reversible",
+    "tr": "geri döndürülebilir"
+   },
+   {
+    "w": "consecutive",
+    "tr": "ardışık"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-14",
+  "level": "C2",
+  "order": 14,
+  "kind": "speaking",
+  "title": "Geçmişteki bir haksızlığı bugüne bağlamak",
+  "titleEn": "Connecting a Historical Wrong to the Present",
+  "minutes": 7,
+  "situation": "You are asked why something that happened seventy years ago should affect a decision today. Answer without slogans.",
+  "situationTr": "Yetmiş yıl önce olan bir şeyin bugünkü kararı neden etkilemesi gerektiği soruluyor. Sloganlara başvurmadan cevapla.",
+  "prompts": [
+   "State the historical fact without decoration.",
+   "Trace the line from then to now, step by step.",
+   "Say where the line is weakest.",
+   "Say what follows from it and what does not."
+  ],
+  "promptsTr": [
+   "Tarihsel olguyu süslemeden ortaya koy.",
+   "O günden bugüne uzanan çizgiyi adım adım izle.",
+   "Çizginin en zayıf olduğu yeri söyle.",
+   "Ondan neyin çıktığını ve neyin çıkmadığını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "In nineteen fifty-four the land was transferred without payment.",
+    "tr": "Bin dokuz yüz elli dörtte toprak bedelsiz devredildi."
+   },
+   {
+    "en": "The families who lost it were then excluded from the loans that followed.",
+    "tr": "Onu kaybeden aileler ardından gelen kredilerin dışında bırakıldı."
+   },
+   {
+    "en": "The weakest link is the third generation, and I will not overstate it.",
+    "tr": "En zayıf halka üçüncü kuşak ve bunu abartmayacağım."
+   },
+   {
+    "en": "What follows is a claim about the process, not about individual guilt.",
+    "tr": "Buradan çıkan şey süreçle ilgili bir iddia, kişisel suçlulukla ilgili değil."
+   },
+   {
+    "en": "Nothing here requires anybody alive to be blamed for it.",
+    "tr": "Buradaki hiçbir şey yaşayan birinin suçlanmasını gerektirmiyor."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "transferred",
+    "tr": "devredildi"
+   },
+   {
+    "w": "excluded",
+    "tr": "dışarıda bırakılmış"
+   },
+   {
+    "w": "overstate",
+    "tr": "abartmak"
+   },
+   {
+    "w": "guilt",
+    "tr": "suçluluk"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-15",
+  "level": "C2",
+  "order": 15,
+  "kind": "speaking",
+  "title": "İki meslek arasında çeviri yapmak",
+  "titleEn": "Translating Between Two Professions",
+  "minutes": 7,
+  "situation": "Engineers and lawyers in the same project are using the same words differently. Stand between them and translate.",
+  "situationTr": "Aynı projedeki mühendisler ve hukukçular aynı kelimeleri farklı kullanıyor. Aralarında dur ve çeviri yap.",
+  "prompts": [
+   "Show one word that means two things here.",
+   "Say what each side hears when it is used.",
+   "Give a form of words both can sign.",
+   "Say what still has to be decided, not translated."
+  ],
+  "promptsTr": [
+   "Burada iki anlama gelen bir kelimeyi göster.",
+   "Kullanıldığında her tarafın ne duyduğunu söyle.",
+   "İkisinin de imzalayabileceği bir ifade öner.",
+   "Çevrilmesi değil, karara bağlanması gerekeni söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "When the engineers say safe, they mean within the design limit.",
+    "tr": "Mühendisler güvenli dediğinde tasarım sınırı içinde demek istiyor."
+   },
+   {
+    "en": "When the lawyers hear safe, they hear a promise that survives a court.",
+    "tr": "Hukukçular güvenli kelimesini duyduğunda mahkemede ayakta kalan bir taahhüt duyuyor."
+   },
+   {
+    "en": "A form of words both can sign is within the stated tolerance.",
+    "tr": "İkisinin de imzalayabileceği ifade: belirtilen tolerans içinde."
+   },
+   {
+    "en": "That sentence is not a compromise; it is simply more accurate.",
+    "tr": "Bu cümle bir uzlaşma değil; sadece daha doğru."
+   },
+   {
+    "en": "What remains is a real decision: who signs when the limit is reached.",
+    "tr": "Geriye gerçek bir karar kalıyor: sınıra ulaşıldığında kimin imzalayacağı."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "professions",
+    "tr": "meslekler"
+   },
+   {
+    "w": "design limit",
+    "tr": "tasarım sınırı"
+   },
+   {
+    "w": "tolerance",
+    "tr": "tolerans, izin verilen sapma"
+   },
+   {
+    "w": "accurate",
+    "tr": "doğru, kesin"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-16",
+  "level": "C2",
+  "order": 16,
+  "kind": "speaking",
+  "title": "Öngörünün tutmadığını kabul etmek",
+  "titleEn": "Admitting Your Forecast Was Wrong",
+  "minutes": 7,
+  "situation": "Two years ago you made a public forecast. It was wrong. Speak about it before somebody else does.",
+  "situationTr": "İki yıl önce kamuya açık bir öngörüde bulundun. Tutmadı. Başkası konuşmadan önce sen konuş.",
+  "prompts": [
+   "Restate the forecast exactly as you made it.",
+   "Say what actually happened.",
+   "Say which part of your reasoning failed.",
+   "Say what you have changed in how you forecast."
+  ],
+  "promptsTr": [
+   "Öngörünü yaptığın hâliyle tam olarak yinele.",
+   "Gerçekte ne olduğunu söyle.",
+   "Akıl yürütmenin hangi kısmının çöktüğünü söyle.",
+   "Öngörü yapış biçiminde neyi değiştirdiğini söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I said prices would fall by a fifth within eighteen months.",
+    "tr": "Fiyatların on sekiz ayda beşte bir düşeceğini söylemiştim."
+   },
+   {
+    "en": "They rose by six percent, which is not a small error but a different direction.",
+    "tr": "Yüzde altı yükseldi; bu küçük bir hata değil, farklı bir yön."
+   },
+   {
+    "en": "The failure was not the model but the assumption I never tested.",
+    "tr": "Kusur modelde değil, hiç sınamadığım varsayımdaydı."
+   },
+   {
+    "en": "I treated the supply side as fixed because it had been fixed for a decade.",
+    "tr": "Arz tarafını sabit saydım, çünkü on yıldır sabitti."
+   },
+   {
+    "en": "I now publish the assumptions separately, so they can be attacked first.",
+    "tr": "Artık varsayımları ayrı yayımlıyorum, önce onlar hedef alınabilsin diye."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "forecast",
+    "tr": "öngörü"
+   },
+   {
+    "w": "assumption",
+    "tr": "varsayım"
+   },
+   {
+    "w": "supply",
+    "tr": "arz"
+   },
+   {
+    "w": "attacked",
+    "tr": "eleştiriyle hedef alınmış"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-17",
+  "level": "C2",
+  "order": 17,
+  "kind": "speaking",
+  "title": "Konuşmamış olmanın gerekçesi",
+  "titleEn": "Justifying Not Speaking Out",
+  "minutes": 7,
+  "situation": "You knew about a problem for a year and said nothing publicly. You are asked to explain that choice.",
+  "situationTr": "Bir sorunu bir yıl boyunca bildin ve kamuoyunda bir şey söylemedin. Bu tercihi açıklaman isteniyor.",
+  "prompts": [
+   "Say what you knew and when you knew it.",
+   "Say what you did instead of speaking publicly.",
+   "Give the reasoning, without dressing it up.",
+   "Say whether you would make the same choice again."
+  ],
+  "promptsTr": [
+   "Neyi ve ne zaman bildiğini söyle.",
+   "Kamuoyuna açıklamak yerine ne yaptığını söyle.",
+   "Gerekçeni süslemeden ver.",
+   "Aynı tercihi yine yapıp yapmayacağını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I knew the figures were unreliable from the March audit on.",
+    "tr": "Rakamların güvenilmez olduğunu mart denetiminden itibaren biliyordum."
+   },
+   {
+    "en": "I raised it four times internally and I have the dates.",
+    "tr": "Bunu kurum içinde dört kez dile getirdim ve tarihleri elimde."
+   },
+   {
+    "en": "I judged that going public would have ended the audit, not the practice.",
+    "tr": "Kamuoyuna gitmenin uygulamayı değil denetimi bitireceğine hükmettim."
+   },
+   {
+    "en": "That judgment was defensible and it was also convenient for me.",
+    "tr": "Bu muhakeme savunulabilirdi ve aynı zamanda benim işime geliyordu."
+   },
+   {
+    "en": "Knowing how it ended, I would go public in the ninth month.",
+    "tr": "Nasıl bittiğini bildiğim için dokuzuncu ayda kamuoyuna giderdim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "unreliable",
+    "tr": "güvenilmez"
+   },
+   {
+    "w": "audit",
+    "tr": "denetim"
+   },
+   {
+    "w": "internally",
+    "tr": "kurum içinde"
+   },
+   {
+    "w": "defensible",
+    "tr": "savunulabilir"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-18",
+  "level": "C2",
+  "order": 18,
+  "kind": "speaking",
+  "title": "Ölçütün ölçemedikleri",
+  "titleEn": "What the Measure Leaves Out",
+  "minutes": 7,
+  "situation": "Your institution is ranked by a single number and has done well. Explain to staff what the number does not capture.",
+  "situationTr": "Kurumun tek bir sayıyla sıralanıyor ve iyi bir yer aldı. Personele o sayının neleri yakalayamadığını anlat.",
+  "prompts": [
+   "Acknowledge what the measure does capture.",
+   "Say what it cannot see, with an example.",
+   "Say how the measure changes behavior.",
+   "Say what you will not do to protect the ranking."
+  ],
+  "promptsTr": [
+   "Ölçütün neyi gerçekten yakaladığını kabul et.",
+   "Bir örnekle neyi göremediğini söyle.",
+   "Ölçütün davranışı nasıl değiştirdiğini söyle.",
+   "Sıralamayı korumak için neyi yapmayacağını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The measure does capture something real: how fast people finish.",
+    "tr": "Ölçüt gerçek bir şeyi yakalıyor: insanların ne kadar hızlı bitirdiğini."
+   },
+   {
+    "en": "What it cannot see is the student who takes five years and then stays.",
+    "tr": "Göremediği şey, beş yıl süren ve sonra kalan öğrenci."
+   },
+   {
+    "en": "Any measure that is watched closely enough starts to be managed.",
+    "tr": "Yeterince yakından izlenen her ölçüt yönetilmeye başlar."
+   },
+   {
+    "en": "We are not going to stop admitting the students who take longer.",
+    "tr": "Daha uzun süren öğrencileri almayı bırakmayacağız."
+   },
+   {
+    "en": "I would rather fall ten places than teach to a number.",
+    "tr": "Bir sayıya göre eğitim vermektense on sıra düşmeyi tercih ederim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "ranked",
+    "tr": "sıralanmış"
+   },
+   {
+    "w": "capture",
+    "tr": "yakalamak, ölçebilmek"
+   },
+   {
+    "w": "admitting",
+    "tr": "kabul etmek (öğrenci)"
+   },
+   {
+    "w": "ranking",
+    "tr": "sıralama"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-19",
+  "level": "C2",
+  "order": 19,
+  "kind": "speaking",
+  "title": "Kuralın neden çiğnendiğini sormak",
+  "titleEn": "Asking Why the Rule Was Broken",
+  "minutes": 7,
+  "situation": "A rule was broken by several people in the same month. Lead the discussion about why, rather than about who.",
+  "situationTr": "Bir kural aynı ay içinde birkaç kişi tarafından çiğnendi. Tartışmayı kimin değil, neden sorusu üzerinden yürüt.",
+  "prompts": [
+   "Set out the facts without naming individuals.",
+   "Say why the pattern matters more than the cases.",
+   "Ask the question in a way people can answer honestly.",
+   "Say what you will do with what you hear."
+  ],
+  "promptsTr": [
+   "Kişileri adlandırmadan olguları ortaya koy.",
+   "Örüntünün tekil vakalardan neden daha önemli olduğunu söyle.",
+   "Soruyu insanların dürüstçe cevaplayabileceği biçimde sor.",
+   "Duyduklarınla ne yapacağını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The same step was skipped eleven times in four weeks.",
+    "tr": "Aynı adım dört haftada on bir kez atlandı."
+   },
+   {
+    "en": "Eleven people breaking one rule is a fact about the rule.",
+    "tr": "On bir kişinin tek bir kuralı çiğnemesi, kural hakkında bir olgudur."
+   },
+   {
+    "en": "I am not asking who, and nothing said here goes into a file.",
+    "tr": "Kim olduğunu sormuyorum ve burada söylenen hiçbir şey dosyaya girmeyecek."
+   },
+   {
+    "en": "Tell me what the rule costs you on an ordinary Tuesday.",
+    "tr": "Sıradan bir salı günü bu kuralın size neye mal olduğunu anlatın."
+   },
+   {
+    "en": "If the answer is that it is unworkable, I will rewrite it, not enforce it.",
+    "tr": "Cevap uygulanamaz olduğuysa onu uygulatmam, yeniden yazarım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "pattern",
+    "tr": "örüntü"
+   },
+   {
+    "w": "skipped",
+    "tr": "atlandı"
+   },
+   {
+    "w": "unworkable",
+    "tr": "uygulanamaz"
+   },
+   {
+    "w": "enforce",
+    "tr": "uygulatmak"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-20",
+  "level": "C2",
+  "order": 20,
+  "kind": "speaking",
+  "title": "Bir metni yazarına karşı okumak",
+  "titleEn": "Reading a Text Against Its Author",
+  "minutes": 7,
+  "situation": "A well-known report argues one thing, but its own data suggests another. Present that reading to a seminar.",
+  "situationTr": "Tanınmış bir rapor bir şeyi savunuyor ama kendi verileri başka bir şeye işaret ediyor. Bu okumayı bir seminerde sun.",
+  "prompts": [
+   "State the report's own conclusion fairly.",
+   "Point to the table that does not support it.",
+   "Say what an honest reading would conclude.",
+   "Say what you are not accusing the author of."
+  ],
+  "promptsTr": [
+   "Raporun kendi sonucunu adilce ortaya koy.",
+   "Onu desteklemeyen tabloyu göster.",
+   "Dürüst bir okumanın neye varacağını söyle.",
+   "Yazarı neyle suçlamadığını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The report concludes that the program raised earnings by a tenth.",
+    "tr": "Rapor, programın kazançları onda bir artırdığı sonucuna varıyor."
+   },
+   {
+    "en": "Table nine shows the whole effect in one region and none elsewhere.",
+    "tr": "Dokuzuncu tablo etkinin tamamını tek bir bölgede, başka hiçbir yerde göstermiyor."
+   },
+   {
+    "en": "A careful reading gives a regional finding, not a national one.",
+    "tr": "Dikkatli bir okuma ulusal değil bölgesel bir bulgu verir."
+   },
+   {
+    "en": "I am not suggesting the data were handled dishonestly.",
+    "tr": "Verilerin dürüst olmayan biçimde işlendiğini ileri sürmüyorum."
+   },
+   {
+    "en": "This is the ordinary pull of wanting a result to be general.",
+    "tr": "Bu, bir sonucun genel olmasını isteme yönündeki sıradan eğilim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "conclusion",
+    "tr": "sonuç"
+   },
+   {
+    "w": "earnings",
+    "tr": "kazançlar"
+   },
+   {
+    "w": "regional",
+    "tr": "bölgesel"
+   },
+   {
+    "w": "dishonestly",
+    "tr": "dürüst olmayan biçimde"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-21",
+  "level": "C2",
+  "order": 21,
+  "kind": "speaking",
+  "title": "Zamanı gelmemiş bir fikri savunmak",
+  "titleEn": "Arguing for an Idea Before Its Time",
+  "minutes": 7,
+  "situation": "You are proposing something that will not be accepted for years. Make the case anyway, to people who will reject it.",
+  "situationTr": "Yıllarca kabul görmeyecek bir şey öneriyorsun. Yine de onu reddedecek kişilere savunusunu yap.",
+  "prompts": [
+   "Say why you are raising it now, knowing the answer.",
+   "Set out the argument in its strongest form.",
+   "Say what would have to change for it to be adopted.",
+   "Say what you want on the record today."
+  ],
+  "promptsTr": [
+   "Cevabı bildiğin hâlde bunu neden şimdi açtığını söyle.",
+   "Savını en güçlü hâliyle ortaya koy.",
+   "Kabul edilmesi için neyin değişmesi gerektiğini söyle.",
+   "Bugün kayda ne geçmesini istediğini söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I know this will not be adopted today, and I am raising it anyway.",
+    "tr": "Bunun bugün kabul edilmeyeceğini biliyorum ve yine de açıyorum."
+   },
+   {
+    "en": "The strongest form of the argument is not about money at all.",
+    "tr": "Savın en güçlü hâli parayla hiç ilgili değil."
+   },
+   {
+    "en": "Two things would have to change: the funding cycle and one law.",
+    "tr": "İki şeyin değişmesi gerekir: fon döngüsü ve tek bir yasa."
+   },
+   {
+    "en": "Neither of those is unthinkable within five years.",
+    "tr": "İkisi de beş yıl içinde düşünülemez değil."
+   },
+   {
+    "en": "What I want today is that the objections are written down.",
+    "tr": "Bugün istediğim şey, itirazların yazıya geçirilmesi."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "adopted",
+    "tr": "benimsenmiş, kabul edilmiş"
+   },
+   {
+    "w": "funding cycle",
+    "tr": "fon döngüsü"
+   },
+   {
+    "w": "unthinkable",
+    "tr": "düşünülemez"
+   },
+   {
+    "w": "objections",
+    "tr": "itirazlar"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-22",
+  "level": "C2",
+  "order": 22,
+  "kind": "speaking",
+  "title": "Aynı odada iki kuşak",
+  "titleEn": "Between Two Generations in One Room",
+  "minutes": 7,
+  "situation": "Older and younger staff disagree about how the work should be done, and each thinks the other is not serious. Speak to both.",
+  "situationTr": "Kıdemli ve genç çalışanlar işin nasıl yapılacağı konusunda anlaşamıyor ve her biri diğerini ciddi bulmuyor. İkisine birden konuş.",
+  "prompts": [
+   "Say what each group is actually defending.",
+   "Say what each group is getting wrong about the other.",
+   "Name the thing that has genuinely changed.",
+   "Say what you expect from both, concretely."
+  ],
+  "promptsTr": [
+   "Her grubun gerçekte neyi savunduğunu söyle.",
+   "Her grubun diğeri hakkında neyi yanlış anladığını söyle.",
+   "Gerçekten değişmiş olan şeyi adlandır.",
+   "İkisinden de somut olarak ne beklediğini söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "What the older group is defending is not the method but the reliability.",
+    "tr": "Kıdemli grubun savunduğu şey yöntem değil güvenilirlik."
+   },
+   {
+    "en": "What the younger group is defending is not speed but their own time.",
+    "tr": "Genç grubun savunduğu şey hız değil kendi zamanları."
+   },
+   {
+    "en": "Each side reads the other as careless, and neither of them is.",
+    "tr": "Her taraf diğerini özensiz okuyor ve ikisi de değil."
+   },
+   {
+    "en": "What has genuinely changed is that the work is now visible to clients.",
+    "tr": "Gerçekten değişen şey, işin artık müşterilere görünür olması."
+   },
+   {
+    "en": "From both of you I want the same thing written down by Friday.",
+    "tr": "İkinizden de cumaya kadar yazılı olarak aynı şeyi istiyorum."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "generations",
+    "tr": "kuşaklar"
+   },
+   {
+    "w": "reliability",
+    "tr": "güvenilirlik"
+   },
+   {
+    "w": "careless",
+    "tr": "özensiz"
+   },
+   {
+    "w": "visible",
+    "tr": "görünür"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-23",
+  "level": "C2",
+  "order": 23,
+  "kind": "speaking",
+  "title": "Kendi mesleğini eleştirmek",
+  "titleEn": "Criticizing Your Own Profession",
+  "minutes": 7,
+  "situation": "You are asked to speak at a conference of your own profession about what it does badly. Do it without either flattery or performance.",
+  "situationTr": "Kendi mesleğinin konferansında, mesleğin kötü yaptığı şeyler üzerine konuşman isteniyor. Ne yağcılık ne gösteri yaparak bunu yap.",
+  "prompts": [
+   "Say what the profession genuinely does well.",
+   "Name the failure precisely.",
+   "Say how you personally take part in it.",
+   "Say what a first honest step would be."
+  ],
+  "promptsTr": [
+   "Mesleğin gerçekten iyi yaptığı şeyi söyle.",
+   "Kusuru tam olarak adlandır.",
+   "Bu kusura kendinin nasıl ortak olduğunu söyle.",
+   "İlk dürüst adımın ne olacağını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "We are better than any other field at admitting small errors quickly.",
+    "tr": "Küçük hataları hızla kabul etmekte başka her alandan iyiyiz."
+   },
+   {
+    "en": "We are worse than most at saying that a whole line of work failed.",
+    "tr": "Bütün bir çalışma hattının çöktüğünü söylemekte çoğundan kötüyüz."
+   },
+   {
+    "en": "I have two papers whose direction I no longer believe in.",
+    "tr": "Artık yönüne inanmadığım iki makalem var."
+   },
+   {
+    "en": "I have never written the sentence that says so.",
+    "tr": "Bunu söyleyen cümleyi hiç yazmadım."
+   },
+   {
+    "en": "A first step would be a section in every review for what did not work.",
+    "tr": "İlk adım, her derlemede işe yaramayanlar için bir bölüm olurdu."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "profession",
+    "tr": "meslek"
+   },
+   {
+    "w": "flattery",
+    "tr": "yağcılık, dalkavukluk"
+   },
+   {
+    "w": "papers",
+    "tr": "makaleler"
+   },
+   {
+    "w": "review",
+    "tr": "derleme, değerlendirme yazısı"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-24",
+  "level": "C2",
+  "order": 24,
+  "kind": "speaking",
+  "title": "Derin belirsizlik altında politika önermek",
+  "titleEn": "Recommending Policy Under Deep Uncertainty",
+  "minutes": 7,
+  "situation": "You must recommend a policy for a situation where the range of possible outcomes is very wide. Present it honestly.",
+  "situationTr": "Olası sonuçların aralığının çok geniş olduğu bir durumda politika önermen gerekiyor. Bunu dürüstçe sun.",
+  "prompts": [
+   "Describe the range rather than a single number.",
+   "Say which outcomes you are designing against.",
+   "Explain why you prefer flexible measures here.",
+   "Say what you would monitor and how often."
+  ],
+  "promptsTr": [
+   "Tek bir sayı değil, aralığı tarif et.",
+   "Hangi sonuçlara karşı tasarım yaptığını söyle.",
+   "Burada neden esnek önlemleri tercih ettiğini açıkla.",
+   "Neyi ve ne sıklıkta izleyeceğini söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The credible range runs from almost no effect to a very large one.",
+    "tr": "İnandırıcı aralık neredeyse hiç etki yokken çok büyük bir etkiye kadar uzanıyor."
+   },
+   {
+    "en": "I am designing against the bad tail, not against the central estimate.",
+    "tr": "Merkezî tahmine değil, kötü uca karşı tasarım yapıyorum."
+   },
+   {
+    "en": "Flexible measures cost more in the expected case and less in the worst one.",
+    "tr": "Esnek önlemler beklenen durumda daha pahalı, en kötüsünde daha ucuz."
+   },
+   {
+    "en": "I would monitor three indicators quarterly and publish all three.",
+    "tr": "Üç göstergeyi üç ayda bir izler ve üçünü de yayımlardım."
+   },
+   {
+    "en": "Anybody who gives you a single number here is not being careful.",
+    "tr": "Burada size tek bir sayı veren kimse dikkatli davranmıyordur."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "credible",
+    "tr": "inandırıcı"
+   },
+   {
+    "w": "tail",
+    "tr": "dağılımın uç kısmı"
+   },
+   {
+    "w": "estimate",
+    "tr": "tahmin"
+   },
+   {
+    "w": "indicators",
+    "tr": "göstergeler"
+   }
+  ]
+ },
+ {
+  "id": "c2-s-25",
+  "level": "C2",
+  "order": 25,
+  "kind": "speaking",
+  "title": "Ayrılırken söylenen son şey",
+  "titleEn": "The Last Thing You Say on Leaving",
+  "minutes": 7,
+  "situation": "You are leaving a post you held for eleven years. You have one short speech and no further influence afterwards.",
+  "situationTr": "On bir yıl sürdürdüğün bir görevden ayrılıyorsun. Kısa bir konuşman var ve sonrasında hiçbir etkin kalmayacak.",
+  "prompts": [
+   "Say what you are genuinely grateful for.",
+   "Say the one thing you were never able to fix.",
+   "Say it in a way your successor can use.",
+   "Say what you will not comment on afterwards."
+  ],
+  "promptsTr": [
+   "Gerçekten minnettar olduğun şeyi söyle.",
+   "Hiç düzeltemediğin tek şeyi söyle.",
+   "Bunu, senden sonra gelenin kullanabileceği biçimde söyle.",
+   "Bundan sonra neye yorum yapmayacağını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "What I am grateful for is that nobody here lied to me to be kind.",
+    "tr": "Minnettar olduğum şey, burada kimsenin bana iyilik olsun diye yalan söylememesi."
+   },
+   {
+    "en": "The thing I never fixed is that we decide slowly and then cannot revisit.",
+    "tr": "Hiç düzeltemediğim şey, yavaş karar verip sonra geri dönemememiz."
+   },
+   {
+    "en": "I am leaving a note that lists the four decisions I would reopen.",
+    "tr": "Yeniden açacağım dört kararı sıralayan bir not bırakıyorum."
+   },
+   {
+    "en": "It is addressed to my successor and it is not a judgment on anybody here.",
+    "tr": "Not benden sonra gelene yazıldı ve buradaki hiç kimse hakkında bir yargı değil."
+   },
+   {
+    "en": "After today I will not comment publicly on decisions I did not take.",
+    "tr": "Bugünden sonra almadığım kararlar hakkında kamuoyunda yorum yapmayacağım."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "post",
+    "tr": "görev"
+   },
+   {
+    "w": "influence",
+    "tr": "etki"
+   },
+   {
+    "w": "successor",
+    "tr": "halef, yerine gelen"
+   },
+   {
+    "w": "revisit",
+    "tr": "yeniden ele almak"
+   }
+  ]
  }
 ]
