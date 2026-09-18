@@ -1,0 +1,587 @@
+[
+ {
+  "id": "b1-s-01",
+  "level": "B1",
+  "order": 1,
+  "kind": "speaking",
+  "title": "İş görüşmesi",
+  "titleEn": "A Job Interview",
+  "minutes": 5,
+  "situation": "You are being interviewed for a job in a shop. Answer the manager's questions.",
+  "situationTr": "Bir mağazadaki iş için görüşmedesin. Müdürün sorularını yanıtla.",
+  "prompts": [
+   "Tell the manager about your experience.",
+   "Explain why you want this job.",
+   "Describe a problem you solved at work.",
+   "Ask two questions about the job."
+  ],
+  "promptsTr": [
+   "Müdüre deneyiminden bahset.",
+   "Bu işi neden istediğini açıkla.",
+   "İşte çözdüğün bir sorunu anlat.",
+   "İşle ilgili iki soru sor."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I have worked in customer service for two years.",
+    "tr": "İki yıldır müşteri hizmetlerinde çalışıyorum."
+   },
+   {
+    "en": "What interests me most is working with people.",
+    "tr": "Beni en çok ilgilendiren şey insanlarla çalışmak."
+   },
+   {
+    "en": "Once a customer complained about a delivery, and I dealt with it myself.",
+    "tr": "Bir keresinde bir müşteri teslimattan şikâyetçi oldu, konuyu kendim hallettim."
+   },
+   {
+    "en": "Could you tell me what the hours would be?",
+    "tr": "Çalışma saatlerinin ne olacağını söyleyebilir misiniz?"
+   },
+   {
+    "en": "Is there any training at the beginning?",
+    "tr": "Başlangıçta eğitim veriliyor mu?"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "interviewed",
+    "tr": "görüşme yapılan"
+   },
+   {
+    "w": "customer service",
+    "tr": "müşteri hizmetleri"
+   },
+   {
+    "w": "complained",
+    "tr": "şikâyet etti"
+   },
+   {
+    "w": "training",
+    "tr": "eğitim"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-02",
+  "level": "B1",
+  "order": 2,
+  "kind": "speaking",
+  "title": "Komşuyla gürültü meselesi",
+  "titleEn": "A Word With the Neighbor",
+  "minutes": 5,
+  "situation": "Your neighbor plays loud music at night. Speak to them without starting an argument.",
+  "situationTr": "Komşun geceleri yüksek sesle müzik dinliyor. Tartışma çıkarmadan onunla konuş.",
+  "prompts": [
+   "Begin politely and explain the problem.",
+   "Say how it affects you.",
+   "Suggest a solution.",
+   "Agree on something you can both accept."
+  ],
+  "promptsTr": [
+   "Kibarca başla ve sorunu açıkla.",
+   "Seni nasıl etkilediğini söyle.",
+   "Bir çözüm öner.",
+   "İkinizin de kabul edebileceği bir noktada anlaş."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I hope you do not mind me mentioning this.",
+    "tr": "Umarım bunu dile getirmemi yadırgamazsınız."
+   },
+   {
+    "en": "I can hear the music through the wall after midnight.",
+    "tr": "Gece yarısından sonra müziği duvardan duyabiliyorum."
+   },
+   {
+    "en": "I have to get up at six for work.",
+    "tr": "İş için altıda kalkmak zorundayım."
+   },
+   {
+    "en": "Would it be possible to turn it down after eleven?",
+    "tr": "Saat on birden sonra sesi kısmanız mümkün olur mu?"
+   },
+   {
+    "en": "Thank you, that would really help.",
+    "tr": "Teşekkürler, bu gerçekten yardımcı olur."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "mentioning",
+    "tr": "dile getirmek"
+   },
+   {
+    "w": "turn it down",
+    "tr": "sesini kısmak"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-03",
+  "level": "B1",
+  "order": 3,
+  "kind": "speaking",
+  "title": "Bir film önermek",
+  "titleEn": "Recommending a Film",
+  "minutes": 5,
+  "situation": "A friend wants something to watch tonight. Recommend a film and explain why.",
+  "situationTr": "Bir arkadaşın bu akşam izleyecek bir şey arıyor. Bir film öner ve nedenini açıkla.",
+  "prompts": [
+   "Say what the film is about, without spoiling the ending.",
+   "Say what kind of film it is.",
+   "Explain what you liked about it.",
+   "Say who would enjoy it and who would not."
+  ],
+  "promptsTr": [
+   "Sonunu söylemeden filmin konusunu anlat.",
+   "Ne tür bir film olduğunu söyle.",
+   "Neyini beğendiğini açıkla.",
+   "Kimin seveceğini, kimin sevmeyeceğini söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "It is about a family who move to a new country.",
+    "tr": "Yeni bir ülkeye taşınan bir aileyi anlatıyor."
+   },
+   {
+    "en": "I would not call it a comedy, exactly.",
+    "tr": "Tam olarak komedi diyemem."
+   },
+   {
+    "en": "What I liked was that nothing was explained too much.",
+    "tr": "Hoşuma giden şey, hiçbir şeyin fazla açıklanmamasıydı."
+   },
+   {
+    "en": "It is slow at the beginning, so give it twenty minutes.",
+    "tr": "Başı yavaş, yirmi dakika sabret."
+   },
+   {
+    "en": "If you like action films, this is not for you.",
+    "tr": "Aksiyon filmi seviyorsan bu sana göre değil."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "comedy",
+    "tr": "komedi"
+   },
+   {
+    "w": "action",
+    "tr": "aksiyon"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-04",
+  "level": "B1",
+  "order": 4,
+  "kind": "speaking",
+  "title": "İzin istemek",
+  "titleEn": "Asking for Time Off",
+  "minutes": 5,
+  "names": [
+   "Ahmet"
+  ],
+  "situation": "You need three days off next month. Ask your manager and be ready for questions.",
+  "situationTr": "Gelecek ay üç gün izne ihtiyacın var. Müdüründen iste ve sorulara hazırlıklı ol.",
+  "prompts": [
+   "Ask for the days and give the reason.",
+   "Say how your work will be covered.",
+   "Answer if the manager says it is a busy week.",
+   "Offer an alternative."
+  ],
+  "promptsTr": [
+   "Günleri iste ve nedenini söyle.",
+   "İşinin nasıl yürüyeceğini anlat.",
+   "Müdür yoğun bir hafta derse ne diyeceğini düşün.",
+   "Alternatif bir öneri sun."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I would like to ask for three days off in June.",
+    "tr": "Haziranda üç gün izin istemek istiyorum."
+   },
+   {
+    "en": "My sister is getting married on the fourteenth.",
+    "tr": "Kız kardeşim on dördünde evleniyor."
+   },
+   {
+    "en": "I can finish the report before I go.",
+    "tr": "Gitmeden önce raporu bitirebilirim."
+   },
+   {
+    "en": "Ahmet has agreed to cover my shifts.",
+    "tr": "Ahmet vardiyalarımı devralmayı kabul etti."
+   },
+   {
+    "en": "If that week is difficult, I could take the following one.",
+    "tr": "O hafta zorsa bir sonrakini alabilirim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "time off",
+    "tr": "izin"
+   },
+   {
+    "w": "cover",
+    "tr": "yerine bakmak, devralmak"
+   },
+   {
+    "w": "shifts",
+    "tr": "vardiyalar"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-05",
+  "level": "B1",
+  "order": 5,
+  "kind": "speaking",
+  "title": "Bir habere tepki",
+  "titleEn": "Reacting to News",
+  "minutes": 5,
+  "situation": "A friend tells you they are leaving their job to travel for a year. Respond honestly.",
+  "situationTr": "Bir arkadaşın bir yıl gezmek için işini bıraktığını söylüyor. Dürüstçe karşılık ver.",
+  "prompts": [
+   "React to the news.",
+   "Ask two questions about the plan.",
+   "Say one thing that worries you.",
+   "End in a supportive way."
+  ],
+  "promptsTr": [
+   "Habere tepki ver.",
+   "Planla ilgili iki soru sor.",
+   "Seni endişelendiren bir şeyi söyle.",
+   "Destekleyici bir şekilde bitir."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "That is a big decision. How long have you been thinking about it?",
+    "tr": "Bu büyük bir karar. Ne zamandır bunu düşünüyorsun?"
+   },
+   {
+    "en": "Where are you planning to go first?",
+    "tr": "Önce nereye gitmeyi planlıyorsun?"
+   },
+   {
+    "en": "What worries me a little is the money.",
+    "tr": "Beni biraz endişelendiren şey para."
+   },
+   {
+    "en": "Have you thought about what happens when you come back?",
+    "tr": "Döndüğünde ne olacağını düşündün mü?"
+   },
+   {
+    "en": "Whatever you decide, I am glad you told me.",
+    "tr": "Ne karar verirsen ver, bana söylediğine sevindim."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "decision",
+    "tr": "karar"
+   },
+   {
+    "w": "worries",
+    "tr": "endişelendiriyor"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-06",
+  "level": "B1",
+  "order": 6,
+  "kind": "speaking",
+  "title": "Ders anlatmak",
+  "titleEn": "Explaining Something You Know",
+  "minutes": 5,
+  "situation": "Teach a friend something you can do well: cooking, a game, or a program.",
+  "situationTr": "Bir arkadaşına iyi yaptığın bir şeyi öğret: yemek, bir oyun ya da bir program.",
+  "prompts": [
+   "Say what you are going to teach and why it is useful.",
+   "Explain the first two steps clearly.",
+   "Warn about a common mistake.",
+   "Check that your friend has understood."
+  ],
+  "promptsTr": [
+   "Ne öğreteceğini ve neden faydalı olduğunu söyle.",
+   "İlk iki adımı net biçimde açıkla.",
+   "Sık yapılan bir hatayı uyar.",
+   "Arkadaşının anlayıp anlamadığını kontrol et."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The first thing you need to do is ...",
+    "tr": "Yapman gereken ilk şey ..."
+   },
+   {
+    "en": "Once that is ready, you can move on to the next part.",
+    "tr": "O hazır olunca bir sonraki kısma geçebilirsin."
+   },
+   {
+    "en": "A lot of people get this bit wrong.",
+    "tr": "Birçok kişi bu kısmı yanlış yapıyor."
+   },
+   {
+    "en": "Does that make sense so far?",
+    "tr": "Şimdiye kadar anlaşıldı mı?"
+   },
+   {
+    "en": "Try it once and tell me what happens.",
+    "tr": "Bir kez dene ve ne olduğunu bana söyle."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "steps",
+    "tr": "adımlar"
+   },
+   {
+    "w": "make sense",
+    "tr": "anlaşılmak, mantıklı gelmek"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-07",
+  "level": "B1",
+  "order": 7,
+  "kind": "speaking",
+  "title": "Telefonda şikâyet",
+  "titleEn": "Complaining on the Phone",
+  "minutes": 5,
+  "situation": "Your internet has been slow for two weeks. Call the company and ask them to fix it.",
+  "situationTr": "İnternetin iki haftadır yavaş. Şirketi ara ve düzeltmelerini iste.",
+  "prompts": [
+   "Explain the problem and when it started.",
+   "Say what you have already tried.",
+   "Say clearly what you want them to do.",
+   "Ask when you will hear from them."
+  ],
+  "promptsTr": [
+   "Sorunu ve ne zaman başladığını açıkla.",
+   "Neyi zaten denediğini söyle.",
+   "Ne yapmalarını istediğini net söyle.",
+   "Ne zaman dönüş yapacaklarını sor."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "The connection has been slow since the second of March.",
+    "tr": "Bağlantı 2 Mart'tan beri yavaş."
+   },
+   {
+    "en": "I have already restarted the box twice.",
+    "tr": "Modemi zaten iki kez yeniden başlattım."
+   },
+   {
+    "en": "I would like an engineer to come this week.",
+    "tr": "Bu hafta bir teknisyenin gelmesini istiyorum."
+   },
+   {
+    "en": "Could you give me a reference number?",
+    "tr": "Bana bir kayıt numarası verebilir misiniz?"
+   },
+   {
+    "en": "When can I expect to hear from you?",
+    "tr": "Ne zaman dönüş bekleyebilirim?"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "connection",
+    "tr": "bağlantı"
+   },
+   {
+    "w": "restarted",
+    "tr": "yeniden başlattı"
+   },
+   {
+    "w": "engineer",
+    "tr": "teknisyen, mühendis"
+   },
+   {
+    "w": "reference number",
+    "tr": "kayıt numarası"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-08",
+  "level": "B1",
+  "order": 8,
+  "kind": "speaking",
+  "title": "Fikir ayrılığı",
+  "titleEn": "Disagreeing Politely",
+  "minutes": 5,
+  "situation": "Your group wants to spend the whole budget on one big event. You disagree.",
+  "situationTr": "Grubun bütün bütçeyi tek bir büyük etkinliğe harcamak istiyor. Sen katılmıyorsun.",
+  "prompts": [
+   "Say what you agree with first.",
+   "Explain your objection with a reason.",
+   "Give an example that supports you.",
+   "Suggest something the group could accept."
+  ],
+  "promptsTr": [
+   "Önce katıldığın noktayı söyle.",
+   "İtirazını bir gerekçeyle açıkla.",
+   "Seni destekleyen bir örnek ver.",
+   "Grubun kabul edebileceği bir şey öner."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I agree that we need something people will remember.",
+    "tr": "İnsanların hatırlayacağı bir şeye ihtiyacımız olduğuna katılıyorum."
+   },
+   {
+    "en": "What worries me is that we would have nothing left in October.",
+    "tr": "Beni endişelendiren, ekimde elimizde hiçbir şey kalmayacak olması."
+   },
+   {
+    "en": "Last year the same thing happened and we had to cancel two meetings.",
+    "tr": "Geçen yıl aynı şey oldu ve iki toplantıyı iptal etmek zorunda kaldık."
+   },
+   {
+    "en": "Could we spend half now and keep the rest?",
+    "tr": "Yarısını şimdi harcayıp kalanını tutabilir miyiz?"
+   },
+   {
+    "en": "I am happy to go with the group if most people prefer that.",
+    "tr": "Çoğunluk öyle isterse grupla birlikte hareket etmekten memnunum."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "budget",
+    "tr": "bütçe"
+   },
+   {
+    "w": "objection",
+    "tr": "itiraz"
+   },
+   {
+    "w": "cancel",
+    "tr": "iptal etmek"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-09",
+  "level": "B1",
+  "order": 9,
+  "kind": "speaking",
+  "title": "Bir yeri tarif etmek",
+  "titleEn": "Describing a Place You Love",
+  "minutes": 5,
+  "situation": "Describe a place that matters to you so that somebody can picture it.",
+  "situationTr": "Senin için önemli olan bir yeri, karşındaki gözünde canlandırabilecek şekilde anlat.",
+  "prompts": [
+   "Say where it is and how you got to know it.",
+   "Describe what you see and hear there.",
+   "Say what you usually do there.",
+   "Explain why it matters to you."
+  ],
+  "promptsTr": [
+   "Nerede olduğunu ve orayı nasıl tanıdığını söyle.",
+   "Orada ne gördüğünü ve duyduğunu anlat.",
+   "Orada genelde ne yaptığını söyle.",
+   "Senin için neden önemli olduğunu açıkla."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "It is a small park about ten minutes from my house.",
+    "tr": "Evime on dakika uzaklıkta küçük bir park."
+   },
+   {
+    "en": "I started going there when I was at school.",
+    "tr": "Oraya okuldayken gitmeye başladım."
+   },
+   {
+    "en": "You can hear the traffic, but only just.",
+    "tr": "Trafiği duyabilirsin ama çok hafif."
+   },
+   {
+    "en": "I usually sit at the far end and read.",
+    "tr": "Genelde en uçta oturup okurum."
+   },
+   {
+    "en": "It is the one place where I do not feel in a hurry.",
+    "tr": "Acele içinde hissetmediğim tek yer orası."
+   }
+  ],
+  "glossary": [
+   {
+    "w": "traffic",
+    "tr": "trafik"
+   },
+   {
+    "w": "in a hurry",
+    "tr": "acele içinde"
+   }
+  ]
+ },
+ {
+  "id": "b1-s-10",
+  "level": "B1",
+  "order": 10,
+  "kind": "speaking",
+  "title": "Özür dilemek",
+  "titleEn": "Making an Apology",
+  "minutes": 5,
+  "situation": "You forgot a friend's birthday and they were hurt. Apologize properly.",
+  "situationTr": "Bir arkadaşının doğum gününü unuttun ve arkadaşın üzüldü. Düzgün bir özür dile.",
+  "prompts": [
+   "Apologize without making excuses.",
+   "Show that you understand why they were hurt.",
+   "Explain briefly what happened.",
+   "Say what you will do differently."
+  ],
+  "promptsTr": [
+   "Bahane üretmeden özür dile.",
+   "Neden üzüldüğünü anladığını göster.",
+   "Ne olduğunu kısaca açıkla.",
+   "Bundan sonra neyi farklı yapacağını söyle."
+  ],
+  "usefulPhrases": [
+   {
+    "en": "I am really sorry. There is no good excuse.",
+    "tr": "Gerçekten özür dilerim. İyi bir bahanem yok."
+   },
+   {
+    "en": "I would have been upset too.",
+    "tr": "Ben de üzülürdüm."
+   },
+   {
+    "en": "I had a hard week, but that is not the point.",
+    "tr": "Zor bir hafta geçirdim ama mesele bu değil."
+   },
+   {
+    "en": "I have put it in my calendar now.",
+    "tr": "Şimdi takvimime yazdım."
+   },
+   {
+    "en": "Can I take you out at the weekend to make up for it?",
+    "tr": "Bunu telafi etmek için hafta sonu seni bir yere götürebilir miyim?"
+   }
+  ],
+  "glossary": [
+   {
+    "w": "excuse",
+    "tr": "bahane"
+   },
+   {
+    "w": "upset",
+    "tr": "üzgün, kırgın"
+   },
+   {
+    "w": "calendar",
+    "tr": "takvim"
+   },
+   {
+    "w": "make up for",
+    "tr": "telafi etmek"
+   }
+  ]
+ }
+]

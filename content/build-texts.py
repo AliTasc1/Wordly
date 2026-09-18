@@ -130,6 +130,11 @@ def check_level(item: dict, level: str, levels: dict, problems: list[str]) -> No
     # yükü değil, satırın kime ait olduğunu gösteren bir işaret.
     known = glossary | {n.lower() for n in item.get("names", [])}
     known |= {s.lower() for s in item.get("speakers", [])}
+    # Sözlükçe girdisi çok kelimeli olabilir ("reference number", "make up
+    # for"). Ölçüm kelime kelime yapıldığı için girdinin parçaları da bilinen
+    # sayılmalı; yoksa açıklanmış bir kalıbın içindeki kelime "seviye dışı"
+    # olarak raporlanıyor.
+    known |= {part for entry in glossary for part in entry.split()}
 
     report = analyse(body_of(item), level, levels, known)
 

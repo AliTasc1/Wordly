@@ -1,0 +1,179 @@
+{
+  "_meta": { "batch": "b1-speaking-01", "level": "B1", "range": "Senaryo 1-5" },
+  "items": [
+    {
+      "id": "b1-s-01",
+      "level": "B1",
+      "order": 1,
+      "kind": "speaking",
+      "title": "İş görüşmesi",
+      "titleEn": "A Job Interview",
+      "minutes": 5,
+      "situation": "You are being interviewed for a job in a shop. Answer the manager's questions.",
+      "situationTr": "Bir mağazadaki iş için görüşmedesin. Müdürün sorularını yanıtla.",
+      "prompts": [
+        "Tell the manager about your experience.",
+        "Explain why you want this job.",
+        "Describe a problem you solved at work.",
+        "Ask two questions about the job."
+      ],
+      "promptsTr": [
+        "Müdüre deneyiminden bahset.",
+        "Bu işi neden istediğini açıkla.",
+        "İşte çözdüğün bir sorunu anlat.",
+        "İşle ilgili iki soru sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I have worked in customer service for two years.", "tr": "İki yıldır müşteri hizmetlerinde çalışıyorum." },
+        { "en": "What interests me most is working with people.", "tr": "Beni en çok ilgilendiren şey insanlarla çalışmak." },
+        { "en": "Once a customer complained about a delivery, and I dealt with it myself.", "tr": "Bir keresinde bir müşteri teslimattan şikâyetçi oldu, konuyu kendim hallettim." },
+        { "en": "Could you tell me what the hours would be?", "tr": "Çalışma saatlerinin ne olacağını söyleyebilir misiniz?" },
+        { "en": "Is there any training at the beginning?", "tr": "Başlangıçta eğitim veriliyor mu?" }
+      ],
+      "glossary": [
+        { "w": "interviewed", "tr": "görüşme yapılan" },
+        { "w": "customer service", "tr": "müşteri hizmetleri" },
+        { "w": "complained", "tr": "şikâyet etti" },
+        { "w": "training", "tr": "eğitim" }
+      ]
+    },
+    {
+      "id": "b1-s-02",
+      "level": "B1",
+      "order": 2,
+      "kind": "speaking",
+      "title": "Komşuyla gürültü meselesi",
+      "titleEn": "A Word With the Neighbor",
+      "minutes": 5,
+      "situation": "Your neighbor plays loud music at night. Speak to them without starting an argument.",
+      "situationTr": "Komşun geceleri yüksek sesle müzik dinliyor. Tartışma çıkarmadan onunla konuş.",
+      "prompts": [
+        "Begin politely and explain the problem.",
+        "Say how it affects you.",
+        "Suggest a solution.",
+        "Agree on something you can both accept."
+      ],
+      "promptsTr": [
+        "Kibarca başla ve sorunu açıkla.",
+        "Seni nasıl etkilediğini söyle.",
+        "Bir çözüm öner.",
+        "İkinizin de kabul edebileceği bir noktada anlaş."
+      ],
+      "usefulPhrases": [
+        { "en": "I hope you do not mind me mentioning this.", "tr": "Umarım bunu dile getirmemi yadırgamazsınız." },
+        { "en": "I can hear the music through the wall after midnight.", "tr": "Gece yarısından sonra müziği duvardan duyabiliyorum." },
+        { "en": "I have to get up at six for work.", "tr": "İş için altıda kalkmak zorundayım." },
+        { "en": "Would it be possible to turn it down after eleven?", "tr": "Saat on birden sonra sesi kısmanız mümkün olur mu?" },
+        { "en": "Thank you, that would really help.", "tr": "Teşekkürler, bu gerçekten yardımcı olur." }
+      ],
+      "glossary": [
+        { "w": "mentioning", "tr": "dile getirmek" },
+        { "w": "turn it down", "tr": "sesini kısmak" }
+      ]
+    },
+    {
+      "id": "b1-s-03",
+      "level": "B1",
+      "order": 3,
+      "kind": "speaking",
+      "title": "Bir film önermek",
+      "titleEn": "Recommending a Film",
+      "minutes": 5,
+      "situation": "A friend wants something to watch tonight. Recommend a film and explain why.",
+      "situationTr": "Bir arkadaşın bu akşam izleyecek bir şey arıyor. Bir film öner ve nedenini açıkla.",
+      "prompts": [
+        "Say what the film is about, without spoiling the ending.",
+        "Say what kind of film it is.",
+        "Explain what you liked about it.",
+        "Say who would enjoy it and who would not."
+      ],
+      "promptsTr": [
+        "Sonunu söylemeden filmin konusunu anlat.",
+        "Ne tür bir film olduğunu söyle.",
+        "Neyini beğendiğini açıkla.",
+        "Kimin seveceğini, kimin sevmeyeceğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It is about a family who move to a new country.", "tr": "Yeni bir ülkeye taşınan bir aileyi anlatıyor." },
+        { "en": "I would not call it a comedy, exactly.", "tr": "Tam olarak komedi diyemem." },
+        { "en": "What I liked was that nothing was explained too much.", "tr": "Hoşuma giden şey, hiçbir şeyin fazla açıklanmamasıydı." },
+        { "en": "It is slow at the beginning, so give it twenty minutes.", "tr": "Başı yavaş, yirmi dakika sabret." },
+        { "en": "If you like action films, this is not for you.", "tr": "Aksiyon filmi seviyorsan bu sana göre değil." }
+      ],
+      "glossary": [
+        { "w": "comedy", "tr": "komedi" },
+        { "w": "action", "tr": "aksiyon" }
+      ]
+    },
+    {
+      "id": "b1-s-04",
+      "level": "B1",
+      "order": 4,
+      "kind": "speaking",
+      "title": "İzin istemek",
+      "titleEn": "Asking for Time Off",
+      "minutes": 5,
+      "names": ["Ahmet"],
+      "situation": "You need three days off next month. Ask your manager and be ready for questions.",
+      "situationTr": "Gelecek ay üç gün izne ihtiyacın var. Müdüründen iste ve sorulara hazırlıklı ol.",
+      "prompts": [
+        "Ask for the days and give the reason.",
+        "Say how your work will be covered.",
+        "Answer if the manager says it is a busy week.",
+        "Offer an alternative."
+      ],
+      "promptsTr": [
+        "Günleri iste ve nedenini söyle.",
+        "İşinin nasıl yürüyeceğini anlat.",
+        "Müdür yoğun bir hafta derse ne diyeceğini düşün.",
+        "Alternatif bir öneri sun."
+      ],
+      "usefulPhrases": [
+        { "en": "I would like to ask for three days off in June.", "tr": "Haziranda üç gün izin istemek istiyorum." },
+        { "en": "My sister is getting married on the fourteenth.", "tr": "Kız kardeşim on dördünde evleniyor." },
+        { "en": "I can finish the report before I go.", "tr": "Gitmeden önce raporu bitirebilirim." },
+        { "en": "Ahmet has agreed to cover my shifts.", "tr": "Ahmet vardiyalarımı devralmayı kabul etti." },
+        { "en": "If that week is difficult, I could take the following one.", "tr": "O hafta zorsa bir sonrakini alabilirim." }
+      ],
+      "glossary": [
+        { "w": "time off", "tr": "izin" },
+        { "w": "cover", "tr": "yerine bakmak, devralmak" },
+        { "w": "shifts", "tr": "vardiyalar" }
+      ]
+    },
+    {
+      "id": "b1-s-05",
+      "level": "B1",
+      "order": 5,
+      "kind": "speaking",
+      "title": "Bir habere tepki",
+      "titleEn": "Reacting to News",
+      "minutes": 5,
+      "situation": "A friend tells you they are leaving their job to travel for a year. Respond honestly.",
+      "situationTr": "Bir arkadaşın bir yıl gezmek için işini bıraktığını söylüyor. Dürüstçe karşılık ver.",
+      "prompts": [
+        "React to the news.",
+        "Ask two questions about the plan.",
+        "Say one thing that worries you.",
+        "End in a supportive way."
+      ],
+      "promptsTr": [
+        "Habere tepki ver.",
+        "Planla ilgili iki soru sor.",
+        "Seni endişelendiren bir şeyi söyle.",
+        "Destekleyici bir şekilde bitir."
+      ],
+      "usefulPhrases": [
+        { "en": "That is a big decision. How long have you been thinking about it?", "tr": "Bu büyük bir karar. Ne zamandır bunu düşünüyorsun?" },
+        { "en": "Where are you planning to go first?", "tr": "Önce nereye gitmeyi planlıyorsun?" },
+        { "en": "What worries me a little is the money.", "tr": "Beni biraz endişelendiren şey para." },
+        { "en": "Have you thought about what happens when you come back?", "tr": "Döndüğünde ne olacağını düşündün mü?" },
+        { "en": "Whatever you decide, I am glad you told me.", "tr": "Ne karar verirsen ver, bana söylediğine sevindim." }
+      ],
+      "glossary": [
+        { "w": "decision", "tr": "karar" },
+        { "w": "worries", "tr": "endişelendiriyor" }
+      ]
+    }
+  ]
+}
