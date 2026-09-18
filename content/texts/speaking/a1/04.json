@@ -1,0 +1,176 @@
+{
+  "_meta": { "batch": "a1-speaking-04", "level": "A1", "range": "Senaryo 16-20" },
+  "items": [
+    {
+      "id": "a1-s-16",
+      "level": "A1",
+      "order": 16,
+      "kind": "speaking",
+      "title": "Otobüs bileti almak",
+      "titleEn": "Buying a Bus Ticket",
+      "minutes": 4,
+      "situation": "You are at the bus station. You want to go to another city today. Talk to the man behind the window.",
+      "situationTr": "Otobüs garındasın. Bugün başka bir şehre gitmek istiyorsun. Gişedeki adamla konuş.",
+      "prompts": [
+        "Say where you want to go.",
+        "Ask about the time of the next bus.",
+        "Ask how much the ticket is.",
+        "Say how many tickets you want."
+      ],
+      "promptsTr": [
+        "Nereye gitmek istediğini söyle.",
+        "Bir sonraki otobüsün saatini sor.",
+        "Biletin ne kadar olduğunu sor.",
+        "Kaç bilet istediğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I want to go to Bursa today.", "tr": "Bugün Bursa'ya gitmek istiyorum." },
+        { "en": "What time is the next bus?", "tr": "Bir sonraki otobüs saat kaçta?" },
+        { "en": "How much is a ticket?", "tr": "Bilet ne kadar?" },
+        { "en": "Two tickets, please.", "tr": "İki bilet, lütfen." },
+        { "en": "Where does the bus leave from?", "tr": "Otobüs nereden kalkıyor?" }
+      ],
+      "names": ["Bursa"],
+      "glossary": [
+        { "w": "ticket", "tr": "bilet" },
+        { "w": "bus station", "tr": "otogar" }
+      ]
+    },
+    {
+      "id": "a1-s-17",
+      "level": "A1",
+      "order": 17,
+      "kind": "speaking",
+      "title": "Kafede ödeme yapmak",
+      "titleEn": "Paying in a Cafe",
+      "minutes": 4,
+      "situation": "You have finished your tea and cake in a cafe. Now you want to pay.",
+      "situationTr": "Bir kafede çayını ve pastanı bitirdin. Şimdi ödeme yapmak istiyorsun.",
+      "prompts": [
+        "Ask for the bill.",
+        "Say what you had.",
+        "Ask if you can pay with a card.",
+        "Say thank you and say goodbye."
+      ],
+      "promptsTr": [
+        "Hesabı iste.",
+        "Ne aldığını söyle.",
+        "Kartla ödeyip ödeyemeyeceğini sor.",
+        "Teşekkür et ve hoşça kal de."
+      ],
+      "usefulPhrases": [
+        { "en": "Can I have the bill, please?", "tr": "Hesabı alabilir miyim, lütfen?" },
+        { "en": "I had a tea and a piece of cake.", "tr": "Bir çay ve bir dilim pasta aldım." },
+        { "en": "Can I pay with a card?", "tr": "Kartla ödeyebilir miyim?" },
+        { "en": "Here you are.", "tr": "Buyurun." },
+        { "en": "Thank you very much. Goodbye.", "tr": "Çok teşekkürler. Hoşça kalın." }
+      ],
+      "glossary": [
+        { "w": "bill", "tr": "hesap" },
+        { "w": "goodbye", "tr": "hoşça kal" },
+        { "w": "piece", "tr": "dilim, parça" }
+      ]
+    },
+    {
+      "id": "a1-s-18",
+      "level": "A1",
+      "order": 18,
+      "kind": "speaking",
+      "title": "Evdeki hayvan",
+      "titleEn": "The Animal at Home",
+      "minutes": 4,
+      "situation": "A friend asks about the cat in your photo. Talk about the animal in your house.",
+      "situationTr": "Bir arkadaşın fotoğrafındaki kediyi soruyor. Evindeki hayvandan bahset.",
+      "prompts": [
+        "Say what animal you have and its name.",
+        "Say what it looks like.",
+        "Say what it eats.",
+        "Say what it does all day."
+      ],
+      "promptsTr": [
+        "Hangi hayvanın olduğunu ve adını söyle.",
+        "Neye benzediğini söyle.",
+        "Ne yediğini söyle.",
+        "Bütün gün ne yaptığını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I have a small cat. Her name is Mia.", "tr": "Küçük bir kedim var. Adı Mia." },
+        { "en": "She is white and black.", "tr": "Beyaz ve siyah." },
+        { "en": "She eats fish and rice.", "tr": "Balık ve pirinç yiyor." },
+        { "en": "She sleeps all day on my bed.", "tr": "Bütün gün yatağımda uyuyor." },
+        { "en": "She is four years old.", "tr": "Dört yaşında." }
+      ],
+      "names": ["Mia"],
+      "glossary": [
+        { "w": "rice", "tr": "pirinç" }
+      ]
+    },
+    {
+      "id": "a1-s-19",
+      "level": "A1",
+      "order": 19,
+      "kind": "speaking",
+      "title": "İşe nasıl gidiyorsun",
+      "titleEn": "How You Get to Work",
+      "minutes": 4,
+      "situation": "A new friend asks about your morning. Say how you go to work or school.",
+      "situationTr": "Yeni bir arkadaşın sabahını soruyor. İşe ya da okula nasıl gittiğini anlat.",
+      "prompts": [
+        "Say how you go to work or school.",
+        "Say how long it takes.",
+        "Say what you do on the way.",
+        "Ask him the same question."
+      ],
+      "promptsTr": [
+        "İşe ya da okula nasıl gittiğini söyle.",
+        "Ne kadar sürdüğünü söyle.",
+        "Yolda ne yaptığını söyle.",
+        "Ona da aynı soruyu sor."
+      ],
+      "usefulPhrases": [
+        { "en": "I go to work by bus.", "tr": "İşe otobüsle gidiyorum." },
+        { "en": "It takes about thirty minutes.", "tr": "Yaklaşık otuz dakika sürüyor." },
+        { "en": "I listen to music on the way.", "tr": "Yolda müzik dinliyorum." },
+        { "en": "Sometimes I walk when it is sunny.", "tr": "Bazen hava güneşliyken yürüyorum." },
+        { "en": "How do you go to work?", "tr": "Sen işe nasıl gidiyorsun?" }
+      ],
+      "glossary": [
+        { "w": "on the way", "tr": "yolda" }
+      ]
+    },
+    {
+      "id": "a1-s-20",
+      "level": "A1",
+      "order": 20,
+      "kind": "speaking",
+      "title": "Bir hediye seçmek",
+      "titleEn": "Choosing a Present",
+      "minutes": 4,
+      "situation": "You are in a shop with a friend. You want to buy a present for your mother.",
+      "situationTr": "Bir arkadaşınla dükkândasın. Annene bir hediye almak istiyorsun.",
+      "prompts": [
+        "Say who the present is for.",
+        "Say what your mother likes.",
+        "Ask your friend what he thinks.",
+        "Say how much money you have."
+      ],
+      "promptsTr": [
+        "Hediyenin kime olduğunu söyle.",
+        "Annenin neyi sevdiğini söyle.",
+        "Arkadaşına ne düşündüğünü sor.",
+        "Ne kadar paran olduğunu söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "It is a present for my mother.", "tr": "Anneme bir hediye." },
+        { "en": "She likes books and flowers.", "tr": "Kitapları ve çiçekleri seviyor." },
+        { "en": "What do you think about this one?", "tr": "Bunun hakkında ne düşünüyorsun?" },
+        { "en": "I have two hundred lira.", "tr": "İki yüz liram var." },
+        { "en": "That one is too expensive.", "tr": "O çok pahalı." }
+      ],
+      "glossary": [
+        { "w": "present", "tr": "hediye" },
+        { "w": "lira", "tr": "lira" }
+      ]
+    }
+  ]
+}

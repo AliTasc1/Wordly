@@ -1,0 +1,174 @@
+{
+  "_meta": { "batch": "a1-speaking-05", "level": "A1", "range": "Senaryo 21-25" },
+  "items": [
+    {
+      "id": "a1-s-21",
+      "level": "A1",
+      "order": 21,
+      "kind": "speaking",
+      "title": "Sevdiğin yemekler",
+      "titleEn": "Food You Like",
+      "minutes": 4,
+      "situation": "A friend wants to cook something for you. Talk about the food you like and do not like.",
+      "situationTr": "Bir arkadaşın sana bir şeyler pişirmek istiyor. Sevdiğin ve sevmediğin yemeklerden bahset.",
+      "prompts": [
+        "Say what food you like.",
+        "Say what you do not like.",
+        "Say what you eat for breakfast.",
+        "Say what you can cook."
+      ],
+      "promptsTr": [
+        "Hangi yemekleri sevdiğini söyle.",
+        "Neyi sevmediğini söyle.",
+        "Kahvaltıda ne yediğini söyle.",
+        "Ne pişirebildiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I like chicken and vegetables.", "tr": "Tavuğu ve sebzeleri seviyorum." },
+        { "en": "I do not like fish very much.", "tr": "Balığı pek sevmiyorum." },
+        { "en": "For breakfast I eat bread, cheese and eggs.", "tr": "Kahvaltıda ekmek, peynir ve yumurta yiyorum." },
+        { "en": "I can cook rice and soup.", "tr": "Pilav ve çorba pişirebiliyorum." },
+        { "en": "I drink tea in the morning.", "tr": "Sabahları çay içiyorum." }
+      ],
+      "glossary": [
+        { "w": "vegetables", "tr": "sebzeler" },
+        { "w": "cheese", "tr": "peynir" }
+      ]
+    },
+    {
+      "id": "a1-s-22",
+      "level": "A1",
+      "order": 22,
+      "kind": "speaking",
+      "title": "Bir arkadaşı aramak",
+      "titleEn": "Calling a Friend",
+      "minutes": 4,
+      "situation": "You call a friend but his mother answers the phone. Say who you are and leave a message.",
+      "situationTr": "Bir arkadaşını arıyorsun ama telefona annesi çıkıyor. Kim olduğunu söyle ve mesaj bırak.",
+      "prompts": [
+        "Say hello and say who you are.",
+        "Ask for your friend.",
+        "Ask when he comes home.",
+        "Leave a short message."
+      ],
+      "promptsTr": [
+        "Merhaba de ve kim olduğunu söyle.",
+        "Arkadaşını iste.",
+        "Eve ne zaman geleceğini sor.",
+        "Kısa bir mesaj bırak."
+      ],
+      "usefulPhrases": [
+        { "en": "Hello, this is Kaan.", "tr": "Merhaba, ben Kaan." },
+        { "en": "Is Murat at home?", "tr": "Murat evde mi?" },
+        { "en": "When does he come home?", "tr": "Eve ne zaman geliyor?" },
+        { "en": "Can you tell him I called?", "tr": "Aradığımı söyler misiniz?" },
+        { "en": "I will call again in the evening.", "tr": "Akşam tekrar arayacağım." }
+      ],
+      "names": ["Kaan", "Murat"],
+      "glossary": [
+        { "w": "message", "tr": "mesaj" }
+      ]
+    },
+    {
+      "id": "a1-s-23",
+      "level": "A1",
+      "order": 23,
+      "kind": "speaking",
+      "title": "Anahtarımı kaybettim",
+      "titleEn": "I Lost My Key",
+      "minutes": 4,
+      "situation": "You cannot find your key. You are in front of your building. Talk to your neighbor.",
+      "situationTr": "Anahtarını bulamıyorsun. Binanın önündesin. Komşunla konuş.",
+      "prompts": [
+        "Say what the problem is.",
+        "Say where you were today.",
+        "Ask your neighbor for help.",
+        "Say what you will do now."
+      ],
+      "promptsTr": [
+        "Sorunun ne olduğunu söyle.",
+        "Bugün nerede olduğunu söyle.",
+        "Komşundan yardım iste.",
+        "Şimdi ne yapacağını söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "I cannot find my key.", "tr": "Anahtarımı bulamıyorum." },
+        { "en": "I was at school and then at the shop.", "tr": "Okuldaydım, sonra dükkândaydım." },
+        { "en": "Can you help me, please?", "tr": "Bana yardım eder misiniz, lütfen?" },
+        { "en": "My sister has the other key.", "tr": "Diğer anahtar kız kardeşimde." },
+        { "en": "I will wait here for an hour.", "tr": "Burada bir saat bekleyeceğim." }
+      ],
+      "glossary": [
+        { "w": "key", "tr": "anahtar" },
+        { "w": "neighbor", "tr": "komşu" }
+      ]
+    },
+    {
+      "id": "a1-s-24",
+      "level": "A1",
+      "order": 24,
+      "kind": "speaking",
+      "title": "Boş zamanında ne yaparsın",
+      "titleEn": "Free Time",
+      "minutes": 4,
+      "situation": "You meet a new person in a language class. Talk about what you do in your free time.",
+      "situationTr": "Bir dil kursunda yeni biriyle tanışıyorsun. Boş zamanında ne yaptığını anlat.",
+      "prompts": [
+        "Say what you do after work or school.",
+        "Say what you do on Sundays.",
+        "Say who you do it with.",
+        "Ask her about her free time."
+      ],
+      "promptsTr": [
+        "İşten ya da okuldan sonra ne yaptığını söyle.",
+        "Pazar günleri ne yaptığını söyle.",
+        "Bunu kiminle yaptığını söyle.",
+        "Ona boş zamanını sor."
+      ],
+      "usefulPhrases": [
+        { "en": "After work I watch television.", "tr": "İşten sonra televizyon izliyorum." },
+        { "en": "On Sundays I play football with my friends.", "tr": "Pazar günleri arkadaşlarımla futbol oynuyorum." },
+        { "en": "I like reading books at home.", "tr": "Evde kitap okumayı seviyorum." },
+        { "en": "My sister comes with me.", "tr": "Kız kardeşim benimle geliyor." },
+        { "en": "What do you do in your free time?", "tr": "Sen boş zamanında ne yaparsın?" }
+      ],
+      "glossary": [
+        { "w": "free time", "tr": "boş zaman" }
+      ]
+    },
+    {
+      "id": "a1-s-25",
+      "level": "A1",
+      "order": 25,
+      "kind": "speaking",
+      "title": "Yarın için plan",
+      "titleEn": "A Plan for Tomorrow",
+      "minutes": 4,
+      "situation": "You want to go out with a friend tomorrow. Make a plan with him.",
+      "situationTr": "Yarın bir arkadaşınla dışarı çıkmak istiyorsun. Onunla plan yap.",
+      "prompts": [
+        "Ask if he is free tomorrow.",
+        "Say what you want to do.",
+        "Say a time and a place.",
+        "Say what he must bring."
+      ],
+      "promptsTr": [
+        "Yarın boş olup olmadığını sor.",
+        "Ne yapmak istediğini söyle.",
+        "Bir saat ve bir yer söyle.",
+        "Ne getirmesi gerektiğini söyle."
+      ],
+      "usefulPhrases": [
+        { "en": "Are you free tomorrow?", "tr": "Yarın boş musun?" },
+        { "en": "Let us go to the park.", "tr": "Hadi parka gidelim." },
+        { "en": "We can meet at two in front of the school.", "tr": "İkide okulun önünde buluşabiliriz." },
+        { "en": "Please bring some water.", "tr": "Lütfen biraz su getir." },
+        { "en": "If it rains, we can go to the cinema.", "tr": "Yağmur yağarsa sinemaya gidebiliriz." }
+      ],
+      "glossary": [
+        { "w": "free", "tr": "boş, müsait" },
+        { "w": "meet", "tr": "buluşmak" }
+      ]
+    }
+  ]
+}
