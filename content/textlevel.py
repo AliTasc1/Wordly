@@ -47,7 +47,12 @@ FREE = {
     "zero", "first", "second", "third", "fourth", "fifth", "sixth",
     "seventh", "eighth", "ninth", "tenth", "eleventh", "twelfth",
     "thirteenth", "fourteenth", "fifteenth", "sixteenth", "seventeenth",
-    "eighteenth", "nineteenth", "twentieth", "last", "next", "s", "t", "ll", "re",
+    "eighteenth", "nineteenth", "twentieth",
+    # Sayıların kendisi serbest sayıldığı hâlde sıra biçimleri yirmiden sonra
+    # eksikti: "sixtieth" bilinmeyen kelime olarak raporlanıyordu.
+    "thirtieth", "fortieth", "fiftieth", "sixtieth", "seventieth",
+    "eightieth", "ninetieth", "hundredth", "thousandth",
+    "last", "next", "s", "t", "ll", "re",
     "ve", "d", "m",
 }
 

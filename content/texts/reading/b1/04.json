@@ -1,0 +1,139 @@
+{
+  "_meta": { "batch": "b1-reading-04", "level": "B1", "range": "Parça 16-20" },
+  "items": [
+    {
+      "id": "b1-r-16",
+      "level": "B1",
+      "order": 16,
+      "kind": "reading",
+      "title": "Kapanan kitapçı",
+      "titleEn": "The Bookshop That Would Not Close",
+      "minutes": 4,
+      "names": ["Nevzat"],
+      "text": "Nevzat's bookshop has been closing for eleven years. He announced it first in a newspaper, then on a sign in the window, then again at his sixtieth birthday. Every time, something stopped him. Once a customer bought two hundred books in a single week. Once a school started sending its students on Friday afternoons. Once his daughter, who lives abroad, sent money without being asked and told him to use it however he wanted. The truth, which he admits when the shop is empty, is that the accounts have never worked. He sells about thirty books a week in a street where the rent rises every year. He also says, without any sense that the two ideas are in conflict, that he has no intention of closing before he is eighty.",
+      "glossary": [
+        { "w": "announced", "tr": "duyurdu" },
+        { "w": "customer", "tr": "müşteri" },
+        { "w": "abroad", "tr": "yurt dışında" },
+        { "w": "admits", "tr": "kabul ediyor" },
+        { "w": "accounts", "tr": "hesaplar" },
+        { "w": "conflict", "tr": "çelişki, çatışma" },
+        { "w": "intention", "tr": "niyet" }
+      ],
+      "questions": [
+        { "q": "How long has the shop been closing?", "options": ["Eleven years", "Two years", "Sixty years", "One year"], "answer": 0, "note": "\"Nevzat's bookshop has been closing for eleven years.\"" },
+        { "q": "What did his daughter do?", "options": ["Sent money without being asked", "Came back to help", "Bought two hundred books", "Opened a second shop"], "answer": 0, "note": "\"His daughter... sent money without being asked.\"" },
+        { "q": "What does he admit when the shop is empty?", "options": ["The accounts have never worked", "He wants to retire", "The books are too expensive", "Nobody reads any more"], "answer": 0, "note": "\"The accounts have never worked.\"" },
+        { "q": "How many books does he sell a week?", "options": ["About thirty", "Two hundred", "About sixty", "Eleven"], "answer": 0, "note": "\"He sells about thirty books a week.\"" },
+        { "q": "What does he say about the future?", "options": ["He will not close before he is eighty", "He will close next year", "He will move the shop", "He will sell it to his daughter"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-17",
+      "level": "B1",
+      "order": 17,
+      "kind": "reading",
+      "title": "Gönüllü arama ekibi",
+      "titleEn": "The Volunteers Who Wait",
+      "minutes": 4,
+      "names": [],
+      "text": "A search team in the mountains has forty members and none of them is paid. They train two weekends a month in weather that most people would avoid on purpose. In a normal year they are called out eleven or twelve times. Two of those calls end badly, and the team leader says this is the part nobody prepares you for. What surprises new members most is how much of the work is waiting. They sit in a cold room for six hours while somebody with a map decides where to look, and then they walk for four hours and find nothing, and then they go home. The leader tells every new volunteer the same thing on the first day: if you are joining for the rescue, you will leave within a year. If you are joining for the waiting, you will stay.",
+      "glossary": [
+        { "w": "search", "tr": "arama" },
+        { "w": "train", "tr": "eğitim yapmak" },
+        { "w": "avoid", "tr": "kaçınmak" },
+        { "w": "on purpose", "tr": "bilerek" },
+        { "w": "prepares", "tr": "hazırlar" },
+        { "w": "volunteer", "tr": "gönüllü" },
+        { "w": "rescue", "tr": "kurtarma" }
+      ],
+      "questions": [
+        { "q": "How often does the team train?", "options": ["Two weekends a month", "Every weekend", "Once a year", "Eleven times a year"], "answer": 0, "note": "\"They train two weekends a month.\"" },
+        { "q": "How many calls end badly in a normal year?", "options": ["Two", "Eleven", "Forty", "None"], "answer": 0, "note": "\"Two of those calls end badly.\"" },
+        { "q": "What surprises new members most?", "options": ["How much of the work is waiting", "The cold", "The pay", "The number of calls"], "answer": 0, "note": "\"How much of the work is waiting.\"" },
+        { "q": "What often happens after four hours of walking?", "options": ["They find nothing and go home", "They find the person", "They call the police", "They start again"], "answer": 0, "note": "\"They walk for four hours and find nothing, and then they go home.\"" },
+        { "q": "What does the leader tell new volunteers?", "options": ["Those who join for the rescue leave within a year", "Everybody leaves in a year", "The work is easy", "They will be paid later"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-18",
+      "level": "B1",
+      "order": 18,
+      "kind": "reading",
+      "title": "Otuz yaşında üniversite",
+      "titleEn": "Starting University at Thirty",
+      "minutes": 4,
+      "names": ["Hande"],
+      "text": "Hande started university at thirty after eleven years of full-time work. She expected the studying to be the hard part. It was not. The hard part was sitting in a room where everybody else was nineteen and had never had to explain a late payment to anybody. In the first month she felt like a visitor. Then a lecturer asked the class a question about how companies actually make decisions, and Hande realized she was the only person in the room who had watched it happen. She answered, and after that the age difference stopped feeling like a problem. Her marks are good but not the best. She says the useful thing she gained was not the degree but the discovery that eleven years of ordinary work had taught her more than she had ever given herself credit for.",
+      "glossary": [
+        { "w": "full-time", "tr": "tam zamanlı" },
+        { "w": "payment", "tr": "ödeme" },
+        { "w": "visitor", "tr": "ziyaretçi" },
+        { "w": "lecturer", "tr": "öğretim görevlisi" },
+        { "w": "realized", "tr": "fark etti" },
+        { "w": "degree", "tr": "diploma, lisans" },
+        { "w": "credit", "tr": "hak, itibar" }
+      ],
+      "questions": [
+        { "q": "What did Hande expect to be hard?", "options": ["The studying", "The other students", "The cost", "The travel"], "answer": 0, "note": "\"She expected the studying to be the hard part.\"" },
+        { "q": "What was actually hard?", "options": ["Sitting among much younger students", "The exams", "The lecturer", "Finding time"], "answer": 0, "note": "\"The hard part was sitting in a room where everybody else was nineteen.\"" },
+        { "q": "What changed things?", "options": ["A question about how companies decide", "A good mark", "A new friend", "A change of course"], "answer": 0, "note": "\"A lecturer asked the class a question about how companies actually make decisions.\"" },
+        { "q": "How are her marks?", "options": ["Good but not the best", "The best in the class", "Poor", "She does not say"], "answer": 0, "note": "\"Her marks are good but not the best.\"" },
+        { "q": "What does she say she gained?", "options": ["The discovery that her work had taught her a lot", "A better job", "A degree only", "Younger friends"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-19",
+      "level": "B1",
+      "order": 19,
+      "kind": "reading",
+      "title": "Apartman toplantısı",
+      "titleEn": "The Meeting About the Roof",
+      "minutes": 4,
+      "names": [],
+      "text": "Eighteen flats, one broken roof, and a meeting that lasted three hours. The repair would cost each flat about two months of rent, and the people on the ground floor pointed out, correctly, that water was not coming into their homes. The people on the top floor pointed out, also correctly, that a roof protects the whole building. For two hours nobody moved. Then a woman from the second floor said something simple: whoever sells first will find that no buyer wants a building with a broken roof, and that includes the ground floor. The room went quiet. The vote passed fifteen to three. The repair took five weeks. Nobody on the ground floor has ever said the woman was right, and everybody knows she was.",
+      "glossary": [
+        { "w": "roof", "tr": "çatı" },
+        { "w": "repair", "tr": "tamir" },
+        { "w": "ground floor", "tr": "zemin kat" },
+        { "w": "protects", "tr": "korur" },
+        { "w": "buyer", "tr": "alıcı" },
+        { "w": "vote", "tr": "oylama" }
+      ],
+      "questions": [
+        { "q": "How long did the meeting last?", "options": ["Three hours", "Five weeks", "Two hours", "One hour"], "answer": 0, "note": "\"A meeting that lasted three hours.\"" },
+        { "q": "What did the ground-floor people point out?", "options": ["Water was not coming into their homes", "The cost was too high", "The roof was fine", "They were moving out"], "answer": 0, "note": "\"Water was not coming into their homes.\"" },
+        { "q": "What argument changed the room?", "options": ["No buyer wants a building with a broken roof", "The law requires the repair", "The cost would rise", "The top floor would pay more"], "answer": 0, "note": "\"Whoever sells first will find that no buyer wants a building with a broken roof.\"" },
+        { "q": "What was the result of the vote?", "options": ["Fifteen to three in favor", "Three to fifteen against", "Nobody voted", "It was equal"], "answer": 0, "note": "\"The vote passed fifteen to three.\"" },
+        { "q": "What does the last sentence suggest?", "options": ["They know she was right but will not say it", "She was wrong", "They thanked her", "They voted again"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-20",
+      "level": "B1",
+      "order": 20,
+      "kind": "reading",
+      "title": "Sessiz saat",
+      "titleEn": "The Supermarket's Quiet Hour",
+      "minutes": 4,
+      "names": [],
+      "text": "A supermarket chain started a quiet hour on Tuesday mornings. Between nine and ten the music is off, the lights are lower, and the machines at the checkout do not beep. It was designed for customers who find noise difficult, and for a while that is who came. Then something else happened. Older shoppers started arriving at five to nine. Parents with small children discovered the shop was easier without the noise. Staff reported that they finished their shifts less tired. The company measured sales and found that the quiet hour sells slightly less per customer but that Tuesday as a whole is now busier. Twelve other branches have copied it. The manager who suggested it says the interesting part is that nobody had ever asked whether the music was helping in the first place.",
+      "glossary": [
+        { "w": "chain", "tr": "zincir (mağaza)" },
+        { "w": "checkout", "tr": "kasa" },
+        { "w": "beep", "tr": "bip sesi çıkarmak" },
+        { "w": "designed", "tr": "tasarlandı" },
+        { "w": "staff", "tr": "personel" },
+        { "w": "shifts", "tr": "vardiyalar" },
+        { "w": "branches", "tr": "şubeler" }
+      ],
+      "questions": [
+        { "q": "When is the quiet hour?", "options": ["Tuesday mornings", "Every morning", "Tuesday evenings", "Weekends"], "answer": 0, "note": "\"A quiet hour on Tuesday mornings.\"" },
+        { "q": "Who was it designed for?", "options": ["Customers who find noise difficult", "Older shoppers", "Parents", "Staff"], "answer": 0, "note": "\"It was designed for customers who find noise difficult.\"" },
+        { "q": "What did the staff report?", "options": ["They finished their shifts less tired", "They were bored", "They sold more", "They preferred the music"], "answer": 0, "note": "\"Staff reported that they finished their shifts less tired.\"" },
+        { "q": "What did the sales figures show?", "options": ["Less per customer but a busier Tuesday", "A large rise in sales", "No change at all", "Fewer customers overall"], "answer": 0, "note": "\"Sells slightly less per customer but... Tuesday as a whole is now busier.\"" },
+        { "q": "What does the manager find interesting?", "options": ["Nobody had asked if the music helped", "The other branches copied it", "The lights were too low", "Customers complained"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

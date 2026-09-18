@@ -1,0 +1,140 @@
+{
+  "_meta": { "batch": "b1-reading-05", "level": "B1", "range": "Parça 21-25" },
+  "items": [
+    {
+      "id": "b1-r-21",
+      "level": "B1",
+      "order": 21,
+      "kind": "reading",
+      "title": "Yanlış hatırlanan şarkı",
+      "titleEn": "The Song Everybody Remembers Wrong",
+      "minutes": 4,
+      "names": [],
+      "text": "Ask a hundred people to sing the most famous line of a song they have known since childhood, and a surprising number will sing the wrong words. This is so common that researchers have a name for it. The reason is simple enough: we hear a song long before we read the words, and the brain fills any gap with whatever makes sense. Once the wrong version is stored it is remarkably hard to remove, because every later hearing is compared against the version already in your head rather than against the record. What is stranger is that people often prefer their own version after they learn the truth. Several singers have said in interviews that audiences correct them when they sing their own lyrics correctly.",
+      "glossary": [
+        { "w": "researchers", "tr": "araştırmacılar" },
+        { "w": "gap", "tr": "boşluk" },
+        { "w": "stored", "tr": "depolanmış" },
+        { "w": "remarkably", "tr": "dikkat çekici biçimde" },
+        { "w": "audiences", "tr": "dinleyiciler, izleyiciler" },
+        { "w": "lyrics", "tr": "şarkı sözleri" },
+        { "w": "version", "tr": "sürüm, hâl" }
+      ],
+      "questions": [
+        { "q": "Why do people learn wrong words?", "options": ["The brain fills gaps with what makes sense", "They do not listen", "The words are printed wrong", "Singers change them"], "answer": 0, "note": "\"The brain fills any gap with whatever makes sense.\"" },
+        { "q": "Why is the wrong version hard to remove?", "options": ["Later hearings are compared against it", "Nobody corrects it", "The record is lost", "It is written down"], "answer": 0, "note": "\"Every later hearing is compared against the version already in your head.\"" },
+        { "q": "What do people often do after learning the truth?", "options": ["Prefer their own version", "Forget the song", "Buy the record", "Stop singing"], "answer": 0, "note": "\"People often prefer their own version after they learn the truth.\"" },
+        { "q": "What have several singers said?", "options": ["Audiences correct them when they sing correctly", "They change the words on purpose", "They forget their own songs", "They prefer old recordings"], "answer": 0, "note": "Son cümle." },
+        { "q": "What is the writer's main point?", "options": ["Memory rewrites what it stores", "Songs are badly written", "People do not care about music", "Records are unreliable"], "answer": 0, "note": "Parçanın bütünü." }
+      ]
+    },
+    {
+      "id": "b1-r-22",
+      "level": "B1",
+      "order": 22,
+      "kind": "reading",
+      "title": "İş görüşmesinde yalan",
+      "titleEn": "The Sentence on the Application",
+      "minutes": 4,
+      "names": ["Kaan"],
+      "text": "Kaan wrote one sentence on his job application that was not quite true. He said he had led a team of five. In fact he had helped a team of five, and the difference had seemed small when he typed it at midnight. He got the interview. In the interview the manager asked him, in a friendly way, how he had handled one difficult disagreement between two of his team members. Kaan had three seconds to decide. He said the truth: that he had not led the team and that he had written the line badly. The manager did not look angry. She asked what he had actually done, listened, and moved on. He got the job. He has never known whether the correction helped him or whether she simply did not care, and he has decided not to find out.",
+      "glossary": [
+        { "w": "application", "tr": "başvuru" },
+        { "w": "led", "tr": "yönetti" },
+        { "w": "interview", "tr": "iş görüşmesi" },
+        { "w": "handled", "tr": "ele aldı, idare etti" },
+        { "w": "disagreement", "tr": "anlaşmazlık" },
+        { "w": "correction", "tr": "düzeltme" }
+      ],
+      "questions": [
+        { "q": "What was not quite true?", "options": ["That he had led a team of five", "That he had worked there", "His name", "The date"], "answer": 0, "note": "\"He said he had led a team of five.\"" },
+        { "q": "What did he actually do?", "options": ["He helped a team of five", "He worked alone", "He led a team of two", "He was a manager"], "answer": 0, "note": "\"In fact he had helped a team of five.\"" },
+        { "q": "What did he do in the interview?", "options": ["He told the truth", "He changed the subject", "He left", "He explained the disagreement"], "answer": 0, "note": "\"He said the truth: that he had not led the team.\"" },
+        { "q": "How did the manager react?", "options": ["She asked what he had actually done", "She ended the interview", "She became angry", "She laughed"], "answer": 0, "note": "\"She asked what he had actually done, listened, and moved on.\"" },
+        { "q": "What has he decided?", "options": ["Not to find out whether it helped", "To ask her one day", "To correct the form", "To leave the job"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-23",
+      "level": "B1",
+      "order": 23,
+      "kind": "reading",
+      "title": "Bisiklet yolu tartışması",
+      "titleEn": "The Argument About the Bike Lane",
+      "minutes": 4,
+      "names": [],
+      "text": "When the city announced a bike lane on the main shopping street, the shopkeepers were against it. They said their customers arrived by car and that losing the parking spaces would cost them business. The council built the lane anyway, promising to measure the effect. Two years later the figures showed something the shopkeepers had not expected. Total sales on the street had risen by nine per cent. The reason was not that cyclists spend more on a single visit; they spend less. It was that they come far more often. A survey also found that the shopkeepers had badly overestimated how many customers arrived by car in the first place. Several of them have since asked for the lane to be extended, which the council has agreed to do without mentioning the earlier argument.",
+      "glossary": [
+        { "w": "lane", "tr": "şerit, yol" },
+        { "w": "shopkeepers", "tr": "esnaf, dükkân sahipleri" },
+        { "w": "parking spaces", "tr": "park yerleri" },
+        { "w": "council", "tr": "belediye" },
+        { "w": "cyclists", "tr": "bisikletliler" },
+        { "w": "survey", "tr": "anket" },
+        { "w": "overestimated", "tr": "fazla tahmin etti" },
+        { "w": "extended", "tr": "uzatılmış" }
+      ],
+      "questions": [
+        { "q": "Why were the shopkeepers against the lane?", "options": ["They thought customers arrived by car", "They disliked cyclists", "It cost too much", "The street was too narrow"], "answer": 0, "note": "\"They said their customers arrived by car.\"" },
+        { "q": "What happened to total sales?", "options": ["They rose by nine per cent", "They fell by nine per cent", "They stayed the same", "They doubled"], "answer": 0, "note": "\"Total sales on the street had risen by nine per cent.\"" },
+        { "q": "Why do cyclists help sales?", "options": ["They come far more often", "They spend more per visit", "They bring friends", "They stay longer"], "answer": 0, "note": "\"They come far more often.\"" },
+        { "q": "What did the survey find?", "options": ["Shopkeepers had overestimated car customers", "Most customers came by car", "Cyclists spend more", "Parking was never used"], "answer": 0, "note": "\"The shopkeepers had badly overestimated how many customers arrived by car.\"" },
+        { "q": "What have several shopkeepers asked for?", "options": ["The lane to be extended", "The parking to return", "A new survey", "Lower rent"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-24",
+      "level": "B1",
+      "order": 24,
+      "kind": "reading",
+      "title": "Uzaktan çalışan tek kişi",
+      "titleEn": "The Only One at Home",
+      "minutes": 4,
+      "names": ["Sena"],
+      "text": "When her company asked everybody to return to the office, Sena was the only person who stayed at home. Her manager agreed because she lives four hours away and her work is mostly writing. For the first three months it was ideal. Then she noticed that decisions were being made in conversations she was not part of. Nobody was hiding anything; things were simply settled in a corridor and written up afterwards, if at all. She raised it once and was told to speak up more in meetings, which missed the point entirely. Her solution was practical rather than fair: she now calls two colleagues every Monday and asks what they have heard. It works, but she is aware that she is doing extra work to stay level with people who do none.",
+      "glossary": [
+        { "w": "ideal", "tr": "ideal" },
+        { "w": "decisions", "tr": "kararlar" },
+        { "w": "settled", "tr": "karara bağlandı" },
+        { "w": "corridor", "tr": "koridor" },
+        { "w": "raised it", "tr": "konuyu açtı" },
+        { "w": "practical", "tr": "pratik" },
+        { "w": "aware", "tr": "farkında" },
+        { "w": "colleagues", "tr": "iş arkadaşları" }
+      ],
+      "questions": [
+        { "q": "Why was Sena allowed to stay home?", "options": ["She lives four hours away", "She was ill", "She asked twice", "Her team is remote"], "answer": 0, "note": "\"She lives four hours away and her work is mostly writing.\"" },
+        { "q": "What did she notice after three months?", "options": ["Decisions were made without her", "Her work suffered", "Her pay changed", "Nobody wrote to her"], "answer": 0, "note": "\"Decisions were being made in conversations she was not part of.\"" },
+        { "q": "What was she told when she raised it?", "options": ["To speak up more in meetings", "To return to the office", "To change teams", "Nothing at all"], "answer": 0, "note": "\"She was told to speak up more in meetings.\"" },
+        { "q": "What is her solution?", "options": ["She calls two colleagues every Monday", "She goes in once a month", "She writes weekly reports", "She changed her hours"], "answer": 0, "note": "\"She now calls two colleagues every Monday.\"" },
+        { "q": "What is she aware of?", "options": ["She does extra work to stay level", "The solution will not last", "Her manager is unfair", "She should move closer"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-25",
+      "level": "B1",
+      "order": 25,
+      "kind": "reading",
+      "title": "Kaybolan tarif",
+      "titleEn": "The Recipe Nobody Wrote Down",
+      "minutes": 4,
+      "names": ["Nesrin"],
+      "text": "Nesrin's mother cooked one dish that nobody else in the family could make. She never wrote the recipe down. When anybody asked her she answered in amounts that meant nothing: a little of this, enough of that, until it looks right. After she died the family tried nine times in two years and failed nine times. Then Nesrin's aunt remembered one detail that nobody had thought important. Her mother had always started the dish the night before. That single change made the difference. The family now makes it twice a year, and it is close but not the same. Nesrin has written the recipe down carefully, including the night before, and she says she is fairly sure it is still missing something that nobody will ever find.",
+      "glossary": [
+        { "w": "dish", "tr": "yemek" },
+        { "w": "recipe", "tr": "tarif" },
+        { "w": "amounts", "tr": "miktarlar" },
+        { "w": "failed", "tr": "başaramadı" },
+        { "w": "detail", "tr": "ayrıntı" },
+        { "w": "fairly", "tr": "oldukça" }
+      ],
+      "questions": [
+        { "q": "Why could nobody make the dish?", "options": ["The recipe was never written down", "The food was rare", "It took too long", "Nobody wanted to"], "answer": 0, "note": "\"She never wrote the recipe down.\"" },
+        { "q": "How did she answer questions about amounts?", "options": ["In amounts that meant nothing", "With exact numbers", "By writing them", "She refused to answer"], "answer": 0, "note": "\"A little of this, enough of that.\"" },
+        { "q": "What detail did the aunt remember?", "options": ["She started the dish the night before", "She used a special pan", "She added salt last", "She cooked it twice"], "answer": 0, "note": "\"Her mother had always started the dish the night before.\"" },
+        { "q": "How often does the family make it now?", "options": ["Twice a year", "Nine times a year", "Every week", "Never"], "answer": 0, "note": "\"The family now makes it twice a year.\"" },
+        { "q": "What does Nesrin believe?", "options": ["Something is still missing", "The recipe is now complete", "Her aunt was wrong", "It tastes better now"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}

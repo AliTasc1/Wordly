@@ -921,5 +921,1475 @@
     "note": "\"Fewer hours of study, but seven hours of sleep.\""
    }
   ]
+ },
+ {
+  "id": "b1-r-11",
+  "level": "B1",
+  "order": 11,
+  "kind": "reading",
+  "title": "Ucuz kıyafetin bedeli",
+  "titleEn": "Why Cheap Clothes Are Expensive",
+  "minutes": 4,
+  "names": [],
+  "text": "A shirt that costs very little looks like a good deal. The problem is what happens after the third wash. Cheap clothes are made from thin material and the stitching is done quickly, so they lose their shape and the colors fade. A buyer who pays a small amount four times a year has spent more than a buyer who paid a larger amount once. This is not new information, but it is easy to forget in a shop. There is also the question of who made the shirt and for what pay. Some companies now publish where their factories are, which at least makes the question possible to ask. The best advice is old and boring: buy less, buy better, and keep the receipt. It is boring because it works.",
+  "glossary": [
+   {
+    "w": "deal",
+    "tr": "fırsat, anlaşma"
+   },
+   {
+    "w": "material",
+    "tr": "kumaş, malzeme"
+   },
+   {
+    "w": "stitching",
+    "tr": "dikiş"
+   },
+   {
+    "w": "fade",
+    "tr": "solmak"
+   },
+   {
+    "w": "factories",
+    "tr": "fabrikalar"
+   },
+   {
+    "w": "receipt",
+    "tr": "fiş"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What happens to cheap clothes after washing?",
+    "options": [
+     "They stay the same",
+     "They lose their shape and fade",
+     "They become thicker",
+     "They become softer"
+    ],
+    "answer": 1,
+    "note": "\"They lose their shape and the colors fade.\""
+   },
+   {
+    "q": "What is the writer's point about cost?",
+    "options": [
+     "Buying cheap four times costs more",
+     "Cheap clothes are always better",
+     "Price does not matter",
+     "Expensive clothes last one year"
+    ],
+    "answer": 0,
+    "note": "\"A buyer who pays a small amount four times a year has spent more.\""
+   },
+   {
+    "q": "What do some companies now publish?",
+    "options": [
+     "The cost of material",
+     "How much they earn",
+     "Where their factories are",
+     "Who buys their clothes"
+    ],
+    "answer": 2,
+    "note": "\"Some companies now publish where their factories are.\""
+   },
+   {
+    "q": "What is the writer's advice?",
+    "options": [
+     "Buy less and buy better",
+     "Buy only in sales",
+     "Wash clothes less often",
+     "Make your own clothes"
+    ],
+    "answer": 0,
+    "note": "\"Buy less, buy better, and keep the receipt.\""
+   },
+   {
+    "q": "Why does the writer call the advice boring?",
+    "options": [
+     "Because it is wrong",
+     "Because it works",
+     "Because it is new",
+     "Because nobody follows it"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-12",
+  "level": "B1",
+  "order": 12,
+  "kind": "reading",
+  "title": "Kendi ekmeğini yapmak",
+  "titleEn": "The Man Who Bakes at Five",
+  "minutes": 4,
+  "names": [
+   "Rifat"
+  ],
+  "text": "Rifat is sixty-one and he has made bread every morning for nine years. He starts at five and finishes at half past seven, before most of his street is awake. He is not a baker. He worked in an office for thirty years and he never cooked anything until he retired. The first year the bread was terrible. His wife ate it without complaining, which he says was the reason he continued. Now he gives most of it away. Two neighbors leave a cloth bag on his door handle and collect it later. He has never taken money for a loaf and he becomes uncomfortable when anybody suggests it. When people ask why he does it, he says the honest answer is that he needed a reason to get up.",
+  "glossary": [
+   {
+    "w": "baker",
+    "tr": "fırıncı"
+   },
+   {
+    "w": "retired",
+    "tr": "emekli oldu"
+   },
+   {
+    "w": "complaining",
+    "tr": "şikâyet etmek"
+   },
+   {
+    "w": "cloth",
+    "tr": "bez"
+   },
+   {
+    "w": "handle",
+    "tr": "kol, tutamak"
+   },
+   {
+    "w": "loaf",
+    "tr": "somun"
+   },
+   {
+    "w": "uncomfortable",
+    "tr": "rahatsız"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When does Rifat finish?",
+    "options": [
+     "Nine o'clock",
+     "Half past seven",
+     "Midday",
+     "Five o'clock"
+    ],
+    "answer": 1,
+    "note": "\"He starts at five and finishes at half past seven.\""
+   },
+   {
+    "q": "What did he do before?",
+    "options": [
+     "Worked as a baker",
+     "Ran a shop",
+     "Taught at a school",
+     "Worked in an office"
+    ],
+    "answer": 3,
+    "note": "\"He worked in an office for thirty years.\""
+   },
+   {
+    "q": "Why did he continue after the first year?",
+    "options": [
+     "His wife ate the bread without complaining",
+     "Neighbors paid him",
+     "He had nothing else to do",
+     "The bread was good"
+    ],
+    "answer": 0,
+    "note": "\"His wife ate it without complaining, which he says was the reason he continued.\""
+   },
+   {
+    "q": "How do the neighbors collect the bread?",
+    "options": [
+     "He delivers it",
+     "They knock every morning",
+     "They meet him at five",
+     "They leave a bag on his door handle"
+    ],
+    "answer": 3,
+    "note": "\"Two neighbors leave a cloth bag on his door handle.\""
+   },
+   {
+    "q": "What is his honest reason?",
+    "options": [
+     "He needed a reason to get up",
+     "His wife asked him to",
+     "He wanted to learn a skill",
+     "He wanted to earn money"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-13",
+  "level": "B1",
+  "order": 13,
+  "kind": "reading",
+  "title": "Sınıfta telefon yasağı",
+  "titleEn": "Phones in the Classroom",
+  "minutes": 4,
+  "names": [],
+  "text": "A school in the north of the country took every phone away at the door for one year and then measured what happened. Test results improved slightly, which is what the headmaster expected. What surprised him was the noise. The corridors between lessons became loud again. Students who had spent every break looking down were now talking, arguing and playing. Several teachers said it felt like a school from twenty years ago. There were costs too. Parents could not reach their children during the day, and some were unhappy about that. A few students said they felt lonely without the group conversations they were used to. The school decided to continue but to allow phones at lunch. The headmaster says the lesson is not that phones are evil; it is that a rule with no exceptions is easier to keep than one with many.",
+  "glossary": [
+   {
+    "w": "measured",
+    "tr": "ölçtü"
+   },
+   {
+    "w": "slightly",
+    "tr": "hafifçe, biraz"
+   },
+   {
+    "w": "headmaster",
+    "tr": "okul müdürü"
+   },
+   {
+    "w": "corridors",
+    "tr": "koridorlar"
+   },
+   {
+    "w": "lonely",
+    "tr": "yalnız"
+   },
+   {
+    "w": "exceptions",
+    "tr": "istisnalar"
+   },
+   {
+    "w": "evil",
+    "tr": "kötü, şeytani"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did the headmaster expect?",
+    "options": [
+     "Angry parents",
+     "Louder corridors",
+     "Slightly better test results",
+     "Lonely students"
+    ],
+    "answer": 2,
+    "note": "\"Test results improved slightly, which is what the headmaster expected.\""
+   },
+   {
+    "q": "What surprised him?",
+    "options": [
+     "The number of phones",
+     "The teachers' reaction",
+     "The noise in the corridors",
+     "The cost of the plan"
+    ],
+    "answer": 2,
+    "note": "\"What surprised him was the noise.\""
+   },
+   {
+    "q": "What was one cost of the rule?",
+    "options": [
+     "Parents could not reach their children",
+     "Lessons became shorter",
+     "Teachers left",
+     "Results went down"
+    ],
+    "answer": 0,
+    "note": "\"Parents could not reach their children during the day.\""
+   },
+   {
+    "q": "What did the school finally decide?",
+    "options": [
+     "Continue but allow phones at lunch",
+     "Let parents decide",
+     "Take phones for two years",
+     "Stop the rule"
+    ],
+    "answer": 0,
+    "note": "\"The school decided to continue but to allow phones at lunch.\""
+   },
+   {
+    "q": "What does the headmaster say the lesson is?",
+    "options": [
+     "A rule with no exceptions is easier to keep",
+     "Students need more breaks",
+     "Parents should be ignored",
+     "Phones are evil"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-14",
+  "level": "B1",
+  "order": 14,
+  "kind": "reading",
+  "title": "Kiraya çıkan ilk ev",
+  "titleEn": "The First Flat",
+  "minutes": 4,
+  "names": [
+   "Ozge"
+  ],
+  "text": "Ozge moved into her first flat at twenty-three and made every mistake that people make. She signed the contract without reading the part about repairs. She paid for three months in advance because the owner said it would be safer, which it was, for him. She did not take photographs of the walls when she arrived, so when she left there was an argument about marks that were already there. None of these mistakes were expensive on their own, but together they cost her about two months of rent. She now tells younger friends the same four things: read the repair section, never pay more than one month in advance, photograph everything on the first day, and write down the meter readings. She says the advice is dull and nobody follows it until the first time it costs them something.",
+  "glossary": [
+   {
+    "w": "contract",
+    "tr": "sözleşme"
+   },
+   {
+    "w": "repairs",
+    "tr": "tamirat"
+   },
+   {
+    "w": "in advance",
+    "tr": "peşin"
+   },
+   {
+    "w": "marks",
+    "tr": "izler, lekeler"
+   },
+   {
+    "w": "rent",
+    "tr": "kira"
+   },
+   {
+    "w": "meter readings",
+    "tr": "sayaç okumaları"
+   },
+   {
+    "w": "dull",
+    "tr": "sıkıcı"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did Ozge not read?",
+    "options": [
+     "The date",
+     "The address",
+     "The part about repairs",
+     "The price"
+    ],
+    "answer": 2,
+    "note": "\"She signed the contract without reading the part about repairs.\""
+   },
+   {
+    "q": "Why did she pay three months in advance?",
+    "options": [
+     "The bank asked her to",
+     "It was cheaper",
+     "The owner said it would be safer",
+     "She had extra money"
+    ],
+    "answer": 2,
+    "note": "\"Because the owner said it would be safer.\""
+   },
+   {
+    "q": "What was the argument about when she left?",
+    "options": [
+     "Marks that were already there",
+     "The rent",
+     "The furniture",
+     "The meter"
+    ],
+    "answer": 0,
+    "note": "\"There was an argument about marks that were already there.\""
+   },
+   {
+    "q": "How much did the mistakes cost her?",
+    "options": [
+     "Nothing",
+     "About two months of rent",
+     "One week of rent",
+     "Three months of rent"
+    ],
+    "answer": 1,
+    "note": "\"Together they cost her about two months of rent.\""
+   },
+   {
+    "q": "What does she say about her advice?",
+    "options": [
+     "It does not work",
+     "It is new",
+     "Nobody follows it until it costs them",
+     "Everybody follows it"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-15",
+  "level": "B1",
+  "order": 15,
+  "kind": "reading",
+  "title": "Konuşamayan iyi öğrenci",
+  "titleEn": "Good at Grammar, Silent in Class",
+  "minutes": 4,
+  "names": [
+   "Baran"
+  ],
+  "text": "Baran was the best student in his English class on paper. He knew the tenses better than the teacher sometimes did, and his written work was almost perfect. In conversation he said almost nothing. When the teacher asked him a direct question he answered in three words and looked down. The teacher first thought he was shy, but Baran explained that the problem was different. He said he could hear the mistakes in his own speech before the words left his mouth, and stopping felt safer than being wrong in front of people. The teacher changed one thing. Instead of asking questions to the whole room, she put students in pairs for five minutes at the start of every lesson. Baran still hated the first week. By the sixth week he was the loudest person in his pair. His writing has not improved at all, and nobody minds.",
+  "glossary": [
+   {
+    "w": "tenses",
+    "tr": "zamanlar (dilbilgisi)"
+   },
+   {
+    "w": "shy",
+    "tr": "utangaç"
+   },
+   {
+    "w": "mistakes",
+    "tr": "hatalar"
+   },
+   {
+    "w": "pairs",
+    "tr": "ikişerli gruplar"
+   },
+   {
+    "w": "minds",
+    "tr": "aldırıyor, rahatsız oluyor"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was Baran good at?",
+    "options": [
+     "Grammar and written work",
+     "Listening",
+     "Speaking",
+     "Reading aloud"
+    ],
+    "answer": 0,
+    "note": "\"He knew the tenses better than the teacher sometimes did.\""
+   },
+   {
+    "q": "What did the teacher first think?",
+    "options": [
+     "That he was bored",
+     "That he was shy",
+     "That he could not hear",
+     "That he was lazy"
+    ],
+    "answer": 1,
+    "note": "\"The teacher first thought he was shy.\""
+   },
+   {
+    "q": "What did Baran say the real problem was?",
+    "options": [
+     "He did not know the words",
+     "He disliked the teacher",
+     "He heard his own mistakes before speaking",
+     "He was tired"
+    ],
+    "answer": 2,
+    "note": "\"He could hear the mistakes in his own speech before the words left his mouth.\""
+   },
+   {
+    "q": "What did the teacher change?",
+    "options": [
+     "She stopped asking him",
+     "She used pairs instead of whole-class questions",
+     "She moved his seat",
+     "She gave him more writing"
+    ],
+    "answer": 1,
+    "note": "\"She put students in pairs for five minutes at the start of every lesson.\""
+   },
+   {
+    "q": "What happened to his writing?",
+    "options": [
+     "It has not improved and nobody minds",
+     "It improved quickly",
+     "He stopped writing",
+     "It became worse"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-16",
+  "level": "B1",
+  "order": 16,
+  "kind": "reading",
+  "title": "Kapanan kitapçı",
+  "titleEn": "The Bookshop That Would Not Close",
+  "minutes": 4,
+  "names": [
+   "Nevzat"
+  ],
+  "text": "Nevzat's bookshop has been closing for eleven years. He announced it first in a newspaper, then on a sign in the window, then again at his sixtieth birthday. Every time, something stopped him. Once a customer bought two hundred books in a single week. Once a school started sending its students on Friday afternoons. Once his daughter, who lives abroad, sent money without being asked and told him to use it however he wanted. The truth, which he admits when the shop is empty, is that the accounts have never worked. He sells about thirty books a week in a street where the rent rises every year. He also says, without any sense that the two ideas are in conflict, that he has no intention of closing before he is eighty.",
+  "glossary": [
+   {
+    "w": "announced",
+    "tr": "duyurdu"
+   },
+   {
+    "w": "customer",
+    "tr": "müşteri"
+   },
+   {
+    "w": "abroad",
+    "tr": "yurt dışında"
+   },
+   {
+    "w": "admits",
+    "tr": "kabul ediyor"
+   },
+   {
+    "w": "accounts",
+    "tr": "hesaplar"
+   },
+   {
+    "w": "conflict",
+    "tr": "çelişki, çatışma"
+   },
+   {
+    "w": "intention",
+    "tr": "niyet"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long has the shop been closing?",
+    "options": [
+     "One year",
+     "Eleven years",
+     "Two years",
+     "Sixty years"
+    ],
+    "answer": 1,
+    "note": "\"Nevzat's bookshop has been closing for eleven years.\""
+   },
+   {
+    "q": "What did his daughter do?",
+    "options": [
+     "Opened a second shop",
+     "Came back to help",
+     "Bought two hundred books",
+     "Sent money without being asked"
+    ],
+    "answer": 3,
+    "note": "\"His daughter... sent money without being asked.\""
+   },
+   {
+    "q": "What does he admit when the shop is empty?",
+    "options": [
+     "The books are too expensive",
+     "Nobody reads any more",
+     "The accounts have never worked",
+     "He wants to retire"
+    ],
+    "answer": 2,
+    "note": "\"The accounts have never worked.\""
+   },
+   {
+    "q": "How many books does he sell a week?",
+    "options": [
+     "Two hundred",
+     "About sixty",
+     "Eleven",
+     "About thirty"
+    ],
+    "answer": 3,
+    "note": "\"He sells about thirty books a week.\""
+   },
+   {
+    "q": "What does he say about the future?",
+    "options": [
+     "He will move the shop",
+     "He will close next year",
+     "He will not close before he is eighty",
+     "He will sell it to his daughter"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-17",
+  "level": "B1",
+  "order": 17,
+  "kind": "reading",
+  "title": "Gönüllü arama ekibi",
+  "titleEn": "The Volunteers Who Wait",
+  "minutes": 4,
+  "names": [],
+  "text": "A search team in the mountains has forty members and none of them is paid. They train two weekends a month in weather that most people would avoid on purpose. In a normal year they are called out eleven or twelve times. Two of those calls end badly, and the team leader says this is the part nobody prepares you for. What surprises new members most is how much of the work is waiting. They sit in a cold room for six hours while somebody with a map decides where to look, and then they walk for four hours and find nothing, and then they go home. The leader tells every new volunteer the same thing on the first day: if you are joining for the rescue, you will leave within a year. If you are joining for the waiting, you will stay.",
+  "glossary": [
+   {
+    "w": "search",
+    "tr": "arama"
+   },
+   {
+    "w": "train",
+    "tr": "eğitim yapmak"
+   },
+   {
+    "w": "avoid",
+    "tr": "kaçınmak"
+   },
+   {
+    "w": "on purpose",
+    "tr": "bilerek"
+   },
+   {
+    "w": "prepares",
+    "tr": "hazırlar"
+   },
+   {
+    "w": "volunteer",
+    "tr": "gönüllü"
+   },
+   {
+    "w": "rescue",
+    "tr": "kurtarma"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How often does the team train?",
+    "options": [
+     "Two weekends a month",
+     "Every weekend",
+     "Eleven times a year",
+     "Once a year"
+    ],
+    "answer": 0,
+    "note": "\"They train two weekends a month.\""
+   },
+   {
+    "q": "How many calls end badly in a normal year?",
+    "options": [
+     "Eleven",
+     "Two",
+     "None",
+     "Forty"
+    ],
+    "answer": 1,
+    "note": "\"Two of those calls end badly.\""
+   },
+   {
+    "q": "What surprises new members most?",
+    "options": [
+     "The cold",
+     "The pay",
+     "The number of calls",
+     "How much of the work is waiting"
+    ],
+    "answer": 3,
+    "note": "\"How much of the work is waiting.\""
+   },
+   {
+    "q": "What often happens after four hours of walking?",
+    "options": [
+     "They find the person",
+     "They call the police",
+     "They find nothing and go home",
+     "They start again"
+    ],
+    "answer": 2,
+    "note": "\"They walk for four hours and find nothing, and then they go home.\""
+   },
+   {
+    "q": "What does the leader tell new volunteers?",
+    "options": [
+     "The work is easy",
+     "They will be paid later",
+     "Those who join for the rescue leave within a year",
+     "Everybody leaves in a year"
+    ],
+    "answer": 2,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-18",
+  "level": "B1",
+  "order": 18,
+  "kind": "reading",
+  "title": "Otuz yaşında üniversite",
+  "titleEn": "Starting University at Thirty",
+  "minutes": 4,
+  "names": [
+   "Hande"
+  ],
+  "text": "Hande started university at thirty after eleven years of full-time work. She expected the studying to be the hard part. It was not. The hard part was sitting in a room where everybody else was nineteen and had never had to explain a late payment to anybody. In the first month she felt like a visitor. Then a lecturer asked the class a question about how companies actually make decisions, and Hande realized she was the only person in the room who had watched it happen. She answered, and after that the age difference stopped feeling like a problem. Her marks are good but not the best. She says the useful thing she gained was not the degree but the discovery that eleven years of ordinary work had taught her more than she had ever given herself credit for.",
+  "glossary": [
+   {
+    "w": "full-time",
+    "tr": "tam zamanlı"
+   },
+   {
+    "w": "payment",
+    "tr": "ödeme"
+   },
+   {
+    "w": "visitor",
+    "tr": "ziyaretçi"
+   },
+   {
+    "w": "lecturer",
+    "tr": "öğretim görevlisi"
+   },
+   {
+    "w": "realized",
+    "tr": "fark etti"
+   },
+   {
+    "w": "degree",
+    "tr": "diploma, lisans"
+   },
+   {
+    "w": "credit",
+    "tr": "hak, itibar"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What did Hande expect to be hard?",
+    "options": [
+     "The travel",
+     "The other students",
+     "The cost",
+     "The studying"
+    ],
+    "answer": 3,
+    "note": "\"She expected the studying to be the hard part.\""
+   },
+   {
+    "q": "What was actually hard?",
+    "options": [
+     "Finding time",
+     "The exams",
+     "The lecturer",
+     "Sitting among much younger students"
+    ],
+    "answer": 3,
+    "note": "\"The hard part was sitting in a room where everybody else was nineteen.\""
+   },
+   {
+    "q": "What changed things?",
+    "options": [
+     "A change of course",
+     "A new friend",
+     "A good mark",
+     "A question about how companies decide"
+    ],
+    "answer": 3,
+    "note": "\"A lecturer asked the class a question about how companies actually make decisions.\""
+   },
+   {
+    "q": "How are her marks?",
+    "options": [
+     "Good but not the best",
+     "Poor",
+     "She does not say",
+     "The best in the class"
+    ],
+    "answer": 0,
+    "note": "\"Her marks are good but not the best.\""
+   },
+   {
+    "q": "What does she say she gained?",
+    "options": [
+     "The discovery that her work had taught her a lot",
+     "A degree only",
+     "A better job",
+     "Younger friends"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-19",
+  "level": "B1",
+  "order": 19,
+  "kind": "reading",
+  "title": "Apartman toplantısı",
+  "titleEn": "The Meeting About the Roof",
+  "minutes": 4,
+  "names": [],
+  "text": "Eighteen flats, one broken roof, and a meeting that lasted three hours. The repair would cost each flat about two months of rent, and the people on the ground floor pointed out, correctly, that water was not coming into their homes. The people on the top floor pointed out, also correctly, that a roof protects the whole building. For two hours nobody moved. Then a woman from the second floor said something simple: whoever sells first will find that no buyer wants a building with a broken roof, and that includes the ground floor. The room went quiet. The vote passed fifteen to three. The repair took five weeks. Nobody on the ground floor has ever said the woman was right, and everybody knows she was.",
+  "glossary": [
+   {
+    "w": "roof",
+    "tr": "çatı"
+   },
+   {
+    "w": "repair",
+    "tr": "tamir"
+   },
+   {
+    "w": "ground floor",
+    "tr": "zemin kat"
+   },
+   {
+    "w": "protects",
+    "tr": "korur"
+   },
+   {
+    "w": "buyer",
+    "tr": "alıcı"
+   },
+   {
+    "w": "vote",
+    "tr": "oylama"
+   }
+  ],
+  "questions": [
+   {
+    "q": "How long did the meeting last?",
+    "options": [
+     "Two hours",
+     "Three hours",
+     "One hour",
+     "Five weeks"
+    ],
+    "answer": 1,
+    "note": "\"A meeting that lasted three hours.\""
+   },
+   {
+    "q": "What did the ground-floor people point out?",
+    "options": [
+     "They were moving out",
+     "Water was not coming into their homes",
+     "The roof was fine",
+     "The cost was too high"
+    ],
+    "answer": 1,
+    "note": "\"Water was not coming into their homes.\""
+   },
+   {
+    "q": "What argument changed the room?",
+    "options": [
+     "The law requires the repair",
+     "The top floor would pay more",
+     "No buyer wants a building with a broken roof",
+     "The cost would rise"
+    ],
+    "answer": 2,
+    "note": "\"Whoever sells first will find that no buyer wants a building with a broken roof.\""
+   },
+   {
+    "q": "What was the result of the vote?",
+    "options": [
+     "Fifteen to three in favor",
+     "It was equal",
+     "Three to fifteen against",
+     "Nobody voted"
+    ],
+    "answer": 0,
+    "note": "\"The vote passed fifteen to three.\""
+   },
+   {
+    "q": "What does the last sentence suggest?",
+    "options": [
+     "They voted again",
+     "They know she was right but will not say it",
+     "She was wrong",
+     "They thanked her"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-20",
+  "level": "B1",
+  "order": 20,
+  "kind": "reading",
+  "title": "Sessiz saat",
+  "titleEn": "The Supermarket's Quiet Hour",
+  "minutes": 4,
+  "names": [],
+  "text": "A supermarket chain started a quiet hour on Tuesday mornings. Between nine and ten the music is off, the lights are lower, and the machines at the checkout do not beep. It was designed for customers who find noise difficult, and for a while that is who came. Then something else happened. Older shoppers started arriving at five to nine. Parents with small children discovered the shop was easier without the noise. Staff reported that they finished their shifts less tired. The company measured sales and found that the quiet hour sells slightly less per customer but that Tuesday as a whole is now busier. Twelve other branches have copied it. The manager who suggested it says the interesting part is that nobody had ever asked whether the music was helping in the first place.",
+  "glossary": [
+   {
+    "w": "chain",
+    "tr": "zincir (mağaza)"
+   },
+   {
+    "w": "checkout",
+    "tr": "kasa"
+   },
+   {
+    "w": "beep",
+    "tr": "bip sesi çıkarmak"
+   },
+   {
+    "w": "designed",
+    "tr": "tasarlandı"
+   },
+   {
+    "w": "staff",
+    "tr": "personel"
+   },
+   {
+    "w": "shifts",
+    "tr": "vardiyalar"
+   },
+   {
+    "w": "branches",
+    "tr": "şubeler"
+   }
+  ],
+  "questions": [
+   {
+    "q": "When is the quiet hour?",
+    "options": [
+     "Every morning",
+     "Weekends",
+     "Tuesday mornings",
+     "Tuesday evenings"
+    ],
+    "answer": 2,
+    "note": "\"A quiet hour on Tuesday mornings.\""
+   },
+   {
+    "q": "Who was it designed for?",
+    "options": [
+     "Parents",
+     "Customers who find noise difficult",
+     "Staff",
+     "Older shoppers"
+    ],
+    "answer": 1,
+    "note": "\"It was designed for customers who find noise difficult.\""
+   },
+   {
+    "q": "What did the staff report?",
+    "options": [
+     "They were bored",
+     "They sold more",
+     "They preferred the music",
+     "They finished their shifts less tired"
+    ],
+    "answer": 3,
+    "note": "\"Staff reported that they finished their shifts less tired.\""
+   },
+   {
+    "q": "What did the sales figures show?",
+    "options": [
+     "No change at all",
+     "Less per customer but a busier Tuesday",
+     "A large rise in sales",
+     "Fewer customers overall"
+    ],
+    "answer": 1,
+    "note": "\"Sells slightly less per customer but... Tuesday as a whole is now busier.\""
+   },
+   {
+    "q": "What does the manager find interesting?",
+    "options": [
+     "The lights were too low",
+     "Nobody had asked if the music helped",
+     "Customers complained",
+     "The other branches copied it"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-21",
+  "level": "B1",
+  "order": 21,
+  "kind": "reading",
+  "title": "Yanlış hatırlanan şarkı",
+  "titleEn": "The Song Everybody Remembers Wrong",
+  "minutes": 4,
+  "names": [],
+  "text": "Ask a hundred people to sing the most famous line of a song they have known since childhood, and a surprising number will sing the wrong words. This is so common that researchers have a name for it. The reason is simple enough: we hear a song long before we read the words, and the brain fills any gap with whatever makes sense. Once the wrong version is stored it is remarkably hard to remove, because every later hearing is compared against the version already in your head rather than against the record. What is stranger is that people often prefer their own version after they learn the truth. Several singers have said in interviews that audiences correct them when they sing their own lyrics correctly.",
+  "glossary": [
+   {
+    "w": "researchers",
+    "tr": "araştırmacılar"
+   },
+   {
+    "w": "gap",
+    "tr": "boşluk"
+   },
+   {
+    "w": "stored",
+    "tr": "depolanmış"
+   },
+   {
+    "w": "remarkably",
+    "tr": "dikkat çekici biçimde"
+   },
+   {
+    "w": "audiences",
+    "tr": "dinleyiciler, izleyiciler"
+   },
+   {
+    "w": "lyrics",
+    "tr": "şarkı sözleri"
+   },
+   {
+    "w": "version",
+    "tr": "sürüm, hâl"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why do people learn wrong words?",
+    "options": [
+     "The brain fills gaps with what makes sense",
+     "The words are printed wrong",
+     "They do not listen",
+     "Singers change them"
+    ],
+    "answer": 0,
+    "note": "\"The brain fills any gap with whatever makes sense.\""
+   },
+   {
+    "q": "Why is the wrong version hard to remove?",
+    "options": [
+     "It is written down",
+     "Later hearings are compared against it",
+     "Nobody corrects it",
+     "The record is lost"
+    ],
+    "answer": 1,
+    "note": "\"Every later hearing is compared against the version already in your head.\""
+   },
+   {
+    "q": "What do people often do after learning the truth?",
+    "options": [
+     "Forget the song",
+     "Buy the record",
+     "Stop singing",
+     "Prefer their own version"
+    ],
+    "answer": 3,
+    "note": "\"People often prefer their own version after they learn the truth.\""
+   },
+   {
+    "q": "What have several singers said?",
+    "options": [
+     "They change the words on purpose",
+     "They prefer old recordings",
+     "They forget their own songs",
+     "Audiences correct them when they sing correctly"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   },
+   {
+    "q": "What is the writer's main point?",
+    "options": [
+     "Songs are badly written",
+     "People do not care about music",
+     "Records are unreliable",
+     "Memory rewrites what it stores"
+    ],
+    "answer": 3,
+    "note": "Parçanın bütünü."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-22",
+  "level": "B1",
+  "order": 22,
+  "kind": "reading",
+  "title": "İş görüşmesinde yalan",
+  "titleEn": "The Sentence on the Application",
+  "minutes": 4,
+  "names": [
+   "Kaan"
+  ],
+  "text": "Kaan wrote one sentence on his job application that was not quite true. He said he had led a team of five. In fact he had helped a team of five, and the difference had seemed small when he typed it at midnight. He got the interview. In the interview the manager asked him, in a friendly way, how he had handled one difficult disagreement between two of his team members. Kaan had three seconds to decide. He said the truth: that he had not led the team and that he had written the line badly. The manager did not look angry. She asked what he had actually done, listened, and moved on. He got the job. He has never known whether the correction helped him or whether she simply did not care, and he has decided not to find out.",
+  "glossary": [
+   {
+    "w": "application",
+    "tr": "başvuru"
+   },
+   {
+    "w": "led",
+    "tr": "yönetti"
+   },
+   {
+    "w": "interview",
+    "tr": "iş görüşmesi"
+   },
+   {
+    "w": "handled",
+    "tr": "ele aldı, idare etti"
+   },
+   {
+    "w": "disagreement",
+    "tr": "anlaşmazlık"
+   },
+   {
+    "w": "correction",
+    "tr": "düzeltme"
+   }
+  ],
+  "questions": [
+   {
+    "q": "What was not quite true?",
+    "options": [
+     "That he had worked there",
+     "The date",
+     "That he had led a team of five",
+     "His name"
+    ],
+    "answer": 2,
+    "note": "\"He said he had led a team of five.\""
+   },
+   {
+    "q": "What did he actually do?",
+    "options": [
+     "He led a team of two",
+     "He helped a team of five",
+     "He worked alone",
+     "He was a manager"
+    ],
+    "answer": 1,
+    "note": "\"In fact he had helped a team of five.\""
+   },
+   {
+    "q": "What did he do in the interview?",
+    "options": [
+     "He explained the disagreement",
+     "He changed the subject",
+     "He left",
+     "He told the truth"
+    ],
+    "answer": 3,
+    "note": "\"He said the truth: that he had not led the team.\""
+   },
+   {
+    "q": "How did the manager react?",
+    "options": [
+     "She became angry",
+     "She asked what he had actually done",
+     "She ended the interview",
+     "She laughed"
+    ],
+    "answer": 1,
+    "note": "\"She asked what he had actually done, listened, and moved on.\""
+   },
+   {
+    "q": "What has he decided?",
+    "options": [
+     "To ask her one day",
+     "To correct the form",
+     "To leave the job",
+     "Not to find out whether it helped"
+    ],
+    "answer": 3,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-23",
+  "level": "B1",
+  "order": 23,
+  "kind": "reading",
+  "title": "Bisiklet yolu tartışması",
+  "titleEn": "The Argument About the Bike Lane",
+  "minutes": 4,
+  "names": [],
+  "text": "When the city announced a bike lane on the main shopping street, the shopkeepers were against it. They said their customers arrived by car and that losing the parking spaces would cost them business. The council built the lane anyway, promising to measure the effect. Two years later the figures showed something the shopkeepers had not expected. Total sales on the street had risen by nine per cent. The reason was not that cyclists spend more on a single visit; they spend less. It was that they come far more often. A survey also found that the shopkeepers had badly overestimated how many customers arrived by car in the first place. Several of them have since asked for the lane to be extended, which the council has agreed to do without mentioning the earlier argument.",
+  "glossary": [
+   {
+    "w": "lane",
+    "tr": "şerit, yol"
+   },
+   {
+    "w": "shopkeepers",
+    "tr": "esnaf, dükkân sahipleri"
+   },
+   {
+    "w": "parking spaces",
+    "tr": "park yerleri"
+   },
+   {
+    "w": "council",
+    "tr": "belediye"
+   },
+   {
+    "w": "cyclists",
+    "tr": "bisikletliler"
+   },
+   {
+    "w": "survey",
+    "tr": "anket"
+   },
+   {
+    "w": "overestimated",
+    "tr": "fazla tahmin etti"
+   },
+   {
+    "w": "extended",
+    "tr": "uzatılmış"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why were the shopkeepers against the lane?",
+    "options": [
+     "They disliked cyclists",
+     "They thought customers arrived by car",
+     "The street was too narrow",
+     "It cost too much"
+    ],
+    "answer": 1,
+    "note": "\"They said their customers arrived by car.\""
+   },
+   {
+    "q": "What happened to total sales?",
+    "options": [
+     "They fell by nine per cent",
+     "They stayed the same",
+     "They rose by nine per cent",
+     "They doubled"
+    ],
+    "answer": 2,
+    "note": "\"Total sales on the street had risen by nine per cent.\""
+   },
+   {
+    "q": "Why do cyclists help sales?",
+    "options": [
+     "They spend more per visit",
+     "They come far more often",
+     "They bring friends",
+     "They stay longer"
+    ],
+    "answer": 1,
+    "note": "\"They come far more often.\""
+   },
+   {
+    "q": "What did the survey find?",
+    "options": [
+     "Most customers came by car",
+     "Shopkeepers had overestimated car customers",
+     "Parking was never used",
+     "Cyclists spend more"
+    ],
+    "answer": 1,
+    "note": "\"The shopkeepers had badly overestimated how many customers arrived by car.\""
+   },
+   {
+    "q": "What have several shopkeepers asked for?",
+    "options": [
+     "Lower rent",
+     "The lane to be extended",
+     "The parking to return",
+     "A new survey"
+    ],
+    "answer": 1,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-24",
+  "level": "B1",
+  "order": 24,
+  "kind": "reading",
+  "title": "Uzaktan çalışan tek kişi",
+  "titleEn": "The Only One at Home",
+  "minutes": 4,
+  "names": [
+   "Sena"
+  ],
+  "text": "When her company asked everybody to return to the office, Sena was the only person who stayed at home. Her manager agreed because she lives four hours away and her work is mostly writing. For the first three months it was ideal. Then she noticed that decisions were being made in conversations she was not part of. Nobody was hiding anything; things were simply settled in a corridor and written up afterwards, if at all. She raised it once and was told to speak up more in meetings, which missed the point entirely. Her solution was practical rather than fair: she now calls two colleagues every Monday and asks what they have heard. It works, but she is aware that she is doing extra work to stay level with people who do none.",
+  "glossary": [
+   {
+    "w": "ideal",
+    "tr": "ideal"
+   },
+   {
+    "w": "decisions",
+    "tr": "kararlar"
+   },
+   {
+    "w": "settled",
+    "tr": "karara bağlandı"
+   },
+   {
+    "w": "corridor",
+    "tr": "koridor"
+   },
+   {
+    "w": "raised it",
+    "tr": "konuyu açtı"
+   },
+   {
+    "w": "practical",
+    "tr": "pratik"
+   },
+   {
+    "w": "aware",
+    "tr": "farkında"
+   },
+   {
+    "w": "colleagues",
+    "tr": "iş arkadaşları"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why was Sena allowed to stay home?",
+    "options": [
+     "She was ill",
+     "She asked twice",
+     "She lives four hours away",
+     "Her team is remote"
+    ],
+    "answer": 2,
+    "note": "\"She lives four hours away and her work is mostly writing.\""
+   },
+   {
+    "q": "What did she notice after three months?",
+    "options": [
+     "Her pay changed",
+     "Her work suffered",
+     "Decisions were made without her",
+     "Nobody wrote to her"
+    ],
+    "answer": 2,
+    "note": "\"Decisions were being made in conversations she was not part of.\""
+   },
+   {
+    "q": "What was she told when she raised it?",
+    "options": [
+     "To return to the office",
+     "To change teams",
+     "To speak up more in meetings",
+     "Nothing at all"
+    ],
+    "answer": 2,
+    "note": "\"She was told to speak up more in meetings.\""
+   },
+   {
+    "q": "What is her solution?",
+    "options": [
+     "She calls two colleagues every Monday",
+     "She goes in once a month",
+     "She changed her hours",
+     "She writes weekly reports"
+    ],
+    "answer": 0,
+    "note": "\"She now calls two colleagues every Monday.\""
+   },
+   {
+    "q": "What is she aware of?",
+    "options": [
+     "She does extra work to stay level",
+     "Her manager is unfair",
+     "The solution will not last",
+     "She should move closer"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
+ },
+ {
+  "id": "b1-r-25",
+  "level": "B1",
+  "order": 25,
+  "kind": "reading",
+  "title": "Kaybolan tarif",
+  "titleEn": "The Recipe Nobody Wrote Down",
+  "minutes": 4,
+  "names": [
+   "Nesrin"
+  ],
+  "text": "Nesrin's mother cooked one dish that nobody else in the family could make. She never wrote the recipe down. When anybody asked her she answered in amounts that meant nothing: a little of this, enough of that, until it looks right. After she died the family tried nine times in two years and failed nine times. Then Nesrin's aunt remembered one detail that nobody had thought important. Her mother had always started the dish the night before. That single change made the difference. The family now makes it twice a year, and it is close but not the same. Nesrin has written the recipe down carefully, including the night before, and she says she is fairly sure it is still missing something that nobody will ever find.",
+  "glossary": [
+   {
+    "w": "dish",
+    "tr": "yemek"
+   },
+   {
+    "w": "recipe",
+    "tr": "tarif"
+   },
+   {
+    "w": "amounts",
+    "tr": "miktarlar"
+   },
+   {
+    "w": "failed",
+    "tr": "başaramadı"
+   },
+   {
+    "w": "detail",
+    "tr": "ayrıntı"
+   },
+   {
+    "w": "fairly",
+    "tr": "oldukça"
+   }
+  ],
+  "questions": [
+   {
+    "q": "Why could nobody make the dish?",
+    "options": [
+     "It took too long",
+     "The food was rare",
+     "The recipe was never written down",
+     "Nobody wanted to"
+    ],
+    "answer": 2,
+    "note": "\"She never wrote the recipe down.\""
+   },
+   {
+    "q": "How did she answer questions about amounts?",
+    "options": [
+     "She refused to answer",
+     "With exact numbers",
+     "By writing them",
+     "In amounts that meant nothing"
+    ],
+    "answer": 3,
+    "note": "\"A little of this, enough of that.\""
+   },
+   {
+    "q": "What detail did the aunt remember?",
+    "options": [
+     "She started the dish the night before",
+     "She added salt last",
+     "She used a special pan",
+     "She cooked it twice"
+    ],
+    "answer": 0,
+    "note": "\"Her mother had always started the dish the night before.\""
+   },
+   {
+    "q": "How often does the family make it now?",
+    "options": [
+     "Twice a year",
+     "Nine times a year",
+     "Never",
+     "Every week"
+    ],
+    "answer": 0,
+    "note": "\"The family now makes it twice a year.\""
+   },
+   {
+    "q": "What does Nesrin believe?",
+    "options": [
+     "Something is still missing",
+     "It tastes better now",
+     "Her aunt was wrong",
+     "The recipe is now complete"
+    ],
+    "answer": 0,
+    "note": "Son cümle."
+   }
+  ]
  }
 ]

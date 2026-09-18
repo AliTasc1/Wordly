@@ -1,0 +1,137 @@
+{
+  "_meta": { "batch": "b1-reading-03", "level": "B1", "range": "Parça 11-15" },
+  "items": [
+    {
+      "id": "b1-r-11",
+      "level": "B1",
+      "order": 11,
+      "kind": "reading",
+      "title": "Ucuz kıyafetin bedeli",
+      "titleEn": "Why Cheap Clothes Are Expensive",
+      "minutes": 4,
+      "names": [],
+      "text": "A shirt that costs very little looks like a good deal. The problem is what happens after the third wash. Cheap clothes are made from thin material and the stitching is done quickly, so they lose their shape and the colors fade. A buyer who pays a small amount four times a year has spent more than a buyer who paid a larger amount once. This is not new information, but it is easy to forget in a shop. There is also the question of who made the shirt and for what pay. Some companies now publish where their factories are, which at least makes the question possible to ask. The best advice is old and boring: buy less, buy better, and keep the receipt. It is boring because it works.",
+      "glossary": [
+        { "w": "deal", "tr": "fırsat, anlaşma" },
+        { "w": "material", "tr": "kumaş, malzeme" },
+        { "w": "stitching", "tr": "dikiş" },
+        { "w": "fade", "tr": "solmak" },
+        { "w": "factories", "tr": "fabrikalar" },
+        { "w": "receipt", "tr": "fiş" }
+      ],
+      "questions": [
+        { "q": "What happens to cheap clothes after washing?", "options": ["They lose their shape and fade", "They become softer", "They become thicker", "They stay the same"], "answer": 0, "note": "\"They lose their shape and the colors fade.\"" },
+        { "q": "What is the writer's point about cost?", "options": ["Buying cheap four times costs more", "Cheap clothes are always better", "Price does not matter", "Expensive clothes last one year"], "answer": 0, "note": "\"A buyer who pays a small amount four times a year has spent more.\"" },
+        { "q": "What do some companies now publish?", "options": ["Where their factories are", "How much they earn", "Who buys their clothes", "The cost of material"], "answer": 0, "note": "\"Some companies now publish where their factories are.\"" },
+        { "q": "What is the writer's advice?", "options": ["Buy less and buy better", "Buy only in sales", "Make your own clothes", "Wash clothes less often"], "answer": 0, "note": "\"Buy less, buy better, and keep the receipt.\"" },
+        { "q": "Why does the writer call the advice boring?", "options": ["Because it works", "Because nobody follows it", "Because it is new", "Because it is wrong"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-12",
+      "level": "B1",
+      "order": 12,
+      "kind": "reading",
+      "title": "Kendi ekmeğini yapmak",
+      "titleEn": "The Man Who Bakes at Five",
+      "minutes": 4,
+      "names": ["Rifat"],
+      "text": "Rifat is sixty-one and he has made bread every morning for nine years. He starts at five and finishes at half past seven, before most of his street is awake. He is not a baker. He worked in an office for thirty years and he never cooked anything until he retired. The first year the bread was terrible. His wife ate it without complaining, which he says was the reason he continued. Now he gives most of it away. Two neighbors leave a cloth bag on his door handle and collect it later. He has never taken money for a loaf and he becomes uncomfortable when anybody suggests it. When people ask why he does it, he says the honest answer is that he needed a reason to get up.",
+      "glossary": [
+        { "w": "baker", "tr": "fırıncı" },
+        { "w": "retired", "tr": "emekli oldu" },
+        { "w": "complaining", "tr": "şikâyet etmek" },
+        { "w": "cloth", "tr": "bez" },
+        { "w": "handle", "tr": "kol, tutamak" },
+        { "w": "loaf", "tr": "somun" },
+        { "w": "uncomfortable", "tr": "rahatsız" }
+      ],
+      "questions": [
+        { "q": "When does Rifat finish?", "options": ["Half past seven", "Five o'clock", "Nine o'clock", "Midday"], "answer": 0, "note": "\"He starts at five and finishes at half past seven.\"" },
+        { "q": "What did he do before?", "options": ["Worked in an office", "Worked as a baker", "Ran a shop", "Taught at a school"], "answer": 0, "note": "\"He worked in an office for thirty years.\"" },
+        { "q": "Why did he continue after the first year?", "options": ["His wife ate the bread without complaining", "The bread was good", "Neighbors paid him", "He had nothing else to do"], "answer": 0, "note": "\"His wife ate it without complaining, which he says was the reason he continued.\"" },
+        { "q": "How do the neighbors collect the bread?", "options": ["They leave a bag on his door handle", "They knock every morning", "He delivers it", "They meet him at five"], "answer": 0, "note": "\"Two neighbors leave a cloth bag on his door handle.\"" },
+        { "q": "What is his honest reason?", "options": ["He needed a reason to get up", "He wanted to earn money", "He wanted to learn a skill", "His wife asked him to"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-13",
+      "level": "B1",
+      "order": 13,
+      "kind": "reading",
+      "title": "Sınıfta telefon yasağı",
+      "titleEn": "Phones in the Classroom",
+      "minutes": 4,
+      "names": [],
+      "text": "A school in the north of the country took every phone away at the door for one year and then measured what happened. Test results improved slightly, which is what the headmaster expected. What surprised him was the noise. The corridors between lessons became loud again. Students who had spent every break looking down were now talking, arguing and playing. Several teachers said it felt like a school from twenty years ago. There were costs too. Parents could not reach their children during the day, and some were unhappy about that. A few students said they felt lonely without the group conversations they were used to. The school decided to continue but to allow phones at lunch. The headmaster says the lesson is not that phones are evil; it is that a rule with no exceptions is easier to keep than one with many.",
+      "glossary": [
+        { "w": "measured", "tr": "ölçtü" },
+        { "w": "slightly", "tr": "hafifçe, biraz" },
+        { "w": "headmaster", "tr": "okul müdürü" },
+        { "w": "corridors", "tr": "koridorlar" },
+        { "w": "lonely", "tr": "yalnız" },
+        { "w": "exceptions", "tr": "istisnalar" },
+        { "w": "evil", "tr": "kötü, şeytani" }
+      ],
+      "questions": [
+        { "q": "What did the headmaster expect?", "options": ["Slightly better test results", "Louder corridors", "Angry parents", "Lonely students"], "answer": 0, "note": "\"Test results improved slightly, which is what the headmaster expected.\"" },
+        { "q": "What surprised him?", "options": ["The noise in the corridors", "The cost of the plan", "The teachers' reaction", "The number of phones"], "answer": 0, "note": "\"What surprised him was the noise.\"" },
+        { "q": "What was one cost of the rule?", "options": ["Parents could not reach their children", "Results went down", "Teachers left", "Lessons became shorter"], "answer": 0, "note": "\"Parents could not reach their children during the day.\"" },
+        { "q": "What did the school finally decide?", "options": ["Continue but allow phones at lunch", "Stop the rule", "Take phones for two years", "Let parents decide"], "answer": 0, "note": "\"The school decided to continue but to allow phones at lunch.\"" },
+        { "q": "What does the headmaster say the lesson is?", "options": ["A rule with no exceptions is easier to keep", "Phones are evil", "Students need more breaks", "Parents should be ignored"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-14",
+      "level": "B1",
+      "order": 14,
+      "kind": "reading",
+      "title": "Kiraya çıkan ilk ev",
+      "titleEn": "The First Flat",
+      "minutes": 4,
+      "names": ["Ozge"],
+      "text": "Ozge moved into her first flat at twenty-three and made every mistake that people make. She signed the contract without reading the part about repairs. She paid for three months in advance because the owner said it would be safer, which it was, for him. She did not take photographs of the walls when she arrived, so when she left there was an argument about marks that were already there. None of these mistakes were expensive on their own, but together they cost her about two months of rent. She now tells younger friends the same four things: read the repair section, never pay more than one month in advance, photograph everything on the first day, and write down the meter readings. She says the advice is dull and nobody follows it until the first time it costs them something.",
+      "glossary": [
+        { "w": "contract", "tr": "sözleşme" },
+        { "w": "repairs", "tr": "tamirat" },
+        { "w": "in advance", "tr": "peşin" },
+        { "w": "marks", "tr": "izler, lekeler" },
+        { "w": "rent", "tr": "kira" },
+        { "w": "meter readings", "tr": "sayaç okumaları" },
+        { "w": "dull", "tr": "sıkıcı" }
+      ],
+      "questions": [
+        { "q": "What did Ozge not read?", "options": ["The part about repairs", "The price", "The address", "The date"], "answer": 0, "note": "\"She signed the contract without reading the part about repairs.\"" },
+        { "q": "Why did she pay three months in advance?", "options": ["The owner said it would be safer", "The bank asked her to", "It was cheaper", "She had extra money"], "answer": 0, "note": "\"Because the owner said it would be safer.\"" },
+        { "q": "What was the argument about when she left?", "options": ["Marks that were already there", "The rent", "The furniture", "The meter"], "answer": 0, "note": "\"There was an argument about marks that were already there.\"" },
+        { "q": "How much did the mistakes cost her?", "options": ["About two months of rent", "Three months of rent", "Nothing", "One week of rent"], "answer": 0, "note": "\"Together they cost her about two months of rent.\"" },
+        { "q": "What does she say about her advice?", "options": ["Nobody follows it until it costs them", "Everybody follows it", "It is new", "It does not work"], "answer": 0, "note": "Son cümle." }
+      ]
+    },
+    {
+      "id": "b1-r-15",
+      "level": "B1",
+      "order": 15,
+      "kind": "reading",
+      "title": "Konuşamayan iyi öğrenci",
+      "titleEn": "Good at Grammar, Silent in Class",
+      "minutes": 4,
+      "names": ["Baran"],
+      "text": "Baran was the best student in his English class on paper. He knew the tenses better than the teacher sometimes did, and his written work was almost perfect. In conversation he said almost nothing. When the teacher asked him a direct question he answered in three words and looked down. The teacher first thought he was shy, but Baran explained that the problem was different. He said he could hear the mistakes in his own speech before the words left his mouth, and stopping felt safer than being wrong in front of people. The teacher changed one thing. Instead of asking questions to the whole room, she put students in pairs for five minutes at the start of every lesson. Baran still hated the first week. By the sixth week he was the loudest person in his pair. His writing has not improved at all, and nobody minds.",
+      "glossary": [
+        { "w": "tenses", "tr": "zamanlar (dilbilgisi)" },
+        { "w": "shy", "tr": "utangaç" },
+        { "w": "mistakes", "tr": "hatalar" },
+        { "w": "pairs", "tr": "ikişerli gruplar" },
+        { "w": "minds", "tr": "aldırıyor, rahatsız oluyor" }
+      ],
+      "questions": [
+        { "q": "What was Baran good at?", "options": ["Grammar and written work", "Speaking", "Listening", "Reading aloud"], "answer": 0, "note": "\"He knew the tenses better than the teacher sometimes did.\"" },
+        { "q": "What did the teacher first think?", "options": ["That he was shy", "That he was lazy", "That he was bored", "That he could not hear"], "answer": 0, "note": "\"The teacher first thought he was shy.\"" },
+        { "q": "What did Baran say the real problem was?", "options": ["He heard his own mistakes before speaking", "He did not know the words", "He disliked the teacher", "He was tired"], "answer": 0, "note": "\"He could hear the mistakes in his own speech before the words left his mouth.\"" },
+        { "q": "What did the teacher change?", "options": ["She used pairs instead of whole-class questions", "She stopped asking him", "She gave him more writing", "She moved his seat"], "answer": 0, "note": "\"She put students in pairs for five minutes at the start of every lesson.\"" },
+        { "q": "What happened to his writing?", "options": ["It has not improved and nobody minds", "It became worse", "It improved quickly", "He stopped writing"], "answer": 0, "note": "Son cümle." }
+      ]
+    }
+  ]
+}
