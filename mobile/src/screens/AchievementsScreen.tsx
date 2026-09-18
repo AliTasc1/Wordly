@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -6,12 +6,20 @@ import { BackButton } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii } from '../theme/tokens';
-import { ACHIEVEMENTS, ACHIEVEMENTS_HEADER } from '../data/profile';
+import { achievementsOf, facts, summarize } from '../content/achievements';
+import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
 
 /** 27 · Başarımlar — badge collection with locked and in-progress states. */
 export function AchievementsScreen() {
   const back = useBack('profile');
+  const { positions, xp, streak } = useApp();
+
+  const list = useMemo(
+    () => achievementsOf(facts(positions, xp, streak)),
+    [positions, xp, streak],
+  );
+  const summary = useMemo(() => summarize(list), [list]);
 
   return (
     <Screen tabbed padTop={62} gap={13}>
@@ -19,23 +27,18 @@ export function AchievementsScreen() {
         <BackButton onPress={back} />
         <View>
           <Txt f="m" s={17} w={800}>
-            {ACHIEVEMENTS_HEADER.title}
+            Başarımlar
           </Txt>
           <Txt s={11} w={600} c={colors.textDim}>
-            {ACHIEVEMENTS_HEADER.sub}
+            {summary.unlocked} / {summary.total} açıldı
           </Txt>
         </View>
       </View>
 
-      <ProgressBar
-        pct={ACHIEVEMENTS_HEADER.pct}
-        from={colors.warning}
-        to={colors.orange}
-        height={8}
-      />
+      <ProgressBar pct={summary.pct} from={colors.warning} to={colors.orange} height={8} />
 
       <View style={styles.grid}>
-        {ACHIEVEMENTS.map((a) => {
+        {list.map((a) => {
           const unlocked = a.pct === 100;
           const card = (
             <>

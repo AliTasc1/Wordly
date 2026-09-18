@@ -17,7 +17,7 @@ import { useBack, useGo } from '../navigation/useGo';
 export function ReadScreen() {
   const { go } = useGo();
   const back = useBack('lesson');
-  const { cefr, position, setPosition, fire, award } = useApp();
+  const { cefr, position, setPosition, fire, award, recordMistake } = useApp();
 
   const items = useMemo(() => readingOf(cefr), [cefr]);
   const index = Math.min(position('reading', cefr), items.length - 1);
@@ -35,7 +35,16 @@ export function ReadScreen() {
       setRight((n) => n + 1);
       award(20);
       fire('Doğru! +20 XP', question.note);
+      return;
     }
+    recordMistake({
+      kind: 'reading',
+      level: cefr,
+      id: item.id,
+      q: asked,
+      text: question.q,
+      answer: question.options[question.answer],
+    });
   });
 
   const last = asked === item.questions.length - 1;

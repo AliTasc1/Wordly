@@ -16,7 +16,7 @@ import { useBack, useGo } from '../navigation/useGo';
 export function GrammarScreen() {
   const { go } = useGo();
   const back = useBack('lesson');
-  const { cefr, position, setPosition, fire, award } = useApp();
+  const { cefr, position, setPosition, fire, award, recordMistake } = useApp();
 
   const lessons = useMemo(() => grammarOf(cefr), [cefr]);
   const index = Math.min(position('grammar', cefr), lessons.length - 1);
@@ -28,7 +28,16 @@ export function GrammarScreen() {
     if (correct) {
       award(15);
       fire('Doğru! +15 XP', exercise.note);
+      return;
     }
+    recordMistake({
+      kind: 'grammar',
+      level: cefr,
+      id: lesson.id,
+      q: asked,
+      text: exercise.text,
+      answer: exercise.options[exercise.answer],
+    });
   });
 
   const last = asked === lesson.exercises.length - 1;

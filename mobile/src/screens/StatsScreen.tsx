@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { BackButton, Press } from '../components/Buttons';
@@ -6,15 +6,27 @@ import { Card } from '../components/Surfaces';
 import { ColumnChart, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii } from '../theme/tokens';
-import { MISTAKE_BOOK, TRENDS, WEEK_BARS, WEEK_SUMMARY } from '../data/profile';
+import { deckProgress, tr } from '../content/progress';
+import { weekStats } from '../content/stats';
+import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
 
-const MAX = Math.max(...WEEK_BARS.map((b) => b.value));
-
-/** 28 · Gelişim Analizi — weekly XP, skill trends and the mistake book. */
+/** 28 · Gelişim Analizi — haftalık XP, bölüm ilerlemesi ve hata defteri. */
 export function StatsScreen() {
   const { go } = useGo();
   const back = useBack('profile');
+  const { daily, positions, cefr, mistakes } = useApp();
+
+  const week = useMemo(() => weekStats(daily), [daily]);
+  const decks = useMemo(() => deckProgress(positions, cefr), [positions, cefr]);
+  const mistakeCount = useMemo(
+    () => Object.values(mistakes).reduce((n, m) => n + m.times, 0),
+    [mistakes],
+  );
+
+  // Sütunların ölçeği en yüksek güne göre. Hiç XP yoksa 1'e sabitliyoruz:
+  // sıfıra bölmek grafiği NaN yapar.
+  const max = Math.max(...week.bars.map((b) => b.value), 1);
 
   return (
     <Screen tabbed padTop={62} gap={13}>
@@ -33,56 +45,66 @@ export function StatsScreen() {
       <Card>
         <View style={styles.weekHead}>
           <Txt f="m" s={14} w={700}>
-            {WEEK_SUMMARY.title}
+            Haftalık XP
           </Txt>
           <Txt f="m" s={20} w={800} c={colors.accent}>
-            {WEEK_SUMMARY.total}{' '}
-            <Txt f="mono" s={11} w={700} c={colors.successSoft}>
-              {WEEK_SUMMARY.delta}
-            </Txt>
+            {tr(week.total)}{' '}
+            {week.delta === null ? null : (
+              <Txt
+                f="mono"
+                s={11}
+                w={700}
+                c={week.delta < 0 ? colors.errorSoft : colors.successSoft}>
+                {week.delta > 0 ? '+' : ''}%{week.delta}
+              </Txt>
+            )}
           </Txt>
         </View>
-        <ColumnChart data={WEEK_BARS} max={MAX} />
+        {/* En iyi gün vurgulanıyor. Hafta boşken eşik sonsuz: sıfır sütunların
+            hepsini "en iyi" diye parlatmanın anlamı yok. */}
+        <ColumnChart data={week.bars} max={max} highlightFrom={week.best ? max : Infinity} />
       </Card>
 
       <View style={styles.cards}>
         <View style={styles.smallCard}>
           <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.1}>
-            {WEEK_SUMMARY.best.kicker}
+            EN İYİ GÜN
           </Txt>
           <Txt f="m" s={17} w={800} style={styles.smallValue}>
-            {WEEK_SUMMARY.best.value}
+            {week.best ? week.best.name : '—'}
           </Txt>
           <Txt s={11} c={colors.textDim}>
-            {WEEK_SUMMARY.best.sub}
+            {week.best ? `${tr(week.best.value)} XP` : 'Bu hafta henüz XP yok'}
           </Txt>
         </View>
         <View style={styles.smallCard}>
           <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.1}>
-            {WEEK_SUMMARY.average.kicker}
+            GÜNLÜK ORTALAMA
           </Txt>
           <Txt f="m" s={17} w={800} style={styles.smallValue}>
-            {WEEK_SUMMARY.average.value}
+            {tr(week.average)} XP
           </Txt>
           <Txt s={11} c={colors.textDim}>
-            {WEEK_SUMMARY.average.sub}
+            7 günün {week.activeDays}'inde çalıştın
           </Txt>
         </View>
       </View>
 
       <Card gap={11}>
         <Txt f="m" s={14} w={700}>
-          Beceri trendi
+          {cefr} seviyesinde ilerleme
         </Txt>
-        {TRENDS.map((trend) => (
+        {/* Yüzde, o bölümde görülen kart/ders sayısının seviyedeki toplama
+            oranı. Bir kartı görmek onu bilmek değil — aralıklı tekrar
+            geldiğinde bu ayrımı ölçebileceğiz. */}
+        {decks.map((deck) => (
           <SkillBar
-            key={trend.name}
-            name={trend.name}
-            value={trend.delta}
-            pct={trend.pct}
+            key={deck.kind}
+            name={deck.label}
+            value={`%${deck.pct}`}
+            pct={deck.pct}
             nameWidth={70}
             valueWidth={44}
-            valueColor={trend.delta.startsWith('-') ? colors.errorSoft : colors.successSoft}
           />
         ))}
       </Card>
@@ -93,14 +115,16 @@ export function StatsScreen() {
         </View>
         <View style={styles.flex}>
           <Txt f="m" s={13.5} w={700}>
-            {MISTAKE_BOOK.title}
+            Hata defteri
           </Txt>
           <Txt s={11.5} c={colors.textDim}>
-            {MISTAKE_BOOK.sub}
+            {mistakeCount
+              ? `${tr(mistakeCount)} yanlış · ${Object.keys(mistakes).length} soru`
+              : 'Henüz yanlışın yok'}
           </Txt>
         </View>
         <Txt f="m" s={11} w={800} c={colors.errorSoft}>
-          {MISTAKE_BOOK.cta}
+          {mistakeCount ? 'TEKRAR ET' : 'AÇ'}
         </Txt>
       </Press>
     </Screen>

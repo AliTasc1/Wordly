@@ -10,7 +10,20 @@ import React, {
 import { AppState } from 'react-native';
 import { PLAN_IDS, PlanId } from '../data/subscription';
 import { CefrLevel } from '../data/curriculum';
-import { clear, EMPTY, flush, load, save, streakOf, today, type Saved } from './persist';
+import {
+  clear,
+  EMPTY,
+  flush,
+  load,
+  save,
+  streakOf,
+  today,
+  withMistake,
+  type Mistake,
+  type Saved,
+} from './persist';
+
+export type { Mistake } from './persist';
 
 export type Toast = { title: string; note: string } | null;
 
@@ -94,6 +107,15 @@ type AppValue = {
   /** Kazanılan toplam XP ve kesintisiz çalışma serisi (gün). */
   xp: number;
   streak: number;
+  /** Gün → o gün kazanılan XP. Haftalık grafik buradan çiziliyor. */
+  daily: Record<string, number>;
+
+  /** Yanlış yapılan sorular — hata defteri ve koç önerisi. */
+  mistakes: Record<string, Mistake>;
+  /** Bir yanlışı deftere işler. Aynı soru tekrarlanırsa sayacı artar. */
+  recordMistake: (m: Omit<Mistake, 'times' | 'at'>) => void;
+  /** Öğrenci "öğrendim" dediğinde kaydı siler. */
+  forgetMistake: (key: string) => void;
   /**
    * XP verir ve bugünü çalışılan günlere işler.
    *
@@ -150,7 +172,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [positions, setPositions] = useState<Record<string, number>>({});
   const [savedWords, setSavedWords] = useState<string[]>([]);
   const [xp, setXp] = useState(0);
-  const [days, setDays] = useState<string[]>([]);
+  const [daily, setDaily] = useState<Record<string, number>>({});
+  const [mistakes, setMistakes] = useState<Record<string, Mistake>>({});
   // Kayıt okunana kadar hiçbir şey çizilmiyor: varsayılanlarla bir kare
   // çizmek, o karede yazılan bir değerin kaydı ezmesi demek olurdu.
   const [hydrated, setHydrated] = useState(false);
@@ -175,7 +198,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setPositions(saved.positions);
       setSavedWords(saved.savedWords);
       setXp(saved.xp);
-      setDays(saved.days);
+      setDaily(saved.daily);
+      setMistakes(saved.mistakes);
       setGame((g) => ({
         ...g,
         arenaXp: saved.arena.xp,
@@ -203,7 +227,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       savedWords,
       arena: { xp: game.arenaXp, found: game.arenaFound, streak: game.arenaStreak },
       xp,
-      days,
+      daily,
+      mistakes,
     };
     save(state);
   }, [
@@ -219,7 +244,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     game.arenaFound,
     game.arenaStreak,
     xp,
-    days,
+    daily,
+    mistakes,
   ]);
 
   // Uygulama arka plana alınırken bekleyen yazma hemen yapılır; aksi hâlde
@@ -233,15 +259,33 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   const award = useCallback((points: number) => {
     setXp((n) => n + points);
-    // Gün listesi sınırsız büyümesin; seri ve haftalık grafik için son bir
+    // Gün tablosu sınırsız büyümesin; seri ve haftalık grafik için son bir
     // yıldan fazlası zaten kullanılmıyor.
-    setDays((cur) => (cur.includes(today()) ? cur : [...cur, today()].slice(-400)));
+    setDaily((cur) => {
+      const next = { ...cur, [today()]: (cur[today()] ?? 0) + points };
+      const keys = Object.keys(next).sort();
+      for (const old of keys.slice(0, Math.max(keys.length - 400, 0))) delete next[old];
+      return next;
+    });
+  }, []);
+
+  const recordMistake = useCallback((m: Omit<Mistake, 'times' | 'at'>) => {
+    setMistakes((cur) => withMistake(cur, m));
+  }, []);
+
+  const forgetMistake = useCallback((key: string) => {
+    setMistakes((cur) => {
+      const next = { ...cur };
+      delete next[key];
+      return next;
+    });
   }, []);
 
   const resetProgress = useCallback(() => {
     void clear();
     setXp(0);
-    setDays([]);
+    setDaily({});
+    setMistakes({});
     setGoals(EMPTY.goals);
     setDailyTime(EMPTY.dailyTime);
     setSkills(EMPTY.skills);
@@ -301,11 +345,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       plan,
       setPlan,
       xp,
-      streak: streakOf(days),
+      streak: streakOf(Object.keys(daily)),
+      daily,
+      mistakes,
+      recordMistake,
+      forgetMistake,
       award,
       resetProgress,
     }),
-    [toast, fire, goals, dailyTime, skills, cefr, testResult, game, positions, savedWords, liked, following, joinedClub, plan, xp, days, award, resetProgress],
+    [toast, fire, goals, dailyTime, skills, cefr, testResult, game, positions, savedWords, liked, following, joinedClub, plan, xp, daily, mistakes, recordMistake, forgetMistake, award, resetProgress],
   );
 
   // Kayıt okunmadan çizmiyoruz; bu birkaç milisaniye sürüyor ve uygulama

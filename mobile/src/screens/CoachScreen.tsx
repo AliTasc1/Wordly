@@ -1,20 +1,57 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
-import { Chip, IconTile, Panel, Tag } from '../components/Surfaces';
+import { Panel, Tag } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import { COACH } from '../data/play';
+import { alpha, colors, radii, shadows } from '../theme/tokens';
+import { kindLabel, mistakesByKind, rankedMistakes } from '../content/stats';
+import { tr } from '../content/progress';
 import { useApp } from '../state/AppContext';
+import type { DeckKind } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
+import type { ScreenId } from '../navigation/routes';
 
-/** 15 · AI Koç — a coach with memory of your mistakes and goals. */
+/**
+ * 15 · Hata defteri.
+ *
+ * Bu ekran tasarımda "AI Koç"tu: bir sohbet kutusu, hazır sorular ve
+ * "dün Past Perfect'te zorlandın" diyen sabit bir metin. O cümle hiçbir zaman
+ * doğru değildi — uygulama neyi yanlış yaptığını bilmiyordu.
+ *
+ * Artık biliyor. Sohbet kutusu, arkasında gerçek bir dil modeli olana kadar
+ * burada durmuyor; onun yerine öğrencinin gerçekten yanıldığı sorular ve
+ * hangi bölüme dönmesi gerektiği var. Bu, koçun yapabileceğinin sahtesi değil,
+ * küçük ama gerçek olanı.
+ */
+
+/** Hata defterindeki bölümden o bölümün ekranına. */
+const SCREEN_OF: Record<DeckKind, ScreenId> = {
+  vocab: 'vocab',
+  grammar: 'grammar',
+  reading: 'read',
+  listening: 'listen',
+  speaking: 'speak',
+};
+
+const TINT_OF: Record<DeckKind, string> = {
+  vocab: colors.secondary,
+  grammar: colors.primary,
+  reading: colors.success,
+  listening: colors.accent,
+  speaking: colors.warning,
+};
+
 export function CoachScreen() {
   const { go } = useGo();
   const back = useBack('home');
-  const { fire } = useApp();
+  const { mistakes, forgetMistake, fire } = useApp();
+
+  const list = useMemo(() => rankedMistakes(mistakes), [mistakes]);
+  const byKind = useMemo(() => mistakesByKind(mistakes), [mistakes]);
+  const worst = byKind[0];
+  const total = byKind.reduce((n, k) => n + k.count, 0);
 
   return (
     <Screen tabbed padTop={62} gap={14}>
@@ -22,88 +59,102 @@ export function CoachScreen() {
         <BackButton onPress={back} />
         <View style={styles.flex}>
           <Txt f="m" s={17} w={800}>
-            {COACH.header.title}
+            Hata defteri
           </Txt>
           <Txt s={11} w={600} c={colors.textDim}>
-            {COACH.header.sub}
+            {list.length
+              ? `${list.length} soru · ${tr(total)} yanlış`
+              : 'Yanlış yaptığın sorular burada birikir'}
           </Txt>
         </View>
       </View>
 
-      <Gradient
-        deg={145}
-        colors={['rgba(124,92,255,.28)', 'rgba(34,211,238,.1)', 'rgba(14,20,38,.95)']}
-        style={styles.plan}>
-        <View style={styles.planHead}>
-          <Gradient colors={gradients.violetCyan} style={styles.planBadge}>
-            <Txt f="m" s={16} w={800}>
-              AI
-            </Txt>
-          </Gradient>
-          <View>
-            <Txt f="m" s={16} w={800}>
-              {COACH.plan.title}
-            </Txt>
-            <Txt s={11.5} w={600} c={colors.violetSoft}>
-              {COACH.plan.sub}
-            </Txt>
-          </View>
-        </View>
-        <Txt s={15} w={600} lh={1.6}>
-          {COACH.plan.message}
-        </Txt>
-        <Press onPress={() => go('grammar')} style={styles.planCta}>
-          <Txt f="m" s={15} w={800}>
-            {COACH.plan.cta}
+      {worst ? (
+        <Gradient
+          deg={145}
+          colors={['rgba(124,92,255,.28)', 'rgba(34,211,238,.1)', 'rgba(14,20,38,.95)']}
+          style={styles.plan}>
+          <Txt f="mono" s={10} w={700} c={colors.violetSoft} ls={0.12}>
+            EN ÇOK ZORLANDIĞIN BÖLÜM
           </Txt>
-        </Press>
-      </Gradient>
-
-      <Txt f="m" s={13.5} w={700} style={styles.sectionTitle}>
-        {COACH.memoryTitle}
-      </Txt>
-
-      {COACH.memory.map((item) => (
-        <View key={item.title} style={styles.memoryRow}>
-          <IconTile glyph={item.glyph} tint={item.tint} size={42} radius={14} fontSize={18} />
-          <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
-              {item.title}
+          <Txt f="m" s={20} w={800}>
+            {worst.label}
+          </Txt>
+          <Txt s={14} w={600} lh={1.6} c={colors.textDim}>
+            {byKind.length > 1
+              ? `${tr(worst.count)} yanlışın ${tr(total)} yanlışının ${Math.round((worst.count / total) * 100)}%'i bu bölümde.`
+              : `Bu bölümde ${tr(worst.count)} kez yanıldın.`}
+          </Txt>
+          <Press onPress={() => go(SCREEN_OF[worst.kind])} style={styles.planCta}>
+            <Txt f="m" s={15} w={800}>
+              {worst.label} bölümüne dön
             </Txt>
-            <Txt s={11.5} lh={1.45} c={colors.textDim} style={styles.memorySub}>
-              {item.sub}
+          </Press>
+        </Gradient>
+      ) : (
+        <Panel gap={8} radius={radii.hero}>
+          <Txt s={28}>📕</Txt>
+          <Txt f="m" s={16} w={800}>
+            Defter boş
+          </Txt>
+          <Txt s={13} lh={1.6} c={colors.textDim}>
+            Bir soruyu yanlış yaptığında buraya düşer. Sonra tek tek üstünden
+            geçip "öğrendim" diyerek defterden silersin.
+          </Txt>
+          <Press onPress={() => go('grammar')} style={styles.emptyCta}>
+            <Txt f="m" s={14} w={800}>
+              Gramer çalış
+            </Txt>
+          </Press>
+        </Panel>
+      )}
+
+      {list.length ? (
+        <Txt f="m" s={13.5} w={700} style={styles.sectionTitle}>
+          En çok yanıldıkların
+        </Txt>
+      ) : null}
+
+      {list.map((m) => (
+        <View key={m.key} style={styles.row}>
+          <View style={styles.rowHead}>
+            <Tag label={kindLabel(m.kind)} tint={TINT_OF[m.kind]} />
+            <Txt f="mono" s={10} w={700} c={colors.textFaint}>
+              {m.level}
+            </Txt>
+            <View style={styles.flex} />
+            <Txt f="mono" s={10} w={700} c={m.times > 1 ? colors.errorSoft : colors.textFaint}>
+              {m.times} KEZ
             </Txt>
           </View>
-          <Tag label={item.tag} tint={item.tint} />
+
+          <Txt s={13.5} lh={1.5}>
+            {m.text}
+          </Txt>
+
+          <View style={styles.answer}>
+            <Txt f="mono" s={10} w={700} c={colors.successSoft}>
+              ✓
+            </Txt>
+            <Txt s={12.5} w={600} c={colors.successSoft} style={styles.flex}>
+              {m.answer}
+            </Txt>
+          </View>
+
+          <Press
+            onPress={() => {
+              forgetMistake(m.key);
+              fire('Defterden silindi', 'Bir daha yanılırsan geri gelir.');
+            }}
+            accessibilityRole="button"
+            accessibilityLabel="Bu soruyu defterden sil"
+            style={styles.learned}>
+            <Txt f="m" s={12} w={700} c={colors.textDim}>
+              Öğrendim
+            </Txt>
+          </Press>
         </View>
       ))}
-
-      <Panel gap={10} radius={radii.tile}>
-        <Txt f="m" s={13.5} w={700}>
-          {COACH.askTitle}
-        </Txt>
-        <View style={styles.chips}>
-          {COACH.chips.map((chip) => (
-            <Chip
-              key={chip}
-              label={chip}
-              padV={9}
-              padH={13}
-              onPress={() => fire('Koç hazırlıyor…', `“${chip}” için 3 dakikalık oturum`)}
-            />
-          ))}
-        </View>
-        <View style={styles.input}>
-          <Txt s={13} c={colors.textGhost} style={styles.flex}>
-            {COACH.inputPlaceholder}
-          </Txt>
-          <Gradient colors={gradients.brand} style={styles.send}>
-            <Txt f="m" s={13} w={700}>
-              ↑
-            </Txt>
-          </Gradient>
-        </View>
-      </Panel>
     </Screen>
   );
 }
@@ -116,10 +167,8 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(124,92,255,.32)',
     borderRadius: radii.hero,
     padding: 18,
-    gap: 12,
+    gap: 8,
   },
-  planHead: { flexDirection: 'row', alignItems: 'center', gap: 11 },
-  planBadge: { width: 46, height: 46, borderRadius: radii.input, alignItems: 'center', justifyContent: 'center' },
   planCta: {
     height: 50,
     borderRadius: radii.input,
@@ -127,30 +176,43 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     boxShadow: shadows.ctaViolet,
+    marginTop: 6,
+  },
+  emptyCta: {
+    height: 46,
+    borderRadius: radii.input,
+    backgroundColor: alpha.w08,
+    borderWidth: 1,
+    borderColor: alpha.w14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 6,
   },
   sectionTitle: { marginTop: 2 },
-  memoryRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
+  row: {
+    gap: 8,
     backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: alpha.w07,
     borderRadius: radii.panel,
-    padding: 13,
+    padding: 14,
   },
-  memorySub: { marginTop: 2 },
-  chips: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  input: {
+  rowHead: { flexDirection: 'row', alignItems: 'center', gap: 8 },
+  answer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 9,
-    backgroundColor: alpha.w04,
+    gap: 7,
+    backgroundColor: 'rgba(34,197,94,.1)',
+    borderRadius: radii.input,
+    paddingVertical: 9,
+    paddingHorizontal: 11,
+  },
+  learned: {
+    alignSelf: 'flex-start',
     borderWidth: 1,
-    borderColor: alpha.w10,
-    borderRadius: radii.card,
-    paddingVertical: 11,
+    borderColor: alpha.w12,
+    borderRadius: radii.chip,
+    paddingVertical: 7,
     paddingHorizontal: 13,
   },
-  send: { width: 32, height: 32, borderRadius: radii.chip, alignItems: 'center', justifyContent: 'center' },
 });

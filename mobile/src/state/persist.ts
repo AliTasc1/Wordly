@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { CefrLevel } from '../data/curriculum';
-import type { TestResult } from './AppContext';
+import type { DeckKind, TestResult } from './AppContext';
 
 /**
  * İlerlemenin cihazda saklanması.
@@ -13,6 +13,38 @@ import type { TestResult } from './AppContext';
  */
 
 const KEY = 'wordly:state:v1';
+
+/**
+ * Yanlış yapılan bir soru.
+ *
+ * Hata defteri ve koç ekranı buradan besleniyor. Soru metnini ve doğru cevabı
+ * da saklıyoruz: öğrenci haftalar sonra baktığında "gramer, 3. soru" hiçbir şey
+ * anlatmaz, sorunun kendisi anlatır.
+ */
+export type Mistake = {
+  kind: DeckKind;
+  level: CefrLevel;
+  /** İçerik kimliği — ders, metin ya da diyalog. */
+  id: string;
+  /** O içerikteki sorunun sırası. */
+  q: number;
+  /** Sorunun kendisi. */
+  text: string;
+  /** Doğru cevap. */
+  answer: string;
+  /** Aynı soruda kaç kez yanılındı. */
+  times: number;
+  /** Son yanılma tarihi (YYYY-MM-DD). */
+  at: string;
+};
+
+/** Hata defterinde tutulacak en fazla kayıt. */
+const MISTAKE_CAP = 200;
+
+/** Bir hatanın kimliği: aynı soru iki kayıt açmasın. */
+export function mistakeKey(m: Pick<Mistake, 'kind' | 'id' | 'q'>): string {
+  return `${m.kind}:${m.id}:${m.q}`;
+}
 
 /**
  * Diske yazılanlar.
@@ -37,8 +69,16 @@ export type Saved = {
   arena: { xp: number; found: number; streak: number };
   /** Kazanılan toplam XP. */
   xp: number;
-  /** Çalışılan günler, ISO tarih (YYYY-MM-DD). Seri buradan hesaplanıyor. */
-  days: string[];
+  /**
+   * Gün → o gün kazanılan XP (YYYY-MM-DD).
+   *
+   * Önce yalnızca çalışılan günlerin listesiydi; haftalık grafik "ne kadar"ı
+   * soruyor, "çalıştı mı"yı değil. Seri hâlâ anahtarlardan hesaplanıyor, yani
+   * bu alan ikisini birden karşılıyor.
+   */
+  daily: Record<string, number>;
+  /** Hata defteri — soru kimliğine göre. */
+  mistakes: Record<string, Mistake>;
 };
 
 /** Kayıt yoksa ya da okunamazsa uygulama bu değerlerle açılır. */
@@ -52,7 +92,8 @@ export const EMPTY: Saved = {
   savedWords: [],
   arena: { xp: 0, found: 0, streak: 0 },
   xp: 0,
-  days: [],
+  daily: {},
+  mistakes: {},
 };
 
 /**
@@ -63,6 +104,22 @@ export const EMPTY: Saved = {
  * sürüm atlarında eksik alan gelmesi normaldir ve o yüzden `EMPTY` ile
  * birleştiriliyor.
  */
+/**
+ * Günlük XP tablosunu okur, gerekirse eski biçimden çevirir.
+ *
+ * İlk sürüm yalnızca çalışılan günlerin listesini tutuyordu. O kayıtlarda günün
+ * XP'si **bilinmiyor**; eldeki toplamı günlere bölüştürmek grafikte hiç
+ * yaşanmamış bir dağılım çizmek olurdu. Bu yüzden eski günler sıfır XP ile
+ * geliyor: seri korunuyor, grafik o günler için dürüstçe boş kalıyor.
+ */
+function dailyOf(saved: Partial<Saved> & { days?: unknown }): Record<string, number> {
+  if (saved.daily && typeof saved.daily === 'object') return saved.daily;
+  if (Array.isArray(saved.days)) {
+    return Object.fromEntries(saved.days.filter((d) => typeof d === 'string').map((d) => [d, 0]));
+  }
+  return {};
+}
+
 export async function load(): Promise<Saved> {
   try {
     const raw = await AsyncStorage.getItem(KEY);
@@ -75,7 +132,8 @@ export async function load(): Promise<Saved> {
       savedWords: Array.isArray(saved.savedWords) ? saved.savedWords : EMPTY.savedWords,
       arena: { ...EMPTY.arena, ...(saved.arena ?? {}) },
       xp: typeof saved.xp === 'number' ? saved.xp : 0,
-      days: Array.isArray(saved.days) ? saved.days : [],
+      daily: dailyOf(saved),
+      mistakes: typeof saved.mistakes === 'object' && saved.mistakes ? saved.mistakes : {},
     };
   } catch {
     return EMPTY;
@@ -144,6 +202,31 @@ export function today(): string {
   const now = new Date();
   const pad = (n: number) => String(n).padStart(2, '0');
   return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+}
+
+/**
+ * Hata defterine bir yanlış işler.
+ *
+ * Aynı soru tekrar yanlış yapılırsa yeni kayıt açılmıyor, sayacı artıyor —
+ * ısrarla yanılınan bir soru, bir kez yanılınandan daha önemlidir ve koç
+ * ekranı sıralamayı buna göre yapıyor.
+ *
+ * Defter sınırsız büyüyemez: 450 metin ve 104 ders binlerce soru demek. Sınır
+ * aşılınca en eski kayıtlar düşüyor.
+ */
+export function withMistake(
+  book: Record<string, Mistake>,
+  m: Omit<Mistake, 'times' | 'at'>,
+): Record<string, Mistake> {
+  const key = mistakeKey(m);
+  const seen = book[key];
+  const next = { ...book, [key]: { ...m, times: (seen?.times ?? 0) + 1, at: today() } };
+
+  const keys = Object.keys(next);
+  if (keys.length <= MISTAKE_CAP) return next;
+  keys.sort((a, b) => next[a].at.localeCompare(next[b].at));
+  for (const old of keys.slice(0, keys.length - MISTAKE_CAP)) delete next[old];
+  return next;
 }
 
 /**

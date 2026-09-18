@@ -52,26 +52,8 @@ export const ARENA = {
   baseReward: 50,
 };
 
-/** AI coach screen. */
-export const COACH = {
-  header: { title: 'AI Koç', sub: 'Seni 42 gündür takip ediyor' },
-  plan: {
-    title: 'Bugünün planı',
-    sub: '3 dakika · zayıf noktalarına göre',
-    message:
-      '"Ali, dün Past Perfect\'te 4 hatadan 3\'ünü yaptın ve konuşmada \'th\' sesi puanını düşürdü. Önce 8 soruluk hızlı bir drill, sonra 90 saniyelik telaffuz çalışması yapalım."',
-    cta: 'Şimdi pratik yap',
-  },
-  memoryTitle: 'Koçun hatırladıkları',
-  memory: [
-    { glyph: '📐', title: 'Past Perfect', sub: 'Son 7 günde 9 hata · en zayıf konun', tag: 'ODAK', tint: colors.error },
-    { glyph: '🔤', title: '“th” sesi', sub: 'Telaffuz puanı 64/100', tag: 'GELİŞİYOR', tint: colors.warning },
-    { glyph: '🎯', title: 'Hedefin: Kariyer', sub: 'İş görüşmesi modülü önerildi', tag: 'HEDEF', tint: colors.primary },
-    { glyph: '📈', title: '42 günlük geçmiş', sub: '1.284 kelime · 96 ders · 38 düello', tag: 'ARŞİV', tint: colors.success },
-  ],
-  askTitle: 'Koça sor',
-  chips: ['Past Perfect anlat', 'Hatalarımı göster', 'Görüşme pratiği', 'Kelime testi'],
-  inputPlaceholder: 'Bir şey yaz…',
-};
+// "AI Koç" ekranının sabit metinleri buradaydı: uydurma bir sohbet, uydurma
+// bir hafıza ("son 7 günde 9 hata"). Ekran artık gerçek hata defterini
+// gösteriyor; dil modeline bağlanacak sohbet kutusu o gün geri gelecek.
 
 /** AI speaking practice: hotel check-in role play. */
