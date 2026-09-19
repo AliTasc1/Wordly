@@ -192,7 +192,12 @@ export function ReadScreen() {
 const styles = StyleSheet.create({
   flex: { flex: 1 },
   header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  art: { width: '100%', height: 132, borderRadius: radii.input },
+  // Yer tutucu 132 piksel sabitti; görsel öyle değil. Üretim araçlarının
+  // tamamına yakını 16:9 veriyor ve sabit yüksekliğe sığdırmak, her görselin
+  // üstünü altını kırpmak demekti — kadrajı kuran taraf biz olmadığımız için
+  // neyin kesileceğini de bilemezdik. Oran veriliyor, yükseklik genişlikten
+  // çıkıyor.
+  art: { width: '100%', aspectRatio: 16 / 9, borderRadius: radii.input },
   article: {
     backgroundColor: colors.surfaceDeep,
     borderWidth: 1,

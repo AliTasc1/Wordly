@@ -95,6 +95,54 @@ def cmd_prompts(levels: list[str]) -> None:
     print(f"Görseller {ART.relative_to(ROOT)}/ içine `file` alanındaki adla konacak.")
 
 
+def cmd_list() -> None:
+    """Görselleri başka bir araçla üretecek kişi için konu listesi.
+
+    Tek kritik alan dosya adı: harita, dosya adının parça kimliğiyle birebir
+    aynı olmasına dayanıyor. Sıra ya da başlık değil, ad eşleştiriyor.
+    """
+    rows = [
+        "# Okuma görselleri — konu listesi",
+        "",
+        "Her satır bir okuma parçası. Görseli üretip **`Dosya adı` sütunundaki",
+        "adla** `mobile/assets/content/reading-art/` klasörüne koy.",
+        "",
+        "- **Oran:** 16:9",
+        "- **Boyut:** en az 1200×675 piksel",
+        "- **Biçim:** `.webp` tercih edilir (aynı kalitede en küçük dosya);",
+        "  `.png`, `.jpg` de kabul ediliyor",
+        "- **Metin olmasın:** İngilizce öğreten bir uygulamada görselin içinde",
+        "  yanlış yazılmış bir kelime, öğretilen şeyin kendisini bozar",
+        "",
+        "Dosyalar yerine konduktan sonra:",
+        "",
+        "```",
+        "python3 content/build-reading-art.py index",
+        "```",
+        "",
+    ]
+
+    for level in LEVELS:
+        items = passages(level)
+        rows += [
+            f"## {level.upper()} — {len(items)} parça",
+            "",
+            "| Dosya adı | Başlık (TR) | Konu (EN) |",
+            "|---|---|---|",
+        ]
+        for item in items:
+            rows.append(
+                f'| `{item["id"]}.webp` | {item["title"]} | {item["titleEn"]} |'
+            )
+        rows.append("")
+
+    target = ART / "KONULAR.md"
+    ART.mkdir(parents=True, exist_ok=True)
+    target.write_text("\n".join(rows), encoding="utf-8")
+    total = sum(len(passages(level)) for level in LEVELS)
+    print(f"{total} konu yazıldı -> {target.relative_to(ROOT)}")
+
+
 def cmd_index() -> None:
     found: dict[str, str] = {}
     if ART.is_dir():
@@ -132,11 +180,14 @@ def main() -> int:
     p = sub.add_parser("prompts", help="görsel istemlerini yaz")
     p.add_argument("--level", choices=LEVELS, action="append", dest="levels")
 
+    sub.add_parser("list", help="konu listesini yaz (başka araçla üretim için)")
     sub.add_parser("index", help="TS haritasını klasöre göre derle")
 
     args = parser.parse_args()
     if args.command == "prompts":
         cmd_prompts(args.levels or LEVELS)
+    elif args.command == "list":
+        cmd_list()
     else:
         cmd_index()
     return 0
