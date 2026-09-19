@@ -7,7 +7,30 @@ import {
   useAudioRecorder,
   useAudioRecorderState,
 } from 'expo-audio';
+import { File } from 'expo-file-system';
 import { playUri, stopClips } from './player';
+
+/**
+ * Kaydı diskten siler.
+ *
+ * Gizlilik metni "kayıt telefonundan çıkmaz" derken ikinci bir şey daha
+ * söylüyor: kayıt orada da kalmıyor. Kaydı durumdan düşürmek yetmiyordu —
+ * dosya geçici alanda, işletim sistemi temizleyene kadar duruyordu. Söz
+ * verilen şeyin kodda karşılığı olmalı.
+ *
+ * Sessizce başarısız oluyor: dosya zaten yoksa ya da silinemiyorsa
+ * öğrenciye gösterilecek bir şey yok, alıştırmanın akışını kesmenin de
+ * anlamı yok.
+ */
+function removeFile(uri: string | null): void {
+  if (!uri) return;
+  try {
+    const file = new File(uri);
+    if (file.exists) file.delete();
+  } catch {
+    // yoksay
+  }
+}
 
 /**
  * Konuşma kaydı.
@@ -106,10 +129,16 @@ export function useRecorder(): Recorder {
   const recording = useRef(false);
   recording.current = phase === 'recording';
 
+  // Temizlik kapanışı kurulduğu anki `uri`yi yakalar; ekrandan çıkarken
+  // silinmesi gereken ise o ana kadarki son kayıt. Ref güncel değeri taşıyor.
+  const lastUri = useRef<string | null>(null);
+  lastUri.current = uri;
+
   useEffect(
     () => () => {
       if (recording.current) void recorder.stop().catch(() => {});
       void setAudioModeAsync({ allowsRecording: false }).catch(() => {});
+      removeFile(lastUri.current);
     },
     [recorder],
   );
@@ -140,6 +169,8 @@ export function useRecorder(): Recorder {
 
         await recorder.prepareToRecordAsync(OPTIONS);
         recorder.record();
+        // Yeni kayıt, öncekinin yerini alıyor: eskisi diskte kalmamalı.
+        removeFile(lastUri.current);
         setUri(null);
         setPhase('recording');
       } catch (error) {
@@ -176,6 +207,7 @@ export function useRecorder(): Recorder {
 
   const discard = useCallback(() => {
     stopClips();
+    removeFile(lastUri.current);
     setUri(null);
     setProblem(null);
     setPhase('idle');

@@ -40,7 +40,7 @@ export function SettingsScreen() {
   const back = useBack('profile');
   const { fire, cefr, goals, dailyTime, resetProgress, sync, haptics, setHaptics } =
     useApp();
-  const { user, loading, signOut } = useAuth();
+  const { user, loading, signOut, deleteAccount } = useAuth();
 
   // Silme geri alınamıyor, o yüzden onay isteniyor. Yıkıcı işlem tek
   // dokunuşla olmamalı.
@@ -57,6 +57,49 @@ export function SettingsScreen() {
             resetProgress();
             fire('İlerleme sıfırlandı', 'Her bölüm baştan başlıyor');
           },
+        },
+      ],
+    );
+
+  // Hesap silme iki adımda soruluyor. Sıfırlamada tek onay yeterli: yanlışlıkla
+  // basan öğrenci ilerlemesini kaybeder ama hesabı durur. Burada dönüş yok —
+  // e-posta, eşitleme ve liderlik geçmişi dahil sunucudaki her şey gidiyor ve
+  // aynı veriyi geri getirecek bir yol kalmıyor.
+  //
+  // İki metin de ne SİLİNMEDİĞİNİ söylüyor: telefondaki ilerleme duruyor.
+  // Bunu yazmazsak "hesabımı silersem çalıştığım her şey gider mi" korkusu,
+  // uygulamayı tamamen silmeye iter.
+  const askDelete = () =>
+    Alert.alert(
+      'Hesabımı sil',
+      'Sunucudaki her şey silinecek: e-posta adresin, eşitlenen ilerlemen ve liderlik geçmişin. Bu geri alınamaz.\n\nTelefonundaki ilerlemen silinmez; uygulama hesapsız çalışmaya devam eder.',
+      [
+        { text: 'Vazgeç', style: 'cancel' },
+        {
+          text: 'Devam',
+          style: 'destructive',
+          onPress: () =>
+            Alert.alert(
+              'Emin misin?',
+              `${user?.email ?? 'Hesabın'} ve sunucudaki tüm verisi kalıcı olarak silinecek.`,
+              [
+                { text: 'Vazgeç', style: 'cancel' },
+                {
+                  text: 'Hesabımı sil',
+                  style: 'destructive',
+                  onPress: () => {
+                    void deleteAccount().then((problem) => {
+                      if (problem) fire('Hesap silinemedi', problem.text);
+                      else
+                        fire(
+                          'Hesabın silindi',
+                          'Telefonundaki ilerlemen olduğu gibi duruyor',
+                        );
+                    });
+                  },
+                },
+              ],
+            ),
         },
       ],
     );
@@ -394,6 +437,18 @@ export function SettingsScreen() {
         </Press>
       ) : null}
 
+      {/* Hesap silme en altta ve en sönük duruyor. Mağaza kuralı bunu
+          "kolay bulunur" olmaya zorluyor, ama kolay bulunur ile göze
+          batan aynı şey değil: gün içinde defalarca açılan bir ekranda
+          en yıkıcı düğme, en kolay basılan düğme olmamalı. */}
+      {user ? (
+        <Press onPress={askDelete} style={styles.deleteAccount}>
+          <Txt f="m" s={13} w={700} c={colors.textDim}>
+            Hesabımı sil
+          </Txt>
+        </Press>
+      ) : null}
+
       <Txt f="mono" s={10.5} w={600} c={colors.textDisabled} style={styles.version}>
         {SETTINGS_FOOTER.version}
       </Txt>
@@ -466,5 +521,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   credit: { paddingVertical: 11, paddingHorizontal: 13 },
+  deleteAccount: { alignItems: 'center', paddingVertical: 12 },
   version: { textAlign: 'center' },
 });

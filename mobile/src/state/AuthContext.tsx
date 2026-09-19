@@ -48,6 +48,20 @@ type AuthValue = {
   signOut: () => Promise<Problem | null>;
 
   /**
+   * Hesabı ve sunucudaki tüm veriyi siler. Geri alınamaz.
+   *
+   * App Store 5.1.1(v) bunu uygulama içinde sunmayı zorunlu tutuyor, ama
+   * kural olmasa da olmalıydı: veriyi vermeyi iki dokunuşa indirip geri
+   * almayı e-posta yazmaya bağlamak, rızayı tek yönlü bir kapı yapar.
+   *
+   * Telefondaki ilerlemeye dokunmaz. Silinen, sunucudaki kopyadır; öğrenci
+   * hesabından vazgeçtiğinde aylarca biriktirdiği ilerlemeyi de kaybetmek
+   * zorunda değil. Telefondaki veriyi ayrıca silmek isteyen için Ayarlar'da
+   * sıfırlama zaten var.
+   */
+  deleteAccount: () => Promise<Problem | null>;
+
+  /**
    * Kayıt oldu ama e-posta henüz doğrulanmadı.
    *
    * Supabase doğrulama açıkken oturum açmaz ve hata da döndürmez — sadece
@@ -191,6 +205,23 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     return null;
   }, []);
 
+  const deleteAccount = useCallback(async () => {
+    // Sunucu tarafı tek satır: delete_my_account() silinecek kimliği
+    // oturumdan okuyor, bu yüzden buradan gönderilecek bir parametre yok.
+    const { error } = await supabase.rpc('delete_my_account');
+    if (error) return problemOf(error);
+
+    // Silme başarılıysa elimizdeki erişim anahtarı artık olmayan bir
+    // kullanıcıya ait. signOut sunucuya da gitmeye çalışır ve o çağrı
+    // beklenen biçimde başarısız olur; sonucu yutuyoruz çünkü asıl iş
+    // bitti ve kullanıcıya "hesabın silindi ama çıkış yapılamadı" demek
+    // doğru olmayan bir endişe yaratırdı.
+    await supabase.auth.signOut().catch(() => undefined);
+    setSession(null);
+    setRecovering(false);
+    return null;
+  }, []);
+
   const clearPending = useCallback(() => setPendingEmail(null), []);
   const clearLinkProblem = useCallback(() => setLinkProblem(null), []);
 
@@ -205,6 +236,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       resendConfirmation,
       updatePassword,
       signOut,
+      deleteAccount,
       pendingEmail,
       clearPending,
       recovering,
@@ -220,6 +252,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       resendConfirmation,
       updatePassword,
       signOut,
+      deleteAccount,
       pendingEmail,
       clearPending,
       recovering,
