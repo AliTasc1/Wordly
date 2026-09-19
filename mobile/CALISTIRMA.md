@@ -77,6 +77,78 @@ npx expo start -c        # -c: Metro önbelleğini temizler
 
 Play Store / App Store → Expo Go → "Update" görünüyorsa güncelle.
 
+## Uygulama açılıyor ama güncelleme gelmemiş
+
+Ayrı bir sorun: bu durumda telefon bağlanıyor, uygulama çalışıyor — sadece
+içeriği eski. Yeni yazılan ekran yok, kaldırılan düğme hâlâ duruyor.
+
+**Telefonda hiçbir şey yapma.** Sebep neredeyse her zaman bilgisayarda:
+`git pull` düşündüğün şeyi yapmamıştır.
+
+### Önce bunu çalıştır
+
+`npx expo start` yazdığın **aynı klasörde**, aynı terminalde:
+
+```
+git log --oneline -1
+```
+
+Tek satır yazar. O satırdaki kod, telefona giden sürümdür. Beklediğin
+değişikliğin commit'i değilse mesele kapanmıştır: paket doğru, klasör eski.
+
+### `git pull` neden sessizce başarısız olur
+
+| Terminalde gördüğün | Anlamı |
+|---|---|
+| `Already up to date.` | Yanlış klasördesin ya da yanlış daldasın |
+| `error: Your local changes would be overwritten` | Pull hiç olmadı; elle değiştirdiğin dosya var |
+| `fatal: not a git repository` | Klasör ZIP olarak indirilmiş, klon değil |
+| Uzun süre durup hata veren indirme | Depoda 63 MB ses var; yarıda kopmuş |
+
+Son satır burada en sık çıkanı. `git pull` yarıda koparsa Git hiçbir şeyi
+uygulamaz — ya hepsi iner ya hiçbiri. Ekrandaki hata kaçarsa "indi" sanırsın.
+
+### Doğru klasörde olduğundan emin ol
+
+En çok karışan şey bu: `git pull` proje **kökünde**, `npx expo start` ise
+`mobile/` içinde çalışır. İki ayrı terminal penceresi açıksa, biri eski
+klasörde kalmış olabilir. `pwd` (Windows'ta `cd`) ile ikisini de kontrol et.
+
+### Dal doğru mu
+
+```
+git status -sb
+```
+
+İlk satır `## main...origin/main` demeli. Başka bir dal adı yazıyorsa
+değişiklikler o dala gelmiyor:
+
+```
+git checkout main
+git pull
+```
+
+### Hepsi doğruysa, paketi zorla tazele
+
+Sıra önemli:
+
+```
+npm install
+npx expo start -c
+```
+
+Sonra telefonda Expo Go'yu **görev listesinden tamamen kapat** ve yeniden aç.
+Expo Go arka planda kalırsa eski paketi bellekten sürdürebiliyor.
+
+### Güncellemenin geldiğini gözle doğrula
+
+Alt menüye bak. Güncel sürümde beş sekme şu:
+
+**🏠 Ana · 📚 Öğren · 🎮 Oyna · 📓 Defter · 👤 Profil**
+
+Menüde "Sosyal" yazıyorsa ya da sağ altta yüzen yuvarlak bir düğme duruyorsa,
+telefon hâlâ eski paketi çalıştırıyor demektir.
+
 ## Hata yazısını nasıl okuturum
 
 Bir yere takılırsa lazım olan iki şey var:
@@ -143,5 +215,5 @@ yani Expo Go'yu açıyor. Bu normal. `wordly://` yalnızca gerçek derlemede
 | Profil | Ad ve "üye" satırı gerçek mi |
 | Ayarlar → Titreşim | Kapatınca arenada titreşim duruyor mu, kapalı kalıyor mu |
 | Bildirimler | Gerçekten senin durumunu mu anlatıyor |
-| Sosyal | Uydurma kimse yok, sadece liderlik |
+| Defter | Hata defteri menüden açılıyor mu |
 | Abonelik | Para isteyen hiçbir şey yok |
