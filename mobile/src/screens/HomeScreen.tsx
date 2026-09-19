@@ -8,20 +8,33 @@ import { Avatar } from '../components/Avatar';
 import { ProgressBar, ProgressRing } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import { COACH_CARD, DAILY_GAME, USER } from '../data/profile';
+import { DAILY_GAME } from '../data/profile';
+import { displayNameOf, greetingFor, initialOf, todayLine } from '../content/identity';
 import { grammarOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { avatarOf, initialsOf, weekEndsText } from '../content/board';
 import { fetchBoard, type Board } from '../server/leaderboard';
 import { useAuth } from '../state/AuthContext';
+import { today } from '../state/days';
 import { useGo } from '../navigation/useGo';
 import { deckProgress, tr } from '../content/progress';
 
 /** 06 · Ana Sayfa — "what should I do now?" answered in two seconds. */
 export function HomeScreen() {
   const { go } = useGo();
-  const { cefr, position, positions, xp, streak, setArenaMode } = useApp();
+  const { cefr, position, positions, xp, streak, setArenaMode, daily, mistakes } =
+    useApp();
   const { user } = useAuth();
+
+  // Selam ve altındaki satır tasarımda sabitti: "İyi akşamlar, Ali 👋" ve
+  // "Bugün 3 görevin var". Sabah altıda açan kişi de iyi akşamlar diliyordu,
+  // adı ne olursa olsun Ali'ydi ve görev sayısı hiç değişmiyordu.
+  const name = displayNameOf(
+    user?.user_metadata?.display_name as string | undefined,
+    user?.email,
+  );
+  const todayXp = daily[today()] ?? 0;
+  const mistakeCount = Object.keys(mistakes).length;
 
   /*
     Liderlik şeridi gerçek tablodan geliyor.
@@ -77,7 +90,7 @@ export function HomeScreen() {
         <View style={styles.headerLeft}>
           <View>
             <Avatar
-              initials={USER.initials}
+              initials={initialOf(name)}
               from={colors.secondary}
               to={colors.accent}
               size={44}
@@ -87,10 +100,10 @@ export function HomeScreen() {
           </View>
           <View>
             <Txt f="m" s={17} w={800}>
-              {USER.greeting}
+              {greetingFor(name)}
             </Txt>
             <Txt s={11.5} w={600} c={colors.textDim}>
-              {USER.tasks}
+              {todayLine(todayXp, streak)}
             </Txt>
           </View>
         </View>
@@ -192,24 +205,32 @@ export function HomeScreen() {
         <View style={styles.coachHead}>
           <Gradient colors={gradients.violetCyan} style={styles.coachBadge}>
             <Txt f="m" s={13} w={700}>
-              AI
+              📓
             </Txt>
           </Gradient>
           <Txt f="m" s={14.5} w={800}>
-            {COACH_CARD.title}
+            Hata defterin
           </Txt>
-          <View style={styles.coachStatus}>
-            <Txt f="mono" s={10} w={700} c={colors.accentSoft}>
-              {COACH_CARD.status}
-            </Txt>
-          </View>
+          {mistakeCount > 0 ? (
+            <View style={styles.coachStatus}>
+              <Txt f="mono" s={10} w={700} c={colors.accentSoft}>
+                {mistakeCount}
+              </Txt>
+            </View>
+          ) : null}
         </View>
+        {/* Burada "AI Koçun · HAZIR · 'Ali, dün Past Perfect'te zorlandın,
+            3 dakika birlikte pratik yapalım'" yazıyordu. Böyle bir koç yok
+            ve o cümle herkese aynı geliyordu. Koç ekranı gerçek hata
+            defterini gösteriyor; kart da artık onu anlatıyor. */}
         <Txt s={13} lh={1.5} c={colors.textBody}>
-          {COACH_CARD.message}
+          {mistakeCount > 0
+            ? `${mistakeCount} soruda yanıldın. En çok zorlandıklarınla başla.`
+            : 'Henüz yanlışın yok. Bir bölüm çöz, zorlandıkların buraya düşsün.'}
         </Txt>
         <View style={styles.coachCta}>
           <Txt f="m" s={12.5} w={700}>
-            {COACH_CARD.cta}
+            {mistakeCount > 0 ? 'Hatalarımı çalış' : 'Derse git'}
           </Txt>
         </View>
       </Press>

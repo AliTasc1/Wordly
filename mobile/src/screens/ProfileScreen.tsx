@@ -7,7 +7,8 @@ import { Card, Pill, StatTile } from '../components/Surfaces';
 import { ProgressBar, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import { DUEL_STATS, USER } from '../data/profile';
+import { displayNameOf, initialOf, memberText } from '../content/identity';
+import { useAuth } from '../state/AuthContext';
 import { useGo } from '../navigation/useGo';
 import { useApp } from '../state/AppContext';
 import { deckProgress, totals, tr } from '../content/progress';
@@ -16,6 +17,14 @@ import { deckProgress, totals, tr } from '../content/progress';
 export function ProfileScreen() {
   const { go } = useGo();
   const { positions, cefr, savedWords, xp, streak } = useApp();
+  const { user } = useAuth();
+
+  // Ad sırası: kullanıcının seçtiği ad → e-postanın yerel kısmı → "Öğrenci".
+  // Hesapsız kullanıcıya uydurma bir isim vermiyoruz.
+  const name = displayNameOf(
+    user?.user_metadata?.display_name as string | undefined,
+    user?.email,
+  );
 
   // Bu üç sayı artık tasarımdan değil, öğrencinin gerçekten gördüklerinden
   // geliyor. "Düello kazanma oranı" kaldırıldı: düello ekranı hâlâ örnek
@@ -53,29 +62,26 @@ export function ProfileScreen() {
           </Press>
         </View>
 
+        {/* Başlık tasarımda sabitti: herkes "Ali Yılmaz"dı, "@aliyilmaz · 42
+            gündür üye"ydi ve "LV 24 · ALTIN" rozetleri taşıyordu. Seviye
+            numarası ve lig diye bir şey hiç olmadı; ikisi de silindi.
+            Üyelik süresi ise gerçekten hesaplanabiliyor. */}
         <View style={styles.identity}>
-          <View>
-            <Gradient colors={gradients.violetCyan} style={styles.avatar}>
-              <Txt f="m" s={32} w={800}>
-                {USER.initials}
-              </Txt>
-            </Gradient>
-            <View style={styles.levelBadge}>
-              <Txt f="mono" s={10} w={800} c={colors.accent}>
-                {USER.levelNo}
-              </Txt>
-            </View>
-          </View>
+          <Gradient colors={gradients.violetCyan} style={styles.avatar}>
+            <Txt f="m" s={32} w={800}>
+              {initialOf(name)}
+            </Txt>
+          </Gradient>
 
           <View style={styles.flex}>
             <Txt f="m" s={23} w={800}>
-              {USER.fullName}
+              {name}
             </Txt>
             <Txt s={12} w={600} c={colors.textSubtle} style={styles.handle}>
-              {USER.handle}
+              {memberText(user?.created_at)}
             </Txt>
             <View style={styles.pills}>
-              <Pill label={USER.level} tint={colors.accent} size={10.5} style={styles.pill} />
+              <Pill label={cefr} tint={colors.accent} size={10.5} style={styles.pill} />
               <Pill
                 label={streak ? `🔥 ${streak} gün` : 'seri yok'}
                 tint={colors.warning}
@@ -139,34 +145,10 @@ export function ProfileScreen() {
           ))}
         </Card>
 
-        <Gradient
-          colors={['rgba(255,77,94,.14)', 'rgba(14,20,38,.92)']}
-          style={styles.duelStats}>
-          <View style={styles.duelHead}>
-            <Txt f="m" s={14} w={700}>
-              {DUEL_STATS.title}
-            </Txt>
-            <Txt f="mono" s={11} w={700} c={colors.errorSoft}>
-              {DUEL_STATS.matches}
-            </Txt>
-          </View>
-          <View style={styles.duelBar}>
-            <Gradient
-              deg={90}
-              colors={gradients.success}
-              style={{ width: `${DUEL_STATS.win}%` }}
-            />
-            <View style={{ width: `${DUEL_STATS.draw}%`, backgroundColor: colors.warning }} />
-            <View style={{ width: `${DUEL_STATS.loss}%`, backgroundColor: colors.error }} />
-          </View>
-          <View style={styles.duelLegend}>
-            {DUEL_STATS.legend.map((l) => (
-              <Txt key={l} s={11} w={600} c={colors.textSubtle}>
-                {l}
-              </Txt>
-            ))}
-          </View>
-        </Gradient>
+        {/* "Düello istatistikleri · 38 maç · %68 galibiyet" buradaydı.
+            Düello yazılmadı; oynanmamış maçların galibiyet oranını
+            göstermek, öğrenciye hiç yapmadığı bir şeyin karnesini
+            vermekti. */}
 
         <Press onPress={() => go('achv')} scale={0.99} style={styles.navRow}>
           <View style={styles.badgeStack}>
@@ -237,17 +219,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     boxShadow: shadows.avatar,
   },
-  levelBadge: {
-    position: 'absolute',
-    bottom: -8,
-    alignSelf: 'center',
-    paddingVertical: 4,
-    paddingHorizontal: 10,
-    borderRadius: radii.chipSm,
-    backgroundColor: colors.surfaceCard,
-    borderWidth: 1,
-    borderColor: alpha.w18,
-  },
   handle: { marginTop: 2 },
   pills: { flexDirection: 'row', gap: 7, marginTop: 9 },
   pill: { paddingVertical: 5, paddingHorizontal: 9 },
@@ -270,7 +241,11 @@ const styles = StyleSheet.create({
     padding: 16,
     gap: 10,
   },
-  duelHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  duelHead: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   duelBar: { flexDirection: 'row', height: 12, borderRadius: 9, overflow: 'hidden' },
   duelLegend: { flexDirection: 'row', gap: 14 },
   navRow: {
@@ -293,8 +268,20 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   badgeOverlap: { marginLeft: -8 },
-  badgeWarm: { backgroundColor: 'rgba(245,165,36,.2)', borderColor: 'rgba(245,165,36,.4)' },
-  badgeViolet: { backgroundColor: 'rgba(124,92,255,.2)', borderColor: 'rgba(124,92,255,.4)' },
-  badgeCyan: { backgroundColor: 'rgba(34,211,238,.2)', borderColor: 'rgba(34,211,238,.4)' },
-  badgeBlue: { backgroundColor: 'rgba(46,107,255,.2)', borderColor: 'rgba(46,107,255,.4)' },
+  badgeWarm: {
+    backgroundColor: 'rgba(245,165,36,.2)',
+    borderColor: 'rgba(245,165,36,.4)',
+  },
+  badgeViolet: {
+    backgroundColor: 'rgba(124,92,255,.2)',
+    borderColor: 'rgba(124,92,255,.4)',
+  },
+  badgeCyan: {
+    backgroundColor: 'rgba(34,211,238,.2)',
+    borderColor: 'rgba(34,211,238,.4)',
+  },
+  badgeBlue: {
+    backgroundColor: 'rgba(46,107,255,.2)',
+    borderColor: 'rgba(46,107,255,.4)',
+  },
 });

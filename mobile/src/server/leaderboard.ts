@@ -94,7 +94,21 @@ export async function setParticipation(
   }
 
   const { error } = await supabase.from('profiles').update(patch).eq('id', userId);
-  return error ? problemOf(error) : null;
+  if (error) return problemOf(error);
+
+  // Ad, oturumun kendi verisine de yazılıyor. Profil ekranı onu her açılışta
+  // ayrı bir sorguyla çekmek zorunda kalmasın diye: metadata jetonun içinde
+  // geliyor ve çevrimdışıyken de elimizde oluyor.
+  if (displayName != null) {
+    const { error: metaError } = await supabase.auth.updateUser({
+      data: { display_name: displayName.trim() },
+    });
+    // Profil satırı yazıldı; metadata yazılamadıysa ad yalnızca bir sonraki
+    // açılışta gecikmeli görünür. Kullanıcıya hata göstermeye değmez.
+    if (metaError) return null;
+  }
+
+  return null;
 }
 
 export type Participation = { optIn: boolean; displayName: string | null };
