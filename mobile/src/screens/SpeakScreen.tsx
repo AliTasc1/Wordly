@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { press } from '../audio/feel';
-import { Screen, Spacer } from '../components/Screen';
+import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { LiveWaveform, REC_WAVE, Waveform } from '../components/Waveform';
@@ -81,7 +81,95 @@ export function SpeakScreen() {
           opacity: 0.24,
           stop: 0.62,
         },
-      ]}>
+      ]}
+      footer={
+        <View style={styles.recorder}>
+          <Txt s={12} w={600} c={colors.textDim}>
+            {recorder.phase === 'recording'
+              ? `Kaydediliyor · ${clock(recorder.seconds)}`
+              : recorder.phase === 'ready'
+                ? 'Kaydın hazır — model sesle karşılaştır'
+                : recorder.phase === 'asking'
+                  ? 'Mikrofon izni bekleniyor…'
+                  : 'Cevabını yüksek sesle söyle'}
+          </Txt>
+
+          {/* Dalga artık mikrofondan geliyor: sessizlikte düzleşiyor. Eskiden
+              sabit bir desen oynuyordu ve mikrofon kapalıyken bile kıpırdayıp
+              sesin alındığına dair yanlış bir güvence veriyordu. */}
+          {recorder.phase === 'recording' ? (
+            <LiveWaveform
+              level={recorder.level}
+              tick={recorder.tick}
+              height={36}
+              style={styles.recWave}
+            />
+          ) : (
+            <Waveform heights={REC_WAVE} idle height={36} style={styles.recWave} />
+          )}
+
+          <Press
+            onPress={recorder.phase === 'recording' ? recorder.stop : recorder.start}
+            disabled={recorder.phase === 'asking'}
+            scale={0.95}
+            accessibilityRole="button"
+            accessibilityLabel={
+              recorder.phase === 'recording' ? 'Kaydı durdur' : 'Kayda başla'
+            }>
+            <Gradient
+              colors={recorder.phase === 'recording' ? gradients.danger : gradients.brand}
+              style={[
+                styles.mic,
+                recorder.phase === 'recording' ? styles.micLive : styles.micIdle,
+              ]}>
+              <Txt s={recorder.phase === 'recording' ? 24 : 28}>
+                {recorder.phase === 'recording' ? '■' : '🎙'}
+              </Txt>
+            </Gradient>
+          </Press>
+
+          {/* Kayıt varken karşılaştırma: kendi sesi ve model ses yan yana.
+              Puan vermiyoruz — konuşma tanıma servisi olmadan üretilecek her
+              sayı uydurma olurdu. Kararı öğrencinin kulağına bırakmak hem
+              dürüst hem öğretici. */}
+          {recorder.phase === 'ready' ? (
+            <View style={styles.compare}>
+              <Press onPress={recorder.playBack} style={styles.compareButton}>
+                <Txt f="m" s={12.5} w={700} c={colors.text}>
+                  ▶ Kendi sesin
+                </Txt>
+              </Press>
+              <Press onPress={sayPrompt} style={styles.compareButton}>
+                <Txt f="m" s={12.5} w={700} c={colors.accentSoft}>
+                  ▶ Model ses
+                </Txt>
+              </Press>
+              <Press onPress={recorder.discard} style={styles.compareGhost}>
+                <Txt f="m" s={12.5} w={700} c={colors.textGhost}>
+                  Tekrar dene
+                </Txt>
+              </Press>
+            </View>
+          ) : null}
+
+          {recorder.problem ? (
+            <Txt s={11} lh={1.5} c={colors.errorTint} style={styles.recNote}>
+              {recorder.problem}
+            </Txt>
+          ) : (
+            <Txt s={11} lh={1.5} c={colors.textFaint} style={styles.recNote}>
+              Otomatik telaffuz puanı henüz açık değil. Kaydını model sesle karşılaştırarak
+              çalış.
+            </Txt>
+          )}
+
+          <Press onPress={nextStep} style={styles.recAction}>
+            <Txt f="m" s={12} w={700} c={colors.textSubtle}>
+              {last ? 'Senaryoyu bitir' : 'Sonraki yönerge'}
+            </Txt>
+          </Press>
+        </View>
+      }>
       <View style={styles.header}>
         <BackButton onPress={back} strong />
         <View style={styles.flex}>
@@ -162,95 +250,6 @@ export function SpeakScreen() {
             ))}
           </View>
         ) : null}
-      </View>
-
-      <Spacer />
-
-      <View style={styles.recorder}>
-        <Txt s={12} w={600} c={colors.textDim}>
-          {recorder.phase === 'recording'
-            ? `Kaydediliyor · ${clock(recorder.seconds)}`
-            : recorder.phase === 'ready'
-              ? 'Kaydın hazır — model sesle karşılaştır'
-              : recorder.phase === 'asking'
-                ? 'Mikrofon izni bekleniyor…'
-                : 'Cevabını yüksek sesle söyle'}
-        </Txt>
-
-        {/* Dalga artık mikrofondan geliyor: sessizlikte düzleşiyor. Eskiden
-            sabit bir desen oynuyordu ve mikrofon kapalıyken bile kıpırdayıp
-            sesin alındığına dair yanlış bir güvence veriyordu. */}
-        {recorder.phase === 'recording' ? (
-          <LiveWaveform
-            level={recorder.level}
-            tick={recorder.tick}
-            height={36}
-            style={styles.recWave}
-          />
-        ) : (
-          <Waveform heights={REC_WAVE} idle height={36} style={styles.recWave} />
-        )}
-
-        <Press
-          onPress={recorder.phase === 'recording' ? recorder.stop : recorder.start}
-          disabled={recorder.phase === 'asking'}
-          scale={0.95}
-          accessibilityRole="button"
-          accessibilityLabel={
-            recorder.phase === 'recording' ? 'Kaydı durdur' : 'Kayda başla'
-          }>
-          <Gradient
-            colors={recorder.phase === 'recording' ? gradients.danger : gradients.brand}
-            style={[
-              styles.mic,
-              recorder.phase === 'recording' ? styles.micLive : styles.micIdle,
-            ]}>
-            <Txt s={recorder.phase === 'recording' ? 24 : 28}>
-              {recorder.phase === 'recording' ? '■' : '🎙'}
-            </Txt>
-          </Gradient>
-        </Press>
-
-        {/* Kayıt varken karşılaştırma: kendi sesi ve model ses yan yana.
-            Puan vermiyoruz — konuşma tanıma servisi olmadan üretilecek her
-            sayı uydurma olurdu. Kararı öğrencinin kulağına bırakmak hem
-            dürüst hem öğretici. */}
-        {recorder.phase === 'ready' ? (
-          <View style={styles.compare}>
-            <Press onPress={recorder.playBack} style={styles.compareButton}>
-              <Txt f="m" s={12.5} w={700} c={colors.text}>
-                ▶ Kendi sesin
-              </Txt>
-            </Press>
-            <Press onPress={sayPrompt} style={styles.compareButton}>
-              <Txt f="m" s={12.5} w={700} c={colors.accentSoft}>
-                ▶ Model ses
-              </Txt>
-            </Press>
-            <Press onPress={recorder.discard} style={styles.compareGhost}>
-              <Txt f="m" s={12.5} w={700} c={colors.textGhost}>
-                Tekrar dene
-              </Txt>
-            </Press>
-          </View>
-        ) : null}
-
-        {recorder.problem ? (
-          <Txt s={11} lh={1.5} c={colors.errorTint} style={styles.recNote}>
-            {recorder.problem}
-          </Txt>
-        ) : (
-          <Txt s={11} lh={1.5} c={colors.textFaint} style={styles.recNote}>
-            Otomatik telaffuz puanı henüz açık değil. Kaydını model sesle karşılaştırarak
-            çalış.
-          </Txt>
-        )}
-
-        <Press onPress={nextStep} style={styles.recAction}>
-          <Txt f="m" s={12} w={700} c={colors.textSubtle}>
-            {last ? 'Senaryoyu bitir' : 'Sonraki yönerge'}
-          </Txt>
-        </Press>
       </View>
     </Screen>
   );

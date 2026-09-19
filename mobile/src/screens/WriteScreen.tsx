@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
-import { StyleSheet, TextInput, View } from 'react-native';
-import { Screen, Spacer } from '../components/Screen';
+import { KeyboardAvoidingView, Platform, StyleSheet, TextInput, View } from 'react-native';
+import { Screen } from '../components/Screen';
 import { BackButton, Press, PrimaryButton } from '../components/Buttons';
 import { Card, Panel } from '../components/Surfaces';
 import { AnswerFeedback } from '../components/QuizOption';
@@ -109,177 +109,192 @@ export function WriteScreen() {
   };
 
   return (
-    <Screen padTop={62} gap={14}>
-      <View style={styles.header}>
-        <BackButton onPress={back} />
-        <View style={styles.flex}>
-          <Txt f="m" s={16} w={800}>
-            {item.title}
-          </Txt>
-          <Txt s={11} w={600} c={colors.textDim}>
-            {item.level} · {index + 1}/{sets.length} · {right}/{item.tasks.length} doğru
-          </Txt>
-        </View>
-      </View>
+    /*
+      Klavye koruması. Yazma ekranında iki metin kutusu var ve ikisi de
+      ekranın alt yarısında; iOS'ta klavye açılınca yazdığın satır klavyenin
+      altında kalıyordu. Eylem çubuğu alta sabitlendikten sonra "Kontrol et"
+      düğmesi de aynı yere düşecekti, yani sorun büyüyordu.
 
-      <ProgressBar
-        pct={(Math.min(asked, item.tasks.length) / item.tasks.length) * 100}
-        height={6}
-      />
-
-      {/* Setin başındaki uyarı: bu sette Türkçe konuşanı ne zorluyor.
-          Hatayı yaptıktan sonra açıklamak yerine önce söylemek, aynı hatayı
-          sekiz kez yapmasını önlüyor. */}
-      <Panel gap={6} radius={radii.panel}>
-        <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.12}>
-          BU SETTE DİKKAT
-        </Txt>
-        <Txt s={12.5} lh={1.55} c={colors.textDim}>
-          {item.focus}
-        </Txt>
-      </Panel>
-
-      {done ? (
-        <Card gap={12}>
-          <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
-            SERBEST YAZMA
-          </Txt>
-          <Txt f="m" s={16} w={700} lh={1.4}>
-            {item.compose.prompt}
-          </Txt>
-
-          <TextInput
-            value={essay}
-            onChangeText={setEssay}
-            placeholder="Buraya yaz…"
-            placeholderTextColor={colors.textGhost}
-            multiline
-            textAlignVertical="top"
-            style={[styles.input, styles.essay]}
-            accessibilityLabel="Serbest yazma alanı"
+      Giriş ekranlarında bu sarmalayıcı zaten vardı; burada unutulmuş.
+    */
+    <KeyboardAvoidingView
+      style={styles.fill}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+      <Screen
+        padTop={62}
+        gap={14}
+        footer={
+          <PrimaryButton
+            label={done ? 'Bölümü bitir' : checked ? 'Sonraki cümle' : 'Kontrol et'}
+            height={54}
+            size={15.5}
+            shadow={shadows.ctaBrand}
+            onPress={done ? finish : checked ? next : check}
           />
-
-          <Txt f="m" s={13} w={700}>
-            Kendi metnini şunlara göre kontrol et
-          </Txt>
-          {item.compose.checklist.map((line) => (
-            <View key={line} style={styles.check}>
-              <Txt s={12} c={colors.accentSoft}>
-                ☐
-              </Txt>
-              <Txt s={12.5} lh={1.5} c={colors.textDim} style={styles.flex}>
-                {line}
-              </Txt>
-            </View>
-          ))}
-
-          {/* Örnek metin puanlama değil, karşılaştırma içindir. Kısa bir
-              metni gerçekten değerlendirmek dil modeli ister ve o sunucuda
-              çalışmalı; sahte bir puan vermektense karşılaştıracak iyi bir
-              örnek vermek daha dürüst. */}
-          {showModel ? (
-            <Panel gap={6} radius={radii.input}>
-              <Txt f="mono" s={10} w={700} c={colors.successSoft} ls={0.1}>
-                ÖRNEK METİN
-              </Txt>
-              <Txt s={13.5} lh={1.6}>
-                {item.compose.model}
-              </Txt>
-              <Txt s={11.5} lh={1.5} c={colors.textFaint}>
-                Tek doğru bu değil. Seninkiyle karşılaştır: hangi cümleyi
-                farklı kurmuşsun?
-              </Txt>
-            </Panel>
-          ) : (
-            <Press
-              onPress={() => setShowModel(true)}
-              disabled={!essay.trim()}
-              accessibilityRole="button"
-              style={[styles.ghost, !essay.trim() && styles.ghostOff]}>
-              <Txt f="m" s={13} w={700} c={essay.trim() ? colors.text : colors.textGhost}>
-                {essay.trim() ? 'Örnek metni göster' : 'Önce kendi metnini yaz'}
-              </Txt>
-            </Press>
-          )}
-        </Card>
-      ) : (
-        <Card gap={12}>
-          <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
-            {asked + 1}/{item.tasks.length} · İNGİLİZCESİNİ YAZ
-          </Txt>
-          <Txt f="m" s={18} w={700} lh={1.4}>
-            {task.tr}
-          </Txt>
-
-          <TextInput
-            value={typed}
-            onChangeText={setTyped}
-            onSubmitEditing={check}
-            editable={!checked}
-            placeholder="İngilizcesi…"
-            placeholderTextColor={colors.textGhost}
-            autoCapitalize="sentences"
-            autoCorrect={false}
-            // Otomatik düzeltme kapalı: telefon "dont" yazınca düzeltirse
-            // öğrenci kendi hatasını hiç görmez.
-            returnKeyType="done"
-            style={[
-              styles.input,
-              checked && (correct ? styles.inputOk : styles.inputBad),
-            ]}
-            accessibilityLabel="Cevabını yaz"
-          />
-
-          {checked ? (
-            <AnswerFeedback
-              correct={correct}
-              title={correct ? 'Doğru! +25 XP' : `Doğrusu: ${task.answers[0]}`}
-              note={why ?? task.hint}
-              titleSize={13.5}
-              noteSize={12}
-              radius={radii.card}
-            />
-          ) : showHint ? (
-            <Panel gap={0} radius={radii.input}>
-              <Txt s={12.5} lh={1.5} c={colors.textDim}>
-                💡 {task.hint}
-              </Txt>
-            </Panel>
-          ) : (
-            <Press
-              onPress={() => setShowHint(true)}
-              accessibilityRole="button"
-              style={styles.ghost}>
-              <Txt f="m" s={12.5} w={700} c={colors.textDim}>
-                İpucu ver
-              </Txt>
-            </Press>
-          )}
-
-          {/* Birden fazla doğru varsa söyleniyor: öğrenci kendi yazdığı da
-              doğruyken "doğrusu bu" görüp kafası karışmasın. */}
-          {checked && !correct && task.answers.length > 1 ? (
-            <Txt s={11.5} lh={1.5} c={colors.textFaint}>
-              Şu da kabul edilirdi: {task.answers.slice(1).join(' · ')}
+        }>
+        <View style={styles.header}>
+          <BackButton onPress={back} />
+          <View style={styles.flex}>
+            <Txt f="m" s={16} w={800}>
+              {item.title}
             </Txt>
-          ) : null}
-        </Card>
-      )}
+            <Txt s={11} w={600} c={colors.textDim}>
+              {item.level} · {index + 1}/{sets.length} · {right}/{item.tasks.length} doğru
+            </Txt>
+          </View>
+        </View>
 
-      <Spacer />
+        <ProgressBar
+          pct={(Math.min(asked, item.tasks.length) / item.tasks.length) * 100}
+          height={6}
+        />
 
-      <PrimaryButton
-        label={done ? 'Bölümü bitir' : checked ? 'Sonraki cümle' : 'Kontrol et'}
-        height={54}
-        size={15.5}
-        shadow={shadows.ctaBrand}
-        onPress={done ? finish : checked ? next : check}
-      />
-    </Screen>
+        {/* Setin başındaki uyarı: bu sette Türkçe konuşanı ne zorluyor.
+            Hatayı yaptıktan sonra açıklamak yerine önce söylemek, aynı hatayı
+            sekiz kez yapmasını önlüyor. */}
+        <Panel gap={6} radius={radii.panel}>
+          <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.12}>
+            BU SETTE DİKKAT
+          </Txt>
+          <Txt s={12.5} lh={1.55} c={colors.textDim}>
+            {item.focus}
+          </Txt>
+        </Panel>
+
+        {done ? (
+          <Card gap={12}>
+            <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+              SERBEST YAZMA
+            </Txt>
+            <Txt f="m" s={16} w={700} lh={1.4}>
+              {item.compose.prompt}
+            </Txt>
+
+            <TextInput
+              value={essay}
+              onChangeText={setEssay}
+              placeholder="Buraya yaz…"
+              placeholderTextColor={colors.textGhost}
+              multiline
+              textAlignVertical="top"
+              style={[styles.input, styles.essay]}
+              accessibilityLabel="Serbest yazma alanı"
+            />
+
+            <Txt f="m" s={13} w={700}>
+              Kendi metnini şunlara göre kontrol et
+            </Txt>
+            {item.compose.checklist.map((line) => (
+              <View key={line} style={styles.check}>
+                <Txt s={12} c={colors.accentSoft}>
+                  ☐
+                </Txt>
+                <Txt s={12.5} lh={1.5} c={colors.textDim} style={styles.flex}>
+                  {line}
+                </Txt>
+              </View>
+            ))}
+
+            {/* Örnek metin puanlama değil, karşılaştırma içindir. Kısa bir
+                metni gerçekten değerlendirmek dil modeli ister ve o sunucuda
+                çalışmalı; sahte bir puan vermektense karşılaştıracak iyi bir
+                örnek vermek daha dürüst. */}
+            {showModel ? (
+              <Panel gap={6} radius={radii.input}>
+                <Txt f="mono" s={10} w={700} c={colors.successSoft} ls={0.1}>
+                  ÖRNEK METİN
+                </Txt>
+                <Txt s={13.5} lh={1.6}>
+                  {item.compose.model}
+                </Txt>
+                <Txt s={11.5} lh={1.5} c={colors.textFaint}>
+                  Tek doğru bu değil. Seninkiyle karşılaştır: hangi cümleyi
+                  farklı kurmuşsun?
+                </Txt>
+              </Panel>
+            ) : (
+              <Press
+                onPress={() => setShowModel(true)}
+                disabled={!essay.trim()}
+                accessibilityRole="button"
+                style={[styles.ghost, !essay.trim() && styles.ghostOff]}>
+                <Txt f="m" s={13} w={700} c={essay.trim() ? colors.text : colors.textGhost}>
+                  {essay.trim() ? 'Örnek metni göster' : 'Önce kendi metnini yaz'}
+                </Txt>
+              </Press>
+            )}
+          </Card>
+        ) : (
+          <Card gap={12}>
+            <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+              {asked + 1}/{item.tasks.length} · İNGİLİZCESİNİ YAZ
+            </Txt>
+            <Txt f="m" s={18} w={700} lh={1.4}>
+              {task.tr}
+            </Txt>
+
+            <TextInput
+              value={typed}
+              onChangeText={setTyped}
+              onSubmitEditing={check}
+              editable={!checked}
+              placeholder="İngilizcesi…"
+              placeholderTextColor={colors.textGhost}
+              autoCapitalize="sentences"
+              autoCorrect={false}
+              // Otomatik düzeltme kapalı: telefon "dont" yazınca düzeltirse
+              // öğrenci kendi hatasını hiç görmez.
+              returnKeyType="done"
+              style={[
+                styles.input,
+                checked && (correct ? styles.inputOk : styles.inputBad),
+              ]}
+              accessibilityLabel="Cevabını yaz"
+            />
+
+            {checked ? (
+              <AnswerFeedback
+                correct={correct}
+                title={correct ? 'Doğru! +25 XP' : `Doğrusu: ${task.answers[0]}`}
+                note={why ?? task.hint}
+                titleSize={13.5}
+                noteSize={12}
+                radius={radii.card}
+              />
+            ) : showHint ? (
+              <Panel gap={0} radius={radii.input}>
+                <Txt s={12.5} lh={1.5} c={colors.textDim}>
+                  💡 {task.hint}
+                </Txt>
+              </Panel>
+            ) : (
+              <Press
+                onPress={() => setShowHint(true)}
+                accessibilityRole="button"
+                style={styles.ghost}>
+                <Txt f="m" s={12.5} w={700} c={colors.textDim}>
+                  İpucu ver
+                </Txt>
+              </Press>
+            )}
+
+            {/* Birden fazla doğru varsa söyleniyor: öğrenci kendi yazdığı da
+                doğruyken "doğrusu bu" görüp kafası karışmasın. */}
+            {checked && !correct && task.answers.length > 1 ? (
+              <Txt s={11.5} lh={1.5} c={colors.textFaint}>
+                Şu da kabul edilirdi: {task.answers.slice(1).join(' · ')}
+              </Txt>
+            ) : null}
+          </Card>
+        )}
+
+      </Screen>
+    </KeyboardAvoidingView>
   );
 }
 
 const styles = StyleSheet.create({
+  fill: { flex: 1 },
   flex: { flex: 1 },
   header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
   input: {

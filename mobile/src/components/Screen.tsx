@@ -1,8 +1,16 @@
-import React from 'react';
-import { ScrollView, StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import React, { useState } from 'react';
+import {
+  LayoutChangeEvent,
+  ScrollView,
+  StyleProp,
+  StyleSheet,
+  View,
+  ViewStyle,
+} from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Glow, GlowSpec } from './Glow';
-import { colors, spacing } from '../theme/tokens';
+import { Gradient } from './Gradient';
+import { alpha, colors, spacing } from '../theme/tokens';
 
 type Props = {
   children: React.ReactNode;
@@ -22,6 +30,21 @@ type Props = {
   contentStyle?: StyleProp<ViewStyle>;
   /** Rendered above the scroll area and pinned (used by the arena timer bar). */
   background?: React.ReactNode;
+  /**
+   * Ekranın altına sabitlenen eylem çubuğu — "Sonraki soru" gibi.
+   *
+   * Önce bu düğmeler içeriğin sonundaydı ve araya `<Spacer />` konuyordu.
+   * Kısa ekranda doğru çalışıyordu: boşluk düğmeyi görüş alanının altına
+   * itiyordu. Uzun ekranda ise düğme içeriğin sonuna düşüyor, yani ekranın
+   * dışında kalıyordu. Okuma parçasını okuyan öğrenci şıkkı en üstte
+   * işaretliyor, sonra onaylamak için aşağı kaydırmak zorunda kalıyordu —
+   * her soruda, kırk soruluk seviye testinde kırk kez.
+   *
+   * Burada verilen düğme kaydırma alanının dışında, görüş alanının altına
+   * sabitleniyor. Yüksekliği ölçülüp içeriğin alt boşluğuna ekleniyor;
+   * yoksa son satır çubuğun arkasında kalır ve okunmaz.
+   */
+  footer?: React.ReactNode;
 };
 
 export function Screen({
@@ -36,12 +59,20 @@ export function Screen({
   style,
   contentStyle,
   background,
+  footer,
 }: Props) {
   const insets = useSafeAreaInsets();
   const paddingTop = Math.max(padTop, insets.top + 8);
-  const paddingBottom = tabbed
-    ? spacing.tabBar + insets.bottom
-    : padBottom + insets.bottom;
+
+  // Çubuğun yüksekliği önceden bilinemiyor: içindeki düğme tek satır da
+  // olabilir, yan yana iki düğme de. Ölçülüp içeriğin altına ekleniyor.
+  const [footerHeight, setFooterHeight] = useState(0);
+  const onFooterLayout = (event: LayoutChangeEvent) =>
+    setFooterHeight(event.nativeEvent.layout.height);
+
+  const paddingBottom =
+    (tabbed ? spacing.tabBar + insets.bottom : padBottom + insets.bottom) +
+    (footer ? footerHeight : 0);
 
   const inner: StyleProp<ViewStyle> = [
     { paddingTop, paddingHorizontal: padH, paddingBottom, gap },
@@ -63,6 +94,33 @@ export function Screen({
       ) : (
         <View style={[styles.fill, inner]}>{children}</View>
       )}
+
+      {footer ? (
+        <View
+          onLayout={onFooterLayout}
+          style={[
+            styles.footer,
+            {
+              paddingHorizontal: padH,
+              // Çubuk sekme menüsünün üstünde duruyor; tabbed ekranda menü
+              // zaten alt şeridi kaplıyor, o yüzden güvenli alan payı orada
+              // tekrar eklenmiyor.
+              paddingBottom: tabbed ? 14 : 14 + insets.bottom,
+              bottom: tabbed ? spacing.tabBar - 14 : 0,
+            },
+          ]}>
+          {/* İçerik çubuğun altından geçerken sert bir kenarla kesilmesin:
+              yukarı doğru saydamlaşan bir geçiş, altta devam eden metin
+              olduğunu da gösteriyor. */}
+          <Gradient
+            deg={180}
+            colors={['rgba(7,10,20,0)', colors.bg, colors.bg]}
+            locations={[0, 0.45, 1]}
+            style={styles.footerWash}
+          />
+          {footer}
+        </View>
+      ) : null}
     </View>
   );
 }
@@ -74,4 +132,16 @@ const styles = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.bg },
   fill: { flex: 1 },
   grow: { flexGrow: 1 },
+  footer: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    paddingTop: 14,
+    gap: 10,
+    borderTopWidth: StyleSheet.hairlineWidth,
+    borderTopColor: alpha.w06,
+  },
+  // Geçiş çubuğun üstüne taşıyor: kesme çizgisi çubuğun kendi sınırında
+  // değil, ondan 18 piksel yukarıda başlıyor.
+  footerWash: { position: 'absolute', left: 0, right: 0, bottom: 0, top: -18 },
 });

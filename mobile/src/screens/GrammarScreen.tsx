@@ -54,7 +54,18 @@ export function GrammarScreen() {
   };
 
   return (
-    <Screen padTop={62} gap={14}>
+    <Screen
+      padTop={62}
+      gap={14}
+      footer={
+        <PrimaryButton
+          label={last ? 'Sonraki bölüm · Dinleme' : 'Sonraki alıştırma'}
+          height={54}
+          size={15.5}
+          shadow={shadows.ctaBrand}
+          onPress={next}
+        />
+      }>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View style={styles.flex}>
@@ -210,13 +221,6 @@ export function GrammarScreen() {
         />
       </View>
 
-      <PrimaryButton
-        label={last ? 'Sonraki bölüm · Dinleme' : 'Sonraki alıştırma'}
-        height={54}
-        size={15.5}
-        shadow={shadows.ctaBrand}
-        onPress={next}
-      />
     </Screen>
   );
 }

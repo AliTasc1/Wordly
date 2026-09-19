@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
-import { Screen, Spacer } from '../components/Screen';
+import { Screen } from '../components/Screen';
 import { BackButton, GhostButton, PrimaryButton } from '../components/Buttons';
 import { Card, StatTile } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
@@ -69,7 +69,18 @@ export function ReadScreen() {
   };
 
   return (
-    <Screen padTop={62} gap={14}>
+    <Screen
+      padTop={62}
+      gap={14}
+      footer={
+        <PrimaryButton
+          label={last ? 'Sonraki bölüm · Konuşma' : 'Sonraki soru'}
+          height={54}
+          size={15.5}
+          shadow={shadows.ctaBrand}
+          onPress={nextQuestion}
+        />
+      }>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View style={styles.flex}>
@@ -175,16 +186,6 @@ export function ReadScreen() {
           tint={colors.warning}
         />
       </View>
-
-      <Spacer />
-
-      <PrimaryButton
-        label={last ? 'Sonraki bölüm · Konuşma' : 'Sonraki soru'}
-        height={54}
-        size={15.5}
-        shadow={shadows.ctaBrand}
-        onPress={nextQuestion}
-      />
     </Screen>
   );
 }

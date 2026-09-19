@@ -92,7 +92,30 @@ export function VocabScreen() {
   };
 
   return (
-    <Screen padTop={62} gap={14}>
+    <Screen
+      padTop={62}
+      gap={14}
+      footer={
+        <View style={styles.actions}>
+          <GhostButton
+            label="Tekrar göster"
+            height={52}
+            radius={16}
+            fill={alpha.w04}
+            onPress={onAgain}
+            style={styles.flex}
+          />
+          <PrimaryButton
+            label="Biliyorum · +10 XP"
+            height={52}
+            radius={16}
+            size={14.5}
+            shadow={shadows.ctaBrandSmall}
+            onPress={onKnown}
+            style={styles.flexWide}
+          />
+        </View>
+      }>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <ProgressBar
@@ -182,26 +205,6 @@ export function VocabScreen() {
           </Txt>
         </View>
       </Gradient>
-
-      <View style={styles.actions}>
-        <GhostButton
-          label="Tekrar göster"
-          height={52}
-          radius={16}
-          fill={alpha.w04}
-          onPress={onAgain}
-          style={styles.flex}
-        />
-        <PrimaryButton
-          label="Biliyorum · +10 XP"
-          height={52}
-          radius={16}
-          size={14.5}
-          shadow={shadows.ctaBrandSmall}
-          onPress={onKnown}
-          style={styles.flexWide}
-        />
-      </View>
 
       <View style={styles.stats}>
         <StatTile value={String(savedWords.length)} label="kaydedilen kelime" tint={colors.accent} />

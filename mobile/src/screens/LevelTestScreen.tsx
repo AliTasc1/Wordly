@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Screen, Spacer } from '../components/Screen';
+import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { PrimaryButton } from '../components/Buttons';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
@@ -63,7 +63,25 @@ export function LevelTestScreen() {
   const difficulty = LEVELS.indexOf(q.level) + 1;
 
   return (
-    <Screen padTop={70} padH={22} padBottom={26} gap={18}>
+    <Screen
+      padTop={70}
+      padH={22}
+      padBottom={26}
+      gap={18}
+      footer={
+        <PrimaryButton
+          label={
+            picked === null
+              ? 'Bir seçenek seç'
+              : last
+                ? 'Testi bitir ve seviyemi gör'
+                : 'Sonraki soru'
+          }
+          size={16}
+          disabled={picked === null}
+          onPress={next}
+        />
+      }>
       <View style={styles.header}>
         <Txt f="mono" s={12.5} w={700} c={colors.textDim}>
           SORU {index + 1} / {questions.length}
@@ -137,21 +155,6 @@ export function LevelTestScreen() {
           note={q.note}
         />
       ) : null}
-
-      <Spacer />
-
-      <PrimaryButton
-        label={
-          picked === null
-            ? 'Bir seçenek seç'
-            : last
-              ? 'Testi bitir ve seviyemi gör'
-              : 'Sonraki soru'
-        }
-        size={16}
-        disabled={picked === null}
-        onPress={next}
-      />
     </Screen>
   );
 }

@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import { Screen, Spacer } from '../components/Screen';
+import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press, PrimaryButton } from '../components/Buttons';
 import { Card } from '../components/Surfaces';
@@ -132,7 +132,18 @@ export function ListenScreen() {
   };
 
   return (
-    <Screen padTop={62} gap={14}>
+    <Screen
+      padTop={62}
+      gap={14}
+      footer={
+        <PrimaryButton
+          label={last ? 'Sonraki bölüm · Okuma' : 'Sonraki soru'}
+          height={54}
+          size={15.5}
+          shadow={shadows.ctaBrand}
+          onPress={nextQuestion}
+        />
+      }>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View style={styles.flex}>
@@ -292,16 +303,6 @@ export function ListenScreen() {
           />
         ) : null}
       </Card>
-
-      <Spacer />
-
-      <PrimaryButton
-        label={last ? 'Sonraki bölüm · Okuma' : 'Sonraki soru'}
-        height={54}
-        size={15.5}
-        shadow={shadows.ctaBrand}
-        onPress={nextQuestion}
-      />
     </Screen>
   );
 }
