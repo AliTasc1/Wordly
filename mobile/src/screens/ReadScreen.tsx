@@ -1,13 +1,14 @@
 import React, { useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
-import { BackButton, GhostButton, PrimaryButton } from '../components/Buttons';
+import { BackButton, GhostButton } from '../components/Buttons';
 import { Card, StatTile } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { GlossedText } from '../components/GlossedText';
 import { StripeArt } from '../components/StripeArt';
+import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii, shadows } from '../theme/tokens';
+import { alpha, colors, radii } from '../theme/tokens';
 import { readingOf } from '../content';
 import { artFor } from '../content/reading-art';
 import { useQuiz } from '../state/useQuiz';
@@ -73,12 +74,10 @@ export function ReadScreen() {
       padTop={62}
       gap={14}
       footer={
-        <PrimaryButton
+        <StepFooter
           label={last ? 'Sonraki bölüm · Konuşma' : 'Sonraki soru'}
-          height={54}
-          size={15.5}
-          shadow={shadows.ctaBrand}
           onPress={nextQuestion}
+          onExit={last ? back : undefined}
         />
       }>
       <View style={styles.header}>

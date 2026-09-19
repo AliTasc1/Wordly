@@ -2,11 +2,12 @@ import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
-import { BackButton, PrimaryButton, TinyButton } from '../components/Buttons';
+import { BackButton, TinyButton } from '../components/Buttons';
 import { Card } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
+import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii, shadows } from '../theme/tokens';
+import { alpha, colors, radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
@@ -58,12 +59,10 @@ export function GrammarScreen() {
       padTop={62}
       gap={14}
       footer={
-        <PrimaryButton
+        <StepFooter
           label={last ? 'Sonraki bölüm · Dinleme' : 'Sonraki alıştırma'}
-          height={54}
-          size={15.5}
-          shadow={shadows.ctaBrand}
           onPress={next}
+          onExit={last ? back : undefined}
         />
       }>
       <View style={styles.header}>

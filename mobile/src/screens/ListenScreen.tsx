@@ -2,12 +2,13 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
-import { BackButton, Press, PrimaryButton } from '../components/Buttons';
+import { BackButton, Press } from '../components/Buttons';
 import { Card } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { GlossedText } from '../components/GlossedText';
 import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
+import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import { listeningOf } from '../content';
@@ -136,12 +137,10 @@ export function ListenScreen() {
       padTop={62}
       gap={14}
       footer={
-        <PrimaryButton
+        <StepFooter
           label={last ? 'Sonraki bölüm · Okuma' : 'Sonraki soru'}
-          height={54}
-          size={15.5}
-          shadow={shadows.ctaBrand}
           onPress={nextQuestion}
+          onExit={last ? back : undefined}
         />
       }>
       <View style={styles.header}>
