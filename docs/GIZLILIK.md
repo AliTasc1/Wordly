@@ -158,15 +158,18 @@ haklarına sahipsin.
 
 | Hak | Nereden |
 |---|---|
+| **Verilerinin kopyasını alma** | **Ayarlar → Verilerimi indir** |
 | Düzeltme | Profil ve Ayarlar ekranları |
 | **Hesabı ve tüm veriyi silme** | **Ayarlar → Hesabımı sil** |
 | Liderlikten çıkma | Ayarlar → Liderlik tablosu |
 | Eşitlemeyi durdurma | Ayarlar → Çıkış yap |
 
-**Verilerinin bir kopyasını isteme (taşınabilirlik):** Şu an bunun uygulama
-içinde bir düğmesi yok. [DESTEK E-POSTA] adresine yazarsan hesabındaki tüm
-veriyi makineyle okunabilir biçimde (JSON) gönderiyoruz. Uygulama içinden
-indirme özelliği hazırlanıyor; geldiğinde bu metin güncellenecek.
+**Verilerimi indir** ne veriyor: tercihlerin, toplam XP'n, günlük çalışma
+geçmişin, her bölümde kaldığın yer, kaydettiğin kelimeler, seviye testi
+sonucun, arena skorun ve hata defterinin tamamı — makineyle okunabilir tek
+bir JSON dosyası olarak. Hesabın varsa e-posta adresin ve üyelik tarihin de
+içinde. Hesabın yoksa da çalışır; taşınabilirlik hakkı hesabı olana değil,
+verisi olana aittir.
 
 Bunların dışında bir talebin olursa [DESTEK E-POSTA] adresine yazabilirsin;
 KVKK'nın öngördüğü süre içinde (en geç 30 gün) yanıt veririz.

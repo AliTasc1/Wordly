@@ -15,8 +15,18 @@ export type PlanId = (typeof PLAN_IDS)[keyof typeof PLAN_IDS];
 // Değiştirilemeyen iki şey (arayüz dili, aksan) bilgi satırı olarak duruyor —
 // tek seçenekli bir anahtar, anahtar değildir.
 
+/**
+ * Uygulama sürümü — `app.json` ile aynı tutulmalı.
+ *
+ * Ayrı bir sabit olmasının sebebi, sürümün artık iki yere gitmesi: ekranın
+ * altındaki satır ve dışa aktarılan dosyanın başlığı. Dosyaya
+ * "WORDLY 2.4.0 · iOS 17+ / Android 11+" yazmak, sürüm alanına bir cümle
+ * koymak olurdu.
+ */
+export const APP_VERSION = '2.4.0';
+
 export const SETTINGS_FOOTER = {
   premium: { title: 'Plan', sub: 'Şu an her şey ücretsiz' },
   signOut: 'Çıkış yap',
-  version: 'WORDLY 2.4.0 · iOS 17+ / Android 11+',
+  version: `WORDLY ${APP_VERSION} · iOS 17+ / Android 11+`,
 };

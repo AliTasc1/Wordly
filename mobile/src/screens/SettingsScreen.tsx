@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Alert, StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -6,11 +6,12 @@ import { BackButton, Press } from '../components/Buttons';
 import { IconTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
-import { SETTINGS_FOOTER } from '../data/subscription';
+import { APP_VERSION, SETTINGS_FOOTER } from '../data/subscription';
 import { attribution } from '../content';
 import { useApp } from '../state/AppContext';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
+import { shareExport } from '../state/exportFile';
 
 /**
  * Eşitlemenin altındaki açıklama.
@@ -38,7 +39,7 @@ function syncNote(sync: ReturnType<typeof useApp>['sync']): string {
 export function SettingsScreen() {
   const { go } = useGo();
   const back = useBack('profile');
-  const { fire, cefr, goals, dailyTime, resetProgress, sync, haptics, setHaptics } =
+  const { fire, cefr, goals, dailyTime, resetProgress, sync, haptics, setHaptics, saved } =
     useApp();
   const { user, loading, signOut, deleteAccount } = useAuth();
 
@@ -60,6 +61,28 @@ export function SettingsScreen() {
         },
       ],
     );
+
+  // Dosya hazırlanırken düğme beklemeye alınıyor: paylaşım penceresi
+  // açılana kadar geçen sürede ikinci kez basmak, ikinci bir pencere
+  // açmaya çalışıp ikisini birden düşürüyor.
+  const [exporting, setExporting] = useState(false);
+
+  const onExport = () => {
+    if (exporting) return;
+    setExporting(true);
+    void shareExport({
+      saved,
+      account: user
+        ? { id: user.id, email: user.email ?? null, createdAt: user.created_at ?? null }
+        : null,
+      appVersion: APP_VERSION,
+      at: Date.now(),
+    })
+      .then((result) => {
+        if (!result.ok) fire('Dosya hazırlanamadı', result.problem);
+      })
+      .finally(() => setExporting(false));
+  };
 
   // Hesap silme iki adımda soruluyor. Sıfırlamada tek onay yeterli: yanlışlıkla
   // basan öğrenci ilerlemesini kaybeder ama hesabı durur. Burada dönüş yok —
@@ -420,6 +443,29 @@ export function SettingsScreen() {
           ))}
         </View>
       </View>
+
+      {/* Verilerimi indir. Hesapsızken de çalışıyor: taşınabilirlik hakkı
+          hesabı olana değil, verisi olana ait ve hesapsız kullanıcının
+          telefonunda da aylarca birikmiş bir ilerleme var. */}
+      <Press onPress={onExport} disabled={exporting} scale={0.99}>
+        <View style={styles.account}>
+          <IconTile
+            glyph="↓"
+            tint={colors.accent}
+            size={42}
+            radius={radii.card}
+            fontSize={17}
+          />
+          <View style={styles.flex}>
+            <Txt f="m" s={13.5} w={700}>
+              {exporting ? 'Dosya hazırlanıyor…' : 'Verilerimi indir'}
+            </Txt>
+            <Txt s={11.5} c={colors.textFaint} style={styles.itemSub}>
+              Tüm ilerlemen tek bir dosyada — kaydet ya da kendine gönder
+            </Txt>
+          </View>
+        </View>
+      </Press>
 
       <Press onPress={askReset} style={styles.danger}>
         <Txt f="m" s={13.5} w={700} c={colors.textDim}>

@@ -177,6 +177,14 @@ type AppValue = {
   /** Cihazdaki ilerlemeyi siler — Ayarlar'daki "ilerlemeyi sıfırla". */
   resetProgress: () => void;
 
+  /**
+   * Kaydedilen durumun tamamı — "Verilerimi indir" bunu dosyaya yazıyor.
+   *
+   * Tek tek alanları toplamak yerine bütünü veriyor: dışa aktarmanın eksik
+   * kalmaması, elde tam nesnenin olmasına bağlı.
+   */
+  saved: Saved;
+
   /** Eşitleme durumu. Hesap yoksa hepsi boş kalır, bu bir hata değil. */
   sync: {
     running: boolean;
@@ -294,11 +302,17 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     };
   }, []);
 
-  // Değişen her şeyi yaz. save() içeride geciktiriyor, bu yüzden her kart
-  // geçişinde çağrılması sorun değil.
-  useEffect(() => {
-    if (!hydrated) return;
-    const state: Saved = {
+  /*
+    Kaydedilen durumun tamamı.
+
+    Önce yalnızca kaydetme efektinin içinde kuruluyordu. "Verilerimi indir"
+    de aynı nesneye ihtiyaç duyunca ikinci bir kopya yazmak gerekecekti ve
+    iki ayrı yerde kurulan bir nesne, er geç birbirinden geride kalır:
+    `Saved`'e eklenen bir alan birine yazılır, diğerine unutulur. Tek yerde
+    kuruluyor.
+  */
+  const saved = useMemo<Saved>(
+    () => ({
       goals,
       dailyTime,
       skills,
@@ -313,27 +327,33 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       remoteDaily,
       profileAt,
       haptics,
-    };
-    save(state);
-  }, [
-    hydrated,
-    goals,
-    dailyTime,
-    skills,
-    cefr,
-    testResult,
-    positions,
-    savedWords,
-    game.arenaXp,
-    game.arenaFound,
-    game.arenaStreak,
-    xp,
-    daily,
-    mistakes,
-    remoteDaily,
-    profileAt,
-    haptics,
-  ]);
+    }),
+    [
+      goals,
+      dailyTime,
+      skills,
+      cefr,
+      testResult,
+      positions,
+      savedWords,
+      game.arenaXp,
+      game.arenaFound,
+      game.arenaStreak,
+      xp,
+      daily,
+      mistakes,
+      remoteDaily,
+      profileAt,
+      haptics,
+    ],
+  );
+
+  // Değişen her şeyi yaz. save() içeride geciktiriyor, bu yüzden her kart
+  // geçişinde çağrılması sorun değil.
+  useEffect(() => {
+    if (!hydrated) return;
+    save(saved);
+  }, [hydrated, saved]);
 
   // Uygulama arka plana alınırken bekleyen yazma hemen yapılır; aksi hâlde
   // son dersin ilerlemesi 700 ms'lik gecikmenin içinde kaybolabilir.
@@ -602,6 +622,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       haptics,
       setHaptics,
       resetProgress,
+      saved,
       sync: {
         running: syncRunning,
         at: syncAt,
@@ -630,6 +651,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       forgetMistake,
       award,
       resetProgress,
+      saved,
       touchProfile,
       syncRunning,
       syncAt,
