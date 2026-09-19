@@ -204,6 +204,13 @@ aynı Wi-Fi şartı kalkıyor. Terminalde çıkan QR'ın ekran görüntüsünü 
 `exp://…` ile başlayan adresi gönder. Karşı taraf yalnızca **Expo Go**
 kuruyor, QR'ı okutuyor ya da adresi Expo Go'daki kutuya yapıştırıyor.
 
+Tünel için gereken `@expo/ngrok` paketi `devDependencies` içinde duruyor,
+yani `npm ci` ile zaten geliyor. Expo bunu bulamadığında kendisi global
+kurmayı öneriyor ama kurduktan sonra çoğu Windows kurulumunda hâlâ
+bulamıyor ve `CommandError: Install @expo/ngrok@^4.1.0 and try again`
+diyor — global npm klasörü çözümleme yolunda olmadığı için. Projeye
+yerel kurulu olması bu döngüyü tamamen kapatıyor.
+
 Bedeli: senin bilgisayarın açık ve terminal çalışır durumda kalmalı. İlk
 yükleme yerel ağdan yavaştır.
 
