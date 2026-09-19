@@ -32,12 +32,12 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
         onPress={() => go('coach')}
         scale={0.94}
         accessibilityRole="button"
-        accessibilityLabel="AI Koç"
+        accessibilityLabel="Hata defteri"
         style={[styles.fabWrap, { bottom: bottomPad + 74 }]}>
         <Gradient colors={gradients.violetCyan} style={styles.fab}>
-          <Txt f="m" s={15} w={800}>
-            AI
-          </Txt>
+          {/* Rozet "AI" diyordu ama düğme gerçek hata defterini açıyor;
+              öyle bir koç hiç olmadı. */}
+          <Txt s={17}>📓</Txt>
         </Gradient>
       </Press>
 
@@ -96,7 +96,13 @@ const styles = StyleSheet.create({
     borderTopColor: alpha.w08,
     overflow: 'hidden',
   },
-  item: { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 4, paddingVertical: 8 },
+  item: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 4,
+    paddingVertical: 8,
+  },
   icon: { lineHeight: 22 },
   dot: { position: 'absolute', top: 2, width: 22, height: 3, borderRadius: 9 },
   fabWrap: { position: 'absolute', right: 16 },

@@ -6,7 +6,7 @@ import { BackButton, Press } from '../components/Buttons';
 import { IconTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
-import { SETTING_GROUPS, SETTINGS_FOOTER } from '../data/subscription';
+import { SETTINGS_FOOTER } from '../data/subscription';
 import { attribution } from '../content';
 import { useApp } from '../state/AppContext';
 import { useAuth } from '../state/AuthContext';
@@ -38,7 +38,8 @@ function syncNote(sync: ReturnType<typeof useApp>['sync']): string {
 export function SettingsScreen() {
   const { go } = useGo();
   const back = useBack('profile');
-  const { fire, cefr, resetProgress, sync } = useApp();
+  const { fire, cefr, goals, dailyTime, resetProgress, sync, haptics, setHaptics } =
+    useApp();
   const { user, loading, signOut } = useAuth();
 
   // Silme geri alınamıyor, o yüzden onay isteniyor. Yıkıcı işlem tek
@@ -206,51 +207,148 @@ export function SettingsScreen() {
         </Gradient>
       </Press>
 
-      {SETTING_GROUPS.map((group) => (
-        <View key={group.name} style={styles.group}>
-          <Txt
-            f="mono"
-            s={10}
-            w={700}
-            c={colors.textDisabled}
-            ls={0.14}
-            style={styles.groupName}>
-            {group.name}
-          </Txt>
-          <View style={styles.groupBody}>
-            {group.items.map((item, i) => (
-              <Press
-                key={item.name}
-                onPress={() => fire(item.name, SETTINGS_FOOTER.settingToast)}
-                scale={0.995}
-                style={[styles.item, i < group.items.length - 1 && styles.itemDivider]}>
-                <IconTile
-                  glyph={item.glyph}
-                  tint={item.tint}
-                  size={36}
-                  radius={12}
-                  fontSize={15}
-                />
-                <View style={styles.flex}>
-                  <Txt f="m" s={13} w={700}>
-                    {item.name}
-                  </Txt>
-                  <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
-                    {item.sub}
-                  </Txt>
-                </View>
-                <Txt
-                  f="mono"
-                  s={11}
-                  w={700}
-                  c={item.value === 'Kapalı' ? colors.textGhost : colors.textDim}>
-                  {item.name === 'Seviye' ? cefr : item.value}
-                </Txt>
-              </Press>
-            ))}
+      {/* Ayar satırları. Hepsi ya bir yere götürüyor ya bir şeyi
+          değiştiriyor: eskiden on üç satır vardı ve hiçbiri bir şey
+          yapmıyordu, dokununca "demo" diyordu. */}
+      <View style={styles.group}>
+        <Txt
+          f="mono"
+          s={10}
+          w={700}
+          c={colors.textDisabled}
+          ls={0.14}
+          style={styles.groupName}>
+          ÖĞRENME
+        </Txt>
+        <View style={styles.groupBody}>
+          <Press
+            onPress={() => go('test')}
+            scale={0.995}
+            style={[styles.item, styles.itemDivider]}>
+            <IconTile
+              glyph="📊"
+              tint={colors.accent}
+              size={36}
+              radius={12}
+              fontSize={15}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13} w={700}>
+                Seviye
+              </Txt>
+              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                Yeniden test et
+              </Txt>
+            </View>
+            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+              {cefr}
+            </Txt>
+          </Press>
+
+          <Press onPress={() => go('goal')} scale={0.995} style={styles.item}>
+            <IconTile
+              glyph="🎯"
+              tint={colors.secondary}
+              size={36}
+              radius={12}
+              fontSize={15}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13} w={700}>
+                Hedefler
+              </Txt>
+              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                {goals.join(', ')} · {dailyTime}/gün
+              </Txt>
+            </View>
+            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+              Değiştir
+            </Txt>
+          </Press>
+        </View>
+      </View>
+
+      <View style={styles.group}>
+        <Txt
+          f="mono"
+          s={10}
+          w={700}
+          c={colors.textDisabled}
+          ls={0.14}
+          style={styles.groupName}>
+          UYGULAMA
+        </Txt>
+        <View style={styles.groupBody}>
+          <Press
+            onPress={() => setHaptics(!haptics)}
+            scale={0.995}
+            accessibilityRole="switch"
+            accessibilityState={{ checked: haptics }}
+            style={[styles.item, styles.itemDivider]}>
+            <IconTile
+              glyph="📳"
+              tint={colors.secondary}
+              size={36}
+              radius={12}
+              fontSize={15}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13} w={700}>
+                Titreşim
+              </Txt>
+              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                Harf seçimi ve cevap dönüşü
+              </Txt>
+            </View>
+            <Txt f="mono" s={11} w={700} c={haptics ? colors.success : colors.textGhost}>
+              {haptics ? 'Açık' : 'Kapalı'}
+            </Txt>
+          </Press>
+
+          {/* Bilgi satırları: tek seçenekli bir anahtar, anahtar değildir. */}
+          <View style={[styles.item, styles.itemDivider]}>
+            <IconTile
+              glyph="🌍"
+              tint={colors.primary}
+              size={36}
+              radius={12}
+              fontSize={15}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13} w={700}>
+                Arayüz dili
+              </Txt>
+              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                Şu an yalnızca Türkçe
+              </Txt>
+            </View>
+            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+              TR
+            </Txt>
+          </View>
+
+          <View style={styles.item}>
+            <IconTile
+              glyph="🎧"
+              tint={colors.accent}
+              size={36}
+              radius={12}
+              fontSize={15}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13} w={700}>
+                Aksan
+              </Txt>
+              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                İçeriğin tamamı Amerikan yazımında
+              </Txt>
+            </View>
+            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+              US
+            </Txt>
           </View>
         </View>
-      ))}
+      </View>
 
       {/*
         LICENSES.md, kelime listesinin ve telaffuz verisinin üçüncü taraf

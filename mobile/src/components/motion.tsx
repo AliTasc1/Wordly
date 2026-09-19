@@ -117,65 +117,6 @@ export function PopIn({
   );
 }
 
-/** `@keyframes wpulse` — the slow breathing halo behind the logo and dots. */
-export function Pulse({
-  children,
-  duration = 3200,
-  from = 0.35,
-  to = 0.8,
-  scaleTo = 1.06,
-  style,
-}: {
-  children: React.ReactNode;
-  duration?: number;
-  from?: number;
-  to?: number;
-  scaleTo?: number;
-  style?: StyleProp<ViewStyle>;
-}) {
-  const reduce = useReduceMotion();
-  const anim = useRef(new Animated.Value(0)).current;
-
-  useEffect(() => {
-    if (reduce) return;
-    const loop = Animated.loop(
-      Animated.sequence([
-        Animated.timing(anim, {
-          toValue: 1,
-          duration: duration / 2,
-          easing: Easing.inOut(Easing.ease),
-          useNativeDriver: true,
-        }),
-        Animated.timing(anim, {
-          toValue: 0,
-          duration: duration / 2,
-          easing: Easing.inOut(Easing.ease),
-          useNativeDriver: true,
-        }),
-      ]),
-    );
-    loop.start();
-    return () => loop.stop();
-  }, [anim, duration, reduce]);
-
-  if (reduce) return <View style={style}>{children}</View>;
-
-  return (
-    <Animated.View
-      style={[
-        style,
-        {
-          opacity: anim.interpolate({ inputRange: [0, 1], outputRange: [from, to] }),
-          transform: [
-            { scale: anim.interpolate({ inputRange: [0, 1], outputRange: [1, scaleTo] }) },
-          ],
-        },
-      ]}>
-      {children}
-    </Animated.View>
-  );
-}
-
 /** `@keyframes wspin` — the small loading ring on the splash screen. */
 export function Spinner({ size = 14, color = colors.primary }: { size?: number; color?: string }) {
   const reduce = useReduceMotion();

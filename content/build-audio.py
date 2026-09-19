@@ -209,7 +209,7 @@ def synthesize(clip: Clip, key: str, voices: list[str]) -> None:
 INDEX = ROOT.parent / "mobile" / "src" / "audio" / "clips.ts"
 
 
-def write_index() -> int:
+def write_index(with_words: bool = False) -> int:
     """Uygulamanın okuyacağı require() tablosunu üretir.
 
     Metro varlıkları derleme anında çözer, yani her dosya için kaynakta
@@ -249,12 +249,49 @@ def write_index() -> int:
             f"require('../../assets/audio/listening/{name}/{f}')" for f in files
         )
         lines.append(f"  '{name}': [{refs}],")
+    # Kelime telaffuzları — ÖNTANIMLI OLARAK KAPALI.
+    #
+    # Ölçüldü ve bağlanmadı. 9.461 ayrı varlık çağrısının bedeli:
+    #
+    #   JS paketi     8,28 MB → 11,13 MB   (+%34)
+    #   Varlıklar     33 MB   → 95 MB      (+62 MB)
+    #   Varlık sayısı 1.998   → 11.379
+    #
+    # Karşılığında alınan şey tek kelimelik telaffuz; cihazın kendi TTS'i onu
+    # zaten çevrimdışı ve bedava yapıyor, IPA da kartın üzerinde yazılı.
+    # +62 MB indirme ve her açılışta %34 daha büyük paket, bu kazanç için
+    # ağır. Dosyalar depoda duruyor: ileride uygulamaya gömmek yerine
+    # sunucudan indirilip cihazda önbelleğe alınabilir.
+    #
+    # `--with-words` ile açılıyor; ölçümü tekrarlamak isteyen için.
+    words: dict[str, str] = {}
+    word_root = OUT / "vocab"
+    if with_words and word_root.is_dir():
+        for level_dir in sorted(word_root.iterdir()):
+            if not level_dir.is_dir():
+                continue
+            for mp3 in sorted(level_dir.glob("*.mp3")):
+                words[f"{level_dir.name}/{mp3.stem}"] = f"{level_dir.name}/{mp3.name}"
+
+    lines += [
+        "};",
+        "",
+        "/** Kelime telaffuzları — anahtar `seviye/slug`. */",
+        "export const WORDS: Record<string, number> = {",
+    ]
+    for key, rel in words.items():
+        lines.append(f"  '{key}': require('../../assets/audio/vocab/{rel}'),")
     lines += [
         "};",
         "",
         "/** Bir diyaloğun replik sesleri; üretilmemişse null. */",
         "export function clipsFor(id: string): number[] | null {",
         "  return CLIPS[id] ?? null;",
+        "}",
+        "",
+        "/** Bir kelimenin telaffuzu; üretilmemişse null. */",
+        "export function wordClip(level: string, slug: string): number | null {",
+        "  return WORDS[`${level.toLowerCase()}/${slug}`] ?? null;",
         "}",
         "",
     ]
@@ -289,6 +326,11 @@ def main() -> int:
     parser.add_argument("--level", choices=LEVELS + ["all"], default="all")
     parser.add_argument("--limit", type=int, default=0, help="en fazla kaç parça üretilsin")
     parser.add_argument("--index-only", action="store_true", help="yalnızca clips.ts üret")
+    parser.add_argument(
+        "--with-words",
+        action="store_true",
+        help="kelime seslerini de dizine ekle (paket +62 MB; yukarıdaki nota bak)",
+    )
     args = parser.parse_args()
 
     levels = LEVELS if args.level == "all" else [args.level]
@@ -299,7 +341,7 @@ def main() -> int:
         clips += vocab_clips(levels)
 
     if args.index_only:
-        print(f"{write_index()} dosya dizine yazıldı → {INDEX}")
+        print(f"{write_index(args.with_words)} dosya dizine yazıldı → {INDEX}")
         return 0
 
     pending = [c for c in clips if not c.path.exists()]
@@ -347,7 +389,7 @@ def main() -> int:
         if i % 25 == 0 or i == len(todo):
             print(f"  {i}/{len(todo)}")
 
-    count = write_index()
+    count = write_index(args.with_words)
     print(f"\n{count} dosya hazır → {OUT}")
     return 0
 

@@ -162,7 +162,16 @@ export const CLIPS: Record<string, number[]> = {
   'c2-l-25': [require('../../assets/audio/listening/c2-l-25/00.mp3'), require('../../assets/audio/listening/c2-l-25/01.mp3'), require('../../assets/audio/listening/c2-l-25/02.mp3'), require('../../assets/audio/listening/c2-l-25/03.mp3'), require('../../assets/audio/listening/c2-l-25/04.mp3'), require('../../assets/audio/listening/c2-l-25/05.mp3'), require('../../assets/audio/listening/c2-l-25/06.mp3'), require('../../assets/audio/listening/c2-l-25/07.mp3'), require('../../assets/audio/listening/c2-l-25/08.mp3'), require('../../assets/audio/listening/c2-l-25/09.mp3'), require('../../assets/audio/listening/c2-l-25/10.mp3'), require('../../assets/audio/listening/c2-l-25/11.mp3'), require('../../assets/audio/listening/c2-l-25/12.mp3'), require('../../assets/audio/listening/c2-l-25/13.mp3'), require('../../assets/audio/listening/c2-l-25/14.mp3'), require('../../assets/audio/listening/c2-l-25/15.mp3')],
 };
 
+/** Kelime telaffuzları — anahtar `seviye/slug`. */
+export const WORDS: Record<string, number> = {
+};
+
 /** Bir diyaloğun replik sesleri; üretilmemişse null. */
 export function clipsFor(id: string): number[] | null {
   return CLIPS[id] ?? null;
+}
+
+/** Bir kelimenin telaffuzu; üretilmemişse null. */
+export function wordClip(level: string, slug: string): number | null {
+  return WORDS[`${level.toLowerCase()}/${slug}`] ?? null;
 }

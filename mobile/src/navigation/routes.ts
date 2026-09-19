@@ -23,19 +23,13 @@ export type ScreenId =
   | 'coach'
   | 'play'
   | 'arena'
-  | 'duel'
   | 'board'
   | 'social'
-  | 'post'
-  | 'friends'
-  | 'clubs'
-  | 'club'
   | 'notif'
   | 'profile'
   | 'achv'
   | 'stats'
   | 'sub'
-  | 'paywall'
   | 'settings'
   | 'tokens'
   | 'empty'
@@ -71,8 +65,6 @@ export const TARGETS: Record<ScreenId, Target> = {
   lesson: { tab: 'LearnTab', screen: 'Lesson' },
   play: { tab: 'PlayTab', screen: 'Play' },
   social: { tab: 'SocialTab', screen: 'Social' },
-  friends: { tab: 'SocialTab', screen: 'Friends' },
-  clubs: { tab: 'SocialTab', screen: 'Clubs' },
   profile: { tab: 'ProfileTab', screen: 'Profile' },
   achv: { tab: 'ProfileTab', screen: 'Achievements' },
   stats: { tab: 'ProfileTab', screen: 'Stats' },
@@ -86,12 +78,8 @@ export const TARGETS: Record<ScreenId, Target> = {
   speak: { root: 'Speak' },
   write: { root: 'Write' },
   arena: { root: 'Arena' },
-  duel: { root: 'Duel' },
   board: { root: 'Leaderboard' },
-  post: { root: 'Post' },
-  club: { root: 'ClubDetail' },
   notif: { root: 'Notifications' },
-  paywall: { root: 'Paywall' },
   tokens: { root: 'DesignTokens' },
   empty: { root: 'EmptyStates' },
   errors: { root: 'ErrorStates' },

@@ -8,7 +8,6 @@ import React, {
   useState,
 } from 'react';
 import { AppState } from 'react-native';
-import { PLAN_IDS, PlanId } from '../data/subscription';
 import { CefrLevel } from '../data/curriculum';
 import {
   clear,
@@ -30,6 +29,7 @@ import { useAuth } from './AuthContext';
 import { syncOnce } from '../server/sync';
 import type { DefaultProfile, LocalState } from '../server/merge';
 import type { ArenaMode } from '../content/arena-game';
+import { setHapticsEnabled } from '../audio/feel';
 
 /** Uygulama açıkken eşitleme aralığı. */
 const SYNC_EVERY_MS = 5 * 60 * 1000;
@@ -132,8 +132,6 @@ type AppValue = {
   toggleFollowing: () => void;
   joinedClub: boolean;
   toggleJoinedClub: () => void;
-  plan: PlanId;
-  setPlan: (p: PlanId) => void;
 
   /**
    * Kazanılan toplam XP ve kesintisiz çalışma serisi (gün).
@@ -171,6 +169,10 @@ type AppValue = {
    */
   arenaMode: ArenaMode;
   setArenaMode: (mode: ArenaMode) => void;
+
+  /** Titreşim açık mı. Ayarlardaki anahtar bunu gerçekten değiştiriyor. */
+  haptics: boolean;
+  setHaptics: (on: boolean) => void;
 
   /** Cihazdaki ilerlemeyi siler — Ayarlar'daki "ilerlemeyi sıfırla". */
   resetProgress: () => void;
@@ -245,8 +247,15 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [liked, setLiked] = useState(false);
   const [following, setFollowing] = useState(false);
   const [joinedClub, setJoinedClub] = useState(true);
-  const [plan, setPlan] = useState<PlanId>(PLAN_IDS.yearly);
+  // `plan` durumu buradaydı ("yearly" varsayılanıyla). Hiçbir şeyi
+  // kilitlemiyordu ve hiçbir ekran okumuyordu: ödeme altyapısı gelince,
+  // yetkiyi mağazadan okuyan gerçek hâliyle geri gelecek.
   const [arenaMode, setArenaMode] = useState<ArenaMode>('time');
+  const [haptics, setHaptics] = useState(EMPTY.haptics);
+
+  // Titreşim çağrıları bileşenlerin dışından da geliyor; ayar modül düzeyinde
+  // bir bayrağa kopyalanıyor.
+  useEffect(() => setHapticsEnabled(haptics), [haptics]);
 
   const toggle =
     (setter: React.Dispatch<React.SetStateAction<string[]>>) => (value: string) =>
@@ -271,6 +280,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setRemoteDaily(saved.remoteDaily);
       setMistakes(saved.mistakes);
       setProfileAt(saved.profileAt);
+      setHaptics(saved.haptics);
       setGame((g) => ({
         ...g,
         arenaXp: saved.arena.xp,
@@ -302,6 +312,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       mistakes,
       remoteDaily,
       profileAt,
+      haptics,
     };
     save(state);
   }, [
@@ -321,6 +332,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     mistakes,
     remoteDaily,
     profileAt,
+    haptics,
   ]);
 
   // Uygulama arka plana alınırken bekleyen yazma hemen yapılır; aksi hâlde
@@ -380,6 +392,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setPositions({});
     setSavedWords([]);
     setProfileAt(0);
+    setHaptics(EMPTY.haptics);
     setGame((g) => ({ ...g, arenaXp: 0, arenaFound: 0, arenaStreak: 0, combo: 1 }));
   }, []);
 
@@ -577,8 +590,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       toggleFollowing: () => setFollowing((v) => !v),
       joinedClub,
       toggleJoinedClub: () => setJoinedClub((v) => !v),
-      plan,
-      setPlan,
       xp: xpTotal,
       streak: streakOf(Object.keys(dailyTotal)),
       daily: dailyTotal,
@@ -588,6 +599,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       award,
       arenaMode,
       setArenaMode,
+      haptics,
+      setHaptics,
       resetProgress,
       sync: {
         running: syncRunning,
@@ -610,7 +623,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       liked,
       following,
       joinedClub,
-      plan,
       xpTotal,
       dailyTotal,
       mistakes,

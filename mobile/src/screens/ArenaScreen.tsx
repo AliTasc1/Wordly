@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import * as Haptics from 'expo-haptics';
+import { bad, ok, tap } from '../audio/feel';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Glow } from '../components/Glow';
@@ -77,7 +77,7 @@ export function ArenaScreen() {
 
   const tapLetter = (index: number) => {
     if (picked.includes(index) || ready) return;
-    Haptics.selectionAsync();
+    tap();
     setPicked((p) => [...p, index]);
   };
 
@@ -85,7 +85,7 @@ export function ArenaScreen() {
     if (!ready || state.over) return;
     if (word === puzzle.target) {
       const gained = rewardFor(state);
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      ok();
       setState(onSolved);
       arenaSolved(gained);
       award(gained);
@@ -93,7 +93,7 @@ export function ArenaScreen() {
       setRound((r) => r + 1);
       fire(`${puzzle.target} · +${gained} XP`, 'Kombo büyüdü');
     } else {
-      Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      bad();
       setState(onMissed);
       arenaMissed();
       setPicked([]);

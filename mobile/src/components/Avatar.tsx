@@ -45,17 +45,6 @@ export function Avatar({
 }
 
 /** Online/offline dot anchored to an avatar's corner. */
-export function PresenceDot({ online, ring = colors.surface }: { online: boolean; ring?: string }) {
-  return (
-    <View
-      style={[
-        styles.dot,
-        { backgroundColor: online ? colors.success : colors.textDisabled, borderColor: ring },
-      ]}
-    />
-  );
-}
-
 const styles = StyleSheet.create({
   dot: {
     position: 'absolute',

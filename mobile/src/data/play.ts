@@ -3,15 +3,6 @@
 import { colors } from '../theme/tokens';
 import type { ScreenId } from '../navigation/routes';
 
-export type GameMode = {
-  glyph: string;
-  name: string;
-  sub: string;
-  tag: string;
-  tint: string;
-  target: ScreenId;
-};
-
 /*
   Mod listesi `content/arena-game.ts` içindeki MODE_LIST'ten geliyor.
 

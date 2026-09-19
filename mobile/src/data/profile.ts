@@ -29,84 +29,12 @@ export const DAILY_GAME = {
 // sabit değerlerden geliyordu. Hepsi artık gerçek ilerlemeden hesaplanıyor:
 // bkz. content/achievements.ts ve content/stats.ts.
 
-export type NotificationItem = {
-  glyph: string;
-  title: string;
-  text: string;
-  kind: string;
-  tint: string;
-  time: string;
-  unread: boolean;
-  target: ScreenId;
-};
+// NOTIFICATIONS buradaydı: altı sabit satır ve üçü var olmayan özelliklere
+// aitti — düello daveti, kulüp turnuvası, "AI Koç yeni plan hazırladı".
+// Bildirimler artık öğrencinin kendi durumundan türetiliyor
+// (content/alerts.ts) ve gösterecek bir şey yoksa liste boş kalıyor.
 
-export const NOTIFICATIONS: NotificationItem[] = [
-  {
-    glyph: '⚔',
-    title: 'Gözde seni düelloya çağırdı',
-    text: '"Skorumu geç." · Altın Lig',
-    kind: 'DÜELLO',
-    tint: colors.error,
-    time: '2 dk',
-    unread: true,
-    target: 'duel',
-  },
-  {
-    glyph: '🏅',
-    title: 'Başarım açıldı',
-    text: '“1.000 Kelime” rozeti koleksiyonunda',
-    kind: 'BAŞARIM',
-    tint: colors.warning,
-    time: '1 sa',
-    unread: true,
-    target: 'achv',
-  },
-  {
-    glyph: '🔥',
-    title: 'Serini koru',
-    text: 'Bugün 120 XP daha gerek',
-    kind: 'SERİ',
-    tint: colors.warning,
-    time: '3 sa',
-    unread: false,
-    target: 'home',
-  },
-  {
-    glyph: '🤖',
-    title: 'AI Koç yeni plan hazırladı',
-    text: 'Past Perfect · 3 dakika',
-    kind: 'KOÇ',
-    tint: colors.secondary,
-    time: '5 sa',
-    unread: false,
-    target: 'coach',
-  },
-  {
-    glyph: '🏛',
-    title: 'Developers English',
-    text: 'Haftalık turnuva 2 gün sonra',
-    kind: 'KULÜP',
-    tint: colors.success,
-    time: 'Dün',
-    unread: false,
-    target: 'club',
-  },
-  {
-    glyph: '📈',
-    title: 'Haftalık raporun hazır',
-    text: '+%18 XP · konuşma gelişti',
-    kind: 'RAPOR',
-    tint: colors.primary,
-    time: '2 gün',
-    unread: false,
-    target: 'stats',
-  },
-];
-
-/** The four micro-interaction toasts the design exposes as triggers. */
-export const FX = {
-  xp: { title: '+50 XP kazanıldı', note: 'Günlük hedefe 120 XP kaldı' },
-  level: { title: 'Seviye 24 → 25', note: 'Yeni ünite kilidi açıldı' },
-  streak: { title: '🔥 Seri 43 güne çıktı', note: 'En uzun serine 5 gün kaldı' },
-  achievement: { title: 'Başarım açıldı', note: '“1.000 Kelime” rozeti koleksiyonunda' },
-};
+// FX buradaydı: dört sahte bildirim tetikleyicisi ("+50 XP kazanıldı",
+// "Seviye 24 → 25", "Seri 43 güne çıktı"). Sosyal, abonelik ve bildirim
+// ekranlarındaki düğmelere bağlıydılar; hiçbiri gerçek bir olaya karşılık
+// gelmiyordu. O düğmeler de o ekranlar da artık yok.

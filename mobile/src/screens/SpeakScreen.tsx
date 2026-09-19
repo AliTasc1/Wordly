@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import * as Haptics from 'expo-haptics';
+import { press } from '../audio/feel';
 import { Screen, Spacer } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
@@ -49,7 +49,7 @@ export function SpeakScreen() {
 
   /** Bulunulan yönergenin model okunuşu — kendi kaydıyla karşılaştırmak için. */
   const sayPrompt = () => {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
+    press();
     speakLine(item.prompts[step], { level: item.level });
   };
 

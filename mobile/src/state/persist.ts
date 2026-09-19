@@ -100,6 +100,14 @@ export type Saved = {
    * iki dolu profilden hangisinin yeni olduğu bilinemez.
    */
   profileAt: number;
+  /**
+   * Titreşim açık mı.
+   *
+   * Ayarlardaki anahtar eskiden yalnızca "Açık" yazan bir etiketti; dokununca
+   * "demo" diyen bir bildirim çıkıyordu. Artık gerçekten kapatıyor ve kapalı
+   * kalıyor.
+   */
+  haptics: boolean;
 };
 
 /** Kayıt yoksa ya da okunamazsa uygulama bu değerlerle açılır. */
@@ -117,6 +125,7 @@ export const EMPTY: Saved = {
   mistakes: {},
   remoteDaily: {},
   profileAt: 0,
+  haptics: true,
 };
 
 /**
@@ -170,6 +179,7 @@ export async function load(): Promise<Saved> {
       // bedeli, ikinci cihazda varsayılanların kazanması olurdu ama onu
       // `merge` ayrıca eliyor (varsayılan profil hiçbir zaman kazanmaz).
       profileAt: typeof saved.profileAt === 'number' ? saved.profileAt : Date.now(),
+      haptics: typeof saved.haptics === 'boolean' ? saved.haptics : true,
     };
   } catch {
     return EMPTY;

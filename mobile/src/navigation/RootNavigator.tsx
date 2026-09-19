@@ -16,8 +16,6 @@ import { CourseMapScreen } from '../screens/CourseMapScreen';
 import { LessonScreen } from '../screens/LessonScreen';
 import { PlayScreen } from '../screens/PlayScreen';
 import { SocialScreen } from '../screens/SocialScreen';
-import { FriendsScreen } from '../screens/FriendsScreen';
-import { ClubsScreen } from '../screens/ClubsScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
 import { AchievementsScreen } from '../screens/AchievementsScreen';
 import { StatsScreen } from '../screens/StatsScreen';
@@ -30,12 +28,8 @@ import { ReadScreen } from '../screens/ReadScreen';
 import { SpeakScreen } from '../screens/SpeakScreen';
 import { WriteScreen } from '../screens/WriteScreen';
 import { ArenaScreen } from '../screens/ArenaScreen';
-import { DuelScreen } from '../screens/DuelScreen';
 import { LeaderboardScreen } from '../screens/LeaderboardScreen';
-import { PostScreen } from '../screens/PostScreen';
-import { ClubDetailScreen } from '../screens/ClubDetailScreen';
 import { NotificationsScreen } from '../screens/NotificationsScreen';
-import { PaywallScreen } from '../screens/PaywallScreen';
 import { DesignTokensScreen } from '../screens/DesignTokensScreen';
 import { EmptyStatesScreen } from '../screens/EmptyStatesScreen';
 import { ErrorStatesScreen } from '../screens/ErrorStatesScreen';
@@ -79,8 +73,6 @@ const PlayStack = () => (
 const SocialStack = () => (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Social" component={SocialScreen} />
-    <Stack.Screen name="Friends" component={FriendsScreen} />
-    <Stack.Screen name="Clubs" component={ClubsScreen} />
   </Stack.Navigator>
 );
 
@@ -143,16 +135,8 @@ export function RootNavigator() {
       <Stack.Screen name="Speak" component={SpeakScreen} />
       <Stack.Screen name="Write" component={WriteScreen} />
       <Stack.Screen name="Arena" component={ArenaScreen} />
-      <Stack.Screen name="Duel" component={DuelScreen} />
       <Stack.Screen name="Leaderboard" component={LeaderboardScreen} />
-      <Stack.Screen name="Post" component={PostScreen} />
-      <Stack.Screen name="ClubDetail" component={ClubDetailScreen} />
       <Stack.Screen name="Notifications" component={NotificationsScreen} />
-      <Stack.Screen
-        name="Paywall"
-        component={PaywallScreen}
-        options={{ presentation: 'modal' }}
-      />
 
       <Stack.Screen name="SignIn" component={SignInScreen} />
       <Stack.Screen name="SignUp" component={SignUpScreen} />

@@ -216,50 +216,6 @@ export function ColumnChart({
 }
 
 /** Radar chart behind the level-test result. */
-export function SkillRadar({ size = 148 }: { size?: number }) {
-  return (
-    <Svg viewBox="0 0 200 200" width={size} height={size}>
-      <Defs>
-        <SvgGradient id="radar" x1="0" y1="0" x2="1" y2="1">
-          <Stop offset="0" stopColor={colors.primary} stopOpacity={0.28} />
-          <Stop offset="1" stopColor={colors.secondary} stopOpacity={0.28} />
-        </SvgGradient>
-      </Defs>
-      <Polygon
-        points="100,12 176,56 176,144 100,188 24,144 24,56"
-        fill="none"
-        stroke="rgba(255,255,255,.1)"
-      />
-      <Polygon
-        points="100,56 138,78 138,122 100,144 62,122 62,78"
-        fill="none"
-        stroke="rgba(255,255,255,.08)"
-      />
-      <Polygon
-        points="100,34 157,67 157,133 100,166 43,133 43,67"
-        fill="none"
-        stroke="rgba(255,255,255,.06)"
-      />
-      <Polygon
-        points="100,24 170,62 162,136 100,160 38,130 43,70"
-        stroke={colors.blueTint}
-        strokeWidth={2}
-        fill="url(#radar)"
-      />
-      {[
-        [100, 24],
-        [170, 62],
-        [162, 136],
-        [100, 160],
-        [38, 130],
-        [43, 70],
-      ].map(([cx, cy]) => (
-        <Circle key={`${cx}-${cy}`} cx={cx} cy={cy} r={3.5} fill={colors.accent} />
-      ))}
-    </Svg>
-  );
-}
-
 const styles = StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center' },
   flex: { flex: 1 },
