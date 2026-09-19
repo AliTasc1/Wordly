@@ -99,6 +99,85 @@ Uygulama bu hatayı tanıyor ve sebebini söylüyor: adresin kendisinde bir
 sorun olduğunu sanmasın diye "uygulama henüz kendi e-posta sunucusuna bağlı
 değil" yazıyor.
 
+### Gerçek SMTP nasıl bağlanır
+
+Sıra önemli; her adım bir öncekine dayanıyor.
+
+#### 0. Alan adı — atlanamaz
+
+Resend, Postmark, SendGrid, Brevo: hepsinde **doğrulanmış bir alan adı**
+olmadan yalnızca kendi hesap adresine gönderebiliyorsun. Yani domain
+alınmadan Supabase'in bugünkü kısıtından kurtulmuş olmuyorsun, sadece
+kısıtı başka bir şirkete taşımış oluyorsun.
+
+`wordly.com` alınmıştır; `wordly.app`, `wordlyapp.com`, `wordly.com.tr`
+gibi alternatiflere bakılmalı. Yıllık 10–20 $. Cloudflare Registrar maliyet
+fiyatına satıyor ve DNS kayıtlarını aynı yerden girmeyi kolaylaştırıyor.
+
+**Tek istisna:** Brevo, alan adı yerine **tek bir gönderici adresi**
+doğrulamaya izin veriyor (kendi Gmail'in gibi). Domain almadan çalışır ama
+teslimat kalitesi düşük — postalar spam'e düşmeye daha yatkın. Geçici
+çözüm olarak kabul edilebilir, yayın için değil.
+
+#### 1. Resend hesabı
+
+`resend.com` → ücretsiz kayıt. Ücretsiz katman **ayda 3.000, günde 100**
+e-posta; bu uygulama için fazlasıyla yeterli.
+
+#### 2. Alan adını doğrula
+
+Resend → **Domains** → **Add Domain** → alan adını gir. Resend birkaç DNS
+kaydı gösteriyor (DKIM için TXT, SPF, bazen MX). Bunlar alan adını aldığın
+yerin DNS panelinde açılıyor. Doğrulama dakikalar sürebilir.
+
+Bu adım e-postanın spam'e düşmemesini sağlayan şeyin kendisi: DKIM ve SPF,
+alıcı sunucuya "bu postayı göndermeye gerçekten bu alan adının sahibi izin
+verdi" diyor.
+
+#### 3. API anahtarı
+
+Resend → **API Keys** → **Create API Key** → yetki olarak **Sending access**
+yeter.
+
+> Anahtar bir kez gösteriliyor. **Sohbete, koda, commit'e yapıştırma** —
+> doğrudan Supabase panelindeki alana yapıştır. Bir yere yazılan anahtar,
+> yazıldığı yerde kalır.
+
+#### 4. Supabase'e gir
+
+**Authentication → Emails → SMTP Settings**
+(`/dashboard/project/<ref>/auth/smtp`)
+
+**Enable Custom SMTP** açılır ve doldurulur:
+
+| Alan | Değer |
+|---|---|
+| Sender email | `no-reply@<alan-adın>` — doğrulanmış alan adında olmalı |
+| Sender name | `WORDLY` |
+| Host | `smtp.resend.com` |
+| Port | `465` |
+| Username | `resend` — API anahtarı değil, bu sabit değer |
+| Password | 3. adımdaki API anahtarı |
+
+#### 5. Saatlik sınırı yükselt
+
+Supabase, özel SMTP kaydedilince sınırı **saatte 30 mesaja** düşürüyor —
+yeni bir gönderim itibarını korumak için. Dokümandan:
+
+> *"To protect the reputation of your newly set up service a low rate-limit
+> of 30 messages per hour is imposed."*
+
+**Authentication → Rate Limits** sayfasından gerçekçi bir değere çekilmeli.
+
+#### 6. Dene
+
+Uygulamadan, **Supabase ekibinde olmayan** bir adresle kayıt ol. Posta
+geliyorsa iş bitti. `email_address_not_authorized` hatası hâlâ geliyorsa
+özel SMTP kaydedilmemiş demektir.
+
+Yönlendirme adreslerinin de tanımlı olması gerekiyor (yukarıdaki bölüm);
+SMTP çalışsa bile onlar yoksa e-postadaki bağlantı uygulamaya dönmez.
+
 ## Eşitleme
 
 Uygulama tarafı: `mobile/src/server/merge.ts` (kararlar), `sync.ts` (gidiş
