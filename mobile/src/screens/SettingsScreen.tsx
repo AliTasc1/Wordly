@@ -158,6 +158,33 @@ export function SettingsScreen() {
         </Press>
       ) : null}
 
+      {/* Liderlik katılımı. Hesapsızken gösterilmiyor: katılacak bir şey
+          yok ve olmayan bir eksiklik gibi durur. */}
+      {user ? (
+        <Press onPress={() => go('boardjoin')} scale={0.99}>
+          <View style={styles.account}>
+            <IconTile
+              glyph="🏆"
+              tint={colors.warning}
+              size={42}
+              radius={radii.card}
+              fontSize={17}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13.5} w={700}>
+                Liderlik tablosu
+              </Txt>
+              <Txt s={11.5} c={colors.textFaint} style={styles.itemSub}>
+                Katılım ve görünen ad
+              </Txt>
+            </View>
+            <Txt f="m" s={20} w={800}>
+              ›
+            </Txt>
+          </View>
+        </Press>
+      ) : null}
+
       <Press onPress={() => go('sub')} scale={0.99}>
         <Gradient
           colors={['rgba(124,92,255,.22)', 'rgba(14,20,38,.92)']}

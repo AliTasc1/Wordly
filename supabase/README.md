@@ -126,6 +126,58 @@ Sıradan bir upsert çakışmada UPDATE deneyip RLS'e takılıyor — sınandı 
 reddedildiği doğrulandı. Güncellenecek bir alan da yok: satırın varlığı
 bilginin kendisi.
 
+## Liderlik tablosu
+
+Haftalık sıralama, zaten eşitlenen `daily_xp` üzerinden sunucuda
+hesaplanıyor. Hafta pazartesi başlıyor (`date_trunc('week', …)`).
+
+### Katılım isteğe bağlı ve varsayılan kapalı
+
+`profiles.leaderboard_opt_in` varsayılanı `false`. Tersi, hesap açan
+herkesin adını ve çalışma temposunu diğer bütün kullanıcılara göstermek
+olurdu; kimse bunu istemeden vermiş olmamalı.
+
+Katılmak için görünen ad zorunlu — veritabanı kısıtı bunu uyguluyor
+(`profiles_opt_in_needs_name`). Ad 2–24 karakter.
+
+### Neden SECURITY DEFINER
+
+`weekly_leaderboard()` ve `my_leaderboard_place()` tanımı gereği
+**başkalarının** satırlarını gösteriyor; `profiles` üzerindeki RLS buna
+izin vermez. Sızıntı yüzeyi fonksiyonun gövdesiyle sınırlı: yalnızca
+katılmayı seçmiş kullanıcıların **adı ve haftalık XP'si** dönüyor.
+
+Güvenlik denetleyicisi bunu uyarı olarak işaretliyor
+([0029](https://supabase.com/docs/guides/database/database-linter?lint=0029_authenticated_security_definer_function_executable)).
+Uyarı yerinde: "bunu bilerek mi yaptın?" diye soruyor. Cevap evet, ve
+aşağıdaki sınamalar bunu doğruluyor.
+
+`anon` rolünden `execute` geri alındı. Giriş yapmadan başkalarının adlarını
+toplayabilen bir uç nokta, lider tablosu değil veri kaynağıdır.
+
+### Ekranlardan silinenler
+
+Liderlik ekranı tasarımdan gelen dört şeyi kaybetti, hepsi aynı sebeple —
+ölçmediğimiz ya da var olmayan bir şeyi göstermiyoruz:
+
+| Silinen | Neden |
+|---|---|
+| Ligler (Bronz…Elit) | Lig sistemi yok |
+| Yükselme sayacı | Yükselme diye bir şey yok; yerine haftanın gerçek sıfırlanma zamanı |
+| ▲▼ hareket okları | Geçen haftanın sırası tutulmuyor |
+| "%68 düello kazanma" | Düello ölçülmüyor |
+
+Ana sayfadaki üç satırlık önizleme de gerçek tabloya bağlandı. Sabit
+kalsaydı iki ekran aynı öğrenci için farklı şeyler söylerdi.
+
+### Henüz yapılmayan: akış, kulüp, yorum
+
+Bunlar **kullanıcı üretimi içerik** demek: moderasyon, şikâyet ve
+engelleme gerektiriyor ve App Store bunu şart koşuyor. Plansız açılmadı.
+
+Görünen ad da küçük bir kullanıcı içeriği yüzeyi; şimdilik yalnızca uzunluk
+sınırı var. Gerçek moderasyon, akışla birlikte gelmeli.
+
 ## Migration'lar
 
 `migrations/` altındaki dosyalar Supabase'e uygulanmış hâlleriyle duruyor.
@@ -136,6 +188,7 @@ kurulsa şema burada.
 |---|---|
 | 20260918230304 | `wordly_initial_schema` |
 | 20260918230333 | `lock_down_trigger_functions` |
+| 20260919113347 | `weekly_leaderboard` |
 
 ## Doğrulandı
 
@@ -158,3 +211,14 @@ Eşitleme için ayrıca:
 - `saved_words` üzerinde düz upsert'in RLS tarafından **reddedildiği** ayrıca
   doğrulandı; `on conflict do nothing` gerçekten gerekliydi.
 - İki sınama da geri alındı; tablolar yine sıfır satır.
+
+Liderlik tablosu için ayrıca (hepsi `authenticated` rolüyle, RLS açıkken):
+
+- Katılmayı seçmemiş kullanıcı, **en yüksek XP'ye sahip olmasına rağmen**
+  tabloda görünmedi.
+- Sıralama XP'ye göre doğru çıktı.
+- `my_leaderboard_place()` yalnızca çağıranın satırını döndürdü.
+- Başkasının profil satırı hâlâ okunamadı; RLS yerinde.
+- Kısıtlar sınandı: adsız katılım, tek harflik ad ve 25 karakterlik ad
+  reddedildi; geçerli ad ile katılım geçti.
+- Sınamalar geri alındı; tablolar yine sıfır satır.

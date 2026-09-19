@@ -1,155 +1,201 @@
-import React from 'react';
-import { ScrollView, StyleSheet, View } from 'react-native';
+import React, { useCallback, useEffect, useState } from 'react';
+import { RefreshControl, ScrollView, StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Avatar } from '../components/Avatar';
-import { BackButton } from '../components/Buttons';
+import { BackButton, PrimaryButton, Press } from '../components/Buttons';
+import { Notice } from '../components/Notice';
 import { ScreenHeading, StatTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii } from '../theme/tokens';
-import {
-  ACTIVE_LEAGUE,
-  BOARD_PROMOTION,
-  BOARD_ROWS,
-  BOARD_STATS,
-  LEAGUES,
-  moveColor,
-} from '../data/leaderboard';
-import { useBack } from '../navigation/useGo';
+import { avatarOf, gapToNext, initialsOf, weekEndsText } from '../content/board';
+import { tr } from '../content/progress';
+import { fetchBoard, type Board } from '../server/leaderboard';
+import { useAuth } from '../state/AuthContext';
+import { useBack, useGo } from '../navigation/useGo';
 
-/** 19 · Liderlik — weekly leagues with the promotion cut-off marked. */
+/**
+ * 19 · Liderlik — bu haftanın gerçek sıralaması.
+ *
+ * Tasarımdan gelen çok şey silindi, hepsi aynı sebeple: ölçmediğimiz ya da
+ * var olmayan bir şeyi göstermiyoruz.
+ *
+ * - **Ligler** (Bronz…Elit): lig sistemi yok. Altı sekmeli bir şerit çizip
+ *   birini "aktif" göstermek, olmayan bir yapıyı varmış gibi sunmaktı.
+ * - **Yükselme sayacı** ("İlk 5 Elmas'a çıkar · 3 gün 4 saat"): yükselme
+ *   diye bir şey yok. Yerine haftanın gerçekten ne zaman sıfırlandığı yazıyor.
+ * - **▲▼ hareket okları**: geçen haftanın sırası tutulmuyor, dolayısıyla
+ *   yön bilinmiyor.
+ * - **"%68 düello kazanma"**: düello ölçülmüyor.
+ *
+ * Kalan üç sayı gerçek: haftalık XP, sıra ve bir üsttekine fark.
+ */
 export function LeaderboardScreen() {
   const back = useBack('play');
+  const { go } = useGo();
+  const { user } = useAuth();
+
+  const [board, setBoard] = useState<Board | null>(null);
+  const [problem, setProblem] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const load = useCallback(async () => {
+    if (!user) return;
+    setBusy(true);
+    const result = await fetchBoard(user.id);
+    setBusy(false);
+    if (result.ok) {
+      setBoard(result.board);
+      setProblem(null);
+    } else {
+      setProblem(result.problem.raw ?? result.problem.text);
+    }
+  }, [user]);
+
+  useEffect(() => {
+    void load();
+  }, [load]);
+
+  // Hesapsız tabloyu göstermiyoruz. Giriş yapmadan başkalarının adlarını
+  // toplayabilen bir uç nokta, lider tablosu değil veri kaynağıdır — sunucu
+  // da buna izin vermiyor.
+  if (!user) {
+    return (
+      <Screen padTop={62} gap={14}>
+        <View style={styles.header}>
+          <BackButton onPress={back} />
+          <ScreenHeading kicker="HAFTALIK" title="Liderlik" />
+        </View>
+
+        <Notice
+          tone="info"
+          text="Liderlik tablosu için hesap gerekiyor."
+          detail="Tabloya girmek ayrıca senin seçimin; hesap açmak tek başına seni listelemez."
+        />
+
+        <PrimaryButton label="Giriş yap" onPress={() => go('signin')} />
+      </Screen>
+    );
+  }
+
+  const mine = board?.mine ?? null;
+  const entries = board?.entries ?? [];
+  const gap = board ? gapToNext(entries, mine) : null;
 
   return (
-    <Screen padTop={62} gap={13}>
+    <Screen padTop={62} gap={13} scroll={false} style={styles.fill}>
       <View style={styles.header}>
         <BackButton onPress={back} />
-        <ScreenHeading kicker="HAFTALIK LİG" title="Altın Lig" />
+        <ScreenHeading kicker="HAFTALIK" title="Liderlik" />
       </View>
 
       <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.leagues}>
-        {LEAGUES.map((league) => {
-          const active = league.name === ACTIVE_LEAGUE;
-          return (
-            <View
-              key={league.name}
-              style={[styles.league, active ? styles.leagueActive : styles.leagueIdle]}>
-              <Txt s={13}>{league.glyph}</Txt>
-              <Txt f="m" s={12} w={700} c={active ? colors.text : colors.textFaint}>
-                {league.name}
+        style={styles.fill}
+        contentContainerStyle={styles.list}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl refreshing={busy} onRefresh={load} tintColor={colors.textDim} />
+        }>
+        <Gradient
+          colors={['rgba(46,107,255,.18)', 'rgba(14,20,38,.92)']}
+          style={styles.week}>
+          <Txt s={18}>🗓</Txt>
+          <Txt s={12.5} lh={1.5} c={colors.textSubtle} style={styles.flex}>
+            {weekEndsText()}
+          </Txt>
+        </Gradient>
+
+        {problem ? (
+          <Notice tone="error" text="Tablo yüklenemedi." detail={problem} />
+        ) : null}
+
+        {/* Katılmayan kullanıcı tabloyu görebiliyor ama içinde değil.
+            Bunu gizlemek yerine söylüyoruz: neden listede olmadığını
+            anlamayan biri, hatayı uygulamada sanır. */}
+        {board && !mine ? (
+          <Notice
+            tone="info"
+            text="Bu hafta tabloda değilsin."
+            detail="Ayarlar → Liderlik'ten katılabilirsin. Katılım kapalıyken adın kimseye görünmüyor."
+          />
+        ) : null}
+
+        {mine ? (
+          <View style={styles.stats}>
+            <StatTile value={tr(mine.xp)} label="haftalık XP" tint={colors.accent} />
+            <StatTile
+              value={`${mine.place}.`}
+              label={`${mine.total} kişi içinde`}
+              tint={colors.warning}
+            />
+            <StatTile
+              value={gap == null ? '—' : tr(gap)}
+              label={gap == null ? 'zirvedesin' : 'üsttekine fark'}
+              tint={colors.secondary}
+            />
+          </View>
+        ) : null}
+
+        {entries.length ? (
+          <View style={styles.board}>
+            {entries.map((row) => {
+              const tint = avatarOf(row.name);
+              return (
+                <View key={row.userId} style={[styles.row, row.me && styles.rowMe]}>
+                  <Txt f="mono" s={12.5} w={700} c={colors.textDim} style={styles.rank}>
+                    {row.place}
+                  </Txt>
+                  <Avatar
+                    initials={initialsOf(row.name)}
+                    from={tint[0]}
+                    to={tint[1]}
+                    size={34}
+                  />
+                  <Txt f="m" s={13.5} w={700} style={styles.flex}>
+                    {row.name}
+                    {row.me ? ' · sen' : ''}
+                  </Txt>
+                  <Txt f="mono" s={12.5} w={700} c={colors.accent}>
+                    {tr(row.xp)}
+                  </Txt>
+                </View>
+              );
+            })}
+          </View>
+        ) : board && !problem ? (
+          <View style={styles.empty}>
+            <Txt s={30}>🏁</Txt>
+            <Txt f="m" s={14} w={700}>
+              Tablo bu hafta henüz boş
+            </Txt>
+            <Txt s={12.5} lh={1.55} c={colors.textDim} style={styles.emptyText}>
+              Katılan kimse bu hafta XP kazanmamış. İlk sen olabilirsin.
+            </Txt>
+            <Press onPress={() => go('learn')} style={styles.emptyAction}>
+              <Txt f="m" s={13} w={700} c={colors.link}>
+                Derse git
               </Txt>
-            </View>
-          );
-        })}
+            </Press>
+          </View>
+        ) : null}
       </ScrollView>
-
-      <Gradient
-        colors={['rgba(245,165,36,.2)', 'rgba(14,20,38,.92)']}
-        style={styles.promotion}>
-        <View style={styles.promotionIcon}>
-          <Txt s={20}>{BOARD_PROMOTION.glyph}</Txt>
-        </View>
-        <View style={styles.flex}>
-          <Txt f="m" s={13.5} w={700}>
-            {BOARD_PROMOTION.title}
-          </Txt>
-          <Txt s={11.5} c={colors.textDim}>
-            {BOARD_PROMOTION.sub}
-          </Txt>
-        </View>
-      </Gradient>
-
-      <View style={styles.board}>
-        {BOARD_ROWS.map((row) => (
-          <React.Fragment key={row.rank}>
-            <View style={[styles.row, row.name === 'Sen' && styles.rowMe]}>
-              <Txt f="mono" s={12.5} w={700} c={colors.textDim} style={styles.rank}>
-                {row.rank}
-              </Txt>
-              <Avatar initials={row.initials} from={row.avatar[0]} to={row.avatar[1]} size={34} />
-              <View style={styles.flex}>
-                <Txt f="m" s={13.5} w={700}>
-                  {row.name}
-                </Txt>
-                <Txt s={10.5} w={600} c={colors.textFaint}>
-                  {row.meta}
-                </Txt>
-              </View>
-              <View style={styles.rowRight}>
-                <Txt f="mono" s={12.5} w={700} c={colors.accent}>
-                  {row.xp}
-                </Txt>
-                <Txt f="m" s={10} w={700} c={moveColor(row.move)}>
-                  {row.move}
-                </Txt>
-              </View>
-            </View>
-
-            {row.divider ? (
-              <View style={styles.divider}>
-                <Gradient
-                  deg={90}
-                  colors={['transparent', 'rgba(34,197,94,.5)', 'transparent']}
-                  style={styles.dividerLine}
-                />
-                <Txt f="mono" s={9.5} w={700} c={colors.successSoft} ls={0.1}>
-                  {BOARD_PROMOTION.dividerLabel}
-                </Txt>
-                <Gradient
-                  deg={90}
-                  colors={['transparent', 'rgba(34,197,94,.5)', 'transparent']}
-                  style={styles.dividerLine}
-                />
-              </View>
-            ) : null}
-          </React.Fragment>
-        ))}
-      </View>
-
-      <View style={styles.stats}>
-        {BOARD_STATS.map((s) => (
-          <StatTile key={s.label} value={s.value} label={s.label} tint={s.tint} />
-        ))}
-      </View>
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
+  fill: { flex: 1 },
   flex: { flex: 1 },
   header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  leagues: { gap: 7, paddingBottom: 4 },
-  league: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 6,
-    paddingVertical: 9,
-    paddingHorizontal: 14,
-    borderRadius: radii.lg,
-    borderWidth: 1,
-  },
-  leagueActive: { backgroundColor: 'rgba(245,165,36,.2)', borderColor: colors.warning },
-  leagueIdle: { backgroundColor: alpha.w04, borderColor: alpha.w10 },
-  promotion: {
+  list: { gap: 13, paddingBottom: 30 },
+  week: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
     borderWidth: 1,
-    borderColor: 'rgba(245,165,36,.32)',
+    borderColor: 'rgba(46,107,255,.3)',
     borderRadius: radii.tile,
     padding: 14,
-  },
-  promotionIcon: {
-    width: 46,
-    height: 46,
-    borderRadius: radii.input,
-    backgroundColor: 'rgba(245,165,36,.22)',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   board: {
     backgroundColor: colors.surface,
@@ -171,14 +217,17 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(46,107,255,.34)',
   },
   rank: { width: 24 },
-  rowRight: { alignItems: 'flex-end' },
-  divider: {
-    flexDirection: 'row',
+  stats: { flexDirection: 'row', gap: 9 },
+  empty: {
     alignItems: 'center',
     gap: 8,
-    paddingVertical: 6,
-    paddingHorizontal: 4,
+    paddingVertical: 30,
+    paddingHorizontal: 20,
+    borderRadius: radii.section,
+    borderWidth: 1,
+    borderColor: alpha.w08,
+    backgroundColor: alpha.w03,
   },
-  dividerLine: { flex: 1, height: 1 },
-  stats: { flexDirection: 'row', gap: 9 },
+  emptyText: { textAlign: 'center' },
+  emptyAction: { paddingVertical: 8 },
 });

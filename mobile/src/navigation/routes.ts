@@ -45,7 +45,8 @@ export type ScreenId =
   | 'signin'
   | 'signup'
   | 'forgot'
-  | 'newpass';
+  | 'newpass'
+  | 'boardjoin';
 
 export type TabName = 'HomeTab' | 'LearnTab' | 'PlayTab' | 'SocialTab' | 'ProfileTab';
 
@@ -99,6 +100,7 @@ export const TARGETS: Record<ScreenId, Target> = {
   signup: { root: 'SignUp' },
   forgot: { root: 'ForgotPassword' },
   newpass: { root: 'NewPassword' },
+  boardjoin: { root: 'BoardJoin' },
 };
 
 export const navigationRef = createNavigationContainerRef();

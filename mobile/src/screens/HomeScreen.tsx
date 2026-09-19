@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -8,14 +8,12 @@ import { Avatar } from '../components/Avatar';
 import { ProgressBar, ProgressRing } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
-import {
-  COACH_CARD,
-  DAILY_GAME,
-  USER,
-} from '../data/profile';
+import { COACH_CARD, DAILY_GAME, USER } from '../data/profile';
 import { grammarOf } from '../content';
 import { useApp } from '../state/AppContext';
-import { BOARD_PREVIEW, moveColor } from '../data/leaderboard';
+import { avatarOf, initialsOf, weekEndsText } from '../content/board';
+import { fetchBoard, type Board } from '../server/leaderboard';
+import { useAuth } from '../state/AuthContext';
 import { DUEL_INVITE } from '../data/social';
 import { useGo } from '../navigation/useGo';
 import { deckProgress, tr } from '../content/progress';
@@ -24,6 +22,33 @@ import { deckProgress, tr } from '../content/progress';
 export function HomeScreen() {
   const { go } = useGo();
   const { cefr, position, positions, xp, streak } = useApp();
+  const { user } = useAuth();
+
+  /*
+    Liderlik şeridi gerçek tablodan geliyor.
+
+    Önce tasarımdan kalma üç sabit satır vardı ("Gözde 4.820 ▲", "Sen 4.480")
+    ve liderlik ekranı gerçeğe bağlanınca iki ekran aynı öğrenci için farklı
+    şeyler söylüyordu. Çelişen iki yalan, tek yalandan kötüdür.
+
+    Hesap yoksa ya da kullanıcı tabloya katılmadıysa şerit hiç çizilmiyor:
+    girilemeyen bir yarışın sıralamasını göstermenin anlamı yok.
+  */
+  const [board, setBoard] = useState<Board | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    if (!user) {
+      setBoard(null);
+      return;
+    }
+    void fetchBoard(user.id, 3).then((result) => {
+      if (alive && result.ok) setBoard(result.board);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [user]);
 
   // "Where you left off" names the lesson the learner will actually land on.
   const lessons = useMemo(() => grammarOf(cefr), [cefr]);
@@ -224,33 +249,43 @@ export function HomeScreen() {
         </Press>
       </View>
 
-      <Press onPress={() => go('board')} scale={0.99} style={styles.board}>
-        <View style={styles.boardHead}>
-          <Txt f="m" s={14.5} w={700}>
-            Altın Lig · 3 gün kaldı
-          </Txt>
-          <Txt s={12} w={700} c={colors.textDim}>
-            Tümü ›
-          </Txt>
-        </View>
-        {BOARD_PREVIEW.map((r) => (
-          <View key={r.rank} style={[styles.boardRow, r.name === 'Sen' && styles.boardRowMe]}>
-            <Txt f="mono" s={12} w={700} c={colors.textDim} style={styles.rank}>
-              {r.rank}
+      {board && board.entries.length ? (
+        <Press onPress={() => go('board')} scale={0.99} style={styles.board}>
+          <View style={styles.boardHead}>
+            <Txt f="m" s={14.5} w={700}>
+              Liderlik
             </Txt>
-            <Avatar initials={r.initials} from={r.avatar[0]} to={r.avatar[1]} size={28} />
-            <Txt f="m" s={13} w={700} style={styles.flex}>
-              {r.name}
-            </Txt>
-            <Txt f="mono" s={12} w={700} c={colors.accent}>
-              {r.xp}
-            </Txt>
-            <Txt f="m" s={11} w={700} c={moveColor(r.move)} style={styles.move}>
-              {r.move}
+            <Txt s={12} w={700} c={colors.textDim}>
+              Tümü ›
             </Txt>
           </View>
-        ))}
-      </Press>
+          {board.entries.map((r) => {
+            const tint = avatarOf(r.name);
+            return (
+              <View key={r.userId} style={[styles.boardRow, r.me && styles.boardRowMe]}>
+                <Txt f="mono" s={12} w={700} c={colors.textDim} style={styles.rank}>
+                  {r.place}
+                </Txt>
+                <Avatar
+                  initials={initialsOf(r.name)}
+                  from={tint[0]}
+                  to={tint[1]}
+                  size={28}
+                />
+                <Txt f="m" s={13} w={700} style={styles.flex}>
+                  {r.name}
+                </Txt>
+                <Txt f="mono" s={12} w={700} c={colors.accent}>
+                  {tr(r.xp)}
+                </Txt>
+              </View>
+            );
+          })}
+          <Txt s={11} c={colors.textFaint} style={styles.boardFoot}>
+            {weekEndsText()}
+          </Txt>
+        </Press>
+      ) : null}
     </Screen>
   );
 }
@@ -322,7 +357,11 @@ const styles = StyleSheet.create({
   },
   statRow: { flexDirection: 'row', gap: 9 },
   statChip: { flex: 1, borderWidth: 1, borderRadius: radii.panel, padding: 12 },
-  goalHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' },
+  goalHead: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'baseline',
+  },
   rings: { flexDirection: 'row', justifyContent: 'space-between', gap: 6 },
   ringItem: { flex: 1, alignItems: 'center', gap: 6 },
   ringInner: {
@@ -359,7 +398,13 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(124,92,255,.1)',
   },
   coachHead: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  coachBadge: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
+  coachBadge: {
+    width: 34,
+    height: 34,
+    borderRadius: 11,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   coachStatus: {
     marginLeft: 'auto',
     paddingVertical: 4,
@@ -419,7 +464,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
     backgroundColor: colors.surface,
   },
-  boardHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  boardHead: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   boardRow: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 7 },
   boardRowMe: {
     backgroundColor: 'rgba(46,107,255,.12)',
@@ -430,5 +479,5 @@ const styles = StyleSheet.create({
     marginHorizontal: -9,
   },
   rank: { width: 22 },
-  move: { width: 16 },
+  boardFoot: { paddingTop: 6, paddingHorizontal: 4 },
 });

@@ -43,6 +43,7 @@ import { SignInScreen } from '../screens/SignInScreen';
 import { SignUpScreen } from '../screens/SignUpScreen';
 import { ForgotPasswordScreen } from '../screens/ForgotPasswordScreen';
 import { NewPasswordScreen } from '../screens/NewPasswordScreen';
+import { BoardJoinScreen } from '../screens/BoardJoinScreen';
 import { useAuth } from '../state/AuthContext';
 
 const Stack = createNativeStackNavigator();
@@ -156,6 +157,7 @@ export function RootNavigator() {
       <Stack.Screen name="SignIn" component={SignInScreen} />
       <Stack.Screen name="SignUp" component={SignUpScreen} />
       <Stack.Screen name="ForgotPassword" component={ForgotPasswordScreen} />
+      <Stack.Screen name="BoardJoin" component={BoardJoinScreen} />
 
       {/* Design-system reference screens — not linked from the product UI. */}
       <Stack.Screen name="DesignTokens" component={DesignTokensScreen} />
