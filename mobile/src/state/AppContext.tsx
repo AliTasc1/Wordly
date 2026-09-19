@@ -520,6 +520,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     savedWords,
     mistakes,
     daily,
+    studied,
     cefr,
     goals,
     dailyTime,
@@ -551,6 +552,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setSavedWords(applied.savedWords);
       setMistakes(applied.mistakes);
       setRemoteDaily(applied.remoteDaily);
+      setRemoteStudied(applied.remoteStudied);
 
       if (applied.profile) {
         setCefr(applied.profile.cefr as CefrLevel);

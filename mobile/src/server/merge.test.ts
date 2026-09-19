@@ -69,6 +69,7 @@ function localState(over: Partial<LocalState> = {}): LocalState {
     savedWords: [],
     mistakes: {},
     daily: {},
+    studied: {},
     cefr: DEFAULTS.cefr,
     goals: DEFAULTS.goals,
     dailyTime: DEFAULTS.dailyTime,
@@ -258,8 +259,8 @@ test('sınırlama iki cihazda aynı sonucu verir', () => {
 test('kendi XP satırlarımız uzaktan gelen toplama karışmaz', () => {
   const remote = remoteDailyOf(
     [
-      { day: '2026-09-18', device_id: DEVICE, xp: 100 },
-      { day: '2026-09-18', device_id: 'tablet', xp: 50 },
+      { day: '2026-09-18', device_id: DEVICE, xp: 100, seconds: 0 },
+      { day: '2026-09-18', device_id: 'tablet', xp: 50, seconds: 0 },
     ],
     DEVICE,
   );
@@ -270,8 +271,8 @@ test('kendi XP satırlarımız uzaktan gelen toplama karışmaz', () => {
 test('aynı gün iki başka cihazdan gelen XP toplanır', () => {
   const remote = remoteDailyOf(
     [
-      { day: '2026-09-18', device_id: 'tablet', xp: 50 },
-      { day: '2026-09-18', device_id: 'eski-telefon', xp: 20 },
+      { day: '2026-09-18', device_id: 'tablet', xp: 50, seconds: 0 },
+      { day: '2026-09-18', device_id: 'eski-telefon', xp: 20, seconds: 0 },
     ],
     DEVICE,
   );
@@ -283,7 +284,7 @@ test('eşitleme yerel günlük XP tablosuna dokunmaz', () => {
   const local = localState({ daily: { '2026-09-18': 100 } });
   const result = run(
     local,
-    serverState({ daily: [{ day: '2026-09-18', device_id: 'tablet', xp: 50 }] }),
+    serverState({ daily: [{ day: '2026-09-18', device_id: 'tablet', xp: 50, seconds: 0 }] }),
   );
 
   // Uzaktan gelen ayrı duruyor; yerel toplamın üstüne yazılsaydı bir sonraki
@@ -300,7 +301,73 @@ test('değişmeyen gün tekrar gönderilmez', () => {
     base,
   );
 
-  assert.deepEqual(result.push.daily, [{ day: '2026-09-18', xp: 45 }]);
+  assert.deepEqual(result.push.daily, [{ day: '2026-09-18', xp: 45, seconds: 0 }]);
+});
+
+test('çalışma süresi de yerel tabloya karışmadan ayrı duruyor', () => {
+  // XP'deki tuzağın aynısı: uzaktan gelen süre yerelin üstüne yazılsaydı,
+  // bir sonraki gönderimde toplam bizim payımız sayılır ve her eşitlemede
+  // büyürdü. Öğrenci hiç çalışmadan günlük hedefini doldurmuş görünürdü.
+  const local = localState({ studied: { '2026-09-19': 600 } });
+  const result = run(
+    local,
+    serverState({
+      daily: [{ day: '2026-09-19', device_id: 'tablet', xp: 0, seconds: 300 }],
+    }),
+  );
+
+  assert.deepEqual(result.local.remoteStudied, { '2026-09-19': 300 });
+  assert.deepEqual(local.studied, { '2026-09-19': 600 });
+});
+
+test('kendi cihazımızın süresi uzaktan gelen sayılmıyor', () => {
+  const result = run(
+    localState({ studied: { '2026-09-19': 600 } }),
+    serverState({
+      daily: [
+        { day: '2026-09-19', device_id: 'telefon', xp: 20, seconds: 600 },
+        { day: '2026-09-19', device_id: 'tablet', xp: 10, seconds: 180 },
+      ],
+    }),
+  );
+
+  // 'telefon' bu cihaz; kendi satırımızı uzaktan gelenlere katmak, süreyi
+  // iki katına çıkarırdı.
+  assert.deepEqual(result.local.remoteStudied, { '2026-09-19': 180 });
+});
+
+test('yalnızca süresi değişen gün gönderiliyor, XP yeniden yazılmıyor', () => {
+  const base: Base = {
+    ...EMPTY_BASE,
+    daily: { '2026-09-18': 80, '2026-09-19': 40 },
+    studied: { '2026-09-18': 300, '2026-09-19': 120 },
+  };
+  const result = run(
+    localState({
+      daily: { '2026-09-18': 80, '2026-09-19': 40 },
+      studied: { '2026-09-18': 300, '2026-09-19': 900 },
+    }),
+    serverState(),
+    base,
+  );
+
+  // 18'i hiç değişmedi. 19'u yalnızca süre yönünden değişti ama satır
+  // bütün hâlde gidiyor — XP ve süre aynı satırda duruyor, ayrı
+  // gönderilseydi biri diğerini eskitirdi.
+  assert.deepEqual(result.push.daily, [{ day: '2026-09-19', xp: 40, seconds: 900 }]);
+});
+
+test('XP kazanılmadan çalışılan gün de gönderiliyor', () => {
+  // Parçayı okuyup soru cevaplamadan çıkan öğrenci XP almıyor ama çalıştı.
+  const result = run(localState({ studied: { '2026-09-19': 420 } }), serverState());
+  assert.deepEqual(result.push.daily, [{ day: '2026-09-19', xp: 0, seconds: 420 }]);
+});
+
+test('süre alanından önce kaydedilmiş taban her günü yeniden göndertmiyor', () => {
+  // Eski sürümden kalan taban: daily dolu, studied hiç yok.
+  const base: Base = { ...EMPTY_BASE, daily: { '2026-09-18': 80 } };
+  const result = run(localState({ daily: { '2026-09-18': 80 } }), serverState(), base);
+  assert.deepEqual(result.push.daily, []);
 });
 
 // -------------------------------------------------------------------- profil

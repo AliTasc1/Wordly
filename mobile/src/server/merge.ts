@@ -31,7 +31,18 @@ export type MistakeRow = {
   at: string;
 };
 
-export type DailyRow = { day: string; device_id: string; xp: number };
+export type DailyRow = {
+  day: string;
+  device_id: string;
+  xp: number;
+  /**
+   * O gün o cihazda çalışılan saniye.
+   *
+   * Eski sürümdeki bir cihazın yazdığı satırda bu alan yok; sütunun
+   * varsayılanı 0 olduğu için sunucudan 0 dönüyor ve hesap bozulmuyor.
+   */
+  seconds: number;
+};
 
 export type ProfileRow = {
   cefr: string;
@@ -50,6 +61,8 @@ export type LocalState = {
   mistakes: Record<string, Mistake>;
   /** **Yalnızca bu cihazın** gün başına kazandığı XP. */
   daily: Record<string, number>;
+  /** **Yalnızca bu cihazda** gün başına çalışılan saniye. */
+  studied: Record<string, number>;
   cefr: string;
   goals: string[];
   dailyTime: string;
@@ -67,6 +80,8 @@ export type Base = {
   mistakeKeys: string[];
   /** Sunucunun **bu cihaz için** tuttuğu gün başına XP. */
   daily: Record<string, number>;
+  /** Sunucunun **bu cihaz için** tuttuğu gün başına saniye. */
+  studied: Record<string, number>;
 };
 
 export const EMPTY_BASE: Base = {
@@ -74,6 +89,7 @@ export const EMPTY_BASE: Base = {
   savedWords: [],
   mistakeKeys: [],
   daily: {},
+  studied: {},
 };
 
 export type ServerState = {
@@ -90,7 +106,7 @@ export type Push = {
   savedWordsRemove: string[];
   mistakesUpsert: MistakeRow[];
   mistakesRemove: string[];
-  daily: { day: string; xp: number }[];
+  daily: { day: string; xp: number; seconds: number }[];
   /** Null ise sunucudaki profil daha güncel; yazmıyoruz. */
   profile: Omit<ProfileRow, 'updated_at'> | null;
 };
@@ -103,6 +119,8 @@ export type MergeResult = {
     mistakes: Record<string, Mistake>;
     /** **Başka** cihazların gün başına katkısı. Yerel `daily` buna karışmıyor. */
     remoteDaily: Record<string, number>;
+    /** **Başka** cihazların gün başına çalışma süresi. */
+    remoteStudied: Record<string, number>;
     /** Sunucudaki profil kazandıysa dolu; yoksa null. */
     profile: {
       cefr: string;
@@ -213,6 +231,7 @@ export function merge(
       savedWords: words.local.savedWords,
       mistakes: mistakes.local.mistakes,
       remoteDaily: remoteDailyOf(server.daily, deviceId),
+      remoteStudied: remoteStudiedOf(server.daily, deviceId),
       profile: profileToAdopt(local, server.profile, defaults),
     },
     push: {
@@ -221,7 +240,7 @@ export function merge(
       savedWordsRemove: words.push.savedWordsRemove,
       mistakesUpsert: mistakes.push.mistakesUpsert,
       mistakesRemove: mistakes.push.mistakesRemove,
-      daily: dailyToPush(local.daily, base.daily),
+      daily: dailyToPush(local.daily, local.studied, base),
       profile: profileToPush(local, server.profile, defaults),
     },
     // Taban, eşitleme **başarıyla bittikten sonra** sunucuda ne olacağını
@@ -233,6 +252,7 @@ export function merge(
       savedWords: words.local.savedWords,
       mistakeKeys: Object.keys(mistakes.local.mistakes),
       daily: { ...local.daily },
+      studied: { ...local.studied },
     },
   };
 }
@@ -405,23 +425,56 @@ export function remoteDailyOf(
   rows: DailyRow[],
   deviceId: string,
 ): Record<string, number> {
+  return sumOthers(rows, deviceId, (row) => row.xp);
+}
+
+/** Aynısı çalışma süresi için. */
+export function remoteStudiedOf(
+  rows: DailyRow[],
+  deviceId: string,
+): Record<string, number> {
+  return sumOthers(rows, deviceId, (row) => row.seconds);
+}
+
+function sumOthers(
+  rows: DailyRow[],
+  deviceId: string,
+  pick: (row: DailyRow) => number,
+): Record<string, number> {
   const sum: Record<string, number> = {};
   for (const row of rows) {
     if (row.device_id === deviceId) continue;
-    sum[row.day] = (sum[row.day] ?? 0) + row.xp;
+    sum[row.day] = (sum[row.day] ?? 0) + (pick(row) ?? 0);
   }
   return sum;
 }
 
-/** Sunucuda bizim adımıza yazılı olandan farklı olan günler. */
+/**
+ * Sunucuda bizim adımıza yazılı olandan farklı olan günler.
+ *
+ * XP ve süre aynı satırda duruyor, o yüzden ikisinden **biri** bile
+ * değiştiyse satır gidiyor. Ayrı ayrı gönderseydik, yalnızca süresi değişen
+ * bir günün XP'si de yeniden yazılır ve iki alan birbirini eskitirdi.
+ */
 function dailyToPush(
-  mine: Record<string, number>,
-  base: Record<string, number>,
-): { day: string; xp: number }[] {
-  const out: { day: string; xp: number }[] = [];
-  for (const [day, xp] of Object.entries(mine)) {
-    if (base[day] === xp) continue;
-    out.push({ day, xp });
+  mineXp: Record<string, number>,
+  mineStudied: Record<string, number>,
+  base: Base,
+): { day: string; xp: number; seconds: number }[] {
+  const days = new Set([...Object.keys(mineXp), ...Object.keys(mineStudied)]);
+  const out: { day: string; xp: number; seconds: number }[] = [];
+
+  for (const day of [...days].sort()) {
+    const xp = mineXp[day] ?? 0;
+    const seconds = mineStudied[day] ?? 0;
+
+    // Tabandaki eksik giriş sıfır sayılıyor. Katı eşitlik (`=== xp`)
+    // kullanılsaydı, süre alanı eklenmeden önce kaydedilmiş bir taban
+    // yüzünden ilk eşitlemede bütün günler yeniden gönderilirdi — zararsız
+    // ama gereksiz. Ayrıca hem XP'si hem süresi sıfır olan bir gün hiç
+    // gönderilmiyor: kaydedecek bir şeyi yok.
+    if ((base.daily[day] ?? 0) === xp && (base.studied[day] ?? 0) === seconds) continue;
+    out.push({ day, xp, seconds });
   }
   return out;
 }

@@ -44,7 +44,7 @@ async function pull(userId: string): Promise<ServerState> {
       .from('mistakes')
       .select('key, kind, level, content_id, q, text, answer, times, at')
       .eq('user_id', userId),
-    supabase.from('daily_xp').select('day, device_id, xp').eq('user_id', userId),
+    supabase.from('daily_xp').select('day, device_id, xp, seconds').eq('user_id', userId),
     supabase
       .from('profiles')
       .select('cefr, goals, daily_time, skills, test_result, arena, updated_at')
