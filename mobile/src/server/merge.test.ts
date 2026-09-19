@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import type { Mistake } from '../state/persist.ts';
+import type { Mistake } from '../state/persist';
 import {
   capMistakes,
   EMPTY_BASE,
@@ -12,7 +12,7 @@ import {
   type LocalState,
   type MistakeRow,
   type ServerState,
-} from './merge.ts';
+} from './merge';
 
 /**
  * Birleştirme kurallarının sınavı.

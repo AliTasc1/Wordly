@@ -1,4 +1,5 @@
 import type { Mistake } from '../state/persist';
+import { iso } from '../state/days';
 
 /**
  * Haftalık gelişimin sayıları.
@@ -25,16 +26,15 @@ const DAY_NAMES = [
   'Cumartesi',
 ];
 
-function iso(d: Date): string {
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-}
-
-/** Bugünden `back` gün öncesi. */
-function dayBefore(back: number): Date {
-  const d = new Date();
-  d.setDate(d.getDate() - back);
-  return d;
+/**
+ * `back` gün öncesi.
+ *
+ * Gün, ay ve yıl taşmalarını `Date` kurucusuna bırakıyoruz: `setDate` ile
+ * geri saymak saat bilgisini taşıyor ve yaz saati geçişinde günü kaydırıyor.
+ * Buradaki her tarih gece yarısında duruyor.
+ */
+function dayBefore(back: number, now: Date): Date {
+  return new Date(now.getFullYear(), now.getMonth(), now.getDate() - back);
 }
 
 export type Bar = { label: string; value: number; date: string; name: string };
@@ -45,10 +45,17 @@ export type Bar = { label: string; value: number; date: string; name: string };
  * Bugün her zaman en sağda: grafiğin sabit bir haftaya değil, öğrencinin
  * bulunduğu ana göre kayması gerekiyor.
  */
-export function weekBars(daily: Record<string, number>, endingDaysAgo = 0): Bar[] {
+export function weekBars(
+  daily: Record<string, number>,
+  endingDaysAgo = 0,
+  // `now` yalnızca sınama için dışarıdan veriliyor; uygulama gerçek günü
+  // kullanıyor. Gerçek saate bakan bir test gece yarısı başka sonuç verir ve
+  // kimse sebebini anlamaz.
+  now: Date = new Date(),
+): Bar[] {
   const bars: Bar[] = [];
   for (let i = 6; i >= 0; i--) {
-    const d = dayBefore(i + endingDaysAgo);
+    const d = dayBefore(i + endingDaysAgo, now);
     const key = iso(d);
     bars.push({
       label: DAY_LABELS[d.getDay()],
@@ -73,10 +80,13 @@ export type WeekStats = {
   activeDays: number;
 };
 
-export function weekStats(daily: Record<string, number>): WeekStats {
-  const bars = weekBars(daily);
+export function weekStats(
+  daily: Record<string, number>,
+  now: Date = new Date(),
+): WeekStats {
+  const bars = weekBars(daily, 0, now);
   const total = bars.reduce((n, b) => n + b.value, 0);
-  const previous = weekBars(daily, 7).reduce((n, b) => n + b.value, 0);
+  const previous = weekBars(daily, 7, now).reduce((n, b) => n + b.value, 0);
 
   const best = bars.reduce<Bar | null>(
     (top, b) => (b.value > 0 && (!top || b.value > top.value) ? b : top),
@@ -96,7 +106,9 @@ export function weekStats(daily: Record<string, number>): WeekStats {
 }
 
 /** Hata defteri: en çok yanılınan, eşitlikte en yeni olan önce. */
-export function rankedMistakes(mistakes: Record<string, Mistake>): (Mistake & { key: string })[] {
+export function rankedMistakes(
+  mistakes: Record<string, Mistake>,
+): (Mistake & { key: string })[] {
   return Object.entries(mistakes)
     .map(([key, m]) => ({ ...m, key }))
     .sort((a, b) => b.times - a.times || b.at.localeCompare(a.at));

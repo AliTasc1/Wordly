@@ -20,6 +20,15 @@ export type Achievement = {
   pct: number;
   progress: string;
   tint: string;
+  /**
+   * Kilit gerçekten açıldı mı.
+   *
+   * Yüzdeden çıkarılamaz: 999/1.000 yuvarlanınca %100 ediyordu ve rozet
+   * "999/1.000" yazarken hem özet hem ekran onu açılmış sayıyordu. Eşiğe
+   * ulaşmak ile ulaşmaya yaklaşmak aynı şey değil — rozetin tek anlamı
+   * kazanılmış olması.
+   */
+  done: boolean;
 };
 
 type Rule = {
@@ -56,7 +65,9 @@ export function facts(
     lessons: t.lessons,
     texts: t.texts,
     levelsDone: CEFR_LEVELS.filter((level) =>
-      deckProgress(positions, level).every((deck) => deck.total > 0 && deck.done >= deck.total),
+      deckProgress(positions, level).every(
+        (deck) => deck.total > 0 && deck.done >= deck.total,
+      ),
     ),
   };
 }
@@ -77,7 +88,13 @@ const XP: Rule[] = [
 const WORDS: Rule[] = [
   { glyph: '📖', name: '100 Kelime', goal: 100, unit: 'kelime', tint: colors.secondary },
   { glyph: '🏅', name: '500 Kelime', goal: 500, unit: 'kelime', tint: colors.secondary },
-  { glyph: '🏆', name: '1.000 Kelime', goal: 1000, unit: 'kelime', tint: colors.secondary },
+  {
+    glyph: '🏆',
+    name: '1.000 Kelime',
+    goal: 1000,
+    unit: 'kelime',
+    tint: colors.secondary,
+  },
 ];
 
 const LESSONS: Rule[] = [
@@ -95,11 +112,16 @@ function badge(rule: Rule, value: number): Achievement {
   return {
     glyph: rule.glyph,
     name: rule.name,
-    sub: done ? `${tr(rule.goal)} ${rule.unit}` : `${tr(value)}/${tr(rule.goal)} ${rule.unit}`,
-    // Yüzde 100'de kırpılıyor: eşiği aşmak çubuğu taşırmasın.
-    pct: Math.min(Math.round((value / rule.goal) * 100), 100),
+    sub: done
+      ? `${tr(rule.goal)} ${rule.unit}`
+      : `${tr(value)}/${tr(rule.goal)} ${rule.unit}`,
+    // Eşiğe varılmadıkça çubuk dolmuyor: aşağı yuvarlama ve 99 sınırı,
+    // "neredeyse tamam"ın "tamam" gibi görünmesini engelliyor. Eşik aşılınca
+    // da 100'de duruyor, taşmıyor.
+    pct: done ? 100 : Math.min(Math.floor((value / rule.goal) * 100), 99),
     progress: done ? 'AÇILDI' : `${tr(value)}/${tr(rule.goal)}`,
     tint: rule.tint,
+    done,
   };
 }
 
@@ -112,6 +134,7 @@ function levelBadge(level: CefrLevel, done: boolean): Achievement {
     pct: done ? 100 : 0,
     progress: done ? 'AÇILDI' : 'KİLİTLİ',
     tint: colors.primary,
+    done,
   };
 }
 
@@ -129,7 +152,7 @@ export function achievementsOf(f: Facts): Achievement[] {
 export type AchievementsSummary = { unlocked: number; total: number; pct: number };
 
 export function summarize(list: Achievement[]): AchievementsSummary {
-  const unlocked = list.filter((a) => a.pct === 100).length;
+  const unlocked = list.filter((a) => a.done).length;
   return {
     unlocked,
     total: list.length,

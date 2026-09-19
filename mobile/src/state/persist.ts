@@ -2,6 +2,12 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { CefrLevel } from '../data/curriculum';
 import type { DeckKind, TestResult } from './AppContext';
 import { capMistakes, EMPTY_BASE, type Base } from '../server/merge';
+import { today } from './days';
+
+// Gün hesabı `days.ts` içine taşındı: depolamaya değil tarihe ait ve orada
+// AsyncStorage olmadan sınanabiliyor. Eski içe aktarmalar bozulmasın diye
+// buradan yeniden dışa aktarılıyor.
+export { iso, streakOf, today } from './days';
 
 /**
  * İlerlemenin cihazda saklanması.
@@ -297,13 +303,6 @@ export async function clear(): Promise<void> {
   }
 }
 
-/** Bugünün tarihi, cihazın yerel gününe göre (YYYY-MM-DD). */
-export function today(): string {
-  const now = new Date();
-  const pad = (n: number) => String(n).padStart(2, '0');
-  return `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
-}
-
 /**
  * Hata defterine bir yanlış işler.
  *
@@ -327,34 +326,4 @@ export function withMistake(
     ...book,
     [key]: { ...m, times: (seen?.times ?? 0) + 1, at: today() },
   });
-}
-
-/**
- * Kesintisiz çalışma serisi.
- *
- * Bugün çalışılmamışsa seri dünden geriye sayılır — akşam sekizde uygulamayı
- * açan birine "serin bitti" demek, gün bitmeden yanlış olur. İki günden fazla
- * boşluk seriyi keser.
- */
-export function streakOf(days: string[]): number {
-  if (!days.length) return 0;
-  const set = new Set(days);
-  const cursor = new Date();
-  const iso = (d: Date) => {
-    const pad = (n: number) => String(n).padStart(2, '0');
-    return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
-  };
-
-  // Bugün yoksa dünden başla; ikisi de yoksa seri yok.
-  if (!set.has(iso(cursor))) {
-    cursor.setDate(cursor.getDate() - 1);
-    if (!set.has(iso(cursor))) return 0;
-  }
-
-  let streak = 0;
-  while (set.has(iso(cursor))) {
-    streak += 1;
-    cursor.setDate(cursor.getDate() - 1);
-  }
-  return streak;
 }

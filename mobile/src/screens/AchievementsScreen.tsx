@@ -39,7 +39,7 @@ export function AchievementsScreen() {
 
       <View style={styles.grid}>
         {list.map((a) => {
-          const unlocked = a.pct === 100;
+          const unlocked = a.done;
           const card = (
             <>
               <View

@@ -2,12 +2,11 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
-    "types": ["node"],
-    // Testleri Node'un kendi çalıştırıcısı koşuyor (`npm test`) ve Node ESM
-    // uzantıyı kendisi tamamlamıyor; bu yüzden test dosyalarında içe
-    // aktarmalar `./merge.ts` diye yazılı. Uygulama kodunda uzantı yok,
-    // onları Metro çözüyor.
-    "allowImportingTsExtensions": true
+    // Testler Node'un kendi çalıştırıcısıyla koşuyor, uygulama kodu React
+    // Native'le. Node tipleri yalnızca burada açık: uygulama tarafına
+    // karışsalar `Buffer`, `process`, `fetch` gibi telefonda var olmayan
+    // şeyler derleyicide geçerli görünürdü.
+    "types": ["node"]
   },
   "include": ["src/**/*.test.ts"]
 }
