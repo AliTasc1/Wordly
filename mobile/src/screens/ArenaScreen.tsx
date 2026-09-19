@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import * as Haptics from 'expo-haptics';
 import { Screen } from '../components/Screen';
@@ -10,6 +10,18 @@ import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import { ARENA } from '../data/play';
 import { arenaRound } from '../content/arena';
+import {
+  clock,
+  MODE_RULES,
+  onMissed,
+  onSolved,
+  onTick,
+  quitRound,
+  rewardFor,
+  startRound,
+  summaryTitle,
+  timePct,
+} from '../content/arena-game';
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
 
@@ -21,16 +33,42 @@ const KEY = 50;
 /** 17 · Harf Arenası — the signature game: build a word from the wheel. */
 export function ArenaScreen() {
   const back = useBack('play');
-  const { cefr, fire, game, arenaSolved, arenaMissed, award } = useApp();
+  const { cefr, fire, arenaMode, arenaSolved, arenaMissed, award } = useApp();
 
   const [picked, setPicked] = useState<number[]>([]);
   const [rotation, setRotation] = useState(0);
   const [round, setRound] = useState(0);
 
+  /*
+    Turun kendi durumu. Başlıkta eskiden ömür boyu XP duruyordu ve bu turun
+    skoruymuş gibi görünüyordu; sayaç ise sabit bir metindi ("00:24"), yani
+    süreli bir oyunun süresi hiç işlemiyordu.
+
+    Ömür boyu sayaçlar (`game.arenaXp` vb.) hâlâ birikiyor — profil ve
+    başarımlar onlardan besleniyor — ama ekranda bu turun sayıları var.
+  */
+  const [state, setState] = useState(() => startRound(arenaMode));
+
+  // Mod değişince tur baştan kurulur. Play merkezinden başka bir modla
+  // gelindiğinde eski turun kalan süresiyle oynanmamalı.
+  useEffect(() => {
+    setState(startRound(arenaMode));
+    setPicked([]);
+    setRound(0);
+  }, [arenaMode]);
+
+  // Saniye sayacı yalnızca süreli modda ve tur sürerken dönüyor.
+  useEffect(() => {
+    if (state.over || state.secondsLeft == null) return;
+    const id = setInterval(() => setState(onTick), 1000);
+    return () => clearInterval(id);
+  }, [state.over, state.secondsLeft == null]);
+
   // The round is drawn from the learner's own level deck, so the arena drills
   // words they are actually meant to know. It is memoised because the wheel
   // must not reshuffle under the player's finger on every state change.
   const puzzle = useMemo(() => arenaRound(cefr, round), [cefr, round]);
+  const rule = MODE_RULES[state.mode];
 
   const offset = rotation % puzzle.letters.length;
   const order = [...puzzle.letters.slice(offset), ...puzzle.letters.slice(0, offset)];
@@ -44,22 +82,29 @@ export function ArenaScreen() {
   };
 
   const submit = () => {
-    if (!ready) return;
+    if (!ready || state.over) return;
     if (word === puzzle.target) {
-      const gained = ARENA.baseReward * game.combo;
-      const nextCombo = Math.min(game.combo + 1, 5);
+      const gained = rewardFor(state);
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
+      setState(onSolved);
       arenaSolved(gained);
+      award(gained);
       setPicked([]);
       setRound((r) => r + 1);
-      award(gained);
-      fire(`${puzzle.target} · +${gained} XP`, `Kombo ×${nextCombo} · seri sürüyor`);
+      fire(`${puzzle.target} · +${gained} XP`, 'Kombo büyüdü');
     } else {
       Haptics.notificationAsync(Haptics.NotificationFeedbackType.Error);
+      setState(onMissed);
       arenaMissed();
       setPicked([]);
       fire(`“${word}” aradığımız kelime değil`, `Kombo sıfırlandı · ipucu: ${puzzle.tr}`);
     }
+  };
+
+  const again = () => {
+    setState(startRound(arenaMode));
+    setPicked([]);
+    setRound((r) => r + 1);
   };
 
   return (
@@ -69,22 +114,51 @@ export function ArenaScreen() {
       padBottom={26}
       gap={12}
       glows={[
-        { rx: 230, ry: 230, cx: 0.5, cy: 0.58, color: colors.primary, opacity: 0.26, stop: 0.66 },
-        { rx: 150, ry: 130, cx: 0.82, cy: 0.14, color: colors.secondary, opacity: 0.22, stop: 0.64 },
+        {
+          rx: 230,
+          ry: 230,
+          cx: 0.5,
+          cy: 0.58,
+          color: colors.primary,
+          opacity: 0.26,
+          stop: 0.66,
+        },
+        {
+          rx: 150,
+          ry: 130,
+          cx: 0.82,
+          cy: 0.14,
+          color: colors.secondary,
+          opacity: 0.22,
+          stop: 0.64,
+        },
       ]}>
       <View style={styles.header}>
-        <BackButton onPress={back} size={36} strong />
+        <BackButton
+          onPress={() => (state.over ? back() : setState(quitRound))}
+          size={36}
+          strong
+        />
         <View style={styles.timer}>
           <View style={styles.timerHead}>
             <Txt f="mono" s={11} w={700} c={colors.textDim}>
-              {ARENA.mode}
+              {rule.name.toLocaleUpperCase('tr-TR')}
             </Txt>
-            <Txt f="mono" s={11} w={700} c={colors.warningText}>
-              00:{ARENA.time}
-            </Txt>
+            {/* Süresiz modda sayaç yerine kalan hak yazıyor; ikisi de yoksa
+                satır boş kalıyor. Olmayan bir sayacı "00:24" diye çizmek,
+                oyuncuya var olmayan bir baskı hissettirmekti. */}
+            {state.secondsLeft != null ? (
+              <Txt f="mono" s={11} w={700} c={colors.warningText}>
+                {clock(state.secondsLeft)}
+              </Txt>
+            ) : state.livesLeft != null ? (
+              <Txt f="mono" s={11} w={700} c={colors.errorTint}>
+                {'♥'.repeat(state.livesLeft)}
+              </Txt>
+            ) : null}
           </View>
           <ProgressBar
-            pct={ARENA.timePct}
+            pct={Math.round(timePct(state) * 100)}
             from={colors.warning}
             to={colors.error}
             track={alpha.w10}
@@ -92,7 +166,7 @@ export function ArenaScreen() {
         </View>
         <View style={styles.xp}>
           <Txt f="m" s={20} w={800} c={colors.accent}>
-            {game.arenaXp}
+            {state.xp}
           </Txt>
           <Txt f="mono" s={9.5} w={600} c={colors.textGhost}>
             XP
@@ -101,13 +175,10 @@ export function ArenaScreen() {
       </View>
 
       <View style={styles.stats}>
-        <ArenaStat label="KOMBO" value={`×${game.combo}`} tint={colors.violetSoft} />
-        <ArenaStat label="SERİ" value={String(game.arenaStreak)} tint={colors.warningSoft} />
-        <ArenaStat
-          label="KELİME"
-          value={`${game.arenaFound}${ARENA.found}`}
-          tint={colors.successSoft}
-        />
+        <ArenaStat label="KOMBO" value={`×${state.combo}`} tint={colors.violetSoft} />
+        <ArenaStat label="SERİ" value={String(state.streak)} tint={colors.warningSoft} />
+        {/* Eskiden "3/8" yazıyordu: sekiz kelimelik bir hedef hiç yoktu. */}
+        <ArenaStat label="KELİME" value={String(state.found)} tint={colors.successSoft} />
       </View>
 
       <Gradient
@@ -118,17 +189,19 @@ export function ArenaScreen() {
           GÖREV
         </Txt>
         <Txt f="m" s={16.5} w={700} lh={1.4} style={styles.missionText}>
-          Türkçesi verilen 
+          Türkçesi verilen
           <Txt f="m" s={16.5} w={700} c={colors.accent}>
             {puzzle.slots} harfli
           </Txt>
-           kelimeyi kur
+          kelimeyi kur
         </Txt>
       </Gradient>
 
       <View style={styles.slots}>
         {Array.from({ length: puzzle.slots }).map((_, i) => (
-          <View key={i} style={[styles.slot, word[i] ? styles.slotFilled : styles.slotEmpty]}>
+          <View
+            key={i}
+            style={[styles.slot, word[i] ? styles.slotFilled : styles.slotEmpty]}>
             <Txt f="m" s={20} w={800} c={word[i] ? colors.text : colors.textGhost}>
               {word[i] ?? ''}
             </Txt>
@@ -142,7 +215,15 @@ export function ArenaScreen() {
         <View style={styles.wheelCore} pointerEvents="none">
           <Glow
             glows={[
-              { rx: 52, ry: 52, cx: 0.5, cy: 0.5, color: colors.primary, opacity: 0.34, stop: 0.7 },
+              {
+                rx: 52,
+                ry: 52,
+                cx: 0.5,
+                cy: 0.5,
+                color: colors.primary,
+                opacity: 0.34,
+                stop: 0.7,
+              },
             ]}
           />
           <View style={styles.wheelCoreText}>
@@ -194,42 +275,90 @@ export function ArenaScreen() {
         })}
       </View>
 
-      <View style={styles.actions}>
-        <Press onPress={() => setPicked([])} style={[styles.actionBtn, styles.clear]}>
-          <Txt f="m" s={13.5} w={700} c={colors.textSubtle}>
-            Temizle
+      {/* Tur sonu. Oyunun bitebilmesi gerekiyordu: eskiden ne süre doluyor ne
+          hak tükeniyordu, dolayısıyla skor diye bir kavram da yoktu. */}
+      {state.over ? (
+        <View style={styles.summary}>
+          <Txt f="m" s={17} w={800}>
+            {summaryTitle(state)}
           </Txt>
-        </Press>
-        <Press
-          onPress={() => {
-            setRotation((r) => r + 3);
-            setPicked([]);
-          }}
-          accessibilityLabel="Harfleri karıştır"
-          style={[styles.actionBtn, styles.shuffle]}>
-          <Txt s={16}>🔀</Txt>
-        </Press>
-        {ready ? (
-          <Press onPress={submit} style={styles.submitWrap}>
-            <Gradient colors={gradients.brand} style={styles.submit}>
-              <Txt f="m" s={14.5} w={800}>
-                {ARENA.submitReady}
-              </Txt>
-            </Gradient>
-          </Press>
-        ) : (
-          <View style={[styles.submitWrap, styles.submitIdle]}>
-            <Txt f="m" s={14.5} w={800} c={colors.textDisabled}>
-              {ARENA.submitIdle}
-            </Txt>
+          <View style={styles.summaryRow}>
+            <ArenaStat label="XP" value={String(state.xp)} tint={colors.accent} />
+            <ArenaStat
+              label="KELİME"
+              value={String(state.found)}
+              tint={colors.successSoft}
+            />
+            <ArenaStat
+              label="EN UZUN SERİ"
+              value={String(state.bestStreak)}
+              tint={colors.warningSoft}
+            />
           </View>
-        )}
-      </View>
+          <Txt s={11.5} lh={1.5} c={colors.textFaint} style={styles.summaryNote}>
+            Kazandığın XP günlük toplamına eklendi.
+          </Txt>
+          <View style={styles.summaryActions}>
+            <Press onPress={back} style={[styles.actionBtn, styles.clear]}>
+              <Txt f="m" s={13.5} w={700} c={colors.textSubtle}>
+                Çık
+              </Txt>
+            </Press>
+            <Press onPress={again} style={styles.submitWrap}>
+              <Gradient colors={gradients.brand} style={styles.submit}>
+                <Txt f="m" s={14.5} w={800}>
+                  Tekrar oyna
+                </Txt>
+              </Gradient>
+            </Press>
+          </View>
+        </View>
+      ) : (
+        <View style={styles.actions}>
+          <Press onPress={() => setPicked([])} style={[styles.actionBtn, styles.clear]}>
+            <Txt f="m" s={13.5} w={700} c={colors.textSubtle}>
+              Temizle
+            </Txt>
+          </Press>
+          <Press
+            onPress={() => {
+              setRotation((r) => r + 3);
+              setPicked([]);
+            }}
+            accessibilityLabel="Harfleri karıştır"
+            style={[styles.actionBtn, styles.shuffle]}>
+            <Txt s={16}>🔀</Txt>
+          </Press>
+          {ready ? (
+            <Press onPress={submit} style={styles.submitWrap}>
+              <Gradient colors={gradients.brand} style={styles.submit}>
+                <Txt f="m" s={14.5} w={800}>
+                  {ARENA.submitReady}
+                </Txt>
+              </Gradient>
+            </Press>
+          ) : (
+            <View style={[styles.submitWrap, styles.submitIdle]}>
+              <Txt f="m" s={14.5} w={800} c={colors.textDisabled}>
+                {ARENA.submitIdle}
+              </Txt>
+            </View>
+          )}
+        </View>
+      )}
     </Screen>
   );
 }
 
-function ArenaStat({ label, value, tint }: { label: string; value: string; tint: string }) {
+function ArenaStat({
+  label,
+  value,
+  tint,
+}: {
+  label: string;
+  value: string;
+  tint: string;
+}) {
   return (
     <View style={styles.stat}>
       <Txt f="mono" s={9.5} w={600} c={colors.textFaint} ls={0.1}>
@@ -284,7 +413,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(34,211,238,.16)',
     borderColor: 'rgba(34,211,238,.45)',
   },
-  slotEmpty: { backgroundColor: alpha.w03, borderStyle: 'dashed', borderColor: alpha.w16 },
+  slotEmpty: {
+    backgroundColor: alpha.w03,
+    borderStyle: 'dashed',
+    borderColor: alpha.w16,
+  },
   wheel: { width: WHEEL, height: WHEEL, alignSelf: 'center' },
   wheelRing: {
     position: 'absolute',
@@ -334,6 +467,19 @@ const styles = StyleSheet.create({
   },
   keyOff: { backgroundColor: alpha.w06, borderColor: alpha.w14 },
   actions: { flexDirection: 'row', gap: 9, marginTop: 'auto' },
+  summary: {
+    marginTop: 'auto',
+    gap: 10,
+    padding: 16,
+    borderRadius: radii.section,
+    borderWidth: 1,
+    borderColor: alpha.w12,
+    backgroundColor: 'rgba(14,20,38,.96)',
+    alignItems: 'center',
+  },
+  summaryRow: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
+  summaryNote: { textAlign: 'center' },
+  summaryActions: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
   actionBtn: {
     height: 50,
     borderRadius: radii.input,

@@ -29,6 +29,7 @@ import {
 import { useAuth } from './AuthContext';
 import { syncOnce } from '../server/sync';
 import type { DefaultProfile, LocalState } from '../server/merge';
+import type { ArenaMode } from '../content/arena-game';
 
 /** Uygulama açıkken eşitleme aralığı. */
 const SYNC_EVERY_MS = 5 * 60 * 1000;
@@ -162,6 +163,15 @@ type AppValue = {
    */
   award: (points: number) => void;
 
+  /**
+   * Arena'da oynanacak mod.
+   *
+   * Navigasyon parametre taşımıyor (`go(id)` yalnızca ekran kimliği alıyor),
+   * bu yüzden Play merkezinden seçilen mod buradan geçiyor.
+   */
+  arenaMode: ArenaMode;
+  setArenaMode: (mode: ArenaMode) => void;
+
   /** Cihazdaki ilerlemeyi siler — Ayarlar'daki "ilerlemeyi sıfırla". */
   resetProgress: () => void;
 
@@ -236,6 +246,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [following, setFollowing] = useState(false);
   const [joinedClub, setJoinedClub] = useState(true);
   const [plan, setPlan] = useState<PlanId>(PLAN_IDS.yearly);
+  const [arenaMode, setArenaMode] = useState<ArenaMode>('time');
 
   const toggle =
     (setter: React.Dispatch<React.SetStateAction<string[]>>) => (value: string) =>
@@ -575,6 +586,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       recordMistake,
       forgetMistake,
       award,
+      arenaMode,
+      setArenaMode,
       resetProgress,
       sync: {
         running: syncRunning,

@@ -6,18 +6,26 @@ import { Press, TinyButton } from '../components/Buttons';
 import { IconTile, ScreenHeading, Tag } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii } from '../theme/tokens';
-import { MODES, PLAY_HERO, TOURNAMENT } from '../data/play';
+import { ARENA_GLYPH, PLAY_HERO } from '../data/play';
+import { MODE_LIST } from '../content/arena-game';
+import { useApp } from '../state/AppContext';
 import { useGo } from '../navigation/useGo';
 
 /** 16 · Oyna — the game mode showcase. */
 export function PlayScreen() {
   const { go } = useGo();
+  const { setArenaMode } = useApp();
 
   return (
     <Screen tabbed padTop={62} gap={14}>
       <ScreenHeading kicker="OYNA" title="Oyna, kelime kazan" />
 
-      <Press onPress={() => go('arena')} scale={0.99}>
+      <Press
+        onPress={() => {
+          setArenaMode('time');
+          go('arena');
+        }}
+        scale={0.99}>
         <Gradient
           deg={140}
           colors={['rgba(34,211,238,.24)', 'rgba(124,92,255,.2)', 'rgba(14,20,38,.95)']}
@@ -57,47 +65,39 @@ export function PlayScreen() {
       </Txt>
 
       <View style={styles.grid}>
-        {MODES.map((mode) => (
-          <Press
-            key={mode.name}
-            onPress={() => go(mode.target)}
-            scale={0.98}
-            style={styles.mode}>
-            <View style={styles.modeHead}>
-              <IconTile glyph={mode.glyph} tint={mode.tint} size={38} radius={13} fontSize={17} />
-              <Tag label={mode.tag} tint={mode.tint} size={9} />
-            </View>
-            <Txt f="m" s={14.5} w={800} style={styles.modeName}>
-              {mode.name}
-            </Txt>
-            <Txt s={11} lh={1.4} c={colors.textDim} style={styles.modeSub}>
-              {mode.sub}
-            </Txt>
-          </Press>
-        ))}
+        {MODE_LIST.map((mode) => {
+          const look = ARENA_GLYPH[mode.key];
+          return (
+            <Press
+              key={mode.key}
+              onPress={() => {
+                setArenaMode(mode.key);
+                go('arena');
+              }}
+              scale={0.98}
+              style={styles.mode}>
+              <View style={styles.modeHead}>
+                <IconTile
+                  glyph={look.glyph}
+                  tint={look.tint}
+                  size={38}
+                  radius={13}
+                  fontSize={17}
+                />
+                {mode.multiplier > 1 ? (
+                  <Tag label={`${mode.multiplier}× XP`} tint={look.tint} size={9} />
+                ) : null}
+              </View>
+              <Txt f="m" s={14.5} w={800} style={styles.modeName}>
+                {mode.name}
+              </Txt>
+              <Txt s={11} lh={1.4} c={colors.textDim} style={styles.modeSub}>
+                {mode.sub}
+              </Txt>
+            </Press>
+          );
+        })}
       </View>
-
-      <Gradient
-        colors={['rgba(245,165,36,.16)', 'rgba(14,20,38,.92)']}
-        style={styles.tournament}>
-        <View style={styles.tournamentIcon}>
-          <Txt s={19}>{TOURNAMENT.glyph}</Txt>
-        </View>
-        <View style={styles.flex}>
-          <Txt f="m" s={14} w={700}>
-            {TOURNAMENT.title}
-          </Txt>
-          <Txt s={11.5} c={colors.textDim}>
-            {TOURNAMENT.sub}
-          </Txt>
-        </View>
-        <TinyButton
-          label={TOURNAMENT.cta}
-          bg={colors.warning}
-          color={colors.onLight}
-          onPress={() => go('board')}
-        />
-      </Gradient>
     </Screen>
   );
 }
@@ -164,7 +164,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: alpha.w08,
   },
-  modeHead: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+  modeHead: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
   modeName: { marginTop: 10 },
   modeSub: { marginTop: 2 },
   tournament: {

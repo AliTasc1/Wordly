@@ -14,14 +14,13 @@ import { useApp } from '../state/AppContext';
 import { avatarOf, initialsOf, weekEndsText } from '../content/board';
 import { fetchBoard, type Board } from '../server/leaderboard';
 import { useAuth } from '../state/AuthContext';
-import { DUEL_INVITE } from '../data/social';
 import { useGo } from '../navigation/useGo';
 import { deckProgress, tr } from '../content/progress';
 
 /** 06 · Ana Sayfa — "what should I do now?" answered in two seconds. */
 export function HomeScreen() {
   const { go } = useGo();
-  const { cefr, position, positions, xp, streak } = useApp();
+  const { cefr, position, positions, xp, streak, setArenaMode } = useApp();
   const { user } = useAuth();
 
   /*
@@ -215,23 +214,17 @@ export function HomeScreen() {
         </View>
       </Press>
 
+      {/* Burada "Gözde seni düelloya çağırdı · Kabul et" kartı vardı. Düello
+          yazılmadı ve Play merkezinden de kaldırıldı; olmayan bir davetle
+          ana sayfayı açmak, dokunulduğunda öğrenilen bir sözdü. */}
       <View style={styles.duelRow}>
-        <Press onPress={() => go('duel')} scale={0.99} style={styles.duelCard}>
-          <Avatar initials="G" from={colors.orange} to={colors.error} size={30} />
-          <Txt f="m" s={13} w={700}>
-            {DUEL_INVITE.title}
-          </Txt>
-          <Txt s={11.5} c={colors.textDim}>
-            {DUEL_INVITE.sub}
-          </Txt>
-          <Gradient colors={gradients.brand} style={styles.duelCta}>
-            <Txt f="m" s={11} w={800} ls={0.06}>
-              {DUEL_INVITE.acceptLong}
-            </Txt>
-          </Gradient>
-        </Press>
-
-        <Press onPress={() => go('arena')} scale={0.99} style={styles.gameCard}>
+        <Press
+          onPress={() => {
+            setArenaMode('time');
+            go('arena');
+          }}
+          scale={0.99}
+          style={styles.gameCard}>
           <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.1}>
             {DAILY_GAME.kicker}
           </Txt>
@@ -419,22 +412,8 @@ const styles = StyleSheet.create({
     borderRadius: radii.md,
     backgroundColor: colors.secondary,
   },
+  // Tek karta düştü ama satır duruyor: yanına ikinci bir kart gelecek.
   duelRow: { flexDirection: 'row', gap: 10 },
-  duelCard: {
-    flex: 1,
-    gap: 8,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.tile,
-    padding: 14,
-    backgroundColor: colors.surface,
-  },
-  duelCta: {
-    alignSelf: 'flex-start',
-    paddingVertical: 7,
-    paddingHorizontal: 13,
-    borderRadius: radii.chip,
-  },
   gameCard: {
     width: 126,
     borderWidth: 1,

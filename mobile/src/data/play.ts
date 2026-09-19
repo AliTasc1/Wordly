@@ -12,14 +12,23 @@ export type GameMode = {
   target: ScreenId;
 };
 
-export const MODES: GameMode[] = [
-  { glyph: '⚡', name: 'Süre Atağı', sub: '60 saniye, sınırsız kelime', tag: '2× XP', tint: colors.accent, target: 'arena' },
-  { glyph: '🛡', name: 'Hayatta Kalma', sub: '3 hata hakkın var', tag: 'SIRALI', tint: colors.secondary, target: 'arena' },
-  { glyph: '⚔', name: 'Düello', sub: '1v1 gerçek zamanlı', tag: 'CANLI', tint: colors.error, target: 'duel' },
-  { glyph: '👑', name: 'Battle Royale', sub: '100 oyuncu, tek kazanan', tag: 'YENİ', tint: colors.warning, target: 'duel' },
-  { glyph: '🤝', name: 'Takım Savaşı', sub: '5v5 kulüp maçı', tag: 'KULÜP', tint: colors.success, target: 'club' },
-  { glyph: '🎯', name: 'Solo', sub: 'Baskı yok, sadece pratik', tag: 'SERBEST', tint: colors.textDim, target: 'arena' },
-];
+/*
+  Mod listesi `content/arena-game.ts` içindeki MODE_LIST'ten geliyor.
+
+  Burada altı mod sabit yazılıydı: Düello, Battle Royale ve Takım Savaşı hiç
+  yazılmamıştı — üçü de gerçek zamanlı sunucu eşleşmesi istiyor. Olmayan bir
+  şeyi menüye koymak, kullanıcıya dokunduğunda öğreneceği bir söz vermektir.
+
+  Kalan üç mod artık gerçekten farklı oynanıyor: süre, hak ve XP çarpanı
+  birbirinden ayrı.
+*/
+
+/** Modların görünüşü. Kural `content/arena-game.ts` içinde; burası yalnızca simge ve renk. */
+export const ARENA_GLYPH: Record<string, { glyph: string; tint: string }> = {
+  time: { glyph: '⚡', tint: colors.accent },
+  survival: { glyph: '🛡', tint: colors.secondary },
+  solo: { glyph: '🎯', tint: colors.success },
+};
 
 export const PLAY_HERO = {
   kicker: 'İMZA OYUN · 2× XP',
@@ -29,12 +38,9 @@ export const PLAY_HERO = {
   secondary: 'Nasıl oynanır?',
 };
 
-export const TOURNAMENT = {
-  glyph: '🏁',
-  title: 'Haftalık Turnuva',
-  sub: '2.480 katılımcı · 1 gün 6 saat kaldı',
-  cta: 'Katıl',
-};
+// "Haftalık Turnuva · 2.480 katılımcı · 1 gün 6 saat kaldı" buradaydı:
+// turnuva diye bir şey yok, katılımcı sayısı uydurmaydı ve "Katıl" düğmesi
+// lider tablosunu açıyordu. Liderlik artık gerçek ve kendi yerinde duruyor.
 
 /**
  * Harf Arenası kabuğu. Kelime, harfler ve ipucu artık öğrencinin kendi
@@ -42,15 +48,15 @@ export const TOURNAMENT = {
  * turun sabitleri kalıyor.
  */
 export const ARENA = {
-  mode: 'SÜRE ATAĞI',
-  time: '24',
-  timePct: 40,
   readyHint: 'kontrol et',
-  found: '/8',
   submitReady: 'Gönder',
   submitIdle: 'Harf seç',
-  baseReward: 50,
 };
+
+// Buradan silinenler: `mode` ve `time` sabit metinlerdi ("SÜRE ATAĞI",
+// "00:24") ve süre hiç işlemiyordu; `timePct` sabit %40'tı; `found` "/8"
+// diye olmayan bir hedef gösteriyordu; `baseReward` artık mod kurallarıyla
+// birlikte `content/arena-game.ts` içinde.
 
 // "AI Koç" ekranının sabit metinleri buradaydı: uydurma bir sohbet, uydurma
 // bir hafıza ("son 7 günde 9 hata"). Ekran artık gerçek hata defterini
