@@ -8,15 +8,26 @@ mağazadaki güncel Expo Go bu projeyi açabiliyor.
 ```
 git pull
 cd mobile
-npm install
+npm ci
 npx expo start
 ```
 
-`npm install` her `git pull` sonrası gerekiyor: yeni paketler eklendiğinde
+Windows PowerShell kullanıyorsan **satırları `&&` ile birleştirme**. PowerShell
+5.1 bu işleci tanımıyor ve tek bir şey bile çalışmadan hata veriyor. Her
+komutu ayrı ayrı çalıştır.
+
+Bağımlılık kurmak her `git pull` sonrası gerekiyor: yeni paketler eklendiğinde
 (Supabase istemcisi, derin bağlantı, kayıt) atlanırsa uygulama açılışta
 "module not found" ile çöker.
 
-**`git pull` büyük olabilir.** Depoda 9.461 kelime telaffuzu duruyor (63 MB).
+**`npm install` değil `npm ci`.** İkisi de aynı paketleri kurar, ama
+`npm install` `package-lock.json`'ı yeniden yazabiliyor; yazdığında bir
+sonraki `git pull` "local changes would be overwritten" deyip duruyor.
+`npm ci` lock dosyasına dokunmaz. Uygulamayı geliştirmiyor, yalnızca
+çalıştırıyorsan doğrusu bu.
+
+**`git pull` büyük olabilir.** Depoda 11.414 ses dosyası duruyor: 1.953
+dinleme parçası (32 MB) ve 9.461 kelime telaffuzu (63 MB), toplam 94 MB.
 Uygulama şu an onları kullanmıyor — paket boyutu ölçüldü ve gömülmemesine
 karar verildi (bkz. `content/build-audio.py`) — ama dosyalar ileride
 sunucudan indirilmek üzere saklanıyor.
@@ -69,7 +80,7 @@ taşıdığı sürümlerle uyuşmaz ve uygulama açılışta kapanır:
 
 ```
 git pull
-npm install
+npm ci
 npx expo start -c        # -c: Metro önbelleğini temizler
 ```
 
@@ -100,13 +111,38 @@ değişikliğin commit'i değilse mesele kapanmıştır: paket doğru, klasör e
 
 | Terminalde gördüğün | Anlamı |
 |---|---|
+| `Aborting` | **Hiçbir şey güncellenmedi** — sebep bir üst satırda yazıyor |
 | `Already up to date.` | Yanlış klasördesin ya da yanlış daldasın |
-| `error: Your local changes would be overwritten` | Pull hiç olmadı; elle değiştirdiğin dosya var |
 | `fatal: not a git repository` | Klasör ZIP olarak indirilmiş, klon değil |
-| Uzun süre durup hata veren indirme | Depoda 63 MB ses var; yarıda kopmuş |
+| Uzun süre durup hata veren indirme | Depoda 94 MB ses var; yarıda kopmuş |
 
-Son satır burada en sık çıkanı. `git pull` yarıda koparsa Git hiçbir şeyi
-uygulamaz — ya hepsi iner ya hiçbiri. Ekrandaki hata kaçarsa "indi" sanırsın.
+`Aborting` sinsi olanı: hatanın ardından yazdığın `npm install` ve
+`expo start` sorunsuz çalışır — çünkü **eski kodu** kurup sunarlar. Ekranda
+her şey yolunda görünür, telefona giden paket eskidir.
+
+### `package-lock.json` yüzünden duran pull
+
+Uzak ara en sık çıkan hâli bu:
+
+```
+error: Your local changes to the following files would be overwritten by merge:
+        mobile/package-lock.json
+Aborting
+```
+
+`npm install`, lock dosyasını yeniden yazma hakkını kendinde görüyor. Git de
+üzerine yazmayı reddediyor. O dosya üretilen bir dosya; içinde korunacak bir
+emek yok, atılabilir:
+
+```
+git checkout -- mobile/package-lock.json
+git pull --ff-only origin main
+```
+
+**Tekrarlamaması için `npm install` yerine `npm ci` kullan.** `npm ci` lock
+dosyasına hiç dokunmaz, tam olarak orada yazan sürümleri kurar. Uygulamayı
+geliştirmiyor, yalnızca çalıştırıyorsan doğru komut budur — `npm install`'ın
+bağımlılık çözmesine zaten ihtiyacın yok.
 
 ### Doğru klasörde olduğundan emin ol
 
@@ -133,7 +169,7 @@ git pull
 Sıra önemli:
 
 ```
-npm install
+npm ci
 npx expo start -c
 ```
 
