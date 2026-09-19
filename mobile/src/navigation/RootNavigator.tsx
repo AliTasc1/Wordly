@@ -15,7 +15,6 @@ import { LearnScreen } from '../screens/LearnScreen';
 import { CourseMapScreen } from '../screens/CourseMapScreen';
 import { LessonScreen } from '../screens/LessonScreen';
 import { PlayScreen } from '../screens/PlayScreen';
-import { SocialScreen } from '../screens/SocialScreen';
 import { ProfileScreen } from '../screens/ProfileScreen';
 import { AchievementsScreen } from '../screens/AchievementsScreen';
 import { StatsScreen } from '../screens/StatsScreen';
@@ -52,6 +51,13 @@ const stackOptions = {
 const HomeStack = () => (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Home" component={HomeScreen} />
+  </Stack.Navigator>
+);
+
+// Hata defteri kendi sekmesinde. Önce sağ altta yüzen bir düğmedeydi:
+// ekranın köşesini kaplıyor ve neye yaradığı ancak dokununca anlaşılıyordu.
+const CoachStack = () => (
+  <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Coach" component={CoachScreen} />
   </Stack.Navigator>
 );
@@ -67,12 +73,6 @@ const LearnStack = () => (
 const PlayStack = () => (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Play" component={PlayScreen} />
-  </Stack.Navigator>
-);
-
-const SocialStack = () => (
-  <Stack.Navigator screenOptions={stackOptions}>
-    <Stack.Screen name="Social" component={SocialScreen} />
   </Stack.Navigator>
 );
 
@@ -94,7 +94,7 @@ function MainTabs() {
       <Tab.Screen name="HomeTab" component={HomeStack} />
       <Tab.Screen name="LearnTab" component={LearnStack} />
       <Tab.Screen name="PlayTab" component={PlayStack} />
-      <Tab.Screen name="SocialTab" component={SocialStack} />
+      <Tab.Screen name="CoachTab" component={CoachStack} />
       <Tab.Screen name="ProfileTab" component={ProfileStack} />
     </Tab.Navigator>
   );

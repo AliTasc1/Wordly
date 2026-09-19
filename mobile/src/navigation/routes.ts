@@ -24,7 +24,6 @@ export type ScreenId =
   | 'play'
   | 'arena'
   | 'board'
-  | 'social'
   | 'notif'
   | 'profile'
   | 'achv'
@@ -42,7 +41,7 @@ export type ScreenId =
   | 'newpass'
   | 'boardjoin';
 
-export type TabName = 'HomeTab' | 'LearnTab' | 'PlayTab' | 'SocialTab' | 'ProfileTab';
+export type TabName = 'HomeTab' | 'LearnTab' | 'PlayTab' | 'CoachTab' | 'ProfileTab';
 
 /**
  * Where each design screen lives in the navigator. Screens nested under a tab
@@ -59,12 +58,11 @@ export const TARGETS: Record<ScreenId, Target> = {
   result: { root: 'TestResult' },
 
   home: { tab: 'HomeTab', screen: 'Home' },
-  coach: { tab: 'HomeTab', screen: 'Coach' },
+  coach: { tab: 'CoachTab', screen: 'Coach' },
   learn: { tab: 'LearnTab', screen: 'Learn' },
   map: { tab: 'LearnTab', screen: 'CourseMap' },
   lesson: { tab: 'LearnTab', screen: 'Lesson' },
   play: { tab: 'PlayTab', screen: 'Play' },
-  social: { tab: 'SocialTab', screen: 'Social' },
   profile: { tab: 'ProfileTab', screen: 'Profile' },
   achv: { tab: 'ProfileTab', screen: 'Achievements' },
   stats: { tab: 'ProfileTab', screen: 'Stats' },

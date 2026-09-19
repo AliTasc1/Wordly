@@ -8,6 +8,7 @@ import { ProgressBar, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import { displayNameOf, initialOf, memberText } from '../content/identity';
+import { achievementsOf, facts, summarize } from '../content/achievements';
 import { useAuth } from '../state/AuthContext';
 import { useGo } from '../navigation/useGo';
 import { useApp } from '../state/AppContext';
@@ -21,6 +22,10 @@ export function ProfileScreen() {
 
   // Ad sırası: kullanıcının seçtiği ad → e-postanın yerel kısmı → "Öğrenci".
   // Hesapsız kullanıcıya uydurma bir isim vermiyoruz.
+  // Başarım sayısı, rozet ekranıyla aynı hesaptan geliyor; iki ekranın farklı
+  // sayı göstermemesi için tek kaynak.
+  const badges = summarize(achievementsOf(facts(positions, xp, streak)));
+
   const name = displayNameOf(
     user?.user_metadata?.display_name as string | undefined,
     user?.email,
@@ -159,7 +164,8 @@ export function ProfileScreen() {
               <Txt s={16}>🏅</Txt>
             </View>
             <View style={[styles.badge, styles.badgeCyan, styles.badgeOverlap]}>
-              <Txt s={16}>⚔</Txt>
+              {/* Kılıç rozeti düelloyu simgeliyordu; düello yok. */}
+              <Txt s={16}>📓</Txt>
             </View>
           </View>
           <View style={styles.flex}>
@@ -167,7 +173,28 @@ export function ProfileScreen() {
               Başarımlar
             </Txt>
             <Txt s={11.5} c={colors.textDim}>
-              14 / 48 açıldı
+              {/* "14 / 48" sabit yazılıydı; başarım hesabı gerçek olduğu
+                  hâlde bu satır uydurma bir sayı gösteriyordu. */}
+              {badges.unlocked} / {badges.total} açıldı
+            </Txt>
+          </View>
+          <Txt f="m" s={20} w={800}>
+            ›
+          </Txt>
+        </Press>
+
+        {/* Sosyal sekmesi kaldırıldığında liderliğin erişimi buraya taşındı;
+            ana sayfadaki şerit de duruyor. */}
+        <Press onPress={() => go('board')} scale={0.99} style={styles.navRow}>
+          <View style={[styles.badge, styles.badgeWarm]}>
+            <Txt s={16}>🏆</Txt>
+          </View>
+          <View style={styles.flex}>
+            <Txt f="m" s={13.5} w={700}>
+              Haftalık liderlik
+            </Txt>
+            <Txt s={11.5} c={colors.textDim}>
+              Katılanların bu hafta kazandığı XP
             </Txt>
           </View>
           <Txt f="m" s={20} w={800}>

@@ -6,21 +6,31 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Gradient } from '../components/Gradient';
 import { Press } from '../components/Buttons';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, shadows } from '../theme/tokens';
-import { go, TabName } from './routes';
+import { alpha, colors, gradients } from '../theme/tokens';
+import { TabName } from './routes';
 
+/*
+  Beş sekme, hepsi gerçek bir şeye gidiyor.
+
+  "Sosyal" sekmesi çıkarıldı: akış, arkadaş ve kulüp yazılmadı, dolayısıyla o
+  sekme çoğunlukla "burada henüz bir şey yok" diyen bir ekrana gidiyordu.
+  Olmayan bir bölüm için sekme ayırmak, menüdeki en değerli yerlerden birini
+  bir açıklamaya harcamaktı. Çalışan tek sosyal şey — haftalık liderlik —
+  ana sayfadan ve profilden erişiliyor.
+
+  Yerine hata defteri geldi. Daha önce sağ altta yüzen bir düğmedeydi:
+  ekranın köşesini kaplıyor, parmağın altında kalıyor ve neye yaradığı
+  yalnızca dokununca anlaşılıyordu. Menüde adıyla duruyor.
+*/
 const ITEMS: { name: TabName; icon: string; label: string }[] = [
   { name: 'HomeTab', icon: '🏠', label: 'Ana' },
   { name: 'LearnTab', icon: '📚', label: 'Öğren' },
   { name: 'PlayTab', icon: '🎮', label: 'Oyna' },
-  { name: 'SocialTab', icon: '👥', label: 'Sosyal' },
+  { name: 'CoachTab', icon: '📓', label: 'Defter' },
   { name: 'ProfileTab', icon: '👤', label: 'Profil' },
 ];
 
-/**
- * Bottom navigation plus the AI coach FAB, both lifted from the design's
- * `showNav` block.
- */
+/** Alt menü. */
 export function TabBar({ state, navigation }: BottomTabBarProps) {
   const insets = useSafeAreaInsets();
   const bottomPad = insets.bottom || 22;
@@ -28,19 +38,6 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
 
   return (
     <View style={styles.wrap} pointerEvents="box-none">
-      <Press
-        onPress={() => go('coach')}
-        scale={0.94}
-        accessibilityRole="button"
-        accessibilityLabel="Hata defteri"
-        style={[styles.fabWrap, { bottom: bottomPad + 74 }]}>
-        <Gradient colors={gradients.violetCyan} style={styles.fab}>
-          {/* Rozet "AI" diyordu ama düğme gerçek hata defterini açıyor;
-              öyle bir koç hiç olmadı. */}
-          <Txt s={17}>📓</Txt>
-        </Gradient>
-      </Press>
-
       <View style={[styles.bar, { height: 66 + bottomPad, paddingBottom: bottomPad }]}>
         {Platform.OS !== 'android' ? (
           <BlurView intensity={30} tint="dark" style={StyleSheet.absoluteFill} />
@@ -105,15 +102,4 @@ const styles = StyleSheet.create({
   },
   icon: { lineHeight: 22 },
   dot: { position: 'absolute', top: 2, width: 22, height: 3, borderRadius: 9 },
-  fabWrap: { position: 'absolute', right: 16 },
-  fab: {
-    width: 58,
-    height: 58,
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: alpha.w18,
-    alignItems: 'center',
-    justifyContent: 'center',
-    boxShadow: shadows.fab,
-  },
 });

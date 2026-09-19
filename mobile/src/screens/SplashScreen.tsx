@@ -5,14 +5,14 @@ import { Gradient } from '../components/Gradient';
 import { Glow } from '../components/Glow';
 import { GhostButton, PrimaryButton } from '../components/Buttons';
 import { Txt } from '../components/Txt';
-import { PopIn, Spinner } from '../components/motion';
+import { PopIn } from '../components/motion';
 import { colors, gradients } from '../theme/tokens';
 import { SPLASH } from '../data/onboarding';
 import { useGo } from '../navigation/useGo';
 
 /** 01 · Açılış — brand moment plus session bootstrap. */
 export function SplashScreen() {
-  const { go, reset } = useGo();
+  const { go } = useGo();
 
   return (
     <Screen
@@ -23,8 +23,24 @@ export function SplashScreen() {
       gap={0}
       contentStyle={styles.content}
       glows={[
-        { rx: 260, ry: 200, cx: 0.5, cy: 0.3, color: colors.primary, opacity: 0.34, stop: 0.65 },
-        { rx: 210, ry: 180, cx: 0.78, cy: 0.74, color: colors.secondary, opacity: 0.26, stop: 0.68 },
+        {
+          rx: 260,
+          ry: 200,
+          cx: 0.5,
+          cy: 0.3,
+          color: colors.primary,
+          opacity: 0.34,
+          stop: 0.65,
+        },
+        {
+          rx: 210,
+          ry: 180,
+          cx: 0.78,
+          cy: 0.74,
+          color: colors.secondary,
+          opacity: 0.26,
+          stop: 0.68,
+        },
       ]}>
       <View />
 
@@ -33,7 +49,15 @@ export function SplashScreen() {
           <View style={styles.logoGlow} pointerEvents="none">
             <Glow
               glows={[
-                { rx: 80, ry: 80, cx: 0.5, cy: 0.5, color: colors.secondary, opacity: 0.55, stop: 1 },
+                {
+                  rx: 80,
+                  ry: 80,
+                  cx: 0.5,
+                  cy: 0.5,
+                  color: colors.secondary,
+                  opacity: 0.55,
+                  stop: 1,
+                },
               ]}
             />
           </View>
@@ -58,12 +82,9 @@ export function SplashScreen() {
       </PopIn>
 
       <View style={styles.actions}>
-        <View style={styles.loadingRow}>
-          <Spinner />
-          <Txt s={11.5} w={600} c={colors.textGhost}>
-            {SPLASH.loading}
-          </Txt>
-        </View>
+        {/* "Hesabın hazırlanıyor" yazan bir yükleniyor animasyonu vardı.
+            Hazırlanan bir şey yoktu: ekran açılır açılmaz hazırdı. Bekleme
+            taklidi, kullanıcının zamanını çalmanın kibar hâlidir. */}
         <PrimaryButton label={SPLASH.primary} onPress={() => go('onb')} />
         <GhostButton
           label={SPLASH.secondary}
@@ -72,7 +93,7 @@ export function SplashScreen() {
           size={15}
           fill="rgba(255,255,255,.04)"
           border="rgba(255,255,255,.14)"
-          onPress={() => reset('home')}
+          onPress={() => go('signin')}
         />
         <Txt s={10.5} c={colors.textDisabled} style={styles.legal}>
           {SPLASH.legal}
@@ -98,12 +119,5 @@ const styles = StyleSheet.create({
   wordmark: { marginLeft: 9 },
   tagline: { marginTop: 8 },
   actions: { gap: 12 },
-  loadingRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 8,
-    marginBottom: 6,
-  },
   legal: { textAlign: 'center', marginTop: 4 },
 });

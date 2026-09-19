@@ -5,7 +5,9 @@ import type { ScreenId } from '../navigation/routes';
 
 export const SPLASH = {
   tagline: 'İngilizce öğren. Oyna. Konuş.',
-  loading: 'Hesabın hazırlanıyor',
+  // `loading` buradaydı ("Hesabın hazırlanıyor"). Hazırlanan bir şey yoktu:
+  // ekran açılır açılmaz hazırdı. Bekleme taklidi, kullanıcının zamanını
+  // çalmanın kibar hâlidir.
   primary: 'Ücretsiz Başla',
   secondary: 'Hesabım var · Giriş yap',
   legal: 'Devam ederek Kullanım Koşulları’nı kabul edersin.',
