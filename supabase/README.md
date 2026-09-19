@@ -70,8 +70,34 @@ Bunlar SQL ile ayarlanamıyor, Supabase panelinden elle girilmeli:
    eklenmeli, yoksa e-postadaki bağlantı uygulamaya dönmez:
    - `wordly://**` — derlenmiş uygulama
    - `exp://**` — Expo Go ile geliştirme
-3. **Confirm email** açık bırakılırsa kayıttan sonra oturum açılmaz;
-   uygulama bunu "E-postanı doğrula" ekranıyla anlatıyor.
+3. **Authentication → Sign In / Providers → Email** altındaki **Confirm
+   email** açık bırakılırsa kayıttan sonra oturum açılmaz; uygulama bunu
+   "E-postanı doğrula" ekranıyla anlatıyor.
+
+### E-posta gönderimi yayın için hazır değil
+
+Supabase'in varsayılan SMTP'si **yalnızca projenin ekibindeki adreslere**
+gönderiyor. Dokümandan:
+
+> *"Unless you configure a custom SMTP server for your project, Supabase Auth
+> will refuse to deliver messages to addresses that are not part of the
+> project's team. All other addresses will fail with the error message
+> Email address not authorized."*
+
+Sonuçları:
+
+- **Test ederken** Supabase'e giriş yapılan e-posta kullanılmalı; başka her
+  adres `email_address_not_authorized` alır.
+- Saatlik gönderim sınırı var ve haber verilmeden değişebiliyor.
+- Teslimat garantisi (SLA) yok; servis üretim için tasarlanmamış.
+
+Yayından önce gerçek bir SMTP bağlanmalı (Resend, Postmark, SendGrid,
+Amazon SES…). Bu yapılmadan uygulama yayına çıkarsa **kaydolan hiç kimse
+doğrulama postası alamaz**.
+
+Uygulama bu hatayı tanıyor ve sebebini söylüyor: adresin kendisinde bir
+sorun olduğunu sanmasın diye "uygulama henüz kendi e-posta sunucusuna bağlı
+değil" yazıyor.
 
 ## Eşitleme
 

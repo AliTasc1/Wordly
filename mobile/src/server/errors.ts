@@ -16,7 +16,12 @@ const BY_CODE: Record<string, string> = {
   user_already_exists: 'Bu e-posta zaten kayıtlı. Giriş yapmayı dene.',
   email_exists: 'Bu e-posta zaten kayıtlı. Giriş yapmayı dene.',
   email_address_invalid: 'E-posta adresi geçerli görünmüyor.',
-  email_address_not_authorized: 'Bu e-posta adresine gönderim yapılamıyor.',
+  // Supabase'in varsayılan e-posta servisi yalnızca proje ekibindeki
+  // adreslere gönderiyor. Gerçek bir SMTP bağlanana kadar başka her adres
+  // bu hatayı alır; sebebi söylemezsek kullanıcı kendi adresinde sorun
+  // olduğunu sanır.
+  email_address_not_authorized:
+    'Bu adrese e-posta gönderilemiyor. Uygulama henüz kendi e-posta sunucusuna bağlı değil.',
   validation_failed: 'Girdiğin bilgilerde eksik ya da hatalı bir şey var.',
   weak_password: 'Şifre yeterince güçlü değil.',
   same_password: 'Yeni şifre eskisiyle aynı olamaz.',
