@@ -1,0 +1,13 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "types": ["node"],
+    // Testleri Node'un kendi çalıştırıcısı koşuyor (`npm test`) ve Node ESM
+    // uzantıyı kendisi tamamlamıyor; bu yüzden test dosyalarında içe
+    // aktarmalar `./merge.ts` diye yazılı. Uygulama kodunda uzantı yok,
+    // onları Metro çözüyor.
+    "allowImportingTsExtensions": true
+  },
+  "include": ["src/**/*.test.ts"]
+}

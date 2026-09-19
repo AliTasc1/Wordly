@@ -12,11 +12,33 @@ import { useApp } from '../state/AppContext';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
 
+/**
+ * Eşitlemenin altındaki açıklama.
+ *
+ * Başarısızlıkta sunucunun kendi metnini gizlemiyoruz. "Bir şeyler ters
+ * gitti" demek, kullanıcının da bizim de neyin bozuk olduğunu öğrenmemizi
+ * engeller. Yanına ilerlemenin kaybolmadığını yazıyoruz, çünkü asıl merak
+ * edilen o.
+ */
+function syncNote(sync: ReturnType<typeof useApp>['sync']): string {
+  if (sync.running) return 'Sunucuyla karşılaştırılıyor';
+  if (sync.problem)
+    return `Son deneme başarısız — ilerlemen telefonda duruyor. ${sync.problem}`;
+  if (sync.at == null) return 'Henüz eşitlenmedi';
+
+  const minutes = Math.floor((Date.now() - sync.at) / 60000);
+  if (minutes < 1) return 'Az önce eşitlendi';
+  if (minutes < 60) return `${minutes} dakika önce eşitlendi`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours} saat önce eşitlendi`;
+  return `${Math.floor(hours / 24)} gün önce eşitlendi`;
+}
+
 /** 31 · Ayarlar — account, notifications, audio, accessibility, language. */
 export function SettingsScreen() {
   const { go } = useGo();
   const back = useBack('profile');
-  const { fire, cefr, resetProgress } = useApp();
+  const { fire, cefr, resetProgress, sync } = useApp();
   const { user, loading, signOut } = useAuth();
 
   // Silme geri alınamıyor, o yüzden onay isteniyor. Yıkıcı işlem tek
@@ -107,6 +129,34 @@ export function SettingsScreen() {
           ) : null}
         </View>
       </Press>
+
+      {/* Eşitleme satırı yalnızca hesap varken görünüyor. Girişsizken
+          "eşitlenmedi" demek, olmayan bir eksikliği varmış gibi göstermek
+          olurdu: ilerleme zaten telefonda ve orada güvende. */}
+      {user ? (
+        <Press onPress={sync.now} disabled={sync.running} scale={0.99}>
+          <View style={styles.account}>
+            <IconTile
+              glyph={sync.problem ? '!' : '⟳'}
+              tint={sync.problem ? colors.warning : colors.accent}
+              size={42}
+              radius={radii.card}
+              fontSize={17}
+            />
+            <View style={styles.flex}>
+              <Txt f="m" s={13.5} w={700}>
+                {sync.running ? 'Eşitleniyor…' : 'İlerlemeyi eşitle'}
+              </Txt>
+              <Txt
+                s={11.5}
+                c={sync.problem ? colors.warningText : colors.textFaint}
+                style={styles.itemSub}>
+                {syncNote(sync)}
+              </Txt>
+            </View>
+          </View>
+        </Press>
+      ) : null}
 
       <Press onPress={() => go('sub')} scale={0.99}>
         <Gradient

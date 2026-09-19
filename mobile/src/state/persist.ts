@@ -1,6 +1,7 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import type { CefrLevel } from '../data/curriculum';
 import type { DeckKind, TestResult } from './AppContext';
+import { capMistakes, EMPTY_BASE, type Base } from '../server/merge';
 
 /**
  * İlerlemenin cihazda saklanması.
@@ -37,9 +38,6 @@ export type Mistake = {
   /** Son yanılma tarihi (YYYY-MM-DD). */
   at: string;
 };
-
-/** Hata defterinde tutulacak en fazla kayıt. */
-const MISTAKE_CAP = 200;
 
 /** Bir hatanın kimliği: aynı soru iki kayıt açmasın. */
 export function mistakeKey(m: Pick<Mistake, 'kind' | 'id' | 'q'>): string {
@@ -79,6 +77,23 @@ export type Saved = {
   daily: Record<string, number>;
   /** Hata defteri — soru kimliğine göre. */
   mistakes: Record<string, Mistake>;
+  /**
+   * **Başka** cihazların gün başına katkısı.
+   *
+   * `daily` yalnızca bu cihazın kazandığı XP'yi tutuyor ve öyle kalmalı: o
+   * sayı sunucuya bu cihazın payı olarak gönderiliyor. Uzaktan geleni onun
+   * üstüne yazsaydık, gönderdiğimiz pay her eşitlemede kendi üstüne eklenir
+   * ve XP hiç çalışmadan büyürdü. Ekranda gösterilen toplam ikisinin
+   * toplamı — `AppContext` bunu `dailyTotal` olarak veriyor.
+   */
+  remoteDaily: Record<string, number>;
+  /**
+   * Tercihlerin en son ne zaman değiştiği (ms).
+   *
+   * Profil çakışmasında "son yazan kazanır" diyebilmek için gerekli; onsuz
+   * iki dolu profilden hangisinin yeni olduğu bilinemez.
+   */
+  profileAt: number;
 };
 
 /** Kayıt yoksa ya da okunamazsa uygulama bu değerlerle açılır. */
@@ -94,6 +109,8 @@ export const EMPTY: Saved = {
   xp: 0,
   daily: {},
   mistakes: {},
+  remoteDaily: {},
+  profileAt: 0,
 };
 
 /**
@@ -115,7 +132,9 @@ export const EMPTY: Saved = {
 function dailyOf(saved: Partial<Saved> & { days?: unknown }): Record<string, number> {
   if (saved.daily && typeof saved.daily === 'object') return saved.daily;
   if (Array.isArray(saved.days)) {
-    return Object.fromEntries(saved.days.filter((d) => typeof d === 'string').map((d) => [d, 0]));
+    return Object.fromEntries(
+      saved.days.filter((d) => typeof d === 'string').map((d) => [d, 0]),
+    );
   }
   return {};
 }
@@ -133,10 +152,90 @@ export async function load(): Promise<Saved> {
       arena: { ...EMPTY.arena, ...(saved.arena ?? {}) },
       xp: typeof saved.xp === 'number' ? saved.xp : 0,
       daily: dailyOf(saved),
-      mistakes: typeof saved.mistakes === 'object' && saved.mistakes ? saved.mistakes : {},
+      mistakes:
+        typeof saved.mistakes === 'object' && saved.mistakes ? saved.mistakes : {},
+      remoteDaily:
+        typeof saved.remoteDaily === 'object' && saved.remoteDaily
+          ? saved.remoteDaily
+          : {},
+      // Eski kayıtlarda bu alan yok, yani tercihlerin yaşı bilinmiyor.
+      // "Şimdi" diyoruz: bilinmeyeni eski saymak, cihazdaki gerçek cevapları
+      // sunucudakine yedirmek olurdu. Ters yön daha güvenli — yeni saymanın
+      // bedeli, ikinci cihazda varsayılanların kazanması olurdu ama onu
+      // `merge` ayrıca eliyor (varsayılan profil hiçbir zaman kazanmaz).
+      profileAt: typeof saved.profileAt === 'number' ? saved.profileAt : Date.now(),
     };
   } catch {
     return EMPTY;
+  }
+}
+
+// --------------------------------------------------------------- eşitleme
+
+const DEVICE_KEY = 'wordly:device:v1';
+const BASE_KEY = 'wordly:sync-base:v1';
+
+/**
+ * Bu kuruluma ait sabit kimlik.
+ *
+ * Günlük XP tablosu cihaz kırılımlı: aynı gün telefonda ve tablette çalışan
+ * biri için gerçek toplam ikisinin toplamıdır. Bu kimlik olmadan hangi
+ * satırın bizim olduğunu bilemeyiz ve kendi XP'mizi kendi üstümüze ekleriz.
+ *
+ * Uygulama silinip yeniden kurulursa yeni bir kimlik doğuyor; eski satırlar
+ * sunucuda "başka cihaz" olarak kalır. Bu kayıp değil: XP toplamı doğru
+ * kalıyor, yalnızca kırılım eskisini ayrı bir cihaz sayıyor.
+ */
+export async function deviceId(): Promise<string> {
+  try {
+    const saved = await AsyncStorage.getItem(DEVICE_KEY);
+    if (saved) return saved;
+  } catch {
+    // Okunamadıysa aşağıda yenisi üretilecek.
+  }
+
+  const fresh = `d-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
+  try {
+    await AsyncStorage.setItem(DEVICE_KEY, fresh);
+  } catch {
+    // Yazılamadıysa bu oturum için geçerli; bir sonraki açılışta yenisi olur.
+  }
+  return fresh;
+}
+
+/**
+ * Son eşitlemede sunucuda ne olduğu.
+ *
+ * Üç yönlü birleştirmenin tabanı. Kullanıcıya göre saklanıyor: başka bir
+ * hesaba giriş yapıldığında önceki hesabın tabanı geçerli değildir ve
+ * kullanılırsa o hesabın kayıtlarını silinmiş sanardık.
+ */
+export async function loadBase(userId: string): Promise<Base> {
+  try {
+    const raw = await AsyncStorage.getItem(BASE_KEY);
+    if (!raw) return EMPTY_BASE;
+    const saved = JSON.parse(raw) as { userId?: string; base?: Base };
+    if (saved.userId !== userId || !saved.base) return EMPTY_BASE;
+    return { ...EMPTY_BASE, ...saved.base };
+  } catch {
+    return EMPTY_BASE;
+  }
+}
+
+export async function saveBase(userId: string, base: Base): Promise<void> {
+  try {
+    await AsyncStorage.setItem(BASE_KEY, JSON.stringify({ userId, base }));
+  } catch {
+    // Yazılamadıysa bir sonraki eşitleme boş tabanla çalışır: birleşim
+    // yapılır, silmeler kaçırılır. Veri kaybetmekten iyidir.
+  }
+}
+
+export async function clearBase(): Promise<void> {
+  try {
+    await AsyncStorage.removeItem(BASE_KEY);
+  } catch {
+    // yoksay
   }
 }
 
@@ -157,7 +256,8 @@ export function save(state: Saved): void {
     pending = null;
     const snapshot = queued;
     queued = null;
-    if (snapshot) void AsyncStorage.setItem(KEY, JSON.stringify(snapshot)).catch(() => {});
+    if (snapshot)
+      void AsyncStorage.setItem(KEY, JSON.stringify(snapshot)).catch(() => {});
   }, 700);
 }
 
@@ -220,13 +320,13 @@ export function withMistake(
 ): Record<string, Mistake> {
   const key = mistakeKey(m);
   const seen = book[key];
-  const next = { ...book, [key]: { ...m, times: (seen?.times ?? 0) + 1, at: today() } };
-
-  const keys = Object.keys(next);
-  if (keys.length <= MISTAKE_CAP) return next;
-  keys.sort((a, b) => next[a].at.localeCompare(next[b].at));
-  for (const old of keys.slice(0, keys.length - MISTAKE_CAP)) delete next[old];
-  return next;
+  // Sınırlama `merge` ile aynı fonksiyondan geliyor. İki ayrı kopya olsaydı
+  // biri tarihe, öteki tarihe+anahtara göre elerdi; o fark her eşitlemede
+  // cihazların birbirinin kayıtlarını atmasına yol açardı.
+  return capMistakes({
+    ...book,
+    [key]: { ...m, times: (seen?.times ?? 0) + 1, at: today() },
+  });
 }
 
 /**

@@ -73,6 +73,59 @@ Bunlar SQL ile ayarlanamıyor, Supabase panelinden elle girilmeli:
 3. **Confirm email** açık bırakılırsa kayıttan sonra oturum açılmaz;
    uygulama bunu "E-postanı doğrula" ekranıyla anlatıyor.
 
+## Eşitleme
+
+Uygulama tarafı: `mobile/src/server/merge.ts` (kararlar), `sync.ts` (gidiş
+dönüş), `AppContext` (ne zaman).
+
+### Üç yönlü birleştirme
+
+Yerel, sunucu ve **taban** — son eşitlemede sunucuda ne olduğu — karşılaştırılıyor.
+Taban `AsyncStorage`'da, kullanıcı kimliğiyle birlikte duruyor.
+
+Taban olmadan "yerelde yok, sunucuda var" iki ayrı olaya uyar: kullanıcı
+sildi, ya da başka cihaz ekledi. İlkinde silinmeli, ikincisinde eklenmeli.
+Ayırt eden tek şey tabanda olup olmadığı; tabansız bir birleştirmede silinen
+her kelime bir sonraki turda geri dirilir.
+
+Taban **yalnızca yazma bittikten sonra** kaydediliyor. Önce kaydedilseydi,
+yarıda kalan bir yazma "gönderildi" sayılır ve o satırlar bir daha hiç
+gönderilmezdi.
+
+### Bilinçli taraf tutmalar
+
+| Durum | Karar | Neden |
+|---|---|---|
+| Burada silinen, başka cihazda yeniden eklenen kelime | **Silme kazanır** | Zaman damgası tutmadan hangisinin sonra olduğu bilinemez. "Sildiğim geri gelmesin", yanılma hâlinde daha az rahatsız edici. |
+| Hata defteri 200 sınırını aşarsa | **Düşenler sunucudan da silinir** | Sınır bir ürün kuralı. Yalnızca cihazda uygulanırsa sunucu sınırsız büyür ve aynı kayıtlar her turda geri iner. Eleme hem tarihe hem anahtara göre, yoksa iki cihaz farklı kayıtları atar. |
+| Kayıt anında sunucudaki boş profil | **Yerel kazanır** | Tetikleyicinin az önce açtığı boş satırın tarihi "şimdi"dir. Yalnızca tarihe bakan bir kural, aylardır çevrimdışı çalışmış birinin tüm tercihlerini hesap açtığı anda silerdi. |
+| Arena sayaçları | **Büyük olan** | Bunlar birikimli sayaç, tercih değil; profil sunucudan gelse bile geri sarmamalı. |
+
+### Günlük XP neden iki tabloda
+
+Cihazdaki `daily` **yalnızca bu cihazın** payı ve sunucuya öyle gidiyor.
+Diğer cihazlardan gelen `remoteDaily`'de ayrı duruyor. Ekranda gösterilen
+toplam ikisinin toplamı.
+
+Uzaktan geleni `daily`'nin üstüne yazsaydık, gönderdiğimiz pay her eşitlemede
+kendi üstüne eklenir ve XP hiç çalışmadan katlanarak büyürdü.
+
+### Ne zaman eşitleniyor
+
+Giriş yapıldığında, uygulama önplana/arkaplana geçtiğinde, açıkken beş
+dakikada bir, ve Ayarlar'daki düğmeyle elle.
+
+Her değişiklikte değil: eşitlemenin sonucu yerel duruma yazılıyor ve o yazma
+yeni bir eşitlemeyi tetiklerdi — kendi kuyruğunu kovalayan bir döngü.
+Aralarda kaybolan bir şey yok, çünkü ilerleme zaten cihazda.
+
+### `saved_words` neden `on conflict do nothing`
+
+Bu tablonun yalnızca `insert` ve `delete` politikası var, `update` yok.
+Sıradan bir upsert çakışmada UPDATE deneyip RLS'e takılıyor — sınandı ve
+reddedildiği doğrulandı. Güncellenecek bir alan da yok: satırın varlığı
+bilginin kendisi.
+
 ## Migration'lar
 
 `migrations/` altındaki dosyalar Supabase'e uygulanmış hâlleriyle duruyor.
@@ -93,3 +146,15 @@ kurulsa şema burada.
   otomatik oluştu.
 - Sınama `RAISE EXCEPTION` ile geri alındı; veritabanında sınama satırı
   kalmadı (altı tablonun altısı da sıfır satır).
+
+Eşitleme için ayrıca:
+
+- Birleştirme kuralları 22 otomatik testle sınanıyor: `cd mobile && npm test`.
+- İstemcinin yaptığı bütün yazmalar `authenticated` rolüyle, RLS açıkken
+  çalıştırıldı: konum geri sarmadı (40 → 12 denemesi 40'ta kaldı), aynı
+  cihazın iki kez yazması toplamı değiştirmedi, iki cihazın aynı günü
+  toplandı (100 + 50 = 150), hata sayacı güncellendi, profil tetikleyicinin
+  açtığı satırın üstüne yazıldı.
+- `saved_words` üzerinde düz upsert'in RLS tarafından **reddedildiği** ayrıca
+  doğrulandı; `on conflict do nothing` gerçekten gerekliydi.
+- İki sınama da geri alındı; tablolar yine sıfır satır.

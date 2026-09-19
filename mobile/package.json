@@ -29,6 +29,7 @@
     "react-native-url-polyfill": "^2.0.0"
   },
   "devDependencies": {
+    "@types/node": "^22.20.4",
     "@types/react": "~19.2.2",
     "typescript": "~6.0.3"
   },
@@ -37,7 +38,9 @@
     "tunnel": "expo start --tunnel",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "test": "node --test \"src/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.test.json"
   },
   "private": true
 }

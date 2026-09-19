@@ -12,16 +12,40 @@ import { PLAN_IDS, PlanId } from '../data/subscription';
 import { CefrLevel } from '../data/curriculum';
 import {
   clear,
+  clearBase,
+  deviceId,
   EMPTY,
   flush,
   load,
+  loadBase,
   save,
+  saveBase,
   streakOf,
   today,
   withMistake,
   type Mistake,
   type Saved,
 } from './persist';
+import { useAuth } from './AuthContext';
+import { syncOnce } from '../server/sync';
+import type { DefaultProfile, LocalState } from '../server/merge';
+
+/** Uygulama açıkken eşitleme aralığı. */
+const SYNC_EVERY_MS = 5 * 60 * 1000;
+
+/**
+ * Kurulum varsayılanları.
+ *
+ * `merge` bunlara bakarak "bu cihazda gerçek bir tercih var mı, yoksa hâlâ
+ * varsayılan mı?" diye soruyor: ikinci bir cihaza giriş yapıldığında
+ * varsayılanların sunucudaki gerçek cevapları ezmemesi buna bağlı.
+ */
+const DEFAULT_PROFILE: DefaultProfile = {
+  cefr: EMPTY.cefr,
+  goals: EMPTY.goals,
+  dailyTime: EMPTY.dailyTime,
+  skills: EMPTY.skills,
+};
 
 export type { Mistake } from './persist';
 
@@ -110,7 +134,14 @@ type AppValue = {
   plan: PlanId;
   setPlan: (p: PlanId) => void;
 
-  /** Kazanılan toplam XP ve kesintisiz çalışma serisi (gün). */
+  /**
+   * Kazanılan toplam XP ve kesintisiz çalışma serisi (gün).
+   *
+   * Bu üç alan **her zaman toplamı** veriyor: bu cihazın kazandığı artı
+   * hesaba bağlı diğer cihazlardan eşitlenen. Sunucuya gönderilen pay ayrı
+   * tutuluyor ve buradan hiç görünmüyor; ekranların yanlış tabloyu okuması
+   * mümkün olmasın diye ayrım context'in içinde kalıyor.
+   */
   xp: number;
   streak: number;
   /** Gün → o gün kazanılan XP. Haftalık grafik buradan çiziliyor. */
@@ -133,6 +164,17 @@ type AppValue = {
 
   /** Cihazdaki ilerlemeyi siler — Ayarlar'daki "ilerlemeyi sıfırla". */
   resetProgress: () => void;
+
+  /** Eşitleme durumu. Hesap yoksa hepsi boş kalır, bu bir hata değil. */
+  sync: {
+    running: boolean;
+    /** Son başarılı eşitlemenin zamanı (ms), hiç olmadıysa null. */
+    at: number | null;
+    /** Son denemede sunucudan dönen sorun. Başarıda temizleniyor. */
+    problem: string | null;
+    /** Elle eşitleme — Ayarlar'daki düğme. */
+    now: () => void;
+  };
 };
 
 const AppContext = createContext<AppValue | null>(null);
@@ -140,6 +182,7 @@ const AppContext = createContext<AppValue | null>(null);
 const MAX_COMBO = 5;
 
 export function AppProvider({ children }: { children: React.ReactNode }) {
+  const { session } = useAuth();
   const [toast, setToast] = useState<Toast>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -179,7 +222,13 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [savedWords, setSavedWords] = useState<string[]>([]);
   const [xp, setXp] = useState(0);
   const [daily, setDaily] = useState<Record<string, number>>({});
+  // Diğer cihazlardan eşitlenen gün başına XP. `daily` ile karıştırılmıyor:
+  // `daily` sunucuya bu cihazın payı olarak gönderiliyor, uzaktan geleni
+  // onun üstüne yazmak o payı her eşitlemede kendi üstüne eklerdi.
+  const [remoteDaily, setRemoteDaily] = useState<Record<string, number>>({});
   const [mistakes, setMistakes] = useState<Record<string, Mistake>>({});
+  // Tercihlerin yaşı — profil çakışmasında "son yazan kazanır" için.
+  const [profileAt, setProfileAt] = useState(0);
   // Kayıt okunana kadar hiçbir şey çizilmiyor: varsayılanlarla bir kare
   // çizmek, o karede yazılan bir değerin kaydı ezmesi demek olurdu.
   const [hydrated, setHydrated] = useState(false);
@@ -188,8 +237,11 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [joinedClub, setJoinedClub] = useState(true);
   const [plan, setPlan] = useState<PlanId>(PLAN_IDS.yearly);
 
-  const toggle = (setter: React.Dispatch<React.SetStateAction<string[]>>) => (value: string) =>
-    setter((cur) => (cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value]));
+  const toggle =
+    (setter: React.Dispatch<React.SetStateAction<string[]>>) => (value: string) =>
+      setter((cur) =>
+        cur.includes(value) ? cur.filter((v) => v !== value) : [...cur, value],
+      );
 
   // Açılışta kaydı oku.
   useEffect(() => {
@@ -205,7 +257,9 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setSavedWords(saved.savedWords);
       setXp(saved.xp);
       setDaily(saved.daily);
+      setRemoteDaily(saved.remoteDaily);
       setMistakes(saved.mistakes);
+      setProfileAt(saved.profileAt);
       setGame((g) => ({
         ...g,
         arenaXp: saved.arena.xp,
@@ -235,6 +289,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       xp,
       daily,
       mistakes,
+      remoteDaily,
+      profileAt,
     };
     save(state);
   }, [
@@ -252,6 +308,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     xp,
     daily,
     mistakes,
+    remoteDaily,
+    profileAt,
   ]);
 
   // Uygulama arka plana alınırken bekleyen yazma hemen yapılır; aksi hâlde
@@ -287,10 +345,21 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     });
   }, []);
 
+  /**
+   * Tercih değiştiğinde yaşını da işaretler.
+   *
+   * Profil çakışması "son yazan kazanır" kuralıyla çözülüyor; damgayı
+   * koymazsak iki dolu profilden hangisinin yeni olduğu bilinemez ve
+   * öğrencinin az önce verdiği cevap, aylar önceki bir kayda yenilir.
+   */
+  const touchProfile = useCallback(() => setProfileAt(Date.now()), []);
+
   const resetProgress = useCallback(() => {
     void clear();
+    void clearBase();
     setXp(0);
     setDaily({});
+    setRemoteDaily({});
     setMistakes({});
     setGoals(EMPTY.goals);
     setDailyTime(EMPTY.dailyTime);
@@ -299,23 +368,172 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     setTestResult(null);
     setPositions({});
     setSavedWords([]);
+    setProfileAt(0);
     setGame((g) => ({ ...g, arenaXp: 0, arenaFound: 0, arenaStreak: 0, combo: 1 }));
   }, []);
+
+  /**
+   * Ekranlara verilen gün tablosu: bu cihaz artı diğerleri.
+   *
+   * Birleştirme burada yapılıyor ki hiçbir ekranın "hangi tablo?" diye
+   * sorması gerekmesin — dışarıdan tek bir doğru tablo görünüyor.
+   */
+  const dailyTotal = useMemo(() => {
+    const total: Record<string, number> = { ...daily };
+    for (const [day, points] of Object.entries(remoteDaily)) {
+      total[day] = (total[day] ?? 0) + points;
+    }
+    return total;
+  }, [daily, remoteDaily]);
+
+  const xpTotal = useMemo(
+    () => xp + Object.values(remoteDaily).reduce((n, v) => n + v, 0),
+    [xp, remoteDaily],
+  );
+
+  // ------------------------------------------------------------- eşitleme
+
+  const userId = session?.user.id ?? null;
+  const [syncRunning, setSyncRunning] = useState(false);
+  const [syncAt, setSyncAt] = useState<number | null>(null);
+  const [syncProblem, setSyncProblem] = useState<string | null>(null);
+
+  // Tek tur çalışsın: iki eşitleme aynı anda koşarsa ikisi de aynı tabanı
+  // okur ve ikincisi birincinin yazdığını görmeden karar verir.
+  const inFlight = useRef(false);
+  const device = useRef<string | null>(null);
+
+  // `runSync` bağımlılıklarına bütün durumu koymak, her XP'de yeni bir
+  // fonksiyon üretip zamanlayıcıları sıfırlardı. Güncel durumu ref ile
+  // okuyoruz; efektler sabit kalıyor.
+  const snapshot = useRef<LocalState | null>(null);
+  snapshot.current = {
+    positions,
+    savedWords,
+    mistakes,
+    daily,
+    cefr,
+    goals,
+    dailyTime,
+    skills,
+    testResult,
+    arena: { xp: game.arenaXp, found: game.arenaFound, streak: game.arenaStreak },
+    profileAt,
+  };
+
+  const runSync = useCallback(async () => {
+    const id = userId;
+    const local = snapshot.current;
+    if (!id || !local || inFlight.current) return;
+
+    inFlight.current = true;
+    setSyncRunning(true);
+    try {
+      if (!device.current) device.current = await deviceId();
+      const base = await loadBase(id);
+      const outcome = await syncOnce(id, device.current, local, base, DEFAULT_PROFILE);
+
+      if (!outcome.ok) {
+        setSyncProblem(outcome.reason);
+        return;
+      }
+
+      const { applied } = outcome;
+      setPositions(applied.positions);
+      setSavedWords(applied.savedWords);
+      setMistakes(applied.mistakes);
+      setRemoteDaily(applied.remoteDaily);
+
+      if (applied.profile) {
+        setCefr(applied.profile.cefr as CefrLevel);
+        setGoals(applied.profile.goals);
+        setDailyTime(applied.profile.dailyTime);
+        setSkills(applied.profile.skills);
+        setTestResult(applied.profile.testResult as TestResult | null);
+        setGame((g) => ({
+          ...g,
+          arenaXp: applied.profile!.arena.xp,
+          arenaFound: applied.profile!.arena.found,
+          arenaStreak: applied.profile!.arena.streak,
+        }));
+        setProfileAt(applied.profile.profileAt);
+      }
+
+      // Taban ancak yazma bittikten sonra kaydediliyor. Önce kaydedilseydi
+      // yarıda kalan bir yazma "gönderildi" sayılır ve o satırlar bir daha
+      // hiç gönderilmezdi.
+      await saveBase(id, outcome.base);
+      setSyncProblem(null);
+      setSyncAt(Date.now());
+    } finally {
+      inFlight.current = false;
+      setSyncRunning(false);
+    }
+  }, [userId]);
+
+  /**
+   * Ne zaman eşitleniyor.
+   *
+   * Her değişiklikte değil: eşitlemenin sonucu yerel duruma yazılıyor ve o
+   * yazma yeni bir eşitlemeyi tetiklerdi — kendi kuyruğunu kovalayan bir
+   * döngü. Bunun yerine belirli anlar seçildi; ikisinin arasında kaybolan
+   * bir şey yok, çünkü ilerleme zaten cihazda duruyor.
+   *
+   * - Giriş yapıldığında (ya da uygulama girişliyken açıldığında)
+   * - Uygulama önplana geldiğinde ve arka plana giderken
+   * - Açıkken beş dakikada bir
+   */
+  useEffect(() => {
+    if (!hydrated || !userId) return;
+
+    void runSync();
+    const every = setInterval(() => void runSync(), SYNC_EVERY_MS);
+
+    // Diske yazmayı burada değil, yukarıdaki dinleyici yapıyor; o hesapsız
+    // kullanımda da çalışmak zorunda.
+    const sub = AppState.addEventListener('change', () => void runSync());
+
+    return () => {
+      clearInterval(every);
+      sub.remove();
+    };
+  }, [hydrated, userId, runSync]);
+
+  // Çıkış yapılınca diğer cihazların XP'si ekranda kalmamalı: o hesabın
+  // verisi, bu cihazın değil.
+  useEffect(() => {
+    if (!userId) setRemoteDaily({});
+  }, [userId]);
 
   const value = useMemo<AppValue>(
     () => ({
       toast,
       fire,
       goals,
-      toggleGoal: toggle(setGoals),
+      toggleGoal: (goal: string) => {
+        toggle(setGoals)(goal);
+        touchProfile();
+      },
       dailyTime,
-      setDailyTime,
+      setDailyTime: (t: string) => {
+        setDailyTime(t);
+        touchProfile();
+      },
       skills,
-      toggleSkill: toggle(setSkills),
+      toggleSkill: (skill: string) => {
+        toggle(setSkills)(skill);
+        touchProfile();
+      },
       cefr,
-      setCefr,
+      setCefr: (level: CefrLevel) => {
+        setCefr(level);
+        touchProfile();
+      },
       testResult,
-      setTestResult,
+      setTestResult: (result: TestResult) => {
+        setTestResult(result);
+        touchProfile();
+      },
       game,
       arenaSolved: (gained: number) =>
         setGame((g) => ({
@@ -350,16 +568,49 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       toggleJoinedClub: () => setJoinedClub((v) => !v),
       plan,
       setPlan,
-      xp,
-      streak: streakOf(Object.keys(daily)),
-      daily,
+      xp: xpTotal,
+      streak: streakOf(Object.keys(dailyTotal)),
+      daily: dailyTotal,
       mistakes,
       recordMistake,
       forgetMistake,
       award,
       resetProgress,
+      sync: {
+        running: syncRunning,
+        at: syncAt,
+        problem: syncProblem,
+        now: () => void runSync(),
+      },
     }),
-    [toast, fire, goals, dailyTime, skills, cefr, testResult, game, positions, savedWords, liked, following, joinedClub, plan, xp, daily, mistakes, recordMistake, forgetMistake, award, resetProgress],
+    [
+      toast,
+      fire,
+      goals,
+      dailyTime,
+      skills,
+      cefr,
+      testResult,
+      game,
+      positions,
+      savedWords,
+      liked,
+      following,
+      joinedClub,
+      plan,
+      xpTotal,
+      dailyTotal,
+      mistakes,
+      recordMistake,
+      forgetMistake,
+      award,
+      resetProgress,
+      touchProfile,
+      syncRunning,
+      syncAt,
+      syncProblem,
+      runSync,
+    ],
   );
 
   // Kayıt okunmadan çizmiyoruz; bu birkaç milisaniye sürüyor ve uygulama

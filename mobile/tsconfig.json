@@ -2,5 +2,18 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true
-  }
+  },
+  // Testler ayrı tutuluyor (`tsconfig.test.json`). Sebebi biçimsel değil:
+  // test dosyaları Node tiplerini gerektiriyor ve o tipler uygulama koduna
+  // karışırsa React Native'de var olmayan `Buffer`, `process`, `require` gibi
+  // şeyler derleyicide geçerli görünür — telefonda çöken kod, masada temiz
+  // görünür.
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "android",
+    "ios",
+    "**/*.test.ts"
+  ]
 }
