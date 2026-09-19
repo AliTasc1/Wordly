@@ -12,6 +12,15 @@ npm install
 npx expo start
 ```
 
+`npm install` her `git pull` sonrası gerekiyor: yeni paketler eklendiğinde
+(Supabase istemcisi, derin bağlantı, kayıt) atlanırsa uygulama açılışta
+"module not found" ile çöker.
+
+**`git pull` büyük olabilir.** Depoda 9.461 kelime telaffuzu duruyor (63 MB).
+Uygulama şu an onları kullanmıyor — paket boyutu ölçüldü ve gömülmemesine
+karar verildi (bkz. `content/build-audio.py`) — ama dosyalar ileride
+sunucudan indirilmek üzere saklanıyor.
+
 Sonra QR'ı okut:
 
 - **Android:** Kamerayla değil, **Expo Go uygulamasını açıp içindeki
@@ -85,3 +94,54 @@ bilerek `^` ya da `~` olmadan yazıldı. Bu paketlerin yerli tarafı **Expo Go'n
 içinde** geliyor; JS tarafı bir yama sürüm ileri giderse ikisi uyuşmaz ve
 uygulama açılışta kapanır. Expo Go hangi sürümü taşıyorsa `package.json` da onu
 yazmalı — doğru liste `node_modules/expo/bundledNativeModules.json` dosyasında.
+
+
+## Hesap açmayı denemek
+
+Uygulama hesapsız da tam çalışıyor; hesap yalnızca ilerlemeyi ikinci bir
+cihaza taşımak için. Denemek istersen:
+
+**Ayarlar → Hesabını bağla → Kayıt ol**
+
+Üç şeyi bilmen gerekiyor:
+
+### 1. E-posta yalnızca kendi Supabase adresine gidiyor
+
+Supabase'in varsayılan e-posta servisi **yalnızca projenin ekibindeki
+adreslere** gönderiyor. Başka bir adresle kayıt olursan sunucu reddeder ve
+uygulama "Bu adrese e-posta gönderilemiyor" der — bu uygulamanın hatası
+değil.
+
+Test için **Supabase'e giriş yaptığın e-postayı** kullan.
+
+### 2. Panelde yönlendirme adresleri tanımlı olmalı
+
+Supabase → Authentication → URL Configuration → Redirect URLs:
+
+```
+wordly://**
+exp://**
+```
+
+Bunlar yoksa e-postadaki bağlantı uygulamaya geri dönmez.
+
+### 3. Expo Go'da bağlantı Expo Go'yu açar
+
+Doğrulama bağlantısı geliştirme sırasında `exp://` şemasını kullanıyor,
+yani Expo Go'yu açıyor. Bu normal. `wordly://` yalnızca gerçek derlemede
+(EAS build) devreye girer.
+
+## Neyi test etmeye değer
+
+| Ekran | Bak |
+|---|---|
+| Ana sayfa | Selam saate göre mi, "bugün X XP" gerçek mi |
+| Öğren → herhangi bir bölüm | Kaldığın yer kapatıp açınca duruyor mu |
+| Oyna → Süre Atağı | Sayaç gerçekten işliyor mu, süre dolunca tur bitiyor mu |
+| Oyna → Hayatta Kalma | Üç hatada tur bitiyor mu |
+| Konuşma | Mikrofon gerçekten kaydediyor mu, kendi sesini duyuyor musun |
+| Profil | Ad ve "üye" satırı gerçek mi |
+| Ayarlar → Titreşim | Kapatınca arenada titreşim duruyor mu, kapalı kalıyor mu |
+| Bildirimler | Gerçekten senin durumunu mu anlatıyor |
+| Sosyal | Uydurma kimse yok, sadece liderlik |
+| Abonelik | Para isteyen hiçbir şey yok |
