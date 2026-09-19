@@ -185,6 +185,56 @@ Alt menüye bak. Güncel sürümde beş sekme şu:
 Menüde "Sosyal" yazıyorsa ya da sağ altta yüzen yuvarlak bir düğme duruyorsa,
 telefon hâlâ eski paketi çalıştırıyor demektir.
 
+## Başkasına denettirmek
+
+Test edecek kişi başka evde, başka ağda ve bilgisayarına hiçbir şey kurmak
+istemiyor. Üç yol var, kolaydan zora.
+
+### 1. Tünel — karşı tarafa hiçbir kurulum yok
+
+Senin bilgisayarında:
+
+```
+cd mobile
+npm run tunnel
+```
+
+Bu, geliştirme sunucusunu Expo'nun sunucuları üzerinden internete açıyor;
+aynı Wi-Fi şartı kalkıyor. Terminalde çıkan QR'ın ekran görüntüsünü ya da
+`exp://…` ile başlayan adresi gönder. Karşı taraf yalnızca **Expo Go**
+kuruyor, QR'ı okutuyor ya da adresi Expo Go'daki kutuya yapıştırıyor.
+
+Bedeli: senin bilgisayarın açık ve terminal çalışır durumda kalmalı. İlk
+yükleme yerel ağdan yavaştır.
+
+### 2. APK — kurulum dosyası gönder
+
+Telefonuna kurulup senin bilgisayarından bağımsız çalışan bir dosya. Expo
+hesabı gerekiyor (ücretsiz katman var), derleme Expo'nun sunucularında
+yapılıyor ve sonunda indirilebilir bir bağlantı veriyor:
+
+```
+npm install -g eas-cli
+eas login
+eas build --profile preview --platform android
+```
+
+`preview` profili `eas.json` içinde tanımlı ve **APK** üretiyor — Android'de
+doğrudan kurulabilen biçim. Mağaza için olan `app-bundle` biçimi telefona
+elle kurulamaz, o yüzden ikisi ayrı profil.
+
+iPhone'da bu kadar kolay değil: Apple, imzasız uygulamanın kurulmasına izin
+vermiyor. iOS testi için TestFlight ve geliştirici hesabı (99 $/yıl) gerekiyor.
+
+### 3. Karşı tarafta tam kurulum
+
+Yalnızca kod da değiştirecekse gerekli. Git **ve** Node.js kurulumu, 94 MB
+depo klonu ve çalışan bir terminal demek. Sadece denemek için bu yolu seçme.
+
+**OneDrive uyarısı:** Projeyi OneDrive klasörüne koyma. `node_modules` on
+binlerce küçük dosya; OneDrive hepsini eşitlemeye çalışıp dosyaları kilitliyor
+ve `npm` yarıda kalıyor. `C:\Users\<ad>\Wordly` gibi eşitlenmeyen bir yer seç.
+
 ## Hata yazısını nasıl okuturum
 
 Bir yere takılırsa lazım olan iki şey var:
