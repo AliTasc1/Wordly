@@ -4,13 +4,19 @@ import * as Haptics from 'expo-haptics';
 import { Screen, Spacer } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
-import { REC_WAVE, Waveform } from '../components/Waveform';
+import { LiveWaveform, REC_WAVE, Waveform } from '../components/Waveform';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
 import { speakingOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
+import { useRecorder } from '../audio/recorder';
 import { useBack } from '../navigation/useGo';
+
+/** Saniyeyi `0:07` biçiminde yazar. */
+function clock(seconds: number): string {
+  return `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+}
 
 /**
  * 14 · Konuşma — a scenario, the prompts to answer, and the phrases to lean on.
@@ -35,20 +41,20 @@ export function SpeakScreen() {
   const index = Math.min(position('speaking', cefr), items.length - 1);
   const item = items[index];
 
-  const [recording, setRecording] = useState(false);
+  const recorder = useRecorder();
   const [step, setStep] = useState(0);
   const [phrases, setPhrases] = useState(false);
 
   const last = step === item.prompts.length - 1;
 
-  const toggleRecording = () => {
+  /** Bulunulan yönergenin model okunuşu — kendi kaydıyla karşılaştırmak için. */
+  const sayPrompt = () => {
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    if (recording) fire('Kayıt alındı', 'Otomatik puanlama henüz açık değil');
-    setRecording((r) => !r);
+    speakLine(item.prompts[step], { level: item.level });
   };
 
   const nextStep = () => {
-    setRecording(false);
+    recorder.discard();
     if (last) {
       setPosition('speaking', cefr, (index + 1) % items.length);
       setStep(0);
@@ -66,7 +72,15 @@ export function SpeakScreen() {
       padBottom={34}
       gap={0}
       glows={[
-        { rx: 210, ry: 160, cx: 0.5, cy: 0.08, color: colors.secondary, opacity: 0.24, stop: 0.62 },
+        {
+          rx: 210,
+          ry: 160,
+          cx: 0.5,
+          cy: 0.08,
+          color: colors.secondary,
+          opacity: 0.24,
+          stop: 0.62,
+        },
       ]}>
       <View style={styles.header}>
         <BackButton onPress={back} strong />
@@ -154,25 +168,83 @@ export function SpeakScreen() {
 
       <View style={styles.recorder}>
         <Txt s={12} w={600} c={colors.textDim}>
-          {recording ? 'Kaydediliyor — yönergeyi cevapla' : 'Cevabını yüksek sesle söyle'}
+          {recorder.phase === 'recording'
+            ? `Kaydediliyor · ${clock(recorder.seconds)}`
+            : recorder.phase === 'ready'
+              ? 'Kaydın hazır — model sesle karşılaştır'
+              : recorder.phase === 'asking'
+                ? 'Mikrofon izni bekleniyor…'
+                : 'Cevabını yüksek sesle söyle'}
         </Txt>
-        <Waveform heights={REC_WAVE} idle={!recording} height={36} style={styles.recWave} />
+
+        {/* Dalga artık mikrofondan geliyor: sessizlikte düzleşiyor. Eskiden
+            sabit bir desen oynuyordu ve mikrofon kapalıyken bile kıpırdayıp
+            sesin alındığına dair yanlış bir güvence veriyordu. */}
+        {recorder.phase === 'recording' ? (
+          <LiveWaveform
+            level={recorder.level}
+            tick={recorder.tick}
+            height={36}
+            style={styles.recWave}
+          />
+        ) : (
+          <Waveform heights={REC_WAVE} idle height={36} style={styles.recWave} />
+        )}
 
         <Press
-          onPress={toggleRecording}
+          onPress={recorder.phase === 'recording' ? recorder.stop : recorder.start}
+          disabled={recorder.phase === 'asking'}
           scale={0.95}
           accessibilityRole="button"
-          accessibilityLabel={recording ? 'Kaydı durdur' : 'Kayda başla'}>
+          accessibilityLabel={
+            recorder.phase === 'recording' ? 'Kaydı durdur' : 'Kayda başla'
+          }>
           <Gradient
-            colors={recording ? gradients.danger : gradients.brand}
-            style={[styles.mic, recording ? styles.micLive : styles.micIdle]}>
-            <Txt s={recording ? 24 : 28}>{recording ? '■' : '🎙'}</Txt>
+            colors={recorder.phase === 'recording' ? gradients.danger : gradients.brand}
+            style={[
+              styles.mic,
+              recorder.phase === 'recording' ? styles.micLive : styles.micIdle,
+            ]}>
+            <Txt s={recorder.phase === 'recording' ? 24 : 28}>
+              {recorder.phase === 'recording' ? '■' : '🎙'}
+            </Txt>
           </Gradient>
         </Press>
 
-        <Txt s={11} c={colors.textFaint} style={styles.recNote}>
-          Otomatik telaffuz puanı henüz açık değil.
-        </Txt>
+        {/* Kayıt varken karşılaştırma: kendi sesi ve model ses yan yana.
+            Puan vermiyoruz — konuşma tanıma servisi olmadan üretilecek her
+            sayı uydurma olurdu. Kararı öğrencinin kulağına bırakmak hem
+            dürüst hem öğretici. */}
+        {recorder.phase === 'ready' ? (
+          <View style={styles.compare}>
+            <Press onPress={recorder.playBack} style={styles.compareButton}>
+              <Txt f="m" s={12.5} w={700} c={colors.text}>
+                ▶ Kendi sesin
+              </Txt>
+            </Press>
+            <Press onPress={sayPrompt} style={styles.compareButton}>
+              <Txt f="m" s={12.5} w={700} c={colors.accentSoft}>
+                ▶ Model ses
+              </Txt>
+            </Press>
+            <Press onPress={recorder.discard} style={styles.compareGhost}>
+              <Txt f="m" s={12.5} w={700} c={colors.textGhost}>
+                Tekrar dene
+              </Txt>
+            </Press>
+          </View>
+        ) : null}
+
+        {recorder.problem ? (
+          <Txt s={11} lh={1.5} c={colors.errorTint} style={styles.recNote}>
+            {recorder.problem}
+          </Txt>
+        ) : (
+          <Txt s={11} lh={1.5} c={colors.textFaint} style={styles.recNote}>
+            Otomatik telaffuz puanı henüz açık değil. Kaydını model sesle karşılaştırarak
+            çalış.
+          </Txt>
+        )}
 
         <Press onPress={nextStep} style={styles.recAction}>
           <Txt f="m" s={12} w={700} c={colors.textSubtle}>
@@ -241,14 +313,31 @@ const styles = StyleSheet.create({
   phraseRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
   recorder: { paddingTop: 16, paddingHorizontal: 18, alignItems: 'center', gap: 12 },
   recWave: { width: '100%' },
-  mic: { width: 84, height: 84, borderRadius: 42, alignItems: 'center', justifyContent: 'center' },
+  mic: {
+    width: 84,
+    height: 84,
+    borderRadius: 42,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   micIdle: {
-    boxShadow: '0px 0px 0px 10px rgba(46,107,255,.12), 0px 18px 40px rgba(46,107,255,.42)',
+    boxShadow:
+      '0px 0px 0px 10px rgba(46,107,255,.12), 0px 18px 40px rgba(46,107,255,.42)',
   },
   micLive: {
     boxShadow: '0px 0px 0px 12px rgba(255,77,94,.16), 0px 18px 40px rgba(255,77,94,.4)',
   },
   recNote: { marginTop: -4 },
+  compare: { flexDirection: 'row', gap: 8, alignItems: 'center' },
+  compareButton: {
+    paddingVertical: 10,
+    paddingHorizontal: 14,
+    borderRadius: radii.pill,
+    borderWidth: 1,
+    borderColor: alpha.w14,
+    backgroundColor: alpha.w06,
+  },
+  compareGhost: { paddingVertical: 10, paddingHorizontal: 10 },
   recAction: {
     paddingVertical: 9,
     paddingHorizontal: 14,

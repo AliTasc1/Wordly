@@ -24,6 +24,15 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-audio",
+        {
+          "microphonePermission": "WORDLY, telaffuzunu kaydedip kendi sesini model sesle karşılaştırabilmen için mikrofonu kullanır. Kayıtların telefonundan çıkmaz.",
+          "enableBackgroundRecording": false
+        }
+      ]
+    ]
   }
 }

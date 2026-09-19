@@ -56,7 +56,12 @@ export function stopClips(): void {
  */
 export function playClips(
   clips: number[],
-  opts: { from?: number; rate?: number; onIndex?: (index: number) => void; onDone?: () => void },
+  opts: {
+    from?: number;
+    rate?: number;
+    onIndex?: (index: number) => void;
+    onDone?: () => void;
+  },
 ): void {
   stopClips();
   if (!clips.length) {
@@ -91,6 +96,31 @@ export function playClips(
 }
 
 /** Tek bir dosyayı çalar. */
-export function playClip(clip: number, opts: { rate?: number; onDone?: () => void } = {}): void {
+export function playClip(
+  clip: number,
+  opts: { rate?: number; onDone?: () => void } = {},
+): void {
   playClips([clip], { rate: opts.rate, onDone: opts.onDone });
+}
+
+/**
+ * Cihazdaki bir dosyayı yolundan çalar.
+ *
+ * Paketlenmiş sesler `require()` ile modül kimliği olarak geliyor; öğrencinin
+ * kendi kaydı ise çalışma anında üretilen bir dosya, dolayısıyla yol olarak.
+ * Aynı oynatıcıyı kullanıyor: kayıt çalarken model sesin susması doğrusu.
+ */
+export function playUri(uri: string, opts: { onDone?: () => void } = {}): void {
+  stopClips();
+
+  const audio = instance();
+  listener = audio.addListener('playbackStatusUpdate', (status) => {
+    if (!status.didJustFinish) return;
+    stopClips();
+    opts.onDone?.();
+  });
+
+  audio.replace({ uri });
+  audio.setPlaybackRate(1);
+  audio.play();
 }
