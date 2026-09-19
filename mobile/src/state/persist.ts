@@ -94,6 +94,16 @@ export type Saved = {
    */
   remoteDaily: Record<string, number>;
   /**
+   * Gün → o gün **bu cihazda** çalışılan saniye.
+   *
+   * `daily` ile aynı şekil ve aynı sebeple ayrı: sunucuya bu cihazın payı
+   * olarak gidiyor. Günlük hedef bunun üzerine kuruluyor — XP'den süre
+   * türetmek uydurma olurdu, hızlı çözen ile takılan aynı sayıyı görürdü.
+   */
+  studied: Record<string, number>;
+  /** Başka cihazların gün başına çalışma süresi. */
+  remoteStudied: Record<string, number>;
+  /**
    * Tercihlerin en son ne zaman değiştiği (ms).
    *
    * Profil çakışmasında "son yazan kazanır" diyebilmek için gerekli; onsuz
@@ -124,6 +134,8 @@ export const EMPTY: Saved = {
   daily: {},
   mistakes: {},
   remoteDaily: {},
+  studied: {},
+  remoteStudied: {},
   profileAt: 0,
   haptics: true,
 };

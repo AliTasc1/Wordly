@@ -10,12 +10,14 @@ import { Txt } from '../components/Txt';
 import { alpha, colors, radii, shadows } from '../theme/tokens';
 import { vocabOf } from '../content';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { useBack } from '../navigation/useGo';
 import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
 import { wordClip } from '../audio/clips';
 
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
+  useStudySession();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire, isSaved, toggleSavedWord, savedWords, award } =
     useApp();

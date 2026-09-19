@@ -152,6 +152,9 @@ const NEREYE: Record<keyof Saved, ((out: ReturnType<typeof exportOf>) => unknown
     // önüne koymak olurdu.
     daily: 'disarida',
     remoteDaily: 'disarida',
+    studied: (o) => o.ilerleme.gunlukCalismaSaniyesi,
+    // `studied` ile birlikte `gunlukCalismaSaniyesi` altında toplanıyor.
+    remoteStudied: 'disarida',
     // Çakışma çözümünün çalışma notu. Kullanıcının verisi değil.
     profileAt: 'disarida',
   };
@@ -176,6 +179,7 @@ test('tabloda yeri olan her alan dosyaya gerçekten taşınıyor', () => {
       asked: 10,
     } as Saved['testResult'],
     positions: { 'vocab:C1': 9, 'reading:C1': 2 },
+    studied: { '2026-09-18': 640 },
     savedWords: ['c1-w-004', 'c1-w-011'],
     xp: 3450,
     arena: { xp: 88, found: 31, streak: 6 },

@@ -14,6 +14,7 @@ import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import { listeningOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { useBack, useGo } from '../navigation/useGo';
 import { primeVoices, speakLine, speakSequence, stopSpeech } from '../audio/speech';
 import { clipsFor } from '../audio/clips';
@@ -26,6 +27,7 @@ const SPEEDS = [
 
 /** 12 · Dinleme — player, transcript and comprehension questions. */
 export function ListenScreen() {
+  useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire, award, recordMistake } = useApp();

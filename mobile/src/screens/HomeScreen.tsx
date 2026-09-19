@@ -11,6 +11,7 @@ import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
 import { DAILY_GAME } from '../data/profile';
 import { displayNameOf, greetingFor, initialOf, todayLine } from '../content/identity';
 import { grammarOf } from '../content';
+import { durationText, goalProgress, goalText } from '../content/goal';
 import { useApp } from '../state/AppContext';
 import { avatarOf, initialsOf, weekEndsText } from '../content/board';
 import { fetchBoard, type Board } from '../server/leaderboard';
@@ -22,7 +23,7 @@ import { deckProgress, tr } from '../content/progress';
 /** 06 · Ana Sayfa — "what should I do now?" answered in two seconds. */
 export function HomeScreen() {
   const { go } = useGo();
-  const { cefr, position, positions, xp, streak, setArenaMode, daily, mistakes } =
+  const { cefr, position, positions, xp, streak, setArenaMode, daily, mistakes, dailyTime, goal } =
     useApp();
   const { user } = useAuth();
 
@@ -34,6 +35,11 @@ export function HomeScreen() {
     user?.email,
   );
   const todayXp = daily[today()] ?? 0;
+
+  // Kurulumda seçilen günlük süre uzun zaman hiçbir şey yapmıyordu. Artık
+  // gerçek ölçülen süreyle karşılaştırılıyor ve ilk kartta duruyor —
+  // görünmeyen hedef, hedef değildir.
+  const today_ = goalProgress(goal.studiedToday, dailyTime);
   const mistakeCount = Object.keys(mistakes).length;
 
   /*
@@ -143,6 +149,27 @@ export function HomeScreen() {
           border="rgba(124,92,255,.32)"
         />
       </View>
+
+      <Card radius={radii.section}>
+        <View style={styles.goalHead}>
+          <Txt f="m" s={14.5} w={700}>
+            Bugünkü hedefin
+          </Txt>
+          <Txt f="mono" s={12} w={700} c={today_.done ? colors.success : colors.textDim}>
+            {durationText(today_.studied)} / {durationText(today_.goal)}
+          </Txt>
+        </View>
+        <ProgressBar
+          pct={today_.pct}
+          height={10}
+          from={today_.done ? colors.success : colors.primary}
+          to={today_.done ? colors.success : colors.accent}
+        />
+        <Txt s={12} c={today_.done ? colors.successSoft : colors.textDim}>
+          {today_.done ? '✓ ' : ''}
+          {goalText(today_)}
+        </Txt>
+      </Card>
 
       <Card radius={radii.section}>
         <View style={styles.goalHead}>

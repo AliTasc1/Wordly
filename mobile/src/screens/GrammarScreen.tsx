@@ -11,10 +11,12 @@ import { alpha, colors, radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { useBack, useGo } from '../navigation/useGo';
 
 /** 11 · Gramer — concept → examples → mistakes → exercises. */
 export function GrammarScreen() {
+  useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire, award, recordMistake } = useApp();

@@ -9,6 +9,7 @@ import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
 import { speakingOf } from '../content';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
 import { useRecorder } from '../audio/recorder';
 import { useBack } from '../navigation/useGo';
@@ -28,6 +29,7 @@ function clock(seconds: number): string {
  * scoring is not live.
  */
 export function SpeakScreen() {
+  useStudySession();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire } = useApp();
 

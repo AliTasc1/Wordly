@@ -40,18 +40,22 @@ export type ExportInput = {
 
 export type ExportFile = ReturnType<typeof exportOf>;
 
-/** Gün → toplam XP: bu cihaz ve diğerleri birlikte. */
-function mergedDaily(saved: Saved): Record<string, number> {
-  const days = new Set([...Object.keys(saved.daily), ...Object.keys(saved.remoteDaily)]);
+/** Gün → iki tablonun toplamı: bu cihaz ve diğerleri birlikte. */
+function mergedByDay(
+  mine: Record<string, number>,
+  others: Record<string, number>,
+): Record<string, number> {
+  const days = new Set([...Object.keys(mine), ...Object.keys(others)]);
   const out: Record<string, number> = {};
   for (const day of [...days].sort()) {
-    out[day] = (saved.daily[day] ?? 0) + (saved.remoteDaily[day] ?? 0);
+    out[day] = (mine[day] ?? 0) + (others[day] ?? 0);
   }
   return out;
 }
 
 export function exportOf({ saved, account, appVersion, at }: ExportInput) {
-  const daily = mergedDaily(saved);
+  const daily = mergedByDay(saved.daily, saved.remoteDaily);
+  const studied = mergedByDay(saved.studied, saved.remoteStudied);
 
   return {
     hakkinda: {
@@ -91,6 +95,8 @@ export function exportOf({ saved, account, appVersion, at }: ExportInput) {
       // birinin serisi, tek cihaza bakıldığında kopuk görünür.
       gunlukSeri: streakOf(Object.keys(daily), new Date(at)),
       gunlukXp: daily,
+      /** Gün → çalışılan saniye. Günlük hedef bunun üzerinden ölçülüyor. */
+      gunlukCalismaSaniyesi: studied,
       kaldiginYerler: saved.positions,
       kaydettiginKelimeler: saved.savedWords,
     },

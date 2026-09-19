@@ -13,10 +13,12 @@ import { readingOf } from '../content';
 import { artFor } from '../content/reading-art';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { useBack, useGo } from '../navigation/useGo';
 
 /** 13 · Okuma — passage with tappable words and a comprehension check. */
 export function ReadScreen() {
+  useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire, award, recordMistake } = useApp();

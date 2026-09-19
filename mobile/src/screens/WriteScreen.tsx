@@ -10,6 +10,7 @@ import { alpha, colors, radii, shadows } from '../theme/tokens';
 import { writingOf } from '../content';
 import { accepts, diagnose } from '../content/writing';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { useBack, useGo } from '../navigation/useGo';
 
 /**
@@ -24,6 +25,7 @@ import { useBack, useGo } from '../navigation/useGo';
  * öğrenci boş satıra aynı cümleyi yazamayabilir.
  */
 export function WriteScreen() {
+  useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire, award, recordMistake } = useApp();

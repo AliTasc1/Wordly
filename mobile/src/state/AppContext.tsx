@@ -174,6 +174,22 @@ type AppValue = {
   haptics: boolean;
   setHaptics: (on: boolean) => void;
 
+  /**
+   * Günlük çalışma hedefi — kurulumda seçilen sürenin gerçek karşılığı.
+   *
+   * O soru uzun süre sorulup hiçbir yerde kullanılmıyordu. Artık süre
+   * gerçekten ölçülüyor (`useStudyClock`) ve hedef buradan okunuyor.
+   */
+  goal: {
+    /** Bugün çalışılan saniye — bu cihaz ve diğerleri birlikte. */
+    studiedToday: number;
+    /** Sayaç bağlamak için: alıştırma ekranları `useStudyClock`'a veriyor. */
+    addStudy: (seconds: number) => void;
+    activityAt: React.RefObject<number>;
+    /** Hareket bildirimi — cevap, kart geçişi, ses. */
+    ping: () => void;
+  };
+
   /** Cihazdaki ilerlemeyi siler — Ayarlar'daki "ilerlemeyi sıfırla". */
   resetProgress: () => void;
 
@@ -246,6 +262,23 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   // `daily` sunucuya bu cihazın payı olarak gönderiliyor, uzaktan geleni
   // onun üstüne yazmak o payı her eşitlemede kendi üstüne eklerdi.
   const [remoteDaily, setRemoteDaily] = useState<Record<string, number>>({});
+  // Çalışma süresi, XP ile aynı iki tabloyu kullanıyor: bu cihazın payı ve
+  // diğerlerinden eşitlenen. Sebebi de aynı — kendi payımızı kendi üstümüze
+  // eklemeden sunucuya gönderebilmek.
+  const [studied, setStudied] = useState<Record<string, number>>({});
+  const [remoteStudied, setRemoteStudied] = useState<Record<string, number>>({});
+
+  /*
+    Son hareket damgası.
+
+    Sayaç buna bakıp duruyor: iki dakikadır hiçbir şey olmadıysa öğrenci
+    çalışmıyordur. Durum değil ref, çünkü her cevapta yeniden çizim
+    yaptırmasının bir sebebi yok — kimse bu sayıyı görmüyor.
+  */
+  const activityAt = useRef(Date.now());
+  const ping = useCallback(() => {
+    activityAt.current = Date.now();
+  }, []);
   const [mistakes, setMistakes] = useState<Record<string, Mistake>>({});
   // Tercihlerin yaşı — profil çakışmasında "son yazan kazanır" için.
   const [profileAt, setProfileAt] = useState(0);
@@ -285,6 +318,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setSavedWords(saved.savedWords);
       setXp(saved.xp);
       setDaily(saved.daily);
+      setStudied(saved.studied);
+      setRemoteStudied(saved.remoteStudied);
       setRemoteDaily(saved.remoteDaily);
       setMistakes(saved.mistakes);
       setProfileAt(saved.profileAt);
@@ -325,6 +360,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       daily,
       mistakes,
       remoteDaily,
+      studied,
+      remoteStudied,
       profileAt,
       haptics,
     }),
@@ -343,6 +380,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       daily,
       mistakes,
       remoteDaily,
+      studied,
+      remoteStudied,
       profileAt,
       haptics,
     ],
@@ -365,11 +404,23 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   const award = useCallback((points: number) => {
+    // Her XP bir hareket: sayaç öğrencinin orada olduğunu buradan anlıyor.
+    activityAt.current = Date.now();
     setXp((n) => n + points);
     // Gün tablosu sınırsız büyümesin; seri ve haftalık grafik için son bir
     // yıldan fazlası zaten kullanılmıyor.
     setDaily((cur) => {
       const next = { ...cur, [today()]: (cur[today()] ?? 0) + points };
+      const keys = Object.keys(next).sort();
+      for (const old of keys.slice(0, Math.max(keys.length - 400, 0))) delete next[old];
+      return next;
+    });
+  }, []);
+
+  /** Sayaçtan gelen saniyeleri bugüne yazar. */
+  const addStudy = useCallback((seconds: number) => {
+    setStudied((cur) => {
+      const next = { ...cur, [today()]: (cur[today()] ?? 0) + seconds };
       const keys = Object.keys(next).sort();
       for (const old of keys.slice(0, Math.max(keys.length - 400, 0))) delete next[old];
       return next;
@@ -402,6 +453,8 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     void clearBase();
     setXp(0);
     setDaily({});
+    setStudied({});
+    setRemoteStudied({});
     setRemoteDaily({});
     setMistakes({});
     setGoals(EMPTY.goals);
@@ -429,6 +482,17 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
     }
     return total;
   }, [daily, remoteDaily]);
+
+  /** Bugün çalışılan toplam saniye: bu cihaz artı diğerleri. */
+  const studiedToday = useMemo(
+    () => (studied[today()] ?? 0) + (remoteStudied[today()] ?? 0),
+    [studied, remoteStudied],
+  );
+
+  const goal = useMemo(
+    () => ({ studiedToday, addStudy, activityAt, ping }),
+    [studiedToday, addStudy, ping],
+  );
 
   const xpTotal = useMemo(
     () => xp + Object.values(remoteDaily).reduce((n, v) => n + v, 0),
@@ -623,6 +687,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       setHaptics,
       resetProgress,
       saved,
+      goal,
       sync: {
         running: syncRunning,
         at: syncAt,

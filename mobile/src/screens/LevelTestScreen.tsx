@@ -9,12 +9,14 @@ import { alpha, colors, gradients, radii } from '../theme/tokens';
 import { LEVELS, placement } from '../content';
 import { scorePlacement } from '../content/score';
 import { useApp } from '../state/AppContext';
+import { useStudySession } from '../state/useStudySession';
 import { useGo } from '../navigation/useGo';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 
 /** 04 · Seviye Testi — the 40-question placement test, easiest first. */
 export function LevelTestScreen() {
+  useStudySession();
   const { go } = useGo();
   const { setCefr, setTestResult } = useApp();
 
