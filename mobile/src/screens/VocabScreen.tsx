@@ -12,6 +12,7 @@ import { vocabOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
 import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
+import { wordClip } from '../audio/clips';
 
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
@@ -41,13 +42,30 @@ export function VocabScreen() {
     setSpeaking(null);
   }, [card.id]);
 
+  /*
+    Kelimenin üretilmiş telaffuzu varsa o çalıyor, yoksa cihazın sesi okuyor.
+
+    A1 ve A2'nin 2.335 kelimesi pakete gömülü; üstü cihazda kalıyor. Sebebi
+    `content/build-audio.py` içinde ölçümüyle yazılı — hepsini gömmek +62 MB
+    ve %34 daha büyük JS paketi demekti. Kelimeyi ilk kez duyan öğrenci için
+    doğru telaffuz en çok alt seviyelerde önemli: B2 okuyan biri yanlış
+    vurgulanmış bir kelimeyi fark eder, A1 okuyan onu doğru diye öğrenir.
+
+    Örnek cümlenin kaydı yok; yalnızca kelimeler üretildi. O yüzden cümle
+    her zaman cihaz sesinde.
+  */
   const say = (what: 'word' | 'example', text: string) => {
+    const clip = what === 'word' ? wordClip(card.cefr, card.id) : null;
+
     stopSpeech();
     setSpeaking(what);
     speakLine(text, {
       level: card.cefr,
-      // Kelime telaffuzu ezber için; cümleden biraz daha yavaş okunuyor.
-      speed: what === 'word' ? 0.85 : 1,
+      // 0.85 cihaz sesi içindi: tek bir kelimeyi normal hızda okuyunca
+      // anlaşılmıyordu. Kayıtta gereksiz — zaten tane tane söylenmiş — ve
+      // zararlı: hız çarpanı kaydı yavaşlatıp sesi bozuyor.
+      speed: clip == null && what === 'word' ? 0.85 : 1,
+      clip: clip ?? undefined,
       onDone: () => setSpeaking(null),
     });
   };

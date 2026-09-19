@@ -209,7 +209,18 @@ def synthesize(clip: Clip, key: str, voices: list[str]) -> None:
 INDEX = ROOT.parent / "mobile" / "src" / "audio" / "clips.ts"
 
 
-def write_index(with_words: bool = False) -> int:
+def word_levels_of(value: str) -> list[str]:
+    """`--word-levels` değerini seviye listesine çevirir."""
+    if value.strip().lower() == "all":
+        return LEVELS
+    wanted = [p.strip().lower() for p in value.split(",") if p.strip()]
+    bad = [w for w in wanted if w not in LEVELS]
+    if bad:
+        raise SystemExit(f"bilinmeyen seviye: {', '.join(bad)}")
+    return wanted
+
+
+def write_index(word_levels: list[str] | None = None) -> int:
     """Uygulamanın okuyacağı require() tablosunu üretir.
 
     Metro varlıkları derleme anında çözer, yani her dosya için kaynakta
@@ -249,34 +260,46 @@ def write_index(with_words: bool = False) -> int:
             f"require('../../assets/audio/listening/{name}/{f}')" for f in files
         )
         lines.append(f"  '{name}': [{refs}],")
-    # Kelime telaffuzları — ÖNTANIMLI OLARAK KAPALI.
+    # Kelime telaffuzları — seviye seviye açılıyor.
     #
-    # Ölçüldü ve bağlanmadı. 9.461 ayrı varlık çağrısının bedeli:
+    # Üç seçenek de aynı yöntemle ölçüldü (`expo export --platform android`,
+    # paket ve varlıkların gerçek bayt toplamı):
     #
-    #   JS paketi     8,28 MB → 11,13 MB   (+%34)
-    #   Varlıklar     33 MB   → 95 MB      (+62 MB)
-    #   Varlık sayısı 1.998   → 11.379
+    #                  JS paketi   Varlıklar   Varlık    Toplam
+    #   Hiçbiri          8,30 MB    28,74 MB    1.991   37,04 MB
+    #   A1 + A2          9,01 MB    39,45 MB    4.313   48,46 MB
+    #   Hepsi           11,19 MB    71,07 MB   11.379   82,26 MB
     #
-    # Karşılığında alınan şey tek kelimelik telaffuz; cihazın kendi TTS'i onu
-    # zaten çevrimdışı ve bedava yapıyor, IPA da kartın üzerinde yazılı.
-    # +62 MB indirme ve her açılışta %34 daha büyük paket, bu kazanç için
-    # ağır. Dosyalar depoda duruyor: ileride uygulamaya gömmek yerine
-    # sunucudan indirilip cihazda önbelleğe alınabilir.
+    # Hepsini gömmek indirmeyi iki katından fazlasına çıkarıyor. Ama hiç
+    # gömmemek de ölçümün verdiği cevap değildi: 63 MB'lik ses üretildi ve
+    # uygulamada hiç çalmadı. Doğru cevap ikisinin arasında — A1 ve A2
+    # (2.335 kelime, +11,4 MB) gömülüyor, üstü cihazın kendi
+    # seslendirmesinde kalıyor.
     #
-    # `--with-words` ile açılıyor; ölçümü tekrarlamak isteyen için.
+    # Neden alt iki seviye: Google'ın sesi ile telefonun kendi sesi
+    # arasındaki fark, kelimeyi ilk kez duyan öğrenci için en çok orada
+    # önemli. B2 okuyan biri yanlış vurgulanmış bir kelimeyi zaten fark
+    # ediyor; A1 okuyan onu doğru diye öğreniyor.
+    #
+    # Anahtar dosya adı değil, kartın kimliği. Dosya adı kimliğin slug'ı ve
+    # o dönüşümü uygulamada bir kez daha yazmak gerekirdi; iki ayrı yerde
+    # yaşayan bir kural er geç ayrışır ve ayrıştığında sessizce ayrışır —
+    # ses çalmaz, kimse fark etmez.
     words: dict[str, str] = {}
-    word_root = OUT / "vocab"
-    if with_words and word_root.is_dir():
-        for level_dir in sorted(word_root.iterdir()):
-            if not level_dir.is_dir():
-                continue
-            for mp3 in sorted(level_dir.glob("*.mp3")):
-                words[f"{level_dir.name}/{mp3.stem}"] = f"{level_dir.name}/{mp3.name}"
+    for level in word_levels or []:
+        cards_path = CARDS / f"{level}.json"
+        level_dir = OUT / "vocab" / level
+        if not cards_path.exists() or not level_dir.is_dir():
+            continue
+        for card in json.loads(cards_path.read_text(encoding="utf-8")):
+            name = f"{slug(card['id'])}.mp3"
+            if (level_dir / name).exists():
+                words[f"{level}/{card['id']}"] = f"{level}/{name}"
 
     lines += [
         "};",
         "",
-        "/** Kelime telaffuzları — anahtar `seviye/slug`. */",
+        "/** Kelime telaffuzları — anahtar `seviye/kart kimliği`. */",
         "export const WORDS: Record<string, number> = {",
     ]
     for key, rel in words.items():
@@ -289,9 +312,9 @@ def write_index(with_words: bool = False) -> int:
         "  return CLIPS[id] ?? null;",
         "}",
         "",
-        "/** Bir kelimenin telaffuzu; üretilmemişse null. */",
-        "export function wordClip(level: string, slug: string): number | null {",
-        "  return WORDS[`${level.toLowerCase()}/${slug}`] ?? null;",
+        "/** Bir kelimenin telaffuzu; gömülmemişse null. */",
+        "export function wordClip(level: string, cardId: string): number | null {",
+        "  return WORDS[`${level.toLowerCase()}/${cardId}`] ?? null;",
         "}",
         "",
     ]
@@ -327,9 +350,12 @@ def main() -> int:
     parser.add_argument("--limit", type=int, default=0, help="en fazla kaç parça üretilsin")
     parser.add_argument("--index-only", action="store_true", help="yalnızca clips.ts üret")
     parser.add_argument(
-        "--with-words",
-        action="store_true",
-        help="kelime seslerini de dizine ekle (paket +62 MB; yukarıdaki nota bak)",
+        "--word-levels",
+        default="a1,a2",
+        help=(
+            "kelime telaffuzu gömülecek seviyeler, virgülle "
+            "(öntanımlı: a1,a2 — hepsi için 'all', hiçbiri için '')"
+        ),
     )
     args = parser.parse_args()
 
@@ -341,7 +367,7 @@ def main() -> int:
         clips += vocab_clips(levels)
 
     if args.index_only:
-        print(f"{write_index(args.with_words)} dosya dizine yazıldı → {INDEX}")
+        print(f"{write_index(word_levels_of(args.word_levels))} dosya dizine yazıldı → {INDEX}")
         return 0
 
     pending = [c for c in clips if not c.path.exists()]
@@ -389,7 +415,7 @@ def main() -> int:
         if i % 25 == 0 or i == len(todo):
             print(f"  {i}/{len(todo)}")
 
-    count = write_index(args.with_words)
+    count = write_index(word_levels_of(args.word_levels))
     print(f"\n{count} dosya hazır → {OUT}")
     return 0
 
