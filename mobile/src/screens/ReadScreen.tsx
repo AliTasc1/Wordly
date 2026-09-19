@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { Image, StyleSheet, View } from 'react-native';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, GhostButton, PrimaryButton } from '../components/Buttons';
 import { Card, StatTile } from '../components/Surfaces';
@@ -9,6 +9,7 @@ import { StripeArt } from '../components/StripeArt';
 import { Txt } from '../components/Txt';
 import { alpha, colors, radii, shadows } from '../theme/tokens';
 import { readingOf } from '../content';
+import { artFor } from '../content/reading-art';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -22,6 +23,9 @@ export function ReadScreen() {
   const items = useMemo(() => readingOf(cefr), [cefr]);
   const index = Math.min(position('reading', cefr), items.length - 1);
   const item = items[index];
+
+  // Görsel parça değişince değişiyor; her çizimde harita sorgulamanın anlamı yok.
+  const art = useMemo(() => artFor(item.id), [item.id]);
 
   const [asked, setAsked] = useState(0);
   const [right, setRight] = useState(0);
@@ -89,14 +93,31 @@ export function ReadScreen() {
       </View>
 
       <View style={styles.article}>
-        <StripeArt
-          label={item.titleEn}
-          height={132}
-          a="rgba(124,92,255,.14)"
-          b="rgba(46,107,255,.08)"
-          deg={25}
-          band={9}
-        />
+        {/* Görseli üretilmiş parça onu gösteriyor; üretilmemiş olan tasarımdan
+            gelen çizgili yer tutucuda kalıyor. İkisi de aynı yüksekliği
+            kaplıyor, böylece görseller parça parça geldikçe ekran zıplamıyor. */}
+        {art != null ? (
+          <Image
+            source={art}
+            style={styles.art}
+            resizeMode="cover"
+            // Görsel metnin tekrarı değil, girişi: ekran okuyucu için parçanın
+            // başlığını söylemek, "dekoratif" deyip geçmekten de, sahneyi
+            // uydurup anlatmaktan da doğru.
+            accessible
+            accessibilityRole="image"
+            accessibilityLabel={`${item.title} — konu görseli`}
+          />
+        ) : (
+          <StripeArt
+            label={item.titleEn}
+            height={132}
+            a="rgba(124,92,255,.14)"
+            b="rgba(46,107,255,.08)"
+            deg={25}
+            band={9}
+          />
+        )}
         {showTr && item.textTr ? (
           <Txt s={15} lh={1.75} c={colors.textBright}>
             {item.textTr}
@@ -171,6 +192,7 @@ export function ReadScreen() {
 const styles = StyleSheet.create({
   flex: { flex: 1 },
   header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+  art: { width: '100%', height: 132, borderRadius: radii.input },
   article: {
     backgroundColor: colors.surfaceDeep,
     borderWidth: 1,
