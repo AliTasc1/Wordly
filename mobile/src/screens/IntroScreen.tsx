@@ -4,7 +4,7 @@ import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
 import { Screen, Spacer } from '../components/Screen';
 import { Press, PrimaryButton } from '../components/Buttons';
-import { DashedRing, StripeArt } from '../components/StripeArt';
+import { ArenaHero } from '../components/art/ArenaHero';
 import { Txt } from '../components/Txt';
 import { font, radii } from '../theme/tokens';
 import { INTRO } from '../data/onboarding';
@@ -38,11 +38,7 @@ export function IntroScreen() {
         </Press>
       </View>
 
-      <StripeArt label={INTRO.art} height={300} radius={radii.screen}>
-        <View style={styles.ringWrap} pointerEvents="none">
-          <DashedRing />
-        </View>
-      </StripeArt>
+      <ArenaHero height={300} />
 
       <View style={styles.copy}>
         <Txt f="m" s={font.giant} w={800} lh={1.18} ls={-0.02}>
@@ -78,7 +74,6 @@ const makeStyles = (t: Theme) =>
     dots: { flexDirection: 'row', gap: 6 },
     dot: { width: 10, height: 5, borderRadius: 9, backgroundColor: t.alpha.w16 },
     dotActive: { width: 26, backgroundColor: t.colors.primary },
-    ringWrap: { position: 'absolute', alignItems: 'center', justifyContent: 'center' },
     copy: { gap: 12 },
     stats: { flexDirection: 'row', gap: 10 },
     stat: {

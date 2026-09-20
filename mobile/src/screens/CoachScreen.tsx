@@ -8,6 +8,7 @@ import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { Panel, Tag } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
+import { EmptyState } from '../components/EmptyState';
 import { font, radii } from '../theme/tokens';
 import { kindLabel, mistakesByKind, rankedMistakes } from '../content/stats';
 import { tr } from '../content/progress';
@@ -106,20 +107,15 @@ export function CoachScreen() {
           </Press>
         </Gradient>
       ) : (
-        <Panel gap={8} radius={radii.hero}>
-          <Txt s={font.jumbo}>📕</Txt>
-          <Txt f="m" s={font.callout} w={800}>
-            Defter boş
-          </Txt>
-          <Txt s={font.footnote} lh={1.6} c={t.colors.textDim}>
-            Bir soruyu yanlış yaptığında buraya düşer. Sonra tek tek üstünden
-            geçip "öğrendim" diyerek defterden silersin.
-          </Txt>
-          <Press onPress={() => go('grammar')} style={styles.emptyCta}>
-            <Txt f="m" s={font.body} w={800}>
-              Gramer çalış
-            </Txt>
-          </Press>
+        <Panel gap={0} radius={radii.hero}>
+          <EmptyState
+            glyph="📕"
+            title="Defter boş"
+            text={'Bir soruyu yanlış yaptığında buraya düşer. Sonra tek tek üstünden geçip "öğrendim" diyerek defterden silersin.'}
+            action="Gramer çalış"
+            onAction={() => go('grammar')}
+            role="success"
+          />
         </Panel>
       )}
 
@@ -191,16 +187,6 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       justifyContent: 'center',
       boxShadow: t.shadows.ctaViolet,
-      marginTop: 6,
-    },
-    emptyCta: {
-      height: 46,
-      borderRadius: radii.input,
-      backgroundColor: t.alpha.w08,
-      borderWidth: 1,
-      borderColor: t.alpha.w14,
-      alignItems: 'center',
-      justifyContent: 'center',
       marginTop: 6,
     },
     sectionTitle: { marginTop: 2 },

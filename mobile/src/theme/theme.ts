@@ -1,7 +1,14 @@
-import { ALPHAS, PALETTES, type AlphaSet, type Palette, type ThemeName } from './palette';
+import {
+  ALPHAS,
+  PALETTES,
+  type AlphaSet,
+  type ColorRole,
+  type Palette,
+  type ThemeName,
+} from './palette';
 import { radii, scales, spacing, HIT_SLOP } from './tokens';
 
-export type { ThemeName, Palette, AlphaSet };
+export type { ThemeName, Palette, AlphaSet, ColorRole };
 
 /**
  * Gradyanlar.

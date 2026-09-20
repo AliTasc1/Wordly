@@ -6,6 +6,7 @@ import { Screen } from '../components/Screen';
 import { BackButton, Press } from '../components/Buttons';
 import { IconTile, ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
+import { EmptyState } from '../components/EmptyState';
 import { font, radii } from '../theme/tokens';
 import { alertsOf } from '../content/alerts';
 import { fetchBoard } from '../server/leaderboard';
@@ -96,16 +97,12 @@ export function NotificationsScreen() {
           </Press>
         ))
       ) : (
-        <View style={styles.empty}>
-          <Txt s={font.giant}>🔕</Txt>
-          <Txt f="m" s={font.body} w={700}>
-            Bekleyen bir şey yok
-          </Txt>
-          <Txt s={font.footnote} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
-            Serin güvende, hata defterin boş. Burası yalnızca gerçekten ilgilenmen gereken
-            bir şey olduğunda dolar.
-          </Txt>
-        </View>
+        <EmptyState
+          glyph="🔕"
+          title="Bekleyen bir şey yok"
+          text="Serin güvende, hata defterin boş. Burası yalnızca gerçekten ilgilenmen gereken bir şey olduğunda dolar."
+          role="success"
+        />
       )}
     </Screen>
   );
@@ -127,15 +124,4 @@ const makeStyles = (t: Theme) =>
     },
     rowHead: { flexDirection: 'row', alignItems: 'center', gap: 6 },
     title: { marginTop: 2, marginBottom: 2 },
-    empty: {
-      alignItems: 'center',
-      gap: 8,
-      paddingVertical: 40,
-      paddingHorizontal: 20,
-      borderRadius: radii.section,
-      borderWidth: 1,
-      borderColor: t.alpha.w08,
-      backgroundColor: t.alpha.w03,
-    },
-    emptyText: { textAlign: 'center' },
   });

@@ -29,14 +29,12 @@ export const SPLASH = {
 */
 export const INTRO: {
   skip: string;
-  art: string;
   title: string;
   body: string;
   stats: { value: string; label: string; tint: ColorRole }[];
   cta: string;
 } = {
   skip: 'Atla',
-  art: 'görsel: harf arenası sahnesi',
   title: 'Ders çalışıyormuş gibi olmadan İngilizce öğren.',
   body: 'Kelime, gramer, okuma, dinleme, konuşma ve yazma — altı seviye boyunca, CEFR standardına göre. Her şey çevrimdışı çalışır.',
   stats: [
@@ -121,7 +119,8 @@ export type EmptyState = {
   text: string;
   cta: string;
   target: ScreenId;
-  art: string;
+  /** Madalyonun içindeki simge. */
+  glyph: string;
 };
 
 // Arkadaş, mesaj ve kulüp boş durumları silindi: o ekranlar da silindi.
@@ -133,21 +132,21 @@ export const EMPTY_STATES: EmptyState[] = [
     text: 'İlk dersini bitir, ilk rozetin hemen açılır.',
     cta: 'Derse başla',
     target: 'lesson',
-    art: 'rozet çerçevesi',
+    glyph: '🏅',
   },
   {
     title: 'Kayıtlı kelime yok',
     text: 'Kelime kartındaki yıldıza dokunarak defterine ekle.',
     cta: 'Kelime çalış',
     target: 'vocab',
-    art: 'kelime kartı',
+    glyph: '📇',
   },
   {
     title: 'Bildirim yok',
     text: 'Bekleyen bir şey yok. Burası yalnızca gerçekten ilgilenmen gereken bir şey olduğunda dolar.',
     cta: 'Ana sayfaya dön',
     target: 'home',
-    art: 'boş zil',
+    glyph: '🔕',
   },
 ];
 

@@ -2,13 +2,12 @@ import React, { useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
-import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { BackButton, GhostButton } from '../components/Buttons';
 import { Card, StatTile } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { GlossedText } from '../components/GlossedText';
-import { StripeArt } from '../components/StripeArt';
+import { ReadingArt } from '../components/art/ReadingArt';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
 import { font, radii } from '../theme/tokens';
@@ -110,9 +109,9 @@ export function ReadScreen() {
       </View>
 
       <View style={styles.article}>
-        {/* Görseli üretilmiş parça onu gösteriyor; üretilmemiş olan tasarımdan
-            gelen çizgili yer tutucuda kalıyor. İkisi de aynı yüksekliği
-            kaplıyor, böylece görseller parça parça geldikçe ekran zıplamıyor. */}
+        {/* Görseli üretilmiş parça fotoğrafı gösteriyor; üretilmemiş olan
+            başlığı taşıyan çizilmiş bir kapakta kalıyor. İkisi de 16:9,
+            böylece görseller parça parça geldikçe ekran zıplamıyor. */}
         {art != null ? (
           <Image
             source={art}
@@ -126,14 +125,7 @@ export function ReadScreen() {
             accessibilityLabel={`${item.title} — konu görseli`}
           />
         ) : (
-          <StripeArt
-            label={item.titleEn}
-            height={132}
-            a={tint(t.colors.secondary, 0.14)}
-            b={tint(t.colors.primary, 0.08)}
-            deg={25}
-            band={9}
-          />
+          <ReadingArt id={item.id} title={item.title} />
         )}
         {showTr && item.textTr ? (
           <Txt s={font.callout} lh={1.75} c={t.colors.textBright}>

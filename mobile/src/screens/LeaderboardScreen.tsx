@@ -10,6 +10,7 @@ import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Notice } from '../components/Notice';
 import { ScreenHeading, StatTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
+import { EmptyState } from '../components/EmptyState';
 import { font, radii } from '../theme/tokens';
 import { avatarOf, gapToNext, initialsOf, weekEndsText } from '../content/board';
 import { tr } from '../content/progress';
@@ -168,20 +169,13 @@ export function LeaderboardScreen() {
             })}
           </View>
         ) : board && !problem ? (
-          <View style={styles.empty}>
-            <Txt s={font.giant}>🏁</Txt>
-            <Txt f="m" s={font.body} w={700}>
-              Tablo bu hafta henüz boş
-            </Txt>
-            <Txt s={font.footnote} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
-              Katılan kimse bu hafta XP kazanmamış. İlk sen olabilirsin.
-            </Txt>
-            <Press onPress={() => go('learn')} style={styles.emptyAction}>
-              <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
-                Derse git
-              </Txt>
-            </Press>
-          </View>
+          <EmptyState
+            glyph="🏁"
+            title="Tablo bu hafta henüz boş"
+            text="Katılan kimse bu hafta XP kazanmamış. İlk sen olabilirsin."
+            action="Derse git"
+            onAction={() => go('learn')}
+          />
         ) : null}
       </ScrollView>
     </Screen>
@@ -224,16 +218,4 @@ const makeStyles = (t: Theme) =>
     },
     rank: { width: 24 },
     stats: { flexDirection: 'row', gap: 10 },
-    empty: {
-      alignItems: 'center',
-      gap: 8,
-      paddingVertical: 30,
-      paddingHorizontal: 20,
-      borderRadius: radii.section,
-      borderWidth: 1,
-      borderColor: t.alpha.w08,
-      backgroundColor: t.alpha.w03,
-    },
-    emptyText: { textAlign: 'center' },
-    emptyAction: { paddingVertical: 8 },
   });
