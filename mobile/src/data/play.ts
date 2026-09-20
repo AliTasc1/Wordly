@@ -41,7 +41,6 @@ export const PLAY_HERO = {
 export const ARENA = {
   readyHint: 'kontrol et',
   submitReady: 'Gönder',
-  submitIdle: 'Harf seç',
 };
 
 // Buradan silinenler: `mode` ve `time` sabit metinlerdi ("SÜRE ATAĞI",

@@ -14,6 +14,7 @@ import {
   clock,
   MODE_RULES,
   onMissed,
+  onSkipped,
   onSolved,
   onTick,
   quitRound,
@@ -75,10 +76,49 @@ export function ArenaScreen() {
   const word = picked.map((i) => order[i]).join('');
   const ready = word.length === puzzle.slots;
 
+  /*
+    Harfe dokunmak iki yönlü çalışıyor.
+
+    Önce tek yönlüydü: seçilen harf kilitleniyordu ve kelime dolduğunda
+    hiçbir harfe dokunulamıyordu. Son harfi yanlış koyan öğrencinin tek
+    çaresi "Temizle" ile her şeye baştan başlamaktı — yedi harfli bir
+    kelimede altı doğru harfi de silmek demek.
+
+    Şimdi seçili bir harfe dokunmak onu kelimeden çıkarıyor. Kelime dolu
+    olsa bile: çıkarmak her zaman serbest, yalnızca eklemek sınırlı.
+  */
   const tapLetter = (index: number) => {
-    if (picked.includes(index) || ready) return;
+    const at = picked.indexOf(index);
+    if (at !== -1) {
+      tap();
+      setPicked((p) => p.filter((_, i) => i !== at));
+      return;
+    }
+    if (ready) return;
     tap();
     setPicked((p) => [...p, index]);
+  };
+
+  /** Son harfi geri alır. */
+  const backspace = () => {
+    if (!picked.length) return;
+    tap();
+    setPicked((p) => p.slice(0, -1));
+  };
+
+  /*
+    Pas. Takıldığı kelimeyi geçemeyen öğrencinin iki seçeneği vardı: turu
+    bırakmak ya da canını bilmediği bir kelimeye vermek. İkisi de oyunu
+    öğretici olmaktan çıkarıyordu.
+
+    Geçilen kelimenin cevabı gösteriliyor — pasın öğrettiği şey o.
+  */
+  const skip = () => {
+    if (state.over) return;
+    setState(onSkipped);
+    setPicked([]);
+    setRound((r) => r + 1);
+    fire(`Cevap: ${puzzle.target}`, puzzle.tr);
   };
 
   const submit = () => {
@@ -202,7 +242,7 @@ export function ArenaScreen() {
           <View
             key={i}
             style={[styles.slot, word[i] ? styles.slotFilled : styles.slotEmpty]}>
-            <Txt f="m" s={20} w={800} c={word[i] ? colors.text : colors.textGhost}>
+            <Txt f="mono" s={20} w={700} c={word[i] ? colors.text : colors.textGhost}>
               {word[i] ?? ''}
             </Txt>
           </View>
@@ -226,16 +266,19 @@ export function ArenaScreen() {
               },
             ]}
           />
+          {/* Ortada yalnızca ipucu var. Kurulan kelime zaten tekerleğin
+              üstündeki kutularda duruyor; ikinci kez göstermek, göz için
+              iki ayrı doğru kaynağı demekti.
+
+              "ipucu:" küçük bir yazıydı ve okunmuyordu: test eden kişi
+              içerideki metnin ipucu mu başka bir şey mi olduğunu
+              anlayamadığını söyledi. Etiket ayrı satıra alındı. */}
           <View style={styles.wheelCoreText}>
-            <Txt f="m" s={15} w={800}>
-              {word || `${puzzle.slots} HARF`}
+            <Txt f="mono" s={9} w={700} c={colors.textDisabled} ls={0.16}>
+              İPUCU
             </Txt>
-            <Txt f="mono" s={10} w={600} c={colors.blueSoft} style={styles.coreHint}>
-              {word
-                ? ready
-                  ? ARENA.readyHint
-                  : `${word.length}/${puzzle.slots} harf`
-                : `ipucu: ${puzzle.tr}`}
+            <Txt f="m" s={13} w={700} c={colors.blueSoft} style={styles.coreHint}>
+              {puzzle.tr}
             </Txt>
           </View>
         </View>
@@ -248,15 +291,22 @@ export function ArenaScreen() {
           const position = { left: x - KEY / 2, top: y - KEY / 2 };
 
           if (selected) {
+            // Seçili harf de bir düğme: dokunmak onu kelimeden çıkarıyor.
+            // Önce salt görseldi ve "harf alınamıyor" hissini veren şey buydu.
             return (
-              <Gradient
+              <Press
                 key={`${letter}-${i}`}
-                colors={gradients.brand}
-                style={[styles.key, styles.keyOn, position]}>
-                <Txt f="m" s={19} w={800}>
-                  {letter}
-                </Txt>
-              </Gradient>
+                onPress={() => tapLetter(i)}
+                scale={0.94}
+                accessibilityRole="button"
+                accessibilityLabel={`${letter} harfini çıkar`}
+                style={position}>
+                <Gradient colors={gradients.brand} style={[styles.key, styles.keyOn]}>
+                  <Txt f="mono" s={20} w={700}>
+                    {letter}
+                  </Txt>
+                </Gradient>
+              </Press>
             );
           }
           return (
@@ -267,7 +317,7 @@ export function ArenaScreen() {
               accessibilityRole="button"
               accessibilityLabel={`Harf ${letter}`}
               style={[styles.key, styles.keyOff, position]}>
-              <Txt f="m" s={19} w={800}>
+              <Txt f="mono" s={20} w={700}>
                 {letter}
               </Txt>
             </Press>
@@ -314,36 +364,67 @@ export function ArenaScreen() {
           </View>
         </View>
       ) : (
-        <View style={styles.actions}>
-          <Press onPress={() => setPicked([])} style={[styles.actionBtn, styles.clear]}>
-            <Txt f="m" s={13.5} w={700} c={colors.textSubtle}>
-              Temizle
+        <View style={styles.actionsWrap}>
+          <View style={styles.actions}>
+            {/* Geri al, temizlemenin yerini aldı. Yedi harfli bir kelimede
+                son harfi düzeltmek için altı doğru harfi de silmek
+                gerekiyordu. Uzun basmak hepsini siliyor. */}
+            <Press
+              onPress={backspace}
+              onLongPress={() => setPicked([])}
+              disabled={!picked.length}
+              accessibilityRole="button"
+              accessibilityLabel="Son harfi geri al"
+              style={[styles.actionBtn, styles.clear, !picked.length && styles.actionOff]}>
+              <Txt f="m" s={17} w={700} c={colors.textSubtle}>
+                ⌫
+              </Txt>
+            </Press>
+
+            <Press
+              onPress={() => {
+                setRotation((r) => r + 3);
+                setPicked([]);
+              }}
+              accessibilityRole="button"
+              accessibilityLabel="Harfleri karıştır"
+              style={[styles.actionBtn, styles.shuffle]}>
+              <Txt s={16}>🔀</Txt>
+            </Press>
+
+            {/* Gönder düğmesi her zaman burada. Eskiden kelime dolmadan
+                yerinde "Harf seç" yazan, düğmeye benzeyen ama basılamayan
+                bir kutu duruyordu; test eden kişi ne işe yaradığını
+                anlamadığını söyledi. Artık aynı düğme, kaç harf kaldığını
+                söyleyerek bekliyor. */}
+            <Press
+              onPress={submit}
+              disabled={!ready}
+              accessibilityRole="button"
+              accessibilityState={{ disabled: !ready }}
+              style={styles.submitWrap}>
+              {ready ? (
+                <Gradient colors={gradients.brand} style={styles.submit}>
+                  <Txt f="m" s={14.5} w={800}>
+                    {ARENA.submitReady}
+                  </Txt>
+                </Gradient>
+              ) : (
+                <View style={[styles.submit, styles.submitIdle]}>
+                  <Txt f="m" s={13.5} w={700} c={colors.textDisabled}>
+                    {puzzle.slots - word.length} harf kaldı
+                  </Txt>
+                </View>
+              )}
+            </Press>
+          </View>
+
+          {/* Pas. Takılan öğrencinin tek çıkışı turu bırakmaktı. */}
+          <Press onPress={skip} accessibilityRole="button" style={styles.skip}>
+            <Txt f="m" s={12.5} w={700} c={colors.textFaint}>
+              Bu kelimeyi geç →
             </Txt>
           </Press>
-          <Press
-            onPress={() => {
-              setRotation((r) => r + 3);
-              setPicked([]);
-            }}
-            accessibilityLabel="Harfleri karıştır"
-            style={[styles.actionBtn, styles.shuffle]}>
-            <Txt s={16}>🔀</Txt>
-          </Press>
-          {ready ? (
-            <Press onPress={submit} style={styles.submitWrap}>
-              <Gradient colors={gradients.brand} style={styles.submit}>
-                <Txt f="m" s={14.5} w={800}>
-                  {ARENA.submitReady}
-                </Txt>
-              </Gradient>
-            </Press>
-          ) : (
-            <View style={[styles.submitWrap, styles.submitIdle]}>
-              <Txt f="m" s={14.5} w={800} c={colors.textDisabled}>
-                {ARENA.submitIdle}
-              </Txt>
-            </View>
-          )}
         </View>
       )}
     </Screen>
@@ -449,6 +530,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  actionsWrap: { gap: 8 },
+  actionOff: { opacity: 0.4 },
+  skip: { alignSelf: 'center', paddingVertical: 8, paddingHorizontal: 16 },
   wheelCoreText: { alignItems: 'center' },
   coreHint: { marginTop: 2 },
   key: {
@@ -499,11 +583,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     boxShadow: shadows.ctaBrandSmall,
   },
-  submitIdle: {
-    height: 50,
-    borderRadius: radii.input,
-    backgroundColor: alpha.w06,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  // `submit` zaten yüksekliği ve hizayı veriyor; burası yalnızca zemini
+  // değiştiriyor. İkisini de tanımlamak, birini değiştirince diğerinin
+  // geride kalması demekti.
+  submitIdle: { backgroundColor: alpha.w06 },
 });

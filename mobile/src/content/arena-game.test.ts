@@ -5,6 +5,7 @@ import {
   MAX_COMBO,
   MODE_RULES,
   onMissed,
+  onSkipped,
   onSolved,
   onTick,
   quitRound,
@@ -208,4 +209,32 @@ test('tur sonu sebebi doğru yazılıyor', () => {
     'Hakların bitti',
   );
   assert.equal(summaryTitle(quitRound(play('solo', ['ok']))), 'Tur bitti');
+});
+
+test('pas hata sayılmıyor: hak gitmiyor, kaçırılan artmıyor', () => {
+  // Takıldığı kelimeyi geçemeyen öğrenci ya turu bırakır ya da canını
+  // bilmediği bir kelimeye verir. İkisi de oyunu öğretici olmaktan çıkarır.
+  const tur = { ...startRound('survival'), combo: 4, streak: 3, missed: 1 };
+  const sonra = onSkipped(tur);
+
+  assert.equal(sonra.livesLeft, tur.livesLeft);
+  assert.equal(sonra.missed, 1);
+  assert.equal(sonra.over, false);
+});
+
+test('pas komboyu kesiyor', () => {
+  // Kombo "üst üste kaç doğru" demek; pas o zinciri gerçekten kesiyor.
+  const sonra = onSkipped({ ...startRound('solo'), combo: 5, streak: 4 });
+  assert.equal(sonra.combo, 1);
+  assert.equal(sonra.streak, 0);
+});
+
+test('pas en uzun seriyi silmiyor', () => {
+  const sonra = onSkipped({ ...startRound('solo'), streak: 4, bestStreak: 6 });
+  assert.equal(sonra.bestStreak, 6);
+});
+
+test('biten turda pas hiçbir şeyi değiştirmiyor', () => {
+  const bitmis = { ...startRound('time'), over: true, combo: 3 };
+  assert.deepEqual(onSkipped(bitmis), bitmis);
 });

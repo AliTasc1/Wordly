@@ -146,6 +146,22 @@ export function onMissed(state: ArenaState): ArenaState {
   };
 }
 
+/**
+ * Öğrenci bu kelimeyi geçti.
+ *
+ * Pas, hata değil. Hak götürmüyor ve "kaçırılan" sayısına yazılmıyor:
+ * takıldığı kelimeyi geçemeyen öğrenci ya turu bırakıyor ya da canını
+ * bilmediği bir kelimeye veriyor. İkisi de oyunu öğretici olmaktan
+ * çıkarıyor.
+ *
+ * Kombo yine de sıfırlanıyor. Bu bir ceza değil, doğru muhasebe: kombo
+ * "üst üste kaç doğru" demek ve pas o zinciri gerçekten kesiyor.
+ */
+export function onSkipped(state: ArenaState): ArenaState {
+  if (state.over) return state;
+  return { ...state, combo: 1, streak: 0 };
+}
+
 /** Bir saniye geçti. Süresiz modda hiçbir şey değişmiyor. */
 export function onTick(state: ArenaState): ArenaState {
   if (state.over || state.secondsLeft == null) return state;
