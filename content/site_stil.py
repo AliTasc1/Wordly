@@ -27,7 +27,7 @@ STYLE = """\
   --faint: #8e9bba;
   --ghost: #6e7b9c;
   --brand: #2e6bff;
-  --violet: #7c5cff;
+  --violet: #7857f5;
   --accent: #22d3ee;
   --success: #22c55e;
   --warning: #f5a524;

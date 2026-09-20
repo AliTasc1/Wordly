@@ -129,7 +129,7 @@ export function SpeakScreen() {
                 styles.mic,
                 recorder.phase === 'recording' ? styles.micLive : styles.micIdle,
               ]}>
-              <Txt s={recorder.phase === 'recording' ? font.display : font.jumbo}>
+              <Txt s={recorder.phase === 'recording' ? font.display : font.jumbo} c={t.colors.onBrand}>
                 {recorder.phase === 'recording' ? '■' : '🎙'}
               </Txt>
             </Gradient>

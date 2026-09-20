@@ -129,7 +129,7 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   if (name === 'Varsayılan') {
     return (
       <Gradient colors={t.gradients.brand} style={styles.button}>
-        <Txt f="m" s={font.footnote} w={800}>
+        <Txt f="m" s={font.footnote} w={800} c={t.colors.onBrand}>
           {label}
         </Txt>
       </Gradient>
@@ -138,7 +138,7 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   if (name === 'Basılı') {
     return (
       <Gradient colors={t.gradients.brandPressed} style={[styles.button, styles.pressed]}>
-        <Txt f="m" s={font.footnote} w={800}>
+        <Txt f="m" s={font.footnote} w={800} c={t.colors.onBrand}>
           {label}
         </Txt>
       </Gradient>

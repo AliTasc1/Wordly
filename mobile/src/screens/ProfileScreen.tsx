@@ -77,8 +77,8 @@ export function ProfileScreen() {
             numarası ve lig diye bir şey hiç olmadı; ikisi de silindi.
             Üyelik süresi ise gerçekten hesaplanabiliyor. */}
         <View style={styles.identity}>
-          <Gradient colors={t.gradients.violetCyan} style={styles.avatar}>
-            <Txt f="m" s={font.giant} w={800}>
+          <Gradient colors={t.gradients.violet} style={styles.avatar}>
+            <Txt f="m" s={font.giant} w={800} c={t.colors.onBrand}>
               {initialOf(name)}
             </Txt>
           </Gradient>

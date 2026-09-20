@@ -46,8 +46,8 @@ export function ToastHost() {
         },
       ]}>
       <View style={styles.card}>
-        <Gradient colors={t.gradients.cyan} deg={135} style={styles.icon}>
-          <Txt f="m" s={font.body} w={800}>
+        <Gradient colors={t.gradients.teal} deg={135} style={styles.icon}>
+          <Txt f="m" s={font.body} w={800} c={t.colors.onBrand}>
             ✓
           </Txt>
         </Gradient>

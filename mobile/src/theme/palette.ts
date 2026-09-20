@@ -92,7 +92,10 @@ export type Palette = {
 const DARK: Palette = {
   primary: '#2E6BFF',
   primaryPressed: '#2455CC',
-  secondary: '#7C5CFF',
+  // #7C5CFF idi ve beyaz yazı üstünde 4,35:1 veriyordu — AA 4,5 istiyor,
+  // yani mor düğmelerin yazısı sınırın altındaydı. Karakteri koruyup
+  // 4,69'a çıkaran en yakın ton.
+  secondary: '#7857F5',
   secondaryPressed: '#6349CC',
   accent: '#22D3EE',
   accentSoft: '#7FE6F5',

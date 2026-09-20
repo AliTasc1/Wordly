@@ -20,19 +20,31 @@ export type { ThemeName, Palette, AlphaSet, ColorRole };
 /** En az iki renk: gradyan tüketicileri (svg, linear-gradient) böyle tipli. */
 type Stops = readonly [string, string, ...string[]];
 
+/*
+  Gradyanlar iki öbeğe ayrılıyor ve ayrım keyfî değil.
+
+  **Yazı taşıyanlar** (`brand`, `brandPressed`, `violet`, `teal`, `danger`)
+  üstlerinde okunacak bir şey var; her durağı beyazla en az 4,5:1 vermek
+  zorunda. Testi var.
+
+  **Dekoratif olanlar** (`cyan`, `violetCyan`, `logo`, `progress`, `success`,
+  `warm`) parlak uçlara gidiyor — camgöbeği #22D3EE beyazla 1,81:1 veriyor,
+  yani üstünde hiçbir beyaz yazı okunmaz. Onlar çubuk, hale ve zemin için;
+  içlerine `Txt` konmuyor ve bunun da testi var.
+
+  Ayrım, ölçüldüğü için var: yazı taşıyan yedi yerin dördü parlak uçlu bir
+  gradyan kullanıyordu ve oradaki simgeler okunmuyordu.
+*/
 export type Gradients = {
   brand: Stops;
   brandPressed: Stops;
-  cyan: Stops;
-  violetCyan: Stops;
-  logo: Stops;
+  /** Yazı taşıyan mor dolgu — rozet, avatar. */
+  violet: Stops;
+  /** Yazı taşıyan camgöbeği dolgu — oynat düğmesi, bildirim simgesi. */
+  teal: Stops;
   progress: Stops;
-  progressViolet: Stops;
   danger: Stops;
-  success: Stops;
-  warm: Stops;
   card: Stops;
-  cardHigh: Stops;
   /** Alt çubuğun zemini — içerik çubuğun altından geçerken kaybolsun diye. */
   tabBar: Stops;
 };
@@ -40,20 +52,19 @@ export type Gradients = {
 function gradientsOf(name: ThemeName): Gradients {
   const light = name === 'light';
   return {
-    brand: ['#2E6BFF', '#7C5CFF'],
+    brand: ['#2E6BFF', '#7857F5'],
     brandPressed: ['#2455CC', '#6349CC'],
-    cyan: light ? ['#2558E0', '#0E7C90'] : ['#2E6BFF', '#22D3EE'],
-    violetCyan: light ? ['#6742E8', '#0E7C90'] : ['#7C5CFF', '#22D3EE'],
-    logo: ['#2E6BFF', '#7C5CFF', '#22D3EE'],
+    violet: light ? ['#6742E8', '#4A31B8'] : ['#7857F5', '#5B3FD4'],
+    // Parlak camgöbeği beyaz yazıyı taşıyamıyor (1,81:1). Bu, aynı rengin
+    // yazı taşıyabilen tonu; ölçülerek seçildi.
+    teal: light ? ['#0E7C90', '#0A6274'] : ['#158191', '#0E7C90'],
     progress: light ? ['#2558E0', '#0E7C90'] : ['#2E6BFF', '#22D3EE'],
-    progressViolet: light ? ['#6742E8', '#0E7C90'] : ['#7C5CFF', '#22D3EE'],
-    danger: ['#FF7A59', '#FF4D5E'],
-    success: light ? ['#15803D', '#0E7C90'] : ['#22C55E', '#22D3EE'],
-    warm: ['#F5A524', '#FF7A59'],
+    // #FF7A59 → #FF4D5E idi; beyaz "■" üstünde 3,2:1 veriyordu. Kayıt
+    // düğmesi hâlâ kırmızı, yazısı artık okunuyor.
+    danger: light ? ['#C2410C', '#B91C1C'] : ['#BA5941', '#D13F4D'],
     // Yüzey gradyanları zeminin devamı; açıkta beyazdan beyaza gitmesi
     // gerekiyor, yoksa kartın içinde görünmeyen bir koyu leke kalıyor.
     card: light ? ['#FFFFFF', '#FBFCFE'] : ['#151D38', '#111831'],
-    cardHigh: light ? ['#FFFFFF', '#F4F6FC'] : ['#18213E', '#111831'],
     // Üstte saydam başlayıp altta tamamen kapanıyor: kaydırılan içerik
     // çubuğa çarpıp durmuyor, çubuğun altında eriyor.
     tabBar: light

@@ -184,8 +184,8 @@ export function ListenScreen() {
             accessibilityRole="button"
             accessibilityState={{ selected: playing }}
             accessibilityLabel={playing ? 'Durdur' : 'Oynat'}>
-            <Gradient colors={t.gradients.cyan} style={styles.playBtn}>
-              <Txt f="m" s={font.title} w={700}>
+            <Gradient colors={t.gradients.teal} style={styles.playBtn}>
+              <Txt f="m" s={font.title} w={700} c={t.colors.onBrand}>
                 {playing ? '■' : '▶'}
               </Txt>
             </Gradient>

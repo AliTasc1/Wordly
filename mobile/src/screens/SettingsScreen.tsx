@@ -264,8 +264,8 @@ export function SettingsScreen() {
         <Gradient
           colors={[tint(t.colors.secondary, 0.22), tint(t.colors.surface, 0.92)]}
           style={styles.premium}>
-          <Gradient colors={t.gradients.violetCyan} style={styles.premiumIcon}>
-            <Txt s={font.title}>✦</Txt>
+          <Gradient colors={t.gradients.violet} style={styles.premiumIcon}>
+            <Txt s={font.title} c={t.colors.onBrand}>✦</Txt>
           </Gradient>
           <View style={styles.flex}>
             <Txt f="m" s={font.body} w={700}>

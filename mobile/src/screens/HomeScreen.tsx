@@ -209,7 +209,7 @@ export function HomeScreen() {
           colors={[tint(t.colors.primary, 0.26), tint(t.colors.secondary, 0.16)]}
           style={styles.continue}>
           <Gradient colors={t.gradients.brand} style={styles.continueBadge}>
-            <Txt f="m" s={font.callout} w={800}>
+            <Txt f="m" s={font.callout} w={800} c={t.colors.onBrand}>
               {String(lesson.order).padStart(2, '0')}
             </Txt>
           </Gradient>
@@ -232,8 +232,8 @@ export function HomeScreen() {
 
       <Press onPress={() => go('coach')} scale={0.99} style={styles.coach}>
         <View style={styles.coachHead}>
-          <Gradient colors={t.gradients.violetCyan} style={styles.coachBadge}>
-            <Txt f="m" s={font.footnote} w={700}>
+          <Gradient colors={t.gradients.violet} style={styles.coachBadge}>
+            <Txt f="m" s={font.footnote} w={700} c={t.colors.onBrand}>
               📓
             </Txt>
           </Gradient>

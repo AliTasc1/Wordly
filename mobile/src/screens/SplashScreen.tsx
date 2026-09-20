@@ -67,10 +67,10 @@ export function SplashScreen() {
           </View>
           <Gradient
             deg={140}
-            colors={t.gradients.logo}
+            colors={t.gradients.brand}
             locations={[0, 0.55, 1]}
             style={styles.logo}>
-            <Txt f="m" s={font.splash} w={800}>
+            <Txt f="m" s={font.splash} w={800} c={t.colors.onBrand}>
               W
             </Txt>
           </Gradient>

@@ -318,7 +318,7 @@ export function ArenaScreen() {
                 accessibilityLabel={`${letter} harfini çıkar`}
                 style={position}>
                 <Gradient colors={t.gradients.brand} style={[styles.key, styles.keyOn]}>
-                  <Txt f="mono" s={font.headline} w={700}>
+                  <Txt f="mono" s={font.headline} w={700} c={t.colors.onBrand}>
                     {letter}
                   </Txt>
                 </Gradient>
@@ -372,7 +372,7 @@ export function ArenaScreen() {
             </Press>
             <Press onPress={again} style={styles.submitWrap}>
               <Gradient colors={t.gradients.brand} style={styles.submit}>
-                <Txt f="m" s={font.body} w={800}>
+                <Txt f="m" s={font.body} w={800} c={t.colors.onBrand}>
                   Tekrar oyna
                 </Txt>
               </Gradient>
@@ -421,7 +421,7 @@ export function ArenaScreen() {
               style={styles.submitWrap}>
               {ready ? (
                 <Gradient colors={t.gradients.brand} style={styles.submit}>
-                  <Txt f="m" s={font.body} w={800}>
+                  <Txt f="m" s={font.body} w={800} c={t.colors.onBrand}>
                     {ARENA.submitReady}
                   </Txt>
                 </Gradient>
