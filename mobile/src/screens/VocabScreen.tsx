@@ -14,6 +14,7 @@ import { useStudySession } from '../state/useStudySession';
 import { useBack } from '../navigation/useGo';
 import { primeVoices, speakLine, stopSpeech } from '../audio/speech';
 import { wordClip } from '../audio/clips';
+import { otherSenses } from '../content/senses';
 
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
@@ -28,6 +29,7 @@ export function VocabScreen() {
   const index = Math.min(position('vocab', cefr), deck.length - 1);
   const card = deck[index];
   const saved = isSaved(card.id);
+  const senses = useMemo(() => otherSenses(card.id), [card.id]);
 
   // Kelimeyi mi örnek cümleyi mi okuduğumuzu gösteriyor; dalga formu buna
   // göre yanıyor, yoksa iki düğme de aynı ölü süsü paylaşıyor.
@@ -152,13 +154,21 @@ export function VocabScreen() {
 
         <View style={styles.pos}>
           <Txt f="mono" s={10} w={700} c={colors.violetSoft} ls={0.1}>
-            {card.posLabel} · {card.cefr}
+            {card.cefr}
           </Txt>
         </View>
 
         <View>
+          {/* Tür artık kelimenin hemen altında ve okunur boyutta.
+              Köşedeki küçük etiketteyken kimse görmüyordu: test eden kişi
+              "take" isim kartını fiil sanıp anlamı yanlış buldu. Aynı
+              yazılışı paylaşan 956 kelime var, yani tür bu kartın kimliğinin
+              yarısı — üçüncül bir bilgi değil. */}
           <Txt f="m" s={40} w={800} ls={-0.02}>
             {card.word}
+          </Txt>
+          <Txt f="m" s={13} w={700} c={colors.violetSoft} style={styles.posLine}>
+            {card.posLabel.toLocaleLowerCase('tr-TR')}
           </Txt>
           <View style={styles.ipaRow}>
             {card.ipa ? (
@@ -188,6 +198,30 @@ export function VocabScreen() {
             {card.definition}
           </Txt>
         </View>
+
+        {/* Aynı yazılışın başka anlamı varsa kartta söyleniyor.
+            Gizlemek karışıklığı sürdürürdü; söylemek hem karışıklığı
+            gideriyor hem ikinci anlamı öğretiyor. */}
+        {senses.length ? (
+          <View style={styles.senses}>
+            <Txt f="mono" s={9.5} w={700} c={colors.textDisabled} ls={0.12}>
+              AYNI YAZILIŞ, BAŞKA ANLAM
+            </Txt>
+            {senses.map((sense) => (
+              <Txt
+                key={`${sense.pos}-${sense.cefr}`}
+                s={12.5}
+                lh={1.5}
+                c={colors.textDim}
+                style={styles.senseRow}>
+                <Txt f="m" s={12.5} w={700} c={colors.violetSoft}>
+                  {sense.pos.toLocaleLowerCase('tr-TR')}
+                </Txt>
+                {`  ${sense.tr}  ·  ${sense.cefr}`}
+              </Txt>
+            ))}
+          </View>
+        ) : null}
 
         <View style={[styles.block, styles.exampleBlock]}>
           <Press
@@ -270,6 +304,16 @@ const styles = StyleSheet.create({
   saved: { backgroundColor: 'rgba(245,165,36,.24)', borderColor: colors.warning },
   unsaved: { backgroundColor: alpha.w06, borderColor: alpha.w12 },
   audioBtn: { backgroundColor: 'rgba(46,107,255,.16)', borderColor: 'rgba(46,107,255,.35)' },
+  posLine: { marginTop: -2 },
+  senses: {
+    gap: 5,
+    padding: 13,
+    borderRadius: radii.input,
+    borderWidth: 1,
+    borderColor: 'rgba(124,92,255,.25)',
+    backgroundColor: 'rgba(124,92,255,.08)',
+  },
+  senseRow: { marginTop: 1 },
   pos: {
     alignSelf: 'flex-start',
     paddingVertical: 5,
