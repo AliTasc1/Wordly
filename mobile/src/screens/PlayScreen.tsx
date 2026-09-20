@@ -8,7 +8,7 @@ import { Gradient } from '../components/Gradient';
 import { Press, TinyButton } from '../components/Buttons';
 import { IconTile, ScreenHeading, Tag } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { ARENA_GLYPH, PLAY_HERO } from '../data/play';
 import { MODE_LIST } from '../content/arena-game';
 import { useApp } from '../state/AppContext';
@@ -39,24 +39,24 @@ export function PlayScreen() {
           <View style={styles.heroRingSmall} pointerEvents="none" />
           <View>
             <View style={styles.heroKicker}>
-              <Txt f="mono" s={10} w={700} c={t.colors.accentSoft} ls={0.12}>
+              <Txt f="mono" s={font.label} w={700} c={t.colors.accentSoft} ls={0.12}>
                 {PLAY_HERO.kicker}
               </Txt>
             </View>
-            <Txt f="m" s={26} w={800} style={styles.heroTitle}>
+            <Txt f="m" s={font.jumbo} w={800} style={styles.heroTitle}>
               {PLAY_HERO.title}
             </Txt>
-            <Txt s={12.5} lh={1.5} c={t.colors.textBody} style={styles.heroSub}>
+            <Txt s={font.footnote} lh={1.5} c={t.colors.textBody} style={styles.heroSub}>
               {PLAY_HERO.sub}
             </Txt>
             <View style={styles.heroActions}>
               <View style={styles.heroPrimary}>
-                <Txt f="m" s={13} w={800} c={t.colors.onLight}>
+                <Txt f="m" s={font.footnote} w={800} c={t.colors.onLight}>
                   {PLAY_HERO.primary}
                 </Txt>
               </View>
               <View style={styles.heroSecondary}>
-                <Txt f="m" s={12} w={700} c={t.colors.textSubtle}>
+                <Txt f="m" s={font.caption} w={700} c={t.colors.textSubtle}>
                   {PLAY_HERO.secondary}
                 </Txt>
               </View>
@@ -65,7 +65,7 @@ export function PlayScreen() {
         </Gradient>
       </Press>
 
-      <Txt f="m" s={13.5} w={700}>
+      <Txt f="m" s={font.body} w={700}>
         Modlar
       </Txt>
 
@@ -84,19 +84,19 @@ export function PlayScreen() {
               <View style={styles.modeHead}>
                 <IconTile
                   glyph={look.glyph}
-                  tint={look.tint}
+                  tint={t.colors[look.tint]}
                   size={38}
                   radius={13}
                   fontSize={17}
                 />
                 {mode.multiplier > 1 ? (
-                  <Tag label={`${mode.multiplier}× XP`} tint={look.tint} size={9} />
+                  <Tag label={`${mode.multiplier}× XP`} tint={t.colors[look.tint]} size={9} />
                 ) : null}
               </View>
-              <Txt f="m" s={14.5} w={800} style={styles.modeName}>
+              <Txt f="m" s={font.body} w={800} style={styles.modeName}>
                 {mode.name}
               </Txt>
-              <Txt s={11} lh={1.4} c={t.colors.textDim} style={styles.modeSub}>
+              <Txt s={font.caption} lh={1.4} c={t.colors.textDim} style={styles.modeSub}>
                 {mode.sub}
               </Txt>
             </Press>
@@ -140,7 +140,7 @@ const makeStyles = (t: Theme) =>
     },
     heroKicker: {
       alignSelf: 'flex-start',
-      paddingVertical: 5,
+      paddingVertical: 6,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
       backgroundColor: t.alpha.black34,
@@ -149,13 +149,13 @@ const makeStyles = (t: Theme) =>
     heroSub: { marginTop: 4, maxWidth: 200 },
     heroActions: { flexDirection: 'row', gap: 8, marginTop: 12 },
     heroPrimary: {
-      paddingVertical: 9,
+      paddingVertical: 10,
       paddingHorizontal: 16,
       borderRadius: radii.lg,
       backgroundColor: t.colors.text,
     },
     heroSecondary: {
-      paddingVertical: 9,
+      paddingVertical: 10,
       paddingHorizontal: 14,
       borderRadius: radii.lg,
       backgroundColor: t.alpha.black30,
@@ -184,7 +184,7 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: tint(t.colors.warning, 0.3),
       borderRadius: radii.tile,
-      padding: 15,
+      padding: 16,
     },
     tournamentIcon: {
       width: 44,

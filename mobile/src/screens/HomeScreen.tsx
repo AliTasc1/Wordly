@@ -10,7 +10,7 @@ import { Press } from '../components/Buttons';
 import { Avatar } from '../components/Avatar';
 import { ProgressBar, ProgressRing } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { DAILY_GAME } from '../data/profile';
 import { displayNameOf, greetingFor, initialOf, todayLine } from '../content/identity';
 import { grammarOf } from '../content';
@@ -110,10 +110,10 @@ export function HomeScreen() {
             <View style={styles.online} />
           </View>
           <View>
-            <Txt f="m" s={17} w={800}>
+            <Txt f="m" s={font.title} w={800}>
               {greetingFor(name)}
             </Txt>
-            <Txt s={11.5} w={600} c={t.colors.textDim}>
+            <Txt s={font.caption} w={600} c={t.colors.textDim}>
               {todayLine(todayXp, streak)}
             </Txt>
           </View>
@@ -123,7 +123,7 @@ export function HomeScreen() {
           accessibilityRole="button"
           accessibilityLabel="Bildirimler"
           style={styles.bell}>
-          <Txt s={15}>🔔</Txt>
+          <Txt s={font.callout}>🔔</Txt>
           <View style={styles.bellDot} />
         </Press>
       </View>
@@ -154,10 +154,10 @@ export function HomeScreen() {
 
       <Card radius={radii.section}>
         <View style={styles.goalHead}>
-          <Txt f="m" s={14.5} w={700}>
+          <Txt f="m" s={font.body} w={700}>
             Bugünkü hedefin
           </Txt>
-          <Txt f="mono" s={12} w={700} c={today_.done ? t.colors.success : t.colors.textDim}>
+          <Txt f="mono" s={font.caption} w={700} c={today_.done ? t.colors.success : t.colors.textDim}>
             {durationText(today_.studied)} / {durationText(today_.goal)}
           </Txt>
         </View>
@@ -167,7 +167,7 @@ export function HomeScreen() {
           from={today_.done ? t.colors.success : t.colors.primary}
           to={today_.done ? t.colors.success : t.colors.accent}
         />
-        <Txt s={12} c={today_.done ? t.colors.successSoft : t.colors.textDim}>
+        <Txt s={font.caption} c={today_.done ? t.colors.successSoft : t.colors.textDim}>
           {today_.done ? '✓ ' : ''}
           {goalText(today_)}
         </Txt>
@@ -175,11 +175,11 @@ export function HomeScreen() {
 
       <Card radius={radii.section}>
         <View style={styles.goalHead}>
-          <Txt f="m" s={14.5} w={700}>
+          <Txt f="m" s={font.body} w={700}>
             {cefr} seviyesinde ilerleme
           </Txt>
-          <Txt f="mono" s={12} w={700} c={t.colors.textDim}>
-            <Txt f="mono" s={12} w={700} c={t.colors.accent}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.accent}>
               %{overall}
             </Txt>
             {' tamamlandı'}
@@ -191,12 +191,12 @@ export function HomeScreen() {
             <View key={deck.kind} style={styles.ringItem}>
               <ProgressRing size={50} thickness={6} pct={deck.pct} color={deck.color}>
                 <View style={styles.ringInner}>
-                  <Txt f="mono" s={11} w={700}>
+                  <Txt f="mono" s={font.caption} w={700}>
                     %{deck.pct}
                   </Txt>
                 </View>
               </ProgressRing>
-              <Txt s={10.5} w={600} c={t.colors.textDim}>
+              <Txt s={font.label} w={600} c={t.colors.textDim}>
                 {deck.label}
               </Txt>
             </View>
@@ -209,22 +209,22 @@ export function HomeScreen() {
           colors={[tint(t.colors.primary, 0.26), tint(t.colors.secondary, 0.16)]}
           style={styles.continue}>
           <Gradient colors={t.gradients.brand} style={styles.continueBadge}>
-            <Txt f="m" s={15} w={800}>
+            <Txt f="m" s={font.callout} w={800}>
               {String(lesson.order).padStart(2, '0')}
             </Txt>
           </Gradient>
           <View style={styles.flex}>
-            <Txt f="mono" s={10} w={700} c={t.colors.blueSoft} ls={0.1}>
+            <Txt f="mono" s={font.label} w={700} c={t.colors.blueSoft} ls={0.1}>
               KALDIĞIN YER
             </Txt>
-            <Txt f="m" s={17} w={800} style={styles.gap2}>
+            <Txt f="m" s={font.title} w={800} style={styles.gap2}>
               {cefr} · Ders {lesson.order}
             </Txt>
-            <Txt s={12} c={t.colors.textMuted} style={styles.gap3}>
+            <Txt s={font.caption} c={t.colors.textMuted} style={styles.gap3}>
               {lesson.topic} · {remaining} ders kaldı
             </Txt>
           </View>
-          <Txt f="m" s={22} w={800}>
+          <Txt f="m" s={font.display} w={800}>
             ›
           </Txt>
         </Gradient>
@@ -233,16 +233,16 @@ export function HomeScreen() {
       <Press onPress={() => go('coach')} scale={0.99} style={styles.coach}>
         <View style={styles.coachHead}>
           <Gradient colors={t.gradients.violetCyan} style={styles.coachBadge}>
-            <Txt f="m" s={13} w={700}>
+            <Txt f="m" s={font.footnote} w={700}>
               📓
             </Txt>
           </Gradient>
-          <Txt f="m" s={14.5} w={800}>
+          <Txt f="m" s={font.body} w={800}>
             Hata defterin
           </Txt>
           {mistakeCount > 0 ? (
             <View style={styles.coachStatus}>
-              <Txt f="mono" s={10} w={700} c={t.colors.accentSoft}>
+              <Txt f="mono" s={font.label} w={700} c={t.colors.accentSoft}>
                 {mistakeCount}
               </Txt>
             </View>
@@ -252,13 +252,13 @@ export function HomeScreen() {
             3 dakika birlikte pratik yapalım'" yazıyordu. Böyle bir koç yok
             ve o cümle herkese aynı geliyordu. Koç ekranı gerçek hata
             defterini gösteriyor; kart da artık onu anlatıyor. */}
-        <Txt s={13} lh={1.5} c={t.colors.textBody}>
+        <Txt s={font.footnote} lh={1.5} c={t.colors.textBody}>
           {mistakeCount > 0
             ? `${mistakeCount} soruda yanıldın. En çok zorlandıklarınla başla.`
             : 'Henüz yanlışın yok. Bir bölüm çöz, zorlandıkların buraya düşsün.'}
         </Txt>
         <View style={styles.coachCta}>
-          <Txt f="m" s={12.5} w={700}>
+          <Txt f="m" s={font.footnote} w={700}>
             {mistakeCount > 0 ? 'Hatalarımı çalış' : 'Derse git'}
           </Txt>
         </View>
@@ -275,18 +275,18 @@ export function HomeScreen() {
           }}
           scale={0.99}
           style={styles.gameCard}>
-          <Txt f="mono" s={10} w={700} c={t.colors.accentSoft} ls={0.1}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.accentSoft} ls={0.1}>
             {DAILY_GAME.kicker}
           </Txt>
           <View style={styles.gameRing}>
-            <Txt f="m" s={15} w={800}>
+            <Txt f="m" s={font.callout} w={800}>
               W
             </Txt>
           </View>
-          <Txt f="m" s={14} w={800}>
+          <Txt f="m" s={font.body} w={800}>
             {DAILY_GAME.title}
           </Txt>
-          <Txt s={11} c={t.colors.textDim}>
+          <Txt s={font.caption} c={t.colors.textDim}>
             {DAILY_GAME.sub}
           </Txt>
         </Press>
@@ -295,10 +295,10 @@ export function HomeScreen() {
       {board && board.entries.length ? (
         <Press onPress={() => go('board')} scale={0.99} style={styles.board}>
           <View style={styles.boardHead}>
-            <Txt f="m" s={14.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               Liderlik
             </Txt>
-            <Txt s={12} w={700} c={t.colors.textDim}>
+            <Txt s={font.caption} w={700} c={t.colors.textDim}>
               Tümü ›
             </Txt>
           </View>
@@ -306,25 +306,25 @@ export function HomeScreen() {
             const tint = avatarOf(r.name);
             return (
               <View key={r.userId} style={[styles.boardRow, r.me && styles.boardRowMe]}>
-                <Txt f="mono" s={12} w={700} c={t.colors.textDim} style={styles.rank}>
+                <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim} style={styles.rank}>
                   {r.place}
                 </Txt>
                 <Avatar
                   initials={initialsOf(r.name)}
-                  from={tint[0]}
-                  to={tint[1]}
+                  from={t.colors[tint[0]]}
+                  to={t.colors[tint[1]]}
                   size={28}
                 />
-                <Txt f="m" s={13} w={700} style={styles.flex}>
+                <Txt f="m" s={font.footnote} w={700} style={styles.flex}>
                   {r.name}
                 </Txt>
-                <Txt f="mono" s={12} w={700} c={t.colors.accent}>
+                <Txt f="mono" s={font.caption} w={700} c={t.colors.accent}>
                   {tr(r.xp)}
                 </Txt>
               </View>
             );
           })}
-          <Txt s={11} c={t.colors.textFaint} style={styles.boardFoot}>
+          <Txt s={font.caption} c={t.colors.textFaint} style={styles.boardFoot}>
             {weekEndsText()}
           </Txt>
         </Press>
@@ -353,10 +353,10 @@ function StatChip({
       deg={140}
       colors={[fill, tint(t.colors.surface, 0.9)]}
       style={[styles.statChip, { borderColor: border }]}>
-      <Txt f="mono" s={10} w={700} c={kickerColor} ls={0.1}>
+      <Txt f="mono" s={font.label} w={700} c={kickerColor} ls={0.1}>
         {kicker}
       </Txt>
-      <Txt f="m" s={21} w={800} style={styles.gap2}>
+      <Txt f="m" s={font.display} w={800} style={styles.gap2}>
         {value}
       </Txt>
     </Gradient>
@@ -367,9 +367,9 @@ const makeStyles = (t: Theme) =>
   StyleSheet.create({
     flex: { flex: 1 },
     gap2: { marginTop: 2 },
-    gap3: { marginTop: 3 },
+    gap3: { marginTop: 4 },
     header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-    headerLeft: { flexDirection: 'row', alignItems: 'center', gap: 11 },
+    headerLeft: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     online: {
       position: 'absolute',
       bottom: -2,
@@ -400,7 +400,7 @@ const makeStyles = (t: Theme) =>
       borderRadius: 4,
       backgroundColor: t.colors.error,
     },
-    statRow: { flexDirection: 'row', gap: 9 },
+    statRow: { flexDirection: 'row', gap: 10 },
     statChip: { flex: 1, borderWidth: 1, borderRadius: radii.panel, padding: 12 },
     goalHead: {
       flexDirection: 'row',
@@ -413,7 +413,7 @@ const makeStyles = (t: Theme) =>
       width: 38,
       height: 38,
       borderRadius: 19,
-      backgroundColor: t.colors.surfaceSlot,
+      backgroundColor: t.colors.sunken,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -453,13 +453,13 @@ const makeStyles = (t: Theme) =>
     coachStatus: {
       marginLeft: 'auto',
       paddingVertical: 4,
-      paddingHorizontal: 9,
+      paddingHorizontal: 10,
       borderRadius: radii.sm,
       backgroundColor: tint(t.colors.accent, 0.16),
     },
     coachCta: {
       alignSelf: 'flex-start',
-      paddingVertical: 9,
+      paddingVertical: 10,
       paddingHorizontal: 16,
       borderRadius: radii.md,
       backgroundColor: t.colors.secondary,
@@ -500,13 +500,13 @@ const makeStyles = (t: Theme) =>
       justifyContent: 'space-between',
       alignItems: 'center',
     },
-    boardRow: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 7 },
+    boardRow: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 8 },
     boardRowMe: {
       backgroundColor: tint(t.colors.primary, 0.12),
       borderWidth: 1,
       borderColor: tint(t.colors.primary, 0.3),
       borderRadius: radii.md,
-      paddingHorizontal: 9,
+      paddingHorizontal: 10,
       marginHorizontal: -9,
     },
     rank: { width: 22 },

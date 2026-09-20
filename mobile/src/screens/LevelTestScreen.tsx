@@ -8,7 +8,7 @@ import { Gradient } from '../components/Gradient';
 import { PrimaryButton } from '../components/Buttons';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { LEVELS, placement } from '../content';
 import { scorePlacement } from '../content/score';
 import { useApp } from '../state/AppContext';
@@ -90,11 +90,11 @@ export function LevelTestScreen() {
         />
       }>
       <View style={styles.header}>
-        <Txt f="mono" s={12.5} w={700} c={t.colors.textDim}>
+        <Txt f="mono" s={font.footnote} w={700} c={t.colors.textDim}>
           SORU {index + 1} / {questions.length}
         </Txt>
         <View style={[styles.tag, styles.typeTag]}>
-          <Txt f="m" s={11} w={700} c={t.colors.violetSoft}>
+          <Txt f="m" s={font.caption} w={700} c={t.colors.violetSoft}>
             DİLBİLGİSİ
           </Txt>
         </View>
@@ -116,7 +116,7 @@ export function LevelTestScreen() {
       </View>
 
       <View style={styles.difficulty}>
-        <Txt s={11.5} w={600} c={t.colors.textDim}>
+        <Txt s={font.caption} w={600} c={t.colors.textDim}>
           Zorluk
         </Txt>
         {LEVELS.map((_, i) => (
@@ -128,16 +128,16 @@ export function LevelTestScreen() {
             ]}
           />
         ))}
-        <Txt s={11.5} w={700}>
+        <Txt s={font.caption} w={700}>
           {q.level}
         </Txt>
       </View>
 
       <Gradient deg={180} colors={t.gradients.card} style={styles.card}>
-        <Txt s={12} w={600} c={t.colors.textFaint}>
+        <Txt s={font.caption} w={600} c={t.colors.textFaint}>
           Boşluğa gelecek doğru seçeneği işaretle
         </Txt>
-        <Txt f="m" s={23} w={700} lh={1.35}>
+        <Txt f="m" s={font.display} w={700} lh={1.35}>
           {q.text}
         </Txt>
       </Gradient>
@@ -169,11 +169,11 @@ export function LevelTestScreen() {
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
     header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-    tag: { paddingVertical: 5, paddingHorizontal: 10, borderRadius: radii.chipSm, borderWidth: 1 },
+    tag: { paddingVertical: 6, paddingHorizontal: 10, borderRadius: radii.chipSm, borderWidth: 1 },
     typeTag: { backgroundColor: tint(t.colors.secondary, 0.16), borderColor: tint(t.colors.secondary, 0.32) },
     dots: { flexDirection: 'row', gap: 2 },
     dot: { flex: 1, height: 4, borderRadius: 9 },
-    difficulty: { flexDirection: 'row', alignItems: 'center', gap: 7 },
+    difficulty: { flexDirection: 'row', alignItems: 'center', gap: 8 },
     diffBar: { width: 14, height: 6, borderRadius: 2 },
     card: {
       borderWidth: 1,

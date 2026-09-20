@@ -9,7 +9,7 @@ import { GhostButton, PrimaryButton } from '../components/Buttons';
 import { ResultDonut, ProgressBar } from '../components/Progress';
 import { FadeIn } from '../components/motion';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { LEVELS } from '../content';
 import { PASS_RATIO } from '../content/score';
 import { CEFR } from '../data/curriculum';
@@ -34,10 +34,10 @@ export function TestResultScreen() {
     return (
       <Screen padTop={70} padH={22} padBottom={26} gap={18}>
         <Spacer />
-        <Txt f="m" s={18} w={800} style={styles.center}>
+        <Txt f="m" s={font.title} w={800} style={styles.center}>
           Henüz test çözmedin
         </Txt>
-        <Txt s={13} lh={1.5} c={t.colors.textMuted} style={styles.center}>
+        <Txt s={font.footnote} lh={1.5} c={t.colors.textMuted} style={styles.center}>
           Seviyeni belirlemek için kısa testi çözebilirsin.
         </Txt>
         <Spacer />
@@ -60,7 +60,7 @@ export function TestResultScreen() {
         { rx: 230, ry: 170, cx: 0.5, cy: 0.12, color: t.colors.primary, opacity: 0.26, stop: 0.64 },
       ]}>
       <FadeIn style={styles.hero}>
-        <Txt f="mono" s={11.5} w={700} c={t.colors.textDim} ls={0.16}>
+        <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim} ls={0.16}>
           SEVİYE TESTİ TAMAMLANDI
         </Txt>
         <View style={styles.donutWrap}>
@@ -77,13 +77,13 @@ export function TestResultScreen() {
             caption="GENEL SEVİYE"
           />
         </View>
-        <Txt s={13} lh={1.5} c={t.colors.textMuted} style={styles.summary}>
+        <Txt s={font.footnote} lh={1.5} c={t.colors.textMuted} style={styles.summary}>
           {asked} sorudan {right} doğru. {summary.description}
         </Txt>
       </FadeIn>
 
       <Gradient deg={180} colors={t.gradients.card} style={styles.breakdown}>
-        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
           SEVİYE SEVİYE
         </Txt>
         {LEVELS.map((l) => {
@@ -94,10 +94,10 @@ export function TestResultScreen() {
           return (
             <View key={l} style={styles.skillRow}>
               <View style={styles.skillHead}>
-                <Txt s={11.5} w={600} c={t.colors.textSubtle}>
+                <Txt s={font.caption} w={600} c={t.colors.textSubtle}>
                   {l}
                 </Txt>
-                <Txt f="m" s={11.5} w={700} c={passed ? t.colors.mintSoft : t.colors.textDim}>
+                <Txt f="m" s={font.caption} w={700} c={passed ? t.colors.mintSoft : t.colors.textDim}>
                   {bucket.right}/{bucket.asked}
                 </Txt>
               </View>
@@ -113,7 +113,7 @@ export function TestResultScreen() {
       </Gradient>
 
       <View style={styles.note}>
-        <Txt s={11.5} lh={1.55} c={t.colors.textDim}>
+        <Txt s={font.caption} lh={1.55} c={t.colors.textDim}>
           Seviyen, alt seviyeleri de geçtiğin en yüksek basamak olarak belirlenir. Tek tek
           doğru bilinen ileri sorular seviyeyi yukarı çekmez.
         </Txt>
@@ -135,7 +135,7 @@ const makeStyles = (t: Theme) =>
     donutGlow: { position: 'absolute', top: -18, left: -18, right: -18, bottom: -18 },
     summary: { marginTop: 12, textAlign: 'center', paddingHorizontal: 10 },
     breakdown: {
-      gap: 9,
+      gap: 10,
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.hero,
@@ -146,6 +146,6 @@ const makeStyles = (t: Theme) =>
     note: {
       backgroundColor: t.alpha.w04,
       borderRadius: radii.input,
-      padding: 13,
+      padding: 14,
     },
   });

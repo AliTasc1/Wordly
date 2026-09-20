@@ -6,7 +6,7 @@ import { Screen, Spacer } from '../components/Screen';
 import { Press, PrimaryButton } from '../components/Buttons';
 import { DashedRing, StripeArt } from '../components/StripeArt';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { INTRO } from '../data/onboarding';
 import { useGo } from '../navigation/useGo';
 
@@ -32,7 +32,7 @@ export function IntroScreen() {
           <View style={styles.dot} />
         </View>
         <Press onPress={() => go('goal')} scale={0.96}>
-          <Txt s={13} w={600} c={t.colors.textDim}>
+          <Txt s={font.footnote} w={600} c={t.colors.textDim}>
             {INTRO.skip}
           </Txt>
         </Press>
@@ -45,10 +45,10 @@ export function IntroScreen() {
       </StripeArt>
 
       <View style={styles.copy}>
-        <Txt f="m" s={30} w={800} lh={1.18} ls={-0.02}>
+        <Txt f="m" s={font.giant} w={800} lh={1.18} ls={-0.02}>
           {INTRO.title}
         </Txt>
-        <Txt s={14.5} lh={1.55} c={t.colors.textDim}>
+        <Txt s={font.body} lh={1.55} c={t.colors.textDim}>
           {INTRO.body}
         </Txt>
       </View>
@@ -56,10 +56,10 @@ export function IntroScreen() {
       <View style={styles.stats}>
         {INTRO.stats.map((s) => (
           <View key={s.label} style={styles.stat}>
-            <Txt f="m" s={19} w={800} c={s.tint}>
+            <Txt f="m" s={font.headline} w={800} c={t.colors[s.tint]}>
               {s.value}
             </Txt>
-            <Txt s={11} c={t.colors.textDim}>
+            <Txt s={font.caption} c={t.colors.textDim}>
               {s.label}
             </Txt>
           </View>

@@ -9,6 +9,7 @@ import { Gradient } from '../components/Gradient';
 import { Press } from '../components/Buttons';
 import { Txt } from '../components/Txt';
 import { TabName } from './routes';
+import { font } from '../theme/tokens';
 
 /*
   Beş sekme, hepsi gerçek bir şeye gidiyor.
@@ -72,10 +73,10 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
               {focused ? (
                 <Gradient deg={90} colors={t.gradients.progress} style={styles.dot} />
               ) : null}
-              <Txt s={19} style={styles.icon}>
+              <Txt s={font.headline} style={styles.icon}>
                 {item.icon}
               </Txt>
-              <Txt s={10.5} w={700} c={focused ? t.colors.text : t.colors.textGhost}>
+              <Txt s={font.label} w={700} c={focused ? t.colors.text : t.colors.textGhost}>
                 {item.label}
               </Txt>
             </Press>

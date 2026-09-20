@@ -10,6 +10,7 @@ import { Txt } from '../components/Txt';
 import { PopIn } from '../components/motion';
 import { SPLASH } from '../data/onboarding';
 import { useGo } from '../navigation/useGo';
+import { font } from '../theme/tokens';
 
 /** 01 · Açılış — brand moment plus session bootstrap. */
 export function SplashScreen() {
@@ -69,16 +70,16 @@ export function SplashScreen() {
             colors={t.gradients.logo}
             locations={[0, 0.55, 1]}
             style={styles.logo}>
-            <Txt f="m" s={62} w={800}>
+            <Txt f="m" s={font.splash} w={800}>
               W
             </Txt>
           </Gradient>
         </View>
         <View style={styles.wordmarkWrap}>
-          <Txt f="m" s={42} w={800} ls={0.22} style={styles.wordmark}>
+          <Txt f="m" s={font.hero} w={800} ls={0.22} style={styles.wordmark}>
             WORDLY
           </Txt>
-          <Txt s={14} w={600} c={t.colors.blueSoft} style={styles.tagline}>
+          <Txt s={font.body} w={600} c={t.colors.blueSoft} style={styles.tagline}>
             {SPLASH.tagline}
           </Txt>
         </View>
@@ -98,7 +99,7 @@ export function SplashScreen() {
           border={t.alpha.w14}
           onPress={() => go('signin')}
         />
-        <Txt s={10.5} c={t.colors.textDisabled} style={styles.legal}>
+        <Txt s={font.label} c={t.colors.textDisabled} style={styles.legal}>
           {SPLASH.legal}
         </Txt>
       </View>
@@ -120,7 +121,7 @@ const makeStyles = (t: Theme) =>
       justifyContent: 'center',
     },
     wordmarkWrap: { alignItems: 'center' },
-    wordmark: { marginLeft: 9 },
+    wordmark: { marginLeft: 10 },
     tagline: { marginTop: 8 },
     actions: { gap: 12 },
     legal: { textAlign: 'center', marginTop: 4 },

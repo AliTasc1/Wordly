@@ -3,13 +3,14 @@ import { Text, TextProps, TextStyle } from 'react-native';
 import { useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
 import { jakarta, JakartaWeight, manrope, ManropeWeight, mono } from '../theme/typography';
+import { font } from '../theme/tokens';
 
 type Family = 'm' | 'j' | 'mono';
 
 export type TxtProps = TextProps & {
   /** `m` = Manrope, `j` = Plus Jakarta Sans, `mono` = ui-monospace. */
   f?: Family;
-  /** Font size in px, exactly as the design writes it. */
+  /** Punto. Ölçek basamaklarından biri: `font.body`, `font.label` … */
   s?: number;
   /** Font weight. Defaults: Manrope 800, Jakarta 500, mono 700. */
   w?: 400 | 500 | 600 | 700 | 800;
@@ -23,9 +24,9 @@ export type TxtProps = TextProps & {
 
 /**
  * Text with the design's CSS font shorthand mapped onto props, so
- * `font:800 17px Manrope` reads as `<Txt f="m" s={17} w={800}>`.
+ * `font:800 17px Manrope` reads as `<Txt f="m" s={font.title} w={800}>`.
  */
-export function Txt({ f = 'j', s = 13, w, c, lh, ls, style, ...rest }: TxtProps) {
+export function Txt({ f = 'j', s = font.footnote, w, c, lh, ls, style, ...rest }: TxtProps) {
   const t = useTheme();
   // Varsayılan renk temadan geliyor; parametre listesinde duramaz, orada
   // `t` henüz tanımlı değil.

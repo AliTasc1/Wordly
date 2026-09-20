@@ -10,6 +10,7 @@ import { Txt } from '../components/Txt';
 import { emailProblem, MIN_PASSWORD, passwordProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
+import { font } from '../theme/tokens';
 
 /**
  * Kayıt.
@@ -84,7 +85,7 @@ export function SignUpScreen() {
         ]}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             E-postanı doğrula
           </Txt>
         </View>
@@ -94,7 +95,7 @@ export function SignUpScreen() {
           text={`${pendingEmail} adresine bir doğrulama bağlantısı gönderdik.`}
         />
 
-        <Txt s={13.5} lh={1.6} c={t.colors.textDim}>
+        <Txt s={font.body} lh={1.6} c={t.colors.textDim}>
           Bağlantıya telefonundan tıkla; uygulama kendiliğinden açılıp girişini tamamlar.
           E-posta görünmüyorsa gereksiz (spam) klasörüne bak.
         </Txt>
@@ -112,7 +113,7 @@ export function SignUpScreen() {
             accessibilityRole="button"
             style={styles.center}
             disabled={busy}>
-            <Txt f="m" s={13} w={700} c={t.colors.link}>
+            <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
               E-postayı yeniden gönder
             </Txt>
           </Press>
@@ -142,12 +143,12 @@ export function SignUpScreen() {
         ]}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             Kayıt ol
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
+        <Txt s={font.body} lh={1.55} c={t.colors.textDim}>
           Hesap, ilerlemeni telefonun dışında da saklar. Telefonunu değiştirdiğinde
           kaldığın yerden devam edersin.
         </Txt>
@@ -214,9 +215,9 @@ export function SignUpScreen() {
           onPress={() => go('signin')}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt s={13} c={t.colors.textDim}>
+          <Txt s={font.footnote} c={t.colors.textDim}>
             Zaten hesabın var mı?{' '}
-            <Txt f="m" s={13} w={700} c={t.colors.link}>
+            <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
               Giriş yap
             </Txt>
           </Txt>

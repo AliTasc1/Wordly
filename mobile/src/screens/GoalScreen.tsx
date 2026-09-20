@@ -8,7 +8,7 @@ import { BackButton, Press, PrimaryButton } from '../components/Buttons';
 import { Chip, Divider } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { GOAL_SCREEN, GOALS, SKILL_OPTIONS, TIME_OPTIONS } from '../data/onboarding';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -35,16 +35,16 @@ export function GoalScreen() {
           to={t.colors.secondary}
           style={styles.headerBar}
         />
-        <Txt f="mono" s={12} w={700} c={t.colors.textDim}>
+        <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
           {GOAL_SCREEN.step}
         </Txt>
       </View>
 
       <View>
-        <Txt f="m" s={27} w={800} lh={1.2} ls={-0.02}>
+        <Txt f="m" s={font.jumbo} w={800} lh={1.2} ls={-0.02}>
           {GOAL_SCREEN.title}
         </Txt>
-        <Txt s={13.5} c={t.colors.textDim} style={styles.sub}>
+        <Txt s={font.body} c={t.colors.textDim} style={styles.sub}>
           {GOAL_SCREEN.sub}
         </Txt>
       </View>
@@ -60,10 +60,10 @@ export function GoalScreen() {
               accessibilityRole="button"
               accessibilityState={{ selected: active }}
               style={[styles.goal, active ? styles.goalActive : styles.goalIdle]}>
-              <Txt f="m" s={14} w={700}>
+              <Txt f="m" s={font.body} w={700}>
                 {goal.label}
               </Txt>
-              <Txt s={11} c={t.colors.textFaint}>
+              <Txt s={font.caption} c={t.colors.textFaint}>
                 {goal.sub}
               </Txt>
             </Press>
@@ -74,7 +74,7 @@ export function GoalScreen() {
       <Divider />
 
       <View>
-        <Txt f="m" s={15} w={700} style={styles.groupTitle}>
+        <Txt f="m" s={font.callout} w={700} style={styles.groupTitle}>
           {GOAL_SCREEN.timeTitle}
         </Txt>
         <View style={styles.timeRow}>
@@ -93,7 +93,7 @@ export function GoalScreen() {
       </View>
 
       <View>
-        <Txt f="m" s={15} w={700} style={styles.groupTitle}>
+        <Txt f="m" s={font.callout} w={700} style={styles.groupTitle}>
           {GOAL_SCREEN.skillTitle}
         </Txt>
         <View style={styles.skillRow}>
@@ -113,7 +113,7 @@ export function GoalScreen() {
       <Spacer />
 
       <View style={styles.footer}>
-        <Txt s={11.5} c={t.colors.textDim} style={styles.summary}>
+        <Txt s={font.caption} c={t.colors.textDim} style={styles.summary}>
           {summary}
         </Txt>
         <PrimaryButton label={GOAL_SCREEN.cta} onPress={() => go('test')} />
@@ -126,13 +126,13 @@ const makeStyles = (t: Theme) =>
   StyleSheet.create({
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     headerBar: { flex: 1 },
-    sub: { marginTop: 7 },
+    sub: { marginTop: 8 },
     grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
     goal: {
       width: '48%',
       flexGrow: 1,
-      gap: 3,
-      padding: 13,
+      gap: 4,
+      padding: 14,
       borderRadius: radii.input,
       borderWidth: 1,
     },

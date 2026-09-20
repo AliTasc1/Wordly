@@ -9,7 +9,7 @@ import { Card, Panel } from '../components/Surfaces';
 import { AnswerFeedback } from '../components/QuizOption';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { writingOf } from '../content';
 import { accepts, diagnose } from '../content/writing';
 import { useApp } from '../state/AppContext';
@@ -52,16 +52,16 @@ export function WriteScreen() {
       <Screen padTop={62} gap={14}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={17} w={800}>
+          <Txt f="m" s={font.title} w={800}>
             Yazma
           </Txt>
         </View>
         <Panel gap={8} radius={radii.hero}>
-          <Txt s={28}>✍️</Txt>
-          <Txt f="m" s={16} w={800}>
+          <Txt s={font.jumbo}>✍️</Txt>
+          <Txt f="m" s={font.callout} w={800}>
             {cefr} için yazma henüz hazır değil
           </Txt>
-          <Txt s={13} lh={1.6} c={t.colors.textDim}>
+          <Txt s={font.footnote} lh={1.6} c={t.colors.textDim}>
             Yazma setleri seviye seviye yazılıyor. Bu seviye eklendiğinde
             burada görünecek.
           </Txt>
@@ -142,10 +142,10 @@ export function WriteScreen() {
         <View style={styles.header}>
           <BackButton onPress={back} />
           <View style={styles.flex}>
-            <Txt f="m" s={16} w={800}>
+            <Txt f="m" s={font.callout} w={800}>
               {item.title}
             </Txt>
-            <Txt s={11} w={600} c={t.colors.textDim}>
+            <Txt s={font.caption} w={600} c={t.colors.textDim}>
               {item.level} · {index + 1}/{sets.length} · {right}/{item.tasks.length} doğru
             </Txt>
           </View>
@@ -160,20 +160,20 @@ export function WriteScreen() {
             Hatayı yaptıktan sonra açıklamak yerine önce söylemek, aynı hatayı
             sekiz kez yapmasını önlüyor. */}
         <Panel gap={6} radius={radii.panel}>
-          <Txt f="mono" s={10} w={700} c={t.colors.accentSoft} ls={0.12}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.accentSoft} ls={0.12}>
             BU SETTE DİKKAT
           </Txt>
-          <Txt s={12.5} lh={1.55} c={t.colors.textDim}>
+          <Txt s={font.footnote} lh={1.55} c={t.colors.textDim}>
             {item.focus}
           </Txt>
         </Panel>
 
         {done ? (
           <Card gap={12}>
-            <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+            <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
               SERBEST YAZMA
             </Txt>
-            <Txt f="m" s={16} w={700} lh={1.4}>
+            <Txt f="m" s={font.callout} w={700} lh={1.4}>
               {item.compose.prompt}
             </Txt>
 
@@ -188,15 +188,15 @@ export function WriteScreen() {
               accessibilityLabel="Serbest yazma alanı"
             />
 
-            <Txt f="m" s={13} w={700}>
+            <Txt f="m" s={font.footnote} w={700}>
               Kendi metnini şunlara göre kontrol et
             </Txt>
             {item.compose.checklist.map((line) => (
               <View key={line} style={styles.check}>
-                <Txt s={12} c={t.colors.accentSoft}>
+                <Txt s={font.caption} c={t.colors.accentSoft}>
                   ☐
                 </Txt>
-                <Txt s={12.5} lh={1.5} c={t.colors.textDim} style={styles.flex}>
+                <Txt s={font.footnote} lh={1.5} c={t.colors.textDim} style={styles.flex}>
                   {line}
                 </Txt>
               </View>
@@ -208,13 +208,13 @@ export function WriteScreen() {
                 örnek vermek daha dürüst. */}
             {showModel ? (
               <Panel gap={6} radius={radii.input}>
-                <Txt f="mono" s={10} w={700} c={t.colors.successSoft} ls={0.1}>
+                <Txt f="mono" s={font.label} w={700} c={t.colors.successSoft} ls={0.1}>
                   ÖRNEK METİN
                 </Txt>
-                <Txt s={13.5} lh={1.6}>
+                <Txt s={font.body} lh={1.6}>
                   {item.compose.model}
                 </Txt>
-                <Txt s={11.5} lh={1.5} c={t.colors.textFaint}>
+                <Txt s={font.caption} lh={1.5} c={t.colors.textFaint}>
                   Tek doğru bu değil. Seninkiyle karşılaştır: hangi cümleyi
                   farklı kurmuşsun?
                 </Txt>
@@ -225,7 +225,7 @@ export function WriteScreen() {
                 disabled={!essay.trim()}
                 accessibilityRole="button"
                 style={[styles.ghost, !essay.trim() && styles.ghostOff]}>
-                <Txt f="m" s={13} w={700} c={essay.trim() ? t.colors.text : t.colors.textGhost}>
+                <Txt f="m" s={font.footnote} w={700} c={essay.trim() ? t.colors.text : t.colors.textGhost}>
                   {essay.trim() ? 'Örnek metni göster' : 'Önce kendi metnini yaz'}
                 </Txt>
               </Press>
@@ -233,10 +233,10 @@ export function WriteScreen() {
           </Card>
         ) : (
           <Card gap={12}>
-            <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+            <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
               {asked + 1}/{item.tasks.length} · İNGİLİZCESİNİ YAZ
             </Txt>
-            <Txt f="m" s={18} w={700} lh={1.4}>
+            <Txt f="m" s={font.title} w={700} lh={1.4}>
               {task.tr}
             </Txt>
 
@@ -270,7 +270,7 @@ export function WriteScreen() {
               />
             ) : showHint ? (
               <Panel gap={0} radius={radii.input}>
-                <Txt s={12.5} lh={1.5} c={t.colors.textDim}>
+                <Txt s={font.footnote} lh={1.5} c={t.colors.textDim}>
                   💡 {task.hint}
                 </Txt>
               </Panel>
@@ -279,7 +279,7 @@ export function WriteScreen() {
                 onPress={() => setShowHint(true)}
                 accessibilityRole="button"
                 style={styles.ghost}>
-                <Txt f="m" s={12.5} w={700} c={t.colors.textDim}>
+                <Txt f="m" s={font.footnote} w={700} c={t.colors.textDim}>
                   İpucu ver
                 </Txt>
               </Press>
@@ -288,7 +288,7 @@ export function WriteScreen() {
             {/* Birden fazla doğru varsa söyleniyor: öğrenci kendi yazdığı da
                 doğruyken "doğrusu bu" görüp kafası karışmasın. */}
             {checked && !correct && task.answers.length > 1 ? (
-              <Txt s={11.5} lh={1.5} c={t.colors.textFaint}>
+              <Txt s={font.caption} lh={1.5} c={t.colors.textFaint}>
                 Şu da kabul edilirdi: {task.answers.slice(1).join(' · ')}
               </Txt>
             ) : null}

@@ -1,4 +1,4 @@
-import { colors } from '../theme/tokens';
+import type { ColorRole } from '../theme/palette';
 import type { ScreenId } from '../navigation/routes';
 
 /**
@@ -23,7 +23,7 @@ export type Alert = {
   title: string;
   text: string;
   kind: string;
-  tint: string;
+  tint: ColorRole;
   target: ScreenId;
 };
 
@@ -54,7 +54,7 @@ export function alertsOf(f: AlertFacts): Alert[] {
       title: 'Eşitleme yapılamadı',
       text: `İlerlemen telefonda duruyor. ${f.syncProblem}`,
       kind: 'EŞİTLEME',
-      tint: colors.warning,
+      tint: 'warning',
       target: 'settings',
     });
   }
@@ -68,7 +68,7 @@ export function alertsOf(f: AlertFacts): Alert[] {
       title: `${f.streak} günlük serin sürüyor`,
       text: 'Bugün henüz çalışmadın. Kısa bir bölüm seriyi korur.',
       kind: 'SERİ',
-      tint: colors.warning,
+      tint: 'warning',
       target: 'learn',
     });
   }
@@ -80,7 +80,7 @@ export function alertsOf(f: AlertFacts): Alert[] {
       title: `Hata defterinde ${f.mistakes} soru var`,
       text: 'En çok zorlandıklarınla başlamak en hızlı ilerleme yolu.',
       kind: 'TEKRAR',
-      tint: colors.secondary,
+      tint: 'secondary',
       target: 'coach',
     });
   }
@@ -92,7 +92,7 @@ export function alertsOf(f: AlertFacts): Alert[] {
       title: `Bu hafta ${f.place}. sıradasın`,
       text: 'Hafta pazartesi sıfırlanıyor.',
       kind: 'LİDERLİK',
-      tint: colors.accent,
+      tint: 'accent',
       target: 'board',
     });
   }
@@ -105,7 +105,7 @@ export function alertsOf(f: AlertFacts): Alert[] {
       title: 'İlerlemen yalnızca bu telefonda',
       text: 'Hesap açarsan diğer cihazlarına da taşınır. Zorunlu değil.',
       kind: 'HESAP',
-      tint: colors.primary,
+      tint: 'primary',
       target: 'signin',
     });
   }

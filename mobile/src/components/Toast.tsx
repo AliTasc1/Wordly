@@ -6,7 +6,7 @@ import { tint } from '../theme/tint';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { useApp } from '../state/AppContext';
 
 /**
@@ -47,15 +47,15 @@ export function ToastHost() {
       ]}>
       <View style={styles.card}>
         <Gradient colors={t.gradients.cyan} deg={135} style={styles.icon}>
-          <Txt f="m" s={14} w={800}>
+          <Txt f="m" s={font.body} w={800}>
             ✓
           </Txt>
         </Gradient>
         <View style={styles.body}>
-          <Txt f="m" s={13.5} w={800}>
+          <Txt f="m" s={font.body} w={800}>
             {toast.title}
           </Txt>
-          <Txt s={11.5} c={t.colors.textMuted}>
+          <Txt s={font.caption} c={t.colors.textMuted}>
             {toast.note}
           </Txt>
         </View>
@@ -68,15 +68,15 @@ const makeStyles = (t: Theme) =>
   StyleSheet.create({
     wrap: { position: 'absolute', left: 18, right: 18, zIndex: 90 },
     card: {
-      backgroundColor: tint(t.colors.surfaceCard, 0.94),
+      backgroundColor: tint(t.colors.sunken, 0.94),
       borderWidth: 1,
       borderColor: tint(t.colors.accent, 0.4),
       borderRadius: radii.input,
-      paddingVertical: 13,
-      paddingHorizontal: 15,
+      paddingVertical: 14,
+      paddingHorizontal: 16,
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 11,
+      gap: 12,
       boxShadow: t.shadows.toast,
     },
     icon: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },

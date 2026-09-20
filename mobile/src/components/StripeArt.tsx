@@ -5,7 +5,7 @@ import type { Theme } from '../theme/theme';
 import { tint } from '../theme/tint';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { Txt } from './Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 
 let patternId = 0;
 
@@ -64,7 +64,7 @@ export function StripeArt({
       {children}
       {label ? (
         <View style={styles.caption}>
-          <Txt f="mono" s={10.5} w={600} c={t.alpha.w30}>
+          <Txt f="mono" s={font.label} w={600} c={t.alpha.w30}>
             {label}
           </Txt>
         </View>
@@ -84,7 +84,7 @@ const makeStyles = (t: Theme) =>
     },
     caption: {
       backgroundColor: tint(t.colors.bg, 0.7),
-      paddingVertical: 5,
+      paddingVertical: 6,
       paddingHorizontal: 10,
       borderRadius: 8,
     },

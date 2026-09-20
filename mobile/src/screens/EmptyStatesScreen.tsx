@@ -8,7 +8,7 @@ import { Press } from '../components/Buttons';
 import { ScreenHeading } from '../components/Surfaces';
 import { StripeCircle } from '../components/StripeArt';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { EMPTY_STATES } from '../data/onboarding';
 import { useGo } from '../navigation/useGo';
 
@@ -29,15 +29,15 @@ export function EmptyStatesScreen() {
       {EMPTY_STATES.map((state) => (
         <View key={state.title} style={styles.card}>
           <StripeCircle label={`görsel: ${state.art}`} />
-          <Txt f="m" s={15} w={800}>
+          <Txt f="m" s={font.callout} w={800}>
             {state.title}
           </Txt>
-          <Txt s={12} lh={1.55} c={t.colors.textDim} style={styles.text}>
+          <Txt s={font.caption} lh={1.55} c={t.colors.textDim} style={styles.text}>
             {state.text}
           </Txt>
           <Press onPress={() => go(state.target)}>
             <Gradient colors={t.gradients.brand} style={styles.cta}>
-              <Txt f="m" s={12.5} w={800}>
+              <Txt f="m" s={font.footnote} w={800}>
                 {state.cta}
               </Txt>
             </Gradient>
@@ -60,5 +60,5 @@ const makeStyles = (t: Theme) =>
       gap: 10,
     },
     text: { maxWidth: 250, textAlign: 'center' },
-    cta: { paddingVertical: 11, paddingHorizontal: 18, borderRadius: radii.card },
+    cta: { paddingVertical: 12, paddingHorizontal: 18, borderRadius: radii.card },
   });

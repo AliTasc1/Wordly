@@ -8,7 +8,7 @@ import { Gradient } from '../components/Gradient';
 import { BackButton } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { achievementsOf, facts, summarize } from '../content/achievements';
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
@@ -27,14 +27,14 @@ export function AchievementsScreen() {
   const summary = useMemo(() => summarize(list), [list]);
 
   return (
-    <Screen tabbed padTop={62} gap={13}>
+    <Screen tabbed padTop={62} gap={14}>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View>
-          <Txt f="m" s={17} w={800}>
+          <Txt f="m" s={font.title} w={800}>
             Başarımlar
           </Txt>
-          <Txt s={11} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {summary.unlocked} / {summary.total} açıldı
           </Txt>
         </View>
@@ -45,6 +45,9 @@ export function AchievementsScreen() {
       <View style={styles.grid}>
         {list.map((a) => {
           const unlocked = a.done;
+          // Rozet rengi içerikte rol adı olarak duruyor ("başarı", "uyarı");
+          // hangi yeşil olduğuna tema karar veriyor.
+          const renk = t.colors[a.tint];
           const card = (
             <>
               <View
@@ -52,24 +55,24 @@ export function AchievementsScreen() {
                   styles.badge,
                   unlocked
                     ? {
-                        backgroundColor: `${a.tint}33`,
-                        borderColor: `${a.tint}80`,
-                        boxShadow: `0px 8px 22px ${a.tint}40`,
+                        backgroundColor: tint(renk, 0.2),
+                        borderColor: tint(renk, 0.5),
+                        boxShadow: `0px 8px 22px ${tint(renk, 0.25)}`,
                       }
                     : styles.badgeLocked,
                 ]}>
-                <Txt s={21} style={!unlocked && styles.lockedGlyph}>
+                <Txt s={font.display} style={!unlocked && styles.lockedGlyph}>
                   {a.glyph}
                 </Txt>
               </View>
-              <Txt f="m" s={13} w={800} style={styles.name}>
+              <Txt f="m" s={font.footnote} w={800} style={styles.name}>
                 {a.name}
               </Txt>
-              <Txt s={10.5} lh={1.4} c={t.colors.textDim} style={styles.sub}>
+              <Txt s={font.label} lh={1.4} c={t.colors.textDim} style={styles.sub}>
                 {a.sub}
               </Txt>
-              <ProgressBar pct={a.pct} from={a.tint} to={a.tint} height={4} style={styles.bar} />
-              <Txt f="mono" s={9.5} w={700} c={t.colors.textFaint} style={styles.progress}>
+              <ProgressBar pct={a.pct} from={renk} to={renk} height={4} style={styles.bar} />
+              <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} style={styles.progress}>
                 {a.progress}
               </Txt>
             </>
@@ -79,8 +82,8 @@ export function AchievementsScreen() {
             <Gradient
               key={a.name}
               deg={160}
-              colors={[`${a.tint}26`, tint(t.colors.surface, 0.95)]}
-              style={[styles.card, { borderColor: `${a.tint}59` }]}>
+              colors={[tint(renk, 0.15), tint(t.colors.surface, 0.95)]}
+              style={[styles.card, { borderColor: tint(renk, 0.35) }]}>
               {card}
             </Gradient>
           ) : (
@@ -116,6 +119,6 @@ const makeStyles = (t: Theme) =>
     lockedGlyph: { opacity: 0.6 },
     name: { marginTop: 10 },
     sub: { marginTop: 2 },
-    bar: { marginTop: 9 },
-    progress: { marginTop: 5 },
+    bar: { marginTop: 10 },
+    progress: { marginTop: 6 },
   });

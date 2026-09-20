@@ -140,6 +140,50 @@ export const radii = {
   full: 999,
 } as const;
 
+/**
+ * Tipografi ölçeği.
+ *
+ * Kaynakta otuz bir ayrı punto vardı: 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5,
+ * 13, 13.5, 14 … 62. Aralarındaki yarım puntoluk farklar gözle seçilemiyor
+ * ama düzensizlik hissediliyor — aynı görevi gören iki etiket iki farklı
+ * boyutta duruyordu ve hangisinin daha önemli olduğu anlaşılmıyordu.
+ *
+ * On iki basamak kaldı. Her eski punto en yakın basamağa değil, **bir üst**
+ * basamağa yuvarlandı: küçük yazı şikâyeti geldi, ölçek de o yönde kurulmalı.
+ * Küçük uçta adımlar sık (11 → 12 → 13.5 → 14.5), büyük uçta seyrek —
+ * yirmi puntonun üstünde yarım puntoluk fark zaten görünmüyor.
+ *
+ * `label` en küçüğü ve yalnızca büyük harf, harf aralıklı mono etiketler
+ * için: "SORU 2/3", "ÖĞRENME". Küçük harfli bir cümle oraya düşerse
+ * okunmaz — düz metnin tabanı `caption`.
+ */
+export const font = {
+  /** Mono, büyük harf, aralıklı etiket. Düz metin için kullanılmaz. */
+  label: 11,
+  /** Bir başlığın altındaki ikincil satır. Küçük harfli metnin tabanı. */
+  caption: 12,
+  /** Not, açıklama, üçüncül metin. */
+  footnote: 13.5,
+  /** Varsayılan okuma boyutu. */
+  body: 14.5,
+  /** Vurgulu metin, kart başlığı. */
+  callout: 16,
+  /** Bölüm başlığı. */
+  title: 17.5,
+  /** Ekran başlığı. */
+  headline: 20,
+  /** Öne çıkan sayı. */
+  display: 22,
+  /** Kart içindeki büyük sayı. */
+  jumbo: 27,
+  /** Sonuç ekranının rakamı. */
+  giant: 31,
+  /** Seviye harfi. */
+  hero: 41,
+  /** Açılış logosu. */
+  splash: 62,
+} as const;
+
 export const spacing = {
   /** Screen gutter used by nearly every screen (`padding: … 18px`). */
   gutter: 18,

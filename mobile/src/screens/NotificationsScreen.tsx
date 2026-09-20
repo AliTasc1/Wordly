@@ -6,7 +6,7 @@ import { Screen } from '../components/Screen';
 import { BackButton, Press } from '../components/Buttons';
 import { IconTile, ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { alertsOf } from '../content/alerts';
 import { fetchBoard } from '../server/leaderboard';
 import { today } from '../state/days';
@@ -59,7 +59,7 @@ export function NotificationsScreen() {
   });
 
   return (
-    <Screen padTop={62} gap={13}>
+    <Screen padTop={62} gap={14}>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <ScreenHeading kicker="BİLDİRİMLER" title="Neler oluyor" />
@@ -71,25 +71,25 @@ export function NotificationsScreen() {
             <View style={styles.row}>
               <IconTile
                 glyph={item.glyph}
-                tint={item.tint}
+                tint={t.colors[item.tint]}
                 size={42}
                 radius={radii.card}
                 fontSize={17}
               />
               <View style={styles.flex}>
                 <View style={styles.rowHead}>
-                  <Txt f="mono" s={9.5} w={700} c={item.tint} ls={0.12}>
+                  <Txt f="mono" s={font.label} w={700} c={t.colors[item.tint]} ls={0.12}>
                     {item.kind}
                   </Txt>
                 </View>
-                <Txt f="m" s={13.5} w={700} style={styles.title}>
+                <Txt f="m" s={font.body} w={700} style={styles.title}>
                   {item.title}
                 </Txt>
-                <Txt s={11.5} lh={1.5} c={t.colors.textDim}>
+                <Txt s={font.caption} lh={1.5} c={t.colors.textDim}>
                   {item.text}
                 </Txt>
               </View>
-              <Txt f="m" s={20} w={800} c={t.colors.textGhost}>
+              <Txt f="m" s={font.headline} w={800} c={t.colors.textGhost}>
                 ›
               </Txt>
             </View>
@@ -97,11 +97,11 @@ export function NotificationsScreen() {
         ))
       ) : (
         <View style={styles.empty}>
-          <Txt s={30}>🔕</Txt>
-          <Txt f="m" s={14} w={700}>
+          <Txt s={font.giant}>🔕</Txt>
+          <Txt f="m" s={font.body} w={700}>
             Bekleyen bir şey yok
           </Txt>
-          <Txt s={12.5} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
+          <Txt s={font.footnote} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
             Serin güvende, hata defterin boş. Burası yalnızca gerçekten ilgilenmen gereken
             bir şey olduğunda dolar.
           </Txt>

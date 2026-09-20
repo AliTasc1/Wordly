@@ -9,7 +9,7 @@ import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { LiveWaveform, REC_WAVE, Waveform } from '../components/Waveform';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { speakingOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useStudySession } from '../state/useStudySession';
@@ -91,7 +91,7 @@ export function SpeakScreen() {
       ]}
       footer={
         <View style={styles.recorder}>
-          <Txt s={12} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {recorder.phase === 'recording'
               ? `Kaydediliyor · ${clock(recorder.seconds)}`
               : recorder.phase === 'ready'
@@ -129,7 +129,7 @@ export function SpeakScreen() {
                 styles.mic,
                 recorder.phase === 'recording' ? styles.micLive : styles.micIdle,
               ]}>
-              <Txt s={recorder.phase === 'recording' ? 24 : 28}>
+              <Txt s={recorder.phase === 'recording' ? font.display : font.jumbo}>
                 {recorder.phase === 'recording' ? '■' : '🎙'}
               </Txt>
             </Gradient>
@@ -142,17 +142,17 @@ export function SpeakScreen() {
           {recorder.phase === 'ready' ? (
             <View style={styles.compare}>
               <Press onPress={recorder.playBack} style={styles.compareButton}>
-                <Txt f="m" s={12.5} w={700} c={t.colors.text}>
+                <Txt f="m" s={font.footnote} w={700} c={t.colors.text}>
                   ▶ Kendi sesin
                 </Txt>
               </Press>
               <Press onPress={sayPrompt} style={styles.compareButton}>
-                <Txt f="m" s={12.5} w={700} c={t.colors.accentSoft}>
+                <Txt f="m" s={font.footnote} w={700} c={t.colors.accentSoft}>
                   ▶ Model ses
                 </Txt>
               </Press>
               <Press onPress={recorder.discard} style={styles.compareGhost}>
-                <Txt f="m" s={12.5} w={700} c={t.colors.textGhost}>
+                <Txt f="m" s={font.footnote} w={700} c={t.colors.textGhost}>
                   Tekrar dene
                 </Txt>
               </Press>
@@ -160,18 +160,18 @@ export function SpeakScreen() {
           ) : null}
 
           {recorder.problem ? (
-            <Txt s={11} lh={1.5} c={t.colors.errorTint} style={styles.recNote}>
+            <Txt s={font.caption} lh={1.5} c={t.colors.errorTint} style={styles.recNote}>
               {recorder.problem}
             </Txt>
           ) : (
-            <Txt s={11} lh={1.5} c={t.colors.textFaint} style={styles.recNote}>
+            <Txt s={font.caption} lh={1.5} c={t.colors.textFaint} style={styles.recNote}>
               Otomatik telaffuz puanı henüz açık değil. Kaydını model sesle karşılaştırarak
               çalış.
             </Txt>
           )}
 
           <Press onPress={nextStep} style={styles.recAction}>
-            <Txt f="m" s={12} w={700} c={t.colors.textSubtle}>
+            <Txt f="m" s={font.caption} w={700} c={t.colors.textSubtle}>
               {last ? 'Senaryoyu bitir' : 'Sonraki yönerge'}
             </Txt>
           </Press>
@@ -180,15 +180,15 @@ export function SpeakScreen() {
       <View style={styles.header}>
         <BackButton onPress={back} strong />
         <View style={styles.flex}>
-          <Txt f="m" s={15} w={800}>
+          <Txt f="m" s={font.callout} w={800}>
             {item.title}
           </Txt>
-          <Txt s={11} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {item.level} · {index + 1}/{items.length}
           </Txt>
         </View>
         <Press onPress={nextStep} style={styles.finish}>
-          <Txt f="m" s={11.5} w={700} c={t.colors.textSubtle}>
+          <Txt f="m" s={font.caption} w={700} c={t.colors.textSubtle}>
             {last ? 'Bitir' : 'Atla'}
           </Txt>
         </Press>
@@ -196,25 +196,25 @@ export function SpeakScreen() {
 
       <View style={styles.body}>
         <View style={styles.situation}>
-          <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.12}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.violetSoft} ls={0.12}>
             DURUM
           </Txt>
-          <Txt s={14} lh={1.6} c={t.colors.textBright} style={styles.situationEn}>
+          <Txt s={font.body} lh={1.6} c={t.colors.textBright} style={styles.situationEn}>
             {item.situation}
           </Txt>
-          <Txt s={12.5} lh={1.55} c={t.colors.textDim}>
+          <Txt s={font.footnote} lh={1.55} c={t.colors.textDim}>
             {item.situationTr}
           </Txt>
         </View>
 
         <View style={styles.promptCard}>
-          <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
             YÖNERGE {step + 1}/{item.prompts.length}
           </Txt>
-          <Txt f="m" s={18} w={700} lh={1.4} style={styles.promptEn}>
+          <Txt f="m" s={font.title} w={700} lh={1.4} style={styles.promptEn}>
             {item.prompts[step]}
           </Txt>
-          <Txt s={12.5} lh={1.55} c={t.colors.textDim}>
+          <Txt s={font.footnote} lh={1.55} c={t.colors.textDim}>
             {item.promptsTr[step]}
           </Txt>
         </View>
@@ -225,11 +225,11 @@ export function SpeakScreen() {
           accessibilityRole="button"
           accessibilityState={{ expanded: phrases }}
           style={styles.phraseToggle}>
-          <Txt s={15}>💬</Txt>
-          <Txt f="m" s={13} w={700} style={styles.flex}>
+          <Txt s={font.callout}>💬</Txt>
+          <Txt f="m" s={font.footnote} w={700} style={styles.flex}>
             İşe yarar kalıplar
           </Txt>
-          <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
             {phrases ? 'GİZLE' : 'GÖSTER'}
           </Txt>
         </Press>
@@ -245,12 +245,12 @@ export function SpeakScreen() {
                 accessibilityLabel={`Kalıbı dinle: ${phrase.en}`}
                 style={styles.phrase}>
                 <View style={styles.phraseRow}>
-                  <Txt s={13.5} w={600} lh={1.5} style={styles.flex}>
+                  <Txt s={font.body} w={600} lh={1.5} style={styles.flex}>
                     {phrase.en}
                   </Txt>
-                  <Txt s={12}>🔊</Txt>
+                  <Txt s={font.caption}>🔊</Txt>
                 </View>
-                <Txt s={12} lh={1.5} c={t.colors.textDim}>
+                <Txt s={font.caption} lh={1.5} c={t.colors.textDim}>
                   {phrase.tr}
                 </Txt>
               </Press>
@@ -287,7 +287,7 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: tint(t.colors.secondary, 0.26),
       borderRadius: radii.section,
-      padding: 15,
+      padding: 16,
     },
     situationEn: { marginTop: 6, marginBottom: 4 },
     promptCard: {
@@ -297,7 +297,7 @@ const makeStyles = (t: Theme) =>
       borderRadius: radii.section,
       padding: 16,
     },
-    promptEn: { marginTop: 7, marginBottom: 5 },
+    promptEn: { marginTop: 8, marginBottom: 6 },
     phraseToggle: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -306,17 +306,17 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.input,
-      padding: 13,
+      padding: 14,
     },
     phraseList: {
-      backgroundColor: t.colors.surfaceDeep,
+      backgroundColor: t.colors.sunken,
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.panel,
-      padding: 15,
+      padding: 16,
       gap: 12,
     },
-    phrase: { gap: 3 },
+    phrase: { gap: 4 },
     phraseRow: { flexDirection: 'row', alignItems: 'center', gap: 8 },
     recorder: { paddingTop: 16, paddingHorizontal: 18, alignItems: 'center', gap: 12 },
     recWave: { width: '100%' },
@@ -345,7 +345,7 @@ const makeStyles = (t: Theme) =>
     },
     compareGhost: { paddingVertical: 10, paddingHorizontal: 10 },
     recAction: {
-      paddingVertical: 9,
+      paddingVertical: 10,
       paddingHorizontal: 14,
       borderRadius: radii.md,
       borderWidth: 1,

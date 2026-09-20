@@ -45,13 +45,13 @@ function gradientsOf(name: ThemeName): Gradients {
     warm: ['#F5A524', '#FF7A59'],
     // Yüzey gradyanları zeminin devamı; açıkta beyazdan beyaza gitmesi
     // gerekiyor, yoksa kartın içinde görünmeyen bir koyu leke kalıyor.
-    card: light ? ['#FFFFFF', '#FBFCFE'] : ['#121A31', '#0E1426'],
-    cardHigh: light ? ['#FFFFFF', '#F4F6FC'] : ['#141C33', '#0E1426'],
+    card: light ? ['#FFFFFF', '#FBFCFE'] : ['#151D38', '#111831'],
+    cardHigh: light ? ['#FFFFFF', '#F4F6FC'] : ['#18213E', '#111831'],
     // Üstte saydam başlayıp altta tamamen kapanıyor: kaydırılan içerik
     // çubuğa çarpıp durmuyor, çubuğun altında eriyor.
     tabBar: light
       ? ['rgba(247,248,252,.4)', 'rgba(247,248,252,.96)', 'rgba(247,248,252,.96)']
-      : ['rgba(7,10,20,.4)', 'rgba(7,10,20,.96)', 'rgba(7,10,20,.96)'],
+      : ['rgba(5,8,15,.4)', 'rgba(5,8,15,.96)', 'rgba(5,8,15,.96)'],
   };
 }
 

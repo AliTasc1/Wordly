@@ -10,7 +10,7 @@ import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Notice } from '../components/Notice';
 import { ScreenHeading, StatTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { avatarOf, gapToNext, initialsOf, weekEndsText } from '../content/board';
 import { tr } from '../content/progress';
 import { fetchBoard, type Board } from '../server/leaderboard';
@@ -88,7 +88,7 @@ export function LeaderboardScreen() {
   const gap = board ? gapToNext(entries, mine) : null;
 
   return (
-    <Screen padTop={62} gap={13} scroll={false} style={styles.fill}>
+    <Screen padTop={62} gap={14} scroll={false} style={styles.fill}>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <ScreenHeading kicker="HAFTALIK" title="Liderlik" />
@@ -104,8 +104,8 @@ export function LeaderboardScreen() {
         <Gradient
           colors={[tint(t.colors.primary, 0.18), tint(t.colors.surface, 0.92)]}
           style={styles.week}>
-          <Txt s={18}>🗓</Txt>
-          <Txt s={12.5} lh={1.5} c={t.colors.textSubtle} style={styles.flex}>
+          <Txt s={font.title}>🗓</Txt>
+          <Txt s={font.footnote} lh={1.5} c={t.colors.textSubtle} style={styles.flex}>
             {weekEndsText()}
           </Txt>
         </Gradient>
@@ -147,20 +147,20 @@ export function LeaderboardScreen() {
               const tint = avatarOf(row.name);
               return (
                 <View key={row.userId} style={[styles.row, row.me && styles.rowMe]}>
-                  <Txt f="mono" s={12.5} w={700} c={t.colors.textDim} style={styles.rank}>
+                  <Txt f="mono" s={font.footnote} w={700} c={t.colors.textDim} style={styles.rank}>
                     {row.place}
                   </Txt>
                   <Avatar
                     initials={initialsOf(row.name)}
-                    from={tint[0]}
-                    to={tint[1]}
+                    from={t.colors[tint[0]]}
+                    to={t.colors[tint[1]]}
                     size={34}
                   />
-                  <Txt f="m" s={13.5} w={700} style={styles.flex}>
+                  <Txt f="m" s={font.body} w={700} style={styles.flex}>
                     {row.name}
                     {row.me ? ' · sen' : ''}
                   </Txt>
-                  <Txt f="mono" s={12.5} w={700} c={t.colors.accent}>
+                  <Txt f="mono" s={font.footnote} w={700} c={t.colors.accent}>
                     {tr(row.xp)}
                   </Txt>
                 </View>
@@ -169,15 +169,15 @@ export function LeaderboardScreen() {
           </View>
         ) : board && !problem ? (
           <View style={styles.empty}>
-            <Txt s={30}>🏁</Txt>
-            <Txt f="m" s={14} w={700}>
+            <Txt s={font.giant}>🏁</Txt>
+            <Txt f="m" s={font.body} w={700}>
               Tablo bu hafta henüz boş
             </Txt>
-            <Txt s={12.5} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
+            <Txt s={font.footnote} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
               Katılan kimse bu hafta XP kazanmamış. İlk sen olabilirsin.
             </Txt>
             <Press onPress={() => go('learn')} style={styles.emptyAction}>
-              <Txt f="m" s={13} w={700} c={t.colors.link}>
+              <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
                 Derse git
               </Txt>
             </Press>
@@ -193,7 +193,7 @@ const makeStyles = (t: Theme) =>
     fill: { flex: 1 },
     flex: { flex: 1 },
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-    list: { gap: 13, paddingBottom: 30 },
+    list: { gap: 14, paddingBottom: 30 },
     week: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -213,7 +213,7 @@ const makeStyles = (t: Theme) =>
     row: {
       flexDirection: 'row',
       alignItems: 'center',
-      gap: 11,
+      gap: 12,
       padding: 10,
       borderRadius: radii.card,
     },
@@ -223,7 +223,7 @@ const makeStyles = (t: Theme) =>
       borderColor: tint(t.colors.primary, 0.34),
     },
     rank: { width: 24 },
-    stats: { flexDirection: 'row', gap: 9 },
+    stats: { flexDirection: 'row', gap: 10 },
     empty: {
       alignItems: 'center',
       gap: 8,

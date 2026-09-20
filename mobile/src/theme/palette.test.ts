@@ -32,7 +32,7 @@ const IKINCIL: (keyof Palette)[] = [
 ];
 
 /** Metnin üstüne düştüğü yüzeyler. */
-const YUZEY: (keyof Palette)[] = ['bg', 'surface', 'surfaceCard', 'surfaceHigh'];
+const YUZEY: (keyof Palette)[] = ['bg', 'surface', 'sunken', 'raised'];
 
 test('iki paletin anahtarları birebir aynı', () => {
   // Biri eksik kalırsa o anahtarı kullanan ekran, o temada `undefined` renk
@@ -104,4 +104,68 @@ test('iki tema gerçekten zıt', () => {
   // aksi hâlde "açık tema" adında ikinci bir koyu tema yapmış oluruz.
   const oran = contrast(PALETTES.dark.bg, PALETTES.light.bg);
   assert.ok(oran > 10, `iki zemin arası kontrast yalnızca ${oran.toFixed(2)}:1`);
+});
+
+/*
+  Yüzey hiyerarşisi.
+
+  Dört basamak var ve her biri bir soruya cevap veriyor: bu şey sayfanın
+  kendisi mi (`bg`), sayfadaki bir kart mı (`surface`), kartın içindeki bir
+  oyuk mu (`sunken`), yoksa kartın üstünde duran bir şey mi (`raised`)?
+
+  Sıra iki temada aynı değil ve olmamalı. Koyuda oyuk karttan koyu ama
+  sayfadan açık; açıkta oyuk sayfadan da koyu, çünkü beyaz kartın içinde
+  görünür olmasının başka yolu yok.
+*/
+function parlaklık(renk: string): number {
+  const [r, g, b] = parse(renk);
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+}
+
+test('oyuk, kartın içinde görünüyor', () => {
+  for (const tema of TEMALAR) {
+    const p = PALETTES[tema];
+    // Kontrast oranı değil, ham fark: iki yüzey arasındaki sınır gözle
+    // seçilebilmeli. Beş birim, 255'lik ölçekte en küçük fark ediliyor olan.
+    const fark = Math.abs(parlaklık(p.sunken) - parlaklık(p.surface));
+    assert.ok(fark >= 5, `${tema}: oyuk kartla neredeyse aynı (${fark.toFixed(1)})`);
+  }
+});
+
+test('kart, sayfadan ayrılıyor', () => {
+  for (const tema of TEMALAR) {
+    const p = PALETTES[tema];
+    const fark = Math.abs(parlaklık(p.surface) - parlaklık(p.bg));
+    assert.ok(fark >= 5, `${tema}: kart sayfadan ayrılmıyor (${fark.toFixed(1)})`);
+  }
+});
+
+test('yükselen yüzey karttan aşağı düşmüyor', () => {
+  for (const tema of TEMALAR) {
+    const p = PALETTES[tema];
+    if (tema === 'dark') {
+      assert.ok(
+        parlaklık(p.raised) > parlaklık(p.surface),
+        'koyu temada yükselti renkle anlatılıyor, karttan açık olmalı',
+      );
+    } else {
+      // Açıkta beyazın üstü yok; farkı gölge veriyor. Eşit olması kasıtlı,
+      // karttan koyu olması kusur olurdu.
+      assert.ok(
+        parlaklık(p.raised) >= parlaklık(p.surface),
+        'açık temada yükselen yüzey karttan koyu olamaz',
+      );
+    }
+  }
+});
+
+test('oyuk karttan koyu', () => {
+  // İki temada da geçerli olan tek kural: oyuk içine oturduğu karttan koyu.
+  for (const tema of TEMALAR) {
+    const p = PALETTES[tema];
+    assert.ok(
+      parlaklık(p.sunken) < parlaklık(p.surface),
+      `${tema}: oyuk karttan açık — gömülü değil, kabarık görünür`,
+    );
+  }
 });

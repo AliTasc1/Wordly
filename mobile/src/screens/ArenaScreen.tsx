@@ -10,7 +10,7 @@ import { Glow } from '../components/Glow';
 import { BackButton, Press } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { ARENA } from '../data/play';
 import { arenaRound } from '../content/arena';
 import {
@@ -186,18 +186,18 @@ export function ArenaScreen() {
         />
         <View style={styles.timer}>
           <View style={styles.timerHead}>
-            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
               {rule.name.toLocaleUpperCase('tr-TR')}
             </Txt>
             {/* Süresiz modda sayaç yerine kalan hak yazıyor; ikisi de yoksa
                 satır boş kalıyor. Olmayan bir sayacı "00:24" diye çizmek,
                 oyuncuya var olmayan bir baskı hissettirmekti. */}
             {state.secondsLeft != null ? (
-              <Txt f="mono" s={11} w={700} c={t.colors.warningText}>
+              <Txt f="mono" s={font.caption} w={700} c={t.colors.warningText}>
                 {clock(state.secondsLeft)}
               </Txt>
             ) : state.livesLeft != null ? (
-              <Txt f="mono" s={11} w={700} c={t.colors.errorTint}>
+              <Txt f="mono" s={font.caption} w={700} c={t.colors.errorTint}>
                 {'♥'.repeat(state.livesLeft)}
               </Txt>
             ) : null}
@@ -210,10 +210,10 @@ export function ArenaScreen() {
           />
         </View>
         <View style={styles.xp}>
-          <Txt f="m" s={20} w={800} c={t.colors.accent}>
+          <Txt f="m" s={font.headline} w={800} c={t.colors.accent}>
             {state.xp}
           </Txt>
-          <Txt f="mono" s={9.5} w={600} c={t.colors.textGhost}>
+          <Txt f="mono" s={font.label} w={600} c={t.colors.textGhost}>
             XP
           </Txt>
         </View>
@@ -228,14 +228,14 @@ export function ArenaScreen() {
 
       <Gradient
         deg={180}
-        colors={[tint(t.colors.surfaceRaised, 0.9), tint(t.colors.surface, 0.9)]}
+        colors={[tint(t.colors.raised, 0.9), tint(t.colors.surface, 0.9)]}
         style={styles.mission}>
-        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.12}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.12}>
           GÖREV
         </Txt>
-        <Txt f="m" s={16.5} w={700} lh={1.4} style={styles.missionText}>
+        <Txt f="m" s={font.title} w={700} lh={1.4} style={styles.missionText}>
           Türkçesi verilen
-          <Txt f="m" s={16.5} w={700} c={t.colors.accent}>
+          <Txt f="m" s={font.title} w={700} c={t.colors.accent}>
             {puzzle.slots} harfli
           </Txt>
           kelimeyi kur
@@ -247,7 +247,7 @@ export function ArenaScreen() {
           <View
             key={i}
             style={[styles.slot, word[i] ? styles.slotFilled : styles.slotEmpty]}>
-            <Txt f="mono" s={20} w={700} c={word[i] ? t.colors.text : t.colors.textGhost}>
+            <Txt f="mono" s={font.headline} w={700} c={word[i] ? t.colors.text : t.colors.textGhost}>
               {word[i] ?? ''}
             </Txt>
           </View>
@@ -279,10 +279,10 @@ export function ArenaScreen() {
               içerideki metnin ipucu mu başka bir şey mi olduğunu
               anlayamadığını söyledi. Etiket ayrı satıra alındı. */}
           <View style={styles.wheelCoreText}>
-            <Txt f="mono" s={9} w={700} c={t.colors.textDisabled} ls={0.16}>
+            <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.16}>
               İPUCU
             </Txt>
-            <Txt f="m" s={13} w={700} c={t.colors.blueSoft} style={styles.coreHint}>
+            <Txt f="m" s={font.footnote} w={700} c={t.colors.blueSoft} style={styles.coreHint}>
               {puzzle.tr}
             </Txt>
           </View>
@@ -307,7 +307,7 @@ export function ArenaScreen() {
                 accessibilityLabel={`${letter} harfini çıkar`}
                 style={position}>
                 <Gradient colors={t.gradients.brand} style={[styles.key, styles.keyOn]}>
-                  <Txt f="mono" s={20} w={700}>
+                  <Txt f="mono" s={font.headline} w={700}>
                     {letter}
                   </Txt>
                 </Gradient>
@@ -322,7 +322,7 @@ export function ArenaScreen() {
               accessibilityRole="button"
               accessibilityLabel={`Harf ${letter}`}
               style={[styles.key, styles.keyOff, position]}>
-              <Txt f="mono" s={20} w={700}>
+              <Txt f="mono" s={font.headline} w={700}>
                 {letter}
               </Txt>
             </Press>
@@ -334,7 +334,7 @@ export function ArenaScreen() {
           hak tükeniyordu, dolayısıyla skor diye bir kavram da yoktu. */}
       {state.over ? (
         <View style={styles.summary}>
-          <Txt f="m" s={17} w={800}>
+          <Txt f="m" s={font.title} w={800}>
             {summaryTitle(state)}
           </Txt>
           <View style={styles.summaryRow}>
@@ -350,18 +350,18 @@ export function ArenaScreen() {
               tint={t.colors.warningSoft}
             />
           </View>
-          <Txt s={11.5} lh={1.5} c={t.colors.textFaint} style={styles.summaryNote}>
+          <Txt s={font.caption} lh={1.5} c={t.colors.textFaint} style={styles.summaryNote}>
             Kazandığın XP günlük toplamına eklendi.
           </Txt>
           <View style={styles.summaryActions}>
             <Press onPress={back} style={[styles.actionBtn, styles.clear]}>
-              <Txt f="m" s={13.5} w={700} c={t.colors.textSubtle}>
+              <Txt f="m" s={font.body} w={700} c={t.colors.textSubtle}>
                 Çık
               </Txt>
             </Press>
             <Press onPress={again} style={styles.submitWrap}>
               <Gradient colors={t.gradients.brand} style={styles.submit}>
-                <Txt f="m" s={14.5} w={800}>
+                <Txt f="m" s={font.body} w={800}>
                   Tekrar oyna
                 </Txt>
               </Gradient>
@@ -381,7 +381,7 @@ export function ArenaScreen() {
               accessibilityRole="button"
               accessibilityLabel="Son harfi geri al"
               style={[styles.actionBtn, styles.clear, !picked.length && styles.actionOff]}>
-              <Txt f="m" s={17} w={700} c={t.colors.textSubtle}>
+              <Txt f="m" s={font.title} w={700} c={t.colors.textSubtle}>
                 ⌫
               </Txt>
             </Press>
@@ -394,7 +394,7 @@ export function ArenaScreen() {
               accessibilityRole="button"
               accessibilityLabel="Harfleri karıştır"
               style={[styles.actionBtn, styles.shuffle]}>
-              <Txt s={16}>🔀</Txt>
+              <Txt s={font.callout}>🔀</Txt>
             </Press>
 
             {/* Gönder düğmesi her zaman burada. Eskiden kelime dolmadan
@@ -410,13 +410,13 @@ export function ArenaScreen() {
               style={styles.submitWrap}>
               {ready ? (
                 <Gradient colors={t.gradients.brand} style={styles.submit}>
-                  <Txt f="m" s={14.5} w={800}>
+                  <Txt f="m" s={font.body} w={800}>
                     {ARENA.submitReady}
                   </Txt>
                 </Gradient>
               ) : (
                 <View style={[styles.submit, styles.submitIdle]}>
-                  <Txt f="m" s={13.5} w={700} c={t.colors.textDisabled}>
+                  <Txt f="m" s={font.body} w={700} c={t.colors.textDisabled}>
                     {puzzle.slots - word.length} harf kaldı
                   </Txt>
                 </View>
@@ -426,7 +426,7 @@ export function ArenaScreen() {
 
           {/* Pas. Takılan öğrencinin tek çıkışı turu bırakmaktı. */}
           <Press onPress={skip} accessibilityRole="button" style={styles.skip}>
-            <Txt f="m" s={12.5} w={700} c={t.colors.textFaint}>
+            <Txt f="m" s={font.footnote} w={700} c={t.colors.textFaint}>
               Bu kelimeyi geç →
             </Txt>
           </Press>
@@ -449,10 +449,10 @@ function ArenaStat({
   const styles = useStyles(makeStyles);
   return (
     <View style={styles.stat}>
-      <Txt f="mono" s={9.5} w={600} c={t.colors.textFaint} ls={0.1}>
+      <Txt f="mono" s={font.label} w={600} c={t.colors.textFaint} ls={0.1}>
         {label}
       </Txt>
-      <Txt f="m" s={16} w={800} c={tint}>
+      <Txt f="m" s={font.callout} w={800} c={tint}>
         {value}
       </Txt>
     </View>
@@ -462,17 +462,17 @@ function ArenaStat({
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
     header: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-    timer: { flex: 1, gap: 5 },
+    timer: { flex: 1, gap: 6 },
     timerHead: { flexDirection: 'row', justifyContent: 'space-between' },
     xp: { alignItems: 'flex-end' },
-    stats: { flexDirection: 'row', gap: 9, alignItems: 'center' },
+    stats: { flexDirection: 'row', gap: 10, alignItems: 'center' },
     stat: {
       flex: 1,
       backgroundColor: t.alpha.w04,
       borderWidth: 1,
       borderColor: t.alpha.w09,
       borderRadius: radii.card,
-      paddingVertical: 9,
+      paddingVertical: 10,
       paddingHorizontal: 12,
     },
     mission: {
@@ -482,12 +482,12 @@ const makeStyles = (t: Theme) =>
       padding: 14,
       alignItems: 'center',
     },
-    missionText: { marginTop: 5, textAlign: 'center' },
+    missionText: { marginTop: 6, textAlign: 'center' },
     slots: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'center',
-      gap: 7,
+      gap: 8,
       minHeight: 56,
     },
     slot: {
@@ -558,7 +558,7 @@ const makeStyles = (t: Theme) =>
       boxShadow: t.shadows.keyLift,
     },
     keyOff: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w14 },
-    actions: { flexDirection: 'row', gap: 9, marginTop: 'auto' },
+    actions: { flexDirection: 'row', gap: 10, marginTop: 'auto' },
     summary: {
       marginTop: 'auto',
       gap: 10,
@@ -569,9 +569,9 @@ const makeStyles = (t: Theme) =>
       backgroundColor: tint(t.colors.surface, 0.96),
       alignItems: 'center',
     },
-    summaryRow: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
+    summaryRow: { flexDirection: 'row', gap: 10, alignSelf: 'stretch' },
     summaryNote: { textAlign: 'center' },
-    summaryActions: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
+    summaryActions: { flexDirection: 'row', gap: 10, alignSelf: 'stretch' },
     actionBtn: {
       height: 50,
       borderRadius: radii.input,

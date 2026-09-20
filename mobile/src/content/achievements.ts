@@ -1,4 +1,4 @@
-import { colors } from '../theme/tokens';
+import type { ColorRole } from '../theme/palette';
 import { CEFR_LEVELS, type CefrLevel } from '../data/curriculum';
 import { deckProgress, totals, tr } from './progress';
 
@@ -19,7 +19,7 @@ export type Achievement = {
   sub: string;
   pct: number;
   progress: string;
-  tint: string;
+  tint: ColorRole;
   /**
    * Kilit gerçekten açıldı mı.
    *
@@ -38,7 +38,7 @@ type Rule = {
   goal: number;
   /** Eşiğin birimi, alt satırda yazılıyor. */
   unit: string;
-  tint: string;
+  tint: ColorRole;
 };
 
 export type Facts = {
@@ -73,38 +73,38 @@ export function facts(
 }
 
 const STREAK: Rule[] = [
-  { glyph: '🔥', name: '3 Günlük Seri', goal: 3, unit: 'gün', tint: colors.warning },
-  { glyph: '🔥', name: '7 Günlük Seri', goal: 7, unit: 'gün', tint: colors.warning },
-  { glyph: '🔥', name: '30 Günlük Seri', goal: 30, unit: 'gün', tint: colors.orange },
-  { glyph: '🔥', name: '100 Günlük Seri', goal: 100, unit: 'gün', tint: colors.orange },
+  { glyph: '🔥', name: '3 Günlük Seri', goal: 3, unit: 'gün', tint: 'warning' },
+  { glyph: '🔥', name: '7 Günlük Seri', goal: 7, unit: 'gün', tint: 'warning' },
+  { glyph: '🔥', name: '30 Günlük Seri', goal: 30, unit: 'gün', tint: 'orange' },
+  { glyph: '🔥', name: '100 Günlük Seri', goal: 100, unit: 'gün', tint: 'orange' },
 ];
 
 const XP: Rule[] = [
-  { glyph: '💎', name: '1.000 XP', goal: 1000, unit: 'XP', tint: colors.accent },
-  { glyph: '💎', name: '10.000 XP', goal: 10000, unit: 'XP', tint: colors.accent },
-  { glyph: '💎', name: '50.000 XP', goal: 50000, unit: 'XP', tint: colors.accent },
+  { glyph: '💎', name: '1.000 XP', goal: 1000, unit: 'XP', tint: 'accent' },
+  { glyph: '💎', name: '10.000 XP', goal: 10000, unit: 'XP', tint: 'accent' },
+  { glyph: '💎', name: '50.000 XP', goal: 50000, unit: 'XP', tint: 'accent' },
 ];
 
 const WORDS: Rule[] = [
-  { glyph: '📖', name: '100 Kelime', goal: 100, unit: 'kelime', tint: colors.secondary },
-  { glyph: '🏅', name: '500 Kelime', goal: 500, unit: 'kelime', tint: colors.secondary },
+  { glyph: '📖', name: '100 Kelime', goal: 100, unit: 'kelime', tint: 'secondary' },
+  { glyph: '🏅', name: '500 Kelime', goal: 500, unit: 'kelime', tint: 'secondary' },
   {
     glyph: '🏆',
     name: '1.000 Kelime',
     goal: 1000,
     unit: 'kelime',
-    tint: colors.secondary,
+    tint: 'secondary',
   },
 ];
 
 const LESSONS: Rule[] = [
-  { glyph: '📐', name: '10 Gramer Dersi', goal: 10, unit: 'ders', tint: colors.primary },
-  { glyph: '📐', name: '50 Gramer Dersi', goal: 50, unit: 'ders', tint: colors.primary },
+  { glyph: '📐', name: '10 Gramer Dersi', goal: 10, unit: 'ders', tint: 'primary' },
+  { glyph: '📐', name: '50 Gramer Dersi', goal: 50, unit: 'ders', tint: 'primary' },
 ];
 
 const TEXTS: Rule[] = [
-  { glyph: '📚', name: '25 Metin', goal: 25, unit: 'metin', tint: colors.success },
-  { glyph: '📚', name: '100 Metin', goal: 100, unit: 'metin', tint: colors.success },
+  { glyph: '📚', name: '25 Metin', goal: 25, unit: 'metin', tint: 'success' },
+  { glyph: '📚', name: '100 Metin', goal: 100, unit: 'metin', tint: 'success' },
 ];
 
 function badge(rule: Rule, value: number): Achievement {
@@ -133,7 +133,7 @@ function levelBadge(level: CefrLevel, done: boolean): Achievement {
     sub: done ? 'Beş bölümün hepsi' : 'Beş bölümü de bitir',
     pct: done ? 100 : 0,
     progress: done ? 'AÇILDI' : 'KİLİTLİ',
-    tint: colors.primary,
+    tint: 'primary',
     done,
   };
 }

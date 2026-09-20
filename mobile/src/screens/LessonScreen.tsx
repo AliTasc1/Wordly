@@ -9,7 +9,7 @@ import { BackButton } from '../components/Buttons';
 import { IconTile, Row } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { grammarOf, listeningOf, readingOf, speakingOf, writingOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -118,15 +118,15 @@ export function LessonScreen() {
         <View style={styles.heroTop}>
           <BackButton onPress={back} strong />
           <View style={styles.unitTag}>
-            <Txt f="mono" s={11} w={700} c={t.colors.textSubtle}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textSubtle}>
               {cefr} · DERS {String(lesson.order).padStart(2, '0')}
             </Txt>
           </View>
         </View>
-        <Txt f="m" s={28} w={800} lh={1.2} ls={-0.02}>
+        <Txt f="m" s={font.jumbo} w={800} lh={1.2} ls={-0.02}>
           {lesson.title}
         </Txt>
-        <Txt s={13} lh={1.5} c={t.colors.textSubtle}>
+        <Txt s={font.footnote} lh={1.5} c={t.colors.textSubtle}>
           {lesson.canDo}
         </Txt>
         <ProgressBar
@@ -154,10 +154,10 @@ export function LessonScreen() {
                 style={!done && !current ? styles.stepIdle : undefined}
               />
               <View style={styles.flex}>
-                <Txt f="m" s={14.5} w={700}>
+                <Txt f="m" s={font.body} w={700}>
                   {step.name}
                 </Txt>
-                <Txt s={11.5} c={t.colors.textDim} style={styles.stepSub} numberOfLines={1}>
+                <Txt s={font.caption} c={t.colors.textDim} style={styles.stepSub} numberOfLines={1}>
                   {step.sub}
                 </Txt>
               </View>
@@ -168,7 +168,7 @@ export function LessonScreen() {
                 ]}>
                 <Txt
                   f="mono"
-                  s={10}
+                  s={font.label}
                   w={700}
                   ls={0.06}
                   c={done ? t.colors.successSoft : current ? t.colors.blueSoft : t.colors.textFaint}>
@@ -181,17 +181,17 @@ export function LessonScreen() {
 
         <View style={styles.exam}>
           <View style={styles.examIcon}>
-            <Txt s={18}>🏆</Txt>
+            <Txt s={font.title}>🏆</Txt>
           </View>
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               Seviye Sınavı
             </Txt>
-            <Txt s={11.5} c={t.colors.textDim}>
+            <Txt s={font.caption} c={t.colors.textDim}>
               40 soruda seviyeni ölç
             </Txt>
           </View>
-          <Txt f="mono" s={11} w={700} c={t.colors.link} onPress={() => go('test')}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.link} onPress={() => go('test')}>
             ÇÖZ ›
           </Txt>
         </View>
@@ -208,14 +208,14 @@ const makeStyles = (t: Theme) =>
     unitTag: {
       marginLeft: 'auto',
       paddingVertical: 6,
-      paddingHorizontal: 11,
+      paddingHorizontal: 12,
       borderRadius: radii.chip,
       backgroundColor: t.alpha.black35,
     },
     steps: { paddingTop: 6, paddingHorizontal: 18, gap: 10 },
     stepIdle: { backgroundColor: t.alpha.w05, borderColor: t.alpha.w10 },
     stepSub: { marginTop: 2 },
-    tag: { paddingVertical: 5, paddingHorizontal: 9, borderRadius: radii.sm },
+    tag: { paddingVertical: 6, paddingHorizontal: 10, borderRadius: radii.sm },
     tagDone: { backgroundColor: tint(t.colors.success, 0.14) },
     tagNow: { backgroundColor: tint(t.colors.primary, 0.2) },
     tagIdle: { backgroundColor: t.alpha.w05 },

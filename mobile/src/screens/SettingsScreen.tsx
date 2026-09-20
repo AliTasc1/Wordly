@@ -9,7 +9,7 @@ import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { IconTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { LINKS } from '../data/links';
 import { APP_VERSION, SETTINGS_FOOTER } from '../data/subscription';
 import { attribution } from '../content';
@@ -158,10 +158,10 @@ export function SettingsScreen() {
     );
 
   return (
-    <Screen tabbed padTop={62} gap={13}>
+    <Screen tabbed padTop={62} gap={14}>
       <View style={styles.header}>
         <BackButton onPress={back} />
-        <Txt f="m" s={17} w={800}>
+        <Txt f="m" s={font.title} w={800}>
           Ayarlar
         </Txt>
       </View>
@@ -182,14 +182,14 @@ export function SettingsScreen() {
             fontSize={17}
           />
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               {loading
                 ? 'Hesap kontrol ediliyor…'
                 : user
                   ? 'Hesabın bağlı'
                   : 'Hesabını bağla'}
             </Txt>
-            <Txt s={11.5} c={t.colors.textFaint} style={styles.itemSub}>
+            <Txt s={font.caption} c={t.colors.textFaint} style={styles.itemSub}>
               {loading
                 ? ' '
                 : user
@@ -198,7 +198,7 @@ export function SettingsScreen() {
             </Txt>
           </View>
           {!user && !loading ? (
-            <Txt f="m" s={20} w={800}>
+            <Txt f="m" s={font.headline} w={800}>
               ›
             </Txt>
           ) : null}
@@ -219,11 +219,11 @@ export function SettingsScreen() {
               fontSize={17}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13.5} w={700}>
+              <Txt f="m" s={font.body} w={700}>
                 {sync.running ? 'Eşitleniyor…' : 'İlerlemeyi eşitle'}
               </Txt>
               <Txt
-                s={11.5}
+                s={font.caption}
                 c={sync.problem ? t.colors.warningText : t.colors.textFaint}
                 style={styles.itemSub}>
                 {syncNote(sync)}
@@ -246,14 +246,14 @@ export function SettingsScreen() {
               fontSize={17}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13.5} w={700}>
+              <Txt f="m" s={font.body} w={700}>
                 Liderlik tablosu
               </Txt>
-              <Txt s={11.5} c={t.colors.textFaint} style={styles.itemSub}>
+              <Txt s={font.caption} c={t.colors.textFaint} style={styles.itemSub}>
                 Katılım ve görünen ad
               </Txt>
             </View>
-            <Txt f="m" s={20} w={800}>
+            <Txt f="m" s={font.headline} w={800}>
               ›
             </Txt>
           </View>
@@ -265,17 +265,17 @@ export function SettingsScreen() {
           colors={[tint(t.colors.secondary, 0.22), tint(t.colors.surface, 0.92)]}
           style={styles.premium}>
           <Gradient colors={t.gradients.violetCyan} style={styles.premiumIcon}>
-            <Txt s={18}>✦</Txt>
+            <Txt s={font.title}>✦</Txt>
           </Gradient>
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               {SETTINGS_FOOTER.premium.title}
             </Txt>
-            <Txt s={11.5} c={t.colors.violetSoft}>
+            <Txt s={font.caption} c={t.colors.violetSoft}>
               {SETTINGS_FOOTER.premium.sub}
             </Txt>
           </View>
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             ›
           </Txt>
         </Gradient>
@@ -287,7 +287,7 @@ export function SettingsScreen() {
       <View style={styles.group}>
         <Txt
           f="mono"
-          s={10}
+          s={font.label}
           w={700}
           c={t.colors.textDisabled}
           ls={0.14}
@@ -307,14 +307,14 @@ export function SettingsScreen() {
               fontSize={15}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13} w={700}>
+              <Txt f="m" s={font.footnote} w={700}>
                 Seviye
               </Txt>
-              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+              <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                 Yeniden test et
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
               {cefr}
             </Txt>
           </Press>
@@ -328,14 +328,14 @@ export function SettingsScreen() {
               fontSize={15}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13} w={700}>
+              <Txt f="m" s={font.footnote} w={700}>
                 Hedefler
               </Txt>
-              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+              <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                 {goals.join(', ')} · {dailyTime}/gün
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
               Değiştir
             </Txt>
           </Press>
@@ -345,7 +345,7 @@ export function SettingsScreen() {
       <View style={styles.group}>
         <Txt
           f="mono"
-          s={10}
+          s={font.label}
           w={700}
           c={t.colors.textDisabled}
           ls={0.14}
@@ -367,10 +367,10 @@ export function SettingsScreen() {
                 fontSize={15}
               />
               <View style={styles.flex}>
-                <Txt f="m" s={13} w={700}>
+                <Txt f="m" s={font.footnote} w={700}>
                   Görünüm
                 </Txt>
-                <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+                <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                   {MODES.find((m) => m.mode === mode)?.note}
                 </Txt>
               </View>
@@ -387,10 +387,10 @@ export function SettingsScreen() {
                     accessibilityState={{ selected: on }}
                     accessibilityLabel={`${option.label} tema — ${option.note}`}
                     style={[styles.modeChip, on ? styles.modeOn : styles.modeOff]}>
-                    <Txt s={15}>{option.glyph}</Txt>
+                    <Txt s={font.callout}>{option.glyph}</Txt>
                     <Txt
                       f="mono"
-                      s={10.5}
+                      s={font.label}
                       w={700}
                       c={on ? t.colors.text : t.colors.textDim}>
                       {option.label}
@@ -415,14 +415,14 @@ export function SettingsScreen() {
               fontSize={15}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13} w={700}>
+              <Txt f="m" s={font.footnote} w={700}>
                 Titreşim
               </Txt>
-              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+              <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                 Harf seçimi ve cevap dönüşü
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={haptics ? t.colors.success : t.colors.textGhost}>
+            <Txt f="mono" s={font.caption} w={700} c={haptics ? t.colors.success : t.colors.textGhost}>
               {haptics ? 'Açık' : 'Kapalı'}
             </Txt>
           </Press>
@@ -437,14 +437,14 @@ export function SettingsScreen() {
               fontSize={15}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13} w={700}>
+              <Txt f="m" s={font.footnote} w={700}>
                 Arayüz dili
               </Txt>
-              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+              <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                 Şu an yalnızca Türkçe
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
               TR
             </Txt>
           </View>
@@ -458,14 +458,14 @@ export function SettingsScreen() {
               fontSize={15}
             />
             <View style={styles.flex}>
-              <Txt f="m" s={13} w={700}>
+              <Txt f="m" s={font.footnote} w={700}>
                 Aksan
               </Txt>
-              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+              <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                 İçeriğin tamamı Amerikan yazımında
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
               US
             </Txt>
           </View>
@@ -480,7 +480,7 @@ export function SettingsScreen() {
       <View style={styles.group}>
         <Txt
           f="mono"
-          s={10}
+          s={font.label}
           w={700}
           c={t.colors.textDisabled}
           ls={0.14}
@@ -492,7 +492,7 @@ export function SettingsScreen() {
             <View
               key={line}
               style={[styles.credit, i < all.length - 1 && styles.itemDivider]}>
-              <Txt s={11.5} lh={1.55} c={t.colors.textFaint}>
+              <Txt s={font.caption} lh={1.55} c={t.colors.textFaint}>
                 {line}
               </Txt>
             </View>
@@ -505,7 +505,7 @@ export function SettingsScreen() {
           da yayınlamak zorunda kalırdık ve mağaza incelemesi boyunca eski
           metin yürürlükte kalırdı. */}
       <View style={styles.group}>
-        <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14} style={styles.groupName}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.14} style={styles.groupName}>
           YASAL
         </Txt>
         <View style={styles.groupBody}>
@@ -534,14 +534,14 @@ export function SettingsScreen() {
                 fontSize={15}
               />
               <View style={styles.flex}>
-                <Txt f="m" s={13} w={700}>
+                <Txt f="m" s={font.footnote} w={700}>
                   {row.label}
                 </Txt>
-                <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+                <Txt s={font.label} c={t.colors.textFaint} style={styles.itemSub}>
                   {row.sub}
                 </Txt>
               </View>
-              <Txt f="m" s={16} w={800} c={t.colors.textGhost}>
+              <Txt f="m" s={font.callout} w={800} c={t.colors.textGhost}>
                 ↗
               </Txt>
             </Press>
@@ -562,10 +562,10 @@ export function SettingsScreen() {
             fontSize={17}
           />
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               {exporting ? 'Dosya hazırlanıyor…' : 'Verilerimi indir'}
             </Txt>
-            <Txt s={11.5} c={t.colors.textFaint} style={styles.itemSub}>
+            <Txt s={font.caption} c={t.colors.textFaint} style={styles.itemSub}>
               Tüm ilerlemen tek bir dosyada — kaydet ya da kendine gönder
             </Txt>
           </View>
@@ -573,7 +573,7 @@ export function SettingsScreen() {
       </Press>
 
       <Press onPress={askReset} style={styles.danger}>
-        <Txt f="m" s={13.5} w={700} c={t.colors.textDim}>
+        <Txt f="m" s={font.body} w={700} c={t.colors.textDim}>
           İlerlemeyi sıfırla
         </Txt>
       </Press>
@@ -582,7 +582,7 @@ export function SettingsScreen() {
           açılış ekranına dönüyordu, yani hiçbir oturumu kapatmıyordu. */}
       {user ? (
         <Press onPress={askSignOut} style={styles.signOut}>
-          <Txt f="m" s={14} w={700} c={t.colors.errorSoft}>
+          <Txt f="m" s={font.body} w={700} c={t.colors.errorSoft}>
             {SETTINGS_FOOTER.signOut}
           </Txt>
         </Press>
@@ -594,13 +594,13 @@ export function SettingsScreen() {
           en yıkıcı düğme, en kolay basılan düğme olmamalı. */}
       {user ? (
         <Press onPress={askDelete} style={styles.deleteAccount}>
-          <Txt f="m" s={13} w={700} c={t.colors.textDim}>
+          <Txt f="m" s={font.footnote} w={700} c={t.colors.textDim}>
             Hesabımı sil
           </Txt>
         </Press>
       ) : null}
 
-      <Txt f="mono" s={10.5} w={600} c={t.colors.textDisabled} style={styles.version}>
+      <Txt f="mono" s={font.label} w={600} c={t.colors.textDisabled} style={styles.version}>
         {SETTINGS_FOOTER.version}
       </Txt>
     </Screen>
@@ -618,7 +618,7 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: tint(t.colors.secondary, 0.32),
       borderRadius: radii.tile,
-      padding: 15,
+      padding: 16,
     },
     account: {
       flexDirection: 'row',
@@ -628,7 +628,7 @@ const makeStyles = (t: Theme) =>
       borderColor: t.alpha.w08,
       borderRadius: radii.tile,
       backgroundColor: t.colors.surface,
-      padding: 15,
+      padding: 16,
     },
     premiumIcon: {
       width: 42,
@@ -645,7 +645,7 @@ const makeStyles = (t: Theme) =>
       borderColor: t.alpha.w08,
       backgroundColor: t.alpha.w04,
     },
-    group: { gap: 7 },
+    group: { gap: 8 },
     groupName: { paddingHorizontal: 4 },
     groupBody: {
       backgroundColor: t.colors.surface,
@@ -658,14 +658,14 @@ const makeStyles = (t: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       gap: 12,
-      paddingVertical: 13,
+      paddingVertical: 14,
       paddingHorizontal: 14,
     },
     itemDivider: { borderBottomWidth: 1, borderBottomColor: t.alpha.w06 },
-    appearance: { paddingBottom: 13 },
+    appearance: { paddingBottom: 14 },
     // Başlık satırının alt boşluğu kısaltıldı; altındaki üçlü zaten bir
     // sonraki satır, aralarında tam bir satır boşluğu olmamalı.
-    appearanceHead: { paddingBottom: 9 },
+    appearanceHead: { paddingBottom: 10 },
     modeRow: { flexDirection: 'row', gap: 8, paddingHorizontal: 14 },
     modeChip: {
       flex: 1,
@@ -681,7 +681,7 @@ const makeStyles = (t: Theme) =>
       boxShadow: t.shadows.focusRingSoft,
     },
     modeOff: { backgroundColor: t.alpha.w04, borderColor: t.alpha.w08 },
-    itemSub: { marginTop: 1 },
+    itemSub: { marginTop: 2 },
     signOut: {
       height: 50,
       borderRadius: radii.input,
@@ -691,7 +691,7 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       justifyContent: 'center',
     },
-    credit: { paddingVertical: 11, paddingHorizontal: 13 },
+    credit: { paddingVertical: 12, paddingHorizontal: 14 },
     deleteAccount: { alignItems: 'center', paddingVertical: 12 },
     version: { textAlign: 'center' },
   });

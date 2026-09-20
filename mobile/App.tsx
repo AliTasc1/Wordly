@@ -98,5 +98,5 @@ const styles = StyleSheet.create({
   // burada henüz okunamıyor. Üstüne her hâlükârda temalı bir yüzey
   // geliyor; buradaki renk yalnızca ilk kareyi dolduruyor ve iki temada
   // da kabul edilebilir olması için nötr seçildi.
-  root: { flex: 1, backgroundColor: '#0B1020' },
+  root: { flex: 1, backgroundColor: '#05080F' },
 });

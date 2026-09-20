@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import { Txt } from './Txt';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { tint } from '../theme/tint';
 
 export type NoticeTone = 'error' | 'ok' | 'info';
@@ -57,11 +57,11 @@ export function Notice({
   const look = tonesOf(t)[tone];
   return (
     <View style={[styles.box, { borderColor: look.border, backgroundColor: look.fill }]}>
-      <Txt f="m" s={13} w={700} lh={1.45} c={look.text}>
+      <Txt f="m" s={font.footnote} w={700} lh={1.45} c={look.text}>
         {text}
       </Txt>
       {detail ? (
-        <Txt s={11.5} lh={1.45} c={t.colors.textGhost}>
+        <Txt s={font.caption} lh={1.45} c={t.colors.textGhost}>
           {detail}
         </Txt>
       ) : null}
@@ -76,6 +76,6 @@ const makeStyles = (t: Theme) =>
       borderRadius: radii.input,
       paddingHorizontal: 14,
       paddingVertical: 12,
-      gap: 5,
+      gap: 6,
     },
   });

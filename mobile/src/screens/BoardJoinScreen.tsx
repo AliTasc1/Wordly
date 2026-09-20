@@ -8,7 +8,7 @@ import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
 import { Notice } from '../components/Notice';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import {
   fetchParticipation,
   nameProblem,
@@ -71,7 +71,7 @@ export function BoardJoinScreen() {
       <Screen padTop={62} gap={16}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             Liderlik
           </Txt>
         </View>
@@ -120,18 +120,18 @@ export function BoardJoinScreen() {
       <Screen padTop={62} gap={16}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             Liderlik
           </Txt>
         </View>
 
         {loading ? (
-          <Txt s={13} c={t.colors.textDim}>
+          <Txt s={font.footnote} c={t.colors.textDim}>
             Yükleniyor…
           </Txt>
         ) : (
           <>
-            <Txt s={13.5} lh={1.6} c={t.colors.textDim}>
+            <Txt s={font.body} lh={1.6} c={t.colors.textDim}>
               Haftalık tablo, katılmayı seçen kullanıcıların bu hafta kazandığı XP’yi
               sıralar. Pazartesi sıfırlanır.
             </Txt>
@@ -140,19 +140,19 @@ export function BoardJoinScreen() {
                 birincisi kadar önemli: insanlar çoğu zaman neyin
                 paylaşılmadığını merak eder. */}
             <View style={styles.sheet}>
-              <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
+              <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.14}>
                 KATILIRSAN GÖRÜNEN
               </Txt>
-              <Txt s={12.5} lh={1.6} c={t.colors.textSubtle}>
+              <Txt s={font.footnote} lh={1.6} c={t.colors.textSubtle}>
                 · Seçtiğin ad{'\n'}· Bu hafta kazandığın XP
               </Txt>
 
               <View style={styles.rule} />
 
-              <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
+              <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.14}>
                 GÖRÜNMEYEN
               </Txt>
-              <Txt s={12.5} lh={1.6} c={t.colors.textSubtle}>
+              <Txt s={font.footnote} lh={1.6} c={t.colors.textSubtle}>
                 · E-posta adresin{'\n'}· Seviyen ve ders ilerlemen{'\n'}· Hata defterin ve
                 kaydettiğin kelimeler
               </Txt>
@@ -194,7 +194,7 @@ export function BoardJoinScreen() {
                   disabled={busy}
                 />
                 <Press onPress={leave} disabled={busy} style={styles.leave}>
-                  <Txt f="m" s={13.5} w={700} c={t.colors.errorSoft}>
+                  <Txt f="m" s={font.body} w={700} c={t.colors.errorSoft}>
                     Tablodan çık
                   </Txt>
                 </Press>
@@ -210,7 +210,7 @@ export function BoardJoinScreen() {
             <Spacer />
 
             <Press onPress={() => go('board')} style={styles.center}>
-              <Txt f="m" s={13} w={700} c={t.colors.link}>
+              <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
                 Tabloyu gör
               </Txt>
             </Press>
@@ -226,17 +226,17 @@ const makeStyles = (t: Theme) =>
     fill: { flex: 1 },
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     sheet: {
-      gap: 7,
-      padding: 15,
+      gap: 8,
+      padding: 16,
       borderRadius: radii.tile,
       borderWidth: 1,
       borderColor: t.alpha.w08,
       backgroundColor: t.colors.surface,
     },
-    rule: { height: 1, backgroundColor: t.alpha.w08, marginVertical: 5 },
+    rule: { height: 1, backgroundColor: t.alpha.w08, marginVertical: 6 },
     leave: {
       alignItems: 'center',
-      paddingVertical: 13,
+      paddingVertical: 14,
       borderRadius: radii.input,
       borderWidth: 1,
       borderColor: tint(t.colors.error, 0.3),

@@ -45,3 +45,4 @@ export function resolveName(mode: ThemeMode, system: SystemScheme): ThemeName {
   if (mode !== 'system') return mode;
   return system === 'light' ? 'light' : 'dark';
 }
+

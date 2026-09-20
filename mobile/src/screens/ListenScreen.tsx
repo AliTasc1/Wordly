@@ -13,7 +13,7 @@ import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { listeningOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
@@ -153,10 +153,10 @@ export function ListenScreen() {
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View style={styles.flex}>
-          <Txt f="m" s={16} w={800}>
+          <Txt f="m" s={font.callout} w={800}>
             {item.title}
           </Txt>
-          <Txt s={11} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {item.level} · {item.lines.length} replik · {index + 1}/{items.length}
           </Txt>
         </View>
@@ -174,7 +174,7 @@ export function ListenScreen() {
             accessibilityRole="button"
             accessibilityLabel="Bu repliği tekrar dinle"
             style={styles.smallBtn}>
-            <Txt f="mono" s={13} w={700}>
+            <Txt f="mono" s={font.footnote} w={700}>
               ↺
             </Txt>
           </Press>
@@ -185,7 +185,7 @@ export function ListenScreen() {
             accessibilityState={{ selected: playing }}
             accessibilityLabel={playing ? 'Durdur' : 'Oynat'}>
             <Gradient colors={t.gradients.cyan} style={styles.playBtn}>
-              <Txt f="m" s={18} w={700}>
+              <Txt f="m" s={font.title} w={700}>
                 {playing ? '■' : '▶'}
               </Txt>
             </Gradient>
@@ -196,14 +196,14 @@ export function ListenScreen() {
             accessibilityRole="button"
             accessibilityLabel="Oynatma hızı"
             style={styles.smallBtn}>
-            <Txt f="mono" s={11} w={700}>
+            <Txt f="mono" s={font.caption} w={700}>
               {SPEEDS[speedIndex].label}
             </Txt>
           </Press>
         </View>
 
         <View style={styles.scrubber}>
-          <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
             {Math.max(line + 1, 0)}
           </Txt>
           <ProgressBar
@@ -214,13 +214,13 @@ export function ListenScreen() {
             track={t.alpha.w12}
             style={styles.flex}
           />
-          <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
             {item.lines.length} replik
           </Txt>
         </View>
 
         {recorded ? null : (
-          <Txt s={11} lh={1.5} c={t.colors.textFaint}>
+          <Txt s={font.caption} lh={1.5} c={t.colors.textFaint}>
             Bu diyaloğun kaydı henüz üretilmedi; cihazının kendi seslendirmesiyle
             okunuyor.
           </Txt>
@@ -233,11 +233,11 @@ export function ListenScreen() {
         accessibilityRole="button"
         accessibilityState={{ expanded: transcript }}
         style={styles.transcriptToggle}>
-        <Txt s={15}>📝</Txt>
-        <Txt f="m" s={13} w={700} style={styles.flex}>
+        <Txt s={font.callout}>📝</Txt>
+        <Txt f="m" s={font.footnote} w={700} style={styles.flex}>
           Transkript
         </Txt>
-        <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+        <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
           {transcript ? 'GİZLE' : 'GÖSTER'}
         </Txt>
       </Press>
@@ -261,7 +261,7 @@ export function ListenScreen() {
               accessibilityRole="button"
               accessibilityLabel={`${turn.who}: repliği dinle`}
               style={[styles.line, i === line && styles.lineOn]}>
-              <Txt f="mono" s={10} w={700} c={t.colors.accentSoft} ls={0.08}>
+              <Txt f="mono" s={font.label} w={700} c={t.colors.accentSoft} ls={0.08}>
                 {turn.who.toUpperCase()}
               </Txt>
               <GlossedText
@@ -270,7 +270,7 @@ export function ListenScreen() {
                 size={13.5}
                 onWord={(gloss) => fire(gloss.w, gloss.tr)}
               />
-              <Txt s={12} lh={1.6} c={t.colors.textDim}>
+              <Txt s={font.caption} lh={1.6} c={t.colors.textDim}>
                 {turn.tr}
               </Txt>
             </Press>
@@ -279,10 +279,10 @@ export function ListenScreen() {
       ) : null}
 
       <Card>
-        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
           SORU {asked + 1}/{item.questions.length} · {right} doğru
         </Txt>
-        <Txt f="m" s={17} w={700} lh={1.4}>
+        <Txt f="m" s={font.title} w={700} lh={1.4}>
           {question.q}
         </Txt>
         {question.options.map((option, i) => (
@@ -352,17 +352,17 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.input,
-      padding: 13,
+      padding: 14,
     },
     transcript: {
       backgroundColor: t.colors.surface,
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.panel,
-      padding: 15,
+      padding: 16,
       gap: 14,
     },
-    line: { gap: 3, borderRadius: radii.input, paddingHorizontal: 8, paddingVertical: 6 },
+    line: { gap: 4, borderRadius: radii.input, paddingHorizontal: 8, paddingVertical: 6 },
     // Okunmakta olan replik: öğrenci sesi hangi satırda olduğunu kaybetmesin.
     lineOn: { backgroundColor: t.alpha.w05, borderWidth: 1, borderColor: tint(t.colors.accent, 0.35) },
   });

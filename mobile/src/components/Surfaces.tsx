@@ -6,7 +6,7 @@ import { tint } from '../theme/tint';
 import { Gradient } from './Gradient';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 
 /**
  * The design's repeated card surface:
@@ -149,7 +149,7 @@ export function Pill({
       style={[
         {
           paddingVertical: 6,
-          paddingHorizontal: 11,
+          paddingHorizontal: 12,
           borderRadius: radii.chip,
           backgroundColor: `${tint}1f`,
           borderWidth: 1,
@@ -182,7 +182,7 @@ export function Tag({
       style={[
         {
           paddingVertical: 4,
-          paddingHorizontal: 7,
+          paddingHorizontal: 8,
           borderRadius: 7,
           backgroundColor: `${tint}1f`,
         },
@@ -236,7 +236,7 @@ export function Chip({
         },
         style,
       ]}>
-      <Txt f="m" s={12.5} w={700} c={active ? t.colors.text : t.colors.textMuted}>
+      <Txt f="m" s={font.footnote} w={700} c={active ? t.colors.text : t.colors.textMuted}>
         {label}
       </Txt>
     </Press>
@@ -276,7 +276,7 @@ export function StatTile({
       <Txt f="m" s={size} w={800} c={tint}>
         {value}
       </Txt>
-      <Txt s={10.5} c={t.colors.textDim} style={styles.statLabel}>
+      <Txt s={font.label} c={t.colors.textDim} style={styles.statLabel}>
         {label}
       </Txt>
     </View>
@@ -300,7 +300,7 @@ export function Row({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    padding: 13,
+    padding: 14,
     borderRadius: radii.panel,
     borderWidth: 1,
     ...(active
@@ -324,7 +324,7 @@ export function Divider({ style }: { style?: StyleProp<ViewStyle> }) {
 export function ScreenHeading({
   kicker,
   title,
-  size = 26,
+  size = font.jumbo,
 }: {
   kicker: string;
   title: string;
@@ -334,7 +334,7 @@ export function ScreenHeading({
   const styles = useStyles(makeStyles);
   return (
     <View>
-      <Txt f="mono" s={11} w={700} c={t.colors.textDim} ls={0.14}>
+      <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim} ls={0.14}>
         {kicker}
       </Txt>
       <Txt f="m" s={size} w={800} ls={-0.02} style={styles.heading}>
@@ -346,6 +346,6 @@ export function ScreenHeading({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-    statLabel: { marginTop: 1, textAlign: 'center' },
+    statLabel: { marginTop: 2, textAlign: 'center' },
     heading: { marginTop: 4 },
   });

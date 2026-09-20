@@ -11,7 +11,7 @@ import { GlossedText } from '../components/GlossedText';
 import { StripeArt } from '../components/StripeArt';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { readingOf } from '../content';
 import { artFor } from '../content/reading-art';
 import { useQuiz } from '../state/useQuiz';
@@ -90,10 +90,10 @@ export function ReadScreen() {
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View style={styles.flex}>
-          <Txt f="m" s={16} w={800}>
+          <Txt f="m" s={font.callout} w={800}>
             {item.title}
           </Txt>
-          <Txt s={11} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {item.level} · {item.minutes} dk · {index + 1}/{items.length}
           </Txt>
         </View>
@@ -136,7 +136,7 @@ export function ReadScreen() {
           />
         )}
         {showTr && item.textTr ? (
-          <Txt s={15} lh={1.75} c={t.colors.textBright}>
+          <Txt s={font.callout} lh={1.75} c={t.colors.textBright}>
             {item.textTr}
           </Txt>
         ) : (
@@ -146,16 +146,16 @@ export function ReadScreen() {
             onWord={(gloss) => fire(gloss.w, gloss.tr)}
           />
         )}
-        <Txt s={13} lh={1.7} c={t.colors.textFaint}>
+        <Txt s={font.footnote} lh={1.7} c={t.colors.textFaint}>
           Altı çizili kelimelere dokunarak Türkçesini görebilirsin.
         </Txt>
       </View>
 
       <Card>
-        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
           SORU {asked + 1}/{item.questions.length}
         </Txt>
-        <Txt f="m" s={17} w={700} lh={1.4}>
+        <Txt f="m" s={font.title} w={700} lh={1.4}>
           {question.q}
         </Txt>
         {question.options.map((option, i) => (
@@ -207,12 +207,12 @@ const makeStyles = (t: Theme) =>
     // çıkıyor.
     art: { width: '100%', aspectRatio: 16 / 9, borderRadius: radii.input },
     article: {
-      backgroundColor: t.colors.surfaceDeep,
+      backgroundColor: t.colors.sunken,
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.section,
       padding: 18,
       gap: 12,
     },
-    stats: { flexDirection: 'row', gap: 9 },
+    stats: { flexDirection: 'row', gap: 10 },
   });

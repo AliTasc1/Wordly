@@ -5,7 +5,7 @@ import type { Theme } from '../theme/theme';
 import { tint } from '../theme/tint';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import type { OptionState } from '../state/useQuiz';
 
 /**
@@ -60,15 +60,15 @@ export function QuizOption({
       style={[styles.option, optionStyle(state, t), style]}>
       {badge ? (
         <View style={[styles.badge, { borderColor: badgeBorder(state, t) }]}>
-          <Txt f="mono" s={11} w={700}>
+          <Txt f="mono" s={font.caption} w={700}>
             {badge}
           </Txt>
         </View>
       ) : null}
-      <Txt s={14.5} w={600} style={styles.label}>
+      <Txt s={font.body} w={600} style={styles.label}>
         {label}
       </Txt>
-      <Txt f="m" s={14} w={700}>
+      <Txt f="m" s={font.body} w={700}>
         {mark}
       </Txt>
     </Press>
@@ -80,8 +80,8 @@ export function AnswerFeedback({
   correct,
   title,
   note,
-  titleSize = 14,
-  noteSize = 12.5,
+  titleSize = font.body,
+  noteSize = font.footnote,
   radius = radii.input,
 }: {
   correct: boolean;
@@ -122,7 +122,7 @@ const makeStyles = (t: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       gap: 12,
-      padding: 15,
+      padding: 16,
       borderRadius: radii.option,
       borderWidth: 1,
     },
@@ -137,10 +137,10 @@ const makeStyles = (t: Theme) =>
     },
     label: { flex: 1 },
     feedback: {
-      paddingVertical: 13,
-      paddingHorizontal: 15,
+      paddingVertical: 14,
+      paddingHorizontal: 16,
       borderWidth: 1,
-      gap: 3,
+      gap: 4,
     },
     note: { opacity: 0.9 },
   });

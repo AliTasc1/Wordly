@@ -10,6 +10,7 @@ import { Txt } from '../components/Txt';
 import { MIN_PASSWORD, passwordProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useGo } from '../navigation/useGo';
+import { font } from '../theme/tokens';
 
 /**
  * Yeni şifre.
@@ -74,12 +75,12 @@ export function NewPasswordScreen() {
           },
         ]}>
         <View style={styles.header}>
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             Yeni şifre belirle
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
+        <Txt s={font.body} lh={1.55} c={t.colors.textDim}>
           {user?.email
             ? `${user.email} hesabı için yeni bir şifre seç.`
             : 'Hesabın için yeni bir şifre seç.'}
@@ -130,7 +131,7 @@ export function NewPasswordScreen() {
         <Spacer />
 
         <Press onPress={cancel} accessibilityRole="button" style={styles.center}>
-          <Txt f="m" s={13} w={700} c={t.colors.textGhost}>
+          <Txt f="m" s={font.footnote} w={700} c={t.colors.textGhost}>
             Vazgeç ve çıkış yap
           </Txt>
         </Press>

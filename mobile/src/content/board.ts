@@ -1,4 +1,4 @@
-import { colors } from '../theme/tokens';
+import type { ColorRole } from '../theme/palette';
 import type { BoardEntry, MyPlace } from '../server/leaderboard';
 
 /**
@@ -23,16 +23,16 @@ export function initialsOf(name: string): string {
  * Rastgele seçilseydi her açılışta aynı kişi başka renkte görünürdü ve
  * tablo tanıdık olmaktan çıkardı. Ad aynıysa renk de aynı.
  */
-const PALETTE: readonly (readonly [string, string])[] = [
-  [colors.primary, colors.accent],
-  [colors.secondary, colors.accent],
-  [colors.warning, colors.orange],
-  [colors.success, colors.accent],
-  [colors.orange, colors.error],
-  [colors.secondary, colors.primary],
+const PALETTE: readonly (readonly [ColorRole, ColorRole])[] = [
+  ['primary', 'accent'],
+  ['secondary', 'accent'],
+  ['warning', 'orange'],
+  ['success', 'accent'],
+  ['orange', 'error'],
+  ['secondary', 'primary'],
 ];
 
-export function avatarOf(name: string): readonly [string, string] {
+export function avatarOf(name: string): readonly [ColorRole, ColorRole] {
   let hash = 0;
   for (const ch of name) hash = (hash * 31 + ch.codePointAt(0)!) % 100_000;
   return PALETTE[hash % PALETTE.length];

@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import type { BoardEntry, MyPlace } from '../server/leaderboard';
 import { avatarOf, gapToNext, initialsOf, weekEndsIn } from './board';
+import { PALETTES } from '../theme/palette';
 
 /**
  * Lider tablosu sunumunun sınavı.
@@ -59,11 +60,22 @@ test('aynı ad her zaman aynı rengi alır', () => {
   assert.deepEqual(avatarOf('Elif'), avatarOf('Elif'));
 });
 
-test('renk paletin içinden gelir', () => {
+test('renk rolleri palette gerçekten var', () => {
+  // Avatar rengi artık ham bir altılık değil, bir rol adı: rengi çizim
+  // anında tema veriyor. Rol yanlış yazılırsa `t.colors[rol]` `undefined`
+  // döner ve React Native sessizce siyaha düşer.
   for (const name of ['Ali', 'Elif', 'Mert', 'Zeynep', 'Can', 'Deniz', 'Burak']) {
     const pair = avatarOf(name);
     assert.equal(pair.length, 2);
-    assert.ok(pair[0].startsWith('#'));
+    for (const rol of pair) {
+      for (const tema of ['dark', 'light'] as const) {
+        assert.equal(
+          typeof PALETTES[tema][rol],
+          'string',
+          `${tema} paletinde "${rol}" yok`,
+        );
+      }
+    }
   }
 });
 

@@ -44,15 +44,24 @@ export type Palette = {
 
   // Yüzeyler
   bg: string;
+  /*
+    Yüzey basamakları.
+
+    On tane vardı: `surface`, `surfaceRaised`, `surfaceElevated`,
+    `surfaceHigh`, `surfaceCard`, `surfaceDeep`, `surfaceSlot`,
+    `surfaceBubble`, `surfaceNode`. Dokuzu bir ya da iki yerde
+    kullanılıyordu ve adları nerede durduklarını söylemiyordu:
+    `surfaceCard` aslında `surface`ten **koyuydu**, yani kartın üstünde
+    değil altındaydı. Token seçen kişi yanlış seçiyordu.
+
+    Dört kaldı ve sırası adında: `bg` sayfa, `surface` sayfadaki kart,
+    `sunken` kartın içindeki oyuk, `raised` kartın üstündeki şey.
+  */
   surface: string;
-  surfaceRaised: string;
-  surfaceElevated: string;
-  surfaceHigh: string;
-  surfaceCard: string;
-  surfaceDeep: string;
-  surfaceSlot: string;
-  surfaceBubble: string;
-  surfaceNode: string;
+  /** Kartın içine gömülü: giriş kutusu, harf yuvası, ilerleme kanalı. */
+  sunken: string;
+  /** Kartın üstünde duran: baloncuk, düğüm, açılır katman. */
+  raised: string;
 
   // Metin
   text: string;
@@ -100,16 +109,14 @@ const DARK: Palette = {
   errorTint: '#FFAEB6',
   orange: '#FF7A59',
 
-  bg: '#070A14',
-  surface: '#0E1426',
-  surfaceRaised: '#121A31',
-  surfaceElevated: '#161E36',
-  surfaceHigh: '#141C33',
-  surfaceCard: '#0B1122',
-  surfaceDeep: '#0B1020',
-  surfaceSlot: '#0C1223',
-  surfaceBubble: '#151D35',
-  surfaceNode: '#1A2342',
+  // Basamaklar arası fark ölçülerek açıldı. Tasarımdan gelen değerlerde
+  // `sunken` ile `surface` arasında 255'lik ölçekte 3,1 birim vardı — kartın
+  // içindeki oyuk gözle seçilmiyordu. Sayfa bir tık koyulaştı, kart bir tık
+  // açıldı; aradaki üç aralık da beşin üstüne çıktı.
+  bg: '#05080F',
+  surface: '#111831',
+  sunken: '#0B1122',
+  raised: '#161E36',
 
   text: '#FFFFFF',
   textBright: '#E4EAF8',
@@ -170,14 +177,11 @@ const LIGHT: Palette = {
   // zeminde kart ile arka plan aynı olur ve hiyerarşi kaybolurdu.
   bg: '#F7F8FC',
   surface: '#FFFFFF',
-  surfaceRaised: '#FFFFFF',
-  surfaceElevated: '#FFFFFF',
-  surfaceHigh: '#F2F4FA',
-  surfaceCard: '#FFFFFF',
-  surfaceDeep: '#FFFFFF',
-  surfaceSlot: '#EFF2F9',
-  surfaceBubble: '#F2F4FA',
-  surfaceNode: '#EDF1FB',
+  sunken: '#ECEFF7',
+  // Açık temada yükselti renkle anlatılamıyor: beyazın üstü yok. Kart ile
+  // aynı beyaz duruyor, farkı gölge veriyor (`shadows.card`). Koyu temada
+  // ise gölge işe yaramıyor ve fark renkte — iki tema, iki dil.
+  raised: '#FFFFFF',
 
   // Saf siyah değil: koyu lacivert, koyu temadaki karakteri koruyor ve
   // uzun okumada saf siyahtan yumuşak.
@@ -203,6 +207,19 @@ const LIGHT: Palette = {
   blueTint: '#2558E0',
   mintSoft: '#15803D',
 };
+
+/**
+ * Anlamsal renk rolü.
+ *
+ * İçerik dosyaları (başarımlar, bildirimler, oyun modları) renk taşıyordu:
+ * `tint: colors.warning` — yani koyu temanın turuncusu, donmuş hâlde. Tema
+ * açığa geçince o değerler yerinde kalıyordu ve kimi beyaz zeminde
+ * okunmuyordu.
+ *
+ * Artık rolün **adı** taşınıyor, rengi çizim anında tema veriyor. İçerik
+ * "bu bir uyarı" diyor; hangi turuncu olduğuna tema karar veriyor.
+ */
+export type ColorRole = keyof Palette;
 
 export const PALETTES: Record<ThemeName, Palette> = { dark: DARK, light: LIGHT };
 

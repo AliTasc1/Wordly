@@ -10,7 +10,7 @@ import { Card } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
@@ -75,15 +75,15 @@ export function GrammarScreen() {
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View style={styles.flex}>
-          <Txt f="m" s={16} w={800}>
+          <Txt f="m" s={font.callout} w={800}>
             {lesson.title}
           </Txt>
-          <Txt s={11} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {lesson.topic}
           </Txt>
         </View>
         <View style={styles.levelTag}>
-          <Txt f="mono" s={11} w={700} c={t.colors.violetSoft}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.violetSoft}>
             {lesson.level} · {index + 1}/{lessons.length}
           </Txt>
         </View>
@@ -108,47 +108,47 @@ export function GrammarScreen() {
         deg={140}
         colors={[tint(t.colors.secondary, 0.22), tint(t.colors.surface, 0.92)]}
         style={styles.concept}>
-        <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.violetSoft} ls={0.14}>
           KURAL
         </Txt>
-        <Txt s={14.5} lh={1.6} c={t.colors.textBright}>
+        <Txt s={font.body} lh={1.6} c={t.colors.textBright}>
           {lesson.concept.summary}
         </Txt>
         {lesson.concept.formula ? (
           <View style={styles.formula}>
-            <Txt f="mono" s={12} w={700} c={t.colors.accentSoft}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.accentSoft}>
               {lesson.concept.formula.left}
             </Txt>
             <Txt c={t.colors.textGhost}>+</Txt>
-            <Txt f="mono" s={12} w={700} c={t.colors.violetSoft}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.violetSoft}>
               {lesson.concept.formula.right}
             </Txt>
           </View>
         ) : null}
         <View style={styles.canDo}>
-          <Txt f="mono" s={10} w={700} c={t.colors.mintSoft} ls={0.1}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.mintSoft} ls={0.1}>
             ARTIK YAPABİLİRSİN
           </Txt>
-          <Txt s={12.5} lh={1.55} c={t.colors.textMuted} style={styles.canDoBody}>
+          <Txt s={font.footnote} lh={1.55} c={t.colors.textMuted} style={styles.canDoBody}>
             {lesson.canDo}
           </Txt>
         </View>
       </Gradient>
 
       <View style={styles.examples}>
-        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
           ÖRNEKLER
         </Txt>
         {lesson.examples.map((example) => (
           <View key={example.en} style={styles.example}>
-            <Txt s={14.5} w={600} lh={1.5}>
+            <Txt s={font.body} w={600} lh={1.5}>
               {example.en}
             </Txt>
-            <Txt s={12.5} lh={1.5} c={t.colors.textDim}>
+            <Txt s={font.footnote} lh={1.5} c={t.colors.textDim}>
               {example.tr}
             </Txt>
             {example.note ? (
-              <Txt s={11.5} lh={1.5} c={t.colors.textFaint}>
+              <Txt s={font.caption} lh={1.5} c={t.colors.textFaint}>
                 {example.note}
               </Txt>
             ) : null}
@@ -157,18 +157,18 @@ export function GrammarScreen() {
       </View>
 
       <View style={styles.mistakes}>
-        <Txt f="mono" s={10} w={700} c={t.colors.errorTint} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.errorTint} ls={0.14}>
           SIK YAPILAN HATA
         </Txt>
         {lesson.mistakes.map((mistake) => (
           <View key={mistake.wrong} style={styles.mistake}>
-            <Txt s={13.5} w={600} lh={1.5} c={t.colors.errorTint} style={styles.wrong}>
+            <Txt s={font.body} w={600} lh={1.5} c={t.colors.errorTint} style={styles.wrong}>
               ✕ {mistake.wrong}
             </Txt>
-            <Txt s={13.5} w={600} lh={1.5} c={t.colors.mintSoft}>
+            <Txt s={font.body} w={600} lh={1.5} c={t.colors.mintSoft}>
               ✓ {mistake.right}
             </Txt>
-            <Txt s={11.5} lh={1.5} c={t.colors.textDim}>
+            <Txt s={font.caption} lh={1.5} c={t.colors.textDim}>
               {mistake.why}
             </Txt>
           </View>
@@ -176,10 +176,10 @@ export function GrammarScreen() {
       </View>
 
       <Card>
-        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.14}>
           ALIŞTIRMA {asked + 1}/{lesson.exercises.length}
         </Txt>
-        <Txt f="m" s={19} w={700} lh={1.4}>
+        <Txt f="m" s={font.headline} w={700} lh={1.4}>
           {exercise.text}
         </Txt>
         {exercise.options.map((option, i) => (
@@ -209,13 +209,13 @@ export function GrammarScreen() {
 
       <View style={styles.challenge}>
         <View style={styles.challengeIcon}>
-          <Txt s={18}>⚡</Txt>
+          <Txt s={font.title}>⚡</Txt>
         </View>
         <View style={styles.flex}>
-          <Txt f="m" s={13.5} w={700}>
+          <Txt f="m" s={font.body} w={700}>
             Hızlı tur
           </Txt>
-          <Txt s={11.5} c={t.colors.textDim}>
+          <Txt s={font.caption} c={t.colors.textDim}>
             Arenada bu konuyu süreyle dene
           </Txt>
         </View>
@@ -236,14 +236,14 @@ const makeStyles = (t: Theme) =>
     flex: { flex: 1 },
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     levelTag: {
-      paddingVertical: 5,
+      paddingVertical: 6,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
       backgroundColor: tint(t.colors.secondary, 0.18),
       borderWidth: 1,
       borderColor: tint(t.colors.secondary, 0.32),
     },
-    steps: { flexDirection: 'row', gap: 5 },
+    steps: { flexDirection: 'row', gap: 6 },
     step: { flex: 1, height: 4, borderRadius: 9 },
     concept: {
       borderWidth: 1,
@@ -267,13 +267,13 @@ const makeStyles = (t: Theme) =>
       borderRadius: radii.card,
       padding: 12,
     },
-    canDoBody: { marginTop: 3 },
+    canDoBody: { marginTop: 4 },
     examples: {
       backgroundColor: t.colors.surface,
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.panel,
-      padding: 15,
+      padding: 16,
       gap: 12,
     },
     example: { gap: 2 },
@@ -282,7 +282,7 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: tint(t.colors.error, 0.2),
       borderRadius: radii.panel,
-      padding: 15,
+      padding: 16,
       gap: 12,
     },
     mistake: { gap: 2 },

@@ -1,6 +1,7 @@
 /** Splash, intro, goal picker and the design-system reference screens. */
 
-import { colors, scales } from '../theme/tokens';
+import { scales } from '../theme/tokens';
+import type { ColorRole } from '../theme/palette';
 import type { ScreenId } from '../navigation/routes';
 
 export const SPLASH = {
@@ -26,15 +27,22 @@ export const SPLASH = {
 
   Yerlerindeki sayılar kendi içeriğimizden sayıldı ve doğrulanabilir.
 */
-export const INTRO = {
+export const INTRO: {
+  skip: string;
+  art: string;
+  title: string;
+  body: string;
+  stats: { value: string; label: string; tint: ColorRole }[];
+  cta: string;
+} = {
   skip: 'Atla',
   art: 'görsel: harf arenası sahnesi',
   title: 'Ders çalışıyormuş gibi olmadan İngilizce öğren.',
   body: 'Kelime, gramer, okuma, dinleme, konuşma ve yazma — altı seviye boyunca, CEFR standardına göre. Her şey çevrimdışı çalışır.',
   stats: [
-    { value: '9.461', label: 'kelime', tint: colors.accent },
-    { value: '1.040', label: 'gramer alıştırması', tint: colors.secondary },
-    { value: 'A1–C2', label: 'altı seviye', tint: colors.success },
+    { value: '9.461', label: 'kelime', tint: 'accent' },
+    { value: '1.040', label: 'gramer alıştırması', tint: 'secondary' },
+    { value: 'A1–C2', label: 'altı seviye', tint: 'success' },
   ],
   cta: 'Devam et',
 };
@@ -87,14 +95,14 @@ export const BUTTON_STATES = [
 // Seviye numarası, lig ve premium etiketleri çıkarıldı: üçü de üründe yok.
 // Tasarım referansında var olmayan bir kavramın rozetini tutmak, ileride
 // birinin onu var sanmasına yol açar.
-export const TOKEN_PILLS = [
-  { label: 'B1', tint: colors.accent },
-  { label: '🔥 12 gün', tint: colors.warning },
-  { label: '+50 XP', tint: colors.primary },
-  { label: 'DOĞRU', tint: colors.success },
-  { label: 'YANLIŞ', tint: colors.error },
-  { label: 'AÇILDI', tint: colors.secondary },
-  { label: 'KİLİTLİ', tint: colors.textGhost },
+export const TOKEN_PILLS: { label: string; tint: ColorRole }[] = [
+  { label: 'B1', tint: 'accent' },
+  { label: '🔥 12 gün', tint: 'warning' },
+  { label: '+50 XP', tint: 'primary' },
+  { label: 'DOĞRU', tint: 'success' },
+  { label: 'YANLIŞ', tint: 'error' },
+  { label: 'AÇILDI', tint: 'secondary' },
+  { label: 'KİLİTLİ', tint: 'textGhost' },
 ];
 
 export const TOKEN_TEXT = {
@@ -150,7 +158,7 @@ export type ErrorState = {
   code: string;
   primary: string;
   secondary: string;
-  tint: string;
+  tint: ColorRole;
 };
 
 export const ERROR_STATES: ErrorState[] = [
@@ -161,7 +169,7 @@ export const ERROR_STATES: ErrorState[] = [
     code: 'ERR_NETWORK',
     primary: 'Tekrar dene',
     secondary: 'Çevrimdışı derslerim',
-    tint: colors.warning,
+    tint: 'warning',
   },
   {
     glyph: '🎙',
@@ -170,7 +178,7 @@ export const ERROR_STATES: ErrorState[] = [
     code: 'ERR_MIC_PERMISSION',
     primary: 'Ayarları aç',
     secondary: 'Yazarak devam et',
-    tint: colors.error,
+    tint: 'error',
   },
   {
     glyph: '🔇',
@@ -179,7 +187,7 @@ export const ERROR_STATES: ErrorState[] = [
     code: 'ERR_AUDIO_404',
     primary: 'Tekrar yükle',
     secondary: 'Metinle devam',
-    tint: colors.warning,
+    tint: 'warning',
   },
   {
     glyph: '💳',
@@ -188,7 +196,7 @@ export const ERROR_STATES: ErrorState[] = [
     code: 'ERR_PAYMENT_DECLINED',
     primary: 'Kartı güncelle',
     secondary: 'Başka yöntem',
-    tint: colors.error,
+    tint: 'error',
   },
   {
     glyph: '⏳',
@@ -197,6 +205,6 @@ export const ERROR_STATES: ErrorState[] = [
     code: 'ERR_SESSION_EXPIRED',
     primary: 'Yeniden giriş yap',
     secondary: 'Yardım',
-    tint: colors.secondary,
+    tint: 'secondary',
   },
 ];

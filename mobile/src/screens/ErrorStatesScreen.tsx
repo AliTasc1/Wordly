@@ -2,11 +2,12 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Press } from '../components/Buttons';
 import { ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { ERROR_STATES } from '../data/onboarding';
 import { useApp } from '../state/AppContext';
 
@@ -18,31 +19,33 @@ export function ErrorStatesScreen() {
 
   return (
     <Screen padTop={62} gap={14}>
-      <ScreenHeading kicker="HATA DURUMLARI" title="Dostane ve aksiyon alınabilir" size={22} />
+      <ScreenHeading kicker="HATA DURUMLARI" title="Dostane ve aksiyon alınabilir" size={font.display} />
 
-      {ERROR_STATES.map((state) => (
+      {ERROR_STATES.map((state) => {
+        const renk = t.colors[state.tint];
+        return (
         <View
           key={state.code}
           style={[
             styles.card,
-            { backgroundColor: `${state.tint}14`, borderColor: `${state.tint}3d` },
+            { backgroundColor: tint(renk, 0.08), borderColor: tint(renk, 0.24) },
           ]}>
           <View style={styles.head}>
             <View
               style={[
                 styles.icon,
-                { backgroundColor: `${state.tint}26`, borderColor: `${state.tint}59` },
+                { backgroundColor: tint(renk, 0.15), borderColor: tint(renk, 0.35) },
               ]}>
-              <Txt s={19}>{state.glyph}</Txt>
+              <Txt s={font.headline}>{state.glyph}</Txt>
             </View>
             <View style={styles.flex}>
-              <Txt f="m" s={14.5} w={800}>
+              <Txt f="m" s={font.body} w={800}>
                 {state.title}
               </Txt>
-              <Txt s={12} lh={1.55} c={t.colors.textSubtle} style={styles.text}>
+              <Txt s={font.caption} lh={1.55} c={t.colors.textSubtle} style={styles.text}>
                 {state.text}
               </Txt>
-              <Txt f="mono" s={10} w={600} c={t.colors.textFaint} style={styles.code}>
+              <Txt f="mono" s={font.label} w={600} c={t.colors.textFaint} style={styles.code}>
                 {state.code}
               </Txt>
             </View>
@@ -51,21 +54,22 @@ export function ErrorStatesScreen() {
           <View style={styles.actions}>
             <Press
               onPress={() => fire(state.primary, `Demo: ${state.title}`)}
-              style={[styles.primary, { backgroundColor: state.tint }]}>
-              <Txt f="m" s={12.5} w={800} c={t.colors.onLight}>
+              style={[styles.primary, { backgroundColor: renk }]}>
+              <Txt f="m" s={font.footnote} w={800} c={t.colors.onLight}>
                 {state.primary}
               </Txt>
             </Press>
             <Press
               onPress={() => fire(state.secondary, `Demo: ${state.title}`)}
               style={styles.secondary}>
-              <Txt f="m" s={12.5} w={700} c={t.colors.textSubtle}>
+              <Txt f="m" s={font.footnote} w={700} c={t.colors.textSubtle}>
                 {state.secondary}
               </Txt>
             </Press>
           </View>
         </View>
-      ))}
+        );
+      })}
     </Screen>
   );
 }
@@ -85,7 +89,7 @@ const makeStyles = (t: Theme) =>
     },
     text: { marginTop: 4 },
     code: { marginTop: 6 },
-    actions: { flexDirection: 'row', gap: 9, marginTop: 13 },
+    actions: { flexDirection: 'row', gap: 10, marginTop: 14 },
     primary: {
       flex: 1.3,
       height: 42,

@@ -5,7 +5,7 @@ import type { Theme } from '../theme/theme';
 import { tint } from '../theme/tint';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 
 type Props = Omit<TextInputProps, 'style'> & {
   label: string;
@@ -32,7 +32,7 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
 
   return (
     <View style={styles.wrap}>
-      <Txt f="m" s={12.5} w={700} c={t.colors.textMuted}>
+      <Txt f="m" s={font.footnote} w={700} c={t.colors.textMuted}>
         {label}
       </Txt>
 
@@ -51,7 +51,7 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
             accessibilityRole="button"
             accessibilityLabel={shown ? 'Şifreyi gizle' : 'Şifreyi göster'}
             style={styles.eye}>
-            <Txt f="m" s={12} w={700} c={t.colors.textMuted}>
+            <Txt f="m" s={font.caption} w={700} c={t.colors.textMuted}>
               {shown ? 'Gizle' : 'Göster'}
             </Txt>
           </Press>
@@ -59,11 +59,11 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
       </View>
 
       {problem ? (
-        <Txt s={12} lh={1.45} c={t.colors.errorTint}>
+        <Txt s={font.caption} lh={1.45} c={t.colors.errorTint}>
           {problem}
         </Txt>
       ) : hint ? (
-        <Txt s={12} lh={1.45} c={t.colors.textGhost}>
+        <Txt s={font.caption} lh={1.45} c={t.colors.textGhost}>
           {hint}
         </Txt>
       ) : null}
@@ -73,7 +73,7 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-    wrap: { gap: 7 },
+    wrap: { gap: 8 },
     row: { justifyContent: 'center' },
     input: {
       minHeight: 52,

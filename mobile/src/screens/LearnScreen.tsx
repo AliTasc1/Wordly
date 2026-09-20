@@ -9,7 +9,7 @@ import { Chip, Row, ScreenHeading } from '../components/Surfaces';
 import { Press } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { formatMinutes, levelSummary } from '../content/summary';
 import { CEFR, CEFR_LEVELS } from '../data/curriculum';
@@ -61,16 +61,16 @@ export function LearnScreen() {
 
       <Gradient colors={[tint(t.colors.primary, 0.22), tint(t.colors.surface, 0.9)]} style={styles.summary}>
         <View style={styles.summaryHead}>
-          <Txt f="m" s={18} w={800}>
+          <Txt f="m" s={font.title} w={800}>
             {summary.title}
           </Txt>
           <View style={styles.pct}>
-            <Txt f="mono" s={11} w={700}>
+            <Txt f="mono" s={font.caption} w={700}>
               %{progress}
             </Txt>
           </View>
         </View>
-        <Txt s={12.5} lh={1.5} c={t.colors.textSubtle}>
+        <Txt s={font.footnote} lh={1.5} c={t.colors.textSubtle}>
           {summary.description}
         </Txt>
         <ProgressBar
@@ -81,35 +81,35 @@ export function LearnScreen() {
           track={t.alpha.black35}
         />
         <View style={styles.meta}>
-          <Txt s={11.5} w={600} c={t.colors.textMuted}>
+          <Txt s={font.caption} w={600} c={t.colors.textMuted}>
             📐 {counts.lessons} ders
           </Txt>
-          <Txt s={11.5} w={600} c={t.colors.textMuted}>
+          <Txt s={font.caption} w={600} c={t.colors.textMuted}>
             🔤 {counts.words.toLocaleString('tr-TR')} kelime
           </Txt>
-          <Txt s={11.5} w={600} c={t.colors.textMuted}>
+          <Txt s={font.caption} w={600} c={t.colors.textMuted}>
             ⏱ {formatMinutes(counts.minutes)}
           </Txt>
         </View>
         <View style={styles.meta}>
-          <Txt s={11.5} w={600} c={t.colors.textMuted}>
+          <Txt s={font.caption} w={600} c={t.colors.textMuted}>
             📖 {counts.reading} okuma
           </Txt>
-          <Txt s={11.5} w={600} c={t.colors.textMuted}>
+          <Txt s={font.caption} w={600} c={t.colors.textMuted}>
             🎧 {counts.listening} dinleme
           </Txt>
-          <Txt s={11.5} w={600} c={t.colors.textMuted}>
+          <Txt s={font.caption} w={600} c={t.colors.textMuted}>
             🎙 {counts.speaking} konuşma
           </Txt>
         </View>
       </Gradient>
 
       <View style={styles.listHead}>
-        <Txt f="m" s={14.5} w={700}>
+        <Txt f="m" s={font.body} w={700}>
           Dersler
         </Txt>
         <Press onPress={() => go('map')} scale={0.97}>
-          <Txt s={12.5} w={700} c={t.colors.link}>
+          <Txt s={font.footnote} w={700} c={t.colors.link}>
             Harita görünümü ›
           </Txt>
         </Press>
@@ -128,21 +128,21 @@ export function LearnScreen() {
               {now ? <Gradient colors={t.gradients.brand} style={styles.unitFill} /> : null}
               <Txt
                 f="m"
-                s={13}
+                s={font.footnote}
                 w={800}
                 c={done ? t.colors.successSoft : now ? t.colors.text : t.colors.textFaint}>
                 {String(lesson.order).padStart(2, '0')}
               </Txt>
             </View>
             <View style={styles.flex}>
-              <Txt f="m" s={14.5} w={700}>
+              <Txt f="m" s={font.body} w={700}>
                 {lesson.title}
               </Txt>
-              <Txt s={11.5} c={t.colors.textDim} style={styles.unitSub}>
+              <Txt s={font.caption} c={t.colors.textDim} style={styles.unitSub}>
                 {lesson.topic} · {lesson.exercises.length} alıştırma
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
               {done ? 'BİTTİ' : now ? 'DEVAM' : 'YENİ'}
             </Txt>
           </Row>
@@ -155,17 +155,17 @@ export function LearnScreen() {
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
     flex: { flex: 1 },
-    tabs: { gap: 7, paddingBottom: 4 },
+    tabs: { gap: 8, paddingBottom: 4 },
     summary: {
       borderWidth: 1,
       borderColor: tint(t.colors.primary, 0.3),
       borderRadius: radii.section,
       padding: 16,
-      gap: 11,
+      gap: 12,
     },
     summaryHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
     pct: {
-      paddingVertical: 5,
+      paddingVertical: 6,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
       backgroundColor: t.alpha.w10,

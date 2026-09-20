@@ -10,6 +10,7 @@ import { Txt } from '../components/Txt';
 import { emailProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
+import { font } from '../theme/tokens';
 
 /**
  * Giriş.
@@ -89,12 +90,12 @@ export function SignInScreen() {
         ]}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             Giriş yap
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
+        <Txt s={font.body} lh={1.55} c={t.colors.textDim}>
           İlerlemen bu telefonda zaten kayıtlı. Giriş yapmak onu diğer cihazlarına da
           taşır.
         </Txt>
@@ -137,7 +138,7 @@ export function SignInScreen() {
           onPress={() => go('forgot')}
           accessibilityRole="button"
           style={styles.linkRow}>
-          <Txt f="m" s={13} w={700} c={t.colors.link}>
+          <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
             Şifremi unuttum
           </Txt>
         </Press>
@@ -159,7 +160,7 @@ export function SignInScreen() {
               <Notice tone="ok" text="Doğrulama e-postası yeniden gönderildi." />
             ) : (
               <Press onPress={resend} accessibilityRole="button" style={styles.linkRow}>
-                <Txt f="m" s={13} w={700} c={t.colors.link}>
+                <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
                   E-postayı yeniden gönder
                 </Txt>
               </Press>
@@ -180,9 +181,9 @@ export function SignInScreen() {
           }}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt s={13} c={t.colors.textDim}>
+          <Txt s={font.footnote} c={t.colors.textDim}>
             Hesabın yok mu?{' '}
-            <Txt f="m" s={13} w={700} c={t.colors.link}>
+            <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
               Kayıt ol
             </Txt>
           </Txt>
@@ -194,7 +195,7 @@ export function SignInScreen() {
           onPress={() => go('home')}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt f="m" s={13} w={700} c={t.colors.textGhost}>
+          <Txt f="m" s={font.footnote} w={700} c={t.colors.textGhost}>
             Hesapsız devam et
           </Txt>
         </Press>

@@ -12,6 +12,7 @@ import Svg, {
 } from 'react-native-svg';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
+import { font } from '../theme/tokens';
 
 /**
  * `bar(pct, c1, c2)` from the design: a rounded track with a gradient fill.
@@ -134,10 +135,10 @@ export function ResultDonut({
       color={t.colors.accent}
       track={t.alpha.w08}>
       <View style={styles.donutInner}>
-        <Txt f="m" s={40} w={800} ls={-0.02}>
+        <Txt f="m" s={font.hero} w={800} ls={-0.02}>
           {level}
         </Txt>
-        <Txt f="mono" s={10.5} w={600} c={t.colors.textDim} ls={0.1}>
+        <Txt f="mono" s={font.label} w={600} c={t.colors.textDim} ls={0.1}>
           {caption}
         </Txt>
       </View>
@@ -174,13 +175,13 @@ export function SkillBar({
   const styles = useStyles(makeStyles);
   return (
     <View style={styles.skillRow}>
-      <Txt s={11.5} w={600} c={t.colors.textSubtle} style={{ width: nameWidth }}>
+      <Txt s={font.caption} w={600} c={t.colors.textSubtle} style={{ width: nameWidth }}>
         {name}
       </Txt>
       <ProgressBar pct={pct} from={from} to={to} height={barHeight} style={styles.flex} />
       <Txt
         f="mono"
-        s={11}
+        s={font.caption}
         w={700}
         c={valueColor}
         style={{ width: valueWidth, textAlign: 'right' }}>
@@ -224,7 +225,7 @@ export function ColumnChart({
               borderBottomRightRadius: 3,
             }}
           />
-          <Txt f="mono" s={10} w={600} c={t.colors.textFaint}>
+          <Txt f="mono" s={font.label} w={600} c={t.colors.textFaint}>
             {d.label}
           </Txt>
         </View>
@@ -242,14 +243,14 @@ const makeStyles = (t: Theme) =>
       width: 124,
       height: 124,
       borderRadius: 62,
-      backgroundColor: t.colors.surfaceCard,
+      backgroundColor: t.colors.sunken,
       alignItems: 'center',
       justifyContent: 'center',
       borderWidth: 1,
       borderColor: t.alpha.w08,
     },
     skillRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-    chart: { flexDirection: 'row', alignItems: 'flex-end', gap: 7, height: 130 },
+    chart: { flexDirection: 'row', alignItems: 'flex-end', gap: 8, height: 130 },
     chartCol: {
       flex: 1,
       alignItems: 'center',

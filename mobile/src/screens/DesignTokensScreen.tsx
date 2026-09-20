@@ -8,7 +8,7 @@ import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Divider, Pill, ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { BUTTON_STATES, TOKEN_PILLS, TOKEN_SCALES, TOKEN_TEXT } from '../data/onboarding';
 
 /** Design system reference — colour scales, type, component states. */
@@ -17,15 +17,15 @@ export function DesignTokensScreen() {
   const styles = useStyles(makeStyles);
   return (
     <Screen padTop={62} gap={16}>
-      <ScreenHeading kicker="TASARIM SİSTEMİ" title="Jetonlar ve bileşenler" size={24} />
+      <ScreenHeading kicker="TASARIM SİSTEMİ" title="Jetonlar ve bileşenler" size={font.display} />
 
       {TOKEN_SCALES.map((scale) => (
         <View key={scale.name} style={styles.scale}>
           <View style={styles.scaleHead}>
-            <Txt f="mono" s={11} w={700} c={t.colors.textFaint}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textFaint}>
               {scale.name}
             </Txt>
-            <Txt f="mono" s={11} w={700} c={t.colors.textFaint}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textFaint}>
               {scale.base}
             </Txt>
           </View>
@@ -40,67 +40,67 @@ export function DesignTokensScreen() {
       <Divider />
 
       <View style={styles.typeBlock}>
-        <Txt f="m" s={13} w={700}>
+        <Txt f="m" s={font.footnote} w={700}>
           {TOKEN_TEXT.title}
         </Txt>
-        <Txt f="m" s={30} w={800} ls={-0.02}>
+        <Txt f="m" s={font.giant} w={800} ls={-0.02}>
           {TOKEN_TEXT.display}
         </Txt>
-        <Txt f="m" s={21} w={800}>
+        <Txt f="m" s={font.display} w={800}>
           {TOKEN_TEXT.heading}
         </Txt>
-        <Txt f="m" s={15} w={700}>
+        <Txt f="m" s={font.callout} w={700}>
           {TOKEN_TEXT.subheading}
         </Txt>
-        <Txt s={14} lh={1.6} c={t.colors.textBody}>
+        <Txt s={font.body} lh={1.6} c={t.colors.textBody}>
           {TOKEN_TEXT.body}
         </Txt>
-        <Txt f="mono" s={11} w={700} c={t.colors.textFaint}>
+        <Txt f="mono" s={font.caption} w={700} c={t.colors.textFaint}>
           {TOKEN_TEXT.mono}
         </Txt>
       </View>
 
       <Divider />
 
-      <Txt f="m" s={13} w={700}>
+      <Txt f="m" s={font.footnote} w={700}>
         Buton durumları
       </Txt>
       <View style={styles.grid}>
         {BUTTON_STATES.map((state) => (
           <View key={state.name} style={styles.buttonCell}>
             <ButtonSample name={state.name} label={state.label} />
-            <Txt f="mono" s={9.5} w={600} c={t.colors.textGhost} style={styles.caption}>
+            <Txt f="mono" s={font.label} w={600} c={t.colors.textGhost} style={styles.caption}>
               {state.name}
             </Txt>
           </View>
         ))}
       </View>
 
-      <Txt f="m" s={13} w={700}>
+      <Txt f="m" s={font.footnote} w={700}>
         Rozetler ve pilller
       </Txt>
       <View style={styles.pills}>
         {TOKEN_PILLS.map((pill) => (
-          <Pill key={pill.label} label={pill.label} tint={pill.tint} />
+          <Pill key={pill.label} label={pill.label} tint={t.colors[pill.tint]} />
         ))}
       </View>
 
-      <Txt f="m" s={13} w={700}>
+      <Txt f="m" s={font.footnote} w={700}>
         Yükseklik ve yüzeyler
       </Txt>
       <View style={styles.surfaces}>
         <View style={[styles.surface, styles.surfaceBg]}>
-          <Txt f="mono" s={9.5} w={600} c={t.colors.textGhost}>
+          <Txt f="mono" s={font.label} w={600} c={t.colors.textGhost}>
             bg
           </Txt>
         </View>
         <View style={[styles.surface, styles.surfaceMid]}>
-          <Txt f="mono" s={9.5} w={600} c={t.colors.textFaint}>
+          <Txt f="mono" s={font.label} w={600} c={t.colors.textFaint}>
             surface
           </Txt>
         </View>
         <View style={[styles.surface, styles.surfaceHigh]}>
-          <Txt f="mono" s={9.5} w={600} c={t.colors.textMuted}>
+          <Txt f="mono" s={font.label} w={600} c={t.colors.textMuted}>
             elevated
           </Txt>
         </View>
@@ -110,13 +110,13 @@ export function DesignTokensScreen() {
             tint={t.dark ? 'dark' : 'light'}
             style={StyleSheet.absoluteFill}
           />
-          <Txt f="mono" s={9.5} w={600} c={t.colors.textSubtle}>
+          <Txt f="mono" s={font.label} w={600} c={t.colors.textSubtle}>
             glass
           </Txt>
         </View>
       </View>
 
-      <Txt s={11.5} lh={1.6} c={t.colors.textFaint}>
+      <Txt s={font.caption} lh={1.6} c={t.colors.textFaint}>
         {TOKEN_TEXT.a11y}
       </Txt>
     </Screen>
@@ -129,7 +129,7 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   if (name === 'Varsayılan') {
     return (
       <Gradient colors={t.gradients.brand} style={styles.button}>
-        <Txt f="m" s={13} w={800}>
+        <Txt f="m" s={font.footnote} w={800}>
           {label}
         </Txt>
       </Gradient>
@@ -138,7 +138,7 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   if (name === 'Basılı') {
     return (
       <Gradient colors={t.gradients.brandPressed} style={[styles.button, styles.pressed]}>
-        <Txt f="m" s={13} w={800}>
+        <Txt f="m" s={font.footnote} w={800}>
           {label}
         </Txt>
       </Gradient>
@@ -161,7 +161,7 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
           borderColor: style.border,
         },
       ]}>
-      <Txt f="m" s={13} w={800} c={style.color}>
+      <Txt f="m" s={font.footnote} w={800} c={style.color}>
         {label}
       </Txt>
     </View>
@@ -172,11 +172,11 @@ const makeStyles = (t: Theme) =>
   StyleSheet.create({
     scale: { gap: 6 },
     scaleHead: { flexDirection: 'row', justifyContent: 'space-between' },
-    swatches: { flexDirection: 'row', gap: 3, height: 38, borderRadius: radii.md, overflow: 'hidden' },
+    swatches: { flexDirection: 'row', gap: 4, height: 38, borderRadius: radii.md, overflow: 'hidden' },
     swatch: { flex: 1 },
-    typeBlock: { gap: 9 },
-    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 9 },
-    buttonCell: { width: '48%', flexGrow: 1, gap: 5 },
+    typeBlock: { gap: 10 },
+    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
+    buttonCell: { width: '48%', flexGrow: 1, gap: 6 },
     button: {
       height: 46,
       borderRadius: 15,
@@ -186,18 +186,18 @@ const makeStyles = (t: Theme) =>
     pressed: { transform: [{ scale: 0.97 }] },
     caption: { textAlign: 'center' },
     pills: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-    surfaces: { flexDirection: 'row', gap: 9 },
+    surfaces: { flexDirection: 'row', gap: 10 },
     surface: {
       flex: 1,
       height: 70,
       borderRadius: radii.input,
       borderWidth: 1,
       justifyContent: 'flex-end',
-      padding: 9,
+      padding: 10,
       overflow: 'hidden',
     },
     surfaceBg: { backgroundColor: t.colors.bg, borderColor: t.alpha.w06 },
     surfaceMid: { backgroundColor: t.colors.surface, borderColor: t.alpha.w07 },
-    surfaceHigh: { backgroundColor: t.colors.surfaceElevated, borderColor: t.alpha.w10 },
+    surfaceHigh: { backgroundColor: t.colors.raised, borderColor: t.alpha.w10 },
     surfaceGlass: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w14 },
   });

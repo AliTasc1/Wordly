@@ -10,7 +10,7 @@ import { StatTile } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { vocabOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useStudySession } from '../state/useStudySession';
@@ -133,19 +133,19 @@ export function VocabScreen() {
           to={t.colors.accent}
           style={styles.flex}
         />
-        <Txt f="mono" s={12} w={700} c={t.colors.textDim}>
+        <Txt f="mono" s={font.caption} w={700} c={t.colors.textDim}>
           {index + 1}/{deck.length}
         </Txt>
       </View>
 
-      <Gradient deg={165} colors={[t.colors.surfaceNode, t.colors.surface]} style={styles.card}>
+      <Gradient deg={165} colors={[t.colors.raised, t.colors.surface]} style={styles.card}>
         <View style={styles.cardActions}>
           <Press
             onPress={onSave}
             accessibilityRole="button"
             accessibilityLabel={saved ? 'Kayıtlardan çıkar' : 'Kelimeyi kaydet'}
             style={[styles.iconBtn, saved ? styles.saved : styles.unsaved]}>
-            <Txt s={15}>{saved ? '★' : '☆'}</Txt>
+            <Txt s={font.callout}>{saved ? '★' : '☆'}</Txt>
           </Press>
           <Press
             onPress={() => say('word', card.word)}
@@ -153,12 +153,12 @@ export function VocabScreen() {
             accessibilityState={{ selected: speaking === 'word' }}
             accessibilityLabel={`“${card.word}” telaffuzunu dinle`}
             style={[styles.iconBtn, styles.audioBtn]}>
-            <Txt s={15}>🔊</Txt>
+            <Txt s={font.callout}>🔊</Txt>
           </Press>
         </View>
 
         <View style={styles.pos}>
-          <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.1}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.violetSoft} ls={0.1}>
             {card.cefr}
           </Txt>
         </View>
@@ -169,19 +169,19 @@ export function VocabScreen() {
               "take" isim kartını fiil sanıp anlamı yanlış buldu. Aynı
               yazılışı paylaşan 956 kelime var, yani tür bu kartın kimliğinin
               yarısı — üçüncül bir bilgi değil. */}
-          <Txt f="m" s={40} w={800} ls={-0.02}>
+          <Txt f="m" s={font.hero} w={800} ls={-0.02}>
             {card.word}
           </Txt>
-          <Txt f="m" s={13} w={700} c={t.colors.violetSoft} style={styles.posLine}>
+          <Txt f="m" s={font.footnote} w={700} c={t.colors.violetSoft} style={styles.posLine}>
             {card.posLabel.toLocaleLowerCase('tr-TR')}
           </Txt>
           <View style={styles.ipaRow}>
             {card.ipa ? (
-              <Txt f="mono" s={14} w={600} c={t.colors.accentSoft}>
+              <Txt f="mono" s={font.body} w={600} c={t.colors.accentSoft}>
                 {card.ipa}
               </Txt>
             ) : null}
-            <Txt s={13} w={600} c={t.colors.textDim}>
+            <Txt s={font.footnote} w={600} c={t.colors.textDim}>
               · {card.tr}
             </Txt>
           </View>
@@ -196,10 +196,10 @@ export function VocabScreen() {
         </Press>
 
         <View style={styles.block}>
-          <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.1} style={styles.blockKicker}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.1} style={styles.blockKicker}>
             TANIM
           </Txt>
-          <Txt s={13.5} lh={1.5} c={t.colors.textBright}>
+          <Txt s={font.body} lh={1.5} c={t.colors.textBright}>
             {card.definition}
           </Txt>
         </View>
@@ -209,17 +209,17 @@ export function VocabScreen() {
             gideriyor hem ikinci anlamı öğretiyor. */}
         {senses.length ? (
           <View style={styles.senses}>
-            <Txt f="mono" s={9.5} w={700} c={t.colors.textDisabled} ls={0.12}>
+            <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.12}>
               AYNI YAZILIŞ, BAŞKA ANLAM
             </Txt>
             {senses.map((sense) => (
               <Txt
                 key={`${sense.pos}-${sense.cefr}`}
-                s={12.5}
+                s={font.footnote}
                 lh={1.5}
                 c={t.colors.textDim}
                 style={styles.senseRow}>
-                <Txt f="m" s={12.5} w={700} c={t.colors.violetSoft}>
+                <Txt f="m" s={font.footnote} w={700} c={t.colors.violetSoft}>
                   {sense.pos.toLocaleLowerCase('tr-TR')}
                 </Txt>
                 {`  ${sense.tr}  ·  ${sense.cefr}`}
@@ -235,13 +235,13 @@ export function VocabScreen() {
             accessibilityState={{ selected: speaking === 'example' }}
             accessibilityLabel="Örnek cümleyi dinle"
             style={styles.blockKickerRow}>
-            <Txt f="mono" s={10} w={700} c={t.colors.blueSoft} ls={0.1}>
+            <Txt f="mono" s={font.label} w={700} c={t.colors.blueSoft} ls={0.1}>
               ÖRNEK
             </Txt>
-            <Txt s={12}>🔊</Txt>
+            <Txt s={font.caption}>🔊</Txt>
           </Press>
           <Example sentence={card.example} word={card.word} />
-          <Txt s={12} c={t.colors.textDim} style={styles.exampleTr}>
+          <Txt s={font.caption} c={t.colors.textDim} style={styles.exampleTr}>
             {card.exampleTr}
           </Txt>
         </View>
@@ -270,15 +270,15 @@ function Example({ sentence, word }: { sentence: string; word: string }) {
   const at = sentence.toLowerCase().indexOf(word.toLowerCase());
   if (at < 0) {
     return (
-      <Txt s={14} w={600} lh={1.5}>
+      <Txt s={font.body} w={600} lh={1.5}>
         {sentence}
       </Txt>
     );
   }
   return (
-    <Txt s={14} w={600} lh={1.5}>
+    <Txt s={font.body} w={600} lh={1.5}>
       {sentence.slice(0, at)}
-      <Txt s={14} w={600} c={t.colors.accent}>
+      <Txt s={font.body} w={600} c={t.colors.accent}>
         {sentence.slice(at, at + word.length)}
       </Txt>
       {sentence.slice(at + word.length)}
@@ -313,29 +313,29 @@ const makeStyles = (t: Theme) =>
     audioBtn: { backgroundColor: tint(t.colors.primary, 0.16), borderColor: tint(t.colors.primary, 0.35) },
     posLine: { marginTop: -2 },
     senses: {
-      gap: 5,
-      padding: 13,
+      gap: 6,
+      padding: 14,
       borderRadius: radii.input,
       borderWidth: 1,
       borderColor: tint(t.colors.secondary, 0.25),
       backgroundColor: tint(t.colors.secondary, 0.08),
     },
-    senseRow: { marginTop: 1 },
+    senseRow: { marginTop: 2 },
     pos: {
       alignSelf: 'flex-start',
-      paddingVertical: 5,
+      paddingVertical: 6,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
       backgroundColor: tint(t.colors.secondary, 0.18),
       borderWidth: 1,
       borderColor: tint(t.colors.secondary, 0.32),
     },
-    ipaRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 5 },
-    block: { backgroundColor: t.alpha.w04, borderRadius: radii.input, padding: 13 },
-    blockKicker: { marginBottom: 5 },
-    blockKickerRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 5 },
+    ipaRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 6 },
+    block: { backgroundColor: t.alpha.w04, borderRadius: radii.input, padding: 14 },
+    blockKicker: { marginBottom: 6 },
+    blockKickerRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 6 },
     exampleBlock: { backgroundColor: tint(t.colors.primary, 0.1) },
     exampleTr: { marginTop: 4 },
     actions: { flexDirection: 'row', gap: 10 },
-    stats: { flexDirection: 'row', gap: 9 },
+    stats: { flexDirection: 'row', gap: 10 },
   });

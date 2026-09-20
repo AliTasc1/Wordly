@@ -1,6 +1,6 @@
 /** Game hub, Harf Arenası and the AI coach. */
 
-import { colors } from '../theme/tokens';
+import type { ColorRole } from '../theme/palette';
 import type { ScreenId } from '../navigation/routes';
 
 /*
@@ -15,10 +15,10 @@ import type { ScreenId } from '../navigation/routes';
 */
 
 /** Modların görünüşü. Kural `content/arena-game.ts` içinde; burası yalnızca simge ve renk. */
-export const ARENA_GLYPH: Record<string, { glyph: string; tint: string }> = {
-  time: { glyph: '⚡', tint: colors.accent },
-  survival: { glyph: '🛡', tint: colors.secondary },
-  solo: { glyph: '🎯', tint: colors.success },
+export const ARENA_GLYPH: Record<string, { glyph: string; tint: ColorRole }> = {
+  time: { glyph: '⚡', tint: 'accent' },
+  survival: { glyph: '🛡', tint: 'secondary' },
+  solo: { glyph: '🎯', tint: 'success' },
 };
 
 export const PLAY_HERO = {

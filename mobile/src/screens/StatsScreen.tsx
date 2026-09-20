@@ -8,7 +8,7 @@ import { BackButton, Press } from '../components/Buttons';
 import { Card } from '../components/Surfaces';
 import { ColumnChart, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { deckProgress, tr } from '../content/progress';
 import { weekStats } from '../content/stats';
 import { useApp } from '../state/AppContext';
@@ -40,14 +40,14 @@ export function StatsScreen() {
   const max = Math.max(...week.bars.map((b) => b.value), 1);
 
   return (
-    <Screen tabbed padTop={62} gap={13}>
+    <Screen tabbed padTop={62} gap={14}>
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View>
-          <Txt f="m" s={17} w={800}>
+          <Txt f="m" s={font.title} w={800}>
             Gelişim analizi
           </Txt>
-          <Txt s={11} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             Son 7 gün
           </Txt>
         </View>
@@ -55,15 +55,15 @@ export function StatsScreen() {
 
       <Card>
         <View style={styles.weekHead}>
-          <Txt f="m" s={14} w={700}>
+          <Txt f="m" s={font.body} w={700}>
             Haftalık XP
           </Txt>
-          <Txt f="m" s={20} w={800} c={t.colors.accent}>
+          <Txt f="m" s={font.headline} w={800} c={t.colors.accent}>
             {tr(week.total)}{' '}
             {week.delta === null ? null : (
               <Txt
                 f="mono"
-                s={11}
+                s={font.caption}
                 w={700}
                 c={week.delta < 0 ? t.colors.errorSoft : t.colors.successSoft}>
                 {week.delta > 0 ? '+' : ''}%{week.delta}
@@ -78,31 +78,31 @@ export function StatsScreen() {
 
       <View style={styles.cards}>
         <View style={styles.smallCard}>
-          <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.1}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.1}>
             EN İYİ GÜN
           </Txt>
-          <Txt f="m" s={17} w={800} style={styles.smallValue}>
+          <Txt f="m" s={font.title} w={800} style={styles.smallValue}>
             {week.best ? week.best.name : '—'}
           </Txt>
-          <Txt s={11} c={t.colors.textDim}>
+          <Txt s={font.caption} c={t.colors.textDim}>
             {week.best ? `${tr(week.best.value)} XP` : 'Bu hafta henüz XP yok'}
           </Txt>
         </View>
         <View style={styles.smallCard}>
-          <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.1}>
+          <Txt f="mono" s={font.label} w={700} c={t.colors.textFaint} ls={0.1}>
             GÜNLÜK ORTALAMA
           </Txt>
-          <Txt f="m" s={17} w={800} style={styles.smallValue}>
+          <Txt f="m" s={font.title} w={800} style={styles.smallValue}>
             {tr(week.average)} XP
           </Txt>
-          <Txt s={11} c={t.colors.textDim}>
+          <Txt s={font.caption} c={t.colors.textDim}>
             7 günün {week.activeDays}'inde çalıştın
           </Txt>
         </View>
       </View>
 
-      <Card gap={11}>
-        <Txt f="m" s={14} w={700}>
+      <Card gap={12}>
+        <Txt f="m" s={font.body} w={700}>
           {cefr} seviyesinde ilerleme
         </Txt>
         {/* Yüzde, o bölümde görülen kart/ders sayısının seviyedeki toplama
@@ -122,19 +122,19 @@ export function StatsScreen() {
 
       <Press onPress={() => go('coach')} scale={0.99} style={styles.mistakes}>
         <View style={styles.mistakeIcon}>
-          <Txt s={17}>📕</Txt>
+          <Txt s={font.title}>📕</Txt>
         </View>
         <View style={styles.flex}>
-          <Txt f="m" s={13.5} w={700}>
+          <Txt f="m" s={font.body} w={700}>
             Hata defteri
           </Txt>
-          <Txt s={11.5} c={t.colors.textDim}>
+          <Txt s={font.caption} c={t.colors.textDim}>
             {mistakeCount
               ? `${tr(mistakeCount)} yanlış · ${Object.keys(mistakes).length} soru`
               : 'Henüz yanlışın yok'}
           </Txt>
         </View>
-        <Txt f="m" s={11} w={800} c={t.colors.errorSoft}>
+        <Txt f="m" s={font.caption} w={800} c={t.colors.errorSoft}>
           {mistakeCount ? 'TEKRAR ET' : 'AÇ'}
         </Txt>
       </Press>
@@ -165,7 +165,7 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: tint(t.colors.error, 0.28),
       borderRadius: radii.tile,
-      padding: 15,
+      padding: 16,
     },
     mistakeIcon: {
       width: 40,

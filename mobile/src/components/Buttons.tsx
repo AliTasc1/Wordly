@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
-import { HIT_SLOP } from '../theme/tokens';
+import { HIT_SLOP, font } from '../theme/tokens';
 
 type Base = {
   onPress?: () => void;
@@ -163,7 +163,7 @@ export function BackButton({
         },
         style,
       ]}>
-      <Txt f="m" s={16} w={700}>
+      <Txt f="m" s={font.callout} w={700}>
         ‹
       </Txt>
     </Press>
@@ -186,7 +186,7 @@ export function TinyButton({
     <Press
       onPress={onPress}
       style={[styles.tiny, { backgroundColor: bg }, style]}>
-      <Txt f="m" s={11.5} w={800} c={color}>
+      <Txt f="m" s={font.caption} w={800} c={color}>
         {label}
       </Txt>
     </Press>
@@ -198,7 +198,7 @@ const makeStyles = (t: Theme) =>
     center: { alignItems: 'center', justifyContent: 'center' },
     tiny: {
       paddingVertical: 10,
-      paddingHorizontal: 13,
+      paddingHorizontal: 14,
       borderRadius: 12,
       alignItems: 'center',
       justifyContent: 'center',

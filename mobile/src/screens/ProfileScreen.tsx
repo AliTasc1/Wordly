@@ -9,7 +9,7 @@ import { Press } from '../components/Buttons';
 import { Card, Pill, StatTile } from '../components/Surfaces';
 import { ProgressBar, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { displayNameOf, initialOf, memberText } from '../content/identity';
 import { achievementsOf, facts, summarize } from '../content/achievements';
 import { useAuth } from '../state/AuthContext';
@@ -68,7 +68,7 @@ export function ProfileScreen() {
             accessibilityRole="button"
             accessibilityLabel="Ayarlar"
             style={styles.settingsBtn}>
-            <Txt s={15}>⚙</Txt>
+            <Txt s={font.callout}>⚙</Txt>
           </Press>
         </View>
 
@@ -78,16 +78,16 @@ export function ProfileScreen() {
             Üyelik süresi ise gerçekten hesaplanabiliyor. */}
         <View style={styles.identity}>
           <Gradient colors={t.gradients.violetCyan} style={styles.avatar}>
-            <Txt f="m" s={32} w={800}>
+            <Txt f="m" s={font.giant} w={800}>
               {initialOf(name)}
             </Txt>
           </Gradient>
 
           <View style={styles.flex}>
-            <Txt f="m" s={23} w={800}>
+            <Txt f="m" s={font.display} w={800}>
               {name}
             </Txt>
-            <Txt s={12} w={600} c={t.colors.textSubtle} style={styles.handle}>
+            <Txt s={font.caption} w={600} c={t.colors.textSubtle} style={styles.handle}>
               {memberText(user?.created_at)}
             </Txt>
             <View style={styles.pills}>
@@ -104,10 +104,10 @@ export function ProfileScreen() {
 
         <View style={styles.xpCard}>
           <View style={styles.xpHead}>
-            <Txt f="mono" s={11.5} w={700} c={t.colors.textSubtle}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.textSubtle}>
               TOPLAM XP
             </Txt>
-            <Txt f="mono" s={11.5} w={700} c={t.colors.accent}>
+            <Txt f="mono" s={font.caption} w={700} c={t.colors.accent}>
               {tr(xp)} / {tr(nextMark)} XP
             </Txt>
           </View>
@@ -119,7 +119,7 @@ export function ProfileScreen() {
             track={t.alpha.w10}
             glow={t.shadows.glowCyanSoft}
           />
-          <Txt s={11} c={t.colors.textDim}>
+          <Txt s={font.caption} c={t.colors.textDim}>
             Bir sonraki bine {tr(nextMark - xp)} XP kaldı.
           </Txt>
         </View>
@@ -139,8 +139,8 @@ export function ProfileScreen() {
           ))}
         </View>
 
-        <Card gap={11}>
-          <Txt f="m" s={14} w={700}>
+        <Card gap={12}>
+          <Txt f="m" s={font.body} w={700}>
             {cefr} seviyesinde ilerleme
           </Txt>
           {decks.map((deck) => (
@@ -163,27 +163,27 @@ export function ProfileScreen() {
         <Press onPress={() => go('achv')} scale={0.99} style={styles.navRow}>
           <View style={styles.badgeStack}>
             <View style={[styles.badge, styles.badgeWarm]}>
-              <Txt s={16}>🔥</Txt>
+              <Txt s={font.callout}>🔥</Txt>
             </View>
             <View style={[styles.badge, styles.badgeViolet, styles.badgeOverlap]}>
-              <Txt s={16}>🏅</Txt>
+              <Txt s={font.callout}>🏅</Txt>
             </View>
             <View style={[styles.badge, styles.badgeCyan, styles.badgeOverlap]}>
               {/* Kılıç rozeti düelloyu simgeliyordu; düello yok. */}
-              <Txt s={16}>📓</Txt>
+              <Txt s={font.callout}>📓</Txt>
             </View>
           </View>
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               Başarımlar
             </Txt>
-            <Txt s={11.5} c={t.colors.textDim}>
+            <Txt s={font.caption} c={t.colors.textDim}>
               {/* "14 / 48" sabit yazılıydı; başarım hesabı gerçek olduğu
                   hâlde bu satır uydurma bir sayı gösteriyordu. */}
               {badges.unlocked} / {badges.total} açıldı
             </Txt>
           </View>
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             ›
           </Txt>
         </Press>
@@ -192,34 +192,34 @@ export function ProfileScreen() {
             ana sayfadaki şerit de duruyor. */}
         <Press onPress={() => go('board')} scale={0.99} style={styles.navRow}>
           <View style={[styles.badge, styles.badgeWarm]}>
-            <Txt s={16}>🏆</Txt>
+            <Txt s={font.callout}>🏆</Txt>
           </View>
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               Haftalık liderlik
             </Txt>
-            <Txt s={11.5} c={t.colors.textDim}>
+            <Txt s={font.caption} c={t.colors.textDim}>
               Katılanların bu hafta kazandığı XP
             </Txt>
           </View>
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             ›
           </Txt>
         </Press>
 
         <Press onPress={() => go('stats')} scale={0.99} style={styles.navRow}>
           <View style={[styles.badge, styles.badgeBlue]}>
-            <Txt s={16}>📈</Txt>
+            <Txt s={font.callout}>📈</Txt>
           </View>
           <View style={styles.flex}>
-            <Txt f="m" s={13.5} w={700}>
+            <Txt f="m" s={font.body} w={700}>
               Gelişim analizi
             </Txt>
-            <Txt s={11.5} c={t.colors.textDim}>
+            <Txt s={font.caption} c={t.colors.textDim}>
               Haftalık rapor hazır
             </Txt>
           </View>
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             ›
           </Txt>
         </Press>
@@ -243,7 +243,7 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       justifyContent: 'center',
     },
-    identity: { flexDirection: 'row', alignItems: 'center', gap: 15 },
+    identity: { flexDirection: 'row', alignItems: 'center', gap: 16 },
     avatar: {
       width: 84,
       height: 84,
@@ -253,20 +253,20 @@ const makeStyles = (t: Theme) =>
       boxShadow: t.shadows.avatar,
     },
     handle: { marginTop: 2 },
-    pills: { flexDirection: 'row', gap: 7, marginTop: 9 },
-    pill: { paddingVertical: 5, paddingHorizontal: 9 },
+    pills: { flexDirection: 'row', gap: 8, marginTop: 10 },
+    pill: { paddingVertical: 6, paddingHorizontal: 10 },
     xpCard: {
       backgroundColor: t.alpha.black28,
       borderWidth: 1,
       borderColor: t.alpha.w10,
       borderRadius: radii.panel,
-      padding: 13,
+      padding: 14,
       gap: 8,
     },
     xpHead: { flexDirection: 'row', justifyContent: 'space-between' },
-    body: { paddingTop: 4, paddingHorizontal: 18, gap: 13 },
-    stats: { flexDirection: 'row', gap: 9 },
-    statTile: { borderRadius: radii.panel, padding: 13 },
+    body: { paddingTop: 4, paddingHorizontal: 18, gap: 14 },
+    stats: { flexDirection: 'row', gap: 10 },
+    statTile: { borderRadius: radii.panel, padding: 14 },
     duelStats: {
       borderWidth: 1,
       borderColor: tint(t.colors.error, 0.26),
@@ -289,7 +289,7 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
       borderColor: t.alpha.w08,
       borderRadius: radii.tile,
-      padding: 15,
+      padding: 16,
     },
     badgeStack: { flexDirection: 'row' },
     badge: {

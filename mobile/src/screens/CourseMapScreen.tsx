@@ -8,7 +8,7 @@ import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { CEFR } from '../data/curriculum';
 import { useApp } from '../state/AppContext';
@@ -44,15 +44,15 @@ export function CourseMapScreen() {
       <View style={styles.header}>
         <BackButton onPress={back} />
         <View>
-          <Txt f="m" s={19} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             {CEFR[cefr].title}
           </Txt>
-          <Txt s={11.5} w={600} c={t.colors.textDim}>
+          <Txt s={font.caption} w={600} c={t.colors.textDim}>
             {at}/{lessons.length} ders
           </Txt>
         </View>
         <View style={styles.pct}>
-          <Txt f="mono" s={11} w={700} c={t.colors.accentSoft}>
+          <Txt f="mono" s={font.caption} w={700} c={t.colors.accentSoft}>
             %{progress}
           </Txt>
         </View>
@@ -93,10 +93,10 @@ export function CourseMapScreen() {
                   onPress={() => open(i)}
                 />
                 <View style={[styles.label, { alignItems: left ? 'flex-start' : 'flex-end' }]}>
-                  <Txt f="m" s={13} w={700}>
+                  <Txt f="m" s={font.footnote} w={700}>
                     {lesson.title}
                   </Txt>
-                  <Txt s={11} c={t.colors.textDim}>
+                  <Txt s={font.caption} c={t.colors.textDim}>
                     {kind === 'done'
                       ? 'Bitti'
                       : kind === 'now'
@@ -130,14 +130,14 @@ function NodeButton({
     <>
       <Txt
         f="m"
-        s={15}
+        s={font.callout}
         w={800}
         c={kind === 'done' ? t.colors.successSoft : kind === 'lock' ? t.colors.textGhost : t.colors.text}>
         {icon}
       </Txt>
       <Txt
         f="mono"
-        s={10}
+        s={font.label}
         w={700}
         ls={0.06}
         c={kind === 'done' ? t.colors.successSoft : kind === 'lock' ? t.colors.textGhost : t.colors.text}>
@@ -179,7 +179,7 @@ const makeStyles = (t: Theme) =>
     pct: {
       marginLeft: 'auto',
       paddingVertical: 6,
-      paddingHorizontal: 11,
+      paddingHorizontal: 12,
       borderRadius: radii.chip,
       backgroundColor: tint(t.colors.accent, 0.14),
       borderWidth: 1,
@@ -204,7 +204,7 @@ const makeStyles = (t: Theme) =>
       borderColor: tint(t.colors.success, 0.36),
     },
     nodeNow: { borderWidth: 1, borderColor: t.alpha.w20, boxShadow: t.shadows.node },
-    nodeNext: { backgroundColor: t.colors.surfaceHigh, borderWidth: 1, borderColor: t.alpha.w14 },
+    nodeNext: { backgroundColor: t.colors.raised, borderWidth: 1, borderColor: t.alpha.w14 },
     nodeLock: {
       backgroundColor: t.alpha.w03,
       borderWidth: 1,

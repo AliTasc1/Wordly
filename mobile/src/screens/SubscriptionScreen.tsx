@@ -7,7 +7,7 @@ import { BackButton } from '../components/Buttons';
 import { Notice } from '../components/Notice';
 import { ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { radii } from '../theme/tokens';
+import { font, radii } from '../theme/tokens';
 import { useBack } from '../navigation/useGo';
 
 /**
@@ -53,10 +53,10 @@ export function SubscriptionScreen() {
       />
 
       <View style={styles.card}>
-        <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.14}>
           AÇIK OLANLAR
         </Txt>
-        <Txt s={13} lh={1.7} c={t.colors.textSubtle}>
+        <Txt s={font.footnote} lh={1.7} c={t.colors.textSubtle}>
           · Altı seviyenin tamamı (A1–C2){'\n'}· Kelime, gramer, okuma, dinleme, konuşma,
           yazma{'\n'}· Günlük ve oyun turu sınırı yok{'\n'}· İstatistikler, başarımlar ve
           hata defteri{'\n'}· Çevrimdışı çalışma{'\n'}· Hesap ve cihazlar arası eşitleme
@@ -64,14 +64,14 @@ export function SubscriptionScreen() {
       </View>
 
       <View style={styles.card}>
-        <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
+        <Txt f="mono" s={font.label} w={700} c={t.colors.textDisabled} ls={0.14}>
           HENÜZ YAPILMADI
         </Txt>
-        <Txt s={13} lh={1.7} c={t.colors.textSubtle}>
+        <Txt s={font.footnote} lh={1.7} c={t.colors.textSubtle}>
           · Telaffuz puanlama{'\n'}· Yazma ve konuşmaya serbest geri bildirim{'\n'}·
           Arkadaş, kulüp ve düello
         </Txt>
-        <Txt s={12} lh={1.55} c={t.colors.textFaint} style={styles.note}>
+        <Txt s={font.caption} lh={1.55} c={t.colors.textFaint} style={styles.note}>
           Bunlar ileride ücretli olabilir. Olduğunda burada yazacak — önceden para isteyip
           sonra vermek olmaz.
         </Txt>

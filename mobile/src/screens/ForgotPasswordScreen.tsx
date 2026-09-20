@@ -10,6 +10,7 @@ import { Txt } from '../components/Txt';
 import { emailProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
+import { font } from '../theme/tokens';
 
 /**
  * Şifremi unuttum.
@@ -64,12 +65,12 @@ export function ForgotPasswordScreen() {
         ]}>
         <View style={styles.header}>
           <BackButton onPress={back} />
-          <Txt f="m" s={20} w={800}>
+          <Txt f="m" s={font.headline} w={800}>
             Şifremi unuttum
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
+        <Txt s={font.body} lh={1.55} c={t.colors.textDim}>
           E-posta adresini yaz; şifreni yenilemen için bir bağlantı gönderelim.
         </Txt>
 
@@ -116,7 +117,7 @@ export function ForgotPasswordScreen() {
           onPress={() => go('signin')}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt f="m" s={13} w={700} c={t.colors.link}>
+          <Txt f="m" s={font.footnote} w={700} c={t.colors.link}>
             Giriş ekranına dön
           </Txt>
         </Press>
