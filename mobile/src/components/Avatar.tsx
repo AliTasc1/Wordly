@@ -1,8 +1,9 @@
 import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
-import { colors } from '../theme/tokens';
 
 /**
  * `av(c1, c2, size)` from the design — a gradient disc with initials,
@@ -24,6 +25,7 @@ export function Avatar({
   radius?: number;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
   return (
     <Gradient
       colors={[from, to]}
@@ -37,7 +39,7 @@ export function Avatar({
         },
         style,
       ]}>
-      <Txt f="m" s={size / 2.4} w={700} c={colors.text}>
+      <Txt f="m" s={size / 2.4} w={700} c={t.colors.text}>
         {initials}
       </Txt>
     </Gradient>
@@ -45,7 +47,8 @@ export function Avatar({
 }
 
 /** Online/offline dot anchored to an avatar's corner. */
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   dot: {
     position: 'absolute',
     bottom: -1,

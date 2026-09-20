@@ -1,29 +1,36 @@
 import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import type { OptionState } from '../state/useQuiz';
 
-/** `opt(state)` from the design logic. */
-export function optionStyle(state: OptionState): ViewStyle {
+/**
+ * `opt(state)` from the design logic.
+ *
+ * Tema parametre olarak geliyor: bu bir bileşen değil, saf bir eşleme.
+ * Kanca çağıramaz ve çağırsa da React kuralları gereği yanlış olurdu.
+ */
+export function optionStyle(state: OptionState, t: Theme): ViewStyle {
   switch (state) {
     case 'ok':
-      return { backgroundColor: 'rgba(34,197,94,.14)', borderColor: colors.success };
+      return { backgroundColor: 'rgba(34,197,94,.14)', borderColor: t.colors.success };
     case 'bad':
-      return { backgroundColor: 'rgba(255,77,94,.14)', borderColor: colors.error };
+      return { backgroundColor: 'rgba(255,77,94,.14)', borderColor: t.colors.error };
     case 'off':
-      return { backgroundColor: colors.surface, borderColor: alpha.w06, opacity: 0.5 };
+      return { backgroundColor: t.colors.surface, borderColor: t.alpha.w06, opacity: 0.5 };
     default:
-      return { backgroundColor: colors.surface, borderColor: alpha.w09 };
+      return { backgroundColor: t.colors.surface, borderColor: t.alpha.w09 };
   }
 }
 
 /** Border colour of the A/B/C/D badge, which tracks the option state. */
-function badgeBorder(state: OptionState) {
+function badgeBorder(state: OptionState, t: Theme) {
   if (state === 'ok') return 'rgba(34,197,94,.3)';
   if (state === 'bad') return 'rgba(255,77,94,.3)';
-  return alpha.w10;
+  return t.alpha.w10;
 }
 
 export function QuizOption({
@@ -42,14 +49,16 @@ export function QuizOption({
   badge?: string;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <Press
       onPress={onPress}
       scale={0.99}
       accessibilityRole="button"
-      style={[styles.option, optionStyle(state), style]}>
+      style={[styles.option, optionStyle(state, t), style]}>
       {badge ? (
-        <View style={[styles.badge, { borderColor: badgeBorder(state) }]}>
+        <View style={[styles.badge, { borderColor: badgeBorder(state, t) }]}>
           <Txt f="mono" s={11} w={700}>
             {badge}
           </Txt>
@@ -81,6 +90,8 @@ export function AnswerFeedback({
   noteSize?: number;
   radius?: number;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View
       style={[
@@ -90,13 +101,13 @@ export function AnswerFeedback({
           ? { backgroundColor: 'rgba(34,197,94,.14)', borderColor: 'rgba(34,197,94,.36)' }
           : { backgroundColor: 'rgba(255,77,94,.13)', borderColor: 'rgba(255,77,94,.34)' },
       ]}>
-      <Txt f="m" s={titleSize} w={800} c={correct ? colors.successText : colors.errorText}>
+      <Txt f="m" s={titleSize} w={800} c={correct ? t.colors.successText : t.colors.errorText}>
         {title}
       </Txt>
       <Txt
         s={noteSize}
         lh={1.5}
-        c={correct ? colors.successText : colors.errorText}
+        c={correct ? t.colors.successText : t.colors.errorText}
         style={styles.note}>
         {note}
       </Txt>
@@ -104,7 +115,8 @@ export function AnswerFeedback({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   option: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -117,7 +129,7 @@ const styles = StyleSheet.create({
     width: 26,
     height: 26,
     borderRadius: 8,
-    backgroundColor: alpha.w07,
+    backgroundColor: t.alpha.w07,
     borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',

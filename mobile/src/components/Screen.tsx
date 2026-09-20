@@ -1,3 +1,5 @@
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import React, { useState } from 'react';
 import {
   LayoutChangeEvent,
@@ -10,7 +12,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Glow, GlowSpec } from './Glow';
 import { Gradient } from './Gradient';
-import { alpha, colors, spacing } from '../theme/tokens';
+import { spacing } from '../theme/tokens';
 
 type Props = {
   children: React.ReactNode;
@@ -61,6 +63,8 @@ export function Screen({
   background,
   footer,
 }: Props) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const insets = useSafeAreaInsets();
   const paddingTop = Math.max(padTop, insets.top + 8);
 
@@ -114,7 +118,7 @@ export function Screen({
               olduğunu da gösteriyor. */}
           <Gradient
             deg={180}
-            colors={['rgba(7,10,20,0)', colors.bg, colors.bg]}
+            colors={['rgba(7,10,20,0)', t.colors.bg, t.colors.bg]}
             locations={[0, 0.45, 1]}
             style={styles.footerWash}
           />
@@ -125,11 +129,18 @@ export function Screen({
   );
 }
 
-/** `flex:1` spacer — the design's `<div style="flex:1"></div>`. */
-export const Spacer = () => <View style={styles.fill} />;
+/**
+ * `flex:1` boşluk.
+ *
+ * Temasız: yalnızca yer kaplıyor, hiçbir rengi yok. Stil sayfası temaya
+ * bağlandığı için buradan erişilemiyor ve bir kanca çağırmak yalnızca
+ * `flex: 1` için abartı olurdu.
+ */
+export const Spacer = () => <View style={{ flex: 1 }} />;
 
-const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: colors.bg },
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+  root: { flex: 1, backgroundColor: t.colors.bg },
   fill: { flex: 1 },
   grow: { flexGrow: 1 },
   footer: {
@@ -139,7 +150,7 @@ const styles = StyleSheet.create({
     paddingTop: 14,
     gap: 10,
     borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: alpha.w06,
+    borderTopColor: t.alpha.w06,
   },
   // Geçiş çubuğun üstüne taşıyor: kesme çizgisi çubuğun kendi sınırında
   // değil, ondan 18 piksel yukarıda başlıyor.

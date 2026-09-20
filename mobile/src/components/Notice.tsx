@@ -1,27 +1,40 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { Txt } from './Txt';
-import { colors, radii } from '../theme/tokens';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
+import { radii } from '../theme/tokens';
+import { tint } from '../theme/tint';
 
 export type NoticeTone = 'error' | 'ok' | 'info';
 
-const TONES: Record<NoticeTone, { border: string; fill: string; text: string }> = {
-  error: {
-    border: 'rgba(255,77,94,.42)',
-    fill: 'rgba(255,77,94,.10)',
-    text: colors.errorTint,
-  },
-  ok: {
-    border: 'rgba(34,197,94,.42)',
-    fill: 'rgba(34,197,94,.10)',
-    text: colors.successText,
-  },
-  info: {
-    border: 'rgba(34,211,238,.38)',
-    fill: 'rgba(34,211,238,.09)',
-    text: colors.accentSoft,
-  },
-};
+/**
+ * Tonun kenarı, dolgusu ve yazı rengi.
+ *
+ * Sabit bir tabloydu ve dolgular koyu temaya göre elle yazılmıştı
+ * (`rgba(255,77,94,.10)` gibi). Açık temada o değerler beyaz zeminde
+ * neredeyse görünmez kalıyordu. Artık dolgu, tonun kendi renginden
+ * türetiliyor: hangi temada olursa olsun aynı işi görüyor.
+ */
+function tonesOf(t: Theme): Record<NoticeTone, { border: string; fill: string; text: string }> {
+  return {
+    error: {
+      border: tint(t.colors.error, 0.42),
+      fill: tint(t.colors.error, t.dark ? 0.1 : 0.07),
+      text: t.colors.errorTint,
+    },
+    ok: {
+      border: tint(t.colors.success, 0.42),
+      fill: tint(t.colors.success, t.dark ? 0.1 : 0.07),
+      text: t.colors.successText,
+    },
+    info: {
+      border: tint(t.colors.accent, 0.38),
+      fill: tint(t.colors.accent, t.dark ? 0.09 : 0.07),
+      text: t.colors.accentSoft,
+    },
+  };
+}
 
 /**
  * Ekranın söylemek zorunda olduğu tek cümlelik durum.
@@ -39,14 +52,16 @@ export function Notice({
   text: string;
   detail?: string;
 }) {
-  const t = TONES[tone];
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
+  const look = tonesOf(t)[tone];
   return (
-    <View style={[styles.box, { borderColor: t.border, backgroundColor: t.fill }]}>
-      <Txt f="m" s={13} w={700} lh={1.45} c={t.text}>
+    <View style={[styles.box, { borderColor: look.border, backgroundColor: look.fill }]}>
+      <Txt f="m" s={13} w={700} lh={1.45} c={look.text}>
         {text}
       </Txt>
       {detail ? (
-        <Txt s={11.5} lh={1.45} c={colors.textGhost}>
+        <Txt s={11.5} lh={1.45} c={t.colors.textGhost}>
           {detail}
         </Txt>
       ) : null}
@@ -54,7 +69,8 @@ export function Notice({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   box: {
     borderWidth: 1,
     borderRadius: radii.input,

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TextProps, TextStyle } from 'react-native';
-import { colors } from '../theme/tokens';
+import { useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { jakarta, JakartaWeight, manrope, ManropeWeight, mono } from '../theme/typography';
 
 type Family = 'm' | 'j' | 'mono';
@@ -24,7 +25,11 @@ export type TxtProps = TextProps & {
  * Text with the design's CSS font shorthand mapped onto props, so
  * `font:800 17px Manrope` reads as `<Txt f="m" s={17} w={800}>`.
  */
-export function Txt({ f = 'j', s = 13, w, c = colors.text, lh, ls, style, ...rest }: TxtProps) {
+export function Txt({ f = 'j', s = 13, w, c, lh, ls, style, ...rest }: TxtProps) {
+  const t = useTheme();
+  // Varsayılan renk temadan geliyor; parametre listesinde duramaz, orada
+  // `t` henüz tanımlı değil.
+  c ??= t.colors.text;
   let base: TextStyle;
   if (f === 'm') base = manrope(s, (w ?? 800) as ManropeWeight);
   else if (f === 'mono') base = mono(s, String(w ?? 700) as '600' | '700' | '800');

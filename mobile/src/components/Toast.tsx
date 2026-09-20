@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { Animated, Easing, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
-import { colors, gradients, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { useApp } from '../state/AppContext';
 
 /**
@@ -11,6 +13,8 @@ import { useApp } from '../state/AppContext';
  * (10px rise + fade over 300ms).
  */
 export function ToastHost() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { toast } = useApp();
   const insets = useSafeAreaInsets();
   const anim = useRef(new Animated.Value(0)).current;
@@ -41,7 +45,7 @@ export function ToastHost() {
         },
       ]}>
       <View style={styles.card}>
-        <Gradient colors={gradients.cyan} deg={135} style={styles.icon}>
+        <Gradient colors={t.gradients.cyan} deg={135} style={styles.icon}>
           <Txt f="m" s={14} w={800}>
             ✓
           </Txt>
@@ -50,7 +54,7 @@ export function ToastHost() {
           <Txt f="m" s={13.5} w={800}>
             {toast.title}
           </Txt>
-          <Txt s={11.5} c={colors.textMuted}>
+          <Txt s={11.5} c={t.colors.textMuted}>
             {toast.note}
           </Txt>
         </View>
@@ -59,7 +63,8 @@ export function ToastHost() {
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   wrap: { position: 'absolute', left: 18, right: 18, zIndex: 90 },
   card: {
     backgroundColor: 'rgba(11,17,34,.94)',
@@ -71,7 +76,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 11,
-    boxShadow: shadows.toast,
+    boxShadow: t.shadows.toast,
   },
   icon: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
   body: { flex: 1 },

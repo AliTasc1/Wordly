@@ -1,3 +1,5 @@
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import React from 'react';
 import {
   Pressable,
@@ -9,7 +11,7 @@ import {
 } from 'react-native';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
-import { alpha, colors, gradients, HIT_SLOP, shadows } from '../theme/tokens';
+import { HIT_SLOP } from '../theme/tokens';
 
 type Base = {
   onPress?: () => void;
@@ -48,8 +50,8 @@ export function PrimaryButton({
   height = 56,
   radius = 18,
   size = 16.5,
-  colorsPair = gradients.brand,
-  shadow = shadows.ctaBrand,
+  colorsPair,
+  shadow,
   style,
 }: Base & {
   label: string;
@@ -59,15 +61,19 @@ export function PrimaryButton({
   colorsPair?: readonly [string, string, ...string[]];
   shadow?: string;
 }) {
+  const t = useTheme();
+  colorsPair ??= t.gradients.brand;
+  shadow ??= t.shadows.ctaBrand;
+  const styles = useStyles(makeStyles);
   if (disabled) {
     return (
       <View
         style={[
           styles.center,
-          { height, borderRadius: radius, backgroundColor: alpha.w06 },
+          { height, borderRadius: radius, backgroundColor: t.alpha.w06 },
           style,
         ]}>
-        <Txt f="m" s={size} w={800} c={colors.textDisabled}>
+        <Txt f="m" s={size} w={800} c={t.colors.textDisabled}>
           {label}
         </Txt>
       </View>
@@ -93,9 +99,9 @@ export function GhostButton({
   height = 48,
   radius = 16,
   size = 14,
-  color = colors.textSubtle,
+  color,
   fill = 'transparent',
-  border = alpha.w12,
+  border,
   style,
 }: Base & {
   label: string;
@@ -106,6 +112,10 @@ export function GhostButton({
   fill?: string;
   border?: string;
 }) {
+  const t = useTheme();
+  color ??= t.colors.textSubtle;
+  border ??= t.alpha.w12;
+  const styles = useStyles(makeStyles);
   return (
     <Press
       onPress={onPress}
@@ -134,6 +144,8 @@ export function BackButton({
   strong = false,
   style,
 }: Base & { size?: number; strong?: boolean }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <Press
       onPress={onPress}
@@ -146,8 +158,8 @@ export function BackButton({
           height: size,
           borderRadius: 12,
           borderWidth: 1,
-          borderColor: strong ? alpha.w14 : alpha.w10,
-          backgroundColor: strong ? alpha.w07 : alpha.w04,
+          borderColor: strong ? t.alpha.w14 : t.alpha.w10,
+          backgroundColor: strong ? t.alpha.w07 : t.alpha.w04,
         },
         style,
       ]}>
@@ -162,10 +174,14 @@ export function BackButton({
 export function TinyButton({
   label,
   onPress,
-  bg = colors.primary,
-  color = colors.text,
+  bg,
+  color,
   style,
 }: Base & { label: string; bg?: string; color?: string }) {
+  const t = useTheme();
+  bg ??= t.colors.primary;
+  color ??= t.colors.text;
+  const styles = useStyles(makeStyles);
   return (
     <Press
       onPress={onPress}
@@ -177,7 +193,8 @@ export function TinyButton({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center' },
   tiny: {
     paddingVertical: 10,

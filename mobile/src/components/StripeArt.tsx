@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { Txt } from './Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 
 let patternId = 0;
 
@@ -32,6 +34,7 @@ export function StripeArt({
   children?: React.ReactNode;
   style?: StyleProp<ViewStyle>;
 }) {
+  const styles = useStyles(makeStyles);
   const id = React.useMemo(() => `stripe-${patternId++}`, []);
   return (
     <View
@@ -66,10 +69,11 @@ export function StripeArt({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   wrap: {
     borderWidth: 1,
-    borderColor: alpha.w08,
+    borderColor: t.alpha.w08,
     overflow: 'hidden',
     alignItems: 'center',
     justifyContent: 'center',
@@ -84,6 +88,7 @@ const styles = StyleSheet.create({
 
 /** Circular striped art used by the empty states. */
 export function StripeCircle({ label, size = 104 }: { label: string; size?: number }) {
+  const t = useTheme();
   return (
     <StripeArt
       label={label}
@@ -92,7 +97,7 @@ export function StripeCircle({ label, size = 104 }: { label: string; size?: numb
       a="rgba(46,107,255,.14)"
       b="rgba(124,92,255,.07)"
       band={8}
-      style={{ width: size, borderColor: alpha.w18, borderStyle: 'dashed' }}
+      style={{ width: size, borderColor: t.alpha.w18, borderStyle: 'dashed' }}
     />
   );
 }
@@ -111,4 +116,10 @@ export const DashedRing = ({ size = 150 }: { size?: number }) => (
   />
 );
 
-export const captionColor = colors.textDim;
+/**
+ * Yer tutucu altyazısının rengi.
+ *
+ * Sabit bir dışa aktarımdı; temaya bağlanınca modül yüklenirken okunamaz
+ * oldu. Fonksiyon olarak duruyor — çağıran zaten temayı elinde tutuyor.
+ */
+export const captionColor = (t: Theme) => t.colors.textDim;

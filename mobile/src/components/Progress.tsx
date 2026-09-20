@@ -1,5 +1,7 @@
 import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import Svg, {
   Circle,
   Defs,
@@ -9,17 +11,16 @@ import Svg, {
 } from 'react-native-svg';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
-import { alpha, colors, gradients } from '../theme/tokens';
 
 /**
  * `bar(pct, c1, c2)` from the design: a rounded track with a gradient fill.
  */
 export function ProgressBar({
   pct,
-  from = gradients.progress[0],
-  to = gradients.progress[1],
+  from,
+  to,
   height = 6,
-  track = alpha.w08,
+  track,
   glow,
   style,
 }: {
@@ -32,6 +33,10 @@ export function ProgressBar({
   glow?: string;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
+  from ??= t.gradients.progress[0];
+  to ??= t.gradients.progress[1];
+  track ??= t.alpha.w08;
   return (
     <View
       style={[
@@ -74,6 +79,7 @@ export function ProgressRing({
   children?: React.ReactNode;
   style?: StyleProp<ViewStyle>;
 }) {
+  const styles = useStyles(makeStyles);
   const r = (size - thickness) / 2;
   const c = 2 * Math.PI * r;
   const filled = (Math.max(0, Math.min(100, pct)) / 100) * c;
@@ -115,18 +121,20 @@ export function ResultDonut({
   level: string;
   caption: string;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <ProgressRing
       size={148}
       thickness={12}
       pct={pct}
-      color={colors.accent}
-      track={alpha.w08}>
+      color={t.colors.accent}
+      track={t.alpha.w08}>
       <View style={styles.donutInner}>
         <Txt f="m" s={40} w={800} ls={-0.02}>
           {level}
         </Txt>
-        <Txt f="mono" s={10.5} w={600} c={colors.textDim} ls={0.1}>
+        <Txt f="mono" s={10.5} w={600} c={t.colors.textDim} ls={0.1}>
           {caption}
         </Txt>
       </View>
@@ -139,11 +147,11 @@ export function SkillBar({
   name,
   value,
   pct,
-  from = colors.primary,
-  to = colors.accent,
+  from,
+  to,
   nameWidth = 74,
   valueWidth = 34,
-  valueColor = colors.textDim,
+  valueColor,
   barHeight = 7,
 }: {
   name: string;
@@ -156,9 +164,14 @@ export function SkillBar({
   valueColor?: string;
   barHeight?: number;
 }) {
+  const t = useTheme();
+  from ??= t.colors.primary;
+  to ??= t.colors.accent;
+  valueColor ??= t.colors.textDim;
+  const styles = useStyles(makeStyles);
   return (
     <View style={styles.skillRow}>
-      <Txt s={11.5} w={600} c={colors.textSubtle} style={{ width: nameWidth }}>
+      <Txt s={11.5} w={600} c={t.colors.textSubtle} style={{ width: nameWidth }}>
         {name}
       </Txt>
       <ProgressBar pct={pct} from={from} to={to} height={barHeight} style={styles.flex} />
@@ -186,6 +199,8 @@ export function ColumnChart({
   height?: number;
   highlightFrom?: number;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View style={styles.chart}>
       {data.map((d) => (
@@ -194,7 +209,7 @@ export function ColumnChart({
             deg={180}
             colors={
               d.value >= highlightFrom
-                ? [colors.accent, colors.primary]
+                ? [t.colors.accent, t.colors.primary]
                 : ['rgba(46,107,255,.75)', 'rgba(124,92,255,.5)']
             }
             style={{
@@ -206,7 +221,7 @@ export function ColumnChart({
               borderBottomRightRadius: 3,
             }}
           />
-          <Txt f="mono" s={10} w={600} c={colors.textFaint}>
+          <Txt f="mono" s={10} w={600} c={t.colors.textFaint}>
             {d.label}
           </Txt>
         </View>
@@ -216,18 +231,19 @@ export function ColumnChart({
 }
 
 /** Radar chart behind the level-test result. */
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   center: { alignItems: 'center', justifyContent: 'center' },
   flex: { flex: 1 },
   donutInner: {
     width: 124,
     height: 124,
     borderRadius: 62,
-    backgroundColor: colors.surfaceCard,
+    backgroundColor: t.colors.surfaceCard,
     alignItems: 'center',
     justifyContent: 'center',
     borderWidth: 1,
-    borderColor: alpha.w08,
+    borderColor: t.alpha.w08,
   },
   skillRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
   chart: { flexDirection: 'row', alignItems: 'flex-end', gap: 7, height: 130 },

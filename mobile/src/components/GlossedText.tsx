@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react';
 import { StyleSheet, TextStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Txt } from './Txt';
-import { colors } from '../theme/tokens';
 import type { Gloss } from '../content';
 
 /**
@@ -29,6 +30,8 @@ export function GlossedText({
   size?: number;
   style?: TextStyle;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const lookup = useMemo(() => {
     const map = new Map<string, Gloss>();
     for (const gloss of glossary) {
@@ -60,7 +63,7 @@ export function GlossedText({
   const parts = text.split(/([A-Za-z'’-]+)/);
 
   return (
-    <Txt s={size} lh={1.75} c={colors.textBright} style={style}>
+    <Txt s={size} lh={1.75} c={t.colors.textBright} style={style}>
       {parts.map((part, i) => {
         const gloss = i % 2 === 1 ? find(part) : undefined;
         if (!gloss) return <React.Fragment key={i}>{part}</React.Fragment>;
@@ -81,11 +84,12 @@ export function GlossedText({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   glossed: {
     backgroundColor: 'rgba(46,107,255,.22)',
     textDecorationLine: 'underline',
     textDecorationStyle: 'dashed',
-    textDecorationColor: colors.link,
+    textDecorationColor: t.colors.link,
   },
 });

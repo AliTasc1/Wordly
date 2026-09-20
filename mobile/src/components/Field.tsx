@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { StyleSheet, TextInput, TextInputProps, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 
 type Props = Omit<TextInputProps, 'style'> & {
   label: string;
@@ -22,18 +24,20 @@ type Props = Omit<TextInputProps, 'style'> & {
  * kullanıcı ne yazdığını görebilmeli. Varsayılan yine gizli.
  */
 export function Field({ label, problem, secret = false, hint, ...rest }: Props) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const [shown, setShown] = useState(false);
   const bad = Boolean(problem);
 
   return (
     <View style={styles.wrap}>
-      <Txt f="m" s={12.5} w={700} c={colors.textMuted}>
+      <Txt f="m" s={12.5} w={700} c={t.colors.textMuted}>
         {label}
       </Txt>
 
       <View style={styles.row}>
         <TextInput
-          placeholderTextColor={colors.textGhost}
+          placeholderTextColor={t.colors.textGhost}
           secureTextEntry={secret && !shown}
           style={[styles.input, bad && styles.inputBad, secret && styles.inputWithButton]}
           accessibilityLabel={label}
@@ -46,7 +50,7 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
             accessibilityRole="button"
             accessibilityLabel={shown ? 'Şifreyi gizle' : 'Şifreyi göster'}
             style={styles.eye}>
-            <Txt f="m" s={12} w={700} c={colors.textMuted}>
+            <Txt f="m" s={12} w={700} c={t.colors.textMuted}>
               {shown ? 'Gizle' : 'Göster'}
             </Txt>
           </Press>
@@ -54,11 +58,11 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
       </View>
 
       {problem ? (
-        <Txt s={12} lh={1.45} c={colors.errorTint}>
+        <Txt s={12} lh={1.45} c={t.colors.errorTint}>
           {problem}
         </Txt>
       ) : hint ? (
-        <Txt s={12} lh={1.45} c={colors.textGhost}>
+        <Txt s={12} lh={1.45} c={t.colors.textGhost}>
           {hint}
         </Txt>
       ) : null}
@@ -66,18 +70,19 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   wrap: { gap: 7 },
   row: { justifyContent: 'center' },
   input: {
     minHeight: 52,
     borderWidth: 1,
-    borderColor: alpha.w14,
-    backgroundColor: alpha.w04,
+    borderColor: t.alpha.w14,
+    backgroundColor: t.alpha.w04,
     borderRadius: radii.input,
     paddingHorizontal: 14,
     paddingVertical: 14,
-    color: colors.text,
+    color: t.colors.text,
     fontSize: 15.5,
   },
   inputWithButton: { paddingRight: 72 },

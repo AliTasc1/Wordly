@@ -10,19 +10,22 @@ export type { ThemeName, Palette, AlphaSet };
  * üstlerindeki yazı her iki temada da beyaz. Değişen yalnızca **yüzey**
  * gradyanları (`card`, `cardHigh`) — onlar zeminin devamı.
  */
+/** En az iki renk: gradyan tüketicileri (svg, linear-gradient) böyle tipli. */
+type Stops = readonly [string, string, ...string[]];
+
 export type Gradients = {
-  brand: readonly string[];
-  brandPressed: readonly string[];
-  cyan: readonly string[];
-  violetCyan: readonly string[];
-  logo: readonly string[];
-  progress: readonly string[];
-  progressViolet: readonly string[];
-  danger: readonly string[];
-  success: readonly string[];
-  warm: readonly string[];
-  card: readonly string[];
-  cardHigh: readonly string[];
+  brand: Stops;
+  brandPressed: Stops;
+  cyan: Stops;
+  violetCyan: Stops;
+  logo: Stops;
+  progress: Stops;
+  progressViolet: Stops;
+  danger: Stops;
+  success: Stops;
+  warm: Stops;
+  card: Stops;
+  cardHigh: Stops;
 };
 
 function gradientsOf(name: ThemeName): Gradients {

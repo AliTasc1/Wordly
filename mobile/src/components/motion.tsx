@@ -1,3 +1,5 @@
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import React, { useEffect, useRef, useState } from 'react';
 import {
   AccessibilityInfo,
@@ -8,7 +10,6 @@ import {
   View,
   ViewStyle,
 } from 'react-native';
-import { colors } from '../theme/tokens';
 
 /**
  * The design closes with `@media (prefers-reduced-motion:reduce)` switching
@@ -118,7 +119,10 @@ export function PopIn({
 }
 
 /** `@keyframes wspin` — the small loading ring on the splash screen. */
-export function Spinner({ size = 14, color = colors.primary }: { size?: number; color?: string }) {
+export function Spinner({ size = 14, color }: { size?: number; color?: string }) {
+  const t = useTheme();
+  color ??= t.colors.primary;
+  const styles = useStyles(makeStyles);
   const reduce = useReduceMotion();
   const anim = useRef(new Animated.Value(0)).current;
 
@@ -161,6 +165,7 @@ export function Spinner({ size = 14, color = colors.primary }: { size?: number; 
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   spinner: { borderWidth: 2, borderColor: 'rgba(255,255,255,.18)' },
 });

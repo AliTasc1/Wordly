@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Gradient } from './Gradient';
-import { alpha, colors } from '../theme/tokens';
 
 /** The fixed bar heights the design uses for every playback waveform. */
 export const WAVE = [
@@ -37,6 +38,8 @@ export function Waveform({
   height?: number;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View style={[styles.row, height != null && { height }, style]}>
       {heights.map((h, i) => {
@@ -45,7 +48,7 @@ export function Waveform({
           return (
             <View
               key={i}
-              style={[styles.bar, { height: barHeight, backgroundColor: alpha.w14 }]}
+              style={[styles.bar, { height: barHeight, backgroundColor: t.alpha.w14 }]}
             />
           );
         }
@@ -53,7 +56,7 @@ export function Waveform({
           <Gradient
             key={i}
             deg={180}
-            colors={[colors.accent, colors.primary]}
+            colors={[t.colors.accent, t.colors.primary]}
             style={[
               styles.bar,
               {
@@ -103,6 +106,8 @@ export function LiveWaveform({
   height?: number;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const [trail, setTrail] = useState<number[]>(() => Array(bars).fill(0));
 
   useEffect(() => {
@@ -117,12 +122,12 @@ export function LiveWaveform({
       {trail.map((value, i) => {
         const bar = Math.max(3, Math.round(value * height));
         return value < 0.02 ? (
-          <View key={i} style={[styles.bar, { height: 3, backgroundColor: alpha.w14 }]} />
+          <View key={i} style={[styles.bar, { height: 3, backgroundColor: t.alpha.w14 }]} />
         ) : (
           <Gradient
             key={i}
             deg={180}
-            colors={[colors.accent, colors.primary]}
+            colors={[t.colors.accent, t.colors.primary]}
             style={[styles.bar, { height: bar, opacity: 0.85 }]}
           />
         );
@@ -131,7 +136,8 @@ export function LiveWaveform({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   row: { flexDirection: 'row', alignItems: 'center', gap: 2 },
   bar: { flex: 1, borderRadius: 2 },
 });

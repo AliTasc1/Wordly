@@ -1,9 +1,11 @@
 import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Gradient } from './Gradient';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 
 /**
  * The design's repeated card surface:
@@ -22,14 +24,15 @@ export function Card({
   padding?: number;
   radius?: number;
 }) {
+  const t = useTheme();
   return (
     <Gradient
       deg={180}
-      colors={gradients.card}
+      colors={t.gradients.card}
       style={[
         {
           borderWidth: 1,
-          borderColor: alpha.w08,
+          borderColor: t.alpha.w08,
           borderRadius: radius,
           padding,
           gap,
@@ -55,13 +58,14 @@ export function Panel({
   padding?: number;
   radius?: number;
 }) {
+  const t = useTheme();
   return (
     <View
       style={[
         {
-          backgroundColor: colors.surface,
+          backgroundColor: t.colors.surface,
           borderWidth: 1,
-          borderColor: alpha.w07,
+          borderColor: t.alpha.w07,
           borderRadius: radius,
           padding,
           gap,
@@ -95,8 +99,9 @@ export function IconTile({
   solid?: readonly [string, string, ...string[]];
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
   const body = (
-    <Txt s={fontSize ?? Math.round(size * 0.41)} c={colors.text}>
+    <Txt s={fontSize ?? Math.round(size * 0.41)} c={t.colors.text}>
       {glyph}
     </Txt>
   );
@@ -205,6 +210,7 @@ export function Chip({
   padH?: number;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
   return (
     <Press
       onPress={onPress}
@@ -222,14 +228,14 @@ export function Chip({
           ...(active
             ? {
                 backgroundColor: 'rgba(46,107,255,.2)',
-                borderColor: colors.primary,
+                borderColor: t.colors.primary,
                 boxShadow: '0px 0px 0px 3px rgba(46,107,255,.12)',
               }
-            : { backgroundColor: alpha.w04, borderColor: alpha.w10 }),
+            : { backgroundColor: t.alpha.w04, borderColor: t.alpha.w10 }),
         },
         style,
       ]}>
-      <Txt f="m" s={12.5} w={700} c={active ? colors.text : colors.textMuted}>
+      <Txt f="m" s={12.5} w={700} c={active ? t.colors.text : t.colors.textMuted}>
         {label}
       </Txt>
     </Press>
@@ -250,14 +256,16 @@ export function StatTile({
   size?: number;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View
       style={[
         {
           flex: 1,
-          backgroundColor: colors.surface,
+          backgroundColor: t.colors.surface,
           borderWidth: 1,
-          borderColor: alpha.w07,
+          borderColor: t.alpha.w07,
           borderRadius: radii.input,
           padding: 12,
           alignItems: 'center',
@@ -267,7 +275,7 @@ export function StatTile({
       <Txt f="m" s={size} w={800} c={tint}>
         {value}
       </Txt>
-      <Txt s={10.5} c={colors.textDim} style={styles.statLabel}>
+      <Txt s={10.5} c={t.colors.textDim} style={styles.statLabel}>
         {label}
       </Txt>
     </View>
@@ -286,6 +294,7 @@ export function Row({
   onPress?: () => void;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
   const base: ViewStyle = {
     flexDirection: 'row',
     alignItems: 'center',
@@ -295,7 +304,7 @@ export function Row({
     borderWidth: 1,
     ...(active
       ? { backgroundColor: 'rgba(46,107,255,.14)', borderColor: 'rgba(46,107,255,.34)' }
-      : { backgroundColor: colors.surface, borderColor: alpha.w07 }),
+      : { backgroundColor: t.colors.surface, borderColor: t.alpha.w07 }),
   };
   if (!onPress) return <View style={[base, style]}>{children}</View>;
   return (
@@ -305,9 +314,10 @@ export function Row({
   );
 }
 
-export const Divider = ({ style }: { style?: StyleProp<ViewStyle> }) => (
-  <View style={[{ height: 1, backgroundColor: alpha.w07 }, style]} />
-);
+export function Divider({ style }: { style?: StyleProp<ViewStyle> }) {
+  const t = useTheme();
+  return <View style={[{ height: 1, backgroundColor: t.alpha.w07 }, style]} />;
+}
 
 /** Kicker + title block that heads the tabbed screens. */
 export function ScreenHeading({
@@ -319,9 +329,11 @@ export function ScreenHeading({
   title: string;
   size?: number;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View>
-      <Txt f="mono" s={11} w={700} c={colors.textDim} ls={0.14}>
+      <Txt f="mono" s={11} w={700} c={t.colors.textDim} ls={0.14}>
         {kicker}
       </Txt>
       <Txt f="m" s={size} w={800} ls={-0.02} style={styles.heading}>
@@ -331,7 +343,8 @@ export function ScreenHeading({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   statLabel: { marginTop: 1, textAlign: 'center' },
   heading: { marginTop: 4 },
 });

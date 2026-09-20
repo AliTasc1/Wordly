@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { GhostButton, PrimaryButton } from './Buttons';
-import { alpha, shadows } from '../theme/tokens';
 
 /**
  * Alıştırma ekranlarının sabit eylem çubuğu.
@@ -31,12 +32,14 @@ export function StepFooter({
   onExit?: () => void;
   disabled?: boolean;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const next = (
     <PrimaryButton
       label={label}
       height={54}
       size={15.5}
-      shadow={shadows.ctaBrand}
+      shadow={t.shadows.ctaBrand}
       onPress={onPress}
       disabled={disabled}
       style={onExit ? styles.grow : undefined}
@@ -52,7 +55,7 @@ export function StepFooter({
         height={54}
         radius={16}
         size={14}
-        fill={alpha.w04}
+        fill={t.alpha.w04}
         onPress={onExit}
         style={styles.exit}
       />
@@ -61,7 +64,8 @@ export function StepFooter({
   );
 }
 
-const styles = StyleSheet.create({
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
   row: { flexDirection: 'row', gap: 10 },
   // Çıkış düğmesi dar: eşit bölünmüş iki düğme, ikisini de eşit derecede
   // doğru gösterir. Devam etmek çoğunluk için doğru olan.
