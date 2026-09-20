@@ -10,6 +10,7 @@ import { Glow } from '../components/Glow';
 import { BackButton, Press } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
+import { orbitFor, seats, wheelSize } from '../content/wheel';
 import { font, radii } from '../theme/tokens';
 import { ARENA } from '../data/play';
 import { arenaRound } from '../content/arena';
@@ -29,8 +30,8 @@ import {
 import { useApp } from '../state/AppContext';
 import { useBack } from '../navigation/useGo';
 
+/** Tasarımın istediği çark. Harf sayısı sığmazsa `orbitFor` açıyor. */
 const WHEEL = 280;
-const CENTER = WHEEL / 2;
 const ORBIT = 112;
 const KEY = 50;
 
@@ -79,6 +80,18 @@ export function ArenaScreen() {
   const offset = rotation % puzzle.letters.length;
   const order = [...puzzle.letters.slice(offset), ...puzzle.letters.slice(0, offset)];
   const word = picked.map((i) => order[i]).join('');
+
+  /*
+    Harfler çemberde nereye oturuyor?
+
+    Burada sabit 36 derece vardı — yani tam on harf varsayılıyordu. Bir tur
+    9 ile 11 harf arasında değişiyor (5–7 harfli kelime + 4 tuzak): dokuzda
+    çemberin bir dilimi boş kalıyor, on birde son harf ilkinin üstüne
+    biniyordu. Üst üste binen iki harf, "harfler karmaşık geliyor"un kendisi.
+  */
+  const orbit = orbitFor(order.length, KEY, ORBIT);
+  const wheelBox = Math.max(WHEEL, wheelSize(orbit, KEY));
+  const koltuklar = seats(order.length, wheelBox / 2, orbit);
   const ready = word.length === puzzle.slots;
 
   /*
@@ -254,7 +267,7 @@ export function ArenaScreen() {
         ))}
       </View>
 
-      <View style={styles.wheel}>
+      <View style={[styles.wheel, { width: wheelBox, height: wheelBox }]}>
         <View style={styles.wheelRing} pointerEvents="none" />
         <View style={styles.wheelRingInner} pointerEvents="none" />
         <View style={styles.wheelCore} pointerEvents="none">
@@ -289,11 +302,9 @@ export function ArenaScreen() {
         </View>
 
         {order.map((letter, i) => {
-          const a = ((-90 + i * 36) * Math.PI) / 180;
-          const x = CENTER + ORBIT * Math.cos(a);
-          const y = CENTER + ORBIT * Math.sin(a);
+          const seat = koltuklar[i];
           const selected = picked.includes(i);
-          const position = { left: x - KEY / 2, top: y - KEY / 2 };
+          const position = { left: seat.x - KEY / 2, top: seat.y - KEY / 2 };
 
           if (selected) {
             // Seçili harf de bir düğme: dokunmak onu kelimeden çıkarıyor.
@@ -507,14 +518,14 @@ const makeStyles = (t: Theme) =>
       borderStyle: 'dashed',
       borderColor: t.alpha.w16,
     },
-    wheel: { width: WHEEL, height: WHEEL, alignSelf: 'center' },
+    wheel: { alignSelf: 'center' },
     wheelRing: {
       position: 'absolute',
       top: 0,
       left: 0,
       right: 0,
       bottom: 0,
-      borderRadius: CENTER,
+      borderRadius: WHEEL,
       borderWidth: 1.5,
       borderColor: t.alpha.w10,
     },
@@ -524,7 +535,7 @@ const makeStyles = (t: Theme) =>
       left: 34,
       right: 34,
       bottom: 34,
-      borderRadius: CENTER,
+      borderRadius: WHEEL,
       borderWidth: 1,
       borderStyle: 'dashed',
       borderColor: t.alpha.w12,
