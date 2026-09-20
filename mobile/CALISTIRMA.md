@@ -178,12 +178,17 @@ Expo Go arka planda kalırsa eski paketi bellekten sürdürebiliyor.
 
 ### Güncellemenin geldiğini gözle doğrula
 
-Alt menüye bak. Güncel sürümde beş sekme şu:
+İki yere bak.
+
+Alt menüde beş sekme olmalı:
 
 **🏠 Ana · 📚 Öğren · 🎮 Oyna · 📓 Defter · 👤 Profil**
 
 Menüde "Sosyal" yazıyorsa ya da sağ altta yüzen yuvarlak bir düğme duruyorsa,
-telefon hâlâ eski paketi çalıştırıyor demektir.
+telefon hâlâ eski paketi çalıştırıyor.
+
+**Ayarlar → Uygulama** bölümünde "Görünüm" satırı ve altında üç seçenek
+(Sistem · Açık · Koyu) olmalı. Yoksa paket eski.
 
 ## Başkasına denettirmek
 
@@ -310,3 +315,40 @@ yani Expo Go'yu açıyor. Bu normal. `wordly://` yalnızca gerçek derlemede
 | Bildirimler | Gerçekten senin durumunu mu anlatıyor |
 | Defter | Hata defteri menüden açılıyor mu |
 | Abonelik | Para isteyen hiçbir şey yok |
+| Ayarlar → Görünüm | Açık'a alınca tüm ekranlar açık temaya geçiyor mu, uygulamayı kapatıp açınca seçim duruyor mu |
+| Tanıtım ekranı (ilk açılış) | Çizgili yer tutucu yerine harf taşlarından oluşan bir çizim var mı |
+| Oyna → Harf Arenası | Çarktaki harflerden hiçbiri bir diğerinin üstüne binmiş mi (binmemeli) |
+| Okuma | Görselin yerinde başlığı taşıyan renkli bir kapak var mı |
+
+
+## Temayı değiştirme
+
+**Ayarlar → Uygulama → Görünüm**: Sistem, Açık, Koyu.
+
+Varsayılan **Sistem**: telefonun ayarını izliyor, yani akşam karanlık temaya
+geçen telefonla birlikte uygulama da geçiyor. İstersen sabitleyebilirsin;
+seçim telefonda kalıyor ve uygulamayı kapatıp açınca duruyor.
+
+Açık tema, koyunun ters çevrilmiş hâli değil. Koyuda parlayan camgöbeği
+(#22D3EE) beyaz zeminde okunmuyordu; açıkta o rolü daha koyu bir ton
+devralıyor. Her rengin karşılığı, aynı **işi** görecek şekilde ayrı seçildi
+ve kontrast oranları otomatik testle tutuluyor.
+
+## Web sitesi
+
+Site `docs/` klasöründen yayınlanıyor ve **elle düzenlenmiyor** — üretiliyor:
+
+```
+python3 content/build-site.py
+```
+
+Denetimi:
+
+```
+python3 content/test_site.py
+```
+
+Ana sayfadaki telefon görselleri şu an uygulamanın arayüzünün sayfa içinde
+çizilmiş hâli. Gerçek ekran görüntüsü koymak istersen `docs/ekran/` klasörüne
+at ve betiği yeniden çalıştır; hangi dosya adının nereye gittiği
+`docs/ekran/BENIOKU.md`de yazıyor.
