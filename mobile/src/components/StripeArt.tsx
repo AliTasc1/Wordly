@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import Svg, { Defs, Pattern, Rect } from 'react-native-svg';
 import { Txt } from './Txt';
 import { radii } from '../theme/tokens';
@@ -17,8 +18,8 @@ export function StripeArt({
   label,
   height = 132,
   radius = radii.input,
-  a = 'rgba(46,107,255,.16)',
-  b = 'rgba(124,92,255,.08)',
+  a,
+  b,
   deg = 45,
   band = 10,
   children,
@@ -34,7 +35,10 @@ export function StripeArt({
   children?: React.ReactNode;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
   const styles = useStyles(makeStyles);
+  a ??= tint(t.colors.primary, 0.16);
+  b ??= tint(t.colors.secondary, 0.08);
   const id = React.useMemo(() => `stripe-${patternId++}`, []);
   return (
     <View
@@ -60,7 +64,7 @@ export function StripeArt({
       {children}
       {label ? (
         <View style={styles.caption}>
-          <Txt f="mono" s={10.5} w={600} c="rgba(255,255,255,.62)">
+          <Txt f="mono" s={10.5} w={600} c={t.alpha.w30}>
             {label}
           </Txt>
         </View>
@@ -79,7 +83,7 @@ const makeStyles = (t: Theme) =>
       justifyContent: 'center',
     },
     caption: {
-      backgroundColor: 'rgba(7,10,20,.7)',
+      backgroundColor: tint(t.colors.bg, 0.7),
       paddingVertical: 5,
       paddingHorizontal: 10,
       borderRadius: 8,
@@ -94,8 +98,8 @@ export function StripeCircle({ label, size = 104 }: { label: string; size?: numb
       label={label}
       height={size}
       radius={size / 2}
-      a="rgba(46,107,255,.14)"
-      b="rgba(124,92,255,.07)"
+      a={tint(t.colors.primary, 0.14)}
+      b={tint(t.colors.secondary, 0.07)}
       band={8}
       style={{ width: size, borderColor: t.alpha.w18, borderStyle: 'dashed' }}
     />
@@ -103,18 +107,21 @@ export function StripeCircle({ label, size = 104 }: { label: string; size?: numb
 }
 
 /** Dashed ring overlay used on the onboarding hero. */
-export const DashedRing = ({ size = 150 }: { size?: number }) => (
-  <View
-    style={{
-      width: size,
-      height: size,
-      borderRadius: size / 2,
-      borderWidth: 1.5,
-      borderStyle: 'dashed',
-      borderColor: 'rgba(255,255,255,.28)',
-    }}
-  />
-);
+export function DashedRing({ size = 150 }: { size?: number }) {
+  const t = useTheme();
+  return (
+    <View
+      style={{
+        width: size,
+        height: size,
+        borderRadius: size / 2,
+        borderWidth: 1.5,
+        borderStyle: 'dashed',
+        borderColor: t.alpha.w30,
+      }}
+    />
+  );
+}
 
 /**
  * Yer tutucu altyazısının rengi.

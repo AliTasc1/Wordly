@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import Svg, {
   Circle,
   Defs,
@@ -67,7 +68,7 @@ export function ProgressRing({
   thickness,
   pct,
   color,
-  track = 'rgba(255,255,255,.09)',
+  track,
   children,
   style,
 }: {
@@ -79,7 +80,9 @@ export function ProgressRing({
   children?: React.ReactNode;
   style?: StyleProp<ViewStyle>;
 }) {
+  const t = useTheme();
   const styles = useStyles(makeStyles);
+  track ??= t.alpha.w09;
   const r = (size - thickness) / 2;
   const c = 2 * Math.PI * r;
   const filled = (Math.max(0, Math.min(100, pct)) / 100) * c;
@@ -210,7 +213,7 @@ export function ColumnChart({
             colors={
               d.value >= highlightFrom
                 ? [t.colors.accent, t.colors.primary]
-                : ['rgba(46,107,255,.75)', 'rgba(124,92,255,.5)']
+                : [tint(t.colors.primary, 0.75), tint(t.colors.secondary, 0.5)]
             }
             style={{
               width: '100%',

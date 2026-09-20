@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { BackButton, Press } from '../components/Buttons';
 import { Card } from '../components/Surfaces';
@@ -160,9 +161,9 @@ const makeStyles = (t: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       gap: 12,
-      backgroundColor: 'rgba(255,77,94,.1)',
+      backgroundColor: tint(t.colors.error, 0.1),
       borderWidth: 1,
-      borderColor: 'rgba(255,77,94,.28)',
+      borderColor: tint(t.colors.error, 0.28),
       borderRadius: radii.tile,
       padding: 15,
     },
@@ -170,7 +171,7 @@ const makeStyles = (t: Theme) =>
       width: 40,
       height: 40,
       borderRadius: radii.card,
-      backgroundColor: 'rgba(255,77,94,.2)',
+      backgroundColor: tint(t.colors.error, 0.2),
       alignItems: 'center',
       justifyContent: 'center',
     },

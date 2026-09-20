@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press, PrimaryButton, GhostButton } from '../components/Buttons';
@@ -307,17 +308,17 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       justifyContent: 'center',
     },
-    saved: { backgroundColor: 'rgba(245,165,36,.24)', borderColor: t.colors.warning },
+    saved: { backgroundColor: tint(t.colors.warning, 0.24), borderColor: t.colors.warning },
     unsaved: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w12 },
-    audioBtn: { backgroundColor: 'rgba(46,107,255,.16)', borderColor: 'rgba(46,107,255,.35)' },
+    audioBtn: { backgroundColor: tint(t.colors.primary, 0.16), borderColor: tint(t.colors.primary, 0.35) },
     posLine: { marginTop: -2 },
     senses: {
       gap: 5,
       padding: 13,
       borderRadius: radii.input,
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.25)',
-      backgroundColor: 'rgba(124,92,255,.08)',
+      borderColor: tint(t.colors.secondary, 0.25),
+      backgroundColor: tint(t.colors.secondary, 0.08),
     },
     senseRow: { marginTop: 1 },
     pos: {
@@ -325,15 +326,15 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 5,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
-      backgroundColor: 'rgba(124,92,255,.18)',
+      backgroundColor: tint(t.colors.secondary, 0.18),
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.32)',
+      borderColor: tint(t.colors.secondary, 0.32),
     },
     ipaRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 5 },
     block: { backgroundColor: t.alpha.w04, borderRadius: radii.input, padding: 13 },
     blockKicker: { marginBottom: 5 },
     blockKickerRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 5 },
-    exampleBlock: { backgroundColor: 'rgba(46,107,255,.1)' },
+    exampleBlock: { backgroundColor: tint(t.colors.primary, 0.1) },
     exampleTr: { marginTop: 4 },
     actions: { flexDirection: 'row', gap: 10 },
     stats: { flexDirection: 'row', gap: 9 },

@@ -1,5 +1,6 @@
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import React, { useState } from 'react';
 import {
   LayoutChangeEvent,
@@ -118,7 +119,7 @@ export function Screen({
               olduğunu da gösteriyor. */}
           <Gradient
             deg={180}
-            colors={['rgba(7,10,20,0)', t.colors.bg, t.colors.bg]}
+            colors={[tint(t.colors.bg, 0.0), t.colors.bg, t.colors.bg]}
             locations={[0, 0.45, 1]}
             style={styles.footerWash}
           />

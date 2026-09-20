@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { StyleSheet, TextStyle } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Txt } from './Txt';
 import type { Gloss } from '../content';
 
@@ -87,7 +88,7 @@ export function GlossedText({
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
     glossed: {
-      backgroundColor: 'rgba(46,107,255,.22)',
+      backgroundColor: tint(t.colors.primary, 0.22),
       textDecorationLine: 'underline',
       textDecorationStyle: 'dashed',
       textDecorationColor: t.colors.link,

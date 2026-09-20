@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { RefreshControl, ScrollView, StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Avatar } from '../components/Avatar';
@@ -101,7 +102,7 @@ export function LeaderboardScreen() {
           <RefreshControl refreshing={busy} onRefresh={load} tintColor={t.colors.textDim} />
         }>
         <Gradient
-          colors={['rgba(46,107,255,.18)', 'rgba(14,20,38,.92)']}
+          colors={[tint(t.colors.primary, 0.18), tint(t.colors.surface, 0.92)]}
           style={styles.week}>
           <Txt s={18}>🗓</Txt>
           <Txt s={12.5} lh={1.5} c={t.colors.textSubtle} style={styles.flex}>
@@ -198,7 +199,7 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       gap: 12,
       borderWidth: 1,
-      borderColor: 'rgba(46,107,255,.3)',
+      borderColor: tint(t.colors.primary, 0.3),
       borderRadius: radii.tile,
       padding: 14,
     },
@@ -217,9 +218,9 @@ const makeStyles = (t: Theme) =>
       borderRadius: radii.card,
     },
     rowMe: {
-      backgroundColor: 'rgba(46,107,255,.14)',
+      backgroundColor: tint(t.colors.primary, 0.14),
       borderWidth: 1,
-      borderColor: 'rgba(46,107,255,.34)',
+      borderColor: tint(t.colors.primary, 0.34),
     },
     rank: { width: 24 },
     stats: { flexDirection: 'row', gap: 9 },

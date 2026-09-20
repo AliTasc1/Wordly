@@ -167,5 +167,5 @@ export function Spinner({ size = 14, color }: { size?: number; color?: string })
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-    spinner: { borderWidth: 2, borderColor: 'rgba(255,255,255,.18)' },
+    spinner: { borderWidth: 2, borderColor: t.alpha.w18 },
   });

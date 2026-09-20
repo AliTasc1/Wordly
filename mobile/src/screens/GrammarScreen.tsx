@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, TinyButton } from '../components/Buttons';
@@ -105,7 +106,7 @@ export function GrammarScreen() {
 
       <Gradient
         deg={140}
-        colors={['rgba(124,92,255,.22)', 'rgba(14,20,38,.92)']}
+        colors={[tint(t.colors.secondary, 0.22), tint(t.colors.surface, 0.92)]}
         style={styles.concept}>
         <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.14}>
           KURAL
@@ -238,15 +239,15 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 5,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
-      backgroundColor: 'rgba(124,92,255,.18)',
+      backgroundColor: tint(t.colors.secondary, 0.18),
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.32)',
+      borderColor: tint(t.colors.secondary, 0.32),
     },
     steps: { flexDirection: 'row', gap: 5 },
     step: { flex: 1, height: 4, borderRadius: 9 },
     concept: {
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.3)',
+      borderColor: tint(t.colors.secondary, 0.3),
       borderRadius: radii.section,
       padding: 18,
       gap: 10,
@@ -255,14 +256,14 @@ const makeStyles = (t: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       gap: 8,
-      backgroundColor: 'rgba(0,0,0,.28)',
+      backgroundColor: t.alpha.black28,
       borderRadius: radii.card,
       padding: 12,
     },
     canDo: {
-      backgroundColor: 'rgba(34,197,94,.1)',
+      backgroundColor: tint(t.colors.success, 0.1),
       borderWidth: 1,
-      borderColor: 'rgba(34,197,94,.24)',
+      borderColor: tint(t.colors.success, 0.24),
       borderRadius: radii.card,
       padding: 12,
     },
@@ -277,9 +278,9 @@ const makeStyles = (t: Theme) =>
     },
     example: { gap: 2 },
     mistakes: {
-      backgroundColor: 'rgba(255,77,94,.07)',
+      backgroundColor: tint(t.colors.error, 0.07),
       borderWidth: 1,
-      borderColor: 'rgba(255,77,94,.2)',
+      borderColor: tint(t.colors.error, 0.2),
       borderRadius: radii.panel,
       padding: 15,
       gap: 12,
@@ -290,9 +291,9 @@ const makeStyles = (t: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       gap: 10,
-      backgroundColor: 'rgba(245,165,36,.1)',
+      backgroundColor: tint(t.colors.warning, 0.1),
       borderWidth: 1,
-      borderColor: 'rgba(245,165,36,.28)',
+      borderColor: tint(t.colors.warning, 0.28),
       borderRadius: radii.tile,
       padding: 14,
     },
@@ -300,7 +301,7 @@ const makeStyles = (t: Theme) =>
       width: 42,
       height: 42,
       borderRadius: radii.card,
-      backgroundColor: 'rgba(245,165,36,.2)',
+      backgroundColor: tint(t.colors.warning, 0.2),
       alignItems: 'center',
       justifyContent: 'center',
     },

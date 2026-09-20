@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { StyleSheet, TextInput, TextInputProps, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
 import { radii } from '../theme/tokens';
@@ -87,8 +88,8 @@ const makeStyles = (t: Theme) =>
     },
     inputWithButton: { paddingRight: 72 },
     inputBad: {
-      borderColor: 'rgba(255,77,94,.55)',
-      backgroundColor: 'rgba(255,77,94,.08)',
+      borderColor: tint(t.colors.error, 0.55),
+      backgroundColor: tint(t.colors.error, 0.08),
     },
     eye: {
       position: 'absolute',

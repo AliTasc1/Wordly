@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import Svg, { Line } from 'react-native-svg';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -65,7 +66,7 @@ export function CourseMapScreen() {
               y1={0}
               x2={1}
               y2="100%"
-              stroke="rgba(255,255,255,.14)"
+              stroke={t.alpha.w14}
               strokeWidth={2}
               strokeDasharray="8 8"
             />
@@ -180,9 +181,9 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 6,
       paddingHorizontal: 11,
       borderRadius: radii.chip,
-      backgroundColor: 'rgba(34,211,238,.14)',
+      backgroundColor: tint(t.colors.accent, 0.14),
       borderWidth: 1,
-      borderColor: 'rgba(34,211,238,.3)',
+      borderColor: tint(t.colors.accent, 0.3),
     },
     path: { paddingHorizontal: 18, paddingTop: 18 },
     spine: { position: 'absolute', left: '50%', top: 0, bottom: 0, width: 2 },
@@ -198,9 +199,9 @@ const makeStyles = (t: Theme) =>
       gap: 2,
     },
     nodeDone: {
-      backgroundColor: 'rgba(34,197,94,.16)',
+      backgroundColor: tint(t.colors.success, 0.16),
       borderWidth: 1,
-      borderColor: 'rgba(34,197,94,.36)',
+      borderColor: tint(t.colors.success, 0.36),
     },
     nodeNow: { borderWidth: 1, borderColor: t.alpha.w20, boxShadow: t.shadows.node },
     nodeNext: { backgroundColor: t.colors.surfaceHigh, borderWidth: 1, borderColor: t.alpha.w14 },

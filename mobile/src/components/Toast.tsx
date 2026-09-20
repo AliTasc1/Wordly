@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Animated, Easing, StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
@@ -67,9 +68,9 @@ const makeStyles = (t: Theme) =>
   StyleSheet.create({
     wrap: { position: 'absolute', left: 18, right: 18, zIndex: 90 },
     card: {
-      backgroundColor: 'rgba(11,17,34,.94)',
+      backgroundColor: tint(t.colors.surfaceCard, 0.94),
       borderWidth: 1,
-      borderColor: 'rgba(34,211,238,.4)',
+      borderColor: tint(t.colors.accent, 0.4),
       borderRadius: radii.input,
       paddingVertical: 13,
       paddingHorizontal: 15,

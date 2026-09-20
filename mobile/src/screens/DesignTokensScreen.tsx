@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { BlurView } from 'expo-blur';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -104,7 +105,11 @@ export function DesignTokensScreen() {
           </Txt>
         </View>
         <View style={[styles.surface, styles.surfaceGlass]}>
-          <BlurView intensity={30} tint="dark" style={StyleSheet.absoluteFill} />
+          <BlurView
+            intensity={30}
+            tint={t.dark ? 'dark' : 'light'}
+            style={StyleSheet.absoluteFill}
+          />
           <Txt f="mono" s={9.5} w={600} c={t.colors.textSubtle}>
             glass
           </Txt>
@@ -141,9 +146,9 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   }
   const map: Record<string, { bg: string; color: string; border?: string }> = {
     'Devre dışı': { bg: t.alpha.w06, color: t.colors.textDisabled },
-    Yükleniyor: { bg: 'rgba(46,107,255,.4)', color: t.colors.textBody },
-    Başarı: { bg: 'rgba(34,197,94,.2)', color: t.colors.mintSoft, border: t.colors.success },
-    Hata: { bg: 'rgba(255,77,94,.18)', color: t.colors.errorTint, border: t.colors.error },
+    Yükleniyor: { bg: tint(t.colors.primary, 0.4), color: t.colors.textBody },
+    Başarı: { bg: tint(t.colors.success, 0.2), color: t.colors.mintSoft, border: t.colors.success },
+    Hata: { bg: tint(t.colors.error, 0.18), color: t.colors.errorTint, border: t.colors.error },
   };
   const style = map[name];
   return (

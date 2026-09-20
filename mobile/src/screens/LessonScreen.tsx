@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton } from '../components/Buttons';
@@ -112,7 +113,7 @@ export function LessonScreen() {
     <Screen tabbed padTop={0} padH={0} gap={0}>
       <Gradient
         deg={160}
-        colors={['rgba(46,107,255,.3)', 'rgba(124,92,255,.14)', 'transparent']}
+        colors={[tint(t.colors.primary, 0.3), tint(t.colors.secondary, 0.14), 'transparent']}
         style={styles.hero}>
         <View style={styles.heroTop}>
           <BackButton onPress={back} strong />
@@ -133,7 +134,7 @@ export function LessonScreen() {
           from={t.colors.accent}
           to={t.colors.primary}
           height={8}
-          track="rgba(0,0,0,.4)"
+          track={t.alpha.black40}
         />
       </Gradient>
 
@@ -170,7 +171,7 @@ export function LessonScreen() {
                   s={10}
                   w={700}
                   ls={0.06}
-                  c={done ? t.colors.successSoft : current ? '#9FBEFF' : t.colors.textFaint}>
+                  c={done ? t.colors.successSoft : current ? t.colors.blueSoft : t.colors.textFaint}>
                   {step.tag}
                 </Txt>
               </View>
@@ -209,14 +210,14 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 6,
       paddingHorizontal: 11,
       borderRadius: radii.chip,
-      backgroundColor: 'rgba(0,0,0,.35)',
+      backgroundColor: t.alpha.black35,
     },
     steps: { paddingTop: 6, paddingHorizontal: 18, gap: 10 },
     stepIdle: { backgroundColor: t.alpha.w05, borderColor: t.alpha.w10 },
     stepSub: { marginTop: 2 },
     tag: { paddingVertical: 5, paddingHorizontal: 9, borderRadius: radii.sm },
-    tagDone: { backgroundColor: 'rgba(34,197,94,.14)' },
-    tagNow: { backgroundColor: 'rgba(46,107,255,.2)' },
+    tagDone: { backgroundColor: tint(t.colors.success, 0.14) },
+    tagNow: { backgroundColor: tint(t.colors.primary, 0.2) },
     tagIdle: { backgroundColor: t.alpha.w05 },
     exam: {
       marginTop: 6,
@@ -234,9 +235,9 @@ const makeStyles = (t: Theme) =>
       width: 44,
       height: 44,
       borderRadius: radii.card,
-      backgroundColor: 'rgba(245,165,36,.16)',
+      backgroundColor: tint(t.colors.warning, 0.16),
       borderWidth: 1,
-      borderColor: 'rgba(245,165,36,.3)',
+      borderColor: tint(t.colors.warning, 0.3),
       alignItems: 'center',
       justifyContent: 'center',
     },

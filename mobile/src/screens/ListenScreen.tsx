@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
@@ -163,7 +164,7 @@ export function ListenScreen() {
 
       <Gradient
         deg={150}
-        colors={['rgba(34,211,238,.18)', 'rgba(14,20,38,.94)']}
+        colors={[tint(t.colors.accent, 0.18), tint(t.colors.surface, 0.94)]}
         style={styles.player}>
         <Waveform tall height={72} lit={playing ? (line + 1) / item.lines.length : 0} />
 
@@ -318,7 +319,7 @@ const makeStyles = (t: Theme) =>
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     player: {
       borderWidth: 1,
-      borderColor: 'rgba(34,211,238,.28)',
+      borderColor: tint(t.colors.accent, 0.28),
       borderRadius: radii.hero,
       padding: 20,
       gap: 16,
@@ -363,5 +364,5 @@ const makeStyles = (t: Theme) =>
     },
     line: { gap: 3, borderRadius: radii.input, paddingHorizontal: 8, paddingVertical: 6 },
     // Okunmakta olan replik: öğrenci sesi hangi satırda olduğunu kaybetmesin.
-    lineOn: { backgroundColor: t.alpha.w05, borderWidth: 1, borderColor: 'rgba(34,211,238,.35)' },
+    lineOn: { backgroundColor: t.alpha.w05, borderWidth: 1, borderColor: tint(t.colors.accent, 0.35) },
   });

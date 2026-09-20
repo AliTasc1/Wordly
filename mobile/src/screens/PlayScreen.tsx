@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Press, TinyButton } from '../components/Buttons';
@@ -32,7 +33,7 @@ export function PlayScreen() {
         scale={0.99}>
         <Gradient
           deg={140}
-          colors={['rgba(34,211,238,.24)', 'rgba(124,92,255,.2)', 'rgba(14,20,38,.95)']}
+          colors={[tint(t.colors.accent, 0.24), tint(t.colors.secondary, 0.2), tint(t.colors.surface, 0.95)]}
           style={styles.hero}>
           <View style={styles.heroRingLarge} pointerEvents="none" />
           <View style={styles.heroRingSmall} pointerEvents="none" />
@@ -112,7 +113,7 @@ const makeStyles = (t: Theme) =>
     hero: {
       overflow: 'hidden',
       borderWidth: 1,
-      borderColor: 'rgba(34,211,238,.34)',
+      borderColor: tint(t.colors.accent, 0.34),
       borderRadius: radii.screen,
       padding: 18,
     },
@@ -125,7 +126,7 @@ const makeStyles = (t: Theme) =>
       borderRadius: 85,
       borderWidth: 1.5,
       borderStyle: 'dashed',
-      borderColor: 'rgba(255,255,255,.22)',
+      borderColor: t.alpha.w20,
     },
     heroRingSmall: {
       position: 'absolute',
@@ -142,7 +143,7 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 5,
       paddingHorizontal: 10,
       borderRadius: radii.chipSm,
-      backgroundColor: 'rgba(0,0,0,.34)',
+      backgroundColor: t.alpha.black34,
     },
     heroTitle: { marginTop: 10 },
     heroSub: { marginTop: 4, maxWidth: 200 },
@@ -157,7 +158,7 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 9,
       paddingHorizontal: 14,
       borderRadius: radii.lg,
-      backgroundColor: 'rgba(0,0,0,.3)',
+      backgroundColor: t.alpha.black30,
     },
     grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 10 },
     mode: {
@@ -181,7 +182,7 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       gap: 12,
       borderWidth: 1,
-      borderColor: 'rgba(245,165,36,.3)',
+      borderColor: tint(t.colors.warning, 0.3),
       borderRadius: radii.tile,
       padding: 15,
     },
@@ -189,7 +190,7 @@ const makeStyles = (t: Theme) =>
       width: 44,
       height: 44,
       borderRadius: radii.input,
-      backgroundColor: 'rgba(245,165,36,.2)',
+      backgroundColor: tint(t.colors.warning, 0.2),
       alignItems: 'center',
       justifyContent: 'center',
     },

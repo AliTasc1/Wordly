@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Alert, Linking, StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
@@ -259,7 +260,7 @@ export function SettingsScreen() {
 
       <Press onPress={() => go('sub')} scale={0.99}>
         <Gradient
-          colors={['rgba(124,92,255,.22)', 'rgba(14,20,38,.92)']}
+          colors={[tint(t.colors.secondary, 0.22), tint(t.colors.surface, 0.92)]}
           style={styles.premium}>
           <Gradient colors={t.gradients.violetCyan} style={styles.premiumIcon}>
             <Txt s={18}>✦</Txt>
@@ -565,7 +566,7 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       gap: 12,
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.32)',
+      borderColor: tint(t.colors.secondary, 0.32),
       borderRadius: radii.tile,
       padding: 15,
     },
@@ -616,8 +617,8 @@ const makeStyles = (t: Theme) =>
       height: 50,
       borderRadius: radii.input,
       borderWidth: 1,
-      borderColor: 'rgba(255,77,94,.3)',
-      backgroundColor: 'rgba(255,77,94,.1)',
+      borderColor: tint(t.colors.error, 0.3),
+      backgroundColor: tint(t.colors.error, 0.1),
       alignItems: 'center',
       justifyContent: 'center',
     },

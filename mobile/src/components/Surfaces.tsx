@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Gradient } from './Gradient';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
@@ -227,9 +228,9 @@ export function Chip({
           justifyContent: 'center',
           ...(active
             ? {
-                backgroundColor: 'rgba(46,107,255,.2)',
+                backgroundColor: tint(t.colors.primary, 0.2),
                 borderColor: t.colors.primary,
-                boxShadow: '0px 0px 0px 3px rgba(46,107,255,.12)',
+                boxShadow: t.shadows.focusRing,
               }
             : { backgroundColor: t.alpha.w04, borderColor: t.alpha.w10 }),
         },
@@ -303,7 +304,7 @@ export function Row({
     borderRadius: radii.panel,
     borderWidth: 1,
     ...(active
-      ? { backgroundColor: 'rgba(46,107,255,.14)', borderColor: 'rgba(46,107,255,.34)' }
+      ? { backgroundColor: tint(t.colors.primary, 0.14), borderColor: tint(t.colors.primary, 0.34) }
       : { backgroundColor: t.colors.surface, borderColor: t.alpha.w07 }),
   };
   if (!onPress) return <View style={[base, style]}>{children}</View>;

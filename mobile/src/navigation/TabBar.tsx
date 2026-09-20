@@ -43,11 +43,11 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
     <View style={styles.wrap} pointerEvents="box-none">
       <View style={[styles.bar, { height: 66 + bottomPad, paddingBottom: bottomPad }]}>
         {Platform.OS !== 'android' ? (
-          <BlurView intensity={30} tint="dark" style={StyleSheet.absoluteFill} />
+          <BlurView intensity={30} tint={t.dark ? 'dark' : 'light'} style={StyleSheet.absoluteFill} />
         ) : null}
         <Gradient
           deg={180}
-          colors={['rgba(7,10,20,.4)', 'rgba(7,10,20,.96)', 'rgba(7,10,20,.96)']}
+          colors={t.gradients.tabBar}
           locations={[0, 0.4, 1]}
           style={StyleSheet.absoluteFill}
         />

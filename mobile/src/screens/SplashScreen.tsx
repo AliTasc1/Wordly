@@ -94,8 +94,8 @@ export function SplashScreen() {
           height={52}
           radius={18}
           size={15}
-          fill="rgba(255,255,255,.04)"
-          border="rgba(255,255,255,.14)"
+          fill={t.alpha.w04}
+          border={t.alpha.w14}
           onPress={() => go('signin')}
         />
         <Txt s={10.5} c={t.colors.textDisabled} style={styles.legal}>

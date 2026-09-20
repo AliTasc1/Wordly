@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { BackButton, GhostButton } from '../components/Buttons';
 import { Card, StatTile } from '../components/Surfaces';
@@ -128,8 +129,8 @@ export function ReadScreen() {
           <StripeArt
             label={item.titleEn}
             height={132}
-            a="rgba(124,92,255,.14)"
-            b="rgba(46,107,255,.08)"
+            a={tint(t.colors.secondary, 0.14)}
+            b={tint(t.colors.primary, 0.08)}
             deg={25}
             band={9}
           />

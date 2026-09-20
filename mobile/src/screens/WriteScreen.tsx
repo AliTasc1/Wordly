@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, TextInput, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { BackButton, Press, PrimaryButton } from '../components/Buttons';
 import { Card, Panel } from '../components/Surfaces';
@@ -316,8 +317,8 @@ const makeStyles = (t: Theme) =>
       fontSize: 15.5,
     },
     essay: { minHeight: 120 },
-    inputOk: { borderColor: 'rgba(34,197,94,.55)', backgroundColor: 'rgba(34,197,94,.08)' },
-    inputBad: { borderColor: 'rgba(255,77,94,.55)', backgroundColor: 'rgba(255,77,94,.08)' },
+    inputOk: { borderColor: tint(t.colors.success, 0.55), backgroundColor: tint(t.colors.success, 0.08) },
+    inputBad: { borderColor: tint(t.colors.error, 0.55), backgroundColor: tint(t.colors.error, 0.08) },
     ghost: {
       alignSelf: 'flex-start',
       borderWidth: 1,

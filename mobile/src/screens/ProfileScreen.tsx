@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Press } from '../components/Buttons';
@@ -59,7 +60,7 @@ export function ProfileScreen() {
     <Screen tabbed padTop={0} padH={0} gap={0}>
       <Gradient
         deg={160}
-        colors={['rgba(124,92,255,.3)', 'rgba(46,107,255,.16)', 'transparent']}
+        colors={[tint(t.colors.secondary, 0.3), tint(t.colors.primary, 0.16), 'transparent']}
         style={styles.hero}>
         <View style={styles.heroTop}>
           <Press
@@ -255,7 +256,7 @@ const makeStyles = (t: Theme) =>
     pills: { flexDirection: 'row', gap: 7, marginTop: 9 },
     pill: { paddingVertical: 5, paddingHorizontal: 9 },
     xpCard: {
-      backgroundColor: 'rgba(0,0,0,.28)',
+      backgroundColor: t.alpha.black28,
       borderWidth: 1,
       borderColor: t.alpha.w10,
       borderRadius: radii.panel,
@@ -268,7 +269,7 @@ const makeStyles = (t: Theme) =>
     statTile: { borderRadius: radii.panel, padding: 13 },
     duelStats: {
       borderWidth: 1,
-      borderColor: 'rgba(255,77,94,.26)',
+      borderColor: tint(t.colors.error, 0.26),
       borderRadius: radii.section,
       padding: 16,
       gap: 10,
@@ -301,19 +302,19 @@ const makeStyles = (t: Theme) =>
     },
     badgeOverlap: { marginLeft: -8 },
     badgeWarm: {
-      backgroundColor: 'rgba(245,165,36,.2)',
-      borderColor: 'rgba(245,165,36,.4)',
+      backgroundColor: tint(t.colors.warning, 0.2),
+      borderColor: tint(t.colors.warning, 0.4),
     },
     badgeViolet: {
-      backgroundColor: 'rgba(124,92,255,.2)',
-      borderColor: 'rgba(124,92,255,.4)',
+      backgroundColor: tint(t.colors.secondary, 0.2),
+      borderColor: tint(t.colors.secondary, 0.4),
     },
     badgeCyan: {
-      backgroundColor: 'rgba(34,211,238,.2)',
-      borderColor: 'rgba(34,211,238,.4)',
+      backgroundColor: tint(t.colors.accent, 0.2),
+      borderColor: tint(t.colors.accent, 0.4),
     },
     badgeBlue: {
-      backgroundColor: 'rgba(46,107,255,.2)',
-      borderColor: 'rgba(46,107,255,.4)',
+      backgroundColor: tint(t.colors.primary, 0.2),
+      borderColor: tint(t.colors.primary, 0.4),
     },
   });

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
@@ -238,8 +239,8 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 13,
       borderRadius: radii.input,
       borderWidth: 1,
-      borderColor: 'rgba(255,77,94,.3)',
-      backgroundColor: 'rgba(255,77,94,.1)',
+      borderColor: tint(t.colors.error, 0.3),
+      backgroundColor: tint(t.colors.error, 0.1),
     },
     center: { alignSelf: 'center', paddingVertical: 6 },
   });

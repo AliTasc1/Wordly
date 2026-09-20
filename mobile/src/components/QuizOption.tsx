@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Press } from './Buttons';
 import { Txt } from './Txt';
 import { radii } from '../theme/tokens';
@@ -16,9 +17,9 @@ import type { OptionState } from '../state/useQuiz';
 export function optionStyle(state: OptionState, t: Theme): ViewStyle {
   switch (state) {
     case 'ok':
-      return { backgroundColor: 'rgba(34,197,94,.14)', borderColor: t.colors.success };
+      return { backgroundColor: tint(t.colors.success, 0.14), borderColor: t.colors.success };
     case 'bad':
-      return { backgroundColor: 'rgba(255,77,94,.14)', borderColor: t.colors.error };
+      return { backgroundColor: tint(t.colors.error, 0.14), borderColor: t.colors.error };
     case 'off':
       return { backgroundColor: t.colors.surface, borderColor: t.alpha.w06, opacity: 0.5 };
     default:
@@ -28,8 +29,8 @@ export function optionStyle(state: OptionState, t: Theme): ViewStyle {
 
 /** Border colour of the A/B/C/D badge, which tracks the option state. */
 function badgeBorder(state: OptionState, t: Theme) {
-  if (state === 'ok') return 'rgba(34,197,94,.3)';
-  if (state === 'bad') return 'rgba(255,77,94,.3)';
+  if (state === 'ok') return tint(t.colors.success, 0.3);
+  if (state === 'bad') return tint(t.colors.error, 0.3);
   return t.alpha.w10;
 }
 
@@ -98,8 +99,8 @@ export function AnswerFeedback({
         styles.feedback,
         { borderRadius: radius },
         correct
-          ? { backgroundColor: 'rgba(34,197,94,.14)', borderColor: 'rgba(34,197,94,.36)' }
-          : { backgroundColor: 'rgba(255,77,94,.13)', borderColor: 'rgba(255,77,94,.34)' },
+          ? { backgroundColor: tint(t.colors.success, 0.14), borderColor: tint(t.colors.success, 0.36) }
+          : { backgroundColor: tint(t.colors.error, 0.13), borderColor: tint(t.colors.error, 0.34) },
       ]}>
       <Txt f="m" s={titleSize} w={800} c={correct ? t.colors.successText : t.colors.errorText}>
         {title}

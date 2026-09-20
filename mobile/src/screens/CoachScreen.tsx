@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
@@ -85,7 +86,7 @@ export function CoachScreen() {
       {worst ? (
         <Gradient
           deg={145}
-          colors={['rgba(124,92,255,.28)', 'rgba(34,211,238,.1)', 'rgba(14,20,38,.95)']}
+          colors={[tint(t.colors.secondary, 0.28), tint(t.colors.accent, 0.1), tint(t.colors.surface, 0.95)]}
           style={styles.plan}>
           <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.12}>
             EN ÇOK ZORLANDIĞIN BÖLÜM
@@ -178,7 +179,7 @@ const makeStyles = (t: Theme) =>
     header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
     plan: {
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.32)',
+      borderColor: tint(t.colors.secondary, 0.32),
       borderRadius: radii.hero,
       padding: 18,
       gap: 8,
@@ -216,7 +217,7 @@ const makeStyles = (t: Theme) =>
       flexDirection: 'row',
       alignItems: 'center',
       gap: 7,
-      backgroundColor: 'rgba(34,197,94,.1)',
+      backgroundColor: tint(t.colors.success, 0.1),
       borderRadius: radii.input,
       paddingVertical: 9,
       paddingHorizontal: 11,

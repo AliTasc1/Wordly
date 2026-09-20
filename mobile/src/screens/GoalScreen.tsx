@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, Press, PrimaryButton } from '../components/Buttons';
 import { Chip, Divider } from '../components/Surfaces';
@@ -136,9 +137,9 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
     },
     goalActive: {
-      backgroundColor: 'rgba(46,107,255,.18)',
+      backgroundColor: tint(t.colors.primary, 0.18),
       borderColor: t.colors.primary,
-      boxShadow: '0px 0px 0px 3px rgba(46,107,255,.1)',
+      boxShadow: t.shadows.focusRingSoft,
     },
     goalIdle: { backgroundColor: t.colors.surface, borderColor: t.alpha.w08 },
     groupTitle: { marginBottom: 10 },

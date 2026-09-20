@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Card } from '../components/Surfaces';
@@ -131,26 +132,23 @@ export function HomeScreen() {
         <StatChip
           kicker="SEVİYE"
           value={cefr}
-          tint={t.colors.primary}
           kickerColor={t.colors.blueSoft}
-          fill="rgba(46,107,255,.2)"
-          border="rgba(46,107,255,.3)"
+          fill={tint(t.colors.primary, 0.2)}
+          border={tint(t.colors.primary, 0.3)}
         />
         <StatChip
           kicker="SERİ"
           value={streak ? `🔥 ${streak}` : '—'}
-          tint={t.colors.warning}
           kickerColor={t.colors.warningSoft}
-          fill="rgba(245,165,36,.18)"
-          border="rgba(245,165,36,.3)"
+          fill={tint(t.colors.warning, 0.18)}
+          border={tint(t.colors.warning, 0.3)}
         />
         <StatChip
           kicker="TOPLAM XP"
           value={tr(xp)}
-          tint={t.colors.secondary}
           kickerColor={t.colors.violetSoft}
-          fill="rgba(124,92,255,.2)"
-          border="rgba(124,92,255,.32)"
+          fill={tint(t.colors.secondary, 0.2)}
+          border={tint(t.colors.secondary, 0.32)}
         />
       </View>
 
@@ -208,7 +206,7 @@ export function HomeScreen() {
 
       <Press onPress={() => go('lesson')} scale={0.99}>
         <Gradient
-          colors={['rgba(46,107,255,.26)', 'rgba(124,92,255,.16)']}
+          colors={[tint(t.colors.primary, 0.26), tint(t.colors.secondary, 0.16)]}
           style={styles.continue}>
           <Gradient colors={t.gradients.brand} style={styles.continueBadge}>
             <Txt f="m" s={15} w={800}>
@@ -344,16 +342,16 @@ function StatChip({
 }: {
   kicker: string;
   value: string;
-  tint: string;
   kickerColor: string;
   fill: string;
   border: string;
 }) {
+  const t = useTheme();
   const styles = useStyles(makeStyles);
   return (
     <Gradient
       deg={140}
-      colors={[fill, 'rgba(14,20,38,.9)']}
+      colors={[fill, tint(t.colors.surface, 0.9)]}
       style={[styles.statChip, { borderColor: border }]}>
       <Txt f="mono" s={10} w={700} c={kickerColor} ls={0.1}>
         {kicker}
@@ -424,7 +422,7 @@ const makeStyles = (t: Theme) =>
       alignItems: 'center',
       gap: 14,
       borderWidth: 1,
-      borderColor: 'rgba(46,107,255,.34)',
+      borderColor: tint(t.colors.primary, 0.34),
       borderRadius: radii.section,
       padding: 16,
     },
@@ -439,10 +437,10 @@ const makeStyles = (t: Theme) =>
     coach: {
       gap: 10,
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.32)',
+      borderColor: tint(t.colors.secondary, 0.32),
       borderRadius: radii.section,
       padding: 16,
-      backgroundColor: 'rgba(124,92,255,.1)',
+      backgroundColor: tint(t.colors.secondary, 0.1),
     },
     coachHead: { flexDirection: 'row', alignItems: 'center', gap: 10 },
     coachBadge: {
@@ -457,7 +455,7 @@ const makeStyles = (t: Theme) =>
       paddingVertical: 4,
       paddingHorizontal: 9,
       borderRadius: radii.sm,
-      backgroundColor: 'rgba(34,211,238,.16)',
+      backgroundColor: tint(t.colors.accent, 0.16),
     },
     coachCta: {
       alignSelf: 'flex-start',
@@ -471,10 +469,10 @@ const makeStyles = (t: Theme) =>
     gameCard: {
       width: 126,
       borderWidth: 1,
-      borderColor: 'rgba(34,211,238,.28)',
+      borderColor: tint(t.colors.accent, 0.28),
       borderRadius: radii.tile,
       padding: 14,
-      backgroundColor: 'rgba(34,211,238,.09)',
+      backgroundColor: tint(t.colors.accent, 0.09),
       justifyContent: 'space-between',
     },
     gameRing: {
@@ -483,7 +481,7 @@ const makeStyles = (t: Theme) =>
       borderRadius: 23,
       borderWidth: 2,
       borderStyle: 'dashed',
-      borderColor: 'rgba(34,211,238,.5)',
+      borderColor: tint(t.colors.accent, 0.5),
       alignItems: 'center',
       justifyContent: 'center',
       marginVertical: 8,
@@ -504,9 +502,9 @@ const makeStyles = (t: Theme) =>
     },
     boardRow: { flexDirection: 'row', alignItems: 'center', gap: 10, paddingVertical: 7 },
     boardRowMe: {
-      backgroundColor: 'rgba(46,107,255,.12)',
+      backgroundColor: tint(t.colors.primary, 0.12),
       borderWidth: 1,
-      borderColor: 'rgba(46,107,255,.3)',
+      borderColor: tint(t.colors.primary, 0.3),
       borderRadius: radii.md,
       paddingHorizontal: 9,
       marginHorizontal: -9,

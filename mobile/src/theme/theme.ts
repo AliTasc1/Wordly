@@ -26,6 +26,8 @@ export type Gradients = {
   warm: Stops;
   card: Stops;
   cardHigh: Stops;
+  /** Alt çubuğun zemini — içerik çubuğun altından geçerken kaybolsun diye. */
+  tabBar: Stops;
 };
 
 function gradientsOf(name: ThemeName): Gradients {
@@ -45,6 +47,11 @@ function gradientsOf(name: ThemeName): Gradients {
     // gerekiyor, yoksa kartın içinde görünmeyen bir koyu leke kalıyor.
     card: light ? ['#FFFFFF', '#FBFCFE'] : ['#121A31', '#0E1426'],
     cardHigh: light ? ['#FFFFFF', '#F4F6FC'] : ['#141C33', '#0E1426'],
+    // Üstte saydam başlayıp altta tamamen kapanıyor: kaydırılan içerik
+    // çubuğa çarpıp durmuyor, çubuğun altında eriyor.
+    tabBar: light
+      ? ['rgba(247,248,252,.4)', 'rgba(247,248,252,.96)', 'rgba(247,248,252,.96)']
+      : ['rgba(7,10,20,.4)', 'rgba(7,10,20,.96)', 'rgba(7,10,20,.96)'],
   };
 }
 
@@ -68,7 +75,15 @@ export type Shadows = Record<
   | 'node'
   | 'avatar'
   | 'glowCyan'
-  | 'glowCyanSoft',
+  | 'glowCyanSoft'
+  /** Seçili seçeneğin çevresindeki halka — kenarlık değil, kenarlığın yankısı. */
+  | 'focusRing'
+  | 'focusRingSoft'
+  /** Basılı duran harf tuşu. */
+  | 'keyLift'
+  /** Mikrofon düğmesi: beklerken mavi, kayıttayken kırmızı hale. */
+  | 'micIdle'
+  | 'micLive',
   string
 >;
 
@@ -88,6 +103,13 @@ function shadowsOf(name: ThemeName): Shadows {
       avatar: '0px 7px 18px rgba(103,66,232,.22)',
       glowCyan: '0px 0px 10px rgba(14,124,144,.22)',
       glowCyanSoft: '0px 0px 8px rgba(14,124,144,.18)',
+      // Beyaz zeminde halka koyudan daha görünür oluyor; oranlar koyu temadan
+      // biraz yükseltildi, yoksa seçili seçenek seçilmemiş gibi duruyor.
+      focusRing: '0px 0px 0px 3px rgba(37,88,224,.18)',
+      focusRingSoft: '0px 0px 0px 3px rgba(37,88,224,.14)',
+      keyLift: '0px 8px 18px rgba(37,88,224,.3)',
+      micIdle: '0px 0px 0px 10px rgba(37,88,224,.14), 0px 12px 28px rgba(37,88,224,.3)',
+      micLive: '0px 0px 0px 12px rgba(214,40,57,.16), 0px 12px 28px rgba(214,40,57,.28)',
     };
   }
   return {
@@ -104,6 +126,11 @@ function shadowsOf(name: ThemeName): Shadows {
     avatar: '0px 14px 34px rgba(124,92,255,.4)',
     glowCyan: '0px 0px 16px rgba(34,211,238,.5)',
     glowCyanSoft: '0px 0px 14px rgba(34,211,238,.5)',
+    focusRing: '0px 0px 0px 3px rgba(46,107,255,.12)',
+    focusRingSoft: '0px 0px 0px 3px rgba(46,107,255,.1)',
+    keyLift: '0px 10px 24px rgba(46,107,255,.5)',
+    micIdle: '0px 0px 0px 10px rgba(46,107,255,.12), 0px 18px 40px rgba(46,107,255,.42)',
+    micLive: '0px 0px 0px 12px rgba(255,77,94,.16), 0px 18px 40px rgba(255,77,94,.4)',
   };
 }
 

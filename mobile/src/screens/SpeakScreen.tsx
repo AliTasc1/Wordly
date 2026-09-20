@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { press } from '../audio/feel';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -282,9 +283,9 @@ const makeStyles = (t: Theme) =>
     },
     body: { paddingHorizontal: 18, gap: 12 },
     situation: {
-      backgroundColor: 'rgba(124,92,255,.1)',
+      backgroundColor: tint(t.colors.secondary, 0.1),
       borderWidth: 1,
-      borderColor: 'rgba(124,92,255,.26)',
+      borderColor: tint(t.colors.secondary, 0.26),
       borderRadius: radii.section,
       padding: 15,
     },
@@ -327,11 +328,10 @@ const makeStyles = (t: Theme) =>
       justifyContent: 'center',
     },
     micIdle: {
-      boxShadow:
-        '0px 0px 0px 10px rgba(46,107,255,.12), 0px 18px 40px rgba(46,107,255,.42)',
+      boxShadow: t.shadows.micIdle,
     },
     micLive: {
-      boxShadow: '0px 0px 0px 12px rgba(255,77,94,.16), 0px 18px 40px rgba(255,77,94,.4)',
+      boxShadow: t.shadows.micLive,
     },
     recNote: { marginTop: -4 },
     compare: { flexDirection: 'row', gap: 8, alignItems: 'center' },

@@ -2,6 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { bad, ok, tap } from '../audio/feel';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -227,7 +228,7 @@ export function ArenaScreen() {
 
       <Gradient
         deg={180}
-        colors={['rgba(18,26,49,.9)', 'rgba(14,20,38,.9)']}
+        colors={[tint(t.colors.surfaceRaised, 0.9), tint(t.colors.surface, 0.9)]}
         style={styles.mission}>
         <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.12}>
           GÖREV
@@ -498,8 +499,8 @@ const makeStyles = (t: Theme) =>
       borderWidth: 1,
     },
     slotFilled: {
-      backgroundColor: 'rgba(34,211,238,.16)',
-      borderColor: 'rgba(34,211,238,.45)',
+      backgroundColor: tint(t.colors.accent, 0.16),
+      borderColor: tint(t.colors.accent, 0.45),
     },
     slotEmpty: {
       backgroundColor: t.alpha.w03,
@@ -554,7 +555,7 @@ const makeStyles = (t: Theme) =>
     keyOn: {
       borderColor: t.alpha.w30,
       transform: [{ scale: 1.06 }],
-      boxShadow: '0px 10px 24px rgba(46,107,255,.5)',
+      boxShadow: t.shadows.keyLift,
     },
     keyOff: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w14 },
     actions: { flexDirection: 'row', gap: 9, marginTop: 'auto' },
@@ -565,7 +566,7 @@ const makeStyles = (t: Theme) =>
       borderRadius: radii.section,
       borderWidth: 1,
       borderColor: t.alpha.w12,
-      backgroundColor: 'rgba(14,20,38,.96)',
+      backgroundColor: tint(t.colors.surface, 0.96),
       alignItems: 'center',
     },
     summaryRow: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },

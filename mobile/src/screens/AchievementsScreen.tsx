@@ -2,6 +2,7 @@ import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton } from '../components/Buttons';
@@ -78,7 +79,7 @@ export function AchievementsScreen() {
             <Gradient
               key={a.name}
               deg={160}
-              colors={[`${a.tint}26`, 'rgba(14,20,38,.95)']}
+              colors={[`${a.tint}26`, tint(t.colors.surface, 0.95)]}
               style={[styles.card, { borderColor: `${a.tint}59` }]}>
               {card}
             </Gradient>

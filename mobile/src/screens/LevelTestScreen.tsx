@@ -2,6 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
+import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { PrimaryButton } from '../components/Buttons';
@@ -169,7 +170,7 @@ const makeStyles = (t: Theme) =>
   StyleSheet.create({
     header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
     tag: { paddingVertical: 5, paddingHorizontal: 10, borderRadius: radii.chipSm, borderWidth: 1 },
-    typeTag: { backgroundColor: 'rgba(124,92,255,.16)', borderColor: 'rgba(124,92,255,.32)' },
+    typeTag: { backgroundColor: tint(t.colors.secondary, 0.16), borderColor: tint(t.colors.secondary, 0.32) },
     dots: { flexDirection: 'row', gap: 2 },
     dot: { flex: 1, height: 4, borderRadius: 9 },
     difficulty: { flexDirection: 'row', alignItems: 'center', gap: 7 },
