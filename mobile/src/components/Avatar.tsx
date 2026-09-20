@@ -49,13 +49,13 @@ export function Avatar({
 /** Online/offline dot anchored to an avatar's corner. */
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  dot: {
-    position: 'absolute',
-    bottom: -1,
-    right: -1,
-    width: 12,
-    height: 12,
-    borderRadius: 6,
-    borderWidth: 2.5,
-  },
-});
+    dot: {
+      position: 'absolute',
+      bottom: -1,
+      right: -1,
+      width: 12,
+      height: 12,
+      borderRadius: 6,
+      borderWidth: 2.5,
+    },
+  });

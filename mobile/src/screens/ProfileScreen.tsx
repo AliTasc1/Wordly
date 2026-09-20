@@ -1,12 +1,14 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Press } from '../components/Buttons';
 import { Card, Pill, StatTile } from '../components/Surfaces';
 import { ProgressBar, SkillBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { displayNameOf, initialOf, memberText } from '../content/identity';
 import { achievementsOf, facts, summarize } from '../content/achievements';
 import { useAuth } from '../state/AuthContext';
@@ -16,6 +18,8 @@ import { deckProgress, totals, tr } from '../content/progress';
 
 /** 26 · Profil — a game-character profile for a learner. */
 export function ProfileScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
   const { positions, cefr, savedWords, xp, streak } = useApp();
   const { user } = useAuth();
@@ -36,9 +40,9 @@ export function ProfileScreen() {
   // veriyle çalışıyor, olmayan bir maçın oranını göstermek uydurmaktır.
   const seen = totals(positions);
   const stats = [
-    { value: tr(seen.words), label: 'kelime görüldü', tint: colors.accent },
-    { value: tr(seen.lessons), label: 'gramer dersi', tint: colors.warning },
-    { value: tr(savedWords.length), label: 'kaydedilen', tint: colors.secondary },
+    { value: tr(seen.words), label: 'kelime görüldü', tint: t.colors.accent },
+    { value: tr(seen.lessons), label: 'gramer dersi', tint: t.colors.warning },
+    { value: tr(savedWords.length), label: 'kaydedilen', tint: t.colors.secondary },
   ];
 
   // Beceri dağılımı da gerçek: bulunduğun seviyede her bölümün ne kadarını
@@ -72,7 +76,7 @@ export function ProfileScreen() {
             numarası ve lig diye bir şey hiç olmadı; ikisi de silindi.
             Üyelik süresi ise gerçekten hesaplanabiliyor. */}
         <View style={styles.identity}>
-          <Gradient colors={gradients.violetCyan} style={styles.avatar}>
+          <Gradient colors={t.gradients.violetCyan} style={styles.avatar}>
             <Txt f="m" s={32} w={800}>
               {initialOf(name)}
             </Txt>
@@ -82,14 +86,14 @@ export function ProfileScreen() {
             <Txt f="m" s={23} w={800}>
               {name}
             </Txt>
-            <Txt s={12} w={600} c={colors.textSubtle} style={styles.handle}>
+            <Txt s={12} w={600} c={t.colors.textSubtle} style={styles.handle}>
               {memberText(user?.created_at)}
             </Txt>
             <View style={styles.pills}>
-              <Pill label={cefr} tint={colors.accent} size={10.5} style={styles.pill} />
+              <Pill label={cefr} tint={t.colors.accent} size={10.5} style={styles.pill} />
               <Pill
                 label={streak ? `🔥 ${streak} gün` : 'seri yok'}
-                tint={colors.warning}
+                tint={t.colors.warning}
                 size={10.5}
                 style={styles.pill}
               />
@@ -99,22 +103,22 @@ export function ProfileScreen() {
 
         <View style={styles.xpCard}>
           <View style={styles.xpHead}>
-            <Txt f="mono" s={11.5} w={700} c={colors.textSubtle}>
+            <Txt f="mono" s={11.5} w={700} c={t.colors.textSubtle}>
               TOPLAM XP
             </Txt>
-            <Txt f="mono" s={11.5} w={700} c={colors.accent}>
+            <Txt f="mono" s={11.5} w={700} c={t.colors.accent}>
               {tr(xp)} / {tr(nextMark)} XP
             </Txt>
           </View>
           <ProgressBar
             pct={Math.round(((xp % 1000) / 1000) * 100)}
-            from={colors.secondary}
-            to={colors.accent}
+            from={t.colors.secondary}
+            to={t.colors.accent}
             height={9}
-            track={alpha.w10}
-            glow={shadows.glowCyanSoft}
+            track={t.alpha.w10}
+            glow={t.shadows.glowCyanSoft}
           />
-          <Txt s={11} c={colors.textDim}>
+          <Txt s={11} c={t.colors.textDim}>
             Bir sonraki bine {tr(nextMark - xp)} XP kaldı.
           </Txt>
         </View>
@@ -144,8 +148,8 @@ export function ProfileScreen() {
               name={deck.label}
               value={`${tr(deck.done)}/${tr(deck.total)}`}
               pct={deck.pct}
-              from={deck.pct < 55 ? colors.warning : colors.secondary}
-              to={deck.pct < 55 ? colors.orange : colors.accent}
+              from={deck.pct < 55 ? t.colors.warning : t.colors.secondary}
+              to={deck.pct < 55 ? t.colors.orange : t.colors.accent}
             />
           ))}
         </Card>
@@ -172,7 +176,7 @@ export function ProfileScreen() {
             <Txt f="m" s={13.5} w={700}>
               Başarımlar
             </Txt>
-            <Txt s={11.5} c={colors.textDim}>
+            <Txt s={11.5} c={t.colors.textDim}>
               {/* "14 / 48" sabit yazılıydı; başarım hesabı gerçek olduğu
                   hâlde bu satır uydurma bir sayı gösteriyordu. */}
               {badges.unlocked} / {badges.total} açıldı
@@ -193,7 +197,7 @@ export function ProfileScreen() {
             <Txt f="m" s={13.5} w={700}>
               Haftalık liderlik
             </Txt>
-            <Txt s={11.5} c={colors.textDim}>
+            <Txt s={11.5} c={t.colors.textDim}>
               Katılanların bu hafta kazandığı XP
             </Txt>
           </View>
@@ -210,7 +214,7 @@ export function ProfileScreen() {
             <Txt f="m" s={13.5} w={700}>
               Gelişim analizi
             </Txt>
-            <Txt s={11.5} c={colors.textDim}>
+            <Txt s={11.5} c={t.colors.textDim}>
               Haftalık rapor hazır
             </Txt>
           </View>
@@ -223,92 +227,93 @@ export function ProfileScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  hero: { paddingTop: 58, paddingHorizontal: 18, paddingBottom: 22, gap: 14 },
-  heroTop: { flexDirection: 'row', justifyContent: 'flex-end' },
-  settingsBtn: {
-    width: 38,
-    height: 38,
-    borderRadius: radii.md,
-    borderWidth: 1,
-    borderColor: alpha.w14,
-    backgroundColor: alpha.w07,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  identity: { flexDirection: 'row', alignItems: 'center', gap: 15 },
-  avatar: {
-    width: 84,
-    height: 84,
-    borderRadius: 28,
-    alignItems: 'center',
-    justifyContent: 'center',
-    boxShadow: shadows.avatar,
-  },
-  handle: { marginTop: 2 },
-  pills: { flexDirection: 'row', gap: 7, marginTop: 9 },
-  pill: { paddingVertical: 5, paddingHorizontal: 9 },
-  xpCard: {
-    backgroundColor: 'rgba(0,0,0,.28)',
-    borderWidth: 1,
-    borderColor: alpha.w10,
-    borderRadius: radii.panel,
-    padding: 13,
-    gap: 8,
-  },
-  xpHead: { flexDirection: 'row', justifyContent: 'space-between' },
-  body: { paddingTop: 4, paddingHorizontal: 18, gap: 13 },
-  stats: { flexDirection: 'row', gap: 9 },
-  statTile: { borderRadius: radii.panel, padding: 13 },
-  duelStats: {
-    borderWidth: 1,
-    borderColor: 'rgba(255,77,94,.26)',
-    borderRadius: radii.section,
-    padding: 16,
-    gap: 10,
-  },
-  duelHead: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  duelBar: { flexDirection: 'row', height: 12, borderRadius: 9, overflow: 'hidden' },
-  duelLegend: { flexDirection: 'row', gap: 14 },
-  navRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.tile,
-    padding: 15,
-  },
-  badgeStack: { flexDirection: 'row' },
-  badge: {
-    width: 36,
-    height: 36,
-    borderRadius: radii.md,
-    borderWidth: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  badgeOverlap: { marginLeft: -8 },
-  badgeWarm: {
-    backgroundColor: 'rgba(245,165,36,.2)',
-    borderColor: 'rgba(245,165,36,.4)',
-  },
-  badgeViolet: {
-    backgroundColor: 'rgba(124,92,255,.2)',
-    borderColor: 'rgba(124,92,255,.4)',
-  },
-  badgeCyan: {
-    backgroundColor: 'rgba(34,211,238,.2)',
-    borderColor: 'rgba(34,211,238,.4)',
-  },
-  badgeBlue: {
-    backgroundColor: 'rgba(46,107,255,.2)',
-    borderColor: 'rgba(46,107,255,.4)',
-  },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    hero: { paddingTop: 58, paddingHorizontal: 18, paddingBottom: 22, gap: 14 },
+    heroTop: { flexDirection: 'row', justifyContent: 'flex-end' },
+    settingsBtn: {
+      width: 38,
+      height: 38,
+      borderRadius: radii.md,
+      borderWidth: 1,
+      borderColor: t.alpha.w14,
+      backgroundColor: t.alpha.w07,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    identity: { flexDirection: 'row', alignItems: 'center', gap: 15 },
+    avatar: {
+      width: 84,
+      height: 84,
+      borderRadius: 28,
+      alignItems: 'center',
+      justifyContent: 'center',
+      boxShadow: t.shadows.avatar,
+    },
+    handle: { marginTop: 2 },
+    pills: { flexDirection: 'row', gap: 7, marginTop: 9 },
+    pill: { paddingVertical: 5, paddingHorizontal: 9 },
+    xpCard: {
+      backgroundColor: 'rgba(0,0,0,.28)',
+      borderWidth: 1,
+      borderColor: t.alpha.w10,
+      borderRadius: radii.panel,
+      padding: 13,
+      gap: 8,
+    },
+    xpHead: { flexDirection: 'row', justifyContent: 'space-between' },
+    body: { paddingTop: 4, paddingHorizontal: 18, gap: 13 },
+    stats: { flexDirection: 'row', gap: 9 },
+    statTile: { borderRadius: radii.panel, padding: 13 },
+    duelStats: {
+      borderWidth: 1,
+      borderColor: 'rgba(255,77,94,.26)',
+      borderRadius: radii.section,
+      padding: 16,
+      gap: 10,
+    },
+    duelHead: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+    },
+    duelBar: { flexDirection: 'row', height: 12, borderRadius: 9, overflow: 'hidden' },
+    duelLegend: { flexDirection: 'row', gap: 14 },
+    navRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      backgroundColor: t.colors.surface,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.tile,
+      padding: 15,
+    },
+    badgeStack: { flexDirection: 'row' },
+    badge: {
+      width: 36,
+      height: 36,
+      borderRadius: radii.md,
+      borderWidth: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    badgeOverlap: { marginLeft: -8 },
+    badgeWarm: {
+      backgroundColor: 'rgba(245,165,36,.2)',
+      borderColor: 'rgba(245,165,36,.4)',
+    },
+    badgeViolet: {
+      backgroundColor: 'rgba(124,92,255,.2)',
+      borderColor: 'rgba(124,92,255,.4)',
+    },
+    badgeCyan: {
+      backgroundColor: 'rgba(34,211,238,.2)',
+      borderColor: 'rgba(34,211,238,.4)',
+    },
+    badgeBlue: {
+      backgroundColor: 'rgba(46,107,255,.2)',
+      borderColor: 'rgba(46,107,255,.4)',
+    },
+  });

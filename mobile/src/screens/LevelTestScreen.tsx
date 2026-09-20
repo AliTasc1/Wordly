@@ -1,11 +1,13 @@
 import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { PrimaryButton } from '../components/Buttons';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { LEVELS, placement } from '../content';
 import { scorePlacement } from '../content/score';
 import { useApp } from '../state/AppContext';
@@ -16,6 +18,8 @@ const LETTERS = ['A', 'B', 'C', 'D'];
 
 /** 04 · Seviye Testi — the 40-question placement test, easiest first. */
 export function LevelTestScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   useStudySession();
   const { go } = useGo();
   const { setCefr, setTestResult } = useApp();
@@ -85,11 +89,11 @@ export function LevelTestScreen() {
         />
       }>
       <View style={styles.header}>
-        <Txt f="mono" s={12.5} w={700} c={colors.textDim}>
+        <Txt f="mono" s={12.5} w={700} c={t.colors.textDim}>
           SORU {index + 1} / {questions.length}
         </Txt>
         <View style={[styles.tag, styles.typeTag]}>
-          <Txt f="m" s={11} w={700} c={colors.violetSoft}>
+          <Txt f="m" s={11} w={700} c={t.colors.violetSoft}>
             DİLBİLGİSİ
           </Txt>
         </View>
@@ -103,7 +107,7 @@ export function LevelTestScreen() {
               styles.dot,
               {
                 backgroundColor:
-                  i < index ? colors.accent : i === index ? colors.primary : alpha.w10,
+                  i < index ? t.colors.accent : i === index ? t.colors.primary : t.alpha.w10,
               },
             ]}
           />
@@ -111,7 +115,7 @@ export function LevelTestScreen() {
       </View>
 
       <View style={styles.difficulty}>
-        <Txt s={11.5} w={600} c={colors.textDim}>
+        <Txt s={11.5} w={600} c={t.colors.textDim}>
           Zorluk
         </Txt>
         {LEVELS.map((_, i) => (
@@ -119,7 +123,7 @@ export function LevelTestScreen() {
             key={i}
             style={[
               styles.diffBar,
-              { backgroundColor: i < difficulty ? colors.warning : alpha.w12 },
+              { backgroundColor: i < difficulty ? t.colors.warning : t.alpha.w12 },
             ]}
           />
         ))}
@@ -128,8 +132,8 @@ export function LevelTestScreen() {
         </Txt>
       </View>
 
-      <Gradient deg={180} colors={gradients.card} style={styles.card}>
-        <Txt s={12} w={600} c={colors.textFaint}>
+      <Gradient deg={180} colors={t.gradients.card} style={styles.card}>
+        <Txt s={12} w={600} c={t.colors.textFaint}>
           Boşluğa gelecek doğru seçeneği işaretle
         </Txt>
         <Txt f="m" s={23} w={700} lh={1.35}>
@@ -161,20 +165,21 @@ export function LevelTestScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-  tag: { paddingVertical: 5, paddingHorizontal: 10, borderRadius: radii.chipSm, borderWidth: 1 },
-  typeTag: { backgroundColor: 'rgba(124,92,255,.16)', borderColor: 'rgba(124,92,255,.32)' },
-  dots: { flexDirection: 'row', gap: 2 },
-  dot: { flex: 1, height: 4, borderRadius: 9 },
-  difficulty: { flexDirection: 'row', alignItems: 'center', gap: 7 },
-  diffBar: { width: 14, height: 6, borderRadius: 2 },
-  card: {
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.hero,
-    padding: 22,
-    gap: 14,
-  },
-  options: { gap: 10 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
+    tag: { paddingVertical: 5, paddingHorizontal: 10, borderRadius: radii.chipSm, borderWidth: 1 },
+    typeTag: { backgroundColor: 'rgba(124,92,255,.16)', borderColor: 'rgba(124,92,255,.32)' },
+    dots: { flexDirection: 'row', gap: 2 },
+    dot: { flex: 1, height: 4, borderRadius: 9 },
+    difficulty: { flexDirection: 'row', alignItems: 'center', gap: 7 },
+    diffBar: { width: 14, height: 6, borderRadius: 2 },
+    card: {
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.hero,
+      padding: 22,
+      gap: 14,
+    },
+    options: { gap: 10 },
+  });

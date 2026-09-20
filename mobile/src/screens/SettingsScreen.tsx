@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Alert, Linking, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { IconTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { LINKS } from '../data/links';
 import { APP_VERSION, SETTINGS_FOOTER } from '../data/subscription';
 import { attribution } from '../content';
@@ -38,6 +40,8 @@ function syncNote(sync: ReturnType<typeof useApp>['sync']): string {
 
 /** 31 · Ayarlar — account, notifications, audio, accessibility, language. */
 export function SettingsScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
   const back = useBack('profile');
   const { fire, cefr, goals, dailyTime, resetProgress, sync, haptics, setHaptics, saved } =
@@ -169,7 +173,7 @@ export function SettingsScreen() {
         <View style={styles.account}>
           <IconTile
             glyph={user ? '✓' : '→'}
-            tint={user ? colors.success : colors.primary}
+            tint={user ? t.colors.success : t.colors.primary}
             size={42}
             radius={radii.card}
             fontSize={17}
@@ -182,7 +186,7 @@ export function SettingsScreen() {
                   ? 'Hesabın bağlı'
                   : 'Hesabını bağla'}
             </Txt>
-            <Txt s={11.5} c={colors.textFaint} style={styles.itemSub}>
+            <Txt s={11.5} c={t.colors.textFaint} style={styles.itemSub}>
               {loading
                 ? ' '
                 : user
@@ -206,7 +210,7 @@ export function SettingsScreen() {
           <View style={styles.account}>
             <IconTile
               glyph={sync.problem ? '!' : '⟳'}
-              tint={sync.problem ? colors.warning : colors.accent}
+              tint={sync.problem ? t.colors.warning : t.colors.accent}
               size={42}
               radius={radii.card}
               fontSize={17}
@@ -217,7 +221,7 @@ export function SettingsScreen() {
               </Txt>
               <Txt
                 s={11.5}
-                c={sync.problem ? colors.warningText : colors.textFaint}
+                c={sync.problem ? t.colors.warningText : t.colors.textFaint}
                 style={styles.itemSub}>
                 {syncNote(sync)}
               </Txt>
@@ -233,7 +237,7 @@ export function SettingsScreen() {
           <View style={styles.account}>
             <IconTile
               glyph="🏆"
-              tint={colors.warning}
+              tint={t.colors.warning}
               size={42}
               radius={radii.card}
               fontSize={17}
@@ -242,7 +246,7 @@ export function SettingsScreen() {
               <Txt f="m" s={13.5} w={700}>
                 Liderlik tablosu
               </Txt>
-              <Txt s={11.5} c={colors.textFaint} style={styles.itemSub}>
+              <Txt s={11.5} c={t.colors.textFaint} style={styles.itemSub}>
                 Katılım ve görünen ad
               </Txt>
             </View>
@@ -257,14 +261,14 @@ export function SettingsScreen() {
         <Gradient
           colors={['rgba(124,92,255,.22)', 'rgba(14,20,38,.92)']}
           style={styles.premium}>
-          <Gradient colors={gradients.violetCyan} style={styles.premiumIcon}>
+          <Gradient colors={t.gradients.violetCyan} style={styles.premiumIcon}>
             <Txt s={18}>✦</Txt>
           </Gradient>
           <View style={styles.flex}>
             <Txt f="m" s={13.5} w={700}>
               {SETTINGS_FOOTER.premium.title}
             </Txt>
-            <Txt s={11.5} c={colors.violetSoft}>
+            <Txt s={11.5} c={t.colors.violetSoft}>
               {SETTINGS_FOOTER.premium.sub}
             </Txt>
           </View>
@@ -282,7 +286,7 @@ export function SettingsScreen() {
           f="mono"
           s={10}
           w={700}
-          c={colors.textDisabled}
+          c={t.colors.textDisabled}
           ls={0.14}
           style={styles.groupName}>
           ÖĞRENME
@@ -294,7 +298,7 @@ export function SettingsScreen() {
             style={[styles.item, styles.itemDivider]}>
             <IconTile
               glyph="📊"
-              tint={colors.accent}
+              tint={t.colors.accent}
               size={36}
               radius={12}
               fontSize={15}
@@ -303,11 +307,11 @@ export function SettingsScreen() {
               <Txt f="m" s={13} w={700}>
                 Seviye
               </Txt>
-              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
                 Yeniden test et
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
               {cefr}
             </Txt>
           </Press>
@@ -315,7 +319,7 @@ export function SettingsScreen() {
           <Press onPress={() => go('goal')} scale={0.995} style={styles.item}>
             <IconTile
               glyph="🎯"
-              tint={colors.secondary}
+              tint={t.colors.secondary}
               size={36}
               radius={12}
               fontSize={15}
@@ -324,11 +328,11 @@ export function SettingsScreen() {
               <Txt f="m" s={13} w={700}>
                 Hedefler
               </Txt>
-              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
                 {goals.join(', ')} · {dailyTime}/gün
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
               Değiştir
             </Txt>
           </Press>
@@ -340,7 +344,7 @@ export function SettingsScreen() {
           f="mono"
           s={10}
           w={700}
-          c={colors.textDisabled}
+          c={t.colors.textDisabled}
           ls={0.14}
           style={styles.groupName}>
           UYGULAMA
@@ -354,7 +358,7 @@ export function SettingsScreen() {
             style={[styles.item, styles.itemDivider]}>
             <IconTile
               glyph="📳"
-              tint={colors.secondary}
+              tint={t.colors.secondary}
               size={36}
               radius={12}
               fontSize={15}
@@ -363,11 +367,11 @@ export function SettingsScreen() {
               <Txt f="m" s={13} w={700}>
                 Titreşim
               </Txt>
-              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
                 Harf seçimi ve cevap dönüşü
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={haptics ? colors.success : colors.textGhost}>
+            <Txt f="mono" s={11} w={700} c={haptics ? t.colors.success : t.colors.textGhost}>
               {haptics ? 'Açık' : 'Kapalı'}
             </Txt>
           </Press>
@@ -376,7 +380,7 @@ export function SettingsScreen() {
           <View style={[styles.item, styles.itemDivider]}>
             <IconTile
               glyph="🌍"
-              tint={colors.primary}
+              tint={t.colors.primary}
               size={36}
               radius={12}
               fontSize={15}
@@ -385,11 +389,11 @@ export function SettingsScreen() {
               <Txt f="m" s={13} w={700}>
                 Arayüz dili
               </Txt>
-              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
                 Şu an yalnızca Türkçe
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
               TR
             </Txt>
           </View>
@@ -397,7 +401,7 @@ export function SettingsScreen() {
           <View style={styles.item}>
             <IconTile
               glyph="🎧"
-              tint={colors.accent}
+              tint={t.colors.accent}
               size={36}
               radius={12}
               fontSize={15}
@@ -406,11 +410,11 @@ export function SettingsScreen() {
               <Txt f="m" s={13} w={700}>
                 Aksan
               </Txt>
-              <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+              <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
                 İçeriğin tamamı Amerikan yazımında
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
               US
             </Txt>
           </View>
@@ -427,7 +431,7 @@ export function SettingsScreen() {
           f="mono"
           s={10}
           w={700}
-          c={colors.textDisabled}
+          c={t.colors.textDisabled}
           ls={0.14}
           style={styles.groupName}>
           KAYNAKLAR
@@ -437,7 +441,7 @@ export function SettingsScreen() {
             <View
               key={line}
               style={[styles.credit, i < all.length - 1 && styles.itemDivider]}>
-              <Txt s={11.5} lh={1.55} c={colors.textFaint}>
+              <Txt s={11.5} lh={1.55} c={t.colors.textFaint}>
                 {line}
               </Txt>
             </View>
@@ -450,7 +454,7 @@ export function SettingsScreen() {
           da yayınlamak zorunda kalırdık ve mağaza incelemesi boyunca eski
           metin yürürlükte kalırdı. */}
       <View style={styles.group}>
-        <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14} style={styles.groupName}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14} style={styles.groupName}>
           YASAL
         </Txt>
         <View style={styles.groupBody}>
@@ -473,7 +477,7 @@ export function SettingsScreen() {
               style={[styles.item, i < all.length - 1 && styles.itemDivider]}>
               <IconTile
                 glyph={row.glyph}
-                tint={colors.textDim}
+                tint={t.colors.textDim}
                 size={36}
                 radius={12}
                 fontSize={15}
@@ -482,11 +486,11 @@ export function SettingsScreen() {
                 <Txt f="m" s={13} w={700}>
                   {row.label}
                 </Txt>
-                <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
                   {row.sub}
                 </Txt>
               </View>
-              <Txt f="m" s={16} w={800} c={colors.textGhost}>
+              <Txt f="m" s={16} w={800} c={t.colors.textGhost}>
                 ↗
               </Txt>
             </Press>
@@ -501,7 +505,7 @@ export function SettingsScreen() {
         <View style={styles.account}>
           <IconTile
             glyph="↓"
-            tint={colors.accent}
+            tint={t.colors.accent}
             size={42}
             radius={radii.card}
             fontSize={17}
@@ -510,7 +514,7 @@ export function SettingsScreen() {
             <Txt f="m" s={13.5} w={700}>
               {exporting ? 'Dosya hazırlanıyor…' : 'Verilerimi indir'}
             </Txt>
-            <Txt s={11.5} c={colors.textFaint} style={styles.itemSub}>
+            <Txt s={11.5} c={t.colors.textFaint} style={styles.itemSub}>
               Tüm ilerlemen tek bir dosyada — kaydet ya da kendine gönder
             </Txt>
           </View>
@@ -518,7 +522,7 @@ export function SettingsScreen() {
       </Press>
 
       <Press onPress={askReset} style={styles.danger}>
-        <Txt f="m" s={13.5} w={700} c={colors.textDim}>
+        <Txt f="m" s={13.5} w={700} c={t.colors.textDim}>
           İlerlemeyi sıfırla
         </Txt>
       </Press>
@@ -527,7 +531,7 @@ export function SettingsScreen() {
           açılış ekranına dönüyordu, yani hiçbir oturumu kapatmıyordu. */}
       {user ? (
         <Press onPress={askSignOut} style={styles.signOut}>
-          <Txt f="m" s={14} w={700} c={colors.errorSoft}>
+          <Txt f="m" s={14} w={700} c={t.colors.errorSoft}>
             {SETTINGS_FOOTER.signOut}
           </Txt>
         </Press>
@@ -539,84 +543,85 @@ export function SettingsScreen() {
           en yıkıcı düğme, en kolay basılan düğme olmamalı. */}
       {user ? (
         <Press onPress={askDelete} style={styles.deleteAccount}>
-          <Txt f="m" s={13} w={700} c={colors.textDim}>
+          <Txt f="m" s={13} w={700} c={t.colors.textDim}>
             Hesabımı sil
           </Txt>
         </Press>
       ) : null}
 
-      <Txt f="mono" s={10.5} w={600} c={colors.textDisabled} style={styles.version}>
+      <Txt f="mono" s={10.5} w={600} c={t.colors.textDisabled} style={styles.version}>
         {SETTINGS_FOOTER.version}
       </Txt>
     </Screen>
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  premium: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    borderWidth: 1,
-    borderColor: 'rgba(124,92,255,.32)',
-    borderRadius: radii.tile,
-    padding: 15,
-  },
-  account: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.tile,
-    backgroundColor: colors.surface,
-    padding: 15,
-  },
-  premiumIcon: {
-    width: 42,
-    height: 42,
-    borderRadius: radii.card,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  danger: {
-    alignItems: 'center',
-    paddingVertical: 14,
-    borderRadius: radii.input,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    backgroundColor: alpha.w04,
-  },
-  group: { gap: 7 },
-  groupName: { paddingHorizontal: 4 },
-  groupBody: {
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: alpha.w07,
-    borderRadius: radii.panel,
-    overflow: 'hidden',
-  },
-  item: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingVertical: 13,
-    paddingHorizontal: 14,
-  },
-  itemDivider: { borderBottomWidth: 1, borderBottomColor: alpha.w06 },
-  itemSub: { marginTop: 1 },
-  signOut: {
-    height: 50,
-    borderRadius: radii.input,
-    borderWidth: 1,
-    borderColor: 'rgba(255,77,94,.3)',
-    backgroundColor: 'rgba(255,77,94,.1)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  credit: { paddingVertical: 11, paddingHorizontal: 13 },
-  deleteAccount: { alignItems: 'center', paddingVertical: 12 },
-  version: { textAlign: 'center' },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    premium: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      borderWidth: 1,
+      borderColor: 'rgba(124,92,255,.32)',
+      borderRadius: radii.tile,
+      padding: 15,
+    },
+    account: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.tile,
+      backgroundColor: t.colors.surface,
+      padding: 15,
+    },
+    premiumIcon: {
+      width: 42,
+      height: 42,
+      borderRadius: radii.card,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    danger: {
+      alignItems: 'center',
+      paddingVertical: 14,
+      borderRadius: radii.input,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      backgroundColor: t.alpha.w04,
+    },
+    group: { gap: 7 },
+    groupName: { paddingHorizontal: 4 },
+    groupBody: {
+      backgroundColor: t.colors.surface,
+      borderWidth: 1,
+      borderColor: t.alpha.w07,
+      borderRadius: radii.panel,
+      overflow: 'hidden',
+    },
+    item: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      paddingVertical: 13,
+      paddingHorizontal: 14,
+    },
+    itemDivider: { borderBottomWidth: 1, borderBottomColor: t.alpha.w06 },
+    itemSub: { marginTop: 1 },
+    signOut: {
+      height: 50,
+      borderRadius: radii.input,
+      borderWidth: 1,
+      borderColor: 'rgba(255,77,94,.3)',
+      backgroundColor: 'rgba(255,77,94,.1)',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    credit: { paddingVertical: 11, paddingHorizontal: 13 },
+    deleteAccount: { alignItems: 'center', paddingVertical: 12 },
+    version: { textAlign: 'center' },
+  });

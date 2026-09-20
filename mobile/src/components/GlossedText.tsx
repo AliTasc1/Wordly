@@ -86,10 +86,10 @@ export function GlossedText({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  glossed: {
-    backgroundColor: 'rgba(46,107,255,.22)',
-    textDecorationLine: 'underline',
-    textDecorationStyle: 'dashed',
-    textDecorationColor: t.colors.link,
-  },
-});
+    glossed: {
+      backgroundColor: 'rgba(46,107,255,.22)',
+      textDecorationLine: 'underline',
+      textDecorationStyle: 'dashed',
+      textDecorationColor: t.colors.link,
+    },
+  });

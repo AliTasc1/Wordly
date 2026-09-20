@@ -1,12 +1,13 @@
 import React from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { BottomTabBarProps } from '@react-navigation/bottom-tabs';
 import { BlurView } from 'expo-blur';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Gradient } from '../components/Gradient';
 import { Press } from '../components/Buttons';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients } from '../theme/tokens';
 import { TabName } from './routes';
 
 /*
@@ -32,6 +33,8 @@ const ITEMS: { name: TabName; icon: string; label: string }[] = [
 
 /** Alt menü. */
 export function TabBar({ state, navigation }: BottomTabBarProps) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const insets = useSafeAreaInsets();
   const bottomPad = insets.bottom || 22;
   const activeName = state.routes[state.index]?.name;
@@ -67,12 +70,12 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
               }}
               style={styles.item}>
               {focused ? (
-                <Gradient deg={90} colors={gradients.progress} style={styles.dot} />
+                <Gradient deg={90} colors={t.gradients.progress} style={styles.dot} />
               ) : null}
               <Txt s={19} style={styles.icon}>
                 {item.icon}
               </Txt>
-              <Txt s={10.5} w={700} c={focused ? colors.text : colors.textGhost}>
+              <Txt s={10.5} w={700} c={focused ? t.colors.text : t.colors.textGhost}>
                 {item.label}
               </Txt>
             </Press>
@@ -83,23 +86,24 @@ export function TabBar({ state, navigation }: BottomTabBarProps) {
   );
 }
 
-const styles = StyleSheet.create({
-  wrap: { position: 'absolute', left: 0, right: 0, bottom: 0 },
-  bar: {
-    flexDirection: 'row',
-    paddingTop: 8,
-    paddingHorizontal: 10,
-    borderTopWidth: 1,
-    borderTopColor: alpha.w08,
-    overflow: 'hidden',
-  },
-  item: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 4,
-    paddingVertical: 8,
-  },
-  icon: { lineHeight: 22 },
-  dot: { position: 'absolute', top: 2, width: 22, height: 3, borderRadius: 9 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    wrap: { position: 'absolute', left: 0, right: 0, bottom: 0 },
+    bar: {
+      flexDirection: 'row',
+      paddingTop: 8,
+      paddingHorizontal: 10,
+      borderTopWidth: 1,
+      borderTopColor: t.alpha.w08,
+      overflow: 'hidden',
+    },
+    item: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 4,
+      paddingVertical: 8,
+    },
+    icon: { lineHeight: 22 },
+    dot: { position: 'absolute', top: 2, width: 22, height: 3, borderRadius: 9 },
+  });

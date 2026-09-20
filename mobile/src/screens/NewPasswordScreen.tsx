@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen, Spacer } from '../components/Screen';
 import { PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
 import { Notice } from '../components/Notice';
 import { Txt } from '../components/Txt';
-import { colors } from '../theme/tokens';
 import { MIN_PASSWORD, passwordProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useGo } from '../navigation/useGo';
@@ -19,6 +20,8 @@ import { useGo } from '../navigation/useGo';
  * bırakmak olurdu. Vazgeçmenin yolu çıkış yapmak.
  */
 export function NewPasswordScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
   const { updatePassword, signOut, user } = useAuth();
 
@@ -65,7 +68,7 @@ export function NewPasswordScreen() {
             ry: 170,
             cx: 0.18,
             cy: 0.06,
-            color: colors.primary,
+            color: t.colors.primary,
             opacity: 0.16,
             stop: 0.62,
           },
@@ -76,7 +79,7 @@ export function NewPasswordScreen() {
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={colors.textDim}>
+        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
           {user?.email
             ? `${user.email} hesabı için yeni bir şifre seç.`
             : 'Hesabın için yeni bir şifre seç.'}
@@ -127,7 +130,7 @@ export function NewPasswordScreen() {
         <Spacer />
 
         <Press onPress={cancel} accessibilityRole="button" style={styles.center}>
-          <Txt f="m" s={13} w={700} c={colors.textGhost}>
+          <Txt f="m" s={13} w={700} c={t.colors.textGhost}>
             Vazgeç ve çıkış yap
           </Txt>
         </Press>
@@ -136,8 +139,9 @@ export function NewPasswordScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  center: { alignSelf: 'center', paddingVertical: 6 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    fill: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    center: { alignSelf: 'center', paddingVertical: 6 },
+  });

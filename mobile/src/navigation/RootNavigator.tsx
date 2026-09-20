@@ -1,8 +1,9 @@
+import { useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { TabBar } from './TabBar';
-import { colors } from '../theme/tokens';
 
 import { SplashScreen } from '../screens/SplashScreen';
 import { IntroScreen } from '../screens/IntroScreen';
@@ -42,41 +43,65 @@ import { useAuth } from '../state/AuthContext';
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
 
-const stackOptions = {
-  headerShown: false,
-  contentStyle: { backgroundColor: colors.bg },
-} as const;
+/**
+ * Yığın seçenekleri.
+ *
+ * `contentStyle` zemini veriyor ve zemin temaya bağlı, o yüzden sabit bir
+ * nesne olamıyor. Kanca ile üretiliyor; navigasyon her yığını bir bileşen
+ * içinde kuruyor, yani çağrı yeri zaten uygun.
+ */
+function useStackOptions() {
+  const t = useTheme();
+  return React.useMemo(
+    () => ({ headerShown: false, contentStyle: { backgroundColor: t.colors.bg } }) as const,
+    [t],
+  );
+}
 
 /** Tabs carry their own stacks, so detail screens keep the bottom bar. */
-const HomeStack = () => (
+function HomeStack() {
+  const stackOptions = useStackOptions();
+  return (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Home" component={HomeScreen} />
   </Stack.Navigator>
-);
+  );
+}
 
 // Hata defteri kendi sekmesinde. Önce sağ altta yüzen bir düğmedeydi:
 // ekranın köşesini kaplıyor ve neye yaradığı ancak dokununca anlaşılıyordu.
-const CoachStack = () => (
+function CoachStack() {
+  const stackOptions = useStackOptions();
+  return (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Coach" component={CoachScreen} />
   </Stack.Navigator>
-);
+  );
+}
 
-const LearnStack = () => (
+function LearnStack() {
+  const stackOptions = useStackOptions();
+  return (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Learn" component={LearnScreen} />
     <Stack.Screen name="CourseMap" component={CourseMapScreen} />
     <Stack.Screen name="Lesson" component={LessonScreen} />
   </Stack.Navigator>
-);
+  );
+}
 
-const PlayStack = () => (
+function PlayStack() {
+  const stackOptions = useStackOptions();
+  return (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Play" component={PlayScreen} />
   </Stack.Navigator>
-);
+  );
+}
 
-const ProfileStack = () => (
+function ProfileStack() {
+  const stackOptions = useStackOptions();
+  return (
   <Stack.Navigator screenOptions={stackOptions}>
     <Stack.Screen name="Profile" component={ProfileScreen} />
     <Stack.Screen name="Achievements" component={AchievementsScreen} />
@@ -84,13 +109,15 @@ const ProfileStack = () => (
     <Stack.Screen name="Subscription" component={SubscriptionScreen} />
     <Stack.Screen name="Settings" component={SettingsScreen} />
   </Stack.Navigator>
-);
+  );
+}
 
 function MainTabs() {
+  const t = useTheme();
   return (
     <Tab.Navigator
       tabBar={(props) => <TabBar {...props} />}
-      screenOptions={{ headerShown: false, sceneStyle: { backgroundColor: colors.bg } }}>
+      screenOptions={{ headerShown: false, sceneStyle: { backgroundColor: t.colors.bg } }}>
       <Tab.Screen name="HomeTab" component={HomeStack} />
       <Tab.Screen name="LearnTab" component={LearnStack} />
       <Tab.Screen name="PlayTab" component={PlayStack} />
@@ -105,6 +132,7 @@ function MainTabs() {
  * hides the bottom bar on exactly these.
  */
 export function RootNavigator() {
+  const stackOptions = useStackOptions();
   const { recovering } = useAuth();
 
   // Sıfırlama bağlantısıyla açılan oturum, sahibi henüz şifresini bilmeyen

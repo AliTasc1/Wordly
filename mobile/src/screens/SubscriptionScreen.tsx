@@ -1,11 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { BackButton } from '../components/Buttons';
 import { Notice } from '../components/Notice';
 import { ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { useBack } from '../navigation/useGo';
 
 /**
@@ -33,6 +35,8 @@ import { useBack } from '../navigation/useGo';
  * geldiğinde geri gelecek. O güne kadar doğru olanı söylüyor.
  */
 export function SubscriptionScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('profile');
 
   return (
@@ -49,10 +53,10 @@ export function SubscriptionScreen() {
       />
 
       <View style={styles.card}>
-        <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
           AÇIK OLANLAR
         </Txt>
-        <Txt s={13} lh={1.7} c={colors.textSubtle}>
+        <Txt s={13} lh={1.7} c={t.colors.textSubtle}>
           · Altı seviyenin tamamı (A1–C2){'\n'}· Kelime, gramer, okuma, dinleme, konuşma,
           yazma{'\n'}· Günlük ve oyun turu sınırı yok{'\n'}· İstatistikler, başarımlar ve
           hata defteri{'\n'}· Çevrimdışı çalışma{'\n'}· Hesap ve cihazlar arası eşitleme
@@ -60,14 +64,14 @@ export function SubscriptionScreen() {
       </View>
 
       <View style={styles.card}>
-        <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
           HENÜZ YAPILMADI
         </Txt>
-        <Txt s={13} lh={1.7} c={colors.textSubtle}>
+        <Txt s={13} lh={1.7} c={t.colors.textSubtle}>
           · Telaffuz puanlama{'\n'}· Yazma ve konuşmaya serbest geri bildirim{'\n'}·
           Arkadaş, kulüp ve düello
         </Txt>
-        <Txt s={12} lh={1.55} c={colors.textFaint} style={styles.note}>
+        <Txt s={12} lh={1.55} c={t.colors.textFaint} style={styles.note}>
           Bunlar ileride ücretli olabilir. Olduğunda burada yazacak — önceden para isteyip
           sonra vermek olmaz.
         </Txt>
@@ -76,15 +80,16 @@ export function SubscriptionScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  card: {
-    gap: 8,
-    padding: 16,
-    borderRadius: radii.tile,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    backgroundColor: colors.surface,
-  },
-  note: { marginTop: 2 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    card: {
+      gap: 8,
+      padding: 16,
+      borderRadius: radii.tile,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      backgroundColor: t.colors.surface,
+    },
+    note: { marginTop: 2 },
+  });

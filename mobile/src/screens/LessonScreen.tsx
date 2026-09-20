@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton } from '../components/Buttons';
 import { IconTile, Row } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { grammarOf, listeningOf, readingOf, speakingOf, writingOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -19,6 +21,8 @@ import type { ScreenId } from '../navigation/routes';
  * in that deck, so tapping a row opens exactly what the subtitle promised.
  */
 export function LessonScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
   const back = useBack('map');
   const { cefr, position } = useApp();
@@ -113,7 +117,7 @@ export function LessonScreen() {
         <View style={styles.heroTop}>
           <BackButton onPress={back} strong />
           <View style={styles.unitTag}>
-            <Txt f="mono" s={11} w={700} c={colors.textSubtle}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textSubtle}>
               {cefr} · DERS {String(lesson.order).padStart(2, '0')}
             </Txt>
           </View>
@@ -121,13 +125,13 @@ export function LessonScreen() {
         <Txt f="m" s={28} w={800} lh={1.2} ls={-0.02}>
           {lesson.title}
         </Txt>
-        <Txt s={13} lh={1.5} c={colors.textSubtle}>
+        <Txt s={13} lh={1.5} c={t.colors.textSubtle}>
           {lesson.canDo}
         </Txt>
         <ProgressBar
           pct={progress}
-          from={colors.accent}
-          to={colors.primary}
+          from={t.colors.accent}
+          to={t.colors.primary}
           height={8}
           track="rgba(0,0,0,.4)"
         />
@@ -141,18 +145,18 @@ export function LessonScreen() {
             <Row key={step.name} active={current} onPress={() => go(step.target)}>
               <IconTile
                 glyph={step.glyph}
-                tint={done ? colors.success : colors.textDim}
+                tint={done ? t.colors.success : t.colors.textDim}
                 size={44}
                 radius={15}
                 fontSize={18}
-                solid={current ? gradients.brand : undefined}
+                solid={current ? t.gradients.brand : undefined}
                 style={!done && !current ? styles.stepIdle : undefined}
               />
               <View style={styles.flex}>
                 <Txt f="m" s={14.5} w={700}>
                   {step.name}
                 </Txt>
-                <Txt s={11.5} c={colors.textDim} style={styles.stepSub} numberOfLines={1}>
+                <Txt s={11.5} c={t.colors.textDim} style={styles.stepSub} numberOfLines={1}>
                   {step.sub}
                 </Txt>
               </View>
@@ -166,7 +170,7 @@ export function LessonScreen() {
                   s={10}
                   w={700}
                   ls={0.06}
-                  c={done ? colors.successSoft : current ? '#9FBEFF' : colors.textFaint}>
+                  c={done ? t.colors.successSoft : current ? '#9FBEFF' : t.colors.textFaint}>
                   {step.tag}
                 </Txt>
               </View>
@@ -182,11 +186,11 @@ export function LessonScreen() {
             <Txt f="m" s={13.5} w={700}>
               Seviye Sınavı
             </Txt>
-            <Txt s={11.5} c={colors.textDim}>
+            <Txt s={11.5} c={t.colors.textDim}>
               40 soruda seviyeni ölç
             </Txt>
           </View>
-          <Txt f="mono" s={11} w={700} c={colors.link} onPress={() => go('test')}>
+          <Txt f="mono" s={11} w={700} c={t.colors.link} onPress={() => go('test')}>
             ÇÖZ ›
           </Txt>
         </View>
@@ -195,44 +199,45 @@ export function LessonScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  hero: { paddingTop: 62, paddingHorizontal: 20, paddingBottom: 22, gap: 12 },
-  heroTop: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  unitTag: {
-    marginLeft: 'auto',
-    paddingVertical: 6,
-    paddingHorizontal: 11,
-    borderRadius: radii.chip,
-    backgroundColor: 'rgba(0,0,0,.35)',
-  },
-  steps: { paddingTop: 6, paddingHorizontal: 18, gap: 10 },
-  stepIdle: { backgroundColor: alpha.w05, borderColor: alpha.w10 },
-  stepSub: { marginTop: 2 },
-  tag: { paddingVertical: 5, paddingHorizontal: 9, borderRadius: radii.sm },
-  tagDone: { backgroundColor: 'rgba(34,197,94,.14)' },
-  tagNow: { backgroundColor: 'rgba(46,107,255,.2)' },
-  tagIdle: { backgroundColor: alpha.w05 },
-  exam: {
-    marginTop: 6,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    borderWidth: 1,
-    borderStyle: 'dashed',
-    borderColor: alpha.w14,
-    borderRadius: radii.tile,
-    padding: 16,
-    backgroundColor: alpha.w02,
-  },
-  examIcon: {
-    width: 44,
-    height: 44,
-    borderRadius: radii.card,
-    backgroundColor: 'rgba(245,165,36,.16)',
-    borderWidth: 1,
-    borderColor: 'rgba(245,165,36,.3)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    hero: { paddingTop: 62, paddingHorizontal: 20, paddingBottom: 22, gap: 12 },
+    heroTop: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    unitTag: {
+      marginLeft: 'auto',
+      paddingVertical: 6,
+      paddingHorizontal: 11,
+      borderRadius: radii.chip,
+      backgroundColor: 'rgba(0,0,0,.35)',
+    },
+    steps: { paddingTop: 6, paddingHorizontal: 18, gap: 10 },
+    stepIdle: { backgroundColor: t.alpha.w05, borderColor: t.alpha.w10 },
+    stepSub: { marginTop: 2 },
+    tag: { paddingVertical: 5, paddingHorizontal: 9, borderRadius: radii.sm },
+    tagDone: { backgroundColor: 'rgba(34,197,94,.14)' },
+    tagNow: { backgroundColor: 'rgba(46,107,255,.2)' },
+    tagIdle: { backgroundColor: t.alpha.w05 },
+    exam: {
+      marginTop: 6,
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      borderWidth: 1,
+      borderStyle: 'dashed',
+      borderColor: t.alpha.w14,
+      borderRadius: radii.tile,
+      padding: 16,
+      backgroundColor: t.alpha.w02,
+    },
+    examIcon: {
+      width: 44,
+      height: 44,
+      borderRadius: radii.card,
+      backgroundColor: 'rgba(245,165,36,.16)',
+      borderWidth: 1,
+      borderColor: 'rgba(245,165,36,.3)',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });

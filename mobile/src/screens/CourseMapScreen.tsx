@@ -1,11 +1,13 @@
 import React, { useMemo } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import Svg, { Line } from 'react-native-svg';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { CEFR } from '../data/curriculum';
 import { useApp } from '../state/AppContext';
@@ -21,6 +23,8 @@ type MapNodeKind = 'done' | 'now' | 'next' | 'lock';
  * reason to stop someone reading ahead.
  */
 export function CourseMapScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
   const back = useBack('learn');
   const { cefr, position, setPosition } = useApp();
@@ -42,12 +46,12 @@ export function CourseMapScreen() {
           <Txt f="m" s={19} w={800}>
             {CEFR[cefr].title}
           </Txt>
-          <Txt s={11.5} w={600} c={colors.textDim}>
+          <Txt s={11.5} w={600} c={t.colors.textDim}>
             {at}/{lessons.length} ders
           </Txt>
         </View>
         <View style={styles.pct}>
-          <Txt f="mono" s={11} w={700} c={colors.accentSoft}>
+          <Txt f="mono" s={11} w={700} c={t.colors.accentSoft}>
             %{progress}
           </Txt>
         </View>
@@ -91,7 +95,7 @@ export function CourseMapScreen() {
                   <Txt f="m" s={13} w={700}>
                     {lesson.title}
                   </Txt>
-                  <Txt s={11} c={colors.textDim}>
+                  <Txt s={11} c={t.colors.textDim}>
                     {kind === 'done'
                       ? 'Bitti'
                       : kind === 'now'
@@ -119,13 +123,15 @@ function NodeButton({
   no: string;
   onPress: () => void;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const content = (
     <>
       <Txt
         f="m"
         s={15}
         w={800}
-        c={kind === 'done' ? colors.successSoft : kind === 'lock' ? colors.textGhost : colors.text}>
+        c={kind === 'done' ? t.colors.successSoft : kind === 'lock' ? t.colors.textGhost : t.colors.text}>
         {icon}
       </Txt>
       <Txt
@@ -133,7 +139,7 @@ function NodeButton({
         s={10}
         w={700}
         ls={0.06}
-        c={kind === 'done' ? colors.successSoft : kind === 'lock' ? colors.textGhost : colors.text}>
+        c={kind === 'done' ? t.colors.successSoft : kind === 'lock' ? t.colors.textGhost : t.colors.text}>
         {no}
       </Txt>
     </>
@@ -142,7 +148,7 @@ function NodeButton({
   if (kind === 'now') {
     return (
       <Press onPress={onPress} scale={0.96} accessibilityRole="button">
-        <Gradient colors={gradients.brand} style={[styles.node, styles.nodeNow]}>
+        <Gradient colors={t.gradients.brand} style={[styles.node, styles.nodeNow]}>
           {content}
         </Gradient>
       </Press>
@@ -166,41 +172,42 @@ function NodeButton({
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 18 },
-  pct: {
-    marginLeft: 'auto',
-    paddingVertical: 6,
-    paddingHorizontal: 11,
-    borderRadius: radii.chip,
-    backgroundColor: 'rgba(34,211,238,.14)',
-    borderWidth: 1,
-    borderColor: 'rgba(34,211,238,.3)',
-  },
-  path: { paddingHorizontal: 18, paddingTop: 18 },
-  spine: { position: 'absolute', left: '50%', top: 0, bottom: 0, width: 2 },
-  nodes: { gap: 14 },
-  nodeRow: { alignItems: 'center', gap: 14 },
-  label: { flex: 1 },
-  node: {
-    width: 74,
-    height: 74,
-    borderRadius: radii.screen,
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 2,
-  },
-  nodeDone: {
-    backgroundColor: 'rgba(34,197,94,.16)',
-    borderWidth: 1,
-    borderColor: 'rgba(34,197,94,.36)',
-  },
-  nodeNow: { borderWidth: 1, borderColor: alpha.w20, boxShadow: shadows.node },
-  nodeNext: { backgroundColor: colors.surfaceHigh, borderWidth: 1, borderColor: alpha.w14 },
-  nodeLock: {
-    backgroundColor: alpha.w03,
-    borderWidth: 1,
-    borderStyle: 'dashed',
-    borderColor: alpha.w14,
-  },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12, paddingHorizontal: 18 },
+    pct: {
+      marginLeft: 'auto',
+      paddingVertical: 6,
+      paddingHorizontal: 11,
+      borderRadius: radii.chip,
+      backgroundColor: 'rgba(34,211,238,.14)',
+      borderWidth: 1,
+      borderColor: 'rgba(34,211,238,.3)',
+    },
+    path: { paddingHorizontal: 18, paddingTop: 18 },
+    spine: { position: 'absolute', left: '50%', top: 0, bottom: 0, width: 2 },
+    nodes: { gap: 14 },
+    nodeRow: { alignItems: 'center', gap: 14 },
+    label: { flex: 1 },
+    node: {
+      width: 74,
+      height: 74,
+      borderRadius: radii.screen,
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 2,
+    },
+    nodeDone: {
+      backgroundColor: 'rgba(34,197,94,.16)',
+      borderWidth: 1,
+      borderColor: 'rgba(34,197,94,.36)',
+    },
+    nodeNow: { borderWidth: 1, borderColor: t.alpha.w20, boxShadow: t.shadows.node },
+    nodeNext: { backgroundColor: t.colors.surfaceHigh, borderWidth: 1, borderColor: t.alpha.w14 },
+    nodeLock: {
+      backgroundColor: t.alpha.w03,
+      borderWidth: 1,
+      borderStyle: 'dashed',
+      borderColor: t.alpha.w14,
+    },
+  });

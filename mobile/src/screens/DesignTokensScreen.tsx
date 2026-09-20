@@ -1,15 +1,19 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { BlurView } from 'expo-blur';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Divider, Pill, ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { BUTTON_STATES, TOKEN_PILLS, TOKEN_SCALES, TOKEN_TEXT } from '../data/onboarding';
 
 /** Design system reference — colour scales, type, component states. */
 export function DesignTokensScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <Screen padTop={62} gap={16}>
       <ScreenHeading kicker="TASARIM SİSTEMİ" title="Jetonlar ve bileşenler" size={24} />
@@ -17,10 +21,10 @@ export function DesignTokensScreen() {
       {TOKEN_SCALES.map((scale) => (
         <View key={scale.name} style={styles.scale}>
           <View style={styles.scaleHead}>
-            <Txt f="mono" s={11} w={700} c={colors.textFaint}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textFaint}>
               {scale.name}
             </Txt>
-            <Txt f="mono" s={11} w={700} c={colors.textFaint}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textFaint}>
               {scale.base}
             </Txt>
           </View>
@@ -47,10 +51,10 @@ export function DesignTokensScreen() {
         <Txt f="m" s={15} w={700}>
           {TOKEN_TEXT.subheading}
         </Txt>
-        <Txt s={14} lh={1.6} c={colors.textBody}>
+        <Txt s={14} lh={1.6} c={t.colors.textBody}>
           {TOKEN_TEXT.body}
         </Txt>
-        <Txt f="mono" s={11} w={700} c={colors.textFaint}>
+        <Txt f="mono" s={11} w={700} c={t.colors.textFaint}>
           {TOKEN_TEXT.mono}
         </Txt>
       </View>
@@ -64,7 +68,7 @@ export function DesignTokensScreen() {
         {BUTTON_STATES.map((state) => (
           <View key={state.name} style={styles.buttonCell}>
             <ButtonSample name={state.name} label={state.label} />
-            <Txt f="mono" s={9.5} w={600} c={colors.textGhost} style={styles.caption}>
+            <Txt f="mono" s={9.5} w={600} c={t.colors.textGhost} style={styles.caption}>
               {state.name}
             </Txt>
           </View>
@@ -85,29 +89,29 @@ export function DesignTokensScreen() {
       </Txt>
       <View style={styles.surfaces}>
         <View style={[styles.surface, styles.surfaceBg]}>
-          <Txt f="mono" s={9.5} w={600} c={colors.textGhost}>
+          <Txt f="mono" s={9.5} w={600} c={t.colors.textGhost}>
             bg
           </Txt>
         </View>
         <View style={[styles.surface, styles.surfaceMid]}>
-          <Txt f="mono" s={9.5} w={600} c={colors.textFaint}>
+          <Txt f="mono" s={9.5} w={600} c={t.colors.textFaint}>
             surface
           </Txt>
         </View>
         <View style={[styles.surface, styles.surfaceHigh]}>
-          <Txt f="mono" s={9.5} w={600} c={colors.textMuted}>
+          <Txt f="mono" s={9.5} w={600} c={t.colors.textMuted}>
             elevated
           </Txt>
         </View>
         <View style={[styles.surface, styles.surfaceGlass]}>
           <BlurView intensity={30} tint="dark" style={StyleSheet.absoluteFill} />
-          <Txt f="mono" s={9.5} w={600} c={colors.textSubtle}>
+          <Txt f="mono" s={9.5} w={600} c={t.colors.textSubtle}>
             glass
           </Txt>
         </View>
       </View>
 
-      <Txt s={11.5} lh={1.6} c={colors.textFaint}>
+      <Txt s={11.5} lh={1.6} c={t.colors.textFaint}>
         {TOKEN_TEXT.a11y}
       </Txt>
     </Screen>
@@ -115,9 +119,11 @@ export function DesignTokensScreen() {
 }
 
 function ButtonSample({ name, label }: { name: string; label: string }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   if (name === 'Varsayılan') {
     return (
-      <Gradient colors={gradients.brand} style={styles.button}>
+      <Gradient colors={t.gradients.brand} style={styles.button}>
         <Txt f="m" s={13} w={800}>
           {label}
         </Txt>
@@ -126,7 +132,7 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   }
   if (name === 'Basılı') {
     return (
-      <Gradient colors={gradients.brandPressed} style={[styles.button, styles.pressed]}>
+      <Gradient colors={t.gradients.brandPressed} style={[styles.button, styles.pressed]}>
         <Txt f="m" s={13} w={800}>
           {label}
         </Txt>
@@ -134,10 +140,10 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
     );
   }
   const map: Record<string, { bg: string; color: string; border?: string }> = {
-    'Devre dışı': { bg: alpha.w06, color: colors.textDisabled },
-    Yükleniyor: { bg: 'rgba(46,107,255,.4)', color: colors.textBody },
-    Başarı: { bg: 'rgba(34,197,94,.2)', color: colors.mintSoft, border: colors.success },
-    Hata: { bg: 'rgba(255,77,94,.18)', color: colors.errorTint, border: colors.error },
+    'Devre dışı': { bg: t.alpha.w06, color: t.colors.textDisabled },
+    Yükleniyor: { bg: 'rgba(46,107,255,.4)', color: t.colors.textBody },
+    Başarı: { bg: 'rgba(34,197,94,.2)', color: t.colors.mintSoft, border: t.colors.success },
+    Hata: { bg: 'rgba(255,77,94,.18)', color: t.colors.errorTint, border: t.colors.error },
   };
   const style = map[name];
   return (
@@ -157,35 +163,36 @@ function ButtonSample({ name, label }: { name: string; label: string }) {
   );
 }
 
-const styles = StyleSheet.create({
-  scale: { gap: 6 },
-  scaleHead: { flexDirection: 'row', justifyContent: 'space-between' },
-  swatches: { flexDirection: 'row', gap: 3, height: 38, borderRadius: radii.md, overflow: 'hidden' },
-  swatch: { flex: 1 },
-  typeBlock: { gap: 9 },
-  grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 9 },
-  buttonCell: { width: '48%', flexGrow: 1, gap: 5 },
-  button: {
-    height: 46,
-    borderRadius: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  pressed: { transform: [{ scale: 0.97 }] },
-  caption: { textAlign: 'center' },
-  pills: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  surfaces: { flexDirection: 'row', gap: 9 },
-  surface: {
-    flex: 1,
-    height: 70,
-    borderRadius: radii.input,
-    borderWidth: 1,
-    justifyContent: 'flex-end',
-    padding: 9,
-    overflow: 'hidden',
-  },
-  surfaceBg: { backgroundColor: colors.bg, borderColor: alpha.w06 },
-  surfaceMid: { backgroundColor: colors.surface, borderColor: alpha.w07 },
-  surfaceHigh: { backgroundColor: colors.surfaceElevated, borderColor: alpha.w10 },
-  surfaceGlass: { backgroundColor: alpha.w06, borderColor: alpha.w14 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    scale: { gap: 6 },
+    scaleHead: { flexDirection: 'row', justifyContent: 'space-between' },
+    swatches: { flexDirection: 'row', gap: 3, height: 38, borderRadius: radii.md, overflow: 'hidden' },
+    swatch: { flex: 1 },
+    typeBlock: { gap: 9 },
+    grid: { flexDirection: 'row', flexWrap: 'wrap', gap: 9 },
+    buttonCell: { width: '48%', flexGrow: 1, gap: 5 },
+    button: {
+      height: 46,
+      borderRadius: 15,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    pressed: { transform: [{ scale: 0.97 }] },
+    caption: { textAlign: 'center' },
+    pills: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+    surfaces: { flexDirection: 'row', gap: 9 },
+    surface: {
+      flex: 1,
+      height: 70,
+      borderRadius: radii.input,
+      borderWidth: 1,
+      justifyContent: 'flex-end',
+      padding: 9,
+      overflow: 'hidden',
+    },
+    surfaceBg: { backgroundColor: t.colors.bg, borderColor: t.alpha.w06 },
+    surfaceMid: { backgroundColor: t.colors.surface, borderColor: t.alpha.w07 },
+    surfaceHigh: { backgroundColor: t.colors.surfaceElevated, borderColor: t.alpha.w10 },
+    surfaceGlass: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w14 },
+  });

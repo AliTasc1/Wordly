@@ -72,28 +72,28 @@ export function Field({ label, problem, secret = false, hint, ...rest }: Props) 
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  wrap: { gap: 7 },
-  row: { justifyContent: 'center' },
-  input: {
-    minHeight: 52,
-    borderWidth: 1,
-    borderColor: t.alpha.w14,
-    backgroundColor: t.alpha.w04,
-    borderRadius: radii.input,
-    paddingHorizontal: 14,
-    paddingVertical: 14,
-    color: t.colors.text,
-    fontSize: 15.5,
-  },
-  inputWithButton: { paddingRight: 72 },
-  inputBad: {
-    borderColor: 'rgba(255,77,94,.55)',
-    backgroundColor: 'rgba(255,77,94,.08)',
-  },
-  eye: {
-    position: 'absolute',
-    right: 12,
-    paddingHorizontal: 4,
-    paddingVertical: 8,
-  },
-});
+    wrap: { gap: 7 },
+    row: { justifyContent: 'center' },
+    input: {
+      minHeight: 52,
+      borderWidth: 1,
+      borderColor: t.alpha.w14,
+      backgroundColor: t.alpha.w04,
+      borderRadius: radii.input,
+      paddingHorizontal: 14,
+      paddingVertical: 14,
+      color: t.colors.text,
+      fontSize: 15.5,
+    },
+    inputWithButton: { paddingRight: 72 },
+    inputBad: {
+      borderColor: 'rgba(255,77,94,.55)',
+      backgroundColor: 'rgba(255,77,94,.08)',
+    },
+    eye: {
+      position: 'absolute',
+      right: 12,
+      paddingHorizontal: 4,
+      paddingVertical: 8,
+    },
+  });

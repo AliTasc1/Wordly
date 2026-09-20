@@ -195,12 +195,12 @@ export function TinyButton({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  center: { alignItems: 'center', justifyContent: 'center' },
-  tiny: {
-    paddingVertical: 10,
-    paddingHorizontal: 13,
-    borderRadius: 12,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    center: { alignItems: 'center', justifyContent: 'center' },
+    tiny: {
+      paddingVertical: 10,
+      paddingHorizontal: 13,
+      borderRadius: 12,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });

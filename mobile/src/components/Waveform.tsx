@@ -138,6 +138,6 @@ export function LiveWaveform({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  row: { flexDirection: 'row', alignItems: 'center', gap: 2 },
-  bar: { flex: 1, borderRadius: 2 },
-});
+    row: { flexDirection: 'row', alignItems: 'center', gap: 2 },
+    bar: { flex: 1, borderRadius: 2 },
+  });

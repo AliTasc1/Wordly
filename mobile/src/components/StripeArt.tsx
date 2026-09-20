@@ -71,20 +71,20 @@ export function StripeArt({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  wrap: {
-    borderWidth: 1,
-    borderColor: t.alpha.w08,
-    overflow: 'hidden',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  caption: {
-    backgroundColor: 'rgba(7,10,20,.7)',
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: 8,
-  },
-});
+    wrap: {
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      overflow: 'hidden',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    caption: {
+      backgroundColor: 'rgba(7,10,20,.7)',
+      paddingVertical: 5,
+      paddingHorizontal: 10,
+      borderRadius: 8,
+    },
+  });
 
 /** Circular striped art used by the empty states. */
 export function StripeCircle({ label, size = 104 }: { label: string; size?: number }) {

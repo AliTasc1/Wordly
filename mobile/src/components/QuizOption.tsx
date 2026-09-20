@@ -117,29 +117,29 @@ export function AnswerFeedback({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  option: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    padding: 15,
-    borderRadius: radii.option,
-    borderWidth: 1,
-  },
-  badge: {
-    width: 26,
-    height: 26,
-    borderRadius: 8,
-    backgroundColor: t.alpha.w07,
-    borderWidth: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  label: { flex: 1 },
-  feedback: {
-    paddingVertical: 13,
-    paddingHorizontal: 15,
-    borderWidth: 1,
-    gap: 3,
-  },
-  note: { opacity: 0.9 },
-});
+    option: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      padding: 15,
+      borderRadius: radii.option,
+      borderWidth: 1,
+    },
+    badge: {
+      width: 26,
+      height: 26,
+      borderRadius: 8,
+      backgroundColor: t.alpha.w07,
+      borderWidth: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    label: { flex: 1 },
+    feedback: {
+      paddingVertical: 13,
+      paddingHorizontal: 15,
+      borderWidth: 1,
+      gap: 3,
+    },
+    note: { opacity: 0.9 },
+  });

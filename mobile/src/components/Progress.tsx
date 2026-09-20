@@ -233,25 +233,25 @@ export function ColumnChart({
 /** Radar chart behind the level-test result. */
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  center: { alignItems: 'center', justifyContent: 'center' },
-  flex: { flex: 1 },
-  donutInner: {
-    width: 124,
-    height: 124,
-    borderRadius: 62,
-    backgroundColor: t.colors.surfaceCard,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: t.alpha.w08,
-  },
-  skillRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  chart: { flexDirection: 'row', alignItems: 'flex-end', gap: 7, height: 130 },
-  chartCol: {
-    flex: 1,
-    alignItems: 'center',
-    gap: 6,
-    height: '100%',
-    justifyContent: 'flex-end',
-  },
-});
+    center: { alignItems: 'center', justifyContent: 'center' },
+    flex: { flex: 1 },
+    donutInner: {
+      width: 124,
+      height: 124,
+      borderRadius: 62,
+      backgroundColor: t.colors.surfaceCard,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+    },
+    skillRow: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+    chart: { flexDirection: 'row', alignItems: 'flex-end', gap: 7, height: 130 },
+    chartCol: {
+      flex: 1,
+      alignItems: 'center',
+      gap: 6,
+      height: '100%',
+      justifyContent: 'flex-end',
+    },
+  });

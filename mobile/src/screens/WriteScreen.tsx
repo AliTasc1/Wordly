@@ -1,12 +1,14 @@
 import React, { useMemo, useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, TextInput, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { BackButton, Press, PrimaryButton } from '../components/Buttons';
 import { Card, Panel } from '../components/Surfaces';
 import { AnswerFeedback } from '../components/QuizOption';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { writingOf } from '../content';
 import { accepts, diagnose } from '../content/writing';
 import { useApp } from '../state/AppContext';
@@ -25,6 +27,8 @@ import { useBack, useGo } from '../navigation/useGo';
  * öğrenci boş satıra aynı cümleyi yazamayabilir.
  */
 export function WriteScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
@@ -56,7 +60,7 @@ export function WriteScreen() {
           <Txt f="m" s={16} w={800}>
             {cefr} için yazma henüz hazır değil
           </Txt>
-          <Txt s={13} lh={1.6} c={colors.textDim}>
+          <Txt s={13} lh={1.6} c={t.colors.textDim}>
             Yazma setleri seviye seviye yazılıyor. Bu seviye eklendiğinde
             burada görünecek.
           </Txt>
@@ -130,7 +134,7 @@ export function WriteScreen() {
             label={done ? 'Bölümü bitir' : checked ? 'Sonraki cümle' : 'Kontrol et'}
             height={54}
             size={15.5}
-            shadow={shadows.ctaBrand}
+            shadow={t.shadows.ctaBrand}
             onPress={done ? finish : checked ? next : check}
           />
         }>
@@ -140,7 +144,7 @@ export function WriteScreen() {
             <Txt f="m" s={16} w={800}>
               {item.title}
             </Txt>
-            <Txt s={11} w={600} c={colors.textDim}>
+            <Txt s={11} w={600} c={t.colors.textDim}>
               {item.level} · {index + 1}/{sets.length} · {right}/{item.tasks.length} doğru
             </Txt>
           </View>
@@ -155,17 +159,17 @@ export function WriteScreen() {
             Hatayı yaptıktan sonra açıklamak yerine önce söylemek, aynı hatayı
             sekiz kez yapmasını önlüyor. */}
         <Panel gap={6} radius={radii.panel}>
-          <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.12}>
+          <Txt f="mono" s={10} w={700} c={t.colors.accentSoft} ls={0.12}>
             BU SETTE DİKKAT
           </Txt>
-          <Txt s={12.5} lh={1.55} c={colors.textDim}>
+          <Txt s={12.5} lh={1.55} c={t.colors.textDim}>
             {item.focus}
           </Txt>
         </Panel>
 
         {done ? (
           <Card gap={12}>
-            <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+            <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
               SERBEST YAZMA
             </Txt>
             <Txt f="m" s={16} w={700} lh={1.4}>
@@ -176,7 +180,7 @@ export function WriteScreen() {
               value={essay}
               onChangeText={setEssay}
               placeholder="Buraya yaz…"
-              placeholderTextColor={colors.textGhost}
+              placeholderTextColor={t.colors.textGhost}
               multiline
               textAlignVertical="top"
               style={[styles.input, styles.essay]}
@@ -188,10 +192,10 @@ export function WriteScreen() {
             </Txt>
             {item.compose.checklist.map((line) => (
               <View key={line} style={styles.check}>
-                <Txt s={12} c={colors.accentSoft}>
+                <Txt s={12} c={t.colors.accentSoft}>
                   ☐
                 </Txt>
-                <Txt s={12.5} lh={1.5} c={colors.textDim} style={styles.flex}>
+                <Txt s={12.5} lh={1.5} c={t.colors.textDim} style={styles.flex}>
                   {line}
                 </Txt>
               </View>
@@ -203,13 +207,13 @@ export function WriteScreen() {
                 örnek vermek daha dürüst. */}
             {showModel ? (
               <Panel gap={6} radius={radii.input}>
-                <Txt f="mono" s={10} w={700} c={colors.successSoft} ls={0.1}>
+                <Txt f="mono" s={10} w={700} c={t.colors.successSoft} ls={0.1}>
                   ÖRNEK METİN
                 </Txt>
                 <Txt s={13.5} lh={1.6}>
                   {item.compose.model}
                 </Txt>
-                <Txt s={11.5} lh={1.5} c={colors.textFaint}>
+                <Txt s={11.5} lh={1.5} c={t.colors.textFaint}>
                   Tek doğru bu değil. Seninkiyle karşılaştır: hangi cümleyi
                   farklı kurmuşsun?
                 </Txt>
@@ -220,7 +224,7 @@ export function WriteScreen() {
                 disabled={!essay.trim()}
                 accessibilityRole="button"
                 style={[styles.ghost, !essay.trim() && styles.ghostOff]}>
-                <Txt f="m" s={13} w={700} c={essay.trim() ? colors.text : colors.textGhost}>
+                <Txt f="m" s={13} w={700} c={essay.trim() ? t.colors.text : t.colors.textGhost}>
                   {essay.trim() ? 'Örnek metni göster' : 'Önce kendi metnini yaz'}
                 </Txt>
               </Press>
@@ -228,7 +232,7 @@ export function WriteScreen() {
           </Card>
         ) : (
           <Card gap={12}>
-            <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+            <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
               {asked + 1}/{item.tasks.length} · İNGİLİZCESİNİ YAZ
             </Txt>
             <Txt f="m" s={18} w={700} lh={1.4}>
@@ -241,7 +245,7 @@ export function WriteScreen() {
               onSubmitEditing={check}
               editable={!checked}
               placeholder="İngilizcesi…"
-              placeholderTextColor={colors.textGhost}
+              placeholderTextColor={t.colors.textGhost}
               autoCapitalize="sentences"
               autoCorrect={false}
               // Otomatik düzeltme kapalı: telefon "dont" yazınca düzeltirse
@@ -265,7 +269,7 @@ export function WriteScreen() {
               />
             ) : showHint ? (
               <Panel gap={0} radius={radii.input}>
-                <Txt s={12.5} lh={1.5} c={colors.textDim}>
+                <Txt s={12.5} lh={1.5} c={t.colors.textDim}>
                   💡 {task.hint}
                 </Txt>
               </Panel>
@@ -274,7 +278,7 @@ export function WriteScreen() {
                 onPress={() => setShowHint(true)}
                 accessibilityRole="button"
                 style={styles.ghost}>
-                <Txt f="m" s={12.5} w={700} c={colors.textDim}>
+                <Txt f="m" s={12.5} w={700} c={t.colors.textDim}>
                   İpucu ver
                 </Txt>
               </Press>
@@ -283,7 +287,7 @@ export function WriteScreen() {
             {/* Birden fazla doğru varsa söyleniyor: öğrenci kendi yazdığı da
                 doğruyken "doğrusu bu" görüp kafası karışmasın. */}
             {checked && !correct && task.answers.length > 1 ? (
-              <Txt s={11.5} lh={1.5} c={colors.textFaint}>
+              <Txt s={11.5} lh={1.5} c={t.colors.textFaint}>
                 Şu da kabul edilirdi: {task.answers.slice(1).join(' · ')}
               </Txt>
             ) : null}
@@ -295,32 +299,33 @@ export function WriteScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  flex: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  input: {
-    minHeight: 52,
-    borderWidth: 1,
-    borderColor: alpha.w14,
-    backgroundColor: alpha.w04,
-    borderRadius: radii.input,
-    paddingHorizontal: 14,
-    paddingVertical: 14,
-    color: colors.text,
-    fontSize: 15.5,
-  },
-  essay: { minHeight: 120 },
-  inputOk: { borderColor: 'rgba(34,197,94,.55)', backgroundColor: 'rgba(34,197,94,.08)' },
-  inputBad: { borderColor: 'rgba(255,77,94,.55)', backgroundColor: 'rgba(255,77,94,.08)' },
-  ghost: {
-    alignSelf: 'flex-start',
-    borderWidth: 1,
-    borderColor: alpha.w12,
-    borderRadius: radii.chip,
-    paddingVertical: 8,
-    paddingHorizontal: 14,
-  },
-  ghostOff: { borderColor: alpha.w07 },
-  check: { flexDirection: 'row', gap: 8, alignItems: 'flex-start' },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    fill: { flex: 1 },
+    flex: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    input: {
+      minHeight: 52,
+      borderWidth: 1,
+      borderColor: t.alpha.w14,
+      backgroundColor: t.alpha.w04,
+      borderRadius: radii.input,
+      paddingHorizontal: 14,
+      paddingVertical: 14,
+      color: t.colors.text,
+      fontSize: 15.5,
+    },
+    essay: { minHeight: 120 },
+    inputOk: { borderColor: 'rgba(34,197,94,.55)', backgroundColor: 'rgba(34,197,94,.08)' },
+    inputBad: { borderColor: 'rgba(255,77,94,.55)', backgroundColor: 'rgba(255,77,94,.08)' },
+    ghost: {
+      alignSelf: 'flex-start',
+      borderWidth: 1,
+      borderColor: t.alpha.w12,
+      borderRadius: radii.chip,
+      paddingVertical: 8,
+      paddingHorizontal: 14,
+    },
+    ghostOff: { borderColor: t.alpha.w07 },
+    check: { flexDirection: 'row', gap: 8, alignItems: 'flex-start' },
+  });

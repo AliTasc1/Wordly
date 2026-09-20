@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { BackButton, Press } from '../components/Buttons';
 import { IconTile, ScreenHeading } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { alertsOf } from '../content/alerts';
 import { fetchBoard } from '../server/leaderboard';
 import { today } from '../state/days';
@@ -24,6 +26,8 @@ import { useBack, useGo } from '../navigation/useGo';
  * tutulmuyordu, düğme yalnızca bir bildirim kutusu açıyordu.
  */
 export function NotificationsScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('home');
   const { go } = useGo();
   const { streak, daily, mistakes, sync } = useApp();
@@ -81,11 +85,11 @@ export function NotificationsScreen() {
                 <Txt f="m" s={13.5} w={700} style={styles.title}>
                   {item.title}
                 </Txt>
-                <Txt s={11.5} lh={1.5} c={colors.textDim}>
+                <Txt s={11.5} lh={1.5} c={t.colors.textDim}>
                   {item.text}
                 </Txt>
               </View>
-              <Txt f="m" s={20} w={800} c={colors.textGhost}>
+              <Txt f="m" s={20} w={800} c={t.colors.textGhost}>
                 ›
               </Txt>
             </View>
@@ -97,7 +101,7 @@ export function NotificationsScreen() {
           <Txt f="m" s={14} w={700}>
             Bekleyen bir şey yok
           </Txt>
-          <Txt s={12.5} lh={1.55} c={colors.textDim} style={styles.emptyText}>
+          <Txt s={12.5} lh={1.55} c={t.colors.textDim} style={styles.emptyText}>
             Serin güvende, hata defterin boş. Burası yalnızca gerçekten ilgilenmen gereken
             bir şey olduğunda dolar.
           </Txt>
@@ -107,30 +111,31 @@ export function NotificationsScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    padding: 14,
-    borderRadius: radii.tile,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    backgroundColor: colors.surface,
-  },
-  rowHead: { flexDirection: 'row', alignItems: 'center', gap: 6 },
-  title: { marginTop: 2, marginBottom: 2 },
-  empty: {
-    alignItems: 'center',
-    gap: 8,
-    paddingVertical: 40,
-    paddingHorizontal: 20,
-    borderRadius: radii.section,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    backgroundColor: alpha.w03,
-  },
-  emptyText: { textAlign: 'center' },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    row: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 12,
+      padding: 14,
+      borderRadius: radii.tile,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      backgroundColor: t.colors.surface,
+    },
+    rowHead: { flexDirection: 'row', alignItems: 'center', gap: 6 },
+    title: { marginTop: 2, marginBottom: 2 },
+    empty: {
+      alignItems: 'center',
+      gap: 8,
+      paddingVertical: 40,
+      paddingHorizontal: 20,
+      borderRadius: radii.section,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      backgroundColor: t.alpha.w03,
+    },
+    emptyText: { textAlign: 'center' },
+  });

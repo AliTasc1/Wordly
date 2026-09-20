@@ -140,19 +140,19 @@ export const Spacer = () => <View style={{ flex: 1 }} />;
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  root: { flex: 1, backgroundColor: t.colors.bg },
-  fill: { flex: 1 },
-  grow: { flexGrow: 1 },
-  footer: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    paddingTop: 14,
-    gap: 10,
-    borderTopWidth: StyleSheet.hairlineWidth,
-    borderTopColor: t.alpha.w06,
-  },
-  // Geçiş çubuğun üstüne taşıyor: kesme çizgisi çubuğun kendi sınırında
-  // değil, ondan 18 piksel yukarıda başlıyor.
-  footerWash: { position: 'absolute', left: 0, right: 0, bottom: 0, top: -18 },
-});
+    root: { flex: 1, backgroundColor: t.colors.bg },
+    fill: { flex: 1 },
+    grow: { flexGrow: 1 },
+    footer: {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      paddingTop: 14,
+      gap: 10,
+      borderTopWidth: StyleSheet.hairlineWidth,
+      borderTopColor: t.alpha.w06,
+    },
+    // Geçiş çubuğun üstüne taşıyor: kesme çizgisi çubuğun kendi sınırında
+    // değil, ondan 18 piksel yukarıda başlıyor.
+    footerWash: { position: 'absolute', left: 0, right: 0, bottom: 0, top: -18 },
+  });

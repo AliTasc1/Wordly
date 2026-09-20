@@ -66,9 +66,9 @@ export function StepFooter({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  row: { flexDirection: 'row', gap: 10 },
-  // Çıkış düğmesi dar: eşit bölünmüş iki düğme, ikisini de eşit derecede
-  // doğru gösterir. Devam etmek çoğunluk için doğru olan.
-  exit: { flexBasis: 118 },
-  grow: { flex: 1 },
-});
+    row: { flexDirection: 'row', gap: 10 },
+    // Çıkış düğmesi dar: eşit bölünmüş iki düğme, ikisini de eşit derecede
+    // doğru gösterir. Devam etmek çoğunluk için doğru olan.
+    exit: { flexBasis: 118 },
+    grow: { flex: 1 },
+  });

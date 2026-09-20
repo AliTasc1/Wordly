@@ -1,5 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { Image, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { BackButton, GhostButton } from '../components/Buttons';
 import { Card, StatTile } from '../components/Surfaces';
@@ -8,7 +10,7 @@ import { GlossedText } from '../components/GlossedText';
 import { StripeArt } from '../components/StripeArt';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { readingOf } from '../content';
 import { artFor } from '../content/reading-art';
 import { useQuiz } from '../state/useQuiz';
@@ -18,6 +20,8 @@ import { useBack, useGo } from '../navigation/useGo';
 
 /** 13 · Okuma — passage with tappable words and a comprehension check. */
 export function ReadScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
@@ -88,7 +92,7 @@ export function ReadScreen() {
           <Txt f="m" s={16} w={800}>
             {item.title}
           </Txt>
-          <Txt s={11} w={600} c={colors.textDim}>
+          <Txt s={11} w={600} c={t.colors.textDim}>
             {item.level} · {item.minutes} dk · {index + 1}/{items.length}
           </Txt>
         </View>
@@ -98,7 +102,7 @@ export function ReadScreen() {
             height={30}
             radius={radii.chipSm}
             size={11}
-            fill={alpha.w06}
+            fill={t.alpha.w06}
             onPress={() => setShowTr((v) => !v)}
           />
         ) : null}
@@ -131,7 +135,7 @@ export function ReadScreen() {
           />
         )}
         {showTr && item.textTr ? (
-          <Txt s={15} lh={1.75} c={colors.textBright}>
+          <Txt s={15} lh={1.75} c={t.colors.textBright}>
             {item.textTr}
           </Txt>
         ) : (
@@ -141,13 +145,13 @@ export function ReadScreen() {
             onWord={(gloss) => fire(gloss.w, gloss.tr)}
           />
         )}
-        <Txt s={13} lh={1.7} c={colors.textFaint}>
+        <Txt s={13} lh={1.7} c={t.colors.textFaint}>
           Altı çizili kelimelere dokunarak Türkçesini görebilirsin.
         </Txt>
       </View>
 
       <Card>
-        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
           SORU {asked + 1}/{item.questions.length}
         </Txt>
         <Txt f="m" s={17} w={700} lh={1.4}>
@@ -179,34 +183,35 @@ export function ReadScreen() {
       </Card>
 
       <View style={styles.stats}>
-        <StatTile value={`${right}/${item.questions.length}`} label="doğru" tint={colors.accent} />
-        <StatTile value={`${item.minutes} dk`} label="okuma süresi" tint={colors.successSoft} />
+        <StatTile value={`${right}/${item.questions.length}`} label="doğru" tint={t.colors.accent} />
+        <StatTile value={`${item.minutes} dk`} label="okuma süresi" tint={t.colors.successSoft} />
         <StatTile
           value={String(item.glossary.length)}
           label="yeni kelime"
-          tint={colors.warning}
+          tint={t.colors.warning}
         />
       </View>
     </Screen>
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  // Yer tutucu 132 piksel sabitti; görsel öyle değil. Üretim araçlarının
-  // tamamına yakını 16:9 veriyor ve sabit yüksekliğe sığdırmak, her görselin
-  // üstünü altını kırpmak demekti — kadrajı kuran taraf biz olmadığımız için
-  // neyin kesileceğini de bilemezdik. Oran veriliyor, yükseklik genişlikten
-  // çıkıyor.
-  art: { width: '100%', aspectRatio: 16 / 9, borderRadius: radii.input },
-  article: {
-    backgroundColor: colors.surfaceDeep,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.section,
-    padding: 18,
-    gap: 12,
-  },
-  stats: { flexDirection: 'row', gap: 9 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    // Yer tutucu 132 piksel sabitti; görsel öyle değil. Üretim araçlarının
+    // tamamına yakını 16:9 veriyor ve sabit yüksekliğe sığdırmak, her görselin
+    // üstünü altını kırpmak demekti — kadrajı kuran taraf biz olmadığımız için
+    // neyin kesileceğini de bilemezdik. Oran veriliyor, yükseklik genişlikten
+    // çıkıyor.
+    art: { width: '100%', aspectRatio: 16 / 9, borderRadius: radii.input },
+    article: {
+      backgroundColor: t.colors.surfaceDeep,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.section,
+      padding: 18,
+      gap: 12,
+    },
+    stats: { flexDirection: 'row', gap: 9 },
+  });

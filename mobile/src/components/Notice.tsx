@@ -71,11 +71,11 @@ export function Notice({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  box: {
-    borderWidth: 1,
-    borderRadius: radii.input,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    gap: 5,
-  },
-});
+    box: {
+      borderWidth: 1,
+      borderRadius: radii.input,
+      paddingHorizontal: 14,
+      paddingVertical: 12,
+      gap: 5,
+    },
+  });

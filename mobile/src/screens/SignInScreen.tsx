@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
 import { Notice } from '../components/Notice';
 import { Txt } from '../components/Txt';
-import { colors } from '../theme/tokens';
 import { emailProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -18,6 +19,8 @@ import { useBack, useGo } from '../navigation/useGo';
  * telefon tutuyor; giriş yalnızca onu ikinci bir cihaza taşımak için.
  */
 export function SignInScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('settings');
   const { go } = useGo();
   const {
@@ -79,7 +82,7 @@ export function SignInScreen() {
             ry: 170,
             cx: 0.18,
             cy: 0.06,
-            color: colors.primary,
+            color: t.colors.primary,
             opacity: 0.16,
             stop: 0.62,
           },
@@ -91,7 +94,7 @@ export function SignInScreen() {
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={colors.textDim}>
+        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
           İlerlemen bu telefonda zaten kayıtlı. Giriş yapmak onu diğer cihazlarına da
           taşır.
         </Txt>
@@ -134,7 +137,7 @@ export function SignInScreen() {
           onPress={() => go('forgot')}
           accessibilityRole="button"
           style={styles.linkRow}>
-          <Txt f="m" s={13} w={700} c={colors.link}>
+          <Txt f="m" s={13} w={700} c={t.colors.link}>
             Şifremi unuttum
           </Txt>
         </Press>
@@ -156,7 +159,7 @@ export function SignInScreen() {
               <Notice tone="ok" text="Doğrulama e-postası yeniden gönderildi." />
             ) : (
               <Press onPress={resend} accessibilityRole="button" style={styles.linkRow}>
-                <Txt f="m" s={13} w={700} c={colors.link}>
+                <Txt f="m" s={13} w={700} c={t.colors.link}>
                   E-postayı yeniden gönder
                 </Txt>
               </Press>
@@ -177,9 +180,9 @@ export function SignInScreen() {
           }}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt s={13} c={colors.textDim}>
+          <Txt s={13} c={t.colors.textDim}>
             Hesabın yok mu?{' '}
-            <Txt f="m" s={13} w={700} c={colors.link}>
+            <Txt f="m" s={13} w={700} c={t.colors.link}>
               Kayıt ol
             </Txt>
           </Txt>
@@ -191,7 +194,7 @@ export function SignInScreen() {
           onPress={() => go('home')}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt f="m" s={13} w={700} c={colors.textGhost}>
+          <Txt f="m" s={13} w={700} c={t.colors.textGhost}>
             Hesapsız devam et
           </Txt>
         </Press>
@@ -200,10 +203,11 @@ export function SignInScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  linkRow: { alignSelf: 'flex-start', paddingVertical: 2 },
-  center: { alignSelf: 'center', paddingVertical: 6 },
-  pending: { gap: 8 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    fill: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    linkRow: { alignSelf: 'flex-start', paddingVertical: 2 },
+    center: { alignSelf: 'center', paddingVertical: 6 },
+    pending: { gap: 8 },
+  });

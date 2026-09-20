@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
 import { Notice } from '../components/Notice';
 import { Txt } from '../components/Txt';
-import { colors } from '../theme/tokens';
 import { emailProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -18,6 +19,8 @@ import { useBack, useGo } from '../navigation/useGo';
  * kayıtlı olup olmadığını isteyen herkese söyleyen bir araca dönüşürdü.
  */
 export function ForgotPasswordScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('signin');
   const { go } = useGo();
   const { sendReset } = useAuth();
@@ -54,7 +57,7 @@ export function ForgotPasswordScreen() {
             ry: 170,
             cx: 0.18,
             cy: 0.06,
-            color: colors.accent,
+            color: t.colors.accent,
             opacity: 0.13,
             stop: 0.62,
           },
@@ -66,7 +69,7 @@ export function ForgotPasswordScreen() {
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={colors.textDim}>
+        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
           E-posta adresini yaz; şifreni yenilemen için bir bağlantı gönderelim.
         </Txt>
 
@@ -113,7 +116,7 @@ export function ForgotPasswordScreen() {
           onPress={() => go('signin')}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt f="m" s={13} w={700} c={colors.link}>
+          <Txt f="m" s={13} w={700} c={t.colors.link}>
             Giriş ekranına dön
           </Txt>
         </Press>
@@ -122,8 +125,9 @@ export function ForgotPasswordScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  center: { alignSelf: 'center', paddingVertical: 6 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    fill: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    center: { alignSelf: 'center', paddingVertical: 6 },
+  });

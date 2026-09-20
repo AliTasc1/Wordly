@@ -1,5 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, TinyButton } from '../components/Buttons';
@@ -7,7 +9,7 @@ import { Card } from '../components/Surfaces';
 import { AnswerFeedback, QuizOption } from '../components/QuizOption';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
@@ -16,6 +18,8 @@ import { useBack, useGo } from '../navigation/useGo';
 
 /** 11 · Gramer — concept → examples → mistakes → exercises. */
 export function GrammarScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
@@ -73,12 +77,12 @@ export function GrammarScreen() {
           <Txt f="m" s={16} w={800}>
             {lesson.title}
           </Txt>
-          <Txt s={11} w={600} c={colors.textDim}>
+          <Txt s={11} w={600} c={t.colors.textDim}>
             {lesson.topic}
           </Txt>
         </View>
         <View style={styles.levelTag}>
-          <Txt f="mono" s={11} w={700} c={colors.violetSoft}>
+          <Txt f="mono" s={11} w={700} c={t.colors.violetSoft}>
             {lesson.level} · {index + 1}/{lessons.length}
           </Txt>
         </View>
@@ -92,7 +96,7 @@ export function GrammarScreen() {
               styles.step,
               {
                 backgroundColor:
-                  i < asked ? colors.accent : i === asked ? colors.primary : alpha.w10,
+                  i < asked ? t.colors.accent : i === asked ? t.colors.primary : t.alpha.w10,
               },
             ]}
           />
@@ -103,35 +107,35 @@ export function GrammarScreen() {
         deg={140}
         colors={['rgba(124,92,255,.22)', 'rgba(14,20,38,.92)']}
         style={styles.concept}>
-        <Txt f="mono" s={10} w={700} c={colors.violetSoft} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.14}>
           KURAL
         </Txt>
-        <Txt s={14.5} lh={1.6} c={colors.textBright}>
+        <Txt s={14.5} lh={1.6} c={t.colors.textBright}>
           {lesson.concept.summary}
         </Txt>
         {lesson.concept.formula ? (
           <View style={styles.formula}>
-            <Txt f="mono" s={12} w={700} c={colors.accentSoft}>
+            <Txt f="mono" s={12} w={700} c={t.colors.accentSoft}>
               {lesson.concept.formula.left}
             </Txt>
-            <Txt c={colors.textGhost}>+</Txt>
-            <Txt f="mono" s={12} w={700} c={colors.violetSoft}>
+            <Txt c={t.colors.textGhost}>+</Txt>
+            <Txt f="mono" s={12} w={700} c={t.colors.violetSoft}>
               {lesson.concept.formula.right}
             </Txt>
           </View>
         ) : null}
         <View style={styles.canDo}>
-          <Txt f="mono" s={10} w={700} c={colors.mintSoft} ls={0.1}>
+          <Txt f="mono" s={10} w={700} c={t.colors.mintSoft} ls={0.1}>
             ARTIK YAPABİLİRSİN
           </Txt>
-          <Txt s={12.5} lh={1.55} c={colors.textMuted} style={styles.canDoBody}>
+          <Txt s={12.5} lh={1.55} c={t.colors.textMuted} style={styles.canDoBody}>
             {lesson.canDo}
           </Txt>
         </View>
       </Gradient>
 
       <View style={styles.examples}>
-        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
           ÖRNEKLER
         </Txt>
         {lesson.examples.map((example) => (
@@ -139,11 +143,11 @@ export function GrammarScreen() {
             <Txt s={14.5} w={600} lh={1.5}>
               {example.en}
             </Txt>
-            <Txt s={12.5} lh={1.5} c={colors.textDim}>
+            <Txt s={12.5} lh={1.5} c={t.colors.textDim}>
               {example.tr}
             </Txt>
             {example.note ? (
-              <Txt s={11.5} lh={1.5} c={colors.textFaint}>
+              <Txt s={11.5} lh={1.5} c={t.colors.textFaint}>
                 {example.note}
               </Txt>
             ) : null}
@@ -152,18 +156,18 @@ export function GrammarScreen() {
       </View>
 
       <View style={styles.mistakes}>
-        <Txt f="mono" s={10} w={700} c={colors.errorTint} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.errorTint} ls={0.14}>
           SIK YAPILAN HATA
         </Txt>
         {lesson.mistakes.map((mistake) => (
           <View key={mistake.wrong} style={styles.mistake}>
-            <Txt s={13.5} w={600} lh={1.5} c={colors.errorTint} style={styles.wrong}>
+            <Txt s={13.5} w={600} lh={1.5} c={t.colors.errorTint} style={styles.wrong}>
               ✕ {mistake.wrong}
             </Txt>
-            <Txt s={13.5} w={600} lh={1.5} c={colors.mintSoft}>
+            <Txt s={13.5} w={600} lh={1.5} c={t.colors.mintSoft}>
               ✓ {mistake.right}
             </Txt>
-            <Txt s={11.5} lh={1.5} c={colors.textDim}>
+            <Txt s={11.5} lh={1.5} c={t.colors.textDim}>
               {mistake.why}
             </Txt>
           </View>
@@ -171,7 +175,7 @@ export function GrammarScreen() {
       </View>
 
       <Card>
-        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
           ALIŞTIRMA {asked + 1}/{lesson.exercises.length}
         </Txt>
         <Txt f="m" s={19} w={700} lh={1.4}>
@@ -210,14 +214,14 @@ export function GrammarScreen() {
           <Txt f="m" s={13.5} w={700}>
             Hızlı tur
           </Txt>
-          <Txt s={11.5} c={colors.textDim}>
+          <Txt s={11.5} c={t.colors.textDim}>
             Arenada bu konuyu süreyle dene
           </Txt>
         </View>
         <TinyButton
           label="Başla"
-          bg={colors.warning}
-          color={colors.onLight}
+          bg={t.colors.warning}
+          color={t.colors.onLight}
           onPress={() => go('arena')}
         />
       </View>
@@ -226,77 +230,78 @@ export function GrammarScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  levelTag: {
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: radii.chipSm,
-    backgroundColor: 'rgba(124,92,255,.18)',
-    borderWidth: 1,
-    borderColor: 'rgba(124,92,255,.32)',
-  },
-  steps: { flexDirection: 'row', gap: 5 },
-  step: { flex: 1, height: 4, borderRadius: 9 },
-  concept: {
-    borderWidth: 1,
-    borderColor: 'rgba(124,92,255,.3)',
-    borderRadius: radii.section,
-    padding: 18,
-    gap: 10,
-  },
-  formula: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-    backgroundColor: 'rgba(0,0,0,.28)',
-    borderRadius: radii.card,
-    padding: 12,
-  },
-  canDo: {
-    backgroundColor: 'rgba(34,197,94,.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(34,197,94,.24)',
-    borderRadius: radii.card,
-    padding: 12,
-  },
-  canDoBody: { marginTop: 3 },
-  examples: {
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.panel,
-    padding: 15,
-    gap: 12,
-  },
-  example: { gap: 2 },
-  mistakes: {
-    backgroundColor: 'rgba(255,77,94,.07)',
-    borderWidth: 1,
-    borderColor: 'rgba(255,77,94,.2)',
-    borderRadius: radii.panel,
-    padding: 15,
-    gap: 12,
-  },
-  mistake: { gap: 2 },
-  wrong: { textDecorationLine: 'line-through' },
-  challenge: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    backgroundColor: 'rgba(245,165,36,.1)',
-    borderWidth: 1,
-    borderColor: 'rgba(245,165,36,.28)',
-    borderRadius: radii.tile,
-    padding: 14,
-  },
-  challengeIcon: {
-    width: 42,
-    height: 42,
-    borderRadius: radii.card,
-    backgroundColor: 'rgba(245,165,36,.2)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    levelTag: {
+      paddingVertical: 5,
+      paddingHorizontal: 10,
+      borderRadius: radii.chipSm,
+      backgroundColor: 'rgba(124,92,255,.18)',
+      borderWidth: 1,
+      borderColor: 'rgba(124,92,255,.32)',
+    },
+    steps: { flexDirection: 'row', gap: 5 },
+    step: { flex: 1, height: 4, borderRadius: 9 },
+    concept: {
+      borderWidth: 1,
+      borderColor: 'rgba(124,92,255,.3)',
+      borderRadius: radii.section,
+      padding: 18,
+      gap: 10,
+    },
+    formula: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 8,
+      backgroundColor: 'rgba(0,0,0,.28)',
+      borderRadius: radii.card,
+      padding: 12,
+    },
+    canDo: {
+      backgroundColor: 'rgba(34,197,94,.1)',
+      borderWidth: 1,
+      borderColor: 'rgba(34,197,94,.24)',
+      borderRadius: radii.card,
+      padding: 12,
+    },
+    canDoBody: { marginTop: 3 },
+    examples: {
+      backgroundColor: t.colors.surface,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.panel,
+      padding: 15,
+      gap: 12,
+    },
+    example: { gap: 2 },
+    mistakes: {
+      backgroundColor: 'rgba(255,77,94,.07)',
+      borderWidth: 1,
+      borderColor: 'rgba(255,77,94,.2)',
+      borderRadius: radii.panel,
+      padding: 15,
+      gap: 12,
+    },
+    mistake: { gap: 2 },
+    wrong: { textDecorationLine: 'line-through' },
+    challenge: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 10,
+      backgroundColor: 'rgba(245,165,36,.1)',
+      borderWidth: 1,
+      borderColor: 'rgba(245,165,36,.28)',
+      borderRadius: radii.tile,
+      padding: 14,
+    },
+    challengeIcon: {
+      width: 42,
+      height: 42,
+      borderRadius: radii.card,
+      backgroundColor: 'rgba(245,165,36,.2)',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });

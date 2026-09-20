@@ -345,6 +345,6 @@ export function ScreenHeading({
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  statLabel: { marginTop: 1, textAlign: 'center' },
-  heading: { marginTop: 4 },
-});
+    statLabel: { marginTop: 1, textAlign: 'center' },
+    heading: { marginTop: 4 },
+  });

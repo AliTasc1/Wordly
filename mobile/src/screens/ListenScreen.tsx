@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
@@ -10,7 +12,7 @@ import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
 import { StepFooter } from '../components/StepFooter';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { listeningOf } from '../content';
 import { useQuiz } from '../state/useQuiz';
 import { useApp } from '../state/AppContext';
@@ -27,6 +29,8 @@ const SPEEDS = [
 
 /** 12 · Dinleme — player, transcript and comprehension questions. */
 export function ListenScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   useStudySession();
   const { go } = useGo();
   const back = useBack('lesson');
@@ -151,7 +155,7 @@ export function ListenScreen() {
           <Txt f="m" s={16} w={800}>
             {item.title}
           </Txt>
-          <Txt s={11} w={600} c={colors.textDim}>
+          <Txt s={11} w={600} c={t.colors.textDim}>
             {item.level} · {item.lines.length} replik · {index + 1}/{items.length}
           </Txt>
         </View>
@@ -179,7 +183,7 @@ export function ListenScreen() {
             accessibilityRole="button"
             accessibilityState={{ selected: playing }}
             accessibilityLabel={playing ? 'Durdur' : 'Oynat'}>
-            <Gradient colors={gradients.cyan} style={styles.playBtn}>
+            <Gradient colors={t.gradients.cyan} style={styles.playBtn}>
               <Txt f="m" s={18} w={700}>
                 {playing ? '■' : '▶'}
               </Txt>
@@ -198,24 +202,24 @@ export function ListenScreen() {
         </View>
 
         <View style={styles.scrubber}>
-          <Txt f="mono" s={11} w={700} c={colors.textDim}>
+          <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
             {Math.max(line + 1, 0)}
           </Txt>
           <ProgressBar
             pct={playing ? ((line + 1) / item.lines.length) * 100 : 0}
-            from={colors.accent}
-            to={colors.primary}
+            from={t.colors.accent}
+            to={t.colors.primary}
             height={5}
-            track={alpha.w12}
+            track={t.alpha.w12}
             style={styles.flex}
           />
-          <Txt f="mono" s={11} w={700} c={colors.textDim}>
+          <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
             {item.lines.length} replik
           </Txt>
         </View>
 
         {recorded ? null : (
-          <Txt s={11} lh={1.5} c={colors.textFaint}>
+          <Txt s={11} lh={1.5} c={t.colors.textFaint}>
             Bu diyaloğun kaydı henüz üretilmedi; cihazının kendi seslendirmesiyle
             okunuyor.
           </Txt>
@@ -232,7 +236,7 @@ export function ListenScreen() {
         <Txt f="m" s={13} w={700} style={styles.flex}>
           Transkript
         </Txt>
-        <Txt f="mono" s={11} w={700} c={colors.textDim}>
+        <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
           {transcript ? 'GİZLE' : 'GÖSTER'}
         </Txt>
       </Press>
@@ -256,7 +260,7 @@ export function ListenScreen() {
               accessibilityRole="button"
               accessibilityLabel={`${turn.who}: repliği dinle`}
               style={[styles.line, i === line && styles.lineOn]}>
-              <Txt f="mono" s={10} w={700} c={colors.accentSoft} ls={0.08}>
+              <Txt f="mono" s={10} w={700} c={t.colors.accentSoft} ls={0.08}>
                 {turn.who.toUpperCase()}
               </Txt>
               <GlossedText
@@ -265,7 +269,7 @@ export function ListenScreen() {
                 size={13.5}
                 onWord={(gloss) => fire(gloss.w, gloss.tr)}
               />
-              <Txt s={12} lh={1.6} c={colors.textDim}>
+              <Txt s={12} lh={1.6} c={t.colors.textDim}>
                 {turn.tr}
               </Txt>
             </Press>
@@ -274,7 +278,7 @@ export function ListenScreen() {
       ) : null}
 
       <Card>
-        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.14}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.14}>
           SORU {asked + 1}/{item.questions.length} · {right} doğru
         </Txt>
         <Txt f="m" s={17} w={700} lh={1.4}>
@@ -308,55 +312,56 @@ export function ListenScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  player: {
-    borderWidth: 1,
-    borderColor: 'rgba(34,211,238,.28)',
-    borderRadius: radii.hero,
-    padding: 20,
-    gap: 16,
-  },
-  controls: { flexDirection: 'row', alignItems: 'center', gap: 14, justifyContent: 'center' },
-  smallBtn: {
-    width: 44,
-    height: 44,
-    borderRadius: radii.card,
-    borderWidth: 1,
-    borderColor: alpha.w14,
-    backgroundColor: alpha.w05,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  playBtn: {
-    width: 64,
-    height: 64,
-    borderRadius: 32,
-    alignItems: 'center',
-    justifyContent: 'center',
-    boxShadow: shadows.ctaCyan,
-  },
-  scrubber: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  transcriptToggle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.input,
-    padding: 13,
-  },
-  transcript: {
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    borderRadius: radii.panel,
-    padding: 15,
-    gap: 14,
-  },
-  line: { gap: 3, borderRadius: radii.input, paddingHorizontal: 8, paddingVertical: 6 },
-  // Okunmakta olan replik: öğrenci sesi hangi satırda olduğunu kaybetmesin.
-  lineOn: { backgroundColor: alpha.w05, borderWidth: 1, borderColor: 'rgba(34,211,238,.35)' },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    player: {
+      borderWidth: 1,
+      borderColor: 'rgba(34,211,238,.28)',
+      borderRadius: radii.hero,
+      padding: 20,
+      gap: 16,
+    },
+    controls: { flexDirection: 'row', alignItems: 'center', gap: 14, justifyContent: 'center' },
+    smallBtn: {
+      width: 44,
+      height: 44,
+      borderRadius: radii.card,
+      borderWidth: 1,
+      borderColor: t.alpha.w14,
+      backgroundColor: t.alpha.w05,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    playBtn: {
+      width: 64,
+      height: 64,
+      borderRadius: 32,
+      alignItems: 'center',
+      justifyContent: 'center',
+      boxShadow: t.shadows.ctaCyan,
+    },
+    scrubber: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+    transcriptToggle: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 10,
+      backgroundColor: t.colors.surface,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.input,
+      padding: 13,
+    },
+    transcript: {
+      backgroundColor: t.colors.surface,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      borderRadius: radii.panel,
+      padding: 15,
+      gap: 14,
+    },
+    line: { gap: 3, borderRadius: radii.input, paddingHorizontal: 8, paddingVertical: 6 },
+    // Okunmakta olan replik: öğrenci sesi hangi satırda olduğunu kaybetmesin.
+    lineOn: { backgroundColor: t.alpha.w05, borderWidth: 1, borderColor: 'rgba(34,211,238,.35)' },
+  });

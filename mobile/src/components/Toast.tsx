@@ -65,19 +65,19 @@ export function ToastHost() {
 
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
-  wrap: { position: 'absolute', left: 18, right: 18, zIndex: 90 },
-  card: {
-    backgroundColor: 'rgba(11,17,34,.94)',
-    borderWidth: 1,
-    borderColor: 'rgba(34,211,238,.4)',
-    borderRadius: radii.input,
-    paddingVertical: 13,
-    paddingHorizontal: 15,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 11,
-    boxShadow: t.shadows.toast,
-  },
-  icon: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
-  body: { flex: 1 },
-});
+    wrap: { position: 'absolute', left: 18, right: 18, zIndex: 90 },
+    card: {
+      backgroundColor: 'rgba(11,17,34,.94)',
+      borderWidth: 1,
+      borderColor: 'rgba(34,211,238,.4)',
+      borderRadius: radii.input,
+      paddingVertical: 13,
+      paddingHorizontal: 15,
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 11,
+      boxShadow: t.shadows.toast,
+    },
+    icon: { width: 34, height: 34, borderRadius: 11, alignItems: 'center', justifyContent: 'center' },
+    body: { flex: 1 },
+  });

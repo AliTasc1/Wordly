@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press, PrimaryButton, GhostButton } from '../components/Buttons';
@@ -7,7 +9,7 @@ import { StatTile } from '../components/Surfaces';
 import { ProgressBar } from '../components/Progress';
 import { Waveform } from '../components/Waveform';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { vocabOf } from '../content';
 import { useApp } from '../state/AppContext';
 import { useStudySession } from '../state/useStudySession';
@@ -18,6 +20,8 @@ import { otherSenses } from '../content/senses';
 
 /** 10 · Kelime — a word as a collectible object. */
 export function VocabScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   useStudySession();
   const back = useBack('lesson');
   const { cefr, position, setPosition, fire, isSaved, toggleSavedWord, savedWords, award } =
@@ -105,7 +109,7 @@ export function VocabScreen() {
             label="Tekrar göster"
             height={52}
             radius={16}
-            fill={alpha.w04}
+            fill={t.alpha.w04}
             onPress={onAgain}
             style={styles.flex}
           />
@@ -114,7 +118,7 @@ export function VocabScreen() {
             height={52}
             radius={16}
             size={14.5}
-            shadow={shadows.ctaBrandSmall}
+            shadow={t.shadows.ctaBrandSmall}
             onPress={onKnown}
             style={styles.flexWide}
           />
@@ -124,16 +128,16 @@ export function VocabScreen() {
         <BackButton onPress={back} />
         <ProgressBar
           pct={((index + 1) / deck.length) * 100}
-          from={colors.secondary}
-          to={colors.accent}
+          from={t.colors.secondary}
+          to={t.colors.accent}
           style={styles.flex}
         />
-        <Txt f="mono" s={12} w={700} c={colors.textDim}>
+        <Txt f="mono" s={12} w={700} c={t.colors.textDim}>
           {index + 1}/{deck.length}
         </Txt>
       </View>
 
-      <Gradient deg={165} colors={[colors.surfaceNode, colors.surface]} style={styles.card}>
+      <Gradient deg={165} colors={[t.colors.surfaceNode, t.colors.surface]} style={styles.card}>
         <View style={styles.cardActions}>
           <Press
             onPress={onSave}
@@ -153,7 +157,7 @@ export function VocabScreen() {
         </View>
 
         <View style={styles.pos}>
-          <Txt f="mono" s={10} w={700} c={colors.violetSoft} ls={0.1}>
+          <Txt f="mono" s={10} w={700} c={t.colors.violetSoft} ls={0.1}>
             {card.cefr}
           </Txt>
         </View>
@@ -167,16 +171,16 @@ export function VocabScreen() {
           <Txt f="m" s={40} w={800} ls={-0.02}>
             {card.word}
           </Txt>
-          <Txt f="m" s={13} w={700} c={colors.violetSoft} style={styles.posLine}>
+          <Txt f="m" s={13} w={700} c={t.colors.violetSoft} style={styles.posLine}>
             {card.posLabel.toLocaleLowerCase('tr-TR')}
           </Txt>
           <View style={styles.ipaRow}>
             {card.ipa ? (
-              <Txt f="mono" s={14} w={600} c={colors.accentSoft}>
+              <Txt f="mono" s={14} w={600} c={t.colors.accentSoft}>
                 {card.ipa}
               </Txt>
             ) : null}
-            <Txt s={13} w={600} c={colors.textDim}>
+            <Txt s={13} w={600} c={t.colors.textDim}>
               · {card.tr}
             </Txt>
           </View>
@@ -191,10 +195,10 @@ export function VocabScreen() {
         </Press>
 
         <View style={styles.block}>
-          <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.1} style={styles.blockKicker}>
+          <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.1} style={styles.blockKicker}>
             TANIM
           </Txt>
-          <Txt s={13.5} lh={1.5} c={colors.textBright}>
+          <Txt s={13.5} lh={1.5} c={t.colors.textBright}>
             {card.definition}
           </Txt>
         </View>
@@ -204,7 +208,7 @@ export function VocabScreen() {
             gideriyor hem ikinci anlamı öğretiyor. */}
         {senses.length ? (
           <View style={styles.senses}>
-            <Txt f="mono" s={9.5} w={700} c={colors.textDisabled} ls={0.12}>
+            <Txt f="mono" s={9.5} w={700} c={t.colors.textDisabled} ls={0.12}>
               AYNI YAZILIŞ, BAŞKA ANLAM
             </Txt>
             {senses.map((sense) => (
@@ -212,9 +216,9 @@ export function VocabScreen() {
                 key={`${sense.pos}-${sense.cefr}`}
                 s={12.5}
                 lh={1.5}
-                c={colors.textDim}
+                c={t.colors.textDim}
                 style={styles.senseRow}>
-                <Txt f="m" s={12.5} w={700} c={colors.violetSoft}>
+                <Txt f="m" s={12.5} w={700} c={t.colors.violetSoft}>
                   {sense.pos.toLocaleLowerCase('tr-TR')}
                 </Txt>
                 {`  ${sense.tr}  ·  ${sense.cefr}`}
@@ -230,25 +234,25 @@ export function VocabScreen() {
             accessibilityState={{ selected: speaking === 'example' }}
             accessibilityLabel="Örnek cümleyi dinle"
             style={styles.blockKickerRow}>
-            <Txt f="mono" s={10} w={700} c={colors.blueSoft} ls={0.1}>
+            <Txt f="mono" s={10} w={700} c={t.colors.blueSoft} ls={0.1}>
               ÖRNEK
             </Txt>
             <Txt s={12}>🔊</Txt>
           </Press>
           <Example sentence={card.example} word={card.word} />
-          <Txt s={12} c={colors.textDim} style={styles.exampleTr}>
+          <Txt s={12} c={t.colors.textDim} style={styles.exampleTr}>
             {card.exampleTr}
           </Txt>
         </View>
       </Gradient>
 
       <View style={styles.stats}>
-        <StatTile value={String(savedWords.length)} label="kaydedilen kelime" tint={colors.accent} />
-        <StatTile value={String(index + 1)} label="bu seviyede görülen" tint={colors.secondary} />
+        <StatTile value={String(savedWords.length)} label="kaydedilen kelime" tint={t.colors.accent} />
+        <StatTile value={String(index + 1)} label="bu seviyede görülen" tint={t.colors.secondary} />
         <StatTile
           value={String(deck.length - index - 1)}
           label="kalan kart"
-          tint={colors.warning}
+          tint={t.colors.warning}
         />
       </View>
     </Screen>
@@ -261,6 +265,7 @@ export function VocabScreen() {
  * happens here — case-insensitively, since a sentence may open with the word.
  */
 function Example({ sentence, word }: { sentence: string; word: string }) {
+  const t = useTheme();
   const at = sentence.toLowerCase().indexOf(word.toLowerCase());
   if (at < 0) {
     return (
@@ -272,7 +277,7 @@ function Example({ sentence, word }: { sentence: string; word: string }) {
   return (
     <Txt s={14} w={600} lh={1.5}>
       {sentence.slice(0, at)}
-      <Txt s={14} w={600} c={colors.accent}>
+      <Txt s={14} w={600} c={t.colors.accent}>
         {sentence.slice(at, at + word.length)}
       </Txt>
       {sentence.slice(at + word.length)}
@@ -280,55 +285,56 @@ function Example({ sentence, word }: { sentence: string; word: string }) {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  flexWide: { flex: 1.4 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  card: {
-    borderWidth: 1,
-    borderColor: alpha.w10,
-    borderRadius: radii.screen,
-    padding: 20,
-    gap: 14,
-    boxShadow: shadows.card,
-  },
-  cardActions: { position: 'absolute', top: 14, right: 16, flexDirection: 'row', gap: 8, zIndex: 2 },
-  iconBtn: {
-    width: 38,
-    height: 38,
-    borderRadius: radii.md,
-    borderWidth: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  saved: { backgroundColor: 'rgba(245,165,36,.24)', borderColor: colors.warning },
-  unsaved: { backgroundColor: alpha.w06, borderColor: alpha.w12 },
-  audioBtn: { backgroundColor: 'rgba(46,107,255,.16)', borderColor: 'rgba(46,107,255,.35)' },
-  posLine: { marginTop: -2 },
-  senses: {
-    gap: 5,
-    padding: 13,
-    borderRadius: radii.input,
-    borderWidth: 1,
-    borderColor: 'rgba(124,92,255,.25)',
-    backgroundColor: 'rgba(124,92,255,.08)',
-  },
-  senseRow: { marginTop: 1 },
-  pos: {
-    alignSelf: 'flex-start',
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: radii.chipSm,
-    backgroundColor: 'rgba(124,92,255,.18)',
-    borderWidth: 1,
-    borderColor: 'rgba(124,92,255,.32)',
-  },
-  ipaRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 5 },
-  block: { backgroundColor: alpha.w04, borderRadius: radii.input, padding: 13 },
-  blockKicker: { marginBottom: 5 },
-  blockKickerRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 5 },
-  exampleBlock: { backgroundColor: 'rgba(46,107,255,.1)' },
-  exampleTr: { marginTop: 4 },
-  actions: { flexDirection: 'row', gap: 10 },
-  stats: { flexDirection: 'row', gap: 9 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    flexWide: { flex: 1.4 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    card: {
+      borderWidth: 1,
+      borderColor: t.alpha.w10,
+      borderRadius: radii.screen,
+      padding: 20,
+      gap: 14,
+      boxShadow: t.shadows.card,
+    },
+    cardActions: { position: 'absolute', top: 14, right: 16, flexDirection: 'row', gap: 8, zIndex: 2 },
+    iconBtn: {
+      width: 38,
+      height: 38,
+      borderRadius: radii.md,
+      borderWidth: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    saved: { backgroundColor: 'rgba(245,165,36,.24)', borderColor: t.colors.warning },
+    unsaved: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w12 },
+    audioBtn: { backgroundColor: 'rgba(46,107,255,.16)', borderColor: 'rgba(46,107,255,.35)' },
+    posLine: { marginTop: -2 },
+    senses: {
+      gap: 5,
+      padding: 13,
+      borderRadius: radii.input,
+      borderWidth: 1,
+      borderColor: 'rgba(124,92,255,.25)',
+      backgroundColor: 'rgba(124,92,255,.08)',
+    },
+    senseRow: { marginTop: 1 },
+    pos: {
+      alignSelf: 'flex-start',
+      paddingVertical: 5,
+      paddingHorizontal: 10,
+      borderRadius: radii.chipSm,
+      backgroundColor: 'rgba(124,92,255,.18)',
+      borderWidth: 1,
+      borderColor: 'rgba(124,92,255,.32)',
+    },
+    ipaRow: { flexDirection: 'row', alignItems: 'center', gap: 10, marginTop: 5 },
+    block: { backgroundColor: t.alpha.w04, borderRadius: radii.input, padding: 13 },
+    blockKicker: { marginBottom: 5 },
+    blockKickerRow: { flexDirection: 'row', alignItems: 'center', gap: 6, marginBottom: 5 },
+    exampleBlock: { backgroundColor: 'rgba(46,107,255,.1)' },
+    exampleTr: { marginTop: 4 },
+    actions: { flexDirection: 'row', gap: 10 },
+    stats: { flexDirection: 'row', gap: 9 },
+  });

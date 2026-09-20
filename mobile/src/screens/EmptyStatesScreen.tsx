@@ -1,17 +1,21 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Press } from '../components/Buttons';
 import { ScreenHeading } from '../components/Surfaces';
 import { StripeCircle } from '../components/StripeArt';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { EMPTY_STATES } from '../data/onboarding';
 import { useGo } from '../navigation/useGo';
 
 /** Empty-state reference — art, one line of copy, a single primary action. */
 export function EmptyStatesScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
 
   return (
@@ -28,11 +32,11 @@ export function EmptyStatesScreen() {
           <Txt f="m" s={15} w={800}>
             {state.title}
           </Txt>
-          <Txt s={12} lh={1.55} c={colors.textDim} style={styles.text}>
+          <Txt s={12} lh={1.55} c={t.colors.textDim} style={styles.text}>
             {state.text}
           </Txt>
           <Press onPress={() => go(state.target)}>
-            <Gradient colors={gradients.brand} style={styles.cta}>
+            <Gradient colors={t.gradients.brand} style={styles.cta}>
               <Txt f="m" s={12.5} w={800}>
                 {state.cta}
               </Txt>
@@ -44,16 +48,17 @@ export function EmptyStatesScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  card: {
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: alpha.w07,
-    borderRadius: radii.section,
-    padding: 18,
-    alignItems: 'center',
-    gap: 10,
-  },
-  text: { maxWidth: 250, textAlign: 'center' },
-  cta: { paddingVertical: 11, paddingHorizontal: 18, borderRadius: radii.card },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    card: {
+      backgroundColor: t.colors.surface,
+      borderWidth: 1,
+      borderColor: t.alpha.w07,
+      borderRadius: radii.section,
+      padding: 18,
+      alignItems: 'center',
+      gap: 10,
+    },
+    text: { maxWidth: 250, textAlign: 'center' },
+    cta: { paddingVertical: 11, paddingHorizontal: 18, borderRadius: radii.card },
+  });

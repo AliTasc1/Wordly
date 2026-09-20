@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
 import { Notice } from '../components/Notice';
 import { Txt } from '../components/Txt';
-import { alpha, colors, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import {
   fetchParticipation,
   nameProblem,
@@ -28,6 +30,8 @@ import { useBack, useGo } from '../navigation/useGo';
  * paylaşım değil sürprizdir.
  */
 export function BoardJoinScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('settings');
   const { go } = useGo();
   const { user } = useAuth();
@@ -121,12 +125,12 @@ export function BoardJoinScreen() {
         </View>
 
         {loading ? (
-          <Txt s={13} c={colors.textDim}>
+          <Txt s={13} c={t.colors.textDim}>
             Yükleniyor…
           </Txt>
         ) : (
           <>
-            <Txt s={13.5} lh={1.6} c={colors.textDim}>
+            <Txt s={13.5} lh={1.6} c={t.colors.textDim}>
               Haftalık tablo, katılmayı seçen kullanıcıların bu hafta kazandığı XP’yi
               sıralar. Pazartesi sıfırlanır.
             </Txt>
@@ -135,19 +139,19 @@ export function BoardJoinScreen() {
                 birincisi kadar önemli: insanlar çoğu zaman neyin
                 paylaşılmadığını merak eder. */}
             <View style={styles.sheet}>
-              <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14}>
+              <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
                 KATILIRSAN GÖRÜNEN
               </Txt>
-              <Txt s={12.5} lh={1.6} c={colors.textSubtle}>
+              <Txt s={12.5} lh={1.6} c={t.colors.textSubtle}>
                 · Seçtiğin ad{'\n'}· Bu hafta kazandığın XP
               </Txt>
 
               <View style={styles.rule} />
 
-              <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14}>
+              <Txt f="mono" s={10} w={700} c={t.colors.textDisabled} ls={0.14}>
                 GÖRÜNMEYEN
               </Txt>
-              <Txt s={12.5} lh={1.6} c={colors.textSubtle}>
+              <Txt s={12.5} lh={1.6} c={t.colors.textSubtle}>
                 · E-posta adresin{'\n'}· Seviyen ve ders ilerlemen{'\n'}· Hata defterin ve
                 kaydettiğin kelimeler
               </Txt>
@@ -189,7 +193,7 @@ export function BoardJoinScreen() {
                   disabled={busy}
                 />
                 <Press onPress={leave} disabled={busy} style={styles.leave}>
-                  <Txt f="m" s={13.5} w={700} c={colors.errorSoft}>
+                  <Txt f="m" s={13.5} w={700} c={t.colors.errorSoft}>
                     Tablodan çık
                   </Txt>
                 </Press>
@@ -205,7 +209,7 @@ export function BoardJoinScreen() {
             <Spacer />
 
             <Press onPress={() => go('board')} style={styles.center}>
-              <Txt f="m" s={13} w={700} c={colors.link}>
+              <Txt f="m" s={13} w={700} c={t.colors.link}>
                 Tabloyu gör
               </Txt>
             </Press>
@@ -216,25 +220,26 @@ export function BoardJoinScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  sheet: {
-    gap: 7,
-    padding: 15,
-    borderRadius: radii.tile,
-    borderWidth: 1,
-    borderColor: alpha.w08,
-    backgroundColor: colors.surface,
-  },
-  rule: { height: 1, backgroundColor: alpha.w08, marginVertical: 5 },
-  leave: {
-    alignItems: 'center',
-    paddingVertical: 13,
-    borderRadius: radii.input,
-    borderWidth: 1,
-    borderColor: 'rgba(255,77,94,.3)',
-    backgroundColor: 'rgba(255,77,94,.1)',
-  },
-  center: { alignSelf: 'center', paddingVertical: 6 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    fill: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    sheet: {
+      gap: 7,
+      padding: 15,
+      borderRadius: radii.tile,
+      borderWidth: 1,
+      borderColor: t.alpha.w08,
+      backgroundColor: t.colors.surface,
+    },
+    rule: { height: 1, backgroundColor: t.alpha.w08, marginVertical: 5 },
+    leave: {
+      alignItems: 'center',
+      paddingVertical: 13,
+      borderRadius: radii.input,
+      borderWidth: 1,
+      borderColor: 'rgba(255,77,94,.3)',
+      backgroundColor: 'rgba(255,77,94,.1)',
+    },
+    center: { alignSelf: 'center', paddingVertical: 6 },
+  });

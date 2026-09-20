@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { bad, ok, tap } from '../audio/feel';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
@@ -7,7 +9,7 @@ import { Glow } from '../components/Glow';
 import { BackButton, Press } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii, shadows } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { ARENA } from '../data/play';
 import { arenaRound } from '../content/arena';
 import {
@@ -33,6 +35,8 @@ const KEY = 50;
 
 /** 17 · Harf Arenası — the signature game: build a word from the wheel. */
 export function ArenaScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('play');
   const { cefr, fire, arenaMode, arenaSolved, arenaMissed, award } = useApp();
 
@@ -159,7 +163,7 @@ export function ArenaScreen() {
           ry: 230,
           cx: 0.5,
           cy: 0.58,
-          color: colors.primary,
+          color: t.colors.primary,
           opacity: 0.26,
           stop: 0.66,
         },
@@ -168,7 +172,7 @@ export function ArenaScreen() {
           ry: 130,
           cx: 0.82,
           cy: 0.14,
-          color: colors.secondary,
+          color: t.colors.secondary,
           opacity: 0.22,
           stop: 0.64,
         },
@@ -181,56 +185,56 @@ export function ArenaScreen() {
         />
         <View style={styles.timer}>
           <View style={styles.timerHead}>
-            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
               {rule.name.toLocaleUpperCase('tr-TR')}
             </Txt>
             {/* Süresiz modda sayaç yerine kalan hak yazıyor; ikisi de yoksa
                 satır boş kalıyor. Olmayan bir sayacı "00:24" diye çizmek,
                 oyuncuya var olmayan bir baskı hissettirmekti. */}
             {state.secondsLeft != null ? (
-              <Txt f="mono" s={11} w={700} c={colors.warningText}>
+              <Txt f="mono" s={11} w={700} c={t.colors.warningText}>
                 {clock(state.secondsLeft)}
               </Txt>
             ) : state.livesLeft != null ? (
-              <Txt f="mono" s={11} w={700} c={colors.errorTint}>
+              <Txt f="mono" s={11} w={700} c={t.colors.errorTint}>
                 {'♥'.repeat(state.livesLeft)}
               </Txt>
             ) : null}
           </View>
           <ProgressBar
             pct={Math.round(timePct(state) * 100)}
-            from={colors.warning}
-            to={colors.error}
-            track={alpha.w10}
+            from={t.colors.warning}
+            to={t.colors.error}
+            track={t.alpha.w10}
           />
         </View>
         <View style={styles.xp}>
-          <Txt f="m" s={20} w={800} c={colors.accent}>
+          <Txt f="m" s={20} w={800} c={t.colors.accent}>
             {state.xp}
           </Txt>
-          <Txt f="mono" s={9.5} w={600} c={colors.textGhost}>
+          <Txt f="mono" s={9.5} w={600} c={t.colors.textGhost}>
             XP
           </Txt>
         </View>
       </View>
 
       <View style={styles.stats}>
-        <ArenaStat label="KOMBO" value={`×${state.combo}`} tint={colors.violetSoft} />
-        <ArenaStat label="SERİ" value={String(state.streak)} tint={colors.warningSoft} />
+        <ArenaStat label="KOMBO" value={`×${state.combo}`} tint={t.colors.violetSoft} />
+        <ArenaStat label="SERİ" value={String(state.streak)} tint={t.colors.warningSoft} />
         {/* Eskiden "3/8" yazıyordu: sekiz kelimelik bir hedef hiç yoktu. */}
-        <ArenaStat label="KELİME" value={String(state.found)} tint={colors.successSoft} />
+        <ArenaStat label="KELİME" value={String(state.found)} tint={t.colors.successSoft} />
       </View>
 
       <Gradient
         deg={180}
         colors={['rgba(18,26,49,.9)', 'rgba(14,20,38,.9)']}
         style={styles.mission}>
-        <Txt f="mono" s={10} w={700} c={colors.textFaint} ls={0.12}>
+        <Txt f="mono" s={10} w={700} c={t.colors.textFaint} ls={0.12}>
           GÖREV
         </Txt>
         <Txt f="m" s={16.5} w={700} lh={1.4} style={styles.missionText}>
           Türkçesi verilen
-          <Txt f="m" s={16.5} w={700} c={colors.accent}>
+          <Txt f="m" s={16.5} w={700} c={t.colors.accent}>
             {puzzle.slots} harfli
           </Txt>
           kelimeyi kur
@@ -242,7 +246,7 @@ export function ArenaScreen() {
           <View
             key={i}
             style={[styles.slot, word[i] ? styles.slotFilled : styles.slotEmpty]}>
-            <Txt f="mono" s={20} w={700} c={word[i] ? colors.text : colors.textGhost}>
+            <Txt f="mono" s={20} w={700} c={word[i] ? t.colors.text : t.colors.textGhost}>
               {word[i] ?? ''}
             </Txt>
           </View>
@@ -260,7 +264,7 @@ export function ArenaScreen() {
                 ry: 52,
                 cx: 0.5,
                 cy: 0.5,
-                color: colors.primary,
+                color: t.colors.primary,
                 opacity: 0.34,
                 stop: 0.7,
               },
@@ -274,10 +278,10 @@ export function ArenaScreen() {
               içerideki metnin ipucu mu başka bir şey mi olduğunu
               anlayamadığını söyledi. Etiket ayrı satıra alındı. */}
           <View style={styles.wheelCoreText}>
-            <Txt f="mono" s={9} w={700} c={colors.textDisabled} ls={0.16}>
+            <Txt f="mono" s={9} w={700} c={t.colors.textDisabled} ls={0.16}>
               İPUCU
             </Txt>
-            <Txt f="m" s={13} w={700} c={colors.blueSoft} style={styles.coreHint}>
+            <Txt f="m" s={13} w={700} c={t.colors.blueSoft} style={styles.coreHint}>
               {puzzle.tr}
             </Txt>
           </View>
@@ -301,7 +305,7 @@ export function ArenaScreen() {
                 accessibilityRole="button"
                 accessibilityLabel={`${letter} harfini çıkar`}
                 style={position}>
-                <Gradient colors={gradients.brand} style={[styles.key, styles.keyOn]}>
+                <Gradient colors={t.gradients.brand} style={[styles.key, styles.keyOn]}>
                   <Txt f="mono" s={20} w={700}>
                     {letter}
                   </Txt>
@@ -333,29 +337,29 @@ export function ArenaScreen() {
             {summaryTitle(state)}
           </Txt>
           <View style={styles.summaryRow}>
-            <ArenaStat label="XP" value={String(state.xp)} tint={colors.accent} />
+            <ArenaStat label="XP" value={String(state.xp)} tint={t.colors.accent} />
             <ArenaStat
               label="KELİME"
               value={String(state.found)}
-              tint={colors.successSoft}
+              tint={t.colors.successSoft}
             />
             <ArenaStat
               label="EN UZUN SERİ"
               value={String(state.bestStreak)}
-              tint={colors.warningSoft}
+              tint={t.colors.warningSoft}
             />
           </View>
-          <Txt s={11.5} lh={1.5} c={colors.textFaint} style={styles.summaryNote}>
+          <Txt s={11.5} lh={1.5} c={t.colors.textFaint} style={styles.summaryNote}>
             Kazandığın XP günlük toplamına eklendi.
           </Txt>
           <View style={styles.summaryActions}>
             <Press onPress={back} style={[styles.actionBtn, styles.clear]}>
-              <Txt f="m" s={13.5} w={700} c={colors.textSubtle}>
+              <Txt f="m" s={13.5} w={700} c={t.colors.textSubtle}>
                 Çık
               </Txt>
             </Press>
             <Press onPress={again} style={styles.submitWrap}>
-              <Gradient colors={gradients.brand} style={styles.submit}>
+              <Gradient colors={t.gradients.brand} style={styles.submit}>
                 <Txt f="m" s={14.5} w={800}>
                   Tekrar oyna
                 </Txt>
@@ -376,7 +380,7 @@ export function ArenaScreen() {
               accessibilityRole="button"
               accessibilityLabel="Son harfi geri al"
               style={[styles.actionBtn, styles.clear, !picked.length && styles.actionOff]}>
-              <Txt f="m" s={17} w={700} c={colors.textSubtle}>
+              <Txt f="m" s={17} w={700} c={t.colors.textSubtle}>
                 ⌫
               </Txt>
             </Press>
@@ -404,14 +408,14 @@ export function ArenaScreen() {
               accessibilityState={{ disabled: !ready }}
               style={styles.submitWrap}>
               {ready ? (
-                <Gradient colors={gradients.brand} style={styles.submit}>
+                <Gradient colors={t.gradients.brand} style={styles.submit}>
                   <Txt f="m" s={14.5} w={800}>
                     {ARENA.submitReady}
                   </Txt>
                 </Gradient>
               ) : (
                 <View style={[styles.submit, styles.submitIdle]}>
-                  <Txt f="m" s={13.5} w={700} c={colors.textDisabled}>
+                  <Txt f="m" s={13.5} w={700} c={t.colors.textDisabled}>
                     {puzzle.slots - word.length} harf kaldı
                   </Txt>
                 </View>
@@ -421,7 +425,7 @@ export function ArenaScreen() {
 
           {/* Pas. Takılan öğrencinin tek çıkışı turu bırakmaktı. */}
           <Press onPress={skip} accessibilityRole="button" style={styles.skip}>
-            <Txt f="m" s={12.5} w={700} c={colors.textFaint}>
+            <Txt f="m" s={12.5} w={700} c={t.colors.textFaint}>
               Bu kelimeyi geç →
             </Txt>
           </Press>
@@ -440,9 +444,11 @@ function ArenaStat({
   value: string;
   tint: string;
 }) {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   return (
     <View style={styles.stat}>
-      <Txt f="mono" s={9.5} w={600} c={colors.textFaint} ls={0.1}>
+      <Txt f="mono" s={9.5} w={600} c={t.colors.textFaint} ls={0.1}>
         {label}
       </Txt>
       <Txt f="m" s={16} w={800} c={tint}>
@@ -452,139 +458,140 @@ function ArenaStat({
   );
 }
 
-const styles = StyleSheet.create({
-  header: { flexDirection: 'row', alignItems: 'center', gap: 10 },
-  timer: { flex: 1, gap: 5 },
-  timerHead: { flexDirection: 'row', justifyContent: 'space-between' },
-  xp: { alignItems: 'flex-end' },
-  stats: { flexDirection: 'row', gap: 9, alignItems: 'center' },
-  stat: {
-    flex: 1,
-    backgroundColor: alpha.w04,
-    borderWidth: 1,
-    borderColor: alpha.w09,
-    borderRadius: radii.card,
-    paddingVertical: 9,
-    paddingHorizontal: 12,
-  },
-  mission: {
-    borderWidth: 1,
-    borderColor: alpha.w10,
-    borderRadius: radii.tile,
-    padding: 14,
-    alignItems: 'center',
-  },
-  missionText: { marginTop: 5, textAlign: 'center' },
-  slots: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 7,
-    minHeight: 56,
-  },
-  slot: {
-    width: 40,
-    height: 48,
-    borderRadius: radii.lg,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-  },
-  slotFilled: {
-    backgroundColor: 'rgba(34,211,238,.16)',
-    borderColor: 'rgba(34,211,238,.45)',
-  },
-  slotEmpty: {
-    backgroundColor: alpha.w03,
-    borderStyle: 'dashed',
-    borderColor: alpha.w16,
-  },
-  wheel: { width: WHEEL, height: WHEEL, alignSelf: 'center' },
-  wheelRing: {
-    position: 'absolute',
-    top: 0,
-    left: 0,
-    right: 0,
-    bottom: 0,
-    borderRadius: CENTER,
-    borderWidth: 1.5,
-    borderColor: alpha.w10,
-  },
-  wheelRingInner: {
-    position: 'absolute',
-    top: 34,
-    left: 34,
-    right: 34,
-    bottom: 34,
-    borderRadius: CENTER,
-    borderWidth: 1,
-    borderStyle: 'dashed',
-    borderColor: alpha.w12,
-  },
-  wheelCore: {
-    position: 'absolute',
-    top: 88,
-    left: 88,
-    right: 88,
-    bottom: 88,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  actionsWrap: { gap: 8 },
-  actionOff: { opacity: 0.4 },
-  skip: { alignSelf: 'center', paddingVertical: 8, paddingHorizontal: 16 },
-  wheelCoreText: { alignItems: 'center' },
-  coreHint: { marginTop: 2 },
-  key: {
-    position: 'absolute',
-    width: KEY,
-    height: KEY,
-    borderRadius: 17,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-  },
-  keyOn: {
-    borderColor: alpha.w30,
-    transform: [{ scale: 1.06 }],
-    boxShadow: '0px 10px 24px rgba(46,107,255,.5)',
-  },
-  keyOff: { backgroundColor: alpha.w06, borderColor: alpha.w14 },
-  actions: { flexDirection: 'row', gap: 9, marginTop: 'auto' },
-  summary: {
-    marginTop: 'auto',
-    gap: 10,
-    padding: 16,
-    borderRadius: radii.section,
-    borderWidth: 1,
-    borderColor: alpha.w12,
-    backgroundColor: 'rgba(14,20,38,.96)',
-    alignItems: 'center',
-  },
-  summaryRow: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
-  summaryNote: { textAlign: 'center' },
-  summaryActions: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
-  actionBtn: {
-    height: 50,
-    borderRadius: radii.input,
-    borderWidth: 1,
-    borderColor: alpha.w12,
-    backgroundColor: alpha.w04,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  clear: { flex: 1 },
-  shuffle: { width: 56 },
-  submitWrap: { flex: 1.4 },
-  submit: {
-    height: 50,
-    borderRadius: radii.input,
-    alignItems: 'center',
-    justifyContent: 'center',
-    boxShadow: shadows.ctaBrandSmall,
-  },
-  // `submit` zaten yüksekliği ve hizayı veriyor; burası yalnızca zemini
-  // değiştiriyor. İkisini de tanımlamak, birini değiştirince diğerinin
-  // geride kalması demekti.
-  submitIdle: { backgroundColor: alpha.w06 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    header: { flexDirection: 'row', alignItems: 'center', gap: 10 },
+    timer: { flex: 1, gap: 5 },
+    timerHead: { flexDirection: 'row', justifyContent: 'space-between' },
+    xp: { alignItems: 'flex-end' },
+    stats: { flexDirection: 'row', gap: 9, alignItems: 'center' },
+    stat: {
+      flex: 1,
+      backgroundColor: t.alpha.w04,
+      borderWidth: 1,
+      borderColor: t.alpha.w09,
+      borderRadius: radii.card,
+      paddingVertical: 9,
+      paddingHorizontal: 12,
+    },
+    mission: {
+      borderWidth: 1,
+      borderColor: t.alpha.w10,
+      borderRadius: radii.tile,
+      padding: 14,
+      alignItems: 'center',
+    },
+    missionText: { marginTop: 5, textAlign: 'center' },
+    slots: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 7,
+      minHeight: 56,
+    },
+    slot: {
+      width: 40,
+      height: 48,
+      borderRadius: radii.lg,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 1,
+    },
+    slotFilled: {
+      backgroundColor: 'rgba(34,211,238,.16)',
+      borderColor: 'rgba(34,211,238,.45)',
+    },
+    slotEmpty: {
+      backgroundColor: t.alpha.w03,
+      borderStyle: 'dashed',
+      borderColor: t.alpha.w16,
+    },
+    wheel: { width: WHEEL, height: WHEEL, alignSelf: 'center' },
+    wheelRing: {
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      borderRadius: CENTER,
+      borderWidth: 1.5,
+      borderColor: t.alpha.w10,
+    },
+    wheelRingInner: {
+      position: 'absolute',
+      top: 34,
+      left: 34,
+      right: 34,
+      bottom: 34,
+      borderRadius: CENTER,
+      borderWidth: 1,
+      borderStyle: 'dashed',
+      borderColor: t.alpha.w12,
+    },
+    wheelCore: {
+      position: 'absolute',
+      top: 88,
+      left: 88,
+      right: 88,
+      bottom: 88,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    actionsWrap: { gap: 8 },
+    actionOff: { opacity: 0.4 },
+    skip: { alignSelf: 'center', paddingVertical: 8, paddingHorizontal: 16 },
+    wheelCoreText: { alignItems: 'center' },
+    coreHint: { marginTop: 2 },
+    key: {
+      position: 'absolute',
+      width: KEY,
+      height: KEY,
+      borderRadius: 17,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 1,
+    },
+    keyOn: {
+      borderColor: t.alpha.w30,
+      transform: [{ scale: 1.06 }],
+      boxShadow: '0px 10px 24px rgba(46,107,255,.5)',
+    },
+    keyOff: { backgroundColor: t.alpha.w06, borderColor: t.alpha.w14 },
+    actions: { flexDirection: 'row', gap: 9, marginTop: 'auto' },
+    summary: {
+      marginTop: 'auto',
+      gap: 10,
+      padding: 16,
+      borderRadius: radii.section,
+      borderWidth: 1,
+      borderColor: t.alpha.w12,
+      backgroundColor: 'rgba(14,20,38,.96)',
+      alignItems: 'center',
+    },
+    summaryRow: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
+    summaryNote: { textAlign: 'center' },
+    summaryActions: { flexDirection: 'row', gap: 9, alignSelf: 'stretch' },
+    actionBtn: {
+      height: 50,
+      borderRadius: radii.input,
+      borderWidth: 1,
+      borderColor: t.alpha.w12,
+      backgroundColor: t.alpha.w04,
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    clear: { flex: 1 },
+    shuffle: { width: 56 },
+    submitWrap: { flex: 1.4 },
+    submit: {
+      height: 50,
+      borderRadius: radii.input,
+      alignItems: 'center',
+      justifyContent: 'center',
+      boxShadow: t.shadows.ctaBrandSmall,
+    },
+    // `submit` zaten yüksekliği ve hizayı veriyor; burası yalnızca zemini
+    // değiştiriyor. İkisini de tanımlamak, birini değiştirince diğerinin
+    // geride kalması demekti.
+    submitIdle: { backgroundColor: t.alpha.w06 },
+  });

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { KeyboardAvoidingView, Platform, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen, Spacer } from '../components/Screen';
 import { BackButton, PrimaryButton, Press } from '../components/Buttons';
 import { Field } from '../components/Field';
 import { Notice } from '../components/Notice';
 import { Txt } from '../components/Txt';
-import { colors } from '../theme/tokens';
 import { emailProblem, MIN_PASSWORD, passwordProblem } from '../server/errors';
 import { useAuth } from '../state/AuthContext';
 import { useBack, useGo } from '../navigation/useGo';
@@ -18,6 +19,8 @@ import { useBack, useGo } from '../navigation/useGo';
  * çalışmaktır.
  */
 export function SignUpScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const back = useBack('signin');
   const { go } = useGo();
   const { signUp, resendConfirmation, pendingEmail } = useAuth();
@@ -74,7 +77,7 @@ export function SignUpScreen() {
             ry: 170,
             cx: 0.18,
             cy: 0.06,
-            color: colors.secondary,
+            color: t.colors.secondary,
             opacity: 0.16,
             stop: 0.62,
           },
@@ -91,7 +94,7 @@ export function SignUpScreen() {
           text={`${pendingEmail} adresine bir doğrulama bağlantısı gönderdik.`}
         />
 
-        <Txt s={13.5} lh={1.6} c={colors.textDim}>
+        <Txt s={13.5} lh={1.6} c={t.colors.textDim}>
           Bağlantıya telefonundan tıkla; uygulama kendiliğinden açılıp girişini tamamlar.
           E-posta görünmüyorsa gereksiz (spam) klasörüne bak.
         </Txt>
@@ -109,7 +112,7 @@ export function SignUpScreen() {
             accessibilityRole="button"
             style={styles.center}
             disabled={busy}>
-            <Txt f="m" s={13} w={700} c={colors.link}>
+            <Txt f="m" s={13} w={700} c={t.colors.link}>
               E-postayı yeniden gönder
             </Txt>
           </Press>
@@ -132,7 +135,7 @@ export function SignUpScreen() {
             ry: 170,
             cx: 0.18,
             cy: 0.06,
-            color: colors.secondary,
+            color: t.colors.secondary,
             opacity: 0.16,
             stop: 0.62,
           },
@@ -144,7 +147,7 @@ export function SignUpScreen() {
           </Txt>
         </View>
 
-        <Txt s={13.5} lh={1.55} c={colors.textDim}>
+        <Txt s={13.5} lh={1.55} c={t.colors.textDim}>
           Hesap, ilerlemeni telefonun dışında da saklar. Telefonunu değiştirdiğinde
           kaldığın yerden devam edersin.
         </Txt>
@@ -211,9 +214,9 @@ export function SignUpScreen() {
           onPress={() => go('signin')}
           accessibilityRole="button"
           style={styles.center}>
-          <Txt s={13} c={colors.textDim}>
+          <Txt s={13} c={t.colors.textDim}>
             Zaten hesabın var mı?{' '}
-            <Txt f="m" s={13} w={700} c={colors.link}>
+            <Txt f="m" s={13} w={700} c={t.colors.link}>
               Giriş yap
             </Txt>
           </Txt>
@@ -223,8 +226,9 @@ export function SignUpScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  fill: { flex: 1 },
-  header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
-  center: { alignSelf: 'center', paddingVertical: 6 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    fill: { flex: 1 },
+    header: { flexDirection: 'row', alignItems: 'center', gap: 12 },
+    center: { alignSelf: 'center', paddingVertical: 6 },
+  });

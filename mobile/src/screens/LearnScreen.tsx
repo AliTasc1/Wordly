@@ -1,12 +1,14 @@
 import React, { useMemo } from 'react';
 import { ScrollView, StyleSheet, View } from 'react-native';
+import { useStyles, useTheme } from '../theme/ThemeContext';
+import type { Theme } from '../theme/theme';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { Chip, Row, ScreenHeading } from '../components/Surfaces';
 import { Press } from '../components/Buttons';
 import { ProgressBar } from '../components/Progress';
 import { Txt } from '../components/Txt';
-import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { radii } from '../theme/tokens';
 import { grammarOf } from '../content';
 import { formatMinutes, levelSummary } from '../content/summary';
 import { CEFR, CEFR_LEVELS } from '../data/curriculum';
@@ -20,6 +22,8 @@ import { useGo } from '../navigation/useGo';
  * lesson sequence, which is ordered and numbered, so that is what is listed.
  */
 export function LearnScreen() {
+  const t = useTheme();
+  const styles = useStyles(makeStyles);
   const { go } = useGo();
   const { cefr, setCefr, position, setPosition } = useApp();
 
@@ -65,35 +69,35 @@ export function LearnScreen() {
             </Txt>
           </View>
         </View>
-        <Txt s={12.5} lh={1.5} c={colors.textSubtle}>
+        <Txt s={12.5} lh={1.5} c={t.colors.textSubtle}>
           {summary.description}
         </Txt>
         <ProgressBar
           pct={progress}
-          from={colors.accent}
-          to={colors.primary}
+          from={t.colors.accent}
+          to={t.colors.primary}
           height={8}
           track="rgba(0,0,0,.35)"
         />
         <View style={styles.meta}>
-          <Txt s={11.5} w={600} c={colors.textMuted}>
+          <Txt s={11.5} w={600} c={t.colors.textMuted}>
             📐 {counts.lessons} ders
           </Txt>
-          <Txt s={11.5} w={600} c={colors.textMuted}>
+          <Txt s={11.5} w={600} c={t.colors.textMuted}>
             🔤 {counts.words.toLocaleString('tr-TR')} kelime
           </Txt>
-          <Txt s={11.5} w={600} c={colors.textMuted}>
+          <Txt s={11.5} w={600} c={t.colors.textMuted}>
             ⏱ {formatMinutes(counts.minutes)}
           </Txt>
         </View>
         <View style={styles.meta}>
-          <Txt s={11.5} w={600} c={colors.textMuted}>
+          <Txt s={11.5} w={600} c={t.colors.textMuted}>
             📖 {counts.reading} okuma
           </Txt>
-          <Txt s={11.5} w={600} c={colors.textMuted}>
+          <Txt s={11.5} w={600} c={t.colors.textMuted}>
             🎧 {counts.listening} dinleme
           </Txt>
-          <Txt s={11.5} w={600} c={colors.textMuted}>
+          <Txt s={11.5} w={600} c={t.colors.textMuted}>
             🎙 {counts.speaking} konuşma
           </Txt>
         </View>
@@ -104,7 +108,7 @@ export function LearnScreen() {
           Dersler
         </Txt>
         <Press onPress={() => go('map')} scale={0.97}>
-          <Txt s={12.5} w={700} c={colors.link}>
+          <Txt s={12.5} w={700} c={t.colors.link}>
             Harita görünümü ›
           </Txt>
         </Press>
@@ -120,12 +124,12 @@ export function LearnScreen() {
                 styles.unitBadge,
                 done ? styles.unitDone : now ? styles.unitNowBorder : styles.unitIdle,
               ]}>
-              {now ? <Gradient colors={gradients.brand} style={styles.unitFill} /> : null}
+              {now ? <Gradient colors={t.gradients.brand} style={styles.unitFill} /> : null}
               <Txt
                 f="m"
                 s={13}
                 w={800}
-                c={done ? colors.successSoft : now ? colors.text : colors.textFaint}>
+                c={done ? t.colors.successSoft : now ? t.colors.text : t.colors.textFaint}>
                 {String(lesson.order).padStart(2, '0')}
               </Txt>
             </View>
@@ -133,11 +137,11 @@ export function LearnScreen() {
               <Txt f="m" s={14.5} w={700}>
                 {lesson.title}
               </Txt>
-              <Txt s={11.5} c={colors.textDim} style={styles.unitSub}>
+              <Txt s={11.5} c={t.colors.textDim} style={styles.unitSub}>
                 {lesson.topic} · {lesson.exercises.length} alıştırma
               </Txt>
             </View>
-            <Txt f="mono" s={11} w={700} c={colors.textDim}>
+            <Txt f="mono" s={11} w={700} c={t.colors.textDim}>
               {done ? 'BİTTİ' : now ? 'DEVAM' : 'YENİ'}
             </Txt>
           </Row>
@@ -147,40 +151,41 @@ export function LearnScreen() {
   );
 }
 
-const styles = StyleSheet.create({
-  flex: { flex: 1 },
-  tabs: { gap: 7, paddingBottom: 4 },
-  summary: {
-    borderWidth: 1,
-    borderColor: 'rgba(46,107,255,.3)',
-    borderRadius: radii.section,
-    padding: 16,
-    gap: 11,
-  },
-  summaryHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  pct: {
-    paddingVertical: 5,
-    paddingHorizontal: 10,
-    borderRadius: radii.chipSm,
-    backgroundColor: alpha.w10,
-  },
-  meta: { flexDirection: 'row', gap: 16 },
-  listHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  unitBadge: {
-    width: 42,
-    height: 42,
-    borderRadius: radii.card,
-    alignItems: 'center',
-    justifyContent: 'center',
-    overflow: 'hidden',
-  },
-  unitDone: {
-    backgroundColor: 'rgba(34,197,94,.16)',
-    borderWidth: 1,
-    borderColor: 'rgba(34,197,94,.34)',
-  },
-  unitNowBorder: { backgroundColor: colors.primary },
-  unitIdle: { backgroundColor: alpha.w05, borderWidth: 1, borderColor: alpha.w10 },
-  unitFill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
-  unitSub: { marginTop: 2 },
-});
+const makeStyles = (t: Theme) =>
+  StyleSheet.create({
+    flex: { flex: 1 },
+    tabs: { gap: 7, paddingBottom: 4 },
+    summary: {
+      borderWidth: 1,
+      borderColor: 'rgba(46,107,255,.3)',
+      borderRadius: radii.section,
+      padding: 16,
+      gap: 11,
+    },
+    summaryHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+    pct: {
+      paddingVertical: 5,
+      paddingHorizontal: 10,
+      borderRadius: radii.chipSm,
+      backgroundColor: t.alpha.w10,
+    },
+    meta: { flexDirection: 'row', gap: 16 },
+    listHead: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+    unitBadge: {
+      width: 42,
+      height: 42,
+      borderRadius: radii.card,
+      alignItems: 'center',
+      justifyContent: 'center',
+      overflow: 'hidden',
+    },
+    unitDone: {
+      backgroundColor: 'rgba(34,197,94,.16)',
+      borderWidth: 1,
+      borderColor: 'rgba(34,197,94,.34)',
+    },
+    unitNowBorder: { backgroundColor: t.colors.primary },
+    unitIdle: { backgroundColor: t.alpha.w05, borderWidth: 1, borderColor: t.alpha.w10 },
+    unitFill: { position: 'absolute', top: 0, left: 0, right: 0, bottom: 0 },
+    unitSub: { marginTop: 2 },
+  });
