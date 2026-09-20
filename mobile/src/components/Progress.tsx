@@ -3,13 +3,7 @@ import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 import { useStyles, useTheme } from '../theme/ThemeContext';
 import type { Theme } from '../theme/theme';
 import { tint } from '../theme/tint';
-import Svg, {
-  Circle,
-  Defs,
-  LinearGradient as SvgGradient,
-  Polygon,
-  Stop,
-} from 'react-native-svg';
+import Svg, { Circle } from 'react-native-svg';
 import { Gradient } from './Gradient';
 import { Txt } from './Txt';
 import { font } from '../theme/tokens';
@@ -205,6 +199,10 @@ export function ColumnChart({
 }) {
   const t = useTheme();
   const styles = useStyles(makeStyles);
+  // Boş bir hafta `max: 0` ile gelirse her sütunun yüksekliği NaN olur ve
+  // grafik hiç çizilmez. Çağıran taraf şu an tabanı bire çekiyor; burada da
+  // duruyor, çünkü tavanı çağırana bırakmak sessiz bir bağımlılıktı.
+  const tavan = Math.max(max, 1);
   return (
     <View style={styles.chart}>
       {data.map((d) => (
@@ -218,7 +216,7 @@ export function ColumnChart({
             }
             style={{
               width: '100%',
-              height: Math.round((d.value / max) * height),
+              height: Math.round((d.value / tavan) * height),
               borderTopLeftRadius: 8,
               borderTopRightRadius: 8,
               borderBottomLeftRadius: 3,
@@ -234,7 +232,6 @@ export function ColumnChart({
   );
 }
 
-/** Radar chart behind the level-test result. */
 const makeStyles = (t: Theme) =>
   StyleSheet.create({
     center: { alignItems: 'center', justifyContent: 'center' },

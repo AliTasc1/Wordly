@@ -5,21 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Destek · WORDLY</title>
 <meta name="description" content="WORDLY destek sayfası: sık karşılaşılan sorunlar ve iletişim.">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Destek · WORDLY">
+<meta property="og:description" content="WORDLY destek sayfası: sık karşılaşılan sorunlar ve iletişim.">
+<meta property="og:type" content="website">
 <link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  try {
+    var k = localStorage.getItem('wordly:tema');
+    if (k === 'light' || k === 'dark') document.documentElement.dataset.theme = k;
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
-<div class="wrap">
 <header class="top">
-  <a class="logo" href="./">WORD<span>LY</span></a>
-  <nav><a href="./">Ana sayfa</a><a href="gizlilik.html">Gizlilik</a><a href="sartlar.html">Şartlar</a><a href="destek.html" aria-current="page">Destek</a></nav>
+  <div class="wrap">
+    <a class="logo" href="./">WORD<span>LY</span></a>
+    <nav><a href="./">Ana sayfa</a><a href="gizlilik.html" class="gizle-dar">Gizlilik</a><a href="sartlar.html" class="gizle-dar">Şartlar</a><a href="destek.html" aria-current="page">Destek</a>
+      <button class="tema" type="button" aria-label="Temayı değiştir">🌙</button>
+    </nav>
+  </div>
 </header>
-
+<div class="wrap"><main class="metin">
 <h1>Destek</h1>
 <p class="lede">Bir sorun mu var, bir şey mi çalışmıyor? Yaz, bakalım.</p>
 <div class="notice"><strong>Bu sayfa henüz yayına hazır değil.</strong> Şu alanlar doldurulmadı: <code>veriSorumlusu</code>, <code>adres</code>, <code>destekEposta</code>, <code>yetkiliMahkeme</code>. <code>content/legal/site.json</code> doldurulup <code>python3 content/build-site.py</code> çalıştırılmalı.</div>
 
-<p><a href="mailto:DOLDUR-destek@alan-adin.com">DOLDUR-destek@alan-adin.com</a></p>
+<p><a class="cta" href="mailto:DOLDUR-destek@alan-adin.com">DOLDUR-destek@alan-adin.com</a></p>
 
 <h2>Yazmadan önce denenecekler</h2>
 
@@ -44,17 +58,67 @@ A1 ve A2'de kayıtlı seslerle, üst seviyelerde telefonun kendi seslendirmesiyl
 <p>Telefon ayarlarından WORDLY için mikrofon iznini aç. Kayıtların
 telefonundan çıkmaz.</p>
 
+<h3>Uygulama çok koyu ya da çok parlak</h3>
+<p><strong>Ayarlar → Görünüm</strong>'den Sistem, Açık ve Koyu arasında
+seçebilirsin. Varsayılan "Sistem": telefonun ayarını izler.</p>
+
 <h2>Verilerinle ilgili</h2>
 <p>Verilerinin kopyasını <strong>Ayarlar → Verilerimi indir</strong> ile
 alabilirsin. Hesabını ve sunucudaki tüm veriyi
 <strong>Ayarlar → Hesabımı sil</strong> ile kalıcı olarak silebilirsin;
 bunun için bize yazmana gerek yok.</p>
 <p>Ayrıntılar <a href="gizlilik.html">Gizlilik Politikası</a>'nda.</p>
-
+</main></div>
 <footer>
-  <p>WORDLY — Türkçe konuşanlar için İngilizce.
-  <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> · <a href="destek.html">Destek</a></p>
+  <div class="wrap">
+    <p>WORDLY — Türkçe konuşanlar için İngilizce.
+    <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> ·
+    <a href="destek.html">Destek</a></p>
+  </div>
 </footer>
-</div>
+<script>
+(function () {
+  var kok = document.documentElement;
+  var dugme = document.querySelector('.tema');
+
+  function suAn() {
+    if (kok.dataset.theme) return kok.dataset.theme;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+  function yaz() {
+    if (!dugme) return;
+    var acik = suAn() === 'light';
+    dugme.textContent = acik ? '☀️' : '🌙';
+    dugme.setAttribute('aria-label', acik ? 'Koyu temaya geç' : 'Açık temaya geç');
+  }
+  if (dugme) {
+    dugme.addEventListener('click', function () {
+      var yeni = suAn() === 'light' ? 'dark' : 'light';
+      kok.dataset.theme = yeni;
+      try { localStorage.setItem('wordly:tema', yeni); } catch (e) {}
+      yaz();
+    });
+    yaz();
+  }
+
+  // Bölümler kaydırdıkça beliriyor. Hareketi azaltılmış isteyen kullanıcıda
+  // hiç çalışmıyor; içerik zaten CSS'te görünür durumda.
+  var azalt = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hedef = document.querySelectorAll('.bel');
+  if (azalt || !('IntersectionObserver' in window)) {
+    hedef.forEach(function (e) { e.classList.add('acik'); });
+    return;
+  }
+  var g = new IntersectionObserver(function (girisler) {
+    girisler.forEach(function (giris) {
+      if (giris.isIntersecting) {
+        giris.target.classList.add('acik');
+        g.unobserve(giris.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  hedef.forEach(function (e) { g.observe(e); });
+})();
+</script>
 </body>
 </html>

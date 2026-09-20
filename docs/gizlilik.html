@@ -5,16 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gizlilik Politikası · WORDLY</title>
 <meta name="description" content="WORDLY Gizlilik Politikası">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Gizlilik Politikası · WORDLY">
+<meta property="og:description" content="WORDLY Gizlilik Politikası">
+<meta property="og:type" content="website">
 <link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  try {
+    var k = localStorage.getItem('wordly:tema');
+    if (k === 'light' || k === 'dark') document.documentElement.dataset.theme = k;
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
-<div class="wrap">
 <header class="top">
-  <a class="logo" href="./">WORD<span>LY</span></a>
-  <nav><a href="./">Ana sayfa</a><a href="gizlilik.html" aria-current="page">Gizlilik</a><a href="sartlar.html">Şartlar</a><a href="destek.html">Destek</a></nav>
+  <div class="wrap">
+    <a class="logo" href="./">WORD<span>LY</span></a>
+    <nav><a href="./">Ana sayfa</a><a href="gizlilik.html" class="gizle-dar" aria-current="page">Gizlilik</a><a href="sartlar.html" class="gizle-dar">Şartlar</a><a href="destek.html">Destek</a>
+      <button class="tema" type="button" aria-label="Temayı değiştir">🌙</button>
+    </nav>
+  </div>
 </header>
-<div class="notice"><strong>Bu sayfa henüz yayına hazır değil.</strong> Şu alanlar doldurulmadı: <code>veriSorumlusu</code>, <code>adres</code>, <code>destekEposta</code>, <code>yetkiliMahkeme</code>. <code>content/legal/site.json</code> doldurulup <code>python3 content/build-site.py</code> çalıştırılmalı.</div><h1>WORDLY — Gizlilik Politikası</h1>
+<div class="wrap"><main class="metin"><div class="notice"><strong>Bu sayfa henüz yayına hazır değil.</strong> Şu alanlar doldurulmadı: <code>veriSorumlusu</code>, <code>adres</code>, <code>destekEposta</code>, <code>yetkiliMahkeme</code>. <code>content/legal/site.json</code> doldurulup <code>python3 content/build-site.py</code> çalıştırılmalı.</div><h1>WORDLY — Gizlilik Politikası</h1>
 <p><strong>Yürürlük tarihi:</strong> 19 Eylül 2026
 <strong>Son güncelleme:</strong> 19 Eylül 2026</p>
 <hr />
@@ -242,11 +256,57 @@ değişiklik, <strong>yürürlüğe girmeden önce</strong> duyurulur.</p>
 <h2>12. İletişim</h2>
 <p>DOLDUR-tam-adin-ya-da-sirket-unvanin
 DOLDUR-acik-adres
-DOLDUR-destek@alan-adin.com</p>
+DOLDUR-destek@alan-adin.com</p></main></div>
 <footer>
-  <p>WORDLY — Türkçe konuşanlar için İngilizce.
-  <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> · <a href="destek.html">Destek</a></p>
+  <div class="wrap">
+    <p>WORDLY — Türkçe konuşanlar için İngilizce.
+    <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> ·
+    <a href="destek.html">Destek</a></p>
+  </div>
 </footer>
-</div>
+<script>
+(function () {
+  var kok = document.documentElement;
+  var dugme = document.querySelector('.tema');
+
+  function suAn() {
+    if (kok.dataset.theme) return kok.dataset.theme;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+  function yaz() {
+    if (!dugme) return;
+    var acik = suAn() === 'light';
+    dugme.textContent = acik ? '☀️' : '🌙';
+    dugme.setAttribute('aria-label', acik ? 'Koyu temaya geç' : 'Açık temaya geç');
+  }
+  if (dugme) {
+    dugme.addEventListener('click', function () {
+      var yeni = suAn() === 'light' ? 'dark' : 'light';
+      kok.dataset.theme = yeni;
+      try { localStorage.setItem('wordly:tema', yeni); } catch (e) {}
+      yaz();
+    });
+    yaz();
+  }
+
+  // Bölümler kaydırdıkça beliriyor. Hareketi azaltılmış isteyen kullanıcıda
+  // hiç çalışmıyor; içerik zaten CSS'te görünür durumda.
+  var azalt = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hedef = document.querySelectorAll('.bel');
+  if (azalt || !('IntersectionObserver' in window)) {
+    hedef.forEach(function (e) { e.classList.add('acik'); });
+    return;
+  }
+  var g = new IntersectionObserver(function (girisler) {
+    girisler.forEach(function (giris) {
+      if (giris.isIntersecting) {
+        giris.target.classList.add('acik');
+        g.unobserve(giris.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  hedef.forEach(function (e) { g.observe(e); });
+})();
+</script>
 </body>
 </html>

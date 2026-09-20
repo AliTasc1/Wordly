@@ -1,3 +1,16 @@
+#!/usr/bin/env python3
+"""Sitenin stil sayfası.
+
+Renkler, puntolar ve boşluklar uygulamanın jetonlarından birebir
+kopyalanıyor (`mobile/src/theme/palette.ts`, `theme.ts`, `tokens.ts`).
+Site ile uygulama aynı şeye benzemek zorunda: siteye bakıp indiren kişi
+uygulamayı açtığında aynı yerde olduğunu anlamalı.
+
+Site de uygulama gibi iki temalı ve seçimi hatırlıyor. Bunu anlatmak
+yerine göstermek, "açık tema da var" cümlesinden daha ikna edici.
+"""
+
+STYLE = """\
 /* ------------------------------------------------------------------ jetonlar
    Uygulamanın paletinden kopya. Değiştirmek gerekirse ikisi birlikte
    değişmeli, yoksa siteyle uygulama birbirinden ayrışır.                     */
@@ -519,3 +532,4 @@ footer a { color: var(--dim); }
   section { padding: var(--s5) 0; }
   header.top nav a.gizle-dar { display: none; }
 }
+"""

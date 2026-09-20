@@ -5,54 +5,406 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Türkçe konuşanlar için İngilizce · WORDLY</title>
 <meta name="description" content="Türkçe konuşanlar için ücretsiz İngilizce öğrenme uygulaması. A1–C2, çevrimdışı çalışır, reklam yok.">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
+<meta property="og:title" content="Türkçe konuşanlar için İngilizce · WORDLY">
+<meta property="og:description" content="Türkçe konuşanlar için ücretsiz İngilizce öğrenme uygulaması. A1–C2, çevrimdışı çalışır, reklam yok.">
+<meta property="og:type" content="website">
 <link rel="stylesheet" href="style.css">
+<script>
+(function () {
+  try {
+    var k = localStorage.getItem('wordly:tema');
+    if (k === 'light' || k === 'dark') document.documentElement.dataset.theme = k;
+  } catch (e) {}
+})();
+</script>
 </head>
 <body>
-<div class="wrap">
 <header class="top">
-  <a class="logo" href="./">WORD<span>LY</span></a>
-  <nav><a href="./" aria-current="page">Ana sayfa</a><a href="gizlilik.html">Gizlilik</a><a href="sartlar.html">Şartlar</a><a href="destek.html">Destek</a></nav>
+  <div class="wrap">
+    <a class="logo" href="./">WORD<span>LY</span></a>
+    <nav><a href="./" aria-current="page">Ana sayfa</a><a href="gizlilik.html" class="gizle-dar">Gizlilik</a><a href="sartlar.html" class="gizle-dar">Şartlar</a><a href="destek.html">Destek</a>
+      <button class="tema" type="button" aria-label="Temayı değiştir">🌙</button>
+    </nav>
+  </div>
 </header>
 
-<h1>İngilizceyi gerçekten öğren.</h1>
-<p class="lede">WORDLY, Türkçe konuşanlar için bir İngilizce öğrenme uygulaması.
-A1'den C2'ye kadar altı seviye; kelime, gramer, okuma, dinleme, konuşma ve yazma.</p>
-<div class="notice"><strong>Bu sayfa henüz yayına hazır değil.</strong> Şu alanlar doldurulmadı: <code>veriSorumlusu</code>, <code>adres</code>, <code>destekEposta</code>, <code>yetkiliMahkeme</code>. <code>content/legal/site.json</code> doldurulup <code>python3 content/build-site.py</code> çalıştırılmalı.</div>
+<main>
 
-<div class="cards">
-  <div class="card"><h3>Tamamen ücretsiz</h3><p>Kilitli bölüm yok, abonelik yok, uygulama içi satın alma yok.</p></div>
-  <div class="card"><h3>Çevrimdışı çalışır</h3><p>İnternet olmadan da açılır. İlerlemen telefonunda durur.</p></div>
-  <div class="card"><h3>Hesap isteğe bağlı</h3><p>Hesap yalnızca ilerlemeni ikinci bir cihaza taşımak için.</p></div>
-  <div class="card"><h3>Reklam ve takip yok</h3><p>Hiçbir izleme kütüphanesi kullanılmıyor. Veri satılmıyor.</p></div>
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="kicker">A1 → C2 · Türkçe anlatım</span>
+        <h1>İngilizceyi gerçekten öğren.</h1>
+        <p class="lede">Ders çalışıyormuş gibi olmadan. Kelime, gramer, okuma,
+        dinleme, konuşma ve yazma — altı seviye boyunca, CEFR standardına göre,
+        telefonunda ve internetsiz.</p>
+        <div class="rozetler">
+          <span class="rozet">🇹🇷 Türkçe anlatım</span>
+          <span class="rozet">✈️ Çevrimdışı</span>
+          <span class="rozet">💸 Ücretsiz</span>
+          <span class="rozet">🚫 Reklamsız</span>
+        </div>
+        <!-- Mağaza düğmeleri henüz bağlanacak bir yere gitmiyor; düğme gibi
+             görünüp hiçbir şey yapmasınlar diye düğme değil, durum satırı. -->
+        <div class="magaza">
+          <span class="magaza-kutu">
+            <b>App Store</b><i>yayına hazırlanıyor</i>
+          </span>
+          <span class="magaza-kutu">
+            <b>Google Play</b><i>yayına hazırlanıyor</i>
+          </span>
+        </div>
+        <p class="hero-not">Sürüm çıktığında bu sayfada bağlantısı olacak.
+        Haber almak için <a href="destek.html">destek sayfasından</a> yazabilirsin.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="WORDLY ana ekranı: günlük hedef, seri ve kaldığın yer">
+<div class="e-baslik">
+  <div class="e-avatar">A</div>
+  <div>
+    <div class="e-ad">İyi akşamlar, Ali 👋</div>
+    <div class="e-alt">Bugün 120 XP · 🔥 7 gün</div>
+  </div>
 </div>
+<div class="e-satir">
+  <div class="e-cip"><u>SEVİYE</u><b>B1</b></div>
+  <div class="e-cip"><u>SERİ</u><b>🔥 7</b></div>
+  <div class="e-cip"><u>XP</u><b>4.480</b></div>
+</div>
+<div class="e-kart">
+  <h4>Bugünkü hedefin</h4>
+  <div class="e-bar"><i style="width:68%"></i></div>
+  <p>14 dk / 20 dk — 6 dakikan kaldı.</p>
+</div>
+<div class="e-kart">
+  <h4>Kaldığın yer</h4>
+  <p>Gramer · Present Perfect — 12/25</p>
+  <div class="e-bar"><i style="width:48%"></i></div>
+</div>
+<div class="e-satir">
+  <div class="e-cip"><u>GÜNÜN OYUNU</u><b style="font-size:13px">🎮 Harf Arenası</b></div>
+</div>
+<div class="e-kart">
+  <h4>Hata defterin</h4>
+  <p>3 yanlış bekliyor — üstünden geçince siliniyor.</p>
+</div>
+<div class="e-alt-menu">
+  <span class="on">🏠</span><span>📚</span><span>🎮</span><span>📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+    <div class="notice"><strong>Bu sayfa henüz yayına hazır değil.</strong> Şu alanlar doldurulmadı: <code>veriSorumlusu</code>, <code>adres</code>, <code>destekEposta</code>, <code>yetkiliMahkeme</code>. <code>content/legal/site.json</code> doldurulup <code>python3 content/build-site.py</code> çalıştırılmalı.</div>
+  </div>
+</section>
 
-<h2>İçinde ne var</h2>
-<table>
-<tr><th>Bölüm</th><th>Kapsam</th></tr>
-<tr><td>Kelime</td><td>9.461 kart, altı seviye, telaffuz kayıtlarıyla</td></tr>
-<tr><td>Gramer</td><td>Seviye seviye alıştırmalar</td></tr>
-<tr><td>Okuma</td><td>150 metin, dokunulabilir kelime açıklamalarıyla</td></tr>
-<tr><td>Dinleme</td><td>150 diyalog, 1.953 ses kaydı, transkript</td></tr>
-<tr><td>Konuşma</td><td>Kendi sesini kaydet ve model sesle karşılaştır</td></tr>
-<tr><td>Yazma</td><td>150 set, 1.200 cümle</td></tr>
-</table>
+<section class="tight alt bel">
+  <div class="wrap">
+    <div class="sayilar"><div class="sayi"><b>9.461</b><span>kelime kartı</span></div><div class="sayi"><b>1.040</b><span>gramer alıştırması</span></div><div class="sayi"><b>150</b><span>okuma parçası</span></div><div class="sayi"><b>1.953</b><span>diyalog satırı</span></div><div class="sayi"><b>1.200</b><span>yazma görevi</span></div><div class="sayi"><b>11.414</b><span>ses kaydı</span></div></div>
+  </div>
+</section>
 
-<h2>Dürüstlük notu</h2>
-<p>Bu sayfada yazan her şey uygulamada gerçekten var. Henüz <strong>yapılmamış</strong>
-olanları da söyleyelim: telaffuz puanlama, arkadaş ve kulüp özellikleri, serbest
-yazma geri bildirimi. Bunlar geldiğinde burada yazacak.</p>
 
-<p>Uygulama şu an mağazalarda değil; yayına hazırlanıyor.</p>
+<section class=" bel">
+  <div class="wrap">
+    <div class="duo ters">
+      <div class="anlat">
+        <span class="kicker">1 · BAŞLANGIÇ</span>
+        <h2>Nereden başlayacağını sana söylüyor.</h2>
+        <p>Kırk soruluk bir yerleştirme testi, kelime ve gramerden karışık. Sonunda CEFR seviyeni veriyor ve müfredat oradan başlıyor.</p><p>Sonuç bir rozet değil, bir başlangıç noktası: hangi bölümde ne kadar yol olduğunu da gösteriyor. İstediğin zaman yeniden çözebiliyorsun.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="Seviye testi sonucu: B1, bölüm bölüm dağılım">
+<div>
+  <div class="kicker" style="font-size:9px">SEVİYE TESTİ</div>
+  <div class="e-ad" style="font-size:16px;margin-top:4px">Sonucun hazır</div>
+</div>
+<div class="e-kart" style="align-items:center;text-align:center">
+  <div style="font-size:42px;font-weight:800;color:var(--text);letter-spacing:-.03em">B1</div>
+  <p>Orta seviye · 40 sorudan 27 doğru</p>
+</div>
+<div class="e-kart">
+  <h4>Bölüm bölüm</h4>
+  <p>Kelime</p><div class="e-bar"><i style="width:72%"></i></div>
+  <p>Gramer</p><div class="e-bar"><i style="width:58%"></i></div>
+  <p>Okuma</p><div class="e-bar"><i style="width:64%"></i></div>
+</div>
+<div class="e-alt-menu">
+  <span class="on">🏠</span><span>📚</span><span>🎮</span><span>📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+  </div>
+</section>
 
-<h2>İletişim</h2>
-<p>Soru, hata bildirimi ve kişisel veri talepleri için:
-<a href="mailto:DOLDUR-destek@alan-adin.com">DOLDUR-destek@alan-adin.com</a></p>
+
+
+<section class=" bel">
+  <div class="wrap">
+    <div class="duo">
+      <div class="anlat">
+        <span class="kicker">2 · HER GÜN</span>
+        <h2>Günde on dakika, hep aynı yerden devam.</h2>
+        <p>Kurulumda günlük bir süre seçiyorsun ve ana ekran onu takip ediyor — hedefin görünür olmadığı sürece hedef değildir.</p><p>"Kaldığın yer" gerçekten kaldığın yer: hangi bölümde, kaçıncı derste olduğunu söylüyor ve tek dokunuşla oraya götürüyor.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="Yol haritası: biten, şu anki ve henüz açılmamış dersler">
+<div>
+  <div class="kicker" style="font-size:9px">B1 · GRAMER</div>
+  <div class="e-ad" style="font-size:16px;margin-top:4px">Yol haritan</div>
+  <div class="e-alt">25 dersin 12'si bitti</div>
+</div>
+<div class="e-bar"><i style="width:48%"></i></div>
+<div class="e-kart" style="flex-direction:row;align-items:center;gap:10px">
+  <span style="font-size:18px">✓</span>
+  <div><h4>Present Continuous</h4><p>Bitti · 5/5 doğru</p></div>
+</div>
+<div class="e-kart" style="flex-direction:row;align-items:center;gap:10px;border-color:var(--brand)">
+  <span style="font-size:18px">▶</span>
+  <div><h4>Present Perfect</h4><p>Şu an buradasın · 2/5</p></div>
+</div>
+<div class="e-kart" style="flex-direction:row;align-items:center;gap:10px;opacity:.55">
+  <span style="font-size:18px">🔒</span>
+  <div><h4>Past Perfect</h4><p>Bir önceki bitince açılıyor</p></div>
+</div>
+<div class="e-kart" style="flex-direction:row;align-items:center;gap:10px;opacity:.4">
+  <span style="font-size:18px">🔒</span>
+  <div><h4>Used to / would</h4><p>Bir önceki bitince açılıyor</p></div>
+</div>
+<div class="e-alt-menu">
+  <span>🏠</span><span class="on">📚</span><span>🎮</span><span>📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="alt bel">
+  <div class="wrap">
+    <div class="duo ters">
+      <div class="anlat">
+        <span class="kicker">3 · ÇALIŞMA</span>
+        <h2>Cevap doğruysa neden doğru olduğunu da yazıyor.</h2>
+        <p>1.040 gramer alıştırması, 150 okuma parçası, 150 diyalog. Her sorunun altında kuralın Türkçe açıklaması var.</p><p>Okuma parçalarında altı çizili kelimelere dokununca Türkçesi çıkıyor; metinden kopup sözlüğe gitmen gerekmiyor.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="Gramer sorusu: doğru şık işaretlenmiş, altında kural açıklaması">
+<div>
+  <div class="kicker" style="font-size:9px">SORU 2/5</div>
+  <div class="e-ad" style="font-size:15px;margin-top:4px">She ___ to London twice.</div>
+</div>
+<div class="e-secenek"><em>A</em> go</div>
+<div class="e-secenek dogru"><em>B</em> has been</div>
+<div class="e-secenek"><em>C</em> is going</div>
+<div class="e-secenek"><em>D</em> was</div>
+<div class="e-kart">
+  <h4>✓ Doğru · +20 XP</h4>
+  <p>Yaşanmışlık anlatırken present perfect kullanılır: been = gidip dönmüş.</p>
+</div>
+<div class="e-alt-menu">
+  <span>🏠</span><span class="on">📚</span><span>🎮</span><span>📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class=" bel">
+  <div class="wrap">
+    <div class="duo">
+      <div class="anlat">
+        <span class="kicker">4 · OYUN</span>
+        <h2>Harf Arenası — kelime çalışmanın sıkılmayan hâli.</h2>
+        <p>Türkçesi verilen kelimeyi harflerden kuruyorsun. Harfler senin seviyendeki kelimelerden geliyor, yani oyun da ders.</p><p>Kombo, seri ve süre var; ceza yok. Bildiğin bir kelimeyi hatırlamak için geçen üç saniye, yanlış yapmaktan daha iyi öğretiyor.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="Harf Arenası: harf çarkı ve yuvalara yerleşen kelime">
+<div class="e-satir">
+  <div class="e-cip"><u>KOMBO</u><b>×3</b></div>
+  <div class="e-cip"><u>SERİ</u><b>5</b></div>
+  <div class="e-cip"><u>XP</u><b>240</b></div>
+</div>
+<div class="e-yuvalar">
+  <div class="e-yuva dolu">T</div>
+  <div class="e-yuva dolu">I</div>
+  <div class="e-yuva dolu">C</div>
+  <div class="e-yuva bos"></div>
+  <div class="e-yuva bos"></div>
+  <div class="e-yuva bos"></div>
+</div>
+<div class="e-cark">
+  <div class="halka"></div>
+  <div class="ic"><u>İPUCU</u><b>bilet</b></div>
+  <div class="e-harf secili" style="left:71.0px;top:9.0px">T</div><div class="e-harf secili" style="left:107.4px;top:20.8px">I</div><div class="e-harf secili" style="left:130.0px;top:51.8px">C</div><div class="e-harf" style="left:130.0px;top:90.2px">K</div><div class="e-harf" style="left:107.4px;top:121.2px">E</div><div class="e-harf" style="left:71.0px;top:133.0px">T</div><div class="e-harf" style="left:34.6px;top:121.2px">A</div><div class="e-harf" style="left:12.0px;top:90.2px">R</div><div class="e-harf" style="left:12.0px;top:51.8px">N</div><div class="e-harf" style="left:34.6px;top:20.8px">O</div>
+</div>
+<div class="e-alt-menu">
+  <span>🏠</span><span>📚</span><span class="on">🎮</span><span>📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="alt bel">
+  <div class="wrap">
+    <div class="duo ters">
+      <div class="anlat">
+        <span class="kicker">5 · HATALAR</span>
+        <h2>Yanlışların kaybolmuyor, bir deftere düşüyor.</h2>
+        <p>Her yanlış cevap hata defterine yazılıyor: soru, senin cevabın ve doğrusu. Hangi bölümde daha çok zorlandığını da gösteriyor.</p><p>Üstünden geçip "öğrendim" dediğinde defterden siliniyor. Tekrar, rastgele değil kendi hatalarının üstünden.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="Hata defteri: en çok zorlanılan bölüm ve tek tek yanlışlar">
+<div>
+  <div class="kicker" style="font-size:9px">HATA DEFTERİ</div>
+  <div class="e-ad" style="font-size:16px;margin-top:4px">En çok nerede zorlanıyorsun</div>
+</div>
+<div class="e-kart">
+  <h4>Gramer</h4>
+  <p>Bu bölümde 6 kez yanıldın.</p>
+  <div class="e-bar"><i style="width:74%"></i></div>
+</div>
+<div class="e-kart">
+  <h4>She ___ to London twice.</h4>
+  <p>Senin cevabın: <b style="color:var(--danger)">go</b> · Doğrusu: <b style="color:var(--success)">has been</b></p>
+</div>
+<div class="e-kart">
+  <h4>a piece ___ cake</h4>
+  <p>Senin cevabın: <b style="color:var(--danger)">for</b> · Doğrusu: <b style="color:var(--success)">of</b></p>
+</div>
+<div class="e-alt-menu">
+  <span>🏠</span><span>📚</span><span>🎮</span><span class="on">📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class=" bel">
+  <div class="wrap">
+    <div class="duo">
+      <div class="anlat">
+        <span class="kicker">6 · OKUMA</span>
+        <h2>Yüz elli metin, hepsi seviyene göre yazılmış.</h2>
+        <p>150 parça ve 761 anlama sorusu. Metinler seviyeye göre yazıldı — A1'de bilmen gereken kelimeyle, C1'de bilmen gerekenle.</p><p>Zorlandığın yerde tek dokunuşla Türkçe çevirisine geçebiliyorsun.</p>
+      </div>
+      <div class="gorsel"><div class="telefon"><div class="ekran" role="img" aria-label="Okuma ekranı: metin, dokunulabilir kelimeler ve anlama sorusu">
+<div class="e-ad" style="font-size:14px">Küçük bir kafe</div>
+<div class="e-alt">A1 · 2 dk · 2/25</div>
+<div class="e-gorsel">A Small Cafe</div>
+<div class="e-metin">
+  There is a small <mark>cafe</mark> near my house in Ankara. It opens at eight
+  in the morning and <mark>closes</mark> at ten at night. The cafe is not big,
+  but it is very <mark>clean</mark> and warm.
+</div>
+<div class="e-kart">
+  <h4>Kafe saat kaçta açılıyor?</h4>
+  <div class="e-secenek dogru"><em>A</em> Sekizde</div>
+  <div class="e-secenek"><em>B</em> Onda</div>
+</div>
+<div class="e-alt-menu">
+  <span>🏠</span><span class="on">📚</span><span>🎮</span><span>📓</span><span>👤</span>
+</div>
+</div></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bel">
+  <div class="wrap">
+    <span class="kicker">NEDEN BÖYLE</span>
+    <h2>Dört karar</h2>
+    <p class="lede" style="margin-bottom:var(--s3)">Bu uygulamanın neyi yapmadığı,
+    ne yaptığı kadar önemli.</p>
+    <div class="kartlar"><div class="kart"><span class="im">💸</span><h3>Tamamen ücretsiz</h3><p>Kilitli bölüm yok, abonelik yok, uygulama içi satın alma yok.</p></div><div class="kart"><span class="im">✈️</span><h3>Çevrimdışı çalışır</h3><p>İnternet olmadan da açılır. İlerlemen telefonunda durur.</p></div><div class="kart"><span class="im">🔑</span><h3>Hesap isteğe bağlı</h3><p>Hesap yalnızca ilerlemeni ikinci bir cihaza taşımak için.</p></div><div class="kart"><span class="im">🚫</span><h3>Reklam ve takip yok</h3><p>Hiçbir izleme kütüphanesi kullanılmıyor. Veri satılmıyor.</p></div></div>
+  </div>
+</section>
+
+<section class="alt bel">
+  <div class="wrap">
+    <span class="kicker">İÇİNDEKİLER</span>
+    <h2>Ne kadar içerik var</h2>
+    <p class="lede" style="margin-bottom:var(--s3)">Bu sayılar elle yazılmadı;
+    her yayında içeriğin kendisinden sayılıyor.</p>
+    <table>
+      <thead><tr><th>Bölüm</th><th>Kapsam</th></tr></thead>
+      <tbody><tr><td>Kelime</td><td>9.461 kart, 6 seviye, telaffuz kayıtlarıyla</td></tr><tr><td>Gramer</td><td>104 ders, 1.040 alıştırma</td></tr><tr><td>Okuma</td><td>150 metin, 761 anlama sorusu</td></tr><tr><td>Dinleme</td><td>150 diyalog, 1.953 satır, transkriptli</td></tr><tr><td>Konuşma</td><td>150 set — kendi sesini kaydet, model sesle karşılaştır</td></tr><tr><td>Yazma</td><td>150 set, 1.200 görev</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="bel">
+  <div class="wrap metin">
+    <span class="kicker">DÜRÜSTLÜK NOTU</span>
+    <h2>Henüz yapılmamış olanlar</h2>
+    <p>Bu sayfada yazan her şey uygulamada gerçekten var. Olmayanları da
+    söyleyelim: telaffuz puanlama, arkadaş ve kulüp özellikleri, serbest yazma
+    geri bildirimi. Bunlar geldiğinde burada yazacak.</p>
+    <p>Okuma parçalarının çizimleri de henüz üretilmedi; o parçalar şimdilik
+    başlığı taşıyan çizilmiş bir kapakla açılıyor.</p>
+    <p>Uygulama şu an mağazalarda değil; yayına hazırlanıyor.</p>
+    <p style="margin-top:var(--s3)">
+      <a class="cta sade" href="mailto:DOLDUR-destek@alan-adin.com">Soru ve hata bildirimi → DOLDUR-destek@alan-adin.com</a>
+    </p>
+  </div>
+</section>
+
+</main>
 
 <footer>
-  <p>WORDLY — Türkçe konuşanlar için İngilizce.
-  <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> · <a href="destek.html">Destek</a></p>
+  <div class="wrap">
+    <p>WORDLY — Türkçe konuşanlar için İngilizce.
+    <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> ·
+    <a href="destek.html">Destek</a></p>
+  </div>
 </footer>
-</div>
+<script>
+(function () {
+  var kok = document.documentElement;
+  var dugme = document.querySelector('.tema');
+
+  function suAn() {
+    if (kok.dataset.theme) return kok.dataset.theme;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+  function yaz() {
+    if (!dugme) return;
+    var acik = suAn() === 'light';
+    dugme.textContent = acik ? '☀️' : '🌙';
+    dugme.setAttribute('aria-label', acik ? 'Koyu temaya geç' : 'Açık temaya geç');
+  }
+  if (dugme) {
+    dugme.addEventListener('click', function () {
+      var yeni = suAn() === 'light' ? 'dark' : 'light';
+      kok.dataset.theme = yeni;
+      try { localStorage.setItem('wordly:tema', yeni); } catch (e) {}
+      yaz();
+    });
+    yaz();
+  }
+
+  // Bölümler kaydırdıkça beliriyor. Hareketi azaltılmış isteyen kullanıcıda
+  // hiç çalışmıyor; içerik zaten CSS'te görünür durumda.
+  var azalt = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hedef = document.querySelectorAll('.bel');
+  if (azalt || !('IntersectionObserver' in window)) {
+    hedef.forEach(function (e) { e.classList.add('acik'); });
+    return;
+  }
+  var g = new IntersectionObserver(function (girisler) {
+    girisler.forEach(function (giris) {
+      if (giris.isIntersecting) {
+        giris.target.classList.add('acik');
+        g.unobserve(giris.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  hedef.forEach(function (e) { g.observe(e); });
+})();
+</script>
 </body>
 </html>
