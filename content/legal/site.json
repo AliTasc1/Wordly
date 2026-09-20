@@ -1,0 +1,17 @@
+{
+  "_aciklama": [
+    "Sitenin ve yasal metinlerin doldurulacak alanları. Tek yerde duruyor:",
+    "burayı doldurup `python3 content/build-site.py` çalıştırmak, hem siteyi",
+    "hem gizlilik metnini hem kullanım şartlarını aynı anda günceller.",
+    "",
+    "Doldurulmamış bir alan kalırsa üretilen sayfaların en üstüne kırmızı bir",
+    "uyarı şeridi basılıyor. Sebebi: eksik bir gizlilik metni, eksik olduğu",
+    "belli olmadan yayına çıkarsa hem yanıltıcı hem KVKK'ya aykırı olur."
+  ],
+
+  "alanAdi": "DOLDUR-alan-adin.com",
+  "veriSorumlusu": "DOLDUR-tam-adin-ya-da-sirket-unvanin",
+  "adres": "DOLDUR-acik-adres",
+  "destekEposta": "DOLDUR-destek@alan-adin.com",
+  "yetkiliMahkeme": "DOLDUR-il-adi"
+}

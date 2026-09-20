@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · WORDLY</title>
+<meta name="description" content="WORDLY Gizlilik Politikası">
+<meta name="color-scheme" content="dark">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <a class="logo" href="./">WORD<span>LY</span></a>
+  <nav><a href="./">Ana sayfa</a><a href="gizlilik.html" aria-current="page">Gizlilik</a><a href="sartlar.html">Şartlar</a><a href="destek.html">Destek</a></nav>
+</header>
+<div class="notice"><strong>Bu sayfa henüz yayına hazır değil.</strong> Şu alanlar doldurulmadı: <code>veriSorumlusu</code>, <code>adres</code>, <code>destekEposta</code>, <code>yetkiliMahkeme</code>. <code>content/legal/site.json</code> doldurulup <code>python3 content/build-site.py</code> çalıştırılmalı.</div><h1>WORDLY — Gizlilik Politikası</h1>
+<p><strong>Yürürlük tarihi:</strong> 19 Eylül 2026
+<strong>Son güncelleme:</strong> 19 Eylül 2026</p>
+<hr />
+<h2>Kısa özet</h2>
+<p>WORDLY'yi <strong>hesap açmadan</strong> kullanabilirsin. Açmazsan hiçbir bilgin
+telefonundan çıkmaz.</p>
+<p>Hesap açarsan yalnızca ilerlemeni ikinci bir cihaza taşımak için gereken
+şeyler sunucuya gider. Reklam yok, izleme yok, veri satışı yok, çerez yok.</p>
+<p>Mikrofon kayıtların <strong>hiçbir koşulda</strong> telefonundan çıkmaz.</p>
+<h2>1. Veri sorumlusu</h2>
+<p>6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) anlamında veri
+sorumlusu:</p>
+<ul>
+<li><strong>Ad:</strong> DOLDUR-tam-adin-ya-da-sirket-unvanin</li>
+<li><strong>Adres:</strong> DOLDUR-acik-adres</li>
+<li><strong>E-posta:</strong> DOLDUR-destek@alan-adin.com</li>
+</ul>
+<h2>2. Hesapsız kullanım — hiçbir veri toplanmaz</h2>
+<p>Uygulamanın tamamı hesapsız çalışır: altı seviye, tüm beceriler, oyunlar,
+istatistikler, başarımlar ve hata defteri.</p>
+<p>Bu durumda ilerlemen <strong>yalnızca telefonunun kendi deposunda</strong> tutulur
+(<code>AsyncStorage</code>). Bize gönderilmez, göremeyiz, elimizde bir kopyası olmaz.
+Uygulamayı silersen o veri de gider.</p>
+<p>Bu, uygulamanın eksik bir kullanım biçimi değil; varsayılanı budur.</p>
+<h2>3. Hesap açarsan toplanan veriler</h2>
+<p>Hesap <strong>tamamen isteğe bağlıdır</strong> ve tek amacı ilerlemeni cihazlar arasında
+taşımaktır.</p>
+<h3>3.1 Kimlik ve iletişim</h3>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Neden</th>
+<th>Hukuki sebep</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>E-posta adresi</td>
+<td>Girişi yapmak, şifre sıfırlamak</td>
+<td>Sözleşmenin ifası (KVKK m.5/2-c)</td>
+</tr>
+<tr>
+<td>Şifre</td>
+<td>Girişi doğrulamak</td>
+<td>Sözleşmenin ifası</td>
+</tr>
+<tr>
+<td>Görünen ad (isteğe bağlı)</td>
+<td>Liderlik tablosunda görünmek</td>
+<td>Açık rıza (KVKK m.5/1)</td>
+</tr>
+</tbody>
+</table>
+<p>Şifreni <strong>düz metin olarak görmeyiz ve saklamayız.</strong> Supabase Auth şifreyi
+tek yönlü olarak özetler (bcrypt); özetten şifre geri üretilemez.</p>
+<h3>3.2 Öğrenme verisi</h3>
+<table>
+<thead>
+<tr>
+<th>Veri</th>
+<th>Ne demek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Seviye (A1–C2)</td>
+<td>Hangi seviyede çalıştığın</td>
+</tr>
+<tr>
+<td>Hedefler, günlük süre, odak beceriler</td>
+<td>Kurulumda seçtiklerin</td>
+</tr>
+<tr>
+<td>Seviye testi sonucu</td>
+<td>Testi çözdüysen sonucu</td>
+</tr>
+<tr>
+<td>Kaldığın yerler</td>
+<td>Her beceri ve seviyede kaçıncı karttasın</td>
+</tr>
+<tr>
+<td>Günlük XP</td>
+<td>Gün ve cihaz başına kazandığın puan</td>
+</tr>
+<tr>
+<td>Kaydettiğin kelimeler</td>
+<td>Tekrar listene aldığın kartların kimlikleri</td>
+</tr>
+<tr>
+<td>Hata defteri</td>
+<td>Yanlış yaptığın soru, verdiğin cevap ve tarihi</td>
+</tr>
+<tr>
+<td>Arena puanı</td>
+<td>Harf Arenası'ndaki en iyi skorun</td>
+</tr>
+<tr>
+<td>Cihaz kimliği</td>
+<td>Telefonunda üretilen rastgele bir numara</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Cihaz kimliği hakkında:</strong> Bu numara telefonunda rastgele üretilir. Reklam
+kimliği (IDFA/GAID) değildir, telefonunun seri numarası değildir, seni başka
+uygulamalarda tanımaya yaramaz. Tek işi, iki cihazdan aynı gün kazanılan XP'yi
+birbirine karıştırmadan toplayabilmektir.</p>
+<h3>3.3 Toplamadıklarımız</h3>
+<p>Bunlar bilinçli birer karar; ileride değişirse bu metin önce güncellenir:</p>
+<ul>
+<li>Reklam kimliği, izleme pikseli, çerez</li>
+<li>Konum bilgisi</li>
+<li>Rehber, fotoğraf, dosya erişimi</li>
+<li>Analitik SDK'sı — uygulamada <strong>hiçbir</strong> üçüncü taraf izleme kütüphanesi yok</li>
+<li>Doğum tarihi, cinsiyet, telefon numarası</li>
+<li>Ödeme bilgisi — ücretli bir plan yok</li>
+</ul>
+<h2>4. Mikrofon ve ses kayıtları</h2>
+<p>Konuşma alıştırmasında kendi sesini kaydedip dinleyebilirsin.</p>
+<p><strong>Bu kayıtlar telefonundan çıkmaz.</strong> Sunucuya yüklenmez, bize gönderilmez,
+üçüncü bir tarafa iletilmez, yapay zekâya analiz ettirilmez.</p>
+<p>Kayıt telefonun geçici dosya alanında tutulur ve şunlardan biri olduğunda
+silinir: yeni bir kayıt alırsın, kaydı atarsın, ekrandan çıkarsın.</p>
+<p>Uygulamada telaffuz puanlama yoktur. Kaydın bir şey ölçmek için değil, kendi
+sesini duyman için alınır.</p>
+<h2>5. Liderlik tablosu</h2>
+<p>Haftalık liderlik tablosu <strong>varsayılan olarak kapalıdır.</strong> Açık rızanla
+katılırsın; Ayarlar'dan istediğin an çıkarsın.</p>
+<p>Katıldığında diğer kullanıcılar <strong>yalnızca</strong> şunları görür:</p>
+<ul>
+<li>Seçtiğin görünen ad</li>
+<li>O haftaki XP toplamın</li>
+<li>Sıran</li>
+</ul>
+<p>E-posta adresin, seviyen, hataların ve diğer hiçbir verin liderlik tablosunda
+görünmez. Katılmazsan tabloda hiç yer almazsın.</p>
+<h2>6. Verilerin nerede tutulduğu</h2>
+<p>Sunucu tarafı <strong>Supabase</strong> üzerinde çalışır. Veritabanı fiziksel olarak
+<strong>Almanya'da (AWS <code>eu-central-1</code>, Frankfurt)</strong> bulunur.</p>
+<p><strong>Yurt dışına aktarım:</strong> Verilerin Türkiye dışında, Avrupa Birliği içinde bir
+sunucuda tutuluyor. KVKK m.9 uyarınca bu aktarım için <strong>açık rızan</strong> gerekir.
+Hesap açarken bu metni onaylaman, söz konusu aktarıma verdiğin açık rızayı
+kapsar. Rıza vermek istemiyorsan hesap açmadan kullanabilirsin — uygulamanın
+tamamı o hâliyle çalışır.</p>
+<p>Supabase'in kendi gizlilik politikası: https://supabase.com/privacy</p>
+<p>E-posta gönderimi (doğrulama ve şifre sıfırlama) için bir e-posta servisi
+kullanılır; bu servise yalnızca e-posta adresin ve gönderilen iletinin içeriği
+ulaşır.</p>
+<h2>7. Saklama süresi</h2>
+<ul>
+<li><strong>Hesabın varken:</strong> Veriler hesabın açık kaldığı sürece saklanır.</li>
+<li><strong>Hesabını silersen:</strong> Tüm sunucu verin <strong>anında ve geri dönüşsüz</strong> silinir.
+  Yedeklerden temizlenmesi en geç 30 gün sürer.</li>
+<li><strong>Hesapsız kullanımda:</strong> Sunucuda veri yok; telefondaki veriyi uygulamayı
+  silerek ya da Ayarlar'daki sıfırlama ile kaldırırsın.</li>
+</ul>
+<h2>8. Haklarının kullanımı</h2>
+<p>KVKK m.11 ve KVKK'nın uygulanabildiği ölçüde GDPR m.15–22 kapsamında;
+verilerine erişme, düzeltme, silme, işlenmesine itiraz etme ve taşınabilirlik
+haklarına sahipsin.</p>
+<p>Çoğunu uygulamanın içinden, kimseye başvurmadan kullanabilirsin:</p>
+<table>
+<thead>
+<tr>
+<th>Hak</th>
+<th>Nereden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verilerinin kopyasını alma</strong></td>
+<td><strong>Ayarlar → Verilerimi indir</strong></td>
+</tr>
+<tr>
+<td>Düzeltme</td>
+<td>Profil ve Ayarlar ekranları</td>
+</tr>
+<tr>
+<td><strong>Hesabı ve tüm veriyi silme</strong></td>
+<td><strong>Ayarlar → Hesabımı sil</strong></td>
+</tr>
+<tr>
+<td>Liderlikten çıkma</td>
+<td>Ayarlar → Liderlik tablosu</td>
+</tr>
+<tr>
+<td>Eşitlemeyi durdurma</td>
+<td>Ayarlar → Çıkış yap</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Verilerimi indir</strong> ne veriyor: tercihlerin, toplam XP'n, günlük çalışma
+geçmişin, her bölümde kaldığın yer, kaydettiğin kelimeler, seviye testi
+sonucun, arena skorun ve hata defterinin tamamı — makineyle okunabilir tek
+bir JSON dosyası olarak. Hesabın varsa e-posta adresin ve üyelik tarihin de
+içinde. Hesabın yoksa da çalışır; taşınabilirlik hakkı hesabı olana değil,
+verisi olana aittir.</p>
+<p>Bunların dışında bir talebin olursa DOLDUR-destek@alan-adin.com adresine yazabilirsin;
+KVKK'nın öngördüğü süre içinde (en geç 30 gün) yanıt veririz.</p>
+<p>Başvurunun sonucundan memnun kalmazsan <strong>Kişisel Verileri Koruma Kurumu</strong>'na
+şikâyette bulunma hakkın saklıdır.</p>
+<h2>9. Çocukların kullanımı</h2>
+<p>WORDLY 13 yaşın altındaki çocuklara yönelik değildir ve bilerek 13 yaşın
+altından veri toplamayız. Çocuğunuzun hesap açtığını fark ederseniz
+DOLDUR-destek@alan-adin.com adresine yazın, hesabı ve verisini sileriz.</p>
+<p>13–18 yaş arasındaki kullanıcıların hesap açmadan önce veli izni alması
+gerekir.</p>
+<h2>10. Güvenlik</h2>
+<ul>
+<li>Tüm iletişim TLS ile şifrelenir.</li>
+<li>Veritabanında <strong>satır düzeyinde güvenlik (RLS)</strong> açıktır: her kullanıcı
+  teknik olarak yalnızca kendi satırlarını okuyabilir ve yazabilir. Bu, uygulama
+  kodundaki bir hatanın başka birinin verisine erişmeye yetmemesi demektir.</li>
+<li>Liderlik tablosu, yalnızca gerekli üç alanı döndüren kısıtlı bir sunucu
+  fonksiyonuyla okunur; tablo doğrudan sorgulanamaz.</li>
+<li>Şifreler bcrypt ile özetlenir.</li>
+</ul>
+<p>Hiçbir sistemin mutlak güvenlik sunamayacağını biliyoruz. Kişisel verileri
+etkileyen bir ihlal olursa KVKK'nın öngördüğü süre içinde Kurum'a ve sana
+bildiririz.</p>
+<h2>11. Bu metinde değişiklik</h2>
+<p>Bu politikayı güncellersek yürürlük tarihini değiştirir ve önemli bir değişiklik
+varsa uygulama içinde bildiririz. Topladığımız veri türünü genişleten bir
+değişiklik, <strong>yürürlüğe girmeden önce</strong> duyurulur.</p>
+<h2>12. İletişim</h2>
+<p>DOLDUR-tam-adin-ya-da-sirket-unvanin
+DOLDUR-acik-adres
+DOLDUR-destek@alan-adin.com</p>
+<footer>
+  <p>WORDLY — Türkçe konuşanlar için İngilizce.
+  <a href="gizlilik.html">Gizlilik</a> · <a href="sartlar.html">Şartlar</a> · <a href="destek.html">Destek</a></p>
+</footer>
+</div>
+</body>
+</html>

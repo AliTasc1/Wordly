@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Alert, StyleSheet, View } from 'react-native';
+import { Alert, Linking, StyleSheet, View } from 'react-native';
 import { Screen } from '../components/Screen';
 import { Gradient } from '../components/Gradient';
 import { BackButton, Press } from '../components/Buttons';
 import { IconTile } from '../components/Surfaces';
 import { Txt } from '../components/Txt';
 import { alpha, colors, gradients, radii } from '../theme/tokens';
+import { LINKS } from '../data/links';
 import { APP_VERSION, SETTINGS_FOOTER } from '../data/subscription';
 import { attribution } from '../content';
 import { useApp } from '../state/AppContext';
@@ -440,6 +441,55 @@ export function SettingsScreen() {
                 {line}
               </Txt>
             </View>
+          ))}
+        </View>
+      </View>
+
+      {/* Yasal metinler tarayıcıda açılıyor. Uygulama içinde göstermek için
+          ikinci bir kopya tutmak gerekirdi; metin güncellendiğinde uygulamayı
+          da yayınlamak zorunda kalırdık ve mağaza incelemesi boyunca eski
+          metin yürürlükte kalırdı. */}
+      <View style={styles.group}>
+        <Txt f="mono" s={10} w={700} c={colors.textDisabled} ls={0.14} style={styles.groupName}>
+          YASAL
+        </Txt>
+        <View style={styles.groupBody}>
+          {(
+            [
+              { label: 'Gizlilik Politikası', sub: 'Hangi veriyi neden tutuyoruz', url: LINKS.privacy, glyph: '🔒' },
+              { label: 'Kullanım Şartları', sub: 'Ücret, hesap ve haklar', url: LINKS.terms, glyph: '📄' },
+              { label: 'Destek', sub: 'Sorun bildir, yardım al', url: LINKS.support, glyph: '💬' },
+            ] as const
+          ).map((row, i, all) => (
+            <Press
+              key={row.url}
+              onPress={() => {
+                void Linking.openURL(row.url).catch(() =>
+                  fire('Bağlantı açılamadı', row.url),
+                );
+              }}
+              scale={0.995}
+              accessibilityRole="link"
+              style={[styles.item, i < all.length - 1 && styles.itemDivider]}>
+              <IconTile
+                glyph={row.glyph}
+                tint={colors.textDim}
+                size={36}
+                radius={12}
+                fontSize={15}
+              />
+              <View style={styles.flex}>
+                <Txt f="m" s={13} w={700}>
+                  {row.label}
+                </Txt>
+                <Txt s={10.5} c={colors.textFaint} style={styles.itemSub}>
+                  {row.sub}
+                </Txt>
+              </View>
+              <Txt f="m" s={16} w={800} c={colors.textGhost}>
+                ↗
+              </Txt>
+            </Press>
           ))}
         </View>
       </View>
