@@ -2,18 +2,9 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from '
 import { StyleSheet, useColorScheme } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { THEMES, type Theme, type ThemeName } from './theme';
+import { THEME_KEY, parseMode, resolveName, type ThemeMode } from './mode';
 
-/**
- * Tema seçimi.
- *
- * Üç seçenek var ve varsayılan `system`. Telefonunu akşam karanlık temaya
- * alan kişi uygulamanın da onu izlemesini bekliyor; "koyu" ya da "açık"
- * demek, o beklentiyi kırıp kullanıcıyı iki yerde ayar yapmaya zorlamak
- * olurdu. İsteyen sabitliyor.
- */
-export type ThemeMode = 'system' | 'light' | 'dark';
-
-const KEY = 'wordly:theme:v1';
+export type { ThemeMode };
 
 type ThemeValue = {
   theme: Theme;
@@ -32,10 +23,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     let alive = true;
-    void AsyncStorage.getItem(KEY)
+    void AsyncStorage.getItem(THEME_KEY)
       .then((raw) => {
-        if (!alive) return;
-        if (raw === 'light' || raw === 'dark' || raw === 'system') setModeState(raw);
+        if (alive) setModeState(parseMode(raw));
       })
       .catch(() => {})
       .finally(() => {
@@ -51,14 +41,10 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     // Yazma başarısız olursa tema bu oturumda yine değişiyor; bir sonraki
     // açılışta eski tercihe dönüyor. Kullanıcıyı hata bildirimiyle
     // rahatsız etmeye değmez.
-    void AsyncStorage.setItem(KEY, next).catch(() => {});
+    void AsyncStorage.setItem(THEME_KEY, next).catch(() => {});
   }, []);
 
-  const theme = useMemo(() => {
-    const name: ThemeName =
-      mode === 'system' ? (system === 'light' ? 'light' : 'dark') : mode;
-    return THEMES[name];
-  }, [mode, system]);
+  const theme = useMemo(() => THEMES[resolveName(mode, system)], [mode, system]);
 
   const value = useMemo(
     () => ({ theme, mode, setMode, loading }),

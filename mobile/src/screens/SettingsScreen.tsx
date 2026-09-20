@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Alert, Linking, StyleSheet, View } from 'react-native';
-import { useStyles, useTheme } from '../theme/ThemeContext';
+import { useStyles, useTheme, useThemeMode } from '../theme/ThemeContext';
+import { MODES } from '../theme/mode';
 import type { Theme } from '../theme/theme';
 import { tint } from '../theme/tint';
 import { Screen } from '../components/Screen';
@@ -43,6 +44,7 @@ function syncNote(sync: ReturnType<typeof useApp>['sync']): string {
 export function SettingsScreen() {
   const t = useTheme();
   const styles = useStyles(makeStyles);
+  const { mode, setMode } = useThemeMode();
   const { go } = useGo();
   const back = useBack('profile');
   const { fire, cefr, goals, dailyTime, resetProgress, sync, haptics, setHaptics, saved } =
@@ -351,6 +353,54 @@ export function SettingsScreen() {
           UYGULAMA
         </Txt>
         <View style={styles.groupBody}>
+          {/* Görünüm üç durumlu; iki durumlu bir anahtar "sistemi izle"yi
+              anlatamıyordu. Üç seçenek de aynı anda görünüyor — sırayla
+              dolaşan tek bir satır, kullanıcıya kaç seçenek olduğunu ancak
+              hepsine dokunduktan sonra söylerdi. */}
+          <View style={[styles.appearance, styles.itemDivider]}>
+            <View style={[styles.item, styles.appearanceHead]}>
+              <IconTile
+                glyph="🎨"
+                tint={t.colors.accent}
+                size={36}
+                radius={12}
+                fontSize={15}
+              />
+              <View style={styles.flex}>
+                <Txt f="m" s={13} w={700}>
+                  Görünüm
+                </Txt>
+                <Txt s={10.5} c={t.colors.textFaint} style={styles.itemSub}>
+                  {MODES.find((m) => m.mode === mode)?.note}
+                </Txt>
+              </View>
+            </View>
+            <View style={styles.modeRow}>
+              {MODES.map((option) => {
+                const on = option.mode === mode;
+                return (
+                  <Press
+                    key={option.mode}
+                    onPress={() => setMode(option.mode)}
+                    scale={0.97}
+                    accessibilityRole="radio"
+                    accessibilityState={{ selected: on }}
+                    accessibilityLabel={`${option.label} tema — ${option.note}`}
+                    style={[styles.modeChip, on ? styles.modeOn : styles.modeOff]}>
+                    <Txt s={15}>{option.glyph}</Txt>
+                    <Txt
+                      f="mono"
+                      s={10.5}
+                      w={700}
+                      c={on ? t.colors.text : t.colors.textDim}>
+                      {option.label}
+                    </Txt>
+                  </Press>
+                );
+              })}
+            </View>
+          </View>
+
           <Press
             onPress={() => setHaptics(!haptics)}
             scale={0.995}
@@ -612,6 +662,25 @@ const makeStyles = (t: Theme) =>
       paddingHorizontal: 14,
     },
     itemDivider: { borderBottomWidth: 1, borderBottomColor: t.alpha.w06 },
+    appearance: { paddingBottom: 13 },
+    // Başlık satırının alt boşluğu kısaltıldı; altındaki üçlü zaten bir
+    // sonraki satır, aralarında tam bir satır boşluğu olmamalı.
+    appearanceHead: { paddingBottom: 9 },
+    modeRow: { flexDirection: 'row', gap: 8, paddingHorizontal: 14 },
+    modeChip: {
+      flex: 1,
+      alignItems: 'center',
+      gap: 4,
+      paddingVertical: 10,
+      borderRadius: radii.input,
+      borderWidth: 1,
+    },
+    modeOn: {
+      backgroundColor: tint(t.colors.primary, 0.16),
+      borderColor: t.colors.primary,
+      boxShadow: t.shadows.focusRingSoft,
+    },
+    modeOff: { backgroundColor: t.alpha.w04, borderColor: t.alpha.w08 },
     itemSub: { marginTop: 1 },
     signOut: {
       height: 50,
