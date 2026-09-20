@@ -24,13 +24,50 @@ import { navigationRef } from './src/navigation/routes';
 import { AppProvider } from './src/state/AppContext';
 import { AuthProvider } from './src/state/AuthContext';
 import { ToastHost } from './src/components/Toast';
-import { colors } from './src/theme/tokens';
+import { ThemeProvider, useTheme } from './src/theme/ThemeContext';
 
-const theme = {
-  ...DefaultTheme,
-  dark: true,
-  colors: { ...DefaultTheme.colors, background: colors.bg, card: colors.surface, text: colors.text },
-};
+/**
+ * Uygulamanın gövdesi.
+ *
+ * `ThemeProvider`in **içinde** duruyor, çünkü navigasyon teması ve durum
+ * çubuğunun rengi de temayı izlemeli. Dışarıda kalsaydı açık temada üstteki
+ * saat ve pil simgeleri beyaz kalır, beyaz zeminde görünmezdi.
+ */
+function Body({ fontsLoaded }: { fontsLoaded: boolean }) {
+  const t = useTheme();
+
+  const navTheme = React.useMemo(
+    () => ({
+      ...DefaultTheme,
+      dark: t.dark,
+      colors: {
+        ...DefaultTheme.colors,
+        background: t.colors.bg,
+        card: t.colors.surface,
+        text: t.colors.text,
+      },
+    }),
+    [t],
+  );
+
+  return (
+    <>
+      <StatusBar style={t.dark ? 'light' : 'dark'} />
+      {fontsLoaded ? (
+        <AuthProvider>
+          <AppProvider>
+            <NavigationContainer ref={navigationRef} theme={navTheme}>
+              <RootNavigator />
+            </NavigationContainer>
+            <ToastHost />
+          </AppProvider>
+        </AuthProvider>
+      ) : (
+        <View style={[styles.root, { backgroundColor: t.colors.bg }]} />
+      )}
+    </>
+  );
+}
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -48,24 +85,18 @@ export default function App() {
   return (
     <GestureHandlerRootView style={styles.root}>
       <SafeAreaProvider>
-        <StatusBar style="light" />
-        {fontsLoaded ? (
-          <AuthProvider>
-            <AppProvider>
-              <NavigationContainer ref={navigationRef} theme={theme}>
-                <RootNavigator />
-              </NavigationContainer>
-              <ToastHost />
-            </AppProvider>
-          </AuthProvider>
-        ) : (
-          <View style={styles.root} />
-        )}
+        <ThemeProvider>
+          <Body fontsLoaded={fontsLoaded} />
+        </ThemeProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );
 }
 
 const styles = StyleSheet.create({
-  root: { flex: 1, backgroundColor: colors.bg },
+  // Kök zemini temasız: `ThemeProvider` bunun içinde duruyor, yani tema
+  // burada henüz okunamıyor. Üstüne her hâlükârda temalı bir yüzey
+  // geliyor; buradaki renk yalnızca ilk kareyi dolduruyor ve iki temada
+  // da kabul edilebilir olması için nötr seçildi.
+  root: { flex: 1, backgroundColor: '#0B1020' },
 });
